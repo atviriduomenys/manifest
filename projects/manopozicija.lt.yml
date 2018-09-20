@@ -12,7 +12,7 @@ objects:
     properties:
       first_name:
         type: "string"
-        source: "sources/lrs/ad"
+        source: "lrs/ad"
       last_name:
         type: "string"
-        source: "sources/lrs/ad"
+        source: "lrs/ad"
