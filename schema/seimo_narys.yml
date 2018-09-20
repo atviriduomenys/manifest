@@ -1,0 +1,11 @@
+id: "seimo_narys"
+title: "Member of Parliament"
+description: ""
+type: "schema"
+properties:
+  first_name:
+    title: "First name"
+    type: "string"
+  last_name:
+    title: "Last name"
+    type: "string"

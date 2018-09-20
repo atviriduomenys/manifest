@@ -1,0 +1,18 @@
+id: "projects/manopozicija.lt"
+title: "ManoPozicija.lt"
+type: "project"
+impact:
+  - {year: 2015, users: 10, revenue: 0, employees: 0}
+  - {year: 2016, users:  0, revenue: 0, employees: 0}
+  - {year: 2017, users:  0, revenue: 0, employees: 0}
+  - {year: 2018, users: 10, revenue: 0, employees: 0}
+  - {year: 2019, users: 20, revenue: 0, employees: 0}
+objects:
+  seimo_narys:
+    properties:
+      first_name:
+        type: "string"
+        source: "sources/lrs/ad"
+      last_name:
+        type: "string"
+        source: "sources/lrs/ad"
