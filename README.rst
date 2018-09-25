@@ -1,22 +1,25 @@
 .. default-role:: literal
 
-Lithuanian open government data repository
-##########################################
+Lithuanian open data repository
+###############################
 
-This is the place where you can request data for you project to be provided by
-Lithuanian government.
+Here you can request data for your project or tell what data your project
+already use and how things are going for the project.
+
+This is a non-official community effort. There is no guarantee that requested
+data will ever be opened. But knowing what data are needed is important.
 
 
 What's it all about?
 ====================
 
-Currently Lithuanian government is doing some progress toward open data. The
-idea of this repository is to help gevernment decide what data to open first
-and how to transform data so that final result would be as close as posible to
-what is needed for data users.
+Currently Lithuanian government is working on a open data project. The idea of
+this repository is to help gevernment decide what data to open first and how to
+transform data so that final result would be as close as posible to what is
+needed for data users.
 
 Without knowing who is going to use the data, how it will be used and what data
-is needed there are number of issues:
+is needed, there are number of issues:
 
 - Priorities of what to open first are not clear.
 
@@ -24,7 +27,7 @@ is needed there are number of issues:
 
 - What economical or social implact opened data will do.
 
-In other words, without clearly knowing what data users needs, it is eassy to
+In other words, without clearly knowing what data users need, it is eassy to
 open datasets, that will never be used in practice. And that would be waste of
 time and effort.
 
@@ -38,7 +41,7 @@ How to submit request for data?
 Requests for data are submitted as `GitHub pull requests`_. One pull request
 should describe data needed for a project in YAML_ format.
 
-YAML_ files are organized like this::
+YAML_ files are organized into this structure::
 
   schema/
     <object>.yml
@@ -91,15 +94,15 @@ with a higher impact should be supplied with the data first.
 specify the source.
 
 As you can see data structure here looks a bit similar to json-schema_, meaning
-of some fields are well defined in json-schema_ specifications.
+that some fields are well defined in json-schema_ specifications.
 
 
 What is the purpose of schema?
 ==============================
 
 It is very likely that many projects will use same data fields. In order to
-know how many projects use a data field, all data fields are defined in one
-places called schema.
+know how many projects use the same data fields, all data fields are defined in
+one places called schema.
 
 Here is example how schema file looks:
 
@@ -150,7 +153,7 @@ example how this could be done:
           type: "string"
           source: "xpath:@pavardė"
 
-Defining a source is the most complicated part, but lucilly this part is
+Defining a source is the most complicated part, but luckilly this part is
 optional!
 
 Here `source` parameter is optional. It is used just to demonstrate complete
@@ -165,8 +168,8 @@ But in most cases we will not have direct access to data, so that's why
 `source` parameter is optional. It is enough to just specify a URL and list
 properties that we think are provided by the source.
 
-`lrs` parameter points to another YAML file where provider is defined. Here how
-this file looks:
+`lrs` parameter points to another YAML file where provider is defined. Here is
+how this file looks:
 
 .. code-block:: yaml
 
