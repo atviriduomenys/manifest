@@ -43,7 +43,7 @@ should describe data needed for a project in YAML_ format.
 
 YAML_ files are organized into this structure::
 
-  schema/
+  vocabulary/
     <object>.yml
   providers/
     <provider>.yml
@@ -80,10 +80,10 @@ Here is an example, how a project could request the data:
       properties:
         first_name:
           type: "string"
-          source: "lrs/ad"
+          source: "gov/lrs/ad"
         last_name:
           type: "string"
-          source: "lrs/ad"
+          source: "gov/lrs/ad"
 
 `impact` parameter is used to describe social and economical impact. Both
 future and past dates can be provided for estimated and retrospective impact.
@@ -97,22 +97,22 @@ As you can see data structure here looks a bit similar to json-schema_, meaning
 that some fields are well defined in json-schema_ specifications.
 
 
-What is the purpose of schema?
-==============================
+What is the purpose of vocabulary?
+==================================
 
 It is very likely that many projects will use same data fields. In order to
 know how many projects use the same data fields, all data fields are defined in
-one places called schema.
+one places called vocabulary.
 
-Here is example how schema file looks:
+Here is example how vocabulary file looks:
 
 .. code-block:: yaml
 
-  # schema/seimo_narys.yml
+  # vocabulary/seimo_narys.yml
   id: "seimo_narys"
   title: "Member of Parliament"
   description: ""
-  type: "schema"
+  type: "vocabulary"
   properties:
     first_name:
       title: "First name"
@@ -121,7 +121,7 @@ Here is example how schema file looks:
       title: "Last name"
       type: "string"
 
-All object and property names must be defined in schema file, befere using
+All object and property names must be defined in vocabulary file, befere using
 those names in data or source files.
 
 
@@ -133,15 +133,15 @@ example how this could be done:
 
 .. code-block:: yaml
 
-  # sources/lrs/ad.yml
-  id: "lrs/ad"
+  # sources/gov/lrs/ad.yml
+  id: "gov/lrs/ad"
   title: "Members of Parliament (XML)"
   description: "XML file containing data about members of parliament."
   type: "source"
   source:
     - "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
     - "xml:"
-  provider: "lrs"
+  provider: "gov/lrs"
   objects:
     seimo_narys:
       source: "xpath:/SeimoInformacija/SeimoKadencija/SeimoNarys"
@@ -168,18 +168,18 @@ But in most cases we will not have direct access to data, so that's why
 `source` parameter is optional. It is enough to just specify a URL and list
 properties that we think are provided by the source.
 
-`lrs` parameter points to another YAML file where provider is defined. Here is
-how this file looks:
+`gov/lrs` parameter points to another YAML file where provider is defined. Here
+is how this file looks:
 
 .. code-block:: yaml
 
-  # providers/lrs.yml
-  id: "lrs"
+  # providers/gov/lrs.yml
+  id: "gov/lrs"
   title: "Lietuvos Respublikos Seimas"
   type: "provider"
   logo: "logo.png"
 
-`logo` property here points to `media/providers/lrs/logo.png` file.
+`logo` property here points to `media/providers/gov/lrs/logo.png` file.
 
 
 I don't know how to create a pull request

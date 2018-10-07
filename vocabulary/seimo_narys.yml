@@ -1,7 +1,7 @@
 id: "seimo_narys"
 title: "Member of Parliament"
 description: ""
-type: "schema"
+type: "vocabulary"
 properties:
   first_name:
     title: "First name"

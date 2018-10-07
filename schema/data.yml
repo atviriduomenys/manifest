@@ -1,0 +1,26 @@
+type: object
+title: Data description
+patternProperties:
+  "^[a-zA-Z_]+$":
+    type: object
+    title: Data object
+    properties:
+      properties:
+        type: object
+        patternProperties:
+          "^[a-zA-Z_]+$":
+            type: object
+            title: Data field
+            properties:
+              type:
+                enum:
+                  - string
+                  - integer
+                  - float
+        additionalProperties: false
+      source:
+        type: string
+        title: Data source
+        description: >
+          ID of data source.
+additionalProperties: false

@@ -1,0 +1,24 @@
+---
+$schema: http://atviriduomenys.lt/schama/source
+$id: http://atviriduomenys.lt/schema/source.json
+title: Data source
+description: >
+  Information about data source and data provider by this source.
+type: object
+properties:
+  id:
+    type: string
+    title: Data source ID
+  title:
+    type: string
+    title: Data source name
+  type:
+    enum:
+      - source
+  provider:
+    type: string
+    title: Data provider ID
+    description: >
+      Reference to data provider.
+  objects:
+    $ref: http://atviriduomenys.lt/schema/data.json
