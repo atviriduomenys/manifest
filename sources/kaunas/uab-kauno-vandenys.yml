@@ -1,0 +1,10 @@
+description: .nan
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: UAB „Kauno vandenys“
+provider: kaunas
+source:
+- .nan
+- .nan
+title: .nan
+type: source

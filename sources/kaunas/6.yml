@@ -1,0 +1,10 @@
+description: Parkai, laisvalaikio, sporto zonos, krepsinio aiksteles, ju vietos
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Laisvalaikio-zonos
+- Parkai, laisvalaikio, sporto zonos, krepsinio aiksteles, ju vietos
+title: Parkai, laisvalaikio, sporto zonos, krepsinio aiksteles, ju vietos
+type: source
