@@ -1,6 +1,5 @@
 ---
-$schema: http://atviriduomenys.lt/schama/source
-$id: http://atviriduomenys.lt/schema/source.json
+$schema: http://json-schema.org/draft-04/schema#
 title: Data source
 description: >
   Information about data source and data provider by this source.
@@ -12,6 +11,9 @@ properties:
   title:
     type: string
     title: Data source name
+  description:
+    type: string
+    title: Data source description
   type:
     enum:
       - source
@@ -20,5 +22,19 @@ properties:
     title: Data provider ID
     description: >
       Reference to data provider.
+  source:
+    oneOf:
+      - $ref: "#/definitions/source"
+      - type: array
+        items:
+          $ref: "#/definitions/source"
   objects:
-    $ref: http://atviriduomenys.lt/schema/data.json
+    $ref: data.yml
+additionalProperties: false
+definitions:
+  source:
+    type: string
+    title: Data source
+    description: >
+      URI to the data source, you can use different schemes, like http, xml,
+      html, csv and etc. to specify how source data should be loaded.

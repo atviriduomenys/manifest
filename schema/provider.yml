@@ -1,6 +1,5 @@
 ---
-$schema: http://atviriduomenys.lt/schama/provider
-$id: http://atviriduomenys.lt/schema/provider.json
+$schema: http://json-schema.org/draft-04/schema#
 title: Data provider
 description: >
   Information about data provider.
@@ -17,9 +16,15 @@ properties:
   type:
     enum:
       - provider
+  sector:
+    enum:
+      - public
+      - private
+    title: Provider organisation sector
   logo:
     type: string
     title: Provider logo
     description: >
       Path to the provider logo. Path will be dynamically constructed, from
       media/, provider ID and logo file name specified by this property.
+additionalProperties: false

@@ -1,6 +1,5 @@
 ---
-$schema: http://atviriduomenys.lt/schama/vocabulary
-$id: http://atviriduomenys.lt/schema/vocabulary.json
+$schema: http://json-schema.org/draft-04/schema#
 title: Data object
 description: >
   Defines vocabulary for a single data object.
@@ -29,8 +28,10 @@ properties:
             enum:
               - string
               - integer
-              - float
+              - number
           title:
             type: string
             title: Data field name
+        additionalProperties: false
     additionalProperties: false
+additionalProperties: false

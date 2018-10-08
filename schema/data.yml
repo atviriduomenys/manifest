@@ -1,3 +1,4 @@
+---
 type: object
 title: Data description
 patternProperties:
@@ -23,4 +24,5 @@ patternProperties:
         title: Data source
         description: >
           ID of data source.
+    additionalProperties: false
 additionalProperties: false

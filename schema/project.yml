@@ -1,6 +1,5 @@
 ---
-$schema: http://atviriduomenys.lt/schama/project
-$id: http://atviriduomenys.lt/schema/project.json
+$schema: http://json-schema.org/draft-04/schema#
 title: Data needed for a project
 description: >
   Data description containing information about data needed for a project.
@@ -22,26 +21,31 @@ properties:
     type: array
     title: List of impact indicators by year
     items:
-      type: object
-      properties:
-        year:
-          type: integer
-          title: Year
-        users:
-          type: integer
-          title: Number of users
-          description: >
-            Number of unique project users for a specified year.
-        revenue:
-          type: float
-          title: Revenue in Euros
-          description:
-            Revenue in Eruos generated for a specified year.
-        employees:
-          type: integer
-          title: Number of emplyees
-          description:
-            Number of emplyees, employed for specified year who worked on this
-            project.
+      $ref: "#/definitions/impact"
   objects:
-    $ref: http://atviriduomenys.lt/schema/data.json
+    $ref: data.yml
+additionalProperties: false
+definitions:
+  impact:
+    type: object
+    properties:
+      year:
+        type: integer
+        title: Year
+      users:
+        type: integer
+        title: Number of users
+        description: >
+          Number of unique project users for a specified year.
+      revenue:
+        type: number
+        title: Revenue in Euros
+        description:
+          Revenue in Eruos generated for a specified year.
+      employees:
+        type: integer
+        title: Number of emplyees
+        description:
+          Number of emplyees, employed for specified year who worked on this
+          project.
+    additionalProperties: false
