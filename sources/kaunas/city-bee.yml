@@ -1,0 +1,10 @@
+description: auto ir dviračių stotelės Lietuvoje
+economic-sector: private
+id: kaunas/kaunas-municipality
+owner: City Bee
+provider: kaunas
+source:
+- http://www.citybee.lt/lt/transportas/
+- auto ir dviračių stotelės Lietuvoje.
+title: auto ir dviračių stotelės Lietuvoje
+type: source

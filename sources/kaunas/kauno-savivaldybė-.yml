@@ -1,0 +1,10 @@
+description: Duomenis apie Kauno rajonų, seniūnijų ribas
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: Kauno savivaldybė ?
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Miesto-ribos
+- Duomenis apie Kauno rajonų, seniūnijų ribas
+title: Duomenis apie Kauno rajonų, seniūnijų ribas
+type: source

@@ -1,0 +1,10 @@
+description: Like Bike dviračių takai
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: Like Bike
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Dviraciai
+- Like Bike dviračių takai.kml
+title: Like Bike dviračių takai
+type: source

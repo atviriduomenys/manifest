@@ -1,0 +1,10 @@
+description: zeldynai, transportas, juodos demes, itvp, dviraciu takai, adm
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: SĮ „Kauno planas“
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Kauno-Planas
+- zeldynai, transportas, juodos demes, itvp, dviraciu takai, adm
+title: zeldynai, transportas, juodos demes, itvp, dviraciu takai, adm
+type: source

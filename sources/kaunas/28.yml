@@ -1,0 +1,10 @@
+description: LIcenzijos ir leidimai, kurių galiojimas sustabdytas
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Leidimai-Licenzijos
+- LIcenzijos ir leidimai, kurių galiojimas sustabdytas.xls
+title: LIcenzijos ir leidimai, kurių galiojimas sustabdytas
+type: source

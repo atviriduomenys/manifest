@@ -1,0 +1,10 @@
+description: Mazos_vertes_pirkimai_2014
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Viesieji-Pirkimai
+- Mazos_vertes_pirkimai_2014.csv
+title: Mazos_vertes_pirkimai_2014
+type: source

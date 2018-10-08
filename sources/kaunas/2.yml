@@ -1,0 +1,11 @@
+description: 'Biblioteka: padalinys vadovas adresas telefonas el'
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Bibliotekos
+- 'Biblioteka: padalinys vadovas adresas telefonas el. paštas darbo laikas, darbo
+  laikas vasarą'
+title: 'Biblioteka: padalinys vadovas adresas telefonas el'
+type: source

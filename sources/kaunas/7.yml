@@ -1,0 +1,10 @@
+description: svietimo ataskaitos
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Svietimas
+- svietimo ataskaitos
+title: svietimo ataskaitos
+type: source

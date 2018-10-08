@@ -1,0 +1,10 @@
+description: valomos teritorijos 2018 10 04
+economic-sector: public
+id: kaunas/kaunas-municipality
+owner: '?'
+provider: kaunas
+source:
+- https://github.com/Kauno-miestas/Leidimai-Licenzijos
+- valomos teritorijos 2018 10 04.xlsx
+title: valomos teritorijos 2018 10 04
+type: source
