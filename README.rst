@@ -198,6 +198,9 @@ Once pull request is created, automated scripts will check if everything is OK,
 then a human will review pull request and if everything is OK, then pull
 request will be accepted.
 
+If you want to check yaml files locally, you can run this command::
+
+  make check
 
 
 .. _GitHub pull requests: https://help.github.com/articles/creating-a-pull-request/
