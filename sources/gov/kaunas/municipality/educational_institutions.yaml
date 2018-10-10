@@ -1,0 +1,30 @@
+id: "gov/kaunas/municipality"
+title: "Educational institutions"
+description: "CSV file containing data about Kaunas educational institutions"
+type: "source"
+source:
+  - "https://github.com/Kauno-miestas/Svietimas/blob/master/Svietimo%20istaigos.csv"
+  - "csv:"
+provider: "gov/kaunas/municipality"
+objects:
+  educational_institution:
+    source: https://github.com/Kauno-miestas/Svietimas/blob/master/Svietimo%20istaigos.csv
+    properties:
+      name:
+        type: "string"
+        source: "pavadinimas"
+      id:
+        type: "int"
+        source: "kodas"
+      address:
+        type: "string"
+        source: "adresas"
+      management_email:
+        type: "string"
+        source: "vad_email"
+      phone_number:
+        type: "string"
+        source: "vad_tel"
+      home_page:
+        type: "string"
+        source: "web"
