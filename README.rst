@@ -1,7 +1,7 @@
 .. default-role:: literal
 
-Lithuanian open data repository
-###############################
+Lithuanian Open Data Manifest
+#############################
 
 Here you can request data for your project or tell what data your project
 already use and how things are going for the project.
