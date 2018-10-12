@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -175,4 +176,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
