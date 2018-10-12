@@ -270,7 +270,7 @@ XML source
 
 
 JSON source
-===========
+-----------
 
 .. code-block:: yaml
 
