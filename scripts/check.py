@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
-from jsonschema import Draft4Validator, SchemaError, ValidationError, validate
+from jsonschema import Draft4Validator, SchemaError, ValidationError, RefResolutionError, validate
 from ruamel.yaml import YAML
 
 yaml = YAML(typ='safe')
@@ -22,28 +22,39 @@ class Validator:
             'project': {},
         }
 
-    def _load_schema_refs(self, value):
+    def _load_schema_refs(self, value, definitions):
         if isinstance(value, dict):
             if '$ref' in value and value['$ref'].endswith('.yml'):
-                return self.load_schema(self.here / 'schema' / value['$ref'], ref=True)
+                return self.load_schema(self.here / 'schema' / value['$ref'], definitions)
             else:
                 return {
-                    k: self._load_schema_refs(v)
+                    k: self._load_schema_refs(v, definitions)
                     for k, v in value.items()
                 }
         if isinstance(value, list):
-            return [self._load_schema_refs(v) for v in value]
+            return [self._load_schema_refs(v, definitions) for v in value]
 
         return value
 
-    def load_schema(self, path: Path, ref=False):
+    def load_schema(self, path: Path, definitions=None):
         data = yaml.load(path.read_text())
-        data = self._load_schema_refs(data)
+
+        if definitions is None:
+            main = True
+            definitions = {}
+            data = self._load_schema_refs(data, definitions)
+            if definitions:
+                data['definitions'] = definitions
+        else:
+            main = False
+            definitions.update(data.pop('definitions', {}))
+            data = self._load_schema_refs(data, definitions)
+
         try:
             Draft4Validator.check_schema(data)
-        except SchemaError as e:
+        except (SchemaError, RefResolutionError) as e:
             raise ValidationError("Error while reading %s: %s" % (path.relative_to(self.here), e))
-        if not ref:
+        if main:
             self.schemas[path.stem] = data
         return data
 
@@ -51,7 +62,7 @@ class Validator:
         data = yaml.load(path.read_text())
         try:
             self.validate(data)
-        except ValidationError as e:
+        except (ValidationError, RefResolutionError) as e:
             raise ValidationError("Error while reading %s: %s" % (path.relative_to(self.here), e))
 
         self.objects[data['type']][data['id']] = data

@@ -23,7 +23,7 @@ properties:
     items:
       $ref: "#/definitions/impact"
   objects:
-    $ref: data.yml
+    $ref: _data.yml
 additionalProperties: false
 definitions:
   impact:

@@ -23,18 +23,7 @@ properties:
     description: >
       Reference to data provider.
   source:
-    oneOf:
-      - $ref: "#/definitions/source"
-      - type: array
-        items:
-          $ref: "#/definitions/source"
+    $ref: _source.yml
   objects:
-    $ref: data.yml
+    $ref: _data.yml
 additionalProperties: false
-definitions:
-  source:
-    type: string
-    title: Data source
-    description: >
-      URI to the data source, you can use different schemes, like http, xml,
-      html, csv and etc. to specify how source data should be loaded.
