@@ -170,15 +170,19 @@ def main():
     validator = Validator(here)
 
     for name in ['schema', 'vocabulary', 'providers', 'sources', 'projects']:
-        for path in here.glob('%s/**/*.yml' % name):
+        for path in here.glob('%s/**/*' % name):
+            if not path.is_file():
+                continue
             try:
+                if path.suffix != '.yml':
+                    raise ValidationError("Only .yml files are supported, found unsupported %s file." % path)
                 if name == 'schema':
                     validator.load_schema(path)
                 else:
                     validator.load(path)
             except ValidationError as e:
                 ok = False
-                print(e)
+                print('ERROR:', e)
 
     if ok:
         print("All seems to be OK.")
