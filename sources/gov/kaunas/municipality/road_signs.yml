@@ -84,7 +84,7 @@ objects:
         type:
         source: PASAL_PRIEZASTIS
       removal_date:
-        type:
+        type: date
         source: PASAL_DATA
       global_id:
         type:
