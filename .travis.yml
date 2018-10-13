@@ -1,7 +1,7 @@
 language: python
 python:
-  - "3.6"
+  - "3.5"
 install:
-  - pip install -r scripts/requirements.txt
+  - pip install -r requirements.txt -e .
 script:
-  - scripts/check.py
+  - admanifest-check

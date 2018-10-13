@@ -17,6 +17,14 @@ patternProperties:
       until:
         type: string
         format: date
+      stars:
+        enum:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
       properties:
         type: object
         patternProperties:
@@ -35,6 +43,14 @@ patternProperties:
               until:
                 type: string
                 format: date
+              stars:
+                enum:
+                  - 0
+                  - 1
+                  - 2
+                  - 3
+                  - 4
+                  - 5
             required:
               - type
         additionalProperties: false

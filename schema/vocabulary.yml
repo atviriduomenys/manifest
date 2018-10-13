@@ -32,6 +32,11 @@ properties:
           title:
             type: string
             title: Data field name
+        required:
+          - type
         additionalProperties: false
     additionalProperties: false
+required:
+  - id
+  - type
 additionalProperties: false

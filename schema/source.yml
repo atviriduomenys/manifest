@@ -28,6 +28,14 @@ properties:
   until:
     type: string
     format: date
+  stars:
+    enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
   source:
     $ref: _source.yml
   objects:
