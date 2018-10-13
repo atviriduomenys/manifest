@@ -4,5 +4,5 @@ python:
 install:
   - pip install -r requirements-dev.txt -e .
 script:
-  - py.test -vvsa --tb=native --cov-report=term-missing --cov=admanifest tests
+  - py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
   - admanifest-check
