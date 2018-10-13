@@ -2,6 +2,7 @@ language: python
 python:
   - "3.5"
 install:
-  - pip install -r requirements.txt -e .
+  - pip install -r requirements-dev.txt -e .
 script:
+  - py.test -vvsa --tb=native --cov-report=term-missing --cov=admanifest tests
   - admanifest-check
