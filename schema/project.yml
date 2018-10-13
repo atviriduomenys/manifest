@@ -22,8 +22,19 @@ properties:
     title: List of impact indicators by year
     items:
       $ref: "#/definitions/impact"
+  since:
+    type: string
+    format: date
+  until:
+    type: string
+    format: date
   objects:
     $ref: _data.yml
+required:
+  - id
+  - type
+  - title
+  - since
 additionalProperties: false
 definitions:
   impact:

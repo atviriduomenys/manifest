@@ -6,6 +6,17 @@ patternProperties:
     type: object
     title: Data object
     properties:
+      source:
+        type: string
+        title: Data source
+        description: >
+          ID of data source.
+      since:
+        type: string
+        format: date
+      until:
+        type: string
+        format: date
       properties:
         type: object
         patternProperties:
@@ -17,12 +28,15 @@ patternProperties:
                 enum:
                   - string
                   - integer
-                  - float
+                  - numeric
+              since:
+                type: string
+                format: date
+              until:
+                type: string
+                format: date
+            required:
+              - type
         additionalProperties: false
-      source:
-        type: string
-        title: Data source
-        description: >
-          ID of data source.
     additionalProperties: false
 additionalProperties: false

@@ -22,8 +22,20 @@ properties:
     title: Data provider ID
     description: >
       Reference to data provider.
+  since:
+    type: string
+    format: date
+  until:
+    type: string
+    format: date
   source:
     $ref: _source.yml
   objects:
     $ref: _data.yml
+required:
+  - id
+  - type
+  - title
+  - since
+  - provider
 additionalProperties: false

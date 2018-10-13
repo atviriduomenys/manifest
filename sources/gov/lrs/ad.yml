@@ -4,6 +4,7 @@ description: "XML file containing data about members of parliament."
 type: "source"
 source: "xml+http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
 provider: "gov/lrs"
+since: "2016-01-01"
 objects:
   seimo_narys:
     source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
