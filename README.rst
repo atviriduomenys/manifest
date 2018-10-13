@@ -69,6 +69,7 @@ Here is an example, how a project could request the data:
   id: "projects/manopozicija.lt"
   title: "ManoPozicija.lt"
   type: "project"
+  since: "2015-07-21"
   impact:
     - {year: 2015, users: 10, revenue: 0, employees: 0}
     - {year: 2016, users:  0, revenue: 0, employees: 0}
@@ -140,6 +141,7 @@ example how this could be done:
   type: "source"
   source: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
   provider: "gov/lrs"
+  since: "2016-01-01"
   objects:
     seimo_narys:
       source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
