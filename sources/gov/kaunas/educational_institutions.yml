@@ -15,7 +15,7 @@ objects:
         type: "string"
         source: "pavadinimas"
       id:
-        type: "int"
+        type: "integer"
         source: "kodas"
       address:
         type: "string"
