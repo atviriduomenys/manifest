@@ -4,7 +4,7 @@ description: "CSV file containing data about Kaunas educational institutions"
 type: "source"
 source:
   - "https://github.com/Kauno-miestas/Svietimas/blob/master/Svietimo%20istaigos.csv"
-  - type: "csv"
+  - type: '#/definitions/csv'
     sep: ","
 provider: "gov/kaunas/municipality"
 objects:
