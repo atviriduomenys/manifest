@@ -7,12 +7,13 @@ impact:
   - {year: 2017, users:  0, revenue: 0, employees: 0}
   - {year: 2018, users: 10, revenue: 0, employees: 0}
   - {year: 2019, users: 20, revenue: 0, employees: 0}
+since: "2015-07-21"
 objects:
   seimo_narys:
     properties:
       first_name:
         type: "string"
-        source: "lrs/ad"
+        source: "gov/lrs/ad"
       last_name:
         type: "string"
-        source: "lrs/ad"
+        source: "gov/lrs/ad"

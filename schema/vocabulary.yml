@@ -1,0 +1,42 @@
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: Data object
+description: >
+  Defines vocabulary for a single data object.
+type: object
+properties:
+  id:
+    type: string
+    title: Data vocabulary ID
+  title:
+    type: string
+    title: Data vocabulary name
+  description:
+    type: string
+    title: Description of this data object
+  type:
+    enum:
+      - vocabulary
+  properties:
+    type: object
+    patternProperties:
+      "^[a-zA-Z_]+$":
+        type: object
+        title: Data field
+        properties:
+          type:
+            enum:
+              - string
+              - integer
+              - number
+          title:
+            type: string
+            title: Data field name
+        required:
+          - type
+        additionalProperties: false
+    additionalProperties: false
+required:
+  - id
+  - type
+additionalProperties: false

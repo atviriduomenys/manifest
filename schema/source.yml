@@ -1,0 +1,49 @@
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: Data source
+description: >
+  Information about data source and data provider by this source.
+type: object
+properties:
+  id:
+    type: string
+    title: Data source ID
+  title:
+    type: string
+    title: Data source name
+  description:
+    type: string
+    title: Data source description
+  type:
+    enum:
+      - source
+  provider:
+    type: string
+    title: Data provider ID
+    description: >
+      Reference to data provider.
+  since:
+    type: string
+    format: date
+  until:
+    type: string
+    format: date
+  stars:
+    enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+  source:
+    $ref: _source.yml
+  objects:
+    $ref: _data.yml
+required:
+  - id
+  - type
+  - title
+  - since
+  - provider
+additionalProperties: false

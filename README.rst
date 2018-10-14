@@ -1,7 +1,7 @@
 .. default-role:: literal
 
-Lithuanian open data repository
-###############################
+Lithuanian Open Data Manifest
+#############################
 
 Here you can request data for your project or tell what data your project
 already use and how things are going for the project.
@@ -43,7 +43,7 @@ should describe data needed for a project in YAML_ format.
 
 YAML_ files are organized into this structure::
 
-  schema/
+  vocabulary/
     <object>.yml
   providers/
     <provider>.yml
@@ -69,6 +69,7 @@ Here is an example, how a project could request the data:
   id: "projects/manopozicija.lt"
   title: "ManoPozicija.lt"
   type: "project"
+  since: "2015-07-21"
   impact:
     - {year: 2015, users: 10, revenue: 0, employees: 0}
     - {year: 2016, users:  0, revenue: 0, employees: 0}
@@ -80,10 +81,10 @@ Here is an example, how a project could request the data:
       properties:
         first_name:
           type: "string"
-          source: "lrs/ad"
+          source: "gov/lrs/ad"
         last_name:
           type: "string"
-          source: "lrs/ad"
+          source: "gov/lrs/ad"
 
 `impact` parameter is used to describe social and economical impact. Both
 future and past dates can be provided for estimated and retrospective impact.
@@ -97,22 +98,22 @@ As you can see data structure here looks a bit similar to json-schema_, meaning
 that some fields are well defined in json-schema_ specifications.
 
 
-What is the purpose of schema?
-==============================
+What is the purpose of vocabulary?
+==================================
 
 It is very likely that many projects will use same data fields. In order to
 know how many projects use the same data fields, all data fields are defined in
-one places called schema.
+one places called vocabulary.
 
-Here is example how schema file looks:
+Here is example how vocabulary file looks:
 
 .. code-block:: yaml
 
-  # schema/seimo_narys.yml
+  # vocabulary/seimo_narys.yml
   id: "seimo_narys"
   title: "Member of Parliament"
   description: ""
-  type: "schema"
+  type: "vocabulary"
   properties:
     first_name:
       title: "First name"
@@ -121,7 +122,7 @@ Here is example how schema file looks:
       title: "Last name"
       type: "string"
 
-All object and property names must be defined in schema file, befere using
+All object and property names must be defined in vocabulary file, befere using
 those names in data or source files.
 
 
@@ -133,53 +134,52 @@ example how this could be done:
 
 .. code-block:: yaml
 
-  # sources/lrs/ad.yml
-  id: "lrs/ad"
+  # sources/gov/lrs/ad.yml
+  id: "gov/lrs/ad"
   title: "Members of Parliament (XML)"
   description: "XML file containing data about members of parliament."
   type: "source"
-  source:
-    - "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-    - "xml:"
-  provider: "lrs"
+  source: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+  provider: "gov/lrs"
+  since: "2016-01-01"
   objects:
     seimo_narys:
-      source: "xpath:/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
       properties:
         first_name:
           type: "string"
-          source: "xpath:@vardas"
+          source: "@vardas"
         last_name:
           type: "string"
-          source: "xpath:@pavardė"
+          source: "@pavardė"
 
-Defining a source is the most complicated part, but luckilly this part is
+Defining a source is the most complicated part, but luckily this part is
 optional!
 
 Here `source` parameter is optional. It is used just to demonstrate complete
-example of how thinks look.
+example of how things look.
 
 The idea with sources, is that you can specify exact location of the data. Just
-by using this source description data can be extracted in a fully automated
-way. Well at least in simple cases. In addition this detailed source
-description can be used to validate if described data is really there.
+by using descriptions provided in `source` fields, data can be extracted in a
+fully automated way. Well at least in simple cases. In addition this detailed
+source description can be used to validate if source data are really there.
 
 But in most cases we will not have direct access to data, so that's why
 `source` parameter is optional. It is enough to just specify a URL and list
 properties that we think are provided by the source.
 
-`lrs` parameter points to another YAML file where provider is defined. Here is
-how this file looks:
+`gov/lrs` parameter points to another YAML file where provider is defined. Here
+is how this file looks:
 
 .. code-block:: yaml
 
-  # providers/lrs.yml
-  id: "lrs"
+  # providers/gov/lrs.yml
+  id: "gov/lrs"
   title: "Lietuvos Respublikos Seimas"
   type: "provider"
   logo: "logo.png"
 
-`logo` property here points to `media/providers/lrs/logo.png` file.
+`logo` property here points to `media/providers/gov/lrs/logo.png` file.
 
 
 I don't know how to create a pull request
@@ -198,6 +198,166 @@ Once pull request is created, automated scripts will check if everything is OK,
 then a human will review pull request and if everything is OK, then pull
 request will be accepted.
 
+If you want to check yaml files locally, you can run this command::
+
+  make check
+
+
+Data sources
+============
+
+Here I will try to explain, how `source` parameter works.
+
+`source` parameter can be defined in three different places:
+
+.. code-block:: yaml
+
+  source: # dataset scope
+  objects:
+    object:
+      source: # object scope
+      properties:
+        field:
+          source: # field scope
+
+`source` parameter can have short and log forms, short form looks like this:
+
+.. code-block:: yaml
+
+  source: "https://example.com"
+  objects:
+    object:
+      source: "data.csv"
+      properties:
+        field:
+          source: "column"
+
+And exactly same thing can be written as long form:
+
+.. code-block:: yaml
+
+  source:
+    dsn: "https://example.com"
+    type: "csv"
+    delim: ","
+  objects:
+    object:
+      source:
+        dsn: "data.csv"
+      properties:
+        field:
+          source:
+            dsn: "column"
+
+As you can see in dataset scope, you define dataset specific properties all
+those properties will be inherited in narrower scopes.
+
+Depending on type, short form `source` value has different meaning, for `csv`
+type, in dataset scope it means base URL, in object scope - relative or full
+URL, in field scope it means column name.
+
+
+XML source
+----------
+
+.. code-block:: yaml
+
+  source: "https://example.com/data.xml"
+  objects:
+    object:
+      source: "//object"
+      properties:
+        field:
+          source: "@attribute"
+
+
+JSON source
+-----------
+
+.. code-block:: yaml
+
+  ---
+  id: "com/example/items"
+  source: "https://example.com/items.json"
+  objects:
+    object:
+      source: "items"
+      properties:
+        id:
+          source: "id"
+  ---
+  id: "com/example/item"
+  source: "https://example.com/items/{com/example/items/object/id}.json"
+  objects:
+    object:
+      source: []
+      properties:
+        id:
+          source: "id"
+        field1:
+          source: ["some", "nested", "field"]
+
+
+PostgreSQL source
+-----------------
+
+.. code-block:: yaml
+
+  source: "postgresql://localhost/dbname"
+  objects:
+    object:
+      source: "tablename"
+      properties:
+        field:
+          source: "fieldname"
+
+Another example with a query:
+
+.. code-block:: yaml
+
+  source: "postgresql://localhost/dbname"
+  objects:
+    object:
+      source:
+        query: >
+          SELECT *
+          FROM table1
+          JOIN table2 ON (table1.id = table2.id)
+          WHERE table1.param > 42
+          ORDER BY table2.param
+      properties:
+        field:
+          source: "fieldname"
+
+
+HTML table source
+-----------------
+
+.. code-block:: yaml
+
+  source: "https://example.com/some/page.html"
+  objects:
+    object:
+      source:
+        type: htmltable
+        cols: 4
+      properties:
+        field:
+          source: "Some column name"
+
+
+OpenDocument Spreadsheet
+------------------------
+
+.. code-block:: yaml
+
+  source: "https://example.com/data.ods"
+  objects:
+    object:
+      source: "SheetName"
+      properties:
+        field:
+          source: "A"
 
 
 .. _GitHub pull requests: https://help.github.com/articles/creating-a-pull-request/
