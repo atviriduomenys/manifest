@@ -3,6 +3,6 @@ id: "gov/kaunas/kauno_svara/zeldynai"
 title: "Antrinių žaliavų konteineriai"
 type: "source"
 source: "csv+https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv"
-provider: "gov/lrs"
+provider: "gov/kaunas/kauno_svara"
 since: "2018-10-06"
 stars: 3
