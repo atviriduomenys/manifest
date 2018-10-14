@@ -17,7 +17,7 @@ class ManifestFactory:
         self.fixtures = {
             'provider': {
                 'counter': ('p%d' % x for x in itertools.count(1)),
-                'depends': [],
+                'depends': ['provider'],
                 'default': {
                     'id': 'p1',
                     'type': 'provider',
@@ -27,7 +27,7 @@ class ManifestFactory:
             },
             'source': {
                 'counter': ('s%d' % x for x in itertools.count(1)),
-                'depends': ['provider'],
+                'depends': ['provider', 'source'],
                 'default': {
                     'id': 's1',
                     'type': 'source',
@@ -38,7 +38,7 @@ class ManifestFactory:
             },
             'project': {
                 'counter': ('r%d' % x for x in itertools.count(1)),
-                'depends': [],
+                'depends': ['project'],
                 'default': {
                     'id': 'r1',
                     'type': 'project',
@@ -47,18 +47,19 @@ class ManifestFactory:
             },
             'object': {
                 'counter': ('o%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'source', 'project'],
+                'depends': ['provider', 'source', 'project', 'object'],
                 'default': {
                     'id': 'o1',
-                    'since': None
+                    'since': None,
                 },
             },
             'field': {
                 'counter': ('f%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'source', 'project', 'object'],
+                'depends': ['provider', 'source', 'project', 'object', 'field'],
                 'default': {
                     'id': 'f1',
-                    'since': None
+                    'type': 'string',
+                    'since': None,
                 },
             },
         }
@@ -118,7 +119,7 @@ class ManifestFactory:
             target['objects'] = {}
 
         if params['id'] not in target['objects']:
-            target['objects'][params['id']] = self.loader._load_object(params, target)
+            target['objects'][params['id']] = self.loader._load_object(params['id'], params, target)
 
         return target['objects'][params['id']]
 
@@ -126,8 +127,8 @@ class ManifestFactory:
         if 'properties' not in target:
             target['properties'] = {}
 
-        if params['id'] not in target['params']:
-            target['properties'][params['id']] = self.loader._load_property(params, target)
+        if params['id'] not in target['properties']:
+            target['properties'][params['id']] = self.loader._load_property(params['id'], params, target)
 
         return target['properties'][params['id']]
 
