@@ -27,6 +27,5 @@ objects:
         type: "string"
         source: "web"
 since: "2018-10-04"
-until: ""
 stars: 2
 
