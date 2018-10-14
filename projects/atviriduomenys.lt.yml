@@ -1,0 +1,18 @@
+id: "projects/atviriduomenys.lt"
+title: "Atviri duomenys"
+type: "project"
+since: "2018-09-21"
+objects:
+  juridinis_asmuo:
+    properties:
+      kodas:
+        type: "string"
+      pavadinimas:
+        type: "string"
+      buveines_adresas:
+        type: "string"
+      teisine_forma:
+        type: "string"
+      teisinis_statusas:
+        type: "string"
+source: "http://www.registrucentras.lt/jar/p/index.php"
