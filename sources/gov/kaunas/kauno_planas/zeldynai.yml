@@ -1,0 +1,66 @@
+---
+id: "gov/kaunas/kauno_planas/zeldynai"
+title: "Želdynai"
+type: "source"
+source: "csv+https://github.com/Kauno-miestas/Kauno-Planas/raw/master/Zeldynai/csv/"
+provider: "gov/lrs"
+since: "2018-10-06"
+stars: 3
+objects:
+  zeldynas:
+    source: "Želdynas.csv"
+    properties:
+      id:
+        type: "integer"
+        source: "OID"
+      title:
+        type: "string"
+        source: "Pavadinima"
+      zeldyno_ko:
+        type: "integer"
+        source: "Zeldyno_ko"
+      zeldyno_ti:
+        type: "integer"
+        source: "Zeldyno_ti"
+      zeldyno_pa:
+        type: "integer"
+        source: "Zeldyno_pa"
+      zeldyno_bu:
+        type: "integer"
+        source: "Zeldyno_bu"
+      veja:
+        type: "integer"
+        source: "Veja"
+      gelynai:
+        type: "integer"
+        source: "Gelynai"
+      statiniai:
+        type: "integer"
+        source: "Statiniai"
+      siuksles:
+        type: "string"
+        source: "Siuksles"
+      pastabos:
+        type: "string"
+        source: "Pastabos"
+      metod:
+        type: "string"
+        source: "METOD"
+      usr_id:
+        type: "integer"
+        source: "USR_ID"
+      lastupdate:
+        type: "string"
+        source: "LASTUPDATE"
+      deleted:
+        type: "string"
+        source: "DELETED"
+      apzvelgiam:
+        type: "string"
+        source: "Apzvelgiam"
+      shape_area:
+        type: "integer"
+        source: "SHAPE_area"
+      shape_len:
+        type: "integer"
+        source: "SHAPE_len"

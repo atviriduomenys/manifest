@@ -1,0 +1,40 @@
+id: "zeldynas"
+title: "Želdynas"
+type: "vocabulary"
+properties:
+  id:
+    type: "integer"
+  title:
+    type: "string"
+  zeldyno_ko:
+    type: "integer"
+  zeldyno_ti:
+    type: "integer"
+  zeldyno_pa:
+    type: "integer"
+  zeldyno_bu:
+    type: "integer"
+  veja:
+    type: "integer"
+  gelynai:
+    type: "integer"
+  statiniai:
+    type: "integer"
+  siuksles:
+    type: "string"
+  pastabos:
+    type: "string"
+  metod:
+    type: "string"
+  usr_id:
+    type: "integer"
+  lastupdate:
+    type: "string"
+  deleted:
+    type: "string"
+  apzvelgiam:
+    type: "string"
+  shape_area:
+    type: "integer"
+  shape_len:
+    type: "integer"
