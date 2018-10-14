@@ -4,5 +4,20 @@ description: ""
 type: "vocabulary"
 properties:
   name:
-    title: "Name"
     type: "string"
+    title: "pavadinimas"
+  id:
+    type: "integer"
+    title: "kodas"
+  address:
+    type: "string"
+    title: "adresas"
+  management_email:
+    type: "string"
+    title: "vad_email"
+  phone_number:
+    type: "string"
+    title: "vad_tel"
+  home_page:
+    type: "string"
+    title: "web"
