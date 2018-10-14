@@ -1,5 +1,5 @@
 ---
-id: "gov/kaunas/kauno_svara/zeldynai"
+id: "gov/kaunas/kauno_svara/antriniu_zaliavu_konteineriai"
 title: "Antrinių žaliavų konteineriai"
 type: "source"
 source: "csv+https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv"
