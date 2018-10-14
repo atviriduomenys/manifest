@@ -15,4 +15,3 @@ objects:
         type: "string"
       teisinis_statusas:
         type: "string"
-source: "http://www.registrucentras.lt/jar/p/index.php"
