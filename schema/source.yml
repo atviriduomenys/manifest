@@ -36,6 +36,21 @@ properties:
       - 3
       - 4
       - 5
+  opengovdata:
+    title: "Open government data principles"
+    type: array
+    items:
+      - principle_name:
+          type: string
+          description: "Name of principle"
+      - value:
+          type: "numeric"
+          minimum: 0
+          maximum: 1
+          description: "Value given for a specific principle"
+      - comment: 
+          type: string
+          description: "A comment why particular value was chosen."
   source:
     $ref: _source.yml
   objects:
