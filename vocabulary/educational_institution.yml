@@ -1,0 +1,8 @@
+id: "educational_institution"
+title: "Educational Institution"
+description: ""
+type: "vocabulary"
+properties:
+  name:
+    title: "Name"
+    type: "string"
