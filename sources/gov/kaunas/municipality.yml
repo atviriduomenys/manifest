@@ -1,0 +1,94 @@
+id: "gov/kaunas/municipality/road_signs"
+title: "Kaunas road signs"
+description: "CSV file containing data about Kaunas road signs"
+type: "source"
+source:
+  - "https://github.com/Kauno-miestas/Kauno-Planas/blob/master/Transportas/csv/Zenklai.csv"
+  - type: "csv"
+    delim: ","
+provider: "gov/kaunas/municipality"
+objects:
+  road_signs:
+    source: https://github.com/Kauno-miestas/Kauno-Planas/blob/master/Transportas/csv/Zenklai.csv
+    properties:
+    - object_id: 
+        type: int
+        source: OBJECTID
+      sign_id: 
+        type: int
+        source: ZENKLO_ID
+      type: 
+        type: 
+        source: TIPAS
+      sign_text: 
+        type:
+        source: ZENKLO_TEKSTAS
+      direction_of_effect: 
+        type: 
+        source: GALIOJIMO_KRYPTIS
+      rotation_degree: 
+        type:
+        source: PASUKIMO_KAMPAS
+      state: 
+        type:
+        source: BUKLE
+      GUID: 
+        type:
+        source: GUID_
+      from_top: 
+        type:
+        source: PADETIS_NUO_VIRSAUS
+      sign_category: 
+        type:
+        source: ZENKLU_GRUPE
+      decision_date: 
+        type:
+        source: SPRENDIMO_DATA
+      implementation_date: 
+        type:
+        source: IRENGIMO_DATA
+      duration_start:
+        type:
+        source: GALIOJA_NUO
+      duration_end:
+        type:
+        source: GALIOJA_IKI
+      height:
+        type:
+        source: PASTATYMO_AUKSTIS
+      ket_number:
+        type:
+        source: KET_NR
+      status:
+        type:
+        source: STATUSAS
+      file_sys_name:
+        type:
+        source: FAILO_SYS_VARDAS
+      decision_number:
+        type:
+        source: SPRENDIMO_NR
+      inventorization_padetis:
+        type:
+        source: INVENTORIZAVIMO_PADETIS
+      visibility:
+        type:
+        source: MATOMUMAS
+      reflection_group:
+        type:
+        source: ATSPINDZIO_GRUPE
+      address:
+        type:
+        source: ADRESAS
+      removal_reason:
+        type:
+        source: PASAL_PRIEZASTIS
+      removal_date:
+        type: date
+        source: PASAL_DATA
+      global_id:
+        type:
+        source: GlobalID
+      id_relation:
+        type:
+        source: ID_RYSIUI
