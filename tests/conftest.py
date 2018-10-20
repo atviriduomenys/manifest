@@ -114,7 +114,6 @@ class ManifestFactory:
         return data[type]
 
     def _add_object(self, target, params):
-        print(target)
         if 'objects' not in target:
             target['objects'] = {}
 

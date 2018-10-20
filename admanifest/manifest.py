@@ -172,8 +172,8 @@ class Loader:
     def _load_object(self, name, data, source):
         obj = {
             'id': name,
-            'since': self.call('since', self._parse_date, data.get('since', source['since'])),
-            'until': self.call('until', self._parse_date, data.get('until', source['since'])),
+            'since': self.call('since', self._parse_date, data.get('since') or source['since']),
+            'until': self.call('until', self._parse_date, data.get('until') or source['until']),
             'stars': data.get('stars', source['stars']),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
@@ -190,8 +190,8 @@ class Loader:
         prop = {
             'id': name,
             'type': data['type'],
-            'since': self.call('since', self._parse_date, data.get('since', obj['since'])),
-            'until': self.call('until', self._parse_date, data.get('until', obj['since'])),
+            'since': self.call('since', self._parse_date, data.get('since') or obj['since']),
+            'until': self.call('until', self._parse_date, data.get('until') or obj['until']),
             'stars': data.get('stars', obj['stars']),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
