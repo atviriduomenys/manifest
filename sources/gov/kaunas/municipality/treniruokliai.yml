@@ -1,0 +1,7 @@
+id: "gov/kaunas/municipality/treniruokliai"
+title: "Treniruokliai"
+type: "source"
+source: "csv+https://raw.githubusercontent.com/Kauno-miestas/Laisvalaikio-zonos/master/Treniruokliai.csv"
+provider: "gov/kaunas/municipality"
+since: "2018-10-06"
+stars: 3
