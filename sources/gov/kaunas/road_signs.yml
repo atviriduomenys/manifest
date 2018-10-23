@@ -3,16 +3,16 @@ title: "Kaunas road signs"
 description: "CSV file containing data about Kaunas road signs"
 type: "source"
 source:
-  - "https://github.com/Kauno-miestas/Kauno-Planas/blob/master/Transportas/csv/Zenklai.csv"
+  - "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
   - type: "csv"
     sep: ","
 provider: "gov/kaunas/municipality"
 since: 2018-10-06
 objects:
   road_signs:
-    source: https://github.com/Kauno-miestas/Kauno-Planas/blob/master/Transportas/csv/Zenklai.csv
+    source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
     properties:
-    - object_id: 
+      object_id: 
         type: integer
         source: OBJECTID
       sign_id: 
