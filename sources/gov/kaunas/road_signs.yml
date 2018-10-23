@@ -7,7 +7,7 @@ source:
   - type: "csv"
     sep: ","
 provider: "gov/kaunas/municipality"
-since: 2018-10-06
+since: "2018-10-06"
 objects:
   road_signs:
     source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
