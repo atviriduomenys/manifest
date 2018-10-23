@@ -5,19 +5,19 @@ type: "vocabulary"
 properties:
   name:
     type: "string"
-    title: "pavadinimas"
+    title: "Pavadinimas"
   id:
     type: "integer"
-    title: "kodas"
+    title: "Kodas"
   address:
     type: "string"
-    title: "adresas"
+    title: "Adresas"
   management_email:
     type: "string"
-    title: "vad_email"
+    title: "Vadovo e-pašto adresas"
   phone_number:
     type: "string"
-    title: "vad_tel"
+    title: "Vadovo telefono numeris"
   home_page:
     type: "string"
-    title: "web"
+    title: "Nuoroda į institucijos puslapį"
