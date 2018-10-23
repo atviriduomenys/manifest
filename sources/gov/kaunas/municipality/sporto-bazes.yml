@@ -1,0 +1,7 @@
+id: "gov/kaunas/municipality/sporto-bazes"
+title: "Sporto bazės"
+type: "source"
+source: "xlsx+https://github.com/Kauno-miestas/Laisvalaikio-zonos/blob/master/Sporto%20bazi%C5%B3%20DB%202018-09.xlsx?raw=true"
+provider: "gov/kaunas/municipality"
+since: "2018-10-06"
+stars: 3
