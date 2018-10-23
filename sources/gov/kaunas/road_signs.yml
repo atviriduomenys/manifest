@@ -13,83 +13,83 @@ objects:
     source: https://github.com/Kauno-miestas/Kauno-Planas/blob/master/Transportas/csv/Zenklai.csv
     properties:
     - object_id: 
-        type: int
+        type: integer
         source: OBJECTID
       sign_id: 
-        type: int
+        type: integer
         source: ZENKLO_ID
       type: 
-        type: 
+        type: string
         source: TIPAS
       sign_text: 
-        type:
+        type: string
         source: ZENKLO_TEKSTAS
       direction_of_effect: 
-        type: 
+        type: string
         source: GALIOJIMO_KRYPTIS
       rotation_degree: 
-        type:
+        type: string
         source: PASUKIMO_KAMPAS
       state: 
-        type:
+        type: string
         source: BUKLE
       GUID: 
-        type:
+        type: string
         source: GUID_
       from_top: 
-        type:
+        type: string
         source: PADETIS_NUO_VIRSAUS
       sign_category: 
-        type:
+        type: string
         source: ZENKLU_GRUPE
       decision_date: 
-        type:
+        type: string
         source: SPRENDIMO_DATA
       implementation_date: 
-        type:
+        type: string
         source: IRENGIMO_DATA
       duration_start:
-        type:
+        type: string
         source: GALIOJA_NUO
       duration_end:
-        type:
+        type: string
         source: GALIOJA_IKI
       height:
-        type:
+        type: string
         source: PASTATYMO_AUKSTIS
       ket_number:
-        type:
+        type: string
         source: KET_NR
       status:
-        type:
+        type: string
         source: STATUSAS
       file_sys_name:
-        type:
+        type: string
         source: FAILO_SYS_VARDAS
       decision_number:
-        type:
+        type: string
         source: SPRENDIMO_NR
       inventorization_padetis:
-        type:
+        type: string
         source: INVENTORIZAVIMO_PADETIS
       visibility:
-        type:
+        type: string
         source: MATOMUMAS
       reflection_group:
-        type:
+        type: string
         source: ATSPINDZIO_GRUPE
       address:
-        type:
+        type: string
         source: ADRESAS
       removal_reason:
-        type:
+        type: string
         source: PASAL_PRIEZASTIS
       removal_date:
         type: date
         source: PASAL_DATA
       global_id:
-        type:
+        type: string
         source: GlobalID
       id_relation:
-        type:
+        type: string
         source: ID_RYSIUI
