@@ -1,0 +1,23 @@
+id: "educational_institution"
+title: "Educational Institution"
+description: ""
+type: "vocabulary"
+properties:
+  name:
+    type: "string"
+    title: "Pavadinimas"
+  id:
+    type: "integer"
+    title: "Kodas"
+  address:
+    type: "string"
+    title: "Adresas"
+  management_email:
+    type: "string"
+    title: "Vadovo e-pašto adresas"
+  phone_number:
+    type: "string"
+    title: "Vadovo telefono numeris"
+  home_page:
+    type: "string"
+    title: "Nuoroda į institucijos puslapį"
