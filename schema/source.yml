@@ -36,6 +36,25 @@ properties:
       - 3
       - 4
       - 5
+  opengovdata:
+    title: "Open government data principles"
+    type: array
+    items:
+      enum:
+        - complete
+        - primary
+        - timely
+        - accessible
+        - machine_processable
+        - non-discriminatory
+        - non-proprietary
+        - license-free
+        - online_and_free
+        - permanent
+        - trusted
+        - presumption_of_openness
+        - documented
+        - safe_to_open
   source:
     $ref: _source.yml
   objects:
