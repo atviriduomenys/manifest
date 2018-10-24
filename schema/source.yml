@@ -38,7 +38,7 @@ properties:
       - 5
   opengovdata:
     title: "Open government data principles"
-    type array
+    type: array
     items:
       enum:
         - complete
