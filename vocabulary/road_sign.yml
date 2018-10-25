@@ -32,7 +32,7 @@ properties:
     title: "Padėtis nuo viršaus"
   sign_category: 
     type: string
-    title: "Žinklų grupė"
+    title: "Ženklų grupė"
   decision_date: 
     type: string
     title: "Sprendimo data"
