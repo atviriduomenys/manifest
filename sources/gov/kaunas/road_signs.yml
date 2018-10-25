@@ -7,7 +7,7 @@ provider: "gov/kaunas/municipality"
 since: "2018-10-06"
 stars: 3
 objects:
-  road_signs:
+  road_sign:
     source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
     properties:
       object_id: 
