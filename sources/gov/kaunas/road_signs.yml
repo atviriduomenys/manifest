@@ -1,0 +1,93 @@
+id: "gov/kaunas/municipality/road_signs"
+title: "Kaunas road signs"
+description: "CSV file containing data about Kaunas road signs"
+type: "source"
+source: "csv+https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
+provider: "gov/kaunas/municipality"
+since: "2018-10-06"
+stars: 3
+objects:
+  road_sign:
+    source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"
+    properties:
+      object_id: 
+        type: integer
+        source: OBJECTID
+      sign_id: 
+        type: integer
+        source: ZENKLO_ID
+      type: 
+        type: string
+        source: TIPAS
+      sign_text: 
+        type: string
+        source: ZENKLO_TEKSTAS
+      direction_of_effect: 
+        type: string
+        source: GALIOJIMO_KRYPTIS
+      rotation_degree: 
+        type: string
+        source: PASUKIMO_KAMPAS
+      state: 
+        type: string
+        source: BUKLE
+      GUID: 
+        type: string
+        source: GUID_
+      from_top: 
+        type: string
+        source: PADETIS_NUO_VIRSAUS
+      sign_category: 
+        type: string
+        source: ZENKLU_GRUPE
+      decision_date: 
+        type: string
+        source: SPRENDIMO_DATA
+      implementation_date: 
+        type: string
+        source: IRENGIMO_DATA
+      duration_start:
+        type: string
+        source: GALIOJA_NUO
+      duration_end:
+        type: string
+        source: GALIOJA_IKI
+      height:
+        type: string
+        source: PASTATYMO_AUKSTIS
+      ket_number:
+        type: string
+        source: KET_NR
+      status:
+        type: string
+        source: STATUSAS
+      file_sys_name:
+        type: string
+        source: FAILO_SYS_VARDAS
+      decision_number:
+        type: string
+        source: SPRENDIMO_NR
+      inventorization_padetis:
+        type: string
+        source: INVENTORIZAVIMO_PADETIS
+      visibility:
+        type: string
+        source: MATOMUMAS
+      reflection_group:
+        type: string
+        source: ATSPINDZIO_GRUPE
+      address:
+        type: string
+        source: ADRESAS
+      removal_reason:
+        type: string
+        source: PASAL_PRIEZASTIS
+      removal_date:
+        type: string
+        source: PASAL_DATA
+      global_id:
+        type: string
+        source: GlobalID
+      id_relation:
+        type: string
+        source: ID_RYSIUI
