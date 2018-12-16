@@ -18,6 +18,13 @@ env/bin/pip-compile: env/bin/pip
 check: env/done
 	env/bin/admanifest-check
 
+.PHONY: test
+test: env/done
+	env/bin/py.test -vvxra --tb=native tests
+
+.PHONY: upgrade
+upgrade: env/bin/pip-compile
+	env/bin/pip-compile --upgrade --no-index requirements.in requirements-dev.in -o requirements-dev.txt
 
 .PHONY: clean
 clean:
