@@ -2,11 +2,8 @@
 
 import sys
 from pathlib import Path
-from ruamel.yaml import YAML
 
 from admanifest.manifest import load_manifest_data
-
-yaml = YAML(typ='safe')
 
 
 def main():

@@ -1,4 +1,12 @@
 import datetime
+from pathlib import Path
+
+from admanifest.manifest import load_manifest_data
+
+
+def test_check_all_files():
+    result = load_manifest_data(Path())
+    assert result.errors == [], result.errors
 
 
 def test_yml_files(manifest):
