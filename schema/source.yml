@@ -58,7 +58,63 @@ properties:
   source:
     $ref: _source.yml
   objects:
-    $ref: _data.yml
+    type: object
+    title: Data description
+    patternProperties:
+      "^[a-zA-Z_]+$":
+        type: object
+        title: Data object
+        properties:
+          source:
+            type: string
+            title: Data source
+            description: >
+              ID of data source.
+          since:
+            type: string
+            format: date
+          until:
+            type: string
+            format: date
+          stars:
+            enum:
+              - 0  # data not available
+              - 1  # unstructured
+              - 2  # open format
+              - 3  # structured
+              - 4  # has identifier
+              - 5  # properties mapped to ontologies
+          properties:
+            type: object
+            patternProperties:
+              "^[a-zA-Z_]+$":
+                type: object
+                title: Data field
+                properties:
+                  type:
+                    enum:
+                      - string
+                      - integer
+                      - numeric
+                  since:
+                    type: string
+                    format: date
+                  until:
+                    type: string
+                    format: date
+                  stars:
+                    enum:
+                      - 0
+                      - 1
+                      - 2
+                      - 3
+                      - 4
+                      - 5
+                required:
+                  - type
+            additionalProperties: false
+        additionalProperties: false
+    additionalProperties: false
 required:
   - id
   - type

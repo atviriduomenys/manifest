@@ -11,6 +11,8 @@ jsonschema==2.6.0
 more-itertools==4.3.0     # via pytest
 pathlib2==2.3.3           # via pytest
 pluggy==0.8.0             # via pytest
+pp-ez==0.2.0
+pprintpp==0.4.0
 py==1.7.0                 # via pytest
 pytest-cov==2.6.0
 pytest==4.0.2

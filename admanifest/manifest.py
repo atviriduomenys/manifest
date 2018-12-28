@@ -114,11 +114,12 @@ class Loader:
             data = self._load_schema_refs(data, definitions)
             if definitions:
                 data['definitions'] = definitions
+            print(path)
+            import pp ; pp(data)
         else:
             main = False
             definitions.update(data.pop('definitions', {}))
             data = self._load_schema_refs(data, definitions)
-
         try:
             Draft4Validator.check_schema(data)
         except (SchemaError, RefResolutionError) as e:
@@ -318,3 +319,93 @@ def load_manifest_data(base_path: Path = None, schema_path: Path = None, loader:
     loader.load_schema_files()
     loader.load_yaml_files()
     return loader
+
+
+def _convert(schema, value):
+    pass
+
+
+class Schema:
+    pass
+
+
+class Value:
+    pass
+
+
+class Path:
+    pass
+
+
+class Manifest:
+
+    types = {
+        'object': dict,
+        'array': list,
+        'string': str,
+        'boolean': bool,
+    }
+
+
+    def __init__(self, schema):
+        self.schema = schema
+        self.state = []
+
+    def _get_schema(self, schema, value, path):
+        if not isinstance(schema, dict):
+            raise Exception("Schema must be a dict, but %r found at %s." % (type(schema), '.'.join(path)))
+
+        if 'schema' in schema:
+            # Build schema dynamically using provided value.
+            schema = schema['schema'](schema, value)
+        else:
+            schema = dict(schema)
+
+        if 'type' not in schema:
+            raise Exception("%s: 'type' field is required in schema definition." % '.'.join(path))
+
+        if schema['type'] not in self.types:
+            raise Exception("%s: unknown schema type: %s." % ('.'.join(path), schema['type']))
+
+        if 'required' not in schema:
+            schema['required'] = False
+
+        return schema
+
+    def _get_value(self, schema, value, path):
+        if not isinstance(value, self.types[schema['type']]):
+            raise Exception("%s: invalid value type, expected %s got %s." % (
+                '.'.join(path), schema['type'], type(value),
+            ))
+
+        return value
+
+    def select(self, name, fields):
+        fields = [tuple(f.split('.')) for f in fields]
+        for value in self.schema[name]['services']['select']():
+            row = {}
+            lists = []
+            for field in fields:
+                if field in row:
+                    continue
+
+                path = (name,)
+                schema = self._get_schema(self.schema[name], value, path)
+                value = self._get_value(schema, value, path)
+
+                for item in field:
+                    path = path + (item,)
+
+                    if schema['type'] not in ('object', 'array'):
+                        raise Exception("%s: invalid field name." % '.'.join(path))
+
+                    if schema['type'] == 'array':
+                        schema = schema['items']
+
+                    if schema['type'] == 'object':
+                        schema = schema['properties'][item]
+                    else:
+                        raise NameError('%r is not defined in schema.' % '.'.join(path))
+
+                    schema = self._get_schema(self.schema[name], value, path)
+                    value = self._get_value(schema, value, path)
