@@ -2,6 +2,7 @@ id: "projects/manopozicija.lt"
 title: "ManoPozicija.lt"
 type: "project"
 impact:
+  # Just guessed numbers of impact.
   - {year: 2015, users: 10, revenue: 0, employees: 0}
   - {year: 2016, users:  0, revenue: 0, employees: 0}
   - {year: 2017, users:  0, revenue: 0, employees: 0}
@@ -9,11 +10,7 @@ impact:
   - {year: 2019, users: 20, revenue: 0, employees: 0}
 since: "2015-07-21"
 objects:
-  seimo_narys:
+  politika/seimas/seimo_narys:
     properties:
-      first_name:
-        type: "string"
-        source: "gov/lrs/ad"
-      last_name:
-        type: "string"
-        source: "gov/lrs/ad"
+      vardas: {type: string}
+      pavardė:

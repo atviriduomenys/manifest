@@ -1,0 +1,17 @@
+id: politika/seimas/grupė
+title: "Seimo grupė"
+type: vocabulary
+properties:
+  pavadinimas: {type: string}
+  rūšis:
+    type: string
+    enum:
+      - parlamentinė grupė
+      - komitetas
+      - pakomitetis
+      - komisija
+      - frakcija
+      - seimas
+  sukurta: {type: date}
+  panaikinta: {type: date}
+  priklauso: {type: ref, object: politika/seimas/grupė}

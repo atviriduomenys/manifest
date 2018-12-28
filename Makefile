@@ -3,7 +3,7 @@ env/done: env/bin/pip requirements.txt requirements-dev.txt
 	touch env/done
 
 env/bin/pip:
-	python3.5 -m venv env
+	python3 -m venv env
 
 requirements.txt: env/bin/pip-compile requirements.in
 	env/bin/pip-compile --no-index requirements.in -o requirements.txt

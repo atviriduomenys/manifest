@@ -28,6 +28,12 @@ properties:
   until:
     type: string
     format: date
+  source_code:
+    type: string
+    title: Project source code
+    definition: >
+      If project is an open source project, you can provide link where source
+      code of this project can be found.
   objects:
     $ref: _data.yml
 required:

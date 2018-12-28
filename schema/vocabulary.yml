@@ -20,7 +20,7 @@ properties:
   properties:
     type: object
     patternProperties:
-      "^[a-zA-Z_]+$":
+      "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_]+$":
         type: object
         title: Data field
         properties:
@@ -29,9 +29,28 @@ properties:
               - string
               - integer
               - number
+              - image
+              - date
+              - ref
           title:
             type: string
             title: Data field name
+          description:
+            type: string
+            title: Field name description
+          object:
+            type: string
+            title: Susietas objektas
+            description: >
+              Naudojamas kartu su type=ref, nurodo, kad šis laukas yra nuoroda
+              į kitą objektą.
+          enum:
+            type: array
+            items:
+              oneOf:
+                - {type: string}
+                - {type: integer}
+            title: Galimi variantai
         required:
           - type
         additionalProperties: false

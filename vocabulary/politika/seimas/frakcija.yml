@@ -1,0 +1,11 @@
+id: politika/seimas/frakcija
+title: "Frakcija"
+type: vocabulary
+properties:
+  pavadinimas:
+    type: string
+    title: "Pavadinimas"
+  trumpinys:
+    type: string
+    title: "Trumpinys"
+    description: "Frakcijos pavadinimo trumpinys."

@@ -1,0 +1,17 @@
+id: politika/seimas/seimo_narys
+title: "Seimo narys"
+description: ""
+type: "vocabulary"
+properties:
+  vardas:
+    type: ref
+    object: kalba/lietuvių/vardas
+    title: "Vardas"
+  pavardė:
+    type: string
+    title: "Pavardė"
+  gimimo_data: {type: date}
+  mirties_data: {type: date}
+  el_pašto_adresas: {type: string}
+  telefono_numeris: {type: string}
+  nuotrauka: {type: image}

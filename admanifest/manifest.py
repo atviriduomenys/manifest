@@ -160,7 +160,7 @@ class Loader:
             'stars': data.get('stars'),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
-        source['objects'] = self.call('objects', self._load_objects, data.get('objects', {}), source)
+        source['objects'] = self.call('objects', self._load_objects, data.get('objects') or {}, source)
         return source
 
     def _load_objects(self, objects, source):
@@ -176,18 +176,18 @@ class Loader:
             'stars': data.get('stars', source['stars']),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
-        obj['properties'] = self.call('properties', self._load_properties, data.get('properties', {}), obj)
+        obj['properties'] = self.call('properties', self._load_properties, data.get('properties') or {}, obj)
         return obj
 
     def _load_properties(self, props, obj):
         return {
-            name: self.call(name, self._load_property, data, obj)
+            name: self.call(name, self._load_property, data or {}, obj)
             for name, data in props.items()
         }
 
     def _load_property(self, data, obj):
         prop = {
-            'type': data['type'],
+            'type': data.get('type'),
             'since': self.call('since', self._parse_date, data.get('since', obj['since'])),
             'until': self.call('until', self._parse_date, data.get('until', obj['since'])),
             'stars': data.get('stars', obj['stars']),
@@ -213,9 +213,14 @@ class Loader:
 
         if 'type' not in data:
             self.error("Type is not given.")
+            return
 
         if data['type'] not in self.objects:
             raise ValidationError("Type %s is not one of: %s." % (data['type'], ', '.join(sorted(self.objects.keys()))))
+
+        if data['type'] not in self.schemas:
+            self.error("Unknown object type %r." % data['type'])
+            return
 
         schema = self.schemas[data['type']]
         validate(data, schema)
@@ -233,19 +238,19 @@ class Loader:
         for obj_name, obj in data.get('objects', {}).items():
             if obj_name not in self.objects['vocabulary']:
                 with self.push('objects'):
-                    self.error("Unknown object name %s. You can only use names defined in vocabulary.", obj_name)
+                    self.error("Unknown object name %r. You can only use names defined in vocabulary.", obj_name)
                 continue
             for field_name, field in obj.get('properties', {}).items():
                 if field_name not in self.objects['vocabulary'][obj_name]['properties']:
                     with self.push('objects', obj_name, 'properties'):
-                        self.error("Unknown field name %s in %s object. You can only use names defined in vocabulary.",
+                        self.error("Unknown field name %r in %r object. You can only use names defined in vocabulary.",
                                    field_name, obj_name)
 
     def validate_project_refs(self, data):
         for obj_name, obj in data.get('objects', {}).items():
             for field_name, field in obj.get('properties', {}).items():
                 with self.push('objects', obj_name, 'properties', field_name, 'source'):
-                    self.validate_source_ref(obj_name, field_name, field.get('source'))
+                    self.validate_source_ref(obj_name, field_name, (field or {}).get('source'))
 
     def validate_source_refs(self, data):
         with self.push('provider'):
@@ -290,12 +295,15 @@ class Loader:
 
         if source not in self.objects['source']:
             self.error("Unknown source %s id, referenced in %s.%s.", source, obj_name, field_name)
+            return
 
         if obj_name not in self.objects['source'][source].get('objects', {}):
             self.error("Unknown source %s object name, referenced in %s.%s.", source, obj_name, field_name)
+            return
 
         if field_name not in self.objects['source'][source]['objects'][obj_name].get('properties', {}):
             self.error("Unknown source %s field name, referenced in %s.%s.", source, obj_name, field_name)
+            return
 
     def validate_provider_ref(self, provider):
         if provider is None:

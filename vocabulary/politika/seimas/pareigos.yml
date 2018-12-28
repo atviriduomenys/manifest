@@ -1,0 +1,16 @@
+id: politika/seimas/pareigos
+title: "Seimo nario pareigos"
+type: vocabulary
+properties:
+  seimo_narys:
+    type: ref
+    object: politika/seimas/seimo_narys
+  grupė:
+    type: ref
+    object: politika/seimas/grupė
+  pareigos:
+    type: string
+  nuo:
+    type: date
+  iki:
+    type: date
