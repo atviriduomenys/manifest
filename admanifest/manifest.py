@@ -236,11 +236,15 @@ class Loader:
 
     def validate_vocabulary(self, data):
         for obj_name, obj in data.get('objects', {}).items():
+            if obj and obj.get('local') is True:
+                continue
             if obj_name not in self.objects['vocabulary']:
                 with self.push('objects'):
                     self.error("Unknown object name %r. You can only use names defined in vocabulary.", obj_name)
                 continue
             for field_name, field in obj.get('properties', {}).items():
+                if field and field.get('local') is True:
+                    continue
                 if field_name not in self.objects['vocabulary'][obj_name]['properties']:
                     with self.push('objects', obj_name, 'properties'):
                         self.error("Unknown field name %r in %r object. You can only use names defined in vocabulary.",

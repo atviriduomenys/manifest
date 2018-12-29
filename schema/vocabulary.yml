@@ -17,6 +17,10 @@ properties:
   type:
     enum:
       - vocabulary
+  link:
+    type: string
+    title: URI from a known vocabulary
+    description: You can youse prefixes from `prefixes.yml` file.
   properties:
     type: object
     patternProperties:
@@ -32,6 +36,10 @@ properties:
               - image
               - date
               - ref
+          link:
+            type: string
+            title: URI from a known vocabulary
+            description: You can youse prefixes from `prefixes.yml` file.
           title:
             type: string
             title: Data field name

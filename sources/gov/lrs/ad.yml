@@ -1,14 +1,25 @@
-id: "gov/lrs/ad"
+---
+id: gov/lrs/ad
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: "source"
-source: "xml+http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+source: "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
 provider: "gov/lrs"
 since: "2016-01-01"
 stars: 3
 objects:
   politika/seimas/seimo_narys:
     source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+    identifier:
+      - source: "@asmens_id"
     properties:
+      asmens_id:
+        local: true
+        type: string
+        source: "@asmens_id"
       vardas:
+        type: string
+        source: "@vardas"
       pavardė:
+        type: string
+        source: "@pavardė"

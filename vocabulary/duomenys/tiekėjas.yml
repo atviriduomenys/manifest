@@ -1,0 +1,7 @@
+id: duomenys/tiekėjas
+title: "Duomenų tiekėjas"
+type: vocabulary
+link: foaf:Agent
+properties:
+  pavadinimas:
+    type: string

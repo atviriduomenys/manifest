@@ -1,0 +1,15 @@
+id: duomenys/rinkinys
+title: "Duomenų rinkinys"
+description: >
+  Vieno duomenų tiekėjo duomenų rinkinys, dažniausiai iš vienos konkrečios
+  duomenų bazės ar duomenų saugyklos.
+type: vocabulary
+link: dctype:Dataset
+properties:
+  pavadinimas:
+    type: string
+    link: dct:title
+  tiekėjas:
+    type: ref
+    object: duomenys/tiekėjas
+    link: dct:publisher

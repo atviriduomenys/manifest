@@ -2,6 +2,7 @@ from pathlib import Path
 from statistics import mean
 
 import pytest
+import pandas as pd
 
 from admanifest.manifest import load_manifest_data
 from admanifest.analytics import get_timeline_by_stars
@@ -24,9 +25,8 @@ def test_flat_tables():
     here = Path().resolve()
     manifest = load_manifest_data(here)
 
-    if manifest.errors:
-        for error in manifest.errors:
-            pytest.fail(error)
+    for error in manifest.errors:
+        pytest.fail(error)
 
     table = []
     for project in manifest.objects['project'].values():
@@ -57,3 +57,27 @@ def test_flat_tables():
                 })
 
     assert len(table) > 0
+
+    pd.set_option('display.width', 200)
+    pd.set_option('display.max_columns', 20)
+    pd.set_option('display.max_rows', 1000)
+
+    frame = pd.DataFrame(table)
+
+    print()
+    print(' Duomenių rinkinių sąrašas pagal prioritetą '.center(80, '-'))
+    print(
+        frame.dropna(subset=['source']).groupby(['source', 'project']).agg({
+            'stars': 'mean',
+            'users': 'first',
+        }).groupby(level=0).agg({
+            'stars': 'mean',
+            'users': 'sum',
+        }).sort_values(['stars', 'users'], ascending=[True, False])
+    )
+
+    print(' Projektai pagal brandos lygį '.center(80, '-'))
+    print(frame.groupby('project').stars.mean().sort_index())
+
+    print(' Visi duomenys '.center(80, '-'))
+    print(frame[['project', 'object', 'property', 'provider', 'source', 'stars', 'users']])

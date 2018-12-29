@@ -25,6 +25,20 @@ patternProperties:
           - 3
           - 4
           - 5
+      local:
+        type: boolean
+        title: Local object
+        description: >
+          Local objects does not have to be defined in the global vocabulary.
+          Local objects must be specific to a specific dataset.
+      identifier:
+        type: array
+        items:
+          type: object
+          properties:
+            source:
+              type: string
+              title: Data source for identifier
       properties:
         type: object
         patternProperties:
@@ -58,6 +72,14 @@ patternProperties:
               source:
                 type: string
                 title: Data source
+              local:
+                type: boolean
+                title: Local property
+                description: >
+                  Local property does not have to be defined in the global
+                  vocabulary.  Local property must be specific to a specific
+                  dataset, for example an identifier used only for that
+                  dataset.
             additionalProperties: false
         additionalProperties: false
     additionalProperties: false
