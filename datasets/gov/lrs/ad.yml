@@ -2,9 +2,9 @@
 id: gov/lrs/ad
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
-type: "source"
+type: dataset
 source: "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-provider: "gov/lrs"
+provider: gov/lrs
 since: "2016-01-01"
 stars: 3
 objects:

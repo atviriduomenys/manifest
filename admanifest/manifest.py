@@ -18,14 +18,14 @@ class Loader:
         self.objects = {
             'vocabulary': {},
             'provider': {},
-            'source': {},
+            'dataset': {},
             'project': {},
         }
         self.fail = fail
         self.errors = []
         self.loaders = {
             'vocabulary': self.load_vocabulary,
-            'source': self.load_source,
+            'dataset': self.load_dataset,
             'provider': self.load_provider,
             'project': self.load_project,
         }
@@ -129,7 +129,7 @@ class Loader:
             return data
 
     def load_yaml_files(self):
-        for name in ['vocabulary', 'providers', 'sources', 'projects']:
+        for name in ['vocabulary', 'providers', 'datasets', 'projects']:
             for path in self.path.glob('%s/**/*' % name):
                 if not path.is_file():
                     continue
@@ -148,8 +148,8 @@ class Loader:
         else:
             self.objects[data['type']][data['id']] = self.loaders[data['type']](data)
 
-    def load_source(self, data):
-        source = {
+    def load_dataset(self, data):
+        dataset = {
             'id': data['id'],
             'title': data['title'],
             'description': data.get('description', ''),
@@ -160,20 +160,20 @@ class Loader:
             'stars': data.get('stars'),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
-        source['objects'] = self.call('objects', self._load_objects, data.get('objects') or {}, source)
-        return source
+        dataset['objects'] = self.call('objects', self._load_objects, data.get('objects') or {}, dataset)
+        return dataset
 
-    def _load_objects(self, objects, source):
+    def _load_objects(self, objects, dataset):
         return {
-            name: self.call(name, self._load_object, data, source)
+            name: self.call(name, self._load_object, data, dataset)
             for name, data in objects.items()
         }
 
-    def _load_object(self, data, source):
+    def _load_object(self, data, dataset):
         obj = {
-            'since': self.call('since', self._parse_date, data.get('since', source['since'])),
-            'until': self.call('until', self._parse_date, data.get('until', source['since'])),
-            'stars': data.get('stars', source['stars']),
+            'since': self.call('since', self._parse_date, data.get('since', dataset['since'])),
+            'until': self.call('until', self._parse_date, data.get('until', dataset['since'])),
+            'stars': data.get('stars', dataset['stars']),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
         obj['properties'] = self.call('properties', self._load_properties, data.get('properties') or {}, obj)
@@ -225,7 +225,7 @@ class Loader:
         schema = self.schemas[data['type']]
         validate(data, schema)
 
-        if data['type'] in ('project', 'source'):
+        if data['type'] in ('project', 'dataset'):
             self.validate_vocabulary(data)
 
         if data['type'] == 'project':
@@ -254,7 +254,7 @@ class Loader:
         for obj_name, obj in data.get('objects', {}).items():
             for field_name, field in obj.get('properties', {}).items():
                 with self.push('objects', obj_name, 'properties', field_name, 'source'):
-                    self.validate_source_ref(obj_name, field_name, (field or {}).get('source'))
+                    self.validate_dataset_ref(obj_name, field_name, (field or {}).get('source'))
 
     def validate_source_refs(self, data):
         with self.push('provider'):
@@ -291,22 +291,22 @@ class Loader:
                 self.error("Unknown source function %s. Known functions are %s.", func, ', '.join(funcs))
             return
 
-        self.validate_source_ref(obj_name, field_name, source)
+        self.validate_dataset_ref(obj_name, field_name, source)
 
-    def validate_source_ref(self, obj_name, field_name, source):
-        if source is None:
+    def validate_dataset_ref(self, obj_name, field_name, dataset):
+        if dataset is None:
             return
 
-        if source not in self.objects['source']:
-            self.error("Unknown source %s id, referenced in %s.%s.", source, obj_name, field_name)
+        if dataset not in self.objects['dataset']:
+            self.error("Unknown dataset %s id, referenced in %s.%s.", dataset, obj_name, field_name)
             return
 
-        if obj_name not in self.objects['source'][source].get('objects', {}):
-            self.error("Unknown source %s object name, referenced in %s.%s.", source, obj_name, field_name)
+        if obj_name not in self.objects['dataset'][dataset].get('objects', {}):
+            self.error("Unknown dataset %s object name, referenced in %s.%s.", dataset, obj_name, field_name)
             return
 
-        if field_name not in self.objects['source'][source]['objects'][obj_name].get('properties', {}):
-            self.error("Unknown source %s field name, referenced in %s.%s.", source, obj_name, field_name)
+        if field_name not in self.objects['dataset'][dataset]['objects'][obj_name].get('properties', {}):
+            self.error("Unknown dataset %s field name, referenced in %s.%s.", dataset, obj_name, field_name)
             return
 
     def validate_provider_ref(self, provider):

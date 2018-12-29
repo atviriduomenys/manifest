@@ -21,17 +21,17 @@ class ManifestFactory:
                 'default': {
                     'id': 'p1',
                     'type': 'provider',
-                    'title': 'Source {id}'.format,
+                    'title': 'Provider {id}'.format,
                     'sector': 'public',
                 },
             },
-            'source': {
-                'counter': ('s%d' % x for x in itertools.count(1)),
+            'dataset': {
+                'counter': ('d%d' % x for x in itertools.count(1)),
                 'depends': ['provider'],
                 'default': {
-                    'id': 's1',
-                    'type': 'source',
-                    'title': 'Source {id}'.format,
+                    'id': 'd1',
+                    'type': 'dataset',
+                    'title': 'Dataset {id}'.format,
                     'since': '2018-01-01',
                     'provider': 'p1',
                 },
@@ -47,7 +47,7 @@ class ManifestFactory:
             },
             'object': {
                 'counter': ('o%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'source', 'project'],
+                'depends': ['provider', 'dataset', 'project'],
                 'default': {
                     'id': 'o1',
                     'since': None
@@ -55,7 +55,7 @@ class ManifestFactory:
             },
             'field': {
                 'counter': ('f%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'source', 'project', 'object'],
+                'depends': ['provider', 'dataset', 'project', 'object'],
                 'default': {
                     'id': 'f1',
                     'since': None
@@ -76,11 +76,11 @@ class ManifestFactory:
         data[type] = {k: v for k, v in data.items() if k not in self.fixtures}
         data = {k: v for k, v in data.items() if k in self.fixtures}
 
-        target = 'project' if 'project' in data else 'source'
+        target = 'project' if 'project' in data else 'dataset'
 
         self.loader.fail = True
         for name in self.fixtures[type]['depends']:
-            if name in ('source', 'project') and target != name:
+            if name in ('dataset', 'project') and target != name:
                 continue
 
             namep = name + 's'

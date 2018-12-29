@@ -15,10 +15,10 @@ def test_progress(manifest):
     assert get_timeline_by_stars(result) == []
 
 
-def find_sources(manifest, obj_name, prop_name):
-    for source in manifest.objects['source'].values():
-        if obj_name in source['objects'] and prop_name in source['objects'][obj_name]['properties']:
-            yield source, source['objects'][obj_name]['properties'][prop_name]
+def find_datasets(manifest, obj_name, prop_name):
+    for dataset in manifest.objects['dataset'].values():
+        if obj_name in dataset['objects'] and prop_name in dataset['objects'][obj_name]['properties']:
+            yield dataset, dataset['objects'][obj_name]['properties'][prop_name]
 
 
 def test_flat_tables():
@@ -34,25 +34,25 @@ def test_flat_tables():
         users = mean(users) if users else None
         for obj_name, obj in project['objects'].items():
             for prop_name, prop in obj['properties'].items():
-                sources = list(find_sources(manifest, obj_name, prop_name))
-                sources = sorted(sources, key=lambda x: x[1]['stars'])
-                if sources:
-                    source, source_prop = sources[-1]
-                    source = {
-                        'id': source['id'],
-                        'stars': source_prop['stars'],
-                        'provider': source['provider'],
+                datasets = list(find_datasets(manifest, obj_name, prop_name))
+                datasets = sorted(datasets, key=lambda x: x[1]['stars'])
+                if datasets:
+                    dataset, dataset_prop = datasets[-1]
+                    dataset = {
+                        'id': dataset['id'],
+                        'stars': dataset_prop['stars'],
+                        'provider': dataset['provider'],
                     }
                 else:
-                    source = {'id': None, 'stars': 0, 'provider': None}
+                    dataset = {'id': None, 'stars': 0, 'provider': None}
 
                 table.append({
                     'project': project['id'],
                     'object': obj_name,
                     'property': prop_name,
-                    'source': source['id'],
-                    'provider': source['provider'],
-                    'stars': source['stars'],
+                    'dataset': dataset['id'],
+                    'provider': dataset['provider'],
+                    'stars': dataset['stars'],
                     'users': users,
                 })
 
@@ -67,7 +67,7 @@ def test_flat_tables():
     print()
     print(' Duomenių rinkinių sąrašas pagal prioritetą '.center(80, '-'))
     print(
-        frame.dropna(subset=['source']).groupby(['source', 'project']).agg({
+        frame.dropna(subset=['dataset']).groupby(['dataset', 'project']).agg({
             'stars': 'mean',
             'users': 'first',
         }).groupby(level=0).agg({
@@ -80,4 +80,4 @@ def test_flat_tables():
     print(frame.groupby('project').stars.mean().sort_index())
 
     print(' Visi duomenys '.center(80, '-'))
-    print(frame[['project', 'object', 'property', 'provider', 'source', 'stars', 'users']])
+    print(frame[['project', 'object', 'property', 'provider', 'dataset', 'stars', 'users']])

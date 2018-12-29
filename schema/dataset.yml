@@ -1,8 +1,8 @@
 ---
 $schema: http://json-schema.org/draft-04/schema#
-title: Data source
+title: Dataset
 description: >
-  Information about data source and data provider by this source.
+  Data resources from a single provider and same data set.
 type: object
 properties:
   id:
@@ -16,7 +16,7 @@ properties:
     title: Data source description
   type:
     enum:
-      - source
+      - dataset
   provider:
     type: string
     title: Data provider ID
