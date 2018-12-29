@@ -1,0 +1,11 @@
+id: politika/partija
+title: "Politinė partija"
+type: vocabulary
+properties:
+  pavadinimas:
+    type: string
+    title: "Pavadinimas"
+  trumpinys:
+    type: string
+    title: "Trumpinys"
+    description: "Partijos pavadinimo trumpinys."

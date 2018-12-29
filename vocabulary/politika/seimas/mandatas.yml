@@ -1,0 +1,8 @@
+id: politika/seimas/mandatas
+title: "Mandatas"
+type: vocabulary
+properties:
+  kandidato_svetainė: {type: string}
+  kas_iškėlė: {type: ref, object: politika/partija}
+  nuo: {type: date}
+  iki: {type: date}

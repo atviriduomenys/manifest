@@ -2,7 +2,7 @@
 type: object
 title: Data description
 patternProperties:
-  "^[a-zA-Z_]+$":
+  "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_]+$":
     type: object
     title: Data object
     properties:
@@ -28,15 +28,19 @@ patternProperties:
       properties:
         type: object
         patternProperties:
-          "^[a-zA-Z_]+$":
-            type: object
+          "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_]+$":
+            type: [object, "null"]
             title: Data field
             properties:
               type:
+                type: string
                 enum:
                   - string
-                  - integer
-                  - numeric
+                  - ref
+                description: >
+                  Kai kurie objektai, gali būti kompleksiniai, rodantys į kitą
+                  objektą, šis laukas nurodo ar reikalinga nuoroda į kitą
+                  objektą ar tiesiog tekstinė to objekto išraiška.
               since:
                 type: string
                 format: date
@@ -51,8 +55,10 @@ patternProperties:
                   - 3
                   - 4
                   - 5
-            required:
-              - type
+              source:
+                type: string
+                title: Data source
+            additionalProperties: false
         additionalProperties: false
     additionalProperties: false
 additionalProperties: false

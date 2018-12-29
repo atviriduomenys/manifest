@@ -1,0 +1,11 @@
+id: kalba/lietuvių/vardas
+title: "Vardas"
+type: vocabulary
+properties:
+  pavadinimas: {type: string}
+  giminė:
+    type: string
+    enum:
+      - moteriška
+      - vyriška
+      - moteriška-vyriška

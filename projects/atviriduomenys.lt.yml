@@ -6,12 +6,7 @@ objects:
   juridinis_asmuo:
     properties:
       kodas:
-        type: "string"
       pavadinimas:
-        type: "string"
       buveines_adresas:
-        type: "string"
       teisine_forma:
-        type: "string"
       teisinis_statusas:
-        type: "string"
