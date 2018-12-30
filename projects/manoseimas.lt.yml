@@ -53,7 +53,8 @@ objects:
   politika/seimas/pareigos:
     properties:
       seimo_narys:
-      grupė:
+      grupė:object:
+      grupė:id:
       pareigos:
       nuo:
       iki:

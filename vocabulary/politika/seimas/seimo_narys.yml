@@ -31,14 +31,14 @@ properties:
     type: backref
     secondary: politika/seimas/pareigos
     object: politika/seimas/grupė
-    property: grupė
+    property: grupė:id
   frakcijos:
     type: backref
     secondary: politika/seimas/pareigos
     object: politika/seimas/frakcija
-    property: grupė
+    property: grupė:id
   partijos:
     type: backref
     secondary: politika/seimas/pareigos
     object: politika/partija
-    property: grupė
+    property: grupė:id

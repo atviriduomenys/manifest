@@ -3,12 +3,14 @@ title: "Seimo nario pareigos"
 type: vocabulary
 properties:
   id: {type: pk}
-  grupė:
+  grupė:object:
     type: generic
     enum:
       - politika/seimas/grupė
       - politika/seimas/frakcija
       - politika/partija
+  grupė:id:
+    type: ref
   seimo_narys:
     type: ref
     object: politika/seimas/seimo_narys

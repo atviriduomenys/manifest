@@ -81,6 +81,13 @@ def test_flat_tables():
         }).sort_values(['stars', 'users'], ascending=[True, False])
     )
 
+    print(' Duomenų laukai be šaltinio '.center(80, '-'))
+    print(
+        frame[frame.provider.isnull()].groupby(['object', 'property', 'project']).agg({
+            'users': 'first',
+        }).sort_values('users', ascending=False)
+    )
+
     print(' Projektai pagal brandos lygį '.center(80, '-'))
     print(frame.groupby('project').stars.mean().sort_index())
 

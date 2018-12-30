@@ -10,3 +10,6 @@ properties:
     type: string
     title: "Trumpinys"
     description: "Frakcijos pavadinimo trumpinys."
+  kadencija:
+    type: ref
+    object: politika/seimas/kadencija

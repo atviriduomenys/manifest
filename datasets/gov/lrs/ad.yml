@@ -103,3 +103,33 @@ objects:
       trumpinys:
         source: "@iškėlusi_partija"
         stars: 1
+  politika/seimas/frakcija:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+      - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija"
+    properties:
+      id:
+        source: "@padalinio_id"
+      pavadinimas:
+        source: "@padalinio_pavadinimas"
+      trumpinys:
+        source: "@padalinio_pavadinimo_santrumpa"
+      kadencija:
+        source: "../@kadencijos_id"
+  politika/seimas/pareigos:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+      - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
+    properties:
+      grupė:object:
+        value: politika/seimas/frakcija
+      grupė:id:
+        source: "../@padalinio_id"
+      seimo_narys:
+        source: "@asmens_id"
+      pareigos:
+        source: "@pareigos"
+      nuo:
+        stars: 0
+      iki:
+        stars: 0

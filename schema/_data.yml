@@ -38,7 +38,7 @@ patternProperties:
       properties:
         type: object
         patternProperties:
-          "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_]+$":
+          "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_:]+$":
             type: [object, "null"]
             title: Data field
             properties:
@@ -67,6 +67,9 @@ patternProperties:
                   - 5
               source:
                 $ref: _source.yml
+              value:
+                type: [integer, string]
+                title: Hardcoded value
               local:
                 type: boolean
                 title: Local property
