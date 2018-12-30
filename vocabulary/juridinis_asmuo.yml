@@ -3,6 +3,7 @@ title: "Juridinis asmuo"
 description: "Teisės subjektas (kaip ir fizinis asmuo); asmuo (organizacija), kuriam teisės normos (įstatymai) pripažįsta juridinio asmens statusą. Teisinį asmens subjektiškumą nustato nacionalinė teisė."
 type: "vocabulary"
 properties:
+  id: {type: pk}
   kodas:
     title: "Kodas"
     type: "string"

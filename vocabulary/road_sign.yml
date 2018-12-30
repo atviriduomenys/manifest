@@ -3,6 +3,7 @@ title: "Road Sign"
 description: ""
 type: "vocabulary"
 properties:
+  id: {type: pk}
   object_id: 
     type: integer
     title: Objekto ID

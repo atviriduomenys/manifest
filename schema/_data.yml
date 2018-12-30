@@ -77,6 +77,16 @@ patternProperties:
                   dataset.
               enum:
                 type: array
+                items:
+                  type: string
+              identifier:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    source:
+                      $ref: _source.yml
+                  additionalProperties: false
             additionalProperties: false
         additionalProperties: false
     additionalProperties: false

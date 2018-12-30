@@ -1,0 +1,8 @@
+id: politika/seimas/kadencija
+title: "Seimo kadencija"
+type: vocabulary
+properties:
+  id: {type: pk}
+  pavadinimas: {type: string}
+  nuo: {type: date}
+  iki: {type: date}

@@ -71,8 +71,6 @@ class Loader:
                     'dsn': v['dsn'],
                     'type': v['type'],
                 }
-            else:
-                self.error("Unknown source type: %s.", v['type'])
 
     @contextlib.contextmanager
     def push(self, *items):

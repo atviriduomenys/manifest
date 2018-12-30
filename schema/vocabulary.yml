@@ -45,6 +45,9 @@ properties:
               # Data YYYY-MM-DD formatu.
               - date
 
+              # Pirminis raktas, identifikuojantis objektą.
+              - pk
+
               # Ryšys su kitu objektu.
               - ref
 

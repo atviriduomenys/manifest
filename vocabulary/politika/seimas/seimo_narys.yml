@@ -3,6 +3,8 @@ title: "Seimo narys"
 description: ""
 type: "vocabulary"
 properties:
+  id:
+    type: pk
   vardas:
     type: ref
     object: kalba/lietuvių/vardas

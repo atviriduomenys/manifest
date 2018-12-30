@@ -22,6 +22,7 @@ definitions:
       - $ref: "#/definitions/excel"
       - $ref: "#/definitions/xml"
       - $ref: "#/definitions/replace"
+      - $ref: "#/definitions/array"
   csv:
     description: >
       See: http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html#pandas.read_csv
@@ -155,4 +156,12 @@ definitions:
       mapping:
         type: object
         additionalProperties:
+          type: string
+  array:
+    properties:
+      type:
+        enum: ["array"]
+      sources:
+        type: array
+        items:
           type: string

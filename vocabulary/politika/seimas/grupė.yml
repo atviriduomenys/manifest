@@ -2,6 +2,7 @@ id: politika/seimas/grupė
 title: "Seimo grupė"
 type: vocabulary
 properties:
+  id: {type: pk}
   pavadinimas: {type: string}
   rūšis:
     type: string

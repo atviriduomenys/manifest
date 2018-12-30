@@ -2,6 +2,7 @@ id: politika/seimas/frakcija
 title: "Frakcija"
 type: vocabulary
 properties:
+  id: {type: pk}
   pavadinimas:
     type: string
     title: "Pavadinimas"

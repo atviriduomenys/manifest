@@ -2,8 +2,9 @@ id: politika/seimas/mandatas
 title: "Mandatas"
 type: vocabulary
 properties:
+  id: {type: pk}
+  kadencija: {type: ref, object: politika/seimas/kadencija}
   seimo_narys: {type: ref, object: politika/seimas/seimo_narys}
-  kandidato_svetainė: {type: string}
   kas_iškėlė: {type: ref, object: politika/partija}
   nuo: {type: date}
   iki: {type: date}

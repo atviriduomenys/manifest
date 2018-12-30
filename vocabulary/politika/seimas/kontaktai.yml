@@ -2,6 +2,7 @@ id: politika/seimas/kontaktai
 title: "Seimo nario kontaktai"
 type: vocabulary
 properties:
+  id: {type: pk}
   seimo_narys:
     type: ref
     object: politika/seimas/seimo_narys

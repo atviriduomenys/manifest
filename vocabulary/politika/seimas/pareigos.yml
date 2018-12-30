@@ -2,6 +2,7 @@ id: politika/seimas/pareigos
 title: "Seimo nario pareigos"
 type: vocabulary
 properties:
+  id: {type: pk}
   grupė:
     type: generic
     enum:

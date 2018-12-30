@@ -13,6 +13,11 @@ impact:
   - {year: 2018, users:  1111, revenue: 0, employees: 0}
 since: "2012-04-01"
 objects:
+  politika/seimas/kadencija:
+    properties:
+      pavadinimas:
+      nuo:
+      iki:
   politika/seimas/seimo_narys:
     properties:
       vardas: {type: string}
@@ -32,8 +37,8 @@ objects:
       reikšmė:
   politika/seimas/mandatas:
     properties:
+      kadencija:
       seimo_narys:
-      kandidato_svetainė:
       kas_iškėlė:
       nuo:
       iki:

@@ -3,12 +3,11 @@ title: "Educational Institution"
 description: ""
 type: "vocabulary"
 properties:
+  id:
+    type: pk
   name:
     type: "string"
     title: "Pavadinimas"
-  id:
-    type: "integer"
-    title: "Kodas"
   address:
     type: "string"
     title: "Adresas"

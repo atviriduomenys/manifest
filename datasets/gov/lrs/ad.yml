@@ -3,16 +3,18 @@ id: gov/lrs/ad
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: dataset
-source: "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
 provider: gov/lrs
-since: "2016-01-01"
+since: "2018-12-01"
 stars: 3
 objects:
   politika/seimas/seimo_narys:
-    source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
-    identifier:
-      - source: "@asmens_id"
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
+      id:
+        source: "@asmens_id"
       asmens_id:
         local: true
         type: string
@@ -33,8 +35,18 @@ objects:
         source: "@biografijos_nuoroda"
         stars: 1
   politika/seimas/kontaktai:
-    source: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+      - "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
     properties:
+      id:
+        source:
+          type: array
+          sources:
+            - "../@asmens_id"
+            - "@rūšis"
+            - "@reikšmė"
+        stars: 1
       seimo_narys:
         source: "../@asmens_id"
       rūšis:
@@ -47,3 +59,47 @@ objects:
               "Asmeninė interneto svetainė": website
       reikšmė:
         source: "@reikšmė"
+  politika/seimas/mandatas:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+    properties:
+      id:
+        stars: 0
+      kadencija:
+        source: "../@kadencijos_id"
+      seimo_narys:
+        identifier:
+          - source: "@asmens_id"
+      kas_iškėlė:
+        source: "@iškėlusi_partija"
+        stars: 1
+      nuo:
+        source: "@data_nuo"
+      iki:
+        source: "@data_iki"
+  politika/seimas/kadencija:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_kadencijos"
+      - "/SeimoInformacija/SeimoKadencija"
+    properties:
+      id:
+        source: "@kadencijos_id"
+      pavadinimas:
+        source: "@pavadinimas"
+      nuo:
+        source: "@data_nuo"
+      iki:
+        source: "@data_iki"
+  politika/partija:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+    properties:
+      id:
+        stars: 0
+      pavadinimas:
+        source: "@iškėlusi_partija"
+      trumpinys:
+        source: "@iškėlusi_partija"
+        stars: 1

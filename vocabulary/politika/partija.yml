@@ -2,6 +2,7 @@ id: politika/partija
 title: "Politinė partija"
 type: vocabulary
 properties:
+  id: {type: pk}
   pavadinimas:
     type: string
     title: "Pavadinimas"
