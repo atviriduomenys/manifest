@@ -10,8 +10,33 @@ properties:
   pavardė:
     type: string
     title: "Pavardė"
-  gimimo_data: {type: date}
-  mirties_data: {type: date}
-  el_pašto_adresas: {type: string}
-  telefono_numeris: {type: string}
-  nuotrauka: {type: image}
+  gimimo_data:
+    type: date
+  mirties_data:
+    type: date
+  gimimo_vieta:
+    type: point
+  nuotrauka:
+    type: image
+  kontaktai:
+    type: backref
+    object: politika/seimas/kontaktai
+    property: seimo_narys
+  mandatas:
+    type: backref
+    object: politika/seimas/mandatas
+  grupės:
+    type: backref
+    secondary: politika/seimas/pareigos
+    object: politika/seimas/grupė
+    property: grupė
+  frakcijos:
+    type: backref
+    secondary: politika/seimas/pareigos
+    object: politika/seimas/partija
+    property: grupė
+  partijos:
+    type: backref
+    secondary: politika/seimas/pareigos
+    object: politika/seimas/partija
+    property: grupė

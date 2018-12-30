@@ -26,6 +26,12 @@ objects:
       gimimo_data:
         source: "@biografijos_nuoroda"
         stars: 1
+      gimimo_vieta:
+        source: "@biografijos_nuoroda"
+        stars: 1
+      nuotrauka:
+        source: "@biografijos_nuoroda"
+        stars: 1
   politika/seimas/kontaktai:
     source: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
     properties:

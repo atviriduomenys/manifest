@@ -30,12 +30,42 @@ properties:
         properties:
           type:
             enum:
+              # Unicode simbolių eilutė.
               - string
+
+              # Sveikas skaičius.
               - integer
+
+              # Realusis skaičius.
               - number
+
+              # Paveiksliuko failas dvejetainiu formatu.
               - image
+
+              # Data YYYY-MM-DD formatu.
               - date
+
+              # Ryšys su kitu objektu.
               - ref
+
+              # Atgalinis ryšis su kitu objektu.
+              - backref
+
+              # Ryšys su kitu objektu, nenurodant konkretaus objekto, t.y.
+              # ryšys gali būti su skirtingais objektais.
+              - generic
+
+              # Geografinis taškas naudojant WGS84 koordinačių sistemą.
+              - point
+
+          secondary:
+            type: [boolean, string]
+            title: Manty to many relation
+            description: >
+              Should be used with type=backeref. If boolean is specified,
+              secondary table will be created automaticaly, if string is
+              specified, then an existing table will be used for many to many
+              relation.
           link:
             type: string
             title: URI from a known vocabulary
@@ -50,8 +80,14 @@ properties:
             type: string
             title: Susietas objektas
             description: >
-              Naudojamas kartu su type=ref, nurodo, kad šis laukas yra nuoroda
-              į kitą objektą.
+              Should be used with type=ref. Specifies that this object is a
+              reference to another object.
+          property:
+            type: string
+            title: Property name on back reference object
+            description: >
+              Should be used with type=backref. Specified name of property on
+              back reference object.
           enum:
             type: array
             items:

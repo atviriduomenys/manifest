@@ -19,6 +19,7 @@ objects:
       pavardė:
       gimimo_data:
       mirties_data:
+      gimimo_vieta:
       nuotrauka:
   politika/seimas/kontaktai:
     properties:
@@ -31,6 +32,7 @@ objects:
       reikšmė:
   politika/seimas/mandatas:
     properties:
+      seimo_narys:
       kandidato_svetainė:
       kas_iškėlė:
       nuo:
