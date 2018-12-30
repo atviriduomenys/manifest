@@ -66,13 +66,18 @@ def test_flat_tables():
 
     print()
     print(' Duomenių rinkinių sąrašas pagal prioritetą '.center(80, '-'))
+    _frame = frame.dropna(subset=['dataset']).groupby(['dataset', 'project']).agg({
+        'stars': ['sum', 'count'],
+        'users': 'first',
+    }).groupby(level=0).agg({
+        ('stars', 'sum'): 'sum',
+        ('stars', 'count'): 'sum',
+        ('users', 'first'): 'sum',
+    })
     print(
-        frame.dropna(subset=['dataset']).groupby(['dataset', 'project']).agg({
-            'stars': 'mean',
-            'users': 'first',
-        }).groupby(level=0).agg({
-            'stars': 'mean',
-            'users': 'sum',
+        pd.DataFrame({
+            'stars': _frame[('stars', 'sum')] / _frame[('stars', 'count')],
+            'users': _frame[('users', 'first')],
         }).sort_values(['stars', 'users'], ascending=[True, False])
     )
 
