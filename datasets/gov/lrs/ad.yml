@@ -23,3 +23,21 @@ objects:
       pavardė:
         type: string
         source: "@pavardė"
+      gimimo_data:
+        source: "@biografijos_nuoroda"
+        stars: 1
+  politika/seimas/kontaktai:
+    source: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
+    properties:
+      seimo_narys:
+        source: "../@asmens_id"
+      rūšis:
+        source:
+          - "@rūšis"
+          - type: replace
+            mapping:
+              "El. p.": email
+              "Darbo telefonas": phone
+              "Asmeninė interneto svetainė": website
+      reikšmė:
+        source: "@reikšmė"

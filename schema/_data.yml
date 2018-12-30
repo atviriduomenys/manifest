@@ -7,10 +7,7 @@ patternProperties:
     title: Data object
     properties:
       source:
-        type: string
-        title: Data source
-        description: >
-          ID of data source.
+        $ref: _source.yml
       since:
         type: string
         format: date
@@ -37,8 +34,7 @@ patternProperties:
           type: object
           properties:
             source:
-              type: string
-              title: Data source for identifier
+              $ref: _source.yml
       properties:
         type: object
         patternProperties:
@@ -70,8 +66,7 @@ patternProperties:
                   - 4
                   - 5
               source:
-                type: string
-                title: Data source
+                $ref: _source.yml
               local:
                 type: boolean
                 title: Local property
@@ -80,6 +75,8 @@ patternProperties:
                   vocabulary.  Local property must be specific to a specific
                   dataset, for example an identifier used only for that
                   dataset.
+              enum:
+                type: array
             additionalProperties: false
         additionalProperties: false
     additionalProperties: false

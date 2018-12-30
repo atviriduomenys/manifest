@@ -19,9 +19,16 @@ objects:
       pavardė:
       gimimo_data:
       mirties_data:
-      el_pašto_adresas:
-      telefono_numeris:
       nuotrauka:
+  politika/seimas/kontaktai:
+    properties:
+      seimo_narys:
+      rūšis:
+        enum:
+          - email
+          - phone
+          - website
+      reikšmė:
   politika/seimas/mandatas:
     properties:
       kandidato_svetainė:

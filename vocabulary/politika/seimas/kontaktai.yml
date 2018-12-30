@@ -1,0 +1,15 @@
+id: politika/seimas/kontaktai
+title: "Seimo nario kontaktai"
+type: vocabulary
+properties:
+  seimo_narys:
+    type: ref
+    object: politika/seimas/seimo_narys
+  rūšis:
+    type: string
+    enum:
+      - email
+      - phone
+      - website
+  reikšmė:
+    type: string

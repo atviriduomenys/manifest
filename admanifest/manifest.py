@@ -59,16 +59,20 @@ class Loader:
         if value is None:
             return
 
-        if isinstance(value, str):
-            value = {'type': 'csv', 'dsn': value}
+        if not isinstance(value, list):
+            value = [value]
 
-        if value['type'] == 'csv':
-            return {
-                'dsn': value['dsn'],
-                'type': value['type'],
-            }
-        else:
-            self.error("Unknown source type: %s.", value['type'])
+        for v in value:
+            if isinstance(v, str):
+                v = {'type': 'csv', 'dsn': v}
+
+            if v['type'] == 'csv':
+                return {
+                    'dsn': v['dsn'],
+                    'type': v['type'],
+                }
+            else:
+                self.error("Unknown source type: %s.", v['type'])
 
     @contextlib.contextmanager
     def push(self, *items):

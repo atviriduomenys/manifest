@@ -4,8 +4,16 @@ description: >
   URI to the data source, you can use different schemes, like http, xml,
   html, csv and etc. to specify how source data should be loaded.
 oneOf:
+  - type: array
+    items:
+      oneOf:
+        - type: string
+        - $ref: "#/definitions/source"
+  - $ref: "#/definitions/source"
   - type: string
-  - type: object
+definitions:
+  source:
+    type: object
     oneOf:
       - $ref: "#/definitions/csv"
       - $ref: "#/definitions/json"
@@ -13,7 +21,7 @@ oneOf:
       - $ref: "#/definitions/sql"
       - $ref: "#/definitions/excel"
       - $ref: "#/definitions/xml"
-definitions:
+      - $ref: "#/definitions/replace"
   csv:
     description: >
       See: http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html#pandas.read_csv
@@ -140,3 +148,11 @@ definitions:
         type: string
       encoding:
         type: string
+  replace:
+    properties:
+      type:
+        enum: ["replace"]
+      mapping:
+        type: object
+        additionalProperties:
+          type: string
