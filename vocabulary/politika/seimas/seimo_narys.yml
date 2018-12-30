@@ -33,10 +33,10 @@ properties:
   frakcijos:
     type: backref
     secondary: politika/seimas/pareigos
-    object: politika/seimas/partija
+    object: politika/seimas/frakcija
     property: grupė
   partijos:
     type: backref
     secondary: politika/seimas/pareigos
-    object: politika/seimas/partija
+    object: politika/partija
     property: grupė

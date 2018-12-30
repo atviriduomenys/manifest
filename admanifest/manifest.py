@@ -144,6 +144,8 @@ class Loader:
                     data = yaml.load(path.read_text())
                     self.load(data, path)
 
+        self.validate_vocabulary_refs()
+
     def load(self, data: dict, path: Path):
         try:
             self.validate(data)
@@ -151,6 +153,7 @@ class Loader:
             self.error("Error while reading %s: %s" % (path.relative_to(self.path), e))
         else:
             self.objects[data['type']][data['id']] = self.loaders[data['type']](data)
+            self.objects[data['type']][data['id']]['path'] = path
 
     def load_dataset(self, data):
         dataset = {
@@ -237,6 +240,46 @@ class Loader:
 
         if data['type'] == 'provider':
             self.validate_media_path('providers', data['id'], data.get('logo'))
+
+    def validate_vocabulary_ref(self, obj_name, prop_name, ref_by, ref_in=None):
+        ref_in = ref_in or {}
+
+        if obj_name is None:
+            return
+
+        if obj_name not in self.objects['vocabulary']:
+            self.error("Unknown object %r, referenced by vocabulary property %r, via %r option.",
+                       obj_name, '/'.join(ref_by), ref_in.get('object', 'object'))
+            return
+
+        if prop_name is None:
+            return
+
+        if prop_name not in self.objects['vocabulary'][obj_name].get('properties', {}):
+            self.error("Unknown object %r property %r, referenced by vocabulary property %r, via %r option.",
+                       obj_name, prop_name, '/'.join(ref_by), ref_in.get('property', 'property'))
+            return
+
+    def validate_vocabulary_refs(self):
+        for obj_name, obj in self.objects['vocabulary'].items():
+            with self.push(str(obj['path'].relative_to(self.path))):
+                for field_name, field in obj.get('properties', {}).items():
+                    ref_by = (obj_name, field_name)
+                    if field['type'] == 'ref':
+                        self.validate_vocabulary_ref(field.get('object'), None, ref_by)
+                    if field['type'] == 'backref':
+                        secondary = field.get('secondary')
+                        if secondary and isinstance(secondary, str):
+                            self.validate_vocabulary_ref(secondary, field.get('property'), ref_by, {
+                                'object': 'secondary',
+                            })
+                        if not secondary:
+                            self.validate_vocabulary_ref(field.get('object'), field.get('property'), ref_by)
+                    if field['type'] == 'generic':
+                        for i, ref_obj_name in enumerate(field.get('enum', [])):
+                            self.validate_vocabulary_ref(ref_obj_name, None, ref_by, {
+                                'object': 'enum[%d]' % i,
+                            })
 
     def validate_vocabulary(self, data):
         for obj_name, obj in data.get('objects', {}).items():
