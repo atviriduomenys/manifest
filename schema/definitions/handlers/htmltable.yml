@@ -1,0 +1,14 @@
+properties:
+  type:
+    enum: ["htmltable"]
+  dsn:
+    type: string
+  match:
+    type: string
+  skiprows:
+    type: integer
+  attrs:
+    type: object
+    patternProperties:
+      "[a-z0-9_-]+":
+        type: string

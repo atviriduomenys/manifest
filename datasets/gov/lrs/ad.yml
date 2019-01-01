@@ -122,7 +122,7 @@ objects:
       - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
     properties:
       grupė:object:
-        value: politika/seimas/frakcija
+        const: politika/seimas/frakcija
       grupė:id:
         source: "../@padalinio_id"
       seimo_narys:

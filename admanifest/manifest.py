@@ -3,8 +3,10 @@ import contextlib
 from pathlib import Path
 from urllib.parse import urlparse
 
-from jsonschema import Draft4Validator, SchemaError, ValidationError, RefResolutionError, validate
+from jsonschema import ValidationError, RefResolutionError, validate
 from ruamel.yaml import YAML
+
+from admanifest.schema import SchemaLoader
 
 yaml = YAML(typ='safe')
 
@@ -13,8 +15,6 @@ class Loader:
 
     def __init__(self, path: Path, schema_path: Path, fail: bool = False):
         self.path = path
-        self.schema_path = schema_path or (path / 'schema')
-        self.schemas = {}
         self.objects = {
             'vocabulary': {},
             'provider': {},
@@ -30,21 +30,7 @@ class Loader:
             'project': self.load_project,
         }
         self.stack = []
-
-    def _load_schema_refs(self, value, definitions):
-        if isinstance(value, dict):
-            if '$ref' in value and value['$ref'].endswith('.yml'):
-                with self.push(value['$ref']):
-                    return self.load_schema(self.schema_path / value['$ref'], definitions)
-            else:
-                return {
-                    k: self._load_schema_refs(v, definitions)
-                    for k, v in value.items()
-                }
-        if isinstance(value, list):
-            return [self._load_schema_refs(v, definitions) for v in value]
-
-        return value
+        self.schema = SchemaLoader(schema_path or (path / 'schema'))
 
     def _parse_date(self, value):
         if isinstance(value, datetime.date):
@@ -96,39 +82,6 @@ class Loader:
             self.errors.append(message)
         if self.fail:
             raise Exception(self.errors[-1])
-
-    def load_schema_files(self):
-        for path in self.schema_path.glob('**/*'):
-            if not path.is_file():
-                continue
-            if path.suffix != '.yml':
-                self.error("Only .yml files are supported, found unsupported %s file.", path)
-                continue
-            with self.push(str(path.relative_to(self.schema_path))):
-                self.load_schema(path)
-
-    def load_schema(self, path: Path, definitions=None):
-        data = yaml.load(path.read_text())
-
-        if definitions is None:
-            main = True
-            definitions = {}
-            data = self._load_schema_refs(data, definitions)
-            if definitions:
-                data['definitions'] = definitions
-        else:
-            main = False
-            definitions.update(data.pop('definitions', {}))
-            data = self._load_schema_refs(data, definitions)
-
-        try:
-            Draft4Validator.check_schema(data)
-        except (SchemaError, RefResolutionError) as e:
-            self.error(e)
-        else:
-            if main:
-                self.schemas[path.stem] = data
-            return data
 
     def load_yaml_files(self):
         for name in ['vocabulary', 'providers', 'datasets', 'projects']:
@@ -223,11 +176,11 @@ class Loader:
         if data['type'] not in self.objects:
             raise ValidationError("Type %s is not one of: %s." % (data['type'], ', '.join(sorted(self.objects.keys()))))
 
-        if data['type'] not in self.schemas:
+        if data['type'] not in self.schema.schemas:
             self.error("Unknown object type %r." % data['type'])
             return
 
-        schema = self.schemas[data['type']]
+        schema = self.schema.schemas[data['type']]
         validate(data, schema)
 
         if data['type'] in ('project', 'dataset'):
@@ -372,6 +325,5 @@ class Loader:
 
 def load_manifest_data(base_path: Path = None, schema_path: Path = None, loader: Loader = None):
     loader = loader or Loader(base_path, schema_path)
-    loader.load_schema_files()
     loader.load_yaml_files()
     return loader

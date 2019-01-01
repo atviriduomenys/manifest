@@ -1,0 +1,7 @@
+properties:
+  type:
+    enum: [xml]
+  dsn:
+    type: string
+  encoding:
+    type: string

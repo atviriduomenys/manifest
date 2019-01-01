@@ -1,0 +1,11 @@
+properties:
+  type:
+    enum: ["json"]
+  dsn:
+    type: string
+  lines:
+    type: boolean
+    description: >
+      Read file as one json object per line.
+  encoding:
+    type: string

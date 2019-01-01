@@ -1,9 +1,13 @@
----
-$schema: http://json-schema.org/draft-04/schema#
 title: Data provider
 description: >
   Information about data provider.
 type: object
+required:
+  - id
+  - type
+  - title
+  - sector
+additionalProperties: false
 properties:
   id:
     type: string
@@ -27,9 +31,3 @@ properties:
     description: >
       Path to the provider logo. Path will be dynamically constructed, from
       media/, provider ID and logo file name specified by this property.
-required:
-  - id
-  - type
-  - title
-  - sector
-additionalProperties: false

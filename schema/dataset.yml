@@ -1,41 +1,33 @@
----
-$schema: http://json-schema.org/draft-04/schema#
+type: object
 title: Dataset
 description: >
   Data resources from a single provider and same data set.
-type: object
+required:
+  - id
+  - type
+  - title
+  - since
+  - provider
+additionalProperties: false
 properties:
   id:
     type: string
-    title: Data source ID
+    title: "Data source ID"
+  type: {enum: [dataset]}
   title:
     type: string
-    title: Data source name
+    title: "Data source name"
   description:
     type: string
-    title: Data source description
-  type:
-    enum:
-      - dataset
+    title: "Data source description"
   provider:
     type: string
-    title: Data provider ID
-    description: >
-      Reference to data provider.
-  since:
-    type: string
-    format: date
-  until:
-    type: string
-    format: date
-  stars:
-    enum:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    title: "Data provider ID"
+    description: "Reference to data provider."
+  since: {type: string, format: date}
+  until: {type: string, format: date}
+  stars: {$ref: "#/definitions/stars"}
+  source: {$ref: "#/definitions/source"}
   opengovdata:
     title: "Open government data principles"
     type: array
@@ -55,14 +47,70 @@ properties:
         - presumption_of_openness
         - documented
         - safe_to_open
-  source:
-    $ref: _source.yml
   objects:
-    $ref: _data.yml
-required:
-  - id
-  - type
-  - title
-  - since
-  - provider
-additionalProperties: false
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "%(object_name_pattern)s":
+        type: [object, "null"]
+        additionalProperties: false
+        properties:
+          source: {$ref: "#/definitions/source"}
+          since: {type: string, format: date}
+          until: {type: string, format: date}
+          stars: {$ref: "#/definitions/stars"}
+          local:
+            type: boolean
+            title: Local object
+            description: >
+              Local objects does not have to be defined in the global vocabulary.
+              Local objects must be specific to a specific dataset.
+          identifier:
+            type: array
+            items:
+              type: object
+              properties:
+                source:
+                  $ref: _source.yml
+          properties:
+            type: object
+            additionalProperties: false
+            patternProperties:
+              "%(property_name_pattern)s":
+                  type: [object, "null"]
+                  additionalProperties: false
+                  properties:
+                    type:
+                      type: string
+                      enum:
+                        - string
+                        - ref
+                      description: >
+                        Kai kurie objektai, gali būti kompleksiniai, rodantys į kitą
+                        objektą, šis laukas nurodo ar reikalinga nuoroda į kitą
+                        objektą ar tiesiog tekstinė to objekto išraiška.
+                    since: {type: string, format: date}
+                    until: {type: string, format: date}
+                    source: {$ref: "#/definitions/source"}
+                    stars: {$ref: "#/definitions/stars"}
+                    const:
+                      type: [integer, string]
+                      title: Constant value
+                    local:
+                      type: boolean
+                      title: Local property
+                      description: >
+                        Local property does not have to be defined in the global
+                        vocabulary.  Local property must be specific to a specific
+                        dataset, for example an identifier used only for that
+                        dataset.
+                    enum:
+                      type: array
+                      items:
+                        type: string
+                    identifier:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          source: {$ref: "#/definitions/source"}

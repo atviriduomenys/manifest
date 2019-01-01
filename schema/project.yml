@@ -1,9 +1,13 @@
----
-$schema: http://json-schema.org/draft-04/schema#
 title: Data needed for a project
 description: >
   Data description containing information about data needed for a project.
 type: object
+required:
+  - id
+  - type
+  - title
+  - since
+additionalProperties: false
 properties:
   id:
     type: string
@@ -43,12 +47,8 @@ properties:
             Number of emplyees, employed for specified year who worked on this
             project.
       additionalProperties: false
-  since:
-    type: string
-    format: date
-  until:
-    type: string
-    format: date
+  since: {type: string, format: date}
+  until: {type: string, format: date}
   source_code:
     type: string
     title: Project source code
@@ -56,10 +56,26 @@ properties:
       If project is an open source project, you can provide link where source
       code of this project can be found.
   objects:
-    $ref: _data.yml
-required:
-  - id
-  - type
-  - title
-  - since
-additionalProperties: false
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "%(object_name_pattern)s":
+        type: [object, "null"]
+        additionalProperties: false
+        properties:
+          since: {type: string, format: date}
+          until: {type: string, format: date}
+          properties:
+            type: object
+            additionalProperties: false
+            patternProperties:
+              "%(property_name_pattern)s":
+                  type: [object, "null"]
+                  additionalProperties: false
+                  properties:
+                    since: {type: string, format: date}
+                    until: {type: string, format: date}
+                    enum:
+                      type: array
+                      items:
+                        type: string

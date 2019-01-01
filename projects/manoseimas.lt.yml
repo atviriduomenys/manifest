@@ -20,7 +20,7 @@ objects:
       iki:
   politika/seimas/seimo_narys:
     properties:
-      vardas: {type: string}
+      vardas:
       pavardė:
       gimimo_data:
       mirties_data:

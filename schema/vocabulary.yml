@@ -1,9 +1,11 @@
----
-$schema: http://json-schema.org/draft-04/schema#
+type: object
 title: Data object
 description: >
   Defines vocabulary for a single data object.
-type: object
+required:
+  - id
+  - type
+additionalProperties: false
 properties:
   id:
     type: string
@@ -20,13 +22,17 @@ properties:
   link:
     type: string
     title: URI from a known vocabulary
-    description: You can youse prefixes from `prefixes.yml` file.
+    description: You can use prefixes from `prefixes.yml` file.
   properties:
     type: object
+    additionalProperties: false
     patternProperties:
-      "^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_:]+$":
+      "%(property_name_pattern)s":
         type: object
         title: Data field
+        required:
+          - type
+        additionalProperties: false
         properties:
           type:
             enum:
@@ -94,15 +100,5 @@ properties:
           enum:
             type: array
             items:
-              oneOf:
-                - {type: string}
-                - {type: integer}
-            title: Galimi variantai
-        required:
-          - type
-        additionalProperties: false
-    additionalProperties: false
-required:
-  - id
-  - type
-additionalProperties: false
+              type: [string, integer]
+            title: "Galimi variantai"

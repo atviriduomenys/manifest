@@ -13,7 +13,6 @@ class ManifestFactory:
         self.tmpdir = tmpdir
         self.path = pathlib.Path(str(tmpdir))
         self.loader = Loader(self.path, pathlib.Path('schema'))
-        self.loader.load_schema_files()
         self.fixtures = {
             'provider': {
                 'counter': ('p%d' % x for x in itertools.count(1)),
@@ -113,7 +112,6 @@ class ManifestFactory:
         return data[type]
 
     def _add_object(self, target, params):
-        print(target)
         if 'objects' not in target:
             target['objects'] = {}
 
