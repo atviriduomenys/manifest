@@ -269,22 +269,24 @@ class Loader:
                             })
 
     def validate_vocabulary(self, data):
-        for obj_name, obj in data.get('objects', {}).items():
+        for oname, obj in data.get('objects', {}).items():
             if obj and obj.get('local') is True:
                 continue
-            if obj_name not in self.objects['vocabulary']:
+            if ':' in oname:
+                oname, _ = oname.split(':', 1)
+            if oname not in self.objects['vocabulary']:
                 with self.push('objects'):
-                    self.error("Unknown object name %r. You can only use names defined in vocabulary.", obj_name)
+                    self.error("Unknown object name %r. You can only use names defined in vocabulary.", oname)
                 continue
-            for field_name, field in obj.get('properties', {}).items():
-                if field and field.get('local') is True:
+            for pname, prop in obj.get('properties', {}).items():
+                if prop and prop.get('local') is True:
                     continue
-                if ':' in field_name:
-                    field_name, _ = field_name.split(':', 1)
-                if field_name not in self.objects['vocabulary'][obj_name]['properties']:
-                    with self.push('objects', obj_name, 'properties'):
-                        self.error("Unknown field name %r in %r object. You can only use names defined in vocabulary.",
-                                   field_name, obj_name)
+                if ':' in pname:
+                    pname, _ = pname.split(':', 1)
+                if pname not in self.objects['vocabulary'][oname]['properties']:
+                    with self.push('objects', oname, 'properties'):
+                        self.error("Unknown property name %r in %r object. You can only use names defined in vocabulary.",
+                                   pname, oname)
 
     def validate_project_refs(self, data):
         for obj_name, obj in data.get('objects', {}).items():

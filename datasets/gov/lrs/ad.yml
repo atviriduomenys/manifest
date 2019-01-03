@@ -116,13 +116,30 @@ objects:
         source: "@padalinio_pavadinimo_santrumpa"
       kadencija:
         source: "../@kadencijos_id"
-  politika/seimas/pareigos:
+  politika/seimas/pareigos:frakcija:
     source:
       - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
       - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
     properties:
       grupė:object:
         const: politika/seimas/frakcija
+      grupė:id:
+        source: "../@padalinio_id"
+      seimo_narys:
+        source: "@asmens_id"
+      pareigos:
+        source: "@pareigos"
+      nuo:
+        stars: 0
+      iki:
+        stars: 0
+  politika/seimas/pareigos:komitetas:
+    source:
+      - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"
+      - "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
+    properties:
+      grupė:object:
+        const: politika/seimas/grupė
       grupė:id:
         source: "../@padalinio_id"
       seimo_narys:

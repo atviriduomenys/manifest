@@ -112,12 +112,54 @@ Here is example how vocabulary file looks:
       title: "Last name"
       type: "string"
 
-All object and property names must be defined in vocabulary file, befere using
+All object and property names must be defined in vocabulary file, before using
 those names in data or source files.
 
 
+Virtual objects
+===============
+
+Using virtual objects you can combine data from multiple distinct objects into
+one base object. For example:
+
+.. code-block:: yaml
+
+  id: gov/lrs/ad
+  type: dataset
+  objects:
+    politika/seimas/pareigos:frakcija:
+      source:
+        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+        - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
+      properties:
+        grupė:object:
+          const: politika/seimas/frakcija
+        grupė:id:
+          source: "../@padalinio_id"
+    politika/seimas/pareigos:komitetas:
+      source:
+        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"
+        - "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
+      properties:
+        grupė:object:
+          const: politika/seimas/grupė
+        grupė:id:
+          source: "../@padalinio_id"
+
+Here original dataset has two distinct datasets for two different divisions.
+Both divisions have common member position properties. In order to extract
+these common properties into a single position object we use virtual objects
+`frakcija` and `komitetas` on top of `politika/seimas/pareigos` real object.
+`politika/seimas/pareigos` will be populated with data from both datasets.
+
+Similar thing can be done by creating two real division objects extending one
+common object and propagating common properties to that common object. Using
+virtual objects we are saving some storage space and we can get same result
+without creating real objects in database.
+
+
 How to describe a dataset?
-==============================
+==========================
 
 You can describe a dataset in order to make it available for projects. Here is
 example how this could be done:
