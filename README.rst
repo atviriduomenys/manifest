@@ -47,9 +47,9 @@ YAML_ files are organized into this structure::
     <object>.yml
   providers/
     <provider>.yml
-  sources/
+  datasets/
     <provider>/
-      <source>.yml
+      <dataset>.yml
   projects/
     <project>.yml
   media/
@@ -80,22 +80,12 @@ Here is an example, how a project could request the data:
     seimo_narys:
       properties:
         first_name:
-          type: "string"
-          source: "gov/lrs/ad"
         last_name:
-          type: "string"
-          source: "gov/lrs/ad"
 
 `impact` parameter is used to describe social and economical impact. Both
 future and past dates can be provided for estimated and retrospective impact.
 This parameter helps to prioritize what data needs to be opened first. Projects
 with a higher impact should be supplied with the data first.
-
-`source` parameter is optional, but if you know who owns the data, you can also
-specify the source.
-
-As you can see data structure here looks a bit similar to json-schema_, meaning
-that some fields are well defined in json-schema_ specifications.
 
 
 What is the purpose of vocabulary?
@@ -126,47 +116,43 @@ All object and property names must be defined in vocabulary file, befere using
 those names in data or source files.
 
 
-How to describe a data source?
+How to describe a dataset?
 ==============================
 
-If you know who has the data you can also describe the data source. Here is
+You can describe a dataset in order to make it available for projects. Here is
 example how this could be done:
 
 .. code-block:: yaml
 
-  # sources/gov/lrs/ad.yml
-  id: "gov/lrs/ad"
+  # datasets/gov/lrs/ad.yml
+  id: gov/lrs/ad
   title: "Members of Parliament (XML)"
   description: "XML file containing data about members of parliament."
-  type: "source"
-  source: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-  provider: "gov/lrs"
+  type: dataset
+  source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
+  provider: gov/lrs
   since: "2016-01-01"
   objects:
     seimo_narys:
-      source: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      source:
+         - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+         - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
       properties:
         first_name:
-          type: "string"
           source: "@vardas"
         last_name:
-          type: "string"
           source: "@pavardė"
 
-Defining a source is the most complicated part, but luckily this part is
+Defining a `source` is the most complicated part, but luckily this part is
 optional!
 
 Here `source` parameter is optional. It is used just to demonstrate complete
-example of how things look.
+example of how things wrok.
 
 The idea with sources, is that you can specify exact location of the data. Just
 by using descriptions provided in `source` fields, data can be extracted in a
-fully automated way. Well at least in simple cases. In addition this detailed
+fully automated way. Well at least the simple cases. In addition this detailed
 source description can be used to validate if source data are really there.
-
-But in most cases we will not have direct access to data, so that's why
-`source` parameter is optional. It is enough to just specify a URL and list
-properties that we think are provided by the source.
 
 `gov/lrs` parameter points to another YAML file where provider is defined. Here
 is how this file looks:
@@ -174,10 +160,10 @@ is how this file looks:
 .. code-block:: yaml
 
   # providers/gov/lrs.yml
-  id: "gov/lrs"
+  id: gov/lrs
   title: "Lietuvos Respublikos Seimas"
-  type: "provider"
-  logo: "logo.png"
+  type: provider
+  logo: logo.png
 
 `logo` property here points to `media/providers/gov/lrs/logo.png` file.
 
@@ -186,7 +172,7 @@ I don't know how to create a pull request
 =========================================
 
 If you don't know how to use git and don't know YAML_, then you can simply
-`create a task`_ and if your project idea will be worth addeng, then someone
+`create a task`_ and if your project idea will be worth adding, then someone
 alse will take care of describing you data needs in machine readable format as
 explained above.
 
@@ -217,40 +203,41 @@ Here I will try to explain, how `source` parameter works.
     object:
       source: # object scope
       properties:
-        field:
-          source: # field scope
+        prop:
+          source: # property scope
 
-`source` parameter can have short and log forms, short form looks like this:
+`source` parameter can have short and long forms, short form looks like this:
 
 .. code-block:: yaml
 
-  source: "https://example.com"
+  source: "url:https://example.com"
   objects:
     object:
-      source: "data.csv"
+      source: "csv:data.csv"
       properties:
         field:
           source: "column"
+
+In this case all values have a prefix separated by `:`, except `column`. If
+prefix is not specified, then a default prefix will be used for the context
+data type. In this case context data type is CSV, which has `column` as default
+prefix.
 
 And exactly same thing can be written as long form:
 
 .. code-block:: yaml
 
   source:
-    dsn: "https://example.com"
-    type: "csv"
-    delim: ","
+    url: "https://example.com"
   objects:
     object:
       source:
-        dsn: "data.csv"
+        csv: "data.csv"
+        delim: ","
       properties:
-        field:
+        prop:
           source:
-            dsn: "column"
-
-As you can see in dataset scope, you define dataset specific properties all
-those properties will be inherited in narrower scopes.
+            column: "column"
 
 Depending on type, short form `source` value has different meaning, for `csv`
 type, in dataset scope it means base URL, in object scope - relative or full
@@ -364,3 +351,86 @@ OpenDocument Spreadsheet
 .. _YAML: https://en.wikipedia.org/wiki/YAML
 .. _json-schema: https://en.wikipedia.org/wiki/JSON#JSON_Schema
 .. _create a task: https://github.com/sirex/opendata/issues/new
+
+
+Data types
+==========
+
+ref
+---
+
+You can specify foreign key relations using `ref` type:
+
+.. code-block:: yaml
+
+  id: politika/seimas/kontaktai
+  type: vocabulary
+  properties:
+    id: {type: pk}
+    seimo_narys:
+      type: ref
+      object: politika/seimas/seimo_narys
+
+Here `seimo_narys` points to `politika/seimas/seimo_narys`, key refers to
+`politika/seimas/seimo_narys` primary key, which is specified by `pk` type.
+
+backref
+-------
+
+It is also possible to specify back reference which is list of all objects
+referring to this one. Here is an example:
+
+.. code-block:: yaml
+
+  id: politika/seimas/seimo_narys
+  type: "vocabulary"
+  properties:
+    id:
+      type: pk
+    kontaktai:
+      type: backref
+      object: politika/seimas/kontaktai
+      property: seimo_narys
+
+
+In order to create many to many relation you need to add `secondary` parameter.
+This parameter can be `true` or name of secondary object through which relation
+is created. `secondary` is `true` then secondary table will be created
+automatically.
+
+
+generic
+-------
+
+Generic type allows to specify a reference to an object without specifying one
+object time. You can refer to any obect type.
+
+In vocabulary you define it like this:
+
+.. code-block:: yaml
+
+   id: politika/seimas/pareigos
+   type: vocabulary
+   properties:
+      grupė:
+         type: generic
+         enum:
+           - politika/seimas/grupė
+           - politika/seimas/frakcija
+           - politika/partija
+
+Here `grupė` is a generic field which points to one of 3 specified object
+types. Under the hood data is stored using two virtual properties `id` and
+`object`. You can specify virtual properties like this:
+
+.. code-block:: yaml
+
+   id: gov/lrs/ad
+   type: dataset
+   objects:
+      politika/seimas/pareigos:
+        properties:
+          grupė:object:
+            const: politika/seimas/frakcija
+          grupė:id:
+            source: "../@padalinio_id"

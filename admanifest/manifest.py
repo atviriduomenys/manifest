@@ -13,7 +13,7 @@ yaml = YAML(typ='safe')
 
 class Loader:
 
-    def __init__(self, path: Path, schema_path: Path, fail: bool = False):
+    def __init__(self, path: Path, fail: bool = False):
         self.path = path
         self.objects = {
             'vocabulary': {},
@@ -30,7 +30,10 @@ class Loader:
             'project': self.load_project,
         }
         self.stack = []
-        self.schema = SchemaLoader(schema_path or (path / 'schema'))
+        self.schema = None
+
+    def load_schema(self, path: Path = None):
+        self.schema = SchemaLoader(path or (self.path / 'schema'))
 
     def _parse_date(self, value):
         if isinstance(value, datetime.date):
@@ -114,11 +117,12 @@ class Loader:
             'type': data['type'],
             'provider': data['provider'],
             'since': self.call('since', self._parse_date, data['since']),
-            'until': self.call('until', self._parse_date, data.get('until', datetime.date.today())),
+            'until': self.call('until', self._parse_date, data.get('until', None)),
             'stars': data.get('stars'),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
         dataset['objects'] = self.call('objects', self._load_objects, data.get('objects') or {}, dataset)
+        self._validate_dataset_post_load(dataset)
         return dataset
 
     def _load_objects(self, objects, dataset):
@@ -138,23 +142,55 @@ class Loader:
         return obj
 
     def _load_properties(self, props, obj):
-        return {
-            name: self.call(name, self._load_property, data or {}, obj)
-            for name, data in props.items()
-        }
+        result = {}
+
+        # Load all properties and collect virtual properties to be loaded later.
+        vprops = {}
+        for name, data in props.items():
+            if ':' in name:
+                vprops[name] = data
+                continue
+            result[name] = self.call(name, self._load_property, data or {}, obj)
+            result[name]['vprops'] = {}
+
+        # Load virtual properties.
+        for name, data in vprops.items():
+            name, tag = name.split(':', 1)
+
+            # If virtual property is defined, but the main property is not, then define the main property using
+            # defaults.
+            if name not in result:
+                result[name] = self.call(name, self._load_property, {}, obj)
+                result[name]['vprops'] = {}
+
+            if name in result:
+                result[name]['vprops'][tag] = self.call(name, self._load_property, data or {}, obj)
+            else:
+                result[name] = {
+                    'vprops': {
+                        tag: self.call(name, self._load_property, data or {}, obj),
+                    },
+                }
+
+        # Calculate missing property values from its virtual properties.
+        for name, prop in result.items():
+            if prop['since'] is None:
+                prop['since'] = max((x['since'] for x in prop['vprops'].values() if x and x['since']), default=obj['since'])
+            if prop['until'] is None:
+                prop['until'] = min((x['until'] for x in prop['vprops'].values() if x and x['until']), default=obj['until'])
+            if prop['stars'] is None:
+                prop['stars'] = min((x['stars'] for x in prop['vprops'].values() if x and x['stars']), default=obj['stars'])
+
+        return result
 
     def _load_property(self, data, obj):
-        prop = {
+        return {
             'type': data.get('type'),
-            'since': self.call('since', self._parse_date, data.get('since', obj['since'])),
-            'until': self.call('until', self._parse_date, data.get('until', obj['since'])),
-            'stars': data.get('stars', obj['stars']),
+            'since': self.call('since', self._parse_date, data.get('since', None)),
+            'until': self.call('until', self._parse_date, data.get('until', None)),
+            'stars': data.get('stars', None),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
-        if prop['stars'] is None:
-            with self.push('stars'):
-                self.error("stars parameter is required, you can specify it on dataset, object or field scope.")
-        return prop
 
     def load_vocabulary(self, data):
         return data
@@ -243,6 +279,8 @@ class Loader:
             for field_name, field in obj.get('properties', {}).items():
                 if field and field.get('local') is True:
                     continue
+                if ':' in field_name:
+                    field_name, _ = field_name.split(':', 1)
                 if field_name not in self.objects['vocabulary'][obj_name]['properties']:
                     with self.push('objects', obj_name, 'properties'):
                         self.error("Unknown field name %r in %r object. You can only use names defined in vocabulary.",
@@ -322,8 +360,17 @@ class Loader:
         if not path.exists():
             self.error("Can't find media file %s.", path)
 
+    def _validate_dataset_post_load(self, dataset):
+        for oname, obj in dataset.get('objects', {}).items():
+            for pname, prop in obj.get('properties', {}).items():
+                if prop['stars'] is None:
+                    with self.push('objects', oname, 'properties', pname):
+                        self.error("'stars' parameter is required, you can specify it on dataset, object, property or "
+                                   "virtual property.")
+
 
 def load_manifest_data(base_path: Path = None, schema_path: Path = None, loader: Loader = None):
-    loader = loader or Loader(base_path, schema_path)
+    loader = loader or Loader(base_path)
+    loader.load_schema(schema_path)
     loader.load_yaml_files()
     return loader

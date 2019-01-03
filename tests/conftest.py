@@ -12,7 +12,8 @@ class ManifestFactory:
     def __init__(self, tmpdir):
         self.tmpdir = tmpdir
         self.path = pathlib.Path(str(tmpdir))
-        self.loader = Loader(self.path, pathlib.Path('schema'))
+        self.loader = Loader(self.path)
+        self.loader.load_schema(pathlib.Path('schema'))
         self.fixtures = {
             'provider': {
                 'counter': ('p%d' % x for x in itertools.count(1)),

@@ -115,7 +115,8 @@ def test_stars_validation_error(manifest):
         '''
     })
     assert result.errors == [
-        "datasets/gov/lrs.yml: objects: object: properties: prop: stars: stars parameter is required, you can specify it on dataset, object or field scope.",
+        "datasets/gov/lrs.yml: objects: object: properties: prop: 'stars' parameter is required, you can specify it "
+        "on dataset, object, property or virtual property.",
     ]
 
 
