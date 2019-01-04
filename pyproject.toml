@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "open-data-manifest"
+version = "0.1.0"
+license = "LGPL-3.0+"
+description = ""
+authors = ["Mantas Zimnickas <sirexas@gmail.com>"]
+homepage = "https://github.com/atviriduomenys/manifest"
+packages = [
+    { include = "admanifest" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jsonschema = "^2.6"
+"ruamel.yaml" = "^0.15.83"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.0"
+pytest-cov = "^2.6"
+pprintpp = "^0.4.0"
+pp-ez = "^0.2.0"
+jupyterlab = "^0.35.4"
+matplotlib = "^3.0"
+pandas = "^0.23.4"
+
+[tool.poetry.scripts]
+admanifest-check = "admanifest.scripts.check:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,8 +1,10 @@
 language: python
 python:
-  - "3.5"
+  - "3.7"
+before_install:
+  - pip install poetry
 install:
-  - pip install -r requirements-dev.txt -e .
+  - poetry install
 script:
-  - py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
-  - admanifest-check
+  - poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
+  - poetry run admanifest-check
