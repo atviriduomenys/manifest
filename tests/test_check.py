@@ -88,8 +88,8 @@ def test_since_date_inheritance(manifest):
     })
     assert result.errors == []
     assert result.objects['dataset']['gov/lrs']['since'] == datetime.date(2018, 1, 1)
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['since'] == datetime.date(2018, 1, 1)
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['properties']['prop']['since'] == datetime.date(2018, 1, 1)
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['since'] == datetime.date(2018, 1, 1)
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['properties']['prop']['since'] == datetime.date(2018, 1, 1)
 
 
 def test_stars_validation_error(manifest):
@@ -145,8 +145,8 @@ def test_stars_inheritance(manifest):
     })
     assert result.errors == []
     assert result.objects['dataset']['gov/lrs']['stars'] == 3
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['stars'] == 3
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['properties']['prop']['stars'] == 3
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['stars'] == 3
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['properties']['prop']['stars'] == 3
 
 
 def test_stars_inheritance_2(manifest):
@@ -174,5 +174,5 @@ def test_stars_inheritance_2(manifest):
     })
     assert result.errors == []
     assert result.objects['dataset']['gov/lrs']['stars'] is None
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['stars'] is None
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['properties']['prop']['stars'] == 3
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['stars'] is None
+    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['properties']['prop']['stars'] == 3

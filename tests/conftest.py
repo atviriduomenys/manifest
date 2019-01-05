@@ -116,10 +116,18 @@ class ManifestFactory:
         if 'objects' not in target:
             target['objects'] = {}
 
-        if params['id'] not in target['objects']:
-            target['objects'][params['id']] = self.loader._load_object(params, target)
+        if ':' in params['id']:
+            name, tag = params['id'].split(':', 1)
+        else:
+            name, tag = params['id'], ''
 
-        return target['objects'][params['id']]
+        if name not in target['objects']:
+            target['objects'][name] = {}
+
+        if tag not in target['objects'][name]:
+            target['objects'][name][tag] = self.loader._load_object(params, target)
+
+        return target['objects'][name][tag]
 
     def _add_field(self, target, params):
         if 'properties' not in target:

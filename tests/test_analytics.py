@@ -15,10 +15,12 @@ def test_progress(manifest):
     assert get_timeline_by_stars(result) == []
 
 
-def find_datasets(manifest, obj_name, prop_name):
+def find_datasets(manifest, oname, pname):
     for dataset in manifest.objects['dataset'].values():
-        if obj_name in dataset['objects'] and prop_name in dataset['objects'][obj_name]['properties']:
-            yield dataset, dataset['objects'][obj_name]['properties'][prop_name]
+        if oname in dataset['objects']:
+            for obj in dataset['objects'][oname].values():
+                if pname in obj['properties']:
+                    yield dataset, obj['properties'][pname]
 
 
 def test_flat_tables():

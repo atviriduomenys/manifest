@@ -126,10 +126,20 @@ class Loader:
         return dataset
 
     def _load_objects(self, objects, dataset):
-        return {
-            name: self.call(name, self._load_object, data, dataset)
-            for name, data in objects.items()
-        }
+        result = {}
+
+        for name, data in objects.items():
+            if ':' in name:
+                name, tag = name.split(':', 1)
+            else:
+                tag = ''
+
+            if name not in result:
+                result[name] = {}
+
+            result[name][tag] = self.call(name, self._load_object, data, dataset)
+
+        return result
 
     def _load_object(self, data, dataset):
         obj = {
@@ -228,42 +238,42 @@ class Loader:
         if data['type'] == 'provider':
             self.validate_media_path('providers', data['id'], data.get('logo'))
 
-    def validate_vocabulary_ref(self, obj_name, prop_name, ref_by, ref_in=None):
+    def validate_vocabulary_ref(self, oname, prop_name, ref_by, ref_in=None):
         ref_in = ref_in or {}
 
-        if obj_name is None:
+        if oname is None:
             return
 
-        if obj_name not in self.objects['vocabulary']:
+        if oname not in self.objects['vocabulary']:
             self.error("Unknown object %r, referenced by vocabulary property %r, via %r option.",
-                       obj_name, '/'.join(ref_by), ref_in.get('object', 'object'))
+                       oname, '/'.join(ref_by), ref_in.get('object', 'object'))
             return
 
         if prop_name is None:
             return
 
-        if prop_name not in self.objects['vocabulary'][obj_name].get('properties', {}):
+        if prop_name not in self.objects['vocabulary'][oname].get('properties', {}):
             self.error("Unknown object %r property %r, referenced by vocabulary property %r, via %r option.",
-                       obj_name, prop_name, '/'.join(ref_by), ref_in.get('property', 'property'))
+                       oname, prop_name, '/'.join(ref_by), ref_in.get('property', 'property'))
             return
 
     def validate_vocabulary_refs(self):
-        for obj_name, obj in self.objects['vocabulary'].items():
+        for oname, obj in self.objects['vocabulary'].items():
             with self.push(str(obj['path'].relative_to(self.path))):
-                for field_name, field in obj.get('properties', {}).items():
-                    ref_by = (obj_name, field_name)
-                    if field['type'] == 'ref':
-                        self.validate_vocabulary_ref(field.get('object'), None, ref_by)
-                    if field['type'] == 'backref':
-                        secondary = field.get('secondary')
+                for pname, prop in obj.get('properties', {}).items():
+                    ref_by = (oname, pname)
+                    if prop['type'] == 'ref':
+                        self.validate_vocabulary_ref(prop.get('object'), None, ref_by)
+                    if prop['type'] == 'backref':
+                        secondary = prop.get('secondary')
                         if secondary and isinstance(secondary, str):
-                            self.validate_vocabulary_ref(secondary, field.get('property'), ref_by, {
+                            self.validate_vocabulary_ref(secondary, prop.get('property'), ref_by, {
                                 'object': 'secondary',
                             })
                         if not secondary:
-                            self.validate_vocabulary_ref(field.get('object'), field.get('property'), ref_by)
-                    if field['type'] == 'generic':
-                        for i, ref_obj_name in enumerate(field.get('enum', [])):
+                            self.validate_vocabulary_ref(prop.get('object'), prop.get('property'), ref_by)
+                    if prop['type'] == 'generic':
+                        for i, ref_obj_name in enumerate(prop.get('enum', [])):
                             self.validate_vocabulary_ref(ref_obj_name, None, ref_by, {
                                 'object': 'enum[%d]' % i,
                             })
@@ -289,24 +299,24 @@ class Loader:
                                    pname, oname)
 
     def validate_project_refs(self, data):
-        for obj_name, obj in data.get('objects', {}).items():
-            for field_name, field in obj.get('properties', {}).items():
-                with self.push('objects', obj_name, 'properties', field_name, 'source'):
-                    self.validate_dataset_ref(obj_name, field_name, (field or {}).get('source'))
+        for oname, obj in data.get('objects', {}).items():
+            for pname, prop in obj.get('properties', {}).items():
+                with self.push('objects', oname, 'properties', pname, 'source'):
+                    self.validate_dataset_ref(oname, pname, (prop or {}).get('source'))
 
     def validate_source_refs(self, data):
         with self.push('provider'):
             self.validate_provider_ref(data.get('provider'))
         with self.push('source'):
             self.validate_source_uri(data.get('source'))
-        for obj_name, obj in data.get('objects', {}).items():
-            with self.push('objects', obj_name, 'source'):
+        for oname, obj in data.get('objects', {}).items():
+            with self.push('objects', oname, 'source'):
                 self.validate_source_uri(obj.get('source'))
-            for field_name, field in obj.get('properties', {}).items():
-                with self.push('objects', obj_name, 'properties', field_name, 'source'):
-                    self.validate_source_uri(field.get('source'))
+            for pname, prop in obj.get('properties', {}).items():
+                with self.push('objects', oname, 'properties', pname, 'source'):
+                    self.validate_source_uri(prop.get('source'))
 
-    def validate_source_uri(self, obj_name, field_name, source):
+    def validate_source_uri(self, oname, pname, source):
         if source is None:
             return
 
@@ -324,27 +334,27 @@ class Loader:
 
         if ':' in source:
             func, source = source.split(':', 1)
-            funcs = ('xml', 'xpath', 'css', 'field')
+            funcs = ('xml', 'xpath', 'css', 'prop')
             if func not in funcs:
                 self.error("Unknown source function %s. Known functions are %s.", func, ', '.join(funcs))
             return
 
-        self.validate_dataset_ref(obj_name, field_name, source)
+        self.validate_dataset_ref(oname, pname, source)
 
-    def validate_dataset_ref(self, obj_name, field_name, dataset):
+    def validate_dataset_ref(self, oname, pname, dataset):
         if dataset is None:
             return
 
         if dataset not in self.objects['dataset']:
-            self.error("Unknown dataset %s id, referenced in %s.%s.", dataset, obj_name, field_name)
+            self.error("Unknown dataset %s id, referenced in %s.%s.", dataset, oname, pname)
             return
 
-        if obj_name not in self.objects['dataset'][dataset].get('objects', {}):
-            self.error("Unknown dataset %s object name, referenced in %s.%s.", dataset, obj_name, field_name)
+        if oname not in self.objects['dataset'][dataset].get('objects', {}):
+            self.error("Unknown dataset %s object name, referenced in %s.%s.", dataset, oname, pname)
             return
 
-        if field_name not in self.objects['dataset'][dataset]['objects'][obj_name].get('properties', {}):
-            self.error("Unknown dataset %s field name, referenced in %s.%s.", dataset, obj_name, field_name)
+        if pname not in self.objects['dataset'][dataset]['objects'][oname].get('properties', {}):
+            self.error("Unknown dataset %s property name, referenced in %s.%s.", dataset, oname, pname)
             return
 
     def validate_provider_ref(self, provider):
@@ -363,12 +373,13 @@ class Loader:
             self.error("Can't find media file %s.", path)
 
     def _validate_dataset_post_load(self, dataset):
-        for oname, obj in dataset.get('objects', {}).items():
-            for pname, prop in obj.get('properties', {}).items():
-                if prop['stars'] is None:
-                    with self.push('objects', oname, 'properties', pname):
-                        self.error("'stars' parameter is required, you can specify it on dataset, object, property or "
-                                   "virtual property.")
+        for oname, objects in dataset.get('objects', {}).items():
+            for tag, obj in objects.items():
+                for pname, prop in obj.get('properties', {}).items():
+                    if prop['stars'] is None:
+                        with self.push('objects', (oname + ':' + tag) if tag else oname, 'properties', pname):
+                            self.error("'stars' parameter is required, you can specify it on dataset, object, "
+                                       "property or virtual property.")
 
 
 def load_manifest_data(base_path: Path = None, schema_path: Path = None, loader: Loader = None):
