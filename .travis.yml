@@ -2,9 +2,10 @@ language: python
 python:
   - "3.6"
 before_install:
-  - pip install poetry
+  - python -m venv env
+  - env/bin/pip install poetry
 install:
-  - poetry install
+  - env/bin/poetry install
 script:
-  - poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
-  - poetry run admanifest-check
+  - env/bin/poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
+  - env/bin/poetry run admanifest-check
