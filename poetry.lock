@@ -612,8 +612,8 @@ python-versions = "*"
 version = "0.5.1"
 
 [metadata]
-content-hash = "51dd1c8c4055152f6020ad2c1632bc3f6c2d2065b9bb1743b0e05842ba3163c2"
-python-versions = "^3.7"
+content-hash = "09fac93ae4e204202e4bc6e388a986ab9f69845ad1aa9998b38cf11f698ed92e"
+python-versions = "^3.6"
 
 [metadata.hashes]
 appnope = ["5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0", "8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"]
