@@ -1,14 +1,10 @@
 language: python
 python:
   - "3.6"
-cache:
-  directories:
-    - poetry
 before_install:
-  - python -m venv peotry
-  - poetry/bin/pip install poetry
+  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 install:
-  - poetry/bin/poetry install
+  - poetry install
 script:
-  - poetry/bin/poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
-  - poetry/bin/poetry run admanifest-check
+  - poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
+  - poetry run admanifest-check
