@@ -3,7 +3,7 @@ category = "dev"
 description = "Disable App Nap on OS X 10.9"
 marker = "sys_platform == \"darwin\""
 name = "appnope"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.1.0"
 
@@ -27,7 +27,7 @@ version = "18.2.0"
 category = "dev"
 description = "Specifications for callback functions passed in to an API"
 name = "backcall"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.1.0"
 
@@ -35,7 +35,7 @@ version = "0.1.0"
 category = "dev"
 description = "An easy safelist-based HTML-sanitizing tool."
 name = "bleach"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "3.0.2"
 
@@ -64,7 +64,7 @@ version = "4.5.2"
 category = "dev"
 description = "Composable style cycles"
 name = "cycler"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.10.0"
 
@@ -75,7 +75,7 @@ six = "*"
 category = "dev"
 description = "Better living through Python with decorators"
 name = "decorator"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.3.0"
 
@@ -83,7 +83,7 @@ version = "4.3.0"
 category = "dev"
 description = "XML bomb protection for Python stdlib modules"
 name = "defusedxml"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.5.0"
 
@@ -91,7 +91,7 @@ version = "0.5.0"
 category = "dev"
 description = "Discover and load entry points from installed packages."
 name = "entrypoints"
-optional = false
+optional = true
 python-versions = ">=2.7"
 version = "0.2.3"
 
@@ -99,7 +99,7 @@ version = "0.2.3"
 category = "dev"
 description = "IPython Kernel for Jupyter"
 name = "ipykernel"
-optional = false
+optional = true
 python-versions = ">=3.4"
 version = "5.1.0"
 
@@ -113,7 +113,7 @@ traitlets = ">=4.1.0"
 category = "dev"
 description = "IPython: Productive Interactive Computing"
 name = "ipython"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "7.2.0"
 
@@ -134,7 +134,7 @@ traitlets = ">=4.2"
 category = "dev"
 description = "Vestigial utilities from IPython"
 name = "ipython-genutils"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.2.0"
 
@@ -142,7 +142,7 @@ version = "0.2.0"
 category = "dev"
 description = "An autocompletion tool for Python that can be used for text editors."
 name = "jedi"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.13.2"
 
@@ -153,7 +153,7 @@ parso = ">=0.3.0"
 category = "dev"
 description = "A small but fast and easy to use stand-alone template engine written in pure python."
 name = "jinja2"
-optional = false
+optional = true
 python-versions = "*"
 version = "2.10"
 
@@ -172,7 +172,7 @@ version = "2.6.0"
 category = "dev"
 description = "Jupyter protocol implementation and client libraries"
 name = "jupyter-client"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "5.2.4"
 
@@ -187,7 +187,7 @@ traitlets = "*"
 category = "dev"
 description = "Jupyter core package. A base package on which Jupyter projects rely."
 name = "jupyter-core"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.4.0"
 
@@ -198,7 +198,7 @@ traitlets = "*"
 category = "dev"
 description = "The JupyterLab notebook server extension."
 name = "jupyterlab"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "0.35.4"
 
@@ -210,7 +210,7 @@ notebook = ">=4.3.1"
 category = "dev"
 description = "JupyterLab Server"
 name = "jupyterlab-server"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "0.2.0"
 
@@ -222,7 +222,7 @@ notebook = ">=4.2.0"
 category = "dev"
 description = "A fast implementation of the Cassowary constraint solver"
 name = "kiwisolver"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.0.1"
 
@@ -233,7 +233,7 @@ setuptools = "*"
 category = "dev"
 description = "Safely add untrusted strings to HTML/XML markup."
 name = "markupsafe"
-optional = false
+optional = true
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 version = "1.1.0"
 
@@ -241,7 +241,7 @@ version = "1.1.0"
 category = "dev"
 description = "Python plotting package"
 name = "matplotlib"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "3.0.2"
 
@@ -256,7 +256,7 @@ python-dateutil = ">=2.1"
 category = "dev"
 description = "The fastest markdown parser in pure Python"
 name = "mistune"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.8.4"
 
@@ -275,7 +275,7 @@ six = ">=1.0.0,<2.0.0"
 category = "dev"
 description = "Converting Jupyter Notebooks"
 name = "nbconvert"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "5.4.0"
 
@@ -296,7 +296,7 @@ traitlets = ">=4.2"
 category = "dev"
 description = "The Jupyter Notebook format"
 name = "nbformat"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.4.0"
 
@@ -310,7 +310,7 @@ traitlets = ">=4.1"
 category = "dev"
 description = "A web-based notebook environment for interactive computing"
 name = "notebook"
-optional = false
+optional = true
 python-versions = "*"
 version = "5.7.4"
 
@@ -354,7 +354,7 @@ pytz = ">=2011k"
 category = "dev"
 description = "Utilities for writing pandoc filters in python"
 name = "pandocfilters"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.4.2"
 
@@ -362,7 +362,7 @@ version = "1.4.2"
 category = "dev"
 description = "A Python Parser"
 name = "parso"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.3.1"
 
@@ -371,7 +371,7 @@ category = "dev"
 description = "Pexpect allows easy control of interactive console applications."
 marker = "sys_platform != \"win32\""
 name = "pexpect"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.6.0"
 
@@ -382,7 +382,7 @@ ptyprocess = ">=0.5"
 category = "dev"
 description = "Tiny 'shelve'-like database with concurrency support"
 name = "pickleshare"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.7.5"
 
@@ -414,7 +414,7 @@ version = "0.4.0"
 category = "dev"
 description = "Python client for the Prometheus monitoring system."
 name = "prometheus-client"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.5.0"
 
@@ -422,7 +422,7 @@ version = "0.5.0"
 category = "dev"
 description = "Library for building powerful interactive command lines in Python"
 name = "prompt-toolkit"
-optional = false
+optional = true
 python-versions = "*"
 version = "2.0.7"
 
@@ -435,7 +435,7 @@ category = "dev"
 description = "Run a subprocess in a pseudo terminal"
 marker = "sys_platform != \"win32\" or os_name != \"nt\""
 name = "ptyprocess"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.6.0"
 
@@ -451,7 +451,7 @@ version = "1.7.0"
 category = "dev"
 description = "Pygments is a syntax highlighting package written in Python."
 name = "pygments"
-optional = false
+optional = true
 python-versions = "*"
 version = "2.3.1"
 
@@ -459,7 +459,7 @@ version = "2.3.1"
 category = "dev"
 description = "Python parsing module"
 name = "pyparsing"
-optional = false
+optional = true
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "2.3.0"
 
@@ -517,7 +517,7 @@ category = "dev"
 description = "Python bindings for the winpty library"
 marker = "os_name == \"nt\""
 name = "pywinpty"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.5.5"
 
@@ -525,7 +525,7 @@ version = "0.5.5"
 category = "dev"
 description = "Python bindings for 0MQ"
 name = "pyzmq"
-optional = false
+optional = true
 python-versions = ">=2.7,!=3.0*,!=3.1*,!=3.2*"
 version = "17.1.2"
 
@@ -541,7 +541,7 @@ version = "0.15.83"
 category = "dev"
 description = "Send file to trash natively under Mac OS X, Windows and Linux."
 name = "send2trash"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.5.0"
 
@@ -557,7 +557,7 @@ version = "1.12.0"
 category = "dev"
 description = "Terminals served to xterm.js using Tornado websockets"
 name = "terminado"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.8.1"
 
@@ -570,7 +570,7 @@ tornado = ">=4"
 category = "dev"
 description = "Test utilities for code working with files and commands"
 name = "testpath"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.4.2"
 
@@ -578,7 +578,7 @@ version = "0.4.2"
 category = "dev"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 name = "tornado"
-optional = false
+optional = true
 python-versions = ">= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, != 3.3.*"
 version = "5.1.1"
 
@@ -586,7 +586,7 @@ version = "5.1.1"
 category = "dev"
 description = "Traitlets Python config system"
 name = "traitlets"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.3.2"
 
@@ -599,7 +599,7 @@ six = "*"
 category = "dev"
 description = "Measures number of Terminal column cells of wide-character codes"
 name = "wcwidth"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.1.7"
 
@@ -607,12 +607,15 @@ version = "0.1.7"
 category = "dev"
 description = "Character encoding aliases for legacy web content"
 name = "webencodings"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.5.1"
 
+[extras]
+jupyter = []
+
 [metadata]
-content-hash = "09fac93ae4e204202e4bc6e388a986ab9f69845ad1aa9998b38cf11f698ed92e"
+content-hash = "4cccdbf760fc1a7b4d33f0688f1a0f0bb6741ff730d6faf9b85354ed1f0f6805"
 python-versions = "^3.6"
 
 [metadata.hashes]
