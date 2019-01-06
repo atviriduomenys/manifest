@@ -4,6 +4,8 @@ description: >
   Vieno duomenų tiekėjo duomenų rinkinys, dažniausiai iš vienos konkrečios
   duomenų bazės ar duomenų saugyklos.
 type: vocabulary
+version: 1
+date: "2019-01-06"
 link: dctype:Dataset
 properties:
   id:

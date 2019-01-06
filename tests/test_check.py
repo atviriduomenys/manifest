@@ -31,11 +31,13 @@ def test_id_is_required(manifest):
     ]
 
 
-def test_since_date_validation(manifest):
+def test_date_validation(manifest):
     result = manifest({
         'vocabulary/object.yml': '''\
             id: "object"
             type: "vocabulary"
+            version: 1
+            date: "2019-01-06"
             properties:
                 prop:
                     type: "string"
@@ -43,53 +45,21 @@ def test_since_date_validation(manifest):
         'datasets/gov/lrs.yml': '''\
             id: gov/lrs
             type: dataset
-            title: LRS
-            since: "01.01"
+            version: 1
+            date: "01.01"
             stars: 3
+            title: LRS
             provider: gov/lrs
             objects:
                 object:
-                    since: "01.02"
                     properties:
                         prop:
                             type: string
-                            since: "01.03"
         '''
     })
     assert result.errors == [
-        "datasets/gov/lrs.yml: since: time data '01.01' does not match format '%Y-%m-%d'",
-        "datasets/gov/lrs.yml: objects: object: since: time data '01.02' does not match format '%Y-%m-%d'",
-        "datasets/gov/lrs.yml: objects: object: properties: prop: since: time data '01.03' does not match format '%Y-%m-%d'",
+        "datasets/gov/lrs.yml: date: time data '01.01' does not match format '%Y-%m-%d'",
     ]
-
-
-def test_since_date_inheritance(manifest):
-    result = manifest({
-        'vocabulary/object.yml': '''\
-            id: "object"
-            type: "vocabulary"
-            properties:
-                prop:
-                    type: "string"
-        ''',
-        'datasets/gov/lrs.yml': '''\
-            id: gov/lrs
-            type: dataset
-            title: LRS
-            since: "2018-01-01"
-            stars: 3
-            provider: gov/lrs
-            objects:
-                object:
-                    properties:
-                        prop:
-                            type: string
-        '''
-    })
-    assert result.errors == []
-    assert result.objects['dataset']['gov/lrs']['since'] == datetime.date(2018, 1, 1)
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['since'] == datetime.date(2018, 1, 1)
-    assert result.objects['dataset']['gov/lrs']['objects']['object']['']['properties']['prop']['since'] == datetime.date(2018, 1, 1)
 
 
 def test_stars_validation_error(manifest):
@@ -97,6 +67,8 @@ def test_stars_validation_error(manifest):
         'vocabulary/object.yml': '''\
             id: "object"
             type: "vocabulary"
+            version: 1
+            date: "2019-01-06"
             properties:
                 prop:
                     type: "string"
@@ -104,8 +76,9 @@ def test_stars_validation_error(manifest):
         'datasets/gov/lrs.yml': '''\
             id: gov/lrs
             type: dataset
+            version: 1
+            date: "2018-01-01"
             title: LRS
-            since: "2018-01-01"
             provider: gov/lrs
             objects:
                 object:
@@ -125,6 +98,8 @@ def test_stars_inheritance(manifest):
         'vocabulary/object.yml': '''\
             id: "object"
             type: "vocabulary"
+            version: 1
+            date: "2019-01-06"
             properties:
                 prop:
                     type: "string"
@@ -133,7 +108,8 @@ def test_stars_inheritance(manifest):
             id: gov/lrs
             type: dataset
             title: LRS
-            since: "2018-01-01"
+            version: 1
+            date: "2018-01-01"
             stars: 3
             provider: gov/lrs
             objects:
@@ -154,6 +130,8 @@ def test_stars_inheritance_2(manifest):
         'vocabulary/object.yml': '''\
             id: "object"
             type: "vocabulary"
+            version: 1
+            date: "2018-01-01"
             properties:
                 prop:
                     type: "string"
@@ -161,8 +139,9 @@ def test_stars_inheritance_2(manifest):
         'datasets/gov/lrs.yml': '''\
             id: gov/lrs
             type: dataset
+            version: 1
+            date: "2018-01-01"
             title: LRS
-            since: "2018-01-01"
             provider: gov/lrs
             objects:
                 object:

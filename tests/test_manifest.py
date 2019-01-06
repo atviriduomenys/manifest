@@ -1,4 +1,3 @@
-import datetime
 from pathlib import Path
 
 from admanifest.manifest import Loader
@@ -6,8 +5,7 @@ from admanifest.manifest import Loader
 
 def test_vprops_fill_main_prop():
     obj = {
-        'since': None,
-        'until': None,
+        'version': 1,
         'stars': 3,
     }
 
@@ -20,18 +18,16 @@ def test_vprops_fill_main_prop():
     manifest = Loader(Path())
     assert manifest._load_properties(properties, obj) == {
         'test': {
-            'since': None,
             'source': None,
             'stars': 4,
             'type': None,
-            'until': None,
+            'version': 1,
             'vprops': {
                 'tag': {
-                    'since': None,
                     'source': None,
                     'stars': 4,
                     'type': None,
-                    'until': None,
+                    'version': 1,
                 },
             },
         },

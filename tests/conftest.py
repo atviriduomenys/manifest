@@ -32,8 +32,9 @@ class ManifestFactory:
                     'id': 'd1',
                     'type': 'dataset',
                     'title': 'Dataset {id}'.format,
-                    'since': '2018-01-01',
                     'provider': 'p1',
+                    'version': 1,
+                    'date': '2018-01-01',
                 },
             },
             'project': {
@@ -42,7 +43,8 @@ class ManifestFactory:
                 'default': {
                     'id': 'r1',
                     'type': 'project',
-                    'since': '2018-01-01',
+                    'version': 1,
+                    'date': '2018-01-01',
                 },
             },
             'object': {
@@ -50,7 +52,6 @@ class ManifestFactory:
                 'depends': ['provider', 'dataset', 'project'],
                 'default': {
                     'id': 'o1',
-                    'since': None
                 },
             },
             'field': {
@@ -58,7 +59,6 @@ class ManifestFactory:
                 'depends': ['provider', 'dataset', 'project', 'object'],
                 'default': {
                     'id': 'f1',
-                    'since': None
                 },
             },
         }

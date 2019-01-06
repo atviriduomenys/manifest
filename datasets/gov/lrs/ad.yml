@@ -3,9 +3,10 @@ id: gov/lrs/ad
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: dataset
+version: 1
+date: "2018-12-01"
 source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
 provider: gov/lrs
-since: "2018-12-01"
 stars: 3
 objects:
   politika/seimas/seimo_narys:

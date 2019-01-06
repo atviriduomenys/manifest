@@ -5,8 +5,9 @@ type: object
 required:
   - id
   - type
+  - version
+  - date
   - title
-  - since
 additionalProperties: false
 properties:
   id:
@@ -21,6 +22,8 @@ properties:
   type:
     enum:
       - project
+  version: {$ref: "#/definitions/version"}
+  date: {type: string, format: date}
   impact:
     type: array
     title: List of impact indicators by year
@@ -47,8 +50,6 @@ properties:
             Number of emplyees, employed for specified year who worked on this
             project.
       additionalProperties: false
-  since: {type: string, format: date}
-  until: {type: string, format: date}
   source_code:
     type: string
     title: Project source code
@@ -63,8 +64,7 @@ properties:
         type: [object, "null"]
         additionalProperties: false
         properties:
-          since: {type: string, format: date}
-          until: {type: string, format: date}
+          version: {$ref: "#/definitions/version"}
           properties:
             type: object
             additionalProperties: false
@@ -73,8 +73,7 @@ properties:
                   type: [object, "null"]
                   additionalProperties: false
                   properties:
-                    since: {type: string, format: date}
-                    until: {type: string, format: date}
+                    version: {$ref: "#/definitions/version"}
                     enum:
                       type: array
                       items:

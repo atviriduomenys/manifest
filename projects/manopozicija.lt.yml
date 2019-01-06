@@ -1,6 +1,8 @@
 id: "projects/manopozicija.lt"
 title: "ManoPozicija.lt"
 type: "project"
+version: 1
+date: "2015-07-21"
 impact:
   # Just guessed numbers of impact.
   - {year: 2015, users: 10, revenue: 0, employees: 0}
@@ -8,7 +10,6 @@ impact:
   - {year: 2017, users:  0, revenue: 0, employees: 0}
   - {year: 2018, users: 10, revenue: 0, employees: 0}
   - {year: 2019, users: 20, revenue: 0, employees: 0}
-since: "2015-07-21"
 objects:
   politika/seimas/seimo_narys:
     properties:

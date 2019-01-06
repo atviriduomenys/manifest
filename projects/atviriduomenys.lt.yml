@@ -1,7 +1,8 @@
 id: "projects/atviriduomenys.lt"
 title: "Atviri duomenys"
 type: "project"
-since: "2018-09-21"
+version: 1
+date: "2018-09-21"
 objects:
   duomenys/rinkinys:
     properties:

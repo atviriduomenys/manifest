@@ -1,7 +1,10 @@
-id: "educational_institution"
+---
+id: educational_institution
+type: vocabulary
+version: 1
+date: "2019-01-06"
 title: "Educational Institution"
 description: ""
-type: "vocabulary"
 properties:
   id:
     type: pk

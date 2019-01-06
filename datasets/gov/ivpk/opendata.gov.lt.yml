@@ -1,9 +1,10 @@
 id: gov/ivpk/opendata.gov.lt
 title: "IVPK Informacijos Rinkmenų Sąrašas (IRS)"
 type: dataset
+version: 1
+date: "2012-11-22"
 source: "html:http://opendata.gov.lt/"
 provider: gov/ivpk
-since: "2012-11-22"
 stars: 1
 objects:
   duomenys/rinkinys:

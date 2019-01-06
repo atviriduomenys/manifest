@@ -66,10 +66,12 @@ Here is an example, how a project could request the data:
 .. code-block:: yaml
 
   # projects/manopozicija.lt.yml
+  ---
   id: "projects/manopozicija.lt"
   title: "ManoPozicija.lt"
   type: "project"
-  since: "2015-07-21"
+  verson: 1
+  date: "2019-01-06"
   impact:
     - {year: 2015, users: 10, revenue: 0, employees: 0}
     - {year: 2016, users:  0, revenue: 0, employees: 0}
@@ -100,10 +102,13 @@ Here is example how vocabulary file looks:
 .. code-block:: yaml
 
   # vocabulary/seimo_narys.yml
+  ---
   id: "seimo_narys"
   title: "Member of Parliament"
   description: ""
   type: "vocabulary"
+  verson: 1
+  date: 2019-01-06
   properties:
     first_name:
       title: "First name"
@@ -124,8 +129,11 @@ one base object. For example:
 
 .. code-block:: yaml
 
+  ---
   id: gov/lrs/ad
   type: dataset
+  verson: 1
+  date: 2019-01-06
   objects:
     politika/seimas/pareigos:frakcija:
       source:
@@ -171,9 +179,10 @@ example how this could be done:
   title: "Members of Parliament (XML)"
   description: "XML file containing data about members of parliament."
   type: dataset
+  verson: 1
+  date: "2019-01-06"
   source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
   provider: gov/lrs
-  since: "2016-01-01"
   objects:
     seimo_narys:
       source:
@@ -476,3 +485,81 @@ types. Under the hood data is stored using two virtual properties `id` and
             const: politika/seimas/frakcija
           grupė:id:
             source: "../@padalinio_id"
+
+
+Versioning
+==========
+
+Vocabularies, datasets and projects are all versioned. All these objects must
+have `version` and `date` parameters. `versions` tells version number and
+`date` tells when this version was released.
+
+All mentioned object YAML files are interpreted as lists. First list item
+represent current and first version. For example:
+
+.. code-block:: yaml
+
+  ---
+  id: gov/lrs/ad
+  title: "Members of Parliament (XML)"
+  type: dataset
+  version: 1
+  date: "2019-01-06"
+  provider: gov/lrs
+  objects:
+    politika/seimas/seimo_narys:
+      source:
+        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      properties:
+        id:
+          source: "@asmens_id"
+        vardas:
+          type: string
+          source: "@vardas"
+
+Now in order to add new version you need to add new version entry and also
+update the first version, since first version is also a current version:
+
+.. code-block:: yaml
+
+  ---
+  id: gov/lrs/ad
+  title: "Members of Parliament (XML)"
+  type: dataset
+  version: 1
+  date: "2019-01-06"
+  provider: gov/lrs
+  objects:
+    politika/seimas/seimo_narys:
+      source:
+        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      properties:
+        id:
+          source: "@asmens_id"
+        vardas:
+          type: string
+          source: "@vardas"
+        pavardė:
+          type: string
+          source: "@pavardė"
+          version: 2
+  ---
+  version: 2
+  date: "2019-01-07"
+  objects:
+    politika/seimas/seimo_narys:
+      properties:
+        pavardė:
+          type: string
+          source: "@pavardė"
+
+Now we know what current version is and that `pavardė` was added on version
+`2`, we can always look at the version `2` antree to find release date.
+
+All objects in first version without `version` parameter melongs to first
+version.
+
+All version entries have the same schema as first entry, except all new
+versions are merged into current version and then schame validation is applied.

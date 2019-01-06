@@ -5,15 +5,19 @@ description: >
 required:
   - id
   - type
+  - version
+  - date
   - title
-  - since
   - provider
 additionalProperties: false
 properties:
   id:
     type: string
     title: "Data source ID"
-  type: {enum: [dataset]}
+  type:
+    enum: [dataset]
+  version: {$ref: "#/definitions/version"}
+  date: {type: string, format: date}
   title:
     type: string
     title: "Data source name"
@@ -24,8 +28,6 @@ properties:
     type: string
     title: "Data provider ID"
     description: "Reference to data provider."
-  since: {type: string, format: date}
-  until: {type: string, format: date}
   stars: {$ref: "#/definitions/stars"}
   source: {$ref: "#/definitions/source"}
   opengovdata:
@@ -56,8 +58,7 @@ properties:
         additionalProperties: false
         properties:
           source: {$ref: "#/definitions/source"}
-          since: {type: string, format: date}
-          until: {type: string, format: date}
+          version: {$ref: "#/definitions/version"}
           stars: {$ref: "#/definitions/stars"}
           local:
             type: boolean
@@ -89,8 +90,7 @@ properties:
                         Kai kurie objektai, gali būti kompleksiniai, rodantys į kitą
                         objektą, šis laukas nurodo ar reikalinga nuoroda į kitą
                         objektą ar tiesiog tekstinė to objekto išraiška.
-                    since: {type: string, format: date}
-                    until: {type: string, format: date}
+                    version: {$ref: "#/definitions/version"}
                     source: {$ref: "#/definitions/source"}
                     stars: {$ref: "#/definitions/stars"}
                     const:

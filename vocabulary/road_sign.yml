@@ -1,7 +1,10 @@
-id: "road_sign"
+---
+id: road_sign
+type: vocabulary
+version: 1
+date: "2019-01-06"
 title: "Road Sign"
 description: ""
-type: "vocabulary"
 properties:
   id: {type: pk}
   object_id: 

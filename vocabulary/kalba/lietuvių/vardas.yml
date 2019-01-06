@@ -1,6 +1,8 @@
 id: kalba/lietuvių/vardas
-title: "Vardas"
 type: vocabulary
+version: 1
+date: "2019-01-06"
+title: "Vardas"
 properties:
   pavadinimas: {type: string}
   giminė:

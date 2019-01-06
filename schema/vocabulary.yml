@@ -1,3 +1,4 @@
+---
 type: object
 title: Data object
 description: >
@@ -5,6 +6,8 @@ description: >
 required:
   - id
   - type
+  - version
+  - date
 additionalProperties: false
 properties:
   id:
@@ -19,6 +22,8 @@ properties:
   type:
     enum:
       - vocabulary
+  version: {$ref: "#/definitions/version"}
+  date: {type: string, format: date}
   link:
     type: string
     title: URI from a known vocabulary
@@ -103,3 +108,4 @@ properties:
             items:
               type: [string, integer]
             title: "Galimi variantai"
+          version: {$ref: "#/definitions/version"}

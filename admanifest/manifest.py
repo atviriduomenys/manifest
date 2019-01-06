@@ -116,8 +116,8 @@ class Loader:
             'description': data.get('description', ''),
             'type': data['type'],
             'provider': data['provider'],
-            'since': self.call('since', self._parse_date, data['since']),
-            'until': self.call('until', self._parse_date, data.get('until', None)),
+            'version': data.get('version', 1),
+            'date': self.call('date', self._parse_date, data['date']),
             'stars': data.get('stars'),
             'source': self.call('source', self._parse_source, data.get('source')),
         }
@@ -143,10 +143,9 @@ class Loader:
 
     def _load_object(self, data, dataset):
         obj = {
-            'since': self.call('since', self._parse_date, data.get('since', dataset['since'])),
-            'until': self.call('until', self._parse_date, data.get('until', dataset['since'])),
             'stars': data.get('stars', dataset['stars']),
             'source': self.call('source', self._parse_source, data.get('source')),
+            'version': data.get('version', dataset['version']),
         }
         obj['properties'] = self.call('properties', self._load_properties, data.get('properties') or {}, obj)
         return obj
@@ -182,12 +181,10 @@ class Loader:
                     },
                 }
 
-        # Calculate missing property values from its virtual properties.
+        # Calculate missing main property values from its virtual properties.
         for name, prop in result.items():
-            if prop['since'] is None:
-                prop['since'] = max((x['since'] for x in prop['vprops'].values() if x and x['since']), default=obj['since'])
-            if prop['until'] is None:
-                prop['until'] = min((x['until'] for x in prop['vprops'].values() if x and x['until']), default=obj['until'])
+            if prop['version'] is None:
+                prop['version'] = max((x['version'] for x in prop['vprops'].values() if x and x['version']), default=obj['version'])
             if prop['stars'] is None:
                 prop['stars'] = min((x['stars'] for x in prop['vprops'].values() if x and x['stars']), default=obj['stars'])
 
@@ -196,10 +193,9 @@ class Loader:
     def _load_property(self, data, obj):
         return {
             'type': data.get('type'),
-            'since': self.call('since', self._parse_date, data.get('since', None)),
-            'until': self.call('until', self._parse_date, data.get('until', None)),
             'stars': data.get('stars', None),
             'source': self.call('source', self._parse_source, data.get('source')),
+            'version': data.get('version', obj['version']),
         }
 
     def load_vocabulary(self, data):
