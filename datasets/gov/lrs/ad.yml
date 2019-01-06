@@ -7,7 +7,7 @@ version: 1
 date: "2018-12-01"
 source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
 provider: gov/lrs
-stars: 3
+stars: 2
 objects:
   politika/seimas/seimo_narys:
     source:
