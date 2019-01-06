@@ -1,0 +1,22 @@
+---
+id: gov/savivaldybės/vilnius/taryba
+title: "Members of Parliament (XML)"
+description: "XML file containing data about members of parliament."
+type: dataset
+version: 1
+date: "2015-08-23"
+source: "html:https://github.com/vilnius/taryba"
+provider: gov/savivaldybės/vilnius
+stars: 3
+objects:
+  politika/savivaldybės/tarybos_narys:
+    stars: 2
+    source: "csv:https://raw.githubusercontent.com/vilnius/taryba/master/data/meetings.csv"
+    properties:
+      id: {stars: 0}
+      vardas: {source: "PARTICIPANT_SHORT", stars: 1}
+      pavardė: {source: "PARTICIPANT_SHORT", stars: 1}
+      gimimo_data: {stars: 0}
+      mirties_data: {stars: 0}
+      gimimo_vieta: {stars: 0}
+      nuotrauka: {stars: 0}

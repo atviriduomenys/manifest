@@ -84,11 +84,12 @@ def test_flat_tables():
     )
 
     print(' Duomenų laukai be šaltinio '.center(80, '-'))
-    print(
+    _frame = (
         frame[frame.provider.isnull()].groupby(['object', 'property', 'project']).agg({
             'users': 'first',
         }).sort_values('users', ascending=False)
     )
+    print('Visi laukai turi šaltinį!' if _frame.empty else _frame)
 
     print(' Projektai pagal brandos lygį '.center(80, '-'))
     print(frame.groupby('project').stars.mean().sort_index())

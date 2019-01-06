@@ -62,3 +62,14 @@ objects:
       sukurta:
       panaikinta:
       priklauso:
+
+  # Savivaldybės
+  politika/savivaldybės/tarybos_narys:
+    properties:
+      id:
+      vardas:
+      pavardė:
+      gimimo_data:
+      mirties_data:
+      gimimo_vieta:
+      nuotrauka:
