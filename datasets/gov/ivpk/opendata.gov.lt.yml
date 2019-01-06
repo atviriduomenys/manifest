@@ -18,6 +18,7 @@ objects:
       atnaujinta: {stars: 0}
       raktažodžiai: {source: "hint:Reikšminiai žodžiai"}
       kontaktai: {source: "hint:Kontaktiniai duomenys"}
+      vietovės: {stars: 0}
       laikotarpiai:
         source:
           type: array

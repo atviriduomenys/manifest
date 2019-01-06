@@ -29,6 +29,8 @@ objects:
       gimimo_data:
         source: "@biografijos_nuoroda"
         stars: 1
+      mirties_data:
+        stars: 0
       gimimo_vieta:
         source: "@biografijos_nuoroda"
         stars: 1
@@ -151,3 +153,11 @@ objects:
         stars: 0
       iki:
         stars: 0
+  politika/seimas/grupė:
+    stars: 0
+    properties:
+      panaikinta:
+      pavadinimas:
+      priklauso:
+      rūšis:
+      sukurta:
