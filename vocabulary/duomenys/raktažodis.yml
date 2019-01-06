@@ -1,0 +1,12 @@
+id: duomenys/raktažodis
+title: "Raktažodis"
+type: vocabulary
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  rinkiniai:
+    type: backref
+    object: duomenys/rinkinys
+    secondary: true

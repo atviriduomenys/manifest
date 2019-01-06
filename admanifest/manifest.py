@@ -270,7 +270,9 @@ class Loader:
                             self.validate_vocabulary_ref(secondary, prop.get('property'), ref_by, {
                                 'object': 'secondary',
                             })
-                        if not secondary:
+                        elif secondary:
+                            self.validate_vocabulary_ref(prop.get('object'), None, ref_by)
+                        else:
                             self.validate_vocabulary_ref(prop.get('object'), prop.get('property'), ref_by)
                     if prop['type'] == 'generic':
                         for i, ref_obj_name in enumerate(prop.get('enum', [])):

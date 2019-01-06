@@ -64,8 +64,9 @@ properties:
               # ryšys gali būti su skirtingais objektais.
               - generic
 
-              # Geografinis taškas naudojant WGS84 koordinačių sistemą.
-              - point
+              # Geografinis taškas, linija, poligonas ar jų kombinacija
+              # naudojant WGS84 koordinačių sistemą.
+              - spatial
 
           secondary:
             type: [boolean, string]

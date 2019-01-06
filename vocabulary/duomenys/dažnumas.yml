@@ -1,0 +1,13 @@
+id: duomenys/dažnumas
+title: "Dažnumas"
+type: vocabulary
+link: dct:Frequency
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  rinkiniai:
+    type: backref 
+    object: duomenys/laikotarpis
+    secondary: true

@@ -26,7 +26,7 @@ objects:
       mirties_data:
       gimimo_vieta:
       nuotrauka:
-  politika/seimas/kontaktai:
+  politika/seimas/kontaktas:
     properties:
       seimo_narys:
       rūšis:

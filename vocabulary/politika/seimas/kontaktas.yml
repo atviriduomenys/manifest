@@ -1,5 +1,5 @@
-id: politika/seimas/kontaktai
-title: "Seimo nario kontaktai"
+id: politika/seimas/kontaktas
+title: "Seimo nario kontaktinė informacija"
 type: vocabulary
 properties:
   id: {type: pk}

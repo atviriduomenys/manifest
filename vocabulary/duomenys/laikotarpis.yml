@@ -1,0 +1,17 @@
+id: duomenys/laikotarpis
+title: "Laikotarpis"
+type: vocabulary
+link: dct:PeriodOfTime
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  nuo:
+    type: date
+  iki:
+    type: date
+  rinkiniai:
+    type: backref
+    object: duomenys/rinkinys
+    secondary: true

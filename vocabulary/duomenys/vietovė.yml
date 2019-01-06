@@ -1,0 +1,15 @@
+id: duomenys/vietovė
+title: "Vietovė"
+type: vocabulary
+link: dct:Location
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  koordinatės:
+    type: spatial
+  rinkiniai:
+    type: backref 
+    object: duomenys/laikotarpis
+    secondary: true

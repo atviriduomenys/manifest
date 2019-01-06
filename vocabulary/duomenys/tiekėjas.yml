@@ -3,5 +3,7 @@ title: "Duomenų tiekėjas"
 type: vocabulary
 link: foaf:Agent
 properties:
+  id:
+    type: pk
   pavadinimas:
     type: string

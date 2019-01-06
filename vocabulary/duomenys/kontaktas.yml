@@ -1,0 +1,9 @@
+id: duomenys/kontaktas
+title: "Duomenų tiekėjo kontaktinis asmuo"
+type: vocabulary
+properties:
+  id: {type: pk}
+  vardas: {type: string}
+  pavardė: {type: string}
+  el_paštas: {type: string}
+  telefonas: {type: string}

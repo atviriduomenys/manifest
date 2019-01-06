@@ -34,7 +34,7 @@ objects:
       nuotrauka:
         source: "@biografijos_nuoroda"
         stars: 1
-  politika/seimas/kontaktai:
+  politika/seimas/kontaktas:
     source:
       - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
       - "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"

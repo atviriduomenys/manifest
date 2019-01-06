@@ -17,12 +17,12 @@ properties:
   mirties_data:
     type: date
   gimimo_vieta:
-    type: point
+    type: spatial
   nuotrauka:
     type: image
   kontaktai:
     type: backref
-    object: politika/seimas/kontaktai
+    object: politika/seimas/kontaktas
     property: seimo_narys
   mandatas:
     type: backref
