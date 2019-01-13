@@ -1,7 +1,8 @@
 properties:
-  type:
-    enum: ["replace"]
-  mapping:
+  replace:
     type: object
-    additionalProperties:
-      type: string
+    properties:
+      map:
+        type: object
+        additionalProperties:
+          type: string

@@ -1,7 +1,0 @@
-properties:
-  type:
-    enum: ["array"]
-  sources:
-    type: array
-    items:
-      type: string

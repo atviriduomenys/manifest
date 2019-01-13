@@ -9,7 +9,7 @@ source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Tra
 provider: gov/kaunas/municipality
 objects:
   road_sign:
-    source: "csv:Zenklai.csv"
+    source: {csv: "Zenklai.csv"}
     properties:
       object_id: {source: OBJECTID, local: true}
       sign_id: {source: ZENKLO_ID, local: true}

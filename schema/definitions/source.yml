@@ -21,4 +21,4 @@ definitions:
       - $ref: "#/definitions/handlers/excel"
       - $ref: "#/definitions/handlers/xml"
       - $ref: "#/definitions/handlers/replace"
-      - $ref: "#/definitions/handlers/array"
+      - $ref: "#/definitions/handlers/all"

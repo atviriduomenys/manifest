@@ -137,7 +137,7 @@ one base object. For example:
   objects:
     politika/seimas/pareigos:frakcija:
       source:
-        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"}
         - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
       properties:
         grupė:object:
@@ -146,7 +146,7 @@ one base object. For example:
           source: "../@padalinio_id"
     politika/seimas/pareigos:komitetas:
       source:
-        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"
+        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"}
         - "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
       properties:
         grupė:object:
@@ -181,12 +181,12 @@ example how this could be done:
   type: dataset
   verson: 1
   date: "2019-01-06"
-  source: "html:https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"
+  source: {html: "https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"}
   provider: gov/lrs
   objects:
     seimo_narys:
       source:
-         - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+         - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
          - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
       properties:
         first_name:
@@ -261,18 +261,16 @@ Here I will try to explain, how `source` parameter works.
 
 .. code-block:: yaml
 
-  source: "url:https://example.com"
+  source: {url: "https://example.com"}
   objects:
     object:
-      source: "csv:data.csv"
+      source: {csv: "data.csv"}
       properties:
         field:
           source: "column"
 
-In this case all values have a prefix separated by `:`, except `column`. If
-prefix is not specified, then a default prefix will be used for the context
-data type. In this case context data type is CSV, which has `column` as default
-prefix.
+Default function will be used for the context data type. In this case context
+data type is CSV, which has `column` as default function.
 
 And exactly same thing can be written as long form:
 
@@ -300,7 +298,7 @@ XML source
 
 .. code-block:: yaml
 
-  source: "https://example.com/data.xml"
+  source: {xml: "https://example.com/data.xml"}
   objects:
     object:
       source: "//object"
@@ -316,7 +314,7 @@ JSON source
 
   ---
   id: "com/example/items"
-  source: "https://example.com/items.json"
+  source: {json: "https://example.com/items.json"}
   objects:
     object:
       source: "items"
@@ -325,7 +323,7 @@ JSON source
           source: "id"
   ---
   id: "com/example/item"
-  source: "https://example.com/items/{com/example/items/object/id}.json"
+  source: {json: "https://example.com/items/{com/example/items/object/id}.json"}
   objects:
     object:
       source: []
@@ -341,7 +339,7 @@ PostgreSQL source
 
 .. code-block:: yaml
 
-  source: "postgresql://localhost/dbname"
+  source: {postgresql: "://localhost/dbname"}
   objects:
     object:
       source: "tablename"
@@ -353,7 +351,7 @@ Another example with a query:
 
 .. code-block:: yaml
 
-  source: "postgresql://localhost/dbname"
+  source: {postgresql: "://localhost/dbname"}
   objects:
     object:
       source:
@@ -373,12 +371,12 @@ HTML table source
 
 .. code-block:: yaml
 
-  source: "https://example.com/some/page.html"
+  source: {htmltable: "https://example.com/some/page.html"}
   objects:
     object:
       source:
-        type: htmltable
-        cols: 4
+        htmltable:
+          cols: 4
       properties:
         field:
           source: "Some column name"
@@ -389,7 +387,7 @@ OpenDocument Spreadsheet
 
 .. code-block:: yaml
 
-  source: "https://example.com/data.ods"
+  source: {ods: "https://example.com/data.ods"}
   objects:
     object:
       source: "SheetName"
@@ -509,7 +507,7 @@ represent current and first version. For example:
   objects:
     politika/seimas/seimo_narys:
       source:
-        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
         - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
       properties:
         id:
@@ -533,7 +531,7 @@ update the first version, since first version is also a current version:
   objects:
     politika/seimas/seimo_narys:
       source:
-        - "xml:http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
         - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
       properties:
         id:

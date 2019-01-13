@@ -10,7 +10,7 @@ source: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master"
 provider: gov/kaunas/municipality
 objects:
   educational_institution:
-    source: "csv:Svietimo%20istaigos.csv"
+    source: {csv: "Svietimo%20istaigos.csv"}
     properties:
       name:
       id:

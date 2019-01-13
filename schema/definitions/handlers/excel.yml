@@ -1,19 +1,20 @@
 properties:
-  type:
-    enum: ["excel"]
-  dsn:
-    type: string
-  sheet:
-    oneOf:
-      - type: string
-      - type: integer
-  header:
-    oneOf:
-      - type: integer
-      - type: array
-        items:
-          type: integer
-  skiprows:
-    type: integer
-  skipfooter:
-    type: integer
+  xlsx:
+    type: object
+    properties:
+      dsn:
+        type: string
+      sheet:
+        oneOf:
+          - type: string
+          - type: integer
+      header:
+        oneOf:
+          - type: integer
+          - type: array
+            items:
+              type: integer
+      skiprows:
+        type: integer
+      skipfooter:
+        type: integer

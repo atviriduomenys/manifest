@@ -51,16 +51,6 @@ class Loader:
         if not isinstance(value, list):
             value = [value]
 
-        for v in value:
-            if isinstance(v, str):
-                v = {'type': 'csv', 'dsn': v}
-
-            if v['type'] == 'csv':
-                return {
-                    'dsn': v['dsn'],
-                    'type': v['type'],
-                }
-
     @contextlib.contextmanager
     def push(self, *items):
         n = len(items)

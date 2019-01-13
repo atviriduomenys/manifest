@@ -3,50 +3,49 @@ title: "IVPK Informacijos Rinkmenų Sąrašas (IRS)"
 type: dataset
 version: 1
 date: "2012-11-22"
-source: "html:http://opendata.gov.lt/"
+source: {html: "http://opendata.gov.lt/"}
 provider: gov/ivpk
 stars: 1
 objects:
   duomenys/rinkinys:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
-      id: {source: "hint:Kodas"}
-      urlid: {local: true, source: "url:params:id"}
-      pavadinimas: {source: "hint:Pavadinimas"}
-      aprašymas: {source: "hint:Apibūdinimas"}
-      sukurta: {source: "hint:Rinkmenos aprašymo publikavimo duomenys"}
+      id: {source: {hint: "Kodas"}}
+      urlid: {local: true, source: {self: "../url:params:id"}}
+      pavadinimas: {source: {hint: "Pavadinimas"}}
+      aprašymas: {source: {hint: "Apibūdinimas"}}
+      sukurta: {source: {hint: "Rinkmenos aprašymo publikavimo duomenys"}}
       atnaujinta: {stars: 0}
-      raktažodžiai: {source: "hint:Reikšminiai žodžiai"}
-      kontaktai: {source: "hint:Kontaktiniai duomenys"}
+      raktažodžiai: {source: {hint: "Reikšminiai žodžiai"}}
+      kontaktai: {source: {hint: "Kontaktiniai duomenys"}}
       vietovės: {stars: 0}
       laikotarpiai:
         source:
-          type: array
-          sources:
-            - "hint:Rinkmenos pradžios data"
-            - "hint:Rinkmenos pabaigos data"
-      dažnumas: {source: "hint:Atnaujinimo dažnumas"}
-      tiekėjas: {source: "hint:Rinkmenos tvarkytojas"}
+          all:
+            - {hint: "Rinkmenos pradžios data"}
+            - {hint: "Rinkmenos pabaigos data"}
+      dažnumas: {source: {hint: "Atnaujinimo dažnumas"}}
+      tiekėjas: {source: {hint: "Rinkmenos tvarkytojas"}}
   duomenys/raktažodis:
     source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
     properties:
       id: {stars: 0}
-      pavadinimas: {source: "hint:Reikšminiai žodžiai"}
+      pavadinimas: {source: {hint: "Reikšminiai žodžiai"}}
   duomenys/kontaktas:
     source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
     properties:
       id: {stars: 0}
-      vardas: {source: "hint:Kontaktiniai duomenys"}
-      pavardė: {source: "hint:Kontaktiniai duomenys"}
-      el_paštas: {source: "hint:Kontaktiniai duomenys"}
-      telefonas: {source: "hint:Kontaktiniai duomenys"}
+      vardas: {source: {hint: "Kontaktiniai duomenys"}}
+      pavardė: {source: {hint: "Kontaktiniai duomenys"}}
+      el_paštas: {source: {hint: "Kontaktiniai duomenys"}}
+      telefonas: {source: {hint: "Kontaktiniai duomenys"}}
   duomenys/laikotarpis:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
       id: {stars: 0}
       pavadinimas: {stars: 0}
-      nuo: {source: "hint:Rinkmenos pradžios data"}
-      iki: {source: "hint:Rinkmenos pabaigos data"}
+      nuo: {source: {hint: "Rinkmenos pradžios data"}}
+      iki: {source: {hint: "Rinkmenos pabaigos data"}}
   duomenys/vietovė:
     stars: 0
     properties:
@@ -54,12 +53,12 @@ objects:
       pavadinimas:
       koordinatės:
   duomenys/dažnumas:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
       id: {stars: 0}
-      pavadinimas: {source: "hint:Atnaujinimo dažnumas"}
+      pavadinimas: {source: {hint: "Atnaujinimo dažnumas"}}
   duomenys/tiekėjas:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
       id: {stars: 0}
-      pavadinimas: {source: "hint:Rinkmenos tvarkytojas"}
+      pavadinimas: {source: {hint: "Rinkmenos tvarkytojas"}}
