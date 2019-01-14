@@ -19,8 +19,8 @@ class SchemaLoader:
     def _read_yaml_file(self, path: Path):
         try:
             content = path.read_text() % {
-                'object_name_pattern': r'^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_:]+$',
-                'property_name_pattern': r'^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ/_:]+$',
+                'object_name_pattern': r'^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ0-9/_:]+$',
+                'property_name_pattern': r'^[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ0-9/_:]+$',
             }
             return yaml.load(content)
         except:  # noqa

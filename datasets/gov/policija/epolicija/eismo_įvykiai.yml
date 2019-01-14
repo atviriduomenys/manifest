@@ -1,0 +1,161 @@
+---
+id: gov/lrs/ad
+title: "Eismo įvykių duomenys"
+type: dataset
+version: 1
+date: "2018-12-01"
+source: {html: "https://www.epolicija.lt/atviri-duomenys"}
+provider: gov/lrs
+objects:
+  policija/eismas/įvykis:
+    local: true
+    stars: 2
+    source:
+      all:
+        # 2013 m.
+        - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=8c466021-bdac-4f0a-a437-8fe4bf7a5181&groupId=10156"
+        # 2014 m.
+        - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=d894584b-40ec-4111-8ffa-d786d5abd3ac&groupId=10156"
+        # 2015 m.
+        - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=796dc0e9-a304-404b-9720-6b53676bad15&groupId=10156"
+        # 2016 m.
+        - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=a4ca8d1c-5f4f-4d0c-89b3-0c9baffac093&groupId=10156"
+        # 2017 m.
+        - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=39221a0e-c0aa-406c-82df-0d87535c1b49&groupId=10156"
+    properties:
+      savivaldybė:
+        source: "Savivaldybė"
+      data:
+        source: "Data"
+      laikas:
+        source: "Laikas"
+      registro_kodas:
+        source: "Registro kodas"
+      įvykio_rūšis:
+        source: "Įvykio rūšis"
+      unnamed_5:
+        source: 5
+      unnamed_6:
+        source: 6
+      dalyvių_skaičius:
+        source: "Dalyvių skaičius"
+      žuvusių_skaičius:
+        source: "Žuvusių skaičius"
+      sužeistų_skaičius:
+        source: "Sužeistų skaičius"
+      dalyvavusių_transporto_priemonių_skaičius:
+        source: "Dalyvavusių transporto priemonių skaičius"
+      apgadintų_transporto_priemonių_skaičius:
+        source: "Apgadintų transporto priemonių skaičius"
+      įvykio_vieta:
+        source: "Įvykio vieta"
+      gatvė:
+        source: "Gatvė"
+      namo_numeris:
+        source: "Namo numeris"
+      kita_gatvė_sankryžoje:
+        source: "Kita gatvė sankryžoje"
+      kelio_pavadinimas:
+        source: "Kelio pavadinimas"
+      kelio_reikšmė:
+        source: "Kelio reikšmė"
+      atstumas_nuo_kelio_pradžios:
+        source: "Atstumas nuo kelio pradžios"
+      dangos_rūšis:
+        source: "Dangos rūšis"
+      dangos_būklė:
+        source: "Dangos būklė"
+      paros_metas:
+        source: "Paros metas"
+      apšvietimas:
+        source: "Apšvietimas"
+      meteorologinės_sąlygos:
+        source: "Meteorologinės sąlygos"
+      unnamed_24:
+        source: 24
+      kelio_gatvės_kreivė:
+        source: "Kelio, gatvės kreivė"
+      nulemiantys_veiksniai:
+        source: "Nulemiantys veiksniai"
+      unnamed_27:
+        source: 27
+      atitvarai_1_yra_0_nėra_:
+        source: "Atitvarai (1 - yra, 0 - nėra)"
+      sankryžos_tipas:
+        source: "Sankryžos tipas"
+      kelio_gatvės_elementai:
+        source: "Kelio, gatvės elementai"
+      unnamed_31:
+        source: 31
+      transporto_priemonės_registracijos_valstybė:
+        source: "Transporto priemonės registracijos valstybė"
+      transporto_priemonės_kategorija:
+        source: "Transporto priemonės kategorija"
+      markė:
+        source: "Markė"
+      modelis:
+        source: "Modelis"
+      pagaminimo_metai:
+        source: "Pagaminimo metai"
+      pasišalinimas_iš_įvykio_vietos_1_pasišalino_0_nepasišalino_:
+        source: "Pasišalinimas iš įvykio vietos (1 - pasišalino, 0 - nepasišalino)"
+      transporto_priemonės_ypatumai:
+        source: "Transporto priemonės ypatumai"
+      gedimai_nulėmę_eismo_įvykį:
+        source: "Gedimai, nulėmę eismo įvykį"
+      unnamed_40:
+        source: 40
+      pirminis_smūgis:
+        source: "Pirminis smūgis"
+      apgadinimai:
+        source: "Apgadinimai"
+      eismo_įvykio_dalyvio_kategorija:
+        source: "Eismo įvykio dalyvio kategorija"
+      pasišalinimas_iš_įvykio_vietos_1_taip_0_ne_:
+        source: "Pasišalinimas iš įvykio vietos (1 - taip, 0 - ne)"
+      ket_pažeidimas_dėl_kurio_įvyko_eismo_įvykis:
+        source: "KET pažeidimas, dėl kurio įvyko eismo įvykis"
+      kiti_ket_pažeidimai:
+        source: "Kiti KET pažeidimai"
+      unnamed_47:
+        source: 47
+      unnamed_48:
+        source: 48
+      lytis:
+        source: "Lytis"
+      pilietybė:
+        source: "Pilietybė"
+      gimimo_data:
+        source: "Gimimo data"
+      neįgalumas_1_taip_0_ne_:
+        source: "Neįgalumas (1 - taip, 0 - ne)"
+      saugos_diržo_naudojimas:
+        source: "Saugos diržo naudojimas"
+      vaiko_sėdynės_naudojimas:
+        source: "Vaiko sėdynės naudojimas"
+      unnamed_55:
+        source: 55
+      saugos_šalmo_naudojimas:
+        source: "Saugos šalmo naudojimas"
+      oro_pagalvių_suveikimas:
+        source: "Oro pagalvių suveikimas"
+      eismo_įvykio_dalyvio_būklė:
+        source: "Eismo įvykio dalyvio būklė"
+      unnamed_59:
+        source: 59
+      sveikatos_sutrikdymo_mastas:
+        source: "Sveikatos sutrikdymo mastas"
+      vairuotojo_kvalifikacija:
+        source: "Vairuotojo kvalifikacija"
+      vairavimo_stažas_metais:
+        source: "Vairavimo stažas metais"
+      eismo_įvykio_dalyvio_būsena:
+        source: "Eismo įvykio dalyvio būsena"
+      unnamed_64:
+        source: 64
+      unnamed_65:
+        source: 65
+      unnamed_66:
+        source: 66
+      ar_asmuo_kaltas_dėl_eismo_įvykio_1_taip_0_ne_:
+        source: "Ar asmuo kaltas dėl eismo įvykio (1 - taip, 0 - ne)"
