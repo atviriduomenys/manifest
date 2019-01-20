@@ -43,7 +43,7 @@ should describe data needed for a project in YAML_ format.
 
 YAML_ files are organized into this structure::
 
-  vocabulary/
+  models/
     <object>.yml
   providers/
     <provider>.yml
@@ -90,34 +90,33 @@ This parameter helps to prioritize what data needs to be opened first. Projects
 with a higher impact should be supplied with the data first.
 
 
-What is the purpose of vocabulary?
-==================================
+What is the purpose of data models?
+===================================
 
-It is very likely that many projects will use same data fields. In order to
-know how many projects use the same data fields, all data fields are defined in
-one places called vocabulary.
+It is very likely that many projects will use same data properties. In order to
+know how many projects use the same data properties, all data properties are
+defined in one places called models.
 
-Here is example how vocabulary file looks:
+Here is example how model file looks:
 
 .. code-block:: yaml
 
-  # vocabulary/seimo_narys.yml
+  # models/seimo_narys.yml
   ---
-  id: "seimo_narys"
+  id: seimo_narys
   title: "Member of Parliament"
-  description: ""
-  type: "vocabulary"
+  type: model
   verson: 1
   date: 2019-01-06
   properties:
     first_name:
       title: "First name"
-      type: "string"
+      type: string
     last_name:
       title: "Last name"
-      type: "string"
+      type: string
 
-All object and property names must be defined in vocabulary file, before using
+All object and property names must be defined in model file, before using
 those names in data or source files.
 
 
@@ -413,7 +412,7 @@ You can specify foreign key relations using `ref` type:
 .. code-block:: yaml
 
   id: politika/seimas/kontaktai
-  type: vocabulary
+  type: model
   properties:
     id: {type: pk}
     seimo_narys:
@@ -432,7 +431,7 @@ referring to this one. Here is an example:
 .. code-block:: yaml
 
   id: politika/seimas/seimo_narys
-  type: "vocabulary"
+  type: model
   properties:
     id:
       type: pk
@@ -454,12 +453,12 @@ generic
 Generic type allows to specify a reference to an object without specifying one
 object time. You can refer to any obect type.
 
-In vocabulary you define it like this:
+In models you define it like this:
 
 .. code-block:: yaml
 
    id: politika/seimas/pareigos
-   type: vocabulary
+   type: model
    properties:
       grupė:
          type: generic

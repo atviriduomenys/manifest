@@ -1,6 +1,6 @@
 id: politika/seimas/pareigos
 title: "Seimo nario pareigos"
-type: vocabulary
+type: model
 version: 1
 date: "2019-01-06"
 properties:

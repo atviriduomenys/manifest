@@ -1,6 +1,6 @@
 id: duomenys/dažnumas
 title: "Dažnumas"
-type: vocabulary
+type: model
 version: 1
 date: "2019-01-06"
 link: dct:Frequency

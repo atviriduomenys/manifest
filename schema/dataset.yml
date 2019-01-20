@@ -64,7 +64,7 @@ properties:
             type: boolean
             title: Local object
             description: >
-              Local objects does not have to be defined in the global vocabulary.
+              Local objects does not have to be defined as global models.
               Local objects must be specific to a specific dataset.
           identifier:
             type: array
@@ -100,8 +100,8 @@ properties:
                       type: boolean
                       title: Local property
                       description: >
-                        Local property does not have to be defined in the global
-                        vocabulary.  Local property must be specific to a specific
+                        Local property does not have to be defined in global
+                        models. Local property must be specific to a specific
                         dataset, for example an identifier used only for that
                         dataset.
                     enum:

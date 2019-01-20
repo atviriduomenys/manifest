@@ -16,7 +16,7 @@ class Loader:
     def __init__(self, path: Path, fail: bool = False):
         self.path = path
         self.objects = {
-            'vocabulary': {},
+            'model': {},
             'provider': {},
             'dataset': {},
             'project': {},
@@ -24,7 +24,7 @@ class Loader:
         self.fail = fail
         self.errors = []
         self.loaders = {
-            'vocabulary': self.load_vocabulary,
+            'model': self.load_model,
             'dataset': self.load_dataset,
             'provider': self.load_provider,
             'project': self.load_project,
@@ -77,7 +77,7 @@ class Loader:
             raise Exception(self.errors[-1])
 
     def load_yaml_files(self):
-        for name in ['vocabulary', 'providers', 'datasets', 'projects']:
+        for name in ['models', 'providers', 'datasets', 'projects']:
             for path in self.path.glob('%s/**/*' % name):
                 if not path.is_file():
                     continue
@@ -88,7 +88,7 @@ class Loader:
                     data = yaml.load(path.read_text())
                     self.load(data, path)
 
-        self.validate_vocabulary_refs()
+        self.validate_model_refs()
 
     def load(self, data: dict, path: Path):
         try:
@@ -188,7 +188,7 @@ class Loader:
             'version': data.get('version', obj['version']),
         }
 
-    def load_vocabulary(self, data):
+    def load_model(self, data):
         return data
 
     def load_provider(self, data):
@@ -216,7 +216,7 @@ class Loader:
         validate(data, schema)
 
         if data['type'] in ('project', 'dataset'):
-            self.validate_vocabulary(data)
+            self.validate_model(data)
 
         if data['type'] == 'project':
             self.validate_project_refs(data)
@@ -224,66 +224,66 @@ class Loader:
         if data['type'] == 'provider':
             self.validate_media_path('providers', data['id'], data.get('logo'))
 
-    def validate_vocabulary_ref(self, oname, prop_name, ref_by, ref_in=None):
+    def validate_model_ref(self, oname, prop_name, ref_by, ref_in=None):
         ref_in = ref_in or {}
 
         if oname is None:
             return
 
-        if oname not in self.objects['vocabulary']:
-            self.error("Unknown object %r, referenced by vocabulary property %r, via %r option.",
+        if oname not in self.objects['model']:
+            self.error("Unknown object %r, referenced by model property %r, via %r option.",
                        oname, '/'.join(ref_by), ref_in.get('object', 'object'))
             return
 
         if prop_name is None:
             return
 
-        if prop_name not in self.objects['vocabulary'][oname].get('properties', {}):
-            self.error("Unknown object %r property %r, referenced by vocabulary property %r, via %r option.",
+        if prop_name not in self.objects['model'][oname].get('properties', {}):
+            self.error("Unknown object %r property %r, referenced by model property %r, via %r option.",
                        oname, prop_name, '/'.join(ref_by), ref_in.get('property', 'property'))
             return
 
-    def validate_vocabulary_refs(self):
-        for oname, obj in self.objects['vocabulary'].items():
+    def validate_model_refs(self):
+        for oname, obj in self.objects['model'].items():
             with self.push(str(obj['path'].relative_to(self.path))):
                 for pname, prop in obj.get('properties', {}).items():
                     ref_by = (oname, pname)
                     if prop['type'] == 'ref':
-                        self.validate_vocabulary_ref(prop.get('object'), None, ref_by)
+                        self.validate_model_ref(prop.get('object'), None, ref_by)
                     if prop['type'] == 'backref':
                         secondary = prop.get('secondary')
                         if secondary and isinstance(secondary, str):
-                            self.validate_vocabulary_ref(secondary, prop.get('property'), ref_by, {
+                            self.validate_model_ref(secondary, prop.get('property'), ref_by, {
                                 'object': 'secondary',
                             })
                         elif secondary:
-                            self.validate_vocabulary_ref(prop.get('object'), None, ref_by)
+                            self.validate_model_ref(prop.get('object'), None, ref_by)
                         else:
-                            self.validate_vocabulary_ref(prop.get('object'), prop.get('property'), ref_by)
+                            self.validate_model_ref(prop.get('object'), prop.get('property'), ref_by)
                     if prop['type'] == 'generic':
                         for i, ref_obj_name in enumerate(prop.get('enum', [])):
-                            self.validate_vocabulary_ref(ref_obj_name, None, ref_by, {
+                            self.validate_model_ref(ref_obj_name, None, ref_by, {
                                 'object': 'enum[%d]' % i,
                             })
 
-    def validate_vocabulary(self, data):
+    def validate_model(self, data):
         for oname, obj in data.get('objects', {}).items():
             if obj and obj.get('local') is True:
                 continue
             if ':' in oname:
                 oname, _ = oname.split(':', 1)
-            if oname not in self.objects['vocabulary']:
+            if oname not in self.objects['model']:
                 with self.push('objects'):
-                    self.error("Unknown object name %r. You can only use names defined in vocabulary.", oname)
+                    self.error("Unknown object name %r. You can only use names defined in models.", oname)
                 continue
             for pname, prop in obj.get('properties', {}).items():
                 if prop and prop.get('local') is True:
                     continue
                 if ':' in pname:
                     pname, _ = pname.split(':', 1)
-                if pname not in self.objects['vocabulary'][oname]['properties']:
+                if pname not in self.objects['model'][oname]['properties']:
                     with self.push('objects', oname, 'properties'):
-                        self.error("Unknown property name %r in %r object. You can only use names defined in vocabulary.",
+                        self.error("Unknown property name %r in %r object. You can only use names defined in models.",
                                    pname, oname)
 
     def validate_project_refs(self, data):

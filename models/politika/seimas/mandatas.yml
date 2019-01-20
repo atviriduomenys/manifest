@@ -1,6 +1,6 @@
 id: politika/seimas/mandatas
 title: "Mandatas"
-type: vocabulary
+type: model
 version: 1
 date: "2019-01-06"
 properties:

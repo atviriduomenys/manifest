@@ -1,6 +1,6 @@
 ---
 id: educational_institution
-type: vocabulary
+type: model
 version: 1
 date: "2019-01-06"
 title: "Educational Institution"

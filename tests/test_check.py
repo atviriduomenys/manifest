@@ -33,9 +33,9 @@ def test_id_is_required(manifest):
 
 def test_date_validation(manifest):
     result = manifest({
-        'vocabulary/object.yml': '''\
+        'models/object.yml': '''\
             id: "object"
-            type: "vocabulary"
+            type: "model"
             version: 1
             date: "2019-01-06"
             properties:
@@ -64,9 +64,9 @@ def test_date_validation(manifest):
 
 def test_stars_validation_error(manifest):
     result = manifest({
-        'vocabulary/object.yml': '''\
+        'models/object.yml': '''\
             id: "object"
-            type: "vocabulary"
+            type: "model"
             version: 1
             date: "2019-01-06"
             properties:
@@ -95,9 +95,9 @@ def test_stars_validation_error(manifest):
 
 def test_stars_inheritance(manifest):
     result = manifest({
-        'vocabulary/object.yml': '''\
+        'models/object.yml': '''\
             id: "object"
-            type: "vocabulary"
+            type: "model"
             version: 1
             date: "2019-01-06"
             properties:
@@ -127,9 +127,9 @@ def test_stars_inheritance(manifest):
 
 def test_stars_inheritance_2(manifest):
     result = manifest({
-        'vocabulary/object.yml': '''\
+        'models/object.yml': '''\
             id: "object"
-            type: "vocabulary"
+            type: "model"
             version: 1
             date: "2018-01-01"
             properties:

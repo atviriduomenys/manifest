@@ -1,7 +1,6 @@
-id: politika/seimas/seimo_narys
-title: "Seimo narys"
-description: ""
-type: "vocabulary"
+id: politika/savivaldybės/tarybos_narys
+title: "Savivaldybės tarybos narys"
+type: model
 version: 1
 date: "2019-01-06"
 properties:

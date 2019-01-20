@@ -2,7 +2,7 @@
 type: object
 title: Data object
 description: >
-  Defines vocabulary for a single data object.
+  Defines model for a single data object.
 required:
   - id
   - type
@@ -12,16 +12,16 @@ additionalProperties: false
 properties:
   id:
     type: string
-    title: Data vocabulary ID
+    title: Data model ID
   title:
     type: string
-    title: Data vocabulary name
+    title: Data model name
   description:
     type: string
     title: Description of this data object
   type:
     enum:
-      - vocabulary
+      - model
   version: {$ref: "#/definitions/version"}
   date: {type: string, format: date}
   link:
@@ -83,7 +83,7 @@ properties:
               relation.
           link:
             type: string
-            title: URI from a known vocabulary
+            title: URI from a known model
             description: You can youse prefixes from `prefixes.yml` file.
           title:
             type: string
