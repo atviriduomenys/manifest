@@ -3,6 +3,7 @@ import contextlib
 from pathlib import Path
 from urllib.parse import urlparse
 
+import ruamel.yaml.parser
 from jsonschema import ValidationError, RefResolutionError, validate
 from ruamel.yaml import YAML
 
@@ -85,8 +86,12 @@ class Loader:
                     self.error("Only .yml files are supported, found unsupported %s file.", path)
                     continue
                 with self.push(str(path.relative_to(self.path))):
-                    data = yaml.load(path.read_text())
-                    self.load(data, path)
+                    try:
+                        data = yaml.load(path.read_text())
+                    except ruamel.yaml.parser.ParserError as e:
+                        self.error("Error while parsing: %s", e)
+                    else:
+                        self.load(data, path)
 
         self.validate_model_refs()
 
@@ -96,8 +101,11 @@ class Loader:
         except (ValidationError, RefResolutionError) as e:
             self.error("Error while reading %s: %s" % (path.relative_to(self.path), e))
         else:
-            self.objects[data['type']][data['id']] = self.loaders[data['type']](data)
-            self.objects[data['type']][data['id']]['path'] = path
+            if data['id'] in self.objects[data['type']]:
+                self.error("%s is already defined in %s", data['id'], self.objects[data['type']][data['id']]['path'])
+            else:
+                self.objects[data['type']][data['id']] = self.loaders[data['type']](data)
+                self.objects[data['type']][data['id']]['path'] = path
 
     def load_dataset(self, data):
         dataset = {

@@ -1,0 +1,15 @@
+id: politika/rinkimai/europarlamento/kandidatas
+title: "Kandidatas rinkimuose į Europos Parlamentą"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  rinkimai:
+    type: ref
+    object: politika/rinkimai/europarlamento/rinkimai
+  asmuo:
+    type: ref
+    object: politika/rinkimai/asmuo
+  partija:
+    type: ref
+    object: politika/partija

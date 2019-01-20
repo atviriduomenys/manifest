@@ -1,0 +1,8 @@
+id: politika/rinkimai/apylinke
+title: "Rinkimų apylinkė"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  numeris: {type: integer}
+  pavadinimas: {type: string}

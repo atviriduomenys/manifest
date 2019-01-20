@@ -1,0 +1,10 @@
+id: politika/rinkimai/referendumai/klausimas
+title: "Referendumo klausimas"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  referendumas:
+    type: ref
+    object: politika/rinkimai/referendumai/referendumas
+  klausimas: {type: string}

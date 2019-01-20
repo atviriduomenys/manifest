@@ -1,0 +1,8 @@
+id: politika/rinkimai/europarlamento/rinkimai
+title: "Europos Parlamento rinkimai"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  data: {type: date}
+  pavadinimas: {type: string}

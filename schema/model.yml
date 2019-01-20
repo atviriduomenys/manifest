@@ -50,6 +50,9 @@ properties:
               # Realusis skaičius.
               - number
 
+              # true/false.
+              - boolean
+
               # Paveiksliuko failas dvejetainiu formatu.
               - image
 

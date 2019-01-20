@@ -1,0 +1,20 @@
+id: politika/rinkimai/referendumai/rezultatas
+title: "Referendumo rezultatai"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  referendumas:
+    type: ref
+    object: politika/rinkimai/referendumai/referendumas
+  apylinke:
+    type: ref
+    object: politika/rinkimai/apylinke
+  apygarda:
+    type: ref
+    object: politika/rinkimai/apygarda
+  klausimas:
+    type: ref
+    object: politika/rinkimai/referendumai/klausimas
+  ivyko: {type: boolean}
+  pritarta: {type: boolean}
