@@ -1,0 +1,8 @@
+id: politika/rinkimai/kandidatai/sutuoktinis
+title: "Kandidato sutuoktinis"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  vardas: {type: string}
+  pavarde: {type: string}

@@ -29,11 +29,12 @@ def test_flat_tables():
     pd.set_option('display.width', 200)
     pd.set_option('display.max_columns', 20)
     pd.set_option('display.max_rows', 1000)
+    pd.set_option('display.max_colwidth', 100)
 
     df = pd.DataFrame(table)
 
     print()
-    print(' Duomenių rinkinių sąrašas pagal prioritetą '.center(80, '-'))
+    print(' Duomenų rinkinių sąrašas pagal prioritetą '.center(80, '-'))
     tdf = df.copy()
     tdf['project'] = tdf['project'].fillna('')
     tdf['users'] = tdf['users'].fillna(0)
@@ -67,6 +68,12 @@ def test_flat_tables():
     print('Visi projekto duomenų laukai turi šaltinį!' if tdf.empty else tdf)
 
     print(' Projektai pagal brandos lygį '.center(80, '-'))
-    print(df.groupby('project').stars.mean().sort_index())
+    print(df.groupby('project').stars.mean().sort_values(ascending=False))
+
+    print(' Duomenų rinkiniai pagal brandos lygį '.center(80, '-'))
+    print(df.groupby('dataset').stars.mean().sort_values(ascending=False))
+
+    print(' Duomenų tiekėjai pagal brandos lygį '.center(80, '-'))
+    print(df.groupby('provider').stars.mean().sort_values(ascending=False))
 
     print('-' * 80)

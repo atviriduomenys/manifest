@@ -1,0 +1,15 @@
+id: politika/rinkimai/kandidatai/sarasas
+title: "Kandidatų sąrašas"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  rinkimai:
+    type: ref
+    object: politika/rinkimai
+  numeris: {type: integer, title: "Kandidatų sąrašo numeris"}
+  pavadinimas: {type: string}
+  kandidatai:
+    type: backref
+    object: politika/rinkimai/kandidatai/kandidatas
+    property: sarasas

@@ -1,0 +1,20 @@
+id: politika/rinkimai/kandidatai/interesas
+title: "Interesų deklaracija"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  asmuo:
+    type: generic
+    enum:
+      - politika/rinkimai/kandidatai/kandidatas
+      - politika/rinkimai/kandidatai/sutuoktinis
+  salis: {type: string}
+  rysys: {type: string, title: "Ryšys su juridiniu asmeniu"}
+  nuo: {type: date}
+  iki: {type: date}
+  juridinis_asmuo:
+    type: ref
+    object: teise/juridinis_asmuo
+    description: |
+      Juridinis asmuo su kuriuo kandidatas turi ryšį.

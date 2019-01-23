@@ -1,0 +1,8 @@
+id: politika/rinkimai/kandidatai/pareigos
+title: "Pareigos darbovietėje"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  darboviete: {type: string}
+  pareigos: {type: string}

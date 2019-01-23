@@ -1,0 +1,52 @@
+---
+id: gov/vrk/rinkejopuslapis.lt/kandidatai
+title: "Kandidatų sąrašai"
+type: dataset
+version: 1
+date: "2019-01-23"
+source: {html: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
+provider: gov/vrk
+stars: 2
+objects:
+  politika/rinkimai/apygarda:
+    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    properties:
+      numeris: {source: "Apygardos Nr. "}
+      pavadinimas: {source: "Apygardos pavadinimas"}
+  politika/rinkimai/kandidatai/kandidatas:
+    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    properties:
+      rinkimai: {stars: 1}
+      asmuo: {stars: 0}
+      partija: {stars: 1}
+      sarasas: {stars: 1}
+      kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
+      vardas: {source: "Kandidato vardas"}
+      pavarde: {source: "Kandidato pavardė"}
+      lytis: {source: "Kandidato lytis"}
+      ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
+      dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
+      dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
+      isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
+      isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
+      isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
+  politika/rinkimai:
+    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    properties:
+      pavadinimas: {source: "Rinkimai"}
+      data: {source: "Rinkimų data"}
+      rusis:
+        source:
+          - "Rinkimų rūšis"
+          - replace:
+              "Savivaldybių rinkimai": savivaldybių
+  politika/rinkimai/kandidatai/sarasas:
+    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    properties:
+      rinkimai: {stars: 1}
+      numeris: {source: "Kandidatų sąrašo Nr."}
+      pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
+  politika/partija:
+    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    properties:
+      pavadinimas: {source: "Kandidatą iškėlusi organizacija"}

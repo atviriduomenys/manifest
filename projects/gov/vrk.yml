@@ -1,0 +1,12 @@
+id: gov/vrk
+title: Vyriausioji Rinkimų Komisija
+type: project
+version: 1
+date: "2019-01-23"
+impact: []
+objects:
+  teise/juridinis_asmuo:
+    properties:
+      pavadinimas:
+      kodas:
+      veiklos_pobudis:

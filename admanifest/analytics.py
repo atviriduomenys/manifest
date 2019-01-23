@@ -32,7 +32,7 @@ def get_flat_projects_and_datasets(manifest):
                         'stars': dataset_prop['stars'],
                         'provider': dataset['provider'],
                     }
-                    datasets_used_in_projects.add(dataset['id'])
+                    datasets_used_in_projects.add((dataset['id'], obj_name, prop_name))
                 else:
                     dataset = {'id': None, 'stars': 0, 'provider': None}
 
@@ -46,10 +46,8 @@ def get_flat_projects_and_datasets(manifest):
                     'users': users,
                 }
 
-    # Add datasets not used in any project.
+    # Add dataset properties not used in any project.
     for dataset in manifest.objects['dataset'].values():
-        if dataset['id'] in datasets_used_in_projects:
-            continue
         for oname, tags in dataset.get('objects', {}).items():
             props = {}
             for tag, obj in tags.items():
@@ -60,14 +58,15 @@ def get_flat_projects_and_datasets(manifest):
                         }
                     props[pname]['stars'].append(prop['stars'])
             for pname, prop in props.items():
-                yield {
-                    'project': None,
-                    'object': oname,
-                    'property': pname,
-                    'dataset': dataset['id'],
-                    'provider': dataset['provider'],
-                    'stars': sum(prop['stars']) / len(prop['stars']),
-                    'users': None,
-                }
+                if (dataset['id'], oname, pname) not in datasets_used_in_projects:
+                    yield {
+                        'project': None,
+                        'object': oname,
+                        'property': pname,
+                        'dataset': dataset['id'],
+                        'provider': dataset['provider'],
+                        'stars': sum(prop['stars']) / len(prop['stars']),
+                        'users': None,
+                    }
 
     return table
