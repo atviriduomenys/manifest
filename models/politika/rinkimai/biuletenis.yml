@@ -1,8 +1,0 @@
-id: politika/rinkimai/biuletenis
-title: "Rinkimų biuletenis"
-type: model
-version: 1
-date: "2019-01-20"
-properties:
-  numeris: {type: string, title: "Biuletenio numeris"}
-  balsas:

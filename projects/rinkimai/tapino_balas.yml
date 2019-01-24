@@ -8,7 +8,7 @@ impact:
   # Just guessed numbers of impact.
   - {year: 2016, users: 1000, revenue: 0, employees: 0}
 objects:
-  politika/rinkimai/kandidatai/kandidatas:
+  politika/rinkimai/kandidatas:
     properties:
       rinkimai:
       asmuo:
@@ -33,13 +33,13 @@ objects:
       pajamos:
       mokesciai:
       interesai:
-  politika/rinkimai/kandidatai/kalba:
+  politika/rinkimai/kandidatas/kalba:
     properties:
       pavadinimas:
   politika/partija:
     properties:
       pavadinimas:
-  politika/rinkimai/kandidatai/issilavinimas:
+  politika/rinkimai/kandidatas/issilavinimas:
     properties:
       issilavinimas:
       mokymo_istaiga:
@@ -49,19 +49,19 @@ objects:
     properties:
       pavadinimas:
       salis:
-  politika/rinkimai/kandidatai/pareigos:
+  politika/rinkimai/kandidatas/pareigos:
     properties:
       darboviete:
       pareigos:
       nuo:
       iki:
-  politika/rinkimai/kandidatai/isrinktas:
+  politika/rinkimai/kandidatas/isrinktas:
     properties:
       institucija:
       pareigos:
       nuo:
       iki:
-  politika/rinkimai/kandidatai/interesas:
+  politika/rinkimai/kandidatas/interesas:
     properties:
       asmuo:
       salis:

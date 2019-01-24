@@ -1,4 +1,4 @@
-id: politika/rinkimai/kandidatai/kandidatas
+id: politika/rinkimai/kandidatas
 title: "Kandidatas rinkimuose"
 type: model
 version: 1
@@ -15,7 +15,7 @@ properties:
     object: politika/partija
   sarasas:
     type: ref
-    object: politika/rinkimai/kandidatai/sarasas
+    object: politika/rinkimai/kandidatas/sarasas
   kandidato_nr_sarase: {type: integer}
   vardas: {type: string}
   pavarde: {type: string}
@@ -37,7 +37,7 @@ properties:
   tautybe: {type: string}
   uzsienio_kalbos:
     type: backref
-    object: politika/rinkimai/kandidatai/kalba
+    object: politika/rinkimai/kandidatas/kalba
   mokslo_laipsnis:
     type: string
     enum:
@@ -46,20 +46,20 @@ properties:
       - daktaras
   issilavinimas:
     type: backref
-    object: politika/rinkimai/kandidatai/issilavinimas
+    object: politika/rinkimai/kandidatas/issilavinimas
   isrinktas:
     type: backref
-    object: politika/rinkimai/kandidatai/issilavinimas
+    object: politika/rinkimai/kandidatas/issilavinimas
     description: |
       Ar buvote anksčiau išrinktas į Lietuvos Respublikos Aukščiausiąją Tarybą,
       Seimą, savivaldybių tarybas; kitų Europos Sąjungos valstybių narių
       parlamentus, savivaldybių institucijas; Europos Parlamentą.
   pareigos:
     type: backref
-    object: politika/rinkimai/kandidatai/pareigos
+    object: politika/rinkimai/kandidatas/pareigos
   pomegiai:
     type: backref
-    object: politika/rinkimai/kandidatai/pomegis
+    object: politika/rinkimai/kandidatas/pomegis
   seiminine_padetis:
     type: string
     enum:
@@ -67,10 +67,10 @@ properties:
       - nevedes
   sutuoktinis:
     type: ref
-    object: politika/rinkimai/kandidatai/sutuoktinis
+    object: politika/rinkimai/kandidatas/sutuoktinis
   vaikai:
     type: backref
-    object: politika/rinkimai/kandidatai/vaikas
+    object: politika/rinkimai/kandidatas/vaikas
   biografija: {type: string}
   turtas:
     type: number
@@ -101,5 +101,5 @@ properties:
       GPM305 formos 27, 28, 30 laukelių suma.
   interesai:
     type: backref
-    object: politika/rinkimai/kandidatai/interesas
+    object: politika/rinkimai/kandidatas/interesas
   kita: {type: string}

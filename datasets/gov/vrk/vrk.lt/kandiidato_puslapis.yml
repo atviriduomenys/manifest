@@ -12,7 +12,7 @@ objects:
     properties:
       numeris: {source: "Apygardos Nr. "}
       pavadinimas: {source: "Apygardos pavadinimas"}
-  politika/rinkimai/kandidatai/kandidatas:
+  politika/rinkimai/kandidatas:
     properties:
       rinkimai:
       asmuo: {stars: 0}
@@ -45,36 +45,36 @@ objects:
       mokesciai:
       interesai:
       kita:
-  politika/rinkimai/kandidatai/issilavinimas:
+  politika/rinkimai/kandidatas/issilavinimas:
     properties:
       issilavinimas:
       mokymo_istaiga:
       specialybe:
       baigimo_metai:
-  politika/rinkimai/kandidatai/kalba:
+  politika/rinkimai/kandidatas/kalba:
     properties:
       pavadinimas:
-  politika/rinkimai/kandidatai/isrinktas:
+  politika/rinkimai/kandidatas/isrinktas:
     properties:
       institucija:
       pareigos:
       nuo:
       iki:
-  politika/rinkimai/kandidatai/pareigos:
+  politika/rinkimai/kandidatas/pareigos:
     properties:
       darboviete:
       pareigos:
-  politika/rinkimai/kandidatai/pomegis:
+  politika/rinkimai/kandidatas/pomegis:
     properties:
       pavadinimas:
-  politika/rinkimai/kandidatai/sutuoktinis:
+  politika/rinkimai/kandidatas/sutuoktinis:
     properties:
       vardas:
       pavarde:
-  politika/rinkimai/kandidatai/vaikas:
+  politika/rinkimai/kandidatas/vaikas:
     properties:
       vardas:
-  politika/rinkimai/kandidatai/interesas:
+  politika/rinkimai/kandidatas/interesas:
     properties:
       asmuo:
       salis:
@@ -92,7 +92,7 @@ objects:
       pavadinimas:
       data:
       rusis:
-  politika/rinkimai/kandidatai/sarasas:
+  politika/rinkimai/kandidatas/sarasas:
     properties:
       rinkimai:
       numeris:

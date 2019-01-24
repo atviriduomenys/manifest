@@ -1,4 +1,4 @@
-id: politika/rinkimai/kandidatai/sarasas
+id: politika/rinkimai/kandidatas/sarasas
 title: "Kandidatų sąrašas"
 type: model
 version: 1
@@ -11,5 +11,5 @@ properties:
   pavadinimas: {type: string}
   kandidatai:
     type: backref
-    object: politika/rinkimai/kandidatai/kandidatas
+    object: politika/rinkimai/kandidatas
     property: sarasas

@@ -8,5 +8,5 @@ properties:
   pavarde: {type: string}
   kandidatavo:
     type: backref
-    object: politika/rinkimai/kandidatai/kandidatas
+    object: politika/rinkimai/kandidatas
     property: asmuo

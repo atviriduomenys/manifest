@@ -1,4 +1,4 @@
-id: politika/rinkimai/referendumai/aktyvumas
+id: politika/rinkimai/referendumas/aktyvumas
 title: "Referendumo dalyvių aktyvumas"
 type: model
 version: 1
@@ -6,7 +6,7 @@ date: "2019-01-20"
 properties:
   referendumas:
     type: ref
-    object: politika/rinkimai/referendumai/referendumas
+    object: politika/rinkimai/referendumas
   apylinke:
     type: ref
     object: politika/rinkimai/apylinke
@@ -15,7 +15,7 @@ properties:
     object: politika/rinkimai/apygarda
   klausimas:
     type: ref
-    object: politika/rinkimai/referendumai/klausimas
+    object: politika/rinkimai/referendumas/klausimas
   pradžia: {type: date}
   pabaiga: {type: date}
   laikotarpis:

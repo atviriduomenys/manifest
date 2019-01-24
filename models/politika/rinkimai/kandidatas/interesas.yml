@@ -1,4 +1,4 @@
-id: politika/rinkimai/kandidatai/interesas
+id: politika/rinkimai/kandidatas/interesas
 title: "Interesų deklaracija"
 type: model
 version: 1
@@ -7,8 +7,8 @@ properties:
   asmuo:
     type: generic
     enum:
-      - politika/rinkimai/kandidatai/kandidatas
-      - politika/rinkimai/kandidatai/sutuoktinis
+      - politika/rinkimai/kandidatas
+      - politika/rinkimai/kandidatas/sutuoktinis
   salis:
     type: ref
     object: geografija/salis

@@ -1,10 +1,10 @@
-id: politika/rinkimai/kandidatai/isrinktas
-title: "Išrinktas rinkimų metu"
+id: politika/rinkimai/kandidatas/pareigos
+title: "Pareigos darbovietėje"
 type: model
 version: 1
 date: "2019-01-23"
 properties:
-  institucija:
+  darboviete:
     type: ref
     object: teise/juridinis_asmuo
   pareigos: {type: string}

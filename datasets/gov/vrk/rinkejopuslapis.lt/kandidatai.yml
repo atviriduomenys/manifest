@@ -13,7 +13,7 @@ objects:
     properties:
       numeris: {source: "Apygardos Nr. "}
       pavadinimas: {source: "Apygardos pavadinimas"}
-  politika/rinkimai/kandidatai/kandidatas:
+  politika/rinkimai/kandidatas:
     source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       rinkimai: {stars: 1}
@@ -40,7 +40,7 @@ objects:
           - "Rinkimų rūšis"
           - replace:
               "Savivaldybių rinkimai": savivaldybių
-  politika/rinkimai/kandidatai/sarasas:
+  politika/rinkimai/kandidatas/sarasas:
     source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       rinkimai: {stars: 1}

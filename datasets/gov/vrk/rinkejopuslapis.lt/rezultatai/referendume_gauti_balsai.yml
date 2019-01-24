@@ -32,12 +32,12 @@ objects:
     properties:
       numeris: {source: "Apylinkės Nr. "}
       pavadinimas: {source: "Apylinkės pavadinimas"}
-  politika/rinkimai/referendumai/referendumas:
+  politika/rinkimai/referendumas:
     source: {excel: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"}
     properties:
       data: {source: "Referendumo data"}
       pavadinimas: {source: "Referendumas"}
-  politika/rinkimai/referendumai/aktyvumas:
+  politika/rinkimai/referendumas/aktyvumas:
     source: {excel: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"}
     properties:
       referendumas: {stars: 1}
@@ -67,12 +67,12 @@ objects:
             - "Gauta balsų rinkimų dieną (Ne)"
             - "Gauta balsų iš anksto (Taip)"
             - "Gauta balsų iš anksto (Ne)"
-  politika/rinkimai/referendumai/klausimas:
+  politika/rinkimai/referendumas/klausimas:
     source: {excel: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"}
     properties:
       referendumas: {stars: 1}
       klausimas: {source: "Referendumo klausimas"}
-  politika/rinkimai/referendumai/rezultatas:
+  politika/rinkimai/referendumas/rezultatas:
     source: {excel: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"}
     properties:
       referendumas: {stars: 1}
