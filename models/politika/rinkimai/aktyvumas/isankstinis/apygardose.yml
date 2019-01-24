@@ -1,0 +1,15 @@
+id: politika/rinkimai/aktyvumas/isankstinis/apygardose
+title: "Rinkėjų aktyvumas balsuojant iš anksto apygardose"
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  turas: {type: ref, object: politika/rinkimai/turas}
+  apygarda: {type: ref, object: politika/rinkimai/apygarda}
+  rinkeju_skaicius: {type: integer}
+  balsavo_is_anksto: {type: integer}
+  balsavo_paste: {type: integer}
+  balsavo_namuose: {type: integer}
+  is_viso: {type: integer}
+  procentas: {type: number}
+  proc_rusiavimui: {type: number}

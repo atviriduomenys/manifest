@@ -1,0 +1,8 @@
+id: geografija/lietuva/savivaldybe
+title: "Lietuvos savivaldybė"
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  id: {type: pk}
+  pavadinimas: {type: string}

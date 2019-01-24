@@ -1,0 +1,14 @@
+id: politika/rinkimai/turas
+title: "Rinkimų turas"
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  id: {type: pk}
+  rinkimai:
+    type: ref
+    object: politika/rinkimai
+  pavadinimas: {type: string}
+  numeris: {type: integer, title: "Rinkimų turo numeris"}
+  data: {type: date, title: "Rinkimų turo data"}
+  einamieji: {type: boolean, title: "Šiuo metu vykstantys rinkimai"}

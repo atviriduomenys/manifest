@@ -56,8 +56,11 @@ properties:
               # Paveiksliuko failas dvejetainiu formatu.
               - image
 
-              # Data YYYY-MM-DD formatu.
+              # Data YYYY-mm-dd formatu.
               - date
+
+              # Data ir laikas YYYY-mm-ddTHH:MM:SS formatu.
+              - datetime
 
               # Pirminis raktas, identifikuojantis objektą.
               - pk
