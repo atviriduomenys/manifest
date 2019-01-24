@@ -4,7 +4,7 @@ type: dataset
 version: 1
 date: "2012-11-22"
 source: {html: "http://opendata.gov.lt/"}
-provider: gov/ivpk
+owner: gov/ivpk
 stars: 1
 objects:
   duomenys/rinkinys:

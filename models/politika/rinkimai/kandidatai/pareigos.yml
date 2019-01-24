@@ -4,5 +4,9 @@ type: model
 version: 1
 date: "2019-01-23"
 properties:
-  darboviete: {type: string}
+  darboviete:
+    type: ref
+    object: teise/juridinis_asmuo
   pareigos: {type: string}
+  nuo: {type: date}
+  iki: {type: date}

@@ -7,3 +7,6 @@ properties:
   pavadinimas: {type: string}
   kodas: {type: string, title: "Juridinio asmens kodas"}
   veiklos_pobudis: {type: string}
+  salis:
+    type: ref
+    object: geografija/salis

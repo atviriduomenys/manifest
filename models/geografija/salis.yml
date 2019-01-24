@@ -1,0 +1,17 @@
+id: geografija/salis
+title: "Šalis"
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  id: {type: pk}
+  pavadinimas:
+    type: string
+    title: "Pavadinimas"
+  trumpinys:
+    type: string
+    title: "Trumpinys"
+  priklauso:
+    type: backref
+    object: geografija/konfederacija
+    secondary: geografija/naryste

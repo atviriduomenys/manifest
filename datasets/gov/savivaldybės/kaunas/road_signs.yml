@@ -6,7 +6,7 @@ version: 1
 date: "2018-10-06"
 stars: 3
 source: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv"
-provider: gov/kaunas/municipality
+owner: gov/kaunas/municipality
 objects:
   road_sign:
     source: {csv: "Zenklai.csv"}

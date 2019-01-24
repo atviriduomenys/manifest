@@ -5,7 +5,7 @@ type: dataset
 version: 1
 date: "2019-01-23"
 source: {hint: "https://www.vrk.lt/statiniai/puslapiai/rinkimai/440_lt/Kandidatai/Kandidatas77601/Kandidato77601Anketa.html"}
-provider: gov/vrk
+owner: gov/vrk
 stars: 1
 objects:
   politika/rinkimai/apygarda:

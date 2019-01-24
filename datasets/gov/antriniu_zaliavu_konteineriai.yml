@@ -5,5 +5,5 @@ type: dataset
 version: 1
 date: "2018-10-06"
 source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv"}
-provider: gov/kaunas/kauno_svara
+owner: gov/kaunas/kauno_svara
 stars: 3

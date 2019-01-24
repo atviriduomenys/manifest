@@ -5,7 +5,7 @@ type: dataset
 version: 1
 date: "2019-01-20"
 source: {html: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
-provider: gov/vrk
+owner: gov/vrk
 # Nėra galimybės atsisūstu automatiškai, reikia failą siųstis rankiniu
 # būdu, per https://www.rinkejopuslapis.lt/ataskaitu-formavimas adresu
 # esančią ataskaitų formą.

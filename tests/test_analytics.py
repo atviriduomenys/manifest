@@ -61,7 +61,7 @@ def test_flat_tables():
 
     print(' Duomenų laukai be šaltinio '.center(80, '-'))
     tdf = (
-        df[df.provider.isnull()].groupby(['object', 'property', 'project']).agg({
+        df[df.owner.isnull()].groupby(['object', 'property', 'project']).agg({
             'users': 'first',
         }).sort_values('users', ascending=False)
     )
@@ -74,6 +74,6 @@ def test_flat_tables():
     print(df.groupby('dataset').stars.mean().sort_values(ascending=False))
 
     print(' Duomenų tiekėjai pagal brandos lygį '.center(80, '-'))
-    print(df.groupby('provider').stars.mean().sort_values(ascending=False))
+    print(df.groupby('owner').stars.mean().sort_values(ascending=False))
 
     print('-' * 80)

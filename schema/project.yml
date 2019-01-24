@@ -19,9 +19,19 @@ properties:
   title:
     type: string
     title: Project name
+  description:
+    type: string
+    title: Project description
+  url:
+    type: string
+    title: Project's website URL.
   type:
     enum:
       - project
+  owner:
+    type: string
+    title: "Project owner ID"
+    description: "Reference to project owner."
   version: {$ref: "#/definitions/version"}
   date: {type: string, format: date}
   impact:

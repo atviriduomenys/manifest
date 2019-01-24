@@ -1,14 +1,14 @@
 type: object
 title: Dataset
 description: >
-  Data resources from a single provider and same data set.
+  Data resources from a single owner and same data set.
 required:
   - id
   - type
   - version
   - date
   - title
-  - provider
+  - owner
 additionalProperties: false
 properties:
   id:
@@ -24,10 +24,10 @@ properties:
   description:
     type: string
     title: "Data source description"
-  provider:
+  owner:
     type: string
-    title: "Data provider ID"
-    description: "Reference to data provider."
+    title: "Dataset owner ID"
+    description: "Reference to data owner."
   stars: {$ref: "#/definitions/stars"}
   source: {$ref: "#/definitions/source"}
   opengovdata:

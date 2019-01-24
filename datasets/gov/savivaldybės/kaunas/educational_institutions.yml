@@ -7,7 +7,7 @@ version: 1
 date: "2018-10-04"
 stars: 3
 source: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master"
-provider: gov/kaunas/municipality
+owner: gov/kaunas/municipality
 objects:
   educational_institution:
     source: {csv: "Svietimo%20istaigos.csv"}

@@ -15,24 +15,24 @@ class ManifestFactory:
         self.loader = Loader(self.path)
         self.loader.load_schema(pathlib.Path('schema'))
         self.fixtures = {
-            'provider': {
+            'owner': {
                 'counter': ('p%d' % x for x in itertools.count(1)),
                 'depends': [],
                 'default': {
                     'id': 'p1',
-                    'type': 'provider',
-                    'title': 'Provider {id}'.format,
+                    'type': 'owner',
+                    'title': 'Owner {id}'.format,
                     'sector': 'public',
                 },
             },
             'dataset': {
                 'counter': ('d%d' % x for x in itertools.count(1)),
-                'depends': ['provider'],
+                'depends': ['owner'],
                 'default': {
                     'id': 'd1',
                     'type': 'dataset',
                     'title': 'Dataset {id}'.format,
-                    'provider': 'p1',
+                    'owner': 'p1',
                     'version': 1,
                     'date': '2018-01-01',
                 },
@@ -49,14 +49,14 @@ class ManifestFactory:
             },
             'object': {
                 'counter': ('o%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'dataset', 'project'],
+                'depends': ['owner', 'dataset', 'project'],
                 'default': {
                     'id': 'o1',
                 },
             },
             'field': {
                 'counter': ('f%d' % x for x in itertools.count(1)),
-                'depends': ['provider', 'dataset', 'project', 'object'],
+                'depends': ['owner', 'dataset', 'project', 'object'],
                 'default': {
                     'id': 'f1',
                 },

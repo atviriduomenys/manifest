@@ -18,7 +18,7 @@ class Loader:
         self.path = path
         self.objects = {
             'model': {},
-            'provider': {},
+            'owner': {},
             'dataset': {},
             'project': {},
         }
@@ -27,7 +27,7 @@ class Loader:
         self.loaders = {
             'model': self.load_model,
             'dataset': self.load_dataset,
-            'provider': self.load_provider,
+            'owner': self.load_owner,
             'project': self.load_project,
         }
         self.stack = []
@@ -78,7 +78,7 @@ class Loader:
             raise Exception(self.errors[-1])
 
     def load_yaml_files(self):
-        for name in ['models', 'providers', 'datasets', 'projects']:
+        for name in ['models', 'owners', 'datasets', 'projects']:
             for path in self.path.glob('%s/**/*' % name):
                 if not path.is_file():
                     continue
@@ -113,7 +113,7 @@ class Loader:
             'title': data['title'],
             'description': data.get('description', ''),
             'type': data['type'],
-            'provider': data['provider'],
+            'owner': data['owner'],
             'version': data.get('version', 1),
             'date': self.call('date', self._parse_date, data['date']),
             'stars': data.get('stars'),
@@ -199,11 +199,23 @@ class Loader:
     def load_model(self, data):
         return data
 
-    def load_provider(self, data):
+    def load_owner(self, data):
         return data
 
     def load_project(self, data):
-        return data
+        return {
+            'id': data['id'],
+            'title': data['type'],
+            'description': data.get('description', ''),
+            'url': data.get('url', ''),
+            'type': data['type'],
+            'owner': data.get('owner'),
+            'version': data.get('version', 1),
+            'date': self.call('date', self._parse_date, data['date']),
+            'impact': data.get('impact', []),
+            'source_code': data.get('source_code'),
+            'objects': data.get('objects', {}),
+        }
 
     def validate(self, data: dict):
         if not isinstance(data, dict):
@@ -229,8 +241,8 @@ class Loader:
         if data['type'] == 'project':
             self.validate_project_refs(data)
 
-        if data['type'] == 'provider':
-            self.validate_media_path('providers', data['id'], data.get('logo'))
+        if data['type'] == 'owner':
+            self.validate_media_path('owners', data['id'], data.get('logo'))
 
     def validate_model_ref(self, oname, prop_name, ref_by, ref_in=None):
         ref_in = ref_in or {}
@@ -301,8 +313,8 @@ class Loader:
                     self.validate_dataset_ref(oname, pname, (prop or {}).get('source'))
 
     def validate_source_refs(self, data):
-        with self.push('provider'):
-            self.validate_provider_ref(data.get('provider'))
+        with self.push('owner'):
+            self.validate_owner_ref(data.get('owner'))
         with self.push('source'):
             self.validate_source_uri(data.get('source'))
         for oname, obj in data.get('objects', {}).items():
@@ -353,12 +365,12 @@ class Loader:
             self.error("Unknown dataset %s property name, referenced in %s.%s.", dataset, oname, pname)
             return
 
-    def validate_provider_ref(self, provider):
-        if provider is None:
+    def validate_owner_ref(self, owner):
+        if owner is None:
             return
 
-        if provider not in self.objects['provider']:
-            self.error("Unknown provider %s id.", provider)
+        if owner not in self.objects['owner']:
+            self.error("Unknown owner %s id.", owner)
 
     def validate_media_path(self, type, id, name):
         if name is None:

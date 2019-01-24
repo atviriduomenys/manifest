@@ -45,16 +45,16 @@ YAML_ files are organized into this structure::
 
   models/
     <object>.yml
-  providers/
-    <provider>.yml
+  owners/
+    <owner>.yml
   datasets/
-    <provider>/
+    <owner>/
       <dataset>.yml
   projects/
     <project>.yml
   media/
-    providers/
-      <provider>/
+    owners/
+      <owner>/
         logo.png
     projects/
       <project>/
@@ -181,7 +181,7 @@ example how this could be done:
   verson: 1
   date: "2019-01-06"
   source: {html: "https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"}
-  provider: gov/lrs
+  owner: gov/lrs
   objects:
     seimo_narys:
       source:
@@ -204,18 +204,18 @@ by using descriptions provided in `source` fields, data can be extracted in a
 fully automated way. Well at least the simple cases. In addition this detailed
 source description can be used to validate if source data are really there.
 
-`gov/lrs` parameter points to another YAML file where provider is defined. Here
+`gov/lrs` parameter points to another YAML file where owner is defined. Here
 is how this file looks:
 
 .. code-block:: yaml
 
-  # providers/gov/lrs.yml
+  # owners/gov/lrs.yml
   id: gov/lrs
   title: "Lietuvos Respublikos Seimas"
-  type: provider
+  type: owner
   logo: logo.png
 
-`logo` property here points to `media/providers/gov/lrs/logo.png` file.
+`logo` property here points to `media/owners/gov/lrs/logo.png` file.
 
 
 I don't know how to create a pull request
@@ -502,7 +502,7 @@ represent current and first version. For example:
   type: dataset
   version: 1
   date: "2019-01-06"
-  provider: gov/lrs
+  owner: gov/lrs
   objects:
     politika/seimas/seimo_narys:
       source:
@@ -526,7 +526,7 @@ update the first version, since first version is also a current version:
   type: dataset
   version: 1
   date: "2019-01-06"
-  provider: gov/lrs
+  owner: gov/lrs
   objects:
     politika/seimas/seimo_narys:
       source:

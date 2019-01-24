@@ -49,7 +49,7 @@ def test_date_validation(manifest):
             date: "01.01"
             stars: 3
             title: LRS
-            provider: gov/lrs
+            owner: gov/lrs
             objects:
                 object:
                     properties:
@@ -79,7 +79,7 @@ def test_stars_validation_error(manifest):
             version: 1
             date: "2018-01-01"
             title: LRS
-            provider: gov/lrs
+            owner: gov/lrs
             objects:
                 object:
                     properties:
@@ -111,7 +111,7 @@ def test_stars_inheritance(manifest):
             version: 1
             date: "2018-01-01"
             stars: 3
-            provider: gov/lrs
+            owner: gov/lrs
             objects:
                 object:
                     properties:
@@ -142,7 +142,7 @@ def test_stars_inheritance_2(manifest):
             version: 1
             date: "2018-01-01"
             title: LRS
-            provider: gov/lrs
+            owner: gov/lrs
             objects:
                 object:
                     properties:

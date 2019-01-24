@@ -5,7 +5,7 @@ type: dataset
 version: 1
 date: "2019-01-23"
 source: {html: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
-provider: gov/vrk
+owner: gov/vrk
 stars: 2
 objects:
   politika/rinkimai/apygarda:

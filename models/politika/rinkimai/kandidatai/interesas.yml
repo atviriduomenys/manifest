@@ -9,7 +9,9 @@ properties:
     enum:
       - politika/rinkimai/kandidatai/kandidatas
       - politika/rinkimai/kandidatai/sutuoktinis
-  salis: {type: string}
+  salis:
+    type: ref
+    object: geografija/salis
   rysys: {type: string, title: "Ryšys su juridiniu asmeniu"}
   nuo: {type: date}
   iki: {type: date}
