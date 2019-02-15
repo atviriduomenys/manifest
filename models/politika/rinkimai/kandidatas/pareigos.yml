@@ -1,9 +1,10 @@
-id: politika/rinkimai/kandidatas/pareigos
+name: politika/rinkimai/kandidatas/pareigos
 title: "Pareigos darbovietėje"
 type: model
 version: 1
 date: "2019-01-23"
 properties:
+  id: {type: pk}
   darboviete:
     type: ref
     object: teise/juridinis_asmuo

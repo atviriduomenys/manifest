@@ -1,4 +1,4 @@
-id: politika/seimas/kadencija
+name: politika/seimas/kadencija
 title: "Seimo kadencija"
 type: model
 version: 1

@@ -1,9 +1,10 @@
-id: politika/rinkimai/biuletenis/referendumas
+name: politika/rinkimai/biuletenis/referendumas
 title: "Referendumo biuletenis"
 type: model
 version: 1
 date: "2019-01-20"
 properties:
+  id: {type: pk}
   numeris: {type: string, title: "Biuletenio numeris"}
   balsas:
     type: ref

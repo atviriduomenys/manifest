@@ -1,9 +1,10 @@
-id: politika/rinkimai/europarlamento/rezultatas
+name: politika/rinkimai/europarlamento/rezultatas
 title: "Europos Parlamento rinkimų rezultatai"
 type: model
 version: 1
 date: "2019-01-20"
 properties:
+  id: {type: pk}
   rinkimai:
     type: ref
     object: politika/rinkimai/europarlamento/rinkimai

@@ -34,7 +34,7 @@ def test_id_is_required(manifest):
 def test_date_validation(manifest):
     result = manifest({
         'models/object.yml': '''\
-            id: "object"
+            name: "object"
             type: "model"
             version: 1
             date: "2019-01-06"
@@ -43,7 +43,7 @@ def test_date_validation(manifest):
                     type: "string"
         ''',
         'datasets/gov/lrs.yml': '''\
-            id: gov/lrs
+            name: gov/lrs
             type: dataset
             version: 1
             date: "01.01"
@@ -65,7 +65,7 @@ def test_date_validation(manifest):
 def test_stars_validation_error(manifest):
     result = manifest({
         'models/object.yml': '''\
-            id: "object"
+            name: "object"
             type: "model"
             version: 1
             date: "2019-01-06"
@@ -74,7 +74,7 @@ def test_stars_validation_error(manifest):
                     type: "string"
         ''',
         'datasets/gov/lrs.yml': '''\
-            id: gov/lrs
+            name: gov/lrs
             type: dataset
             version: 1
             date: "2018-01-01"
@@ -96,7 +96,7 @@ def test_stars_validation_error(manifest):
 def test_stars_inheritance(manifest):
     result = manifest({
         'models/object.yml': '''\
-            id: "object"
+            name: "object"
             type: "model"
             version: 1
             date: "2019-01-06"
@@ -105,7 +105,7 @@ def test_stars_inheritance(manifest):
                     type: "string"
         ''',
         'datasets/gov/lrs.yml': '''\
-            id: gov/lrs
+            name: gov/lrs
             type: dataset
             title: LRS
             version: 1
@@ -128,7 +128,7 @@ def test_stars_inheritance(manifest):
 def test_stars_inheritance_2(manifest):
     result = manifest({
         'models/object.yml': '''\
-            id: "object"
+            name: "object"
             type: "model"
             version: 1
             date: "2018-01-01"
@@ -137,7 +137,7 @@ def test_stars_inheritance_2(manifest):
                     type: "string"
         ''',
         'datasets/gov/lrs.yml': '''\
-            id: gov/lrs
+            name: gov/lrs
             type: dataset
             version: 1
             date: "2018-01-01"

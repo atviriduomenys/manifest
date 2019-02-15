@@ -19,7 +19,7 @@ class ManifestFactory:
                 'counter': ('p%d' % x for x in itertools.count(1)),
                 'depends': [],
                 'default': {
-                    'id': 'p1',
+                    'name': 'p1',
                     'type': 'owner',
                     'title': 'Owner {id}'.format,
                     'sector': 'public',
@@ -29,7 +29,7 @@ class ManifestFactory:
                 'counter': ('d%d' % x for x in itertools.count(1)),
                 'depends': ['owner'],
                 'default': {
-                    'id': 'd1',
+                    'name': 'd1',
                     'type': 'dataset',
                     'title': 'Dataset {id}'.format,
                     'owner': 'p1',
@@ -41,7 +41,7 @@ class ManifestFactory:
                 'counter': ('r%d' % x for x in itertools.count(1)),
                 'depends': [],
                 'default': {
-                    'id': 'r1',
+                    'name': 'r1',
                     'type': 'project',
                     'version': 1,
                     'date': '2018-01-01',

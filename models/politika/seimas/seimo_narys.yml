@@ -1,4 +1,4 @@
-id: politika/seimas/seimo_narys
+name: politika/seimas/seimo_narys
 title: "Seimo narys"
 description: ""
 type: model

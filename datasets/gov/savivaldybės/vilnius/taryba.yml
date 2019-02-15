@@ -1,5 +1,5 @@
 ---
-id: gov/savivaldybės/vilnius/taryba
+name: gov/savivaldybės/vilnius/taryba
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: dataset

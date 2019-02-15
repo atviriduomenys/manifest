@@ -67,7 +67,7 @@ Here is an example, how a project could request the data:
 
   # projects/manopozicija.lt.yml
   ---
-  id: "projects/manopozicija.lt"
+  name: "projects/manopozicija.lt"
   title: "ManoPozicija.lt"
   type: "project"
   verson: 1
@@ -103,7 +103,7 @@ Here is example how model file looks:
 
   # models/seimo_narys.yml
   ---
-  id: seimo_narys
+  name: seimo_narys
   title: "Member of Parliament"
   type: model
   verson: 1
@@ -129,7 +129,7 @@ one base object. For example:
 .. code-block:: yaml
 
   ---
-  id: gov/lrs/ad
+  name: gov/lrs/ad
   type: dataset
   verson: 1
   date: 2019-01-06
@@ -174,7 +174,7 @@ example how this could be done:
 .. code-block:: yaml
 
   # datasets/gov/lrs/ad.yml
-  id: gov/lrs/ad
+  name: gov/lrs/ad
   title: "Members of Parliament (XML)"
   description: "XML file containing data about members of parliament."
   type: dataset
@@ -210,7 +210,7 @@ is how this file looks:
 .. code-block:: yaml
 
   # owners/gov/lrs.yml
-  id: gov/lrs
+  name: gov/lrs
   title: "Lietuvos Respublikos Seimas"
   type: owner
   logo: logo.png
@@ -312,7 +312,7 @@ JSON source
 .. code-block:: yaml
 
   ---
-  id: "com/example/items"
+  name: "com/example/items"
   source: {json: "https://example.com/items.json"}
   objects:
     object:
@@ -321,7 +321,7 @@ JSON source
         id:
           source: "id"
   ---
-  id: "com/example/item"
+  name: "com/example/item"
   source: {json: "https://example.com/items/{com/example/items/object/id}.json"}
   objects:
     object:
@@ -411,7 +411,7 @@ You can specify foreign key relations using `ref` type:
 
 .. code-block:: yaml
 
-  id: politika/seimas/kontaktai
+  name: politika/seimas/kontaktai
   type: model
   properties:
     id: {type: pk}
@@ -430,7 +430,7 @@ referring to this one. Here is an example:
 
 .. code-block:: yaml
 
-  id: politika/seimas/seimo_narys
+  name: politika/seimas/seimo_narys
   type: model
   properties:
     id:
@@ -457,7 +457,7 @@ In models you define it like this:
 
 .. code-block:: yaml
 
-   id: politika/seimas/pareigos
+   name: politika/seimas/pareigos
    type: model
    properties:
       grupė:
@@ -473,7 +473,7 @@ types. Under the hood data is stored using two virtual properties `id` and
 
 .. code-block:: yaml
 
-   id: gov/lrs/ad
+   name: gov/lrs/ad
    type: dataset
    objects:
       politika/seimas/pareigos:
@@ -497,7 +497,7 @@ represent current and first version. For example:
 .. code-block:: yaml
 
   ---
-  id: gov/lrs/ad
+  name: gov/lrs/ad
   title: "Members of Parliament (XML)"
   type: dataset
   version: 1
@@ -521,7 +521,7 @@ update the first version, since first version is also a current version:
 .. code-block:: yaml
 
   ---
-  id: gov/lrs/ad
+  name: gov/lrs/ad
   title: "Members of Parliament (XML)"
   type: dataset
   version: 1

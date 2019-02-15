@@ -1,4 +1,4 @@
-id: duomenys/kontaktas
+name: duomenys/kontaktas
 title: "Duomenų tiekėjo kontaktinis asmuo"
 type: model
 version: 1

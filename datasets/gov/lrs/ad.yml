@@ -1,5 +1,5 @@
 ---
-id: gov/lrs/ad
+name: gov/lrs/ad
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: dataset
@@ -18,13 +18,10 @@ objects:
         source: "@asmens_id"
       asmens_id: 
         local: true
-        type: string
         source: "@asmens_id"
       vardas:
-        type: string
         source: "@vardas"
       pavardė:
-        type: string
         source: "@pavardė"
       gimimo_data:
         source: "@biografijos_nuoroda"
@@ -67,9 +64,7 @@ objects:
     properties:
       id: {stars: 0}
       kadencija: {source: "../@kadencijos_id"}
-      seimo_narys:
-        identifier:
-          - source: "@asmens_id"
+      seimo_narys: {source: "@asmens_id"}
       kas_iškėlė: {source: "@iškėlusi_partija", stars: 1}
       nuo: {source: "@data_nuo"}
       iki: {source: "@data_iki"}

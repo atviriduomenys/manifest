@@ -1,9 +1,10 @@
-id: politika/rinkimai/kandidatas/interesas
+name: politika/rinkimai/kandidatas/interesas
 title: "Interesų deklaracija"
 type: model
 version: 1
 date: "2019-01-23"
 properties:
+  id: {type: pk}
   asmuo:
     type: generic
     enum:

@@ -1,9 +1,10 @@
-id: politika/rinkimai/biuletenis/daugiamandatis
+name: politika/rinkimai/biuletenis/daugiamandatis
 title: "Referendumo biuletenis"
 type: model
 version: 1
 date: "2019-01-20"
 properties:
+  id: {type: pk}
   numeris: {type: string, title: "Biuletenio numeris"}
   partija:
     type: ref

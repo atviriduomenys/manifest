@@ -1,4 +1,4 @@
-id: politika/rinkimai/apylinke
+name: politika/rinkimai/apylinke
 title: "Rinkimų apylinkė"
 type: model
 version: 1
@@ -8,5 +8,5 @@ properties:
   numeris: {type: integer}
   pavadinimas: {type: string}
   adresas: {type: ref, object: geografija/lietuva/adresas}
-  telefonas: {type: string, secondary: true}
-  el_pastas: {type: string, secondary: true}
+  telefonas: {type: string}
+  el_pastas: {type: string}

@@ -1,4 +1,4 @@
-id: politika/rinkimai/apygarda
+name: politika/rinkimai/apygarda
 title: "Rinkimų apygarda"
 type: model
 version: 1
@@ -12,6 +12,6 @@ properties:
   numeris: {type: integer}
   pavadinimas: {type: string}
   adresas: {type: ref, object: geografija/lietuva/adresas}
-  telefonas: {type: string, secondary: true}
-  el_pastas: {type: string, secondary: true}
+  telefonas: {type: string}
+  el_pastas: {type: string}
   uzsienio: {type: boolean}

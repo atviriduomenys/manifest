@@ -1,12 +1,9 @@
+dist: xenial
 language: python
-python:
-  - "3.6"
-env:
-  - PATH=$HOME/.poetry/bin:$PATH
-before_install:
-  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+python: 3.7
+
 install:
-  - poetry install
+  - pip install -r requirements-dev.txt -e .
+
 script:
-  - poetry run py.test -vvra --tb=native --cov-report=term-missing --cov=admanifest tests
-  - poetry run admanifest-check
+  - spinta check

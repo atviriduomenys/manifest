@@ -1,4 +1,4 @@
-id: politika/seimas/grupė
+name: politika/seimas/grupė
 title: "Seimo grupė"
 type: model
 version: 1

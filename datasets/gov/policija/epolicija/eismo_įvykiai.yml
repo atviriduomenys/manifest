@@ -1,5 +1,5 @@
 ---
-id: gov/policija/epolicija/eismo_įvykiai
+name: gov/policija/epolicija/eismo_įvykiai
 title: "Eismo įvykių duomenys"
 type: dataset
 version: 1

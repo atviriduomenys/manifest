@@ -1,0 +1,2 @@
+jsonschema
+-e git+https://github.com/atviriduomenys/spinta.git#egg=spinta

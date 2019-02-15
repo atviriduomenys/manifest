@@ -1,9 +1,10 @@
-id: politika/rinkimai/aktyvumas/isankstinis/apygardose
+name: politika/rinkimai/aktyvumas/isankstinis/apygardose
 title: "Rinkėjų aktyvumas balsuojant iš anksto apygardose"
 type: model
 version: 1
 date: "2019-01-24"
 properties:
+  id: {type: pk}
   turas: {type: ref, object: politika/rinkimai/turas}
   apygarda: {type: ref, object: politika/rinkimai/apygarda}
   rinkeju_skaicius: {type: integer}

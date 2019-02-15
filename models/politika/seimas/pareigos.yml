@@ -1,4 +1,4 @@
-id: politika/seimas/pareigos
+name: politika/seimas/pareigos
 title: "Seimo nario pareigos"
 type: model
 version: 1

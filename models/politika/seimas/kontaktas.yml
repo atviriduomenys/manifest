@@ -1,4 +1,4 @@
-id: politika/seimas/kontaktas
+name: politika/seimas/kontaktas
 title: "Seimo nario kontaktinė informacija"
 type: model
 version: 1

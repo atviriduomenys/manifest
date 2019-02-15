@@ -1,8 +1,9 @@
-id: politika/rinkimai/kandidatas/sutuoktinis
+name: politika/rinkimai/kandidatas/sutuoktinis
 title: "Kandidato sutuoktinis"
 type: model
 version: 1
 date: "2019-01-23"
 properties:
+  id: {type: pk}
   vardas: {type: string}
   pavarde: {type: string}

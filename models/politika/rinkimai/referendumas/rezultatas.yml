@@ -1,9 +1,10 @@
-id: politika/rinkimai/referendumas/rezultatas
+name: politika/rinkimai/referendumas/rezultatas
 title: "Referendumo rezultatai"
 type: model
 version: 1
 date: "2019-01-20"
 properties:
+  id: {type: pk}
   referendumas:
     type: ref
     object: politika/rinkimai/referendumas

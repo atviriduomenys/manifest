@@ -1,18 +1,27 @@
-PYVER = $(shell poetry run python -c "import sys; print(*sys.version_info[:2], sep='.')")
-VENVS = $(shell poetry config settings.virtualenvs.path | tr -d '"')
-VENV = $(VENVS)/open-data-manifest-py$(PYVER)
-
 .PHONY: env
-env: $(VENV)/done
+env: env/.done requirements.txt
 
-.PHONY: check
-check: env
-	poetry run admanifest-check
+env/bin/pip:
+	python3.7 -m venv env
+	env/bin/pip install --upgrade pip wheel setuptools
+
+env/.done: env/bin/pip setup.py requirements-dev.txt
+	env/bin/pip install -r requirements-dev.txt -e .
+	touch env/.done
+
+env/bin/pip-compile: env/bin/pip
+	env/bin/pip install pip-tools
+
+requirements-dev.txt: env/bin/pip-compile requirements.in requirements-dev.in
+	env/bin/pip-compile --no-index requirements.in requirements-dev.in -o requirements-dev.txt
+
+requirements.txt: env/bin/pip-compile requirements.in
+	env/bin/pip-compile --no-index requirements.in -o requirements.txt
 
 .PHONY: test
 test: env
-	poetry run py.test -vvxra --tb=native tests
+	env/bin/py.test -vvxra --tb=native --cov=adman --cov-report=term-missing tests
 
-$(VENV)/done: pyproject.toml
-	poetry install
-	touch $(VENV)/done
+.PHONY: dist
+dist: env/bin/pip
+	env/bin/python setup.py sdist bdist_wheel

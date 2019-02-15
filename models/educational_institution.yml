@@ -1,5 +1,5 @@
 ---
-id: educational_institution
+name: educational_institution
 type: model
 version: 1
 date: "2019-01-06"

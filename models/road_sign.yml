@@ -1,5 +1,5 @@
 ---
-id: road_sign
+name: road_sign
 type: model
 version: 1
 date: "2019-01-06"
@@ -13,7 +13,7 @@ properties:
   sign_id: 
     type: integer
     title: Ženklo ID
-  type: 
+  road_sign_type: 
     type: string
     title: Tipas
   sign_text: 
