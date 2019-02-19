@@ -38,14 +38,11 @@ objects:
     source:
       - xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
       - "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
+    identity:
+      - seimo_narys
+      - rūšis
+      - reikšmė
     properties:
-      id:
-        source:
-          all:
-            - "../@asmens_id"
-            - "@rūšis"
-            - "@reikšmė"
-        stars: 1
       seimo_narys:
         source: "../@asmens_id"
       rūšis:

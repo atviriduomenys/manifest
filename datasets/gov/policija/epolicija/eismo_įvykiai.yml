@@ -11,7 +11,7 @@ objects:
     local: true
     stars: 2
     source:
-      all:
+      chain:
         # 2013 m.
         - xls: "https://www.epolicija.lt/c/document_library/get_file?uuid=8c466021-bdac-4f0a-a437-8fe4bf7a5181&groupId=10156"
         # 2014 m.

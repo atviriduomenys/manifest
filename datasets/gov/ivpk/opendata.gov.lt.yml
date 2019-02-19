@@ -20,10 +20,6 @@ objects:
       kontaktai: {source: {hint: "Kontaktiniai duomenys"}}
       vietovės: {stars: 0}
       laikotarpiai:
-        source:
-          all:
-            - {hint: "Rinkmenos pradžios data"}
-            - {hint: "Rinkmenos pabaigos data"}
       dažnumas: {source: {hint: "Atnaujinimo dažnumas"}}
       tiekėjas: {source: {hint: "Rinkmenos tvarkytojas"}}
   duomenys/raktažodis:

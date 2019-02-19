@@ -9,12 +9,12 @@ owner: gov/vrk
 stars: 2
 objects:
   politika/rinkimai/apygarda:
-    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       numeris: {source: "Apygardos Nr. "}
       pavadinimas: {source: "Apygardos pavadinimas"}
   politika/rinkimai/kandidatas:
-    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       rinkimai: {stars: 1}
       asmuo: {stars: 0}
@@ -31,7 +31,7 @@ objects:
       isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
       isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
   politika/rinkimai:
-    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       pavadinimas: {source: "Rinkimai"}
       data: {source: "Rinkimų data"}
@@ -41,12 +41,12 @@ objects:
           - replace:
               "Savivaldybių rinkimai": savivaldybių
   politika/rinkimai/kandidatas/sarasas:
-    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       rinkimai: {stars: 1}
       numeris: {source: "Kandidatų sąrašo Nr."}
       pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
   politika/partija:
-    source: {excel: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
     properties:
       pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
