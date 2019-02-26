@@ -4,7 +4,7 @@ title: "Kandidatų sąrašai"
 type: dataset
 version: 1
 date: "2019-01-23"
-source: {html: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
+source: {url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
 owner: gov/vrk
 stars: 2
 objects:

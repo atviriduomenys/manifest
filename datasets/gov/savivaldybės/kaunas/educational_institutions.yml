@@ -6,11 +6,10 @@ type: dataset
 version: 1
 date: "2018-10-04"
 stars: 3
-source: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master"
 owner: gov/kaunas/municipality
 objects:
   educational_institution:
-    source: {csv: "Svietimo%20istaigos.csv"}
+    source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/Svietimo%20istaigos.csv"}
     properties:
       name:
       id:

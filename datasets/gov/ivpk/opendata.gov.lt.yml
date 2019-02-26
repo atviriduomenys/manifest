@@ -23,12 +23,12 @@ objects:
       dažnumas: {source: {hint: "Atnaujinimo dažnumas"}}
       tiekėjas: {source: {hint: "Rinkmenos tvarkytojas"}}
   duomenys/raktažodis:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
       id: {stars: 0}
       pavadinimas: {source: {hint: "Reikšminiai žodžiai"}}
   duomenys/kontaktas:
-    source: "html:http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
     properties:
       id: {stars: 0}
       vardas: {source: {hint: "Kontaktiniai duomenys"}}

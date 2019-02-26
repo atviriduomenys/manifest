@@ -11,8 +11,9 @@ stars: 2
 objects:
   politika/seimas/seimo_narys:
     source:
-      - xml: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
-      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      xml:
+        url: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
+        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
       id: 
         source: "@asmens_id"
@@ -36,8 +37,9 @@ objects:
         stars: 1
   politika/seimas/kontaktas:
     source:
-      - xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-      - "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
     identity:
       - seimo_narys
       - rūšis
@@ -46,18 +48,18 @@ objects:
       seimo_narys:
         source: "../@asmens_id"
       rūšis:
-        source:
-          - "@rūšis"
-          - replace:
-              "El. p.": email
-              "Darbo telefonas": phone
-              "Asmeninė interneto svetainė": website
+        source: "@rūšis"
+        replace:
+          "El. p.": email
+          "Darbo telefonas": phone
+          "Asmeninė interneto svetainė": website
       reikšmė:
         source: "@reikšmė"
   politika/seimas/mandatas:
     source:
-      - xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
       id: {stars: 0}
       kadencija: {source: "../@kadencijos_id"}
@@ -67,8 +69,9 @@ objects:
       iki: {source: "@data_iki"}
   politika/seimas/kadencija:
     source:
-      - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_kadencijos"}
-      - "/SeimoInformacija/SeimoKadencija"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_kadencijos"
+        items: "/SeimoInformacija/SeimoKadencija"
     properties:
       id: {source: "@kadencijos_id"}
       pavadinimas: {source: "@pavadinimas"}
@@ -76,8 +79,9 @@ objects:
       iki: {source: "@data_iki"}
   politika/partija:
     source:
-      - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
-      - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
       id:
         stars: 0
@@ -88,8 +92,9 @@ objects:
         stars: 1
   politika/seimas/frakcija:
     source:
-      - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"}
-      - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija"
     properties:
       id:
         source: "@padalinio_id"
@@ -101,8 +106,9 @@ objects:
         source: "../@kadencijos_id"
   politika/seimas/pareigos:frakcija:
     source:
-      - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"}
-      - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
     properties:
       grupė:object:
         const: politika/seimas/frakcija
@@ -118,8 +124,9 @@ objects:
         stars: 0
   politika/seimas/pareigos:komitetas:
     source:
-      - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"}
-      - "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
+      xml:
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"
+        items: "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
     properties:
       grupė:object:
         const: politika/seimas/grupė
