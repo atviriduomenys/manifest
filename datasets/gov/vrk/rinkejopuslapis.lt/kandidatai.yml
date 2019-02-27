@@ -9,13 +9,19 @@ owner: gov/vrk
 stars: 2
 objects:
   politika/rinkimai/apygarda:
-    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: &kandidatai
+      xlsx:
+        # 2018 m. rugsėjo 16 d. nauji rinkimai į Lietuvos Respublikos Seimą vienmandatėje Zanavykų rinkimų apygardoje Nr. 64
+        url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas?p_p_id=allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=downloadElectionReport&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&type=XLSX&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_reportCode=LIST_OF_CANDIDATES&select-r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionId=1064&select-r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationName=&select-r16gender=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16gender=&select-r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16sorting="
+        skip: 5
     properties:
-      numeris: {source: "Apygardos Nr. "}
+      id: {source: "Apygardos Nr."}
+      numeris: {source: "Apygardos Nr."}
       pavadinimas: {source: "Apygardos pavadinimas"}
   politika/rinkimai/kandidatas:
-    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: *kandidatai
     properties:
+      id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
       rinkimai: {stars: 1}
       asmuo: {stars: 0}
       partija: {stars: 1}
@@ -31,22 +37,25 @@ objects:
       isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
       isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
   politika/rinkimai:
-    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: *kandidatai
     properties:
+      id: {source: ["Rinkimai", "Rinkimų rūšis", "Rinkimų data"]}
       pavadinimas: {source: "Rinkimai"}
       data: {source: "Rinkimų data"}
       rusis:
-        source:
-          - "Rinkimų rūšis"
-          - replace:
-              "Savivaldybių rinkimai": savivaldybių
+        source: "Rinkimų rūšis"
+        replace:
+            "Seimo rinkimai": seimo
+            "Savivaldybių rinkimai": savivaldybių
   politika/rinkimai/kandidatas/sarasas:
-    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: *kandidatai
     properties:
+      id: {source: ["Kandidatų sąrašo pavadinimas"]}
       rinkimai: {stars: 1}
       numeris: {source: "Kandidatų sąrašo Nr."}
       pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
   politika/partija:
-    source: {xlsx: "Kandidatų sąrašai (2015 m. kovo 1 d. savivaldybių tarybų rinkimai).xlsx"}
+    source: *kandidatai
     properties:
+      id: {source: ["Kandidatą iškėlusi organizacija"]}
       pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
