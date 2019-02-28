@@ -8,36 +8,12 @@ source: {url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
 owner: gov/vrk
 stars: 2
 objects:
-  politika/rinkimai/apygarda:
+  politika/rinkimai:
     source: &kandidatai
       xlsx:
         # 2018 m. rugsėjo 16 d. nauji rinkimai į Lietuvos Respublikos Seimą vienmandatėje Zanavykų rinkimų apygardoje Nr. 64
         url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas?p_p_id=allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=downloadElectionReport&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&type=XLSX&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_reportCode=LIST_OF_CANDIDATES&select-r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionId=1064&select-r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationName=&select-r16gender=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16gender=&select-r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16sorting="
         skip: 5
-    properties:
-      id: {source: "Apygardos Nr."}
-      numeris: {source: "Apygardos Nr."}
-      pavadinimas: {source: "Apygardos pavadinimas"}
-  politika/rinkimai/kandidatas:
-    source: *kandidatai
-    properties:
-      id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
-      rinkimai: {stars: 1}
-      asmuo: {stars: 0}
-      partija: {stars: 1}
-      sarasas: {stars: 1}
-      kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
-      vardas: {source: "Kandidato vardas"}
-      pavarde: {source: "Kandidato pavardė"}
-      lytis: {source: "Kandidato lytis"}
-      ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
-      dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
-      dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
-      isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
-      isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
-      isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
-  politika/rinkimai:
-    source: *kandidatai
     properties:
       id: {source: ["Rinkimai", "Rinkimų rūšis", "Rinkimų data"]}
       pavadinimas: {source: "Rinkimai"}
@@ -47,15 +23,44 @@ objects:
         replace:
             "Seimo rinkimai": seimo
             "Savivaldybių rinkimai": savivaldybių
-  politika/rinkimai/kandidatas/sarasas:
+
+  politika/rinkimai/apygarda:
     source: *kandidatai
     properties:
-      id: {source: ["Kandidatų sąrašo pavadinimas"]}
-      rinkimai: {stars: 1}
-      numeris: {source: "Kandidatų sąrašo Nr."}
-      pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
+      id: {source: "Apygardos Nr."}
+      numeris: {source: "Apygardos Nr."}
+      pavadinimas: {source: "Apygardos pavadinimas"}
+
   politika/partija:
     source: *kandidatai
     properties:
       id: {source: ["Kandidatą iškėlusi organizacija"]}
       pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
+
+  politika/rinkimai/kandidatas/sarasas:
+    source: *kandidatai
+    properties:
+      id: {source: ["Kandidatų sąrašo pavadinimas"]}
+      rinkimai: {stars: 1, source: ["Rinkimai", "Rinkimų rūšis", "Rinkimų data"], ref: politika/rinkimai}
+      numeris: {source: "Kandidatų sąrašo Nr."}
+      pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
+
+  politika/rinkimai/kandidatas:
+    source: *kandidatai
+    properties:
+      id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
+      rinkimai: {stars: 1, source: ["Rinkimai", "Rinkimų rūšis", "Rinkimų data"], ref: politika/rinkimai}
+      apygarda: {stars: 1, source: "Apygardos Nr.", ref: politika/rinkimai/apygarda}
+      asmuo: {stars: 0}
+      partija: {stars: 1, source: ["Kandidatą iškėlusi organizacija"], ref: politika/partija}
+      vardas: {source: "Kandidato vardas"}
+      pavarde: {source: "Kandidato pavardė"}
+      lytis: {source: "Kandidato lytis"}
+      sarasas: {stars: 1, source: ["Kandidatų sąrašo pavadinimas"], ref: politika/rinkimai/kandidatas/sarasas}
+      kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
+      ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
+      dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
+      dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
+      isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
+      isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
+      isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}

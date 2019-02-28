@@ -12,7 +12,7 @@ objects:
     properties:
       object_id: {source: OBJECTID, local: true}
       sign_id: {source: ZENKLO_ID, local: true}
-      type: {source: TIPAS}
+      sign_type: {source: TIPAS}
       sign_text: {source: ZENKLO_TEKSTAS}
       direction_of_effect: {source: GALIOJIMO_KRYPTIS}
       rotation_degree: {source: PASUKIMO_KAMPAS}
