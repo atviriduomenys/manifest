@@ -9,142 +9,106 @@ source: {html: "https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"}
 owner: gov/lrs
 stars: 2
 objects:
+
   politika/seimas/seimo_narys:
     source:
       xml:
-        url: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
-        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+        url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
-      id: 
-        source: "@asmens_id"
-      asmens_id: 
-        local: true
-        source: "@asmens_id"
-      vardas:
-        source: "@vardas"
-      pavardė:
-        source: "@pavardė"
-      gimimo_data:
-        source: "@biografijos_nuoroda"
-        stars: 1
-      mirties_data:
-        stars: 0
-      gimimo_vieta:
-        source: "@biografijos_nuoroda"
-        stars: 1
-      nuotrauka:
-        source: "@biografijos_nuoroda"
-        stars: 1
+      id: {source: "@asmens_id"}
+      vardas: {source: "@vardas"}
+      pavardė: {source: "@pavardė"}
+      gimimo_data: {stars: 1}
+      mirties_data: {stars: 0}
+      gimimo_vieta: {source: "@biografijos_nuoroda", stars: 1}
+      nuotrauka: {source: "@biografijos_nuoroda", stars: 1}
+
   politika/seimas/kontaktas:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
-    identity:
-      - seimo_narys
-      - rūšis
-      - reikšmė
+        root: "/SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai"
     properties:
-      seimo_narys:
-        source: "../@asmens_id"
+      id: {source: ["../@asmens_id", "@rūšis", "@reikšmė"]}
+      seimo_narys: {source: "../@asmens_id", ref: politika/seimas/seimo_narys}
       rūšis:
         source: "@rūšis"
         replace:
           "El. p.": email
           "Darbo telefonas": phone
           "Asmeninė interneto svetainė": website
-      reikšmė:
-        source: "@reikšmė"
+      reikšmė: {source: "@reikšmė"}
+
   politika/seimas/mandatas:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
-      id: {stars: 0}
-      kadencija: {source: "../@kadencijos_id"}
-      seimo_narys: {source: "@asmens_id"}
-      kas_iškėlė: {source: "@iškėlusi_partija", stars: 1}
+      id: {stars: 0, source: ["@asmens_id", "@data_nuo"]}
+      kadencija: {source: "../@kadencijos_id", ref: politika/seimas/kadencija}
+      seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
+      kas_iškėlė: {source: "@iškėlusi_partija", stars: 1, ref: politika/partija}
       nuo: {source: "@data_nuo"}
       iki: {source: "@data_iki"}
+
   politika/seimas/kadencija:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_kadencijos"
-        items: "/SeimoInformacija/SeimoKadencija"
+        root: "/SeimoInformacija/SeimoKadencija"
     properties:
       id: {source: "@kadencijos_id"}
       pavadinimas: {source: "@pavadinimas"}
       nuo: {source: "@data_nuo"}
       iki: {source: "@data_iki"}
+
   politika/partija:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
     properties:
-      id:
-        stars: 0
-      pavadinimas:
-        source: "@iškėlusi_partija"
-      trumpinys:
-        source: "@iškėlusi_partija"
-        stars: 1
+      id: {stars: 0, source: "@iškėlusi_partija"}
+      pavadinimas: {source: "@iškėlusi_partija"}
+      trumpinys: {stars: 1}
+
   politika/seimas/frakcija:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija"
     properties:
-      id:
-        source: "@padalinio_id"
-      pavadinimas:
-        source: "@padalinio_pavadinimas"
-      trumpinys:
-        source: "@padalinio_pavadinimo_santrumpa"
-      kadencija:
-        source: "../@kadencijos_id"
-  politika/seimas/pareigos:frakcija:
+      id: {source: "@padalinio_id"}
+      pavadinimas: {source: "@padalinio_pavadinimas"}
+      trumpinys: {source: "@padalinio_pavadinimo_santrumpa"}
+      kadencija: {source: "../@kadencijos_id", ref: politika/seimas/kadencija}
+
+  politika/seimas/pareigos/frakcijoje:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
     properties:
-      grupė:object:
-        const: politika/seimas/frakcija
-      grupė:id:
-        source: "../@padalinio_id"
-      seimo_narys:
-        source: "@asmens_id"
-      pareigos:
-        source: "@pareigos"
-      nuo:
-        stars: 0
-      iki:
-        stars: 0
-  politika/seimas/pareigos:komitetas:
+      id: {source: ["../@padalinio_id", "@asmens_id"]}
+      padalinio_rusis: {const: politika/seimas/frakcija}
+      padalinys: {source: "../@padalinio_id", ref: politika/seimas/frakcija}
+      seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
+      pareigos: {source: "@pareigos"}
+      nuo: {stars: 0}
+      iki: {stars: 0}
+
+  politika/seimas/pareigos/komitetete:
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"
-        items: "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
+        root: "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
     properties:
-      grupė:object:
-        const: politika/seimas/grupė
-      grupė:id:
-        source: "../@padalinio_id"
-      seimo_narys:
-        source: "@asmens_id"
-      pareigos:
-        source: "@pareigos"
-      nuo:
-        stars: 0
-      iki:
-        stars: 0
-  politika/seimas/grupė:
-    stars: 0
-    properties:
-      panaikinta:
-      pavadinimas:
-      priklauso:
-      rūšis:
-      sukurta:
+      id: {source: ["../@padalinio_id", "@asmens_id"]}
+      padalinio_rusis: {const: politika/seimas/grupė}
+      padalinys: {source: "../@padalinio_id"}
+      seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
+      pareigos: {source: "@pareigos"}
+      nuo: {stars: 0}
+      iki: {stars: 0}
