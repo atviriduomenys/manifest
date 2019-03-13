@@ -12,7 +12,7 @@ objects:
 
   politika/seimas/seimo_narys:
     dependencies:
-      kadencija: politika/seimas/kadencija.kadencijos_id
+      kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija}"
@@ -28,7 +28,7 @@ objects:
 
   politika/seimas/kontaktas:
     dependencies:
-      kadencija: politika/seimas/kadencija.kadencijos_id
+      kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija}"
@@ -46,7 +46,7 @@ objects:
 
   politika/seimas/mandatas:
     dependencies:
-      kadencija: politika/seimas/kadencija.kadencijos_id
+      kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija}"
@@ -73,7 +73,7 @@ objects:
 
   politika/partija:
     dependencies:
-      kadencija: politika/seimas/kadencija.kadencijos_id
+      kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
     source:
       xml:
         url: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija}"
