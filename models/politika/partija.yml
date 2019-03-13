@@ -3,12 +3,19 @@ title: "Politinė partija"
 type: model
 version: 1
 date: "2019-01-06"
+extends: teise/juridinis_asmuo
 properties:
-  id: {type: pk}
-  pavadinimas:
-    type: string
-    title: "Pavadinimas"
+  id: {type: integer, title: "Juridinio asmens kodas"}
+  pavadinimas: {type: string, title: "Pavadinimas"}
   trumpinys:
     type: string
     title: "Trumpinys"
     description: "Partijos pavadinimo trumpinys."
+  adresas: {type: ref, object: geografija/lietuva/adresas}
+  vadovas: {type: ref, object: asmuo}
+  statusas: {title: "Teisinis statusas", type: string}
+  nariu: {title: "Partinjos narių skaičius", type: integer, nullable: true}
+  iregistruota: {title: "Įregistravimo data", type: date}
+  isregistruota: {title: "Išregistravimo data", type: date, nullable: true}
+  reorganizuota: {title: "Reorganizacijos būdas", type: string, enum: [prijungta, sujungta]}
+  reorganizuota_i: {title: "Reorganizuota į kitą partiją", type: ref, object: politika/partija}
