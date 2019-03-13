@@ -6,7 +6,7 @@ type: dataset
 version: 1
 date: "2015-08-23"
 source: {html: "https://github.com/vilnius/taryba"}
-owner: gov/savivaldybės/vilnius
+owner: gov/savivaldybes/vilnius
 stars: 3
 objects:
   politika/savivaldybės/tarybos_narys:

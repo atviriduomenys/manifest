@@ -5,7 +5,7 @@ type: dataset
 version: 1
 date: "2018-10-06"
 stars: 3
-owner: gov/kaunas/municipality
+owner: gov/savivaldybes/kaunas
 objects:
   road_sign:
     source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"}

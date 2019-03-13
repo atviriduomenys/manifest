@@ -6,7 +6,7 @@ type: dataset
 version: 1
 date: "2018-10-04"
 stars: 3
-owner: gov/kaunas/municipality
+owner: gov/savivaldybes/kaunas
 objects:
   educational_institution:
     source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/Svietimo%20istaigos.csv"}

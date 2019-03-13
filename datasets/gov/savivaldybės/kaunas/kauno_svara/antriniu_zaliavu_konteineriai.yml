@@ -6,4 +6,4 @@ version: 1
 date: "2018-10-06"
 stars: 3
 source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv"}
-owner: "gov/kaunas/kauno_svara"
+owner: gov/savivaldybes/kaunas/kauno_svara
