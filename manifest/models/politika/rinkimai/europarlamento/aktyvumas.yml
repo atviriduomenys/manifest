@@ -1,0 +1,27 @@
+name: politika/rinkimai/europarlamento/aktyvumas
+title: "Europos Parlamento rinkimų aktyvumas"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  id: {type: pk}
+  rinkimai:
+    type: ref
+    object: politika/rinkimai/europarlamento/rinkimai
+  apylinke:
+    type: ref
+    object: politika/rinkimai/apylinke
+  apygarda:
+    type: ref
+    object: politika/rinkimai/apygarda
+  pradžia: {type: date}
+  pabaiga: {type: date}
+  rinkeju_skaicius:
+    type: integer
+    description: |
+      Rinkėjų, turinčių teisę dalyvauti rinkimuose skaičius.
+  balsu_skaicius:
+    type: integer
+    description: |
+      Visų balsų balsų skaičius, įskaitant sugadintus.
+  galiojanciu_balsu_skaicius: {type: integer}

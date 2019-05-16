@@ -1,0 +1,17 @@
+name: geografija/naryste
+title: "Narystė"
+description: |
+  Šalies narystė konfederacijoje ar kitose sąjungose.
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  id: {type: pk}
+  nuo: {type: date}
+  iki: {type: date}
+  salys:
+    type: ref
+    object: geografija/salis
+  konfederacija:
+    type: ref
+    object: geografija/konfederacija

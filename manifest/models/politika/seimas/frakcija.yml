@@ -1,0 +1,17 @@
+name: politika/seimas/frakcija
+title: "Frakcija"
+type: model
+version: 1
+date: "2019-01-06"
+properties:
+  id: {type: pk}
+  pavadinimas:
+    type: string
+    title: "Pavadinimas"
+  trumpinys:
+    type: string
+    title: "Trumpinys"
+    description: "Frakcijos pavadinimo trumpinys."
+  kadencija:
+    type: ref
+    object: politika/seimas/kadencija

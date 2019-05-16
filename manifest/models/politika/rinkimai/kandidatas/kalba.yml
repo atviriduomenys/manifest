@@ -1,0 +1,8 @@
+name: politika/rinkimai/kandidatas/kalba
+title: "Užsienio kalba"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  id: {type: pk}
+  pavadinimas: {type: string}

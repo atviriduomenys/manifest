@@ -1,0 +1,8 @@
+properties:
+  replace:
+    type: object
+    properties:
+      map:
+        type: object
+        additionalProperties:
+          type: string

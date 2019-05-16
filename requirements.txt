@@ -5,10 +5,37 @@
 #    pip-compile --no-index --output-file requirements.txt requirements.in
 #
 -e git+https://github.com/atviriduomenys/spinta.git#egg=spinta
+asn1crypto==0.24.0        # via cryptography
 asyncpg==0.18.3
-click==7.0
-jsonschema==2.6.0
-psycopg2-binary==2.7.7
-ruamel.yaml==0.15.88
-sqlalchemy==1.2.17
+authlib==0.11
+certifi==2019.3.9         # via requests
+cffi==1.12.3              # via cryptography
+chardet==3.0.4            # via requests
+click==7.0                # via uvicorn
+cryptography==2.6.1       # via authlib
+gunicorn==19.9.0
+h11==0.8.1                # via uvicorn
+httptools==0.0.13         # via uvicorn
+idna==2.8                 # via requests
+jinja2==2.10.1
+lxml==4.3.3
+markupsafe==1.1.1         # via jinja2
+msgpack==0.6.1
+multipledispatch==0.6.0
+psycopg2-binary==2.8.2
+pycparser==2.19           # via cffi
+pymongo==3.8.0
+python-multipart==0.0.5
+requests==2.21.0          # via authlib
+ruamel.yaml==0.15.95
+six==1.12.0               # via cryptography, multipledispatch, python-multipart
+sqlalchemy==1.3.3
+starlette==0.11.4
+texttable==1.6.1
+ujson==1.35
 unidecode==1.0.23
+urllib3==1.24.3           # via requests
+uvicorn==0.7.1
+uvloop==0.12.2            # via uvicorn
+websockets==7.0           # via uvicorn
+xlrd==1.2.0

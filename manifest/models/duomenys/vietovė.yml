@@ -1,0 +1,17 @@
+name: duomenys/vietovė
+type: model
+version: 1
+date: "2019-01-06"
+link: dct:Location
+title: "Vietovė"
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  koordinatės:
+    type: spatial
+  rinkiniai:
+    type: backref 
+    object: duomenys/laikotarpis
+    secondary: true

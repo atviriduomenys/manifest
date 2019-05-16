@@ -1,0 +1,15 @@
+name: duomenys/dažnumas
+title: "Dažnumas"
+type: model
+version: 1
+date: "2019-01-06"
+link: dct:Frequency
+properties:
+  id:
+    type: pk
+  pavadinimas:
+    type: string
+  rinkiniai:
+    type: backref 
+    object: duomenys/laikotarpis
+    secondary: true

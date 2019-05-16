@@ -1,0 +1,21 @@
+name: politika/rinkimai/europarlamento/rezultatas/partija
+title: "Europos Parlamento rinkimų rezultatai pagal partijas"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  id: {type: pk}
+  rinkimai:
+    type: ref
+    object: politika/rinkimai/europarlamento/rinkimai
+  apylinke:
+    type: ref
+    object: politika/rinkimai/apylinke
+  apygarda:
+    type: ref
+    object: politika/rinkimai/apygarda
+  partija:
+    type: ref
+    object: politika/partija
+  balsu_skaicius: {type: integer}
+  balsu_skaicius_procentais: {type: number}

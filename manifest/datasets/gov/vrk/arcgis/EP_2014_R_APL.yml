@@ -1,0 +1,77 @@
+---
+name: gov/vrk/arcgis/EP_2014_R_APL
+title: "2014 m. rinkimų į Europos Parlamentą rezultatai apylinkėmis"
+type: dataset
+version: 1
+date: "2015-08-14"
+source: {html: "http://www.arcgis.com/home/item.html?id=bf05ea4326f34edda6c5a336a1a6c1e4"}
+owner: gov/vrk
+# Labai sunku rasti iš kur parsisiųsti duomenis, yra tokia užklausų forma, kuri
+# leidžia pasirinkti užklausos rezultatus pateitki JSON ir kitais formatais,
+# bet tai labai paslėpta ir labai nepatogu.
+stars: 1
+objects:
+  politika/rinkimai/apygarda:
+    properties:
+      numeris: {source: "APG_NR"}
+      pavadinimas: {source: "APG_PAV"}
+  politika/rinkimai/apylinke:
+    properties:
+      numeris: {source: "apl_nr"}
+      pavadinimas: {source: "apl_nr"}
+  politika/rinkimai/europarlamento/rinkimai:
+    properties:
+      data: {source: "DATADATE"}
+      pavadinimas: {stars: 1, const: "2014 m. rinkimai į Europos Parlamentą"}
+  politika/rinkimai/europarlamento/aktyvumas:
+    properties:
+      rinkimai: {stars: 1}
+      apylinke: {stars: 1}
+      apygarda: {stars: 1}
+      pradžia: {stars: 0}
+      pabaiga: {stars: 0}
+      rinkeju_skaicius: {source: "RINK_SK"}
+      balsu_skaicius: {source: "dal_sk"}
+      galiojanciu_balsu_skaicius: {source: "galioj_sk"}
+  politika/rinkimai/europarlamento/rezultatas:
+    properties:
+      rinkimai: {stars: 1}
+      apylinke: {stars: 1}
+      apygarda: {stars: 1}
+      kandidatas: {stars: 0}
+      balsu_skaicius: {stars: 0}
+      balsu_skaicius_procentais: {stars: 0}
+  politika/rinkimai/europarlamento/rezultatas/partija:
+    properties:
+      rinkimai: {stars: 1}
+      apylinke: {stars: 1}
+      apygarda: {stars: 1}
+      partija:
+        stars: 1
+        source:
+          # unstack:
+          #   - "lp_pr"
+          #   - "p1_pr"
+          #   - "p2_pr"
+          #   - "p3_pr"
+          #   - "p4_pr"
+          #   - "p5_pr"
+          #   - "p6_pr"
+          #   - "p7_pr"
+          #   - "p8_pr"
+          #   - "p9_pr"
+          #   - "p10_pr"
+      balsu_skaicius: {stars: 1}
+      balsu_skaicius_procentais: {stars: 1}
+  politika/rinkimai/asmuo:
+    properties:
+      vardas: {stars: 1}
+      pavarde: {stars: 1}
+  politika/partija:
+    properties:
+      pavadinimas: {stars: 1}
+  politika/rinkimai/europarlamento/kandidatas:
+    properties:
+      rinkimai: {stars: 1, const: "2014 m. rinkimai į Europos Parlamentą"}
+      asmuo: {stars: 1}
+      partija: {stars: 1}

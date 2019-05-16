@@ -1,0 +1,12 @@
+name: politika/rinkimai/apylinke
+title: "Rinkimų apylinkė"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  id: {type: pk}
+  numeris: {type: integer}
+  pavadinimas: {type: string}
+  adresas: {type: ref, object: geografija/lietuva/adresas}
+  telefonas: {type: string}
+  el_pastas: {type: string}

@@ -12,12 +12,12 @@ def read_requirements(filename):
 
 
 setup(
-    name='open-data-manifest',
+    name='lithuanian-open-data-manifest',
     description='Open Data Manifest.',
     author='Mantas Zimnickas',
     author_email='sirexas@gmail.com',
     version='0.0.1',
     licence='MIT',
-    packages=['adman'],
+    packages=['lodam'],
     install_requires=list(read_requirements('requirements.in')),
 )

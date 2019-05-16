@@ -5,4 +5,8 @@ pp-ez
 pprintpp
 pytest
 pytest-cov
+pytest-mock
+responses
+sqlalchemy-utils
+toposort
 xlrd

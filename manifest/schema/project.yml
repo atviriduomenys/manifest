@@ -1,0 +1,90 @@
+title: Data needed for a project
+description: >
+  Data description containing information about data needed for a project.
+type: object
+required:
+  - id
+  - type
+  - version
+  - date
+  - title
+additionalProperties: false
+properties:
+  id:
+    type: string
+    title: Project ID
+    description: >
+      Unique idetifier for a project withing a repository where all data
+      descriptions are stored..
+  title:
+    type: string
+    title: Project name
+  description:
+    type: string
+    title: Project description
+  url:
+    type: string
+    title: Project's website URL.
+  type:
+    enum:
+      - project
+  owner:
+    type: string
+    title: "Project owner ID"
+    description: "Reference to project owner."
+  version: {$ref: "#/definitions/version"}
+  date: {type: string, format: date}
+  impact:
+    type: array
+    title: List of impact indicators by year
+    items:
+      type: object
+      properties:
+        year:
+          type: integer
+          title: Year
+        users:
+          type: integer
+          title: Number of users
+          description: >
+            Number of unique project users for a specified year.
+        revenue:
+          type: number
+          title: Revenue in Euros
+          description:
+            Revenue in Eruos generated for a specified year.
+        employees:
+          type: integer
+          title: Number of emplyees
+          description:
+            Number of emplyees, employed for specified year who worked on this
+            project.
+      additionalProperties: false
+  source_code:
+    type: string
+    title: Project source code
+    definition: >
+      If project is an open source project, you can provide link where source
+      code of this project can be found.
+  objects:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "%(object_name_pattern)s":
+        type: [object, "null"]
+        additionalProperties: false
+        properties:
+          version: {$ref: "#/definitions/version"}
+          properties:
+            type: object
+            additionalProperties: false
+            patternProperties:
+              "%(property_name_pattern)s":
+                  type: [object, "null"]
+                  additionalProperties: false
+                  properties:
+                    version: {$ref: "#/definitions/version"}
+                    enum:
+                      type: array
+                      items:
+                        type: string

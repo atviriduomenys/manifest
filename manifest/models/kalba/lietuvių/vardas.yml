@@ -1,0 +1,14 @@
+name: kalba/lietuvių/vardas
+type: model
+version: 1
+date: "2019-01-06"
+title: "Vardas"
+properties:
+  id: {type: pk}
+  pavadinimas: {type: string}
+  giminė:
+    type: string
+    enum:
+      - moteriška
+      - vyriška
+      - moteriška-vyriška

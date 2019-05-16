@@ -1,0 +1,19 @@
+---
+name: gov/savivaldybės/kaunas/municipality/educational_institutions
+title: "Educational institutions"
+description: "CSV file containing data about Kaunas educational institutions"
+type: dataset
+version: 1
+date: "2018-10-04"
+stars: 3
+owner: gov/savivaldybes/kaunas
+objects:
+  educational_institution:
+    source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/Svietimo%20istaigos.csv"}
+    properties:
+      name:
+      id:
+      address:
+      management_email:
+      phone_number:
+      home_page:

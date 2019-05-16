@@ -1,0 +1,54 @@
+name: duomenys/rinkinys
+title: "Duomenų rinkinys"
+description: >
+  Vieno duomenų tiekėjo duomenų rinkinys, dažniausiai iš vienos konkrečios
+  duomenų bazės ar duomenų saugyklos.
+type: model
+version: 1
+date: "2019-01-06"
+link: dctype:Dataset
+properties:
+  id:
+    type: pk
+    link: dct:identifier
+  pavadinimas:
+    type: string
+    link: dct:title
+  aprašymas:
+    type: string
+    link: dct:description
+  sukurta:
+    type: date
+    link: dct:issued
+  atnaujinta:
+    type: date
+    link: dct:modified
+  raktažodžiai:
+    type: backref
+    object: duomenys/raktažodis
+    secondary: true
+    link: dct:keyword
+  kontaktai:
+    type: backref
+    object: duomenys/kontaktas
+    secondary: true
+    link: dcat:contactPoint
+  laikotarpiai:
+    type: backref
+    object: duomenys/laikotarpis
+    secondary: true
+    link: dct:temporal
+  vietovės:
+    type: backref 
+    object: duomenys/laikotarpis
+    secondary: true
+    link: dct:temporal
+  dažnumas:
+    type: backref
+    object: duomenys/dažnumas
+    secondary: true
+    link: dct:accrualPeriodicity
+  tiekėjas:
+    type: ref
+    object: duomenys/tiekėjas
+    link: dct:publisher

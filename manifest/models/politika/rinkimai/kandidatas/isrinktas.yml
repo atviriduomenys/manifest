@@ -1,0 +1,13 @@
+name: politika/rinkimai/kandidatas/isrinktas
+title: "Išrinktas rinkimų metu"
+type: model
+version: 1
+date: "2019-01-23"
+properties:
+  id: {type: pk}
+  institucija:
+    type: ref
+    object: teise/juridinis_asmuo
+  pareigos: {type: string}
+  nuo: {type: date}
+  iki: {type: date}

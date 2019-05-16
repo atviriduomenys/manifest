@@ -1,0 +1,10 @@
+name: geografija/lietuva/pastatas
+title: "Gatvė"
+type: model
+version: 1
+date: "2019-01-24"
+properties:
+  id: {type: pk}
+  numeris: {type: string}
+  pavadinimas: {type: string}
+  koordinates: {type: spatial}

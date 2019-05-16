@@ -1,0 +1,14 @@
+name: politika/rinkimai/biuletenis/daugiamandatis/pirmumas
+title: "Referendumo biuletenis"
+type: model
+version: 1
+date: "2019-01-20"
+properties:
+  id: {type: pk}
+  biuletenis:
+    type: ref
+    object: politika/rinkimai/biuletenis/daugiamandatis
+  kandidatas:
+    type: ref
+    object: politika/rinkimai/kandidatas
+  pirmumas: {type: integer, title: "Pirmumo numeris"}

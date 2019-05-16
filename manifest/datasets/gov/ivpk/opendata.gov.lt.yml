@@ -1,0 +1,61 @@
+name: gov/ivpk/opendata.gov.lt
+title: "IVPK Informacijos Rinkmenų Sąrašas (IRS)"
+type: dataset
+version: 1
+date: "2012-11-22"
+source:
+  html: "http://opendata.gov.lt/"
+owner: gov/ivpk
+stars: 1
+objects:
+  duomenys/rinkinys:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {source: "Kodas"}
+      urlid: # {local: true, source: {self: "../url:params:id"}}
+      pavadinimas: {source: "Pavadinimas"}
+      aprašymas: {source: "Apibūdinimas"}
+      sukurta: {source: "Rinkmenos aprašymo publikavimo duomenys"}
+      atnaujinta: {stars: 0}
+      raktažodžiai: {source: "Reikšminiai žodžiai"}
+      kontaktai: {source: "Kontaktiniai duomenys"}
+      vietovės: {stars: 0}
+      laikotarpiai:
+      dažnumas: {source: "Atnaujinimo dažnumas"}
+      tiekėjas: {source: "Rinkmenos tvarkytojas"}
+  duomenys/raktažodis:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {stars: 0}
+      pavadinimas: {source: "Reikšminiai žodžiai"}
+  duomenys/kontaktas:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {stars: 0}
+      vardas: {source: "Kontaktiniai duomenys"}
+      pavardė: {source: "Kontaktiniai duomenys"}
+      el_paštas: {source: "Kontaktiniai duomenys"}
+      telefonas: {source: "Kontaktiniai duomenys"}
+  duomenys/laikotarpis:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {stars: 0}
+      pavadinimas: {stars: 0}
+      nuo: {source: "Rinkmenos pradžios data"}
+      iki: {source: "Rinkmenos pabaigos data"}
+  duomenys/vietovė:
+    stars: 0
+    properties:
+      id:
+      pavadinimas:
+      koordinatės:
+  duomenys/dažnumas:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {stars: 0}
+      pavadinimas: {source: "Atnaujinimo dažnumas"}
+  duomenys/tiekėjas:
+    source: {html: "http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/"}
+    properties:
+      id: {stars: 0}
+      pavadinimas: {source: "Rinkmenos tvarkytojas"}

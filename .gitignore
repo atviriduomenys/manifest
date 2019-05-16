@@ -1,7 +1,11 @@
-/env/
-*.pyc
 *.egg-info/
-__pycache__/
-/.coverage
+*.pyc
 .ipynb_checkpoints/
+/.coverage
+/.env
+/build/
+/ci/
+/env/
 /notebooks/*.xls
+/tags
+/var/

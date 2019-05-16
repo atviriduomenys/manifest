@@ -1,0 +1,116 @@
+type: object
+title: Dataset
+description: >
+  Data resources from a single owner and same data set.
+required:
+  - id
+  - type
+  - version
+  - date
+  - title
+  - owner
+additionalProperties: false
+properties:
+  id:
+    type: string
+    title: "Data source ID"
+  type:
+    enum: [dataset]
+  version: {$ref: "#/definitions/version"}
+  date: {type: string, format: date}
+  title:
+    type: string
+    title: "Data source name"
+  description:
+    type: string
+    title: "Data source description"
+  owner:
+    type: string
+    title: "Dataset owner ID"
+    description: "Reference to data owner."
+  stars: {$ref: "#/definitions/stars"}
+  source: {$ref: "#/definitions/source"}
+  opengovdata:
+    title: "Open government data principles"
+    type: array
+    items:
+      enum:
+        - complete
+        - primary
+        - timely
+        - accessible
+        - machine_processable
+        - non-discriminatory
+        - non-proprietary
+        - license-free
+        - online_and_free
+        - permanent
+        - trusted
+        - presumption_of_openness
+        - documented
+        - safe_to_open
+  objects:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "%(object_name_pattern)s":
+        type: [object, "null"]
+        additionalProperties: false
+        properties:
+          source: {$ref: "#/definitions/source"}
+          version: {$ref: "#/definitions/version"}
+          stars: {$ref: "#/definitions/stars"}
+          local:
+            type: boolean
+            title: Local object
+            description: >
+              Local objects does not have to be defined as global models.
+              Local objects must be specific to a specific dataset.
+          identifier:
+            type: array
+            items:
+              type: object
+              properties:
+                source:
+                  $ref: _source.yml
+          properties:
+            type: object
+            additionalProperties: false
+            patternProperties:
+              "%(property_name_pattern)s":
+                  type: [object, "null"]
+                  additionalProperties: false
+                  properties:
+                    type:
+                      type: string
+                      enum:
+                        - string
+                        - ref
+                      description: >
+                        Kai kurie objektai, gali būti kompleksiniai, rodantys į kitą
+                        objektą, šis laukas nurodo ar reikalinga nuoroda į kitą
+                        objektą ar tiesiog tekstinė to objekto išraiška.
+                    version: {$ref: "#/definitions/version"}
+                    source: {$ref: "#/definitions/source"}
+                    stars: {$ref: "#/definitions/stars"}
+                    const:
+                      type: [integer, string]
+                      title: Constant value
+                    local:
+                      type: boolean
+                      title: Local property
+                      description: >
+                        Local property does not have to be defined in global
+                        models. Local property must be specific to a specific
+                        dataset, for example an identifier used only for that
+                        dataset.
+                    enum:
+                      type: array
+                      items:
+                        type: string
+                    identifier:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          source: {$ref: "#/definitions/source"}

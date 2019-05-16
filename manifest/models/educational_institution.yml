@@ -1,0 +1,25 @@
+---
+name: educational_institution
+type: model
+version: 1
+date: "2019-01-06"
+title: "Educational Institution"
+description: ""
+properties:
+  id:
+    type: pk
+  name:
+    type: "string"
+    title: "Pavadinimas"
+  address:
+    type: "string"
+    title: "Adresas"
+  management_email:
+    type: "string"
+    title: "Vadovo e-pašto adresas"
+  phone_number:
+    type: "string"
+    title: "Vadovo telefono numeris"
+  home_page:
+    type: "string"
+    title: "Nuoroda į institucijos puslapį"

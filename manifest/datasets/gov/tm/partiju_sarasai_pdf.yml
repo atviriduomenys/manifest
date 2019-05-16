@@ -1,0 +1,30 @@
+---
+name: gov/tm/partiju_sarasai_pdf
+title: "Lietuvos Respublikos politinių partijų sąrašas"
+type: dataset
+version: 1
+date: "2019-03-13"
+source: 
+  html: "https://tm.lrv.lt/lt/veiklos-sritys-1/politiniu-partiju-steigimas-ir-registravimas/politiniu-partiju-sarasai"
+owner: gov/tm
+stars: 1
+objects:
+
+  politika/partija:
+    canonical: true
+    extends: teise/juridinis_asmuo
+    source:
+      # pdf: "https://tm.lrv.lt/uploads/tm/documents/files/(ARCHYVINIS)%20Lietuvos%20Respublikos%20politini%C5%B3%20partij%C5%B3%20s%C4%85ra%C5%A1as%202019-03-01%20su%20archyvu(1).pdf"
+    properties:
+      id: {source: "Juridinio asmens kodas"}
+      pavadinimas: {source: "Pavadinimas"}
+      trumpinys: {stars: 0}
+      adresas: {source: "Adresas", ref: geografija/lietuva/adresas}
+      vadovas: {source: "Vadovas", ref: asmuo}
+      statusas: {source: "Teisinis statusas"}
+      nariu: {source: "Partinjos narių skaičius"}
+      iregistruota: {source: "Įregistravimo data"}
+      isregistruota: {source: "Išregistravimo data"}
+      reorganizuota: {source: "Pavadinimas", enum: [prijungta, sujungta]}
+      reorganizuota_i: {source: "Pavadinimas", ref: politika/partija}
+
