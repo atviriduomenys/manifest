@@ -56,3 +56,8 @@ Pageidaujamų duomenų laukų sąrašas:
 
 
 Papildomi komentarai, pastabos:
+
+
+
+/label ~Poreikis 
+/assign @atviriduomenys 
