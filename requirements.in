@@ -1,1 +1,1 @@
--e https://gitlab.com/atviriduomenys/spinta.git#egg=spinta
+-e git+https://gitlab.com/atviriduomenys/spinta.git#egg=spinta

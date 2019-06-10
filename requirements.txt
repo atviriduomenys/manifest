@@ -4,7 +4,8 @@
 #
 #    pip-compile --no-index --output-file requirements.txt requirements.in
 #
--e git+https://github.com/atviriduomenys/spinta.git#egg=spinta
+-e git+https://gitlab.com/atviriduomenys/spinta.git#egg=spinta
+aiofiles==0.4.0
 asn1crypto==0.24.0        # via cryptography
 asyncpg==0.18.3
 authlib==0.11
