@@ -18,7 +18,8 @@ before_script:
 
 test:
   variables:
+    SPINTA_CONFIG: lodam.config:CONFIG
     SPINTA_BACKENDS_DEFAULT_DSN: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
-    SPINTA_DATASETS_DEFAULT_SQL: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
+    SPINTA_DATASETS_DEFAULT_SQL_DB: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
   script:
     - ci/env/bin/py.test -vvxra --tb=native --log-level=debug --cov=lodam --cov-report=term-missing tests
