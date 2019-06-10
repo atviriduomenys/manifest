@@ -1,5 +1,9 @@
 .. default-role:: literal
 
+.. image:: https://gitlab.com/atviriduomenys/manifest/badges/master/pipeline.svg
+   :target: https://gitlab.com/atviriduomenys/manifest/commits/master
+
+
 Lithuanian Open Data Manifest
 #############################
 
@@ -43,22 +47,23 @@ should describe data needed for a project in YAML_ format.
 
 YAML_ files are organized into this structure::
 
-  models/
-    <object>.yml
-  owners/
-    <owner>.yml
-  datasets/
-    <owner>/
-      <dataset>.yml
-  projects/
-    <project>.yml
-  media/
+  manifest/
+    models/
+      <object>.yml
     owners/
+      <owner>.yml
+    datasets/
       <owner>/
-        logo.png
+        <dataset>.yml
     projects/
-      <project>/
-        logo.png
+      <project>.yml
+    media/
+      owners/
+        <owner>/
+          logo.png
+      projects/
+        <project>/
+          logo.png
 
 
 Here is an example, how a project could request the data:
@@ -120,11 +125,10 @@ All object and property names must be defined in model file, before using
 those names in data or source files.
 
 
-Virtual objects
-===============
+Datasets
+========
 
-Using virtual objects you can combine data from multiple distinct objects into
-one base object. For example:
+Datasets are used to descripe external data sources, here is an example:
 
 .. code-block:: yaml
 
@@ -133,43 +137,35 @@ one base object. For example:
   type: dataset
   verson: 1
   date: 2019-01-06
-  objects:
-    politika/seimas/pareigos:frakcija:
-      source:
-        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos"}
-        - "/SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys"
-      properties:
-        grupė:object:
-          const: politika/seimas/frakcija
-        grupė:id:
-          source: "../@padalinio_id"
-    politika/seimas/pareigos:komitetas:
-      source:
-        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai"}
-        - "/SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys"
-      properties:
-        grupė:object:
-          const: politika/seimas/grupė
-        grupė:id:
-          source: "../@padalinio_id"
+  resources:
+    frakcijos:
+      type: xml
+      source: http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos
+      objects:
+        politika/seimas/pareigos:
+          source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys
+          properties:
+            grupes_rusis:
+              const: politika/seimas/frakcija
+            grupe:
+              source: ../@padalinio_id
+    komitetai:
+      type: xml
+      source: http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai
+      objects:
+        politika/seimas/pareigos:
+          source: /SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys
+          properties:
+            grupes_rusis:
+              const: politika/seimas/grupė
+            grupe:
+              source: ../@padalinio_id
 
-Here original dataset has two distinct datasets for two different divisions.
-Both divisions have common member position properties. In order to extract
-these common properties into a single position object we use virtual objects
-`frakcija` and `komitetas` on top of `politika/seimas/pareigos` real object.
-`politika/seimas/pareigos` will be populated with data from both datasets.
-
-Similar thing can be done by creating two real division objects extending one
-common object and propagating common properties to that common object. Using
-virtual objects we are saving some storage space and we can get same result
-without creating real objects in database.
+Here we have a dataset with two resources, each resource is mapped to the same
+object called `politika/seimas/pareigos`.
 
 
-How to describe a dataset?
-==========================
-
-You can describe a dataset in order to make it available for projects. Here is
-example how this could be done:
+Another example:
 
 .. code-block:: yaml
 
@@ -180,24 +176,20 @@ example how this could be done:
   type: dataset
   verson: 1
   date: "2019-01-06"
-  source: {html: "https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1"}
+  website: https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1
   owner: gov/lrs
-  objects:
-    seimo_narys:
-      source:
-         - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
-         - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
-      properties:
-        first_name:
-          source: "@vardas"
-        last_name:
-          source: "@pavardė"
-
-Defining a `source` is the most complicated part, but luckily this part is
-optional!
-
-Here `source` parameter is optional. It is used just to demonstrate complete
-example of how things wrok.
+  resources:
+    seimas:
+      type: xml
+      source: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
+      objects:
+        seimo_narys:
+          source: /SeimoInformacija/SeimoKadencija/SeimoNarys
+          properties:
+            first_name:
+              source: "@vardas"
+            last_name:
+              source: "@pavardė"
 
 The idea with sources, is that you can specify exact location of the data. Just
 by using descriptions provided in `source` fields, data can be extracted in a
@@ -248,48 +240,16 @@ Here I will try to explain, how `source` parameter works.
 
 .. code-block:: yaml
 
-  source: # dataset scope
-  objects:
-    object:
-      source: # object scope
-      properties:
-        prop:
-          source: # property scope
-
-`source` parameter can have short and long forms, short form looks like this:
-
-.. code-block:: yaml
-
-  source: {url: "https://example.com"}
-  objects:
-    object:
-      source: {csv: "data.csv"}
-      properties:
-        field:
-          source: "column"
-
-Default function will be used for the context data type. In this case context
-data type is CSV, which has `column` as default function.
-
-And exactly same thing can be written as long form:
-
-.. code-block:: yaml
-
-  source:
-    url: "https://example.com"
-  objects:
-    object:
-      source:
-        csv: "data.csv"
-        delim: ","
-      properties:
-        prop:
-          source:
-            column: "column"
-
-Depending on type, short form `source` value has different meaning, for `csv`
-type, in dataset scope it means base URL, in object scope - relative or full
-URL, in field scope it means column name.
+  resources:
+    resource:
+      type:
+      source: # resource scope
+      objects:
+        object:
+          source: # object scope
+          properties:
+            prop:
+              source: # property scope
 
 
 XML source
@@ -297,13 +257,16 @@ XML source
 
 .. code-block:: yaml
 
-  source: {xml: "https://example.com/data.xml"}
-  objects:
-    object:
-      source: "//object"
-      properties:
-        field:
-          source: "@attribute"
+  resources:
+    resource:
+      type: xml
+      source: https://example.com/data.xml
+      objects:
+        object:
+          source: /object
+          properties:
+            field:
+              source: @attribute
 
 
 JSON source
@@ -311,26 +274,16 @@ JSON source
 
 .. code-block:: yaml
 
-  ---
-  name: "com/example/items"
-  source: {json: "https://example.com/items.json"}
-  objects:
-    object:
-      source: "items"
-      properties:
-        id:
-          source: "id"
-  ---
-  name: "com/example/item"
-  source: {json: "https://example.com/items/{com/example/items/object/id}.json"}
-  objects:
-    object:
-      source: []
-      properties:
-        id:
-          source: "id"
-        field1:
-          source: ["some", "nested", "field"]
+  resources:
+    resource:
+      type: json
+      source: https://example.com/items.json
+      objects:
+        object:
+          source: "items"
+          properties:
+            id:
+              source: "id"
 
 
 PostgreSQL source
@@ -338,31 +291,36 @@ PostgreSQL source
 
 .. code-block:: yaml
 
-  source: {postgresql: "://localhost/dbname"}
-  objects:
-    object:
-      source: "tablename"
-      properties:
-        field:
-          source: "fieldname"
+  resources:
+    resource:
+      type: sql
+      source: postgresql://localhost/dbname
+      objects:
+        object:
+          source: tablename
+          properties:
+            field:
+              source: fieldname
 
 Another example with a query:
 
 .. code-block:: yaml
 
-  source: {postgresql: "://localhost/dbname"}
-  objects:
-    object:
-      source:
-        query: >
-          SELECT *
-          FROM table1
-          JOIN table2 ON (table1.id = table2.id)
-          WHERE table1.param > 42
-          ORDER BY table2.param
-      properties:
-        field:
-          source: "fieldname"
+  resources:
+    resource:
+      type: sql
+      source: postgresql://localhost/dbname
+      objects:
+        object:
+          source: >
+            SELECT *
+            FROM table1
+            JOIN table2 ON (table1.id = table2.id)
+            WHERE table1.param > 42
+            ORDER BY table2.param
+          properties:
+            field:
+              source: fieldname
 
 
 HTML table source
@@ -370,15 +328,16 @@ HTML table source
 
 .. code-block:: yaml
 
-  source: {htmltable: "https://example.com/some/page.html"}
-  objects:
-    object:
-      source:
-        htmltable:
-          cols: 4
-      properties:
-        field:
-          source: "Some column name"
+  resources:
+    resource:
+      type: htmltable
+      source: https://example.com/some/page.html
+      objects:
+        object:
+          source: css querylto .table
+          properties:
+            field:
+              source: "Some column name"
 
 
 OpenDocument Spreadsheet
@@ -386,13 +345,16 @@ OpenDocument Spreadsheet
 
 .. code-block:: yaml
 
-  source: {ods: "https://example.com/data.ods"}
-  objects:
-    object:
-      source: "SheetName"
-      properties:
-        field:
-          source: "A"
+  resources:
+    resource:
+      type: ods
+      source: https://example.com/data.ods
+      objects:
+        object:
+          source: SheetNam"
+          properties:
+            field:
+              source: A
 
 
 .. _GitHub pull requests: https://help.github.com/articles/creating-a-pull-request/
@@ -475,13 +437,16 @@ types. Under the hood data is stored using two virtual properties `id` and
 
    name: gov/lrs/ad
    type: dataset
-   objects:
-      politika/seimas/pareigos:
-        properties:
-          grupė:object:
-            const: politika/seimas/frakcija
-          grupė:id:
-            source: "../@padalinio_id"
+   resources:
+     resource:
+       type: xml
+       objects:
+          politika/seimas/pareigos:
+            properties:
+              grupes_rusis:
+                const: politika/seimas/frakcija
+              grupe:
+                source: ../@padalinio_id
 
 
 Versioning
@@ -503,17 +468,19 @@ represent current and first version. For example:
   version: 1
   date: "2019-01-06"
   owner: gov/lrs
-  objects:
-    politika/seimas/seimo_narys:
-      source:
-        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
-        - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
-      properties:
-        id:
-          source: "@asmens_id"
-        vardas:
-          type: string
-          source: "@vardas"
+  resources:
+    resource:
+      type: xml
+      source: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
+      objects:
+        politika/seimas/seimo_narys:
+          source: /SeimoInformacija/SeimoKadencija/SeimoNarys
+          properties:
+            id:
+              source: "@asmens_id"
+            vardas:
+              type: string
+              source: "@vardas"
 
 Now in order to add new version you need to add new version entry and also
 update the first version, since first version is also a current version:
@@ -527,30 +494,34 @@ update the first version, since first version is also a current version:
   version: 1
   date: "2019-01-06"
   owner: gov/lrs
-  objects:
-    politika/seimas/seimo_narys:
-      source:
-        - {xml: "http://apps.lrs.lt/sip/p2b.ad_seimo_nariai"}
-        - "/SeimoInformacija/SeimoKadencija/SeimoNarys"
-      properties:
-        id:
-          source: "@asmens_id"
-        vardas:
-          type: string
-          source: "@vardas"
-        pavardė:
-          type: string
-          source: "@pavardė"
-          version: 2
+  resources:
+    resource:
+      type: xml
+      source: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
+      objects:
+        politika/seimas/seimo_narys:
+          source: /SeimoInformacija/SeimoKadencija/SeimoNarys
+          properties:
+            id:
+              source: @asmens_id
+            vardas:
+              type: string
+              source: @vardas
+            pavardė:
+              type: string
+              source: @pavardė
+              version: 2
   ---
   version: 2
   date: "2019-01-07"
-  objects:
-    politika/seimas/seimo_narys:
-      properties:
-        pavardė:
-          type: string
-          source: "@pavardė"
+  resources:
+    resource:
+      objects:
+        politika/seimas/seimo_narys:
+          properties:
+            pavardė:
+              type: string
+              source: @pavardė
 
 Now we know what current version is and that `pavardė` was added on version
 `2`, we can always look at the version `2` antree to find release date.
