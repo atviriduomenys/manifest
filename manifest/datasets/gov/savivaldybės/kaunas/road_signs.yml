@@ -6,34 +6,38 @@ version: 1
 date: "2018-10-06"
 stars: 3
 owner: gov/savivaldybes/kaunas
-objects:
-  road_sign:
-    source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/Zenklai.csv"}
-    properties:
-      object_id: {source: OBJECTID, local: true}
-      sign_id: {source: ZENKLO_ID, local: true}
-      sign_type: {source: TIPAS}
-      sign_text: {source: ZENKLO_TEKSTAS}
-      direction_of_effect: {source: GALIOJIMO_KRYPTIS}
-      rotation_degree: {source: PASUKIMO_KAMPAS}
-      state: {source: BUKLE}
-      GUID: {source: GUID_, local: true}
-      from_top: {source: PADETIS_NUO_VIRSAUS}
-      sign_category: {source: ZENKLU_GRUPE}
-      decision_date: {source: SPRENDIMO_DATA}
-      implementation_date: {source: IRENGIMO_DATA}
-      duration_start: {source: GALIOJA_NUO}
-      duration_end: {source: GALIOJA_IKI}
-      height: {source: PASTATYMO_AUKSTIS}
-      ket_number: {source: KET_NR}
-      status: {source: STATUSAS}
-      file_sys_name: {source: FAILO_SYS_VARDAS}
-      decision_number: {source: SPRENDIMO_NR}
-      inventorization_padetis: {source: INVENTORIZAVIMO_PADETIS}
-      visibility: {source: MATOMUMAS}
-      reflection_group: {source: ATSPINDZIO_GRUPE}
-      address: {source: ADRESAS}
-      removal_reason: {source: PASAL_PRIEZASTIS}
-      removal_date: {source: PASAL_DATA}
-      global_id: {source: GlobalID, local: true}
-      id_relation: {source: ID_RYSIUI}
+resources:
+  zenklai:
+    type: csv
+    source: https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/
+    objects:
+      road_sign:
+        source: Zenklai.csv
+        properties:
+          object_id: {source: OBJECTID, local: true}
+          sign_id: {source: ZENKLO_ID, local: true}
+          sign_type: {source: TIPAS}
+          sign_text: {source: ZENKLO_TEKSTAS}
+          direction_of_effect: {source: GALIOJIMO_KRYPTIS}
+          rotation_degree: {source: PASUKIMO_KAMPAS}
+          state: {source: BUKLE}
+          GUID: {source: GUID_, local: true}
+          from_top: {source: PADETIS_NUO_VIRSAUS}
+          sign_category: {source: ZENKLU_GRUPE}
+          decision_date: {source: SPRENDIMO_DATA}
+          implementation_date: {source: IRENGIMO_DATA}
+          duration_start: {source: GALIOJA_NUO}
+          duration_end: {source: GALIOJA_IKI}
+          height: {source: PASTATYMO_AUKSTIS}
+          ket_number: {source: KET_NR}
+          status: {source: STATUSAS}
+          file_sys_name: {source: FAILO_SYS_VARDAS}
+          decision_number: {source: SPRENDIMO_NR}
+          inventorization_padetis: {source: INVENTORIZAVIMO_PADETIS}
+          visibility: {source: MATOMUMAS}
+          reflection_group: {source: ATSPINDZIO_GRUPE}
+          address: {source: ADRESAS}
+          removal_reason: {source: PASAL_PRIEZASTIS}
+          removal_date: {source: PASAL_DATA}
+          global_id: {source: GlobalID, local: true}
+          id_relation: {source: ID_RYSIUI}

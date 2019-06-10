@@ -1,9 +1,0 @@
-name: politika/rinkimai/referendumas
-title: "Referendumas"
-type: model
-version: 1
-date: "2019-01-20"
-properties:
-  id: {type: pk}
-  data: {type: date}
-  pavadinimas: {type: string}

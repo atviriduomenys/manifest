@@ -1,0 +1,24 @@
+image: python:latest
+
+services:
+  - postgres:latest
+
+variables:
+  POSTGRES_DB: manifest
+
+cache:
+  paths:
+    - ~/.cache/pip/
+
+before_script:
+  - python --version
+  # - apt-get update -q && apt-get install nodejs -yqq
+  - python -m venv ci/env
+  - ci/env/bin/pip install -r requirements-dev.txt -e .
+
+test:
+  variables:
+    SPINTA_BACKENDS_DEFAULT_DSN: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
+    SPINTA_DATASETS_DEFAULT_SQL: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
+  script:
+    - ci/env/bin/py.test -vvxra --tb=native --log-level=debug --cov=lodam --cov-report=term-missing tests

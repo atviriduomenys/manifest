@@ -4,69 +4,72 @@ title: "Kandidatų sąrašai"
 type: dataset
 version: 1
 date: "2019-01-23"
-source: {url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas"}
+website: https://www.rinkejopuslapis.lt/ataskaitu-formavimas
 owner: gov/vrk
 stars: 2
-objects:
-  politika/rinkimai:
-    dependencies: &dependencies
-      rinkimai: politika/rinkimai/:source/gov/vrk/rinkejopuslapis/webapi.rinkimu_id
-    source: &kandidatai
-      xlsx:
-        url: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas?p_p_id=allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=downloadElectionReport&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&type=XLSX&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_reportCode=LIST_OF_CANDIDATES&select-r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionId={rinkimai}&select-r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationName=&select-r16gender=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16gender=&select-r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16sorting="
-        skip: {column: 0, value: ['Rinkimai', 'Rinkimų rūšis']}
-    properties:
-      id: {source: 'rinkimai', dependency: true}
-      pavadinimas: {source: "Rinkimai"}
-      data: {source: "Rinkimų data"}
-      rusis:
-        source: "Rinkimų rūšis"
-        replace:
-            "Seimo rinkimai": seimo
-            "Savivaldybių rinkimai": savivaldybių
-      rinkimu_id: {source: 'rinkimai', dependency: true}
+resources:
+  kandidatai:
+    type: xlsx
+    source: "https://www.rinkejopuslapis.lt/ataskaitu-formavimas?p_p_id=allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=downloadElectionReport&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&type=XLSX&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_reportCode=LIST_OF_CANDIDATES&select-r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16electionId={rinkimai}&select-r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyType=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16countyId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationId=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16organizationName=&select-r16gender=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16gender=&select-r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16participation=&_allelectionreportslistportlet_WAR_rpportlet_INSTANCE_GdxhH7xgZxqG_r16sorting="
+    objects:
+      politika/rinkimai:
+        dependencies: &dependencies
+          rinkimai: politika/rinkimai/:source/gov/vrk/rinkejopuslapis/webapi.rinkimu_id
+        source:
+          name: 
+          skip: {column: 0, value: ['Rinkimai', 'Rinkimų rūšis']}
+        properties:
+          id: {source: 'rinkimai', dependency: true}
+          pavadinimas: {source: "Rinkimai"}
+          data: {source: "Rinkimų data"}
+          rusis:
+            source: "Rinkimų rūšis"
+            replace:
+                "Seimo rinkimai": seimo
+                "Savivaldybių rinkimai": savivaldybių
+          rinkimu_id: {source: 'rinkimai', dependency: true}
 
-  politika/rinkimai/apygarda:
-    dependencies: *dependencies
-    source: *kandidatai
-    properties:
-      id: {source: "Apygardos Nr."}
-      numeris: {source: "Apygardos Nr."}
-      pavadinimas: {source: "Apygardos pavadinimas"}
+      politika/rinkimai/apygarda:
+        dependencies: *dependencies
+        source:
+        properties:
+          id: {source: "Apygardos Nr."}
+          numeris: {source: "Apygardos Nr."}
+          pavadinimas: {source: "Apygardos pavadinimas"}
 
-  politika/partija:
-    dependencies: *dependencies
-    source: *kandidatai
-    properties:
-      id: {source: ["Kandidatą iškėlusi organizacija"]}
-      pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
+      politika/partija:
+        dependencies: *dependencies
+        source:
+        properties:
+          id: {source: ["Kandidatą iškėlusi organizacija"]}
+          pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
 
-  politika/rinkimai/kandidatas/sarasas:
-    dependencies: *dependencies
-    source: *kandidatai
-    properties:
-      id: {source: ["Kandidatų sąrašo pavadinimas"]}
-      rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
-      numeris: {source: "Kandidatų sąrašo Nr."}
-      pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
+      politika/rinkimai/kandidatas/sarasas:
+        dependencies: *dependencies
+        source:
+        properties:
+          id: {source: ["Kandidatų sąrašo pavadinimas"]}
+          rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
+          numeris: {source: "Kandidatų sąrašo Nr."}
+          pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
 
-  politika/rinkimai/kandidatas:
-    dependencies: *dependencies
-    source: *kandidatai
-    properties:
-      id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
-      rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
-      apygarda: {stars: 1, source: "Apygardos Nr.", ref: politika/rinkimai/apygarda}
-      asmuo: {stars: 0}
-      partija: {stars: 1, source: ["Kandidatą iškėlusi organizacija"], ref: politika/partija}
-      vardas: {source: "Kandidato vardas"}
-      pavarde: {source: "Kandidato pavardė"}
-      lytis: {source: "Kandidato lytis"}
-      sarasas: {stars: 1, source: ["Kandidatų sąrašo pavadinimas"], ref: politika/rinkimai/kandidatas/sarasas}
-      kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
-      ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
-      dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
-      dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
-      isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
-      isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
-      isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
+      politika/rinkimai/kandidatas:
+        dependencies: *dependencies
+        source:
+        properties:
+          id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
+          rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
+          apygarda: {stars: 1, source: "Apygardos Nr.", ref: politika/rinkimai/apygarda}
+          asmuo: {stars: 0}
+          partija: {stars: 1, source: ["Kandidatą iškėlusi organizacija"], ref: politika/partija}
+          vardas: {source: "Kandidato vardas"}
+          pavarde: {source: "Kandidato pavardė"}
+          lytis: {source: "Kandidato lytis"}
+          sarasas: {stars: 1, source: ["Kandidatų sąrašo pavadinimas"], ref: politika/rinkimai/kandidatas/sarasas}
+          kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
+          ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
+          dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
+          dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
+          isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
+          isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
+          isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}

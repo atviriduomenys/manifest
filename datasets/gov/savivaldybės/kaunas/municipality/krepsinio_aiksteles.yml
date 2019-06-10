@@ -1,9 +1,0 @@
----
-name: gov//savivaldybėskaunas/municipality/krepsinio_aiksteles
-title: "Krepšinio aikštelės"
-type: dataset
-version: 1
-date: "2018-10-06"
-stars: 3
-source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Laisvalaikio-zonos/master/Krepsinio%20aiksteles%20(2016).csv"}
-owner: gov/savivaldybes/kaunas

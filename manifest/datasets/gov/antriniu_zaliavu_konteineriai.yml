@@ -4,6 +4,9 @@ title: "Antrinių žaliavų konteineriai"
 type: dataset
 version: 1
 date: "2018-10-06"
-source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv"}
 owner: gov/savivaldybes/kaunas/kauno_svara
 stars: 3
+resources:
+  konteineriai:
+    type: csv
+    source: https://raw.githubusercontent.com/Kauno-miestas/Kauno-Svara/master/antriniu_zaliavu_konteineriai.csv

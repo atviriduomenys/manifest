@@ -4,5 +4,8 @@ type: dataset
 version: 1
 date: "2018-10-06"
 stars: 3
-source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Laisvalaikio-zonos/master/Treniruokliai.csv"}
 owner: gov/savivaldybes/kaunas
+resources:
+  treniruokliai:
+    type: csv
+    source: https://raw.githubusercontent.com/Kauno-miestas/Laisvalaikio-zonos/master/Treniruokliai.csv

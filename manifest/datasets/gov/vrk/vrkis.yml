@@ -4,93 +4,96 @@ title: "VRKIS aplikacijų programavimo sąsaja (API) išorinėms sistemoms"
 type: dataset
 version: 1
 date: "2019-01-24"
-source: {url: "https://www.vrk.lt/statiniai/puslapiai/rinkimai/"}
 owner: gov/vrk
 stars: 4
-objects:
-  politika/rinkimai:
-    source: {json: "rt.json"}
-    properties:
-      id: {source: data/vr_id}
-      pavadinimas: {source: data/pav}
-      rusis:
-        source: data/rnk_rusis
-        # - replace:
-        #     SEI: seimo
-        #     SAV: savivaldybių
-  politika/rinkimai/turas:
-    source: {json: "rt.json"}
-    properties:
-      id: {source: data/id}
-      rinkimai: {source: data/vr_id}
-      numeris: {source: data/rt_no}
-      pavadinimas: {source: data/vrt_pav}
-      data: {source: data/rink_data}
-      einamieji: {source: data/einamieji}
-  politika/rinkimai/apygarda:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpg.json"}
-    stars: 2
-    properties:
-      id: {source: data/id}
-      rinkimai: {source: data/vr_id}
-      numeris: {source: data/nr}
-      pavadinimas: {source: data/pav}
-      adresas: {source: data/adr}
-      telefonas: {source: data/tel, stars: 1}
-      el_pastas: {source: data/ep, stars: 1}
-      uzsienio: {source: data/uzsienio}
-  politika/rinkimai/apylinke:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpl.json"}
-    stars: 2
-    properties:
-      numeris: {source: data/nr}
-      pavadinimas: {source: data/pav}
-      adresas: {source: data/adr}
-      telefonas: {source: data/tel, stars: 1}
-      el_pastas: {source: data/ep, stars: 1}
-  geografija/lietuva/gatve:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/gatves.json"}
-    stars: 2
-    properties:
-      pavadinimas: {source: data/gatve}
-  geografija/lietuva/adresas:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/vietoves.json"}
-    stars: 2
-    properties:
-      id: {source: data/ter_kodas}
-      pavadinimas: {source: data/ter_pav}
-  politika/rinkimai/aktyvumas/isankstinis/apygardose:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisVrt.json"}
-    stars: 2
-    properties:
-      turas: {source: [data/vr_id, data/rt_nr]}
-      apygarda: {source: data/rpg_id}
-      rinkeju_skaicius: {source: data/rinkeju_skaicius}
-      balsavo_is_anksto: {source: data/balsavo_is_anksto}
-      balsavo_paste: {source: data/balsavo_paste}
-      balsavo_namuose: {source: data/balsavo_namuose}
-      is_viso: {source: data/is_viso}
-      procentas: {source: data/procentas}
-      proc_rusiavimui: {source: data/proc_rusiavimui}
-  politika/rinkimai/aktyvumas/isankstinis/apylinkese:
-    source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisRpg{politika/rinkimai/aktyvumas/isankstinis:apygarda:id}.json"}
-    stars: 2
-    properties:
-      turas: {source: [vr_id, rt_nr]}
-      apygarda: {source: rpg_id}
-      apylinke: {source: rpl_id}
-      rinkeju_skaicius: {source: rinkeju_skaicius}
-      balsavo_is_anksto: {source: balsavo_is_anksto}
-      balsavo_paste: {source: balsavo_paste}
-      balsavo_namuose: {source: balsavo_namuose}
-      is_viso: {source: is_viso}
-      procentas: {source: procentas}
-      proc_rusiavimui: {source: proc_rusiavimui}
-  politika/rinkimai/aktyvumas:
-    stars: 0
-    properties:
-      turas:
-      apygarda:
-      apylinke:
-      rusis:
-      laikas:
+resources:
+  vrkis:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/
+    objects:
+      politika/rinkimai:
+        source: {json: "rt.json"}
+        properties:
+          id: {source: data/vr_id}
+          pavadinimas: {source: data/pav}
+          rusis:
+            source: data/rnk_rusis
+            # - replace:
+            #     SEI: seimo
+            #     SAV: savivaldybių
+      politika/rinkimai/turas:
+        source: {json: "rt.json"}
+        properties:
+          id: {source: data/id}
+          rinkimai: {source: data/vr_id}
+          numeris: {source: data/rt_no}
+          pavadinimas: {source: data/vrt_pav}
+          data: {source: data/rink_data}
+          einamieji: {source: data/einamieji}
+      politika/rinkimai/apygarda:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpg.json"}
+        stars: 2
+        properties:
+          id: {source: data/id}
+          rinkimai: {source: data/vr_id}
+          numeris: {source: data/nr}
+          pavadinimas: {source: data/pav}
+          adresas: {source: data/adr}
+          telefonas: {source: data/tel, stars: 1}
+          el_pastas: {source: data/ep, stars: 1}
+          uzsienio: {source: data/uzsienio}
+      politika/rinkimai/apylinke:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpl.json"}
+        stars: 2
+        properties:
+          numeris: {source: data/nr}
+          pavadinimas: {source: data/pav}
+          adresas: {source: data/adr}
+          telefonas: {source: data/tel, stars: 1}
+          el_pastas: {source: data/ep, stars: 1}
+      geografija/lietuva/gatve:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/gatves.json"}
+        stars: 2
+        properties:
+          pavadinimas: {source: data/gatve}
+      geografija/lietuva/adresas:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/vietoves.json"}
+        stars: 2
+        properties:
+          id: {source: data/ter_kodas}
+          pavadinimas: {source: data/ter_pav}
+      politika/rinkimai/aktyvumas/isankstinis/apygardose:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisVrt.json"}
+        stars: 2
+        properties:
+          turas: {source: [data/vr_id, data/rt_nr]}
+          apygarda: {source: data/rpg_id}
+          rinkeju_skaicius: {source: data/rinkeju_skaicius}
+          balsavo_is_anksto: {source: data/balsavo_is_anksto}
+          balsavo_paste: {source: data/balsavo_paste}
+          balsavo_namuose: {source: data/balsavo_namuose}
+          is_viso: {source: data/is_viso}
+          procentas: {source: data/procentas}
+          proc_rusiavimui: {source: data/proc_rusiavimui}
+      politika/rinkimai/aktyvumas/isankstinis/apylinkese:
+        source: {json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisRpg{politika/rinkimai/aktyvumas/isankstinis:apygarda:id}.json"}
+        stars: 2
+        properties:
+          turas: {source: [vr_id, rt_nr]}
+          apygarda: {source: rpg_id}
+          apylinke: {source: rpl_id}
+          rinkeju_skaicius: {source: rinkeju_skaicius}
+          balsavo_is_anksto: {source: balsavo_is_anksto}
+          balsavo_paste: {source: balsavo_paste}
+          balsavo_namuose: {source: balsavo_namuose}
+          is_viso: {source: is_viso}
+          procentas: {source: procentas}
+          proc_rusiavimui: {source: proc_rusiavimui}
+      politika/rinkimai/aktyvumas:
+        stars: 0
+        properties:
+          turas:
+          apygarda:
+          apylinke:
+          rusis:
+          laikas:

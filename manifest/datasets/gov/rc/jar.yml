@@ -6,10 +6,12 @@ version: 1
 date: "2019-01-24"
 owner: gov/rc
 stars: 0
-objects:
-  teise/juridinis_asmuo:
-    properties:
-      pavadinimas:
-      kodas:
-      veiklos_pobudis:
-      salis:
+resources:
+  jar:
+    objects:
+      teise/juridinis_asmuo:
+        properties:
+          pavadinimas:
+          kodas:
+          veiklos_pobudis:
+          salis:

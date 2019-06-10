@@ -1,8 +1,0 @@
-properties:
-  xml:
-    type: object
-    properties:
-      dsn:
-        type: string
-      encoding:
-        type: string

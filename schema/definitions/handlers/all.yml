@@ -1,5 +1,0 @@
-properties:
-  all:
-    type: array
-    items:
-      $ref: "#/definitions/handlers"

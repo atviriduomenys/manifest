@@ -7,13 +7,17 @@ version: 1
 date: "2018-10-04"
 stars: 3
 owner: gov/savivaldybes/kaunas
-objects:
-  educational_institution:
-    source: {csv: "https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/Svietimo%20istaigos.csv"}
-    properties:
-      name:
-      id:
-      address:
-      management_email:
-      phone_number:
-      home_page:
+resources:
+  istaigos:
+    type: csv
+    source: https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/
+    objects:
+      educational_institution:
+        source: Svietimo%20istaigos.csv
+        properties:
+          name:
+          id:
+          address:
+          management_email:
+          phone_number:
+          home_page:
