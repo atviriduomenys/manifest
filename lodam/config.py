@@ -25,18 +25,5 @@ CONFIG = {
         'dev': {
             'default_auth_client': '3388ea36-4a4f-4821-900a-b574c8829d52',
         },
-        'test': {
-            'backends': {
-                'default': {
-                    'backend': 'spinta.backends.postgresql:PostgreSQL',
-                    'dsn': 'postgresql://admin:admin123@localhost:54321/lodam_tests',
-                },
-            },
-            'manifests': {
-                'default': {
-                    'path': pathlib.Path() / 'manifest',
-                },
-            },
-        }
     },
 }
