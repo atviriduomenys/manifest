@@ -13,6 +13,7 @@ CONFIG = {
             'dsn': 'postgresql://admin:admin123@localhost:54321/lodam',
         },
     },
+
     'manifests': {
         'default': {
             'backend': 'default',

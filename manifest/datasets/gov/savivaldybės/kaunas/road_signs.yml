@@ -14,30 +14,84 @@ resources:
       road_sign:
         source: Zenklai.csv
         properties:
-          object_id: {source: OBJECTID, local: true}
-          sign_id: {source: ZENKLO_ID, local: true}
-          sign_type: {source: TIPAS}
-          sign_text: {source: ZENKLO_TEKSTAS}
-          direction_of_effect: {source: GALIOJIMO_KRYPTIS}
-          rotation_degree: {source: PASUKIMO_KAMPAS}
-          state: {source: BUKLE}
-          GUID: {source: GUID_, local: true}
-          from_top: {source: PADETIS_NUO_VIRSAUS}
-          sign_category: {source: ZENKLU_GRUPE}
-          decision_date: {source: SPRENDIMO_DATA}
-          implementation_date: {source: IRENGIMO_DATA}
-          duration_start: {source: GALIOJA_NUO}
-          duration_end: {source: GALIOJA_IKI}
-          height: {source: PASTATYMO_AUKSTIS}
-          ket_number: {source: KET_NR}
-          status: {source: STATUSAS}
-          file_sys_name: {source: FAILO_SYS_VARDAS}
-          decision_number: {source: SPRENDIMO_NR}
-          inventorization_padetis: {source: INVENTORIZAVIMO_PADETIS}
-          visibility: {source: MATOMUMAS}
-          reflection_group: {source: ATSPINDZIO_GRUPE}
-          address: {source: ADRESAS}
-          removal_reason: {source: PASAL_PRIEZASTIS}
-          removal_date: {source: PASAL_DATA}
-          global_id: {source: GlobalID, local: true}
-          id_relation: {source: ID_RYSIUI}
+          object_id:
+            type: string
+            source: OBJECTID
+          sign_id:
+            type: string
+            source: ZENKLO_ID
+          sign_type:
+            type: string
+            source: TIPAS
+          sign_text:
+            type: string
+            source: ZENKLO_TEKSTAS
+          direction_of_effect:
+            type: string
+            source: GALIOJIMO_KRYPTIS
+          rotation_degree:
+            type: string
+            source: PASUKIMO_KAMPAS
+          state:
+            type: string
+            source: BUKLE
+          GUID:
+            type: string
+            source: GUID_
+          from_top:
+            type: string
+            source: PADETIS_NUO_VIRSAUS
+          sign_category:
+            type: string
+            source: ZENKLU_GRUPE
+          decision_date:
+            type: date
+            source: SPRENDIMO_DATA
+          implementation_date:
+            type: date
+            source: IRENGIMO_DATA
+          duration_start:
+            type: date
+            source: GALIOJA_NUO
+          duration_end:
+            type: date
+            source: GALIOJA_IKI
+          height:
+            type: number
+            source: PASTATYMO_AUKSTIS
+          ket_number:
+            type: string
+            source: KET_NR
+          status:
+            type: string
+            source: STATUSAS
+          file_sys_name:
+            type: string
+            source: FAILO_SYS_VARDAS
+          decision_number:
+            type: string
+            source: SPRENDIMO_NR
+          inventorization_padetis:
+            type: string
+            source: INVENTORIZAVIMO_PADETIS
+          visibility:
+            type: string
+            source: MATOMUMAS
+          reflection_group:
+            type: string
+            source: ATSPINDZIO_GRUPE
+          address:
+            type: string
+            source: ADRESAS
+          removal_reason:
+            type: string
+            source: PASAL_PRIEZASTIS
+          removal_date:
+            type: string
+            source: PASAL_DATA
+          global_id:
+            type: string
+            source: GlobalID
+          id_relation:
+            type: string
+            source: ID_RYSIUI

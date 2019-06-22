@@ -531,3 +531,50 @@ version.
 
 All version entries have the same schema as first entry, except all new
 versions are merged into current version and then schame validation is applied.
+
+
+Flags
+=====
+
+:unreadable:
+
+   Data is machine unreadable. For example, instead of coordinates a plain text
+   address is given.
+
+:licence:
+
+   Licence is not suitable for open data.
+
+:fragments:
+
+   Data provided through an API and there is no way to download all data at
+   once. For example, first you have to get list of elections, then go to each
+   election and get election tour, then from each tour get election district
+   and so on. You should be able to get all districts at once.
+
+:noref:
+
+   A property does not have a reference to another object, instead of reference
+   a textual representation of an object is given.
+
+:denorm:
+
+   A property is denormalized. For example, instead given reference to an
+   object, multiple properties are included within another object.
+
+:aggregated:
+
+   Data values are aggregated.
+
+:derived:
+
+   Data values are derived from other values.
+
+:noenum:
+
+   Fixed list of possible values is not provided.
+
+:nolink:
+
+   No direct link to data. For example, one has to fill in a form or be logged
+   in to get data.

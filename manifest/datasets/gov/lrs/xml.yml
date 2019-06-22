@@ -18,40 +18,86 @@ resources:
           kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys
         properties:
-          id: {source: "@asmens_id"}
-          vardas: {source: "@vardas"}
-          pavardė: {source: "@pavardė"}
-          gimimo_data: {stars: 1}
-          mirties_data: {stars: 0}
-          gimimo_vieta: {source: "@biografijos_nuoroda", stars: 1}
-          nuotrauka: {source: "@biografijos_nuoroda", stars: 1}
+          id:
+            type: pk
+            source: "@asmens_id"
+          vardas:
+            type: string
+            source: "@vardas"
+          pavardė:
+            type: string
+            source: "@pavardė"
+          gimimo_data:
+            type: date
+            stars: 1
+          mirties_data:
+            type: date
+            stars: 0
+          gimimo_vieta:
+            type: string
+            source: "@biografijos_nuoroda"
+            stars: 1
+          nuotrauka:
+            type: string
+            source: "@biografijos_nuoroda"
+            stars: 1
 
       politika/seimas/kontaktas:
         dependencies:
           kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai
         properties:
-          id: {source: ["../@asmens_id", "@rūšis", "@reikšmė"]}
-          seimo_narys: {source: "../@asmens_id", ref: politika/seimas/seimo_narys}
-          rūšis:
+          id:
+            type: pk
+            source:
+              - "../@asmens_id"
+              - "@rūšis"
+              - "@reikšmė"
+          seimo_narys:
+            type: ref
+            ref: politika/seimas/seimo_narys
+            source: "../@asmens_id"
+          rusis:
+            type: string
             source: "@rūšis"
-            replace:
-              "El. p.": email
-              "Darbo telefonas": phone
-              "Asmeninė interneto svetainė": website
-          reikšmė: {source: "@reikšmė"}
+            enum:
+              email: "El. p."
+              phone: "Darbo telefonas"
+              website: "Asmeninė interneto svetainė"
+          reiksme:
+            type: string
+            source: "@reikšmė"
 
       politika/seimas/mandatas:
         dependencies:
           kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys
         properties:
-          id: {stars: 0, source: ["@asmens_id", "@data_nuo"]}
-          kadencija: {source: "../@kadencijos_id", ref: politika/seimas/kadencija}
-          seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
-          kas_iškėlė: {source: "@iškėlusi_partija", stars: 1, ref: politika/partija}
-          nuo: {source: "@data_nuo"}
-          iki: {source: "@data_iki"}
+          id:
+            type: pk
+            stars: 0
+            source:
+              - "@asmens_id"
+              - "@data_nuo"
+          kadencija:
+            type: ref
+            ref: politika/seimas/kadencija
+            source: "../@kadencijos_id"
+          seimo_narys:
+            type: ref
+            ref: politika/seimas/seimo_narys
+            source: "@asmens_id"
+          kas_iskele:
+            type: ref
+            ref: politika/partija
+            stars: 1
+            source: "@iškėlusi_partija"
+          nuo:
+            type: date
+            source: "@data_nuo"
+          iki:
+            type: date
+            source: "@data_iki"
 
   kadencijos:
     type: xml
@@ -60,11 +106,21 @@ resources:
       politika/seimas/kadencija:
         source: /SeimoInformacija/SeimoKadencija
         properties:
-          id: {source: "@kadencijos_id"}
-          pavadinimas: {source: "@pavadinimas"}
-          nuo: {source: "@data_nuo"}
-          iki: {source: "@data_iki"}
-          kadencijos_id: {source: "@kadencijos_id"}
+          id:
+            type: pk
+            source: "@kadencijos_id"
+          pavadinimas:
+            type: string
+            source: "@pavadinimas"
+          nuo:
+            type: date
+            source: "@data_nuo"
+          iki:
+            type: date
+            source: "@data_iki"
+          kadencijos_id:
+            type: string
+            source: "@kadencijos_id"
 
       politika/partija:
         dependencies:
@@ -73,9 +129,16 @@ resources:
           xml:
             root: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
         properties:
-          id: {stars: 0, source: "@iškėlusi_partija"}
-          pavadinimas: {source: "@iškėlusi_partija"}
-          trumpinys: {stars: 1}
+          id:
+            type: pk
+            stars: 0
+            source: "@iškėlusi_partija"
+          pavadinimas:
+            type: string
+            source: "@iškėlusi_partija"
+          trumpinys:
+            type: string
+            stars: 1
 
   frakcijos:
     type: xml
@@ -84,10 +147,19 @@ resources:
       politika/seimas/frakcija:
         source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija
         properties:
-          id: {source: "@padalinio_id"}
-          pavadinimas: {source: "@padalinio_pavadinimas"}
-          trumpinys: {source: "@padalinio_pavadinimo_santrumpa"}
-          kadencija: {source: "../@kadencijos_id", ref: politika/seimas/kadencija}
+          id:
+            type: pk
+            source: "@padalinio_id"
+          pavadinimas:
+            type: string
+            source: "@padalinio_pavadinimas"
+          trumpinys:
+            type: string
+            source: "@padalinio_pavadinimo_santrumpa"
+          kadencija:
+            type: ref
+            ref: politika/seimas/kadencija
+            source: "../@kadencijos_id"
 
   frakcijos/nariai:
     type: xml
@@ -96,13 +168,31 @@ resources:
       politika/seimas/pareigos/frakcijoje:
         source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys
         properties:
-          id: {source: ["../@padalinio_id", "@asmens_id"]}
-          padalinio_rusis: {const: politika/seimas/frakcija}
-          padalinys: {source: "../@padalinio_id", ref: politika/seimas/frakcija}
-          seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
-          pareigos: {source: "@pareigos"}
-          nuo: {stars: 0}
-          iki: {stars: 0}
+          id:
+            type: pk
+            source:
+              - "../@padalinio_id"
+              - "@asmens_id"
+          padalinio_rusis:
+            type: string
+            const: politika/seimas/frakcija
+          padalinys:
+            type: ref
+            ref: politika/seimas/frakcija
+            source: "../@padalinio_id"
+          seimo_narys:
+            type: ref
+            ref: politika/seimas/seimo_narys
+            source: "@asmens_id"
+          pareigos:
+            type: string
+            source: "@pareigos"
+          nuo:
+            type: date
+            stars: 0
+          iki:
+            type: date
+            stars: 0
 
   komitetai:
     type: xml
@@ -111,10 +201,27 @@ resources:
       politika/seimas/pareigos/komitetete:
         source: /SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys
         properties:
-          id: {source: ["../@padalinio_id", "@asmens_id"]}
-          padalinio_rusis: {const: politika/seimas/grupė}
-          padalinys: {source: "../@padalinio_id"}
-          seimo_narys: {source: "@asmens_id", ref: politika/seimas/seimo_narys}
-          pareigos: {source: "@pareigos"}
-          nuo: {stars: 0}
-          iki: {stars: 0}
+          id:
+            type: pk
+            source:
+              - "../@padalinio_id"
+              - "@asmens_id"
+          padalinio_rusis:
+            type: string
+            const: politika/seimas/grupė
+          padalinys:
+            type: string
+            source: "../@padalinio_id"
+          seimo_narys:
+            type: ref
+            ref: politika/seimas/seimo_narys
+            source: "@asmens_id"
+          pareigos:
+            type: string
+            source: "@pareigos"
+          nuo:
+            type: date
+            stars: 0
+          iki:
+            type: date
+            stars: 0

@@ -12,6 +12,12 @@ resources:
       teise/juridinis_asmuo:
         properties:
           pavadinimas:
+            type: string
           kodas:
+            type: string
           veiklos_pobudis:
+            type: string
           salis:
+            type: string
+            flags:
+              - noref

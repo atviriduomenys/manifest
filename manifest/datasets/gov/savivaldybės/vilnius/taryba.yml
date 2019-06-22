@@ -17,10 +17,28 @@ resources:
         stars: 2
         source: meetings.csv
         properties:
-          id: {stars: 0}
-          vardas: {source: "PARTICIPANT_SHORT", stars: 1}
-          pavardė: {source: "PARTICIPANT_SHORT", stars: 1}
-          gimimo_data: {stars: 0}
-          mirties_data: {stars: 0}
-          gimimo_vieta: {stars: 0}
-          nuotrauka: {stars: 0}
+          id:
+            type: pk
+            stars: 0
+          vardas:
+            type: string
+            source: "PARTICIPANT_SHORT"
+            stars: 1
+          pavardė:
+            type: string
+            source: "PARTICIPANT_SHORT"
+            stars: 1
+          gimimo_data:
+            type: date
+            stars: 0
+          mirties_data:
+            type: date
+            stars: 0
+          gimimo_vieta:
+            type: string
+            stars: 0
+            flags:
+              - unreadable
+          nuotrauka:
+            type: image
+            stars: 0

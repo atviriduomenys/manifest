@@ -16,40 +16,88 @@ resources:
     objects:
       politika/rinkimai/apygarda:
         properties:
-          numeris: {source: "APG_NR"}
-          pavadinimas: {source: "APG_PAV"}
+          numeris:
+            type: string
+            source: "APG_NR"
+          pavadinimas:
+            type: string
+            source: "APG_PAV"
       politika/rinkimai/apylinke:
         properties:
-          numeris: {source: "apl_nr"}
-          pavadinimas: {source: "apl_nr"}
+          numeris:
+            type: string
+            source: "apl_nr"
+          pavadinimas:
+            type: string
+            source: "apl_nr"
       politika/rinkimai/europarlamento/rinkimai:
         properties:
-          data: {source: "DATADATE"}
-          pavadinimas: {stars: 1, const: "2014 m. rinkimai į Europos Parlamentą"}
+          data:
+            type: date
+            source: "DATADATE"
+          pavadinimas:
+            type: string
+            stars: 1
+            const: "2014 m. rinkimai į Europos Parlamentą"
       politika/rinkimai/europarlamento/aktyvumas:
         properties:
-          rinkimai: {stars: 1}
-          apylinke: {stars: 1}
-          apygarda: {stars: 1}
-          pradžia: {stars: 0}
-          pabaiga: {stars: 0}
-          rinkeju_skaicius: {source: "RINK_SK"}
-          balsu_skaicius: {source: "dal_sk"}
-          galiojanciu_balsu_skaicius: {source: "galioj_sk"}
+          rinkimai:
+            type: string
+            stars: 1
+          apylinke:
+            type: string
+            stars: 1
+          apygarda:
+            type: string
+            stars: 1
+          pradžia:
+            type: string
+            stars: 0
+          pabaiga:
+            type: string
+            stars: 0
+          rinkeju_skaicius:
+            type: string
+            source: "RINK_SK"
+          balsu_skaicius:
+            type: string
+            source: "dal_sk"
+          galiojanciu_balsu_skaicius:
+            type: string
+            source: "galioj_sk"
       politika/rinkimai/europarlamento/rezultatas:
         properties:
-          rinkimai: {stars: 1}
-          apylinke: {stars: 1}
-          apygarda: {stars: 1}
-          kandidatas: {stars: 0}
-          balsu_skaicius: {stars: 0}
-          balsu_skaicius_procentais: {stars: 0}
+          rinkimai:
+            type: string
+            stars: 1
+          apylinke:
+            type: string
+            stars: 1
+          apygarda:
+            type: string
+            stars: 1
+          kandidatas:
+            type: string
+            stars: 0
+          balsu_skaicius:
+            type: string
+            stars: 0
+          balsu_skaicius_procentais:
+            type: string
+            stars: 0
       politika/rinkimai/europarlamento/rezultatas/partija:
         properties:
-          rinkimai: {stars: 1}
-          apylinke: {stars: 1}
-          apygarda: {stars: 1}
+          rinkimai:
+            type: string
+            stars: 1
+          apylinke:
+            type: string
+            stars: 1
+          apygarda:
+            type: string
+            stars: 1
           partija:
+            type: string
             stars: 1
             source:
               # unstack:
@@ -64,17 +112,34 @@ resources:
               #   - "p8_pr"
               #   - "p9_pr"
               #   - "p10_pr"
-          balsu_skaicius: {stars: 1}
-          balsu_skaicius_procentais: {stars: 1}
+          balsu_skaicius:
+            type: string
+            stars: 1
+          balsu_skaicius_procentais:
+            type: string
+            stars: 1
       politika/rinkimai/asmuo:
         properties:
-          vardas: {stars: 1}
-          pavarde: {stars: 1}
+          vardas:
+            type: string
+            stars: 1
+          pavarde:
+            type: string
+            stars: 1
       politika/partija:
         properties:
-          pavadinimas: {stars: 1}
+          pavadinimas:
+            type: string
+            stars: 1
       politika/rinkimai/europarlamento/kandidatas:
         properties:
-          rinkimai: {stars: 1, const: "2014 m. rinkimai į Europos Parlamentą"}
-          asmuo: {stars: 1}
-          partija: {stars: 1}
+          rinkimai:
+            type: string
+            stars: 1
+            const: "2014 m. rinkimai į Europos Parlamentą"
+          asmuo:
+            type: string
+            stars: 1
+          partija:
+            type: string
+            stars: 1

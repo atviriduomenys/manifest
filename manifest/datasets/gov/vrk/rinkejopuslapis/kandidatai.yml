@@ -17,59 +17,142 @@ resources:
           rinkimai: politika/rinkimai/:source/gov/vrk/rinkejopuslapis/webapi.rinkimu_id
         source:
           name: 
-          skip: {column: 0, value: ['Rinkimai', 'Rinkimų rūšis']}
+          skip:
+            column: 0
+            value: ['Rinkimai', 'Rinkimų rūšis']
         properties:
-          id: {source: 'rinkimai', dependency: true}
-          pavadinimas: {source: "Rinkimai"}
-          data: {source: "Rinkimų data"}
+          id:
+            type: pk
+            source: 'rinkimai'
+            dependency: true
+          pavadinimas:
+            type: string
+            source: "Rinkimai"
+          data:
+            type: date
+            source: "Rinkimų data"
           rusis:
+            type: string
             source: "Rinkimų rūšis"
-            replace:
-                "Seimo rinkimai": seimo
-                "Savivaldybių rinkimai": savivaldybių
-          rinkimu_id: {source: 'rinkimai', dependency: true}
+            enum:
+              seimo: "Seimo rinkimai"
+              savivaldybiu: "Savivaldybių rinkimai"
+          rinkimu_id:
+            type: string
+            source: 'rinkimai'
+            dependency: true
 
       politika/rinkimai/apygarda:
         dependencies: *dependencies
         source:
         properties:
-          id: {source: "Apygardos Nr."}
-          numeris: {source: "Apygardos Nr."}
-          pavadinimas: {source: "Apygardos pavadinimas"}
+          id:
+            type: pk
+            source: "Apygardos Nr."
+          numeris:
+            type: string
+            source: "Apygardos Nr."
+          pavadinimas:
+            type: string
+            source: "Apygardos pavadinimas"
 
       politika/partija:
         dependencies: *dependencies
         source:
         properties:
-          id: {source: ["Kandidatą iškėlusi organizacija"]}
-          pavadinimas: {source: "Kandidatą iškėlusi organizacija"}
+          id:
+            type: pk
+            source: ["Kandidatą iškėlusi organizacija"]
+          pavadinimas:
+            type: string
+            source: "Kandidatą iškėlusi organizacija"
 
       politika/rinkimai/kandidatas/sarasas:
         dependencies: *dependencies
         source:
         properties:
-          id: {source: ["Kandidatų sąrašo pavadinimas"]}
-          rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
-          numeris: {source: "Kandidatų sąrašo Nr."}
-          pavadinimas: {source: "Kandidatų sąrašo pavadinimas"}
+          id:
+            type: pk
+            source: ["Kandidatų sąrašo pavadinimas"]
+          rinkimai:
+            type: ref
+            stars: 1
+            source: 'rinkimai'
+            dependency: true
+            ref: politika/rinkimai
+          numeris:
+            type: string
+            source: "Kandidatų sąrašo Nr."
+          pavadinimas:
+            type: string
+            source: "Kandidatų sąrašo pavadinimas"
 
       politika/rinkimai/kandidatas:
         dependencies: *dependencies
         source:
         properties:
-          id: {source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"], stars: 1}
-          rinkimai: {stars: 1, source: 'rinkimai', dependency: true, ref: politika/rinkimai}
-          apygarda: {stars: 1, source: "Apygardos Nr.", ref: politika/rinkimai/apygarda}
-          asmuo: {stars: 0}
-          partija: {stars: 1, source: ["Kandidatą iškėlusi organizacija"], ref: politika/partija}
-          vardas: {source: "Kandidato vardas"}
-          pavarde: {source: "Kandidato pavardė"}
-          lytis: {source: "Kandidato lytis"}
-          sarasas: {stars: 1, source: ["Kandidatų sąrašo pavadinimas"], ref: politika/rinkimai/kandidatas/sarasas}
-          kandidato_nr_sarase: {source: "Kandidato Nr. sąraše"}
-          ar_isrinktas: {source: "Ar išrinktas?", stars: 1}
-          dalyvavo_vienmandateje: {source: "Kiek kartų dalyvavo vienmandatėje apygardoje"}
-          dalyvavo_daugiamandateje: {source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"}
-          isrinktas_kartu: {source: "Kiek kartų buvo išrinktas"}
-          isrinktas_pirma_karta: {source: "Kada buvo išrinktas pirmą kartą"}
-          isrinktas_paskutini_karta: {source: "Kada buvo išrinktas paskutinį kartą"}
+          id:
+            type: pk
+            source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"]
+            stars: 1
+          rinkimai:
+            type: ref
+            stars: 1
+            source: 'rinkimai'
+            dependency: true
+            ref: politika/rinkimai
+          apygarda:
+            type: ref
+            stars: 1
+            source: "Apygardos Nr."
+            ref: politika/rinkimai/apygarda
+          asmuo:
+            type: string
+            stars: 0
+            flags:
+              - noref
+          partija:
+            type: string
+            stars: 1
+            source: ["Kandidatą iškėlusi organizacija"]
+            ref: politika/partija
+            flags:
+              - noref
+          vardas:
+            type: string
+            source: "Kandidato vardas"
+          pavarde:
+            type: string
+            source: "Kandidato pavardė"
+          lytis:
+            type: string
+            source: "Kandidato lytis"
+            flags:
+              - noenum
+          sarasas:
+            type: ref
+            stars: 1
+            source: ["Kandidatų sąrašo pavadinimas"]
+            ref: politika/rinkimai/kandidatas/sarasas
+          kandidato_nr_sarase:
+            type: string
+            source: "Kandidato Nr. sąraše"
+          ar_isrinktas:
+            type: boolean
+            source: "Ar išrinktas?"
+            stars: 1
+          dalyvavo_vienmandateje:
+            type: integer
+            source: "Kiek kartų dalyvavo vienmandatėje apygardoje"
+          dalyvavo_daugiamandateje:
+            type: integer
+            source: "Kiek kartų dalyvavo daugiamandatėje apygardoje"
+          isrinktas_kartu:
+            type: integer
+            source: "Kiek kartų buvo išrinktas"
+          isrinktas_pirma_karta:
+            type: date
+            source: "Kada buvo išrinktas pirmą kartą"
+          isrinktas_paskutini_karta:
+            type: date
+            source: "Kada buvo išrinktas paskutinį kartą"

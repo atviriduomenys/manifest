@@ -15,9 +15,15 @@ resources:
       educational_institution:
         source: Svietimo%20istaigos.csv
         properties:
-          name:
           id:
+            type: pk
+          name:
+            type: string
           address:
+            type: string
           management_email:
+            type: string
           phone_number:
+            type: string
           home_page:
+            type: url

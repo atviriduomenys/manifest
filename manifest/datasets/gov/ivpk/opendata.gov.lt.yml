@@ -13,51 +13,116 @@ resources:
       duomenys/rinkinys:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {source: "Kodas"}
-          urlid: # {local: true, source: {self: "../url:params:id"}}
-          pavadinimas: {source: "Pavadinimas"}
-          aprašymas: {source: "Apibūdinimas"}
-          sukurta: {source: "Rinkmenos aprašymo publikavimo duomenys"}
-          atnaujinta: {stars: 0}
-          raktažodžiai: {source: "Reikšminiai žodžiai"}
-          kontaktai: {source: "Kontaktiniai duomenys"}
-          vietovės: {stars: 0}
+          id:
+            type: pk
+            source: "Kodas"
+          urlid:
+            type: string
+            local: true
+            # source: {self: "../url:params:id"}
+          pavadinimas:
+            type: string
+            source: "Pavadinimas"
+          aprašymas:
+            type: string
+            source: "Apibūdinimas"
+          sukurta:
+            type: date
+            source: "Rinkmenos aprašymo publikavimo duomenys"
+          atnaujinta:
+            type: date
+            stars: 0
+          raktažodžiai:
+            type: string
+            source: "Reikšminiai žodžiai"
+            flags:
+              - unreadable
+          kontaktai:
+            type: string
+            source: "Kontaktiniai duomenys"
+            flags:
+              - unreadable
+          vietovės:
+            type: string
+            stars: 0
+            flags:
+              - unreadable
           laikotarpiai:
-          dažnumas: {source: "Atnaujinimo dažnumas"}
-          tiekėjas: {source: "Rinkmenos tvarkytojas"}
+            type: string
+          dažnumas:
+            type: string
+            source: "Atnaujinimo dažnumas"
+          tiekėjas:
+            type: string
+            source: "Rinkmenos tvarkytojas"
+            flags:
+              - noref
       duomenys/raktažodis:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {stars: 0}
-          pavadinimas: {source: "Reikšminiai žodžiai"}
+          id:
+            type: pk
+            stars: 0
+          pavadinimas:
+            type: string
+            source: "Reikšminiai žodžiai"
       duomenys/kontaktas:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {stars: 0}
-          vardas: {source: "Kontaktiniai duomenys"}
-          pavardė: {source: "Kontaktiniai duomenys"}
-          el_paštas: {source: "Kontaktiniai duomenys"}
-          telefonas: {source: "Kontaktiniai duomenys"}
+          id:
+            type: pk
+            stars: 0
+          vardas:
+            type: string
+            source: "Kontaktiniai duomenys"
+          pavardė:
+            type: string
+            source: "Kontaktiniai duomenys"
+          el_paštas:
+            type: string
+            source: "Kontaktiniai duomenys"
+          telefonas:
+            type: string
+            source: "Kontaktiniai duomenys"
       duomenys/laikotarpis:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {stars: 0}
-          pavadinimas: {stars: 0}
-          nuo: {source: "Rinkmenos pradžios data"}
-          iki: {source: "Rinkmenos pabaigos data"}
+          id:
+            type: pk
+            stars: 0
+          pavadinimas:
+            type: string
+            stars: 0
+          nuo:
+            type: date
+            source: "Rinkmenos pradžios data"
+          iki:
+            type: date
+            source: "Rinkmenos pabaigos data"
       duomenys/vietovė:
         stars: 0
         properties:
           id:
+            type: pk
           pavadinimas:
+            type: string
           koordinatės:
+            type: string
       duomenys/dažnumas:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {stars: 0}
-          pavadinimas: {source: "Atnaujinimo dažnumas"}
+          id:
+            type: pk
+            stars: 0
+          pavadinimas:
+            type: string
+            source: "Atnaujinimo dažnumas"
       duomenys/tiekėjas:
         source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
         properties:
-          id: {stars: 0}
-          pavadinimas: {source: "Rinkmenos tvarkytojas"}
+          id:
+            type: pk
+            stars: 0
+          pavadinimas:
+            type: string
+            source: "Rinkmenos tvarkytojas"

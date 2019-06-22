@@ -17,6 +17,12 @@ resources:
           year: {range: {start: 1990, stop: 2030}}
         source: response
         properties:
-          id: {source: id}
-          pavadinimas: {source: label}
-          rinkimu_id: {source: id}
+          id:
+            type: pk
+            source: id
+          pavadinimas:
+            type: string
+            source: label
+          rinkimu_id:
+            type: string
+            source: id

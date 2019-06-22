@@ -20,6 +20,8 @@ owner: gov/vrk
 #   ataskaitas naudotojų skaičius. 
 #
 # Beje, klaidoje rašo "pdf", nors bandžiau atsisiųsti xlsx.
+flags:
+  - nolink
 stars: 2
 resources:
   rezultatai:
@@ -28,33 +30,65 @@ resources:
       politika/rinkimai/apygarda:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          numeris: {source: "Apygardos Nr. "}
-          pavadinimas: {source: "Apygardos pavadinimas"}
+          numeris:
+            type: string
+            source: "Apygardos Nr. "
+          pavadinimas:
+            type: string
+            source: "Apygardos pavadinimas"
       politika/rinkimai/apylinke:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          numeris: {source: "Apylinkės Nr. "}
-          pavadinimas: {source: "Apylinkės pavadinimas"}
+          numeris:
+            type: string
+            source: "Apylinkės Nr. "
+          pavadinimas:
+            type: string
+            source: "Apylinkės pavadinimas"
       politika/rinkimai/referendumas:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          data: {source: "Referendumo data"}
-          pavadinimas: {source: "Referendumas"}
+          data:
+            type: date
+            source: "Referendumo data"
+          pavadinimas:
+            type: string
+            source: "Referendumas"
       politika/rinkimai/referendumas/aktyvumas:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          referendumas: {stars: 1}
-          apylinke: {stars: 1}
-          apygarda: {stars: 1}
-          klausimas: {stars: 0}
-          pradžia: {stars: 0}
-          pabaiga: {stars: 0}
+          referendumas:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          apylinke:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          apygarda:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          klausimas:
+            type: string
+            stars: 0
+          pradžia:
+            type: date
+            stars: 0
+          pabaiga:
+            type: date
+            stars: 0
           laikotarpis:
+            type: string
             stars: 1
             enum:
-              - rinkimų_diena
-              - išankstinis
+              - rinkimu_diena
+              - isankstinis
           rinkeju_skaicius:
+            type: integer
             stars: 0
             source:
               # denormalize:
@@ -63,6 +97,7 @@ resources:
               #   - "Gauta balsų % nuo galiojančių biuletenių (Taip)"
               #   - "Gauta balsų % nuo galiojančių biuletenių (Ne)"
           balsu_skaicius:
+            type: integer
             stars: 1
             source:
               # denormalize:
@@ -73,21 +108,43 @@ resources:
       politika/rinkimai/referendumas/klausimas:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          referendumas: {stars: 1}
-          klausimas: {source: "Referendumo klausimas"}
+          referendumas:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          klausimas:
+            type: string
+            source: "Referendumo klausimas"
       politika/rinkimai/referendumas/rezultatas:
         source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
         properties:
-          referendumas: {stars: 1}
-          apylinke: {stars: 1}
-          apygarda: {stars: 1}
-          klausimas: {stars: 0}
+          referendumas:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          apylinke:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          apygarda:
+            type: string
+            stars: 1
+            flags:
+              - noref
+          klausimas:
+            type: string
+            stars: 0
           ivyko:
+            type: boolean
             source: "Ar referendumas įvyko?"
               # - replace:
               #     "Įvyko": true
               #     "Neįvyko": false
           pritarta:
+            type: boolean
             source:
               - "Ar referendumo klausimui pritarta?"
               # - replace:

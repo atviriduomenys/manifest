@@ -9,8 +9,18 @@ version: 1
 date: "2019-03-13"
 extends: asmuo
 properties:
-  id: {type: integer, title: "Asmens kodas"}
-  vardas: {type: string, title: "Vardas"}
-  pavarde: {type: string, title: "Pavardė"}
-  gime: {type: date, title: "Gimimo data"}
-  mire: {type: date, title: "Mirties data"}
+  id:
+    type: pk
+    title: "Asmens kodas"
+  vardas:
+    type: string
+    title: "Vardas"
+  pavarde:
+    type: string
+    title: "Pavardė"
+  gime:
+    type: date
+    title: "Gimimo data"
+  mire:
+    type: date
+    title: "Mirties data"
