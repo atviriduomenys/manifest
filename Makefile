@@ -45,4 +45,4 @@ build-image:
 
 .PHONY: push-image
 push-image:
-	docker push registry.gitlab.com/atviriduomenys/manifest:latest
+	docker push registry.gitlab.com/atviriduomenys/manifest
