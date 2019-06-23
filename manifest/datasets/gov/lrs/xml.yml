@@ -15,7 +15,7 @@ resources:
     objects:
       politika/seimas/seimo_narys:
         dependencies:
-          kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
+          kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys
         properties:
           id:
@@ -44,7 +44,7 @@ resources:
 
       politika/seimas/kontaktas:
         dependencies:
-          kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
+          kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai
         properties:
           id:
@@ -70,7 +70,7 @@ resources:
 
       politika/seimas/mandatas:
         dependencies:
-          kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
+          kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys
         properties:
           id:
@@ -124,10 +124,8 @@ resources:
 
       politika/partija:
         dependencies:
-          kadencija: politika/seimas/kadencija/:source/gov/lrs/ad.kadencijos_id
-        source:
-          xml:
-            root: "/SeimoInformacija/SeimoKadencija/SeimoNarys"
+          kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
+        source: /SeimoInformacija/SeimoKadencija/SeimoNarys
         properties:
           id:
             type: pk
