@@ -39,14 +39,10 @@ dist: env/bin/pip
 run: env
 	AUTHLIB_INSECURE_TRANSPORT=1 env/bin/uvicorn spinta.asgi:app --debug
 
-.PHONY: build-base
-build-base:
-	docker build -t atviriduomenys/build:latest -f docker/build/Dockerfile .
-
-.PHONY: build-wheels
-build-wheels:
-	docker run --rm -ti -v $(PWD):/mnt -w /mnt atviriduomenys/build:latest scripts/build-wheels.sh
-
 .PHONY: build-image
 build-image:
-	docker build -t atviriduomenys/manifest:latest -f docker/Dockerfile .
+	docker build -t registry.gitlab.com/atviriduomenys/manifest:latest -f docker/Dockerfile .
+
+.PHONY: push-image
+push-image:
+	docker push registry.gitlab.com/atviriduomenys/manifest:latest

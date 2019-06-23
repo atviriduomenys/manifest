@@ -14,7 +14,7 @@ services:
       - postgres:/var/lib/postgresql/data
 
   app:
-    image: atviriduomenys/manifest:latest
+    image: registry.gitlab.com/atviriduomenys/manifest:latest
     ports:
       - 80:9000
     environment:
@@ -22,7 +22,7 @@ services:
       - AUTHLIB_INSECURE_TRANSPORT=1
     volumes:
       - ./manifest:/opt/atviriduomenys/manifest
-      - ./tests/config:/opt/atviriduomenys/config
+      - ./tests/config:/opt/atviriduomenys/config/
     depends_on:
        - db
 
