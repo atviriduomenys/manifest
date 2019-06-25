@@ -1,0 +1,20 @@
+---
+name: gov/vpt/ataskaitos
+title: "Viešųjų pirkimų ataskaitos"
+type: dataset
+version: 1
+date: "2019-06-25"
+owner: gov/vpt
+resources:
+  old:
+    type: sql
+    objects:
+      viesasis_pirkimas:
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: ID
+          pavadinimas:
+            type: string
+            source: TITLE
