@@ -6,10 +6,10 @@ version: 1
 date: "2019-06-25"
 owner: gov/vpt
 resources:
-  old:
+  CVPIS:
     type: sql
     objects:
-      viesasis_pirkimas:
+      valstybe/pirkimas:
         source: ATN1
         properties:
           id:
@@ -18,3 +18,5 @@ resources:
           pavadinimas:
             type: string
             source: TITLE
+      valstybe/pirkimas/ataskaita:
+      valstybe/pirkimas/organizacija:
