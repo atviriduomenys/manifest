@@ -10,3 +10,5 @@ responses
 sqlalchemy-utils
 toposort
 xlrd
+sphinx
+alabaster
