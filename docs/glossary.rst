@@ -3,8 +3,12 @@ Terminų žodynas
 
 .. glossary::
 
-   duomenų normalizavimas
+   aplinkos kintamasis
+      Angliškai tai vadinama *environment variables*, tai yra operacinės
+      sistemos aplinkos kintamieji.
 
+      Plačiau apie tai skaitykite `Vikipedijoje
+      <https://en.wikipedia.org/wiki/Environment_variable>`__.
 
    duomenų serializavimo formatas
       Duomenys gali būti serializuojami įvairiais formatais, pavyzdžui YAML
@@ -45,7 +49,12 @@ Terminų žodynas
 
       Žodžiu „Manifest“ IT kontekste vadinamas failas, kuriame pateiktas kitų į
       vieną paketą įtrauktų failų sąrašas. Plačiau apie tai skaitykite
-      `Vikipedijoje <https://en.wikipedia.org/wiki/Manifest_file>`_.
+      `Vikipedijoje <https://en.wikipedia.org/wiki/Manifest_file>`__.
+
+   metaduomenys
+      Duomenys apie duomenis yra vadinami metaduomenimis. Pavyzdžiui duomenų
+      struktūros aprašas konkrečiam CSV duomenų failui gali būti vadinamas CSV
+      failo metaduomenimis.
 
    prieigos taškas
       Prieigos taškas yra :term:`REST API` terminas, nurodantis URL kelio dalį iki tam
@@ -91,6 +100,14 @@ Terminų žodynas
       Viešieji žodynai, dar vadinami ontologijomis, šie žodynai dažnai yra
       gerai dokumentuoti ir skelbiami viešai, jie yra skirti globaliam
       susietūjų duomenų tinkui kurti (angl. *linked data*).
+
+   sisteminis pavadinimas
+      Sistemionis pavadinimas yra naudojamas objektų identifikavimui ir yra
+      naudojamas URL nuorodose ir visur kitur, kure reikia nurodyti ryšį su
+      objektų, naudojamas to objekto sisteminis pavadinimas.
+
+      Sisteminis pavadinimas sudaromas tik iš lotyniškų raidžių ir `-_/`
+      simbolių.
 
    žodynas
       Duomenų kontekste, žodynas yra susitarimas, kokiais pavadinimais vadinami
