@@ -128,4 +128,5 @@ Turinys
    sources.rst
    pk.rst
    norm.rst
+   dependencies.rst
    glossary.rst
