@@ -51,6 +51,7 @@ Globalūs identifikatoriai
 Jei tik įmanoma, reikėtų naudoti tokius identifikatorius, kurie yra globalūs.
 Pavyzdžiui jei turime tokią lentelę:
 
+=======  ========  ===========
 id       code      country
 =======  ========  ===========
 1        lt        Lietuva
