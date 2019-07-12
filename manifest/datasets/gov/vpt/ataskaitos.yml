@@ -6,15 +6,131 @@ version: 1
 date: "2019-06-25"
 owner: gov/vpt
 resources:
-  old:
+  ATN1:
     type: sql
     objects:
-      viesasis_pirkimas:
+      valstybe/pirkimas:
         source: ATN1
         properties:
           id:
             type: pk
-            source: ID
+            source: TENDER_ID
+            # TODO: CVPIS_APPENDIX.EXTERNAL_REF -> PLANNED_PROCUREMENT.EXTERNAL_REFERENCE_NUMBER
+            # Open-Contracting uses RelatedProcess model.
           pavadinimas:
             type: string
             source: TITLE
+          # FIXME: dates (periods)
+          # - PUBLISHED_DATE
+          pirkimas:
+            # FIXME: Reiksme turi buti none jei TENDER_ID ir
+            #        PROCUREMENT_NUMBER yra vienodi
+            type: ref
+            model: valstybe/pirkimas
+            source: PROCUREMENT_NUMBER
+          pirkimo_tipas:
+            # FIXME: Reiksme turi buti none jei TENDER_ID ir PROCUREMENT_NUMBER yra vienodi
+            type: string
+            const: vykdomasis
+            enum: 
+              - vykdomasis
+              - ataskaita
+          konkurso_tipas:
+            type: string
+            source: DESIGN_CONTEST_VALUE
+            enum:
+              - tarptautinis
+              - supaprastintas
+      valstybe/pirkimas/ataskaita:
+        source: ATN1$H
+        properties:
+          id:
+            type: pk
+            source: TENDER_ID
+          pirkimas:
+            type: ref
+            model: valstybe/pirkimas
+            source: TENDER_ID
+          EPS_REF_NR:
+            type: string
+            source: EPS_REF_NR
+      valstybe/pirkimas/organizacija:
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: AUTHORITY_ORG_NR
+          pirkimas:
+            type: ref
+            model: valstybe/pirkimas
+            source: TENDER_ID
+          adresas: 
+            type: spatial
+            source: POSTAL_ADDRESS_1
+      valstybe/pirkimas/dalyvis:
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: 
+              - TENDER_ID
+              - LEGAL_ENTITY_CODE_1
+          organizacija:
+            type: ref
+            model: valstybe/pirkimas/organizacija
+            source: LEGAL_ENTITY_CODE_1
+          tipas:
+            type: string
+            const: perkancioji
+            enum:
+              - vykdomoji
+              - perkancioji
+  ATN1_perkancioji:
+    type: sql
+    objects:
+      valstybe/pirkimas/organizacija:
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: LEGAL_ENTITY_CODE_1
+          pirkimas:
+            type: ref
+            model: valstybe/pirkimas
+            source: TENDER_ID
+          adresas: 
+          # TODO: prie adreso yra ne tik POSTAL_ADDRESS_1, bet ir TOWN_1, POSTAL_CODE_1, COUNTRY_1
+          
+            type: spatial
+            source: POSTAL_ADDRESS_1
+          kontaktinis_asmuo: 
+            type: ref
+            model: asmuo
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1
+          asmuo: 
+            type: ref
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1
+      asmuo/kontaktai: 
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: 
+              - asmuo
+              - tipas
+              - reiksme
+          asmuo:
+            type: ref
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1 
+          tipas:
+            type: string
+            const: email
+          reiksme: 
+            type: string
+            source: EMAIL_ADDRESS_1      
