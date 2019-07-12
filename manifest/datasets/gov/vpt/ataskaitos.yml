@@ -23,25 +23,24 @@ resources:
           # FIXME: dates (periods)
           # - PUBLISHED_DATE
           pirkimas:
-          	# FIXME: Reiksme turi buti none 		jei TENDER_ID ir PROCUREMENT_NUMBER 		yra vienodi
-          	type: ref
-          	model: valstybe/pirkimas
-          	source: PROCUREMENT_NUMBER
+            # FIXME: Reiksme turi buti none jei TENDER_ID ir
+            #        PROCUREMENT_NUMBER yra vienodi
+            type: ref
+            model: valstybe/pirkimas
+            source: PROCUREMENT_NUMBER
           pirkimo_tipas:
-          	# FIXME: Reiksme turi buti none jei TENDER_ID ir PROCUREMENT_NUMBER yra vienodi
-          	type: string
-          	const: vykdomasis
-          	enum: 
-          	  - vykdomasis
-          	  - ataskaita
-				 
+            # FIXME: Reiksme turi buti none jei TENDER_ID ir PROCUREMENT_NUMBER yra vienodi
+            type: string
+            const: vykdomasis
+            enum: 
+              - vykdomasis
+              - ataskaita
           konkurso_tipas:
-          	type: string
-          	source: DESIGN_CONTEST_VALUE
-          	enum:
-          	  - tarptautinis
-          	  - supaprastintas
-          
+            type: string
+            source: DESIGN_CONTEST_VALUE
+            enum:
+              - tarptautinis
+              - supaprastintas
       valstybe/pirkimas/ataskaita:
         source: ATN1$H
         properties:
@@ -53,7 +52,7 @@ resources:
             model: valstybe/pirkimas
             source: TENDER_ID
           EPS_REF_NR:
-          	type: string
+            type: string
             source: EPS_REF_NR
       valstybe/pirkimas/organizacija:
         source: ATN1
@@ -69,23 +68,23 @@ resources:
             type: spatial
             source: POSTAL_ADDRESS_1
       valstybe/pirkimas/dalyvis:
-      	source: ATN1
-      	properties:
-      	  id:
-      		  type: pk
-      		  source: 
-      		    - TENDER_ID
-      		    - LEGAL_ENTITY_CODE_1
-      		organizacija:
-      		 	type: ref
-      		 	model: valstybe/pirkimas/organizacija
-      		 	source: LEGAL_ENTITY_CODE_1
-      		tipas:
-      			type: string
-      			const: perkancioji
-      			enum:
-      				- vykdomoji
-      				- perkancioji
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: 
+              - TENDER_ID
+              - LEGAL_ENTITY_CODE_1
+          organizacija:
+            type: ref
+            model: valstybe/pirkimas/organizacija
+            source: LEGAL_ENTITY_CODE_1
+          tipas:
+            type: string
+            const: perkancioji
+            enum:
+              - vykdomoji
+              - perkancioji
   ATN1_perkancioji:
     type: sql
     objects:
@@ -104,36 +103,34 @@ resources:
           
             type: spatial
             source: POSTAL_ADDRESS_1
-   				kontaktinis_asmuo: 
-   				  type: ref
-   				  model: asmuo
-   				  source: 
-   				    - LEGAL_ENTITY_CODE_1
-   				    - CONTACT_POINT_1
-   		asmuo: 
-   		  source: ATN1
-   		  properties:
-   		    id:
-   		      type: pk
-   		      source: 
-   				    - LEGAL_ENTITY_CODE_1
-   				    - CONTACT_POINT_1
-   		asmuo/kontaktai: 
-   		  source: ATN1
-   		  properties:
-   		    id:
-   		      type: pk
-   		      source: 
-   		        - asmuo
-   		        - tipas
-   		        - reiksme
-   		    asmuo:
-   		      source: 
-   				    - LEGAL_ENTITY_CODE_1
-   				    - CONTACT_POINT_1 
-   		    tipas:
-   		      type: string
-   		      const: email
-   		    reiksme: 
-   		      type: string
-   		      source: EMAIL_ADDRESS_1      
+          kontaktinis_asmuo: 
+            type: ref
+            model: asmuo
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1
+          asmuo: 
+            type: ref
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1
+      asmuo/kontaktai: 
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: 
+              - asmuo
+              - tipas
+              - reiksme
+          asmuo:
+            type: ref
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1 
+          tipas:
+            type: string
+            const: email
+          reiksme: 
+            type: string
+            source: EMAIL_ADDRESS_1      

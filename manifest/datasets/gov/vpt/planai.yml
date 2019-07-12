@@ -28,7 +28,7 @@ resources:
             source: PLANNED_VALUE
           valiuta:
             type: ref
-            object: finansai/valiuta
+            #~object: finansai/valiuta
 
       valstybe/pirkimas/ataskaita:
         source: PLANNED_PROCUREMENT$H
@@ -51,7 +51,7 @@ resources:
             source: PLANNED_VALUE
           valiuta:
             type: ref
-            object: finansai/valiuta
+            #~object: finansai/valiuta
 
       valstybe/pirkimas/organizacija:
         source: PLANNED_PROCUREMENT$H

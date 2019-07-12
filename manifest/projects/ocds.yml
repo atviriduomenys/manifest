@@ -1,6 +1,6 @@
 name: ocds
 title: Open Contracting Data Standard
-website: https://standard.open-contracting.org/latest/en/
+#~website: https://standard.open-contracting.org/latest/en/
 type: project
 version: 1
 date: "2019-07-04"
