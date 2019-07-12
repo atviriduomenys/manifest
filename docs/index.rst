@@ -11,123 +11,118 @@ Atvirų duomenų manifestas
 Kas yra manifestas?
 -------------------
 
-IT srityje `manifestu <manifest_file>`_ vadinamas failas - rodyklė, kuriame pateikiamas
-visą paketą sudarančių failų sąrašas. Lyginant su knygomis, tai yra kažkas
-panašaus į knygos vardų ar dalykų rodyklę su nuorodomis, kuriame puslapyje apie
-tai rašoma. Lietuvos atvirų duomenų :term:`manifestas` yra duomenų rodyklė, kurioje
-surašyta informacija kur rasti duomenis.
+:term:`Manifestas` yra YAML failų rinkinys, kuriuose aprašomos duomenų struktūros.
+Manifestas yra vidinis komunikacijos protokolas, skirtas susikalbėti duomenų
+tiekėjams, duomenų naudotojams ir centriniam atvirų duomenų portalui.
 
-.. _manifest_file: https://en.wikipedia.org/wiki/Manifest_file
+:term:`Manifestas` turi pakankamai daug :term:`metaduomenų <metaduomenys>`
+(metaduomenys yra duomenys apie duomenis) apie duomenų rinkinį jį sudarančias
+duomenų struktūras. Tai leidžia automatizuoti duomenų importavimą į atvirų
+duomenų portalą, duomenų kokybės patikrinimą, duomenų eksportavimą į kitus
+formatus ir pan.
 
-Jei tiksliau, manifestas yra failų rinkinys, o tuose failuose pateikta
-informacija apie duomenų rinkinius, duomenų šaltinius ir duomenų struktūras.
+Pats savaime Manifestas nėra dar vienas standartas, tai yra vidinei
+komunikacijai skirtas protokolas, kurio pagrindu sudaroma galimybė
+tranformatuoti duomenis į įvairius formatus. Pats Manifestas yra aktualus tik
+tiekėjams norintiems atverti duomenis.
 
-Yra kelių rūšių manifesto failai, kurie skirti aprašyti skirtingiems dalykams:
 
-- baziniam duomenų modeliui atliekančiam žodyno vaidmenį,
-- tiekėjų duomenų rinkiniams,
-- duomenų naudotojų naudojamų duomenų rinkiniams.
+Kaip tai veikia?
+----------------
 
-Štai pavyzdys, kaip atrodo duomenų rinkinio aprašas:
+Kad geriau suprasti, kaip visa tai veikia, pabandykime aprašyti CSV failo
+duomenų struktūrą. Tarkime turime tokį CSV faile, kuris pasiekiamas adresu
+`https://example.com/countries.csv`, šio CSV failo turinys atrodo taip::
+
+   code,country
+   lt,Lietuva
+   lv,Latvija
+   ee,Estija
+
+Šiam CSV failui Manifesto duomenų struktūros aprašas atrodytų taip:
 
 .. code-block:: yaml
 
-   ---
    type: dataset
-   name: gov/lrs/ad
-   title: "Seimo nariai"
-   owner: gov/lrs
+   name: example/data
    resources:
-     seimo_nariai:
-       type: xml
-       source: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai
+     countries:
+       type: csv
        objects:
-         politika/seimas/seimo_narys:
-           source: /SeimoInformacija/SeimoKadencija/SeimoNarys
+         geografija/salis:
+           source: https://example.com/countries.csv
            properties:
-             id:
-               type: pk
-               source: "@asmens_id"
-             vardas:
+             kodas:
                type: string
-               source: "@vardas"
-             pavarde:
+               source: code
+             pavadinimas:
                type: string
-               source: "@pavardė"
+               source: country
 
-Šiame pavyzdyje `type: dataset` nurodo, kad turime duomenų rinkinio aprašą.
-Šiame apraše nurodytas Seimo kanceliarijos XML duomenų prieigos taškas ir
-aprašyta `politika/seimas/seimo_narys` objekto duomenų struktūra. Objektą
-`politika/seimas/seimo_narys` sudaro trys duomenų laukai `id`, `vardas` ir
-`pavarde`. XML duomenų šaltinyje esantys duomenys susieti su vidiniu žodynu.
-Pavyzdžiui, XML duomenų šaltinyje Seimo nario objektas pavadintas
-`/SeimoInformacija/SeimoKadencija/SeimoNarys`, o vidiniame žodyne tai pavadinta
-`politika/seimas/seimo_narys`.
+Šiame duomenų apraše yra pakankamai informacijos, kad galėtume automatiškai
+atlikti šiuose dalykus:
 
-Norint pasiekti šiuose duomenis, galima naudoti tokį duomenų prieigos tašką::
+- galima automatiškai importuoti duomenis iš nurodyto šaltinio `source:
+  https://example.com/countries.csv`,
 
-   /politika/seimas/seimo_narys/:dataset/gov/lrs/ad
+- galima automatiškai patikrinti duomenis, kadangi nurodyti duomenų tipai,
 
-Šiame duomenų rinkinyje naudojamo duomenų modelio aprašas atrodytų taip:
+- galima automatiškai patikrinti ar duomenų aprašas tikrai atitinka duomenis,
+  kadangi aprašas yra susietas su duomenų šaltiniu,
+
+- galima konvertuoti CSV failo duomenis į įvairius kitus duomenų formatus,
+  kadangi turime detalų duomenų struktūros aprašą, duomenų tipus ir pan.,
+
+- galima susieti duomenų šaltinyje naudojamą žodyną su atvirų duomenų portalo
+  naudojamu žodynu, šiuo atveju atlikami tokie susiejimai::
+
+    countries.csv -> geografija/salis
+    code          -> kodas
+    country       -> pavadinimas
+
+
+Kas yra žodynas?
+----------------
+
+Duomenų kontekste, žodynas yra tiesiog pavadinimų rinkinys, kuriais vadinami
+objektai ir objektų savybės. Iš mūsų `countries.csv` pavyzdžio, duomenų
+šaltinis naudoja vienokius laukų pavadinimus, tačiau importuojant duomenis
+nurodome kitokius pavadinimus.
+
+Aprašant duomenų struktūras nebūtina laikytis vieningo žodyno. Jei naudojami
+pavadinimai yra ne iš žodyno, tada prieš pavadinima turi būti rašomas taško
+simbolis (`.`). Po taško galima naudoti lygiai tokius pačius laukų pavadinimas
+arba bet kokius kitus pavadinimus. Tačiau vieningas atvirų duomenų portale
+naudojamas žodynas padeda geriau suvaldyti duomenis ir didina atvertų duomenų
+brandos lygį.
+
+Tikriausiai iškyla klausimas, kas sudaro žodynus ir kaip žinoti kokie
+pavadinimai yra naudojami atvirų duomenų portalo žodyne? Mūsų `countries.csv`
+pavyzdyje duomenų aprašo tipas yra `dataset`, yra dar vienas duomenų aprašo
+tipas pavadinimu `model`. Mūtend `model` aprašuose ir aprošomi atvirų duomenų
+portalo žodyno pavadinimai. Štai pavyzdys, kaip toks aprašas atrodo:
 
 .. code-block:: yaml
 
    type: model
-   name: politika/seimas/seimo_narys
-   title: "Seimo narys"
+   name: geografija/salis
    properties:
-     id:
-       type: pk
-     vardas:
+     kodas:
        type: string
-       title: "Vardas"
-     pavarde:
+     pavadinimas:
        type: string
-       title: "Pavardė"
 
-Visi duomenų rinkiniai turi naudoti vieningą duomenų modelį ir vieningą objektų
-ir savybių pavadinimų žodyną, todėl ir reikalingas atskiras duomenų modelio
-struktūros aprašas.
+Dažniausiai visi `model` aprašai saugomi `models/` kataloge ir failas iki YAML
+failo atitinka modelio pavadinimą, tai šuo atveju šis modelis turūtų būti
+išsaugotas `models/geografija/salis.yml` faile. Toks katalogas padeda langviau
+naviguoti tarp modelių aprašų ir naudoti tuos pačius pavadinimus aprašant
+duomenų šaltinius.
 
-Daug skirtingų duomenų šaltinių gali turėti tuos pačius duomenis. Apjungus
-tokius duomenis ir suteikus jiems globalius identifikatorius, duomenys tampa
-kanoniniais ir nepriklausomais nuo vieno tiekėjo. Tokius kanoninius duomenis
-galima pasiekti per tokį prieigos tašką::
-
-   /politika/seimas/seimo_narys
-
-Analogiškai, projektai naudojantys atvirus duomenis, pateikia tokius duomenų
-struktūros aprašus:
-
-.. code-block:: yaml
-
-   type: project
-   name: manoseimas
-   title: "manoseimas.lt"
-   objects:
-     politika/seimas/seimo_narys:
-       target: manoseimas.mps_v2.models.ParliamentMember
-       properties:
-         vardas:
-           type: string
-           target: first_name
-         pavarde:
-           type: string
-           target: last_name
-
-Turinti tokį aprašą, projektas lengvai gali gauti visus naujausius pakeitimus
-ir taip sinchronizuoti atvirus duomenis į savo vidinę duomenų bazę, visa tai
-padaroma tokio prieigos taško pagalba::
-
-   /:project/manoseimas/:changes
-
-Šis prieigos taškas, gražina visos su projektu susietų duomenų pakeitimus ir
-konvertuoja objektų ir savybių pavadinimus iš vidinio atvirų duomenų žodyno į
-vidinį projekto naudojamą žodyną.
 
 
 .. toctree::
    :maxdepth: 2
    :caption: Turinys:
 
+   sources.rst
    glossary.rst
