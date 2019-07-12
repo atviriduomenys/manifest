@@ -43,8 +43,8 @@ duomenų struktūrą. Tarkime turime tokį CSV faile, kuris pasiekiamas adresu
 
 .. code-block:: yaml
 
+   name: pavyzdziai/salys
    type: dataset
-   name: example/data
    resources:
      countries:
        type: csv
@@ -52,6 +52,9 @@ duomenų struktūrą. Tarkime turime tokį CSV faile, kuris pasiekiamas adresu
          geografija/salis:
            source: https://example.com/countries.csv
            properties:
+             id:
+               type: pk
+               source: code
              kodas:
                type: string
                source: code
@@ -59,64 +62,37 @@ duomenų struktūrą. Tarkime turime tokį CSV faile, kuris pasiekiamas adresu
                type: string
                source: country
 
-Šiame duomenų apraše yra pakankamai informacijos, kad galėtume automatiškai
-atlikti šiuose dalykus:
+Šio duomenų aprašo dėka galima automatiškai importuoti duomenis iš įvairių
+:ref:`šaltinių <sources>` vėliau juos eksportuoti įvairiais formatais.
 
-- galima automatiškai importuoti duomenis iš nurodyto šaltinio `source:
-  https://example.com/countries.csv`,
-
-- galima automatiškai patikrinti duomenis, kadangi nurodyti duomenų tipai,
-
-- galima automatiškai patikrinti ar duomenų aprašas tikrai atitinka duomenis,
-  kadangi aprašas yra susietas su duomenų šaltiniu,
-
-- galima konvertuoti CSV failo duomenis į įvairius kitus duomenų formatus,
-  kadangi turime detalų duomenų struktūros aprašą, duomenų tipus ir pan.,
-
-- galima susieti duomenų šaltinyje naudojamą žodyną su atvirų duomenų portalo
-  naudojamu žodynu, šiuo atveju atlikami tokie susiejimai::
-
-    countries.csv -> geografija/salis
-    code          -> kodas
-    country       -> pavadinimas
+========  =======  ===========
+id        kodas    pavadinimas
+========  =======  ===========
+552c4c24  lt       Lietuva
+b5dcb868  lv       Latvija
+68de1c04  ee       Estija
+========  =======  ===========
 
 
-Kas yra žodynas?
-================
+Funkcijos
+=========
 
-Duomenų kontekste, žodynas yra tiesiog pavadinimų rinkinys, kuriais vadinami
-objektai ir objektų savybės. Iš mūsų `countries.csv` pavyzdžio, duomenų
-šaltinis naudoja vienokius laukų pavadinimus, tačiau importuojant duomenis
-nurodome kitokius pavadinimus.
+Toks duomenų struktūros aprašas turi pakankamai informacijos, kad galėtume
+automatiškai atlikti dalykus išvardintus žemiau.
 
-Aprašant duomenų struktūras nebūtina laikytis vieningo žodyno. Jei naudojami
-pavadinimai yra ne iš žodyno, tada prieš pavadinima turi būti rašomas taško
-simbolis (`.`). Po taško galima naudoti lygiai tokius pačius laukų pavadinimas
-arba bet kokius kitus pavadinimus. Tačiau vieningas atvirų duomenų portale
-naudojamas žodynas padeda geriau suvaldyti duomenis ir didina atvertų duomenų
-brandos lygį.
+- Importuoti duomenis iš įvairių :ref:`šaltinių <sources>`.
 
-Tikriausiai iškyla klausimas, kas sudaro žodynus ir kaip žinoti kokie
-pavadinimai yra naudojami atvirų duomenų portalo žodyne? Mūsų `countries.csv`
-pavyzdyje duomenų aprašo tipas yra `dataset`, yra dar vienas duomenų aprašo
-tipas pavadinimu `model`. Mūtend `model` aprašuose ir aprošomi atvirų duomenų
-portalo žodyno pavadinimai. Štai pavyzdys, kaip toks aprašas atrodo:
+- Patikrinti šaltinio duomenų kokybę.
 
-.. code-block:: yaml
+- Patikrinti ar duomenų aprašas tikrai atitinka duomenų šaltinį.
 
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
+- Eksportuoti duomenis įvairiais kitais formatais.
 
-Dažniausiai visi `model` aprašai saugomi `models/` kataloge ir failas iki YAML
-failo atitinka modelio pavadinimą, tai šuo atveju šis modelis turūtų būti
-išsaugotas `models/geografija/salis.yml` faile. Toks katalogas padeda langviau
-naviguoti tarp modelių aprašų ir naudoti tuos pačius pavadinimus aprašant
-duomenų šaltinius.
+- Susieti įvairių šaltinių duomenis naudojant vieningą :ref:`žodyną <vocab>`.
+
+- Valdyti duomenis naudojant :ref:`API <api>`.
+
+- :ref:`Normalizuoti <norm>` denormalzuotas duomenų struktūras.
 
 
 Turinys
@@ -129,4 +105,6 @@ Turinys
    pk.rst
    norm.rst
    dependencies.rst
+   vocabulary.rst
+   api.rst
    glossary.rst

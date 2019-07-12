@@ -1,5 +1,7 @@
 .. default-role:: literal
 
+.. _sources:
+
 Duomenų šaltiniai
 #################
 
@@ -36,13 +38,10 @@ struktūrą, duomenų šaltinius, susieti pavadinimus su vieningu žodynu ir pan
 
 Šaltinio duomenų aprašo pagrindą sudaro:
 
-- duomenų rinkinys
-
-- resursas,
-
-- objektas,
-
-- savybė,
+- rinkinys
+- resursas
+- objektas
+- savybė
 
 Žemiau pateikiami išsamesni apraše naudojamų elementų pažymėtų `<>` žymėmis
 aprašymai.

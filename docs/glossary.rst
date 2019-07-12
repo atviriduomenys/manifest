@@ -1,5 +1,5 @@
-Terminų žodynas
-###############
+Terminai
+########
 
 .. glossary::
 
