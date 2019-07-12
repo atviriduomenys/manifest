@@ -118,19 +118,22 @@ savybės šaltinis
    Priklausomai nuo šaltinio, gali būti duomenų bazės lentelės laukas, JSON
    objekto savybė, reliatyvus XPath, skaičiuoklės lapo stulpelis.
 
-Resurso, objekto ir savybės šaltiniai `source` parametras priklauso nuo
+Resurso, objekto ir savybės šaltiniai (`source` parametras) priklauso nuo
 šaltinio tipo, žemiau pateikti visų palaikomų šaltinių aprašymai su
 paaiškinimais kaip interpretuojamas `source` kiekvienam iš jų.
 
-`sourceparams` yra objektas, kuriame pateikiami papildomi parametrai, kurie
-priklauso nuo šaltinio tipo.
+`sourceparams` yra papildomi parametrai, kurie priklauso nuo šaltinio tipo.
+
+Visuose pavyzdžiuose naudojama tie patys šalies duomenys, tik duomenys
+pateikiami skirtingais formatais, tačiau galutinis rezultatas visais atvejais
+yra identiškas (išskyrus `id` lauko reikšmes, plačiau apie tai skaitykite
+skyriuje :ref:`gid`).
 
 
 SQL
 ===
 
-SQL arba reliacinių duomenų bazių valdymo sistemos, kaip duomenų šaltinis
-aprašomas taip:
+SQL arba reliacinės duomenų bazių valdymo sistemos.
 
 resurso šaltinis
    SQL resurso šaltinis nurodo duomenų bazę, kurios duomenų struktūra aprašoma.
@@ -173,26 +176,68 @@ savybės šaltinis
    Lentelės lauko pavadinimas.
 
 
+Pavyzdys
+--------
+
+Tarkime turime PostgreSQL duomenų bazę, kurioje yra lentelę pavadinimu
+`COUNTRY`, lentelėje yra tokie duomenys:
+
+=======  ========  ===========
+id       code      country
+=======  ========  ===========
+1        lt        Lietuva
+2        lv        Latvija
+3        ee        Estija
+=======  ========  ===========
+
+Šios lentelės duomenų aprašas atrodys taip:
+
+.. code-block:: yaml
+
+   name: pavyzdziai/sql
+   type: dataset
+   resources:
+     duombaze:
+       type: sql
+       source: postgresql://user:password@host/dbname
+       objects:
+         geografija/salis:
+           source: COUNTRY
+           properties:
+             id:
+               type: pk
+               source: id
+             kodas:
+               type: string
+               source: code
+             pavadinimas:
+               type: string
+               source: country
+
+Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
+tašką::
+
+   /geografija/salis/:dataset/pavyzdziai/sql
+
+Atverta lentelė atrodys taip:
+
+==========================================  ===========  =================
+id                                          kodas        pavadinimas
+==========================================  ===========  =================
+`23fcdb953846e7c709d2967fb549de67d975c010`  lt           Lietuva
+`6f9f652eb6dae29e4406f1737dd6043af6142090`  lv           Latvija
+`11a0764da48b674ce0c09982e7c43002b510d5b5`  ee           Estija
+==========================================  ===========  =================
+
+
 CSV
 ===
+
+Kableliais atskirti failai.
 
 resurso šaltinis
    Gali būti nenurodomas, o jei nurodomas naudojamas kaip URL bazė objekto
    šaltiniui.
-
-   Pavyzdys:
-
-   .. code-block:: yaml
-
-      resources:
-        example:
-          type: csv
-          source: https://example.com/
-          objects:
-            geografija/salis:
-              source: countries.csv
-
-   Šiame pavyzdyje, `countries.csv` yra jungimas su `https://example.com/`.
 
 objekto šaltinis
    Pilnas URL iki CSV failo arba reliatyvus kelias iki CSV failo, jei nurodytas
@@ -200,6 +245,57 @@ objekto šaltinis
 
 savybės šaltinis
    Stulpelio pavadinimas iš CSV failo.
+
+
+Pavyzdys
+--------
+
+Tarkime turime CSV failą, kuris pasiekiamas adresu
+`https://example.com/countries.csv`, failo turinys yra toks::
+
+   id,code,country
+   1,lt,Lietuva
+   2,lv,Latvija
+   3,ee,Estija
+
+Šio CSV failo duomenų aprašas atrodys taip:
+
+.. code-block:: yaml
+
+   name: pavyzdziai/csv
+   type: dataset
+   resources:
+     example:
+       type: csv
+       source: https://example.com/
+       objects:
+         geografija/salis:
+           source: countries.csv
+           properties:
+             id:
+               type: pk
+               source: id
+             kodas:
+               type: string
+               source: code
+             pavadinimas:
+               type: string
+               source: country
+
+Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
+tašką::
+
+   /geografija/salis/:dataset/pavyzdziai/csv
+
+Atverta lentelė atrodys taip:
+
+==========================================  ===========  =================
+id                                          kodas        pavadinimas
+==========================================  ===========  =================
+`23fcdb953846e7c709d2967fb549de67d975c010`  lt           Lietuva
+`6f9f652eb6dae29e4406f1737dd6043af6142090`  lv           Latvija
+`11a0764da48b674ce0c09982e7c43002b510d5b5`  ee           Estija
+==========================================  ===========  =================
 
 
 JSON
@@ -231,24 +327,196 @@ objekto šaltinis
    objekto.
 
 savybės šaltinis
-   JSON objekto attributas.
+   JSON objekto atributas.
+
+
+Pavyzdys
+--------
+
+Tarkime turime JSON failą, kuris pasiekiamas adresu
+`https://example.com/countries.json`, failo turinys yra toks:
+
+.. code-block:: json
+
+   {
+       "countries": [
+           {"id": 1, "code": "lt", "name": "Lietuva"},
+           {"id": 1, "code": "lv", "name": "Latvija"},
+           {"id": 1, "code": "ee", "name": "Estija"}
+       ]
+   }
+
+Šio JSON failo duomenų aprašas atrodys taip:
+
+.. code-block:: yaml
+
+   name: pavyzdziai/json
+   type: dataset
+   resources:
+     example:
+       type: json
+       source: https://example.com/countries.json
+       objects:
+         geografija/salis:
+           source: countries
+           properties:
+             id:
+               type: pk
+               source: id
+             kodas:
+               type: string
+               source: code
+             pavadinimas:
+               type: string
+               source: name
+
+Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
+tašką::
+
+   /geografija/salis/:dataset/pavyzdziai/json
+
+Atverta lentelė atrodys taip:
+
+==========================================  ===========  =================
+id                                          kodas        pavadinimas
+==========================================  ===========  =================
+`23fcdb953846e7c709d2967fb549de67d975c010`  lt           Lietuva
+`6f9f652eb6dae29e4406f1737dd6043af6142090`  lv           Latvija
+`11a0764da48b674ce0c09982e7c43002b510d5b5`  ee           Estija
+==========================================  ===========  =================
 
 
 XML
 ===
 
 resurso šaltinis
+   URL iki XML failo.
 
 objekto šaltinis
+   XPath užklausa iki elemento iš kurio norime imti duomenis.
 
 savybės šaltinis
+   XPath užklausa, kuri vykdoma objekto šaltinio elementų kontekste.
+
+
+Pavyzdys
+--------
+
+Tarkime turime XML failą, kuris pasiekiamas adresu
+`https://example.com/countries.xml`, failo turinys yra toks:
+
+.. code-block:: xml
+
+   <root>
+      <country id="1" code="lt">Lietuva</country>
+      <country id="2" code="lv">Latvija</country>
+      <country id="3" code="ee">Estija</country>
+   </root>
+
+Šio XML failo duomenų aprašas atrodys taip:
+
+.. code-block:: yaml
+
+   name: pavyzdziai/xml
+   type: dataset
+   resources:
+     example:
+       type: xml
+       source: https://example.com/countries.xml
+       objects:
+         geografija/salis:
+           source: /root/country
+           properties:
+             id:
+               type: pk
+               source: "@id"
+             kodas:
+               type: string
+               source: "@code"
+             pavadinimas:
+               type: string
+               source: "text()"
+
+Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
+tašką::
+
+   /geografija/salis/:dataset/pavyzdziai/xml
+
+Atverta lentelė atrodys taip:
+
+==========================================  ===========  =================
+id                                          kodas        pavadinimas
+==========================================  ===========  =================
+`23fcdb953846e7c709d2967fb549de67d975c010`  lt           Lietuva
+`6f9f652eb6dae29e4406f1737dd6043af6142090`  lv           Latvija
+`11a0764da48b674ce0c09982e7c43002b510d5b5`  ee           Estija
+==========================================  ===========  =================
+
 
 
 XLSX
 ====
 
 resurso šaltinis
+   URL iki XLSX failo.
 
 objekto šaltinis
+   Skaičiuoklės lapo pavadinimas.
 
 savybės šaltinis
+   Skaičiuoklės lentelės stulpelio pavadinimas.
+
+
+Pavyzdys
+--------
+
+Tarkime turime XLSX failą, kuris pasiekiamas adresu
+`https://example.com/countries.xlsx`, šiame skaičiuoklės faile yra lapas
+pavadinimu `COUNTRIES`, o lapo turinys atrodo taip:
+
+=======  ========  ===========
+id       code      country
+=======  ========  ===========
+1        lt        Lietuva
+2        lv        Latvija
+3        ee        Estija
+=======  ========  ===========
+
+Šios lentelės duomenų aprašas atrodys taip:
+
+.. code-block:: yaml
+
+   name: pavyzdziai/xlsx
+   type: dataset
+   resources:
+     duombaze:
+       type: sql
+       source: https://example.com/countries.xlsx
+       objects:
+         geografija/salis:
+           source: COUNTRIES
+           properties:
+             id:
+               type: pk
+               source: id
+             kodas:
+               type: string
+               source: code
+             pavadinimas:
+               type: string
+               source: country
+
+Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
+tašką::
+
+   /geografija/salis/:dataset/pavyzdziai/xlsx
+
+Atverta lentelė atrodys taip:
+
+==========================================  ===========  =================
+id                                          kodas        pavadinimas
+==========================================  ===========  =================
+`23fcdb953846e7c709d2967fb549de67d975c010`  lt           Lietuva
+`6f9f652eb6dae29e4406f1737dd6043af6142090`  lv           Latvija
+`11a0764da48b674ce0c09982e7c43002b510d5b5`  ee           Estija
+==========================================  ===========  =================

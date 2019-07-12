@@ -1,0 +1,4 @@
+.. _gid:
+
+Globalūs identifikatoriai
+#########################

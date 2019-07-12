@@ -6,10 +6,10 @@
 .. default-role:: literal
 
 Atvirų duomenų manifestas
-=========================
+#########################
 
 Kas yra manifestas?
--------------------
+===================
 
 :term:`Manifestas` yra YAML failų rinkinys, kuriuose aprašomos duomenų struktūros.
 Manifestas yra vidinis komunikacijos protokolas, skirtas susikalbėti duomenų
@@ -28,7 +28,7 @@ tiekėjams norintiems atverti duomenis.
 
 
 Kaip tai veikia?
-----------------
+================
 
 Kad geriau suprasti, kaip visa tai veikia, pabandykime aprašyti CSV failo
 duomenų struktūrą. Tarkime turime tokį CSV faile, kuris pasiekiamas adresu
@@ -82,7 +82,7 @@ atlikti šiuose dalykus:
 
 
 Kas yra žodynas?
-----------------
+================
 
 Duomenų kontekste, žodynas yra tiesiog pavadinimų rinkinys, kuriais vadinami
 objektai ir objektų savybės. Iš mūsų `countries.csv` pavyzdžio, duomenų
@@ -119,10 +119,12 @@ naviguoti tarp modelių aprašų ir naudoti tuos pačius pavadinimus aprašant
 duomenų šaltinius.
 
 
+Turinys
+=======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Turinys:
 
    sources.rst
+   gid.rst
    glossary.rst
