@@ -10,9 +10,9 @@ objects:
     properties:
       ocid:
         type: string
-  releases:
+  valstybe/pirkimas/ataskaita:
     # https://standard.open-contracting.org/latest/en/schema/release/#
-    source: valstybe/pirkimas/ataskaita
+    target: releases
     properties:
       ocid:
         type: string
@@ -22,7 +22,7 @@ objects:
           Lietuvos viešųjų pirkimų tarnybai išduotas  OCID prefiksas yra
           `ocds-jpcd7i`.
       id:
-        type: string
+        type: ocid
         target: id
       data:
         type: datetime

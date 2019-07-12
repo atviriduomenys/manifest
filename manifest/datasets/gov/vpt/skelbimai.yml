@@ -1,0 +1,15 @@
+---
+name: gov/vpt/skelbimai
+title: "Viešųjų pirkimų skelbimai"
+type: dataset
+version: 1
+date: "2019-06-25"
+owner: gov/vpt
+resources:
+  F02_2014:
+    type: sql
+    objects:
+      valstybe/pirkimas/ataskaita:
+        properties:
+          id:
+            type: pk
