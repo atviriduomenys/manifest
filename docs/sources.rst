@@ -127,7 +127,7 @@ paaiškinimais kaip interpretuojamas `source` kiekvienam iš jų.
 Visuose pavyzdžiuose naudojama tie patys šalies duomenys, tik duomenys
 pateikiami skirtingais formatais, tačiau galutinis rezultatas visais atvejais
 yra identiškas (išskyrus `id` lauko reikšmes, plačiau apie tai skaitykite
-skyriuje :ref:`gid`).
+skyriuje :ref:`pk`).
 
 
 SQL

@@ -126,5 +126,6 @@ Turinys
    :maxdepth: 2
 
    sources.rst
-   gid.rst
+   pk.rst
+   norm.rst
    glossary.rst

@@ -56,6 +56,14 @@ Terminų žodynas
       struktūros aprašas konkrečiam CSV duomenų failui gali būti vadinamas CSV
       failo metaduomenimis.
 
+   normalizavimas
+      Duomenų normalizavimas yra duomenų struktūros transformavimo procesas
+      taikant taip vadinamas normalines formas, tam kad sumažinti duomenų
+      pasikartojimą.
+
+      Plačiau apie tai skaitykite `Vikipedijoje
+      <https://en.wikipedia.org/wiki/Database_normalization>`__.
+
    prieigos taškas
       Prieigos taškas yra :term:`REST API` terminas, nurodantis URL kelio dalį iki tam
       tikro resurso.
