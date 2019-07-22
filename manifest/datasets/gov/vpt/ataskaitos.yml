@@ -26,7 +26,7 @@ resources:
             # FIXME: Reiksme turi buti none jei TENDER_ID ir
             #        PROCUREMENT_NUMBER yra vienodi
             type: ref
-            model: valstybe/pirkimas
+            object: valstybe/pirkimas
             source: PROCUREMENT_NUMBER
           pirkimo_tipas:
             # FIXME: Reiksme turi buti none jei TENDER_ID ir PROCUREMENT_NUMBER yra vienodi
@@ -49,12 +49,12 @@ resources:
             source: TENDER_ID
           pirkimas:
             type: ref
-            model: valstybe/pirkimas
+            object: valstybe/pirkimas
             source: TENDER_ID
           EPS_REF_NR:
             type: string
             source: EPS_REF_NR
-      valstybe/pirkimas/organizacija:
+      organizacija:
         source: ATN1
         properties:
           id:
@@ -62,7 +62,7 @@ resources:
             source: AUTHORITY_ORG_NR
           pirkimas:
             type: ref
-            model: valstybe/pirkimas
+            object: valstybe/pirkimas
             source: TENDER_ID
           adresas: 
             type: spatial
@@ -77,7 +77,7 @@ resources:
               - LEGAL_ENTITY_CODE_1
           organizacija:
             type: ref
-            model: valstybe/pirkimas/organizacija
+            object: organizacija
             source: LEGAL_ENTITY_CODE_1
           tipas:
             type: string
@@ -85,52 +85,113 @@ resources:
             enum:
               - vykdomoji
               - perkancioji
-  ATN1_perkancioji:
+
+  # Įstaiga gali vykdyti pirkimą pati arba įgalioti pirkimo vykdymą kitai
+  # įstaigai. Čia `ATN1/perkancioji` dalyje nurodyta kas perka, t.y. kas užsakė
+  # pirkimą.
+  ATN1/perkancioji:
     type: sql
     objects:
-      valstybe/pirkimas/organizacija:
+      valstybe/pirkimas/dalyvis:
+        source: ATN1
+        properties:
+          id:
+            type: pk
+            source: 
+              - TENDER_ID
+              - LEGAL_ENTITY_CODE_1
+          organizacija:
+            type: ref
+            object: organizacija
+            source: LEGAL_ENTITY_CODE_1
+          tipas:
+            type: string
+            const: perkancioji
+            enum:
+              - vykdancioji
+              - perkancioji
+          cvpis_nuoroda:
+            type: string
+            source: URL_BUYER_1
+          ar_suteikti_igaliojimai_kitai_perkanciai_organizacijai:
+            type: boolean
+            source: IS_PROCUREMENT_POWER_GRANTED_TO_ANOTHER_AUTHORITY
+      organizacija:
         source: ATN1
         properties:
           id:
             type: pk
             source: LEGAL_ENTITY_CODE_1
-          pirkimas:
-            type: ref
-            model: valstybe/pirkimas
-            source: TENDER_ID
+          registracijos_numeris:
+            type: string
+            source: LEGAL_ENTITY_CODE_1
+          pavadinimas:
+            type: string
+            source: OFFICIAL_NAME_1
           adresas: 
-          # TODO: prie adreso yra ne tik POSTAL_ADDRESS_1, bet ir TOWN_1, POSTAL_CODE_1, COUNTRY_1
-          
-            type: spatial
+            # TODO: prie adreso yra ne tik POSTAL_ADDRESS_1, bet ir TOWN_1, POSTAL_CODE_1, COUNTRY_1
+            # TODO: transformuoti adresą į koordinates
+            type: string
             source: POSTAL_ADDRESS_1
-          kontaktinis_asmuo: 
-            type: ref
-            model: asmuo
-            source: 
-              - LEGAL_ENTITY_CODE_1
-              - CONTACT_POINT_1
-          asmuo: 
-            type: ref
-            source: 
-              - LEGAL_ENTITY_CODE_1
-              - CONTACT_POINT_1
-      asmuo/kontaktai: 
+          interneto_svetaine:
+            type: string
+            source: URL_GENERAL_1
+      organizacija/narys:
         source: ATN1
         properties:
           id:
             type: pk
-            source: 
-              - asmuo
-              - tipas
-              - reiksme
+            source:
+              - LEGAL_ENTITY_CODE_1  # Įmonės kodas, kurioje dirba asmuo.
+              - CONTACT_POINT_1      # Asmens vardas ir pavardė.
           asmuo:
             type: ref
+            object: asmuo
             source: 
-              - LEGAL_ENTITY_CODE_1
-              - CONTACT_POINT_1 
+              - LEGAL_ENTITY_CODE_1  # Įmonės kodas, kurioje dirba asmuo.
+              - CONTACT_POINT_1      # Asmens vardas ir pavardė.
+          organizacija:
+            type: ref
+            object: organizacija
+            source: LEGAL_ENTITY_CODE_1
+      asmuo/kontaktas:
+        source: ATN1
+        properties:
+          id: 
+            type: pk
+            source: 
+              - LEGAL_ENTITY_CODE_1  # Įmonės kodas, kurioje dirba asmuo.
+              - CONTACT_POINT_1      # Asmens vardas ir pavardė.
+              # FIXME: how to include `const: email` here? This does not come
+              #        from source, it is defined in this YAML file.
+              # - {const: email}
+              - EMAIL_ADDRESS_1      # El. pašto adresas.
           tipas:
             type: string
             const: email
           reiksme: 
             type: string
             source: EMAIL_ADDRESS_1      
+          asmuo:
+            type: ref
+            object: asmuo
+            source: 
+              - LEGAL_ENTITY_CODE_1
+              - CONTACT_POINT_1 
+      asmuo:
+        source: ATN1
+        properties:
+          id: 
+            type: pk
+            source: 
+              - LEGAL_ENTITY_CODE_1  # Įmonės kodas, kurioje dirba asmuo.
+              - CONTACT_POINT_1      # Asmens vardas ir pavardė.
+          pavadinimas:
+            # Asmens vardas, pavardė.
+            type: string
+            source: CONTACT_POINT_1
+
+  # Įstaiga, kuri nėra pirkimo užsakovas, bet vykdo pirkimą, už kurią nors kitą
+  # įstaigą.
+  #ATN1/vykdancioji:
+    # TODO:

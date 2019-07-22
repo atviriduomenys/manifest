@@ -142,6 +142,13 @@ resurso šaltinis
    bazės prisijungimai turi būti perduodami per :term:`aplinkos kintamuosiuos
    <aplinkos kintamasis>` arba konfigūracijos failus.
 
+   :term:`Aplinkos kintamasis <aplinkos kintamasis>` formuojamas taip::
+
+      SPINTA_DATASETS_{manifest.name}_{dataset.name}_{resource.name}
+
+   `{manifest.name}` dažniausiai bus `default`, nebent naudojante kelis
+   manifestų katalogus.
+
    Duomenų bazės šaltinis aprašomas naudojant tokią URL schemą::
 
       <db>+<valdiklis>://<naudotojas>:<slaptažodis>@<serveris>:<prievadas>/<pavadinimas>
@@ -212,6 +219,12 @@ id       code      country
              pavadinimas:
                type: string
                source: country
+
+Pavyzdyje duomenų šaltinis nurodytas tiesiogiai pačiame YAML faile, tačiau
+šaltinį galima nurodyti ir :term:`aplinkos kintamojo <aplinkos kintamasis>`
+pagabla::
+
+      SPINTA_DATASETS_DEFAULT_PAVYZDZIAI_SQL_DUOMBAZE=postgresql://user:password@host/dbname
 
 Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
 tašką::
