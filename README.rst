@@ -18,7 +18,7 @@ What's it all about?
 ====================
 
 Currently Lithuanian government is working on a open data project. The idea of
-this repository is to help gevernment decide what data to open first and how to
+this repository is to help government decide what data to open first and how to
 transform data so that final result would be as close as posible to what is
 needed for data users.
 
