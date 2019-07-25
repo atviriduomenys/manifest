@@ -43,6 +43,37 @@ Terminai
       naudojami skirtingi duomenų serializavimo formatai, koduotės ir skirtingi
       žodynai.
 
+   kanoniniai duomenys
+      Kanoniniai duomenys yra tarsi duomenų etalonas, kuris nusako kokios
+      duomenų reikšmės yra teisingos. Pavyzdžiui įmonės pavadinimas gali būti
+      užrašomas įvairiausiomis formomis, pavyzdžiui:
+
+      =================================
+      Įmonės pavadinimas
+      =================================
+      UAB "Duomesta"
+      UAB „Duomesta“
+      Duomesta
+      DUOMESTA
+      Uždaroji akcinė bendrovė Duomesta
+      Duomesta, UAB
+      DSTA UAB
+      =================================
+
+      Jei duomenų rinkinyje nėra pateiktas įmonės registracijos kodas, tada
+      unikaliai identifikuoti įmonę yra gan sudėtinga.
+
+      Tačiau turint autoritetingus kanoninius duomenis:
+
+      ============ ==================
+      Įmonės kodas Įmones pavadinimas
+      ============ ==================
+      111111111    UAB "Duomesta"
+      ============ ==================
+
+      Užduotis unikaliai identifikuoti įmonę pasidaro paprastesnė. Todėl
+      kanoniniai duomenys yra labai svarbūs.
+
    manifestas
       Atvirų duomenų manifestas yra :term:`YAML` failų rinkinys, kuriuose
       aprašyti duomenų šaltiniai ir struktūra.
