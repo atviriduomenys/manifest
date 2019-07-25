@@ -7,13 +7,12 @@ version: 1
 date: "2018-12-01"
 website: https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1
 owner: gov/lrs
-stars: 2
 resources:
-  seimo_nariai:
+  nariai:
     type: xml
     source: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija}
     objects:
-      politika/seimas/seimo_narys:
+      politika/seimas/narys:
         dependencies:
           kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
         source: /SeimoInformacija/SeimoKadencija/SeimoNarys
@@ -24,7 +23,7 @@ resources:
           vardas:
             type: string
             source: "@vardas"
-          pavardė:
+          pavarde:
             type: string
             source: "@pavardė"
           gimimo_data:
@@ -41,6 +40,11 @@ resources:
             type: string
             source: "@biografijos_nuoroda"
             stars: 1
+          kadencija:
+            type: ref
+            object: politika/seimas/kadencija
+            source: kadencija
+            dependencies: true
 
       politika/seimas/kontaktas:
         dependencies:
