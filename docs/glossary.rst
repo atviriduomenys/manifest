@@ -51,13 +51,13 @@ Terminai
       ============ =================================
       Įmonės kodas Įmonės pavadinimas
       ============ =================================
-      -            UAB "Duomesta"
-      -            UAB „Duomesta“
-      -            Duomesta
-      -            DUOMESTA
-      -            Uždaroji akcinė bendrovė Duomesta
-      -            Duomesta, UAB
-      -            DSTA UAB
+      \-           UAB "Duomesta"
+      \-           UAB „Duomesta“
+      \-           Duomesta
+      \-           DUOMESTA
+      \-           Uždaroji akcinė bendrovė Duomesta
+      \-           Duomesta, UAB
+      \-           DSTA UAB
       ============ =================================
 
       Jei duomenų rinkinyje nėra pateiktas įmonės registracijos kodas, tada
