@@ -1,6 +1,18 @@
 import pathlib
+import pprint
 
 import pytest
+import snoop
+import pprintpp
+
+# See: https://github.com/alexmojaki/snoop
+snoop.install(
+    # Force colors, since pytest captures all output by default.
+    color=True,
+)
+
+# pprintpp produces much more readable output.
+pprint.pformat = pprintpp.pformat
 
 pytest_plugins = [
     'spinta.testing.pytest',

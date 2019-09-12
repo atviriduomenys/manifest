@@ -14,7 +14,7 @@ from spinta.config import create_context
 from spinta import components
 from spinta import commands
 
-yaml = YAML(typ='safe')
+yaml = YAML()
 
 
 def load_spinta_context():
@@ -145,8 +145,41 @@ def update_manifest_files(context, rows):
         dataset_dir = manifest_dir / 'datasets' / dataset_dir
         dataset_dir.mkdir(mode=0o755, parents=True, exist_ok=True)
         dataset_file = dataset_dir / (dataset_file + '.yml')
+        if dataset_file.exists():
+            orig = yaml.load(dataset_file.read_text())
+            _update_node(orig, dataset)
+            dataset = orig
         with dataset_file.open('w') as f:
             yaml.dump(dataset, f)
+
+
+def _update_node(orig, data, depth=0):
+    levels = ['resources', 'objects', 'properties']
+
+    if depth > len(levels) - 1:
+        # No more levels left, stop recursion.
+        return
+
+    children = levels[depth]
+
+    # Update node params, only changed keys are updated.
+    for k, v in data.items():
+        if k != children:
+            orig[k] = v
+
+    # Replace node children, existing children will be updated, children not in data will be removed.
+    if children in data:
+        if children in orig:
+            for k in set(orig[children]) | set(data[children]):
+                if k in data[children]:
+                    if k in orig[children]:
+                        _update_node(orig[children][k], data[children][k], depth + 1)
+                    else:
+                        orig[children][k] = data[children][k]
+                elif k in orig[children]:
+                    del orig[children][k]
+        else:
+            orig[children] = data[children]
 
 
 class Row:

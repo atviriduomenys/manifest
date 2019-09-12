@@ -8,6 +8,7 @@ pytest
 pytest-cov
 pytest-mock
 responses
+snoop
 sphinx==1.8.5
 sphinx_rtd_theme
 sqlalchemy-utils

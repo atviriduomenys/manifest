@@ -1,3 +1,4 @@
+import datetime
 import pathlib
 
 from ruamel.yaml import YAML
@@ -88,6 +89,8 @@ def test_update_existing_file(context, tmpdir):
         '            ref: org',
         '            # More comments',
         '            source: ORG  # at the end of line',
+        '          legacy:',
+        '            type: string',
     ]))
 
     context.load({
@@ -112,11 +115,17 @@ def test_update_existing_file(context, tmpdir):
     assert sorted([str(p.relative_to(tmpdir)) for p in tmpdir.glob('**/*.yml')]) == [
         'datasets/gov/vpt/ataskaitos.yml',
     ]
-    assert yaml.load((tmpdir / 'datasets/gov/vpt/ataskaitos.yml').read_text()) == {
+    content = (tmpdir / 'datasets/gov/vpt/ataskaitos.yml').read_text()
+    assert '# Some comment' in content
+    assert '# at the end of line' in content
+    assert yaml.load(content) == {
         'type': 'dataset',
         'name': 'gov/vpt/ataskaitos',
+        'date': 1,
+        'version': datetime.date(2019, 8, 27),
         'resources': {
             'default': {
+                'type': 'sql',
                 'objects': {
                     'valstybe/pirkimas': {
                         'source': 'ATN1',
