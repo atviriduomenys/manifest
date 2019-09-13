@@ -1,0 +1,165 @@
+type: dataset
+name: gov/vpt/new
+date: 2019-09-13
+version: 1
+resources:
+  mssql:
+    type: sql
+    objects:
+      atn1:
+        valstybe/pirkimas/ataskaita:
+          source: ATN1$H
+          properties:
+            etapas:
+              type: string
+              const: award
+            pirkimas:
+              type: ref
+              ref: valstybe/pirkimas
+              source: TENDER_ID
+            data:
+              type: date
+              source: PUBLISHED_DATE
+            pavadinimas:
+              type: string
+              source: TITLE
+            id:
+              type: pk
+              source: TENDER_ID
+        valstybe/pirkimas/objektas:
+          source: ATN1$H
+          properties:
+            pavadinmias:
+              type: string
+              source: PROCUREMENT_OBJECT_NAME
+      atn1/perkancioji:
+        valstybe/pirkimas/dalyvis:
+          source: ATN1$H
+          properties:
+            role:
+              type: string
+              const: buyer
+            pavadinimas:
+              type: string
+              source: OFFICIAL_NAME_1
+            organizacija:
+              type: ref
+              ref: organizacija
+              source: LEGAL_ENTITY_CODE_1
+            id:
+              type: pk
+              source:
+              - TENDER_ID
+              - LEGAL_ENTITY_CODE_1
+        valstybe/pirkimas/dalyvis/adresas:
+          source: ATN1$H
+          properties:
+            adresas:
+              type: string
+              source: POSTAL_ADDRESS_1
+            gyvenviete:
+              type: string
+              source: TOWN_1
+            salis:
+              type: string
+              source: COUNTRY_1
+      atn1/vykdancioji:
+        valstybe/pirkimas/dalyvis:
+          source: ATN1$H
+          properties:
+            role:
+              type: string
+              const: procuringEntity
+            pavadinimas:
+              type: string
+              source: OFFICIAL_NAME_2
+            organizacija:
+              type: ref
+              ref: organizacija
+              source: LEGAL_ENTITY_CODE_2
+            id:
+              type: pk
+              source:
+              - TENDER_ID
+              - LEGAL_ENTITY_CODE_2
+        valstybe/pirkimas/dalyvis/adresas:
+          source: ATN1$H
+          properties:
+            adresas:
+              type: string
+              source: POSTAL_ADDRESS_2
+            gyvenviete:
+              type: string
+              source: TOWN_2
+            salis:
+              type: string
+              source: COUNTRY_2
+      atn1/dalyvis:
+        valstybe/pirkimas/dalyvis:
+          source: ATN1_TENDERER_LIST$H
+          properties:
+            id:
+              type: pk
+              source: ID
+            pirkimas:
+              type: ref
+              ref: valstybe/pirkimas
+              source: ATN1_ID
+            organizacija:
+              type: ref
+              ref: organizacija
+              source: CODE
+            pavadinimas:
+              type: string
+              source: NAME
+        valstybe/pirkimas/dalyvis/adresas:
+          source: ATN1_TENDERER_LIST$H
+          properties:
+            adresas:
+              type: string
+              source: ADDRESS
+      atn2/dalyvis:
+        valstybe/pirkimas/dalyvis:
+          source: ATN2_CONTRACTED_CANDIDATE_LIST$H
+          properties:
+            organizacija:
+              type: ref
+              ref: organizacija
+              source: TENDERER_NAME
+      plan:
+        valstybe/pirkimas/ataskaita:
+          source: PLANNED_PROCUREMENT$H
+          properties:
+            id:
+              type: pk
+              source: ID
+            pirkimas:
+              type: ref
+              ref: valstybe/pirkimas
+              source: EXTERNAL_REFERENCE_NUMBER
+            kaina:
+              type: number
+              source: PLANNED_VALUE
+      f02:
+        valstybe/pirkimas/ataskaita:
+          source: F02_2014
+          properties: {}
+        valstybe/pirkimas/dalyvis:
+          source: F02_2014
+          properties:
+            kaina:
+              type: number
+              source: VAL_ESTIMATED_TOTAL
+        valstybe/pirkimas/objektas:
+          source: F02_OBJECT_DESCR
+          properties:
+            kaina:
+              type: number
+              source: VAL_OBJECT
+      f02/perkancioji:
+        valstybe/pirkimas/dalyvis:
+          source: F02_2014
+          properties:
+            pavadinimas:
+              type: string
+              source: OFFICIALNAME_1

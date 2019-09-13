@@ -11,51 +11,51 @@ resources:
     type: html
     source: https://tm.lrv.lt/lt/veiklos-sritys-1/politiniu-partiju-steigimas-ir-registravimas/politiniu-partiju-sarasai
     objects:
-      politika/partija:
-        canonical: true
-        extends: teise/juridinis_asmuo
-        source:
-          # pdf: "https://tm.lrv.lt/uploads/tm/documents/files/(ARCHYVINIS)%20Lietuvos%20Respublikos%20politini%C5%B3%20partij%C5%B3%20s%C4%85ra%C5%A1as%202019-03-01%20su%20archyvu(1).pdf"
-        properties:
-          id:
-            type: pk
-            source: "Juridinio asmens kodas"
-          pavadinimas:
-            type: string
-            source: "Pavadinimas"
-          trumpinys:
-            type: string
-            stars: 0
-          adresas:
-            type: ref
-            source: "Adresas"
-            ref: geografija/lietuva/adresas
-            flags:
-              - unreadable
-          vadovas:
-            type: ref
-            source: "Vadovas"
-            ref: asmuo
-            flags:
-              - noref
-          statusas:
-            type: string
-            source: "Teisinis statusas"
-          nariu:
-            type: integer
-            source: "Partinjos narių skaičius"
-          iregistruota:
-            type: date
-            source: "Įregistravimo data"
-          isregistruota:
-            type: date
-            source: "Išregistravimo data"
-          reorganizuota:
-            type: string
-            source: "Pavadinimas"
-            enum: [prijungta, sujungta]
-          reorganizuota_i:
-            type: ref
-            source: "Pavadinimas"
-            ref: politika/partija
-
+      '':
+        politika/partija:
+          canonical: true
+          extends: teise/juridinis_asmuo
+          source:
+            # pdf: "https://tm.lrv.lt/uploads/tm/documents/files/(ARCHYVINIS)%20Lietuvos%20Respublikos%20politini%C5%B3%20partij%C5%B3%20s%C4%85ra%C5%A1as%202019-03-01%20su%20archyvu(1).pdf"
+          properties:
+            id:
+              type: pk
+              source: "Juridinio asmens kodas"
+            pavadinimas:
+              type: string
+              source: "Pavadinimas"
+            trumpinys:
+              type: string
+              stars: 0
+            adresas:
+              type: ref
+              source: "Adresas"
+              ref: geografija/lietuva/adresas
+              flags:
+                - unreadable
+            vadovas:
+              type: ref
+              source: "Vadovas"
+              ref: asmuo
+              flags:
+                - noref
+            statusas:
+              type: string
+              source: "Teisinis statusas"
+            nariu:
+              type: integer
+              source: "Partinjos narių skaičius"
+            iregistruota:
+              type: date
+              source: "Įregistravimo data"
+            isregistruota:
+              type: date
+              source: "Išregistravimo data"
+            reorganizuota:
+              type: string
+              source: "Pavadinimas"
+              enum: [prijungta, sujungta]
+            reorganizuota_i:
+              type: ref
+              source: "Pavadinimas"
+              ref: politika/partija

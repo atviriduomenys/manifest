@@ -1,4 +1,5 @@
 import collections
+import datetime
 import json
 import os
 import pickle
@@ -63,6 +64,7 @@ def update_manifest_files(context, rows):
         schema = [
             'dataset',
             'resource',
+            'origin',
             'model',
             'property',
             'type',
@@ -95,7 +97,7 @@ def update_manifest_files(context, rows):
             dataset = manifest[row.dataset]
 
         # Resource
-        resource_name = row.resource or 'default'
+        resource_name = row.resource or ''
         if resource_name not in dataset['resources']:
             resource = dataset['resources'][resource_name] = {
                 'objects': {},
@@ -103,16 +105,23 @@ def update_manifest_files(context, rows):
         else:
             resource = dataset['resources'][resource_name]
 
+        # Origin
+        origin_name = row.origin or ''
+        if origin_name not in resource['objects']:
+            origin = resource['objects'][origin_name] = {}
+        else:
+            origin = resource['objects'][origin_name]
+
         # Model
         if not row.model:
             continue
 
-        if row.model not in resource['objects']:
-            model = resource['objects'][row.model] = {
+        if row.model not in origin:
+            model = origin[row.model] = {
                 'properties': {}
             }
         else:
-            model = resource['objects'][row.model]
+            model = origin[row.model]
 
         if row.source.object:
             if 'source' not in model:
@@ -154,10 +163,37 @@ def update_manifest_files(context, rows):
 
 
 def _update_node(orig, data, depth=0):
-    levels = ['resources', 'objects', 'properties']
+    levels = [
+        'resources',
+        'objects',
+        '',  # origin
+        'properties',
+    ]
+
+    defaults = {
+        0: {
+            'date': lambda: datetime.date.today().isoformat(),
+            'version': lambda: 1,
+        },
+        1: {
+            'type': lambda: 'sql',
+        },
+    }
 
     if depth > len(levels) - 1:
         # No more levels left, stop recursion.
+        return
+
+    # Some nodes, like models have two levels, so we need to handle that too.
+    if levels[depth] == '':
+        for k in set(orig) | set(data):
+            if k in data:
+                if k in orig:
+                    _update_node(orig[k], data[k], depth + 1)
+                else:
+                    orig[k] = data[k]
+            elif k in orig:
+                del orig[k]
         return
 
     children = levels[depth]
@@ -166,6 +202,11 @@ def _update_node(orig, data, depth=0):
     for k, v in data.items():
         if k != children:
             orig[k] = v
+
+    # Set default values if values are not given in orig or data.
+    for k, default in defaults.get(depth, {}).items():
+        if k not in orig:
+            orig[k] = default()
 
     # Replace node children, existing children will be updated, children not in data will be removed.
     if children in data:

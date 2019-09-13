@@ -27,126 +27,127 @@ resources:
   rezultatai:
     type: xlsx
     objects:
-      politika/rinkimai/apygarda:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          numeris:
-            type: string
-            source: "Apygardos Nr. "
-          pavadinimas:
-            type: string
-            source: "Apygardos pavadinimas"
-      politika/rinkimai/apylinke:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          numeris:
-            type: string
-            source: "Apylinkės Nr. "
-          pavadinimas:
-            type: string
-            source: "Apylinkės pavadinimas"
-      politika/rinkimai/referendumas:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          data:
-            type: date
-            source: "Referendumo data"
-          pavadinimas:
-            type: string
-            source: "Referendumas"
-      politika/rinkimai/referendumas/aktyvumas:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          referendumas:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          apylinke:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          apygarda:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          klausimas:
-            type: string
-            stars: 0
-          pradžia:
-            type: date
-            stars: 0
-          pabaiga:
-            type: date
-            stars: 0
-          laikotarpis:
-            type: string
-            stars: 1
-            enum:
-              - rinkimu_diena
-              - isankstinis
-          rinkeju_skaicius:
-            type: integer
-            stars: 0
-            source:
-              # denormalize:
-              #   - "Gauta balsų iš viso (Taip)"
-              #   - "Gauta balsų iš viso (Ne)"
-              #   - "Gauta balsų % nuo galiojančių biuletenių (Taip)"
-              #   - "Gauta balsų % nuo galiojančių biuletenių (Ne)"
-          balsu_skaicius:
-            type: integer
-            stars: 1
-            source:
-              # denormalize:
-              #   - "Gauta balsų rinkimų dieną (Taip)"
-              #   - "Gauta balsų rinkimų dieną (Ne)"
-              #   - "Gauta balsų iš anksto (Taip)"
-              #   - "Gauta balsų iš anksto (Ne)"
-      politika/rinkimai/referendumas/klausimas:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          referendumas:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          klausimas:
-            type: string
-            source: "Referendumo klausimas"
-      politika/rinkimai/referendumas/rezultatas:
-        source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
-        properties:
-          referendumas:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          apylinke:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          apygarda:
-            type: string
-            stars: 1
-            flags:
-              - noref
-          klausimas:
-            type: string
-            stars: 0
-          ivyko:
-            type: boolean
-            source: "Ar referendumas įvyko?"
-              # - replace:
-              #     "Įvyko": true
-              #     "Neįvyko": false
-          pritarta:
-            type: boolean
-            source:
-              - "Ar referendumo klausimui pritarta?"
-              # - replace:
-              #     "Pritarta": true
-              #     "Nepritarta": false
+      '':
+        politika/rinkimai/apygarda:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            numeris:
+              type: string
+              source: "Apygardos Nr. "
+            pavadinimas:
+              type: string
+              source: "Apygardos pavadinimas"
+        politika/rinkimai/apylinke:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            numeris:
+              type: string
+              source: "Apylinkės Nr. "
+            pavadinimas:
+              type: string
+              source: "Apylinkės pavadinimas"
+        politika/rinkimai/referendumas:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            data:
+              type: date
+              source: "Referendumo data"
+            pavadinimas:
+              type: string
+              source: "Referendumas"
+        politika/rinkimai/referendumas/aktyvumas:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            referendumas:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            apylinke:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            apygarda:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            klausimas:
+              type: string
+              stars: 0
+            pradžia:
+              type: date
+              stars: 0
+            pabaiga:
+              type: date
+              stars: 0
+            laikotarpis:
+              type: string
+              stars: 1
+              enum:
+                - rinkimu_diena
+                - isankstinis
+            rinkeju_skaicius:
+              type: integer
+              stars: 0
+              source:
+                # denormalize:
+                #   - "Gauta balsų iš viso (Taip)"
+                #   - "Gauta balsų iš viso (Ne)"
+                #   - "Gauta balsų % nuo galiojančių biuletenių (Taip)"
+                #   - "Gauta balsų % nuo galiojančių biuletenių (Ne)"
+            balsu_skaicius:
+              type: integer
+              stars: 1
+              source:
+                # denormalize:
+                #   - "Gauta balsų rinkimų dieną (Taip)"
+                #   - "Gauta balsų rinkimų dieną (Ne)"
+                #   - "Gauta balsų iš anksto (Taip)"
+                #   - "Gauta balsų iš anksto (Ne)"
+        politika/rinkimai/referendumas/klausimas:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            referendumas:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            klausimas:
+              type: string
+              source: "Referendumo klausimas"
+        politika/rinkimai/referendumas/rezultatas:
+          source: "Rinkimų rezultatai referendume (nuo 1992 m.)(gauti balsai).xlsx"
+          properties:
+            referendumas:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            apylinke:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            apygarda:
+              type: string
+              stars: 1
+              flags:
+                - noref
+            klausimas:
+              type: string
+              stars: 0
+            ivyko:
+              type: boolean
+              source: "Ar referendumas įvyko?"
+                # - replace:
+                #     "Įvyko": true
+                #     "Neįvyko": false
+            pritarta:
+              type: boolean
+              source:
+                - "Ar referendumo klausimui pritarta?"
+                # - replace:
+                #     "Pritarta": true
+                #     "Nepritarta": false

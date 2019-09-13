@@ -27,10 +27,10 @@ def test_create_new_file(context, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest          |          |                             |          |        |     |       | VPT (new) |          |
-    dataset                     | resource | model                       | property | type   | ref | const | object    | property | comment
-    gov/vpt/new/ataskaitos/atn1 |          | valstybe/pirkimas/ataskaita | etapas   | string |     | award |           |          |
-    gov/vpt/new/ataskaitos/atn1 |          | valstybe/pirkimas/ataskaita | org      | ref    | org |       | ATN1      | ORG      |
+    Open Data Manifest          |          |        |                             |          |        |     |       | VPT (new) |          |
+    dataset                     | resource | origin | model                       | property | type   | ref | const | object    | property | comment
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | etapas   | string |     | award |           |          |
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | org      | ref    | org |       | ATN1      | ORG      |
     ''')
 
     update_manifest_files(context, rows)
@@ -42,19 +42,21 @@ def test_create_new_file(context, tmpdir):
         'type': 'dataset',
         'name': 'gov/vpt/new/ataskaitos/atn1',
         'resources': {
-            'default': {
+            '': {  # resource
                 'objects': {
-                    'valstybe/pirkimas/ataskaita': {
-                        'source': 'ATN1',
-                        'properties': {
-                            'etapas': {
-                                'type': 'string',
-                                'const': 'award',
-                            },
-                            'org': {
-                                'type': 'ref',
-                                'ref': 'org',
-                                'source': 'ORG'
+                    'ATN1': {  # origin
+                        'valstybe/pirkimas/ataskaita': {  # model
+                            'source': 'ATN1',
+                            'properties': {
+                                'etapas': {  # property
+                                    'type': 'string',
+                                    'const': 'award',
+                                },
+                                'org': {  # property
+                                    'type': 'ref',
+                                    'ref': 'org',
+                                    'source': 'ORG'
+                                },
                             },
                         },
                     },
@@ -75,22 +77,23 @@ def test_update_existing_file(context, tmpdir):
         'date: 1',
         'version: 2019-08-27',
         'resources:',
-        '  default:',
+        '  "":',
         '    type: sql',
         '    objects:',
-        '      valstybe/pirkimas:',
-        '        source: ATN1',
-        '        properties:',
-        '          etapas:',
-        '            type: string',
-        '            const: award',
-        '          org:',
-        '            type: ref',
-        '            ref: org',
-        '            # More comments',
-        '            source: ORG  # at the end of line',
-        '          legacy:',
-        '            type: string',
+        '      ATN1:',
+        '        valstybe/pirkimas:',
+        '          source: ATN1',
+        '          properties:',
+        '            etapas:',
+        '              type: string',
+        '              const: award',
+        '            org:',
+        '              type: ref',
+        '              ref: org',
+        '              # More comments',
+        '              source: ORG  # at the end of line',
+        '            legacy:',
+        '              type: string',
     ]))
 
     context.load({
@@ -103,11 +106,11 @@ def test_update_existing_file(context, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest |          |                   |          |        |     |       | VPT    |          |
-    dataset            | resource | model             | property | type   | ref | const | object | property | comment
-    gov/vpt/ataskaitos |          | valstybe/pirkimas | etapas   | string |     | award |        |          |
-    gov/vpt/ataskaitos |          | valstybe/pirkimas | org      | ref    | org |       | ATN1   | ORG      |
-    gov/vpt/ataskaitos |          | valstybe/pirkimas | title    | string |     |       | ATN1   | TITLE    |
+    Open Data Manifest |          |        |                   |          |        |     |       | VPT    |          |
+    dataset            | resource | origin | model             | property | type   | ref | const | object | property | comment
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | etapas   | string |     | award |        |          |
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | org      | ref    | org |       | ATN1   | ORG      |
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | title    | string |     |       | ATN1   | TITLE    |
     ''')
 
     update_manifest_files(context, rows)
@@ -124,24 +127,26 @@ def test_update_existing_file(context, tmpdir):
         'date': 1,
         'version': datetime.date(2019, 8, 27),
         'resources': {
-            'default': {
+            '': {
                 'type': 'sql',
                 'objects': {
-                    'valstybe/pirkimas': {
-                        'source': 'ATN1',
-                        'properties': {
-                            'etapas': {
-                                'type': 'string',
-                                'const': 'award',
-                            },
-                            'org': {
-                                'type': 'ref',
-                                'ref': 'org',
-                                'source': 'ORG',
-                            },
-                            'title': {
-                                'type': 'string',
-                                'source': 'TITLE',
+                    'ATN1': {
+                        'valstybe/pirkimas': {
+                            'source': 'ATN1',
+                            'properties': {
+                                'etapas': {
+                                    'type': 'string',
+                                    'const': 'award',
+                                },
+                                'org': {
+                                    'type': 'ref',
+                                    'ref': 'org',
+                                    'source': 'ORG',
+                                },
+                                'title': {
+                                    'type': 'string',
+                                    'source': 'TITLE',
+                                },
                             },
                         },
                     },

@@ -13,32 +13,33 @@ resources:
     type: csv
     source: https://raw.githubusercontent.com/vilnius/taryba/master/data/
     objects:
-      politika/savivaldybės/tarybos_narys:
-        stars: 2
-        source: meetings.csv
-        properties:
-          id:
-            type: pk
-            stars: 0
-          vardas:
-            type: string
-            source: "PARTICIPANT_SHORT"
-            stars: 1
-          pavardė:
-            type: string
-            source: "PARTICIPANT_SHORT"
-            stars: 1
-          gimimo_data:
-            type: date
-            stars: 0
-          mirties_data:
-            type: date
-            stars: 0
-          gimimo_vieta:
-            type: string
-            stars: 0
-            flags:
-              - unreadable
-          nuotrauka:
-            type: image
-            stars: 0
+      '':
+        politika/savivaldybės/tarybos_narys:
+          stars: 2
+          source: meetings.csv
+          properties:
+            id:
+              type: pk
+              stars: 0
+            vardas:
+              type: string
+              source: "PARTICIPANT_SHORT"
+              stars: 1
+            pavardė:
+              type: string
+              source: "PARTICIPANT_SHORT"
+              stars: 1
+            gimimo_data:
+              type: date
+              stars: 0
+            mirties_data:
+              type: date
+              stars: 0
+            gimimo_vieta:
+              type: string
+              stars: 0
+              flags:
+                - unreadable
+            nuotrauka:
+              type: image
+              stars: 0

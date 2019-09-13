@@ -3,7 +3,6 @@ title: "freedata.lt/vpt"
 type: project
 version: 1
 date: "2019-06-25"
-dataset: gov/vpt/ataskaitos
 objects:
   viesasis_pirkimas:
     target: subjektas

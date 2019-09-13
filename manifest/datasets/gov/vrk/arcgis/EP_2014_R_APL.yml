@@ -14,132 +14,133 @@ resources:
   rezultatai:
     type: html
     objects:
-      politika/rinkimai/apygarda:
-        properties:
-          numeris:
-            type: string
-            source: "APG_NR"
-          pavadinimas:
-            type: string
-            source: "APG_PAV"
-      politika/rinkimai/apylinke:
-        properties:
-          numeris:
-            type: string
-            source: "apl_nr"
-          pavadinimas:
-            type: string
-            source: "apl_nr"
-      politika/rinkimai/europarlamento/rinkimai:
-        properties:
-          data:
-            type: date
-            source: "DATADATE"
-          pavadinimas:
-            type: string
-            stars: 1
-            const: "2014 m. rinkimai į Europos Parlamentą"
-      politika/rinkimai/europarlamento/aktyvumas:
-        properties:
-          rinkimai:
-            type: string
-            stars: 1
-          apylinke:
-            type: string
-            stars: 1
-          apygarda:
-            type: string
-            stars: 1
-          pradžia:
-            type: string
-            stars: 0
-          pabaiga:
-            type: string
-            stars: 0
-          rinkeju_skaicius:
-            type: string
-            source: "RINK_SK"
-          balsu_skaicius:
-            type: string
-            source: "dal_sk"
-          galiojanciu_balsu_skaicius:
-            type: string
-            source: "galioj_sk"
-      politika/rinkimai/europarlamento/rezultatas:
-        properties:
-          rinkimai:
-            type: string
-            stars: 1
-          apylinke:
-            type: string
-            stars: 1
-          apygarda:
-            type: string
-            stars: 1
-          kandidatas:
-            type: string
-            stars: 0
-          balsu_skaicius:
-            type: string
-            stars: 0
-          balsu_skaicius_procentais:
-            type: string
-            stars: 0
-      politika/rinkimai/europarlamento/rezultatas/partija:
-        properties:
-          rinkimai:
-            type: string
-            stars: 1
-          apylinke:
-            type: string
-            stars: 1
-          apygarda:
-            type: string
-            stars: 1
-          partija:
-            type: string
-            stars: 1
-            source:
-              # unstack:
-              #   - "lp_pr"
-              #   - "p1_pr"
-              #   - "p2_pr"
-              #   - "p3_pr"
-              #   - "p4_pr"
-              #   - "p5_pr"
-              #   - "p6_pr"
-              #   - "p7_pr"
-              #   - "p8_pr"
-              #   - "p9_pr"
-              #   - "p10_pr"
-          balsu_skaicius:
-            type: string
-            stars: 1
-          balsu_skaicius_procentais:
-            type: string
-            stars: 1
-      politika/rinkimai/asmuo:
-        properties:
-          vardas:
-            type: string
-            stars: 1
-          pavarde:
-            type: string
-            stars: 1
-      politika/partija:
-        properties:
-          pavadinimas:
-            type: string
-            stars: 1
-      politika/rinkimai/europarlamento/kandidatas:
-        properties:
-          rinkimai:
-            type: string
-            stars: 1
-            const: "2014 m. rinkimai į Europos Parlamentą"
-          asmuo:
-            type: string
-            stars: 1
-          partija:
-            type: string
-            stars: 1
+      '':
+        politika/rinkimai/apygarda:
+          properties:
+            numeris:
+              type: string
+              source: "APG_NR"
+            pavadinimas:
+              type: string
+              source: "APG_PAV"
+        politika/rinkimai/apylinke:
+          properties:
+            numeris:
+              type: string
+              source: "apl_nr"
+            pavadinimas:
+              type: string
+              source: "apl_nr"
+        politika/rinkimai/europarlamento/rinkimai:
+          properties:
+            data:
+              type: date
+              source: "DATADATE"
+            pavadinimas:
+              type: string
+              stars: 1
+              const: "2014 m. rinkimai į Europos Parlamentą"
+        politika/rinkimai/europarlamento/aktyvumas:
+          properties:
+            rinkimai:
+              type: string
+              stars: 1
+            apylinke:
+              type: string
+              stars: 1
+            apygarda:
+              type: string
+              stars: 1
+            pradžia:
+              type: string
+              stars: 0
+            pabaiga:
+              type: string
+              stars: 0
+            rinkeju_skaicius:
+              type: string
+              source: "RINK_SK"
+            balsu_skaicius:
+              type: string
+              source: "dal_sk"
+            galiojanciu_balsu_skaicius:
+              type: string
+              source: "galioj_sk"
+        politika/rinkimai/europarlamento/rezultatas:
+          properties:
+            rinkimai:
+              type: string
+              stars: 1
+            apylinke:
+              type: string
+              stars: 1
+            apygarda:
+              type: string
+              stars: 1
+            kandidatas:
+              type: string
+              stars: 0
+            balsu_skaicius:
+              type: string
+              stars: 0
+            balsu_skaicius_procentais:
+              type: string
+              stars: 0
+        politika/rinkimai/europarlamento/rezultatas/partija:
+          properties:
+            rinkimai:
+              type: string
+              stars: 1
+            apylinke:
+              type: string
+              stars: 1
+            apygarda:
+              type: string
+              stars: 1
+            partija:
+              type: string
+              stars: 1
+              source:
+                # unstack:
+                #   - "lp_pr"
+                #   - "p1_pr"
+                #   - "p2_pr"
+                #   - "p3_pr"
+                #   - "p4_pr"
+                #   - "p5_pr"
+                #   - "p6_pr"
+                #   - "p7_pr"
+                #   - "p8_pr"
+                #   - "p9_pr"
+                #   - "p10_pr"
+            balsu_skaicius:
+              type: string
+              stars: 1
+            balsu_skaicius_procentais:
+              type: string
+              stars: 1
+        politika/rinkimai/asmuo:
+          properties:
+            vardas:
+              type: string
+              stars: 1
+            pavarde:
+              type: string
+              stars: 1
+        politika/partija:
+          properties:
+            pavadinimas:
+              type: string
+              stars: 1
+        politika/rinkimai/europarlamento/kandidatas:
+          properties:
+            rinkimai:
+              type: string
+              stars: 1
+              const: "2014 m. rinkimai į Europos Parlamentą"
+            asmuo:
+              type: string
+              stars: 1
+            partija:
+              type: string
+              stars: 1

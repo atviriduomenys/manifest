@@ -12,18 +12,19 @@ resources:
     type: csv
     source: https://raw.githubusercontent.com/Kauno-miestas/Svietimas/master/
     objects:
-      educational_institution:
-        source: Svietimo%20istaigos.csv
-        properties:
-          id:
-            type: pk
-          name:
-            type: string
-          address:
-            type: string
-          management_email:
-            type: string
-          phone_number:
-            type: string
-          home_page:
-            type: url
+      '':
+        educational_institution:
+          source: Svietimo%20istaigos.csv
+          properties:
+            id:
+              type: pk
+            name:
+              type: string
+            address:
+              type: string
+            management_email:
+              type: string
+            phone_number:
+              type: string
+            home_page:
+              type: url
