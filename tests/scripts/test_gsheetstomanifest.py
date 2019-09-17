@@ -54,7 +54,7 @@ def test_create_new_file(context, tmpdir):
                                 },
                                 'org': {  # property
                                     'type': 'ref',
-                                    'ref': 'org',
+                                    'object': 'org',
                                     'source': 'ORG'
                                 },
                             },
@@ -89,7 +89,7 @@ def test_update_existing_file(context, tmpdir):
         '              const: award',
         '            org:',
         '              type: ref',
-        '              ref: org',
+        '              object: org',
         '              # More comments',
         '              source: ORG  # at the end of line',
         '            legacy:',
@@ -140,7 +140,7 @@ def test_update_existing_file(context, tmpdir):
                                 },
                                 'org': {
                                     'type': 'ref',
-                                    'ref': 'org',
+                                    'object': 'org',
                                     'source': 'ORG',
                                 },
                                 'title': {

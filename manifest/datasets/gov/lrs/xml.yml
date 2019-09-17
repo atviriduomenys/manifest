@@ -45,7 +45,7 @@ resources:
               type: ref
               object: politika/seimas/kadencija
               source: kadencija
-              dependencies: true
+              dependency: true
 
         politika/seimas/kontaktas:
           dependencies:
@@ -60,7 +60,7 @@ resources:
                 - "@reikšmė"
             seimo_narys:
               type: ref
-              ref: politika/seimas/seimo_narys
+              object: politika/seimas/seimo_narys
               source: "../@asmens_id"
             rusis:
               type: string
@@ -86,15 +86,15 @@ resources:
                 - "@data_nuo"
             kadencija:
               type: ref
-              ref: politika/seimas/kadencija
+              object: politika/seimas/kadencija
               source: "../@kadencijos_id"
             seimo_narys:
               type: ref
-              ref: politika/seimas/seimo_narys
+              object: politika/seimas/seimo_narys
               source: "@asmens_id"
             kas_iskele:
               type: ref
-              ref: politika/partija
+              object: politika/partija
               stars: 1
               source: "@iškėlusi_partija"
             nuo:
@@ -163,7 +163,7 @@ resources:
               source: "@padalinio_pavadinimo_santrumpa"
             kadencija:
               type: ref
-              ref: politika/seimas/kadencija
+              object: politika/seimas/kadencija
               source: "../@kadencijos_id"
 
   frakcijos/nariai:
@@ -184,11 +184,11 @@ resources:
               const: politika/seimas/frakcija
             padalinys:
               type: ref
-              ref: politika/seimas/frakcija
+              object: politika/seimas/frakcija
               source: "../@padalinio_id"
             seimo_narys:
               type: ref
-              ref: politika/seimas/seimo_narys
+              object: politika/seimas/seimo_narys
               source: "@asmens_id"
             pareigos:
               type: string
@@ -221,7 +221,7 @@ resources:
               source: "../@padalinio_id"
             seimo_narys:
               type: ref
-              ref: politika/seimas/seimo_narys
+              object: politika/seimas/seimo_narys
               source: "@asmens_id"
             pareigos:
               type: string

@@ -9,195 +9,217 @@ stars: 4
 flags:
   - fragments
 resources:
-  vrkis:
+  rt:
     type: json
-    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/rt.json
     objects:
       '':
         politika/rinkimai:
-          source:
-            json: rt.json
+          source: data
           properties:
             id:
               type: pk
-              source: data/vr_id
+              source: vr_id
             pavadinimas:
               type: string
-              source: data/pav
+              source: pav
             rusis:
               type: string
-              source: data/rnk_rusis
+              source: rnk_rusis
               enum:
                 seimo: SEI
                 savivaldybių: SAV
         politika/rinkimai/turas:
-          source:
-            json: rt.json
+          source: data
           properties:
             id:
               type: pk
-              source: data/id
+              source: id
             rinkimai:
               type: ref
-              ref: politika/rinkimai
-              source: data/vr_id
+              object: politika/rinkimai
+              source: vr_id
             numeris:
               type: string
-              source: data/rt_no
+              source: rt_no
             pavadinimas:
               type: string
-              source: data/vrt_pav
+              source: vrt_pav
             data:
               type: date
-              source: data/rink_data
+              source: rink_data
             einamieji:
               type: boolean
-              source: data/einamieji
+              source: einamieji
+  rpg:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpg.json
+    objects:
+      '':
         politika/rinkimai/apygarda:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpg.json"
+          source: data
           stars: 2
           properties:
             id:
               type: pk
-              source: data/id
+              source: id
             rinkimai:
               type: ref
-              ref: politika/rinkimai
-              source: data/vr_id
+              object: politika/rinkimai
+              source: vr_id
             numeris:
               type: string
-              source: data/nr
+              source: nr
             pavadinimas:
               type: string
-              source: data/pav
+              source: pav
             adresas:
               type: string
-              source: data/adr
+              source: adr
               flags:
                 unreadable
             telefonas:
               type: string
               stars: 1
-              source: data/tel
+              source: tel
             el_pastas:
               type: string
               stars: 1
-              source: data/ep
+              source: ep
             uzsienio:
               type: boolean
-              source: data/uzsienio
+              source: uzsienio
+  rpl:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpl.json
+    objects:
+      '':
         politika/rinkimai/apylinke:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpl.json"
+          source: data
           stars: 2
           properties:
             numeris:
               type: string
-              source: data/nr
+              source: nr
             pavadinimas:
               type: string
-              source: data/pav
+              source: pav
             adresas:
               type: string
-              source: data/adr
+              source: adr
               flags:
                 - unreadable
             telefonas:
               type: string
-              source: data/tel
+              source: tel
               stars: 1
             el_pastas:
               type: string
-              source: data/ep
+              source: ep
               stars: 1
+  gatves:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/gatves.json
+    objects:
+      '':
         geografija/lietuva/gatve:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/gatves.json"
+          source: data
           stars: 2
           properties:
             pavadinimas:
               type: string
-              source: data/gatve
+              source: gatve
+  vietoves:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/vietoves.json
+    objects:
+      '':
         geografija/lietuva/adresas:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/vietoves.json"
+          source: data
           stars: 2
           properties:
             id:
               type: pk
-              source: data/ter_kodas
+              source: ter_kodas
             pavadinimas:
               type: string
-              source: data/ter_pav
+              source: ter_pav
+  aktyvumasIsankstinisVrt:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisVrt.json
+    objects:
+      '':
         politika/rinkimai/aktyvumas/isankstinis/apygardose:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisVrt.json"
+          source: data
           stars: 2
           properties:
             turas:
               type: ref
-              ref: politika/rinkimai/turas
-              source:
-                - data/vr_id
-                - data/rt_nr
-            apygarda:
-              type: ref
-              ref: politika/rinkimai/apygarda
-              source: data/rpg_id
-            rinkeju_skaicius:
-              type: integer
-              source: data/rinkeju_skaicius
-              flags:
-                - derived
-            balsavo_is_anksto:
-              type: integer
-              source: data/balsavo_is_anksto
-              flags:
-                - derived
-            balsavo_paste:
-              type: integer
-              source: data/balsavo_paste
-              flags:
-                - derived
-            balsavo_namuose:
-              type: integer
-              source: data/balsavo_namuose
-              flags:
-                - derived
-            is_viso:
-              type: integer
-              source: data/is_viso
-              flags:
-                - derived
-            procentas:
-              type: number
-              source: data/procentas
-              flags:
-                - derived
-            proc_rusiavimui:
-              type: number
-              source: data/proc_rusiavimui
-              flags:
-                - derived
-        politika/rinkimai/aktyvumas/isankstinis/apylinkese:
-          source:
-            json: "{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisRpg{politika/rinkimai/aktyvumas/isankstinis:apygarda:id}.json"
-          stars: 2
-          properties:
-            turas:
-              type: ref
-              ref: politika/rinkimai/turas
+              object: politika/rinkimai/turas
               source:
                 - vr_id
                 - rt_nr
             apygarda:
               type: ref
-              ref: politika/rinkimai/apygarda
+              object: politika/rinkimai/apygarda
+              source: rpg_id
+            rinkeju_skaicius:
+              type: integer
+              source: rinkeju_skaicius
+              flags:
+                - derived
+            balsavo_is_anksto:
+              type: integer
+              source: balsavo_is_anksto
+              flags:
+                - derived
+            balsavo_paste:
+              type: integer
+              source: balsavo_paste
+              flags:
+                - derived
+            balsavo_namuose:
+              type: integer
+              source: balsavo_namuose
+              flags:
+                - derived
+            is_viso:
+              type: integer
+              source: is_viso
+              flags:
+                - derived
+            procentas:
+              type: number
+              source: procentas
+              flags:
+                - derived
+            proc_rusiavimui:
+              type: number
+              source: proc_rusiavimui
+              flags:
+                - derived
+  aktyvumasIsankstinisRpg:
+    type: json
+    source: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisRpg{politika/rinkimai/aktyvumas/isankstinis:apygarda:id}.json
+    objects:
+      '':
+        politika/rinkimai/aktyvumas/isankstinis/apylinkese:
+          source: data
+          stars: 2
+          properties:
+            turas:
+              type: ref
+              object: politika/rinkimai/turas
+              source:
+                - vr_id
+                - rt_nr
+            apygarda:
+              type: ref
+              object: politika/rinkimai/apygarda
               source: rpg_id
             apylinke:
               type: ref
-              ref: politika/rinkimai/apylinke
+              object: politika/rinkimai/apylinke
               source: rpl_id
             rinkeju_skaicius:
               type: number
@@ -239,13 +261,13 @@ resources:
           properties:
             turas:
               type: ref
-              ref: politika/rinkimai/turas
+              object: politika/rinkimai/turas
             apygarda:
               type: ref
-              ref: politika/rinkimai/apygarda
+              object: politika/rinkimai/apygarda
             apylinke:
               type: ref
-              ref: politika/rinkimai/apylinke
+              object: politika/rinkimai/apylinke
             rusis:
               type: string
             laikas:

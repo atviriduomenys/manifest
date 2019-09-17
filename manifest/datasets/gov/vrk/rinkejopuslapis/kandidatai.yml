@@ -80,7 +80,7 @@ resources:
               stars: 1
               source: 'rinkimai'
               dependency: true
-              ref: politika/rinkimai
+              object: politika/rinkimai
             numeris:
               type: string
               source: "Kandidatų sąrašo Nr."
@@ -101,22 +101,22 @@ resources:
               stars: 1
               source: 'rinkimai'
               dependency: true
-              ref: politika/rinkimai
+              object: politika/rinkimai
             apygarda:
               type: ref
               stars: 1
               source: "Apygardos Nr."
-              ref: politika/rinkimai/apygarda
+              object: politika/rinkimai/apygarda
             asmuo:
               type: string
               stars: 0
               flags:
                 - noref
             partija:
-              type: string
+              type: ref
               stars: 1
               source: ["Kandidatą iškėlusi organizacija"]
-              ref: politika/partija
+              object: politika/partija
               flags:
                 - noref
             vardas:
@@ -134,7 +134,7 @@ resources:
               type: ref
               stars: 1
               source: ["Kandidatų sąrašo pavadinimas"]
-              ref: politika/rinkimai/kandidatas/sarasas
+              object: politika/rinkimai/kandidatas/sarasas
             kandidato_nr_sarase:
               type: string
               source: "Kandidato Nr. sąraše"

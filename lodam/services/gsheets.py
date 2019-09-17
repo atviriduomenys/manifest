@@ -138,7 +138,7 @@ def update_manifest_files(context, rows):
                 'type': row.type,
             }
             if row.ref:
-                prop['ref'] = row.ref
+                prop['object'] = row.ref
             if row.const:
                 prop['const'] = row.const
             if row.source.property:

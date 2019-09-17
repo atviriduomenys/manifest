@@ -30,13 +30,13 @@ resources:
             adresas:
               type: ref
               source: "Adresas"
-              ref: geografija/lietuva/adresas
+              object: geografija/lietuva/adresas
               flags:
                 - unreadable
             vadovas:
               type: ref
               source: "Vadovas"
-              ref: asmuo
+              object: asmuo
               flags:
                 - noref
             statusas:
@@ -58,4 +58,4 @@ resources:
             reorganizuota_i:
               type: ref
               source: "Pavadinimas"
-              ref: politika/partija
+              object: politika/partija

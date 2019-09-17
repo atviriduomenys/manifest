@@ -24,13 +24,13 @@ resources:
           properties:
             rinkimai:
               type: ref
-              ref: politika/rinkimai
+              object: politika/rinkimai
             asmuo:
               type: ref
-              ref: asmuo
+              object: asmuo
             partija:
               type: ref
-              ref: politika/partija
+              object: politika/partija
             sarasas:
               type: string
             kandidato_nr_sarase:
