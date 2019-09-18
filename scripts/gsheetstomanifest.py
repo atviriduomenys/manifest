@@ -1,3 +1,19 @@
+"""
+Example:
+
+    $ env/bin/python scripts/gsheetstomanifest.py \
+        --cache \
+        -c ~/Atsiuntimai/credentials.json \
+        'https://docs.google.com/spreadsheets/d/4IbBbyphR8oU2cuNRBlZrByWJ2wZH0C7pRkul6YVypPC/edit#gid=6183807853'
+
+If you wan't to refresh cache, just remove gsheet-*-*.json file:
+
+    $ rm gsheet-4IbBbyphR8oU2cuNRBlZrByWJ2wZH0C7pRkul6YVypPC-6183807853.json
+
+Here `4IbBbyphR8oU2cuNRBlZrByWJ2wZH0C7pRkul6YVypPC` is document id, and `6183807853` is sheet id.
+
+"""
+
 import click
 
 from lodam.services.gsheets import get_gsheet_rows

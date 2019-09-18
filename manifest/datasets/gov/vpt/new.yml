@@ -7,25 +7,34 @@ resources:
     type: sql
     objects:
       atn1:
+        valstybe/pirkimas:
+          source: ATN1$H
+          properties:
+            id:
+              type: pk
+              source: TENDER_ID
+            pavadinimas:
+              type: string
+              source: TITLE
         valstybe/pirkimas/ataskaita:
           source: ATN1$H
           properties:
-            etapas:
-              type: string
-              const: award
+            id:
+              type: pk
+              source: TENDER_ID
             pirkimas:
               type: ref
               object: valstybe/pirkimas
               source: TENDER_ID
-            data:
-              type: date
-              source: PUBLISHED_DATE
             pavadinimas:
               type: string
               source: TITLE
-            id:
-              type: pk
-              source: TENDER_ID
+            data:
+              type: date
+              source: PUBLISHED_DATE
+            etapas:
+              type: string
+              const: award
         valstybe/pirkimas/objektas:
           source: ATN1$H
           properties:
