@@ -19,7 +19,7 @@ objects:
       pavadinimas:
       nuo:
       iki:
-  politika/seimas/seimo_narys:
+  politika/seimas/narys:
     properties:
       vardas:
       pavardė:

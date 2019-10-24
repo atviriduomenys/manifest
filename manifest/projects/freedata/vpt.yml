@@ -7,7 +7,5 @@ objects:
   viesasis_pirkimas:
     target: subjektas
     properties:
-      id:
-        target: pk
       pavadinimas:
         target: SBJ_PAV

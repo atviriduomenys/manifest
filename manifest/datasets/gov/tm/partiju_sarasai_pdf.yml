@@ -18,7 +18,7 @@ resources:
           source:
             # pdf: "https://tm.lrv.lt/uploads/tm/documents/files/(ARCHYVINIS)%20Lietuvos%20Respublikos%20politini%C5%B3%20partij%C5%B3%20s%C4%85ra%C5%A1as%202019-03-01%20su%20archyvu(1).pdf"
           properties:
-            id:
+            _id:
               type: pk
               source: "Juridinio asmens kodas"
             pavadinimas:

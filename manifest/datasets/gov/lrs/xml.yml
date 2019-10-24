@@ -1,5 +1,5 @@
 ---
-name: gov/lrs/ad
+name: gov/lrs/xml
 title: "Members of Parliament (XML)"
 description: "XML file containing data about members of parliament."
 type: dataset
@@ -15,10 +15,10 @@ resources:
       '':
         politika/seimas/narys:
           dependencies:
-            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
+            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/xml.kadencijos_id
           source: /SeimoInformacija/SeimoKadencija/SeimoNarys
           properties:
-            id:
+            _id:
               type: pk
               source: "@asmens_id"
             vardas:
@@ -49,10 +49,10 @@ resources:
 
         politika/seimas/kontaktas:
           dependencies:
-            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
+            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/xml.kadencijos_id
           source: /SeimoInformacija/SeimoKadencija/SeimoNarys/Kontaktai
           properties:
-            id:
+            _id:
               type: pk
               source:
                 - "../@asmens_id"
@@ -60,7 +60,7 @@ resources:
                 - "@reikšmė"
             seimo_narys:
               type: ref
-              object: politika/seimas/seimo_narys
+              object: politika/seimas/narys
               source: "../@asmens_id"
             rusis:
               type: string
@@ -75,10 +75,10 @@ resources:
 
         politika/seimas/mandatas:
           dependencies:
-            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
+            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/xml.kadencijos_id
           source: /SeimoInformacija/SeimoKadencija/SeimoNarys
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
               source:
@@ -90,7 +90,7 @@ resources:
               source: "../@kadencijos_id"
             seimo_narys:
               type: ref
-              object: politika/seimas/seimo_narys
+              object: politika/seimas/narys
               source: "@asmens_id"
             kas_iskele:
               type: ref
@@ -112,7 +112,7 @@ resources:
         politika/seimas/kadencija:
           source: /SeimoInformacija/SeimoKadencija
           properties:
-            id:
+            _id:
               type: pk
               source: "@kadencijos_id"
             pavadinimas:
@@ -130,10 +130,10 @@ resources:
 
         politika/partija:
           dependencies:
-            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/ad.kadencijos_id
+            kadencija: politika/seimas/kadencija/:dataset/gov/lrs/xml.kadencijos_id
           source: /SeimoInformacija/SeimoKadencija/SeimoNarys
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
               source: "@iškėlusi_partija"
@@ -152,7 +152,7 @@ resources:
         politika/seimas/frakcija:
           source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija
           properties:
-            id:
+            _id:
               type: pk
               source: "@padalinio_id"
             pavadinimas:
@@ -174,7 +174,7 @@ resources:
         politika/seimas/pareigos/frakcijoje:
           source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys
           properties:
-            id:
+            _id:
               type: pk
               source:
                 - "../@padalinio_id"
@@ -188,7 +188,7 @@ resources:
               source: "../@padalinio_id"
             seimo_narys:
               type: ref
-              object: politika/seimas/seimo_narys
+              object: politika/seimas/narys
               source: "@asmens_id"
             pareigos:
               type: string
@@ -208,7 +208,7 @@ resources:
         politika/seimas/pareigos/komitetete:
           source: /SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys
           properties:
-            id:
+            _id:
               type: pk
               source:
                 - "../@padalinio_id"
@@ -221,7 +221,7 @@ resources:
               source: "../@padalinio_id"
             seimo_narys:
               type: ref
-              object: politika/seimas/seimo_narys
+              object: politika/seimas/narys
               source: "@asmens_id"
             pareigos:
               type: string

@@ -6,7 +6,6 @@ date: "2018-09-21"
 objects:
   duomenys/rinkinys:
     properties:
-      id:
       pavadinimas:
       aprašymas:
       sukurta:
@@ -19,31 +18,25 @@ objects:
       tiekėjas:
   duomenys/raktažodis:
     properties:
-      id:
       pavadinimas:
   duomenys/kontaktas:
     properties:
-      id:
       vardas:
       pavardė:
       el_paštas:
       telefonas:
   duomenys/laikotarpis:
     properties:
-      id:
       pavadinimas:
       nuo:
       iki:
   duomenys/vietovė:
     properties:
-      id:
       pavadinimas:
       koordinatės:
   duomenys/dažnumas:
     properties:
-      id:
       pavadinimas:
   duomenys/tiekėjas:
     properties:
-      id:
       pavadinimas:

@@ -5,8 +5,6 @@ type: model
 version: 1
 date: "2019-07-22"
 properties:
-  id:
-    type: pk
   pavadinimas:
     type: string
   adresas: 

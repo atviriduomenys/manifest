@@ -3,6 +3,8 @@ import pathlib
 
 from ruamel.yaml import YAML
 
+from spinta.testing.context import create_test_context
+
 from lodam.services.gsheets import update_manifest_files
 
 yaml = YAML(typ='safe')
@@ -14,9 +16,10 @@ def _read_rows(rows):
             yield [x.strip() for x in line.split('|')]
 
 
-def test_create_new_file(context, tmpdir):
+def test_create_new_file(config, tmpdir):
     tmpdir = pathlib.Path(tmpdir)
 
+    context = create_test_context(config)
     context.load({
         'manifests': {
             'default': {
@@ -66,7 +69,7 @@ def test_create_new_file(context, tmpdir):
     }
 
 
-def test_update_existing_file(context, tmpdir):
+def test_update_existing_file(config, tmpdir):
     tmpdir = pathlib.Path(tmpdir)
 
     (tmpdir / 'datasets/gov/vpt').mkdir(mode=0o755, parents=True)
@@ -96,6 +99,7 @@ def test_update_existing_file(context, tmpdir):
         '              type: string',
     ]))
 
+    context = create_test_context(config)
     context.load({
         'manifests': {
             'default': {

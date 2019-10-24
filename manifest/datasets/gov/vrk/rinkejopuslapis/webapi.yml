@@ -18,7 +18,7 @@ resources:
             year: {range: {start: 1990, stop: 2030}}
           source: response
           properties:
-            id:
+            _id:
               type: pk
               source: id
             pavadinimas:

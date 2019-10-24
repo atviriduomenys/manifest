@@ -17,7 +17,7 @@ resources:
         politika/rinkimai:
           source: data
           properties:
-            id:
+            _id:
               type: pk
               source: vr_id
             pavadinimas:
@@ -32,7 +32,7 @@ resources:
         politika/rinkimai/turas:
           source: data
           properties:
-            id:
+            _id:
               type: pk
               source: id
             rinkimai:
@@ -60,7 +60,7 @@ resources:
           source: data
           stars: 2
           properties:
-            id:
+            _id:
               type: pk
               source: id
             rinkimai:
@@ -138,7 +138,7 @@ resources:
           source: data
           stars: 2
           properties:
-            id:
+            _id:
               type: pk
               source: ter_kodas
             pavadinimas:

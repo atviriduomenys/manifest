@@ -16,8 +16,6 @@ resources:
         educational_institution:
           source: Svietimo%20istaigos.csv
           properties:
-            id:
-              type: pk
             name:
               type: string
             address:

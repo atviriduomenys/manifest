@@ -16,7 +16,7 @@ objects:
       pavadinimas:
       nuo:
       iki:
-  politika/seimas/seimo_narys:
+  politika/seimas/narys:
     properties:
       vardas:
       pavardė:
@@ -66,7 +66,6 @@ objects:
   # Savivaldybės
   politika/savivaldybės/tarybos_narys:
     properties:
-      id:
       vardas:
       pavardė:
       gimimo_data:

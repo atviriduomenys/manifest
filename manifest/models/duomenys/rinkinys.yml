@@ -8,9 +8,6 @@ version: 1
 date: "2019-01-06"
 link: dctype:Dataset
 properties:
-  id:
-    type: pk
-    link: dct:identifier
   pavadinimas:
     type: string
     link: dct:title

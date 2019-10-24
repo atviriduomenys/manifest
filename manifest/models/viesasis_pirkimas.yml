@@ -5,7 +5,5 @@ version: 1
 date: "2019-06-25"
 title: "Viešasis pirkimas"
 properties:
-  id:
-    type: pk
   pavadinimas:
     type: string

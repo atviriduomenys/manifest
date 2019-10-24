@@ -5,7 +5,5 @@ version: 1
 date: "2019-01-06"
 link: foaf:Agent
 properties:
-  id:
-    type: pk
   pavadinimas:
     type: string

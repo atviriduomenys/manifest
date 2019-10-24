@@ -14,7 +14,7 @@ resources:
         duomenys/rinkinys:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               source: "Kodas"
             urlid:
@@ -61,7 +61,7 @@ resources:
         duomenys/raktažodis:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             pavadinimas:
@@ -70,7 +70,7 @@ resources:
         duomenys/kontaktas:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             vardas:
@@ -88,7 +88,7 @@ resources:
         duomenys/laikotarpis:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             pavadinimas:
@@ -103,7 +103,7 @@ resources:
         duomenys/vietovė:
           stars: 0
           properties:
-            id:
+            _id:
               type: pk
             pavadinimas:
               type: string
@@ -112,7 +112,7 @@ resources:
         duomenys/dažnumas:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             pavadinimas:
@@ -121,7 +121,7 @@ resources:
         duomenys/tiekėjas:
           source: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             pavadinimas:

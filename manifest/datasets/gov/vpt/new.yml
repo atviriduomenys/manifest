@@ -10,7 +10,7 @@ resources:
         valstybe/pirkimas:
           source: ATN1$H
           properties:
-            id:
+            _id:
               type: pk
               source: TENDER_ID
             pavadinimas:
@@ -19,7 +19,7 @@ resources:
         valstybe/pirkimas/ataskaita:
           source: ATN1$H
           properties:
-            id:
+            _id:
               type: pk
               source: TENDER_ID
             pirkimas:
@@ -55,7 +55,7 @@ resources:
               type: ref
               object: organizacija
               source: LEGAL_ENTITY_CODE_1
-            id:
+            _id:
               type: pk
               source:
               - TENDER_ID
@@ -86,7 +86,7 @@ resources:
               type: ref
               object: organizacija
               source: LEGAL_ENTITY_CODE_2
-            id:
+            _id:
               type: pk
               source:
               - TENDER_ID
@@ -107,7 +107,7 @@ resources:
         valstybe/pirkimas/dalyvis:
           source: ATN1_TENDERER_LIST$H
           properties:
-            id:
+            _id:
               type: pk
               source: ID
             pirkimas:
@@ -139,7 +139,7 @@ resources:
         valstybe/pirkimas/ataskaita:
           source: PLANNED_PROCUREMENT$H
           properties:
-            id:
+            _id:
               type: pk
               source: ID
             pirkimas:

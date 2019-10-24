@@ -4,7 +4,6 @@ type: model
 version: 1
 date: "2019-01-23"
 properties:
-  id: {type: pk}
   pavadinimas: {type: string}
   kodas: {type: string, title: "Juridinio asmens kodas"}
   veiklos_pobudis: {type: string}

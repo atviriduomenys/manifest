@@ -9,9 +9,6 @@ version: 1
 date: "2019-03-13"
 extends: asmuo
 properties:
-  id:
-    type: pk
-    title: "Asmens kodas"
   vardas:
     type: string
     title: "Vardas"

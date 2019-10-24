@@ -4,7 +4,6 @@ type: model
 version: 1
 date: "2019-01-24"
 properties:
-  id: {type: pk}
   pavadinimas: {type: string, title: "Pavadinimas"}
   savivaldybe: {type: ref, object: geografija/lietuva/savivaldybe}
   gatve: {type: ref, object: geografija/lietuva/gatve}

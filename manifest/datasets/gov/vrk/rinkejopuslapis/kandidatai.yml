@@ -22,7 +22,7 @@ resources:
               column: 0
               value: ['Rinkimai', 'Rinkimų rūšis']
           properties:
-            id:
+            _id:
               type: pk
               source: 'rinkimai'
               dependency: true
@@ -47,7 +47,7 @@ resources:
           dependencies: *dependencies
           source:
           properties:
-            id:
+            _id:
               type: pk
               source: "Apygardos Nr."
             numeris:
@@ -61,7 +61,7 @@ resources:
           dependencies: *dependencies
           source:
           properties:
-            id:
+            _id:
               type: pk
               source: ["Kandidatą iškėlusi organizacija"]
             pavadinimas:
@@ -72,7 +72,7 @@ resources:
           dependencies: *dependencies
           source:
           properties:
-            id:
+            _id:
               type: pk
               source: ["Kandidatų sąrašo pavadinimas"]
             rinkimai:
@@ -92,7 +92,7 @@ resources:
           dependencies: *dependencies
           source:
           properties:
-            id:
+            _id:
               type: pk
               source: ["Apygardos Nr.", "Kandidato vardas", "Kandidato pavardė"]
               stars: 1

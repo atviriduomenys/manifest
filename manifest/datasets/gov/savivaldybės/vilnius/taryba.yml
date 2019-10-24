@@ -18,7 +18,7 @@ resources:
           stars: 2
           source: meetings.csv
           properties:
-            id:
+            _id:
               type: pk
               stars: 0
             vardas:
