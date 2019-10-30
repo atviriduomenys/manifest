@@ -211,6 +211,8 @@ def _update_node(orig, data, depth=0):
     # Replace node children, existing children will be updated, children not in data will be removed.
     if children in data:
         if children in orig:
+            if orig[children] is None:
+                orig[children] = {}
             for k in set(orig[children]) | set(data[children]):
                 if k in data[children]:
                     if k in orig[children]:

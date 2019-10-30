@@ -8,61 +8,88 @@ resources:
     objects:
       atn1:
         valstybe/pirkimas:
-          source: ATN1$H
+          source: ATN1
           properties:
             _id:
               type: pk
-              source: TENDER_ID
-            pavadinimas:
+              source: ID
+            rusis:
               type: string
-              source: TITLE
-        valstybe/pirkimas/ataskaita:
-          source: ATN1$H
-          properties:
-            _id:
-              type: pk
-              source: TENDER_ID
-            pirkimas:
-              type: ref
-              object: valstybe/pirkimas
-              source: TENDER_ID
+              const: planas
             pavadinimas:
               type: string
               source: TITLE
             data:
               type: date
               source: PUBLISHED_DATE
-            etapas:
+            pirkimo_numeris:
               type: string
-              const: award
+              source: TENDER_ID
+            forma:
+              type: string
+              source: FORM_NAME
         valstybe/pirkimas/objektas:
-          source: ATN1$H
+          source: ATN1
           properties:
-            pavadinmias:
+            _id:
+              type: pk
+              source: ID
+            kaina:
+              type: number
+              source: TOTAL_CONTRACT_VALUE
+            pirkimas:
+              type: ref
+              object: valstybe/pirkimas
+              source: ID
+            pavadinimas:
               type: string
               source: PROCUREMENT_OBJECT_NAME
       atn1/perkancioji:
         valstybe/pirkimas/dalyvis:
-          source: ATN1$H
+          source: ATN1
           properties:
-            role:
-              type: string
-              const: buyer
+            _id:
+              type: pk
+              source: ID
             pavadinimas:
               type: string
               source: OFFICIAL_NAME_1
+            pirkimas:
+              type: ref
+              object: valstybe/pirkimas
+              source: ID
+            role:
+              type: string
+              const: buyer
             organizacija:
               type: ref
               object: organizacija
               source: LEGAL_ENTITY_CODE_1
+        organizacija:
+          source: ATN1
+          properties:
+            _id:
+              type: pk
+              source: LEGAL_ENTITY_CODE_1
+            pavadinimas:
+              type: string
+              source: OFFICIAL_NAME_1
+            registracijos_numeris:
+              type: string
+              source: LEGAL_ENTITY_CODE_1
+        valstybe/pirkimas/dalyvis/adresas:
+          source: ATN1
+          properties:
             _id:
               type: pk
               source:
-              - TENDER_ID
-              - LEGAL_ENTITY_CODE_1
-        valstybe/pirkimas/dalyvis/adresas:
-          source: ATN1$H
-          properties:
+                - COUNTRY_1
+                - TOWN_1
+                - POSTAL_ADDRESS_1
+            dalyvis:
+              type: ref
+              object: valstybe/pirkimas/dalyvis
+              source: ID
             adresas:
               type: string
               source: POSTAL_ADDRESS_1
@@ -74,26 +101,50 @@ resources:
               source: COUNTRY_1
       atn1/vykdancioji:
         valstybe/pirkimas/dalyvis:
-          source: ATN1$H
+          source: ATN1
           properties:
-            role:
-              type: string
-              const: procuringEntity
+            _id:
+              type: pk
+              source: ID
             pavadinimas:
               type: string
               source: OFFICIAL_NAME_2
+            pirkimas:
+              type: ref
+              object: valstybe/pirkimas
+              source: ID
+            role:
+              type: string
+              const: procuringEntity
             organizacija:
               type: ref
               object: organizacija
               source: LEGAL_ENTITY_CODE_2
+        organizacija:
+          source: ATN1
+          properties:
+            _id:
+              type: pk
+              source: LEGAL_ENTITY_CODE_2
+            registracijos_numeris:
+              type: string
+              source: LEGAL_ENTITY_CODE_2
+            pavadinimas:
+              type: string
+              source: OFFICIAL_NAME_2
+        valstybe/pirkimas/dalyvis/adresas:
+          source: ATN1
+          properties:
             _id:
               type: pk
               source:
-              - TENDER_ID
-              - LEGAL_ENTITY_CODE_2
-        valstybe/pirkimas/dalyvis/adresas:
-          source: ATN1$H
-          properties:
+                - COUNTRY_2
+                - TOWN_2
+                - POSTAL_ADDRESS_2
+            dalyvis:
+              type: ref
+              object: valstybe/pirkimas/dalyvis
+              source: ID
             adresas:
               type: string
               source: POSTAL_ADDRESS_2
@@ -103,13 +154,70 @@ resources:
             salis:
               type: string
               source: COUNTRY_2
-      atn1/dalyvis:
-        valstybe/pirkimas/dalyvis:
-          source: ATN1_TENDERER_LIST$H
+      plan:
+        valstybe/pirkimas:
+          source: PLANNED_PROCUREMENT
           properties:
             _id:
               type: pk
               source: ID
+            rusis:
+              type: string
+              const: planas
+            pavadinimas:
+              type: string
+              source: TITLE
+            kaina:
+              type: number
+              source: PLANNED_VALUE
+            kiekis:
+              type: string
+              source: UNIT_OF_MEASUREMENT_PLANNED_VALUE
+      plan/perkancioji:
+        valstybe/pirkimas/dalyvis:
+          properties:
+            _id:
+              type: pk
+              source: ID
+            pirkimas:
+              type: ref
+              object: valstybe/pirkimas
+              source: ID
+            role:
+              type: string
+              const: buyer
+            pavadinimas:
+              type: string
+              source: NAME
+            organizacija:
+              type: ref
+              object: organizacija
+              source: ORG_NR
+          source: PLANNED_PROCUREMENT
+        organizacija:
+          source: PLANNED_PROCUREMENT
+          properties:
+            _id:
+              type: pk
+              source: ORG_NR
+            registracijos_numeris:
+              type: string
+              source: ORG_NR
+            pavadinimas:
+              type: string
+              source: NAME
+      atn1/contractor:
+        valstybe/pirkimas/dalyvis:
+          source: ATN1_CONTRACT_LIST
+          properties:
+            _id:
+              type: pk
+              source:
+                - ATN1_ID
+                - CODE
+            role:
+              type: string
+              const: contractor
             pirkimas:
               type: ref
               object: valstybe/pirkimas
@@ -121,23 +229,58 @@ resources:
             pavadinimas:
               type: string
               source: NAME
-        valstybe/pirkimas/dalyvis/adresas:
-          source: ATN1_TENDERER_LIST$H
+        organizacija:
+          source: ATN1_CONTRACT_LIST
           properties:
-            adresas:
+            _id:
+              type: pk
+              source: CODE
+            registracijos_numeris:
               type: string
-              source: ADDRESS
-      atn2/dalyvis:
-        valstybe/pirkimas/dalyvis:
-          source: ATN2_CONTRACTED_CANDIDATE_LIST$H
+              source: CODE
+            pavadinimas:
+              type: string
+              source: NAME
+        valstybe/pirkimas/dalyvis/objektas:
+          source: ATN1_CONTRACT_LIST
           properties:
-            organizacija:
+            _id:
+              type: pk
+              source: ID
+            kaina:
+              type: string
+              source: TOTAL_VALUE_OF_PART
+            pavadinimas:
+              type: string
+              source: ITEM
+            dalyvis:
               type: ref
-              object: organizacija
-              source: TENDERER_NAME
-      plan:
-        valstybe/pirkimas/ataskaita:
-          source: PLANNED_PROCUREMENT$H
+              object: valstybe/pirkimas/dalyvis
+              source:
+                - ATN1_ID
+                - CODE
+      f02:
+        valstybe/pirkimas:
+          source: F02_2014
+          properties:
+            _id:
+              type: pk
+              source: ID
+            pavadinimas:
+              type: string
+              source: TITLE
+            forma:
+              type: string
+              source: FORM
+            kaina:
+              type: number
+              source: VAL_ESTIMATED_TOTAL
+            valiuta:
+              type: string
+              source: VAL_ESTIMATED_CURRENCY
+      f02/perkancioji:
+        valstybe/pirkimas/dalyvis:
+          source: F02_2014
           properties:
             _id:
               type: pk
@@ -145,30 +288,68 @@ resources:
             pirkimas:
               type: ref
               object: valstybe/pirkimas
-              source: EXTERNAL_REFERENCE_NUMBER
-            kaina:
-              type: number
-              source: PLANNED_VALUE
-      f02:
-        valstybe/pirkimas/ataskaita:
-          source: F02_2014
-          properties: {}
-        valstybe/pirkimas/dalyvis:
-          source: F02_2014
-          properties:
-            kaina:
-              type: number
-              source: VAL_ESTIMATED_TOTAL
-        valstybe/pirkimas/objektas:
-          source: F02_OBJECT_DESCR
-          properties:
-            kaina:
-              type: number
-              source: VAL_OBJECT
-      f02/perkancioji:
-        valstybe/pirkimas/dalyvis:
-          source: F02_2014
-          properties:
+              source: ID
+            role:
+              type: string
+              const: buyer
             pavadinimas:
               type: string
               source: OFFICIALNAME_1
+            organizacija:
+              type: ref
+              object: organizacija
+              source: NATIONALID_1
+        organizacija:
+          source: F02_2014
+          properties:
+            _id:
+              type: pk
+              source: NATIONALID_1
+            registracijos_numeris:
+              type: string
+              source: NATIONALID_1
+            pavadinimas:
+              type: string
+              source: OFFICIALNAME_1
+        valstybe/pirkimas/dalyvis/adresas:
+          source: F02_2014
+          properties:
+            _id:
+              type: pk
+              source:
+                - COUNTRY_1
+                - TOWN_1
+                - ADDRESS_1
+            dalyvis:
+              type: ref
+              object: valstybe/pirkimas/dalyvis
+              source: ID
+            adresas:
+              type: string
+              source: ADDRESS_1
+            gyvenviete:
+              type: string
+              source: TOWN_1
+            salis:
+              type: string
+              source: COUNTRY_1
+      f02/object:
+        valstybe/pirkimas/objektas:
+          source: F02_OBJECT_DESCR
+          properties:
+            _id:
+              type: pk
+              source: ID
+            pirkimas:
+              type: ref
+              object: valstybe/pirkimas
+              source: F02_2014_ID
+            pavadinimas:
+              type: string
+              source: TITLE
+            kaina:
+              type: number
+              source: VAL_OBJECT
+            valiuta:
+              type: string
+              source: VAL_OBJECT_CURRENCY
