@@ -182,10 +182,12 @@ def _update_node(orig, data, depth=0):
 
     if depth > len(levels) - 1:
         # No more levels left, stop recursion.
-        return
+        children = None
+    else:
+        children = levels[depth]
 
     # Some nodes, like models have two levels, so we need to handle that too.
-    if levels[depth] == '':
+    if children is not None and children == '':
         for k in set(orig) | set(data):
             if k in data:
                 if k in orig:
@@ -195,8 +197,6 @@ def _update_node(orig, data, depth=0):
             elif k in orig:
                 del orig[k]
         return
-
-    children = levels[depth]
 
     # Update node params, only changed keys are updated.
     for k, v in data.items():

@@ -16,7 +16,7 @@ def _read_rows(rows):
             yield [x.strip() for x in line.split('|')]
 
 
-def test_create_new_file(config, tmpdir):
+def test_create_new_file(postgresql, config, tmpdir):
     tmpdir = pathlib.Path(tmpdir)
 
     context = create_test_context(config)
@@ -69,7 +69,7 @@ def test_create_new_file(config, tmpdir):
     }
 
 
-def test_update_existing_file(config, tmpdir):
+def test_update_existing_file(postgresql, config, tmpdir):
     tmpdir = pathlib.Path(tmpdir)
 
     (tmpdir / 'datasets/gov/vpt').mkdir(mode=0o755, parents=True)
@@ -89,12 +89,12 @@ def test_update_existing_file(config, tmpdir):
         '          properties:',
         '            etapas:',
         '              type: string',
-        '              const: award',
+        '              const: awadr',
         '            org:',
         '              type: ref',
-        '              object: org',
+        '              object: ogr',
         '              # More comments',
-        '              source: ORG  # at the end of line',
+        '              source: OGR  # at the end of line',
         '            legacy:',
         '              type: string',
     ]))
