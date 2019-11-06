@@ -5,6 +5,8 @@ version: 1
 resources:
   mssql:
     type: sql
+    source:
+      schema: CVPIS
     objects:
       atn1:
         valstybe/pirkimas:
