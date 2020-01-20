@@ -2,8 +2,9 @@
 name: gov/vrk/rinkejopuslapis/kandidatai
 title: "Kandidatų sąrašai"
 type: dataset
-version: 1
-date: "2019-01-23"
+version:
+  number: 1
+  date: "2019-01-23"
 website: https://www.rinkejopuslapis.lt/ataskaitu-formavimas
 owner: gov/vrk
 stars: 2

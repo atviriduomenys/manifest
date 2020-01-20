@@ -1,8 +1,9 @@
 ---
 name: viesasis_pirkimas
 type: model
-version: 1
-date: "2019-06-25"
+version:
+  number: 1
+  date: 2019-06-25
 title: "Viešasis pirkimas"
 properties:
   pavadinimas:

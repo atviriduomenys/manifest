@@ -1,8 +1,9 @@
 name: politika/rinkimai/turas
 title: "Rinkimų turas"
 type: model
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: 2019-01-24
 properties:
   rinkimai:
     type: ref

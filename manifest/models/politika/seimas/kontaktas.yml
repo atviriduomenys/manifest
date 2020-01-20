@@ -1,8 +1,9 @@
 name: politika/seimas/kontaktas
 title: "Seimo nario kontaktinė informacija"
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 properties:
   seimo_narys:
     type: ref

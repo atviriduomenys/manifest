@@ -1,8 +1,9 @@
 name: politika/rinkimai/referendumas/klausimas
 title: "Referendumo klausimas"
 type: model
-version: 1
-date: "2019-01-20"
+version:
+  number: 1
+  date: 2019-01-20
 properties:
   referendumas:
     type: ref

@@ -1,2 +1,3 @@
 -e git+https://gitlab.com/atviriduomenys/spinta.git#egg=spinta
 authlib==0.11
+pyodbc

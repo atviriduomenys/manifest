@@ -2,8 +2,9 @@
 name: gov/vrk/web/kandidato_puslapis
 title: "Kandidato puslapis vrk.lt svetainėje"
 type: dataset
-version: 1
-date: "2019-01-23"
+version:
+  number: 1
+  date: "2019-01-23"
 owner: gov/vrk
 stars: 1
 flags:

@@ -3,8 +3,9 @@ title: "Narystė"
 description: |
   Šalies narystė konfederacijoje ar kitose sąjungose.
 type: model
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: 2019-01-24
 properties:
   nuo: {type: date}
   iki: {type: date}

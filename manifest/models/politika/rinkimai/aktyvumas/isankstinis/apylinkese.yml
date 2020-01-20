@@ -1,8 +1,9 @@
 name: politika/rinkimai/aktyvumas/isankstinis/apylinkese
 title: "Rinkėjų aktyvumas balsuojant iš anksto apylinkėse"
 type: model
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: 2019-01-24
 properties:
   turas: {type: ref, object: politika/rinkimai/turas}
   apygarda: {type: ref, object: politika/rinkimai/apygarda}

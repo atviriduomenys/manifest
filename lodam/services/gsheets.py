@@ -172,8 +172,10 @@ def _update_node(orig, data, depth=0):
 
     defaults = {
         0: {
-            'date': lambda: datetime.date.today().isoformat(),
-            'version': lambda: 1,
+            'version': {
+                'number': lambda: 1,
+                'date': lambda: datetime.date.today().isoformat(),
+            }
         },
         1: {
             'type': lambda: 'sql',

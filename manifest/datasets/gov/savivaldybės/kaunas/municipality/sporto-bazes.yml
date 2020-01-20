@@ -1,8 +1,9 @@
 name: gov/savivaldybės/kaunas/municipality/sporto-bazes
 title: "Sporto bazės"
 type: dataset
-version: 1
-date: "2018-10-06"
+version:
+  number: 1
+  date: "2018-10-06"
 stars: 3
 owner: gov/savivaldybes/kaunas
 resources:

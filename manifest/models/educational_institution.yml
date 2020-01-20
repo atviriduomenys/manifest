@@ -1,8 +1,9 @@
 ---
 name: educational_institution
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 title: "Educational Institution"
 description: ""
 properties:

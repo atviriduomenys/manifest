@@ -2,8 +2,9 @@
 name: gov/rc/jar
 title: "Juridinių asmenų registras (JAR)"
 type: dataset
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: "2019-01-24"
 owner: gov/rc
 stars: 0
 resources:

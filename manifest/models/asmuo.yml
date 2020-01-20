@@ -5,8 +5,9 @@ description: >
   Asmuo nėra atvirų duomenų objektas. Visi modeliai susieti su asmeniu turi
   būti nuasmeninti arba duomenys gali būti teikiami tik su to asmens sutikimu.
 type: model
-version: 1
-date: "2019-03-13"
+version:
+  number: 1
+  date: 2019-03-13
 extends: asmuo
 properties:
   vardas:

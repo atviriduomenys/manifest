@@ -4,8 +4,9 @@ description: >
   Vieno duomenų tiekėjo duomenų rinkinys, dažniausiai iš vienos konkrečios
   duomenų bazės ar duomenų saugyklos.
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 link: dctype:Dataset
 properties:
   pavadinimas:

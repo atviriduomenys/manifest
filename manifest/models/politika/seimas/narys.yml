@@ -2,8 +2,9 @@ name: politika/seimas/narys
 title: "Seimo narys"
 description: ""
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 properties:
   vardas:
     type: ref

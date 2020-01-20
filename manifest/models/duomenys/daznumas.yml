@@ -1,8 +1,9 @@
 name: duomenys/daznumas
 title: "Dažnumas"
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 link: dct:Frequency
 properties:
   pavadinimas:

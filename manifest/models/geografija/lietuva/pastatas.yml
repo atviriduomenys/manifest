@@ -1,8 +1,9 @@
 name: geografija/lietuva/pastatas
 title: "Gatvė"
 type: model
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: 2019-01-24
 properties:
   numeris: {type: string}
   pavadinimas: {type: string}

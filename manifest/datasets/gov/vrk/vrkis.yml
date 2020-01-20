@@ -2,8 +2,9 @@
 name: gov/vrk/vrkis
 title: "VRKIS aplikacijų programavimo sąsaja (API) išorinėms sistemoms"
 type: dataset
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: "2019-01-24"
 owner: gov/vrk
 stars: 4
 flags:

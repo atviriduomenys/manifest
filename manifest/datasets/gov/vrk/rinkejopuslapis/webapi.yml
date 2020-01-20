@@ -2,8 +2,9 @@
 name: gov/vrk/rinkejopuslapis/webapi
 title: "Rinkimų paieškos API"
 type: dataset
-version: 1
-date: "2019-03-13"
+version:
+  number: 1
+  date: "2019-03-13"
 website: https://www.rinkejopuslapis.lt/ataskaitu-formavimas
 owner: gov/vrk
 stars: 3

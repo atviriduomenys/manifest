@@ -1,8 +1,9 @@
 name: politika/rinkimai/europarlamento/rezultatas/partija
 title: "Europos Parlamento rinkimų rezultatai pagal partijas"
 type: model
-version: 1
-date: "2019-01-20"
+version:
+  number: 1
+  date: 2019-01-20
 properties:
   rinkimai:
     type: ref

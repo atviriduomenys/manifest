@@ -2,8 +2,9 @@
 name: gov/tm/partiju_sarasai_pdf
 title: "Lietuvos Respublikos politinių partijų sąrašas"
 type: dataset
-version: 1
-date: "2019-03-13"
+version:
+  number: 1
+  date: "2019-03-13"
 owner: gov/tm
 stars: 1
 resources: 

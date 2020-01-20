@@ -1,7 +1,8 @@
 name: kalba/lietuvių/vardas
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 title: "Vardas"
 properties:
   pavadinimas: {type: string}

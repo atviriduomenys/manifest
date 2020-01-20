@@ -1,8 +1,9 @@
 name: politika/savivaldybės/tarybos_narys
 title: "Savivaldybės tarybos narys"
 type: model
-version: 1
-date: "2019-01-06"
+version:
+  number: 1
+  date: 2019-01-06
 properties:
   vardas:
     type: ref

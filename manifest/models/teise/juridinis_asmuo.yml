@@ -1,8 +1,9 @@
 name: teise/juridinis_asmuo
 title: "Juridinis asmuo"
 type: model
-version: 1
-date: "2019-01-23"
+version:
+  number: 1
+  date: 2019-01-23
 properties:
   pavadinimas: {type: string}
   kodas: {type: string, title: "Juridinio asmens kodas"}

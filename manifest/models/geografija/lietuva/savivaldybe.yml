@@ -1,7 +1,8 @@
 name: geografija/lietuva/savivaldybe
 title: "Lietuvos savivaldybė"
 type: model
-version: 1
-date: "2019-01-24"
+version:
+  number: 1
+  date: 2019-01-24
 properties:
   pavadinimas: {type: string}

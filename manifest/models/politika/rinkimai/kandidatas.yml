@@ -1,8 +1,9 @@
 name: politika/rinkimai/kandidatas
 title: "Kandidatas rinkimuose"
 type: model
-version: 1
-date: "2019-01-23"
+version:
+  number: 1
+  date: 2019-01-23
 properties:
   rinkimai:
     type: ref

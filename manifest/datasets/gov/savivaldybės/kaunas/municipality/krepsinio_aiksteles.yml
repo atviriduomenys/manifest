@@ -2,8 +2,9 @@
 name: gov//savivaldybėskaunas/municipality/krepsinio_aiksteles
 title: "Krepšinio aikštelės"
 type: dataset
-version: 1
-date: "2018-10-06"
+version:
+  number: 1
+  date: "2018-10-06"
 stars: 3
 owner: gov/savivaldybes/kaunas
 resources:

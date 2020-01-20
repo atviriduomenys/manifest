@@ -2,8 +2,9 @@
 name: gov/policija/epolicija/eismo_ivykiai
 title: "Eismo įvykių duomenys"
 type: dataset
-version: 1
-date: "2018-12-01"
+version:
+  number: 1
+  date: "2018-12-01"
 owner: gov/lrs
 website: https://www.epolicija.lt/atviri-duomenys
 resources:

@@ -1,7 +1,8 @@
 name: politika/rinkimai/kandidatas/vaikas
 title: "Kandidato vaikas"
 type: model
-version: 1
-date: "2019-01-23"
+version:
+  number: 1
+  date: 2019-01-23
 properties:
   vardas: {type: string}

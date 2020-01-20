@@ -77,8 +77,9 @@ def test_update_existing_file(postgresql, config, tmpdir):
         '# Some comment',
         'type: dataset',
         'name: gov/vpt/ataskaitos',
-        'date: 1',
-        'version: 2019-08-27',
+        'version:',
+        '  number: 1',
+        '  date: 2019-08-27',
         'resources:',
         '  "":',
         '    type: sql',
@@ -128,8 +129,10 @@ def test_update_existing_file(postgresql, config, tmpdir):
     assert yaml.load(content) == {
         'type': 'dataset',
         'name': 'gov/vpt/ataskaitos',
-        'date': 1,
-        'version': datetime.date(2019, 8, 27),
+        'version': {
+            'number': 1,
+            'date': datetime.date(2019, 8, 27),
+        },
         'resources': {
             '': {
                 'type': 'sql',
