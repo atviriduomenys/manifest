@@ -12,7 +12,7 @@ cache:
 
 before_script:
   - python --version
-  # - apt-get update -q && apt-get install nodejs -yqq
+  - apt-get update -q && apt-get install unixodbc-dev -yqq
   - python -m venv ci/env
   - ci/env/bin/pip install -r requirements-dev.txt -e .
 
