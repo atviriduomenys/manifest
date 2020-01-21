@@ -30,10 +30,10 @@ def test_create_new_file(postgresql, config, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest          |          |        |                             |          |        |     |       | VPT (new) |          |
-    dataset                     | resource | origin | model                       | property | type   | ref | const | object    | property | comment
-    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | etapas   | string |     | award |           |          |
-    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | org      | ref    | org |       | ATN1      | ORG      |
+    Open Data Manifest          |          |        |                             |          |        |     |       |        |             | VPT (new) |          |
+    dataset                     | resource | origin | model                       | property | type   | ref | const | title  | description | object    | property | comment
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | etapas   | string |     | award | Etapas | Aprašymas   |           |          |
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | org      | ref    | org |       |        |             | ATN1      | ORG      |
     ''')
 
     update_manifest_files(context, rows)
@@ -53,6 +53,8 @@ def test_create_new_file(postgresql, config, tmpdir):
                             'properties': {
                                 'etapas': {  # property
                                     'type': 'string',
+                                    'title': 'Etapas',
+                                    'description': 'Aprašymas',
                                     'const': 'award',
                                 },
                                 'org': {  # property
@@ -111,11 +113,11 @@ def test_update_existing_file(postgresql, config, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest |          |        |                   |          |        |     |       | VPT    |          |
-    dataset            | resource | origin | model             | property | type   | ref | const | object | property | comment
-    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | etapas   | string |     | award |        |          |
-    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | org      | ref    | org |       | ATN1   | ORG      |
-    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | title    | string |     |       | ATN1   | TITLE    |
+    Open Data Manifest |          |        |                   |          |        |     |       |             |             | VPT    |          |
+    dataset            | resource | origin | model             | property | type   | ref | const | title       | description | object | property | comment
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | etapas   | string |     | award | Etapas      | Aprašymas   |        |          |
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | org      | ref    | org |       |             |             | ATN1   | ORG      |
+    gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | title    | string |     |       | Pavadinimas |             | ATN1   | TITLE    |
     ''')
 
     update_manifest_files(context, rows)
@@ -143,6 +145,8 @@ def test_update_existing_file(postgresql, config, tmpdir):
                             'properties': {
                                 'etapas': {
                                     'type': 'string',
+                                    'title': 'Etapas',
+                                    'description': 'Aprašymas',
                                     'const': 'award',
                                 },
                                 'org': {
@@ -152,6 +156,7 @@ def test_update_existing_file(postgresql, config, tmpdir):
                                 },
                                 'title': {
                                     'type': 'string',
+                                    'title': 'Pavadinimas',
                                     'source': 'TITLE',
                                 },
                             },

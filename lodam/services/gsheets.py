@@ -70,6 +70,8 @@ def update_manifest_files(context, rows):
             'type',
             'ref',
             'const',
+            'title',
+            'description',
             'source.object',
             'source.property',
         ]
@@ -141,6 +143,10 @@ def update_manifest_files(context, rows):
                 prop['object'] = row.ref
             if row.const:
                 prop['const'] = row.const
+            if row.title:
+                prop['title'] = row.title
+            if row.description:
+                prop['description'] = row.description
             if row.source.property:
                 if ',' in row.source.property:
                     prop['source'] = [x.strip() for x in row.source.property.split(',')]
