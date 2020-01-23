@@ -27,6 +27,14 @@ def inspect(engine, schema=None):
     insp = reflection.Inspector.from_engine(engine)
     for table in insp.get_table_names(schema):
         pkey = insp.get_pk_constraint(table, schema)
+        if pkey:
+            yield (
+                table,
+                pkey['constrained_columns'],
+                'pk',
+                '',
+            )
+
         fkeys = insp.get_foreign_keys(table, schema)
         refs = {}
         for fkey in fkeys:
@@ -37,12 +45,12 @@ def inspect(engine, schema=None):
                     'table': fkey['referred_table'],
                     'column': ref,
                 }
+
         for column in insp.get_columns(table, schema):
             yield (
                 table,
                 column['name'],
                 detect_type(column['type']),
-                column['name'] in pkey['constrained_columns'],
                 refs.get(column['name'], ''),
             )
 
@@ -82,25 +90,30 @@ def writecsv(f, cols, params=None):
         'ref.table',
         'ref.column',
     ])
-    for table, column, ctype, pkey, ref in cols:
+    for table, column, ctype, ref in cols:
         kwargs = {
             'table': table.lower(),
-            'column': column.lower(),
-            'type': ctype,
         }
-        if pkey:
-            mtype = 'pk'
-        elif ref:
-            mtype = 'ref'
+
+        if ctype == 'pk':
+            dtype = 'pk'
+            prop = '_id'
+            column = ','.join(column)
         else:
-            mtype = ctype
+            prop = column.lower()
+
+        if ref:
+            dtype = 'ref'
+        else:
+            dtype = ctype
+
         writer.writerow([
             params['dataset'].format(**kwargs),
             params['resource'].format(**kwargs),
             params['origin'].format(**kwargs),
             params['model'].format(**kwargs),
-            column.lower(),
-            mtype,
+            prop,
+            dtype,
             params['model'].format(**{**kwargs, 'table': ref['table'].lower()}) if ref else '',
             '',  # const
             '',  # title

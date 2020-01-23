@@ -8,7 +8,7 @@ from lodam.services.sqlschema import inspect, writecsv
 
 def test_inspect():
     engine = sa.create_engine('sqlite://')
-    engine.execute('CREATE TABLE t(id INTEGER PRIMARY KEY);')
+    engine.execute('CREATE TABLE t(foo INTEGER NOT NULL, bar INTEGER NOT NULL, PRIMARY KEY(foo, bar));')
     cols = inspect(engine)
     f = io.StringIO()
     writecsv(f, cols)
@@ -19,14 +19,46 @@ def test_inspect():
             'resource': '',
             'origin': '',
             'model': 't',
-            'property': 'id',
+            'property': '_id',
             'type': 'pk',
             'ref': '',
             'const': '',
             'title': '',
             'description': '',
             'table': 't',
-            'column': 'id',
+            'column': 'foo,bar',
+            'ref.table': '',
+            'ref.column': '',
+        },
+        {
+            'dataset': '',
+            'resource': '',
+            'origin': '',
+            'model': 't',
+            'property': 'foo',
+            'type': 'integer',
+            'ref': '',
+            'const': '',
+            'title': '',
+            'description': '',
+            'table': 't',
+            'column': 'foo',
+            'ref.table': '',
+            'ref.column': '',
+        },
+        {
+            'dataset': '',
+            'resource': '',
+            'origin': '',
+            'model': 't',
+            'property': 'bar',
+            'type': 'integer',
+            'ref': '',
+            'const': '',
+            'title': '',
+            'description': '',
+            'table': 't',
+            'column': 'bar',
             'ref.table': '',
             'ref.column': '',
         },
