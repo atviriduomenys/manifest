@@ -1,9 +1,11 @@
 import collections
+import csv
 import datetime
 import json
 import os
 import pickle
 import re
+import pathlib
 
 from ruamel.yaml import YAML
 
@@ -30,6 +32,11 @@ def load_spinta_context():
     return context
 
 
+def get_csv_rows(path: pathlib.Path):
+    with path.open() as f:
+        yield from csv.reader(f)
+
+
 def get_gsheet_rows(sheet_url, cache, creds_file):
     spreadsheet_id, sheet_id = parse_sheet_url(sheet_url)
     cache_file = f'gsheet-{spreadsheet_id}-{sheet_id}.json'
@@ -49,34 +56,38 @@ def get_gsheet_rows(sheet_url, cache, creds_file):
         with open(cache_file, 'w') as f:
             json.dump(data, f, ensure_ascii=False)
 
-    return iter(data.get('values', []))
-
-
-def update_manifest_files(context, rows):
+    rows = iter(data.get('values', []))
 
     # Skip first header row, because column names are on the second row.
     next(rows, None)
 
+    return rows
+
+
+def update_manifest_files(context, rows):
+    # Header row
     columns = next(rows, None)
     columns = columns or [None]
 
-    if columns[0] == 'dataset':
-        schema = [
-            'dataset',
-            'resource',
-            'origin',
-            'model',
-            'property',
-            'type',
-            'ref',
-            'const',
-            'title',
-            'description',
-            'source.object',
-            'source.property',
-        ]
-    else:
-        raise Exception(f"Unknown first column {columns[0]!r} in second row.")
+    schema = [
+        'dataset',
+        'resource',
+        'origin',
+        'model',
+        'property',
+        'type',
+        'ref',
+        'const',
+        'title',
+        'description',
+        'table',
+        'column',
+    ]
+
+    unknown_columns = set(columns[:len(schema)]) - set(schema)
+    if unknown_columns:
+        unknown_columns = ', '.join(sorted(unknown_columns, key=columns.index))
+        raise Exception(f"Unknown columns: {unknown_columns}.")
 
     manifest_dir = context.get('store').manifests['default'].path
 
@@ -125,10 +136,10 @@ def update_manifest_files(context, rows):
         else:
             model = origin[row.model]
 
-        if row.source.object:
+        if row.table:
             if 'source' not in model:
-                model['source'] = row.source.object
-            elif model['source'] != row.source.object:
+                model['source'] = row.table
+            elif model['source'] != row.table:
                 raise Exception(f"Row {i}, model {row.model} already has different source {model['source']!r} set.")
 
         # Property
@@ -147,11 +158,11 @@ def update_manifest_files(context, rows):
                 prop['title'] = row.title
             if row.description:
                 prop['description'] = row.description
-            if row.source.property:
-                if ',' in row.source.property:
-                    prop['source'] = [x.strip() for x in row.source.property.split(',')]
+            if row.column:
+                if ',' in row.column:
+                    prop['source'] = [x.strip() for x in row.column.split(',')]
                 else:
-                    prop['source'] = row.source.property
+                    prop['source'] = row.column
         else:
             raise Exception(f"Row {i}, property {row.property} already defined for {row.model}.")
 

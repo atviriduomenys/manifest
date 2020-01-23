@@ -1,11 +1,14 @@
 import datetime
 import pathlib
+import textwrap
+import re
 
 from ruamel.yaml import YAML
 
 from spinta.testing.context import create_test_context
 
 from lodam.services.gsheets import update_manifest_files
+from lodam.services.gsheets import get_csv_rows
 
 yaml = YAML(typ='safe')
 
@@ -30,8 +33,7 @@ def test_create_new_file(postgresql, config, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest          |          |        |                             |          |        |     |       |        |             | VPT (new) |          |
-    dataset                     | resource | origin | model                       | property | type   | ref | const | title  | description | object    | property | comment
+    dataset                     | resource | origin | model                       | property | type   | ref | const | title  | description | table     | column   | comment
     gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | etapas   | string |     | award | Etapas | Aprašymas   |           |          |
     gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | org      | ref    | org |       |        |             | ATN1      | ORG      |
     ''')
@@ -113,8 +115,7 @@ def test_update_existing_file(postgresql, config, tmpdir):
     })
 
     rows = _read_rows('''
-    Open Data Manifest |          |        |                   |          |        |     |       |             |             | VPT    |          |
-    dataset            | resource | origin | model             | property | type   | ref | const | title       | description | object | property | comment
+    dataset            | resource | origin | model             | property | type   | ref | const | title       | description | table  | column   | comment
     gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | etapas   | string |     | award | Etapas      | Aprašymas   |        |          |
     gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | org      | ref    | org |       |             |             | ATN1   | ORG      |
     gov/vpt/ataskaitos |          | ATN1   | valstybe/pirkimas | title    | string |     |       | Pavadinimas |             | ATN1   | TITLE    |
@@ -158,6 +159,61 @@ def test_update_existing_file(postgresql, config, tmpdir):
                                     'type': 'string',
                                     'title': 'Pavadinimas',
                                     'source': 'TITLE',
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    }
+
+
+def test_csv_file(postgresql, config, tmpdir):
+    tmpdir = pathlib.Path(tmpdir)
+
+    context = create_test_context(config)
+    context.load({
+        'manifests': {
+            'default': {
+                'backend': 'default',
+                'path': str(tmpdir),
+            },
+        },
+    })
+
+    (tmpdir / 'schema.csv').write_text(re.sub(r' *\| *', ',', textwrap.dedent('''\
+    dataset                     | resource | origin | model                       | property | type   | ref | const | title  | description | table     | column   | comment
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | etapas   | string |     | award | Etapas | Aprašymas   |           |          |
+    gov/vpt/new/ataskaitos/atn1 |          | ATN1   | valstybe/pirkimas/ataskaita | org      | ref    | org |       |        |             | ATN1      | ORG      |
+    ''')))
+    rows = get_csv_rows(tmpdir / 'schema.csv')
+
+    update_manifest_files(context, rows)
+
+    assert sorted([str(p.relative_to(tmpdir)) for p in tmpdir.glob('**/*.yml')]) == [
+        'datasets/gov/vpt/new/ataskaitos/atn1.yml',
+    ]
+    assert yaml.load((tmpdir / 'datasets/gov/vpt/new/ataskaitos/atn1.yml').read_text()) == {
+        'type': 'dataset',
+        'name': 'gov/vpt/new/ataskaitos/atn1',
+        'resources': {
+            '': {  # resource
+                'objects': {
+                    'ATN1': {  # origin
+                        'valstybe/pirkimas/ataskaita': {  # model
+                            'source': 'ATN1',
+                            'properties': {
+                                'etapas': {  # property
+                                    'type': 'string',
+                                    'title': 'Etapas',
+                                    'description': 'Aprašymas',
+                                    'const': 'award',
+                                },
+                                'org': {  # property
+                                    'type': 'ref',
+                                    'object': 'org',
+                                    'source': 'ORG'
                                 },
                             },
                         },
