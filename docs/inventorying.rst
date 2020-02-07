@@ -90,6 +90,11 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
   simboliu yra rezervuoti ir turi tam tikrą paskirtį. Įprastiniai laukų
   pavadinimai negali prasidėti `_` simboliu.
 
+  Jei `property` stulpelio reikšmė yra tuščia, tada kai kurie laukai keičia
+  prasmę ir persijungia iš laukams skirtų metaduomenų į modeliui skirtus
+  metaduomenis. Laukai kurie keičia prasmę yra `title`, `description` ir
+  `table`.
+
 :type:
   Atvirų duomenų saugykla turi turtingą tipų sistemą, todėl svarbu nurodyti
   rinkamus tipus. Įrankis automatiškai bando atpažinti tipus automatiškai,
@@ -113,6 +118,9 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
   Originalus duomenų šaltinio lentelės pavadinimas. Automatinės priemonės
   automatiškai skaitys duomenis iš šios lentelės ir nuskaitytus duomenis saugos
   atitinkamoje `model` stulpelio lentelėje.
+
+  Jei `property` stulpelio reikšmė yra tuščia, tuomet šiame stulpelyje galima
+  įrašyti RQL užklausą lentelei filtruoti.
 
 :column:
   Originalus duomenų šaltinio lentelės lauko pavadinimas. Analogiškai, kaip ir
@@ -490,6 +498,70 @@ gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  priklaus
 gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  lygis        integer  \                       2      \       \                                   
 gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  pavadinimas  string   \                       \      \       \            SAVIVALDYBES  pavadinimas
 ======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ============  ===========
+
+
+Lentelės skaidymas
+==================
+
+Prieš tai aptarėme kaip apjungti kelias lenteles į vieną modelį. O dabar
+aptarsime, kaip daryti atvirkštinį procesą, kaip skaidyti vieną lentelę į kelis
+modelius.
+
+Tarkime turime tokią lentelę:
+
+=======  =========  =========  ===============
+ADMINISTRACIJOS           
+----------------------------------------------
+id       priklauso  lygis      pavadinimas
+=======  =========  =========  ===============
+1        NULL       1          Vilniaus
+2        NULL       1          Kauno
+3        NULL       1          Klaipėdos
+4        1          2          Vilniaus miesto
+5        1          2          Vilniaus rajono
+6        1          2          Trakų rajono
+=======  =========  =========  ===============
+
+Norime šią lentelę suskaidyti į dvi atskiras lenteles. Įrašai, kurių `lygis`
+reikšmė yra `1` turėtų keliauti į apskričių modelį, o įrašai, kurių `lygis`
+reikšmė yra `2` turėtų keliauti į savivaldybių modelį.
+
+Pirminė inventorizacijos lentelė atrodo taip:
+
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
+dataset                 resource  origin        model                   property     type     ref                     const  title   description  table            column
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
+gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  _id          pk       \                       \      \       \            ADMINISTRACIJOS  id
+gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  priklauso    ref      raw/dc/ADMINISTRACIJOS  \      \       \            ADMINISTRACIJOS  priklauso
+gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  lygis        integer  \                       \      \       \            ADMINISTRACIJOS  lygis
+gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  pavadinimas  string   \                       \      \       \            ADMINISTRACIJOS  pavadinimas
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
+
+Tam, kad suskaidyti vienos lentelės duomenis į kelis skirtingus modelius, mums
+reikia panaudoti filtrus lentelės lygmenyje. Metaduomenys lentelės lygmenyje
+taikomi tada, kai `property` reikšmė yra tuščia.
+
+Lentelės metaduomenų lygmenyje `table` stulpelyje galima nurodyti RQL užklausą
+duomenims filtruoti.
+
+Šiuo atveju, mums reikia filtruoti duomenis pagal stulpelio `lygis` reikšmes.
+
+Galutinė inventorizacijos lentelė, po pertvarkymų atrodo taip:
+
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
+dataset                 resource  origin        model                   property     type     ref                     const  title   description  table            column
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
+gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        \            \        \                       \      \       \            lygis=1          \ 
+gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        _id          pk       \                       \      \       \            ADMINISTRACIJOS  id
+gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        priklauso    ref      raw/dc/APSKRITYS        \      \       \            ADMINISTRACIJOS  priklauso
+gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        lygis        integer  \                       \      \       \            ADMINISTRACIJOS  lygis
+gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        pavadinimas  string   \                       \      \       \            ADMINISTRACIJOS  pavadinimas
+gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     \            \        \                       \      \       \            lygis=2          \ 
+gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     _id          pk       \                       \      \       \            ADMINISTRACIJOS  id
+gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     priklauso    ref      raw/dc/SAVIVALDYBES     \      \       \            ADMINISTRACIJOS  priklauso
+gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     lygis        integer  \                       \      \       \            ADMINISTRACIJOS  lygis
+gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     pavadinimas  string   \                       \      \       \            ADMINISTRACIJOS  pavadinimas
+======================  ========  ============  ======================  ===========  =======  ======================  =====  ======  ===========  ===============  ===========
 
 
 Vieningo žodyno naudojimas
