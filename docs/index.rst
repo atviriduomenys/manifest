@@ -26,7 +26,7 @@ teikiami įrankiai, kurie metaduomenų pagrindu automatizuoja daugelį duomenų
 atvėrimo ir pateikimo naudojimui veiklų.
 
 Manifesto (lapelis ant spintos) sudarymo procesas vadinamas duomenų
-`inventorizacija <inventorying>`_. Tarkime, kaip pavyzdį, galime panagrinėti
+`inventorizacija <inventorying>`:ref:. Tarkime, kaip pavyzdį, galime panagrinėti
 išgalvotos įstaigos „Duomenų centras“ sutrumpintai vadinamos DC duomenis. DC
 duomenų bazėje yra lentelė techniniu pavadinimu `COUNTRIES`, lentelės
 turinys atrodo taip:
