@@ -37,7 +37,8 @@ Windows
     užsirašykite slaptažodį, nes jo reikės.
 
 Ubuntu 18.04
-  ::
+  .. code-block:: sh
+
     sudo apt update
     sudo apt install software-properties-common
     sudo add-apt-repository ppa:deadsnakes/ppa
@@ -48,7 +49,8 @@ Ubuntu 18.04
 
 
 Archlinux
-  ::
+  .. code-block:: sh
+
     sudo pacman -S --needed docker docker-compose $(pacman -Sgq base-devel)
 
 Klonuokite atvirų duomenų manifesto repozitoriją::

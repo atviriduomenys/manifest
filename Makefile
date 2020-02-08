@@ -1,5 +1,5 @@
 .PHONY: env
-env: .env env/.done requirements.txt
+env: .env env/.done requirements.txt requirements-dev.txt docs/requirements.txt
 
 env/bin/pip:
 	python3.8 -m venv env
@@ -18,6 +18,9 @@ requirements-dev.txt: env/bin/pip-compile requirements.in requirements-dev.in
 requirements.txt: env/bin/pip-compile requirements.in
 	env/bin/pip-compile --no-index requirements.in -o requirements.txt
 
+docs/requirements.txt: env/bin/pip-compile docs/requirements.in
+	env/bin/pip-compile --no-index docs/requirements.in -o docs/requirements.txt
+
 .env: .env.example
 	cp -n .env.example .env | true
 	touch .env
@@ -26,6 +29,7 @@ requirements.txt: env/bin/pip-compile requirements.in
 upgrade: env/bin/pip-compile
 	env/bin/pip-compile --upgrade --no-index requirements.in -o requirements.txt
 	env/bin/pip-compile --upgrade --no-index requirements.in requirements-dev.in -o requirements-dev.txt
+	env/bin/pip-compile --upgrade --no-index docs/requirements.in docs/requirements.txt
 
 .PHONY: test
 test: env
@@ -46,3 +50,11 @@ build-image:
 .PHONY: push-image
 push-image:
 	docker push registry.gitlab.com/atviriduomenys/manifest
+
+.PHONY: docs-auto
+docs-auto:
+	$(MAKE) -C docs auto
+
+.PHONY: docs-open
+docs-open:
+	$(MAKE) -C docs open

@@ -8,9 +8,17 @@ SPHINXBUILD   ?= ../env/bin/sphinx-build
 SOURCEDIR     = .
 BUILDDIR      = _build
 
+export PATH := ../env/bin:$(PATH)
+
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+auto:
+	../env/bin/sphinx-autobuild -b html $(SOURCEDIR) $(BUILDDIR)/html
+
+open:
+	xdg-open http://127.0.0.1:8000
 
 .PHONY: help Makefile
 
