@@ -29,21 +29,33 @@ taisykles. Pavyzdžiui tai galėtų atrodyti taip:
 
     scripts/list-sql-schema.py \
       driver://user:password@host/name \
-      --dataset=gov/dc/countries \
+      --dataset=datasets/gov/dc/countries \
       --resource=sql \
-      --model='raw/dc/{table}' \
       -o inventorizacija.csv
 
 Komanda sukurs `inventorizacija.csv` failą, kuriame bus tokie duomenys:
 
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \    \      4      \       \            COUNTRIES     id
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \    \      3      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \    \      3      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+| d | r | b | m | property  | source    | type    | ref | level | access | title  | description |
++===+===+===+===+===========+===========+=========+=====+=======+========+========+=============+
+| datasets/gov/dc/countries |           |         |     |       |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   | sql                   |           |         |     |       |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   |   |                   |           |         |     |       |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   |   |   | countries     | COUNTRIES |         | id  |       |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   |   |   |   | id        | id        | integer |     | 4     |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   |   |   |   | code      | code      | string  |     | 2     |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
+|   |   |   |   | country   | country   | string  |     | 2     |        |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+--------+-------------+
 
+Inventorizacijos lentelė yra sudaryta hierarchiniu principu, kur pirmųjų
+stulpelių raidės reiškia **d**: **dataset**, **r**: **resource**, **b**:
+**base**, **m**: **model**.
 
 Kol kas nesigilinsime į visų lentelės stulpelių paskirtį, kadangi tam tikrų
 stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
@@ -52,11 +64,11 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
   Tai yra duomenų rinkinio pavadinimas, kuris atitinka `dcat:Dataset`_.
 
   Duomenų rinkinio pavadinime galima naudoti vardų erdves. Pavyzdyje, duomenų
-  rinkinio `gov/dc/countries` vardų erdvė yra `gov/dc`. Rekomenduojama
-  valstybinėms įstaigoms naudoti `gov/` vardų erdvę, taip pat nurodant įstaigos
-  trumpinį, kuris šiuo atveju yra `dc/`. Paskutinis komponentas yra toje
-  įstaigoje esančio duomenų rinkinio pavadinimas. Jei įstaiga turi daug duomenų
-  rinkinių, galima pasitelkti daugiau vardų erdvės dalių, pavyzdžiui
+  rinkinio `datasets/gov/dc/countries` vardų erdvė yra `gov/dc`. Rekomenduojama
+  valstybinėms įstaigoms naudoti `datasets/gov/` vardų erdvę, taip pat nurodant
+  įstaigos trumpinį, kuris šiuo atveju yra `dc/`. Paskutinis komponentas yra
+  toje įstaigoje esančio duomenų rinkinio pavadinimas. Jei įstaiga turi daug
+  duomenų rinkinių, galima pasitelkti daugiau vardų erdvės dalių, pavyzdžiui
   `gov/dc/geo/countries`.
 
   Duomenų rinkinio pavadinimas naudojamas automatiniam duomenų rinkinių
@@ -70,30 +82,36 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
 
 .. _`dcat:Resource`: https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution
 
-:model:
-  Duomenų modelio, pavadinimas. Generuojant inventorizacijos lentelę šis
-  pavadinimas atitinka nurodytą šabloną `--model='raw/dc/{table}'`. Jei
-  nekeičiami originalūs duomenų šaltinio pavadinimai, rekomenduojama naudoti
-  `raw/` prefiksą, kuris nurodo, kad duomenys yra žali, netvarkyti.
+:base:
+  Šis stulpelis naudojamas lentelių apjungimui. Lentelės gali būti apjungiamos
+  dviem atvejais:
 
-  Modelio pavadinime galima naudoti vardų erdves. Šiuo atveju modelio
-  `raw/dc/COUNTRIES` vardų erdvė yra `raw/dc`.
+  - Siejant duomenų rinkinių modelius su modeliais naudojančiais žodyno
+    pavadinimus.
+
+  - Siejant kelis šaltinio modelius su vienu maziniu modeliu, tokiu būdu
+    apjungiant kelis modelius į vieną.
+
+:model:
+  Duomenų modelio, pavadinimas. Modelio pavadinime galima naudoti vardų erdves.
+  Galutinis modelio pavadinimas bus apjungtas su duomenų rinkinio pavadinimu.
+  Pavyzdžiui jei invertorizacijos lentelėje yra nurodytas modelio pavadinimas
+  `countries`, galutinios šio modelio pavadinimas bus
+  `datasets/gov/dc/countries/countries`.
 
 :property:
   Duomenų lauko pavadinimas. Kaip matote, laukas `id` buvo automatiškai
-  pakeistas į `_id`. Taip atsitiko todėl, kad įrankis automatiškai atpažino
-  lentelėje esantį pirminį raktą. Atvirų duomenų saugykloje pirminis raktas
-  gali būti tik vienas ir pirminio rakto laukas yra privalomas. Todėl visi
-  modeliai privalomai turi `_id` lauką, kuris visada yra pirminis raktas.
+  įtrauktas į modelio `ref` stulpelį. Taip atsitiko todėl, kad įrankis
+  automatiškai atpažino lentelėje esantį pirminį raktą ir įtraukį jį kaip šio
+  modelio pirminį raktą.
 
-  Dar vienas pastebėjimas, kad visi laukų pavadinimai, kurie prasideda `_`
-  simboliu yra rezervuoti ir turi tam tikrą paskirtį. Įprastiniai laukų
-  pavadinimai negali prasidėti `_` simboliu.
+  Visi laukų pavadinimai, kurie prasideda `_` simboliu yra rezervuoti ir turi
+  tam tikrą paskirtį. Įprastiniai laukų pavadinimai negali prasidėti `_`
+  simboliu.
 
-  Jei `property` stulpelio reikšmė yra tuščia, tada kai kurie laukai keičia
-  prasmę ir persijungia iš laukams skirtų metaduomenų į modeliui skirtus
-  metaduomenis. Laukai kurie keičia prasmę yra `title`, `description` ir
-  `table`.
+:source:
+  Priklausomai nuo hierarchijos lygio pateikiamas resurso, modelio ar savybės
+  duomenų šaltinis.
 
 :type:
   Atvirų duomenų saugykla turi turtingą tipų sistemą, todėl svarbu nurodyti
@@ -104,9 +122,38 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
   Galima naudoti šiuos tipus: `pk`, `ref`, `string`, `integer`, `number`,
   `boolean`, `binary`, `date`, `datetime`, `file`.
 
+:ref:
+  Šis stulpelis skirtas ryšiams tarp lentelių ir stulpelio prasmė priklauso nuo
+  to kokioje eilutėje pateikta reikšmė. Jei `ref` nurodytas modeliui arba
+  `base` eilutei, tafa `ref` yra vienas ar daugiau modelio savybių nurodytų
+  `property` stulpelyje, tokiu atveju `ref` padeda susieti duomenų rinkinio
+  identifikatorius su vidiniais manifesto identifikatoriais.
+
+  Jei `ref` pateiktas `property` eilutei, tada tai yra modelio pavadinimas su
+  kuriuo tam tikra savybė turi ryšį.
+
 :level:
-  Duomenų brandos lygis, šiuo atveju automatinis įrankis atpažino visiems
-  laukams suteikė trečią brandos lygį.
+  Duomenų brandos lygis.
+
+:access:
+  Nurodo ar duomenys gali būti atverti ar ne. Galimos reikšmės yra:
+
+  :private:
+    Duomenų laukas yra uždaras ir negali būti atvertas ar matomas per API. Šis
+    pasirinkimas turi būti naudojamas tik tokiems laukams, kurie yra tik
+    vidiniam tam tikros vienos sistemos naudojimui.
+
+  :protected:
+    Duomenų laukas nėra viešas, tačiau gali būti naudojamas vidinėje
+    komunikacijoje per API, turint atitinkamas teises.
+
+  :public:
+    Duomenų laukas gali būti atvertas, tačiau duomenų naudojimas yra apribotas,
+    duomenų naudotojai turi susipažinti ir laikytis tam tikrų duomenų
+    naudojimosi sąlygų.
+
+  :open:
+    Duomenų laukas gali būti atveras ir naudojamas be jokių apribojimų.
 
 :title:
   Modelio ar duomenų lauko pavadinimas skirtas žmonėms. Norint nurodyti modelio
@@ -118,22 +165,9 @@ stulpelių panaudojimas bus aptartas atskirai. Kas šiame pavyzdyje yra aktualu:
   dokumentacija, todėl aprašyme reikėtų pateikti informaciją, kuri padėtų
   suprasti kaip naudoti duomenis.
 
-:table:
-  Originalus duomenų šaltinio lentelės pavadinimas. Automatinės priemonės
-  automatiškai skaitys duomenis iš šios lentelės ir nuskaitytus duomenis saugos
-  atitinkamoje `model` stulpelio lentelėje.
-
-  Jei `property` stulpelio reikšmė yra tuščia, tuomet šiame stulpelyje galima
-  įrašyti RQL užklausą lentelei filtruoti.
-
-:column:
-  Originalus duomenų šaltinio lentelės lauko pavadinimas. Analogiškai, kaip ir
-  su `table` stulpeliu, duomenys bus skaitomi iš šio stulpelio ir saugomi
-  atitinkamame `property` stulpelyje atveriant duomenis.
-
 Jei yra poreikis, galima pridėti daugiau stulpelių, savo nuožiūra, visi kiti
-stulpeliai einantys po `column` bus ignoruojami. Visi kiti stulpelių
-pavadinimai turi būti tiksliai tokie, kokie pateikti pavyzdyje.
+stulpeliai einantys po `description` bus ignoruojami. Stulpelių pavadinimai
+turi būti tiksliai tokie, kokie pateikti pavyzdyje.
 
 Tokia automatiškai parengta inventorizacijos lentelė gali būti naudojama
 atveriant duomenis.
@@ -146,10 +180,11 @@ padaryti taip:
 
     scripts/csv-to-manifest inventorizacija.csv
 
-Ši komanda sukurs `manifest/datasets/gov/dc/countries.yml` failą. Šį YAML failą
+Ši komanda sukurs `manifest/datasets/gov/dc/countries.dataset.yml` ir
+`manifest/datasets/gov/dc/countries/countries.yml` failus. Šiuos YAML failus
 naudoja praktiškai visos priemonės, kadangi inventorizacijos lentelėje yra
-pateikia tik pati svarbiausia metaduomenų dalis, o YAML faile, galima pateikti
-žymiai daugiau metaduomenų.
+pateikiama tik pati svarbiausia metaduomenų dalis, o YAML failuose, galima
+pateikti žymiai daugiau metaduomenų.
 
 Keičiant YAML failus, galima juos perrašyti naudojant inventorizacijos lentelę.
 Perrašymo metu, bus išlaikomi visi pakeitimai YAML faile, kurių nėra
@@ -176,28 +211,36 @@ Duomenų laukų atranka
 =====================
 
 Dažniausiai negalima atverti visų duomenų laukų, todėl reikia vykdyti atvertinų
-duomenų laukų atranką.
+duomenų laukų atranką. Duomenų laukų atrankai naudojamas `access` stulpelis,
+kurio reikšmės gali būti `open`, `public`, `protected` arba `private`.
 
-Norint, kad tam tikri laukai nepatektų į YAML failus, užtenka ištrinti
-`dataset` stulpelio reikšmę. Jei lauko nebus YAML faile, šis laukas nebus
-atvertas.
+`access` reikšmę galima nurodyti tiek prie vienos iš hierarchinių eilučių, tiek
+prie kiekvieno lauko atskirai.
 
-Rekomenduojama netrinti laukų, kurių neplanuojama atverti, o tiesiog ištrinti
-`dataset` stulpelio reikšmę. Tokiu būdu mus galimybė, bet kada apsigalvoti ir
-grąžinti lauką atvėrimui.
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+| d | r | b | m | property  | source    | type    | ref | level | access    | title  | description |
++===+===+===+===+===========+===========+=========+=====+=======+===========+========+=============+
+| datasets/gov/dc/countries |           |         |     |       |           |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   | sql                   |           |         |     |       |           |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   |   |                   |           |         |     |       |           |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   |   |   | countries     | COUNTRIES |         | id  |       | open      |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   |   |   |   | id        | id        | pk      |     | 4     | private   |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   |   |   |   | code      | code      | string  |     | 2     |           |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
+|   |   |   |   | country   | country   | string  |     | 2     | protected |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+-----------+--------+-------------+
 
-Imant tą patį pavyzdį:
+Šiame pavyzdyje, visas modelis `countries` buvo pažymėtas atvėrimui, tačiau
+laukas `country` nebus atvertas, nes jo `access` reikšmė yra `protected`, tai
+reiškia, kad šiuos duomenis galima pasiekti tik per vidinį API.
 
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \    \      4      \       \            COUNTRIES     id
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \    \      3      \       \            COUNTRIES     code
-\                 sql       \       raw/dc/COUNTRIES     country   string  \    \      3      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-
-Kadangi `country` duomenų lauko `dataset` reikšmė yra tuščia, šis laukas nebus
-atvertas.
+Taip pat `id` laukui suteikta `private` reikšmė, kadangi šis laukas turi prasmę
+tik konkretaus duomenų rinkinio resurso ribose.
 
 
 Brandos lygio vertinimas
@@ -288,28 +331,27 @@ Kiekvienos vertės vertinimo kriterijai yra tokie:
 
 4
   Ši vertė suteikiama tada, kai yra sutvarkyti objektų identifikatoriai ir
-  ryšiai tarp lentelių, t.y., kai yra aprašyta modelio `_id` savybė, panaudotas
-  `ref` duomenų tipas ryšiui tarp lentelių ir šaltinio duomenų užtenka, kad
-  būtų galima unikaliai identifikuoti objektus.
+  ryšiai tarp lentelių, t.y., kai yra užpildyta `ref` reikšmė `base`,
+  `model` arba `ref` tipo `property` laukams.
 
-  Visiems laukams, kurie nėra `pk` arba `ref` tipo, galima suteikti ketvirtą
-  brandos lygį, bet tik su sąlygą, jei to modelio `_id` laukas turi 4 brandos
-  lygį. Jei `_id` neturi ketvirto brandos lygio, tada visi kiti laukai taip pat
-  negali turėti 4 lygio, kadangi visas objektas, negali būti unikaliai
-  identifikuotas.
+  Visiems laukams, kurie nėra `ref` tipo, galima suteikti ketvirtą brandos
+  lygį, bet tik su sąlygą, jei to modelio `ref` laukas yra užpildytas. Jei
+  modelio `ref` stulpelis tuščias, tada visi kiti laukai taip pat negali turėti
+  4 lygio, kadangi visas modelis, negali būti unikaliai identifikuotas.
 
 5
   Ši vertė suteikiam tada, kai modelio ir jo laukų pavadinimai yra išversti į
-  vieningą žodyną ir duomenų šaltinis turi reikiamą kiekį laukų, kurie leidžia
-  šaltinio objektą identifikuoti globaliai.
+  vieningą žodyną ir duomenų rinkinio modelis gali būti identifikuojamas
+  globaliai.
 
-  Jei laukas neturi 5 brandos lygio, šio lauko nebus bandoma sieti su žodyno
-  modeliu.
+  Modelis yra „išvertas“ tada, kai jo `base` eilutės `ref` stulpelis yra
+  užpildytas.
 
   Net ir suteikus laukui 5 brandos lygį, galutiniame skaičiavime, laukas gaust
   4.5 brandos lygį, jei manifesto žodyno laukas nėra susietas su globaliu
-  žodyno lauku. Taip daroma todėl, kad manifesto žodyno laukas, kol nėra
-  susietas su globaliu žodynu vertinamas 4 brandos lygiu, (5 + 4) / 2 = 4.5.
+  žodynu, t.y. kai žodyno modelio `uri` reikšmė yra tuščia. Taip daroma todėl,
+  kad manifesto žodyno laukas, kol nėra susietas su globaliu žodynu vertinamas
+  4 brandos lygiu, (5 + 4) / 2 = 4.5.
 
 Tik pilnai sutvarkyti inventorizacijos metaduomenys, kurie leidžia automatiškai
 nuskaityti duomenis, patikimai identifikuoti objektus ir visi pavadinimai
@@ -321,24 +363,36 @@ galimybę stebėti, kaip keičiasi brandos lygis laike.
 Atkreipkite dėmesį į mūsų pirminę, automatiškai generuotą, inventorizacijos
 lentelę:
 
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \    \      4      \       \            COUNTRIES     id
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \    \      2      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \    \      2      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+| d | r | b | m | property  | source    | type    | ref | level | access  | title  | description |
++===+===+===+===+===========+===========+=========+=====+=======+=========+========+=============+
+| datasets/gov/dc/countries |           |         |     |       |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   | sql                   |           |         |     |       |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   |   |                   |           |         |     |       |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   |   |   | countries     | COUNTRIES |         | id  |       |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   |   |   |   | id        | id        | integer |     | 4     |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   |   |   |   | code      | code      | string  |     | 2     |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
+|   |   |   |   | country   | country   | string  |     | 2     |         |        |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+---------+--------+-------------+
 
-Šiai lentelei `_id` laukui buvo suteiktas 4 brandos lygis, kadangi duomenų
-bazės lentelė turi pirminį raktą, kuris leidžia unikaliai identifikuoti
-objektą.
+Šiai lentelei `id` laukui buvo suteiktas 4 brandos lygis, kadangi duomenų bazės
+lentelė turi pirminį raktą, kuris leidžia unikaliai identifikuoti objektą.
 
 Tačiau visi kiti laukai turi 2 brandos lygį, taip yra todėl, kad naudojama
 priemonė yra konservatyvi ir pasirenka žemesnį brandos lygį. Kadangi visi kiti
 laukai yra `string` tipo, tai nėra iki galo aišku ar tipas yra teisingas, gal
-būt duomenų bazę kuriantys žmonės supainiojo tipus, gal būt laukas iš tiesų yra
-datos tipo, arba tame lauke yra užkoduoti keli duomenų laukai. Kad tiksliai
-nustatyti brandos lygį reikalingas žmogaus įsikišimas.
+būt laukas yra datos tipo, arba tame lauke yra užkoduoti keli duomenų laukai.
+Kad tiksliai nustatyti brandos lygį reikalingas žmogaus įsikišimas.
+
+Brandos lygis nurodomas tik prie duomenų laukų. Modelio, resurso ir viso
+duomenų rinkionio brandos lygis yra paskaičiuojamas automatiškai imant visų
+duomenų laukų vidurkį, kuris šiuo atveju yra 2.7.
 
 
 Nestruktūruoti duomenys
@@ -368,38 +422,60 @@ Konkrečiai šiame pavyzdyje pateikti santuokos metrikų įrašai, tokių
 skaitmenintų paveikslėlių yra ištisos knygos ir visose knygose pateikiami
 gimimo, santuokos ir mirties įrašai, turintys labai aiškią struktūrą.
 
-================  =========  ======  ===================  ========  ======  =============  =====  =====  ======  ===========  ============  =======
-dataset           resource   origin  model                property  type    ref            const  level  title   description  table         column
-================  =========  ======  ===================  ========  ======  =============  =====  =====  ======  ===========  ============  =======
-gov/rkb/metrikai  epaveldas  \       raw/rkb/page         image     image   \              \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/asmuo        vardas    string  \              \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/asmuo        pavarde   string  \              \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/ivykis       tipas     string  \              \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/ivykis       asmuo     ref     raw/rkb/asmuo  \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/ivykis       data      date    \              \      1      \       \            \             \
-gov/rkb/metrikai  epaveldas  \       raw/rkb/ivykis       page      ref     raw/rkb/page   \      1      \       \            \             \
-================  =========  ======  ===================  ========  ======  =============  =====  =====  ======  ===========  ============  =======
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+| d | r | b | m | property   | source    | type   | ref   | level | access  | title  | description |
++===+===+===+===+============+===========+========+=======+=======+=========+========+=============+
+| datasets/gov/rkb/metrikai  |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   | epaveldas              |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |                    |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   | lapas          |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | paveikslas |           | image  |       | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |                    |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   | asmuo          |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | vardas     |           | string |       | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | pavarde    |           | string |       | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |                    |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   | ivykis         |           |        |       |       |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | tipas      |           | string |       | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | asmuo      |           | ref    | asmuo | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | data       |           | date   |       | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
+|   |   |   |   | lapas      |           | ref    | lapas | 1     |         |        |             |
++---+---+---+---+------------+-----------+--------+-------+-------+---------+--------+-------------+
 
-Turint tokius metaduomenis, galim organizuoti duomenų perrašymą crowdsourcingo_
+Turint tokius metaduomenis, galim organizuoti duomenų perrašymą talkos_
 principu arba bandyti ištraukti duomenis kokiais nors automatizuotais būdais.
 
-.. _crowdsourcingo: https://en.wikipedia.org/wiki/Crowdsourcing
+.. _talkos: https://en.wikipedia.org/wiki/Crowdsourcing
 
 Taip pat, paruošus, kad ir labai primityvų inventorizacijos lentelės variantą,
 galima toliau su ja dirbti, sieti su manifesto žodynu, tobulinti duomenų
 modelį, dokumentuoti duomenų laukus.
 
 Tai, kad tokie duomenys dalyvauja bendroje apskaitoje, reiškia, kad galima
-matyti, kiek potencialių projektų galėtų įdarbinti šiuos duomenis ir kokia
+matyti, kiek potencialių projektų galėtų įdarbinti šiuos duomenis ir kokią
 naudą tai galėtų atnešti.
 
 
 Objektų identifikavimas
 =======================
 
-Kadangi į atvirų duomenų saugykloje duomenys turėtų būti perkeliami
-normalizuotoje formoje, susiejat lenteles tarpusavyje ryšiais, labai svarbu
-tinkamai identifikuoti objektus.
+Kadangi atvirų duomenų saugykloje duomenys turėtų būti saugomi normalizuotoje
+formoje, susiejat lenteles tarpusavyje ryšiais, labai svarbu tinkamai
+identifikuoti objektus.
 
 Tarkim, jei turime tokius duomenis:
 
@@ -413,49 +489,65 @@ lv        Latvija
 ee        Estija
 ========  ===========
 
-Šioje lentelėje nėra pirminio rakto, todėl inventorizacijos lentelėje nėra
-privalomo `_id` lauko:
+Šioje lentelėje nėra pirminio rakto, todėl inventorizacijos lentelėje, `model`
+eilėtės `ref` stulpelis yra tuščias:
 
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \    \      2      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \    \      2      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+| d | r | b | m | property  | source    | type   | ref | level | access  | title  | description |
++===+===+===+===+===========+===========+========+=====+=======+=========+========+=============+
+| datasets/gov/dc/countries |           |        |     |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+|   | sql                   |           |        |     |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+|   |   |                   |           |        |     |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+|   |   |   | countries     | COUNTRIES |        |     |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+|   |   |   |   | code      | code      | string |     | 2     |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
+|   |   |   |   | country   | country   | string |     | 2     |         |        |             |
++---+---+---+---+-----------+-----------+--------+-----+-------+---------+--------+-------------+
 
 Tam, kad lentelę būtų galima sieti su kitomis lentelėmis reikia turėti patikimą
-identifikatorių ir tai daroma `_id` lauko pagalba.
+identifikatorių. Šiuo atveju, galima daryti prielaidą, kad laukas `code`
+unikaliai identifikuoja `countries` modelio įrašus, todėl `model` ielutės `ref`
+stulpeliui galima priskirti `code` reikšmę taip pakeliand modelio brandos lygį
+iki 4.
 
-Jei lentelė neturi pirminio rakto, `_id` lauką reikia pridėti rankomis,
-įterpiant naują eilutę ir nurodant vieną ar kelis šaltinio laukus, kurie
-patikimai unikaliai identifikuoja objektą:
-
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \    \      4      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \    \      4      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \    \      4      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+| d | r | b | m | property  | source    | type   | ref  | level | access  | title  | description |
++===+===+===+===+===========+===========+========+======+=======+=========+========+=============+
+| datasets/gov/dc/countries |           |        |      |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+|   | sql                   |           |        |      |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+|   |   |                   |           |        |      |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+|   |   |   | countries     | COUNTRIES |        | code |       |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+|   |   |   |   | code      | code      | string |      | 4     |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
+|   |   |   |   | country   | country   | string |      | 4     |         |        |             |
++---+---+---+---+-----------+-----------+--------+------+-------+---------+--------+-------------+
 
 Šiuo atveju, laukas `code` yra šalies kodas, kuris unikaliai identifikuoja
-objektą. Todėl galima šį lauką naudoti, kaip unikaliai identifikuojantį šalies
-objektą.
+objektą. Todėl galima šį lauką naudoti, kaip unikaliai identifikuojančią šalies
+reikšmę.
 
 Dažnai pasitaiko, kad neužtenka vieno lauko norint unikaliai identifikuoti
-objektą, tokiu atveju, galima pateikti kelis laukus `column` stulpelyje,
+objektą, tokiu atveju, galima pateikti kelis laukus `ref` stulpelyje,
 atskiriant juos kableliu.
 
 Po pertvarkymų taip pat reikėtų nepamiršti atnaujinti `level` stulpelio
 reikšmių, nurodant pasikeitusį brandos lygį. Kadangi atsirado galimybė
-identifikuoti modelio objektus, `_id` laukui suteikėme 4 brandos lygį.
+identifikuoti modelio objektus, `code` laukui suteikėme 4 brandos lygį.
 Atitinkamai, pakeliam ir kitų laukų brandos lygį, kadangi įsitikinome, kad
 automatiškai suteiktas `string` tipas yra teisingas, kas leidžia suteikti 3
 brandos lygį, tačiau taip pat įsitikinome, kad nei vienas iš laukų nėra ryšio
 su kita lentele laukas, todėl galime suteikti 4 brandos lygį.
 
-Nei vienam iš šių laukų negalima suteikti 5 brandos lygio, kadangi `model` ir
-`property` pavadinimai nėra iš žodyno.
+Nei vienam iš šių laukų negalima suteikti 5 brandos lygio, kadangi `base`
+eilutė yra tuščia.
 
 
 Objektai be identifikatoriaus
@@ -486,16 +578,22 @@ duomenų atveju.
 
 Galutinė inventorizacijos lentelė turėtų atrodyti taip:
 
-================  ========  ======  ===================  ==========  ======  ===  =====  =====  ======  ===========  ============  ==========
-dataset           resource  origin  model                property    type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ==========  ======  ===  =====  =====  ======  ===========  ============  ==========
-gov/dc/villages   sql       \       raw/dc/VILLAGES      _id         pk      \    \      0      \       \            \             \
-gov/dc/villages   sql       \       raw/dc/VILLAGES      name        string  \    \      4      \       \            VILLAGES      name
-gov/dc/villages   sql       \       raw/dc/VILLAGES      population  string  \    \      4      \       \            VILLAGES      population
-================  ========  ======  ===================  ==========  ======  ===  =====  =====  ======  ===========  ============  ==========
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+| d | r | b | m | property   | source     | type   | ref | level | access  | title  | description |
++===+===+===+===+============+============+========+=====+=======+=========+========+=============+
+| datasets/gov/dc/villages   |            |        |     |       |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+|   | sql                    |            |        |     |       |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+|   |   |                    |            |        |     |       |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+|   |   |   | villages       | VILLAGES   |        |     |       |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+|   |   |   |   | name       | name       | string |     | 4     |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
+|   |   |   |   | population | population | string |     | 4     |         |        |             |
++---+---+---+---+------------+------------+--------+-----+-------+---------+--------+-------------+
 
-Čia papildomai buvo pridėtas `_id` laukas, šiam laukui suteiktas 0 brandos
-lygis, kadangi duomenų šiam laukui originaliame šaltinyje nėra.
 
 `name` ir `population` laukams suteikėme 4 brandos lygį, kadangi šie laukai
 nėra `ref` tipo. Tačiau bendro modelio brandos lygio skaičiavime, šių laukų
@@ -504,7 +602,7 @@ todėl nė vienas laukas išskyrus `ref` tipo laukus, negali turėti didesnio
 brandos lygio nei 4.
 
 Inventorizacijos lentelėse, kiekvieno lauko brandos lygį galima žymėti
-individualiai. Ne jei modelis neturi identifikatoriaus, tačiau tam tikras
+individualiai. Net jei modelis neturi identifikatoriaus, tačiau tam tikras
 laukas nėra `ref` tipo ir to lauko duomenys tvarkingi ir atitinka lauko duomenų
 tipą, lauko pavadinimai naudoja manifesto žodyno pavadinimus, tada tam laukui
 galima suteikti 5 brandos lygį. Tačiau reikia atkreipti dėmesį, kad bendro
@@ -546,16 +644,33 @@ id       country   city
 
 Iš šių lentelių gauname tokią inventorizacijos lentelę:
 
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref               const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \                 \      4      \       \            COUNTRIES     id
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \                 \      4      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \                 \      4      \       \            COUNTRIES     country
-gov/dc/countries  sql       \       raw/dc/CITIES        _id       pk      \                 \      4      \       \            CITIES        id
-gov/dc/countries  sql       \       raw/dc/CITIES        country   ref     raw/dc/COUNTRIES  \      4      \       \            CITIES        country
-gov/dc/countries  sql       \       raw/dc/CITIES        city      string  \                 \      4      \       \            CITIES        city
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property   | source     | type    | ref       | level | access  | title  | description |
++===+===+===+===+============+============+=========+===========+=======+=========+========+=============+
+| datasets/gov/dc/countries  |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | countries      | COUNTRIES  |         | id        |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id         | id         | integer |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | code       | code       | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | country    | country    | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | cities         | CITIES     |         | id        |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id         | id         | integer |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | country    | country    | ref     | countries | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | city       | city       | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
 
 Kaip matome ryšys tarp lentelių buvo aptiktas automatiškai, kadangi tokia
 informacija yra pateikta duomenų bazės schemoje. Tačiau gali pasitaikyti
@@ -566,19 +681,23 @@ Norint nurodyti ryšį su kita lentele, reikia lauko `type` stulpelyje nurodyti
 `ref`, o `ref` stulpelyje nurodyti kitos lentelės pavadinimą iš `model`
 stulpelio.
 
-Kadangi visi atvirų duomenų objektai turi privalomą `_id` lauką, kuris yra
-pirminis raktas, užtenka nurodyti tik modelio pavadinimą.
+Ryšiai tarp lentelių gali būti nurodomi tik vieno duomenų rinkinio resurso
+ribose.
+
+Laukai naudojami ryšiams tarp lentelių automatiškai nustatomi pagal rodomo
+modelio `ref` reikšmes. Pavyzdžiui šiuo atveju modelio `countries` eilutės
+`ref` reikšmė yra `id`, todėl modelio `cities` savybė `country` automatiškai
+siejama su `id` lauku. Tačiau galima laukus, nurodyti ir rankiniu būdu taip:
+`countries[id]`.
 
 Atveriant duomenis, vidinės duomenų bazės identifikatoriai nėra perkeliami.
 Visi identifikatoriai generuojami naujai, kad neatskleisti vidinės duomenų
 bazės detalių.
 
-Jei šaltinio lentelės yra susietos naudojant daugiau nei vieną lauką, `column`
-stulpelyje galima nurodyti kelis laukus, atskiriant juos kableliu.
-
-Visiems `_id` laukams automatiškai buvo parinktas 4 brandos lygis, tačiau 4
-brandos lygis taip pat automatiškai buvo suteiktas ir `CITIES.country` laukui,
-kadangi šaltinio duomenų bazėje jau yra pateikti tokie metaduomenys.
+Jei šaltinio lentelės yra susietos naudojant daugiau nei vieną lauką, `source`
+stulpelyje galima nurodyti kelis laukus, atskiriant juos kableliu. Arba
+`property` eilutės `ref` stulpelyje galima nurodyti kelis laukus taip
+`countries[id,code]`.
 
 
 Duomenų modelio normalizavimas
@@ -601,14 +720,25 @@ id       code      country      city
 
 Gauname tokią inventorizacijos lentelę:
 
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref               const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/CITIES        _id       pk      \                 \      4      \       \            CITIES        id
-gov/dc/countries  sql       \       raw/dc/CITIES        code      string  \                 \      2      \       \            CITIES        code
-gov/dc/countries  sql       \       raw/dc/CITIES        country   string  \                 \      2      \       \            CITIES        country
-gov/dc/countries  sql       \       raw/dc/CITIES        city      string  \                 \      2      \       \            CITIES        city
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property   | source     | type    | ref       | level | access  | title  | description |
++===+===+===+===+============+============+=========+===========+=======+=========+========+=============+
+| datasets/gov/dc/countries  |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | countries      | CITIES     |         | id        |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id         | id         | integer |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | code       | code       | string  |           | 2     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | country    | country    | string  |           | 2     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | city       | city       | string  |           | 2     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
 
 `CITIES` lentelėje yra pateikti du objektai, šalis ir miestas. Todėl
 pirmiausiai mums reikia atskirti kur yra šalis, kur miestas, pakeičiant šalies
@@ -623,16 +753,31 @@ raktui.
 
 Po pertvarkymų, normalizuota inventorizacijos lentelė turėtų atrodyti taip:
 
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref               const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     _id       pk      \                 \      4      \       \            CITIES        code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     code      string  \                 \      4      \       \            CITIES        code
-gov/dc/countries  sql       \       raw/dc/COUNTRIES     country   string  \                 \      4      \       \            CITIES        country
-gov/dc/countries  sql       \       raw/dc/CITIES        _id       pk      \                 \      4      \       \            CITIES        id
-gov/dc/countries  sql       \       raw/dc/CITIES        country   ref     raw/dc/COUNTRIES  \      4      \       \            CITIES        code
-gov/dc/countries  sql       \       raw/dc/CITIES        city      string  \                 \      4      \       \            CITIES        city
-================  ========  ======  ===================  ========  ======  ================  =====  =====  ======  ===========  ============  =======
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property   | source     | type    | ref       | level | access  | title  | description |
++===+===+===+===+============+============+=========+===========+=======+=========+========+=============+
+| datasets/gov/dc/countries  |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | countries      | CITIES     |         | code      |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | code       | code       | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | country    | country    | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                    |            |         |           |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | cities         | CITIES     |         | id        |       |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id         | id         | integer |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | country    | code       | ref     | countries | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | city       | city       | string  |           | 4     |         |        |             |
++---+---+---+---+------------+------------+---------+-----------+-------+---------+--------+-------------+
 
 Po tokio pertvarkymo, vykdant duomenų importavimą į saugyklą, duomenys bus
 automatiškai normalizuoti ir vietoje dviejų modelių vienoje lentelėje, turėsime
@@ -684,15 +829,31 @@ savivaldybės skaičiumi `2`. Turime dvi konstantas administraciniam vienetui.
 
 Mūsų pradinė inventorizacijos lentelė atrodys taip:
 
-======================  ========  ======  ===================  ===========  ======  ================  =====  =====  ======  ===========  ============  ===========
-dataset                 resource  origin  model                property     type    ref               const  level  title   description  table         column
-======================  ========  ======  ===================  ===========  ======  ================  =====  =====  ======  ===========  ============  ===========
-gov/dc/administracijos  sql       \       raw/dc/APSKRITYS     _id          pk      \                 \      4      \       \            APSKRITYS     id
-gov/dc/administracijos  sql       \       raw/dc/APSKRITYS     pavadinimas  string  \                 \      2      \       \            APSKRITYS     pavadinimas
-gov/dc/administracijos  sql       \       raw/dc/SAVIVALDYBES  _id          pk      \                 \      4      \       \            SAVIVALDYBES  id
-gov/dc/administracijos  sql       \       raw/dc/SAVIVALDYBES  apskritis    ref     raw/dc/APSKRITYS  \      4      \       \            SAVIVALDYBES  apskritis
-gov/dc/administracijos  sql       \       raw/dc/SAVIVALDYBES  pavadinimas  string  \                 \      2      \       \            SAVIVALDYBES  pavadinimas
-======================  ========  ======  ===================  ===========  ======  ================  =====  =====  ======  ===========  ============  ===========
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source       | type    | ref       | level | access  | title  | description |
++===+===+===+===+=================+==============+=========+===========+=======+=========+========+=============+
+| datasets/gov/dc/administracijos |              |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                         |              |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                         |              |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | apskritys           | APSKRITYS    |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id           | integer |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas  | string  |           | 2     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                         |              |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | savivaldybes        | SAVIVALDYBES |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id           | integer |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | apskritis       | apskritis    | ref     | apskritys | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas  | string  |           | 2     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------+-------+---------+--------+-------------+
 
 Mums reikia pertvarkyti inventorizacijos lentelę taip, kad gautume tokį duomenų
 pavidalą:
@@ -712,61 +873,75 @@ id       priklauso  lygis      pavadinimas
 
 Kad tai gautume, mums reikia atlikti tokius pakeitimus:
 
-- Visų `model` stulpelio eilučių reikšmes keičiame į `raw/dc/ADMINISTRACIJOS`,
-  kadangi rezultate norime turėti vieną lentelę, vietoj dviejų.
+- Primiausiai, apsirašome naują modelį `administracijos`, kadangi galutiniame
+  rezultate norime turėti viską vienoje lentelėje.
 
-- Pakeitus visas `model` reikšmes į `raw/dc/ADMINISTRACIJOS`, turime problemą.
-  Tam pačiam modeliui, pavadinimu `raw/dc/ADMINISTRACIJOS` duomenis gauname iš
-  dviejų skirtingų lentelių. Tam, kad atskirti kuriuo atveju naudoti vieną,
-  kuriuo kitą šaltinį, mums reikia panaudoti `origin` stulpelį ir ten įrašyti
-  `APSKRITYS` ir `SAVIVALDYBES`. Kad būtų lengviau suprasti šią gan painią
-  vietą, reikėtų žiūrėti, kaip atrodys manifesto YAML failas:
+- Tada nurodome, kad `apskritys` ir `savivaldybes` yra modelio
+  `administracijos` dalis. Tai reiškia, kad galiausiai duomenys iš `apskritys`
+  ir `savivaldybes` bus apjungti į vieną modelį `administracijos`.
 
-  .. code-block:: yaml
+- Keičiame lauko `savivaldybes.apskritis` pavadinimą į `priklauso`, kad  lauko
+  pavadinimas sutaptu su `administracijos.priklauso`.
 
-      name: gov/dc/administracijos
-      resources:
-        sql:
-          objects:
-            APSKRITYS:
-              raw/dc/ADMINISTRACIJOS:
-                source: APSKRITYS
-            SAVIVALDYBES:
-              raw/dc/ADMINISTRACIJOS:
-                source: SAVIVALDYBES
-
-  `origin` stulpelis, tiesiog padeda atskirti modelius, tais pačiais
-  pavadinimais, kai vienas modelis gauna duomenis iš kelių skirtingų vietų.
-  Tokiu atveju, `origin` nurodo modelio duomenų kilmę.
-
-- `SAVIVALDYBES.apskritis` laukui keičiame `ref` reikšmę į
-  `raw/dc/ADMINISTRACIJOS`, kadangi tokio dalyko kaip `raw/dc/APSKRITYS`
-  nebeliko.
-
-- Keičiame lauko `SAVIVALDYBES.apskritis` `property` reikšmę į `priklauso`,
-  kadangi apskrities savoka išnyksta ir apskritis tampa tiesiog vienu iš
-  administracinių vienetų.
-
-- Pridedam `priklauso` savybę apskritims, kadangi nenurodome `table` ir
-  `column`, tai rezultate, `priklauso` reikšmė bus `NULL`.
+  Kai du modeliai siejamie per `base` lauką, apjungtieji modeliai tampa
+  vieno modelio dalimi ir turi tokias pačias savybes, kaip ir bazinis modelis.
+  Šiuo atveju bazinis modelis yra `administracijos`.
 
 - Paskutinis pakeitimas, tiek apskritims, tiek savivaldybėms pridėti `lygis`
   savybę nurodant konstantas `1` ir `2`.
 
 Po pertvarkymų, mūsų inventorizacijos lentelė turėtų atrodyti taip:
 
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ============  ===========
-dataset                 resource  origin        model                   property     type     ref                     const  level  title   description  table         column
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ============  ===========
-gov/dc/administracijos  sql       APSKRITYS     raw/dc/ADMINISTRACIJOS  _id          pk       \                       \      4      \       \            APSKRITYS     id
-gov/dc/administracijos  sql       APSKRITYS     raw/dc/ADMINISTRACIJOS  priklauso    ref      raw/dc/ADMINISTRACIJOS  \      4      \       \                                   
-gov/dc/administracijos  sql       APSKRITYS     raw/dc/ADMINISTRACIJOS  lygis        integer  \                       1      4      \       \                                   
-gov/dc/administracijos  sql       APSKRITYS     raw/dc/ADMINISTRACIJOS  pavadinimas  string   \                       \      4      \       \            APSKRITYS     pavadinimas
-gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  _id          pk       \                       \      4      \       \            SAVIVALDYBES  id
-gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  priklauso    ref      raw/dc/ADMINISTRACIJOS  \      4      \       \            SAVIVALDYBES  apskritis
-gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  lygis        integer  \                       2      4      \       \                                   
-gov/dc/administracijos  sql       SAVIVALDYBES  raw/dc/ADMINISTRACIJOS  pavadinimas  string   \                       \      4      \       \            SAVIVALDYBES  pavadinimas
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ============  ===========
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source       | type    | ref             | level | access  | title  | description |
++===+===+===+===+=================+==============+=========+=================+=======+=========+========+=============+
+| datasets/gov/dc/administracijos |              |         |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   | sql                         |              |         |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |                         |              |         |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   | administracijos     |              |         |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | priklauso       |              | ref     | administracijos |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | lygis           |              | integer |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     |              | string  |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   | administracijos         |              | proxy   |                 |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   | apskritys           | APSKRITYS    |         | id              |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id           | integer |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | lygis           | 1            | integer |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas  | string  |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   | savivaldybes        | SAVIVALDYBES |         | id              |       |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id           | integer |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | priklauso       | apskritis    | ref     | apskritys       | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | lygis           | 2            | integer |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas  | string  |                 | 4     |         |        |             |
++---+---+---+---+-----------------+--------------+---------+-----------------+-------+---------+--------+-------------+
+
+`administracijos`  modelis neturi `level` reikšmių, taip yra todėl, kad
+`administracijos` modelis yra išvestinis ir neturi tiesioginio šaltinio, o
+duomenų brandos lygis nurodomas duomenų laukams kurie tiesiogiai gaunami iš tam
+tikro duomenų šaltinio.
+
+Kadangi `base` `administracijos` eilutėje `ref` stulpelio yra reikšmė, tai
+susiejimas bus daromas pagal vidinį modelio identifikatorių. Tai reiškia, kad
+modeliai `apskritys` ir `savivaldybes` nepersidengs.
+
+`base` `administracijos` eilutėje `type` sulpelio reikšmė `proxy` reiškia,
+kad modeliai `apskritys` ir `savivaldybes` jokių duomenų nesaugos, o veiks kaip
+perlaidos režimu ir duomenis rašys tik į `administracijos` modelį.
 
 
 Lentelės skaidymas
@@ -797,40 +972,62 @@ reikšmė yra `2` turėtų keliauti į savivaldybių modelį.
 
 Pirminė inventorizacijos lentelė atrodo taip:
 
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
-dataset                 resource  origin        model                   property     type     ref                     const  level  title   description  table            column
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
-gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  _id          pk       \                       \      4      \       \            ADMINISTRACIJOS  id
-gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  priklauso    ref      raw/dc/ADMINISTRACIJOS  \      4      \       \            ADMINISTRACIJOS  priklauso
-gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  lygis        integer  \                       \      2      \       \            ADMINISTRACIJOS  lygis
-gov/dc/administracijos  sql       \             raw/dc/ADMINISTRACIJOS  pavadinimas  string   \                       \      2      \       \            ADMINISTRACIJOS  pavadinimas
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source          | type    | ref             | level | access  | title  | description |
++===+===+===+===+=================+=================+=========+=================+=======+=========+========+=============+
+| datasets/gov/dc/administracijos |                 |         |                 |       |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   | sql                         |                 |         |                 |       |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |                         |                 |         |                 |       |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   | administracijos     | ADMINISTRACIJOS |         | id              |       |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id              | integer |                 | 4     |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | priklauso       | priklauso       | ref     | administracijos | 4     |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | lygis           | lygis           | integer |                 | 2     |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas     | string  |                 | 2     |         |        |             |
++---+---+---+---+-----------------+-----------------+---------+-----------------+-------+---------+--------+-------------+
 
 Tam, kad suskaidyti vienos lentelės duomenis į kelis skirtingus modelius, mums
 reikia panaudoti filtrus lentelės lygmenyje. Metaduomenys lentelės lygmenyje
 taikomi tada, kai `property` reikšmė yra tuščia.
 
-Lentelės metaduomenų lygmenyje `table` stulpelyje galima nurodyti RQL užklausą
-duomenims filtruoti.
+`source` stulpelyje galima nurodyti užklausą duomenims filtruoti. Duomenų
+filtras pateikiamas tarp `[]` skliaustelių.
 
 Šiuo atveju, mums reikia filtruoti duomenis pagal stulpelio `lygis` reikšmes.
 
 Galutinė inventorizacijos lentelė, po pertvarkymų atrodo taip:
 
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
-dataset                 resource  origin        model                   property     type     ref                     const  level  title   description  table            column
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
-gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        \            \        \                       \      \      \       \            lygis=1          \ 
-gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        _id          pk       \                       \      4      \       \            ADMINISTRACIJOS  id
-gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        priklauso    ref      raw/dc/APSKRITYS        \      4      \       \            ADMINISTRACIJOS  priklauso
-gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        lygis        integer  \                       \      4      \       \            ADMINISTRACIJOS  lygis
-gov/dc/administracijos  sql       \             raw/dc/APSKRITYS        pavadinimas  string   \                       \      4      \       \            ADMINISTRACIJOS  pavadinimas
-gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     \            \        \                       \      \      \       \            lygis=2          \ 
-gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     _id          pk       \                       \      4      \       \            ADMINISTRACIJOS  id
-gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     priklauso    ref      raw/dc/SAVIVALDYBES     \      4      \       \            ADMINISTRACIJOS  priklauso
-gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     lygis        integer  \                       \      4      \       \            ADMINISTRACIJOS  lygis
-gov/dc/administracijos  sql       \             raw/dc/SAVIVALDYBES     pavadinimas  string   \                       \      4      \       \            ADMINISTRACIJOS  pavadinimas
-======================  ========  ============  ======================  ===========  =======  ======================  =====  =====  ======  ===========  ===============  ===========
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source                   | type    | ref       | level | access  | title  | description |
++===+===+===+===+=================+==========================+=========+===========+=======+=========+========+=============+
+| datasets/gov/dc/administracijos |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | apskritys           | ADMINISTRACIJOS[lygis=1] |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id                       | integer |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas              | string  |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | savivaldybes        | ADMINISTRACIJOS[lygis=2] |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id                       | integer |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | apskritis       | priklauso                | ref     | apskritys | 4     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | pavadinimas     | pavadinimas              | string  |           | 4     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
 
 
 Vieningo žodyno naudojimas
@@ -872,14 +1069,15 @@ yra laisvė
 Vieningam žodynui sudaryti naudojama kiek kitokios struktūros lentelė, kuri
 atrodo taip:
 
-=================================  ===========  =======  ====  =====================  ===================  ===========
-model                              property     type     ref   uri                    title                description
-=================================  ===========  =======  ====  =====================  ===================  ===========
-place/country                      \            \        \     schema:Country         Šalis                \
-place/country                      _id          pk       code  \                      \                    \
-place/country                      code         string   \     esco:isoCountryCodeA2  ISO 3166-1 A2 kodas  \
-place/country                      name         string   \     og:country-name        Pavadinimas          \
-=================================  ===========  =======  ====  =====================  ===================  ===========
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+| m | property        | type   | ref | uri                   | title               | description |
++===+=================+========+=====+=======================+=====================+=============+
+| place/country       |        |     | schema:Country        | Šalis               |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+|   | code            | string |     | esco:isoCountryCodeA2 | ISO 3166-1 A2 kodas |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+|   | name            | string |     | og:country-name       | Pavadinimas         |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
 
 Modelio pavadinimui galima naudoti vardų erdves, kas būtų galima suskirstyti
 modelius į tamp tikras kategorijas.
@@ -891,26 +1089,35 @@ vienas papildomas laukas `uri`, kurio pagalba, galima susieti vidinį manifesto
 
 Inventorizacijos lentelė, naudojant vieningą žodyną atrodytų taip:
 
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset           resource  origin  model                property  type    ref  const  level  title   description  table         column
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dc/countries  sql       \       place/country        _id       pk      \    \      5      \       \            COUNTRIES     id
-gov/dc/countries  sql       \       place/country        code      string  \    \      5      \       \            COUNTRIES     code
-gov/dc/countries  sql       \       place/country        name      string  \    \      5      \       \            COUNTRIES     country
-================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source                   | type    | ref  | level | access  | title  | description |
++===+===+===+===+=================+==========================+=========+======+=======+=========+========+=============+
+| datasets/gov/dc/countries       |                          |         |      |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   | sql                         |                          |         |      |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   |   | place/country           |                          |         | code |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   |   |   | countries           | COUNTRIES                |         | id   |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id                       | integer |      | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   |   |   |   | code            | code                     | string  |      | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
+|   |   |   |   | name            | country                  | string  |      | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+------+-------+---------+--------+-------------+
 
-Kaip matote, `raw/dc/COUNTRIES` modelio pavadinimas pasikeitė į
-`place/country`. Taip pat pasikeitė ir `property` stulpelio pavadinimai. Visi
-šie pavadinimai atitinka vieningą žodyną.
+Duomenų rinkinių modeliai siejami su žodynu nurodant `base` reikšmę, kuri
+atitinka žodyno modelį. Tada atitinkamai reikia pakeisti `property` reikšmes,
+kad jos atitiktų `base` stulpelyje nurodyto modelio pavadinimus.
 
-Iš pirmo žvilgsnio atrodytų, kad pasikeitė tik pavadinimai, tačiau iš tikrųjų
-pasikeitimų yra daugiau. Visiems duomenų rinkiniams naudojantiems žodyno
-pavadinimą bandoma suteikti tą patį identifikatorių. Tai reiški, kad visuose
-duomenų šaltiniuose aprašyti šalie objektai naudojantys žodyno `place/country`
-pavadinimą, turės tuos pačius identifikatorius.
-
-Tai suteikia galimybę tarpusavyje jungti modelių lenteles iš skirtingų duomenų
-šaltinių.
+Dar vienas svabus momentas yra `code` reikšmė `source` stulpelyje, ties
+`place/country` eilute. Ši reikšmė nurodo kaip
+`datasets/gov/dc/countries/countries` modelio objektai turi būti
+identifikuojami `place/country` lentelėje. Šiuo atveju nurodyta, kad objektų
+siejimas turi būti daromas per `code` lauką. Toks objektų susiejimas leidžia
+turėti vienodus identifikatorius visiems duomenų rinkiniams kurie yra
+`place/country` modelio dalis.
 
 
 Globalūs identifikatoriai
@@ -973,51 +1180,75 @@ Pasitelkus šį trečiąjį duomenų šaltinį sujungti visas lenteles pasidaro
 Galutinė, pilnai sutvarkyta visų trijų duomenų rinkinių inventorizacijos
 lentelė atrodytų taip:
 
-=================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-dataset            resource  origin  model                property  type    ref  const  level  title   description  table         column
-=================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
-gov/dp1/countries  sql       \       place/country        _id       pk      \    \      5      \       \            COUNTRIES     id
-gov/dp1/countries  sql       \       place/country        a3code    string  \    \      5      \       \            COUNTRIES     code
-gov/dp1/countries  sql       \       place/country        name\@en  string  \    \      5      \       \            COUNTRIES     country
-gov/dp2/countries  sql       \       place/country        _id       pk      \    \      5      \       \            SALYS         id
-gov/dp2/countries  sql       \       place/country        a2code    string  \    \      5      \       \            SALYS         kodas
-gov/dp2/countries  sql       \       place/country        name\@lt  string  \    \      5      \       \            SALYS         salis
-gov/dp3/countries  sql       \       place/country        _id       pk      \    \      5      \       \            CODES         A3
-gov/dp3/countries  sql       \       place/country        a2code    string  \    \      5      \       \            CODES         A2
-gov/dp3/countries  sql       \       place/country        a3code    string  \    \      5      \       \            CODES         A3
-=================  ========  ======  ===================  ========  ======  ===  =====  =====  ======  ===========  ============  =======
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+| d | r | b | m | property        | source                   | type    | ref       | level | access  | title  | description |
++===+===+===+===+=================+==========================+=========+===========+=======+=========+========+=============+
+| datasets/gov/dp1/countries      |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   | place/country           |                          |         | a3code    |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | countries           | COUNTRIES                |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id                       | integer |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | a3code          | code                     | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | name\@en        | country                  | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+| datasets/gov/dp2/countries      |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   | place/country           |                          |         | a2code    |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | salys               | SALYS                    |         | id        |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | id              | id                       | integer |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | a2code          | kodas                    | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | name\@lt        | salis                    | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+| datasets/gov/dp3/countries      |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   | sql                         |                          |         |           |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   | place/country           |                          |         | a3code    |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   | codes               | CODES                    |         | a3code    |       |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | a2code          | A2                       | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+|   |   |   |   | a3code          | A3                       | string  |           | 5     |         |        |             |
++---+---+---+---+-----------------+--------------------------+---------+-----------+-------+---------+--------+-------------+
+
 
 Žodyno lentelė turėtų atrodyti taip:
 
-=================================  ===========  =======  ======  =====================  ===================  ===========
-model                              property     type     ref     uri                    title                description
-=================================  ===========  =======  ======  =====================  ===================  ===========
-place/country                      _id          pk       a2code  \                      \                    \
-place/country                      _id          pk       a3code  \                      \                    \
-place/country                      a2code       string   \       \                      \                    \
-place/country                      a3code       string   \       \                      \                    \
-place/country                      name         string   \       \                      \                    \
-=================================  ===========  =======  ======  =====================  ===================  ===========
-
-Svarbus momentas žodyno lentelėje yra dvi `_id` eilutės. Kiekviena eilutė
-nurodo, kad `place/country` modelio objektai gali būti identifikuojami vienu iš
-dviejų būdų arba `a2code` arba `a3code` laukų pagalba.
++---+-----------+--------+-----+-----+-------+-------------+
+| m | property  | type   | ref | uri | title | description |
++===+===========+========+=====+=====+=======+=============+
+| place/country |        |     |     |       |             |
++---+-----------+--------+-----+-----+-------+-------------+
+|   | a2code    | string |     |     |       |             |
++---+-----------+--------+-----+-----+-------+-------------+
+|   | a3code    | string |     |     |       |             |
++---+-----------+--------+-----+-----+-------+-------------+
+|   | name      | string |     |     |       |             |
++---+-----------+--------+-----+-----+-------+-------------+
 
 Duomenų atvėrimo metu, visi inventorizuoti duomenų rinkiniai bus siejami su
-žodyno modeliais pasitelkiant vieną iš galimų identifikatorių `ref` stulpelyje,
-`_id` laukams. Jei duomenų rinkinio modelis neturi tokio lauko, tada susiejimas
-nebus daromas ir viso modelio brandos lygis nukris iki 4 brandos lygio. Tokie
-atvejai duomenų rinkiniuose turėtų būti pažymėti kaip trūkstami laukai.
+žodyno modeliais pasitelkiant identifikatorių nurodytą `ref` stulpelyje ties
+`base` eilute. Jei duomenų rinkinio modelis neturi tokio lauko, tada
+susiejimas nebus daromas ir viso modelio brandos lygis nukris iki 4 brandos
+lygio.
 
-`ref` reikšmė `_id` laukams, žodyno lentelėje, gali turėti daugiau nei vieną
-lauką, jei objekto neįmanoma identifikuoti tik pagal vieną lauką.
-
-Žodynuose reikėtų surašyti visus įmanomus objekto identifikavimo variantus.
-
-Duomenų atvėrimo metu atskirų duomenų rinkinių duomenys bus saugomos pasiekiami
-atskirai, kadangi jie gali turėti laukų ne iš manifesto žodyno. Iš visų duomenų
-rinkinių bus kuriami ir globalūs, nuo konkretaus duomenų rinkinio nepriklausomi
-žodynų objektai.
+Duomenų atvėrimo metu atskirų duomenų rinkinių duomenys bus saugomi atskirai,
+kadangi jie gali turėti laukų ne iš manifesto žodyno. Iš visų duomenų rinkinių
+bus kuriami ir globalūs, nuo konkretaus duomenų rinkinio nepriklausomi žodynų
+objektai.
 
 Konkrečiai šiuo atveju `place/country` žodyno lentelė atvėrus duomenis atrodys
 taip:

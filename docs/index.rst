@@ -45,18 +45,23 @@ id       code      country
 inventorizacija. Duomenų inventorizacijos metu sudaromi įstaigoje esančių
 duomenų laukų sąrašai, kurie atrodo taip:
 
-================  ============  ========  =====  ===============  ==========
-Atvirų duomenų manifestas                        Duomenų centro duomenų bazė
------------------------------------------------  ---------------------------
-dataset           model         property  title  table            column
-================  ============  ========  =====  ===============  ==========
-gov/dc/countries  COUNTRIES     _id       \      COUNTRIES        id     
-gov/dc/countries  COUNTRIES     code      \      COUNTRIES        code   
-gov/dc/countries  COUNTRIES     country   \      COUNTRIES        country
-================  ============  ========  =====  ===============  ==========
-
-Reali inventorizacijos lentelė yra kiek sudėtingesnė, šiame pavyzdyje yra
-mažiau stulpelių dėl paprastumo.
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+| d | r | b | m | property  | source    | type    | ref | level | access | title | description |
++===+===+===+===+===========+===========+=========+=====+=======+========+=======+=============+
+| datasets/gov/dc/countries |           |         |     |       |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   | sql                   |           |         |     |       |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   |   |                   |           |         |     |       |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   |   |   | countries     | COUNTRIES |         | id  |       |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   |   |   |   | id        | id        | integer |     | 4     |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   |   |   |   | code      | code      | string  |     | 2     |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
+|   |   |   |   | name      | country   | string  |     | 2     |        |       |             |
++---+---+---+---+-----------+-----------+---------+-----+-------+--------+-------+-------------+
 
 Tokią pirminę inventorizacijos lentelę daugeliu atveju galima sugeneruoti
 automatiškai iš duomenų šaltinio.
@@ -64,23 +69,60 @@ automatiškai iš duomenų šaltinio.
 Deja ne viską galima automatizuoti, toliau prasideda rankinis darbas su
 lentele:
 
-- pažymimi laukai, kurie neturi būti atverti
+- `access` stulpelyje surašomas duomenų prieinamumas
 
-- pateikiami laukų pavadinimai ir aprašymai, kad būtų aišku kaip juos naudoti
+- `level` stulpelyje pateikiamas duomenų brandos lygis
 
-- pažymima, kuriuose laukuose pateikta asmeninė informacija
+- `source` stulpelyje vykdoma duomenų atranka ir transformacija
 
-- verčiami lentelių ir laukų pavadinimai, į vieningą manifesto žodyną
+- `ref` stulpelyje tvarkomi objektų identifikatoriai ir ryšiai tarp lentelių
 
-Galiausiai gauname lentelę, kuri atrodo taip:
+- `base` stulpelyje duomenų šaltinio modelis „verčiamas“ arba siejamas su baziniu modeliu
 
-================  =======       ========  =====  ============  =======
-dataset           model         property  title  table         column
-================  =======       ========  =====  ============  =======
-gov/dc/countries  country       _id       ID     COUNTRIES     id     
-gov/dc/countries  country       code      Kodas  COUNTRIES     code   
-gov/dc/countries  country       name      Šalis  COUNTRIES     country
-================  =======       ========  =====  ============  =======
+- `property` stulpelyje „verčiami“ modelio laukų pavadinimai, kad atitiktų
+  bazinio modelio laukų pavadinimus.
+
+- `title` ir `description` stulpeliuose pateikiami pavadinimai ir aprašymai,
+  kad būtų aiškiau kaip naudoti duomenis
+
+- galiausiai tvarkomi baziniai modeliai, „verčiami“ į pasaulinius žodynus
+
+Galiausiai atlikus visus išvardintus žingsnius gauname tokią pilnai sutvarkytą
+inventorizacijos lentelę:
+
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+| d | r | b | m | property  | source    | type    | ref  | level | access  | title        | description     |
++===+===+===+===+===========+===========+=========+======+=======+=========+==============+=================+
+| datasets/gov/dc/countries |           |         |      |       |         | Šalys        |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   | sql                   |           |         |      |       |         | Duomenų bazė |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   |   | place/country     |           |         | code |       |         | Šalis        |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   |   |   | country       | COUNTRIES |         | id   |       |         | Šalis        |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   |   |   |   | id        | id        | integer |      | 5     | private |              |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   |   |   |   | code      | code      | string  |      | 5     | open    | Šalies kodas | Dviejų simbolių |
+|   |   |   |   |           |           |         |      |       |         |              | šalies kodas.   |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+|   |   |   |   | name      | country   | string  |      | 5     | open    | Pavadinimas  |                 |
++---+---+---+---+-----------+-----------+---------+------+-------+---------+--------------+-----------------+
+
+Ši inventorizacijos lentelė yra susieta su baziniais modeliais. Baziniai
+modeliai sudaro vidinį manifesto žodyną ir yra susieti su pasauliniais
+žodynais. Galutinė bazinių modelių lentelė atrodo taip:
+
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+| m | property        | type   | ref | uri                   | title               | description |
++===+=================+========+=====+=======================+=====================+=============+
+| place/country       |        |     | schema:Country        | Šalis               |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+|   | code            | string |     | esco:isoCountryCodeA2 | ISO 3166-1 A2 kodas |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+|   | name            | string |     | og:country-name       | Pavadinimas         |             |
++---+-----------------+--------+-----+-----------------------+---------------------+-------------+
+
 
 Manifestas
 ----------
@@ -100,25 +142,74 @@ atrodytų mūsų inventorizacijos lentelė YAML formatu:
 
 .. code-block:: yaml
 
+   # datasets/gov/dc/countries.dataset.yml
    type: dataset
-   name: gov/dc/countries
+   name: datasets/gov/dc/countries
+   title: Šalys
    resources:
      countries:
        type: sql
+       title: Duomenų bazė
        source: postgresql://user:password@host/dbname
-       objects:
-         country:
-           source: COUNTRIES
-           properties:
-             _id:
-               type: pk
-               source: id
-             code:
-               type: string
-               source: code
-             name:
-               type: string
-               source: country
+
+.. code-block:: yaml
+
+   # datasets/gov/dc/countries/country.yml
+   type: model
+   name: datasets/gov/dc/countries/country
+   title: Šalys
+   base:
+     model: place/country
+     pk: code
+   pull:
+     dataset: datasets/gov/dc/countries
+     resource: countries
+     source: COUNTRIES
+     pk: id
+   properties:
+     id:
+       type: integer
+       pull: id
+       level: 5
+       access: private
+     code:
+       type: string
+       pull: code
+       level: 5
+       access: open
+       title: Šalies kodas
+       description: Dviejų simbolių šalies kodas.
+     name:
+       type: string
+       pull: country
+       level: 5
+       access: open
+       title: Pavadinimas
+
+.. code-block:: yaml
+
+   # place/country.yml
+   type: model
+   name: place/country
+   title: Šalis
+   uri: schema:Country
+   properties:
+     code:
+       type: string
+       uri: esco.isoCountryCodeA2
+       title: ISO 3166-1 A2 kodas
+       unique: true
+       required: true
+       prepare:
+         - check(len() = 2, "Šalies kodas turi būti dviejų simbolių ilgio.")
+         - lower()
+     name:
+       type: string
+       uri: og.country-name
+       title: Pavadinimas
+       required: true
+       prepare:
+         - check(len() > 0)
 
 Tokie duomenų aprašai leidžia pateikti daug daugiau informacijos apie duomenų
 šaltinį, tačiau failo formatas yra kiek sudėtingesnis, nei inventorizacijos
