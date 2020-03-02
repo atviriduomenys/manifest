@@ -28,31 +28,49 @@ def inspect(engine, schema=None):
     for table in insp.get_table_names(schema):
         pkey = insp.get_pk_constraint(table, schema)
         if pkey:
-            yield (
-                table,
-                pkey['constrained_columns'],
-                'pk',
-                '',
-            )
+            pkeys = pkey['constrained_columns']
+        else:
+            pkeys = []
+        model = {
+            'model': table.lower(),
+            'source': table,
+            'ref': ', '.join([pk.lower() for pk in pkeys]),
+        }
+        props = inspect_table(insp, table, schema, pkeys)
+        yield model, props
 
-        fkeys = insp.get_foreign_keys(table, schema)
-        refs = {}
-        for fkey in fkeys:
-            for col, ref in zip(fkey['constrained_columns'], fkey['referred_columns']):
-                assert col not in refs, (table, col, refs)
-                refs[col] = {
-                    'schema': fkey['referred_schema'],
-                    'table': fkey['referred_table'],
-                    'column': ref,
-                }
 
-        for column in insp.get_columns(table, schema):
-            yield (
-                table,
-                column['name'],
-                detect_type(column['type']),
-                refs.get(column['name'], ''),
-            )
+def inspect_table(insp, table, schema, pkeys):
+    refs = {}
+    fkeys = insp.get_foreign_keys(table, schema)
+    for fkey in fkeys:
+        for col, ref in zip(fkey['constrained_columns'], fkey['referred_columns']):
+            assert col not in refs, (table, col, refs)
+            refschema = fkey['referred_schema']
+            reftable = fkey['referred_table'].lower()
+            ref = ref.lower()
+            if schema and refschema and refschema != schema:
+                refs[col] = f'{refschema}.{reftable}[{ref}]'
+            else:
+                refs[col] = f'{reftable}[{ref}]'
+
+    for column in insp.get_columns(table, schema):
+        name = column['name']
+        if name in refs:
+            dtype = 'ref'
+        else:
+            dtype = detect_type(column['type'])
+        if name in pkeys or name in refs:
+            level = 4
+        else:
+            level = 3
+        yield {
+            'property': name.lower(),
+            'source': name,
+            'type': dtype,
+            'ref': refs.get(name, ''),
+            'level': level,
+        }
 
 
 def detect_type(ctype):
@@ -65,61 +83,26 @@ def detect_type(ctype):
     ))
 
 
-def writecsv(f, cols, params=None):
-    params = {
-        'dataset': '',
-        'resource': '',
-        'origin': '',
-        'model': '{table}',
-        **(params or {}),
-    }
-    writer = csv.writer(f)
-    writer.writerow([
+def writecsv(f, models, dataset='', resource=''):
+    writer = csv.DictWriter(f, [
         'dataset',
         'resource',
-        'origin',
+        'base',
         'model',
         'property',
+        'source',
         'type',
         'ref',
-        'const',
+        'level',
+        'access',
         'title',
         'description',
-        'table',
-        'column',
-        'ref.table',
-        'ref.column',
     ])
-    for table, column, ctype, ref in cols:
-        kwargs = {
-            'table': table.lower(),
-        }
-
-        if ctype == 'pk':
-            dtype = 'pk'
-            prop = '_id'
-            column = ','.join(column)
-        else:
-            prop = column.lower()
-
-        if ref:
-            dtype = 'ref'
-        else:
-            dtype = ctype
-
-        writer.writerow([
-            params['dataset'].format(**kwargs),
-            params['resource'].format(**kwargs),
-            params['origin'].format(**kwargs),
-            params['model'].format(**kwargs),
-            prop,
-            dtype,
-            params['model'].format(**{**kwargs, 'table': ref['table'].lower()}) if ref else '',
-            '',  # const
-            '',  # title
-            '',  # description
-            table,
-            column,
-            ref['table'] if ref else '',
-            ref['column'] if ref else '',
-        ])
+    writer.writeheader()
+    writer.writerow({'dataset': dataset})
+    writer.writerow({'resource': resource})
+    for model, props in models:
+        writer.writerow({'base': ''})
+        writer.writerow(model)
+        for prop in props:
+            writer.writerow(prop)

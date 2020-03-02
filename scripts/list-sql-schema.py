@@ -12,24 +12,16 @@ from lodam.services.sqlschema import inspect, writecsv
 @click.argument('dsn')
 @click.option('--schema', help="database schema name")
 @click.option('-o', '--output', help="output file")
-@click.option('--dataset', default='sql', help="dataset name tamplate")
-@click.option('--resource', default='sql', help="resource name template")
-@click.option('--origin', default='sql', help="origin name template")
-@click.option('--model', default='{table}', help="model name template")
-def main(dsn, schema, output, dataset, resource, origin, model):
+@click.option('--dataset', default='datasets/example/data', help="dataset name")
+@click.option('--resource', default='sql', help="resource name")
+def main(dsn, schema, output, dataset, resource):
     engine = sa.create_engine(dsn)
-    cols = inspect(engine, schema)
-    params = {
-        'dataset': dataset,
-        'resource': resource,
-        'origin': origin,
-        'model': model,
-    }
+    models = inspect(engine, schema)
     if output:
         with open(output, 'w') as f:
-            writecsv(f, cols, params)
+            writecsv(f, models, dataset=dataset, resource=resource)
     else:
-        writecsv(sys.stdout, cols, params)
+        writecsv(sys.stdout, models, dataset=dataset, resource=resource)
 
 
 if __name__ == "__main__":
