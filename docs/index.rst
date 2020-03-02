@@ -268,7 +268,6 @@ Turinys
 
    inventorying
    sources
-   pk
    norm
    dependencies
    vocabulary

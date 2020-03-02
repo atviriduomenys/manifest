@@ -43,83 +43,96 @@ Tokio duomenų šaltinio duomenų struktūros aprašas atrodo taip:
 
 .. code-block:: yaml
 
-   name: pavyzdziai/priklausomybes
    type: dataset
+   name: datasets/pavyzdziai/priklausomybes
    resources:
      salys:
        type: json
        source: https://example.com/salys/
-       objects:
-         geografija/salis:
-           source: resources
-           properties:
-             id:
-               type: pk
-               source: code
-             kodas:
-               type: string
-               source: code
-             pavadinimas:
-               type: string
-               source: country
      miestai:
        type: json
        source: https://example.com/salys/{salis.kodas}/miestai/
-       objects:
-         geografija/miestas:
-           source: resources
-           dependencies:
-             salis: geografija/salis/:dataset/pavyzdziai/priklausomybes
-           properties:
-             id:
-               type: pk
-               source: city
-             salis:
-               type: ref
-               object: geografija/salis
-               dependency: salis.id
-             pavadinimas:
-               type: string
-               source: city
+
+.. code-block:: yaml
+
+   type: model
+   name: datasets/pavyzdziai/priklausomybes/salis
+   pull:
+     dataset: datasets/pavyzdziai/priklausomybes
+     resource: salys
+     source: resources
+     pk: kodas
+   properties:
+     kodas:
+       type: string
+       pull: code
+     pavadinimas:
+       type: string
+       pull: country
+
+.. code-block:: yaml
+
+   type: model
+   name: datasets/pavyzdziai/priklausomybes/miestas
+   pull:
+     dataset: datasets/pavyzdziai/priklausomybes
+     resource: miestai
+     source: resources
+     pk: pavadinimas
+     using:
+       - salis: query('datasets/pavyzdziai/priklausomybes/salis')
+   properties:
+     salis:
+       type: ref
+       model: datasets/pavyzdziai/priklausomybes/salis
+       pull:
+         source: $salis._id
+         ref: _id
+     pavadinimas:
+       type: string
+       pull: city
 
 Šioje vietoje, panaudojant priklausomybę:
 
 .. code-block:: yaml
 
-   dependencies:
-      salis: geografija/salis/:dataset/pavyzdziai/priklausomybes
+   using:
+     salis: query('datasets/pavyzdziai/priklausomybes/salis')
 
 Prieš kreipiantis į miestų :term:`prieigos tašką <prieigos taškas>` vykdoma
 užklausa::
 
-   /geografija/salis/:dataset/pavyzdziai/priklausomybes
+   query('datasets/pavyzdziai/priklausomybes/salis')
 
 Tada kviečiamas miestų :term:`prieigos taškas` tiek kartų, kiek yra kiek
 užklausa grąžino eilučių. Miestų :term:`prieigos taško <prieigos taškas>` URL
 adrese esantis `{salis.kodas}` pakeičiamas į užklausos eilutėje esančią
 reikšme. Tokiu būdu, gauname visus miestus.
 
-Papildomai, `geografija/miestas` savybė `salis`, reikšmę gauna ne iš `source`,
-o iš `dependency: salis.id`, tokiu būdu susiejant miestą su šalimi.
+Modelio `datasets/pavyzdziai/priklausomybes/miestas` savybė `salis`, reikšmę
+gauna iš kintamojo `$salis._id`. Pagal nutylėjimą lauko `pull.source` reikšmė
+atitinka siejamo modelio `pull.pk` reikšmę, pagal kurią gaunamas tikrasis
+identifikatorius. Tačiau šiuo atveju identifikatorius jau šinomas, todėl
+papildomai nurodome, kad šiuo atveju `pull.source` rodo į `_id` lauką.
 
 Galutiniame rezultate gauname tokias dvi lenteles:
 
-**geografija/salis**
+**datasets/pavyzdziai/priklausomybes/salis**
 
-==========  ===========
-id          pavadinimas
-==========  ===========
-`552c4c24`  Lietuva
-==========  ===========
+====================================  ===========
+id                                    pavadinimas
+====================================  ===========
+cb379696-76f7-43d8-8a72-57ac4e9914d0  Lietuva
+====================================  ===========
 
-**geografija/miestas**
+**datasets/pavyzdziai/priklausomybes/miestas**
 
-==========  ==========  ===========
-id          salis       pavadinimas
-==========  ==========  ===========
-`8e65fec0`  `552c4c24`  Vilnius
-`4fe80490`  `552c4c24`  Kaunas
-==========  ==========  ===========
+====================================  ====================================  ===========
+id                                    salis                                 pavadinimas
+====================================  ====================================  ===========
+164973fa-7a8f-439b-8b26-cfade23c6bc7  cb379696-76f7-43d8-8a72-57ac4e9914d0  Vilnius
+00dd95e6-7c40-43d7-8429-50c9ca0b3c76  cb379696-76f7-43d8-8a72-57ac4e9914d0  Kaunas
+====================================  ====================================  ===========
 
 Atkreipkite dėmesį, kad visuose pavyzdžiuose, nepriklausomai nuo duomenų
 šaltinio, naudodami vieningą žodyną visą laiką gauname tuose pačius duomenis,

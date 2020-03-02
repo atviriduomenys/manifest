@@ -86,38 +86,50 @@ Lietuva              Klaipėda
 Tarkime ši lentelė yra pateikta CSV formatu adresu
 `https://example.com/miestai.csv`.
 
-Šiuo lentelės duomenų aprašas turėtų atrodyti taip:
+Lentelės duomenų aprašas turėtų atrodyti taip:
 
 .. code-block:: yaml
 
-   name: pavyzdziai/normalizavimas
+   # datasets/pavyzdziai/normalizavimas.dataset.yml
    type: dataset
+   name: datasets/pavyzdziai/normalizavimas
    resources:
      miestai:
        type: csv
-       objects:
-         geografija/salis:
-           source: https://example.com/miestai.csv
-           properties:
-             id:
-               type: pk
-               source: šalis
-             pavadinimas:
-               type: string
-               source: šalis
-         geografija/miestas:
-           source: https://example.com/miestai.csv
-           properties:
-             id:
-               type: pk
-               source: šalis
-             salis:
-               type: ref
-               object: geografija/salis
-               source: šalis
-             pavadinimas:
-               type: string
-               source: miestas
+
+.. code-block:: yaml
+
+   # datasets/pavyzdziai/normalizavimas/salis.yml
+   type: model
+   name: datasets/pavyzdziai/normalizavimas/salis
+   pull:
+     dataset: datasets/pavyzdziai/normalizavimas
+     resource: miestai
+     source: https://example.com/miestai.csv
+     pk: pavadinimas
+   properties:
+     pavadinimas:
+       type: string
+       pull: šalis
+
+.. code-block:: yaml
+
+   # datasets/pavyzdziai/normalizavimas/miestas.yml
+   type: model
+   name: datasets/pavyzdziai/normalizavimas/miestas
+   pull:
+     dataset: datasets/pavyzdziai/normalizavimas
+     resource: miestai
+     source: https://example.com/miestai.csv
+     pk: pavadinimas
+   properties:
+     salis:
+       type: ref
+       model: datasets/pavyzdziai/normalizavimas/salis
+       pull: šalis
+     pavadinimas:
+       type: string
+       pull: miestas
 
 Iš šio pavyzdžio matome, kad miestų duomenys skaitomi du kartus ir paskirstomi
 dviejose lentelėse. Pirmą kartą skaitome tik šalys, generuojant pirminį raktą
@@ -126,23 +138,23 @@ panaudojant šalies pirminį raktą. Galutiniame rezultate gauname tokias
 lenteles:
 
 
-**geografija/salis**
+**datasets/pavyzdziai/normalizavimas/salis**
 
-==========  ===========
-id          pavadinimas
-==========  ===========
-`098b634e`  Lietuva
-==========  ===========
+====================================  ===========
+_id                                   pavadinimas
+====================================  ===========
+210deafe-4fea-4bb2-b5e2-8a27599dabc6  Lietuva
+====================================  ===========
 
-**geografija/miestas**
+**datasets/pavyzdziai/normalizavimas/miestas**
 
-==========  ==========  ===========
-id          salis       pavadinimas
-==========  ==========  ===========
-`8e65fec0`  `098b634e`  Vilnius
-`4fe80490`  `098b634e`  Kaunas
-`cad19c34`  `098b634e`  Klaipėda
-==========  ==========  ===========
+====================================  ====================================  ===========
+_id                                   salis                                 pavadinimas
+====================================  ====================================  ===========
+42457737-7607-4184-ae35-d24a65cab8a8  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Vilnius
+5fac44f5-a640-4480-83d7-a8039f92fada  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Kaunas
+a7cda7ba-c1e9-4254-addd-0c9c229b23ed  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Klaipėda
+====================================  ====================================  ===========
 
 
 Sinonimai
