@@ -48,10 +48,10 @@ Tokio duomenų šaltinio duomenų struktūros aprašas atrodo taip:
    resources:
      salys:
        type: json
-       source: https://example.com/salys/
+       pull: https://example.com/salys/
      miestai:
        type: json
-       source: https://example.com/salys/{salis.kodas}/miestai/
+       pull: https://example.com/salys/{salis.kodas}/miestai/
 
 .. code-block:: yaml
 
