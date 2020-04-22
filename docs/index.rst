@@ -272,8 +272,8 @@ Turinys
 
    inventory
    demand
-   maturity
    sources
+   maturity
    norm
    dependencies
    vocabulary
