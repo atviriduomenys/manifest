@@ -102,34 +102,34 @@ Lentelės duomenų aprašas turėtų atrodyti taip:
    # datasets/pavyzdziai/normalizavimas/salis.yml
    type: model
    name: datasets/pavyzdziai/normalizavimas/salis
-   pull:
+   source:
      dataset: datasets/pavyzdziai/normalizavimas
      resource: miestai
-     source: https://example.com/miestai.csv
+     name: https://example.com/miestai.csv
      pk: pavadinimas
    properties:
      pavadinimas:
        type: string
-       pull: šalis
+       source: šalis
 
 .. code-block:: yaml
 
    # datasets/pavyzdziai/normalizavimas/miestas.yml
    type: model
    name: datasets/pavyzdziai/normalizavimas/miestas
-   pull:
+   source:
      dataset: datasets/pavyzdziai/normalizavimas
      resource: miestai
-     source: https://example.com/miestai.csv
+     name: https://example.com/miestai.csv
      pk: pavadinimas
    properties:
      salis:
        type: ref
        model: datasets/pavyzdziai/normalizavimas/salis
-       pull: šalis
+       source: šalis
      pavadinimas:
        type: string
-       pull: miestas
+       source: miestas
 
 Iš šio pavyzdžio matome, kad miestų duomenys skaitomi du kartus ir paskirstomi
 dviejose lentelėse. Pirmą kartą skaitome tik šalys, generuojant pirminį raktą

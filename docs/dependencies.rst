@@ -57,40 +57,40 @@ Tokio duomenų šaltinio duomenų struktūros aprašas atrodo taip:
 
    type: model
    name: datasets/pavyzdziai/priklausomybes/salis
-   pull:
+   source:
      dataset: datasets/pavyzdziai/priklausomybes
      resource: salys
-     source: resources
+     name: resources
      pk: kodas
    properties:
      kodas:
        type: string
-       pull: code
+       source: code
      pavadinimas:
        type: string
-       pull: country
+       source: country
 
 .. code-block:: yaml
 
    type: model
    name: datasets/pavyzdziai/priklausomybes/miestas
-   pull:
+   source:
      dataset: datasets/pavyzdziai/priklausomybes
      resource: miestai
-     source: resources
+     name: resources
      pk: pavadinimas
-     using:
+     params:
        - salis: query('datasets/pavyzdziai/priklausomybes/salis')
    properties:
      salis:
        type: ref
        model: datasets/pavyzdziai/priklausomybes/salis
-       pull:
-         source: $salis._id
+       source:
+         name: $salis._id
          ref: _id
      pavadinimas:
        type: string
-       pull: city
+       source: city
 
 Šioje vietoje, panaudojant priklausomybę:
 
@@ -110,10 +110,10 @@ adrese esantis `{salis.kodas}` pakeičiamas į užklausos eilutėje esančią
 reikšme. Tokiu būdu, gauname visus miestus.
 
 Modelio `datasets/pavyzdziai/priklausomybes/miestas` savybė `salis`, reikšmę
-gauna iš kintamojo `$salis._id`. Pagal nutylėjimą lauko `pull.source` reikšmė
-atitinka siejamo modelio `pull.pk` reikšmę, pagal kurią gaunamas tikrasis
+gauna iš kintamojo `$salis._id`. Pagal nutylėjimą lauko `source.name` reikšmė
+atitinka siejamo modelio `source.pk` reikšmę, pagal kurią gaunamas tikrasis
 identifikatorius. Tačiau šiuo atveju identifikatorius jau šinomas, todėl
-papildomai nurodome, kad šiuo atveju `pull.source` rodo į `_id` lauką.
+papildomai nurodome, kad šiuo atveju `source.name` rodo į `_id` lauką.
 
 Galutiniame rezultate gauname tokias dvi lenteles:
 
