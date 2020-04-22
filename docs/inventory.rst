@@ -53,13 +53,13 @@ aprašymus, susieti su žodynu, konvertuoti duomenis į kitus formatus ir t.t.
 Inventorizacijos lentelė yra sudaryta hierarchiniu principu, 5 stulpeliai
 einantys po lauko `id` nurodo hierarchijos lygį:
 
-=  ========  ===============================================
-d  dataset   Duomenų rinkinio pavadinimas
-r  resource  Duomenų šaltinio arba distribucijos pavadinimas
-b  base      Modelio bazės pavadinimas
-m  model     Modelio arba lentelės pavadinimas
-   property  Modelio savybės pavadinimas
-=  ========  ===============================================
+==  ========  ===============================================
+d   dataset   Duomenų rinkinio pavadinimas
+r   resource  Duomenų šaltinio arba distribucijos pavadinimas
+b   base      Modelio bazės pavadinimas
+m   model     Modelio arba lentelės pavadinimas
+\   property  Modelio savybės pavadinimas
+==  ========  ===============================================
 
 Lentelėje šie pavadinimai yra sutrumpinti, dėl aiškumo, tačiau šie pavadinimai
 inventorizacijos lentelėse turi būti pilni.
