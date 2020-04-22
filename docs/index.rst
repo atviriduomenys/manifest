@@ -73,7 +73,9 @@ lentele:
 
 - `level` stulpelyje pateikiamas duomenų brandos lygis
 
-- `source` stulpelyje vykdoma duomenų atranka ir transformacija
+- `source` stulpelyje vykdoma duomenų atranka
+
+- `prepare` stulpelyje vykdomas duomenų tikrinimas ir transformacija
 
 - `ref` stulpelyje tvarkomi objektų identifikatoriai ir ryšiai tarp lentelių
 
@@ -152,7 +154,7 @@ atrodytų mūsų inventorizacijos lentelė YAML formatu:
      countries:
        type: sql
        title: Duomenų bazė
-       source: postgresql://user:password@host/dbname
+       pull: postgresql://user:password@host/dbname
 
 .. code-block:: yaml
 

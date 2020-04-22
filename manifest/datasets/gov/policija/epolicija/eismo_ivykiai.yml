@@ -11,22 +11,22 @@ resources:
   '':
     type: xlsx
     source: 
+      # 2013 m.
+      - "https://www.epolicija.lt/c/document_library/get_file?uuid=8c466021-bdac-4f0a-a437-8fe4bf7a5181&groupId=10156"
+      # 2014 m.
+      - "https://www.epolicija.lt/c/document_library/get_file?uuid=d894584b-40ec-4111-8ffa-d786d5abd3ac&groupId=10156"
+      # 2015 m.
+      - "https://www.epolicija.lt/c/document_library/get_file?uuid=796dc0e9-a304-404b-9720-6b53676bad15&groupId=10156"
+      # 2016 m.
+      - "https://www.epolicija.lt/c/document_library/get_file?uuid=a4ca8d1c-5f4f-4d0c-89b3-0c9baffac093&groupId=10156"
+      # 2017 m.
+      - "https://www.epolicija.lt/c/document_library/get_file?uuid=39221a0e-c0aa-406c-82df-0d87535c1b49&groupId=10156"
     objects:
       '':
         policija/eismas/ivykis:
           local: true
           stars: 2
           source:
-            # 2013 m.
-            - "https://www.epolicija.lt/c/document_library/get_file?uuid=8c466021-bdac-4f0a-a437-8fe4bf7a5181&groupId=10156"
-            # 2014 m.
-            - "https://www.epolicija.lt/c/document_library/get_file?uuid=d894584b-40ec-4111-8ffa-d786d5abd3ac&groupId=10156"
-            # 2015 m.
-            - "https://www.epolicija.lt/c/document_library/get_file?uuid=796dc0e9-a304-404b-9720-6b53676bad15&groupId=10156"
-            # 2016 m.
-            - "https://www.epolicija.lt/c/document_library/get_file?uuid=a4ca8d1c-5f4f-4d0c-89b3-0c9baffac093&groupId=10156"
-            # 2017 m.
-            - "https://www.epolicija.lt/c/document_library/get_file?uuid=39221a0e-c0aa-406c-82df-0d87535c1b49&groupId=10156"
           properties:
             savivaldybe:
               type: string

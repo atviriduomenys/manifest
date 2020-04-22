@@ -91,6 +91,7 @@ def writecsv(f, models, dataset='', resource=''):
         'model',
         'property',
         'source',
+        'prepare',
         'type',
         'ref',
         'level',

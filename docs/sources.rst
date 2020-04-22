@@ -301,7 +301,7 @@ id       code      country
    resources:
      sql:
        type: sql
-       source: postgresql://user@host/dbname
+       pull: postgresql://user@host/dbname
 
 .. code-block:: yaml
 
@@ -405,7 +405,7 @@ Tarkime turime CSV failą, kuris pasiekiamas adresu
    resources:
      csv:
        type: csv
-       source: https://example.com/
+       pull: https://example.com/
 
 
 .. code-block:: yaml
@@ -521,7 +521,7 @@ Tarkime turime JSON failą, kuris pasiekiamas adresu
    resources:
      json:
        type: json
-       source: https://example.com/countries.json
+       pull: https://example.com/countries.json
 
 .. code-block:: yaml
 
@@ -615,7 +615,7 @@ Tarkime turime XML failą, kuris pasiekiamas adresu
    resources:
      xml:
        type: xml
-       source: https://example.com/countries.xml
+       pull: https://example.com/countries.xml
 
 .. code-block:: yaml
 
@@ -710,7 +710,7 @@ id       code      country
    resources:
      xlsx:
        type: xlsx
-       source: https://example.com/countries.xlsx
+       pull: https://example.com/countries.xlsx
 
 .. code-block:: yaml
 
