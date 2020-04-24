@@ -440,7 +440,7 @@ Objektai be identifikatoriaus
 Duomenų šaltinis ne visada leidžia unikaliai identifikuoti objektą. Pavyzdžiui,
 jei turime tokią šaltinio lentelę:
 
-========  =============
+===========  ==========
 VILLAGES
 -----------------------
 name         population

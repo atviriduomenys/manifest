@@ -1,5 +1,7 @@
 .. default-role:: literal
 
+.. _inventory:
+
 Inventorizacija
 ###############
 
