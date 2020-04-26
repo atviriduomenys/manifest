@@ -1,6 +1,5 @@
----
 name: organizacija
-title: "Organizacija"
+title: Organizacija
 type: model
 version:
   number: 1
@@ -8,6 +7,6 @@ version:
 properties:
   pavadinimas:
     type: string
-  adresas: 
+  adresas:
     type: ref
-    object: geografija/lietuva/adresas
+    model: geografija/lietuva/adresas

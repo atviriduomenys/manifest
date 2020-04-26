@@ -1,0 +1,51 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_sudarytos_sutartys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SUDARYTOS_SUTARTYS
+properties:
+  _id:
+    type: pk
+    external:
+    - SSUT_DOK_ID
+    - SSUT_EIL_NR
+  ssut_dok_id:
+    type: integer
+    external: SSUT_DOK_ID
+  ssut_eil_nr:
+    type: integer
+    external: SSUT_EIL_NR
+  ssut_sbj_id:
+    type: integer
+    external: SSUT_SBJ_ID
+  ssut_sbj_patikslinimas:
+    type: string
+    external: SSUT_SBJ_PATIKSLINIMAS
+  ssut_obj_aprasymas:
+    type: string
+    external: SSUT_OBJ_APRASYMAS
+  ssut_kaina_zodziais:
+    type: string
+    external: SSUT_KAINA_ZODZIAIS
+  ssut_disk_kaina_zodziais:
+    type: string
+    external: SSUT_DISK_KAINA_ZODZIAIS
+  ssut_obj_daliu_skaicius:
+    type: integer
+    external: SSUT_OBJ_DALIU_SKAICIUS
+  ssut_kainos_pastabos:
+    type: string
+    external: SSUT_KAINOS_PASTABOS
+  ssut_disk_kainos_pastabos:
+    type: string
+    external: SSUT_DISK_KAINOS_PASTABOS
+  ssut_tr_skaicius:
+    type: integer
+    external: SSUT_TR_SKAICIUS
+  ssut_kaina:
+    type: string
+    external: SSUT_KAINA
+  ssut_disk_kaina:
+    type: string
+    external: SSUT_DISK_KAINA

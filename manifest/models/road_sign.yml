@@ -1,87 +1,86 @@
----
 name: road_sign
 type: model
 version:
   number: 1
   date: 2019-01-06
-title: "Road Sign"
-description: ""
+title: Road Sign
+description: ''
 properties:
-  object_id: 
+  object_id:
     type: integer
     title: Objekto ID
-  sign_id: 
+  sign_id:
     type: integer
     title: Ženklo ID
-  road_sign_type: 
+  road_sign_type:
     type: string
     title: Tipas
-  sign_text: 
+  sign_text:
     type: string
     title: Ženklo tekstas
-  direction_of_effect: 
+  direction_of_effect:
     type: string
-    title: "Galiojimo kryptis"
-  rotation_degree: 
+    title: Galiojimo kryptis
+  rotation_degree:
     type: string
-    title: "Pasukimo kampas"
-  state: 
+    title: Pasukimo kampas
+  state:
     type: string
-    title: "Būklė"
-  GUID: 
+    title: Būklė
+  GUID:
     type: string
-    title: "GUID"
-  from_top: 
+    title: GUID
+  from_top:
     type: string
-    title: "Padėtis nuo viršaus"
-  sign_category: 
+    title: Padėtis nuo viršaus
+  sign_category:
     type: string
-    title: "Ženklų grupė"
-  decision_date: 
+    title: Ženklų grupė
+  decision_date:
     type: string
-    title: "Sprendimo data"
-  implementation_date: 
+    title: Sprendimo data
+  implementation_date:
     type: string
-    title: "Įgyvendinimo data"
+    title: Įgyvendinimo data
   duration_start:
     type: string
-    title: "Galioja nuo"
+    title: Galioja nuo
   duration_end:
     type: string
-    title: "Galioja iki"
+    title: Galioja iki
   height:
     type: string
-    title: "Pastatymo auštis"
+    title: Pastatymo auštis
   ket_number:
     type: string
-    title: "Kelių eismo taisyklių nr."
+    title: Kelių eismo taisyklių nr.
   status:
     type: string
-    title: "Statusas"
+    title: Statusas
   file_sys_name:
     type: string
-    title: "Failo sys vardas"
+    title: Failo sys vardas
   decision_number:
     type: string
-    title: "Sprendimo numeris"
+    title: Sprendimo numeris
   inventorization_padetis:
     type: string
-    title: "Inventorizacijos padėtis"
+    title: Inventorizacijos padėtis
   visibility:
     type: string
-    title: "Matomumas"
+    title: Matomumas
   reflection_group:
     type: string
-    title: "Atspindžio grupė"
+    title: Atspindžio grupė
   address:
     type: string
-    title: "Adresas"
+    title: Adresas
   removal_reason:
     type: string
-    title: "Pašalinimo priežastis"
+    title: Pašalinimo priežastis
   removal_date:
     type: string
-    title: "Pašalinimo data"
+    title: Pašalinimo data
   global_id:
     type: string
     title: Globalus ID

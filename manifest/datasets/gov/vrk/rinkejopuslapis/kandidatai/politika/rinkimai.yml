@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vrk/rinkejopuslapis/kandidatai/politika/rinkimai
+external:
+  dataset: datasets/gov/vrk/rinkejopuslapis/kandidatai
+  resource: kandidatai
+  prepare: skip(col(0)=['Rinkimai','Rinkimų rūšis'])
+  pk: rinkimu_id
+properties:
+  pavadinimas:
+    type: string
+    external: Rinkimai
+  data:
+    type: date
+    external: Rinkimų data
+  rusis:
+    type: string
+    external: Rinkimų rūšis
+    enum:
+      seimo: Seimo rinkimai
+      savivaldybiu: Savivaldybių rinkimai
+  rinkimu_id:
+    type: string
+    prepare: param('rinkimai').rinkimu_id
+

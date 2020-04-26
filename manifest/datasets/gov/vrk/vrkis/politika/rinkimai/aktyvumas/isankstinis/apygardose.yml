@@ -1,0 +1,39 @@
+type: model
+name: datasets/gov/vrk/vrkis/politika/rinkimai/aktyvumas/isankstinis/apygardose
+external:
+  dataset: datasets/gov/vrk/vrkis
+  resource: aktyvumasIsankstinisVrt
+  name: data
+level: 2
+properties:
+  turas:
+    type: ref
+    model: politika/rinkimai/turas
+    external:
+    - vr_id
+    - rt_nr
+  apygarda:
+    type: ref
+    model: politika/rinkimai/apygarda
+    external: rpg_id
+  rinkeju_skaicius:
+    type: integer
+    external: rinkeju_skaicius
+  balsavo_is_anksto:
+    type: integer
+    external: balsavo_is_anksto
+  balsavo_paste:
+    type: integer
+    external: balsavo_paste
+  balsavo_namuose:
+    type: integer
+    external: balsavo_namuose
+  is_viso:
+    type: integer
+    external: is_viso
+  procentas:
+    type: number
+    external: procentas
+  proc_rusiavimui:
+    type: number
+    external: proc_rusiavimui

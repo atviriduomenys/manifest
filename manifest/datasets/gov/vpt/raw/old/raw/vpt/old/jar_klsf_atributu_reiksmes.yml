@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_atributu_reiksmes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_ATRIBUTU_REIKSMES
+properties:
+  _id:
+    type: pk
+    external:
+    - REIK_ATRI_KODAS
+    - REIK_REIKSME
+  reik_atri_kodas:
+    type: integer
+    external: REIK_ATRI_KODAS
+  reik_reiksme:
+    type: integer
+    external: REIK_REIKSME
+  reik_pav_i:
+    type: string
+    external: REIK_PAV_I
+  reik_pav_english:
+    type: string
+    external: REIK_PAV_ENGLISH
+  reik_galioja_iki:
+    type: datetime
+    external: REIK_GALIOJA_IKI
+  reik_koregavimo_data:
+    type: datetime
+    external: REIK_KOREGAVIMO_DATA

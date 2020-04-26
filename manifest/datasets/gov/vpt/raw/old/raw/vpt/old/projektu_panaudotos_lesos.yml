@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_panaudotos_lesos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_PANAUDOTOS_LESOS
+properties:
+  _id:
+    type: pk
+    external:
+    - PRJL_EILES_NR
+    - PRJL_PRJ_ID
+  prjl_prj_id:
+    type: integer
+    external: PRJL_PRJ_ID
+  prjl_eiles_nr:
+    type: integer
+    external: PRJL_EILES_NR
+  prjl_psbj_id:
+    type: integer
+    external: PRJL_PSBJ_ID
+  prjl_lesos:
+    type: number
+    external: PRJL_LESOS
+  prjl_lesu_pastabos:
+    type: string
+    external: PRJL_LESU_PASTABOS
+  prjl_lesos_lt:
+    type: number
+    external: PRJL_LESOS_LT
+  prjl_psbj_asmuo:
+    type: string
+    external: PRJL_PSBJ_ASMUO
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

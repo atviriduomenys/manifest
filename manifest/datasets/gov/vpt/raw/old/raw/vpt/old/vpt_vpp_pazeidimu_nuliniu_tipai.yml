@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_pazeidimu_nuliniu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_VPP_PAZEIDIMU_NULINIU_TIPAI
+properties:
+  _id:
+    type: pk
+  pazt_null_id:
+    type: integer
+    external: PAZT_NULL_ID
+  pazt_null_kodas:
+    type: integer
+    external: PAZT_NULL_KODAS
+  pazt_null_pav:
+    type: string
+    external: PAZT_NULL_PAV

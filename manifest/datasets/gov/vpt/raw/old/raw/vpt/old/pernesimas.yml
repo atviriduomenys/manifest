@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/pernesimas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PERNESIMAS
+properties:
+  _id:
+    type: pk
+  transf_id:
+    type: integer
+    external: TRANSF_ID
+  transf_obj_id:
+    type: integer
+    external: TRANSF_OBJ_ID
+  transf_data:
+    type: datetime
+    external: TRANSF_DATA
+  transf_is_lentos:
+    type: string
+    external: TRANSF_IS_LENTOS
+  transf_i_lenta:
+    type: string
+    external: TRANSF_I_LENTA
+  transf_neatitikimas:
+    type: string
+    external: TRANSF_NEATITIKIMAS
+  transf_klaid_kodas:
+    type: string
+    external: TRANSF_KLAID_KODAS

@@ -1,0 +1,26 @@
+type: model
+name: datasets/gov/vpt/new/valstybe/pirkimas/dalyvis/adresas
+external:
+  dataset: datasets/gov/vpt/new
+  resource: mssql
+  name: ATN1
+properties:
+  _id:
+    type: pk
+    external:
+    - COUNTRY_2
+    - TOWN_2
+    - POSTAL_ADDRESS_2
+  dalyvis:
+    type: ref
+    model: valstybe/pirkimas/dalyvis
+    external: ID
+  adresas:
+    type: string
+    external: POSTAL_ADDRESS_2
+  gyvenviete:
+    type: string
+    external: TOWN_2
+  salis:
+    type: string
+    external: COUNTRY_2

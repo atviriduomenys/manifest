@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_tipu_rysio_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_TIPU_RYSIO_TIPAI
+properties:
+  _id:
+    type: pk
+    external: OBJRT_ID
+  objrt_id:
+    type: integer
+    external: OBJRT_ID
+  objrt_objt_id1:
+    type: integer
+    external: OBJRT_OBJT_ID1
+  objrt_objt_id2:
+    type: integer
+    external: OBJRT_OBJT_ID2
+  objrt_pav:
+    type: string
+    external: OBJRT_PAV

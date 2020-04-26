@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/bt_form_html_copy
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: BT_FORM_HTML_COPY
+properties:
+  _id:
+    type: pk
+    external: OBJ_ID
+  obj_id:
+    type: integer
+    external: OBJ_ID
+  formtype:
+    type: integer
+    external: FormType
+  processed:
+    type: boolean
+    external: Processed
+  ignore:
+    type: boolean
+    external: ignore

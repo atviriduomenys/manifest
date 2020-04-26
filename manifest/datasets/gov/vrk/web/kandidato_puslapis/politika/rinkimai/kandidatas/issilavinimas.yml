@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/politika/rinkimai/kandidatas/issilavinimas
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  issilavinimas:
+    type: string
+  mokymo_istaiga:
+    type: string
+  specialybe:
+    type: string
+  baigimo_metai:
+    type: string

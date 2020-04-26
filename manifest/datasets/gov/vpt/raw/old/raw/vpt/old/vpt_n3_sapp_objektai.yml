@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_sapp_objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_SAPP_OBJEKTAI
+properties:
+  _id:
+    type: pk
+    external:
+    - SAPP_DOK_ID
+    - SAPP_EIL_NR
+  sapp_dok_id:
+    type: integer
+    external: SAPP_DOK_ID
+  sapp_eil_nr:
+    type: integer
+    external: SAPP_EIL_NR
+  sapp_pavadinimas:
+    type: string
+    external: SAPP_PAVADINIMAS
+  sapp_pirk_obj_rusis:
+    type: integer
+    external: SAPP_PIRK_OBJ_RUSIS
+  sapp_aprasymas:
+    type: string
+    external: SAPP_APRASYMAS

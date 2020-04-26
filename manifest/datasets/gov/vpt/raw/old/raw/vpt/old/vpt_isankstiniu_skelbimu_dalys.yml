@@ -1,0 +1,66 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_isankstiniu_skelbimu_dalys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_ISANKSTINIU_SKELBIMU_DALYS
+properties:
+  _id:
+    type: pk
+    external:
+    - DAL_EIL_NR
+    - DOK_ISSK_ID
+  dok_issk_id:
+    type: integer
+    external: DOK_ISSK_ID
+  dal_eil_nr:
+    type: integer
+    external: DAL_EIL_NR
+  dal_leidinio_eil_nr:
+    type: integer
+    external: DAL_LEIDINIO_EIL_NR
+  dal_dalt_id:
+    type: integer
+    external: DAL_DALT_ID
+  dal_pirk_obj_id:
+    type: string
+    external: DAL_PIRK_OBJ_ID
+  dal_darbt_id:
+    type: integer
+    external: DAL_DARBT_ID
+  dal_aprasymas:
+    type: string
+    external: DAL_APRASYMAS
+  dal_pirkb_id:
+    type: integer
+    external: DAL_PIRKB_ID
+  dal_proceduros_diena:
+    type: string
+    external: DAL_PROCEDUROS_DIENA
+  dal_diena_nuo:
+    type: string
+    external: DAL_DIENA_NUO
+  dal_diena_iki:
+    type: string
+    external: DAL_DIENA_IKI
+  dal_info:
+    type: string
+    external: DAL_INFO
+  dal_pristatymo_adresas:
+    type: string
+    external: DAL_PRISTATYMO_ADRESAS
+  dal_prekiut_id:
+    type: integer
+    external: DAL_PREKIUT_ID
+  dal_pirk_obj_pavadinimas:
+    type: string
+    external: DAL_PIRK_OBJ_PAVADINIMAS
+  dal_proceduros_data_tiksli:
+    type: datetime
+    external: DAL_PROCEDUROS_DATA_TIKSLI
+  dal_data_nuo_tiksli:
+    type: datetime
+    external: DAL_DATA_NUO_TIKSLI
+  dal_data_iki_tiksli:
+    type: datetime
+    external: DAL_DATA_IKI_TIKSLI

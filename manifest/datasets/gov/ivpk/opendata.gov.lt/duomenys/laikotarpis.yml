@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/ivpk/opendata.gov.lt/duomenys/laikotarpis
+external:
+  dataset: datasets/gov/ivpk/opendata.gov.lt
+  resource: irs
+  name: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
+properties:
+  _id:
+    type: pk
+    level: 0
+  pavadinimas:
+    type: string
+    level: 0
+  nuo:
+    type: date
+    external: Rinkmenos pradžios data
+  iki:
+    type: date
+    external: Rinkmenos pabaigos data

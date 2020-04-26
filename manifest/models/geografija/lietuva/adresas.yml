@@ -1,11 +1,11 @@
 name: geografija/lietuva/adresas
-title: "Adresas"
+title: Adresas
 type: model
 version:
   number: 1
-  date: "2019-01-24"
+  date: '2019-01-24'
 properties:
-  pavadinimas: {type: string, title: "Pavadinimas"}
-  savivaldybe: {type: ref, object: geografija/lietuva/savivaldybe}
-  gatve: {type: ref, object: geografija/lietuva/gatve}
-  pastatas: {type: ref, object: geografija/lietuva/pastatas}
+  pavadinimas: {type: string, title: Pavadinimas}
+  savivaldybe: {type: ref, model: geografija/lietuva/savivaldybe}
+  gatve: {type: ref, model: geografija/lietuva/gatve}
+  pastatas: {type: ref, model: geografija/lietuva/pastatas}

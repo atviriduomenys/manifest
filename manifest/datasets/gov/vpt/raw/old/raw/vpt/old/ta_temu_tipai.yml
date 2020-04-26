@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/ta_temu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: TA_TEMU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: TTT_ID
+  ttt_id:
+    type: integer
+    external: TTT_ID
+  ttt_kodas:
+    type: integer
+    external: TTT_KODAS
+  ttt_pav:
+    type: string
+    external: TTT_PAV

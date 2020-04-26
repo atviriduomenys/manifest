@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/pilieciu_kreip_turiniai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PILIECIU_KREIP_TURINIAI
+properties:
+  _id:
+    type: pk
+    external: ITUR_ID
+  itur_id:
+    type: integer
+    external: ITUR_ID
+  itur_kodas:
+    type: integer
+    external: ITUR_KODAS
+  itur_pav:
+    type: string
+    external: ITUR_PAV

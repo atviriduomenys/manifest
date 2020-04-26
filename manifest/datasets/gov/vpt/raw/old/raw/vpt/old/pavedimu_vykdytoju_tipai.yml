@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/pavedimu_vykdytoju_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PAVEDIMU_VYKDYTOJU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: PAVYT_ID
+  pavyt_id:
+    type: integer
+    external: PAVYT_ID
+  pavyt_kodas:
+    type: integer
+    external: PAVYT_KODAS
+  pavyt_pav:
+    type: string
+    external: PAVYT_PAV

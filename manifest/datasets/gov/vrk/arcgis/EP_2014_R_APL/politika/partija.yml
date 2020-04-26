@@ -1,0 +1,10 @@
+type: model
+name: datasets/gov/vrk/arcgis/EP_2014_R_APL/politika/partija
+external:
+  dataset: datasets/gov/vrk/arcgis/EP_2014_R_APL
+  resource: rezultatai
+  name: ''
+properties:
+  pavadinimas:
+    type: string
+    level: 1

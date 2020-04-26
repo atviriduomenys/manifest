@@ -1,0 +1,86 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_po_info
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PO_INFO
+properties:
+  _id:
+    type: pk
+    external:
+    - PO_INFO_DAL_EIL_NR
+    - PO_INFO_EIL_NR
+    - PO_INFO_GRUPES_EIL_NR
+    - PO_INFO_OBJ_ID
+  po_info_obj_id:
+    type: integer
+    external: PO_INFO_OBJ_ID
+  po_info_sbj_id:
+    type: integer
+    external: PO_INFO_SBJ_ID
+  po_info_sbj_patikslinimas:
+    type: string
+    external: PO_INFO_SBJ_PATIKSLINIMAS
+  po_info_eil_nr:
+    type: integer
+    external: PO_INFO_EIL_NR
+  po_info_pagrindinis:
+    type: boolean
+    external: PO_INFO_PAGRINDINIS
+  po_info_adresas:
+    type: string
+    external: PO_INFO_ADRESAS
+  po_info_miestas:
+    type: string
+    external: PO_INFO_MIESTAS
+  po_info_telefonas:
+    type: string
+    external: PO_INFO_TELEFONAS
+  po_info_email:
+    type: string
+    external: PO_INFO_EMAIL
+  po_info_kont_asmuo:
+    type: string
+    external: PO_INFO_KONT_ASMUO
+  po_info_pasto_kodas:
+    type: string
+    external: PO_INFO_PASTO_KODAS
+  po_info_salis:
+    type: string
+    external: PO_INFO_SALIS
+  po_info_faksas:
+    type: string
+    external: PO_INFO_FAKSAS
+  po_info_url:
+    type: string
+    external: PO_INFO_URL
+  po_info_salt_id:
+    type: integer
+    external: PO_INFO_SALT_ID
+  po_info_sbj_skodas:
+    type: integer
+    external: PO_INFO_SBJ_SKODAS
+  po_info_sbj_pav:
+    type: string
+    external: PO_INFO_SBJ_PAV
+  po_info_n3_url_2:
+    type: string
+    external: PO_INFO_N3_URL_2
+  po_info_n3_kontaktiniai_duomenys:
+    type: string
+    external: PO_INFO_N3_KONTAKTINIAI_DUOMENYS
+  po_info_n3_padalinys:
+    type: string
+    external: PO_INFO_N3_PADALINYS
+  po_info_dal_eil_nr:
+    type: integer
+    external: PO_INFO_DAL_EIL_NR
+  po_info_grupes_eil_nr:
+    type: integer
+    external: PO_INFO_GRUPES_EIL_NR
+  po_info_n5_url_3:
+    type: string
+    external: PO_INFO_N5_URL_3
+  po_info_n5_url_4:
+    type: string
+    external: PO_INFO_N5_URL_4

@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/pilieciu_rezult_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PILIECIU_REZULT_TIPAI
+properties:
+  _id:
+    type: pk
+    external: IREZ_ID
+  irez_id:
+    type: integer
+    external: IREZ_ID
+  irez_kodas:
+    type: integer
+    external: IREZ_KODAS
+  irez_pav:
+    type: string
+    external: IREZ_PAV

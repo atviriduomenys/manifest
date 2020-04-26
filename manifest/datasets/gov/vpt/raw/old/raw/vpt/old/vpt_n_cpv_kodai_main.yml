@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_cpv_kodai_main
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_CPV_KODAI_MAIN
+properties:
+  _id:
+    type: pk
+    external:
+    - M_NOM_DAL_EIL_NR
+    - M_NOM_DALT_ID
+    - M_NOM_DOK_ID
+    - M_NOM_EIL_NR
+    - M_NOM_PRB_EIL_NR
+  m_nom_dok_id:
+    type: integer
+    external: M_NOM_DOK_ID
+  m_nom_cpv_id:
+    type: integer
+    external: M_NOM_CPV_ID
+  m_nom_eil_nr:
+    type: integer
+    external: M_NOM_EIL_NR
+  m_nom_dalt_id:
+    type: integer
+    external: M_NOM_DALT_ID
+  m_nom_dal_eil_nr:
+    type: integer
+    external: M_NOM_DAL_EIL_NR
+  m_nom_prb_eil_nr:
+    type: integer
+    external: M_NOM_PRB_EIL_NR

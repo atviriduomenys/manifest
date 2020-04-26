@@ -3,7 +3,7 @@ title: Open Contracting Data Standard
 #~website: https://standard.open-contracting.org/latest/en/
 type: project
 version: 1
-date: "2019-07-04"
+date: '2019-07-04'
 objects:
   valstybe/pirkimas:
     target: ContractingProcess
@@ -16,7 +16,7 @@ objects:
     properties:
       ocid:
         type: string
-        source: ocid
+        external: ocid
         title: Open Contracting Identifier
         description: |
           Lietuvos viešųjų pirkimų tarnybai išduotas  OCID prefiksas yra
@@ -31,28 +31,28 @@ objects:
         type: string
         target: tag
         enum:
-          - planning
-          - planningUpdate
-          - tender
-          - tenderAmendment
-          - tenderUpdate
-          - tenderCancellation
-          - award
-          - awardUpdate
-          - awardCancellation
-          - contract
-          - contractUpdate
-          - contractAmendment
-          - implementation
-          - implementationUpdate
-          - contractTermination
-          - compiled
+        - planning
+        - planningUpdate
+        - tender
+        - tenderAmendment
+        - tenderUpdate
+        - tenderCancellation
+        - award
+        - awardUpdate
+        - awardCancellation
+        - contract
+        - contractUpdate
+        - contractAmendment
+        - implementation
+        - implementationUpdate
+        - contractTermination
+        - compiled
       budas:
         title: Pirkimo būdas
         type: string
         target: initiationType
         enum:
-          - tender
+        - tender
       dalyviai:
         type: array
         model: valstybe/pirkimas/organizacija

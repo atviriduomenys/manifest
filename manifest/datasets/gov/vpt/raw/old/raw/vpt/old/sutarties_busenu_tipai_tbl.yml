@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sutarties_busenu_tipai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUTARTIES_BUSENU_TIPAI_TBL
+properties:
+  _id:
+    type: pk
+    external: SUTB_ID
+  sutb_id:
+    type: integer
+    external: SUTB_ID
+  sutb_kodas:
+    type: integer
+    external: SUTB_KODAS
+  sutb_pav:
+    type: string
+    external: SUTB_PAV

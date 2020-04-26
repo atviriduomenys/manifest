@@ -1,11 +1,11 @@
 name: politika/rinkimai/biuletenis/vienmandatis
-title: "Biuletenis vienmandatėje rinkimų apygardoje"
+title: Biuletenis vienmandatėje rinkimų apygardoje
 type: model
 version:
   number: 1
   date: 2019-01-20
 properties:
-  numeris: {type: string, title: "Biuletenio numeris"}
+  numeris: {type: string, title: Biuletenio numeris}
   kandidatas:
     type: ref
-    object: politika/rinkimai/kandidatas
+    model: politika/rinkimai/kandidatas

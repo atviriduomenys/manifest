@@ -1,0 +1,71 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektu_istorija
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUBJEKTU_ISTORIJA
+properties:
+  _id:
+    type: pk
+    external: SBJI_ID
+  sbji_id:
+    type: integer
+    external: SBJI_ID
+  sbji_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: SBJI_SBJ_ID
+  sbji_skodas:
+    type: integer
+    external: SBJI_SKODAS
+  sbji_skodas_7:
+    type: integer
+    external: SBJI_SKODAS_7
+  sbji_jobj_id:
+    type: integer
+    external: SBJI_JOBJ_ID
+  sbji_priklauso_id:
+    type: integer
+    external: SBJI_PRIKLAUSO_ID
+  sbji_pav:
+    type: string
+    external: SBJI_PAV
+  sbji_adresas:
+    type: string
+    external: SBJI_ADRESAS
+  sbji_email:
+    type: string
+    external: SBJI_EMAIL
+  sbji_data_nuo:
+    type: datetime
+    external: SBJI_DATA_NUO
+  sbji_data_iki:
+    type: datetime
+    external: SBJI_DATA_IKI
+  sbji_atn_data:
+    type: datetime
+    external: SBJI_ATN_DATA
+  sbji_anul:
+    type: integer
+    external: SBJI_ANUL
+  sbji_ivede:
+    type: string
+    external: SBJI_IVEDE
+  sbji_ivedimo_data:
+    type: datetime
+    external: SBJI_IVEDIMO_DATA
+  sbji_koregavo:
+    type: string
+    external: SBJI_KOREGAVO
+  sbji_koregavimo_data:
+    type: datetime
+    external: SBJI_KOREGAVIMO_DATA
+  sbji_telefonas:
+    type: string
+    external: SBJI_TELEFONAS
+  sbji_faksas:
+    type: string
+    external: SBJI_FAKSAS
+  sbji_url:
+    type: string
+    external: SBJI_URL

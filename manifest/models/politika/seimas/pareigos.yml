@@ -1,5 +1,5 @@
 name: politika/seimas/pareigos
-title: "Seimo nario pareigos"
+title: Seimo nario pareigos
 type: model
 version:
   number: 1
@@ -8,12 +8,12 @@ properties:
   grupė:
     type: generic
     enum:
-      - politika/seimas/grupė
-      - politika/seimas/frakcija
-      - politika/partija
+    - politika/seimas/grupė
+    - politika/seimas/frakcija
+    - politika/partija
   seimo_narys:
     type: ref
-    object: politika/seimas/narys
+    model: politika/seimas/narys
   pareigos:
     type: string
   nuo:

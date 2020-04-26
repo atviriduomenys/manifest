@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/protokolu_busenu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROTOKOLU_BUSENU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: PRTBUS_ID
+  prtbus_id:
+    type: integer
+    external: PRTBUS_ID
+  prtbus_kodas:
+    type: integer
+    external: PRTBUS_KODAS
+  prtbus_pav:
+    type: string
+    external: PRTBUS_PAV

@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/new/valstybe/pirkimas
+external:
+  dataset: datasets/gov/vpt/new
+  resource: mssql
+  name: PLANNED_PROCUREMENT
+properties:
+  _id:
+    type: pk
+    external: ID
+  rusis:
+    type: string
+    prepare: "'planas'"
+  pavadinimas:
+    type: string
+    external: TITLE
+  kaina:
+    type: number
+    external: PLANNED_VALUE
+  kiekis:
+    type: string
+    external: UNIT_OF_MEASUREMENT_PLANNED_VALUE

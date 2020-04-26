@@ -1,5 +1,5 @@
 name: politika/seimas/kontaktas
-title: "Seimo nario kontaktinė informacija"
+title: Seimo nario kontaktinė informacija
 type: model
 version:
   number: 1
@@ -7,12 +7,12 @@ version:
 properties:
   seimo_narys:
     type: ref
-    object: politika/seimas/narys
+    model: politika/seimas/narys
   rūšis:
     type: string
     enum:
-      - email
-      - phone
-      - website
+    - email
+    - phone
+    - website
   reikšmė:
     type: string

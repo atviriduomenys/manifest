@@ -1,0 +1,51 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_tikslai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_TIKSLAI
+properties:
+  _id:
+    type: pk
+    external:
+    - PRJTI_EILES_NR
+    - PRJTI_PRJ_ID
+  prjti_prj_id:
+    type: integer
+    external: PRJTI_PRJ_ID
+  prjti_eiles_nr:
+    type: integer
+    external: PRJTI_EILES_NR
+  prjti_aprasymas:
+    type: string
+    external: PRJTI_APRASYMAS
+  prjti_bsn_proc:
+    type: integer
+    external: PRJTI_BSN_PROC
+  prjti_bsn_pav:
+    type: string
+    external: PRJTI_BSN_PAV
+  prjti_bsn_data:
+    type: datetime
+    external: PRJTI_BSN_DATA
+  prjti_bsn_priemone:
+    type: string
+    external: PRJTI_BSN_PRIEMONE
+  prjti_bsn_pastabos:
+    type: string
+    external: PRJTI_BSN_PASTABOS
+  prjti_aprasymas_en:
+    type: string
+    external: PRJTI_APRASYMAS_EN
+  prjti_bsn_priemone_en:
+    type: string
+    external: PRJTI_BSN_PRIEMONE_EN
+  prjti_bsn_pastabos_en:
+    type: string
+    external: PRJTI_BSN_PASTABOS_EN
+  prjti_bsn_pav_en:
+    type: string
+    external: PRJTI_BSN_PAV_EN
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

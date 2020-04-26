@@ -13,7 +13,7 @@ from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-from spinta.config import create_context
+from spinta.core.context import create_context
 from spinta import components
 from spinta import commands
 
@@ -151,7 +151,7 @@ def update_manifest_files(context, rows):
                 'type': row.type,
             }
             if row.ref:
-                prop['object'] = row.ref
+                prop['model'] = row.ref
             if row.const:
                 prop['const'] = row.const
             if row.title:

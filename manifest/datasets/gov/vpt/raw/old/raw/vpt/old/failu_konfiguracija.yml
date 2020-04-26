@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/failu_konfiguracija
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: FAILU_KONFIGURACIJA
+properties:
+  _id:
+    type: pk
+  fkfg_kelias:
+    type: string
+    external: FKFG_KELIAS
+  fkfg_katalogas:
+    type: integer
+    external: FKFG_KATALOGAS
+  fkfg_failu_sk:
+    type: integer
+    external: FKFG_FAILU_SK

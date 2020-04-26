@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vrk/vrkis/politika/rinkimai/aktyvumas
+external:
+  dataset: datasets/gov/vrk/vrkis
+  resource: aktyvumasIsankstinisRpg
+  name: ''
+level: 0
+properties:
+  turas:
+    type: ref
+    model: politika/rinkimai/turas
+  apygarda:
+    type: ref
+    model: politika/rinkimai/apygarda
+  apylinke:
+    type: ref
+    model: politika/rinkimai/apylinke
+  rusis:
+    type: string
+  laikas:
+    type: datetime

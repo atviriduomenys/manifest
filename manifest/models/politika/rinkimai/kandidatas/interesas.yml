@@ -1,5 +1,5 @@
 name: politika/rinkimai/kandidatas/interesas
-title: "Interesų deklaracija"
+title: Interesų deklaracija
 type: model
 version:
   number: 1
@@ -8,16 +8,16 @@ properties:
   asmuo:
     type: generic
     enum:
-      - politika/rinkimai/kandidatas
-      - politika/rinkimai/kandidatas/sutuoktinis
+    - politika/rinkimai/kandidatas
+    - politika/rinkimai/kandidatas/sutuoktinis
   salis:
     type: ref
-    object: geografija/salis
-  rysys: {type: string, title: "Ryšys su juridiniu asmeniu"}
+    model: geografija/salis
+  rysys: {type: string, title: Ryšys su juridiniu asmeniu}
   nuo: {type: date}
   iki: {type: date}
   juridinis_asmuo:
     type: ref
-    object: teise/juridinis_asmuo
+    model: teise/juridinis_asmuo
     description: |
       Juridinis asmuo su kuriuo kandidatas turi ryšį.

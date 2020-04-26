@@ -269,7 +269,7 @@ class Loader:
                 for pname, prop in obj.get('properties', {}).items():
                     ref_by = (oname, pname)
                     if prop['type'] == 'ref':
-                        self.validate_model_ref(prop.get('object'), None, ref_by)
+                        self.validate_model_ref(prop.get('model'), None, ref_by)
                     if prop['type'] == 'backref':
                         secondary = prop.get('secondary')
                         if secondary and isinstance(secondary, str):

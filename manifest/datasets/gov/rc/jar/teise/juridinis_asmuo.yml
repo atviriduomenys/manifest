@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/rc/jar/teise/juridinis_asmuo
+external:
+  dataset: datasets/gov/rc/jar
+  resource: jar
+  name: ''
+properties:
+  pavadinimas:
+    type: string
+  kodas:
+    type: string
+  veiklos_pobudis:
+    type: string
+  salis:
+    type: string

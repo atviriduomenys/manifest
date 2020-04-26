@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_skundu_nenagrinejimo_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SKUNDU_NENAGRINEJIMO_TIPAI
+properties:
+  _id:
+    type: pk
+    external: NENGR_ID
+  nengr_id:
+    type: integer
+    external: NENGR_ID
+  nengr_kodas:
+    type: integer
+    external: NENGR_KODAS
+  nengr_pav:
+    type: string
+    external: NENGR_PAV

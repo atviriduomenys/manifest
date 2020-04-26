@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_papildomi_pirkimo_objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_PAPILDOMI_PIRKIMO_OBJEKTAI
+properties:
+  _id:
+    type: pk
+    external: T_PAP_OBJ_ID
+  t_pap_obj_id:
+    type: number
+    external: T_PAP_OBJ_ID
+  t_pap_obj_kodas:
+    type: string
+    external: T_PAP_OBJ_KODAS
+  t_pap_obj_pav:
+    type: string
+    external: T_PAP_OBJ_PAV
+  t_pap_obj_pav2:
+    type: string
+    external: T_PAP_OBJ_PAV2

@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_skelbimai_ted
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SKELBIMAI_TED
+properties:
+  _id:
+    type: pk
+    external: TED_ID
+  ted_id:
+    type: integer
+    external: TED_ID
+  ted_failo_pav:
+    type: string
+    external: TED_FAILO_PAV
+  ted_formavimo_data:
+    type: datetime
+    external: TED_FORMAVIMO_DATA
+  ted_sbj_id:
+    type: integer
+    external: TED_SBJ_ID
+  ted_perduotas:
+    type: integer
+    external: TED_PERDUOTAS

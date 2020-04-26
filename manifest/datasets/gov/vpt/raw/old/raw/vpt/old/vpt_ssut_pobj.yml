@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_ssut_pobj
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SSUT_POBJ
+properties:
+  _id:
+    type: pk
+  pob_ssut_dok_id:
+    type: integer
+    external: POB_SSUT_DOK_ID
+  pob_ssut_eil_nr:
+    type: integer
+    external: POB_SSUT_EIL_NR
+  pob_eil_nr:
+    type: integer
+    external: POB_EIL_NR
+  pob_pav:
+    type: string
+    external: POB_PAV

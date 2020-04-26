@@ -1,12 +1,12 @@
-name: "rinkimai/tapino_balas"
-title: "Tapino Balas"
-url:  "https://nbviewer.jupyter.org/gist/sirex/e63f65fed33c81a45f6f9dc908afc560/tapino_b%C5%ABdas.ipynb"
-type: "project"
+name: rinkimai/tapino_balas
+title: Tapino Balas
+url: https://nbviewer.jupyter.org/gist/sirex/e63f65fed33c81a45f6f9dc908afc560/tapino_b%C5%ABdas.ipynb
+type: project
 version: 1
-date: "2016-10-06"
+date: '2016-10-06'
 impact:
   # Just guessed numbers of impact.
-  - {year: 2016, users: 1000, revenue: 0, employees: 0}
+- {year: 2016, users: 1000, revenue: 0, employees: 0}
 objects:
   politika/rinkimai/kandidatas:
     properties:

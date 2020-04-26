@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/gd_spec_zymos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: GD_SPEC_ZYMOS
+properties:
+  _id:
+    type: pk
+  gdsz_dok_id:
+    type: integer
+    external: GDSZ_DOK_ID
+  gdsz_id:
+    type: integer
+    external: GDSZ_ID
+  gdsz_eiles_nr:
+    type: integer
+    external: GDSZ_EILES_NR
+  gdsz_pastabos:
+    type: string
+    external: GDSZ_PASTABOS

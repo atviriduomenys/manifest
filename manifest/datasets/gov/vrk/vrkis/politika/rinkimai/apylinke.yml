@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vrk/vrkis/politika/rinkimai/apylinke
+external:
+  dataset: datasets/gov/vrk/vrkis
+  resource: rpl
+  name: data
+level: 2
+properties:
+  numeris:
+    type: string
+    external: nr
+  pavadinimas:
+    type: string
+    external: pav
+  adresas:
+    type: string
+    external: adr
+  telefonas:
+    type: string
+    external: tel
+    level: 1
+  el_pastas:
+    type: string
+    external: ep
+    level: 1

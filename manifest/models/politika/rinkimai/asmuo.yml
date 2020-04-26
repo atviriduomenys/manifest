@@ -1,5 +1,5 @@
 name: politika/rinkimai/asmuo
-title: "Asmuo dalyvaujantis rinkimuose"
+title: Asmuo dalyvaujantis rinkimuose
 type: model
 version:
   number: 1
@@ -9,5 +9,5 @@ properties:
   pavarde: {type: string}
   kandidatavo:
     type: backref
-    object: politika/rinkimai/kandidatas
+    model: politika/rinkimai/kandidatas
     property: asmuo

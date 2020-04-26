@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/kl_programu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: KL_PROGRAMU_TIPAI
+properties:
+  _id:
+    type: pk
+  prg_id:
+    type: integer
+    external: PRG_ID
+  prg_kodas:
+    type: integer
+    external: PRG_KODAS
+  prg_pav:
+    type: string
+    external: PRG_PAV

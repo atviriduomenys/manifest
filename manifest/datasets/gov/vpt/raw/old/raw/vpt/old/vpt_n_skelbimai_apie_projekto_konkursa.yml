@@ -1,0 +1,286 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_skelbimai_apie_projekto_konkursa
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SKELBIMAI_APIE_PROJEKTO_KONKURSA
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_ted_data:
+    type: datetime
+    external: DOK_TED_DATA
+  dok_ted_kodas:
+    type: integer
+    external: DOK_TED_KODAS
+  dok_pirk_obj_rusis:
+    type: integer
+    external: DOK_PIRK_OBJ_RUSIS
+  dok_pot_id:
+    type: integer
+    external: DOK_POT_ID
+  dok_kitas_adresas_1:
+    type: integer
+    external: DOK_KITAS_ADRESAS_1
+  dok_kitas_adresas_2:
+    type: integer
+    external: DOK_KITAS_ADRESAS_2
+  dok_kitas_adresas_3:
+    type: integer
+    external: DOK_KITAS_ADRESAS_3
+  dok_pirkimo_kodas:
+    type: integer
+    external: DOK_PIRKIMO_KODAS
+  dok_pavadinimas:
+    type: string
+    external: DOK_PAVADINIMAS
+  dok_apibudinimas:
+    type: string
+    external: DOK_APIBUDINIMAS
+  dok_vieta:
+    type: string
+    external: DOK_VIETA
+  dok_nuts_kodas:
+    type: string
+    external: DOK_NUTS_KODAS
+  dok_kitos_nomenklaturos:
+    type: string
+    external: DOK_KITOS_NOMENKLATUROS
+  dok_paslgt_id:
+    type: integer
+    external: DOK_PASLGT_ID
+  dok_atrankos_kriterijai:
+    type: string
+    external: DOK_ATRANKOS_KRITERIJAI
+  dok_profesija:
+    type: integer
+    external: DOK_PROFESIJA
+  dok_profesijos_pastabos:
+    type: string
+    external: DOK_PROFESIJOS_PASTABOS
+  dok_pirkb_id:
+    type: integer
+    external: DOK_PIRKB_ID
+  dok_dalyviu_skaicius:
+    type: integer
+    external: DOK_DALYVIU_SKAICIUS
+  dok_dalyviu_skaicius_min:
+    type: integer
+    external: DOK_DALYVIU_SKAICIUS_MIN
+  dok_dalyviu_skaicius_max:
+    type: integer
+    external: DOK_DALYVIU_SKAICIUS_MAX
+  dok_atrinkta:
+    type: string
+    external: DOK_ATRINKTA
+  dok_vertinimo_kriterijai:
+    type: string
+    external: DOK_VERTINIMO_KRITERIJAI
+  dok_papildomu_dokumentu_data:
+    type: datetime
+    external: DOK_PAPILDOMU_DOKUMENTU_DATA
+  dok_mokestis:
+    type: string
+    external: DOK_MOKESTIS
+  dok_valiuta:
+    type: string
+    external: DOK_VALIUTA
+  dok_mokejimo_budas:
+    type: string
+    external: DOK_MOKEJIMO_BUDAS
+  dok_termino_data:
+    type: datetime
+    external: DOK_TERMINO_DATA
+  dok_terminas:
+    type: integer
+    external: DOK_TERMINAS
+  dok_termino_val:
+    type: string
+    external: DOK_TERMINO_VAL
+  dok_termino_min:
+    type: string
+    external: DOK_TERMINO_MIN
+  dok_kvietimo_issiuntimo_data:
+    type: datetime
+    external: DOK_KVIETIMO_ISSIUNTIMO_DATA
+  dok_kalbost_id:
+    type: integer
+    external: DOK_KALBOST_ID
+  dok_kitos_kalbos:
+    type: string
+    external: DOK_KITOS_KALBOS
+  dok_prizu_skaicius:
+    type: string
+    external: DOK_PRIZU_SKAICIUS
+  dok_info_apie_premijas:
+    type: string
+    external: DOK_INFO_APIE_PREMIJAS
+  dok_paslaugu_sutartis:
+    type: integer
+    external: DOK_PASLAUGU_SUTARTIS
+  dok_ziuri_sprendimas:
+    type: integer
+    external: DOK_ZIURI_SPRENDIMAS
+  dok_ziuri_pavardes:
+    type: string
+    external: DOK_ZIURI_PAVARDES
+  dok_neprivalomas:
+    type: integer
+    external: DOK_NEPRIVALOMAS
+  dok_susijes_su_es:
+    type: integer
+    external: DOK_SUSIJES_SU_ES
+  dok_susijes_pastabos:
+    type: string
+    external: DOK_SUSIJES_PASTABOS
+  dok_kita_info:
+    type: string
+    external: DOK_KITA_INFO
+  dok_issiuntimo_data:
+    type: datetime
+    external: DOK_ISSIUNTIMO_DATA
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_iseksportuota:
+    type: integer
+    external: DOK_ISEKSPORTUOTA
+  dok_iseksportuota_tech:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_TECH
+  dok_ivedimo_data:
+    type: datetime
+    external: DOK_IVEDIMO_DATA
+  dok_mokestis_kasoje:
+    type: integer
+    external: DOK_MOKESTIS_KASOJE
+  dok_leidinio_data:
+    type: datetime
+    external: DOK_LEIDINIO_DATA
+  dok_leidinio_nr:
+    type: integer
+    external: DOK_LEIDINIO_NR
+  dok_iseksportuota_rastams:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_RASTAMS
+  dok_po_tinka_issiuntimui:
+    type: integer
+    external: DOK_PO_TINKA_ISSIUNTIMUI
+  dok_po_issiuntimo_data:
+    type: datetime
+    external: DOK_PO_ISSIUNTIMO_DATA
+  dok_vpt_gavo:
+    type: integer
+    external: DOK_VPT_GAVO
+  dok_vpt_gavo_data:
+    type: datetime
+    external: DOK_VPT_GAVO_DATA
+  dok_centrine_leido_skelbti:
+    type: integer
+    external: DOK_CENTRINE_LEIDO_SKELBTI
+  dok_centrine_leido_skelbti_data:
+    type: datetime
+    external: DOK_CENTRINE_LEIDO_SKELBTI_DATA
+  dok_patvirtintas_finansavimas:
+    type: integer
+    external: DOK_PATVIRTINTAS_FINANSAVIMAS
+  dok_patvirtintas_finansavimas_data:
+    type: datetime
+    external: DOK_PATVIRTINTAS_FINANSAVIMAS_DATA
+  dok_patvirtinti_dokumentai:
+    type: integer
+    external: DOK_PATVIRTINTI_DOKUMENTAI
+  dok_patvirtinti_dokumentai_data:
+    type: datetime
+    external: DOK_PATVIRTINTI_DOKUMENTAI_DATA
+  dok_valt_id:
+    type: integer
+    external: DOK_VALT_ID
+  dok_zodziu_skaicius:
+    type: integer
+    external: DOK_ZODZIU_SKAICIUS
+  dok_tikr_sbj_id:
+    type: integer
+    external: DOK_TIKR_SBJ_ID
+  dok_iseksportuota_rastams_data:
+    type: datetime
+    external: DOK_ISEKSPORTUOTA_RASTAMS_DATA
+  dok_n3_papildomu_dokumentu_val:
+    type: string
+    external: DOK_N3_PAPILDOMU_DOKUMENTU_VAL
+  dok_n3_papildomu_dokumentu_min:
+    type: string
+    external: DOK_N3_PAPILDOMU_DOKUMENTU_MIN
+  dok_n3_mokestis_yn:
+    type: integer
+    external: DOK_N3_MOKESTIS_YN
+  dok_n3_prizas_yn:
+    type: integer
+    external: DOK_N3_PRIZAS_YN
+  dok_n3_skundu_teikimas:
+    type: string
+    external: DOK_N3_SKUNDU_TEIKIMAS
+  dok_n3_pot_kitas:
+    type: string
+    external: DOK_N3_POT_KITAS
+  dok_n3_perka_kitu_vardu:
+    type: integer
+    external: DOK_N3_PERKA_KITU_VARDU
+  dok_n3_pasirases_pareigos:
+    type: string
+    external: DOK_N3_PASIRASES_PAREIGOS
+  dok_n3_pasirases_vardas:
+    type: string
+    external: DOK_N3_PASIRASES_VARDAS
+  dok_n3_pasirases_pavarde:
+    type: string
+    external: DOK_N3_PASIRASES_PAVARDE
+  dok_n5_es_kalbos:
+    type: integer
+    external: DOK_N5_ES_KALBOS
+  dok_finans_is_es_strukt_fondu:
+    type: integer
+    external: DOK_FINANS_IS_ES_STRUKT_FONDU
+  dok_finans_is_kt_fondu:
+    type: integer
+    external: DOK_FINANS_IS_KT_FONDU
+  dok_finans_galimas_is_es_strukt_fondu:
+    type: integer
+    external: DOK_FINANS_GALIMAS_IS_ES_STRUKT_FONDU
+  dok_finans_projekto_paraiska_nepateikta:
+    type: integer
+    external: DOK_FINANS_PROJEKTO_PARAISKA_NEPATEIKTA
+  dok_finans_es_projekto_kodas:
+    type: string
+    external: DOK_FINANS_ES_PROJEKTO_KODAS
+  dok_finans_kt_projekto_kodas:
+    type: string
+    external: DOK_FINANS_KT_PROJEKTO_KODAS
+  dok_finans_kt_projekto_pav:
+    type: string
+    external: DOK_FINANS_KT_PROJEKTO_PAV
+  dok_finans_kt_projekto_pastabos:
+    type: string
+    external: DOK_FINANS_KT_PROJEKTO_PASTABOS
+  dok_finans_es_paraiska_nepateikta_pastabos:
+    type: string
+    external: DOK_FINANS_ES_PARAISKA_NEPATEIKTA_PASTABOS

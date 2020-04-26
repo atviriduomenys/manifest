@@ -1,0 +1,51 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_paskirtys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_PASKIRTYS
+properties:
+  _id:
+    type: pk
+    external:
+    - PRJP_EILES_NR
+    - PRJP_PRJ_ID
+  prjp_prj_id:
+    type: integer
+    external: PRJP_PRJ_ID
+  prjp_eiles_nr:
+    type: integer
+    external: PRJP_EILES_NR
+  prjp_aprasymas:
+    type: string
+    external: PRJP_APRASYMAS
+  prjp_bsn_proc:
+    type: integer
+    external: PRJP_BSN_PROC
+  prjp_bsn_pav:
+    type: string
+    external: PRJP_BSN_PAV
+  prjp_bsn_data:
+    type: datetime
+    external: PRJP_BSN_DATA
+  prjp_bsn_priemone:
+    type: string
+    external: PRJP_BSN_PRIEMONE
+  prjp_bsn_pastabos:
+    type: string
+    external: PRJP_BSN_PASTABOS
+  prjp_aprasymas_en:
+    type: string
+    external: PRJP_APRASYMAS_EN
+  prjp_bsn_pav_en:
+    type: string
+    external: PRJP_BSN_PAV_EN
+  prjp_bsn_priemone_en:
+    type: string
+    external: PRJP_BSN_PRIEMONE_EN
+  prjp_bsn_pastabos_en:
+    type: string
+    external: PRJP_BSN_PASTABOS_EN
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

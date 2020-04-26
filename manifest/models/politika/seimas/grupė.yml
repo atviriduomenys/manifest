@@ -1,5 +1,5 @@
 name: politika/seimas/grupė
-title: "Seimo grupė"
+title: Seimo grupė
 type: model
 version:
   number: 1
@@ -9,12 +9,12 @@ properties:
   rūšis:
     type: string
     enum:
-      - parlamentinė grupė
-      - komitetas
-      - pakomitetis
-      - komisija
-      - frakcija
-      - seimas
+    - parlamentinė grupė
+    - komitetas
+    - pakomitetis
+    - komisija
+    - frakcija
+    - seimas
   sukurta: {type: date}
   panaikinta: {type: date}
-  priklauso: {type: ref, object: politika/seimas/grupė}
+  priklauso: {type: ref, model: politika/seimas/grupė}

@@ -1,0 +1,297 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vpp_ataskaitos_20100422
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: vpt_n_vpp_ataskaitos_20100422
+properties:
+  _id:
+    type: pk
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_id_3a:
+    type: integer
+    external: DOK_ID_3A
+  dok_eil_nr:
+    type: integer
+    external: DOK_EIL_NR
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_sys_last_update_data:
+    type: datetime
+    external: DOK_SYS_LAST_UPDATE_DATA
+  dok_po_issiuntimo_data:
+    type: datetime
+    external: DOK_PO_ISSIUNTIMO_DATA
+  dok_patvirtinimo_data:
+    type: datetime
+    external: DOK_PATVIRTINIMO_DATA
+  dok_duomenu_ivedimo_data:
+    type: datetime
+    external: DOK_DUOMENU_IVEDIMO_DATA
+  dok_lydrascio_data:
+    type: datetime
+    external: DOK_LYDRASCIO_DATA
+  dok_lydrascio_nr:
+    type: string
+    external: DOK_LYDRASCIO_NR
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_komp_sbj_id:
+    type: integer
+    external: DOK_KOMP_SBJ_ID
+  dok_patvirt_sbj_id:
+    type: integer
+    external: DOK_PATVIRT_SBJ_ID
+  dok_atsa_sbj_id:
+    type: integer
+    external: DOK_ATSA_SBJ_ID
+  dok_atsa_pareigos:
+    type: string
+    external: DOK_ATSA_PAREIGOS
+  dok_atsa_telefonas:
+    type: string
+    external: DOK_ATSA_TELEFONAS
+  dok_atsa_email:
+    type: string
+    external: DOK_ATSA_EMAIL
+  dok_pot_id:
+    type: integer
+    external: DOK_POT_ID
+  dok_igal_pot_id:
+    type: integer
+    external: DOK_IGAL_POT_ID
+  dok_pobjd_kiekis:
+    type: integer
+    external: DOK_POBJD_KIEKIS
+  dok_pirkimo_kodas:
+    type: integer
+    external: DOK_PIRKIMO_KODAS
+  dok_igaliotoji_po:
+    type: integer
+    external: DOK_IGALIOTOJI_PO
+  dok_preliminarioji:
+    type: integer
+    external: DOK_PRELIMINARIOJI
+  dok_pobj_rusis:
+    type: integer
+    external: DOK_POBJ_RUSIS
+  dok_prekiut_id:
+    type: integer
+    external: DOK_PREKIUT_ID
+  dok_darbut_id:
+    type: integer
+    external: DOK_DARBUT_ID
+  dok_paslaugut_id:
+    type: integer
+    external: DOK_PASLAUGUT_ID
+  dok_pobj_pavadinimas:
+    type: string
+    external: DOK_POBJ_PAVADINIMAS
+  dok_pirkb_id:
+    type: integer
+    external: DOK_PIRKB_ID
+  dok_ankstesnis_pirkimo_kodas:
+    type: integer
+    external: DOK_ANKSTESNIS_PIRKIMO_KODAS
+  dok_tp_data:
+    type: datetime
+    external: DOK_TP_DATA
+  dok_tp_laikas:
+    type: string
+    external: DOK_TP_LAIKAS
+  dok_en_data:
+    type: datetime
+    external: DOK_EN_DATA
+  dok_en_laikas:
+    type: string
+    external: DOK_EN_LAIKAS
+  dok_mk_data:
+    type: datetime
+    external: DOK_MK_DATA
+  dok_mk_laikas:
+    type: string
+    external: DOK_MK_LAIKAS
+  dok_isankst_es_issiuntimo_data:
+    type: datetime
+    external: DOK_ISANKST_ES_ISSIUNTIMO_DATA
+  dok_isankst_es_leidinio_data:
+    type: datetime
+    external: DOK_ISANKST_ES_LEIDINIO_DATA
+  dok_isankst_issiuntimo_data:
+    type: datetime
+    external: DOK_ISANKST_ISSIUNTIMO_DATA
+  dok_isankst_leidinio_data:
+    type: datetime
+    external: DOK_ISANKST_LEIDINIO_DATA
+  dok_isankst_leidinio_nr:
+    type: integer
+    external: DOK_ISANKST_LEIDINIO_NR
+  dok_sap_es_issiuntimo_data:
+    type: datetime
+    external: DOK_SAP_ES_ISSIUNTIMO_DATA
+  dok_sap_es_leidinio_data:
+    type: datetime
+    external: DOK_SAP_ES_LEIDINIO_DATA
+  dok_sap_issiuntimo_data:
+    type: datetime
+    external: DOK_SAP_ISSIUNTIMO_DATA
+  dok_sap_leidinio_data:
+    type: datetime
+    external: DOK_SAP_LEIDINIO_DATA
+  dok_sap_leidinio_nr:
+    type: integer
+    external: DOK_SAP_LEIDINIO_NR
+  dok_kvalifikacija_tikrinta:
+    type: integer
+    external: DOK_KVALIFIKACIJA_TIKRINTA
+  dok_vertinimo_kriterijus_en:
+    type: integer
+    external: DOK_VERTINIMO_KRITERIJUS_EN
+  dok_vertinimo_kriterijus_mk:
+    type: integer
+    external: DOK_VERTINIMO_KRITERIJUS_MK
+  dok_vertinimo_kriterijus_kiti:
+    type: integer
+    external: DOK_VERTINIMO_KRITERIJUS_KITI
+  dok_pobjd_numeriai_en:
+    type: string
+    external: DOK_POBJD_NUMERIAI_EN
+  dok_pobjd_numeriai_mk:
+    type: string
+    external: DOK_POBJD_NUMERIAI_MK
+  dok_neapskaitoma:
+    type: integer
+    external: DOK_NEAPSKAITOMA
+  dok_neapskaitomumo_data:
+    type: datetime
+    external: DOK_NEAPSKAITOMUMO_DATA
+  dok_neapskaitomumo_priezastys:
+    type: string
+    external: DOK_NEAPSKAITOMUMO_PRIEZASTYS
+  dok_pirkimo_busena:
+    type: integer
+    external: DOK_PIRKIMO_BUSENA
+  dok_pirkimo_neivykimo_fiks_data:
+    type: datetime
+    external: DOK_PIRKIMO_NEIVYKIMO_FIKS_DATA
+  dok_sut_bendra_kaina:
+    type: number
+    external: DOK_SUT_BENDRA_KAINA
+  dok_sut_kaina_tikrinta:
+    type: integer
+    external: DOK_SUT_KAINA_TIKRINTA
+  dok_pasirase_pav:
+    type: string
+    external: DOK_PASIRASE_PAV
+  dok_pasirase_pareigos:
+    type: string
+    external: DOK_PASIRASE_PAREIGOS
+  dok_tech_ix_3:
+    type: integer
+    external: DOK_TECH_IX_3
+  dok_tech_ix_4:
+    type: integer
+    external: DOK_TECH_IX_4
+  dok_isankst_es_leidinio_nr_1:
+    type: integer
+    external: DOK_ISANKST_ES_LEIDINIO_NR_1
+  dok_isankst_es_leidinio_nr_2:
+    type: integer
+    external: DOK_ISANKST_ES_LEIDINIO_NR_2
+  dok_isankst_es_leidinio_nr_3:
+    type: integer
+    external: DOK_ISANKST_ES_LEIDINIO_NR_3
+  dok_sap_es_leidinio_nr_1:
+    type: integer
+    external: DOK_SAP_ES_LEIDINIO_NR_1
+  dok_sap_es_leidinio_nr_2:
+    type: integer
+    external: DOK_SAP_ES_LEIDINIO_NR_2
+  dok_sap_es_leidinio_nr_3:
+    type: integer
+    external: DOK_SAP_ES_LEIDINIO_NR_3
+  dok_pasirase_vardas:
+    type: string
+    external: DOK_PASIRASE_VARDAS
+  dok_pasirase_pavarde:
+    type: string
+    external: DOK_PASIRASE_PAVARDE
+  dok_print_data_patvirt:
+    type: integer
+    external: DOK_PRINT_DATA_PATVIRT
+  dok_tikr_data:
+    type: datetime
+    external: DOK_TIKR_DATA
+  dok_tikr_sbj_id:
+    type: integer
+    external: DOK_TIKR_SBJ_ID
+  dok_indeksas:
+    type: integer
+    external: DOK_INDEKSAS
+  dok_pasiulymu_data:
+    type: datetime
+    external: DOK_PASIULYMU_DATA
+  dok_krt_pranesimo_data:
+    type: datetime
+    external: DOK_KRT_PRANESIMO_DATA
+  dok_n3_dps:
+    type: integer
+    external: DOK_N3_DPS
+  dok_n3_supap_issiuntimo_data:
+    type: datetime
+    external: DOK_N3_SUPAP_ISSIUNTIMO_DATA
+  dok_n3_supap_leidinio_nr:
+    type: integer
+    external: DOK_N3_SUPAP_LEIDINIO_NR
+  dok_n3_supap_leidinio_data:
+    type: datetime
+    external: DOK_N3_SUPAP_LEIDINIO_DATA
+  dok_n3_nutraukimas:
+    type: integer
+    external: DOK_N3_NUTRAUKIMAS
+  dok_n3_pretenzijos:
+    type: integer
+    external: DOK_N3_PRETENZIJOS
+  dok_n3_ieskinys:
+    type: integer
+    external: DOK_N3_IESKINYS
+  dok_n3_kita_informacija:
+    type: string
+    external: DOK_N3_KITA_INFORMACIJA
+  dok_n4_derybos_leidzia_poz:
+    type: integer
+    external: DOK_N4_DERYBOS_LEIDZIA_POZ
+  dok_n4_derybos_nuostata_text:
+    type: string
+    external: DOK_N4_DERYBOS_NUOSTATA_TEXT
+  dok_n4_supap_leidinio_nr:
+    type: integer
+    external: DOK_N4_SUPAP_LEIDINIO_NR
+  dok_n4_supap_leidinio_data:
+    type: datetime
+    external: DOK_N4_SUPAP_LEIDINIO_DATA
+  dok_n4_papildoma_informacija:
+    type: string
+    external: DOK_N4_PAPILDOMA_INFORMACIJA
+  dok_n4_pirkb_kitas_text:
+    type: string
+    external: DOK_N4_PIRKB_KITAS_TEXT
+  dok_n3_dps_dok_id:
+    type: integer
+    external: DOK_N3_DPS_DOK_ID

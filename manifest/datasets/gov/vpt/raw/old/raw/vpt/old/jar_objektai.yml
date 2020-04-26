@@ -1,0 +1,79 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_OBJEKTAI
+properties:
+  _id:
+    type: pk
+    external: JOBJ_ID
+  jobj_id:
+    type: integer
+    external: JOBJ_ID
+  jobj_kodas:
+    type: integer
+    external: JOBJ_KODAS
+  jobj_rejestro_kodas:
+    type: integer
+    external: JOBJ_REJESTRO_KODAS
+  jobj_pav:
+    type: string
+    external: JOBJ_PAV
+  jobj_form_kodas:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_formos
+    external: JOBJ_FORM_KODAS
+  jobj_stat_statusas:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_statusai
+    external: JOBJ_STAT_STATUSAS
+  jobj_dbuk_kodas:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_duomenu_bukles
+    external: JOBJ_DBUK_KODAS
+  jobj_priklauso_id:
+    type: integer
+    external: JOBJ_PRIKLAUSO_ID
+  jobj_pagrindinis:
+    type: integer
+    external: JOBJ_PAGRINDINIS
+  jobj_jad_tekstas:
+    type: string
+    external: JOBJ_JAD_TEKSTAS
+  jobj_reg_data:
+    type: datetime
+    external: JOBJ_REG_DATA
+  jobj_steigimo_data:
+    type: datetime
+    external: JOBJ_STEIGIMO_DATA
+  jobj_isreg_data:
+    type: datetime
+    external: JOBJ_ISREG_DATA
+  jobj_anul:
+    type: integer
+    external: JOBJ_ANUL
+  jobj_ivede:
+    type: string
+    external: JOBJ_IVEDE
+  jobj_ivedimo_data:
+    type: datetime
+    external: JOBJ_IVEDIMO_DATA
+  jobj_koregavo:
+    type: string
+    external: JOBJ_KOREGAVO
+  jobj_koregavimo_data:
+    type: datetime
+    external: JOBJ_KOREGAVIMO_DATA
+  jobj_txt_telefonas:
+    type: string
+    external: JOBJ_TXT_TELEFONAS
+  jobj_txt_faksas:
+    type: string
+    external: JOBJ_TXT_FAKSAS
+  jobj_txt_email:
+    type: string
+    external: JOBJ_TXT_EMAIL
+  jobj_txt_url:
+    type: string
+    external: JOBJ_TXT_URL

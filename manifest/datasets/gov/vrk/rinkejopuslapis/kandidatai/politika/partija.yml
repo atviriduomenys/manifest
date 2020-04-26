@@ -1,0 +1,12 @@
+type: model
+name: datasets/gov/vrk/rinkejopuslapis/kandidatai/politika/partija
+external:
+  dataset: datasets/gov/vrk/rinkejopuslapis/kandidatai
+  resource: kandidatai
+  name:
+  pk: pavadinimas
+properties:
+  pavadinimas:
+    type: string
+    external: Kandidatą iškėlusi organizacija
+

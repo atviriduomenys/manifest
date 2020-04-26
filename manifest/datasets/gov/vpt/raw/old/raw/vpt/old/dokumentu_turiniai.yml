@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/dokumentu_turiniai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: DOKUMENTU_TURINIAI
+properties:
+  _id:
+    type: pk
+    external: DTUR_ID
+  dtur_id:
+    type: integer
+    external: DTUR_ID
+  dtur_kodas:
+    type: integer
+    external: DTUR_KODAS
+  dtur_pav:
+    type: string
+    external: DTUR_PAV

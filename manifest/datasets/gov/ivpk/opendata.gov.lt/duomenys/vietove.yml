@@ -1,0 +1,14 @@
+type: model
+name: datasets/gov/ivpk/opendata.gov.lt/duomenys/vietove
+external:
+  dataset: datasets/gov/ivpk/opendata.gov.lt
+  resource: irs
+  name: ''
+level: 0
+properties:
+  _id:
+    type: pk
+  pavadinimas:
+    type: string
+  koordinatės:
+    type: string

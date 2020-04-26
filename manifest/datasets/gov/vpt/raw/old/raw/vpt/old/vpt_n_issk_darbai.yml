@@ -1,0 +1,90 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_issk_darbai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_ISSK_DARBAI
+properties:
+  _id:
+    type: pk
+    external:
+    - DARBO_EIL_NR
+    - DARBO_OBJ_ID
+  darbo_obj_id:
+    type: integer
+    external: DARBO_OBJ_ID
+  darbo_eil_nr:
+    type: integer
+    external: DARBO_EIL_NR
+  darbo_pav:
+    type: string
+    external: DARBO_PAV
+  darbo_adresas:
+    type: string
+    external: DARBO_ADRESAS
+  darbo_nuts_kodas:
+    type: string
+    external: DARBO_NUTS_KODAS
+  darbo_nace:
+    type: string
+    external: DARBO_NACE
+  darbo_apimtis:
+    type: string
+    external: DARBO_APIMTIS
+  darbo_kaina_nuo:
+    type: string
+    external: DARBO_KAINA_NUO
+  darbo_kaina_iki:
+    type: string
+    external: DARBO_KAINA_IKI
+  darbo_valiuta:
+    type: string
+    external: DARBO_VALIUTA
+  darbo_data_nuo:
+    type: datetime
+    external: DARBO_DATA_NUO
+  darbo_data_iki:
+    type: datetime
+    external: DARBO_DATA_IKI
+  darbo_uzbaigimo_data:
+    type: datetime
+    external: DARBO_UZBAIGIMO_DATA
+  darbo_salygos:
+    type: string
+    external: DARBO_SALYGOS
+  darbo_pirkb_id:
+    type: integer
+    external: DARBO_PIRKB_ID
+  darbo_kita_info:
+    type: string
+    external: DARBO_KITA_INFO
+  darbo_daliu_skaicius:
+    type: integer
+    external: DARBO_DALIU_SKAICIUS
+  darbo_valt_id:
+    type: integer
+    external: DARBO_VALT_ID
+  darbo_n3_nutst_id:
+    type: integer
+    external: DARBO_N3_NUTST_ID
+  darbo_n3_prelim_yn:
+    type: integer
+    external: DARBO_N3_PRELIM_YN
+  darbo_n3_dalijimas_yn:
+    type: integer
+    external: DARBO_N3_DALIJIMAS_YN
+  darbo_n3_kaina:
+    type: string
+    external: DARBO_N3_KAINA
+  darbo_n3_kaina_valt_id:
+    type: integer
+    external: DARBO_N3_KAINA_VALT_ID
+  darbo_n3_trukme_men:
+    type: integer
+    external: DARBO_N3_TRUKME_MEN
+  darbo_n3_trukme_dien:
+    type: integer
+    external: DARBO_N3_TRUKME_DIEN
+  darbo_n3_gpa:
+    type: integer
+    external: DARBO_N3_GPA

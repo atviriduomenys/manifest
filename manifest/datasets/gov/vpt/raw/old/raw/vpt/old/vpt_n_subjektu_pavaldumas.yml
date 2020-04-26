@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_subjektu_pavaldumas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SUBJEKTU_PAVALDUMAS
+properties:
+  _id:
+    type: pk
+    external: PAV_ID
+  pav_id:
+    type: integer
+    external: PAV_ID
+  pav_sbj_id1:
+    type: integer
+    external: PAV_SBJ_ID1
+  pav_sbj_id2:
+    type: integer
+    external: PAV_SBJ_ID2

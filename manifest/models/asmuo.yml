@@ -1,6 +1,5 @@
----
 name: asmuo
-title: "Asmuo"
+title: Asmuo
 description: >
   Asmuo nėra atvirų duomenų objektas. Visi modeliai susieti su asmeniu turi
   būti nuasmeninti arba duomenys gali būti teikiami tik su to asmens sutikimu.
@@ -8,17 +7,16 @@ type: model
 version:
   number: 1
   date: 2019-03-13
-extends: asmuo
 properties:
   vardas:
     type: string
-    title: "Vardas"
+    title: Vardas
   pavarde:
     type: string
-    title: "Pavardė"
+    title: Pavardė
   gime:
     type: date
-    title: "Gimimo data"
+    title: Gimimo data
   mire:
     type: date
-    title: "Mirties data"
+    title: Mirties data

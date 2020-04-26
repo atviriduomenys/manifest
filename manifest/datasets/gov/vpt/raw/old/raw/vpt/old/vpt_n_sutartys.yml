@@ -1,0 +1,88 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_sutartys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SUTARTYS
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_atask_id:
+    type: integer
+    external: DOK_ATASK_ID
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_ivedimo_data:
+    type: datetime
+    external: DOK_IVEDIMO_DATA
+  dok_po_tinka_issiuntimui:
+    type: integer
+    external: DOK_PO_TINKA_ISSIUNTIMUI
+  dok_issiuntimo_data:
+    type: datetime
+    external: DOK_ISSIUNTIMO_DATA
+  dok_sudarymo_data:
+    type: datetime
+    external: DOK_SUDARYMO_DATA
+  dok_sut_numeris:
+    type: string
+    external: DOK_SUT_NUMERIS
+  dok_sut_obj_rusis:
+    type: integer
+    external: DOK_SUT_OBJ_RUSIS
+  dok_sut_obj_pav:
+    type: string
+    external: DOK_SUT_OBJ_PAV
+  dok_sut_verte:
+    type: string
+    external: DOK_SUT_VERTE
+  dok_sut_galiojimo_data:
+    type: datetime
+    external: DOK_SUT_GALIOJIMO_DATA
+  dok_indeksas:
+    type: integer
+    external: DOK_INDEKSAS
+  dok_parent_sut_indeksas:
+    type: integer
+    external: DOK_PARENT_SUT_INDEKSAS
+  dok_sut_eil_nr:
+    type: integer
+    external: DOK_SUT_EIL_NR
+  dok_sap_indeksas:
+    type: integer
+    external: DOK_SAP_INDEKSAS
+  dok_sut_tipas:
+    type: integer
+    external: DOK_SUT_TIPAS
+  pirk_vykdomas_cvp_is:
+    type: integer
+    external: PIRK_VYKDOMAS_CVP_IS
+  dok_pirkimo_numeris:
+    type: string
+    external: DOK_PIRKIMO_NUMERIS
+  dok_pirkimo_budas:
+    type: string
+    external: DOK_PIRKIMO_BUDAS
+  pirk_preliminary:
+    type: integer
+    external: PIRK_PRELIMINARY

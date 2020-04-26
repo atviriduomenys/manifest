@@ -1,0 +1,87 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_skelbimu_nutraukimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SKELBIMU_NUTRAUKIMAI
+properties:
+  _id:
+    type: pk
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_po_sbj_id:
+    type: integer
+    external: DOK_PO_SBJ_ID
+  dok_pobj_id:
+    type: integer
+    external: DOK_POBJ_ID
+  dok_pobj_pavadinimas:
+    type: string
+    external: DOK_POBJ_PAVADINIMAS
+  dok_nutraukimo_pastabos:
+    type: string
+    external: DOK_NUTRAUKIMO_PASTABOS
+  dok_skelbta_data:
+    type: datetime
+    external: DOK_SKELBTA_DATA
+  dok_skelbta_nr:
+    type: integer
+    external: DOK_SKELBTA_NR
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_leidinio_data:
+    type: datetime
+    external: DOK_LEIDINIO_DATA
+  dok_leidinio_nr:
+    type: integer
+    external: DOK_LEIDINIO_NR
+  dok_pirkimo_kodas:
+    type: integer
+    external: DOK_PIRKIMO_KODAS
+  dok_po_sbj_patikslinimas:
+    type: string
+    external: DOK_PO_SBJ_PATIKSLINIMAS
+  dok_iseksportuota:
+    type: integer
+    external: DOK_ISEKSPORTUOTA
+  dok_iseksportuota_tech:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_TECH
+  dok_iseksportuota_rastams:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_RASTAMS
+  dok_issiuntimo_data:
+    type: datetime
+    external: DOK_ISSIUNTIMO_DATA
+  dok_skelbimo_formos_tipas:
+    type: integer
+    external: DOK_SKELBIMO_FORMOS_TIPAS
+  dok_n3_skelbimo_ind:
+    type: integer
+    external: DOK_N3_SKELBIMO_IND
+  dok_n3_skelbimo_forma:
+    type: integer
+    external: DOK_N3_SKELBIMO_FORMA
+  dok_n3_skelbimo_id:
+    type: integer
+    external: DOK_N3_SKELBIMO_ID
+  dok_n3_po_sbj_skodas:
+    type: integer
+    external: DOK_N3_PO_SBJ_SKODAS
+  dok_n3_po_sbj_pav:
+    type: string
+    external: DOK_N3_PO_SBJ_PAV
+  rowguid:
+    type: string
+    external: rowguid

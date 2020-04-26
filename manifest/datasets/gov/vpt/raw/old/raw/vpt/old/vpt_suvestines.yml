@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_suvestines
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SUVESTINES
+properties:
+  _id:
+    type: pk
+    external: SUVEST_ID
+  suvest_id:
+    type: integer
+    external: SUVEST_ID
+  suvest_kodas:
+    type: string
+    external: SUVEST_KODAS
+  suvest_pav:
+    type: string
+    external: SUVEST_PAV
+  suvest_url:
+    type: string
+    external: SUVEST_URL
+  suvest_url_paieska:
+    type: string
+    external: SUVEST_URL_PAIESKA
+  suvest_objt_id:
+    type: integer
+    external: SUVEST_OBJT_ID
+  suvest_tipas:
+    type: integer
+    external: SUVEST_TIPAS
+  suvest_po:
+    type: integer
+    external: SUVEST_PO

@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rvs_vpt_n_vppa_dalyviai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: RVS_VPT_N_VPPA_DALYVIAI
+properties:
+  _id:
+    type: pk
+  id:
+    type: integer
+    external: ID
+  veiksmas:
+    type: string
+    external: VEIKSMAS
+  data:
+    type: datetime
+    external: DATA
+  ivertinta:
+    type: boolean
+    external: IVERTINTA
+  eil_nr:
+    type: integer
+    external: EIL_NR

@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_dokumentu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PATIKIMI_TIEKEJAI_DOKUMENTU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: DTIPO_ID
+  dtipo_id:
+    type: integer
+    external: DTIPO_ID
+  dtipo_kodas:
+    type: integer
+    external: DTIPO_KODAS
+  dtipo_pav:
+    type: string
+    external: DTIPO_PAV
+  dtipo_data_galioja_iki:
+    type: datetime
+    external: DTIPO_DATA_GALIOJA_IKI

@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_tiekejai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_TIEKEJAI
+properties:
+  _id:
+    type: pk
+  vpt_tiek_id:
+    type: integer
+    external: VPT_TIEK_ID
+  vpt_tiek_tid:
+    type: integer
+    external: VPT_TIEK_TID
+  vpt_tiek_kodas:
+    type: string
+    external: VPT_TIEK_KODAS
+  vpt_tiek_pav:
+    type: string
+    external: VPT_TIEK_PAV
+  vpt_data_nuo:
+    type: datetime
+    external: VPT_DATA_NUO
+  vpt_data_iki:
+    type: datetime
+    external: VPT_DATA_IKI
+  vpt_atn_data:
+    type: datetime
+    external: VPT_ATN_DATA

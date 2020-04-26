@@ -1,0 +1,30 @@
+name: datasets/gov/vrk/vrkis
+title: VRKIS aplikacijų programavimo sąsaja (API) išorinėms sistemoms
+type: dataset
+version:
+  number: 1
+  date: '2019-01-24'
+owner: gov/vrk
+level: 4
+resources:
+  rt:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/rt.json
+  rpg:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpg.json
+  rpl:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/rpl.json
+  gatves:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/gatves.json
+  vietoves:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/vietoves.json
+  aktyvumasIsankstinisVrt:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisVrt.json
+  aktyvumasIsankstinisRpg:
+    type: json
+    external: https://www.vrk.lt/statiniai/puslapiai/rinkimai/{politika/rinkimai/turas:rinkimai:id}/{politika/rinkimai/turas:numeris}/aktyvumasIsankstinis/aktyvumasIsankstinisRpg{politika/rinkimai/aktyvumas/isankstinis:apygarda:id}.json

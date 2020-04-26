@@ -1,0 +1,42 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_ataskaitu_perdavimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_VPP_ATASKAITU_PERDAVIMAI
+properties:
+  _id:
+    type: pk
+    external:
+    - DOK_EIL_NR
+    - DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_eil_nr:
+    type: integer
+    external: DOK_EIL_NR
+  dok_kam_sbj_id:
+    type: integer
+    external: DOK_KAM_SBJ_ID
+  dok_perdavimo_statusas:
+    type: integer
+    external: DOK_PERDAVIMO_STATUSAS
+  dok_perdavimo_data:
+    type: datetime
+    external: DOK_PERDAVIMO_DATA
+  dok_perdavimo_sbj_id:
+    type: integer
+    external: DOK_PERDAVIMO_SBJ_ID
+  dok_grazinimo_data:
+    type: datetime
+    external: DOK_GRAZINIMO_DATA
+  dok_grazinimo_sbj_id:
+    type: integer
+    external: DOK_GRAZINIMO_SBJ_ID
+  dok_perdavimo_pasatbos:
+    type: string
+    external: DOK_PERDAVIMO_PASATBOS
+  dok_grazinimo_pastabos:
+    type: string
+    external: DOK_GRAZINIMO_PASTABOS

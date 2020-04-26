@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_isreg_priezastys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_ISREG_PRIEZASTYS
+properties:
+  _id:
+    type: pk
+    external: ISPR_KODAS
+  ispr_kodas:
+    type: integer
+    external: ISPR_KODAS
+  ispr_pavad_i:
+    type: string
+    external: ISPR_PAVAD_I
+  ispr_pav_english:
+    type: string
+    external: ISPR_PAV_ENGLISH
+  ispr_galioja_iki:
+    type: datetime
+    external: ISPR_GALIOJA_IKI
+  ispr_koregavimo_data:
+    type: datetime
+    external: ISPR_KOREGAVIMO_DATA

@@ -1,12 +1,12 @@
 name: politika/seimas/mandatas
-title: "Mandatas"
+title: Mandatas
 type: model
 version:
   number: 1
   date: 2019-01-06
 properties:
-  kadencija: {type: ref, object: politika/seimas/kadencija}
-  seimo_narys: {type: ref, object: politika/seimas/narys}
-  kas_iškėlė: {type: ref, object: politika/partija}
+  kadencija: {type: ref, model: politika/seimas/kadencija}
+  seimo_narys: {type: ref, model: politika/seimas/narys}
+  kas_iškėlė: {type: ref, model: politika/partija}
   nuo: {type: date}
   iki: {type: date}

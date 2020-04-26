@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sysdiagrams
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: sysdiagrams
+properties:
+  _id:
+    type: pk
+    external: diagram_id
+  name:
+    type: string
+    external: name
+  principal_id:
+    type: integer
+    external: principal_id
+  diagram_id:
+    type: integer
+    external: diagram_id
+  version:
+    type: integer
+    external: version
+  definition:
+    type: binary
+    external: definition

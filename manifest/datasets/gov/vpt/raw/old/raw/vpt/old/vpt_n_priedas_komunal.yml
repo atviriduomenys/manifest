@@ -1,0 +1,256 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_priedas_komunal
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PRIEDAS_KOMUNAL
+properties:
+  _id:
+    type: pk
+    external: PR_OBJ_ID
+  pr_obj_id:
+    type: integer
+    external: PR_OBJ_ID
+  pr_darbut_id:
+    type: integer
+    external: PR_DARBUT_ID
+  pr_prekiut_id:
+    type: integer
+    external: PR_PREKIUT_ID
+  pr_paslaugut_id:
+    type: integer
+    external: PR_PASLAUGUT_ID
+  pr_sutartis:
+    type: integer
+    external: PR_SUTARTIS
+  pr_pav:
+    type: string
+    external: PR_PAV
+  pr_apibudinimas:
+    type: string
+    external: PR_APIBUDINIMAS
+  pr_vieta:
+    type: string
+    external: PR_VIETA
+  pr_nuts:
+    type: string
+    external: PR_NUTS
+  pr_skirstymas:
+    type: integer
+    external: PR_SKIRSTYMAS
+  pr_pasiulymai:
+    type: integer
+    external: PR_PASIULYMAI
+  pr_apimtys:
+    type: string
+    external: PR_APIMTYS
+  pr_pratesimas:
+    type: string
+    external: PR_PRATESIMAS
+  pr_kvalifikacija:
+    type: string
+    external: PR_KVALIFIKACIJA
+  pr_veikla:
+    type: string
+    external: PR_VEIKLA
+  pr_bukle:
+    type: string
+    external: PR_BUKLE
+  pr_techninis:
+    type: string
+    external: PR_TECHNINIS
+  pr_kita_info:
+    type: string
+    external: PR_KITA_INFO
+  pr_pirkb_id:
+    type: integer
+    external: PR_PIRKB_ID
+  pr_mokestis:
+    type: string
+    external: PR_MOKESTIS
+  pr_valiuta:
+    type: string
+    external: PR_VALIUTA
+  pr_uzbaigimo_data:
+    type: datetime
+    external: PR_UZBAIGIMO_DATA
+  pr_trukme_men:
+    type: integer
+    external: PR_TRUKME_MEN
+  pr_trukme_dienu:
+    type: integer
+    external: PR_TRUKME_DIENU
+  pr_nuolatinis:
+    type: string
+    external: PR_NUOLATINIS
+  pr_papildoma_info:
+    type: string
+    external: PR_PAPILDOMA_INFO
+  pr_pirkimo_data:
+    type: datetime
+    external: PR_PIRKIMO_DATA
+  pr_darbu_data:
+    type: datetime
+    external: PR_DARBU_DATA
+  pr_kalbos:
+    type: string
+    external: PR_KALBOS
+  pr_mokestis_kasoje:
+    type: integer
+    external: PR_MOKESTIS_KASOJE
+  pr_valt_id:
+    type: integer
+    external: PR_VALT_ID
+  pr_sutarties_dalijimas_vienai:
+    type: integer
+    external: PR_SUTARTIES_DALIJIMAS_VIENAI
+  pr_sutarties_dalijimas_kelioms:
+    type: integer
+    external: PR_SUTARTIES_DALIJIMAS_KELIOMS
+  pr_sutarties_dalijimas_visoms:
+    type: integer
+    external: PR_SUTARTIES_DALIJIMAS_VISOMS
+  pr_n3_nutst_id:
+    type: integer
+    external: PR_N3_NUTST_ID
+  pr_n3_informuojama_apie:
+    type: integer
+    external: PR_N3_INFORMUOJAMA_APIE
+  pr_n3_prelim_dalyviu_skaicius_1:
+    type: integer
+    external: PR_N3_PRELIM_DALYVIU_SKAICIUS_1
+  pr_n3_prelim_dalyviu_skaicius_2:
+    type: integer
+    external: PR_N3_PRELIM_DALYVIU_SKAICIUS_2
+  pr_n3_prelim_trukme_met:
+    type: integer
+    external: PR_N3_PRELIM_TRUKME_MET
+  pr_n3_prelim_trukme_men:
+    type: integer
+    external: PR_N3_PRELIM_TRUKME_MEN
+  pr_n3_prelim_kaina:
+    type: string
+    external: PR_N3_PRELIM_KAINA
+  pr_n3_prelim_kaina_valt_id:
+    type: integer
+    external: PR_N3_PRELIM_KAINA_VALT_ID
+  pr_n3_prelim_kaina_nuo:
+    type: string
+    external: PR_N3_PRELIM_KAINA_NUO
+  pr_n3_prelim_kaina_iki:
+    type: string
+    external: PR_N3_PRELIM_KAINA_IKI
+  pr_n3_prelim_kaina_nuo_iki_valt_id:
+    type: integer
+    external: PR_N3_PRELIM_KAINA_NUO_IKI_VALT_ID
+  pr_n3_prelim_kaina_tekst:
+    type: string
+    external: PR_N3_PRELIM_KAINA_TEKST
+  pr_n3_verte:
+    type: string
+    external: PR_N3_VERTE
+  pr_n3_verte_valt_id:
+    type: integer
+    external: PR_N3_VERTE_VALT_ID
+  pr_n3_verte_nuo:
+    type: string
+    external: PR_N3_VERTE_NUO
+  pr_n3_verte_iki:
+    type: string
+    external: PR_N3_VERTE_IKI
+  pr_n3_verte_nuo_iki_valt_id:
+    type: integer
+    external: PR_N3_VERTE_NUO_IKI_VALT_ID
+  pr_n3_pasirinkimas:
+    type: integer
+    external: PR_N3_PASIRINKIMAS
+  pr_n3_pasirinkimas_tekst:
+    type: string
+    external: PR_N3_PASIRINKIMAS_TEKST
+  pr_n3_pasirinkimas_skaicius_1:
+    type: integer
+    external: PR_N3_PASIRINKIMAS_SKAICIUS_1
+  pr_n3_pasirinkimas_skaicius_2:
+    type: integer
+    external: PR_N3_PASIRINKIMAS_SKAICIUS_2
+  pr_n3_pasirinkimas_skaicius_3:
+    type: integer
+    external: PR_N3_PASIRINKIMAS_SKAICIUS_3
+  pr_n3_pasirinkimas_skaicius_4:
+    type: integer
+    external: PR_N3_PASIRINKIMAS_SKAICIUS_4
+  pr_n3_pasirinkimas_skaicius_5:
+    type: integer
+    external: PR_N3_PASIRINKIMAS_SKAICIUS_5
+  pr_n3_uzstatai_ir_garantijos:
+    type: string
+    external: PR_N3_UZSTATAI_IR_GARANTIJOS
+  pr_n3_ypatingos_salygos:
+    type: integer
+    external: PR_N3_YPATINGOS_SALYGOS
+  pr_n3_ypatingos_salygos_tekst:
+    type: string
+    external: PR_N3_YPATINGOS_SALYGOS_TEKST
+  pr_n3_rez_sutartys:
+    type: integer
+    external: PR_N3_REZ_SUTARTYS
+  pr_n3_rez_sutartys_skirta:
+    type: integer
+    external: PR_N3_REZ_SUTARTYS_SKIRTA
+  pr_n3_paslaugos_teikimas:
+    type: integer
+    external: PR_N3_PASLAUGOS_TEIKIMAS
+  pr_n3_paslaugos_teikimas_tekst:
+    type: string
+    external: PR_N3_PASLAUGOS_TEIKIMAS_TEKST
+  pr_n3_pavardes_ir_kvalifikacija:
+    type: integer
+    external: PR_N3_PAVARDES_IR_KVALIFIKACIJA
+  pr_n3_kriterijai_yn:
+    type: integer
+    external: PR_N3_KRITERIJAI_YN
+  pr_n3_kiti_kriterijai_yn:
+    type: integer
+    external: PR_N3_KITI_KRITERIJAI_YN
+  pr_n3_aukcionas:
+    type: integer
+    external: PR_N3_AUKCIONAS
+  pr_n3_aukcionas_tekst:
+    type: string
+    external: PR_N3_AUKCIONAS_TEKST
+  pr_n3_pirkimo_laikas:
+    type: string
+    external: PR_N3_PIRKIMO_LAIKAS
+  pr_n3_mokestis_yn:
+    type: integer
+    external: PR_N3_MOKESTIS_YN
+  pr_n3_mokejimo_budas:
+    type: string
+    external: PR_N3_MOKEJIMO_BUDAS
+  pr_n3_priemimo_data:
+    type: datetime
+    external: PR_N3_PRIEMIMO_DATA
+  pr_n3_pagal_kvietima_priemimo_data:
+    type: datetime
+    external: PR_N3_PAGAL_KVIETIMA_PRIEMIMO_DATA
+  pr_n3_pagal_kvietima_priemimo_laikas:
+    type: string
+    external: PR_N3_PAGAL_KVIETIMA_PRIEMIMO_LAIKAS
+  pr_n3_kalbt_id:
+    type: integer
+    external: PR_N3_KALBT_ID
+  pr_n3_pasikartojantis_yn:
+    type: integer
+    external: PR_N3_PASIKARTOJANTIS_YN
+  pr_n3_skundu_teikimas:
+    type: string
+    external: PR_N3_SKUNDU_TEIKIMAS
+  pr_n5_pasirinkimas_pratesimas:
+    type: integer
+    external: PR_N5_PASIRINKIMAS_PRATESIMAS
+  pr_n5_priemimo_laikas:
+    type: string
+    external: PR_N5_PRIEMIMO_LAIKAS
+  pr_n5_es_kalbos:
+    type: integer
+    external: PR_N5_ES_KALBOS

@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vrk/rinkejopuslapis/kandidatai/politika/rinkimai/apygarda
+external:
+  dataset: datasets/gov/vrk/rinkejopuslapis/kandidatai
+  resource: kandidatai
+  name:
+  pk: numeris
+properties:
+  numeris:
+    type: string
+    external: Apygardos Nr.
+  pavadinimas:
+    type: string
+    external: Apygardos pavadinimas
+

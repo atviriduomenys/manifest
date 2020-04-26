@@ -146,7 +146,7 @@ Datasets are used to descripe external data sources, here is an example:
           source: /SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys
           properties:
             grupes_rusis:
-              const: politika/seimas/frakcija
+              prepare: "'politika/seimas/frakcija'"
             grupe:
               source: ../@padalinio_id
     komitetai:
@@ -157,7 +157,7 @@ Datasets are used to descripe external data sources, here is an example:
           source: /SeimoInformacija/SeimoKadencija/SeimoKomitetas/SeimoKomitetoNarys
           properties:
             grupes_rusis:
-              const: politika/seimas/grupė
+              prepare: "'politika/seimas/grupė'"
             grupe:
               source: ../@padalinio_id
 
@@ -444,7 +444,7 @@ types. Under the hood data is stored using two virtual properties `id` and
           politika/seimas/pareigos:
             properties:
               grupes_rusis:
-                const: politika/seimas/frakcija
+                prepare: "'politika/seimas/frakcija'"
               grupe:
                 source: ../@padalinio_id
 

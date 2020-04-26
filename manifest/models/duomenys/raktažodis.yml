@@ -1,5 +1,5 @@
 name: duomenys/raktažodis
-title: "Raktažodis"
+title: Raktažodis
 type: model
 version:
   number: 1
@@ -9,5 +9,5 @@ properties:
     type: string
   rinkiniai:
     type: backref
-    object: duomenys/rinkinys
+    model: duomenys/rinkinys
     secondary: true

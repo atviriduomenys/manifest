@@ -1,0 +1,58 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_sasp_priedas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_SASP_PRIEDAS
+properties:
+  _id:
+    type: pk
+    external: DOK_OBJ_ID
+  dok_obj_id:
+    type: integer
+    external: DOK_OBJ_ID
+  punkt_a_1:
+    type: boolean
+    external: PUNKT_A_1
+  punkt_a_2:
+    type: boolean
+    external: PUNKT_A_2
+  punkt_b:
+    type: boolean
+    external: PUNKT_B
+  punkt_c:
+    type: boolean
+    external: PUNKT_C
+  punkt_d:
+    type: boolean
+    external: PUNKT_D
+  punkt_e_1:
+    type: boolean
+    external: PUNKT_E_1
+  punkt_e_2:
+    type: boolean
+    external: PUNKT_E_2
+  punkt_f:
+    type: boolean
+    external: PUNKT_F
+  punkt_g_1:
+    type: boolean
+    external: PUNKT_G_1
+  punkt_g_2:
+    type: boolean
+    external: PUNKT_G_2
+  punkt_g_3:
+    type: boolean
+    external: PUNKT_G_3
+  punkt_h:
+    type: boolean
+    external: PUNKT_H
+  punkt_i:
+    type: boolean
+    external: PUNKT_I
+  punkt_j:
+    type: boolean
+    external: PUNKT_J
+  punkt_k:
+    type: boolean
+    external: PUNKT_K

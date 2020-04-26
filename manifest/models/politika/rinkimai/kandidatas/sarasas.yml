@@ -1,5 +1,5 @@
 name: politika/rinkimai/kandidatas/sarasas
-title: "Kandidatų sąrašas"
+title: Kandidatų sąrašas
 type: model
 version:
   number: 1
@@ -7,10 +7,10 @@ version:
 properties:
   rinkimai:
     type: ref
-    object: politika/rinkimai
-  numeris: {type: integer, title: "Kandidatų sąrašo numeris"}
+    model: politika/rinkimai
+  numeris: {type: integer, title: Kandidatų sąrašo numeris}
   pavadinimas: {type: string}
   kandidatai:
     type: backref
-    object: politika/rinkimai/kandidatas
+    model: politika/rinkimai/kandidatas
     property: sarasas

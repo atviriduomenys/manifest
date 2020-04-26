@@ -1,5 +1,5 @@
 name: politika/rinkimai/europarlamento/kandidatas
-title: "Kandidatas rinkimuose į Europos Parlamentą"
+title: Kandidatas rinkimuose į Europos Parlamentą
 type: model
 version:
   number: 1
@@ -7,10 +7,10 @@ version:
 properties:
   rinkimai:
     type: ref
-    object: politika/rinkimai/europarlamento/rinkimai
+    model: politika/rinkimai/europarlamento/rinkimai
   asmuo:
     type: ref
-    object: politika/rinkimai/asmuo
+    model: politika/rinkimai/asmuo
   partija:
     type: ref
-    object: politika/partija
+    model: politika/partija

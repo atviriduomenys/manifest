@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektu_asmenu_slaptazodziu_istorija
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUBJEKTU_ASMENU_SLAPTAZODZIU_ISTORIJA
+properties:
+  _id:
+    type: pk
+    external: ASMS_ID
+  asms_id:
+    type: integer
+    external: ASMS_ID
+  asms_asm_id:
+    type: integer
+    external: ASMS_ASM_ID
+  asms_pakeitimo_data:
+    type: datetime
+    external: ASMS_PAKEITIMO_DATA
+  asms_password:
+    type: string
+    external: ASMS_PASSWORD

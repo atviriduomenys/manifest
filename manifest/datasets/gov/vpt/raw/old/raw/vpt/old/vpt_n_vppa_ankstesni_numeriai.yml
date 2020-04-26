@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vppa_ankstesni_numeriai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPPA_ANKSTESNI_NUMERIAI
+properties:
+  _id:
+    type: pk
+    external:
+    - AN_DOK_ID
+    - AN_EIL_NR
+  an_dok_id:
+    type: integer
+    external: AN_DOK_ID
+  an_eil_nr:
+    type: integer
+    external: AN_EIL_NR
+  an_pirkimo_kodas:
+    type: integer
+    external: AN_PIRKIMO_KODAS

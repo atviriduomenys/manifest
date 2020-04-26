@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_vppa_dalyviai_krt_pra
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_VPPA_DALYVIAI_KRT_PRA
+properties:
+  _id:
+    type: pk
+  krt_pra_eil_nr:
+    type: integer
+    external: KRT_PRA_EIL_NR
+  krt_pra_dok_id:
+    type: integer
+    external: KRT_PRA_DOK_ID
+  krt_pra_3a_dok_id:
+    type: integer
+    external: KRT_PRA_3A_DOK_ID
+  krt_pra_numeriai:
+    type: string
+    external: KRT_PRA_NUMERIAI
+  krt_pra_data:
+    type: datetime
+    external: KRT_PRA_DATA
+  krt_prs_data:
+    type: datetime
+    external: KRT_PRS_DATA

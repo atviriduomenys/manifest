@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_teikimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_TEIKIMAI
+properties:
+  _id:
+    type: pk
+    external:
+    - OBJPT_EIL_NR
+    - OBJPT_OBJ_ID
+  objpt_obj_id:
+    type: integer
+    external: OBJPT_OBJ_ID
+  objpt_eil_nr:
+    type: integer
+    external: OBJPT_EIL_NR
+  objpt_sbj_id:
+    type: integer
+    external: OBJPT_SBJ_ID
+  objpt_pastabos:
+    type: string
+    external: OBJPT_PASTABOS
+  objpt_kiekis:
+    type: integer
+    external: OBJPT_KIEKIS
+  objpt_egz_nr:
+    type: string
+    external: OBJPT_EGZ_NR

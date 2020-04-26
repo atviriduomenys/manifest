@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/pavedimu_vykdtytojai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PAVEDIMU_VYKDTYTOJAI_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - PAVY_PAV_ID
+    - PAVY_SBJ_ID
+  pavy_pav_id:
+    type: integer
+    external: PAVY_PAV_ID
+  pavy_sbj_id:
+    type: integer
+    external: PAVY_SBJ_ID
+  pavy_eiles_nr:
+    type: integer
+    external: PAVY_EILES_NR
+  pavy_pavyt_id:
+    type: integer
+    external: PAVY_PAVYT_ID
+  pavy_pagrindinis:
+    type: integer
+    external: PAVY_PAGRINDINIS
+  pavy_termino_data:
+    type: datetime
+    external: PAVY_TERMINO_DATA
+  pavy_ivykd_data:
+    type: datetime
+    external: PAVY_IVYKD_DATA

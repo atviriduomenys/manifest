@@ -1,0 +1,111 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/keiciamisass_20100622
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: keiciamiSASS_20100622
+properties:
+  _id:
+    type: pk
+  dok_id:
+    type: integer
+    external: DOK_ID
+  indeksas:
+    type: integer
+    external: INDEKSAS
+  regdata:
+    type: datetime
+    external: REGDATA
+  dok_pirk_obj_rusis:
+    type: integer
+    external: DOK_PIRK_OBJ_RUSIS
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  pirkimo_kodas:
+    type: integer
+    external: PIRKIMO_KODAS
+  dok_pavadinimas:
+    type: string
+    external: DOK_PAVADINIMAS
+  dok_apibudinimas:
+    type: string
+    external: DOK_APIBUDINIMAS
+  dok_viesai:
+    type: integer
+    external: DOK_VIESAI
+  atsa_pav:
+    type: string
+    external: ATSA_PAV
+  atsa_id:
+    type: integer
+    external: ATSA_ID
+  atsa_skodas:
+    type: integer
+    external: ATSA_SKODAS
+  atsa_imones_kodas:
+    type: integer
+    external: ATSA_IMONES_KODAS
+  atsa_gali_kurti_padaliniuose:
+    type: integer
+    external: ATSA_GALI_KURTI_PADALINIUOSE
+  tikr_sbj_sbjt_id:
+    type: integer
+    external: TIKR_SBJ_SBJT_ID
+  tikr_sbj_id:
+    type: integer
+    external: TIKR_SBJ_ID
+  tikr_skodas:
+    type: integer
+    external: TIKR_SKODAS
+  tikr_pav:
+    type: string
+    external: TIKR_PAV
+  po_sbj_id:
+    type: integer
+    external: PO_SBJ_ID
+  po_sbj_sbjt_id:
+    type: integer
+    external: PO_SBJ_SBJT_ID
+  po_sbj_skodas:
+    type: integer
+    external: PO_SBJ_SKODAS
+  po_sbj_pav:
+    type: string
+    external: PO_SBJ_PAV
+  po_sbj_patikslinimas:
+    type: string
+    external: PO_SBJ_PATIKSLINIMAS
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_centrine_leido_skelbti:
+    type: integer
+    external: DOK_CENTRINE_LEIDO_SKELBTI
+  dok_po_tinka_issiuntimui:
+    type: integer
+    external: DOK_PO_TINKA_ISSIUNTIMUI
+  dok_vpt_gavo:
+    type: integer
+    external: DOK_VPT_GAVO
+  dok_ivedimo_data:
+    type: datetime
+    external: DOK_IVEDIMO_DATA
+  dok_issiuntimo_data:
+    type: datetime
+    external: DOK_ISSIUNTIMO_DATA
+  dok_leidinio_data:
+    type: datetime
+    external: DOK_LEIDINIO_DATA
+  dok_leidinio_nr:
+    type: integer
+    external: DOK_LEIDINIO_NR
+  dok_po_issiuntimo_data:
+    type: datetime
+    external: DOK_PO_ISSIUNTIMO_DATA
+  dok_zodziu_skaicius:
+    type: integer
+    external: DOK_ZODZIU_SKAICIUS
+  dok_formos_versija_metai:
+    type: integer
+    external: DOK_FORMOS_VERSIJA_METAI

@@ -1,0 +1,38 @@
+type: model
+name: datasets/gov/vrk/arcgis/EP_2014_R_APL/politika/rinkimai/europarlamento/rezultatas/partija
+external:
+  dataset: datasets/gov/vrk/arcgis/EP_2014_R_APL
+  resource: rezultatai
+  name: ''
+properties:
+  rinkimai:
+    type: string
+    level: 1
+  apylinke:
+    type: string
+    level: 1
+  apygarda:
+    type: string
+    level: 1
+  partija:
+    type: string
+    level: 1
+    external:
+                # unstack:
+                #   - "lp_pr"
+                #   - "p1_pr"
+                #   - "p2_pr"
+                #   - "p3_pr"
+                #   - "p4_pr"
+                #   - "p5_pr"
+                #   - "p6_pr"
+                #   - "p7_pr"
+                #   - "p8_pr"
+                #   - "p9_pr"
+                #   - "p10_pr"
+  balsu_skaicius:
+    type: string
+    level: 1
+  balsu_skaicius_procentais:
+    type: string
+    level: 1

@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sd_adresatai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SD_ADRESATAI
+properties:
+  _id:
+    type: pk
+    external:
+    - SDAD_DOK_ID
+    - SDAD_EILES_NR
+  sdad_dok_id:
+    type: integer
+    external: SDAD_DOK_ID
+  sdad_sbj_id:
+    type: integer
+    external: SDAD_SBJ_ID
+  sdad_eiles_nr:
+    type: integer
+    external: SDAD_EILES_NR
+  sdad_dfrm_id:
+    type: integer
+    external: SDAD_DFRM_ID
+  sdad_pastabos:
+    type: string
+    external: SDAD_PASTABOS
+  sdad_pagrindinis:
+    type: integer
+    external: SDAD_PAGRINDINIS
+  sdad_svoris:
+    type: integer
+    external: SDAD_SVORIS
+  sdad_siuntu_nr:
+    type: integer
+    external: SDAD_SIUNTU_NR

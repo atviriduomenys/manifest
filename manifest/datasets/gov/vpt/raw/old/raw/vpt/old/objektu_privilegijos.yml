@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_privilegijos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_PRIVILEGIJOS
+properties:
+  _id:
+    type: pk
+    external:
+    - OBJP_OBJ_ID
+    - OBJP_SBJ_ID
+  objp_obj_id:
+    type: integer
+    external: OBJP_OBJ_ID
+  objp_sbj_id:
+    type: integer
+    external: OBJP_SBJ_ID
+  objp_privilegija:
+    type: integer
+    external: OBJP_PRIVILEGIJA
+  objp_aut_sbj_id:
+    type: integer
+    external: OBJP_AUT_SBJ_ID

@@ -1,0 +1,43 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_isankstiniu_skelbimu_daliu_priedai_b
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_ISANKSTINIU_SKELBIMU_DALIU_PRIEDAI_B
+properties:
+  _id:
+    type: pk
+    external:
+    - PRD_DOK_ID
+    - PRD_EIL_NR
+    - PRD_ID
+  prd_dok_id:
+    type: integer
+    external: PRD_DOK_ID
+  prd_id:
+    type: integer
+    external: PRD_ID
+  prd_eil_nr:
+    type: integer
+    external: PRD_EIL_NR
+  prd_nace:
+    type: string
+    external: PRD_NACE
+  prd_apimtis:
+    type: string
+    external: PRD_APIMTIS
+  prd_kaina:
+    type: string
+    external: PRD_KAINA
+  prd_valiuta:
+    type: string
+    external: PRD_VALIUTA
+  prd_data_nuo:
+    type: datetime
+    external: PRD_DATA_NUO
+  prd_data_iki:
+    type: datetime
+    external: PRD_DATA_IKI
+  prd_uzbaigimo_data:
+    type: datetime
+    external: PRD_UZBAIGIMO_DATA

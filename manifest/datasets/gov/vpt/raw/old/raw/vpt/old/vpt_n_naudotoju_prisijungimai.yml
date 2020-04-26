@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_naudotoju_prisijungimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_NAUDOTOJU_PRISIJUNGIMAI
+properties:
+  _id:
+    type: pk
+    external: PRI_SBJ_ID
+  pri_eil_nr:
+    type: integer
+    external: PRI_EIL_NR
+  pri_sbj_id:
+    type: integer
+    external: PRI_SBJ_ID
+  pri_last_data:
+    type: datetime
+    external: PRI_LAST_DATA

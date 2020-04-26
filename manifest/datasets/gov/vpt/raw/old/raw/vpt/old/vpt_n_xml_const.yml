@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_xml_const
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_XML_CONST
+properties:
+  _id:
+    type: pk
+  xml_unikalus_nr:
+    type: integer
+    external: XML_UNIKALUS_NR
+  xml_senas_unikalus_nr:
+    type: integer
+    external: XML_SENAS_UNIKALUS_NR

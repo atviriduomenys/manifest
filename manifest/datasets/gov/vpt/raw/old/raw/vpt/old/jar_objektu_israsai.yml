@@ -1,0 +1,41 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektu_israsai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_OBJEKTU_ISRASAI
+properties:
+  _id:
+    type: pk
+    external: OBJI_ID
+  obji_id:
+    type: integer
+    external: OBJI_ID
+  obji_jobj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektai
+    external: OBJI_JOBJ_ID
+  obji_xml:
+    type: string
+    external: OBJI_XML
+  obji_tipas:
+    type: integer
+    external: OBJI_TIPAS
+  obji_ver_data:
+    type: datetime
+    external: OBJI_VER_DATA
+  obji_ver_nr:
+    type: integer
+    external: OBJI_VER_NR
+  obji_ivede:
+    type: string
+    external: OBJI_IVEDE
+  obji_ivedimo_data:
+    type: datetime
+    external: OBJI_IVEDIMO_DATA
+  obji_koregavo:
+    type: string
+    external: OBJI_KOREGAVO
+  obji_koregavimo_data:
+    type: datetime
+    external: OBJI_KOREGAVIMO_DATA

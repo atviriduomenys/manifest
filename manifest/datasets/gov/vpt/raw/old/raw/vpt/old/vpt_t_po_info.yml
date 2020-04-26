@@ -1,0 +1,48 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_po_info
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_PO_INFO
+properties:
+  _id:
+    type: pk
+  t_po_info_obj_id:
+    type: integer
+    external: T_PO_INFO_OBJ_ID
+  t_po_info_sbj_id:
+    type: integer
+    external: T_PO_INFO_SBJ_ID
+  t_po_info_eil_nr:
+    type: integer
+    external: T_PO_INFO_EIL_NR
+  t_po_info_pagrindinis:
+    type: boolean
+    external: T_PO_INFO_PAGRINDINIS
+  t_po_info_adresas:
+    type: string
+    external: T_PO_INFO_ADRESAS
+  t_po_info_miestas:
+    type: string
+    external: T_PO_INFO_MIESTAS
+  t_po_info_telefonas:
+    type: string
+    external: T_PO_INFO_TELEFONAS
+  t_po_info_email:
+    type: string
+    external: T_PO_INFO_EMAIL
+  t_po_info_sbj_pastabos:
+    type: string
+    external: T_PO_INFO_SBJ_PASTABOS
+  t_po_info_pasto_kodas:
+    type: string
+    external: T_PO_INFO_PASTO_KODAS
+  t_po_info_salis:
+    type: string
+    external: T_PO_INFO_SALIS
+  t_po_info_faksas:
+    type: string
+    external: T_PO_INFO_FAKSAS
+  t_po_info_url:
+    type: string
+    external: T_PO_INFO_URL

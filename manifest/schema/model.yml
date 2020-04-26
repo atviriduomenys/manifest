@@ -1,13 +1,12 @@
----
 type: object
 title: Data object
 description: >
   Defines model for a single data object.
 required:
-  - id
-  - type
-  - version
-  - date
+- id
+- type
+- version
+- date
 additionalProperties: false
 properties:
   id:
@@ -21,8 +20,8 @@ properties:
     title: Description of this data object
   type:
     enum:
-      - model
-  version: {$ref: "#/definitions/version"}
+    - model
+  version: {$ref: '#/definitions/version'}
   date: {type: string, format: date}
   link:
     type: string
@@ -32,52 +31,52 @@ properties:
     type: object
     additionalProperties: false
     patternProperties:
-      "%(property_name_pattern)s":
+      '%(property_name_pattern)s':
         type: object
         title: Data field
         required:
-          - type
+        - type
         additionalProperties: false
         properties:
           type:
             enum:
               # Unicode simbolių eilutė.
-              - string
+            - string
 
               # Sveikas skaičius.
-              - integer
+            - integer
 
               # Realusis skaičius.
-              - number
+            - number
 
               # true/false.
-              - boolean
+            - boolean
 
               # Paveiksliuko failas dvejetainiu formatu.
-              - image
+            - image
 
               # Data YYYY-mm-dd formatu.
-              - date
+            - date
 
               # Data ir laikas YYYY-mm-ddTHH:MM:SS formatu.
-              - datetime
+            - datetime
 
               # Pirminis raktas, identifikuojantis objektą.
-              - pk
+            - pk
 
               # Ryšys su kitu objektu.
-              - ref
+            - ref
 
               # Atgalinis ryšis su kitu objektu.
-              - backref
+            - backref
 
               # Ryšys su kitu objektu, nenurodant konkretaus objekto, t.y.
               # ryšys gali būti su skirtingais objektais.
-              - generic
+            - generic
 
               # Geografinis taškas, linija, poligonas ar jų kombinacija
               # naudojant WGS84 koordinačių sistemą.
-              - spatial
+            - spatial
 
           secondary:
             type: [boolean, string]
@@ -113,5 +112,5 @@ properties:
             type: array
             items:
               type: [string, integer]
-            title: "Galimi variantai"
-          version: {$ref: "#/definitions/version"}
+            title: Galimi variantai
+          version: {$ref: '#/definitions/version'}

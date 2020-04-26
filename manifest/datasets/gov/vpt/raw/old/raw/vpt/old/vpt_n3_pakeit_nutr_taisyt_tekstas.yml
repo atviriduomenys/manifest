@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_pakeit_nutr_taisyt_tekstas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_PAKEIT_NUTR_TAISYT_TEKSTAS
+properties:
+  _id:
+    type: pk
+    external:
+    - TAISYT_TEKST_DOK_ID
+    - TAISYT_TEKST_EIL_NR
+    - TAISYT_TEKST_KITA_INFO_EIL_NR
+  taisyt_tekst_kita_info_eil_nr:
+    type: integer
+    external: TAISYT_TEKST_KITA_INFO_EIL_NR
+  taisyt_tekst_dok_id:
+    type: integer
+    external: TAISYT_TEKST_DOK_ID
+  taisyt_tekst_eil_nr:
+    type: integer
+    external: TAISYT_TEKST_EIL_NR
+  taisyt_tekst_vieta:
+    type: string
+    external: TAISYT_TEKST_VIETA
+  taisyt_tekst_vietoj:
+    type: string
+    external: TAISYT_TEKST_VIETOJ
+  taisyt_tekst_turi_buti:
+    type: string
+    external: TAISYT_TEKST_TURI_BUTI

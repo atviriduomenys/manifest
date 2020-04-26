@@ -1,0 +1,52 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vppa_priminimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPPA_PRIMINIMAI
+properties:
+  _id:
+    type: pk
+    external: PR_ID
+  pr_id:
+    type: integer
+    external: PR_ID
+  pr_textas:
+    type: string
+    external: PR_TEXTAS
+  pr_reg_sbj_id:
+    type: integer
+    external: PR_REG_SBJ_ID
+  pr_reg_data:
+    type: datetime
+    external: PR_REG_DATA
+  pr_rodimas:
+    type: integer
+    external: PR_RODIMAS
+  pr_objt_id:
+    type: integer
+    external: PR_OBJT_ID
+  pr_pirkimo_kodas_nuo:
+    type: integer
+    external: PR_PIRKIMO_KODAS_NUO
+  pr_pirkimo_kodas_iki:
+    type: integer
+    external: PR_PIRKIMO_KODAS_IKI
+  pr_po_sbj_id:
+    type: integer
+    external: PR_PO_SBJ_ID
+  pr_pot_id:
+    type: integer
+    external: PR_POT_ID
+  pr_sektorius:
+    type: integer
+    external: PR_SEKTORIUS
+  pr_pirkb_id:
+    type: integer
+    external: PR_PIRKB_ID
+  pr_pobj_rusis:
+    type: integer
+    external: PR_POBJ_RUSIS
+  pr_pazt_id:
+    type: integer
+    external: PR_PAZT_ID

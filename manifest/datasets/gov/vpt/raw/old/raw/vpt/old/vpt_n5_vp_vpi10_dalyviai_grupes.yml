@@ -1,0 +1,46 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n5_vp_vpi10_dalyviai_grupes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N5_VP_VPI10_DALYVIAI_GRUPES
+properties:
+  _id:
+    type: pk
+    external:
+    - GR_SUT_DOK_ID
+    - GR_SUT_EIL_NR
+    - GR_SUT_SBJ_EIL_NR
+  gr_sut_dok_id:
+    type: integer
+    external: GR_SUT_DOK_ID
+  gr_sut_eil_nr:
+    type: integer
+    external: GR_SUT_EIL_NR
+  gr_sut_sbj_eil_nr:
+    type: integer
+    external: GR_SUT_SBJ_EIL_NR
+  gr_sut_sbj_id:
+    type: integer
+    external: GR_SUT_SBJ_ID
+  gr_sut_pav:
+    type: string
+    external: GR_SUT_PAV
+  gr_sut_adresas:
+    type: string
+    external: GR_SUT_ADRESAS
+  gr_sut_salis:
+    type: string
+    external: GR_SUT_SALIS
+  gr_sut_sbj_patikslinimas:
+    type: string
+    external: GR_SUT_SBJ_PATIKSLINIMAS
+  gr_sut_salt_id:
+    type: integer
+    external: GR_SUT_SALT_ID
+  gr_sut_sbj_skodas:
+    type: integer
+    external: GR_SUT_SBJ_SKODAS
+  gr_sut_sbj_pav:
+    type: string
+    external: GR_SUT_SBJ_PAV

@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rz_asmenys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: RZ_ASMENYS
+properties:
+  _id:
+    type: pk
+  rza_sbj_id:
+    type: integer
+    external: RZA_SBJ_ID
+  rza_rz_id:
+    type: integer
+    external: RZA_RZ_ID
+  rza_tipas:
+    type: integer
+    external: RZA_TIPAS

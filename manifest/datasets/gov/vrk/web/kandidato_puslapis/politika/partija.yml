@@ -1,0 +1,9 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/politika/partija
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  pavadinimas:
+    type: string

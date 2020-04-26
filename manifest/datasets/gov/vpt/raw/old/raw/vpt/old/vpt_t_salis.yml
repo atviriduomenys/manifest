@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_salis
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_SALIS
+properties:
+  _id:
+    type: pk
+    external: T_SALIS_ID
+  t_salis_id:
+    type: integer
+    external: T_SALIS_ID
+  t_salis_kodas:
+    type: string
+    external: T_SALIS_KODAS
+  t_salis_pav:
+    type: string
+    external: T_SALIS_PAV

@@ -52,8 +52,8 @@ def _list_properties(ns: components.Namespace, level: int):
 def _get_ref_object(models):
     for model in models.values():
         for p in model:
-            if p.dtype.name in ('ref', 'backref') and p.dtype.object:
-                return f'  ref={p.dtype.object}'
+            if p.dtype.name in ('ref', 'backref') and p.dtype.model:
+                return f'  ref={p.dtype.model.name}'
     return ''
 
 

@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_export_to_vz_log
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_EXPORT_TO_VZ_LOG
+properties:
+  _id:
+    type: pk
+  id:
+    type: integer
+    external: ID
+  ip:
+    type: string
+    external: IP
+  sbj_id:
+    type: integer
+    external: SBJ_ID
+  data:
+    type: datetime
+    external: DATA
+  file_path:
+    type: string
+    external: FILE_PATH
+  pastabos:
+    type: string
+    external: PASTABOS

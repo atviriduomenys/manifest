@@ -1,0 +1,32 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_issk_daliu_nomenklaturos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_ISSK_DALIU_NOMENKLATUROS
+properties:
+  _id:
+    type: pk
+    external:
+    - NOM_DAL_EIL_NR
+    - NOM_DALT_ID
+    - NOM_DOK_ID
+    - NOM_EIL_NR
+  nom_dok_id:
+    type: integer
+    external: NOM_DOK_ID
+  nom_dalt_id:
+    type: integer
+    external: NOM_DALT_ID
+  nom_eil_nr:
+    type: integer
+    external: NOM_EIL_NR
+  nom_dal_eil_nr:
+    type: integer
+    external: NOM_DAL_EIL_NR
+  nom_pobj_id:
+    type: integer
+    external: NOM_POBJ_ID
+  nom_pirko_pagrindinis:
+    type: integer
+    external: NOM_PIRKO_PAGRINDINIS

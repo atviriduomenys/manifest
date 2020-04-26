@@ -1,0 +1,88 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTAI
+properties:
+  _id:
+    type: pk
+    external: PRJ_ID
+  prj_id:
+    type: integer
+    external: PRJ_ID
+  prj_skodas:
+    type: string
+    external: PRJ_SKODAS
+  prj_antraste:
+    type: string
+    external: PRJ_ANTRASTE
+  prj_data_nuo:
+    type: datetime
+    external: PRJ_DATA_NUO
+  prj_data_iki:
+    type: datetime
+    external: PRJ_DATA_IKI
+  prj_fakt_data_nuo:
+    type: datetime
+    external: PRJ_FAKT_DATA_NUO
+  prj_fakt_data_iki:
+    type: datetime
+    external: PRJ_FAKT_DATA_IKI
+  prj_pstip_id:
+    type: integer
+    external: PRJ_PSTIP_ID
+  prj_statuso_data:
+    type: datetime
+    external: PRJ_STATUSO_DATA
+  prj_bendros_lesos:
+    type: number
+    external: PRJ_BENDROS_LESOS
+  prj_lesu_pastabos:
+    type: string
+    external: PRJ_LESU_PASTABOS
+  prj_bendros_lesos_lt:
+    type: number
+    external: PRJ_BENDROS_LESOS_LT
+  prj_tevo_prj_id:
+    type: integer
+    external: PRJ_TEVO_PRJ_ID
+  prj_prjpr_id:
+    type: integer
+    external: PRJ_PRJPR_ID
+  prj_pagrindo_obj_id:
+    type: integer
+    external: PRJ_PAGRINDO_OBJ_ID
+  prj_pagrindo_pastabos:
+    type: string
+    external: PRJ_PAGRINDO_PASTABOS
+  prj_kurat_sbj_id:
+    type: integer
+    external: PRJ_KURAT_SBJ_ID
+  prj_ivertinimas:
+    type: number
+    external: PRJ_IVERTINIMAS
+  prj_ivert_pastabos:
+    type: string
+    external: PRJ_IVERT_PASTABOS
+  prj_panaudotos_lesos_lt:
+    type: number
+    external: PRJ_PANAUDOTOS_LESOS_LT
+  prj_phare_lesos_lt:
+    type: number
+    external: PRJ_PHARE_LESOS_LT
+  prj_phare_lesos:
+    type: number
+    external: PRJ_PHARE_LESOS
+  prj_phare_lesu_pastabos:
+    type: string
+    external: PRJ_PHARE_LESU_PASTABOS
+  prj_panaudotos_lesos_proc:
+    type: integer
+    external: PRJ_PANAUDOTOS_LESOS_PROC
+  prj_antraste_en:
+    type: string
+    external: PRJ_ANTRASTE_EN
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

@@ -1,4 +1,4 @@
-name: "gov/savivaldybes/kaunas/kauno_svara"
-title: "Kauno švara"
-type: "owner"
-sector: "public"
+name: gov/savivaldybes/kaunas/kauno_svara
+title: Kauno švara
+type: owner
+sector: public

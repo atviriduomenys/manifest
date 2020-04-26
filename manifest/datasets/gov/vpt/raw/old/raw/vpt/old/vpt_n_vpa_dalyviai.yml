@@ -1,0 +1,48 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vpa_dalyviai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPA_DALYVIAI
+properties:
+  _id:
+    type: pk
+    external:
+    - TIEK_DOK_ID
+    - TIEK_EIL_NR
+  tiek_dok_id:
+    type: integer
+    external: TIEK_DOK_ID
+  tiek_eil_nr:
+    type: integer
+    external: TIEK_EIL_NR
+  tiek_sbj_id:
+    type: integer
+    external: TIEK_SBJ_ID
+  tiek_sbj_patikslinimas:
+    type: string
+    external: TIEK_SBJ_PATIKSLINIMAS
+  tiek_pirkimo_numeris:
+    type: integer
+    external: TIEK_PIRKIMO_NUMERIS
+  tiek_sut_sudarymo_data:
+    type: datetime
+    external: TIEK_SUT_SUDARYMO_DATA
+  tiek_sut_skaicius:
+    type: integer
+    external: TIEK_SUT_SKAICIUS
+  tiek_bendra_verte:
+    type: string
+    external: TIEK_BENDRA_VERTE
+  tiek_reg_data:
+    type: datetime
+    external: TIEK_REG_DATA
+  tiek_reg_sbj_id:
+    type: integer
+    external: TIEK_REG_SBJ_ID
+  tiek_sbj_skodas:
+    type: integer
+    external: TIEK_SBJ_SKODAS
+  tiek_sbj_pav:
+    type: string
+    external: TIEK_SBJ_PAV

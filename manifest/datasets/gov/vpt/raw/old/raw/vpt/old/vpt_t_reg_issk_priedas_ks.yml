@@ -1,0 +1,100 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_reg_issk_priedas_ks
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_REG_ISSK_PRIEDAS_KS
+properties:
+  _id:
+    type: pk
+    external: KS_DOK_ID
+  ks_dok_id:
+    type: integer
+    external: KS_DOK_ID
+  ks_darbt_id:
+    type: integer
+    external: KS_DARBT_ID
+  ks_prekiut_id:
+    type: integer
+    external: KS_PREKIUT_ID
+  ks_paslaugut_id:
+    type: integer
+    external: KS_PASLAUGUT_ID
+  ks_bazine:
+    type: boolean
+    external: KS_BAZINE
+  ks_pav:
+    type: string
+    external: KS_PAV
+  ks_obj_apibudinimas:
+    type: string
+    external: KS_OBJ_APIBUDINIMAS
+  ks_pristatymo_adresas:
+    type: string
+    external: KS_PRISTATYMO_ADRESAS
+  ks_nuts_kodas:
+    type: string
+    external: KS_NUTS_KODAS
+  ks_sutarties_dalijimas:
+    type: boolean
+    external: KS_SUTARTIES_DALIJIMAS
+  ks_bendras_kiekis:
+    type: string
+    external: KS_BENDRAS_KIEKIS
+  ks_opcijos:
+    type: string
+    external: KS_OPCIJOS
+  ks_asmens_info:
+    type: string
+    external: KS_ASMENS_INFO
+  ks_teisine_padetis:
+    type: string
+    external: KS_TEISINE_PADETIS
+  ks_gebejimai:
+    type: string
+    external: KS_GEBEJIMAI
+  ks_techniniai_gebejimai:
+    type: string
+    external: KS_TECHNINIAI_GEBEJIMAI
+  ks_kita_informacija:
+    type: string
+    external: KS_KITA_INFORMACIJA
+  ks_proceduros_tipas:
+    type: boolean
+    external: KS_PROCEDUROS_TIPAS
+  ks_proceduros_mokestis:
+    type: integer
+    external: KS_PROCEDUROS_MOKESTIS
+  ks_proceduros_valiuta:
+    type: string
+    external: KS_PROCEDUROS_VALIUTA
+  ks_proceduros_mokejimo_salygos:
+    type: string
+    external: KS_PROCEDUROS_MOKEJIMO_SALYGOS
+  ks_proceduros_data_nuo:
+    type: datetime
+    external: KS_PROCEDUROS_DATA_NUO
+  ks_proceduros_teikimo_data:
+    type: datetime
+    external: KS_PROCEDUROS_TEIKIMO_DATA
+  ks_proceduros_data_iki:
+    type: datetime
+    external: KS_PROCEDUROS_DATA_IKI
+  ks_proceduros_men:
+    type: integer
+    external: KS_PROCEDUROS_MEN
+  ks_proceduros_dienos:
+    type: integer
+    external: KS_PROCEDUROS_DIENOS
+  ks_kalbost_id:
+    type: integer
+    external: KS_KALBOST_ID
+  ks_kitos_kalbos:
+    type: string
+    external: KS_KITOS_KALBOS
+  ks_pasikartojantis:
+    type: string
+    external: KS_PASIKARTOJANTIS
+  ks_papildoma_informacija:
+    type: string
+    external: KS_PAPILDOMA_INFORMACIJA

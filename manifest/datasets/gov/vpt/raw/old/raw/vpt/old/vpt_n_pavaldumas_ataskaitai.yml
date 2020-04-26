@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_pavaldumas_ataskaitai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PAVALDUMAS_ATASKAITAI
+properties:
+  _id:
+    type: pk
+    external: PAV_ID
+  pav_id:
+    type: integer
+    external: PAV_ID
+  pav_sbj_id:
+    type: integer
+    external: PAV_SBJ_ID
+  pav_lygis:
+    type: integer
+    external: PAV_LYGIS
+  pav_minis_id:
+    type: integer
+    external: PAV_MINIS_ID
+  pav_verte:
+    type: string
+    external: PAV_VERTE

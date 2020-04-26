@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_paz_pareigos_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PAZ_PAREIGOS_TBL
+properties:
+  _id:
+    type: pk
+    external: PAREIGU_ID
+  pareigu_id:
+    type: integer
+    external: PAREIGU_ID
+  pareigu_kodas:
+    type: integer
+    external: PAREIGU_KODAS
+  pareigu_pav:
+    type: string
+    external: PAREIGU_PAV

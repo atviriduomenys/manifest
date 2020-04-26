@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_sutik_sprendimai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SUTIK_SPRENDIMAI_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - DOK_EIL_NR
+    - DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_eil_nr:
+    type: integer
+    external: DOK_EIL_NR
+  dok_sprendimo_id:
+    type: integer
+    external: DOK_SPRENDIMO_ID
+  dok_sprendimo_pastabos:
+    type: string
+    external: DOK_SPRENDIMO_PASTABOS
+  dok_pagrindo_id:
+    type: integer
+    external: DOK_PAGRINDO_ID

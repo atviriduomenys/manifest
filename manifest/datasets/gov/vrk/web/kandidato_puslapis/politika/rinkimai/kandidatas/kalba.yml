@@ -1,0 +1,9 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/politika/rinkimai/kandidatas/kalba
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  pavadinimas:
+    type: string

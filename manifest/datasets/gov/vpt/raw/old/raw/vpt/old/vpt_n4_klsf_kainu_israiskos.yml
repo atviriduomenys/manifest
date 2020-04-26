@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_klsf_kainu_israiskos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N4_KLSF_KAINU_ISRAISKOS
+properties:
+  _id:
+    type: pk
+    external: KISR_ID
+  kisr_id:
+    type: integer
+    external: KISR_ID
+  kisr_kodas:
+    type: integer
+    external: KISR_KODAS
+  kisr_pav:
+    type: string
+    external: KISR_PAV

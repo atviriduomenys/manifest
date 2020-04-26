@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_pobudzio_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_POBUDZIO_TIPAI
+properties:
+  _id:
+    type: pk
+    external: POBUDZIOT_ID
+  pobudziot_id:
+    type: integer
+    external: POBUDZIOT_ID
+  pobudziot_kodas:
+    type: integer
+    external: POBUDZIOT_KODAS
+  pobudziot_pav:
+    type: string
+    external: POBUDZIOT_PAV

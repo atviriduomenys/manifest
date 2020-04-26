@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/tab_rezultatu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: TAB_REZULTATU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: TABRT_ID
+  tabrt_id:
+    type: integer
+    external: TABRT_ID
+  tabrt_kodas:
+    type: integer
+    external: TABRT_KODAS
+  tabrt_pav:
+    type: string
+    external: TABRT_PAV

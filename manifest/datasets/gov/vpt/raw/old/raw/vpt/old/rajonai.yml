@@ -1,0 +1,16 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rajonai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: RAJONAI
+properties:
+  _id:
+    type: pk
+    external: RAJ_KODAS
+  raj_kodas:
+    type: integer
+    external: RAJ_KODAS
+  raj_pavad:
+    type: string
+    external: RAJ_PAVAD

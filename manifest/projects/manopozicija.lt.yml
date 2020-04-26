@@ -1,15 +1,15 @@
-name: "projects/manopozicija.lt"
-title: "ManoPozicija.lt"
-type: "project"
+name: projects/manopozicija.lt
+title: ManoPozicija.lt
+type: project
 version: 1
-date: "2015-07-21"
+date: '2015-07-21'
 impact:
   # Just guessed numbers of impact.
-  - {year: 2015, users: 10, revenue: 0, employees: 0}
-  - {year: 2016, users:  0, revenue: 0, employees: 0}
-  - {year: 2017, users:  0, revenue: 0, employees: 0}
-  - {year: 2018, users: 10, revenue: 0, employees: 0}
-  - {year: 2019, users: 20, revenue: 0, employees: 0}
+- {year: 2015, users: 10, revenue: 0, employees: 0}
+- {year: 2016, users: 0, revenue: 0, employees: 0}
+- {year: 2017, users: 0, revenue: 0, employees: 0}
+- {year: 2018, users: 10, revenue: 0, employees: 0}
+- {year: 2019, users: 20, revenue: 0, employees: 0}
 objects:
   politika/seimas/kadencija:
     properties:
@@ -29,9 +29,9 @@ objects:
       seimo_narys:
       rūšis:
         enum:
-          - email
-          - phone
-          - website
+        - email
+        - phone
+        - website
       reikšmė:
   politika/seimas/mandatas:
     properties:

@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/ta_projektu_vizos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: TA_PROJEKTU_VIZOS
+properties:
+  _id:
+    type: pk
+    external:
+    - TAV_EILES_NR
+    - TAV_TA_ID
+  tav_ta_id:
+    type: integer
+    external: TAV_TA_ID
+  tav_eiles_nr:
+    type: integer
+    external: TAV_EILES_NR
+  tav_sbj_id:
+    type: integer
+    external: TAV_SBJ_ID
+  tav_patikslinimas:
+    type: string
+    external: TAV_PATIKSLINIMAS

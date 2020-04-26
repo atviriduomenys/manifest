@@ -1,5 +1,5 @@
 name: politika/rinkimai/europarlamento/aktyvumas
-title: "Europos Parlamento rinkimų aktyvumas"
+title: Europos Parlamento rinkimų aktyvumas
 type: model
 version:
   number: 1
@@ -7,13 +7,13 @@ version:
 properties:
   rinkimai:
     type: ref
-    object: politika/rinkimai/europarlamento/rinkimai
+    model: politika/rinkimai/europarlamento/rinkimai
   apylinke:
     type: ref
-    object: politika/rinkimai/apylinke
+    model: politika/rinkimai/apylinke
   apygarda:
     type: ref
-    object: politika/rinkimai/apygarda
+    model: politika/rinkimai/apygarda
   pradžia: {type: date}
   pabaiga: {type: date}
   rinkeju_skaicius:

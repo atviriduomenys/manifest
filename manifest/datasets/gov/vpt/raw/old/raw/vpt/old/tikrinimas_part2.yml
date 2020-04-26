@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/tikrinimas_part2
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: tikrinimas_part2
+properties:
+  _id:
+    type: pk
+  obja_obj_id:
+    type: integer
+    external: obja_obj_id
+  obja_pastabos:
+    type: string
+    external: obja_pastabos
+  obja_data:
+    type: datetime
+    external: obja_Data

@@ -1,0 +1,42 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_pazeidimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_VPP_PAZEIDIMAI
+properties:
+  _id:
+    type: pk
+  paz_dok_id:
+    type: integer
+    external: PAZ_DOK_ID
+  paz_eil_nr:
+    type: integer
+    external: PAZ_EIL_NR
+  paz_pastabos:
+    type: string
+    external: PAZ_PASTABOS
+  paz_pazt_id:
+    type: integer
+    external: PAZ_PAZT_ID
+  paz_pazt_0_nr:
+    type: integer
+    external: PAZ_PAZT_0_NR
+  paz_data:
+    type: datetime
+    external: PAZ_DATA
+  paz_reg_sbj_id:
+    type: integer
+    external: PAZ_REG_SBJ_ID
+  paz_sprt_id:
+    type: integer
+    external: PAZ_SPRT_ID
+  paz_spr_pastabos:
+    type: string
+    external: PAZ_SPR_PASTABOS
+  paz_spr_reg_data:
+    type: datetime
+    external: PAZ_SPR_REG_DATA
+  paz_spr_reg_sbj_id:
+    type: integer
+    external: PAZ_SPR_REG_SBJ_ID

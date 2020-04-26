@@ -1,0 +1,40 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/login_eus
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: Login_EUS
+properties:
+  _id:
+    type: pk
+    external: login_id
+  login_id:
+    type: integer
+    external: login_id
+  user_id:
+    type: integer
+    external: user_id
+  user_name:
+    type: string
+    external: user_name
+  password:
+    type: string
+    external: password
+  acc_rules:
+    type: boolean
+    external: acc_rules
+  acc_fees:
+    type: boolean
+    external: acc_fees
+  acc_disc:
+    type: boolean
+    external: acc_disc
+  acc_time:
+    type: datetime
+    external: acc_time
+  acc_language_id:
+    type: integer
+    external: acc_language_id
+  asserted_identity:
+    type: string
+    external: asserted_identity

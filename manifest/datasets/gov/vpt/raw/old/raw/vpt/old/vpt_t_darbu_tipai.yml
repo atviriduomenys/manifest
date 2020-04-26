@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_darbu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_DARBU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: T_DARBT_ID
+  t_darbt_id:
+    type: integer
+    external: T_DARBT_ID
+  t_darbt_kodas:
+    type: integer
+    external: T_DARBT_KODAS
+  t_darbt_pav:
+    type: string
+    external: T_DARBT_PAV

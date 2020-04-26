@@ -1,5 +1,5 @@
 name: politika/seimas/frakcija
-title: "Frakcija"
+title: Frakcija
 type: model
 version:
   number: 1
@@ -7,11 +7,11 @@ version:
 properties:
   pavadinimas:
     type: string
-    title: "Pavadinimas"
+    title: Pavadinimas
   trumpinys:
     type: string
-    title: "Trumpinys"
-    description: "Frakcijos pavadinimo trumpinys."
+    title: Trumpinys
+    description: Frakcijos pavadinimo trumpinys.
   kadencija:
     type: ref
-    object: politika/seimas/kadencija
+    model: politika/seimas/kadencija

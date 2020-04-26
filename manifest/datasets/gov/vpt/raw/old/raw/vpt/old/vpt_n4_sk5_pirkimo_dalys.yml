@@ -1,0 +1,61 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_sk5_pirkimo_dalys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N4_SK5_PIRKIMO_DALYS
+properties:
+  _id:
+    type: pk
+    external:
+    - PD_DOK_ID
+    - PD_EILES_NR
+  pd_dok_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_informaciniai_pranesimai
+    external: PD_DOK_ID
+  pd_eiles_nr:
+    type: integer
+    external: PD_EILES_NR
+  pd_pavadinimas:
+    type: string
+    external: PD_PAVADINIMAS
+  pd_ankstesnis_pirkimo_kodas:
+    type: integer
+    external: PD_ANKSTESNIS_PIRKIMO_KODAS
+  pd_ankstesnio_dok_id:
+    type: integer
+    external: PD_ANKSTESNIO_DOK_ID
+  pd_obj_rusis:
+    type: integer
+    external: PD_OBJ_RUSIS
+  pd_darbut_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_darbu_tipai
+    external: PD_DARBUT_ID
+  pd_paslaugut_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_paslaugu_tipai
+    external: PD_PASLAUGUT_ID
+  pd_prekiut_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_prekiu_tipai
+    external: PD_PREKIUT_ID
+  pd_apimtys:
+    type: string
+    external: PD_APIMTYS
+  pd_pratesimai:
+    type: string
+    external: PD_PRATESIMAI
+  pd_trukme_men:
+    type: integer
+    external: PD_TRUKME_MEN
+  pd_trukme_dien:
+    type: integer
+    external: PD_TRUKME_DIEN
+  pd_trukme_data_nuo:
+    type: datetime
+    external: PD_TRUKME_DATA_NUO
+  pd_trukme_data_iki:
+    type: datetime
+    external: PD_TRUKME_DATA_IKI

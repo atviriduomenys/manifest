@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sutarties_salys_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUTARTIES_SALYS_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - SUTS_EIL_NR
+    - SUTS_SUT_ID
+  suts_sut_id:
+    type: integer
+    external: SUTS_SUT_ID
+  suts_eil_nr:
+    type: integer
+    external: SUTS_EIL_NR
+  suts_sbj_id:
+    type: integer
+    external: SUtS_SBJ_ID
+  suts_sutst_id:
+    type: integer
+    external: SUTS_SUTST_ID
+  suts_pasirase:
+    type: string
+    external: SUTS_PASIRASE
+  suts_pasirase_data:
+    type: datetime
+    external: SUTS_PASIRASE_DATA
+  suts_pastabos:
+    type: string
+    external: SUTS_PASTABOS
+  suts_patikslinimas:
+    type: string
+    external: SUTS_PATIKSLINIMAS

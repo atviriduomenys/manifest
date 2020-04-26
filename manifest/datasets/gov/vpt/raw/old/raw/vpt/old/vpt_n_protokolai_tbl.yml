@@ -1,0 +1,91 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_protokolai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PROTOKOLAI_TBL
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_po_sbj_id:
+    type: integer
+    external: DOK_PO_SBJ_ID
+  dok_po_patikslinimas:
+    type: string
+    external: DOK_PO_PATIKSLINIMAS
+  dok_asmenys:
+    type: string
+    external: DOK_ASMENYS
+  dok_vadovas:
+    type: integer
+    external: DOK_VADOVAS
+  dok_pirmininkas:
+    type: integer
+    external: DOK_PIRMININKAS
+  dok_nariai:
+    type: integer
+    external: DOK_NARIAI
+  dok_pazeidimai:
+    type: integer
+    external: DOK_PAZEIDIMAI
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_n3_info_data:
+    type: datetime
+    external: DOK_N3_INFO_DATA
+  dok_n3_info_nr:
+    type: integer
+    external: DOK_N3_INFO_NR
+  dok_n3_procedura:
+    type: string
+    external: DOK_N3_PROCEDURA
+  dok_n3_tikr_vert_data:
+    type: datetime
+    external: DOK_N3_TIKR_VERT_DATA
+  dok_n3_tikr_vert_nr:
+    type: integer
+    external: DOK_N3_TIKR_VERT_NR
+  dok_n3_pareigu_id:
+    type: integer
+    external: DOK_N3_PAREIGU_ID
+  dok_n3_pazeid_vardas:
+    type: string
+    external: DOK_N3_PAZEID_VARDAS
+  dok_n3_pazeid_pavarde:
+    type: string
+    external: DOK_N3_PAZEID_PAVARDE
+  dok_n3_prot_sbj_id:
+    type: integer
+    external: DOK_N3_PROT_SBJ_ID
+  dok_n3_prot_data:
+    type: datetime
+    external: DOK_N3_PROT_DATA
+  dok_n3_ab_id:
+    type: integer
+    external: DOK_N3_AB_ID
+  dok_n3_nuobaudos_data:
+    type: datetime
+    external: DOK_N3_NUOBAUDOS_DATA
+  dok_n3_pastabos:
+    type: string
+    external: DOK_N3_PASTABOS
+  dok_susiejimas:
+    type: integer
+    external: DOK_SUSIEJIMAS
+  dok_n3_prot_nr:
+    type: string
+    external: DOK_N3_PROT_NR

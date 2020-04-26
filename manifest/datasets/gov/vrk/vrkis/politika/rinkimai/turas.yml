@@ -1,0 +1,26 @@
+type: model
+name: datasets/gov/vrk/vrkis/politika/rinkimai/turas
+external:
+  dataset: datasets/gov/vrk/vrkis
+  resource: rt
+  name: data
+properties:
+  _id:
+    type: pk
+    external: id
+  rinkimai:
+    type: ref
+    model: politika/rinkimai
+    external: vr_id
+  numeris:
+    type: string
+    external: rt_no
+  pavadinimas:
+    type: string
+    external: vrt_pav
+  data:
+    type: date
+    external: rink_data
+  einamieji:
+    type: boolean
+    external: einamieji

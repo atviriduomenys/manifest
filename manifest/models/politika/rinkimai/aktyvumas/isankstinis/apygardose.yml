@@ -1,12 +1,12 @@
 name: politika/rinkimai/aktyvumas/isankstinis/apygardose
-title: "Rinkėjų aktyvumas balsuojant iš anksto apygardose"
+title: Rinkėjų aktyvumas balsuojant iš anksto apygardose
 type: model
 version:
   number: 1
   date: 2019-01-24
 properties:
-  turas: {type: ref, object: politika/rinkimai/turas}
-  apygarda: {type: ref, object: politika/rinkimai/apygarda}
+  turas: {type: ref, model: politika/rinkimai/turas}
+  apygarda: {type: ref, model: politika/rinkimai/apygarda}
   rinkeju_skaicius: {type: integer}
   balsavo_is_anksto: {type: integer}
   balsavo_paste: {type: integer}

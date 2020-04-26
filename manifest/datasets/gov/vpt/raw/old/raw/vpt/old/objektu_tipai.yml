@@ -1,0 +1,55 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: OBJT_ID
+  objt_id:
+    type: integer
+    external: OBJT_ID
+  objt_skodas:
+    type: string
+    external: OBJT_SKODAS
+  objt_pav:
+    type: string
+    external: OBJT_PAV
+  objt_pav2:
+    type: string
+    external: OBJT_PAV2
+  objt_saraso_url:
+    type: string
+    external: OBJT_SARASO_URL
+  objt_rysio_saraso_url:
+    type: string
+    external: OBJT_RYSIO_SARASO_URL
+  objt_paieskos_url:
+    type: string
+    external: OBJT_PAIESKOS_URL
+  objt_rysio_paieskos_url:
+    type: string
+    external: OBJT_RYSIO_PAIESKOS_URL
+  objt_naujas_url:
+    type: string
+    external: OBJT_NAUJAS_URL
+  objt_saraso_periodas:
+    type: integer
+    external: OBJT_SARASO_PERIODAS
+  objt_korteles_url:
+    type: string
+    external: OBJT_KORTELES_URL
+  objt_ataskaitu_url:
+    type: string
+    external: OBJT_ATASKAITU_URL
+  objt_greito_saraso_url:
+    type: string
+    external: OBJT_GREITO_SARASO_URL
+  objt_kalba:
+    type: string
+    external: OBJT_KALBA
+  objt_orderby_id:
+    type: integer
+    external: OBJT_ORDERBY_ID

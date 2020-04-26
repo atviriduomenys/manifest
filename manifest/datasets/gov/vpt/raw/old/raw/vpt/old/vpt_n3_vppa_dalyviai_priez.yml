@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_vppa_dalyviai_priez
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_VPPA_DALYVIAI_PRIEZ
+properties:
+  _id:
+    type: pk
+  priez_eil_nr:
+    type: integer
+    external: PRIEZ_EIL_NR
+  priez_dok_id:
+    type: integer
+    external: PRIEZ_DOK_ID
+  priez_3a_dok_id:
+    type: integer
+    external: PRIEZ_3A_DOK_ID
+  priez_numeriai:
+    type: string
+    external: PRIEZ_NUMERIAI
+  priez_tekst:
+    type: string
+    external: PRIEZ_TEKST

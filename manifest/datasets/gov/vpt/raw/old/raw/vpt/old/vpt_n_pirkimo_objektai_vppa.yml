@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_pirkimo_objektai_vppa
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PIRKIMO_OBJEKTAI_VPPA
+properties:
+  _id:
+    type: pk
+    external:
+    - PIRKO_DOK_ID
+    - PIRKO_POBJ_ID
+  pirko_dok_id:
+    type: integer
+    external: PIRKO_DOK_ID
+  pirko_3a_dok_id:
+    type: integer
+    external: PIRKO_3A_DOK_ID
+  pirko_pobj_id:
+    type: integer
+    external: PIRKO_POBJ_ID
+  pirko_eil_nr:
+    type: integer
+    external: PIRKO_EIL_NR
+  pirko_pagrindinis:
+    type: integer
+    external: PIRKO_PAGRINDINIS
+  pirko_reg_data:
+    type: datetime
+    external: PIRKO_REG_DATA
+  pirko_reg_sbj_id:
+    type: integer
+    external: PIRKO_REG_SBJ_ID

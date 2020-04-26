@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_proceduru_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_PROCEDURU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: T_PROCT_ID
+  t_proct_id:
+    type: integer
+    external: T_PROCT_ID
+  t_proct_kodas:
+    type: integer
+    external: T_PROCT_KODAS
+  t_proct_pav:
+    type: string
+    external: T_PROCT_PAV

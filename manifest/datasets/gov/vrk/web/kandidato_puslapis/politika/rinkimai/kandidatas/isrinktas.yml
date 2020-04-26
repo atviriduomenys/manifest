@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/politika/rinkimai/kandidatas/isrinktas
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  institucija:
+    type: string
+  pareigos:
+    type: string
+  nuo:
+    type: string
+  iki:
+    type: string

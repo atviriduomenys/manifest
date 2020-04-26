@@ -1,5 +1,5 @@
 name: politika/rinkimai/kandidatas/issilavinimas
-title: "Išsilavinimas"
+title: Išsilavinimas
 type: model
 version:
   number: 1
@@ -8,6 +8,6 @@ properties:
   issilavinimas: {type: string}
   mokymo_istaiga:
     type: ref
-    object: teise/juridinis_asmuo
+    model: teise/juridinis_asmuo
   specialybe: {type: string}
   baigimo_metai: {type: integer}

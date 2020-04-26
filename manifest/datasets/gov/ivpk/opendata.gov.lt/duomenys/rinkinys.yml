@@ -1,0 +1,43 @@
+type: model
+name: datasets/gov/ivpk/opendata.gov.lt/duomenys/rinkinys
+external:
+  dataset: datasets/gov/ivpk/opendata.gov.lt
+  resource: irs
+  name: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
+  pk: urlid
+properties:
+  urlid:
+    type: string
+    prepare: param(dataset).id
+  kodas:
+    type: string
+    external: Kodas
+  pavadinimas:
+    type: string
+    external: Pavadinimas
+  aprašymas:
+    type: string
+    external: Apibūdinimas
+  sukurta:
+    type: date
+    external: Rinkmenos aprašymo publikavimo duomenys
+  atnaujinta:
+    type: date
+    level: 0
+  raktažodžiai:
+    type: string
+    external: Reikšminiai žodžiai
+  kontaktai:
+    type: string
+    external: Kontaktiniai duomenys
+  vietovės:
+    type: string
+    level: 0
+  laikotarpiai:
+    type: string
+  dažnumas:
+    type: string
+    external: Atnaujinimo dažnumas
+  tiekėjas:
+    type: string
+    external: Rinkmenos tvarkytojas

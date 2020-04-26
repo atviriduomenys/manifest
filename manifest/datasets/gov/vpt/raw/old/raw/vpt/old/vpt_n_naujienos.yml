@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_naujienos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_NAUJIENOS
+properties:
+  _id:
+    type: pk
+    external: NJN_EIL_NR
+  njn_eil_nr:
+    type: integer
+    external: NJN_EIL_NR
+  njn_reg_sbj_id:
+    type: integer
+    external: NJN_REG_SBJ_ID
+  njn_reg_data:
+    type: datetime
+    external: NJN_REG_DATA
+  njn_antraste:
+    type: string
+    external: NJN_ANTRASTE
+  njn_komentaras:
+    type: string
+    external: NJN_KOMENTARAS

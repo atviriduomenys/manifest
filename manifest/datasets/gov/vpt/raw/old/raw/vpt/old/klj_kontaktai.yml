@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/klj_kontaktai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: KLJ_KONTAKTAI
+properties:
+  _id:
+    type: pk
+  kljk_id:
+    type: integer
+    external: KLJK_ID
+  kljk_data:
+    type: datetime
+    external: KLJK_DATA
+  kljk_laikas_nuo:
+    type: datetime
+    external: KLJK_LAIKAS_NUO
+  kljk_laikas_iki:
+    type: datetime
+    external: KLJK_LAIKAS_IKI
+  kljk_aprasymas:
+    type: string
+    external: KLJK_APRASYMAS
+  kljk_tipo_id:
+    type: integer
+    external: KLJK_TIPO_ID
+  kljk_tipo_patikslinimas:
+    type: string
+    external: KLJK_TIPO_PATIKSLINIMAS
+  kljk_isvados:
+    type: string
+    external: KLJK_ISVADOS
+  kljk_pastabos:
+    type: string
+    external: KLJK_PASTABOS

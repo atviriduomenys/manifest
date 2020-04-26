@@ -1,5 +1,5 @@
 name: politika/rinkimai
-title: "Rinkimai"
+title: Rinkimai
 type: model
 version:
   number: 1
@@ -9,8 +9,8 @@ properties:
   rusis:
     type: string
     enum:
-      - europarlamento
-      - prezidento
-      - savivaldybių
-      - seimo
-  data: {type: date, title: "Rinkimų data"}
+    - europarlamento
+    - prezidento
+    - savivaldybių
+    - seimo
+  data: {type: date, title: Rinkimų data}

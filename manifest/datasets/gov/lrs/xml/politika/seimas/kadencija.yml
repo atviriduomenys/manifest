@@ -1,0 +1,23 @@
+type: model
+name: datasets/gov/lrs/xml/politika/seimas/kadencija
+external:
+  dataset: datasets/gov/lrs/xml
+  resource: kadencijos
+  name: /SeimoInformacija/SeimoKadencija
+properties:
+  _id:
+    type: pk
+    external: '@kadencijos_id'
+  pavadinimas:
+    type: string
+    external: '@pavadinimas'
+  nuo:
+    type: date
+    external: '@data_nuo'
+  iki:
+    type: date
+    external: '@data_iki'
+  kadencijos_id:
+    type: string
+    external: '@kadencijos_id'
+

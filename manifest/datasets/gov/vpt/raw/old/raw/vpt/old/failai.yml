@@ -1,0 +1,52 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/failai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: FAILAI
+properties:
+  _id:
+    type: pk
+    external: FILE_ID
+  file_id:
+    type: integer
+    external: FILE_ID
+  file_katalogas:
+    type: string
+    external: FILE_KATALOGAS
+  file_vardas:
+    type: string
+    external: FILE_VARDAS
+  file_orig_pc:
+    type: string
+    external: FILE_ORIG_PC
+  file_orig_katalogas:
+    type: string
+    external: FILE_ORIG_KATALOGAS
+  file_orig_vardas:
+    type: string
+    external: FILE_ORIG_VARDAS
+  file_aprasymas:
+    type: string
+    external: FILE_APRASYMAS
+  file_ver_data:
+    type: datetime
+    external: FILE_VER_DATA
+  file_ver:
+    type: integer
+    external: FILE_VER
+  file_sbj_id:
+    type: integer
+    external: FILE_SBJ_ID
+  file_dbdata:
+    type: datetime
+    external: FILE_DBDATA
+  file_modifikuota:
+    type: string
+    external: FILE_MODIFIKUOTA
+  file_istrinta:
+    type: string
+    external: FILE_ISTRINTA
+  protokolo_nutarimo_eil_nr:
+    type: integer
+    external: PROTOKOLO_NUTARIMO_EIL_NR

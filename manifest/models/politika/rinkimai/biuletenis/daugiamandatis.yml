@@ -1,14 +1,14 @@
 name: politika/rinkimai/biuletenis/daugiamandatis
-title: "Referendumo biuletenis"
+title: Referendumo biuletenis
 type: model
 version:
   number: 1
   date: 2019-01-20
 properties:
-  numeris: {type: string, title: "Biuletenio numeris"}
+  numeris: {type: string, title: Biuletenio numeris}
   partija:
     type: ref
-    object: politika/partija
+    model: politika/partija
   pirmumas:
     type: backref
-    object: politika/rinkimai/biuletenis/daugiamandatis/pirmumas
+    model: politika/rinkimai/biuletenis/daugiamandatis/pirmumas

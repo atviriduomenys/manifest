@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vrk/arcgis/EP_2014_R_APL/politika/rinkimai/europarlamento/rezultatas
+external:
+  dataset: datasets/gov/vrk/arcgis/EP_2014_R_APL
+  resource: rezultatai
+  name: ''
+properties:
+  rinkimai:
+    type: string
+    level: 1
+  apylinke:
+    type: string
+    level: 1
+  apygarda:
+    type: string
+    level: 1
+  kandidatas:
+    type: string
+    level: 0
+  balsu_skaicius:
+    type: string
+    level: 0
+  balsu_skaicius_procentais:
+    type: string
+    level: 0

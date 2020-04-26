@@ -3,16 +3,16 @@ title: manoseimas.lt
 source_code: https://github.com/ManoSeimas/manoseimas.lt
 type: project
 version: 1
-date: "2012-04-01"
+date: '2012-04-01'
 impact:
   # Real data from Google Analytics.
-  - {year: 2012, users: 25036, revenue: 0, employees: 0}
-  - {year: 2013, users:  7544, revenue: 0, employees: 0}
-  - {year: 2014, users: 19224, revenue: 0, employees: 0}
-  - {year: 2015, users: 13687, revenue: 0, employees: 0}
-  - {year: 2016, users: 66959, revenue: 0, employees: 0}
-  - {year: 2017, users:  3690, revenue: 0, employees: 0}
-  - {year: 2018, users:  1111, revenue: 0, employees: 0}
+- {year: 2012, users: 25036, revenue: 0, employees: 0}
+- {year: 2013, users: 7544, revenue: 0, employees: 0}
+- {year: 2014, users: 19224, revenue: 0, employees: 0}
+- {year: 2015, users: 13687, revenue: 0, employees: 0}
+- {year: 2016, users: 66959, revenue: 0, employees: 0}
+- {year: 2017, users: 3690, revenue: 0, employees: 0}
+- {year: 2018, users: 1111, revenue: 0, employees: 0}
 objects:
   politika/seimas/kadencija:
     properties:
@@ -32,9 +32,9 @@ objects:
       seimo_narys:
       rūšis:
         enum:
-          - email
-          - phone
-          - website
+        - email
+        - phone
+        - website
       reikšmė:
   politika/seimas/mandatas:
     properties:

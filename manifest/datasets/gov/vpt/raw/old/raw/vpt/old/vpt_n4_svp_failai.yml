@@ -1,0 +1,39 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_svp_failai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N4_SVP_FAILAI
+properties:
+  _id:
+    type: pk
+    external: FILE_ID
+  file_id:
+    type: integer
+    external: FILE_ID
+  file_tv_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_svp_taisykliu_versijos
+    external: FILE_TV_ID
+  file_katalogas:
+    type: string
+    external: FILE_KATALOGAS
+  file_vardas:
+    type: string
+    external: FILE_VARDAS
+  file_orig_pc:
+    type: string
+    external: FILE_ORIG_PC
+  file_orig_katalogas:
+    type: string
+    external: FILE_ORIG_KATALOGAS
+  file_orig_vardas:
+    type: string
+    external: FILE_ORIG_VARDAS
+  file_data:
+    type: datetime
+    external: FILE_DATA
+  file_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: FILE_SBJ_ID

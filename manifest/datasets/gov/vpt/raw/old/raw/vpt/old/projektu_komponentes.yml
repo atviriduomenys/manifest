@@ -1,0 +1,49 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_komponentes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_KOMPONENTES
+properties:
+  _id:
+    type: pk
+    external: PRJK_ID
+  prjk_id:
+    type: integer
+    external: PRJK_ID
+  prjk_prj_id:
+    type: integer
+    external: PRJK_PRJ_ID
+  prjk_eiles_nr:
+    type: integer
+    external: PRJK_EILES_NR
+  prjk_antraste:
+    type: string
+    external: PRJK_ANTRASTE
+  prjk_data_nuo:
+    type: datetime
+    external: PRJK_DATA_NUO
+  prjk_data_iki:
+    type: datetime
+    external: PRJK_DATA_IKI
+  prjk_fakt_data_nuo:
+    type: datetime
+    external: PRJK_FAKT_DATA_NUO
+  prjk_fakt_data_iki:
+    type: datetime
+    external: PRJK_FAKT_DATA_IKI
+  prjk_vykd_psbj_id:
+    type: integer
+    external: PRJK_VYKD_PSBJ_ID
+  prjk_vykd_kiti:
+    type: string
+    external: PRJK_VYKD_KITI
+  prjk_diegim_psbj_id:
+    type: integer
+    external: PRJK_DIEGIM_PSBJ_ID
+  prjk_diegim_kiti:
+    type: string
+    external: PRJK_DIEGIM_KITI
+  prjk_diegimo_vieta:
+    type: string
+    external: PRJK_DIEGIMO_VIETA

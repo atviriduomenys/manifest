@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_sprendimu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PATIKIMI_TIEKEJAI_SPRENDIMU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: STIPO_ID
+  stipo_id:
+    type: integer
+    external: STIPO_ID
+  stipo_kodas:
+    type: integer
+    external: STIPO_KODAS
+  stipo_pav:
+    type: string
+    external: STIPO_PAV
+  stipo_data_galioja_iki:
+    type: datetime
+    external: STIPO_DATA_GALIOJA_IKI

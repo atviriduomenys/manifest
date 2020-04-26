@@ -1,5 +1,5 @@
 name: politika/rinkimai/kandidatas
-title: "Kandidatas rinkimuose"
+title: Kandidatas rinkimuose
 type: model
 version:
   number: 1
@@ -7,16 +7,16 @@ version:
 properties:
   rinkimai:
     type: ref
-    object: politika/rinkimai
+    model: politika/rinkimai
   asmuo:
     type: ref
-    object: politika/rinkimai/asmuo
+    model: politika/rinkimai/asmuo
   partija:
     type: ref
-    object: politika/partija
+    model: politika/partija
   sarasas:
     type: ref
-    object: politika/rinkimai/kandidatas/sarasas
+    model: politika/rinkimai/kandidatas/sarasas
   kandidato_nr_sarase: {type: integer}
   vardas: {type: string}
   pavarde: {type: string}
@@ -24,69 +24,71 @@ properties:
   lytis:
     type: string
     enum:
-      - vyras
-      - moteris
+    - vyras
+    - moteris
   ar_isrinktas: {type: boolean}
-  dalyvavo_vienmandateje: {type: integer, title: "Kiek kartų dalyvavo vienmandateje apygardoje?"}
-  dalyvavo_daugiamandateje: {type: integer, title: "Kiek kartų dalyvavo daugiamandatėje apygardoje?"}
-  isrinktas_kartu: {type: integer, title: "Kiek kartų buvo išrinktas?"}
-  isrinktas_pirma_karta: {type: date, title: "Kada buvo išrinktas pirmą kartą?"}
-  isrinktas_paskutini_karta: {type: date, title: "Kada buvo išrinktas paskutinį kartą?"}
+  dalyvavo_vienmandateje: {type: integer, title: Kiek kartų dalyvavo vienmandateje
+      apygardoje?}
+  dalyvavo_daugiamandateje: {type: integer, title: Kiek kartų dalyvavo daugiamandatėje
+      apygardoje?}
+  isrinktas_kartu: {type: integer, title: Kiek kartų buvo išrinktas?}
+  isrinktas_pirma_karta: {type: date, title: Kada buvo išrinktas pirmą kartą?}
+  isrinktas_paskutini_karta: {type: date, title: Kada buvo išrinktas paskutinį kartą?}
   gimimo_data: {type: date}
   gyvenamos_vietos_adresas: {type: spatial}
   gimimo_vieta: {type: spatial}
   tautybe: {type: string}
   uzsienio_kalbos:
     type: backref
-    object: politika/rinkimai/kandidatas/kalba
+    model: politika/rinkimai/kandidatas/kalba
   mokslo_laipsnis:
     type: string
     enum:
-      - bakalauras
-      - magistras
-      - daktaras
+    - bakalauras
+    - magistras
+    - daktaras
   issilavinimas:
     type: backref
-    object: politika/rinkimai/kandidatas/issilavinimas
+    model: politika/rinkimai/kandidatas/issilavinimas
   isrinktas:
     type: backref
-    object: politika/rinkimai/kandidatas/issilavinimas
+    model: politika/rinkimai/kandidatas/issilavinimas
     description: |
       Ar buvote anksčiau išrinktas į Lietuvos Respublikos Aukščiausiąją Tarybą,
       Seimą, savivaldybių tarybas; kitų Europos Sąjungos valstybių narių
       parlamentus, savivaldybių institucijas; Europos Parlamentą.
   pareigos:
     type: backref
-    object: politika/rinkimai/kandidatas/pareigos
+    model: politika/rinkimai/kandidatas/pareigos
   pomegiai:
     type: backref
-    object: politika/rinkimai/kandidatas/pomegis
+    model: politika/rinkimai/kandidatas/pomegis
   seiminine_padetis:
     type: string
     enum:
-      - vedes
-      - nevedes
+    - vedes
+    - nevedes
   sutuoktinis:
     type: ref
-    object: politika/rinkimai/kandidatas/sutuoktinis
+    model: politika/rinkimai/kandidatas/sutuoktinis
   vaikai:
     type: backref
-    object: politika/rinkimai/kandidatas/vaikas
+    model: politika/rinkimai/kandidatas/vaikas
   biografija: {type: string}
   turtas:
     type: number
-    title: "Privalomas registruoti turtas"
+    title: Privalomas registruoti turtas
   vertybes:
     type: number
-    title: "Vertybiniai popieriai, meno kūriniai, juvelyriniai dirbiniai"
+    title: Vertybiniai popieriai, meno kūriniai, juvelyriniai dirbiniai
   pinigai:
     type: number
-    title: "Piniginės lėšos"
+    title: Piniginės lėšos
   suteiktos_paskolos: {type: number}
   gautos_paskolos: {type: number}
   pajamos:
     type: number
-    title: "Gautų pajamų suma"
+    title: Gautų pajamų suma
     description: |
       Metinės pajamų mokesčio deklaracijos GPM305 formos pagrindinių duomenų
       išrašas.
@@ -94,7 +96,7 @@ properties:
       GPM305 formos 12, 13, 14 ir GPM305V formos V14 laukelių suma.
   mokesciai:
     type: number
-    title: "Išskaičiuota (sumokėta) pajamų mokesčio suma"
+    title: Išskaičiuota (sumokėta) pajamų mokesčio suma
     description: |
       Metinės pajamų mokesčio deklaracijos GPM305 formos pagrindinių duomenų
       išrašas.
@@ -102,5 +104,5 @@ properties:
       GPM305 formos 27, 28, 30 laukelių suma.
   interesai:
     type: backref
-    object: politika/rinkimai/kandidatas/interesas
+    model: politika/rinkimai/kandidatas/interesas
   kita: {type: string}

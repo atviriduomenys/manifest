@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektu_info
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUBJEKTU_INFO
+properties:
+  _id:
+    type: pk
+  sbjk_id:
+    type: integer
+    external: SBJK_ID
+  sbjk_sbj_id:
+    type: integer
+    external: SBJK_SBJ_ID
+  sbjk_vrt_sbj_id:
+    type: integer
+    external: SBJK_VRT_SBJ_ID
+  sbjk_reg_data:
+    type: datetime
+    external: SBJK_REG_DATA
+  sbjk_vardas_pavarde:
+    type: string
+    external: SBJK_VARDAS_PAVARDE
+  sbjk_email:
+    type: string
+    external: SBJK_EMAIL
+  sbjk_telefonas:
+    type: string
+    external: SBJK_TELEFONAS
+  sbjk_adresas:
+    type: string
+    external: SBJK_ADRESAS
+  pastabos:
+    type: string
+    external: PASTABOS

@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_tikr_nutarimai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_TIKR_NUTARIMAI_TBL
+properties:
+  _id:
+    type: pk
+    external: NUTAR_ID
+  nutar_id:
+    type: integer
+    external: NUTAR_ID
+  nutar_kodas:
+    type: integer
+    external: NUTAR_KODAS
+  nutar_pav:
+    type: string
+    external: NUTAR_PAV

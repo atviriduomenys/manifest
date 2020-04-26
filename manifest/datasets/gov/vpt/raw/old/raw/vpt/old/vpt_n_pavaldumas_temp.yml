@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_pavaldumas_temp
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PAVALDUMAS_TEMP
+properties:
+  _id:
+    type: pk
+    external: PAVALD_ID
+  pavald_id:
+    type: integer
+    external: PAVALD_ID
+  pavald_minst_sbj_id:
+    type: integer
+    external: PAVALD_MINST_SBJ_ID
+  pavald_pirkejo_sbj_id:
+    type: integer
+    external: PAVALD_PIRKEJO_SBJ_ID
+  pavald_pot_id:
+    type: integer
+    external: PAVALD_POT_ID
+  pavald_tikrinta:
+    type: integer
+    external: PAVALD_TIKRINTA
+  pavald_pastabos:
+    type: string
+    external: PAVALD_PASTABOS
+  pavald_adresas:
+    type: string
+    external: PAVALD_ADRESAS

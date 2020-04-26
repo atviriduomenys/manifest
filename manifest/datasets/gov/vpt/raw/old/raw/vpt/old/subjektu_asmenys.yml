@@ -1,0 +1,43 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektu_asmenys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUBJEKTU_ASMENYS
+properties:
+  _id:
+    type: pk
+    external: ASM_ID
+  asm_id:
+    type: integer
+    external: ASM_ID
+  asm_vardas:
+    type: string
+    external: ASM_VARDAS
+  asm_pavarde:
+    type: string
+    external: ASM_PAVARDE
+  asm_ntip_id:
+    type: integer
+    external: ASM_NTIP_ID
+  asm_data_nuo:
+    type: datetime
+    external: ASM_DATA_NUO
+  asm_data_iki:
+    type: datetime
+    external: ASM_DATA_IKI
+  asm_login:
+    type: string
+    external: ASM_LOGIN
+  asm_password:
+    type: string
+    external: ASM_PASSWORD
+  asm_kodas:
+    type: string
+    external: ASM_KODAS
+  asm_ctm_id:
+    type: integer
+    external: ASM_CTM_ID
+  sync_date:
+    type: datetime
+    external: sync_date

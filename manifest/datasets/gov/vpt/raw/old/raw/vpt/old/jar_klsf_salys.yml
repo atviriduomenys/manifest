@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_salys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_SALYS
+properties:
+  _id:
+    type: pk
+    external: SAL_KODAS
+  sal_kodas:
+    type: integer
+    external: SAL_KODAS
+  sal_pav:
+    type: string
+    external: SAL_PAV
+  sal_pav_english:
+    type: string
+    external: SAL_PAV_ENGLISH
+  sal_triraidis_kodas:
+    type: string
+    external: SAL_TRIRAIDIS_KODAS
+  sal_galioja_iki:
+    type: datetime
+    external: SAL_GALIOJA_IKI
+  sal_koregavimo_data:
+    type: datetime
+    external: SAL_KOREGAVIMO_DATA

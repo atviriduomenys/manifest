@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_spec_zymos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_SPEC_ZYMOS
+properties:
+  _id:
+    type: pk
+    external:
+    - OSZ_OBJ_ID
+    - OSZ_SPZ_ID
+  osz_obj_id:
+    type: integer
+    external: OSZ_OBJ_ID
+  osz_spz_id:
+    type: integer
+    external: OSZ_SPZ_ID
+  osz_spzt_id:
+    type: integer
+    external: OSZ_SPZT_ID
+  osz_sbj_id:
+    type: integer
+    external: OSZ_SBJ_ID
+  osz_db_data:
+    type: datetime
+    external: OSZ_DB_DATA
+  osz_patikslinimas:
+    type: string
+    external: OSZ_PATIKSLINIMAS

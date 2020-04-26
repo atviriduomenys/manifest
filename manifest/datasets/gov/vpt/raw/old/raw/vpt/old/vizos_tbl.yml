@@ -1,0 +1,51 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vizos_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VIZOS_TBL
+properties:
+  _id:
+    type: pk
+  vz_id:
+    type: integer
+    external: VZ_ID
+  vz_obj_id:
+    type: integer
+    external: VZ_OBJ_ID
+  vz_sbj_id:
+    type: integer
+    external: VZ_SBJ_ID
+  vz_data:
+    type: datetime
+    external: VZ_DATA
+  vz_pastabos:
+    type: string
+    external: VZ_PASTABOS
+  vz_reg_sbj_id:
+    type: integer
+    external: VZ_REG_SBJ_ID
+  vz_reg_data:
+    type: datetime
+    external: VZ_REG_DATA
+  vz_tipas:
+    type: integer
+    external: VZ_TIPAS
+  vz_panaikinta:
+    type: integer
+    external: VZ_PANAIKINTA
+  vz_pan_data:
+    type: datetime
+    external: VZ_PAN_DATA
+  vz_pan_sbj_id:
+    type: integer
+    external: VZ_PAN_SBJ_ID
+  vz_pan_pastabos:
+    type: string
+    external: VZ_PAN_PASTABOS
+  vz_pan_reg_data:
+    type: datetime
+    external: VZ_PAN_REG_DATA
+  vz_pan_reg_sbj_id:
+    type: integer
+    external: VZ_PAN_REG_SBJ_ID

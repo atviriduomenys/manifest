@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/salys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: salys
+properties:
+  _id:
+    type: pk
+    external: SALT_ID
+  salt_id:
+    type: integer
+    external: SALT_ID
+  salt_kodas:
+    type: integer
+    external: SALT_KODAS
+  salt_pav:
+    type: string
+    external: SALT_PAV
+  salt_pav2:
+    type: string
+    external: SALT_PAV2
+  salt_tipas:
+    type: string
+    external: SALT_TIPAS
+  salt_pav_en:
+    type: string
+    external: SALT_PAV_EN
+  salt_zem:
+    type: string
+    external: SALT_ZEM

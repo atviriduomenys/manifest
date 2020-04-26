@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_sap_ks_priedas_c
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_SAP_KS_PRIEDAS_C
+properties:
+  _id:
+    type: pk
+    external: DOK_OBJ_ID
+  dok_obj_id:
+    type: integer
+    external: DOK_OBJ_ID
+  punkt_a:
+    type: boolean
+    external: PUNKT_A
+  punkt_b:
+    type: boolean
+    external: PUNKT_B
+  punkt_c:
+    type: boolean
+    external: PUNKT_C
+  punkt_d:
+    type: boolean
+    external: PUNKT_D
+  punkt_e:
+    type: boolean
+    external: PUNKT_E

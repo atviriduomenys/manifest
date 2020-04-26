@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_atask_bak
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: vpt_vpp_atask_bak
+properties:
+  _id:
+    type: pk
+  dok_id:
+    type: integer
+    external: dok_id
+  checked:
+    type: integer
+    external: checked

@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/bylu_turinys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: BYLU_TURINYS
+properties:
+  _id:
+    type: pk
+    external:
+    - BT_BYL_ID
+    - BT_OBJ_ID
+  bt_byl_id:
+    type: integer
+    external: BT_BYL_ID
+  bt_obj_id:
+    type: integer
+    external: BT_OBJ_ID
+  bt_obj_t:
+    type: string
+    external: BT_OBJ_T
+  bt_pastabos:
+    type: string
+    external: BT_PASTABOS
+  bt_psl_nuo:
+    type: integer
+    external: BT_PSL_NUO
+  bt_psl_iki:
+    type: integer
+    external: BT_PSL_IKI

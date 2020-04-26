@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_kvalifikacines_sistemos_objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_KVALIFIKACINES_SISTEMOS_OBJEKTAI
+properties:
+  _id:
+    type: pk
+    external:
+    - KVS_DOK_ID
+    - KVS_EIL_NR
+  kvs_dok_id:
+    type: integer
+    external: KVS_DOK_ID
+  kvs_eil_nr:
+    type: integer
+    external: KVS_EIL_NR
+  kvs_apibudinimas:
+    type: string
+    external: KVS_APIBUDINIMAS
+  kvs_pav:
+    type: string
+    external: KVS_PAV
+  kvs_salygos:
+    type: string
+    external: KVS_SALYGOS
+  kvs_kita_nomenklatura:
+    type: string
+    external: KVS_KITA_NOMENKLATURA
+  kvs_paslaugut_id:
+    type: integer
+    external: KVS_PASLAUGUT_ID

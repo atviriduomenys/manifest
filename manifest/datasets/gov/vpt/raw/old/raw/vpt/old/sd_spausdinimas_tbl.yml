@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sd_spausdinimas_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SD_SPAUSDINIMAS_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - SPAUSD_EIL_NR
+    - SPAUSD_OBJ_ID
+    - SPAUSD_SARASO_NR
+  spausd_obj_id:
+    type: integer
+    external: SPAUSD_OBJ_ID
+  spausd_sbj_id:
+    type: integer
+    external: SPAUSD_SBJ_ID
+  spausd_saraso_nr:
+    type: integer
+    external: SPAUSD_SARASO_NR
+  spausd_eil_nr:
+    type: integer
+    external: SPAUSD_EIL_NR
+  spausd_svorio_suma:
+    type: number
+    external: SPAUSD_SVORIO_SUMA
+  spausd_form_id:
+    type: integer
+    external: SPAUSD_FORM_ID
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

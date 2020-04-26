@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vrk/arcgis/EP_2014_R_APL/politika/rinkimai/europarlamento/aktyvumas
+external:
+  dataset: datasets/gov/vrk/arcgis/EP_2014_R_APL
+  resource: rezultatai
+  name: ''
+properties:
+  rinkimai:
+    type: string
+    level: 1
+  apylinke:
+    type: string
+    level: 1
+  apygarda:
+    type: string
+    level: 1
+  pradžia:
+    type: string
+    level: 0
+  pabaiga:
+    type: string
+    level: 0
+  rinkeju_skaicius:
+    type: string
+    external: RINK_SK
+  balsu_skaicius:
+    type: string
+    external: dal_sk
+  galiojanciu_balsu_skaicius:
+    type: string
+    external: galioj_sk

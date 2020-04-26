@@ -1,6 +1,7 @@
 click
 jupyterlab
 matplotlib
+moto
 pandas
 pp-ez
 pprintpp

@@ -1,0 +1,43 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n5_vppa_duomenys_apie_sutarti
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N5_VPPA_DUOMENYS_APIE_SUTARTI
+properties:
+  _id:
+    type: pk
+    external:
+    - DAS_DOK_ID
+    - DAS_EIL_NR
+    - DAS_SUT_EIL_NR
+  das_dok_id:
+    type: integer
+    external: DAS_DOK_ID
+  das_3a_dok_id:
+    type: integer
+    external: DAS_3A_DOK_ID
+  das_eil_nr:
+    type: integer
+    external: DAS_EIL_NR
+  das_sut_obj:
+    type: integer
+    external: DAS_SUT_OBJ
+  das_cpv_id:
+    type: integer
+    external: DAS_CPV_ID
+  das_kaina:
+    type: string
+    external: DAS_KAINA
+  das_max_ivykdymo_terminai_data:
+    type: datetime
+    external: DAS_MAX_IVYKDYMO_TERMINAI_DATA
+  das_numatyti_pratesimai:
+    type: integer
+    external: DAS_NUMATYTI_PRATESIMAI
+  das_terminai_be_pratesimu_data:
+    type: datetime
+    external: DAS_TERMINAI_BE_PRATESIMU_DATA
+  das_sut_eil_nr:
+    type: integer
+    external: DAS_SUT_EIL_NR

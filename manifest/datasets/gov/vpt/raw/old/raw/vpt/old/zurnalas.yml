@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/zurnalas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: ZURNALAS
+properties:
+  _id:
+    type: pk
+    external: ID
+  id:
+    type: integer
+    external: ID
+  z_lentele:
+    type: string
+    external: Z_LENTELE
+  z_operacija:
+    type: string
+    external: Z_OPERACIJA
+  z_sbj_id:
+    type: integer
+    external: Z_SBJ_ID
+  z_pk_id1:
+    type: integer
+    external: Z_PK_ID1
+  z_pk_id2:
+    type: integer
+    external: Z_PK_ID2
+  z_info:
+    type: string
+    external: Z_INFO
+  z_data:
+    type: datetime
+    external: Z_DATA

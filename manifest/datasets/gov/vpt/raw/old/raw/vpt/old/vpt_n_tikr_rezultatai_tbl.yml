@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_tikr_rezultatai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_TIKR_REZULTATAI_TBL
+properties:
+  _id:
+    type: pk
+    external: REZULT_ID
+  rezult_id:
+    type: integer
+    external: REZULT_ID
+  rezult_kodas:
+    type: integer
+    external: REZULT_KODAS
+  rezult_pav:
+    type: string
+    external: REZULT_PAV

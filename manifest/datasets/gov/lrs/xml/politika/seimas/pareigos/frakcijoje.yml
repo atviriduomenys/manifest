@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/lrs/xml/politika/seimas/pareigos/frakcijoje
+external:
+  dataset: datasets/gov/lrs/xml
+  resource: frakcijos/nariai
+  name: /SeimoInformacija/SeimoKadencija/SeimoFrakcija/SeimoFrakcijosNarys
+properties:
+  _id:
+    type: pk
+    external:
+    - ../@padalinio_id
+    - '@asmens_id'
+  padalinio_rusis:
+    type: string
+    prepare: "'politika/seimas/frakcija'"
+  padalinys:
+    type: ref
+    model: politika/seimas/frakcija
+    external: ../@padalinio_id
+  seimo_narys:
+    type: ref
+    model: politika/seimas/narys
+    external: '@asmens_id'
+  pareigos:
+    type: string
+    external: '@pareigos'
+  nuo:
+    type: date
+    level: 0
+  iki:
+    type: date
+    level: 0
+

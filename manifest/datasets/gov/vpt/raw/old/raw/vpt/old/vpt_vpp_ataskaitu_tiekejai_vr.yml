@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_ataskaitu_tiekejai_vr
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_VPP_ATASKAITU_TIEKEJAI_VR
+properties:
+  _id:
+    type: pk
+  tiek_vr_dok_id:
+    type: integer
+    external: TIEK_VR_DOK_ID
+  tiek_vr_eil_nr:
+    type: integer
+    external: TIEK_VR_EIL_NR
+  tiek_vr_sbj_id:
+    type: string
+    external: TIEK_VR_SBJ_ID
+  tiek_vr_sbj_eil_nr:
+    type: integer
+    external: TIEK_VR_SBJ_EIL_NR
+  tiek_vr_priezastys:
+    type: string
+    external: TIEK_VR_PRIEZASTYS
+  tiek_vr_numeriai:
+    type: string
+    external: TIEK_VR_NUMERIAI
+  tiek_vr_sbj_patikslinimas:
+    type: string
+    external: TIEK_VR_SBJ_PATIKSLINIMAS

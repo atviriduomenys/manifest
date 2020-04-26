@@ -1,0 +1,33 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/dtproperties
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: dtproperties
+properties:
+  _id:
+    type: pk
+    external:
+    - id
+    - property
+  id:
+    type: integer
+    external: id
+  objectid:
+    type: integer
+    external: objectid
+  property:
+    type: string
+    external: property
+  value:
+    type: string
+    external: value
+  uvalue:
+    type: string
+    external: uvalue
+  lvalue:
+    type: image
+    external: lvalue
+  version:
+    type: integer
+    external: version

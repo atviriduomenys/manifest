@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/seku_tipu_terminai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SEKU_TIPU_TERMINAI
+properties:
+  _id:
+    type: pk
+    external: STT_ID
+  stt_id:
+    type: integer
+    external: STT_ID
+  stt_st_id:
+    type: integer
+    external: STT_ST_ID
+  stt_eiles_nr:
+    type: integer
+    external: STT_EILES_NR
+  stt_terminas:
+    type: integer
+    external: STT_TERMINAS
+  stt_darbas:
+    type: string
+    external: STT_DARBAS

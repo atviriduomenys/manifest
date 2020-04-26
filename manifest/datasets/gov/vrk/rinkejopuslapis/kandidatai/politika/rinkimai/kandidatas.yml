@@ -1,0 +1,65 @@
+type: model
+name: datasets/gov/vrk/rinkejopuslapis/kandidatai/politika/rinkimai/kandidatas
+external:
+  dataset: datasets/gov/vrk/rinkejopuslapis/kandidatai
+  resource: kandidatai
+  name:
+properties:
+  _id:
+    type: pk
+    external: [Apygardos Nr., Kandidato vardas, Kandidato pavardė]
+    level: 1
+  rinkimai:
+    type: ref
+    model: politika/rinkimai
+    prepare: param('rinkimai').rinkimu_id
+    level: 1
+  apygarda:
+    type: ref
+    model: politika/rinkimai/apygarda
+    level: 1
+    external: Apygardos Nr.
+  asmuo:
+    type: string
+    level: 0
+  partija:
+    type: ref
+    model: politika/partija
+    level: 1
+    external: [Kandidatą iškėlusi organizacija]
+  vardas:
+    type: string
+    external: Kandidato vardas
+  pavarde:
+    type: string
+    external: Kandidato pavardė
+  lytis:
+    type: string
+    external: Kandidato lytis
+  sarasas:
+    type: ref
+    level: 1
+    external: [Kandidatų sąrašo pavadinimas]
+    model: politika/rinkimai/kandidatas/sarasas
+  kandidato_nr_sarase:
+    type: string
+    external: Kandidato Nr. sąraše
+  ar_isrinktas:
+    type: boolean
+    external: Ar išrinktas?
+    level: 1
+  dalyvavo_vienmandateje:
+    type: integer
+    external: Kiek kartų dalyvavo vienmandatėje apygardoje
+  dalyvavo_daugiamandateje:
+    type: integer
+    external: Kiek kartų dalyvavo daugiamandatėje apygardoje
+  isrinktas_kartu:
+    type: integer
+    external: Kiek kartų buvo išrinktas
+  isrinktas_pirma_karta:
+    type: date
+    external: Kada buvo išrinktas pirmą kartą
+  isrinktas_paskutini_karta:
+    type: date
+    external: Kada buvo išrinktas paskutinį kartą

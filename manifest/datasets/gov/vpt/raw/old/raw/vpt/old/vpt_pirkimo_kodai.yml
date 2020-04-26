@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_pirkimo_kodai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_PIRKIMO_KODAI
+properties:
+  _id:
+    type: pk
+    external: PK_OBJ_ID
+  pk_obj_id:
+    type: integer
+    external: PK_OBJ_ID
+  pk_pirkimo_kodas:
+    type: integer
+    external: PK_PIRKIMO_KODAS
+  pk_reg_data:
+    type: datetime
+    external: PK_REG_DATA
+  pk_po_sbj_id:
+    type: integer
+    external: PK_PO_SBJ_ID

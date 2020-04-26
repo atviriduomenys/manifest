@@ -4,13 +4,13 @@ version:
   number: 1
   date: 2019-01-06
 link: dct:Location
-title: "Vietovė"
+title: Vietovė
 properties:
   pavadinimas:
     type: string
   koordinatės:
     type: spatial
   rinkiniai:
-    type: backref 
-    object: duomenys/laikotarpis
+    type: backref
+    model: duomenys/laikotarpis
     secondary: true

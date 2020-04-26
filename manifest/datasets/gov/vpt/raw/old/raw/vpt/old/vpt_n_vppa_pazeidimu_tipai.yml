@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vppa_pazeidimu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPPA_PAZEIDIMU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: PAZT_ID
+  pazt_id:
+    type: integer
+    external: PAZT_ID
+  pazt_kodas:
+    type: integer
+    external: PAZT_KODAS
+  pazt_pav:
+    type: string
+    external: PAZT_PAV

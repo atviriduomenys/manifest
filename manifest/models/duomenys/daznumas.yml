@@ -1,5 +1,5 @@
 name: duomenys/daznumas
-title: "Dažnumas"
+title: Dažnumas
 type: model
 version:
   number: 1
@@ -9,6 +9,6 @@ properties:
   pavadinimas:
     type: string
   rinkiniai:
-    type: backref 
-    object: duomenys/laikotarpis
+    type: backref
+    model: duomenys/laikotarpis
     secondary: true

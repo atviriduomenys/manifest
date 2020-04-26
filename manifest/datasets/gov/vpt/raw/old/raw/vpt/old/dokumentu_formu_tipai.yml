@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/dokumentu_formu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: DOKUMENTU_FORMU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: DFRM_ID
+  dfrm_id:
+    type: integer
+    external: DFRM_ID
+  dfrm_kodas:
+    type: integer
+    external: DFRM_KODAS
+  dfrm_pav:
+    type: string
+    external: DFRM_PAV

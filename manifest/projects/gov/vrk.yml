@@ -3,7 +3,7 @@ title: Vyriausioji Rinkimų Komisija
 type: project
 owner: gov/vrk
 version: 1
-date: "2019-01-23"
+date: '2019-01-23'
 impact: []
 objects:
   teise/juridinis_asmuo:

@@ -1,0 +1,48 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n5_vp_vpi10_pirkimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N5_VP_VPI10_PIRKIMAI
+properties:
+  _id:
+    type: pk
+    external:
+    - VPI10_SUT_DOK_ID
+    - VPI10_SUT_EIL_NR
+  vpi10_sut_dok_id:
+    type: integer
+    external: VPI10_SUT_DOK_ID
+  vpi10_sut_eil_nr:
+    type: integer
+    external: VPI10_SUT_EIL_NR
+  vpi10_sut_sbj_id:
+    type: integer
+    external: VPI10_SUT_SBJ_ID
+  vpi10_sut_sbj_patikslinimas:
+    type: string
+    external: VPI10_SUT_SBJ_PATIKSLINIMAS
+  vpi10_sut_pobj:
+    type: string
+    external: VPI10_SUT_POBJ
+  vpi10_sut_sudarymo_data:
+    type: datetime
+    external: VPI10_SUT_SUDARYMO_DATA
+  vpi10_sut_ivykdymo_data:
+    type: datetime
+    external: VPI10_SUT_IVYKDYMO_DATA
+  vpi10_sut_suma:
+    type: string
+    external: VPI10_SUT_SUMA
+  vpi10_sut_sbj_skodas:
+    type: integer
+    external: VPI10_SUT_SBJ_SKODAS
+  vpi10_sut_sbj_pav:
+    type: string
+    external: VPI10_SUT_SBJ_PAV
+  vpi10_sut_reg_sbj_id:
+    type: integer
+    external: VPI10_SUT_REG_SBJ_ID
+  vpi10_sut_reg_data:
+    type: datetime
+    external: VPI10_SUT_REG_DATA

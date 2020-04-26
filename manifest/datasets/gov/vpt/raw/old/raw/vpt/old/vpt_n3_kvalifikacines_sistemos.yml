@@ -1,0 +1,163 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_kvalifikacines_sistemos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_KVALIFIKACINES_SISTEMOS
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_iseksportuota:
+    type: integer
+    external: DOK_ISEKSPORTUOTA
+  dok_iseksportuota_tech:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_TECH
+  dok_iseksportuota_rastams:
+    type: integer
+    external: DOK_ISEKSPORTUOTA_RASTAMS
+  dok_iseksportuota_rastams_data:
+    type: datetime
+    external: DOK_ISEKSPORTUOTA_RASTAMS_DATA
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_tikr_sbj_id:
+    type: integer
+    external: DOK_TIKR_SBJ_ID
+  dok_ivedimo_data:
+    type: datetime
+    external: DOK_IVEDIMO_DATA
+  dok_leidinio_data:
+    type: datetime
+    external: DOK_LEIDINIO_DATA
+  dok_leidinio_nr:
+    type: integer
+    external: DOK_LEIDINIO_NR
+  dok_zodziu_skaicius:
+    type: integer
+    external: DOK_ZODZIU_SKAICIUS
+  dok_kvieciama_dalyvauti:
+    type: integer
+    external: DOK_KVIECIAMA_DALYVAUTI
+  dok_kitas_adresas_1:
+    type: integer
+    external: DOK_KITAS_ADRESAS_1
+  dok_kitas_adresas_2:
+    type: integer
+    external: DOK_KITAS_ADRESAS_2
+  dok_kitas_adresas_3:
+    type: integer
+    external: DOK_KITAS_ADRESAS_3
+  dok_tinkamumas_1:
+    type: string
+    external: DOK_TINKAMUMAS_1
+  dok_tinkamumas_2:
+    type: string
+    external: DOK_TINKAMUMAS_2
+  dok_rez_sutartys:
+    type: integer
+    external: DOK_REZ_SUTARTYS
+  dok_rez_sutartys_skirta:
+    type: integer
+    external: DOK_REZ_SUTARTYS_SKIRTA
+  dok_kriterijai:
+    type: integer
+    external: DOK_KRITERIJAI
+  dok_kiti_kriterijai:
+    type: integer
+    external: DOK_KITI_KRITERIJAI
+  dok_aukcionas:
+    type: integer
+    external: DOK_AUKCIONAS
+  dok_aukcionas_tekst:
+    type: string
+    external: DOK_AUKCIONAS_TEKST
+  dok_trukme_data_nuo:
+    type: datetime
+    external: DOK_TRUKME_DATA_NUO
+  dok_trukme_data_iki:
+    type: datetime
+    external: DOK_TRUKME_DATA_IKI
+  dok_trukme:
+    type: integer
+    external: DOK_TRUKME
+  dok_atnaujinimas:
+    type: integer
+    external: DOK_ATNAUJINIMAS
+  dok_atnaujinimas_tekst:
+    type: string
+    external: DOK_ATNAUJINIMAS_TEKST
+  dok_susijes_su_es:
+    type: integer
+    external: DOK_SUSIJES_SU_ES
+  dok_susijes_su_es_tekst:
+    type: string
+    external: DOK_SUSIJES_SU_ES_TEKST
+  dok_kita_info:
+    type: string
+    external: DOK_KITA_INFO
+  dok_skundu_teikimas:
+    type: string
+    external: DOK_SKUNDU_TEIKIMAS
+  dok_issiuntimo_data:
+    type: datetime
+    external: DOK_ISSIUNTIMO_DATA
+  dok_pasirases_pareigos:
+    type: string
+    external: DOK_PASIRASES_PAREIGOS
+  dok_pasirases_vardas:
+    type: string
+    external: DOK_PASIRASES_VARDAS
+  dok_pasirases_pavarde:
+    type: string
+    external: DOK_PASIRASES_PAVARDE
+  dok_centrine_leido_skelbti:
+    type: integer
+    external: DOK_CENTRINE_LEIDO_SKELBTI
+  dok_centrine_leido_skelbti_data:
+    type: datetime
+    external: DOK_CENTRINE_LEIDO_SKELBTI_DATA
+  dok_patvirtintas_finansavimas:
+    type: integer
+    external: DOK_PATVIRTINTAS_FINANSAVIMAS
+  dok_patvirtintas_finansavimas_data:
+    type: datetime
+    external: DOK_PATVIRTINTAS_FINANSAVIMAS_DATA
+  dok_patvirtinti_dokumentai:
+    type: integer
+    external: DOK_PATVIRTINTI_DOKUMENTAI
+  dok_patvirtinti_dokumentai_data:
+    type: datetime
+    external: DOK_PATVIRTINTI_DOKUMENTAI_DATA
+  dok_po_tinka_issiuntimui:
+    type: integer
+    external: DOK_PO_TINKA_ISSIUNTIMUI
+  dok_po_issiuntimo_data:
+    type: datetime
+    external: DOK_PO_ISSIUNTIMO_DATA
+  dok_vpt_gavo:
+    type: integer
+    external: DOK_VPT_GAVO
+  dok_vpt_gavo_data:
+    type: datetime
+    external: DOK_VPT_GAVO_DATA

@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_veiklos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_VEIKLOS
+properties:
+  _id:
+    type: pk
+    external: VEIK_KODAS
+  veik_kodas:
+    type: integer
+    external: VEIK_KODAS
+  veik_kodas_str:
+    type: string
+    external: VEIK_KODAS_STR
+  veik_pavadinimas:
+    type: string
+    external: VEIK_PAVADINIMAS
+  veik_pav_english:
+    type: string
+    external: VEIK_PAV_ENGLISH
+  veik_galioja_iki:
+    type: datetime
+    external: VEIK_GALIOJA_IKI
+  veik_koregavimo_data:
+    type: datetime
+    external: VEIK_KOREGAVIMO_DATA
+  veik_versija:
+    type: integer
+    external: veik_versija

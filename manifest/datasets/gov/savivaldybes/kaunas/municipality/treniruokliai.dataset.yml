@@ -1,0 +1,12 @@
+name: datasets/gov/savivaldybes/kaunas/municipality/treniruokliai
+title: Treniruokliai
+type: dataset
+version:
+  number: 1
+  date: '2018-10-06'
+level: 3
+owner: gov/savivaldybes/kaunas
+resources:
+  treniruokliai:
+    type: csv
+    external: https://raw.githubusercontent.com/Kauno-miestas/Laisvalaikio-zonos/master/Treniruokliai.csv

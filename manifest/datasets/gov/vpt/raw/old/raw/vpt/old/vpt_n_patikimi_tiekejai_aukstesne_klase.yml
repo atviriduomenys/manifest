@@ -1,0 +1,52 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_aukstesne_klase
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PATIKIMI_TIEKEJAI_AUKSTESNE_KLASE
+properties:
+  _id:
+    type: pk
+    external:
+    - AKL_DOK_EIL_NR
+    - AKL_DOK_ID
+    - AKL_REIK_EIL_NR
+  akl_dok_id:
+    type: integer
+    external: AKL_DOK_ID
+  akl_dok_eil_nr:
+    type: integer
+    external: AKL_DOK_EIL_NR
+  akl_reik_eil_nr:
+    type: integer
+    external: AKL_REIK_EIL_NR
+  akl_reikalavimo_tipo_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_reikalavimu_tipai
+    external: AKL_REIKALAVIMO_TIPO_ID
+  akl_eko_veikla_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_klsf_ekonomines_veiklos
+    external: AKL_EKO_VEIKLA_ID
+  akl_dokumento_pav:
+    type: string
+    external: AKL_DOKUMENTO_PAV
+  akl_dokumento_nr:
+    type: string
+    external: AKL_DOKUMENTO_NR
+  akl_dokumento_data:
+    type: datetime
+    external: AKL_DOKUMENTO_DATA
+  akl_pirkimo_rusis:
+    type: integer
+    external: AKL_PIRKIMO_RUSIS
+  akl_sutarties_verte:
+    type: string
+    external: AKL_SUTARTIES_VERTE
+  akl_pastabos:
+    type: string
+    external: AKL_PASTABOS
+  akl_kvalifikacine_kl_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_kvalif_klase
+    external: AKL_KVALIFIKACINE_KL_ID

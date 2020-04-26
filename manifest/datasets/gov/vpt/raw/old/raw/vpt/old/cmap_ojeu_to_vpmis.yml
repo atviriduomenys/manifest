@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/cmap_ojeu_to_vpmis
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: CMAP_OJEU_TO_VPMIS
+properties:
+  _id:
+    type: pk
+  vpmis_id:
+    type: integer
+    external: VPMIS_ID
+  ojeu_value:
+    type: string
+    external: OJEU_VALUE
+  vpmis_tablename:
+    type: string
+    external: VPMIS_TABLENAME

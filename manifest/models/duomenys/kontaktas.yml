@@ -1,5 +1,5 @@
 name: duomenys/kontaktas
-title: "Duomenų tiekėjo kontaktinis asmuo"
+title: Duomenų tiekėjo kontaktinis asmuo
 type: model
 version:
   number: 1

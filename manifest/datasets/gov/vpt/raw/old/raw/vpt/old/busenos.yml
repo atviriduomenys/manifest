@@ -1,0 +1,42 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/busenos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: BUSENOS
+properties:
+  _id:
+    type: pk
+  tab_id:
+    type: integer
+    external: TAB_ID
+  tab_ta_id:
+    type: integer
+    external: TAB_TA_ID
+  tab_b_keitimas:
+    type: integer
+    external: TAB_B_KEITIMAS
+  tab_tabt_id:
+    type: integer
+    external: TAB_TABT_ID
+  tab_patikslinimas:
+    type: string
+    external: TAB_PATIKSLINIMAS
+  tab_pastabos:
+    type: string
+    external: TAB_PASTABOS
+  tab_data_nuo:
+    type: datetime
+    external: TAB_DATA_NUO
+  tab_data_iki:
+    type: datetime
+    external: TAB_DATA_IKI
+  tab_fakt_data_iki:
+    type: datetime
+    external: TAB_FAKT_DATA_IKI
+  tab_eiles_nr:
+    type: integer
+    external: TAB_EILES_NR
+  tab_tabrt_id:
+    type: integer
+    external: TAB_TABRT_ID

@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vppa_komp_sarasas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPPA_KOMP_SARASAS
+properties:
+  _id:
+    type: pk
+    external: KOMP_ID
+  komp_id:
+    type: integer
+    external: KOMP_ID
+  komp_skodas:
+    type: integer
+    external: KOMP_SKODAS
+  komp_vardas:
+    type: string
+    external: KOMP_VARDAS
+  komp_pavarde:
+    type: string
+    external: KOMP_PAVARDE
+  komp_po_sbj_id:
+    type: integer
+    external: KOMP_PO_SBJ_ID
+  komp_pastabos:
+    type: string
+    external: KOMP_PASTABOS
+  komp_galiojimo_data:
+    type: datetime
+    external: KOMP_GALIOJIMO_DATA

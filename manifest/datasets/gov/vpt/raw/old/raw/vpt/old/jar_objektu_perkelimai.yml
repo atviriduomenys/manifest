@@ -1,0 +1,35 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektu_perkelimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_OBJEKTU_PERKELIMAI
+properties:
+  _id:
+    type: pk
+    external: JOP_ID
+  jop_id:
+    type: integer
+    external: JOP_ID
+  jop_objpt_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektu_perkelimo_tipai
+    external: JOP_OBJPT_ID
+  jop_data_nuo:
+    type: datetime
+    external: JOP_DATA_NUO
+  jop_data_iki:
+    type: datetime
+    external: JOP_DATA_IKI
+  jop_ivede:
+    type: string
+    external: JOP_IVEDE
+  jop_ivedimo_data:
+    type: datetime
+    external: JOP_IVEDIMO_DATA
+  jop_koregavo:
+    type: string
+    external: JOP_KOREGAVO
+  jop_koregavimo_data:
+    type: datetime
+    external: JOP_KOREGAVIMO_DATA

@@ -1,0 +1,187 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_kvietimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_KVIETIMAI
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_po_sbj_id:
+    type: integer
+    external: DOK_PO_SBJ_ID
+  dok_leidinio_nr:
+    type: integer
+    external: DOK_LEIDINIO_NR
+  dok_leidinio_data:
+    type: datetime
+    external: DOK_LEIDINIO_DATA
+  dok_po_pastabos:
+    type: string
+    external: DOK_PO_PASTABOS
+  dok_po_adresas:
+    type: string
+    external: DOK_PO_ADRESAS
+  dok_po_telefonas:
+    type: string
+    external: DOK_PO_TELEFONAS
+  dok_po_faksas:
+    type: string
+    external: DOK_PO_FAKSAS
+  dok_po_info_telefonas:
+    type: string
+    external: DOK_PO_INFO_TELEFONAS
+  dok_pirkb_id:
+    type: integer
+    external: DOK_PIRKB_ID
+  dok_pobj_id:
+    type: integer
+    external: DOK_POBJ_ID
+  dok_pobj_rusis:
+    type: integer
+    external: DOK_POBJ_RUSIS
+  dok_pobj_prekiut_id:
+    type: integer
+    external: DOK_POBJ_PREKIUT_ID
+  dok_pobj_paslauga:
+    type: boolean
+    external: DOK_POBJ_PASLAUGA
+  dok_pobj_darbt_id:
+    type: integer
+    external: DOK_POBJ_DARBT_ID
+  dok_pobj_pavadinimas:
+    type: string
+    external: DOK_POBJ_PAVADINIMAS
+  dok_pobj_pastabos:
+    type: string
+    external: DOK_POBJ_PASTABOS
+  dok_pobj_aprasymas:
+    type: string
+    external: DOK_POBJ_APRASYMAS
+  dok_pobj_faksu:
+    type: boolean
+    external: DOK_POBJ_FAKSU
+  dok_pobj_adresas:
+    type: string
+    external: DOK_POBJ_ADRESAS
+  dok_pobj_reikalavimai:
+    type: string
+    external: DOK_POBJ_REIKALAVIMAI
+  dok_pobj_kiekis:
+    type: string
+    external: DOK_POBJ_KIEKIS
+  dok_pobj_tiekimo_terminas:
+    type: integer
+    external: DOK_POBJ_TIEKIMO_TERMINAS
+  dok_pobj_tiekimo_pastabos:
+    type: string
+    external: DOK_POBJ_TIEKIMO_PASTABOS
+  dok_pobj_tiekimo_data:
+    type: datetime
+    external: DOK_POBJ_TIEKIMO_DATA
+  dok_pobj_pateikimo_adresas:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_ADRESAS
+  dok_pobj_pateikimo_laikas_nuo:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_LAIKAS_NUO
+  dok_pobj_pateikimo_laikas_iki:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_LAIKAS_IKI
+  dok_pobj_pateikimo_mokestis_zodziais:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_MOKESTIS_ZODZIAIS
+  dok_pobj_pateikimo_mokestis_kasoje:
+    type: boolean
+    external: DOK_POBJ_PATEIKIMO_MOKESTIS_KASOJE
+  dok_pobj_pateikimo_data:
+    type: datetime
+    external: DOK_POBJ_PATEIKIMO_DATA
+  dok_pobj_pateikimo_laikas:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_LAIKAS
+  dok_pobj_pateikimo_adresas2:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_ADRESAS2
+  dok_pobj_pateikimo_tiekeju_kiekis:
+    type: integer
+    external: DOK_POBJ_PATEIKIMO_TIEKEJU_KIEKIS
+  dok_pobj_kalba1:
+    type: string
+    external: DOK_POBJ_KALBA1
+  dok_pobj_kalba2:
+    type: string
+    external: DOK_POBJ_KALBA2
+  dok_pobj_tiekeju_kvalifikacija:
+    type: string
+    external: DOK_POBJ_TIEKEJU_KVALIFIKACIJA
+  dok_pobj_pasiulymu_kriterijai:
+    type: string
+    external: DOK_POBJ_PASIULYMU_KRITERIJAI
+  dok_pobj_pasiulymu_salygos:
+    type: string
+    external: DOK_POBJ_PASIULYMU_SALYGOS
+  dok_pobj_pasiulymu_kainos:
+    type: string
+    external: DOK_POBJ_PASIULYMU_KAINOS
+  dok_pobj_pasiulymu_kainos_papildymas:
+    type: string
+    external: DOK_POBJ_PASIULYMU_KAINOS_PAPILDYMAS
+  dok_pobj_kita_informacija:
+    type: string
+    external: DOK_POBJ_KITA_INFORMACIJA
+  dok_pobj_daliu_kiekis:
+    type: integer
+    external: DOK_POBJ_DALIU_KIEKIS
+  dok_pobj_paslaugu_kainos:
+    type: string
+    external: DOK_POBJ_PASLAUGU_KAINOS
+  dok_pobj_vertinimo_kriterijai:
+    type: string
+    external: DOK_POBJ_VERTINIMO_KRITERIJAI
+  dok_pobj_vertinimo_salygos:
+    type: string
+    external: DOK_POBJ_VERTINIMO_SALYGOS
+  dok_pobj_siuntimas:
+    type: string
+    external: DOK_POBJ_SIUNTIMAS
+  dok_pobj_nuoroda_uzsienyje:
+    type: string
+    external: DOK_POBJ_NUORODA_UZSIENYJE
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_komisijos_pirmininkas:
+    type: string
+    external: DOK_KOMISIJOS_PIRMININKAS
+  dok_iseksportuota:
+    type: integer
+    external: DOK_ISEKSPORTUOTA
+  dok_pobj_pastu:
+    type: string
+    external: DOK_POBJ_PASTU
+  dok_pobj_pateikimo_mokestis:
+    type: string
+    external: DOK_POBJ_PATEIKIMO_MOKESTIS
+  dok_atask_neprivaloma:
+    type: integer
+    external: DOK_ATASK_NEPRIVALOMA
+  dok_atask_pastabos:
+    type: string
+    external: DOK_ATASK_PASTABOS
+  dok_iseksportuota_tech:
+    type: integer
+    external: dok_iseksportuota_tech

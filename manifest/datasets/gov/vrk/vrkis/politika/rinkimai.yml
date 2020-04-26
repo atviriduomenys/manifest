@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vrk/vrkis/politika/rinkimai
+external:
+  dataset: datasets/gov/vrk/vrkis
+  resource: rt
+  name: data
+properties:
+  _id:
+    type: pk
+    external: vr_id
+  pavadinimas:
+    type: string
+    external: pav
+  rusis:
+    type: string
+    external: rnk_rusis
+    enum:
+      seimo: SEI
+      savivaldybių: SAV

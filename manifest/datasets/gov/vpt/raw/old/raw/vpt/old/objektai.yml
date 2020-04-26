@@ -1,0 +1,43 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTAI
+properties:
+  _id:
+    type: pk
+    external: OBJ_ID
+  obj_id:
+    type: integer
+    external: OBJ_ID
+  obj_objt_id:
+    type: integer
+    external: OBJ_OBJT_ID
+  obj_data:
+    type: datetime
+    external: OBJ_DATA
+  obj_atnaujinimo_data:
+    type: datetime
+    external: OBJ_ATNAUJINIMO_DATA
+  obj_atnaujinimo_sbj_id:
+    type: integer
+    external: OBJ_ATNAUJINIMO_SBJ_ID
+  obj_skodas:
+    type: string
+    external: OBJ_SKODAS
+  obj_pav:
+    type: string
+    external: OBJ_PAV
+  obj_rz_id:
+    type: integer
+    external: OBJ_RZ_ID
+  obj_index:
+    type: integer
+    external: OBJ_INDEX
+  obj_reg_data:
+    type: datetime
+    external: OBJ_REG_DATA
+  obj_vpt_kodas:
+    type: integer
+    external: OBJ_VPT_KODAS

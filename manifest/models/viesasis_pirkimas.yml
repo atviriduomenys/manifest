@@ -1,10 +1,9 @@
----
 name: viesasis_pirkimas
 type: model
 version:
   number: 1
   date: 2019-06-25
-title: "Viešasis pirkimas"
+title: Viešasis pirkimas
 properties:
   pavadinimas:
     type: string

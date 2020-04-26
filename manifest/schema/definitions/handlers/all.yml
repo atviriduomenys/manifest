@@ -2,4 +2,4 @@ properties:
   all:
     type: array
     items:
-      $ref: "#/definitions/handlers"
+      $ref: '#/definitions/handlers'

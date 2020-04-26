@@ -1,0 +1,45 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/r_zurnalai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: R_ZURNALAI
+properties:
+  _id:
+    type: pk
+  rz_id:
+    type: integer
+    external: RZ_ID
+  rz_objt_id:
+    type: integer
+    external: RZ_OBJT_ID
+  rz_eiles_nr:
+    type: string
+    external: RZ_EILES_NR
+  rz_skodas:
+    type: string
+    external: RZ_SKODAS
+  rz_pav:
+    type: string
+    external: RZ_PAV
+  rz_pav2:
+    type: string
+    external: RZ_PAV2
+  rz_tipas:
+    type: integer
+    external: RZ_TIPAS
+  rz_pastabos:
+    type: string
+    external: RZ_PASTABOS
+  rz_dbdata:
+    type: datetime
+    external: RZ_DBDATA
+  rz_data_nuo:
+    type: datetime
+    external: RZ_DATA_NUO
+  rz_data_iki:
+    type: datetime
+    external: RZ_DATA_IKI
+  rz_sisteminis:
+    type: integer
+    external: RZ_SISTEMINIS

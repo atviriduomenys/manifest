@@ -1,0 +1,13 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/teise/juridinis_asmuo
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  pavadinimas:
+    type: string
+  kodas:
+    type: string
+  veiklos_pobudis:
+    type: string

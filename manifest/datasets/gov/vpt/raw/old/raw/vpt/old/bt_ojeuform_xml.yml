@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/bt_ojeuform_xml
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: BT_OJEUFORM_XML
+properties:
+  _id:
+    type: pk
+    external: OBJ_ID
+  obj_id:
+    type: integer
+    external: OBJ_ID
+  ojeu_xml:
+    type: string
+    external: OJEU_XML
+  valid:
+    type: boolean
+    external: VALID

@@ -1,0 +1,70 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vidaus_dokumentai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VIDAUS_DOKUMENTAI_TBL
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_aut_sbj_id:
+    type: integer
+    external: DOK_AUT_SBJ_ID
+  dok_pas_sbj_id:
+    type: integer
+    external: DOK_PAS_SBJ_ID
+  dok_aut_reg_data:
+    type: datetime
+    external: DOK_AUT_REG_DATA
+  dok_aut_reg_nr:
+    type: string
+    external: DOK_AUT_REG_NR
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_vdtip_id:
+    type: integer
+    external: DOK_VDTIP_ID
+  dok_antraste:
+    type: string
+    external: DOK_ANTRASTE
+  dok_lapu_sk:
+    type: integer
+    external: DOK_LAPU_SK
+  dok_priedo_lapu_sk:
+    type: integer
+    external: DOK_PRIEDO_LAPU_SK
+  dok_pastabos:
+    type: string
+    external: DOK_PASTABOS
+  dok_dbdata:
+    type: datetime
+    external: DOK_DBDATA
+  dok_modifikuota:
+    type: string
+    external: DOK_MODIFIKUOTA
+  dok_istrinta:
+    type: string
+    external: DOK_ISTRINTA
+  dok_terminas:
+    type: integer
+    external: DOK_TERMINAS
+  dok_termino_data:
+    type: datetime
+    external: DOK_TERMINO_DATA
+  dok_ivykd_data:
+    type: datetime
+    external: DOK_IVYKD_DATA
+  dok_ivykd_pastabos:
+    type: string
+    external: DOK_IVYKD_PASTABOS
+  dok_dtip_id:
+    type: integer
+    external: DOK_DTIP_ID

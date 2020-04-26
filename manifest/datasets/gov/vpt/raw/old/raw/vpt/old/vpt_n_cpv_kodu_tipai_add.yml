@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_cpv_kodu_tipai_add
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_CPV_KODU_TIPAI_ADD
+properties:
+  _id:
+    type: pk
+    external: ACPV_ID
+  acpv_id:
+    type: integer
+    external: ACPV_ID
+  acpv_kodas:
+    type: string
+    external: ACPV_KODAS
+  acpv_pav:
+    type: string
+    external: ACPV_PAV
+  acpv_versija:
+    type: integer
+    external: ACPV_VERSIJA

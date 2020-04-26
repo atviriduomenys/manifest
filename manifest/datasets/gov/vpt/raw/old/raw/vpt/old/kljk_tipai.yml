@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/kljk_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: KLJK_TIPAI
+properties:
+  _id:
+    type: pk
+  kljkt_id:
+    type: integer
+    external: KLJKT_ID
+  kljkt_kodas:
+    type: integer
+    external: KLJKT_KODAS
+  kljkt_pav:
+    type: string
+    external: KLJKT_PAV

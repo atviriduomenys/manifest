@@ -1,0 +1,66 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_pakeit_nutr_kita_info
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_PAKEIT_NUTR_KITA_INFO
+properties:
+  _id:
+    type: pk
+    external:
+    - KITA_INFO_DOK_ID
+    - KITA_INFO_EIL_NR
+  kita_info_dok_id:
+    type: integer
+    external: KITA_INFO_DOK_ID
+  kita_info_eil_nr:
+    type: integer
+    external: KITA_INFO_EIL_NR
+  kita_info_pataisa:
+    type: integer
+    external: KITA_INFO_PATAISA
+  kita_info_pap_info:
+    type: integer
+    external: KITA_INFO_PAP_INFO
+  kita_info_taisyt_info_1:
+    type: integer
+    external: KITA_INFO_TAISYT_INFO_1
+  kita_info_taisyt_info_2:
+    type: integer
+    external: KITA_INFO_TAISYT_INFO_2
+  kita_info_kita_info:
+    type: string
+    external: KITA_INFO_KITA_INFO
+  kita_info_procedura:
+    type: integer
+    external: KITA_INFO_PROCEDURA
+  kita_info_nebaigta_procedura_1:
+    type: integer
+    external: KITA_INFO_NEBAIGTA_PROCEDURA_1
+  kita_info_nebaigta_procedura_2:
+    type: integer
+    external: KITA_INFO_NEBAIGTA_PROCEDURA_2
+  kita_info_nebaigta_procedura_3:
+    type: integer
+    external: KITA_INFO_NEBAIGTA_PROCEDURA_3
+  kita_info_nebaigta_procedura_4:
+    type: integer
+    external: KITA_INFO_NEBAIGTA_PROCEDURA_4
+  kita_info_n5_ar_nesudaryta_pirk_sut:
+    type: integer
+    external: KITA_INFO_N5_AR_NESUDARYTA_PIRK_SUT
+  kita_info_n5_ar_proc_nutraukus:
+    type: integer
+    external: KITA_INFO_N5_AR_PROC_NUTRAUKUS
+  kita_info_n5_ar_proc_atmetus:
+    type: integer
+    external: KITA_INFO_N5_AR_PROC_ATMETUS
+  kita_info_n5_ar_proc_nepateikus:
+    type: integer
+    external: KITA_INFO_N5_AR_PROC_NEPATEIKUS
+  kita_info_n5_ar_proc_pasibaigus:
+    type: integer
+    external: KITA_INFO_N5_AR_PROC_PASIBAIGUS
+  kita_info_n5_ar_proc_visiems_atsisakius:
+    type: integer
+    external: KITA_INFO_N5_AR_PROC_VISIEMS_ATSISAKIUS

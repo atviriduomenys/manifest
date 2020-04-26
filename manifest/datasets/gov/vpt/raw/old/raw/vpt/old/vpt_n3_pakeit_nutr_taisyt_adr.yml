@@ -1,0 +1,72 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_pakeit_nutr_taisyt_adr
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_PAKEIT_NUTR_TAISYT_ADR
+properties:
+  _id:
+    type: pk
+    external:
+    - TAISYT_ADR_DOK_ID
+    - TAISYT_ADR_EIL_NR
+    - TAISYT_ADR_KITA_INFO_EIL_NR
+  taisyt_adr_kita_info_eil_nr:
+    type: integer
+    external: TAISYT_ADR_KITA_INFO_EIL_NR
+  taisyt_adr_dok_id:
+    type: integer
+    external: TAISYT_ADR_DOK_ID
+  taisyt_adr_eil_nr:
+    type: integer
+    external: TAISYT_ADR_EIL_NR
+  taisyt_adr_vieta:
+    type: string
+    external: TAISYT_ADR_VIETA
+  taisyt_adr_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: TAISYT_ADR_SBJ_ID
+  taisyt_adr_sbj_patikslinimas:
+    type: string
+    external: TAISYT_ADR_SBJ_PATIKSLINIMAS
+  taisyt_adr_sbj_adresas:
+    type: string
+    external: TAISYT_ADR_SBJ_ADRESAS
+  taisyt_adr_sbj_pasto_kodas:
+    type: string
+    external: TAISYT_ADR_SBJ_PASTO_KODAS
+  taisyt_adr_sbj_salt_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_saliu_tipai_vppa
+    external: TAISYT_ADR_SBJ_SALT_ID
+  taisyt_adr_kontkat_duomenys_kam:
+    type: string
+    external: TAISYT_ADR_KONTKAT_DUOMENYS_KAM
+  taisyt_adr_telefonas:
+    type: string
+    external: TAISYT_ADR_TELEFONAS
+  taisyt_adr_el_pastas:
+    type: string
+    external: TAISYT_ADR_EL_PASTAS
+  taisyt_adr_faksas:
+    type: string
+    external: TAISYT_ADR_FAKSAS
+  taisyt_adr_url:
+    type: string
+    external: TAISYT_ADR_URL
+  taisyt_adr_url_2:
+    type: string
+    external: TAISYT_ADR_URL_2
+  taisyt_adr_miestas:
+    type: string
+    external: TAISYT_ADR_MIESTAS
+  taisyt_adr_sbj_padalinys:
+    type: string
+    external: TAISYT_ADR_SBJ_PADALINYS
+  taisyt_adr_n5_url_3:
+    type: string
+    external: TAISYT_ADR_N5_URL_3
+  taisyt_adr_n5_url_4:
+    type: string
+    external: TAISYT_ADR_N5_URL_4

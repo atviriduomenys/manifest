@@ -3,10 +3,10 @@ description: >
   Information about data owner.
 type: object
 required:
-  - id
-  - type
-  - title
-  - sector
+- id
+- type
+- title
+- sector
 additionalProperties: false
 properties:
   id:
@@ -19,11 +19,11 @@ properties:
     title: Owner name
   type:
     enum:
-      - owner
+    - owner
   sector:
     enum:
-      - public
-      - private
+    - public
+    - private
     title: Owner organisation sector
   logo:
     type: string

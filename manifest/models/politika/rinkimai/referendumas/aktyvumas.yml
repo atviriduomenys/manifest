@@ -1,5 +1,5 @@
 name: politika/rinkimai/referendumas/aktyvumas
-title: "Referendumo dalyvių aktyvumas"
+title: Referendumo dalyvių aktyvumas
 type: model
 version:
   number: 1
@@ -7,23 +7,23 @@ version:
 properties:
   referendumas:
     type: ref
-    object: politika/rinkimai/referendumas
+    model: politika/rinkimai/referendumas
   apylinke:
     type: ref
-    object: politika/rinkimai/apylinke
+    model: politika/rinkimai/apylinke
   apygarda:
     type: ref
-    object: politika/rinkimai/apygarda
+    model: politika/rinkimai/apygarda
   klausimas:
     type: ref
-    object: politika/rinkimai/referendumas/klausimas
+    model: politika/rinkimai/referendumas/klausimas
   pradžia: {type: date}
   pabaiga: {type: date}
   laikotarpis:
     type: string
     enum:
-      - rinkimų_diena
-      - išankstinis
+    - rinkimų_diena
+    - išankstinis
     description: |
       Laikotarpio pavadinimas, kurio metu matuojamas aktyvumas, apibrėždas
       `pradžia` ir `pabaiga` datomis.

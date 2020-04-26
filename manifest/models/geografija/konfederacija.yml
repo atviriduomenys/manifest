@@ -1,5 +1,5 @@
 name: geografija/konfederacija
-title: "Konfederacija"
+title: Konfederacija
 description: |
   Konfederacija (iš lot. confoederatio – „sąjunga, susivienijimas“) – tokia
   valstybių santykių forma, kai į sąjungą įeinančios valstybės dalį savo
@@ -11,18 +11,18 @@ description: |
 type: model
 version:
   number: 1
-  date: "2019-01-24"
+  date: '2019-01-24'
 properties:
   pavadinimas:
     type: string
-    title: "Pavadinimas"
+    title: Pavadinimas
   trumpinys:
     type: string
-    title: "Trumpinys"
+    title: Trumpinys
   salys:
     type: backref
-    object: geografija/salis
+    model: geografija/salis
     secondary: geografija/naryste
   nariai:
     type: backref
-    object: geografija/naryste
+    model: geografija/naryste

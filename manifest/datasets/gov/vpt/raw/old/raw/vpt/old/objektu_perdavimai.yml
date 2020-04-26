@@ -1,0 +1,31 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_perdavimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_PERDAVIMAI
+properties:
+  _id:
+    type: pk
+    external:
+    - OBPE_DATA_NUO
+    - OBPE_OBJ_ID
+    - OBPE_SBJ_ID
+  obpe_obj_id:
+    type: integer
+    external: OBPE_OBJ_ID
+  obpe_sbj_id:
+    type: integer
+    external: OBPE_SBJ_ID
+  obpe_data_nuo:
+    type: datetime
+    external: OBPE_DATA_NUO
+  obpe_data_iki:
+    type: datetime
+    external: OBPE_DATA_IKI
+  obpe_pastabos:
+    type: string
+    external: OBPE_PASTABOS
+  obpe_originalas:
+    type: integer
+    external: OBPE_ORIGINALAS

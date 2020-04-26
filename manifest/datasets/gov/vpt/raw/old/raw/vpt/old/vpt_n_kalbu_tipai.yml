@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_kalbu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_KALBU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: KALBOST_ID
+  kalbost_id:
+    type: integer
+    external: KALBOST_ID
+  kalbost_kodas:
+    type: string
+    external: KALBOST_KODAS
+  kalbost_pav:
+    type: string
+    external: KALBOST_PAV

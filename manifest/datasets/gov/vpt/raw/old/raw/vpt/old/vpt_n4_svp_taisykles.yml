@@ -1,0 +1,50 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n4_svp_taisykles
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N4_SVP_TAISYKLES
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_last_update_data:
+    type: datetime
+    external: DOK_LAST_UPDATE_DATA
+  dok_reg_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: DOK_REG_SBJ_ID
+  dok_mod_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: DOK_MOD_SBJ_ID
+  dok_indeksas:
+    type: integer
+    external: DOK_INDEKSAS
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_po_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: DOK_PO_SBJ_ID
+  dok_pavadinimas:
+    type: string
+    external: DOK_PAVADINIMAS
+  dok_anul_data:
+    type: datetime
+    external: DOK_ANUL_DATA
+  dok_anul_sbj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/subjektai
+    external: DOK_ANUL_SBJ_ID
+  dok_anul_pastabos:
+    type: string
+    external: DOK_ANUL_PASTABOS

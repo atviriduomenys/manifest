@@ -1,0 +1,12 @@
+name: datasets/gov/tm/partiju_sarasai_pdf
+title: Lietuvos Respublikos politinių partijų sąrašas
+type: dataset
+version:
+  number: 1
+  date: '2019-03-13'
+owner: gov/tm
+level: 1
+resources:
+  partijos:
+    type: html
+    external: https://tm.lrv.lt/lt/veiklos-sritys-1/politiniu-partiju-steigimas-ir-registravimas/politiniu-partiju-sarasai

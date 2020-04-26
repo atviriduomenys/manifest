@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_po_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_PO_TIPAI
+properties:
+  _id:
+    type: pk
+  t_pot_id:
+    type: integer
+    external: T_POT_ID
+  t_pot_kodas:
+    type: integer
+    external: T_POT_KODAS
+  t_pot_pav:
+    type: string
+    external: T_POT_PAV

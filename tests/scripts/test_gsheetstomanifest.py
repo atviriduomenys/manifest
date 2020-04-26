@@ -61,7 +61,7 @@ def test_create_new_file(postgresql, config, tmpdir):
                                 },
                                 'org': {  # property
                                     'type': 'ref',
-                                    'object': 'org',
+                                    'model': 'org',
                                     'source': 'ORG'
                                 },
                             },
@@ -97,7 +97,7 @@ def test_update_existing_file(postgresql, config, tmpdir):
         '              const: awadr',
         '            org:',
         '              type: ref',
-        '              object: ogr',
+        '              model: ogr',
         '              # More comments',
         '              source: OGR  # at the end of line',
         '            legacy:',
@@ -152,7 +152,7 @@ def test_update_existing_file(postgresql, config, tmpdir):
                                 },
                                 'org': {
                                     'type': 'ref',
-                                    'object': 'org',
+                                    'model': 'org',
                                     'source': 'ORG',
                                 },
                                 'title': {
@@ -212,7 +212,7 @@ def test_csv_file(postgresql, config, tmpdir):
                                 },
                                 'org': {  # property
                                     'type': 'ref',
-                                    'object': 'org',
+                                    'model': 'org',
                                     'source': 'ORG'
                                 },
                             },

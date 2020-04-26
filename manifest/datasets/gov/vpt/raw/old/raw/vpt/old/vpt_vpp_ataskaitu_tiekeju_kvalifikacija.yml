@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_vpp_ataskaitu_tiekeju_kvalifikacija
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_VPP_ATASKAITU_TIEKEJU_KVALIFIKACIJA
+properties:
+  _id:
+    type: pk
+  tiek_kv_dok_id:
+    type: integer
+    external: TIEK_KV_DOK_ID
+  tiek_kv_eil_nr:
+    type: integer
+    external: TIEK_KV_EIL_NR
+  tiek_kv_sbj_id:
+    type: integer
+    external: TIEK_KV_SBJ_ID
+  tiek_kv_sbj_eil_nr:
+    type: integer
+    external: TIEK_KV_SBJ_EIL_NR
+  tiek_kv_kvalifikacija:
+    type: string
+    external: TIEK_KV_KVALIFIKACIJA
+  tiek_kv_sbj_patikslinimas:
+    type: string
+    external: TIEK_KV_SBJ_PATIKSLINIMAS

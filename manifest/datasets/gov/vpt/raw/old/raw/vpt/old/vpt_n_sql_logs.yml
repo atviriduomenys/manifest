@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_sql_logs
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_SQL_LOGS
+properties:
+  _id:
+    type: pk
+    external: LOG_ID
+  log_id:
+    type: integer
+    external: LOG_ID
+  log_data:
+    type: datetime
+    external: LOG_DATA
+  log_data_sql:
+    type: datetime
+    external: LOG_DATA_SQL
+  log_current_sbj_id:
+    type: integer
+    external: LOG_CURRENT_SBJ_ID
+  log_sql:
+    type: string
+    external: LOG_SQL

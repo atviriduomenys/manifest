@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klasifikatoriai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLASIFIKATORIAI
+properties:
+  _id:
+    type: pk
+    external: KLA_KODAS
+  kla_kodas:
+    type: integer
+    external: KLA_KODAS
+  kla_pav:
+    type: string
+    external: KLA_PAV
+  kla_ivede:
+    type: string
+    external: KLA_IVEDE
+  kla_ivedimo_data:
+    type: datetime
+    external: KLA_IVEDIMO_DATA
+  kla_koregavo:
+    type: string
+    external: KLA_KOREGAVO
+  kla_koregavimo_data:
+    type: datetime
+    external: KLA_KOREGAVIMO_DATA

@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_prekiu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PREKIU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: PREKIUT_ID
+  prekiut_id:
+    type: integer
+    external: PREKIUT_ID
+  prekiut_kodas:
+    type: integer
+    external: PREKIUT_KODAS
+  prekiut_pav:
+    type: string
+    external: PREKIUT_PAV

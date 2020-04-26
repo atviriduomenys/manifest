@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/laiko_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: LAIKO_TIPAI
+properties:
+  _id:
+    type: pk
+  ltip_id:
+    type: integer
+    external: LTIP_ID
+  ltip_kodas:
+    type: integer
+    external: LTIP_KODAS
+  ltip_pav:
+    type: string
+    external: LTIP_PAV

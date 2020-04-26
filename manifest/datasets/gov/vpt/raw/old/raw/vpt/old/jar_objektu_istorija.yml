@@ -1,0 +1,80 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektu_istorija
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_OBJEKTU_ISTORIJA
+properties:
+  _id:
+    type: pk
+    external: JOI_ID
+  joi_id:
+    type: integer
+    external: JOI_ID
+  joi_jobj_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_objektai
+    external: JOI_JOBJ_ID
+  joi_kodas:
+    type: integer
+    external: JOI_KODAS
+  joi_rejestro_kodas:
+    type: integer
+    external: JOI_REJESTRO_KODAS
+  joi_pav:
+    type: string
+    external: JOI_PAV
+  joi_form_kodas:
+    type: integer
+    external: JOI_FORM_KODAS
+  joi_stat_statusas:
+    type: integer
+    external: JOI_STAT_STATUSAS
+  joi_dbuk_kodas:
+    type: integer
+    external: JOI_DBUK_KODAS
+  joi_priklauso_id:
+    type: integer
+    external: JOI_PRIKLAUSO_ID
+  joi_pagrindinis:
+    type: integer
+    external: JOI_PAGRINDINIS
+  joi_jad_tekstas:
+    type: string
+    external: JOI_JAD_TEKSTAS
+  joi_reg_data:
+    type: datetime
+    external: JOI_REG_DATA
+  joi_steigimo_data:
+    type: datetime
+    external: JOI_STEIGIMO_DATA
+  joi_isreg_data:
+    type: datetime
+    external: JOI_ISREG_DATA
+  joi_anul:
+    type: integer
+    external: JOI_ANUL
+  joi_ivede:
+    type: string
+    external: JOI_IVEDE
+  joi_ivedimo_data:
+    type: datetime
+    external: JOI_IVEDIMO_DATA
+  joi_koregavo:
+    type: string
+    external: JOI_KOREGAVO
+  joi_koregavimo_data:
+    type: datetime
+    external: JOI_KOREGAVIMO_DATA
+  joi_txt_telefonas:
+    type: string
+    external: JOI_TXT_TELEFONAS
+  joi_txt_faksas:
+    type: string
+    external: JOI_TXT_FAKSAS
+  joi_txt_email:
+    type: string
+    external: JOI_TXT_EMAIL
+  joi_txt_url:
+    type: string
+    external: JOI_TXT_URL

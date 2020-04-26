@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/phare_subjektu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PHARE_SUBJEKTU_TIPAI
+properties:
+  _id:
+    type: pk
+    external: PSBJT_ID
+  psbjt_id:
+    type: integer
+    external: PSBJT_ID
+  psbjt_kodas:
+    type: integer
+    external: PSBJT_KODAS
+  psbjt_pav:
+    type: string
+    external: PSBJT_PAV

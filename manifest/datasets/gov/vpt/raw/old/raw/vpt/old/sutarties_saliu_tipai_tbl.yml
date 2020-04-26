@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sutarties_saliu_tipai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUTARTIES_SALIU_TIPAI_TBL
+properties:
+  _id:
+    type: pk
+    external: SUTST_ID
+  sutst_id:
+    type: integer
+    external: SUTST_ID
+  sutst_kodas:
+    type: integer
+    external: SUTST_KODAS
+  sutst_pav:
+    type: string
+    external: SUTST_PAV

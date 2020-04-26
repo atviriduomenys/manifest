@@ -1,0 +1,96 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_skundu_tiekejai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SKUNDU_TIEKEJAI
+properties:
+  _id:
+    type: pk
+  tiek_dok_id:
+    type: integer
+    external: TIEK_DOK_ID
+  tiek_eiles_nr:
+    type: integer
+    external: TIEK_EILES_NR
+  tiek_sbj_id:
+    type: integer
+    external: TIEK_SBJ_ID
+  tiek_sbj_telefonas:
+    type: string
+    external: TIEK_SBJ_TELEFONAS
+  tiek_sbj_faksas:
+    type: string
+    external: TIEK_SBJ_FAKSAS
+  tiek_sbj_adresas:
+    type: string
+    external: TIEK_SBJ_ADRESAS
+  tiek_sbj_patikslinimas:
+    type: string
+    external: TIEK_SBJ_PATIKSLINIMAS
+  tiek_apmokejimo_data:
+    type: datetime
+    external: TIEK_APMOKEJIMO_DATA
+  tiek_nenagrinejimo_id:
+    type: integer
+    external: TIEK_NENAGRINEJIMO_ID
+  tiek_nagrinejamas:
+    type: integer
+    external: TIEK_NAGRINEJAMAS
+  tiek_nagr_dokumentu:
+    type: integer
+    external: TIEK_NAGR_DOKUMENTU
+  tiek_nagr_vertinimo:
+    type: integer
+    external: TIEK_NAGR_VERTINIMO
+  tiek_nagr_atmetimo:
+    type: integer
+    external: TIEK_NAGR_ATMETIMO
+  tiek_nagr_pazeidimu:
+    type: integer
+    external: TIEK_NAGR_PAZEIDIMU
+  tiek_nagr_kitu:
+    type: integer
+    external: TIEK_NAGR_KITU
+  tiek_reg_data:
+    type: datetime
+    external: TIEK_REG_DATA
+  tiek_indeksas:
+    type: string
+    external: TIEK_INDEKSAS
+  tiek_tr_procentai:
+    type: integer
+    external: TIEK_TR_PROCENTAI
+  tiek_rastas_truk_id:
+    type: integer
+    external: TIEK_RASTAS_TRUK_ID
+  tiek_rastas_truk_data:
+    type: datetime
+    external: TIEK_RASTAS_TRUK_DATA
+  tiek_rastas_truk_nr:
+    type: string
+    external: TIEK_RASTAS_TRUK_NR
+  tiek_is_sprend_id:
+    type: integer
+    external: TIEK_IS_SPREND_ID
+  tiek_is_sprend_data:
+    type: datetime
+    external: TIEK_IS_SPREND_DATA
+  tiek_is_sprend_nr:
+    type: string
+    external: TIEK_IS_SPREND_NR
+  tiek_trukumu_data:
+    type: datetime
+    external: TIEK_TRUKUMU_DATA
+  tiek_truk_nepasal:
+    type: integer
+    external: TIEK_TRUK_NEPASAL
+  tiek_rastas_gal_id:
+    type: integer
+    external: TIEK_RASTAS_GAL_ID
+  tiek_rastas_gal_data:
+    type: datetime
+    external: TIEK_RASTAS_GAL_DATA
+  tiek_rastas_gal_nr:
+    type: string
+    external: TIEK_RASTAS_GAL_NR

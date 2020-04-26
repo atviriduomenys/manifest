@@ -1,0 +1,18 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/tarybos_bylu_tyrejai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: TARYBOS_BYLU_TYREJAI
+properties:
+  _id:
+    type: pk
+  tbylt_tbyl_id:
+    type: integer
+    external: TBYLT_TBYL_ID
+  tbylt_sbj_id:
+    type: integer
+    external: TBYLT_SBJ_ID
+  tbylt_tyrt_id:
+    type: integer
+    external: TBYLT_TYRT_ID

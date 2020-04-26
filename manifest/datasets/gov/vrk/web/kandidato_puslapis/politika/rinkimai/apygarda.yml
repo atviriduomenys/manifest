@@ -1,0 +1,11 @@
+type: model
+name: datasets/gov/vrk/web/kandidato_puslapis/politika/rinkimai/apygarda
+external:
+  dataset: datasets/gov/vrk/web/kandidato_puslapis
+  resource: anketa
+  name: ''
+properties:
+  numeris:
+    type: string
+  pavadinimas:
+    type: string

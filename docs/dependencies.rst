@@ -86,7 +86,7 @@ Tokio duomenų šaltinio duomenų struktūros aprašas atrodo taip:
        type: ref
        model: datasets/pavyzdziai/priklausomybes/salis
        source:
-         name: $salis._id
+         name: param(salis)._id
          ref: _id
      pavadinimas:
        type: string
@@ -110,10 +110,10 @@ adrese esantis `{salis.kodas}` pakeičiamas į užklausos eilutėje esančią
 reikšme. Tokiu būdu, gauname visus miestus.
 
 Modelio `datasets/pavyzdziai/priklausomybes/miestas` savybė `salis`, reikšmę
-gauna iš kintamojo `$salis._id`. Pagal nutylėjimą lauko `source.name` reikšmė
-atitinka siejamo modelio `source.pk` reikšmę, pagal kurią gaunamas tikrasis
-identifikatorius. Tačiau šiuo atveju identifikatorius jau šinomas, todėl
-papildomai nurodome, kad šiuo atveju `source.name` rodo į `_id` lauką.
+gauna iš kintamojo `param(salis)._id`. Pagal nutylėjimą lauko `source.name`
+reikšmė atitinka siejamo modelio `source.pk` reikšmę, pagal kurią gaunamas
+tikrasis identifikatorius. Tačiau šiuo atveju identifikatorius jau šinomas,
+todėl papildomai nurodome, kad šiuo atveju `source.name` rodo į `_id` lauką.
 
 Galutiniame rezultate gauname tokias dvi lenteles:
 

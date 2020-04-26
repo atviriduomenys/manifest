@@ -1,5 +1,5 @@
 name: geografija/salis
-title: "Šalis"
+title: Šalis
 type: model
 version:
   number: 1
@@ -7,12 +7,12 @@ version:
 properties:
   pavadinimas:
     type: string
-    title: "Pavadinimas"
+    title: Pavadinimas
   trumpinys:
     type: string
-    title: "Trumpinys"
+    title: Trumpinys
   priklauso:
     type: backref
-    object: geografija/konfederacija
+    model: geografija/konfederacija
     secondary: geografija/naryste
   ribos: {type: spatial}

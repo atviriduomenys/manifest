@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/uzduociu_terminai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: UZDUOCIU_TERMINAI_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - UZTE_EILES_NR
+    - UZTE_SBJ_ID
+    - UZTE_UZD_ID
+  uzte_uzd_id:
+    type: integer
+    external: UZTE_UZD_ID
+  uzte_sbj_id:
+    type: integer
+    external: UZTE_SBJ_ID
+  uzte_eiles_nr:
+    type: integer
+    external: UZTE_EILES_NR
+  uzte_data_nuo:
+    type: datetime
+    external: UZTE_DATA_NUO
+  uzte_data_iki:
+    type: datetime
+    external: UZTE_DATA_IKI
+  uzte_uztet_id:
+    type: integer
+    external: UZTE_UZTET_ID
+  uzte_pastabos:
+    type: string
+    external: UZTE_PASTABOS

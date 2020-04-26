@@ -1,0 +1,217 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_ataskaitos_ivsut
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_ATASKAITOS_IVSUT
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_pirkimo_kodas:
+    type: integer
+    external: DOK_PIRKIMO_KODAS
+  dok_pirk_obj_aprasymas:
+    type: string
+    external: DOK_PIRK_OBJ_APRASYMAS
+  dok_pirk_obj_id:
+    type: integer
+    external: DOK_PIRK_OBJ_ID
+  dok_tiek_sbj_id:
+    type: integer
+    external: DOK_TIEK_SBJ_ID
+  dok_tiek_patikslinimas:
+    type: string
+    external: DOK_TIEK_PATIKSLINIMAS
+  dok_sutarties_obj:
+    type: string
+    external: DOK_SUTARTIES_OBJ
+  dok_ivykdyta:
+    type: integer
+    external: DOK_IVYKDYTA
+  dok_su_pazeidimais:
+    type: integer
+    external: DOK_SU_PAZEIDIMAIS
+  dok_nutraukta:
+    type: integer
+    external: DOK_NUTRAUKTA
+  dok_ivykdymo_data:
+    type: datetime
+    external: DOK_IVYKDYMO_DATA
+  dok_pazeidimo_priezastys:
+    type: string
+    external: DOK_PAZEIDIMO_PRIEZASTYS
+  dok_nutraukimo_priezastys:
+    type: string
+    external: DOK_NUTRAUKIMO_PRIEZASTYS
+  dok_sutarties_kaina:
+    type: string
+    external: DOK_SUTARTIES_KAINA
+  dok_atsa_pareigos:
+    type: string
+    external: DOK_ATSA_PAREIGOS
+  dok_atsa_pav:
+    type: string
+    external: DOK_ATSA_PAV
+  dok_atsa_telefonas:
+    type: string
+    external: DOK_ATSA_TELEFONAS
+  dok_atsa_email:
+    type: string
+    external: DOK_ATSA_EMAIL
+  dok_lydrascio_data:
+    type: datetime
+    external: DOK_LYDRASCIO_DATA
+  dok_lydrascio_nr:
+    type: string
+    external: DOK_LYDRASCIO_NR
+  dok_tikr_sbj_id:
+    type: integer
+    external: DOK_TIKR_SBJ_ID
+  dok_tikr_data:
+    type: datetime
+    external: DOK_TIKR_DATA
+  dok_neapskaitoma:
+    type: integer
+    external: DOK_NEAPSKAITOMA
+  dok_neapskaitymo_priezastys:
+    type: string
+    external: DOK_NEAPSKAITYMO_PRIEZASTYS
+  dok_pasirases_pareigos:
+    type: string
+    external: DOK_PASIRASES_PAREIGOS
+  dok_pasirases_pav:
+    type: string
+    external: DOK_PASIRASES_PAV
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_statusas:
+    type: integer
+    external: DOK_STATUSAS
+  dok_sys_last_update_data:
+    type: datetime
+    external: DOK_SYS_LAST_UPDATE_DATA
+  dok_duomenu_ivedimo_data:
+    type: datetime
+    external: DOK_DUOMENU_IVEDIMO_DATA
+  dok_po_issiuntimo_data:
+    type: datetime
+    external: DOK_PO_ISSIUNTIMO_DATA
+  dok_neapskaitymo_data:
+    type: datetime
+    external: DOK_NEAPSKAITYMO_DATA
+  dok_print_data_patvirt:
+    type: integer
+    external: DOK_PRINT_DATA_PATVIRT
+  dok_sut_bendra_kaina:
+    type: number
+    external: DOK_SUT_BENDRA_KAINA
+  dok_sut_kaina_tikrinta:
+    type: integer
+    external: DOK_SUT_KAINA_TIKRINTA
+  dok_sutarties_eil_nr:
+    type: integer
+    external: DOK_SUTARTIES_EIL_NR
+  dok_sutarties_obj_id:
+    type: integer
+    external: DOK_SUTARTIES_OBJ_ID
+  dok_su_pazeidimais_2:
+    type: integer
+    external: DOK_SU_PAZEIDIMAIS_2
+  dok_atsa_sbj_id:
+    type: integer
+    external: DOK_ATSA_SBJ_ID
+  dok_patvirt_sbj_id:
+    type: integer
+    external: dok_patvirt_sbj_id
+  dok_patvirtinimo_data:
+    type: datetime
+    external: dok_patvirtinimo_data
+  dok_pot_id:
+    type: integer
+    external: DOK_POT_ID
+  dok_neapskaitomumo_data:
+    type: datetime
+    external: DOK_NEAPSKAITOMUMO_DATA
+  dok_pasirases_pavarde:
+    type: string
+    external: DOK_PASIRASES_PAVARDE
+  dok_pasirases_vardas:
+    type: string
+    external: DOK_PASIRASES_VARDAS
+  dok_indeksas:
+    type: integer
+    external: DOK_INDEKSAS
+  dok_formos_tipas:
+    type: integer
+    external: DOK_FORMOS_TIPAS
+  dok_tiek_sbj_skodas:
+    type: integer
+    external: DOK_TIEK_SBJ_SKODAS
+  dok_tiek_sbj_pav:
+    type: string
+    external: DOK_TIEK_SBJ_PAV
+  dok_n3_kita_informacija:
+    type: string
+    external: DOK_N3_KITA_INFORMACIJA
+  dok_n5_negaliojanti:
+    type: integer
+    external: DOK_N5_NEGALIOJANTI
+  dok_n5_kiti_pagrindai:
+    type: integer
+    external: DOK_N5_KITI_PAGRINDAI
+  dok_n5_sut_taikytos_prievoles:
+    type: integer
+    external: DOK_N5_SUT_TAIKYTOS_PRIEVOLES
+  dok_n5_sut_kita_info:
+    type: string
+    external: DOK_N5_SUT_KITA_INFO
+  dok_n5_pagal_vpgsi:
+    type: integer
+    external: DOK_N5_PAGAL_VPGSI
+  dok_n5_kiti_pagrindai_text:
+    type: string
+    external: DOK_N5_KITI_PAGRINDAI_TEXT
+  dok_n6_finansuojamas_es:
+    type: integer
+    external: DOK_N6_FINANSUOJAMAS_ES
+  dok_n6_finans_is_es_strukt_fondu:
+    type: integer
+    external: DOK_N6_FINANS_IS_ES_STRUKT_FONDU
+  dok_n6_finans_is_kt_fondu:
+    type: integer
+    external: DOK_N6_FINANS_IS_KT_FONDU
+  dok_n6_finans_galimas_is_es_strukt_fondu:
+    type: integer
+    external: DOK_N6_FINANS_GALIMAS_IS_ES_STRUKT_FONDU
+  dok_n6_finans_projekto_paraiska_nepateikta:
+    type: integer
+    external: DOK_N6_FINANS_PROJEKTO_PARAISKA_NEPATEIKTA
+  dok_n6_finans_es_projekto_kodas:
+    type: string
+    external: DOK_N6_FINANS_ES_PROJEKTO_KODAS
+  dok_n6_finans_kt_projekto_kodas:
+    type: string
+    external: DOK_N6_FINANS_KT_PROJEKTO_KODAS
+  dok_n6_finans_kt_projekto_pav:
+    type: string
+    external: DOK_N6_FINANS_KT_PROJEKTO_PAV
+  dok_n6_finans_kt_projekto_pastabos:
+    type: string
+    external: DOK_N6_FINANS_KT_PROJEKTO_PASTABOS
+  dok_n6_finans_es_projekto_pastabos:
+    type: string
+    external: DOK_N6_FINANS_ES_PROJEKTO_PASTABOS

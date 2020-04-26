@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/tarybos_bylu_sriciu_detalizavimas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: TARYBOS_BYLU_SRICIU_DETALIZAVIMAS
+properties:
+  _id:
+    type: pk
+    external: TBYLSD_ID
+  tbylsd_id:
+    type: integer
+    external: TBYLSD_ID
+  tbylsd_kodas:
+    type: integer
+    external: TBYLSD_KODAS
+  tbylsd_pav:
+    type: string
+    external: TBYLSD_PAV

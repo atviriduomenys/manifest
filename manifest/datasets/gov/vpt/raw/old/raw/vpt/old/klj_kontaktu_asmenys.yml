@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/klj_kontaktu_asmenys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: KLJ_KONTAKTU_ASMENYS
+properties:
+  _id:
+    type: pk
+  kljka_kljk_id:
+    type: integer
+    external: KLJKA_KLJK_ID
+  kljka_tipas:
+    type: integer
+    external: KLJKA_TIPAS
+  kljka_sbj_id:
+    type: integer
+    external: KLJKA_SBJ_ID
+  kljka_sbj_asm:
+    type: integer
+    external: KLJKA_SBJ_ASM
+  kljka_sbj_patikslinimas:
+    type: string
+    external: KLJKA_SBJ_PATIKSLINIMAS

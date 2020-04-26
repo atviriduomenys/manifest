@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_vppa_dalyviai_datos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_VPPA_DALYVIAI_DATOS
+properties:
+  _id:
+    type: pk
+  dat_eil_nr:
+    type: integer
+    external: DAT_EIL_NR
+  dat_cmd:
+    type: integer
+    external: DAT_CMD
+  dat_dok_id:
+    type: integer
+    external: DAT_DOK_ID
+  dat_data:
+    type: datetime
+    external: DAT_DATA

@@ -1,0 +1,54 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_konkursu_rezultatai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_KONKURSU_REZULTATAI
+properties:
+  _id:
+    type: pk
+    external:
+    - KON_DOK_ID
+    - KON_EIL_NR
+  kon_dok_id:
+    type: integer
+    external: KON_DOK_ID
+  kon_eil_nr:
+    type: integer
+    external: KON_EIL_NR
+  kon_po_sbj_id:
+    type: integer
+    external: KON_PO_SBJ_ID
+  kon_po_adresas:
+    type: string
+    external: KON_PO_ADRESAS
+  kon_po_miestas:
+    type: string
+    external: KON_PO_MIESTAS
+  kon_po_telefonas:
+    type: string
+    external: KON_PO_TELEFONAS
+  kon_po_email:
+    type: string
+    external: KON_PO_EMAIL
+  kon_po_sbj_pastabos:
+    type: string
+    external: KON_PO_SBJ_PASTABOS
+  kon_po_pasto_kodas:
+    type: string
+    external: KON_PO_PASTO_KODAS
+  kon_po_salis:
+    type: string
+    external: KON_PO_SALIS
+  kon_po_faksas:
+    type: string
+    external: KON_PO_FAKSAS
+  kon_po_url:
+    type: string
+    external: KON_PO_URL
+  kon_prizo_verte:
+    type: integer
+    external: KON_PRIZO_VERTE
+  kon_prizo_valiuta:
+    type: string
+    external: KON_PRIZO_VALIUTA

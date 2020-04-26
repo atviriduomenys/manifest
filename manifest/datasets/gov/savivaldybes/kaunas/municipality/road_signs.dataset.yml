@@ -1,0 +1,13 @@
+name: datasets/gov/savivaldybes/kaunas/municipality/road_signs
+title: Kaunas road signs
+description: CSV file containing data about Kaunas road signs
+type: dataset
+version:
+  number: 1
+  date: '2018-10-06'
+level: 3
+owner: gov/savivaldybes/kaunas
+resources:
+  zenklai:
+    type: csv
+    external: https://raw.githubusercontent.com/Kauno-miestas/Kauno-Planas/master/Transportas/csv/

@@ -1,5 +1,5 @@
 name: politika/seimas/kadencija
-title: "Seimo kadencija"
+title: Seimo kadencija
 type: model
 version:
   number: 1

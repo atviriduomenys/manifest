@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/lrs/xml/politika/seimas/narys
+external:
+  dataset: datasets/gov/lrs/xml
+  resource: nariai
+  name: /SeimoInformacija/SeimoKadencija/SeimoNarys
+  pk: asmens_id 
+properties:
+  asmens_id:
+    type: integer
+    external: '@asmens_id'
+  vardas:
+    type: string
+    external: '@vardas'
+  pavarde:
+    type: string
+    external: '@pavardė'
+  gimimo_data:
+    type: date
+    level: 1
+  mirties_data:
+    type: date
+    level: 0
+  gimimo_vieta:
+    type: string
+    external: '@biografijos_nuoroda'
+    level: 1
+  nuotrauka:
+    type: string
+    external: '@biografijos_nuoroda'
+    level: 1
+  kadencija:
+    type: ref
+    model: politika/seimas/kadencija
+    prepare: param(kadencija).kadencijos_id
+

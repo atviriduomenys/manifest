@@ -1,6 +1,6 @@
-name: "projects/atviriduomenys.lt"
-title: "Atviri duomenys"
-type: "project"
+name: projects/atviriduomenys.lt
+title: Atviri duomenys
+type: project
 version: 1
 date: 2018-09-21
 objects:

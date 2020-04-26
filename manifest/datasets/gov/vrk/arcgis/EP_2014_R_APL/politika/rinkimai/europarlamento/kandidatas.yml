@@ -1,0 +1,17 @@
+type: model
+name: datasets/gov/vrk/arcgis/EP_2014_R_APL/politika/rinkimai/europarlamento/kandidatas
+external:
+  dataset: datasets/gov/vrk/arcgis/EP_2014_R_APL
+  resource: rezultatai
+  name: ''
+properties:
+  rinkimai:
+    type: string
+    level: 1
+    prepare: "'2014 m. rinkimai į Europos Parlamentą'"
+  asmuo:
+    type: string
+    level: 1
+  partija:
+    type: string
+    level: 1

@@ -8,7 +8,7 @@ properties:
         type: string
       sep:
         type: string
-        title: "Separator"
+        title: Separator
         description: >
           Delimiter to use. If sep is None, separator will be automatically
           detected using Python’s builtin sniffer tool, csv.Sniffer. In
@@ -18,10 +18,10 @@ properties:
           Note that regex delimiters are prone to ignoring quoted data.
       header:
         oneOf:
-          - type: integer
-          - type: array
-            items:
-              type: integer
+        - type: integer
+        - type: array
+          items:
+            type: integer
         description: >
           Row number(s) to use as the column names, and the start of the data.
           Default behavior is to infer the column names: if no names are passed
@@ -41,18 +41,18 @@ properties:
         type: integer
       compression:
         enum:
-          - gzip
-          - bz2
-          - zip
-          - xz
+        - gzip
+        - bz2
+        - zip
+        - xz
       quotechar:
         type: string
       quoting:
         enum:
-          - minimal
-          - all
-          - nonnumeric
-          - none
+        - minimal
+        - all
+        - nonnumeric
+        - none
       encoding:
         type: string
       error_bad_lines:

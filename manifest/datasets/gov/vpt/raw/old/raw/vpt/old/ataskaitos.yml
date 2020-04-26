@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/ataskaitos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: ATASKAITOS
+properties:
+  _id:
+    type: pk
+  atask_id:
+    type: integer
+    external: ATASK_ID
+  atask_kodas:
+    type: string
+    external: ATASK_KODAS
+  atask_pav:
+    type: string
+    external: ATASK_PAV
+  atask_url:
+    type: string
+    external: ATASK_URL
+  atask_url_paieska:
+    type: string
+    external: ATASK_URL_PAIESKA
+  atask_objt_id:
+    type: integer
+    external: ATASK_OBJT_ID

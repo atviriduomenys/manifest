@@ -1,5 +1,5 @@
 name: duomenys/rinkinys
-title: "Duomenų rinkinys"
+title: Duomenų rinkinys
 description: >
   Vieno duomenų tiekėjo duomenų rinkinys, dažniausiai iš vienos konkrečios
   duomenų bazės ar duomenų saugyklos.
@@ -23,30 +23,30 @@ properties:
     link: dct:modified
   raktažodžiai:
     type: backref
-    object: duomenys/raktažodis
+    model: duomenys/raktažodis
     secondary: true
     link: dct:keyword
   kontaktai:
     type: backref
-    object: duomenys/kontaktas
+    model: duomenys/kontaktas
     secondary: true
     link: dcat:contactPoint
   laikotarpiai:
     type: backref
-    object: duomenys/laikotarpis
+    model: duomenys/laikotarpis
     secondary: true
     link: dct:temporal
   vietovės:
-    type: backref 
-    object: duomenys/laikotarpis
+    type: backref
+    model: duomenys/laikotarpis
     secondary: true
     link: dct:temporal
   dažnumas:
     type: backref
-    object: duomenys/dažnumas
+    model: duomenys/dažnumas
     secondary: true
     link: dct:accrualPeriodicity
   tiekėjas:
     type: ref
-    object: duomenys/tiekėjas
+    model: duomenys/tiekėjas
     link: dct:publisher

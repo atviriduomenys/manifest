@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/objektu_veiksmu_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: OBJEKTU_VEIKSMU_TIPAI
+properties:
+  _id:
+    type: pk
+  ovt_id:
+    type: integer
+    external: OVT_ID
+  ovt_kodas:
+    type: string
+    external: OVT_KODAS
+  ovt_pav:
+    type: string
+    external: OVT_PAV
+  obvt_id:
+    type: integer
+    external: OBVT_ID
+  obvt_kodas:
+    type: integer
+    external: OBVT_KODAS
+  obvt_pav:
+    type: string
+    external: OBVT_PAV

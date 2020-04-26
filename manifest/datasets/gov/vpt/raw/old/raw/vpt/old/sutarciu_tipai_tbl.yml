@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sutarciu_tipai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUTARCIU_TIPAI_TBL
+properties:
+  _id:
+    type: pk
+    external: SUTT_ID
+  sutt_id:
+    type: integer
+    external: SUTT_ID
+  sutt_kodas:
+    type: integer
+    external: SUTT_KODAS
+  sutt_pav:
+    type: string
+    external: SUTT_PAV

@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_tekstiniai_atributai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_TEKSTINIAI_ATRIBUTAI
+properties:
+  _id:
+    type: pk
+    external: TATR_KODAS
+  tatr_kodas:
+    type: integer
+    external: TATR_KODAS
+  tatr_pav_i:
+    type: string
+    external: TATR_PAV_I
+  tatr_pav_english:
+    type: string
+    external: TATR_PAV_ENGLISH
+  tatr_galioja_iki:
+    type: datetime
+    external: TATR_GALIOJA_IKI
+  tatr_koregavimo_data:
+    type: datetime
+    external: TATR_KOREGAVIMO_DATA

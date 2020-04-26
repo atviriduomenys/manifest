@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_pirkimo_objektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_PIRKIMO_OBJEKTAI
+properties:
+  _id:
+    type: pk
+  pirk_obj_id:
+    type: integer
+    external: PIRK_OBJ_ID
+  pirk_obj_kodas:
+    type: string
+    external: PIRK_OBJ_KODAS
+  pirk_obj_pav:
+    type: string
+    external: PIRK_OBJ_PAV
+  pirk_obj_objt_id:
+    type: integer
+    external: PIRK_OBJ_OBJT_ID
+  pirk_kategorija:
+    type: integer
+    external: PIRK_KATEGORIJA
+  pirk_galiojimo_data:
+    type: datetime
+    external: PIRK_galiojimo_data
+  rowguid:
+    type: string
+    external: rowguid

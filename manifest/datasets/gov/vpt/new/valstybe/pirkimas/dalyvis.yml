@@ -1,0 +1,26 @@
+type: model
+name: datasets/gov/vpt/new/valstybe/pirkimas/dalyvis
+external:
+  dataset: datasets/gov/vpt/new
+  resource: mssql
+  name: ATN1_CONTRACT_LIST
+properties:
+  _id:
+    type: pk
+    external:
+    - ATN1_ID
+    - CODE
+  role:
+    type: string
+    prepare: "'contractor'"
+  pirkimas:
+    type: ref
+    model: valstybe/pirkimas
+    external: ATN1_ID
+  organizacija:
+    type: ref
+    model: organizacija
+    external: CODE
+  pavadinimas:
+    type: string
+    external: NAME

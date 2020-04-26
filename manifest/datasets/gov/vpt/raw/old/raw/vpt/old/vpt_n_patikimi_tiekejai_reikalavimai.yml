@@ -1,0 +1,40 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_reikalavimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PATIKIMI_TIEKEJAI_REIKALAVIMAI
+properties:
+  _id:
+    type: pk
+    external:
+    - REIK_DOK_EIL_NR
+    - REIK_DOK_ID
+  reik_dok_id:
+    type: integer
+    external: REIK_DOK_ID
+  reik_dok_eil_nr:
+    type: integer
+    external: REIK_DOK_EIL_NR
+  reik_gd_id:
+    type: ref
+    model: datasets/gov/vpt/raw/old/raw/vpt/old/gaunami_dokumentai_tbl
+    external: REIK_GD_ID
+  reik_reg_pratesimas:
+    type: integer
+    external: REIK_REG_PRATESIMAS
+  reik_termino_data:
+    type: datetime
+    external: REIK_TERMINO_DATA
+  reik_siekia_aukst_kl:
+    type: integer
+    external: REIK_SIEKIA_AUKST_KL
+  reik_nepatikslino_duomenu:
+    type: integer
+    external: REIK_NEPATIKSLINO_DUOMENU
+  reik_duom_sutvarkyti_check:
+    type: integer
+    external: REIK_DUOM_SUTVARKYTI_CHECK
+  reik_duom_sutvarkyti_data:
+    type: datetime
+    external: REIK_DUOM_SUTVARKYTI_DATA

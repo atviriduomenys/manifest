@@ -1,5 +1,5 @@
 name: politika/rinkimai/kandidatas/pareigos
-title: "Pareigos darbovietėje"
+title: Pareigos darbovietėje
 type: model
 version:
   number: 1
@@ -7,7 +7,7 @@ version:
 properties:
   darboviete:
     type: ref
-    object: teise/juridinis_asmuo
+    model: teise/juridinis_asmuo
   pareigos: {type: string}
   nuo: {type: date}
   iki: {type: date}

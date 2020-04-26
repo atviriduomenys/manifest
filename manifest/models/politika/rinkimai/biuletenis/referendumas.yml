@@ -1,11 +1,11 @@
 name: politika/rinkimai/biuletenis/referendumas
-title: "Referendumo biuletenis"
+title: Referendumo biuletenis
 type: model
 version:
   number: 1
   date: 2019-01-20
 properties:
-  numeris: {type: string, title: "Biuletenio numeris"}
+  numeris: {type: string, title: Biuletenio numeris}
   balsas:
     type: ref
-    object: politika/rinkimai/referendumas/klausimas
+    model: politika/rinkimai/referendumas/klausimas

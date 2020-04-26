@@ -1,0 +1,51 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_darbai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_DARBAI
+properties:
+  _id:
+    type: pk
+    external:
+    - PRJD_EILES_NR
+    - PRJD_PRJK_ID
+  prjd_prjk_id:
+    type: integer
+    external: PRJD_PRJK_ID
+  prjd_eiles_nr:
+    type: integer
+    external: PRJD_EILES_NR
+  prjd_data_nuo:
+    type: datetime
+    external: PRJD_DATA_NUO
+  prjd_data_iki:
+    type: datetime
+    external: PRJD_DATA_IKI
+  prjd_aprasymas:
+    type: string
+    external: PRJD_APRASYMAS
+  prjd_bsn_proc:
+    type: integer
+    external: PRJD_BSN_PROC
+  prjd_bsn_pav:
+    type: string
+    external: PRJD_BSN_PAV
+  prjd_bsn_data:
+    type: datetime
+    external: PRJD_BSN_DATA
+  prjd_bsn_priemone:
+    type: string
+    external: PRJD_BSN_PRIEMONE
+  prjd_bsn_pastabos:
+    type: string
+    external: PRJD_BSN_PASTABOS
+  prjd_aprasymas_en:
+    type: string
+    external: PRJD_APRASYMAS_EN
+  prjd_bsn_pastabos_en:
+    type: string
+    external: PRJD_BSN_PASTABOS_EN
+  upsize_ts:
+    type: datetime
+    external: upsize_ts

@@ -1,0 +1,27 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vpp_komentarai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPP_KOMENTARAI
+properties:
+  _id:
+    type: pk
+    external:
+    - KOM_DOK_ID
+    - KOM_EIL_NR
+  kom_dok_id:
+    type: integer
+    external: KOM_DOK_ID
+  kom_eil_nr:
+    type: integer
+    external: KOM_EIL_NR
+  kom_reg_sbj_id:
+    type: integer
+    external: KOM_REG_SBJ_ID
+  kom_reg_data:
+    type: datetime
+    external: KOM_REG_DATA
+  kom_komentaras:
+    type: string
+    external: KOM_KOMENTARAS

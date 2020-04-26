@@ -1,0 +1,82 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_ivertinimai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_IVERTINIMAI_TBL
+properties:
+  _id:
+    type: pk
+    external: DOK_ID
+  dok_id:
+    type: integer
+    external: DOK_ID
+  dok_sys_reg_data:
+    type: datetime
+    external: DOK_SYS_REG_DATA
+  dok_reg_data:
+    type: datetime
+    external: DOK_REG_DATA
+  dok_reg_nr:
+    type: integer
+    external: DOK_REG_NR
+  dok_pirkimo_kodas:
+    type: integer
+    external: DOK_PIRKIMO_KODAS
+  dok_po_sbj_id:
+    type: integer
+    external: DOK_PO_SBJ_ID
+  dok_po_patikslinimas:
+    type: string
+    external: DOK_PO_PATIKSLINIMAS
+  dok_pirk_obj_id:
+    type: integer
+    external: DOK_PIRK_OBJ_ID
+  dok_pirk_obj_aprasymas:
+    type: string
+    external: DOK_PIRK_OBJ_APRASYMAS
+  dok_etapo_id:
+    type: integer
+    external: DOK_ETAPO_ID
+  dok_pazeidimu_nera:
+    type: integer
+    external: DOK_PAZEIDIMU_NERA
+  dok_isvadu_id:
+    type: integer
+    external: DOK_ISVADU_ID
+  dok_isvados:
+    type: string
+    external: DOK_ISVADOS
+  dok_sd_id:
+    type: integer
+    external: DOK_SD_ID
+  dok_rez_perkvalifikuotas:
+    type: integer
+    external: DOK_REZ_PERKVALIFIKUOTAS
+  dok_rez_kiti:
+    type: integer
+    external: DOK_REZ_KITI
+  dok_reg_sbj_id:
+    type: integer
+    external: DOK_REG_SBJ_ID
+  dok_skelbimo_formos_tipas:
+    type: integer
+    external: DOK_SKELBIMO_FORMOS_TIPAS
+  dok_cpv_obj_id:
+    type: integer
+    external: DOK_CPV_OBJ_ID
+  dok_pirkb_id:
+    type: integer
+    external: DOK_PIRKB_ID
+  dok_n3_fin_id:
+    type: integer
+    external: DOK_N3_FIN_ID
+  dok_n3_sr_id:
+    type: integer
+    external: DOK_N3_SR_ID
+  dok_n3_pagrindo_id:
+    type: integer
+    external: DOK_N3_PAGRINDO_ID
+  dok_n3_gr_id:
+    type: integer
+    external: DOK_N3_GR_ID

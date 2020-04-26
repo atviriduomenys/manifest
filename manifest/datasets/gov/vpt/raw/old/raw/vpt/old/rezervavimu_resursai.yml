@@ -1,0 +1,36 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rezervavimu_resursai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: REZERVAVIMU_RESURSAI
+properties:
+  _id:
+    type: pk
+  rezr_rez_id:
+    type: integer
+    external: REZR_REZ_ID
+  rezr_panaikintas:
+    type: integer
+    external: REZR_PANAIKINTAS
+  rezr_isd_id:
+    type: integer
+    external: REZR_ISD_ID
+  rezr_data_nuo:
+    type: datetime
+    external: REZR_DATA_NUO
+  rezr_res_id:
+    type: integer
+    external: REZR_RES_ID
+  rezr_kiekis:
+    type: integer
+    external: REZR_KIEKIS
+  rezr_pastabos:
+    type: string
+    external: REZR_PASTABOS
+  rezr_laikas:
+    type: integer
+    external: REZR_LAIKAS
+  rezr_ltip_id:
+    type: integer
+    external: REZR_LTIP_ID

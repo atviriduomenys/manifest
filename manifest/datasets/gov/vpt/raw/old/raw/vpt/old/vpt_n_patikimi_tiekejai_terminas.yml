@@ -1,0 +1,37 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_patikimi_tiekejai_terminas
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_PATIKIMI_TIEKEJAI_TERMINAS
+properties:
+  _id:
+    type: pk
+    external:
+    - TERM_DOK_EIL_NR
+    - TERM_DOK_ID
+    - TERM_REIK_EIL_NR
+  term_dok_id:
+    type: integer
+    external: TERM_DOK_ID
+  term_dok_eil_nr:
+    type: integer
+    external: TERM_DOK_EIL_NR
+  term_reik_eil_nr:
+    type: integer
+    external: TERM_REIK_EIL_NR
+  term_pratesimo_tipas:
+    type: string
+    external: TERM_PRATESIMO_TIPAS
+  term_kreiptasi_data:
+    type: datetime
+    external: TERM_KREIPTASI_DATA
+  term_terminas_data:
+    type: datetime
+    external: TERM_TERMINAS_DATA
+  term_pastabos:
+    type: string
+    external: TERM_PASTABOS
+  term_itraukimo_data:
+    type: datetime
+    external: TERM_ITRAUKIMO_DATA

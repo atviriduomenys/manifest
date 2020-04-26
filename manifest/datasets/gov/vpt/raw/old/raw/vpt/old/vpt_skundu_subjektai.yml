@@ -1,0 +1,46 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_skundu_subjektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_SKUNDU_SUBJEKTAI
+properties:
+  _id:
+    type: pk
+    external: SKND_SBJ_ID
+  sknd_sbj_id:
+    type: integer
+    external: SKND_SBJ_ID
+  sknd_sbj_skodas:
+    type: integer
+    external: SKND_SBJ_SKODAS
+  sknd_sbj_pav:
+    type: string
+    external: SKND_SBJ_PAV
+  sknd_sbj_telefonas:
+    type: string
+    external: SKND_SBJ_TELEFONAS
+  sknd_sbj_pareigos:
+    type: string
+    external: SKND_SBJ_PAREIGOS
+  sknd_sbj_org_id:
+    type: integer
+    external: SKND_SBJ_ORG_ID
+  sknd_sbj_del_id:
+    type: integer
+    external: SKND_SBJ_DEL_ID
+  sknd_sbj_data_nuo:
+    type: datetime
+    external: SKND_SBJ_DATA_NUO
+  sknd_sbj_data_iki:
+    type: datetime
+    external: SKND_SBJ_DATA_IKI
+  sknd_sbj_mob_tel:
+    type: string
+    external: SKND_SBJ_MOB_TEL
+  sknd_sbj_faksas:
+    type: string
+    external: SKND_SBJ_FAKSAS
+  sknd_sbj_email:
+    type: string
+    external: SKND_SBJ_EMAIL

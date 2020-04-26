@@ -239,10 +239,22 @@ resurso šaltinis
 
    :term:`Aplinkos kintamasis <aplinkos kintamasis>` formuojamas taip::
 
-      SPINTA_DATASETS_{manifest.name}_{dataset.name}_{resource.name}
+      resource.source
+      SPINTA_BACKENDS__{resource.ref}__DSN
+      SPINTA_BACKENDS__{dataset.name}__{resource.name}__DSN
+      SPINTA_BACKENDS__{dataset.name}__DSN
+      SPINTA_BACKENDS__{resource.type}__DSN
 
-   `{manifest.name}` dažniausiai bus `default`, nebent naudojante kelis
-   manifestų katalogus.
+   Iš šių variantą nurodytų aukčiau, bus naudojamas pirmas pateiktas. Jei
+   `dataset.name` arba `resource.name` turi `/` pavadinime, jie turi būti
+   pakeisti į `_`.
+
+   Konkrečiai šiuo atveju, galimi tokie duomenų bazės konfigūracijos
+   variantai::
+
+      SPINTA_BACKENDS__DATASETS_PAVYZDYS_SQL_SQL__DSN=postgresql://user@host/dbname
+      SPINTA_BACKENDS__DATASETS_PAVYZDYS_SQL__DSN=postgresql://user@host/dbname
+      SPINTA_BACKENDS__SQL__DSN=postgresql://user@host/dbname
 
    Duomenų bazės šaltinis aprašomas naudojant tokią URL schemą::
 

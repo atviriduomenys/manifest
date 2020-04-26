@@ -1,5 +1,5 @@
 name: politika/rinkimai/apygarda
-title: "Rinkimų apygarda"
+title: Rinkimų apygarda
 type: model
 version:
   number: 1
@@ -7,11 +7,11 @@ version:
 properties:
   rinkimai:
     type: backref
-    object: politika/rinkimai
+    model: politika/rinkimai
     secondary: true
   numeris: {type: integer}
   pavadinimas: {type: string}
-  adresas: {type: ref, object: geografija/lietuva/adresas}
+  adresas: {type: ref, model: geografija/lietuva/adresas}
   telefonas: {type: string}
   el_pastas: {type: string}
   uzsienio: {type: boolean}

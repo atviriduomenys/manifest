@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/konstantu_reiksmes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: KONSTANTU_REIKSMES
+properties:
+  _id:
+    type: pk
+    external: KNSTR_ID
+  knstr_id:
+    type: integer
+    external: KNSTR_ID
+  knstr_value:
+    type: string
+    external: KNSTR_VALUE
+  knstr_value_aprasymas:
+    type: string
+    external: KNSTR_VALUE_APRASYMAS
+  knstr_knst_id:
+    type: integer
+    external: KNSTR_KNST_ID
+  knstr_klasif_reiksme:
+    type: string
+    external: KNSTR_KLASIF_REIKSME
+  knstr_sbj_id:
+    type: integer
+    external: KNSTR_SBJ_ID

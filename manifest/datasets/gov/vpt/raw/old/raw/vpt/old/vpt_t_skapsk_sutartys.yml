@@ -1,0 +1,48 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_skapsk_sutartys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_SKAPSK_SUTARTYS
+properties:
+  _id:
+    type: pk
+    external:
+    - KOM_DOK_ID
+    - KOM_EIL_NR
+  kom_dok_id:
+    type: integer
+    external: KOM_DOK_ID
+  kom_skaicius:
+    type: integer
+    external: KOM_SKAICIUS
+  kom_eil_nr:
+    type: integer
+    external: KOM_EIL_NR
+  kom_verte:
+    type: integer
+    external: KOM_VERTE
+  kom_valiuta:
+    type: string
+    external: KOM_VALIUTA
+  kom_salis:
+    type: boolean
+    external: KOM_SALIS
+  kom_gpa:
+    type: boolean
+    external: KOM_GPA
+  kom_spec_naudojimas:
+    type: boolean
+    external: KOM_SPEC_NAUDOJIMAS
+  kom_kriterijai:
+    type: integer
+    external: KOM_KRITERIJAI
+  kom_kriteriju_pastabos:
+    type: string
+    external: KOM_KRITERIJU_PASTABOS
+  kom_variantai:
+    type: boolean
+    external: KOM_VARIANTAI
+  kom_zema_kaina:
+    type: boolean
+    external: KOM_ZEMA_KAINA

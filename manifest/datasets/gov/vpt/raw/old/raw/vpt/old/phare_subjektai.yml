@@ -1,0 +1,55 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/phare_subjektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PHARE_SUBJEKTAI
+properties:
+  _id:
+    type: pk
+    external: PSBJ_ID
+  psbj_id:
+    type: integer
+    external: PSBJ_ID
+  psbj_skodas:
+    type: string
+    external: PSBJ_SKODAS
+  psbj_pav:
+    type: string
+    external: PSBJ_PAV
+  psbj_salies_kodas:
+    type: string
+    external: PSBJ_SALIES_KODAS
+  psbj_adresas:
+    type: string
+    external: PSBJ_ADRESAS
+  psbj_telefonas:
+    type: string
+    external: PSBJ_TELEFONAS
+  psbj_faksas:
+    type: string
+    external: PSBJ_FAKSAS
+  psbj_e_pastas:
+    type: string
+    external: PSBJ_E_PASTAS
+  psbj_psbjt_id:
+    type: integer
+    external: PSBJ_PSBJT_ID
+  psbj_asmuo:
+    type: string
+    external: PSBJ_ASMUO
+  psbj_lt_asmuo:
+    type: string
+    external: PSBJ_LT_ASMUO
+  psbj_lt_adresas:
+    type: string
+    external: PSBJ_LT_ADRESAS
+  psbj_lt_telefonas:
+    type: string
+    external: PSBJ_LT_TELEFONAS
+  psbj_lt_faksas:
+    type: string
+    external: PSBJ_LT_FAKSAS
+  psbj_lt_e_pastas:
+    type: string
+    external: PSBJ_LT_E_PASTAS

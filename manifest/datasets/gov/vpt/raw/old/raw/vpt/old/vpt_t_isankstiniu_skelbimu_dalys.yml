@@ -1,0 +1,42 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_t_isankstiniu_skelbimu_dalys
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_T_ISANKSTINIU_SKELBIMU_DALYS
+properties:
+  _id:
+    type: pk
+    external:
+    - DAL_EIL_NR
+    - DAL_OBJ_ID
+  dal_obj_id:
+    type: integer
+    external: DAL_OBJ_ID
+  dal_eil_nr:
+    type: integer
+    external: DAL_EIL_NR
+  dal_pav:
+    type: string
+    external: DAL_PAV
+  dal_kita_nomenklatura:
+    type: string
+    external: DAL_KITA_NOMENKLATURA
+  dal_paslt_id:
+    type: integer
+    external: DAL_PASLT_ID
+  dal_kiekis:
+    type: string
+    external: DAL_KIEKIS
+  dal_proc_data:
+    type: datetime
+    external: DAL_PROC_DATA
+  dal_kita_info:
+    type: string
+    external: DAL_KITA_INFO
+  dal_dalt_id:
+    type: integer
+    external: DAL_DALT_ID
+  dal_proceduros_tipas:
+    type: integer
+    external: DAL_PROCEDUROS_TIPAS

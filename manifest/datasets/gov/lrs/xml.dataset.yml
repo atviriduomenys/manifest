@@ -1,0 +1,28 @@
+name: datasets/gov/lrs/xml
+title: Members of Parliament (XML)
+description: XML file containing data about members of parliament.
+type: dataset
+version:
+  number: 1
+  date: '2018-12-01'
+website: https://www.lrs.lt/sip/portal.show?p_r=15818&p_k=1
+owner: gov/lrs
+resources:
+  nariai:
+    type: xml
+    external:
+      name: http://apps.lrs.lt/sip/p2b.ad_seimo_nariai?kadencijos_id={kadencija.kadancijos_id}
+      params:
+        - kadencija: query('datasets/gov/lrs/xml/politika/seimas/kadencija')
+  kadencijos:
+    type: xml
+    external: http://apps.lrs.lt/sip/p2b.ad_seimo_kadencijos
+  frakcijos:
+    type: xml
+    external: http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos
+  frakcijos/nariai:
+    type: xml
+    external: http://apps.lrs.lt/sip/p2b.ad_seimo_frakcijos
+  komitetai:
+    type: xml
+    external: http://apps.lrs.lt/sip/p2b.ad_seimo_komitetai

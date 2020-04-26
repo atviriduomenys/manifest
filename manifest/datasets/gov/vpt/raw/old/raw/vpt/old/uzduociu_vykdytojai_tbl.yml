@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/uzduociu_vykdytojai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: UZDUOCIU_VYKDYTOJAI_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - UZV_SBJ_ID
+    - UZV_UZD_ID
+  uzv_uzd_id:
+    type: integer
+    external: UZV_UZD_ID
+  uzv_sbj_id:
+    type: integer
+    external: UZV_SBJ_ID
+  uzv_eiles_nr:
+    type: integer
+    external: UZV_EILES_NR
+  uzv_uzvt_id:
+    type: integer
+    external: UZV_UZVT_ID

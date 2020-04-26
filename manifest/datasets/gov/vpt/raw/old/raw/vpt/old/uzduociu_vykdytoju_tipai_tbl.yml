@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/uzduociu_vykdytoju_tipai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: UZDUOCIU_VYKDYTOJU_TIPAI_TBL
+properties:
+  _id:
+    type: pk
+    external: UZVT_ID
+  uzvt_id:
+    type: integer
+    external: UZVT_ID
+  uzvt_kodas:
+    type: integer
+    external: UZVT_KODAS
+  uzvt_pav:
+    type: string
+    external: UZVT_PAV

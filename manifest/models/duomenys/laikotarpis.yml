@@ -1,5 +1,5 @@
 name: duomenys/laikotarpis
-title: "Laikotarpis"
+title: Laikotarpis
 type: model
 version:
   number: 1
@@ -14,5 +14,5 @@ properties:
     type: date
   rinkiniai:
     type: backref
-    object: duomenys/rinkinys
+    model: duomenys/rinkinys
     secondary: true

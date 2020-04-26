@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/sutarties_papildymai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SUTARTIES_PAPILDYMAI_TBL
+properties:
+  _id:
+    type: pk
+    external:
+    - SUTPP_EIL_NR
+    - SUTPP_SUT_ID
+  sutpp_sut_id:
+    type: integer
+    external: SUTPP_SUT_ID
+  sutpp_eil_nr:
+    type: integer
+    external: SUTPP_EIL_NR
+  sutpp_data:
+    type: datetime
+    external: SUTPP_DATA
+  sutpp_aprasymas:
+    type: string
+    external: SUTPP_APRASYMAS

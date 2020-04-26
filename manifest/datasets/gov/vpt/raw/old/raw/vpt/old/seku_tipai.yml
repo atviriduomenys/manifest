@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/seku_tipai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: SEKU_TIPAI
+properties:
+  _id:
+    type: pk
+  st_id:
+    type: integer
+    external: ST_ID
+  st_kodas:
+    type: integer
+    external: ST_KODAS
+  st_pav:
+    type: string
+    external: ST_PAV
+  st_galioja:
+    type: integer
+    external: ST_GALIOJA

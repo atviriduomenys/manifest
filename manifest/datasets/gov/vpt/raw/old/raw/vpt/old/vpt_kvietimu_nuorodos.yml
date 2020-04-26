@@ -1,0 +1,24 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_kvietimu_nuorodos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_KVIETIMU_NUORODOS
+properties:
+  _id:
+    type: pk
+    external:
+    - NUOR_EIL_NR
+    - NUOR_KV_ID
+  nuor_kv_id:
+    type: integer
+    external: NUOR_KV_ID
+  nuor_eil_nr:
+    type: integer
+    external: NUOR_EIL_NR
+  nuor_skelbta_data:
+    type: datetime
+    external: NUOR_SKELBTA_DATA
+  nuor_skelbta_nr:
+    type: integer
+    external: NUOR_SKELBTA_NR

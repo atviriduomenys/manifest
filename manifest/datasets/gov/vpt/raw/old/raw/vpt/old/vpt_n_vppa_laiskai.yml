@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n_vppa_laiskai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N_VPPA_LAISKAI
+properties:
+  _id:
+    type: pk
+    external:
+    - LAISK_DOK_ID
+    - LAISK_FILE_ID
+    - LAISK_SSUT_EIL_NR
+  laisk_dok_id:
+    type: integer
+    external: LAISK_DOK_ID
+  laisk_file_id:
+    type: integer
+    external: LAISK_FILE_ID
+  laisk_tipas:
+    type: integer
+    external: LAISK_TIPAS
+  laisk_statusas:
+    type: integer
+    external: LAISK_STATUSAS
+  laisk_siuntimo_data:
+    type: datetime
+    external: LAISK_SIUNTIMO_DATA
+  laisk_count:
+    type: integer
+    external: LAISK_COUNT
+  laisk_ssut_eil_nr:
+    type: integer
+    external: LAISK_SSUT_EIL_NR

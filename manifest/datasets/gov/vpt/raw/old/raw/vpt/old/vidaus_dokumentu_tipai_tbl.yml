@@ -1,0 +1,19 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vidaus_dokumentu_tipai_tbl
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VIDAUS_DOKUMENTU_TIPAI_TBL
+properties:
+  _id:
+    type: pk
+    external: VDTIP_ID
+  vdtip_id:
+    type: integer
+    external: VDTIP_ID
+  vdtip_kodas:
+    type: integer
+    external: VDTIP_KODAS
+  vdtip_pav:
+    type: string
+    external: VDTIP_PAV

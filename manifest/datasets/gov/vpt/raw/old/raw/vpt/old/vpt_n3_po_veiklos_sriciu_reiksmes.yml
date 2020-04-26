@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_po_veiklos_sriciu_reiksmes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_PO_VEIKLOS_SRICIU_REIKSMES
+properties:
+  _id:
+    type: pk
+    external:
+    - SR_VEIKL_DOK_ID
+    - SR_VEIKL_EIL_NR
+    - SR_VEIKL_ID
+  sr_veikl_dok_id:
+    type: integer
+    external: SR_VEIKL_DOK_ID
+  sr_veikl_id:
+    type: integer
+    external: SR_VEIKL_ID
+  sr_veikl_eil_nr:
+    type: integer
+    external: SR_VEIKL_EIL_NR
+  sr_veikl_kita:
+    type: string
+    external: SR_VEIKL_KITA

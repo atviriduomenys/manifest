@@ -1,0 +1,34 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n3_klsf_ekonominiu_veiklu_grupes
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N3_KLSF_EKONOMINIU_VEIKLU_GRUPES
+properties:
+  _id:
+    type: pk
+    external: EVG_ID
+  evg_id:
+    type: integer
+    external: EVG_ID
+  evg_kodas:
+    type: string
+    external: EVG_KODAS
+  evg_pavadinimas:
+    type: string
+    external: EVG_PAVADINIMAS
+  evg_anuliavimo_data:
+    type: datetime
+    external: EVG_ANULIAVIMO_DATA
+  ivede:
+    type: string
+    external: ivede
+  ivedimo_data:
+    type: datetime
+    external: ivedimo_data
+  koregavo:
+    type: string
+    external: koregavo
+  koregavimo_data:
+    type: datetime
+    external: koregavimo_data

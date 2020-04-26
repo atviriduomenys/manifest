@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/jar_klsf_atributai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: JAR_KLSF_ATRIBUTAI
+properties:
+  _id:
+    type: pk
+    external: ATRI_KODAS
+  atri_kodas:
+    type: integer
+    external: ATRI_KODAS
+  atri_vien_kodas:
+    type: integer
+    external: ATRI_VIEN_KODAS
+  atri_pav_i:
+    type: string
+    external: ATRI_PAV_I
+  atri_pav_english:
+    type: string
+    external: ATRI_PAV_ENGLISH
+  atri_galioja_iki:
+    type: datetime
+    external: ATRI_GALIOJA_IKI
+  atri_koregavimo_data:
+    type: datetime
+    external: ATRI_KOREGAVIMO_DATA

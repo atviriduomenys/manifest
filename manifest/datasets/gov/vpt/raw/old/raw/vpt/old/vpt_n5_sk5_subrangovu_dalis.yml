@@ -1,0 +1,53 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vpt_n5_sk5_subrangovu_dalis
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VPT_N5_SK5_SUBRANGOVU_DALIS
+properties:
+  _id:
+    type: pk
+    external:
+    - PO_INFO_DAL_EIL_NR
+    - PO_INFO_EIL_NR
+    - PO_INFO_GRUPES_EIL_NR
+    - PO_INFO_OBJ_ID
+  po_info_obj_id:
+    type: integer
+    external: PO_INFO_OBJ_ID
+  po_info_eil_nr:
+    type: integer
+    external: PO_INFO_EIL_NR
+  po_info_dal_eil_nr:
+    type: integer
+    external: PO_INFO_DAL_EIL_NR
+  po_info_grupes_eil_nr:
+    type: integer
+    external: PO_INFO_GRUPES_EIL_NR
+  sub_dalis_ar_bus_pavesta:
+    type: integer
+    external: SUB_DALIS_AR_BUS_PAVESTA
+  sub_dalis_verte:
+    type: string
+    external: SUB_DALIS_VERTE
+  sub_dalis_valiuta:
+    type: string
+    external: SUB_DALIS_VALIUTA
+  sub_dalis_dalis:
+    type: integer
+    external: SUB_DALIS_DALIS
+  sub_dalis_ar_nezinoma:
+    type: integer
+    external: SUB_DALIS_AR_NEZINOMA
+  sub_dalis_ar_konkursas:
+    type: integer
+    external: SUB_DALIS_AR_KONKURSAS
+  sub_dalis_ar_dalis_per_konkursa:
+    type: integer
+    external: SUB_DALIS_AR_DALIS_PER_KONKURSA
+  sub_dalis_min_konkurso_dalis:
+    type: integer
+    external: SUB_DALIS_MIN_KONKURSO_DALIS
+  sub_dalis_max_konkurso_dalis:
+    type: integer
+    external: SUB_DALIS_MAX_KONKURSO_DALIS

@@ -1,0 +1,30 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rezervavimai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: REZERVAVIMAI
+properties:
+  _id:
+    type: pk
+  rez_id:
+    type: integer
+    external: REZ_ID
+  rez_panaikintas:
+    type: integer
+    external: REZ_PANAIKINTAS
+  rez_data:
+    type: datetime
+    external: REZ_DATA
+  rez_sbj_id:
+    type: integer
+    external: REZ_SBJ_ID
+  rez_pastabos:
+    type: string
+    external: REZ_PASTABOS
+  rez_dbdata:
+    type: datetime
+    external: REZ_DBDATA
+  rez_galioja:
+    type: integer
+    external: REZ_GALIOJA

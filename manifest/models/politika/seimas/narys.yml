@@ -1,6 +1,6 @@
 name: politika/seimas/narys
-title: "Seimo narys"
-description: ""
+title: Seimo narys
+description: ''
 type: model
 version:
   number: 1
@@ -8,11 +8,11 @@ version:
 properties:
   vardas:
     type: ref
-    object: kalba/lietuvių/vardas
-    title: "Vardas"
+    model: kalba/lietuvių/vardas
+    title: Vardas
   pavardė:
     type: string
-    title: "Pavardė"
+    title: Pavardė
   gimimo_data:
     type: date
   mirties_data:
@@ -23,23 +23,23 @@ properties:
     type: image
   kontaktai:
     type: backref
-    object: politika/seimas/kontaktas
+    model: politika/seimas/kontaktas
     property: seimo_narys
   mandatas:
     type: backref
-    object: politika/seimas/mandatas
+    model: politika/seimas/mandatas
   grupės:
     type: backref
     secondary: politika/seimas/pareigos
-    object: politika/seimas/grupė
+    model: politika/seimas/grupė
     property: grupė
   frakcijos:
     type: backref
     secondary: politika/seimas/pareigos
-    object: politika/seimas/frakcija
+    model: politika/seimas/frakcija
     property: grupė
   partijos:
     type: backref
     secondary: politika/seimas/pareigos
-    object: politika/partija
+    model: politika/partija
     property: grupė

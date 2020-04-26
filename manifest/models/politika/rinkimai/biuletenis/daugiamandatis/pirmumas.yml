@@ -1,5 +1,5 @@
 name: politika/rinkimai/biuletenis/daugiamandatis/pirmumas
-title: "Referendumo biuletenis"
+title: Referendumo biuletenis
 type: model
 version:
   number: 1
@@ -7,8 +7,8 @@ version:
 properties:
   biuletenis:
     type: ref
-    object: politika/rinkimai/biuletenis/daugiamandatis
+    model: politika/rinkimai/biuletenis/daugiamandatis
   kandidatas:
     type: ref
-    object: politika/rinkimai/kandidatas
-  pirmumas: {type: integer, title: "Pirmumo numeris"}
+    model: politika/rinkimai/kandidatas
+  pirmumas: {type: integer, title: Pirmumo numeris}

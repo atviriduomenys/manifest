@@ -1,0 +1,10 @@
+type: dataset
+name: datasets/gov/vpt/new
+version:
+  number: 1
+  date: '2019-09-13'
+resources:
+  mssql:
+    type: sql
+    external:
+      schema: CVPIS

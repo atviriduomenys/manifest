@@ -1,0 +1,22 @@
+type: model
+name: datasets/gov/ivpk/opendata.gov.lt/duomenys/kontaktas
+external:
+  dataset: datasets/gov/ivpk/opendata.gov.lt
+  resource: irs
+  name: http://opendata.gov.lt/index.php?vars=/public/public/print/{id}/
+properties:
+  _id:
+    type: pk
+    level: 0
+  vardas:
+    type: string
+    external: Kontaktiniai duomenys
+  pavardė:
+    type: string
+    external: Kontaktiniai duomenys
+  el_paštas:
+    type: string
+    external: Kontaktiniai duomenys
+  telefonas:
+    type: string
+    external: Kontaktiniai duomenys

@@ -1,0 +1,28 @@
+type: model
+name: datasets/gov/lrs/xml/politika/seimas/mandatas
+external:
+  dataset: datasets/gov/lrs/xml
+  resource: nariai
+  name: /SeimoInformacija/SeimoKadencija/SeimoNarys
+  pk: [seimo_narys, nuo]
+properties:
+  kadencija:
+    type: ref
+    model: datasets/gov/lrs/xml/politika/seimas/kadencija
+    external: ../@kadencijos_id
+  seimo_narys:
+    type: ref
+    model: datasets/gov/lrs/xml/politika/seimas/narys
+    external: '@asmens_id'
+  kas_iskele:
+    type: ref
+    model: datasets/gov/lrs/xml/politika/partija
+    level: 1
+    external: '@iškėlusi_partija'
+  nuo:
+    type: date
+    external: '@data_nuo'
+  iki:
+    type: date
+    external: '@data_iki'
+

@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/projektu_temos
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: PROJEKTU_TEMOS
+properties:
+  _id:
+    type: pk
+  prjtema_prj_id:
+    type: integer
+    external: PRJTEMA_PRJ_ID
+  prjtema_tema_id:
+    type: integer
+    external: PRJTEMA_TEMA_ID

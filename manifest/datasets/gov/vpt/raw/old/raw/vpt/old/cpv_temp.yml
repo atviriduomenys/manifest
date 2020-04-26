@@ -1,0 +1,15 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/cpv_temp
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: CPV_TEMP
+properties:
+  _id:
+    type: pk
+  bad_dok_id:
+    type: integer
+    external: BAD_DOK_ID
+  bad_mcpv_kodas:
+    type: string
+    external: BAD_MCPV_KODAS

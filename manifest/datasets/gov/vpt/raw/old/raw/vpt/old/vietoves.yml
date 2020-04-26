@@ -1,0 +1,25 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/vietoves
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: VIETOVES
+properties:
+  _id:
+    type: pk
+    external: VTV_ID
+  vtv_id:
+    type: integer
+    external: VTV_ID
+  vtv_kodas:
+    type: integer
+    external: VTV_KODAS
+  vtv_pav:
+    type: string
+    external: VTV_PAV
+  vtv_raj_kodas:
+    type: integer
+    external: VTV_RAJ_KODAS
+  vtv_tipas:
+    type: string
+    external: VTV_TIPAS

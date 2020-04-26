@@ -1,0 +1,21 @@
+type: model
+name: datasets/gov/vpt/raw/old/datasets/gov/vpt/raw/old/raw/vpt/old/rvs_subjektai
+external:
+  dataset: datasets/gov/vpt/raw/old
+  resource: mssql
+  name: RVS_SUBJEKTAI
+properties:
+  _id:
+    type: pk
+  id:
+    type: integer
+    external: ID
+  veiksmas:
+    type: string
+    external: VEIKSMAS
+  data:
+    type: datetime
+    external: DATA
+  ivertinta:
+    type: boolean
+    external: IVERTINTA
