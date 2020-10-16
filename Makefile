@@ -5,15 +5,15 @@ env/bin/pip:
 	python3.8 -m venv env
 	env/bin/pip install --upgrade pip wheel setuptools
 
-env/.done: env/bin/pip setup.py requirements-dev.txt
+env/.done: env/bin/pip setup.py requirements-dev.txt docs/requirements.txt
 	env/bin/pip install -r requirements-dev.txt -e .
 	touch env/.done
 
 env/bin/pip-compile: env/bin/pip
 	env/bin/pip install pip-tools
 
-requirements-dev.txt: env/bin/pip-compile requirements.in requirements-dev.in
-	env/bin/pip-compile --no-index requirements.in requirements-dev.in -o requirements-dev.txt
+requirements-dev.txt: env/bin/pip-compile requirements.in requirements-dev.in docs/requirements.in
+	env/bin/pip-compile --no-index requirements.in requirements-dev.in docs/requirements.in -o requirements-dev.txt
 
 requirements.txt: env/bin/pip-compile requirements.in
 	env/bin/pip-compile --no-index requirements.in -o requirements.txt
