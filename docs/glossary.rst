@@ -3,158 +3,175 @@ Terminai
 
 .. glossary::
 
-   aplinkos kintamasis
-      Angliškai tai vadinama *environment variables*, tai yra operacinės
-      sistemos aplinkos kintamieji.
+    aplinkos kintamasis
+        Angliškai tai vadinama *environment variables*, tai yra operacinės
+        sistemos aplinkos kintamieji.
 
-      Plačiau apie tai skaitykite `Vikipedijoje
-      <https://en.wikipedia.org/wiki/Environment_variable>`__.
+        Plačiau apie tai skaitykite `Vikipedijoje
+        <https://en.wikipedia.org/wiki/Environment_variable>`__.
 
-   duomenų serializavimo formatas
-      Duomenys gali būti serializuojami įvairiais formatais, pavyzdžui YAML
-      formatu:
+    DSA
+        Duomenų struktūros aprašas - lentelė, kurioje išsamiai aprašyta duomenų
+        struktūra.
 
-      .. code-block:: yaml
+    duomenų serializavimo formatas
+        Duomenys gali būti serializuojami įvairiais formatais, pavyzdžiui YAML
+        formatu:
 
-         type: project
-         title: Manifestas
+        .. code-block:: yaml
 
-      JSON formatu:
+           type: project
+           title: Manifestas
 
-      .. code-block:: json
+        JSON formatu:
 
-         {"type": "project", "title": "Manifestas"}
+        .. code-block:: json
 
-      Turtle formatu:
+           {"type": "project", "title": "Manifestas"}
 
-      .. code-block:: ttl
+        Turtle formatu:
 
-         @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-         @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-         <http://atviriduomenys.lt> a foaf:Project;
-             rdfs:label "Manifestas" .
+        .. code-block:: ttl
 
-      MessagePack dvejetainiu formatu, kurio turinys pateiktas naudojant BASE64
-      koduotę::
+           @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+           @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+           <http://atviriduomenys.lt> a foaf:Project;
+               rdfs:label "Manifestas" .
 
-         gqR0eXBlp3Byb2plY3SkbmFtZapNYW5pZmVzdGFz
+        MessagePack dvejetainiu formatu, kurio turinys pateiktas naudojant BASE64
+        koduotę::
 
-      Visuose šiuose pavyzdžiuose yra pateikti tie patys duomenys, tačiau
-      naudojami skirtingi duomenų serializavimo formatai, koduotės ir skirtingi
-      žodynai.
+           gqR0eXBlp3Byb2plY3SkbmFtZapNYW5pZmVzdGFz
 
-   kanoniniai duomenys
-      Kanoniniai duomenys yra tarsi duomenų etalonas, kuris nusako kokios
-      duomenų reikšmės yra teisingos. Pavyzdžiui įmonės pavadinimas gali būti
-      užrašomas įvairiausiomis formomis, pavyzdžiui:
+        Visuose šiuose pavyzdžiuose yra pateikti tie patys duomenys, tačiau
+        naudojami skirtingi duomenų serializavimo formatai, koduotės ir skirtingi
+        žodynai.
 
-      ============ =================================
-      Įmonės kodas Įmonės pavadinimas
-      ============ =================================
-      \-           UAB "Duomesta"
-      \-           UAB „Duomesta“
-      \-           Duomesta
-      \-           DUOMESTA
-      \-           Uždaroji akcinė bendrovė Duomesta
-      \-           Duomesta, UAB
-      \-           DSTA UAB
-      ============ =================================
+    kanoniniai duomenys
+        Kanoniniai duomenys yra tarsi duomenų etalonas, kuris nusako kokios
+        duomenų reikšmės yra teisingos. Pavyzdžiui įmonės pavadinimas gali būti
+        užrašomas įvairiausiomis formomis, pavyzdžiui:
 
-      Jei duomenų rinkinyje nėra pateiktas įmonės registracijos kodas, tada
-      unikaliai identifikuoti įmonę yra gan sudėtinga.
+        ============ =================================
+        Įmonės kodas Įmonės pavadinimas
+        ============ =================================
+        \-           UAB "Duomesta"
+        \-           UAB „Duomesta“
+        \-           Duomesta
+        \-           DUOMESTA
+        \-           Uždaroji akcinė bendrovė Duomesta
+        \-           Duomesta, UAB
+        \-           DSTA UAB
+        ============ =================================
 
-      Tačiau turint autoritetingus kanoninius duomenis:
+        Jei duomenų rinkinyje nėra pateiktas įmonės registracijos kodas, tada
+        unikaliai identifikuoti įmonę yra gan sudėtinga.
 
-      ============ =================================
-      Įmonės kodas Įmones pavadinimas
-      ============ =================================
-      111111111    UAB "Duomesta"
-      ============ =================================
+        Tačiau turint autoritetingus kanoninius duomenis:
 
-      Užduotis unikaliai identifikuoti įmonę pasidaro paprastesnė. Todėl
-      kanoniniai duomenys yra labai svarbūs.
+        ============ =================================
+        Įmonės kodas Įmones pavadinimas
+        ============ =================================
+        111111111    UAB "Duomesta"
+        ============ =================================
 
-   manifestas
-      Atvirų duomenų manifestas yra :term:`YAML` failų rinkinys, kuriuose
-      aprašyti duomenų šaltiniai ir struktūra.
+        Užduotis unikaliai identifikuoti įmonę pasidaro paprastesnė. Todėl
+        kanoniniai duomenys yra labai svarbūs.
 
-      Žodžiu „Manifest“ IT kontekste vadinamas failas, kuriame pateiktas kitų į
-      vieną paketą įtrauktų failų sąrašas. Plačiau apie tai skaitykite
-      `Vikipedijoje <https://en.wikipedia.org/wiki/Manifest_file>`__.
+    kodinis pavadinimas
+        Pavadinimas, kuriam keliami tam tikri apribojimai. Kodiniame pavadinime
+        visos raidės turi būti mažosios, pavadinimo pirma simbolis turi būti
+        mažoji lotyniška raidė, o visos sekančios raidės turi būti mažosios
+        lotyniškos raidės, skaičiai arba pabraukimo simbolis `_`.
 
-   metaduomenys
-      Duomenys apie duomenis yra vadinami metaduomenimis. Pavyzdžiui duomenų
-      struktūros aprašas konkrečiam CSV duomenų failui gali būti vadinamas CSV
-      failo metaduomenimis.
+        Kodinis pavadinimas atitinka šią reguliąriąją išraišką:
 
-   normalizavimas
-      Duomenų normalizavimas yra duomenų struktūros transformavimo procesas
-      taikant taip vadinamas normalines formas, tam kad sumažinti duomenų
-      pasikartojimą.
+        .. code-block:: regex
 
-      Plačiau apie tai skaitykite `Vikipedijoje
-      <https://en.wikipedia.org/wiki/Database_normalization>`__.
+            [a-z][a-z0-9_]*
 
-   prieigos taškas
-      Prieigos taškas yra :term:`REST API` terminas, nurodantis URL kelio dalį iki tam
-      tikro resurso.
 
-      Plačiau skaitykite `Vikipedijoje
-      <https://en.wikipedia.org/wiki/Web_API#Endpoints>`__.
+    manifestas
+        Atvirų duomenų manifestas yra :term:`YAML` failų rinkinys, kuriuose
+        aprašyti duomenų šaltiniai ir struktūra.
 
-   REST API
-      Representational State Transfer (REST) yra taisyklių ir rekomendacijų
-      rinkinys sirtas :term:`web servisams <web servisas>` kurti.
+        Žodžiu „Manifest“ IT kontekste vadinamas failas, kuriame pateiktas kitų į
+        vieną paketą įtrauktų failų sąrašas. Plačiau apie tai skaitykite
+        `Vikipedijoje <https://en.wikipedia.org/wiki/Manifest_file>`__.
 
-      Plačiau skaitykite `Vikipedijoje
-      <https://en.wikipedia.org/wiki/Representational_state_transfer>`__.
+    metaduomenys
+        Duomenys apie duomenis yra vadinami metaduomenimis. Pavyzdžiui duomenų
+        struktūros aprašas konkrečiam CSV duomenų failui gali būti vadinamas CSV
+        failo metaduomenimis.
 
-   web servisas
-      Web servisas yra interneto paslauga skirta automatizuotiems robotams.
-      Interneto svetainės dažniausiai yra skirtos žmonėms, tačiau web servisai
-      yra skirti mašioms, kurios gali komunikuoti viena su kita.
+    normalizavimas
+        Duomenų normalizavimas yra duomenų struktūros transformavimo procesas
+        taikant taip vadinamas normalines formas, tam kad sumažinti duomenų
+        pasikartojimą.
 
-      Plačiau skaitykite `Vikipedijoje
-      <https://en.wikipedia.org/wiki/Web_service>`__.
+        Plačiau apie tai skaitykite `Vikipedijoje
+        <https://en.wikipedia.org/wiki/Database_normalization>`__.
 
-   YAML
-      YAML yra :term:`duomenų serializavimo formatas`, kuris skirtas ne tik
-      mašininiam skaitymui, bet su šio formato turiniu tiesiogiai gali dirbti
-      ir žmogus. YAML formato pavyzdys:
+    prieigos taškas
+        Prieigos taškas yra :term:`REST API` terminas, nurodantis URL kelio dalį iki tam
+        tikro resurso.
 
-      .. code-block:: yaml
+        Plačiau skaitykite `Vikipedijoje
+        <https://en.wikipedia.org/wiki/Web_API#Endpoints>`__.
 
-         container:
-           name: value
+    REST API
+        Representational State Transfer (REST) yra taisyklių ir rekomendacijų
+        rinkinys sirtas :term:`web servisams <web servisas>` kurti.
 
-      YAML yra sukurtas JSON formatu pagrindu, siekant palengvinti darbą su
-      JSON serializuotais duomenimis žmonėms. Analogiškas pavyzdys JSON formatu
-      atrodo taip:
+        Plačiau skaitykite `Vikipedijoje
+        <https://en.wikipedia.org/wiki/Representational_state_transfer>`__.
 
-      .. code-block:: json
+    web servisas
+        Web servisas yra interneto paslauga skirta automatizuotiems robotams.
+        Interneto svetainės dažniausiai yra skirtos žmonėms, tačiau web servisai
+        yra skirti mašioms, kurios gali komunikuoti viena su kita.
 
-         {"container": {"name": "value"}}
+        Plačiau skaitykite `Vikipedijoje
+        <https://en.wikipedia.org/wiki/Web_service>`__.
 
-   viešasis žodynas
-      Viešieji žodynai, dar vadinami ontologijomis, šie žodynai dažnai yra
-      gerai dokumentuoti ir skelbiami viešai, jie yra skirti globaliam
-      susietūjų duomenų tinkui kurti (angl. *linked data*).
+    YAML
+        YAML yra :term:`duomenų serializavimo formatas`, kuris skirtas ne tik
+        mašininiam skaitymui, bet su šio formato turiniu tiesiogiai gali dirbti
+        ir žmogus. YAML formato pavyzdys:
 
-   sisteminis pavadinimas
-      Sistemionis pavadinimas yra naudojamas objektų identifikavimui ir yra
-      naudojamas URL nuorodose ir visur kitur, kure reikia nurodyti ryšį su
-      objektų, naudojamas to objekto sisteminis pavadinimas.
+        .. code-block:: yaml
 
-      Sisteminis pavadinimas sudaromas tik iš lotyniškų raidžių ir `-_/`
-      simbolių.
+           container:
+             name: value
 
-   žodynas
-      Duomenų kontekste, žodynas yra susitarimas, kokiais pavadinimais vadinami
-      objektai ir jų savybės. Dažniausiai kiekvienas duomenų rinkinys turi savo
-      vidinį naudojamą žodyną, visas Lietuvos atvirų duomenų modelis turi savo
-      vidinį žodyną, kuris suvienodina skirtingus duomenų rinkinių naudojamus
-      žodynus. Yra :term:`viešieji žodynai <viešasis žodynas>`, dar vadinami
-      ontologijomis, kurie yra skelbiami viešai ir skirti globaliam susietųjų
-      duomenų tinklui kurti.
+        YAML yra sukurtas JSON formatu pagrindu, siekant palengvinti darbą su
+        JSON serializuotais duomenimis žmonėms. Analogiškas pavyzdys JSON formatu
+        atrodo taip:
+
+        .. code-block:: json
+
+           {"container": {"name": "value"}}
+
+    viešasis žodynas
+        Viešieji žodynai, dar vadinami ontologijomis, šie žodynai dažnai yra
+        gerai dokumentuoti ir skelbiami viešai, jie yra skirti globaliam
+        susietųjų duomenų tinkui kurti (angl. *linked data*).
+
+    sisteminis pavadinimas
+        Sisteminis pavadinimas yra naudojamas objektų identifikavimui ir yra
+        naudojamas URL nuorodose ir visur kitur, kure reikia nurodyti ryšį su
+        objektų, naudojamas to objekto sisteminis pavadinimas.
+
+        Sisteminis pavadinimas sudaromas tik iš lotyniškų raidžių ir `-_/`
+        simbolių.
+
+    žodynas
+        Duomenų kontekste, žodynas yra susitarimas, kokiais pavadinimais vadinami
+        objektai ir jų savybės. Dažniausiai kiekvienas duomenų rinkinys turi savo
+        vidinį naudojamą žodyną, visas Lietuvos atvirų duomenų modelis turi savo
+        vidinį žodyną, kuris suvienodina skirtingus duomenų rinkinių naudojamus
+        žodynus. Yra :term:`viešieji žodynai <viešasis žodynas>`, dar vadinami
+        ontologijomis, kurie yra skelbiami viešai ir skirti globaliam susietųjų
+        duomenų tinklui kurti.
 
 
