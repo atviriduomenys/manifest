@@ -5,36 +5,24 @@
 Žodynas
 #######
 
-Duomenų kontekste, žodynas yra tiesiog pavadinimų rinkinys, kuriais vadinami
-objektai ir objektų savybės. Iš mūsų `countries.csv` pavyzdžio, duomenų
-šaltinis naudoja vienokius laukų pavadinimus, tačiau importuojant duomenis
-nurodome kitokius pavadinimus.
+Duomenų kontekste, žodynas yra tiesiog :term:`modelių <modelis>` ir
+:term:`savybių <savybė>` pavadinimų rinkinys. Skirtingi duomenų šaltiniai
+dažniausiai naudoja skirtingus žodynus, t.y. naudoja skirtingus :term:`modelių
+<modelis>` ir :term:`savybių <savybė>` pavadinimus.
 
-Aprašant duomenų struktūras nebūtina laikytis vieningo žodyno. Jei naudojami
-pavadinimai yra ne iš žodyno, tada prieš pavadinimą turi būti rašomas taško
-simbolis (`.`). Po taško galima naudoti lygiai tokius pačius laukų pavadinimas
-arba bet kokius kitus pavadinimus. Tačiau vieningas atvirų duomenų portale
-naudojamas žodynas padeda geriau suvaldyti duomenis ir didina atvertų duomenų
-brandos lygį.
+:term:`Duomenų struktūros aprašas <DSA>` leidžia skirtinguose duomenų
+šaltiniuose naudojamus pavadinimus suvienodinti, taip, kad visi šaltiniai
+naudotų vieningą žodyną.
 
-Tikriausiai iškyla klausimas, kas sudaro žodynus ir kaip žinoti kokie
-pavadinimai yra naudojami atvirų duomenų portalo žodyne? Mūsų `countries.csv`
-pavyzdyje duomenų aprašo tipas yra `dataset`, yra dar vienas duomenų aprašo
-tipas pavadinimu `model`. Būtent `model` aprašuose ir aprašomi atvirų duomenų
-portalo žodyno pavadinimai. Štai pavyzdys, kaip toks aprašas atrodo:
+Vieningo žodyno sudarymas yra gan sudėtinga užduotis, todėl, :term:`DSA`
+leidžia prie vieningo žodyno pereiti palaipsniui:
 
-.. code-block:: yaml
+- pirmiausia sudaromas vieno duomenų rinkinio žodynas,
 
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
+- kuris palaipsniui transformuojamas į Lietuvos vieningą žodyną,
 
-Dažniausiai visi `model` aprašai saugomi `models/` kataloge ir failas iki YAML
-failo atitinka modelio pavadinimą, tai šuo atveju šis modelis turi būti
-išsaugotas `models/geografija/salis.yml` faile. Toks katalogas padeda lengviau
-naršyti tarp modelių aprašų ir naudoti tuos pačius pavadinimus aprašant duomenų
-šaltinius.
+- o Lietuvos vieningas žodynas palaipsniui transformuojamas į globalų žodyną,
+  nurodant sąsajas su išoriniais žodynais ir standartais.
+
+Žodynai sudaromi pasitelkiant :ref:`vardų erdves <vardų-erdvės>`.
+

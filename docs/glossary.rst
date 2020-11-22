@@ -10,9 +10,27 @@ Terminai
         Plačiau apie tai skaitykite `Vikipedijoje
         <https://en.wikipedia.org/wiki/Environment_variable>`__.
 
+    ADP
+        Atvirų duomenų portalas, sudarytas iš atvirų duomenų katalogo ir duomenų
+        saugyklos.
+
+    ADK
+        Atvirų duomenų katalogas.
+
+    ADS
+        Atvirų duomenų saugykla.
+
     DSA
-        Duomenų struktūros aprašas - lentelė, kurioje išsamiai aprašyta duomenų
-        struktūra.
+        Duomenų struktūros aprašas - lentelė, kurioje išsamiai aprašyta tam
+        tikro duomenų šaltinio duomenų struktūra.
+
+    ADSA
+        :term:`DSA` lentelė, kurioje aprašomi jau atverti ir viešai prieinami
+        duomenys.
+
+    ŠDSA
+        :term:`DSA` lentelė, kurioje aprašoma neatvertų, :term:`pirminio
+        duomenų šaltinio <pirminis duomenų šaltinis>` duomenų struktūra.
 
     duomenų serializavimo formatas
         Duomenys gali būti serializuojami įvairiais formatais, pavyzdžiui YAML
@@ -174,4 +192,13 @@ Terminai
         ontologijomis, kurie yra skelbiami viešai ir skirti globaliam susietųjų
         duomenų tinklui kurti.
 
+    pirminis duomenų šaltinis
+        Įstaigos ar kitos organizacijos pagrindinis duomenų šaltinis.
 
+    duomenų rinkinys
+        Duomenų grupė charakterizuojanti modelį arba susijusius modelius jų
+        savybes ir tarpusavio ryšius. Sąsaja tarp modelių apibrėžiama ne
+        reliacinių ryšių prasme, o loginės arba tematinės sąsajos prasme.
+
+        Duomenys neskaidomi į skirtingus duomenų rinkinius, pagal vietos, laiko
+        ar kitas savybes.

@@ -9,7 +9,9 @@ Normalizavimas
 pasikartojimo mažinimas. Štai pavyzdys, kaip atrodo denormalizuoti duomenys:
 
 ===================  ===================
-šalis                miestas            
+\https://example.com/1/miestai.csv
+----------------------------------------
+šalis                miestas
 ===================  ===================
 Lietuva              Vilnius            
 Lietuva              Kaunas             
@@ -22,7 +24,9 @@ objektas gali būti pavadintas keliais skirtingais pavadinimais. Tarkime, turime
 duomenis iš kito tiekėjo, kurie atrodo taip:
 
 ===================  ==============
-šalis                miestas       
+\https://example.com/1/miestai.csv
+-----------------------------------
+šalis                miestas
 ===================  ==============
 Lietuvos respublika  Šiauliai      
 Lietuvos respublika  Panevėžys     
@@ -66,105 +70,87 @@ denormalizuotos duomenų bazės kuriamos normalizuotos duomenų bazės pagrindu,
 jei norima atlikti duomenų analizę išvengiant skirtingų lentelių jungimo
 kainos.
 
-
-Manifestas
-==========
-
-Manifesto duomenų struktūrų aprašai turėtų būti kiek įmanoma normalizuoti. Jei
-pirminis duomenų šaltinis yra denormalizuotas, duomenų aprašuose nesunkiai
+:term:`Duomenų struktūrų <DSA>` aprašai turėtų būti kiek įmanoma normalizuoti.
+Jei pirminis duomenų šaltinis yra denormalizuotas, duomenų aprašuose nesunkiai
 galima atlikti normalizavimą, su sąlyga, jei įmanoma unikaliai identifikuoti
-objektus. Kaip pavyzdį imkime tą pačią denormalizuotą miestų lentelę:
+objektus.
 
-===================  ===================
-šalis                miestas            
-===================  ===================
-Lietuva              Vilnius            
-Lietuva              Kaunas             
-Lietuva              Klaipėda          
-===================  ===================
+Mūsų aprašytą miestų pavyzdį normalizuoti galima šio duomenų struktūros
+aprašo pagalba:
 
-Tarkime ši lentelė yra pateikta CSV formatu adresu
-`https://example.com/miestai.csv`.
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+| d | r | b | m | property | source                             | prepare                     | type   | ref       |
++===+===+===+===+==========+====================================+=============================+========+===========+
+| datasets/example/norm    |                                    |                             |        |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   | miestai/1            | \https://example.com/1/miestai.csv |                             | csv    |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   | country          |                                    |                             | proxy  | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   | country/1    |                                    |                             |        | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | name     | šalis                              |                             | string |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   | city             |                                    |                             | proxy  | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   | city/1       |                                    |                             |        | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | name     | miestas                            |                             | string |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | country  | šalis                              |                             | ref    | country/1 |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   | miestai/2            | \https://example.com/2/miestai.csv |                             | csv    |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   |          | Lietuvos respublika                | "Lietuva"                   | choice | country   |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   | country          |                                    |                             | proxy  | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   | country/2    |                                    |                             |        | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | name     | šalis                              | choose(self, self, country) |        |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   | city             |                                    |                             | proxy  | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   | city/2       |                                    |                             |        | name      |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | name     | miestas                            |                             | string |           |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
+|   |   |   |   | country  | šalis                              | choose(self, self, country) | ref    | country/2 |
++---+---+---+---+----------+------------------------------------+-----------------------------+--------+-----------+
 
-Lentelės duomenų aprašas turėtų atrodyti taip:
+Iš šio pavyzdžio matome, kad miestų duomenys iš pirmojo šaltinio `miestai/1`
+skaitomi du kartus ir paskirstomi dviejose lentelėse. Pirmą kartą skaitome tik
+šalis, generuojant pirminį raktą iš šalies pavadinimo, antrą kartą skaitome tik
+miestus ir prijungiame šalį panaudojant šalies pirminį raktą.
 
-.. code-block:: yaml
+Antram duomenų šaltiniui darome tą patį, tik normalizuojame šalies pavadinimus
+panaudodami :data:`choice` reikšmių normalizavimo sąrašą.
 
-   # datasets/pavyzdziai/normalizavimas.dataset.yml
-   type: dataset
-   name: datasets/pavyzdziai/normalizavimas
-   resources:
-     miestai:
-       type: csv
+Abiejų duomenų šaltinių modeliai turi vieną `country` bazę ir vieną `city`
+bazę. O kadangi :data:`base.type` yra `proxy`, tai duomenų saugykloje, bus
+saugoma tik viena lentelė, bendra abiem šaltiniams. Šaltinių duomenys š
+bazines lenteles bus apjungiami sutapatinant objektus, pagal miesto ir šalies
+pavadinimus.
 
-.. code-block:: yaml
+Galutiniame rezultate gauname tokias lenteles:
 
-   # datasets/pavyzdziai/normalizavimas/salis.yml
-   type: model
-   name: datasets/pavyzdziai/normalizavimas/salis
-   source:
-     dataset: datasets/pavyzdziai/normalizavimas
-     resource: miestai
-     name: https://example.com/miestai.csv
-     pk: pavadinimas
-   properties:
-     pavadinimas:
-       type: string
-       source: šalis
-
-.. code-block:: yaml
-
-   # datasets/pavyzdziai/normalizavimas/miestas.yml
-   type: model
-   name: datasets/pavyzdziai/normalizavimas/miestas
-   source:
-     dataset: datasets/pavyzdziai/normalizavimas
-     resource: miestai
-     name: https://example.com/miestai.csv
-     pk: pavadinimas
-   properties:
-     salis:
-       type: ref
-       model: datasets/pavyzdziai/normalizavimas/salis
-       source: šalis
-     pavadinimas:
-       type: string
-       source: miestas
-
-Iš šio pavyzdžio matome, kad miestų duomenys skaitomi du kartus ir paskirstomi
-dviejose lentelėse. Pirmą kartą skaitome tik šalys, generuojant pirminį raktą
-iš šalies pavadinimo, antrą kartą skaitome tik miestus ir prijungiame šalį
-panaudojant šalies pirminį raktą. Galutiniame rezultate gauname tokias
-lenteles:
-
-
-**datasets/pavyzdziai/normalizavimas/salis**
-
-====================================  ===========
-_id                                   pavadinimas
-====================================  ===========
-210deafe-4fea-4bb2-b5e2-8a27599dabc6  Lietuva
-====================================  ===========
-
-**datasets/pavyzdziai/normalizavimas/miestas**
-
-====================================  ====================================  ===========
-_id                                   salis                                 pavadinimas
-====================================  ====================================  ===========
-42457737-7607-4184-ae35-d24a65cab8a8  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Vilnius
-5fac44f5-a640-4480-83d7-a8039f92fada  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Kaunas
-a7cda7ba-c1e9-4254-addd-0c9c229b23ed  210deafe-4fea-4bb2-b5e2-8a27599dabc6  Klaipėda
-====================================  ====================================  ===========
+====  =======================
+datasets/example/norm/country
+-----------------------------
+_id   pavadinimas
+====  =======================
+1     Lietuva
+====  =======================
 
 
-Sinonimai
-=========
-
-Klausimas, ką daryti, jei duomenų šaltinis tą patį objektą vadina skirtingais
-pavadinimais, jei ta pati šalis turi du sinonimus `Lietuva` arba `Lietuvos
-respublika`?
-
-Deja, tokiais atvejais automatinių priemonių nėra ir duomenys turi būti
-tvarkomi pirminiame šaltinyje, arba transformuojant rankiniu būdu pasitelkiant
-sinonimų lenteles ar kitas priemones. Duomenų normalizavimas veikia tik turint
-unikaliai objektą identifikuojančias reikšmes.
+====  =====  =============
+datasets/example/norm/city
+--------------------------
+_id   šalis  miestas
+====  =====  =============
+1     1      Vilnius
+2     1      Kaunas
+3     1      Klaipėda
+4     1      Šiauliai
+5     1      Panevėžys
+====  =====  =============

@@ -1,0 +1,29 @@
+.rst-content table.docutils.spec td {
+    white-space: normal;
+    vertical-align: top;
+}
+
+
+/*
+https://github.com/readthedocs/sphinx_rtd_theme/issues/295#issuecomment-560895037
+https://stackoverflow.com/questions/23211695/modifying-content-width-of-the-sphinx-theme-read-the-docs
+https://github.com/readthedocs/sphinx_rtd_theme/issues/295
+*/
+.wy-nav-content {
+    /*max-width: 1500px !important;*/
+}
+/* and fix wrap bug per https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html */
+.wy-table-responsive table td {
+    /* !important prevents the common CSS stylesheets from overriding
+    this as on RTD they are loaded after this stylesheet */
+    white-space: normal !important;
+    vertical-align: top !important;
+}
+.rst-content .wy-table-responsive {
+    overflow: visible !important;
+}
+
+
+.wy-nav-content-wrap {
+    background-color: white;
+}
