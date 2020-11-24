@@ -15,14 +15,21 @@ Terminai
         saugyklos.
 
     ADK
-        Atvirų duomenų katalogas.
+        Lietuvos atvirų duomenų katalogas, prieinamas adresu `data.gov.lt`_.
+
+        .. _data.gov.lt: https:://data.gov.lt/
 
     ADS
         Atvirų duomenų saugykla.
 
     DSA
-        Duomenų struktūros aprašas - lentelė, kurioje išsamiai aprašyta tam
-        tikro duomenų šaltinio duomenų struktūra.
+        Duomenų struktūros aprašas yra lentelė, kurioje išsamiai aprašyta tam
+        tikro duomenų šaltinio duomenų struktūra. DSA lentelę sudaro penkios
+        dimensijos (duomenų rinkinys, resursas, bazė, modelis, savybė) ir dešimt
+        metaduomenų stulpelių.
+
+        Duomenų struktūros aprašas išsamiai aprašytas :ref:`specifikacijoje
+        <spec>`.
 
     ADSA
         :term:`DSA` lentelė, kurioje aprašomi jau atverti ir viešai prieinami
@@ -198,7 +205,54 @@ Terminai
     duomenų rinkinys
         Duomenų grupė charakterizuojanti modelį arba susijusius modelius jų
         savybes ir tarpusavio ryšius. Sąsaja tarp modelių apibrėžiama ne
-        reliacinių ryšių prasme, o loginės arba tematinės sąsajos prasme.
+        reliacinių ryšių prasme, o loginės arba semantinės sąsajos prasme.
 
         Duomenys neskaidomi į skirtingus duomenų rinkinius, pagal vietos, laiko
         ar kitas savybes.
+
+        Plačiau apie duomenų rinkinius: :ref:`duomenų-rinkinys`.
+
+    DCAT
+        Duomenų katalogo žodynas (angl. `Data Catalog Vocabulary`_).
+
+        .. _Data Catalog Vocabulary: https://www.w3.org/TR/vocab-dcat-2/
+
+    bazė
+        Bazė arba loginė klasė yra modelių grupė turinčių bendras savybes ir
+        vienodą semantinę prasmę.
+
+    dimensija
+        Dimensija yra metaduomenų, aprašomų DSA lentelėje, grupė. DSA lentelėje
+        metaduomenys skirstomi į tokias dimensijas:
+
+        - duomenų rinkinys
+        - resursas
+        - bazė
+        - modelis
+        - savybė
+
+        Kiekviena dimensija turi skirtingą metaduomenų detalumo lygį.
+
+        Plačiau apie dimensijas: :ref:`dimensijos`.
+
+    modelis
+        Tai informacija kuria apibrėžiama tam tikros kategorijos informacinių
+        objektų duomenų struktūra. :term:`DSA` lentelėje atitinka :data:`model`.
+        Atitinka `rdfs:Class`_ arba duomenų lentelę.
+
+        .. _rdfs:Class: https://www.w3.org/TR/rdf-schema/#ch_class
+
+    savybė
+        Duomenų :term:`modeliui <modelis>` priklausančių informacinių
+        :term:`objektų <objektas>` savybė, pavyzdžiui miesto pavadinimas, šalis
+        kuriai priklauso miestas. :term:`DSA` lentelėje atitinka
+        :data:`property`. Atitinka `rdfs:Property`_ arba lentelės stulpelį.
+
+        .. _rdfs:Property: https://www.w3.org/TR/rdf-schema/#ch_property
+
+    objektas
+        Vienas duomenų įrašas sudarytas iš savybių ir savybėms priskirtų
+        reikšmių. Informacinis objektas turi turėti unikalų identifikatorių.
+        Atitinka `rdfs:Resource`_ arba lentelės vieną eilutę.
+
+        .. _rdfs:Resource: https://www.w3.org/TR/rdf-schema/#ch_resource

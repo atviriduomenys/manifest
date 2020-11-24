@@ -1,56 +1,84 @@
 .. default-role:: literal
 
+.. _poreikio-deklaravimas:
+
 Poreikio deklaravimas
 #####################
 
+:term:`ADK` svetainėje duomenų naudotojai `gali teikti pasiūlymus`__ dėl jiems
+reikalingų duomenų. Galima apytiksliai įvardinti pageidaujamo duomenų rinkinio
+pavadinimą ir aprašymą, tačiau galima duomenų poreikį įvardinti labai tiksliai,
+poreikio formoje įkeliant :term:`DSA` lentelę CSV formatu.
 
-Poreikis deklaruojamas inventorizacijų lentelių pagalba. Norint deklaruoti
-poreikį reikia atsisiųsti duomenų teikėjo paskelbtą inventorizacijos lentelę,
-toje lentelėje pateikti duomenis apie projektą, kuriam reikia duomenų ir
-lentelėje palikti tik tuos duomenų laukus, kurie yra aktualūs projektui.
+.. __: https://data.gov.lt/requests/new
 
-Pavyzdys:
+Iš jau publikuojamų :term:`ADSA` lentelių, galima atsirinkti dominančius
+duomenis ir susirašyti juos į savo poreikio :term:`DSA` lentelę.
 
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-| id | d | r | b | m | property          | source     | prepare | type      | ref   | level | access | uri | title | description |
-+====+===+===+===+===+===================+============+=========+===========+=======+=======+========+=====+=======+=============+
-|    | projects/com/x                    |            |         | project   |       |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   |                   |            |         | employees | 10    |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   |                   |            |         | users     | 1000  |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   |                   |            |         | revenue   | 10000 |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-| 47 | datasets/gov/dc/countries         |            |         |           |       |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   | sql                           |            |         |           |       |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |                           |            |         |           |       |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-| cd |   |   |   | countries             |            |         |           | id    |       |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   | id                |            |         | integer   |       | 4     |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   | code              |            |         | string    |       | 2     |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
-|    |   |   |   |   | name              |            |         | string    |       | 2     |        |     |       |             |
-+----+---+---+---+---+-------------------+------------+---------+-----------+-------+-------+--------+-----+-------+-------------+
+Kaip pavyzdį galime panagrinėti skyrelyje :ref:`inventory` naudotą preliminarią
+:term:`ADSA` lentelę, kuri atrodo taip:
 
-Lentelė pildoma arba pridedant naujus laukus arba keičiant esamus. Pavyzdžiui,
-jei jums reikia didesnio lauko `code` brandos lygio, vietoje `2` galima
-pakeisti `3`, tokiu būdu informuojant, kad yra poreikis gauti didesnio brandos
-lygio lauką.
+.. table:: Planuojamų atverti duomenų struktūros aprašas (:term:`ADSA`)
 
-Jei tarkim neaiški lauko `id` paskirtis, galima stulpelyje `title` įrašyti `?`
-arba stulpelyje `description` įrašyti klausimą ar pastebėjimą.
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
+    | id | d | r | b | m | property   | type    | ref   | source                    | prepare | level | access  | uri | title | description |
+    +====+===+===+===+===+============+=========+=======+===========================+=========+=======+=========+=====+=======+=============+
+    |  6 | datasets/example/countries |         | 1     |                           |         |       |         |     |       |             |
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
+    |  1 |   | salys                  | sql     |       |                           |         |       |         |     |       |             |
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
+    |  2 |   |   |   | country        |         | _id   |                           |         |       |         |     |       |             |
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
+    |  4 |   |   |   |   | code       | string  |       |                           |         | 2     | open    |     |       |             |
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
+    |  5 |   |   |   |   | name       | string  |       |                           |         | 2     | open    |     |       |             |
+    +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
 
-Analogiškai, galima teikti ne tik poreikį bet ir pranešti apie pastebėtas
-klaidas. Pavyzdžiui, jei laukas `id` turi brandos lygį `4`, tačiau jūs manote,
-kad taip nėra, galite nurodyti teisingą brandos lygį, pavyzdžiui `2`. Tokiu
-atveju bus pranešta, kad yra klaida.
+Tokią lentelę galima atsisiųsti ir atsidaryti su bet kuria skaičiuoklės programa
+ir ją papildyti trūkstamais metaduomenimis, kurie jums yra reikalingi.
 
-Tokiu būdu galima keisti visus duomenis.
+Pavyzdžiui tokia papildyta poreikio :term:`ADSA` lentelė gali atrodyti taip:
 
-`projects/com/x` dalis, kartu su `employees`, `users` ir `revenue` yra
-nebūtina. Tačiau jei pateikta, toks poreikis įtauna didesnį prioritetą.
+.. table:: Pageidaujamų duomenų struktūros aprašas (:term:`ADSA`)
+
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    | id | d | r | b | m | property   | type    | ref   | source | prepare | level | access | uri                                | title | description                         |
+    +====+===+===+===+===+============+=========+=======+========+=========+=======+========+====================================+=======+=====================================+
+    |  8 |   |   |   |   |            | prefix  | esco  |        |         |       |        | \http://data.europa.eu/esco/model# |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  6 | datasets/example/countries |         | 1     |        |         |       |        |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  1 |   | salys                  | sql     |       |        |         |       |        |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  2 |   |   |   | country        |         | _id   |        |         |       |        |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  4 |   |   |   |   | code       | string  |       |        |         | 5     | open   | esco:isoCountryCodeA2              |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  5 |   |   |   |   | name       | string  |       |        |         | 2     | open   |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  9 |   |   |   |   |            | comment |       |        |         |       |        |                                    |       | Kokia kalba pateiktas šalies kodas? |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  6 |   |   |   |   | continent  | string  |       |        |         | 3     | open   |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+    |  7 |   |   |   |   | population | string  |       |        |         | 3     | open   |                                    |       |                                     |
+    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+--------+------------------------------------+-------+-------------------------------------+
+
+Šioje lentelėje, buvo pateikti tokie pageidavimai dėl duomenų:
+
+- Pasiūlyta padidinti `code` savybės brandos lygį nuo 2 iki 5, pateikiant
+  šios savybės sąsają su `esco:isoCountryCodeA2` išoriniu žodynu, kuriame
+  įvardinta, kad šalies kodas turi atitikti ISO 3166 šalių kodų standartą.
+
+  Papildomai buvo įtrauktas naujas URI prefiksas 8-oje eilutėje.
+
+- Pateiktas paklausimas `name` savybei įtraukiant papildomą :data:`comment`
+  dimensiją, apie tai, kokia kalba pateikti šalių pavadinimai.
+
+- Pasiūlyta įtraukti dvi naujas `country` savybes, `continent` ir
+  `population`, nurodant, kad pageidaujamas šių savybių brandos lygis turėtu
+  būti ne mažesnis, nei 3.
+
+Duomenų naudotojai turi galimybę ne tik teikti pageidavimus, bet ir prisidėti
+prie atvertų duomenų brandos lygio kėlimo. Pageidavimo formoje įkelti
+:term:`DSA` gali būti papildyti pakeitimais :ref:`didinančiais duomenų brandos
+lygį <brandos-lygio-kėlimas>`.

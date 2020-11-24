@@ -173,6 +173,18 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     Kodinis savybės pavadinimas. Atitinka rdfs:Property prasmę. Žiūrėti
     Duomenų laukas.
 
+.. data:: type
+
+    **Tipas**
+
+    Prasmė priklauso nuo dimensijos. Žiūrėti Duomenų laukų tipai.
+
+.. data:: ref
+
+    **Ryšys**
+
+    Prasmė priklauso nuo dimensijos. Žiūrėti Ryšiai tarp modelių.
+
 .. data:: source
 
     **Šaltinis**
@@ -185,18 +197,6 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
 
     Formulė skirta duomenų atrankai, nuasmeninimui, transformavimui,
     tikrinimui ir pan. Žiūrėti Formulės.
-
-.. data:: type
-
-    **Tipas**
-
-    Prasmė priklauso nuo sluoksnio. Žiūrėti Duomenų laukų tipai.
-
-.. data:: ref
-
-    **Ryšys**
-
-    Prasmė priklauso nuo sluoksnio. Žiūrėti Ryšiai tarp modelių.
 
 .. data:: level
 
@@ -255,20 +255,30 @@ pavadinimus. Kodiniams pavadinimams keliami griežtesni reikalavimai, kadangi
 Visi :term:`DSA` lentelės stulpelių pavadinimai turi būti užrašyti tiksliai
 taip, kaip nurodyta, kad kompiuterio programos galėtų juos atpažinti.
 
-Visuose sluoksnių stulpeliuose ir kitose vietose kuriuose nurodyta naudoti
+Visuose dimensijų stulpeliuose ir kitose vietose kuriose nurodyta naudoti
 kodinius pavadinimus keliamas reikalavimas, kad pavadinimai atitiktų šią
 reguliariąją išraišką:
 
 .. code-block:: regex
 
-    [a-z][a-z0-1_]+
+    [a-zA-Z][a-zA-Z0-1_-]+
 
-Tai reiškia, kad pavadinimai turi būti užrašyti mažosiomis raidėmis ir pirma
-raidė turi būti skaičius, o sekančios raidės gali būti raidės, skaičiai ir
-pabraukimo simbolis skirtas žodžiams atskirti, jei pavadinimą sudaro daugiau nei
-vienas žodis. Visos raidės turi būti mažosios. Kodiniuose pavadinimuose gali
-būti tik lotyniškos raidės, lietuviškų raidžių kodiniuose pavadinimuose neturi
-būti.
+Tai reiškia, kad pavadinimo pirmas simbolis turi būti lotyniška raidė, o
+sekančios raidės gali būti lotyniškos raidės, skaičiai ir pabraukimo simbolis ar
+brūkšnelis skirti žodžiams atskirti, jei pavadinimą sudaro daugiau nei vienas
+žodis. Kodiniuose pavadinimuose gali būti tik lotyniškos raidės, lietuviškų
+raidžių kodiniuose pavadinimuose neturi būti.
+
+Pabraukimo simbolis ir brūkšnelis negali kartotis daugiau nei vieną kartą.
+
+Interpretuojant kodinį pavadinimą, turi būti ignoruojamos didžiosios/mažosios
+raidės, pabraukimo simbolis ir brūkšnelis. Tai reškia, kad visi šie
+pavadinimai interpretuojami kaip sinonimai::
+
+    kodinis-pavadinimas
+    kodinis_pavadinimas
+    KodinisPavadinimas
+    kodinisPavadinimas
 
 Ypatingas dėmesys turi būti kreipiamas suteikiant pavadinimus :data:`dataset`,
 :data:`model` ir :data:`property` stulpeliuose. Šiuose stulpeliuose pateikti
@@ -401,71 +411,80 @@ yra siejamas su duomenų rinkinio vardų erdve. Pilnas 6 eilutėje aprašyto mod
 pavadinimas bus `/datasets/gov/ivpk/adk/dataset`.
 
 Visose vietose, kur naudojamas modelio pavadinimas, jei eilutė yra `dataset`
-sluoksnio sudėtyje, tada modelio pavadinimas bus jungiamas prie duomenų rinkinio
-vardų erdvės, nebent modelio pavadinimas prasideda `/` simboliu.
+dimensijos sudėtyje, tada modelio pavadinimas bus jungiamas prie duomenų
+rinkinio vardų erdvės, nebent modelio pavadinimas prasideda `/` simboliu.
 
 
-Sluoksniai
+.. _dimensijos:
+
+Dimensijos
 ==========
 
-Stulpeliai dataset, resource, base, model ir property yra naudojami kaip
-:term:`DSA` sluoksniai. :data:`dataset` yra aukščiausias sluoksnis,
-:data:`property` žemiausias. Sluoksniai apibrėžia duomenų metaduomenų detalumo
-lygį. :data:`dataset` ir :data:`resource` sluoksniai atitinka DCAT_ standartą ir
-užtikrina trečia duomenų brandos lygį, o žemiau esantys :data:`base`,
-:data:`model` ir :data:`property` atitinka RDFS_ standartą ir užtikrina penktą
-duomenų brandos lygį. Vienoje lentelės eilutėje gali būti užpildytas ne daugiau
-kaip vienas sluoksnio stulpelis. Užpildytasis sluoksnio stulpelis nustato visų
-kitų stulpelių prasmę.
+:term:`Dimensijos <dimensija>` apibrėžia duomenų metaduomenų detalumo lygį.
+Stulpeliai :data:`dataset`, :data:`resource`, :data:`base`, :data:`model` ir
+:data:`property` yra naudojami kaip :term:`DSA` dimensijos. :data:`dataset` yra
+aukščiausia dimensija, :data:`property` žemiausia. :data:`dataset` ir
+:data:`resource` dimensijos atitinka DCAT_ žodyną ir užtikrina trečia duomenų
+brandos lygį, o žemiau esantys :data:`base`, :data:`model` ir :data:`property`
+atitinka RDFS_ žodyną ir užtikrina penktą duomenų brandos lygį. Vienoje lentelės
+eilutėje gali būti užpildytas ne daugiau kaip vienas dimensijos stulpelis.
+Užpildytasis dimensijos stulpelis nustato visų kitų stulpelių prasmę.
 
 .. _DCAT: https://www.w3.org/TR/vocab-dcat-2/
 .. _RDFS: https://www.w3.org/TR/rdf-schema/
 
-+------+-----+-----+-----+-----+--------------+-------------------------------+
-| |id| | |d| | |r| | |b| | |m| | |property|   | |title|                       |
-+======+=====+=====+=====+=====+==============+===============================+
-|    1 | datasets/gov/ivpk/adk                | Atvirų duomenų katalogas      |
-+------+-----+-----+-----+-----+--------------+-------------------------------+
-|    2 |     | adk                            | Atvirų duomenų katalogo       |
-|      |     |                                | duomenų bazė                  |
-+------+-----+-----+-----+-----+--------------+-------------------------------+
-|    3 |     |     | /dcat/dataset            | Duomenų rinkinys              |
-+------+-----+-----+-----+-----+--------------+-------------------------------+
-|    4 |     |     |     | dataset            | Duomenų rinkinys              |
-+------+-----+-----+-----+-----+--------------+-------------------------------+
-|    5 |     |     |     |     | title        | Duomenų rinkinio pavadinimas  |
-+------+-----+-----+-----+-----+--------------+-------------------------------+
++----+-----+-----+-----+-----+----------+------------------------------+
+| id | d   | r   | b   | m   | property | title                        |
++====+=====+=====+=====+=====+==========+==============================+
+|  1 | datasets/gov/ivpk/adk            | Atvirų duomenų katalogas     |
++----+-----+-----+-----+-----+----------+------------------------------+
+|  2 |     | adk                        | Atvirų duomenų katalogo      |
+|    |     |                            | duomenų bazė                 |
++----+-----+-----+-----+-----+----------+------------------------------+
+|  3 |     |     | /dcat/dataset        | Duomenų rinkinys             |
++----+-----+-----+-----+-----+----------+------------------------------+
+|  4 |     |     |     | dataset        | Duomenų rinkinys             |
++----+-----+-----+-----+-----+----------+------------------------------+
+|  5 |     |     |     |     | title    | Duomenų rinkinio pavadinimas |
++----+-----+-----+-----+-----+----------+------------------------------+
 
-Pavyzdyje aukščiau, taupant vietą, dalies sluoksnių pavadinimai sutrumpinti iki
-vienos raidės ir įtraukti ne visi stulpeliai, o tik sluoksnių, :data:`id` ir
-:data:`title` stulpeliai. Pavyzdyje matome, kad vienoje eilutėje užpildytas tik
-vienas sluoksnio stulpelis, o :data:`title` stulpelio prasmė keičiasi
-priklausomai nuo sluoksnio reikšmės. Toliau specifikacijoje konkretaus sluoksnio
-stulpeliai įvardijami pateikiant tiek sluoksnį, tiek stulpelį, kad būtų aiškiau
-apie kurio sluoksnio stulpelį kalbama, pavyzdžiui :data:`model.title` leidžia
-suprasti kad kalbama apie „Duomenų rinkinys“ reikšmę 4-oje eilutėje.
+Pavyzdyje aukščiau, taupant vietą, dalies dimensijų pavadinimai sutrumpinti iki
+vienos raidės ir įtraukti ne visi stulpeliai, o tik :data:`id` ir :data:`title`
+metaduomenų stulpeliai. Pavyzdyje matome, kad vienoje eilutėje užpildytas tik
+vienas dimensijos stulpelis, o :data:`title` stulpelio prasmė keičiasi
+priklausomai nuo dimensijos reikšmės. Toliau specifikacijoje konkrečios
+dimensijos stulpeliai įvardijami pateikiant tiek dimensijos, tiek metaduomens
+stulpelio pavadinimus, kad būtų aiškiau apie kurios dimensijos metaduomenį
+kalbama, pavyzdžiui :data:`model.title` leidžia suprasti kad kalbama apie
+„Duomenų rinkinys“ reikšmę 4-oje eilutėje.
 
-Be minėtų sluoksnių stulpelių :term:`DSA` lentelėje gali būti naudojami
-papildomi sluoksniai, kai nurodoma :term:`type` reikšmė ir nepateikiama nei
-viena sluoksnio reikšmė. Pavyzdžiui:
+Be minėtų dimensijų stulpelių :term:`DSA` lentelėje gali būti naudojami
+papildomos metaduomenų dimensijos, kai nurodoma :term:`type` reikšmė ir
+nepateikiama nei viena dimensijos stulpelio reikšmė. Pavyzdžiui:
 
-+------+-----+-----+-----+-----+------------+--------+-------+-----------------------------+
-| |id| | |d| | |r| | |b| | |m| | |property| | |type| | |ref| | |uri|                       |
-+======+=====+=====+=====+=====+============+========+=======+=============================+
-|    1 |     |     |     |     |            | prefix | dcat  | \http://www.w3.org/ns/dcat# |
-+------+-----+-----+-----+-----+------------+--------+-------+-----------------------------+
++----+---+---+---+---+----------+--------+------+-----------------------------+
+| id | d | r | b | m | property | type   | ref  | uri                         |
++====+===+===+===+===+==========+========+======+=============================+
+|  1 |   |   |   |   |          | prefix | dcat | \http://www.w3.org/ns/dcat# |
++----+---+---+---+---+----------+--------+------+-----------------------------+
 
-Šiuo atveju :data:`prefix` tampa dar vienu sluoksniu ir kalbant apie `dcat`
-reikšmę nurodomas :data:`prefix.ref` stulpelis.
+Šiuo atveju :data:`prefix` tampa dar viena dimensija, leidžianti pateikti
+metaduomenis apie naudojamų URI prefiksus. Analogiškai, kaip ir su kitomis
+dimensijomis, dimensijos ir metaduomens pavadinimus galima apjungti, pavyzdžiui
+:data:`prefix.ref` apibūdina tik :data:`prefix` dimensijai priklausančius
+:data:`ref` stulpelius.
 
-Eilučių eiliškumas lentelėje yra svarbus, kadangi žemiau esančios eilutės
-priklauso aukščiau esančiam sluoksniui. Tas pats galioja ir pagalbiniams
-:term:`sluoksniams <sluoksnis>`.
+Dimensijos leidžia suskirstyti metaduomenis į hierarchinę struktūrą. Todėl
+:term:`DSA` lentelės eilučių eiliškumas yra svarbus, kadangi žemiau esančios
+eilutės priklauso aukščiau esančiai dimensijai. Tas pats galioja ir pagalbinėms
+:term:`dimensijoms <dimensija>`.
 
-Nors lentelėje yra tik 15 stulpelių, tačiau pasitelkiant 5 pagrindinius
-sluoksnis ir keletą papildomų sluoksnių atsiranda galimybė išsamiai aprašyti
+Nors lentelėje sudaro tik 15 stulpelių, tačiau pasitelkiant 5 pagrindinius
+dimensijas ir keletą papildomų dimensijų, atsiranda galimybė išsamiai aprašyti
 visą duomenų šaltinio struktūrą.
 
+
+.. _duomenų-rinkinys:
 
 Duomenų rinkinys
 ----------------
@@ -1145,9 +1164,8 @@ užpildyti tam tikri stulpeliai. Automatiškai brandos lygio negalima nustatyti
 tarp `2` ir `3` brandos lygio, todėl automatinės priemonės visada turėtų
 parinkti žemesnį `2` brandos lygį, jei nenurodyta kitaip.
 
-Brandos lygis gali būti paveldimas iš aukštesnio sluoksnio. Jei žemesniame
-sluoksnyje nėra nurodytas joks brandos lygis, jis yra paveldimas iš aukštesnio
-sluoksnio.
+Jei žemesnėje dimensijoje nėra nurodytas joks brandos lygis, jis yra paveldimas
+iš aukštesnės dimensijos.
 
 
 .. _access:
@@ -1201,12 +1219,12 @@ Asmens duomenys gali būti viešinami tik public ar žemesniu prieigos lygiu.
 neribojant duomenų naudojimo tikslo. Asmens duomenys negali būti teikiami `open`
 prieigos lygiu.
 
-Prieigos lygiai gali būti paveldimi iš aukštesnio sluoksnio. Tačiau žemesnis
-sluoksnis apsprendžia realų prieigos lygį. Pavyzdžiui jei :data:`dataset.access`
-yra `private`, o to :data:`dataset` sluoksnyje esantis :data:`property` yra
-`open`, tada visi :data:`property` aukštesni sluoksniai taip pat tampa `open`,
-nors visi kiti sluoksniai yra `private`, nes paveldi :data:`dataset.access`
-reikšmę.
+Prieigos lygiai gali būti paveldimi iš aukštesneės dimensijos. Tačiau žemesnė
+dimensija apsprendžia realų prieigos lygį. Pavyzdžiui jei :data:`dataset.access`
+yra `private`, o toje :data:`dataset` dimensijoje esantis :data:`property` yra
+`open`, tada visos to :data:`property` aukštesnės dimensijos taip pat tampa
+`open`, nors visos kitos dimensijos yra `private`, nes paveldi
+:data:`dataset.access` reikšmę.
 
 
 Nuasmeninimas
@@ -1692,7 +1710,7 @@ Dinaminių reikšmių variantai
 
 Tam tikrais atvejais duomenis tenka normalizuoti parenkant tam tikrą reikšmę jei
 tenkinama nurodyta sąlyga. Tokias situacijas galima aprašyti pasitelkiant
-:data:`switch` sluoksnį, kuris patenka į :data:`property` kontekstą.
+:data:`switch` dimensiją.
 
 .. data:: switch
 
@@ -1709,6 +1727,48 @@ tenkinama nurodyta sąlyga. Tokias situacijas galima aprašyti pasitelkiant
 
         Jei :data:`switch.prepare` yra tuščias, tada sąlyga visada teigiama ir
         visada grąžinama :data:`switch.source` reikšmė.
+
+
+Komentavimas
+============
+
+Dirbant su :term:`DSA` yra galimybė komentuoti eilutes, naudojant papildomą
+:data:`comment` dimensiją, kurią galima naudoti bet kurios kitos dimensijos
+kontekste.
+
+.. data:: comment
+
+    .. data:: comment.id
+
+        Komentaro numeris.
+
+    .. data:: comment.title
+
+        Komentaro antraštė, nebūtina.
+
+    .. data:: comment.description
+
+        Komentaro tekstas.
+
+    .. data:: comment.source
+
+        Komentaro autorius.
+
+    .. data:: comment.ref
+
+        Cituojamo komentaro numeris. Jei šis stulpelis užpildytas, tai reiškia,
+        kad komentaras yra atsakymas į kitą, nurodyto numerio komentarą.
+
+    .. data:: comment.access
+
+        Nurodoma, ar komentaras gali būti publikuojamas viešai.
+
+        private
+            Komentaras negali būti publikuojamas viešai. Šis prieigos lygis
+            naudojamas pagal nutylėjimą.
+
+        open
+            Komentaras gali būti publikuojamas viešai.
 
 
 Transformavimas
@@ -1934,8 +1994,8 @@ JSON
 
     JSON objekto savybės pavadinimas, kuri rodo į masyvą reikšmių, kurios bus
     naudojamos kaip modelio duomenų eilutės. Kiekvienas masyvo elementas
-    atskirai aprašomas property sluoksnyje. Jei JSON objektas yra kompleksinis
-    žiūrėti Kompleksinės struktūros.
+    atskirai aprašomas :data:`property` dimensijoje. Jei JSON objektas yra
+    kompleksinis žiūrėti :ref:`kompleksinės-struktūros`.
 
 .. describe:: property.source
 
@@ -2038,7 +2098,7 @@ identifikatorius, o kitas prieigos taškas pačius eilutės duomenis. Tokiais
 atvejais reikalinga parametrizacija, kuri leidžia naudoti dinaminius parametrus
 source ir prepare laukuose.
 
-Parametrai aprašomi pasitelkiant papildomą :data:`param` sluoksnį.
+Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
 
 .. data:: param
 
@@ -2119,6 +2179,14 @@ reikia apsirašyti žodynų prefiksus. Žodynų prefiksai aprašomi taip:
     .. data:: prefix.uri
 
         Žodyno URI prefiksas.
+
+    .. data:: prefix.title
+
+        Prefikso antraštė.
+
+    .. data:: prefix.description
+
+        Prefikso aprašymas.
 
 Rekomenduojama naudoti LOV_ prefiksus.
 
