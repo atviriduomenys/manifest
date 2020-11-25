@@ -809,6 +809,8 @@ keisti tik duomenų pateikimą, užtenka naudoti :data:`model.prepare` formules.
     Jei nurodytą, naudoti išplėstą modelio variantą, jei nenurodyta palikti
     tuščią. Jei tuščia, naudoti standartinį modelio variantą.
 
+    Gali būti įrašoma reikšmė `absent`, kuri nurodo, kad modelis buvo ištrintas.
+
 .. data:: model.ref
 
     Kableliu atskirtas sąrašas :data:`model.property` reikšmių, kurios kartu
@@ -851,6 +853,10 @@ Duomenų laukas
 .. data:: property.type
 
     Duomenų tipas. Galimos reikšmės:
+
+    .. describe:: absent
+
+        žymi savybė, kuri buvo ištrinta ir nebenaudojama.
 
     .. describe:: boolean
 
@@ -1260,6 +1266,82 @@ stulpelio pagalba.
     patektų ne mažiau nei `n` reikšmių. Jei viena konkreti reikšmė pasikartoja
     daugiau nei `n` kartų, tada intervalas nekuriamas, reikšmė paliekama tokia
     kokia yra šaltinyje.
+
+
+Struktūros pasikeitimai
+=======================
+
+Laikui einant, pirminių duomenų šaltinių arba jau atvertų duomenų struktūra
+keičiasi, papildoma naujais :term:`modeliais <modelis>` ar :term:`savybėmis
+<savybė>`, keliant duomenų brandos lygį seni duomenys keičiami naujais,
+aukštesnio brandos lygio duomenimis.
+
+Visi šie struktūros ar pačių duomenų pasikeitimai fiksuojami papildomos
+:data:`migrate` dimensijos pagalba, kuri gali būti naudojama, bet kurios kitos
+dimensijos kontekste.
+
+.. data:: migrate
+
+    .. data:: migrate.ref
+
+        Migracijos numeris (UUID). Kiekvienos migracijos metu gali būti
+        atliekama eilė operacijų, visos operacijos fiksuojamos naudojant
+        migracijos numerį.
+
+        Visų migracijų sąrašas pateikiamas, kai :data:`migrate` nepriklauso
+        jokiam dimensijos kontekstui. Migracijų eiliškumas yra svarbus.
+
+    .. data:: migrate.source
+
+        Ankstesnės migracijos numeris, pateiktas :data:`migrate.ref` stulpelyje,
+        arba tuščia, jei prieš tai jokių kitų migracijų nebuvo.
+
+        Naudojamas jei :data:`migrate` nepatenka į jokios dimensijos kontekstą.
+
+        Jei :data:`migrate` aprašomas dimensijos kontekste, tada šis stulpelis
+        nenaudojamas.
+
+    .. data:: migrate.prepare
+
+        Migracijos operacija. Galimos tokios operacijos:
+
+        .. function:: create(**kwargs)
+
+            Priklausomai nuo dimensijos konteksto, prideda naują modelį, arba
+            savybę.
+
+            Funkcijai galima perduoti `name` ir kitus vardinius argumentus,
+            kurie atitinka :term:`DSA` lentelės metaduomenų stulpelių
+            pavadinimus.
+
+        .. function:: update(**kwargs)
+
+            Priklausomai nuo dimensijos konteksto, keičia modelį ar savybę.
+
+            Funkcijai galima perduoti `name` ir kitus vardinius argumentus,
+            kurie atitinka :term:`DSA` lentelės metaduomenų stulpelių
+            pavadinimus.
+
+            Perduodami tik tie vardiniai argumentai, kuriuos atitinkantys
+            metaduomenys keičiasi.
+
+        .. function:: delete()
+
+            Priklausomai nuo dimensijos konteksto, šalina modelį ar savybę.
+
+            Pašalinto modelio ar savybės :data:`type` keičiamas į `absent`
+            reikšmę.
+
+        .. function:: filter(where)
+
+            Naudojamas :data:`property` kontekste, kai vykdoma duomenų
+            migracija. Nurodo, kad migracija taikoma tik `where` sąlygą
+            tenkinantiems duomenims.
+
+        Be šių pagrindinių migracijos operacijų, galima naudoti kitas duomenų
+        transformavimo operacijas, kurios vykdomos su kiekviena duomenų eilute
+        ir atlikus pateiktas transformacijos funkcijas, pakeista reikšmė
+        išsaugoma.
 
 
 Duomenų paruošimas

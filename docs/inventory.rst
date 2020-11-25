@@ -6,28 +6,36 @@ Inventorizacija
 ###############
 
 Inventorizaciją yra procesas kurio metu parengiami metaduomenys apie duomenis,
-prieš atveriant pačius duomenis. Inventorizacija atliekama tokiais etapais:
+prieš atveriant pačius duomenis. Duomenų inventorizacija reikia atlikti tam, kad
+geriau suprasti kokius duomenis įstaiga turi ir atrinkti kuriuos duomenis galima
+atverti.
 
-1. Sudaromas preliminarus duomenų rinkinių sąrašas.
+Inventorizacija atliekama tokiais etapais:
 
-2. Parengiamas detalus :term:`duomenų struktūros aprašas <DSA>` (DSA).
+1. Sudaromas preliminarus :term:`duomenų rinkinių <duomenų rinkinys>` sąrašas.
 
-Šioje dokumentacijoje aptariamas tik antrasis, detalusis inventorizacijos
-etapas.
+2. Parengiamas detalus :term:`duomenų struktūros aprašas (DSA) <DSA>`.
 
-Duomenų šaltinio inventorizacija atliekama :term:`DSA` lentelės pagalba.
-Daugeliu atveju :term:`DSA` lentelę galima generuoti automatiškai iš duomenų
-šaltinio.
+Preliminarus :term:`duomenų rinkinių <duomenų rinkinys>` sąrašas parengiamas,
+apytiksliai įvardinant duomenų rinkinių pavadinimus, pateikiant trumpą aprašymą,
+priskiriant kategorijai, žymes ir pateikiant kitus metaduomenis :term:`atvirų
+duomenų kataloge <ADK>`.
 
-Jei duomenys jau atverti, tada būtina parengti atvertų duomenų :term:`ADSA`
-lentelė. Jei duomenys dar nėra atverti, rekomenduojama pirmiausiai parengti
-pirminio duomenų šaltinio :term:`ŠDSA` lentelę, o tada :term:`ŠDSA`
-transformuoti į :term:`ADSA`.
+Detali inventorizacija yra sudėtingesnė ir reikalauja daugiau laiko ir bazinių
+žinių apie `duomenų modeliavimą`__. Daugeliu atveju pirminę :term:`DSA` lentelės
+variantą galima generuoti automatiškai iš duomenų šaltinio, o vėliau papildyti.
 
-:term:`DSA` leidžia aprašyti duomenis saugomus įvairiuose duomenų šaltiniuose,
+.. __: https://en.wikipedia.org/wiki/Data_modeling
+
+Jei duomenys jau atverti, tada sudaroma atvertų duomenų :term:`ADSA` lentelė.
+Jei duomenys dar nėra atverti, rekomenduojama pirmiausiai parengti pirminio
+duomenų šaltinio :term:`ŠDSA` lentelę, o tada :term:`ŠDSA` transformuoti į
+:term:`ADSA`.
+
+:term:`DSA` galima aprašyti duomenis saugomus įvairiuose duomenų šaltiniuose,
 plačiau apie tai galima pasiskaityti skyriuje :ref:`sources`, tačiau kaip
-pavyzdį galime panagrinėti Oracle duomenų bazės duomenų šaltinį, kuriam yra
-viena lentelė:
+pavyzdį galime panagrinėti išgalvotą Oracle duomenų bazės duomenų šaltinį,
+kuriame yra viena lentelė:
 
 ====  ========  ===============
 \oracle://localhost/salys
@@ -43,7 +51,9 @@ id    kodas     salis
 Pirminis ŠDSA
 =============
 
-Tai tokių duomenų :term:`ŠDSA` lentelė atrodys taip:
+Oracle, kaip ir kitos duomenų bazių valdymo sistemos jau turi pakankamai
+metaduomenų, kad iš jų būtų galima automatiškai generuoti pirminį
+:term:`ŠDSA` lentelės variantą, kuris šiuo atveju atrodys taip:
 
 .. table:: Pirminis šaltinio duomenų struktūros aprašas (:term:`ŠDSA`)
 
@@ -63,6 +73,9 @@ Tai tokių duomenų :term:`ŠDSA` lentelė atrodys taip:
 
 Tokia automatiškai generuota :term:`DSA` lentelė vadinama pirmine :term:`ŠDSA`
 lentele, kadangi ji yra generuota automatiškai ir neredaguota.
+
+Keičiantis pirminio duomenų šaltinio struktūrai :term:`ŠDSA` galima automatiškai
+atnaujinti, net jei :term:`ŠDSA` papildomas naujais metaduomenimis.
 
 Deja, automatinėmis priemonėmis galima nuspėti tik dalį metaduomenų reikšmių.
 Tai kas neįveikiama automatinėms priemonėms, pildoma rankiniu būdu.

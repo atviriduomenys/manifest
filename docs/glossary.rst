@@ -199,14 +199,16 @@ Terminai
         Įstaigos ar kitos organizacijos pagrindinis duomenų šaltinis.
 
     duomenų rinkinys
-        Duomenų grupė charakterizuojanti modelį arba susijusius modelius jų
-        savybes ir tarpusavio ryšius. Sąsaja tarp modelių apibrėžiama ne
-        reliacinių ryšių prasme, o loginės arba semantinės sąsajos prasme.
+        Duomenų grupė charakterizuojanti :term:`modelį <modelis>` arba
+        susijusius modelius jų :term:`savybes <savybė>` ir tarpusavio ryšius.
+        Sąsaja tarp modelių apibrėžiama ne reliacinių ryšių prasme, o loginės
+        arba semantinės sąsajos prasme.
 
         Duomenys neskaidomi į skirtingus duomenų rinkinius, pagal vietos, laiko
-        ar kitas savybes.
+        ar kitus kriterijus.
 
-        Plačiau apie duomenų rinkinius: :ref:`duomenų-rinkinys`.
+        Plačiau apie duomenų rinkinius skaitykite skyriuje
+        :ref:`duomenų-rinkinys`.
 
     DCAT
         Duomenų katalogo žodynas (angl. `Data Catalog Vocabulary`_).
