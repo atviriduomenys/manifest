@@ -22,6 +22,8 @@ Gramatika
 
 Formulių sintaksė atitinką šią ABNF_ gramatiką:
 
+.. _ABNF: https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
+
 .. code-block:: abnf
 
     formula     = testlist

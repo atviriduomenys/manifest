@@ -1,30 +1,85 @@
 .. default-role:: literal
 
-Atvirų duomenų manifestas
-#########################
+Duomenų atvėrimo vadovas
+########################
 
-Atvirų duomenų manifestas yra visų Lietuvos duomenų metaduomenų visuma.
-Metaduomenys aprašomi :term:`duomenų struktūros aprašų <DSA>` lentelių pagalba.
+Lietuvos :term:`atvirų duomenų kataloge <ADK>` (ADK) publikuojami atvirų duomenų
+rinkinių metaduomenys. Viena iš ADK publikuojamų metaduomenų sudedamoji dalis
+yra :term:`duomenų struktūros aprašo (DSA) <DSA>` lentelė. Atveriant duomenis,
+daugeliu atveju turėtu užtekti parengti :term:`DSA` lentelę, o visa kita duomenų
+atvėrimo veikla daroma naudojant automatizuotas priemones. Todėl šiame duomenų
+atvėrimo vadove didžiausias dėmesys skiriamas :term:`DSA` lentelių
+dokumentavimui.
 
-Lietuvos :term:`atvirų duomenų kataloge <ADK>` (ADK) taip pat saugomi visų
-Lietuvos duomenų metaduomenys. Tačiau ADK metaduomenys yra suskirstyti į duomenų
-rinkinius, tuo tarpu manifestas metaduomenis skirsto pagal :term:`duomenų
-modelius <modelis>`, panaikinant duomenų suskirstymą į duomenų rinkinius. Visi
-manifeste aprašyti duomenys tampa vienu dideliu duomenų rinkiniu.
+DSA lentelėse pateikti metaduomenys naudojami duomenų kokybės tikrinimui,
+duomenų atvėrimui iš pirminių duomenų šaltinių, duomenų importavimui į bendrą
+duomenų saugyklą iš kurios duomenys teikiami įvairiais formatais, su galimybe
+jungti duomenis tarpusavyje ar gauti duomenis įvairiais pjūviais naudojant
+lankstų API.
 
-Metaduomenys leidžia automatizuoti duomenų valdymą įdarbinant robotus, kurie
-automatizuotų didelę dalį veiklų susijusių su duomenų valdymu.
+Šis vadovas skirtas tiek įstaigoms ar įmonėms atveriančioms duomenis, tiek
+duomenų naudotojams, naudojantiems atvertus duomenis.
+
+Vadove rasite informaciją, apie tai, kaip rengti :term:`DSA` lenteles, kaip
+naudotis priemonėmis veikiančiomis su :term:`DSA` lentelėmis ir kaip naudotis
+duomenų publikavimo API.
+
+.. warning::
+
+    Atkreipkite dėmesį, kad šis vadovas ir minėtos priemonės yra aktyvaus
+    vystymo stadijoje. Tačiau pats :ref:`DSA <spec>` lentelės formatas yra
+    stabilus ir didesnių lentelės formato pakeitimų daryti nenumatoma, todėl
+    duomenų struktūras galima aprašinėti jau dabar, o įrankiai ir dokumentacija
+    bus pilnai parengti iki antrojo lietuvos duomenų atvėrimo etapo pabaigos,
+    2023 metais.
+
 
 .. image:: static/spinta.png
 
-Į šio projekto apimtį įeina ne tik informacija kaip aprašyti metaduomenis, bet
-teikiami įrankiai metaduomenų ir duomenų valdymui.
+
+Dokumentacija sudaryta iš šių esminių dalių:
+
+- Informacija duomenų tiekėjams apie tai, kaip atlikti turimų duomenų
+  :ref:`inventorizaciją <inventory>` ir inventorizuotų duomenų :ref:`brandos
+  lygio kėlimą <brandos-lygio-kėlimas>`.
+
+- Informacija diegėjams apie tai, kaip diegti ir konfigūruoti :ref:`priemones
+  <priemonės>` skirtas darbui su duomenimis ir :term:`DSA` lentelėmis.
+
+- Informacija duomenų naudotojams, apie tai, kaip :ref:`teikti pageidavimus
+  ir pastabas <poreikio-deklaravimas>` dėl duomenų ir kaip :ref:`gauti pačius
+  duomenis <api>`.
+
+- :ref:`Techninė duomenų struktūros aprašo specifikacija <spec>`, kurioje rasite
+  detalią informaciją apie tai kaip rašyti ir skaityti :term:`DSA` lenteles.
+
 
 Duomenų atvėrimo procesas
 =========================
 
+.. _process-overview:
+
 .. image:: static/process-overview.svg
     :width: 200%
+
+Toliau, trumpai aptarsime visą duomenų :ref:`atvėrimo procesą
+<process-overview>`, nagrinėjant vieną konkretų pavyzdį.
+
+Įstaigos atveriančios duomenis renkasi vieną iš šių galimų duomenų atvėrimo
+proceso variantų:
+
+1. Atveria ir publikuoja duomenis savarankiškai, parengia :term:`ADSA`.
+
+2. Atveria duomenis savarankiškai, pagal parengtą :term:`ADSA`, tačiau pačius
+   duomenis publikuoja per centralizuotą saugyklą.
+
+3. Atlieka turimų duomenų inventorizaciją parengiant :term:`ŠDSA` kurio
+   pagrindu gaunamas :term:`ADSA`, o duomenys atveriami automatizuotu būdu
+   naudojant bendrai naudojamas ir vystomas priemones.
+
+Nepriklausomai nuo to kokį duomenų atvėrimo procesą pasirenka įstaigos,
+visais atvejais būtina į :term:`ADK` pateikti :term:`ADSA` lentelę, kurios
+dėka visi duomenys galiausiai patenka į vieną bendrą duomenų saugyklą.
 
 
 Inventorizacija

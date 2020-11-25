@@ -620,7 +620,7 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         Excel lentelės (naujasis OOXML_ formatas)
 
-.. _OOXML: https://en.wikipedia.org/wiki/Office_Open_XML
+        .. _OOXML: https://en.wikipedia.org/wiki/Office_Open_XML
 
     .. describe:: xls
 
@@ -630,7 +630,7 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         ODT_ skaičiuoklės formatas
 
-.. _ODS: https://en.wikipedia.org/wiki/OpenDocument
+        .. _ODT: https://en.wikipedia.org/wiki/OpenDocument
 
     .. describe:: wsdl
 

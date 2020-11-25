@@ -104,25 +104,21 @@ Terminai
         kanoniniai duomenys yra labai svarbūs.
 
     kodinis pavadinimas
-        Pavadinimas, kuriam keliami tam tikri apribojimai. Kodiniame pavadinime
-        visos raidės turi būti mažosios, pavadinimo pirma simbolis turi būti
-        mažoji lotyniška raidė, o visos sekančios raidės turi būti mažosios
-        lotyniškos raidės, skaičiai arba pabraukimo simbolis `_`.
-
-        Kodinis pavadinimas atitinka šią reguliąriąją išraišką:
-
-        .. code-block:: regex
-
-            [a-z][a-z0-9_]*
-
+        Pavadinimas, kuriam keliami tam tikri apribojimai.
 
     manifestas
-        Atvirų duomenų manifestas yra :term:`YAML` failų rinkinys, kuriuose
-        aprašyti duomenų šaltiniai ir struktūra.
+        Atvirų duomenų manifestas yra :term:`DSA` lentelių rinkinys, kuriuose
+        aprašyti duomenų šaltiniai ir juose esančių duomenų struktūra.
 
-        Žodžiu „Manifest“ IT kontekste vadinamas failas, kuriame pateiktas kitų į
-        vieną paketą įtrauktų failų sąrašas. Plačiau apie tai skaitykite
-        `Vikipedijoje <https://en.wikipedia.org/wiki/Manifest_file>`__.
+        Žodis manifestas yra kilęs iš programavimo srityje naudojamo termino
+        `Manifesto failas`__, kuriame pateikiami metaduomenys apie programinio
+        paketo sandarą.
+
+        .. __: https://en.wikipedia.org/wiki/Manifest_file
+
+        Duomenų kontekste, žodis manifestas turėtu būti suprantamas, kaip
+        metaduomenų lentelė apie įvairiuose duomenų šaltiniuose publikuojamus
+        duomenis.
 
     metaduomenys
         Duomenys apie duomenis yra vadinami metaduomenimis. Pavyzdžiui duomenų

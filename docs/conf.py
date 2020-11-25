@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Manifestas'
-copyright = '2019, Lietuvos atvirų duomenų naudotojų bendruomenė'
+project = 'Duomenų atvėrimo vadovas'
+copyright = '2019-2020, Lietuvos atvirų duomenų naudotojų bendruomenė'
 author = 'Lietuvos atvirų duomenų naudotojų bendruomenė'
 
 
