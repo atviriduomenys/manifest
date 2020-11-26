@@ -1233,6 +1233,8 @@ yra `private`, o toje :data:`dataset` dimensijoje esantis :data:`property` yra
 :data:`dataset.access` reikšmę.
 
 
+.. _nuasmeninimas:
+
 Nuasmeninimas
 =============
 
@@ -1342,6 +1344,17 @@ dimensijos kontekste.
         transformavimo operacijas, kurios vykdomos su kiekviena duomenų eilute
         ir atlikus pateiktas transformacijos funkcijas, pakeista reikšmė
         išsaugoma.
+
+    .. data:: migrate.title
+
+        Migracijos data ir laikas.
+
+        Naudojamas tik tada, kai :data:`migrate` nepatenka į jokios dimensijos
+        kontekstą.
+
+    .. data:: migrate.description
+
+        Migracijos atliekamo pakeitimo trumpas aprašymas.
 
 
 Duomenų paruošimas

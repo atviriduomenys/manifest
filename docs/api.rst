@@ -227,6 +227,8 @@ pavadinimu `datasets/gov/dc/geo` ir neradus tokio modelio būtų gražintas `404
 Not Found` klaidos kodas.
 
 
+.. _autorizacija:
+
 Autorizacija
 ============
 
@@ -297,6 +299,32 @@ tokiu būdu:
 .. code-block:: sh
 
     auth="Authorization:Bearer $token"
+
+
+Skaitymo veiksmai
+=================
+
+.. _getone:
+
+getone
+------
+
+.. code-block:: sh
+
+    http GET /datasets/gov/dc/geo/continent
+
+.. code-block:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "_type": "datasets/gov/dc/geo/continent",
+        "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
+        "_rev": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+        "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
+        "continent": "Europe"
+    }
 
 
 Rašymo veiksmai
@@ -454,6 +482,8 @@ Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
         "_txn": "448045c6-9993-4845-b889-56483a20f8f3"
     }
 
+
+.. _wipe:
 
 wipe
 ----

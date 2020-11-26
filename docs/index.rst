@@ -241,6 +241,7 @@ Turinys
    inventory
    demand
    maturity
+   personal-data
    sources
    norm
    params
