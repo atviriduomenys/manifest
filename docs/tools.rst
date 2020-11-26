@@ -5,4 +5,7 @@
 Priemonės
 #########
 
-Atsiprašome, kol kas čia nieko nėra, informacija rengiama.
+.. warning::
+
+    Informacija rengiama.
+

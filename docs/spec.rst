@@ -301,24 +301,37 @@ ir :data:`model` pavadinimai formuojami pasitelkiant vardų erdves.
 
 .. describe:: /<standard>/
 
-    **Globali vardų erdvė**
+    **Standartų vardų erdvė**
 
-    Globalią vardų erdvę rekomenduojama formuoti egzistuojančių standartų
+    Standartų vardų erdvė formuojama egzistuojančių standartų ir išorinių žodynų
     pagrindu suteikiant vardų erdvei `<standard>` standarto sutrumpintą
     pavadinimą. Pavyzdžiui atvirų duomenų katalogo metaduomenys turėtų keliauti
     į `/dcat/` vardų erdvę. Standartų sutrumpintus pavadinimus rekomenduojame
     imti iš `Linked Open Vocabularies`_ katalogo.
 
-.. _Linked Open Vocabularies: https://lov.linkeddata.es/dataset/lov/
+    .. _Linked Open Vocabularies: https://lov.linkeddata.es/dataset/lov/
 
-.. describe:: /datasets/
+.. describe:: /transformations/<standard>/
 
-    Vardų erdvė skirta įstaigų atveriamiems duomenų rinkiniams.
+    **Transformacijų vardų erdvė**
 
-.. describe:: /datasets/<type>/
+    Ši vardų erdvė skirta įstaigų duomenų rinkinių transformavimui į
+    `/<standard>/` vardų erdvę, apjungiant visų įstaigų duomenis į vieningus
+    modelius standartų vardų erdvėje.
 
-    Vardų erdvė skirta konkrečiam organizacijos tipui. Organizacijų `<type>`
-    tipai gali būti tokie:
+    Ši vardų erdvė yra tranzitinė ir joje duomenys nesaugomi, o perduodami
+    tiesiai į standartų vardų erdvėje esančius modelius, `proxy`
+    :data:`base.type` pagalba.
+
+.. describe:: /datasets/<type>/<org>/
+
+    **Įstaigų vardų erdvė**
+
+    Konkrečios organizacijos vietinė rinkinio vardų erdvė. Rekomenduojama
+    `<org>` reikšmei naudoti organizacijos trumpinį, kad bendras modelio
+    pavadinimas nebūtų per daug ilgas.
+
+    Galimos `<type>` reikšmės:
 
     .. describe:: gov
 
@@ -328,17 +341,9 @@ ir :data:`model` pavadinimai formuojami pasitelkiant vardų erdves.
 
         Verslo įmonės.
 
-.. describe:: /datasets/<type>/<org>/
-
-    **Įstaigos vardų erdvė**
-
-    Konkrečios organizacijos vietinė rinkinio vardų erdvė. Rekomenduojama
-    `<org>` reikšmei naudoti organizacijos trumpinį, kad bendras modelio
-    pavadinimas nebūtų per daug ilgas.
-
 .. describe:: /datasets/<type>/<org>/<dataset>/
 
-    **Rinkinio vardų erdvė**
+    **Įstaigų duomenų rinkinių vardų erdvė**
 
     Įstaigos duomenų rinkinio vardų erdvė į kurią patenka visi įstaigos duomenų
     modeliai.
@@ -803,6 +808,8 @@ keisti tik duomenų pateikimą, užtenka naudoti :data:`model.prepare` formules.
 
     Formulė skirta duomenų filtravimui ir paruošimui, iš dalies priklauso nuo
     :data:`resource.type`.
+
+    Taip pat skaitykite: :ref:`duomenų-atranka`.
 
 .. data:: model.type
 
@@ -1441,11 +1448,12 @@ prieigos prie duomenų, saugomų failuose, atvejus.
 
 .. describe:: resource.prepare
 
-    .. function:: extract(type, path)
+    .. function:: extract(resource, type)
 
-        Jei :data:`resource.source` rodo į archyvo failą, tada papildomai galima
-        nurodyti koks archyvo tipas ir koks failo kelias archyvo viduje. `type`
-        reikšmės gali būti tokios:
+        :arg resource: Kelias arba URI iki archyvo failo arba failo objektas.
+        :arg type: Archyvo tipas.
+
+        Išpakuoja archyvą, kuriame saugomi failai. Galimos `type` reikšmės:
 
         .. describe:: zip
 
@@ -1453,7 +1461,13 @@ prieigos prie duomenų, saugomų failuose, atvejus.
 
         .. describe:: rar
 
-    .. function:: decompress(type)
+        Funkcijos rezultatas yra archyvo objektas, kuris leidžia pasiekti
+        esančius archyvo failus :func:`getitem` funkcijos pagalba.
+
+    .. function:: decompress(resource, type)
+
+        :arg resource: Kelias arba URI iki archyvo failo arba failo objektas.
+        :arg type: Archyvo tipas.
 
         Taikomas srautinis failo glaudinimo filtras. Galimos `type` reikšmės:
 
@@ -1471,8 +1485,8 @@ Stulpeliai lentelėje
 CSV ar skaičiuoklių lentelėse stulpelių pavadinimai pateikiami pačioje
 lentelėje. Eilutė, kurioje surašyti pavadinimai nebūtinai gali būti pirma.
 Stulpelių pavadinimai gali būti pateikti keliose eilutėse iš kurių formuojamos
-kompleksinės struktūros (žiūrėti Kompleksinės struktūros). Įvairias situacijas
-galima aprašyti formulių pagalba.
+kompleksinės struktūros (žiūrėti :ref:`kompleksinės-struktūros`). Įvairias
+situacijas galima aprašyti formulių pagalba.
 
 .. describe:: model.prepare
 
@@ -1517,7 +1531,7 @@ galima aprašyti formulių pagalba.
 
 .. describe:: property.prepare
 
-    Jei naudojamas header(*line), žiūrėti Kompleksinės struktūros.
+    Jei naudojamas `header(*line)`, žiūrėti :ref:`kompleksinės-struktūros`.
 
 
 .. _kompleksinės-struktūros:
@@ -1611,6 +1625,8 @@ count   results
 Šioje lentelėje stulpelių pavadinimai pateikti trijose eilutėse, todėl
 model.prepare reikėtų naudoti :func:`header(0, 1, 2) <header>`.
 
+
+.. _duomenų-atranka:
 
 Duomenų atranka
 ===============
@@ -1755,7 +1771,7 @@ Statinės reikšmės
 
 Statinės reikšmės arba konstantos duomenų laukams gali būti nurodomos
 :data:`property.prepare` stulpelyje naudojant formulės sintaksę. Plačiau apie
-formules žiūrėti Formulės skyrelyje.
+formules žiūrėti :ref:`formulas` skyrelyje.
 
 
 Fiksuotų reikšmių variantai
@@ -2011,6 +2027,8 @@ kelis jau aprašytus laukus.
 Duomenų šaltiniai
 =================
 
+.. _resource-type-sql:
+
 SQL
 ---
 
@@ -2114,13 +2132,26 @@ XML
 
 .. describe:: model.source
 
-    XPath_ iki elementų sąrašo kuriame yra modelio duomenys.
+    `XPath <https://en.wikipedia.org/wiki/XPath>`_ iki elementų sąrašo kuriame
+    yra modelio duomenys.
 
-    .. _XPath: https://en.wikipedia.org/wiki/XPath
+.. describe:: model.prepare
+
+    Jei neužpildyta, vykdoma :func:`xpath(self) <xpath>` funkcija.
+
+    .. function:: xpath(expr)
+
+        Vykdo nurodyta `expr`, viso XML dokumento kontekste.
 
 .. describe:: property.source
 
-    XPath_ iki elemento kuriame yra duomenys.
+    `XPath <https://en.wikipedia.org/wiki/XPath>`_ iki elemento kuriame yra
+    duomenys.
+
+.. describe:: model.prepare
+
+    Jei neužpildyta, vykdoma :func:`xpath(self) <xpath>` funkcija, iš
+    :data:`model` gauto elemento kontekste.
 
 
 Skaičiuoklių lentelės
@@ -2186,12 +2217,15 @@ WSDL
 Parametrizacija
 ===============
 
-Duomenys gali būti publikuojami fragmentuotai, kai vieno modelio duomenys
-skaidomi į daug šaltinių, pavyzdžiui CSV failai gali būti suskaidyti pagal metus
-ar vietovę. API atveju, vienas API prieigos taškas gali grąžinti eilučių
-identifikatorius, o kitas prieigos taškas pačius eilutės duomenis. Tokiais
-atvejais reikalinga parametrizacija, kuri leidžia naudoti dinaminius parametrus
-source ir prepare laukuose.
+Parametrai leidžia iškelti tam tikras duomenų paruošimo operacijas į parametrus
+kurie gali būti naudojami :term:`dimensijos`, kurioje apibrėžtas parametras
+kontekste. Parametrai gali gražinti :term:`iteratorius`, kurių pagalba galima
+dinamiškai kartoti :data:`resource` duomenų skaitymą, panaudojant aprašytus
+parametrus. Taip pat parametrų pagalba galima sudaryti reikšmių sąrašus, kurių
+pagalba galima kartoti :data:`resource` su kiekviena reikšme.
+
+Parametrai dažniausiai naudojami žemesnio brandos lygio duomenų šaltiniams
+aprašyti, o taip pat API atvejais, kai duomenys atiduodame dinamiškai.
 
 Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
 
@@ -2204,20 +2238,35 @@ Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
     .. data:: param.prepare
 
         Formulė, kuri grąžina sąrašą reikšmių aprašomam parametrui. Jei
-        užpildytas :data:`param.source` stulpelis, tada :data:`param.prepare`
-        naudojamas nurodyto modelio duomenų filtravimui.
+        nepateikta, naudojamas `self`.
 
     .. data:: param.source
 
-        Parametro reikšmės imamos iš nurodyto modelio duomenų.
+        Nurodoma reikšmė, kuri :data:`param.prepare` pateikiama kaip `self`
+        kintamasis.
 
-Kai konkretus hierarchijos lygmuo yra parametrizuotas, konkretus hierarchijos
-lygmuo dinamiškai kartojamas tiek kartu kiek parametras turi reikšmių, o
-:data:`param.source` ir :data:`param.prepare` stulpeliuose yra prieinama
-parametro reikšmė nurodytu :data:`param.ref` pavadinimu.
+Jei parametro reikšmė yra :term:`iteratorius`, tada :data:`dimensija`, kurio
+:term:`kontekste <dimensijos kontekstas>` yra aprašytas :ref:`parametras
+<param>` yra kartojama tiek kartų, kiek reikšmių grąžina :term:`iteratorius`.
 
-Pavyzdžiui, jei :data:`param.ref` stulpelyje būtų nurodytas pavadinimas `x`,
-tada šio parametro reikšmės gali būti pasiekiamos taip:
+Jei yra keli :data:`param` grąžinantys :term:`iteratorius`, tada iš
+visų :term:`iteratorių <iteratorius>` sudaroma `Dekarto sandauga`_ ir
+:data:`resource` dimensija vykdoma su kiekviena sandaugos rezultato reikšme.
+
+.. _Dekarto sandauga: https://lt.wikipedia.org/wiki/Dekarto_sandauga
+
+Nepriklausomai kurioje :term:`dimensijoje` panaudoti :data:`param`, grąžinantys
+iteratorius, visada kartojama visa :data:`resource` :term:`dimensija`.
+
+Jei sekančioje :term:`DSA` eilutėje, einančioje po eilutės, kurioje aprašytas
+:data:`param`, nenurodytas :data:`type` ir neužpildytas joks kitas
+:term:`dimensijos <dimensija>` stulpelis, tada parametras tampa
+:term:`iteratoriumi <iteratorius>`, kurio reikšmių sąrašą sudaro sekančiose
+eilutėse patektos :data:`source` ir :data:`prepare` reikšmės.
+
+:data:`param` reikšmės pasiekiamos naudojanti pavadinimą įrašytą :data:`pram
+ref` stulpelyje. Pavyzdžiui, jei :data:`pram.ref` stulpelyje įrašyta `x`, tada
+`x` parametro reikšmę galima gauti taip:
 
 .. describe:: source
 
@@ -2233,11 +2282,11 @@ Parametrų generavimui galima naudoti tokias formules:
 
     .. function:: range(stop)
 
-        Sveikų skaičių generavimas nuo 0 iki `stop`.
+        Sveikų skaičių generavimas nuo 0 iki `stop`, `stop` neįeina.
 
     .. function:: range(start, stop)
 
-        Sveikų skaičių generavimas nuo `start` iki `stop`.
+        Sveikų skaičių generavimas nuo `start` iki `stop`, `stop` neįeina.
 
     .. function:: scalar(name)
 

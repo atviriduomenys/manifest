@@ -404,3 +404,30 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
         a(*)
 
     Operatoriai gali būti naudojami kaip argumentai.
+
+
+.. function:: stack(columns, values, exclude)
+
+    Visus stulpelius išskyrus `exclude` verčia į vieną stulpelių eilutei
+    suteikiant `columns` pavadinimą, o reikšmių stulpeliui `values` pavadinimą.
+    Pavyzdžiui:
+
+    ==========  ======  ======
+    vertinimas  2015P2  2016P2
+    ==========  ======  ======
+    Neigiamai   0       1
+    Teigiamai   39      28
+    ==========  ======  ======
+
+    Tokiai lentelei pritaikius `stack("data", "rodiklis", ["vertinimas"])`
+    transformaciją, gausime tokį rezultatą:
+
+    ==========  ======  ========
+    vertinimas  data    rodiklis
+    ==========  ======  ========
+    Neigiamai   2015P2  0
+    Neigiamai   2016P2  1
+    Teigiamai   2015P2  39
+    Teigiamai   2016P2  28
+    ==========  ======  ========
+

@@ -62,3 +62,5 @@ html_static_path = ['static']
 html_css_files = ['style.css']
 
 master_doc = 'index'
+
+smartquotes = False

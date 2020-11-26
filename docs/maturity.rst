@@ -991,8 +991,7 @@ yra laisvė
 .. _LOV: https://lov.linkeddata.es/dataset/lov
 .. _WikiData: https://www.wikidata.org/
 
-Vieningam žodynui sudaryti naudojama kiek kitokios struktūros lentelė, kuri
-atrodo taip:
+Vieningas žodyno :term:`DSA` atrodo taip:
 
 +----+---+-----------------+--------+------+------------------------------------+---------------------+
 | id | m | property        | type   | ref  | uri                                | title               |
@@ -1008,52 +1007,44 @@ atrodo taip:
 |    |   | name            | string |      | og:country-name                    | Pavadinimas         |
 +----+---+-----------------+--------+------+------------------------------------+---------------------+
 
-Modelio pavadinimui galima naudoti vardų erdves, kad būtų galima suskirstyti
-modelius į tam tikras kategorijas.
-
-`model`, `property`, `type`, `ref`, `title` ir `description` stulpelių
-paskirtis yra tokia pati, kaip ir inventorizacijos lentelėje. Tačiau atsiranda
-vienas papildomas laukas `uri`, kurio pagalba, galima susieti vidinį manifesto
-žodyną, su pasauliniais žodynais.
-
-Inventorizacijos lentelė, naudojant vieningą žodyną atrodytų taip:
+Toliau, įprastai aprašome duomenų šaltinį ir įtraukiame :data:`base`
+dimensiją, kurios pagalba duomenis nukreipiame į standartų vardų erdvę.
 
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
 | id | d | r | b | m | property  | type    | ref  | source    | level |
 +====+===+===+===+===+===========+=========+======+===========+=======+
-|    | datasets/gov/dc/countries |         |      |           |       |
+|  1 | datasets/gov/dc/countries |         |      |           |       |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   | sql                   |         |      |           |       |
+|  2 |   | sql                   |         |      |           |       |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   |   | /place/country    |         | code |           |       |
+|  3 |   |   | /place/country    |         | code |           |       |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   |   |   | countries     |         | id   | COUNTRIES |       |
+|  4 |   |   |   | countries     |         | id   | COUNTRIES |       |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   |   |   |   | id        | integer |      | id        | 5     |
+|  5 |   |   |   |   | id        | integer |      | id        | 3     |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   |   |   |   | code      | string  |      | code      | 5     |
+|  6 |   |   |   |   | code      | string  |      | code      | 3     |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
-|    |   |   |   |   | name      | string  |      | country   | 5     |
+|  7 |   |   |   |   | name      | string  |      | country   | 3     |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
 
-Duomenų rinkinių modeliai siejami su žodynu nurodant `base` reikšmę, kuri
-atitinka žodyno modelį. Tada atitinkamai reikia pakeisti `property` reikšmes,
-kad jos atitiktų `base` stulpelyje nurodyto modelio pavadinimus.
+Duomenų rinkinių modeliai siejami su žodynu :data:`base` stulpelyje pateikiant
+susiejamo modelio pavadinimą iš standartų vardų erdvės. Tada atitinkamai reikia
+pakeisti `property` reikšmes, kad jos atitiktų :data:`base` modelio pavadinimus.
 
-Dar vienas svabus momentas yra `code` reikšmė `source` stulpelyje, ties
-`place/country` eilute. Ši reikšmė nurodo kaip
-`datasets/gov/dc/countries/countries` modelio objektai turi būti
-identifikuojami `place/country` lentelėje. Šiuo atveju nurodyta, kad objektų
-siejimas turi būti daromas per `code` lauką. Toks objektų susiejimas leidžia
-turėti vienodus identifikatorius visiems duomenų rinkiniams kurie yra
-`place/country` modelio dalis.
+Dar vienas svarbus momentas yra `code` reikšmė :data:`base.source` stulpelyje,
+3-ioje eilutėje. Ši reikšmė nurodo kaip `datasets/gov/dc/countries/countries`
+modelio :term:`objektai <objektas>` turi būti identifikuojami `place/country`
+modelyje. Šiuo atveju nurodyta, kad objektų siejimas turi būti daromas per
+`code` lauką. Toks objektų susiejimas leidžia turėti vienodus identifikatorius
+visiems duomenų rinkiniams kurie yra `place/country` modelio dalis.
 
 
 Globalūs identifikatoriai
 =========================
 
 Dažniausiai nėra didelių problemų su lokaliais, vieno duomenų rinkinio ribose
-naudojamai identifikatoriais. Objektus galima jungti tarpusavyje, tačiau tik
+naudojamais identifikatoriais. Objektus galima jungti tarpusavyje, tačiau tik
 vieno duomenų rinkinio ribose.
 
 Atsiveria žymiai didesnės galimybės, jei objektus galima jungti ir už vieno
@@ -1120,11 +1111,11 @@ lentelė atrodytų taip:
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
 |    |   |   |   | countries      | COUNTRIES |         | id     |       |
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
-|    |   |   |   |   | id         | id        | integer |        | 5     |
+|    |   |   |   |   | id         | id        | integer |        | 3     |
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
-|    |   |   |   |   | a3code     | code      | string  |        | 5     |
+|    |   |   |   |   | a3code     | code      | string  |        | 2     |
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
-|    |   |   |   |   | name.en    | country   | text    |        | 5     |
+|    |   |   |   |   | name.en    | country   | text    |        | 2     |
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
 |    | datasets/gov/dp2/countries |           |         |        |       |
 +----+---+---+---+---+------------+-----------+---------+--------+-------+
@@ -1169,15 +1160,13 @@ lentelė atrodytų taip:
 +----+---+-----------+--------+
 
 Duomenų atvėrimo metu, visi inventorizuoti duomenų rinkiniai bus siejami su
-žodyno modeliais pasitelkiant identifikatorių nurodytą `ref` stulpelyje ties
-`base` eilute. Jei duomenų rinkinio modelis neturi tokio lauko, tada
-susiejimas nebus daromas ir viso modelio brandos lygis nukris iki 4 brandos
-lygio.
+žodyno modeliais pasitelkiant identifikatorių nurodytą :data:`base.ref`
+stulpelyje. Jei duomenų rinkinio modelis neturi tokio lauko, tada susiejimas
+nebus daromas ir viso modelio brandos lygis nukris iki 4 brandos lygio.
 
 Duomenų atvėrimo metu atskirų duomenų rinkinių duomenys bus saugomi atskirai,
-kadangi jie gali turėti laukų ne iš manifesto žodyno. Iš visų duomenų rinkinių
-bus kuriami ir globalūs, nuo konkretaus duomenų rinkinio nepriklausomi žodynų
-objektai.
+kadangi jie gali turėti laukų ne iš žodyno. Iš visų duomenų rinkinių bus kuriami
+ir globalūs, nuo konkretaus duomenų rinkinio nepriklausomi žodynų objektai.
 
 Konkrečiai šiuo atveju `place/country` žodyno lentelė atvėrus duomenis atrodys
 taip:
@@ -1196,18 +1185,3 @@ Kaip matote, iš pirmo žvilgsnio atrodė, kad dviejų duomenų rinkinių neįma
 sujungti tarpusavyje, tačiau prijungus dar daugiau duomenų rinkinių, kaip kokia
 dėlionė iš mažų detalių susidėliojo pilna ir išsami modelio `place/country`
 lentelė.
-
-
-Nuasmeninimas
-=============
-
-Nuasmeninimas sudėtingoka problema ir inventorizacijos metu iš esmės
-sprendžiama naudojanti `person` modelį iš manifesto žodyno, tose vietose, kur
-duomenys yra apie asmenį.
-
-Vieningo žodyno naudojimas suteikia galimybe jungti skirtingų duomenų rinkinių
-lenteles tarpusavyje, ko pasekoje susijungia net iš pirmo žvilgsnio
-nesujungiami duomenų rinkiniai. Todėl identifikavus `person` modelius galima
-lengviau suprasti ką tiksliai reikia nuasmeninti.
-
-Kol kas nėra sukurta jokių priemonių nuasmeninimo automatizavimui.

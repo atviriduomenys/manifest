@@ -5,775 +5,575 @@
 Duomenų šaltiniai
 #################
 
-Duomenų šaltinių aprašai leidžia automatizuoti duomenų surinkimą iš įvairių
-šaltinių, juos patikrinti ir konvertuoti į kitus formatus.
-
-Šaltinio duomenų struktūros aprašas YAML formatu atrodo taip:
-
-.. code-block:: yaml
-
-   # <rinkinys>.dataset.yml
-   type: dataset
-   name: <rinkinys>
-   resources:
-     <resursas>:
-       type: <šaltinio tipas>
-       source: <resurso šaltinis>
-
-.. code-block:: yaml
-
-   # <modelis>.yml
-   type: model
-   name: <modelis>
-   base:
-     model: <bazinis modelis>
-     pk: <identifikatorius>
-   source:
-     dataset: <rinkinys>
-     resource: <resursas>
-     name: <modelio šaltinis>
-     pk: <identifikatorius>
-   properties:
-     <savybė>:
-       type: <savybės tipas>
-       source: <savybės šaltinis>
-
-.. code-block:: yaml
-
-   # <bazinis modelis>.yml
-   type: model
-   name: <bazinis modelis>
-   properties:
-     <savybė>:
-       type: <savybės tipas>
-
-Šis aprašas yra suderinamas su DCAT_ žodynu, tačiau DCAT_ žodyno elementai
-sudaro tik nedidelę dalį. Šaltinio aprašas yra išplėstas ir leidžia aprašyti ne
-tik duomenų rinkinio ir resurso metaduomenis, bet ir detalią objektų ir savybių
-struktūrą, duomenų šaltinius, susieti pavadinimus su vieningu žodynu ir pan.
-
-.. _DCAT: https://www.w3.org/TR/vocab-dcat/
-
-Šaltinio duomenų aprašo pagrindą sudaro:
-
-- rinkinys
-- resursas
-- modelis
-- savybė
-
-Žemiau pateikiami išsamesni apraše naudojamų elementų pažymėtų `<>` žymėmis
-aprašymai.
-
-rinkinys
-   Duomenių rinkinio :term:`sisteminis pavadinimas`. Duomenų rinkinys jungia
-   vieną ar kelis duomenų išteklius (resursus).
-
-resursas
-   Resurso pavadinimas gali būti bet koks, tačiau prasminga jį sieti su duomenų
-   bazės ar duomenų failo pavadinimu.
-
-šaltinio tipas
-   Šiuo metu palaikomi tokie šaltinio tipai:
-
-   - `csv`
-   - `html`
-   - `json`
-   - `sql`
-   - `xlsx`
-   - `xml`
-
-   Priklausomai nuo šaltinio tipo keičiasi visų kitų elementu interpretavimas.
-
-resurso šaltinis
-   Gali būti duomenų bazė, JSON, XML ar skaičiuoklės failas. Priklauso nuo
-   šaltinio tipo.
-
-modelis
-   Modelio pavadinimas gali būti bet koks pavadinimas, tačiau rekomenduojama
-   duomenų rinkinio pavadinimą formuoti iš rinkinio pavadinimo, pavyzdžiui
-   `<rinkinys>/<modelis>`.
-
-objekto šaltinis
-   Priklausomai nuo duomenų šaltinio, gali būti duomenų bazės lentelė, CSV
-   failas, JSON elemento kelias, XPath ar skaičiuoklės lapo pavadinimas.
-
-savybė
-   Objekto savybės pavadinimas.
-
-savybės tipas
-   Šiuo metu paliekami šie duomenų tipai:
-
-   - `pk` - pirminis raktas
-   - `ref` - ryšys su kitu objektu
-   - `backref` - atgalinis ryšys su kitu objektu
-   - `generic` - ryšis su kitu neapibrėžtu objektu
-   - `array` - masyvas, kuris gali būti sudarytas iš bet kokių kitų tipų reikšmių
-   - `object` - objektas, kuris gali būti sudarytas iš bet kokių kitų tipų
-     reikšmių
-   - `string` - bet kokio ilgio simbolių eilutė
-   - `binary` - dvejetainiai duomenys
-   - `integer` - sveikas skaičius, gali būti neigiamas
-   - `number` - racionalusis skaičius
-   - `boolean` - loginis tipas
-   - `date` - data
-   - `datetime` - data ir laikas
-   - `spatial` - erdviniai duomenys, gali būti taškas, linija arba plokštuma
-   - `file` - failas
-   - `image` - paveiksliukas
-   - `url` - URL adresas
-
-savybės šaltinis
-   Priklausomai nuo šaltinio, gali būti duomenų bazės lentelės laukas, JSON
-   objekto savybė, reliatyvus XPath, skaičiuoklės lapo stulpelis.
-
-Resurso, objekto ir savybės šaltiniai (`source/name` parametras) priklauso nuo
-šaltinio tipo, žemiau pateikti visų palaikomų šaltinių aprašymai su
-paaiškinimais kaip interpretuojamas `source/name` kiekvienam iš jų.
-
-Visuose pavyzdžiuose naudojama tie patys šalies duomenys, tik duomenys
-pateikiami skirtingais formatais, tačiau galutinis rezultatas visais atvejais
-yra identiškas.
-
-
-Visų žemiau pateiktų duomenų rinkinių inventorizacijos lentelė atrodo taip:
-
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-| id | d | r | b | m | property    | source                             | prepare | type    | ref   | level | access  | uri | title        | description     |
-+====+===+===+===+===+=============+====================================+=========+=========+=======+=======+=========+=====+==============+=================+
-|    | datasets/pavyzdys/sql       |                                    |         |         |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   | sql                     | postgresql://user@host/dbname      |         | sql     |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   | geografija/salis    |                                    |         |         | kodas |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   | salis           | COUNTRY                            |         |         | id    |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | id          | id                                 |         | integer |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | kodas       | code                               |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | pavadinimas | country                            |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    | datasets/pavyzdys/csv       |                                    |         |         |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   | csv                     | https://example.com/               |         | csv     |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   | geografija/salis    |                                    |         |         | kodas |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   | salis           | countries.csv                      |         |         | id    |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | id          | id                                 |         | integer |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | kodas       | code                               |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | pavadinimas | country                            |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    | datasets/pavyzdys/json      |                                    |         |         |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   | json                    | https://example.com/countries.json |         | json    |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   | geografija/salis    |                                    |         |         | kodas |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   | salis           | countries                          |         |         | id    |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | id          | id                                 |         | integer |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | kodas       | code                               |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | pavadinimas | country                            |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    | datasets/pavyzdys/xml       |                                    |         |         |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   | xml                     | https://example.com/countries.xml  |         | xml     |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   | geografija/salis    |                                    |         |         | kodas |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   | salis           | xpath('/root/country')             |         |         | id    |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | id          | id                                 |         | integer |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | kodas       | code                               |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | pavadinimas | text()                             |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    | datasets/pavyzdys/xlsx      |                                    |         |         |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   | xlsx                    | https://example.com/countries.xlsx |         | xlsx    |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   | geografija/salis    |                                    |         |         | kodas |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   | salis           | COUNTRIES                          |         |         | id    |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | id          | id                                 |         | integer |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | kodas       | code                               |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-|    |   |   |   |   | pavadinimas | country                            |         | string  |       |       |         |     |              |                 |
-+----+---+---+---+---+-------------+------------------------------------+---------+---------+-------+-------+---------+-----+--------------+-----------------+
-
-Žodyno lentelė atrodo taip:
-
-+----+---+---+--------------+--------+---------+---------+-----+-------+--------+-----------------------+---------------------+-------------+
-| id | b | m | property     | source | prepare | type    | ref | level | access | uri                   | title               | description |
-+====+===+===+==============+========+=========+=========+=====+=======+========+=======================+=====================+=============+
-|    |   | geografija/salis |        |         |         |     |       |        | schema:Country        | Šalis               |             |
-+----+---+---+--------------+--------+---------+---------+-----+-------+--------+-----------------------+---------------------+-------------+
-|    |   |   | kodas        |        |         | string  |     |       |        | esco:isoCountryCodeA2 | ISO 3166-1 A2 kodas |             |
-+----+---+---+--------------+--------+---------+---------+-----+-------+--------+-----------------------+---------------------+-------------+
-|    |   |   | pavadinimas  |        |         | string  |     |       |        | og:country-name       | Pavadinimas         |             |
-+----+---+---+--------------+--------+---------+---------+-----+-------+--------+-----------------------+---------------------+-------------+
-
-
 SQL
 ===
 
-SQL arba reliacinės duomenų bazių valdymo sistemos.
+Tarkime turime PostgreSQL duomenų bazę, kurioje yra dvi lentelės:
 
-resurso šaltinis
-   SQL resurso šaltinis nurodo duomenų bazę, kurios duomenų struktūra aprašoma.
+=======  =========  ===========
+SALIS
+-------------------------------
+ID       KODAS      PAVAD
+=======  =========  ===========
+100      lt         Lietuva
+101      lv         Latvija
+102      ee         Estija
+=======  =========  ===========
 
-   Dažniausiai duomenų bazės prisijungimai nėra nurodomas duomenų struktūros
-   apraše, kadangi duomenų bazės prisijungimai negali būti viešinami. Duomenų
-   bazės prisijungimai turi būti perduodami per :term:`aplinkos kintamuosiuos
-   <aplinkos kintamasis>` arba konfigūracijos failus.
+=======  =========  ===========
+MIESTAS
+-------------------------------
+ID       SALIS_ID   PAVAD
+=======  =========  ===========
+204      100        Vilnius
+205      100        Kaunas
+206      100        Klaipėda
+207      101        Ryga
+208      102        Talinas
+=======  =========  ===========
 
-   :term:`Aplinkos kintamasis <aplinkos kintamasis>` formuojamas taip::
+Tarkime, kad mes norime atverti tik Lietuvos duomenis, ignoruojant kitų šalių
+duomenis.
 
-      resource.source
-      SPINTA_BACKENDS__{resource.ref}__DSN
-      SPINTA_BACKENDS__{dataset.name}__{resource.name}__DSN
-      SPINTA_BACKENDS__{dataset.name}__DSN
-      SPINTA_BACKENDS__{resource.type}__DSN
+:term:`Duomenų aprašas <DSA>` atrodys taip:
 
-   Iš šių variantą nurodytų aukčiau, bus naudojamas pirmas pateiktas. Jei
-   `dataset.name` arba `resource.name` turi `/` pavadinime, jie turi būti
-   pakeisti į `_`.
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+| id | d | r | b | m | property    | type    | ref     | source                         | prepare           | access  |
++====+===+===+===+===+=============+=========+=========+================================+===================+=========+
+|    | datasets/example/sql        |         |         |                                |                   |         |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   | db                      | sql     |         | \postgresql://user@host/dbname |                   |         |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   | country         |         | id      | SALIS                          | code="lt"         |         |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | id          | integer |         | ID                             |                   | private |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | code        | string  |         | KODAS                          |                   | open    |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | name        | string  |         | PAVAD                          |                   | open    |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   | city            |         | id      | MIESTAS                        | country.code="lt" |         |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | id          | integer |         | ID                             |                   | private |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | country     | ref     | country | SALIS_ID                       |                   | open    |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
+|    |   |   |   |   | name        | string  |         | PAVAD                          |                   | open    |
++----+---+---+---+---+-------------+---------+---------+--------------------------------+-------------------+---------+
 
-   Konkrečiai šiuo atveju, galimi tokie duomenų bazės konfigūracijos
-   variantai::
+Reliacinės duomenų bazės (RDBVS) yra populiariausias duomenų saugojimo būdas.
+Tačiau taip pat RDBVS struktūra yra lengviausiai aprašoma, didelė dalis
+metaduomenų saugoma pačioje RDBVS, todėl nesunkiai galima generuoti gan išsamias
+:term:`DSA` lenteles automatiškai.
 
-      SPINTA_BACKENDS__DATASETS_PAVYZDYS_SQL_SQL__DSN=postgresql://user@host/dbname
-      SPINTA_BACKENDS__DATASETS_PAVYZDYS_SQL__DSN=postgresql://user@host/dbname
-      SPINTA_BACKENDS__SQL__DSN=postgresql://user@host/dbname
+Atkreipkite dėmesį, kad `id` :term:`savybės <savybė>` pažymėtos `private`
+prieigos žyme. Taip rekomenduojama daryti tam, kad nebūtų atskleisti vidiniai
+duomenų bazės identifikatoriai. Dažniausiai tokie identifikatoriai yra naudingi
+tik duomenų bazės viduje ir išorėje neturi naudos. Be to, tam tikromis
+situacijomis, pasinaudojant vidiniais identifikatoriais galima atskleisti
+konfidencialius duomenis.
 
-   Duomenų bazės šaltinis aprašomas naudojant tokią URL schemą::
+Kadangi išsikėlėme reikalavimą atverti tik Lietuvos duomenis,
+:data:`model.prepare` stulpelyje nurodėme atveriamų duomenų filtrus. Dažniausiai
+tokie filtrai naudojami asmens duomenų filtravimui arba skaidant lenteles į
+kelis atskirus :term:`medelius <modelis>`.
 
-      <db>+<valdiklis>://<naudotojas>:<slaptažodis>@<serveris>:<prievadas>/<pavadinimas>
+Atlikus visas :term:`DSA` lentelėje aprašytas transformacijas gausime tokias
+duomenų lenteles:
 
-   db
-      Duomenų bazės rūšis:
+====  ===========  =================
+datasets/example/sql/country
+------------------------------------
+_id   code         name
+====  ===========  =================
+1     lt           Lietuva
+2     lv           Latvija
+3     ee           Estija
+====  ===========  =================
 
-      - `sqlite`
-      - `postgresql`
-      - `mysql`
-      - `mssql`
+====  ===========  =================
+datasets/example/sql/city
+------------------------------------
+_id   country      name
+====  ===========  =================
+3     1            Vilnius
+4     1            Kaunas
+5     1            Klaipėda
+====  ===========  =================
 
-   valdiklis
-      Konkretus duomenų bazės valdiklis (angl. *driver*) naudojamas
-      komunikacijai su duomenų baze.
-
-   naudotojas, slaptažodis
-      Duomenų bazės naudotojas ir jo slaptažodis.
-
-   serveris, prievadas
-      Serveris ir serverio prievadas kur veikia duomenų bazė.
-
-   pavadinimas
-      Duomenų bazės pavadinimas.
-
-
-objekto šaltinis
-   Duomenų bazės lentelės pavadinimas.
-
-savybės šaltinis
-   Lentelės lauko pavadinimas.
-
-
-Pavyzdys
---------
-
-Tarkime turime PostgreSQL duomenų bazę, kurioje yra lentelę pavadinimu
-`COUNTRY`, lentelėje yra tokie duomenys:
-
-=======  ========  ===========
-id       code      country
-=======  ========  ===========
-1        lt        Lietuva
-2        lv        Latvija
-3        ee        Estija
-=======  ========  ===========
-
-Šios lentelės duomenų aprašas atrodys taip:
-
-.. code-block:: yaml
-
-   # datasets/pavyzdys/sql.dataset.yml
-   type: dataset
-   name: datasets/pavyzdys/sql
-   resources:
-     sql:
-       type: sql
-       pull: postgresql://user@host/dbname
-
-.. code-block:: yaml
-
-   # datasets/pavyzdys/sql/salis.yml
-   type: model
-   name: datasets/pavyzdys/sql/salis
-   base:
-     model: geografija/salis
-     pk: kodas
-   source:
-     dataset: datasets/pavyzdys/sql
-     resource: sql
-     name: COUNTRY
-     pk: id
-   properties:
-     id:
-       type: integer
-       source: id
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: country
-
-.. code-block:: yaml
-
-   # geografija/salis.yml
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: country
-     
-
-Pavyzdyje duomenų šaltinis nurodytas tiesiogiai pačiame YAML faile, tačiau
-šaltinį galima nurodyti ir :term:`aplinkos kintamojo <aplinkos kintamasis>`
-pagabla::
-
-      SPINTA_DATASETS_DEFAULT_PAVYZDZIAI_SQL_DUOMBAZE=postgresql://user@host/dbname
-
-Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šiuos prieigos
-taškus::
-
-  /geografija/salis
-
-Atverta lentelė atrodys taip:
-
-====================================  ===========  =================
-_id                                   kodas        pavadinimas
-====================================  ===========  =================
-52d2c389-a909-4241-9a7c-91f108f7b0bb  lt           Lietuva
-9bbcbd34-7d9a-471c-a434-e73d63e01e01  lv           Latvija
-3680df71-aea6-490b-ab66-1b26e4923259  ee           Estija
-====================================  ===========  =================
-
-Taip pat galima pasiekti ir pirminius šaltinio duomenis::
-
-  /datasets/pavyzdys/sql/salis
+Taip pat skaitykite: :ref:`duomenų-bazės`, :ref:`duomenų-atranka`,
+:ref:`resource-type-sql`.
 
 
 CSV
 ===
 
-Kableliais atskirti failai.
+Tarkime turime tokius duomenis CSV formatu. Kad nebūtu viskas taip paprasta, CSV
+failai pateikti ZIP archyve, adresu \https://example.com/data.zip. Ir kad dar
+butų sunkiau, CSV faile reikšmės atskirtos ne įprastiniu `,` simboliu, o `;`
+simboliu. Archyvo viduje yra tokios lentelės:
 
-resurso šaltinis
-   Gali būti nenurodomas, o jei nurodomas naudojamas kaip URL bazė objekto
-   šaltiniui.
+=======  =========  ==============
+salys.csv
+==================================
+ID       KODAS      PAVADINIMAS
+100      lt         Lietuva
+101      lv         Latvija
+102      ee         Estija
+=======  =========  ==============
 
-objekto šaltinis
-   Pilnas URL iki CSV failo arba reliatyvus kelias iki CSV failo, jei nurodytas
-   resurso šaltinis.
-
-savybės šaltinis
-   Stulpelio pavadinimas iš CSV failo.
-
-
-Pavyzdys
---------
-
-Tarkime turime CSV failą, kuris pasiekiamas adresu
-`https://example.com/countries.csv`, failo turinys yra toks::
-
-   id,code,country
-   1,lt,Lietuva
-   2,lv,Latvija
-   3,ee,Estija
-
-Šio CSV failo duomenų aprašas atrodys taip:
-
-.. code-block:: yaml
-
-   # datasets/pavyzdys/csv.dataset.yml
-   type: dataset
-   name: datasets/pavyzdys/csv
-   resources:
-     csv:
-       type: csv
-       pull: https://example.com/
+=======  =========  ==============
+miestai.csv
+==================================
+ID       ŠALIS      PAVADINIMAS
+204      100        Vilnius
+205      100        Kaunas
+206      100        Klaipėda
+207      101        Ryga
+208      102        Talinas
+=======  =========  ==============
 
 
-.. code-block:: yaml
+:term:`Duomenų aprašas <DSA>` atrodys taip:
 
-   # datasets/pavyzdys/csv/salis.csv
-   type: model
-   name: datasets/pavyzdys/csv/salis
-   base:
-     model: geografija/salis:
-     pk: kodas
-   source:
-     dataset: datasets/pavyzdys/csv
-     resource: csv
-     name: countries.csv
-     pk: id
-   properties:
-     id:
-       type: integer
-       source: id
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: country
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+| id | d | r | b | m | property | type    | ref     | source                        | prepare             | access  |
++====+===+===+===+===+==========+=========+=========+===============================+=====================+=========+
+|  1 | datasets/example/csv     |         |         |                               |                     |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  2 |   |   |   |   |          | param   | data    | \https://example.com/data.zip | extract(self, zip)  |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  3 |   | salys                | csv     |         | salys.csv                     | data[self].sep(";") |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  4 |   |   |   | country      |         | id      |                               | code="lt"           |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  5 |   |   |   |   | id       | integer |         | ID                            |                     | private |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  6 |   |   |   |   | code     | string  |         | KODAS                         |                     | open    |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  7 |   |   |   |   | name     | string  |         | PAVADINIMAS                   |                     | open    |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  8 |   | miestai              | csv     |         | miestai.csv                   | data[self].sep(";") |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+|  9 |   |   |   | city         |         | id      |                               | country.code="lt"   |         |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+| 10 |   |   |   |   | id       | integer |         | ID                            |                     | private |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+| 11 |   |   |   |   | country  | ref     | country | ŠALIS                         |                     | open    |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
+| 12 |   |   |   |   | name     | string  |         | PAVADINIMAS                   |                     | open    |
++----+---+---+---+---+----------+---------+---------+-------------------------------+---------------------+---------+
 
-.. code-block:: yaml
+Priešingai nei RDBVS atveju, kiekvienas CSV failas aprašomas atskiroje
+:data:`resource` dimensijos kontekste. Kadangi viename CSV faile gali būti
+pateikta tik viena lentelė, tai :data:`model.source` yra tuščias.
 
-   # geografija/salis.yml
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
+Kadangi CSV failai yra sudėti į ZIP archyvą, mums nurodyti, kad prieš skaitant
+duomenis, CSV failai turi būti išskleisti iš archyvo, tam naudojam
+:func:`extract` funkciją. Kadangi išskleisti failai bus naudojami aprašant kelis
+:data:`resource`, tai :data:`dataset` dimensijos kontekste įtraukiam
+:data:`param` pavadinimu `data`, kurį naudosim aprašant tiek `salys`, teik
+`miestai` :data:`resource`.
 
-Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
-tašką::
+Jei CSV failai nebūtų suarchyvuoti, mums uštektų nurodyti tik URL iki CSV failo,
+tačiau, skaitant iš archyvo, reikia panaudoti :func:`getitem` funkciją nurodant,
+kad :data:`source` stulpelyje įrašyta reikšmė yra `data` parametrui priskirto
+archyvo viduje.
 
-   /geografija/salis
+Ir paskutinis dalykas, prieš skaitant duomenis, :func:`sep` iškvietimas,
+nurodant, kad CSV faile naudojamas nestandartinis reikšmių skirtukas.
 
-Atverta lentelė atrodys taip:
+Visa kita aprašoma lygiai taip pat, kaip ir SQL atveju.
 
-====================================  ===========  =================
-_id                                   kodas        pavadinimas
-====================================  ===========  =================
-52d2c389-a909-4241-9a7c-91f108f7b0bb  lt           Lietuva
-9bbcbd34-7d9a-471c-a434-e73d63e01e01  lv           Latvija
-3680df71-aea6-490b-ab66-1b26e4923259  ee           Estija
-====================================  ===========  =================
-
-Taip pat galima pasiekti ir pirminius šaltinio duomenis::
-
-  /datasets/pavyzdys/csv/salis
+Kuo duomenų šaltinis yra prastesnio brandos lygio, tuo daugiau pastangų reikia
+įdėti juos aprašant. Tačiau turint tokį aprašą, duomenų naudotojams gauti
+duomenis bus paprasčiau.
 
 
 JSON
 ====
 
-resurso šaltinis
-   URL iki JSON failo.
-
-objekto šaltinis
-   Kelias iki konkretaus elemento JSON duomenyse. Pavyzdžiui, jei turime tokį
-   JSON failą:
-
-   .. code-block:: json
-
-      {
-         "foo": {
-            "bar": [
-               {"baz": 1},
-               {"baz": 2},
-               {"baz": 3}
-            ]
-         }
-      }
-
-   Tada objekto šaltinis gali būti `foo.bar`, kas nurodo, kad skaitomas tik
-   `foo.bar` esantis masyvas.
-
-   Jei objekto šaltinis nenurodytas, tada savybės skaitomos iš šakninio JSON
-   objekto.
-
-savybės šaltinis
-   JSON objekto atributas.
+Tarkime JSON atveju turime API kuris atrodo taip:
 
 
-Pavyzdys
---------
+::
 
-Tarkime turime JSON failą, kuris pasiekiamas adresu
-`https://example.com/countries.json`, failo turinys yra toks:
+    https://example.com/salys/
 
 .. code-block:: json
 
-   {
-       "countries": [
-           {"id": 1, "code": "lt", "name": "Lietuva"},
-           {"id": 1, "code": "lv", "name": "Latvija"},
-           {"id": 1, "code": "ee", "name": "Estija"}
-       ]
-   }
+      {
+         "šalys": [
+            {"id": 100, "kodas": "lt", "šalis": "Lietuva"},
+            {"id": 101, "kodas": "lv", "šalis": "Latvija"},
+            {"id": 102, "kodas": "ee", "šalis": "Estija"}
+         ]
+      }
 
-Šio JSON failo duomenų aprašas atrodys taip:
+::
 
-.. code-block:: yaml
+    https://example.com/miestai/lt
 
-   # datasets/pavyzdys/json.dataset.yml
-   type: dataset
-   name: datasets/pavyzdys/json
-   resources:
-     json:
-       type: json
-       pull: https://example.com/countries.json
+.. code-block:: json
 
-.. code-block:: yaml
+      {
+         "miestai": [
+            {"id": 204, "miestas": "Vilnius"},
+            {"id": 205, "miestas": "Kaunas"},
+            {"id": 206, "miestas": "Klaipėda"}
+         ]
+      }
 
-   # datasets/pavyzdys/json/salis.yml
-   type: model
-   name: datasets/pavyzdys/json/salis
-   base:
-     model: geografija/salis:
-     pk: kodas
-   source:
-     dataset: datasets/pavyzdys/json
-     resource: json
-     name: countries
-     pk: id
-   properties:
-     id:
-       type: integer
-       source: id
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: name
+::
 
-.. code-block:: yaml
+    https://example.com/miestai/lv
 
-   # geografija/salis.yml
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
+.. code-block:: json
 
-Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
-tašką::
+      {
+         "miestai": [
+            {"id": 207, "miestas": "Ryga"}
+         ]
+      }
 
-   /geografija/salis
+::
 
-Atverta lentelė atrodys taip:
+    https://example.com/miestai/ee
 
-====================================  ===========  =================
-_id                                   kodas        pavadinimas
-====================================  ===========  =================
-52d2c389-a909-4241-9a7c-91f108f7b0bb  lt           Lietuva
-9bbcbd34-7d9a-471c-a434-e73d63e01e01  lv           Latvija
-3680df71-aea6-490b-ab66-1b26e4923259  ee           Estija
-====================================  ===========  =================
+.. code-block:: json
 
-Taip pat galima pasiekti ir pirminius šaltinio duomenis::
+      {
+         "miestai": [
+            {"id": 208, "miestas": "Talinas"}
+         ]
+      }
 
-  /datasets/pavyzdys/json/salis
+Tokio API duomenų struktūrą galima aprašyti sekančios :term:`DSA` lentelės
+pagalba:
+
+
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+| id | d | r | b | m | property | type    | ref     | source                                      | prepare           | access  |
++====+===+===+===+===+==========+=========+=========+=============================================+===================+=========+
+|  1 | datasets/example/json    |         |         |                                             |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  2 |   | salys                | json    |         | \https://example.com/salys/                 |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  3 |   |   |   | country      |         | id      | šalys                                       |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  4 |   |   |   |   | id       | integer |         | id                                          |                   | private |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  5 |   |   |   |   | code     | string  |         | kodas                                       |                   | open    |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  6 |   |   |   |   | name     | string  |         | šalis                                       |                   | open    |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  7 |   | miestai              | json    |         | \https://example.com/miestai/{country.code} |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  8 |   |   |   |   |          | param   | country | country                                     |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+|  9 |   |   |   | city         |         | id      | miestai                                     |                   |         |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+| 10 |   |   |   |   | id       | integer |         | id                                          |                   | private |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+| 11 |   |   |   |   | country  | ref     | country |                                             | param(country).id | open    |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+| 12 |   |   |   |   | name     | string  |         | miestas                                     |                   | open    |
++----+---+---+---+---+----------+---------+---------+---------------------------------------------+-------------------+---------+
+
+Šį kartą turime reikalą su dinaminiu API, kuris neleidžia gauti visų miestų
+vienos užklausos pagalba. Norint gauti visus miestus, pirmiausia gauti visų
+šalių kodus, o tada turint šalies kodą, galima gauti tos šalies miestų duomenis.
+
+Kad užduotis nebūtų per daug lengva, šį kartą aprašome visų šalių duomenis,
+ne tik Lietuvos.
+
+:data:`model.source` stulpelyje nurodyti JSON atributų pavadinimai, iš kurių
+skaitomi duomenys.
+
+8-oje eilutėje, :data:`model` kontekste įtrauktas :data:`pram` pavadinimu
+`country`, kuris generuoja parametrus, skaitant duomenis iš 3-ioje eilutėje
+aprašyto `country` :term:`modelio <modelis>`. Tokiu būdu gauname visų šalių
+sąrašą ir 7-oje eilutėje :data:`resource.source` galime nurodyti URI su šalies
+kodu, gautu iš `country` :data:`param`.
+
+11-oje eilutėje, `country` reikšmę gauname iš `country` parametro, kadangi
+miesto duomenyse, nei miesto kodo, nei `id` nėra.
+
+Galiausiai gauname tokius duomenis:
+
+====  ===========  =================
+datasets/example/json/country
+------------------------------------
+_id   code         name
+====  ===========  =================
+1     lt           Lietuva
+2     lv           Latvija
+3     ee           Estija
+====  ===========  =================
+
+====  ===========  =================
+datasets/example/json/city
+------------------------------------
+_id   country      name
+====  ===========  =================
+3     1            Vilnius
+4     1            Kaunas
+5     1            Klaipėda
+6     2            Ryga
+7     3            Talinas
+====  ===========  =================
 
 
 XML
 ===
-
-resurso šaltinis
-   URL iki XML failo.
-
-objekto šaltinis
-   XPath užklausa iki elemento iš kurio norime imti duomenis.
-
-savybės šaltinis
-   XPath užklausa, kuri vykdoma objekto šaltinio elementų kontekste.
-
-
-Pavyzdys
---------
 
 Tarkime turime XML failą, kuris pasiekiamas adresu
 `https://example.com/countries.xml`, failo turinys yra toks:
 
 .. code-block:: xml
 
-   <root>
-      <country id="1" code="lt">Lietuva</country>
-      <country id="2" code="lv">Latvija</country>
-      <country id="3" code="ee">Estija</country>
-   </root>
+    <root>
+        <country id="100" code="lt" name="Lietuva">
+            <city id="204" name="Vilnius" />
+            <city id="205" name="Kaunas" />
+            <city id="206" name="Klaipėda" />
+        </country>
+        <country id="101" code="lv" name="Latvija">
+            <city id="207" name="Ryga" />
+        </country>
+        <country id="102" code="ee" name="Estija">
+            <city id="208" name="Talinas" />
+        </country>
+    </root>
 
-Šio XML failo duomenų aprašas atrodys taip:
+Šio XML failo :term:`DSA` atrodys taip:
 
-.. code-block:: yaml
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+| id | d | r | b | m | property | type    | ref     | source                             | prepare | access  |
++====+===+===+===+===+==========+=========+=========+====================================+=========+=========+
+|  1 | datasets/example/xml     |         |         |                                    |         |         |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  2 |   | countries            | xml     |         | \https://example.com/countries.xml |         |         |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  3 |   |   |   | country      |         | id      | /root/country                      |         |         |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  4 |   |   |   |   | id       | integer |         | @id                                |         | private |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  5 |   |   |   |   | code     | string  |         | @code                              |         | open    |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  6 |   |   |   |   | name     | string  |         | @name                              |         | open    |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+|  9 |   |   |   | city         |         | id      | /root/country/city                 |         |         |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+| 10 |   |   |   |   | id       | integer |         | @id                                |         | private |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+| 11 |   |   |   |   | country  | ref     | country | parent::country/@id                |         | open    |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
+| 12 |   |   |   |   | name     | string  |         | @name                              |         | open    |
++----+---+---+---+---+----------+---------+---------+------------------------------------+---------+---------+
 
-   # datasets/pavyzdys/json.dataset.yml
-   type: dataset
-   name: datasets/pavyzdys/xml
-   resources:
-     xml:
-       type: xml
-       pull: https://example.com/countries.xml
+Šiuo atveju, visi duomenys pateikti viename XML faile, todėl aprašomas tik
+vienas :data:`resource`. :data:`model.source` ir :data:`property.source`
+stulpelyje pateikiamas `XPath <https://en.wikipedia.org/wiki/XPath>`_ reikšmė,
+kuri, jei :data:`prepare` neužpildytas, vykdoma su :func:`xpath` funkcija.
 
-.. code-block:: yaml
+Galutiniame rezultate gauname tokius duomenis:
 
-   # datasets/pavyzdys/json/salis.yml
-   type: model
-   name: datasets/pavyzdys/json/salis
-   base:
-     model: geografija/salis:
-     pk: kodas
-   source:
-     dataset: datasets/pavyzdys/json
-     resource: json
-     name: xpath('/root/country')
-     pk: id
-   properties:
-     id:
-       type: integer
-       source: id
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: text()
+====  ===========  =================
+datasets/example/xml/country
+------------------------------------
+_id   code         name
+====  ===========  =================
+1     lt           Lietuva
+2     lv           Latvija
+3     ee           Estija
+====  ===========  =================
 
-.. code-block:: yaml
-
-   # geografija/salis.yml
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
-
-Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
-tašką::
-
-   /geografija/salis
-
-Atverta lentelė atrodys taip:
-
-====================================  ===========  =================
-_id                                   kodas        pavadinimas
-====================================  ===========  =================
-52d2c389-a909-4241-9a7c-91f108f7b0bb  lt           Lietuva
-9bbcbd34-7d9a-471c-a434-e73d63e01e01  lv           Latvija
-3680df71-aea6-490b-ab66-1b26e4923259  ee           Estija
-====================================  ===========  =================
-
-Taip pat galima pasiekti ir pirminius šaltinio duomenis::
-
-  /datasets/pavyzdys/xml/salis
+====  ===========  =================
+datasets/example/xml/city
+------------------------------------
+_id   country      name
+====  ===========  =================
+3     1            Vilnius
+4     1            Kaunas
+5     1            Klaipėda
+6     2            Ryga
+7     3            Talinas
+====  ===========  =================
 
 
 XLSX
 ====
 
-resurso šaltinis
-   URL iki XLSX failo.
+Tarkime yra XLSX failas, patalpintas adresu `https://example.com/SALYS.XLSX`,
+kuriame yra tokios dvi lentelės:
 
-objekto šaltinis
-   Skaičiuoklės lapo pavadinimas.
+=========  ==============
+ŠALYS
+=========================
+KODAS      PAVADINIMAS
+lt         Lietuva
+lv         Latvija
+ee         Estija
+=========  ==============
 
-savybės šaltinis
-   Skaičiuoklės lentelės stulpelio pavadinimas.
+=========  ==============
+MIESTAI
+=========================
+ŠALIS      PAVADINIMAS
+lt         Vilnius
+lt         Kaunas
+lt         Klaipėda
+lv         Ryga
+ee         Talinas
+=========  ==============
+
+:term:`Duomenų aprašas <DSA>` atrodys taip:
+
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+| id | d | r | b | m | property    | type    | ref     | source                          | prepare           | access  |
++====+===+===+===+===+=============+=========+=========+=================================+===================+=========+
+|    | datasets/example/sql        |         |         |                                 |                   |         |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   | lentele                 | xlsx    |         | \https://example.com/SALYS.XLSX |                   |         |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   | country         |         | code    | ŠALYS                           |                   |         |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   |   | code        | string  |         | KODAS                           |                   | open    |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   |   | name        | string  |         | PAVADINIMAS                     |                   | open    |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   | city            |         | id      | MIESTAI                         |                   |         |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   |   | id          | array   |         |                                 | country, name     | private |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   |   | country     | ref     | country | ŠALIS                           |                   | open    |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+|    |   |   |   |   | name        | string  |         | PAVADINIMAS                     |                   | open    |
++----+---+---+---+---+-------------+---------+---------+---------------------------------+-------------------+---------+
+
+Šiuo atveju, turime problemą, kad lentelėje nėra pateikti aiškūs
+identifikatoriai. Šalių atveju, kaip identifikatorių galima naudoti `KODAS`
+stulpelį, tačiau miestų atveju, darant prielaidą, kad skirtingose šalyse gali
+būti miestai tokiais pačiai pavadinimais, pirminį raktą formuojame iš šalies
+kodo ir miesto pavadinimo, tam įtraukiame naują `id` stulpelį, kuris kuriamas iš
+`country` ir `name` reikšmių.
 
 
-Pavyzdys
---------
+Galutiniame rezultate gauname tokius duomenis.
 
-Tarkime turime XLSX failą, kuris pasiekiamas adresu
-`https://example.com/countries.xlsx`, šiame skaičiuoklės faile yra lapas
-pavadinimu `COUNTRIES`, o lapo turinys atrodo taip:
+====  ===========  =================
+datasets/example/xml/country
+------------------------------------
+_id   code         name
+====  ===========  =================
+1     lt           Lietuva
+2     lv           Latvija
+3     ee           Estija
+====  ===========  =================
 
-=======  ========  ===========
-id       code      country
-=======  ========  ===========
-1        lt        Lietuva
-2        lv        Latvija
-3        ee        Estija
-=======  ========  ===========
+====  ===========  =================
+datasets/example/xml/city
+------------------------------------
+_id   country      name
+====  ===========  =================
+3     1            Vilnius
+4     1            Kaunas
+5     1            Klaipėda
+6     2            Ryga
+7     3            Talinas
+====  ===========  =================
 
-Šios lentelės duomenų aprašas atrodys taip:
+Spinta
+======
 
-.. code-block:: yaml
+Last data source example using same data source to transfer all country and
+city data from all other data sources into on globale data source under
 
-   # datasets/pavyzdys/xlsx.dataset.yml
-   type: dataset
-   name: datasets/pavyzdys/xlsx
-   resources:
-     xlsx:
-       type: xlsx
-       pull: https://example.com/countries.xlsx
+Paskutinis pavyzdys atliekant transformaciją tos pačios duomenų saugyklos
+viduje. Visi duomenys aukščiau aprašytuose pavyzdžiuose bus apjungiami ir
+perkelti į standartų vardų erdvę. Tokiu būdu, turėsime vieną aiškią duomenų
+struktūrą, visiems iki šilo aprašytiems duomenų šaltiniams.
 
-.. code-block:: yaml
+Tokia transformacijų :term:`DSA` atrodo taip:
 
-   # datasets/pavyzdys/xlsx/salis.yml
-   type: model
-   name: datasets/pavyzdys/xlsx/salis
-   base:
-     model: geografija/salis:
-     pk: kodas
-   source:
-     dataset: datasets/pavyzdys/xlsx
-     resource: json
-     name: COUNTRIES
-     pk: id
-   properties:
-     id:
-       type: integer
-       source: id
-     kodas:
-       type: string
-       source: code
-     pavadinimas:
-       type: string
-       source: country
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+| id | d | r | b | m | property    | type    | ref           | source                     |
++====+===+===+===+===+=============+=========+===============+============================+
+|    |   |   |   | geo/country     |         |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | code        | string  |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | name        | string  |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   | geo/city        |         |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | country     | ref     | country       |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | name        | string  |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    | transformations/geo         |         |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   | data                    | spinta  |               | \https://example.com/      |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   |             | param   | source        | sql                        |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   |             |         |               | csv                        |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   |             |         |               | json                       |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   |             |         |               | xml                        |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   |             |         |               | xlsx                       |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   | /geo/country        | proxy   | code          |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   | country         |         |               | /datasets/example/{source} |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | code        | string  |               | code                       |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | name        | string  |               | name                       |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   | /geo/city           | proxy   | country, name |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   | city            |         |               |                            |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | country     | ref     | country       | country                    |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
+|    |   |   |   |   | name        | string  |               | name                       |
++----+---+---+---+---+-------------+---------+---------------+----------------------------+
 
-.. code-block:: yaml
+Pirmiausiai apibrėžiame `geo` standarto duomenų struktūrą, toliau nurodome
+duomenų šaltinį `spinta`, kurio :data:`resource.source` sutampa su saugyklos
+adresu.
 
-   # geografija/salis.yml
-   type: model
-   name: geografija/salis
-   properties:
-     kodas:
-       type: string
-     pavadinimas:
-       type: string
+`source` parametrui priskiriame sąrašą visų iki šiol aprašytų duomenų rinkinių
+ir šio parametro pagalba skaitome visų šaltinių duomenis ir :data:`base.type`
+`proxy` pagalba siunčiame visus juos į `geo` vardų erdvę.
 
-Rezultate gauname atvertus duomenis, kuriuos galima pasiekti per šį prieigos
-tašką::
+:data:`base.ref` stulpelyje nurodome, kaip bus identifikuojami :term:`objektai
+<objektas>`, kad neatsirastu dublikatų.
 
-   /geografija/salis
+Galutiniame rezultate, gausime tokius duomenis:
 
-Atverta lentelė atrodys taip:
+====  ===========  =================
+geo/country
+------------------------------------
+_id   code         name
+====  ===========  =================
+1     lt           Lietuva
+2     lv           Latvija
+3     ee           Estija
+====  ===========  =================
 
-====================================  ===========  =================
-_id                                   kodas        pavadinimas
-====================================  ===========  =================
-52d2c389-a909-4241-9a7c-91f108f7b0bb  lt           Lietuva
-9bbcbd34-7d9a-471c-a434-e73d63e01e01  lv           Latvija
-3680df71-aea6-490b-ab66-1b26e4923259  ee           Estija
-====================================  ===========  =================
-
-Taip pat galima pasiekti ir pirminius šaltinio duomenis::
-
-  /datasets/pavyzdys/xlsx/salis
+====  ===========  =================
+geo/city
+------------------------------------
+_id   country      name
+====  ===========  =================
+3     1            Vilnius
+4     1            Kaunas
+5     1            Klaipėda
+6     2            Ryga
+7     3            Talinas
+====  ===========  =================
