@@ -1,0 +1,14 @@
+.. default-role:: literal
+.. _duomenų-struktūra:
+
+Duomenų struktūra
+#################
+
+:data:`level` = 2.
+
+Jei duomenys turi aiškią struktūrą ir pateikta struktūra nesunkiai nuskaitoma,
+tačiau formatas nėra standartinis, tada tokiems duomenims suteikiama
+:data:`level` reikšmė `2`.
+
+Kalbant apie nestandartinius formatus, turima mintyje, ne tik duomenų
+šaltinio formatą, bet ir reikšmių formatą.

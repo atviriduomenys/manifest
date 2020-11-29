@@ -1,0 +1,470 @@
+.. default-role:: literal
+.. _žodynai:
+
+Žodynai
+#######
+
+:data:`level` = 5.
+
+.. _norm:
+
+Normalizavimas
+==============
+
+:term:`Duomenų normalizavimas <normalizavimas>` iš esmės yra duomenų
+pasikartojimo mažinimas. Štai pavyzdys, kaip atrodo denormalizuoti duomenys:
+
+===================  ===================
+\https://example.com/1/miestai.csv
+----------------------------------------
+šalis                miestas
+===================  ===================
+Lietuva              Vilnius
+Lietuva              Kaunas
+Lietuva              Klaipėda
+===================  ===================
+
+Kaip matote, stulpelyje `šalis` daug kartų pakartota reikšmė `Lietuva`. Toks
+duomenų pasikartojimas kelia daug problemų, jei duomenys keičiasi arba tas pats
+objektas gali būti pavadintas keliais skirtingais pavadinimais. Tarkime, turime
+duomenis iš kito tiekėjo, kurie atrodo taip:
+
+===================  ==============
+\https://example.com/2/miestai.csv
+-----------------------------------
+šalis                miestas
+===================  ==============
+Lietuvos respublika  Šiauliai
+Lietuvos respublika  Panevėžys
+===================  ==============
+
+Matome, kad šioje vietoje ta pati šalis pavadinta skirtingai.
+
+Tokias besikeičiančių ir pasikartojančių duomenų problemas padeda spręsti
+unikalūs identifikatoriai arba pirminiai raktai.
+
+Norint normalizuoti duomenis, mūsų lentelę reikia išskaidyti į dvi atskiras
+lenteles:
+
+**Šalys**
+
+==  =======
+id  šalis
+==  =======
+1   Lietuva
+==  =======
+
+**Miestai**
+
+==  =====  =========
+id  šalis  miestas
+==  =====  =========
+1   1      Vilnius
+2   1      Kaunas
+3   1      Klaipėda
+4   1      Šiauliai
+5   1      Panevėžys
+==  =====  =========
+
+Turinti tokią normalizuotą duomenų bazę, galima nesunkiai keisti šalies
+pavadinimą, galima į šalies lentelę įtraukti daugiau atributų ir visa tai
+užtenka padaryti vienoje vietoje, kadangi šalies pirminis raktas niekada
+nesikeičia.
+
+Pirminius duomenis visada rekomenduojama saugoti normalizuotoje formoje, o
+denormalizuotos duomenų bazės kuriamos normalizuotos duomenų bazės pagrindu,
+jei norima atlikti duomenų analizę išvengiant skirtingų lentelių jungimo
+kainos.
+
+:term:`Duomenų struktūrų <DSA>` aprašai turėtų būti kiek įmanoma normalizuoti.
+Jei pirminis duomenų šaltinis yra denormalizuotas, duomenų aprašuose nesunkiai
+galima atlikti normalizavimą, su sąlyga, jei įmanoma unikaliai identifikuoti
+objektus.
+
+Mūsų aprašytą miestų pavyzdį normalizuoti galima šio duomenų struktūros
+aprašo pagalba:
+
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+| d | r | b | m | property | type   | ref       | source                             | prepare                     |
++===+===+===+===+==========+========+===========+====================================+=============================+
+| datasets/example/norm    |        |           |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   | miestai1             | csv    |           | \https://example.com/1/miestai.csv |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   | Country      |        |           |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | name     | string |           | šalis                              |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   | City         |        |           |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | name     | string |           | miestas                            |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | country  | ref    | country   | šalis                              |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   | miestai2             | csv    |           | \https://example.com/2/miestai.csv |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   |          | choice | country   | Lietuvos respublika                | "Lietuva"                   |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   | Country          | proxy  | name      |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   | Country2     |        | name      |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | name     |        |           | šalis                              | choose(self, self, country) |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   | City             | proxy  | name      |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   | City2        |        | name      |                                    |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | name     | string |           | miestas                            |                             |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+|   |   |   |   | country  | ref    | country   | šalis                              | choose(self, self, country) |
++---+---+---+---+----------+--------+-----------+------------------------------------+-----------------------------+
+
+Iš šio pavyzdžio matome, kad miestų duomenys iš pirmojo šaltinio `miestai1`
+skaitomi du kartus ir paskirstomi dviejose lentelėse. Pirmą kartą skaitome tik
+šalis, generuojant pirminį raktą iš šalies pavadinimo, antrą kartą skaitome tik
+miestus ir prijungiame šalį panaudojant šalies pirminį raktą.
+
+Antram duomenų šaltiniui darome tą patį, tik normalizuojame šalies pavadinimus
+panaudodami :data:`choice` reikšmių normalizavimo sąrašą.
+
+Abiejų duomenų šaltinių modeliai turi vieną `country` bazę ir vieną `city`
+bazę. O kadangi :data:`base.type` yra `proxy`, tai duomenų saugykloje, bus
+saugoma tik viena lentelė, bendra abiem šaltiniams. Šaltinių duomenys š
+bazines lenteles bus apjungiami sutapatinant objektus, pagal miesto ir šalies
+pavadinimus.
+
+Galutiniame rezultate gauname tokias lenteles:
+
+====  =======================
+datasets/example/norm/country
+-----------------------------
+_id   pavadinimas
+====  =======================
+1     Lietuva
+====  =======================
+
+
+====  =====  =============
+datasets/example/norm/city
+--------------------------
+_id   šalis  miestas
+====  =====  =============
+1     1      Vilnius
+2     1      Kaunas
+3     1      Klaipėda
+4     1      Šiauliai
+5     1      Panevėžys
+====  =====  =============
+
+
+Lentelių apjungimas
+===================
+
+Kartais yra poreikis, skirtingas šaltinio lenteles apjungti į vieną.
+Pavyzdžiui:
+
+
+=======  ===========
+APSKRITYS
+--------------------
+id       pavadinimas
+=======  ===========
+1        Vilniaus
+2        Kauno
+3        Klaipėdos
+=======  ===========
+
+
+=======  =========  ===============
+SAVIVALDYBES
+-----------------------------------
+id       apskritis  pavadinimas
+=======  =========  ===============
+1        1          Vilniaus miesto
+2        1          Vilniaus rajono
+3        1          Trakų rajono
+=======  =========  ===============
+
+
+Kadangi skirtingos šalis naudoja skirtingus administracinius suskirstymus, tai
+mes norime normalizuoti šias lenteles, ir padaryti iš jų vieną administracijų
+lentelė.
+
+Tarkime, apskrities administracinis vienetas bus žymimas skaičiumi `1`, o
+savivaldybės skaičiumi `2`. Turime dvi konstantas administraciniam vienetui.
+
+Mūsų pradinė inventorizacijos lentelė atrodys taip:
+
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+| id | d | r | b | m | property        | type    | ref       | source       | level |
++====+===+===+===+===+=================+=========+===========+==============+=======+
+|    | datasets/gov/dc/administracijos |         |           |              |       |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   | sql                         |         |           |              |       |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   | Apskritys           |         | id        | APSKRITYS    |       |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   |   | id              | integer |           | id           | 4     |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |           | pavadinimas  | 2     |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   | Savivaldybes        |         | id        | SAVIVALDYBES |       |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   |   | id              | integer |           | id           | 4     |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   |   | apskritis       | ref     | apskritys | apskritis    | 4     |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |           | pavadinimas  | 2     |
++----+---+---+---+---+-----------------+---------+-----------+--------------+-------+
+
+Mums reikia pertvarkyti inventorizacijos lentelę taip, kad gautume tokį duomenų
+pavidalą:
+
+=======  =========  =========  ===============
+ADMINISTRACIJOS
+----------------------------------------------
+id       priklauso  lygis      pavadinimas
+=======  =========  =========  ===============
+1        NULL       1          Vilniaus
+2        NULL       1          Kauno
+3        NULL       1          Klaipėdos
+4        1          2          Vilniaus miesto
+5        1          2          Vilniaus rajono
+6        1          2          Trakų rajono
+=======  =========  =========  ===============
+
+Kad tai gautume, mums reikia atlikti tokius pakeitimus:
+
+- Primiausiai, apsirašome naują modelį `administracijos`, kadangi galutiniame
+  rezultate norime turėti viską vienoje lentelėje.
+
+- Tada nurodome, kad `apskritys` ir `savivaldybes` yra modelio
+  `administracijos` dalis. Tai reiškia, kad galiausiai duomenys iš `apskritys`
+  ir `savivaldybes` bus apjungti į vieną modelį `administracijos`.
+
+- Keičiame lauko `savivaldybes.apskritis` pavadinimą į `priklauso`, kad  lauko
+  pavadinimas sutaptu su `administracijos.priklauso`.
+
+  Kai du modeliai siejamie per `base` lauką, apjungtieji modeliai tampa
+  vieno modelio dalimi ir turi tokias pačias savybes, kaip ir bazinis modelis.
+  Šiuo atveju bazinis modelis yra `administracijos`.
+
+- Paskutinis pakeitimas, tiek apskritims, tiek savivaldybėms pridėti `lygis`
+  savybę nurodant konstantas `1` ir `2`.
+
+Po pertvarkymų, mūsų inventorizacijos lentelė turėtų atrodyti taip:
+
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+| id | d | r | b | m | property        | type    | ref             | source       | level |
++====+===+===+===+===+=================+=========+=================+==============+=======+
+|    | datasets/gov/dc/administracijos |         |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   | sql                         |         |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   | Administracijos     |         |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | priklauso       | ref     | administracijos |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | lygis           | integer |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   | Administracijos         | proxy   |                 |              |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   | Apskritys           |         | id              | APSKRITYS    |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | id              | integer |                 | id           | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | lygis           | integer |                 | 1            | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |                 | pavadinimas  | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   | Savivaldybes        |         | id              | SAVIVALDYBES |       |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | id              | integer |                 | id           | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | priklauso       | ref     | apskritys       | apskritis    | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | lygis           | integer |                 | 2            | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |                 | pavadinimas  | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+--------------+-------+
+
+`administracijos`  modelis neturi `level` reikšmių, taip yra todėl, kad
+`administracijos` modelis yra išvestinis ir neturi tiesioginio šaltinio, o
+duomenų brandos lygis nurodomas duomenų laukams kurie tiesiogiai gaunami iš tam
+tikro duomenų šaltinio.
+
+Kadangi `base` `administracijos` eilutėje `ref` stulpelio yra reikšmė, tai
+susiejimas bus daromas pagal vidinį modelio identifikatorių. Tai reiškia, kad
+modeliai `apskritys` ir `savivaldybes` nepersidengs.
+
+`base` `administracijos` eilutėje `type` sulpelio reikšmė `proxy` reiškia,
+kad modeliai `apskritys` ir `savivaldybes` jokių duomenų nesaugos, o veiks kaip
+perlaidos režimu ir duomenis rašys tik į `administracijos` modelį.
+
+
+Lentelės skaidymas
+==================
+
+Prieš tai aptarėme kaip apjungti kelias lenteles į vieną modelį. O dabar
+aptarsime, kaip daryti atvirkštinį procesą, kaip skaidyti vieną lentelę į kelis
+modelius.
+
+Tarkime turime tokią lentelę:
+
+=======  =========  =========  ===============
+ADMINISTRACIJOS
+----------------------------------------------
+id       priklauso  lygis      pavadinimas
+=======  =========  =========  ===============
+1        NULL       1          Vilniaus
+2        NULL       1          Kauno
+3        NULL       1          Klaipėdos
+4        1          2          Vilniaus miesto
+5        1          2          Vilniaus rajono
+6        1          2          Trakų rajono
+=======  =========  =========  ===============
+
+Norime šią lentelę suskaidyti į dvi atskiras lenteles. Įrašai, kurių `lygis`
+reikšmė yra `1` turėtų keliauti į apskričių modelį, o įrašai, kurių `lygis`
+reikšmė yra `2` turėtų keliauti į savivaldybių modelį.
+
+Pirminė inventorizacijos lentelė atrodo taip:
+
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+| id | d | r | b | m | property        | type    | ref             | source          | level |
++====+===+===+===+===+=================+=========+=================+=================+=======+
+|    | datasets/gov/dc/administracijos |         |                 |                 |       |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   | sql                         |         |                 |                 |       |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   |   |   | Administracijos     |         | id              | ADMINISTRACIJOS |       |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   |   |   |   | id              | integer |                 | id              | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   |   |   |   | priklauso       | ref     | administracijos | priklauso       | 4     |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   |   |   |   | lygis           | integer |                 | lygis           | 2     |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+|    |   |   |   |   | pavadinimas     | string  |                 | pavadinimas     | 2     |
++----+---+---+---+---+-----------------+---------+-----------------+-----------------+-------+
+
+Tam, kad suskaidyti vienos lentelės duomenis į kelis skirtingus modelius, mums
+reikia panaudoti filtrus lentelės lygmenyje. Metaduomenys lentelės lygmenyje
+taikomi tada, kai `property` reikšmė yra tuščia.
+
+`source` stulpelyje galima nurodyti užklausą duomenims filtruoti. Duomenų
+filtras pateikiamas tarp `[]` skliaustelių.
+
+Šiuo atveju, mums reikia filtruoti duomenis pagal stulpelio `lygis` reikšmes.
+
+Galutinė inventorizacijos lentelė, po pertvarkymų atrodo taip:
+
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+| id | d | r | b | m | property        | type    | ref       | source          | prepare | level |
++====+===+===+===+===+=================+=========+===========+=================+=========+=======+
+|    | datasets/gov/dc/administracijos |         |           |                 |         |       |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   | sql                         |         |           |                 |         |       |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   | Apskritys           |         | id        | ADMINISTRACIJOS | lygis=1 |       |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   |   | id              | integer |           | id              |         | 4     |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   |   | pavadinimas     | string  |           | pavadinimas     |         | 4     |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   | Savivaldybes        |         | id        | ADMINISTRACIJOS | lygis=2 |       |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   |   | id              | integer |           | id              |         | 4     |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   |   | apskritis       | ref     | apskritys | priklauso       |         | 4     |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+|    |   |   |   |   | pavadinimas     | string  |           | pavadinimas     |         | 4     |
++----+---+---+---+---+-----------------+---------+-----------+-----------------+---------+-------+
+
+
+Vieningo žodyno naudojimas
+==========================
+
+Tam, kad iš pirminio duomenų chaoso padaryti aukščiausio brandos lygio atvirus
+duomenis, būtina išversti `model` ir `property` stulpelių pavadinimus į
+pavadinimus iš vieningo žodyno.
+
+Kaip pavyzdį galime imti tokius duomenis:
+
+=======  ========  ===========
+COUNTRIES
+------------------------------
+id       code      country
+=======  ========  ===========
+1        lt        Lietuva
+2        lv        Latvija
+3        ee        Estija
+=======  ========  ===========
+
+Šiuose duomenyse yra šalių kodai ir pavadinimai. Kadangi, tai gan dažnai
+naudojami duomenys, tikėtina, kad skirtinguose duomenų šaltiniuose panaši
+lentelė ir jos laukai turės kitokius pavadinimus.
+
+Tam, kad suvienodinti pavadinimus, mums reikia pasitelkti vieningą žodyną.
+
+Žodynų sudarymas, yra gan sudėtingas darbas, todėl, jei tik yra galimybė
+reikėtų remtis egzistuojančiais žodynais. Egzistuojančius žodynus galima rasti
+LOV_ svetainėje, WikiData_ dažniausiai taip pat būna labai naudingas.
+
+Tačiau nebūtina tiksliai atkartoti tai, kas pateikiama žodynuose, nes dažnai
+žodynai yra labai bendro pobūdžio ir ne viską apimantys. Todėl sudarant žodynus
+yra laisvė
+
+.. _LOV: https://lov.linkeddata.es/dataset/lov
+.. _WikiData: https://www.wikidata.org/
+
+Vieningas žodyno :term:`DSA` atrodo taip:
+
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+| id | m | property        | type   | ref  | uri                                | title               |
++====+===+=================+========+======+====================================+=====================+
+|    |   |                 | prefix | esco | \http://data.europa.eu/esco/model# |                     |
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+|    |   |                 | prefix | og   | \http://ogp.me/ns#                 |                     |
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+|    | place/Country       |        |      | esco:Country                       | Šalis               |
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+|    |   | code            | string |      | esco:isoCountryCodeA2              | ISO 3166-1 A2 kodas |
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+|    |   | name            | string |      | og:country-name                    | Pavadinimas         |
++----+---+-----------------+--------+------+------------------------------------+---------------------+
+
+Toliau, įprastai aprašome duomenų šaltinį ir įtraukiame :data:`base`
+dimensiją, kurios pagalba duomenis nukreipiame į standartų vardų erdvę.
+
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+| id | d | r | b | m | property  | type    | ref  | source    | level |
++====+===+===+===+===+===========+=========+======+===========+=======+
+|  1 | datasets/gov/dc/countries |         |      |           |       |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  2 |   | sql                   |         |      |           |       |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  3 |   |   | /place/Country    |         | code |           |       |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  4 |   |   |   | Countries     |         | id   | COUNTRIES |       |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  5 |   |   |   |   | id        | integer |      | id        | 3     |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  6 |   |   |   |   | code      | string  |      | code      | 3     |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+|  7 |   |   |   |   | name      | string  |      | country   | 3     |
++----+---+---+---+---+-----------+---------+------+-----------+-------+
+
+Duomenų rinkinių modeliai siejami su žodynu :data:`base` stulpelyje pateikiant
+susiejamo modelio pavadinimą iš standartų vardų erdvės. Tada atitinkamai reikia
+pakeisti `property` reikšmes, kad jos atitiktų :data:`base` modelio pavadinimus.
+
+Dar vienas svarbus momentas yra `code` reikšmė :data:`base.source` stulpelyje,
+3-ioje eilutėje. Ši reikšmė nurodo kaip `datasets/gov/dc/countries/countries`
+modelio :term:`objektai <objektas>` turi būti identifikuojami `place/country`
+modelyje. Šiuo atveju nurodyta, kad objektų siejimas turi būti daromas per
+`code` lauką. Toks objektų susiejimas leidžia turėti vienodus identifikatorius
+visiems duomenų rinkiniams kurie yra `place/country` modelio dalis.

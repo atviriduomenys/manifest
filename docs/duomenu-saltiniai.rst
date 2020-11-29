@@ -1,6 +1,6 @@
 .. default-role:: literal
 
-.. _sources:
+.. _duomenų-šaltiniai:
 
 Duomenų šaltiniai
 #################

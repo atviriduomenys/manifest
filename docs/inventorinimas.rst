@@ -47,9 +47,22 @@ id    kodas     salis
 3     ee        Estija
 ====  ========  ===============
 
+.. _šdsa:
 
-Pirminis ŠDSA
-=============
+ŠDSA
+====
+
+Šaltinio duomenų struktūros aprašas (ŠDSA), tariamas kaip „šadsa“. Tai yra
+:term:`DSA` variantas, neskirtas viešinimui, aprašantis vidinių duomenų bazių
+ar kitų vidinių šaltinių duomenų struktūras. ŠDSA leidžia geriau suprasti
+turimus duomenis, tuos duomenis suskirstyti į duomenų rinkinius ir pažymėti,
+kurie duomenys gali būti atverti.
+
+
+.. _pirminis-šdsa:
+
+Pirminis
+--------
 
 Oracle, kaip ir kitos duomenų bazių valdymo sistemos jau turi pakankamai
 metaduomenų, kad iš jų būtų galima automatiškai generuoti pirminį
@@ -62,7 +75,7 @@ metaduomenų, kad iš jų būtų galima automatiškai generuoti pirminį
     +====+===+===+===+===+==========+=========+=======+===========================+=========+=======+========+=====+=======+=============+
     |  1 |   | salys                | sql     |       | \oracle://localhost/salys |         |       |        |     |       |             |
     +----+---+---+---+---+----------+---------+-------+---------------------------+---------+-------+--------+-----+-------+-------------+
-    |  2 |   |   |   | salis        |         | id    |                           |         |       |        |     |       |             |
+    |  2 |   |   |   | Salis        |         | id    |                           |         |       |        |     |       |             |
     +----+---+---+---+---+----------+---------+-------+---------------------------+---------+-------+--------+-----+-------+-------------+
     |  3 |   |   |   |   | id       | integer |       | id                        |         | 4     |        |     |       |             |
     +----+---+---+---+---+----------+---------+-------+---------------------------+---------+-------+--------+-----+-------+-------------+
@@ -94,8 +107,10 @@ Norint užbaigti duomenų inventorizaciją būtina patikslinti šiuos dalykus:
   :data:`dataset.ref` stulpelyje nurodomas rinkinio numeris.
 
 
-Darbinis ŠDSA
-=============
+.. _darbinis-šdsa:
+
+Darbinis
+--------
 
 Baigus inventorizaciją, darbinė :term:`ŠDSA` lentelė turėtu atrodyti taip:
 
@@ -108,7 +123,7 @@ Baigus inventorizaciją, darbinė :term:`ŠDSA` lentelė turėtu atrodyti taip:
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
     |  1 |   | salys                  | sql     |       | \oracle://localhost/salys |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
-    |  2 |   |   |   | country        |         | id    |                           |         |       |         |     |       |             |
+    |  2 |   |   |   | Country        |         | id    |                           |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
     |  3 |   |   |   |   | id         | integer |       | id                        |         | 4     | private |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
@@ -129,8 +144,22 @@ Baigus inventorizaciją, darbinė :term:`ŠDSA` lentelė turėtu atrodyti taip:
 - Pataisytas `id` savybės brandos lygis :data:`level` stulpelyje.
 
 
-Preliminarus ADSA
-=================
+.. _adsa:
+
+ADSA
+====
+
+Atvertų duomenų struktūros aprašas (ADSA). Tai yra :term:`DSA` variantas,
+skirtas viešinimui, aprašantis planuojamų atverti arba jau atvertų duomenų
+struktūras. ADSA pagrindu yra generuojamas atvertų duomenų API, o taip pat ADSA
+leidžia duomenų naudotojams susipažinti atvertų duomenų struktūrą, teikti
+pasiūlymus ir pastabas.
+
+
+.. _preliminarus-adsa:
+
+Preliminarus
+------------
 
 Galiausiai, toks publikavimui parengtas :term:`ŠDSA` gali būti konvertuojamas
 į :term:`ADSA`, kuris atrodys taip:
@@ -144,7 +173,7 @@ Galiausiai, toks publikavimui parengtas :term:`ŠDSA` gali būti konvertuojamas
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
     |  1 |   | salys                  | sql     |       |                           |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
-    |  2 |   |   |   | country        |         | _id   |                           |         |       |         |     |       |             |
+    |  2 |   |   |   | Country        |         | _id   |                           |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
     |  4 |   |   |   |   | code       | string  |       |                           |         | 2     | open    |     |       |             |
     +----+---+---+---+---+------------+---------+-------+---------------------------+---------+-------+---------+-----+-------+-------------+
@@ -170,8 +199,10 @@ jiems yra labiausiai aktualūs. Plačiau apie tai skaitykite skyrelyje
 :ref:`poreikio-deklaravimas`.
 
 
-Galutinis ADSA
-==============
+.. _galutinis-adsa:
+
+Galutinis
+---------
 
 Jei duomenys jau yra atverti, tada galima praleisti :term:`ŠDSA` lentelės
 rengimą ir iš karto parengti :term:`ADSA` lentelę, kaip duomenų šaltinį nurodant
@@ -192,7 +223,7 @@ Galutinis :term:`ADSA` lenelės variantas, turėtu atrodyti taip:
     +----+---+---+---+---+------------+---------+-------+------------------------------------+---------+-------+---------+-----+-------+-------------+
     |  1 |   | salys                  | spinta  |       | \http://raw.data.gov.lt            |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------------------------------+---------+-------+---------+-----+-------+-------------+
-    |  2 |   |   |   | country        |         | _id   | datasets/example/countries/country |         |       |         |     |       |             |
+    |  2 |   |   |   | Country        |         | _id   | datasets/example/countries/Country |         |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------------------------------+---------+-------+---------+-----+-------+-------------+
     |  4 |   |   |   |   | code       | string  |       | code                               |         | 2     | open    |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------------------------------+---------+-------+---------+-----+-------+-------------+

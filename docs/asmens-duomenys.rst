@@ -6,6 +6,96 @@
 Asmens duomenys
 ###############
 
+.. _nuasmeninimas:
+
+Nuasmeninimas
+=============
+
+Duomenų laukų reikšmių nuasmeninimas atliekamas :data:`property.prepare`
+stulpelio pagalba.
+
+.. function:: randomize(n)
+
+    Reikšmės keičiamos parenkant atsitiktinę vertę ±\ `n` intervale nuo
+    tikrosios vertės.
+
+.. function:: permutate()
+
+    Atsitiktine tvarka sumaišomos duomenų reikšmės.
+
+.. function:: hash()
+
+    Taikyti numatytą maišos funkciją.
+
+.. function:: hash(name)
+
+    Taikyti konkrečią `name` maišos funkciją.
+
+.. function:: sample(n)
+
+    Atsitiktine tvarka atrenkama `n` procentų žodžių naudojamų tekste.
+
+.. function:: group(n)
+
+    Pakeičia originalias reikšmes į intervalų grupes taip, kad į vieną intervalą
+    patektų ne mažiau nei `n` reikšmių. Jei viena konkreti reikšmė pasikartoja
+    daugiau nei `n` kartų, tada intervalas nekuriamas, reikšmė paliekama tokia
+    kokia yra šaltinyje.
+
+
+.. _pii:
+
+Asmenį identifikuojantys duomenys
+=================================
+
+Asmenį identifikuojančios savybės turi būti pažymėtos :data:`property.ref`
+stulpelyje. Rekomenduojame naudoti tokius reikšmes, kadangi jos gali būti
+naudojamos nuasmeninimo procese:
+
++--------+--------+--------------------------------+---------------------------+
+| type   | ref    | uri                            | title                     |
++========+========+================================+===========================+
+| prefix | person | \https://www.w3.org/ns/person# |                           |
++--------+--------+--------------------------------+---------------------------+
+|        | ppi    | \https://data.gov.lt/ppi/      |                           |
++--------+--------+--------------------------------+---------------------------+
+| model  |        | person:Person                  | Fizinio asmuo             |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:patronymicName          | Tėvavardis                |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:birthName               | Pilnas vardas             |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:placeOfBirth            | Vieta kurioje gimė        |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:placeOfDeath            | Vieta kurioje mirė        |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:countryOfBirth          | Šalis kurioje gimė        |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:countryOfDeath          | Šalis kurioje mirė        |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:citizenship             | Tautybė                   |
++--------+--------+--------------------------------+---------------------------+
+| string |        | person:residency               | Vieta kurioje gyvena      |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:name                       | Vardas ir/arba pavardė    |
++--------+--------+--------------------------------+---------------------------+
+| date   |        | ppi:dob                        | Gimimo data               |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:phone                      | Telefono numeris          |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:email                      | El. pašto adresas         |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:id                         | Asmens kodas              |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:address                    | Asmens adresas            |
++--------+--------+--------------------------------+---------------------------+
+| string |        | ppi:age                        | Amžius                    |
++--------+--------+--------------------------------+---------------------------+
+
+
+Viešieji asmenys
+================
+
 Asmens duomenys negali būti teikiami, kaip atviri duomenys, tačiau gali būti
 teikiami pakartotiniam naudojimui laikantis BDAR_ reikalavimų.
 
@@ -18,7 +108,7 @@ duomenyse nebūti galimybės identifikuoti asmens duomenų subjekto.
 
 
 Asmens duomenų identifikavimas
-==============================
+------------------------------
 
 :term:`DSA` lentelėje, duomenys kuriuos galima viešinti, tačiau jų naudojimui
 taikomi papildomi apribojimai, :data:`access` stulpelyje turi būti pažymėti
@@ -38,7 +128,7 @@ konfidencialūs duomenys turi būti žymimi griežtesnėmis `protected` arba
 
 
 Duomenų naudotojų autorizavimas
-===============================
+-------------------------------
 
 `public` duomenys nėra teikiami, kaip atviri duomenys. Duomenų naudotojai,
 pageidaujantys gauti `public` duomenis, privalo save identifikuoti. Tada
@@ -65,7 +155,7 @@ duomenų rinkinio, gali būti terminuoti.
 
 
 Duomenų naudotojų įsipareigojimai
-=================================
+---------------------------------
 
 Duomenų naudotojas, gavęs prieigos raktą, įsipareigoja laikytis duomenų
 naudojimo sąlygų ir įgyvendinti priemones asmens duomenų šalinimui iš savo
@@ -102,7 +192,7 @@ visų BDAR_ reikalavimų.
 
 
 Subjektų savitarna
-==================
+------------------
 
 Asmens duomenų subjektams yra prieinama savitarnos sritis, kurioje subjektai
 gali matyti kokie jų duomenys saugomi saugykloje, kam, kokiu pagrindu ir kokiu

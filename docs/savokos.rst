@@ -1,5 +1,5 @@
-Terminai
-########
+Sąvokos
+#######
 
 .. glossary::
 
@@ -17,19 +17,16 @@ Terminai
     ADK
         Lietuvos atvirų duomenų katalogas, prieinamas adresu `data.gov.lt`_.
 
-        .. _data.gov.lt: https:://data.gov.lt/
+        .. _data.gov.lt: https://data.gov.lt/
 
     ADS
         Atvirų duomenų saugykla.
 
     DSA
-        Duomenų struktūros aprašas yra lentelė, kurioje išsamiai aprašyta tam
-        tikro duomenų šaltinio duomenų struktūra. DSA lentelę sudaro penkios
-        dimensijos (duomenų rinkinys, resursas, bazė, modelis, savybė) ir dešimt
-        metaduomenų stulpelių.
-
-        Duomenų struktūros aprašas išsamiai aprašytas :ref:`specifikacijoje
-        <spec>`.
+        :ref:`Duomenų struktūros aprašas <duomenų-struktūros-aprašas>` yra
+        lentelė, kurioje išsamiai aprašyta tam tikro duomenų šaltinio duomenų
+        struktūra. DSA lentelę sudaro penkios dimensijos (duomenų rinkinys,
+        resursas, bazė, modelis, savybė) ir dešimt metaduomenų stulpelių.
 
     ADSA
         :term:`DSA` lentelė, kurioje aprašomi jau atverti ir viešai prieinami
@@ -186,15 +183,6 @@ Terminai
         Sisteminis pavadinimas sudaromas tik iš lotyniškų raidžių ir `-_/`
         simbolių.
 
-    žodynas
-        Duomenų kontekste, žodynas yra susitarimas, kokiais pavadinimais vadinami
-        objektai ir jų savybės. Dažniausiai kiekvienas duomenų rinkinys turi savo
-        vidinį naudojamą žodyną, visas Lietuvos atvirų duomenų modelis turi savo
-        vidinį žodyną, kuris suvienodina skirtingus duomenų rinkinių naudojamus
-        žodynus. Yra :term:`viešieji žodynai <viešasis žodynas>`, dar vadinami
-        ontologijomis, kurie yra skelbiami viešai ir skirti globaliam susietųjų
-        duomenų tinklui kurti.
-
     pirminis duomenų šaltinis
         Įstaigos ar kitos organizacijos pagrindinis duomenų šaltinis.
 
@@ -254,3 +242,34 @@ Terminai
         Atitinka `rdfs:Resource`_ arba lentelės vieną eilutę.
 
         .. _rdfs:Resource: https://www.w3.org/TR/rdf-schema/#ch_resource
+
+    žodynas
+        Duomenų kontekste, žodynas yra susitarimas, kokiais pavadinimais
+        vadinami objektai ir jų savybės. Dažniausiai kiekvienas duomenų rinkinys
+        turi savo vidinį naudojamą žodyną, visas Lietuvos atvirų duomenų modelis
+        turi savo vidinį žodyną, kuris suvienodina skirtingus duomenų rinkinių
+        naudojamus žodynus. Yra :term:`viešieji žodynai <viešasis žodynas>`, dar
+        vadinami ontologijomis, kurie yra skelbiami viešai ir skirti globaliam
+        susietųjų duomenų tinklui kurti.
+
+        Duomenų kontekste, žodynas yra tiesiog :term:`modelių <modelis>` ir
+        :term:`savybių <savybė>` pavadinimų rinkinys. Skirtingi duomenų
+        šaltiniai dažniausiai naudoja skirtingus žodynus, t.y. naudoja
+        skirtingus :term:`modelių <modelis>` ir :term:`savybių <savybė>`
+        pavadinimus.
+
+        :term:`Duomenų struktūros aprašas <DSA>` leidžia skirtinguose duomenų
+        šaltiniuose naudojamus pavadinimus suvienodinti, taip, kad visi
+        šaltiniai naudotų vieningą žodyną.
+
+        Vieningo žodyno sudarymas yra gan sudėtinga užduotis, todėl, :term:`DSA`
+        leidžia prie vieningo žodyno pereiti palaipsniui:
+
+        - pirmiausia sudaromas vieno duomenų rinkinio žodynas,
+
+        - kuris palaipsniui transformuojamas į Lietuvos vieningą žodyną,
+
+        - o Lietuvos vieningas žodynas palaipsniui transformuojamas į globalų
+          žodyną, nurodant sąsajas su išoriniais žodynais ir standartais.
+
+        Žodynai sudaromi pasitelkiant :ref:`vardų erdves <vardų-erdvės>`.
