@@ -1,8 +1,8 @@
 .. default-role:: literal
-.. _žodynai:
+.. _to-level-5:
 
-Žodynai
-#######
+Duomenys apibrėžti nestandartiniu žodynu
+########################################
 
 :data:`level` = 5.
 

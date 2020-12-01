@@ -1,8 +1,8 @@
 .. default-role:: literal
-.. _duomenų-struktūra:
+.. _to-level-2:
 
-Duomenų struktūra
-#################
+Nestandartinio formato duomenys
+###############################
 
 :data:`level` = 2.
 

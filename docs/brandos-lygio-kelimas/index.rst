@@ -13,9 +13,9 @@ duomenų naudotojoų.
 .. toctree::
     :maxdepth: 2
 
-    trukstami-duomenys
-    kaupiami-duomenys
-    duomenu-struktura
-    standartine-forma
-    identifikatoriai
-    zodynai
+    0
+    1
+    2
+    3
+    4
+    5

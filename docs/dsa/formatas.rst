@@ -200,6 +200,8 @@ vengti keisti, kad duomenų naudotojams nereikėtų taisyti jau padarytų
 integracijų su atvertais duomenimis.
 
 
+.. _vardų-erdvės:
+
 Vardų erdvės
 ============
 

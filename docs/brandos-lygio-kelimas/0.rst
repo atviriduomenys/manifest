@@ -1,10 +1,10 @@
 .. default-role:: literal
-.. _trūkstami-duomenys:
+.. _to-level-0:
 
-Trūkstami duomenys
-##################
+Nekaupiami duomenys
+###################
 
-:data:`level` = 2.
+:data:`level` = 0.
 
 Trūkstami duomenys yra žemiausio brandos lygio, :data:`level` stulpelyje žymimi
 skaičiumi `0`.
