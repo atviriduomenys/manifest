@@ -3,6 +3,20 @@ Sąvokos
 
 .. glossary::
 
+    atvirų duomenų direktyva
+        2019 m. birželio 20 d. Europos Parlamento ir Tarybos direktyva (ES)
+        `2019/1024`_ dėl atvirųjų duomenų ir viešojo sektoriaus informacijos
+        pakartotinio naudojimo.
+
+        .. _2019/1024: https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=CELEX:32019L1024
+
+    duomenų valdymo aktas
+        2020 m. lapkričio 25 d. Europos Parlamento ir Tarybos reglamento (ES)
+        pasiūlymas `2020/0340`_ dėl Europos duomenų valdymo (Duomenų valdymo
+        aktas).
+
+        .. _2020/0340: https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=CELEX:52020PC0767
+
     aplinkos kintamasis
         Angliškai tai vadinama *environment variables*, tai yra operacinės
         sistemos aplinkos kintamieji.
@@ -35,6 +49,36 @@ Sąvokos
     ŠDSA
         :term:`DSA` lentelė, kurioje aprašoma neatvertų, :term:`pirminio
         duomenų šaltinio <pirminis duomenų šaltinis>` duomenų struktūra.
+
+    didelės vertės duomenys
+    aukštos vertės duomenys
+        Duomenys apibrėžti :term:`atvirų duomenų direktyvos <atvirų duomenų
+        direktyva>` 5 skyriuje.
+
+        `Aukštos vertės duomenų sritys`__ yra šios:
+
+        .. __: https://eur-lex.europa.eu/legal-content/LT/TXT/?qid=1561563110433&uri=CELEX:32019L1024#d1e32-79-1
+
+        - Geoerdviniai duomenys
+
+        - Aplinka ir žemės stebėjimai
+
+        - Meteorologiniai duomenys
+
+        - Statistika (demografiniai ir ekonominiai rodikliai)
+
+        - Įmonės ir įmonių savininkai
+
+        - Judumas
+
+    BDAR
+        2016 m. balandžio 27 d. Europos Parlamento ir Tarybos reglamentas (ES)
+        `2016/679`_ dėl fizinių asmenų apsaugos tvarkant asmens duomenis ir dėl
+        laisvo tokių duomenų judėjimo ir kuriuo panaikinama Direktyva
+        `95/46/EB`_ (Bendrasis duomenų apsaugos reglamentas).
+
+        .. _2016/679: https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=CELEX:32016R0679
+        .. _95/46/EB: https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=CELEX:31995L0046
 
     duomenų serializavimo formatas
         Duomenys gali būti serializuojami įvairiais formatais, pavyzdžiui YAML

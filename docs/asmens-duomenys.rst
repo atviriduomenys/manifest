@@ -93,18 +93,18 @@ naudojamos nuasmeninimo procese:
 +--------+--------+--------------------------------+---------------------------+
 
 
-Viešieji asmenys
-================
+Viešieji asmenys duomenys
+=========================
 
-Asmens duomenys negali būti teikiami, kaip atviri duomenys, tačiau gali būti
-teikiami pakartotiniam naudojimui laikantis BDAR_ reikalavimų.
+Jokie asmens duomenys negali būti teikiami, kaip atviri duomenys, tačiau gali
+būti teikiami pakartotiniam naudojimui laikantis :term:`BDAR` ir :term:`kitų
+duomenų valdymo <duomenų valdymo aktas>` reikalavimų.
 
-.. _BDAR: https://gdpr-info.eu/
+Siekiant užtikrinti viešąjį interesą, tam tikri viešųjų asmenų duomenys gali
+būti teikiami pakartotiniam naudojimui, tačiau ribojant duomenų naudojimo tikslą
+ir laikantis visų reikalavimų taikomų asmens duomenims.
 
-
-Atveriant duomenis, kurie turi sąsajų su asmens duomenimis, turi būti taikomi
-:ref:`nuasmeninimo metodai <nuasmeninimas>`, užtikrinant, kad atvertuose
-duomenyse nebūti galimybės identifikuoti asmens duomenų subjekto.
+Šiame skyriuje aptariama, kaip gali būti teikiami viešųjų asmenų duomenys.
 
 
 Asmens duomenų identifikavimas
