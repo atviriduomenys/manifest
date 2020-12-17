@@ -836,3 +836,24 @@ dimensijos kontekste.
     .. data:: migrate.description
 
         Migracijos atliekamo pakeitimo trumpas aprašymas.
+
+
+.. _bendrieji-ryšiai:
+
+Bendrieji ryšiai
+----------------
+
+Bendrieji ryšiai yra tokie ryšiai tarp modelių, kai vienas modelis gali būti
+siejamas ne su konkrečiu vienu modeliu, bet su keliais skirtingais modeliais.
+Toks ryšys reikalauja, kad būtų pateiktas ne tik modelio identifikatorius,
+bet ir modelio pavadinimas.
+
+Jei :data:`property.type` reikšmė yra `generic`, tada galima naudoti
+papildomą :data:`ref` dimensiją, kuri nurodo galimus ryšių modelius.
+
+.. data:: ref
+
+    .. data:: ref.ref
+
+        Modelio pavadinimas, su kuriuo gali būti siejama savybė.
+

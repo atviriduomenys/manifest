@@ -187,6 +187,8 @@ Taip pat žiūrėkite: :ref:`ryšiai`.
     Tokiu būdu, vieno modelio laukas gali būti siejamas su keliais
     modeliais.
 
+    Taip pat žiūrėkite :ref:`bendrieji-ryšiai`.
+
 
 .. _sudėtiniai-tipai:
 
