@@ -57,7 +57,7 @@ naudojamos nuasmeninimo procese:
 +========+========+================================+===========================+
 | prefix | person | \https://www.w3.org/ns/person# |                           |
 +--------+--------+--------------------------------+---------------------------+
-|        | ppi    | \https://data.gov.lt/ppi/      |                           |
+|        | pii    | \https://data.gov.lt/pii/      |                           |
 +--------+--------+--------------------------------+---------------------------+
 | model  |        | person:Person                  | Fizinio asmuo             |
 +--------+--------+--------------------------------+---------------------------+
@@ -77,19 +77,19 @@ naudojamos nuasmeninimo procese:
 +--------+--------+--------------------------------+---------------------------+
 | string |        | person:residency               | Vieta kurioje gyvena      |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:name                       | Vardas ir/arba pavardė    |
+| string |        | pii:name                       | Vardas ir/arba pavardė    |
 +--------+--------+--------------------------------+---------------------------+
-| date   |        | ppi:dob                        | Gimimo data               |
+| date   |        | pii:dob                        | Gimimo data               |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:phone                      | Telefono numeris          |
+| string |        | pii:phone                      | Telefono numeris          |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:email                      | El. pašto adresas         |
+| string |        | pii:email                      | El. pašto adresas         |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:id                         | Asmens kodas              |
+| string |        | pii:id                         | Asmens kodas              |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:address                    | Asmens adresas            |
+| string |        | pii:address                    | Asmens adresas            |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | ppi:age                        | Amžius                    |
+| string |        | pii:age                        | Amžius                    |
 +--------+--------+--------------------------------+---------------------------+
 
 

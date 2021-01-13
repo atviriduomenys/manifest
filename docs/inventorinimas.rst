@@ -139,9 +139,7 @@ Baigus inventorizaciją, darbinė :term:`ŠDSA` lentelė turėtu atrodyti taip:
 
 - Užpildytas :data:`access` stulpelis.
 
-- Pakeisti :data:`model` ir :data:`property` pavadinimai.
-
-- Pataisytas `id` savybės brandos lygis :data:`level` stulpelyje.
+- Pakeisti :data:`model` ir :data:`property` kodiniai pavadinimai.
 
 
 .. _adsa:
