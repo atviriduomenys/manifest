@@ -99,7 +99,7 @@ CSV
 
 .. describe:: resource.source
 
-    Žiūrėti Failai.
+    Žiūrėti :ref:`failai`.
 
 .. describe:: resource.prepare
 
