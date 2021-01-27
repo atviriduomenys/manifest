@@ -450,6 +450,14 @@ prieigos prie duomenų, saugomų failuose, atvejus.
 
 .. describe:: resource.prepare
 
+    .. function:: file(resource, encoding: "utf-8")
+
+        :arg resource: Kelias arba URI iki failo.
+        :arg encoding: Failo koduotę.
+
+        Ši funkcija leidžia nurodyti failo koduotę, jei failas yra užkoduotas
+        kita, nei UTF-8 koduote.
+
     .. function:: extract(resource, type)
 
         :arg resource: Kelias arba URI iki archyvo failo arba failo objektas.

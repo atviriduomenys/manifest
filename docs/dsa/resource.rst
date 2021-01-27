@@ -90,6 +90,37 @@ SQL
     Lentelės stulpelio pavadinimas.
 
 
+.. _resource-type-sql-dump:
+
+SQL Dump
+--------
+
+.. describe:: resource.source
+
+    Kelias iki failo, kuriame yra SQL dump.
+
+    Jei nurodyta `-`, tada SQL dump failas bus skaitomas iš standartinės
+    įvesties.
+
+    Pavyzdžiui, norint iš SQL dump generuoti :term:`DSA`, galima naudoti
+    tokią komandą::
+
+        spinta inspect -f sqldump /kelias/iki/dump.sql
+
+    Arba, perduodant duomenis per standartinė įvestį::
+
+        cat /kelias/iki/dump.sql | spinta inspect -f sqldump -
+
+
+.. describe:: resource.prepare
+
+    Žiūrėti :ref:`failai`.
+
+.. describe:: resource.type
+
+    Galimos reikšmės: `sqldump`.
+
+
 CSV
 ---
 
