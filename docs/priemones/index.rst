@@ -5,30 +5,225 @@
 Priemonės
 #########
 
-.. warning::
+Siekiant užtikrinti sklandų ir kiek įmanoma paprastesnį duomenų atvėrimą,
+pateikiame ne tik metodinę medžiagą, kaip atverti duomenis ar rengti
+:term:`DSA` lenteles, tačiau taip pat pateikiame ir įrankius, kurie padeda
+automatizuoti daugelį su duomenų atvėrimu susijusių veiklų.
 
-    Informacija rengiama.
+Kad būtų paprasčiau, duomenų atvėrimui rekomenduojame naudoti įrankį pavadinimu
+Spinta_, kuris sukurtas būtent duomenų atvėrimo automatizavimui.
+
+.. _Spinta: https://gitlab.com/atviriduomenys/spinta/
+
+Jei naudodamiesi Spinta_ radote kokių nors klaidų ar turite kitų pastabų,
+galite `pranešti apie klaidą`__, kad galėtume ją pataisyti.
+
+__ https://gitlab.com/atviriduomenys/spinta/-/issues/new
 
 
-Orientacinis įgyvendinimas
-==========================
+Diegimas
+========
 
-:term:`DSA` sudarytas remiantis praktine patirtimi, įgyvendinant priemones
-skirtas automatizuotam duomenų atvėrimui. Minėtos priemonės gali būti
-naudojamos, kaip orientacinis pavyzdys kuriant automatizuotas priemones.
-Projekto kodą galima rasti šiuo adresu:
+Techniniai reikalavimai
+-----------------------
 
-https://gitlab.com/atviriduomenys/spinta/
-
-Šios priemonės bus naudojamas tikrinimui ar :term:`DSA` atitinka specifikaciją
-ir ar patys atverti duomenys atitinka DSA.
-
-Priemonės įgyvendintos naudojant Python_ programavimo kalbą ir priemonių kodas
-teikiamas pagal atviro kodo MIT licencijos sąlygas. Projekto dokumentaciją
-galima rasti šiuo adresu:
+Duomenų atvėrimo priemonė Spinta_ yra sukurta naudojant Python_ technologiją.
+Todėl prieš diegiant, jūsų naudojamoje aplinkoje turi būti `įdiegta`__ Python
+3.9 arba naujesnė versija.
 
 .. _Python: https://www.python.org/
 
-https://spinta.readthedocs.io/
+__ https://www.python.org/downloads/
 
 
+Debian/Ubuntu
+-------------
+
+Kadangi Debian ir Ubuntu sisteminio Python versija dažnai yra senesnė,
+rekomenduojama įsidiegti naujausią Python versiją naudojant pyenv_ priemonę.
+Nebent, Debian ar Ubuntu naujausia versija yra nesenai išleista ir turi
+pakankamai naują, 3.9 ar vėlesnę python versiją.
+
+.. _pyenv: https://github.com/pyenv/pyenv
+
+Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
+
+.. code-block:: sh
+
+    $ sudo apt update
+    $ sudo apt install -y \
+         git make build-essential libssl-dev zlib1g-dev \
+         libbz2-dev libreadline-dev libsqlite3-dev wget \
+         curl llvm libncurses5-dev libncursesw5-dev \
+         xz-utils tk-dev libffi-dev liblzma-dev \
+         python-openssl
+    $ curl https://pyenv.run | bash
+    $ cd
+    $ PYVER=$(.pyenv/bin/pyenv install --list | grep -v - | tail -1 | xargs)
+    $ .pyenv/bin/pyenv install $PYVER
+
+Kai jau turite tinkamą Python_ versiją, reikia sukurti izoliuotą aplinką į
+kurią bus diegiama Spinta_:
+
+.. code-block:: sh
+
+    $ .pyenv/versions/$PYVER/bin/python -m venv spinta
+
+Paskutinis žingsnis, Spinta_ paketo diegimas:
+
+.. code-block:: sh
+
+    $ spinta/bin/pip install spinta
+
+Galiausiai, įdiegus Spinta_ paketą, reikia aktyvuoti izoliuotą aplinką, kad
+galėtumėte toliau dirbti su Spinta_ paketo teikiama komanda `spinta`:
+
+.. code-block:: sh
+
+    $ source spinta/bin/activate
+
+Tai padarius, galite patikrinti ar komanda `spinta` veikia:
+
+.. code-block:: sh
+
+    $ spinta --version
+    0.1.9
+
+Ši komanda turi išvesti, Spinta_ priemonės versijos numerį.
+
+
+Windows
+-------
+
+Deja dėl žmogiškųjų resursų trūkumo, Windows OS šiuo metu nėra palaikoma.
+
+
+DSA generavimas
+===============
+
+Spinta_ leidžia automatiškai generuoti :term:`DSA` lentelę iš duomenų
+šaltinio.
+
+Tarkime, jei turime SQLite duomenų bazę su viena lentele:
+
+.. code-block:: sh
+
+    $ sqlite3 sqlite.db <<EOF
+    CREATE TABLE COUNTRY (
+        NAME TEXT
+    );
+    EOF
+
+Tada iš tokio duomenų šaltinio, :term:`DSA` lentelę galima sugeneruoti taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql sqlite:///sqlite.db
+    d | r | b | m | property | type   | ref | source
+    dataset                  |        |     |
+      | sql                  | sql    |     | sqlite:///sqlite.db
+                             |        |     |
+      |   |   | Country      |        |     | COUNTRY
+      |   |   |   | name     | string |     | NAME
+
+Šiuo atveju, kadangi nenurodėme kur saugoti sugeneruotą :term:`DSA` lentelę,
+ji buvo tiesiog išvesta į ekraną.
+
+`-r` argumentui perduoti du argumentai `sql` ir `sqlite:///sqlite.db`, kurie
+atitinka :data:`resource.type` ir :data:`resource.source`.
+
+Jei norima :term:`DSA` lentelę išsaugoti į CSV failą, tada argumento `-o`
+pagalba galima nurodyti kelią iki failo, kuriame reikia išsaugoti :term:`DSA`
+lentelę CSV formatu:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql sqlite:///sqlite.db -o manifest.csv
+
+:term:`DSA` lentelę, išsaugotą CSV formatu galima peržiūrėti šios komandos
+pagalba:
+
+.. code-block:: sh
+
+    $ spinta show manifest.csv
+    d | r | b | m | property | type   | ref | source
+    dataset                  |        |     |
+      | sql                  | sql    |     | sqlite:///sqlite.db
+                             |        |     |
+      |   |   | Country      |        |     | COUNTRY
+      |   |   |   | name     | string |     | NAME
+
+
+Jei turite daug duomenų šaltinių, galima juos visus surašyti į :term:`DSA`
+lentelę, ir tada paleisti `inspect` komandą, kuri nuskaitys visus lentelėje
+esančius duomenų šaltinius ir kiekvienam iš jų sugeneruos duomenų struktūros
+aprašus.
+
+Naują :term:`DSA` lentelę galite pradėti kurti taip:
+
+.. code-block:: sh
+
+    $ spinta init manifest.csv
+
+Ši komanda sugeneruos tuščią :term:`DSA` lentelę:
+
+.. code-block:: sh
+
+    $ spinta show manifest.csv
+    d | r | b | m | property | type   | ref | source
+
+Tada, šią lentelę galite atsidaryti su jūsų `mėgiama skaičiuoklės programa`__ ir
+užpildyti turimus duomenų šaltinius, pavyzdžiui, tokia užpildyta lentelė galėtų
+atrodyti taip:
+
+__ https://www.libreoffice.org/discover/calc/
+
+.. code-block:: sh
+
+    $ spinta show manifest.csv
+
+    d | r | b | m | property | type   | ref | source
+    dataset                  |        |     |
+      | sql                  | sql    |     | sqlite:///sqlite.db
+
+
+Struktūros generavimas daromas panašiai, kaip ir nurodant resursus `-r`
+argumentų pagalba, tik šį karta reikia nurodyti kelia iki :term:`DSA` lentelės:
+
+.. code-block:: sh
+
+    $ spinta inspect manifest.csv
+    d | r | b | m | property | type   | ref | source
+    dataset                  |        |     |
+      | sql                  | sql    |     | sqlite:///sqlite.db
+                             |        |     |
+      |   |   | Country      |        |     | COUNTRY
+      |   |   |   | name     | string |     | NAME
+
+
+Analogiškai :term:`DSA` lentelės generuojamos ir visiems kitiems
+:data:`resource.type` formatams.
+
+Jei tam tikras resursas reikalauja formulių panaudojimo, tada formulę galite
+nurodyti `-f` argumento pagalba. Pavyzdžiui, jei neturite prieigos prie
+pačios duomenų bazės, bet turite prieigą, prie duomenų bazės SQL DDL skripto,
+o skriptas yra užkoduotas `UTF-16` koduote. Tada :term:`DSA` lentelė bus
+generuojama taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sqldump dump.sql -f 'file(self, encoding: "utf-16")'
+    d | r | b | m | property | type   | ref | source               | prepare
+    dataset                  |        |     |                      |
+      | sql                  | sql    |     | sqlite:///sqlite.db  | file(self, encoding: "utf-16")
+                             |        |     |                      |
+      |   |   | Country      |        |     | COUNTRY              |
+      |   |   |   | name     | string |     | NAME                 |
+
+Šiuo atveju, `dump.sql` failas atrodytų taip:
+
+.. code-block:: sql
+
+    CREATE TABLE COUNTRY (
+        NAME TEXT
+    );
