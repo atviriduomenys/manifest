@@ -8,7 +8,7 @@ CONFIG = {
 
     'backends': {
         'default': {
-            'backend': 'spinta.backends.postgresql:PostgreSQL',
+            'type': 'postgresql',
             'dsn': 'postgresql://admin:admin123@localhost:54321/lodam',
         },
     },
