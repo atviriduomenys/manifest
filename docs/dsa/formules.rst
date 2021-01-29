@@ -166,8 +166,8 @@ dažnai formulė yra lengviau skaitoma, naudojant funkcijų grandinę.
 .. _UFCS: https://en.wikipedia.org/wiki/Uniform_Function_Call_Syntax
 
 
-Funkcijos
-=========
+Standartinės funkcijos
+======================
 
 Priklausomai nuo duomenų šaltinio ar konteksto gali būti naudojami skirtingi
 veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
@@ -434,7 +434,7 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
 .. _failai:
 
 Failai
-------
+======
 
 Dažnai duomenys teikiami failų pavidalu, kurie gali būti saugomi tiek lokaliai
 failų sistemoje, tiek nuotoliniame serveryje. Failai gali būti suspausti ir
@@ -456,7 +456,10 @@ prieigos prie duomenų, saugomų failuose, atvejus.
         :arg encoding: Failo koduotę.
 
         Ši funkcija leidžia nurodyti failo koduotę, jei failas yra užkoduotas
-        kita, nei UTF-8 koduote.
+        kita, nei UTF-8 koduote. Pilną palaikomų koduočių sąrašą galite rasti
+        `šiame sąraše`__.
+
+        __ https://docs.python.org/3/library/codecs.html#standard-encodings
 
     .. function:: extract(resource, type)
 
@@ -487,10 +490,11 @@ prieigos prie duomenų, saugomų failuose, atvejus.
 
         .. describe:: xz
 
+
 .. _stulpeliai-lentelėje:
 
 Stulpeliai lentelėje
---------------------
+====================
 
 CSV ar skaičiuoklių lentelėse stulpelių pavadinimai pateikiami pačioje
 lentelėje. Eilutė, kurioje surašyti pavadinimai nebūtinai gali būti pirma.
