@@ -6,6 +6,9 @@ Duomenų šaltiniai
 SQL
 ---
 
+
+.. _sql-resource-source:
+
 .. describe:: resource.source
 
     Duomenų bazės URI. Duomenų bazės URI formuojamas naudojant tokį ABNF_
@@ -76,10 +79,15 @@ SQL
 
 .. describe:: resource.prepare
 
-    .. function:: schema(name)
+    .. function:: connect(dsn, schema: str = None, encoding: str = 'utf-8')
 
-        Naudojama tais atvejais, kai reikia aktyvuoti tam tikrą duomenų bazės
-        schemą.
+        :arg dsn: Duomenų bazės URI, kaip nurodyta :ref:`resource.source
+            <sql-resource-source>`.
+        :arg schema: Duomenų bazės schema.
+        :arg encoding: Duomenų bazės koduotė.
+
+        Naudojama tais atvejais, kai jungiantis prie duomenų bazės reikia
+        perduoti papildomus parametrus.
 
 .. describe:: model.source
 
