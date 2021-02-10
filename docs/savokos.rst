@@ -3,6 +3,45 @@ Sąvokos
 
 .. glossary::
 
+    Europos sveikumo karkasas
+        `Rekomendacijų rinkinys`__ apie tai, kaip užtikrinti didesnį skaitmeninį
+        sveikumą tarp Europos šalių.
+
+        __ https://eur-lex.europa.eu/resource.html?uri=cellar:2c2f2554-0faf-11e7-8a35-01aa75ed71a1.0017.02/DOC_3&format=PDF
+
+        Rekomendacijų sąrašas:
+
+        2.  Publish the data you own as open data unless certain restrictions
+            apply.
+
+        3.  Ensure a level playing field for open source software and
+            demonstrate active and fair consideration of using open source
+            software, taking into account the total cost of ownership of the
+            solution.
+
+        41. Establish procedures and processes to integrate the opening of data
+            in your common business processes, working routines, and in the
+            development of new information systems.
+
+        42. Publish open data in machine-readable, non-proprietary formats.
+            Ensure that open data is accompanied by high quality,
+            machine-readable metadata in non-proprietary formats, including a
+            description of their content, the way data is collected and its
+            level of quality and the licence terms under which it is made
+            available. The use of common vocabularies for expressing metadata is
+            recommended.
+
+        43. Communicate clearly the right to access and reuse open data. The
+            legal regimes for facilitating access and reuse, such as licences,
+            should be standardised as much as possible.
+
+        44. Put in place catalogues of public services, public data, and
+            interoperability solutions and use common models for describing
+            them.
+
+        45. Where useful and feasible to do so, use external information sources
+            and services while developing European public services.
+
     atvirų duomenų direktyva
         2019 m. birželio 20 d. Europos Parlamento ir Tarybos direktyva (ES)
         `2019/1024`_ dėl atvirųjų duomenų ir viešojo sektoriaus informacijos
