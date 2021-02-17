@@ -531,35 +531,35 @@ Kategoriniai duomenys
 Tam tikri duomenų laukai turi fiksuotą reikšmių variantų aibę. Dažnai duomenų
 bazėse fiksuotos reikšmės saugomos skaitine forma ar kitais kodiniais
 pavadinimais. Tokias fiksuotas reikšmes duomenų struktūros apraše galima
-pateikti neužpildant hierarchinių stulpelių ir nurodant type reikšmę choice.
+pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enum`.
 
-.. data:: choice
+.. data:: enum
 
-    .. data:: choice.source
+    .. data:: enum.source
 
         Pateikiama originali reikšmė, taip kaip ji saugoma duomenų šaltinyje.
 
-    .. data:: choice.prepare
+    .. data:: enum.prepare
 
         Pateikiama reikšmė, tokia kuri bus naudojama atveriant duomenis.
         :data:`model.prepare` filtruose taip pat bus naudojama būtent ši
         reikšmė.
 
-    .. data:: choice.ref
+    .. data:: enum.ref
 
         Pasirinkimų sąrašo pavadinimas, kuris gali būti naudojamas kaip trečias
         :func:`choose` argumentas.
 
-    .. data:: choice.title
+    .. data:: enum.title
 
         Fiksuotos reikšmės pavadinimas.
 
-    .. data:: choice.description
+    .. data:: enum.description
 
         Fiksuotos reikšmės aprašymas.
 
 Pagal nutylėjimą, jei :data:`property.prepare` yra tuščias ir :data:`property`
-turi :data:`choice` sąrašą, tada jei šaltinis turi neaprašytą reikšmę, turėtų
+turi :data:`enum` sąrašą, tada jei šaltinis turi neaprašytą reikšmę, turėtų
 būti fiksuojama klaida.
 
 Jei yra poreikis fiksuoti tik tam tikras reikšmes, o visas kitas palikti tokias,

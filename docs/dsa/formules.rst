@@ -757,12 +757,12 @@ kelis jau aprašytus laukus.
 
     .. function:: choose(default)
 
-        Jei šaltinio reikšmė nėra viena iš :data:`property.choice`, tada
+        Jei šaltinio reikšmė nėra viena iš :data:`property.enum`, tada
         grąžinama default reikšmė.
 
-        Jei default nupateiktas, grąžina vieną iš :data:`property.choice`
+        Jei `default` nepateiktas, grąžina vieną iš :data:`property.enum`
         reikšmių, jei duomenų šaltinio reikšmė nėra viena iš
-        :data:`property.choice`, tada grąžinama klaida.
+        :data:`property.enum`, tada grąžinama klaida.
 
     .. function:: switch(*cases)
     .. function:: case(cond, value)
