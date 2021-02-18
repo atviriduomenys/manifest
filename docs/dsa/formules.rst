@@ -774,6 +774,10 @@ kelis jau aprašytus laukus.
         Jei, `cases` nepateikti, grąžina vieną iš :data:`switch.source`
         reikšmių, tenkinančių switch prepare sąlygą.
 
+    .. function:: swap(old, new)
+
+        Swaps an `old` value with `new`, if `self` is equal to `old`.
+
     .. function:: return()
 
         Nutraukia transformacijų grandinę ir grąžina reikšmę.

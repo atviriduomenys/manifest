@@ -538,12 +538,24 @@ pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enu
     .. data:: enum.source
 
         Pateikiama originali reikšmė, taip kaip ji saugoma duomenų šaltinyje.
+        Pateiktos reikšmės turi būti unikalios ir negali kartotis.
+
+        Jei pageidaujama aprašyti tuščią šaltinio reikšmę, tada
+        :data:`property.prepare` celėje reikia nurodyti formulę, kuri tuščią
+        reikšmę pakeičia, į kokią nors kitą. Formulės pavyzdys:
+
+        .. code-block:: python
+
+            swap('', '-')
 
     .. data:: enum.prepare
 
         Pateikiama reikšmė, tokia kuri bus naudojama atveriant duomenis.
         :data:`model.prepare` filtruose taip pat bus naudojama būtent ši
         reikšmė.
+
+        `enum.prepare` reikšmės gali kartotis, tokiu būdu, kelios skirtingos
+        `enum.source` reikšmės bus susietos su viena `enum.prepare` reikšme.
 
     .. data:: enum.ref
 
