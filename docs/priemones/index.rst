@@ -21,6 +21,90 @@ galite `pranešti apie klaidą`__, kad galėtume ją pataisyti.
 __ https://gitlab.com/atviriduomenys/spinta/-/issues/new
 
 
+Statusas ir planas
+==================
+
+Priemonė „Spinta“ yra eksperimentinis projektas, šiuo metu aktyviai vystomas.
+Pagal `programinės įrangos gyvavimo ciklo schema`__, „Spinta“ yra PRE-ALPHA
+etape.
+
+__ https://en.wikipedia.org/wiki/Software_release_life_cycle
+
+Nors projektas yra aktyviai vystomas, tačiau jis jau yra naudojamas
+gamybinėje aplinkoje, kurią galite pasiekti šiais adresais:
+
+https://get.data.gov.lt/
+    Saugyklos sritis skirta viešai atvirų duomenų prieigai. Ši sritis veikia
+    tik skaitymo režimu ir skirta plačiajai visuomenės daliai.
+
+https://put.data.gov.lt/
+    Saugyklos sritis skirta duomenų tiekėjams, kuriems suteikiama galimybė
+    teikti duomenis į saugyklą. Ši sritis yra skirta tik duomenų tiekėjams.
+
+Taip pat yra analogiškos aplinkos skirtos testavimui, prieš pereinant prie
+gamybinės aplinkos:
+
+https://get-test.data.gov.lt/
+
+https://put-test.data.gov.lt/
+
+Kiekvienas pakeitimas projekto „Spinta“ kodo bazėje yra automatiškai
+testuojamas vykdant beveik 1000 testų, kurie dengia beveik 90% viso kodo.
+Todėl projektas yra gan stabilus.
+
+Preliminarus projekto vystymo planas
+------------------------------------
+
+==============  =================  =================
+Etapas          Pradžia            Pabaiga
+--------------  -----------------  -----------------
+PRE-ALPHA       2019 metų pradžia  2021 metų pabaiga
+ALPHA           2021 metų pabaiga  2022 metų vidurys
+BETA            2022 metų vidurys  2023 metų kovas
+STABLE          2023 metų kovas    -
+==============  =================  =================
+
+
+Ko tikėtis kiekvieno etapo metu?
+--------------------------------
+
+PRE-ALPHA (iki 2021 metų pabaigos)
+    Projektas jau bus naudojamas gamybinėje aplinkoje, tačiau reikėtu tikėtis,
+    kad dalykai ne visada veiks, funkcijos bus ne iki galo išbaigtos ir esamas
+    funkcionalumas gali keistis. Tačiau nepaisant minėtu trūkumų, esminės atvirų
+    duomenų saugyklos funkcijos turėtu veikti gan stabiliai, todėl
+    rekomenduojame aktyviai naudotis saugykla tiek teikiant, tiek gaunant
+    duomenis, nes tik tokiu būdu geriau suprasime ko reikia galutiniam
+    naudotojui.
+
+    Jei į saugyklą teikiate svarbius, didelę paklausą turinčius duomenis,
+    rekomenduojame „Spinta“ projektą naudoti tik, kaip alternatyvią duomenų
+    publikavimo priemonę, kartu publikuojant duomenis ir kitais kanalais,
+    užtikrinančiais didesnį patikimumo lygį.
+
+ALPHA (iki 2022 metų vidurio)
+    Šio etapo metu didžiausias dėmesys bus skiriamas esamų funkcijų išbaigtumo
+    didinimui, greitaveikos optimizavimui ir stabilumo didinimui. Šio etapo
+    metu.
+
+    Taip pat šio etapo metu bus dirbama ir prie duomenų brandos kėlimo funkcijų
+    įgyvendinimo, peržiūrint visus saugykloje publikuojamus duomenis ir siekiant
+    juos transformuoti taip, kad jie būtų suderinami su Europos ir
+    tarptautiniais standartais, kiek įmanoma atitiktų vieningą duomenų žodyną.
+
+BETA (iki 2023 metų kovo mėnesio)
+    Šio etapo metu, jokių naujų funkcijų kurti nebeplanuojama, bus didinamas
+    esamų funkcijų stabilumas, greitaveika, taisomos pastebėtos klaidos.
+
+    Šio etapo metu rekomenduojame naudoti saugyklą, kaip pagrindinį atvirų
+    duomenų publikavimo šaltinį.
+
+STABLE (nuo 2023 metų kovo mėnesio)
+    Šio etapo metu, bus vykdomas projekto palaikymas ir priežiūra, pastebėtų
+    klaidų taisymas.
+
+
+
 Diegimas
 ========
 
