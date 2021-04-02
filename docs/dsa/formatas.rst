@@ -165,39 +165,35 @@ pavadinimus. Kodiniams pavadinimams keliami griežtesni reikalavimai, kadangi
 Visi :term:`DSA` lentelės stulpelių pavadinimai turi būti užrašyti tiksliai
 taip, kaip nurodyta, kad kompiuterio programos galėtų juos atpažinti.
 
-Visuose dimensijų stulpeliuose ir kitose vietose kuriose nurodyta naudoti
-kodinius pavadinimus keliamas reikalavimas, kad pavadinimai atitiktų šią
-reguliariąją išraišką:
+Kodiniai pavadinimai rašomi naudojant tik lotyniškas raidas. Lietuviškų
+raidžių naudoti negalima, todėl geriausia pavadinimus užrašyti anglų kalba,
+arba pakeičiant lietuviškas raides į lotyniškos raidės analogą.
 
-.. code-block:: regex
+Deja, vis dar pasitaiko vietų, kuriose palaikoma tik lotyniška abėcėlė, todėl
+ir keliamas toks reikalavimas, siekiant užtikrinti maksimalų suderinamumą
+tarp skirtingų sistemų.
 
-    [a-zA-Z][a-zA-Z0-1_-]+
+Pavadinimai turėtu būti rašomi laikantis tokio stiliaus:
 
-Tai reiškia, kad pavadinimo pirmas simbolis turi būti lotyniška raidė, o
-sekančios raidės gali būti lotyniškos raidės, skaičiai ir pabraukimo simbolis ar
-brūkšnelis skirti žodžiams atskirti, jei pavadinimą sudaro daugiau nei vienas
-žodis. Kodiniuose pavadinimuose gali būti tik lotyniškos raidės, lietuviškų
-raidžių kodiniuose pavadinimuose neturi būti.
+Vardų erdvės ir duomenų rinkiniai
+    Pavyzdys: `datasets/gov/abbr/short/word`
 
-Pabraukimo simbolis ir brūkšnelis negali kartotis daugiau nei vieną kartą.
+    Visos mažosios raidės, stengiantis naudoti vieno žodžio trumpus pavadinimus
+    arba žodžio trumpinius. Kadangi vardų erdvė rašoma prie kiekvieno modelio
+    pavadinimą, todėl reikia stengtis vardų erdvių ir duomenų rinkinių
+    pavadinimus išlaikyti kiek įmanoma trumpesnius.
 
-Interpretuojant kodinį pavadinimą, turi būti ignoruojamos didžiosios/mažosios
-raidės, pabraukimo simbolis ir brūkšnelis. Tai reškia, kad visi šie
-pavadinimai interpretuojami kaip sinonimai::
+Modelių pavadinimai
+    Pavyzdys: `CamelCase`
 
-    kodinis-pavadinimas
-    kodinis_pavadinimas
-    KodinisPavadinimas
-    kodinisPavadinimas
+    Kiekvieno modelio pavadinimo pirma raidė didžioje, kitos mažosios.
+    Pavadinimo žodžiai neatskiriami, nei tarpais, nei kitais skyrybos ženklais.
 
-Ypatingas dėmesys turi būti kreipiamas suteikiant pavadinimus :data:`dataset`,
-:data:`model` ir :data:`property` stulpeliuose. Šiuose stulpeliuose pateikti
-pavadinimai naudojami identifikuojant konkrečias duomenų struktūros vietas, taip
-pat šie pavadinimai bus naudojami publikuojant duomenis, tai reiškia, kad šiuos
-pavadinimus naudos ir duomenų naudotojai. Po to, kai duomenys publikuojami
-minėtų :data:`dataset`, :data:`model` ir :data:`property` pavadinimu reikėtų
-vengti keisti, kad duomenų naudotojams nereikėtų taisyti jau padarytų
-integracijų su atvertais duomenimis.
+Duomenų laukų pavadinimai
+    Pavyzdys: `snake_case`
+
+    Visi duomenų lauko žodžiai rašomi mažosiomis raidėmis, atskiriami pabraukimo
+    ženklu.
 
 
 .. _vardų-erdvės:
@@ -220,18 +216,6 @@ ir :data:`model` pavadinimai formuojami pasitelkiant vardų erdves.
     imti iš `Linked Open Vocabularies`_ katalogo.
 
     .. _Linked Open Vocabularies: https://lov.linkeddata.es/dataset/lov/
-
-.. describe:: /transformations/<standard>/
-
-    **Transformacijų vardų erdvė**
-
-    Ši vardų erdvė skirta įstaigų duomenų rinkinių transformavimui į
-    `/<standard>/` vardų erdvę, apjungiant visų įstaigų duomenis į vieningus
-    modelius standartų vardų erdvėje.
-
-    Ši vardų erdvė yra tranzitinė ir joje duomenys nesaugomi, o perduodami
-    tiesiai į standartų vardų erdvėje esančius modelius, `proxy`
-    :data:`base.type` pagalba.
 
 .. describe:: /datasets/<type>/<org>/
 
@@ -258,8 +242,20 @@ ir :data:`model` pavadinimai formuojami pasitelkiant vardų erdves.
     Įstaigos duomenų rinkinio vardų erdvė į kurią patenka visi įstaigos duomenų
     modeliai.
 
+.. describe:: /provisional/
+
+    **Duomenų rinkiniai turintys negalutinę struktūrą**
+
+    Šioje vardų erdvėje talpinamos visos kitos vardų erdvės, kurių duomenų
+    struktūra nėra galutinė ir gali keistis, be atskiro įspėjimo.
+
+    Visos duomenų rinkinius rekomenduojame pirmiausiai kelti į šią duomenų erdvė
+    ir įsitikimus, kad duomenų struktūra yra stabili, perkelti į kitą atitinkamą
+    vardų erdvė.
+
+
 Naujai atveriami :term:`duomenų struktūros aprašai <DSA>` sudaromi :term:`ŠDSA`
-pagrindu. Įprastai duomenų bazių struktūra nėra kuriami vadovaujantis
+pagrindu. Įprastai duomenų bazių struktūra nėra kuriama vadovaujantis
 standartais. Vidinės struktūros dažniausiai kuriamos vadovaujantis sistemai
 keliamais reikalavimais. Todėl naujai atveriamų duomenų rinkiniai turi keliauti
 į duomenų rinkinio vardų erdvę `/datasets/<type>/<org>/<dataset>/`, išlaikant
