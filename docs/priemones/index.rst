@@ -311,3 +311,20 @@ generuojama taip:
     CREATE TABLE COUNTRY (
         NAME TEXT
     );
+
+
+ŠDSA vertimas į ADSA
+====================
+
+ŠDSA yra toks duomenų struktūros aprašas, kuris yra susietas su duomenų
+šaltiniu, yra užpildytas :data:`source` stulpelis.
+
+Verčiant ŠDSA į ADSA, iš esmės pašalinami :data:`source` ir :data:`prepare`
+stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
+:data:`access` yra mažesnis, nei `open`.
+
+ŠDSA vertimą į ADSA galima daryti automatiškai taip:
+
+.. code-block:: sh
+
+    $ spinta copy --access open --no-source sdsa.csv -o adsa.csv
