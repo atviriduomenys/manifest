@@ -328,3 +328,77 @@ stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
 .. code-block:: sh
 
     $ spinta copy sdsa.csv --no-source --access open -o adsa.csv
+
+
+Duomenų publikavimas į saugyklą
+===============================
+
+Prieš publikuojant duomenis į Saugyklą, Saugykloje turi būti įkeltas duomenų
+struktūros aprašas. Saugykla gali priimti tok tokius duomenis, kurie yra
+aprašyti duomenų struktūros apraše.
+
+Taip pat, prieš publikuojant duomenis, Saugykloje turi būti užregistruotas
+klientas, kuriam suteikiamos rašymo į saugyklą teisės. Klientui suteikiamos
+rašymo teisės į tam tikrą vardų erdvę, todėl skirtingi klientai, gali rašyti
+duomenis tik į tam tikrą, jiems skirtą vardų erdvę.
+
+Kliento autorizacijos duomenys turėtu būti pateikiami `credentials.cfg` faile.
+`credentials.cfg` failo ieškoma `$XDG_CONFIG_HOME/spinta kataloge`__ (pavyzdžiui
+`~/.config/spinta/credentials.cfg`). Šio failo formatas atrodo taip:
+
+__ https://specifications.freedesktop.org/basedir-spec/latest/ar01s03.html
+
+.. code-block:: ini
+
+    [ivpk@put.data.gov.lt]
+    client = ivpk
+    secret = verysecret
+    scopes =
+      spinta_getall
+      spinta_getone
+      spinta_search
+      spinta_changes
+      spinta_datasets_gov_ivpk_insert
+      spinta_datasets_gov_ivpk_upsert
+      spinta_datasets_gov_ivpk_update
+      spinta_datasets_gov_ivpk_patch
+      spinta_datasets_gov_ivpk_delete
+
+Čia nurodomas kliento pavadinimas, slaptažodis ir leidimai (`scopes`).
+Suteiktas leidimas skaityti visus duomenis ir rašyti tik į
+`datasets/gov/ivpk` vardų erdvę.
+
+Kol kas kliento kūrimas Saugykloje yra daromas rankiniu būdu, atskiru
+paklausimu, tačiau planuojama tai `automatizuoti`__.
+
+__ https://gitlab.com/atviriduomenys/spinta/-/issues/92
+
+Galiausiai, įkėlus duomenų struktūros aprašą į Katalogą, iš Katalogo įkėlus
+aprašą į saugyklą ir turinti klientą Saugykloje, galima publikuoti duomenis į
+saugyklą tokiu būdu:
+
+.. code-block:: sh
+
+    $ spinta push sdsa.csv -o spinta+https://ivpk@put.data.gov.lt
+
+Dar vienas dalykas, į kurį reikėtu atkreipti dėmesį yra būsenos failas. Kadangi
+`spinta push` komanda į saugyklą siunčia tik tuos duomenis kurie dar nebuvo
+siųsti arba kurie pasikeitė, kad tai veiktų saugoma duomenų perdavimo į saugyklą
+būsena. Būsena saugoma SQLite duomenų bazėje,
+`$XDG_DATA_HOME/spinta/pushstate.db`__ faile (pavyzdžiui
+`~/local/share/spinta/pushstate.db`). Priklausomai nuo duomenų kiekio šis failas
+gali užimti gan daug vietos. Būsenos faile saugomi Saugykloje suteikti objektų
+identifikatoriai, vietiniai identifikatoriai ir duomenų kontrolinė suma.
+
+__ https://specifications.freedesktop.org/basedir-spec/latest/ar01s03.html
+
+Kadangi `spinta push` komanda saugo būseną, šią komandą galima leisti daug
+kartų ir ji tęs duomenų perdavimą nuo tos vietose kur buvo baigta paskutinį
+kartą.
+
+Rekomenduojama šią duomenų publikavimo komanda įtraukti į automatiškai
+vykdomų užduočių sąrašą, kad duomenys būtų publikuojamai automatiškai,
+pavyzdžiui kas naktį arba kas valandą.
+
+Reikėtu atkreipti dėmesį į tai, kad vienu metu reikėtu leisti tik vieną
+`spinta push` komandos procesą.
