@@ -327,4 +327,4 @@ stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
 
 .. code-block:: sh
 
-    $ spinta copy --access open --no-source sdsa.csv -o adsa.csv
+    $ spinta copy sdsa.csv --no-source --access open -o adsa.csv
