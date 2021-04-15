@@ -386,9 +386,9 @@ Dar vienas dalykas, į kurį reikėtu atkreipti dėmesį yra būsenos failas. Ka
 siųsti arba kurie pasikeitė, kad tai veiktų saugoma duomenų perdavimo į saugyklą
 būsena. Būsena saugoma SQLite duomenų bazėje,
 `$XDG_DATA_HOME/spinta/pushstate.db`__ faile (pavyzdžiui
-`~/local/share/spinta/pushstate.db`). Priklausomai nuo duomenų kiekio šis failas
-gali užimti gan daug vietos. Būsenos faile saugomi Saugykloje suteikti objektų
-identifikatoriai, vietiniai identifikatoriai ir duomenų kontrolinė suma.
+`~/.local/share/spinta/pushstate.db`). Priklausomai nuo duomenų kiekio šis
+failas gali užimti gan daug vietos. Būsenos faile saugomi Saugykloje suteikti
+objektų identifikatoriai, vietiniai identifikatoriai ir duomenų kontrolinė suma.
 
 __ https://specifications.freedesktop.org/basedir-spec/latest/ar01s03.html
 
