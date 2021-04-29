@@ -270,16 +270,34 @@ Sąvokos
         Įstaigos ar kitos organizacijos pagrindinis duomenų šaltinis.
 
     duomenų rinkinys
-        Duomenų grupė charakterizuojanti :term:`modelį <modelis>` arba
-        susijusius modelius jų :term:`savybes <savybė>` ir tarpusavio ryšius.
-        Sąsaja tarp modelių apibrėžiama ne reliacinių ryšių prasme, o loginės
-        arba semantinės sąsajos prasme.
+        Vieno agento (organizacijos ar asmens) kaupiama ir prižiūrima, vienodą
+        konceptualią prasmę turinčių duomenų aibė.
 
-        Duomenys neskaidomi į skirtingus duomenų rinkinius, pagal vietos, laiko
-        ar kitus kriterijus.
+        Duomenų rinkinį charakterizuoja vienas ar daugiau :term:`duomenų modelių
+        <modelis>`.
+
+        Duomenų rinkiniai neskaidomi pagal vietos, laiko, detalumo, struktūros
+        ar kitus kriterijus. Tačiau toks skaidymas, gali būti atliekamas vieno
+        duomenų rinkinio ribose, pateikiant vieną ar daugiau rinkinio
+        distribucijų.
 
         Plačiau apie duomenų rinkinius skaitykite skyriuje
         :ref:`duomenų-rinkinys`.
+
+        Duomenų rinkinys atitinka `dcat:Dataset`_ apibrėžimą.
+
+        .. _dcat:Dataset: https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset
+
+    distribucija
+        Distribucija yra duomenų rinkinio fizinė reprezentacija. Vienas duomenų
+        rinkinys gali būti sudarytas iš kelių distribucijų, tuos pačius duomenis
+        pateikiant skirtingais formatais, suskaidant duomenis pagal laiko,
+        vietos ar kitus kriterijus, tuos pačius duomenis pateikiant skirtingu
+        detalumu arba pateikiant agreguotus duomenis įvairiais pjūviais.
+
+        Distribucija atitinka `dcat:Distribution`_ apibrėžimą:
+
+        .. _dcat:Distribution: https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution
 
     DCAT
         Duomenų katalogo žodynas (angl. `Data Catalog Vocabulary`_).
@@ -305,14 +323,23 @@ Sąvokos
         Plačiau apie dimensijas: :ref:`dimensijos`.
 
     modelis
-        Tai informacija kuria apibrėžiama tam tikros kategorijos informacinių
-        objektų duomenų struktūra. :term:`DSA` lentelėje atitinka :data:`model`.
-        Atitinka `rdfs:Class`_ arba duomenų lentelę.
+        Duomenų modelis yra vienintelis ir galutinis informacijos šaltinis
+        apibrėžiantis duomenis. Modelis, kartu su modeliui priklausančių savybių
+        sąrašu apibrėžia kaip duomenys yra fiziškai saugomi ar publikuojami,
+        susiejant fizinę duomenų formą su abstrakčiomis ontologinėmis klasėmis
+        ir savybėmis.
+
+        :term:`DSA` lentelėje atitinka :data:`model`. Duomenų modelį atitinkanti
+        fizinė reprezentacija nurodoma :data:`source` stulpelyje. :data:`source`
+        gali būti duomenų bazės lentelė, CSV failas ar kita, priklauso nuo
+        duomenų šaltinio tipo. Sąsaja su išoriniais žodynais pateikiama
+        :data:`uri` stulpelyje. Siejant su išoriniais žodynais, pateikiama
+        nuoroda į `rdfs:Class`_.
 
         .. _rdfs:Class: https://www.w3.org/TR/rdf-schema/#ch_class
 
     savybė
-        Duomenų :term:`modeliui <modelis>` priklausančių informacinių
+        :term:`Duomenų modeliui <modelis>` priklausančių informacinių
         :term:`objektų <objektas>` savybė, pavyzdžiui miesto pavadinimas, šalis
         kuriai priklauso miestas. :term:`DSA` lentelėje atitinka
         :data:`property`. Atitinka `rdfs:Property`_ arba lentelės stulpelį.
