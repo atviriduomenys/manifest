@@ -16,17 +16,27 @@ Duomenų tipai
 
     Sveikas skaičius.
 
+    Mažiausia galima reikšmė: `-2147483648`.
+
+    Didžiausia galima reikšmė: `2147483647`.
+
     :data:`property.ref` stulpelyje, nurodomi :ref:`matavimo-vienetai`.
 
 .. describe:: number
 
-    Realusis skaičius.
+    Realusis skaičius, apvalinamas naudojant `slankiojo kablelio aritmetiką`__,
+    kur sveikoji skaičiaus dalis gali būti šešių skaitmenų dydžio.
+
+    __ https://en.wikipedia.org/wiki/IEEE_754
 
     :data:`property.ref` stulpelyje, nurodomi :ref:`matavimo-vienetai`.
 
+    Sveikoji dalis atskiriama `.` simbolių.
+
 .. describe:: string
 
-    Simbolių eilutė.
+    Simbolių eilutė. Neriboto dydžio, tačiau fiziškai simbolių eilutė turėtu
+    būti ne didesnė, nei 1G.
 
 .. describe:: text
 
@@ -39,7 +49,7 @@ Duomenų tipai
 
 .. describe:: binary
 
-    Dvejetainiai duomenys.
+    Dvejetainiai duomenys. Bendras baitų skaičius turi būti ne didesnis nei 1G.
 
 
 Data ir laikas
@@ -49,9 +59,9 @@ Data ir laikas
 
     Data ir laikas atitinkantis `ISO 8601`_.
 
-    Mažiausia galima datos reikšmė: `0001-01-01T00:00:00`.
+    Mažiausia galima reikšmė: `0001-01-01T00:00:00`.
 
-    Didžiausia galima datos reikšmė= `9999-12-31T23:59:59.999999`.
+    Didžiausia galima reikšmė: `9999-12-31T23:59:59.999999`.
 
     .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
 
