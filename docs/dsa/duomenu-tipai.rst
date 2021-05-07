@@ -49,6 +49,10 @@ Data ir laikas
 
     Data ir laikas atitinkantis `ISO 8601`_.
 
+    Mažiausia galima datos reikšmė: `0001-01-01T00:00:00`.
+
+    Didžiausia galima datos reikšmė= `9999-12-31T23:59:59.999999`.
+
     .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
 
     :data:`property.ref` stulpelyje, nurodomas `datos ir laiko tikslumas`__
