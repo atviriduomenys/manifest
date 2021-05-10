@@ -152,6 +152,89 @@ Sąvokos
         naudojami skirtingi duomenų serializavimo formatai, koduotės ir skirtingi
         žodynai.
 
+    duomenų brandos lygiai
+        Duomenų brandos lygiai yra apibrėžti `5 ★ Open Data`_ svetainėje.
+        Viso yra penki brandos lygiai, tačiau papildomai verta įtraukti ir
+        nulinį brandos lygį, kai duomenų poreikis yra, tačiau duomenys
+        nekaupiami arba negali būti publikuojami dėl teisinių ar kitų
+        apribojimų.
+
+        `5 ★ Open Data`_ svetainėje brandos lygia apibrėžti, kaip pavyzdį
+        nurodant formatus. Nors formatus galima naudoti kaip pavyzdį labai
+        abstrakčiai apibūdinant ką reiškia brandos lygiai, tačiau tikslus
+        brandos lygis gali būti suteiktas tik atskiriems duomenų  laukams, o
+        ne formatui.
+
+        Duomenų brandos lygiai yra tokie:
+
+        0
+            Duomenys nekaupiami, tačiau poreikis tokiems duomenims yra. Gali
+            būti ir tokių atvejų, kai duomenys yra kaupiami, tačiau dėl teisinių
+            ar kitų priežasčių negali būti publikuojami.
+
+        1
+            Duomenys kaupiami ir publikuojami viešai, bet kokia forma ir bet
+            kokiu formatu. Pavyzdžiui datos tipo laukas gali būti pateikiamas
+            įvairiais formatais „Pirmadienis“, „2021 gegužės 10 d.“,
+            „5/10/21“ ir pan. Kadangi šiuo atveju data gali būti užrašyta bet
+            kokia forma ir bet kokiu tikslumu, nėra galimybės automatinėmis
+            priemonėmis patikimai nuskaityti tokių duomenų.
+
+        2
+            Publikuojami duomenys turi aiškią, mašininiu būdu nuskaitomą
+            struktūrą, tačiau pateikiami nestandartinių arba nuosavybiniu
+            formatu. Pavyzdžiui datos tipo lauko duomenys pateikiami
+            nestandartiniu formatu, tačiau visos reikšmės pateiktos naudojant tą
+            patį formatą, „5/10/21“, „6/10/21“ ir pan. Šiuo atveju, automatiškai
+            nuskaityti tokius duomenis įmanoma tik papildomai įgyvendinant
+            duomenų nuskaitymo priemones, kuriose yra įgyvendintas būtent tokio
+            nestandartinio formato duomenų skaitymas.
+
+        3
+            Duomenys pateikiami naudojant standartinį formatą. Lietuvos atvirų
+            duomenų kontekste, :ref:`standartiniai formatai yra apibrėžti
+            duomenų struktūros aprašo specifikacijoje <duomenų-tipai>`.
+            Pavyzdžiui datos tipo lauko duomenys pateikiami standartiniu `ISO
+            8601`_ formatu. Kadangi duomenys yra pateikti standartiniu formatu,
+            pačio formato specifikacija yra atvira ir viešai publikuojama, o
+            duomenų nuskaitymo priemonės tokį atvirą formatą palaiko, todėl
+            tokių duomenų nuskaitymui nereikia įdėjo jokio papildomo darbo.
+
+        4
+            Kiekvienas publikuojamų duomenų :term:`objektas` turi unikalų
+            identifikatorių ir naudojant tokius unikalius objektų
+            identifikatorius, skirtingų tipų objektai siejami tarpusavyje.
+            Kartu su duomenimis pateikiami ir metaduomenys apie tai, kaip
+            skirtingų tipų objektai siejasi tarpusavyje.
+
+            Pavyzdžiui miesto tipo objektui „Vilnius“ yra suteiktas unikalus
+            identifikatorius `6868eca7-0ae1-4390-83d0-7af642a62863`, o šalies
+            tipo objekto „Lietuva“ duomenų lauko „sostinė“ reikšmė yra objekto
+            „Vilnius“ unikalus identifikatorius
+            `6868eca7-0ae1-4390-83d0-7af642a62863`.
+
+            Turint tokį brandos lygį, duomenis galima ne tik nuskaityti, bet ir
+            jungti tarpusavyje, o jungiant skirtingus duomenis tarpusavyje
+            atsiveria daugiau galimybių juos naudoti įvairiuose taikymuose.
+
+        5
+            Kartu su publikuojamais duomenimis, pateikiami ir metaduomenys
+            apie tai, kaip publikuojami duomenys siejasi su kitais viešaisiais
+            duomenų žodynais (ontologijomis). Pavyzdžiui datos duomenų laukas
+            yra susiejamas su „Dublin Core Metadata Initiative“ publikuojama
+            ontologija, nurodant, kad datos lauko semantinė prasmė yra tokia
+            pati, kaip apibrėžta `dcterms:created`_ ontologijoje. Šiuo atveju,
+            nurodoma, kad datos laukas būtent yra tam tikro resurso sukūrimo
+            data.
+
+            Kai duomenys yra susieti su išoriniais žodynais, atsiranda galimybė
+            įgyvendinti tokias priemones, kurios veiktų universaliai,
+            nepriklausomai nuo duomenų šaltinio ar duomenų kilmės.
+
+        .. _5 ★ Open Data: https://5stardata.info/
+        .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
+        .. _dcterms:created: http://purl.org/dc/terms/created
+
     kanoniniai duomenys
         Kanoniniai duomenys yra tarsi duomenų etalonas, kuris nusako kokios
         duomenų reikšmės yra teisingos. Pavyzdžiui įmonės pavadinimas gali būti
