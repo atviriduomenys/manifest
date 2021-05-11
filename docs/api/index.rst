@@ -321,7 +321,7 @@ getone
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
-        "_rev": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+        "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
         "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
         "continent": "Europe"
     }
@@ -350,7 +350,7 @@ insert
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
-        "_rev": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+        "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
         "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
         "continent": "Europe"
     }
@@ -382,7 +382,7 @@ tada vykdo `update` veiksmą.
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-        "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+        "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
         "continent": "Africa"
     }
@@ -395,7 +395,7 @@ update
 nenurodomos, data tū savybių reikšmės pakeičiamos pagal nutylėjimą
 naudojamomis reikšmėmis.
 
-Vykdant `update` taip pat būtina perduoti `_rev` revizijos numeri. Jei
+Vykdant `update` taip pat būtina perduoti `_revision` revizijos numeri. Jei
 revizijos numeris nesutaps, su tuo, kas jau yra duomenų bazėje, tada duomenys
 nebus keičiami ir bus gražinta klaida. Tai reikalinga tam, kad būtų
 užtikrintas duomenų vientisumas.
@@ -404,7 +404,7 @@ užtikrintas duomenų vientisumas.
 
     http PUT /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
     {
-        "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+        "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "continent": "Africa"
     }
     EOF
@@ -418,7 +418,7 @@ užtikrintas duomenų vientisumas.
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-        "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+        "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
     }
 
@@ -441,7 +441,7 @@ keičia tik tas savybes, kurios nurodytos.
 
     http PATCH /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
     {
-        "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+        "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "continent": "Africa"
     }
     EOF
@@ -455,7 +455,7 @@ keičia tik tas savybes, kurios nurodytos.
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-        "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+        "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
     }
 
@@ -478,7 +478,7 @@ Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-        "_rev": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
+        "_revision": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
         "_txn": "448045c6-9993-4845-b889-56483a20f8f3"
     }
 
@@ -503,7 +503,7 @@ būdu ištrinto objekto atstatyti neįmanoma.
     {
         "_type": "datasets/gov/dc/geo/continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-        "_rev": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
+        "_revision": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
         "_txn": "448045c6-9993-4845-b889-56483a20f8f3"
     }
 
@@ -559,14 +559,14 @@ skirtingiems modeliams, vykdant užklausą vardų erdvės kontekste.
             {
                 "_type": "datasets/gov/dc/geo/continent",
                 "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
-                "_rev": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
+                "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
                 "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
                 "continent": "Africa"
             },
             {
                 "_type": "datasets/gov/dc/geo/continent",
                 "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
-                "_rev": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+                "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
                 "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
                 "continent": "Europe"
             }
@@ -621,4 +621,4 @@ Tada bus vykdomas srautinis veiksmų vykdymas.
 Srautinės užklausos atsakymas yra santrauka api tai, kiek kokių veiksmų buvo
 įvykdyta ir transakcijos numeris. Naudojant transakcijos numerį, atskiros
 užklausos metu, galima gauti visų pakeistų objektų identifikatorius `_id` ir
-revizijos numerius `_rev` ir informaciją apie tai, kas tiksliai buvo pakeista.
+revizijos numerius `_revision` ir informaciją apie tai, kas tiksliai buvo pakeista.
