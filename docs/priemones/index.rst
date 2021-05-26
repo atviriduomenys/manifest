@@ -120,6 +120,8 @@ Todėl prieš diegiant, jūsų naudojamoje aplinkoje turi būti `įdiegta`__ Pyt
 __ https://www.python.org/downloads/
 
 
+.. _install-debian-ubuntu:
+
 Debian/Ubuntu
 -------------
 
@@ -135,6 +137,7 @@ Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
 .. code-block:: sh
 
     $ sudo apt update
+    $ sudo apt upgrade
     $ sudo apt install -y \
          git make build-essential libssl-dev zlib1g-dev \
          libbz2-dev libreadline-dev libsqlite3-dev wget \
@@ -143,7 +146,7 @@ Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
          python-openssl
     $ curl https://pyenv.run | bash
     $ cd
-    $ PYVER=$(.pyenv/bin/pyenv install --list | grep -v - | tail -1 | xargs)
+    $ PYVER=$(.pyenv/bin/pyenv install --list | grep -v - | grep 3.9. | tail -1 | xargs)
     $ .pyenv/bin/pyenv install $PYVER
 
 Kai jau turite tinkamą Python_ versiją, reikia sukurti izoliuotą aplinką į
@@ -179,7 +182,62 @@ Tai padarius, galite patikrinti ar komanda `spinta` veikia:
 Windows
 -------
 
-Deja dėl žmogiškųjų resursų trūkumo, Windows OS šiuo metu nėra palaikoma.
+Tiesioginio Windows palaikymo nėra, tačiau Spinta_ galima įdiegti ir naudoti
+per Windows Subsystem for Linux (WSL). Informaciją apie tai, kaip įsidiegti
+WSL galite rasti `Microsoft Windows dokumentacijoje`__.
+
+__ https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+Renkantis Linux distribuciją iš Microsoft Store rekomenduojame rinktis Ubuntu__.
+
+.._Ubuntu: https://www.microsoft.com/en-in/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
+
+Įsidiegus ir pasileidus Ubuntu per WSL, toliau sekite
+:ref:`install-debian-ubuntu` instrukcijas.
+
+Galimos problemos ir jų sprendimai
+``````````````````````````````````
+
+Jei įvykdžius sekančią komandą:
+
+.. code-block:: sh
+
+    $ curl https://pyenv.run | bash
+
+Gaunate tokią klaidą::
+
+    % Total % Received % Xferd Average Speed Time Time Time Current
+    Dload Upload Total Spent Left Speed
+    100 285 100 285 0 0 396 0 --:--:-- --:--:-- --:--:-- 395
+    curl: (60) SSL certificate problem: self signed certificate in certificate chain
+    More details here: https://curl.haxx.se/docs/sslcerts.html
+
+    curl failed to verify the legitimacy of the server and therefore could not
+    establish a secure connection to it. To learn more about this situation and
+    how to fix it, please visit the web page mentioned above.
+
+Tuomet įsitikinkite, kad jūsų ugniasienė neblokuoja  prieigos prie išorinių
+resursų. Taip pat galite laikinai sustabdyti antivirusinė, kuri taip pat gali
+blokuoti tokio pobūdžio komandų vykdymą.
+
+Kitas variantas, `curl` komandą galite vykdyti su `-k` argumentu.
+
+Panaši situacija gali pasitaikyti ir vykdant:
+
+.. code-block:: sh
+
+    .pyenv/bin/pyenv install $PYVER
+
+Šios komandos vykdymo metu galite gauti tokią klaidą::
+
+    Downloading Python-3.9.5.tar.xz...
+    -> https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tar.xz
+    error: failed to download Python-3.9.5.tar.xz
+
+    BUILD FAILED (Ubuntu 20.04 using python-build 2.0.0)
+
+Tokių atveju įsitikinkite ar ugniasienė leidžia kreiptis į išore ir
+pabandykite laikinai sustabdyti antivirusinę programą.
 
 
 DSA generavimas
