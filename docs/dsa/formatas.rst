@@ -189,6 +189,8 @@ Modelių pavadinimai
     Kiekvieno modelio pavadinimo pirma raidė didžioje, kitos mažosios.
     Pavadinimo žodžiai neatskiriami, nei tarpais, nei kitais skyrybos ženklais.
 
+    Modelio pavadinimai užrašomi vienaskaita.
+
 Duomenų laukų pavadinimai
     Pavyzdys: `snake_case`
 
