@@ -392,8 +392,7 @@ Duomenų publikavimas į saugyklą
 ===============================
 
 Prieš publikuojant duomenis į Saugyklą, Saugykloje turi būti įkeltas duomenų
-struktūros aprašas. Saugykla gali priimti tok tokius duomenis, kurie yra
-aprašyti duomenų struktūros apraše.
+struktūros aprašas. Saugykla gali priimti tik duomenis, turinčius :term:`DSA`.
 
 Taip pat, prieš publikuojant duomenis, Saugykloje turi būti užregistruotas
 klientas, kuriam suteikiamos rašymo į saugyklą teisės. Klientui suteikiamos
