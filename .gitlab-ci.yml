@@ -13,7 +13,11 @@ before_script:
   - python -m venv env
   - env/bin/pip install -r docs/requirements.txt
 
+stages:
+  - docs
+
 docs:
+  stage: docs
   script:
     - make -C docs html
     - make -C docs linkcheck
