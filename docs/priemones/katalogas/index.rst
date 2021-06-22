@@ -1,4 +1,4 @@
 Katalogas
 #########
 
-DODO
+Informacija ruošiama.

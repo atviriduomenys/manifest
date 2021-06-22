@@ -459,3 +459,11 @@ pavyzdžiui kas naktį arba kas valandą.
 
 Reikėtu atkreipti dėmesį į tai, kad vienu metu reikėtu leisti tik vieną
 `spinta push` komandos procesą.
+
+
+.. toctree::
+    :caption: Žinynas
+    :maxdepth: 3
+
+    katalogas/index
+    index

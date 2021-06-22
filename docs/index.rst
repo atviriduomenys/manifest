@@ -57,7 +57,6 @@ Dokumentacija sudaryta iš šių esminių dalių:
     dsa/index
     api/index
     priemones/index
-    priemones/katalogas/index
     savokos
 
 - :ref:`Rodyklė <genindex>`
