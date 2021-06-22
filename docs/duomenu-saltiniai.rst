@@ -101,8 +101,7 @@ _id   country      name
 5     1            Klaipėda
 ====  ===========  =================
 
-Taip pat skaitykite: :ref:`duomenų-bazės`, :ref:`duomenų-atranka`,
-:ref:`resource-type-sql`.
+Taip pat skaitykite: :ref:`duomenų-atranka`, :ref:`resource-type-sql`.
 
 
 CSV
@@ -170,17 +169,17 @@ pateikta tik viena lentelė, tai :data:`model.source` yra tuščias.
 
 Kadangi CSV failai yra sudėti į ZIP archyvą, mums nurodyti, kad prieš skaitant
 duomenis, CSV failai turi būti išskleisti iš archyvo, tam naudojam
-:func:`extract` funkciją. Kadangi išskleisti failai bus naudojami aprašant kelis
-:data:`resource`, tai :data:`dataset` dimensijos kontekste įtraukiam
-:data:`param` pavadinimu `data`, kurį naudosim aprašant tiek `salys`, teik
+:func:`func.extract` funkciją. Kadangi išskleisti failai bus naudojami aprašant
+kelis :data:`resource`, tai :data:`dataset` dimensijos kontekste įtraukiam
+:ref:`param` pavadinimu `data`, kurį naudosim aprašant tiek `salys`, teik
 `miestai` :data:`resource`.
 
-Jei CSV failai nebūtų suarchyvuoti, mums uštektų nurodyti tik URL iki CSV failo,
-tačiau, skaitant iš archyvo, reikia panaudoti :func:`getitem` funkciją nurodant,
-kad :data:`source` stulpelyje įrašyta reikšmė yra `data` parametrui priskirto
-archyvo viduje.
+Jei CSV failai nebūtų suarchyvuoti, mums užtektų nurodyti tik URL iki CSV failo,
+tačiau, skaitant iš archyvo, reikia panaudoti :func:`func.getitem` funkciją
+nurodant, kad :data:`source` stulpelyje įrašyta reikšmė yra `data` parametrui
+priskirto archyvo viduje.
 
-Ir paskutinis dalykas, prieš skaitant duomenis, :func:`sep` iškvietimas,
+Ir paskutinis dalykas, prieš skaitant duomenis, :func:`tabular.sep` iškvietimas,
 nurodant, kad CSV faile naudojamas nestandartinis reikšmių skirtukas.
 
 Visa kita aprašoma lygiai taip pat, kaip ir SQL atveju.
@@ -290,11 +289,11 @@ ne tik Lietuvos.
 :data:`model.source` stulpelyje nurodyti JSON atributų pavadinimai, iš kurių
 skaitomi duomenys.
 
-8-oje eilutėje, :data:`model` kontekste įtrauktas :data:`pram` pavadinimu
+8-oje eilutėje, :data:`model` kontekste įtrauktas :ref:`param` pavadinimu
 `country`, kuris generuoja parametrus, skaitant duomenis iš 3-ioje eilutėje
 aprašyto `country` :term:`modelio <modelis>`. Tokiu būdu gauname visų šalių
 sąrašą ir 7-oje eilutėje :data:`resource.source` galime nurodyti URI su šalies
-kodu, gautu iš `country` :data:`param`.
+kodu, gautu iš `country` :ref:`param`.
 
 11-oje eilutėje, `country` reikšmę gauname iš `country` parametro, kadangi
 miesto duomenyse, nei miesto kodo, nei `id` nėra.
@@ -375,7 +374,7 @@ Tarkime turime XML failą, kuris pasiekiamas adresu
 Šiuo atveju, visi duomenys pateikti viename XML faile, todėl aprašomas tik
 vienas :data:`resource`. :data:`model.source` ir :data:`property.source`
 stulpelyje pateikiamas `XPath <https://en.wikipedia.org/wiki/XPath>`_ reikšmė,
-kuri, jei :data:`prepare` neužpildytas, vykdoma su :func:`xpath` funkcija.
+kuri, jei :data:`prepare` neužpildytas, vykdoma su :func:`xml.xpath` funkcija.
 
 Galutiniame rezultate gauname tokius duomenis:
 

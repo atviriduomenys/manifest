@@ -33,8 +33,8 @@ duomenų šaltinio :term:`ŠDSA` lentelę, o tada :term:`ŠDSA` transformuoti į
 :term:`ADSA`.
 
 :term:`DSA` galima aprašyti duomenis saugomus įvairiuose duomenų šaltiniuose,
-plačiau apie tai galima pasiskaityti skyriuje :ref:`sources`, tačiau kaip
-pavyzdį galime panagrinėti išgalvotą Oracle duomenų bazės duomenų šaltinį,
+plačiau apie tai galima pasiskaityti skyriuje :ref:`duomenų-šaltiniai`, tačiau
+kaip pavyzdį galime panagrinėti išgalvotą Oracle duomenų bazės duomenų šaltinį,
 kuriame yra viena lentelė:
 
 ====  ========  ===============

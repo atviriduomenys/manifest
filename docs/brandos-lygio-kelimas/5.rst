@@ -126,7 +126,7 @@ skaitomi du kartus ir paskirstomi dviejose lentelėse. Pirmą kartą skaitome ti
 miestus ir prijungiame šalį panaudojant šalies pirminį raktą.
 
 Antram duomenų šaltiniui darome tą patį, tik normalizuojame šalies pavadinimus
-panaudodami :data:`enum` reikšmių normalizavimo sąrašą.
+panaudodami :ref:`enum` reikšmių normalizavimo sąrašą.
 
 Abiejų duomenų šaltinių modeliai turi vieną `country` bazę ir vieną `city`
 bazę. O kadangi :data:`base.type` yra `proxy`, tai duomenų saugykloje, bus

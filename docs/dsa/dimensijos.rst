@@ -5,11 +5,11 @@ Dimensijos
 ==========
 
 :term:`Dimensijos <dimensija>` apibrėžia duomenų metaduomenų detalumo lygį.
-Stulpeliai :data:`dataset`, :data:`resource`, :data:`base`, :data:`model` ir
+Stulpeliai :data:`dataset`, :data:`resource`, :ref:`base`, :data:`model` ir
 :data:`property` yra naudojami kaip :term:`DSA` dimensijos. :data:`dataset` yra
 aukščiausia dimensija, :data:`property` žemiausia. :data:`dataset` ir
 :data:`resource` dimensijos atitinka DCAT_ žodyną ir užtikrina trečia duomenų
-brandos lygį, o žemiau esantys :data:`base`, :data:`model` ir :data:`property`
+brandos lygį, o žemiau esantys :ref:`base`, :data:`model` ir :data:`property`
 atitinka RDFS_ žodyną ir užtikrina penktą duomenų brandos lygį. Vienoje lentelės
 eilutėje gali būti užpildytas ne daugiau kaip vienas dimensijos stulpelis.
 Užpildytasis dimensijos stulpelis nustato visų kitų stulpelių prasmę.
@@ -68,7 +68,7 @@ dimensijas ir keletą papildomų dimensijų, atsiranda galimybė išsamiai apra�
 visą duomenų šaltinio struktūrą.
 
 
-.. _duomenų-rinkinys:
+.. _dataset:
 
 Duomenų rinkinys
 ----------------
@@ -146,7 +146,7 @@ ryšius.
 
 Jei duomenys yra išskaidyti pagal laiką, vietove ar kitus kriterijus į
 skirtingus duomenų šaltinius, tokie duomenys turėtų būti apjungti į vieną modelį
-:data:`base` pagalba ir turėtų priklausyti vienam :term:`duomenų rinkiniui
+:ref:`base` pagalba ir turėtų priklausyti vienam :term:`duomenų rinkiniui
 <duomenų rinkinys>`. Tą pačią semantinę prasmę turintys duomenys neturėtų būti
 išskaidyti keliuose :term:`duomenų rinkiniuose <duomenų rinkinys>`.
 
@@ -167,7 +167,7 @@ atvertus duomenis, tai gali būti nuorodos į CSV failus, į viešą JSON API ir
 :term:`Duomenų šaltinio <duomenų šaltinis>` įrašas taip pat naudojamas tam, kad
 automatiškai atnaujinti :term:`ADK` esančius :term:`duomenų rinkinius <duomenų
 rinkinys>`, patelkiant konkrečias nuorodas į konkrečius duomenų failus.
-Analogiškai kaip ir :data:`dataset:` atveju, :data:`resource.ref` stulpelyje
+Analogiškai kaip ir :ref:`dataset` atveju, :data:`resource.ref` stulpelyje
 nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
 .. data:: resource.type
@@ -226,6 +226,10 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         WSDL servisas.
 
+.. data:: resource.source
+
+    Priklauso nuo :data:`resource.source`. Žiūrėti :ref:`resource`.
+
 .. data:: resource.ref
 
     Duomenų šaltinio duomenų kataloge identifikatorius. Priklauso nuo
@@ -255,34 +259,34 @@ priemonė skirta įstaigos duomenų atvėrimui turėtų palaikyti tik tokius duo
 Esant poreikiui gali būti įgyvendintas palaikymas naujiems duomenų šaltiniams.
 
 
-.. _modelio-bazė:
+.. _base:
 
 Modelio bazė
 ------------
 
 Modelio bazė naudojama kelių modelių (lentelių) susiejimui arba apjungimui.
 Kadangi įvairiuose duomenų šaltiniuose dažnai pasitaiko duomenų, kuriuose
-saugomos tą pačią semantinę prasmę turinčios lentelės, :data:`base` stulpelyje
+saugomos tą pačią semantinę prasmę turinčios lentelės, :ref:`base` stulpelyje
 galima nurodyti kaip skirtingos lentelės siejasi tarpusavyje.
 
 :data:`base.type` stulpelyje nurodoma kokiu būdu lentelės yra susiję.
-:term:`ETL` priemonė vadovaujantis :data:`base` informacija duomenis
+:term:`ETL` priemonė vadovaujantis :ref:`base` informacija duomenis
 automatiškai transformuoja ir sujungia kelias lenteles į vieną.
 
 Modeliai ne tik susiejami semantiškai tarpusavyje, bet taip pat suliejami ir
 dviejų modelių duomenys naudojant laukų sąrašą nurodytą :data:`base.ref`
 stulpelyje. :data:`base.ref` stulpelyje nurodyti laukai naudojami norint
 unikaliai identifikuoti :data:`model` lentelėje esančią eilutę, kuri atitinka
-:data:`base` lentelėje esančią eilutę.
+:ref:`base` lentelėje esančią eilutę.
 
-Siejant :data:`model` ir :data:`base` duomenis tarpusavyje, :data:`model`
+Siejant :data:`model` ir :ref:`base` duomenis tarpusavyje, :data:`model`
 lentelė įgauna lygiai tokius pačius unikalius identifikatorius, kurie yra base
 lentelėje. Tai reiškia, kad :data:`model` lentelėje negali būti duomenų, kurių
-nėra :data:`base` lentelėje.
+nėra :ref:`base` lentelėje.
 
-:data:`model.property` laukai turi sutapti su :data:`base` modelio laukais,
-tačiau :data:`model` gali turėti ir papildomų laukų, kurių nėra :data:`base`
-modelyje Visi :data:`base.ref` laukai turi būti aprašyti tiek :data:`base`, tiek
+:data:`model.property` laukai turi sutapti su :ref:`base` modelio laukais,
+tačiau :data:`model` gali turėti ir papildomų laukų, kurių nėra :ref:`base`
+modelyje Visi :data:`base.ref` laukai turi būti aprašyti tiek :ref:`base`, tiek
 :data:`model` modeliuose.
 
 .. data:: base.source
@@ -303,8 +307,8 @@ Nenaudojamas.
 
     .. describe:: base
 
-        Išplečia :data:`base` ir saugo tik tų :data:`property` duomenis, kurių
-        neturi :data:`base`. :data:`base` ir :data:`model` identifikatoriai
+        Išplečia :ref:`base` ir saugo tik tų :data:`property` duomenis, kurių
+        neturi :ref:`base`. :ref:`base` ir :data:`model` identifikatoriai
         sutampa.
 
     .. describe:: partition
@@ -320,13 +324,13 @@ Nenaudojamas.
     .. describe:: proxy
 
         Naudojama tada, kai kelių modelių duomenys yra identiški vienam
-        :data:`base` ir reikia duomenis saugoti tik į :data:`base`.
+        :ref:`base` ir reikia duomenis saugoti tik į :ref:`base`.
 
     .. describe:: proto
 
-        Naudojamas tada, kai :data:`model` tik paveldi :data:`base` savybes,
+        Naudojamas tada, kai :data:`model` tik paveldi :ref:`base` savybes,
         tačiau duomenis saugo atskirai ir identifikatorių nepernaudoja iš
-        :data:`base`.
+        :ref:`base`.
 
     Savybių matrica:
 
@@ -343,20 +347,20 @@ Nenaudojamas.
     ==========  ==========  ===========  =======================  =======  ========
 
     Išplečiami
-        :data:`model` gali turėti property eilučių, kurių neturi :data:`base.`
+        :data:`model` gali turėti property eilučių, kurių neturi :ref:`base`.
 
     Dubliuojami
         :data:`model` saugo :data:`property` reikšmes, kurios sutampa su
-        :data:`base`.
+        :ref:`base`.
 
     Vienas identifikatorius
-        :data:`model` gauna identifikatorių iš :data:`base` ir abiejose vietose
+        :data:`model` gauna identifikatorių iš :ref:`base` ir abiejose vietose
         naudojamas vienodas identifikatorius.
 
 .. data:: base.ref
 
-    :data:`model.property:data:` reikšmė, kurios pagalba :data:`model` objektai
-    siejami su :data:`base` objektais. Jei susiejimas pagal vieną model property
+    :data:`model.property` reikšmė, kurios pagalba :data:`model` objektai
+    siejami su :ref:`base` objektais. Jei susiejimas pagal vieną model property
     yra neįmanomas, galima nurodyti kelis :data:`model.property` pavadinimus
     atskirtus kableliu.
 
@@ -428,7 +432,7 @@ keisti tik duomenų pateikimą, užtenka naudoti :data:`model.prepare` formules.
 
 .. data:: model.uri
 
-    Sąsaja su :uri:`išoriniu žodynu <vocab>`.
+    Sąsaja su :ref:`išoriniu žodynu <vocab>`.
 
 .. data:: model.title
 
@@ -437,6 +441,10 @@ keisti tik duomenų pateikimą, užtenka naudoti :data:`model.prepare` formules.
 .. data:: model.description
 
     Modelio aprašymas.
+
+.. data:: model.property
+
+    Modeliui priklausantis duomenų laukas.
 
 
 .. _savybė:
@@ -484,6 +492,10 @@ Savybė
 
     Duomenų lauko aprašymas.
 
+.. data:: property.enum
+
+    Žiūrėti :ref:`enum`.
+
 
 Papildomos dimensijos
 =====================
@@ -523,7 +535,7 @@ Aprašyti prefiksai gali būti naudojami :data:`model.uri` ir :data:`property.ur
 stulpeliuose tokiu būdu: `prefix:name`.
 
 
-.. _kategoriniai-duomenys:
+.. _enum:
 
 Kategoriniai duomenys
 ---------------------
@@ -561,8 +573,7 @@ pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enu
 
     .. data:: enum.ref
 
-        Pasirinkimų sąrašo pavadinimas, kuris gali būti naudojamas kaip trečias
-        :func:`choose` argumentas.
+        Pasirinkimų sąrašo pavadinimas.
 
     .. data:: enum.title
 
@@ -573,7 +584,7 @@ pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enu
         Fiksuotos reikšmės aprašymas.
 
 Pagal nutylėjimą, jei :data:`property.prepare` yra tuščias ir :data:`property`
-turi :data:`enum` sąrašą, tada jei šaltinis turi neaprašytą reikšmę, turėtų
+turi :ref:`enum` sąrašą, tada jei šaltinis turi neaprašytą reikšmę, turėtų
 būti fiksuojama klaida.
 
 Jei yra poreikis fiksuoti tik tam tikras reikšmes, o visas kitas palikti tokias,
@@ -605,7 +616,7 @@ tenkinama nurodyta sąlyga. Tokias situacijas galima aprašyti pasitelkiant
         visada grąžinama :data:`switch.source` reikšmė.
 
 
-.. _parametrai:
+.. _param:
 
 Parametrai
 ----------
@@ -620,7 +631,7 @@ pagalba galima kartoti :data:`resource` su kiekviena reikšme.
 Parametrai dažniausiai naudojami žemesnio brandos lygio duomenų šaltiniams
 aprašyti, o taip pat API atvejais, kai duomenys atiduodame dinamiškai.
 
-Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
+Parametrai aprašomi pasitelkiant papildomą :ref:`param` dimensiją.
 
 .. data:: param
 
@@ -639,28 +650,28 @@ Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
         kintamasis.
 
 Jei parametro reikšmė yra :term:`iteratorius`, tada :term:`dimensija`, kurios
-kontekste yra aprašytas :ref:`parametras <parametrai>` yra kartojama tiek kartų,
+kontekste yra aprašytas :ref:`parametras <param>` yra kartojama tiek kartų,
 kiek reikšmių grąžina :term:`iteratorius`.
 
-Jei yra keli :data:`param` grąžinantys :term:`iteratorius`, tada iš
+Jei yra keli :ref:`param` grąžinantys :term:`iteratorius`, tada iš
 visų :term:`iteratorių <iteratorius>` sudaroma `Dekarto sandauga`_ ir
 :data:`resource` dimensija vykdoma su kiekviena sandaugos rezultato reikšme.
 
 .. _Dekarto sandauga: https://lt.wikipedia.org/wiki/Dekarto_sandauga
 
-Nepriklausomai kurioje :uri:`dimensijoje <dimensijos>` panaudoti :data:`param`,
+Nepriklausomai kurioje :ref:`dimensijoje <dimensijos>` panaudoti :ref:`param`,
 grąžinantys iteratorius, visada kartojama visa :data:`resource`
-:uri:`dimensija <dimensijos>`.
+:ref:`dimensija <dimensijos>`.
 
 Jei sekančioje :term:`DSA` eilutėje, einančioje po eilutės, kurioje aprašytas
-:data:`param`, nenurodytas :data:`type` ir neužpildytas joks kitas
+:ref:`param`, nenurodytas :data:`type` ir neužpildytas joks kitas
 :term:`dimensijos <dimensija>` stulpelis, tada parametras tampa
 :term:`iteratoriumi <iteratorius>`, kurio reikšmių sąrašą sudaro sekančiose
 eilutėse patektos :data:`source` ir :data:`prepare` reikšmės.
 
-:data:`param` reikšmės pasiekiamos naudojanti pavadinimą įrašytą :data:`pram
-ref` stulpelyje. Pavyzdžiui, jei :data:`pram.ref` stulpelyje įrašyta `x`, tada
-`x` parametro reikšmę galima gauti taip:
+:ref:`param` reikšmės pasiekiamos naudojanti pavadinimą įrašytą
+:data:`param.ref` stulpelyje. Pavyzdžiui, jei :data:`param.ref` stulpelyje
+įrašyta `x`, tada `x` parametro reikšmę galima gauti taip:
 
 .. describe:: source
 
@@ -717,6 +728,8 @@ kontekste.
     .. data:: comment.title
 
         Komentaro data, `ISO 8601`_ formatu.
+
+        .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
 
     .. data:: comment.description
 
@@ -870,9 +883,9 @@ bet ir modelio pavadinimas.
 Jei :data:`property.type` reikšmė yra `generic`, tada galima naudoti
 papildomą :data:`ref` dimensiją, kuri nurodo galimus ryšių modelius.
 
-.. data:: ref
+.. data:: generic
 
-    .. data:: ref.ref
+    .. data:: generic.ref
 
         Modelio pavadinimas, su kuriuo gali būti siejama savybė.
 

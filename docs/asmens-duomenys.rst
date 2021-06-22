@@ -14,28 +14,28 @@ Nuasmeninimas
 Duomenų laukų reikšmių nuasmeninimas atliekamas :data:`property.prepare`
 stulpelio pagalba.
 
-.. function:: randomize(n)
+.. function:: randomize(model, n)
 
     Reikšmės keičiamos parenkant atsitiktinę vertę ±\ `n` intervale nuo
     tikrosios vertės.
 
-.. function:: permutate()
+.. function:: permutate(model)
 
     Atsitiktine tvarka sumaišomos duomenų reikšmės.
 
-.. function:: hash()
+.. function:: hash(model)
 
     Taikyti numatytą maišos funkciją.
 
-.. function:: hash(name)
+.. function:: hash(model, name)
 
     Taikyti konkrečią `name` maišos funkciją.
 
-.. function:: sample(n)
+.. function:: sample(model, n)
 
     Atsitiktine tvarka atrenkama `n` procentų žodžių naudojamų tekste.
 
-.. function:: group(n)
+.. function:: group(model, n)
 
     Pakeičia originalias reikšmes į intervalų grupes taip, kad į vieną intervalą
     patektų ne mažiau nei `n` reikšmių. Jei viena konkreti reikšmė pasikartoja
@@ -160,7 +160,7 @@ Duomenų naudotojų įsipareigojimai
 Duomenų naudotojas, gavęs prieigos raktą, įsipareigoja laikytis duomenų
 naudojimo sąlygų ir įgyvendinti priemones asmens duomenų šalinimui iš savo
 duomenų saugyklos. Duomenų šalinimui, duomenų naudotojas privalo teikti
-sutartinį API prieigos tašką :ref:`aprašytą šiame vadove <api>`. Privaloma
+sutartinį API prieigos tašką :ref:`aprašytą šiame vadove <saugykla>`. Privaloma
 įgyvendinti tik :ref:`wipe` operaciją.
 
 Jei keičiasi viešų asmens duomenų naudojimo reglamentavimas ar pats viešųjų
@@ -188,7 +188,7 @@ tiekėjas gali nutraukti asmens duomenų tiekimą ir papildomai vykdys eilę
 
 Duomenų naudotojas, naudojantis asmens duomenis, tampa asmens duomenų
 valdytoju ir prisiima visą su tuo susijusią atsakomybę, įsipareigoja laikytis
-visų BDAR_ reikalavimų.
+visų :term:`BDAR` reikalavimų.
 
 
 Subjektų savitarna

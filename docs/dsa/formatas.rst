@@ -35,7 +35,7 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     **Duomenų rinkinys**
 
     Kodinis duomenų rinkinio pavadinimas. Atitinka `dcat:Dataset`_ prasmę.
-    Žiūrėti :ref:`duomenų-rinkinys`.
+    Žiūrėti :ref:`dataset`.
 
     .. _dcat:Dataset: https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset
 
@@ -53,7 +53,7 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     **Modelio bazė**
 
     Kodinis bazinio modelio pavadinimas. Atitinka `rdfs:subClassOf`_ prasmę
-    (:data:`model` `rdfs:subClassOf` :data:`base`). Žiūrėti :ref:`modelio-bazė`.
+    (:data:`model` `rdfs:subClassOf` :data:`base`). Žiūrėti :ref:`base`.
 
     .. _rdfs:subClassOf: https://www.w3.org/TR/rdf-schema/#ch_subclassof
 

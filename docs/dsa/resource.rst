@@ -1,3 +1,5 @@
+.. _resource:
+
 Duomenų šaltiniai
 =================
 
@@ -6,6 +8,7 @@ Duomenų šaltiniai
 SQL
 ---
 
+.. module:: sql
 
 .. _sql-resource-source:
 
@@ -132,6 +135,8 @@ SQL Dump
 CSV
 ---
 
+.. module:: tabular
+
 .. describe:: resource.type
 
     Galimos reikšmės: `csv`, `tsv`.
@@ -163,6 +168,8 @@ CSV
 JSON
 ----
 
+.. module:: json
+
 .. describe:: resource.type
 
     Galimos reikšmės: `json`, `jsonl`.
@@ -190,6 +197,8 @@ JSON
 XML
 ---
 
+.. module:: xml
+
 .. describe:: resource.type
 
     Galimos reikšmės: `xml`, `html`.
@@ -205,7 +214,7 @@ XML
 
 .. describe:: model.prepare
 
-    Jei neužpildyta, vykdoma :func:`xpath(self) <xpath>` funkcija.
+    Jei neužpildyta, vykdoma :func:`xpath(self) <xml.xpath>` funkcija.
 
     .. function:: xpath(expr)
 
@@ -218,12 +227,14 @@ XML
 
 .. describe:: model.prepare
 
-    Jei neužpildyta, vykdoma :func:`xpath(self) <xpath>` funkcija, iš
+    Jei neužpildyta, vykdoma :func:`xpath(self) <xml.xpath>` funkcija, iš
     :data:`model` gauto elemento kontekste.
 
 
 Skaičiuoklių lentelės
 ---------------------
+
+.. module:: spreadsheet
 
 .. describe:: resource.type
 
@@ -248,6 +259,8 @@ Skaičiuoklių lentelės
 
 WSDL
 ----
+
+.. module:: wsdl
 
 .. describe:: resource.type
 

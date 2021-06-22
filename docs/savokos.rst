@@ -364,8 +364,7 @@ Sąvokos
         duomenų rinkinio ribose, pateikiant vieną ar daugiau rinkinio
         distribucijų.
 
-        Plačiau apie duomenų rinkinius skaitykite skyriuje
-        :ref:`duomenų-rinkinys`.
+        Plačiau apie duomenų rinkinius skaitykite skyriuje :ref:`dataset`.
 
         Duomenų rinkinys atitinka `dcat:Dataset`_ apibrėžimą.
 
@@ -494,3 +493,25 @@ Sąvokos
         skirtingos operacinės sistemos būtų suderinamos tarpusavyje.
 
         https://en.wikipedia.org/wiki/POSIX
+
+    DOS
+        `MS-DOS`_.
+
+        .. _MS-DOS: https://en.wikipedia.org/wiki/MS-DOS
+
+    reguliarioji išraiška
+        Simbolių seka apibrėžianti tam tikrą šabloną tekste (angl.
+        `Regular Expression`_).
+
+        .. _Regular Expression: https://en.wikipedia.org/wiki/Regular_expression
+
+    JSON
+        Atviras duomenų formatas (angl. `JavaScript Object Notation`_).
+
+        .. _JavaScript Object Notation: https://en.wikipedia.org/wiki/JSON
+
+    RDF
+        Duomenų modelis sudarytas iš subjekto, predikato ir objekto tripletų
+        (angl. `Resource Description Framework`_).
+
+        .. _Resource Description Framework: https://en.wikipedia.org/wiki/Resource_Description_Framework

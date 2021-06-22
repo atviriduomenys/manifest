@@ -4,7 +4,7 @@
 Formulės
 ########
 
-Formulės pildomas :data:`prepare` stulpelyje. Formulių pagalba galima atlikti
+Formulės rašomos :data:`prepare` stulpelyje. Formulių pagalba galima atlikti
 įvairius duomenų transformavimo, nuasmeninimo, filtravimo ir kokybės tikrinimo
 veiksmus.
 
@@ -169,6 +169,8 @@ dažnai formulė yra lengviau skaitoma, naudojant funkcijų grandinę.
 Standartinės funkcijos
 ======================
 
+.. module:: func
+
 Priklausomai nuo duomenų šaltinio ar konteksto gali būti naudojami skirtingi
 veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
 
@@ -195,7 +197,7 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
 
 .. function:: param(name)
 
-    Parametras pavadinimu `name`. Žiūrėti :ref:`parametrizacija`.
+    Parametras pavadinimu `name`. Žiūrėti :ref:`param`.
 
 .. function:: var(name)
 
@@ -337,7 +339,7 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
     Gali būti interpretuojamas skirtingai, priklausomai nuo konteksto.
     Įprastiniu atveju keičia skaičiaus ženklą.
 
-.. function:: group(*args)
+.. function:: tuple(*args)
 
     Taip pat galima naudoti tokia išraiška::
 
@@ -349,7 +351,7 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
         Tuščia grupė.
 
     a, b
-        Tas pats, kas `group(a, b)`.
+        Tas pats, kas `tuple(a, b)`.
 
 .. function:: list(*args)
 
@@ -625,7 +627,7 @@ naudoti tokias formules:
     .. function:: cron(line)
 
         Duomenų atnaujinimo laikas, analogiškas `cron
-        <https://en.wikipedia.org/wiki/Cron>`_ formatui.
+        <https://en.wikipedia.org/wiki/Cron>`__ formatui.
 
         `line` argumentas aprašomas taip:
 
@@ -692,7 +694,7 @@ Statinės reikšmės
 
 Statinės reikšmės arba konstantos duomenų laukams gali būti nurodomos
 :data:`property.prepare` stulpelyje naudojant formulės sintaksę. Plačiau apie
-formules žiūrėti :ref:`formulas` skyrelyje.
+formules žiūrėti :ref:`formulės` skyrelyje.
 
 
 Transformavimas
@@ -757,8 +759,8 @@ kelis jau aprašytus laukus.
 
     .. function:: choose(default)
 
-        Jei šaltinio reikšmė nėra viena iš :data:`property.enum`, tada
-        grąžinama default reikšmė.
+        Jei šaltinio reikšmė nėra viena iš :ref:`enum`, tada grąžinama default
+        reikšmė.
 
         Jei `default` nepateiktas, grąžina vieną iš :data:`property.enum`
         reikšmių, jei duomenų šaltinio reikšmė nėra viena iš

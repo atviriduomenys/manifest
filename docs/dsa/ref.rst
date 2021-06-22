@@ -21,7 +21,7 @@ stulpelyje ryšį su modeliu galima nurodyti tokiais būdais:
     .. describe:: model[property]
 
         Tais atvejais, kai :data:`property` duomenys nesutampa su siejamo
-        :data:`model.ref,` galima nurodyti :data:`property` iš :data:`model.`
+        :data:`model.ref`, galima nurodyti :data:`property` iš :data:`model`.
 
     .. describe:: model[*property]
 

@@ -22,7 +22,7 @@ Dokumentacija sudaryta iš šių esminių dalių:
 
 - Informacija duomenų naudotojams, apie tai, kaip :ref:`teikti pageidavimus
   ir pastabas <poreikio-deklaravimas>` dėl duomenų ir kaip :ref:`gauti pačius
-  duomenis <api>`.
+  duomenis <saugykla>`.
 
 - :ref:`Duomenų struktūros aprašo specifikacija <dsa>`, kurioje rasite detalią
   informaciją apie tai kaip rašyti ir skaityti :term:`DSA` lenteles.
@@ -49,14 +49,16 @@ Dokumentacija sudaryta iš šių esminių dalių:
     brandos-lygio-kelimas/index
     asmens-duomenys
     duomenu-saltiniai
+    priemones
 
 .. toctree::
     :caption: Žinynas
     :maxdepth: 3
 
     dsa/index
+    katalogas/index
     api/index
-    priemones/index
+    spinta
     savokos
 
 - :ref:`Rodyklė <genindex>`
