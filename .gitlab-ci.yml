@@ -17,6 +17,7 @@ stages:
   - docs
 
 docs:
+  stage: docs
   script:
     - make -C docs html
     - make -C docs linkcheck
