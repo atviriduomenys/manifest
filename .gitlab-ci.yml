@@ -1,25 +1,18 @@
-image: python:3.7
-
-services:
-  - postgres:latest
+image: python:latest
 
 variables:
-  POSTGRES_DB: manifest
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
 cache:
   paths:
-    - ~/.cache/pip/
+    - .cache/pip
+    - env/
 
 before_script:
   - python --version
-  - apt-get update -q && apt-get install unixodbc-dev -yqq
-  - python -m venv ci/env
-  - ci/env/bin/pip install -r requirements-dev.txt -e .
+  - python -m venv env
+  - env/bin/pip install -r docs/requirements.txt
 
-test:
-  variables:
-    SPINTA_CONFIG: lodam.config:CONFIG
-    SPINTA_BACKENDS_DEFAULT_DSN: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
-    SPINTA_DATASETS_DEFAULT_SQL_DB: postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB
+docs:
   script:
-    - ci/env/bin/py.test -vvxra --tb=native --log-level=debug --cov=lodam --cov-report=term-missing tests
+    - make -C docs html
