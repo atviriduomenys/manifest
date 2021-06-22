@@ -65,6 +65,8 @@ master_doc = 'index'
 
 smartquotes = False
 
+nitpicky = True
+
 linkcheck_ignore = [
     r'https://gdpr-info.eu/.*',
 ]
