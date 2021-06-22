@@ -24,7 +24,7 @@ Dokumentacija sudaryta iš šių esminių dalių:
   ir pastabas <poreikio-deklaravimas>` dėl duomenų ir kaip :ref:`gauti pačius
   duomenis <api>`.
 
-- :ref:`Duomenų struktūros aprašo specifikacija <spec>`, kurioje rasite detalią
+- :ref:`Duomenų struktūros aprašo specifikacija <dsa>`, kurioje rasite detalią
   informaciją apie tai kaip rašyti ir skaityti :term:`DSA` lenteles.
 
 - Informacija diegėjams apie tai, kaip diegti ir konfigūruoti :ref:`priemones
@@ -33,7 +33,7 @@ Dokumentacija sudaryta iš šių esminių dalių:
 .. warning::
 
     Atkreipkite dėmesį, kad šis vadovas yra aktyvaus vystymo stadijoje. Tačiau
-    pats :ref:`DSA <spec>` lentelės formatas yra stabilus ir didesnių lentelės
+    pats :ref:`DSA <dsa>` lentelės formatas yra stabilus ir didesnių lentelės
     formato pakeitimų daryti nenumatoma, todėl duomenų struktūras galima
     aprašinėti jau dabar, o įrankiai ir dokumentacija bus pilnai parengti iki
     antrojo lietuvos duomenų atvėrimo etapo pabaigos, 2023 metais.
@@ -57,10 +57,6 @@ Dokumentacija sudaryta iš šių esminių dalių:
     dsa/index
     api/index
     priemones/index
-    priemones/diegimas
-    priemones/dsa-generavimas
-    priemones/api-konfiguravimas
-    priemones/ispletimas
     savokos
 
 - :ref:`Rodyklė <genindex>`

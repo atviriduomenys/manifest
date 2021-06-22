@@ -1,5 +1,5 @@
 .. default-role:: literal
-.. _išoriniai-žodynai:
+.. _vocab:
 
 Išoriniai žodynai
 =================

@@ -1,5 +1,5 @@
 .. default-role:: literal
-.. _brandos-lygiai:
+.. _level:
 
 Brandos lygiai
 ==============

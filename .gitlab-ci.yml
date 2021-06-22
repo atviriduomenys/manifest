@@ -16,3 +16,4 @@ before_script:
 docs:
   script:
     - make -C docs html
+    - make -C docs linkcheck

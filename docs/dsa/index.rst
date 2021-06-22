@@ -1,4 +1,4 @@
-.. _duomenų-struktūros-aprašas:
+.. _dsa:
 
 Duomenų struktūros aprašas
 ##########################
@@ -28,7 +28,6 @@ duomenims (:term:`ADSA`) ir dar neatvertiems duomenims (:term:`ŠDSA`).
 
     formatas
     dimensijos
-    vardu-erdves
     duomenu-tipai
     vienetai
     ref

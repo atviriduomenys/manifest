@@ -76,7 +76,7 @@ Sąvokos
         Atvirų duomenų saugykla.
 
     DSA
-        :ref:`Duomenų struktūros aprašas <duomenų-struktūros-aprašas>` yra
+        :ref:`Duomenų struktūros aprašas <dsa>` yra
         lentelė, kurioje išsamiai aprašyta tam tikro duomenų šaltinio duomenų
         struktūra. DSA lentelę sudaro penkios dimensijos (duomenų rinkinys,
         resursas, bazė, modelis, savybė) ir dešimt metaduomenų stulpelių.
@@ -466,3 +466,31 @@ Sąvokos
           žodyną, nurodant sąsajas su išoriniais žodynais ir standartais.
 
         Žodynai sudaromi pasitelkiant :ref:`vardų erdves <vardų-erdvės>`.
+
+    API
+        Programavimo sąsaja (*angl. Application Programming Interface*).
+
+    duomenų šaltinis
+        Resursas, kuriame saugomi duomenys. Toks resursas tampa duomenų
+        šaltiniu, kai tokius duomenis norima pakartotinai panaudoti, tokiu
+        atveju, iš pakartotinio panaudojimo perspektyvos toks resursas tampa
+        duomenų šaltiniu.
+
+    ETL
+        Duomenų ištraukimas, transformavimas ir užkrovimas (*angl. Extract
+        Transform Load*).
+
+    iteratorius
+        Tam tikra funkcija, kuri grąžina keletą lementų, tačiau ne visus iš
+        karto, o po vieną.
+
+    URI
+        Vieningas resurso identifikatorius (*angl. Uniform Resource
+        Identifier*).
+
+    POSIX
+        Universali operacinių sistemų sąsaja (*angl. Portable Operating System
+        Interface*) - standartas apibrėžiantis operacinių sistemų sąsają, kad
+        skirtingos operacinės sistemos būtų suderinamos tarpusavyje.
+
+        https://en.wikipedia.org/wiki/POSIX

@@ -1,5 +1,5 @@
 .. default-role:: literal
-.. _prieigos-lygiai:
+.. _access:
 
 Prieigos lygiai
 ===============

@@ -419,7 +419,7 @@ Tačiau nebūtina tiksliai atkartoti tai, kas pateikiama žodynuose, nes dažnai
 yra laisvė
 
 .. _LOV: https://lov.linkeddata.es/dataset/lov
-.. _WikiData: https://www.wikidata.org/
+.. _WikiData: https://www.wikidata.org/wiki/Wikidata:Main_Page
 
 Vieningas žodyno :term:`DSA` atrodo taip:
 

@@ -16,7 +16,7 @@ dokumentacijos pavyzdžiuose.
 
 Pavyzdžiuose HTTP užklausos atliekamos naudojant patogią httpie_ programėlę.
 
-.. _httpie: https://httpie.org/
+.. _httpie: https://httpie.io/
 
 Pavyzdžiui::
 

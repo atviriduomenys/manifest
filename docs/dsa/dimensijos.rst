@@ -43,7 +43,7 @@ kalbama, pavyzdžiui :data:`model.title` leidžia suprasti kad kalbama apie
 „Duomenų rinkinys“ reikšmę 4-oje eilutėje.
 
 Be minėtų dimensijų stulpelių :term:`DSA` lentelėje gali būti naudojami
-papildomos metaduomenų dimensijos, kai nurodoma :term:`type` reikšmė ir
+papildomos metaduomenų dimensijos, kai nurodoma :data:`type` reikšmė ir
 nepateikiama nei viena dimensijos stulpelio reikšmė. Pavyzdžiui:
 
 +----+---+---+---+---+----------+--------+------+-----------------------------+
@@ -123,11 +123,11 @@ rinkinys>` įrašai.
 
 .. data:: dataset.level
 
-    Viso duomenų rinkinio :term:`brandos lygis`. Paveldimas.
+    Viso duomenų rinkinio :ref:`level`. Paveldimas.
 
 .. data:: dataset.access
 
-    Viso duomenų rinkinio :term:`prieigos lygis`. Paveldimas.
+    Viso duomenų rinkinio :ref:`access`. Paveldimas.
 
 .. data:: dataset.title
 
@@ -362,11 +362,13 @@ Nenaudojamas.
 
 .. data:: base.level
 
-    Baziniam modeliui priskirtų modelių :term:`brandos lygis`. Paveldimas.
+    Baziniam modeliui priskirtų modelių :ref:`brandos lygis <level>`.
+    Paveldimas.
 
 .. data:: base.access
 
-    Baziniam modeliui priskirtų modelių :term:`prieigos lygis`. Paveldimas.
+    Baziniam modeliui priskirtų modelių :ref:`prieigos lygis <access>`.
+    Paveldimas.
 
 Paaiškinimas, ką reiškia kiekviena savybė.
 
@@ -418,15 +420,15 @@ keisti tik duomenų pateikimą, užtenka naudoti :data:`model.prepare` formules.
 
 .. data:: model.level
 
-    Modeliui priklausančių laukų :term:`brandos lygis`. Paveldimas.
+    Modeliui priklausančių laukų :ref:`brandos lygis <level>`. Paveldimas.
 
 .. data:: model.access
 
-    Modeliui priklausančių laukų :term:`prieigos lygis`. Paveldimas.
+    Modeliui priklausančių laukų :ref:`prieigos lygis <access>`. Paveldimas.
 
 .. data:: model.uri
 
-    Sąsaja su :term:`išoriniu žodynu`.
+    Sąsaja su :uri:`išoriniu žodynu <vocab>`.
 
 .. data:: model.title
 
@@ -609,7 +611,7 @@ Parametrai
 ----------
 
 Parametrai leidžia iškelti tam tikras duomenų paruošimo operacijas į parametrus
-kurie gali būti naudojami :term:`dimensijos`, kurioje apibrėžtas parametras
+kurie gali būti naudojami :ref:`dimensijos`, kurioje apibrėžtas parametras
 kontekste. Parametrai gali gražinti :term:`iteratorius`, kurių pagalba galima
 dinamiškai kartoti :data:`resource` duomenų skaitymą, panaudojant aprašytus
 parametrus. Taip pat parametrų pagalba galima sudaryti reikšmių sąrašus, kurių
@@ -637,8 +639,8 @@ Parametrai aprašomi pasitelkiant papildomą :data:`param` dimensiją.
         kintamasis.
 
 Jei parametro reikšmė yra :term:`iteratorius`, tada :term:`dimensija`, kurios
-:term:`kontekste <dimensijos kontekstas>` yra aprašytas :ref:`parametras
-<param>` yra kartojama tiek kartų, kiek reikšmių grąžina :term:`iteratorius`.
+kontekste yra aprašytas :ref:`parametras <parametrai>` yra kartojama tiek kartų,
+kiek reikšmių grąžina :term:`iteratorius`.
 
 Jei yra keli :data:`param` grąžinantys :term:`iteratorius`, tada iš
 visų :term:`iteratorių <iteratorius>` sudaroma `Dekarto sandauga`_ ir
@@ -646,8 +648,9 @@ visų :term:`iteratorių <iteratorius>` sudaroma `Dekarto sandauga`_ ir
 
 .. _Dekarto sandauga: https://lt.wikipedia.org/wiki/Dekarto_sandauga
 
-Nepriklausomai kurioje :term:`dimensijoje` panaudoti :data:`param`, grąžinantys
-iteratorius, visada kartojama visa :data:`resource` :term:`dimensija`.
+Nepriklausomai kurioje :uri:`dimensijoje <dimensijos>` panaudoti :data:`param`,
+grąžinantys iteratorius, visada kartojama visa :data:`resource`
+:uri:`dimensija <dimensijos>`.
 
 Jei sekančioje :term:`DSA` eilutėje, einančioje po eilutės, kurioje aprašytas
 :data:`param`, nenurodytas :data:`type` ir neužpildytas joks kitas

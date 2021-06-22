@@ -105,7 +105,7 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     **Brandos lygis**
 
     Duomenų brandos lygis, atitinka `5 Star Data`_. Žiūrėti
-    :ref:`brandos-lygiai`.
+    :ref:`level`.
 
     .. _5 Star Data: https://5stardata.info/en/
 
@@ -113,13 +113,13 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
 
     **Prieiga**
 
-    Duomenų prieigos lygis. Žiūrėti :ref:`prieigos-lygiai`.
+    Duomenų prieigos lygis. Žiūrėti :ref:`access`.
 
 .. data:: uri
 
     **Žodyno atitikmuo**
 
-    Sąsaja su išoriniu žodynu. Žiūrėti :ref:`išoriniai-žodynai`.
+    Sąsaja su išoriniu žodynu. Žiūrėti :ref:`vocab`.
 
 .. data:: title
 
