@@ -152,7 +152,7 @@ Sąvokos
         naudojami skirtingi duomenų serializavimo formatai, koduotės ir skirtingi
         žodynai.
 
-    duomenų brandos lygiai
+    brandos lygis
         Duomenų brandos lygiai yra apibrėžti `5 ★ Open Data`_ svetainėje.
         Viso yra penki brandos lygiai, tačiau papildomai verta įtraukti ir
         nulinį brandos lygį, kai duomenų poreikis yra, tačiau duomenys

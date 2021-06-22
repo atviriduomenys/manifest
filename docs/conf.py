@@ -64,3 +64,7 @@ html_css_files = ['style.css']
 master_doc = 'index'
 
 smartquotes = False
+
+linkcheck_ignore = [
+    r'https://gdpr-info.eu/.*',
+]
