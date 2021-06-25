@@ -69,4 +69,6 @@ nitpicky = True
 
 linkcheck_ignore = [
     r'https://gdpr-info.eu/.*',
+    r'https://gitlab.com/.*/issues/new',
+    r'https://github.com/pyenv/pyenv/wiki#suggested-build-environment',
 ]
