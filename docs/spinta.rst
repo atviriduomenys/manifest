@@ -20,91 +20,6 @@ galite `pranešti apie klaidą`__, kad galėtume ją pataisyti.
 __ https://gitlab.com/atviriduomenys/spinta/-/issues/new
 
 
-Statusas ir planas
-==================
-
-Priemonė „Spinta“ yra eksperimentinis projektas, šiuo metu aktyviai vystomas.
-Pagal `programinės įrangos gyvavimo ciklo schema`__, „Spinta“ yra PRE-ALPHA
-etape.
-
-__ https://en.wikipedia.org/wiki/Software_release_life_cycle
-
-Nors projektas yra aktyviai vystomas, tačiau jis jau yra naudojamas
-gamybinėje aplinkoje, kurią galite pasiekti šiais adresais:
-
-https://get.data.gov.lt/
-    Saugyklos sritis skirta viešai atvirų duomenų prieigai. Ši sritis veikia
-    tik skaitymo režimu ir skirta plačiajai visuomenės daliai.
-
-https://put.data.gov.lt/
-    Saugyklos sritis skirta duomenų tiekėjams, kuriems suteikiama galimybė
-    teikti duomenis į saugyklą. Ši sritis yra skirta tik duomenų tiekėjams.
-
-Taip pat yra analogiškos aplinkos skirtos testavimui, prieš pereinant prie
-gamybinės aplinkos:
-
-https://get-test.data.gov.lt/
-
-https://put-test.data.gov.lt/
-
-Kiekvienas pakeitimas projekto „Spinta“ kodo bazėje yra automatiškai
-testuojamas vykdant beveik 1000 testų, kurie dengia beveik 90% viso kodo.
-Todėl projektas yra gan stabilus.
-
-
-Preliminarus projekto vystymo planas
-------------------------------------
-
-==============  =================  =================
-Etapas          Pradžia            Pabaiga
---------------  -----------------  -----------------
-PRE-ALPHA       2019 metų pradžia  2021 metų pabaiga
-ALPHA           2021 metų pabaiga  2022 metų vidurys
-BETA            2022 metų vidurys  2023 metų kovas
-STABLE          2023 metų kovas    -
-==============  =================  =================
-
-
-Ko tikėtis kiekvieno etapo metu?
---------------------------------
-
-PRE-ALPHA (iki 2021 metų pabaigos)
-    Projektas jau bus naudojamas gamybinėje aplinkoje, tačiau reikėtu tikėtis,
-    kad dalykai ne visada veiks, funkcijos bus ne iki galo išbaigtos ir esamas
-    funkcionalumas gali keistis. Tačiau nepaisant minėtu trūkumų, esminės atvirų
-    duomenų saugyklos funkcijos turėtu veikti gan stabiliai, todėl
-    rekomenduojame aktyviai naudotis saugykla tiek teikiant, tiek gaunant
-    duomenis, nes tik tokiu būdu geriau suprasime ko reikia galutiniam
-    naudotojui.
-
-    Jei į saugyklą teikiate svarbius, didelę paklausą turinčius duomenis,
-    rekomenduojame „Spinta“ projektą naudoti tik, kaip alternatyvią duomenų
-    publikavimo priemonę, kartu publikuojant duomenis ir kitais kanalais,
-    užtikrinančiais didesnį patikimumo lygį.
-
-ALPHA (iki 2022 metų vidurio)
-    Šio etapo metu didžiausias dėmesys bus skiriamas esamų funkcijų išbaigtumo
-    didinimui, greitaveikos optimizavimui ir stabilumo didinimui. Šio etapo
-    metu.
-
-    Taip pat šio etapo metu bus dirbama ir prie duomenų brandos kėlimo funkcijų
-    įgyvendinimo, peržiūrint visus saugykloje publikuojamus duomenis ir siekiant
-    juos transformuoti taip, kad jie būtų suderinami su Europos ir
-    tarptautiniais standartais, kiek įmanoma atitiktų vieningą duomenų žodyną.
-
-BETA (iki 2023 metų kovo mėnesio)
-    Šio etapo metu, jokių naujų funkcijų kurti nebeplanuojama, bus didinamas
-    esamų funkcijų stabilumas, greitaveika, taisomos pastebėtos klaidos.
-
-    Šio etapo metu rekomenduojame naudoti saugyklą, kaip pagrindinį atvirų
-    duomenų publikavimo šaltinį.
-
-STABLE (nuo 2023 metų kovo mėnesio)
-    Šio etapo metu, bus vykdomas projekto palaikymas ir priežiūra, pastebėtų
-    klaidų taisymas.
-
-
-
 Diegimas
 ========
 
@@ -257,8 +172,8 @@ Tokių atveju įsitikinkite ar ugniasienė leidžia kreiptis į išore ir
 pabandykite laikinai sustabdyti antivirusinę programą.
 
 
-DSA generavimas
-===============
+ŠDSA generavimas
+================
 
 Spinta leidžia automatiškai generuoti :term:`DSA` lentelę iš duomenų
 šaltinio.
@@ -291,16 +206,17 @@ ji buvo tiesiog išvesta į ekraną.
 `-r` argumentui perduoti du argumentai `sql` ir `sqlite:///sqlite.db`, kurie
 atitinka :data:`resource.type` ir :data:`resource.source`.
 
-Jei norima :term:`DSA` lentelę išsaugoti į CSV failą, tada argumento `-o`
+Jei norima :term:`DSA` lentelę išsaugoti į Excel lentelę, tada argumento `-o`
 pagalba galima nurodyti kelią iki failo, kuriame reikia išsaugoti :term:`DSA`
-lentelę CSV formatu:
+lentelę XLSX formatu:
 
 .. code-block:: sh
 
-    $ spinta inspect -r sql sqlite:///sqlite.db -o manifest.csv
+    $ spinta inspect -r sql sqlite:///sqlite.db -o manifest.xlsx
 
-:term:`DSA` lentelę, išsaugotą CSV formatu galima peržiūrėti šios komandos
-pagalba:
+:term:`DSA` lentelę, išsaugotą XLSX formatu galima atsidaryti ir redaguoti
+naudojant LibreOffice Calc, Excel ar kitomis skaičiuoklės programomis. Tačiau
+taip pat lentelės turinį galima peržiūrėti ir Spintos pagalba:
 
 .. code-block:: sh
 
@@ -322,13 +238,13 @@ Naują :term:`DSA` lentelę galite pradėti kurti taip:
 
 .. code-block:: sh
 
-    $ spinta init manifest.csv
+    $ spinta init manifest.xlsx
 
 Ši komanda sugeneruos tuščią :term:`DSA` lentelę:
 
 .. code-block:: sh
 
-    $ spinta show manifest.csv
+    $ spinta show manifest.xlsx
     d | r | b | m | property | type   | ref | source
 
 Tada, šią lentelę galite atsidaryti su jūsų `mėgiama skaičiuoklės programa`__ ir
@@ -339,7 +255,7 @@ __ https://www.libreoffice.org/discover/calc/
 
 .. code-block:: sh
 
-    $ spinta show manifest.csv
+    $ spinta show resources.xlsx
 
     d | r | b | m | property | type   | ref | source
     dataset                  |        |     |
@@ -351,7 +267,8 @@ argumentų pagalba, tik šį karta reikia nurodyti kelia iki :term:`DSA` lentel�
 
 .. code-block:: sh
 
-    $ spinta inspect manifest.csv
+    $ spinta inspect resources.xlsx -o manifest.xlsx
+    $ spinta show manifest.xlsx
     d | r | b | m | property | type   | ref | source
     dataset                  |        |     |
       | sql                  | sql    |     | sqlite:///sqlite.db
@@ -363,6 +280,15 @@ argumentų pagalba, tik šį karta reikia nurodyti kelia iki :term:`DSA` lentel�
 Analogiškai :term:`DSA` lentelės generuojamos ir visiems kitiems
 :data:`resource.type` formatams.
 
+
+SQL DDL dump
+------------
+
+.. warning::
+
+    Kol kas šis funkcionalumas nėra pilnai įgyvendintas. Spinta gali sugeneruoti
+    :term:`DSA` tik lentelėms.
+
 Jei tam tikras resursas reikalauja formulių panaudojimo, tada formulę galite
 nurodyti `-f` argumento pagalba. Pavyzdžiui, jei neturite prieigos prie
 pačios duomenų bazės, bet turite prieigą, prie duomenų bazės SQL DDL skripto,
@@ -371,13 +297,13 @@ generuojama taip:
 
 .. code-block:: sh
 
-    $ spinta inspect -r sqldump dump.sql -f 'file(self, encoding: "utf-16")'
-    d | r | b | m | property | type   | ref | source               | prepare
-    dataset                  |        |     |                      |
-      | sql                  | sql    |     | sqlite:///sqlite.db  | file(self, encoding: "utf-16")
-                             |        |     |                      |
-      |   |   | Country      |        |     | COUNTRY              |
-      |   |   |   | name     | string |     | NAME                 |
+    $ spinta inspect -r sqldump dump.sql -f 'file(encoding: "utf-16")'
+    d | r | b | m | property | type   | ref | source              | prepare
+    dataset                  |        |     |                     |
+      | sql                  | sql    |     | sqlite:///sqlite.db | file(encoding: "utf-16")
+                             |        |     |                     |
+      |   |   | Country      |        |     | COUNTRY             |
+      |   |   |   | name     | string |     | NAME                |
 
 Šiuo atveju, `dump.sql` failas atrodytų taip:
 
@@ -386,6 +312,62 @@ generuojama taip:
     CREATE TABLE COUNTRY (
         NAME TEXT
     );
+
+
+MySQL
+-----
+
+Generuojant :term:`DSA` iš MySQL duomenų bazės, jums papildomai reikia
+įdiegti tokį Python paketą:
+
+.. code-block:: sh
+
+    $ pip install pymysql
+
+O `inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql mysql+pymysql://user:pass@host:port/db -o manifest.xlsx
+
+
+Microsoft SQL Server
+--------------------
+
+Generuojant :term:`DSA` iš Microsoft SQL Server duomenų bazės, jums
+papildomai reikia įdiegti FreeTDS_ paketą:
+
+.. _FreeTDS: http://www.freetds.org/
+
+.. code-block:: sh
+
+    $ sudo apt install freetds-bin
+
+Ir pymssql_ Python paketą:
+
+.. _pymssql: https://www.pymssql.org/
+
+.. code-block:: sh
+
+    $ pip install pymssql
+
+Toliau reikia `sukonfigūruoti FreeTDS`_, rekomenduojame naudoti tokį
+konfigūracijos failą:
+
+.. _sukonfigūruoti FreeTDS: https://www.pymssql.org/freetds.html
+
+.. code-block:: conf
+
+    [global]
+    tds version = 7.4
+    port = 1433
+    client charset = utf-8
+
+`inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql mssql+pymssql://user:pass@host:port/db -o manifest.xlsx
 
 
 ŠDSA vertimas į ADSA
@@ -405,11 +387,12 @@ stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
     $ spinta copy sdsa.csv --no-source --access open -o adsa.csv
 
 
-Duomenų publikavimas į saugyklą
+Duomenų publikavimas į Saugyklą
 ===============================
 
-Prieš publikuojant duomenis į Saugyklą, Saugykloje turi būti įkeltas duomenų
-struktūros aprašas. Saugykla gali priimti tik duomenis, turinčius :term:`DSA`.
+Prieš publikuojant duomenis į :ref:`Saugyklą <saugykla>`, Saugykloje turi būti
+įkeltas :ref:`duomenų struktūros aprašas <dsa>`. Saugykla gali priimti tik
+duomenis, turinčius :term:`DSA`.
 
 Taip pat, prieš publikuojant duomenis, Saugykloje turi būti užregistruotas
 klientas, kuriam suteikiamos rašymo į saugyklą teisės. Klientui suteikiamos

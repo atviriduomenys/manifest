@@ -537,17 +537,78 @@ stulpeliuose tokiu būdu: `prefix:name`.
 
 .. _enum:
 
-Kategoriniai duomenys
----------------------
+Klasifikatoriai
+---------------
 
 .. _Categorical data: https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html
 
 Tam tikri duomenų laukai turi fiksuotą reikšmių variantų aibę. Dažnai duomenų
 bazėse fiksuotos reikšmės saugomos skaitine forma ar kitais kodiniais
 pavadinimais. Tokias fiksuotas reikšmes duomenų struktūros apraše galima
-pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enum`.
+pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę
+`enum`, pavyzdžiui:
+
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+| id | d | r | b | m | property | type    | ref | source    | prepare   | level | access | uri | title   | description |
++====+===+===+===+===+==========+=========+=====+===========+===========+=======+========+=====+=========+=============+
+|  1 | datasets/example/places  |         |     |           |           |       |        |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  2 |   | places               | sql     |     | sqlite:// |           |       |        |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  3 |   |   |   | Place        |         | id  | PLACES    |           |       |        |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  4 |   |   |   |   | id       | integer |     | ID        |           | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  5 |   |   |   |   | type     | string  |     | CODE      |           | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  6 |   |   |   |   |          | enum    |     | 1         | "city"    |       |        |     | City    |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  7 |   |   |   |   |          |         |     | 2         | "town"    |       |        |     | Town    |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  8 |   |   |   |   |          |         |     | 3         | "village" |       |        |     | Village |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+|  9 |   |   |   |   | name     | string  |     | NAME      |           | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+-----+-----------+-----------+-------+--------+-----+---------+-------------+
+
+Šiame pavyzdyje `Place.type` laukas yra klasifikatorius, kurio reikšmės yra
+kodai 1, 2 ir 3, kurios duomenų struktūros apraše keičiamos į `city`, `town`
+ir `village`, papildomai `title` stulpelyje nurodant reikšmės pavadinimą.
+
+Jei tas pats klasifikatorius gali būti naudojamas kelios skirtingose vietos,
+tada galima iškelti klasifikatorių ir suteikti jam pavadinimą, pavyzdžiui:
+
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+| id | d | r | b | m | property | type    | ref     | source    | prepare       | level | access | uri | title   | description |
++====+===+===+===+===+==========+=========+=========+===========+===============+=======+========+=====+=========+=============+
+|  6 |   |   |   |   |          | enum    | place   | 1         | "city"        |       |        |     | City    |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  7 |   |   |   |   |          |         |         | 2         | "town"        |       |        |     | Town    |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  8 |   |   |   |   |          |         |         | 3         | "village"     |       |        |     | Village |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  1 | datasets/example/places  |         |         |           |               |       |        |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  2 |   | places               | sql     |         | sqlite:// |               |       |        |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  3 |   |   |   | Place        |         | id      | PLACES    |               |       |        |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  4 |   |   |   |   | id       | integer |         | ID        |               | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  5 |   |   |   |   | type     | string  |         | CODE      | enum("place") | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+|  9 |   |   |   |   | name     | string  |         | NAME      |               | 3     | open   |     |         |             |
++----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
+
+Šiuo atveju, klasifikatoriui buvo suteiktas pavadinimas `place` įrašytas
+`enum.ref` stulpelyje, 6 eilutėje. O `Place.type` laukui, `prepare`
+stulpelyje nurodyta, kad šis laukas naudoja vardinį `place` klasifikatorių.
+
 
 .. data:: enum
+
+    .. data:: enum.ref
+
+        Pasirinkimų sąrašo pavadinimas.
 
     .. data:: enum.source
 
@@ -571,9 +632,12 @@ pateikti neužpildant hierarchinių stulpelių ir nurodant `type` reikšmę `enu
         `enum.prepare` reikšmės gali kartotis, tokiu būdu, kelios skirtingos
         `enum.source` reikšmės bus susietos su viena `enum.prepare` reikšme.
 
-    .. data:: enum.ref
+    .. data:: enum.access
 
-        Pasirinkimų sąrašo pavadinimas.
+        Klasifikatoriams galima nurodyti skirtingas prieigos teises, tokiu
+        atveju, naudotojas turintis `open` prieigą matys tik tuos duomenis,
+        kurių klasifikatorių reikšmės turi `open` prieigos teises, visi kiti bus
+        išfiltruoti.
 
     .. data:: enum.title
 
@@ -592,30 +656,6 @@ kokios yra šaltinyje, tada :data:`property.prepare` stulpelyje reikia įrašyti
 `self.choose(self)`.
 
 
-Reikšmių sukeitimas
--------------------
-
-Tam tikrais atvejais duomenis tenka normalizuoti parenkant tam tikrą reikšmę jei
-tenkinama nurodyta sąlyga. Tokias situacijas galima aprašyti pasitelkiant
-:data:`switch` dimensiją.
-
-.. data:: switch
-
-    .. data:: switch.source
-
-        Reikšmė, kuri bus atveriama.
-
-    .. data:: switch.prepare
-
-        Sąlyga, naudojant einamojo modelio laukus. Jei sąlyga tenkinama, tada
-        laukui priskiriama :data:`switch.source` reikšmė. Jei sąlyga
-        netenkinama, tada bandoma tikrinti sekančią sąlygą. Parenkama ta
-        reikšmė, kurios pirmoji sąlyga tenkinama.
-
-        Jei :data:`switch.prepare` yra tuščias, tada sąlyga visada teigiama ir
-        visada grąžinama :data:`switch.source` reikšmė.
-
-
 .. _param:
 
 Parametrai
@@ -632,6 +672,28 @@ Parametrai dažniausiai naudojami žemesnio brandos lygio duomenų šaltiniams
 aprašyti, o taip pat API atvejais, kai duomenys atiduodame dinamiškai.
 
 Parametrai aprašomi pasitelkiant papildomą :ref:`param` dimensiją.
+
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+| id | d | r | b | m | property   | type    | ref                   | source                    | prepare               |
++====+===+===+===+===+============+=========+=======================+===========================+=======================+
+|  1 | datasets/example/cities    |         |                       |                           |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  2 |   | places                 | csv     |                       | \https://example.com      |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  3 |   |   |   | Country        |         | id                    | countries.csv             |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  4 |   |   |   |   | code       | string  |                       | CODE                      |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  5 |   |   |   |   | title      | string  |                       | TITLE                     |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  6 |   |   |   | City           |         | country, |nbsp| title | cities/{country.code}.csv |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  7 |   |   |   |   |            | param   | country               | Country                   | select(code)          |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  8 |   |   |   |   | country    | ref     | Country               |                           | param("country").code |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  9 |   |   |   |   | title      | string  |                       | TITLE                     |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
 
 .. data:: param
 
@@ -659,15 +721,41 @@ visų :term:`iteratorių <iteratorius>` sudaroma `Dekarto sandauga`_ ir
 
 .. _Dekarto sandauga: https://lt.wikipedia.org/wiki/Dekarto_sandauga
 
-Nepriklausomai kurioje :ref:`dimensijoje <dimensijos>` panaudoti :ref:`param`,
-grąžinantys iteratorius, visada kartojama visa :data:`resource`
-:ref:`dimensija <dimensijos>`.
-
 Jei sekančioje :term:`DSA` eilutėje, einančioje po eilutės, kurioje aprašytas
 :ref:`param`, nenurodytas :data:`type` ir neužpildytas joks kitas
 :term:`dimensijos <dimensija>` stulpelis, tada parametras tampa
 :term:`iteratoriumi <iteratorius>`, kurio reikšmių sąrašą sudaro sekančiose
-eilutėse patektos :data:`source` ir :data:`prepare` reikšmės.
+eilutėse patektos :data:`source` ir :data:`prepare` reikšmės. Pavyzdžiui
+anksčiau pateiktą pavyzdį galima būtų perdaryti taip:
+
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+| id | d | r | b | m | property   | type    | ref                   | source                    | prepare               |
++====+===+===+===+===+============+=========+=======================+===========================+=======================+
+|  1 | datasets/example/cities    |         |                       |                           |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  2 |   | places                 | csv     |                       | \https://example.com      |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  3 |   |   |   | Country        |         | id                    | countries.csv             |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  4 |   |   |   |   | code       | string  |                       | CODE                      |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  5 |   |   |   |   | title      | string  |                       | TITLE                     |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  6 |   |   |   | City           |         | country, |nbsp| title | cities/{country}.csv      |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  7 |   |   |   |   |            | param   | country               | lt                        |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  7 |   |   |   |   |            |         |                       | lv                        |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  7 |   |   |   |   |            |         |                       | ee                        |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  8 |   |   |   |   | country    | ref     | Country               |                           | param("country")      |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+|  9 |   |   |   |   | title      | string  |                       | TITLE                     |                       |
++----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
+
+Šiame pavyzdyje, parametras `country` grąžins tris šalies kodus: lt, lv ir
+ee, kurie bus įrašome į `cities/{country}.csv`.
 
 :ref:`param` reikšmės pasiekiamos naudojanti pavadinimą įrašytą
 :data:`param.ref` stulpelyje. Pavyzdžiui, jei :data:`param.ref` stulpelyje
@@ -710,6 +798,32 @@ pavyzdžiui:
 .. describe:: prepare
 
     `x.field` arba `param(x).field`.
+
+
+
+
+Reikšmių sukeitimas
+-------------------
+
+Tam tikrais atvejais duomenis tenka normalizuoti parenkant tam tikrą reikšmę jei
+tenkinama nurodyta sąlyga. Tokias situacijas galima aprašyti pasitelkiant
+:data:`switch` dimensiją.
+
+.. data:: switch
+
+    .. data:: switch.source
+
+        Reikšmė, kuri bus atveriama.
+
+    .. data:: switch.prepare
+
+        Sąlyga, naudojant einamojo modelio laukus. Jei sąlyga tenkinama, tada
+        laukui priskiriama :data:`switch.source` reikšmė. Jei sąlyga
+        netenkinama, tada bandoma tikrinti sekančią sąlygą. Parenkama ta
+        reikšmė, kurios pirmoji sąlyga tenkinama.
+
+        Jei :data:`switch.prepare` yra tuščias, tada sąlyga visada teigiama ir
+        visada grąžinama :data:`switch.source` reikšmė.
 
 
 Komentavimas
@@ -911,3 +1025,7 @@ Vardų erdvės gali būti aprašomos  pasitelkiant :data:`ns` papildomą dimensi
 
         Vardų erdvės aprašymas.
 
+
+
+.. |nbsp| unicode:: 0xA0
+   :trim:

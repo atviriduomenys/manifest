@@ -5,6 +5,103 @@
 Saugykla
 ########
 
+Atvirų duomenų Saugykla yra sudedamoji atvirų duomenų Portalo dalis. Saugyklos
+paskirtis yra duomenų publikavimas :ref:`aukščiausiu brandos lygiu <level>`,
+įvairiais formatais, per patogią mašininio duomenų skaitymo sąsają
+(:term:`API`), laikantis aukščiausių duomenų publikavimo standartų.
+
+Visi duomenų rinkiniai publikuojami Saugykloje yra apjungiami į vieną didelę
+duomenų bazę, kur duomenys gali būti jungiami tarpusavyje, pateikiami pilna
+apimtimi (angl. *in bulk*) arba pageidaujamais pjūviais. Suteikiamos
+priemonės duomenis gauti palaipsniniu būdu (angl. `Incremental download`_).
+
+.. _Incremental download: https://en.wikipedia.org/wiki/Incremental_computing
+
+
+Statusas ir planas
+==================
+
+Priemonė „Spinta“ yra eksperimentinis projektas, šiuo metu aktyviai vystomas.
+Pagal `programinės įrangos gyvavimo ciklo schema`__, „Spinta“ yra PRE-ALPHA
+etape.
+
+__ https://en.wikipedia.org/wiki/Software_release_life_cycle
+
+Nors projektas yra aktyviai vystomas, tačiau jis jau yra naudojamas
+gamybinėje aplinkoje, kurią galite pasiekti šiais adresais:
+
+https://get.data.gov.lt/
+    Saugyklos sritis skirta viešai atvirų duomenų prieigai. Ši sritis veikia
+    tik skaitymo režimu ir skirta plačiajai visuomenės daliai.
+
+https://put.data.gov.lt/
+    Saugyklos sritis skirta duomenų tiekėjams, kuriems suteikiama galimybė
+    teikti duomenis į saugyklą. Ši sritis yra skirta tik duomenų tiekėjams.
+
+Taip pat yra analogiškos aplinkos skirtos testavimui, prieš pereinant prie
+gamybinės aplinkos:
+
+https://get-test.data.gov.lt/
+
+https://put-test.data.gov.lt/
+
+Kiekvienas pakeitimas projekto „Spinta“ kodo bazėje yra automatiškai
+testuojamas vykdant beveik 1000 testų, kurie dengia beveik 90% viso kodo.
+Todėl projektas yra gan stabilus.
+
+
+Preliminarus projekto vystymo planas
+------------------------------------
+
+==============  =================  =================
+Etapas          Pradžia            Pabaiga
+--------------  -----------------  -----------------
+PRE-ALPHA       2019 metų pradžia  2021 metų pabaiga
+ALPHA           2021 metų pabaiga  2022 metų vidurys
+BETA            2022 metų vidurys  2023 metų kovas
+STABLE          2023 metų kovas    -
+==============  =================  =================
+
+
+Ko tikėtis kiekvieno etapo metu?
+--------------------------------
+
+PRE-ALPHA (iki 2021 metų pabaigos)
+    Projektas jau bus naudojamas gamybinėje aplinkoje, tačiau reikėtu tikėtis,
+    kad dalykai ne visada veiks, funkcijos bus ne iki galo išbaigtos ir esamas
+    funkcionalumas gali keistis. Tačiau nepaisant minėtu trūkumų, esminės atvirų
+    duomenų saugyklos funkcijos turėtu veikti gan stabiliai, todėl
+    rekomenduojame aktyviai naudotis saugykla tiek teikiant, tiek gaunant
+    duomenis, nes tik tokiu būdu geriau suprasime ko reikia galutiniam
+    naudotojui.
+
+    Jei į saugyklą teikiate svarbius, didelę paklausą turinčius duomenis,
+    rekomenduojame „Spinta“ projektą naudoti tik, kaip alternatyvią duomenų
+    publikavimo priemonę, kartu publikuojant duomenis ir kitais kanalais,
+    užtikrinančiais didesnį patikimumo lygį.
+
+ALPHA (iki 2022 metų vidurio)
+    Šio etapo metu didžiausias dėmesys bus skiriamas esamų funkcijų išbaigtumo
+    didinimui, greitaveikos optimizavimui ir stabilumo didinimui. Šio etapo
+    metu.
+
+    Taip pat šio etapo metu bus dirbama ir prie duomenų brandos kėlimo funkcijų
+    įgyvendinimo, peržiūrint visus saugykloje publikuojamus duomenis ir siekiant
+    juos transformuoti taip, kad jie būtų suderinami su Europos ir
+    tarptautiniais standartais, kiek įmanoma atitiktų vieningą duomenų žodyną.
+
+BETA (iki 2023 metų kovo mėnesio)
+    Šio etapo metu, jokių naujų funkcijų kurti nebeplanuojama, bus didinamas
+    esamų funkcijų stabilumas, greitaveika, taisomos pastebėtos klaidos.
+
+    Šio etapo metu rekomenduojame naudoti saugyklą, kaip pagrindinį atvirų
+    duomenų publikavimo šaltinį.
+
+STABLE (nuo 2023 metų kovo mėnesio)
+    Šio etapo metu, bus vykdomas projekto palaikymas ir priežiūra, pastebėtų
+    klaidų taisymas.
+
+
 Prieš pradedant
 ===============
 
@@ -61,11 +158,11 @@ duomenų modelis, kurios struktūra atrodo taip:
 +===+===+=============+=========+===========+
 | datasets/gov/dc/geo |         |           |
 +---+---+-------------+---------+-----------+
-|   | continent       |         |           |
+|   | Continent       |         |           |
 +---+---+-------------+---------+-----------+
 |   |   | name        | string  |           |
 +---+---+-------------+---------+-----------+
-|   | country         |         |           |
+|   | Country         |         |           |
 +---+---+-------------+---------+-----------+
 |   |   | code        | string  |           |
 +---+---+-------------+---------+-----------+
@@ -75,7 +172,7 @@ duomenų modelis, kurios struktūra atrodo taip:
 +---+---+-------------+---------+-----------+
 |   |   | capital     | ref     | city      |
 +---+---+-------------+---------+-----------+
-|   | city            |         |           |
+|   | City            |         |           |
 +---+---+-------------+---------+-----------+
 |   |   | name        | string  |           |
 +---+---+-------------+---------+-----------+
@@ -93,27 +190,27 @@ API yra generuojamas dinamiškai iš :term:`DSA` `model` stulpelyje esančių
 modelio :term:`kodinių pavadinimų <kodinis pavadinimas>`. Modelių pavadinimai
 gali turėti vardų erdves, vardų erdvės yra atskirtos `/` simboliu, pavyzdžiui::
 
-    /datasets/gov/dc/geo/continent
+    /datasets/gov/dc/geo/Continent
 
-Šis adresas sudarytas iš `datasets/gov/dc/geo` vardų erdvės ir `continent`
+Šis adresas sudarytas iš `datasets/gov/dc/geo` vardų erdvės ir `Continent`
 modelio pavadinimo.
 
 `datasets` vardų erdvė rodo, kad duomenys yra žali, t.y. tokie kokie pateikti
 tam tikros įstaigos. Su laiku visų įstaigų duomenys bus transformuoti į vieningą
-šalies masto žodyną ir pavyzdžiui `datasets/gov/dc/geo/continent` gali būti
-sulietas į vieną bendrą `continents` modelį, šakninėje vardų erdvėje. Tačiau
+šalies masto žodyną ir pavyzdžiui `datasets/gov/dc/geo/Continent` gali būti
+sulietas į vieną bendrą `Continent` modelį, šakninėje vardų erdvėje. Tačiau
 užtikrinant stabilų ir nekintantį API bus paliekami ir pradiniai žalių duomenų
 API taškai.
 
 Konkrečiai visi `datasets` vardų erdvėje esantys modeliai turi aiškiai apibrėžtą
-struktūrą, pavyzdžiui nagrinėjant `datasets/gov/dc/geo/continent` pavyzdį
+struktūrą, pavyzdžiui nagrinėjant `datasets/gov/dc/geo/Continent` pavyzdį
 atskirų kelio komponentų prasmės būdų tokios:
 
 - `datasets/` - vardų erdvė skirta žaliems pirminiams įstaigų duomenimis.
 - `gov/` - vardų erdvė skirta valstybinių įstaigų duomenimis.
 - `dc/` - konkrečios valstybinės įstaigos trumpinys.
 - `geo/` - įstaigos atverto duomenų rinkinio trumpinys.
-- `continent` - duomenų modelis (arba lentelė).
+- `Continent` - duomenų modelis (arba lentelė).
 
 
 Adreso parametrai
@@ -137,12 +234,12 @@ Identifikatorius pat yra adreso parametras, tik jis neprasideda `:` simboliu, o
 eina iš karto po modelio pavadinimo ir tai turi būti UUID simbolių eilutė,
 pavyzdžiui::
 
-    /datasets/gov/dc/geo/continent/77e0bb52-f8ae-448f-b4c2-7de6bb150ff0
+    /datasets/gov/dc/geo/Continent/77e0bb52-f8ae-448f-b4c2-7de6bb150ff0
 
 Identifikatorius taip pat gali turėti argumentus, identifikatoriaus
 argumentai yra modelio savybė, pavyzdžiui::
 
-    /datasets/gov/dc/geo/city/7d473db2-d363-4318-9b84-138eb5d70f70/continent
+    /datasets/gov/dc/geo/City/7d473db2-d363-4318-9b84-138eb5d70f70/continent
 
 Tokiu būdu yra galimybė gauti tik konkrečios modelio savybės duomenis.
 
@@ -153,7 +250,7 @@ Užklausa
 URL Query dalyje, po `?` simbolio galima pateikti papildomus užklausos
 parametrus, pavyzdžiui::
 
-    /datasets/gov/dc/geo/continent?select(name)&sort(name)
+    /datasets/gov/dc/geo/Continent?select(name)&sort(name)
 
 
 Rezervuoti pavadinimai
@@ -205,17 +302,17 @@ reiškia *Name Space* arba *Vardų Erdvė* išvertus į Lietuvių kalbą.
     {
         "_data": [
             {
-                "_id": "datasets/gov/dc/geo/continent",
+                "_id": "datasets/gov/dc/geo/Continent",
                 "_type": "model",
                 "title": "Continent"
             },
             {
-                "_id": "datasets/gov/dc/geo/country",
+                "_id": "datasets/gov/dc/geo/Country",
                 "_type": "model",
                 "title": "Country"
             },
             {
-                "_id": "datasets/gov/dc/geo/city",
+                "_id": "datasets/gov/dc/geo/City",
                 "_type": "model",
                 "title": "City"
             }
@@ -311,7 +408,7 @@ getone
 
 .. code-block:: sh
 
-    http GET /datasets/gov/dc/geo/continent
+    http GET /datasets/gov/dc/geo/Continent
 
 .. code-block:: http
 
@@ -319,7 +416,7 @@ getone
     Content-Type: application/json
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
         "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
         "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
@@ -335,7 +432,7 @@ insert
 
 .. code-block:: sh
 
-    http POST /datasets/gov/dc/geo/continent $auth <<EOF
+    http POST /datasets/gov/dc/geo/Continent $auth <<EOF
     {
         "continent": "Europe"
     }
@@ -345,10 +442,10 @@ insert
 
     HTTP/1.1 201 Created
     Content-Type: application/json
-    Location: /datasets/gov/dc/geo/continent/abdd1245-bbf9-4085-9366-f11c0f737c1d
+    Location: /datasets/gov/dc/geo/Continent/abdd1245-bbf9-4085-9366-f11c0f737c1d
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
         "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
         "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
@@ -365,7 +462,7 @@ tada vykdo `update` veiksmą.
 
 .. code-block:: sh
 
-    http POST /datasets/gov/dc/geo/continent $auth <<EOF
+    http POST /datasets/gov/dc/geo/Continent $auth <<EOF
     {
         "_op": "upsert",
         "_where": "name='Africa'",
@@ -377,10 +474,10 @@ tada vykdo `update` veiksmą.
 
     HTTP/1.1 201 Created
     Content-Type: application/json
-    Location: /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
+    Location: /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
         "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
@@ -402,7 +499,7 @@ užtikrintas duomenų vientisumas.
 
 .. code-block:: sh
 
-    http PUT /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
+    http PUT /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
     {
         "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "continent": "Africa"
@@ -413,10 +510,10 @@ užtikrintas duomenų vientisumas.
 
     HTTP/1.1 200 OK
     Content-Type: application/json
-    Location: /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
+    Location: /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
         "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
@@ -439,7 +536,7 @@ keičia tik tas savybes, kurios nurodytos.
 
 .. code-block:: sh
 
-    http PATCH /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
+    http PATCH /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth <<EOF
     {
         "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "continent": "Africa"
@@ -450,10 +547,10 @@ keičia tik tas savybes, kurios nurodytos.
 
     HTTP/1.1 200 OK
     Content-Type: application/json
-    Location: /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
+    Location: /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
         "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
         "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
@@ -468,7 +565,7 @@ Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
 
 .. code-block:: sh
 
-    http DELETE /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth
+    http DELETE /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5 $auth
 
 .. code-block:: http
 
@@ -476,7 +573,7 @@ Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
     Content-Type: application/json
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
         "_revision": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
         "_txn": "448045c6-9993-4845-b889-56483a20f8f3"
@@ -493,7 +590,7 @@ būdu ištrinto objekto atstatyti neįmanoma.
 
 .. code-block:: sh
 
-    http DELETE /datasets/gov/dc/geo/continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5/:wipe $auth
+    http DELETE /datasets/gov/dc/geo/Continent/b8f1edaa-220d-4e0b-b59b-dc27555a0fb5/:wipe $auth
 
 .. code-block:: http
 
@@ -501,7 +598,7 @@ būdu ištrinto objekto atstatyti neįmanoma.
     Content-Type: application/json
 
     {
-        "_type": "datasets/gov/dc/geo/continent",
+        "_type": "datasets/gov/dc/geo/Continent",
         "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
         "_revision": "7c2d7b98-498f-49c6-bbb2-b0fd0b03b815",
         "_txn": "448045c6-9993-4845-b889-56483a20f8f3"
@@ -532,17 +629,17 @@ skirtingiems modeliams, vykdant užklausą vardų erdvės kontekste.
 
 .. code-block:: sh
 
-    http POST /datasets/gov/dc/geo/continent $auth <<EOF
+    http POST /datasets/gov/dc/geo/Continent $auth <<EOF
     {
         "_data": [
             {
                 "_op": "insert",
-                "_type": "datasets/gov/dc/geo/continent",
+                "_type": "datasets/gov/dc/geo/Continent",
                 "continent": "Africa"
             },
             {
                 "_op": "insert",
-                "_type": "datasets/gov/dc/geo/continent",
+                "_type": "datasets/gov/dc/geo/Continent",
                 "continent": "Europe"
             }
         ],
@@ -557,14 +654,14 @@ skirtingiems modeliams, vykdant užklausą vardų erdvės kontekste.
     {
         "_data": [
             {
-                "_type": "datasets/gov/dc/geo/continent",
+                "_type": "datasets/gov/dc/geo/Continent",
                 "_id": "b8f1edaa-220d-4e0b-b59b-dc27555a0fb5",
                 "_revision": "988969c3-663b-4edf-bd64-861a3f1b1d1c",
                 "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
                 "continent": "Africa"
             },
             {
-                "_type": "datasets/gov/dc/geo/continent",
+                "_type": "datasets/gov/dc/geo/Continent",
                 "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
                 "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
                 "_txn": "2c5feac6-1d72-48f6-ae63-8f2304693b21",
@@ -593,9 +690,9 @@ Srautinio grupinio rašymo užklausa atrodo taip:
 
 .. code-block:: sh
 
-    http POST /datasets/gov/dc/geo/continent $auth Content-Type:application/x-ndjson <<EOF
-    {"_op": "insert", "_type": "datasets/gov/dc/geo/continent", "continent": "Africa"}
-    {"_op": "insert", "_type": "datasets/gov/dc/geo/continent", "continent": "Europe"}
+    http POST /datasets/gov/dc/geo/Continent $auth Content-Type:application/x-ndjson <<EOF
+    {"_op": "insert", "_type": "datasets/gov/dc/geo/Continent", "continent": "Africa"}
+    {"_op": "insert", "_type": "datasets/gov/dc/geo/Continent", "continent": "Europe"}
     EOF
 
 .. code-block:: http
