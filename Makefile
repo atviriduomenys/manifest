@@ -19,9 +19,7 @@ requirements.txt: env/bin/pip-compile requirements.in
 	env/bin/pip-compile --no-emit-index-url requirements.in -o requirements.txt
 
 docs/requirements.txt: env/bin/pip-compile docs/requirements.in
-	env/bin/pip-compile --no-emit-index-url docs/requirements.in -o
-	docs/requirements
-	.txt
+	env/bin/pip-compile --no-emit-index-url docs/requirements.in -o docs/requirements.txt
 
 .env: .env.example
 	cp -n .env.example .env | true
