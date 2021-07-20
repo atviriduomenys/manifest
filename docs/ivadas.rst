@@ -88,6 +88,16 @@ metu sudaromi įstaigoje esančių :term:`duomenų modelių <modelis>` ir jų
 |  6 |   |   |   |   | name      | string  |      | COUNTRY   | 2     |
 +----+---+---+---+---+-----------+---------+------+-----------+-------+
 
+.. note::
+
+    Siekiant padidinti duomenų struktūros aprašo lentelės skaitomumą, kai
+    kurie stulpelių pavadinimai yra sutrumpinti:
+
+    | **d** - `dataset` - duomenų rinkinio kodinis pavadinimas.
+    | **r** - `resource` - duomenų šaltinio kodinis pavadinimas.
+    | **b** - `base` - modelio bazės pavadinimas, naudojamas apjungiant arba skaidant lenteles.
+    | **m** - `model` - modelio kodinis pavadinimas.
+
 Tokią pirminę inventorizacijos lentelę daugeliu atveju galima generuoti
 automatiškai iš duomenų šaltinio.
 

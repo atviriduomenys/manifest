@@ -370,6 +370,20 @@ konfigūracijos failą:
     $ spinta inspect -r sql mssql+pymssql://user:pass@host:port/db -o manifest.xlsx
 
 
+CSV
+---
+
+.. note::
+
+    Kol kas Spinta neturi CSV formato palaikymo, todėl norint generuoti duomenų
+    struktūros aprašą iš CSV formato failų, pirmiausia CSV reikėtų importuoti į
+    kokią nors SQL duomenų bazę, pavyzdžiui SQLite, o tada duomenų struktūros
+    aprašą generuoti  iš SQL duomenų bazės. Toks apėjimo būdas yra laikinas, kol
+    Spintoje dar nėra CSV palaikymo.
+
+
+
+
 ŠDSA vertimas į ADSA
 ====================
 
