@@ -3,6 +3,70 @@ Sąvokos
 
 .. glossary::
 
+    TGIĮ
+        `Teisės gauti informaciją ir duomenų pakartotinio naudojimo
+        įstatymas`__.
+
+        __ https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94745/asr
+
+        Šis įstatymas įpareigoja valstybės ir savivaldybių institucijas ir
+        joms pavaldžius subjektus atverti duomenis.
+
+        Kelios citatos iš įstatymo:
+
+            **4 straipsnis**
+
+            1. Institucijos ir valstybės valdomi subjektai privalo teikti
+            pareiškėjams ar jų atstovams duomenis, įskaitant pakartotiniam
+            naudojimui skirtus duomenis, išskyrus šio įstatymo ir kitų įstatymų
+            nustatytus atvejus.
+
+            **15 straipsnis**
+
+            1. Visi institucijos ar valstybės valdomo subjekto duomenys turi
+            būti inventorizuoti laikantis principo, kad duomenys gali būti
+            skelbiami pakartotinai naudoti, jeigu tai neprieštarauja šiam ir
+            kitiems įstatymams. Inventorizuotų duomenų sąrašas turi būti
+            skelbiamas Lietuvos atvirų duomenų portale.
+
+            2. Institucijos ir valstybės valdomi subjektai turi sudaryti
+            duomenų, dėl kurių yra pateiktos užklausos Lietuvos atvirų duomenų
+            portale arba kurių pakartotinis naudojimas, institucijos ir
+            valstybės valdomo subjekto vertinimu, gali kurti pridėtinę vertę,
+            rinkinius ir juos skelbti šiame portale, jeigu tai neprieštarauja
+            šiam ir kitiems įstatymams.
+
+            **17 straipsnis**
+
+            1. Lietuvos atvirų duomenų portalas yra valstybės informacinė
+            sistema, skirta duomenų rinkiniams ir jų metaduomenims sisteminti ir
+            skelbti naudojant vienodą metaduomenų aprašymo formatą, taip pat
+            vieno langelio principu institucijų ir valstybės valdomų subjektų
+            sudarytiems duomenų rinkiniams ir jų metaduomenims ieškoti,
+            peržiūrėti, parsisiųsti, pareiškėjų užklausoms registruoti ir kitoms
+            paslaugoms, susijusioms su šios informacinės sistemos paskirtimi,
+            teikti.
+
+            5. Institucijos ir valstybės valdomi subjektai privalo užtikrinti,
+            kad inventorizuotų duomenų sąrašai ir sudaryti duomenų rinkiniai
+            Lietuvos atvirų duomenų portale bus surasti ir pasiekiami šio
+            portalo tvarkytojo nustatyta tvarka ir priemonėmis.
+
+            **18 straipsnis.**
+
+            Pareiškėjo teisės gali būti ginamos šiais būdais:
+
+            1) pareiškėjas turi teisę apskųsti institucijos veiksmus, neveikimą
+            ar administracinį sprendimą, taip pat institucijos vilkinimą atlikti
+            jos kompetencijai šiuo įstatymu priskirtus veiksmus Viešojo
+            administravimo įstatymo nustatyta tvarka;
+
+            2) pareiškėjas turi teisę apskųsti valstybės valdomo subjekto
+            veiksmus ar neveikimą, taip pat valstybės valdomo subjekto vilkinimą
+            atlikti jo kompetencijai šiuo įstatymu priskirtus veiksmus tam
+            pačiam valstybės valdomam subjektui arba bendrosios kompetencijos
+            teismui.
+
     Europos sveikumo karkasas
         `Rekomendacijų rinkinys`__ apie tai, kaip užtikrinti didesnį skaitmeninį
         sveikumą tarp Europos šalių.
@@ -11,19 +75,19 @@ Sąvokos
 
         Rekomendacijų sąrašas:
 
-        2.  Publish the data you own as open data unless certain restrictions
+            2. Publish the data you own as open data unless certain restrictions
             apply.
 
-        3.  Ensure a level playing field for open source software and
+            3. Ensure a level playing field for open source software and
             demonstrate active and fair consideration of using open source
             software, taking into account the total cost of ownership of the
             solution.
 
-        41. Establish procedures and processes to integrate the opening of data
-            in your common business processes, working routines, and in the
+            41. Establish procedures and processes to integrate the opening of
+            data in your common business processes, working routines, and in the
             development of new information systems.
 
-        42. Publish open data in machine-readable, non-proprietary formats.
+            42. Publish open data in machine-readable, non-proprietary formats.
             Ensure that open data is accompanied by high quality,
             machine-readable metadata in non-proprietary formats, including a
             description of their content, the way data is collected and its
@@ -31,16 +95,16 @@ Sąvokos
             available. The use of common vocabularies for expressing metadata is
             recommended.
 
-        43. Communicate clearly the right to access and reuse open data. The
+            43. Communicate clearly the right to access and reuse open data. The
             legal regimes for facilitating access and reuse, such as licences,
             should be standardised as much as possible.
 
-        44. Put in place catalogues of public services, public data, and
+            44. Put in place catalogues of public services, public data, and
             interoperability solutions and use common models for describing
             them.
 
-        45. Where useful and feasible to do so, use external information sources
-            and services while developing European public services.
+            45. Where useful and feasible to do so, use external information
+            sources and services while developing European public services.
 
     atvirų duomenų direktyva
         2019 m. birželio 20 d. Europos Parlamento ir Tarybos direktyva (ES)

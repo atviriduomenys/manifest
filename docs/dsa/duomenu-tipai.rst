@@ -152,19 +152,47 @@ Failai
     Failas. Galimi failo metaduomenis:
 
     id
-        Failo UUID.
+        Laukas, kuris unikaliai identifikuoja failą, šis laukas duomenų
+        saugojimo metu pavirs failo identifikatoriumi, jam suteikiant unikalų
+        UUID.
 
-    file_name
+    name
         Failo pavadinimas.
 
-    content_type
-        Failo media tipas.
+    type
+        Failo `media tipas`__.
+
+        __ https://en.wikipedia.org/wiki/Media_type
 
     size
         Failo turinio dydis baitais.
 
     content
         Failo turinys.
+
+    Šiuos metaduomenis galima perduoti `file()` funkcijai, kai vardinius
+    argumentus. Pavyzdžiui:
+
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    | d | r | b | m | property       | type   | source         | prepare                                             | access       |
+    +===+===+===+===+================+========+================+=====================================================+==============+
+    | datasets/example               |        |                |                                                     |              |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    |   |   |   | Country            |        |                |                                                     |              |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    |   |   |   |   | name           | string | NAME           |                                                     | open         |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    |   |   |   |   | flag_file_name | string | FLAG_FILE_NAME |                                                     | private      |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    |   |   |   |   | flag_file_data | binary | FLAG_FILE_DATA |                                                     | private      |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+    |   |   |   |   | flag           | file   |                | file(name: flag_file_name, content: flag_file_data) | open         |
+    +---+---+---+---+----------------+--------+----------------+-----------------------------------------------------+--------------+
+
+    Šiame pavyzdyje, iš `flag_file_name` ir `flag_file_data` laukų padaromas
+    vienas `flag` laukas, kuriame panaudojami duomenys iš dviejų laukų.
+    Šiuo atveju, `flag_file_name` ir `flag_file_data` laukai tampa
+    pertekliniais, todėl :data:`access` stulpelyje jie pažymėti `private`.
 
 .. describe:: image
 

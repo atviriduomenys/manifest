@@ -30,6 +30,10 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     Unikalus elemento numeris, gali būti sveikas, monotoniškai didėjantis
     skaičius arba UUID. Svarbu užtikrinti, kad visi elementai turėtu unikalų id.
 
+    Šis stulpelis pildomas automatinėmis priemonėmis, siekiant identifikuoti
+    konkrečias metaduomenų eilutes, kad būtų galima atpažinti metaduomenis,
+    kurie jau buvo pateikti ir po to atnaujinti.
+
 .. data:: dataset
 
     **Duomenų rinkinys**
@@ -196,6 +200,9 @@ Duomenų laukų pavadinimai
 
     Visi duomenų lauko žodžiai rašomi mažosiomis raidėmis, atskiriami pabraukimo
     ženklu.
+
+    :data:`ref` tipo laukai turi būti rašome be `id` ar `_id` sufikso,
+    kadangi jis yra perteklinis.
 
 
 .. _vardų-erdvės:
