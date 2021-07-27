@@ -23,11 +23,11 @@ stulpelio pagalba.
 
     Atsitiktine tvarka sumaišomos duomenų reikšmės.
 
-.. function:: hash(model)
+.. function:: hash()
 
     Taikyti numatytą maišos funkciją.
 
-.. function:: hash(model, name)
+.. function:: hash(name)
 
     Taikyti konkrečią `name` maišos funkciją.
 
@@ -85,11 +85,15 @@ naudojamos nuasmeninimo procese:
 +--------+--------+--------------------------------+---------------------------+
 | string |        | pii:email                      | El. pašto adresas         |
 +--------+--------+--------------------------------+---------------------------+
-| string |        | pii:id                         | Asmens kodas              |
+| string |        | pii:pid                        | Asmens kodas              |
++--------+--------+--------------------------------+---------------------------+
+| string |        | pii:id                         | Asmens identifikatorius   |
 +--------+--------+--------------------------------+---------------------------+
 | string |        | pii:address                    | Asmens adresas            |
 +--------+--------+--------------------------------+---------------------------+
 | string |        | pii:age                        | Amžius                    |
++--------+--------+--------------------------------+---------------------------+
+| string |        | pii:sex                        | Lytis                     |
 +--------+--------+--------------------------------+---------------------------+
 
 
