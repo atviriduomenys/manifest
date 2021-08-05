@@ -1,6 +1,6 @@
-.. _katalogas:
 
-Katalogas
-#########
+.. toctree::
+    :caption: Vadovas
+    :maxdepth: 2
 
-Informacija ruošiama.
+    adp_okot
