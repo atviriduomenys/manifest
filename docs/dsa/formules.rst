@@ -555,7 +555,76 @@ situacijas galima aprašyti formulių pagalba.
 Duomenų atranka
 ===============
 
-Duomenų filtravimui naudojamas model.prepare stulpelis, kuriame galima naudoti tokius filtrus:
+Duomenų filtravimui naudojamas :data:`model.prepare` stulpelis, kuriame galima
+apriboti iš šaltinio skaitomų duomenų imtį.
+
+Tarkime, jei turime tokias dvi duomenų lenteles:
+
+======= =======
+COUNTRIES
+---------------
+COUNTRY CODE
+======= =======
+Lietuva lt
+Latvija lv
+======= =======
+
+====== ======= =======
+CITIES
+----------------------
+ID     CITY    COUNTRY
+====== ======= =======
+1      Vilnius lt
+2      Kaunas  lt
+3      Ryga    lv
+====== ======= =======
+
+Jei norėtume atveri ne visų šalių duomenis, o tik Lietuvos, tada duomenų
+struktūros aprašas turėtu atrodyti taip:
+
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+| d | r | b | m | property   | type    | ref     | source    | prepare         |
++===+===+===+===+============+=========+=========+===========+=================+
+| datasets/example/countries |         |         |           |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   | salys                  | sql     |         | sqlite:// |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   | Country        |         | code    | COUNTRIES | **code = "lt"** |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   |   | name       | string  |         | COUNTRY   |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   |   | code       | string  |         | CODE      |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   | City           |         | id      | CITIES    |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   |   | id         | integer |         | ID        |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   |   | name       | string  |         | CITY      |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+|   |   |   |   | country    | ref     | Country | COUNTRY   |                 |
++---+---+---+---+------------+---------+---------+-----------+-----------------+
+
+Kaip ir visur, formulės reikia naudoti pavadinimus ne iš :data:`source`
+stulpelio, o iš :data:`property`, :data:`model` arba :data:`dataset`.
+
+Jei lentelės yra susijusios ryšiais tarpusavyje, užtenka filtrą nurodyti tik
+vienoje lentelėje, visose kitose susijusios lentelėse filtrai bus taikomi
+automatiškai, kad užtikrinti duomenų vientisumą.
+
+Nurodant filtrus yra galimybė naudoti ne tik vienos lentelės laukus, bet ir
+susijusių lentelių laukus, pavyzdžiui yra galimybė nurodyti tokį filtrą:
+
++---+---+---+---+------------+---------+---------+-----------+-------------------------+
+| d | r | b | m | property   | type    | ref     | source    | prepare                 |
++===+===+===+===+============+=========+=========+===========+=========================+
+|   |   |   | City           |         | id      | CITIES    | **country.code = "lt"** |
++---+---+---+---+------------+---------+---------+-----------+-------------------------+
+
+Tačiau šiuo atveju, toks filtras būtų perteklinis, nes toks filtras
+generuojamas automatiškai ir susijusio `Country` modelio, kadangi negalime
+publikuoti Latvijos miestų, jei publikuojama tik Lietuvos šalis.
+
+Pilnas galimų filtrų sąrašas:
 
 .. describe:: model.prepare
 
