@@ -38,6 +38,8 @@ https://put.data.gov.lt/
     Saugyklos sritis skirta duomenų tiekėjams, kuriems suteikiama galimybė
     teikti duomenis į saugyklą. Ši sritis yra skirta tik duomenų tiekėjams.
 
+.. _saugyklos-testinė-aplinka:
+
 Taip pat yra analogiškos aplinkos skirtos testavimui, prieš pereinant prie
 gamybinės aplinkos:
 
@@ -587,6 +589,20 @@ wipe
 
 Pilnai ištrina objektą, įskaitant ir objekto pėdsakus keitimo žurnale. Tokiu
 būdu ištrinto objekto atstatyti neįmanoma.
+
+.. note::
+
+    **Naudoti tik išimtiniais atvejais.**
+
+    `wipe` operacija naudojama tik išimtiniais atvejais, jei pastebėta
+    esminių klaidų duomenų įkėlimo skriptuose, duomenys dėl įvairių klaidų
+    buvo sugadinti ir pan. Duomenų įkėlimo procesą geriausia išsitestuoti
+    :ref:`testinėje aplinkoje <saugyklos-testinė-aplinka>`.
+
+    Duomenų įkėlimo praktika, kai visi publikuoti duomenys ištrinami ir
+    įkeliami iš naujo nerekomenduotina, kadangi tokiu atveju dingsta duomenų
+    keitimo istorija, gali pasikeisti objektų identifikatoriai. Duomenys turi
+    būti pirmą kartą įkeliame, o tada atnaujinama tik tai, kas pasikeitė.
 
 .. code-block:: sh
 

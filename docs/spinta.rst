@@ -212,7 +212,7 @@ lentelę XLSX formatu:
 
 .. code-block:: sh
 
-    $ spinta inspect -r sql sqlite:///sqlite.db -o manifest.xlsx
+    $ spinta inspect -r sql sqlite:///sqlite.db -o sdsa.xlsx
 
 :term:`DSA` lentelę, išsaugotą XLSX formatu galima atsidaryti ir redaguoti
 naudojant LibreOffice Calc, Excel ar kitomis skaičiuoklės programomis. Tačiau
@@ -238,13 +238,13 @@ Naują :term:`DSA` lentelę galite pradėti kurti taip:
 
 .. code-block:: sh
 
-    $ spinta init manifest.xlsx
+    $ spinta init sdsa.xlsx
 
 Ši komanda sugeneruos tuščią :term:`DSA` lentelę:
 
 .. code-block:: sh
 
-    $ spinta show manifest.xlsx
+    $ spinta show sdsa.xlsx
     d | r | b | m | property | type   | ref | source
 
 Tada, šią lentelę galite atsidaryti su jūsų `mėgiama skaičiuoklės programa`__ ir
@@ -267,8 +267,8 @@ argumentų pagalba, tik šį karta reikia nurodyti kelia iki :term:`DSA` lentel�
 
 .. code-block:: sh
 
-    $ spinta inspect resources.xlsx -o manifest.xlsx
-    $ spinta show manifest.xlsx
+    $ spinta inspect resources.xlsx -o sdsa.xlsx
+    $ spinta show sdsa.xlsx
     d | r | b | m | property | type   | ref | source
     dataset                  |        |     |
       | sql                  | sql    |     | sqlite:///sqlite.db
@@ -279,6 +279,44 @@ argumentų pagalba, tik šį karta reikia nurodyti kelia iki :term:`DSA` lentel�
 
 Analogiškai :term:`DSA` lentelės generuojamos ir visiems kitiems
 :data:`resource.type` formatams.
+
+
+CSV
+---
+
+.. note::
+
+    Kol kas Spinta neturi įmontuoto CSV formato palaikymo, todėl
+    ši rekomendacija yra laikinas trūkstamo CSV palaikymo apėjimas. Ateityje
+    planuojama integruoti Dask_ karkasą, kurio dėka atsiras CSV ir `daugelio
+    kitų formatų`__ palaikymas.
+
+    .. _Dask: https://dask.org/
+
+    __ https://docs.dask.org/en/latest/dataframe-api.html#create-dataframes
+
+Norint gauti pradinė ŠDSA variantą iš CSV failų, pirmiausiai CSV failus
+reikėtų importuoti į SQLite duomenų bazę:
+
+.. code-block:: sh
+
+    $ sqlite3 data.db -csv ".import table1.csv table1"
+    $ sqlite3 data.db -csv ".import table2.csv table2"
+    $ sqlite3 data.db -csv ".import table3.csv table3"
+
+Tokiu būdu importavus duomenis į SQLite, duomenų struktūros aprašas
+generuojamas taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql sqlite:///data.db -o sdsa.xlsx
+
+Jei pageidaujate, trūkstamus metaduomenis, tokius kaip duomenų laukus,
+pirminius raktus ar ryšius galite pateikti naudodami `DB Browser for SQLite`_
+programą. Tačiau tą patį galite padaryti ir skaičiuoklės pagalba, redaguodami
+ŠDSA lentelę.
+
+.. _DB Browser for SQLite: https://sqlitebrowser.org/
 
 
 SQL DDL dump
@@ -314,6 +352,42 @@ generuojama taip:
     );
 
 
+SQLite
+------
+
+Generuojant :term:`DSA` iš SQLite duomenų bazės, jokių papildomų paketų
+diegti nereikia. `inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql sqlite:///data.db -o sdsa.xlsx
+
+Atkreipkite dėmesį, kad absoliutus kelias atrodo taip::
+
+    sqlite:////data.db
+
+O reliatyvus atrodo taip::
+
+    sqlite:///data.db
+
+
+PostgreSQL
+----------
+
+Generuojant :term:`DSA` iš PostgreSQL duomenų bazės, jums papildomai reikia
+įdiegti tokį Python paketą:
+
+.. code-block:: sh
+
+    $ pip install psycopg2-binary
+
+O `inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql postgresql+psycopg2://user:pass@host:port/db -o sdsa.xlsx
+
+
 MySQL
 -----
 
@@ -328,7 +402,36 @@ O `inspect` komanda atrodys taip:
 
 .. code-block:: sh
 
-    $ spinta inspect -r sql mysql+pymysql://user:pass@host:port/db -o manifest.xlsx
+    $ spinta inspect -r sql mysql+pymysql://user:pass@host:port/db -o sdsa.xlsx
+
+
+MySQL (<5.6)
+------------
+
+`pymysql` biblioteka palaiko MySQL >= 5.6 ir MariaDB >= 10 versijas. Jei
+naudojate labai seną MySQL versiją, tuomet, vietoj `pymysql` reikėtų naudoti
+senesnę mysqlclient_ biblioteką, kuri palaiko MySQL >= 3.23.32. `mysqlclient`
+diegimui pirmiausia reikės įsidiegti tokius sisteminius paketus:
+
+.. _mysqlclient: https://pypi.org/project/mysqlclient/
+
+.. code-block:: sh
+
+    $ sudo apt install build-essential python3-dev default-libmysqlclient-dev
+
+O data ir pačią `mysqlclient` biblioteką:
+
+.. code-block:: sh
+
+    pip install mysqlclient
+
+`inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    spinta inspect -r sql mysql+mysqldb://user:pass@host:port/db -o sdsa.xlsx
+
+*p.s. jei vis dar naudojate tokią seną MySQL versiją, laikas atsinaujinti!*
 
 
 Microsoft SQL Server
@@ -367,21 +470,31 @@ konfigūracijos failą:
 
 .. code-block:: sh
 
-    $ spinta inspect -r sql mssql+pymssql://user:pass@host:port/db -o manifest.xlsx
+    $ spinta inspect -r sql mssql+pymssql://user:pass@host:port/db -o sdsa.xlsx
 
 
-CSV
----
+Oracle
+------
 
-.. note::
+Generuojant :term:`DSA` iš Oracle duomenų bazės, jums
+papildomai reikia įdiegti cx_Oracle_ paketą:
 
-    Kol kas Spinta neturi CSV formato palaikymo, todėl norint generuoti duomenų
-    struktūros aprašą iš CSV formato failų, pirmiausia CSV reikėtų importuoti į
-    kokią nors SQL duomenų bazę, pavyzdžiui SQLite, o tada duomenų struktūros
-    aprašą generuoti  iš SQL duomenų bazės. Toks apėjimo būdas yra laikinas, kol
-    Spintoje dar nėra CSV palaikymo.
+.. _cx_Oracle: https://oracle.github.io/python-cx_Oracle/
 
+.. code-block:: sh
 
+    $ pip install cx_Oracle
+
+Dėl papildomos informacijos apie Oracle jungtį, skaitykite `cx_Oracle
+dokumentacijoje`__.
+
+__ https://cx-oracle.readthedocs.io/en/latest/index.html
+
+`inspect` komanda atrodys taip:
+
+.. code-block:: sh
+
+    $ spinta inspect -r sql oracle+cx_oracle://user:pass@host:port/db -o sdsa.xlsx
 
 
 ŠDSA vertimas į ADSA
@@ -398,7 +511,7 @@ stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
 
 .. code-block:: sh
 
-    $ spinta copy sdsa.csv --no-source --access open -o adsa.csv
+    $ spinta copy sdsa.xlsx --no-source --access open -o adsa.csv
 
 
 Duomenų publikavimas į Saugyklą
@@ -453,14 +566,17 @@ saugyklą tokiu būdu:
 
     $ spinta push sdsa.csv -o spinta+https://ivpk@put.data.gov.lt
 
-Dar vienas dalykas, į kurį reikėtu atkreipti dėmesį yra būsenos failas. Kadangi
-`spinta push` komanda į saugyklą siunčia tik tuos duomenis kurie dar nebuvo
-siųsti arba kurie pasikeitė, kad tai veiktų saugoma duomenų perdavimo į saugyklą
-būsena. Būsena saugoma SQLite duomenų bazėje,
-`$XDG_DATA_HOME/spinta/pushstate.db`__ faile (pavyzdžiui
-`~/.local/share/spinta/pushstate.db`). Priklausomai nuo duomenų kiekio šis
-failas gali užimti gan daug vietos. Būsenos faile saugomi Saugykloje suteikti
-objektų identifikatoriai, vietiniai identifikatoriai ir duomenų kontrolinė suma.
+Dar vienas dalykas, į kurį reikėtu atkreipti dėmesį yra būsenos ir objektų
+identifikatorių failai. Kadangi `spinta push` komanda į Saugyklą siunčia tik
+tuos duomenis kurie dar nebuvo siųsti arba kurie pasikeitė, kad tai veiktų
+saugoma duomenų perdavimo į Saugyklą būsena ir identifikatoriai. Būsena saugoma
+SQLite duomenų bazėje, `$XDG_DATA_HOME/spinta/push/{remote}.db`__ faile (pavyzdžiui
+`~/.local/share/spinta/push/get_data_gov_lt.db`). Identifikatoriai saugomie
+`$XDG_DATA_HOME/spinta/keymap.db` SQLite faile (pavyzdžiui
+`~/.local/share/spinta/keymap.db`. Priklausomai nuo duomenų kiekio šie failai
+gali užimti gan daug vietos. Būsenos ir identifikatorių failuose saugomi
+Saugykloje suteikti objektų identifikatoriai, vietiniai identifikatoriai ir
+duomenų kontrolinės sumos.
 
 __ https://specifications.freedesktop.org/basedir-spec/latest/ar01s03.html
 
