@@ -4,115 +4,6 @@
 
 **MB DUOMENŲ ALCHEMIKAS**
 
-TURINYS
-
-`1. Įvadas 4 <#įvadas>`__
-
-`1.1. Naudojami terminai ir sąvokos
-4 <#naudojami-terminai-ir-sąvokos>`__
-
-`2. Institucijos ir atstovaujančio koordinatoriaus registravimas
-5 <#institucijos-ir-atstovaujančio-koordinatoriaus-registravimas>`__
-
-`2.1. Registracija pasirinkus „Gyventojas“
-6 <#registracija-pasirinkus-gyventojas>`__
-
-`2.2. Registracija pasirinkus „Viešasis sektorius“
-7 <#registracija-pasirinkus-viešasis-sektorius>`__
-
-`2.3. Identifikavus tapatybę 8 <#identifikavus-tapatybę>`__
-
-`3. Prisijungimas prie sistemos 11 <#prisijungimas-prie-sistemos>`__
-
-`4. Pagrindinis meniu 12 <#pagrindinis-meniu>`__
-
-`4.1. Paieška 12 <#_Toc79011215>`__
-
-`5. Pradinis langas 13 <#pradinis-langas>`__
-
-`6. Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
-14 <#darbas-su-organizacijos-ad-tvarkytojais-koordinatoriai>`__
-
-`7. Darbas su organizacijos rekvizitais (Koordinatoriai)
-16 <#darbas-su-organizacijos-rekvizitais-koordinatoriai>`__
-
-`8. Darbas su poreikiais (Koordinatoriai)
-18 <#darbas-su-poreikiais-koordinatoriai>`__
-
-`8.1. Poreikių sąrašo peržiūra 18 <#_Toc79011220>`__
-
-`8.2. Atvėrimo poreikio peržiūra 19 <#atvėrimo-poreikio-peržiūra>`__
-
-`8.3. Atsakymas į pateiktą atvėrimo poreikį
-24 <#atsakymas-į-pateiktą-atvėrimo-poreikį>`__
-
-`9. Darbas su duomenų rinkiniais 25 <#darbas-su-duomenų-rinkiniais>`__
-
-`9.1. Duomenų rinkinių sąrašo peržiūra
-26 <#duomenų-rinkinių-sąrašo-peržiūra>`__
-
-`9.2. Duomenų šablono atsisiuntimas
-27 <#duomenų-šablono-atsisiuntimas>`__
-
-`9.3. Duomenų rinkinio importavimas
-27 <#duomenų-rinkinio-importavimas>`__
-
-`9.4. Naujo duomenų rinkinio sukūrimas ir inventorinimas
-28 <#naujo-duomenų-rinkinio-sukūrimas-ir-inventorinimas>`__
-
-`1. Inventorinimo duomenys 28 <#inventorinimo-duomenys>`__
-
-`2. Struktūra 29 <#struktūra>`__
-
-`3. Prioritetai 30 <#prioritetai>`__
-
-`4. Finansiniai duomenys 33 <#finansiniai-duomenys>`__
-
-`5. Metaduomenų įvedimas 34 <#metaduomenų-įvedimas>`__
-
-`6. Duomenų distribucijos tvarkymas
-37 <#duomenų-distribucijos-tvarkymas>`__
-
-`7. Pateikti poreikiai 40 <#pateikti-poreikiai>`__
-
-`8. Duomenų rinkinio istorijos peržiūra
-41 <#duomenų-rinkinio-istorijos-peržiūra>`__
-
-`9. Duomenų rinkinio pastabų peržiūra
-42 <#duomenų-rinkinio-pastabų-peržiūra>`__
-
-`10. Darbas su IRS rinkiniais 43 <#darbas-su-irs-rinkiniais>`__
-
-`10. Darbas su metiniais planais 45 <#darbas-su-metiniais-planais>`__
-
-`10.1. Metinio plano sudarymas 46 <#metinio-plano-sudarymas>`__
-
-`10.2. Metinio plano formavimas ir pateikimas
-47 <#metinio-plano-formavimas-ir-pateikimas>`__
-
-`10.3. Metinio plano išformavimas 49 <#metinio-plano-išformavimas>`__
-
-`10.4. Plano patvirtinimas organizacijos vardu
-50 <#plano-patvirtinimas-organizacijos-vardu>`__
-
-`11. Ataskaitų formavimas 51 <#_Toc79011243>`__
-
-`11.1. Ataskaitų kūrimas 51 <#ataskaitų-kūrimas>`__
-
-`11.2. Paruoštų ataskaitų valdymas 52 <#paruoštų-ataskaitų-valdymas>`__
-
-`11.3. Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs
-duomenys“
-53 <#ataskaita-atvirų-duomenų-rinkinių-naudojimo-intensyvumo-detalūs-duomenys>`__
-
-`11.4. Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs
-duomenys (failams)“
-56 <#ataskaita-atvirų-duomenų-rinkinių-naudojimo-intensyvumo-detalūs-duomenys-failams>`__
-
-`12. Partnerių API 58 <#partnerių-api>`__
-
-`13. Slaptažodžio keitimas 59 <#slaptažodžio-keitimas>`__
-
 Įvadas
 ======
 
@@ -125,8 +16,7 @@ duomenys (failams)“
 Naudojami terminai ir sąvokos
 -----------------------------
 
-=============================================
-==============================================================================================================================================================================================================================================================================
+============================================= ==============================================================================================================================================================================================================================================================================
 Terminas, sąvoka                              Aprašymas
 „Laukas“                                      Kabutėmis „  “ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko pavadinimas, matomas aprašomame lange.
 „Tekstinis laukas“                            Vieta, kur sistemos naudotojas gali suvesti duomenis arba duomenys yra vaizduojami.
@@ -135,9 +25,7 @@ API (angl. Application Programming Interface) Programos valdymo sąsaja įgalina
 Lango mygtukas                                Mygtukas, kurio veiksmas įtakoja visus lango duomenis.
 Įrašo mygtukas                                Mygtukas, kurio veiksmas įtakoja vieno įrašo duomenis.
 IRS                                           Rinkiniai iš Informacinių Rinkinių Sistemos (IRS)
-„Meniu punktas”                               Kabutėmis „  ” yra žymimas meniu punktas.
-                                             
-                                              Tarp kabučių rašomas meniu punkto pavadinimas.
+„Meniu punktas”                               Kabutėmis „  ” yra žymimas meniu punktas. Tarp kabučių rašomas meniu punkto pavadinimas.
 Žymimasis langelis                            Kvadrato formos figūra, kurios dešinėje rašomas tekstas. Aprašymas atspindi galimą veiksmą. Figūra parodo, ar yra pasirinkta nurodyta reikšmė, ar ne. Naudotojas gali keisti pasirinkimo langelio reikšmę pele pažymint arba panaikinant požymį langelyje.
 Pagrindinis meniu                             Pagrindiniame meniu yra pristatomos pagrindinės sistemos funkcijos. Pagrindinio meniu punktai yra pasirenkami pelės kairiojo klavišo spustelėjimu pažymint juos.
 Pasirinktas meniu punktas                     Norėdamas pasirinkti meniu punktą, sistemos naudotojas turi spragtelti ant jo kairiu pelės klavišu.
@@ -146,8 +34,7 @@ VIISP                                         Valstybės Informacinių Ištekli�
 E-Vartai                                      Elektroninių valdžios vartų puslapis
 Įstaiga                                       Organizacija / institucija, vykdanti nustatytas veiklas
 |image0| Sąrašo rūšiavimas                    Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto stulpelio pavadinimą arba [|image1|].
-=============================================
-==============================================================================================================================================================================================================================================================================
+============================================= ==============================================================================================================================================================================================================================================================================
 
 Institucijos ir atstovaujančio koordinatoriaus registravimas
 ============================================================
