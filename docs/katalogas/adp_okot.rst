@@ -1,7 +1,7 @@
 ORGANIZACIJOS KOORDINATORIŲ IR TVARKYTOJŲ APLINKOS NAUDOTOJO EL.VADOVAS
 =======================================================================
 
-**Versija: 2021-08-11**
+**Versija: 2021-08-12**
 
 Įvadas
 ======
@@ -51,14 +51,14 @@ Institucijos ir atstovaujančio koordinatoriaus registravimas
 2. Pagrindiniame lange spauskite [**Užpildyti naujo duomenų teikėjo formą**]:
 
 | |Graphical user interface Description automatically generated|
-| 1 pav. Portalo pagrindinio lango viršutinis fragmentas
+| *1 pav. Portalo pagrindinio lango viršutinis fragmentas*
 
 *Būsite nukreipti į El.Vartų puslapį.
 
 *Čia pateikiami prisijungimo būdai:*
 
-| |Graphical user interface, text, application, email, website Description automatically generated|
-| 2 pav. El.Vartų prisijungimo puslapio fragmentas
+| |image4|
+| *2 pav. El.Vartų prisijungimo puslapio fragmentas*
 
 Jeigu koordinatoriumi yra skiriamas:
 
@@ -69,6 +69,7 @@ Jeigu koordinatoriumi yra skiriamas:
 *Siūlome registruotis pasirinkus „Gyventojas“*.
 
 ********************************************************************************
+
 Registracija pasirinkus „Gyventojas“
 ------------------------------------
 
@@ -76,44 +77,43 @@ El.valdžios vartų puslapyje:
 
 1. Paspauskite „Gyventojas ar rezidentas“.
 
-| |Graphical user interface, application Description automatically generated|
-| 3 pav. El.Vartų puslapio viršutinis fragmentas
+| |image5|
+| *3 pav. El.Vartų puslapio viršutinis fragmentas*
 
 2. Atsidariusiame lange pasirinkite registraciją „Per banką“ arba „Su elektroninės atpažinties priemone“.
 
-   *Siūlome rinktis variantą „Per banką“.*
+| |image6|
+| *4 pav. Lango "Prisijungimas" fragmentas*
 
-| |Table Description automatically generated|
-| 4 pav. Prisijungimo prie El.Vartų langas
-
-3. Pasirinkite registraciją „Per banką“, paspauskite savo banko ikoną,
-   suvesti el. bankininkystės prisijungimo duomenis.
+3. *Siūlome rinktis variantą „Per banką“:* paspauskite savo banko ikoną, suvesti el. bankininkystės prisijungimo duomenis.
 
 ********************************************************************************
+
 Registracija pasirinkus „Viešasis sektorius“
 --------------------------------------------
 
 1. Paspauskite „Viešasis sektorius“.
 
-| |Graphical user interface, application Description automatically generated|
-| 5 pav. El.Vartų prisijungimo tapatybės nustatymo langas
+| |image7|
+| *5 pav. El.Vartų prisijungimo tapatybės nustatymo langas*
 
 2. Atsidariusiame lange spauskite „Valstybės tarnautojo pažymėjimas ir skaitytuvas“.
 
-| |Graphical user interface, text, application Description automatically generated|
-| 6 pav. Prisijungimo priemonės nustatymo langas
+| |image8|
+| *6 pav. Prisijungimo priemonės nustatymo langas*
 
 3. Jei reikia – įdiekite įskiepį naršyklei:
 
-| |Graphical user interface, text, application Description automatically generated|
-| 7 pav. Prisijungimo priemonės įskiepio diegimo pranešimo langas
+| |image9|
+| *7 pav. Prisijungimo priemonės įskiepio diegimo pranešimo langas*
 
 4. Suveskite reikiamus identifikavimo duomenis:
 
-| |image9|
-| 8 pav. Pasirašymo su PIN lango fragmentas
+| |image10|
+| *8 pav. Pasirašymo su PIN lango fragmentas*
 
 ********************************************************************************
+
 Identifikavus tapatybę
 ----------------------
 
@@ -129,33 +129,32 @@ Identifikavus tapatybę
 
 1. Jeigu buvote nukreipti į E. paslaugos puslapį, spauskite „\ **Prisijungti**\ “.
 
-| |Graphical user interface, website Description automatically generated|
-| 9 pav. Prisijungimo per elektroninį banką langas
+| |image11|
+| *9 pav. Prisijungimo per elektroninį banką langas*
 
 *
 *
 
 *Būsite nukreipti į El.Vartų puslapį „Mano kortelė“:*
 
-| |image11|
-| 10 pav. El.Vartų puslapio „Mano kortelė“ lango fragmentas
+| |image12|
+| *10 pav. El.Vartų puslapio „Mano kortelė“ lango fragmentas*
 
 2. Naujame naršyklės lange atsidarykite Portalo puslapį https://data.gov.lt.
 
 3. Pakartotinai spauskite [**Užpildyti naujo duomenų teikėjo formą**]:
 
-| |Graphical user interface Description automatically generated|
-| 11 pav. Portalo pradinio lango fragmentas
+| |image3|
+| *11 pav. Portalo pradinio lango fragmentas*
 
 ********************************************************************************
+
 **Variantas B:**
 
-*Atsidarys El.Vartų langas „Duomenų teikimas į Atvirų duomenų portalą“:
-čia automatiškai surenkami ir atvaizduojami registruojamo
-koordinatoriaus duomenys: vardas, pavardė, kontaktai.*
+*Atsidarys El.Vartų langas „Duomenų teikimas į Atvirų duomenų portalą“: čia automatiškai surenkami ir atvaizduojami registruojamo koordinatoriaus duomenys: vardas, pavardė, kontaktai.*
 
 | |image13|
-| 12 pav. El.Vartų langas „Duomenų teikimas į Atvirų duomenų portalą“
+| *12 pav. El.Vartų langas „Duomenų teikimas į Atvirų duomenų portalą“*
 
 **Atsisakyti patvirtini duomenis:** spauskite [**Atšaukti**].
 
@@ -164,7 +163,7 @@ koordinatoriaus duomenys: vardas, pavardė, kontaktai.*
 4. Atsidarys „\ **Duomenų teikėjo registracijos**\ “ forma:
 
 | |image14|
-| 13 pav. Duomenų teikėjo registracijos lango fragmentas
+| *13 pav. Duomenų teikėjo registracijos lango fragmentas*
 
 5. Pateikite *organizacijos atvirų duomenų koordinatoriaus* informaciją (\* – privaloma):
 
@@ -178,15 +177,9 @@ koordinatoriaus duomenys: vardas, pavardė, kontaktai.*
 
 - Įkelkite institucijos vadovo (ar įgalioto darbuotojo) pasirašytą koordinatoriaus paskyrimo raštą \*.
 
-   Rašto formatas:
+   *Rašto formatas: skaitmeninė kopija (.pdf), el. parašu pasirašytas (.adoc), arba e-parašu pasirašyto dokumento nuorašas (.pdf).*
 
-   -  skaitmeninė kopija (pdf)
-
-   -  el. parašu pasirašytas (.adoc)
-
-   -  e-parašu pasirašyto dokumento nuorašas (pdf).
-
-      *Rašto pavyzdį rasite po nuoroda „orgKoordinatoriausPaskyrimoRastas.doc“*
+   *Rašto pavyzdį rasite po nuoroda „orgKoordinatoriausPaskyrimoRastas.doc“*
 
 6. Spauskite „Registruoti duomenų teikėją“ formos apačioje.
 
@@ -203,11 +196,12 @@ koordinatoriaus duomenys: vardas, pavardė, kontaktai.*
 - *Žinutėje nurodoma atmetimo priežastis, pvz., „raštas nėra tinkamai užpildytas“ ar „trūksta parašo“.*
 
 ********************************************************************************
+
 Prisijungimas prie sistemos
 ===========================
 
 | |Graphical user interface, text, application, email Description automatically generated|
-| 14 pav. Prisijungimo langas
+| *14 pav. Prisijungimo langas*
 
 1. Naršyklėje atidarykite puslapį adresu: https://data.gov.lt/login.
 
@@ -216,6 +210,7 @@ Prisijungimas prie sistemos
 3. Spauskite **[Prisijungti]**.
 
 ********************************************************************************
+
 Pagrindinis meniu
 =================
 
@@ -254,27 +249,22 @@ meniu Tvarkytojams                                                              
 =========================================
 
 ********************************************************************************
+
 Paieška
 -------
 
-Kairėje ekrano pusėje, meniu viršuje – tekstinis laukas skirtas meniu
-laukų paieškai.
+Kairėje ekrano pusėje, meniu viršuje – tekstinis laukas skirtas meniu laukų paieškai.
 
-=================================================================================
-===============================================================================
-|Graphical user interface, text, application Description automatically generated| 1. Į tekstinį lauką įveskite pavadinimą, pilną arba fragmentą;
-17 pav. Pagrindinio meniu laukų paieškos rezultatų pavyzdys                      
-                                                                                  2. Spauskite **[Enter]**.
-                                                                                 
-                                                                                  3. Paiešką atitinkantys variantai bus atvaizduoti meniu lauke.
-                                                                                 
-                                                                                  4. Vėl norėdami matyti pilną meniu, spauskite **[**\ |Screenshot (256)|\ **].**
-=================================================================================
-===============================================================================
+1. Į tekstinį lauką įveskite pavadinimą, pilną arba fragmentą;
 
-********************************************************************************
-Pradinis langas
-===============
+2. Spauskite **[Enter]**.
+
+| |Graphical user interface, text, application Description automatically generated| 
+| *17 pav. Pagrindinio meniu laukų paieškos rezultatų pavyzdys*
+
+3. Paiešką atitinkantys variantai bus atvaizduoti meniu lauke.
+
+4. Vėl norėdami matyti pilną meniu, spauskite **[**\ |Screenshot (256)|\ **].
 
 *Pradinis langas matomas:*
 
@@ -283,7 +273,7 @@ Pradinis langas
 - *pagrindiniame meniu paspaudus punktą*\ **„Pradinis“**\ *.*
 
 | |image21|
-| 18 pav. Organizacijos koordinatoriaus aplinkos pradinio lango fragmentas
+| *18 pav. Organizacijos koordinatoriaus aplinkos pradinio lango fragmentas*
 
 
 Lange pateikiama lentelė, kurioje pateikta informacija apie organizacijos statistiką:
@@ -297,9 +287,10 @@ Lange pateikiama lentelė, kurioje pateikta informacija apie organizacijos stati
 - **Portalo naudotojai:** Portalo registruotų naudotojų paskyrų skaičius.
 
 | |image22|
-| 19 pav. Organizacijos tvarkytojo aplinkos pradinio lango fragmentas
+| *19 pav. Organizacijos tvarkytojo aplinkos pradinio lango fragmentas*
 
 ********************************************************************************
+
 Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
 ========================================================
 
@@ -308,7 +299,7 @@ Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
 1. Pagrindiniame meniu išskleiskite „Naudotojai“ ir pasirinkite **„Organizacijų tvarkytojai“**:
 
 | |image23|
-| 20 pav. Organizacijos tvarkytojų paskyrų sąrašo lango meniu
+| *20 pav. Organizacijos tvarkytojų paskyrų sąrašo lango meniu*
 
 Sąrašo duomenis:
 
@@ -331,9 +322,10 @@ Sąrašo duomenis:
 1. Spauskite **[+ Pridėti]** ir užpildykite registracijos langą ir išsaugokite pakeitimus:
 
 | |image29|
-| 21 pav. Langas pridėti naują organizacijos tvarkytoją
+| *21 pav. Langas pridėti naują organizacijos tvarkytoją*
 
 ********************************************************************************
+
 **Redaguoti paskyras:**
 
 1. Sąraše pažymėkite reikiamą paskyrą ir lango meniu spauskite **[Redaguoti]**:
@@ -361,6 +353,7 @@ Sąrašo duomenis:
 3. Rikiuoti galima vienu metu tik pagal vieną kurį nors stulpelį.
 
 ********************************************************************************
+
 Darbas su organizacijos rekvizitais (Koordinatoriai)
 ====================================================
 
@@ -415,6 +408,7 @@ Skiltyje **„2. Logotipas“** galite įkelti naują arba pakeisti įkeltą org
 25 pav. Rekvizitų redagavimo langas
 
 ********************************************************************************
+
 Darbas su poreikiais (Koordinatoriai)
 =====================================
 
@@ -423,13 +417,14 @@ Darbas su poreikiais (Koordinatoriai)
 *Portalo naudotojams pateikus arba vyr. koordinatoriui priskyrus poreikį Jūsų organizacijai, gausite pranešimą apie naują poreikį į Jūsų paskyrai užregistruotą el. paštą.*
 
 ********************************************************************************
+
 Poreikių sąrašo peržiūra
 ------------------------
 
 1. Pagrindiniame menu pasirinkite **„Atvėrimo poreikiai“**.
 
 | |image37|
-| 26 pav. Poreikių sąrašo langas
+| *26 pav. Poreikių sąrašo langas*
 
 Bendrame organizacijai pateiktų duomenų atvėrimo poreikių sąraše – pagrindinė poreikių informacija:
 
@@ -459,10 +454,10 @@ Bendrame organizacijai pateiktų duomenų atvėrimo poreikių sąraše – pagri
 
 - **Komentaras:** koordinatoriaus/ tvarkytojo atsakymas su atvėrimo poreikio priežastimi.
 
-*Įsijungus puslapį, sąrašas pateikiamas automatiškai surikiuotas pagal
-sukūrimo datą, pateikiant naujausios datos poreikius viršuje.*
+*Įsijungus puslapį, sąrašas pateikiamas automatiškai surikiuotas pagal sukūrimo datą, pateikiant naujausios datos poreikius viršuje.*
 
 ********************************************************************************
+
 Atvėrimo poreikio peržiūra
 --------------------------
 
@@ -481,58 +476,42 @@ Atvėrimo poreikio peržiūra
 2. Atverto lango viršuje pateiktas meniu, kuriuo naudojantis pasiekiamos atvėrimo poreikio skiltys. Melsvai paryškinta ta skiltis, kurioje tuo metu esate. Numatytoji atidaryti skiltis yra **„Įrašo informacija“**:
 
 | |image38|\ |image39|
-| 27 pav. Atvėrimo poreikio lango meniu
+| *27 pav. Atvėrimo poreikio lango meniu*
 
-Šiame lange pateikta pagrindinė poreikio informacija, pateikta poreikio
-teikėjo:
+Šiame lange pateikta pagrindinė poreikio informacija, pateikta poreikio teikėjo:
 
 - **Autorius**: poreikio teikėjo vardas, pavardė ir el. paštas;
 
 - **Registravimo data**: data ir laikas, kada poreikis buvo pateiktas;
 
-- **Norimas atlikti pakeitimas:** įvardinama, koks konkrečiai
-      pakeitimas turėtų būti įvykdytas esamam duomenų rinkiniui.
-      Poreikio teikėjas gali pasirinkti nuo vieno iki trijų pakeitimų iš
-      pateikto sąrašo;
+- **Norimas atlikti pakeitimas:** įvardinama, koks konkrečiai pakeitimas turėtų būti įvykdytas esamam duomenų rinkiniui. Poreikio teikėjas gali pasirinkti nuo vieno iki trijų pakeitimų iš pateikto sąrašo;
 
-- **Pasiūlymas organizacijai:** poreikio teikėjas gali pateikti
-      pasiūlymą organizacijai;
+- **Pasiūlymas organizacijai:** poreikio teikėjas gali pateikti pasiūlymą organizacijai;
 
-- **Duomenų atnaujinimo periodiškumas:** nurodomas periodas, kas kiek
-      laiko turi būti atnaujinti rinkinyje pateikti duomenys;
+- **Duomenų atnaujinimo periodiškumas:** nurodomas periodas, kas kiek laiko turi būti atnaujinti rinkinyje pateikti duomenys;
 
-- **Patinka paspaudimai:** neredaguotinas laukas, kuriame nurodyta,
-      kiek viešos aplinkos naudotojų paspaudė „Patinka“ prie poreikio. Į
-      „Patinka“ paspaudimų skaičių atsižvelgiama vertinant poreikio
-      prioritetą;
+- **Patinka paspaudimai:** neredaguotinas laukas, kuriame nurodyta, kiek viešos aplinkos naudotojų paspaudė „Patinka“ prie poreikio. Į „Patinka“ paspaudimų skaičių atsižvelgiama vertinant poreikio prioritetą;
 
-- **Norimas keisti duomenų rinkinys:** pavadinimas jau esamo duomenų
-      rinkinio, kuriam atnaujinti teikiamas poreikis;
+- **Norimas keisti duomenų rinkinys:** pavadinimas jau esamo duomenų rinkinio, kuriam atnaujinti teikiamas poreikis;
 
-- **Aprašymas:** duomenų rinkinio ir poreikio aprašymas. Pildo
-      *poreikio teikėjas*;
+- **Aprašymas:** duomenų rinkinio ir poreikio aprašymas. Pildo *poreikio teikėjas*;
 
-- **Formatas:** kokias formatais atveriamas duomenų rinkinys. Laukas
-      neredaguotinas. Pildo *poreikio teikėjas*;
+- **Formatas:** kokias formatais atveriamas duomenų rinkinys. Laukas neredaguotinas. Pildo *poreikio teikėjas*;
 
-- **Papildoma informacija:** papildoma informacija apie duomenų rinkinį
-      ar poreikį. Pildo *poreikio teikėjas*.
+- **Papildoma informacija:** papildoma informacija apie duomenų rinkinį ar poreikį. Pildo *poreikio teikėjas*.
 
 **Peržiūrėti poreikio teikėjo pateiktą struktūrą:**
 
-1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio ir atsidarytų papildomas meniu
-   „Atvėrimo poreikis“, pasirinkite „\ **Pageidaujama duomenų struktūra**\ “:
+1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio ir atsidarytų papildomas meniu „Atvėrimo poreikis“, pasirinkite „\ **Pageidaujama duomenų struktūra**\ “:
 
 | |image40|
-| 28 pav. Pageidaujamos duomenų rinkinio struktūros fragmentas
+| *28 pav. Pageidaujamos duomenų rinkinio struktūros fragmentas*
 
 2. Pageidaujama duomenų struktūra aprašoma šiuose laukuose (*: privalomi laukai):
 
-- **Duomenų pavadinimas \* :** Lauko, kuriame pateikiamas tam tikro
-      tipo duomuo, pavadinimas;
+- **Duomenų pavadinimas \* :** Lauko, kuriame pateikiamas tam tikro tipo duomuo, pavadinimas;
 
-- **Duomenų pavadinimas standartiniame žodyne:** duomens pavadinimas,
-      atitinkantis lietuvių kalbos taisykles.
+- **Duomenų pavadinimas standartiniame žodyne:** duomens pavadinimas, atitinkantis lietuvių kalbos taisykles.
 
 - **Duomenų tipas \* :** duomenų tipas, įrašomas anglų kalba.
 
@@ -541,26 +520,25 @@ teikėjo:
 3. Duomenų teikėjas duomenų rinkinio struktūrą gali įkelti kaip Excel failą: atveju lango viršuje patiekiama nuoroda parsisiųsti failą.
 
 | |struk|
-| 29 pav. Reikiamos duomenų struktūros failo atsisiuntimo nuoroda poreikio lange
+| *29 pav. Reikiamos duomenų struktūros failo atsisiuntimo nuoroda poreikio lange*
 
-*SVARBU: Tik poreikio teikėjas gali pakeisti pageidaujamą duomenų
-struktūrą.*
+*SVARBU: pakeisti pageidaujamą duomenų struktūrą gali tik poreikio teikėjas.*
 
 ********************************************************************************
+
 **Peržiūrėti atvėrimo poreikio būsenų pasikeitimus:**
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
    „Atvėrimo poreikis“, kur pasirinkite „\ **Būsenų istorija**\ “.
 
 | |poreikist|
-| 30 pav. Atvėrimo poreikio lango skiltis „Būsenų istorija“
+| *30 pav. Atvėrimo poreikio lango skiltis „Būsenų istorija“*
 
 2. Sąraše atvaizduojami duomenys:
 
 - **Sukurtas:** Data ir laikas, kada buvo atliktas veiksmas
 
-- **Būsena:** Veiksmo, kuris buvo atliktas, pavadinimas. Galimos
-      reikšmės
+- **Būsena:** Veiksmo, kuris buvo atliktas, pavadinimas. Galimos reikšmės
 
    -  „Sukurtas“
 
@@ -570,54 +548,43 @@ struktūrą.*
 
    -  „Atmestas“.
 
-- **Autorius:** paskyros savininko, atlikusio veiksmus, vardas ir
-      pavardė.
+- **Autorius:** paskyros savininko, atlikusio veiksmus, vardas ir pavardė.
 
-- **Komentaras:** Komentaras, kuris gali būti paliekamas atsakant į
-      poreikį.
+- **Komentaras:** Komentaras, kuris gali būti paliekamas atsakant į poreikį.
 
 ********************************************************************************
+
 Atsakymas į pateiktą atvėrimo poreikį
 -------------------------------------
 
-1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
-   „Atvėrimo poreikis“, kur pasirinkite „\ **Organizacijos atsakymas**\ “.
+1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu „Atvėrimo poreikis“, kur pasirinkite „\ **Organizacijos atsakymas**\ “.
 
 | |poreik|
-| 31 pav. Atvėrimo poreikio lango skilties „Organizacijos atsakymas“
-  pavyzdys
+| *31 pav. Atvėrimo poreikio lango skilties „Organizacijos atsakymas“ pavyzdys*
 
 2. Užpildykite atsakymo formos laukus:
 
 - Pasirinkite atsakymą pažymint vieną iš atsakymo laukų:
 
-   -  „Planuojamas atverti“, jei poreikis priimamas ir rinkinys
-         planuojamas atverti.
+   -  „Planuojamas atverti“, jei poreikis priimamas ir rinkinys planuojamas atverti.
 
-   -  „Nenumatytas atverti“, jei tuo metu duomenų rinkinys nenumatytas
-         atverti.
+   -  „Nenumatytas atverti“, jei tuo metu duomenų rinkinys nenumatytas atverti.
 
-- Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo
-      data“** įveskite numatytą rinkinio atvėrimo datą formatu
+- Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“** įveskite numatytą rinkinio atvėrimo datą formatu
       „mm/dd/mmmm“ arba pasirinkę kalendoriuje, spausdami
       **[**\ |sn10|\ **]** dešinėje.
 
-- Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba
-      atmetimo“** įrašykite komentarą dėl atsakymo. Ši informacija bus
-      pateikta viešame portale bei matoma atvėrimo poreikių sąrašo
-      lange.
+- Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba atmetimo“** įrašykite komentarą dėl atsakymo. Ši informacija bus pateikta viešame portale bei matoma atvėrimo poreikių sąrašo lange.
 
-- Tekstiniame lauke **„Galutinis organizacijos atsakymas“** įrašykite
-      atsakymą dėl atvėrimo ir priežastį. Ši informacija bus pateikta
-      poreikio teikėjui.
+- Tekstiniame lauke **„Galutinis organizacijos atsakymas“** įrašykite atsakymą dėl atvėrimo ir priežastį. Ši informacija bus pateikta poreikio teikėjui.
 
 Spauskite mygtuką **[Saugoti]**, norėdami išsaugoti atsakymą: atsakymas
 į poreikį ir jo priežastis bus automatiškai nusiųsta poreikio teikėjui.
 
-Poreikio patvirtinimo būsena po atsakymo gali būti pakeista pagal
-poreikį.
+Poreikio patvirtinimo būsena po atsakymo gali būti pakeista pagal poreikį.
 
 ********************************************************************************
+
 Darbas su duomenų rinkiniais
 ============================
 
@@ -654,14 +621,13 @@ Duomenys į Portalą keliami dviem būdais:
 1. Jei pakeitimų atsisakote, spauskite **[Grįžti į sąrašą]**.
 
 ********************************************************************************
+
 Duomenų rinkinių sąrašo peržiūra
 --------------------------------
 
-*Organizacijos pačios kuria ir pildo joms priklausančius duomenų
-rinkinius.*
+*Organizacijos pačios kuria ir pildo joms priklausančius duomenų rinkinius.*
 
-*Jei duomenų rinkinys perkeliamas iš vienos organizacijos kitai, pirmoji
-netenka prieigos prie jo.*
+*Jei duomenų rinkinys perkeliamas iš vienos organizacijos kitai, pirmoji netenka prieigos prie jo.*
 
 *Duomenų rinkinių sąrašo lange galite:*
 
@@ -676,7 +642,7 @@ netenka prieigos prie jo.*
 1. Pagrindiniame meniu spauskite **[Duomenų rinkiniai]**
 
 | |image45|
-| 32 pav. Duomenų rinkinių sąrašo langas
+| *32 pav. Duomenų rinkinių sąrašo langas*
 
 2. Sąraše pateikiama pagrindinė duomenų rinkinių informacija:
 
@@ -703,6 +669,7 @@ netenka prieigos prie jo.*
 - **Sukurtas:** data ir laikas, kada duomenų rinkinys buvo sukurtas.
 
 ********************************************************************************
+
    **Filtruoti rinkinių sąrašą::**
 
 1. Įveskite lauko vertę arba jo fragmentą į lauką pasirinkto stulpelio pavadinime;
@@ -716,6 +683,7 @@ netenka prieigos prie jo.*
 1. Pasirinkite stulpelį ir pelyte jį nutempkite iki reikiamos pozicijos.
 
 ********************************************************************************
+
 Duomenų šablono atsisiuntimas
 -----------------------------
 
@@ -728,10 +696,10 @@ Duomenų šablono atsisiuntimas
 
 3. Į kompiuterį taip parsisiųsite Excel failą.
 
-4. Pagal gautą šabloną sudarykite (arba užpildykite gautą) duomenų
-      failą, kurį galėsite įkelti į ADP.
+4. Pagal gautą šabloną sudarykite (arba užpildykite gautą) duomenų failą, kurį galėsite įkelti į ADP.
 
 ********************************************************************************
+
 Duomenų rinkinio importavimas
 -----------------------------
 
@@ -749,6 +717,7 @@ Duomenų rinkinio importavimas
 3. Įkelkite failą iš kompiuterio sekdami įkėlimo lango nuorodas.
 
 ********************************************************************************
+
 Naujo duomenų rinkinio sukūrimas 
 ---------------------------------
 
@@ -757,8 +726,7 @@ Inventorinimo duomenys
 
 1. Pagrindiniame meniu pasirinkite **[Duomenų rinkiniai]**.
 
-2. Duomenų rinkinių sąrašo lange spauskite **[+ Naujas duomenų
-      rinkinys]**.
+2. Duomenų rinkinių sąrašo lange spauskite **[+ Naujas duomenų rinkinys]**.
 
 ..
 
@@ -766,104 +734,87 @@ Inventorinimo duomenys
    „1. Inventorinimo duomenys“.*
 
 | |Graphical user interface Description automatically generated|
-| 33 pav. Duomenų rinkinio inventorinimo duomenų langas.
+| *33 pav. Duomenų rinkinio inventorinimo duomenų langas.*
 
 3. Užpildykite kortelę (*: privalomi laukai):
 
 - **Pavadinimas*:** pilnas duomenų rinkinio pavadinimas lietuvių kalba;
       žymimas raudonai tol, kol užpildomas;
 
-- **Aprašymas*:** duomenų rinkinio aprašymas lietuvių kalba; žymimas
-      raudonai, kol neužpildomas;
+- **Aprašymas*:** duomenų rinkinio aprašymas lietuvių kalba; žymimas raudonai, kol neužpildomas;
 
-- **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio
-      pavadinimas anglų kalba.;
+- **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio pavadinimas anglų kalba.;
 
 ..
 
    *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
 
-   **Aprašymas (anglų k.):** pilnas duomenų rinkinio aprašymas anglų kalba; *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
+- **Aprašymas (anglų k.):** pilnas duomenų rinkinio aprašymas anglų kalba;
+   
+   *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
 
-- **Pastabos:** skirtas pastaboms apie atveriamų duomenų rinkinius,
-      atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti.
-      Vaizduojamas tik administracinėje aplinkoje;
+*PASTABA: skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
 
-- Šiame lange įkelti struktūros ir spausti **[Įkelti struktūros
-      failą]** neprivalote: struktūros failus siūlome pateikiami
-      skiltyje **„2. Struktūra“** (daugiau: `Duomenų rinkinio struktūros
-      sukūrimas <#_Duomenų_rinkinio_struktūros>`__)
+*Šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]** neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“** (daugiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__)*
 
-4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite
-      [**Saugoti**].
+4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite[**Saugoti**].
 
-5. | |Graphical user interface Description automatically generated|
-   | 34 pav. Išsaugotos kortelės *1. Inventorinimo duomenys“* sistemos
-     pranešimo fragmentas.
+| |Graphical user interface Description automatically generated|
+| 34 pav. Išsaugotos kortelės *1. Inventorinimo duomenys“* sistemos pranešimo fragmentas.
 
-*Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos
-sekančios kortelės.*
+*Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos sekančios kortelės.*
 
 5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
 
 ********************************************************************************
+
 Struktūra
 ~~~~~~~~~
 
-*Duomenų naudotojams bus aiškiau, kaip publikuojami duomenys, jei
-įkelsite ir struktūrą:*
+*Duomenų naudotojams bus aiškiau, kaip publikuojami duomenys, jei įkelsite ir struktūrą:*
 
 | |Graphical user interface, application, table Description automatically generated|
-| 35 pav. Struktūros failo Excel dokumente pavyzdys
+| *35 pav. Struktūros failo Excel dokumente pavyzdys*
 
-*SVARBU: Į Portalą vienam rinkiniui turi būti įkeliamas vienas duomenų
-struktūros aprašas (DSA).*
+*SVARBU: Į Portalą vienam rinkiniui turi būti įkeliamas vienas duomenų struktūros aprašas (DSA).*
 
-*Galima įkelti kelias vieno rinkinio versijas, tačiau vienam rinkiniui
-gali būti publikuojamas tik vienas DSA.*
+*Galima įkelti kelias vieno rinkinio versijas, tačiau vienam rinkiniui gali būti publikuojamas tik vienas DSA.*
 
-1. Duomenų rinkinio lange spauskite lango meniu punktą **„2.
-      Struktūra“**.
+1. Duomenų rinkinio lange spauskite lango meniu punktą **„2. Struktūra“**.
 
-| |Graphical user interface, text, application, email, website
-  Description automatically generated|
-| 36 pav. Duomenų rinkinio struktūros langas
+| |Graphical user interface, text, application, email, website Description automatically generated|
+| *36 pav. Duomenų rinkinio struktūros langas*
 
 Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 
 - **Pridėtas**: data ir laikas, kada struktūros failas buvo pridėtas;
 
-- **Pavadinimas**: struktūros pavadinimas sistemoje, sukuriamas
-      įkeliant struktūros failą;
+- **Pavadinimas**: struktūros pavadinimas sistemoje, sukuriamas įkeliant struktūros failą;
 
 - **Failo pavadinimas**: pilnas įkelto struktūros failo pavadinimas;
 
-- **Standartinis:** požymis, kad duomenų rinkinys yra bendrinės
-      struktūros;
+- **Standartinis:** požymis, kad duomenų rinkinys yra bendrinės struktūros;
 
 - **Aktualus:** požymis, kad duomenų rinkinys yra naujausios versijos.
 
-1. Pasirinkite reikiamą duomenų struktūros versiją ir spauskite
-   [Padaryti aktualiu].
+1. Pasirinkite reikiamą duomenų struktūros versiją ir spauskite [Padaryti aktualiu].
 
-   *Sėkmingai atlikus veiksmą, sistema pažymės struktūrą stulpelyje
-   „Aktualus“ su verte „Taip“.*
+   *Sėkmingai atlikus veiksmą, sistema pažymės struktūrą stulpelyje „Aktualus“ su verte „Taip“.*
 
 *Jeigu nesate įkėlę duomenų struktūros, gausite klaidos pranešimą:*
 
 | |Text Description automatically generated with medium confidence|
-| 37 pav. „Daryti aktualiu“ klaidos langas, kai nepateikta duomenų
-  struktūra
+| *37 pav. „Daryti aktualiu“ klaidos langas, kai nepateikta duomenų struktūra*
 
-2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite
-   [Šalinti failą].
+2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite [Šalinti failą].
 
    *Sėkmingai atlikus veiksmą, sistema pašalins pasirinktą struktūrą iš sąrašo.*
 
 | |Text Description automatically generated|
-| 38 pav. „Šalinti failą“ patvirtinimo pranešimas
+| *38 pav. „Šalinti failą“ patvirtinimo pranešimas*
 
 ********************************************************************************
+
 Prioritetai
 ~~~~~~~~~~~
 
@@ -877,16 +828,14 @@ Prioritetai
 
 - *prioritetus galima redaguoti tol, kol rinkinys nėra įtrauktas į metinį rinkinių atvėrimo planą.*
 
-1. Pasirinkto suinventorinto duomenų rinkinio lango viršuje meniu
-      spauskite **[3. Prioritetai]**
+1. Pasirinkto suinventorinto duomenų rinkinio lango viršuje meniu spauskite **[3. Prioritetai]**
 
 2. Pažymėkite visus tinkamus laukus:
 
 | |Graphical user interface, text, application, email Description automatically generated|
-| 39 pav. Prioritetų kortelės pirmasis fragmentas
+| *39 pav. Prioritetų kortelės pirmasis fragmentas*
 
-3. Jei galioja: pažymėkite lauką **„Duomenų rinkinys yra atvertas
-      mašininiu būdu ...“**.
+3. Jei galioja: pažymėkite lauką **„Duomenų rinkinys yra atvertas mašininiu būdu ...“**.
 
 *Pasirinkimas suteikia maksimalų prioritetą, 100 balų.*
 
@@ -895,14 +844,13 @@ Prioritetai
 4. Kitais atvejais, atskirai pažymėkite tinkamus laukus iš sąrašo.
 
 | |Graphical user interface, text, application, email Description automatically generated|
-| 40 pav. Prioritetų kortelės fragmentas „Duomenų vertė“
+| *40 pav. Prioritetų kortelės fragmentas „Duomenų vertė“*
 
    Laukas **Duomenų vertė (20 balų)**
 
 - **Duomenų vertė (iki 20 balų) -** Duomenų poreikis pagal duomenų tvarkytojo vertinimą. Pažymima, kokiems tikslams duomenys gali būti panaudojami.
 
-... rinkinyje yra naudojami duomenys priskirti prioritetiniam
-rekomenduojamam atvertinų duomenų sąrašui.
+... rinkinyje yra naudojami duomenys priskirti prioritetiniam rekomenduojamam atvertinų duomenų sąrašui.
 
    *Poreikių pasirinkimai suskirstyti trimis laukais.*
 
@@ -910,11 +858,10 @@ rekomenduojamam atvertinų duomenų sąrašui.
 
    Laukai **Duomenų atvėrimo poreikis (50 balų)**
 
-- Pažymima, kokiems poreikiams buvo pateiktos naudotojų užklausos:.
-   kokiems pasirinkimams iš sąrašo portalo naudotojai pateikė poreikį atverti duomenų rinkinį.
+- Pažymima, kokiems poreikiams buvo pateiktos naudotojų užklausos: kokiems pasirinkimams iš sąrašo portalo naudotojai pateikė poreikį atverti duomenų rinkinį.
 
 | |Graphical user interface, text, application, email Description automatically generated|
-| 41 pav. Prioritetų kortelės fragmentas: „Duomenų poreikis“
+| *41 pav. Prioritetų kortelės fragmentas: „Duomenų poreikis“*
 
 Sužymėkite atitinkamus pasirinkimus:
 
@@ -928,153 +875,123 @@ Sužymėkite atitinkamus pasirinkimus:
 
 - Socialinių ar aplinkosauginių problemų sprendimui;
 
-Lauke **„Duomenų atvėrimo sudėtingumas“** taip pat galima pažymėti šiuos
-pasirinkimus:
+Lauke **„Duomenų atvėrimo sudėtingumas“** taip pat galima pažymėti šiuos pasirinkimus:
 
 Duomenų rinkinyje yra asmens duomenų
 
-Duomenų rinkinyje esantys duomenys turės būti transformuojami arba
-papildomi susijusiais duomenimis.
+Duomenų rinkinyje esantys duomenys turės būti transformuojami arba papildomi susijusiais duomenimis.
 
 | |Graphical user interface, text, application Description automatically generated|
-| 42 pav. Prioritetų kortelės antras fragmentas
+| *42 pav. Prioritetų kortelės antras fragmentas*
 
-Į tekstinį lauką pagal poreikį įveskite duomenų rinkinyje naudojamų
-duomenų bazės laukų skaičių.
+Į tekstinį lauką pagal poreikį įveskite duomenų rinkinyje naudojamų duomenų bazės laukų skaičių.
 
-Lauko numatyta reikšmė „0“ (jei prioritetų pasirinkimai pildomi
-kiekviename lauke atskirai).
+Lauko numatyta reikšmė „0“ (jei prioritetų pasirinkimai pildomi kiekviename lauke atskirai).
 
 - pasirinkite, ar duomenys bus publikuoti automatizuotai nuskaitomu formatu, jei taip, kokiu formatu(-ais):
 
-CSVXMLHDF5JSONRDF
+`CSV XML HDF5 JSON RDF`
 
-Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui,
-remiantis Tim Berners-Lee modeliu:
+Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui, remiantis Tim Berners-Lee modeliu:
 
-- 1 - priskiriama PDF ir analogiškiems formatams;
+- 1 - priskiriama `PDF` ir analogiškiems formatams;
 
-- 2 - priskiriamos XLSX ir analogiškiems formatams;
+- 2 - priskiriamos `XLSX` ir analogiškiems formatams;
 
-- 3 - priskiriamos CSV ir analogiškiems formatams;
+- 3 - priskiriamos `CSV` ir analogiškiems formatams;
 
-- 4 - priskiriamos RDF ir analogiškiems formatams;
+- 4 - priskiriamos `JSON ir analogiškiems formatams;
 
-- 5 - priskiriamos RDF ir analogiškiems formatams, kai duomenys yra
-      susieti su kitais duomenų rinkiniais.
+- 5 - priskiriamos `RDF` ir analogiškiems formatams, kai duomenys yra susieti su kitais duomenų rinkiniais.
 
 | |Graphical user interface, text, application Description automatically generated|
-| 43 pav. Prioritetų kortelės paskutinis fragmentas
+| *43 pav. Prioritetų kortelės paskutinis fragmentas*
 
 5. Pasirinkite visus reikiamus laukus
 
-6. Spauskite mygtuką **[Saugoti]** ir sistema išsaugos kortelės laukų
-      informaciją.
+6. Spauskite mygtuką **[Saugoti]** ir sistema išsaugos kortelės laukų informaciją.
 
 7. Tęskite kitų kortelių suvedimą.
 
 ********************************************************************************
+
 Finansiniai duomenys
 ~~~~~~~~~~~~~~~~~~~~
 
 *Pastaba: šiuo metu pildyti šios skilties laukų nėra privaloma.*
 
-*Duomenų rinkinių finansiniai duomenys įvedami siekiant apskaičiuoti
-reikalingą atverti sumą visiems metų plano rinkiniams.
-Daugiau:*\ `Darbas su metiniais planais <#_Darbas_su_metiniais>`__\ *.*
+*Duomenų rinkinių finansiniai duomenys įvedami siekiant apskaičiuoti reikalingą atverti sumą visiems metų plano rinkiniams. 
+Daugiau:* \ `Darbas su metiniais planais <#_Darbas_su_metiniais>`__\ *.*
 
-*Finansinius duomenis galima įvesti tik suinventorintiems rinkiniams su
-nustatytais prioritetais.*
+*Finansinius duomenis galima įvesti tik suinventorintiems rinkiniams su nustatytais prioritetais.*
 
-*Duomenų rinkinio finansinius duomenis galima redaguoti tol, kol
-rinkinys nėra įtrauktas į metinį planą.*
+*Duomenų rinkinio finansinius duomenis galima redaguoti tol, kol rinkinys nėra įtrauktas į metinį planą.*
 
 *Įvertinus rinkinio finansavimą, jį galima įtraukti į metinį planą.*
 
 2. Pasirinkto duomenų rinkinio lango meniu spauskite **[4. Finansiniai duomenys]**.
 
 | |Graphical user interface, text, application, email Description automatically generated|
-| 44 pav. Finansinių duomenų kortelės langas
+| *44 pav. Finansinių duomenų kortelės langas*
 
-3. Lauke **„Reikalingi finansiniai ištekliai duomenų atvėrimui (EUR)“**
-   įveskite sumą, reikalingą atverti duomenis. Rašykite natūraliaisiais skaičiais, be kablelių ir taškų.
+3. Lauke **„Reikalingi finansiniai ištekliai duomenų atvėrimui (EUR)“** įveskite sumą, reikalingą atverti duomenis.
 
-..
+	*Rašykite natūraliaisiais skaičiais, be kablelių ir taškų.*
 
    *Įvesta suma – viena iš sąlygų, pagal kurias vertinamas bendras rinkinio prioritetas metinių planų sąraše. Pirmenybė teikiama pigesniems rinkiniams.*
 
 4. Jei norite, išsaugokite pakeitimus ir tęskite kitų kortelių suvedimą.
 
 ********************************************************************************
+
 Metaduomenų įvedimas
 ~~~~~~~~~~~~~~~~~~~~
 
-*Rinkinys jau turi būti suinventorintas, turėti įvestus prioritetus ir
-finansinius duomenis.*
+*Rinkinys jau turi būti suinventorintas, turėti įvestus prioritetus ir finansinius duomenis.*
 
 1. Spauskite **[5. Metaduomenys]**.
 
 | |Graphical user interface, text, application, email, Teams Description automatically generated|
-| 45 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango pirmas fragmentas
+| *45 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango pirmas fragmentas*
 
 | |Graphical user interface, text, application Description automatically generated|
-| 46 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango antras fragmentas
+| *46 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango antras fragmentas*
 
 2. Užpildykite laukus pagal poreikį (\* – privalomi; A – automatiniai):
 
-- **Kategorija*:** iš sąrašo pasirenkama, kokiai kategorijai priklauso
-      duomenų rinkinys;
+- **Kategorija*:** iš sąrašo pasirenkama, kokiai kategorijai priklauso duomenų rinkinys;
 
-- **Licencija:** iš sąrašo pasirenkama duomenų rinkiniui taikoma
-      licencija.
-
-..
+- **Licencija:** iš sąrašo pasirenkama duomenų rinkiniui taikoma licencija.
 
    *Pasirinkus kurią nors licenciją, pateikiama nuoroda į ją, kad galėtumėte patikrinti, ar pasirinkta licencija tinkama;*
 
-- **AD koordinatorius (A):** iš sąrašo pasirenkamas organizacijos
-      koordinatorius;
+- **AD koordinatorius (A):** iš sąrašo pasirenkamas organizacijos koordinatorius;
 
-- **Sukurtas (A):** data ir laikas, kada duomenų rinkinys buvo
-      sukurtas;
+- **Sukurtas (A):** data ir laikas, kada duomenų rinkinys buvo sukurtas;
 
-- **Duomenų šaltinis (A):** duomenų rinkinio distribucijos šaltinio
-      failo pavadinimas;
+- **Duomenų šaltinis (A):** duomenų rinkinio distribucijos šaltinio failo pavadinimas;
 
-- **Prieigos teisės:** lauke įvardinama, kas turi prieigos teises prie
-      duomenų rinkinio, jei prieiga yra ribota;
+- **Prieigos teisės:** lauke įvardinama, kas turi prieigos teises prie duomenų rinkinio, jei prieiga yra ribota;
 
 - **Periodo pradžia (A):** rinkinyje pateiktų duomenų periodo pradžia.
 
-..
+   *Laukas netaisomas: nustatomas automatiškai, nurodant anksčiausią visuose įkeltuose rinkinio failuose periodo pradžios datą (nurodoma keliant duomenų failą).*
 
-   Laukas netaisomas: nustatomas automatiškai, nurodant anksčiausią visuose įkeltuose rinkinio failuose periodo pradžios datą (nurodoma keliant duomenų failą).
+   *Neįkėlus nei vieno duomenų failo, laukas rodomas tuščias; nustatoma automatiškai.*
 
-   Neįkėlus nei vieno duomenų failo, laukas rodomas tuščias; nustatoma automatiškai.
+   *Jei nežinoma, rašoma reikšmė „Nežinoma“*;
 
-   Jei nežinoma, rašoma reikšmė „Nežinoma“;
+- **Raktiniai žodžiai*:** suvedami raktiniai žodžiai, tinkami duomenų rinkiniui, naudojami Portalo naudotojų viešoje aplinkoje atliekant išplėstinę paiešką. Visus raktinius žodžius rašykite mažosiomis raidėmis, tarpusavyje atskirkite kableliais. Rekomenduojama nurodyti iki 6 raktinių žodžių;
 
-- **Raktiniai žodžiai*:** suvedami raktiniai žodžiai, tinkami duomenų
-      rinkiniui, naudojami Portalo naudotojų viešoje aplinkoje atliekant
-      išplėstinę paiešką. Visus raktinius žodžius rašykite mažosiomis
-      raidėmis, tarpusavyje atskirkite kableliais. Rekomenduojama
-      nurodyti iki 6 raktinių žodžių;
+- **Įvertinimas:** viešoje aplinkoje registruotų naudotojų pateiktas bendras rinkinio įvertinimas 5 balų skalėje;
 
-- **Įvertinimas:** viešoje aplinkoje registruotų naudotojų pateiktas
-      bendras rinkinio įvertinimas 5 balų skalėje;
-
-- **Kalba:** iš sąrašo pasirenkama kalba, kuria bus atveriamas duomenų
-      rinkinys. Kalbų skaičius neribojamas;
+- **Kalba:** iš sąrašo pasirenkama kalba, kuria bus atveriamas duomenų rinkinys. *Kalbų skaičius neribojamas*;
 
 - **Katalogas:** iš sąrašo pasirinkite „Lietuva“;
 
-- **Duomenų atnaujinimo periodiškumas:** iš sąrašo pasirenkama, kokiu
-      dažnumu atnaujinami rinkinio duomenys;
+- **Duomenų atnaujinimo periodiškumas:** iš sąrašo pasirenkama, kokiu dažnumu atnaujinami rinkinio duomenys;
 
-- **AD Tvarkytojas*:** iš sąrašo pasirenkamas organizacijos AD
-      tvarkytojas.
-
-..
+- **AD Tvarkytojas*:** iš sąrašo pasirenkamas organizacijos AD tvarkytojas.
 
    *Laukas užpildomas automatiškai, tačiau gali būti redaguotas;*
 
@@ -1086,184 +1003,151 @@ finansinius duomenis.*
 
 - **Periodo pabaiga:** rinkinyje jau pateiktų duomenų periodo pabaiga.
 
-..
-
    *Nustatoma automatiškai, priklausomai nuo to, kokia vėliausia periodo pabaiga nurodyta įkeltuose failuose.*
 
    *Neįkėlus nei vieno duomenų failo, laukas rodomas tuščias;*
 
-- **Portalo duomenų rinkinio ID (A):** duomenų rinkinio unikalus
-      identifikatorius sistemoje;
+- **Portalo duomenų rinkinio ID (A):** duomenų rinkinio unikalus identifikatorius sistemoje;
 
 - **Atvirumas:** duomenų rinkinio atvirumo lygis skalėje nuo 1 iki 5.
 
 - **Platinimo sąlygos:** įvedamos sąlygos platinti duomenų rinkinį.
 
-..
-
    Lango apačioje pateikta prioriteto balų suma.
 
-| |Graphical user interface, text, application, chat or text message
-  Description automatically generated|
-| 47 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango apatinis fragmentas
+| |Graphical user interface, text, application, chat or text message Description automatically generated|
+| *47 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango apatinis fragmentas*
 
-3. Užpildžius reikiamus laukus, galite spauskite mygtuką **[Saugoti]**
-      arba pereikite prie kitų kortelių pildymo.
-
-..
+3. Užpildžius reikiamus laukus, galite spauskite mygtuką **[Saugoti]** arba pereikite prie kitų kortelių pildymo.
 
    *Išsaugojus rinkinio būsena bus pakeista į*\ **„Užpildyti metaduomenys“**.
 
-*
-*
+*Jei spaudžiate*\ **[Saugoti]**\ *neužpildę kai kurių privalomų laukų, net jei jie buvo neužpildyti ir išsaugoti prieš Jums atsidarant metaduomenų langą, sistema parodys papildomą langą, kuriame pateikiami privalomi neužpildyti DCAT laukai.*
 
-*Jei spaudžiate*\ **[Saugoti]**\ *neužpildę kai kurių privalomų laukų,
-net jei jie buvo neužpildyti ir išsaugoti prieš Jums atsidarant
-metaduomenų langą, sistema parodys papildomą langą, kuriame pateikiami
-privalomi neužpildyti DCAT laukai.*
-
-*Paaiškinimo lange galite tik įvesti lauko neužpildymo priežastį. Jei
-norite lauką užpildyti, paaiškinimo lange
-spauskite*\ **[Atšaukti]**\ *ir grįšite prie pildymo.*
+*Paaiškinimo lange galite tik įvesti lauko neužpildymo priežastį. Jei norite lauką užpildyti, paaiškinimo lange spauskite*\ **[Atšaukti]**\ *ir grįšite prie pildymo.*
 
 4. Tekstiniuose laukuose įveskite priežastį kiekvienam DCAT laukui, kurio neužpildėte.
 
 | |image64|
-| 48 pav. Duomenų rinkinio metaduomenų neužpildymo paaiškinimo lango pavyzdys
+| *48 pav. Duomenų rinkinio metaduomenų neužpildymo paaiškinimo lango pavyzdys*
 
 *Nurodyta priežastis bus matoma poreikio peržiūros lango skiltyje*\ **„Įvykių istorija“**\ *, komentaro lauke.*
 
 | |01|
-| 49 pav. DCAT lauko neužpildymo priežasties peržiūros pavyzdys
+| *49 pav. DCAT lauko neužpildymo priežasties peržiūros pavyzdys*
 
-5. Įvedę priežastis neužpildyti privalomiems laukams, spauskite
-      **[Saugoti]**.
+5. Įvedę priežastis neužpildyti privalomiems laukams, spauskite **[Saugoti]**.
 
-6. Spauskite **[Saugoti]** metaduomenų įvedimo lange, kad išsaugotumėte
-      įvestus duomenis arba pakeitimus.
+6. Spauskite **[Saugoti]** metaduomenų įvedimo lange, kad išsaugotumėte įvestus duomenis arba pakeitimus.
 
 Duomenų distribucijos tvarkymas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Rinkinio duomenys gali būti įkeliami, kai įkeltas duomenų rinkinio struktūros failas*\ **„2. Struktūra“**
+*Rinkinio duomenys gali būti įkeliami, kai įkeltas duomenų rinkinio struktūros failas *\ **„2. Struktūra“**
 
-1. Duomenų rinkinio lango meniu spauskite mygtuką **[6. Duomenys]**.
+1. Duomenų rinkinio lango meniu spauskite **[6. Duomenys]**.
 
 2. Sistema parodys duomenų įkėlimui skirtą langą.
 
-| |Graphical user interface, text, application, chat or text message
-  Description automatically generated|
-| 50 pav. Duomenų rinkinio duomenų distribucijos langas
+| |Graphical user interface, text, application, chat or text message Description automatically generated|
+| *50 pav. Duomenų rinkinio duomenų distribucijos langas*
 
-*SVARBU*: jeigu nėra sukurta aktualios duomenų struktūros, vartotojui nebus leidžiama įkelti duomenis ir bus rodomas atitinkamas pranešimo langas:
+*SVARBU: jeigu nėra sukurta aktualios duomenų struktūros, vartotojui nebus leidžiama įkelti duomenis ir bus rodomas atitinkamas pranešimo langas:*
 
-|Graphical user interface, application Description automatically generated|
-
-51 pav. Duomenų rinkinio duomenų distribucijos langas
+| |Graphical user interface, application Description automatically generated|
+| 51 pav. Duomenų rinkinio duomenų distribucijos lango klaidos pranešimas
 
 Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomenys, nurodant šią informaciją:
 
-- **ID:** unikalus failo arba nuorodos ID sistemoje, sugeneruojamas
-      automatiškai įkeliant;
+- **ID:** unikalus failo arba nuorodos ID sistemoje, sugeneruojamas automatiškai įkeliant;
 
 - **Pavadinimas:** failo arba nuorodos pavadinimas sistemoje;
 
 - **Aprašymas:** trumpas failo arba nuorodos aprašymas;
 
-- **Tipas:** nurodoma „FILE“, jei tai yra failas, arba „URL“, jei tai
-      nuoroda;
+- **Tipas:** nurodoma „FILE“, jei tai yra failas, arba „URL“, jei tai nuoroda;
 
-- **Dokumentas:** įkelto failo pilnas pavadinimas. Jei tai nuoroda,
-      laukas paliekamas tuščias;
+- **Dokumentas:** įkelto failo pilnas pavadinimas. *Jei tai nuoroda, laukas paliekamas tuščias*;
 
-- **Nuoroda:** įkelta pilna nuoroda (su pradžia http:// arba
-      https://). Jei tai failas, laukas paliekamas tuščias;
+- **Nuoroda:** įkelta pilna nuoroda (su pradžia http:// arba https://). *Jei tai failas, laukas paliekamas tuščias*;
 
-- **Versija:** skaičiumi nurodoma, kelinta tai įkelta to failo arba
-      nuorodos versija;
+- **Versija:** skaičiumi nurodoma, kelinta tai įkelta to failo arba nuorodos versija;
 
 - **Įkelta:** data ir laikas, kada nuoroda arba failas buvo įkeltas;
 
-- **Atnaujinta:** data ir laikas, kada nuoroda arba failas buvo
-      paskutinį kartą atnaujintas.
+- **Atnaujinta:** data ir laikas, kada nuoroda arba failas buvo paskutinį kartą atnaujintas.
 
 3. Įkelkite naują distribuciją:
 
-- kaip failą: spauskite **[+ Įkelti duomenų rinkinio distribucijos
-      failą]**.
+- kaip *failą*: spauskite **[+ Įkelti duomenų rinkinio distribucijos failą]**.
 
-- kaip nuorodą, spauskite mygtuką **[+Įkelti duomenų distribucijos
-      nuorodą]**.
+- kaip *nuorodą*: spauskite **[+Įkelti duomenų distribucijos nuorodą]**.
 
    *Sistema parodys naujos distribucijos langą.*
 
 | |Screenshot (235)|
-| 52 pav. Naujos distribucijos kaip failo įkėlimo langas
+| *52 pav. Naujos distribucijos kaip failo įkėlimo langas*
 
-4. Užpildykite reikiamus laukus:
+4. Užpildykite reikiamus laukus ( \* - privalomi):
 
-- **Pavadinimas:** Įkeliamo duomenų failo pavadinimas. Privalomas
-      laukas;
+- **Pavadinimas \* :** Įkeliamo duomenų failo pavadinimas;
 
-- **Savivaldybė:** Savivaldybė, kuriai priklauso įkeliamas duomenų
-      rinkinio failas. Neprivalomas laukas;
+- **Savivaldybė:** Savivaldybė, kuriai priklauso įkeliamas duomenų rinkinio failas;
 
-- **Laikotarpio pradžia:** Įkeliamo failo laikotarpio pradžia.
-      Privalomas laukas;
+- **Laikotarpio pradžia \* :** Įkeliamo failo laikotarpio pradžia;
 
-- **Aprašymas:** Įkeliamo duomenų failo aprašymas. Privalomas laukas;
+- **Aprašymas \* :** Įkeliamo duomenų failo aprašymas;
 
-- **Regionas:** Regionas, kuriam priklauso įkeliamas failas.
-      Neprivalomas laukas;
+- **Regionas:** Regionas, kuriam priklauso įkeliamas failas;
 
-- **Laikotarpio pabaiga:** Įkeliamo failo laikotarpio pabaiga.
-      Privalomas laukas.
+- **Laikotarpio pabaiga \* :** Įkeliamo failo laikotarpio pabaiga.
 
 ..
 
    *Failo įkėlimas privalomas pridedant distribuciją.*
 
-5. Spauskite mygtuką **[Upload files]** arba nutempkite failą iki lauko
-   **{Drop files here}**.
+5. Spauskite mygtuką **[Upload files]** arba nutempkite failą iki lauko **{Drop files here}**.
 
 6. Jei distribuciją keliate kaip nuorodą, nuorodos įkėlimo lange vietoje suveskite papildomus privalomus laukus:
 
-- **Formatas*:**\ *iš sąrašo pasirinkite vieną duomenų distribucijos
-      formatą;*
+- **Formatas*:**\ *iš sąrašo pasirinkite vieną duomenų distribucijos formatą;*
 
 - **Nuoroda*:**\ *nuoroda į distribuciją.*
 
 | |image69|
-| 53 pav. Distribucijos nuorodos įkėlimo langas
+| *53 pav. Distribucijos nuorodos įkėlimo langas*
 
 7. Užpildę laukus, spauskite **[Saugoti]**.
 
-*Naujai įkeltas failas ar nuoroda bus iškart matomi distribucijų lange
-esančiame sąraše:*
+*Naujai įkeltas failas ar nuoroda bus iškart matomi distribucijų lange esančiame sąraše:*
 
 | |Graphical user interface, text, application Description automatically generated|
-| 54 pav. Duomenų distribucijų sąrašo pavyzdys
+| *54 pav. Duomenų distribucijų sąrašo pavyzdys*
 
 ********************************************************************************
-**Redaguoti distribuciją:**
+
+\> **Redaguoti distribuciją:**
 
 - Įkeltų distribuciją atnaujinimai atliekami per API ir UI.
 
-   **Pašalinti distribuciją iš sąrašo:**
+\> **Pašalinti distribuciją iš sąrašo:**
 
 - pažymėkite ją sąraše ir spauskite **[Šalinti distribuciją]** ekrano viršuje.
 
+
 ********************************************************************************
+
+\*\*\*
+
 Pateikti poreikiai
 ~~~~~~~~~~~~~~~~~~
 
 1. Rinkinio peržiūros lango meniu pasirinkite skiltį **„Pateikti poreikiai“**.
 
 | |image71|
-| 55 pav. Duomenų rinkiniui pateiktų poreikių peržiūros langas
+| *55 pav. Duomenų rinkiniui pateiktų poreikių peržiūros langas*
 
-Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių
-informaciją:
+Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių informaciją:
 
 - **Pateiktas:** data ir laikas, kada poreikis buvo pateiktas;
 
@@ -1272,6 +1156,7 @@ informaciją:
 - **Pastabos:** pastabos tekstas.
 
 ********************************************************************************
+
 Duomenų rinkinio istorijos peržiūra
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1279,132 +1164,108 @@ Duomenų rinkinio istorijos peržiūra
    **„Įvykių istorija“**.
 
 | |image72|
-| 56 pav. Duomenų rinkinio istorijos langas
+| *56 pav. Duomenų rinkinio istorijos langas*
 
-Lange pateikti rinkinio istorijos duomenys, automatiškai kaupiami nuo
-duomenų rinkinio sukūrimo:
+Lange pateikti rinkinio istorijos duomenys, automatiškai kaupiami nuo duomenų rinkinio sukūrimo:
 
-- **Data:** data ir laikas, kai buvo atliktas veiksmas su duomenų
-      rinkiniu (sukūrimas, redagavimas);
+- **Data:** data ir laikas, kai buvo atliktas veiksmas su duomenų rinkiniu (sukūrimas, redagavimas);
 
-- **Autorius:** vardas ir pavardė paskyros, kuria atitinkamas veiksmas
-      buvo atliktas, savininko;
+- **Autorius:** vardas ir pavardė paskyros, kuria atitinkamas veiksmas buvo atliktas, savininko;
 
-- **Įvykis:** įvardinama, kas buvo atlikta: redaguotas rinkinys,
-      pakeistas jo statusas (būsena) ir t.t.;
+- **Įvykis:** įvardinama, kas buvo atlikta: redaguotas rinkinys, pakeistas jo statusas (būsena) ir t.t.;
 
-- **Komentaras:** koordinatoriaus paliktas komentaras redaguojant
-      rinkinį (pvz., priežastys, kodėl tam tikri metaduomenų lango
-      laukai palikti neužpildyti). Jei atliktas veiksmas nereikalavo
-      paliekamo komentaro, laukas paliekamas tuščias.
+- **Komentaras:** koordinatoriaus paliktas komentaras redaguojant rinkinį (pvz., priežastys, kodėl tam tikri metaduomenų lango laukai palikti neužpildyti). Jei atliktas veiksmas nereikalavo paliekamo komentaro, laukas paliekamas tuščias.
 
 ********************************************************************************
+
 Duomenų rinkinio pastabų peržiūra
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Tvarkant duomenų rinkinių atvėrimo planus, gali būti pateiktos
-pastabos.*
+*Tvarkant duomenų rinkinių atvėrimo planus, gali būti pateiktos pastabos.*
 
 *Pastabos peržiūrimos per duomenų rinkinį arba metinį planą.*
 
-*Peržiūrėti pastabas per metinį planą: sąraše pasirinkite metinio planą,
-stulpelyje*\ **„Pastaba“**\ *.*
+*Peržiūrėti pastabas per metinį planą: sąraše pasirinkite metinio planą, stulpelyje*\ **„Pastaba“**\ *.*
 
-1. Pagrindiniame meniu pasirinkite **„Duomenų rinkiniai“**, rinkinių
-      sąrašo lange pasirinkite reikiamą rinkinį;
+1. Pagrindiniame meniu pasirinkite **„Duomenų rinkiniai“**, rinkinių sąrašo lange pasirinkite reikiamą rinkinį;
 
-2. Duomenų rinkinio lango viršuje esančiame meniu pasirinkite
-      **„Pastabos“**.
+2. Duomenų rinkinio lango viršuje esančiame meniu pasirinkite **„Pastabos“**.
 
 | |image73|
-| 57 pav. Duomenų rinkinio pastabų sąrašo lango fragmentas
+| *57 pav. Duomenų rinkinio pastabų sąrašo lango fragmentas*
 
 Lange pateikiama pagrindinė pastabų informacija:
 
 - **Data:** data ir laikas, kada pastaba buvo pateikta;
 
-- **Autorius:** vardas ir pavardė pastabą parašiusios paskyros
-      savininko;
+- **Autorius:** vardas ir pavardė pastabą parašiusios paskyros savininko;
 
 - **Pastaba:** pateiktas pastabos tekstas.
 
-Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros
-langą ir galėtumėte perskaityti pilną pastabos tekstą.
+Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros langą ir galėtumėte perskaityti pilną pastabos tekstą.
 
 | |past01|
-| 58 pav. Duomenų rinkiniui pateiktos pastabos peržiūros langas
+| *58 pav. Duomenų rinkiniui pateiktos pastabos peržiūros langas*
 
 *Pateiktų pastabų redaguoti negalima, tik peržiūrėti.*
 
-*Naujos pastabos pateikiamos, kai vyr. koordinatorius atmeta iš naujo
-nacionaliniam planui pateiktą organizacijos duomenų rinkinį.*
+*Naujos pastabos pateikiamos, kai vyr. koordinatorius atmeta iš naujo nacionaliniam planui pateiktą organizacijos duomenų rinkinį.*
 
 ********************************************************************************
+
 Darbas su IRS rinkiniais
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 | |image75|
-| 59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas
+| *59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas*
 
 IRS rinkinių sąraše galima peržiūrėti tokią bendrą informaciją:
 
-- **Eil. nr.:** rinkinio numeris sąraše, sugeneruotas portale
-      automatiškai;
+- **Eil. nr.:** rinkinio numeris sąraše, sugeneruotas portale automatiškai;
 
-- **ID:** unikalus rinkinio identifikatorius sistemoje, sugeneruotas
-      automatiškai importuojant rinkinį. Pagal stulpelį taip pat galima
-      filtruoti sąrašą, įvedus skaitinę reikšmę į tekstinį lauką
-      stulpelio pavadinime;
+- **ID:** unikalus rinkinio identifikatorius sistemoje, sugeneruotas automatiškai importuojant rinkinį.
 
-- **Viešas:** rinkinio viešumo portalo viešoje aplinkoje būsena. Laukas
-      žymimas varnele **[**\ |image76|\ **]**, jei rinkinys – viešas;
+	*Galima filtruoti (skaitinis);*
 
-- **Pavadinimas:** pilnas duomenų rinkinio pavadinimas. Pagal stulpelį
-      taip pat galima filtruoti sąrašą, įvedant rinkinio pavadinimą arba
-      jo fragmentą į tekstinį lauką stulpelio pavadinime;
+- **Viešas:** rinkinio viešumo portalo viešoje aplinkoje būsena. Laukas žymimas varnele **[**\ |image76|\ **]**, jei rinkinys – viešas;
 
-- **Tvarkytojas:** Organizacijos tvarkytojo, atsakingo už rinkinį,
-      vardas ir pavardė. Pagal stulpelį taip pat galima filtruoti
-      sąrašą, įvedant vardą ir pavardę, arba kurio nors iš jį fragmentą
-      į tekstinį lauką stulpelio pavadinime. Laukas gali būti
-      pateikiamas tuščias;
+- **Pavadinimas:** pilnas duomenų rinkinio pavadinimas.
 
-- **Atnaujintas:** data ir laikas, kada rinkinys buvo paskutinį kartą
-      atnaujintas.
+	*Galima filtruoti (tekstinis);*
+
+- **Tvarkytojas:** Organizacijos tvarkytojo, atsakingo už rinkinį, vardas ir pavardė.
+
+	*Galima filtruoti (tekstinis);*
+	
+	*Gali būti tuščias;*
+
+- **Atnaujintas:** data ir laikas, kada rinkinys buvo paskutinį kartą atnaujintas.
 
 ********************************************************************************
-**Redaguoti IRS rinkinį:**
 
-1. Paspauskite ant IRS rinkinio, kurį norite peržiūrėti/ tikslinti/
-   sutvarkyti eilutės:
+\> **Redaguoti IRS rinkinį:**
+
+1. Paspauskite ant IRS rinkinio, kurį norite peržiūrėti/ tikslinti/ sutvarkyti eilutės:
 
 | |image77|
-| 60 pav. IRS rinkinių sąrašo langas
+| *60 pav. IRS rinkinių sąrašo langas*
 
-*SVARBU: IRS rinkinį reikia pašalinti, jeigu duomenų rinkinys nebėra
-aktualus, arba jau yra įvesta naujas panašus duomenų rinkinys. IRS
-rinkinius galima redaguoti. Tikslinant IRS rinkinius galioja tos pačios
-taisyklės, kaip ir naujo duomenų rinkinio įvedimo atveju.*
+*SVARBU: IRS rinkinį reikia pašalinti, jeigu duomenų rinkinys nebėra aktualus, arba jau yra įvesta naujas panašus duomenų rinkinys. IRS rinkinius galima redaguoti. Tikslinant IRS rinkinius galioja tos pačios taisyklės, kaip ir naujo duomenų rinkinio įvedimo atveju.*
 
-*Tikslinant IRS rinkinius rekomenduotina pakeisti „5. Metaduomenų“ lauko
-„Katalogas“ informaciją: iš „Duomenys iš IRS“ į „Lietuvos“. Atlikus šį
-pakeitimą duomenų rinkinys bus matomas tik bendrame „Duomenų rinkiniai“
-sąraše, o „IRS rinkiniai“ sąraše šio duomenų rinkinio nebus.*
+*Tikslinant IRS rinkinius rekomenduotina pakeisti „5. Metaduomenų“ lauko „Katalogas“ informaciją: iš „Duomenys iš IRS“ į „Lietuvos“. Atlikus šį pakeitimą duomenų rinkinys bus matomas tik bendrame „Duomenų rinkiniai“ sąraše, o „IRS rinkiniai“ sąraše šio duomenų rinkinio nebus.* 
 
-*Sąrašas pildomas automatiškai, importuojant rinkinius iš atitinkamų
-portalų.*
+*Sąrašas pildomas automatiškai, importuojant rinkinius iš atitinkamų portalų.*
 
 ********************************************************************************
+
 Darbas su metiniais planais
 ===========================
 
 *Metiniai planai sudaromi ruošiantis duomenų rinkinių atvėrimui.*
 
-*Ruošiant metinius planus atsižvelgiama į duomenų prioritetą bei
-finansavimą.*
+*Ruošiant metinius planus atsižvelgiama į duomenų prioritetą bei finansavimą.*
 
-*Organizacijos koordinatorius atsako už organizacijos atveriamų duomenų
-rinkinių metinio plano:*
+*Organizacijos koordinatorius atsako už organizacijos atveriamų duomenų rinkinių metinio plano:*
 
 - *Sudarymą;*
 
@@ -1415,16 +1276,16 @@ rinkinių metinio plano:*
 - *patvirtinimą organizacijos vardu, jei vyr. koordinatorius planą patvirtina.*
 
 ********************************************************************************
+
 Metinio plano sudarymas
 -----------------------
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo planai“**.
 
-2. Atsivėrusiame metinių atvėrimų plane spauskite **[+ Naujas duomenų
-      atvėrimo planas]**:
+2. Atsivėrusiame metinių atvėrimų plane spauskite **[+ Naujas duomenų atvėrimo planas]**:
 
 | |image78|
-| 61 pav. Atvėrimo planų sąrašo langas
+| *61 pav. Atvėrimo planų sąrašo langas*
 
 Lange pateikiama pagrindinė atvėrimo planų informacija:
 
@@ -1432,38 +1293,31 @@ Lange pateikiama pagrindinė atvėrimo planų informacija:
 
 - **Metai –** metai, kuriems skirtas atvėrimo planas;
 
-- **Planuojami kaštai (EUR) –** suma eurais, reikalinga pilnai
-      finansuoti duomenų rinkinį;
+- **Planuojami kaštai (EUR) –** suma eurais, reikalinga pilnai finansuoti duomenų rinkinį;
 
-- **Planuojami duomenų rinkiniai –** skaičius duomenų rinkinių, kurie
-      įtraukti į atvėrimo planą;
+- **Planuojami duomenų rinkiniai –** skaičius duomenų rinkinių, kurie įtraukti į atvėrimo planą;
 
-- **Numatytas finansavimas (EUR) –** suma eurais, skirta finansuoti
-      metų planą;
+- **Numatytas finansavimas (EUR) –** suma eurais, skirta finansuoti metų planą;
 
-- **Finansuoti duomenų rinkiniai –** duomenų rinkinių, kuriems buvo
-      vyr. koordinatoriaus skirtas finansavimas, skaičius;
+- **Finansuoti duomenų rinkiniai –** duomenų rinkinių, kuriems buvo vyr. koordinatoriaus skirtas finansavimas, skaičius;
 
 - **Būsena –** atvėrimo plano būsena. Galimos reikšmės:
 
-   -  Formuojamas: organizacija dar kuria/redaguoja planą,
+   -  *Formuojamas*: organizacija dar kuria/redaguoja planą;
 
-   -  Pateiktas: planas pateiktas vyr. koordinatoriui, bet į jį dar
-         nebuvo atsakyta;
+   -  *Pateiktas*: planas pateiktas vyr. koordinatoriui, bet į jį dar nebuvo atsakyta;
 
-   -  Patvirtintas koordinatoriaus: vyr. koordinatorius patvirtino
-         planą;
+   -  *Patvirtintas koordinatoriaus*: vyr. koordinatorius patvirtino planą;
 
-   -  Patvirtintas organizacijos: po vyr. koordinatoriaus patvirtinimo
-         planas buvo vėl patvirtintas organizacijos.
+   -  *Patvirtintas organizacijos*: po vyr. koordinatoriaus patvirtinimo planas buvo vėl patvirtintas organizacijos.
 
-3. Naujo metinio plano lange įveskite, kuriems metams norite sukurti
-      atvėrimo planą ir spauskite mygtuką **[Sukurti]**.
+3. Naujo metinio plano lange įveskite, kuriems metams norite sukurti atvėrimo planą ir spauskite **[Sukurti]**.
 
 | |image79|
 | Metinio plano metų pasirinkimo langas
 
 ********************************************************************************
+
 Metinio plano formavimas ir pateikimas
 --------------------------------------
 
@@ -1472,68 +1326,52 @@ Metinio plano formavimas ir pateikimas
 2. Atvėrimo planų lange pasirinkite planą, kurį norite formuoti:
 
 | |image80|
-| 62 pav. Metinio duomenų atvėrimo plano langas
+| *62 pav. Metinio duomenų atvėrimo plano langas*
 
-Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir
-reikalingas finansavimas, suma EUR.
+Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir reikalingas finansavimas, suma EUR.
 
 | |image81|
-| 63 pav. Metinio duomenų atvėrimo plano lango poskyrių meniu
+| *63 pav. Metinio duomenų atvėrimo plano lango poskyrių meniu*
 
 *Numatyta lango įjungimo skiltis –*\ **„Duomenų rinkiniai“**\ *.*
 
-*Skiltis*\ **„Istorija“**\ *tampa prieinama (tapusi prieinama patamsėja)
-atlikus kokius nors veiksmus su planu.*
+*Skiltis*\ **„Istorija“**\ *tampa prieinama (tapusi prieinama patamsėja) atlikus kokius nors veiksmus su planu.*
 
-3. Pasirinkto metinio plano lange spauskite **[Formuoti <Jūsų pasirinkti
-      metai> metų planą]**, esantį virš metinio duomenų atvėrimo plano
-      lango poskyrių meniu.
+3. Pasirinkto metinio plano lange spauskite **[Formuoti <Jūsų pasirinkti metai> metų planą]**, esantį virš metinio duomenų atvėrimo plano lango poskyrių meniu.
 
-4. Atvertame rinkinių įtraukimo lange, pasirinkite, kurie rinkinių
-      poreikiai turi būti įtraukti į metinį planą, pažymėdami žymimąjį
-      laukelį rinkinio kairėje pusėje.
+4. Atvertame rinkinių įtraukimo lange, pasirinkite, kurie rinkinių poreikiai turi būti įtraukti į metinį planą, pažymėdami žymimąjį laukelį rinkinio kairėje pusėje.
 
 | |image82|
-| 64 pav. Pasirinkto metinio duomenų atvėrimo plano langas
+| *64 pav. Pasirinkto metinio duomenų atvėrimo plano langas*
 
-   Sąraše pateikti tik tie rinkiniai, kurie priskirti Jūsų organizacijai, yra nepriskirti kitam metiniam planui, neturi įkeltų duomenų ir kurių būsena yra **„Įvertintas finansavimas“** arba
-   **„Užpildyti metaduomenys“**.
+   Sąraše pateikti tik tie rinkiniai, kurie priskirti Jūsų organizacijai, yra nepriskirti kitam metiniam planui, neturi įkeltų duomenų ir kurių būsena yra **„Įvertintas finansavimas“** arba **„Užpildyti metaduomenys“**.
 
-5. Įsitikinę, jog pasirinkote visus reikiamus rinkinius, spauskite
-      mygtuką **[Patvirtinti]**.
+5. Įsitikinę, kad pasirinkote visus reikiamus rinkinius, spauskite **[Patvirtinti]**.
 
-..
+**Pastaba**\ *: į metinį planą įtrauktų duomenų rinkinių prioritetų ir finansinių duomenų nebegalima redaguoti. Juos bus galima redaguoti tik pašalinus rinkinį iš plano. Daugiau:*\ `Metinio plano išformavimas <#ataskaitų-formavimas>`__
 
-   **Pastaba**\ *: į metinį planą įtrauktų duomenų rinkinių prioritetų ir finansinių duomenų nebegalima redaguoti. Juos bus galima redaguoti tik pašalinus rinkinį iš plano. Daugiau:*\ `Metinio plano išformavimas <#ataskaitų-formavimas>`__
+6. Metinio plano lange spauskite **[Pateikti planą vyr. koordinatoriui]**.
 
-6. Metinio plano lange spauskite mygtuką **[Pateikti planą vyr.
-      koordinatoriui]**.
+*Pateikto plano nebebus galima redaguoti, išformuoti ar pateikti iš naujo.*
 
-..
+*Tokie veiksmai atlikti su planu bus galimi tik vyr. koordinatoriui jį atmetus.*
 
-   Pateikto plano nebebus galima redaguoti, išformuoti ar pateikti iš naujo. Tokie veiksmai atlikti su planu bus galimi tik vyr.
-   koordinatoriui jį atmetus. Vyr. koordinatorius, atmesdamas planą,
-   pateikia pastabas atitinkamiems į planą įtrauktiems duomenų rinkiniams, nurodydamas ką konkrečiai reikia redaguoti.
+*Vyr. koordinatorius, atmesdamas planą, pateikia pastabas atitinkamiems į planą įtrauktiems duomenų rinkiniams, nurodydamas ką konkrečiai reikia redaguoti.*
 
 ********************************************************************************
+
 Metinio plano išformavimas
 --------------------------
 
-*Į metinį planą įtraukti duomenų rinkiniai negali būti įtraukti į kitus
-rinkinius bei negali būti redaguoti jų prioritetai ir finansiniai
-duomenys, net jei pateiktas planas buvo atmestas.*
+*Į metinį planą įtraukti duomenų rinkiniai negali būti įtraukti į kitus rinkinius bei negali būti redaguoti jų prioritetai ir finansiniai duomenys, net jei pateiktas planas buvo atmestas.*
 
-*Dabartinį planą turite išformuoti, kad duomenų rinkinys nebebūtų jam
-priskirtas:*
+*Dabartinį planą turite išformuoti, kad duomenų rinkinys nebebūtų jam priskirtas:*
 
 - *Kai rinkinys turi būti paliktas kitų metų planui;*
 
 - *Kai reikia pakeisti prioritetus ir/arba finansinius duomenis.*
 
-..
-
-   *Pastaba: išformuoti negalite planų, kurie yra patvirtinti vyr.
-   koordinatoriaus arba organizacijos, arba įtraukti į jau patvirtintą nacionalinį duomenų rinkinių atvėrimo planą.*
+*PASTABA: išformuoti negalite planų, kurie yra patvirtinti vyr. koordinatoriaus arba organizacijos, arba įtraukti į jau patvirtintą nacionalinį duomenų rinkinių atvėrimo planą.*
 
 **Išformuoti metinį planą:**
 
@@ -1543,68 +1381,58 @@ priskirtas:*
 2. Rinkinių įtraukimo lango apačioje spauskite mygtuką **[Išformuoti planą]**.
 
 | |image83|
-| 65 pav. Metinio plano išformavimo mygtukas
+| *65 pav. Metinio plano išformavimo mygtukas*
 
 3. Spauskite **[Patvirtinti]**, jei tikrai norite išformuoti planą.
 
 | |image84|
-| 66 pav. Metinio plano išformavimo patvirtinimo langas
+| *66 pav. Metinio plano išformavimo patvirtinimo langas*
 
-Planas tebeliks matomas planų sąraše ir jį bus galima formuoti iš naujo
-įtraukiant rinkinius, tačiau jis bus tuščias, o jam buvę priskirti
-rinkiniai nebebus jam priskirti ir juos bus galima priskirti kitiems
-metiniams planams.
+Planas tebeliks matomas planų sąraše ir jį bus galima formuoti iš naujo įtraukiant rinkinius, tačiau jis bus tuščias, o jam buvę priskirti rinkiniai nebebus jam priskirti ir juos bus galima priskirti kitiems metiniams planams.
 
 ********************************************************************************
+
 Plano patvirtinimas organizacijos vardu
 ---------------------------------------
 
-*Kai metinis planas yra patvirtintas vyr. koordinatoriaus (plano būsena
-pasikeičia į*\ **“Patvirtintas koordinatoriaus”**\ *, organizacijos
-koordinatorius gali jį patvirtinti vyr. koordinatoriui).*
+*Kai metinis planas yra patvirtintas vyr. koordinatoriaus (plano būsena pasikeičia į*\ **“Patvirtintas koordinatoriaus”**\ *, organizacijos koordinatorius gali jį patvirtinti vyr. koordinatoriui).*
 
 1. Pagrindiniame meniu spauskite pasirinkite **„Atvėrimo planai“**.
 
-2. Atvėrimo planų lange pasirinkite planą, kurį norite patvirtinti (jo
-      būsena turi būti **„Patvirtintas koordinatoriaus“**).
+2. Atvėrimo planų lange pasirinkite planą, kurį norite patvirtinti (jo būsena turi būti **„Patvirtintas koordinatoriaus“**).
 
-3. Plano lange spauskite mygtuką **[Patvirtinti planą organizacijos
-      vardu]**:
+3. Plano lange spauskite mygtuką **[Patvirtinti planą organizacijos vardu]**:
 
 | |image85|
-| 67 pav. Metinio plano patvirtinimo organizacijos vardu pavyzdys
+| *67 pav. Metinio plano patvirtinimo organizacijos vardu pavyzdys*
 
 4. Pasirinkimo patvirtinimo lange spauskite **[Taip]**, kad patvirtintumėte planą organizacijos vardu.
 
    Patvirtinus, plano būsena pasikeis į „Patvirtintas organizacijos“ ir bus matomas vyr. koordinatoriui.
 
 | |image86|
-| 68 pav. Plano patvirtinimo organizacijos vardu langas
+| *68 pav. Plano patvirtinimo organizacijos vardu langas*
 
 ********************************************************************************
+
 Ataskaitų formavimas
 ====================
 
-- Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs
-      duomenys** pateikiami duomenys apie *duomenų rinkinių* panaudojimą
-      nurodytu laikotarpiu;
+- Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys** pateikiami duomenys apie *duomenų rinkinių* panaudojimą nurodytu laikotarpiu;
 
-- Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs
-      duomenys (failams)** pateikiami duomenys apie *duomenų rinkinių
-      rinkmenų* panaudojimą nurodytu laikotarpiu.
+- Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)** pateikiami duomenys apie *duomenų rinkinių rinkmenų* panaudojimą nurodytu laikotarpiu.
 
 Ataskaitų kūrimas
 -----------------
 
 **Suformuoti ataskaitą:**
 
-1. Pagrindiniame meniu išskleiskite punktą **„Ataskaitos“** ir
-      paspauskite ant norimo ataskaitos tipo.
+1. Pagrindiniame meniu išskleiskite punktą **„Ataskaitos“** ir paspauskite ant norimo ataskaitos tipo.
 
 2. Pasirinktos ataskaitos lange spauskite **[Formuoti]**.
 
 | |sn41|
-| 69 pav. Ataskaitos formavimo langas
+| *69 pav. Ataskaitos formavimo langas*
 
 3. Užpildykite reikiamus laukus
 
@@ -1623,6 +1451,7 @@ Ataskaitų kūrimas
    *Formuojant ataskaitą nurodyti kriterijai yra pateikiami lango viršuje.*
 
 ********************************************************************************
+
 Paruoštų ataskaitų valdymas
 ---------------------------
 
@@ -1634,8 +1463,7 @@ Paruoštų ataskaitų valdymas
 
 - *Tekstiniams* laukams įveskite savo paiešką į tekstinį lauką po stulpelio pavadinimu.
 
-- *Skaitiniams* laukams įveskite skaitines reikšmes į laukus „Nuo“
-   ir/arba „Iki“ po stulpelio pavadinimu.
+- *Skaitiniams* laukams įveskite skaitines reikšmes į laukus „Nuo“ ir/arba „Iki“ po stulpelio pavadinimu.
 
 - *Datoms* įveskite arba pasirinkite datas kalendoriuose arba įveskite jas laukuose „Nuo“ ir/arba „Iki“ po stulpelio pavadinimu.
 
@@ -1648,11 +1476,12 @@ Paruoštų ataskaitų valdymas
 - Pasirinktą stulpelį nutempkite iki reikiamos pozicijos.
 
 ********************************************************************************
+
 Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“
 --------------------------------------------------------------------------
 
 | |image88|
-| 70 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ formavimo forma
+| *70 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ formavimo forma*
 
 Ataskaitos laukai ( \* – privalomi ):
 
@@ -1664,19 +1493,16 @@ Ataskaitos laukai ( \* – privalomi ):
 
 - **Kategorijos:** pasirinkite iš sąrašo arba įveskite (jei įvestis atitinka kurį nors sąrašo elementą) visas kategorijas sričių, su kuriomis susiję duomenų rinkiniai turi būti įtraukti į ataskaitą.
 
-- **Data nuo:** pasirinkite iš kalendoriaus arba įveskite **laikotarpio, kuris įtraukiamas į ataskaitą,** pradžios data.
+- **Data nuo:** pasirinkite iš kalendoriaus arba įveskite **laikotarpio, kuris įtraukiamas į ataskaitą,** pradžios datą.
 
-- **Data iki \* :** pasirinkite iš kalendoriaus arba įveskite **laikotarpio, kuris įtraukiamas į ataskaitą, pabaigos data.**
+- **Data iki \* :** pasirinkite iš kalendoriaus arba įveskite **laikotarpio, kuris įtraukiamas į ataskaitą, pabaigos datą.**
 
-- **Būsena: pasirenkite iš sąrašo visas duomenų rinkinių, įtraukiamų į ataskaitą, būsenas.**
-
-*
-*
+- **Būsena:** pasirinkite iš sąrašo visas duomenų rinkinių, įtraukiamų į ataskaitą, būsenas.
 
 *Suformavus ataskaitą, duomenys pateikiami ataskaitos lange.*
 
 | |image89|
-| 71 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ langas
+| *71 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ langas*
 
 Suformuotos ataskaitos lange pateikiami šie įtraukto duomenų rinkinio laukai:
 
@@ -1694,7 +1520,7 @@ Suformuotos ataskaitos lange pateikiami šie įtraukto duomenų rinkinio laukai:
 
 - **Peržiūrų skaičius:** duomenų rinkinio peržiūrų skaičius. (Skaitinis)
 
-- **Parsisiuntimų skaičius per portalą:** duomenų rinkinio parsisiuntimų per portalą skaičius. (Skaitinis)
+- **Parsisiuntimų skaičius per Portalą:** duomenų rinkinio parsisiuntimų per portalą skaičius. (Skaitinis)
 
 - **Parsisiuntimų skaičius per API:** duomenų rinkinio parsisiuntimų per API skaičius. (Skaitinis)
 
@@ -1709,12 +1535,13 @@ Suformuotos ataskaitos lange pateikiami šie įtraukto duomenų rinkinio laukai:
 - **Būsena:** „Inventorintas“, „Suvesti duomenys“, „Užpildyti metaduomenys“, „Įvertintas finansavimas“, arba „Įvertinti prioritetai“.
 
 ********************************************************************************
+
 **Atidaryti ataskaitos šablono keitimo langą:**
 
 1. Paspauskite ant bet kurio stulpelio pavadinimo dešiniuoju pelės klavišu.
 
 | |image90|
-| 72 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas
+| *72 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas*
 
 Lange pateikti stulpelių pavadinimai bei jų rodymo ataskaitoje būsena.
 
@@ -1745,28 +1572,28 @@ Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys 
 ------------------------------------------------------------------------------------
 
 | |image95|
-| 73 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“ sudarymo forma
+| *73 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“ sudarymo forma*
 
 Ataskaitos laukai (\* – privalomi):
 
-- **Ministrų valdymo sritys:** iš sąrašo pasirinkite kelias ministerijas, su kuriomis susiję rinkiniai;
+- **Ministrų valdymo sritys:** iš sąrašo pasirinkite iki keleto ministerijų, su kuriomis susiję rinkiniai;
 
-- **Organizacijos:** iš sąrašo pasirinkite arba įveskite organizacijas, kurių rinkinius norima įtraukti į ataskaitą.
+- **Organizacijos:** iš sąrašo pasirinkite arba įveskite organizacijas, kurių rinkinius norite įtraukti į ataskaitą.
 
-- **Savivaldybė:** įveskite arba pasirinkti iš sąrašo savivaldybes, su kuriomis susiję duomenų rinkiniai. galima parenkamų savivaldybių skaičius neribojamas.
+- **Savivaldybė:** įveskite arba pasirinkti iš sąrašo savivaldybes, su kuriomis susiję duomenų rinkiniai. *Parenkamų savivaldybių skaičius nėra ribojamas.*
 
-- **Kategorijos:** pasirinkti iš sąrašo, arba įvesti (jei įvestis atitinka kurį nors sąrašo elementą) kategorijas sričių, su kuriomis susiję duomenų rinkiniai turi būti įtraukti į ataskaitą. Kategorijų skaičius neribojamas, laukas neprivalomas.
+- **Kategorijos:** pasirinkti iš sąrašo, arba įvesti (jei įvestis atitinka kurį nors sąrašo elementą) kategorijas sričių, su kuriomis susiję duomenų rinkiniai turi būti įtraukti į ataskaitą. *Kategorijų skaičius neribojamas, laukas neprivalomas.*
 
 - **Data nuo \* :** pasirinkite iš kalendoriaus arba įveskite ataskaitos laikotarpio pradžios datą.
 
-- **Data iki \* :** periodo, kurio laikotarpis turi būti įtraukiamas į ataskaitą, pabaigos data. Galima pasirinkti iš kalendoriaus arba įvesti**
+- **Data iki \* :** pasirinkite iš kalendoriaus arba įveskite ataskaitos laikotarpio pabaigos datą.
 
-- **Formatas** failų, įtraukiamų į ataskaitą, formatas, pasirenkamas iš sąrašo. Pasirenkamų formatų skaičius neribojamas. Laukas neprivalomas.**
+- **Formatas** failų, įtraukiamų į ataskaitą, formatas, pasirenkamas iš sąrašo. *Pasirenkamų formatų skaičius neribojamas. Laukas neprivalomas.*
 
 *Suformavus ataskaitą, duomenys pateikiami ataskaitos lange:*
 
 | |image96|
-| 74 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“ langas
+| *74 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“ langas*
 
 Žemiau pateikiami į ataskaitą įtraukto duomenų rinkinio laukai:
 
@@ -1776,41 +1603,51 @@ Ataskaitos laukai (\* – privalomi):
 
 - **Duomenų rinkinio pavadinimas:** duomenų rinkinio pavadinimas.
 
-- **Savivaldybė:** duomenų rinkinio pilnas savivaldybės pavadinimas. Jei nėra priskirta, laukas tuščias.
+- **Savivaldybė:** duomenų rinkinio pilnas savivaldybės pavadinimas. *Jei nėra priskirta, laukas tuščias.*
 
-- **Ministrų valdymo sritys:** priskirtos ministerijos pavadinimas. Jei nėra priskirta, laukas tuščias.
+- **Ministrų valdymo sritys:** priskirtos ministerijos pavadinimas. *Jei nėra priskirta, laukas tuščias.*
 
-- **Kategorijos: priskirtos kategorijos pavadinimas.**
+- **Kategorijos:** Portale priskirtos kategorijos pavadinimas.
 
-- **Peržiūrų skaičius: duomenų rinkinio peržiūrų skaičius.**
+- **Peržiūrų skaičius:** duomenų rinkinio peržiūrų Portale skaičius.
 
-- **Parsisiuntimų skaičius per portalą: įtraukto duomenų rinkinio parsisiuntimų skaičius per portalą.**
+- **Parsisiuntimų skaičius per Portalą:** įtraukto duomenų rinkinio parsisiuntimų per Portalą skaičius.
 
-- **Parsisiuntimų skaičius per API: įtraukto duomenų rinkinio parsisiuntimų skaičius per API.**
+- **Parsisiuntimų skaičius per API:** įtraukto duomenų rinkinio parsisiuntimų per API skaičius.
 
-- **Įkėlimo data: įtraukto duomenų rinkinio įkėlimo į Portalą data.**
+- **Įkėlimo data:** įtraukto duomenų rinkinio įkėlimo į Portalą data.
 
-- **Atnaujinimo data: įtraukto duomenų rinkinio atnaujinimo data.**
+- **Atnaujinimo data:** įtraukto duomenų rinkinio atnaujinimo data.
 
-- **Formatai: duomenų rinkinio formatas arba formatai. Jei formatas nepriskirtas, laukas tuščias.**
+- **Formatai:** duomenų rinkinio formatas arba formatai. *Jei formatas nepriskirtas, laukas tuščias.*
 
 | |image97|
-| 75 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas
+| *75 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas*
 
 ********************************************************************************
+
 Partnerių API
 =============
 
-Partnerių API operacijas galima vykdyti tik su organizacijai suteiktu API raktu. Dėl organizacijai skirto rakto suteikimo kreipkitės į Portalo vyr. koordinatorių.
 
-Norėdami pasiekti Partnerių API, naršyklėje įveskite nuorodą https://data.gov.lt/partner/api/1.
+*Partnerių API operacijas galima vykdyti tik su organizacijai suteiktu API raktu.*
+
+\> **Gauti organizacijai skirtą raktą**:
+
+1. Kreipkitės į Portalo vyr. koordinatorių.
+
+\> **Pasiekti API**:
+
+1. Turėdami suteiktą raktą, naršyklėje įveskite nuorodą https://data.gov.lt/partner/api/1;
+
+	*Būsite nukreipti į API sąsajos puslapį su reikalinga informacija.*
 
 | |image98|
-| 76 pav. API aplinkos fragmentas
+| *76 pav. API aplinkos fragmentas*
+
 
 
 ********************************************************************************
-
 
 Slaptažodžio keitimas
 =====================
@@ -1822,7 +1659,7 @@ Slaptažodžio keitimas
 3. Po ikona išskleidžiamame kontekstiniame meniu spustelėkite **[Nustatymai]**.
 
 | |Graphical user interface, text, application Description automatically generated|
-| 77 pav. Paskyros kontekstinis meniu
+| *77 pav. Paskyros kontekstinis meniu*
 
 4. Paskyros lange spustelėkite **[Keisti slaptažodį]**.
 
@@ -1837,50 +1674,51 @@ Slaptažodžio keitimas
 Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-sąvokos>`__, „Saugus slaptažodis“)
 
 | |Graphical user interface, text, application Description automatically generated|
-| 78 pav. Slaptažodžio keitimo langas
+| *78 pav. Slaptažodžio keitimo langas*
 
 6. Spauskite **[Keisti]**, kad išsaugotumėte naują slaptažodį.
 
 7. Sekantį kartą jungiantis prie sistemos, prisijunkite naudodami naująjį slaptažodį.
 
 ********************************************************************************
+
 .. |image0| image:: /static/katalogas/okot/image2.png
    :width: 0.10417in
    :height: 0.12222in
 .. |image1| image:: /static/katalogas/okot/image2.png
    :width: 0.10417in
    :height: 0.12222in
-.. |Graphical user interface Description automatically generated| image:: /static/katalogas/okot/image3.png
+.. |image3| image:: /static/katalogas/okot/image3.png
    :width: 5.54178in
    :height: 3in
-.. |Graphical user interface, text, application, email, website Description automatically generated| image:: /static/katalogas/okot/image4.png
+.. |image4| image:: /static/katalogas/okot/image4.png
    :width: 5.13873in
    :height: 1.8995in
-.. |Graphical user interface, application Description automatically generated| image:: /static/katalogas/okot/image5.png
+.. |image5| image:: /static/katalogas/okot/image5.png
    :width: 1.60106in
    :height: 1in
-.. |Table Description automatically generated| image:: /static/katalogas/okot/image6.png
+.. |image6| image:: /static/katalogas/okot/image6.png
    :width: 5in
    :height: 2.0858in
-.. |Graphical user interface, application Description automatically generated| image:: /static/katalogas/okot/image7.png
+.. |image7| image:: /static/katalogas/okot/image7.png
    :width: 4.99732in
    :height: 0.94304in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image8.png
+.. |image8| image:: /static/katalogas/okot/image8.png
    :width: 1.19081in
    :height: 1in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image9.png
+.. |image9| image:: /static/katalogas/okot/image9.png
    :width: 2.68784in
    :height: 1.3in
-.. |image9| image:: /static/katalogas/okot/image10.png
+.. |image10| image:: /static/katalogas/okot/image10.png
    :width: 1.58309in
    :height: 1.2in
-.. |Graphical user interface, website Description automatically generated| image:: /static/katalogas/okot/image11.png
+.. |image11| image:: /static/katalogas/okot/image11.png
    :width: 6.6875in
    :height: 3.9375in
-.. |image11| image:: /static/katalogas/okot/image12.png
+.. |image12| image:: /static/katalogas/okot/image12.png
    :width: 5in
    :height: 1.79317in
-.. |Graphical user interface Description automatically generated| image:: /static/katalogas/okot/image3.png
+.. |image3| image:: /static/katalogas/okot/image3.png
    :width: 5.54178in
    :height: 3in
 .. |image13| image:: /static/katalogas/okot/image13.png
