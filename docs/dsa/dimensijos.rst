@@ -469,8 +469,8 @@ Savybė
 .. data:: property.ref
 
     Priklauso nuo `property.type`, nurodo matavimo vienetus, laiko ar vietos
-    tikslumą, ryšį su kitais modeliais. Ką tiksliai reiškia šis laukas,
-    patikslinta skyrelyje :ref:`duomenų-tipai`.
+    tikslumą, :ref:`klasifikatorių <enum>` arba ryšį su kitais modeliais. Ką
+    tiksliai reiškia šis laukas, patikslinta skyrelyje :ref:`duomenų-tipai`.
 
 .. data:: property.level
 
@@ -594,7 +594,7 @@ tada galima iškelti klasifikatorių ir suteikti jam pavadinimą, pavyzdžiui:
 +----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
 |  4 |   |   |   |   | id       | integer |         | ID        |               | 3     | open   |     |         |             |
 +----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
-|  5 |   |   |   |   | type     | string  |         | CODE      | enum("place") | 3     | open   |     |         |             |
+|  5 |   |   |   |   | type     | string  | place   | CODE      |               | 3     | open   |     |         |             |
 +----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
 |  9 |   |   |   |   | name     | string  |         | NAME      |               | 3     | open   |     |         |             |
 +----+---+---+---+---+----------+---------+---------+-----------+---------------+-------+--------+-----+---------+-------------+
