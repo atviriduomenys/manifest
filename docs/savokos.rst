@@ -128,8 +128,8 @@ Sąvokos
         <https://en.wikipedia.org/wiki/Environment_variable>`__.
 
     ADP
-        Atvirų duomenų portalas, sudarytas iš :term:`atvirų duomenų katalogo`
-        ir :term:`duomenų saugyklos`.
+        Atvirų duomenų portalas, sudarytas iš :term:`atvirų duomenų katalogo
+        <ADK>` ir :term:`duomenų saugyklos <ADS>`.
 
     ADK
         Lietuvos atvirų duomenų katalogas, prieinamas adresu `data.gov.lt`_.
@@ -137,11 +137,11 @@ Sąvokos
         .. _data.gov.lt: https://data.gov.lt/
 
     ADS
-        Atvirų duomenų saugykla, skirta pakartotinio panaudojimo duomenų
-        publikavimui, valstybinė atvirų duomenų saugykla pasiekiama
-        `get.data.gov.lt`_ adresu.
+        :ref:`Atvirų duomenų saugykla <saugykla>`, skirta pakartotinio
+        panaudojimo duomenų publikavimui, valstybinė atvirų duomenų saugykla
+        pasiekiama `get.data.gov.lt`_ adresu.
 
-        .. _get.data.gov.lt: https:://get.data.gov.lt/
+        .. _get.data.gov.lt: https://get.data.gov.lt/
 
     DSA
         :ref:`Duomenų struktūros aprašas <dsa>` yra
@@ -583,3 +583,7 @@ Sąvokos
         (angl. `Resource Description Framework`_).
 
         .. _Resource Description Framework: https://en.wikipedia.org/wiki/Resource_Description_Framework
+
+    IVPK
+        `Informacinės visuomenės plėtros komitetas
+        <https://ivpk.lrv.lt/lt/atviri-duomenys-1>`_.
