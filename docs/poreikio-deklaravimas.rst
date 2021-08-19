@@ -15,8 +15,8 @@ poreikio formoje įkeliant :term:`DSA` lentelę CSV formatu.
 Iš jau publikuojamų :term:`ADSA` lentelių, galima atsirinkti dominančius
 duomenis ir susirašyti juos į savo poreikio :term:`DSA` lentelę.
 
-Kaip pavyzdį galime panagrinėti skyrelyje :ref:`inventory` naudotą preliminarią
-:term:`ADSA` lentelę, kuri atrodo taip:
+Kaip pavyzdį galime panagrinėti skyrelyje :ref:`atvėrimas` naudotą :term:`ADSA`
+lentelę, kuri atrodo taip:
 
 .. table:: Planuojamų atverti duomenų struktūros aprašas (:term:`ADSA`)
 

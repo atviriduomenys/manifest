@@ -16,9 +16,9 @@ atvėrimo darbus ar naudojantiems duomenis.
 
 Dokumentacija sudaryta iš šių esminių dalių:
 
-- Informacija duomenų tiekėjams apie tai, kaip atlikti turimų duomenų
-  :ref:`inventorizaciją <inventory>` ir inventorizuotų duomenų :ref:`brandos
-  lygio kėlimą <brandos-lygio-kėlimas>`.
+- Informacija duomenų teikėjams apie
+  :ref:`duomenų atvėrimo <atvėrimas>` ir atvertų duomenų
+  :ref:`brandos lygio kėlimo <brandos-lygio-kėlimas>` procesą.
 
 - Informacija duomenų naudotojams, apie tai, kaip :ref:`teikti pageidavimus
   ir pastabas <poreikio-deklaravimas>` dėl duomenų ir kaip :ref:`gauti pačius
@@ -44,7 +44,7 @@ Dokumentacija sudaryta iš šių esminių dalių:
     :maxdepth: 2
 
     ivadas
-    inventorinimas
+    atverimas
     poreikio-deklaravimas
     brandos-lygio-kelimas/index
     asmens-duomenys
