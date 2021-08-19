@@ -497,6 +497,8 @@ Savybė
     Žiūrėti :ref:`enum`.
 
 
+.. _papildomos-dimensijos:
+
 Papildomos dimensijos
 =====================
 

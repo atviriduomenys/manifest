@@ -20,7 +20,12 @@ Lentelės struktūra
 ==================
 
 Rengiant duomenų struktūros aprašus darbas vyksta su viena lentele. Lentelė
-sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemiau.
+sudaryta iš 15 stulpelių. Iš 15 stulpelių, pirmasis stulpelis :data:`id` yra
+eilutės identifikatorius, kuris pildomas automatiškai, toliau seka 5
+:ref:`dimensijų <dimensijos>` stulpeliai ir likę 9 stulpeliai yra metaduomenys
+apie duomenis.
+
+Ką reiškia kiekvienas stulpelis paaiškinta žemiau.
 
 
 .. data:: id
@@ -33,6 +38,20 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
     Šis stulpelis pildomas automatinėmis priemonėmis, siekiant identifikuoti
     konkrečias metaduomenų eilutes, kad būtų galima atpažinti metaduomenis,
     kurie jau buvo pateikti ir po to atnaujinti.
+
+
+.. _dimensijos-stulpeliai:
+
+Dimensijos
+----------
+
+Duomenų struktūros aprašo lentelė sudaryta hierarchiniu principu. Kiekvienos
+lentelės eilutės prasmę apibrėžia viena iš penkių :ref:`dimensijų <dimensijos>`.
+Kiekvienoje eilutėje gali būti užpildytas tik vienas dimensijos stulpelis.
+
+Be šių penkių dimensijų, yra kelios :ref:`papildomos dimensijos
+<papildomos-dimensijos>`, jos nurodomos :data:`type` stulpelyje, neužpildžius
+nei vieno dimensijos stulpelio.
 
 .. data:: dataset
 
@@ -79,11 +98,25 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
 
     .. _rdfs:Property: https://www.w3.org/TR/rdf-schema/#ch_property
 
+
+Metaduomenys
+------------
+
+Kaip ir minėta aukščiau, kiekvienos metaduomenų eilutės prasmė priklauso nuo
+:ref:`dimensijos`. Todėl, toliau dokumentacijoje, kalbant apie tam tikros
+dimensijos stulpelį, stulpelis bus įvardinamas pridedant dimensijos
+pavadinimą, pavyzdžiui :data:`model.ref`, kas reikštų, kad kalbama apie
+:data:`ref` stulpelį, :data:`model` dimensijoje.
+
 .. data:: type
 
     **Tipas**
 
     Prasmė priklauso nuo dimensijos. Žiūrėti :ref:`duomenų-tipai`.
+
+    Jei nenurodytas nei vienas :ref:`dimensijos stulpelis
+    <dimensijos-stulpeliai>`, tuomet šiame stulpelyje nurodoma :ref:`papildoma
+    dimensija <papildomos-dimensijos>`.
 
 .. data:: ref
 
@@ -139,15 +172,11 @@ sudaryta iš 15 stulpelių. Ką reiškia kiekvienas stulpelis paaiškinta žemia
 
     .. _Markdown: https://en.wikipedia.org/wiki/Markdown
 
-:term:`Duomenų struktūros aprašo <DSA>` lentelėje laukas :data:`id` turi būti
-visada užpildytas. :data:`id` reikšmė turi sutapti tiek :term:`ŠDSA` tiek
-:term:`ADSA`.
-
-Visi stulpeliai lentelėje yra neprivalomi. Stulpelių tvarka taip pat nėra svari.
-Pavyzdžiui jei reikia apsirašyti tik globalių modelių struktūrą, nebūtina
-įtraukti :data:`dataset`, :data:`resource` ir :data:`base` stulpelių. Jei norima
-apsirašyti tik prefiksus naudojamus :data:`uri` lauke, užtenka turėti tik
-prefiksų aprašymui reikalingus stulpelius.
+Visi stulpeliai lentelėje yra neprivalomi. Stulpelių tvarka taip pat nėra
+svarbi. Pavyzdžiui jei reikia apsirašyti tik globalių modelių struktūrą,
+nebūtina įtraukti :data:`dataset`, :data:`resource` ir :data:`base` stulpelių.
+Jei norima apsirašyti tik prefiksus naudojamus :data:`uri` lauke, užtenka
+turėti tik prefiksų aprašymui reikalingus stulpelius.
 
 Įrankiai skaitantys :term:`DSA`, stulpelius, kurių nėra lentelėje turi
 interpretuoti kaip tuščius. Taip pat įrankiai neturėtų tikėtis, kad stulpeliai

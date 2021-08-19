@@ -14,12 +14,12 @@ Nuasmeninimas
 Duomenų laukų reikšmių nuasmeninimas atliekamas :data:`property.prepare`
 stulpelio pagalba.
 
-.. function:: randomize(model, n)
+.. function:: randomize(n)
 
     Reikšmės keičiamos parenkant atsitiktinę vertę ±\ `n` intervale nuo
     tikrosios vertės.
 
-.. function:: permutate(model)
+.. function:: permutate()
 
     Atsitiktine tvarka sumaišomos duomenų reikšmės.
 
@@ -31,11 +31,11 @@ stulpelio pagalba.
 
     Taikyti konkrečią `name` maišos funkciją.
 
-.. function:: sample(model, n)
+.. function:: sample(n)
 
     Atsitiktine tvarka atrenkama `n` procentų žodžių naudojamų tekste.
 
-.. function:: group(model, n)
+.. function:: group(n)
 
     Pakeičia originalias reikšmes į intervalų grupes taip, kad į vieną intervalą
     patektų ne mažiau nei `n` reikšmių. Jei viena konkreti reikšmė pasikartoja

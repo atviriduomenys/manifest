@@ -171,6 +171,7 @@ Panaši situacija gali pasitaikyti ir vykdant:
 Tokių atveju įsitikinkite ar ugniasienė leidžia kreiptis į išore ir
 pabandykite laikinai sustabdyti antivirusinę programą.
 
+.. _šdsa-generavimas:
 
 ŠDSA generavimas
 ================
@@ -496,6 +497,8 @@ __ https://cx-oracle.readthedocs.io/en/latest/index.html
 
     $ spinta inspect -r sql oracle+cx_oracle://user:pass@host:port/db -o sdsa.xlsx
 
+
+.. _šdsa-vertimas-į-adsa:
 
 ŠDSA vertimas į ADSA
 ====================
