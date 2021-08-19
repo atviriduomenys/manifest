@@ -5,10 +5,10 @@
 Spinta
 ######
 
-Kad būtų paprasčiau, duomenų atvėrimui rekomenduojame naudoti įrankį pavadinimu
-`Spinta`__, kuris sukurtas būtent duomenų atvėrimo automatizavimui. Spinta
-leidžia automatizuotai generuoti duomenų struktūros aprašus, juos patikrinti ar
-nėra klaidų, perduoti duomenis į :ref:`saugyklą <saugykla>` ir :ref:`publikuoti
+Kad būtų paprasčiau atverti duomenis, rekomenduojame naudoti įrankį pavadinimu
+`Spinta`__, kuris sukurtas duomenų atvėrimo automatizavimui. Spinta leidžia
+automatizuotai generuoti duomenų struktūros aprašus, juos patikrinti ar nėra
+klaidų, perduoti duomenis į :ref:`saugyklą <saugykla>` ir :ref:`publikuoti
 <saugykla>` atvertus duomenis aukščiausiu :ref:`brandos lygiu <level>` ir
 laikantis geriausių atvirų duomenų publikavimo praktikų.
 
@@ -516,6 +516,8 @@ stulpelių duomenys, o taip pat pašalinamos visos eilutės, kurių
 
     $ spinta copy sdsa.xlsx --no-source --access open -o adsa.csv
 
+
+.. _automatinis-atvėrimas:
 
 Duomenų publikavimas į Saugyklą
 ===============================
