@@ -1934,11 +1934,11 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 5.99856in
    :height: 2.38379in
 .. |image86| image:: /static/katalogas/okot/image81.png
-   :width: 6in
-   :height: 0.57522in
+   :width: 800px
+   :height: 102px
 .. |69pav| image:: /static/katalogas/okot/image82.png
-   :width: 0.85417in
-   :height: 0.4375in
+   :width: 430px
+   :height: 82px
 .. |image88| image:: /static/katalogas/okot/image83.png
    :width: 2.92361in
    :height: 3.16784in
