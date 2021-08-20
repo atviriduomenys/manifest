@@ -71,4 +71,5 @@ linkcheck_ignore = [
     r'https://gdpr-info.eu/.*',
     r'https://gitlab.com/.*/issues/new',
     r'https://github.com/pyenv/pyenv/wiki#suggested-build-environment',
+    r'https://e-seimas.lrs.lt/portal/legalAct.*#part_.*',
 ]
