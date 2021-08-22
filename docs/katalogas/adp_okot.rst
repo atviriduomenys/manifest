@@ -1,7 +1,7 @@
 ORGANIZACIJOS KOORDINATORIŲ IR TVARKYTOJŲ APLINKOS NAUDOTOJO EL.VADOVAS
 -----------------------------------------------------------------------
 
-**Versija:** 2021-08-12/2
+**Versija:** 2021-08-22
 
 ====
 
@@ -145,7 +145,7 @@ Identifikavus tapatybę
 
 3. Pakartotinai spauskite [**Užpildyti naujo duomenų teikėjo formą**]:
 
-| |image3|
+| |image1|
 | *11 pav. Portalo pradinio lango fragmentas*
 
 ====
@@ -242,9 +242,9 @@ Pagrindinis meniu
 | |image17|
 | *16 pav. Pagrindinis meniu Koordinatoriams*
 
-\> **Išskleisti meniu:** Pelyte užveskite ant meniu juostos, o tada *\ **[> Išskleisti].**
+\> **Išskleisti meniu:** Pelyte užveskite ant meniu juostos, o tada **\> Išskleisti**.
 
-\> **Suskleisti meniu:** Spauskite *\ [**< Suskleisti**] \ * meniu apačioje.*
+\> **Suskleisti meniu:** Spauskite **\< Suskleisti** meniu apačioje.*
 
 \> **Išskleisti meniu lauką:** Spauskite |image19| .
 
@@ -262,12 +262,12 @@ Kairėje ekrano pusėje, meniu viršuje – tekstinis laukas skirtas meniu lauk�
 
 2. Spauskite **[Enter]**.
 
-| |Graphical user interface, text, application Description automatically generated|
+| |image20|
 | *17 pav. Pagrindinio meniu laukų paieškos rezultatų pavyzdys*
 
 3. Paiešką atitinkantys variantai bus atvaizduoti meniu lauke.
 
-4. Vėl norėdami matyti pilną meniu, spauskite **[**\ |Screenshot (256)|\ **].
+4. Vėl norėdami matyti pilną meniu, spauskite |17pav_x|.
 
 *Pradinis langas matomas:*
 
@@ -275,7 +275,7 @@ Kairėje ekrano pusėje, meniu viršuje – tekstinis laukas skirtas meniu lauk�
 
 - *pagrindiniame meniu paspaudus punktą*\ **„Pradinis“**\ *.*
 
-| |image21|
+| |18pav|
 | *18 pav. Organizacijos koordinatoriaus aplinkos pradinio lango fragmentas*
 
 
@@ -329,13 +329,14 @@ Sąrašo duomenis:
 
 ====
 
+
 **Redaguoti paskyras:**
 
 1. Sąraše pažymėkite reikiamą paskyrą ir lango meniu spauskite **[Redaguoti]**:
 
-|image30|
+| |image30|
+| *22 pav. Langas pridėti naują organizacijos tvarkytoją*
 
-22 pav. Langas pridėti naują organizacijos tvarkytoją
 
 **Panaikinti paskyrą:**
 
@@ -343,9 +344,9 @@ Sąrašo duomenis:
 
    *Atsidaro papildomas langas, kuriame pasirinkite naudotoją, kuriam bus priskirti duomenys:*
 
-|image31|
+| |image31|
+| *23 pav. Langas pašalinti pasirinktą paskyrą*
 
-23 pav. Langas pašalinti pasirinktą paskyrą
 
 **Filtruoti naudotojų sąrašą:**
 
@@ -375,9 +376,8 @@ Darbas su organizacijos rekvizitais (Koordinatoriai)
 5. Norėdami ištrinti pasirinktą organizaciją, spauskite [|image33|] lango apačioje.
 
 
-|image34|
-
-24 pav. Rekvizitų redagavimo langas
+| |image34|
+| *24 pav. Rekvizitų redagavimo langas*
 
 Skiltyje **„1. Bendra informacija“** galima redaguoti laukus:
 
@@ -406,9 +406,8 @@ Spauskite **[**\ |image35|\ **]** lauko dešinėje pusėje ir išplėsite sąra�
 
 Skiltyje **„2. Logotipas“** galite įkelti naują arba pakeisti įkeltą organizacijos logotipą:
 
-|image36|
-
-25 pav. Rekvizitų redagavimo langas
+| |image36|
+| *25 pav. Rekvizitų redagavimo langas*
 
 ====
 
@@ -573,7 +572,7 @@ Atsakymas į pateiktą atvėrimo poreikį
 
 - Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“** įveskite numatytą rinkinio atvėrimo datą formatu
       „mm/dd/mmmm“ arba pasirinkę kalendoriuje, spausdami
-      **[**\ |sn10|\ **]** dešinėje.
+      **[**\ |image41|\ **]** dešinėje.
 
 - Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba atmetimo“** įrašykite komentarą dėl atsakymo. Ši informacija bus pateikta viešame portale bei matoma atvėrimo poreikių sąrašo lange.
 
@@ -638,7 +637,7 @@ Duomenų rinkinių sąrašo peržiūra
 
 1. Pagrindiniame meniu spauskite **[Duomenų rinkiniai]**
 
-| |image45|
+| |image42|
 | *32 pav. Duomenų rinkinių sąrašo langas*
 
 2. Sąraše pateikiama pagrindinė duomenų rinkinių informacija:
@@ -665,17 +664,24 @@ Duomenų rinkinių sąrašo peržiūra
 
 - **Sukurtas:** data ir laikas, kada duomenų rinkinys buvo sukurtas.
 
+
 ====
 
-   **Filtruoti rinkinių sąrašą::**
+**Filtruoti rinkinių sąrašą:**
 
 1. Įveskite lauko vertę arba jo fragmentą į lauką pasirinkto stulpelio pavadinime;
 
-   **Rikiuoti sąrašą pagal stulpelį:**
 
-1. Spauskite prie pasirinkto stulpelio pavadinimo esantį [|sn2|].
+====
 
-   **Keisti stulpelius vietomis:**
+**Rikiuoti sąrašą pagal stulpelį:**
+
+1. Prie pasirinkto stulpelio pavadinimo spauskite |image2|.
+
+
+====
+
+**Keisti stulpelius vietomis:**
 
 1. Pasirinkite stulpelį ir pelyte jį nutempkite iki reikiamos pozicijos.
 
@@ -688,8 +694,7 @@ Duomenų šablono atsisiuntimas
 
 1. Pagrindiniame meniu spauskite **[Duomenų rinkiniai]**.
 
-2. Duomenų rinkinių lange spauskite mygtuką **[**\ `Atsisiųsti XLSX
-      šabloną <https://staging.data.gov.lt/admin/VAADIN/dynamic/resource/4/345e087f-2108-44da-baad-58e0a99757a0/Excel_import_%C5%A1ablonas_v1.1.xlsx>`__\ **]**.
+2. Duomenų rinkinių lange spauskite mygtuką **[**\ `Atsisiųsti XLSX šabloną <https://staging.data.gov.lt/admin/VAADIN/dynamic/resource/4/345e087f-2108-44da-baad-58e0a99757a0/Excel_import_%C5%A1ablonas_v1.1.xlsx>`__\ **]**.
 
 3. Į kompiuterį taip parsisiųsite Excel failą.
 
@@ -704,12 +709,9 @@ Duomenų rinkinio importavimas
 
 2. Duomenų rinkinių sąrašo lange paspauskite **[Importuoti XLSX]**;
 
-*Importuojant XLSX failą, įkeliamas tik aprašas.*
-
-*Inventorinimo, prioritetų, finansiniai ir meta- duomenys nėra
-įkeliami.*
-
-*Rinkinio metaduomenys įkeliami atskirai, po aprašymo failo įkėlimo.*
+	*Importuojant XLSX failą, įkeliamas tik aprašas.*
+	*Inventorinimo, prioritetų, finansiniai ir meta- duomenys nėra įkeliami.*
+	*Rinkinio metaduomenys įkeliami atskirai, po aprašymo failo įkėlimo.*
 
 3. Įkelkite failą iš kompiuterio sekdami įkėlimo lango nuorodas.
 
@@ -718,8 +720,9 @@ Duomenų rinkinio importavimas
 Naujo duomenų rinkinio sukūrimas
 ---------------------------------
 
+
 Inventorinimo duomenys
-~~~~~~~~~~~~~~~~~~~~~~
+======================
 
 1. Pagrindiniame meniu pasirinkite **[Duomenų rinkiniai]**.
 
@@ -727,7 +730,7 @@ Inventorinimo duomenys
 
    *Pasirinkus duomenų rinkinį, atidaroma kortelė „1. Inventorinimo duomenys“.*
 
-| |Graphical user interface Description automatically generated|
+| |image45|
 | *33 pav. Duomenų rinkinio inventorinimo duomenų langas.*
 
 3. Užpildykite kortelę (*: privalomi laukai):
@@ -738,7 +741,7 @@ Inventorinimo duomenys
 
 - **Aprašymas*:** duomenų rinkinio aprašymas lietuvių kalba;
 
-	*Žymimas raudonai, kol neužpildomas;
+	*Žymimas raudonai, kol neužpildomas;*
 
 - **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio pavadinimas anglų kalba.;
 
@@ -748,27 +751,33 @@ Inventorinimo duomenys
 
    *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
 
-*PASTABA: skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
 
-*Šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]** neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“** (daugiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__)*
+*SVARBU:*
 
-4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite[**Saugoti**].
+- skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
 
-| |Graphical user interface Description automatically generated|
-| 34 pav. Išsaugotos kortelės *1. Inventorinimo duomenys“* sistemos pranešimo fragmentas.
+- šiame lange įkelti struktūros ir spausti [**Įkelti struktūros failą**] neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__\.
+
+4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite [**Saugoti**].
+
+| |34pav| 
+| *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
 
 *Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos sekančios kortelės.*
 
 5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
 
+
 ====
 
+
 Struktūra
-~~~~~~~~~
+=========
+
 
 *Duomenų naudotojams bus aiškiau, kaip publikuojami duomenys, jei įkelsite ir struktūrą:*
 
-| |Graphical user interface, application, table Description automatically generated|
+| |image47|
 | *35 pav. Struktūros failo Excel dokumente pavyzdys*
 
 *SVARBU: Į Portalą vienam rinkiniui turi būti įkeliamas vienas duomenų struktūros aprašas (DSA).*
@@ -777,7 +786,7 @@ Struktūra
 
 1. Duomenų rinkinio lange spauskite lango meniu punktą **„2. Struktūra“**.
 
-| |Graphical user interface, text, application, email, website Description automatically generated|
+| |image48|
 | *36 pav. Duomenų rinkinio struktūros langas*
 
 Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
@@ -798,20 +807,23 @@ Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 
 *Jeigu nesate įkėlę duomenų struktūros, gausite klaidos pranešimą:*
 
-| |Text Description automatically generated with medium confidence|
+| |image49|
 | *37 pav. „Daryti aktualiu“ klaidos langas, kai nepateikta duomenų struktūra*
 
-2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite [Šalinti failą].
+2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite [**Šalinti failą**].
 
    *Sėkmingai atlikus veiksmą, sistema pašalins pasirinktą struktūrą iš sąrašo.*
 
-| |Text Description automatically generated|
+| |image50|
 | *38 pav. „Šalinti failą“ patvirtinimo pranešimas*
+
 
 ====
 
+
 Prioritetai
-~~~~~~~~~~~
+===========
+
 
 *Pastaba: šiuo metu pildyti šios skilties laukų nėra privaloma.*
 
@@ -827,35 +839,37 @@ Prioritetai
 
 2. Pažymėkite visus tinkamus laukus:
 
-| |Graphical user interface, text, application, email Description automatically generated|
+| |39pav|
 | *39 pav. Prioritetų kortelės pirmasis fragmentas*
 
 3. Jei galioja: pažymėkite lauką **„Duomenų rinkinys yra atvertas mašininiu būdu ...“**.
 
-*Pasirinkimas suteikia maksimalų prioritetą, 100 balų.*
+	*Pasirinkimas suteikia maksimalų prioritetą, 100 balų.*
 
-*Pasirinkus daugiau laukų pasirinkti nebegalima.*
+	*Pasirinkus daugiau laukų pasirinkti nebegalima.*
 
 4. Kitais atvejais, atskirai pažymėkite tinkamus laukus iš sąrašo.
 
-| |Graphical user interface, text, application, email Description automatically generated|
+| |40pav|
 | *40 pav. Prioritetų kortelės fragmentas „Duomenų vertė“*
 
-   Laukas **Duomenų vertė (20 balų)**
 
-- **Duomenų vertė (iki 20 balų) -** Duomenų poreikis pagal duomenų tvarkytojo vertinimą. Pažymima, kokiems tikslams duomenys gali būti panaudojami.
+Laukas **1. Duomenų vertė (20 balų)**
 
-... rinkinyje yra naudojami duomenys priskirti prioritetiniam rekomenduojamam atvertinų duomenų sąrašui.
+Duomenų poreikis pagal duomenų tvarkytojo vertinimą. Pažymėkite, kokiems tikslams duomenys gali būti panaudojami.
 
-   *Poreikių pasirinkimai suskirstyti trimis laukais.*
+|tickbox_empty| ... rinkinyje yra naudojami duomenys priskirti prioritetiniam rekomenduojamam atvertinų duomenų sąrašui.
 
-   *Kiekvienas iš jų turi po maksimalią prioritetų taškų sumą.*
+	*Poreikių pasirinkimai suskirstyti trimis laukais.*
 
-   Laukai **Duomenų atvėrimo poreikis (50 balų)**
+	*Kiekvienas iš jų turi po maksimalią prioritetų taškų sumą.*
+
+
+Laukas **Duomenų atvėrimo poreikis (50 balų)**
 
 - Pažymima, kokiems poreikiams buvo pateiktos naudotojų užklausos: kokiems pasirinkimams iš sąrašo portalo naudotojai pateikė poreikį atverti duomenų rinkinį.
 
-| |Graphical user interface, text, application, email Description automatically generated|
+| |41pav|
 | *41 pav. Prioritetų kortelės fragmentas: „Duomenų poreikis“*
 
 Sužymėkite atitinkamus pasirinkimus:
@@ -876,7 +890,7 @@ Duomenų rinkinyje yra asmens duomenų
 
 Duomenų rinkinyje esantys duomenys turės būti transformuojami arba papildomi susijusiais duomenimis.
 
-| |Graphical user interface, text, application Description automatically generated|
+| |image53|
 | *42 pav. Prioritetų kortelės antras fragmentas*
 
 Į tekstinį lauką pagal poreikį įveskite duomenų rinkinyje naudojamų duomenų bazės laukų skaičių.
@@ -895,11 +909,11 @@ Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui, remianti
 
 - 3 - priskiriamos `CSV` ir analogiškiems formatams;
 
-- 4 - priskiriamos `JSON ir analogiškiems formatams;
+- 4 - priskiriamos `JSON` ir analogiškiems formatams;
 
 - 5 - priskiriamos `RDF` ir analogiškiems formatams, kai duomenys yra susieti su kitais duomenų rinkiniais.
 
-| |Graphical user interface, text, application Description automatically generated|
+| |image54|
 | *43 pav. Prioritetų kortelės paskutinis fragmentas*
 
 5. Pasirinkite visus reikiamus laukus
@@ -911,7 +925,7 @@ Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui, remianti
 ====
 
 Finansiniai duomenys
-~~~~~~~~~~~~~~~~~~~~
+====================
 
 *Pastaba: šiuo metu pildyti šios skilties laukų nėra privaloma.*
 
@@ -925,7 +939,7 @@ Finansiniai duomenys
 
 2. Pasirinkto duomenų rinkinio lango meniu spauskite **[4. Finansiniai duomenys]**.
 
-| |Graphical user interface, text, application, email Description automatically generated|
+| |image55|
 | *44 pav. Finansinių duomenų kortelės langas*
 
 3. Lauke **„Reikalingi finansiniai ištekliai duomenų atvėrimui (EUR)“** įveskite sumą, reikalingą atverti duomenis.
@@ -939,16 +953,16 @@ Finansiniai duomenys
 ====
 
 Metaduomenų įvedimas
-~~~~~~~~~~~~~~~~~~~~
+====================
 
 *Rinkinys jau turi būti suinventorintas, turėti įvestus prioritetus ir finansinius duomenis.*
 
 1. Spauskite **[5. Metaduomenys]**.
 
-| |Graphical user interface, text, application, email, Teams Description automatically generated|
+| |image56|
 | *45 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango pirmas fragmentas*
 
-| |Graphical user interface, text, application Description automatically generated|
+| |image57|
 | *46 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango antras fragmentas*
 
 2. Užpildykite laukus pagal poreikį (\* – privalomi; A – automatiniai):
@@ -1009,7 +1023,7 @@ Metaduomenų įvedimas
 
    Lango apačioje pateikta prioriteto balų suma.
 
-| |Graphical user interface, text, application, chat or text message Description automatically generated|
+| |image58|
 | *47 pav. Duomenų rinkinio metaduomenų įvedimo/redagavimo lango apatinis fragmentas*
 
 3. Užpildžius reikiamus laukus, galite spauskite mygtuką **[Saugoti]** arba pereikite prie kitų kortelių pildymo.
@@ -1022,20 +1036,24 @@ Metaduomenų įvedimas
 
 4. Tekstiniuose laukuose įveskite priežastį kiekvienam DCAT laukui, kurio neužpildėte.
 
-| |image64|
+| |48pav|
 | *48 pav. Duomenų rinkinio metaduomenų neužpildymo paaiškinimo lango pavyzdys*
 
 *Nurodyta priežastis bus matoma poreikio peržiūros lango skiltyje*\ **„Įvykių istorija“**\ *, komentaro lauke.*
 
-| |01|
+| |image60|
 | *49 pav. DCAT lauko neužpildymo priežasties peržiūros pavyzdys*
 
 5. Įvedę priežastis neužpildyti privalomiems laukams, spauskite **[Saugoti]**.
 
 6. Spauskite **[Saugoti]** metaduomenų įvedimo lange, kad išsaugotumėte įvestus duomenis arba pakeitimus.
 
+
+====
+
+
 Duomenų distribucijos tvarkymas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
 
 *Rinkinio duomenys gali būti įkeliami, kai įkeltas duomenų rinkinio struktūros failas *\ **„2. Struktūra“**
 
@@ -1043,13 +1061,13 @@ Duomenų distribucijos tvarkymas
 
 2. Sistema parodys duomenų įkėlimui skirtą langą.
 
-| |Graphical user interface, text, application, chat or text message Description automatically generated|
+| |image61|
 | *50 pav. Duomenų rinkinio duomenų distribucijos langas*
 
 *SVARBU: jeigu nėra sukurta aktualios duomenų struktūros, vartotojui nebus leidžiama įkelti duomenis ir bus rodomas atitinkamas pranešimo langas:*
 
-| |Graphical user interface, application Description automatically generated|
-| 51 pav. Duomenų rinkinio duomenų distribucijos lango klaidos pranešimas
+| |image62|
+| *51 pav. Duomenų rinkinio duomenų distribucijos lango klaidos pranešimas*
 
 Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomenys, nurodant šią informaciją:
 
@@ -1079,7 +1097,7 @@ Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomeny
 
    *Sistema parodys naujos distribucijos langą.*
 
-| |Screenshot (235)|
+| |image63|
 | *52 pav. Naujos distribucijos kaip failo įkėlimo langas*
 
 4. Užpildykite reikiamus laukus ( \* - privalomi):
@@ -1106,14 +1124,14 @@ Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomeny
 
 - **Nuoroda*:**\ *nuoroda į distribuciją.*
 
-| |image69|
+| |image64|
 | *53 pav. Distribucijos nuorodos įkėlimo langas*
 
 7. Užpildę laukus, spauskite **[Saugoti]**.
 
 *Naujai įkeltas failas ar nuoroda bus iškart matomi distribucijų lange esančiame sąraše:*
 
-| |Graphical user interface, text, application Description automatically generated|
+| |image61|
 | *54 pav. Duomenų distribucijų sąrašo pavyzdys*
 
 ====
@@ -1129,10 +1147,9 @@ Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomeny
 
 ====
 
-\*\*\*
 
 Pateikti poreikiai
-~~~~~~~~~~~~~~~~~~
+==================
 
 1. Rinkinio peržiūros lango meniu pasirinkite skiltį **„Pateikti poreikiai“**.
 
@@ -1150,7 +1167,7 @@ Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių informa
 ====
 
 Duomenų rinkinio istorijos peržiūra
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================================
 
 1. **Duomenų rinkinio lango** viršuje esančiame meniu pasirinkite skiltį
    **„Įvykių istorija“**.
@@ -1171,7 +1188,7 @@ Lange pateikti rinkinio istorijos duomenys, automatiškai kaupiami nuo duomenų 
 ====
 
 Duomenų rinkinio pastabų peržiūra
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=================================
 
 *Tvarkant duomenų rinkinių atvėrimo planus, gali būti pateiktos pastabos.*
 
@@ -1206,7 +1223,7 @@ Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros 
 ====
 
 Darbas su IRS rinkiniais
-~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 
 | |image75|
 | *59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas*
@@ -1317,7 +1334,7 @@ Metinio plano formavimas ir pateikimas
 
 2. Atvėrimo planų lange pasirinkite planą, kurį norite formuoti:
 
-| |image80|
+| |62pav|
 | *62 pav. Metinio duomenų atvėrimo plano langas*
 
 Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir reikalingas finansavimas, suma EUR.
@@ -1650,7 +1667,7 @@ Slaptažodžio keitimas
 
 3. Po ikona išskleidžiamame kontekstiniame meniu spustelėkite **[Nustatymai]**.
 
-| |Graphical user interface, text, application Description automatically generated|
+| |77pav|
 | *77 pav. Paskyros kontekstinis meniu*
 
 4. Paskyros lange spustelėkite **[Keisti slaptažodį]**.
@@ -1665,7 +1682,7 @@ Slaptažodžio keitimas
 
 Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-sąvokos>`__, „Saugus slaptažodis“)
 
-| |Graphical user interface, text, application Description automatically generated|
+| |78pav|
 | *78 pav. Slaptažodžio keitimo langas*
 
 6. Spauskite **[Keisti]**, kad išsaugotumėte naują slaptažodį.
@@ -1728,22 +1745,20 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image17| image:: /static/katalogas/okot/image17.png
    :width: 150px
    :height: 360px
-.. |Screenshot (254)| image:: /static/katalogas/okot/image18.png
-   :height: 0.10556in
-.. |image18| image:: /static/katalogas/okot/image17.png
+.. |image18| image:: /static/katalogas/okot/image18.png
 .. |image19| image:: /static/katalogas/okot/image19.png
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image20.png
-   :width: 1.2318in
-   :height: 1.26515in
-.. |Screenshot (256)| image:: /static/katalogas/okot/image21.png
-   :width: 0.2in
-   :height: 0.1913in
-.. |image21| image:: /static/katalogas/okot/image22.png
-   :width: 6.68611in
-   :height: 2.99231in
+.. |image20| image:: /static/katalogas/okot/image20.png
+   :width: 200px
+   :height: 279px
+.. |17pav_x| image:: /static/katalogas/okot/17pav_x.png
+   :width: 20px
+   :height: 20px
+.. |18pav| image:: /static/katalogas/okot/image22.png
+   :width: 713px
+   :height: 400px
 .. |image22| image:: /static/katalogas/okot/image23.png
-   :width: 6.68542in
-   :height: 2.36111in
+   :width: 713px
+   :height: 252px
 .. |image23| image:: /static/katalogas/okot/image24.png
    :width: 6.69375in
    :height: 0.94583in
@@ -1762,6 +1777,9 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image28| image:: /static/katalogas/okot/image25.png
    :width: 0.14375in
    :height: 0.14375in
+.. |sn2| image:: /static/katalogas/okot/image25.png
+   :width: 0.14583in
+   :height: 0.14583in
 .. |image29| image:: /static/katalogas/okot/image26.png
    :width: 6in
    :height: 1.58792in
@@ -1769,8 +1787,8 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 6in
    :height: 1.58045in
 .. |image31| image:: /static/katalogas/okot/image28.png
-   :width: 2in
-   :height: 1.10689in
+   :height: 150px
+   :width: 236px
 .. |image32| image:: /static/katalogas/okot/image29.png
    :width: 0.58333in
    :height: 0.17431in
@@ -1807,10 +1825,10 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |poreik| image:: /static/katalogas/okot/image40.png
    :width: 4.84375in
    :height: 3.125in
-.. |sn10| image:: /static/katalogas/okot/image41.png
+.. |image41| image:: /static/katalogas/okot/image41.png
    :width: 0.1875in
    :height: 0.1875in
-.. |image45| image:: /static/katalogas/okot/image42.png
+.. |image42| image:: /static/katalogas/okot/image42.png
    :width: 6in
    :height: 0.8389in
 .. |image43| image:: /static/katalogas/okot/image43.png
@@ -1819,73 +1837,61 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image44| image:: /static/katalogas/okot/image44.png
    :width: 0.15in
    :height: 0.15in
-.. |sn2| image:: /static/katalogas/okot/image25.png
-   :width: 0.14583in
-   :height: 0.14583in
-.. |Graphical user interface Description automatically generated| image:: /static/katalogas/okot/image45.png
+.. |image45| image:: /static/katalogas/okot/image45.png
    :width: 5.5631in
    :height: 3in
-.. |Graphical user interface Description automatically generated| image:: /static/katalogas/okot/image46.png
-   :width: 1.26562in
-   :height: 0.43229in
-.. |Graphical user interface, application, table Description automatically generated| image:: /static/katalogas/okot/image47.png
+.. |34pav| image:: /static/katalogas/okot/image46.png
+   :height: 70px
+   :width: 210px
+.. |image47| image:: /static/katalogas/okot/image47.png
    :width: 5.32123in
    :height: 2.83871in
-.. |Graphical user interface, text, application, email, website Description automatically generated| image:: /static/katalogas/okot/image48.png
+.. |image48| image:: /static/katalogas/okot/image48.png
    :width: 6.12708in
    :height: 1.14222in
-.. |Text Description automatically generated with medium confidence| image:: /static/katalogas/okot/image49.png
+.. |image49| image:: /static/katalogas/okot/image49.png
    :width: 1.47904in
    :height: 0.51502in
-.. |Text Description automatically generated| image:: /static/katalogas/okot/image50.png
+.. |image50| image:: /static/katalogas/okot/image50.png
    :width: 1.73846in
    :height: 0.41091in
-.. |Graphical user interface, text, application, email Description automatically generated| image:: /static/katalogas/okot/image51.png
-   :width: 5.3705in
-   :height: 0.67424in
-.. |Graphical user interface, text, application, email Description automatically generated| image:: /static/katalogas/okot/image51.png
-   :width: 5.3693in
-   :height: 0.56061in
-.. |Graphical user interface, text, application, email Description automatically generated| image:: /static/katalogas/okot/image51.png
-   :width: 5.36725in
-   :height: 1.63681in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image53.png
-   :width: 4.62879in
-   :height: 1.54917in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image54.png
-   :width: 6in
-   :height: 1.99191in
-.. |Graphical user interface, text, application, email Description automatically generated| image:: /static/katalogas/okot/image55.png
+.. |39pav| image:: /static/katalogas/okot/39pav.png
+.. |40pav| image:: /static/katalogas/okot/40pav.png
+.. |41pav| image:: /static/katalogas/okot/41pav.png
+.. |tickbox_empty| image:: /static/katalogas/okot/tickbox_empty.wmf
+.. |image53| image:: /static/katalogas/okot/image53.png
+.. |image54| image:: /static/katalogas/okot/image54.png
+.. |image55| image:: /static/katalogas/okot/image55.png
    :width: 4.02177in
    :height: 2.70455in
-.. |Graphical user interface, text, application, email, Teams Description automatically generated| image:: /static/katalogas/okot/image56.png
+.. |image56| image:: /static/katalogas/okot/image56.png
    :width: 6in
    :height: 2.81793in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image57.png
+.. |image57| image:: /static/katalogas/okot/image57.png
    :width: 6in
    :height: 1.61616in
-.. |Graphical user interface, text, application, chat or text message Description automatically generated| image:: /static/katalogas/okot/image58.png
-   :width: 0.81884in
-   :height: 0.5in
-.. |image64| image:: /static/katalogas/okot/image59.png
+.. |image58| image:: /static/katalogas/okot/image58.png
+   :width: 113
+   :height: 69
+.. |48pav| image:: /static/katalogas/okot/48pav.png
    :width: 2.78823in
    :height: 1.90278in
-.. |01| image:: /static/katalogas/okot/image60.png
+.. |image60| image:: /static/katalogas/okot/image60.png
    :width: 6in
    :height: 0.38317in
-.. |Graphical user interface, text, application, chat or text message Description automatically generated| image:: /static/katalogas/okot/image61.png
+.. |image61| image:: /static/katalogas/okot/image61.png
    :width: 6.04463in
    :height: 0.80833in
-.. |Graphical user interface, application Description automatically generated| image:: /static/katalogas/okot/image62.png
+.. |image62| image:: /static/katalogas/okot/image62.png
    :width: 2.70212in
    :height: 1.19725in
-.. |Screenshot (235)| image:: /static/katalogas/okot/image63.png
+.. |image63| image:: /static/katalogas/okot/image63.png
    :width: 6in
    :height: 2.3245in
-.. |image69| image:: /static/katalogas/okot/image64.png
+.. |image64| image:: /static/katalogas/okot/image64.png
    :width: 6in
    :height: 1.82243in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image65.png
+.. |image65| image:: /static/katalogas/okot/image65.png
    :width: 6in
    :height: 0.86026in
 .. |image71| image:: /static/katalogas/okot/image66.png
@@ -1915,12 +1921,10 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image79| image:: /static/katalogas/okot/image74.png
    :width: 3.03333in
    :height: 1.25369in
-.. |image80| image:: /static/katalogas/okot/image75.png
-   :width: 6.68194in
-   :height: 1.98261in
+.. |62pav| image:: /static/katalogas/okot/image75.png
+   :width: 656
+   :height: 198
 .. |image81| image:: /static/katalogas/okot/image76.png
-   :width: 2.04514in
-   :height: 0.65139in
 .. |image82| image:: /static/katalogas/okot/image77.png
    :width: 5.65263in
    :height: 2.44223in
@@ -1928,11 +1932,11 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 5.47059in
    :height: 2.76908in
 .. |image84| image:: /static/katalogas/okot/image79.png
-   :width: 3.13225in
-   :height: 0.69565in
+   :width: 321
+   :height: 99
 .. |image85| image:: /static/katalogas/okot/image80.png
-   :width: 5.99856in
-   :height: 2.38379in
+   :width: 577
+   :height: 253
 .. |image86| image:: /static/katalogas/okot/image81.png
    :width: 800px
    :height: 102px
@@ -1975,9 +1979,9 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image99| image:: /static/katalogas/okot/image91.png
    :width: 0.10387in
    :height: 0.12in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image92.png
+.. |77pav| image:: /static/katalogas/okot/77pav.png
    :width: 0.79167in
    :height: 0.66076in
-.. |Graphical user interface, text, application Description automatically generated| image:: /static/katalogas/okot/image93.png
-   :width: 1.27822in
-   :height: 1.97396in
+.. |78pav| image:: /static/katalogas/okot/78pav.png
+   :width: 76
+   :height: 120
