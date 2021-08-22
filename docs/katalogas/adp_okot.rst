@@ -54,7 +54,7 @@ Institucijos ir atstovaujančio koordinatoriaus registravimas
 
 1. Naršyklėje atsidarykite Portalo puslapį https://data.gov.lt.
 
-2. Pagrindiniame lange spauskite [**Užpildyti naujo duomenų teikėjo formą**]:
+2. Pagrindiniame lange spauskite **[Užpildyti naujo duomenų teikėjo formą]**:
 
 | |image1|
 | *1 pav. Portalo pagrindinio lango viršutinis fragmentas*
@@ -143,7 +143,7 @@ Identifikavus tapatybę
 
 2. Naujame naršyklės lange atsidarykite Portalo puslapį https://data.gov.lt.
 
-3. Pakartotinai spauskite [**Užpildyti naujo duomenų teikėjo formą**]:
+3. Pakartotinai spauskite **[Užpildyti naujo duomenų teikėjo formą]**:
 
 | |image1|
 | *11 pav. Portalo pradinio lango fragmentas*
@@ -157,9 +157,9 @@ Identifikavus tapatybę
 | |image13|
 | *12 pav. El.Vartų langas „Duomenų teikimas į Atvirų duomenų portalą“*
 
-> **Atsisakyti patvirtini duomenis:** spauskite [**Atšaukti**].
+> **Atsisakyti patvirtini duomenis:** spauskite **[Atšaukti]**.
 
-> **Patvirtinti informaciją:** spauskite [**Patvirtinti**].
+> **Patvirtinti informaciją:** spauskite **[Patvirtinti]**.
 
 
 4. Atsidarys „\ **Duomenų teikėjo registracijos**\ “ forma:
@@ -172,7 +172,7 @@ Identifikavus tapatybę
 
 - **Organizaciją** \* : pasirinkite iš sąrašo;
 
-   Jeigu organizacijos nėra sąraše, spauskite [**Pridėti organizaciją**];
+   Jeigu organizacijos nėra sąraše, spauskite **[Pridėti organizaciją]**;
 
 - **El. pašto adresą** \*;
 
@@ -208,9 +208,9 @@ Prisijungimas prie sistemos
 | |image15|
 | *14 pav. Prisijungimo langas*
 
-2. Įveskite [**El. paštas**] ir [**Slaptažodis**];
+2. Įveskite **[El. paštas]** ir **[Slaptažodis]**;
 
-3. Spauskite [**Prisijungti**].
+3. Spauskite **[Prisijungti]**.
 
 ====
 
@@ -244,11 +244,11 @@ Pagrindinis meniu
 
 \> **Išskleisti meniu:** Pelyte užveskite ant meniu juostos, o tada **\> Išskleisti**.
 
-\> **Suskleisti meniu:** Spauskite **\< Suskleisti** meniu apačioje.*
+\> **Suskleisti meniu:** Spauskite **\< Suskleisti** meniu apačioje.
 
-\> **Išskleisti meniu lauką:** Spauskite |image19| .
+\> **Išskleisti meniu lauką:** Spauskite [|image19|].
 
-\> **Suskleisti meniu lauką:** Spauskite  |image18| .
+\> **Suskleisti meniu lauką:** Spauskite [|image18|].
 
 
 ====
@@ -320,7 +320,7 @@ Sąrašo duomenis:
 
 
 
-**Sukurti naują savo organizacijos AD tvarkytojo paskyrą:**
+\> **Sukurti naują savo organizacijos AD tvarkytojo paskyrą:**
 
 1. Spauskite **[+ Pridėti]** ir užpildykite registracijos langą ir išsaugokite pakeitimus:
 
@@ -330,7 +330,7 @@ Sąrašo duomenis:
 ====
 
 
-**Redaguoti paskyras:**
+\> **Redaguoti paskyras:**
 
 1. Sąraše pažymėkite reikiamą paskyrą ir lango meniu spauskite **[Redaguoti]**:
 
@@ -338,7 +338,7 @@ Sąrašo duomenis:
 | *22 pav. Langas pridėti naują organizacijos tvarkytoją*
 
 
-**Panaikinti paskyrą:**
+\> **Panaikinti paskyrą:**
 
 - Sąraše pažymėkite paskyrą ir spauskite **[Suspenduoti]**.
 
@@ -348,7 +348,7 @@ Sąrašo duomenis:
 | *23 pav. Langas pašalinti pasirinktą paskyrą*
 
 
-**Filtruoti naudotojų sąrašą:**
+\> **Filtruoti naudotojų sąrašą:**
 
 1. Pasirinkite lauką iš sąrašo;
 
@@ -363,11 +363,11 @@ Darbas su organizacijos rekvizitais (Koordinatoriai)
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
-**Redaguoti savo organizacijos pateikiamus aplinkoje duomenis:**
+\> **Redaguoti savo organizacijos pateikiamus aplinkoje duomenis:**
 
 1. Pagrindiniame meniu pasirinkite **„Organizacijos“**.
 
-2. Pasirinkite organizaciją, kurios informaciją norėsite redaguoti. Spauskite [**Redaguoti**].
+2. Pasirinkite organizaciją, kurios informaciją norėsite redaguoti. Spauskite **[Redaguoti]**.
 
 3. Rekvizitų lange redaguokite reikiamus duomenis.
 
@@ -469,7 +469,8 @@ Atvėrimo poreikio peržiūra
 
 - *Atsakyti į poreikį.*
 
-**Peržiūrėti išsamesnę pateikto poreikio informaciją:**
+
+\> **Peržiūrėti išsamesnę pateikto poreikio informaciją:**
 
 1. Sąraše pasirinkite poreikį ir du kartus paspauskite ant poreikio.
 
@@ -500,7 +501,8 @@ Atvėrimo poreikio peržiūra
 
 - **Papildoma informacija:** papildoma informacija apie duomenų rinkinį ar poreikį. Pildo *poreikio teikėjas*.
 
-**Peržiūrėti poreikio teikėjo pateiktą struktūrą:**
+
+\> **Peržiūrėti poreikio teikėjo pateiktą struktūrą:**
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio ir atsidarytų papildomas meniu „Atvėrimo poreikis“, pasirinkite „\ **Pageidaujama duomenų struktūra**\ “:
 
@@ -526,7 +528,8 @@ Atvėrimo poreikio peržiūra
 
 ====
 
-**Peržiūrėti atvėrimo poreikio būsenų pasikeitimus:**
+
+\> **Peržiūrėti atvėrimo poreikio būsenų pasikeitimus:**
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
    „Atvėrimo poreikis“, kur pasirinkite „\ **Būsenų istorija**\ “.
@@ -570,9 +573,7 @@ Atsakymas į pateiktą atvėrimo poreikį
 
    -  „Nenumatytas atverti“, jei tuo metu duomenų rinkinys nenumatytas atverti.
 
-- Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“** įveskite numatytą rinkinio atvėrimo datą formatu
-      „mm/dd/mmmm“ arba pasirinkę kalendoriuje, spausdami
-      **[**\ |image41|\ **]** dešinėje.
+- Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“** įveskite numatytą rinkinio atvėrimo datą formatu „mm/dd/mmmm“ arba pasirinkę kalendoriuje, spausdami **[**\ |image41|\ **]** dešinėje.
 
 - Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba atmetimo“** įrašykite komentarą dėl atsakymo. Ši informacija bus pateikta viešame portale bei matoma atvėrimo poreikių sąrašo lange.
 
@@ -592,27 +593,29 @@ Duomenys į Portalą keliami dviem būdais:
 
 1. Kuriant naują duomenų rinkinį;
 
-   *Plačiau:*\ `Naujo duomenų rinkinio sukūrimas ir inventorinimas <#_Naujo_duomenų_rinkinio>`__;
-
+   Plačiau: \ `Naujo duomenų rinkinio sukūrimas ir inventorinimas <#_Naujo_duomenų_rinkinio>`__;
 2. Importuoti pagal šabloną užpildytą Excel failą;
 
-   *Plačiau:*\ `Duomenų šablono atsisiuntimas <#duomenų-šablono-atsisiuntimas>`__.
+   Plačiau: \ `Duomenų šablono atsisiuntimas <#duomenų-šablono-atsisiuntimas>`__.
 
-**Importavus duomenų rinkinį:**
+
+\> **Importavus duomenų rinkinį:**
 
 1. Koreguokite informaciją.
 
-   *Plačiau:*\ `Duomenų distribucijos tvarkymas <#_Duomenų_distribucijos_tvarkymas>`__\ *;*
+   Plačiau: \ `Duomenų distribucijos tvarkymas <#_Duomenų_distribucijos_tvarkymas>`__\;
 
 2. Pereikite prie veiksmų su rinkiniu.
 
-   *Plačiau*: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__.
+   Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__.
 
-   **Išsaugoti įvestą informaciją:**
+
+\> **Išsaugoti įvestą informaciją:**
 
 1. Atitinkamoje kortelėje spauskite **[Saugoti]**.
 
-   **Atšaukti įvestų pakeitimų saugojimą:**
+
+\> **Atšaukti įvestų pakeitimų saugojimą:**
 
 1. Jei pakeitimų atsisakote, spauskite **[Grįžti į sąrašą]**.
 
@@ -644,11 +647,9 @@ Duomenų rinkinių sąrašo peržiūra
 
 - **Eil. Nr.**: duomenų rinkinio eilės numeris duomenų rinkinių sąraše;
 
-- **ID:** duomenų rinkinio unikalus identifikatorius sistemoje. Pagal
-   šį stulpelį taip pat galima ir filtruoti rinkinių sąrašą, įvedus skaitinę reikšmę į tekstinį lauką stulpelio pavadinime;
+- **ID:** duomenų rinkinio unikalus identifikatorius sistemoje. Galite filtruoti sąrašą: įveskite skaitinę reikšmę;
 
-- **Viešas:** duomenų rinkinio vaizdavimo viešoje aplinkoje būsena. Jei pateiktas varnelė **[**\ |image43|\ **]**, rinkinys – pateiktas viešoje aplinkoje. Jei lauke pateiktas tuščias apskritimas
-   [|image44|], rinkinys matomas tik administracinėje aplinkoje;
+- **Viešas:** duomenų rinkinio vaizdavimo viešoje aplinkoje būsena. Jei pateiktas varnelė **[**\ |image43|\ **]**, rinkinys – pateiktas viešoje aplinkoje. Jei lauke pateiktas tuščias apskritimas [|image44|], rinkinys matomas tik administracinėje aplinkoje;
 
 - **Pavadinimas:** duomenų rinkinio pavadinimas; galite filtruoti;
 
@@ -667,21 +668,24 @@ Duomenų rinkinių sąrašo peržiūra
 
 ====
 
-**Filtruoti rinkinių sąrašą:**
+
+\> **Filtruoti rinkinių sąrašą:**
 
 1. Įveskite lauko vertę arba jo fragmentą į lauką pasirinkto stulpelio pavadinime;
 
 
 ====
 
-**Rikiuoti sąrašą pagal stulpelį:**
+
+\> **Rikiuoti sąrašą pagal stulpelį:**
 
 1. Prie pasirinkto stulpelio pavadinimo spauskite |image2|.
 
 
 ====
 
-**Keisti stulpelius vietomis:**
+
+\> **Keisti stulpelius vietomis:**
 
 1. Pasirinkite stulpelį ir pelyte jį nutempkite iki reikiamos pozicijos.
 
@@ -756,9 +760,9 @@ Inventorinimo duomenys
 
 - skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
 
-- šiame lange įkelti struktūros ir spausti [**Įkelti struktūros failą**] neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__\.
+- šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]** neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__\.
 
-4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite [**Saugoti**].
+4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite **[Saugoti]**.
 
 | |34pav| 
 | *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
@@ -810,7 +814,7 @@ Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 | |image49|
 | *37 pav. „Daryti aktualiu“ klaidos langas, kai nepateikta duomenų struktūra*
 
-2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite [**Šalinti failą**].
+2. Pasirinkite norimą pašalinti duomenų struktūros versiją ir spauskite **[Šalinti failą]**.
 
    *Sėkmingai atlikus veiksmą, sistema pašalins pasirinktą struktūrą iš sąrašo.*
 
@@ -1169,8 +1173,7 @@ Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių informa
 Duomenų rinkinio istorijos peržiūra
 ===================================
 
-1. **Duomenų rinkinio lango** viršuje esančiame meniu pasirinkite skiltį
-   **„Įvykių istorija“**.
+1. **Duomenų rinkinio lango** viršuje esančiame meniu pasirinkite skiltį **„Įvykių istorija“**.
 
 | |image72|
 | *56 pav. Duomenų rinkinio istorijos langas*
@@ -1357,9 +1360,10 @@ Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir reikalingas
 
 5. Įsitikinę, kad pasirinkote visus reikiamus rinkinius, spauskite **[Patvirtinti]**.
 
-**Pastaba**\ *: į metinį planą įtrauktų duomenų rinkinių prioritetų ir finansinių duomenų nebegalima redaguoti. Juos bus galima redaguoti tik pašalinus rinkinį iš plano. Daugiau:*\ `Metinio plano išformavimas <#ataskaitų-formavimas>`__
+	**Pastaba**\ *: į metinį planą įtrauktų duomenų rinkinių prioritetų ir finansinių duomenų nebegalima redaguoti. Juos bus galima redaguoti tik pašalinus rinkinį iš plano. Daugiau:*\ `Metinio plano išformavimas <#ataskaitų-formavimas>`__
 
 6. Metinio plano lange spauskite **[Pateikti planą vyr. koordinatoriui]**.
+
 
 *Pateikto plano nebebus galima redaguoti, išformuoti ar pateikti iš naujo.*
 
@@ -1382,10 +1386,10 @@ Metinio plano išformavimas
 
 *PASTABA: išformuoti negalite planų, kurie yra patvirtinti vyr. koordinatoriaus arba organizacijos, arba įtraukti į jau patvirtintą nacionalinį duomenų rinkinių atvėrimo planą.*
 
-**Išformuoti metinį planą:**
 
-1. Pasirinkite reikiamą planą sąraše ir plano lange spauskite
-   **[Formuoti <metai> metų planą]**.
+\> **Išformuoti metinį planą:**
+
+1. Pasirinkite reikiamą planą sąraše ir plano lange spauskite **[Formuoti <metai> metų planą]**.
 
 2. Rinkinių įtraukimo lango apačioje spauskite mygtuką **[Išformuoti planą]**.
 
@@ -1434,7 +1438,7 @@ Ataskaitų formavimas
 Ataskaitų kūrimas
 -----------------
 
-**Suformuoti ataskaitą:**
+\> **Suformuoti ataskaitą:**
 
 1. Pagrindiniame meniu išskleiskite punktą **„Ataskaitos“** ir paspauskite ant norimo ataskaitos tipo.
 
@@ -1449,11 +1453,13 @@ Ataskaitų kūrimas
 
 *Suformuota ataskaita bus pateikta ekrane.*
 
-**Atsisiųsti suformuotą rezultatą kaip Excel dokumentą:**
+
+\> **Atsisiųsti suformuotą rezultatą kaip Excel dokumentą:**
 
 1. Suformuotos ataskaitos lango viršuje spauskite **[Atsisiųsti XLSX]**.
 
-**Performuoti tokio paties tipo ataskaitą:**
+
+\> **Performuoti tokio paties tipo ataskaitą:**
 
 1. Spauskite **[Formuoti]**.
 
@@ -1464,11 +1470,13 @@ Ataskaitų kūrimas
 Paruoštų ataskaitų valdymas
 ---------------------------
 
-**Rikiuoti stulpelį abėcėlės arba atvirkštine tvarka:**
+
+\> **Rikiuoti stulpelį abėcėlės arba atvirkštine tvarka:**
 
 - Spauskite stulpelio pavadinimą.
 
-   **Filtruoti stulpelį:**
+
+\> **Filtruoti stulpelį:**
 
 - *Tekstiniams* laukams įveskite savo paiešką į tekstinį lauką po stulpelio pavadinimu.
 
@@ -1476,11 +1484,13 @@ Paruoštų ataskaitų valdymas
 
 - *Datoms* įveskite arba pasirinkite datas kalendoriuose arba įveskite jas laukuose „Nuo“ ir/arba „Iki“ po stulpelio pavadinimu.
 
-   **Tvarkyti ataskaitos stulpelių eiliškumą:**
+
+\> **Tvarkyti ataskaitos stulpelių eiliškumą:**
 
 - Nutempkite pasirinktą stulpelį iki reikiamos pozicijos.
 
-   **Keisti suformuotos ataskaitos stulpelius vietomis:**
+
+\> **Keisti suformuotos ataskaitos stulpelius vietomis:**
 
 - Pasirinktą stulpelį nutempkite iki reikiamos pozicijos.
 
@@ -1545,7 +1555,8 @@ Suformuotos ataskaitos lange pateikiami šie įtraukto duomenų rinkinio laukai:
 
 ====
 
-**Atidaryti ataskaitos šablono keitimo langą:**
+
+\> **Atidaryti ataskaitos šablono keitimo langą:**
 
 1. Paspauskite ant bet kurio stulpelio pavadinimo dešiniuoju pelės klavišu.
 
@@ -1558,17 +1569,20 @@ Lange pateikti stulpelių pavadinimai bei jų rodymo ataskaitoje būsena.
 
 - Jei stulpelio būsenos reikšmė yra tuščia (**„**\ |image92|\ **“**).
 
-   **Keisti stulpelio būseną:**
+
+\> **Keisti stulpelio būseną:**
 
 - Paspauskite būsenos ikoną: varnelę „\ |image93|\ “ arba tuščią lauką „\ |image94|\ “.
 
-   **Uždaryti šablono keitimo langą:**
+
+\> **Uždaryti šablono keitimo langą:**
 
 - Spauskite **[Uždaryti]**.
 
 *Uždarant langą bus išsaugotos naujausios reikšmės.*
 
-**Atstatyti pradines visų būsenų reikšmes:**
+
+\> **Atstatyti pradines visų būsenų reikšmes:**
 
 - Spauskite **[Atstatyti]**.
 
@@ -1644,6 +1658,7 @@ Partnerių API
 \> **Gauti organizacijai skirtą raktą**:
 
 1. Kreipkitės į Portalo vyr. koordinatorių.
+
 
 \> **Pasiekti API**:
 
@@ -1790,11 +1805,7 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :height: 150px
    :width: 236px
 .. |image32| image:: /static/katalogas/okot/image29.png
-   :width: 0.58333in
-   :height: 0.17431in
 .. |image33| image:: /static/katalogas/okot/image30.png
-   :width: 0.51183in
-   :height: 0.16389in
 .. |image34| image:: /static/katalogas/okot/image31.png
    :width: 2.83333in
    :height: 5.94792in
@@ -1802,8 +1813,8 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 0.17431in
    :height: 0.13611in
 .. |image36| image:: /static/katalogas/okot/image33.png
-   :width: 2.57262in
-   :height: 1.86268in
+   :width: 247
+   :height: 207
 .. |image37| image:: /static/katalogas/okot/image34.png
    :width: 6.69375in
    :height: 0.65278in
