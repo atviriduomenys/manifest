@@ -1,11 +1,6 @@
 Katalogas
 #########
 
-**Versija:** 2021-08-22
-
-Įvadas
-======
-
 Organizacijos koordinatorių ir tvarkytojų aplinka yra skirta:
 
 - duomenų rinkinių įkėlimui, įvertinimui ir atvėrimui;
@@ -1696,6 +1691,7 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 
 ====
 
+.. |image1| image:: /static/katalogas/okot/image1.png
 .. |image2| image:: /static/katalogas/okot/image2.png
 .. |image3| image:: /static/katalogas/okot/image3.png
 .. |image5| image:: /static/katalogas/okot/image5.png
@@ -1712,45 +1708,27 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image15| image:: /static/katalogas/okot/image15.png
 .. |image16| image:: /static/katalogas/okot/image16.png
 .. |image17| image:: /static/katalogas/okot/image17.png
-   :width: 150px
-   :height: 360px
 .. |image18| image:: /static/katalogas/okot/image18.png
 .. |image19| image:: /static/katalogas/okot/image19.png
 .. |image20| image:: /static/katalogas/okot/image20.png
-   :width: 200px
-   :height: 279px
 .. |17pav_x| image:: /static/katalogas/okot/17pav_x.png
-   :width: 20px
-   :height: 20px
 .. |18pav| image:: /static/katalogas/okot/image22.png
-   :width: 713px
-   :height: 400px
 .. |image22| image:: /static/katalogas/okot/image23.png
-   :width: 713px
-   :height: 252px
 .. |image23| image:: /static/katalogas/okot/image24.png
 .. |image24| image:: /static/katalogas/okot/image25.png
 .. |image25| image:: /static/katalogas/okot/image25.png
 .. |image26| image:: /static/katalogas/okot/image25.png
 .. |image27| image:: /static/katalogas/okot/image25.png
 .. |image28| image:: /static/katalogas/okot/image25.png
-   :width: 0.14375in
-   :height: 0.14375in
 .. |sn2| image:: /static/katalogas/okot/image25.png
-   :width: 0.14583in
-   :height: 0.14583in
 .. |image29| image:: /static/katalogas/okot/image26.png
 .. |image30| image:: /static/katalogas/okot/image27.png
 .. |image31| image:: /static/katalogas/okot/image28.png
-   :height: 150px
-   :width: 236px
 .. |image32| image:: /static/katalogas/okot/image29.png
 .. |image33| image:: /static/katalogas/okot/image30.png
 .. |image34| image:: /static/katalogas/okot/image31.png
 .. |image35| image:: /static/katalogas/okot/image32.png
 .. |image36| image:: /static/katalogas/okot/image33.png
-   :width: 247
-   :height: 207
 .. |image37| image:: /static/katalogas/okot/image34.png
 .. |image38| image:: /static/katalogas/okot/image35.png
 .. |image39| image:: /static/katalogas/okot/image36.png
@@ -1758,36 +1736,16 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |struk| image:: /static/katalogas/okot/image38.png
 .. |poreikist| image:: /static/katalogas/okot/image39.png
 .. |poreik| image:: /static/katalogas/okot/image40.png
-   :width: 4.84375in
-   :height: 3.125in
 .. |image41| image:: /static/katalogas/okot/image41.png
-   :width: 0.1875in
-   :height: 0.1875in
 .. |image42| image:: /static/katalogas/okot/image42.png
-   :width: 6in
-   :height: 0.8389in
 .. |image43| image:: /static/katalogas/okot/image43.png
 .. |image44| image:: /static/katalogas/okot/image44.png
-   :width: 0.15in
-   :height: 0.15in
 .. |image45| image:: /static/katalogas/okot/image45.png
-   :width: 5.5631in
-   :height: 3in
 .. |34pav| image:: /static/katalogas/okot/image46.png
-   :height: 70px
-   :width: 210px
 .. |image47| image:: /static/katalogas/okot/image47.png
-   :width: 5.32123in
-   :height: 2.83871in
 .. |image48| image:: /static/katalogas/okot/image48.png
-   :width: 6.12708in
-   :height: 1.14222in
 .. |image49| image:: /static/katalogas/okot/image49.png
-   :width: 1.47904in
-   :height: 0.51502in
 .. |image50| image:: /static/katalogas/okot/image50.png
-   :width: 1.73846in
-   :height: 0.41091in
 .. |39pav| image:: /static/katalogas/okot/39pav.png
 .. |40pav| image:: /static/katalogas/okot/40pav.png
 .. |41pav| image:: /static/katalogas/okot/41pav.png
@@ -1795,38 +1753,16 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image53| image:: /static/katalogas/okot/image53.png
 .. |image54| image:: /static/katalogas/okot/image54.png
 .. |image55| image:: /static/katalogas/okot/image55.png
-   :width: 4.02177in
-   :height: 2.70455in
 .. |image56| image:: /static/katalogas/okot/image56.png
-   :width: 6in
-   :height: 2.81793in
 .. |image57| image:: /static/katalogas/okot/image57.png
-   :width: 6in
-   :height: 1.61616in
 .. |image58| image:: /static/katalogas/okot/image58.png
-   :width: 113
-   :height: 69
 .. |48pav| image:: /static/katalogas/okot/48pav.png
-   :width: 2.78823in
-   :height: 1.90278in
 .. |image60| image:: /static/katalogas/okot/image60.png
-   :width: 6in
-   :height: 0.38317in
 .. |image61| image:: /static/katalogas/okot/image61.png
-   :width: 6.04463in
-   :height: 0.80833in
 .. |image62| image:: /static/katalogas/okot/image62.png
-   :width: 2.70212in
-   :height: 1.19725in
 .. |image63| image:: /static/katalogas/okot/image63.png
-   :width: 6in
-   :height: 2.3245in
 .. |image64| image:: /static/katalogas/okot/image64.png
-   :width: 6in
-   :height: 1.82243in
 .. |image65| image:: /static/katalogas/okot/image65.png
-   :width: 6in
-   :height: 0.86026in
 .. |image71| image:: /static/katalogas/okot/image66.png
 .. |image72| image:: /static/katalogas/okot/image67.png
 .. |image73| image:: /static/katalogas/okot/image68.png
@@ -1836,20 +1772,12 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image77| image:: /static/katalogas/okot/image72.png
 .. |image78| image:: /static/katalogas/okot/image73.png
 .. |image79| image:: /static/katalogas/okot/image74.png
-   :width: 3.03333in
-   :height: 1.25369in
 .. |62pav| image:: /static/katalogas/okot/image75.png
-   :width: 656
-   :height: 198
 .. |image81| image:: /static/katalogas/okot/image76.png
 .. |image82| image:: /static/katalogas/okot/image77.png
 .. |image83| image:: /static/katalogas/okot/image78.png
 .. |image84| image:: /static/katalogas/okot/image79.png
-   :width: 321
-   :height: 99
 .. |image85| image:: /static/katalogas/okot/image80.png
-   :width: 577
-   :height: 253
 .. |image86| image:: /static/katalogas/okot/image81.png
 .. |69pav| image:: /static/katalogas/okot/image82.png
 .. |image88| image:: /static/katalogas/okot/image83.png
@@ -1864,11 +1792,5 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image97| image:: /static/katalogas/okot/image85.png
 .. |image98| image:: /static/katalogas/okot/image90.png
 .. |image99| image:: /static/katalogas/okot/image91.png
-   :width: 0.10387in
-   :height: 0.12in
 .. |77pav| image:: /static/katalogas/okot/77pav.png
-   :width: 0.79167in
-   :height: 0.66076in
 .. |78pav| image:: /static/katalogas/okot/78pav.png
-   :width: 76
-   :height: 120
