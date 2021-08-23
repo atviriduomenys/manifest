@@ -1,56 +1,96 @@
-ORGANIZACIJOS KOORDINATORIŲ IR TVARKYTOJŲ APLINKOS NAUDOTOJO EL.VADOVAS
------------------------------------------------------------------------
+Katalogas
+#########
 
 **Versija:** 2021-08-22
-
-====
-
 
 Įvadas
 ======
 
-*Organizacijos koordinatorių ir tvarkytojų aplinka yra skirta:*
+Organizacijos koordinatorių ir tvarkytojų aplinka yra skirta:
 
-- *duomenų rinkinių įkėlimui, įvertinimui ir atvėrimui;*
+- duomenų rinkinių įkėlimui, įvertinimui ir atvėrimui;
 
-- *ataskaitų sudarymui.*
+- ataskaitų sudarymui.
 
-
-====
 
 Naudojami terminai ir sąvokos
 -----------------------------
 
-============================================= ==============================================================================================================================================================================================================================================================================
-Terminas, sąvoka                              Aprašymas
-„Laukas“                                      Kabutėmis „  “ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko pavadinimas, matomas aprašomame lange.
-„Tekstinis laukas“                            Vieta, kur sistemos naudotojas gali suvesti duomenis arba duomenys yra vaizduojami.
-[Mygtukas]                                    Dialogo lango arba lango mygtukai (taip pat vadinami komandiniais mygtukais) tekste yra žymimi kvadratiniais skliausteliais []. Tarp skliaustelių yra rašomas mygtuko pavadinimas. Sistemoje atvaizduoti kaip keturkampiai mygtukai ir aktyvios nuorodos (pabrauktas tekstas).
-API (angl. Application Programming Interface) Programos valdymo sąsaja įgalina automatizuotai atlikti duomenų rinkinių kėlimą ir valdymą naudojant organizacijos programinę įrangą.
-Lango mygtukas                                Mygtukas, kurio veiksmas įtakoja visus lango duomenis.
-Įrašo mygtukas                                Mygtukas, kurio veiksmas įtakoja vieno įrašo duomenis.
-IRS                                           Rinkiniai iš Informacinių Rinkinių Sistemos (IRS)
-„Meniu punktas”                               Kabutėmis „  ” yra žymimas meniu punktas. Tarp kabučių rašomas meniu punkto pavadinimas.
-Žymimasis langelis                            Kvadrato formos figūra, kurios dešinėje rašomas tekstas. Aprašymas atspindi galimą veiksmą. Figūra parodo, ar yra pasirinkta nurodyta reikšmė, ar ne. Naudotojas gali keisti pasirinkimo langelio reikšmę pele pažymint arba panaikinant požymį langelyje.
-Pagrindinis meniu                             Pagrindiniame meniu yra pristatomos pagrindinės sistemos funkcijos. Pagrindinio meniu punktai yra pasirenkami pelės kairiojo klavišo spustelėjimu pažymint juos.
-Pasirinktas meniu punktas                     Norėdamas pasirinkti meniu punktą, sistemos naudotojas turi spragtelti ant jo kairiu pelės klavišu.
-Saugus slaptažodis                            Bent aštuonių simbolių ilgio; sudarytas iš raidžių, skaičių ir specialių simbolių (tokių kaip „@“, „#“ ar pan.).; skiriasi nuo ankstesnio.
-VIISP                                         Valstybės Informacinių Išteklių Sąveikumo Platforma, prieiname per Elektroninius Valdžios Vartus
-El.Vartai                                     Elektroninių valdžios vartų puslapis
-Įstaiga                                       Organizacija / institucija, vykdanti nustatytas veiklas
-|image2| Sąrašo rūšiavimas                    Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto stulpelio pavadinimą arba [|image2|].
-============================================= ==============================================================================================================================================================================================================================================================================
+„Laukas“
+    Kabutėmis „“ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko
+    pavadinimas, matomas aprašomame lange.
 
-====
+„Tekstinis laukas“
+    Vieta, kur sistemos naudotojas gali suvesti duomenis arba duomenys yra
+    vaizduojami.
+
+[Mygtukas]
+    Dialogo lango arba lango mygtukai (taip pat vadinami komandiniais mygtukais)
+    tekste yra žymimi kvadratiniais skliausteliais []. Tarp skliaustelių yra
+    rašomas mygtuko pavadinimas. Sistemoje atvaizduoti kaip keturkampiai
+    mygtukai ir aktyvios nuorodos (pabrauktas tekstas).
+
+API (angl. Application Programming Interface)
+    Programos valdymo sąsaja įgalina automatizuotai atlikti duomenų rinkinių
+    kėlimą ir valdymą naudojant organizacijos programinę įrangą.
+
+Lango mygtukas
+    Mygtukas, kurio veiksmas įtakoja visus lango duomenis.
+
+Įrašo mygtukas
+    Mygtukas, kurio veiksmas įtakoja vieno įrašo duomenis.
+
+IRS
+    Rinkiniai iš Informacinių Rinkinių Sistemos (IRS)
+
+„Meniu punktas”
+    Kabutėmis „” yra žymimas meniu punktas. Tarp kabučių rašomas meniu punkto
+    pavadinimas.
+
+Žymimasis langelis
+    Kvadrato formos figūra, kurios dešinėje rašomas tekstas. Aprašymas atspindi
+    galimą veiksmą. Figūra parodo, ar yra pasirinkta nurodyta reikšmė, ar ne.
+    Naudotojas gali keisti pasirinkimo langelio reikšmę pele pažymint arba
+    panaikinant požymį langelyje.
+
+Pagrindinis meniu
+    Pagrindiniame meniu yra pristatomos pagrindinės sistemos funkcijos.
+    Pagrindinio meniu punktai yra pasirenkami pelės kairiojo klavišo
+    spustelėjimu pažymint juos.
+
+Pasirinktas meniu punktas
+    Norėdamas pasirinkti meniu punktą, sistemos naudotojas turi spragtelėti ant
+    jo kairiu pelės klavišu.
+
+Saugus slaptažodis
+    Bent aštuonių simbolių ilgio; sudarytas iš raidžių, skaičių ir specialių
+    simbolių (tokių kaip „@“, „#“ ar pan.).; skiriasi nuo ankstesnio.
+
+VIISP
+    Valstybės Informacinių Išteklių Sąveikumo Platforma, prieiname per
+    Elektroninius Valdžios Vartus
+
+El. Vartai
+    Elektroninių valdžios vartų puslapis
+
+Įstaiga
+    Organizacija / institucija, vykdanti nustatytas veiklas
+
+|image2| Sąrašo rūšiavimas
+    Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto
+    stulpelio pavadinimą arba [|image2|].
+
 
 Institucijos ir atstovaujančio koordinatoriaus registravimas
 ============================================================
 
-*Portale reikia registruoti savo instituciją ir vieną atstovaujantį koordinatorių.*
+*Portale reikia registruoti savo instituciją ir vieną atstovaujantį
+koordinatorių.*
 
 *Koordinatorius paskiria atvirų duomenų rinkinių tvarkytojus.*
 
-*Prieš pradedant registraciją, siūlome turėti vadovo parašu patvirtintą koordinatoriaus skyrimo raštą.*
+*Prieš pradedant registraciją, siūlome turėti vadovo parašu patvirtintą
+koordinatoriaus skyrimo raštą.*
 
 1. Naršyklėje atsidarykite Portalo puslapį https://data.gov.lt.
 
@@ -59,7 +99,7 @@ Institucijos ir atstovaujančio koordinatoriaus registravimas
 | |image1|
 | *1 pav. Portalo pagrindinio lango viršutinis fragmentas*
 
-*Būsite nukreipti į El.Vartų puslapį, kur pateikiami prisijungimo būdai:*
+*Būsite nukreipti į El. Vartų puslapį, kur pateikiami prisijungimo būdai:*
 
 | |image4|
 | *2 pav. El.Vartų prisijungimo puslapio fragmentas*
@@ -71,8 +111,6 @@ Jeigu koordinatoriumi yra skiriamas:
 - Darbuotojas, dirbantis pagal darbo sutartį: Registruokitės pasirinkę „Gyventojas“.
 
 *Siūlome registruotis pasirinkus „Gyventojas“*.
-
-====
 
 Registracija pasirinkus „Gyventojas“
 ------------------------------------
@@ -90,8 +128,6 @@ El.valdžios vartų puslapyje:
 | *4 pav. Lango "Prisijungimas" fragmentas*
 
 3. *Siūlome rinktis variantą „Per banką“:* paspauskite savo banko ikoną, suvesti el. bankininkystės prisijungimo duomenis.
-
-====
 
 Registracija pasirinkus „Viešasis sektorius“
 --------------------------------------------
@@ -115,8 +151,6 @@ Registracija pasirinkus „Viešasis sektorius“
 
 | |image10|
 | *8 pav. Pasirašymo su PIN lango fragmentas*
-
-====
 
 Identifikavus tapatybę
 ----------------------
@@ -147,8 +181,6 @@ Identifikavus tapatybę
 
 | |image1|
 | *11 pav. Portalo pradinio lango fragmentas*
-
-====
 
 **Variantas B:**
 
@@ -198,7 +230,6 @@ Identifikavus tapatybę
 
 - *Žinutėje nurodoma atmetimo priežastis, pvz., „raštas nėra tinkamai užpildytas“ ar „trūksta parašo“.*
 
-====
 
 Prisijungimas prie sistemos
 ===========================
@@ -212,7 +243,6 @@ Prisijungimas prie sistemos
 
 3. Spauskite **[Prisijungti]**.
 
-====
 
 Pagrindinis meniu
 =================
@@ -250,8 +280,6 @@ Pagrindinis meniu
 
 \> **Suskleisti meniu lauką:** Spauskite [|image18|].
 
-
-====
 
 Paieška
 -------
@@ -292,7 +320,6 @@ Lange pateikiama lentelė, kurioje pateikta informacija apie organizacijos stati
 | |image22|
 | *19 pav. Organizacijos tvarkytojo aplinkos pradinio lango fragmentas*
 
-====
 
 Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
 ========================================================
@@ -317,8 +344,6 @@ Sąrašo duomenis:
 - **Paskutinis prisijungimas:** Data ir laikas, kada naudotojas buvo paskutinį kartą prisijungęs prie savo paskyros. Galima rikiuoti.
 
 - **Sukurtas:** paskyros sukūrimo data ir laikas. Galima rikiuoti.
-
-
 
 \> **Sukurti naują savo organizacijos AD tvarkytojo paskyrą:**
 
@@ -356,7 +381,6 @@ Sąrašo duomenis:
 
 3. Rikiuoti galima vienu metu tik pagal vieną kurį nors stulpelį.
 
-====
 
 Darbas su organizacijos rekvizitais (Koordinatoriai)
 ====================================================
@@ -375,32 +399,30 @@ Darbas su organizacijos rekvizitais (Koordinatoriai)
 
 5. Norėdami ištrinti pasirinktą organizaciją, spauskite [|image33|] lango apačioje.
 
-
 | |image34|
 | *24 pav. Rekvizitų redagavimo langas*
 
 Skiltyje **„1. Bendra informacija“** galima redaguoti laukus:
 
--  **Pavadinimas:** pilnas organizacijos pavadinimas;
+- **Pavadinimas:** pilnas organizacijos pavadinimas;
 
--  **Įmonės kodas:** juridinio asmens kodas;
+- **Įmonės kodas:** juridinio asmens kodas;
 
--  **El. pašto adresas:** kontaktinis organizacijos el. pašto adresas;
+- **El. pašto adresas:** kontaktinis organizacijos el. pašto adresas;
 
--  **Adresas:** registruotas organizacijos adresas;
+- **Adresas:** registruotas organizacijos adresas;
 
--  **Telefono numeris:** kontaktinis organizacijos telefono numeris;
+- **Telefono numeris:** kontaktinis organizacijos telefono numeris;
 
--  **Tinklalapis:** nuoroda į organizacijos oficialią svetainę;
+- **Tinklalapis:** nuoroda į organizacijos oficialią svetainę;
 
--  **Regionas:** iš sąrašo pasirenkamas apskrities, kurioje registruota organizacija, pavadinimas;
+- **Regionas:** iš sąrašo pasirenkamas apskrities, kurioje registruota organizacija, pavadinimas;
 
--  **Savivaldybė:** iš sąrašo pasirenkamas savivaldybės, kuriai priklauso organizacija, pilnas pavadinimas;
+- **Savivaldybė:** iš sąrašo pasirenkamas savivaldybės, kuriai priklauso organizacija, pilnas pavadinimas;
 
--  **Ministrų valdymo sritis:** ministerija, su kuria susijusi organizacija.
+- **Ministrų valdymo sritis:** ministerija, su kuria susijusi organizacija.
 
 Spauskite **[**\ |image35|\ **]** lauko dešinėje pusėje ir išplėsite sąrašą.
-
 
 ====
 
@@ -409,7 +431,6 @@ Skiltyje **„2. Logotipas“** galite įkelti naują arba pakeisti įkeltą org
 | |image36|
 | *25 pav. Rekvizitų redagavimo langas*
 
-====
 
 Darbas su poreikiais (Koordinatoriai)
 =====================================
@@ -418,7 +439,6 @@ Darbas su poreikiais (Koordinatoriai)
 
 *Portalo naudotojams pateikus arba vyr. koordinatoriui priskyrus poreikį Jūsų organizacijai, gausite pranešimą apie naują poreikį į Jūsų paskyrai užregistruotą el. paštą.*
 
-====
 
 Poreikių sąrašo peržiūra
 ------------------------
@@ -456,7 +476,6 @@ Bendrame organizacijai pateiktų duomenų atvėrimo poreikių sąraše – pagri
 
 *Įsijungus puslapį, sąrašas pateikiamas automatiškai surikiuotas pagal sukūrimo datą, pateikiant naujausios datos poreikius viršuje.*
 
-====
 
 Atvėrimo poreikio peržiūra
 --------------------------
@@ -555,7 +574,6 @@ Atvėrimo poreikio peržiūra
 
 - **Komentaras:** Komentaras, kuris gali būti paliekamas atsakant į poreikį.
 
-====
 
 Atsakymas į pateiktą atvėrimo poreikį
 -------------------------------------
@@ -584,7 +602,6 @@ Spauskite mygtuką **[Saugoti]**, norėdami išsaugoti atsakymą: atsakymas
 
 Poreikio patvirtinimo būsena po atsakymo gali būti pakeista pagal poreikį.
 
-====
 
 Darbas su duomenų rinkiniais
 ============================
@@ -619,7 +636,6 @@ Duomenys į Portalą keliami dviem būdais:
 
 1. Jei pakeitimų atsisakote, spauskite **[Grįžti į sąrašą]**.
 
-====
 
 Duomenų rinkinių sąrašo peržiūra
 --------------------------------
@@ -689,7 +705,6 @@ Duomenų rinkinių sąrašo peržiūra
 
 1. Pasirinkite stulpelį ir pelyte jį nutempkite iki reikiamos pozicijos.
 
-====
 
 Duomenų šablono atsisiuntimas
 -----------------------------
@@ -719,7 +734,6 @@ Duomenų rinkinio importavimas
 
 3. Įkelkite failą iš kompiuterio sekdami įkėlimo lango nuorodas.
 
-====
 
 Naujo duomenų rinkinio sukūrimas
 ---------------------------------
@@ -764,15 +778,13 @@ Inventorinimo duomenys
 
 4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite **[Saugoti]**.
 
-| |34pav| 
+| |34pav|
 | *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
 
 *Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos sekančios kortelės.*
 
 5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
 
-
-====
 
 
 Struktūra
@@ -821,8 +833,6 @@ Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 | |image50|
 | *38 pav. „Šalinti failą“ patvirtinimo pranešimas*
 
-
-====
 
 
 Prioritetai
@@ -926,7 +936,6 @@ Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui, remianti
 
 7. Tęskite kitų kortelių suvedimą.
 
-====
 
 Finansiniai duomenys
 ====================
@@ -954,7 +963,6 @@ Finansiniai duomenys
 
 4. Jei norite, išsaugokite pakeitimus ir tęskite kitų kortelių suvedimą.
 
-====
 
 Metaduomenų įvedimas
 ====================
@@ -1168,7 +1176,6 @@ Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių informa
 
 - **Pastabos:** pastabos tekstas.
 
-====
 
 Duomenų rinkinio istorijos peržiūra
 ===================================
@@ -1188,7 +1195,6 @@ Lange pateikti rinkinio istorijos duomenys, automatiškai kaupiami nuo duomenų 
 
 - **Komentaras:** koordinatoriaus paliktas komentaras redaguojant rinkinį (pvz., priežastys, kodėl tam tikri metaduomenų lango laukai palikti neužpildyti). Jei atliktas veiksmas nereikalavo paliekamo komentaro, laukas paliekamas tuščias.
 
-====
 
 Duomenų rinkinio pastabų peržiūra
 =================================
@@ -1223,7 +1229,6 @@ Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros 
 
 *Naujos pastabos pateikiamos, kai vyr. koordinatorius atmeta iš naujo nacionaliniam planui pateiktą organizacijos duomenų rinkinį.*
 
-====
 
 Darbas su IRS rinkiniais
 ========================
@@ -1268,7 +1273,6 @@ IRS rinkinių sąraše galima peržiūrėti tokią bendrą informaciją:
 
 *Sąrašas pildomas automatiškai, importuojant rinkinius iš atitinkamų portalų.*
 
-====
 
 Darbas su metiniais planais
 ===========================
@@ -1287,7 +1291,6 @@ Darbas su metiniais planais
 
 - *patvirtinimą organizacijos vardu, jei vyr. koordinatorius planą patvirtina.*
 
-====
 
 Metinio plano sudarymas
 -----------------------
@@ -1328,7 +1331,6 @@ Lange pateikiama pagrindinė atvėrimo planų informacija:
 | |image79|
 | Metinio plano metų pasirinkimo langas
 
-====
 
 Metinio plano formavimas ir pateikimas
 --------------------------------------
@@ -1371,7 +1373,6 @@ Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir reikalingas
 
 *Vyr. koordinatorius, atmesdamas planą, pateikia pastabas atitinkamiems į planą įtrauktiems duomenų rinkiniams, nurodydamas ką konkrečiai reikia redaguoti.*
 
-====
 
 Metinio plano išformavimas
 --------------------------
@@ -1403,7 +1404,6 @@ Metinio plano išformavimas
 
 Planas tebeliks matomas planų sąraše ir jį bus galima formuoti iš naujo įtraukiant rinkinius, tačiau jis bus tuščias, o jam buvę priskirti rinkiniai nebebus jam priskirti ir juos bus galima priskirti kitiems metiniams planams.
 
-====
 
 Plano patvirtinimas organizacijos vardu
 ---------------------------------------
@@ -1426,7 +1426,6 @@ Plano patvirtinimas organizacijos vardu
 | |image86|
 | *68 pav. Plano patvirtinimo organizacijos vardu langas*
 
-====
 
 Ataskaitų formavimas
 ====================
@@ -1465,7 +1464,6 @@ Ataskaitų kūrimas
 
    *Formuojant ataskaitą nurodyti kriterijai yra pateikiami lango viršuje.*
 
-====
 
 Paruoštų ataskaitų valdymas
 ---------------------------
@@ -1494,12 +1492,11 @@ Paruoštų ataskaitų valdymas
 
 - Pasirinktą stulpelį nutempkite iki reikiamos pozicijos.
 
-====
 
 Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“
 --------------------------------------------------------------------------
 
-| |image88|
+|image88|
 | *70 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ formavimo forma*
 
 Ataskaitos laukai ( \* – privalomi ):
@@ -1553,7 +1550,6 @@ Suformuotos ataskaitos lange pateikiami šie įtraukto duomenų rinkinio laukai:
 
 - **Būsena:** „Inventorintas“, „Suvesti duomenys“, „Užpildyti metaduomenys“, „Įvertintas finansavimas“, arba „Įvertinti prioritetai“.
 
-====
 
 
 \> **Atidaryti ataskaitos šablono keitimo langą:**
@@ -1588,8 +1584,6 @@ Lange pateikti stulpelių pavadinimai bei jų rodymo ataskaitoje būsena.
 
 *Šablono keitimo langas bus uždarytas ir reikšmės bus atstatytos į pradines.*
 
-
-====
 
 Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“
 ------------------------------------------------------------------------------------
@@ -1647,7 +1641,6 @@ Ataskaitos laukai (\* – privalomi):
 | |image97|
 | *75 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas*
 
-====
 
 Partnerių API
 =============
@@ -1669,9 +1662,6 @@ Partnerių API
 | |image98|
 | *76 pav. API aplinkos fragmentas*
 
-
-
-====
 
 Slaptažodžio keitimas
 =====================
@@ -1706,57 +1696,21 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 
 ====
 
-.. |image1| image:: /static/katalogas/okot/image1.png
-   :width: 5.54178in
-   :height: 3in
 .. |image2| image:: /static/katalogas/okot/image2.png
-   :width: 0.10417in
-   :height: 0.12222in
 .. |image3| image:: /static/katalogas/okot/image3.png
-   :width: 5.54178in
-   :height: 3in
-.. |image4| image:: /static/katalogas/okot/image4.png
-   :width: 5.13873in
-   :height: 1.8995in
 .. |image5| image:: /static/katalogas/okot/image5.png
-   :width: 1.60106in
-   :height: 1in
 .. |image6| image:: /static/katalogas/okot/image6.png
-   :width: 5in
-   :height: 2.0858in
 .. |image7| image:: /static/katalogas/okot/image7.png
-   :width: 4.99732in
-   :height: 0.94304in
 .. |image8| image:: /static/katalogas/okot/image8.png
-   :width: 1.19081in
-   :height: 1in
 .. |image9| image:: /static/katalogas/okot/image9.png
-   :width: 2.68784in
-   :height: 1.3in
 .. |image10| image:: /static/katalogas/okot/image10.png
-   :width: 1.58309in
-   :height: 1.2in
 .. |image11| image:: /static/katalogas/okot/image11.png
-   :width: 6.6875in
-   :height: 3.9375in
 .. |image12| image:: /static/katalogas/okot/image12.png
-   :width: 5in
-   :height: 1.79317in
 .. |image3| image:: /static/katalogas/okot/image3.png
-   :width: 5.54178in
-   :height: 3in
 .. |image13| image:: /static/katalogas/okot/image13.png
-   :width: 6in
-   :height: 3.40187in
 .. |image14| image:: /static/katalogas/okot/image14.png
-   :width: 6in
-   :height: 2.89505in
 .. |image15| image:: /static/katalogas/okot/image15.png
-   :width: 6in
-   :height: 2.59508in
 .. |image16| image:: /static/katalogas/okot/image16.png
-   :width: 150px
-   :height: 280px
 .. |image17| image:: /static/katalogas/okot/image17.png
    :width: 150px
    :height: 360px
@@ -1775,20 +1729,10 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 713px
    :height: 252px
 .. |image23| image:: /static/katalogas/okot/image24.png
-   :width: 6.69375in
-   :height: 0.94583in
 .. |image24| image:: /static/katalogas/okot/image25.png
-   :width: 0.14375in
-   :height: 0.14375in
 .. |image25| image:: /static/katalogas/okot/image25.png
-   :width: 0.14375in
-   :height: 0.14375in
 .. |image26| image:: /static/katalogas/okot/image25.png
-   :width: 0.14375in
-   :height: 0.14375in
 .. |image27| image:: /static/katalogas/okot/image25.png
-   :width: 0.14375in
-   :height: 0.14375in
 .. |image28| image:: /static/katalogas/okot/image25.png
    :width: 0.14375in
    :height: 0.14375in
@@ -1796,43 +1740,23 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 0.14583in
    :height: 0.14583in
 .. |image29| image:: /static/katalogas/okot/image26.png
-   :width: 6in
-   :height: 1.58792in
 .. |image30| image:: /static/katalogas/okot/image27.png
-   :width: 6in
-   :height: 1.58045in
 .. |image31| image:: /static/katalogas/okot/image28.png
    :height: 150px
    :width: 236px
 .. |image32| image:: /static/katalogas/okot/image29.png
 .. |image33| image:: /static/katalogas/okot/image30.png
 .. |image34| image:: /static/katalogas/okot/image31.png
-   :width: 2.83333in
-   :height: 5.94792in
 .. |image35| image:: /static/katalogas/okot/image32.png
-   :width: 0.17431in
-   :height: 0.13611in
 .. |image36| image:: /static/katalogas/okot/image33.png
    :width: 247
    :height: 207
 .. |image37| image:: /static/katalogas/okot/image34.png
-   :width: 6.69375in
-   :height: 0.65278in
 .. |image38| image:: /static/katalogas/okot/image35.png
-   :width: 6in
-   :height: 2.63551in
 .. |image39| image:: /static/katalogas/okot/image36.png
-   :width: 6in
-   :height: 2.92523in
 .. |image40| image:: /static/katalogas/okot/image37.png
-   :width: 6.29167in
-   :height: 1.02083in
 .. |struk| image:: /static/katalogas/okot/image38.png
-   :width: 6.6875in
-   :height: 1.03125in
 .. |poreikist| image:: /static/katalogas/okot/image39.png
-   :width: 4.21911in
-   :height: 1.7913in
 .. |poreik| image:: /static/katalogas/okot/image40.png
    :width: 4.84375in
    :height: 3.125in
@@ -1843,8 +1767,6 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 6in
    :height: 0.8389in
 .. |image43| image:: /static/katalogas/okot/image43.png
-   :width: 0.15627in
-   :height: 0.15in
 .. |image44| image:: /static/katalogas/okot/image44.png
    :width: 0.15in
    :height: 0.15in
@@ -1906,29 +1828,13 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 6in
    :height: 0.86026in
 .. |image71| image:: /static/katalogas/okot/image66.png
-   :width: 6.69375in
-   :height: 0.72431in
 .. |image72| image:: /static/katalogas/okot/image67.png
-   :width: 6in
-   :height: 0.97977in
 .. |image73| image:: /static/katalogas/okot/image68.png
-   :width: 6in
-   :height: 0.54528in
 .. |past01| image:: /static/katalogas/okot/image69.png
-   :width: 4.95049in
-   :height: 2.17358in
 .. |image75| image:: /static/katalogas/okot/image70.png
-   :width: 4.12376in
-   :height: 0.62422in
 .. |image76| image:: /static/katalogas/okot/image71.png
-   :width: 0.16752in
-   :height: 0.15in
 .. |image77| image:: /static/katalogas/okot/image72.png
-   :width: 4.03836in
-   :height: 1.1in
 .. |image78| image:: /static/katalogas/okot/image73.png
-   :width: 6in
-   :height: 0.89692in
 .. |image79| image:: /static/katalogas/okot/image74.png
    :width: 3.03333in
    :height: 1.25369in
@@ -1937,11 +1843,7 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :height: 198
 .. |image81| image:: /static/katalogas/okot/image76.png
 .. |image82| image:: /static/katalogas/okot/image77.png
-   :width: 5.65263in
-   :height: 2.44223in
 .. |image83| image:: /static/katalogas/okot/image78.png
-   :width: 5.47059in
-   :height: 2.76908in
 .. |image84| image:: /static/katalogas/okot/image79.png
    :width: 321
    :height: 99
@@ -1949,44 +1851,18 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
    :width: 577
    :height: 253
 .. |image86| image:: /static/katalogas/okot/image81.png
-   :width: 800px
-   :height: 102px
 .. |69pav| image:: /static/katalogas/okot/image82.png
-   :width: 430px
-   :height: 82px
 .. |image88| image:: /static/katalogas/okot/image83.png
-   :width: 2.92361in
-   :height: 3.16784in
 .. |image89| image:: /static/katalogas/okot/image84.png
-   :width: 6.30208in
-   :height: 0.90625in
 .. |image90| image:: /static/katalogas/okot/image85.png
-   :width: 2.82386in
-   :height: 2.18603in
 .. |image91| image:: /static/katalogas/okot/image86.png
-   :width: 0.16667in
-   :height: 0.14583in
 .. |image92| image:: /static/katalogas/okot/image87.png
-   :width: 0.14495in
-   :height: 0.15in
 .. |image93| image:: /static/katalogas/okot/image86.png
-   :width: 0.16667in
-   :height: 0.14583in
 .. |image94| image:: /static/katalogas/okot/image87.png
-   :width: 0.14495in
-   :height: 0.15in
 .. |image95| image:: /static/katalogas/okot/image88.png
-   :width: 3.85208in
-   :height: 2.00792in
 .. |image96| image:: /static/katalogas/okot/image89.png
-   :width: 6in
-   :height: 0.57944in
 .. |image97| image:: /static/katalogas/okot/image85.png
-   :width: 2.55952in
-   :height: 1.98694in
 .. |image98| image:: /static/katalogas/okot/image90.png
-   :width: 6.29514in
-   :height: 3.02041in
 .. |image99| image:: /static/katalogas/okot/image91.png
    :width: 0.10387in
    :height: 0.12in
