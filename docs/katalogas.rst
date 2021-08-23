@@ -1,3 +1,5 @@
+.. _katalogas:
+
 Katalogas
 #########
 
@@ -518,79 +520,89 @@ Atvėrimo poreikio peržiūra
 
 \> **Peržiūrėti poreikio teikėjo pateiktą struktūrą:**
 
-1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio ir atsidarytų papildomas meniu „Atvėrimo poreikis“, pasirinkite „\ **Pageidaujama duomenų struktūra**\ “:
+1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus
+   paspauskite ant pasirinkto poreikio ir atsidarytų papildomas meniu „Atvėrim
+   poreikis“, pasirinkite „\ **Pageidaujama duomenų struktūra**\ “:
 
-| |image40|
-| *28 pav. Pageidaujamos duomenų rinkinio struktūros fragmentas*
+   | |image40|
+   | *28 pav. Pageidaujamos duomenų rinkinio struktūros fragmentas*
 
-2. Pageidaujama duomenų struktūra aprašoma šiuose laukuose (*: privalomi laukai):
+2. Pageidaujama duomenų struktūra aprašoma šiuose laukuose
+   (\*: privalomi laukai):
 
-- **Duomenų pavadinimas \* :** Lauko, kuriame pateikiamas tam tikro tipo duomuo, pavadinimas;
+   - **Duomenų pavadinimas \* :** Lauko, kuriame pateikiamas tam tikro tipo
+     duomuo, pavadinimas;
 
-- **Duomenų pavadinimas standartiniame žodyne:** duomens pavadinimas, atitinkantis lietuvių kalbos taisykles.
+   - **Duomenų pavadinimas standartiniame žodyne:** duomens pavadinimas,
+     atitinkantis lietuvių kalbos taisykles.
 
-- **Duomenų tipas \* :** duomenų tipas, įrašomas anglų kalba.
+   - **Duomenų tipas \* :** duomenų tipas, įrašomas anglų kalba.
 
-- **Pastabos:** laisvai įvedamos pastabos apie duomenis.
+   - **Pastabos:** laisvai įvedamos pastabos apie duomenis.
 
 3. Duomenų teikėjas duomenų rinkinio struktūrą gali įkelti kaip Excel failą: atveju lango viršuje patiekiama nuoroda parsisiųsti failą.
 
-| |struk|
-| *29 pav. Reikiamos duomenų struktūros failo atsisiuntimo nuoroda poreikio lange*
+   | |struk|
+   | *29 pav. Reikiamos duomenų struktūros failo atsisiuntimo nuoroda poreikio lange*
 
-*SVARBU: pakeisti pageidaujamą duomenų struktūrą gali tik poreikio teikėjas.*
-
-====
+   *SVARBU: pakeisti pageidaujamą duomenų struktūrą gali tik poreikio teikėjas.*
 
 
 \> **Peržiūrėti atvėrimo poreikio būsenų pasikeitimus:**
 
-1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
+1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus
+   paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
    „Atvėrimo poreikis“, kur pasirinkite „\ **Būsenų istorija**\ “.
 
-| |poreikist|
-| *30 pav. Atvėrimo poreikio lango skiltis „Būsenų istorija“*
+  | |poreikist|
+  | *30 pav. Atvėrimo poreikio lango skiltis „Būsenų istorija“*
 
 2. Sąraše atvaizduojami duomenys:
 
-- **Sukurtas:** Data ir laikas, kada buvo atliktas veiksmas
+   - **Sukurtas:** Data ir laikas, kada buvo atliktas veiksmas
 
-- **Būsena:** Veiksmo, kuris buvo atliktas, pavadinimas. Galimos reikšmės
+   - **Būsena:** Veiksmo, kuris buvo atliktas, pavadinimas. Galimos reikšmės
 
-   -  „Sukurtas“
+     -  „Sukurtas“
+     -  „Redaguotas“
+     -  „Patvirtintas“
+     -  „Atmestas“.
 
-   -  „Redaguotas“
+   - **Autorius:** paskyros savininko, atlikusio veiksmus, vardas ir pavardė.
 
-   -  „Patvirtintas“
-
-   -  „Atmestas“.
-
-- **Autorius:** paskyros savininko, atlikusio veiksmus, vardas ir pavardė.
-
-- **Komentaras:** Komentaras, kuris gali būti paliekamas atsakant į poreikį.
+   - **Komentaras:** Komentaras, kuris gali būti paliekamas atsakant į poreikį.
 
 
 Atsakymas į pateiktą atvėrimo poreikį
 -------------------------------------
 
-1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu „Atvėrimo poreikis“, kur pasirinkite „\ **Organizacijos atsakymas**\ “.
+1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus
+   paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
+   „Atvėrimo poreikis“, kur pasirinkite „\ **Organizacijos atsakymas**\ “.
 
-| |poreik|
-| *31 pav. Atvėrimo poreikio lango skilties „Organizacijos atsakymas“ pavyzdys*
+   | |poreik|
+   | *31 pav. Atvėrimo poreikio lango skilties „Organizacijos atsakymas“ pavyzdys*
 
 2. Užpildykite atsakymo formos laukus:
 
-- Pasirinkite atsakymą pažymint vieną iš atsakymo laukų:
+   - Pasirinkite atsakymą pažymint vieną iš atsakymo laukų:
 
-   -  „Planuojamas atverti“, jei poreikis priimamas ir rinkinys planuojamas atverti.
+     - „Planuojamas atverti“, jei poreikis priimamas ir rinkinys planuojamas
+       atverti.
 
-   -  „Nenumatytas atverti“, jei tuo metu duomenų rinkinys nenumatytas atverti.
+     - „Nenumatytas atverti“, jei tuo metu duomenų rinkinys nenumatytas atverti.
 
-- Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“** įveskite numatytą rinkinio atvėrimo datą formatu „mm/dd/mmmm“ arba pasirinkę kalendoriuje, spausdami **[**\ |image41|\ **]** dešinėje.
+   - Jei rinkinys planuojamas atverti, lauke **„Planuojama atvėrimo data“**
+     įveskite numatytą rinkinio atvėrimo datą formatu „mm/dd/mmmm“ arba
+     pasirinkę kalendoriuje, spausdami **[**\ |image41|\ **]** dešinėje.
 
-- Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba atmetimo“** įrašykite komentarą dėl atsakymo. Ši informacija bus pateikta viešame portale bei matoma atvėrimo poreikių sąrašo lange.
+   - Tekstiniame lauke **„Komentaras dėl atvėrimo numatymo arba atmetimo“**
+     įrašykite komentarą dėl atsakymo. Ši informacija bus pateikta viešame
+     portale bei matoma atvėrimo poreikių sąrašo lange.
 
-- Tekstiniame lauke **„Galutinis organizacijos atsakymas“** įrašykite atsakymą dėl atvėrimo ir priežastį. Ši informacija bus pateikta poreikio teikėjui.
+   - Tekstiniame lauke **„Galutinis organizacijos atsakymas“** įrašykite
+     atsakymą dėl atvėrimo ir priežastį. Ši informacija bus pateikta poreikio
+     teikėjui.
 
 Spauskite mygtuką **[Saugoti]**, norėdami išsaugoti atsakymą: atsakymas
 į poreikį ir jo priežastis bus automatiškai nusiųsta poreikio teikėjui.
@@ -708,13 +720,13 @@ Duomenų šablono atsisiuntimas
 
 1. Pagrindiniame meniu spauskite **[Duomenų rinkiniai]**.
 
-2. Duomenų rinkinių lange spauskite mygtuką **[**\ `Atsisiųsti XLSX šabloną <https://staging.data.gov.lt/admin/VAADIN/dynamic/resource/4/345e087f-2108-44da-baad-58e0a99757a0/Excel_import_%C5%A1ablonas_v1.1.xlsx>`__\ **]**.
+2. Duomenų rinkinių lange spauskite mygtuką **[**\ `Atsisiųsti XLSX šabloną
+   <https://data.gov.lt/opening/learningmaterial/14>`__\ **]**.
 
 3. Į kompiuterį taip parsisiųsite Excel failą.
 
 4. Pagal gautą šabloną sudarykite (arba užpildykite gautą) duomenų failą, kurį galėsite įkelti į ADP.
 
-====
 
 Duomenų rinkinio importavimas
 -----------------------------
@@ -743,42 +755,52 @@ Inventorinimo duomenys
 
    *Pasirinkus duomenų rinkinį, atidaroma kortelė „1. Inventorinimo duomenys“.*
 
-| |image45|
-| *33 pav. Duomenų rinkinio inventorinimo duomenų langas.*
+   | |image45|
+   | *33 pav. Duomenų rinkinio inventorinimo duomenų langas.*
 
-3. Užpildykite kortelę (*: privalomi laukai):
+3. Užpildykite kortelę (\*: privalomi laukai):
 
-- **Pavadinimas*:** pilnas duomenų rinkinio pavadinimas lietuvių kalba;
+   - **Pavadinimas*:** pilnas duomenų rinkinio pavadinimas lietuvių kalba;
 
-	*Žymimas raudonai tol, kol užpildomas;*
+	 *Žymimas raudonai tol, kol užpildomas;*
 
-- **Aprašymas*:** duomenų rinkinio aprašymas lietuvių kalba;
+   - **Aprašymas*:** duomenų rinkinio aprašymas lietuvių kalba;
 
-	*Žymimas raudonai, kol neužpildomas;*
+	 *Žymimas raudonai, kol neužpildomas;*
 
-- **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio pavadinimas anglų kalba.;
+   - **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio
+     pavadinimas anglų kalba.;
 
-   *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
+     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą
+     paruoš automatiškai;*
 
-- **Aprašymas (anglų k.):** pilnas duomenų rinkinio aprašymas anglų kalba;
+   - **Aprašymas (anglų k.):** pilnas duomenų rinkinio aprašymas anglų kalba;
 
-   *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
+     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą
+     paruoš automatiškai;*
 
 
-*SVARBU:*
+   *SVARBU:*
 
-- skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
+   - skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis,
+     reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik
+     administracinėje aplinkoje;*
 
-- šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]** neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__\.
+   - šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]**
+     neprivalote: struktūros failus siūlome pateikiami skiltyje **„2.
+     Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas
+     <#_Duomenų_rinkinio_struktūros>`__\.
 
 4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite **[Saugoti]**.
 
-| |34pav|
-| *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
+   | |34pav|
+   | *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
 
-*Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos sekančios kortelės.*
+   * Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos
+     sekančios kortelės.*
 
-5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
+5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją
+   įvesti nuosekliai.
 
 
 
@@ -797,8 +819,8 @@ Struktūra
 
 1. Duomenų rinkinio lange spauskite lango meniu punktą **„2. Struktūra“**.
 
-| |image48|
-| *36 pav. Duomenų rinkinio struktūros langas*
+   | |image48|
+   | *36 pav. Duomenų rinkinio struktūros langas*
 
 Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 
@@ -1071,14 +1093,17 @@ Duomenų distribucijos tvarkymas
 | |image61|
 | *50 pav. Duomenų rinkinio duomenų distribucijos langas*
 
-*SVARBU: jeigu nėra sukurta aktualios duomenų struktūros, vartotojui nebus leidžiama įkelti duomenis ir bus rodomas atitinkamas pranešimo langas:*
+*SVARBU: jeigu nėra sukurta aktualios duomenų struktūros, vartotojui nebus
+leidžiama įkelti duomenis ir bus rodomas atitinkamas pranešimo langas:*
 
 | |image62|
 | *51 pav. Duomenų rinkinio duomenų distribucijos lango klaidos pranešimas*
 
-Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomenys, nurodant šią informaciją:
+Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomenys,
+nurodant šią informaciją:
 
-- **ID:** unikalus failo arba nuorodos ID sistemoje, sugeneruojamas automatiškai įkeliant;
+- **ID:** unikalus failo arba nuorodos ID sistemoje, sugeneruojamas
+  automatiškai įkeliant;
 
 - **Pavadinimas:** failo arba nuorodos pavadinimas sistemoje;
 
@@ -1086,15 +1111,19 @@ Lange pateiktas sąrašas įkeltų nuorodų ir failų, kuriuose pateikti duomeny
 
 - **Tipas:** nurodoma „FILE“, jei tai yra failas, arba „URL“, jei tai nuoroda;
 
-- **Dokumentas:** įkelto failo pilnas pavadinimas. *Jei tai nuoroda, laukas paliekamas tuščias*;
+- **Dokumentas:** įkelto failo pilnas pavadinimas. *Jei tai nuoroda, laukas
+  paliekamas tuščias*;
 
-- **Nuoroda:** įkelta pilna nuoroda (su pradžia http:// arba https://). *Jei tai failas, laukas paliekamas tuščias*;
+- **Nuoroda:** įkelta pilna nuoroda (su pradžia `http://` arba `https://`). *Jei
+  tai failas, laukas paliekamas tuščias*;
 
-- **Versija:** skaičiumi nurodoma, kelinta tai įkelta to failo arba nuorodos versija;
+- **Versija:** skaičiumi nurodoma, kelinta tai įkelta to failo arba nuorodos
+  versija;
 
 - **Įkelta:** data ir laikas, kada nuoroda arba failas buvo įkeltas;
 
-- **Atnaujinta:** data ir laikas, kada nuoroda arba failas buvo paskutinį kartą atnaujintas.
+- **Atnaujinta:** data ir laikas, kada nuoroda arba failas buvo paskutinį kartą
+  atnaujintas.
 
 3. Įkelkite naują distribuciją:
 
@@ -1694,6 +1723,7 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image1| image:: /static/katalogas/okot/image1.png
 .. |image2| image:: /static/katalogas/okot/image2.png
 .. |image3| image:: /static/katalogas/okot/image3.png
+.. |image4| image:: /static/katalogas/okot/image4.png
 .. |image5| image:: /static/katalogas/okot/image5.png
 .. |image6| image:: /static/katalogas/okot/image6.png
 .. |image7| image:: /static/katalogas/okot/image7.png
@@ -1702,7 +1732,6 @@ Slaptažodis privalo būti saugus. (Daugiau: `Sąvokos <#naudojami-terminai-ir-s
 .. |image10| image:: /static/katalogas/okot/image10.png
 .. |image11| image:: /static/katalogas/okot/image11.png
 .. |image12| image:: /static/katalogas/okot/image12.png
-.. |image3| image:: /static/katalogas/okot/image3.png
 .. |image13| image:: /static/katalogas/okot/image13.png
 .. |image14| image:: /static/katalogas/okot/image14.png
 .. |image15| image:: /static/katalogas/okot/image15.png

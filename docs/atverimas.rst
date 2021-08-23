@@ -2,8 +2,8 @@
 
 .. _atvėrimas:
 
-Duomenų atvėrimo procesas
-#########################
+Duomenų atvėrimas
+#################
 
 Labai apibendrintai, kiekviena įstaiga atverianti duomenis turi atlikti šiuos
 žingsnius:
@@ -262,6 +262,16 @@ iš jų būtų galima :ref:`automatiškai generuoti <šdsa-generavimas>` pirmin�
     |    |   |   |   |   | salis    | string  |       | ŠALIS      |         | 2     |        |     |       |             |
     +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
 
+.. note::
+
+    Siekiant padidinti duomenų struktūros aprašo lentelės skaitomumą, kai
+    kurie stulpelių pavadinimai yra sutrumpinti:
+
+    | **d** - `dataset` - duomenų rinkinio kodinis pavadinimas.
+    | **r** - `resource` - duomenų šaltinio kodinis pavadinimas.
+    | **b** - `base` - modelio bazės pavadinimas, naudojamas apjungiant arba skaidant lenteles.
+    | **m** - `model` - modelio kodinis pavadinimas.
+
 Tokia automatiškai generuota :term:`DSA` lentelė vadinama pirmine :term:`ŠDSA`
 lentele, kadangi ji yra generuota automatiškai ir neredaguota.
 
@@ -343,8 +353,8 @@ tuomet į atvirų duomenų portalą turi būti įkeliamas, ne :term:`ADSA`, o
 
 .. _duomenų-atvėrimas:
 
-Duomenų atvėrimas
-=================
+Duomenų publikavimas
+====================
 
 Kiekviena įstaiga renkasi vieną iš šių duomenų atvėrimo variantų:
 

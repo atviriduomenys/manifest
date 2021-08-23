@@ -14,7 +14,8 @@ Siūlome tokias priemones:
 
 :Katalogas:
     :ref:`Atvirų duomenų Katalogas <katalogas>` pasiekiamas adresu
-    `data.gov.lt`_. Katalogas skirtas metaduomenų valdymui.
+    `data.gov.lt`_. Kataloge, vienoje vietoje galima rasti informacija apie
+    atvertus duomenų rinkinius.
 
 :Saugykla:
     :ref:`Atvirų duomenų Saugykla <saugykla>` pasiekiama adresu
