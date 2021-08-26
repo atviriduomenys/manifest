@@ -16,6 +16,8 @@ Automatizuotoms priemonėms :term:`DSA` turi būti teikiamas CSV formatu laikant
 :rfc:`4180` taisyklių, failo koduotė turi būti UTF-8.
 
 
+.. _dsa-lentelės-struktūra:
+
 Lentelės struktūra
 ==================
 
@@ -98,6 +100,8 @@ nei vieno dimensijos stulpelio.
 
     .. _rdfs:Property: https://www.w3.org/TR/rdf-schema/#ch_property
 
+
+.. _metaduomenų-stulpeliai:
 
 Metaduomenys
 ------------

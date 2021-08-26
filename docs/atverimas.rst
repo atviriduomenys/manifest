@@ -8,16 +8,19 @@ Duomenų atvėrimas
 Labai apibendrintai, kiekviena įstaiga atverianti duomenis turi atlikti šiuos
 žingsnius:
 
+.. image:: /static/zingsniai.png
+
 1. Paskirti atvirų duomenų koordinatorių ir `užsiregistruoti portale`__.
 
    __ https://data.gov.lt/opening/learningmaterial/10
 
-2. Sudaryti savo valdomų :term:`duomenų rinkinių <duomenų rinkinys>` sąrašą
-   ir publikuoti jį :term:`atvirų duomenų portale <ADK>` (:ref:`preliminari
+2. Sudaryti :term:`duomenų rinkinių <duomenų rinkinys>` sąrašą
+   ir publikuoti jį :term:`portale <ADK>` (:ref:`preliminari
    inventorizacija <preliminari-inventorizacija>`).
 
-3. Parengti atveriamų :ref:`duomenų struktūros aprašus <dsa>` ir paskelbti
-   juos :term:`atvirų duomenų portale <ADK>` (:ref:`detali inventorizacija
+3. Savo iniciatyva arba atsižvelgiant į :ref:`paklausą <poreikio-deklaravimas>`,
+   parengti :ref:`duomenų struktūros aprašus <dsa>` ir paskelbti juos
+   :term:`portale <ADK>`, (:ref:`detali inventorizacija
    <detali-inventorizacija>`).
 
 4. :ref:`Atverti duomenis <duomenų-atvėrimas>` savarankiškai, su rangovo arba
@@ -28,6 +31,9 @@ Labai apibendrintai, kiekviena įstaiga atverianti duomenis turi atlikti šiuos
 įstaigoms užtenka pasidaryti tik pilną duomenų inventorizaciją, kas susiveda
 į dviejų lentelių užpildymą.
 
+Paklausa grįstas duomenų atvėrimas
+==================================
+
 Pirmiausia įstaiga :ref:`užsiregistruoja portale
 <koordinatoriaus-registracija>`, kad vieno `langelio principu`__ būtų galima
 kreiptis dėl duomenų pakartotinio naudojimo. Kad būtų aišku, kokie duomenys yra,
@@ -36,6 +42,9 @@ skelbia juos :term:`atvirų duomenų portale <ADK>`. Tai yra mažiausias privalo
 dalykas, kurį turi pasidaryti visos valstybinės įstaigos ir jų valdomos įmonės.
 
 __ https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94745/asr#part_a44804491fd3481daaca8b3f668af7a0
+
+.. image:: /static/paklausa.png
+    :align: right
 
 Duomenų naudotojai, vieno langelio principu ieško jiems reikiamų duomenų. Jei
 pageidaujamų duomenų neranda, :ref:`registruoja paklausimą dėl naujo duomenų
@@ -128,6 +137,9 @@ aprašų, prioritetą teikiant duomenų rinkiniams, kurie turi paklausą.
 Preliminari inventorizacija
 ---------------------------
 
+.. image:: static/rinkinys.png
+    :align: right
+
 Preliminarios inventorizacijos metu, įstaigos paskirtas koordinatorius
 apžvelgia įstaigos veiklos nuostatus, valdomas informacines sistema,
 registrus, jau atvertus duomenis ir sudaro įstaigos valdomų :term:`duomenų
@@ -196,13 +208,13 @@ būtų greitesnis ir sklandesnis.
 
 Duomenų struktūros aprašo rengimas susideda iš tokių žingsnių:
 
-1. Išsiaiškinama, kas yra atsakingas už techninė duomenų šaltinio priežiūrą.
+1. Išsiaiškinama, kas yra atsakingas už techninę duomenų šaltinio priežiūrą.
 
-2. Paprašoma, kad už techninė priežiūrą atsakingas žmogus parengtų pirminį
+2. Paprašoma, kad už techninę priežiūrą atsakingas žmogus parengtų pirminį
    duomenų struktūros aprašo variantą.
 
 3. Kartu su duomenų šaltinio administratoriais ir konkretaus duomenų rinkinio
-   srities ekspertais papildomas pirminis aprašas, nurodant kuriuos duomenis
+   turinio ekspertais papildomas pirminis aprašas, nurodant kuriuos duomenis
    galima atverti, sužymimi asmens duomenys, nurodoma kurie asmens duomenys
    turi būti nuasmeninami, nurodomas duomenų brandos lygis.
 
@@ -211,17 +223,8 @@ Jei pirminio duomenų struktūros aprašo varianto sugeneruoti iš duomenų
 tuomet duomenų struktūros aprašas pildomas nuo nulio naudojant :download:`aprašo
 lentelės šabloną </static/sablonai/dsa.xlsx>`.
 
-Vykdant duomenų atvėrimą, pirmiausia rengiamas :term:`šaltinio duomenų
-struktūros aprašas (ŠDSA) <ŠDSA>`, kuriame yra pateikta visa duomenų šaltinio
-struktūros išklotinė, vėliau sužymint kur yra atviri duomenys. Vėliau
-:term:`ŠDSA` yra :ref:`konvertuojamas <šdsa-vertimas-į-adsa>` į :term:`ADSA`.
-:term:`ADSA` yra publikuojamas :term:`atvirų duomenų portale <ADK>`, o
-:term:`ŠDSA` naudojama automatizuotam duomenų atvėrimui ir publikavimui.
-
-:term:`DSA` galima aprašyti duomenis saugomus įvairiuose duomenų šaltiniuose,
-plačiau apie tai galima pasiskaityti skyriuje :ref:`duomenų-šaltiniai`, tačiau
-kaip pavyzdį galime panagrinėti išgalvotą duomenų šaltinį, kuriame yra viena
-lentelė:
+Duomenų struktūros aprašas yra lentelė susidedanti iš 15 stulpelių, kuriuose
+aprašoma duomenų struktūra. Tarkime, turint tokius duomenis:
 
 ====  ========  =======  ===============
 ŠALIS
@@ -233,75 +236,9 @@ ID    KODAS     ŽEMYNAS  ŠALIS
 3     ee        eu       Estija
 ====  ========  =======  ===============
 
-Šaltinio duomenų struktūros aprašas (ŠDSA) nėra skirtas viešinimui, aprašantis
-vidinių duomenų bazių ar kitų vidinių šaltinių duomenų struktūras. ŠDSA leidžia
-geriau suprasti turimus duomenis ir pažymėti, kurie duomenys gali būti atverti,
-pakartotinai panaudoti ar skirti tik vidiniam naudojimui.
+Duomenų struktūra aukšiau pateiktiems duomenims atrodys taip:
 
-Dažniausiai duomenų bazių valdymo sistemos jau turi pakankamai metaduomenų, kad
-iš jų būtų galima :ref:`automatiškai generuoti <šdsa-generavimas>` pirminį
-:term:`ŠDSA` lentelės variantą, kuris šiuo atveju atrodys taip:
-
-.. table:: Pirminis šaltinio duomenų struktūros aprašas (:term:`ŠDSA`)
-
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    | id | d | r | b | m | property | type    | ref   | source     | prepare | level | access | uri | title | description |
-    +====+===+===+===+===+==========+=========+=======+============+=========+=======+========+=====+=======+=============+
-    |    | datasets/gov/example     |         |       |            |         |       |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   | salys                | sql     |       | \sqlite:// |         |       |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   |   |   | Salis        |         | id    | ŠALIS      |         |       |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   |   |   |   | id       | integer |       | ID         |         | 4     |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   |   |   |   | kodas    | string  |       | KODAS      |         | 2     |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   |   |   |   | zemynas  | string  |       | ŽEMYNAS    |         | 2     |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-    |    |   |   |   |   | salis    | string  |       | ŠALIS      |         | 2     |        |     |       |             |
-    +----+---+---+---+---+----------+---------+-------+------------+---------+-------+--------+-----+-------+-------------+
-
-.. note::
-
-    Siekiant padidinti duomenų struktūros aprašo lentelės skaitomumą, kai
-    kurie stulpelių pavadinimai yra sutrumpinti:
-
-    | **d** - `dataset` - duomenų rinkinio kodinis pavadinimas.
-    | **r** - `resource` - duomenų šaltinio kodinis pavadinimas.
-    | **b** - `base` - modelio bazės pavadinimas, naudojamas apjungiant arba skaidant lenteles.
-    | **m** - `model` - modelio kodinis pavadinimas.
-
-Tokia automatiškai generuota :term:`DSA` lentelė vadinama pirmine :term:`ŠDSA`
-lentele, kadangi ji yra generuota automatiškai ir neredaguota.
-
-Keičiantis pirminio duomenų šaltinio struktūrai :term:`ŠDSA` galima automatiškai
-atnaujinti, papildant naujai atsiradusiais duomenų laukais.
-
-Deja, automatinėmis priemonėmis galima nuspėti tik dalį metaduomenų reikšmių.
-Tai kas neįveikiama automatinėms priemonėms, pildoma rankiniu būdu:
-
-- Suteikti :ref:`duomenų rinkinio <dataset>` struktūrai :ref:`kodinį
-  pavadinimą <kodiniai-pavadinimai>`, kurio pagrindu duomenys bus publikuojami
-  per :term:`API`.
-
-- Užpildyti :data:`access` stulpelį, nurodant duomenų :ref:`prieigos lygį
-  <access>`.
-
-- Užpildyti :data:`prepare` stulpelį, jei duomenų lentelės atveriamos ne
-  pilna apimtimi ir reikia jas :ref:`filtruoti <duomenų-atranka>`.
-
-- :ref:`Sužymėti <pii>` duomenų laukus, kuriuose yra pateikiami asmenį
-  identifikuojantys duomenys ir pažymėti duomenų laukus, kuriuos reikia
-  :ref:`nuasmeninti <nuasmeninimas>`.
-
-- :data:`access` stulpelyje, duomenų laukams priskirti :ref:`brandos lygio
-  <level>` reikšmę.
-
-Baigus aukščiau išvardintus lentelės papildymo darbus, :term:`ŠDSA` lentelė
-turėtu atrodyti taip:
-
-.. table:: Darbinis šaltinio duomenų struktūros aprašas (:term:`ŠDSA`)
+.. table:: Duomenų struktūros aprašas
 
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
     | id | d | r | b | m | property   | type    | ref   | source     | prepare        | level | access  | uri | title | description |
@@ -321,30 +258,54 @@ turėtu atrodyti taip:
     |    |   |   |   |   | name       | string  |       | SALIS      |                | 2     | open    |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
 
+.. note::
+
+    Siekiant padidinti duomenų struktūros aprašo lentelės skaitomumą, kai
+    kurie stulpelių pavadinimai yra sutrumpinti:
+
+    | **d** - dataset - duomenų rinkinio kodinis pavadinimas.
+    | **r** - resource - duomenų šaltinio kodinis pavadinimas.
+    | **b** - base - modelio bazės kodinis pavadinimas.
+    | **m** - model - modelio kodinis pavadinimas.
+
+Duomenų struktūros aprašo lentelė susideda iš :ref:`5 dimensijų
+<dimensijos-stulpeliai>` (dataset, resource, base, model, property) ir :ref:`9
+metaduomenų stulpelių <metaduomenų-stulpeliai>`, kurių prasmė priklauso nuo
+vienos iš 5 dimensijų.
+
+Plačiau apie tai, ką reiškia kiekvienas stulpelis galite skaityti skyriuje
+:ref:`dsa-lentelės-struktūra`.
+
+Jei duomenų šaltinio :ref:`brandos lygis <level>` yra pakankamai aukštas, tuomet
+duomenų struktūros aprašo lentelę galima generuoti automatiškai iš šaltinio.
+Tačiau, jei duomenų šaltinio brandos lygis yra žemas, tuomet duomenų struktūros
+aprašą gali tekti rašyti patiems, nuo nulio (:download:`aprašo lentelės šablonas
+</static/sablonai/dsa.xlsx>`.
+
+Dažniausiai, pildant duomenų struktūros aprašo lentelę reikia atlikti tokius
+pakeitimus:
+
+- Suteikti :ref:`duomenų rinkinio <dataset>` struktūrai :ref:`kodinį
+  pavadinimą <kodiniai-pavadinimai>`, kurio pagrindu duomenys bus publikuojami
+  per :term:`API`.
+
+- Užpildyti :data:`access` stulpelį, nurodant duomenų :ref:`prieigos lygį
+  <access>`.
+
+- Užpildyti :data:`prepare` stulpelį, jei duomenų lentelės atveriamos ne
+  pilna apimtimi ir reikia jas :ref:`filtruoti <duomenų-atranka>`.
+
+- :ref:`Sužymėti <pii>` duomenų laukus, kuriuose yra pateikiami asmenį
+  identifikuojantys duomenys ir pažymėti duomenų laukus, kuriuos reikia
+  :ref:`nuasmeninti <nuasmeninimas>`.
+
+- :data:`access` stulpelyje, duomenų laukams priskirti :ref:`brandos lygio
+  <level>` reikšmę.
+
 Galiausiai, toks duomenų struktūros aprašas gali būti naudojamas
 :ref:`automatizuotam duomenų atvėrimui ir publikavimui
 <automatinis-atvėrimas>` arba naudojamas kaip sutarties priedas, jei įstaiga
 duomenis atveria su rangovo ar Vyriausybės paskirtos įstaigos pagalba.
-
-Į :term:`atvirų duomenų portalą <ADK>` pateikiamas :term:`ADSA` variantas, kuris
-:ref:`konvertuojamas iš ŠDSA automatinėmis priemonėmis <šdsa-vertimas-į-adsa>`.
-:term:`ADSA`, kurį reikia įkelti į portalą atrodys taip:
-
-.. table:: Planuojamų atverti duomenų struktūros aprašas (:term:`ADSA`)
-
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
-    | id | d | r | b | m | property   | type    | ref   | source | prepare | level | access  | uri | title | description |
-    +====+===+===+===+===+============+=========+=======+========+=========+=======+=========+=====+=======+=============+
-    |    | datasets/example/countries |         |       |        |         |       |         |     |       |             |
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
-    |    |   | salys                  |         |       |        |         |       |         |     |       |             |
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
-    |    |   |   |   | Country        |         |       |        |         |       |         |     |       |             |
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
-    |    |   |   |   |   | code       | string  |       |        |         | 2     | open    |     |       |             |
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
-    |    |   |   |   |   | name       | string  |       |        |         | 2     | open    |     |       |             |
-    +----+---+---+---+---+------------+---------+-------+--------+---------+-------+---------+-----+-------+-------------+
 
 Jei įstaiga jau yra atvėrusi duomenis ir juos publikuoja savo infrastruktūroje,
 tuomet į atvirų duomenų portalą turi būti įkeliamas, ne :term:`ADSA`, o

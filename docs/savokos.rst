@@ -420,43 +420,10 @@ Sąvokos
     pirminis duomenų šaltinis
         Įstaigos ar kitos organizacijos pagrindinis duomenų šaltinis.
 
-    duomenų rinkinys
-        Vieno agento (organizacijos ar asmens) kaupiama ir prižiūrima, vienodą
-        konceptualią prasmę turinčių duomenų aibė.
-
-        Duomenų rinkinį charakterizuoja vienas ar daugiau :term:`duomenų modelių
-        <modelis>`.
-
-        Duomenų rinkiniai neskaidomi pagal vietos, laiko, detalumo, struktūros
-        ar kitus kriterijus. Tačiau toks skaidymas, gali būti atliekamas vieno
-        duomenų rinkinio ribose, pateikiant vieną ar daugiau rinkinio
-        distribucijų.
-
-        Plačiau apie duomenų rinkinius skaitykite skyriuje :ref:`dataset`.
-
-        Duomenų rinkinys atitinka `dcat:Dataset`_ apibrėžimą.
-
-        .. _dcat:Dataset: https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset
-
-    distribucija
-        Distribucija yra duomenų rinkinio fizinė reprezentacija. Vienas duomenų
-        rinkinys gali būti sudarytas iš kelių distribucijų, tuos pačius duomenis
-        pateikiant skirtingais formatais, suskaidant duomenis pagal laiko,
-        vietos ar kitus kriterijus, tuos pačius duomenis pateikiant skirtingu
-        detalumu arba pateikiant agreguotus duomenis įvairiais pjūviais.
-
-        Distribucija atitinka `dcat:Distribution`_ apibrėžimą:
-
-        .. _dcat:Distribution: https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution
-
     DCAT
         Duomenų katalogo žodynas (angl. `Data Catalog Vocabulary`_).
 
         .. _Data Catalog Vocabulary: https://www.w3.org/TR/vocab-dcat-2/
-
-    bazė
-        Bazė arba loginė klasė yra modelių grupė turinčių bendras savybes ir
-        vienodą semantinę prasmę.
 
     dimensija
         Dimensija yra metaduomenų, aprašomų DSA lentelėje, grupė. DSA lentelėje
@@ -472,12 +439,94 @@ Sąvokos
 
         Plačiau apie dimensijas: :ref:`dimensijos`.
 
+    duomenų rinkinys
+        Duomenų rinkinys apibrėžia turimus arba pageidaujamus duomenis,
+        reikalingus konkrečios organizacijos, konkrečiai veiklai vykdyti.
+
+        Duomenų rinkinys gali būti registras, informacinės sistemos duomenų
+        bazė, interneto svetainės duomenų bazė, skaičiuoklės lentelė, dokumentų
+        katalogas arba duomenys, kurie dar nėra kaupiami, tačiau yra reikalingi
+        tam tikrai veiklai vykdyti.
+
+        Duomenų rinkinio fizinė reprezentacija, tai yra patys duomenys yra
+        vadinami :term:`distribucija`. Duomenų rinkinyje gali būti daugiau
+        nei viena distribucija, jei fiziškai duomenys yra suskaidyti
+        pagal vietos, laiko, detalumo, struktūros elementus, natūralios kalbos
+        ar kitus kriterijus.
+
+        Dažnai duomenų rinkinys painiojamas su distribucija. Duomenų rinkinys
+        apibrėžia tam tikrą grupę duomenų, kurie nebūtinai fiziškai egzistuoja,
+        tuo tarpu distribucija yra fiziniai duomenys įeinantys į duomenų
+        rinkinio sudėtį.
+
+        Duomenų rinkiniai neskaidomi pagal vietos, laiko, detalumo, struktūros
+        ar kitus kriterijus.
+
+        Plačiau apie tai, kaip duomenų rinkiniai aprašomi duomenų struktūros
+        apraše skaitykite skyriuje :ref:`dataset`.
+
+        Duomenų rinkinys atitinka `dcat:Dataset`_ apibrėžimą.
+
+        .. _dcat:Dataset: https://www.w3.org/TR/vocab-dcat-2/#Class:Dataset
+
+    distribucija
+        Distribucija yra duomenų rinkinio fizinė reprezentacija. Vienas duomenų
+        rinkinys gali būti sudarytas iš kelių distribucijų, tuos pačius duomenis
+        pateikiant skirtingais formatais, suskaidant duomenis pagal laiko,
+        vietos ar kitus kriterijus, tuos pačius duomenis pateikiant skirtingu
+        detalumu arba pateikiant agreguotus duomenis įvairiais pjūviais.
+
+        Duomenų struktūros aprašo kontekste, distribucija yra tas pats, kas
+        :ref:`resource <duomenų-šaltinis>`.
+
+        Distribucija atitinka `dcat:Distribution`_ apibrėžimą:
+
+        .. _dcat:Distribution: https://www.w3.org/TR/vocab-dcat-2/#Class:Distribution
+
+    bazė
+        Bazė arba loginė klasė yra modelių grupė turinčių bendras savybes ir
+        vienodą semantinę prasmę.
+
+        Dažnai skirtingų organizacijų veikloje naudojami duomenų rinkiniai turi
+        vienodą semantinę prasmę. Pavyzdžiui, daugelis organizacijų turi
+        naujienų duomenis. Norint visų organizacijų naujienų duomenis
+        aprašyti vieningai, galima pasitelkti vieną bazę, arba vieną duomenų
+        rinkinį, kurio struktūrą naudoja visi kiti rinkiniai. Tai bazė būtent
+        ir būtų struktūros šablonas pagal kurį būtų sudaromos visi kitų
+        analogiškų rinkinių struktūra.
+
+        Bazė yra tas pats, kas :term:`modelis` arba tiksliau modelio šablonas.
+
+        Duomenų struktūros aprašo kontekste api bazę plačiau skaitykite
+        skyriuje :ref:`base`.
+
     modelis
-        Duomenų modelis yra vienintelis ir galutinis informacijos šaltinis
-        apibrėžiantis duomenis. Modelis, kartu su modeliui priklausančių savybių
-        sąrašu apibrėžia kaip duomenys yra fiziškai saugomi ar publikuojami,
-        susiejant fizinę duomenų formą su abstrakčiomis ontologinėmis klasėmis
-        ir savybėmis.
+        Modelis yra gan plati sąvoka turinti daug prasmių, priklausomai nuo
+        konteksto. Šioje dokumentacijoje, modelis yra duomenų struktūros
+        aprašo dalis leidžianti aprašyti duomenis pateiktus įvairiais
+        formatais.
+
+        Tiksli modelio prasmė priklauso nuo duomenų šaltinio, kurio duomenys
+        yra aprašomi:
+
+        - CSV failo atveju, modelis yra CSV faile esanti lentelė,
+
+        - Excel failo atveju, modelis yra kiekviena lentelė (arba lapas) esanti
+          Excel faile,
+
+        - SQL duomenų bazių atveju, modelis yra viena duomenų bazės lentelė,
+
+        - JSON dokumento atveju, modelis yra kiekvienas masyvas esantis JSON
+          dokumente,
+
+        - XML atveju, modelis yra kiekvienas elementų masyvas esantis XML faile.
+
+        Duomenų rinkiniai aprašo konkretaus autoriaus duomenis, skirtingi
+        autoriai gali naudoti tuos pačius duomenis, todėl duomenys skirtinguose
+        rinkiniuose gali dubliuotis. Tuo tarpu modeliai aprašo duomenis pagal
+        jų semantinę prasmę, nepriklausomai nuo autoriaus, tai leidžia apjungti
+        skirtingų autorių naudojamus duomenis, pagal jų semantinę prasmę,
+        modelių pagalba.
 
         :term:`DSA` lentelėje atitinka :data:`model`. Duomenų modelį atitinkanti
         fizinė reprezentacija nurodoma :data:`source` stulpelyje. :data:`source`
