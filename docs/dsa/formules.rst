@@ -433,6 +433,23 @@ veiksmai, tačiau žemiau yra pateikti bendrosios paskirties veiksmai:
     ==========  ======  ========
 
 
+.. function:: datetime(str, format)
+
+    Parse datetime from str, using strftime_ format.
+
+    .. _strftime: https://strftime.org/
+
+.. function:: date(str, format)
+
+    Parse date from str, using strftime_ format.
+
+    .. _strftime: https://strftime.org/
+
+.. function:: date(datetime)
+
+    Return date from datetime.
+
+
 .. _failai:
 
 Failai

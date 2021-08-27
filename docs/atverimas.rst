@@ -196,6 +196,9 @@ paklausą.
 Detali inventorizacija
 ----------------------
 
+.. image:: static/aprasas.png
+    :align: right
+
 Turint sudarytą duomenų rinkinių sąrašą, kiekvienam rinkiniui reikia parengti
 duomenų struktūros aprašą ir jį publikuoti :term:`atvirų duomenų portale <ADK>`.
 
