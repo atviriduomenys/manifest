@@ -1,3 +1,5 @@
+.. default-role:: literal
+
 .. _duomenų-tipai:
 
 Duomenų tipai
@@ -65,9 +67,17 @@ Data ir laikas
 
     .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
 
+    Pagal `ISO 8601`_ standartą, data gali būti pateikta tokia forma::
+
+        YYYY-MM-DD[*HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]]]
+
+    Simbolis `*` reiškia, kad galima pateikti bet kokį vieną simbolį,
+    dažniausiai naudojamas tarpo simbolis, arba raidė `T`.
+
     :data:`property.ref` stulpelyje, nurodomas `datos ir laiko tikslumas`__
     sekundėmis. Tikslumą galima nurodyti laiko vienetais, pavyzdžiui `Y`,
-    `D`, `S`, arba `5Y`, `10D`, `30S`. Galimi vienetų variantai:
+    `D`, `S`, arba `5Y`, `10D`, `30S`. Visi duomenys turi atitikti vienodą
+    tikslumą, tikslumas negali varijuoti. Galimi vienetų variantai:
 
     =======  ================
     Reikšmė  Prasmė
@@ -89,7 +99,14 @@ Data ir laikas
 
 .. describe:: date
 
-    Tas pats kas `datetime` tik dienos tikslumu.
+    Tas pats kas `datetime` tik dienos tikslumu. Šio tipo reikšmės taip pat
+    turi atitikti `ISO 8601`_:
+
+        YYYY-MM-DD
+
+    Jei norima nurodyti datą žemesnio nei dienos tikslumo, tada vietoj mėnesio
+    ir dienos galima naudoti `01` ir :data:`property.ref` stulpelyje nurodyti
+    tikslumą, taip, kaip aprašyta prie :data:`datetime`.
 
 .. describe:: temporal
 
