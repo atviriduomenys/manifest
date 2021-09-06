@@ -11,11 +11,11 @@ duomenis ir atvertų duomenų naudotojams.
 
 Dokumentacija sudaryta iš šių esminių dalių:
 
-- Informacija duomenų teikėjams apie
-  :ref:`duomenų atvėrimo <atvėrimas>` ir atvertų duomenų
-  :ref:`brandos lygio kėlimo <brandos-lygio-kėlimas>` procesą.
+- Informacija **duomenų teikėjams** apie :ref:`duomenų atvėrimo <atvėrimas>`,
+  atvertų duomenų :ref:`brandos lygio kėlimo <brandos-lygio-kėlimas>` ir
+  :ref:`asmens duomenų tvarkymo <asmens-duomenys>` procesą.
 
-- Informacija duomenų naudotojams, apie tai, kaip :ref:`teikti pageidavimus
+- Informacija **duomenų naudotojams**, apie tai, kaip :ref:`teikti pageidavimus
   ir pastabas <poreikio-deklaravimas>` dėl duomenų ir kaip :ref:`gauti pačius
   duomenis <saugykla>`.
 

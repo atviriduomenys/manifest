@@ -2,7 +2,7 @@
 
 .. _atvėrimas:
 
-Duomenų atvėrimas
+Duomenų teikėjams
 #################
 
 Labai apibendrintai, kiekviena įstaiga atverianti duomenis turi atlikti šiuos
@@ -10,75 +10,77 @@ Labai apibendrintai, kiekviena įstaiga atverianti duomenis turi atlikti šiuos
 
 .. image:: /static/zingsniai.png
 
-1. Paskirti atvirų duomenų koordinatorių ir `užsiregistruoti portale`__.
+|auto| *žymi dalinai arba pilnai automatizuotą proceso žingsnį.*
+
+1. Paskirti atvirų duomenų koordinatorių ir `užsiregistruoti Portale`__.
 
    __ https://data.gov.lt/opening/learningmaterial/10
 
-2. Sudaryti :term:`duomenų rinkinių <duomenų rinkinys>` sąrašą
-   ir publikuoti jį :term:`portale <ADK>` (:ref:`preliminari
-   inventorizacija <preliminari-inventorizacija>`).
+2. Sudaryti :ref:`duomenų rinkinių sąrašą <preliminari-inventorizacija>`
+   ir publikuoti jį :term:`Portale <ADK>`.
 
-3. Savo iniciatyva arba atsižvelgiant į :ref:`paklausą <poreikio-deklaravimas>`,
-   parengti :ref:`duomenų struktūros aprašus <dsa>` ir paskelbti juos
-   :term:`portale <ADK>`, (:ref:`detali inventorizacija
-   <detali-inventorizacija>`).
+3. Parengti :ref:`duomenų struktūros aprašus <detali-inventorizacija>` ir
+   paskelbti juos :term:`Portale <ADK>`.
 
 4. :ref:`Atverti duomenis <duomenų-atvėrimas>` savarankiškai, su rangovo arba
-   Vyriausybės įgaliotos institucijos (Statistikos departamento) pagalba.
+   Vyriausybės įgaliotos institucijos pagalba.
 
-:ref:`Duomenų atvėrimo <spinta>` ir atvertų :ref:`duomenų publikavimo
-<saugykla>` techninis įgyvendinimas didele dalimi yra išspręstas, todėl
-įstaigoms užtenka pasidaryti tik pilną duomenų inventorizaciją, kas susiveda
-į dviejų lentelių užpildymą.
+Visas duomenų atvėrimo procesas duomenų teikėjams yra kiek įmanoma
+supaprastintas ir iš esmės susivedantis į duomenų rinkinių sąrašo ir struktūros
+aprašų parengimą. Visos kitos techninės duomenų nuskaitymo, transformavimo,
+atvėrimo ir publikavimo veiklos yra arba automatizuotos arba jas atlieka
+paskirtos atsakingos įstaigos.
+
+Duomenų teikėjams, atveriant duomenis pagalbą teikia šios įstaigos:
+
+Informacinės visuomenės plėtros komitetas (IVPK)
+    - Prižiūri visą šalies duomenų atvėrimo procesą ir konsultuoja duomenų
+      teikėjus visais klausimais susijusiais su duomenų atvėrimu.
+
+    - Prižiūri atvirų duomenų :term:`Katalogą <ADK>`, kuriame vienoje vietoje
+      skelbiami visi atverti ar planuojami atverti duomenys ir vieno langelio
+      principu priimami prašymai gauti duomenis iš duomenų naudotojų.
+
+    - Prižiūri atvirų :ref:`duomenų publikavimo platformą <saugykla>`, kurioje
+      duomenys publikuojami laikantis geriausių duomenų teikimo praktikų,
+      suteikiama galimybė duomenis publikuoti aukščiausiu brandos lygiu.
+
+    - Kuria ir palaiko :ref:`technines priemones <spinta>` leidžiančias duomenis
+      atverti automatizuotu būdu. Šios priemonės yra laisvai ir nemokamai
+      teikiamos visiems duomenų teikėjams atveriantiems duomenis.
+
+    - Vykdo :ref:`standartų, protokolų ir techninių dokumentacijų priežiūrą
+      <dsa>`, kad duomenų atvėrimo procese dalyvaujančios šalys ir naudojami
+      komponentai galėtų susišnekėti tarpusavyje.
+
+    - Rengia mokymus ir mokomąją medžiagą tiek atvirų duomenų teikėjams apie
+      duomenų atvėrimą, tiek naudotojams apie atvertų duomenų naudojimą.
+
+Vyriausybės įgaliota institucija (Statistikos departamentas)
+    - Teikia duomenų atvėrimo paslaugą, naudojant automatizuotas duomenų
+      atvėrimo priemones.
+
 
 Paklausa grįstas duomenų atvėrimas
 ==================================
 
-Pirmiausia įstaiga :ref:`užsiregistruoja portale
-<koordinatoriaus-registracija>`, kad vieno `langelio principu`__ būtų galima
-kreiptis dėl duomenų pakartotinio naudojimo. Kad būtų aišku, kokie duomenys yra,
-ir kas juos valdo, įstaigos sudaro savo valdomų duomenų rinkinių sąrašus ir
-skelbia juos :term:`atvirų duomenų portale <ADK>`. Tai yra mažiausias privalomas
-dalykas, kurį turi pasidaryti visos valstybinės įstaigos ir jų valdomos įmonės.
-
-__ https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94745/asr#part_a44804491fd3481daaca8b3f668af7a0
-
 .. image:: /static/paklausa.png
     :align: right
 
-Duomenų naudotojai, vieno langelio principu ieško jiems reikiamų duomenų. Jei
-pageidaujamų duomenų neranda, :ref:`registruoja paklausimą dėl naujo duomenų
-rinkinio<poreikio-deklaravimas>`. Jei paklausėjas nenurodė atsakingos įstaigos,
-tuomet :term:`IVPK` suranda atsakingą įstaigą ir priskiria jai paklausimą.
+Minėti keturi duomenų atvėrimo žingsniai atliekami ne iš karto, bet keliais
+etapais, vadovaujantis duomenų paklausa.
 
-Jei duomenų naudotojas ieškodamas randa duomenų rinkinį, kuris dar nėra
-atvertas, tuomet teikia :ref:`prašymą konkrečiam rinkiniui atverti
-<poreikio-deklaravimas>`. Įstaigos gavusios tokius paklausimus privalo nurodyti
-terminus, kada duomenų rinkinys bus atvertas ir pradeda atvėrimo darbus,
-pirmiausia paruošia duomenų struktūros aprašą, jį publikuoja portale ir
-galiausiai atveria pačius duomenis, kurie atitinka publikuota duomenų struktūros
-aprašą.
+Paklausa grįstas duomenų atvėrimas reiškia, kad duomenų tiekėjai iš pradžių
+parengia atvertinų duomenų rinkinių sąrašus (1), kad juos galėtų rasti duomenų
+naudotojai (2). Realus duomenų atvėrimo procesas pradedamas tuomet, kai duomenų
+naudotojai, rade jiems reikalingus duomenų rinkinius pateikia prašymą (3) juos
+gauti. Teikėjai gavę prašymus atverti duomenis, pradeda duomenų atvėrimo
+procesą parengdami duomenų struktūros aprašus (4), kurių pagrindu vykdomas
+duomenų atvėrimas (5). Galiausiai, atvėrus duomenis, naudotojai gauna tai, ko
+prašė (6).
 
-Po to, kai yra publikuojamas duomenų struktūros aprašas, duomenų naudotojai
-gali peržiūrėti, kas tiksliai planuojama atverti ir teikti pastabas, jei
-randa kokių nors trūkumų.
-
-Įstaigos duomenų struktūros aprašus rengia pirmiausia tiems rinkiniams, kurie
-turi paklausą, jei rinkiniais niekas nesidomi, tuomet aprašus rengia savo
-nuožiūra. Net jei duomenų rinkiniai yra nepaklausūs, rekomenduojama iš anksto
-parengti jų duomenų struktūros aprašus, kad atsiradus poreikiui, duomenų
-atvėrimo procesas būtų sklandesnis ir greitesnis.
-
-Kai jau duomenys yra atverti, įstaigos gali sulaukti klausimų apie tai kaip
-naudoti duomenis arba prašymus didinti atvertų duomenų brandos lygį.
-
-Visus pateiktus duomenų naudotojų prašymus prižiūri :term:`IVPK` ir
-užtikrina, kad įstaigos pateiktų atsakymus. Jei įstaigos neatsako į
-paklausimus, :term:`IVPK` susisiekia su įstaiga ir įsitikina ar ji gauna
-paklausimus, pasiteirauja dėl kokių priežasčių įstaiga nepateikia atsakymų.
-
-Toliau aptarsime kiekvieną žingsnį detaliau.
-
+Duomenų teikėjai, savo nuožiūra, įvertinę duomenų paklausos potencialą gali
+pradėti duomenų atvėrimą ir negavę prašymo.
 
 .. _koordinatoriaus-registracija:
 
@@ -120,106 +122,99 @@ Inventorizacija
 
 Duomenų inventorizacija susideda iš dviejų dalių:
 
-- Duomenų rinkinių sąrašo sudarymas (:ref:`preliminari inventorizacija
-  <preliminari-inventorizacija>`)
+- :ref:`Duomenų rinkinių sąrašo sudarymas <preliminari-inventorizacija>`
+  (preliminari inventorizacija),
 
-- Duomenų struktūros aprašo parengimas (:ref:`detali inventorizacija
-  <detali-inventorizacija>`)
+- :ref:`Duomenų struktūros aprašų parengimas <detali-inventorizacija>` (detali
+  inventorizacija).
 
-Pati sudėtingiausia dalis yra duomenų struktūros aprašo parengimas. Todėl
-rekomenduojama pirmiausia susidaryti rinkinių sąrašą ir jį publikuoti
-:term:`atvirų duomenų portale <ADK>`, o po to, pereiti prie duomenų struktūros
-aprašų, prioritetą teikiant duomenų rinkiniams, kurie turi paklausą.
+Duomenų struktūros aprašų parengimas yra pati sudėtingiausia dalis, todėl
+rekomenduojama pirmiausiai susidaryti rinkinių sąrašus, o po to esant realiam
+duomenų poreikiui, pereiti prie duomenų struktūros aprašų.
 
 
 .. _preliminari-inventorizacija:
 
-Preliminari inventorizacija
----------------------------
+Rinkinių sąrašas
+================
+
+Įstaigos paskirtas koordinatorius apžvelgia įstaigos veiklos nuostatus, valdomas
+informacines sistema, registrus, jau atvertus duomenis ir sudaro įstaigos
+valdomų :term:`duomenų rinkinių <duomenų rinkinys>` sąrašą.
+
+Šiame etape svarbiausiai gerai suprasti kas yra duomenų rinkinys ir
+distribucija.
 
 .. image:: static/rinkinys.png
     :align: right
 
-Preliminarios inventorizacijos metu, įstaigos paskirtas koordinatorius
-apžvelgia įstaigos veiklos nuostatus, valdomas informacines sistema,
-registrus, jau atvertus duomenis ir sudaro įstaigos valdomų :term:`duomenų
-rinkinių <duomenų rinkinys>` sąrašą.
+**Duomenų rinkinys** yra grupė duomenų reikalingų tam tikrai organizacijos
+veiklai vykdyti. Duomenų rinkinys apibrėžia duomenų autorystę ir veiklos pobūdį
+kurioje naudojami duomenys.
 
-Atkreipkite dėmesį, kad rinkinių sąrašas sudaromas ir publikuojamas atvirų
-duomenų portale dar prieš atveriant duomenis. Toks sąrašas padės atvirų duomenų
-naudotojams rasti duomenis ir pateikti prašymus jiems gauti. Pateikti
-prašymai siunčiami tiesiogiai įstaigos koordinatoriui ir padeda geriau
-suprasti duomenų atvėrimo prioritetus, suprasti kokie duomenų rinkiniai turi
-didžiausią paklausą.
+**Distribucija** yra fizinė duomenų rinkinio išraiška, pavyzdžiui duomenų bazė,
+skaičiuoklės lentelė, katalogas, kuriame laikomi dokumentai ir pan.
 
-Jei įstaiga jau yra atvėrusi duomenis ir juos publikuoja, tuomet, nuorodas į
-atvertus duomenis taip pat pateikia :term:`atvirų duomenų portale <ADK>`.
-Atvirų duomenų naudotojai gali pateikti prašymus didinti jau atvertų duomenų
-:ref:`brandos lygį <level>`.
+Kadangi organizacijų veikloms reikalingi duomenys dažniausiai saugomi tam
+tikroje vietoje, tai sudarant duomenų rinkinių sąrašą paprasčiausia apžvelgti
+resursus naudojamus duomenų saugojimui ir pagal tai įvardinti duomenų rinkinius.
+
+Atvirų duomenų portale, naujas duomenų rinkinys registruojamas užpildžius šią
+formą:
 
 .. image:: static/rinkinio-forma.png
     :target: https://data.gov.lt/admin/dataset/new
 
-Sudarant duomenų rinkinių sąrašus svarbiausia užtikrinti, kad duomenis būti
-paprasta rasti, todėl reikia pateikti tokią informaciją:
-
-- rinkinio pavadinimas
-- rinkinio aprašymas
-- kategorija
-- raktiniai žodžiai
-- kontaktinis asmuo
-
-Duomenų rinkinių sąrašus galima sudaryti :term:`atvirų duomenų portale <ADK>`
-arba galima parengti `rinkinių sąrašo lentelę`__ ir ją vėliau importuoti į
-:term:`portalą <ADK>`.
+Rekomenduotina rinkinių sąrašus sudaryti tiesiogiai :term:`atvirų duomenų
+portale <ADK>`, tačiau yra galimybė parengti `rinkinių sąrašo lentelę`__ ir ją
+vėliau importuoti į :term:`portalą <ADK>`.
 
 __ https://data.gov.lt/opening/learningmaterial/14
 
 Sudarant rinkinių sąrašus, reikėtų vadovautis principu, kad visi duomenys,
-kuriems nėra taikomi naudojimo apribojimai yra atviri.
-
-Todėl reikėtų peržiūrėti įstaigos veiklos nuostatus, valdomas informacines
-sistemas, registrus, ataskaitas ar kitus dokumentus.
-
-Praktiškai visose veiklos srityse dalyvauja vienokie ar kitokie duomenys. Net
-jei duomenys yra fiksuojami tekstiniuose dokumentuose atitinkančiuose tam
-tikrą šabloną, tokius duomenis reikėtų įtraukti į rinkinių sąrašą.
-
-Svarbu turėti, kiek įmanoma pilnesnį vaizdą apie įstaigų valdomus duomenis.
-Rinkinių sąrašų sudarymas nereiškia įsipareigojimą atverti visus rinkinių
-sąraše esančius duomenis. Duomenis būtina atverti tik tuo atveju, jei jie turi
-paklausą.
+kuriems nėra taikomi apribojimai yra atviri.
 
 
 .. _detali-inventorizacija:
 
-Detali inventorizacija
-----------------------
+Duomenų struktūros aprašas
+==========================
+
+Duomenų struktūros aprašas rengiamas tada, kai atsiranda prašymas atverti
+duomenis arba savo nuožiūra įvertinus duomenų paklausos potencialą.
 
 .. image:: static/aprasas.png
     :align: right
 
-Turint sudarytą duomenų rinkinių sąrašą, kiekvienam rinkiniui reikia parengti
-duomenų struktūros aprašą ir jį publikuoti :term:`atvirų duomenų portale <ADK>`.
+Duomenų struktūros apraše pateikiama duomenų struktūros išklotinė išvardinant
+visus duomenų laukus, kurie bus atverti.
 
-Duomenų struktūros aprašus reikia parengti tiems duomenų rinkiniams, kurie
-turi paklausą. Rinkiniams, kuriais niekas nesidomi, duomenų struktūros
-aprašai rengiami savo nuožiūra. Net jei rinkinys neturi paklausos,
-rekomenduojama įvertinus rinkinio paklausos potencialą, pasirengti duomenų
-struktūros aprašą, kad vėliau atsiradus paklausai, duomenų atvėrimo procesas
-būtų greitesnis ir sklandesnis.
+Duomenų struktūros apraše pateikiama pilna duomenų laukų išklotinė.
+
+Duomenų laukai yra skirstomi į modelius. **Modelio** ir **savybės** tiksli
+prasmė priklauso nuo aprašomo duomenų šaltinio:
+
+========  =======  =========
+Šaltinis  Modelis  Savybė
+========  =======  =========
+SQL       Lentelė  Stulpelis
+CSV       Lentelė  Stulpelis
+XLSX      Lentelė  Stulpelis
+JSON      Masyvas  Atributas
+XML       Masyvas  Atributas
+RDF       Klasė    Savybė
+========  =======  =========
+
+Duomenų struktūros apraše galima aprašyti įvairių duomenų šaltinių turinį
+vieningu sutartiniu būdu.
 
 Duomenų struktūros aprašo rengimas susideda iš tokių žingsnių:
 
-1. Išsiaiškinama, kas yra atsakingas už techninę duomenų šaltinio priežiūrą.
+1. Duomenų šaltinio administratorius pateikia šaltinio :ref:`duomenų struktūros
+   išklotinę <dsa>`.
 
-2. Paprašoma, kad už techninę priežiūrą atsakingas žmogus parengtų pirminį
-   duomenų struktūros aprašo variantą.
-
-3. Kartu su duomenų šaltinio administratoriais ir konkretaus duomenų rinkinio
-   turinio ekspertais papildomas pirminis aprašas, nurodant kuriuos duomenis
-   galima atverti, sužymimi asmens duomenys, nurodoma kurie asmens duomenys
-   turi būti nuasmeninami, nurodomas duomenų brandos lygis.
+2. Duomenų srities ekspertai su duomenų šaltinio administratoriaus pagalba
+   pateikia trūkstamus metaduomenis duomenų struktūros aprašo lentelėje.
 
 Jei pirminio duomenų struktūros aprašo varianto sugeneruoti iš duomenų
 šaltinio neįmanoma, pavyzdžiui, jei duomenys yra labai žemo brandos lygio,
@@ -276,17 +271,14 @@ Duomenų struktūros aprašo lentelė susideda iš :ref:`5 dimensijų
 metaduomenų stulpelių <metaduomenų-stulpeliai>`, kurių prasmė priklauso nuo
 vienos iš 5 dimensijų.
 
+.. image:: /static/dsa.png
+    :align: center
+
 Plačiau apie tai, ką reiškia kiekvienas stulpelis galite skaityti skyriuje
 :ref:`dsa-lentelės-struktūra`.
 
-Jei duomenų šaltinio :ref:`brandos lygis <level>` yra pakankamai aukštas, tuomet
-duomenų struktūros aprašo lentelę galima generuoti automatiškai iš šaltinio.
-Tačiau, jei duomenų šaltinio brandos lygis yra žemas, tuomet duomenų struktūros
-aprašą gali tekti rašyti patiems, nuo nulio (:download:`aprašo lentelės šablonas
-</static/sablonai/dsa.xlsx>`.
-
 Dažniausiai, pildant duomenų struktūros aprašo lentelę reikia atlikti tokius
-pakeitimus:
+papildymus:
 
 - Suteikti :ref:`duomenų rinkinio <dataset>` struktūrai :ref:`kodinį
   pavadinimą <kodiniai-pavadinimai>`, kurio pagrindu duomenys bus publikuojami
@@ -317,8 +309,8 @@ tuomet į atvirų duomenų portalą turi būti įkeliamas, ne :term:`ADSA`, o
 
 .. _duomenų-atvėrimas:
 
-Duomenų publikavimas
-====================
+Duomenų atvėrimas
+=================
 
 Kiekviena įstaiga renkasi vieną iš šių duomenų atvėrimo variantų:
 
@@ -388,3 +380,6 @@ Sistemą (VDVIS).
 Vadovaujantis duomenų struktūros apraše pateikta informacija ir naudojantis
 VDVIS funkcionalumu, atliks nuasmeninimą, kitas reikalingas transformacijas ir
 publikuos duomenis per :term:`atvirų duomenų saugyklą <ADS>`.
+
+
+.. |auto| image:: /static/icons/auto.png

@@ -2,8 +2,8 @@
 
 .. _poreikio-deklaravimas:
 
-Poreikio deklaravimas
-#####################
+Duomenų naudotojams
+###################
 
 :term:`ADK` svetainėje duomenų naudotojai `gali teikti pasiūlymus`__ dėl jiems
 reikalingų duomenų. Galima apytiksliai įvardinti pageidaujamo duomenų rinkinio
