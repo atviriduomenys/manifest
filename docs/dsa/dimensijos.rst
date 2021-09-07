@@ -474,11 +474,11 @@ Savybė
 
 .. data:: property.level
 
-    Nurodo duomenų lauko brandos lygį. Žiūrėti Brandos lygiai.
+    Nurodo duomenų lauko brandos lygį. Žiūrėti :ref:`level`.
 
 .. data:: property.access
 
-    Nurodo prieigos prie duomenų lygį. Žiūrėti skyrių Prieigos lygiai.
+    Nurodo prieigos prie duomenų lygį. Žiūrėti skyrių :ref:`access`.
 
 .. data:: property.uri
 

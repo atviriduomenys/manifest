@@ -41,7 +41,7 @@ Informacinės visuomenės plėtros komitetas (IVPK)
       skelbiami visi atverti ar planuojami atverti duomenys ir vieno langelio
       principu priimami prašymai gauti duomenis iš duomenų naudotojų.
 
-    - Prižiūri atvirų :ref:`duomenų publikavimo platformą <saugykla>`, kurioje
+    - Prižiūri atvirų :ref:`duomenų publikavimo Saugyklą <saugykla>`, kurioje
       duomenys publikuojami laikantis geriausių duomenų teikimo praktikų,
       suteikiama galimybė duomenis publikuoti aukščiausiu brandos lygiu.
 
@@ -67,8 +67,8 @@ Paklausa grįstas duomenų atvėrimas
 .. image:: /static/paklausa.png
     :align: right
 
-Minėti keturi duomenų atvėrimo žingsniai atliekami ne iš karto, bet keliais
-etapais, vadovaujantis duomenų paklausa.
+Paskelbus rinkinių sąrašus, kiti žingsniai daromi esant poreikiui atverti
+duomenis arba savo nuožiūra įvertinus duomenų paklausos potencialą.
 
 Paklausa grįstas duomenų atvėrimas reiškia, kad duomenų tiekėjai iš pradžių
 parengia atvertinų duomenų rinkinių sąrašus (1), kad juos galėtų rasti duomenų
@@ -92,6 +92,9 @@ atsakingą už duomenų atvėrimo koordinavimą. Šis žmogus bus atsakingas už
 įstaigos duomenų atvėrimo organizavimą, atsakys į duomenų naudotojų
 paklausimus pateiktus per atvirų duomenų portalą, išsiaiškins kokius duomenis
 įstaiga valdo ir kas atsakingas už jų priežiūrą.
+
+Koordinatorius darbui su atvirais duomenimis gali pasitelkti tvarkytojus,
+kurie būtų atsakingi už atskirų duomenų rinkinių tvarkymą.
 
 Atvirų duomenų koordinatorius neprivalo turėti techninių duomenų valdymo
 kompetencijų, tačiau tokių kompetencijų turėjimas būtų privalumas.
@@ -174,6 +177,12 @@ __ https://data.gov.lt/opening/learningmaterial/14
 Sudarant rinkinių sąrašus, reikėtų vadovautis principu, kad visi duomenys,
 kuriems nėra taikomi apribojimai yra atviri.
 
+Inventorizacijos metu, pateikiami dalis tik metaduomenų, kurie yra reikalingi,
+kad duomenų rinkinius būtų galima surasti atvirų duomenų portale. Kita
+metaduomenų dalis susijusi su atvertų duomenų periodiškumu, licencija ir
+naudojimo sąlygomis pateikiama po to, kai yra priimtas sprendimas atverti
+duomenis.
+
 
 .. _detali-inventorizacija:
 
@@ -211,7 +220,7 @@ vieningu sutartiniu būdu.
 Duomenų struktūros aprašo rengimas susideda iš tokių žingsnių:
 
 1. Duomenų šaltinio administratorius pateikia šaltinio :ref:`duomenų struktūros
-   išklotinę <dsa>`.
+   išklotinę (ŠDSA) <dsa>`.
 
 2. Duomenų srities ekspertai su duomenų šaltinio administratoriaus pagalba
    pateikia trūkstamus metaduomenis duomenų struktūros aprašo lentelėje.
@@ -245,7 +254,7 @@ Duomenų struktūra aukšiau pateiktiems duomenims atrodys taip:
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
     |    |   | salys                  | sql     |       | \sqlite:// |                |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
-    |    |   |   |   | Country        |         | id    | SALIS      | continent="eu" |       |         |     |       |             |
+    |    |   |   |   | Country        |         | id    | ŠALIS      | continent="eu" |       |         |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
     |    |   |   |   |   | id         | integer |       | ID         |                | 4     | private |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
@@ -253,7 +262,7 @@ Duomenų struktūra aukšiau pateiktiems duomenims atrodys taip:
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
     |    |   |   |   |   | continent  | string  |       | ŽEMYNAS    |                | 2     | private |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
-    |    |   |   |   |   | name       | string  |       | SALIS      |                | 2     | open    |     |       |             |
+    |    |   |   |   |   | name       | string  |       | ŠALIS      |                | 2     | open    |     |       |             |
     +----+---+---+---+---+------------+---------+-------+------------+----------------+-------+---------+-----+-------+-------------+
 
 .. note::
@@ -277,25 +286,30 @@ vienos iš 5 dimensijų.
 Plačiau apie tai, ką reiškia kiekvienas stulpelis galite skaityti skyriuje
 :ref:`dsa-lentelės-struktūra`.
 
-Dažniausiai, pildant duomenų struktūros aprašo lentelę reikia atlikti tokius
-papildymus:
+:term:`ŠDSA` lentelėje reikia pateikti tokius duomenis:
 
-- Suteikti :ref:`duomenų rinkinio <dataset>` struktūrai :ref:`kodinį
-  pavadinimą <kodiniai-pavadinimai>`, kurio pagrindu duomenys bus publikuojami
-  per :term:`API`.
+.. image:: /static/dsa-pildymas.png
+    :align: center
 
-- Užpildyti :data:`access` stulpelį, nurodant duomenų :ref:`prieigos lygį
-  <access>`.
+1. :ref:`Duomenų rinkiniui <dataset>` suteikti :ref:`kodinį pavadinimą
+   <kodiniai-pavadinimai>`.
 
-- Užpildyti :data:`prepare` stulpelį, jei duomenų lentelės atveriamos ne
-  pilna apimtimi ir reikia jas :ref:`filtruoti <duomenų-atranka>`.
+2. Pateikti duomenų šaltinio pavadinimą, :ref:`tipą ir adresą <resource>`.
 
-- :ref:`Sužymėti <pii>` duomenų laukus, kuriuose yra pateikiami asmenį
-  identifikuojantys duomenys ir pažymėti duomenų laukus, kuriuos reikia
-  :ref:`nuasmeninti <nuasmeninimas>`.
+3. Užpildyti :data:`uri` stulpelį, nurodant kuriose vietose yra :ref:`asmens
+   duomenys <pii>`.
 
-- :data:`access` stulpelyje, duomenų laukams priskirti :ref:`brandos lygio
-  <level>` reikšmę.
+4. Užpildyti :data:`property.access`, nurodant duomenų :ref:`prieigos lygį
+   <access>`.
+
+5. Užpildyti :data:`model.prepare`, jei duomenys atveriami ne pilna apimtimi ir
+   reikia juos :ref:`filtruoti <duomenų-atranka>`.
+
+6. :data:`property.level` stulpelyje nurodyti esamą duomenų laukų :ref:`brandos
+   lygį <level>`.
+
+7. Užpildyti :data:`title` ir :data:`description` stulpelius pateikiant
+   :data:`model` ir :data:`property` pavadinimus ir aprašymus.
 
 Galiausiai, toks duomenų struktūros aprašas gali būti naudojamas
 :ref:`automatizuotam duomenų atvėrimui ir publikavimui
