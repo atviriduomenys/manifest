@@ -1,7 +1,5 @@
 .. _katalogas:
 
-2021-09-06 AU
-
 Katalogas
 #########
 
@@ -16,22 +14,16 @@ Naudojami terminai ir sąvokos
 -----------------------------
 
 „Laukas“
-    Kabutėmis „“ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko
-    pavadinimas, matomas aprašomame lange.
+    Kabutėmis „“ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko pavadinimas, matomas aprašomame lange.
 
 „Tekstinis laukas“
-    Vieta, kur sistemos naudotojas gali suvesti duomenis arba duomenys yra
-    vaizduojami.
+    Vieta, kur sistemos naudotojas gali suvesti duomenis arba duomenys yra vaizduojami.
 
 [Mygtukas]
-    Dialogo lango arba lango mygtukai (taip pat vadinami komandiniais mygtukais)
-    tekste yra žymimi kvadratiniais skliausteliais []. Tarp skliaustelių yra
-    rašomas mygtuko pavadinimas. Sistemoje atvaizduoti kaip keturkampiai
-    mygtukai ir aktyvios nuorodos (pabrauktas tekstas).
+    Dialogo lango arba lango mygtukai (taip pat vadinami komandiniais mygtukais) tekste yra žymimi kvadratiniais skliausteliais []. Tarp skliaustelių yra rašomas mygtuko pavadinimas. Sistemoje atvaizduoti kaip keturkampiai mygtukai ir aktyvios nuorodos (pabrauktas tekstas).
 
 API (angl. Application Programming Interface)
-    Programos valdymo sąsaja įgalina automatizuotai atlikti duomenų rinkinių
-    kėlimą ir valdymą naudojant organizacijos programinę įrangą.
+    Programos valdymo sąsaja įgalina automatizuotai atlikti duomenų rinkinių kėlimą ir valdymą naudojant organizacijos programinę įrangą.
 
 Lango mygtukas
     Mygtukas, kurio veiksmas įtakoja visus lango duomenis.
@@ -43,31 +35,22 @@ IRS
     Rinkiniai iš Informacinių Rinkinių Sistemos (IRS)
 
 „Meniu punktas”
-    Kabutėmis „” yra žymimas meniu punktas. Tarp kabučių rašomas meniu punkto
-    pavadinimas.
+    Kabutėmis „” yra žymimas meniu punktas. Tarp kabučių rašomas meniu punkto pavadinimas.
 
 Žymimasis langelis
-    Kvadrato formos figūra, kurios dešinėje rašomas tekstas. Aprašymas atspindi
-    galimą veiksmą. Figūra parodo, ar yra pasirinkta nurodyta reikšmė, ar ne.
-    Naudotojas gali keisti pasirinkimo langelio reikšmę pele pažymint arba
-    panaikinant požymį langelyje.
+    Kvadrato formos figūra, kurios dešinėje rašomas tekstas. Aprašymas atspindi galimą veiksmą. Figūra parodo, ar yra pasirinkta nurodyta reikšmė, ar ne. Naudotojas gali keisti pasirinkimo langelio reikšmę pele pažymint arba panaikinant požymį langelyje.
 
 Pagrindinis meniu
-    Pagrindiniame meniu yra pristatomos pagrindinės sistemos funkcijos.
-    Pagrindinio meniu punktai yra pasirenkami pelės kairiojo klavišo
-    spustelėjimu pažymint juos.
+    Pagrindiniame meniu yra pristatomos pagrindinės sistemos funkcijos. Pagrindinio meniu punktai yra pasirenkami pelės kairiojo klavišo spustelėjimu pažymint juos.
 
 Pasirinktas meniu punktas
-    Norėdamas pasirinkti meniu punktą, sistemos naudotojas turi spragtelėti ant
-    jo kairiu pelės klavišu.
+    Norėdamas pasirinkti meniu punktą, sistemos naudotojas turi spragtelėti ant jo kairiu pelės klavišu.
 
 Saugus slaptažodis
-    Bent aštuonių simbolių ilgio; sudarytas iš raidžių, skaičių ir specialių
-    simbolių (tokių kaip „@“, „#“ ar pan.).; skiriasi nuo ankstesnio.
+    Bent aštuonių simbolių ilgio; sudarytas iš raidžių, skaičių ir specialių simbolių (tokių kaip „@“, „#“ ar pan.).; skiriasi nuo ankstesnio.
 
 VIISP
-    Valstybės Informacinių Išteklių Sąveikumo Platforma, prieiname per
-    Elektroninius Valdžios Vartus
+    Valstybės Informacinių Išteklių Sąveikumo Platforma, prieiname per Elektroninius Valdžios Vartus
 
 El. Vartai
     Elektroninių valdžios vartų puslapis
@@ -76,12 +59,13 @@ El. Vartai
     Organizacija / institucija, vykdanti nustatytas veiklas
 
 |image2| Sąrašo rūšiavimas
-    Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto
-    stulpelio pavadinimą arba [|image2|].
+    Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto stulpelio pavadinimą arba |image2|.
+
+====
 
 
 Institucijos ir atstovaujančio koordinatoriaus registravimas
-============================================================
+------------------------------------------------------------
 
 *Portale reikia registruoti savo instituciją ir vieną atstovaujantį
 koordinatorių.*
@@ -111,8 +95,9 @@ Jeigu koordinatoriumi yra skiriamas:
 
 *Siūlome registruotis pasirinkus „Gyventojas“*.
 
+
 Registracija pasirinkus „Gyventojas“
-------------------------------------
+====================================
 
 El.valdžios vartų puslapyje:
 
@@ -128,8 +113,9 @@ El.valdžios vartų puslapyje:
 
 3. *Siūlome rinktis variantą „Per banką“:* paspauskite savo banko ikoną, suvesti el. bankininkystės prisijungimo duomenis.
 
+
 Registracija pasirinkus „Viešasis sektorius“
---------------------------------------------
+============================================
 
 1. Paspauskite „Viešasis sektorius“.
 
@@ -151,8 +137,10 @@ Registracija pasirinkus „Viešasis sektorius“
 | |image10|
 | *8 pav. Pasirašymo su PIN lango fragmentas*
 
+
 Identifikavus tapatybę
-----------------------
+======================
+
 
 *Tiek registruojantis kaip „Gyventojas“, tiek kaip „Viešasis sektorius“, po tapatybės nustatymo būsite nukreipti į puslapį „E. paslaugos“ arba į langą „Duomenų teikimas į Atvirų duomenų portalą“.*
 
@@ -244,7 +232,7 @@ Prisijungimas prie sistemos
 
 
 Pagrindinis meniu
-=================
+-----------------
 
 *Pagrindinis meniu matomas prisijungus prie sistemos ir leidžia pasiekti aplinkos atributus:*
 
@@ -321,7 +309,7 @@ Lange pateikiama lentelė, kurioje pateikta informacija apie organizacijos stati
 
 
 Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
-========================================================
+--------------------------------------------------------
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -382,7 +370,7 @@ Sąrašo duomenis:
 
 
 Darbas su organizacijos rekvizitais (Koordinatoriai)
-====================================================
+----------------------------------------------------
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -432,7 +420,7 @@ Skiltyje **„2. Logotipas“** galite įkelti naują arba pakeisti įkeltą org
 
 
 Darbas su poreikiais (Koordinatoriai)
-=====================================
+-------------------------------------
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -440,7 +428,7 @@ Darbas su poreikiais (Koordinatoriai)
 
 
 Poreikių sąrašo peržiūra
-------------------------
+========================
 
 1. Pagrindiniame menu pasirinkite **„Atvėrimo poreikiai“**.
 
@@ -477,7 +465,7 @@ Bendrame organizacijai pateiktų duomenų atvėrimo poreikių sąraše – pagri
 
 
 Atvėrimo poreikio peržiūra
---------------------------
+==========================
 
 *Su sąraše pateiktais poreikiais galite:*
 
@@ -576,7 +564,7 @@ Atvėrimo poreikio peržiūra
 
 
 Atsakymas į pateiktą atvėrimo poreikį
--------------------------------------
+=====================================
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo poreikiai“;** du kartus
    paspauskite ant pasirinkto poreikio, kad atsidarytų papildomas meniu
@@ -613,7 +601,7 @@ Poreikio patvirtinimo būsena po atsakymo gali būti pakeista pagal poreikį.
 
 
 Darbas su duomenų rinkiniais
-============================
+----------------------------
 
 Duomenys į Portalą keliami dviem būdais:
 
@@ -647,7 +635,7 @@ Duomenys į Portalą keliami dviem būdais:
 
 
 Duomenų rinkinių sąrašo peržiūra
---------------------------------
+================================
 
 *Organizacijos pačios kuria ir pildo joms priklausančius duomenų rinkinius.*
 
@@ -716,7 +704,7 @@ Duomenų rinkinių sąrašo peržiūra
 
 
 Duomenų šablono atsisiuntimas
------------------------------
+=============================
 
 *Duomenų rinkinys, įkeliamas kaip failas, privalo atitikti šabloną.*
 
@@ -731,7 +719,7 @@ Duomenų šablono atsisiuntimas
 
 
 Duomenų rinkinio importavimas
------------------------------
+=============================
 
 1. Pagrindiniame meniu pasirinkite **„Duomenų rinkiniai“**;
 
@@ -770,39 +758,29 @@ Inventorinimo duomenys
 
 	 *Žymimas raudonai, kol neužpildomas;*
 
-   - **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio
-     pavadinimas anglų kalba.;
+   - **Pavadinimas (anglų k.):** pateikiamas pilnas duomenų rinkinio pavadinimas anglų kalba.;
 
-     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą
-     paruoš automatiškai;*
+     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
 
    - **Aprašymas (anglų k.):** pilnas duomenų rinkinio aprašymas anglų kalba;
 
-     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą
-     paruoš automatiškai;*
+     *Jei pirma užpildysite lietuvišką lauką, sistema anglišką pavadinimą paruoš automatiškai;*
 
 
    *SVARBU:*
 
-   - skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis,
-     reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik
-     administracinėje aplinkoje;*
+   - skirtas pastaboms apie atveriamų duomenų rinkinius, atsakingus asmenis, reikiamas sukurti paskyras rinkiniui tvarkyti. Vaizduojamas tik administracinėje aplinkoje;*
 
-   - šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]**
-     neprivalote: struktūros failus siūlome pateikiami skiltyje **„2.
-     Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas
-     <#_Duomenų_rinkinio_struktūros>`__\.
+   - šiame lange įkelti struktūros ir spausti **[Įkelti struktūros failą]** neprivalote: struktūros failus siūlome pateikiami skiltyje **„2. Struktūra“**. Plačiau: `Duomenų rinkinio struktūros sukūrimas <#_Duomenų_rinkinio_struktūros>`__\.
 
 4. Įsitikinkite, kad įvedėte teisingus duomenis ir spauskite **[Saugoti]**.
 
    | |34pav|
    | *34 pav. Išsaugotos kortelės „1. Inventorinimo duomenys“ sistemos pranešimo fragmentas.*
 
-   * Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos
-     sekančios kortelės.*
+   *Išsaugojus užpildytą kortelę „1. Inventorinimo duomenys“, atveriamos sekančios kortelės.*
 
-5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją
-   įvesti nuosekliai.
+5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
 
 
 
@@ -1187,7 +1165,7 @@ nurodant šią informaciją:
 
 
 Pateikti poreikiai
-==================
+------------------
 
 1. Rinkinio peržiūros lango meniu pasirinkite skiltį **„Pateikti poreikiai“**.
 
@@ -1257,7 +1235,7 @@ Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros 
 
 
 Darbas su IRS rinkiniais
-========================
+------------------------
 
 | |image75|
 | *59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas*
@@ -1301,7 +1279,7 @@ IRS rinkinių sąraše galima peržiūrėti tokią bendrą informaciją:
 
 
 Darbas su metiniais planais
-===========================
+---------------------------
 
 *Metiniai planai sudaromi ruošiantis duomenų rinkinių atvėrimui.*
 
@@ -1319,7 +1297,7 @@ Darbas su metiniais planais
 
 
 Metinio plano sudarymas
------------------------
+=======================
 
 1. Pagrindiniame meniu pasirinkite **„Atvėrimo planai“**.
 
@@ -1359,7 +1337,7 @@ Lange pateikiama pagrindinė atvėrimo planų informacija:
 
 
 Metinio plano formavimas ir pateikimas
---------------------------------------
+======================================
 
 1. Pagrindiniame meniu spauskite pasirinkite **„Atvėrimo planai“**.
 
@@ -1401,7 +1379,7 @@ Metinio duomenų atvėrimo plano lango viršuje – plano būsena ir reikalingas
 
 
 Metinio plano išformavimas
---------------------------
+==========================
 
 *Į metinį planą įtraukti duomenų rinkiniai negali būti įtraukti į kitus rinkinius bei negali būti redaguoti jų prioritetai ir finansiniai duomenys, net jei pateiktas planas buvo atmestas.*
 
@@ -1432,7 +1410,7 @@ Planas tebeliks matomas planų sąraše ir jį bus galima formuoti iš naujo įt
 
 
 Plano patvirtinimas organizacijos vardu
----------------------------------------
+=======================================
 
 *Kai metinis planas yra patvirtintas vyr. koordinatoriaus (plano būsena pasikeičia į*\ **“Patvirtintas koordinatoriaus”**\ *, organizacijos koordinatorius gali jį patvirtinti vyr. koordinatoriui).*
 
@@ -1454,14 +1432,15 @@ Plano patvirtinimas organizacijos vardu
 
 
 Ataskaitų formavimas
-====================
+--------------------
 
 - Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys** pateikiami duomenys apie *duomenų rinkinių* panaudojimą nurodytu laikotarpiu;
 
 - Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)** pateikiami duomenys apie *duomenų rinkinių rinkmenų* panaudojimą nurodytu laikotarpiu.
 
+
 Ataskaitų kūrimas
------------------
+=================
 
 \> **Suformuoti ataskaitą:**
 
@@ -1492,7 +1471,7 @@ Ataskaitų kūrimas
 
 
 Paruoštų ataskaitų valdymas
----------------------------
+===========================
 
 
 \> **Rikiuoti stulpelį abėcėlės arba atvirkštine tvarka:**
@@ -1520,7 +1499,7 @@ Paruoštų ataskaitų valdymas
 
 
 Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“
---------------------------------------------------------------------------
+==========================================================================
 
 |image88|
 | *70 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ formavimo forma*
@@ -1612,7 +1591,7 @@ Lange pateikti stulpelių pavadinimai bei jų rodymo ataskaitoje būsena.
 
 
 Ataskaita „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“
-------------------------------------------------------------------------------------
+====================================================================================
 
 | |image95|
 | *73 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys (failams)“ sudarymo forma*
@@ -1669,7 +1648,7 @@ Ataskaitos laukai (\* – privalomi):
 
 
 Partnerių API
-=============
+-------------
 
 
 *Partnerių API operacijas galima vykdyti tik su organizacijai suteiktu API raktu.*
@@ -1690,7 +1669,7 @@ Partnerių API
 
 
 Slaptažodžio keitimas
-=====================
+---------------------
 
 1. Prisijunkite prie sistemos.
 
