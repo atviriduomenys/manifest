@@ -120,16 +120,14 @@ atvirų duomenų portaluose.
 
 .. _inventory:
 
-Inventorizacija
-===============
+Metaduomenys
+============
 
-Duomenų inventorizacija susideda iš dviejų dalių:
+Metaduomenų rengimas susideda iš dviejų dalių:
 
-- :ref:`Duomenų rinkinių sąrašo sudarymas <preliminari-inventorizacija>`
-  (preliminari inventorizacija),
+- :ref:`Duomenų rinkinių sąrašo sudarymas <preliminari-inventorizacija>`,
 
-- :ref:`Duomenų struktūros aprašų parengimas <detali-inventorizacija>` (detali
-  inventorizacija).
+- :ref:`Duomenų struktūros aprašų parengimas <detali-inventorizacija>`.
 
 Duomenų struktūros aprašų parengimas yra pati sudėtingiausia dalis, todėl
 rekomenduojama pirmiausiai susidaryti rinkinių sąrašus, o po to esant realiam
@@ -358,11 +356,8 @@ Atveriant duomenis savarankiškai įstaiga turi tokius variantus:
 - Duomenis jau yra atvėrusi arba duomenis atveria savo priemonėmis ir
   publikuoja savo infrastruktūroje.
 
-Nepriklausomai nuo pasirinkto varianto, įstaiga turi pasidaryti :ref:`pilną
-inventorizaciją <inventory>`.
-
-Jei įstaiga jau yra atvėrusi duomenis, tada užtenka pasidaryti tik
-:ref:`inventorizaciją <inventory>`.
+Nepriklausomai nuo pasirinkto varianto, įstaiga turi :ref:`pilnai parengti
+metaduomenis <inventory>`.
 
 
 Atvėrimas per rangovą
