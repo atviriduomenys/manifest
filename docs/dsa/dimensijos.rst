@@ -469,8 +469,9 @@ Savybė
 .. data:: property.ref
 
     Priklauso nuo `property.type`, nurodo matavimo vienetus, laiko ar vietos
-    tikslumą, :ref:`klasifikatorių <enum>` arba ryšį su kitais modeliais. Ką
-    tiksliai reiškia šis laukas, patikslinta skyrelyje :ref:`duomenų-tipai`.
+    tikslumą, :ref:`klasifikatorių <enum>` arba :ref:`ryšį su kitais modeliais
+    <ryšiai>`. Ką tiksliai reiškia šis laukas, patikslinta skyrelyje
+    :ref:`duomenų-tipai`.
 
 .. data:: property.level
 
@@ -482,11 +483,13 @@ Savybė
 
 .. data:: property.uri
 
-    Sąsaja su išoriniu žodynu.
+    Sąsaja su išoriniu žodynu. Žiūrėti :ref:`vocab`.
 
 .. data:: property.title
 
-    Duomenų lauko pavadinimas.
+    Duomenų lauko pavadinimas. Šis pavadinimas yra skirtas skaityti žmonėms
+    ir bus rodomas duomenų laukų sąrašuose ir antraštėse. Jei nenurodyta, bus
+    naudojamas :data:`property` kodinis pavadinimas.
 
 .. data:: property.description
 
