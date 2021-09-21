@@ -170,7 +170,7 @@ Failai
 
 .. describe:: file
 
-    Failas. Galimi failo metaduomenis:
+    Šis duomenų tipas yra sudėtinis, susidedantis iš tokių duomenų:
 
     id
         Laukas, kuris unikaliai identifikuoja failą, šis laukas duomenų
@@ -243,6 +243,8 @@ Taip pat žiūrėkite: :ref:`ryšiai`.
     neturi, tai tik papildomas metaduomuo, padedantis geriau suprasti ryšius
     tarp modelių.
 
+    Taip pat žiūrėkite :ref:`atgalinis-ryšys`.
+
 .. describe:: generic
 
     Dinaminis ryšys su modeliu.
@@ -252,7 +254,15 @@ Taip pat žiūrėkite: :ref:`ryšiai`.
     Tokiu būdu, vieno modelio laukas gali būti siejamas su keliais
     modeliais.
 
-    Taip pat žiūrėkite :ref:`bendrieji-ryšiai`.
+    Taip pat žiūrėkite :ref:`polimorfinis-ryšys`.
+
+    Šis duomenų tipas yra sudėtinis, susidedantis iš tokių duomenų:
+
+    object_model
+        Pilnas modelio pavadinimas, su kuriuo yra siejamas objektas.
+
+    object_id
+        `object_model` modelio objekto id.
 
 
 .. _sudėtiniai-tipai:
