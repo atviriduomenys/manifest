@@ -54,6 +54,8 @@ Duomenų tipai
     Dvejetainiai duomenys. Bendras baitų skaičius turi būti ne didesnis nei 1G.
 
 
+.. _temporal-types:
+
 Data ir laikas
 ==============
 
@@ -119,6 +121,8 @@ Data ir laikas
 
     .. _dct:temporal: https://www.w3.org/TR/vocab-dcat-2/#Property:dataset_temporal
 
+
+.. _spatial-types:
 
 Erdviniai duomenys
 ==================
@@ -216,6 +220,8 @@ Failai
     Paveiksliukas. `image` tipas turi tokias pačias savybes kaip `file`
     tipas.
 
+
+.. _ref-types:
 
 Išoriniai raktai
 ================

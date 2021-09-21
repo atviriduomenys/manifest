@@ -149,6 +149,18 @@ duomenų struktūros apraše nurodytas transformacijas.
         Duomenų objektai turi aiškius, unikalius identifikatorius. Užpildyti
         :data:`model.ref` ir :data:`property.ref` stulpeliai.
 
+        .. note::
+
+            :data:`property.ref` stulpelis pildomas šiais atvejais:
+
+            - Jei duomenų laukas yra išorinis raktas (žiūrėti :ref:`ref-types`).
+
+            - Jei duomenų laukas yra kiekybinis ir turi matavimo vienetus
+              (žiūrėti :ref:`matavimo-vienetai`).
+
+            - Jei duomenų laukas žymi laiką ar vietą (žiūrėti
+              :ref:`temporal-types` ir :ref:`spatial-types`).
+
         Plačiau apie brandos lygio kėlimą skaitykite skyriuje :ref:`to-level-4`.
 
         Ketvirtas duomenų brandos lygis labiau susijęs ne su pačių duomenų

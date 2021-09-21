@@ -126,7 +126,8 @@ pavadinimą, pavyzdžiui :data:`model.ref`, kas reikštų, kad kalbama apie
 
     **Ryšys**
 
-    Prasmė priklauso nuo dimensijos. Žiūrėti :ref:`ryšiai`.
+    Prasmė priklauso nuo dimensijos. Žiūrėti :ref:`ryšiai`,
+    :ref:`matavimo-vienetai` ir :ref:`enum`.
 
 .. data:: source
 
