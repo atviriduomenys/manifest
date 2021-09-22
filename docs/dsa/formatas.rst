@@ -27,6 +27,16 @@ eilutės identifikatorius, kuris pildomas automatiškai, toliau seka 5
 :ref:`dimensijų <dimensijos>` stulpeliai ir likę 9 stulpeliai yra metaduomenys
 apie duomenis.
 
+.. image:: /static/dsa.png
+    :align: center
+
+Lentelė sudaryta hierarchiniu principu. Kiekvienas metaduomenų stulpelis gali
+turėti skirtingą prasmę, priklausomai nuo dimensijos. Todėl toliau
+dokumentacijoje konkrečios dimensijos stulpelis yra žymimas nurodant tiek
+dimensijos, tiek metaduomenis pavadinimus, pavyzdžiui :data:`model.ref`,
+kuris nurodo :data:`ref` stulpelį, esantį :data:`model` dimensijoje.
+
+
 Ką reiškia kiekvienas stulpelis paaiškinta žemiau.
 
 
@@ -40,6 +50,8 @@ Ką reiškia kiekvienas stulpelis paaiškinta žemiau.
     Šis stulpelis pildomas automatinėmis priemonėmis, siekiant identifikuoti
     konkrečias metaduomenų eilutes, kad būtų galima atpažinti metaduomenis,
     kurie jau buvo pateikti ir po to atnaujinti.
+
+    Šio stulpelio pildyti nereikia.
 
 
 .. _dimensijos-stulpeliai:
@@ -311,57 +323,59 @@ globalią duomenų erdvę nepanaikina duomenų rinkinio iš ankstesnės vardų e
 tiesiog duomenų rinkinio duomenų pagrindu kuriama kopija į globalią duomenų
 erdvę.
 
-Vardų erdvės pavadinimai gali būti globalūs arba vietiniai. Globalūs vardų
-erdvės pavadinimai turi prasidėti `/` simboliu, vietiniai vardų erdvės
-pavadinimai neturi prasidėti `/` simboliu.
 
-Modeliai gali būti aprašomi duomenų rinkinio kontekste arba nepriklausomai nuo
-duomenų rinkinio. Jei modelis aprašomas duomenų rinkinio kontekste ir modelio
-pavadinimas neprasideda `/` simboliu, tada pilnas modelio pavadinimas
-formuojamas jungiant vietinį modelio pavadinimą prie duomenų rinkinio vardų
-erdvės. Tačiau jei modelio pavadinimas prasideda `/` simboliu, tada pilnas
-modelio pavadinimas nėra jungiamas prie duomenų rinkinio vardų erdvės.
+.. _relative-model-names:
 
-Kaip tai atrodo :term:`DSA` lentelėje iliustruota žemiau:
+Reliatyvūs pavadinimai
+======================
 
-+-------+-----+-----+-----+-----+--------------+
-| id    | d   | r   | b   | m   | property     |
-+=======+=====+=====+=====+=====+==============+
-| **0** |     |     |     | ****dcat/dataset** |
-+-------+-----+-----+-----+-----+--------------+
-|     1 |     |     |     |     | title        |
-+-------+-----+-----+-----+-----+--------------+
-| **2** | **datasets/gov/ivpk/adk**            |
-+-------+-----+-----+-----+-----+--------------+
-|     3 |     | adk                            |
-+-------+-----+-----+-----+-----+--------------+
-|     4 |     |     | **/dcat/dataset**        |
-+-------+-----+-----+-----+-----+--------------+
-| **5** |     |     |     | **dataset**        |
-+-------+-----+-----+-----+-----+--------------+
-|     6 |     |     |     |     | title        |
-+-------+-----+-----+-----+-----+--------------+
+Modelio pavadinimas gali būti absoliutus arba reliatyvus. Absoliutūs
+pavadinimai prasideda `/` simboliu, reliatyvus pavadinimai prasideda be `/`
+simbolio ir yra jungiami su vardų erdvės pavadinimu, kurios kontekste yra
+apibrėžtas modelis.
 
-Šiame pavyzdyje matome, kad pirmoje eilutėje yra apibrėžtas `dcat/dataset`
-modelis, kuris nėra susietas duomenų rinkiniu, tai reiškia, kad modelis yra
-globalus. `dcat/dataset` modelio pavadinimas neturi `/` simbolio priekyje, todėl
-pilnas modelio pavadinimas bus `/dcat/dataset`, nes šis modelis neturi duomenų
-rinkinio konteksto. Modelio pavadinime `dcat` reiškia standarto arba domeno
-(srities) pavadinimą.
+Pavyzdžiui, turinti tokį duomenų struktūros aprašą:
 
-Toliau lentelėje yra aprašytas duomenų rinkinys `datasets/gov/ivpk/adk`, kur
-`gov` yra valstybinio sektoriaus duomenų erdvė, `ivpk` yra konkrečios įstaigos
-sutrumpintas pavadinimas, o `adk` yra atvirų duomenų katalogo duomenų rinkinio
-sutrumpintas pavadinimas.
++----+-----+-----+-----+-----+----------+-------+
+| id | d   | r   | b   | m   | property | type  |
++====+=====+=====+=====+=====+==========+=======+
+| 1  | **dcat**                         | ns    |
++----+-----+-----+-----+-----+----------+-------+
+| 2  |     |     |     | **dataset**    |       |
++----+-----+-----+-----+-----+----------+-------+
+| 3  |     |     |     |     | title    |       |
++----+-----+-----+-----+-----+----------+-------+
+| 4  | **datasets/gov/ivpk/adk**        |       |
++----+-----+-----+-----+-----+----------+-------+
+| 5  |     | adk                        |       |
++----+-----+-----+-----+-----+----------+-------+
+| 6  |     |     | **/dcat/dataset**    | alias |
++----+-----+-----+-----+-----+----------+-------+
+| 7  |     |     |     | **dataset**    |       |
++----+-----+-----+-----+-----+----------+-------+
+| 8  |     |     |     |     | title    |       |
++----+-----+-----+-----+-----+----------+-------+
 
-Toliau 4 eilutėje nurodyta modelio bazė `/dcat/dataset`. Kadangi modelio bazės
-pavadinimas prasideda `/` simboliu, tai modelio pavadinimas nesiejamas su
-duomenų rinkinio vardų erdve ir rodo į pirmoje eilutėje apibrėžtą modelį.
+Matome, kad yra apibrėžti du modeliai:
 
-5 eilutėje pateiktas modelio pavadinimas `dataset` neturi priekyje `/`, todėl
-yra siejamas su duomenų rinkinio vardų erdve. Pilnas 5 eilutėje aprašyto modelio
-pavadinimas bus `/datasets/gov/ivpk/adk/dataset`.
+- `dcat/dataset`
+- `datasets/gov/ivpk/adk/dataset`
 
-Visose vietose, kur naudojamas modelio pavadinimas, jei eilutė yra `dataset`
-dimensijos sudėtyje, tada modelio pavadinimas bus jungiamas prie duomenų
-rinkinio vardų erdvės, nebent modelio pavadinimas prasideda `/` simboliu.
+Vienas `dataset` modelis yra apibrėžtas `dcat` vardų erdvės kontekste, kitas
+`datasets/gov/ivpk/adk` vardų erdvės kontekste.
+
+Kai modelio pavadinimas yra naudojamas vardų erdvės kontekste ir pavadinimas
+neprasideda `/` simboliu, tada tai yra reliatyvus modelio pavadinimas.
+Reliatyvus modelio pavadinimas yra jungiamas su vardų erdvės pavadinimu,
+kurios kontekste yra apibrėžtas modelis.
+
+Jei tam tikros vardų erdvės kontekste norime įvardinti modelį, kuris yra už
+tos vardų erdvės konteksto ribų, būtina naudoti absoliutų modelio pavadinimą,
+kuris prasideda `/` simboliu. Taip yra padaryta 6-oje eilutėje, kur nurodyta,
+kad `datasets/gov/ivpk/adk/dataset` bazė yra `dcat/dataset` modelis iš kitos
+vardų erdvės.
+
+Visais atvejais, kai modelio pavadinimas naudojamas nenurodant jokio vardų
+erdvės konteksto, `/` simbolio pavadinimo pradžioje naudoti nereikia.
+Pavyzdžiui šiame tekste įvardinti `dcat/dataset` ir
+`datasets/gov/ivpk/adk/dataset` modelių pavadinimai neprasideda `/` simboliu.

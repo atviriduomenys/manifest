@@ -5,11 +5,11 @@ Dimensijos
 ==========
 
 :term:`Dimensijos <dimensija>` apibrėžia duomenų metaduomenų detalumo lygį.
-Stulpeliai :data:`dataset`, :data:`resource`, :ref:`base`, :data:`model` ir
+Stulpeliai :data:`dataset`, :data:`resource`, :data:`base`, :data:`model` ir
 :data:`property` yra naudojami kaip :term:`DSA` dimensijos. :data:`dataset` yra
 aukščiausia dimensija, :data:`property` žemiausia. :data:`dataset` ir
 :data:`resource` dimensijos atitinka DCAT_ žodyną ir užtikrina trečia duomenų
-brandos lygį, o žemiau esantys :ref:`base`, :data:`model` ir :data:`property`
+brandos lygį, o žemiau esantys :data:`base`, :data:`model` ir :data:`property`
 atitinka RDFS_ žodyną ir užtikrina penktą duomenų brandos lygį. Vienoje lentelės
 eilutėje gali būti užpildytas ne daugiau kaip vienas dimensijos stulpelis.
 Užpildytasis dimensijos stulpelis nustato visų kitų stulpelių prasmę.
@@ -264,29 +264,31 @@ Esant poreikiui gali būti įgyvendintas palaikymas naujiems duomenų šaltiniam
 Modelio bazė
 ------------
 
+.. note:: Kol kas modelių apjungimas naudojant vieną bazę nėra įgyvendintas.
+
 Modelio bazė naudojama kelių modelių (lentelių) susiejimui arba apjungimui.
 Kadangi įvairiuose duomenų šaltiniuose dažnai pasitaiko duomenų, kuriuose
-saugomos tą pačią semantinę prasmę turinčios lentelės, :ref:`base` stulpelyje
+saugomos tą pačią semantinę prasmę turinčios lentelės, :data:`base` stulpelyje
 galima nurodyti kaip skirtingos lentelės siejasi tarpusavyje.
 
 :data:`base.type` stulpelyje nurodoma kokiu būdu lentelės yra susiję.
-:term:`ETL` priemonė vadovaujantis :ref:`base` informacija duomenis
+:term:`ETL` priemonė vadovaujantis :data:`base` informacija duomenis
 automatiškai transformuoja ir sujungia kelias lenteles į vieną.
 
 Modeliai ne tik susiejami semantiškai tarpusavyje, bet taip pat suliejami ir
 dviejų modelių duomenys naudojant laukų sąrašą nurodytą :data:`base.ref`
 stulpelyje. :data:`base.ref` stulpelyje nurodyti laukai naudojami norint
 unikaliai identifikuoti :data:`model` lentelėje esančią eilutę, kuri atitinka
-:ref:`base` lentelėje esančią eilutę.
+:data:`base` lentelėje esančią eilutę.
 
-Siejant :data:`model` ir :ref:`base` duomenis tarpusavyje, :data:`model`
+Siejant :data:`model` ir :data:`base` duomenis tarpusavyje, :data:`model`
 lentelė įgauna lygiai tokius pačius unikalius identifikatorius, kurie yra base
 lentelėje. Tai reiškia, kad :data:`model` lentelėje negali būti duomenų, kurių
-nėra :ref:`base` lentelėje.
+nėra :data:`base` lentelėje.
 
-:data:`model.property` laukai turi sutapti su :ref:`base` modelio laukais,
-tačiau :data:`model` gali turėti ir papildomų laukų, kurių nėra :ref:`base`
-modelyje Visi :data:`base.ref` laukai turi būti aprašyti tiek :ref:`base`, tiek
+:data:`model.property` laukai turi sutapti su :data:`base` modelio laukais,
+tačiau :data:`model` gali turėti ir papildomų laukų, kurių nėra :data:`base`
+modelyje Visi :data:`base.ref` laukai turi būti aprašyti tiek :data:`base`, tiek
 :data:`model` modeliuose.
 
 .. data:: base.source
@@ -307,60 +309,56 @@ Nenaudojamas.
 
     .. describe:: base
 
-        Išplečia :ref:`base` ir saugo tik tų :data:`property` duomenis, kurių
-        neturi :ref:`base`. :ref:`base` ir :data:`model` identifikatoriai
+        Išplečia :data:`base` ir saugo tik tų :data:`property` duomenis, kurių
+        neturi :data:`base`. :data:`base` ir :data:`model` identifikatoriai
         sutampa.
-
-    .. describe:: partition
-
-        Naudojama, kai reikia vieno modelio duomenis išskaidytus pagal datą ar
-        vietą, sujungti į vieną bazę.
 
     .. describe:: alias
 
-        Naudojama, kai tą pačią semantinę prasmę duomenys saugomi skirtingose
-        vietose.
+        Naudojama, kai tą pačią semantinę prasmę turintys duomenys saugomi
+        skirtingose vietose.
 
     .. describe:: proxy
 
         Naudojama tada, kai kelių modelių duomenys yra identiški vienam
-        :ref:`base` ir reikia duomenis saugoti tik į :ref:`base`.
+        :data:`base` ir reikia duomenis saugoti tik į :data:`base`.
 
-    .. describe:: proto
+    .. describe:: prototype
 
-        Naudojamas tada, kai :data:`model` tik paveldi :ref:`base` savybes,
+        Naudojamas tada, kai :data:`model` tik paveldi :data:`base` savybes,
         tačiau duomenis saugo atskirai ir identifikatorių nepernaudoja iš
-        :ref:`base`.
+        :data:`base`.
 
     Savybių matrica:
 
-    ==========  ==========  ===========  =======================  =======  ========
-    \           Sutampantys property     \                        Saugo duomenis į
-    ----------  -----------------------  -----------------------  -----------------
+    ==========  ==========  ===========  =======================  =======  =========
+    \           Sutampantys laukai                                Saugo duomenis į
+    ----------  ------------------------------------------------  ------------------
     base.type   Išplečiami  Dubliuojami  Vienas identifikatorius  base     model
-    ==========  ==========  ===========  =======================  =======  ========
-    base        taip        ne           taip                     taip     taip
-    partition   taip        taip         ne                       taip     taip
+    ==========  ==========  ===========  =======================  =======  =========
+    base        taip        ne           taip                     taip     taip [*]_
     alias       taip        taip         taip                     taip     taip
     proxy       ne          ne           taip                     taip     ne
-    proto       taip        taip         ne                       ne       taip
-    ==========  ==========  ===========  =======================  =======  ========
+    prototype   taip        taip         ne                       ne       taip
+    ==========  ==========  ===========  =======================  =======  =========
+
+    .. [*] Saugo tik tuos duomenis, kurie nėra saugomi base modelyje.
 
     Išplečiami
-        :data:`model` gali turėti property eilučių, kurių neturi :ref:`base`.
+        :data:`model` gali turėti property eilučių, kurių neturi :data:`base`.
 
     Dubliuojami
         :data:`model` saugo :data:`property` reikšmes, kurios sutampa su
-        :ref:`base`.
+        :data:`base`.
 
     Vienas identifikatorius
-        :data:`model` gauna identifikatorių iš :ref:`base` ir abiejose vietose
+        :data:`model` gauna identifikatorių iš :data:`base` ir abiejose vietose
         naudojamas vienodas identifikatorius.
 
 .. data:: base.ref
 
     :data:`model.property` reikšmė, kurios pagalba :data:`model` objektai
-    siejami su :ref:`base` objektais. Jei susiejimas pagal vieną model property
+    siejami su :data:`base` objektais. Jei susiejimas pagal vieną model property
     yra neįmanomas, galima nurodyti kelis :data:`model.property` pavadinimus
     atskirtus kableliu.
 
