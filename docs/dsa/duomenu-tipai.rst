@@ -40,11 +40,15 @@ Duomenų tipai
     Simbolių eilutė. Neriboto dydžio, tačiau fiziškai simbolių eilutė turėtu
     būti ne didesnė, nei 1G.
 
+    Simboliu eilutė turėtu būti pateikta UTF-8 koduote.
+
 .. describe:: text
 
     Žmonių kalba užrašytas tekstas, nurodant kalbą naudojant `ISO 639-1`_
     kodus. Tekstas gali būti pateiktas keliomis kalbomis. Tekste gali būti
     naudojamos TEI_ žymės.
+
+    Tekstas turėtu būti pateikta UTF-8 koduote.
 
     .. _ISO 639-1: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
     .. _TEI: https://en.wikipedia.org/wiki/Text_Encoding_Initiative
