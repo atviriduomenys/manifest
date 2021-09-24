@@ -706,13 +706,14 @@ Parametrai aprašomi pasitelkiant papildomą :ref:`param` dimensiją.
 
     .. data:: param.prepare
 
-        Formulė, kuri grąžina sąrašą reikšmių aprašomam parametrui. Jei
-        nepateikta, naudojamas `self`.
+        Formulė, kuri grąžina sąrašą reikšmių aprašomam parametrui.
 
     .. data:: param.source
 
-        Nurodoma reikšmė, kuri :data:`param.prepare` pateikiama kaip `self`
-        kintamasis.
+        Jei reikšmė pateikta, tada ši reikšmė perduodama formulei kaip `self`.
+        Pavyzdžiui, jei :data:`param.prepare` pateikta formulė `select(code)`, o
+        :data:`param.source` nurodyta `Country`, tai formulė bus iškviesta taip
+        `select("Country", code)`.
 
 Jei parametro reikšmė yra :term:`iteratorius`, tada :term:`dimensija`, kurios
 kontekste yra aprašytas :ref:`parametras <param>` yra kartojama tiek kartų,
@@ -746,11 +747,11 @@ anksčiau pateiktą pavyzdį galima būtų perdaryti taip:
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
 |  6 |   |   |   | City           |         | country, |nbsp| title | cities/{country}.csv      |                       |
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
-|  7 |   |   |   |   |            | param   | country               | lt                        |                       |
+|  7 |   |   |   |   |            | param   | country               |                           | "lt"                  |
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
-|  7 |   |   |   |   |            |         |                       | lv                        |                       |
+|  7 |   |   |   |   |            |         |                       |                           | "lv"                  |
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
-|  7 |   |   |   |   |            |         |                       | ee                        |                       |
+|  7 |   |   |   |   |            |         |                       |                           | "ee"                  |
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
 |  8 |   |   |   |   | country    | ref     | Country               |                           | param("country")      |
 +----+---+---+---+---+------------+---------+-----------------------+---------------------------+-----------------------+
