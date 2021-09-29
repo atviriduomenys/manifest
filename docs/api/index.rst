@@ -403,9 +403,9 @@ tokiu būdu:
 Skaitymo veiksmai
 =================
 
-.. _getone:
+.. _getall:
 
-getone
+getall
 ------
 
 .. code-block:: sh
@@ -424,6 +424,24 @@ getone
         "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
         "continent": "Europe"
     }
+
+
+Duomenų užklausos
+=================
+
+Visos duomenų užklausos yra pateikiamos URL query dalyje, po `?` žymės.
+
+Rūšiavimas
+----------
+
+Duomenis rūšiuoti galima pasitelkus `sort()` funkciją:
+
+- `sort(column)` - rūšiuoja didėjančia tvarka.
+- `sort(-column)` - rūšiuoja mažėjančia tvarka.
+
+Kalima rūšiuoti pagal kelis stulpelius, pavyzdžiui:
+
+    /my/Data?sort(col1,-col2,col3)
 
 
 Rašymo veiksmai
