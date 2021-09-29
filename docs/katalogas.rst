@@ -1668,6 +1668,41 @@ Partnerių API
 | *76 pav. API aplinkos fragmentas*
 
 
+Metaduomenų atnaujinimas
+========================
+
+Jei Portale yra pateikta nuoroda į išorinį duomenų šaltinį, tada kiekvieną
+kartą kai atliekamas duomenų atnaujinimas, naudojantis Partnerių API reikia
+atnaujinti ir metaduomenis, kad būtų užfiksuotas duomenų atnaujinimo faktas.
+
+Metaduomenis galite atnaujinti taip:
+
+.. code-block:: python
+
+    import requests
+
+    server = 'https://data.gov.lt/partner/api/1'
+    apikey = '...'
+    dataset = ...
+    distribution = ...
+
+    resp = requests.patch(
+        f'{server}/datasets/{dataset}/distributions/{distribution}',
+        headers={'Authorization': f'ApiKey {apikey}'},
+        json={'url': '...'},
+    )
+
+Net jei distribucijos nuoroda nesikeičia, reikėtų įvykdyti šią API užklausą,
+kiekvieną kartą, kai buvo atnaujinti duomenys.
+
+Toks iškvietimas reikalingas, kad būtų atnaujinta paskutinio duomenų
+atnaujinimo data. Kadangi patys duomenys nebūtinai keičiasi kiekvieno duomenų
+atnaujinimo metu, todėl būtina užfiksuoti patį atnaujinimo faktą.
+
+Jei duomenys teikiami realiu laiku, tuomet šio API prieigos taško nebūtina
+kviesti.
+
+
 Slaptažodžio keitimas
 ---------------------
 
