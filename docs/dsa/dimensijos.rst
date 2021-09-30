@@ -198,6 +198,10 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         JSON lines resursai
 
+    .. describe:: geojson
+
+        GeoJSON failai
+
     .. describe:: xml
 
         XML resursai
