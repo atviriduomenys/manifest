@@ -307,7 +307,7 @@ Nenaudojamas.
 
 .. data:: base.type
 
-    Lentelių susiejimo tipas. Jei nenurodyta naudoti `alias`.
+    Lentelių susiejimo tipas. Jei nenurodyta naudoti `sameas`.
 
     Galimos reikšmės:
 
@@ -317,7 +317,7 @@ Nenaudojamas.
         neturi :data:`base`. :data:`base` ir :data:`model` identifikatoriai
         sutampa.
 
-    .. describe:: alias
+    .. describe:: sameas
 
         Naudojama, kai tą pačią semantinę prasmę turintys duomenys saugomi
         skirtingose vietose.
@@ -341,7 +341,7 @@ Nenaudojamas.
     base.type   Išplečiami  Dubliuojami  Vienas identifikatorius  base     model
     ==========  ==========  ===========  =======================  =======  =========
     base        taip        ne           taip                     taip     taip [*]_
-    alias       taip        taip         taip                     taip     taip
+    sameas      taip        taip         taip                     taip     taip
     proxy       ne          ne           taip                     taip     ne
     prototype   taip        taip         ne                       ne       taip
     ==========  ==========  ===========  =======================  =======  =========
