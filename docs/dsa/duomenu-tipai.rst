@@ -133,18 +133,66 @@ Erdviniai duomenys
 
 .. describe:: geometry
 
-    Erdviniai duomenys. Duomenys pateikiami WKT_, WKB_ arba suderinamu
-    formatu, kartu nurodant ir SRID_.
+    Erdviniai duomenys. Duomenys pateikiami WKT_ formatu.
 
     .. _WKT: https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry
     .. _WKB: https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry#Well-known_binary
+
+    :data:`property.ref` stulpelyje nurodomas tikslumas metrais. Tikslumą
+    galima pateikti naudojanti SI vienetus, pavyzdžiui `m`, `km` arba `10m`,
+    100km`.
+
+    `geometry` tipas gali turėti du argumentus: geometrijos tipą ir projekciją.
+
+    Jei geometrijos tipas nenurodytas, tada duomenys gali būti bet kokio
+    geometrinio tipo. Jei tipas nurodytas, tada visi duomenys turi būti tik
+    tokio tipo, koks nurodytas.
+
+    Galimi tokie geometrijos tipai:
+
+    - `point` - taškas.
+    - `linestring` - linija.
+    - `polygon` - daugiakampis.
+    - `multipoint` - keli taškai.
+    - `multilinestring` - kelios linijos.
+    - `multipolygon` - keli daugiakampiai.
+
+    Kiekvienas iš šių tipų gali turėti tokius dimensijų sufiksus:
+
+    - `z` - aukštis.
+    - `m` - pasirinktas matmuo (pavyzdžiui laikas, atstumas, storis ir pan.)
+    - `zm` - aukštis ir pasirinktas matmuo.
+
+    Antrasis projekcijos argumentas nurodomas pateikiant SRID_ numerį. Visi
+    duomenys turi atitikti nurodytą projekciją. Jei projekcija nenurodyta,
+    tuomet pagal nutylėjimą bus naudojamas `4326 (WGS84)`_ projekcija.
+
+    Jei duomenų projekcija yra nežinoma, tuomet duomenų brandos lygis turi
+    būti 2. Jei duomenų projekcija skirtingiems objektams yra skirtinga, tada
+    brandos lygis turi būti 1.
+
+    Pilną SRID_ kodų sąrašą galite rasti `epsg.io`_ svetainėje. Keletas
+    dažniau naudojamų SRID_ kodų:
+
+    - `4326 (WGS84)`_ - Pasaulinė geodezinė sistema, priimta 1984 m., naudojama
+      GPS imtuvuose.
+
+    - `3346 (LKS94)`_ - Lietuvos koordinačių sistema, priimta 1994 m.
+
+    Geometrinio tipo naudojimo pavyzdžiai:
+
+    - `geometry` - WGS84 projekcijos, bet kokio  tipo geometriniai objektai.
+    - `geometry(3346)` - LKS94 projekcijos, bet kokio tipo geometriniai
+      objektai.
+    - `geometry(point)` - GWS84 projekcijos, bet `point` tipo geometriniai
+      objektai.
+    - `geometry(linestringm, 3345)` - LKS94 projekcijos, `linestringm` tipo
+      geometriniai objektai su pasirinktu matmeniu, kaip trečia dimensija.
+
     .. _SRID: https://en.wikipedia.org/wiki/Spatial_reference_system#Identifier
-
-    :data:`property.ref` stulpelyje nurodomas `erdvinis tikslumas`__
-    metrais. Tikslumą galima pateikti naudojanti SI vienetus, pavyzdžiui
-    `m`, `km` arba `10m`, 100km`.
-
-    .. __: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases
+    .. _epsg.io: https://epsg.io/
+    .. _4326 (WGS84): https://epsg.io/4326
+    .. _3346 (LKS94): https://epsg.io/3346
 
 .. describe:: spatial
 
