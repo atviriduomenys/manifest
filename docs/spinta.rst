@@ -498,6 +498,24 @@ __ https://cx-oracle.readthedocs.io/en/latest/index.html
     $ spinta inspect -r sql oracle+cx_oracle://user:pass@host:port/db -o sdsa.xlsx
 
 
+ŠDSA atnaujinimas
+=================
+
+Po to, kai yra sugeneruojamas pradinis ŠDSA ir papildomas trūkstamais
+duomenimis, dažniausiai po tam tikro laiko, šaltinio duomenų struktūra
+keičiasi ir karts nuo karto reikia atnaujinti esamą ŠDSA ir šaltinio,
+įtraukiant naujausius pakeitimus šaltinyje.
+
+Tai galima padaryti tokiu būdu:
+
+.. code-block:: sh
+
+    $ spinta inspect sdsa.xlsx -o sdsa_updated.xlsx
+
+`sdsa_updated.xlsx` faile išliks visi metaduomenys, kuris buvo pradiniame `sdsa
+.xlsx`, papildant juos naujais metaduomenimis iš šaltinio.
+
+
 .. _šdsa-vertimas-į-adsa:
 
 ŠDSA vertimas į ADSA
