@@ -418,11 +418,15 @@ getall
     Content-Type: application/json
 
     {
-        "_type": "datasets/gov/dc/geo/Continent",
-        "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
-        "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
-        "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
-        "continent": "Europe"
+        "_data": [
+            {
+                "_type": "datasets/gov/dc/geo/Continent",
+                "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
+                "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+                "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
+                "continent": "Europe"
+            }
+        ]
     }
 
 
@@ -440,14 +444,18 @@ changes
     Content-Type: application/json
 
     {
-        "_id": "1",
-        "_type": "datasets/gov/dc/geo/Continent",
-        "_rid": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
-        "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
-        "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
-        "_created": "2021-07-30T14:03:14.645198",
-        "_op": "insert",
-        "continent": "Europe"
+        "_data": [
+            {
+                "_cid": "1",
+                "_type": "datasets/gov/dc/geo/Continent",
+                "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
+                "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+                "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
+                "_created": "2021-07-30T14:03:14.645198",
+                "_op": "insert",
+                "continent": "Europe"
+            }
+        ]
     }
 
 
