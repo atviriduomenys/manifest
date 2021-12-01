@@ -4,24 +4,24 @@
 #
 #    pip-compile --no-emit-index-url --output-file=requirements-dev.txt requirements-dev.in requirements.in
 #
-aiofiles==0.7.0
+aiofiles==0.8.0
     # via spinta
 alabaster==0.7.12
     # via sphinx
-alembic==1.6.5
+alembic==1.7.5
     # via spinta
-anyio==3.2.0
-    # via jupyter-server
-argon2-cffi==20.1.0
+anyio==3.4.0
+    # via
+    #   jupyter-server
+    #   starlette
+argon2-cffi==21.1.0
     # via
     #   jupyter-server
     #   notebook
-asgiref==3.3.4
+asgiref==3.4.1
     # via uvicorn
 asttokens==2.0.5
     # via snoop
-async-generator==1.10
-    # via nbclient
 asyncpg==0.22.0
     # via spinta
 attrs==21.2.0
@@ -38,30 +38,28 @@ babel==2.9.1
     #   sphinx
 backcall==0.2.0
     # via ipython
-bleach==3.3.0
+bleach==4.1.0
     # via nbconvert
-boto3==1.17.97
-    # via
-    #   moto
-    #   spinta
-botocore==1.20.97
+boto3==1.20.17
+    # via moto
+botocore==1.23.17
     # via
     #   boto3
     #   moto
     #   s3transfer
-cachetools==4.2.2
+cachetools==4.2.4
     # via google-auth
-certifi==2021.5.30
+certifi==2021.10.8
     # via requests
-cffi==1.14.5
+cffi==1.15.0
     # via
     #   argon2-cffi
     #   cryptography
 chardet==4.0.0
-    # via
-    #   frictionless
-    #   requests
-cheap-repr==0.4.5
+    # via frictionless
+charset-normalizer==2.0.8
+    # via requests
+cheap-repr==0.5.1
     # via snoop
 click==7.1.2
     # via
@@ -73,43 +71,50 @@ colorama==0.4.4
     # via
     #   sphinx-autobuild
     #   typer
-coverage==5.5
+coverage[toml]==6.2
     # via pytest-cov
-cryptography==3.4.7
+cryptography==36.0.0
     # via
     #   authlib
     #   moto
-cycler==0.10.0
+cycler==0.11.0
     # via matplotlib
-decorator==5.0.9
+debugpy==1.5.1
+    # via ipykernel
+decorator==5.1.0
     # via
     #   ipython
     #   validators
 defusedxml==0.7.1
     # via nbconvert
-docutils==0.16
+docutils==0.17.1
     # via
     #   sphinx
     #   sphinx-rtd-theme
 entrypoints==0.3
-    # via nbconvert
+    # via
+    #   jupyter-client
+    #   jupyterlab-server
+    #   nbconvert
 et-xmlfile==1.1.0
     # via openpyxl
-executing==0.6.0
+executing==0.8.2
     # via snoop
+fonttools==4.28.2
+    # via matplotlib
 frictionless[sql]==3.48.0
     # via spinta
-google-api-core==1.30.0
+google-api-core==2.2.2
     # via google-api-python-client
-google-api-python-client==2.9.0
+google-api-python-client==2.31.0
     # via -r requirements-dev.in
 google-auth-httplib2==0.1.0
     # via
     #   -r requirements-dev.in
     #   google-api-python-client
-google-auth-oauthlib==0.4.4
+google-auth-oauthlib==0.4.6
     # via -r requirements-dev.in
-google-auth==1.31.0
+google-auth==2.3.3
     # via
     #   google-api-core
     #   google-api-python-client
@@ -117,41 +122,40 @@ google-auth==1.31.0
     #   google-auth-oauthlib
 googleapis-common-protos==1.53.0
     # via google-api-core
-greenlet==1.1.0
+greenlet==1.1.2
     # via sqlalchemy
 gunicorn==20.1.0
     # via spinta
 h11==0.12.0
     # via uvicorn
-httplib2==0.19.1
+httplib2==0.20.2
     # via
     #   google-api-python-client
     #   google-auth-httplib2
-idna==2.10
+idna==3.3
     # via
     #   anyio
     #   requests
-imagesize==1.2.0
+imagesize==1.3.0
     # via sphinx
 iniconfig==1.1.1
     # via pytest
-ipykernel==5.5.5
+ipykernel==6.5.1
     # via notebook
 ipython-genutils==0.2.0
     # via
     #   jupyter-server
     #   nbformat
     #   notebook
-    #   traitlets
-ipython==7.24.1
+ipython==7.30.0
     # via
     #   ipykernel
     #   jupyterlab
 isodate==0.6.0
     # via frictionless
-jedi==0.18.0
+jedi==0.18.1
     # via ipython
-jinja2==3.0.1
+jinja2==3.0.3
     # via
     #   jupyter-server
     #   jupyterlab
@@ -165,24 +169,24 @@ jmespath==0.10.0
     # via
     #   boto3
     #   botocore
-json5==0.9.5
+json5==0.9.6
     # via jupyterlab-server
 jsonpatch==1.32
     # via spinta
-jsonpointer==2.1
+jsonpointer==2.2
     # via jsonpatch
-jsonschema==3.2.0
+jsonschema==4.2.1
     # via
     #   frictionless
     #   jupyterlab-server
     #   nbformat
-jupyter-client==6.1.12
+jupyter-client==7.1.0
     # via
     #   ipykernel
     #   jupyter-server
     #   nbclient
     #   notebook
-jupyter-core==4.7.1
+jupyter-core==4.9.1
     # via
     #   jupyter-client
     #   jupyter-server
@@ -190,51 +194,51 @@ jupyter-core==4.7.1
     #   nbconvert
     #   nbformat
     #   notebook
-jupyter-server==1.8.0
+jupyter-server==1.12.1
     # via
     #   jupyterlab
     #   jupyterlab-server
     #   nbclassic
 jupyterlab-pygments==0.1.2
     # via nbconvert
-jupyterlab-server==2.6.0
+jupyterlab-server==2.8.2
     # via jupyterlab
-jupyterlab==3.0.16
+jupyterlab==3.2.4
     # via -r requirements-dev.in
-kiwisolver==1.3.1
+kiwisolver==1.3.2
     # via matplotlib
-lark-parser==0.11.3
+lark-parser==0.12.0
     # via spinta
 livereload==2.6.3
     # via sphinx-autobuild
-lxml==4.6.3
+lxml==4.6.4
     # via spinta
-mako==1.1.4
+mako==1.1.6
     # via alembic
 markupsafe==2.0.1
     # via
     #   jinja2
     #   mako
     #   moto
-matplotlib-inline==0.1.2
-    # via ipython
-matplotlib==3.4.2
+matplotlib-inline==0.1.3
+    # via
+    #   ipykernel
+    #   ipython
+matplotlib==3.5.0
     # via -r requirements-dev.in
 mistune==0.8.4
     # via nbconvert
-more-itertools==8.8.0
-    # via moto
-moto==2.0.10
+moto==2.2.17
     # via -r requirements-dev.in
-msgpack==1.0.2
+msgpack==1.0.3
     # via spinta
 multipledispatch==0.6.0
     # via spinta
-nbclassic==0.3.1
+nbclassic==0.3.4
     # via jupyterlab
-nbclient==0.5.3
+nbclient==0.5.9
     # via nbconvert
-nbconvert==6.0.7
+nbconvert==6.3.0
     # via
     #   jupyter-server
     #   notebook
@@ -245,64 +249,70 @@ nbformat==5.1.3
     #   nbconvert
     #   notebook
 nest-asyncio==1.5.1
-    # via nbclient
-notebook==6.4.0
+    # via
+    #   jupyter-client
+    #   nbclient
+    #   notebook
+notebook==6.4.6
     # via nbclassic
-numpy==1.20.3
+numpy==1.21.4
     # via
     #   matplotlib
     #   pandas
 oauthlib==3.1.1
     # via requests-oauthlib
-openpyxl==3.0.7
+openpyxl==3.0.9
     # via spinta
-packaging==20.9
+packaging==21.3
     # via
     #   bleach
-    #   google-api-core
     #   jupyterlab
     #   jupyterlab-server
+    #   matplotlib
     #   pytest
+    #   setuptools-scm
     #   sphinx
-pandas==1.2.4
+pandas==1.3.4
     # via -r requirements-dev.in
-pandocfilters==1.4.3
+pandocfilters==1.5.0
     # via nbconvert
-parso==0.8.2
+parso==0.8.3
     # via jedi
 petl==1.7.4
     # via frictionless
 pexpect==4.8.0
     # via ipython
-phonenumbers==8.12.25
+phonenumbers==8.12.38
     # via spinta
 pickleshare==0.7.5
     # via ipython
-pillow==8.2.0
+pillow==8.4.0
     # via matplotlib
-pluggy==0.13.1
+pluggy==1.0.0
     # via pytest
 pp-ez==0.2.0
     # via -r requirements-dev.in
 pprintpp==0.4.0
-    # via -r requirements-dev.in
-prometheus-client==0.11.0
+    # via
+    #   -r requirements-dev.in
+    #   spinta
+prometheus-client==0.12.0
     # via
     #   jupyter-server
     #   notebook
-prompt-toolkit==3.0.19
+prompt-toolkit==3.0.23
     # via ipython
-protobuf==3.17.3
+protobuf==3.19.1
     # via
     #   google-api-core
     #   googleapis-common-protos
-psycopg2-binary==2.9.1
+psycopg2-binary==2.9.2
     # via spinta
 ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
-py==1.10.0
+py==1.11.0
     # via pytest
 pyasn1-modules==0.2.8
     # via google-auth
@@ -310,67 +320,63 @@ pyasn1==0.4.8
     # via
     #   pyasn1-modules
     #   rsa
-pycparser==2.20
+pycparser==2.21
     # via cffi
-pygments==2.9.0
+pygments==2.10.0
     # via
     #   ipython
     #   jupyterlab-pygments
     #   nbconvert
     #   snoop
     #   sphinx
-pymongo==3.11.4
+pymongo==4.0
     # via spinta
-pyodbc==4.0.30
+pyodbc==4.0.32
     # via -r requirements.in
-pyparsing==2.4.7
+pyparsing==3.0.6
     # via
     #   httplib2
     #   matplotlib
     #   packaging
-pyrsistent==0.17.3
+pyrsistent==0.18.0
     # via jsonschema
-pytest-cov==2.12.1
+pytest-cov==3.0.0
     # via -r requirements-dev.in
 pytest-mock==3.6.1
     # via -r requirements-dev.in
-pytest==6.2.4
+pytest==6.2.5
     # via
     #   -r requirements-dev.in
     #   pytest-cov
     #   pytest-mock
-python-dateutil==2.8.1
+python-dateutil==2.8.2
     # via
-    #   alembic
     #   botocore
     #   frictionless
     #   jupyter-client
     #   matplotlib
     #   moto
     #   pandas
-python-editor==1.0.4
-    # via alembic
 python-multipart==0.0.5
     # via spinta
 python-slugify==5.0.2
     # via frictionless
-pytz==2021.1
+pytz==2021.3
     # via
     #   babel
-    #   google-api-core
     #   moto
     #   pandas
     #   spinta
-pyyaml==5.4.1
+pyyaml==6.0
     # via frictionless
-pyzmq==22.1.0
+pyzmq==22.3.0
     # via
     #   jupyter-client
     #   jupyter-server
     #   notebook
 requests-oauthlib==1.3.0
     # via google-auth-oauthlib
-requests==2.25.1
+requests==2.26.0
     # via
     #   authlib
     #   frictionless
@@ -381,44 +387,39 @@ requests==2.25.1
     #   responses
     #   sphinx
     #   spinta
-responses==0.13.3
+responses==0.16.0
     # via
     #   -r requirements-dev.in
     #   moto
-rsa==4.7.2
+rsa==4.8
     # via google-auth
-ruamel.yaml.clib==0.2.2
+ruamel.yaml.clib==0.2.6
     # via ruamel.yaml
-ruamel.yaml==0.17.9
+ruamel.yaml==0.17.17
     # via spinta
-s3transfer==0.4.2
+s3transfer==0.5.0
     # via boto3
-send2trash==1.5.0
+send2trash==1.8.0
     # via
     #   jupyter-server
     #   notebook
-setuptools-scm==6.0.1
-    # via spinta
+setuptools-scm==6.3.2
+    # via
+    #   matplotlib
+    #   spinta
 shellingham==1.4.0
     # via typer
-simpleeval==0.9.10
+simpleeval==0.9.11
     # via frictionless
 six==1.16.0
     # via
-    #   argon2-cffi
     #   asttokens
     #   bleach
-    #   cycler
-    #   google-api-core
-    #   google-api-python-client
     #   google-auth
     #   google-auth-httplib2
     #   isodate
-    #   jsonschema
     #   livereload
-    #   moto
     #   multipledispatch
-    #   protobuf
     #   python-dateutil
     #   python-multipart
     #   responses
@@ -428,13 +429,13 @@ six==1.16.0
     #   validators
 sniffio==1.2.0
     # via anyio
-snoop==0.3.0
+snoop==0.4.1
     # via -r requirements-dev.in
-snowballstemmer==2.1.0
+snowballstemmer==2.2.0
     # via sphinx
 sphinx-autobuild==2021.3.14
     # via -r requirements-dev.in
-sphinx-rtd-theme==0.5.2
+sphinx-rtd-theme==1.0.0
     # via -r requirements-dev.in
 sphinx==1.8.5
     # via
@@ -445,23 +446,23 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinxcontrib-websupport
 sphinxcontrib-websupport==1.2.4
     # via sphinx
-spinta==0.1.14
+spinta==0.1.23
     # via -r requirements.in
-sqlalchemy-utils==0.37.7
+sqlalchemy-utils==0.36.7
     # via -r requirements-dev.in
-sqlalchemy==1.4.18
+sqlalchemy==1.4.22
     # via
     #   alembic
     #   frictionless
     #   spinta
     #   sqlalchemy-utils
-sqlparse==0.4.1
+sqlparse==0.4.2
     # via spinta
-starlette==0.14.2
+starlette==0.17.1
     # via spinta
 stringcase==1.2.0
     # via frictionless
-terminado==0.10.1
+terminado==0.12.1
     # via
     #   jupyter-server
     #   notebook
@@ -469,13 +470,15 @@ testpath==0.5.0
     # via nbconvert
 text-unidecode==1.3
     # via python-slugify
-texttable==1.6.3
+texttable==1.6.4
     # via spinta
 toml==0.10.2
+    # via pytest
+tomli==1.2.2
     # via
-    #   pytest
-    #   pytest-cov
-toposort==1.6
+    #   coverage
+    #   setuptools-scm
+toposort==1.7
     # via
     #   -r requirements-dev.in
     #   spinta
@@ -488,9 +491,9 @@ tornado==6.1
     #   livereload
     #   notebook
     #   terminado
-tqdm==4.61.1
+tqdm==4.62.3
     # via spinta
-traitlets==5.0.5
+traitlets==5.1.1
     # via
     #   ipykernel
     #   ipython
@@ -506,18 +509,18 @@ typer[all]==0.3.2
     # via
     #   frictionless
     #   spinta
-ujson==4.0.2
+ujson==4.3.0
     # via spinta
-unidecode==1.2.0
+unidecode==1.3.2
     # via spinta
-uritemplate==3.0.1
+uritemplate==4.1.1
     # via google-api-python-client
-urllib3==1.26.5
+urllib3==1.26.7
     # via
     #   botocore
     #   requests
     #   responses
-uvicorn==0.14.0
+uvicorn==0.15.0
     # via spinta
 validators==0.18.2
     # via frictionless
@@ -525,15 +528,15 @@ wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
     # via bleach
-websocket-client==1.1.0
+websocket-client==1.2.1
     # via jupyter-server
-werkzeug==2.0.1
+werkzeug==2.0.2
     # via moto
 xlrd==2.0.1
     # via
     #   -r requirements-dev.in
     #   spinta
-xlsxwriter==1.4.3
+xlsxwriter==1.4.5
     # via spinta
 xmltodict==0.12.0
     # via moto

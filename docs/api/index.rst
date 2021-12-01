@@ -459,6 +459,9 @@ changes
     }
 
 
+Įdomu, kokia situacija su atviro kodo bibliotekomis, kurias kiekvienas startuolis galėtų panaudoti savo projekte?
+
+Pavyzdžiui ar galima atsisiųsti kokią nors platų palaikymą turinčią C biblioteką ar laisvai prieinamą ML modelį, kurį būtų galima naudoti savo projekte, teksto analizei, mašininį vertimui ar kalbos garso įrašo atpažinimui?
 
 Duomenų užklausos
 =================

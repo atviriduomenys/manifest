@@ -1677,20 +1677,54 @@ atnaujinti ir metaduomenis, kad būtų užfiksuotas duomenų atnaujinimo faktas.
 
 Metaduomenis galite atnaujinti taip:
 
-.. code-block:: python
+.. tabs::
 
-    import requests
+    .. code-tab:: python
 
-    server = 'https://data.gov.lt/partner/api/1'
-    apikey = '...'
-    dataset = ...
-    distribution = ...
+        import requests
 
-    resp = requests.patch(
-        f'{server}/datasets/{dataset}/distributions/{distribution}',
-        headers={'Authorization': f'ApiKey {apikey}'},
-        json={'url': '...'},
-    )
+        server = 'https://data.gov.lt/partner/api/1'
+        apikey = '...'
+        dataset = ...
+        distribution = ...
+
+        resp = requests.patch(
+            f'{server}/datasets/{dataset}/distributions/{distribution}',
+            headers={'Authorization': f'ApiKey {apikey}'},
+            json={'url': '...'},
+        )
+
+    .. code-tab:: php
+
+        <?php
+
+        // Configuration parameters
+        $server = "https://data.gov.lt/partner/api/1";
+        $apikey = "";
+        $dataset = "";
+        $distribution = "";
+        $data = array(
+            "url" => ""
+        );
+
+
+        # Metadata update
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PATCH");
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($curl, CURLOPT_URL, "$server/datasets/$dataset/distributions/$distribution");
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+            "Content-Type: application/json",
+            "Authorization: ApiKey: $apikey"
+        ));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($curl);
+        if (!$result) {
+            die("Connection Failure");
+        }
+        curl_close($curl);
+
+        ?>
 
 Net jei distribucijos nuoroda nesikeičia, reikėtų įvykdyti šią API užklausą,
 kiekvieną kartą, kai buvo atnaujinti duomenys.
