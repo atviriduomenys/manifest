@@ -1698,6 +1698,7 @@ Metaduomenis galite atnaujinti taip:
             headers={'Authorization': f'ApiKey {apikey}'},
             json=data,
         )
+        resp.raise_for_status()
 
     .. code-tab:: php
 
