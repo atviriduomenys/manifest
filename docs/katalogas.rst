@@ -1683,48 +1683,60 @@ Metaduomenis galite atnaujinti taip:
 
         import requests
 
+        # Configuration parameters (edited manually)
         server = 'https://data.gov.lt/partner/api/1'
-        apikey = '...'
-        dataset = ...
-        distribution = ...
+        apikey = ''             # API Key (without semicolon).
+        dataset = 0             # Dataset id.
+        distribution = 0        # Distribution id.
+        data = {
+            'url': '',          # URL to published data.
+        }
 
+        # Metadata update
         resp = requests.patch(
             f'{server}/datasets/{dataset}/distributions/{distribution}',
             headers={'Authorization': f'ApiKey {apikey}'},
-            json={'url': '...'},
+            json=data,
         )
 
     .. code-tab:: php
 
         <?php
 
-        // Configuration parameters
+        // Configuration parameters (edited manually)
         $server = "https://data.gov.lt/partner/api/1";
-        $apikey = "";
-        $dataset = "";
-        $distribution = "";
+        $apikey = "";           // API Key (without semicolon).
+        $dataset = "";          // Dataset id.
+        $distribution = "";     // Distribution id.
         $data = array(
-            "url" => ""
+            "url" => ""         // URL to published data.
         );
-
 
         # Metadata update
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PATCH");
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($curl, CURLOPT_URL, "$server/datasets/$dataset/distributions/$distribution");
+        curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($curl, CURLOPT_URL,
+                    "$server/datasets/$dataset/distributions/$distribution");
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
             "Content-Type: application/json",
-            "Authorization: ApiKey: $apikey"
+            "Authorization: ApiKey $apikey"
         ));
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        $result = curl_exec($curl);
-        if (!$result) {
+        $response = curl_exec($curl);
+        if (!$response) {
             die("Connection Failure");
+        }
+        $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        if ($status < 200 || $status >= 300) {
+            die("Server responded with $status status code. " .
+                "Full response from $server:\n\n$response");
         }
         curl_close($curl);
 
         ?>
+
+
 
 Net jei distribucijos nuoroda nesikeičia, reikėtų įvykdyti šią API užklausą,
 kiekvieną kartą, kai buvo atnaujinti duomenys.
