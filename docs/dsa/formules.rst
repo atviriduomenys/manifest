@@ -104,7 +104,7 @@ Formulės susideda iš vykdomų funkcijų sekos. Pavyzdžiui funkcijos pavadinim
 
     test()
 
-Aukščiau pavyzdyje pateikta furmulė vykdo funkciją `test`, be argumentų. Tačiau
+Aukščiau pavyzdyje pateikta formulė vykdo funkciją `test`, be argumentų. Tačiau
 funkcijos gali turėti pozicinius ir vardinius argumentus.
 
 

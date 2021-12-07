@@ -8,8 +8,6 @@ Duomenų šaltiniai
 SQL
 ---
 
-.. module:: sql
-
 .. _sql-resource-source:
 
 .. describe:: resource.source
@@ -101,41 +99,8 @@ SQL
     Lentelės stulpelio pavadinimas.
 
 
-.. _resource-type-sql-dump:
-
-SQL Dump
---------
-
-.. describe:: resource.source
-
-    Kelias iki failo, kuriame yra SQL dump.
-
-    Jei nurodyta `-`, tada SQL dump failas bus skaitomas iš standartinės
-    įvesties.
-
-    Pavyzdžiui, norint iš SQL dump generuoti :term:`DSA`, galima naudoti
-    tokią komandą::
-
-        spinta inspect -f sqldump /kelias/iki/dump.sql
-
-    Arba, perduodant duomenis per standartinė įvestį::
-
-        cat /kelias/iki/dump.sql | spinta inspect -f sqldump -
-
-
-.. describe:: resource.prepare
-
-    Žiūrėti :ref:`failai`.
-
-.. describe:: resource.type
-
-    Galimos reikšmės: `sqldump`.
-
-
 CSV
 ---
-
-.. module:: tabular
 
 .. describe:: resource.type
 
@@ -147,7 +112,7 @@ CSV
 
 .. describe:: resource.prepare
 
-    .. function:: sep(separator)
+    .. function:: tabular(sep: ",")
 
         Nurodoma kaip CSV faile atskirti stulpeliai. Pagal nutylėjimą
         `separator` reikšmė yra `,`.
@@ -167,8 +132,6 @@ CSV
 
 JSON
 ----
-
-.. module:: json
 
 .. describe:: resource.type
 
@@ -196,8 +159,6 @@ JSON
 
 XML
 ---
-
-.. module:: xml
 
 .. describe:: resource.type
 
@@ -231,10 +192,8 @@ XML
     :data:`model` gauto elemento kontekste.
 
 
-Skaičiuoklių lentelės
----------------------
-
-.. module:: spreadsheet
+XLSX
+----
 
 .. describe:: resource.type
 
@@ -255,39 +214,3 @@ Skaičiuoklių lentelės
 .. describe:: property.source
 
     Žiūrėti :ref:`stulpeliai-lentelėje`.
-
-
-WSDL
-----
-
-.. module:: wsdl
-
-.. describe:: resource.type
-
-    Galima reikšmė: `wsdl`.
-
-.. describe:: resource.source
-
-    WSDL URI.
-
-.. describe:: model.source
-
-    Nenaudojamas.
-
-.. describe:: model.prepare
-
-    .. function:: service(name, *args, **kwargs)
-
-        WSDL funkcijos `name` iškvietimas.
-
-    .. function:: wsdl(type, **kwargs)
-
-        Inicializuoja nurodytą `type` WSDL tipą.
-
-.. describe:: property.source
-
-    Rezultato objekto atributas.
-
-.. describe:: property.prepare
-
-    Žiūrėti :ref:`kompleksinės-struktūros`.
