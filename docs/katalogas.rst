@@ -1647,6 +1647,8 @@ Ataskaitos laukai (\* – privalomi):
 | *75 pav. Ataskaitos „Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys“ šablono keitimo lango fragmentas*
 
 
+.. _partnerių-api:
+
 Partnerių API
 -------------
 
@@ -1667,6 +1669,8 @@ Partnerių API
 | |image98|
 | *76 pav. API aplinkos fragmentas*
 
+
+.. _distribucijos-metaduomenų-atnaujinimas:
 
 Metaduomenų atnaujinimas
 ========================

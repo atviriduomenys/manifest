@@ -178,10 +178,6 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         Reliacinės duomenų bazės
 
-    .. describe:: sqldump
-
-        SQL eksporto failai
-
     .. describe:: csv
 
         CSV lentelės

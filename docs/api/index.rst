@@ -2,6 +2,7 @@
 
 .. _saugykla:
 
+########
 Saugykla
 ########
 
@@ -19,7 +20,7 @@ priemonės duomenis gauti palaipsniniu būdu (angl. `Incremental download`_).
 
 
 Statusas ir planas
-==================
+******************
 
 Priemonė „Spinta“ yra eksperimentinis projektas, šiuo metu aktyviai vystomas.
 Pagal `programinės įrangos gyvavimo ciklo schema`__, „Spinta“ yra PRE-ALPHA
@@ -53,7 +54,7 @@ Todėl projektas yra gan stabilus.
 
 
 Preliminarus projekto vystymo planas
-------------------------------------
+====================================
 
 ==============  =================  =================
 Etapas          Pradžia            Pabaiga
@@ -66,7 +67,7 @@ STABLE          2023 metų kovas    -
 
 
 Ko tikėtis kiekvieno etapo metu?
---------------------------------
+================================
 
 PRE-ALPHA (iki 2021 metų pabaigos)
     Projektas jau bus naudojamas gamybinėje aplinkoje, tačiau reikėtu tikėtis,
@@ -105,10 +106,10 @@ STABLE (nuo 2023 metų kovo mėnesio)
 
 
 Prieš pradedant
-===============
+***************
 
 Pavyzdžių skaitymas
--------------------
+===================
 
 Prieš pradedant skaityti verta susipažinti kokie įrankiai naudojami šios
 dokumentacijos pavyzdžiuose.
@@ -150,7 +151,7 @@ duomenų saugyklos dokumentaciją.
 
 
 Duomenų modelis
----------------
+===============
 
 Visuose pavyzdžiuose bus naudojamas vienas ir tas pats žemynų, šalių ir miestų
 duomenų modelis, kurios struktūra atrodo taip:
@@ -186,7 +187,7 @@ sostinę.
 
 
 API adreso struktūra
-====================
+********************
 
 API yra generuojamas dinamiškai iš :term:`DSA` `model` stulpelyje esančių
 modelio :term:`kodinių pavadinimų <kodinis pavadinimas>`. Modelių pavadinimai
@@ -216,7 +217,7 @@ atskirų kelio komponentų prasmės būdų tokios:
 
 
 Adreso parametrai
------------------
+=================
 
 Adresas gali turėti parametrus, parametrai atrodo taip::
 
@@ -230,7 +231,7 @@ daugiau argumentų.
 
 
 Identifikatorius
-----------------
+================
 
 Identifikatorius pat yra adreso parametras, tik jis neprasideda `:` simboliu, o
 eina iš karto po modelio pavadinimo ir tai turi būti UUID simbolių eilutė,
@@ -247,7 +248,7 @@ Tokiu būdu yra galimybė gauti tik konkrečios modelio savybės duomenis.
 
 
 Užklausa
---------
+========
 
 URL Query dalyje, po `?` simbolio galima pateikti papildomus užklausos
 parametrus, pavyzdžiui::
@@ -255,15 +256,59 @@ parametrus, pavyzdžiui::
     /datasets/gov/dc/geo/Continent?select(name)&sort(name)
 
 
-Rezervuoti pavadinimai
-----------------------
+.. _rezervuoti-pavadinimai:
 
-Įvairiose API vietose, įskaitant ir adreso struktūrą naudojami rezervuoti
-pavadinimai, kurie prasideda simboliu `_`.
+Rezervuoti pavadinimai
+**********************
+
+Vadovaujantis duomenų struktūros aprašo taisyklėmis, vardų erdvės, modeliai
+ir laukai turi būti pavadinti laikantis :ref:`kodinių pavadinimų
+<kodiniai-pavadinimai>` reikalavimų.
+
+Visi pavadinimai, kuri prasideda `_` simboliu, turi specialią prasmę ir
+praturtina duomenis, tam tikrais metaduomenimis.
+
+Naudojami tokie specialieji pavadinimai:
+
+:_type:
+    Modelio ar vardų erdvės pavadinimas.
+
+:_id:
+    Unikalus objekto pavadinimas UUID_ formatu.
+
+:_revision:
+    Objekto revizijos numeris, šio numerio pagalba užtikrinamas duomenų
+    vientisumas keičiant duomenis. Kiekvieną kartą keičiant duomenis būdina
+    nurodyti ir revizijos numeris, keitimas leidžiamas tik tuo atveju, jei
+    išsaugoto objekto ir keitimo revizijos numeriais sutampa. Kiekvieną kartą,
+    kai objektas pasikeičia, keičiasi ir jo revizijos numeris.
+
+:_txn:
+    Transakcijos numeris. Vienos užklausos metu, gali būti keičiama daug
+    objektų, visiems, vienu kartu keičiamiems objektas suteikiamas vienas
+    transakcijos keitimo numeris.
+
+:_data:
+    Objektų sąrašas, kei keli objektai pateikiami kartu.
+
+:_cid:
+    Keitimo numeris naudojamas :ref:`op-changes` užklausos metu.
+
+:_created:
+    Data ir laikas, kada duomenys buvo keisti, naudojamas :ref:`op-changes`
+    užklausos metu.
+
+:_op:
+    Užklausos veiksmo pavadinimas. Plačiau :ref:`actions`.
+
+:_where:
+    Objekto atranka naudojama `upsert` užklausose.
+
+.. _UUID: https://en.wikipedia.org/wiki/Universally_unique_identifier
 
 
 Vardų erdvės
-============
+************
 
 Atvirų duomenų saugykla yra didelis katalogas, kuriame sudėta įvairių modelių
 duomenys. Katalogai vadinami vardų erdvėmis.
@@ -326,10 +371,132 @@ pavadinimu `datasets/gov/dc/geo` ir neradus tokio modelio būtų gražintas `404
 Not Found` klaidos kodas.
 
 
+Formatas
+********
+
+Saugykloje duomenys saugomi taip, kad juos būtų galima gauti įvairiais
+skirtingais formatais.
+
+Reikia atkreipti dėmesį, kad nors Saugykla gali duomenis grąžinti įvairiais
+formatais, tačiau nėra galimybės duomenis gauti konkretaus formato schemos
+pavidalu. Pavyzdžiui turint naujienų duomenis, nėra galimybės tokių duomenų
+gauti RSS_ formatu. Pats savaime RSS naudojam XML formatą, tačiau RSS yra
+konkreti XML formato schema.
+
+Saugykloje palaikomi tik bendrieji formatai, specializuoti, tam tikros
+srities formatai nepalaikomi. Norint gauti duomenis tam tikru specializuotu
+formatu, Saugykloje teikiamus duomenis reikia konvertuoti į pageidaujamą
+specializuotą formatą.
+
+.. _RSS: https://en.wikipedia.org/wiki/RSS
+
+Siekiant užtikrinti duomenų perdavimo ir skirtingų formatų palaikymą, visiems
+duomenų laukams, modeliams ir vardų erdvėms taikomi :ref:`kodinių pavadinimų
+<kodiniai-pavadinimai>` reikalavimai, :ref:`specialiosios paskirties duomenys
+<rezervuoti-pavadinimai>` pateikiami su `_` prefiksu, tokiu būdu atskiriant
+duomenis, nuo metaduomenų.
+
+Grąžinant duomenis tam tikru formatu, gražinamų duomenų schema priklauso nuo
+:ref:`užklausos pobūdžio <actions>`. Pavyzdžiui, jei duomenų prašoma `getone`
+būdu, tuomet rezultatas bus:
+
+.. code-block:: json
+
+    {
+        "_type": "...",
+        "_id": "...",
+        "data": "...",
+    }
+
+Jei duomenų prašoma `getall` būdu, tada rezultatas bus toks:
+
+.. code-block:: json
+
+    {
+        "_type": "...",
+        "_data": [
+            {
+                "_id": "...",
+                "data": "...",
+            }
+        ]
+    }
+
+Duomenų kitu formatu galima paprašyti adreso gale nurodžius `/:format/csv`,
+kur `csv` yra pageidaujamas formatas. Šiuo atveju, bus grąžintas toks
+rezultatas:
+
+.. code-block:: csv
+
+    _type,_id,data
+    ...,...,...
+
+
+Ryšiai tarp objektų
+*******************
+
+Tais atvejais, kai duomenyse pateikiamas kito objekto identifikatorius,
+naudojama tokia forma:
+
+.. code-block:: json
+
+    {
+        "_type": "City",
+        "_id": "78035ad0-8f59-4d59-8867-60ea856ba26f",
+        "name": "Vilnius",
+        "country": {
+            "_id": "3c65deaa-8ef8-46d9-8b00-38b22bb91f95"
+        }
+    }
+
+Tokia forma naudojama todėl, kad Saugykla leidžia jungti skirtingų modelių
+duomenis tarpusavyje. Todėl, tam tikrais atvejais, gali būti pateikiamas ne
+tik siejamo objekto identifikatorius, bet ir kiti to objekto laukai,
+pavyzdžiui, jei duomenų atrankai naudotume tokią užklausą::
+
+    /City?select(_id, name, country._id, country.name)
+
+Tuomet atsakymas būtų toks:
+
+.. code-block:: json
+
+    {
+        "_id": "78035ad0-8f59-4d59-8867-60ea856ba26f",
+        "name": "Vilnius",
+        "country": {
+            "_id": "3c65deaa-8ef8-46d9-8b00-38b22bb91f95",
+            "name": "Lietuva"
+        }
+    }
+
+Tais atvejais, kai prašomas tik objektas, kuris yra ryšys su kitu objektų,
+pavyzdžiui::
+
+    /City?select(name, country)
+
+Gausime tokį atsakymą:
+
+.. code-block:: json
+
+    {
+        "name": "Vilnius",
+        "country": {
+            "_id": "3c65deaa-8ef8-46d9-8b00-38b22bb91f95",
+        }
+    }
+
+Tie patys duomenys CSV formatu būtų pateikti taip:
+
+.. code-block:: csv
+
+    name,country._id
+    Vilnius,3c65deaa-8ef8-46d9-8b00-38b22bb91f95
+
+
 .. _autorizacija:
 
 Autorizacija
-============
+************
 
 Norint gauti atvirus duomenis autorizacija nereikalinga, tačiau norint keisti
 saugykloje esančius duomenis are įkelti naujus, būtina autorizacija.
@@ -362,28 +529,7 @@ Leidimų pavadinimai formuojami taip:
     spinta:$model/:$action
     spinta:$model.$property/:$action
 
-`$action` reikšmės gali būti tokios:
-
-:getone:
-    Galimybė gauti vieną objektą pagal nurodytą objekto `_id`.
-:getall:
-    Galimybė gauti visus `model` objektus.
-:search:
-    Galimybė filtruoti `model` objektus.
-:changes:
-    Galimybė prieiti prie duomenų keitimo žurnalo.
-:insert:
-    Galimybė kurti naujus objektus.
-:upsert:
-    Galimybė vykdyti `upsert` veiksmus.
-:update:
-    Galimybė perrašyti esamus duomenis.
-:patch:
-    Galimybė keisti esamus duomenis.
-:delete:
-    Galimybė trinti esamus duomenis.
-:wipe:
-    Galimybė pilnai šalinti duomenis.
+`$action` reikšmės aprašytos skyriuje :ref:`actions`.
 
 Gautasis autorizacijos raktas `$token`, vykdant užklausas turi būti paduodamas
 per HTTP `Authorization` antraštę tokiu būdu:
@@ -400,13 +546,61 @@ tokiu būdu:
     auth="Authorization:Bearer $token"
 
 
+.. _actions:
+
+Veiksmai
+********
+
+Užklausos skirstomos į šiuos veiksmus:
+
+:getone:
+    Vieno objekto duomenys, pagal pateiktą `_id`.
+
+:getall:
+    Visų objektų duomenys.
+
+:search:
+    Objektų duomenys taikant duomenų atrankos užklausą.
+
+:changes:
+    Keitimų žurnalas.
+
+:insert:
+    Naujo objekto kūrimas.
+
+:upsert:
+    Pilnas objekto perrašymas arba naujo objekto kūrimas. Jei pagal pateiktą
+    užklausą objektas egzistuoja, tuomet jis perrašomas, jei objektas
+    neegzistuoja, tuometi sukuriamas naujas.
+
+:update:
+    Pilnas objekto perrašymas, net jei pateikiami ne visi laukai, objektas
+    perrašomas pilnai, laukams, kurie nebuvo pateikti suteikiant pirmines
+    reikšmes.
+
+:patch:
+    Dalinis objekto keitimas, kai keičiamas ne visas, o tik dalis objekto,
+    tam tikri objekto laukai.
+
+:delete:
+    Duomenų šalinimas. Tokiu būdu pašalinti duomenys išsaugomi keitimų žurnale.
+
+:wipe:
+    Pilnas ir neatstatomas duomenų pašalinimas, naudojama tik testavimo
+    tikslams.
+
+
+
 Skaitymo veiksmai
-=================
+*****************
 
 .. _getall:
 
 getall
-------
+======
+
+Šios užklausos pagalba galima gauti visus konkretaus modelio ar visos vardų
+erdvės duomenis.
 
 .. code-block:: sh
 
@@ -418,9 +612,9 @@ getall
     Content-Type: application/json
 
     {
+        "_type": "datasets/gov/dc/geo/Continent",
         "_data": [
             {
-                "_type": "datasets/gov/dc/geo/Continent",
                 "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
                 "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
                 "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
@@ -429,14 +623,26 @@ getall
         ]
     }
 
+Taip pat žiūrėkite:
+
+- :ref:`query-sort`
+- :ref:`query-count`
+- :ref:`query-batches`
+
+
+.. _op-changes:
 
 changes
--------
+=======
 
+Šios užklausos pagalba galima gauti visų duomenų keitimų sąrašą. Ši užklausa
+yra skirta tęstiniam duomenų atnaujinimui. Tam, kad nereikėtų kiekvieną kartą
+iš naujo siųsti visų pasikeitimų, galima paprašyti tik pasikeitimų, kurie buvo
+daryti nuo nurodyto momento.
 
 .. code-block:: sh
 
-    http GET /datasets/gov/dc/geo/Continent/:changes
+    http GET /datasets/gov/dc/geo/Continent/:changes?_cid=10&limit(100)
 
 .. code-block:: http
 
@@ -444,10 +650,10 @@ changes
     Content-Type: application/json
 
     {
+        "_type": "datasets/gov/dc/geo/Continent",
         "_data": [
             {
-                "_cid": "1",
-                "_type": "datasets/gov/dc/geo/Continent",
+                "_cid": "11",
                 "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
                 "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
                 "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
@@ -458,18 +664,22 @@ changes
         ]
     }
 
+Šiame pavyzdyje prašoma grąžinto visus keitimus, kurie buvo daryti po keitimo
+numeris 10, taip pat nurodyta, kad viso grąžinti 10 keitimų. Išsaugojus
+paskutinio keitimo numerį `_cid`, galima paprašyti sekančių keitimų, einančių
+po nurodytojo keitimo id.
 
-Įdomu, kokia situacija su atviro kodo bibliotekomis, kurias kiekvienas startuolis galėtų panaudoti savo projekte?
-
-Pavyzdžiui ar galima atsisiųsti kokią nors platų palaikymą turinčią C biblioteką ar laisvai prieinamą ML modelį, kurį būtų galima naudoti savo projekte, teksto analizei, mašininį vertimui ar kalbos garso įrašo atpažinimui?
 
 Duomenų užklausos
-=================
+*****************
 
 Visos duomenų užklausos yra pateikiamos URL query dalyje, po `?` žymės.
 
+
+.. _query-sort:
+
 Rūšiavimas
-----------
+==========
 
 Duomenis rūšiuoti galima pasitelkus `sort()` funkciją:
 
@@ -478,14 +688,94 @@ Duomenis rūšiuoti galima pasitelkus `sort()` funkciją:
 
 Kalima rūšiuoti pagal kelis stulpelius, pavyzdžiui:
 
-    /my/Data?sort(col1,-col2,col3)
+.. code-block:: sh
+
+    http GET /datasets/gov/dc/geo/Continent?sort(col1,-col2,col3)
+
+
+.. _query-count:
+
+Objektų skaičius
+================
+
+Norinti gauti vieno modelio objektų skaičių galima panaudoti `count()` funkciją:
+
+.. code-block:: sh
+
+    http GET /datasets/gov/dc/geo/Continent?count()
+
+.. code-block:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "_type": "datasets/gov/dc/geo/Continent",
+        "_data": [
+            {
+                "count()": 3856
+            }
+        ]
+    }
+
+
+.. _query-batches:
+
+Duomenų skaitymas paketais
+==========================
+
+Norint gauti visus tam tikro modelio duomenis, ne visus iš karto, o tam tikro
+dydžio paketais, galima duomenų skaitymą atlikti taip:
+
+.. code-block:: sh
+
+    http GET /datasets/gov/dc/geo/Continent?sort(_id)&limit(1)&_id>"36cec98e-7237-43a5-ad2a-58cf29d65e96"
+
+.. code-block:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "_type": "datasets/gov/dc/geo/Continent",
+        "_data": [
+            {
+                "_id": "abdd1245-bbf9-4085-9366-f11c0f737c1d",
+                "_revision": "16dabe62-61e9-4549-a6bd-07cecfbc3508",
+                "_txn": "792a5029-63c9-4c07-995c-cbc063aaac2c",
+                "continent": "Europe"
+            }
+        ]
+    }
+
+Šiame pavyzdyje užklausoje naudojami tokie parametrai:
+
+`sort(_id)`
+    Rūšiuojame duomenis pagal `_id` lauko reikšmes.
+
+`limit(1)`
+    Ribojame grąžinamų objektų skaičių iki 10, tai reiškia, kad mūsų paketo
+    dydis bus 10 objektų.
+
+`_id>"36cec98e-7237-43a5-ad2a-58cf29d65e96"`
+    Atrenkame tik tuos duomenis, kurie yra didesni už nurodytą reikšmę, šiuo
+    atveju reikšmė yra `36cec98e-7237-43a5-ad2a-58cf29d65e96`.
+
+Kadangi `_id` yra unikalus, todėl šis laukas, gali būti naudojamas, kaip
+kursorius, skaitant duomenis paketais. Nuskaičius kiekvieną paketą, norint
+gauti sekantį, reikia pakeisti `_id>"?"` klaustuku pažymėtą vietą, paskutinio
+paketo objekto `_id` reikšme`.
+
+Norint iš karto žinoti, kiek viso bus paketų, galim pirmiausiai :ref:`užklausti
+kiek viso yra objektų <query-count>` ir gautą skaičių padalinti iš paketo
+dydžio.
 
 
 Rašymo veiksmai
-===============
+***************
 
 insert
-------
+======
 
 .. code-block:: sh
 
@@ -511,7 +801,7 @@ insert
 
 
 upsert
-------
+======
 
 `upsert` veiksmas pirmiausiai patikrina ar jau yra sukurtas objektas
 atitinkantis `_where` sąlygą, jei yra, tada vykdo `patch` veiksmą, jei nėra,
@@ -543,7 +833,7 @@ tada vykdo `update` veiksmą.
 
 
 update
-------
+======
 
 `update` veiksmas pilnai perrašo objektą. Jei tam tikros objekto savybės
 nenurodomos, data tū savybių reikšmės pakeičiamos pagal nutylėjimą
@@ -586,7 +876,7 @@ Jei reikšmės nepasikeitė, tada jos pateikiamos atsakyme.
 
 
 patch
------
+=====
 
 `patch` veikia panašiai, kaip ir `update`, tačiau objekto pilnai neperrašo,
 keičia tik tas savybes, kurios nurodytos.
@@ -615,7 +905,7 @@ keičia tik tas savybes, kurios nurodytos.
 
 
 delete
-------
+======
 
 Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
 žurnale ir gali būti atstatytas.
@@ -640,7 +930,7 @@ Trina objektą. Objektas pilnai nėra ištrinamas, jis vis dar lieka keitimų
 .. _wipe:
 
 wipe
-----
+====
 
 Pilnai ištrina objektą, įskaitant ir objekto pėdsakus keitimo žurnale. Tokiu
 būdu ištrinto objekto atstatyti neįmanoma.
@@ -678,7 +968,7 @@ būdu ištrinto objekto atstatyti neįmanoma.
 
 
 Grupiniai rašymo veiksmai
-=========================
+*************************
 
 Vienos HTTP užklausos metu galima vykdyti rašymo veiksmus grupei objektų. Tokiu
 būdu, veiksmai vykdomi vienoje duomenų bazės transakcijoje užtikrinant duomenų
@@ -687,7 +977,7 @@ vientisumą.
 Grupiniai veiksmai gali būti vykdomi dviem būdais, paprastuoju ir srautiniu.
 
 Paprastasis grupinis rašymas
-----------------------------
+============================
 
 Paprastasis grupinis rašymas vykdomas per POST užklausą, kurioje yra
 pateiktas `_data` masyvas veiksmų.
@@ -743,7 +1033,7 @@ skirtingiems modeliams, vykdant užklausą vardų erdvės kontekste.
 
 
 Srautinis grupinis rašymas
---------------------------
+==========================
 
 Paprastasis grupinis rašymas skirtas situacijoms, kai reikia atlikti veiksmus su
 nedidele grupe objektų. Tačiau jei objektų labai daug, galima vykdyti srautinį

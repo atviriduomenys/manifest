@@ -38,13 +38,18 @@ Dokumentacija sudaryta iš šių esminių dalių:
     priemones
 
 .. toctree::
+    :caption: Priemonės
+    :maxdepth: 3
+
+    katalogas
+    api/index
+    spinta
+
+.. toctree::
     :caption: Žinynas
     :maxdepth: 3
 
     dsa/index
-    katalogas
-    api/index
-    spinta
     savokos
 
 - :ref:`Rodyklė <genindex>`

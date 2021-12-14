@@ -40,14 +40,52 @@ __ https://www.python.org/downloads/
 Debian/Ubuntu
 -------------
 
-Kadangi Debian ir Ubuntu sisteminio Python versija dažnai yra senesnė,
-rekomenduojama įsidiegti naujausią Python versiją naudojant pyenv_ priemonę.
-Nebent, Debian ar Ubuntu naujausia versija yra nesenai išleista ir turi
-pakankamai naują, 3.9 ar vėlesnę python versiją.
+Pirmiausia, prieš atliekant diegimą, reikėtų pasirinkti kokiame failų
+sistemos kataloge diegsite priemones. Rekomenduojame diegti į `/opt/spinta`
+katalogą.
 
+Jei diegimą atliekate serveryje, tuomet verta sukurti atskirą naudotoją,
+kurio teisėmis bus leidžiamos priemonės, tai padaryti galite taip:
+
+.. code-block:: sh
+
+    $ sudo useradd --system --create-home --home-dir /opt/spinta spinta
+    $ sudo -u spinta -s --set-home
+    $ cd
+
+Toliau visus veiksmus atliksime `/opt/spinta` kataloge.
+
+Pirmiausia reikėtų įsitikinti ar jūsų naudojama distribucijos versija turi
+reikalinga Python versiją, tai galite pažiūrėti taip:
+
+.. code-block:: sh
+
+    $ python3 --version
+
+Jei turite 3.9 ar naujesnę versiją, tuomet galite pereiti prie
+:ref:`install-debian-python-packages` žingsnio.
+
+Naujesnę Python versiją galite įsidiegti pasirinkdami vieną iš dviejų galimų
+variantų:
+
+- :ref:`Variantas 1 <install-debian-pyenv>`: naudojant pyenv_, kuris atsisiūs
+  Python išeities kodą ir sukompiliuos reikiamą Python versiją. Šis variantas
+  yra universalesnis, tačiau sudėtingesnis ir reikalaujantis daugiau laiko.
+
+- :ref:`Variantas 2 <install-debian-ppa>` Naudojant PPA_ repozitoriumus, kurie
+  veiks tik Ubuntu aplinkoje, tačiau reikiamą Python versiją gausite žymiai
+  paprasčiau.
+
+.. _PPA: https://help.ubuntu.com/community/PPA
 .. _pyenv: https://github.com/pyenv/pyenv
 
-Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
+.. _install-debian-pyenv:
+
+Naujesnės Python versijos diegimas naudojant pyenv
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Pirmiausia mums reikia įdiegti pyenv_ ir visus šiai priemones ir Python
+kompiliavimui reikalingus paketus:
 
 .. code-block:: sh
 
@@ -60,23 +98,63 @@ Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
          xz-utils tk-dev libffi-dev liblzma-dev \
          python-openssl
     $ curl https://pyenv.run | bash
-    $ cd
-    $ PYVER=$(.pyenv/bin/pyenv install --list | grep -v - | grep 3.9. | tail -1 | xargs)
-    $ .pyenv/bin/pyenv install $PYVER
+
+Naujausios Python versijos diegimas naudojant pyenv_ daromas taip:
+
+.. code-block:: sh
+
+    $ .pyenv/bin/pyenv install 3.9.9
 
 Jei diegiate Spintą kitoje Linux distribucijoje, reikalingų paketų sąrašą
 galite rasti `pyenv dokumentacijoje`_.
 
 .. _pyenv dokumentacijoje: https://github.com/pyenv/pyenv/wiki#suggested-build-environment
 
-Kai jau turite tinkamą Python_ versiją, reikia sukurti izoliuotą aplinką į
-kurią bus diegiama Spinta:
+Atlikus naujos Python versijos diegimo veiksmus susikuriame izoliuotą aplinką,
+kurioje diegsime reikalingus Python paketus:
 
 .. code-block:: sh
 
-    $ .pyenv/versions/$PYVER/bin/python -m venv spinta
+    $ .pyenv/versions/3.9.9/bin/python -m venv venv
 
-Paskutinis žingsnis, Spinta paketo diegimas:
+
+.. _install-debian-ppa:
+
+Naujesnės Python versijos diegimas naudojant PPA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Naujausios Python versijos diegimas naudojant PPA_ daromas taip:
+
+Pirmiausiai mums reikia įdiegti PPA_ repozitoriumų valdymo priemones:
+
+.. code-block:: sh
+
+    $ sudo apt update
+    $ sudo apt install software-properties-common
+    $ sudo add-apt-repository ppa:deadsnakes/ppa
+
+Ir galiausiai įdiegiame pageidaujamą Python versiją:
+
+.. code-block:: sh
+
+    $ sudo apt update
+    $ sudo apt install python3.9 python3.9-venv
+
+Atlikus naujos Python versijos diegimo veiksmus susikuriame izoliuotą aplinką,
+kurioje diegsime reikalingus Python paketus:
+
+.. code-block:: sh
+
+    $ python3.9 -m venv venv
+
+
+.. _install-debian-python-packages:
+
+Python paketų diegimas
+~~~~~~~~~~~~~~~~~~~~~~
+
+Kai jau turite tinkamą Python_ versiją ir esate susikūrė izoliuotą Python
+aplinką, Spinta galima įdiegti taip:
 
 .. code-block:: sh
 
