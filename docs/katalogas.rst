@@ -1,5 +1,6 @@
 .. _katalogas:
 
+#########
 Katalogas
 #########
 
@@ -10,8 +11,8 @@ Organizacijos koordinatorių ir tvarkytojų aplinka yra skirta:
 - ataskaitų sudarymui.
 
 
-Naudojami terminai ir sąvokos
------------------------------
+Terminai ir sąvokos
+*******************
 
 „Laukas“
     Kabutėmis „“ žymimas duomenų įvedimo laukas, kur tarp kabučių rašomas lauko pavadinimas, matomas aprašomame lange.
@@ -61,11 +62,9 @@ El. Vartai
 |image2| Sąrašo rūšiavimas
     Sąrašą galima rikiuoti pagal bet kurį iš stulpelių: spauskite pasirinkto stulpelio pavadinimą arba |image2|.
 
-====
 
-
-Institucijos ir atstovaujančio koordinatoriaus registravimas
-------------------------------------------------------------
+Koordinatoriaus registravimas
+*****************************
 
 *Portale reikia registruoti savo instituciją ir vieną atstovaujantį
 koordinatorių.*
@@ -140,7 +139,6 @@ Registracija pasirinkus „Viešasis sektorius“
 
 Identifikavus tapatybę
 ======================
-
 
 *Tiek registruojantis kaip „Gyventojas“, tiek kaip „Viešasis sektorius“, po tapatybės nustatymo būsite nukreipti į puslapį „E. paslaugos“ arba į langą „Duomenų teikimas į Atvirų duomenų portalą“.*
 
@@ -232,7 +230,7 @@ Prisijungimas prie sistemos
 
 
 Pagrindinis meniu
------------------
+*****************
 
 *Pagrindinis meniu matomas prisijungus prie sistemos ir leidžia pasiekti aplinkos atributus:*
 
@@ -269,7 +267,7 @@ Pagrindinis meniu
 
 
 Paieška
--------
+*******
 
 Kairėje ekrano pusėje, meniu viršuje – tekstinis laukas skirtas meniu laukų paieškai.
 
@@ -308,8 +306,8 @@ Lange pateikiama lentelė, kurioje pateikta informacija apie organizacijos stati
 | *19 pav. Organizacijos tvarkytojo aplinkos pradinio lango fragmentas*
 
 
-Darbas su organizacijos AD tvarkytojais (Koordinatoriai)
---------------------------------------------------------
+Duomenų rinkinių tvarkytojai
+****************************
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -341,7 +339,6 @@ Sąrašo duomenis:
 
 ====
 
-
 \> **Redaguoti paskyras:**
 
 1. Sąraše pažymėkite reikiamą paskyrą ir lango meniu spauskite **[Redaguoti]**:
@@ -369,8 +366,8 @@ Sąrašo duomenis:
 3. Rikiuoti galima vienu metu tik pagal vieną kurį nors stulpelį.
 
 
-Darbas su organizacijos rekvizitais (Koordinatoriai)
-----------------------------------------------------
+Organizacijos rekvizitais
+*************************
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -419,8 +416,8 @@ Skiltyje **„2. Logotipas“** galite įkelti naują arba pakeisti įkeltą org
 | *25 pav. Rekvizitų redagavimo langas*
 
 
-Darbas su poreikiais (Koordinatoriai)
--------------------------------------
+Prašymai gauti duomenis
+***********************
 
 *Šis skyrius skirtas tik Koordinatoriams.*
 
@@ -600,8 +597,8 @@ Spauskite mygtuką **[Saugoti]**, norėdami išsaugoti atsakymą: atsakymas
 Poreikio patvirtinimo būsena po atsakymo gali būti pakeista pagal poreikį.
 
 
-Darbas su duomenų rinkiniais
-----------------------------
+Duomenų rinkiniai
+*****************
 
 Duomenys į Portalą keliami dviem būdais:
 
@@ -732,12 +729,55 @@ Duomenų rinkinio importavimas
 3. Įkelkite failą iš kompiuterio sekdami įkėlimo lango nuorodas.
 
 
-Naujo duomenų rinkinio sukūrimas
----------------------------------
+IRS rinkiniai
+=============
+
+| |image75|
+| *59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas*
+
+IRS rinkinių sąraše galima peržiūrėti tokią bendrą informaciją:
+
+- **Eil. nr.:** rinkinio numeris sąraše, sugeneruotas portale automatiškai;
+
+- **ID:** unikalus rinkinio identifikatorius sistemoje, sugeneruotas automatiškai importuojant rinkinį.
+
+	*Galima filtruoti (skaitinis);*
+
+- **Viešas:** rinkinio viešumo portalo viešoje aplinkoje būsena. Laukas žymimas varnele **[**\ |image76|\ **]**, jei rinkinys – viešas;
+
+- **Pavadinimas:** pilnas duomenų rinkinio pavadinimas.
+
+	*Galima filtruoti (tekstinis);*
+
+- **Tvarkytojas:** Organizacijos tvarkytojo, atsakingo už rinkinį, vardas ir pavardė.
+
+	*Galima filtruoti (tekstinis);*
+	
+	*Gali būti tuščias;*
+
+- **Atnaujintas:** data ir laikas, kada rinkinys buvo paskutinį kartą atnaujintas.
+
+====
+
+\> **Redaguoti IRS rinkinį:**
+
+1. Paspauskite ant IRS rinkinio, kurį norite peržiūrėti/ tikslinti/ sutvarkyti eilutės:
+
+| |image77|
+| *60 pav. IRS rinkinių sąrašo langas*
+
+*SVARBU: IRS rinkinį reikia pašalinti, jeigu duomenų rinkinys nebėra aktualus, arba jau yra įvesta naujas panašus duomenų rinkinys. IRS rinkinius galima redaguoti. Tikslinant IRS rinkinius galioja tos pačios taisyklės, kaip ir naujo duomenų rinkinio įvedimo atveju.*
+
+*Tikslinant IRS rinkinius rekomenduotina pakeisti „5. Metaduomenų“ lauko „Katalogas“ informaciją: iš „Duomenys iš IRS“ į „Lietuvos“. Atlikus šį pakeitimą duomenų rinkinys bus matomas tik bendrame „Duomenų rinkiniai“ sąraše, o „IRS rinkiniai“ sąraše šio duomenų rinkinio nebus.*
+
+*Sąrašas pildomas automatiškai, importuojant rinkinius iš atitinkamų portalų.*
 
 
-Inventorinimo duomenys
-======================
+Duomenų rinkinio forma
+**********************
+
+Inventorizacija
+===============
 
 1. Pagrindiniame meniu pasirinkite **[Duomenų rinkiniai]**.
 
@@ -783,10 +823,8 @@ Inventorinimo duomenys
 5. Tęskite kitų kortelių suvedimą. Siūlome kuriant naują rinkinį informaciją įvesti nuosekliai.
 
 
-
 Struktūra
 =========
-
 
 *Duomenų naudotojams bus aiškiau, kaip publikuojami duomenys, jei įkelsite ir struktūrą:*
 
@@ -831,10 +869,8 @@ Duomenų rinkinio struktūros lange pateikiama pagrindinė informacija:
 | *38 pav. „Šalinti failą“ patvirtinimo pranešimas*
 
 
-
 Prioritetai
 ===========
-
 
 *Pastaba: šiuo metu pildyti šios skilties laukų nėra privaloma.*
 
@@ -934,8 +970,8 @@ Kiekvienas iš formatų taip pat suteikia reitingą duomenų rinkiniui, remianti
 7. Tęskite kitų kortelių suvedimą.
 
 
-Finansiniai duomenys
-====================
+Finansai
+========
 
 *Pastaba: šiuo metu pildyti šios skilties laukų nėra privaloma.*
 
@@ -961,8 +997,8 @@ Finansiniai duomenys
 4. Jei norite, išsaugokite pakeitimus ir tęskite kitų kortelių suvedimą.
 
 
-Metaduomenų įvedimas
-====================
+Metaduomenys
+============
 
 *Rinkinys jau turi būti suinventorintas, turėti įvestus prioritetus ir finansinius duomenis.*
 
@@ -1058,15 +1094,13 @@ Metaduomenų įvedimas
 6. Spauskite **[Saugoti]** metaduomenų įvedimo lange, kad išsaugotumėte įvestus duomenis arba pakeitimus.
 
 
-====
+Distribucijos
+=============
 
+Rinkinio duomenys gali būti įkeliami, kai įkeltas duomenų struktūros
+aprašas **„2. Struktūra“**
 
-Duomenų distribucijos tvarkymas
-===============================
-
-*Rinkinio duomenys gali būti įkeliami, kai įkeltas duomenų rinkinio struktūros failas *\ **„2. Struktūra“**
-
-1. Duomenų rinkinio lango meniu spauskite **[6. Duomenys]**.
+1. Duomenų rinkinio lango meniu spauskite **[6. Duomenys]**.
 
 2. Sistema parodys duomenų įkėlimui skirtą langą.
 
@@ -1107,7 +1141,7 @@ nurodant šią informaciją:
 
 3. Įkelkite naują distribuciją:
 
-- kaip *failą*: spauskite **[+ Įkelti duomenų rinkinio distribucijos failą]**.
+- kaip *failą*: spauskite **[+Įkelti duomenų rinkinio distribucijos failą]**.
 
 - kaip *nuorodą*: spauskite **[+Įkelti duomenų distribucijos nuorodą]**.
 
@@ -1136,9 +1170,17 @@ nurodant šią informaciją:
 
 6. Jei distribuciją keliate kaip nuorodą, nuorodos įkėlimo lange vietoje suveskite papildomus privalomus laukus:
 
-- **Formatas*:**\ *iš sąrašo pasirinkite vieną duomenų distribucijos formatą;*
+.. _note-dist-url-type:
 
-- **Nuoroda*:**\ *nuoroda į distribuciją.*
+- **Formatas*:**\ * iš sąrašo pasirinkite vieną duomenų distribucijos formatą;*
+- **Nuoroda*:**\ * tiesioginė nuoroda į duomenų failą, kurį galima atsisiųsti.*
+
+.. note::
+
+    Jei pateikiate nuorodą, ne tiesiogiai į duomenų failą, o į svetainę,
+    kurioje publikuojami duomenys, tuomet **Formatas:** laukelyje pasirinkite
+    **URL**, kuris žymi, kad ši nuoroda yra ne į duomenis, o į svetainę iš
+    kurios galima atsisiųsti duomenis.
 
 | |image64|
 | *53 pav. Distribucijos nuorodos įkėlimo langas*
@@ -1164,8 +1206,8 @@ nurodant šią informaciją:
 ====
 
 
-Pateikti poreikiai
-------------------
+Prašymai gauti duomenis
+=======================
 
 1. Rinkinio peržiūros lango meniu pasirinkite skiltį **„Pateikti poreikiai“**.
 
@@ -1181,8 +1223,8 @@ Poreikių peržiūros lange galite tik peržiūrėti pateiktų poreikių informa
 - **Pastabos:** pastabos tekstas.
 
 
-Duomenų rinkinio istorijos peržiūra
-===================================
+Istorija
+========
 
 1. **Duomenų rinkinio lango** viršuje esančiame meniu pasirinkite skiltį **„Įvykių istorija“**.
 
@@ -1200,8 +1242,8 @@ Lange pateikti rinkinio istorijos duomenys, automatiškai kaupiami nuo duomenų 
 - **Komentaras:** koordinatoriaus paliktas komentaras redaguojant rinkinį (pvz., priežastys, kodėl tam tikri metaduomenų lango laukai palikti neužpildyti). Jei atliktas veiksmas nereikalavo paliekamo komentaro, laukas paliekamas tuščias.
 
 
-Duomenų rinkinio pastabų peržiūra
-=================================
+Pastabos
+========
 
 *Tvarkant duomenų rinkinių atvėrimo planus, gali būti pateiktos pastabos.*
 
@@ -1234,52 +1276,8 @@ Sąraše galite pasirinkti reikiamą pastabą, kad atvertumėte jos peržiūros 
 *Naujos pastabos pateikiamos, kai vyr. koordinatorius atmeta iš naujo nacionaliniam planui pateiktą organizacijos duomenų rinkinį.*
 
 
-Darbas su IRS rinkiniais
-------------------------
-
-| |image75|
-| *59 pav. IRS rinkinių sąrašo lango tvarkytojams fragmentas*
-
-IRS rinkinių sąraše galima peržiūrėti tokią bendrą informaciją:
-
-- **Eil. nr.:** rinkinio numeris sąraše, sugeneruotas portale automatiškai;
-
-- **ID:** unikalus rinkinio identifikatorius sistemoje, sugeneruotas automatiškai importuojant rinkinį.
-
-	*Galima filtruoti (skaitinis);*
-
-- **Viešas:** rinkinio viešumo portalo viešoje aplinkoje būsena. Laukas žymimas varnele **[**\ |image76|\ **]**, jei rinkinys – viešas;
-
-- **Pavadinimas:** pilnas duomenų rinkinio pavadinimas.
-
-	*Galima filtruoti (tekstinis);*
-
-- **Tvarkytojas:** Organizacijos tvarkytojo, atsakingo už rinkinį, vardas ir pavardė.
-
-	*Galima filtruoti (tekstinis);*
-	
-	*Gali būti tuščias;*
-
-- **Atnaujintas:** data ir laikas, kada rinkinys buvo paskutinį kartą atnaujintas.
-
-====
-
-\> **Redaguoti IRS rinkinį:**
-
-1. Paspauskite ant IRS rinkinio, kurį norite peržiūrėti/ tikslinti/ sutvarkyti eilutės:
-
-| |image77|
-| *60 pav. IRS rinkinių sąrašo langas*
-
-*SVARBU: IRS rinkinį reikia pašalinti, jeigu duomenų rinkinys nebėra aktualus, arba jau yra įvesta naujas panašus duomenų rinkinys. IRS rinkinius galima redaguoti. Tikslinant IRS rinkinius galioja tos pačios taisyklės, kaip ir naujo duomenų rinkinio įvedimo atveju.*
-
-*Tikslinant IRS rinkinius rekomenduotina pakeisti „5. Metaduomenų“ lauko „Katalogas“ informaciją: iš „Duomenys iš IRS“ į „Lietuvos“. Atlikus šį pakeitimą duomenų rinkinys bus matomas tik bendrame „Duomenų rinkiniai“ sąraše, o „IRS rinkiniai“ sąraše šio duomenų rinkinio nebus.*
-
-*Sąrašas pildomas automatiškai, importuojant rinkinius iš atitinkamų portalų.*
-
-
-Darbas su metiniais planais
----------------------------
+Atvėrimo planas
+***************
 
 *Metiniai planai sudaromi ruošiantis duomenų rinkinių atvėrimui.*
 
@@ -1431,8 +1429,8 @@ Plano patvirtinimas organizacijos vardu
 | *68 pav. Plano patvirtinimo organizacijos vardu langas*
 
 
-Ataskaitų formavimas
---------------------
+Ataskaitos
+**********
 
 - Ataskaitoje **Atvirų duomenų rinkinių naudojimo intensyvumo detalūs duomenys** pateikiami duomenys apie *duomenų rinkinių* panaudojimą nurodytu laikotarpiu;
 
@@ -1472,7 +1470,6 @@ Ataskaitų kūrimas
 
 Paruoštų ataskaitų valdymas
 ===========================
-
 
 \> **Rikiuoti stulpelį abėcėlės arba atvirkštine tvarka:**
 
@@ -1650,8 +1647,7 @@ Ataskaitos laukai (\* – privalomi):
 .. _partnerių-api:
 
 Partnerių API
--------------
-
+*************
 
 *Partnerių API operacijas galima vykdyti tik su organizacijai suteiktu API raktu.*
 
@@ -1741,8 +1737,6 @@ Metaduomenis galite atnaujinti taip:
 
         ?>
 
-
-
 Net jei distribucijos nuoroda nesikeičia, reikėtų įvykdyti šią API užklausą,
 kiekvieną kartą, kai buvo atnaujinti duomenys.
 
@@ -1755,7 +1749,7 @@ kviesti.
 
 
 Slaptažodžio keitimas
----------------------
+*********************
 
 1. Prisijunkite prie sistemos.
 
