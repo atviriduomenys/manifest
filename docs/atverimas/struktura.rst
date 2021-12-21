@@ -234,15 +234,15 @@ klaidas.
 Pasirašant duomenų atvėrimo sutartį, suderintas ŠDSA variantas pateikiamas,
 kaip sutarties priedas.
 
+Pasirašius sutartį, Teikėjas perduoda Atvėrėjui Katalogo API raktą, kad
+Atvėrėjas galėtų automatiškai atnaujinti atveriamo duomenų rinkinio
+metaduomenis.
+
 
 .. _adsa-publikavimas:
 
 ADSA publikavimas
 =================
-
-Pasirašius sutartį, Teikėjas perduoda Atvėrėjui Katalogo API raktą, kad
-Atvėrėjas galėtų automatiškai atnaujinti atveriamo duomenų rinkinio
-metaduomenis.
 
 Atvėrėjas ŠDSA pagrindu generuoja ADSA variantą, kuriame pašalinami visi
 atveriamo duomenų šaltinio metaduomenys ir paliekama tik ta dalis, kuri skirta

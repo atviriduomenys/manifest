@@ -375,20 +375,20 @@ Formatas
 ********
 
 Saugykloje duomenys saugomi taip, kad juos būtų galima gauti įvairiais
-skirtingais formatais.
+formatais.
 
 Reikia atkreipti dėmesį, kad nors Saugykla gali duomenis grąžinti įvairiais
 formatais, tačiau nėra galimybės duomenis gauti konkretaus formato schemos
 pavidalu. Pavyzdžiui turint naujienų duomenis, nėra galimybės tokių duomenų
-gauti RSS_ formatu. Pats savaime RSS naudojam XML formatą, tačiau RSS yra
-konkreti XML formato schema.
+gauti RSS_ formatu. Pats savaime RSS yra konkreti XML formato schema. Todėl
+Saugykla gali grąžinti duomenis XML formatu, specifine Saugyklose schema.
+
+.. _RSS: https://en.wikipedia.org/wiki/RSS
 
 Saugykloje palaikomi tik bendrieji formatai, specializuoti, tam tikros
 srities formatai nepalaikomi. Norint gauti duomenis tam tikru specializuotu
 formatu, Saugykloje teikiamus duomenis reikia konvertuoti į pageidaujamą
 specializuotą formatą.
-
-.. _RSS: https://en.wikipedia.org/wiki/RSS
 
 Siekiant užtikrinti duomenų perdavimo ir skirtingų formatų palaikymą, visiems
 duomenų laukams, modeliams ir vardų erdvėms taikomi :ref:`kodinių pavadinimų
@@ -396,9 +396,9 @@ duomenų laukams, modeliams ir vardų erdvėms taikomi :ref:`kodinių pavadinim�
 <rezervuoti-pavadinimai>` pateikiami su `_` prefiksu, tokiu būdu atskiriant
 duomenis, nuo metaduomenų.
 
-Grąžinant duomenis tam tikru formatu, gražinamų duomenų schema priklauso nuo
-:ref:`užklausos pobūdžio <actions>`. Pavyzdžiui, jei duomenų prašoma `getone`
-būdu, tuomet rezultatas bus:
+Grąžinant duomenis tam tikru formatu, gražinamų duomenų schema gali būti
+skirtinga :ref:`skirtingo pobūdžio užklausoms <actions>`. Pavyzdžiui, jei
+duomenų prašoma `getone` būdu, JSON formatu, tuomet rezultatas bus:
 
 .. code-block:: json
 
@@ -430,6 +430,8 @@ rezultatas:
 
     _type,_id,data
     ...,...,...
+
+Rezervuotų laukų sąrašas pateiktas skyriuje :ref:`rezervuoti-pavadinimai`.
 
 
 Ryšiai tarp objektų
@@ -756,6 +758,12 @@ dydžio paketais, galima duomenų skaitymą atlikti taip:
 `limit(1)`
     Ribojame grąžinamų objektų skaičių iki 10, tai reiškia, kad mūsų paketo
     dydis bus 10 objektų.
+
+    .. todo: NotImplemented
+
+    Gražinamų duomenų kiekį galima riboti ne tik įrašų skaičiumi, tačiau ir
+    duomenų kiekiu, nurodant `limit("1M")`, kur `1M` reiškia gražinamų duomenų
+    kiekį megabaitais.
 
 `_id>"36cec98e-7237-43a5-ad2a-58cf29d65e96"`
     Atrenkame tik tuos duomenis, kurie yra didesni už nurodytą reikšmę, šiuo

@@ -930,20 +930,69 @@ Visi šie struktūros ar pačių duomenų pasikeitimai fiksuojami papildomos
 :data:`migrate` dimensijos pagalba, kuri gali būti naudojama, bet kurios kitos
 dimensijos kontekste.
 
+.. note::
+    Migracijos naudojamos tik tuo atveju, kai keičiasi duomenų struktūra arba
+    patys duomenys. Jei keičiasi tik metaduomenys, tai migracijų sąraše
+    neatsispindi.
+
+== == == == == =============== ======== === ========================= ===== ============================= ===================
+id d  r  b  m  property        type     ref prepare                   level title                         description
+== == == == == =============== ======== === ========================= ===== ============================= ===================
+1                              migrate                                      2021-12-21\ |nbsp|\ 16:29     Pirmoji migracija.
+2                              migrate  1                                   2021-12-21\ |nbsp|\ 16:33     Antroji migracija.
+3                              migrate  2                                   2022-06-21\ |nbsp|\ 16:41     Trečioji migracija.
+\  datasets/example/migrate
+-- --------------------------- -------- --- ------------------------- ----- ----------------------------- -------------------
+\           Country                     id
+-- -- -- -- ------------------ -------- --- ------------------------- ----- ----------------------------- -------------------
+\              id              integer                                4
+-- -- -- -- -- --------------- -------- --- ------------------------- ----- ----------------------------- -------------------
+\              code            string                                 3
+\                              migrate  1   create(level:\ |nbsp|\ 2)
+\                              migrate  3   update(level:\ |nbsp|\ 3)
+\              name            string
+\                              migrate  2   create()
+== == == == == =============== ======== === ========================= ===== ============================= ===================
+
+Pavyzdyje aukščiau matome, kad šis duomenų struktūros aprašas turi tris
+migracijas:
+
+1. Pirmosios migracijos metu sukuriamas pradinis duomenų struktūros variantas.
+   Pirmoji migracija nežymima prie modelių ir duomenų laukų, nebent daromas
+   keitimas, tuomet įtraukiam ir pirmoji migracija, kad būtų matoma, kas
+   keitėsi. Būtent toks atvejis parodytas prie `Country.code` lauko, kuri
+   trečiojo migracijoje keičiamas brandos lygis.
+
+2. Antrosios migracijos metu buvo įtrauktas naujas duomenų laukas
+   `Country.name`.
+
+3. Trečiosios migracijos metu, buvo keičiami `Country.code` lauko duomenys,
+   pakeitimo metu brandos lygis buvo pakeltas iki trečio. Atkreipkite dėmesį,
+   kad metaduomenų pasikeitimas, kaip šiuo atveju, žymimas migracijose tik tuo
+   atveju, jei tai yra susiję su pačių duomenų pasikeitimu.
+
+   Jei brandos lygis būtų pakeistas, nekeičiant pačių duomenų, tuomet tokio
+   pakeitimo nereikėtų įtraukti į migracijų sąrašą.
+
+   Kadangi trečiojoje migracijoje buvo atliktas su ankstesne versija
+   nesuderinamas pakeitimas, tai šios migracijos data yra 6 mėnesiai
+   ateityje, kadangi nesuderinamos migracijos pirmiausia paskelbiamos, o
+   įgyvendinamos tik praėjus 6 mėnesiams nuo paskelbimo.
+
 .. data:: migrate
 
-    .. data:: migrate.ref
+    .. data:: migrate.id
 
         Migracijos numeris (UUID). Kiekvienos migracijos metu gali būti
         atliekama eilė operacijų, visos operacijos fiksuojamos naudojant
         migracijos numerį.
 
         Visų migracijų sąrašas pateikiamas, kai :data:`migrate` nepriklauso
-        jokiam dimensijos kontekstui. Migracijų eiliškumas yra svarbus.
+        jokiam dimensijos kontekstui.
 
-    .. data:: migrate.source
+    .. data:: migrate.ref
 
-        Ankstesnės migracijos numeris, pateiktas :data:`migrate.ref` stulpelyje,
+        Ankstesnės migracijos numeris, pateiktas :data:`migrate.id` stulpelyje,
         arba tuščia, jei prieš tai jokių kitų migracijų nebuvo.
 
         Naudojamas jei :data:`migrate` nepatenka į jokios dimensijos kontekstą.
@@ -955,20 +1004,22 @@ dimensijos kontekste.
 
         Migracijos operacija. Galimos tokios operacijos:
 
-        .. function:: create(**kwargs)
+        .. function:: create()
 
             Priklausomai nuo dimensijos konteksto, prideda naują modelį, arba
             savybę.
 
-            Funkcijai galima perduoti `name` ir kitus vardinius argumentus,
+            Funkcijai galima perduoti `ref` ir kitus vardinius argumentus,
             kurie atitinka :term:`DSA` lentelės metaduomenų stulpelių
             pavadinimus.
 
-        .. function:: update(**kwargs)
+        .. function:: update()
 
-            Priklausomai nuo dimensijos konteksto, keičia modelį ar savybę.
+            Taikomas tik duomenų laukams ir nurodo, kad buvo pakeistos esamų
+            duomenų reikšmės, keičiant reikšmių dimensiją, matavimo vienetus,
+            formatą ir kita.
 
-            Funkcijai galima perduoti `name` ir kitus vardinius argumentus,
+            Funkcijai galima perduoti `ref` ir kitus vardinius argumentus,
             kurie atitinka :term:`DSA` lentelės metaduomenų stulpelių
             pavadinimus.
 
@@ -995,7 +1046,8 @@ dimensijos kontekste.
 
     .. data:: migrate.title
 
-        Migracijos data ir laikas.
+        Migracijos įvykdymo data ir laikas. Migracijos laikas ir data gali
+        būti ir ateityje, tuo atveju, jei daromas nesuderinamas keitimas.
 
         Naudojamas tik tada, kai :data:`migrate` nepatenka į jokios dimensijos
         kontekstą.

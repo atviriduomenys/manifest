@@ -144,3 +144,60 @@ atsisiųsti duomenis tiek po vieną įrašą, tiek visus vienu kartu.
 
 Metaduomenų atnaujinimas
 ************************
+
+:ref:`Pasirašius sutartį <atvėrimo-sutartis>`, Teikėjas perduoda Katalogo API
+raktą Atvėrėjui, kuris automatiškai per Katalogo Partnerių API atnaujinam
+atvertų duomenų metaduomenis ir po kiekvieno duomenų atnaujinimo siunčia
+pranešimą per API į Katalogą apie tai, kad duomenys buvo sėkmingai atnaujinti.
+
+Tokiu būdu Katalogas gali patikrinti, kad duomenys atnaujinami nustatytu
+periodiškumu.
+
+Plačiau apie metaduomenų atnaujinimą galite skaityti
+:ref:`distribucijos-metaduomenų-atnaujinimas` skyriuje ir `Katalogo Partnerių
+API dokumentacijoje`__.
+
+__ https://data.gov.lt/partner/api/1
+
+
+.. _struktūros-pasikeitimų-valdymas:
+
+Struktūros pasikeitimų valdymas
+*******************************
+
+Siekiant užtikrinti atvertų duomenų kokybę, pasikeitimai duomenų struktūroje
+turi būti daromi aiškiai apibrėžtu ir kontroliuojamu būdu.
+
+Atvirų duomenų naudotojai, užsiregistravę portale, turi galimybę gauti
+pranešimus apie planuojamus duomenų struktūros pasikeitimus. Prieš darant
+pakeitimus, kurie yra nesuderinami su anksčiau publikuota duomenų struktūra
+(toliau Nesuderinami pakeitimai), duomenų naudotojai turi būti informuojami
+prieš 6 mėnesius, kad turėtų pakankamai laiko atsinaujinti savo turimas
+integracijas.
+
+Nesuderinami pakeitimai yra:
+
+- anksčiau publikuoto duomenų lauko, modelio ar vardų erdvės pavadinimo
+  keitimas,
+- anksčiau publikuoto duomenų lauko, modelio ar vardų erdvės panaikinimas,
+- anksčiau publikuoto duomenų lauko tipo keitimas,
+- anksčiau publikuoto duomenų lauko reikšmių mastelio, vienetų ar formato
+  keitimas, nekeičiant duomenų tipo.
+
+Vis šie, su anksčiau publikuota struktūros versija nesuderinami pakeitimai,
+galo būti daromi tik įspėjus apie planuojamus pakeitimus, prieš šešis
+mėnesius. Pakeitimai gali būti atliekami praėjus 6 mėnesiams nuo įspėjimo.
+
+Naujų vardų erdvių, modelių ar duomenų laukų įtraukimas yra su ankstesne
+struktūros versija suderinamas pakeitimas, nereikalaujantis išankstinio
+įspėjimo.
+
+Duomenų naudotojų informavimas apie struktūros ar duomenų pasikeitimus
+darotas atvirų duomenų Kataloge, pateikiant naują duomenų struktūros versiją,
+kurioje pažymėta, kas keičiasi, nurodant datą 6 mėnesius į priekį. Įkėlus
+tokį duomenų struktūros aprašą, Kataloge užsiregistravę duomenų naudotojai
+bus automatiška informuojami apie planuojamus struktūros pasikeitimus,
+nurodant data į priekį, kada jie įsigalios.
+
+Apie struktūros pasikeitimų žymėjimą skaitykite skyriuje
+:ref:`struktūros-keitimas`.
