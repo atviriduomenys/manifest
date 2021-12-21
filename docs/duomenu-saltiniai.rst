@@ -111,7 +111,7 @@ Tarkime turime tokius duomenis CSV formatu. CSV failuose reikšmės atskirtos ne
 įprastiniu `,` simboliu, o `;` simboliu.
 
 =======  =========  ==============
-https://example.com/salys.csv
+\https://example.com/salys.csv
 ==================================
 ID       KODAS      PAVADINIMAS
 100      lt         Lietuva
@@ -120,7 +120,7 @@ ID       KODAS      PAVADINIMAS
 =======  =========  ==============
 
 =======  =========  ==============
-https://example.com/miestai.csv
+\https://example.com/miestai.csv
 ==================================
 ID       ŠALIS      PAVADINIMAS
 204      100        Vilnius
