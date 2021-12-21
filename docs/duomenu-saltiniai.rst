@@ -107,13 +107,11 @@ Taip pat skaitykite: :ref:`duomenų-atranka`, :ref:`resource-type-sql`.
 CSV
 ===
 
-Tarkime turime tokius duomenis CSV formatu. Kad nebūtu viskas taip paprasta, CSV
-failai pateikti ZIP archyve, adresu \https://example.com/data.zip. Ir kad dar
-butų sunkiau, CSV faile reikšmės atskirtos ne įprastiniu `,` simboliu, o `;`
-simboliu. Archyvo viduje yra tokios lentelės:
+Tarkime turime tokius duomenis CSV formatu. CSV failuose reikšmės atskirtos ne
+įprastiniu `,` simboliu, o `;` simboliu.
 
 =======  =========  ==============
-salys.csv
+https://example.com/salys.csv
 ==================================
 ID       KODAS      PAVADINIMAS
 100      lt         Lietuva
@@ -122,7 +120,7 @@ ID       KODAS      PAVADINIMAS
 =======  =========  ==============
 
 =======  =========  ==============
-miestai.csv
+https://example.com/miestai.csv
 ==================================
 ID       ŠALIS      PAVADINIMAS
 204      100        Vilnius
@@ -135,39 +133,72 @@ ID       ŠALIS      PAVADINIMAS
 
 :term:`Duomenų aprašas <DSA>` atrodys taip:
 
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-| id | d | r | b | m | property | type    | ref       | source                        | prepare           | access  |
-+====+===+===+===+===+==========+=========+===========+===============================+===================+=========+
-|  1 | datasets/example/csv     |         |           |                               |                   |         |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  2 |   | salys_zip            | zip     |           | \https://example.com/data.zip |                   |         |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  3 |   | salys                | csv     | salys_zip | {}.csv                        | tabular(sep: ";") |         |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  4 |   |   |   | Country      |         | id        | salys                         | code="lt"         |         |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  5 |   |   |   |   | id       | integer |           | ID                            |                   | private |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  6 |   |   |   |   | code     | string  |           | KODAS                         |                   | open    |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  7 |   |   |   |   | name     | string  |           | PAVADINIMAS                   |                   | open    |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  8 |   |   |   | City         |         | id        | miestai                       | country.code="lt" |         |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-|  9 |   |   |   |   | id       | integer |           | ID                            |                   | private |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-| 10 |   |   |   |   | country  | ref     | Country   | ŠALIS                         |                   | open    |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
-| 11 |   |   |   |   | name     | string  |           | PAVADINIMAS                   |                   | open    |
-+----+---+---+---+---+----------+---------+-----------+-------------------------------+-------------------+---------+
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+| id | d | r | b | m | property | type    | ref       | source                      | prepare           | access  |
++====+===+===+===+===+==========+=========+===========+=============================+===================+=========+
+|  1 | datasets/example/csv     |         |           |                             |                   |         |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  2 |   | salys                | csv     |           | \https://example.com/{}.csv | tabular(sep: ";") |         |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  3 |   |   |   | Country      |         | id        | salys                       | code="lt"         |         |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  4 |   |   |   |   | id       | integer |           | ID                          |                   | private |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  5 |   |   |   |   | code     | string  |           | KODAS                       |                   | open    |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  6 |   |   |   |   | name     | string  |           | PAVADINIMAS                 |                   | open    |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  7 |   |   |   | City         |         | id        | miestai                     | country.code="lt" |         |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  8 |   |   |   |   | id       | integer |           | ID                          |                   | private |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+|  9 |   |   |   |   | country  | ref     | Country   | ŠALIS                       |                   | open    |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
+| 10 |   |   |   |   | name     | string  |           | PAVADINIMAS                 |                   | open    |
++----+---+---+---+---+----------+---------+-----------+-----------------------------+-------------------+---------+
 
-Kadangi CSV failai yra sudėti į ZIP archyvą, reikia nurodyti, kad prieš skaitant
-duomenis, CSV failai turi būti išskleisti iš archyvo, tam naudojam
-:func:`func.extract` funkciją. Prieš skaitant duomenis, :func:`tabular.sep`
-nurodo, kad CSV faile naudojamas nestandartinis reikšmių skirtukas,
-kabliataškis.
+CSV duomenų resursas, pavadinimu `salys` nurodo iš kur skaityti duomenis ir
+kokiu formatu. Nurodant adresą iki CSV failo `https://example.com/{}.csv`
+naudojama vietos žymė `{}`, kuri pakeičiama modelio šaltinio pavadinimu,
+kuris nurodytas :data:`model.source` stulpelyje.
+
+Prieš skaitant duomenis, :func:`tabular.sep` nurodo, kad CSV faile naudojamas
+nestandartinis reikšmių skirtukas, kabliataškis.
 
 Visa kita aprašoma lygiai taip pat, kaip ir SQL atveju.
+
+
+ZIP
+===
+
+Tais atvejais, kai duomenys pateikiami failais, o failai pateikiami tam
+tikruose failų konteineriuose, pavyzdžiui ZIP archyvuose, tuomet aprašomi du
+skirtingi šaltiniai, kurie yra susiję vienas su kitu.
+
+Pavyzdžiui turint analogišką pavyzdį, kaip ir su CSV failais, tik jei CSV
+failai būtų patalpinti ZIP archyve, duomenų struktūros aprašas atrodytų taip:
+
+== == == == ======== ======== ============= ==============================
+d  r  b  m  property type     ref           source
+== == == == ======== ======== ============= ==============================
+datasets/example/zip
+-------------------- -------- ------------- ------------------------------
+\  archyvas          zip                    \https://example.com/data.zip
+-- ----------------- -------- ------------- ------------------------------
+\  salys             csv      archyvas      {}.csv
+-- ----------------- -------- ------------- ------------------------------
+\        Country              id            salys
+-- -- -- ----------- -------- ------------- ------------------------------
+\           id       integer                ID
+-- -- -- -- -------- -------- ------------- ------------------------------
+\           code     string                 KODAS
+\           name     string                 PAVADINIMAS
+== == == == ======== ======== ============= ==============================
+
+Šiame pavyzdyje matome, kad atsirado naujas resursas pavadinimu `archyvas`
+rodantis į ZIP archyvo failą. Tuo tarpu CSV resursas pavadinimu `salys`,
+:data:`resource.ref` stulpelyje, rodo, kad CSV failai yra `archyvas` resurso
+sudėtyje.
 
 
 JSON
@@ -467,11 +498,9 @@ _id   country      name
 7     3            Talinas
 ====  ===========  =================
 
+
 Spinta
 ======
-
-Last data source example using same data source to transfer all country and
-city data from all other data sources into on globale data source under
 
 Paskutinis pavyzdys atliekant transformaciją tos pačios duomenų saugyklos
 viduje. Visi duomenys aukščiau aprašytuose pavyzdžiuose bus apjungiami ir

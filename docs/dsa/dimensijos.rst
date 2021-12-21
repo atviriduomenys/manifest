@@ -222,14 +222,34 @@ nurodomas duomenų šaltinio identifikatorius iš :term:`ADK`.
 
         .. _ODT: https://en.wikipedia.org/wiki/OpenDocument
 
+    .. describe:: zip
+
+        ZIP_ failų archyvas.
+
+        .. _ZIP: https://en.wikipedia.org/wiki/ZIP_(file_format)
+
 .. data:: resource.source
 
     Priklauso nuo :data:`resource.source`. Žiūrėti :ref:`resource`.
 
 .. data:: resource.ref
 
-    Duomenų šaltinio duomenų kataloge identifikatorius. Priklauso nuo
-    dataset.type reikšmės.
+    Resurso kodinis pavadinimas, kuris yra apibrėžtas atskirai duomenų
+    struktūros apraše, ar konfigūracijos failuose.
+
+    Kai vienas resursas nurodo kitą, tuomet aprašomas resursas išplečia kitą
+    resursą į kurį rodo arba naudoja kitą resursą, kaip konteinerį, kuriame
+    saugomi duomenys.
+
+    Išplėtimo atveju, galima pateikti tam tikro resurso konfidencialius
+    duomenis, tokius, kaip slaptažodis, atskirai nuo duomenų struktūros aprašo,
+    konfigūracijos failuose, o duomenų struktūros apraše išplėsti resursą,
+    pateikiant ne konfidencialius duomenis.
+
+    Tokiais atvejais, kaip duomenų failai saugomi ZIP archyvuose arba FTP
+    serveryje, galima atskirai aprašyti ZIP ar FTP resursą, o po to, aprašant
+    konkretų duomenų failo resursą, pateikti nuorodą, kuriame kitame resurse
+    aprašomas failas yra.
 
 .. data:: resource.level
 
