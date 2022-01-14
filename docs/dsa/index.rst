@@ -22,7 +22,6 @@ kokybę, vientisumą ir viso proceso stebėseną.
 duomenims (:term:`ADSA`) ir dar neatvertiems duomenims (:term:`ŠDSA`).
 
 
-
 .. toctree::
     :maxdepth: 2
 
