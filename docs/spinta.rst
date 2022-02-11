@@ -158,14 +158,14 @@ aplinką, Spinta galima įdiegti taip:
 
 .. code-block:: sh
 
-    $ spinta/bin/pip install spinta
+    $ venv/bin/pip install spinta
 
 Galiausiai, įdiegus Spinta paketą, reikia aktyvuoti izoliuotą aplinką, kad
 galėtumėte toliau dirbti su Spinta paketo teikiama komanda `spinta`:
 
 .. code-block:: sh
 
-    $ source spinta/bin/activate
+    $ source venv/bin/activate
 
 Tai padarius, galite patikrinti ar komanda `spinta` veikia:
 
@@ -183,7 +183,7 @@ Tai padarius, galite patikrinti ar komanda `spinta` veikia:
 
     .. code-block:: sh
 
-        $ source spinta/bin/activate
+        $ source venv/bin/activate
 
     Python virtualios aplinkos aktyvavimas galioja tol, kol yra aktyvi terminalo
     sesija.
@@ -665,7 +665,7 @@ saugyklą tokiu būdu:
 
 .. code-block:: sh
 
-    $ spinta push sdsa.csv -o spinta+https://ivpk@put.data.gov.lt
+    $ spinta push sdsa.csv -o ivpk@put.data.gov.lt
 
 Dar vienas dalykas, į kurį reikėtu atkreipti dėmesį yra būsenos ir objektų
 identifikatorių failai. Kadangi `spinta push` komanda į Saugyklą siunčia tik
