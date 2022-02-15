@@ -61,7 +61,7 @@ HDD
        Šios lentelės dydis tiesiogiai proporcingas šaltinio įrašų skaičiui ir
        šaltinio lentelių pirminių raktų dydžiui.
 
-       Vidutiniškai, 1^6 įrašų telpa į 200Mb.
+       Vidutiniškai, 10^6 įrašų telpa į 200Mb.
 
     2. Perduodamų duomenų būsenos lentelė, kuri saugoma
        `~/.local/share/spinta/push` kataloge. Kiekvienai saugyklai į kurią
@@ -77,7 +77,7 @@ HDD
        Saugomas išorinis pirminis raktas, visų perduodamų duomenų sha1 ir
        data, kad buvo perduoti duomenys paskutinį kartą.
 
-       Vidutiniškai, 1^6 įrašų talpa į 200Mb.
+       Vidutiniškai, 10^6 įrašų talpa į 200Mb.
 
     Apytiksliai, vienam milijonui įrašų reikėtų turėti bend 0.5G laisvos
     disko vietos.
