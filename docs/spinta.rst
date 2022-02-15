@@ -26,6 +26,62 @@ Diegimas
 Techniniai reikalavimai
 -----------------------
 
+Techniniai reikalavimai gali skirtis, priklausomai nuo to, kokiu tikslu
+naudojama Spinta priemonė. Jei naudojama tik duomenų atvėrimui, o ne
+publikavimui tuomet užtenka:
+
+CPU
+    1 CPU, šiuo metu perduodant duomenis nėra naudojamas lygiagretinimas,
+    todėl bus naudojamas tik vienas CPU, ateityje tai gali keistis.
+
+RAM
+    512Mb, duomenys skaitomi srautiniu būdu, todėl nepriklausomai nuo
+    šaltinio dydžio, naudojamas fiksuotas RAM kiekis.
+
+    Vienas Spinta procesas naudoja apie 100Mb RAM.
+
+HDD
+    Priklauso nuo duomenų kiekio.
+
+    Duomenų perdavimui iš šaltinio į saugyklą, saugomi papildomi duomenys:
+
+    1. Vidinių ir publikuojamų pirminių raktų sąsaja, saugoma
+       `~/.local/share/spinta/keymap.db` Sqlite duomenų bazėje. Duomenys
+       atrodo taip::
+
+           bb969358-ce9e-4255-b596-c748f6885332|bf8b4530d8d246dd74ac53a13471bba17941dff7|BINDATA...
+           522a3615-8527-4eb7-8327-977fe4383dcd|c4ea21bb365bbeeaf5f2c654883e56d11e43c44e|BINDATA...
+           9be3e60b-d557-4596-a370-660f3c337772|9842926af7ca0a8cca12604f945414f07b01e13d|BINDATA...
+           60c2f4da-c32a-4fba-a39a-8e85252a77ad|a42c6cf1de3abfdea9b95f34687cbbe92b9a7383|BINDATA...
+           ab2baaa6-508d-4069-9a45-53bce46676ca|8dc00598417d4eb788a77ac6ccef3cb484905d8b|BINDATA...
+
+       Saugomas išorinis raktas, vidinio rakto sha1 ir vidinio rakto reikšmė
+       MsgPack formatu.
+
+       Šios lentelės dydis tiesiogiai proporcingas šaltinio įrašų skaičiui ir
+       šaltinio lentelių pirminių raktų dydžiui.
+
+       Vidutiniškai, 1^6 įrašų telpa į 200Mb.
+
+    2. Perduodamų duomenų būsenos lentelė, kuri saugoma
+       `~/.local/share/spinta/push` kataloge. Kiekvienai saugyklai į kurią
+       perduodami duomenys sukuriama atskira būsenos lentelė, Sqlite formatu.
+       Būsenos duomenys atrodo taip::
+
+           bb969358-ce9e-4255-b596-c748f6885332|5d28bd0ccad38701a5fcc775259b91e53bf3b1b3|2022-02-10 13:26:39.255110
+           522a3615-8527-4eb7-8327-977fe4383dcd|0711b352478dda05732c4448e689aa9246986911|2022-02-10 13:26:39.255602
+           9be3e60b-d557-4596-a370-660f3c337772|ea85925a127b84a30d7be40daa150236954a39f6|2022-02-10 13:26:39.255976
+           60c2f4da-c32a-4fba-a39a-8e85252a77ad|7d5d3486ff456a2419476c4d7e6b2a73ae7bca22|2022-02-10 13:26:39.256167
+           ab2baaa6-508d-4069-9a45-53bce46676ca|fe5e2696e1768bc40ecce6b7418723d06e62a53a|2022-02-10 13:26:39.256342
+
+       Saugomas išorinis pirminis raktas, visų perduodamų duomenų sha1 ir
+       data, kad buvo perduoti duomenys paskutinį kartą.
+
+       Vidutiniškai, 1^6 įrašų talpa į 200Mb.
+
+    Apytiksliai, vienam milijonui įrašų reikėtų turėti bend 0.5G laisvos
+    disko vietos.
+
 Duomenų atvėrimo priemonė Spinta yra sukurta naudojant Python_ technologiją.
 Todėl prieš diegiant, jūsų naudojamoje aplinkoje turi būti `įdiegta`__ Python
 3.9 arba naujesnė versija.
