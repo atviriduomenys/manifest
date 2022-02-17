@@ -650,6 +650,35 @@ Tai galima padaryti tokiu būdu:
 .xlsx`, papildant juos naujais metaduomenimis iš šaltinio.
 
 
+.. _šdsa-testavimas:
+
+ŠDSA testavimas prieš publikuojant
+==================================
+
+Kai jau yra parengtas ŠDSA variantas iš kurio galima atverti duomenis
+pirmiausia reikia patikrinti are ŠDSA yra be klaidų. Tai galima padaryti šios
+komandos pagalba:
+
+.. code-block:: sh
+
+    $ spinta check sdsa.xlsx
+
+Jei klaidų nėra, tuomet papildomai, galima paleisti duomenų publikavimo
+priemonę, kuri duomenis publikuos tiesiai iš pirminio duomenų šaltinio. Duomenų
+publikavimas iš pirminio šaltinio turi tam tikrų apribojimų, tačiau ši galimybė
+leidžia peržiūrėti, kaip atrodys publikuojami duomenys, prie juos publikuojan
+viešai.
+
+Kaip atrodys publikuojami duomenys, galite peržiūrėti taip:
+
+.. code-block:: sh
+
+    $ spinta run --mode external sdsa.xlsx
+
+Ši komanda paleis HTTP serverį 127.0.0.1:8000 adresu, atsidarę šį adresą
+naršyklėje galėsite peržiūrėti kaip atrodo duomenys.
+
+
 .. _šdsa-vertimas-į-adsa:
 
 ŠDSA vertimas į ADSA
