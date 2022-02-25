@@ -107,10 +107,9 @@ duomenų struktūros apraše nurodytas transformacijas.
         Skaičiai užrašyti tais pačiais vienetais, tačiau nėra nurodyta kokie
         tai vienetai, todėl neaišku, kaip interpretuoti šiuos skaičius.
 
-        Įmonių pavadinimai nurodyti naudojanti valstybinį įmonių registrą,
-        tačiau pavadinimai gali keistis, todėl geriausia vietoj pavadinimo
-        naudoti tam tikrus identifikatorius, pavyzdžiui įmonės registracijos
-        numerį.
+        Įmonių pavadinimai nors ir surašyti vienodu formatu, tačiau nesutampa
+        su juridinių asmenų registro pavadinimais, todėl tokių duomenų jungimas
+        nėra įmanomas.
 
     .. describe:: 3
 
@@ -129,18 +128,24 @@ duomenų struktūros apraše nurodytas transformacijas.
 
         **Pavyzdžiai**
 
-        ============== =========== ================= ===================
-        datos          vienetai    pavadinimai       numeriai
-        ============== =========== ================= ===================
-        2021-09-01     1           123456790         +37011111111
-        2021-09-02     2           123456791         +37022222222
-        2021-09-03     3           123456782         +37033333333
-        2021-09-04     4           123456783         +37044444444
-        ============== =========== ================= ===================
+        ============== =========== =================== ===================
+        datos          vienetai    pavadinimai         numeriai
+        ============== =========== =================== ===================
+        2021-09-01     1           UAB "Pavadinimas"   +37011111111
+        2021-09-02     2           UAB "Įmonė"         +37022222222
+        2021-09-03     3           UAB "Organizacija"  +37033333333
+        2021-09-04     4           UAB "Grupė"         +37044444444
+        ============== =========== =================== ===================
 
         Šiuo atveju, visos reikšmės pateiktos standartinėmis formomis.
         Vienetai pateikti ne prie skaičių, o atskirai metaduomenyse
         :data:`property.ref` stulpelyje.
+
+        Įoonių pavadinimai sutampa su juridinių asmenų registro pavadinimais ir
+        atsiranda galimybė juos jungi. Tačiau suteiktas 3 brandos lygis,
+        kadangi pavadinimai nėra patikimas duomenų jungimo būdas. Pavadinimai
+        gali keistis, gali dubliuotis, todėl duomenų jungimas gali būti
+        nepatikimas.
 
     .. describe:: 4
 
@@ -176,22 +181,28 @@ duomenų struktūros apraše nurodytas transformacijas.
         =============== ============ ============ =============== =============
         _id             datos        vienetai     pavadinimai     numeriai
         =============== ============ ============ =============== =============
-        353e3a6d941b    2021-09-01   1            101ea064649b    +37011111111
-        16d7418b8e1c    2021-09-02   2            1c0fa5297c0d    +37022222222
-        495b9fb0f0b1    2021-09-03   3            0f14859b357a    +37033333333
-        0a539b7e7e3c    2021-09-04   4            b14377855766    +37044444444
+        353e3a6d941b    2021-09-01   1            123456790       +37011111111
+        16d7418b8e1c    2021-09-02   2            123456791       +37022222222
+        495b9fb0f0b1    2021-09-03   3            123456782       +37033333333
+        0a539b7e7e3c    2021-09-04   4            123456783       +37044444444
         =============== ============ ============ =============== =============
 
         Šiame pavyzdyje kiekvienam objektui arba kiekvienai lentelės eilutei
         yra sutiktas unikalus identifikatorius `_id`, kurio reikšmė niekada
-        nesikeičia. Taip pat vietoj pavadinimu naudojami nesikeičiantys
-        identifikatoriai.
+        nesikeičia.
 
-        Kadangi kiekviena duomenų lentelės eilutė turi identifikatorių, todėl
-        visi kiti stulpeliai įgauna 4 brandos lygį. Tai reiškia, kad 4
-        brandos lygis susijęs, ne su konkrečių stulpelių reikšmėmis, o su tuo,
-        ar eilutė, kurioje yra stulpelio reikšmė, turi unikalų identifikatorių
-        ar ne.
+        Vietoj įmonės pavadinimu naudojami nesikeičiantys identifikatoriai,
+        šiuo atveju įmonės registracijos numeris. Registracijos numeris
+        užtikrina, kad kiekviena įmonė turi unikalų identifikatorių iš
+        juridinių asmenų registro ir tai suteikia galimybę duomenis jungti
+        patikimai.
+
+        Kadangi lentelė turi unkalų identifikatorių `_id`, kuris yra nustatomas
+        :data:`model.ref` stulpelyje, todėl visi kiti stulpeliai, gali įgauti 4
+        brandos lygį. Jei lentelė neturi unikalaus identifikatoriaus, tuomet,
+        net jei prie atskirų stulpelių yra nudytas 4 ar 5 brandos lygis, tačiau
+        letelės kontekste, tokie stulpeliai bus ne didesnio nei 3 brandos
+        lygio.
 
         Rengiant duomenų struktūros aprašą, šiais identifikatoriais pasirūpinama
         automatiškai, jums reikia tik užpildyti `model.ref` ir pažymėti ryšius
