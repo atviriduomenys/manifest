@@ -35,6 +35,19 @@ Duomenų tipai
 
     Sveikoji dalis atskiriama `.` simbolių.
 
+.. describe:: binary
+
+    Dvejetainiai duomenys. Bendras baitų skaičius turi būti ne didesnis nei 1G.
+
+
+.. _text-types:
+
+Tekstiniai duomenys
+===================
+
+Tekstiniai duomenys skirstomi į du skirtingus tipus `string` ir `text`.
+
+
 .. describe:: string
 
     Simbolių eilutė. Neriboto dydžio, tačiau fiziškai simbolių eilutė turėtu
@@ -42,20 +55,41 @@ Duomenų tipai
 
     Simboliu eilutė turėtu būti pateikta UTF-8 koduote.
 
+    Šiuo tipu žymimi duomenų laukai, kuriuose tekstas pateiktas ne žmonių
+    kalba. Tai gali būti įvairūs kategoriniai duomenys, identifikatoriai ar
+    kito pobūdžio simbolių eilutės, kurios nėra užrašytos natūraliąja žmonių
+    kalba.
+
+
 .. describe:: text
 
-    Žmonių kalba užrašytas tekstas, nurodant kalbą naudojant `ISO 639-1`_
-    kodus. Tekstas gali būti pateiktas keliomis kalbomis. Tekste gali būti
-    naudojamos TEI_ žymės.
+    Natūraliaja žmonių kalba užrašytas tekstas.
 
-    Tekstas turėtu būti pateikta UTF-8 koduote.
+    Galima nurodyti kokia kalba užrašytas tekstas naudojant `ISO 639-1`_ kodus.
+    Kalbos kodas nurodomas :data:`property` stulpelyje, prie pavadinimo įrašant
+    `@<kodas>`, kur `<kodas>` yra pakeičiamas į dviejų raidžių kalbos kodą.
+    Pavyzdžiui `pavadinimas@lt`.
 
     .. _ISO 639-1: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+    Tekstas turėtu būti pateikta UTF-8 koduote. Jei šaltinyje tekstas nėra
+    UTF-8 koduotės, tuomet galima :data:`prepare` stulepyje įrašoų formulių
+    pagalba galima nurodyti transformavimo taisykles iš šatinio naudojamos į
+    UTF-8 koduotę.
+
+
+    :data:`property.ref` galima pateikti teksto formatą, nadojant vieną iš šių
+    formatų:
+
+    - `html` - tekstas pateiktas HTML_ formatu.
+    - `md` - tekstas pateiktas Markdown_ formatu.
+    - `rest` - tekstas pateitkas reStructuredText_ formatu.
+    - `tei` - tekstas pateiktas TEI_ formatu.
+
+    .. _HTML: https://en.wikipedia.org/wiki/HTML
+    .. _Markdown: https://spec.commonmark.org/
+    .. _reStructuredText: https://docutils.sourceforge.io/rst.html
     .. _TEI: https://en.wikipedia.org/wiki/Text_Encoding_Initiative
-
-.. describe:: binary
-
-    Dvejetainiai duomenys. Bendras baitų skaičius turi būti ne didesnis nei 1G.
 
 
 .. _temporal-types:
