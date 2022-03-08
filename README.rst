@@ -21,7 +21,7 @@ Pilnai parengti struktūros aprašai publikuojami `Kataloge <adk>`_.
 Duomenų parengimo atvėrimui procesas
 ====================================
 
-Dirbant prie duomenų atverimo, kiekvienam duomenų rinkiniui sukuriama po
+Dirbant prie duomenų atvėrimo, kiekvienam duomenų rinkiniui sukuriama po
 atskirą `GitHub užduotį <issues>`_, o užduotys valdomos `GitHub projekto
 lentoje <board>`.
 
@@ -31,11 +31,11 @@ lentoje <board>`.
 
     Prie užduoties nurodoma organizacijos, kuriai priklauso rinkinys žymė.
 
-2.  Kai pradedamas rengti duomenų rinkinio štaltinio struktūros aprašas (ŠDSA),
-    tuoment užduotis perkeliama į ŠDSA būseną.
+2.  Kai pradedamas rengti duomenų rinkinio šaltinio struktūros aprašas (ŠDSA),
+    tuomet užduotis perkeliama į ŠDSA būseną.
 
 3.  Kai jau yra parengtas ŠDSA, tuomet sukuriamas naujas `GitHub pull request
-    <gh-pr>`_, kurio šakoje įkeliamas ŠDSA pargrindu parengtas ADSA CSV failas.
+    <gh-pr>`_, kurio šakoje įkeliamas ŠDSA pagrindu parengtas ADSA CSV failas.
 
     ADSA CSV failai įkeliami į katalogą, kuris atitinka struktūros apraše
     nurodytą vardų erdvę.
@@ -48,14 +48,14 @@ lentoje <board>`.
     suteikiamas ADSA statusas.
 
 4.  Peržiūrėjus ADSA Pull request, jei yra klaidų, užduotis grąžinama į ŠDSA
-    būsiną. Apie pastebėtas klaidas informauojama Pull request komentaruose.
+    būseną. Apie pastebėtas klaidas informuojama Pull request komentaruose.
 
-    Jei klaidų nėra tuoment, jei duomenys pageidaujama publikuoti
-    get.data.gov.lt, tuoment struktūra įtraukiaia į get.data.gov.lt serverį.
+    Jei klaidų nėra tuomet, jei duomenys pageidaujama publikuoti
+    get.data.gov.lt, tuomet struktūra įtraukiama į get.data.gov.lt serverį.
 
     Galiausiai užduotis perkeliama į „Atvėrimas“ būseną.
 
-5.  Kai duomenų atv€rimas pilnai baigtas, tuomet užduočiai suteikiama būsena
+5.  Kai duomenų atvėrimas pilnai baigtas, tuomet užduočiai suteikiama būsena
     „Atverta“.
 
 
