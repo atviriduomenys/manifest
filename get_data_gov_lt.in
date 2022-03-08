@@ -12,4 +12,5 @@ datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
 datasets/gov/lsd/namu_ukio_biudzetas.csv
 datasets/gov/lsd/covid19.csv
+datasets/gov/lsd/informacines_technologijos.csv
 datasets/gov/kaunas/daugiabuciai.csv
