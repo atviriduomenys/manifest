@@ -1,0 +1,49 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lst/terms,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Status,,,,,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
+,,,,,name,string,,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,Language,,,,,,,,,,Kalbos ir jų dviraidžiai kodai
+,,,,,code,string,,,,,open,,,
+,,,,,description,string,,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,RelationType,,,,,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
+,,,,,name,string,,,,,open,,,
+,,,,,bidirectional,boolean,,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,Domain,,,,,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
+,,,,,name,string,,,,,open,,,
+,,,,,path,string,,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,RelatedTerm,,,,,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
+,,,,,term,ref,Term,,,,open,,,
+,,,,,related_term,ref,Term,,,,open,,,
+,,,,,type,ref,RelationType,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,Attachment,,,,,,,,,,"Grafiniai priedai (JPG formatu) – paveikslai, formulės"
+,,,,,name,string,,,,,open,,,
+,,,,,file,file,,,,,open,,,
+,,,,,term,ref,Term,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,TermDomain,,,,,,,,,,Taikymo sritis (standartizacija ir metrologija)
+,,,,,term,ref,Term,,,,open,,,
+,,,,,domain,ref,Domain,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,Translation,,,,,,,,,,Termino atitikmenys kitomis kalbomis
+,,,,,translation,string,,,,,open,,,
+,,,,,language,ref,Language,,,,open,,,
+,,,,,term,ref,Term,,,,open,,,
+,,,,,,,,,,,,,,
+,,,,Term,,,,,,,,,,"Termino straipsnis (tinkamumo kategorija, sukirčiuotas terminas, apibrėžtis, pastabos, simbolis, straipsnio nr. standarte, pagrindinis žodis)"
+,,,,,created,datetime,,,,,open,,,
+,,,,,updated,datetime,,,,,open,,,
+,,,,,status,ref,Status,,,,open,,,
+,,,,,term_acc,string,,,,,open,,,
+,,,,,abbreviation,string,,,,,open,,,
+,,,,,article_no,string,,,,,open,,,
+,,,,,symbol,string,,,,,open,,,
+,,,,,text,string,,,,,open,,,
+,,,,,note,string,,,,,open,,,
+,,,,,keyword,string,,,,,open,,,

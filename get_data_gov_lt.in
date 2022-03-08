@@ -1,0 +1,15 @@
+datasets/gov/lst/standards.csv
+datasets/gov/lst/terms.csv
+datasets/gov/vpt/new.csv
+datasets/gov/vpt/old.csv
+datasets/gov/vpt/sutartys.csv
+datasets/gov/vmi/gpm.csv
+datasets/gov/vmi/gyventoju_islaidos.csv
+datasets/gov/rc/ar/savivaldybe.csv
+datasets/gov/rc/ar/apskritis.csv
+datasets/gov/lsd/sveikata.csv
+datasets/gov/lsd/svietimas.csv
+datasets/gov/lsd/darbo_uzmokestis.csv
+datasets/gov/lsd/namu_ukio_biudzetas.csv
+datasets/gov/lsd/covid19.csv
+datasets/gov/kaunas/daugiabuciai.csv

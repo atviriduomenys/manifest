@@ -1,0 +1,35 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kaunas/daugiabuciai,,,,,,,,,,,,Kauno miesto savivaldybės teikiami duomenys,"Kauno miesto daugiabučiai namai (3 ir daugiau butų), kuriems reikalingi bendro naudojimo objektų valdytojai"
+,,,,,,,,,,,,,,
+,,,,InformacijaApiePastatus,,,id,,,,,,"Daugiabučiai, valdytojai",
+,,,,,id,integer,,,,,open,,Namo ID,Namo indentifikacinis numeris sistemoje
+,,,,,gatves_id,integer,,,,,open,,Gatvės ID,"Gatvės ID, kurioje yra namas"
+,,,,,namo_nr,string,,,,,open,,Namo numeris,Namo numeris
+,,,,,namo_pap_info,string,,,,,open,,Namo papildoma informacija,Papildoma informacija apie namą.
+,,,,,namo_plotas,number,,,,,open,,Namo plotas,Namo plotas
+,,,,,butu_sk,string,,,,,open,,Butų skaičius,Butų skaičius
+,,,,,negyvenamu_skaicius,integer,,,,,open,,Negyvenamų butų skaičius,Negyvenamų butų skaičius name
+,,,,,statybos_metai,string,,,,,open,,Statybos metai,Statybos metai.
+,,,,,tarifas,number,,,,,open,,Administravimo tarifas,Namo administravimo tarifas
+,,,,,aukstu_sk,string,,,,,open,,Aukštų skaičius,Namo aukštų skaičius
+,,,,,zemes_plotas,number,,,,,open,,Žemės plotas,Namo žemės plotas.
+,,,,,bukle,string,,,,,open,,Būklės ID,Namo būklės indentifikacinis numeris.
+,,,,,pabaigos_data,string,,,,,open,,Pabaigos data,Namo renovacijos pabaigimo data.
+,,,,,skyrimo_pagrindas,string,,,,,open,,Skyrimo pagrindas,Data kada namo valdytojas buvo įregistruotas registrų centre arba kada sudaryta sutartis ir įsakymo numeris.
+,,,,,administravimo_pabaiga,date,,,,,open,,Administravimo pabaiga,Namo administravimo pabaigos data.
+,,,,,ar_perduotas,integer,,,,,open,,Perdavimo būsenos ID,Namo perdavimo kitam valdytojui būsenos indentifikacinis numeris.
+,,,,,atlikti_darbai,string,,,,,open,,Atlikti darbai,Name atlikti darbai
+,,,,,seniunija,string,,,,,open,,Seniūnija,Seniūnijos pavadinimas
+,,,,,gatve,string,,,,,open,,Gatvė,Gatvės pavadinimas
+,,,,,bukles_pav,string,,,,,open,,Būklė,Namo būklės pavadinimas.
+,,,,,valdymo_forma,string,,,,,open,,Valdymo forma,Valdymo formos pavadinimas.
+,,,,,vald_pav,string,,,,,open,,Valdytojas,Namo valdytojo pavadinimas.
+,,,,,vald_asmuo,string,,,,,open,,Valdytojo atsakingas asmuo,Namo valdytojo atsakingas asmuo
+,,,,,telefonas,string,,,,,open,,Atsakingo asmens telefonas,Namo valdytojo atsakingo asmens telefono numeris.
+,,,,,pareigu_pav,string,,,,,open,,Atsakingo asmens pareigos,Namo valdytojo atsakingo asmens pareigos.
+,,,,,perduotas_pav,string,,,,,open,,Perdavimo būsenos pavadinimas,Namo perdavimo kitam valdytojui būsenos pavadinimas.
+,,,,,rangovas,string,,,,,open,,Rangovas,Namo rangovo pavadinimas.
+,,,,,koord_x,number,,,,,open,,X koordinatė,X koordinatė LKS94 
+,,,,,koord_y,number,,,,,open,,Y koordinatė,Y koordinatė LKS94
+,,,,,lng,number,,,,,open,,Ilgumos koordinatės,"Ilguma, WGS84"
+,,,,,lat,number,,,,,open,,Platumos koordinatės,Platuma WGS84

@@ -1,8 +1,0 @@
-name: politika/rinkimai/kandidatas/pomegis
-title: Pomėgis
-type: model
-version:
-  number: 1
-  date: 2019-01-23
-properties:
-  pavadinimas: {type: string}

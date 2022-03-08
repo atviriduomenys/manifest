@@ -1,8 +1,0 @@
-type: dataset
-name: datasets/gov/vpt/raw/old
-version:
-  number: 1
-  date: 2020-01-23
-resources:
-  mssql:
-    type: sql

@@ -1,9 +1,0 @@
-dist: xenial
-language: python
-python: 3.7
-
-install:
-  - pip install -r requirements-dev.txt -e .
-
-script:
-  - spinta check
