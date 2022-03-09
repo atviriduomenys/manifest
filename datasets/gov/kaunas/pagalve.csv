@@ -5,6 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,integer,,,,,open,,ID,
 ,,,,,dt_nuo,date,,,,,open,,Pradžios data,periodo pradžios data
 ,,,,,dt_iki,date,,,,,open,,Pabaigos data,periodo pabaigos data
-,,,,,suma,number,,,,,open,,suma,suma eurais
+,,,,,suma,currency,EUR,,,,open,,suma,suma eurais
 ,,,,,subjektu_kiekis,integer,,,,,open,,asmenų kiekis,paslaugą teikiančių asmenų kiekis
 ,,,,,objektu_kiekis,integer,,,,,open,,objektų kiekis,paslaugos teikimo vietų (objektų) kiekis
