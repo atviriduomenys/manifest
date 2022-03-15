@@ -77,7 +77,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,jobisco,integer,,,,,open,,Profesija,
 ,,,,,locnace,string,,,,,open,,Pagrindinė darbovietės ekonominės veiklos rūšis,
 ,,,,,hhnbpers,integer,,,,,open,,Namų ūkio narių skaičius (įskaitant respondentą),
-,,,,,hhnbpers_0_4,integer,,,,,open,,4 metų ir jaunesnių vaikų skaičius namų ūkyje,
+,,,,,hhnbpers_0_4,string,,,,,open,,4 metų ir jaunesnių vaikų skaičius namų ūkyje,
 ,,,,,hhnbpers_5_13,integer,,,,,open,,5 − 13 metų amžiaus vaikų skaičius namų ūkyje,
 ,,,,,hhnbpers_14_15,integer,,,,,open,,14 − 15 metų amžiaus vaikų skaičius namų ūkyje,
 ,,,,,hhnbpers_16_24,integer,,,,,open,,16 − 24 metų amžiaus asmenų skaičius namų ūkyje,
