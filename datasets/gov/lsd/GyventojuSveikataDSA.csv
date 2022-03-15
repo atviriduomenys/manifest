@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,birthplace,integer,,,,,open,,Gimimo šalis,
 ,,,,,,enum,,,10,,,,Lietuvos Respublika,
 ,,,,,,,,,21,,,,ES šalis,
-,,,,,,,,,22,,,,Ne ES šalis,
+,,,,,,,,,24,,,,Ne ES šalis,
 ,,,,,citizen,integer,,,,,open,,Pilietybė,
 ,,,,,,enum,,,10,,,,Lietuvos Respublikos,
 ,,,,,,,,,21,,,,Kitos ES šalies ,
