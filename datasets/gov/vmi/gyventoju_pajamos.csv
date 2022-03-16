@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eil_num,integer,,,,4,open,,Pajamų kilmės kodo eilės numeris,
 ,,,,,metai,date,Y,,,4,open,,Metai,
 ,,,,,sav_kodas,string,,,,1,open,,Savivaldybės kodas,
-,,,,,sav_pavadinimas@lt,text,,,,4,open,,Savivaldybės pavadinimas,
+,,,,,sav_pavadinimas,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kodas_gpmi,string,,,,4,open,,GPM klasifikatorius,
 ,,,,,,enum,,,'B',,,,Darbo pajamos ir socialinės išmokos,
 ,,,,,,,,,'C',,,,Individualios veiklos pajamos,
@@ -14,4 +14,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'F',,,,Kitos pajamos,
 ,,,,,kodas,string,,,,3,open,,Pajamų kilmės kodas,
 ,,,,,suma,currency,EUR,,,4,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę."
-,,,,,aprasas@lt,text,,,,3,open,,Pajamų kilmės aprašas,
+,,,,,aprasas,string,,,,3,open,,Pajamų kilmės aprašas,
