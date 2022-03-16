@@ -1,11 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,,,,,,,,,,,,https://www.w3.org/ns/person#,,
-,,,,,,,,,,,,https://data.gov.lt/pii/,,
-,datasets,,,,,,,,,,,,Duomenų rinkmenos,
-,datasets/gov,,,,,,,,,,,,Valstybinių įstaigų duomenų rinkiniai,
-,datasets/gov/lsd,,,,,,,,,,,,LSD duomenų rinkiniai,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+,datasets/gov/lsd/informacines_technologijos,,,,,,,,,,,,LSD duomenų rinkiniai,
 ,,,,,,,,,,,,,,
 ,,,,ItAsmenu2012,,,,,,,,,Informacinių technologijų naudojimas namų ūkiuose 2012 m.,Lietuvos statistikos departamento atlikti tyrimai
 ,,,,,cu,integer,,,,,open,,Kada Jūs paskutinį kartą naudojotės kompiuteriu?,
