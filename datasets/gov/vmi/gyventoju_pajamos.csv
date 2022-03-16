@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GyventojuPajamos,,,,,,,,,Duomenys apie mokėtojo deklaruotas pajamas,
 ,,,,,eil_num,integer,,,,4,open,,Pajamų kilmės kodo eilės numeris,
 ,,,,,metai,date,Y,,,4,open,,Metai,
-,,,,,sav_kodas,string,,,,1,open,,Savivaldybės kodas,
+,,,,,sav_kodas,string,,,,3,open,,Savivaldybės kodas,
 ,,,,,sav_pavadinimas,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kodas_gpmi,string,,,,4,open,,GPM klasifikatorius,
 ,,,,,,enum,,,'B',,,,Darbo pajamos ir socialinės išmokos,
@@ -13,5 +13,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'E',,,,Palūkanos,
 ,,,,,,,,,'F',,,,Kitos pajamos,
 ,,,,,kodas,string,,,,3,open,,Pajamų kilmės kodas,
-,,,,,suma,double,,,,4,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę."
+,,,,,suma,number,,,,3,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę"
 ,,,,,aprasas,string,,,,3,open,,Pajamų kilmės aprašas,
