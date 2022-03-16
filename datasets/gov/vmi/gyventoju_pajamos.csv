@@ -13,5 +13,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'E',,,,Palūkanos,
 ,,,,,,,,,'F',,,,Kitos pajamos,
 ,,,,,kodas,string,,,,3,open,,Pajamų kilmės kodas,
-,,,,,suma,currency,EUR,,,4,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę."
+,,,,,suma,double,,,,4,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę."
 ,,,,,aprasas,string,,,,3,open,,Pajamų kilmės aprašas,
