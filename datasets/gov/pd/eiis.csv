@@ -1,117 +1,117 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,,,,,,,,,,,,,,
-,datasets/gov/pd/eiis,,,,,,,,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10100/EI_2013%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10093/EI_2014%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10094/EI_2015%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10095/EI_2016%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10096/EI_2017%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10097/EI_2018%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10098/EI_2019%2012%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/509/download/10099/EI_2020%2012%2031.json,,,,,,
-,,,,EismoIvykis,,,registrokodas,,,,,,,
-,,,,,registrokodas,string,,registrokodas,,3,open,,Registro kodas,
-,,,,,data_laikas,datetime,,dataLaikas,,3,open,,Įvykio data ir laikas,
-,,,,,registravimo_data,datetime,,registravimoData,,3,open,,Registravimo data,
-,,,,,paskutinio_redagavimo_laikas,datetime,,paskutinioRedagavimoLaikas,,3,open,,Paskutinio redagavimo data,
-,,,,,iskaitinis,integer,,iskaitinis,,3,open,,Iskaitinis,
-,,,,,rusis,string,,rusis,,3,open,,Rušis,
-,,,,,schema1,string,,schema1,,3,open,,Schema 1,
-,,,,,schema2,string,,schema2,,3,open,,Schema 2,
-,,,,,dalyviu_skaicius,integer,,dalyviuSkaicius,,3,open,,Dalyvių skaičius,
-,,,,,zuvusiu_skaicius,integer,,zuvusiuSkaicius,,3,open,,Žuvusių skaičius,
-,,,,,zuvo_vaiku,integer,,ZuvVaiku,,3,open,,Žuvusių vaikų skaičius,
-,,,,,suzeistu_skaicius,integer,,suzeistuSkaicius,,3,open,,Sužeistų skaičius,
-,,,,,suzeista_vaiku,integer,,suzeistaVaiku,,3,open,,Sužeistų vaikų skaičius,
-,,,,,tp_skaicius,integer,,tpSkaicius,,3,open,,Transporto priemonių skaičius,
-,,,,,policijos_tp_skaicius,integer,,policijosTpSkaicius,,3,open,,Policijos transporto priemonių skaičius,
-,,,,,apgadintu_tp_skaicius,integer,,apgadintuTpSkaicius,,3,open,,Apgadintų transporto priemonių skaičius,
-,,,,,apgadintu_policijos_tp_skaic,integer,,apgadintuPolicijosTpSkaicius,,3,open,,Apgadintų policijos transporto priemonių skaičius,
-,,,,,policijos_istaiga_l1,string,,policijosIstaigaL1,,3,open,,Policijos įstaiga 1,
-,,,,,policijos_istaiga_l2,string,,policijosIstaigaL2,,3,open,,Policjos įstaiga 2,
-,,,,,iforminusi_istaiga_l1,string,,iforminusiIstaigaL1,,3,open,,Įforminusi įstaiga 1,
-,,,,,iforminusi_istaiga_l2,string,,iforminusiIstaigaL2,,3,open,,Įformunusi įstaiga 2,
-,,,,,ivykio_vieta,string,,ivykioVieta,,3,open,,Įvykio vieta,
-,,,,,vietos_savivaldybe_tipas,string,,vietosSavivaldybeTipas,,3,open,,Savivaldybės tipas,
-,,,,,savivaldybe,string,,savivaldybe,,3,open,,Savivaldybė,
-,,,,,gatve,string,,gatve,,3,open,,Gatvė,
-,,,,,namas,string,,namas,,3,open,,Namas,
-,,,,,kita_gatve_sankryzoje,string,,kitaGatveSankryzoje,,3,open,,Kita gatvė (Jei įvykis įvyko sankryžoje),
-,,,,,kelio_pavadinimas,string,,kelioPavadinimas,,3,open,,Kelio pavadinimas,
-,,,,,kelio_reiksme,string,,kelioReiksme,,3,open,,Kelio reikšmė,
-,,,,,atstumas,number,,atstumas,,3,open,,Atstumas,
-,,,,,dangos_rusis,string,,dangosRusis,,3,open,,Kelio dangos rūšis,
-,,,,,dangos_bukle,string,,dangosBukle,,3,open,,Kelio dangos būklė,
-,,,,,paros_metas,string,,patosMetas,,3,open,,Paros metas,
-,,,,,kelio_apsvietimas,string,,kelioApsvietimas,,3,open,,Kelio apšvietimas,
-,,,,,meteo_salygos,string,,meteoSalygos,,3,open,,Meteorologinės sąlygos,
-,,,,,kitos_oro_salygos[],string,,kitosOroSalygos,,3,open,,Oro sąlygos,
-,,,,,kelio_gatves_kreive,string,,kelioGatvesKreive,,3,open,,Kelio gatvės kreivė,
-,,,,,nulemiantis_veiksnys,string,,nulemiantisVeiksnys,,3,open,,Nulemiantis veiksnys,
-,,,,,kiti_nul_veiksnys[],string,,kitiNuliamentysVeiksniai,,3,open,,Papildomi nulemiantys veiksniai,
-,,,,,atitvarai,string,,atitvarai,,3,open,,Atitvarai,
-,,,,,sankryzos_tipas,string,,sankryzosTipas,,3,open,,Sankryžos tipas,
-,,,,,kelio_elementas1,string,,kelioElementas1,,3,open,,Kelio elementas 1,
-,,,,,kelio_elementas2,string,,kelioElementas2,,3,open,,Kelio elementas 2,
-,,,,,privalomas_leistinas_greitis,integer,,privalomasLeistinasGreitis,,3,open,,Privalomas leistinas greitis,
-,,,,,leistinas_greitis,integer,,leistinasGreitis,,3,open,,Leistinas gretis,
-,,,,,neblaivus_kaltininkai,string,,neblaivusKaltininkai,,3,open,,Neblaivūs kaltininkai,
-,,,,,apsvaige_kaltininkai,string,,apsvaigeKaltininkai,,3,open,,Apsvaige kaltininkai,
-,,,,,atsisake_tikrintis_kaltininkai,string,,atsisakeTikrintisKaltininkai,,3,open,,Atsisake tikrintis balivumą kaltininkai,
-,,,,,ilguma,integer,,ilguma,,3,open,,Ilguma,
-,,,,,platuma,integer,,platuma,,3,open,,Platuma,
-,,,,,,,,,,,,,,
-,,,,Dalyvis,,,dalyvis_id,eismoDalyviai,,,,,,
-,,,,,eismo_ivykis,ref,EismoIvykis,...registrokodas,,,,,,
-,,,,,dalyvis_id,integer,,dalyvisId,,3,open,,Dalyvio ID,
-,,,,,kategorija,string,,kategorija,,3,open,,Kategorija,
-,,,,,dalyvio_tipas,string,,dalyvioTipas,,3,open,,Dalyvio tipas,
-,,,,,pasisalino,string,,pasisalino,,3,open,,Pasišalino,
-,,,,,asmuo_nezinomas,string,,asmuoNezinomas,,3,open,,Asmuo nežinomas,
-,,,,,lytis,string,,lytis,,3,open,,Lytis,
-,,,,,pilietybe,string,,pilietybe,,3,open,,Pilietybė,
-,,,,,amzius,integer,,amzius,,3,open,,Amžius,
-,,,,,neigalumas,string,,neigalumas,,3,open,,Neigalumas,
-,,,,,saugos_dirzas,string,,saugosDirzas,,3,open,,Saugos diržas,
-,,,,,vaiko_kedes_naudojimas,number,,vaikoKedesNaudojimas,,3,open,,Vaiko kėdutė,
-,,,,,saugos_salmo_naudojimas,number,,saugosSalmoNaudojimas,,3,open,,Saugos šalmas,
-,,,,,oro_pagalves,string,,oroPagalves,,3,open,,Oro pagalvės,
-,,,,,bukle,string,,bukle,,3,open,,Buklė,
-,,,,,detali_bukle,string,,detaliBukle,,3,open,,Detali buklė,
-,,,,,suzalojimo_mastas,string,,suzalojimoMastas,,3,open,,Sužalojimo mastas,
-,,,,,vairuotojo_kvalifikacija,string,,vairuotojoKvalifikacija,,3,open,,Vairuotojo klasifikacija,
-,,,,,vairavimo_stazas,integer,,vairavimoStazas,,3,open,,Vairavimo stažas,
-,,,,,busena,string,,busena,,3,open,,Būsena,
-,,,,,detali_busena,string,,detaliBusena,,3,open,,Detali būsena,
-,,,,,pap_busena,string,,papBusena,,3,open,,Papildoma būsena,
-,,,,,det_pap_busena,string,,detaliPapBusena,,3,open,,Detali papildoma būsena,
-,,,,,kaltininkas,string,,kaltininkas,,3,open,,Kaltininkas,
-,,,,,girtumas_promilemis,number,,girtumasPromilemis,,3,open,,Girtumas (promilėmis),
-,,,,,dalyvio_busena,string,,dalyvioBusena,,3,open,,Dalyvio būsena,
-,,,,,teisenos_stadija_busena,string,,teisenosStadijaBusena,,3,open,,Teisenos stadijos būsena,
-,,,,,dalyvio_ket_pazeidimai[],string,,dalyvioKetPazeidimai,,3,open,,Dalyvio KET pažeidimai,
-,,,,,transporto_priemone_id,integer,,tpId,,3,open,,Dalyvio tansporto priemonės ID,
-,,,,,,,,,,,,,,
-,,,,TransportoPriemone,,,tpId,eismoTranspPreimone,,,,,,
-,,,,,eismo_ivykis,ref,EismoIvykis,...registrokodas,,,,,,
-,,,,,tpid,integer,,tpId,,3,open,,Transporto priemonės ID,
-,,,,,reg_valstybe,string,,REG_VALSTYBE,,3,open,,Registracijos valstybė,
-,,,,,kategorija,string,,KATEGORIJA,,3,open,,Kategorija,
-,,,,,klase,string,,KLASE,,3,open,,Klasė,
-,,,,,marke,string,,MARKE,,3,open,,Markė,
-,,,,,modelis,string,,MODELIS,,3,open,,Modelis,
-,,,,,pagaminimo_metai,integer,,PAGAMINIMO_METAI,,3,open,,Pagaminimo metai,
-,,,,,pasisalino,string,,PASISALINO,,3,open,,Pasišalino,
-,,,,,ypatumai,string,,YPATUMAI,,3,open,,Ypatumai,
-,,,,,apgadinimai,string,,APGADINIMAI,,3,open,,Apgadinimai,
-,,,,,apdraustas_civilines,integer,,APDRAUSTAS_CIVILINES,,3,open,,Apdraustas civiliniu draudimu,
-,,,,,,choice,,1,1,,,,Taip,
-,,,,,,choice,,0,0,,,,Ne,
-,,,,,apdraustas_kasko,integer,,APDRAUSTAS_KASKO,,3,open,,Apdraustas kasko,
-,,,,,,choice,,1,1,,,,Taip,
-,,,,,,choice,,0,0,,,,Ne,
-,,,,,apgadinimai_kita,string,,APGADINIMAI_KITA,,3,open,,Kiti apgadinimai,
-,,,,,fizinis,string,,FIZINIS,,3,open,,Fizinis asmuo,
-,,,,,dalyvauti_vt_uzdrausta,string,,DALYVAUTI_VT_UZDRAUSTA,,3,open,,Dalyvauti eisme uždrausta,
-,,,,,nuliamiantys_gedimai,string,,NULIAMIANTIS_GEDIMAS,,3,open,,Nuliamentis gedimas,
-,,,,,pirminiai_smugiai[],string,,PIRMINIS_SMUGIS,,3,open,,Pirminis smūgis,
+﻿"id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description"
+";;;;;;;;;;;;;;"
+";datasets/gov/pd/eiis;;;;;;;;;;;;;"
+";;json2013;;;;json;;https://data.gov.lt/dataset/509/download/10100/EI_2013%2012%2031.json;;;;;;"
+";;json2014;;;;json;;https://data.gov.lt/dataset/509/download/10093/EI_2014%2012%2031.json;;;;;;"
+";;json2015;;;;json;;https://data.gov.lt/dataset/509/download/10094/EI_2015%2012%2031.json;;;;;;"
+";;json2016;;;;json;;https://data.gov.lt/dataset/509/download/10095/EI_2016%2012%2031.json;;;;;;"
+";;json2017;;;;json;;https://data.gov.lt/dataset/509/download/10096/EI_2017%2012%2031.json;;;;;;"
+";;json2018;;;;json;;https://data.gov.lt/dataset/509/download/10097/EI_2018%2012%2031.json;;;;;;"
+";;json2019;;;;json;;https://data.gov.lt/dataset/509/download/10098/EI_2019%2012%2031.json;;;;;;"
+";;json2020;;;;json;;https://data.gov.lt/dataset/509/download/10099/EI_2020%2012%2031.json;;;;;;"
+";;;;EismoIvykis;;;registrokodas;;;;;;;"
+";;;;;registrokodas;string;;registrokodas;;3;open;;Registro kodas;"
+";;;;;data_laikas;datetime;;dataLaikas;;3;open;;Ä®vykio data ir laikas;"
+";;;;;registravimo_data;datetime;;registravimoData;;3;open;;Registravimo data;"
+";;;;;paskutinio_redagavimo_laikas;datetime;;paskutinioRedagavimoLaikas;;3;open;;Paskutinio redagavimo data;"
+";;;;;iskaitinis;integer;;iskaitinis;;3;open;;Iskaitinis;"
+";;;;;rusis;string;;rusis;;3;open;;RuÅis;"
+";;;;;schema1;string;;schema1;;3;open;;Schema 1;"
+";;;;;schema2;string;;schema2;;3;open;;Schema 2;"
+";;;;;dalyviu_skaicius;integer;;dalyviuSkaicius;;3;open;;DalyviÅ³ skaiÄ¨ius;"
+";;;;;zuvusiu_skaicius;integer;;zuvusiuSkaicius;;3;open;;Å½uvusiÅ³ skaiÄ¨ius;"
+";;;;;zuvo_vaiku;integer;;ZuvVaiku;;3;open;;Å½uvusiÅ³ vaikÅ³ skaiÄ¨ius;"
+";;;;;suzeistu_skaicius;integer;;suzeistuSkaicius;;3;open;;SuÅ¾eistÅ³ skaiÄ¨ius;"
+";;;;;suzeista_vaiku;integer;;suzeistaVaiku;;3;open;;SuÅ¾eistÅ³ vaikÅ³ skaiÄ¨ius;"
+";;;;;tp_skaicius;integer;;tpSkaicius;;3;open;;Transporto priemoniÅ³ skaiÄ¨ius;"
+";;;;;policijos_tp_skaicius;integer;;policijosTpSkaicius;;3;open;;Policijos transporto priemoniÅ³ skaiÄ¨ius;"
+";;;;;apgadintu_tp_skaicius;integer;;apgadintuTpSkaicius;;3;open;;ApgadintÅ³ transporto priemoniÅ³ skaiÄ¨ius;"
+";;;;;apgadintu_policijos_tp_skaic;integer;;apgadintuPolicijosTpSkaicius;;3;open;;ApgadintÅ³ policijos transporto priemoniÅ³ skaiÄ¨ius;"
+";;;;;policijos_istaiga_l1;string;;policijosIstaigaL1;;3;open;;Policijos ÄÆstaiga 1;"
+";;;;;policijos_istaiga_l2;string;;policijosIstaigaL2;;3;open;;Policjos ÄÆstaiga 2;"
+";;;;;iforminusi_istaiga_l1;string;;iforminusiIstaigaL1;;3;open;;Ä®forminusi ÄÆstaiga 1;"
+";;;;;iforminusi_istaiga_l2;string;;iforminusiIstaigaL2;;3;open;;Ä®formunusi ÄÆstaiga 2;"
+";;;;;ivykio_vieta;string;;ivykioVieta;;3;open;;Ä®vykio vieta;"
+";;;;;vietos_savivaldybe_tipas;string;;vietosSavivaldybeTipas;;3;open;;SavivaldybÄ—s tipas;"
+";;;;;savivaldybe;string;;savivaldybe;;3;open;;SavivaldybÄ—;"
+";;;;;gatve;string;;gatve;;3;open;;GatvÄ—;"
+";;;;;namas;string;;namas;;3;open;;Namas;"
+";;;;;kita_gatve_sankryzoje;string;;kitaGatveSankryzoje;;3;open;;Kita gatvÄ— (Jei ÄÆvykis ÄÆvyko sankryÅ¾oje);"
+";;;;;kelio_pavadinimas;string;;kelioPavadinimas;;3;open;;Kelio pavadinimas;"
+";;;;;kelio_reiksme;string;;kelioReiksme;;3;open;;Kelio reikÅmÄ—;"
+";;;;;atstumas;number;;atstumas;;3;open;;Atstumas;"
+";;;;;dangos_rusis;string;;dangosRusis;;3;open;;Kelio dangos rÅ«Åis;"
+";;;;;dangos_bukle;string;;dangosBukle;;3;open;;Kelio dangos bÅ«klÄ—;"
+";;;;;paros_metas;string;;patosMetas;;3;open;;Paros metas;"
+";;;;;kelio_apsvietimas;string;;kelioApsvietimas;;3;open;;Kelio apÅvietimas;"
+";;;;;meteo_salygos;string;;meteoSalygos;;3;open;;MeteorologinÄ—s sÄ…lygos;"
+";;;;;kitos_oro_salygos[];string;;kitosOroSalygos;;3;open;;Oro sÄ…lygos;"
+";;;;;kelio_gatves_kreive;string;;kelioGatvesKreive;;3;open;;Kelio gatvÄ—s kreivÄ—;"
+";;;;;nulemiantis_veiksnys;string;;nulemiantisVeiksnys;;3;open;;Nulemiantis veiksnys;"
+";;;;;kiti_nul_veiksnys[];string;;kitiNuliamentysVeiksniai;;3;open;;Papildomi nulemiantys veiksniai;"
+";;;;;atitvarai;string;;atitvarai;;3;open;;Atitvarai;"
+";;;;;sankryzos_tipas;string;;sankryzosTipas;;3;open;;SankryÅ¾os tipas;"
+";;;;;kelio_elementas1;string;;kelioElementas1;;3;open;;Kelio elementas 1;"
+";;;;;kelio_elementas2;string;;kelioElementas2;;3;open;;Kelio elementas 2;"
+";;;;;privalomas_leistinas_greitis;integer;;privalomasLeistinasGreitis;;3;open;;Privalomas leistinas greitis;"
+";;;;;leistinas_greitis;integer;;leistinasGreitis;;3;open;;Leistinas gretis;"
+";;;;;neblaivus_kaltininkai;string;;neblaivusKaltininkai;;3;open;;NeblaivÅ«s kaltininkai;"
+";;;;;apsvaige_kaltininkai;string;;apsvaigeKaltininkai;;3;open;;Apsvaige kaltininkai;"
+";;;;;atsisake_tikrintis_kaltininkai;string;;atsisakeTikrintisKaltininkai;;3;open;;Atsisake tikrintis balivumÄ… kaltininkai;"
+";;;;;ilguma;integer;;ilguma;;3;open;;Ilguma;"
+";;;;;platuma;integer;;platuma;;3;open;;Platuma;"
+";;;;;;;;;;;;;;"
+";;;;Dalyvis;;;dalyvis_id;eismoDalyviai;;;;;;"
+";;;;;eismo_ivykis;ref;EismoIvykis;...registrokodas;;;;;;"
+";;;;;dalyvis_id;integer;;dalyvisId;;3;open;;Dalyvio ID;"
+";;;;;kategorija;string;;kategorija;;3;open;;Kategorija;"
+";;;;;dalyvio_tipas;string;;dalyvioTipas;;3;open;;Dalyvio tipas;"
+";;;;;pasisalino;string;;pasisalino;;3;open;;PasiÅalino;"
+";;;;;asmuo_nezinomas;string;;asmuoNezinomas;;3;open;;Asmuo neÅ¾inomas;"
+";;;;;lytis;string;;lytis;;3;open;;Lytis;"
+";;;;;pilietybe;string;;pilietybe;;3;open;;PilietybÄ—;"
+";;;;;amzius;integer;;amzius;;3;open;;AmÅ¾ius;"
+";;;;;neigalumas;string;;neigalumas;;3;open;;Neigalumas;"
+";;;;;saugos_dirzas;string;;saugosDirzas;;3;open;;Saugos dirÅ¾as;"
+";;;;;vaiko_kedes_naudojimas;number;;vaikoKedesNaudojimas;;3;open;;Vaiko kÄ—dutÄ—;"
+";;;;;saugos_salmo_naudojimas;number;;saugosSalmoNaudojimas;;3;open;;Saugos Åalmas;"
+";;;;;oro_pagalves;string;;oroPagalves;;3;open;;Oro pagalvÄ—s;"
+";;;;;bukle;string;;bukle;;3;open;;BuklÄ—;"
+";;;;;detali_bukle;string;;detaliBukle;;3;open;;Detali buklÄ—;"
+";;;;;suzalojimo_mastas;string;;suzalojimoMastas;;3;open;;SuÅ¾alojimo mastas;"
+";;;;;vairuotojo_kvalifikacija;string;;vairuotojoKvalifikacija;;3;open;;Vairuotojo klasifikacija;"
+";;;;;vairavimo_stazas;integer;;vairavimoStazas;;3;open;;Vairavimo staÅ¾as;"
+";;;;;busena;string;;busena;;3;open;;BÅ«sena;"
+";;;;;detali_busena;string;;detaliBusena;;3;open;;Detali bÅ«sena;"
+";;;;;pap_busena;string;;papBusena;;3;open;;Papildoma bÅ«sena;"
+";;;;;det_pap_busena;string;;detaliPapBusena;;3;open;;Detali papildoma bÅ«sena;"
+";;;;;kaltininkas;string;;kaltininkas;;3;open;;Kaltininkas;"
+";;;;;girtumas_promilemis;number;;girtumasPromilemis;;3;open;;Girtumas (promilÄ—mis);"
+";;;;;dalyvio_busena;string;;dalyvioBusena;;3;open;;Dalyvio bÅ«sena;"
+";;;;;teisenos_stadija_busena;string;;teisenosStadijaBusena;;3;open;;Teisenos stadijos bÅ«sena;"
+";;;;;dalyvio_ket_pazeidimai[];string;;dalyvioKetPazeidimai;;3;open;;Dalyvio KET paÅ¾eidimai;"
+";;;;;transporto_priemone_id;integer;;tpId;;3;open;;Dalyvio tansporto priemonÄ—s ID;"
+";;;;;;;;;;;;;;"
+";;;;TransportoPriemone;;;tpId;eismoTranspPreimone;;;;;;"
+";;;;;eismo_ivykis;ref;EismoIvykis;...registrokodas;;;;;;"
+";;;;;tpid;integer;;tpId;;3;open;;Transporto priemonÄ—s ID;"
+";;;;;reg_valstybe;string;;REG_VALSTYBE;;3;open;;Registracijos valstybÄ—;"
+";;;;;kategorija;string;;KATEGORIJA;;3;open;;Kategorija;"
+";;;;;klase;string;;KLASE;;3;open;;KlasÄ—;"
+";;;;;marke;string;;MARKE;;3;open;;MarkÄ—;"
+";;;;;modelis;string;;MODELIS;;3;open;;Modelis;"
+";;;;;pagaminimo_metai;integer;;PAGAMINIMO_METAI;;3;open;;Pagaminimo metai;"
+";;;;;pasisalino;string;;PASISALINO;;3;open;;PasiÅalino;"
+";;;;;ypatumai;string;;YPATUMAI;;3;open;;Ypatumai;"
+";;;;;apgadinimai;string;;APGADINIMAI;;3;open;;Apgadinimai;"
+";;;;;apdraustas_civilines;integer;;APDRAUSTAS_CIVILINES;;3;open;;Apdraustas civiliniu draudimu;"
+";;;;;;choice;;1;1;;;;Taip;"
+";;;;;;choice;;0;0;;;;Ne;"
+";;;;;apdraustas_kasko;integer;;APDRAUSTAS_KASKO;;3;open;;Apdraustas kasko;"
+";;;;;;choice;;1;1;;;;Taip;"
+";;;;;;choice;;0;0;;;;Ne;"
+";;;;;apgadinimai_kita;string;;APGADINIMAI_KITA;;3;open;;Kiti apgadinimai;"
+";;;;;fizinis;string;;FIZINIS;;3;open;;Fizinis asmuo;"
+";;;;;dalyvauti_vt_uzdrausta;string;;DALYVAUTI_VT_UZDRAUSTA;;3;open;;Dalyvauti eisme uÅ¾drausta;"
+";;;;;nuliamiantys_gedimai;string;;NULIAMIANTIS_GEDIMAS;;3;open;;Nuliamentis gedimas;"
+";;;;;pirminiai_smugiai[];string;;PIRMINIS_SMUGIS;;3;open;;Pirminis smÅ«gis;"
