@@ -92,7 +92,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dalyvio_ket_pazeidimai[],string,,dalyvioKetPazeidimai,,3,open,,Dalyvio KET pažeidimai,
 ,,,,,transporto_priemone_id,integer,,tpId,,3,open,,Dalyvio tansporto priemonės ID,
 ,,,,,,,,,,,,,,
-,,,,TransportoPriemone,,,tpId,eismoTranspPreimone,,,,,,
+,,,,TransportoPriemone,,,tpid,eismoTranspPreimone,,,,,,
 ,,,,,eismo_ivykis,ref,EismoIvykis,...registrokodas,,,,,,
 ,,,,,tpid,integer,,tpId,,3,open,,Transporto priemonės ID,
 ,,,,,reg_valstybe,string,,REG_VALSTYBE,,3,open,,Registracijos valstybė,
