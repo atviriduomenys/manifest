@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,,,,,,,,,,,,,,
 ,datasets/gov/pd/itpr,,,,,,,,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/1668/download/10389/ITPR_2019%2001%2031.json,,,,,,
-,,json,,,,json,,https://data.gov.lt/dataset/1668/download/10390/ITPR_2020%2012%2031.json,,,,,,
+,,json2019,,,,json,,https://data.gov.lt/dataset/1668/download/10389/ITPR_2019%2001%2031.json,,,,,,
+,,json2020,,,,json,,https://data.gov.lt/dataset/1668/download/10390/ITPR_2020%2012%2031.json,,,,,,
 ,,,,IeskomuTransportoPriemoniuRegistras,,,nationalid,,,,,,,
 ,,,,,nationalid,integer,,nationalID,,3,open,,Nacionalinis ID,
 ,,,,,nscode,string,,nsCode,,3,open,,Paieškos priežasties kodas,
