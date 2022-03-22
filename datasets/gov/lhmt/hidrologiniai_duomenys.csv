@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lhmt/hidrologiniai_duomenys,,,,,,,,,,,,,
+,datasets/gov/lhmt/hidrologija,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,VandensMatavimoStotys,,,,,,,,,,
 ,,,,,vms,string,,,,3,open,,vandens matavimo stotis,
