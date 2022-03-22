@@ -1,1 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lhmt/hidrologiniai_duomenys,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,VandensMatavimoStotys,,,,,,,,,,
+,,,,,vms,string,,,,3,open,,vandens matavimo stotis,
+,,,,,vand_telk_pvd,string,,,,3,open,,vandens telkinio pavadinimas,
+,,,,,ats_nuo_ziociu,number,,,,3,open,,"atstumas nuo žiočių, km",
+,,,,,koord_x,geometry,,,,3,open,,vandens matavimo stoties koordinatės x (WGS),
+,,,,,koord_y,geometry,,,,3,open,,vandens matavimo stoties koordinatės y (WGS),
+,,,,,isteigta,integer,,,,3,open,,vandens matavimo stoties įsteigimo metai,
+,,,,,vand_telk_tipas,string,,,,3,open,,vandens telkinio tipas,
+,,,,,geohash,string,,,,3,open,,X ir Y koordinačių kombinacija vizualizavimui,
