@@ -6,6 +6,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mat_stotis,string,,,,3,open,,Matavimo stoties pavadinimas,
 ,,,,,aukst_virs_jur_lygio,number,,,,3,open,,Vandens aukštis virš jūros lygio ,
 ,,,,,koord,"geometry(point,4326)",m,,,4,open,,Meterologinės aikštelės koordinatės (WGS),
-,,,,,koord_wkt,geometry,m,,,4,open,,Meterologinės aikštelės koordinatės WKT formatu,
 ,,,,,isteigta,integer,,,,3,open,,Matavimo stoties įsteigimo metai,
-,,,,,geohash,string,,,,3,open,,X ir Y koordinačių kombinacija vizualizavimui,
