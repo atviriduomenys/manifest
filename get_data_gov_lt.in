@@ -15,5 +15,5 @@ datasets/gov/lsd/covid19.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
 datasets/gov/mita/horizon.csv
-datasets/gov/lhmt/hidrologiniai_duomenys/hidrologiniai_duomenys.csv	
-datasets/gov/lhmt/klimatologiniai_duomenys/klimatologiniai_duomenys.csv
+datasets/gov/lhmt/hidrologija/hidrologija.csv	
+datasets/gov/lhmt/klimatologija/klimatologija.csv
