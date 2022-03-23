@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lzukt/ikmis/ligos,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,ligos,,,,json,,https://www.ikmis.lt/api/EP2/GetLiguKatalogas,,,,,,
+,,,,Liga,,,"liga@lt, sritis@lt, grupe@lt",,,,,,,
+,,,,,liga@lt,text,,Liga,,4,open,,,
+,,,,,sritis@lt,text,,Sritis,,2,open,,,
+,,,,,grupe@lt,text,,Grupe,,2,open,,,
+,,,,,aprasas@lt,text,html,Aprasas,,2,open,,,
