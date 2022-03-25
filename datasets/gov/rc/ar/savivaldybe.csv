@@ -6,6 +6,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas,string,,TIPAS,,3,open,,Administracinio vieneto tipas,
 ,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Administracinio vieneto tipo trumpinys,
 ,,,,,pavadinimas,string,,VARDAS_K,,3,open,,Savivaldybės pavadinimas,
-,,,,,adm_kodas,ref,/datasets/gov/rc/ar/apskiritis/Apskritis,ADM_KODAS,,4,open,,"Apskrities, kurioje yra savivaldybė, identifikavimo kodas",
+,,,,,adm_kodas,ref,/datasets/gov/rc/ar/apskritis/Apskritis,ADM_KODAS,,4,open,,"Apskrities, kurioje yra savivaldybė, identifikavimo kodas",
 ,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
 ,,,,,sav_nuo,date,,SAV_NUO,,3,open,,Objekto įregistravimo data,
