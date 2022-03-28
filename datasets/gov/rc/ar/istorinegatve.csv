@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas,string,,TIPAS,,3,open,,Gatvės tipas,
 ,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Gatvės tipo trumpinys,
 ,,,,,pavadinimas,string,,VARDAS_K,,3,open,,Gatvės pavadinimas (kilmininko linksnyje),
-,,,,,gyv_kodas,integer,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,GYV_KODAS,,3,open,,"Gyvenamosios vietovės, kurioje yra gatvė, identifikavimo kodas",
+,,,,,gyv_kodas,ref,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,GYV_KODAS,,4,open,,"Gyvenamosios vietovės, kurioje yra gatvė, identifikavimo kodas",
 ,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
 ,,,,,gat_nuo,date,,GAT_NUO,,3,open,,Objekto įregistravimo data,
 ,,,,,,,,,,,,,,
