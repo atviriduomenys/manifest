@@ -7,4 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,APS_PAV,,3,open,,Apskrities pavadinimas ,
 ,,,,,aps_plotas,number,ha,APS_PLOTAS,,4,open,,Apskrities grafinis plotas (ha),
 ,,,,,aps_r,date,,APS_R,,3,open,,Apskrities įrašymo į Adresų registrą data,
-,,,,,apskritys,geometry(polygon, 3346),m,,,4,open,,Apskričių ribos,
+,,,,,apskritys,geometry(polygon,3346),m,,,4,open,,Apskričių ribos,
