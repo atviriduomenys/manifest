@@ -7,6 +7,14 @@ datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
 datasets/gov/rc/ar/savivaldybe.csv
 datasets/gov/rc/ar/apskritis.csv
+datasets/gov/rc/ar/gatve.csv
+datasets/gov/rc/ar/graapskritis.csv
+datasets/gov/rc/ar/gyvenamojivietove.csv
+datasets/gov/rc/ar/istorinegatve.csv
+datasets/gov/rc/ar/istorinegyvenamojivietove.csv
+datasets/gov/rc/ar/pastatas.csv
+datasets/gov/rc/ar/patalpa.csv
+datasets/gov/rc/ar/seniunija.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
