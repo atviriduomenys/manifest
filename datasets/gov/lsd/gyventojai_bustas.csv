@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,datasets/gov/lsd/gyventojai_bustas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,GyvBustGeoDuom100M2011,,,,gyv_bust_geo_duom_100m_2011,,,,,Gyventojų ir būstų surašymo geoerdviniai duomenys 100x100 gardelėse 2011 m.,
+,,,,GyvBustGeoDuom100M2011,,,,,,,,,Gyventojų ir būstų surašymo geoerdviniai duomenys 100x100 gardelėse 2011 m.,
 ,,,,,gyv_bustas,string,,,,2,open,,Vidutinis gyventojų skaičius gardelės būstuose,
 ,,,,,issituoke,string,,,,2,open,,Išsituokusių gyventojų skaičius,
 ,,,,,lt_k,string,,,,2,open,,"Gyventojų skaičius, kurių gimtoji kalba yra lietuvių",
