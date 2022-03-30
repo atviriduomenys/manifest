@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lhmt/klimatologija,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,MeterologineAikstele,,,,,,,,,,
-,,,,,meterologines_aikst_adr,string,,,,3,open,,Meterologinės aikštelės adresas,
+,,,,MeteorologineAikstele,,,,,,,,,,
+,,,,,meteorologines_aikst_adr,string,,,,3,open,,Meteorologinės aikštelės adresas,
 ,,,,,mat_stotis,string,,,,3,open,,Matavimo stoties pavadinimas,
 ,,,,,aukst_virs_jur_lygio,number,,,,3,open,,Vandens aukštis virš jūros lygio ,
-,,,,,koord,"geometry(point,4326)",m,,,4,open,,Meterologinės aikštelės koordinatės (WGS),
+,,,,,koord,"geometry(point,4326)",m,,,4,open,,Meteorologinės aikštelės koordinatės (WGS),
 ,,,,,isteigta,integer,,,,3,open,,Matavimo stoties įsteigimo metai,
