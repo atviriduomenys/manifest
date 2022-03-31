@@ -16,6 +16,8 @@ datasets/gov/rc/ar/pastatas.csv
 datasets/gov/rc/ar/patalpa.csv
 datasets/gov/rc/ar/seniunija.csv
 datasets/gov/rc/ar/grasavivaldybe.csv
+datasets/gov/rc/ar/graseniunija.csv
+datasets/gov/rc/ar/gragyvenamojivietove.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
