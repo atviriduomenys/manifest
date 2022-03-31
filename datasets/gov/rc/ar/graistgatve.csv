@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/graistgatve,,,,,,,,,,,,Adresų registras,
-,,graistgatve,,,,geojson,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_ist_gatves.json,,,,,Adresų registro duomenų bazė,
-,,,/datasets/gov/rc/ar/istorinegatve/IstorineGatve,,,sameas,gat_kodas,,,,,,,
+,,graistgatve,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_ist_gatves.json,,,,,Adresų registro duomenų bazė,
 ,,,,GraIstGatve,,,gat_kodas,,,,,,Adresų registro gatvių ašinių linijų erdviniai duomenys,"Gatvių ašinių linijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gatvių ašinių linijas apibūdinantys duomenys).
 Duomenų geografinė imtis — visa šalies teritorija."
 ,,,,,gat_kodas,integer,,IST_GTV_KODAS,,3,open,,Istorinės (panaikintos) gatvės kodas Registre ,
