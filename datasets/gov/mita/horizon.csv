@@ -15,6 +15,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lietuvos_dalyvio_role_projekte,string,,,,3,open,,Lietuvos dalyvio rolė projekte,
 ,,,,,projekto_tematika,string,,,,3,open,,Projekto tematika,
 ,,,,,bendras_projekto_biudzetas,number,,,,3,open,,Bendras projekto biudžetas,
-,,,,,bendras_gautas_projekto_finansavimas_is_EK,number,,,,3,open,,Bendras gautas projekto finansavimas iš EK,
+,,,,,bendras_gautas_projekto_finansavimas_is_ek,number,,,,3,open,,Bendras gautas projekto finansavimas iš EK,
 ,,,,,lietuvos_dalyvio_biudzetas_projekte,number,,,,3,open,,Lietuvos dalyvio biudžetas projekte,
-,,,,,lietuvos_dalyvio_gautas_finansavimas_is_EK,number,,,,3,open,,Lietuvos dalyvio gautas finansavimas iš EK,
+,,,,,lietuvos_dalyvio_gautas_finansavimas_is_ek,number,,,,3,open,,Lietuvos dalyvio gautas finansavimas iš EK,
