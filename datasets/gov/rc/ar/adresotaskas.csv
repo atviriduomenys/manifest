@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/adresotaskas,,,,,,,,,,,,Adresų registras,
 ,,adresotaskas,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_{savivaldybe.sav_kodas}.json,,,,,Adresų registro duomenų bazė,
-,,,,,,param,savivaldybe,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,select(),,,,,
 ,,,,AdresoTaskas,,,aob_kodas,,,,,,Adresų registro žemės sklypams ir pastatams suteiktų adresų erdviniai duomenysAdresų registro žemės sklypams ir pastatams suteiktų adresų erdviniai duomenys,"Žemės sklypams ir pastatams suteiktų adresų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (žemės sklypams ir pastatams suteiktus adresus apibūdinantys duomenys (duomenų rinkinių grupė, 60 vnt.)). Duomenų geografinė imtis — visa šalies teritorija."
 ,,,,,aob_kodas,integer,,AOB_KODAS,,3,open,,"Adreso kodas, unikalus Respublikos mastu (nuolat palaikomas)",
 ,,,,,gyv_kodas,ref,datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,GYV_KODAS,,4,open,,Gyvenamosios vietovės kodas Registre (nekeičiamas gyvenamosios vietovės egzistavimo laiką),
