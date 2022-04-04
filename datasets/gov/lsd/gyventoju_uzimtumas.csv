@@ -57,7 +57,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,2,,,,,Informaciją pateikė kitas namų ūkio narys,
 ,,,,,,,,9,,,,,Netaikoma (jaunesniems kaip 15 metų asmenims),
 ,,,,,wstator,integer,,,,4,open,,Ekonominio aktyvumo statusas tiriamąją savaitę,
-,,,,,,enum,,1,,,,,Užimtasis,
+,,,,,,enum,,,1,,,,Užimtasis,
 ,,,,,,,,2,,,,,Bedarbis,
 ,,,,,,,,3,,,,,Neaktyvus,
 ,,,,,,,,9,,,,,Netaikoma (jaunesniems kaip 15 metų asmenims),
