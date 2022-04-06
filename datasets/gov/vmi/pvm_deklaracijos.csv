@@ -1,0 +1,34 @@
+id	dataset	resource	base	model	property	type	ref	source	prepare	level	access	uri	title	description
+	datasets/gov/vmi/pvm_deklaracijos												Pridëtinës vertës mokesèio deklaracijø duomenø rinkinys	
+														
+				VtsFr0600Mainai									FR0600_DUOMENYS	
+					Mokestinis_laikotarpis	datetime	YYYY-MM				open		Mokestinis laikotarpis iki (laikotarpio pabaigos data)	
+					Sekcija_pagal_Ekonominës_veiklos_rûðiø_klasifikatoriø	string					open		Deklaracijoje nurodyta pagrindinë vykdomos veiklos rûðis pagal Ekonominës veiklos rûðiø klasifikatoriø, patvirtintà Statistikos departamento generalinio direktoriaus 2007 m. spalio 31 d. ásakymu Nr.DÁ-226 (Þin., 2007, Nr.119-4877, toliau - EVRK) 	Uþsiimanèiø ta paèia veikla mokesèiø mokëtojø dominavimo atveju nëra nustatyta EVRK sekcija, EVRK skyrius ir apskritis
+					Skyrius_pagal_Ekonominës_veiklos_rûðiø_klasifikatoriø	string					open		Pagrindinë vykdomos veiklos rûðis pagal EVRK. Imama ið klasifikatoriaus, jei pavyko identifikuoti pagal deklaracijoje áraðytà kodà	Uþsiimanèiø ta paèia veikla mokesèiø mokëtojø dominavimo atveju nëra nustatyta EVRK sekcija, EVRK skyrius ir apskritis
+					Apskritis	string					open		Deklaracijai priskirtos apskrities pavadinimas	Uþsiimanèiø ta paèia veikla mokesèiø mokëtojø dominavimo atveju nëra nustatyta EVRK sekcija, EVRK skyrius ir apskritis
+					Mokesèiø_mokëtojø_skaièius	integer					open		Mokesèiø mokëtojø skaièius	
+					11_PVM_apmokestinami_sandoriai	string					open		PVM apmokestinami tiekimai (18, 9, 5 procentais)	
+					12_PVM_apmokestinami_sandoriai_kai_PVM_iðskaito_pirkëjas	string					open		PVM apmokestinami sandoriai, kai PVM iðskaito pirkëjas (PVM ástatymo 96 str. nustatytais atvejais)	
+					13_PVM_neapmokestinami_sandoriai	string					open		PVM neapmokestinami tiekimai	
+					14_Suvartojimas_privatiems_poreikiams	string					open		Suvartojimas privatiems poreikiams	
+					15_Ilgalaikio_materialiojo_turto_pasigaminimas	string					open		Ilgalaikio materialiojo turto pasigaminimas	
+					16_Sandoriø_kuriems_taikoma_spec_apmokestinimo_schema_marþa	string					open		Tiekimø, kuriems taikoma speciali apmokestinimo schema, marþa	
+					17_Prekiø_eksportas_0_proc	string					open		Patiektos ir uþ Europos Sàjungos ribø iðgabentos prekës (eksportas, PVM – 0 procentø)	
+					18_ES_PVM_mokëtojams_patiektos_prekës_0_proc	string					open		Europos Sàjungos valstybiø nariø PVM mokëtojams patiektos ir ið Lietuvos Respublikos iðgabentos prekës (PVM – 0 procentø)	
+					19_Kiti_PVM_apmokestinami_sandoriai_0_proc	string					open		Kitos patiektos prekës ir suteiktos paslaugos, apmokestinamos 0 procentø	
+					20_Uþ_Lietuvos_ribø_ávykæ_sandoriai_ne_PVM_objektas_Lietuvoje	string					open		Uþ Lietuvos Respublikos ribø patiektos prekës ir suteiktos paslaugos, kuriø pirkimo (importo) PVM atskaitomas	
+					21_Ið_ES_ásigytos_prekës	string					open		Ið Europos Sàjungos valstybiø nariø ásigytos prekës, kuriø ásigijimo vieta Lietuvos Respublikoje	
+					22_Ið_ES_ásigytos_prekës_trikampei_prekybai	string					open		Ið Europos Sàjungos valstybiø nariø ásigytos prekës, kurios ið karto patiektos kitos Europos Sàjungos valstybës narës PVM mokëtojams (trikampë prekyba)	
+					23_Ið_uþsienio_valstybiø_ásigytos_paslaugos	string					open		Ið uþsienio valstybiø ásigytos paslaugos	
+					24_Ið_jø_ásigytos_ið_ES_PVM_mokëtojø	string					open		Ið ES valstybiø nariø PVM mokëtojø ásigytos paslaugos	
+					25_Ásigytø_prekiø_ir_paslaugø_pirkmo_PVM	string					open		Ásigytø prekiø ir paslaugø pirkmo PVM	
+					26_Sumokëtas_importo_PVM	string					open		Sumokëtas importo PVM	
+					27_Importo_PVM_kurio_áskaitymà_kontroliuoja_VMI	string					open		Importo PVM, kurio áskaitymà kontroliuoja VMI	
+					29_Standartinio_tarifo_pardavimo_PVM	string					open		Standartinio tarifo pardavimo PVM	
+					30_9_procentø_pardavimo_PVM	string					open		9 procentø pardavimo PVM	
+					31_5_procentø_pardavimo_PVM	string					open		5 procentø pardavimo PVM	
+					32_Pardavimo_PVM_pagal_95_str	string					open		Pardavimo PVM (PVM ástatymo 95 str. nustatytais atvejais)	
+					33_Pardavimo_PVM_pagal_96_str	string					open		Pardavimo PVM (PVM ástatymo 96 str. nustatytais atvejais)	
+					34_Ið_ES_ásigytø_prekiø_pardavimo_PVM	string					open		Pirkëjo apskaièiuotas ið kitø Europos Sàjungos valstybiø nariø ásigytø prekiø pardavimo PVM	
+					35_Atskaitomas_PVM	string					open		Atskaitomas pirkimo ir importo PVM	
+					36_Mokëtinas_á_biudþetà_arba_gràþintinas_ið_biudþeto_PVM	string					open		Mokëtinas á biudþetà arba gràþintinas ið biudþeto (-) PVM	
