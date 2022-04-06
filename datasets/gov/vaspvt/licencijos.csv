@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,patvirtinimo_data,date,,,,,open,,Įsakymo patvirtinimo data,
 ,,,,,isakymo_nr,string,,,,,open,,Įsakymo numeris,
 ,,,,,,,,,,,,,,
-,,,,Istaigos,,,,,,,,,Sveikatos priežiūros įstaigos,
+,,,,Istaiga,,,,,,,,,Sveikatos priežiūros įstaigos,
 ,,,,,spi_id,string,,,,,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,ja_kodas,string,,,,,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,,open,,Sveikatos priežiūros įstaigos pavadinimas,
