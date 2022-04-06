@@ -89,7 +89,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veiklos_adreso_id,ref,IstaiguVeikluAdresai,,,,open,,Veiklos adreso identifikatorius,
 ,,,,,patikslinta,boolean,,,,,open,,Patikslinimas,
 ,,,,,,,,,,,,,,
-,,,,IstaiguPaslauguOrganai,,,,,,,open,,Sveikatos priežiūros įstaigų paslaugų organai,
+,,,,IstaigosPaslauguOrganas,,,,,,,open,,Sveikatos priežiūros įstaigų paslaugų organai,
+
 ,,,,,id,string,,,,,open,,Identifikatorius,
 ,,,,,istaigos_paslaugos_id,ref,IstaiguPaslaugos,,,,open,,Paslaugos identifikatorius,
 ,,,,,organo_id,string,,,,,open,,Paslaugos organo identifikatorius,
