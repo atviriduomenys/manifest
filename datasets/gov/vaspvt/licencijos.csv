@@ -79,7 +79,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,spi_id,ref,Istaigos,,,,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,spi_filialo_id,ref,Filialai,,,,open,,Sveikatos priežiūros įstaigos filialo identifikatorius,
 ,,,,,,,,,,,,,,
-,,,,IstaiguPaslaugos,,,,,,,,,Sveikatos priežiūros įstaigų paslaugos,
+,,,,IstaigosPaslauga,,,,,,,,,Sveikatos priežiūros įstaigų paslaugos,
+
 ,,,,,istaigos_paslaugos_id,string,,,,,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
 ,,,,,paslaugos_nustatymo_id,string,,,,,open,,Sveikatos priežiūros įstaigos paslaugos nustatymo identifikatorius,
 ,,,,,licenzijos_id,ref,Licencijos_,,,,open,,Licencijos identifikatorius,
