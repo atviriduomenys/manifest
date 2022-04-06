@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gatves_id,string,,,,,open,,Gatvės identifikatorius,
 ,,,,,pilnas_adresas,string,,,,,open,,Adresas,
 ,,,,,,,,,,,,,,
-,,,,Isakymai,,,,,,,,,Įsakymai,
+,,,,Isakymas,,,,,,,,,Įsakymai,
 ,,,,,patvirtinimo_data,date,,,,,open,,Įsakymo patvirtinimo data,
 ,,,,,isakymo_nr,string,,,,,open,,Įsakymo numeris,
 ,,,,,,,,,,,,,,
