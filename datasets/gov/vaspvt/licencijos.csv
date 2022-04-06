@@ -71,7 +71,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adresas,string,,,,,open,,Buveinės adresas,
 ,,,,,veiklos_adresas,string,,,,,open,,Veiklos adresas,
 ,,,,,,,,,,,,,,
-,,,,IstaiguVeikluAdresai,,,,,,,,,Sveikatos priežiūros įstaigų veiklos adresai,
+,,,,IstaigosVeiklosAdresas,,,,,,,,,Sveikatos priežiūros įstaigų veiklos adresai,
+
 ,,,,,spi_veiklos_adreso_id,string,,,,,open,,Sveikatos priežiūros įstaigos veiklos adreso identifikatorius,
 ,,,,,adreso_id,string,,,,,open,,Adreso identifikatorius,
 ,,,,,adresas,string,,,,,open,,Adresas,
