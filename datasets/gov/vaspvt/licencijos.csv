@@ -31,7 +31,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licencijos_isdavimo_data,date,,,,,open,,Licencijos išdavimo data,
 ,,,,,asmuo_visuomene,string,,,,,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
 ,,,,,,,,,,,,,,
-,,,,LicencijuVeiksmai,,,,,,,,,Atlikti veiksmai su licencija,
+,,,,LicencijosVeiksmas,,,,,,,,,Atlikti veiksmai su licencija,
 ,,,,,id,string,,,,,open,,Atlikto veiksmo identifikatorius,
 ,,,,,veiksmas,string,,,,,open,,Atlikto veiksmo pavadiniams,
 ,,,,,isakymo_id,ref,Isakymai,,,,open,,Įsakymo identifikatorius,
