@@ -107,7 +107,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,analites_id,string,,,,,open,,Analitės identifikatorius,
 ,,,,,tyrimo_id,string,,,,,open,,Tyrimo identifikatorius,
 ,,,,,,,,,,,,,,
-,,,,VeiklosAdresuPaslaugos,,,,,,,,,Veiklos adresų paslaugos,
+,,,,VeiklosAdresoPaslauga,,,,,,,,,Veiklos adresų paslaugos,
 ,,,,,veiklos_adreso_paslaugos_id,string,,,,,open,,Veiklos adreso paslaugos identifikatorius,
 ,,,,,paslaugos_id,string,,,,,open,,Paslaugos identifikatorius,
 ,,,,,paslaugos_lygio_id,string,,,,,open,,Paslaugos lygio identifikatorius,
