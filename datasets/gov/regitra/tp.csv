@@ -133,8 +133,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Foreign country code,On the basis of registration documents vehicle registered in the Lithuania.
 ,,,,,tp_valdymo_teise,string,,TP_VALDYMO_TEISE,,3,open,,Transporto priemonės valdymo teisė,
 ,,,,,,lang,en,,,,,,Vehicle control right,
-,,,,,,enum,,A,'"Valdytojas-savininkas"',,,,Valdytojas-savininkas,
-,,,,,,,,V,'"Valdytojas"',,,,Valdytojas,
+,,,,,,enum,,,"""A""",,,,Valdytojas-savininkas,
+,,,,,,,,,"""V""",,,,Valdytojas,
 ,,,,,kodas,string,,KODAS,,3,open,,Juridinio asmens kodas,
 ,,,,,,lang,en,,,,,,Legal person code,
 ,,,,,pavadinimas,string,,PAVADINIMAS,,3,open,,Juridinio asmens pavadinimas,
