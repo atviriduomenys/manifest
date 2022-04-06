@@ -38,7 +38,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licencijos_id,string,,,,,open,,Licencijos identifikatorius,
 ,,,,,data,date,,,,,open,,Atlikto veiksmo data,
 ,,,,,,,,,,,,,,
-,,,,Licencijos_,,,,,,,,,Licencijos,
+,,,,Licencija,,,,,,,,,Licencijos,
+
 ,,,,,licencijos_id,string,,,,,open,,Licencijos identifikatorius,
 ,,,,,spi_id,ref,Istaigos,,,,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,licencijos_nr,string,,,,,open,,Licencijos numeris,
