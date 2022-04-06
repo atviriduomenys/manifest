@@ -114,7 +114,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paslaugos_budo_id,string,,,,,open,,Paslaugos būdo identifikatorius,
 ,,,,,paslaugos_grupes_id,string,,,,,open,,Paslaugos grupės identifikatorius,
 ,,,,,,,,,,,,,,
-,,,,IstaiguPaslauguProfiliuEtapai,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų profilių etapai,
+,,,,IstaigosPaslaugosProfilioEtapas,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų profilių etapai,
 ,,,,,id,string,,,,,open,,Identifikatorius,
 ,,,,,istaigos_paslaugos_profilio_id,string,,,,,open,,Paslaugos profilio identifikatorius,
 ,,,,,etapo_id,string,,,,,open,,Etapo identifikatorius,
