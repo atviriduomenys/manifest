@@ -65,7 +65,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Visuomenė,
 ,,,,,,,,,,,,,,
 ,,,,Filialas,,,,,,,,,Sveikatos priežiūros įstaigų filialai,
-,,,,,filialo_id,string,,,,4,open,,Filialo identifikatorius,
+,,,,,id,string,,,,4,open,,Filialo identifikatorius,
 ,,,,,spi_id,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,juridinio_asmens_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,filialo_pavadinimas,string,,,,2,open,,Filialo pavadinimas,
