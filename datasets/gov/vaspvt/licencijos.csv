@@ -78,7 +78,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adreso_id,string,,,,2,open,,Adreso identifikatorius,
 ,,,,,adresas,string,,,,2,open,,Adresas,
 ,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,spi_filialo_id,ref,Filialas,,,4,open,,Sveikatos priežiūros įstaigos filialo identifikatorius,
+,,,,,filialas,ref,Filialas,,,4,open,,Sveikatos priežiūros įstaigos filialas,
+
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauga,,,,,,,,,Sveikatos priežiūros įstaigų paslaugos,
 ,,,,,istaigos_paslaugos_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
