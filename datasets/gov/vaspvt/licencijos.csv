@@ -44,7 +44,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,nr,string,,,,4,open,,Licencijos numeris,
 ,,,,,sudaryta,date,,,,3,open,,Licencijos išdavimo data,
-,,,,,panaikinimo_data,date,,,,3,open,,Licencijos panaikinimo data ,
+,,,,,panaikinta,date,,,,3,open,,Licencijos panaikinimo data ,
+
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
 ,,,,,ja_buveines_adresas,string,,,,2,open,,Juridinio asmens buveinės adresas,
