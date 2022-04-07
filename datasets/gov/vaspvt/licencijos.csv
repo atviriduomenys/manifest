@@ -82,7 +82,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauga,,,,,,,,,Sveikatos priežiūros įstaigų paslaugos,
-,,,,,istaigos_paslaugos_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
+,,,,,id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
 ,,,,,paslaugos_nustatymo_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos nustatymo identifikatorius,
 ,,,,,licenzijos_id,ref,Licencija,,,4,open,,Licencijos identifikatorius,
 ,,,,,spi_id,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
