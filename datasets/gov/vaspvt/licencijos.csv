@@ -92,7 +92,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauguOrganas,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų organai,
 ,,,,,id,string,,,,4,open,,Identifikatorius,
-,,,,,istaigos_paslaugos_id,ref,IstaigosPaslauga,,,4,open,,Paslaugos identifikatorius,
+,,,,,paslauga,ref,IstaigosPaslauga,,,4,open,,Paslauga,
 ,,,,,organo_id,string,,,,2,open,,Paslaugos organo identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauguProfilis,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų profiliai,
