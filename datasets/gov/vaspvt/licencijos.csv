@@ -101,7 +101,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,profilio_id,string,,,,2,open,,Paslaugos profilio identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,LaboratorinisTyrimas,,,,,,,,,Laboratoriniai tyrimai,
-,,,,,labor_tyrimo_id,string,,,,4,open,,Laboratorinio tyrimo identifikatorius,
+,,,,,id,string,,,,4,open,,Laboratorinio tyrimo identifikatorius,
 ,,,,,istaigos_paslaugos_id,string,,,,2,open,,Paslaugos identikatorius,
 ,,,,,eminio_id,string,,,,2,open,,Ėminio identifikatorius,
 ,,,,,analites_id,string,,,,2,open,,Analitės identifikatorius,
