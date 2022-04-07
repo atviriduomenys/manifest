@@ -58,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,5,,,,Patikslinta,
 ,,,,,,,,,6,,,,Apmokėta,
 ,,,,,,,,,7,,,,Archyvuota,
-,,,,,isakymo_id,ref,Isakymas,,,4,open,,Įsakymo identifikatorius,
+,,,,,isakymas,ref,Isakymas,,,4,open,,Įsakymas,
 ,,,,,asmuo_ar_visuomene,integer,,,,4,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
 ,,,,,,enum,,,0,,,,Nepasirinkta,
 ,,,,,,,,,1,,,,Asmuo,
