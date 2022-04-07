@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,22_is_es_isigytos_prekes_trikampei_prekybai,number,,,,3,open,,"Iš Europos Sąjungos valstybių narių įsigytos prekės, kurios iš karto patiektos kitos Europos Sąjungos valstybės narės PVM mokėtojams (trikampė prekyba)",
 ,,,,,23_is_uzsienio_valstybiu_isigytos_paslaugos,number,,,,3,open,,Iš užsienio valstybių įsigytos paslaugos,
 ,,,,,24_is_ju_isigytos_is_es_pvm_moketoju,number,,,,3,open,,Iš ES valstybių narių PVM mokėtojų įsigytos paslaugos,
-,,,,,25_isigytu_prekiu_ir_paslaugu_pirkmo_pvm,number,,,,,open,,Įsigytų prekių ir paslaugų pirkmo PVM,
+,,,,,25_isigytu_prekiu_ir_paslaugu_pirkmo_pvm,number,,,,3,open,,Įsigytų prekių ir paslaugų pirkmo PVM,
 ,,,,,26_sumoketas_importo_pvm,number,,,,3,open,,Sumokėtas importo PVM,
 ,,,,,27_importo_pvm_kurio_iskaityma_kontroliuoja_vmi,number,,,,3,open,,"Importo PVM, kurio įskaitymą kontroliuoja VMI",
 ,,,,,29_standartinio_tarifo_pardavimo_pvm,number,,,,3,open,,Standartinio tarifo pardavimo PVM,
