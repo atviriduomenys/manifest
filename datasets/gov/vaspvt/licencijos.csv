@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Licencijos identifikatorius,
 
 ,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
+,,,,,nr,string,,,,4,open,,Licencijos numeris,
 ,,,,,sudarymo_data,date,,,,3,open,,Licencijos išdavimo data,
 ,,,,,panaikinimo_data,date,,,,3,open,,Licencijos panaikinimo data ,
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
