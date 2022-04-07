@@ -33,7 +33,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,LicencijosVeiksmas,,,,,,,,,Atlikti veiksmai su licencija,
 ,,,,,id,string,,,,4,open,,Atlikto veiksmo identifikatorius,
-,,,,,veiksmas,string,,,,2,open,,Atlikto veiksmo pavadiniams,
+,,,,,pavadinimas,string,,,,2,open,,Atlikto veiksmo pavadiniams,
 ,,,,,isakymo_id,ref,Isakymas,,,4,open,,Įsakymo identifikatorius,
 ,,,,,licencija,ref,Licencija,,,2,open,,Licencijos identifikatorius,
 ,,,,,data,date,,,,3,open,,Atlikto veiksmo data,
