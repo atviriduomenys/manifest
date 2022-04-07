@@ -49,7 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
 ,,,,,ja_buveines_adresas,string,,,,2,open,,Juridinio asmens buveinės adresas,
-,,,,,isakymo_data,date,,,,3,open,,Įsakymo data,
+,,,,,isakymas_isigalioja,date,,,,3,open,,Įsakymo data,
 ,,,,,busena,integer,,,,4,open,,Licencijos būsena,
 ,,,,,,enum,,,1,,,,Suformuota,
 ,,,,,,,,,2,,,,Sustabdyta,
