@@ -41,7 +41,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Licencija,,,,,,,,,Licencijos,
 ,,,,,id,string,,,,4,open,,Licencijos identifikatorius,
 
-,,,,,spi_id,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
 ,,,,,sudarymo_data,date,,,,3,open,,Licencijos išdavimo data,
 ,,,,,panaikinimo_data,date,,,,3,open,,Licencijos panaikinimo data ,
