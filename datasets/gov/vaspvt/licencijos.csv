@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isakymo_nr,string,,,,4,open,,Įsakymo numeris,
 ,,,,,,,,,,,,,,
 ,,,,Istaiga,,,,,,,,,Sveikatos priežiūros įstaigos,
-,,,,,spi_id,string,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,id,string,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
 ,,,,,teisine_forma,string,,,,2,open,,Juridinio asmens teisinė forma,
