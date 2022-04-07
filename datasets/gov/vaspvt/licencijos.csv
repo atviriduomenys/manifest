@@ -97,7 +97,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauguProfilis,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų profiliai,
 ,,,,,id,string,,,,4,open,,Identifikatorius,
-,,,,,istaigos_paslaugos_id,ref,IstaigosPaslauga,,,4,open,,Paslaugos identifikatorius,
+,,,,,paslauga,ref,IstaigosPaslauga,,,4,open,,Paslauga,
 ,,,,,profilio_id,string,,,,2,open,,Paslaugos profilio identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,LaboratorinisTyrimas,,,,,,,,,Laboratoriniai tyrimai,
