@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vaspvt/licencijos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,VWPilnaAdresoInfo,,,,,,,,,Adresai ,
+,,,,Adresas,,,,,,,,,Adresas,
 ,,,,,id,string,,,,4,open,,Adreso identifikatorius,
 ,,,,,apskrities_pavadinimas,string,,,,2,open,,Apskrities pavadinimas,
 ,,,,,savivaldybes_pavadinimas,string,,,,2,open,, Savivaldybės pavadinimas,
