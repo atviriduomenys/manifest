@@ -85,7 +85,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
 ,,,,,paslaugos_nustatymo_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos nustatymo identifikatorius,
 ,,,,,licencija,ref,Licencija,,,4,open,,Licencija,
-,,,,,spi_id,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaiga,
 ,,,,,filialo_id,string,,,,2,open,,Filialo identifikatorius,
 ,,,,,veiklos_adreso_id,ref,VeiklosAdresoPaslauga,,,4,open,,Veiklos adreso identifikatorius,
 ,,,,,patikslinta,boolean,,,,3,open,,Patikslinimo būsena,
