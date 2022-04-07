@@ -68,7 +68,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Filialo identifikatorius,
 ,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaiga,
 ,,,,,juridinio_asmens_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
-,,,,,filialo_pavadinimas,string,,,,2,open,,Filialo pavadinimas,
+,,,,,pavadinimas,string,,,,2,open,,Filialo pavadinimas,
 ,,,,,adresas,string,,,,2,open,,Buveinės adresas,
 ,,,,,veiklos_adresas,string,,,,2,open,,Veiklos adresas,
 ,,,,,,,,,,,,,,
