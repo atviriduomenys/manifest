@@ -75,7 +75,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,@id,,4,open,,,
 ,,,,,customs_office_timetable_line,ref,CustomsOfficeTimetableLine,../@id,,4,open,,Nuoroda į tėvinį elementą,
 ,,,,,role,ref,/datasets/gov/muitine/muitines_funkcijos/CustomsOfficeNationalRole,@role,,4,open,,Muitinės įstaigos atliekamos funkcijos,
-,,,,,role.code,,,,,3,,,,
 ,,,,,traffic_type,string,,@trafficType,,3,open,,Transporto rūšis,
 ,,,,,,enum,,,"""R""",,,,Kelių transportas,
 ,,,,,,,,,"""V""",,,,Geležinkelių transportas,
