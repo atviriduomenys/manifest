@@ -1,0 +1,25 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/sandeliu_tipai,,,,,,,,,,,,,
+,,99,,,,xml,,https://www.lrmuitine.lt/mport/other_files/AtviriDuom_klasifikatoriai/99.xml,,,,,,
+,,,,Metadata,,,id,/ReferenceData,,,,,,
+,,,,,xmlns_ns,string,,@xmlns:ns,,3,open,,XSD schemos aprašo nuoroda,
+,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
+,,,,,item_type,string,,@itemType,,3,open,,Rinkinio tipas,
+,,,,,item_code_type,string,,@itemCodeType,,3,open,,Įrašo kodo tipas,
+,,,,,last_change,date,10D,@lastChange,,4,open,,Paskutinio rinkinio duomenų keitimo data,
+,,,,NameAndDescription,,,id,/ReferenceData/NameAndDescription,,,,,,
+,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
+,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
+,,,,,language_code,string,,@languageCode,,3,open,,Kalbos kodas,2 simbolių šalies kodas
+,,,,,name,string,,@name,,3,open,,Sąrašo pavadinimas,
+,,,,WarehouseType,,,id,/ReferenceData/SimpleItem,,,,,,
+,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
+,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
+,,,,,code,string,,@code,,3,open,,Tipo kodas,1 simbolio kodas
+,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
+,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,
+,,,,WarehouseTypeDescription,,,id,/ReferenceData/SimpleItem/CodeDescription,,,,,,
+,,,,,id,string,,@id,,4,open,,,
+,,,,,warehouse_type,ref,WarehouseType,../@id,,3,open,,Nuoroda į tėvinį elementą,
+,,,,,description,string,,@description,,3,open,,Tipo aprašymas,
+,,,,,language_code,string,,@languageCode,,3,open,,Aprašymo kalbos kodas,2 simbolių šalies kodas
