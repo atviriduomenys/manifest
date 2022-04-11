@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilgalaikio_materialiojo_turto_pasigaminimas,currency,EUR,,,3,open,,Ilgalaikio materialiojo turto pasigaminimas,
 ,,,,,sandoriu_kuriems_taikoma_spec_apmokestinimo_schema_marza,currency,EUR,,,3,open,,"Tiekimų, kuriems taikoma speciali apmokestinimo schema, marža",
 ,,,,,prekiu_eksportas_0_proc,currency,EUR,,,3,open,,"Patiektos ir už Europos Sąjungos ribų išgabentos prekės (eksportas, PVM – 0 procentų)",
-,,,,,es_pvm_moketojams_patiektos_prekes_0_proc,currency,,currency,EUR,,3,open,,Europos Sąjungos valstybių narių PVM mokėtojams patiektos ir iš Lietuvos Respublikos išgabentos prekės (PVM – 0 procentų),
+,,,,,es_pvm_moketojams_patiektos_prekes_0_proc,currency,EUR,,,3,open,,Europos Sąjungos valstybių narių PVM mokėtojams patiektos ir iš Lietuvos Respublikos išgabentos prekės (PVM – 0 procentų),
 ,,,,,kiti_pvm_apmokestinami_sandoriai_0_proc,currency,EUR,,,3,open,,"Kitos patiektos prekės ir suteiktos paslaugos, apmokestinamos 0 procentų",
 ,,,,,uz_lietuvos_ribu_ivyke_sandoriai_ne_pvm_objektas_lietuvoje,currency,EUR,,,3,open,,"Už Lietuvos Respublikos ribų patiektos prekės ir suteiktos paslaugos, kurių pirkimo (importo) PVM atskaitomas",
 ,,,,,is_es_isigytos_prekes,currency,EUR,,,3,open,,"Iš Europos Sąjungos valstybių narių įsigytos prekės, kurių įsigijimo vieta Lietuvos Respublikoje",
