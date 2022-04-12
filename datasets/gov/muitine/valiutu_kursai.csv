@@ -16,7 +16,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
 ,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
 ,,,,,currency,ref,/datasets/gov/muitine/valiutu_sarasas/Currencycode,@currency,,4,open,,Valiutos kodas,3 ženklų valiutos kodas
-,,,,,currency.code,,,,,3,open,,,
 ,,,,,rate_eur,number,EUR,@rateEUR,,4,open,,Valiutos kursas,
 ,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
 ,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,
