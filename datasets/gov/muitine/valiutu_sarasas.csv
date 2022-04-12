@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
 ,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,
 ,,,,CurrencyDescription,,,id,/ReferenceData/SimpleItem/CodeDescription,,,,,,
-,,,,,id,,,@id,,4,open,,,
+,,,,,id,string,,@id,,4,open,,,
 ,,,,,currency_code,ref,CurrencyCode,../@id,,4,open,,Nuoroda į tėvinį elementą,
 ,,,,,description,string,,@description,,3,open,,Kodo aprašymas,
 ,,,,,language_code,string,,@languageCode,,3,open,,Aprašymo kalbos kodas,2 simbolių šalies kodas
