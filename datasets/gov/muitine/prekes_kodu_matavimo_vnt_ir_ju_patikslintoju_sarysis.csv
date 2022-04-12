@@ -16,15 +16,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,@id,,3,open,,Rinkinio identifikacinis numeris,
 ,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
 ,,,,,code1,ref,/datasets/gov/muitine/prekiu_kodai/CommodityCode,@code1,,4,open,,Prekės kodas,Prekės kodas (10 ženklų KN kodas)
-,,,,,code1.code,,,,,,,,,
 ,,,,,code2,ref,/datasets/gov/muitine/matavimo_vienetai/MeasurementUnitCode,@code2,,4,open,,Matavimo vieneto kodas,
-,,,,,code2.code,,,,,,,,,
 ,,,,,code3,ref,/datasets/gov/muitine/matavimo_vienetu_patikslintojai/SupplementaryUnitQualifierCode,@code3,,4,open,,Patikslintojo kodas,
-,,,,,code3.code,,,,,,,,,
 ,,,,,code4,string,,@code4,,3,open,,Šalies kodas,2 simbolių šalies kodas
 ,,,,,code5,ref,/datasets/gov/muitine/prekiu_kodai/CommodityCode,@code5,,4,open,,Importo požymis,
-,,,,,code5.import,,,,,,,,,
 ,,,,,code6,ref,/datasets/gov/muitine/prekiu_kodai/CommodityCode,@code6,,4,open,,Eksporto požymis,
-,,,,,code6.export,,,,,,,,,
 ,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
 ,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,
