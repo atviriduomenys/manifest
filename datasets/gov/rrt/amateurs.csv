@@ -9,6 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,cert_class,string,,CERTIFCLASS,,3,open,,,CERT klasė
 ,,,,,,enum,,,"""A""",,,,A,
 ,,,,,,,,,"""B""",,,,B,
+,,,,,,,,,null,,,,,
 ,,,,,type,string,,TYPE,,3,open,,,Leidimo tipas (klubui arba asmeniui)
 ,,,,,,enum,,,"""Klubinis""",,,,Klubinis,
 ,,,,,,,,,"""Individualus""",,,,Individualus,
