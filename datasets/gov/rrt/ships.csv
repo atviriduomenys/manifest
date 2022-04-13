@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+1,datasets/gov/rrt/ships,,,,,,,,,,,,,
+3,,ships,,,,csv,,https://opendata.rrt.lt/sms/SHIPS.csv,"tabular(sep: "";"")",,,,,
+4,,,,Ships,,,id,,,,,,,
+5,,,,,id,integer,,ID,,4,private,,,
+6,,,,,ship_name,string,,SHIP_NAME,,3,open,,,Laivo pavadinimas arba registro numeris
+7,,,,,callsign,string,,CALLSIGN,,3,open,,,Šaukinys
+7,,,,,mmsi,integer,,MMSI,,3,open,,,MMSI numeris
+8,,,,,sel_num,integer,,SEL_NUM,,3,open,,,Atrankiojo kvietimo numeris
+9,,,,,licence_no,string,,LICENCE_NO,,3,open,,,Leidimo numeris
+10,,,,,valid_from,date,,VALID_FROM,,3,open,,,Leidimo galiojimo pradžia
+11,,,,,valid_to,date,,VALID_TO,,3,open,,,Leidimo galiojimo pabaiga
+12,,,,,equipment_name,string,,EQUIPMENT_NAME,,3,open,,,Įrangos pavadinimas
+13,,,,,power,number,W,POWER,,4,open,,,Įrangos siųstuvo galia
+14,,,,,emission_class,string,,EMISSION_CLASS,,3,open,,,Spinduliavimo klasė
+15,,,,,frequency_band,string,,FREQUENCY_BAND,,3,open,,,Dažnis arba dažnių juosta
