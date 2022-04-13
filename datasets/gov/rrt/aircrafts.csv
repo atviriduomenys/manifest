@@ -12,4 +12,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 11,,,,,equipment_name,string,,EQUIPMENT_NAME,,3,open,,,Įrangos pavadinimas
 12,,,,,power,number,W,POWER,,4,open,,,Įrangos siųstuvo galia
 13,,,,,emission_class,string,,EMISSION_CLASS,,3,open,,,Spinduliavimo klasė
-14,,,,,frequency_band,string,MHz,FREQUENCY_BAND,,3,open,,,Dažnis arba dažnių juosta
+14,,,,,frequency_band,string,,FREQUENCY_BAND,,3,open,,,Dažnis arba dažnių juosta
