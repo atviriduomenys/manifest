@@ -14,8 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,qual,integer,,qual,,3,open,,,radijo ryšio parametras
 ,,,,,snr,integer,,snr,,3,open,,,radijo ryšio parametras
 ,,,,,cqi,integer,,cqi,,3,open,,,radijo ryšio parametras
-,,,,,DL_sparta,integer,kbits/s,DL sparta kbit/s,,4,open,,,"Duomenų perdavimo sparta, gavimas"
-,,,,,UL_sparta,integer,kbits/s,UL sparta kbit/s,,4,open,,,"Duomenų perdavimo sparta, siuntimas"
+,,,,,DL_sparta,integer,,DL sparta kbit/s,,4,open,,,"Duomenų perdavimo sparta, gavimas"
+,,,,,UL_sparta,integer,,UL sparta kbit/s,,4,open,,,"Duomenų perdavimo sparta, siuntimas"
 ,,,,,pingavg,integer,,pingavg,,3,open,,,"delsa, vidutinė vertė"
 ,,,,,pingmin,integer,,pingmin,,3,open,,,"delsa, minimali vefrtė"
 ,,,,,pingmax,integer,,pingmax,,3,open,,,"delsa, maksimali vertė"
