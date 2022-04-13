@@ -10,5 +10,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,sveiki augalai,"""sveiki augalai""",,,,,
 ,,,,,,,,vidutiniškai,"""vidutiniškai""",,,,,
 ,,,,,,,,stipriai,"""stipriai""",,,,,
-,,,,,savivaldybe,string,,Savivaldybe,,3,open,,,
+,,,,,savivaldybe,string,,Savivaldybe,,2,open,,,
 ,,,,,stebejimo_data,date,,StebejimoData,,4,open,,,
