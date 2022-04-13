@@ -7,8 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licence_no,string,,NUMBER,,3,open,,,Leidimo numeris
 ,,,,,call_sign,string,,CALL_SIGN,,3,open,,,Šaukinys
 ,,,,,cert_class,string,,CERTIFCLASS,,3,open,,,CERT klasė
-,,,,,,enum,,,null,,,,,
-,,,,,,,,,"""A""",,,,A,
+,,,,,,enum,,,"""A""",,,,A,
 ,,,,,,,,,"""B""",,,,B,
 ,,,,,type,string,,TYPE,,3,open,,,Leidimo tipas (klubui arba asmeniui)
 ,,,,,,enum,,,"""Klubinis""",,,,Klubinis,
