@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,item_code_type,string,,@itemCodeType,,3,open,,Įrašo kodo tipas,
 ,,,,,last_change,date,10D,@lastChange,,4,open,,Paskutinio keitimo data,
 ,,,,,xmlns_ns,string,,@xmlns:ns,,3,open,,XML schemos aprašo nuoroda,
-,,,,NameAndDescription,,,id,//ns:ReferenceData/ns:NameAndDescription,,,,,,
+,,,,NameAndDescription,,,id,/ReferenceData/NameAndDescription,,,,,,
 ,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
 ,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
 ,,,,,language_code,string,,@languageCode,,3,open,,Kalbos kodas,2 simbolių šalies kodas
