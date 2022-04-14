@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/ds,,,,,,,,,,,,,
-,,sodradraudejai,,,,csv,archyvas,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"self.extract(""zip"")[""draudejai.csv""]",,,,,
+,,sodradraudejai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"self.extract(""zip"")[""draudejai.csv""]",,,,,
 ,,,,,,,,,,,,,,
 ,,,,Draudejai,,,"draudeju_grupe, draudeju_tipas",,,,,,,
 ,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
