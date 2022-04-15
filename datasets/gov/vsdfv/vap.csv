@@ -6,13 +6,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,met� m�nuo,M�nuo 
 ,,,,,apdraustuju_rusis,string,,APDRAUSTUJU_RUSIS,,3,open,,apdraust�j� r��is,Apdraust�j� r��is
 ,,,,,draudejo_grupe,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_GRUPE,,4,open,,draud�jo grup�,Draud�jo grup�
-,,,,,draudejo_grupe.draudeju_grupe,,,,,,,,,
 ,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_TIPAS,,4,open,,draud�jo tipas,Draud�jo tipas
-,,,,,draudejo_tipas.draudeju_tipas,,,,,,,,,
 ,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldyb�,Savivaldyb�
 ,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
 ,,,,,amzius,string,,AMZIUS,,3,open,,am�ius,Am�ius
-,,,,,darbo_uzmok_eur,currency,EUR,DARBO_UZMOK_EUR,,4,open,,"darbo u�mokestis, Eur","Darbo u�mokestis, Eur"
+,,,,,darbo_uzmok_eur,number,,DARBO_UZMOK_EUR,,3,open,,"darbo u�mokestis, Eur","Darbo u�mokestis, Eur"
 ,,,,,apdr_asm_sk,number,,APDR_ASM_SK,,3,open,,apdraust�j� asmen� skai�ius,Apdraustieji � fiziniai asmenys kurie valstybinio socialinio draudimo �mokas moka patys arba u� juos �ias �mokas moka draud�jai
 ,,,,,,,,,,,,,,
 ,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""]",,,,,
