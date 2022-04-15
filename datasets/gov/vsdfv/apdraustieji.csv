@@ -2,8 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/apdraustieji,,,,,,,,,,,,,
 ,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"self.extract(""zip"")[""apdraustieji_ketv.csv""]",,,,,
 ,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,,,,,
-,,,,,metai,date,Y,METAI,,4,open,,metai,Metai
-,,,,,ketvirtis,date,3M,KETVIRTIS,,4,open,,ketvirtis,Ketvirtis
+,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
+,,,,,ketvirtis,date,3M,KETVIRTIS,,2,open,,ketvirtis,Ketvirtis
 ,,,,,apdr_kateg_grupe,string,,APDR_KATEG_GRUPE,,3,open,,apdraustųjų kategorijos grupė,Apdraustųjų kategorijos grupė
 ,,,,,apdr_kateg_rusis,string,,APDR_KATEG_RUSIS,,3,open,,apdraustųjų kategorijos rūšis,Apdraustųjų kategorijos rūšis
 ,,,,,apdr_kateg_porusis,string,,APDR_KATEG_PORUSIS,,3,open,,apdraustųjų kategorijos porūšis,Apdraustųjų kategorijos porūšis
