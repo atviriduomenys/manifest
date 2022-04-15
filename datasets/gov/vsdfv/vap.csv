@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apdr_asm_sk,number,,APDR_ASM_SK,,3,open,,apdraust�j� asmen� skai�ius,Apdraustieji � fiziniai asmenys kurie valstybinio socialinio draudimo �mokas moka patys arba u� juos �ias �mokas moka draud�jai
 ,,,,,,,,,,,,,,
 ,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""]",,,,,
-,,,,PajamuAnalize,,,"amzius, lytis, menesio_pajamos",,,,,,,
+,,,,PajamuAnalize,,,"amzius, lytis",,,,,,,
 ,,,,,metai,date,1Y,metai,,2,open,,Metai,Metai
 ,,,,,menuo,date,1M,mėnuo,,2,open,,M�nuo,M�nuo
 ,,,,,amzius,number,,amžius,,3,open,,Apdraustojo am�ius (met� tikslumu),Apdraustojo am�ius (met� tikslumu)
