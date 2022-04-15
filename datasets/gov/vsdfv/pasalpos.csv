@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/pasalpos,,,,,,,,,,,,,
 ,,sodrapasalpos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pasalpos.zip,"self.extract(""zip"")[""pasalpos.csv""]",,,,,
 ,,,,Pasalpos,,,"pasalpos_rusis, pasalpos_porusis",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,4,open,,mėnuo,Mėnuo
+,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,mėnuo,Mėnuo
 ,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,išmokos rūšis,Išmokos rūšis
 ,,,,,pasalpos_porusis,string,,PASALPOS_PORUSIS,,3,open,,išmokos porūšis,Išmokos porūšis
 ,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
