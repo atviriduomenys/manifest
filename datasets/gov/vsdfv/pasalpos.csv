@@ -12,4 +12,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
 ,,,,,apmok_dienu_sk,number,,APMOK_DIENU_SK,,3,open,,apmokėtų dienų skaičius,Apmokėtų dienų skaičius
 ,,,,,pasalpu_sk,number,,PASALPU_SK,,3,open,,išmokų skaičius,Išmokų skaičius
-,,,,,prisk_suma_eur,currency,EUR,PRISK_SUMA_EUR,,4,open,,"priskaičiuota išmokų suma, Eur","Priskaičiuota išmokų suma, Eur"
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,,open,,"priskaičiuota išmokų suma, Eur","Priskaičiuota išmokų suma, Eur"
