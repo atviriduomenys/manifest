@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/nelaimingi_atsitikimai,,,,,,,,,,,,,
 ,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"self.extract(""zip"")[""nad_pl.csv""]",,,,,
 ,,,,NelaimingiAtsitikimai,,,"pasalpos_rusis, pasalpos_priezastis",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,4,open,,metų mėnuo,Metų mėnuo
+,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,metų mėnuo,Metų mėnuo
 ,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,pašalpos rūšis,Pašalpos rūšis
 ,,,,,pasalpos_priezastis,string,,PASALPOS_PRIEZASTIS,,3,open,,pašalpos priežastis,Pašalpos priežastis
 ,,,,,net_darb_lygis,string,,NET_DARB_LYGIS,,3,open,,netekto darbingumo lygis,Netekto darbingumo lygis
