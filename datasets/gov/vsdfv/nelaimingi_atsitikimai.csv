@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/nelaimingi_atsitikimai,,,,,,,,,,,,,
-,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"self.extract(""zip"")[""apdraustieji_ketv.csv""]",,,,,
+,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"self.extract(""zip"")[""nad_pl.csv""]",,,,,
 ,,,,NelaimingiAtsitikimai,,,"pasalpos_rusis, pasalpos_priezastis",,,,,,,
 ,,,,,metu_menuo,date,1M,METU_MENUO,,4,open,,metų mėnuo,Metų mėnuo
 ,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,pašalpos rūšis,Pašalpos rūšis
@@ -11,5 +11,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
 ,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
 ,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
-,,,,,prisk_suma_eur,currency,EUR,PRISK_SUMA_EUR,,4,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
 ,,,,,ismoku_sk,number,,ISMOKU_SK,,3,open,,išmokų skaičius,Išmokų skaičius
