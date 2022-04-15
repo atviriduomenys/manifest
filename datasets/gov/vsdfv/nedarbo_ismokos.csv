@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
 ,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
 ,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
-,,,,,ismokos_dydis_eur,currency,EUR,ISMOKOS_DYDIS_EUR,,4,open,,"išmokos dydis, Eur","Išmokos dydis, Eur"
+,,,,,ismokos_dydis_eur,number,,ISMOKOS_DYDIS_EUR,,3,open,,"išmokos dydis, Eur","Išmokos dydis, Eur"
 ,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
-,,,,,prisk_suma_eur,currency,EUR,PRISK_SUMA_EUR,,4,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
 ,,,,,mok_trukme_sum,number,,MOK_TRUKME_SUM,,3,open,,"mokėjimo trukmė, mėn.","Mokėjimo trukmė, mėn."
