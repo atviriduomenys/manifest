@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/nedarbo_ismokos,,,,,,,,,,,,,
 ,,sodranedarboismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nedarbo_ismokos.zip,"self.extract(""zip"")[""nedarbo_ismokos.csv""]",,,,,
 ,,,,NedarboIsmokos,,,"metu_menuo, lytis, amzius",,,,,,,
-,,,,,metu_menuo,date,,METU_MENUO,,4,open,,mėnuo,Mėnuo
+,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,mėnuo,Mėnuo
 ,,,,,uz_pilna_men,string,,UZ_PILNA_MEN,,3,open,,ar išmoka uš pilną mėnesį?,Išmoka mokama už visas mėnesio dienas arba nevisas
 ,,,,,,enum,,,"""Už nepilną mėnesį""",,,,Darbo išmokos už nepilną mėnesį,
 ,,,,,,,,,"""Už pilną mėnesį""",,,,Darbo išmokos už pilną mėnesį,
