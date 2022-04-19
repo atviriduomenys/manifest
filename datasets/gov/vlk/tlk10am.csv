@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,,,,,,enum,bool,N,false,,,,,
+,,,,,,,,T,true,,,,,
+,,,,,,,,,,,,,,
+,datasets/gov/vlk/tlk10am,,,,,,,,,,,,,
+,,adk,,,,csv,,https://data.gov.lt/dataset/1259/download/,,,,,,
+,,,,,,,,,,,,,,
+,,,,Tlk10am,,,code,9423/tlk_10_am_data.csv,,,,,Ligų sąrašas (TLK-10-AM),"Ligų klasifikacija. TLK-10-AM – Tarptautinė statistinė ligų ir sveikatos sutrikimų klasifikacija, dešimtasis pataisytas ir papildytas leidimas, Australijos modifikacija (TLK-10-AM) – Sisteminis ligų sąrašas"
+,,,,,code,string,,DiagnosisCode,,4,open,,,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,name,string,,DiagnosisName,,4,open,,,"Diagnozės pavadinimas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,has_asterisk,boolean,bool,DiagnosisHasAsterisk,,4,open,,,Žvaigždutės simbolis  žymi požymio (pasireiškimo) kodą 
+,,,,,has_circled_times,boolean,bool,DiagnosisHasCircledTimes,,4,open,,,"Apskritimo simbolis nurodo, kad ligos diagnozės kodą sukūrė australai"
+,,,,,has_dagger,boolean,bool,DiagnosisHasDagger,,4,open,,,Kryželio simbolis žymi etiologijos (sukeliančios priežasties) kodą
+,,,,,section_code,string,,DiagnosisSectionCode,,4,open,,,Diagnozės kodų poskyrio grupės
+,,,,,section_name,string,,DiagnosisSectionName,,4,open,,,Diagnozės kodų poskyrio pavadinimas  
+,,,,,chapter_code,string,,DiagnosisChapterCode,,4,open,,,Skyriui priklausanti kodų grupė
+,,,,,chapter_name,string,,DiagnosisChapterName,,4,open,,,Skyriaus pavadinimas
+,,,,,valid_from,date,,DiagnosisValidFrom,,4,open,,,Diagnozės kodo galiojimo pradžios data
+,,,,,valid_to,date,,DiagnosisValidTo,,4,open,,,Diagnozės kodo galiojimo pabaigos data
