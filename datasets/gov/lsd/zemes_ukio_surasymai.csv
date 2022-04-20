@@ -47,6 +47,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,SenGeoDuom2010,,,,sen_geo_duom_2010,,,,,"Seniūnijų taškiniai geoerdviniai duomenys, remiantis visuotiniu žemės ūkių sura",
 ,,,,,geo_koord,"geometry(point, 4326)",m,,,4,open,,ūkio koordinatė (WGS84),
+,,,,,objectid,integer,,,,4,open,,objekto įdentifikatorius,
 ,,,,,sav_pav,string,,,,2,open,,savivaldybės pavadinimas,
 ,,,,,sen_pav,string,,,,2,open,,seniūnijos pavadinimas,
 ,,,,,galviju_sk,string,,,,4,open,,galvijų skaičius,
