@@ -58,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Engine capacity,
 ,,,,,galia,integer,kW,GALIA,,4,open,,Didžiausia naudingoji galia,
 ,,,,,,lang,en,,,,,,Maximum net power,
-,,,,,sukiu_sk,integer,min-1,SUKIU_SK,,4,open,,Vardinis sūkių skaičius,
+,,,,,sukiu_sk,integer,,SUKIU_SK,,3,open,,Vardinis sūkių skaičius,
 ,,,,,,lang,en,,,,,,Rated engine speed,
 ,,,,,galia_elektr,integer,kW,GALIA_ELEKTR,,4,open,,Didžiausia nuolatinė elektrinio variklio vardinė galia,
 ,,,,,,lang,en,,,,,,Maximum continuous electric motor rated power,
