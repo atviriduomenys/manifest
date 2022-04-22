@@ -109,7 +109,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Rear axle track,
 ,,,,,galios_mases_sant,integer,,GALIOS_MASES_SANT,,4,open,,Galios ir masės santykis (tik motociklams),
 ,,,,,,lang,en,,,,,,Power-to-mass ratio (for motorcycles only),
-,,,,,maks_greitis,integer,km/h,MAKS_GREITIS,,4,open,,Didžiausias leidžiamas greitis,
+,,,,,maks_greitis,integer,,MAKS_GREITIS,,3,open,,Didžiausias leidžiamas greitis,
 ,,,,,,lang,en,,,,,,Maximum speed,
 ,,,,,sedimu_vietu_sk,number,,SEDIMU_VIETU_SK,,4,open,,Sėdimų vietų skaičius (įskaitant vairuotojo vietą),
 ,,,,,,lang,en,,,,,,Number of seating positions (including the driver),
