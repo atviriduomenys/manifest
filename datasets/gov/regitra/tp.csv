@@ -149,5 +149,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Holder (Natural person) date of birth interval,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,SAVIVALDYBE,,5,open,locn:geographicName,Savivaldybë,Pagal valdytojo registracijos adresà
 ,,,,,,lang,en,,,,,,Municipality,According to the holder's registration address
-,,,,,apskritis,ref,datasets/gov/rc/ar/apskritis/Apskritis,APSKRITIS,,5,open,locn:geographicName,Apskritis,Pagal valdytojo registracijos adresà
+,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,APSKRITIS,,5,open,locn:geographicName,Apskritis,Pagal valdytojo registracijos adresà
 ,,,,,,lang,en,,,,,,County,According to the holder's registration address
