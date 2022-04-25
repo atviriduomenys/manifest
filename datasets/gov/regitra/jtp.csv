@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,,,,,,prefix,locn,,,,,http://www.w3.org/ns/locn#,,
-,datasets/gov/regitra/tp,,,,,,,,,,,,,
+,datasets/gov/regitra/jtp,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://www.regitra.lt/atvduom/Atviri_JTP_parko_duomenys.zip,"self.extract(""zip"")[""Atviri_JTP_parko_duomenys.csv""]",,,,,
 ,,,,TransportoPriemone,,,"marke, komercinis_pav",,,3,,,,
 ,,,,,marke,string,,MARKE,,3,open,,Gamybinė markė (gamintojo prekės pavadinimas),"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldyb=1`, tomet vietoje ""Gamybinė markė"" yra nurodoma `Nuasmeninta`, atsižvelgiant į asmens duomenų apsaugą."
@@ -54,7 +54,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,The technically permissible maximum laden mass on the axle of the semi-trailer,
 ,,,,,bandomoji_mase,integer,kg,BANDOMOJI_MASE,,4,open,,Bandomoji masė,
 ,,,,,,lang,en,,,,,,Test mass,
-,,,,,darb_turis,integer,cm³,DARB_TURIS,,4,open,,Variklio darbinis tūris,
+,,,,,darbinis_turis,integer,cm³,DARBINIS_TURIS,,4,open,,Variklio darbinis tūris,
 ,,,,,,lang,en,,,,,,Engine capacity,
 ,,,,,galia,integer,kW,GALIA,,4,open,,Didžiausia naudingoji galia,
 ,,,,,,lang,en,,,,,,Maximum net power,
