@@ -148,8 +148,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vald_gim_dat_int,string,,VALD_GIM_DAT_INT,,3,open,,Valdytojo (fizinio asmens) gimimo datos intervalas,
 ,,,,,,lang,en,,,,,,Holder (Natural person) date of birth interval,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,SAVIVALDYBE,,5,open,locn:geographicName,Savivaldybë,Pagal valdytojo registracijos adresà
-,,,,,Savivaldybe.pavadinimas,,,,,3,,,,
 ,,,,,,lang,en,,,,,,Municipality,According to the holder's registration address
 ,,,,,apskritis,ref,datasets/gov/rc/ar/apskritis/Apskritis,APSKRITIS,,5,open,locn:geographicName,Apskritis,Pagal valdytojo registracijos adresà
-,,,,,Apskritis.pavadinimas,,,,,3,,,,
 ,,,,,,lang,en,,,,,,County,According to the holder's registration address
