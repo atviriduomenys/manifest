@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,EU type approval number,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""EU type approval number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
 ,,,,,nac_tipo_patvirtinimo_nr,string,,NAC_TIPO_PATVIRTINIMO_NR,,4,open,,"Nacionalinis tipo patvirtinimo, áskaitant iðplëtimà, numeris","Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Nacionalinis tipo patvirtinimo, áskaitant iðplëtimà, numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
 ,,,,,,lang,en,,,,,,"National type approval, including extension number","When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""National type approval, including extension number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
-,,,,,individual_patvirtinimo_nr,,,INVIDUAL_PATVIRTINIMO_NR,,4,open,,Individualaus patvirtinimo numeris,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Individualaus patvirtinimo numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,individual_patvirtinimo_nr,string,,INVIDUAL_PATVIRTINIMO_NR,,4,open,,Individualaus patvirtinimo numeris,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Individualaus patvirtinimo numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
 ,,,,,,lang,en,,,,,,Individual approval number,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Individual approval number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
 ,,,,,interpoliacija,string,,INTERPOLIACIJA,,4,open,,Interpoliacijos ðeimos identifikatorius,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Interpoliacijos ðeimos identifikatorius"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
 ,,,,,,lang,en,,,,,,Interpolation family’s identifier,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Interpolation family’s identifier"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
@@ -62,7 +62,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Engine capacity,
 ,,,,,galia,number,kW,GALIA,,3,open,,Didþiausia naudingoji galia,
 ,,,,,,lang,en,,,,,,Maximum net power,
-,,,,,sukiu_sk,number,min-1,SUKIU_SK,,4,open,,Vardinis sûkiø skaièius,
+,,,,,sukiu_sk,number,,SUKIU_SK,,3,open,,Vardinis sûkiø skaièius,
 ,,,,,,lang,en,,,,,,Rated engine speed,
 ,,,,,galia_elektr,number,kW,GALIA_ELEKTR,,4,open,,Didþiausia nuolatinë elektrinio variklio vardinë galia,
 ,,,,,,lang,en,,,,,,Maximum continuous electric motor rated power,
@@ -89,11 +89,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Total CO? emissions NEDC savings due to the eco-innovations,
 ,,,,,co2_sumazejimas_wltp,number,g/km,CO2_SUMAZEJIMAS_WLTP,,4,open,,"Dël ekologinës naujovës (-iø) sumaþëjæs bendras iðmetamo CO? kiekis, taikant WLTP",
 ,,,,,,lang,en,,,,,,Total CO? emissions WLTP savings due to the eco-innovations,
-,,,,,elektr_energ_sanaud_nedc,number,Wh/km,ELEKTR_ENERG_SANAUD_NEDC,,4,open,,Elektros energijos sànaudos (NEDC reikðmë),
+,,,,,elektr_energ_sanaud_nedc,number,,ELEKTR_ENERG_SANAUD_NEDC,,3,open,,Elektros energijos sànaudos (NEDC reikðmë),
 ,,,,,,lang,en,,,,,,Electric energy consumption (NEDC value),
-,,,,,elektr_energ_sanaud_wltp_e,number,Wh/km,ELEKTR_ENERG_SANAUD_WLTP_E,,4,open,,Elektros energijos sànaudos (WLTP reikðmë - elenktrinë),
+,,,,,elektr_energ_sanaud_wltp_e,number,,ELEKTR_ENERG_SANAUD_WLTP_E,,3,open,,Elektros energijos sànaudos (WLTP reikðmë - elenktrinë),
 ,,,,,,lang,en,,,,,,Electric energy consumption (WLTP value - electric),
-,,,,,elektr_energ_sanaud_wltp_h,number,Wh/km,ELEKTR_ENERG_SANAUD_WLTP_H,,4,open,,Elektros energijos sànaudos (WLTP reikðmë - hibridas),
+,,,,,elektr_energ_sanaud_wltp_h,number,,ELEKTR_ENERG_SANAUD_WLTP_H,,3,open,,Elektros energijos sànaudos (WLTP reikðmë - hibridas),
 ,,,,,,lang,en,,,,,,Electric energy consumption (WLTP value - hybrid),
 ,,,,,elektrine_rida_nedc,number,km,ELEKTRINE_RIDA_NEDC,,4,open,,Elektrinë rida (NEDC reikðmë),
 ,,,,,,lang,en,,,,,,Electric range (NEDC value),
@@ -115,7 +115,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Power-to-mass ratio (for motorcycles only),
 ,,,,,spalva,string,,SPALVA,,3,open,,Spalva,
 ,,,,,,lang,en,,,,,,Colour,
-,,,,,maks_greitis,integer,km/h,MAKS_GREITIS,,4,open,,Didþiausias leidþiamas greitis,
+,,,,,maks_greitis,integer,,MAKS_GREITIS,,3,open,,Didþiausias leidþiamas greitis,
 ,,,,,,lang,en,,,,,,Maximum speed,
 ,,,,,sedimu_vietu_sk,integer,,SEDIMU_VIETU_SK,,3,open,,Sëdimø vietø skaièius (áskaitant vairuotojo vietà),
 ,,,,,,lang,en,,,,,,Number of seating positions (including the driver),
