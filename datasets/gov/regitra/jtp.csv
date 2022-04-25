@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,locn,,,,,http://www.w3.org/ns/locn#,,
 ,datasets/gov/regitra/jtp,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://www.regitra.lt/atvduom/Atviri_JTP_parko_duomenys.zip,"self.extract(""zip"")[""Atviri_JTP_parko_duomenys.csv""]",,,,,
-,,,,TransportoPriemone,,,"marke, komercinis_pav",,,3,,,,
+,,,,TransportoPriemone,,,"keb_kodas, spec_kodas",,,,,,,
 ,,,,,marke,string,,MARKE,,3,open,,Gamybinė markė (gamintojo prekės pavadinimas),"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldyb=1`, tomet vietoje ""Gamybinė markė"" yra nurodoma `Nuasmeninta`, atsižvelgiant į asmens duomenų apsaugą."
 ,,,,,,lang,en,,,,,,Make (Trade name of the manufacturer),"When `vald_tipas=""Fizinis""` (Legal) and `marke+komercinis_pav+savivaldyeb=1`, then instead ""Make (trade name of the manufacturer)"" indicated `Nuasmeninta`, taking into account the protection of personal data."
 ,,,,,komercinis_pav,string,,KOMERCINIS_PAV,,3,open,,Komercinis pavadinimas,"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldybe=1`, tomet vietoje ""Komercinis pavadinimas"" yra nurodoma `Nuasmeninta`, atsižvelgiant į asmens duomenų apsaugą."
