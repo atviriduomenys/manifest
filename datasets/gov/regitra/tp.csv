@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,lang,en,,,,,,Interpolation family’s identifier,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Interpolation family’s identifier"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
 ,,,,,uzbaigtumo_pakopa,string,,UZBAIGTUMO_PAKOPA,,3,open,,Transporto priemonës uþbaigtumo pakopa,
 ,,,,,,lang,en,,,,,,Vehicle completion stage,
-,,,,,vairas_desineje,bolean,,VAIRAS_DESINEJE,,3,open,,Vairas deðinëje pusëje,Transporto priemonë pritaikyta eismui kairiàja kelio puse ir (ar) turi vairà deðinëje pusëje
+,,,,,vairas_desineje,boolean,,VAIRAS_DESINEJE,,3,open,,Vairas deðinëje pusëje,Transporto priemonë pritaikyta eismui kairiàja kelio puse ir (ar) turi vairà deðinëje pusëje
 ,,,,,,lang,en,,,,,,Steering wheel on the right,The vehicle is designed for left-hand traffic and / or has a right-hand drive
 ,,,,,,enum,,Y,true,,,,Taip,
 ,,,,,,,,N,false,,,,Ne,
