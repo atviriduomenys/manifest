@@ -30,6 +30,7 @@ datasets/gov/lsd/gyventojai_bustas.csv
 datasets/gov/lsd/ukio_subjektai.csv
 datasets/gov/lsd/zemes_ukio_surasymai.csv
 datasets/gov/lsd/covid19.csv
+datasets/gov/lsd/instituciniai_sektoriai.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
