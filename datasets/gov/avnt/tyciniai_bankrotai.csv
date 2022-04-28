@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/avnt/tyciniai_bankrotai,,,,,,,,,,,,Duomenys apie tyčinius bankrotus,
 ,,,,,,,,,,,,,,
 ,,,,TyciniaiBankrotai,,,,,,,,,Duomenys apie tyčinius bankrotus,
-,,,,,eil_nr,integer,,,,3,open,,Eilės numeris,
+,,,,,eil_nr,integer,,,,4,open,,Eilės numeris,
+
 ,,,,,imones_kodas,string,,,,3,open,,Įmonės kodas,
 ,,,,,imones_pavadinimas,string,,,,3,open,,Įmonės pavadinimas,
 ,,,,,bankroto_pradzia,date,,,,3,open,,Bankroto proceso pradžios data,
