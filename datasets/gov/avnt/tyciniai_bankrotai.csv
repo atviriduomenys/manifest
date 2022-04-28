@@ -6,7 +6,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,imones_kodas,string,,,,2,open,,Įmonės kodas,
 
-,,,,,imones_pavadinimas,string,,,,3,open,,Įmonės pavadinimas,
+,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas,
+
 ,,,,,bankroto_pradzia,date,,,,3,open,,Bankroto proceso pradžios data,
 ,,,,,apygardos_teismas,string,,,,3,open,,Apygardos teismo pavadinimas,
 ,,,,,likvidavimo_data,date,,,,3,open,,Likvidavimo data,
