@@ -8,10 +8,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas,
 
-,,,,,bankroto_pradzia,date,D,,,3,open,,Bankroto proceso pradžios data,
+,,,,,bankroto_pradzia,date,D,,,4,open,,Bankroto proceso pradžios data,
 ,,,,,apygardos_teismas,string,,,,2,open,,Apygardos teismo pavadinimas,
 
-,,,,,likvidavimo_data,date,D,,,3,open,,Likvidavimo data,
-,,,,,tycinis_bankrotas,date,D,,,3,open,,Pripažinti bankrotą tyčiniu data, Data, kuomet bankrotas pripažintas tyčiniu
-,,,,,sprendimas_del_pabaigos,date,D,,,3,open,,Sprendimo dėl pabaigos data,
-,,,,,isregistravimo_data,date,D,,,3,open,,Išregistravimo data,
+,,,,,likvidavimo_data,date,D,,,4,open,,Likvidavimo data,
+,,,,,tycinis_bankrotas,date,D,,,4,open,,Pripažinti bankrotą tyčiniu data, "Data, kuomet bankrotas pripažintas tyčiniu"
+,,,,,sprendimas_del_pabaigos,date,D,,,4,open,,Sprendimo dėl pabaigos data, 
+,,,,,isregistravimo_data,date,D,,,4,open,,Išregistravimo data,
