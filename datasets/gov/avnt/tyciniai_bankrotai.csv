@@ -12,6 +12,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apygardos_teismas,string,,,,2,open,,Apygardos teismo pavadinimas,
 
 ,,,,,likvidavimo_data,date,D,,,3,open,,Likvidavimo data,
-,,,,,tycinis_bankrotas,date,D,,,3,open,,Pripažinti bankrotą tyčiniu data,
+,,,,,tycinis_bankrotas,date,D,,,3,open,,Pripažinti bankrotą tyčiniu data, Data, kuomet bankrotas pripažintas tyčiniu
 ,,,,,sprendimas_del_pabaigos,date,D,,,3,open,,Sprendimo dėl pabaigos data,
 ,,,,,isregistravimo_data,date,D,,,3,open,,Išregistravimo data,
