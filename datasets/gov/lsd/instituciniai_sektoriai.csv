@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lsd/instituciniai_sektoriai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,InstitucijuVeiklosRusysSektoriai,,,,instituciju_veiklos_rusys_sektoriai,,,,,GYVENTOJAMS IŠDUOTŲ VERSLO LIUDIJIMŲ DUOMENYS,
+,,,,Institucija,,,,instituciju_veiklos_rusys_sektoriai,,,,,GYVENTOJAMS IŠDUOTŲ VERSLO LIUDIJIMŲ DUOMENYS,
 ,,,,,jar_kodas,string,,JAR_KODAS,,4,open,,Juridinio asmens registracijos kodas,
 ,,,,,evrk2,string,,EVRK2,,4,open,,Ekonominės veiklos rūšies klasifikatorius,
 ,,,,,evrk2_pavad,string,,EVRK2_PAVAD,,4,open,,Ekonominės veiklos rūšies pavadinimas,
