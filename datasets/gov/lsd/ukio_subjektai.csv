@@ -602,7 +602,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dsk_,integer,,,,2,open,,Darbuotojų skaičius,
 ,,,,,b_c_d_e,number,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: apdirbamoji gamyba, kasyba ir karjerų eksploatavimas bei kita pramonė,
 ,,,,,imoniu_sk,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius,
-,,,,,grid_id,integer,,,,2,open,,Gardelės identifikavimo kodas,
+,,,,,grid_id,string,,,,2,open,,Gardelės identifikavimo kodas,
 ,,,,,r_s_t_u,string,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: kitos paslaugos,
 ,,,,,o_p_q,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: viešasis valdymas ir gynyba, švietimas, žmonių sveikatos priežiūra ir socialinis darbas,
 ,,,,,shape_leng,number,,,,2,open,,gardelės ilgis,
