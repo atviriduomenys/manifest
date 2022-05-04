@@ -523,7 +523,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,shape_leng,number,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: apdirbamoji gamyba, kasyba ir karjerų eksploatavimas bei kita pramonė,
 ,,,,,b_c_d_e,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius,
 ,,,,,imoniu_sk,string,,,,2,open,,Gardelės identifikavimo kodas,
-,,,,,grid_id,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: kitos paslaugos,
+,,,,,grid_id,string,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: kitos paslaugos,
 ,,,,,r_s_t_u,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: viešasis valdymas ir gynyba, švietimas, žmonių sveikatos priežiūra ir socialinis darbas,
 ,,,,,o_p_q,number,,,,2,open,,gardelės ilgis,
 ,,,,,m_n,integer,,,,2,open,,Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: profesinė, mokslinė ir techninė veikla, administracinė ir aptarnavimo veikla,
