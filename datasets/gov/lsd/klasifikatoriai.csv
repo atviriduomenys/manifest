@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,string,,,,,4,open,,Kodas,
 ,,,,,pavadinimas,string,,,,,2,open,,Pavadinimas,
 ,,,,,,,,,,,,,,
-,,,,Sektorius,,,,jar_sector,,,,,Institucos sektorius ir subsektorių klasifikatorius,
+,,,,Sektorius,,,,,,,,,Institucos sektorius ir subsektorių klasifikatorius,
 ,,,,,kodas,integer,,,,,4,open,,Kodas,
 ,,,,,pavadinimas,string,,,,,2,open,,Pavadinimas,
 ,,,,,,,,,,,,,,
