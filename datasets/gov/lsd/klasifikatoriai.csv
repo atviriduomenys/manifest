@@ -10,6 +10,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,esa2010_sektor_pavad,string,,,,3,open,,sektoriaus pavadinimas,
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
-,,,,,jar_kodas,,,,,2,open,,Kodas,
+,,,,,jar_kodas,string,,,,2,open,,Kodas,
 ,,,,,ekonomine_veiklos_rusis,ref,EkonominesVeiklosRusis,,,4,open,,Ekonominės veikos rūšis,
 ,,,,,sektorius,ref,Sektorius,,,4,open,,Sektorius,
