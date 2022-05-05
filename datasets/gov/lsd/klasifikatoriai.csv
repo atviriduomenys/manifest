@@ -12,5 +12,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
 ,,,,,kodas,integer,,,,2,open,,Kodas,
-,,,,,ekonomines_veiklos_rusis,ref,EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšis,
+,,,,,ekonomines_veiklos_rusis,ref,EkonominesVeiklosRusis,,4,open,,Ekonominės veiklos rūšis,
 ,,,,,sektorius,ref,Sektorius,,,4,open,,Sektorius,
