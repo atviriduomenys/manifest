@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lsd/klasifikatoriai,,,,,,,,,,,,Statistikos departamento klasifikatoriai,
 ,,,,,,,,,,,,,,
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,
-,,,,,evrk2,string,,,,3,open,,rūšies kodas,
+,,,,,kodas,string,,,,3,open,,Kodas,
 ,,,,,evrk2_pavad,string,,,,3,open,,rūšies pavadinimas,
 ,,,,,,,,,,,,,,
 ,,,,Sektorius,,,,jar_sector,,,,,Institucinių sektorių ir subsektorių klasifikatorius,
