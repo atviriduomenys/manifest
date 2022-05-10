@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,
 ,,,,,kodas,string,,,,3,open,,Kodas,
-,,,,,evrk2_pavad,string,,,,3,open,,rūšies pavadinimas,
+,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,
 ,,,,,,,,,,,,,,
 ,,,,Sektorius,,,,jar_sector,,,,,Institucinių sektorių ir subsektorių klasifikatorius,
 ,,,,,esa2010_sektos,string,,,,3,open,,sektoriaus kodas,
