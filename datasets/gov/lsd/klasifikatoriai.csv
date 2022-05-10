@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,string,,,,3,open,,Kodas,
 ,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,
 ,,,,,,,,,,,,,,
-,,,,Sektorius,,,,jar_sector,,,,,Institucinių sektorių ir subsektorių klasifikatorius,
+,,,,Sektorius,,,,,,,,,Sektorius ar subsektorius,
 ,,,,,esa2010_sektos,string,,,,3,open,,sektoriaus kodas,
 ,,,,,esa2010_sektor_pavad,string,,,,3,open,,sektoriaus pavadinimas,
 ,,,,,,,,,,,,,,
