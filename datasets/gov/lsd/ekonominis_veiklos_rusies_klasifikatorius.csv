@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/klasifikatoriai,,,,,,,,,,,,Statistikos departamento klasifikatoriai,
+,datasets/gov/lsd/klasifikatoriai/veiklos,,,,,,,,,,,,Ekonominės veiklos klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,
 ,,,,,lygmuo_1_kodas,string,,,,3,open,,Kodas,
