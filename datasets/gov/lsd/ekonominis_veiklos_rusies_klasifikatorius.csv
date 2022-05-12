@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,,
 ,,,,,kodas,string,,,,2,open,,Lygmens kodas,,
 ,,,,,pavadinimas_lt,string,,,,2,open,,Pavadinimas,,
-,,,,,pavadinimas_en,string,,,,3,open,,Pavadinimas,,
+,,,,,pavadinimas_en,string,,,,2,open,,Pavadinimas,,
 ,,,,,pastabos_lt,string,,,,2,open,,Aiškinamosios pastabos,,
 ,,,,,pastabos_en,string,,,,2,open,,Aiškinamosios pastabos,,
 ,,,,,lygmuo,ref,Lygmuo,,,4,open,,Lygmuo,,
