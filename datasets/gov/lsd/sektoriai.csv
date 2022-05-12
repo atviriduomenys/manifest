@@ -3,4 +3,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Sektorius,,,,,,,,,Sektorius arba subsektorius,
 ,,,,,kodas,string,,,,4,open,,Kodas,
-,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,
+,,,,,pavadinimas_lt,string,,,,2,open,,Pavadinimas,
