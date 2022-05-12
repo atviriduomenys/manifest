@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/klasifikatoriai/sektoriai,,,,,,,,,,,,Sektorių ir subsektorių klasifikatoriai,
+,datasets/gov/lsd/sektoriai,,,,,,,,,,,,Sektorių ir subsektorių klasifikatoriai,
 ,,,,,,,,,,,,,,
 ,,,,Sektorius,,,,,,,,,Sektorius arba subsektorius,
 ,,,,,kodas,string,,,,4,open,,Kodas,
