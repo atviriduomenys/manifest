@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Lygmuo,,,,,,,,,,,
 ,,,,,lygmens_pavadinimas,string,,,,3,open,,lygmens pavadinimas,,
 ,,,,,pavadinimas_en,string,,,,3,open,,Pavadinimas,,
-,,,,,lygmuo,integer,,,,3,open,,lygmuo,,
+,,,,,lygmuo,integer,,,,3,open,,Lygmuo,,
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,,
 ,,,,,kodas,string,,,,3,open,,lygmens kodas,,
 ,,,,,pavadinimas,string,,,,3,open,,lygmens kodo pavadinimas,,
