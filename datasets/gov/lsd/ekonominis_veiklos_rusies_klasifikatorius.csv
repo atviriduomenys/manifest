@@ -14,4 +14,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastabos_lt,string,,,,2,open,,Aiškinamosios pastabos,,
 ,,,,,pastabos_en,string,,,,2,open,,Aiškinamosios pastabos,,
 ,,,,,lygmuo,ref,Lygmuo,,,4,open,,Lygmuo,,
-,,,,,bendresne_veiklos_rusis,ref,EkonominesVeiklosRusis,,,4,open,skos:broader,Ankstesnė lygmens kodo versija,,
+,,,,,bendresne_veiklos_rusis,ref,EkonominesVeiklosRusis,,,5,open,skos:broader,Ankstesnė lygmens kodo versija,,
