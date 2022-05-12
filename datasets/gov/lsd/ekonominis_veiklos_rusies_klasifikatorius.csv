@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
 ,,,,,,prefix,skos,,,,,http://www.w3.org/2004/02/skos/core#,,,
 ,,,,,,,,,,,,,,,
-,datasets/gov/lsd/klasifikatoriai,,,,,,,,,,,,Ekonominės veiklos klasifikatorius,,
+,datasets/gov/lsd/klasifikatoriai/evrk,,,,,,,,,,,,Ekonominės veiklos klasifikatorius,,
 ,,,,,,,,,,,,,,,
 ,,,,Lygmuo,,,,,,,,,,,
 ,,,,,pavadinimas_lt,string,,,,2,open,,Pavadinimas,,
