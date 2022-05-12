@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lsd/klasifikatoriai/veiklos,,,,,,,,,,,,Ekonominės veiklos klasifikatorius,,
 ,,,,,,,,,,,,,,,
 ,,,,Lygmuo,,,,,,,,,,,
-,,,,,pavadinimas_lt,string,,,,3,open,,Pavadinimas,,
+,,,,,pavadinimas_lt,string,,,,2,open,,Pavadinimas,,
 ,,,,,pavadinimas_en,string,,,,3,open,,Pavadinimas,,
 ,,,,,lygmuo,integer,,,,3,open,,Lygmuo,,
 ,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis,,
