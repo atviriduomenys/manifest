@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/sdi,,,,,,,,,,,,,
 ,,sodraimokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"self.extract(""zip"")[""apdraustieji_ketv.csv""]",,,,,
-,,,,Imokos,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,,,,,
+,,,,Imoka,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,,,,,
 ,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
 ,,,,,ketvirtis,date,3M,KETVIRTIS,,2,open,,ketvirtis,Ketvirtis
 ,,,,,apdr_kateg_grupe,string,,APDR_KATEG_GRUPE,,2,open,,apdraustųjų kategorijos grupė,Apdraustųjų kategorijos grupė
