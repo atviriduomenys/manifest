@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gatve,ref,/datasets/gov/rc/ar/gatve/Gatve,gatve,,2,open,,Gatvė,
 ,,,,,namas,ref,/datasets/gov/rc/ar/patalpa/Patalpa,namas,,3,open,,Namas,
 ,,,,,kita_gatve_sankryzoje,string,,kitaGatveSankryzoje,,3,open,,Kita gatvė (Jei įvykis įvyko sankryžoje),
-,,,,,kelio_pavadinimas,ref,/datasets/gov/lakd/keliai/StateRoad,kelioPavadinimas,,3,open,,Kelio pavadinimas,
+,,,,,kelio_pavadinimas,string,,kelioPavadinimas,,3,open,,Kelio pavadinimas,
 ,,,,,kelio_reiksme,string,,kelioReiksme,,3,open,,Kelio reikšmė,
 ,,,,,atstumas,number,,atstumas,,3,open,,Atstumas,
 ,,,,,dangos_rusis,string,,dangosRusis,,3,open,,Kelio dangos rūšis,
