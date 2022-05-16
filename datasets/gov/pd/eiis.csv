@@ -85,7 +85,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Taip""",,,,Taip,
 ,,,,,,,,,"""Pasišalino""",,,,Pasišalino,
-,,,,,,,,,Null,,,,Null,
+,,,,,,,,,null,,,,Null,
 ,,,,,asmuo_nezinomas,string,,asmuoNezinomas,,3,open,,Asmuo nežinomas,
 ,,,,,,enum,,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Taip""",,,,Taip,
