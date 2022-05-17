@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/institucijos,,,,,,,,,,,,Institucijų sektoriai ir veiklos sritys,
+,datasets/gov/lsd/cl/institucijos,,,,,,,,,,,,Institucijų sektoriai ir veiklos sritys,
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
 ,,,,,jar_kodas,string,,,,2,open,,Kodas,
