@@ -114,7 +114,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,integer,,,,4,open,,Identifikatorius,
 ,,,,,istaigos_paslaugos_profilio_id,ref,IstaigosPaslauguProfilis,,,2,open,,Paslaugos profilio identifikatorius,
 ,,,,,etapo_id,ref,KPaslauguProfiliuEtapas,,,2,open,,Etapo identifikatorius,
-,,,,,istaigos_paslaugos_id,ref,IstaiguPaslauga,,,2,open,,Paslaugos identifikatorius,
+,,,,,istaigos_paslaugos_id,ref,IstaigosPaslauga,,,2,open,,Paslaugos identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,KTeisineForma,,,,,,,,,,
 ,,,,,teisines_formos_id,integer,,,,3,open,,,
