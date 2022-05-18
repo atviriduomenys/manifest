@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,NoiseReductionPanel,,,objectid,,,,,,Akustinė sienelė,
 ,,,,,objectid,integer,,objectid,,4,open,,Objekto identifikatorius,
 ,,,,,eo_kodas,integer,,eo_kodas,,4,open,,Savivaldybės erdvinių duomenų rinkinio specifikacijos kodas,
-,,,,,kelionr,ref,/datasasets/gov/lakd/keliai/StateRoad,kelionr,,4,open,,Kelio numeris,
+,,,,,kelionr,ref,/datasets/gov/lakd/keliai/StateRoad,kelionr,,4,open,,Kelio numeris,
 ,,,,,pr_km,number,,pr_km,,3,open,,Akustinės sienelės pradžios taškas nustatomas projekcijoje į kelią,
 ,,,,,pab_km,number,,pab_km,,3,open,,Akustinės sienelės pabaigos taškas nustatomas projekcijoje į kelią,
 ,,,,,vaz_dal,integer,,vaz_dal,,3,open,,Važiuojamoji dalis,
