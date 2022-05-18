@@ -83,7 +83,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licenzijos_id,ref,Licencija,,,4,open,,Licencija,
 ,,,,,spi_id,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaiga,
 ,,,,,filialo_id,integer,,,,2,open,,Filialo identifikatorius,
-,,,,,veiklos_adreso_id,ref,IstaiguVeikluAdresas,,,4,open,,Veiklos adreso identifikatorius,
+,,,,,veiklos_adreso_id,ref,IstaigosVeiklosAdresas,,,4,open,,Veiklos adreso identifikatorius,
 ,,,,,patikslinta,boolean,,,,3,open,,Patikslinimo būsena,
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauguOrganas,,,,,,,,,Sveikatos priežiūros įstaigų paslaugų organai,
