@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,spi_id,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
-,,,,,teisine_forma,ref,KTeisinesForma,,,2,open,,Juridinio asmens teisinė forma,
+,,,,,teisine_forma,ref,KTeisineForma,,,2,open,,Juridinio asmens teisinė forma,
 ,,,,,adresas,integer,,,,2,open,,Juridinio asmens buveinės adresas,
 ,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
 ,,,,,licencijos_isdavimo_data,datetime,,,,3,open,,Licencijos išdavimo data,
