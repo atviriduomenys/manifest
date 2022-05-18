@@ -3,5 +3,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
 ,,,,,jar_kodas,string,,,,2,open,,Kodas,
-,,,,,ekonomine_veiklos_rusis,ref,/datasets/gov/lsd/klasifikatoriai/EkonominesVeiklosRusis,lygmuo_5_kodas,,4,open,,Ekonominės veikos rūšis,
+,,,,,ekonomine_veiklos_rusis,ref,/datasets/gov/lsd/klasifikatoriai/EkonominesVeiklosRusis,kodas,,4,open,,Ekonominės veikos rūšis,
 ,,,,,sektorius,ref,/datasets/gov/lsd/sektoriai/Sektorius,kodas,,4,open,,Sektorius,
