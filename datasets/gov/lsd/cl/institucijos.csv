@@ -5,3 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,jar_kodas,string,,,,2,open,,Kodas,
 ,,,,,ekonomine_veiklos_rusis,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,kodas,,4,open,,Ekonominės veikos rūšis,
 ,,,,,sektorius,ref,/datasets/gov/lsd/cl/sektoriai/Sektorius,kodas,,4,open,,Sektorius,
+,,,,,data_atn,datatime,,,,4,open,,Veiklos atnaujinimas,
+,,,,,data_isreg,datatime,,,,4,open,,Veiklos išregistravimas,
+,,,,,pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
