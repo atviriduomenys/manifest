@@ -69,4 +69,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,200,,,,,,
 ,,,,,irenginys,ref,WeatherCondition,id,,,,,,
 ,,,,,kodas,string,,,param(code),,,,,
-,,,,,temperatura,number,C°,konstrukcijos_temp_{code},,,,,,
+,,,,,temperatura,number,°C,konstrukcijos_temp_{code},,,,,,
