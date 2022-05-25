@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vaspvt/licencijos,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,https://github.com/atviriduomenys/manifest/issues/,
-,,resource1,,,,sql,,mssql+pymssql://SpilisSelect_user:eeAViEGxK54bLrfK@sr-db-01.vaspvt:1433/spilis,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Isakymas,,,,,,,,,Įsakymai,
 ,,,,,patvirtinimo_data,datetime,,,,3,open,,Įsakymo patvirtinimo data,
