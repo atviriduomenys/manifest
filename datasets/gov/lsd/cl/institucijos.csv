@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/institucijos,,,,,,,,,,,,Statistikos departamento klasifikatoriai,
+,datasets/gov/lsd/cl/institucijos,,,,,,,,,,,,Statistikos departamento klasifikatoriai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
