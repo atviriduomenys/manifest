@@ -8,6 +8,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,update(type: “ref”, ref:”datasets/gov/lsd/klasifikatoriai/EkonominesVeiklosRusis” ),,open,spinta:1476,,
 ,,,,,sektorius,string,,,,2,open,,Sektorius,
 ,,,,,,comment,type,,update(type: “ref”, ref:”datasets/gov/lsd/sektoriai/Sektorius” ),,open,spinta:1476,,
-,,,,,data_atn,datatime,,,,4,open,,Veiklos atnaujinimas,
-,,,,,data_isreg,datatime,,,,4,open,,Veiklos išregistravimas,
+,,,,,data_atn,datetime,,,,4,open,,Veiklos atnaujinimas,
+,,,,,data_isreg,datetime,,,,4,open,,Veiklos išregistravimas,
 ,,,,,pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
