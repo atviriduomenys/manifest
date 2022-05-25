@@ -52,8 +52,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilguma,integer,,ilguma,,3,open,,Ilguma, LKS-94
 ,,,,,platuma,integer,,platuma,,3,open,,Platuma, LKS-94
 ,,,,,vieta_lks94,"geometry(point, 3346)",m,,"ilguma, platuma",,,,,
-,,,,,lat,number,,lat,,3,open,,Platuma, WGS-84
-,,,,,lng,number,,lng,,3,open,,Ilguma, WGS-84
+,,,,,latitude,number,,lat,,3,open,,Platuma, WGS-84
+,,,,,longitude,number,,lng,,3,open,,Ilguma, WGS-84
 ,,,,,vieta_wgs84,"geometry(point, 4326)",m,,"latitude, longitude",,,,,
 ,,,,,,,,,,,,,,
 ,,konstr,,,,json,,,,,,,,
