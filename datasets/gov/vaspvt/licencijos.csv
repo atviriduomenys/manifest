@@ -66,7 +66,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adresas,string,,,,2,open,,Adresas,
 ,,,,,istaiga,string,,,,2,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,,comment,type,,update(type: ”ref”, ref: “Istaiga”),,open,spinta:1476,,
-,,,,,filialas,string,Filialas,,,2,open,,Sveikatos priežiūros įstaigos filialas,
+,,,,,filialas,string,,,,2,open,,Sveikatos priežiūros įstaigos filialas,
 ,,,,,,comment,type,,update(type: ”ref”, ref: “Filialas”),,open,spinta:1476,,
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauga,,,,,,,,,Sveikatos priežiūros įstaigų paslaugos,
