@@ -2,7 +2,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasasets/gov/lakd/eismo_intensyvumas_live,,,,,,,,,,,,Eismo intensyvumo duomenų katalogas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,traffic,,,,json,,https://eismoinfo.lt/traffic-intensity-service,,,,,Eismo intensyvumo duomenys,
-,,,,,,comment,type,,,,,spinta:256,,
 ,,,,Device,,,id,,,,,,,
 ,,,,,id,integer,,id,,4,open,,Įrenginio identifikacinis numeris,
 ,,,,,name,string,,name,,3,open,,Įrenginio pavadinimas,
