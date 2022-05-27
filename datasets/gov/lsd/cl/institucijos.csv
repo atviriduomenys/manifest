@@ -1,6 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/cl/institucijos,,,,,,,,,,,,Institucijų ekonominės veiklos rūšys ir sektoriai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
 ,,,,,jar_kodas,string,,,,2,open,,Kodas,
