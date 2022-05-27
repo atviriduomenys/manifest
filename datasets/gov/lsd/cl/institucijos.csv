@@ -4,6 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Institucija,,,,,,,,,Institucija,
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/JuridinisAsmuo"")",,open,"manifest:1290, spinta:205",,
 ,,,,,jar_kodas,string,,,,2,open,,Kodas,
 ,,,,,ekonomine_veiklos_rusis,string,,,,2,open,,Ekonominės veikos rūšis,
 ,,,,,,comment,type,,update(type: “ref”, ref:”datasets/gov/lsd/klasifikatoriai/EkonominesVeiklosRusis” ),,open,spinta:1476,,
