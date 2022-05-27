@@ -14,4 +14,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veikla_atnaujinta,datetime,,,,4,open,,"Veiklos atnaujinimas",
 ,,,,,veikla_isregistruota,datetime,,,,4,open,,"Veiklos išregistravimas",
 ,,,,,pavadinimas,string,,,,2,open,,"Juridinio asmens pavadinimas",
-,,,,,,comment,type,,"update(property: "pavadinimas@lt",type: """")",4,open,"manifest:1290, spinta:205, spinta:204",,
+,,,,,,comment,type,,"update(property: "pavadinimas@lt",type: """")",,open,"manifest:1290, spinta:205, spinta:204",,
