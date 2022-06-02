@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""2""",,,,Dešinėje šalia kelio,
 ,,,,,,,,,"""25""",,,,Kairėje,
 ,,,,,,,,,"""26""",,,,Dešinėje,
-,,,,,vaz_dal,ref,/datasets/gov/ladk/keliai,vaz_dal,,4,open,,Važiuojamoji dalis,
+,,,,,vaz_dal,ref,/datasets/gov/lakd/keliai,vaz_dal,,4,open,,Važiuojamoji dalis,
 ,,,,,,enum,,,"""0""",,,,Viena važiuojamoji dalis,
 ,,,,,,,,,"""1""",,,,Pirma važiuojamoji dalis,
 ,,,,,,,,,"""2""",,,,antra važiuojamoji dalis,
