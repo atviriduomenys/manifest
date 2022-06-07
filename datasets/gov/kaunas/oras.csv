@@ -1,16 +1,22 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/kaunas/oras,,,,,,,,,,,,"Kauno miesto savivaldybės teikiami duomenys"," Kauno miesto aplinkos parametrai"
 ,,,,,,prefix,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Oras,,,"id,dt",,,,,,"Rodikliai per periodą",
 ,,,,,id,integer,,,,4,open,,"Daviklio ID",
 ,,,,,dt,date,,,,3,open,,Data,
 ,,,,,co,number,mg/m³,,,4,open,,CO,"Anglies monoksido(smalkių) koncentracija miligramais kubiniame metre."
-,,,,,no2,number,μ/m³,,,4,open,,NO2,"Azoto dioksido koncentracija mikrogramais kubiniame metre."
-,,,,,o3,number,μ/m³,,,4,open,,O3,"Ozono koncentracija mikrogramais kubiniame metre."
-,,,,,so2,number,μ/m³,,,4,open,,SO2,"Sieros dioksido koncentracija mikrogramais kubiniame metre."
-,,,,,kd2_5,number,μ/m³,,,4,open,,KD2.5,"iki 2.5 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
-,,,,,kd10,number,μ/m³,,,4,open,,KD10,"iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,no2,number,,,,3,open,,NO2,"Azoto dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,o3,number,,,,3,open,,O3,"Ozono koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,so2,number,,,,3,open,,SO2,"Sieros dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,kd2_5,number,,,,3,open,,KD2.5,"iki 2.5 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,kd10,number,,,,3,open,,KD10,"iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
 ,,,,,temp,number,°C,,,4,open,,Temperatūra,"Temperatūra Celsijaus laispniais."
 ,,,,,dregme,number,%,,,4,open,,"Santykinė drėgmė","Santykinė drėgmė %."
 ,,,,,adresas,string,,,,2,open,,Adresas,
