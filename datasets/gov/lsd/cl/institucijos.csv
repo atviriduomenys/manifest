@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/cl/ja_asmenys,,,,,,,,,,,,"Institucijų ekonominės veiklos rūšys ir sektoriai",
+,datasets/gov/lsd/cl/ja_asmenys,,,,,,,,,,,,"Juridinių asmenų ekonominės veiklos rūšys ir instituciniai sektoriai",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
