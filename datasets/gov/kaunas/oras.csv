@@ -1,17 +1,21 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kaunas/oras,,,,,,,,,,,,Kauno miesto savivaldybės teikiami duomenys, Kauno miesto aplinkos parametrai
+,datasets/gov/kaunas/oras,,,,,,,,,,,,"Kauno miesto savivaldybės teikiami duomenys"," Kauno miesto aplinkos parametrai"
+,,,,,,prefix,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,oras,,,"id,dt",,,,,,Rodikliai per periodą,
-,,,,,id,integer,,,,,open,,Daviklio ID,
-,,,,,dt,date,,,,,open,,Data,data
-,,,,,co,number,mg/m³,,,,open,,CO,Anglies monoksido(smalkių) koncentracija miligramais kubiniame metre
-,,,,,no2,number,μ/m³,,,,open,,NO2,Azoto dioksido koncentracija mikrogramais kubiniame metre
-,,,,,o3,number,μ/m³,,,,open,,O3,Ozono koncentracija mikrogramais kubiniame metre
-,,,,,so2,number,μ/m³,,,,open,,SO2,Sieros dioksido koncentracija mikrogramais kubiniame metre
-,,,,,kd2_5,number,μ/m³,,,,open,,KD2.5,iki 2.5 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre
-,,,,,kd10,number,μ/m³,,,,open,,KD10,iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre
-,,,,,temp,number,°C,,,,open,,temperatūra,Temperatūra Celsijaus laispniais
-,,,,,dregme,number,%,,,,open,,santykinė drėgmė,Santykinė drėgmė %
-,,,,,adresas,string,,,,,open,,Adresas,Adresas
-,,,,,ilguma,number,,,,,open,,ilguma,Daviklio koordinatės. Ilguma (WGS84)
-,,,,,platuma,number,,,,,open,,platuma,Daviklio koordinatės. Platuma (WGS84)
+,,,,Oras,,,"id,dt",,,,,,"Rodikliai per periodą",
+,,,,,id,integer,,,,4,open,,"Daviklio ID",
+,,,,,dt,date,,,,3,open,,Data,
+,,,,,co,number,mg/m³,,,4,open,,CO,"Anglies monoksido(smalkių) koncentracija miligramais kubiniame metre."
+,,,,,no2,number,μ/m³,,,4,open,,NO2,"Azoto dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,o3,number,μ/m³,,,4,open,,O3,"Ozono koncentracija mikrogramais kubiniame metre."
+,,,,,so2,number,μ/m³,,,4,open,,SO2,"Sieros dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,kd2_5,number,μ/m³,,,4,open,,KD2.5,"iki 2.5 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,kd10,number,μ/m³,,,4,open,,KD10,"iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,temp,number,°C,,,4,open,,Temperatūra,"Temperatūra Celsijaus laispniais."
+,,,,,dregme,number,%,,,4,open,,"Santykinė drėgmė","Santykinė drėgmė %."
+,,,,,adresas,string,,,,2,open,,Adresas,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
+,,,,,ilguma,number,,,,2,open,,Ilguma,"Daviklio koordinatės. Ilguma (WGS84)."
+,,,,,,comment,type,,delete(),3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+,,,,,platuma,number,,,,2,open,,Platuma,"Daviklio koordinatės. Platuma (WGS84)."
+,,,,,,comment,type,,"update(type: ""geometry(point, 4326)""))",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
