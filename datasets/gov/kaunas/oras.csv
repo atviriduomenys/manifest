@@ -17,7 +17,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
 ,,,,,kd10,number,,,,3,open,,KD10,"iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
 ,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
-,,,,,temp,number,°C,,,4,open,,Temperatūra,"Temperatūra Celsijaus laispniais."
+,,,,,temp,number,,,,3,open,,Temperatūra,"Temperatūra Celsijaus laispniais."
+,,,,,,comment,ref,,"update(ref: ""°C"")",4,open,spinta:270,,
 ,,,,,dregme,number,%,,,4,open,,"Santykinė drėgmė","Santykinė drėgmė %."
 ,,,,,adresas,string,,,,2,open,,Adresas,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
