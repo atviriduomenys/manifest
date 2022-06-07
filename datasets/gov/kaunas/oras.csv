@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kaunas/oras,,,,,,,,,,,,Kauno miesto savivaldybës teikiami duomenys, Kauno miesto aplinkos parametrai
+,,,,oras,,,"id,dt",,,,,,Rodikliai per periodà,
+,,,,,id,integer,,,,,open,,Daviklio ID,
+,,,,,dt,date,,,,,open,,Data,data
+,,,,,co,number,,,,,open,,CO,Anglies monoksido(smalkiø) koncentracija miligramais kubiniame metre
+,,,,,no2,number,,,,,open,,NO2,Azoto dioksido koncentracija mikrogramais kubiniame metre
+,,,,,o3,number,,,,,open,,O3,Ozono koncentracija mikrogramais kubiniame metre
+,,,,,so2,number,,,,,open,,SO2,Sieros dioksido koncentracija mikrogramais kubiniame metre
+,,,,,kd2_5,number,,,,,open,,KD2.5,iki 2.5 mikrometrø dydþio daleliø koncentracija mikrogramais kubiniame metre
+,,,,,kd10,number,,,,,open,,KD10,iki 10 mikrometrø dydþio daleliø koncentracija mikrogramais kubiniame metre
+,,,,,temp,number,,,,,open,,temperatûra,Temperatûra Celsijaus laispniais
+,,,,,dregme,number,,,,,open,,santykinë drëgmë,Santykinë drëgmë %
+,,,,,adresas,string,,,,,open,,Adresas,Adresas
+,,,,,ilguma,number,,,,,open,,ilguma,Daviklio koordinatës. Ilguma (WGS84)
+,,,,,platuma,number,,,,,open,,platuma,Daviklio koordinatës. Platuma (WGS84)
