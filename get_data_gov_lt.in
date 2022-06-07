@@ -35,6 +35,7 @@ datasets/gov/lsd/cl/evrk.csv
 datasets/gov/lsd/cl/institucijos.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
+datasets/gov/kaunas/oras.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
 datasets/gov/mita/horizon.csv
 datasets/gov/lhmt/hidrologija.csv	

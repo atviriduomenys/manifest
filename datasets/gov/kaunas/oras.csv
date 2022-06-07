@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kaunas/oras,,,,,,,,,,,,"Kauno miesto savivaldybės teikiami duomenys"," Kauno miesto aplinkos parametrai"
+,,,,,,prefix,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Oras,,,"id,dt",,,,,,"Rodikliai per periodą",
+,,,,,id,integer,,,,4,open,,"Daviklio ID",
+,,,,,dt,date,,,,3,open,,Data,
+,,,,,co,number,mg/m³,,,4,open,,CO,"Anglies monoksido(smalkių) koncentracija miligramais kubiniame metre."
+,,,,,no2,number,,,,3,open,,NO2,"Azoto dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,o3,number,,,,3,open,,O3,"Ozono koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,so2,number,,,,3,open,,SO2,"Sieros dioksido koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,kd2_5,number,,,,3,open,,KD2.5,"iki 2.5 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,kd10,number,,,,3,open,,KD10,"iki 10 mikrometrų dydžio dalelių koncentracija mikrogramais kubiniame metre."
+,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+,,,,,temp,number,,,,3,open,,Temperatūra,"Temperatūra Celsijaus laispniais."
+,,,,,,comment,ref,,"update(ref: ""°C"")",4,open,spinta:270,,
+,,,,,dregme,number,%,,,4,open,,"Santykinė drėgmė","Santykinė drėgmė %."
+,,,,,adresas,string,,,,2,open,,Adresas,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
+,,,,,ilguma,number,,,,2,open,,Ilguma,"Daviklio koordinatės. Ilguma (WGS84)."
+,,,,,,comment,type,,delete(),3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+,,,,,platuma,number,,,,2,open,,Platuma,"Daviklio koordinatės. Platuma (WGS84)."
+,,,,,,comment,type,,"update(type: ""geometry(point, 4326)""))",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
