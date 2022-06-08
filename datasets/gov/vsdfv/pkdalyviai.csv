@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vsdfv/pkdalyviai,,,,,,,,,,,,,
+,,sodrapkdalyviai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_dalyviai.zip,"extract(""zip"")[""pk_dalyviai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,PkDalyvis,,,"metai, menuo",,,,,,,
+,,,,,metai,date,Y,METAI,,2,open,,Metai,
+,,,,,menuo,date,M,MENUO,,2,open,,Mėnuo,
+,,,,,lytis,string,,LYTIS,,3,open,,Lytis,
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžiaus grupė,
+,,,,,dalyviu_skaicius,number,,DALYVIU_SKAICIUS,,3,open,,"Dalyvių skaičius, vnt.",Iš viso pensijų kaupimo dalyvių skaičius
+,,,,,,,,,,,,,,
+,,sodrapkitraukimas,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_itraukimas.zip,"extract(""zip"")[""pk_itraukimas.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,PkItraukimas,,,metai,,,,,,,
+,,,,,metai,date,Y,METAI,,2,open,,Įtraukimo Metai,Dalyvavimo pensijų kaupime įtraukimo metai
+,,,,,itraukti_dalyviai_sk,number,,ITR_DAL,,3,open,,"Įtrauktų dalyvių skaičius, vnt.",
+,,,,,dalyviu_likutis_sk,number,,ITR_DAL_LIKO,,3,open,,"Įtrauktų dalyvių likutis, vnt.",Įtrauktų dalyvių likutis (neatsisakę dalyvauti pensijų kaupime)
