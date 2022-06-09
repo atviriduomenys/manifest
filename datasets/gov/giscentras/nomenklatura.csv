@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/giscentras/nomenklatura,,,,,,,,,,,,,
 ,,nomenklaturiniai_lapai,,,,,,https://www.geoportal.lt/download/opendata/Nomenklat_lapai/Nomenklaturiniai_lapai.zip,,,,,,
-,,,,,,comment,type,,update(type: ""zip""),,open,spinta:279,,
+,,,,,,comment,type,,"update(type: ""zip"")",,open,spinta:279,,
 ,,,,,,,,,,,,,,
 ,,,,LKS94500,,,,,,,,,LKS_94_500,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:500 LKS-94 koordinačių sistemoje tinklelis
 ,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
