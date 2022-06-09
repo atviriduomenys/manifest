@@ -1,0 +1,416 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/giscentras/nomenklatura,,,,,,,,,,,,,
+,,nomenklaturiniai_lapai,,,,zip,,https://www.geoportal.lt/download/opendata/Nomenklat_lapai/Nomenklaturiniai_lapai.zip,,,,,,
+,,,,,,,,,,,,,,
+,,,,LKS94500,,,,,,,,,LKS_94_500,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:500 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,centroid_x,number,,,,3,open,,CENTROID_X,Žemėlapio lapo centro X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
+,,,,,centroid_y,number,,,,3,open,,CENTROID_Y,Žemėlapio lapo centro Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
+,,,,,nom05k,string,,,,3,open,,NOM05K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje  
+,,,,,nom1k,string,,,,3,open,,NOM1K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:1 000 LKS-94 koordinačių sistemoje
+,,,,,nom2k,string,,,,3,open,,NOM2K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje
+,,,,,nom5k,string,,,,3,open,,NOM5K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
+,,,,,nom10k,string,,,,3,open,,NOM10K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS941000,,,,,,,,,LKS_94_1000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:1 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,nom1k,string,,,,3,open,,NOM1K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:1 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS942000,,,,,,,,,LKS_94_2000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,nom2k,string,,,,3,open,,NOM2K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS945000,,,,,,,,,LKS_94_5000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,objectid_1,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,nr,string,,,,3,open,,NR,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS9410000,,,,,,,,,LKS_94_10000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS9420000,,,,,,,,,LKS_94_20000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:20 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS9450000,,,,,,,,,LKS_94_50000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS94100000,,,,,,,,,LKS_94_100000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS94200000,,,,,,,,,LKS_94_200000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,LKS94500000,,,,,,,,,LKS_94_500000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 000 LKS-94 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,UTM10000,,,,,,,,,UTM_10000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:10 000 UTM koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 UTM koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,UTM50000,,,,,,,,,UTM_50000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:50 000 UTM koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 UTM koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,UTM100000,,,,,,,,,UTM_100000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:100 000 UTM koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 UTM koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,UTM250000,,,,,,,,,UTM_250000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:250 000 UTM koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:250 000 UTM koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,Baltija9350000,,,,,,,,,Baltija_93_50000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 Baltija-93 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,Baltija93100000,,,,,,,,,Baltija_93_100000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 Baltija-93 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,Baltija93200000,,,,,,,,,Baltija_93_200000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 Baltija-93 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS194210000,,,,,,,,,KS_1942_10000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1942 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS194225000,,,,,,,,,KS_1942_25000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1942 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS194250000,,,,,,,,,KS_1942_50000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1942 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS1942100000,,,,,,,,,KS_1942_100000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1942 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS1942200000,,,,,,,,,KS_1942_200000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:200 000 KS-1942 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS196310000,,,,,,,,,KS_1963_10000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 KS-1963 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS196325000,,,,,,,,,KS_1963_25000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:25 000 KS-1963 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS196350000,,,,,,,,,KS_1963_50000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:50 000 KS-1963 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
+,,,,,,,,,,,,,,
+,,,,KS1963100000,,,,,,,,,KS_1963_100000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje tinklelis
+,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
+,,,,,numeris,string,,,,3,open,,NUMERIS,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,sistema,string,,,,3,open,,SISTEMA,Koordinačių sistemos sutrumpintas pavadinimas
+,,,,,mastelis,string,,,,3,open,,MASTELIS,Žemėlapio skaidymo lapais mastelis
+,,,,,x1,integer,,,,3,open,,X1,Žemėlapio lapo apatinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,y1,integer,,,,3,open,,Y1,Žemėlapio lapo apatinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,x2,integer,,,,3,open,,X2,Žemėlapio lapo viršutinio kairiojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,y2,integer,,,,3,open,,Y2,Žemėlapio lapo viršutinio kairiojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,x3,integer,,,,3,open,,X3,Žemėlapio lapo viršutinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,y3,integer,,,,3,open,,Y3,Žemėlapio lapo viršutinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,x4,integer,,,,3,open,,X4,Žemėlapio lapo apatinio dešiniojo kampo X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,y4,integer,,,,3,open,,Y4,Žemėlapio lapo apatinio dešiniojo kampo Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:100 000 KS-1963 koordinačių sistemoje
+,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
