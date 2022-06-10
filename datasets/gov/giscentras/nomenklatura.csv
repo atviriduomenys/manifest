@@ -14,7 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nom2k,string,,,,3,open,,NOM2K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje
 ,,,,,nom5k,string,,,,3,open,,NOM5K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
 ,,,,,nom10k,string,,,,3,open,,NOM10K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
-,,,,,shape_leng,integer,,,,3,open,,Shape_leng,"Objekto perimetro ilgis, m"
+,,,,,shape_leng,number,m,,4,open,,Shape_leng,"Objekto perimetro ilgis"
+
 ,,,,,shape_area,integer,,,,3,open,,Shape_Area,"Objekto plotas, m2 "
 ,,,,,,,,,,,,,,
 ,,,,LKS941000,,,,,,,,,LKS_94_1000,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:1 000 LKS-94 koordinačių sistemoje tinklelis
