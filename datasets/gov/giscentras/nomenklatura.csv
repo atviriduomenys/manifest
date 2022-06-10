@@ -10,7 +10,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,centroid_x,number,,,,3,open,,CENTROID_X,Žemėlapio lapo centro X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
 ,,,,,centroid_y,number,,,,3,open,,CENTROID_Y,Žemėlapio lapo centro Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
-,,,,,nom05k,string,,,,3,open,,NOM05K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje  
+,,,,,nom05k,string,,,,4,open,,NOM05K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje  
+
 ,,,,,nom1k,string,,,,3,open,,NOM1K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:1 000 LKS-94 koordinačių sistemoje
 ,,,,,nom2k,string,,,,3,open,,NOM2K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje
 ,,,,,nom5k,string,,,,3,open,,NOM5K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
