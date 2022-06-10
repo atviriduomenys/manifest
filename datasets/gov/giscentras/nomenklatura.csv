@@ -16,7 +16,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,nom2k,string,,,,4,open,,NOM2K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:2 000 LKS-94 koordinačių sistemoje
 
-,,,,,nom5k,string,,,,3,open,,NOM5K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
+,,,,,nom5k,string,,,,4,open,,NOM5K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:5 000 LKS-94 koordinačių sistemoje
+
 ,,,,,nom10k,string,,,,3,open,,NOM10K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:10 000 LKS-94 koordinačių sistemoje
 ,,,,,shape_leng,number,m,,4,open,,Shape_leng,"Objekto perimetro ilgis"
 
