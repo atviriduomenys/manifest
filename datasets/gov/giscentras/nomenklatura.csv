@@ -5,7 +5,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,fid,integer,,,,4,open,,FID,Objekto sisteminis numeris 
 
 ,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
-,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
+,,,,,objectid,integer,,,,4,open,,objectid,Objekto eilės numeris
+
 ,,,,,centroid_x,number,,,,3,open,,CENTROID_X,Žemėlapio lapo centro X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
 ,,,,,centroid_y,number,,,,3,open,,CENTROID_Y,Žemėlapio lapo centro Y koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
 ,,,,,nom05k,string,,,,3,open,,NOM05K,Žemėlapio lapo numeris pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje  
