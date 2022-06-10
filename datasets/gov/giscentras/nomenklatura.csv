@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/giscentras/nomenklatura,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,LKS94500,,,,,,,,,LKS_94_500,Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:500 LKS-94 koordinačių sistemoje tinklelis
-,,,,,fid,integer,,,,3,open,,FID,Objekto sisteminis numeris 
+,,,,,fid,integer,,,,4,open,,FID,Objekto sisteminis numeris 
+
 ,,,,,shape,geometry,,,,3,open,,Shape,Objekto geometrijos tipas
 ,,,,,objectid,integer,,,,3,open,,objectid,Objekto eilės numeris
 ,,,,,centroid_x,number,,,,3,open,,CENTROID_X,Žemėlapio lapo centro X koordinatė pagal žemėlapio nomenklatūrinį skaidymą lapais masteliu 1:500 LKS-94 koordinačių sistemoje
