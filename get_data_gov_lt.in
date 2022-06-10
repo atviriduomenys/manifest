@@ -32,7 +32,7 @@ datasets/gov/lsd/zemes_ukio_surasymai.csv
 datasets/gov/lsd/covid19.csv
 datasets/gov/lsd/cl/sektoriai.csv
 datasets/gov/lsd/cl/evrk.csv
-datasets/gov/lsd/cl/institucijos.csv
+datasets/gov/lsd/cl/ja_asmenys.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
