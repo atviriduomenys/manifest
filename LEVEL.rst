@@ -1,0 +1,131 @@
+.. default-role:: literal
+
+Brandos lygio vertinimas
+########################
+
+Čia rasti komentarų pavyzdžius, kurie įrašomi struktūros apraše, nurodant
+kokius trūkumus reikia pašalinti, norint gauti didesnį brandos lygį.
+
+0 brandos lygis: Duomenų nėra
+*****************************
+
+Duomenų nėra arba duomenys nėra atviri.
+
+
+1 brandos lygis: Atviri duomenys
+********************************
+
+Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
+
+
+2 brandos lygis: Struktūrizuoti duomenys
+****************************************
+
+- Natūraliosios kalbos tipas::
+
+    ,,,,,pavadinimas,string,,,,2,open,,,
+    ,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
+
+  - spinta:204_ - IVPK: `text` duomenų tipo palaikymas.
+
+- Duomenų susiejimas ryšiais įmanomas::
+
+    ,,,,,imone,string,,,,2,open,,,
+    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""Istaiga"")",4,open,manifest:1476,,
+
+  - manifest:1476_ - SD: duomenų susiejimo ryšiais plaikymas.
+
+- Duomenų susiejimas ryšiais neįmanomas::
+
+    ,,,,,adresas,string,,,,2,open,,,
+    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
+
+  - `vadovas:dsa/ref.html#neimanomas-susiejimas`_
+
+- Nenurodyta koks duomenų modelis dubliuojams::
+
+    ,,,,Istaiga,,,,,,2,,,,
+    ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/JuridinisAsmuo"", ref: ""kodas"")",4,open,"spinta:205,manifest:1290",,
+
+  - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
+  - manifest:1290_ - RC: JAR.
+
+
+- Nenurodyta kokie duomenys denormalizuoti::
+
+    ,,,,,kodas,string,,,,2,open,,,
+    ,,,,,,comment,property,,"update(property: ""istaiga.kodas"", type: """")",4,open,"spinta:216,manifest:1290,manifest:1476",,
+
+  - spinta:216_ - denormalizuotų duomenų laukų palaikymas.
+  - manifest:1290_ - RC: JAR.
+  - manifest:1476_ - SD: duomenų susiejimo ryšiais plaikymas.
+
+- Koordinatės::
+
+    ,,,,,ilguma,number,,,,2,open,,,
+    ,,,,,,comment,type,,delete(),3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+    ,,,,,platuma,number,,,,2,open,,,
+    ,,,,,,comment,type,,"update(type: ""geometry(point, 4326)""))",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+
+  - epsg:4326_ - WGS84.
+  - epsg:3346_ - LKS94.
+  - `vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys`_ - Erdviniai duomenys.
+
+
+3 brandos lygis: Standartinė forma
+**********************************
+
+Duomenys yra ne tik struktūruoti, bet pateikti laikantis standartų reikalavimų
+nurodytų `duomenų struktūros aprašo specifikacijoje`__.
+
+__ https://atviriduomenys.readthedocs.io/dsa/index.html
+
+- Vienetų palaikymas::
+
+    ,,,,,koncentracija,number,,,,3,open,,,
+    ,,,,,,comment,ref,,"update(ref: ""μ/m³"")",4,open,spinta:269,,
+    ,,,,,,comment,ref,,"update(ref: ""°C"")",4,open,spinta:270,,
+
+  - spinta:269_ - IVPK: μ/m³ vienetų palaikymas.
+  - spinta:270_ - IVPK: °C vienetų palaikymas.
+
+
+4 brandos lygis: Identifikatoriai ir vienetai
+*********************************************
+
+Pateikiami metaduomenys apie pirminius ir išorinius raktus, vienetus, laiko ir
+vietos matavimų tikslumą.
+
+
+5 brandos lygis: Standartiai žodynai ir ontologijos
+***************************************************
+
+Pateikiama sąsaja su standartiniais žodynai ir ontologijomis.
+
+
+Informacijos šaltiniai
+**********************
+
+- `Duomenų atvėrimo vadovas: Brandos lygiai`__
+
+  __ https://atviriduomenys.readthedocs.io/dsa/level.html
+
+- `Duomenų atvėrimo vadovas: Ryšiai tarp modelių: Brandos lygis`__
+
+  __ https://atviriduomenys.readthedocs.io/dsa/ref.html#brandos-lygis
+
+
+.. _spinta:204: https://github.com/atviriduomenys/spinta/issues/204
+.. _spinta:205: https://github.com/atviriduomenys/spinta/issues/205
+.. _spinta:216: https://github.com/atviriduomenys/spinta/issues/216
+.. _spinta:269: https://github.com/atviriduomenys/spinta/issues/216
+.. _spinta:270: https://github.com/atviriduomenys/spinta/issues/216
+
+.. _manifest:1290: https://github.com/atviriduomenys/manifest/issues/1290
+.. _manifest:1476: https://github.com/atviriduomenys/manifest/issues/1476
+
+.. _vadovas:dsa/ref.html#neimanomas-susiejimas: https://atviriduomenys.readthedocs.io/dsa/ref.html#neimanomas-susiejimas
+.. _vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys: https://atviriduomenys.readthedocs.io/dsa/duomenu-tipai.html#erdviniai-duomenys
+
+.. _epsg:3346: https://epsg.io/3346
+.. _epsg:4326: https://epsg.io/4326
