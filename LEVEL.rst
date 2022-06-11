@@ -6,6 +6,50 @@ Brandos lygio vertinimas
 Čia rasti komentarų pavyzdžius, kurie įrašomi struktūros apraše, nurodant
 kokius trūkumus reikia pašalinti, norint gauti didesnį brandos lygį.
 
+Prefiksai
+*********
+
+Dažniausiai naudojami prefiksai komentaruose::
+
+    ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+    ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+    ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+
+
+Nuorodos
+********
+
+Dažniausiai naudojamos nuorodos komentaruose.
+
+Neįgyvendintas funkcionalumas:
+
+============  ==============================================
+spinta:204_   IVPK: `text` duomenų tipo palaikymas
+spinta:205_   IVPK: modelio bazės (`base`) palaikymas
+spinta:216_   IVPK: Denormalizuotų duomenų laukų palaikymas
+spinta:269_   IVPK: μ/m³ vienetų palaikymas.
+spinta:270_   IVPK: °C vienetų palaikymas.
+============  ==============================================
+
+Neatverti arba per žemos brandos lygio duomenys:
+
+===============  =========================================
+manifest:1290_   RC: JAR
+manifest:1476_   SD: duomenų susiejimo ryšiais palaikymas
+===============  =========================================
+
+Dokumentacija ir kiti šaltiniai:
+
+=====================================================  ======================
+epsg:3346_                                             LKS94
+epsg:4326_                                             WGS84
+`vadovas:dsa/dimensijos.html#model.ref`_               Pirminis raktas
+`vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys`_   Erdviniai duomenys
+`vadovas:dsa/ref.html#neimanomas-susiejimas`_          Susiejimas neįmanomas
+`vadovas:dsa/kodiniai-pavadinimai.html`_               Kodiniai pavadinimai
+=====================================================  ======================
+
+
 0 brandos lygis: Duomenų nėra
 *****************************
 
@@ -33,16 +77,16 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
     ,,,,,imone,string,,,,2,open,,,
     ,,,,,,comment,type,,"update(type: ""ref"", ref: ""Istaiga"")",4,open,manifest:1476,,
 
-  - manifest:1476_ - SD: duomenų susiejimo ryšiais plaikymas.
+  - manifest:1476_ - SD: duomenų susiejimo ryšiais palaikymas.
 
 - Duomenų susiejimas ryšiais neįmanomas::
 
     ,,,,,adresas,string,,,,2,open,,,
     ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
 
-  - `vadovas:dsa/ref.html#neimanomas-susiejimas`_
+  - `vadovas:dsa/ref.html#neimanomas-susiejimas`_ - Susiejimas neįmanomas.
 
-- Nenurodyta koks duomenų modelis dubliuojams::
+- Nenurodyta dubliuojamo modelio bazė::
 
     ,,,,Istaiga,,,,,,2,,,,
     ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/JuridinisAsmuo"", ref: ""kodas"")",4,open,"spinta:205,manifest:1290",,
@@ -50,15 +94,23 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
   - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
   - manifest:1290_ - RC: JAR.
 
+- Dubliojami duomenys::
 
-- Nenurodyta kokie duomenys denormalizuoti::
+    ,,,,,pavadinimas,string,,,,2,open,,,
+    ,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: """")",4,open,"spinta:204, spinta:205, manifest:1290",,
+
+  - spinta:204_ - IVPK: `text` duomenų tipo palaikymas.
+  - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
+  - manifest:1290_ - RC: JAR.
+
+- Denormalizuoti duomenys::
 
     ,,,,,kodas,string,,,,2,open,,,
     ,,,,,,comment,property,,"update(property: ""istaiga.kodas"", type: """")",4,open,"spinta:216,manifest:1290,manifest:1476",,
 
-  - spinta:216_ - denormalizuotų duomenų laukų palaikymas.
+  - spinta:216_ - IVPK: denormalizuotų duomenų laukų palaikymas.
   - manifest:1290_ - RC: JAR.
-  - manifest:1476_ - SD: duomenų susiejimo ryšiais plaikymas.
+  - manifest:1476_ - SD: duomenų susiejimo ryšiais palaikymas.
 
 - Koordinatės::
 
@@ -71,6 +123,13 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
   - epsg:3346_ - LKS94.
   - `vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys`_ - Erdviniai duomenys.
 
+- Neteisingai užrašyti kodiniai pavadinimai::
+
+    ,,,,,ja_kodas,string,,,,2,open,,,,,
+    ,,,,,,comment,property,type,,"update(property: ""kodas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
+
+  - `vadovas:dsa/kodiniai-pavadinimai.html`_ - Kodiniai pavadinimai.
+
 
 3 brandos lygis: Standartinė forma
 **********************************
@@ -79,6 +138,15 @@ Duomenys yra ne tik struktūruoti, bet pateikti laikantis standartų reikalavim�
 nurodytų `duomenų struktūros aprašo specifikacijoje`__.
 
 __ https://atviriduomenys.readthedocs.io/dsa/index.html
+
+- Nenurodytas pirminis raktas::
+
+    ,,,,Institucija,,,,,,2,,,,
+    ,,,,,,comment,ref,,"update(ref: ""kodas"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
+
+  - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
+  - manifest:1290_ - RC: JAR.
+  - `vadovas:dsa/dimensijos.html#model.ref`_ - Pirminis raktas.
 
 - Vienetų palaikymas::
 
@@ -126,6 +194,8 @@ Informacijos šaltiniai
 
 .. _vadovas:dsa/ref.html#neimanomas-susiejimas: https://atviriduomenys.readthedocs.io/dsa/ref.html#neimanomas-susiejimas
 .. _vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys: https://atviriduomenys.readthedocs.io/dsa/duomenu-tipai.html#erdviniai-duomenys
+.. _vadovas:dsa/dimensijos.html#model.ref: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#model.ref
+.. _vadovas:dsa/kodiniai-pavadinimai.html: https://atviriduomenys.readthedocs.io/dsa/kodiniai-pavadinimai.html
 
 .. _epsg:3346: https://epsg.io/3346
 .. _epsg:4326: https://epsg.io/4326
