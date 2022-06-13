@@ -77,7 +77,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,LaboratorinisTyrimas,,,,,,,,,Laboratoriniai tyrimai,
 ,,,,,labor_tyrimo_id,string,,,,4,open,,Laboratorinio tyrimo identifikatorius,
-,,,,,istaigos_paslaugos_id,ref,IstaigosPaslaugos[istaigos_paslaugos_id],,,2,open,,Paslaugos identikatorius,
+,,,,,istaigos_paslaugos_id,ref,IstaigosPaslauga[istaigos_paslaugos_id],,,2,open,,Paslaugos identikatorius,
 ,,,,,eminio_id,ref,Eminys[eminio_id],,,2,open,,Ėminio identifikatorius,
 ,,,,,analites_id,ref,Analite[analites_id],,,2,open,,Analitės identifikatorius,
 ,,,,,tyrimo_id,ref,Tyrimas[tyrimo_id],,,2,open,,Tyrimo identifikatorius,
