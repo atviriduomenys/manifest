@@ -47,6 +47,7 @@ epsg:4326_                                             WGS84
 `vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys`_   Erdviniai duomenys
 `vadovas:dsa/ref.html#susiejimas-neimanomas`_          Susiejimas neįmanomas
 `vadovas:dsa/kodiniai-pavadinimai.html`_               Kodiniai pavadinimai
+`vadovas:dsa/ref.html`_                                Ryšiai tarp modelių
 =====================================================  ======================
 
 
@@ -197,6 +198,7 @@ Informacijos šaltiniai
 .. _vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys: https://atviriduomenys.readthedocs.io/dsa/duomenu-tipai.html#erdviniai-duomenys
 .. _vadovas:dsa/dimensijos.html#model.ref: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#model.ref
 .. _vadovas:dsa/kodiniai-pavadinimai.html: https://atviriduomenys.readthedocs.io/dsa/kodiniai-pavadinimai.html
+.. _vadivas:dsa/ref.html: https://atviriduomenys.readthedocs.io/dsa/ref.html
 
 .. _epsg:3346: https://epsg.io/3346
 .. _epsg:4326: https://epsg.io/4326
