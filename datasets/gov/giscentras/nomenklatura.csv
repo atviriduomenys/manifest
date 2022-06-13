@@ -4,10 +4,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,lapai,,,,zip,,https://www.geoportal.lt/download/opendata/Nomenklat_lapai/Nomenklaturiniai_lapai.zip,,,,,,
-,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
-,,,,,,,,,,,,,,
 ,,,,LKS94500,,,fid,LKS-94/LKS_94_500,,2,,,LKS_94_500,"Žemėlapio nomenklatūrinio skaidymo lapais masteliu 1:500 LKS-94 koordinačių sistemoje tinklelis"
+,,,,,,comment,type,,"create(resource: ""lapai"", type: ""zip"", source: ""https://www.geoportal.lt/download/opendata/Nomenklat_lapai/Nomenklaturiniai_lapai.zip"")",,open,spinta:279,,
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
 ,,,,,,comment,type,,"update(base: ""Lapas"", type: """")",4,open,"spinta:205,vadovas:dsa/dimensijos.html#modelio-baze",,
 ,,,,,fid,integer,,,,2,open,,FID,"Objekto sisteminis numeris "
 ,,,,,shape,geometry,,,,2,open,,Shape,"Objekto geometrijos tipas"

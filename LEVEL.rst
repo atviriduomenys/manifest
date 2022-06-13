@@ -23,14 +23,15 @@ Dažniausiai naudojamos nuorodos komentaruose.
 
 Neįgyvendintas funkcionalumas:
 
-============  ==============================================
+============  =================================================
 spinta:204_   IVPK: `text` duomenų tipo palaikymas
 spinta:205_   IVPK: modelio bazės (`base`) palaikymas
 spinta:216_   IVPK: Denormalizuotų duomenų laukų palaikymas
 spinta:269_   IVPK: μ/m³ vienetų palaikymas.
 spinta:270_   IVPK: °C vienetų palaikymas.
+spinta:279_   IVPK: ZIP šaltinio failų konteinerio palaikymas.
 spinta:283_   IVPK: Shape failų šaltinio palaikymas.
-============  ==============================================
+============  =================================================
 
 Neatverti arba per žemos brandos lygio duomenys:
 
