@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,iregistruoti,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla={}.csv,,,,,,
-,,,,JuridinisAsmuo,,,kodas,JAR_IREGISTRUOTI,,4,,,"Juridinis asmuo",
+,,,,JuridinisAsmuo,,,ja_kodas,JAR_IREGISTRUOTI,,4,,,"Juridinis asmuo",
 ,,,,,ja_kodas,integer,,JA_kodas,,2,open,,"Kodas",
 ,,,,,,comment,type,,"update(property: ""kodas"")",4,open,"vadovas:dsa/kodiniai-pavadinimai.html",,
 ,,,,,ja_pavadinimas,string,,JA_pavadinimas,,2,,,"Pavadinimas",
