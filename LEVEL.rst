@@ -11,8 +11,8 @@ Prefiksai
 
 Dažniausiai naudojami prefiksai komentaruose::
 
-    ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-    ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+    ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+    ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
     ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 
 
@@ -45,7 +45,7 @@ epsg:3346_                                             LKS94
 epsg:4326_                                             WGS84
 `vadovas:dsa/dimensijos.html#model.ref`_               Pirminis raktas
 `vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys`_   Erdviniai duomenys
-`vadovas:dsa/ref.html#neimanomas-susiejimas`_          Susiejimas neįmanomas
+`vadovas:dsa/ref.html#susiejimas-neimanomas`_          Susiejimas neįmanomas
 `vadovas:dsa/kodiniai-pavadinimai.html`_               Kodiniai pavadinimai
 =====================================================  ======================
 
@@ -81,10 +81,11 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 
 - Duomenų susiejimas ryšiais neįmanomas::
 
-    ,,,,,adresas,string,,,,2,open,,,
-    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:dsa/ref.html#neimanomas-susiejimas,,
+    ,,,,,adresas,string,,,,1,open,,,
+    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Pastatas"")",4,open,vadovas:vadovas:dsa/ref.html#susiejimas-neimanomas,,
+    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/patalpa/Patalpa"")",4,open,vadovas:vadovas:dsa/ref.html#susiejimas-neimanomas,,
 
-  - `vadovas:dsa/ref.html#neimanomas-susiejimas`_ - Susiejimas neįmanomas.
+  - `vadovas:dsa/ref.html#susiejimas-neimanomas`_ - Susiejimas neįmanomas.
 
 - Nenurodyta dubliuojamo modelio bazė::
 
@@ -192,7 +193,7 @@ Informacijos šaltiniai
 .. _manifest:1290: https://github.com/atviriduomenys/manifest/issues/1290
 .. _manifest:1476: https://github.com/atviriduomenys/manifest/issues/1476
 
-.. _vadovas:dsa/ref.html#neimanomas-susiejimas: https://atviriduomenys.readthedocs.io/dsa/ref.html#neimanomas-susiejimas
+.. _vadovas:dsa/ref.html#susiejimas-neimanomas: https://atviriduomenys.readthedocs.io/dsa/ref.html#susiejimas-neimanomas
 .. _vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys: https://atviriduomenys.readthedocs.io/dsa/duomenu-tipai.html#erdviniai-duomenys
 .. _vadovas:dsa/dimensijos.html#model.ref: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#model.ref
 .. _vadovas:dsa/kodiniai-pavadinimai.html: https://atviriduomenys.readthedocs.io/dsa/kodiniai-pavadinimai.html
