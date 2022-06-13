@@ -2,6 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vaspvt/licencijos,,,,,,,,,,,,Valstybinės akreditavimo sveikatos priežiūros veiklos tarnyba,Valstybinės akreditavimo sveikatos priežiūrai veiklos tarnybos duomenys
 ,,,,,,,,,,,,,,
 ,,,,Isakymas,,,,,,,,,Įsakymai,
+,,,,,id,string,,,,3,open,,Įsakymo įdentifikacinis numeris,
 ,,,,,patvirtinimo_data,datetime,,,,3,open,,Įsakymo patvirtinimo data,
 ,,,,,isakymo_nr,string,,,,4,open,,Įsakymo numeris,
 ,,,,,,,,,,,,,,
