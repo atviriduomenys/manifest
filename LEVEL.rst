@@ -29,6 +29,7 @@ spinta:205_   IVPK: modelio bazės (`base`) palaikymas
 spinta:216_   IVPK: Denormalizuotų duomenų laukų palaikymas
 spinta:269_   IVPK: μ/m³ vienetų palaikymas.
 spinta:270_   IVPK: °C vienetų palaikymas.
+spinta:283_   IVPK: Shape failų šaltinio palaikymas.
 ============  ==============================================
 
 Neatverti arba per žemos brandos lygio duomenys:
@@ -48,6 +49,7 @@ epsg:4326_                                             WGS84
 `vadovas:dsa/ref.html#susiejimas-neimanomas`_          Susiejimas neįmanomas
 `vadovas:dsa/kodiniai-pavadinimai.html`_               Kodiniai pavadinimai
 `vadovas:dsa/ref.html`_                                Ryšiai tarp modelių
+`vadovas:dsa/dimensijos.html#modelio-baze`_            Modelio bazė
 =====================================================  ======================
 
 
@@ -199,6 +201,7 @@ Informacijos šaltiniai
 .. _vadovas:dsa/dimensijos.html#model.ref: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#model.ref
 .. _vadovas:dsa/kodiniai-pavadinimai.html: https://atviriduomenys.readthedocs.io/dsa/kodiniai-pavadinimai.html
 .. _vadivas:dsa/ref.html: https://atviriduomenys.readthedocs.io/dsa/ref.html
+.. _vadovas:dsa/dimensijos.html#modelio-baze: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#modelio-baze
 
 .. _epsg:3346: https://epsg.io/3346
 .. _epsg:4326: https://epsg.io/4326
