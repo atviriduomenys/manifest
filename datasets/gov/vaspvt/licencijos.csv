@@ -55,7 +55,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adreso_id,integer,,,,2,open,,Adreso identifikatorius,
 ,,,,,adresas,string,,,,2,open,,Adresas,
 ,,,,,istaiga,ref,Istaiga,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,filialas,ref,Filialas[filialas_id],,,4,open,,Sveikatos priežiūros įstaigos filialas,
+,,,,,filialas,ref,Filialas[filialo_id],,,4,open,,Sveikatos priežiūros įstaigos filialas,
 ,,,,,,,,,,,,,,
 ,,,,IstaigosPaslauga,,,istaigos_paslaugos_id,,,,,,Sveikatos priežiūros įstaigų paslaugos,
 ,,,,,istaigos_paslaugos_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
