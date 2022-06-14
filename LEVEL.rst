@@ -24,8 +24,10 @@ Dažniausiai naudojamos nuorodos komentaruose.
 Neįgyvendintas funkcionalumas:
 
 ============  =================================================
+spinta:40_    IVPK: `money` duomenų tipo palaikymas
 spinta:204_   IVPK: `text` duomenų tipo palaikymas
 spinta:205_   IVPK: modelio bazės (`base`) palaikymas
+spinta:213_   IVPK: `date` type with `ref=Y`
 spinta:216_   IVPK: Denormalizuotų duomenų laukų palaikymas
 spinta:269_   IVPK: μ/m³ vienetų palaikymas.
 spinta:270_   IVPK: °C vienetų palaikymas.
@@ -202,8 +204,10 @@ Informacijos šaltiniai
   __ https://atviriduomenys.readthedocs.io/dsa/ref.html#brandos-lygis
 
 
+.. _spinta:40: https://github.com/atviriduomenys/spinta/issues/40
 .. _spinta:204: https://github.com/atviriduomenys/spinta/issues/204
 .. _spinta:205: https://github.com/atviriduomenys/spinta/issues/205
+.. _spinta:213: https://github.com/atviriduomenys/spinta/issues/213
 .. _spinta:216: https://github.com/atviriduomenys/spinta/issues/216
 .. _spinta:269: https://github.com/atviriduomenys/spinta/issues/216
 .. _spinta:270: https://github.com/atviriduomenys/spinta/issues/216
