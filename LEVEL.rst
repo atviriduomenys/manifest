@@ -36,7 +36,8 @@ spinta:283_   IVPK: Shape failų šaltinio palaikymas.
 Neatverti arba per žemos brandos lygio duomenys:
 
 ===============  =========================================
-manifest:1290_   RC: JAR
+manifest:1280_   RC: AR Patalpos
+manifest:1290_   RC: JAR Įregistruoti
 manifest:1476_   SD: duomenų susiejimo ryšiais palaikymas
 ===============  =========================================
 
@@ -51,6 +52,7 @@ epsg:4326_                                             WGS84
 `vadovas:dsa/kodiniai-pavadinimai.html`_               Kodiniai pavadinimai
 `vadovas:dsa/ref.html`_                                Ryšiai tarp modelių
 `vadovas:dsa/dimensijos.html#modelio-baze`_            Modelio bazė
+`vadovas:dsa/dimensijos.html#klasifikatoriai`_         Klasifikatoriai
 =====================================================  ======================
 
 
@@ -79,9 +81,13 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 - Duomenų susiejimas ryšiais įmanomas::
 
     ,,,,,imone,string,,,,2,open,,,
-    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""Istaiga"")",4,open,manifest:1476,,
+    ,,,,,,comment,type,,"update(type: ""ref"", ref: ""Istaiga"")",4,open,"manifest:1476,vadovas:dsa/ref.html",,
+
+    ,,,,,licencijos_id,integer,,,,2,open,,Licencijos identifikatorius,
+    ,,,,,,comment,type,,"update(property: ""licencija"", type: ""ref"", ref: ""Licencija"")",4,open,"manifest:1476,vadovas:dsa/ref.html",,
 
   - manifest:1476_ - SD: duomenų susiejimo ryšiais palaikymas.
+  - `vadovas:dsa/ref.html`_ - Ryšiai tarp modelių
 
 - Duomenų susiejimas ryšiais neįmanomas::
 
@@ -94,7 +100,7 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 - Nenurodyta dubliuojamo modelio bazė::
 
     ,,,,Istaiga,,,,,,2,,,,
-    ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/JuridinisAsmuo"", ref: ""kodas"")",4,open,"spinta:205,manifest:1290",,
+    ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
 
   - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
   - manifest:1290_ - RC: JAR.
@@ -131,9 +137,19 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 - Neteisingai užrašyti kodiniai pavadinimai::
 
     ,,,,,ja_kodas,string,,,,2,open,,,,,
-    ,,,,,,comment,property,type,,"update(property: ""kodas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
+    ,,,,,,comment,property,,"update(property: ""kodas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
+
+    ,,,,,isakymo_id,ref,Isakymas,,,2,open,,,
+    ,,,,,,comment,property,,"update(property: ""isakymas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
 
   - `vadovas:dsa/kodiniai-pavadinimai.html`_ - Kodiniai pavadinimai.
+
+- Nepateiktas enum, kai reikšmės pateiktos kodais::
+
+    ,,,,,asmuo_visuomene,integer,,,,2,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
+    ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+
+  - `vadovas:dsa/dimensijos.html#klasifikatoriai`_ - Klasifikatoriai.
 
 
 3 brandos lygis: Standartinė forma
@@ -146,11 +162,9 @@ __ https://atviriduomenys.readthedocs.io/dsa/index.html
 
 - Nenurodytas pirminis raktas::
 
-    ,,,,Institucija,,,,,,2,,,,
+    ,,,,Institucija,,,,,,3,,,,
     ,,,,,,comment,ref,,"update(ref: ""kodas"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 
-  - spinta:205_ - IVPK: modelio bazės (`base`) palaikymas.
-  - manifest:1290_ - RC: JAR.
   - `vadovas:dsa/dimensijos.html#model.ref`_ - Pirminis raktas.
 
 - Vienetų palaikymas::
@@ -203,6 +217,7 @@ Informacijos šaltiniai
 .. _vadovas:dsa/kodiniai-pavadinimai.html: https://atviriduomenys.readthedocs.io/dsa/kodiniai-pavadinimai.html
 .. _vadivas:dsa/ref.html: https://atviriduomenys.readthedocs.io/dsa/ref.html
 .. _vadovas:dsa/dimensijos.html#modelio-baze: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#modelio-baze
+.. _vadovas:dsa/dimensijos.html#klasifikatoriai: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#klasifikatoriai
 
 .. _epsg:3346: https://epsg.io/3346
 .. _epsg:4326: https://epsg.io/4326
