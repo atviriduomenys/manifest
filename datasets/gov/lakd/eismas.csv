@@ -29,4 +29,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,statusas,integer,,statusas,,3,open,,Galiojimo statusas,
 ,,,,,matavo,string,,matavo,,3,open,,Matavimus atliko,
 ,,,,,pastabos,string,,pastabos,,3,open,,Pastabos,
-,,,,,            ,,,,,,,,,
