@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/urm/vbpdp,,,,,,,,,,,,Vystomojo bendradarbiavimo ir paramos demokratijai programos įgyvendinimas,
+,,parama,,,,csv,,https://data.gov.lt/dataset/761/download/10707/VBD%20ataskaita%202015-2020%202.csv,,,,,,
+,,,,Parama,,,metai,,,,,,,
+,,,,,metai,date,Y,Metai,,4,open,,Metai,
+,,,,,savanoriškos_imokos,number,,Savanoriškoms įmokoms į daugiašalius fondus ,,3,open,,Savanoriškoms įmokoms į daugiašalius fondus ,
+,,,,,projektai,number,,Projektams,,3,open,,Projektams,
+,,,,,humanitarine_pagalba,number,,Humanitarinei pagalbai,,3,open,,Humanitarinei pagalbai,
+,,,,,dalyvavimas_tarpt_org,number,,"Dalyvavimui ES, JT ir kitų tarptautinių organizacijų veikloje ir programos stebėsenai",,3,open,,"Dalyvavimui ES, JT ir kitų tarptautinių organizacijų veikloje ir programos stebėsenai",
+,,,,,kitos_bendrad_veiklos,number,,Kitoms vystomojo bendradarbiavimo veikloms,,3,open,,Kitoms vystomojo bendradarbiavimo veikloms,
+,,,,,inasas_i_epf,number,,Įnašas į Europos plėtros fondą (EPF),,3,open,,Įnašas į Europos plėtros fondą (EPF),
+,,,,,mokesciai,number,,Mokesčiams tarptautinėms organizacijoms sumokėti,,3,open,,Mokesčiams tarptautinėms organizacijoms sumokėti,
+,,,,,is_viso,number,,Iš viso,,3,open,,Iš viso,
