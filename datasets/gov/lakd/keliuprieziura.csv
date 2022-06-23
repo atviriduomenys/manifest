@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasasets/gov/lakd/keliuprieziura,,,,,,,,,,,,,
+,,prieziura,,,,csv,,https://data.gov.lt/dataset/1252/download/10630/viet_keliu_skirtos_lesos_2022m.csv,"tabular(sep: "";"")",,,,,
+,,,,PrieziurosSamata,,,savivaldybe,,,,,,,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],Savivaldybė,,2,open,,Savivaldybė,
+,,,,,paskirtis,string,,Paskirtis,,3,open,,Finansavimo lėšų paskirtis,
+,,,,,suma,number,,Suma tūkst. eurų,,3,open,,Paskirtų lėšų suma,
