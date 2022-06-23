@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasasets/gov/lakd/keliuturtoverte,,,,,,,,,,,,,
+,,verte,,,,csv,,https://data.gov.lt/dataset/1253/download/10622/keliu_likutine_verte.csv,,,,,,
+,,,,TurtoVerte,,,keliu_reiksme,,,,,,,
+,,,,,keliu_reiksme,string,,Kelių reikšmė,,3,open,,Kelių reikšmė,
+,,,,,likutine_verte,integer,,Likutinė vertė 2021m mln. Eur,,3,open,,Likutinė vertė 2021m mln. Eur,
