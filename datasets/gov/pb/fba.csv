@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/fba,,,,,,,,,,,,,
-,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ','),,,,
+,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ';'),,,,
 ,,,,FinansinesBuklesAtaskaita,,,nr,,,,,,,
 ,,,,,nr,string,,Nr,,4,open,,Nr,
 ,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
