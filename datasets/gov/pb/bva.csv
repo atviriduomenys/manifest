@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/bva,,,,,,,,,,,,,
+,,biudzetas,,,,csv,,https://data.gov.lt/dataset/1665/download/9593/vpb-biudzeto-vykdymo-ataskaita-2020-Q2.csv,tabular(sep: ';'),,,,,
+,,,,BiudzetoVykdymoAtaskaita,,,kodas,,,,,,,
+,,,,,kodas,string,,Kodas,,4,open,,Kodas,
+,,,,,pavadinimas,string,,Pavadinimas,,3,open,,Pavadinimas,
+,,,,,nr,integer,,Nr,,3,open,,Nr,
+,,,,,planas_metams,integer,,Planas metams,,3,open,,Metinis biudžeto planas,
+,,,,,planas_ataskaitiniam_laikotarpiui,integer,,Planas ataskaitiniam laikotarpiui,,3,open,,Biudžeto planas ataskaitiniam laikotarpiui,
+,,,,,gauti_asignavimai,number,,Gauti asignavimai,,3,open,,Gauti asignavimai,
+,,,,,panaudoti_asignavimai,number,,Panaudoti asignavimai,,3,open,,Panaudoti asignavimai,
