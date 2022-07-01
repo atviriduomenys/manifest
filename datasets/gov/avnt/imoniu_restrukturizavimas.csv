@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title
 ,datasets/gov/avnt/imoniu_restrukturizavimas,,,,,,,,,,,,Įmonių  restruktūrizavimo ataskaitų  duomenys
 ,,,,,,,,,,,,,
-,,,,RestruturizavimoAtaskaitosDatos,,,,,,,,,Įmonių  restruktūrizavimo ataskaitų  duomenys
+,,,,RestrukturizavimoAtaskaitosDatos,,,,,,,,,Įmonių  restruktūrizavimo ataskaitų  duomenys
 ,,,,,imones_kodas,integer,,,,3,open,,Įmonės JAR kodas
 ,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/lsd/cl/ja_asmenys/ja_kodas"", type: ""ref"")",4,open,,
 ,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas
@@ -31,7 +31,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,restrukturizavimo_pabaiga,string,,,,2,open,,Restruktūrizavimo proceso baigimo data
 ,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
 ,,,,,,,,,,,,,
-,,,,RestruturizavimoAtaskaitosFinansiniai,,,,,,,,,
+,,,,RestrukturizavimoAtaskaitosFinansiniai,,,,,,,,,
 ,,,,,eil_nr,integer,,,,3,open,,Eilutės numeris
 ,,,,,restrukt_metai,integer,,,,2,open,,Restruktūrizavimo bylos iškėlimo metai
 ,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""Y"")",4,open,,
