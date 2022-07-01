@@ -1,0 +1,153 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,,,,,,prefix,locn,,,,,http://www.w3.org/ns/locn#,,
+,datasets/gov/regitra/tp,,,,,,,,,,,,,
+,,csv,,,,csv,,https://www.regitra.lt/atvduom/Atviri_TP_parko_duomenys.zip,"self.extract(""zip"")[""Atviri_TP_parko_duomenys.csv""]",,,,,
+,,,,TransportoPriemone,,,"keb_kodas, spec_kodas",,,,,,,
+,,,,,marke,string,,MARKE,,3,open,,Gamybinë markë (gamintojo prekës pavadinimas),"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldyb=1`, tomet vietoje ""Gamybinë markë"" yra nurodoma `Nuasmeninta`, atsiþvelgiant á asmens duomenø apsaugà."
+,,,,,,lang,en,,,,,,Make (Trade name of the manufacturer),"When `vald_tipas=""Fizinis""` (Legal) and `marke+komercinis_pav+savivaldyeb=1`, then instead ""Make (trade name of the manufacturer)"" indicated `Nuasmeninta`, taking into account the protection of personal data."
+,,,,,komercinis_pav,string,,KOMERCINIS_PAV,,3,open,,Komercinis pavadinimas,"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldybe=1`, tomet vietoje ""Komercinis pavadinimas"" yra nurodoma `Nuasmeninta`, atsiþvelgiant á asmens duomenø apsaugà."
+,,,,,,lang,en,,,,,,Commercial name,"When `vald_tipas=""Fizinis""` (Legal) and `marke+komercinis_pav+savivaldybe=1`, then instead ""Commercial name"" indicated `Nuasmeninta`, taking into account the protection of personal data)."
+,,,,,gamintojo_pav,string,,GAMINTOJO_PAV,,3,open,,Gamintojo pavadinimas,
+,,,,,,lang,en,,,,,,Name of manufacturer,
+,,,,,gamintojo_pav_baz,string,,GAMINTOJO_PAV_BAZ,,3,open,,Bazinës transporto priemonës gamintojo pavadinimas,
+,,,,,,lang,en,,,,,,Name of the manufacturer of the base vehicle,
+,,,,,tipas,string,,TIPAS,,3,open,,Tipas,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Tipas"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,Type,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Type"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,variantas,string,,VARIANTAS,,3,open,,Variantas,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Variantas"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,Variant,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Variant"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,versija,string,,VERSIJA,,3,open,,Versija,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Versija"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,Version,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Version"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,es_tipo_patvirtinimo_nr,string,,ES_TIPO_PATVIRTINIMO_NR,,4,open,,ES tipo patvirtinimo numeris,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""ES tipo patvirtinimo numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,EU type approval number,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""EU type approval number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,nac_tipo_patvirtinimo_nr,string,,NAC_TIPO_PATVIRTINIMO_NR,,4,open,,"Nacionalinis tipo patvirtinimo, áskaitant iðplëtimà, numeris","Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Nacionalinis tipo patvirtinimo, áskaitant iðplëtimà, numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,"National type approval, including extension number","When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""National type approval, including extension number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,individual_patvirtinimo_nr,string,,INVIDUAL_PATVIRTINIMO_NR,,4,open,,Individualaus patvirtinimo numeris,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Individualaus patvirtinimo numeris"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,Individual approval number,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Individual approval number"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,interpoliacija,string,,INTERPOLIACIJA,,4,open,,Interpoliacijos ðeimos identifikatorius,"Kai VALD_TIPAS - ""Fizinis"" ir MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, tomet vietoje ""Interpoliacijos ðeimos identifikatorius"" yra nurodoma ""Nuasmeninta"", atsiþvelgiant á asmens duomenø apsaugà"
+,,,,,,lang,en,,,,,,Interpolation family’s identifier,"When VALD_TIPAS - ""Fizinis (Legal)"" and MARKE+KOMERCINIS_PAV+SAVIVALDYBE=1, then instead ""Interpolation family’s identifier"" indicated ""Nuasmeninta"", taking into account the protection of personal data"
+,,,,,uzbaigtumo_pakopa,string,,UZBAIGTUMO_PAKOPA,,3,open,,Transporto priemonës uþbaigtumo pakopa,
+,,,,,,lang,en,,,,,,Vehicle completion stage,
+,,,,,vairas_desineje,boolean,,VAIRAS_DESINEJE,,3,open,,Vairas deðinëje pusëje,Transporto priemonë pritaikyta eismui kairiàja kelio puse ir (ar) turi vairà deðinëje pusëje
+,,,,,,lang,en,,,,,,Steering wheel on the right,The vehicle is designed for left-hand traffic and / or has a right-hand drive
+,,,,,,enum,,Y,true,,,,Taip,
+,,,,,,,,N,false,,,,Ne,
+,,,,,,,,,null,,,,,
+,,,,,kategorija_pilnai,string,,KATEGORIJA_PILNAI,,3,open,,"Kategorija, klasë, këbulo kodas, specialios paskirties kodas",
+,,,,,,lang,en,,,,,,Vehicle category and code for bodywork,
+,,,,,kategorija_klase,string,,KATEGORIJA_KLASE,,3,open,,"Kategorija, klasë",
+,,,,,,lang,en,,,,,,Vehicle category,
+,,,,,keb_kodas,string,,KEB_KODAS,,4,open,,Këbulo kodas,
+,,,,,,lang,en,,,,,,Code for bodywork,
+,,,,,keb_pavadinimas,string,,KEB_PAVADINIMAS,,3,open,,Këbulo kodas (þodþiais),
+,,,,,,lang,en,,,,,,Code for bodywork (description in Lithuanian),
+,,,,,spec_kodas,string,,SPEC_KODAS,,4,open,,Specialios paskirties kodas,
+,,,,,,lang,en,,,,,,Code for bodywork,
+,,,,,spec_pavadinimas,string,,SPEC_PAVADINIMAS,,3,open,,Specialios paskirties kodas (þodþiais),
+,,,,,,lang,en,,,,,,Code for bodywork (description in Lithuanian),
+,,,,,keb_kodas_es,string,,KEB_KODAS_ES,,4,open,,Këbulo kodas (ES),
+,,,,,,lang,en,,,,,,Code for bodywork (EU),
+,,,,,nuosava_mase,integer,kg,NUOSAVA_MASE,,4,open,,Parengtos eksploatuoti transporto priemonës masë,
+,,,,,,lang,en,,,,,,Mass of the vehicle in running order,
+,,,,,nuosava_mase_baz,integer,kg,NUOSAVA_MASE_BAZ,,4,open,,Parengtos eksploatuoti bazinës transporto priemonës masë,
+,,,,,,lang,en,,,,,,Technically permissible maximum laden mass of the base vehicle,
+,,,,,maks_mase,integer,kg,MAKS_MASE,,4,open,,Didþiausia techniðkai leidþiama pakrautos transporto priemonës masë,
+,,,,,,lang,en,,,,,,Technically permissible maximum laden mass,
+,,,,,maks_mase_f2,integer,kg,MAKS_MASE_F2,,4,open,,"Didþiausia leistina pakrautos transporto priemonës, kuri eksploatuojama registracijos valstybëje, masë",
+,,,,,,lang,en,,,,,,The maximum permissible laden mass of the vehicle in service in the State of registration,
+,,,,,maks_mase_f5,integer,kg,MAKS_MASE_F5,,4,open,,Puspriekabës aðims tenkanti didþiausia techniðkai leidþiama pakrautos transporto priemonës masës dalis,
+,,,,,,lang,en,,,,,,The technically permissible maximum laden mass on the axle of the semi-trailer,
+,,,,,bandomoji_mase,integer,kg,BANDOMOJI_MASE,,4,open,,Bandomoji masë,
+,,,,,,lang,en,,,,,,Test mass,
+,,,,,darbinis_turis,number,cm³,DARBINIS_TURIS,,4,open,,Variklio darbinis tûris,
+,,,,,,lang,en,,,,,,Engine capacity,
+,,,,,galia,number,kW,GALIA,,3,open,,Didþiausia naudingoji galia,
+,,,,,,lang,en,,,,,,Maximum net power,
+,,,,,sukiu_sk,number,,SUKIU_SK,,3,open,,Vardinis sûkiø skaièius,
+,,,,,,lang,en,,,,,,Rated engine speed,
+,,,,,galia_elektr,number,kW,GALIA_ELEKTR,,4,open,,Didþiausia nuolatinë elektrinio variklio vardinë galia,
+,,,,,,lang,en,,,,,,Maximum continuous electric motor rated power,
+,,,,,degalai,string,,DEGALAI,,3,open,,Degalø tipas arba galios ðaltinis,
+,,,,,,lang,en,,,,,,Fuel type or power source,
+,,,,,degalu_rezimas,string,,DEGALU_REZIMAS,,3,open,,Degalø reþimas,
+,,,,,,lang,en,,,,,,Fuel mode,
+,,,,,elektrine_tp,boolean,,ELEKTRINE_TP,,3,open,,Elektrinë transporto priemonë,
+,,,,,,lang,en,,,,,,Pure electric vehicle,
+,,,,,,enum,,Y,true,,,,Taip,
+,,,,,,,,N,false,,,,Ne,
+,,,,,,,,,null,,,,Nenurodyta,
+,,,,,hibridines_tp_kategorija,string,,HIBRIDINES_TP_KATEGORIJA,,3,open,,Hibridinës (elektrinës) transporto priemonës kategorija,Galimos reikðmës: VC-HEV
+,,,,,,lang,en,,,,,,Class of hybrid (electric) vehicle,
+,,,,,pavaru_dezes_tipas,string,,PAVARU_DEZES_TIPAS,,3,open,,Pavarø dëþës tipas,
+,,,,,,lang,en,,,,,,Gearbox type,
+,,,,,co2_kiekis,number,g/km,CO2_KIEKIS,,4,open,,Bendras iðmetamo CO2 kiekis,NEDC reikðmë arba nenustatytos bandymø procedûros
+,,,,,,lang,en,,,,,,Combined CO2 emissions,NEDC value or no test procedure specified
+,,,,,co2_kiekis_wltp,number,g/km,CO2_KIEKIS_WLTP,,4,open,,Bendras iðmetamo CO2 kiekis (WLTP reikðmë),
+,,,,,,lang,en,,,,,,Combined CO2 emissions (WLTP value),
+,,,,,eko_naujoves_kodas,string,,EKO_NAUJOVES_KODAS,,3,open,,Bendrasis ekologinës naujovës kodas,
+,,,,,,lang,en,,,,,,General code of the eco-innovations,
+,,,,,co2_sumazejimas_nedc,number,g/km,CO2_SUMAZEJIMAS_NEDC,,4,open,,"Dël ekologinës naujovës (-iø) sumaþëjæs bendras iðmetamo CO? kiekis, taikant NEDC",
+,,,,,,lang,en,,,,,,Total CO? emissions NEDC savings due to the eco-innovations,
+,,,,,co2_sumazejimas_wltp,number,g/km,CO2_SUMAZEJIMAS_WLTP,,4,open,,"Dël ekologinës naujovës (-iø) sumaþëjæs bendras iðmetamo CO? kiekis, taikant WLTP",
+,,,,,,lang,en,,,,,,Total CO? emissions WLTP savings due to the eco-innovations,
+,,,,,elektr_energ_sanaud_nedc,number,,ELEKTR_ENERG_SANAUD_NEDC,,3,open,,Elektros energijos sànaudos (NEDC reikðmë),
+,,,,,,lang,en,,,,,,Electric energy consumption (NEDC value),
+,,,,,elektr_energ_sanaud_wltp_e,number,,ELEKTR_ENERG_SANAUD_WLTP_E,,3,open,,Elektros energijos sànaudos (WLTP reikðmë - elenktrinë),
+,,,,,,lang,en,,,,,,Electric energy consumption (WLTP value - electric),
+,,,,,elektr_energ_sanaud_wltp_h,number,,ELEKTR_ENERG_SANAUD_WLTP_H,,3,open,,Elektros energijos sànaudos (WLTP reikðmë - hibridas),
+,,,,,,lang,en,,,,,,Electric energy consumption (WLTP value - hybrid),
+,,,,,elektrine_rida_nedc,number,km,ELEKTRINE_RIDA_NEDC,,4,open,,Elektrinë rida (NEDC reikðmë),
+,,,,,,lang,en,,,,,,Electric range (NEDC value),
+,,,,,elektrine_rida_wltp_e,number,km,ELEKTRINE_RIDA_WLTP_E,,4,open,,Elektrinë rida (WLTP reikðmë - elektrinë),
+,,,,,,lang,en,,,,,,Electric range (WLTP value - electric),
+,,,,,elektrine_rida_wltp_h,number,km,ELEKTRINE_RIDA_WLTP_H,,4,open,,Elektrinë rida (WLTP reikðmë - hibridas),
+,,,,,,lang,en,,,,,,Electric range (WLTP value - hybrid),
+,,,,,tersalu_lygis,string,,TERSALU_LYGIS,,3,open,,Iðmetamø terðalø lygis,
+,,,,,,lang,en,,,,,,Exhaust emission level,
+,,,,,tersalu_norm_akto_nr,string,,TERSALU_NORM_AKTO_NR,,3,open,,Iðmetamø terðalø norminio akto numeris,
+,,,,,,lang,en,,,,,,Number of the regulatory act of the exhaust emission level,
+,,,,,ratu_baze,integer,mm,RATU_BAZE,,4,open,,Ratø bazë,
+,,,,,,lang,en,,,,,,Wheelbase,
+,,,,,tv_plotis1,integer,mm,TV_PLOTIS1,,4,open,,Priekinës aðies vëþës plotis,
+,,,,,,lang,en,,,,,,Front axle track,
+,,,,,tv_plotis2,integer,mm,TV_PLOTIS2,,4,open,,Galinës aðies vëþës plotis,
+,,,,,,lang,en,,,,,,Rear axle track,
+,,,,,galios_mases_sant,integer,,GALIOS_MASES_SANT,,3,open,,Galios ir masës santykis (tik motociklams),
+,,,,,,lang,en,,,,,,Power-to-mass ratio (for motorcycles only),
+,,,,,spalva,string,,SPALVA,,3,open,,Spalva,
+,,,,,,lang,en,,,,,,Colour,
+,,,,,maks_greitis,integer,,MAKS_GREITIS,,3,open,,Didþiausias leidþiamas greitis,
+,,,,,,lang,en,,,,,,Maximum speed,
+,,,,,sedimu_vietu_sk,integer,,SEDIMU_VIETU_SK,,3,open,,Sëdimø vietø skaièius (áskaitant vairuotojo vietà),
+,,,,,,lang,en,,,,,,Number of seating positions (including the driver),
+,,,,,stovimu_vietu_sk,integer,,STOVIMU_VIETU_SK,,3,open,,Stovimø vietø skaièius,
+,,,,,,lang,en,,,,,,Number of standing places,
+,,,,,gamybos_metai,date,Y,GAMYBOS_METAI,,4,open,,Gamybos metai,
+,,,,,,lang,en,,,,,,Production year,
+,,,,,modelio_metai,date,Y,MODELIO_METAI,,4,open,,Modelio metai,
+,,,,,,lang,en,,,,,,Model year,
+,,,,,rida,number,km,RIDA,,4,open,,Rida,"Uþfiksuota registravimo metu, nustatant transporto priemonës tapatumà arba perkelta ið ES ðalies privalomosios techninës apþiûros dokumentø"
+,,,,,,lang,en,,,,,,Mileage,Recorded during registration and vehicle identification or transferred from EU country mandatory roadworthiness test documents
+,,,,,pirm_reg_data,date,D,PIRM_REG_DATA,,4,open,,Pirmosios registracijos data,
+,,,,,,lang,en,,,,,,Date of first registration,
+,,,,,pirm_reg_data_lt,date,D,PIRM_REG_DATA_LT,,4,open,,Pirmosios registracijos Lietuvoje data,
+,,,,,,lang,en,,,,,,Date of first registration in Lithuania,
+,,,,,galiojimo_laikas,date,D,GALIOJIMO_LAIKAS,,4,open,,Registracijos galiojimo pabaigos data,
+,,,,,,lang,en,,,,,,Expiry date of registration,
+,,,,,paskutines_reg_data,temporal,D,PASKUTINES_REG_DATA,,4,open,,Paskutinës operacijos data,
+,,,,,,lang,en,,,,,,Date of last operation,
+,,,,,dae_statusas,boolean,,DAE_STATUSAS,,3,open,,Dalyvavimo vieðajame eisme statusas,
+,,,,,,lang,en,,,,,,Status of participation in public traffic,
+,,,,,,enum,,T,true,,,,leidþiama,
+,,,,,,enum,,N,false,,,,draudþiama,
+,,,,,kilmes_salis,string,,KILMES_SALIS,,5,open,locn:geographicName,Uþsienio ðalies kodas,Kurios registracijos dokumentø pagrindu transporto priemonë registruota Lietuvoje.
+,,,,,,lang,en,,,,,,Foreign country code,On the basis of registration documents vehicle registered in the Lithuania.
+,,,,,vald_tipas,string,,VALD_TIPAS,,3,open,,Valdytojo tipas,
+,,,,,,lang,en,,,,,,Holder type,
+,,,,,,enum,,,"""fizinis""",,,,Fizinis,
+,,,,,,enum,,,"""juridinis""",,,,Juridinis,
+,,,,,vald_gim_dat_int,string,,VALD_GIM_DAT_INT,,3,open,,Valdytojo (fizinio asmens) gimimo datos intervalas,
+,,,,,,lang,en,,,,,,Holder (Natural person) date of birth interval,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,SAVIVALDYBE,,5,open,locn:geographicName,Savivaldybë,Pagal valdytojo registracijos adresà
+,,,,,,lang,en,,,,,,Municipality,According to the holder's registration address
+,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,APSKRITIS,,5,open,locn:geographicName,Apskritis,Pagal valdytojo registracijos adresà
+,,,,,,lang,en,,,,,,County,According to the holder's registration address
