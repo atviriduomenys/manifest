@@ -1,60 +1,75 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title
-,datasets/gov/avnt/imoniu_bankrotas,,,,,,,,,,,,Įmonių bankroto ataskaitų duomenys
-,,,,,,,,,,,,,
-,,,,BankrotoAtaskaitosDatos,,,,,,,,,Įmonių bankroto ataskaitų duomenys
-,,,,,imones_kodas,integer,,,,2,open,,Įmonės JAR kodas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/lsd/cl/ja_asmenys/ja_kodas"", type: ""ref"")",4,open,,
-,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/lsd/cl/ja_asmenys/ja_pavadinimas@lt"", type: ""ref"")",4,open,,
-,,,,,teritorijos_kodas,integer,,,,3,open,,Teritorijos kodas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/rc/ar/savivaldybe/sav_kodas@lt"", type: ""ref"")	",4,open,,
-,,,,,teritorijos_pavadinimas,string,,,,2,open,,Teritorijos pavadinimas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/rc/ar/savivaldybe/pavadinimas@lt"", type: ""ref"")	",4,open,,
-,,,,,apskrities_kodas,integer,,,,2,open,,Apskrities kodas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/rc/ar/apskritis/adm_kodas@lt"", type: ""ref"")	",4,open,,
-,,,,,apskrities_pavadinimas,string,,,,2,open,,Apskrities pavadinimas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/rc/ar/apskritis/pavadinimas@lt"", type: ""ref"")	",4,open,,
-,,,,,teisine_forma,string,,,,3,open,,Rūšis (teisinė forma)
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/rc/jar/form_teisn@lt"", type: ""ref"")",4,open,,
-,,,,,veiklos_kodas,integer,,,,3,open,,Veiklos kodas
-,,,,,,comment,"property, type",,"update(property: ""/datasets/gov/lsd/cl/evrk/kodas"", type: ""ref"")",4,open,,
-,,,,,veikla,string,,,,2,open,,Veiklos pavadinimas
-,,,,,veiklos_sekcija,string,,,,2,open,,Veiklos sekcijos pavadinimas
-,,,,,bankroto_iniciatorius,string,,,,2,open,,Bankroto proceso iniciatorius
-,,,,,bankroto_data,string,,,,2,open,,Bankroto bylos iškėlimo data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,apygardos_teismas,string,,,,2,open,,Apygardos teismo pavadinimas
-,,,,,ne_teismo_tvarka,string,,,,2,open,,Bankroto proceso ne teismo tvarka data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,nutraukimo_data,string,,,,2,open,,Bankroto proceso nutraukimo data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,nutraukimo_priezastis,string,,,,2,open,,Bankroto proceso nutraukimo priežastis
-,,,,,likvidavimo_data,string,,,,2,open,,Likvidavimo data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,supaprastintas_bankrotas,string,,,,2,open,,Taikyti supaprastintą bankroto procesą data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,nutrauktas_supaprastintas,string,,,,2,open,,Nutraukti supaprastintą bankroto procesą data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,tycinis_bankrotas,string,,,,2,open,,Pripažinti bankrotą tyčiniu data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,tycinio_bankroto_nutraukimas,string,,,,2,open,,Tyčinio bankroto nutraukimo data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,sprendimas_del_pabaigos,string,,,,2,open,,Sprendimo dėl pabaigos data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,isregistravimo_data,string,,,,2,open,,Išregistravimo data
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""D"")",4,open,,
-,,,,,,,,,,,,,
-,,,,BankrotoAtaskaitosFinansai,,,,,,,,,Įmonių bankroto ataskaitų duomenų finansiniai duomenys
-,,,,,eil_nr,integer,,,,2,open,,Eilutės numeris
-,,,,,bankroto_metai,integer,,,,2,open,,Bankroto pradžios metai
-,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""Y"")",4,open,,
-,,,,,turtas_proceso_pradzioje,number,,,,2,open,,Turtas proceso pradžioje
-,,,,,,comment,"type, ref",,"update(type: ""currency"", ref: ""EUR"")",4,open,,
-,,,,,turtas_laikotarpio_pabaigoje,number,,,,2,open,,Turtas ataskaitinio laikotarpio pabaigoje
-,,,,,,comment,"type, ref",,"update(type: ""currency"", ref: ""EUR"")",4,open,,
-,,,,,visi_kreditoriu_reikalavimai,number,,,,2,open,,Visi kreditorių reikalavimai
-,,,,,,comment,"type, ref",,"update(type: ""currency"", ref: ""EUR"")",4,open,,
-,,,,,visi_patenkinti_reikalavimai,number,,,,2,open,,Iš viso patenkinti kreditorių reikalavimai
-,,,,,,comment,"type, ref",,"update(type: ""currency"", ref: ""EUR"")",4,open,,
-,,,,,reikalavimai_laikotarpio_pabaigoje,number,,,,2,open,,Kreditorių reikalavimai ataskaitinio laikotarpio pabaigoje
-,,,,,,comment,"type, ref",,"update(type: ""currency"", ref: ""EUR"")",4,open,,
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/avnt/imoniu_bankrotas,,,,,,,,,,,,Įmonių bankroto ataskaitų duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,BankrotoAtaskaitosDatos,,,,,,2,,,Įmonių bankroto ataskaitų duomenys,
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",3,open,"spinta:205, manifest:1290",,
+,,,,,,comment,model,,"update(model: ""JuridinisAsmuo"")",3,open,vadovas:dsa/kodiniai-pavadinimai.html,,
+,,,,,,comment,ref,,"update(ref: ""imones_kodas"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
+,,,,,imones_kodas,integer,,,,2,open,,Įmonės JAR kodas,
+,,,,,,comment,type,,"update(property: ""ja_kodas"", type: """")",4,open,"spinta:205, manifest:1290",,
+,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas,
+,,,,,,comment,type,,"update(property: ""ja_pavadinimas"", type: """")",4,open,"spinta:205, manifest:1290",,
+,,,,,teritorijos_kodas,integer,,,,2,open,,Teritorijos kodas,
+,,,,,,comment,"type",,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
+,,,,,,comment,"type",,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,open,"spinta:216, manifest:1263",,
+,,,,,teritorijos_pavadinimas,string,,,,2,open,,Teritorijos pavadinimas,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,open,"spinta:216, manifest:1263",,
+,,,,,apskrities_kodas,integer,,,,2,open,,Apskrities kodas,
+,,,,,,comment,type,,"update(property: ""savivaldybe.apskritis.adm_kodas"", type: """")",4,open,spinta:216,,
+,,,,,apskrities_pavadinimas,string,,,,2,open,,Apskrities pavadinimas,
+,,,,,,comment,type,,"update(property: ""savivaldybe.apskritis.pavadinimas"", type: """")",4,open,spinta:216,,
+,,,,,teisine_forma,string,,,,2,open,,Rūšis (teisinė forma),
+,,,,,,comment,type,,"update(property: ""form_pavadinimas"", type: """")",4,open,spinta:216,,
+,,,,,veiklos_kodas,integer,,,,2,open,,Veiklos kodas,
+,,,,,,comment,type,,"create(property: ""veikla"", type: ""ref"", ref: ""datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis"")",4,open,vadovas:dsa/ref.html,,
+,,,,,,comment,type,,"update(property: ""veikla.kodas"", type: """")",4,open,spinta:216,,
+,,,,,veikla,string,,,,2,open,,Veiklos pavadinimas,
+,,,,,,comment,type,,"update(property: ""veikla.pavadinimas_lt"", type: """")",4,open,spinta:216,,
+,,,,,veiklos_sekcija,string,,,,2,open,,Veiklos sekcijos pavadinimas,
+,,,,,,comment,type,,"update(property: ""veikla.bendresne_veiklos_rusis.pavadinimas_lt"", type: """")",4,open,spinta:216,,
+,,,,,bankroto_iniciatorius,string,,,,2,open,,Bankroto proceso iniciatorius,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,manifest:1290,,
+,,,,,bankroto_data,string,,,,2,open,,Bankroto bylos iškėlimo data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,apygardos_teismas,string,,,,2,open,,Apygardos teismo pavadinimas,
+,,,,,,comment,type,,"create(property: ""apygardos_teismas"", type: ""ref"", ref: ""datasets/gov/jar/iregistruoti/JuridinisAsmuo"")",4,open,manifest:1290,,
+,,,,,,comment,type,,"update(property: ""apygardos_teismas.kodas"", type: """")",4,open,spinta:216,,
+,,,,,ne_teismo_tvarka,string,,,,2,open,,Bankroto proceso ne teismo tvarka data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,nutraukimo_data,string,,,,2,open,,Bankroto proceso nutraukimo data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,nutraukimo_priezastis,string,,,,2,open,,Bankroto proceso nutraukimo priežastis,
+,,,,,,comment,type,,"update(property: ""nutraukimo_priezastis@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,likvidavimo_data,string,,,,2,open,,Likvidavimo data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,supaprastintas_bankrotas,string,,,,2,open,,Taikyti supaprastintą bankroto procesą data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,nutrauktas_supaprastintas,string,,,,2,open,,Nutraukti supaprastintą bankroto procesą data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,tycinis_bankrotas,string,,,,2,open,,Pripažinti bankrotą tyčiniu data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,tycinio_bankroto_nutraukimas,string,,,,2,open,,Tyčinio bankroto nutraukimo data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,sprendimas_del_pabaigos,string,,,,2,open,,Sprendimo dėl pabaigos data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,isregistravimo_data,string,,,,2,open,,Išregistravimo data,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""D"")",4,open,,,
+,,,,,,,,,,,,,,
+,,,,BankrotoAtaskaitosFinansai,,,,,,3,,,Įmonių bankroto ataskaitų duomenų finansiniai duomenys,
+,,,,,,comment,ref,,"update(ref: ""eil_nr"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
+,,,,,eil_nr,integer,,,,4,open,,Eilutės numeris,
+,,,,,bankroto_metai,integer,,,,2,open,,Bankroto pradžios metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
+,,,,,turtas_proceso_pradzioje,number,,,,2,open,,Turtas proceso pradžioje,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,turtas_laikotarpio_pabaigoje,number,,,,2,open,,Turtas ataskaitinio laikotarpio pabaigoje,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,visi_kreditoriu_reikalavimai,number,,,,2,open,,Visi kreditorių reikalavimai,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,visi_patenkinti_reikalavimai,number,,,,2,open,,Iš viso patenkinti kreditorių reikalavimai,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,reikalavimai_laikotarpio_pabaigoje,number,,,,2,open,,Kreditorių reikalavimai ataskaitinio laikotarpio pabaigoje,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,

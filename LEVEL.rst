@@ -39,6 +39,8 @@ Neatverti arba per žemos brandos lygio duomenys:
 
 ===============  =========================================
 manifest:1280_   RC: AR Patalpos
+manifest:1263_   RC: AR Savivaldybės
+manifest:1256_   RC: AR Apskritys
 manifest:1290_   RC: JAR Įregistruoti
 manifest:1476_   SD: duomenų susiejimo ryšiais palaikymas
 ===============  =========================================
@@ -119,6 +121,7 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 - Denormalizuoti duomenys::
 
     ,,,,,kodas,string,,,,2,open,,,
+    ,,,,,,comment,property,,"create(property: ""istaiga"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:216,manifest:1290,manifest:1476",,
     ,,,,,,comment,property,,"update(property: ""istaiga.kodas"", type: """")",4,open,"spinta:216,manifest:1290,manifest:1476",,
 
   - spinta:216_ - IVPK: denormalizuotų duomenų laukų palaikymas.
