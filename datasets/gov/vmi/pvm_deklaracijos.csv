@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vmi/pvm_deklaracijos,,,,,,,,,,,,Pridėtinės vertės mokesčio deklaracijų duomenų rinkinys,
 ,,,,,,,,,,,,,,
 ,,,,VtsFr0600Mainai,,,,,,,,,FR0600_DUOMENYS,
-,,,,,mokestinis_laikotarpis,Date,M,,,4,open,,Mokestinis laikotarpis iki (laikotarpio pabaigos data),
+,,,,,mokestinis_laikotarpis,date,M,,,4,open,,Mokestinis laikotarpis iki (laikotarpio pabaigos data),
 ,,,,,sekcija_pagal_ekonomines_veiklos_rusiu_klasifikatoriu,string,,,,2,open,,"Deklaracijoje nurodyta pagrindinė vykdomos veiklos rūšis pagal Ekonominės veiklos rūšių klasifikatorių, patvirtintą Statistikos departamento generalinio direktoriaus 2007 m. spalio 31 d. įsakymu Nr.DĮ-226 (Žin., 2007, Nr.119-4877, toliau - EVRK) ","Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis. Taip pat veikla nenustatoma, kai veiklos kodas nėra atpažįstamas."
 ,,,,,skyrius_pagal_ekonomines_veiklos_rusiu_klasifikatoriu,string,,,,2,open,,"Pagrindinė vykdomos veiklos rūšis pagal EVRK. Imama iš klasifikatoriaus, jei pavyko identifikuoti pagal deklaracijoje įrašytą kodą","Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis. Taip pat veikla nenustatoma, kai veiklos kodas nėra atpažįstamas."
 ,,,,,apskritis,string,,,,2,open,,Deklaracijai priskirtos apskrities pavadinimas,"Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis."
