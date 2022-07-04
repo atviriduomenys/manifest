@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nutraukimo_data,string,D,,,4,open,,Restruktūrizavimo proceso nutraukimo data,
 ,,,,,nutraukimo_priezastis,string,,,,2,open,,Restruktūrizavimo proceso nutraukimo priežastis,
 ,,,,,,comment,type,,"update(property: ""nutraukimo_priezastis@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,restrukturizavimo_pabaiga,string,date,D,,,4,open,,Restruktūrizavimo proceso baigimo data,
+,,,,,restrukturizavimo_pabaiga,date,D,,,4,open,,Restruktūrizavimo proceso baigimo data,
 ,,,,,,,,,,,,,,
 ,,,,RestrukturizavimoAtaskaitosFinansiniai,,,,,,2,,,,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/avnt/imoniu_bankrotas/BankrotoAtaskaitosFinansai"")",3,open,spinta:205,,
