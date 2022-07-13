@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,eilutes_nr_ffdata,integer,,,,2,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo avansinio NTM vertės (t. y. kai vertė kito metų eigoje, tai pildoma už visus mėnesius atskirai)"
 ,,,,,avansas_pozymis,string,,,,2,open,,Požymis nurodantis avansinio mokesčio suma už konkretų ketvirtį ar mėnesį,"Požymis, nurodantis ar avansinio mokesčio suma už NTM deklaracijoje nurodytą ketvirtį, ar už mėnesį"
-,,,,,avansas,number,,,,4,open,,Avansinio mokesčio suma už A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį,"Avansinio mokesčio suma už NTM deklaracijoje nurodytus metus, t. y. avansinio NTM suma už NTM deklaracijos KIT711A priedo A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį"
+,,,,,avansas,number,,,,2,open,,Avansinio mokesčio suma už A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį,"Avansinio mokesčio suma už NTM deklaracijoje nurodytus metus, t. y. avansinio NTM suma už NTM deklaracijos KIT711A priedo A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,SavivaldybesNtMokestis,,,,,,, ,,NT mokesčio duomenys pagal savivaldybes,
