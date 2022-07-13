@@ -70,7 +70,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vardas,string,,,,2,open,,vardas,Objekto pavadinimas
 ,,,,,info,string,,,,2,open,,info,Papildoma informacija apie objektą
 ,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
-,,,,,shape_area,number,m2,,,4,open,,shape_area,Objekto plotas
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
 ,,,,,,,,,,,,,,
 ,,,,PlotasRibos,,,,,,,,,PLOTAI_L,Sluoksnyje saugoma informacija apie žemės naudmenų ir vandens telkinių dengiamų teritorijų ribas
 ,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
@@ -98,7 +98,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
 ,,,,,pask,string,,,,2,open,,pask,"Pastato pagrindinė naudojimo paskirtis, kuri nustatoma vadovaujantis Nekilnojamojo turto kadastro duomenimis"
 ,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
-,,,,,shape_area,number,m2,,,4,open,,shape_area,Objekto plotas
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
 ,,,,,,,,,,,,,,
 ,,,,Bokstas,,,,,,,,,BOKSTAI,"Sluoksnyje saugoma informacija apie atskirai stovinčius bokštus ir kaminus, kurie negali būti išreikšti plotu"
 ,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
@@ -157,7 +157,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,index,string,,,,2,open,,index,Lapo numeris
 ,,,,,pavad,string,,,,2,open,,pavad,Lapo pavadinimas
 ,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
-,,,,,shape_area,number,m2,,,4,open,,shape_area,Objekto plotas
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
 ,,,,,,,,,,,,,,
 ,,,,Riba,,,,,,,,,RIBOS,Sluoksnyje saugoma informacija apie administracines ribas
 ,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
@@ -200,7 +200,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
 ,,,,,vardas,string,,,,2,open,,vardas,Vietovardis
 ,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
-,,,,,shape_area,number,m2,,,4,open,,shape_area,Objekto plotas
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
 ,,,,,,,,,,,,,,
 ,,,,MiskasRiba,,,,,,,,,MISKAS_L,"Sluoksnyje saugoma informacija apie miškų kvartalinių linijų ir proskynų ašines linijas, taip pat medžių juostas"
 ,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
@@ -313,4 +313,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adresas,string,,,,2,open,,adresas,Objekto adresas
 ,,,,,kodas,string,,,,2,open,,kodas,Kultūros vertybių registro kodas
 ,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
-,,,,,shape_area,number,m2,,,4,open,,shape_area,Objekto plotas
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
