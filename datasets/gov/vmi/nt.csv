@@ -45,7 +45,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,avansas,number,,,,4,open,,Avansinio mokesčio suma už A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį,"Avansinio mokesčio suma už NTM deklaracijoje nurodytus metus, t. y. avansinio NTM suma už NTM deklaracijos KIT711A priedo A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
-,,,,SavivaldybeNtMokestis,,,,,,, ,,NT mokesčio duomenys pagal savivaldybes,
+,,,,SavivaldybeNtMokestis,,,,,,,,,NT mokesčio duomenys pagal savivaldybes,
 ,,,,,id,integer,,,,2,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
