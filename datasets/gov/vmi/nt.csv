@@ -22,9 +22,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
 ,,,,,avansinio_mok_suma_1k_agr,number,,,,2,open,,Avansinio mokesčio suma už 1 ketvirtį,"Bendra avansinio mokesčio suma už 1 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį sausio–kovo mėn.)"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,avansinio_mok_suma_2k_agr,number,,,,4,open,,Avansinio mokesčio suma už 2 ketvirtį,"Bendra avansinio mokesčio suma už 2 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį balandžio–birželio mėn.)"
+,,,,,avansinio_mok_suma_2k_agr,number,,,,2,open,,Avansinio mokesčio suma už 2 ketvirtį,"Bendra avansinio mokesčio suma už 2 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį balandžio–birželio mėn.)"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,avansinio_mok_suma_3k_agr,number,,,,4,open,,Avansinio mokesčio suma už 3 ketvirtį,"Bendra avansinio mokesčio suma už 3 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį liepos–rugsėjo mėn.)"
+,,,,,avansinio_mok_suma_3k_agr,number,,,,2,open,,Avansinio mokesčio suma už 3 ketvirtį,"Bendra avansinio mokesčio suma už 3 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį liepos–rugsėjo mėn.)"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,AvansinisNtMokestis,,,,,,,,,Avansinio NT mokesčio duomenys,
@@ -53,7 +53,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,tarifas,number,,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
-,,,,,metai,integer,,,,4,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,
+,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
 ,,,,,nt_verte_nuosavo,number,,,,2,open,,"S1 laukelyje nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal S2 laukelyje nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną","Nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną, t. y. NTM deklaracijos KIT711S priedo S4 laukelis"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
