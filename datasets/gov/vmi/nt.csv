@@ -71,7 +71,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,sav_mokescio_suma,number,,,,2,open,,"S17: visa mokesčio suma, tenkanti S1 laukelyje nurodytai savivaldybei","Visa mokesčio suma, tenkanti nurodytai savivaldybei, t. y. NTM deklaracijos KIT711S priedo S17 laukelis"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
-,,,,,eilutes_nr_ffdata,integer,,,,,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo NT mokestinės vertės"
+,,,,,eilutes_nr_ffdata,integer,,,,2,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo NT mokestinės vertės"
 ,,,,,nt_tipas,integer,,,,3,open,,Apmokestinamo nekilnojamojo turto priklausomybė: nuosavas ar perimtas,"Apmokestinamo NT priklausomybė: nuosavas ar perimtas, kai deklaruojamas NT vertės kitimas mėnesiais"
 ,,,,,,enum,,1,"""nuosavas""",,,,Nuosavas,
 ,,,,,,,,2,"""perimtas""",,,,Perimtas,
