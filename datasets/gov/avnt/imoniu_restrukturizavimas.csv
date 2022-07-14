@@ -46,7 +46,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""eil_nr"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,eil_nr,integer,,,,2,open,,Eilutės numeris,
 ,,,,,,comment,type,,"update(type: """")",4,open,spinta:205,,
-,,,,,restrukt_metai,integer,,,,2,open,,Restruktūrizavimo bylos iškėlimo metai,
+,,,,,restrukt_metai,string,,,,2,open,,Restruktūrizavimo bylos iškėlimo metai,
 ,,,,,,comment,type,,"update(property: ""metai"", type: """")",4,open,spinta:205,,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
 ,,,,,turtas_proceso_pradzioje,number,,,,2,open,,Turtas proceso pradžioje,
