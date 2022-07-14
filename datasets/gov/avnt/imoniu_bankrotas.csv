@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""savivaldybe.apskritis.pavadinimas"", type: """")",4,open,spinta:216,,
 ,,,,,teisine_forma,string,,,,2,open,,Rūšis (teisinė forma),
 ,,,,,,comment,type,,"update(property: ""form_pavadinimas"", type: """")",4,open,spinta:216,,
-,,,,,veiklos_kodas,integer,,,,2,open,,Veiklos kodas,
+,,,,,veiklos_kodas,string,,,,2,open,,Veiklos kodas,
 ,,,,,,comment,type,,"create(property: ""veikla"", type: ""ref"", ref: ""datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis"")",4,open,vadovas:dsa/ref.html,,
 ,,,,,,comment,type,,"update(property: ""veikla.kodas"", type: """")",4,open,spinta:216,,
 ,,,,,veikla,string,,,,2,open,,Veiklos pavadinimas,
