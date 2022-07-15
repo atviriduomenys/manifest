@@ -49,7 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,SavivaldybeNtMokestis,,,,,,3,,,NT mokesčio duomenys pagal savivaldybes,
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,,comment,ref,,"update(model: ""SavivaldybesNtMokestis"")",,,,
+,,,,,,comment,ref,,"update(model: ""SavivaldybesNtMokestis"")",,,,,
 ,,,,,id,integer,,,,2,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
