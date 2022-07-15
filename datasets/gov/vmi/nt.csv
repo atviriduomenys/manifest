@@ -1,10 +1,13 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmi/nt,,,,,,,,,,,,Nekilnojamo turto mokesčio duomenų rinkinys,Nekilnojamo turto mokesčio (toliau - NTM) duomenų rinkinys
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,BendrasNtMokestis,,,,,,2,,,NT mokesčio mokėtojo ir NT bendri duomenys,Nekilnojamojo turto (toliau - NT) mokesčio mokėtojo ir NT bendri duomenys
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,2,open,,Eilutės numeris,
-,,,,,moketojo_tipas,integer,,,,3,open,,"Požymis, ar fizinio asmens, ar juridinio asmens deklaracija",
+,,,,,id,integer,,,,4,open,,Eilutės numeris,
+,,,,,moketojo_tipas,integer,,,,4,open,,"Požymis, ar fizinio asmens, ar juridinio asmens deklaracija",
 ,,,,,,enum,,1,"""fizinis asmuo""",,,,Fizinis asmuo,
 ,,,,,,,,2,"""juridinis asmuo""",,,,Juridinis asmuo,
 ,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,NTM deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai
@@ -29,34 +32,39 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,AvansinisNtMokestis,,,,,,2,,,Avansinio NT mokesčio duomenys,
-,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,2,open,,Eilutės numeris,
+,,,,,,comment,base,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
+,,,,,id,integer,,,,4,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
-,,,,,tarifas,number,,,,2,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
+,,,,,tarifas,number,,,,3,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
+,,,,,,comment,ref,,"update(ref: ""%"")",4,open,"spinta:214",,
 ,,,,,avansinio_ntm_metai,integer,,,,4,open,,Avansinio NTM metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
 ,,,,,pozymis_nt_verte,string,,,,2,open,,Požymis nurodantis NT vertę  nurodytais metais ar mėnesį,"Požymis, nurodantis ar NT vertė deklaruota už visus metus, ar NT vertė deklaruota pamėnesiui  "
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,nt_verte,number,,,,4,open,,Nuosavo NT vertė nurodytų metų sausio 1 d. arba nurodyto mėnesio 1 d.,"Nuosavo NT vertė avansinio NTM metų sausio 1 d. arba nurodyto mėnesio 1 d. (pildo tik juridiniai asmenys, kai apskaičiuota už visus metus NTM suma viršija 500 eurų, priešingu atveju nepildoma)"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,eilutes_nr_ffdata,integer,,,,2,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo avansinio NTM vertės (t. y. kai vertė kito metų eigoje, tai pildoma už visus mėnesius atskirai)"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,avansas_pozymis,string,,,,2,open,,Požymis nurodantis avansinio mokesčio suma už konkretų ketvirtį ar mėnesį,"Požymis, nurodantis ar avansinio mokesčio suma už NTM deklaracijoje nurodytą ketvirtį, ar už mėnesį"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,avansas,number,,,,4,open,,Avansinio mokesčio suma už A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį,"Avansinio mokesčio suma už NTM deklaracijoje nurodytus metus, t. y. avansinio NTM suma už NTM deklaracijos KIT711A priedo A3 laukelyje įrašytų metų konkretų ketvirtį ar mėnesį"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,SavivaldybeNtMokestis,,,,,,3,,,NT mokesčio duomenys pagal savivaldybes,
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,,comment,ref,,"update(model: ""SavivaldybesNtMokestis"")",,,,,
-,,,,,id,integer,,,,2,open,,Eilutės numeris,
+,,,,,id,integer,,,,4,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
-,,,,,tarifas,number,,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
+,,,,,tarifas,number,,,,3,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
+,,,,,,comment,ref,,"update(ref: ""%"")",4,open,"spinta:214",,
 ,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
 ,,,,,nt_verte_nuosavo,number,,,,2,open,,"S1 laukelyje nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal S2 laukelyje nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną","Nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną, t. y. NTM deklaracijos KIT711S priedo S4 laukelis"
@@ -76,18 +84,19 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_mokescio_suma,number,,,,2,open,,"S17: visa mokesčio suma, tenkanti S1 laukelyje nurodytai savivaldybei","Visa mokesčio suma, tenkanti nurodytai savivaldybei, t. y. NTM deklaracijos KIT711S priedo S17 laukelis"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,eilutes_nr_ffdata,integer,,,,2,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo NT mokestinės vertės"
-,,,,,nt_tipas,integer,,,,3,open,,Apmokestinamo nekilnojamojo turto priklausomybė: nuosavas ar perimtas,"Apmokestinamo NT priklausomybė: nuosavas ar perimtas, kai deklaruojamas NT vertės kitimas mėnesiais"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,nt_tipas,integer,,,,4,open,,Apmokestinamo nekilnojamojo turto priklausomybė: nuosavas ar perimtas,"Apmokestinamo NT priklausomybė: nuosavas ar perimtas, kai deklaruojamas NT vertės kitimas mėnesiais"
 ,,,,,,enum,,1,"""nuosavas""",,,,Nuosavas,
 ,,,,,,,,2,"""perimtas""",,,,Perimtas,
 ,,,,,men_sk,integer,,,,2,open,,"S7: Mėnesių skaičius, kuriais mokestis skaičiuojamas nuo pasikeitusios vertės","Mėnesių skaičius, kuriais mokestis skaičiuojamas nuo pasikeitusios vertės"
 ,,,,,nt_vertes_pokytis,number,,,,2,open,,S5: S4 laukelyje nurodyto apmokestinamo turto vertės padidėjimas / sumažėjimas (sumažėjimas įrašomas su minuso ženklu),Nurodyto apmokestinamo turto vertės padidėjimas / sumažėjimas (sumažėjimas įrašomas su minuso ženklu)
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,isigijimas_netekimas,string,,,,3,open,,S6: Vertės kitimo priežastys. Įsigijimas / netekimas,Vertės kitimo priežastys. Įsigijimas / netekimas
+,,,,,isigijimas_netekimas,string,,,,4,open,,S6: Vertės kitimo priežastys. Įsigijimas / netekimas,Vertės kitimo priežastys. Įsigijimas / netekimas
 ,,,,,,enum,,T,"""Taip""",,,,Vertė kito dėl įsigijimo/netekimo,
 ,,,,,,,,N,"""Ne""",,,,Vertė nekito dėl įsigijimo/netekimo,
-,,,,,rekonstrukcija,string,,,,3,open,,S6: Vertės kitimo priežastys. Rekonstrukcija,Vertės kitimo priežastys. Rekonstrukcija
+,,,,,rekonstrukcija,string,,,,4,open,,S6: Vertės kitimo priežastys. Rekonstrukcija,Vertės kitimo priežastys. Rekonstrukcija
 ,,,,,,enum,,T,"""Taip""",,,,Vertė kito dėl rekonstrukcijos,
 ,,,,,,,,N,"""Ne""",,,,Vertė nekito dėl rekonstrukcijos,
-,,,,,kita,string,,,,3,open,,S6: Vertės kitimo priežastys. Kita,Vertės kitimo priežastys. Kita
+,,,,,kita,string,,,,4,open,,S6: Vertės kitimo priežastys. Kita,Vertės kitimo priežastys. Kita
 ,,,,,,enum,,T,"""Taip""",,,,Vertė kito dėl kitų priežasčių,
 ,,,,,,,,N,"""Ne""",,,,Vertė nekito dėl kitų priežasčių,
