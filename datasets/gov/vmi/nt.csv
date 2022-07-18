@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,1,"""fizinis asmuo""",,,,Fizinis asmuo,
 ,,,,,,,,2,"""juridinis asmuo""",,,,Juridinis asmuo,
 ,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,NTM deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,apskaiciuota_suma,number,,,,2,open,,Apskaičiuota mokesčio suma (KIT711S priedo visų lapų S15 laukelių suma),"Apskaičiuota mokesčio suma (bendra mokesčio suma už visose savivaldybėse turimą NT dar neįvertinus gautų lengvatų), t. y. NTM deklaracijos KIT711S priedo visų lapų S15 laukelių suma"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,lengvata,number,,,,2,open,,Savivaldybės (-ių) suteikta mokesčio lengvata (priedo KIT711S lapų S16 laukelių suma),"Bendra savivaldybės (-ių) suteikta mokesčio lengvata (visose savivaldybėse gautų lengvatų suma), t. y. NTM deklaracijos KIT711S priedo visų lapų S16 laukelių suma"
@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veiklos_pabaiga,date,D,,,4,open,,Veiklos pabaigos data,"Veiklos pabaigos data (nurodytą mokestinį laikotarpį baigia veiklą ir teikia paskutinio mokestinio laikotarpio deklaraciją, pildo tik juridiniai asmenys)"
 ,,,,,proceduros_pradzia,date,D,,,4,open,,Procedūros pradžios data,"Procedūros pradžios data (nurodytą mokestinį laikotarpį pradeda bankroto ar restruktūrizavimo procedūras, pildo tik juridiniai asmenys)"
 ,,,,,avansinio_mokescio_metai,integer,,,,2,open,,Avansinio mokesčio metai,
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,avansinio_mok_suma_1k_agr,number,,,,2,open,,Avansinio mokesčio suma už 1 ketvirtį,"Bendra avansinio mokesčio suma už 1 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį sausio–kovo mėn.)"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,avansinio_mok_suma_2k_agr,number,,,,2,open,,Avansinio mokesčio suma už 2 ketvirtį,"Bendra avansinio mokesčio suma už 2 ketvirtį (bendra NT avansinio mokesčio suma, kurią turi sumokėti mokėtojas už visose savivaldybėse deklaruotą avansinį mokestį balandžio–birželio mėn.)"
@@ -32,17 +32,16 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,AvansinisNtMokestis,,,,,,2,,,Avansinio NT mokesčio duomenys,
-,,,,,,comment,base,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
+,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,id,integer,,,,4,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
-,,,,,tarifas,number,,,,3,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
-,,,,,,comment,ref,,"update(ref: ""%"")",4,open,"spinta:214",,
+,,,,,tarifas,number,%,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
 ,,,,,avansinio_ntm_metai,integer,,,,4,open,,Avansinio NTM metai,
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,pozymis_nt_verte,string,,,,2,open,,Požymis nurodantis NT vertę  nurodytais metais ar mėnesį,"Požymis, nurodantis ar NT vertė deklaruota už visus metus, ar NT vertė deklaruota pamėnesiui  "
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,nt_verte,number,,,,4,open,,Nuosavo NT vertė nurodytų metų sausio 1 d. arba nurodyto mėnesio 1 d.,"Nuosavo NT vertė avansinio NTM metų sausio 1 d. arba nurodyto mėnesio 1 d. (pildo tik juridiniai asmenys, kai apskaičiuota už visus metus NTM suma viršija 500 eurų, priešingu atveju nepildoma)"
@@ -63,10 +62,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
-,,,,,tarifas,number,,,,3,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
-,,,,,,comment,ref,,"update(ref: ""%"")",4,open,"spinta:214",,
+,,,,,tarifas,number,%,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
 ,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,nt_verte_nuosavo,number,,,,2,open,,"S1 laukelyje nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal S2 laukelyje nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną","Nurodytoje savivaldybėje esančio nuosavo NT, apmokestinamo pagal nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną, t. y. NTM deklaracijos KIT711S priedo S4 laukelis"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,nt_verte_perimto,number,,,,2,open,,"S1 laukelyje nurodytoje savivaldybėje esančio perimto NT, apmokestinamo pagal S2 laukelyje nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną","Nurodytoje savivaldybėje esančio perimto NT, apmokestinamo pagal nurodytą tarifą, vertė mokestinio laikotarpio pirmą dieną, t. y. NTM deklaracijos KIT711S priedo S9 laukelis"
