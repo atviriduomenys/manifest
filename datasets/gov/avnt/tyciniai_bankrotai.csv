@@ -3,15 +3,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,TycinisBankrotas,,,,,,,,,Duomenys apie tyčinius bankrotus,
 ,,,,,eil_nr,integer,,,,4,open,,Eilės numeris,
-
 ,,,,,imones_kodas,string,,,,2,open,,Įmonės kodas,
-
 ,,,,,imones_pavadinimas,string,,,,2,open,,Įmonės pavadinimas,
-
 ,,,,,bankroto_pradzia,date,D,,,4,open,,Bankroto proceso pradžios data,
 ,,,,,apygardos_teismas,string,,,,2,open,,Apygardos teismo pavadinimas,
-
 ,,,,,likvidavimo_data,date,D,,,4,open,,Likvidavimo data,
-,,,,,tycinis_bankrotas,date,D,,,4,open,,Pripažinti bankrotą tyčiniu data, "Data, kuomet teismo sprendimu bankrotas pripažintas tyčiniu"
+,,,,,tycinis_bankrotas,date,D,,,4,open,,Pripažinti bankrotą tyčiniu data,"Data, kuomet teismo sprendimu bankrotas pripažintas tyčiniu"
 ,,,,,sprendimas_del_pabaigos,date,D,,,4,open,,Sprendimo dėl įmonės veiklos pabaigos data,
 ,,,,,isregistravimo_data,date,D,,,4,open,,Įmonės išregistravimo data,
