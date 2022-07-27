@@ -59,7 +59,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,darbuot_sk,string,,,,4,open,,Darbuotojų skaičius,
 ,,,,,karviu_sk,string,,,,4,open,,Karvių skaičius,
 ,,,,,,,,,,,,,,
-,,,,ZemesUkioTaskai2020,,,objectid,,,4,open,,"Žemės ūkio surašymo taškiniai duomenys
+,,,,ZemesUkioTaskai2020,,,,,,4,open,,"Žemės ūkio surašymo taškiniai duomenys
 ",
 ,,,,,u_vld_lytis,integer,,,,4,open,,"Ūkio valdytojo lytis (1 – vyras"","" 2 – moteris)",
 ,,,,,,enum,,,1,,,,Vyras,
