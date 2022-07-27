@@ -90,7 +90,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""15""",,,,"Nežinoma"","" bet daugiau kaip 10 asmenų",
 ,,,,,,,,,"""99""",,,,Netaikoma ,
 ,,,,,countryw,string,,,,3,open,,"Šalis"","" kurioje yra darbovietė",
-,,,,,,enum,,,LT,,,,Lietuva,
+,,,,,,enum,,,"""LT""",,,,Lietuva,
 ,,,,,,,,,"""00""",,,,Kita šalis,
 ,,,,,,,,,"""99""",,,,Netaikoma ,
 ,,,,,ystartwk,integer,,,,3,open,,"Metai"","" kuriais asmuo pradėjo dirbti šioje darbovietėje arba kaip savarankiškai dirbantis",
