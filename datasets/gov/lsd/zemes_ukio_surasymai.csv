@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sen_pav,string,,,,2,open,,Seniūnijos pavadinimas,
 ,,,,,kiauliu_sk,string,,,,4,open,,Kiaulių skaičius seniūnijoje,
 ,,,,,darbuot_sk,string,,,,4,open,,Darbuotojų skaičius,
-,,,,,objectid_1,integer,,,,4,open,,Objekto įdentifikatorius,
+,,,,,objectid,integer,,,,4,open,,Objekto įdentifikatorius,
 ,,,,,gyv_pav,string,,,,2,open,,Gyvenvietės pavadinimas,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,galviju_sk,string,,,,4,open,,Galvijų skaičius,
