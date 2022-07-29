@@ -27,6 +27,7 @@ datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
 datasets/gov/lsd/namu_ukio_biudzetas.csv
 datasets/gov/lsd/gyventojai_bustas.csv
+datasets/gov/lsd/gyventoju_uzimtumas.csv
 datasets/gov/lsd/ukio_subjektai.csv
 datasets/gov/lsd/zemes_ukio_surasymai.csv
 datasets/gov/lsd/covid19.csv
