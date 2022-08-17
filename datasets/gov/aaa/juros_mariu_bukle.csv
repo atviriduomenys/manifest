@@ -1,6 +1,6 @@
 ﻿id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;Description
 ;datasets/gov/aaa/juros_mariu_bukle;;;;;;;;;;;;;
-;;;;;;csv;;https://example.com/{}.csv;"tabular(sep: "";"")";;;;;
+;;;;;;csv;;;"tabular(sep: "";"")";;;;;
 ;;;;KM_BJ_būklė_2020-2016;;;;KM_BJ_būklė_2020-2016;;;;;Kuršių marių ir Baltijos jūros būklė 2020-2016;
 ;;;;;;string;;Objekto pavadinimas;;;open;;"""Objekto, kuriam priklauso vandens telkiniai, pavadinimas""";"""Objektai, kuriems priskiriami vandens telkiniai: Kuršių marios; Baltijos jūra"""
 ;;;;;;string;;Vandens telkinio pavadinimas;;;open;;"""Vandens telkinio, kuriame vertinama būklė, pavadinimas""";
