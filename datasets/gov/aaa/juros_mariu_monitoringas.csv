@@ -67,7 +67,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,Taksonas (rūšis),string,,Taksonas (rūšis),,,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neįdentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
 ,,,,,Nustatymo žymė,string,,Nustatymo žymė,,,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, CF, CPX. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies, CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione."
 ,,,,,Gausumo koeficientas,number,,Gausumo koeficientas,,,open,,Gausumo koeficientas,
-,,,,,Individų grupės eil. nr.,number,,Individų grupės eil. nr.,,,open,,Individų grupės eilės numeris,Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai.
+,,,,,Individų grupės eil. nr.,number,,Individų grupės eil. nr.,,,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,"Gausumas, tūkst. vnt. litre",number,,"Gausumas, tūkst. vnt. litre",,,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas tūkstančiais vienetų litre",
 ,,,,,Tyrimų metodas,string,,Tyrimų metodas,,,open,,Tyrimų metodas,Duomenų lentelėje R stulpelyje nurodytu metodu tiriamas fitoplanktono rūšių gausumas.
 ,,,,,Dydžių klasė,number,,Dydžių klasė,,,open,,Dydžių klasė,
@@ -93,7 +93,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,Paėmimo metodas,string,,Paėmimo metodas,,,open,,Mėginio paėmimo metodas,
 ,,,,,Substratai / biotopai,string,,Substratai / biotopai,,,open,,Vyraujantis gruntas dugne,
 ,,,,,"Gausumas, vnt./m2",number,,"Gausumas, vnt./m2",,,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kvadratiniame metre",
-,,,,,"Biomasė",  g/m2,number,,"Biomasė,  g/m2",,,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
+,,,,,"Biomasė,  g/m2",number,,"Biomasė,  g/m2",,,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
 ,,,,,Tyrimų metodas,string,,Tyrimų metodas,,,open,,Tyrimų metodas,
 ,,,,,Pastabos (papildomas taksonas),string,,Pastabos (papildomas taksonas),,,open,,Pateikiama su tyrimu susijusi svarbi informacija,
 ,,,,,,,,,,,,,,
@@ -112,7 +112,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,Individų klasė,string,,Individų klasė,,,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
 ,,,,,Taksonas (rūšis),string,,Taksonas (rūšis),,,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neįdentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
 ,,,,,Nustatymo žymė,string,,Taksonas (rūšis),,,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis."
-,,,,,Individų grupės eil. nr.,number,,Individų grupės eil. nr.,,,open,,"Individų grupės eilės numeris,Eilės numerį įgija rūšis, kai  mėginyje nustatomos skirtingos rūšies vystymosi stadijos, kai rūšis identifikuojama iki lyties - išskiriama į vyriškos lyties ir moteriškos lyties individus. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
+,,,,,Individų grupės eil. nr.,number,,Individų grupės eil. nr.,,,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos skirtingos rūšies vystymosi stadijos, kai rūšis identifikuojama iki lyties - išskiriama į vyriškos lyties ir moteriškos lyties individus. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,Lytis / Vystymosi stadija,string,,Lytis / Vystymosi stadija,,,open,,Taksono (rūšies) lytis arba vystymosi stadija,
 ,,,,,"Gausumas, vnt./m3",number,,"Gausumas, vnt./m3",,,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kubiniame metre",
 ,,,,,"Biomasė,  mg/m3",number,,"Biomasė,  mg/m3",,,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais kubiniame metre",
