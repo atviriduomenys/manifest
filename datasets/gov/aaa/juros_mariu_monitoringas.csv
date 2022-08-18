@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,MV šiaurės koordinatė,number,,MV šiaurės koordinatė,,,open,,Monitoringo vietos šiaurės koordinatė (LKS-94),
 ,,,,,MV rytų koordinatė,number,,MV rytų koordinatė,,,open,,Monitoringo vietos rytų koordinatė (LKS-94),
 ,,,,,Tyrimų objektas,string,,Tyrimų objektas,,,open,,Tyrimų objektas,"Tyrimų objektas visiems Kuršių marių ir Baltijos jūros tyrimams, išskyrus Specifinių teršalų tyrimus biotoje -  paviršinis vanduo."
-,,,,,Vandens horizontas,string,,Vandens horizontas,,,open,,"Vandens sluoksnis, iš kurio paimtas mėginys,"Horizontas/Sluoksnis: Paviršinis sluoksnis, Tarpinis sluoksnis, Priedugnis, Integruotas, Sudėtinis. Monitoringo vietoje gali būti keli Tarpiniai sluoksniai, priklausomai nuo jos gylio."
+,,,,,Vandens horizontas,string,,Vandens horizontas,,,open,,"Vandens sluoksnis, iš kurio paimtas mėginys","Horizontas/Sluoksnis: Paviršinis sluoksnis, Tarpinis sluoksnis, Priedugnis, Integruotas, Sudėtinis. Monitoringo vietoje gali būti keli Tarpiniai sluoksniai, priklausomai nuo jos gylio."
 ,,,,,Vandens gylis, m,number,,Vandens gylis, m,,,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,Parametro pavadinimas,string,,Parametro pavadinimas,,,open,,Tiriamo parametro pavadinimas,
 ,,,,,Mažiau kiekybinio įvertinimo ribos,string,,Mažiau kiekybinio įvertinimo ribos,,,open,,"Simbolis ""<"", žymintis, kad rezultatas yra žemiau kiekybinio įvertinimo ribos",
