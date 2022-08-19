@@ -69,12 +69,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gausumo_koef,number,,Gausumo koeficientas,,,open,,Gausumo koeficientas,
 ,,,,,individu_gr_eil_nr,number,,Individų grupės eil. nr.,,,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,gausumas_tukst_vnt_litre,number,,"Gausumas, tūkst. vnt. litre",,,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas tūkstančiais vienetų litre",
-,,,,,tyrimu_metodas,string,,Tyrimų metodas,,,open,,Tyrimų metodas,Duomenų lentelėje R stulpelyje nurodytu metodu tiriamas fitoplanktono rūšių gausumas.
+,,,,,tyrimu_metodas_r,string,,Tyrimų metodas,,,open,,Tyrimų metodas,Duomenų lentelėje R stulpelyje nurodytu metodu tiriamas fitoplanktono rūšių gausumas.
 ,,,,,dydziu_klase,number,,Dydžių klasė,,,open,,Dydžių klasė,
 ,,,,,dydziu_interval,string,,Dydžių intervalas,,,open,,Dydžių intervalas,
 ,,,,,vnt_turis,number,,Vieneto tūris,,,open,,Vieneto tūris,
 ,,,,,biomase_mg_litre,number,,"Biomasė, mg/l",,,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais litre",
-,,,,,tyrimu_metodas,string,,Tyrimų metodas,,,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė.
+,,,,,tyrimu_metodas_w,string,,Tyrimų metodas,,,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė.
 ,,,,,,,,,,,,,,
 ,,,,Zoobentosas,,,,,,,,,Kuršių marių ir Baltijos jūros zoobentoso tyrimų duomenys,
 ,,,,,tyrimo_reg_nr,string,,Tyrimo registracijos nr.,,,open,,Tyrimo registracijos numeris,
