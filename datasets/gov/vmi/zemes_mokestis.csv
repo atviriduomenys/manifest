@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,sklyp_plotas,number,ha,,,4,open,,Apmokestinamų žemės sklypų plotas  (Priedo 5 stulp.suma)
 ,,,,,,sklyp_verte,number,,,,2,open,,Apmokestinamų žemės sklypų vertė (Priedo 6 stulp. suma)
 ,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
-,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 ,,,,,Priedai,,,,,,,,,Žemės mokesčio deklaracijų priedų duomenys
 ,,,,,,eil_nr,integer,,,,2,open,,Deklaracijos ID (atitinka -ID  lentelėje KIT703)
 ,,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
