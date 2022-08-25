@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,,Deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys
-,,,,,,eil_nr,integer,,,,2,open ,,Eilutės numeris
+,,,,Deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys,
+,,,,,,eil_nr,integer,,,,2,open ,,Eilutės numeris,
 ,,,,,,mm_sav_kodas,integer,,,,2,open,,Mokesčių mokėtojo savivaldybės kodas
 ,,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
 ,,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",
