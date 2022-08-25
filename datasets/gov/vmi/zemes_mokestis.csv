@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mm_sav_kodas,integer,,,,2,open,,Mokesčių mokėtojo savivaldybės kodas,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
-,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis),,
+,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis),
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,tvirtinimo_data,datetime,,,,3,open,,Deklaracijos tvirtinimo data (Suformavimo data deklaracijoje),
 ,,,,,apsk_suma,number,,,,2,open,,Apskaičiuota žemės mokesčio suma, 
