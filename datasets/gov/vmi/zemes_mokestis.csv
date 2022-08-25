@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title
 ,datasets/gov/vmi/zemes_mokestis,,,,,,,,,,,,Žemės mokesčio deklaracijų duomenys
 ,,,,,,,,,,,,,
-,,,,deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys
+,,,,Deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys
 ,,,,,eil_nr,integer,,,,2,open ,,Eilutės numeris
 ,,,,,mm_sav_kodas,integer,,,,2,open,,Mokesčių mokėtojo savivaldybės kodas
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sklyp_verte,number,,,,2,open,,Apmokestinamų žemės sklypų vertė (Priedo 6 stulp. suma)
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
 ,,,,,,,,,,,,,
-,,,,priedai,,,,,,,,,Žemės mokesčio deklaracijų priedų duomenys
+,,,,Priedai,,,,,,,,,Žemės mokesčio deklaracijų priedų duomenys
 ,,,,,eil_nr,integer,,,,2,open,,Deklaracijos ID (atitinka -ID  lentelėje KIT703)
 ,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,
