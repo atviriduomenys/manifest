@@ -1,0 +1,291 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/giscentras/grpk,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Kelias,,,,,,,,,KELIAI,Sluoksnyje saugoma informacija apie kelių ir gatvių ašines linijas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,,comment,type,,"update(base: ""Georeferencinis"", type: """")",4,open,"spinta:205,vadovas:dsa/dimensijos.html#modelio-baze",,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,4,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,4,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,meta,integer,,,,4,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,enumeris,string,,,,2,open,,enumeris,"Kelio ar gatvės, sutampančios su Europine magistrale, numeris"
+,,,,,numeris,string,,,,2,open,,numeris,"Valstybinės reikšmės kelio ar gatvės, sutampančios su valstybinės reikšmės keliu, numeris"
+,,,,,vardas,string,,,,2,open,,vardas,Gatvės pavadinimas (jei nustatytas)
+,,,,,danga,string,,,,2,open,,danga,"Kelio, gatvės, taip pat tilto, viršutinės dangos medžiaga"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,jplotis,number,m,,,4,open,,jplotis,Važiuojamosios kelio dangos plotis
+,,,,,plotis,number,m,,,4,open,,plotis,Bendras kelio plotis (su kelkraščiais)
+,,,,,kategor,string,,,,2,open,,kategor,"Valstybinės ar vietinės reikšmės kelio ar gatvės, sutampančios su valstybinės ar vietinės reikšmės keliu, kategorija (jei nustatyta)"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,lygmuo,integer,,,,2,open,,lygmuo,Kelio lygis žemės paviršiaus atžvilgiu
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,paskirtis,string,,,,2,open,,paskirtis,"Kelio, gatvės tipas, paskirtis"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,Gelezinkelis,,,,,,,,,GELEZIN,Sluoksnyje saugoma informacija apie geležinkelio vėžės ašines linijas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,info,string,,,,2,open,,info,Paaiškinamoji informacija
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,lygmuo,integer,,,,2,open,,lygmuo,Geležinkelio lygis žemės paviršiaus atžvilgiu
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,tipas,integer,,,,2,open,,tipas,Stoties geležinkelio kelio tipas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,gkategor,integer,,,,2,open,,gkategor,Geležinkelio bėgių kelio svarba geležinkelių tinkle
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,HidrografijaLinija,,,,,,,,,HIDRO_L,"Sluoksnyje saugoma informacija apie upių, upelių, kanalų ir melioracijos griovių ašines linijas"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,graktas,string,,,,2,open,,graktas,Vandentakio kodas pagal Lietuvos Respublikos upių klasifikatorių.
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,tipas,integer,,,,2,open,,tipas,Vandentakio tipas (įvedama skaitinė reikšmė)
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,vardas,string,,,,2,open,,vardas,Hidrografijos objekto pavadinimas
+,,,,,plotis,number,m,,,4,open,,plotis,Hidrografijos objekto plotis
+,,,,,plotis_zp,number,m,,,4,open,,plotis_zp,Hidrografijos objekto plotis pagal VĮ Valstybės žemės fondo (buv. VĮ Valstybinio žemėtvarkos instituto) archyvines ūkio horizontalinės nuotraukos M 1:10 000 planus (originalai lavsane)
+,,,,,laivyb,string,,,,2,open,,laivyb,Laivybinė upė/kanalas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,PlotasVandensTelkinys,,,,,,,,,PLOTAI,Sluoksnyje saugoma informacija apie vandens telkinių dengiamas teritorijas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,graktas,string,,,,2,open,,graktas,Tvenkinio kodas pagal Lietuvos Respublikos tvenkinių klasifikatorių arba ežero kodas pagal Lietuvos Respublikos ežerų klasifikatorių
+,,,,,vardas,string,,,,2,open,,vardas,Objekto pavadinimas
+,,,,,info,string,,,,2,open,,info,Papildoma informacija apie objektą
+,,,,,,comment,type,,"update(property: ""info@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,PlotasUpeKeliasGelezinkelis,,,,,,,,,PLOTAI_BUF,"Sluoksnyje saugoma informacija apie upių,  kelių ir geležinkelių menamas teritorijas"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,vardas,string,,,,2,open,,vardas,Objekto pavadinimas
+,,,,,info,string,,,,2,open,,info,Papildoma informacija apie objektą
+,,,,,,comment,type,,"update(property: ""info@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,PlotasZemesNaudmuo,,,,,,,,,PLOTAI_SD,Sluoksnyje saugoma informacija apie žemės naudmenų dengiamas teritorijas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,vardas,string,,,,2,open,,vardas,Objekto pavadinimas
+,,,,,info,string,,,,2,open,,info,Papildoma informacija apie objektą
+,,,,,,comment,type,,"update(property: ""info@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,PlotasRiba,,,,,,,,,PLOTAI_L,Sluoksnyje saugoma informacija apie žemės naudmenų ir vandens telkinių dengiamų teritorijų ribas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,lin_tipas,string,,,,2,open,,lin_tipas,Objekto ribos tipas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,medziaga,string,,,,2,open,,medziaga,Krantinės medžiagos tipas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,Pastatas,,,,,,,,,PASTAT,Sluoksnyje saugoma informacija apie aiškiai atpažįstamų pastatų ir statinių dengiamą teritoriją
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,pask,string,,,,2,open,,pask,"Pastato pagrindinė naudojimo paskirtis, kuri nustatoma vadovaujantis Nekilnojamojo turto kadastro duomenimis"
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,Bokstas,,,,,,,,,BOKSTAI,"Sluoksnyje saugoma informacija apie atskirai stovinčius bokštus ir kaminus, kurie negali būti išreikšti plotu"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,,,,,,,,,,
+,,,,Aukstis,,,,,,,,,AUKSTIS,Sluoksnyje saugoma informacija apie žemės paviršiaus taškus
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,z,number,m,,,4,open,,z,"Žemės paviršiaus taško normalinis aukštis LAS07 aukščių sistemoje, m (jei nustatytas)"
+,,,,,z_bas77,number,m,,,4,open,,z_bas77,"Žemės paviršiaus taško normalinis aukštis Baltijos aukščių sistemoje (toliau  BAS77 aukščių sistema), m (jei nustatytas)"
+,,,,,,,,,,,,,,
+,,,,Lapas,,,,,,,,,LAPAI,Sluoksnyje saugoma informacija apie žemėlapio M1:10000 nomenklatūrinio skaitymo lapus LKS-94 koordinačių sistemoje
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,sistema,string,,,,4,open,,sistema,Koordinačių sistemos pavadinimas
+,,,,,index,string,,,,4,open,,index,Lapo numeris
+,,,,,pavad,string,,,,4,open,,pavad,Lapo pavadinimas
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,Riba,,,,,,,,,RIBOS,Sluoksnyje saugoma informacija apie administracines ribas
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,4,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,vardas,string,,,,2,open,,vardas,"Valstybės, su kuria yra siena, pavadinimas"
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,VietovardisTaskas,,,,,,,,,VIETOV_T,"Sluoksnyje saugoma informacija apie pagrindinius ir pakartotinius vietovių ir kraštovaizdžio objektų pavadinimus ir jų vietas, kai nėra nustatoma konkreti objekto vieta"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,vardas,string,,,,2,open,,vardas,Vietovardis
+,,,,,gyvsk,integer,,,,2,open,,gyvsk,Gyventojų skaičius gyvenvietėje
+,,,,,adm_tip,string,,,,2,open,,adm_tip,Administracinio vieneto centro tipas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,obj_tip,string,,,,2,open,,obj_tip,Vietovardžio tipas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,antr,string,,,,2,open,,antr,Pakartotinis užrašas
+,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
+,,,,,,,,,,,,,,
+,,,,VietovardisPlotas,,,,,,,,,VIETOV_P,"Sluoksnyje saugoma informacija apie pagrindinius vietovių ir kraštovaizdžio objektų pavadinimus ir jų vietas, kai yra nustatoma objekto teritorija"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,vardas,string,,,,2,open,,vardas,Vietovardis
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
+,,,,,,,,,,,,,,
+,,,,MiskasRiba,,,,,,,,,MISKAS_L,"Sluoksnyje saugoma informacija apie miškų kvartalinių linijų ir proskynų ašines linijas, taip pat medžių juostas"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,,,,,,,,,,
+,,,,PaveldasTaskas,,,,,,,,,PAVELDAS_T,"Sluoksnyje saugoma informacija apie taškais vaizduojamus išskirtinę kultūrinę vertę turinčius nekilnojamojo kultūros paveldo objektus, kurių sąrašai patvirtinti Lietuvos Respublikos Vyriausybės 2007 m. vasario 7 d. nutarimu Nr. 193 „Dėl Išskirtinę kultūrinę vertę turinčių nekilnojamojo kultūros paveldo objektų ir pastatų ir patalpų, skirtų saugoti ir eksponuoti kilnojamąsias kultūros vertybes, sąrašų patvirtinimo“ "
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,mc,string,,,,2,open,,mc,Objekto atpažinties vardas (UNESCO – UNESCO saugomiems paveldo objektams)
+,,,,,objektas,string,,,,2,open,,objektas,Objekto pavadinimas
+,,,,,vardas,string,,,,2,open,,vardas,Objekto vardas arba aprašymas
+,,,,,adresas,string,,,,2,open,,adresas,Objekto adresas
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Patalpa"")",4,open,vadovas:vadovas:dsa/ref.html#susiejimas-neimanomas,,
+,,,,,kodas,string,,,,2,open,,kodas,Kultūros vertybių registro kodas
+,,,,,,comment,type,,"update(type: ""integer"")",4,open,,kodas,Kultūros vertybių registro kodas
+,,,,,,,,,,,,,,
+,,,,PaveldasPlotas,,,,,,,,,PAVELDAS_P,"Sluoksnyje saugoma informacija apie plotais vaizduojamus išskirtinę kultūrinę vertę turinčius nekilnojamojo kultūros paveldo objektus, kurių sąrašai patvirtinti Lietuvos Respublikos Vyriausybės 2007 m. vasario 7 d. nutarimu Nr. 193 „Dėl Išskirtinę kultūrinę vertę turinčių nekilnojamojo kultūros paveldo objektų ir pastatų ir patalpų, skirtų saugoti ir eksponuoti kilnojamąsias kultūros vertybes, sąrašų patvirtinimo“"
+,,,,,,comment,type,,"create(resource: ""file"", type: ""shape"", ref: ""lapai"", source: ""{}.shp"")",,open,spinta:283,,
+,,,,,shape,geometry,,,,2,open,,shape,Objekto geometrijos tipas
+,,,,,top_id,string,,,,2,open,,top_id,Objekto identifikavimo kodas (reikšmė yra privaloma)
+,,,,,gkodas,string,,,,2,open,,gkodas,Erdvinio objekto kodas (reikšmė yra privaloma)
+,,,,,meta,integer,,,,2,open,,meta,Raktas į GRPK rinkinio sluoksnio metaduomenų lenteles
+,,,,,red_priezastis,string,,,,2,open,,red_priezastis,Objekto duomenų ir informacijos sukūrimo ar paskutinio pakeitimo priežastis (reikšmė yra privaloma įvedus naują ar patikslinus esamo objekto duomenis ir informaciją)
+,,,,,red_saltinis,string,,,,2,open,,red_saltinis,"Objekto duomenims sukurti, nustatyti ar pakeisti naudotas duomenų šaltinis. Galimos reikšmės"
+,,,,,suk_data,date,D,,,4,open,,suk_data,Objekto įregistravimo (sukūrimo) data (reikšmė yra privaloma)
+,,,,,red_data,date,D,,,4,open,,red_data,Objekto duomenų ir informacijos keitimo data (reikšmė yra privaloma patikslinus esamo objekto duomenis ir informaciją)
+,,,,,mc,string,,,,2,open,,mc,Objekto atpažinties vardas (UNESCO – UNESCO saugomiems paveldo objektams)
+,,,,,objektas,string,,,,2,open,,objektas,Objekto pavadinimas
+,,,,,vardas,string,,,,2,open,,vardas,Objekto vardas arba aprašymas
+,,,,,adresas,string,,,,2,open,,adresas,Objekto adresas
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/pastatas/Patalpa"")",4,open,vadovas:vadovas:dsa/ref.html#susiejimas-neimanomas,,
+,,,,,kodas,string,,,,2,open,,kodas,Kultūros vertybių registro kodas
+,,,,,,comment,type,,"update(type: ""integer"")",4,open,,kodas,Kultūros vertybių registro kodas
+,,,,,shape_length,number,m,,,4,open,,shape_length,Objekto perimetro ilgis
+,,,,,shape_area,number,m²,,,4,open,,shape_area,Objekto plotas
