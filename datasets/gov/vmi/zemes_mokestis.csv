@@ -48,7 +48,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,az_saltinis,string,,,,3,open,,"Apleistos žemės požymis: S - savivaldybė, V - valstybės žemės fondas"
 ,,,,,,,enum,,S,"""savivaldybė""",,,,savivaldybė
 ,,,,,,,,,V,"""valstybės žemės fondas""",,,,valstybės žemės fondas
-,,,,,,,az_eiluteje_pozymis,integer,,,,3,open,,"Požymis: 1-neapleista žemė, 2-apleista žemė."
+,,,,,,az_eiluteje_pozymis,integer,,,,3,open,,"Požymis: 1-neapleista žemė, 2-apleista žemė."
 ,,,,,,,enum,,1,"""neapleista žemė""",,,,neapleista žemė
 ,,,,,,,,,2,"""apleista žemė""",,,,apleista žemė
 ,,,,,,tvirtinimo_data,datetime,D,,,4,open,,Deklaracijos tvirtinimo data (Perskaičiavimo data deklaracijoje)
