@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,sumoketi_mokesti,string,,,,2,open,,Žemės mokestį sumokėti iki (data),
 ,,,,,tipas,integer,,,,3,open,,Deklaracijos tipas,
-,,,,,,num,,1,"""Pirminė""",,,,Pirminė ,
+,,,,,,enum,,1,"""Pirminė""",,,,Pirminė ,
 ,,,,,,,,2,"""Patikslinta""",,,,Patikslinta,
 ,,,,,imokos_kodas,integer,,,,3,open,,Įmokos kodas,
 ,,,,,sst_kodas,integer,,,,3,open,,Žemės mokesčio mokėtojo tipas,
