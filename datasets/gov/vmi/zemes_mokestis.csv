@@ -4,54 +4,54 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys
-,,,,,eil_nr,integer,,,,2,open ,,Eilutės numeris
-,,,,,mm_sav_kodas,integer,,,,2,open,,Mokesčių mokėtojo savivaldybės kodas
-,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
-,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",
-,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,
-,,,,,tvirtinimo_data,datetime,,,,3,open,,Deklaracijos tvirtinimo data (Suformavimo data deklaracijoje)
-,,,,,apsk_suma,number,,,,2,open,,Apskaičiuota žemės mokesčio suma 
-,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
-,,,,,sumoketi_mokesti,string,,,,2,open,,Žemės mokestį sumokėti iki (data)
-,,,,,tipas,integer,,,,3,open,,Deklaracijos tipas
-,,,,,,enum,,1,"""Pirminė""",,,,Pirminė 
-,,,,,,,,2,"""Patikslinta""",,,,Patikslinta
-,,,,,imokos_kodas,integer,,,,3,open,,Įmokos kodas
-,,,,,sst_kodas,integer,,,,3,open,,Žemės mokesčio mokėtojo tipas
-,,,,,,enum,,1,"""Fizinis asmuo""",,,,Fizinis asmuo
-,,,,,,,,2,"""Juridinis asmuo""",,,,Juridinis asmuo
-,,,,,sklyp_plotas,number,ha,,,4,open,,Apmokestinamų žemės sklypų plotas  (Priedo 5 stulp.suma)
-,,,,,sklyp_verte,number,,,,2,open,,Apmokestinamų žemės sklypų vertė (Priedo 6 stulp. suma)
-,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
-,,,,,,,,,,,,
-,,,,Priedai,,,,,,,,,Žemės mokesčio deklaracijų priedų duomenys
-,,,,,eil_nr,integer,,,,2,open,,Deklaracijos ID (atitinka -ID  lentelėje KIT703)
-,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,
-,,,,,sklypo_sav_kodas,integer,,,,2,open,,Sklypo savivaldybės kodas
-,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
-,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",
-,,,,,plotas_be_misko,number,ha,,,4,open,,Bendras sklypo plotas be miško
-,,,,,apmokest_plotas,number,ha,,,4,open,,Sklypo apmokestinamas plotas
-,,,,,dalies_verte_prad,number,,,,2,open,,Apmokestinamo sklypo mokestinė vertė
-,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
-,,,,,km_koef,number,,,,2,open,,Žemės ūkio paskirties (įskaitant sodų) žemei taikomas koeficientas
-,,,,,dalies_verte,number,,,,2,open,,"Apmokestinamo sklypo (dalies) mokestinė vertė,  įvertinus žemės ūkio paskirties žemei taikomą 0,35 koeficientą"
-,,,,,,,,,,4,,spinta:40,
-,,,,,tarifas,number,,,,2,open,,Žemės  mokesčio  tarifas
-,,,,,lengvatos_verte,number,,,,2,open,,Taikomos lengvatos vertė
-,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,
-,,,,,mokescio_suma,number,,,,2,open,,Apskaičiuota  žemės mokesčio suma
-,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,
-,,,,,az_saltinis,string,,,,3,open,,"Apleistos žemės požymis: S - savivaldybė, V - valstybės žemės fondas"
-,,,,,,enum,,S,"""savivaldybė""",,,,savivaldybė
-,,,,,,,,V,"""valstybės žemės fondas""",,,,valstybės žemės fondas
-,,,,,az_eiluteje_pozymis,integer,,,,3,open,,"Požymis: 1-neapleista žemė, 2-apleista žemė."
-,,,,,,enum,,1,"""neapleista žemė""",,,,neapleista žemė
-,,,,,,,,2,"""apleista žemė""",,,,apleista žemė
-,,,,,tvirtinimo_data,datetime,D,,,4,open,,Deklaracijos tvirtinimo data (Perskaičiavimo data deklaracijoje)
-,,,,,sst_kodas,integer,,,,3,open,,Žemės mokesčio mokėtojo tipas
-,,,,,,enum,,1,"""Fizinis asmuo""",,,,Fizinis asmuo
-,,,,,,,,2,"""Juridinis asmuo""",,,,Juridinis asmuo
+,,,,,Deklaracijos,,,,,,,,,Žemės mokečio deklaracijų duomenys
+,,,,,,eil_nr,integer,,,,2,open ,,Eilutės numeris
+,,,,,,mm_sav_kodas,integer,,,,2,open,,Mokesčių mokėtojo savivaldybės kodas
+,,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
+,,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",
+,,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
+,,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,
+,,,,,,tvirtinimo_data,datetime,,,,3,open,,Deklaracijos tvirtinimo data (Suformavimo data deklaracijoje)
+,,,,,,apsk_suma,number,,,,2,open,,Apskaičiuota žemės mokesčio suma 
+,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
+,,,,,,sumoketi_mokesti,string,,,,2,open,,Žemės mokestį sumokėti iki (data)
+,,,,,,tipas,integer,,,,3,open,,Deklaracijos tipas
+,,,,,,,enum,,1,"""Pirminė""",,,,Pirminė 
+,,,,,,,,,2,"""Patikslinta""",,,,Patikslinta
+,,,,,,imokos_kodas,integer,,,,3,open,,Įmokos kodas
+,,,,,,sst_kodas,integer,,,,3,open,,Žemės mokesčio mokėtojo tipas
+,,,,,,,enum,,1,"""Fizinis asmuo""",,,,Fizinis asmuo
+,,,,,,,,,2,"""Juridinis asmuo""",,,,Juridinis asmuo
+,,,,,,sklyp_plotas,number,ha,,,4,open,,Apmokestinamų žemės sklypų plotas  (Priedo 5 stulp.suma)
+,,,,,,sklyp_verte,number,,,,2,open,,Apmokestinamų žemės sklypų vertė (Priedo 6 stulp. suma)
+,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
+,,,,,,,,,,,,,
+,,,,,Priedai,,,,,,,,,Žemės mokesčio deklaracijų priedų duomenys
+,,,,,,eil_nr,integer,,,,2,open,,Deklaracijos ID (atitinka -ID  lentelėje KIT703)
+,,,,,,metai_id,integer,,,,2,open,,Įrašo identifikacinis numeris informacinėje sistemoje (Mokestinis laikotarpis)
+,,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,
+,,,,,,sklypo_sav_kodas,integer,,,,2,open,,Sklypo savivaldybės kodas
+,,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,
+,,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",
+,,,,,,plotas_be_misko,number,ha,,,4,open,,Bendras sklypo plotas be miško
+,,,,,,apmokest_plotas,number,ha,,,4,open,,Sklypo apmokestinamas plotas
+,,,,,,dalies_verte_prad,number,,,,2,open,,Apmokestinamo sklypo mokestinė vertė
+,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
+,,,,,,km_koef,number,,,,2,open,,Žemės ūkio paskirties (įskaitant sodų) žemei taikomas koeficientas
+,,,,,,dalies_verte,number,,,,2,open,,"Apmokestinamo sklypo (dalies) mokestinė vertė,  įvertinus žemės ūkio paskirties žemei taikomą 0,35 koeficientą"
+,,,,,,,,,,,4,,spinta:40,
+,,,,,,tarifas,number,,,,2,open,,Žemės  mokesčio  tarifas
+,,,,,,lengvatos_verte,number,,,,2,open,,Taikomos lengvatos vertė
+,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,
+,,,,,,mokescio_suma,number,,,,2,open,,Apskaičiuota  žemės mokesčio suma
+,,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,
+,,,,,,az_saltinis,string,,,,3,open,,"Apleistos žemės požymis: S - savivaldybė, V - valstybės žemės fondas"
+,,,,,,,enum,,S,"""savivaldybė""",,,,savivaldybė
+,,,,,,,,,V,"""valstybės žemės fondas""",,,,valstybės žemės fondas
+,,,,,,,az_eiluteje_pozymis,integer,,,,3,open,,"Požymis: 1-neapleista žemė, 2-apleista žemė."
+,,,,,,,enum,,1,"""neapleista žemė""",,,,neapleista žemė
+,,,,,,,,,2,"""apleista žemė""",,,,apleista žemė
+,,,,,,tvirtinimo_data,datetime,D,,,4,open,,Deklaracijos tvirtinimo data (Perskaičiavimo data deklaracijoje)
+,,,,,,sst_kodas,integer,,,,3,open,,Žemės mokesčio mokėtojo tipas
+,,,,,,,enum,,1,"""Fizinis asmuo""",,,,Fizinis asmuo
+,,,,,,,,,2,"""Juridinis asmuo""",,,,Juridinis asmuo
