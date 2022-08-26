@@ -96,7 +96,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neidentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
 ,,,,,nustatymo_zyme,string,,Nustatymo žymė,,2,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, CF, CPX. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies, CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione."
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,gausumo_koef,number,,Gausumo koeficientas,,2,open,,Gausumo koeficientas,,
+,,,,,gausumo_koef,number,,Gausumo koeficientas,,2,open,,Gausumo koeficientas,
 ,,,,,individ_gr_eil_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,gausumas_tukst_vnt_litre,number,,"Gausumas, tūkst. vnt. litre",,2,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas tūkstančiais vienetų litre",
 ,,,,,,comment,ref,,"update(ref: ""?"")",4,,,,
@@ -115,13 +115,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrim_data,datetime,,Tyrimų data,,3,open,,Mėginio paėmimo data,
 ,,,,,,comment,type,,"update(type: ""datetime"", ref: ""D"")",4,,,,
 ,,,,,vandens_telkinio_pav,string,,Vandens telkinio pavadinimas,,2,open,,Vandens telkinio pavadinimas,
-,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,open,,,
+,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,,,,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pavadinimas,string,,MV pavadinimas,,3,open,,Monitoringo vietos pavadinimas,
 ,,,,,m_vietos_s_koordinate,number,,MV šiaurės koordinatė,,2,open,,Monitoringo vietos šiaurės koordinatė (LKS-94),
 ,,,,,,comment,type,,"update(property: ""m_koordinate"", type: ""geometry(point, 3346)""))",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
 ,,,,,m_vietos_r_koordinate,number,,MV rytų koordinatė,,2,open,,Monitoringo vietos rytų koordinatė (LKS-94),
-,,,,,,comment,type,,delete(),,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+,,,,,,comment,type,,delete(),,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,
 ,,,,,vandens_gylis,number,,"Vandens gylis, m",,2,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
@@ -202,7 +202,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrim_data,datetime,,Tyrimų data,,3,open,,Mėginio paėmimo data,
 ,,,,,,comment,type,,"update(type: ""datetime"", ref: ""D"")",4,,,,
 ,,,,,vandens_telkinio_pav,string,,Vandens telkinio pavadinimas,,2,open,,Vandens telkinio pavadinimas,
-,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,open,,,
+,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,,,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pavadinimas,string,,MV pavadinimas,,3,open,,Monitoringo vietos pavadinimas,
 ,,,,,m_vietos_s_koordinate,number,,MV šiaurės koordinatė,,2,open,,Monitoringo vietos šiaurės koordinatė (LKS-94),
@@ -227,10 +227,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrim_data,datetime,,Tyrimų data,,3,open,,Mėginio paėmimo data,
 ,,,,,,comment,type,,"update(type: ""datetime"", ref: ""D"")",4,,,,
 ,,,,,vandens_telkinio_pav,string,,Vandens telkinio pavadinimas,,2,open,,Vandens telkinio pavadinimas,
-,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,open,,,
+,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""datasets/gov/giscentras/grpk"")",4,,,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pavadinimas,string,,MV pavadinimas,,3,open,,Monitoringo vietos pavadinimas,
-,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,Tyrimų objektas visada Biota.
+,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,Tyrimų objektas visada Biota
 ,,,,,tyrim_objekto_detalizac,string,,Tyrimų objekto detalizacija,,2,open,,Tyrimų objekto detalizacija,
 ,,,,,,comment,type,,"update(property: ""detalizacija@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,vandens_gylis,number,,"Vandens gylis, m",,2,open,,"Gylis, iš kurio paimtas mėginys, metrais",
