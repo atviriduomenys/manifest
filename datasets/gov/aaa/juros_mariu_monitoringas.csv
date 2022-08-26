@@ -43,7 +43,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,
 ,,,,,vandens_horizontas,string,,Vandens horizontas,,3,open,,"Vandens sluoksnis, kuriame atlikti  matavimai",
 ,,,,,vandens_gylis,number,,Vandens gylis,,2,open,,"Gylis, kuriame atlikti matavimai, metrais",
-,,,,,,comment,ref,,"update(ref: ""m"")",4,open,,,,
+,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
 ,,,,,parametro_pavad,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
 ,,,,,parametro_tyr_rezultat,string,,Parametro tyrimo rezultatas,,2,open,,Parametro tyrimo rezultatas,
 ,,,,,matavimo_vnt,string,,Matavimo vienetai,,3,open,,Matavimo vienetai,
