@@ -106,8 +106,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vnt_turis,number,,Vieneto tūris,,2,open,,Vieneto tūris,
 ,,,,,,comment,ref,,"update(ref: ""?"")",4,,,,
 ,,,,,biomase,number,,"Biomasė, mg/l",,2,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais litre",
-,,,,,,comment,ref,,"update(ref: ""mg/l"")",4,,,,,
-,,,,,tyr_metodas_w,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė,
+,,,,,,comment,ref,,"update(ref: ""mg/l"")",4,,,,
+,,,,,tyr_metodas_w,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė.
 ,,,,,,,,,,,,,,
 ,,,,Zoobentosas,,,,,,2,,,Kuršių marių ir Baltijos jūros zoobentoso tyrimų duomenys,
 ,,,,,,comment,ref,,"update(ref: ""tyrimo_reg_nr"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
