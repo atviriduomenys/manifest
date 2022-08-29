@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/muitine/valiutu_sarasas,,,,,,,,,,,,Valiutų sąrašas,
 ,,,,,,prefix,ns,,,,,http://rep.xmlstandards.eu/icdts/LT/schemas/ReferenceData.xsd,,
-,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,spinta,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,18LT,,,,xml,,https://www.lrmuitine.lt/mport/other_files/AtviriDuom_klasifikatoriai/18LT.xml,,,,,,
 ,,,,Currency,,,code,/ns:ReferenceData/ns:SimpleItem,,4,,,,
 ,,,,,code,string,,@code,,4,open,,Valiutos kodas,3 simbolių kodas
