@@ -121,7 +121,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_vietos_s_koordinate,number,,MV šiaurės koordinatė,,2,open,,Monitoringo vietos šiaurės koordinatė (LKS-94),
 ,,,,,,comment,type,,"update(property: ""m_koordinate"", type: ""geometry(point, 3346)""))",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
 ,,,,,m_vietos_r_koordinate,number,,MV rytų koordinatė,,2,open,,Monitoringo vietos rytų koordinatė (LKS-94),
-,,,,,,comment,type,,delete(),,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,
+,,,,,,comment,type,,delete(),,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,
 ,,,,,vandens_gylis,number,,"Vandens gylis, m",,2,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
