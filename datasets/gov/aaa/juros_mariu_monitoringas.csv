@@ -1,4 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,,,,,,enum,nustatymo_zyme,1, "SP",,,,,
+,,,,,,,,2, "SPP",,,,,
+,,,,,,,,3, "CF",,,,,
+,,,,,,,,4, "CPX",,,,,
 ,datasets/gov/aaa/juros_mariu_monitoringas,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
@@ -90,11 +94,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
 ,,,,,individu_klase,string,,Individų klasė,,3,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neidentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
-,,,,,nustatymo_zyme,string,,Nustatymo žymė,,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, CF, CPX. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies, CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione."
-,,,,,,enum,,, SP,,,,"SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo",
-,,,,,,,,,SPP,,,,"SPP - reiškia kelias nenustatytas tos pačios genties rūšis",
-,,,,,,,,,CF,,,,"CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies",
-,,,,,,,,,CPX,,,,"CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione",
+,,,,,nustatymo_zyme,string,nustatymo_zyme,Nustatymo žymė,,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, CF, CPX. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies, CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione."
 ,,,,,gausumo_koef,number,,Gausumo koeficientas,,3,open,,Gausumo koeficientas,
 ,,,,,ind_gr_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,gausumas,number,,"Gausumas, tūkst. vnt. litre",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas tūkstančiais vienetų litre",
@@ -125,11 +125,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
 ,,,,,individu_klase,string,,Individų klasė,,3,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neįdentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
-,,,,,nustatymo_zyme,string,,Nustatymo žymė,,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, VARIA. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, VARIA - žymima, kai individai idetifikuojami iki klasės."
-,,,,,,enum,,, SP,,,,"SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo",
-,,,,,,,,,SPP,,,,"SPP - reiškia kelias nenustatytas tos pačios genties rūšis",
-,,,,,,,,,CF,,,,"CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies",
-,,,,,,,,,CPX,,,,"CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione",
+,,,,,nustatymo_zyme,string,nustatymo_zyme,Nustatymo žymė,,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, VARIA. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, VARIA - žymima, kai individai idetifikuojami iki klasės."
 ,,,,,vystymosi_stadija,string,,Vystymosi stadija,,3,open,,Taksono (rūšies) vystymosi stadija,
 ,,,,,paemimo_metodas,string,,Paėmimo metodas,,3,open,,Mėginio paėmimo metodas,
 ,,,,,substrat_biotop,string,,Substratai / biotopai,,3,open,,Vyraujantis gruntas dugne,
@@ -161,11 +157,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""m"")",4,,,,
 ,,,,,individu_klase,string,,Individų klasė,,3,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neįdentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
-,,,,,nustatymo_zyme,string,,Taksonas (rūšis),,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis."
-,,,,,,enum,,, SP,,,,"SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo",
-,,,,,,,,,SPP,,,,"SPP - reiškia kelias nenustatytas tos pačios genties rūšis",
-,,,,,,,,,CF,,,,"CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies",
-,,,,,,,,,CPX,,,,"CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione",
+,,,,,nustatymo_zyme,string,nustatymo_zyme,Taksonas (rūšis),,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis."
 ,,,,,ind_eil_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos skirtingos rūšies vystymosi stadijos, kai rūšis identifikuojama iki lyties - išskiriama į vyriškos lyties ir moteriškos lyties individus. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,lytis_vystym_stadija,string,,Lytis / Vystymosi stadija,,3,open,,Taksono (rūšies) lytis arba vystymosi stadija,
 ,,,,,gausumas,number,,"Gausumas, vnt./m3",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kubiniame metre",
