@@ -76,7 +76,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dydziu_klase,number,,Dydžių klasė,,3,open,,Dydžių klasė,
 ,,,,,dydziu_interval,string,,Dydžių intervalas,,2,open,,Dydžių intervalas,
 ,,,,,vnt_turis,number,,Vieneto tūris,,3,open,,Vieneto tūris,
-,,,,,biomase,number,mg/l,"Biomasė, mg/l",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais litre",
+,,,,,biomase,number,,"Biomasė, mg/l",,3,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais litre",
 ,,,,,tyr_metodas_w,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė.
 ,,,,,,,,,,,,,,
 ,,,,Zoobentosas,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros zoobentoso tyrimų duomenys,
@@ -95,7 +95,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paemimo_metodas,string,,Paėmimo metodas,,3,open,,Mėginio paėmimo metodas,
 ,,,,,substrat_biotop,string,,Substratai / biotopai,,3,open,,Vyraujantis gruntas dugne,
 ,,,,,gausumas,number,,"Gausumas, vnt./m2",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kvadratiniame metre",
-,,,,,biomase,number,g/m2,"Biomasė,  g/m2",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
+,,,,,biomase,number,,"Biomasė,  g/m2",,3,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,pastabos,string,,Pastabos (papildomas taksonas),,2,open,,Pateikiama su tyrimu susijusi svarbi informacija,
 ,,,,,,,,,,,,,,
@@ -116,7 +116,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ind_eil_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos skirtingos rūšies vystymosi stadijos, kai rūšis identifikuojama iki lyties - išskiriama į vyriškos lyties ir moteriškos lyties individus. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,lytis_vystym_stadija,string,,Lytis / Vystymosi stadija,,3,open,,Taksono (rūšies) lytis arba vystymosi stadija,
 ,,,,,gausumas,number,,"Gausumas, vnt./m3",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kubiniame metre",
-,,,,,biomase,number,mg/m3,"Biomasė,  mg/m3",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais kubiniame metre",
+,,,,,biomase,number,,"Biomasė,  mg/m3",,3,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais kubiniame metre",
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,SpTersalaiV,,,reg_nr,,,2,,,Specifinių teršalų tyrimai Kuršių marių ir Baltijos jūros vandenyje,
