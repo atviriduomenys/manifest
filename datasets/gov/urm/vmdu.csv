@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,VidDarboUzmokestis,,,pareigybes_pavadinimas,,,,,,,
 ,,,,,pareigybes_pavadinimas,string,,Pareigybės pavadinimas,,3,open,,Pareigybės pavadinimas,
 ,,,,,darb_sk_sausis_2021,integer,,Darbuotojų skaičius (2021 m. sausio),,3,open,,Darbuotojų skaičius (2021 m. sausio),
-,,,,,vid_du_sausis_2021,integer,,2021 m. sausio vidutinis apskaičiuotas darbo užmokestis (EUR),,3,open,,2021 m. sausio vidutinis apskaičiuotas darbo užmokestis (EUR),
+,,,,,vid_du_sausis_2021,integer,EUR,2021 m. sausio vidutinis apskaičiuotas darbo užmokestis (EUR),,4,open,,2021 m. sausio vidutinis apskaičiuotas darbo užmokestis (EUR),
 ,,,,,darb_sk_vasaris_2021,integer,,Darbuotojų skaičius (2021 m.vasario),,3,open,,Darbuotojų skaičius (2021 m.vasario),
 ,,,,,vid_du_vasaris_2021,integer,,2021 m. vasario vidutinis apskaičiuotas darbo užmokestis (EUR),,3,open,,2021 m. vasario vidutinis apskaičiuotas darbo užmokestis (EUR),
 ,,,,,darb_sk_kovas_2021,integer,,Darbuotojų skaičius (2021 m. kovo),,3,open,,Darbuotojų skaičius (2021 m. kovo),
