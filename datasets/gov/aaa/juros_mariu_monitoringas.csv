@@ -97,7 +97,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gausumas,number,vnt/m2,"Gausumas, vnt./m2",,4,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kvadratiniame metre",
 ,,,,,biomase,number,g/m2,"Biomasė,  g/m2",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
-,,,,,pastabos@lt,text,,Pastabos (papildomas taksonas),,4,open,spinta:204,Pateikiama su tyrimu susijusi svarbi informacija,
+,,,,,pastabos,string,,Pastabos (papildomas taksonas),,2,open,,Pateikiama su tyrimu susijusi svarbi informacija,
 ,,,,,,,,,,,,,,
 ,,,,Zooplanktonas,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros zooplanktono tyrimų duomenys,
 ,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
