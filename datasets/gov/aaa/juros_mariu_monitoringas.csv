@@ -170,4 +170,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rezultatas,number,,Parametro tyrimo rezultatas,,3,open,,Parametro tyrimo rezultatas,
 ,,,,,matavimo_vnt,string,,Matavimo vienetai (sauso svorio),,3,open,,Matavimo vienetai (sauso svorio),
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
-,,,,,pastabos@lt,text,,Pastabos,,4,open,spinta:204,Pateikiama su tyrimu susijusi svarbi informacija,
+,,,,,pastabos,string,,Pastabos,,2,open,,Pateikiama su tyrimu susijusi svarbi informacija,
