@@ -4,5 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,VizuRezimas,,,id,,,,,,,
 ,,,,,id,integer,,ID,,4,open,,Unikalus identifikatorius,
 ,,,,,valstybe,string,,Valstybė,,3,open,,Valstybė,
-,,,,,vizos_reikalingumas,string,,Vizos reikalingumas,,3,open,,Vizos reikalingumas,
+,,,,,vizos_reikalingumas,string,,Vizos reikalingumas,,4,open,,Vizos reikalingumas,
+,,,,,,enum,,,"""Taip""",,,,Viza reikalinga,
+,,,,,,,,,"""Ne""",,,,Vizos nereikia,
 ,,,,,pastaba,string,,Pastabos,,3,open,,Pastabos,
