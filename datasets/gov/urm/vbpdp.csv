@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,datasets/gov/urm/vbpdp,,,,,,,,,,,,Vystomojo bendradarbiavimo ir paramos demokratijai programos įgyvendinimas,
 ,,parama,,,,csv,,https://data.gov.lt/dataset/761/download/10707/VBD%20ataskaita%202015-2020%202.csv,,,,,,
-,,,,Parama,,,metai,,,,,,,
+,,,,Parama,,,metai,,,2,,,,
 ,,,,,metai,date,Y,Metai,,4,open,,Metai,
 ,,,,,savanoriškos_imokos,number,,Savanoriškoms įmokoms į daugiašalius fondus ,,2,open,,Savanoriškoms įmokoms į daugiašalius fondus ,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
