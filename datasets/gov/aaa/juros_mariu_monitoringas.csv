@@ -70,7 +70,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neidentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
 ,,,,,nustatymo_zyme,string,nustatymo_zyme,Nustatymo žymė,,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP, CF, CPX. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis, CF - žymėjimas dedamas tarp genties ir rūšies pavadinimo, reiškiantis, kad individas kaip įmanoma (su tam tikra abejone) atpažintas iki rūšies, CPX - žymėjimas reiškia, kad yra labai panašių viena į kitą rūšių grupė pavadinta pagl labiausiai paplitusią rūšį regione."
 ,,,,,gausumo_koef,number,,Gausumo koeficientas,,3,open,,Gausumo koeficientas,
-,,,,,ind_gr_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
+,,,,,ind_eil_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos dvi ar daugiau dydžių klasės tai pačiai rūšiai. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,gausumas,number,,"Gausumas, tūkst. vnt. litre",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas tūkstančiais vienetų litre",
 ,,,,,tyr_metodas_r,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,Duomenų lentelėje R stulpelyje nurodytu metodu tiriamas fitoplanktono rūšių gausumas.
 ,,,,,dydziu_klase,number,,Dydžių klasė,,3,open,,Dydžių klasė,
@@ -162,7 +162,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,detalizacija,string,,Tyrimų objekto detalizacija,,3,open,,Tyrimų objekto detalizacija,
 ,,,,,gylis,number,m,"Vandens gylis, m",,4,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,rusis_lt_lot,string,,Rūšis lietuviškai (lotyniškai),,3,open,,"Rūšies pavadinimas, kurioje atliekamas tyrimas, lietuvių ir lotynų kalbomis",
-,,,,,individo_gr_eil_nr,number,,Individo grupės eilės nr.,,2,open,,Individo grupės eilės numeris,
+,,,,,ind_eil_nr,number,,Individo grupės eilės nr.,,2,open,,Individo grupės eilės numeris,
 ,,,,,ilgio_gr,string,,"Ilgio grupė, mm",,2,open,,"Ilgio grupė, išreikšta milimetrais",
 ,,,,,individ_sk_submeginy,number,,Individų skaičius submėginyje,,3,open,,Individų skaičius submėginyje,
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
