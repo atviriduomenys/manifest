@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/apdraustieji,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"extract(""zip"")[""apdraustieji_ketv.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
-,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,,,,,
+,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,2,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,ketvirtis,integer,,KETVIRTIS,,3,open,,Ketvirtis,
