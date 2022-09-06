@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Hidrochemija,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros hidrocheminių parametrų tyrimai vandenyje,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,Hidrometeorologija,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros hidrologinių matavimų vandenyje ir meteorologinių stebėjimų duomenys,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Stebėjimų ir matavimų data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -41,7 +41,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,"Taikomi tyrimų metodai yra tarptautiniai, nacionaliniai ir Aplinkos apsaugos agentūros struktūriniame padalinyje, atsakingame už tyrimų vykdymą ir priežiūrą, patvirtintos standartinės veiklos procedūros."
 ,,,,,,,,,,,,,,
 ,,,,ChlorofilasA,,,reg_nr,,,4,,,Kuršių marių ir Baltijos jūros chlorofilo a tyrimų duomenys,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,4,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,4,open,,Tyrimo registracijos numeris,Registracijos nr. unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -57,7 +57,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,Fitoplanktonas,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros fitoplanktono tyrimų duomenys,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -81,7 +81,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas_w,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,Duomenų lentelėje W stulpelyje nurodytu metodu tiriama fitoplanktono rūšių biomasė.
 ,,,,,,,,,,,,,,
 ,,,,Zoobentosas,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros zoobentoso tyrimų duomenys,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -101,7 +101,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastabos,string,,Pastabos (papildomas taksonas),,2,open,,Pateikiama su tyrimu susijusi svarbi informacija,
 ,,,,,,,,,,,,,,
 ,,,,Zooplanktonas,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros zooplanktono tyrimų duomenys,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -121,7 +121,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,SpTersalaiV,,,reg_nr,,,2,,,Specifinių teršalų tyrimai Kuršių marių ir Baltijos jūros vandenyje,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -137,7 +137,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,2,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,SpTersalaiDN,,,reg_nr,,,2,,,Specifinių teršalų tyrimai Kuršių marių ir Baltijos jūros dugno nuosėdose,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
@@ -154,7 +154,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,SpTersalaiB,,,reg_nr,,,2,,,Specifinių teršalų tyrimai Kuršių marių ir Baltijos jūros biotoje,
-,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,
+,,,,,reg_nr,string,,Tyrimo registracijos nr.,,2,open,,Tyrimo registracijos numeris,Registracijos nr. nėra unikalus
 ,,,,,data,datetime,D,Tyrimų data,,4,open,,Mėginio paėmimo data,
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,MV kodas,,3,open,,Monitoringo vietos kodas,
