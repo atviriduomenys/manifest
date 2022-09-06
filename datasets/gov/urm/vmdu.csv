@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,datasets/gov/urm/vmdu,,,,,,,,,,,,Vidutinio mėnesio darbo užmokesčio duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,darbouzmokestis,,,,csv,,https://data.gov.lt/dataset/1856/download/10641/Lentele_darbo%20uzmokestis%202021%202.csv,,,,,,
 ,,,,VidDarboUzmokestis,,,pareigybes_pavadinimas,,,2,,,,
 ,,,,,pareigybes_pavadinimas,string,,Pareigybės pavadinimas,,3,open,,Pareigybės pavadinimas,
