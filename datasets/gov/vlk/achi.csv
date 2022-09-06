@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/achi,,,,,,,,,,,,,
 ,,,,,,enum,bool,N,false,,,,,
 ,,,,,,,,T,true,,,,,
 ,,,,,,,,,,,,,,
-,datasets/gov/vlk/achi,,,,,,,,,,,,,
 ,,adk,,,,csv,,https://data.gov.lt/dataset/1383/download/,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Achi,,,kodas,9424/achi.csv,,,,,Intervencijų sąrašas (ACHI),"Informacija apie medicinines intervencijas. ACHI – tai Australijos medicininių intervencijų klasifikacija. Jos devintasis leidimas pakeičia aštuntąjį, išleistą 2013 metais"
