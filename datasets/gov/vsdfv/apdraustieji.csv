@@ -14,10 +14,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""draudejo_grupe.draudeju_grupe"", type: """")",4,,Spinta:216,,
 ,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai[draudeju_tipas],DRAUDEJO_TIPAS,,4,open,,Draudėjo tipas,
 ,,,,,,comment,type,,"update(property: ""draudejo_tipas.draudeju_tipas"", type: """")",4,,Spinta:216,,
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,Priskaičiuota VSD ir PSD įmokų suma, Eur,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,Priskaičiuota VSD ir PSD įmokų suma, Eur,,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,sumoketa_eur,number,,SUMOKETA_EUR,,2,open,,Sumokėta VSD ir PSD įmokų suma, Eur,
+,,,,,sumoketa_eur,number,,SUMOKETA_EUR,,2,open,,Sumokėta VSD ir PSD įmokų suma, Eur,,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,vid_a_darbo_apmok_suma_eur,number,,VID_A_DARBO_APMOK_SUMA_EUR,,2,open,,Vidutinė darbo apmokėjimo suma, Eur,
+,,,,,vid_a_darbo_apmok_suma_eur,number,,VID_A_DARBO_APMOK_SUMA_EUR,,2,open,,Vidutinė darbo apmokėjimo suma, Eur,,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,vid_b_apdraustuju_sk,number,,VID_B_APDRAUSTUJU_SK,,3,open,,Vidutinis apdraustųjų skaičius,Apdraustieji – fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
