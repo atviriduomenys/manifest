@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/fba,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ';'),,,,
+,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ';'),,,,,
 ,,,,FinansinesBuklesAtaskaita,,,nr,,,2,,,
 ,,,,,eil_nr,string,,Nr,,4,open,,Eilės numeris,
 ,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
