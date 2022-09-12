@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,BiudzetoVykdymoAtaskaita,,,kodas,,,2,,,,
 ,,,,,kodas,string,,Kodas,,4,open,,Kodas,
 ,,,,,pavadinimas,string,,Pavadinimas,,3,open,,Pavadinimas,
-,,,,,eil_nr,integer,,Nr,,3,open,,Eilės numeris,
+,,,,,eil_nr,integer,,Nr,,4,open,,Eilės numeris,
 ,,,,,planas_metams,integer,,Planas metams,,2,open,,Asignavimų planas metams,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,planas_ataskaitiniam_laikotarpiui,integer,,Planas ataskaitiniam laikotarpiui,,2,open,,Asignavimų planas ataskaitiniam laikotarpiui,
