@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
 ,,,,,darbo_uzmok_eur,number,,DARBO_UZMOK_EUR,,2,open,,"Darbo užmokestis, Eur",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,apdr_asm_sk,integer,,APDR_ASM_SK,,3,open,,Apdraustųjų asmenų skaičius,Apdraustieji fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
+,,,,,apdr_asm_sk,integer,,APDR_ASM_SK,,4,open,,Apdraustųjų asmenų skaičius,Apdraustieji fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
 ,,,,,,,,,,,,,,
 ,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
 ,,,,PajamuAnalize,,,"metai, menuo",,,2,,,,
