@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/urm/vr,,,,,,,,,,,,Vidutinio mėnesio darbo užmokesčio duomenys,
 ,,viza,,,,csv,,https://data.gov.lt/dataset/1046/download/10709/Vizu%20rezimas_Lentele%202.csv,,,,,,
-,,,,VizuRezimas,,,id,,,3,,,,
+,,,,VizuRezimas,,,id,,,4,,,,
 ,,,,,id,integer,,ID,,4,open,,Unikalus identifikatorius,
 ,,,,,valstybe,string,,Valstybė,,3,open,,Valstybė,
 ,,,,,vizos_reikalingumas,string,,Vizos reikalingumas,,4,open,,Vizos reikalingumas,
