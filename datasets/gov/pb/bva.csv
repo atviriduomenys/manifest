@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/bva,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,biudzetas,,,,csv,,https://data.gov.lt/dataset/1665/download/9593/vpb-biudzeto-vykdymo-ataskaita-2020-Q2.csv,tabular(sep: ';'),,,,,
-,,,,BiudzetoVykdymoAtaskaita,,,kodas,,,2,,,,
+,,,,BiudzetoVykdymoAtaskaita,,,kodas,,,4,,,,
 ,,,,,kodas,string,,Kodas,,4,open,,Kodas,
 ,,,,,pavadinimas,string,,Pavadinimas,,3,open,,Pavadinimas,
 ,,,,,eil_nr,integer,,Nr,,4,open,,Eilės numeris,
