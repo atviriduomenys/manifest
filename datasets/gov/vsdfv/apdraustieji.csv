@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsdfv/apdraustieji,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"extract(""zip"")[""apdraustieji_ketv.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
-,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,2,,,,
+,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,3,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,ketvirtis,integer,,KETVIRTIS,,3,open,,Ketvirtis,
@@ -20,4 +20,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,vid_a_darbo_apmok_suma_eur,number,,VID_A_DARBO_APMOK_SUMA_EUR,,2,open,,"Vidutinė darbo apmokėjimo suma, Eur",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,vid_b_apdraustuju_sk,number,,VID_B_APDRAUSTUJU_SK,,3,open,,"Vidutinis apdraustųjų skaičius","Apdraustieji – fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai"
+,,,,,vid_b_apdraustuju_sk,number,,VID_B_APDRAUSTUJU_SK,,4,open,,"Vidutinis apdraustųjų skaičius","Apdraustieji – fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai"
