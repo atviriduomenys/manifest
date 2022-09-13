@@ -22,4 +22,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
 ,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota suma, Eur",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,Gavėjų skaičius,
+,,,,,gaveju_sk,number,,GAVEJU_SK,,4,open,,Gavėjų skaičius,
