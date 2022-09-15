@@ -1,4 +1,4 @@
-id id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/tersalu_inventorizacijos_duomenys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,InventorizacijosDuomenys,,,,,,2,,,Aplinkos oro taršos šaltinių ir iš jų išmetamų teršalų inventorizacijos ataskaitos,Pateikiama informacija apie priimtas ir pratęstas aplinkos oro taršos šaltinių ir iš jų išmetamų teršalų invetorizacijos ataskaitas ar patikslintus inventorizacijos duomenis
