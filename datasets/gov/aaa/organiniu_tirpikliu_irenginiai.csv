@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title, description 
+,dataset/,,,,,,,,,,,,,
+,dataset/gov/,,,,,,,,,,,,,
+,datasets/gov/aaa/organiniu_tirpikliu_irenginiai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,IrenginiuSarasas,,,,,,2,,,Organinius tirpiklius naudojančių įrenginių sąrašas,
+,,,,,eil_nr,number,,Eil. Nr.,,2,open,,Eilutės numeris,
+,,,,,regionas,string,,Regionas,,4,open,,"Įrenginio vietos adresas, nurodant regioną",
+,,,,,,enum,,,Marijampolės regionas,,,,,
+,,,,,,,,,Šiaulių - Telšių regionai,,,,,
+,,,,,,,,,Kauno regionas,,,,,
+,,,,,,,,,Utenos regionas,,,,,
+,,,,,,,,,Vilniaus regionas,,,,,
+,,,,,,,,,Klaipėdos regionas,,,,,
+,,,,,,,,,Panevėžio regionas,,,,,
+,,,,,,,,,Alytaus regionas,,,,,
+,,,,,vykdytojas_adresas,string,,"Veiklos vykdytojas, veiklos vykdymo vietos (-ų) adresas",,3,open,,"Veiklos vykdytojo pavadinimas, veiklos vykdymo vietos (-ų) adresas",
+,,,,,veiklos_rusis,string,,Veiklos rūšis pagal Taisyklių 2 priedą,,2,open,,Vykdomos veiklos rūšies pavadinimas,"Nurodoma veiklos rūšis vadovaujantis Lakiųjų organinių junginių, susidarančių naudojant organinius tirpiklius tam tikrų veiklos rūšių įrenginiuose, išmetimo ribojimo ir įrenginių registravimo taisyklėmis, patvirtintomis Lietuvos Respublikos aplinkos ministro 2002 m. gruodžio 5 d. įsakymu Nr. 620 „Dėl Lakiųjų organinių junginių, susidarančių naudojant organinius tirpiklius tam tikrų veiklos rūšių įrenginiuose, išmetimo ribojimo ir įrenginių registravimo taisyklių patvirtinimo“, https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.205122/asr"
+,,,,,irenginio_pav_adresas,string,,"Įrenginio pavadinimas, adresas",,3,open,,"Įrenginio pavadinimas, vietos adresas",
+,,,,,iregistravimo_data,string,,Įrenginio įregistravimo data,,2,open,,"Įrenginio įregistravimo data","Organinius tirpiklius naudojantys įrenginiai registruojami vadovaujantis Lakiųjų organinių junginių, susidarančių naudojant organinius tirpiklius tam tikrų veiklos rūšių įrenginiuose, išmetimo ribojimo ir įrenginių registravimo taisyklėmis, patvirtintomis Lietuvos Respublikos aplinkos ministro 2002 m. gruodžio 5 d. įsakymu Nr. 620 „Dėl Lakiųjų organinių junginių, susidarančių naudojant organinius tirpiklius tam tikrų veiklos rūšių įrenginiuose, išmetimo ribojimo ir įrenginių registravimo taisyklių patvirtinimo“. Pateikus įrenginio registracijos duomenis (Taisyklių 6 priede nurodytą informaciją), įrenginys įrašomas į Organinius tirpiklius naudojančių įrenginių sąrašą, https://aaa.lrv.lt/lt/veiklos-sritys/tarsos-prevencija/tirpiklius-naudojantys-irenginiai"
+,,,,,tikslinimo_data,string,,Įrenginio registracijos duomenų tikslinimo data,,2,open,,Įrenginio registracijos duomenų patikslinimo pateikimo data (-os),
+,,,,,isregistravimo_data,datetime,,Įrenginio išregistravimo data,D,3,open,,Įrenginio išregistravimo data,
+,,,,,suvartojimo_riba,string,,"Organinio tirpiklio suvartojimo riba, t/m",,2,open,,"Vykdomos veiklos rūšies organinio tirpiklio suvartojimo riba, t/m",Nurodomos Taisyklių 2 priede kiekvienai veiklos rūšiai nurodytų organizuotai ir neorganizuotai išmetamų LOJ ribinės vertės arba bendro išmetamų LOJ kiekio ribinės vertės 
+,,,,,jurid_asm_kodas,number,,Juridinio asmens kodas,,4,open,,Juridinio asmens kodas,
+,,,,,sprendimo_data_nr,string,,"Sprendimo/rašto dėl įrenginio registracijos, jo patikslinimo ar išregistravimo data, Nr.",,3,open,,"Įrenginio registracijos, jo patikslinimo ar išregistravimo data, sprendimo/rašto  išsiuntimo data ir Nr.",
+,,,,,pastabos,string,,Pastabos,,3,open,,Papildoma informacija,
+,,,,,kiekio_reikalavimai,string,,Išmetamų LOJ kiekio monitoringo reikalavimai,,3,open,,Vykdomo monitoringo būdas,"Pateikiamas Taisyklių 33 punkte nurodytas monitoringo būdas (skaičiavimo arba matavimo) ir dažnumas, taikomos išmetamų LOJ (Lakiųjų organinių junginių) ribinės vertės"
+,,,,,,,,,,,,,,
