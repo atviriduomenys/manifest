@@ -1,29 +1,43 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/vap,,,,,,,,,,,,,
-,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_det.zip,"self.extract(""zip"")[""apdraustieji_det.csv""]",,,,,
-,,,,Apdraustieji,,,"agregavimas, apdraustuju_rusis",,,,,,,
-,,,,,agregavimas,string,,AGREGAVIMAS,,3,open,,agregavimo lygmuo,Agregavimo lygmuo
-,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,met� m�nuo,M�nuo 
-,,,,,apdraustuju_rusis,string,,APDRAUSTUJU_RUSIS,,3,open,,apdraust�j� r��is,Apdraust�j� r��is
-,,,,,draudejo_grupe,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_GRUPE,,4,open,,draud�jo grup�,Draud�jo grup�
-,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_TIPAS,,4,open,,draud�jo tipas,Draud�jo tipas
-,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldyb�,Savivaldyb�
-,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
-,,,,,amzius,string,,AMZIUS,,3,open,,am�ius,Am�ius
-,,,,,darbo_uzmok_eur,number,,DARBO_UZMOK_EUR,,3,open,,"darbo u�mokestis, Eur","Darbo u�mokestis, Eur"
-,,,,,apdr_asm_sk,number,,APDR_ASM_SK,,3,open,,apdraust�j� asmen� skai�ius,Apdraustieji � fiziniai asmenys kurie valstybinio socialinio draudimo �mokas moka patys arba u� juos �ias �mokas moka draud�jai
+,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_det.zip,"self.extract(""zip"")[""apdraustieji_det.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Apdraustasis,,,"metu_menuo, darbo_uzmok_eur",,,2,,,,
+,,,,,agregavimas,string,,AGREGAVIMAS,,3,open,,Agregavimo lygmuo,
+,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo, 
+,,,,,apdraustuju_rusis,string,,APDRAUSTUJU_RUSIS,,3,open,,Apdraustųjų rūšis,
+,,,,,draudejo_grupe,ref,/datasets/gov/vsdfv/ds/Draudejai[draudeju_grupe],DRAUDEJO_GRUPE,,4,open,,Draudėjo grupė,
+,,,,,,comment,type,,"update(property: ""draudejo_grupe.draudeju_grupe"", type: """")",4,,Spinta:216,,
+,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai[draudeju_tipas],DRAUDEJO_TIPAS,,4,open,,Draudėjo tipas,
+,,,,,,comment,type,,"update(property: ""draudejo_tipas.draudeju_tipas"", type: """")",4,,Spinta:216,,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],SAVIVALDYBE,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,lytis,string,,LYTIS,,4,open,,Lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
+,,,,,darbo_uzmok_eur,number,,DARBO_UZMOK_EUR,,2,open,,"Darbo užmokestis, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,apdr_asm_sk,integer,,APDR_ASM_SK,,4,open,,Apdraustųjų asmenų skaičius,Apdraustieji fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
 ,,,,,,,,,,,,,,
-,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""]",,,,,
-,,,,PajamuAnalize,,,"amzius, lytis",,,,,,,
-,,,,,metai,date,1Y,metai,,2,open,,Metai,Metai
-,,,,,menuo,date,1M,mėnuo,,2,open,,M�nuo,M�nuo
-,,,,,amzius,number,,amžius,,3,open,,Apdraustojo am�ius (met� tikslumu),Apdraustojo am�ius (met� tikslumu)
-,,,,,lytis,string,,lytis,,3,open,,Apdraustojo lytis,Lytis
-,,,,,menesio_pajamos ,number,,mėnesio pajamos ,,3,open,,"Apdraustojo m�nesio pajamos, Eur ","Asmen�, dirbusi� piln� m�n. pajamos, nuo kuri� buvo priskai�iuotos valstybinio socialinio draudimo �mokos per ataskaitin� laikotarp�."
+,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,PajamuAnalize,,,"metai, menuo",,,2,,,,
+,,,,,metai,integer,,metai,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,menuo,integer,,mėnuo,,2,open,,Mėnuo,
+,,,,,amzius,integer,,amžius,,3,open,,Apdraustojo amžius (metų tikslumu),
+,,,,,lytis,string,,lytis,,4,open,,Apdraustojo lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],savivaldybe,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,menesio_pajamos ,number,,mėnesio pajamos ,,3,open,,"Apdraustojo mėnesio pajamos, Eur ","Asmenų, dirbusių pilnų mėn. pajamos, nuo kurių buvo priskaičiuotos valstybinio socialinio draudimo įmokos per ataskaitinį laikotarpį."
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,sodraprofesija,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_2_4.csv,,,,,,
-,,,,ApdraustiejiPagalProfesija,,,,,,,,,,
-,,,,,metai,date,1Y,Metai,,2,open,,Metai,Metai
-,,,,,menuo,date,1M,Mėnuo,,2,open,,M�nuo,M�nuo
-,,,,,profesija,string,,Profesija,,3,open,,Profesija,Darbdavio suteiktas ketur�enklis profesijos kodas i� LPK
-,,,,,vid_apdraustuju_pajamos,number,,Vid. apdraustųjų pajamos,,3,open,,"Vidutin�s apdraust�j� pajamos, Eur","Vidutin�s apdraust�j� pajamos � vidutin�s asmens pajamos, nuo kuri� buvo priskai�iuotos valstybinio socialinio draudimo �mokos per ataskaitin� laikotarp�"
+,,,,ApdraustiejiPagalProfesija,,,"metai, menuo, profesija",,,2,,,,
+,,,,,metai,integer,,Metai,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,menuo,string,,Mėnuo,,2,open,,Mėnuo,
+,,,,,profesija,string,,Profesija,,3,open,,Profesija,Darbdavio suteiktas keturženklis profesijos kodas iš LPK
+,,,,,vid_apdraustuju_pajamos,number,,Vid. apdraustųjų pajamos,,3,open,,"Vidutinės apdraustųjų pajamos, Eur","Vidutinės apdraustųjų pajamos vidutinės asmens pajamos, nuo kurių buvo priskaičiuotos valstybinio socialinio draudimo įmokos per ataskaitinį laikotarpį"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

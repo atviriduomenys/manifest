@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vsdfv/pkismokos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodrapkismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_ismokos.zip,"extract(""zip"")[""pk_ismokos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,PkIsmoka,,,metai,,,2,,,,
+,,,,,metai,integer,,METAI,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ismoku_sutarciu_sk,integer,,ISM_SUT_SKC,,4,open,,Išmokų sutarčių skaičius (kiek sudaryta iš viso),
+,,,,,vienkartine_ismoka_sk,integer,,VNK_SKC,,4,open,,Vienkartinė išmoka,
+,,,,,periodine_ismoka_sk,integer,,PER_SKC,,4,open,,Periodinė išmoka,
+,,,,,standartinis_anuitetas_sk,integer,,STND_SKC,,4,open,,Standartinis anuitetas,
+,,,,,atidetas_anuitetas_sk,integer,,ATID_SKC,,4,open,,Atidėtas anuitetas,
+,,,,,anuitetas_su_gar_mok_sk,integer,,STND_GAR_SKC,,4,open,,Anuitetas su garantuotu mokejimu,Anuitetas su garantuojamu mokėjimo laikotarpiu
