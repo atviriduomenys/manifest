@@ -35,7 +35,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""2""",,,,2 - įrašyti nuo laukelyje PRADZIA datos iki laukelyje PABAIGA,
 ,,,,,veiklos_vieta_sav_kodas,string,,,,4,open,,"Savivaldybės kodas"","" kurios teritorijoje yra veiklos vykdymo vieta",
 ,,,,,anuliavimo_priezastis_aprasymas,string,,,,4,open,,VL anuliavimo priežastis: ,
-,,,,,,,,,"""3""",,,,3 - Prašymo įvedimo klaida,
-,,,,,,,,,"""4""",,,,4 - Anuliuotas prašymas,
 ,,,,,veiklos_tipas,string,,,,4,open,,Ar tai stacionarioje vietoje vykdoma veikla (taip/ne).,
 ,,,,,lengvata,string,,,,4,open,,Lengvatos priežasties pavadinimas,
