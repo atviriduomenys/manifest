@@ -18,7 +18,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,teritorija_kodas,string,,,,4,open,,"Konkrečios savivaldybės kodas"","" kurios teritorijoje prašoma vykdyti veiklą su šiuo VL",
 ,,,,,rusies_kodas,string,,,,4,open,,"Veiklos"","" kuria verčiamasi įsigijus verslo liudijimą"","" rūšies kodas (pirmoji kodo dalis)",
 ,,,,,rusis_pavadinimas,string,,,,4,open,,"Veiklos"","" kuria verčiamasi įsigijus verslo liudijimą"","" rūšies pavadinimas",
-,,,,,rusies_kodas,string,,,,4,open,,,
 ,,,,,evrk_klases,string,,,,4,open,,EVRK klasės pavadinimas,
 ,,,,,data_nuo,date,D,,,4,open,,Verslo liūdijimo įsigaliojimo pradžia,
 ,,,,,data_iki,date,D,,,4,open,,Verslo liūdijimo įsigaliojimo pabaiga,
