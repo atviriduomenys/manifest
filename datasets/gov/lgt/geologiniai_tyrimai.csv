@@ -1,4 +1,4 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/geologiniai_tyrimai,,,,,,,,,,,,Geologinių tyrimų ataskaitų katalogas,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisTyrimas,,,fondo_nr,,,4,open,,Geologinių tyrimų ataskaitų katalogas,
