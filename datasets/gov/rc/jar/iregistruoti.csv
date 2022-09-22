@@ -18,6 +18,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,"create(property: ""statusas"", type: ""ref"", ref: ""Statusas"")",,4,,,,
 ,,,,,,comment,property,"update(property: ""statusas.kodas, type: """")",,4,,spinta:216,,
 ,,,,,stat_pavadinimas,string,,stat_pavadinimas,,2,open,,Statuso pavadinimas,
-,,,,,,comment,property,"update(property: ""statusas.status_pavadinimas, type: """")",,4,,spinta:216,,
+,,,,,,comment,property,"update(property: ""statusas.pavadinimas, type: """")",,4,,spinta:216,,
 ,,,,,stat_data_nuo,date,D,stat_data_nuo,,4,open,,Statuso įregistravimo data,
 ,,,,,formavimo_data,date,D,formavimo_data,,4,open,,Duomenų publikavimo data,
