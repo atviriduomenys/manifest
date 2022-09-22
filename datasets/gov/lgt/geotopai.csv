@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/geotopu_sarasas,,,,,,,,,,,,Geotopų sąrašas (katalogas),
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 ,,,,Geotopas,,,id,,,4,open,,Geotopų sąrašas (katalogas) ,
 ,,,,,eil_nr,integer,,,,4,open,,Įrašo eilės numeris,
 ,,,,,tipas,string,,,,3,open,,Geotopo tipas,
