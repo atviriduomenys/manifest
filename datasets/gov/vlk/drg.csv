@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""pdk.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,pkd_pavadinimas,string,,,,2,open,,PDK pavadinimas,Pagrindinės diagnostinės kategorijos (PDK) pavadinimas.
 ,,,,,,comment,property,,"update(property: ""pdk.pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
-,,,,,spdgv_id,ref,DrgVersijos,,,4,open,,Nuoroda į DRG versijas,
+,,,,,versija,ref,Versija,,,4,open,,Nuoroda į DRG versijas,
 ,,,,,,,,,,,,,,
 ,,,,Koeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
 ,,,,,drg_id,ref,DrgGrupes,,,4,open,,Nuoroda į DRG grupes,
