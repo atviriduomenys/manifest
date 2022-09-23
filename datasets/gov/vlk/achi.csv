@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(property: ""blokas.grupe"", type: """")",4,,spinta:216,,
 ,,,,,skyriaus_pavadinimas,string,,,,2,open,,Skyriaus pavadinimas,Medicininių intervencijų klasifikacijos skyriaus pavadinimas (pagal medicinos specialybes)
 ,,,,,,comment,,,"update(property: ""skyrius.pavadinimas"", type: """")",,,,,
-,,,,,operacija,integer,,,,2,open,,Operacija,"Galimos trys reikšmės: 1) ""Taip"" - operacinėje atliekama procedūra (operacija) – tai medicininė procedūra,  kuri  pagal AR-DRG  8.0 versiją  laikoma  svarbia bet  kurioje PDK ir nulemia gydymo atvejo priskyrimą chirurginio pobūdžio DRG. 2) ""Ne"" - ne opera"
+,,,,,operacija,integer,,,,2,open,,Operacija,"Galimos trys reikšmės: 1) ""Taip"" - operacinėje atliekama procedūra (operacija) – tai medicininė procedūra,  kuri  pagal AR-DRG  8.0 versiją  laikoma  svarbia bet  kurioje PDK ir nulemia gydymo atvejo priskyrimą chirurginio pobūdžio DRG. 2) ""Ne"" - ne operacinėje atliekama procedūra"
 ,,,,,,enum,,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Taip""",,,,Taip,
 ,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,spinta: 293,,
@@ -51,4 +51,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""VI""",,,,VI - grupė,
 ,,,,,nuo,date,D,,,4,open,,Galioja nuo,Dienos chirurgijos procedūros galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Galioja iki,Dienos chirurgijos procedūros galiojimo pabaigos data
-
