@@ -24,7 +24,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""pdk_pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,spdgv_id,ref,DrgVersijos,,,4,open,,Nuoroda į DRG versijas,
 ,,,,,,,,,,,,,,
-,,,,DrgKoeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
+,,,,Koeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
 ,,,,,drg_id,ref,DrgGrupes,,,4,open,,Nuoroda į DRG grupes,
 ,,,,,nuo,date,D,,,4,open,,DRG koeficientai galioja nuo,Giminingų diagnozių grupių kainos koeficiento galiojimo pradžios data
 ,,,,,vienos_dienos,number,,,,4,open,,Dienos DRG koeficientai,"Giminingų diagnozių grupių dienos gydymo kainos koeficientas. Dienos gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas atvyksta į asmens sveikatos priežiūros įstaigą ir išvyksta iš jos tą pačią dieną. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos II paslaugų grupei priskiriamos paslaugos"
