@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iki,date,D,,,4,open,,Galioja iki,Procedūros (ACHI) galiojimo pabaigos data
 ,,,,,,,,,,,,,,
 ,,,,Paslauga,,,,,,4,,,Dienos chirurgijos metu atiliekamų intervencijų sąrašas,
-,,,,,achi_id,ref,Intervencijos,,,4,open,,ACHI ID,Nuoroda į Intervencijas
+,,,,,achi_id,ref,Intervencija,,,4,open,,ACHI ID,Nuoroda į Intervencijas
 ,,,,,is_gnr_anestesia,integer,int_r,,,4,open,,Bendroji nejautra,
 ,,,,,is_rgn_anestesia,integer,int_r,,,4,open,,Regioninė nejautra,
 ,,,,,dchir_grupe,integer,,,,4,open,,Paslaugų grupė,Dienos chirurgijos paslaugų grupė
