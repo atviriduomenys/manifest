@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""L""",,,,L - liga,
 ,,,,,,,,,"""K""",,,,K - kita su mokesčio grąžinimu,
 ,,,,,,,,,"""A""",,,,A - nutraukimas be mokesčio grąžinimo,
-,,,,,veiklos_vieta_veiksmas,string,,,,4,open,,Ką daryti su veiklos vieta: ,
+,,,,,veiklos_vieta_veiksmas,integer,,,,4,open,,Ką daryti su veiklos vieta: ,
 ,,,,,,enum,,,"""0""",,,,"0 - išbraukti (anksčiau įrašyta) nuo laukelyje PRADZIA datos"","" ",
 ,,,,,,,,,"""1""",,,,"1 - įrašyti nuo laukelyje PRADZIA datos"","" ",
 ,,,,,,,,,"""2""",,,,2 - įrašyti nuo laukelyje PRADZIA datos iki laukelyje PABAIGA,
