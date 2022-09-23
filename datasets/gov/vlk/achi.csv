@@ -30,11 +30,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,operacija,integer,,,,2,open,,Operacija,"Galimos trys reikšmės: 1) ""Taip"" - operacinėje atliekama procedūra (operacija) – tai medicininė procedūra,  kuri  pagal AR-DRG  8.0 versiją  laikoma  svarbia bet  kurioje PDK ir nulemia gydymo atvejo priskyrimą chirurginio pobūdžio DRG. 2) ""Ne"" - ne operacinėje atliekama procedūra"
 ,,,,,,enum,,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Taip""",,,,Taip,
-,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,spinta: 293,,
+,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,"spinta: 293,vadovas:dsa/dimensijos.html#klasifikatoriai",,
 ,,,,,didzioji_operacija,integer,,,,4,open,,Didžioji operacija,"Nurodoma ar ACHI kodas priklauso didžiųjų operacijų sąrašui patvirtintam Sveikatos apsaugos ministro 2012 m. vasario 27 d. įsakymu Nr. V-145 ""Dėl Didžiųjų operacijų sąrašo sudarymo tvarkos aprašo ir didžiųjų operacijų sąrašo patvirtinimo"""
 ,,,,,,enum,,,"""Ne""",,,,,
 ,,,,,,,,,"""Taip""",,,,,
-,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,spinta: 293,,
+,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,"spinta: 293,vadovas:dsa/dimensijos.html#klasifikatoriai",,
 ,,,,,nuo,date,D,,,4,open,,Galioja nuo,Procedūros (ACHI) galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Galioja iki,Procedūros (ACHI) galiojimo pabaigos data
 ,,,,,,,,,,,,,,
