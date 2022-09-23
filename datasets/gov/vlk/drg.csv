@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,versija,ref,Versija,,,4,open,,Nuoroda į DRG versijas,
 ,,,,,,,,,,,,,,
 ,,,,Koeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
-,,,,,drg_id,ref,DrgGrupes,,,4,open,,Nuoroda į DRG grupes,
+,,,,,drg_id,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
 ,,,,,nuo,date,D,,,4,open,,DRG koeficientai galioja nuo,Giminingų diagnozių grupių kainos koeficiento galiojimo pradžios data
 ,,,,,vienos_dienos,number,,,,4,open,,Dienos DRG koeficientai,"Giminingų diagnozių grupių dienos gydymo kainos koeficientas. Dienos gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas atvyksta į asmens sveikatos priežiūros įstaigą ir išvyksta iš jos tą pačią dieną. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos II paslaugų grupei priskiriamos paslaugos"
 ,,,,,iki,date,D,,,4,open,,DRG koeficientai galioja iki,Giminingų diagnozių grupių kainos koeficiento galiojimo pabaigos data
@@ -35,7 +35,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lovadienio_max,number,,,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė ilgesnė nei maksimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė ilgesnė nei minimali"
 ,,,,,,,,,,,,,,
 ,,,,Trukmes,,,,,,4,,,DRG trukmės,Giminingų diagnozių grupių gydymo trukmės
-,,,,,grupe,ref,DrgGrupes,,,4,open,,Nuoroda į DRG grupes,
+,,,,,grupe,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
 ,,,,,minimali,integer,,,,4,open,,Minimali DRG trukmė,Minimali gydymo trukmė (lovadieniai)
 ,,,,,vidutine,integer,,,,4,open,,Vidutinė DRG trukmė,Vidutinė gydymo trukmė (lovadieniai)
 ,,,,,maksimali,integer,,,,4,open,,Maksimali DRG trukmė,Maksimali gydymo trukmė (lovadieniai)
