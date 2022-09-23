@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,DRG pavadinimas (LT),Giminingų diagnozių grupės pavadinimas lietuvių kalba.
 ,,,,,adrg_kodas,string,,,,2,open,,ADRG kodas,Gretimų giminingų diagnozių grupės kodas
 ,,,,,,comment,property,,"create(property: ""adrg"", type: ""ref"", ref: ""Adrg"")",4,,,,
-,,,,,,comment,property,,"update(property: ""adrg_kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""adrg.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,adrg_pavadinimas,string,,,,2,open,,ADRG pavadinimas,Gretimų giminingų diagnozių grupės pavadinimas
 ,,,,,,comment,property,,"update(property: ""adrg_pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,profilis,string,,,,4,open,,Profilis,Giminingų diagnozių grupės profilis
