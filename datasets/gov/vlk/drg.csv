@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,DrgGrupes,,,,,,4,,,DRG grupių sąrašas,"Informacija apie giminingų diagnozių grupes. Kiekvieną ADRG sudaro DRGs, kurios skiriasi pagal sunaudojamus išteklius. DRGs – tai detaliausias klasifikavimo lygmuo. ADRG dažniausiai skirstoma į DRGs pagal gydymo atvejo klinikinio sudėtingumo lygmenis."
+,,,,Grupe,,,,,,4,,,DRG grupių sąrašas,"Informacija apie giminingų diagnozių grupes. Kiekvieną ADRG sudaro DRGs, kurios skiriasi pagal sunaudojamus išteklius. DRGs – tai detaliausias klasifikavimo lygmuo. ADRG dažniausiai skirstoma į DRGs pagal gydymo atvejo klinikinio sudėtingumo lygmenis."
 ,,,,,kodas,string,,,,4,open,,DRG kodas,Giminingų diagnozių grupės kodas
 ,,,,,pavadinimas,string,,,,4,open,,DRG pavadinimas (LT),Giminingų diagnozių grupės pavadinimas lietuvių kalba.
 ,,,,,adrg_kodas,string,,,,2,open,,ADRG kodas,Gretimų giminingų diagnozių grupės kodas
