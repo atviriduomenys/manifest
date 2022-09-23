@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'Terapinis',,,,Terapinis,
 ,,,,,pdk_id,integer,,,,2,open,,,
 ,,,,,,comment,property,,"create(property: ""pdk"", type: ""ref"", ref: ""Pdk"")",4,,,,
-,,,,,,comment,property,,"update(property: ""pdk_id"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""pdk.id"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,pkd_kodas,string,,,,2,open,,PDK kodas,Pagrindinės diagnostinės kategorijos (PDK) kodas
 ,,,,,,comment,property,,"update(property: ""pdk_kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,pkd_pavadinimas,string,,,,2,open,,PDK pavadinimas,Pagrindinės diagnostinės kategorijos (PDK) pavadinimas.
