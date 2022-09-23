@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vidutinio_atvejo,number,,,,4,open,,Vidutinės trukmės atvejo DRG koeficientai,"Gydymo atvejo (gydymo etapo) koeficientas - tai koeficientas, taikomas gydymo atvejo kainai nustatyti, kai gydymo trukmė ilgesnė arba lygi minimaliai ir trumpesnė arba lygi maksimaliai. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos IV–VI paslaugų grupėms priskiriamos paslaugos"
 ,,,,,lovadienio_max,number,,,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė ilgesnė nei maksimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė ilgesnė nei minimali"
 ,,,,,,,,,,,,,,
-,,,,DrgTrukmes,,,,,,4,,,DRG trukmės,Giminingų diagnozių grupių gydymo trukmės
+,,,,Trukmes,,,,,,4,,,DRG trukmės,Giminingų diagnozių grupių gydymo trukmės
 ,,,,,drg_id,ref,DrgGrupes,,,4,open,,Nuoroda į DRG grupes,
 ,,,,,minimali,integer,,,,4,open,,Minimali DRG trukmė,Minimali gydymo trukmė (lovadieniai)
 ,,,,,vidutine,integer,,,,4,open,,Vidutinė DRG trukmė,Vidutinė gydymo trukmė (lovadieniai)
