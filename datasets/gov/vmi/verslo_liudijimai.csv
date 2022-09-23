@@ -48,8 +48,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veiklos_tipas,integer,,,,4,open,,Ar tai stacionarioje vietoje vykdoma veikla.,
 ,,,,,,enum,,,"""0""",,,,"0 - nestacionari",
 ,,,,,,,,,"""1""",,,,"1 - stacionari",
-,,,,,anuliavimo_data,date,D,,,4,open,,Verslo liūdijimo anuliavimo data,
-,,,,,anuliavimo_priezastis,string,,,,2,open,,Verslo liūdijimo anuliavimo priežastis,
 ,,,,,lengvata,string,,,,4,open,,Lengvatos priežasties pavadinimas,
 ,,,,,,enum,,,"""Taip""",,,,Taip - lengvatą turi,
 ,,,,,,,,,"""Ne""",,,,Ne - lengvatos neturi,
