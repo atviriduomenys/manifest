@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,int_r,,"""Ne""",,,,,
 ,,,,,,,,,"""Taip""",,,,,
 ,,,,,,,,,,,,,,
-,,,,Intervencijos,,,id,,,4,,,Medicininių intervencijų sąrašas,"Informacija apie medicinines intervencijas. ACHI – tai Australijos medicininių intervencijų klasifikacija. Jos devintasis leidimas pakeičia aštuntąjį, išleistą 2013 metais."
+,,,,Intervencijos,,,,,,4,,,Medicininių intervencijų sąrašas,"Informacija apie medicinines intervencijas. ACHI – tai Australijos medicininių intervencijų klasifikacija. Jos devintasis leidimas pakeičia aštuntąjį, išleistą 2013 metais."
 ,,,,,achi_kodas,string,,,,4,open,,ACHI kodas,Procedūros (ACHI) kodas pagal Australijos medicininių intervencijų klasifikaciją
 ,,,,,achi_pavadinimas,string,,,,4,open,,ACHI pavadinimas,Procedūros (ACHI) pavadinimas pagal Australijos medicininių intervencijų klasifikaciją
 ,,,,,bloko_nr,integer,,,,2,open,,Bloko numeris,"Bloko, kurį sudaro susijusios pagal tam tikrus požymius (anatominę sritį ir procedūros tipą) procedūros,  numeris"
@@ -38,7 +38,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuo,date,D,,,4,open,,Galioja nuo,Procedūros (ACHI) galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Galioja iki,Procedūros (ACHI) galiojimo pabaigos data
 ,,,,,,,,,,,,,,
-,,,,DchPaslaugos,,,id,,,4,,,Dienos chirurgijos metu atiliekamų intervencijų sąrašas,
+,,,,DchPaslaugos,,,achi_id,,,4,,,Dienos chirurgijos metu atiliekamų intervencijų sąrašas,
 ,,,,,achi_id,ref,Intervencijos,,,4,open,,ACHI ID,Nuoroda į Intervencijas
 ,,,,,is_gnr_anestesia,integer,int_r,,,4,open,,Bendroji nejautra,
 ,,,,,is_rgn_anestesia,integer,int_r,,,4,open,,Regioninė nejautra,
