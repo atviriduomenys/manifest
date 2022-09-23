@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuo,date,D,,,4,open,,DRG trukmė (nuo),Normatyvinės gydymo trukmės galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,DRG trukmė (iki),Normatyvinės gydymo trukmės galiojimo pabaigos data
 ,,,,,,,,,,,,,,
-,,,,DrgVersijos,,,,,,4,,,DRG versijos,AR-DRG klasifikacijos versija
+,,,,Versija,,,,,,4,,,DRG versijos,AR-DRG klasifikacijos versija
 ,,,,,versija,string,,,,4,open,,Versija,AR-DRG klasifikacijos versija
 ,,,,,nuo,date,D,,,4,open,,Versija galioja nuo,AR-DRG klasifikacijos versijos galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Versija galioja iki,AR-DRG klasifikacijos versijos galiojimo pabaigos data
