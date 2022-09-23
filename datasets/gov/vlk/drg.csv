@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,versija,ref,Versija,,,4,open,,Nuoroda į DRG versijas,
 ,,,,,,,,,,,,,,
 ,,,,Koeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
-,,,,,drg_id,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
+,,,,,grupe,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
 ,,,,,nuo,date,D,,,4,open,,DRG koeficientai galioja nuo,Giminingų diagnozių grupių kainos koeficiento galiojimo pradžios data
 ,,,,,vienos_dienos,number,,,,4,open,,Dienos DRG koeficientai,"Giminingų diagnozių grupių dienos gydymo kainos koeficientas. Dienos gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas atvyksta į asmens sveikatos priežiūros įstaigą ir išvyksta iš jos tą pačią dieną. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos II paslaugų grupei priskiriamos paslaugos"
 ,,,,,iki,date,D,,,4,open,,DRG koeficientai galioja iki,Giminingų diagnozių grupių kainos koeficiento galiojimo pabaigos data
