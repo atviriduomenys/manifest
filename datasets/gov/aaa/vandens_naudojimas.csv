@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/vandens_naudojimas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,DtvDok,,,,dok_laikotarpio_tipas,,4,,,Dokumentai (metinės"," mėnesinė ir kitaip apibrėžto laikotarpio ataskaitos),
+,,,,DtvDok,,,,dok_laikotarpio_tipas,,4,open,,Dokumentai (metinės"," mėnesinė ir kitaip apibrėžto laikotarpio ataskaitos),
 ,,,,,dok_laikotarpio_tipas,string,,,,4,open,,Laikotarpio"," už kurį teikiamas dokumentas"," tipas (pvz."," už konkrečią datą"," už mėnesį).,
 ,,,,,,enum,,,“M”,4,,,Už mėnesį,
 ,,,,,,,,,“L”,4,,,Už laikotarpį,
