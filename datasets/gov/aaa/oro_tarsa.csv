@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,D,,,,,
 ,,,,,,,,,L,,,,,
 ,,,,,,,,,M,,,,,
-,,,,,dok_atsisk_data_nuo,date,Y,dok_atsisk_data_nuo,extract(year from dok_atsisk_data_nuo),3,open,,"Data, už kurią yra teikiamas dokumentas.",
+,,,,,dok_atsisk_data_nuo,date,Y,dok_atsisk_data_nuo,,3,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,dok_atsisk_data_iki,date,Y,dok_atsisk_data_iki,,3,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,,,,,,,,,,
 ,,,,DtvAob,,,aob_id,dtv_aob,,2,,,"Atsiskaitantys objektai (ATASKAITINIS OBJEKTAS, ŪKIO SUBJEKTAS, ŪS VEIKLOS OBJEKTAS )",
