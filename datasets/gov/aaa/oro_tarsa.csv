@@ -4,11 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,DtvDok,,,dok_id,,,2,,,"Dokumentai (metinės, mėnesinė ir kitaip apibrėžto laikotarpio ataskaitos)",
 ,,,,,dok_id,integer,,,,2,open,,,
-,,,,,dok_laikotarpio_tipas,string,,dok_laikotarpio_tipas,,3,open,,"Laikotarpio, už kurį teikiamas dokumentas, tipas (pvz., už konkrečią datą, už mėnesį).",Klasifikatorius
-,,,,,,enum,,,Y,,,,,
-,,,,,,,,,D,,,,,
-,,,,,,,,,L,,,,,
-,,,,,,,,,M,,,,,
+,,,,,dok_laikotarpio_tipas,string,,dok_laikotarpio_tipas,,2,open,,"Laikotarpio, už kurį teikiamas dokumentas, tipas (pvz., už konkrečią datą, už mėnesį).",
 ,,,,,dok_atsisk_data_nuo,integer,,dok_atsisk_data_nuo,,3,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,dok_atsisk_data_iki,integer,,dok_atsisk_data_iki,,3,open,,"Data, už kurią yra teikiamas dokumentas.",
