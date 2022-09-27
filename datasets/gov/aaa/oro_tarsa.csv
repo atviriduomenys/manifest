@@ -15,14 +15,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aob_kodas,string,,aob_kodas,,2,open,,Ataskaitinio objekto kodas,
 ,,,,,aob_pavad,string,,aob_pavad,,2,open,,"Ataskaitinio objekto pavadinimas. Ūkio subjekto pagrindinės įmonės atveju nurodomas toks pat kaip JAR, o filialų atveju nurodomas rankiniu būdu",
 ,,,,,aob_panaikinta,string,,aob_panaikinta,,3,open,,Panaikinimo požymis,
-,,,,,,enum,,,T,,,,,Taip
-,,,,,,,,,null,,,,,Ne
 ,,,,,,,,,,,,,,
 ,,,,DtvIsm,,,ism_id,,,2,,,Teršalai iš Ūkinės Veiklos Objektų,
 ,,,,,ism_id,integer,,,,2,open,,,
 ,,,,,ism_mat_vnt,string,,ism_mat_vnt,,3,open,,Teršalo matavimo vienetai (Klasifikatorius),
-,,,,,,enum,,,T,,,,,Tonos
-,,,,,,,,,M,,,,,Kubiniai metrai
+,,,,,,enum,,,"T",,,,,Tonos
+,,,,,,,,,"M",,,,,Kubiniai metrai
 ,,,,,ism_kiek_per_ats_met,integer,,ism_kiek_per_ats_met,,3,open,,Per ataskaitinius metus į aplinkos orą patekęs teršalų kiekis,
 ,,,,,ism_kiek_per_pr_met,integer,,ism_kiek_per_pr_met,,3,open,,Per praėjusius metus į aplinkos orą patekęs teršalų kiekis (išskaičiuojamas iš praeitų metų ataskaitos duomenų),
 ,,,,,,,,,,,,,,
@@ -31,9 +29,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,trs_kodas,string,,trs_kodas,,2,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše.",
 ,,,,,trs_pavad,string,,trs_pavad,,2,open,,Teršalo pavadinimas,
 ,,,,,trs_grupe,string,,trs_grupe,,3,,,Teršalų grupavimas.,
-,,,,,,enum,,,V,,,,,Teršalai išleidžiami į aplinką (vandenį)
-,,,,,,,,,I,,,,,Teršalai išleidžiami į žemę
-,,,,,,,,,O,,,,,Teršalai išmetami į aplinkos orą
+,,,,,,enum,,,"V",,,,,Teršalai išleidžiami į aplinką (vandenį)
+,,,,,,,,,"I",,,,,Teršalai išleidžiami į žemę
+,,,,,,,,,"O",,,,,Teršalai išmetami į aplinkos orą
 ,,,,,,,,,,,,,,
 ,,,,DtvMpr,,,mpr_id,,,2,,,Taršos Mažinimo Priemonė,
 ,,,,,mpr_id,integer,,,,2,open,,,
@@ -54,8 +52,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,snk_id,integer,,,,2,open,,,
 ,,,,,snk_pavad,string,,snk_pavad,,2,open,,"Sunaudoto kuro patikslintas pavadinimas, kai nurodyti kuro kodai 121, 224, 225, 314.",
 ,,,,,snk_mat_vnt,string,,snk_mat_vnt,,3,open,,Sunaudoto kuro kiekio matavimo vienetai,
-,,,,,,enum,,,T,,,,,Tonos
-,,,,,,,,,M,,,,,Kubiniai metrai
+,,,,,,enum,,,"T",,,,,Tonos
+,,,,,,,,,"M",,,,,Kubiniai metrai
 ,,,,,snk_kiekis,integer,,snk_kiekis,,3,open,,"Sunaudoto kuro kiekis tonomis, jei naudojamas kietas arba skystas kuras, ir tūkst. m3, jei naudojamas dujinis kuras.",
 ,,,,,snk_sieringumas,integer,,snk_sieringumas,,3,open,,Sunaudoto kuro sieringumas procentais.,
 ,,,,,snk_pelningumas,integer,,snk_pelningumas,,3,open,,Sunaudoto kuro peleningumas procentais.,
