@@ -24,7 +24,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aob_id,integer,,,,2,open,,,
 ,,,,,aob_busena,string,,aob_busena,,2,open,,Ataskaitinio objekto būsena,
 ,,,,,aob_rusis,string,,aob_rusis,,2,open,,Ataskaitinio objekto rūšis,
-,,,,,aob_org_id,ref,,aob_org_id,,2,open,,Organizacinis vieneto identifikatorius,
+,,,,,aob_org_id,ref,datasets/gov/aaa/fdujos/DtvOrg,aob_org_id,,2,open,,Organizacinis vieneto identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,DtvDok,,,dok_id,,,2,,,"Dokumentai (metinės, mėnesinė ir kitaip apibrėžto laikotarpio ataskaitos)",
 ,,,,,dok_id,integer,,,,2,open,,,
