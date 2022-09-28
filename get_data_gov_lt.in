@@ -22,8 +22,10 @@ datasets/gov/rc/ar/graistgyvenamojivietove.csv
 datasets/gov/rc/ar/gragatve.csv
 datasets/gov/rc/ar/graistgatve.csv
 datasets/gov/rc/ar/adresotaskas.csv
+datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
+datasets/gov/lsd/svietimo_istaigos.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
 datasets/gov/lsd/namu_ukio_biudzetas.csv
 datasets/gov/lsd/gyventojai_bustas.csv
@@ -52,7 +54,10 @@ datasets/gov/vmi/nt.csv
 datasets/gov/aaa/juros_mariu_monitoringas.csv
 datasets/gov/giscentras/grpk.csv
 datasets/gov/vmi/prekiu_paslaugu_es_pvm.csv
+datasets/gov/vmi/verslo_liudijimai.csv
 datasets/gov/vmi/zemes_mokestis.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
+datasets/gov/vlk/drg.csv
+datasets/gov/vlk/achi.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
