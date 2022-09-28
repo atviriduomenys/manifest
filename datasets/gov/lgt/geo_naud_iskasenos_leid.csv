@@ -9,5 +9,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data_iki,date,D,,,4,open,,Leidimas galioja iki,
 ,,,,,ja_kodas,integer,,,,2,open,,Juridinis asmuo,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
-,,,,,leid_asmuo,string,,,,4,open,,"Įmonės pavadinimas arba asmens vardas pavardė, kuriam priklauso leidimas",
+,,,,,ja_asmuo,string,,,,4,open,,"Įmonės pavadinimas arba asmens vardas pavardė, kuriam priklauso leidimas",
 ,,,,,obj_sarasas,string,,,,4,open,,Leidžiamų eksploatuoti objektų sąrašas,
