@@ -11,5 +11,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Lytis,
 ,,,,,,enum,,,"""mot""",,,,Moteris,
 ,,,,,,,,,"""vyr""",,,,Vyras,
-,,,,,priezastis,ref,,/datasets/gov/vlk/tlk10am/Tlk10am,,4,open,,"Triženklė TLK-10 diagnozė, klasifikatorius","Nerevizuota pagrindinė asmens mirties priezastis (triženklė TLK-10 diagnozė, klasifikatorius), kokią ją nurodė sveikatos priežiūros specialistas. Palčiau apie sąvokas 'pagrindinė mirties priežastis', 'tarpinė mirties priežastis' ir 'tiesioginė mirties priežastis' skaitykite čia: https://hi.lt/uploads/pdf/padaliniai/MPR/MML_rekomendacijos.pdf"
+,,,,,priezastis,ref,,/datasets/gov/vlk/tlk10am/Tlk10am[priezastis],tlk10amcode,4,open,,"Triženklė TLK-10 diagnozė, klasifikatorius","Nerevizuota pagrindinė asmens mirties priezastis (triženklė TLK-10 diagnozė, klasifikatorius), kokią ją nurodė sveikatos priežiūros specialistas. Palčiau apie sąvokas 'pagrindinė mirties priežastis', 'tarpinė mirties priežastis' ir 'tiesioginė mirties priežastis' skaitykite čia: https://hi.lt/uploads/pdf/padaliniai/MPR/MML_rekomendacijos.pdf"
 ,,,,,asmenu_sk,integer,,,,2,open,,Mirusių asmenų skaičius,
