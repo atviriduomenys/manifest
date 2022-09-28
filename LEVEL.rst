@@ -205,6 +205,9 @@ Informacijos šaltiniai
 
   __ https://atviriduomenys.readthedocs.io/dsa/ref.html#brandos-lygis
 
+- `Brandos lygių žymėjimo lentelė su kodais`__
+
+  __ https://docs.google.com/spreadsheets/d/1mIwOW462-AMBiN1prveXcqjXi2JpEsR6X-_kUaIB6Q0/edit?usp=sharing
 
 .. _spinta:40: https://github.com/atviriduomenys/spinta/issues/40
 .. _spinta:204: https://github.com/atviriduomenys/spinta/issues/204
