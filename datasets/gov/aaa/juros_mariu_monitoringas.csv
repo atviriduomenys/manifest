@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
 ,,,,,maziau_ribos,boolean,,Mažiau kiekybinio įvertinimo ribos,,4,open,,"Simbolis ""<"", žymintis, kad rezultatas yra žemiau kiekybinio įvertinimo ribos",
 ,,,,,rezultatas,number,,Parametro tyrimo rezultatas,,4,open,,Parametro tyrimo rezultatas,
-,,,,,matavimo_vnt,string,,Matavimo vienetai,,3,open,,Matavimo vienetai,Matavimo vienetas priklauso nuo tiriamo parametro.
+,,,,,matavimo_vnt,string,,Matavimo vienetai,,4,open,,Matavimo vienetai,Matavimo vienetas priklauso nuo tiriamo parametro.
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,Hidrometeorologija,,,reg_nr,,,2,,,Kuršių marių ir Baltijos jūros hidrologinių matavimų vandenyje ir meteorologinių stebėjimų duomenys,
@@ -36,8 +36,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,horizontas,string,,Vandens horizontas,,3,open,,"Vandens sluoksnis, kuriame atlikti  matavimai",
 ,,,,,gylis,number,m,Vandens gylis,,4,open,,"Gylis, kuriame atlikti matavimai, metrais",
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
-,,,,,rezultatas,string,,Parametro tyrimo rezultatas,,3,open,,Parametro tyrimo rezultatas,
-,,,,,matavimo_vnt,string,,Matavimo vienetai,,2,open,,Matavimo vienetai,
+,,,,,rezultatas,string,,Parametro tyrimo rezultatas,,4,open,,Parametro tyrimo rezultatas,
+,,,,,matavimo_vnt,string,,Matavimo vienetai,,4,open,,Matavimo vienetai,
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,"Taikomi tyrimų metodai yra tarptautiniai, nacionaliniai ir Aplinkos apsaugos agentūros struktūriniame padalinyje, atsakingame už tyrimų vykdymą ir priežiūrą, patvirtintos standartinės veiklos procedūros."
 ,,,,,,,,,,,,,,
 ,,,,ChlorofilasA,,,reg_nr,,,4,,,Kuršių marių ir Baltijos jūros chlorofilo a tyrimų duomenys,
@@ -140,7 +140,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
 ,,,,,maziau_ribos,boolean,,Mažiau kiekybinio įvertinimo ribos,,4,open,,"Simbolis ""<"", žymintis, kad rezultatas yra žemiau kiekybinio įvertinimo ribos",
 ,,,,,rezultatas,number,,Parametro tyrimo rezultatas,,4,open,,Parametro tyrimo rezultatas,
-,,,,,matavimo_vnt,string,,Matavimo vienetai,,3,open,,Matavimo vienetai,
+,,,,,matavimo_vnt,string,,Matavimo vienetai,,4,open,,Matavimo vienetai,
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,2,open,,Tyrimų metodas,
 ,,,,,,,,,,,,,,
 ,,,,SpTersalaiDN,,,reg_nr,,,2,,,Specifinių teršalų tyrimai Kuršių marių ir Baltijos jūros dugno nuosėdose,
