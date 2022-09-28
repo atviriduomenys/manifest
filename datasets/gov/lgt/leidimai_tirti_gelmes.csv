@@ -7,5 +7,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data_nuo,date,D,,,4,open,,Leidimo išdavimo data,
 ,,,,,data_iki,date,D,,,4,open,,Leidimas galioja iki,
 ,,,,,ja_kodas,integer,,,,2,open,,Juridinio asmens kodas arba fizinio asmens vardas pavardė,
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
 ,,,,,ja_asmuo,string,,,,2,open,,Juridinio asmens pavadinimas,
 ,,,,,veiklos,string,,,,2,open,,Leidžiamos veiklos,
