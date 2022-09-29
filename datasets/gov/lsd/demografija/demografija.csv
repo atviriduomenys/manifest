@@ -10,9 +10,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""mot""",,,,Moteris,
 ,,,,,,,,,"""vyr""",,,,Vyras,
 ,,,,,mirtys,integer,,,,4,open,,"Mirčių skaičius pagal mirties datą, asmens amžių ir lytį",
-
-"unq_id",
-"mirties_data",
-"amzius",
-"lytis",
-"asmenu"
