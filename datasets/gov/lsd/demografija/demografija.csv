@@ -9,4 +9,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Lytis,
 ,,,,,,enum,,,"""mot""",,,,Moteris,
 ,,,,,,,,,"""vyr""",,,,Vyras,
-,,,,,mirtys,integer,,,,2,open,,"Mirčių skaičius pagal mirties datą, asmens amžių ir lytį",
+,,,,,mirtys,integer,,,,4,open,,"Mirčių skaičius pagal mirties datą, asmens amžių ir lytį",
