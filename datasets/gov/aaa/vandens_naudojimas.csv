@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uod_tsl_upes_krantas,string,,,,4,open,,Nuotekų išleistuvo upės krantas,
 ,,,,,,,,,,,,,,
 ,,,,DtvAsm,,,,,,4,,,Asmenys ,
-,,,,,asm_imones_kodas,string,,asm_imones_kodas,,4,open,,Imones JAR kodas,
+,,,,,asm_imones_kodas,string,,,,4,open,,Imones JAR kodas,
 ,,,,,,,,,,,,,,
 ,,,,DtvSvr,,,,svr_kodas,,4,,,,
 ,,,,,svr_kodas,string,,,,4,open,,Vandens rūšies kodas,
