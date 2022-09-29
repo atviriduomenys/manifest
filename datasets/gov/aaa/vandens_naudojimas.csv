@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,“Y”,4,,,Už metus,
 ,,,,,,,,,“D”,4,,,Už konkrečią datą,
 ,,,,,dok_atsisk_data_nuo,datetime,,,,4,open,,"Data, už kurią yra teikiamas dokumentas.",
-,,,,,dok_atsisk_data_iki,datetime,,,,4,open,,Data"," už kurią yra teikiamas dokumentas.,
+,,,,,dok_atsisk_data_iki,datetime,,,,4,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,,,,,,,,,,
 ,,,,DtvAob,,,,aob_kodas,,4,,,"Atsiskaitantys objektai (ATASKAITINIS OBJEKTAS, ŪKIO SUBJEKTAS, VEIKLOS OBJEKTAS )",
 ,,,,,aob_kodas,string,,,,4,open,,Ataskaitinio objekto kodas (AIVIKS),
@@ -17,8 +17,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,DtvSvn,,,,,,4,,,Sunaudotas Kuras,
 ,,,,,svn_isgauta_viso,integer,,svn_isgauta_viso,,4,open,,"Bendras išgauto ir / arba iš kitų asmenų gauto vandens kiekis (pagal skaitliukų parodymus), tūkst. m3.",
-,,,,,svn_sunaudota_veikloje,integer,,svn_sunaudota_veikloje,,4,open,,"Ūkinėje veikloje ar buityje sunaudoto vandens"," kuris nepateko į nuotekas"," kiekis"," tūkst. m3.,
-,,,,,svn_sunaudota_ausinimui,integer,,svn_sunaudota_ausinimui,,4,open,,Aušinimui sunaudoto vandens kiekis, tūkst. m3.",
+,,,,,svn_sunaudota_veikloje,integer,,svn_sunaudota_veikloje,,4,open,,"Ūkinėje veikloje ar buityje sunaudoto vandens, kuris nepateko į nuotekas, kiekis, tūkst. m3.",
+,,,,,svn_sunaudota_ausinimui,integer,,svn_sunaudota_ausinimui,,4,open,,"Aušinimui sunaudoto vandens kiekis, tūkst. m3.",
 ,,,,,svn_sunaudota_viso,integer,,svn_sunaudota_viso,,4,open,,"Bendras sunaudoto vandens kiekis, tūkst. m3.",
 ,,,,,svn_patiekta_panaudoto,integer,,svn_patiekta_panaudoto,,4,open,,"Patiekto panaudoto vandens kiekis, tūkst. m3.",
 ,,,,,svn_patiekta_viso,integer,,svn_patiekta_viso,,4,open,,"Bendras patiekto vandens kiekis, tūkst. m3.",
@@ -30,11 +30,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,svn_patiekta_gyventojams,integer,,svn_patiekta_gyventojams,,4,open,,"Bendras patiekto gyventojams vandens kiekis, tūkst. m3.",
 ,,,,,,,,,,,,,,
 ,,,,DtvUod,,,,,,4,,,,
-,,,,,uod_vsa_kitas_vand_salt_tipas,string,,uod_vsa_kitas_vand_salt_tipas,,4,open,,Kito vandens šaltinio tipo įvardinimas,"Vandens šaltinio tipo įvardinimas laisvu tekstu, kai nurodytas VANDENS ŠALTINIO TIPAS yra ""kitas"" (KT)."
+,,,,,uod_vsa_kitas_vand_salt_tipas,string,,uod_vsa_kitas_vand_salt_tipas,,4,open,,Kito vandens šaltinio tipo įvardinimas,"Vandens šaltinio tipo įvardinimas laisvu tekstu, kai nurodytas VANDENS ŠALTINIO TIPAS yra 'kitas' (KT)."
 ,,,,,uod_vsa_atstumas_iki_ziociu,integer,,uod_vsa_atstumas_iki_ziociu,,4,open,,Vandens šaltinio atstumas iki žiočių ,Atstumas kilometrais nuo upės (upelio) žiočių iki vandenvietės.
-,,,,,uod_vsa_kita_vand_rusis,string,,uod_vsa_kita_vand_rusis,,4,open,,Kitos vandens rūšies įvardinimas ,"Vandens rūšies įvardinimas laisvu tekstu, kai susieta VANDENS ŠALTINIO VANDENS RŪŠIS yra ""kita"" (KT)."
+,,,,,uod_vsa_kita_vand_rusis,string,,uod_vsa_kita_vand_rusis,,4,open,,Kitos vandens rūšies įvardinimas ,"Vandens rūšies įvardinimas laisvu tekstu, kai susieta VANDENS ŠALTINIO VANDENS RŪŠIS yra 'kita' (KT)."
 ,,,,,uod_tsl_atst_iki_ziociu,integer,,uod_tsl_atst_iki_ziociu,,4,open,,Atstumas kilometrais nuo upės (upelio) žiočių iki nuotekų išleistuvo.,
-,,,,,uod_tsl_upes_krantas,string,,uod_tsl_upes_krantas,,4,open,,Nuotekų išleistuvo upės krantas ,
+,,,,,uod_tsl_upes_krantas,string,,uod_tsl_upes_krantas,,4,open,,Nuotekų išleistuvo upės krantas,
 ,,,,,,,,,,,,,,
 ,,,,DtvAsm,,,,,,4,,,Asmenys ,
 ,,,,,asm_imones_kodas,string,,asm_imones_kodas,,4,open,,Imones JAR kodas,
