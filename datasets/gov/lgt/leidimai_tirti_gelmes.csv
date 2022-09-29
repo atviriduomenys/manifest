@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lgt/leidimai_tirti_zemes_gelmes_duomenys,,,,,,,,,,,,Leidimai tirti žemės gelmes duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,LeidimasTirtiZemesGelmes,,,,,,4,open,,Leidimai tirti žemės gelmes duomenys,
+,,,,LeidimasTirtiZemesGelmes,,,id,,,4,open,,Leidimai tirti žemės gelmes duomenys,
 ,,,,,id,integer,,,,4,open,,Įrašo numeris,
 ,,,,,nr,integer,,,,4,open,,Leidimo numeris,
 ,,,,,data_nuo,date,D,,,4,open,,Leidimo išdavimo data,
