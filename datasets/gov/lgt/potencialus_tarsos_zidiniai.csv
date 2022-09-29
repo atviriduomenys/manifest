@@ -9,4 +9,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ptz_objekto_bukle,string,,,,4,open,,Objekto būklė,
 ,,,,,ptz_objekto_tipas,string,,,,4,open,,Objekto tipas,
 ,,,,,ptz_pavojingumas_aplinkai,string,,,,4,open,,Pavojingumo aplinkai įvertinimas,
-,,,,,koord,string,"geometry(point, 3346)",,,4,open,,Koordinatės,
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Koordinatės,
