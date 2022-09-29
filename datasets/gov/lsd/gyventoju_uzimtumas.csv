@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/gyventoju_uzimtumas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,GyvUzimtumas,,,,,,3,,,Gyventojų užimtumo statistinis tyrimas,Gyventojų užimtumo statistinis tyrimas
+,,,,GyvUzimtumas,,,,,,4,,,Gyventojų užimtumo statistinis tyrimas,Gyventojų užimtumo statistinis tyrimas
 ,,,,,,comment,ref,,"update(ref: ""hhseqnum"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,hhseqnum,string,,,,4,open,,Respondento eilės numeris namų ūkyje,
 ,,,,,,enum,,,"""01""",,,,"eilės numeris, priskirtas kiekvienam namų ūkio nariui",
