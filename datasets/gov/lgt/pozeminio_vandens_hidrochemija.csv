@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,posto_nr,integer,,,,4,open,,Stebimojo posto numeris,
 ,,,,,posto_pavadinimas,string,,,,3,open,,Stebimojo posto pavadinimas ,
 ,,,,,grezinio_nr,string,,,,4,open,,Gręžinio numeris,
-,,,,,koord,geometry(point, 3346),m,,,4,open,,Koordinatės,
+,,,,,koord,"geometry(point,3346)",m,,,4,open,,Koordinatės,
 ,,,,,abs_aukstis,number,,,,4,open,,Taško absoliutinis aukštis,
 ,,,,,gylis_nuo,number,,,,4,open,,Bandinio  paėmimo intervalo  gylis nuo,
 ,,,,,gylis_iki,number,,,,4,open,,Bandinio paėmimo intervalo  gylis iki,
