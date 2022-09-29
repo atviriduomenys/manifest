@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lgt/apibendrinta_naudinguju_iskasenu_gavyba,,,,,,,,,,,,Apibendrinti naudingųjų iškasenų gavybos duomenys,
+,,,,,,,,,,,,,,
+,,,,NaudingojiIskasena,,,kodas,,,4,open,,Apibendrinti naudingųjų iškasenų gavybos duomenys,
+,,,,,kodas,integer,,,,4,open,,Išteklių rūšies kodas,
+,,,,,rusis,string,,,,4,open,,Išteklių rušis,
+,,,,,mato_vnt,string,,,,4,open,,Mato vienetas,
+,,,,,metai,integer,,,,4,open,,Gavybos metai,
+,,,,,kiekis,integer,,,,2,open,,Išgautas kiekis,
