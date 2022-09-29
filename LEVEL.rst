@@ -121,12 +121,11 @@ Duomenys yra ir jie atviri, pateikiami bet kokia forma ir bet kokiu formatu.
 - Denormalizuoti duomenys::
 
     ,,,,,kodas,string,,,,2,open,,,
-    ,,,,,,comment,property,,"create(property: ""istaiga"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:216,manifest:1290,manifest:1476",,
-    ,,,,,,comment,property,,"update(property: ""istaiga.kodas"", type: """")",4,open,"spinta:216,manifest:1290,manifest:1476",,
+    ,,,,,,comment,type,,"create(property: ""istaiga"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+    ,,,,,,comment,type,,"update(property: ""istaiga.kodas"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 
   - spinta:216_ - IVPK: denormalizuotų duomenų laukų palaikymas.
-  - manifest:1290_ - RC: JAR.
-  - manifest:1476_ - SD: duomenų susiejimo ryšiais palaikymas.
+  - `vadovas:dsa/ref.html#denormalizuoti-duomenys`_ - Denormalizuoti duomensy.
 
 - Koordinatės::
 
@@ -206,6 +205,9 @@ Informacijos šaltiniai
 
   __ https://atviriduomenys.readthedocs.io/dsa/ref.html#brandos-lygis
 
+- `Brandos lygių žymėjimo lentelė su kodais`__
+
+  __ https://docs.google.com/spreadsheets/d/1mIwOW462-AMBiN1prveXcqjXi2JpEsR6X-_kUaIB6Q0/edit?usp=sharing
 
 .. _spinta:40: https://github.com/atviriduomenys/spinta/issues/40
 .. _spinta:204: https://github.com/atviriduomenys/spinta/issues/204
@@ -225,6 +227,7 @@ Informacijos šaltiniai
 .. _vadivas:dsa/ref.html: https://atviriduomenys.readthedocs.io/dsa/ref.html
 .. _vadovas:dsa/dimensijos.html#modelio-baze: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#modelio-baze
 .. _vadovas:dsa/dimensijos.html#klasifikatoriai: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#klasifikatoriai
+.. _vadovas:dsa/ref.html#denormalizuoti-duomenys: https://atviriduomenys.readthedocs.io/dsa/ref.html#denormalizuoti-duomenys
 
 .. _epsg:3346: https://epsg.io/3346
 .. _epsg:4326: https://epsg.io/4326
