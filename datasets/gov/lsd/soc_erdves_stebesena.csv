@@ -11,6 +11,6 @@ Pastabos: Ne visos įstaigos turi socialinių medijų paskyras (pvz., Valstybin�
 ,,,,,jar_kodas,string,,,,3,open,,Juridinio asmens kodas,
 ,,,,,,comment,type,,"update(property: ""ja_kodas"", type: """")",4,open,"spinta:205, manifest:1290",,
 ,,,,,pavadinimas,string,,,,2,open,,"Valstybinės institucijos, įstaigos, tarnybos, agentūros pavadinimas",
-,,,,,,comment,type,,"update(property: ""ja_pavadinimas"", type: """")",4,open,"spinta:205, manifest:1290",,
+,,,,,,comment,type,,"update(property: ""ja_pavadinimas"", type: """")",4,open,"spinta:205, manifest:1290",
 ,,,,,sekeju_sk,integer,,,,4,open,,"Stebimos Facebook paskyros sekėjų ("followers") skaičius",
 ,,,,,fcb_url_adresas,string,,,,4,open,,URL adresas,"Stebimos Facebook paskyros URL adresas",
