@@ -9,3 +9,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 Pastabos: Ne visos įstaigos turi socialinių medijų paskyras (pvz., Valstybinė lietuvių kalbos komisija). Įstagos gali turėti kelias paskyras (pvz., Lietuvos statistikos departamentas ir Valstybės duomenų analitika). Facebook paskyra gali nepriklausyti vienai konkrečiai įstaigai (pvz., Lietuvos teismai) arba priklausyti nebeegzistuojančiai įstaigai (Valstybinė energetikos inspekcija)."
 ,,,,,data,date,D,,,4,open,,Data,"Data, kuomet vykdyta paskyrų stebėsena"
 ,,,,,jar_kodas,string,,,,3,open,,Juridinio asmens kodas,
+,,,,,,comment,type,,"update(property: ""ja_kodas"", type: """")",4,open,"spinta:205, manifest:1290",,
+,,,,,pavadinimas,string,,,,2,open,,"Valstybinės institucijos, įstaigos, tarnybos, agentūros pavadinimas",
