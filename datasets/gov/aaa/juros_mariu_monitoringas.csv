@@ -65,7 +65,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_koordinate,"geometry(point, 3346)",,MV koordinatės,,3,open,,Monitoringo vietos koordinatės (LKS-94),
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,
 ,,,,,horizontas,string,,Vandens horizontas,,3,open,,"Vandens sluoksnis, iš kurio paimtas mėginys",
-,,,,,gylis_nuo,string,m,"Vandens gylis nuo, m",,2,open,,"Gylis, iš/nuo kurio paimtas mėginys, metrais",
+,,,,,gylis_nuo,number,m,"Vandens gylis nuo, m",,2,open,,"Gylis, iš/nuo kurio paimtas mėginys, metrais",
 ,,,,,gylis_iki,number,m,"Vandens gylis iki, m",,4,open,,"Gylis, iki kurio paimtas mėginys, metrais",
 ,,,,,individu_klase,string,,Individų klasė,,3,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
 ,,,,,taksonas_rusis,string,,Taksonas (rūšis),,3,open,,Lotyniškas taksono (rūšies) pavadinimas,"Kai individas neidentifikuojamas iki rūšies, nurodomas aukštesnis biologinės klasifikacijos pavadinimas (pvz.: gentis arba šeima arba būrys ir t.t.)."
@@ -170,7 +170,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gylis,number,m,"Vandens gylis, m",,4,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,rusis_lt_lot,string,,Rūšis lietuviškai (lotyniškai),,3,open,,"Rūšies pavadinimas, kurioje atliekamas tyrimas, lietuvių ir lotynų kalbomis",
 ,,,,,ind_eil_nr,number,,Individo grupės eilės nr.,,2,open,,Individo grupės eilės numeris,
-,,,,,ilgio_gr,string,,"Ilgio grupė, mm",,3,open,,"Ilgio grupė, išreikšta milimetrais",
+,,,,,ilgio_gr,string,,"Ilgio grupė, mm",,2,open,,"Ilgio grupė, išreikšta milimetrais",
+,,,,,,comment,type,,"update(ref: ""number"")",4,,,,
 ,,,,,,comment,ref,,"update(ref: ""mm"")",4,,spinta:292,,
 ,,,,,individ_sk_submeginy,number,,Individų skaičius submėginyje,,3,open,,Individų skaičius submėginyje,
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
