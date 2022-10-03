@@ -65,7 +65,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_koordinate,"geometry(point, 3346)",,MV koordinatės,,3,open,,Monitoringo vietos koordinatės (LKS-94),
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,
 ,,,,,horizontas,string,,Vandens horizontas,,3,open,,"Vandens sluoksnis, iš kurio paimtas mėginys",
-,,,,,gylis_nuo,string,m,"Vandens gylis nuo, m",,2,open,,"Gylis, iš/nuo kurio paimtas mėginys, metrais",
+,,,,,gylis_nuo,string,,"Vandens gylis nuo, m",,2,open,,"Gylis, iš/nuo kurio paimtas mėginys, metrais",
 ,,,,,,comment,property,,"update(property: ""gylis_nuo[]"", type: ""string"", source: ""Gylis, iš/nuo kurio paimtas mėginys, metrais"")",4,,"spinta:161",,
 ,,,,,gylis_iki,number,m,"Vandens gylis iki, m",,4,open,,"Gylis, iki kurio paimtas mėginys, metrais",
 ,,,,,individu_klase,string,,Individų klasė,,3,open,,"Lotyniškas individų klasės pavadinimas, kuriai priklauso nustatytas taksonas (rūšis)",
