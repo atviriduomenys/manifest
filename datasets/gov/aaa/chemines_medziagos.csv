@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,DtvDok,,,dok_id,,,4,,,"Dokumentai (metinės, mėnesinė ir kitaip apibrėžto laikotarpio ataskaitos)",
 ,,,,,dok_id,,,,,4,open,,Dokumentų unikalus identifikatorius,
-,,,,,dok_atsisk_data_nuo,integer,,,'>2017’,2,open,,Dokumento (ataskaitos) atsiskaitymo metai,
+,,,,,dok_atsisk_data_nuo,integer,,,,2,open,,Dokumento (ataskaitos) atsiskaitymo metai, nuo 2017 m.,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,,,,,,,,,,
 ,,,,DtvTcm,,,tcm_id,,,4,,,Ataskaitose teikiamos cheminės medžiagos / mišiniai,
