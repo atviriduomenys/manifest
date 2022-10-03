@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,numeris,string,,numeris,,2,open,,Kelio numeris,
 ,,,,,,comment,type,,"create(property: ""kelias"", type: ""ref"", ref: ""/datasets/gov/lakd/keliai/StateRoad[kelionr]"")",4,,,,
 ,,,,,,comment,property,,"update(property: ""kelias.numeris"", type: """")",4,,Spinta:216,,
-,,,,,pavadinimas,string,pavadinimas,pavadinimas,,2,open,,Kelio pavadinimas,
+,,,,,pavadinimas,string,,pavadinimas,,2,open,,Kelio pavadinimas,
 ,,,,,,comment,property,,"update(property: ""kelias.pavadinimas"", type: """")",4,,Spinta:216,,
 ,,,,,kilometras,number,,kilometras,,3,open,,Vieta, kilometras
 ,,,,,oro_temperatura,number,°C ,oro_temperatura,,4,open,,Oro temperatūra ,
