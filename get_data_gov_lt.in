@@ -23,6 +23,11 @@ datasets/gov/rc/ar/gragatve.csv
 datasets/gov/rc/ar/graistgatve.csv
 datasets/gov/rc/ar/adresotaskas.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
+datasets/gov/lgt/geo_reiskiniai_procesai.csv
+datasets/gov/lgt/geotopai.csv
+datasets/gov/lgt/geologiniai_tyrimai.csv
+datasets/gov/lgt/leidimai_tirti_gelmes.csv
+datasets/gov/lgt/geo_naud_iskasenos_leid.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/svietimo_istaigos.csv
@@ -36,6 +41,9 @@ datasets/gov/lsd/covid19.csv
 datasets/gov/lsd/cl/sektoriai.csv
 datasets/gov/lsd/cl/evrk.csv
 datasets/gov/lsd/cl/ja_asmenys.csv
+datasets/gov/lsd/svietimo_istaigos.csv
+datasets/gov/lsd/sveikata/mirciu_priezastys.csv
+datasets/gov/lsd/demografija/demografija.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
