@@ -58,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kilometras,number,,kilometras,,3,open,,Vieta, kilometras
 ,,,,,oro_temperatura,number,°C,oro_temperatura,,4,open,,Oro temperatūra ,
 ,,,,,vejo_greitis_vidut,number,m/s,vejo_greitis_vidut,,4,open,,Vidutinis vėjo greitis,
-,,,,,krituliu_tipas,string,,krituliu_tipas,,3,open,,Kritulių tipas,
+,,,,,krituliu_tipas,string,,krituliu_tipas,,4,open,,Kritulių tipas,
 ,,,,,,enum,,,"""Lietus, silpnas""",,,,Silpnas lietus,
 ,,,,,,,,,"""Lietus, vidutinis""",,,,Vidutinio stiprumo lietus,
 ,,,,,,,,,"""Nėra""",,,,Kritulių nėra,
@@ -68,7 +68,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dangos_temperatura,number,°C,dangos_temperatura,,4,open,,Dangos temperatūra,
 ,,,,,matomumas,string,,matomumas,,3,open,,Matomumas,
 ,,,,,rasos_taskas,number,,rasos_taskas,,3,open,,Rasos taškas,
-,,,,,kelio_danga,string,,kelio_danga,,3,open,,Kelio dangos būklė,
+,,,,,kelio_danga,string,,kelio_danga,,4,open,,Kelio dangos būklė,
 ,,,,,,enum,,,"""Šlapia""",,,,Šlapia,
 ,,,,,,,,,"""Sausa""",,,,Sausa,
 ,,,,,,,,,"""Drėgna""",,,,Drėgna,
