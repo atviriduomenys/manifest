@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,asm_id,integer,,,,4,open,,Identifikatorius,
 ,,,,,asm_tipas,string,,,,4,open,,Asmens tipas,
 ,,,,,,enum,,,"""FAS""",,,,FAS - fizinis asmuo,
-,,,,,,,,, """JAS""",,,,JAS - juridinis asmuo,
+,,,,,,,,,"""JAS""",,,,JAS - juridinis asmuo,
 ,,,,,asm_imones_kodas,string,,,,4,open,,Įmonės kodas,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
