@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pradzios_koordinates_lks94,"geometry(point, 3346)",m,,"start_x, start_y",4,open,,Pradžios koordinatės LKS-94,
 ,,,,,end_x,number,,endX,,2,private,,"Ruožo pabaigos X taškas, LKS-94",
 ,,,,,end_y,number,,endY,,2,private,,"Ruožo pabaigos Y taškas, LKS-94",
-,,,,,pabaigos_koordinates_lks94,"geometry(point, 3346)",m,,"end_x, end_y",,open,4,Pabaigos koordinatės LKS-94,
+,,,,,pabaigos_koordinates_lks94,"geometry(point, 3346)",m,,"end_x, end_y",4,open,,Pabaigos koordinatės LKS-94,
 ,,,,,winter_speed,integer,km/h,winterSpeed,,4,open,,Greičio režimas žiemą,
 ,,,,,summer_speed,integer,km/h,summerSpeed,,4,open,,Greičio režimas vasarą,
 ,,,,,number_of_vehicles,integer,,numberOfVehicles,,3,open,,Užfiksuotų automobilių kiekis per laiko intervalą,
