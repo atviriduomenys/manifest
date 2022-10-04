@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,manifest,,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,vadovas,,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,ItNaudUkis,,,,,3,,,,Informacinių technologijų naudojimas namų ūkiuose,
+,,,,ItNaudUkis,,,,,,3,,,Informacinių technologijų naudojimas namų ūkiuose,
 ,,,,,comp,string,,,,4,open,,"Ar Jūsų namų ūkis namuose naudojasi kompiuteriu (stacionariu, nešiojamuoju, planšetiniu)?",
 ,,,,,,enum,,,1,,,,Taip,
 ,,,,,,,,,0,,,,Ne,
@@ -1385,7 +1385,7 @@ naudojant internetinę kamerą)",
 ,,,,,stratum_id,string,,,,4,open,,,
 ,,,,,psu,string,,,,4,open,,,
 ,,,,,,,,,,,,,,
-,,,,ItAsmenu2016,,,,,,,,,Informacinių technologijų naudojimas namų ūkiuose 2016 m.,Lietuvos statistikos departamento atlikti tyrimai
+,,,,ItAsmenu,,,,,,3,,,Asmenų informacinių technologijų naudojimo Lietuvos statistikos departamento atlikti tyrimai
 ,,,,,iug_dkpc,string,,,,4,open,,Kokį prietaisą naudojote naršyti internete per pastaruosius 3 mėnesius: Stalinį (stacionarų) kompiuterį ,
 ,,,,,,enum,,,1,,,,Taip,
 ,,,,,,,,,0,,,,Ne,
