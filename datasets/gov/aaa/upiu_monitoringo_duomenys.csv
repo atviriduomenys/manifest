@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,UpiuValstybinioMonitoringoDuomenys,,,,,,2,,,Aprašymas upių duomenų,"Tyrimų apimtys, vykdytojai, tiriami parametrai patvirtinti Lietuvos Respublikos Vyriausybės 2018 m. spalio 3 d. nutarime Nr. 996 „Dėl Valstybinės aplinkos monitoringo 2018–2023 metų programos patvirtinimo“. Kasmet Aplinkos ministro įsakymu tvirtinami Valstybinės aplinkos monitoringo 2018-2023 metų programos uždavinių įgyvendinimo planai (https://aaa.lrv.lt/lt/veiklos-sritys/aplinkos-monitoringas/valstybine-aplinkos-monitoringo-programa). Kai kuriais atvejais tyrimai gali būti neatlikti dėl klimatinių sąlygų arba įrangos gedimų."
 ,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,2,open,,Vandens telkinio pavadinimas,
-,,,,,,comment,type,,"""create(property: "vardas", type: "ref", ref: "/datasets/gov/giscentras/grpk/HidrografijaLinija")""",3,open,,,
+,,,,,,comment,type,,"create(property: ""vardas"", type: ""ref"", ref: ""/datasets/gov/giscentras/grpk/HidrografijaLinija"")",3,open,,,
 ,,,,,m_vietos_kodas,string,,Monitoringo vietos kodas,,3,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pav,string,,Monitoringo vietos pavadinimas,,3,open,,Monitoringo vietos pavadinimas,
 ,,,,,data,date,D,Tyrimų data,,4,open,,Tyrimų data,
