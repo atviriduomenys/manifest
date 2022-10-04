@@ -1,26 +1,53 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vlk/achi,,,,,,,,,,,,,
-,,,,,,enum,bool,N,false,,,,,
-,,,,,,,,T,true,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,enum,int_r,,"""Ne""",,,,,
+,,,,,,,,,"""Taip""",,,,,
 ,,,,,,,,,,,,,,
-,,adk,,,,csv,,https://data.gov.lt/dataset/1383/download/,,,,,,
+,,,,Intervencija,,,,,,4,,,Medicininių intervencijų sąrašas,"Informacija apie medicinines intervencijas. ACHI – tai Australijos medicininių intervencijų klasifikacija. Jos devintasis leidimas pakeičia aštuntąjį, išleistą 2013 metais."
+,,,,,achi_kodas,string,,,,4,open,,ACHI kodas,Procedūros (ACHI) kodas pagal Australijos medicininių intervencijų klasifikaciją
+,,,,,achi_pavadinimas,string,,,,4,open,,ACHI pavadinimas,Procedūros (ACHI) pavadinimas pagal Australijos medicininių intervencijų klasifikaciją
+,,,,,bloko_nr,integer,,,,2,open,,Bloko numeris,"Bloko, kurį sudaro susijusios pagal tam tikrus požymius (anatominę sritį ir procedūros tipą) procedūros,  numeris"
+,,,,,,comment,type,,"create(property: ""blokas"", type: ""ref"", ref: ""Blokas"")",4,,,,
+,,,,,,comment,property,,"update(property: ""blokas.nr"", type: """")",4,,spinta:216,,
+,,,,,bloko_pavadinimas,string,,,,2,open,,Bloko pavadinimas,"Bloko, kurį sudaro susijusios pagal tam tikrus požymius (anatominę sritį ir  procedūros tipą) procedūros,  pavadinimas"
+,,,,,,comment,,,"update(property: ""blokas.pavadinimas"", type: """")",4,,spinta:216,,
+,,,,,proceduros_tipo_nr,integer,,,,2,open,,Procedūros tipo eil. nr.,Medicininių intervencijų klasifikacijos procedūros tipo eilės numerį skyriuje
+,,,,,proceduros_tipo_pav,string,,,,2,open,,Procedūros tipo pavadinimas,"Medicininių intervencijų klasifikacijos procedūros tipo pavadinimas (tyrimai, uždėjimas, įterpimas, šalinimas, incizija ir pan.)"
+,,,,,poskyrio_nr,integer,,,,2,open,,Poskyrio eil. nr.,Medicininių intervencijų klasifikacijos poskyrio numeris skyriuje
+,,,,,,comment,type,,"create(property: ""poskyris"", type: ""ref"", ref: ""Poskyris"")",4,,,,
+,,,,,,comment,,,"update(property: ""poskyris.nr"", type: """")",4,,spinta:216,,
+,,,,,poskyrio_pavadinimas,string,,,,2,open,,Poskyrio pavadinimas,Medicininių intervencijų klasifikacijos poskyrio pavadinimas (pagal anatomines sritis - organus)
+,,,,,,comment,,,"update(property: ""poskyris.pavadinimas"", type: """")",4,,spinta:216,,
+,,,,,skyriaus_nr,integer,,,,2,open,,Skyriaus nr.,Medicininių intervencijų klasifikacijos skyriaus numeris
+,,,,,,comment,type,,"create(property: ""skyrius"", type: ""ref"", ref: ""Skyrius"")",4,,,,
+,,,,,,comment,,,"update(property: ""skyrius.nr"", type: """")",4,,spinta:216,,
+,,,,,bloku_grupe,string,,,,2,open,,Blokų grupė,Medicininių intervencijų klasifikacijos skyriui priklausanti blokų grupė
+,,,,,,comment,,,"update(property: ""blokas.grupe"", type: """")",4,,spinta:216,,
+,,,,,skyriaus_pavadinimas,string,,,,2,open,,Skyriaus pavadinimas,Medicininių intervencijų klasifikacijos skyriaus pavadinimas (pagal medicinos specialybes)
+,,,,,,comment,,,"update(property: ""skyrius.pavadinimas"", type: """")",,,,,
+,,,,,operacija,string,,,,2,open,,Operacija,"Galimos trys reikšmės: 1) ""Taip"" - operacinėje atliekama procedūra (operacija) – tai medicininė procedūra,  kuri  pagal AR-DRG  8.0 versiją  laikoma  svarbia bet  kurioje PDK ir nulemia gydymo atvejo priskyrimą chirurginio pobūdžio DRG. 2) ""Ne"" - ne operacinėje atliekama procedūra"
+,,,,,,enum,,,"""Ne""",,,,Ne,
+,,,,,,,,,"""Taip""",,,,Taip,
+,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,"spinta: 293,vadovas:dsa/dimensijos.html#klasifikatoriai",,
+,,,,,didzioji_operacija,string,,,,4,open,,Didžioji operacija,"Nurodoma ar ACHI kodas priklauso didžiųjų operacijų sąrašui patvirtintam Sveikatos apsaugos ministro 2012 m. vasario 27 d. įsakymu Nr. V-145 ""Dėl Didžiųjų operacijų sąrašo sudarymo tvarkos aprašo ir didžiųjų operacijų sąrašo patvirtinimo"""
+,,,,,,enum,,,"""Ne""",,,,,
+,,,,,,,,,"""Taip""",,,,,
+,,,,,,comment,,,"update(source: """", prepare: ""Nenurodyta"")",4,,"spinta: 293,vadovas:dsa/dimensijos.html#klasifikatoriai",,
+,,,,,nuo,date,D,,,4,open,,Galioja nuo,Procedūros (ACHI) galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,Galioja iki,Procedūros (ACHI) galiojimo pabaigos data
 ,,,,,,,,,,,,,,
-,,,,Achi,,,kodas,9424/achi.csv,,,,,Intervencijų sąrašas (ACHI),"Informacija apie medicinines intervencijas. ACHI – tai Australijos medicininių intervencijų klasifikacija. Jos devintasis leidimas pakeičia aštuntąjį, išleistą 2013 metais"
-,,,,,kodas,string,,achi_kodas,,4,open,,ACHI kodas,Procedūros (ACHI) kodas pagal Australijos medicininių intervencijų klasifikaciją
-,,,,,pavadinimas,string,,achi_pavadinimas,,4,open,,ACHI pavadinimas,Procedūros (ACHI) pavadinimas pagal Australijos medicininių intervencijų klasifikaciją
-,,,,,block_nr,integer,,bloko_nr,,4,open,,Bloko numeris,"Bloko, kurį sudaro susijusios pagal tam tikrus požymius (anatominę sritį ir procedūros tipą) procedūros,  numeris"
-,,,,,block_name,string,,bloko_pavadinimas,,4,open,,Bloko pavadinimas,"Bloko, kurį sudaro susijusios pagal tam tikrus požymius (anatominę sritį ir  procedūros tipą) procedūros,  pavadinimas"
-,,,,,proceduros_tipo_nr,integer,,proceduros_tipo_nr,,4,open,,Procedūros tipo eilės numeris,Medicininių intervencijų klasifikacijos procedūros tipo eilės numerį skyriuje
-,,,,,proceduros_tipo_pav,string,,proceduros_tipo_pav,,4,open,,Procedūros tipo pavadinimas,"Medicininių intervencijų klasifikacijos procedūros tipo pavadinimas (tyrimai, uždėjimas, įterpimas, šalinimas, incizija ir pan.)"
-,,,,,poskyrio_nr,integer,,poskyrio_nr,,4,open,,Poskyrio eilės numeris,Medicininių intervencijų klasifikacijos poskyrio numeris skyriuje
-,,,,,poskyrio_pavadinimas,string,,poskyrio_pavadinimas,,4,open,,Poskyrio pavadinimas,Medicininių intervencijų klasifikacijos poskyrio pavadinimas (pagal anatomines sritis - organus)
-,,,,,skyriaus_nr,integer,,skyriaus_nr,,4,open,,Skyriaus numeris,Medicininių intervencijų klasifikacijos skyriaus numeris
-,,,,,bloku_grupe,string,,bloku_grupe,,4,open,,Blokų grupė,Medicininių intervencijų klasifikacijos skyriui priklausanti blokų grupė
-,,,,,skyriaus_pavadinimas,string,,skyriaus_pavadinimas,,4,open,,Skyriaus pavadinimas,Medicininių intervencijų klasifikacijos skyriaus pavadinimas (pagal medicinos specialybes)
-,,,,,operacija,string,,operacija,,4,open,,Operacija,"Galimos trys reikšmės: 1) OR - operacinėje atliekama procedūra (operacija) – tai medicininė procedūra,  kuri  pagal  AR-DRG  8.0 versiją  laikoma  svarbia bet  kurioje PDK ir nulemia gydymo atvejo priskyrimą chirurginio pobūdžio DRG. 2) NonOR - ne operacinėje atliekama procedūra (operacija) –  tai  medicininė procedūra,  kuri pagal  AR-DRG  8.0 versiją laikoma svarbia tam   tikrose  PDK. Jeigu atitinkamai PDK priskiriant gydymo atvejį, kai buvo atlikta   NonOR   procedūra,  ši procedūra  nelaikoma  svarbia, gydymo atvejis toje PDK bus priskirtas terapinei DRG. 3) reikšmė nenurodyta - medicininė intervencija, kuri nelaikoma svarbia nei vienoje PDK ir nulemia gydymo atvejo priskyrimą terapinio pobūdžio DRG. Pastaba. OR  ir NonOR procedūrų (operacijų) apibrėžimas yra susijęs tik su klasifikacija, tai nėra tikrasis klinikinis OR ir NonPR procedūrų apibrėžimas "
-,,,,,,enum,,,"""OR""",,,,OR,
-,,,,,,,,,"""NonOR""",,,,NonOR,
-,,,,,,,,,"""""",,,,,
-,,,,,didzioji_operacija,boolean,bool,didzioji_operacija,,4,open,,Didžioji operacija,"Nurodoma ar ACHI kodas priklauso didžiųjų operacijų sąrašui patvirtintam Sveikatos apsaugos ministro 2012 m. vasario 27 d. įsakymu Nr. V-145 ""Dėl Didžiųjų operacijų sąrašo sudarymo tvarkos aprašo ir didžiųjų operacijų sąrašo patvirtinimo"
-,,,,,galioja_nuo,date,,galioja_nuo,,4,open,,Galioja nuo,Procedūros (ACHI) galiojimo pradžios data
-,,,,,galioja_iki,date,,galioja_iki,,4,open,,Galioja iki,Procedūros (ACHI) galiojimo pabaigos data
+,,,,Paslauga,,,,,,4,,,Dienos chirurgijos metu atiliekamų intervencijų sąrašas,
+,,,,,intervencija,ref,Intervencija,,,4,open,,ACHI ID,Nuoroda į Intervencijas
+,,,,,is_gnr_anestesia,string,int_r,,,4,open,,Bendroji nejautra,
+,,,,,is_rgn_anestesia,string,int_r,,,4,open,,Regioninė nejautra,
+,,,,,dchir_grupe,string,,,,4,open,,Paslaugų grupė,Dienos chirurgijos paslaugų grupė
+,,,,,,enum,,,"""I""",,,,I - grupė,
+,,,,,,,,,"""II""",,,,II - grupė,
+,,,,,,,,,"""III""",,,,III - grupė,
+,,,,,,,,,"""IV""",,,,IV - grupė,
+,,,,,,,,,"""V""",,,,V - grupė,
+,,,,,,,,,"""VI""",,,,VI - grupė,
+,,,,,nuo,date,D,,,4,open,,Galioja nuo,Dienos chirurgijos procedūros galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,Galioja iki,Dienos chirurgijos procedūros galiojimo pabaigos data
