@@ -74,11 +74,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,7,,,,Sekmadienis,
 ,,,,,valanda,integer,,,,2,open,,"Paros valandos, kuomet įvyko įvykiai, numeris",Reikšmės nuo 0 (vidurnaktis) iki 23 val.
 ,,,,,minute,string,,,,2,open,,"Valandos dalies, kuomet įvyko įvykiai, grupė",10 minučių rėžiai
-,,,,,,enum,,,00-09,,,,pirmas 10 minučių rėžis,
-,,,,,,,,,10-19,,,,antras 10 minučių rėžis,
-,,,,,,,,,20-29,,,,trečias 10 minučių rėžis,
-,,,,,,,,,30-39,,,,ketvirtas 10 minučių rėžis,
-,,,,,,,,,40-49,,,,penktas 10 minučių rėžis,
-,,,,,,,,,50-59,,,,šeštas 10 minučių rėžis,
+,,,,,,enum,,,"""00-09""",,,,pirmas 10 minučių rėžis,
+,,,,,,,,,"""10-19""",,,,antras 10 minučių rėžis,
+,,,,,,,,,"""20-29""",,,,trečias 10 minučių rėžis,
+,,,,,,,,,"""30-39""",,,,ketvirtas 10 minučių rėžis,
+,,,,,,,,,"""40-49""",,,,penktas 10 minučių rėžis,
+,,,,,,,,,"""50-59""",,,,šeštas 10 minučių rėžis,
 ,,,,,ivykiu_skaicius,integer,,,,4,open,,"įvykių, apie kuriuos gauti pranešimai, skaičius šioje agregacijos grupėje",
 ,,,,,dienu_grupeje,integer,,,,4,open,,"Požymis, kiek dienų buvo visų metų tokio mėnesio toje savaitės dienoje","Stulpelis būtinas, norint teisingai palyginti savaitės dienas."
