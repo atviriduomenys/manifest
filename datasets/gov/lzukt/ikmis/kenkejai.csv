@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lzukt/ikmis/kenkejai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,kenkejai,,,,json,,https://www.ikmis.lt/api/EP2/GetKenkejuKatalogas,,,,,,
+,,,,Kenkejas,,,"kenkejas, sritis, grupe",,,,,,,
+,,,,,kenkejas,string,,Kenkejas,,2,open,,,
+,,,,,sritis,string,,Sritis,,2,open,,,
+,,,,,grupe,string,,Grupe,,2,open,,,
+,,,,,aprasas,string,,Aprasas,,2,open,,,

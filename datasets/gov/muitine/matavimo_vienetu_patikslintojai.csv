@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/matavimo_vienetu_patikslintojai,,,,,,,,,,,,,
+,,,,,,prefix,ns,,,,,http://rep.xmlstandards.eu/icdts/LT/schemas/ReferenceData.xsd,,
+,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,10LT,,,,xml,,https://www.lrmuitine.lt/mport/other_files/AtviriDuom_klasifikatoriai/10LT.xml,,,,,,
+,,,,SupplementaryUnitQualifier,,,code,/ns:ReferenceData/ns:SimpleItem,,4,,,,
+,,,,,code,string,,@code,,4,open,,Patikslintojo kodas,1 simbolio kodas
+,,,,,national,boolean,,@national,,4,open,,Nacionalinis požymis,neprivalomas
+,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
+,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,
+,,,,,description_lt,string,,ns:CodeDescription[@languageCode="LT"]/@description,,2,open,,Aprašymas (LT),
+,,,,,,comment,type,,"update(property: ""description@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,description_en,string,,ns:CodeDescription[@languageCode="EN"]/@description,,2,open,,Aprašymas (EN),
+,,,,,,comment,type,,"update(property: ""description@en"", type: ""text"")",4,open,spinta:204,,

@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/vlk_istg,,,,,,,,,,,,,
+,,adk,,,,csv,,https://data.gov.lt/dataset/1386/download/9664/vds_istaigos.csv,,,,,,
+,,,,,,,,,,,,,,
+,,,,vlk_istg,,,"istg_id,istg_tipas",,,,,,Įstaigų sąrašas,"Gydymo įstaigų, vaistinių ir kitų įmonių klasifikatorius. IS METAS informacija"
+,,,,,istg_id,string,,istg_id,,4,open,,"Įstaigos (ASPĮ, vaistinės ir kt.) ID","Įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID), pagal kurį įstaiga identifikuojama informacinėje sistemoje Sveidra. Šis ID suteikiamas kiekvienai įstaigos veiklos vietai (filialui) skirtingas"
+,,,,,istg_jar_kodas,string,,istg_jar_kodas,,4,open,,Įstaigos JAR,"Įstaigos (ASPĮ, vaistinės ir kt.) Juridinių asmenų registre nurodytas juridinio asmens kodas"
+,,,,,istg_pavadinimas,string,,istg_pavadinimas,,4,open,,Įstaigos pavadinimas,"Įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
+,,,,,istg_sav,string,,istg_sav,,4,open,,Įstaigos savivaldybė,"Įstaigos (ASPĮ, vaistinės ir kt.) savivaldybe"
+,,,,,istg_tlk,string,,istg_tlk,,4,open,,Įstaigos TLK,"Įstaigos (ASPĮ, vaistinės ir kt.) teritorinės ligonių kasos, kuriai įstaiga priklauso, pavadinimas"
+,,,,,pagr_istg_id,string,,pagr_istg_id,,4,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID). Šis ID suteikiamas įstaigos veiklos vietai, kurioje registruota įstaigos buveinė"
+,,,,,pagr_istg_pavadinimas,string,,pagr_istg_pavadinimas,,4,open,,Įstaigos (pagrindinės) pavadinimas,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
+,,,,,istg_tipas,string,,istg_tipas,,4,open,,"Įstaigos tipas (vaistinė, ligoninė ir kt.)","Įstaigos tipas (vaistinė, ligoninė ir kt.)"
+,,,,,istg_data_nuo,date,,istg_data_nuo,,4,open,,Įstaigos galiojimo pradžios data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pradžios data"
+,,,,,istg_data_iki,date,,istg_data_iki,,4,open,,Įstaigos galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pabaigos data"
