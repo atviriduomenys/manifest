@@ -1,14 +1,17 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/chemines_medziagos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,DtvCmk,,,cmk_id,,,4,,,Cheminių medžiagų / mišinių klasifikatoriai,
 ,,,,,cmk_id,integer,,,,4,open,,Cmm klasifikatorių unikalus identifikatorius,
 ,,,,,cmk_kodas,string,,,,4,open,,Pavojingumo kodas,
-,,,,,cmk_pavad,string,,,,3,open,,Pavojingumo frazės pavadinimas,
+,,,,,cmk_pavad,string,,,,4,open,,Pavojingumo frazės pavadinimas,
 ,,,,,,,,,,,,,,
 ,,,,DtvCmm,,,cmm_id,,,4,,,Cheminės medžiagos / mišiniai,
 ,,,,,cmm_id,integer,,,,4,open,,Cheminių medžiagų unikalus identifikatorius,
-,,,,,cmm_pavad,string,,,,2,open,,Cheminės medžiagos pavadinimas,
+,,,,,cmm_pavad,string,,,,4,open,,Cheminės medžiagos pavadinimas,
 ,,,,,cmm_cas_reg_nr,string,,,,4,open,,Medžiagos CAS numeris,Cheminių medžiagų santrumpų tarnybos suteiktas registracijos numeris
 ,,,,,cmm_nr,string,,,,4,open,,Medžiagos EB numeris,"EINECS, ELINCS arba NLP numeris, oficialus cheminės medžiagos numeris Europos Sąjungoje (pagal 2008 m. gruodžio 16 d. Europos Parlamento ir Tarybos reglamento (EB) Nr. 1272/2008 dėl cheminių medžiagų ir mišinių klasifikavimo, ženklinimo ir pakavimo, iš dalies keièianèio ir panaikinanèio direktyvas 67/548/EEB bei 1999/45/EB ir iš dalies keièianèio Reglamentą (EB) Nr. 1907/2006) VI priedą)."
 ,,,,,,,,,,,,,,
@@ -25,4 +28,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""IS""",,,,Išplatinta (parduota),
 ,,,,,,,,,"""PA""",,,,Pagaminta,
 ,,,,,,,,,"""IM""",,,,Importuota,
-,,,,,tcm_kiekis,number,,,,4,open,,Kiekis tonomis,
+,,,,,tcm_kiekis,number,t,,,4,open,,Kiekis tonomis,
