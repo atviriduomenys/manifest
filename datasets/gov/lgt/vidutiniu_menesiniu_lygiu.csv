@@ -14,5 +14,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,menuo,date,M,,,4,open,,Mėnuo,
 ,,,,,vid_lygis,number,cm,,,4,open,,Vidutinis mėnesio vandens lygis centimetrais nuo žemės paviršiaus,
 ,,,,,abs_lygis_mvn,number,m,,,4,open,,požeminio vandens lygis gręžinyje jūros lygio atžvilgiu (altitudė),
-,,,,,vid_temperatura,number,,,,3,open,,Vidutinė mėnesio vandens temperatūra,
-,,,,,,comment,ref,,"update(ref: ""°C"")",4,,spinta:292,,
+,,,,,vid_temperatura,number,°C,,,4,open,,Vidutinė mėnesio vandens temperatūra,
