@@ -9,9 +9,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rb090,string,,,,4,open,,Lytis,
 ,,,,,,enum,,,1,,,,Vyras,
 ,,,,,,,,,2,,,,Moteris,
-,,,,,rb220,string,,,,4,open,,"Tėvo (įtėvio, patėvio, globėjo) ID",
-,,,,,rb230,string,,,,4,open,,"Motinos (įmotės, pamotės, globėjos) ID",
-,,,,,rb240,string,,,,4,open,,Sutuoktinio/sugyventinio ID,
+,,,,,rb220,string,,,,4,open,,"Tėvo (įtėvio, patėvio, globėjo) ID", Statistinio tyrimo subjekto (asmens) tėvo unikalus identifikatorius
+,,,,,rb230,string,,,,4,open,,"Motinos (įmotės, pamotės, globėjos) ID", Statistinio tyrimo subjekto (asmens) motinos unikalus identifikatorius
+,,,,,rb240,string,,,,4,open,,Sutuoktinio/sugyventinio ID, Statistinio tyrimo subjekto (asmens) sutuoktinio/sugyventinio unikalus identifikatorius
 ,,,,,rl010,integer,,,,4,open,,"Valandų, praleistų vaikų lopšelyje ar darželyje, skaičius per savaitę",
 ,,,,,rl020,integer,,,,4,open,,"Valandų, praleistų bendrojo ugdymo mokykloje, skaičius per savaitę",
 ,,,,,rl030,integer,,,,4,open,,"Valandų, praleistų pailgintos dienos grupėje mokykloje, savaitiniame vaikų darželyje, skaičius per savaitę",
