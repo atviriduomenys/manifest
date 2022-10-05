@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Asmens,,,pb030,,,4,,,Asmenų pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
 ,,,,,pb030,string,,,,4,open,,Asmens ID, Statistinio tyrimo subjekto (asmens) unikalus identifikatorius
-,,,,,hb030,string,NamuUkis,,,4,open,,Namų ūkio ID, Statistinio tyrimo subjekto (namų ūkio) unikalus identifikatorius
+,,,,,hb030,ref,NamuUkis,,,4,open,,Namų ūkio ID, Statistinio tyrimo subjekto (namų ūkio) unikalus identifikatorius
 ,,,,,rb050,number,,,,4,open,,Asmens kalibruotasis svoris,
 ,,,,,age,integer,,,,4,open,,"Amžius, sukakęs praeitų metų gruodžio 31 d.",
 ,,,,,rb090,string,,,,4,open,,Lytis,
@@ -236,7 +236,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,"Ne, dėl kitos priežasties",
 ,,,,,metai,date,Y,,,4,open,,Statistinio tyrimo metai,
 ,,,,,,,,,,,,,,
-,,,,NamuUkio,,,hb030,,,3,,,Namų ūkių pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
+,,,,NamuUkis,,,hb030,,,3,,,Namų ūkių pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
 ,,,,,hb030,string,,,,4,open,,Namų ūkio ID, Statistinio tyrimo subjekto (namų ūkio) unikalus identifikatorius
 ,,,,,hh010,string,,,,4,open,,Būsto tipas,
 ,,,,,,enum,,,1,,,,Vieno buto namas,
