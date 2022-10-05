@@ -254,7 +254,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,"Ne, dėl kitos priežasties",
 ,,,,,metai,date,Y,,,4,open,,Statistinio tyrimo metai,
 ,,,,,,,,,,,,,,
-,,,,NamuUkis,,,hb030,,,3,,,Namų ūkių pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
+,,,,NamuUkis,,,hb030,,,4,,,Namų ūkių pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
 ,,,,,hb030,string,,,,4,open,,Namų ūkio ID, Statistinio tyrimo subjekto (namų ūkio) unikalus identifikatorius
 ,,,,,hh010,string,,,,4,open,,Būsto tipas,
 ,,,,,,enum,,,1,,,,Vieno buto namas,
