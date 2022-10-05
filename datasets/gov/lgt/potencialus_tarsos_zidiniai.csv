@@ -8,5 +8,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ptz_anketos_data,date,D,,,4,open,,Vertinimo data,
 ,,,,,ptz_objekto_bukle,string,,,,3,open,,Objekto būklė,
 ,,,,,ptz_objekto_tipas,string,,,,3,open,,Objekto tipas,
-,,,,,ptz_pavojingumas_aplinkai,string,,,,4,open,,Pavojingumo aplinkai įvertinimas,
+,,,,,ptz_pavojingumas_aplinkai,string,,,,3,open,,Pavojingumo aplinkai įvertinimas,
 ,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Koordinatės,
