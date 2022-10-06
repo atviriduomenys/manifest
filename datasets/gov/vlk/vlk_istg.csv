@@ -33,4 +33,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutarties_pabaiga,date,D,,,4,open,,Sutarties galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) sutarties galiojimo pabaigos data"
 ,,,,,nuo,date,D,,,4,open,,Galiojimo pradžios data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pradžios data"
 ,,,,,iki,date,D,,,4,open,,Galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pabaigos data"
-
