@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,11,,,,Lapkritis,
 ,,,,,,,,,12,,,,Gruodis,
 ,,,,,ivykio_tipo_kodas,ref,IvykiuKlasifikatorius,,,4,open,,Įvykio tipo kodas,
-,,,,,koordinate,"geometry(point, 3346)",m,,,3,open,,Triukšminta LKS-94 įvykio koordinatė,Triukšminta X koordinatė (rytai–vakarai) ir triukšminta Y koordinatė (šiaurė–pietūs) LKS-94 koordinačių sistemoje.
+,,,,,koordinate,"geometry(point, 3346)",m,,,4,open,,Triukšminta LKS-94 įvykio koordinatė,Triukšminta X koordinatė (rytai–vakarai) ir triukšminta Y koordinatė (šiaurė–pietūs) LKS-94 koordinačių sistemoje.
 ,,,,,,,,,,,,,,
 ,,,,IvykiuSavivaldybes,,,,,,4,,,BPC įvykių savivaldybės,"Bendrojo pagalbos centro (BPC) registruotų įvykių, apie kuriuos gauti pranešimai pagalbos telefonu 112, teritorinė statistika pagal savivaldybę. Tai yra agreguota lentelė, kuri į vieną eilutę sujungia unikalią šių požymių kombinaciją: įvykio tipas, savivaldybė, metai, mėnuo. Lentelės tikslas yra geografinio pasiskirstymo palengvintam stebėjimui. Dėl konfidencialumo nepateikiama tiksli įvykio data. Praneštų įvykių skaičiai nebūtinai turi sutapti su Administracinių nusižengimų registro duomenimis (pranešimai gali būti melagingi arba nepasiekti administracinių nusižengimų bylos stadijos)."
 ,,,,,ivykio_tipo_kodas,ref,IvykiuKlasifikatorius,,,4,open,,Įvykio tipo kodas,Šio požymio kodų prasmės yra pagalbinėje lentelėje BPC įvykių klasifikatorius
