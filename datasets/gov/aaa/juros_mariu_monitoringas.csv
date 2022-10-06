@@ -96,7 +96,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vystymosi_stadija,string,,Vystymosi stadija,,3,open,,Taksono (rūšies) vystymosi stadija,
 ,,,,,paemimo_metodas,string,,Paėmimo metodas,,3,open,,Mėginio paėmimo metodas,
 ,,,,,substrat_biotop,string,,Substratai / biotopai,,3,open,,Vyraujantis gruntas dugne,
-,,,,,gausumas,number,,"Gausumas, vnt./m^2",,4,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kvadratiniame metre",
+,,,,,gausumas,number,,"Gausumas, vnt./m^2",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kvadratiniame metre",
 ,,,,,,comment,ref,,"update(ref: ""vnt./m^2"")",4,,spinta:292,,
 ,,,,,biomase,number,g/m^2,"Biomasė,  g/m^2",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas gramais kvadratiniame metre",
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
@@ -119,7 +119,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nustatymo_zyme,string,nustatymo_zyme,Taksonas (rūšis),,4,open,,Specialus žymėjimas nenustačius individo iki rūšies,"Šis žymėjimas nepriklauso nuo tyrimo metodo. Galimi žymėjimo variantai SP, SPP. SP - žymima, kai nėra galimybės arba nereikia nurodyti konkretaus rūšies pavadinimo, SPP - reiškia kelias nenustatytas tos pačios genties rūšis."
 ,,,,,ind_eil_nr,number,,Individų grupės eil. nr.,,2,open,,Individų grupės eilės numeris,"Eilės numerį įgija rūšis, kai  mėginyje nustatomos skirtingos rūšies vystymosi stadijos, kai rūšis identifikuojama iki lyties - išskiriama į vyriškos lyties ir moteriškos lyties individus. Eilės numeris sudaromas kiekvienam mėginiui atskirai."
 ,,,,,lytis_vystym_stadija,string,,Lytis / Vystymosi stadija,,3,open,,Taksono (rūšies) lytis arba vystymosi stadija,
-,,,,,gausumas,number,vnt./m^3,"Gausumas, vnt./m3",,4,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kubiniame metre",
+,,,,,gausumas,number,,"Gausumas, vnt./m3",,3,open,,"Taksono (rūšies) gausumo rezultatas, išreikštas vienetais kubiniame metre",
 ,,,,,,comment,ref,,"update(ref: ""vnt./m^3"")",4,,spinta:292,,
 ,,,,,biomase,number,mg/m^3,"Biomasė,  mg/m3",,4,open,,"Taksono (rūšies) biomasės rezultatas, išreikštas miligramais kubiniame metre",
 ,,,,,tyr_metodas,string,,Tyrimų metodas,,3,open,,Tyrimų metodas,
