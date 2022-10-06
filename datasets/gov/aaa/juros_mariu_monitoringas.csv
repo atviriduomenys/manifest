@@ -165,9 +165,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_vietos_pav,string,,MV pavadinimas,,3,open,,Monitoringo vietos pavadinimas,
 ,,,,,tyrim_objektas,string,,Tyrimų objektas,,3,open,,Tyrimų objektas,Tyrimų objektas visada Biota
 ,,,,,detalizacija,string,,Tyrimų objekto detalizacija,,3,open,,Tyrimų objekto detalizacija,
-,,,,,gylis,number,m,"Vandens gylis, m",,4,open,,"Gylis, iš kurio paimtas mėginys, metrais",
+,,,,,gylis,string,,"Vandens gylis, m",,3,open,,"Gylis, iš kurio paimtas mėginys, metrais",
 ,,,,,rusis_lt_lot,string,,Rūšis lietuviškai (lotyniškai),,3,open,,"Rūšies pavadinimas, kurioje atliekamas tyrimas, lietuvių ir lotynų kalbomis",
-,,,,,ind_eil_nr,string,,Individo grupės eilės nr.,,2,open,,Individo grupės eilės numeris,
+,,,,,ind_eil_nr,string,,Individo grupės eilės nr.,,3,open,,Individo grupės eilės numeris,
 ,,,,,ilgio_gr,string,,"Ilgio grupė, mm",,2,open,,"Ilgio grupė, išreikšta milimetrais",
 ,,,,,individ_sk_submeginy,string,,Individų skaičius submėginyje,,3,open,,Individų skaičius submėginyje,
 ,,,,,parametro_pav,string,,Parametro pavadinimas,,3,open,,Tiriamo parametro pavadinimas,
