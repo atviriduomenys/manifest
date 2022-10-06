@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/matavimo_vienetai,,,,,,,,,,,,,
+,,,,,,prefix,ns,,,,,http://rep.xmlstandards.eu/icdts/LT/schemas/ReferenceData.xsd,,
+,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,9LT,,,,xml,,https://www.lrmuitine.lt/mport/other_files/AtviriDuom_klasifikatoriai/9LT.xml,,,,,,
+,,,,UnitOfMeasurement,,,code,/ns:ReferenceData/ns:SimpleItem,,4,,,Matavimo vienetas,Naudojami deklaruojant prekes Lietuvos Respublikoje.
+,,,,,code,string,,@code,,4,open,,Kodas,Kodas sudarytas iš 3 simbolių.
+,,,,,national,boolean,,@national,,4,open,,Nacionalinis požymis,
+,,,,,valid_from,date,,@validFrom,,3,open,,Galiojimo pradžia,
+,,,,,valid_to,date,,@validTo,,3,open,,Galiojimo pabaiga,
+,,,,,description_lt,string,,ns:CodeDescription[@languageCode="LT"]/@description,,2,open,,Aprašymas (LT),
+,,,,,,comment,type,,"update(property: ""description@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,description_en,string,,ns:CodeDescription[@languageCode="EN"]/@description,,2,open,,Aprašymas (EN),
+,,,,,,comment,type,,"update(property: ""description@en"", type: ""text"")",4,open,spinta:204,,
