@@ -108,7 +108,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,hh_child_14_15,integer,,,,4,open,,14 - 15  metų amžiaus vaikų skaičius namų ūkyje,
 ,,,,,hh_child_5_13,integer,,,,4,open,,5 - 13  metų amžiaus vaikų skaičius namų ūkyje,
 ,,,,,hh_child_le_4,integer,,,,4,open,,4 metų ir jaunesnių vaikų skaičius namų ūkyje,
-,,,,,hh_wght,number,,,,3,open,,Namų ūkio populiacijos svoris",
+,,,,,hh_wght,number,,,,3,open,,Namų ūkio populiacijos svoris,
 ,,,,,hh_iq,string,,,,4,open,,Namų ūkio pajamų kvartiliai,
 ,,,,,,enum,,,"""1""",,,,Pirmasis kvartilis,
 ,,,,,,,,,"""2""",,,,Antrasis kvartilis,
