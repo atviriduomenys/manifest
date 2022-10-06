@@ -173,7 +173,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""3""",,,,Trečiasis (vidurinis) kvintilis,
 ,,,,,,,,,"""4""",,,,Ketvirtasis (antrasis aukščiausias) kvintilis,
 ,,,,,,,,,"""5""",,,,Penktasis (aukščiausias) kvintilis,
-,,,,,metai,date,y,,,4,open,,Atlikto statistinio tyrimo metai,
+,,,,,metai,date,Y,,,4,open,,Atlikto statistinio tyrimo metai,
+
 ,,,,,,,,,,,,,,
 ,,,,ItNaudAsmuo,,,,,,3,,,Asmenų informacinių technologijų naudojimas,
 ,,,,,cu,string,,,,4,open,,Kada Jūs paskutinį kartą naudojotės kompiuteriu?,
