@@ -1,10 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/it_naudojimas_namu_ukiuose,,,,,,,,,,,,Informacinių technologijų naudojimas namų ūkiuose,
 ,,,,,,,,,,,,,,
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,,,,,manifest,,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-,,,,,,vadovas,,,,,,https://atviriduomenys.readthedocs.io/,,
-,,,,,,,,,,,,,,
 ,,,,ItNaudUkis,,,,,,3,,,Informacinių technologijų naudojimas namų ūkiuose,
 ,,,,,comp,string,,,,4,open,,"Ar Jūsų namų ūkis namuose naudojasi kompiuteriu (stacionariu, nešiojamuoju, planšetiniu)?",
 ,,,,,,enum,,,"""1""",,,,Taip,
