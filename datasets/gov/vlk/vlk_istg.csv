@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gydymo,string,bool,,,4,open,,Požymis ar įstaiga yra gydymo įstaiga,
 ,,,,,farmacijos,string,bool,,,4,open,,Požymis ar įstaiga yra vaistinė,
 ,,,,,ortopedijos_gamybos,string,bool,,,4,open,,Požymis ar įstaiga yra ortopedijos gamybos įstaiga,
-,,,,,odontologinės_prieziuros,string,bool,,,4,open,,Požymis ar įstaiga yra odontologinės priežiūros įstaiga,
+,,,,,odontologines_prieziuros,string,bool,,,4,open,,Požymis ar įstaiga yra odontologinės priežiūros įstaiga,
 ,,,,,skyrius,string,bool,,,4,open,,Požymis ar įstaiga yra licencijuojamos įstaigos skyrius,
 ,,,,,sav_kodas,string,,,,2,open,,Nuoroda į savivaldybių klasifikatorių,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
