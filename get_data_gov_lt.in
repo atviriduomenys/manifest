@@ -67,6 +67,12 @@ datasets/gov/lgt/geo_reiskiniai_procesai.csv
 datasets/gov/lgt/geologiniai_tyrimai.csv
 datasets/gov/lgt/geotopai.csv
 datasets/gov/lgt/leidimai_tirti_gelmes.csv
+datasets/gov/lgt/pzm_vandens_gavyba.csv
+datasets/gov/lgt/potencialus_tarsos_zidiniai.csv
+datasets/gov/lgt/naudinguju_iskasenu_gavyba.csv
+datasets/gov/lgt/poz_vandens_lygiai.csv
+datasets/gov/lgt/vidutiniu_menesiniu_lygiu.csv
+datasets/gov/lgt/pozeminio_vandens_hidrochemija.csv
 datasets/gov/lsd/demografija/demografija.csv
 datasets/gov/lsd/sveikata/mirciu_priezastys.csv
 datasets/gov/lsd/pajamu_ir_gyvenimo_salygos.csv
