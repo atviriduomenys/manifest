@@ -1,5 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/oro_tersalu_duomenys,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,IAtmosferaIsmetamiTersalai,,,,,,4,,,Į atmosferą išmestų teršalų kiekis,
 ,,,,,metai,integer,,Metai,,2,open,,"Metai, kuriais įvertintas išmetamų teršalų kiekis",
