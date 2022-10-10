@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/pajamu_ir_gyvenimo_salygos	,,,,,,,,,,,,Lietuvos statistikos departamento namų ūkių bei pavienių asmenų pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys,
+,datasets/gov/lsd/pajamu_ir_gyvenimo_salygos,,,,,,,,,,,,Lietuvos statistikos departamento namų ūkių bei pavienių asmenų pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys,
 ,,,,,,,,,,,,,,
 ,,,,Asmens,,,pb030,,,4,,,Asmenų pajamų ir gyvenimo sąlygų statistinio tyrimo rezultatai,
 ,,,,,pb030,string,,,,4,open,,Asmens ID, Statistinio tyrimo subjekto (asmens) unikalus identifikatorius
