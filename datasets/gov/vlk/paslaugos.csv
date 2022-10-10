@@ -5,6 +5,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Paslauga,,,,,,4,,,Asmens sveikatos priežiūros paslaugų sąrašas,"Asmens sveikatos priežiūros paslaugų klasifikatorius, patvirtintas Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos direktoriaus 2005 m. birželio 30 d. įsakymu Nr. 1K-81 „Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo“"
 ,,,,,amzius,string,,,,4,open,,Paciento amžiaus grupė,"Paciento, kuriam gali būti teikiama paslauga, amžiaus grupė"
+,,,,,,enum,,,"""V""",,,,Vaikas,
+,,,,,,,,,"""S""",,,,Suaugęs,
 ,,,,,kodas,string,,,,4,open,,Paslaugos kodas,"Paslaugos kodas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
 ,,,,,pavadinimas,string,,,,4,open,,Paslaugos pavadinimas,"Paslaugos pavadinimas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"". Kai kurių paslaugų pavadinimai yra nepilni, kadangi IS Sveidra pavadinimo lauke simbolių skaičius yra ribotas"
 ,,,,,teikimo_salygos,string,,,,4,open,,Paslaugos teikimo sąlygos,"Paslaugų teikimo sąlygos: ambulatorinės, stacionarinės bei dienos stacionaro sąlygos"
@@ -18,6 +20,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paslaugos_tipo_pavadinimas,string,,,,2,open,,Paslaugos tipo pavadinimas,"Paslaugos tipas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
 ,,,,,,comment,property,,"update(property: ""tipas.pavadinimas"", type: """")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,lygis,string,,,,4,open,,Paslaugos lygio kodas,Paslaugos lygio kodas
+,,,,,,enum,,,1,,,,Pirmas lygis,
+,,,,,,,,,2,,,,Antras lygis,
+,,,,,,,,,3,,,,Trečias lygis,
 ,,,,,nuo,date,D,,,4,open,,Paslauga teikiama nuo,Paslaugos galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Paslauga teikiama iki,Paslaugos galiojimo pabaigos data
 ,,,,,,,,,,,,,,
@@ -28,4 +33,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuo,date,D,,,4,open,,Galioja nuo,
 ,,,,,iki,date,D,,,4,open,,Galioja iki,
 ,,,,,verte,number,,,,4,open,,Bazinio balo vertė,
-,,,,,trukme,integer,,,,4,open,,Vidutinė paslaugos trukmė,
+,,,,,trukme,integer,U,,,4,open,,Vidutinė paslaugos trukmė,
