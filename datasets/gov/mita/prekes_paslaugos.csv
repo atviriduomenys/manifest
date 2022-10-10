@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/mita/prekiu_paslaugos,,,,,,,,,,,,"Mokslo, inovacijų ir technologijų agentūros duomenų bazėse registruotų žinioms imlių produktų duomenys.",
 
 ,,,,,,,,,,,,,,
-,,,,PrekesPaslaugos,,,,,,,,,,
+,,,,PrekePaslauga,,,,,,,,,,
+
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",3,open,"spinta:205, manifest:1290",,
 ,,,,,,comment,model,,"update(model: ""JuridinisAsmuo"")",3,open,vadovas:dsa/kodiniai-pavadinimai.html,,
 ,,,,,,comment,ref,,"update(ref: ""imones_kodas"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
