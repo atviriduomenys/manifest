@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/mita/prekiu_paslaugos,,,,,,,,,,,,"Mokslo, inovacijų ir technologijų agentūros duomenų bazėse registruotų žinioms imlių produktų duomenys.",
 ,,,,,,,,,,,,,,
-,,,,PrekePaslauga,,,,,3,,,,,
+,,,,PrekePaslauga,,,,,,3,,,,
 ,,,,,produktas,string,,,,3,open,,Produkto pavadinimas,
 ,,,,,savininkas,string,,,,2,open,,Juridinio asmens pavadinimas,
 ,,,,,,comment,type,,"create(property: ""savininkas"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,,,,
