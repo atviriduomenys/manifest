@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasasets/gov/lakd/eismas,,,,,,,,,,,,,
 ,,aadttraffic,,,,geojson,,https://gissrv.eismoinfo.lt/server/rest/services/LAKIS/Kelio_parametrai/MapServer/8/query?outFields=*&where=1%3D1&f=geojson,,,,,,
 ,,,,TrafficCensus,,,id,,,,,,Eismo intensyvumas,
-,,,,,id,integer,,id,,,4,,vadovas:dsa/dimensijos.html#model.ref,Eismo intensyvumas,
+,,,,,id,integer,,,id,,,4,,vadovas:dsa/dimensijos.html#model.ref,Eismo intensyvumas,
 ,,,,,geometry,"geometry(linestring,4326)",m,geometry,,4,open,,Geometrija,
 ,,,,,objectid,integer,,objectid,,4,open,,Identifikatorius,
 ,,,,,kelionr,ref,/datasets/gov/lakd/keliai/StateRoad[kelionr],kelionr,,4,open,,Kelio numeris,
