@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,IndividualiVeikla,,,eiles_nr,,,4,open,,Duomenys apie asmenis vykdančius individualias veiklas,
 ,,,,,eiles_nr,integer,,,,4,open,,Rinkinio eilės numeris,
 ,,,,,asm_kodas,string,,,,2,open,,Fizinio asmens kodas (Gyventojų registre suteiktas asmens kodas),
-,,,,,savivaldybe,integer,,,2,open,,Užsienio piliečio valstybės kodas (pagal valstybių klasifikatorių),
+,,,,,savivaldybe,integer,,,,2,open,,Užsienio piliečio valstybės kodas (pagal valstybių klasifikatorių),
 ,,,,,veiklos_tipas,integer,,,,4,open,,Veiklos tipas,
 ,,,,,,enum,,,201,,,,Notarai,
 ,,,,,,,,,202,,,,Advokatai,
