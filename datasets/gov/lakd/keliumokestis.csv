@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""tp.kilmes_salis"", type: """")",4,,spinta:216,,
 ,,,,,kategorija,string,,tp_kategorija,,2,open,,Transporto priemonės kategorija,
 ,,,,,,comment,property,,"update(property: ""tp.kategorija"", type: """")",4,,spinta:216,,
-,,,,,vinjetes_rusis,string,U,vinjetes_rusis,,4,open,,Vinjetės laikotarpis,
+,,,,,vinjetes_rusis,string,,vinjetes_rusis,,4,open,,Vinjetės laikotarpis,
 ,,,,,,enum,,,"""Diena""",,,,Diena,
 ,,,,,,,,,"""Savaitė""",,,,Savaitė,
 ,,,,,,,,,"""Menuo""",,,,Mėnuo,
