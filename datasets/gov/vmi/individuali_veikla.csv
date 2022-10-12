@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,232,,,,"Gyventojas, vykdantis žemės ūkio individualią veiklą, kurio žemės ūkio valdos dydis didesnis negu 14 EDV",
 ,,,,,,,,,250,,,,"Gyventojas, vykdantis individualią žemės ūkio veiklą, kurio žemės ūkio valdos (ūkio) ekonominis dydis yra lygus 4 EDV arba didesnis",
 ,,,,,,,,,251,,,,"Gyventojas, vykdantis individualią veiklą, įregistruotą MA iniciatyva (viršijęs teisės aktuose nustatytą iš JA gautų pajamų sumą arba deklaravęs pajamas iš individualios veiklos)",
-,,,,,prikl_tipo_reg_data,date,D,,,4,open,,Priklausymo mokesčių mokėtojo tipui registravimo data,
+,,,,,registruota,date,D,,,4,open,,Priklausymo mokesčių mokėtojo tipui registravimo data,
 ,,,,,prikl_tipo_pradzia,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pradžia,
 ,,,,,prikl_tipo_pabaiga,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pabaiga,
 ,,,,,moket_tipo_pavadinimas,string,,,,2,open,,Mokesčių mokėtojo tipas,
