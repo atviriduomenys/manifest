@@ -5,7 +5,6 @@ datasets/gov/vpt/old.csv
 datasets/gov/vpt/sutartys.csv
 datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
-datasets/gov/vmi/individuali_veikla.csv
 datasets/gov/rc/ar/savivaldybe.csv
 datasets/gov/rc/ar/apskritis.csv
 datasets/gov/rc/ar/gatve.csv
@@ -57,6 +56,7 @@ datasets/gov/giscentras/grpk.csv
 datasets/gov/vmi/prekiu_paslaugu_es_pvm.csv
 datasets/gov/aaa/upiu_monitoringo_duomenys.csv
 datasets/gov/vmi/verslo_liudijimai.csv
+datasets/gov/vmi/individuali_veikla.csv
 datasets/gov/vmi/zemes_mokestis.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
