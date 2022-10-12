@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pabaiga,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pabaiga,
 ,,,,,moketojas,string,,,,2,open,,Mokesčių mokėtojo tipo pavadinimas,
 ,,,,,galiojimas,date,D,,,4,open,,Galiojimo pradžia,
-,,,,,veiklos_kodas,integer,,,,2,open,,Ekonominės veiklos kodas,
+,,,,,veikla,integer,,,,2,open,,Ekonominės veiklos kodas,
 ,,,,,veiklos_data_nuo,date,D,,,4,open,,Ekonominės veiklos pradžia ,
 ,,,,,veiklos_data_iki,date,D,,,4,open,,Ekonominės veiklos pabaiga ,
 ,,,,,veiklos_pagrindas,integer,,,,4,open,,Veiklos pagrindas,
