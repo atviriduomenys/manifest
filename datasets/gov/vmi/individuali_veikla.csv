@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,251,,,,"Gyventojas, vykdantis individualią veiklą, įregistruotą MA iniciatyva (viršijęs teisės aktuose nustatytą iš JA gautų pajamų sumą arba deklaravęs pajamas iš individualios veiklos)",
 ,,,,,registruota,date,D,,,4,open,,Priklausymo mokesčių mokėtojo tipui registravimo data,
 ,,,,,pradzia,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pradžia,
-,,,,,prikl_tipo_pabaiga,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pabaiga,
+,,,,,pabaiga,date,D,,,4,open,,Veiklos vykdymo nurodytam mokesčio mokėtojo tipui (laukas MMT_ID) pabaiga,
 ,,,,,moket_tipo_pavadinimas,string,,,,2,open,,Mokesčių mokėtojo tipas,
 ,,,,,moket_tipo_pradzia,date,D,,,4,open,,Galiojimo pradžia,
 ,,,,,veiklos_kodas,integer,,,,2,open,,Ekonominės veiklos kodas,
