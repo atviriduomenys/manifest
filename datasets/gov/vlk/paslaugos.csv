@@ -19,10 +19,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""tipas.kodas"", type: """")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,paslaugos_tipo_pavadinimas,string,,,,2,open,,Paslaugos tipo pavadinimas,"Paslaugos tipas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
 ,,,,,,comment,property,,"update(property: ""tipas.pavadinimas"", type: """")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
-,,,,,lygis,integer,,,,4,open,,Paslaugos lygio kodas,Paslaugos lygio kodas
-,,,,,,enum,,,1,,,,Pirmas lygis,
-,,,,,,,,,2,,,,Antras lygis,
-,,,,,,,,,3,,,,Trečias lygis,
+,,,,,lygis,string,,,,4,open,,Paslaugos lygio kodas,Paslaugos lygio kodas
+,,,,,,enum,,1,"""I lygis""",,,,Pirmas lygis,
+,,,,,,,,2,"""II lygis""",,,,Antras lygis,
+,,,,,,,,3,"""III lygis""",,,,Trečias lygis,
 ,,,,,nuo,date,D,,,4,open,,Paslauga teikiama nuo,Paslaugos galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Paslauga teikiama iki,Paslaugos galiojimo pabaigos data
 ,,,,,,,,,,,,,,
