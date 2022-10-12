@@ -13,9 +13,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""jar.ja_kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,pavadinimas,string,,,,2,open,,Įstaigos pavadinimas,"Įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
 ,,,,,,comment,property,,"update(property: ""jar.ja_pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
-,,,,,pagrindines_id,integer,,,,2,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID). Šis ID suteikiamas įstaigos veiklos vietai, kurioje registruota įstaigos buveinė"
+,,,,,pagrindines_kodas,integer,,,,2,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID). Šis ID suteikiamas įstaigos veiklos vietai, kurioje registruota įstaigos buveinė"
 ,,,,,,comment,type,,"create(property: ""pagrindine"", type: ""ref"", ref: ""Pagrindine"")",4,,,,
-,,,,,,comment,property,,"update(property: ""pagrindine.id"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""pagrindine.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,pagrindines_pavadinimas,string,,,,2,open,,Įstaigos (pagrindinės) pavadinimas,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
 ,,,,,,comment,property,,"update(property: ""pagrindine.pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,optika,string,bool,,,4,open,,Požymis ar įstaiga yra optika,
