@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,moketojas,string,,,,2,open,,Mokesčių mokėtojo tipo pavadinimas,
 ,,,,,galiojimas,date,D,,,4,open,,Galiojimo pradžia,
 ,,,,,veikla,integer,,,,2,open,,Ekonominės veiklos kodas,
-,,,,,veiklos_data_nuo,date,D,,,4,open,,Ekonominės veiklos pradžia ,
+,,,,,veiklos_pradzia,date,D,,,4,open,,Ekonominės veiklos pradžia ,
 ,,,,,veiklos_data_iki,date,D,,,4,open,,Ekonominės veiklos pabaiga ,
 ,,,,,veiklos_pagrindas,integer,,,,4,open,,Veiklos pagrindas,
 ,,,,,,enum,,,1,,,,Pagrindinė veikla,
