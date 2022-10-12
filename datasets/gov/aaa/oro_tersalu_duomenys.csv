@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,IAtmosferaIsmetamiTersalai,,,,,,4,,,Į atmosferą išmestų teršalų kiekis,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
 ,,,,,metai,integer,,,,2,open,,"Metai, kuriais įvertintas išmetamų teršalų kiekis",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,tersalai,string,,,,2,open,,Oro teršalai,Į atmosferą išmetamų teršalų pavadinimai
