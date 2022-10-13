@@ -112,7 +112,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bifenoksas,string,,"Bifenoksas, µg/l",,3,open,,Bifenoksas,
 ,,,,,cipermetrinas,string,,"Cipermetrinas, µg/l",,3,open,,Cipermetrinas,
 ,,,,,dichlorvosas,string,,"Dichlorvosas, µg/l",,3,open,,Dichlorvosas,
-,,,,,tributilalavo_katijonas,string,,"Tributilalavo katijonas, µg/l",,3,open,,Tributilalavo katijonas,
 ,,,,,4-t-oktilfenolio_dietoksilatas,string,,"4-t-oktilfenolio_dietoksilatas, µg/l",,3,open,,4-t-oktilfenolio_dietoksilatas,
 ,,,,,4-t-oktilfenolio_monoetoksilatas,string,,"4-t-oktilfenolio_monoetoksilatas, µg/l",,3,open,,4-t-oktilfenolio_monoetoksilatas,
 ,,,,,4-t-oktilfenolio_trietoksilatas,string,,"4-t-oktilfenolio_trietoksilatas, µg/l",,3,open,,4-t-oktilfenolio_trietoksilatas,
