@@ -5,6 +5,7 @@ datasets/gov/vpt/old.csv
 datasets/gov/vpt/sutartys.csv
 datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
+datasets/gov/vmi/individuali_veikla.csv
 datasets/gov/rc/ar/savivaldybe.csv
 datasets/gov/rc/ar/apskritis.csv
 datasets/gov/rc/ar/gatve.csv
@@ -55,8 +56,9 @@ datasets/gov/aaa/juros_mariu_monitoringas.csv
 datasets/gov/giscentras/grpk.csv
 datasets/gov/vmi/prekiu_paslaugu_es_pvm.csv
 datasets/gov/aaa/upiu_monitoringo_duomenys.csv
-datasets/gov/vmi/verslo_liudijimai.csv
 datasets/gov/vmi/zemes_mokestis.csv
+datasets/gov/aaa/organiniu_tirpikliu_irenginiai.csv
+datasets/gov/vmi/verslo_liudijimai.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
 datasets/gov/vlk/drg.csv
@@ -79,3 +81,4 @@ datasets/gov/lsd/pajamu_ir_gyvenimo_salygos.csv
 datasets/gov/lsd/it_naudojimas_namu_ukiuose.csv
 datasets/gov/bpc/pagalbos_skambuciai.csv
 datasets/gov/aaa/ezeru_monitoringas.csv
+datasets/gov/aaa/oro_tersalu_duomenys.csv
