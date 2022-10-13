@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vmi/individuali_veikla,,,,,,,,,,,,,
+,datasets/gov/vmi/veiklos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,IndividualiVeikla,,,eiles_nr,,,4,open,,Duomenys apie asmenis vykdančius individualias veiklas,
 ,,,,,eiles_nr,integer,,,,4,open,,Rinkinio eilės numeris,
