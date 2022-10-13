@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,integer,,,,4,open,,Įrašo kodas,
 ,,,,,metai,date,D,,,4,open,,Metai,
 ,,,,,kiekis,number,m^3,,,4,open,,Požeminių išteklių likutis,
-
