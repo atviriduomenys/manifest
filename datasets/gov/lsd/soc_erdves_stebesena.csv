@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,ViesojoSektoriausFbPaskyruSekejai,,,fcb_url_adresas,,,3,,,Viešojo sektoriaus Facebook paskyrų stebėsena,"Lentelėje pateikiami valstybinių institucijų, įstaigų, tarnybų, agentūrų Facebook paskyrų sekėjų skačiaus stebėsenos rezultatai. Stebėsena vykdyta 2022-07-11, atnaujinimo data šiuo metu nenumatyta. Įtrauktos 99 paskyros. Stebėsena yra skirta viešojo sektoriaus bendravimui su visuomene skatinti, taip pat visuomenės informavimui apie šių paskyrų egzistavimą bei naudą.
+,,,,ViesojoSektoriausFbPaskyruSekejai,,,url,,,3,,,Viešojo sektoriaus Facebook paskyrų stebėsena,"Lentelėje pateikiami valstybinių institucijų, įstaigų, tarnybų, agentūrų Facebook paskyrų sekėjų skačiaus stebėsenos rezultatai. Stebėsena vykdyta 2022-07-11, atnaujinimo data šiuo metu nenumatyta. Įtrauktos 99 paskyros. Stebėsena yra skirta viešojo sektoriaus bendravimui su visuomene skatinti, taip pat visuomenės informavimui apie šių paskyrų egzistavimą bei naudą.
 Pastabos: Ne visos įstaigos turi socialinių medijų paskyras (pvz., Valstybinė lietuvių kalbos komisija). Įstagos gali turėti kelias paskyras (pvz., Lietuvos statistikos departamentas ir Valstybės duomenų analitika). Facebook paskyra gali nepriklausyti vienai konkrečiai įstaigai (pvz., Lietuvos teismai) arba priklausyti nebeegzistuojančiai įstaigai (Valstybinė energetikos inspekcija)."
 ,,,,,data,date,D,,,4,open,,Data,"Data, kuomet vykdyta paskyrų stebėsena"
 ,,,,,jar_kodas,string,,,,2,open,,Juridinio asmens kodas,
@@ -13,4 +13,4 @@ Pastabos: Ne visos įstaigos turi socialinių medijų paskyras (pvz., Valstybin�
 ,,,,,pavadinimas,string,,,,2,open,,"Valstybinės institucijos, įstaigos, tarnybos, agentūros pavadinimas",
 ,,,,,,comment,type,,"update(property: ""ja_pavadinimas"", type: """")",4,open,"spinta:205, manifest:1290",,
 ,,,,,sekeju_sk,integer,,,,4,open,,"Stebimos Facebook paskyros sekėjų ('followers') skaičius",
-,,,,,fcb_url_adresas,url,,,,4,open,,URL adresas,"Stebimos Facebook paskyros URL adresas"
+,,,,,url,url,,,,4,open,,URL adresas,"Stebimos Facebook paskyros URL adresas"
