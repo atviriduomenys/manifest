@@ -14,3 +14,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,isgauta_m3,number,m^3,,,4,open,,Išgautas kiekis kubiniais metrais,
 ,,,,,isgauta_m3_per_para,number,m^3/d,,,4,open,,Išgauta kubinių metrų per parą,
+,,,,,,,,,,,,,,
+,,,,ZemesGelmiuIstekliuLikutis,,,,,,2,,,Apibendrinti Žemės gelmių išteklių likučiai pagal Žemės gelmių išteklių rūšis,
+,,,,,rusis,string,,,,3,open,,Rušis,
+,,,,,kodas,integer,,,,4,open,,Įrašo kodas,
+,,,,,metai,date,D,,,4,open,,Metai,
+,,,,,kiekis,number,m^3,,,4,open,,Požeminių išteklių likutis,
+
