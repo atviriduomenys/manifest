@@ -81,4 +81,5 @@ datasets/gov/lsd/pajamu_ir_gyvenimo_salygos.csv
 datasets/gov/lsd/it_naudojimas_namu_ukiuose.csv
 datasets/gov/bpc/pagalbos_skambuciai.csv
 datasets/gov/aaa/oro_tersalu_duomenys.csv
+datasets/gov/lsd/soc_erdves_stebesena.csv
 datasets/gov/lsd/grid.csv
