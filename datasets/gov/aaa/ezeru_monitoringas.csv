@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,deguonis_istirpes,number,mg/l,,,4,open,,"Deguonis ištirpęs, mg/l O2",
 ,,,,,ph,number,,,,4,open,,pH,
 ,,,,,skaidrumas,string,,,,2,open,,"Skaidrumas, m",
-,,,,,elektr_laidis,number, µS/cm,,,4,open,,"Savitasis elektrinis laidis, mikroS/cm",
+,,,,,elektr_laidis,number,µS/cm,,,4,open,,"Savitasis elektrinis laidis, mikroS/cm",
 ,,,,,biochem_deg_suvartojimas,string,,,,3,open,,"Biocheminis deguonies suvartojimas per 7 paras, mg/l O2",
 ,,,,,amonio_azotas,string,,,,3,open,,"Amonio azotas, mg/l N",
 ,,,,,nitritu_azotas,string,,,,3,open,,"Nitritų azotas, mg/l N",
