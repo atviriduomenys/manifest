@@ -8,30 +8,42 @@ Atvirų duomenų struktūros aprašų katalogas
 aprašai.
 
 Duomenų struktūros aprašai rengiami vadovaujantis `Duomenų struktūros aprašo
-specifikacija <spec>`_.
+specifikacija`__.
+
+__ https://atviriduomenys.readthedocs.io/dsa/index.html
 
 
 Vienas struktūros aprašas atitinka vieną duomenų rinkinį, `Lietuvos atvirų
-duomenų kataloge <adk>`_. Struktūros aprašai saugomi CSV failuose, kurie
+duomenų kataloge`__. Struktūros aprašai saugomi CSV failuose, kurie
 organizuojami kataloguose, kurie atitinka struktūros apraše nurodytą `vardų
-erdvę <ns>`_.
+erdvę`__.
 
-Pilnai parengti struktūros aprašai publikuojami `Kataloge <adk>`_.
+__ https://data.gov.lt/datasets
+__ https://atviriduomenys.readthedocs.io/dsa/formatas.html#vardu-erdves
+
+Pilnai parengti struktūros aprašai publikuojami Kataloge.
 
 Duomenų parengimo atvėrimui procesas
 ====================================
 
 Dirbant prie duomenų atvėrimo, kiekvienam duomenų rinkiniui sukuriama po
-atskirą `GitHub užduotį <issues>`_, o užduotys valdomos `GitHub projekto
-lentoje <board>`_. Kiekiena užduotis yra siejama su `GitHub keitimais (Pull
-Request) <issue-link-pr>`_.
+atskirą `GitHub užduotį <issues_>`_, o užduotys valdomos vienoje iš šių lentų:
+
+- `II duomenų atvėrimo etapas <board_>`_ - į šią lentą keliamos tik tie
+  rinkiniai kurie atveriami II duomenų atvėrimo etapo projekto apimtyje.
+
+- `Atvėrimas <board-atverimas_>`_ - į šią lentą keliami rinkiniai, kurie
+  neįeina į II duomenų atvėrimo etapo projektą.
+
+Kieviena užduotis yra siejama su `GitHub keitimais (Pull Request)
+<issue-link-pr_>`_.
 
 Visas atvėrimo procesas vykdomas perkeliant užduotis projekto lentoje iš vieno
 stulpelio į kitą, tokia tvarka:
 
 1.  **Suplanuota** - prieš pradedant dirbti prie duomenų rinkinio atvėrimo,
-    reikia sukurti `užduotį <issues>`_ (jei ji dar nebuvo sukurta) ir įtraukti
-    užduotį į `projekto lentą <board>`_, nurodyti statusą „Suplanuota“.
+    reikia sukurti `užduotį <issues_>`_ (jei ji dar nebuvo sukurta) ir įtraukti
+    užduotį į projekto lentą, nurodyti statusą „Suplanuota“.
 
     Prie užduoties nurodoma organizacijos, kuriai priklauso rinkinys žymė. Ir
     atvėrimo būdas:
@@ -59,17 +71,17 @@ stulpelio į kitą, tokia tvarka:
     failo pavadinias turi sutapti su paskutiniu vardų erdvės komponentu +
     `.csv` galūnė.
 
-    Galiausiai sukuriamas `Pull Request <pulls>`_. Pull Request veikia
+    Galiausiai sukuriamas `Pull Request <pulls_>`_. Pull Request veikia
     automatinis struktūros aprašo patikrinimas. Jei patikrinimo metu aptinkamos
     klaidos reikia jas pataisyti.
 
     Jei manote, kad klaida yra tikrinimo mechanizme, tada reikia apie tai
     `pranešti sukuriant užduotį Spinta projekto užduočių sąraše
-    <spinta-issues>`_, jei tokia užduotis dar nebuvo sukurta. Kol Spintos
+    <spinta-issues_>`_, jei tokia užduotis dar nebuvo sukurta. Kol Spintos
     klaida nėra pataisyta, tuomet struktūros apraše, reikia `įrašyti komentarą
-    <comments>`_ `uri` stulpelyje pateikiant nuorodą į užduotį.
+    <comments_>`_ `uri` stulpelyje pateikiant nuorodą į užduotį.
 
-    Jei duomenų rinkinio duomenys bus publikuojami `Saugykloje <saugykla>`_,
+    Jei duomenų rinkinio duomenys bus publikuojami `Saugykloje <saugykla_>`_,
     tuomet, struktūros aprašo failas turi būti įtrauktas į `get_data_gov_lt.in`
     failą.
 
@@ -128,12 +140,10 @@ stulpelio į kitą, tokia tvarka:
 
 .. _board: https://github.com/orgs/atviriduomenys/projects/2/views/1
 .. _issues: https://github.com/atviriduomenys/manifest/issues
-.. _spec: https://atviriduomenys.readthedocs.io/dsa/index.html
-.. _adk: https://data.gov.lt/datasets
-.. _ns: https://atviriduomenys.readthedocs.io/dsa/formatas.html#vardu-erdves
 .. _gh-pr: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 .. _issue-link-pr: https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue
 .. _pulls: https://github.com/atviriduomenys/manifest/pulls
 .. _spinta-issues: https://github.com/atviriduomenys/spinta/issues/
 .. _comments: https://atviriduomenys.readthedocs.io/dsa/dimensijos.html#komentavimas
-.. _sugykla: https://get.data.gov.lt/
+.. _saugykla: https://get.data.gov.lt/
+.. _board-atverimas: https://github.com/orgs/atviriduomenys/projects/4/views/1
