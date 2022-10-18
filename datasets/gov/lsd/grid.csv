@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/grid/,,,,,,,,,,,,Tinkleliai sudaryti LKS-94 Lietuvos valstybinėje koordinačių sistemoje,
+,datasets/gov/lsd/grid,,,,,,,,,,,,Tinkleliai sudaryti LKS-94 Lietuvos valstybinėje koordinačių sistemoje,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Grid1KmSq,,,grid_id,,,4,,,Stačiakampės gardelės 1 km (LKS-94),
