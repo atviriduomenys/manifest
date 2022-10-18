@@ -50,7 +50,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,benz_a_pirenas,string,,,,3,open,,"Benz(a)pirenas, µg/l",
 ,,,,,benz_b_fluorantenas,string,,,,3,open,,Benz(b)fluorantenas,
 ,,,,,benz_k_fluorantenas,string,,"Benz(k)fluorantenas, µg/l",,3,open,,"Benz(b)fluorantenas, µg/l",
-,,,,,benz_ghi_perilenas,string,,",,3,open,,"Benz(g,h,i)perilenas, µg/l,
+,,,,,benz_ghi_perilenas,string,,,,3,open,,"Benz(g,h,i)perilenas, µg/l,
 ,,,,,inden_123_cd_pirenas,string,,,,3,open,,"Inden(1,2,3-cd)pirenas, µg/l",
 ,,,,,4_n_nonilfenolis,string,,,,3,open,,"4-n-nonilfenolis, µg/l",
 ,,,,,4_n_oktilfenolis,string,,,,3,open,,"4-n-oktilfenolis, µg/l",
