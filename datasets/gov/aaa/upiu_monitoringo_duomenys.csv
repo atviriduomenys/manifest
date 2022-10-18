@@ -124,7 +124,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,klaritromicinas,string,,,,3,open,,"Klaritromicinas, µg/l",
 ,,,,,azitromicinas,string,,,,3,open,,"Azitromicinas, µg/l",
 ,,,,,amoksicilinas,string,,,,3,open,,"Amoksicilinas, µg/l",
-,,,,,ciprofloksacinas,string,,,,3,open,,Ciprofloksacinas"Ciprofloksacinas, µg/l",
+,,,,,ciprofloksacinas,string,,,,3,open,,"Ciprofloksacinas, µg/l",
 ,,,,,diklofenakas,string,,,,3,open,,"Diklofenakas, µg/l",
 ,,,,,26_di_tret_butil_4_metilfenolis,string,,,,3,open,,"2,6-di-tret-butil-4-metilfenolis, µg/l",
 ,,,,,tiametoksamas,string,,,,3,open,,"Tiametoksamas, µg/l",
