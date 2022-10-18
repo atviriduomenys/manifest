@@ -81,4 +81,12 @@ datasets/gov/lsd/pajamu_ir_gyvenimo_salygos.csv
 datasets/gov/lsd/it_naudojimas_namu_ukiuose.csv
 datasets/gov/bpc/pagalbos_skambuciai.csv
 datasets/gov/aaa/ezeru_monitoringas.csv
+datasets/gov/mita/prekes_paslaugos.csv
 datasets/gov/aaa/oro_tersalu_duomenys.csv
+datasets/gov/lsd/soc_erdves_stebesena.csv
+datasets/gov/lsd/grid.csv
+datasets/gov/vlk/ambulatorines_sutartys.csv
+datasets/gov/vlk/stacionarines_sutartys.csv
+datasets/gov/vlk/paslaugos.csv
+datasets/gov/vlk/vlk_istg.csv
+datasets/gov/lsd/pasiekiamumo_teritorijos.csv
