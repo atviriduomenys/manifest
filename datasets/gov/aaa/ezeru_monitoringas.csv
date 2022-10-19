@@ -48,7 +48,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,4_n_nonilfenolis,string,,,,2,open,,"4-n-nonilfenolis, µg/l",
 ,,,,,4_n_oktilfenolis,string,,,,2,open,,"4-n-oktilfenolis, µg/l",
 ,,,,,4_nonilfenolis_sakot,string,,,,2,open,,"4-nonilfenolis (šakotasis), µg/l",
-,,,,,4_nonilfenolis,string,,,,2,open,,"4-nonilfenolis, µg/l",
 ,,,,,4_tert_oktilfenolis,string,,,,2,open,,"4-tert-oktilfenolis, µg/l",
 ,,,,,nonilfenoliai,string,,,,2,open,,"Nonilfenoliai (techninis mišinys), µg/l",
 ,,,,,pentachlorfenolis,string,,,,2,open,,"Pentachlorfenolis, µg/l",
