@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/gaminiu_duomenys,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,GaminiuTiekimasVidausRinkai,,,,,,4,,,Gaminių tiekimo vidaus rinkai apskaitos duomenys,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
+,,,,,metai,number,,,,3,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,gaminiu_srautas,string,,,,3,open,,Gaminių srautas,"Pagal Vieningos gaminių, pakuočių ir atliekų apskaitos informacinės sistemos (GPAIS) klasifikatorių (pagal Gamintojų ir importuotojų sąvado gaminių srautus)"
+,,,,,gaminio_rusis,string,,,,3,open,,Gaminio rūšis,Pagal GPAIS klasifikatorių (gaminių srautų klasifikavimas pagal rūšis)
+,,,,,imoniu_sk,integer,,,,3,open,,"Įmonių, pateikusių ataskaitas, skaičius, vnt.","Skaičiuojamos įmonės, kurios GPAIS patvirtino ketvirčių suvestines, kurių metinės ataskaitos yra suformuotos ar vertinamos bei įmonės, pateikusios VMI deklaracijas FR0523"
+,,,,,kiekis_patiekta,integer,,,,3,open,,"Patiekta vidaus rinkai, t",Kiekis tonomis
