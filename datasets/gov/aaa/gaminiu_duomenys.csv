@@ -10,5 +10,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,gaminiu_srautas,string,,,,3,open,,Gaminių srautas,"Pagal Vieningos gaminių, pakuočių ir atliekų apskaitos informacinės sistemos (GPAIS) klasifikatorių (pagal Gamintojų ir importuotojų sąvado gaminių srautus)"
 ,,,,,gaminio_rusis,string,,,,3,open,,Gaminio rūšis,Pagal GPAIS klasifikatorių (gaminių srautų klasifikavimas pagal rūšis)
-,,,,,imoniu_sk,integer,,,,3,open,,"Įmonių, pateikusių ataskaitas, skaičius, vnt.","Skaičiuojamos įmonės, kurios GPAIS patvirtino ketvirčių suvestines, kurių metinės ataskaitos yra suformuotos ar vertinamos bei įmonės, pateikusios VMI deklaracijas FR0523"
-,,,,,kiekis_patiekta,integer,,,,3,open,,"Patiekta vidaus rinkai, t",Kiekis tonomis
+,,,,,imoniu_sk,integer,U,,,4,open,,"Įmonių, pateikusių ataskaitas, skaičius, vnt.","Skaičiuojamos įmonės, kurios GPAIS patvirtino ketvirčių suvestines, kurių metinės ataskaitos yra suformuotos ar vertinamos bei įmonės, pateikusios VMI deklaracijas FR0523"
+,,,,,kiekis_patiekta,integer,t,,,4,open,,"Patiekta vidaus rinkai, t",Kiekis tonomis
