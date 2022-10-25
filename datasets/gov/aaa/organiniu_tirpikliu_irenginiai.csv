@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tikslinta,date,D,,,4,open,,Įrenginio registracijos duomenų patikslinimo pateikimo data (-os),
 ,,,,,isregistruota,date,D,,,4,open,,Įrenginio išregistravimo data,
 ,,,,,suvartojimo_riba,string,,,,1,open,,"Vykdomos veiklos rūšies organinio tirpiklio suvartojimo riba, t/m",Nurodomos Taisyklių 2 priede kiekvienai veiklos rūšiai nurodytų organizuotai ir neorganizuotai išmetamų LOJ ribinės vertės arba bendro išmetamų LOJ kiekio ribinės vertės 
-,,,,,jurid_asm_kodas,string,,,,2,open,,Juridinio asmens kodas,
+,,,,,ja_kodas,string,,,,2,open,,Juridinio asmens kodas,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:205, manifest:1290",,
 ,,,,,sprendimas,string,,,,1,open,,"Įrenginio registracijos, jo patikslinimo ar išregistravimo data, sprendimo/rašto išsiuntimo data ir Nr.",
 ,,,,,pastabos,string,,,,2,open,,Papildoma informacija,
