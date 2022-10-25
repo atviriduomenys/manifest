@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""IM""",,,,Importuota AM1E.2,
 ,,,,,,,,,"""EK""",,,,Eksportuota AM1E.2,
 ,,,,,,,,,"""PA""",,,,Pagaminta AM1E.2,
-,,,,,kiekis,number,,,,3,open,,"F-dujų ar OAM, su kuriais buvo atlikta veikla (importas, eksportas)",
+,,,,,kiekis,number,kg,,,4,open,,"F-dujų ar OAM, su kuriais buvo atlikta veikla (importas, eksportas)",
 ,,,,,atsiskaityta,integer,,,,2,open,,Atsiskaitymo data (metai),
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,prigimtis,string,,,,4,open,,F-dujų ar OAM medžiagos ar mišinio prigimtis,
