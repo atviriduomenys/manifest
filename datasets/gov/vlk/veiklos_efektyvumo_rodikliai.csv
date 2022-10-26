@@ -1,9 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vlk/veiklos_efektyvumo_rodikliai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,VeiklosEfektyvumoRodikliai,,,,,,4,,,ASPĮ veiklos kokybės ir efektyvumo vertinimo rodiklių suvestinė,"Informacija apie Asmens sveikatos priežiūros įstaigų, teikiančių stacionarines asmens sveikatos priežiūros paslaugas, veiklos kokybės ir efektyvumo vertinimo rodiklių duomenis. Šie duomenys rengiami vadovaujantis Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos 2019 m. lapkričio 28 d., šių rodiklių reikšmių skaičiavimo metodikos ir duomenų apie pasiektas reikšmes suvestinės formos patvirtinimo“ įsakymu Nr. 1K-264 „Dėl stacionarines asmens sveikatos priežiūros paslaugas teikiančių įstaigų veiklos kokybės ir efektyvumo vertinimo rodiklių sąrašo"
-,,,,,metai,date,Y,,,4,open,,Metai,Data metų tikslumu
+,,,,VeiklosEfektyvumoRodiklis,,,,,,4,,,ASPĮ veiklos kokybės ir efektyvumo vertinimo rodiklių suvestinė,"Informacija apie Asmens sveikatos priežiūros įstaigų, teikiančių stacionarines asmens sveikatos priežiūros paslaugas, veiklos kokybės ir efektyvumo vertinimo rodiklių duomenis. Šie duomenys rengiami vadovaujantis Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos 2019 m. lapkričio 28 d., šių rodiklių reikšmių skaičiavimo metodikos ir duomenų apie pasiektas reikšmes suvestinės formos patvirtinimo“ įsakymu Nr. 1K-264 „Dėl stacionarines asmens sveikatos priežiūros paslaugas teikiančių įstaigų veiklos kokybės ir efektyvumo vertinimo rodiklių sąrašo"
+,,,,,metai,integer,,,,2,open,,Metai,Data metų tikslumu
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,rodiklis,integer,,,,4,open,,Rodiklis,Nurodomas rodiklio pavadinimas
-,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Nuoroda į įstaigų sąrašą,
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Nuoroda į įstaigų sąrašą,
 ,,,,,skaitiklis,number,,,,4,open,,Skaitiklis,
 ,,,,,vardiklis,number,,,,4,open,,Vardiklis,
