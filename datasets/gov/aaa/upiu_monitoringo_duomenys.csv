@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,chem_deg_suvartojimas,string,,,,2,open,,"Cheminis deguonies suvartojimas (bichromatinė oksidacija), mg/l O2",
 ,,,,,anglingumas,number,mg/l,,,4,open,,"Tirpinis organinis anglingumas, mg/l",
 ,,,,,chloridai,number,mg/l,,,4,open,,"Chloridai, mg/l",
-,,,,,kalcis,integer,mg/l,,,4,open,,"Kalcis, mg/l",
+,,,,,kalcis,number,mg/l,,,4,open,,"Kalcis, mg/l",
 ,,,,,kalis,number,mg/l,,,4,open,,"Kalis, mg/l",
 ,,,,,magnis,number,mg/l,,,4,open,,"Magnis, mg/l",
 ,,,,,natris,number,mg/l,,,4,open,,"Natris, mg/l",
