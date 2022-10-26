@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/varezultatai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,ValstybinioAuditoRezultatai,,,,,,4,,,Valstybinio audito rezultatai ,"Valstybės kontrolės finansinių, atitikties ir veiklos auditų ataskaitų, išvadų duomenys"
+,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,Audito identifikacijos numeris
+,,,,,audito_pavadinimas,string,,,,3,open,,Produkto pavadinimas,Audito pavadinimas
+,,,,,audito_tipas,string,,,,4,open,,Audito tipas,"Audito tipas: finansinis, veiklos, atitikties auditas"
+,,,,,,enum,,,"""finansinis""",,,,Finansinis,
+,,,,,,,,,"""veiklos""",,,,Veiklos,
+,,,,,,,,,"""atitikties auditas""",,,,Atitikties auditas,
+,,,,,srities_pavadinimas,string,,,,3,open,,Srities pavadinimas,"Srities, kurioje suplanuotas auditas, pavadinimas"
+,,,,,registravimo_data,date,D,,,4,open,,Registracijos data,Dokumento registracijos dokumentų valdymo posistemyje data
+,,,,,failo_pavadinimas,string,,,,3,open,,Failo pavadinimas,Failo pavadinimas
+,,,,,failo_url,url,,,,4,open,,Nuoroda į produkto dokumentą,Audito ataskaitos dokumentas
