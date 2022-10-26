@@ -2,8 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vk/fba,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,FinansinesBuklesAtaskaita,,,,,,4,,,Finansinės būklės ataskaita,Valstybės kontrolės finansinės būklės ataskaitos duomenys
+,,,,FinansineBukle,,,,,,4,,,Finansinės būklės ataskaita,Valstybės kontrolės finansinės būklės ataskaitos duomenys
 ,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,grupe_i_pavadinimas,string,,,,3,open,,Straipsnio I grupės pavadinimas,Straipsnio I grupės pavadinimas
