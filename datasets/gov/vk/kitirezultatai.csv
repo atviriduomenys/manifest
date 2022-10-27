@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vk/kitirezultatai,,,,,,,,,,,,,
+,datasets/gov/vk/kiti_rezultatai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,KitiVeiklosRezultatai,,,,,,4,,,Valstybės kontrolės vertinimų rezultatai,Valstybės kontrolės vertinimų (ne auditų) rezultatai
 ,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,Vertinimo (ne audito) identifikacijos numeris
