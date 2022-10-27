@@ -5,8 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,ataskaitinis_ketvirtis,integer,,,,3,open,,Ketvirtis,Ketvirtis
-,,,,,tipas,string,,,,4,open,,Tipas,Paskatinimo ar apdovanojimo tipas
-,,,,,,enum,,,"""Paskatinimas""",,,,,
-,,,,,,,,,"""Apdovanojimas""",,,,,
+,,,,,tipas,string,,,,3,open,,Tipas,Paskatinimo ar apdovanojimo tipas
 ,,,,,priezastis,string,,,,3,open,,Priežastis,Paskatinimo ar apdovanojimo priežastis
 ,,,,,darbuotoju_skaicius,integer,,,,4,open,,Darbuotojų skaičius,"Darbuotojų skaičius, kuriems skirtas paskatinimas ar apdovanojimas"
