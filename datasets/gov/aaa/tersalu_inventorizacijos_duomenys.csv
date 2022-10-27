@@ -12,5 +12,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vykdytojas,string,,,,3,open,,Veiklos vykdytojas,"Nurodomas veiklos vykdytojo, kurio eksploatuojamo įrenginio (objekto) inventorizacijos ataskaita arba patikslinti inventorizacijos duomenys primti ar pratęsti, pavadinimas. Veiklos vykdytojas - tai fizinis/juridinis asmuo, vykdantis ūkinę ar kitokią veiklą, kurios vykdymo metu iš eksploatuojamų taršos šaltinių išmetami teršalai į aplinkos orą."
 ,,,,,objektas,string,,,,3,open,,Įrenginio (objekto) pavadinimas,"Nurodomas įrenginio (objekto) pavadinimas. Įrenginys – stacionarus technikos objektas, kuriame vykdoma viena arba kelių rūšių tiesiogiai ir techniškai susijusi ūkinė veikla (Aplinkos oro taršos šaltinių ir iš jų išmetamų teršalų inventorizacijos ir ataskaitų teikimo taisykles, patvirtintas Lietuvos Respublikos aplinkos ministro 2002 m. birželio 27 d. įsakymu Nr. 340, 3 str.)"
 ,,,,,adresas,string,,,,2,open,,Įrenginio (objekto) adresas,Nurodomas tikslus ūkinės veiklos įrenginio (objekto) adresas
-,,,,,metai,integer,,,,3,open,,Inventorizacijos ataskaitos priėmimo/pratęsimo metai,Informacija atveriama nuo 2019 metų
+,,,,,metai,integer,,,,2,open,,Inventorizacijos ataskaitos priėmimo/pratęsimo metai,Informacija atveriama nuo 2019 metų
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
