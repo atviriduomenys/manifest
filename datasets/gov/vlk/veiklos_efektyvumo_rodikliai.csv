@@ -5,6 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,metai,integer,,,,2,open,,Metai,Data metų tikslumu
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,rodiklis,integer,,,,4,open,,Rodiklis,Nurodomas rodiklio pavadinimas
-,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Nuoroda į įstaigų sąrašą,
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Nuoroda į įstaigų sąrašą,
 ,,,,,skaitiklis,number,,,,4,open,,Skaitiklis,
 ,,,,,vardiklis,number,,,,4,open,,Vardiklis,
