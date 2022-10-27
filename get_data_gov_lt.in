@@ -91,3 +91,13 @@ datasets/gov/vlk/paslaugos.csv
 datasets/gov/vlk/vlk_istg.csv
 datasets/gov/lsd/pasiekiamumo_teritorijos.csv
 datasets/gov/aaa/gaminiu_duomenys.csv
+datasets/gov/vk/alga.csv
+datasets/gov/vk/apdovanojimai.csv
+datasets/gov/vk/bprezultatai.csv
+datasets/gov/vk/bva.csv
+datasets/gov/vk/fba.csv
+datasets/gov/vk/kitirezultatai.csv
+datasets/gov/vk/mvp.csv
+datasets/gov/vk/rekomendacijos.csv
+datasets/gov/vk/varezultatai.csv
+datasets/gov/vk/vra.csv
