@@ -46,7 +46,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,LaboratorijuRezultataiEvrk,,,,,,3,,,COVID-19 laboratorijų rezultatai pagal EVRK,"Covid-19 diagnostinių tyrimų rezultatai, agreguoti pagal datą ir ekonominės veiklos rūšis (EVRK 2)"
 ,,,,,test_date,date,,,,3,open,,"Diagnostinių laboratorinių tyrimų atlikimo data",
 ,,,,,evrk_group_code,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Tiriamųjų asmenų aktualios darbovietės ekonominės veiklos rūšių klasifikatoriaus (2 redakcija) grupės kodas.,nuoroda: https://osp.stat.gov.lt/static/evrk2.htm
-,,,,,tests_positive,integer,,,,4,open,,Teigiamų atsakymų skaičius (virusas aptiktas),
+,,,,,tests_positive,integer,U,,,4,open,,Teigiamų atsakymų skaičius (virusas aptiktas),
 ,,,,,tests_negative,integer,,,,4,open,,Neigiamų atsakymų skaičius (virusas neaptiktas),
 ,,,,,,,,,,,,,,
 ,,,,LigoniniuDuomenys,,,,,,3,,,COVID-19 ligoninių duomenys,"Turimos bei užimtos stacionaro lovos, deguonies tiekimu aprūpintos lovos, intensyvios terapijos ir reanimacijos skyrių lovos, dirbtinės plaučių ventiliacijos įranga ir jos panaudojimas, ECMO sistemos ir jų užimtumas, pacientų srautas, darbingo ir nedarbingo personalo kiekiai, skiriamo Remdesivir kiekiai. Duomenys yra agreguoti pagal datą ir regionus (penkias teritorines ligonių kasas)."
