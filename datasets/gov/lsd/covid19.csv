@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ataskaitine_para,string,,,,2,open,,Vakardienos para,
 ,,,,,apskritis,string,,,,2,open,,"Apskritis (iš dešimties Lietuvos apskričių), kurioje registruota įstaiga",
 ,,,,,jau_tirta_nvsc,string,,,,2,open,,"Rodo, kada NVSC paskutinį kartą pateikė duomenis apie šioje įstaigoje galimai",
-,,,,,darbuotojai,integer,,,,4,open,,"Apytikslis apskaičiavimas, kiek įstaigoje dirba darbuotojų",
+,,,,,darbuotojai,integer,U,,,4,open,,"Apytikslis apskaičiavimas, kiek įstaigoje dirba darbuotojų",
 ,,,,,atvejai_viso,integer,,,,4,open,,Kiek šioje įstaigoje dirbančių asmenų yra gavę teigiamą diagnostinio COVID testo,
 ,,,,,atvejai_14d,integer,,,,4,open,,"Kiek per paskutines 14 dienų iš šioje įstaigoje dirbančių asmenų pirmą kartą savo",
 ,,,,,norma_14d,integer,,,,4,open,,"Remiantis bendru populiacijos užsikrėtimų dažniu, kiek būtų galima tokioje įstaigoje",
