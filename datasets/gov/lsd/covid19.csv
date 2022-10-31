@@ -57,7 +57,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,hospital_beds_occupied_r7mean,integer,U,,,4,open,,Užimtų ligoninių stacionaro aktyvaus gydymo lovų skaičius (be RITS!),
 ,,,,,oxygen_beds_total_r7mean,integer,U,,,4,open,,Visos lovos su deguonies tiekimu (hospital_beds_total dalis),
 ,,,,,oxygen_beds_occupied_r7mean,integer,U,,,4,open,,Užimtos lovos su deguonies tiekimu,
-,,,,,mv_beds_total_r7mean,number,,,,4,open,,Visos lovos su dirbtinės plaučių ventiliacijos (DPV) galimybėmis (hospital_beds_total dalis),
+,,,,,mv_beds_total_r7mean,integer,U,,,4,open,,Visos lovos su dirbtinės plaučių ventiliacijos (DPV) galimybėmis (hospital_beds_total dalis),
+
 ,,,,,mv_beds_occupied_r7mean,number,,,,4,open,,Užimtos lovos su DPV galimybėmis,
 ,,,,,icu_beds_total_r7mean,number,,,,4,open,,Reanimacijos ir intensyvios terapijos skyrių (RITS) lovos (nėra hospital_beds_total dalis!),
 ,,,,,icu_beds_occupied_r7mean,number,,,,4,open,,Užimtos RITS lovos (nėra hospital_beds_occupied dalis!),
