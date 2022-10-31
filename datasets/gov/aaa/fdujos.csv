@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/fdujos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,FluorDujos,,,,,,2,,,https://aaa.lrv.lt/lt/veiklos-sritys/klimato-kaita/fluorintos-siltnamio-efekta-sukeliancios-dujos,
+,,,,FluorDujos,,,,,,2,,,Fluorintų šiltnamio efektą sukeliančių dujų ir ozono sluoksnį ardančių medžiagų duomenys,https://aaa.lrv.lt/lt/veiklos-sritys/klimato-kaita/fluorintos-siltnamio-efekta-sukeliancios-dujos
 ,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
 ,,,,,kodas,string,,,,2,open,,Fluorintų dujų ir ozono sluoksnį ardančių medžiagų (OAM) mišinio kodas,
 ,,,,,trumpinys,string,,,,2,open,,Fluorintų dujų ar ozono sluoksnį ardančių medžiagų (OAM) trumpas pavadinimas,
