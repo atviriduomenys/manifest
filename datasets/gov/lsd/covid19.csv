@@ -54,7 +54,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,hospital_name,string,,,,2,open,,Ligoninės pavadinimas,
 ,,,,,healthcare_region,string,,,,2,open,,Regionas (penkias teritorines ligonių kasas),
 ,,,,,hospital_beds_total_r7mean,integer,U,,,4,open,,Bendras ligoninių stacionaro aktyvaus gydymo lovų skaičius (be RITS!),
-,,,,,hospital_beds_occupied_r7mean,number,,,,4,open,,Užimtų ligoninių stacionaro aktyvaus gydymo lovų skaičius (be RITS!),
+,,,,,hospital_beds_occupied_r7mean,integer,U,,,4,open,,Užimtų ligoninių stacionaro aktyvaus gydymo lovų skaičius (be RITS!),
 ,,,,,oxygen_beds_total_r7mean,number,,,,4,open,,Visos lovos su deguonies tiekimu (hospital_beds_total dalis),
 ,,,,,oxygen_beds_occupied_r7mean,number,,,,4,open,,Užimtos lovos su deguonies tiekimu,
 ,,,,,mv_beds_total_r7mean,number,,,,4,open,,Visos lovos su dirbtinės plaučių ventiliacijos (DPV) galimybėmis (hospital_beds_total dalis),
