@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,county,string,,,,2,open,,"Apskritis, kuriai priklauso ta savivaldybė",
 ,,,,,employees,integer,U,,,4,open,,Suapvalintas darbuotojų skaičius (tik turintys LT asmens kodus),
 ,,,,,immunised_percent,string,,,,3,open,,Imunizuotų (skiepais arba natūraliai) darbuotojų procentas (tik turintys LT asmens kodus),
-,,,,,percentile_1,integer,,,,4,open,,"Procentilis, į kurį patenka darbovietė pagal imunizuotų darbuotojų procentą (parodo, koks procentas visų darboviečių yra „žemiau“ už šią darbovietę)",
+,,,,,percentile_1,integer,,,,3,open,,"Procentilis, į kurį patenka darbovietė pagal imunizuotų darbuotojų procentą (parodo, koks procentas visų darboviečių yra „žemiau“ už šią darbovietę)",
 ,,,,,percentile_2,integer,,,,4,open,,"Tas pats procentilis, tačiau prieš skaičiavimą pašalinus visas su žmonių sveikatos priežiūros veikla susijusias darbovietes",
 ,,,,,as_of_date,string,,,,2,open,,"Paskutinė para, kurios duomenys yra įtraukti",
 ,,,,,,,,,,,,,,
