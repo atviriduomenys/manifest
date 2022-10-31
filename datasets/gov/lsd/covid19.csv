@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,incidence,integer,U,,,4,open,,Tą dieną toje asmenų grupėje nustatytų pirminių ar pakartotinių užsikrėtimų SARS-CoV-2 virusu skaičius (tai yra keturių tolimesnių stulpelių suma),
 ,,,,,infection_1,integer,,,,4,open,,Pirminių užsikrėtimų SARS-CoV-2 virusu skaičius ,
 ,,,,,infection_2,integer,U,,,4,open,,Antrinių užsikrėtimų SARS-CoV-2 virusu skaičius,
-,,,,,infection_3,integer,,,,4,open,,Tretinių užsikrėtimų SARS-CoV-2 virusu skaičius,
+,,,,,infection_3,integer,U,,,4,open,,Tretinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,infection_4,integer,,,,4,open,,Ketvirtinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,deaths_all,integer,,,,4,open,,"Visos mirtys Lietuvoje pagal skaitmeninius mirties liudijimus (<1% mirties liudijimų yra popieriniai, jų nėra nei čia, nei eSveikatoje)",
 ,,,,,deaths_cov1,integer,,,,4,open,,"COVID mirtys pagal pirmąjį apibrėžimą (""nuo COVID""). Tai yra siauriausias/konservatyviausias COVID mirties apibrėžimas, darantis prielaidą, kad visi mirtiesliudijimai ir mirties priežastys buvo užpildytos pagal taisykles ir be klaidų. Mirusių asmenų, kurių pagrindine mirties priežastimi nurodyta COVID liga, skaičius",
