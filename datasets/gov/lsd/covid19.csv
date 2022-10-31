@@ -84,7 +84,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,remdesivir_vials_used_r7mean,number,,,,4,open,,Sunaudota Remdesivir flakonų,
 ,,,,,remdesivir_patients_total_r7mean,number,,,,4,open,,"Pacientų, gaunančių Remdesivir, skaičius",
 ,,,,,remdesivir_patients_new_r7mean,number,,,,4,open,,"Naujų pacientų, gaunančių Remdesivir, skaičius",
-,,,,,koord,geometry(point"," 4326),,,,4,open,,Ligoninės koordinatės,
+,,,,,koord,"geometry(point, 4326)",,,,4,open,,Ligoninės koordinatės,
 ,,,,,,,,,,,,,,
 ,,,,SvieslenciuStatistika,,,,,,3,,,COVID-19 statistika (švieslentės),"Pateikta iš švieslenčių (dashboards) agreguota informacija kiekvienai dienai pagal savivaldybes nuo pandemijos pradžios Lietuvoje apie atvejus, tyrimus ir mirtis."
 ,,,,,date,date,,,,3,open,,Ataskaitinė para kurios metu įvyko įvykiai arba kurios pabaigoje buvo vykdoma apskaita,
