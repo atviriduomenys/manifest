@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atveju_istorija,string,,,,2,open,,Atvejų istorija,
 ,,,,,testavimo_istorija,string,,,,2,open,,"Tas pats kaip ir atvejų istorija, tačiau atvaizduoja testavimų apimtis (teigiamus ir neigiamus diagnostinius COVID testus)",
 ,,,,,testai_14d,integer,U,,,4,open,,"Kiek iš viso įstaigos darbuotojams buvo atlikta diagnostinių COVID testų per paskutines 14 d.",
-,,,,,aliarmas,string,,,,2,open,,"Informuoja, ar naujų atvejų skaičius įstaigoje per 14 d. neviršija normos",
+,,,,,aliarmas,string,,,,3,open,,"Informuoja, ar naujų atvejų skaičius įstaigoje per 14 d. neviršija normos",
 ,,,,,imones_pavadinimas,string,,,,2,open,,"Neskelbiamas, kol nėra aiškus poreikis ir nauda visuomenei",
 ,,,,,veiklos_pobudis,string,,,,2,open,,"Apytikslis veiklos, kuria užsiima įstaiga, pobūdžio aprašymas",
 ,,,,,,,,,,,,,,
