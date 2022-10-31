@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,age_gr,string,,,,3,open,,Asmenų amžiaus grupė (dešimties metų pločio rėžiais) apskaičiuota šiai dienai,
 ,,,,,incidence,integer,U,,,4,open,,Tą dieną toje asmenų grupėje nustatytų pirminių ar pakartotinių užsikrėtimų SARS-CoV-2 virusu skaičius (tai yra keturių tolimesnių stulpelių suma),
 ,,,,,infection_1,integer,,,,4,open,,Pirminių užsikrėtimų SARS-CoV-2 virusu skaičius ,
-,,,,,infection_2,integer,,,,4,open,,Antrinių užsikrėtimų SARS-CoV-2 virusu skaičius,
+,,,,,infection_2,integer,U,,,4,open,,Antrinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,infection_3,integer,,,,4,open,,Tretinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,infection_4,integer,,,,4,open,,Ketvirtinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,deaths_all,integer,,,,4,open,,"Visos mirtys Lietuvoje pagal skaitmeninius mirties liudijimus (<1% mirties liudijimų yra popieriniai, jų nėra nei čia, nei eSveikatoje)",
