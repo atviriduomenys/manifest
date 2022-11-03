@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pvm_kodas,integer,,,,2,open,,Aktualus PVM mokėtojo kodas be prefikso „LT“,
 ,,,,,pvm_iregistruota,date,D,,,4,open,,PVM mokėtojo įregistravimo data ,
 ,,,,,pvm_isregistruota,date,D,,,4,open,,PVM mokėtojo išregistravimo data ,
-,,,,,padalinio_nr,integer,,,,4,open,,Mokesčio mokėtojo padalinio numeris,
+,,,,,padalinio_nr,integer,,,,2,open,,Mokesčio mokėtojo padalinio numeris,
 ,,,,,padalinio_pvd,string,,,,2,open,,Mokesčio mokėtojo padalinio pavadinimas,
 ,,,,,padalinio_adresas,string,,,,2,open,,Padalinio adresas,
 ,,,,,padalinio_kodas,integer,,,,2,open,,"Valstybės, kurioje yra padalinys, kodas",
