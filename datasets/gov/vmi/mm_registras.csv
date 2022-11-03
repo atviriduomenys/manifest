@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isreg_data,date,D,,,4,open,,Kliento išregistravimo iš MMR data,
 ,,,,,anul_data,date,D,,,4,open,,Įrašo anuliavimo data,
 ,,,,,valstybe,string,,,,2,open,,Triženklis valstybės kodas,
-,,,,,tipo_kodas,integer,,,,4,open,,Kliento tipo kodas,
+,,,,,tipo_kodas,integer,,,,2,open,,Kliento tipo kodas,
 ,,,,,tipo_aprasymas,string,,,,2,open,,Kliento tipo aprašymas,
 ,,,,,tipas_nuo,date,D,,,2,open,,Duomenų tipo galiojimo pradžios data,
 ,,,,,tipas_iki,date,D,,,2,open,,Duomenų tipo galiojimo pabaigos data,
