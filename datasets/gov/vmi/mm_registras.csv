@@ -1,10 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/mm_registras,,,,,,,,,,,,"MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS","MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS"
+,datasets/gov/mm_registras,,,,,,,,,,,,"MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS",
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,MokesciuMoketojas,,,eiles_nr,,,4,,,"MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS","MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS"
-,,,,,eiles_nr,integer,,,,4,open,,Duomenų rinkinio eilės numeris,
+,,,,MokesciuMoketojas,,,eiles_nr,,,4,,,"MOKESČIŲ MOKĖTOJŲ (JURIDINIŲ ASMENŲ) KODŲ, TIPŲ, GRUPIŲ DUOMENYS",
 ,,,,,klnt_tipas,string,,,,4,open,,Kliento tipas. ,
 ,,,,,ja_kodas,integer,,,,2,open,,JA identifikacinis kodas,
 ,,,,,pavadinimas,string,,,,2,open,,Mokesčių mokėtojo pavadinimas,
