@@ -63,7 +63,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,icu_beds_occupied_r7mean,number,U,,,4,open,,Užimtos RITS lovos (nėra hospital_beds_occupied dalis!),
 ,,,,,icu_ecmo_systems_total_r7mean,number,U,,,4,open,,Bendras RITS lovų su ECMO sistemomis skaičius,
 ,,,,,icu_ecmo_systems_in_use_r7mean,number,U,,,4,open,,Užimtų RITS lovų su ECMO sistemomis skaičius,
-,,,,,cv19_hospital_beds_assigned_r7mean,number,,,,4,open,,COVID pacientams skirtų lovų skaičius,
+,,,,,cv19_hospital_beds_assigned_r7mean,number,U,,,4,open,,COVID pacientams skirtų lovų skaičius,
 ,,,,,cv19_hospital_beds_occupied_r7mean,number,,,,4,open,,Užimtų COVID pacientams skirtų lovų skaičius,
 ,,,,,cv19_oxygen_beds_assigned_r7mean,number,,,,4,open,,COVID pacientams skirtos lovos su deguonies tiekimu,
 ,,,,,cv19_oxygen_beds_occupied_r7mean,number,,,,4,open,,Užimtos COVID pacientams skirtos lovos su deguonies tiekimu,
