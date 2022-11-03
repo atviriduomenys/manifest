@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,valstybe,string,,,,2,open,,Triženklis valstybės kodas,
 ,,,,,tipo_kodas,integer,,,,4,open,,Kliento tipo kodas,
 ,,,,,tipo_aprasymas,string,,,,2,open,,Kliento tipo aprašymas,
-,,,,,tipas_nuo,date,D,,,4,open,,Duomenų tipo galiojimo pradžios data,
+,,,,,tipas_nuo,date,D,,,2,open,,Duomenų tipo galiojimo pradžios data,
 ,,,,,tipas_iki,date,D,,,2,open,,Duomenų tipo galiojimo pabaigos data,
 ,,,,,anul_tipas,date,D,,,2,open,,Duomenų tipo anuliavimo data,
 ,,,,,pvm_kodas_pref,string,,,,2,open,,Aktualaus PVM mokėtojo kodo prefiksas,
