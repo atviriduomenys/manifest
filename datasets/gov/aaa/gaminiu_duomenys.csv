@@ -10,4 +10,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,srautas,string,,,,2,open,,Gaminių srautas,"Pagal Gamintojų ir importuotojų registravimo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 2009-05-27 Nr. D1-291, priedą. Apibrėžta gaminių srautų klasifikacija naudojama ir Vieningos gaminių, pakuočių ir atliekų apskaitos informacinėje sistemoje (GPAIS)."
 ,,,,,rusis,string,,,,2,open,,Gaminio rūšis,"Pagal Gamintojų ir importuotojų registravimo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 2009-05-27 Nr. D1-291, priedą. Apibrėžta gaminių rūšių klasifikacija naudojama ir Vieningos gaminių, pakuočių ir atliekų apskaitos informacinėje sistemoje (GPAIS)."
 ,,,,,imoniu_sk,integer,U,,,4,open,,"Įmonių, pateikusių ataskaitas, skaičius, vnt.","Skaičiuojamos įmonės, kurios GPAIS patvirtino ketvirčių suvestines, kurių metinės ataskaitos yra suformuotos ar vertinamos bei įmonės, pateikusios VMI deklaracijas FR0523"
-,,,,,kiekis,number,t,,,4,open,,"Patiekta vidaus rinkai, t",Kiekis tonomis
+,,,,,kiekis,integer,t,,,4,open,,"Patiekta vidaus rinkai, t",Kiekis tonomis
