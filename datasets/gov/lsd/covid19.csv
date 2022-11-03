@@ -149,7 +149,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,NeigaliujuStatistika,,,id,,,4,,,COVID-19 statistika apie asmenis su negalia,"Pateikiami užsikrėtimų koronavirusu, skiepijimo, bendros imunizacijos, mirčių nuo COVID-19 rodikliai apibūdinantys pandemijos situaciją trijose asmenų grupėse: asmenys su negalia, su dideliu nedarbingumu, ar su specialiais poreikiais."
 ,,,,,id,string,,,,4,open,,Unikalus id,
 ,,,,,date,date,D,,,4,open,,Atskaitos data,
-,,,,,level_type,string,,,,3,open,,NDNT priskiriamas tipas,
+,,,,,level_type,string,,,,2,open,,NDNT priskiriamas tipas,
 ,,,,,level,string,,,,2,open,,Lygis,
 ,,,,,n_all,integer,U,,,4,open,,"Visi neįgalieji, darbingieji ir spec. poreikių žmonės įtraukti ndnt tarnybos",
 ,,,,,n_lt,integer,U,,,4,open,,"Visi neįgalieji, darbingieji ir spec. poreikių žmonės įtraukti ndnt tarnybos ir turintys lietuvišką asmens kodą COVID laikotarpiu",
