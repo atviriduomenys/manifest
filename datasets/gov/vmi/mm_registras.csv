@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,padalinio_adresas,string,,,,2,open,,Padalinio adresas,
 ,,,,,padalinio_kodas,integer,,,,4,open,,"Valstybės, kurioje yra padalinys, kodas",
 ,,,,,suformuota,date,D,,,4,open,,Mokesčio mokėtojo padalinio suformavimo data,
-,,,,,isformuota,date,D,,,4,open,,Mokesčio mokėtojo padalinio išformavimo data,
+,,,,,isformuota,date,D,,,2,open,,Mokesčio mokėtojo padalinio išformavimo data,
 ,,,,,ekonomine_veikla,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
 ,,,,,veiklos_pradzia,date,D,,,4,open,,Veiklos galiojimo pradžios data,
 ,,,,,veiklos_pabaiga,date,D,,,4,open,,Veiklos galiojimo pabaigos data,
