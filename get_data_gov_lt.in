@@ -91,6 +91,7 @@ datasets/gov/vlk/stacionarines_sutartys.csv
 datasets/gov/vlk/paslaugos.csv
 datasets/gov/vlk/vlk_istg.csv
 datasets/gov/lsd/pasiekiamumo_teritorijos.csv
+datasets/gov/aaa/gaminiu_duomenys.csv
 datasets/gov/vk/alga.csv
 datasets/gov/vk/apdovanojimai.csv
 datasets/gov/vk/bprezultatai.csv
