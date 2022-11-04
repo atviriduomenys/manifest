@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,DarbovieciuImunizacija,,,,,,3,open,,Asmenų imunizacija pagal darbovietes,"Kasdien atnaujinami darbuotojų imunizacijos nuo SARS-CoV-2 duomenys dvidešimtyje tūkstančių Lietuvos įmonių, įstaigų, organizacijų (ekonominės veiklos rūšių klasifikatorių (redakcija 2)"
 ,,,,,workplace_code,string,,,,2,open,,Darbovietės juridinio asmens registracijos kodas (iš Registrų centro),
 ,,,,,workplace_name,string,,,,2,open,,Darbovietės pavadinimas,
-,,,,,activity_evrk2,string,,,,2,open,,Darbovietės veikla pagal ekonominės veiklos rūšių klasifikatorių (redakcija 2),
+,,,,,activity_evrk2,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Darbovietės veikla pagal ekonominės veiklos rūšių klasifikatorių (redakcija 2),
 ,,,,,municipality,string,,,,2,open,,"Savivaldybė, kurioje registruota darbovietė (neatsižvelgiama į filialus, padalinius)",
 ,,,,,county,string,,,,2,open,,"Apskritis, kuriai priklauso ta savivaldybė",
 ,,,,,employees,integer,U,,,4,open,,Suapvalintas darbuotojų skaičius (tik turintys LT asmens kodus),
