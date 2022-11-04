@@ -44,7 +44,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,as_of_date,string,,,,2,open,,"Paskutinė para, kurios duomenys yra įtraukti",
 ,,,,,,,,,,,,,,
 ,,,,LaboratorijuRezultataiEvrk,,,,,,3,,,COVID-19 laboratorijų rezultatai pagal EVRK,"Covid-19 diagnostinių tyrimų rezultatai, agreguoti pagal datą ir ekonominės veiklos rūšis (EVRK 2)"
-,,,,,test_date,date,,,,3,open,,"Diagnostinių laboratorinių tyrimų atlikimo data",
+,,,,,test_date,date,D,,,4,open,,"Diagnostinių laboratorinių tyrimų atlikimo data",
 ,,,,,evrk_group_code,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Tiriamųjų asmenų aktualios darbovietės ekonominės veiklos rūšių klasifikatoriaus (2 redakcija) grupės kodas.,nuoroda: https://osp.stat.gov.lt/static/evrk2.htm
 ,,,,,tests_positive,integer,U,,,4,open,,Teigiamų atsakymų skaičius (virusas aptiktas),
 ,,,,,tests_negative,integer,U,,,4,open,,Neigiamų atsakymų skaičius (virusas neaptiktas),
