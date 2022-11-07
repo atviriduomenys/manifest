@@ -90,4 +90,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,'900',,,,,Utenos apskrities savivaldybės,
 ,,,,,,,,'1000',,,,,Vilniaus apskrities savivaldybės,
 ,,,,,sav,string,,,,3,open,,Savivaldybės pavadinimas ,
-,,,,,bdu_spalio,currency,EUR,,,4,open,,Bruto darbo užmokestis spalio mėn.,
+,,,,,bdu_spalio,number,,,,2,open,,Bruto darbo užmokestis spalio mėn.,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
