@@ -145,7 +145,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dose_number,integer,,,,4,open,,"Asmens gauto skiepo numeris, neatsižvelgiant į vakcinos pavadinimą",
 ,,,,,drug_manufacturer,string,,,,3,open,,Gauto skiepo dozės gamintojo pavadinimas,
 ,,,,,drug_name_common,string,,,,3,open,,Vakcinos pavadinimas,
-,,,,,vacc_org_name,string,,,,2,open,,"Įstaigos pavadinimas, kurioje asmuo buvo skiepytas (arba kuri organizavo skiepijimą",
+,,,,,vacc_org_name,string,,,,2,open,,"Įstaigos pavadinimas, kurioje asmuo buvo skiepytas (arba kuri organizavo skiepijimą)",
 ,,,,,vacc_org_muni,string,,,,2,open,,Asmenį skiepijusios (arba skiepijimą organizavusios) įstaigos savivaldybė,
 ,,,,,,,,,,,,,,
 ,,,,NeigaliujuStatistika,,,id,,,4,,,COVID-19 statistika apie asmenis su negalia,"Pateikiami užsikrėtimų koronavirusu, skiepijimo, bendros imunizacijos, mirčių nuo COVID-19 rodikliai apibūdinantys pandemijos situaciją trijose asmenų grupėse: asmenys su negalia, su dideliu nedarbingumu, ar su specialiais poreikiais."
