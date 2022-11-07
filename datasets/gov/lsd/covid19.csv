@@ -222,14 +222,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,StudVakcPagalIstaigasIrProgramas,,,,,,3,,,Studentų vakcinacija ir imunizacija pagal įstaigas ir studijų programas,Studentų vakcinaciją ir bendrą imunizaciją nuo SARS‑CoV-2 pagal aukštąsias mokymosi įstaigas ir studijų programas
 ,,,,,ins_pav,string,,,,2,open,,Aukštosios mokyklos pavadinimas,
 ,,,,,prg_pavad_lt,string,,,,2,open,,Studijų programos pavadinimas,
-,,,,,n_all,integer,U,,,4,open,,"Šiuo metu aktyvūs studijuojantys studentai (ne sustabdę studijas ar pašalinti). Įtraukti tiek lietuviai, tiek užsieniečiai.",
+,,,,,n_all,integer,U,,,4,open,,Šiuo metu aktyvūs studijuojantys studentai,"Ne sustabdę studijas ar pašalinti. Įtraukti tiek lietuviai, tiek užsieniečiai."
 ,,,,,n_lt,integer,U,,,4,open,,"Aktyvūs studentai, kurie turi lietuvišką asmens kodą","Aktyvūs studentai, kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose. Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose"
-,,,,,n_vac,number,U,,,4,open,,"Bent viena doze vakcinuotų aktyvių studentų skaičius. Tik lietuviai (tiksliau, turintieji lietuvišką asmens kodą).",
+,,,,,n_vac,number,U,,,4,open,,Bent viena doze vakcinuotų aktyvių studentų skaičius,"Tik lietuviai (tiksliau, turintieji lietuvišką asmens kodą)"
 ,,,,,n_vac_imm,number,U,,,4,open,,Abiem vakcinos dozėmis paskiepyti studentai,"Abiem vakcinos dozėmis paskiepytų aktyvių studentų, kurie jau oficialiai turi imunitetą (14 d. nuo  paskiepijimo antra vakcinos doze datos), skaičius. Tik lietuviai"
 ,,,,,n_any_imm,number,U,,,4,open,,"Aktyvūs studentai, kurie galimai turi imunitetą","Studentų turinčių imunitetą skaičius arba neseniai gavę (per 180 d. laikotarpį) teigiamą diagnostinio tyrimo atsakymą, arba paskiepyti abiem vakcinos dozėmis ir praėjo 14 d. nuo paskiepijimo antra vakcinos doze datos. Tik lietuviai"
-,,,,,p_vac,number,%,,,4,open,,Procentas bent viena doze vakcinuotų (n_vac / n_lt * 100%),
-,,,,,p_vac_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po vakcinacijos (n_vac_imm / n_lt * 100%),
-,,,,,p_any_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po  vakcinacijos arba užsikrėtimo (n_any_imm / n_lt * 100%),
+,,,,,p_vac,number,%,,,4,open,,Procentas bent viena doze vakcinuotų,Skaičiuojama pagal: (n_vac / n_lt * 100%)
+,,,,,p_vac_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po vakcinacijos,Skaičiuojama pagal: (n_vac_imm / n_lt * 100%)
+,,,,,p_any_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po  vakcinacijos arba užsikrėtimo,Skaičiuojama pagal: (n_any_imm / n_lt * 100%)
 ,,,,,confidentiality,string,,,,2,open,,Konfidencialumo taisyklė,"Žymi, ar buvo pritaikyta konfidencialumo taisyklė, modifikuojanti absoliučius ir procentinius skaičius, kad būtų neįmanoma sužinoti, kas konkrečiai yra vakcinuotas ir kas ne. Taisyklė: mažiausiame pogrupyje negali būti mažiau nei 5 asmenys. Jei yra – tokiu atveju laikoma, kad tame pogrupyje yra 5 asmenys ir procentai skaičiuojami atitinkamai."
-,,,,,data_freshness,date,D,,,4,open,,"Duomenų ""šviežumas"". Mažiausia iš dviejų datų: paskutinės įtrauktos vakcinacijos datos ir paskutinio įtraukto teigiamo testo datos. ",
-,,,,,reference_data,date,D,,,4,open,,Ataskaitinė para.,
+,,,,,data_freshness,date,D,,,4,open,,Duomenų "šviežumas","Mažiausia iš dviejų datų: paskutinės įtrauktos vakcinacijos datos ir paskutinio įtraukto teigiamo testo datos. "
