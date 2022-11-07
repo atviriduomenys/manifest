@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,date,date,D,,,4,open,,"Paros, kurią įvyko aprašomi įvykiai, data",
 ,,,,,sex,string,,,,3,open,,Asmenų lytis,
 ,,,,,age_gr,string,,,,3,open,,Asmenų amžiaus grupė (dešimties metų pločio rėžiais) apskaičiuota šiai dienai,
-,,,,,incidence,integer,U,,,4,open,,Tą dieną toje asmenų grupėje nustatytų pirminių ar pakartotinių užsikrėtimų SARS-CoV-2 virusu skaičius (tai yra keturių tolimesnių stulpelių suma),
+,,,,,incidence,integer,U,,,4,open,,Tą dieną toje asmenų grupėje nustatytų pirminių ar pakartotinių užsikrėtimų SARS-CoV-2 virusu skaičius,Tai yra keturių tolimesnių stulpelių suma
 ,,,,,infection_1,integer,U,,,4,open,,Pirminių užsikrėtimų SARS-CoV-2 virusu skaičius ,
 ,,,,,infection_2,integer,U,,,4,open,,Antrinių užsikrėtimų SARS-CoV-2 virusu skaičius,
 ,,,,,infection_3,integer,U,,,4,open,,Tretinių užsikrėtimų SARS-CoV-2 virusu skaičius,
@@ -134,8 +134,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gmp_indication,string,,,,3,open,,"Priežastis, dėl kurios asmuo registravosi tyrimui (nuo 2022-05-01 nebeskelbiama)",
 ,,,,,,,,,,,,,,
 ,,,,Vakcinavimas,,,,,,3,,,COVID-19 vakcinavimas,Neagreguoti vakcinacijos duomenys
-,,,,,pseudo_id,string,,,,4,open,,"Unikalus pseudonimizuotas skiepijamo asmens numeris, sukurtas ne pagal asmens kodą (kurio nedidelė dalis žmonių neturi), bet pagal eSveikatos paciento kodą (jį turi visi skiepijami asmenys)",
-,,,,,birth_year_noisy,integer,,,,2,open,,"Skiepijamo asmens gimimo metai, tačiau pagal konfidencialumo taisykles dešimtadaliui asmenų gimimo metai yra atsitiktinai pakeisti pridedant nedidelį asmens privatumą saugantį ""triukšmą"" (+/- 1 metai)",
+,,,,,pseudo_id,string,,,,4,open,,Unikalus pseudonimizuotas skiepijamo asmens numeris,"Sukurtas ne pagal asmens kodą (kurio nedidelė dalis žmonių neturi), bet pagal eSveikatos paciento kodą (jį turi visi skiepijami asmenys)"
+,,,,,birth_year_noisy,integer,,,,2,open,,Skiepijamo asmens gimimo metai,"Pagal konfidencialumo taisykles dešimtadaliui asmenų gimimo metai yra atsitiktinai pakeisti pridedant nedidelį asmens privatumą saugantį "triukšmą" (+/- 1 metai)"
 ,,,,,sex,string,,,,4,open,,Skiepijamo asmens lytis,
 ,,,,,,enum,,“M”,,,,,Moteris,
 ,,,,,,,,“V”,,,,,Vyras,
