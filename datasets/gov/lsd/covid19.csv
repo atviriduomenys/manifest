@@ -223,10 +223,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ins_pav,string,,,,2,open,,Aukštosios mokyklos pavadinimas,
 ,,,,,prg_pavad_lt,string,,,,2,open,,Studijų programos pavadinimas,
 ,,,,,n_all,integer,U,,,4,open,,"Šiuo metu aktyvūs studijuojantys studentai (ne sustabdę studijas ar pašalinti). Įtraukti tiek lietuviai, tiek užsieniečiai.",
-,,,,,n_lt,integer,U,,,4,open,,"Aktyvūs studentai, kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose. Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose.",
+,,,,,n_lt,integer,U,,,4,open,,"Aktyvūs studentai, kurie turi lietuvišką asmens kodą","Aktyvūs studentai, kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose. Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose"
 ,,,,,n_vac,number,U,,,4,open,,"Bent viena doze vakcinuotų aktyvių studentų skaičius. Tik lietuviai (tiksliau, turintieji lietuvišką asmens kodą).",
-,,,,,n_vac_imm,number,U,,,4,open,,"Abiem vakcinos dozėmis paskiepytų aktyvių studentų, kurie jau oficialiai turi imunitetą (14 d. nuo  paskiepijimo antra vakcinos doze datos), skaičius. Tik lietuviai.",
-,,,,,n_any_imm,number,U,,,4,open,,"Aktyvių studentų, kurie galimai turi imunitetą, skaičius: arba neseniai gavę (per 180 d. laikotarpį) teigiamą diagnostinio tyrimo atsakymą, arba paskiepyti abiem vakcinos dozėmis ir praėjo 14 d. nuo paskiepijimo antra vakcinos doze datos. Tik lietuviai.",
+,,,,,n_vac_imm,number,U,,,4,open,,Abiem vakcinos dozėmis paskiepyti studentai,"Abiem vakcinos dozėmis paskiepytų aktyvių studentų, kurie jau oficialiai turi imunitetą (14 d. nuo  paskiepijimo antra vakcinos doze datos), skaičius. Tik lietuviai"
+,,,,,n_any_imm,number,U,,,4,open,,"Aktyvių studentų, kurie galimai turi imunitetą","Aktyvių studentų, kurie galimai turi imunitetą, skaičius: arba neseniai gavę (per 180 d. laikotarpį) teigiamą diagnostinio tyrimo atsakymą, arba paskiepyti abiem vakcinos dozėmis ir praėjo 14 d. nuo paskiepijimo antra vakcinos doze datos. Tik lietuviai"
 ,,,,,p_vac,number,%,,,4,open,,Procentas bent viena doze vakcinuotų (n_vac / n_lt * 100%),
 ,,,,,p_vac_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po vakcinacijos (n_vac_imm / n_lt * 100%),
 ,,,,,p_any_imm,number,%,,,4,open,,Procentas turinčiųjų oficialų imunitetą po  vakcinacijos arba užsikrėtimo (n_any_imm / n_lt * 100%),
