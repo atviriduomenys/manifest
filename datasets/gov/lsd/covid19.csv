@@ -191,7 +191,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,municipality,string,,,,2,open,,"Savivaldybė, kurioje yra mokykla",
 ,,,,,age_at_2021sep1,integer,yr,,,4,open,,"Amžiaus grupė, mokinio amžius 2021 m. rugsėjo 1 d.",
 ,,,,,n_all,integer,U,,,4,open,,Visi šioje mokykloje šiuo metu besimokantys šios amžiaus grupės mokiniai. Įtraukti ir moksleiviai be lietuviško asmens kodo.,
-,,,,,n_lt,integer,U,,,4,open,,Visi šioje mokykloje besimokantys mokiniai, "Visi šios amžiaus grupės mokiniai","kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose. Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose."
+,,,,,n_lt,integer,U,,,4,open,,Visi šioje mokykloje besimokantys mokiniai, "Visi šios amžiaus grupės mokiniai kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose. Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose."
 ,,,,,n_vac,number,U,,,4,open,,Bent  viena doze vakcinuotų besimokančių mokinių skaičius. Tik turintieji lietuvišką asmens kodą.,
 ,,,,,n_vac_imm,number,U,,,4,open,,Abiem vakcinos dozėmis paskiepyti mokiniai,"T.y. mokiniai, kurie oficialiai jau turi imunitetą (praėjo 14 d. nuo  paskiepijimo abiem vakcinos dozėmis datos), skaičius. Tik turintieji lietuvišką asmens kodą."
 ,,,,,n_any_imm,number,U,,,4,open,,Besimokančių mokinių, kurie galimai turi imunitetą,"Mokinių skaičius, kurie turi arba neseniai gavo (per 180 d. laikotarpį) teigiamą diagnostinio tyrimo atsakymą, arba paskiepyti abiem vakcinos dozėmis ir praėjo 14 d. nuo antros vakcinos dozės datos. Tik turintieji lietuvišką asmens kodą."
