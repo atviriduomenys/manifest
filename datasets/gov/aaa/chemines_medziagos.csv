@@ -19,5 +19,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pav_frazes,string,,,,4,open,,Pavojingumo frazės,
 ,,,,,metai,integer,,,,2,open,,"Dokumento (ataskaitos) atsiskaitymo metai, nuo 2017 m.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-
-
