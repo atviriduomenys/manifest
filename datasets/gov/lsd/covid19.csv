@@ -205,7 +205,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data_freshness,date,D,,,4,open,,"Duomenų ""šviežumas""","Mažiausia iš dviejų datų: paskutinės įtrauktos vakcinacijos datos ir paskutinio įtraukto teigiamo testo datos."
 ,,,,,reference_data,date,D,,,4,open,,Ataskaitinė para.,
 ,,,,,,,,,,,,,,
-,,,,StudVakcPagalIstaigas,,,,,,3,,,Studentų vakcinacija ir imunizacija pagal aukštąsias mokymosi įstaigas,Studentų vakcinaciją ir bendrą imunizaciją nuo SARS‑CoV-2 pagal aukštąsias mokymosi įstaigas.
+,,,,StudVakcPagalIstaigas,,,,,,3,,,Studentų vakcinacija ir imunizacija pagal aukštąsias mokymosi įstaigas,"Studentų vakcinaciją ir bendrą imunizaciją nuo SARS‑CoV-2 pagal aukštąsias mokymosi įstaigas"
 ,,,,,ins_pav,string,,,,2,open,,Aukštosios mokyklos pavadinimas,
 ,,,,,n_all,integer,U,,,4,open,,"Šiuo metu aktyvūs studijuojantys studentai (ne sustabdę studijas ar pašalinti). Įtraukti tiek lietuviai, tiek užsieniečiai.",
 ,,,,,n_lt,integer,U,,,4,open,,"Aktyvūs studentai, kurie turi lietuvišką asmens kodą ir gali būti randami medicininiuose registruose",Šis skaičius naudojamas kaip vardiklis kituose procentiniuose stulpeliuose
