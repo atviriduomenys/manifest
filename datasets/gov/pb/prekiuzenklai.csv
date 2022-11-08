@@ -45,4 +45,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Applicant,,,person_type,/Trademark/ApplicantDetails/Applicant,,3,,,Applicant,
 ,,,,,person_type,string,,PersonType,,3,,,Person type,
 ,,,,ns2:FormattedNameAddress,,,ns2:organization_name,/Trademark/ApplicantDetails/Applicant/AddressBook/ns2:FormattedNameAddress,,3,,,Name address,
-,,,,,ns2:organization_name,string,,ns2:OrganizationName,,3,,,Organization name,
+,,,,,ns2:organization_name,integer,,ns2:OrganizationName,,3,,,Organization name,
