@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,VandensNaudojimas,,,,,,2,,,Metinių vandens naudojimo apskaitos ataskaitų duomenys,
 ,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
-,,,,,metai,integer,,,,2,open,,"Data, už kurią yra teikiamas dokumentas.",
+,,,,,atsisk_data_nuo,integer,,,,2,open,,"Data (metai), už kurią yra teikiamas dokumentas.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,manifest:1263,,
