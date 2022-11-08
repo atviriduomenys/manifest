@@ -8,7 +8,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,month,date,M,td[1]/text(),,4,open,,,
 ,,,,,distribution,string,,td[2]/a/strong/text(),,3,open,,,
 ,,xml,,,,xml,,https://search.vpb.lt/pdb/opendata/files/{time.distribution},"extract(""zip"")",,,,,
-,,,,,param,string,,Param,,,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""time"", source: ""Time"")",,,,,
 ,,,,,,,,,,,,,,
 ,,,,TradeMark,,,application_number,/TradeMark,,4,open,,Trademark,
