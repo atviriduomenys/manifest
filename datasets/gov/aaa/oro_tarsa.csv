@@ -42,6 +42,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,trs_kodas,integer,,,,3,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše",
 ,,,,,trs_pavad,string,,,,3,open,,Teršalo pavadinimas,
 ,,,,,trs_grupe,string,,,,4,,,Teršalų grupavimas,
-,,,,,,enum,,,"""V""",,,,,Teršalai išleidžiami į aplinką (vandenį)
+,,,,,,enum,,,"""V""",,,,Teršalai išleidžiami į aplinką (vandenį),
 ,,,,,,,,,"""I""",,,,Teršalai išleidžiami į žemę,
 ,,,,,,,,,"""O""",,,,Teršalai išmetami į aplinkos orą,
