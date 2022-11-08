@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vand_sal_kodas,string,,,,3,open,,Vandens šaltinio kodas,
 ,,,,,vandens_rusis,string,,,,3,open,,Vandens rūšies pavadinimas,
 ,,,,,vand_sal_pavad,string,,,,3,open,,Vandens šaltinio pavadinimas,
-,,,,,koord,geometry(point, 3346),,,,3,open,,Koordinatės (LKS-94),
+,,,,,koord,"geometry(point, 3346)",,,,3,open,,Koordinatės (LKS-94),
 ,,,,,telkinio_kodas,string,,,,3,open,,Vandens telkinio kodas,
 ,,,,,telkinio_pav,string,,,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,tiekejas,string,,,,3,open,,Vandens tiekėjas,
