@@ -14,13 +14,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atsisk_data_iki,integer,,,,2,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,mat_vnt,string,,,,4,open,,Teršalo matavimo vienetai (Klasifikatorius),
-,,,,,,enum,,,"""T""",,,,,Tonos
-,,,,,,,,,"""M""",,,,,Kubiniai metrai
-,,,,,kiek_per_ats_met,number,,,,4,open,,Per ataskaitinius metus į aplinkos orą patekęs teršalų kiekis,
-,,,,,kiek_per_pr_met,number,,,,4,open,,Per praėjusius metus į aplinkos orą patekęs teršalų kiekis (išskaičiuojamas iš praeitų metų ataskaitos duomenų),
+,,,,,,enum,,,"""T""",,,,Tonos,
+,,,,,,,,,"""M""",,,,Kubiniai metrai,
+,,,,,kiek_per_ats_met,number,,,,3,open,,Per ataskaitinius metus į aplinkos orą patekęs teršalų kiekis,
+,,,,,kiek_per_pr_met,number,,,,3,open,,Per praėjusius metus į aplinkos orą patekęs teršalų kiekis (išskaičiuojamas iš praeitų metų ataskaitos duomenų),
 ,,,,,kuro_kodas,string,,,,3,open,,Kuro rūšies kodas - trumpinys,
 ,,,,,kuro_pavad,string,,,,3,open,,"Kuro rūšies pavadinimas (pvz., mediena)",
-,,,,,mpr_pavad,string,,,,4,open,,Visas vykdomos (ar jau įvykdytos) aplinkos oro taršos mažinimo priemonės pavadinimas,
+,,,,,mpr_pavad,string,,,,1,open,,Visas vykdomos (ar jau įvykdytos) aplinkos oro taršos mažinimo priemonės pavadinimas,
 ,,,,,mpr_verte,number,,,,2,open,,Išlaidos skirtos taršos mažinimo priemonei vykdyti,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,mpr_ivykd_data,date,D,,,4,open,,Priemonės planuojama įvykdymo data,
@@ -34,14 +34,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vr_pavad_en,string,,,,3,open,,Veiklos rūšies pavadinimas anglų kalba,
 ,,,,,snk_pavad,string,,,,3,open,,"Sunaudoto kuro patikslintas pavadinimas, kai nurodyti kuro kodai 121, 224, 225, 314",
 ,,,,,snk_mat_vnt,string,,,,4,open,,Sunaudoto kuro kiekio matavimo vienetai,
-,,,,,,enum,,,"""T""",,,,,Tonos
-,,,,,,,,,"""M""",,,,,Kubiniai metrai
-,,,,,snk_kiekis,number,,,,4,open,,"Sunaudoto kuro kiekis tonomis, jei naudojamas kietas arba skystas kuras, ir tūkst. m3, jei naudojamas dujinis kuras",
+,,,,,,enum,,,"""T""",,,,Tonos,
+,,,,,,,,,"""M""",,,,Kubiniai metrai,
+,,,,,snk_kiekis,number,,,,3,open,,"Sunaudoto kuro kiekis tonomis, jei naudojamas kietas arba skystas kuras, ir tūkst. m3, jei naudojamas dujinis kuras",
 ,,,,,sieringumas,integer,%,,,4,open,,Sunaudoto kuro sieringumas procentais,
 ,,,,,peleningumas,integer,%,,,4,open,,Sunaudoto kuro peleningumas procentais,
 ,,,,,trs_kodas,integer,,,,3,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše",
 ,,,,,trs_pavad,string,,,,3,open,,Teršalo pavadinimas,
 ,,,,,trs_grupe,string,,,,4,,,Teršalų grupavimas,
 ,,,,,,enum,,,"""V""",,,,,Teršalai išleidžiami į aplinką (vandenį)
-,,,,,,,,,"""I""",,,,,Teršalai išleidžiami į žemę
-,,,,,,,,,"""O""",,,,,Teršalai išmetami į aplinkos orą
+,,,,,,,,,"""I""",,,,Teršalai išleidžiami į žemę,
+,,,,,,,,,"""O""",,,,Teršalai išmetami į aplinkos orą,
