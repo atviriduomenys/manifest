@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,class_number,integer,,ClassNumber,,3,,,Class number,
 ,,,,,goods_services_description_lt,string,,"GoodsServicesDescription[@languageCode=""LT""]",,2,,,,
 ,,,,,,comment,type,,"update(property:""goods_services_description@lt, type: ""text"")",4,,spinta:204,,
-,,,,Priority,,,priority number,/TradeMark/PriorityDetails/Priority,,4,,,Priority,
+,,,,Priority,,,priority_number,/TradeMark/PriorityDetails/Priority,,4,,,Priority,
 ,,,,,priority_country_code,string,,PriorityCountryCode,,3,,,Priority country code,
 ,,,,,priority_number,integer,,PriorityNumber,,4,,,Priority number,
 ,,,,,priority_date,date,D,PriorityDate,,4,,,Priority date,
