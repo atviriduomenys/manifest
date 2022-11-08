@@ -79,6 +79,7 @@ datasets/gov/lgt/vidutiniu_menesiniu_lygiu.csv
 datasets/gov/lgt/pozeminio_vandens_hidrochemija.csv
 datasets/gov/lsd/demografija/demografija.csv
 datasets/gov/lsd/sveikata/mirciu_priezastys.csv
+datasets/gov/aaa/chemijos_naudotojai.csv
 datasets/gov/lsd/pajamu_ir_gyvenimo_salygos.csv
 datasets/gov/lsd/it_naudojimas_namu_ukiuose.csv
 datasets/gov/bpc/pagalbos_skambuciai.csv
