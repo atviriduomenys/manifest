@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,ns,,,,,http://vpb.lt/open-data/schemas/trademark/v1 ,,
 ,,,,,,,ns2,,,,,http://vpb.lt/open-data/schemas/address/v1 ,,
 ,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,list,,,,html,,https://search.vpb.lt/pdb/opendata/trademark/list,,,,,,
+,,list,,,,csv,,https://search.vpb.lt/pdb/opendata/trademark/list,,,,,,
 ,,,,Time,,,,/html/body/div[1]/table[2]/tbody/tr,,,,,,
 ,,,,,month,date,M,td[1]/text(),,4,,,,
 ,,,,,distribution,string,,td[2]/a/strong/text(),,3,,,,
