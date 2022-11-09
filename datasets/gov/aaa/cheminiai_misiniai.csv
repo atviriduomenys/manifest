@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
 ,,,,,pavadinimas,string,,,,2,open,,Cheminio mišinio pavadinimas,
 ,,,,,kn_kodas,string,,kn:KN kodas,,4,open,,Kombinuotosios nomenklatūros (KN) kodas,
-,,,,,ufi_kodas,string,,,,4,open,,UFI kodas,"Unikalus mišinio identifikatorius, nurodomas ant produktų, kurie pagal ES klasifikavimo, ženklinimo ir pakavimo reglamentą klasifikuojami kaip keliantys pavojų sveikatai arba fizinį pavojų. Produktų, kurie parduodami ES iki 2021 m., etiketėse privaloma pradėti nurodyti šį kodą ne vėliau kaip iki 2025 m."
+,,,,,ufi_kodas,string,,,,2,open,,UFI kodas,"Unikalus mišinio identifikatorius, nurodomas ant produktų, kurie pagal ES klasifikavimo, ženklinimo ir pakavimo reglamentą klasifikuojami kaip keliantys pavojų sveikatai arba fizinį pavojų. Produktų, kurie parduodami ES iki 2021 m., etiketėse privaloma pradėti nurodyti šį kodą ne vėliau kaip iki 2025 m. Plačiau: https://aaa.lrv.lt/uploads/aaa/documents/files/Pranesimas%20del%20UFI%20_final.pdf"
 ,,,,,kiekis,number,t,,,4,open,,Kiekis,
 ,,,,,veiksmas,string,,,,4,open,,Veiksmas,
 ,,,,,,enum,,,"""EK""",,,,Eksportuota,
