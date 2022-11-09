@@ -16,6 +16,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""IS""",,,,Išplatinta (parduota),
 ,,,,,,,,,"""PA""",,,,Pagaminta,
 ,,,,,,,,,"""IM""",,,,Importuota,
-,,,,,pav_frazes,string,,,,4,open,,Pavojingumo frazės,
+,,,,,pav_frazes,string,,,,2,open,,Pavojingumo frazės,
 ,,,,,metai,integer,,,,2,open,,Dokumento (ataskaitos) atsiskaitymo metai,"Nuo 2017 m.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
