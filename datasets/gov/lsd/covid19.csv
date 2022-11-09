@@ -137,8 +137,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pseudo_id,string,,,,4,open,,Unikalus pseudonimizuotas skiepijamo asmens numeris,"Sukurtas ne pagal asmens kodą (kurio nedidelė dalis žmonių neturi), bet pagal eSveikatos paciento kodą (jį turi visi skiepijami asmenys)"
 ,,,,,birth_year_noisy,integer,,,,2,open,,Skiepijamo asmens gimimo metai,"Pagal konfidencialumo taisykles dešimtadaliui asmenų gimimo metai yra atsitiktinai pakeisti pridedant nedidelį asmens privatumą saugantį ""triukšmą"" (+/- 1 metai)"
 ,,,,,sex,string,,,,4,open,,Skiepijamo asmens lytis,
-,,,,,,enum,,,M,,,,Moteris,
-,,,,,,,,,V,,,,Vyras,
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,muni_declared,string,,,,2,open,,Skiepijamo asmens deklaruotos gyvenamosios vietos savivaldybė,
 ,,,,,muni_policlin,string,,,,2,open,,"Poliklinikos, prie kurios asmuo yra prisiregistravęs, savivaldybė",
 ,,,,,vaccination_date,date,D,,,4,open,,Konkrečios vakcinos dozės (skiepo) gavimo data,
