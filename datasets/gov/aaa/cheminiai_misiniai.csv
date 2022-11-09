@@ -15,6 +15,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""SU""",,,,Sunaudota,
 ,,,,,,,,,"""IS""",,,,Išplatinta (parduota),
 ,,,,,,,,,"""PA""",,,,Pagaminta,
-,,,,,pav_frazes,string,,,,4,open,,Pavojingumo frazės,
+,,,,,pav_frazes,string,,,,2,open,,Pavojingumo frazės,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
