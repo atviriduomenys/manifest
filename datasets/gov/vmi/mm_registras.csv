@@ -36,7 +36,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pagrindine,integer,,,,2,open,,Ekonominės veiklos požymis,
 ,,,,,,enum,,,1,,,,Pagrindinė,
 ,,,,,,,,,0,,,,Nepagrindinė,
-,,,,,vv_savivaldybė,integer,,,,4,open,,Vykdomos veiklos savivaldybė,
+,,,,,vv_savivaldybe,integer,,,,2,open,,Vykdomos veiklos savivaldybė,
 ,,,,,vv_adresas_nuo,date,D,,,2,open,,Vykdomos veiklos adreso įsigaliojimo pradžia,
 ,,,,,vv_adresas_iki,date,D,,,2,open,,Vykdomos veiklos adreso įsigaliojimo pabaiga,
 ,,,,,vv_adresas_anul,date,D,,,2,open,,Vykdomos veiklos adreso anuliavimo data,
