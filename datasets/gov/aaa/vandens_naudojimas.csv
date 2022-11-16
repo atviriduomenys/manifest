@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,"spinta:216, manifest:1263",,
 ,,,,,jar_kodas,string,,,,2,open,,Įmonės JAR kodas,
 ,,,,,objektas,string,,,,3,open,,Ataskaitinio objekto pavadinimas,
-,,,,,adresas,string,,,,2,open,,Adresas,
+,,,,,adresas,string,,,,2,open,,Ataskaitinio objekto adresas,
 ,,,,,vand_sal_kodas,string,,,,3,open,,Vandens šaltinio kodas,
 ,,,,,vandens_rusis,string,,,,3,open,,Vandens rūšies pavadinimas,
 ,,,,,vand_sal_pavad,string,,,,3,open,,Vandens šaltinio pavadinimas,
