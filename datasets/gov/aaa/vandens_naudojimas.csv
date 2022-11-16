@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vandens_rusis,string,,,,3,open,,Vandens rūšies pavadinimas,
 ,,,,,vand_sal_pavad,string,,,,3,open,,Vandens šaltinio pavadinimas,
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Koordinatės (LKS-94),
-,,,,,telkinio_kodas,ref,/datasets/gov/giscentras/grpk/PlotasVandensTelkinys/graktas,,,4,open,,Vandens telkinio kodas,
+,,,,,telkinio_kodas,ref,/datasets/gov/giscentras/grpk/PlotasVandensTelkinys,,,4,open,,Vandens telkinio kodas (GRPK graktas),
 ,,,,,telkinio_pav,string,,,,3,open,,Vandens telkinio pavadinimas,
 ,,,,,tiekejas,string,,,,3,open,,Vandens tiekėjas,
 ,,,,,paimta_viso,integer,,,,3,open,,"Bendras išgauto ir / arba iš kitų asmenų gauto vandens kiekis (pagal skaitliukų parodymus), tūkst. m3.",
