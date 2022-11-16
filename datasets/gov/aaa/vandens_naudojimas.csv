@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,"spinta:216, manifest:1263",,
-,,,,,jar_kodas,string,,,,4,open,,Įmonės JAR kodas,
+,,,,,jar_kodas,string,,,,2,open,,Įmonės JAR kodas,
 ,,,,,objektas,string,,,,3,open,,Ataskaitinio objekto pavadinimas,
 ,,,,,adresas,string,,,,3,open,,Adresas,
 ,,,,,vand_sal_kodas,string,,,,3,open,,Vandens šaltinio kodas,
