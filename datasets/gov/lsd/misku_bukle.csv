@@ -45,7 +45,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,x_pamiskes,number,m,,,4,open,,vidutinis pamiškių ilgis 1 ha 200x m.,
 ,,,,,x_euc_dist,number,,,,4,open,,euklidinis atstumas iki miško 200x m.,
 ,,,,,,,,,,,,,,
-,,,,Gardele,,,,,,,,,Miškų būklės tyrimo duomenys gardelių (1x1 km) lygmeniu lygmeniu,"Miškų būklės tyrimo duomenys, parengti pagal projekto „Bandomosios ekosistemų apimties ir miškų būklės sąskaitos“ duomenis, gardelių (1x1 km) lygmeniu. "
+,,,,Gardele,,,,,,,,,Miškų būklės tyrimo duomenys gardelių (1x1 km) lygmeniu,"Miškų būklės tyrimo duomenys, parengti pagal projekto „Bandomosios ekosistemų apimties ir miškų būklės sąskaitos“ duomenis, gardelių (1x1 km) lygmeniu. "
 ,,,,,x,integer,,,,2,open,,gardelės pietvakarinio kampo 'x' koordinatė (LKS94),
 ,,,,,y,integer,,,,2,open,,gardelės pietvakarinio kampo 'y' koordinatė (LKS94),
 ,,,,,grid_id,ref,/datasets/gov/lsd/grid/Grid1KmSq,,,4,open,,gardelės identifikacinis numeris,
