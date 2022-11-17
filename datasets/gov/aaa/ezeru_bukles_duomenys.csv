@@ -1,0 +1,55 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/ezeru_bukles_duomenys,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,EzeruKategorijosVandensTelkiniuBuklesDuomenys,,,,,,4,,,Aprašymas ežerų duomenų,"Vandens telkinių ekologinės ir cheminės būklės vertinimas, 2022-2027 m. upių baseinų rajonų valdymo planų ciklui, atliktas vadovaujantis Lietuvos Respublikos vandens įstatymo nuostatomis, į kurias perkelti ir pagrindinio Europos Sąjungos vandens teisinio dokumento – 2000 m. spalio 23 d. Europos Parlamento ir Tarybos direktyvos 2000/60/EB, nustatančios Bendrijos veiksmų vandens politikos srityje pagrindus (BVPD) reikalavimus."
+,,,,,telkinio_kodas,string,,,,4,open,,Vandens telkinio kodas,"Telkinio, išskirto pagal 2000 m. spalio 23 d. Europos Parlamento ir Tarybos direktyvos 2000/60/EB, nustatančios Bendrijos veiksmų vandens politikos srityje pagrindus (OL 2004 m. specialusis leidimas, 15 skyrius, 5 tomas, p. 275),  principus, kodas"
+,,,,,telkinio_pav,string,,,,4,open,,Vandens telkinio pavadinimas,"Pagal Bendrąją vandens politikos direktyvą atskiri paviršiniai vandens telkiniai ežerai ir tvenkiniai, kurių plotas didesnis nei 0,5 kv. kilometrų."
+,,,,,rajonas,string,,,,4,open,,Upių baseinų rajonas,
+,,,,,,enum,,Nemuno,,,,,,
+,,,,,,,,Ventos,,,,,,
+,,,,,,,,Lielupės,,,,,,
+,,,,,,,,Dauguvos,,,,,,
+,,,,,rajono_kodas,string,,,,4,open,,Upių baseinų rajono kodas,
+,,,,,,enum,,LT1100,,,,,,
+,,,,,,,,LT2300,,,,,,
+,,,,,,,,LT3400,,,,,,
+,,,,,,,,LT4500,,,,,,
+,,,,,baseinas,string,,,,4,open,,Baseinas / pabaseinis,
+,,,,,apskritis,string,,,,4,open,,Apskritis,
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/apskritis/Apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/apskritis/Apskritis"")",,,"spinta:205, manifest:1290",,
+,,,,,savivaldybes,string,,,,4,open,,Savivaldybės,"Savivaldybės, kurių teritorijoje yra vandens telkinys"
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",,,"spinta:205, manifest:1290",,
+,,,,,telkinio_pobudis,string,,,,4,open,,Vandens telkinio pobūdis,
+,,,,,,enum,,Natūralus,,,,,,
+,,,,,,,,Labai pakeistas,,,,,,
+,,,,,,,,Dirbtinis,,,,,,
+,,,,,telkinio_tipas,string,,,,4,open,,Vandens telkinio tipas,
+,,,,,,enum,,1,,,,,"Vidutinis gylis ≤ 3 m arba Vidutinis gylis > 3, kai didžiausias gylis <11 m","Priskiriamas pagal Lietuvos Respublikos aplinkos ministro 2005 m. gegužės 23 d. Nr. 256 įsakymą ""Dėl paviršinių vandens telkinių tipų aprašo ir paviršinių vandens tlekinių tipų etaloninių sąlygų aprašo patvirtinimo"". 1 tipo žymėjimu atskiriami ir itin seklūs (pelkėjantys, vidutinis gylis ≤ 3 m) ežerai, tačiau jiems taikomi tokie patys kriterijai, kaip gilesniems (vidutinis gylis >3, kai didžiausias gylis  <11 m) ežerams."
+,,,,,,,,2,,,,,Vidutinis gylis > 3 m ir didžiausias gylis 11-30 metrų,
+,,,,,,,,3,,,,,Didžiausias gylis >30 m,
+,,,,,m_vietos_kodas,string,,,,4,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
+,,,,,m_vietos_pav,number,,,,4,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
+,,,,,platuma_lks,number,,,,4,open,,Platuma LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
+,,,,,ilguma_lks,string,,,,4,open,,Ilguma LKS (m),
+,,,,,tarptaut_telkinys,string,,,,4,open,,Tarptautinis vandens telkinys,
+,,,,,,enum,,su Baltarusija,,,,,,
+,,,,,,,,su Latvija,,,,,,
+,,,,,,,,su Lenkija,,,,,,
+,,,,,,,,su Rusija,,,,,,
+,,,,,vertinimo_pagrindas,string,,,,4,open,,Ekologinės būklės vertinimo pagrindas,
+,,,,,,enum,,monitoringas,,,,,,
+,,,,,,,,ekspertinis vertinimas,,,,,,
+,,,,,eko_bukle,string,,,,4,open,,Ekologinė būklė,"Lietuvos Respublikos aplinkos ministro 2007 m. balandžio 12 d. įsakymu Nr. D1-210 „Dėl Paviršinių vandens telkinių būklės nustatymo metodikos patvirtinimo“"
+,,,,,,enum,,Labai gera,,,,,,
+,,,,,,,,Gera,,,,,,
+,,,,,,,,Vidutinė,,,,,,
+,,,,,,,,Bloga,,,,,,
+,,,,,,,,Labai bloga,,,,,,
+,,,,,eko_bukles_pasikliovimas,string,,,,4,open,,Ekologinės būklės pasikliovimas,
+,,,,,,enum,,Didelis,,,,,,
+,,,,,,,,Vidutinis,,,,,,
+,,,,,,,,Mažas,,,,,,
+,,,,,chem_bukle,string,,,,3,open,,Cheminė būklė,"Lietuvos respublikos aplinkos ministro 2006 m. gegužės 17 d. įsakymas Nr. D1-236 „Dėl Nuotekų tvarkymo reglamento patvirtinimo“; Lietuvos Respublikos aplinkos ministro 2007 m. balandžio 12 d. įsakymas Nr. D1-210 „Dėl Paviršinių vandens telkinių būklės nustatymo metodikos patvirtinimo“"
