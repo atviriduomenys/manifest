@@ -16,7 +16,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""T""",,,,Tonos,
 ,,,,,,,,,"""M""",,,,Kubiniai metrai,
 ,,,,,kiek_per_ats_met,number,,,,4,open,,Per ataskaitinius metus į aplinkos orą patekęs teršalų kiekis,
-,,,,,kiek_per_pr_met,number,,,,3,open,,Per praėjusius metus į aplinkos orą patekęs teršalų kiekis (išskaičiuojamas iš praeitų metų ataskaitos duomenų),
+,,,,,kiek_per_pr_met,number,,,,4,open,,Per praėjusius metus į aplinkos orą patekęs teršalų kiekis (išskaičiuojamas iš praeitų metų ataskaitos duomenų),
 ,,,,,kuro_kodas,string,,,,3,open,,Kuro rūšies kodas - trumpinys,
 ,,,,,kuro_pavad,string,,,,3,open,,"Kuro rūšies pavadinimas (pvz., mediena)",
 ,,,,,mpr_pavad,string,,,,1,open,,Visas vykdomos (ar jau įvykdytos) aplinkos oro taršos mažinimo priemonės pavadinimas,
