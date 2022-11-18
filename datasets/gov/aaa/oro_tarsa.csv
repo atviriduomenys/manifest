@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""M""",,,,Kubiniai metrai,
 ,,,,,snk_kiekis,number,,,,3,open,,"Sunaudoto kuro kiekis tonomis, jei naudojamas kietas arba skystas kuras, ir tūkst. m3, jei naudojamas dujinis kuras",
 ,,,,,sieringumas,number,%,,,4,open,,Sunaudoto kuro sieringumas procentais,
-,,,,,peleningumas,integer,%,,,4,open,,Sunaudoto kuro peleningumas procentais,
+,,,,,peleningumas,number,%,,,4,open,,Sunaudoto kuro peleningumas procentais,
 ,,,,,trs_kodas,integer,,,,3,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše",
 ,,,,,trs_pavad,string,,,,3,open,,Teršalo pavadinimas,
 ,,,,,trs_grupe,string,,,,4,,,Teršalų grupavimas,
