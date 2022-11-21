@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/cheminiai_misiniai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,ChemMisiniai,,,,,,2,,,Cheminių medžiagų / mišinių klasifikatoriai,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
+,,,,,pavadinimas,string,,,,2,open,,Cheminio mišinio pavadinimas,
+,,,,,kn_kodas,string,,,,2,open,,Kombinuotosios nomenklatūros (KN) kodas. KN kodų aprašymai: https://osp.stat.gov.lt/documents/10180/8410423/KN_2022.zip,
+,,,,,ufi_kodas,string,,,,2,open,,UFI kodas,"Unikalus mišinio identifikatorius, nurodomas ant produktų, kurie pagal ES klasifikavimo, ženklinimo ir pakavimo reglamentą klasifikuojami kaip keliantys pavojų sveikatai arba fizinį pavojų. Produktų, kurie parduodami ES iki 2021 m., etiketėse privaloma pradėti nurodyti šį kodą ne vėliau kaip iki 2025 m. Plačiau: https://aaa.lrv.lt/uploads/aaa/documents/files/Pranesimas%20del%20UFI%20_final.pdf"
+,,,,,kiekis,number,t,,,4,open,,Kiekis,
+,,,,,veiksmas,string,,,,4,open,,Veiksmas,
+,,,,,,enum,,,"""EK""",,,,Eksportuota,
+,,,,,,,,,"""SU""",,,,Sunaudota,
+,,,,,,,,,"""IS""",,,,Išplatinta (parduota),
+,,,,,,,,,"""PA""",,,,Pagaminta,
+,,,,,pav_frazes,string,,,,2,open,,Pavojingumo frazės,Pavojingumo frazės su paaiškinimais: https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/LT/Safety/HP_LT.htm
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
