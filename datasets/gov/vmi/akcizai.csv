@@ -8,4 +8,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data_nuo,date,D,,,4,open,,Data periodo pradžia,
 ,,,,,data_iki,date,D,,,4,open,,Data periodo pabaiga,
 ,,,,,grupe,integer,,,,4,open,,Tarifinės grupės kodas,
-,,,,,suma,currency,EUR,,,4,open,,Sumokėta suma,
+,,,,,suma,currency,EUR,SUMA,,4,open,,Sumokėta suma,
