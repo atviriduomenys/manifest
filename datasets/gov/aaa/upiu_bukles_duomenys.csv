@@ -2,8 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/aaa/upiu_bukles_duomenys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,UpiuKategorijosVandensTelkiniuBuklesDuomenys,,,,,,2,,,Aprašymas upių duomenų,"Vandens telkinių ekologinės ir cheminės būklės vertinimas, 2022-2027 m. upių baseinų rajonų valdymo planų ciklui, atliktas vadovaujantis Lietuvos Respublikos vandens įstatymo nuostatomis, į kurias perkelti ir pagrindinio Europos Sąjungos vandens teisinio dokumento – 2000 m. spalio 23 d. Europos Parlamento ir Tarybos direktyvos 2000/60/EB, nustatančios Bendrijos veiksmų vandens politikos srityje pagrindus (BVPD) reikalavimus."
-,,,,,telkinio_kodas,string,,,,4,open,,Vandens telkinio kodas,
-,,,,,telkinio_pav,string,,,,4,open,,Vandens telkinio pavadinimas,"Pagal Bendrąją vandens politikos direktyvą atskiri paviršiniai vandens telkiniai yra upės ar jų atkarpos, kurių baseino plotas didesnis nei 30 kv. kilometrų."
+,,,,,telkinio_kodas,string,,,,3,open,,Vandens telkinio kodas,
+,,,,,telkinio_pav,string,,,,3,open,,Vandens telkinio pavadinimas,"Pagal Bendrąją vandens politikos direktyvą atskiri paviršiniai vandens telkiniai yra upės ar jų atkarpos, kurių baseino plotas didesnis nei 30 kv. kilometrų."
 ,,,,,rajonas,string,,,,4,open,,Upių baseinų rajonas,
 ,,,,,,enum,,Nemuno,,,,,,
 ,,,,,,,,Ventos,,,,,,
@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,LT2300,,,,,,
 ,,,,,,,,LT3400,,,,,,
 ,,,,,,,,LT4500,,,,,,
-,,,,,baseinas,string,,,,4,open,,Baseinas / pabaseinis,
+,,,,,baseinas,string,,,,3,open,,Baseinas / pabaseinis,
 ,,,,,savivaldybes,string,,,,4,open,,Savivaldybės,"Savivaldybės, per kurių teritoriją teka vandens telkinys"
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",,,,,
 ,,,,,telkinio_pobudis,string,,,,4,open,,Vandens telkinio pobūdis,
@@ -27,8 +27,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,3,,,,,"Baseino plotas 100-1000 ir vidutinis vandens paviršiaus nuolydis >0,7 m/km",
 ,,,,,,,,4,,,,,"Baseino plotas >1000 ir vidutinis vandens paviršiaus nuolydis <0,3 m/km",
 ,,,,,,,,5,,,,,"Baseino plotas >1000 ir vidutinis vandens paviršiaus nuolydis >0,3 m/km",
-,,,,,m_vietos_kodas,string,,,,4,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
-,,,,,m_vietos_pav,string,,,,4,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
+,,,,,m_vietos_kodas,string,,,,3,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
+,,,,,m_vietos_pav,string,,,,3,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Koordinatės LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
 ,,,,,tarptaut_telkinys,string,,,,4,open,,Tarptautinis vandens telkinys,
 ,,,,,,enum,,su Baltarusija,,,,,,
