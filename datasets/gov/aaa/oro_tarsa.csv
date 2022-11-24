@@ -7,6 +7,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,OroTarsa,,,,,,2,,,,
 ,,,,,objekto_kodas,string,,,,2,open,,Ataskaitinio objekto kodas,
 ,,,,,pavad,string,,,,2,open,,"Ataskaitinio objekto pavadinimas. Ūkio subjekto pagrindinės įmonės atveju nurodomas toks pat kaip JAR, o filialų atveju nurodomas rankiniu būdu",
+,,,,,uvo_kodas,string,,,,2,open,,Ūkinės veiklos objekto kodas,
+,,,,,uvo_pavad,string,,,,2,open,,Ūkinės veiklos objekto pavadinimas,
 ,,,,,x_koord,number,,,,2,open,,Ataskaitinio objekto X koordinatės pagal LKS-94,
 ,,,,,y_koord,number,,,,2,open,,Ataskaitinio objekto Y koordinatės pagal LKS-94,
 ,,,,,imones_kodas,string,,,,2,open,,Įmonės JAR kodas,
