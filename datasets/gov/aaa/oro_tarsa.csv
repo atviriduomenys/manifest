@@ -30,17 +30,17 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mpr_lesos_ats_metais,number,,,,3,open,,Kiek skirta lėšų priemonės vykdymui ataskaitiniais metais,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,mpr_ivykdyta,integer,%,,,4,open,,Priemonės įvykdymas procentais,
-,,,,,vr_kodas,string,,,,3,open,,Veiklos rūšies kodas,https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.179328/FyUMYOEChe Įsakymo 1 priede "Veiklos rūšių sąrašas"
+,,,,,vr_kodas,string,,,,3,open,,Veiklos rūšies kodas,https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.179328/FyUMYOEChe Įsakymo 1 priede VEIKLOS RŪŠIŲ SĄRAŠAS
 ,,,,,vr_pavad,string,,,,3,open,,Veiklos rūšies pavadinimas,
 ,,,,,vr_pavad_en,string,,,,3,open,,Veiklos rūšies pavadinimas anglų kalba,
-,,,,,snk_pavad,string,,,,3,open,,"Sunaudoto kuro patikslintas pavadinimas, kai nurodyti kuro kodai 121, 224, 225, 314", https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94607/asr Tvarkos aprašo 5 priedas "Deginamo kuro ir degalų kodai"
+,,,,,snk_pavad,string,,,,3,open,,"Sunaudoto kuro patikslintas pavadinimas, kai nurodyti kuro kodai 121, 224, 225, 314", https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94607/asr Tvarkos aprašo 5 priedas DEGINAMO KURO IR JO DEGALŲ KODAI
 ,,,,,snk_mat_vnt,string,,,,4,open,,Sunaudoto kuro kiekio matavimo vienetai,
 ,,,,,,enum,,,"""T""",,,,Tonos,
 ,,,,,,,,,"""M""",,,,Kubiniai metrai,
 ,,,,,snk_kiekis,number,,,,4,open,,"Sunaudoto kuro kiekis tonomis, jei naudojamas kietas arba skystas kuras, ir tūkst. m3, jei naudojamas dujinis kuras",
 ,,,,,sieringumas,number,%,,,4,open,,Sunaudoto kuro sieringumas procentais,
 ,,,,,peleningumas,number,%,,,4,open,,Sunaudoto kuro peleningumas procentais,
-,,,,,trs_kodas,integer,,,,3,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše",https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94607/asr 4 priede pateikta "Teršalų ir jų kodų sąrašas"
+,,,,,trs_kodas,integer,,,,3,open,,"Teršalo kodas, kuris skirsis nuotekų ir emisijų atveju, teršiančių medžiagų sąraše",https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94607/asr 4 priede pateikta TERŠALŲ IR JŲ KODŲ SĄRAŠAS
 ,,,,,trs_pavad,string,,,,3,open,,Teršalo pavadinimas,
 ,,,,,trs_grupe,string,,,,4,,,Teršalų grupavimas,
 ,,,,,,enum,,,"""V""",,,,Teršalai išleidžiami į aplinką (vandenį),
