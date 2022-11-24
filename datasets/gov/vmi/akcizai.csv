@@ -9,6 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mokėtojas,integer,,,,2,open,,Mokesčių mokėtojas (kvaziidentifikatorius),
 ,,,,,data_nuo,date,D,,,4,open,,Data periodo pradžia,
 ,,,,,data_iki,date,D,,,4,open,,Data periodo pabaiga,
-,,,,,grupe,integer,,,,4,open,,Tarifinės grupės kodas,
+,,,,,grupe,integer,,,,2,open,,Tarifinės grupės kodas,
 ,,,,,suma,number,,,,2,open,,Sumokėta suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
