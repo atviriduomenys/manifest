@@ -83,7 +83,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kiti_nul_veiksnys[],string,,kitiNuliamentysVeiksniai,,3,open,,Papildomi nulemiantys veiksniai,
 ,,,,,atitvarai,string,,atitvarai,,4,open,,Atitvarai,
 ,,,,,,enum,,,"""Yra""",,,,Atitvarai yra,
-,,,,,,,,,"""Nėra",,,,Atitvarų nėra,
+,,,,,,,,,"""Nėra""",,,,Atitvarų nėra,
 ,,,,,sankryzos_tipas,string,,sankryzosTipas,,4,open,,Sankryžos tipas,
 ,,,,,,enum,,,"""PRIE_SANKRYZOS""",,,,Prie sankryžos,
 ,,,,,,,,,"""NEREGULIUOJAMA""",,,,Nereguliuojama,
