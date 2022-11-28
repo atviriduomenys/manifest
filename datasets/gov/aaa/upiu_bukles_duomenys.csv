@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,UpiuKategorijosVandensTelkiniuBuklesDuomenys,,,,,,2,,,Aprašymas upių duomenų,"Vandens telkinių ekologinės ir cheminės būklės vertinimas, 2022-2027 m. upių baseinų rajonų valdymo planų ciklui, atliktas vadovaujantis Lietuvos Respublikos vandens įstatymo nuostatomis, į kurias perkelti ir pagrindinio Europos Sąjungos vandens teisinio dokumento – 2000 m. spalio 23 d. Europos Parlamento ir Tarybos direktyvos 2000/60/EB, nustatančios Bendrijos veiksmų vandens politikos srityje pagrindus (BVPD) reikalavimus."
 ,,,,,telkinio_kodas,string,,,,3,open,,Vandens telkinio kodas,
-,,,,,telkinio_pav,string,,,,3,open,,Vandens telkinio pavadinimas,"Pagal Bendrąją vandens politikos direktyvą atskiri paviršiniai vandens telkiniai yra upės ar jų atkarpos, kurių baseino plotas didesnis nei 30 kv. kilometrų."
+,,,,,telkinio_pav,string,,,,1,open,,Vandens telkinio pavadinimas,"Pagal Bendrąją vandens politikos direktyvą atskiri paviršiniai vandens telkiniai yra upės ar jų atkarpos, kurių baseino plotas didesnis nei 30 kv. kilometrų."
 ,,,,,rajonas,string,,,,4,open,,Upių baseinų rajonas,
 ,,,,,,enum,,Nemuno,,,,,,
 ,,,,,,,,Ventos,,,,,,
