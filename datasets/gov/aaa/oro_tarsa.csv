@@ -12,6 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,x_koord,number,,,,2,open,,Ataskaitinio objekto X koordinatės pagal LKS-94,
 ,,,,,y_koord,number,,,,2,open,,Ataskaitinio objekto Y koordinatės pagal LKS-94,
 ,,,,,imones_kodas,string,,,,2,open,,Įmonės JAR kodas,
+,,,,,,comment,type,,"update(property: ""ja_kodas"", type: """")",4,open,"spinta:205, manifest:1290",,
 ,,,,,atsiskaitoma,date,Y,,,4,open,,"Data, už kurią yra teikiamas dokumentas.",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,mat_vnt,string,,,,4,open,,Teršalo matavimo vienetai (Klasifikatorius),
