@@ -1,7 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasasets/gov/zuikvc/galviju_pasiskirstymai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
 ,,gp,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
-,,,,,,param,dist,/datasets/gov/ivpk/adp/catalog/DatasetDistribution,select(url),,,,,
+,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
 ,,,,,,,,,,,,,,
 ,,,,GalvijuPasiskirstymas,,,savivaldybe,,,,,,Galvijų pasiskirstymas pagal savivaldybes,
 ,,,,,savivaldybe,string,,﻿Gyvūno bandos savivaldybės pavadinimas ,,2,open,,﻿Gyvūno bandos savivaldybės pavadinimas ,
