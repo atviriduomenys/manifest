@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mpr_ivykd_data,date,D,,,4,open,,Priemonės planuojama įvykdymo data,
 ,,,,,mpr_lesos_nuo_prad,number,,,,2,open,,Kiek skirta lėšų nuo priemonės vykdymo pradžios,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,mpr_lesos_ats_metais,number,,,,3,open,,Kiek skirta lėšų priemonės vykdymui ataskaitiniais metais,
+,,,,,mpr_lesos_ats_metais,number,,,,2,open,,Kiek skirta lėšų priemonės vykdymui ataskaitiniais metais,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,mpr_ivykdyta,integer,%,,,4,open,,Priemonės įvykdymas procentais,
 ,,,,,vr_kodas,string,,,,2,open,,Veiklos rūšies kodas,https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.179328/FyUMYOEChe Įsakymo 1 priede VEIKLOS RŪŠIŲ SĄRAŠAS
