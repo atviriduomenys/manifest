@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/mita/paraiskos,,,,,,,,,,,,"Mokslo, inovacijų ir technologijų agentūros administruojamose mokslinių tyrimų ir eksperimentinės plėtros (MTEP) finansavimo priemonėse finansuotų projektų duomenys.",
+,datasets/gov/mita/paraiskos,,,,,,,,,,,,"Mokslo, inovacijų ir technologijų agentūros administruojamose mokslinių tyrimų ir eksperimentinės plėtros (MTEP) finansavimo priemonėse finansuotų projektų duomenys",
 ,,,,,,,,,,,,,,
 ,,,,Paraiska,,,,,,,,,Mokslinių tyrimų ir eksperimentinės plėtros (MTEP) finansavimo priemonėse finansuotų projektų duomenys,
 ,,,,,kodas,string,,,,4,open,,Paraiškos kodas,Teiktos paraiškos finansavimui gauti kodas
