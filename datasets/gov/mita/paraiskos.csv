@@ -6,7 +6,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Paraiškos pavadinimas,Teiktos paraiškos pavadinimas
 ,,,,,mokslo_sritis,string,,,,2,open,,Mokslo sritis,Atitinka Mokslo ir meno sričių klasifikatorių (patvirtinta LR Vyriausybės 2018 m. gruodžio 19 d. nutarimu Nr. 1317)
 
-,,,,,mokslo_kryptis,string,,,,4,open,,Mokslo kryptis,"Atitinka Mokslo ir meno krypčių klasifikatorių (patvirtinta LR švietimo, mokslo ir sporto ministro 2019 m. vasario 6 d. įsakymu
+,,,,,mokslo_kryptis,string,,,,2,open,,Mokslo kryptis,"Atitinka Mokslo ir meno krypčių klasifikatorių (patvirtinta LR švietimo, mokslo ir sporto ministro 2019 m. vasario 6 d. įsakymu
+
 Nr. V-93 (2019 m. vasario 20 d. įsakymo Nr. V-156 redakcija)"
 ,,,,,organizacija,string,,,,2,open,,Organizacija,Paraiškos teikėjas
 ,,,,,finansavimas,number,,,,2,open,,Skirtas finansavimas,
