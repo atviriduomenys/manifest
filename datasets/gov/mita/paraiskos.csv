@@ -10,4 +10,5 @@ Nr. V-93 (2019 m. vasario 20 d. įsakymo Nr. V-156 redakcija)"
 ,,,,,organizacija,string,,,,2,open,,Organizacija,Paraiškos teikėjas
 ,,,,,finansavimas,number,,,,2,open,,Skirtas finansavimas,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,kvietimo_pavadinimas,string,,,,4,open,,Kvietimo pavadinimas,
+,,,,,kvietimo_pavadinimas,string,,,,3,open,,Kvietimo pavadinimas,
+
