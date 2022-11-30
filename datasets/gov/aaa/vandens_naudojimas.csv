@@ -21,9 +21,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Vandens telkinio koordinatės (LKS-94),
 ,,,,,telkinys,ref,/datasets/gov/giscentras/grpk/PlotasVandensTelkinys,,,4,open,,Vandens telkinio pavadinimas,
 ,,,,,telkinys_graktas,string,/datasets/gov/giscentras/grpk/PlotasVandensTelkinys,,,4,open,,Vandens telkinio kodas (GRPK graktas),
-,,,,,,comment,type,,"update(property: ""telkinio_kodas.graktas"", type: """")",4,,"spinta:216, manifest:1263",,
+,,,,,,comment,type,,"update(property: ""telkinys.graktas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,telkinys_vardas,string,/datasets/gov/giscentras/grpk/PlotasVandensTelkinys,,,4,open,,Vandens telkinio pavadinimas,
-,,,,,,comment,type,,"update(property: ""telkinio_pav.vardas"", type: """")",4,,"spinta:216, manifest:1263",,
+,,,,,,comment,type,,"update(property: ""telkinys.vardas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,tiekejas,string,,,,2,open,,Vandens tiekėjas (JAR kodas),Juridinis asmuo tiekiantis vandenį
 ,,,,,,comment,type,,"update(property: ""tiekejas.ja_kodas"", type: """")",4,,"spinta:205, manifest:1290",,
 ,,,,,paimta_viso,number,,,,3,open,,"Bendras išgauto ir / arba iš kitų asmenų gauto vandens kiekis (pagal skaitliukų parodymus), tūkst. m3.",
