@@ -15,8 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""LT3400""",,,,,
 ,,,,,,,,,"""LT4500""",,,,,
 ,,,,,baseinas,string,,,,2,open,,Baseinas / pabaseinis,
-,,,,,savivaldybes,string,,,,4,open,,Savivaldybės,"Savivaldybės, per kurių teritoriją teka vandens telkinys"
-,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",,,,,
+,,,,,savivaldybes,string,,,,2,open,,Savivaldybės,"Savivaldybės, per kurių teritoriją teka vandens telkinys"
 ,,,,,telkinio_pobudis,string,,,,2,open,,Vandens telkinio pobūdis,
 ,,,,,,enum,,,"""Natūralus""",,,,,
 ,,,,,,,,,"""Labai pakeistas""",,,,,
