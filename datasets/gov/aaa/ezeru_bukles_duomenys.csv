@@ -26,9 +26,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,Labai pakeistas,,,,,
 ,,,,,,,,,Dirbtinis,,,,,
 ,,,,,telkinio_tipas,string,,,,2,open,,Vandens telkinio tipas,"PAVIRŠINIŲ VANDENS TELKINIŲ APRAŠAS, 3. Ežerų tipai: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.256896?jfwid=6ar7pe4vy"
-,,,,,,enum,,,"""1""",,,,,"Vidutinis gylis ≤ 3 m arba Vidutinis gylis > 3, kai didžiausias gylis <11 m","Priskiriamas pagal Lietuvos Respublikos aplinkos ministro 2005 m. gegužės 23 d. Nr. D1-256 įsakymą ""Dėl paviršinių vandens telkinių tipų aprašo ir paviršinių vandens tlekinių tipų etaloninių sąlygų aprašo patvirtinimo"". 1 tipo žymėjimu atskiriami ir itin seklūs (pelkėjantys, vidutinis gylis ≤ 3 m) ežerai, tačiau jiems taikomi tokie patys kriterijai, kaip gilesniems (vidutinis gylis >3, kai didžiausias gylis  <11 m) ežerams."
-,,,,,,,,,"""2""",,,,,Vidutinis gylis > 3 m ir didžiausias gylis 11-30 metrų,
-,,,,,,,,,"""3""",,,,,Didžiausias gylis >30 m,
+,,,,,,enum,,,"""1""",,,,"Vidutinis gylis ≤ 3 m arba Vidutinis gylis > 3, kai didžiausias gylis <11 m","Priskiriamas pagal Lietuvos Respublikos aplinkos ministro 2005 m. gegužės 23 d. Nr. D1-256 įsakymą ""Dėl paviršinių vandens telkinių tipų aprašo ir paviršinių vandens tlekinių tipų etaloninių sąlygų aprašo patvirtinimo"". 1 tipo žymėjimu atskiriami ir itin seklūs (pelkėjantys, vidutinis gylis ≤ 3 m) ežerai, tačiau jiems taikomi tokie patys kriterijai, kaip gilesniems (vidutinis gylis >3, kai didžiausias gylis  <11 m) ežerams."
+,,,,,,,,,"""2""",,,,Vidutinis gylis > 3 m ir didžiausias gylis 11-30 metrų,
+,,,,,,,,,"""3""",,,,Didžiausias gylis >30 m,
 ,,,,,m_vietos_kodas,string,,,,2,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
 ,,,,,m_vietos_pav,number,,,,2,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Monitoringo vietų koordinatės LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
