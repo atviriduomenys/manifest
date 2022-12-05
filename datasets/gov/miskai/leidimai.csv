@@ -31,7 +31,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Leidimas,,,,,,4,,,Leidimai kirsti mišką,
 ,,,,,numeris,number,,,,3,open,,Leidimo numeris,Suteikto leidimo numeris
 ,,,,,serija,string,,,,3,open,,Leidimo serija,Suteikto leidimo serija
-,,,,,tipas,integer,,,,4,open,,Leidimo tipas,Suteikto leidimo tipas
+,,,,,tipas,string,,,,4,open,,Leidimo tipas,Suteikto leidimo tipas
 ,,,,,,enum,,,"""Leidimas""",,,,Leidimas kirsti mišką,
 ,,,,,,,,,"""Pranešimas""",,,,Pranešimas apie ketinimą kirsti mišką,
 ,,,,,kad_sklypo_nr,number,,,,3,open,,Kadastrinio sklypo nr.,
