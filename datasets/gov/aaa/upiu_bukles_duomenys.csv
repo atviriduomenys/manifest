@@ -35,7 +35,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,su Latvija,,,,,,
 ,,,,,,,,su Lenkija,,,,,,
 ,,,,,,,,su Rusija,,,,,,
-,,,,,vertinimo_pagrindas,string,,,,4,open,,Ekologinės būklės vertinimo pagrindas,
+,,,,,vertinimo_pagrindas,string,,,,2,open,,Ekologinės būklės vertinimo pagrindas,
 ,,,,,,enum,,monitoringas,,,,,,
 ,,,,,,,,ekspertinis vertinimas,,,,,,
 ,,,,,eko_bukle,string,,,,2,open,,Ekologinė būklė,Pagal Lietuvos Respublikos aplinkos ministro 2007 m. balandžio 12 d. įsakymą Nr. D1-210 „Dėl Paviršinių vandens telkinių būklės nustatymo metodikos patvirtinimo“. 
