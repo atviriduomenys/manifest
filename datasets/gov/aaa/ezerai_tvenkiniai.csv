@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""9""",,,,Teritorinis vandens telkinys,
 ,,,,,kvadrato_nr,string,,,,2,open,,Ežero kvadrato numeris,"Kvadratas – Lietuvos ežerų schemoje, sudarytoje Respublikinio žemėtvarkos projektavimo instituto 1964 metais, išskirtas plotas ežero numeriui suteikti."
 ,,,,,nr_kvadrate,string,,,,2,open,,Ežero numeris kvadrate,
-,,,,,rusis,integer,,,,4,open,,Ežero rūšis,
+,,,,,rusis,string,,,,4,open,,Ežero rūšis,
 ,,,,,,enum,,,"""1""",,,,Lašišinis,
 ,,,,,,,,,"""2""",,,,Potencialiai lašišinis,
 ,,,,,,,,,"""3""",,,,Karpinis,
