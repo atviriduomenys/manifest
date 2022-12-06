@@ -18,8 +18,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""LT3400""",,,,Lielupės upių baseinų rajonas,
 ,,,,,,,,,"""LT4500""",,,,Dauguvos upių baseinų rajonas,
 ,,,,,baseinas,string,,,,2,open,,Baseinas / pabaseinis,
-,,,,,apskritis,string,,,,4,open,,Apskritis,
-,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/apskritis/Apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/apskritis/Apskritis"")",,,"spinta:205, manifest:1290",,
+,,,,,apskritis,string,,,,2,open,,Apskritis,
+,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/ar/apskritis/Apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/apskritis/Apskritis"")",4,,"spinta:205, manifest:1290",,
 ,,,,,savivaldybes,string,,,,2,open,,Savivaldybės,"Savivaldybės, kurių teritorijoje yra vandens telkinys"
 ,,,,,telkinio_pobudis,string,,,,2,open,,Vandens telkinio pobūdis,
 ,,,,,,enum,,,"""Natūralus""",,,,Natūralus,
