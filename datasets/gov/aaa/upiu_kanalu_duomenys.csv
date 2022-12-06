@@ -23,6 +23,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""0""",,,,kairys,
 ,,,,,,,,,"""1""",,,,dešinys,
 ,,,,,eiliskumas,integer,,,,2,open,,"Įtekėjimo eiliškumas upės, įtekančios į Baltijos jūrą ar Kuršių marias, atžvilgiu",
-,,,,,ilgis,number,km,,,2,open,,"Upės ilgis geografinis Lietuvos teritorijoje, km",
-,,,,,debitas,number,m^3/s,,,2,open,,"Vidutinis daugiametis vandens debitas upės žiotyse, m³/s",
+,,,,,ilgis,number,km,,,4,open,,"Upės ilgis geografinis Lietuvos teritorijoje, km",
+,,,,,debitas,number,m^3/s,,,4,open,,"Vidutinis daugiametis vandens debitas upės žiotyse, m³/s",
 ,,,,,shape,"geometry(multilinestring, 3346)",,,,2,open,,Geometrinis primityvas,
