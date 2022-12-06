@@ -18,8 +18,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""7""",,,,Tarpinis vandens telkinys,
 ,,,,,,,,,"""8""",,,,Pakrantės vandens telkinys,
 ,,,,,,,,,"""9""",,,,Teritorinis vandens telkinys,
-,,,,,kvadrato_nr,string,,,,3,open,,Ežero kvadrato numeris,"Kvadratas – Lietuvos ežerų schemoje, sudarytoje Respublikinio žemėtvarkos projektavimo instituto 1964 metais, išskirtas plotas ežero numeriui suteikti."
-,,,,,nr_kvadrate,string,,,,3,open,,Ežero numeris kvadrate,
+,,,,,kvadrato_nr,string,,,,2,open,,Ežero kvadrato numeris,"Kvadratas – Lietuvos ežerų schemoje, sudarytoje Respublikinio žemėtvarkos projektavimo instituto 1964 metais, išskirtas plotas ežero numeriui suteikti."
+,,,,,nr_kvadrate,string,,,,2,open,,Ežero numeris kvadrate,
 ,,,,,rusis,integer,,,,4,open,,Ežero rūšis,
 ,,,,,,enum,,,"""1""",,,,Lašišinis,
 ,,,,,,,,,"""2""",,,,Potencialiai lašišinis,
@@ -38,7 +38,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,plotis,number,km,,,4,open,,"Ežero, tvenkinio vidutinis plotis, km",
 ,,,,,linijos_ilgis,number,km,,,4,open,,"Kranto linijos ilgis geografinis, km",
 ,,,,,uppabas_uid,string,,,,2,open,,"Upės pabaseinio, kuriame yra Kadastro objektas, unikalus identifikatorius",
-,,,,,vyrupes_uid,string,,,,3,open,,Tiesioginės upės unikalus identifikatorius,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/aaa/upiu_kanalu_duomenys/Upes"")",4,open,,,
+,,,,,vyrupes_uid,string,,,,2,open,,Tiesioginės upės unikalus identifikatorius,
 ,,,,,kiti_duomenys,string,,,,2,open,,Kiti duomenys,
 ,,,,,shape,"geometry(multipolygon, 3346)",,,,2,open,,Geometrinis primityvas,
