@@ -1,12 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/upiu_kanalu_duomenys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Upes,,,,,,2,,,Upės ir kanalai,"Pagal Upių, ežerų ir tvenkinių kadastro nuostatus, patvirtintų Lietuvos Respublikos Vyriausybės 2000-09-19 nutarimu Nr. 1114, kadastre kaupiama informacija apie upes, kurių ilgis ne mažesnis kaip 3 kilometrai arba baseino plotas ne mažesnis kaip 5 kv. kilometrai ir (ar) valstybinės reikšmės vidaus vandens telkiniams priskirtas upes ar kanalus, ir (ar) upes ar kanalus, kuriuose vykdomas valstybinis aplinkos monitoringas."
+,,,,UpesKanalai,,,,,,2,,,Upės ir kanalai,"Pagal Upių, ežerų ir tvenkinių kadastro nuostatus, patvirtintų Lietuvos Respublikos Vyriausybės 2000-09-19 nutarimu Nr. 1114, kadastre kaupiama informacija apie upes, kurių ilgis ne mažesnis kaip 3 kilometrai arba baseino plotas ne mažesnis kaip 5 kv. kilometrai ir (ar) valstybinės reikšmės vidaus vandens telkiniams priskirtas upes ar kanalus, ir (ar) upes ar kanalus, kuriuose vykdomas valstybinis aplinkos monitoringas."
 ,,,,,pavadinimas,string,,,,2,open,,"Upės, kanalo pavadinimas",
 ,,,,,kadastroid,string,,,,2,open,,Objekto kadastro identifikavimo kodas,
 ,,,,,registruota,datetime,,,,2,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
 ,,,,,redaguota,datetime,,,,2,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
-,,,,,kategorija,integer,,,,2,open,,Vandens objekto kategorijos pavadinimo kodas,"Įsakymu Nr. D1-752 patvirtintas PABIRŠINIŲ VANDENS TELKINIŲ KATEGORIJŲ KLASIFIKATORIUS https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.361485"
+,,,,,kategorija,string,,,,2,open,,Vandens objekto kategorijos pavadinimo kodas,"Įsakymu Nr. D1-752 patvirtintas PABIRŠINIŲ VANDENS TELKINIŲ KATEGORIJŲ KLASIFIKATORIUS https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.361485"
 ,,,,,,enum,,,"""1""",,,,Upė,
 ,,,,,,,,,"""2""",,,,Kanalas,
 ,,,,,,,,,"""3""",,,,Natūralus ežeras,
@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uppabas_uid,string,,,,2,open,,"Upės pabaseinio (jeigu jis išskirtas), kuriame yra vandens objektas, unikalus identifikatorius",
 ,,,,,vyrupes_uid,string,,,,2,open,,"Vyresniosios upės, į kurią įteka upės, unikalus identifikatorius",
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,"Žiočių centro koordinatės LKS 94 koordinačių sistemoje, m",
-,,,,,krantas,integer,,,,2,open,,Įtekėjimo į vyresniąją upę krantas,
+,,,,,krantas,string,,,,2,open,,Įtekėjimo į vyresniąją upę krantas,
 ,,,,,,enum,,,"""0""",,,,kairys,
 ,,,,,,,,,"""1""",,,,dešinys,
 ,,,,,eiliskumas,integer,,,,2,open,,"Įtekėjimo eiliškumas upės, įtekančios į Baltijos jūrą ar Kuršių marias, atžvilgiu",
