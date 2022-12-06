@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""5""",,,,"Baseino plotas >1000 ir vidutinis vandens paviršiaus nuolydis >0,3 m/km",
 ,,,,,m_vietos_kodas,string,,,,2,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
 ,,,,,m_vietos_pav,string,,,,2,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
-,,,,,koord,"geometry(point, 3346)",,,,3,open,,Monitoringo vietų koordinatės LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
+,,,,,koord,"geometry(point, 3346)",,,,2,open,,Monitoringo vietų koordinatės LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
 ,,,,,tarptaut_telkinys,string,,,,2,open,,Tarptautinis vandens telkinys,
 ,,,,,,enum,,,"""su Baltarusija""",,,,su Baltarusija,
 ,,,,,,,,,"""su Latvija""",,,,su Latvija,
