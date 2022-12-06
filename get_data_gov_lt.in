@@ -60,11 +60,13 @@ datasets/gov/vmi/zemes_mokestis.csv
 datasets/gov/aaa/organiniu_tirpikliu_irenginiai.csv
 datasets/gov/vmi/verslo_liudijimai.csv
 datasets/gov/vmi/mm_registras.csv
+datasets/gov/vmi/akcizai.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
 datasets/gov/vlk/drg.csv
 datasets/gov/vlk/achi.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
+datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
 datasets/gov/aaa/fdujos.csv
 datasets/gov/lgt/geo_naud_iskasenos_leid.csv
@@ -111,3 +113,8 @@ datasets/gov/lsd/sdg/sdg.csv
 datasets/gov/lsd/darbuotoju_darbo_uzmokestis/darbuotoju_darbo_uzmokestis.csv
 datasets/gov/lsd/misku_bukle.csv
 datasets/gov/aaa/ezerai_tvenkiniai.csv
+datasets/gov/aaa/upiu_bukles_duomenys.csv
+datasets/gov/mita/paraiskos.csv
+datasets/gov/lsd/turizmas/atvyksta.csv
+datasets/gov/miskai/leidimai.csv
+datasets/gov/vlk/prisirase.csv
