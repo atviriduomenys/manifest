@@ -17,5 +17,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""chapter.code"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
 ,,,,,chapter_name,string,,,,2,open,,,Skyriaus pavadinimas
 ,,,,,,comment,property,,"update(property: ""chapter.name"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
-,,,,,valid_from,date,,DiagnosisValidFrom,,4,open,,,Diagnozės kodo galiojimo pradžios data
-,,,,,valid_to,date,,DiagnosisValidTo,,4,open,,,Diagnozės kodo galiojimo pabaigos data
+,,,,,valid_from,date,,,,4,open,,,Diagnozės kodo galiojimo pradžios data
+,,,,,valid_to,date,,,,4,open,,,Diagnozės kodo galiojimo pabaigos data
