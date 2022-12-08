@@ -36,7 +36,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,6,,,,Teisinga,
 ,,,,,,,,,7,,,,Priimta su klaidomis,
 ,,,,,pateikimo_data,datetime,D,,,4,open,,"Duomenų įrašymo į lentelę data (sysdate)",
-,,,,,metai,integer,yr,,,4,open,,Mokestinio laikotarpio metai ,
+,,,,,metai,integer,,,,2,open,,Mokestinio laikotarpio metai ,
 ,,,,,ketvirtis,integer,,,,2,open,,Mokestinio laikotarpio ketvirtis,
 ,,,,,menuo,integer,mo,,,4,open,,Mokestinio laikotarpio mėnuo,
 ,,,,,dek_salis,string,,,,2,open,,Vartojimo valstybė narė,
