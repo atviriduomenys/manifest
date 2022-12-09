@@ -40,6 +40,7 @@ datasets/gov/lsd/cl/ja_asmenys.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
+datasets/gov/kaunas/kasimai.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
 datasets/gov/mita/horizon.csv
 datasets/gov/lhmt/hidrologija.csv	
