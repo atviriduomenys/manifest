@@ -2,8 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/kaunas/kasimai,,,,,,,,,,,,Kauno miesto savivaldybės teikiami duomenys,Kauno mieste vykdomi kasimo darbai
 ,,,,,,prefix,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Kasimai,,,pid,,,4,,,Kasimo darbai,
-,,,,,pid,integer,,,,4,open,,ID,
+,,,,Kasimai,,,id,,,4,,,Kasimo darbai,
+,,,,,id,integer,,,,4,open,,ID,
 ,,,,,pnr,integer,,,,4,open,,Prašymo nr,
 ,,,,,teikimo_data,date,,,,3,open,,Prašymo vykdyti kasimo darbus pateikimo data,
 ,,,,,darbai_pradzia,date,,,,3,open,,Kasimo darbų pradžios data,
