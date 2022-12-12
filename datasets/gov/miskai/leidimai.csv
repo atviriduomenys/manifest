@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/miskai/Leidimai,,,,,,,,,,,,,
+,datasets/gov/miskai/leidimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,TMKPadalinys,,,,,,4,,,Teritoriniai miškų kontrolės padaliniai,
 ,,,,,pavadinimas,string,,,,3,open,,Poskyris,Teritorinis miškų kontrolės poskyris
