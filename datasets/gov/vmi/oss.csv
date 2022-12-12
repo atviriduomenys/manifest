@@ -28,7 +28,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""TP""",,,,T ir P deklaruotos veiklos,
 ,,,,,,,,,"""KP""",,,,K ir P deklaruotos veiklos,
 ,,,,,,,,,"""TKP""",,,,"T, K, P deklaruotos veiklos",
-,,,,,patvirtinimo_pasirinkimas,string,,,,4,open,,Registracijos metu pasirinktas patvirtinimo požymis dėl vertės viršijimo,
+,,,,,patvirtinimo_pasirinkimas,integer,,,,4,open,,Registracijos metu pasirinktas patvirtinimo požymis dėl vertės viršijimo,
+,,,,,,enum,,,1,,,,"Paslaugos, prekės virsija 10000","Telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamų paslaugų ir / ar ES vidaus nuotolinės prekybos prekių tiekimo vertė (neįskaitant PVM) viršijo 10 000 eurų"
+,,,,,,,,,2,,,,"Paslaugos, prekės nevirsija 10000","Telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamų paslaugų ir / ar ES vidaus nuotolinės prekybos prekių tiekimo vertė (neįskaitant PVM) neviršijo 10 000 eurų, tačiau noriu pasinaudoti PVM įstatymo 13² straipsnio 2 dalyje nustatyta galimybe"
 ,,,,,tiekimo_pozymis,string,,,,4,open,,Tiekimo požymis,
 ,,,,,,enum,,,"""GOODS""",,,,"GOODS – Prekės",
 ,,,,,,,,,"""SERVICES""",,,,"SERVICES – Paslaugos",
