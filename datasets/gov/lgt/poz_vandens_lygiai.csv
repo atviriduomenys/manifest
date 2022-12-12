@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,PozeminioVandensLygis,,,,,,2,,,Valstybinio požeminio vandens monitoringo  matavimų duomenys,
+,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
 ,,,,,postas,string,,,,4,open,,Stebimojo posto pavadinimas,
 ,,,,,posto_id,integer,,,,4,open,,Stebimojo posto numeris,
 ,,,,,tasko_id,integer,,,,4,open,,Taško numeris,
