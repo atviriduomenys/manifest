@@ -1,0 +1,22 @@
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/migris/prieglobscio_suteikimas;;;;;;;;;;;;;Duomenys apie prieglobsèio praðytojus, prieglobstá gavusius uþsienieèius, pateiktus praðymus suteikti prieglobstá ir priimtus sprendimus, duomenys apie uþsienieèius, dël kuriø buvo iðsiøsti ar gauti paklausimai (ir/ar atsakymai) dël jø perëmimo savo þinion ar atsiëmimo pagal Dublino III reglamentà, duomenys apie uþsienieèiø perdavimà pagal Dublino III reglamentà.
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;PrieglobscioPrasytojas;;;id;;;3;open;;Duomenys apie prieglobsèio praðytojus;
+;;;;;id;string;;;;4;open;;Unikalus identifikatorius;
+;;;;;prasymo_registravimo_data;date;D;;;4;open;;Praðymo prieglobsèiui gauti registracijos data;
+;;;;;asm_lytis;string;;;;4;open;;Lytis byloje;
+;;;;;;enum;;;"""M""";;;;Moteris;
+;;;;;;;;;"""V""";;;;Vyras;
+;;;;;amziaus_grupe;string;;;;2;open;;Asmens amþiaus grupë pagal gimimo datà, nurodytà byloje;
+;;;;;pilietybe;string;;;;2;open;;Asmens pilietybë;
+;;;;PrieglobscioGavejas;;;id;;;3;open;;Duomenys apie prieglobsèio gavëjus;
+;;;;;id;string;;;;4;open;;Unikalus identifikatorius;
+;;;;;prasymo_registravimo_data;string;;;;2;open;;Praðymo prieglobsèiui gauti registracijos data;
+;;;;;asm_lytis;string;;;;4;open;;Lytis byloje;
+;;;;;;enum;;;"""M""";;;;Moteris;
+;;;;;;;;;"""V""";;;;Vyras;
+;;;;;;;;;"""Ðeima""";;;;Ðeima;Kai kurie prieglobsèio praðymai tenkinami ne asmeniui, o visai ðeimai. Dël to tokie jungtiniai praðymai ðeimoms þymimi atskirai.
+;;;;;amziaus_grupe;string;;;;2;open;;Asmens amþiaus grupë pagal gimimo datà, nurodytà byloje;
+;;;;;pilietybe;string;;;;2;open;;Asmens pilietybë;
+;;;;;sprendimo_data;date;D;;;4;;;Sprendimo suteikti prieglobstá registravimo data;
