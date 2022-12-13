@@ -15,5 +15,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data,date,D,,,4,open,,Matavimo data,
 ,,,,,lygis_cm,integer,cm,,,4,open,,Vandens lygis nuo žemės paviršiaus centimetrais,
 ,,,,,lygis_abs,number,m,,,4,open,,požeminio vandens lygis gręžinyje jūros lygio atžvilgiu (altitudė),
-,,,,,temperatura,number,,,,3,open,,Vandens temperatūra,
-,,,,,,comment,ref,,"update(ref: ""°C"")",4,,spinta:292,,
+,,,,,temperatura,number,°C,,,4,open,,Vandens temperatūra,
