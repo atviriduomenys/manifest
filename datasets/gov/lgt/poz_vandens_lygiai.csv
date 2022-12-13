@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,PozeminioVandensLygis,,,,,,2,,,Valstybinio požeminio vandens monitoringo  matavimų duomenys,
+,,,,PozeminioVandensLygis,,,eiles_nr,,,4,,,Valstybinio požeminio vandens monitoringo  matavimų duomenys,
 ,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
 ,,,,,postas,string,,,,4,open,,Stebimojo posto pavadinimas,
 ,,,,,posto_id,integer,,,,4,open,,Stebimojo posto numeris,
