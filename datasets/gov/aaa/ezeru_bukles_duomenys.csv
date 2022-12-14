@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""2""",,,,Vidutinis gylis > 3 m ir didžiausias gylis 11-30 metrų,
 ,,,,,,,,,"""3""",,,,Didžiausias gylis >30 m,
 ,,,,,m_vietos_kodas,string,,,,2,open,,Monitoringo vietos kodas,"Monitoringo vietų kodai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
-,,,,,m_vietos_pav,number,,,,2,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
+,,,,,m_vietos_pav,string,,,,2,open,,Monitoringo vietos pavadinimas,"Monitoringo vietų pavadinimai, pagal kuriuos buvo atliktas vandens telkinio ekologinės ir cheminės būklės vertinimas"
 ,,,,,koord,"geometry(point, 3346)",,,,2,open,,Monitoringo vietų koordinatės LKS (m),"Monitoringo vietų, kuriose vykdomas valstybinis ežerų monitoringas koordinatės"
 ,,,,,tarptaut_telkinys,string,,,,2,open,,Tarptautinis vandens telkinys,
 ,,,,,,enum,,,"""su Baltarusija""",,,,su Baltarusija,
