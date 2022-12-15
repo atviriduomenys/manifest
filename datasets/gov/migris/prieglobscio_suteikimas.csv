@@ -11,7 +11,8 @@
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
 
-,,,,,pilietybe,string,,,,2,open,,Asmens pilietybė,
+,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
+
 ,,,,PrieglobscioGavejas,,,id,,,3,open,,Duomenys apie prieglobsčio gavėjus,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,prasymo_registravimo_data,string,,,,2,open,,Prašymo prieglobsčiui gauti registracijos data,
