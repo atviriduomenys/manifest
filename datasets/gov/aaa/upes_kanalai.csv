@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""9""",,,,Teritorinis vandens telkinys,
 ,,,,,uppabas_uid,string,,,,2,open,,"Upės pabaseinio (jeigu jis išskirtas), kuriame yra vandens objektas, unikalus identifikatorius",
 ,,,,,vyrupes_uid,string,,,,2,open,,"Vyresniosios upės, į kurią įteka upės, unikalus identifikatorius",
-,,,,,koord,"geometry(point, 3346)",,,,4,open,,Žiočių centro koordinatės, LKS 94 koordinačių sistemoje,
+,,,,,koord,"geometry(point, 3346)",,,,4,open,,Žiočių centro koordinatės,LKS 94 koordinačių sistemoje
 ,,,,,krantas,integer,,,,4,open,,Įtekėjimo į vyresniąją upę krantas,
 ,,,,,,enum,,,"""0""",,,,kairys,
 ,,,,,,,,,"""1""",,,,dešinys,
