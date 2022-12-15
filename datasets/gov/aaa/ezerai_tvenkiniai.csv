@@ -5,8 +5,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Ežero/tvenkinio pavadinimas,
 ,,,,,registruota,date,D,,,4,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
 ,,,,,redaguota,date,D,,,4,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
-,,,,,koord,"geometry(point, 3346)",,,,2,open,,"Objekto centro koordinatė LKS-94 koordinačių sistemoje, metrais",
-,,,,,pav_plotas,number,ha,,,4,open,,"Vandens paviršiaus plotas Lietuvos teritorijoje geografinis, ha",
+,,,,,koord,"geometry(point, 3346)",,,,2,open,,Objekto centro koordinatė, "LKS-94 koordinačių sistemoje, metrais",
+,,,,,pav_plotas,number,ha,,,4,open,,"Vandens paviršiaus plotas Lietuvos teritorijoje geografinis",
 ,,,,,kadastroid,string,,,,4,open,,Kadastro identifikavimo kodas,
 ,,,,,kategorija,string,,,,4,open,,Objekto kategorijos pavadinimo kodas,
 ,,,,,,enum,,,"""1""",,,,Upė,
@@ -18,8 +18,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""7""",,,,Tarpinis vandens telkinys,
 ,,,,,,,,,"""8""",,,,Pakrantės vandens telkinys,
 ,,,,,,,,,"""9""",,,,Teritorinis vandens telkinys,
-,,,,,kvadrato_nr,string,,,,2,open,,Ežero kvadrato numeris,"Kvadratas – Lietuvos ežerų schemoje, sudarytoje Respublikinio žemėtvarkos projektavimo instituto 1964 metais, išskirtas plotas ežero numeriui suteikti."
-,,,,,nr_kvadrate,string,,,,2,open,,Ežero numeris kvadrate,
+,,,,,kvadrato_nr,integer,,,,4,open,,Ežero kvadrato numeris,"Kvadratas – Lietuvos ežerų schemoje, sudarytoje Respublikinio žemėtvarkos projektavimo instituto 1964 metais, išskirtas plotas ežero numeriui suteikti."
+,,,,,nr_kvadrate,integer,,,,4,open,,Ežero numeris kvadrate,
 ,,,,,rusis,string,,,,4,open,,Ežero rūšis,
 ,,,,,,enum,,,"""1""",,,,Lašišinis,
 ,,,,,,,,,"""2""",,,,Potencialiai lašišinis,
@@ -34,10 +34,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""11""",,,,Sterkinis,
 ,,,,,,,,,"""12""",,,,Stintinis,
 ,,,,,,,,,"""13""",,,,Kitas,
-,,,,,ilgis,number,km,,,4,open,,"Ežero, tvenkinio ilgis, km",
-,,,,,plotis,number,km,,,4,open,,"Ežero, tvenkinio vidutinis plotis, km",
-,,,,,linijos_ilgis,number,km,,,4,open,,"Kranto linijos ilgis geografinis, km",
-,,,,,uppabas_uid,string,,,,2,open,,"Upės pabaseinio, kuriame yra Kadastro objektas, unikalus identifikatorius",
-,,,,,vyrupes_uid,string,,,,2,open,,Tiesioginės upės unikalus identifikatorius,
+,,,,,ilgis,number,km,,,4,open,,"Ežero, tvenkinio ilgis",
+,,,,,plotis,number,km,,,4,open,,"Ežero, tvenkinio vidutinis plotis",
+,,,,,linijos_ilgis,number,km,,,4,open,,Kranto linijos ilgis geografinis,
+,,,,,uppabas_uid,string,,,,4,open,,"Upės pabaseinio, kuriame yra Kadastro objektas, unikalus identifikatorius",
+,,,,,vyrupes_uid,string,,,,4,open,,Tiesioginės upės unikalus identifikatorius,
 ,,,,,kiti_duomenys,string,,,,2,open,,Kiti duomenys,
-,,,,,shape,"geometry(multipolygon, 3346)",,,,2,open,,Geometrinis primityvas,
+,,,,,shape,"geometry(multipolygon, 3346)",,,,3,open,,Geometrinis primityvas,
