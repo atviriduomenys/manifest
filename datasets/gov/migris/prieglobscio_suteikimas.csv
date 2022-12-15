@@ -21,5 +21,6 @@
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""Šeima""",,,,Šeima,"Kai kurie prieglobsčio prašymai tenkinami ne asmeniui, o visai šeimai. Dėl to tokie jungtiniai prašymai šeimoms žymimi atskirai."
 ,,,,,amziaus_grupe,string,,,,2,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
-,,,,,pilietybe,string,,,,2,open,,Asmens pilietybė,
+,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
+
 ,,,,,sprendimo_data,date,D,,,4,,,Sprendimo suteikti prieglobstį registravimo data,
