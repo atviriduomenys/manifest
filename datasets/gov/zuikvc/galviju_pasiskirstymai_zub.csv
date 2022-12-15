@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,gpz,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
 ,,,,,,,,,,,,,,
-,,,,GalvijuPasiskirstymasZub,,,savivaldybe,,,,,,Galvijų pasiskirstymas pagal savivaldybes įmonėse,
+,,,,GalvijuPasiskirstymasZub,,,savivaldybe,,,2,,,Galvijų pasiskirstymas pagal savivaldybes įmonėse,
 ,,,,,savivaldybe,string,,Gyvūno bandos savivaldybės pavadinimas,,2,open,,Gyvūno bandos savivaldybės pavadinimas,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,open,,,

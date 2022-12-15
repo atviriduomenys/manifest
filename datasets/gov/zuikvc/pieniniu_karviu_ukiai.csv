@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,pku,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
 ,,,,,,,,,,,,,,
-,,,,PieniniuKarviuUkis,,,savivaldybe,,,,,,Ūkių pasiskirstymas pagal pieninių karvių skaičių,
+,,,,PieniniuKarviuUkis,,,savivaldybe,,,2,,,Ūkių pasiskirstymas pagal pieninių karvių skaičių,
 ,,,,,savivaldybe,string,,Gyvūno bandos savivaldybės pavadinimas ,,2,open,,Gyvūno bandos savivaldybės pavadinimas,
 ,,,,,asm_sk_1_2,integer,U,"Asmenų, kurie laiko 1 arba 2 pieninių veislių karves, skaičius",,4,open,,"Asmenų, kurie laiko 1 arba 2 pieninių veislių karves, skaičius",
 ,,,,,karv_sk_1_2,integer,U,"Pieninių veislių karvių, kurios laikomos pas asmenis, kurie laiko 1 arba 2 pieninių veislių karves, skaičius",,4,open,,"Pieninių veislių karvių, kurios laikomos pas asmenis, kurie laiko 1 arba 2 pieninių veislių karves, skaičius",
