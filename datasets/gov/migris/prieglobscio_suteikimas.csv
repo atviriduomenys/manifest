@@ -5,8 +5,8 @@
 ,,,,,,,,,,,,,,
 ,,,,PrieglobscioPrasytojas,,,id,,,3,open,,Duomenys apie prieglobsčio prašytojus,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,prasymo_registravimo_data,date,D,,,4,open,,Prašymo prieglobsčiui gauti registracijos data,
-,,,,,asm_lytis,string,,,,4,open,,Lytis byloje,
+,,,,,registracija,date,D,,,4,open,,Prašymo prieglobsčiui gauti registracijos data,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
@@ -15,8 +15,8 @@
 
 ,,,,PrieglobscioGavejas,,,id,,,3,open,,Duomenys apie prieglobsčio gavėjus,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,prasymo_registravimo_data,string,,,,2,open,,Prašymo prieglobsčiui gauti registracijos data,
-,,,,,asm_lytis,string,,,,4,open,,Lytis byloje,
+,,,,,registracija,string,,,,2,open,,Prašymo prieglobsčiui gauti registracijos data,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""Šeima""",,,,Šeima,"Kai kurie prieglobsčio prašymai tenkinami ne asmeniui, o visai šeimai. Dėl to tokie jungtiniai prašymai šeimoms žymimi atskirai."
@@ -24,4 +24,4 @@
 
 ,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
 
-,,,,,sprendimo_data,date,D,,,4,,,Sprendimo suteikti prieglobstį registravimo data,
+,,,,,sprendimas,date,D,,,4,,,Sprendimo suteikti prieglobstį registravimo data,
