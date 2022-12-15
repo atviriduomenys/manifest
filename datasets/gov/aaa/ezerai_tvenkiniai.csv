@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Ežero/tvenkinio pavadinimas,
 ,,,,,registruota,date,D,,,4,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
 ,,,,,redaguota,date,D,,,4,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
-,,,,,koord,"geometry(point, 3346)",,,,2,open,,Objekto centro koordinatė, "LKS-94 koordinačių sistemoje, metrais",
+,,,,,koord,"geometry(point, 3346)",,,,2,open,,Objekto centro koordinatė,"LKS-94 koordinačių sistemoje, metrais"
 ,,,,,pav_plotas,number,ha,,,4,open,,"Vandens paviršiaus plotas Lietuvos teritorijoje geografinis",
 ,,,,,kadastroid,string,,,,4,open,,Kadastro identifikavimo kodas,
 ,,,,,kategorija,string,,,,4,open,,Objekto kategorijos pavadinimo kodas,
