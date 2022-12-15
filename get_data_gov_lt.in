@@ -115,10 +115,12 @@ datasets/gov/lsd/sdg/sdg.csv
 datasets/gov/lsd/darbuotoju_darbo_uzmokestis/darbuotoju_darbo_uzmokestis.csv
 datasets/gov/lsd/misku_bukle.csv
 datasets/gov/aaa/ezerai_tvenkiniai.csv
+datasets/gov/aaa/upes_kanalai.csv
 datasets/gov/aaa/ezeru_bukles_duomenys.csv
 datasets/gov/aaa/upiu_bukles_duomenys.csv
 datasets/gov/mita/paraiskos.csv
 datasets/gov/lsd/turizmas/atvyksta.csv
 datasets/gov/miskai/leidimai.csv
 datasets/gov/vlk/prisirase.csv
+datasets/gov/migracija/prieglobscio_suteikimas.csv
 datasets/gov/aaa/vandens_naudojimas.csv
