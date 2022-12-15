@@ -40,6 +40,7 @@ datasets/gov/lsd/cl/ja_asmenys.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
+datasets/gov/kaunas/kasimai.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
 datasets/gov/mita/horizon.csv
 datasets/gov/lhmt/hidrologija.csv	
@@ -52,6 +53,7 @@ datasets/gov/sumin/vintra.csv
 datasets/gov/avnt/imoniu_restrukturizavimas.csv
 datasets/gov/avnt/imoniu_bankrotas.csv
 datasets/gov/vmi/nt.csv
+datasets/gov/vmi/oss.csv
 datasets/gov/aaa/juros_mariu_monitoringas.csv
 datasets/gov/giscentras/grpk.csv
 datasets/gov/vmi/prekiu_paslaugu_es_pvm.csv
@@ -119,3 +121,4 @@ datasets/gov/lsd/turizmas/atvyksta.csv
 datasets/gov/miskai/leidimai.csv
 datasets/gov/vlk/prisirase.csv
 datasets/gov/migracija/prieglobscio_suteikimas.csv
+datasets/gov/aaa/vandens_naudojimas.csv
