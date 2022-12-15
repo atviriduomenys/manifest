@@ -10,7 +10,6 @@
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
-,,,,,,,,,,,,,,
 ,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
 ,,,,,,,,,,,,,,
 ,,,,PrieglobscioGavejas,,,id,,,3,open,,Duomenys apie prieglobsčio gavėjus,
@@ -21,7 +20,5 @@
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""Šeima""",,,,Šeima,"Kai kurie prieglobsčio prašymai tenkinami ne asmeniui, o visai šeimai. Dėl to tokie jungtiniai prašymai šeimoms žymimi atskirai."
 ,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
-,,,,,,,,,,,,,,
 ,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
-,,,,,,,,,,,,,,
 ,,,,,sprendimas,date,D,,,4,,,Sprendimo suteikti prieglobstį registravimo data,
