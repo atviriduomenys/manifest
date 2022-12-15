@@ -1,24 +1,22 @@
-ï»¿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/migracija/prieglobscio_suteikimas,,,,,,,,,,,,,"Duomenys apie prieglobsÄio praÅ¡ytojus, prieglobstÄ¯ gavusius uÅ¾sienieÄius, pateiktus praÅ¡ymus suteikti prieglobstÄ¯ ir priimtus sprendimus, duomenys apie uÅ¾sienieÄius, dÄ—l kuriÅ³ buvo iÅ¡siÅ³sti ar gauti paklausimai (ir/ar atsakymai) dÄ—l jÅ³ perÄ—mimo savo Å¾inion ar atsiÄ—mimo pagal Dublino III reglamentÄ…, duomenys apie uÅ¾sienieÄiÅ³ perdavimÄ… pagal Dublino III reglamentÄ…."
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,PrieglobscioPrasytojas,,,id,,,3,open,,Duomenys apie prieglobsÄio praÅ¡ytojus,
-,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,registracija,date,D,,,4,open,,PraÅ¡ymo prieglobsÄiui gauti registracijos data,
-,,,,,lytis,string,,,,4,open,,Lytis byloje,
-,,,,,,enum,,,"""M""",,,,Moteris,
-,,,,,,,,,"""V""",,,,Vyras,
-,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amÅ¾iaus grupÄ— pagal gimimo datÄ…, nurodytÄ… byloje",
-,,,,,pilietybe,string,,,,3,open,,Asmens pilietybÄ—,
-,,,,,,,,,,,,,,
-,,,,PrieglobscioGavejas,,,id,,,3,open,,Duomenys apie prieglobsÄio gavÄ—jus,
-,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,registracija,string,,,,2,open,,PraÅ¡ymo prieglobsÄiui gauti registracijos data,
-,,,,,lytis,string,,,,4,open,,Lytis byloje,
-,,,,,,enum,,,"""M""",,,,Moteris,
-,,,,,,,,,"""V""",,,,Vyras,
-,,,,,,,,,"""Å eima""",,,,Å eima,"Kai kurie prieglobsÄio praÅ¡ymai tenkinami ne asmeniui, o visai Å¡eimai. DÄ—l to tokie jungtiniai praÅ¡ymai Å¡eimoms Å¾ymimi atskirai."
-,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amÅ¾iaus grupÄ— pagal gimimo datÄ…, nurodytÄ… byloje",
-,,,,,pilietybe,string,,,,3,open,,Asmens pilietybÄ—,
-,,,,,sprendimas,date,D,,,4,,,Sprendimo suteikti prieglobstÄ¯ registravimo data,
+id	dataset	resource	base	model	property	type	ref	source	prepare	level	access	uri	title	description
+	datasets/gov/migracija/prieglobscio_suteikimas													"Duomenys apie prieglobsèio prağytojus, prieglobstá gavusius uşsienieèius, pateiktus prağymus suteikti prieglobstá ir priimtus sprendimus, duomenys apie uşsienieèius, dël kuriø buvo iğsiøsti ar gauti paklausimai (ir/ar atsakymai) dël jø perëmimo savo şinion ar atsiëmimo pagal Dublino III reglamentà, duomenys apie uşsienieèiø perdavimà pagal Dublino III reglamentà."
+														
+				Prasytojas			id			3	open		Duomenys apie prieglobsèio prağytojus	
+					id	string				4	open		Unikalus identifikatorius	
+					registracija	date	D			4	open		Prağymo prieglobsèiui gauti registracijos data	
+					lytis	string				4	open		Lytis byloje	
+						enum			"""M"""				Moteris	
+									"""V"""				Vyras	
+					amziaus_grupe	string				3	open		"Asmens amşiaus grupë pagal gimimo datà, nurodytà byloje"	
+					pilietybe	string				3	open		Asmens pilietybë	
+														
+				Gavejas			id			3	open		Duomenys apie prieglobsèio gavëjus	
+					id	string				4	open		Unikalus identifikatorius	
+					registracija	string				2	open		Prağymo prieglobsèiui gauti registracijos data	
+					lytis	string				4	open		Lytis byloje	
+						enum			"""M"""				Moteris	
+									"""V"""				Vyras	
+									"""Ğeima"""				Ğeima	"Kai kurie prieglobsèio prağymai tenkinami ne asmeniui, o visai ğeimai. Dël to tokie jungtiniai prağymai ğeimoms şymimi atskirai."
+					amziaus_grupe	string				3	open		"Asmens amşiaus grupë pagal gimimo datà, nurodytà byloje"	
+					pilietybe	string				3	open		Asmens pilietybë	
+					sprendimas	date	D			4			Sprendimo suteikti prieglobstá registravimo data	
