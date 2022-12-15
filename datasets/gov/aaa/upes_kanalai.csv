@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uppabas_uid,string,,,,2,open,,"Upės pabaseinio (jeigu jis išskirtas), kuriame yra vandens objektas, unikalus identifikatorius",
 ,,,,,vyrupes_uid,string,,,,2,open,,"Vyresniosios upės, į kurią įteka upės, unikalus identifikatorius",
 ,,,,,koord,"geometry(point, 3346)",,,,4,open,,Žiočių centro koordinatės,LKS 94 koordinačių sistemoje
-,,,,,krantas,integer,,,,4,open,,Įtekėjimo į vyresniąją upę krantas,
+,,,,,krantas,string,,,,4,open,,Įtekėjimo į vyresniąją upę krantas,
 ,,,,,,enum,,,"""0""",,,,kairys,
 ,,,,,,,,,"""1""",,,,dešinys,
 ,,,,,eiliskumas,integer,,,,3,open,,"Upės įtekėjimo eiliškumas","Upės, įtekančios į Baltijos jūrą ar Kuršių marias, atžvilgiu."
