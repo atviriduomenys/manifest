@@ -18,4 +18,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gavejo_imones_rusis,string,,,,4,open,,Gavėjo įmonės rūšis,
 ,,,,,mokescio_dalis_proc,number,%,,,4,open,,"Mokesčio dalis, procentais",
 ,,,,,suma,number,,,,2,open,,Apskaičiuota paramos suma,
-,,,,,,comment,type,,update(type:"money", ref: "EUR"),4,,spinta:40,,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
