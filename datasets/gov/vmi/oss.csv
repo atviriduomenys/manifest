@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ketvirtis,integer,,,,2,open,,Mokestinio laikotarpio ketvirtis,
 ,,,,,menuo,integer,,,,2,open,,Mokestinio laikotarpio mėnuo,
 ,,,,,dek_salis,string,,,,2,open,,Vartojimo valstybė narė,
-,,,,,apmokestinta_verte,number,,,,2,open,,Apmokestinamoji vertė,
+,,,,,apmokestinta_vertė,number,,,,2,open,,Apmokestinamoji vertė,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,pvm_suma,number,,,,2,open,,PVM suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
