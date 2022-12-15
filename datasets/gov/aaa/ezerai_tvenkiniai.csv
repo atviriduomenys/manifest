@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/aaa/ezerai_tvenkiniai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,EzeraiTvenkiniai,,,,,,2,,,Ežerai ir tvenkiniai,
+,,,,EzerasTvenkinys,,,,,,2,,,Ežerai ir tvenkiniai,
 ,,,,,pavadinimas,string,,,,2,open,,Ežero/tvenkinio pavadinimas,
 ,,,,,registruota,date,D,,,4,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
 ,,,,,redaguota,date,D,,,4,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
