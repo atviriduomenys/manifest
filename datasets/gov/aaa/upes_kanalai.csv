@@ -1,12 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/aaa/upiu_kanalai,,,,,,,,,,,,,
+,datasets/gov/aaa/upes_kanalai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,UpesKanalai,,,,,,2,,,Upės ir kanalai,"Pagal Upių, ežerų ir tvenkinių kadastro nuostatus, patvirtintų Lietuvos Respublikos Vyriausybės 2000-09-19 nutarimu Nr. 1114, kadastre kaupiama informacija apie upes, kurių ilgis ne mažesnis kaip 3 kilometrai arba baseino plotas ne mažesnis kaip 5 kv. kilometrai ir (ar) valstybinės reikšmės vidaus vandens telkiniams priskirtas upes ar kanalus, ir (ar) upes ar kanalus, kuriuose vykdomas valstybinis aplinkos monitoringas."
-,,,,,pavadinimas,string,,,,2,open,,"Upės, kanalo pavadinimas",
-,,,,,kadastroid,string,,,,2,open,,Objekto kadastro identifikavimo kodas,
-,,,,,registruota,date,D,,,2,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
-,,,,,redaguota,date,D,,,2,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
-,,,,,kategorija,string,,,,2,open,,Vandens objekto kategorijos pavadinimo kodas,"Įsakymu Nr. D1-752 patvirtintas PABIRŠINIŲ VANDENS TELKINIŲ KATEGORIJŲ KLASIFIKATORIUS https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.361485"
+,,,,UpeKanalas,,,,,,2,,,Upės ir kanalai,"Pagal Upių, ežerų ir tvenkinių kadastro nuostatus, patvirtintų Lietuvos Respublikos Vyriausybės 2000-09-19 nutarimu Nr. 1114, kadastre kaupiama informacija apie upes, kurių ilgis ne mažesnis kaip 3 kilometrai arba baseino plotas ne mažesnis kaip 5 kv. kilometrai ir (ar) valstybinės reikšmės vidaus vandens telkiniams priskirtas upes ar kanalus, ir (ar) upes ar kanalus, kuriuose vykdomas valstybinis aplinkos monitoringas."
+,,,,,pavadinimas,string,,,,4,open,,"Upės, kanalo pavadinimas",
+,,,,,kadastroid,string,,,,4,open,,Objekto kadastro identifikavimo kodas,
+,,,,,registruota,date,D,,,4,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
+,,,,,redaguota,date,D,,,4,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
+,,,,,kategorija,string,,,,4,open,,Vandens objekto kategorijos pavadinimo kodas,"Įsakymu Nr. D1-752 patvirtintas PAVIRŠINIŲ VANDENS TELKINIŲ KATEGORIJŲ KLASIFIKATORIUS https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.361485"
 ,,,,,,enum,,,"""1""",,,,Upė,
 ,,,,,,,,,"""2""",,,,Kanalas,
 ,,,,,,,,,"""3""",,,,Natūralus ežeras,
