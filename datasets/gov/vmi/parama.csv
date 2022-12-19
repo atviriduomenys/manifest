@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gavejo_sav_kodas,string,,,,2,open,,Gavėjo savivaldybės kodas,
 ,,,,,gavejo_savivaldybe,string,,,,2,open,,Gavėjo savivaldybė,
 ,,,,,gavejo_tipas,string,,,,2,open,,Gavėjo tipas,
-,,,,,gavejo_imones_rusis,string,,,,4,open,,Gavėjo įmonės rūšis,
+,,,,,gavejo_imones_rusis,string,,,,2,open,,Gavėjo įmonės rūšis,
 ,,,,,mokescio_dalis_proc,number,%,,,2,open,,Mokesčio dalis,Procentais
 ,,,,,suma,number,,,,2,open,,Apskaičiuota paramos suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
