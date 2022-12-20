@@ -63,6 +63,7 @@ datasets/gov/aaa/organiniu_tirpikliu_irenginiai.csv
 datasets/gov/vmi/verslo_liudijimai.csv
 datasets/gov/vmi/mm_registras.csv
 datasets/gov/vmi/akcizai.csv
+datasets/gov/vmi/parama.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
 datasets/gov/vlk/drg.csv
