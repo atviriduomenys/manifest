@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nvsc/uzkreciamos_ligos/atvejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Bendrieji,,,,,,,,,Užkrečiamųjų ligų atvejai bendrieji,
+,,,,Bendrieji,,,,,3,,,,Užkrečiamųjų ligų atvejai bendrieji,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
 ,,,,,registravimo_vieta,string,,,,2,open,,NVSC skyrius,
 ,,,,,miestas,string,,,,2,open,,Miestas,"Miestas, kurioje yra registruotas pacientas, pavadinimas"
