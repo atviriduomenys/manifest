@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nvsc/uzkreciamos_ligos/atvejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Bendrieji,,,,,3,,,,Užkrečiamųjų ligų atvejai bendrieji,
+,,,,Bendrieji,,,,,,3,,,Užkrečiamųjų ligų atvejai bendrieji,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
 ,,,,,registravimo_vieta,string,,,,2,open,,NVSC skyrius,
 ,,,,,miestas,string,,,,2,open,,Miestas,"Miestas, kurioje yra registruotas pacientas, pavadinimas"
@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,sukelejo_rusis,string,,,,2,open,,Sukelėjo rūšis,
 ,,,,,,,,,,,,,,
-,,,,GyvenamojiVieta,,,,,,,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
+,,,,GyvenamojiVieta,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
 ,,,,,gyvenamoji_vieta,string,,,,3,open,,Gyvenamosios vietos tipas,"Požymis nurodantis, ar pacientas gyvena kaime ar mieste"
 ,,,,,,enum,,,'kaimas',,,,kaimas,
 ,,,,,,,,,'miestas',,,,miestas,
@@ -67,7 +67,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
 ,,,,,,,,,,,,,,
-,,,,SocialineGrupe,,,,,,,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
+,,,,SocialineGrupe,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
 ,,,,,socialine_grupe,string,,,,3,open,,Socialinė grupė,
 ,,,,,,enum,,,'ikimokyklinukas',,,,ikimokyklinukas,
 ,,,,,,,,,'moksleivis',,,,moksleivis,
@@ -114,7 +114,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,diagnozuota_per,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
 ,,,,,,,,,,,,,,
-,,,,Tyrimas,,,,,,,,,Užkrečiamųjų ligų tyrimai,
+,,,,Tyrimas,,,,,,3,,,Užkrečiamųjų ligų tyrimai,
 ,,,,,patvirtintos_diagnozes_data,date,M,,,4,open,,Diagnozės data,
 ,,,,,galutines_diagnozes_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Galutinės diagnozės kodas,
 ,,,,,galutine_diagnoze,string,,,,4,open,,Galutinė diagnozė,
