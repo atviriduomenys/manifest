@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas_iki,date,D,,,2,open,,Duomenų tipo galiojimo pabaigos data,
 ,,,,,anul_tipas,date,D,,,2,open,,Duomenų tipo anuliavimo data,
 ,,,,,pvm_kodas_pref,string,,,,2,open,,Aktualaus PVM mokėtojo kodo prefiksas,
-,,,,,pvm_kodas,integer,,,,2,open,,Aktualus PVM mokėtojo kodas be prefikso „LT“,
+,,,,,pvm_kodas,string,,,,2,open,,Aktualus PVM mokėtojo kodas be prefikso „LT“,
 ,,,,,pvm_iregistruota,date,D,,,2,open,,PVM mokėtojo įregistravimo data ,
 ,,,,,pvm_isregistruota,date,D,,,2,open,,PVM mokėtojo išregistravimo data ,
 ,,,,,padalinio_nr,integer,,,,2,open,,Mokesčio mokėtojo padalinio numeris,
