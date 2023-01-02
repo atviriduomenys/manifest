@@ -242,7 +242,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,2,open,,Zonos pavadinimas,
 ,,,,,st_id,string,,,,2,open,,"Saugomos teritorijos, kurioje yra funkcinio prioriteto zona, identifikatorius",
 ,,,,,st_gkodas,string,,,,2,open,,"Saugomos teritorijos, kurioje yra funkcinio prioriteto zona (pagal subtipą) gkodas",
-,,,,,plotas,integer,,,,4,open,,Plotas, ha,
+,,,,,plotas,integer,,,,4,open,,"Plotas, ha",
 ,,,,,teisinis_pagrindas_ta,string,,,,2,open,,Funkcinio prioriteto zonavimo schemos parengimo teisinis pagrindas,
 ,,,,,schemos_rengejas,string,,,,2,open,,Funkcinio prioriteto zonavimo schemos rengėjas – institucija,
 ,,,,,plano_data,datetime,D,,,4,open,,Funkcinio prioriteto zonavimo schemos parengimo data,
