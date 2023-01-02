@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Terapeuto""",,,,,
 ,,,,,,,,,"""Pediatro""",,,,,
 ,,,,,draustumas,integer,,,,3,open,,Draustumas,"Požymis, parodantis, ar asmenys buvo apdrausti PSD nurodytu laikotarpiu"
-,,,,,tlk,integer,,,,,open,,Teritorinė ligonių kasa,
+,,,,,tlk,string,,,,,open,,Teritorinė ligonių kasa,
 ,,,,,,enum,,,"""Vilniaus TLK""",,,,,
 ,,,,,,,,,"""Kauno TLK""",,,,,
 ,,,,,,,,,"""Klaipėdos TLK""",,,,,
