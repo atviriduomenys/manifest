@@ -572,7 +572,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilgis,integer,,,,4,open,,"Ilgis, km, kai nenurodomas plotas",
 ,,,,,steig_data,datetime,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_ta,string,,,,2,open,,Paukščių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas),
-,,,,,bendr_reglam,string,,,,2,open,,Bendrieji veiklos reglamentai, nuoroda į teisės aktą,
+,,,,,bendr_reglam,string,,,,2,open,,"Bendrieji veiklos reglamentai, nuoroda į teisės aktą",
 ,,,,,isreg_ta,string,,,,2,open,,Išregistravimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,2,open,,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija),
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
