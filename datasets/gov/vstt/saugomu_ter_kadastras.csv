@@ -451,7 +451,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
 ,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,"Unikalus miško sklypo geokodas, susidedantis iš urėdijos, girininkijos, kvartalo, sklypo numerio, sklypo dalies kodų",
-,,2,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
 ,,,,,gamt_pam_steig_ta,string,,,,2,open,,Paskelbimo gamtos paminklu teisinis pagrindas (teisės aktas),
 ,,,,,gamt_pam_steig_data,datetime,D,,,4,open,,Paskelbimo gamtos paminklu data,
 ,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius),
