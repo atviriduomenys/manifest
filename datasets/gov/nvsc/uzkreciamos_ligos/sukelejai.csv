@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nvsc/uzkreciamos_ligos/sukelejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų sukelėjų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Sukelejai,,,,,,3,,,Užkrečiamųjų ligų sukelėjai,
+,,,,Sukelejas,,,,,,3,,,Užkrečiamųjų ligų sukelėjai,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
-,,,,,diagnozes_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,
+,,,,,diagnozes_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,4,open,,Diagnozės kodas,
 ,,,,,diagnoze,string,,,,4,open,,Diagnozės pavadinimas,
 ,,,,,suk_seima_gentis,string,,,,2,open,,"Sukelėjo šeima, gentis",
 ,,,,,suk_pavadinimas,string,,,,2,open,,Sukelėjo pavadinimas,
@@ -17,10 +17,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,suk_anti_o,string,,,,2,open,,Sukelėjo antigenas O,
 ,,,,,suk_anti_h,string,,,,2,open,,Sukelėjo antigenas H,
 ,,,,,suk_v_genas,string,,,,2,open,,Sukelėjo virulentiškumo genas,
-,,,,,gydymas,string,,,,3,open,,Paciento gydymas,"Požymis, ar pacientas gydomas ambulatoriškai ar stacionariai"
+,,,,,gydymas,string,,,,4,open,,Paciento gydymas,"Požymis, ar pacientas gydomas ambulatoriškai ar stacionariai"
 ,,,,,,enum,,,"""Stacionarinis""",,,,Pacientas gydomas stacionare,
 ,,,,,,,,,"""Ambulatorinis""",,,,Pacientas gydomas ambulatoriškai,
-,,,,,paciento_tyrimo_priezastis,string,,,,3,open,,Paciento tyrimo priežastis,"Požymis, ar pacientas tiriamas pagal epidemiologinę būtinybę, dėl sąlyčio su sergančiu asmeniu, ar dėl kitų priežasčių"
+,,,,,paciento_tyrimo_priezastis,string,,,,4,open,,Paciento tyrimo priežastis,"Požymis, ar pacientas tiriamas pagal epidemiologinę būtinybę, dėl sąlyčio su sergančiu asmeniu, ar dėl kitų priežasčių"
 ,,,,,,enum,,,"""Tiriamas dėl kitų priežasčių""",,,,Pacientas tiriamas dėl kitų priežasčių,
 ,,,,,,,,,"""Tiriamas dėl sąlyčio""",,,,Pacientas tiriamas dėl sąlyčio,
 ,,,,,,,,,"""Tiriamas pagal būtinybę""",,,,Pacientas tiriamas pagal būtinybę,
@@ -63,6 +63,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,meginys_kiti_produktai,boolean,,,,4,open,,Aplinkos bandinys - kiti,Požymis nurodantis ar sukelėjo kultūra išauginta iš kitų aplinkos mėginių
 ,,,,,jautrumas_antibiotikams,boolean,,,,4,open,,Jautrumas antibiotikams,"Požymis, ar nustatytas sukelėjo jautrumas antibiotikams"
 ,,,,,antibiotics_jautrus,string,,,,2,open,,Jautrūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra jautrus"
-,,,,,antibiotics_mjautrus,string,,,,2,open,,Mažai jautrūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra mažai"
+,,,,,antibiotics_mjautrus,string,,,,2,open,,Mažai jautrūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra mažai jautrus"
 ,,,,,antibiotics_atsparus,string,,,,2,open,,Atsparūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra atsparus"
 ,,,,,eminio_paemimo_data,date,M,,,4,open,,Mėginio paėmimo data,
