@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Sukelejas,,,,,,3,,,Užkrečiamųjų ligų sukelėjai,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
-,,,,,diagnozes_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,4,open,,Diagnozės kodas,
+,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,
 ,,,,,diagnoze,string,,,,4,open,,Diagnozės pavadinimas,
 ,,,,,suk_seima_gentis,string,,,,2,open,,"Sukelėjo šeima, gentis",
 ,,,,,suk_pavadinimas,string,,,,2,open,,Sukelėjo pavadinimas,
