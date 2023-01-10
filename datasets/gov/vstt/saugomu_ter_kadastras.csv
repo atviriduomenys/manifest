@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,3,open,,Steigimo tikslas,Aprašomoji informacija,
+,,,,,steig_tikslas,string,,,,3,open,,"Steigimo tikslas,Aprašomoji informacija",
 ,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
 ,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai (nurodomi moksliniai tyrimai ir publikacijos),
