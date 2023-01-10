@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,stebėjimo_data,date,D,,,4,open,,Stebėjimo data,
 ,,,,,sukurimo_data,date,D,,,4,open,,Įrašo sukūrimo data,
 ,,,,,komentaras,string,,,,2,open,,Radavietės būsenos pastabos,
-,,,,,skaicius,integer,,,,4,open,,Stebėtos rūšies individų skaičius (gausimas, vnt.),
+,,,,,skaicius,integer,,,,4,open,,"Stebėtos rūšies individų skaičius (gausimas, vnt.)",
 ,,,,,tankumas_ha,number,ha,,,4,open,,Stebėtos rūšies individų tankumas vnt./ha,
 ,,,,,tankumas_kv,number,m^2,,,4,open,,Stebėtos rūšies individų tankumas vnt./kv.m,
 ,,,,,rusiu_stebėjimas,string,,,,2,open,,Stebėtos rūšies individai: kita (tik augalams ir grybams),
