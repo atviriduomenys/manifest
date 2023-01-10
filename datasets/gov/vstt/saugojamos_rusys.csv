@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vsst/rusys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Rusis,,,,id,,4,,,Saugojamos rūšys,Saugojamų augalų, gyvūnų, grybų rūšių duomenys
+,,,,Rusis,,,,id,,4,,,Saugojamos rūšys,"Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
 ,,,,,id,integer,,,,4,open,,Identifikavimo kodas,
 ,,,,,stebėjimo_data,date,D,,,4,open,,Stebėjimo data,
 ,,,,,sukurimo_data,date,D,,,4,open,,Įrašo sukūrimo data,
