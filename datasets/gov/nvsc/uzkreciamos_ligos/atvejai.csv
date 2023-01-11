@@ -115,7 +115,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
 ,,,,,,,,,,,,,,
 ,,,,Tyrimas,,,,,,3,,,Užkrečiamųjų ligų tyrimai,
-,,,,,patvirtintos_diagnozes_data,date,M,,,4,open,,Diagnozės data,
+,,,,,patvirtinta,date,M,,,4,open,,Diagnozės data,
+
 ,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Galutinės diagnozės kodas,
 ,,,,,galutine_diagnoze,string,,,,4,open,,Galutinė diagnozė,
 ,,,,,laboratoriniai_tyrimai,string,,,,2,open,,Laboratoriniai tyrimai,
