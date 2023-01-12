@@ -137,7 +137,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė,
 ,,,,,porus,integer,,,,4,open,,Botaninių gamtos paveldo objektų porūšiai,
 ,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys,
-,,,,,kult_paveld_kodas,integer,,,,4,open,,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą, nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro,
+,,,,,kult_paveld_kodas,integer,,,,4,open,,"Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą, nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro",
 ,,,,,st_id,string,,,,2,open,,"Jei gamtos paveldo objektas yra saugomoje teritorijoje, pildomas saugomos teritorijos, kurioje yra gamtos paveldo objektas, identifikatorius",
 ,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
 ,,,,,skelb_data,datetime,D,,,4,open,,Objekto paskelbimo saugomu data (metai, mėnuo, diena),
