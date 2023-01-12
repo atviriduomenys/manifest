@@ -253,7 +253,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pobudis,integer,,,,4,open,,Funkcinio prioriteto zonos pobūdis,
 ,,,,,centras,"geometry(point,3346)",m,,,4,open,,"Svorio centro koordinatės LKS’94 koordinačių sistemoje",
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steig_data,date,D,,,4,open,,Steigimo data (metai, mėnuo, diena),
+,,,,,steig_data,date,D,,,4,open,,"Steigimo data (metai, mėnuo, diena)",
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steigejas_galiojantis,string,,,,2,open,,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba",
 ,,,,,steig_data_galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
