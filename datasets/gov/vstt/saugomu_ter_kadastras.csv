@@ -319,7 +319,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGISgeokodas (saugomos teritorijos tipas):,
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi, savivaldybės saugomi,
+,,,,,reiksme,integer,,,,2,open,,"Gamtos paveldo objekto reikšmė: valstybės saugomi, savivaldybės saugomi",
 ,,,,,objektu_rusys,integer,,,,4,open,,Geologinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,4,open,,"Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą, nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro",
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,"Jei gamtos paveldo objektas yra saugomoje teritorijoje, pildomas saugomos teritorijos, kurioje yra gamtos paveldo objektas, identifikatorius",
