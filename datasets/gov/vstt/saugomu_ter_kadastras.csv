@@ -585,7 +585,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis,
 ,,,,,reiksme,integer,,,,2,open,,Rezervato reikšmė,
 ,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
-,,,,,plotas,number,ha,,,4,open,,Plotas, ha,
+,,,,,plotas,number,ha,,,4,open,,"Plotas, ha",
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steig_data,date,D,,,4,open,,"Steigimo data (metai, mėnuo, diena)",
 ,,,,,steig_ta,string,,,,2,open,,Įsteigimo teisės aktas,
