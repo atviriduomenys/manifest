@@ -216,11 +216,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steig_data,date,D,,,4,open,,"Steigimo data (metai, mėnuo, diena)",
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas (aprašomoji informacija),
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius),
+,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
 ,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai (nurodomi moksliniai tyrimai ir publikacijos),
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas,
-,,,,,tarpt_svarba_apras,string,,,,3,open,,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas,
+,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašymas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Duomenys apie saugomus gamtinius kompleksus ir jų būklę,
 ,,,,,duomen_monitor,string,,,,2,open,,Aplinkos  stebėsenos (monitoringo) duomenys,
 ,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie valstybinio draustinio buferinę apsaugos zoną,
@@ -229,9 +229,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steigejas_galiojantis,string,,,,2,open,,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba",
 ,,,,,steig_data_galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,"Teisės aktas, pagal kurį šiuo metu galioja saugomos teritorijos riba, reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas"
-,,,,,st_id,string,,,,2,open,,"Saugomos teritorijos, kurioje yra funkcinio prioriteto zona, identifikatorius (taikoma, kai reikšmė yra konservacinio funkcinio prioriteto zona – draustinis)",
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,planavimo_dok_apras,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,st_id,string,,,,2,open,,Identifikatorius,"Saugomos teritorijos, kurioje yra funkcinio prioriteto zona, identifikatorius (taikoma, kai reikšmė yra konservacinio funkcinio prioriteto zona – draustinis)"
+,,,,,tvarkymo_zona_apras,string,,,,2,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,planavimo_dok_apras,string,,,,2,open,,Planavimas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,"Vieta, aprašomoji informacija (adresas – savivaldybė, seniūnija, jei miškas – papildomai miškų urėdija, girininkija, miško kvartalas ir sklypas)"
 ,,,,,ta_nust_st_dalis,string,,,,2,open,,"Teisės aktas, nustatęs, kad rezervatas tapo kompleksinės saugomos teritorijos dalimi",
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
