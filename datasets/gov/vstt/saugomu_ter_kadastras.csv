@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilgis,number,km,,,4,open,,Ilgis,Kai nenurodomas plotas
 ,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
 ,,,,,statuso_ta,string,,,,4,open,,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas),
-,,,,,bendr_reglam,string,,,,4,open,,"Bendrieji veiklos reglamentai, nuoroda į teisės aktą,
+,,,,,bendr_reglam,string,,,,4,open,,"Bendrieji veiklos reglamentai, nuoroda į teisės aktą",
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,2,open,,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija),
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
