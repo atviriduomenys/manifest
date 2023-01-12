@@ -5,18 +5,18 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,site_code,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas (saugomos teritorijos tipas),
-,,,,,vieta,string,,,,2,open,,"Vieta, aprašomoji informacija (gali būti nurodoma savivaldybė, seniūnija, jei miškas – papildomai miškų urėdija, girininkija)",
+,,,,,vieta,string,,,,2,open,,Vieta, "Vieta aprašomoji informacija (gali būti nurodoma savivaldybė, seniūnija, jei miškas – papildomai miškų urėdija, girininkija)"
 ,,,,,registruota,date,D,,,4,open,,"Įregistravimo į kadastrą data (metai, mėnuo, diena)",
-,,,,,id_vart,integer,,,,2,open,,Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius,
+,,,,,id_vart,integer,,,,2,open,,Identifikatorius, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,pavadinimas,string,,,,4,open,,Buveinių  apsaugai svarbios  teritorijos pavadinimas,
+,,,,,pavadinimas,string,,,,4,open,,Buveinės,Buveinių  apsaugai svarbios  teritorijos pavadinimas
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Juridinis
 ,,,,,ilgis,number,km,,,4,open,,Ilgis,Kai nenurodomas plotas
 ,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
-,,,,,statuso_ta,string,,,,4,open,,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas),
-,,,,,bendr_reglam,string,,,,4,open,,"Bendrieji veiklos reglamentai, nuoroda į teisės aktą",
+,,,,,statuso_ta,string,,,,4,open,,Aktas,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
+,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,"Bendrieji veiklos reglamentai, nuoroda į teisės aktą"
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
-,,,,,steig_tikslas,string,,,,2,open,,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija),
+,,,,,steig_tikslas,string,,,,2,open,,Tikslas,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,comment,type,,"update(type: ""geometry(linestring, 3346)"")",3,open,,,
 ,,,,,,,,,,,,,,
@@ -32,13 +32,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
 ,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai (nurodomi moksliniai tyrimai ir publikacijos),
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas,
-,,,,,tarpt_svarba_apras,string,,,,3,open,,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas,
-,,,,,duomen_monitor,string,,,,2,open,,Aplinkos stebėsenos (monitoringo) duomenys,
+,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
+,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,
-,,,,,steigejas_galiojantis,string,,,,2,open,,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba",
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba"
 ,,,,,steig_data_galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,"Teisės aktas, pagal kurį šiuo metu galioja saugomos teritorijos riba, reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas"
 ,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
@@ -67,7 +67,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė: valstybinis,
-,,,,,steigejas_galiojantis,string,,,,2,open,,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba",
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,"Institucija, kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba"
 ,,,,,steig_data_galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,"Teisės aktas, pagal kurį šiuo metu galioja saugomos teritorijos riba, reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas"
 ,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
