@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Biosferos poligono pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGISgeokodas (saugomos teritorijos tipas),
+,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,plotas,number,ha,,,4,open,,Plotas, 
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
