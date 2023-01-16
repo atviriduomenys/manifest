@@ -52,7 +52,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Biosferos rezervato pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS gkodas (saugomos teritorijos tipas),
-,,,,,plotas,number,ha,,,4,open,,"Plotas, ha",
+,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steig_data,datetime,D,,,4,open,,"Steigimo data (metai, mėnuo, diena)",
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
