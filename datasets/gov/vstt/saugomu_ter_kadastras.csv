@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bast_kodas,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas (saugomos teritorijos tipas),
 ,,,,,vieta,string,,,,2,open,,Vieta,"Vieta aprašomoji informacija (gali būti nurodoma savivaldybė, seniūnija, jei miškas – papildomai miškų urėdija, girininkija)"
-,,,,,registruota,date,D,,,4,open,,"Įregistravimo į kadastrą data (metai, mėnuo, diena)",
+,,,,,registruota,date,D,,,4,open,,"Įregistravimo į kadastrą data",
 ,,,,,id_vart,integer,,,,2,open,,Identifikatorius, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,pavadinimas,string,,,,4,open,,Buveinės,Buveinių  apsaugai svarbios  teritorijos pavadinimas
