@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,BuveiniuApsaugaiSvarbiTeritorija,,,id,,,4,,,Buveinių apsaugai svarbios teritorijos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,site_code,string,,,,2,open,,Vietovės identifikatorius,
+,,,,,bast_kodas,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas (saugomos teritorijos tipas),
 ,,,,,vieta,string,,,,2,open,,Vieta,"Vieta aprašomoji informacija (gali būti nurodoma savivaldybė, seniūnija, jei miškas – papildomai miškų urėdija, girininkija)"
 ,,,,,registruota,date,D,,,4,open,,"Įregistravimo į kadastrą data (metai, mėnuo, diena)",
