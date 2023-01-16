@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vstt/teritoriju_kadastras,,,,,,,,,,,,,
+,datasets/gov/vstt/teritorijos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,BuveiniuApsaugaiSvarbiTeritorija,,,id,,,4,,,Buveinių apsaugai svarbios teritorijos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
