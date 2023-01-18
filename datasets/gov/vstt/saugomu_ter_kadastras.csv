@@ -249,7 +249,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,st_tipas,integer,,,,4,open,,Zonos tipas,Saugomos teritorijos kurioje yra funkcinio prioriteto zona tipas
 ,,,,,pobudis,integer,,,,4,open,,Funkcinio prioriteto zonos pobūdis,
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
@@ -481,7 +481,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,objektu_rusys,integer,,,,2,open,,Hidrografinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
 ,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
@@ -531,7 +531,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,tipas,integer,,,,4,open,,Parko tipas,
 ,,,,,parko_pobud,integer,,,,4,open,,Parko pobūdis,
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
@@ -584,7 +584,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
@@ -616,7 +616,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis angliškai,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
@@ -641,7 +641,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,tipas,integer,,,,4,open,,Sklypo tipas,
 ,,,,,skl_rus,integer,,,,4,open,,Atkuriamojo arba genetinio sklypo rūšis,
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
 ,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
