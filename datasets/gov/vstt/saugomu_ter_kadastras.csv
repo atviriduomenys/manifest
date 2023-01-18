@@ -6,17 +6,17 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bast_kodas,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (gali būti nurodoma savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija)
-,,,,,registruota,date,D,,,4,open,,Įregistravimo į kadastrą data,
-,,,,,id_vart,integer,,,,2,open,,Identifikatorius, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,registruota,date,D,,,4,open,,Įregistravimo data,Įregistravimo į kadastrą data
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,pavadinimas,string,,,,4,open,,Buveinės,Buveinių  apsaugai svarbios  teritorijos pavadinimas
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Juridinis
 ,,,,,ilgis,number,km,,,4,open,,Ilgis,Kai nenurodomas plotas
 ,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
 ,,,,,statuso_ta,string,,,,4,open,,Aktas,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
-,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,bendr_reglam,string,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
-,,,,,steig_tikslas,string,,,,2,open,,Tikslas,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija)
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
@@ -27,22 +27,22 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,3,open,,Steigimo tikslasAprašomoji informacija,
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,funkc_prior_zon,string,,,,4,open,,Duomenys apie biosferos poligono funkcinio prioriteto zonas,
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos poligono funkcinio prioriteto zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
@@ -52,25 +52,25 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas (aprašomoji informacija),
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
-,,,,,duomen_monitor,string,,,,2,open,,Aplinkos  stebėsenos (monitoringo) duomenys,
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie buferinę apsaugos zoną,
+,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė: valstybinis,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,funkc_prior_zon,string,,,,4,open,,Duomenys apie biosferos rezervato funkcinio prioriteto zonas,
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos rezervato funkcinio prioriteto zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
@@ -78,14 +78,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,porus,integer,,,,2,open,,Botaninių gamtos paveldo objektų porūšiai,
-,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys,
+,,,,,objektu_rusys,integer,,,,2,open,,Botaninių gamtos objektų rūšys,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,rusis,string,,,,3,open,,Tiksli rūšis,
 ,,,,,rus_sudetis,string,,,,2,open,,Rūšinė sudėtis,
@@ -104,26 +104,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Geokodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,Teisės aktas
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
@@ -132,14 +132,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,porus,integer,,,,2,open,,Botaninių gamtos paveldo objektų porūšiai,
-,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys,
+,,,,,objektu_rusys,integer,,,,2,open,,Botaninių gamtos objektų rūšys,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,rusis,string,,,,3,open,,Tiksli rūšis,
 ,,,,,rus_sudetis,string,,,,2,open,,Rūšinė sudėtis,
@@ -157,48 +157,48 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Geokodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,D,,,4,open,,Steigėjas,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,koord,"geometry(point,4326)",m,,,4,open,,Taško koordinatės,
+,,,,,koord,geometry(point4326),m,,,4,open,,Taško koordinatės,
 ,,,,,,,,,,,,,,
 ,,,,BuferineApsaugosZona,,,id,,,4,,,Buferinės apsaugos zonos,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,st_gkodas,string,,,,2,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,st_id,string,,,,2,open,,Saugomos teritorijos kuriai priklauso buferinės apsaugos  zona identifikatorius,
+,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,teisinis_pagrindas_ta,string,,,,2,open,,Buferinės apsaugos zonos parengimo teisinis pagrindas,
+,,,,,teisinis_pagrindas,string,,,,2,open,,Teises aktas,Buferinės apsaugos zonos parengimo teisinis pagrindas
 ,,,,,data,date,D,,,4,open,,Buferinės apsaugos zonos parengimo data,
 ,,,,,pozymis,integer,,,,4,open,,Apsaugos zonos pozoniai,
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steig_data,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,steig_tikslas,string,,,,3,open,,Steigimo tikslas (aprašomoji informacija),
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
@@ -206,73 +206,73 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Draustinio pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Draustinio reikšmė: valstybinis savivaldybės konservacinio funkcinio prioriteto zona – draustinis,
-,,,,,draust_pobud,integer,,,,4,open,,Draustinio pobūdis – gamtinis kultūrinis  kompleksinis (subtype),
-,,,,,draust_rus,integer,,,,4,open,,Draustinio rūšis (geologinis geomorfologinis t.t.),
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,draust_pobud,integer,,,,4,open,,Draustinio pobūdis,Draustinio pobūdis – gamtinis kultūrinis  kompleksinis (subtype)
+,,,,,draust_rus,integer,,,,4,open,,Draustinio rūšis,Draustinio rūšis (geologinis geomorfologinis t.t.)
 ,,,,,draust_porus,integer,,,,4,open,,Draustinio porūšis,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas (aprašomoji informacija),
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašymas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
-,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Duomenys apie saugomus gamtinius kompleksus ir jų būklę,
-,,,,,duomen_monitor,string,,,,2,open,,Aplinkos  stebėsenos (monitoringo) duomenys,
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie valstybinio draustinio buferinę apsaugos zoną,
+,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
+,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,st_id,string,,,,2,open,,Identifikatorius,Saugomos teritorijos kurioje yra funkcinio prioriteto zona identifikatorius (taikoma kai reikšmė yra konservacinio funkcinio prioriteto zona – draustinis)
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
-,,,,,planavimo_dok,string,,,,2,open,,Planavimas,Duomenys apie parengtus planavimo dokumentus
+,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (adresas – savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,ta_nust_st_dalis,string,,,,2,open,,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi,
+,,,,,ta_nust_st_dalis,string,,,,2,open,,Teises aktas,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,FunkcinioPrioritetoZona,,,id,,,4,,,Funkcinio prioriteto zonos,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,pavadinimas,string,,,,4,open,,Zonos pavadinimas,
-,,,,,st_id,string,,,,2,open,,Saugomos teritorijos kurioje yra funkcinio prioriteto zona identifikatorius,
+,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,st_gkodas,string,,,,2,open,,Teritorijos kodas,Saugomos teritorijos kurioje yra funkcinio prioriteto zona (pagal subtipą) gkodas
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,teisinis_pagrindas_ta,string,,,,2,open,,Funkcinio prioriteto zonavimo schemos parengimo teisinis pagrindas,
-,,,,,schemos_rengejas,string,,,,2,open,,Funkcinio prioriteto zonavimo schemos rengėjas – institucija,
-,,,,,plano_data,date,D,,,4,open,,Funkcinio prioriteto zonavimo schemos parengimo data,
+,,,,,teisinis_pagrindas,string,,,,2,open,,Teises aktas,Funkcinio prioriteto zonavimo schemos parengimo teisinis pagrindas
+,,,,,schemos_rengejas,string,,,,2,open,,institucija,Funkcinio prioriteto zonavimo schemos rengėjas – institucija
+,,,,,plano_data,date,D,,,4,open,,Parengimo data,Funkcinio prioriteto zonavimo schemos parengimo data
 ,,,,,schem_apras,string,,,,2,open,,Pastabos aprašomoji informacija,
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,st_tipas,integer,,,,4,open,,Saugomos teritorijos kurioje yra funkcinio prioriteto zona tipas,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,st_tipas,integer,,,,4,open,,Zonos tipas,Saugomos teritorijos kurioje yra funkcinio prioriteto zona tipas
 ,,,,,pobudis,integer,,,,4,open,,Funkcinio prioriteto zonos pobūdis,
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,steig_tikslas,string,,,,3,open,,Steigimo tikslas (aprašomoji informacija),
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas sklypas)
-,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisGpoPlotas,,,id,,,4,,,Geologiniai GPO Plot,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi,
-,,,,,objektu_rusys,integer,,,,4,open,,Geologinių objektų rūšys,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,objektu_rusys,integer,,,,2,open,,Geologinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,aukstis,number,,,,4,open,,Aukštis,
 ,,,,,ilgis,number,m,,,4,open,,Ilgis m,
@@ -289,26 +289,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Geokodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
@@ -317,13 +317,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi,
-,,,,,objektu_rusys,integer,,,,4,open,,Geologinių objektų rūšys,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,objektu_rusys,integer,,,,2,open,,Geologinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,aukstis,number,m,,,4,open,,Aukštis,
 ,,,,,ilgis,number,m,,,4,open,,Ilgis m,
@@ -341,25 +341,25 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Kodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Steigimo vieta,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
@@ -368,13 +368,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi,
-,,,,,objektu_rusys,integer,,,,4,open,,Geomorfologinių objektų rūšys,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,objektu_rusys,integer,,,,2,open,,Geomorfologinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,aukstis,number,m,,,4,open,,Aukštis,
 ,,,,,ilgis,number,m,,,4,open,,Ilgis m,
@@ -391,26 +391,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Kodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Objekto ribos,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teises aktas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
@@ -419,14 +419,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi,
-,,,,,objektu_rusys,integer,,,,4,open,,Hidrogeologinių objektų rūšys,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,objektu_rusys,integer,,,,2,open,,Hidrogeologinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,orograf_padetis,string,,,,2,open,,Orografinė padėtis,
 ,,,,,uolienos,string,,,,2,open,,Uolienos iš kurių išteka šaltiniai ir versmės,
@@ -446,26 +446,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Geokodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Klasifikatorius,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Steigejas,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,mineralizacija,integer,,,,4,open,,Mineralizacija,
 ,,,,,vandenskietumas,integer,,,,4,open,,Vandens kietumas,
@@ -477,15 +477,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi,
-,,,,,objektu_rusys,integer,,,,4,open,,Hidrografinių objektų rūšys,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,objektu_rusys,integer,,,,2,open,,Hidrografinių objektų rūšys,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,formos,string,,,,2,open,,Orografinė padėtis,
 ,,,,,israiska,string,,,,2,open,,Formų aprašymas,
@@ -500,26 +500,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
 ,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
-,,,,,gir_kod,integer,,,,4,open,,Miškų girininkijos kodas,
+,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Geokodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,aprasymas,string,,,,2,open,,Aprašymas,
@@ -531,30 +531,30 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,tipas,integer,,,,4,open,,Parko tipas,
 ,,,,,parko_pobud,integer,,,,4,open,,Parko pobūdis,
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,2,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas (aprašomoji informacija),
-,,,,,bendr_reglam,integer,,,,4,open,,Identifikatorius,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Statuso aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
-,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Duomenys apie saugomus gamtinius kompleksus ir jų būklę,
+,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
 ,,,,,kult_paveld_objekt,string,,,,2,open,,Objekto būklė,Duomenys apie esančius kultūros paveldo objektus (nekilnojamąsias kultūros vertybes) ir jų būklę
 ,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,funkc_prior_zon,string,,,,4,open,,Duomenys apie funkcinio prioriteto zonas,
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie funkcinio prioriteto zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (adresas – savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
@@ -563,19 +563,19 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bast_kodas,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (gali būti nurodoma savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija)
-,,,,,registruota,date,D,,,4,open,,Įregistravimo į kadastrą data,
+,,,,,registruota,date,D,,,4,open,,Įregistravimo data,Įregistravimo į kadastrą data
 ,,,,,isregistruota,date,D,,,4,open,,Išregistravimo iš kadastro data,
 ,,,,,isreg_priez,string,,,,2,open,,Išregistravimo priežastis,
-,,,,,id_vart,integer,,,,2,open,,Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,pavadinimas,string,,,,2,open,,Paukščių apsaugai svarbios  teritorijos pavadinimas,
+,,,,,pavadinimas,string,,,,2,open,,Teritorija,Paukščių apsaugai svarbios  teritorijos pavadinimas
 ,,,,,plotas,number,ha,,,4,open,,Plotas (juridinis),
 ,,,,,ilgis,number,km,,,4,open,,Ilgis km kai nenurodomas plotas,
 ,,,,,steig_data,date,D,,,4,open,,Statuso suteikimo data,
-,,,,,steig_ta,string,,,,4,open,,Paukščių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas),
-,,,,,bendr_reglam,string,,,,2,open,,Bendrieji veiklos reglamentai nuoroda į teisės aktą,
+,,,,,steig_ta,string,,,,4,open,,Teises aktas,Paukščių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
+,,,,,bendr_reglam,string,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,isreg_ta,string,,,,2,open,,Išregistravimo teisės aktas,
-,,,,,steig_tikslas,string,,,,3,open,,Saugomos teritorijos priskyrimo Natura 2000 tinklui tikslas (aprašomoji informacija),
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,Rezervatas,,,id,,,4,,,Rezervatai,
@@ -583,31 +583,31 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Rezervato pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis,
-,,,,,reiksme,integer,,,,2,open,,Rezervato reikšmė,
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,2,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Statuso aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
-,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Duomenys apie saugomus gamtinius kompleksus ir jų būklę,
-,,,,,duomen_monitor,string,,,,2,open,,Aplinkos  stebėsenos (monitoringo) duomenys,
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie valstybinio rezervato buferinę apsaugos zoną,
+,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
+,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,st_id,string,,,,2,open,,Saugomos teritorijos kurioje yra funkcinio prioriteto zona identifikatorius,
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,ta_nust_st_dalis,string,,,,2,open,,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi,
+,,,,,ta_nust_st_dalis,string,,,,2,open,,Teises aktas,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,RezervatineApyrube,,,id,,,4,,,Rezervatinės apyrubės,
@@ -615,24 +615,24 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis angliškai,
-,,,,,reiksme,integer,,,,2,open,,Rezervato reikšmė,
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,steigimas,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steig_tikslas,string,,,,3,open,,Steigimo tikslas (aprašomoji informacija),
+,,,,,steig_tikslas,string,,,,2,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai (parengiamas  bendrųjų saugomų teritorijų reglamentų iš “Saugomų teritorijų įstatymo” klasifikatorius)
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Statuso aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
-,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Duomenys apie saugomus gamtinius kompleksus ir jų būklę,
-,,,,,tvarkymo_zona_apras,string,,,,2,open,,Duomenys apie kraštovaizdžio tvarkymo zonas,
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
 ,,,,Sklypas,,,id,,,4,,,Atkuriamieji sklypai ir genetiniai sklypai,
@@ -641,25 +641,25 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,tipas,integer,,,,4,open,,Sklypo tipas,
 ,,,,,skl_rus,integer,,,,4,open,,Atkuriamojo arba genetinio sklypo rūšis,
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,skelbejas,string,,,,2,open,,Steigėjas – institucija,
-,,,,,skelbiama,date,D,,,4,open,,Steigimo data (metai mėnuo diena),
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,tarpt_svarba_apras,string,,,,3,open,,Statuso aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,istekl_bukle,string,,,,2,open,,Duomenys apie atsinaujinančių išteklių būklę,
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjo klasifikatorius,
-,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba,
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,geometrija,geometry,,,,4,open,,Ploto geometrija,
 ,,,,,,,,,,,,,,
@@ -667,15 +667,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,reiksme,integer,,,,2,open,,Gamtos paveldo objekto reikšmė,
+,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,porus,integer,,,,2,open,,Zoologinių objektų porūšiai,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Registras,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,centras,"geometry(point,3346)",m,,,4,open,,Svorio centro koordinatės LKS’94 koordinačių sistemoje,
+,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,skelbejas,string,,,,2,open,,Objektą saugomu paskelbė (paskelbė – institucija),
-,,,,,skelbiama,date,D,,,4,open,,Objekto paskelbimo saugomu data,
-,,,,,skelb_ta,string,,,,4,open,,Objekto paskelbimo saugomu teisinis pagrindas,Teisės aktas
+,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
+,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
+,,,,,skelb_ta,string,,,,4,open,,Teisės aktas,Objekto paskelbimo saugomu teisinis pagrindas
 ,,,,,skelb_tikslas,string,,,,3,open,,Objekto skelbimo saugomu tikslas,Aprašomoji informacija
 ,,,,,rusis,string,,,,3,open,,Tiksli rūšis,
 ,,,,,radaviete,string,,,,2,open,,Radavietės aprašymas,
@@ -688,28 +688,28 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyv_pavad_v,string,,,,2,open,,Gyvenamosios vietovės pavadinimas,
 ,,,,,gat_kodas,integer,,,,2,open,,Gatvės kodas,
 ,,,,,gat_pavadinimas,string,,,,2,open,,Gatvės pavadinimas,
-,,,,,mu_kod,integer,,,,4,open,,Miškų urėdijos kodas,
+,,,,,mu_kod,integer,,,,2,open,,Miškų urėdijos kodas,
 ,,,,,mu_pavad,string,,,,2,open,,Miškų urėdijos pavadinimas,
 ,,,,,gir_kod,integer,,,,2,open,,Miškų girininkijos kodas,
 ,,,,,gir_pavad,string,,,,2,open,,Miškų girininkijos pavadinimas,
-,,,,,kv_nr,integer,,,,4,open,,Miškų kvartalo numeris,
-,,,,,skl_nr,integer,,,,4,open,,Miškų sklypo numeris,
+,,,,,kv_nr,integer,,,,2,open,,Miškų kvartalo numeris,
+,,,,,skl_nr,integer,,,,2,open,,Miškų sklypo numeris,
 ,,,,,skl_geo,string,,,,2,open,,Kodas,Unikalus miško sklypo geokodas susidedantis iš urėdijos girininkijos kvartalo sklypo numerio sklypo dalies kodų
-,,,,,ar_gamt_paminkl,integer,,,,4,open,,Ar saugomas objektas yra gamtos paminklas,
+,,,,,gamt_paminkl,integer,,,,4,open,,Saugojamas gamtos paminklas,Ar saugomas objektas yra gamtos paminklas
 ,,,,,,enum,,,0,,,,Nepaminklas,
 ,,,,,,,,,1,,,,Paminklas,
-,,,,,gamt_pam_steig_ta,string,,,,4,open,,Paskelbimo gamtos paminklu teisinis pagrindas,
+,,,,,gamt_pam_steig_ta,string,,,,4,open,,Teisės aktas,Paskelbimo gamtos paminklu teisinis pagrindas
 ,,,,,gamt_pam_steig_data,date,D,,,4,open,,Paskelbimo gamtos paminklu data,
-,,,,,bendr_reglam,integer,,,,4,open,,Bendrieji veiklos reglamentai,
-,,,,,spec_reglam,string,,,,4,open,,Specialieji / individualieji veiklos reglamentai,
+,,,,,bendr_reglam,integer,,,,2,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,buf_zona_apras,string,,,,2,open,,Duomenys apie gamtos paveldo objekto buferinę apsaugos zoną,
+,,,,,buf_zona_apras,string,,,,2,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
-,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjų klasifikatorius,
-,,,,,steigejas_galiojantis,string,,,,2,open,,Potvarkis,Institucija kurios potvarkiu šiuo metu galioja gamtos paveldo objekto riba arba jo vieta
-,,,,,galiojantis,date,D,,,4,open,,Šiuo metu galiojančio gamtos paveldo objekto steigimo teisės akto data,
+,,,,,id_vart,integer,,,,2,open,,Duomenų teikėjas, Institucija/-jos atsakinga/-os už priežiūrą ir monitoringą. Duomenų teikėjų klasifikatorius
+,,,,,steigejas_galiojantis,string,,,,2,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
-,,,,,planavimo_dok,string,,,,2,open,,Duomenys apie parengtus planavimo dokumentus,
+,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,aprasymas,string,,,,2,open,,Aprašymas,
