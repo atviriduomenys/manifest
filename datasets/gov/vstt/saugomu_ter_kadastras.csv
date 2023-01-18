@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vstt/teritorijos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,BuveiniuApsaugaiSvarbiTeritorija,,,id,,,4,,,Buveinių apsaugai svarbios teritorijos,
+,,,,BuveiniuApsaugaiSvarbiTeritorija,,,bast_kodas,,,4,,,Buveinių apsaugai svarbios teritorijos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,bast_kodas,string,,,,2,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
