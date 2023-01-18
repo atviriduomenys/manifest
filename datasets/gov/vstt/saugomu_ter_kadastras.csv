@@ -671,7 +671,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,porus,integer,,,,2,open,,Zoologinių objektų porūšiai,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Registras,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,2,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
-,,,,,centras,geometry(point3346),m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
 ,,,,,skelbiama,date,D,,,4,open,,Skelbimo data,Objekto paskelbimo saugomu data (metai mėnuo diena)
