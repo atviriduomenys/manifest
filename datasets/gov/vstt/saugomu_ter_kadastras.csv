@@ -179,7 +179,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,2,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Vieta aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,koord,geometry(point4326),m,,,4,open,,Taško koordinatės,
+,,,,,koord,"geometry(point,4326)",m,,,4,open,,Taško koordinatės,
 ,,,,,,,,,,,,,,
 ,,,,BuferineApsaugosZona,,,id,,,4,,,Buferinės apsaugos zonos,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
