@@ -40,4 +40,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uppabas_uid,string,,,,4,open,,"Upės pabaseinio, kuriame yra Kadastro objektas, unikalus identifikatorius",
 ,,,,,vyrupes_uid,string,,,,4,open,,Tiesioginės upės unikalus identifikatorius,
 ,,,,,kiti_duomenys,string,,,,2,open,,Kiti duomenys,
-,,,,,shape,"geometry(multipolygon, 3346)",,,,3,open,,Geometrinis primityvas,
+,,,,,shape,geometry,,,,3,open,,Geometrinis primityvas,
