@@ -219,7 +219,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,porus,integer,,,,4,open,,Botaninių gamtos paveldo objektų porūšiai,
 ,,,,,,enum,,,2,,,,Augalų bendrijos,
 ,,,,,,,,,5,,,,Medžiai ir krūmai,
-,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos objektų rūšys,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys, kai porus lygus 5 (Medžiai ir krūmai) 
+,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos objektų rūšys,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys kai porus lygus 5 (Medžiai ir krūmai) 
 ,,,,,,enum,,,1,,,,Ąžuolai,
 ,,,,,,,,,2,,,,Pušys,
 ,,,,,,,,,3,,,,Drevėtos pušys,
@@ -663,7 +663,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,objektu_rusys,integer,,,,4,open,,Hidrogeologinių objektų rūšys,Šaltiniai, versmės
+,,,,,objektu_rusys,integer,,,,4,open,,Hidrogeologinių objektų rūšys,"Šaltiniai, versmės"
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
