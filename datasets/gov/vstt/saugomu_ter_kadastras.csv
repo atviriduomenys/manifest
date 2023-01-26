@@ -798,8 +798,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Parko pavadinimas,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,,enum,,,"np1",,,,Nacionalinis parkas,
-,,,,,,,,,"np2",,,,Regioninis parkas,
+,,,,,,enum,,,"""np1""",,,,Nacionalinis parkas,
+,,,,,,,,,"""np2""",,,,Regioninis parkas,
 ,,,,,tipas,integer,,,,4,open,,Parko tipas,
 ,,,,,,enum,,,6,,,,Nacionalinis parkas,
 ,,,,,,,,,7,,,,Regioninis parkas,
