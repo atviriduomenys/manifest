@@ -161,7 +161,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pav_id,string,,,,4,open,,Nuotraukos identifikatorius,Nuotraukų identifikatorius – raktas į nuotraukų lentelę NUOTRAUKOS 
 ,,,,,adm_hier_kodas,integer,,,,2,open,,Savivaldybės kodas,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
-,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,spinta:216, manifest:1263,,
+,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,adm_pavadinimas,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,adm_hier_kodas_sen,integer,,,,2,open,,Seniūnijos kodas,
