@@ -168,8 +168,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"create(property: ""seniunija"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""seniunija.sen_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,adm_pavadinimas_sen,string,,,,2,open,,Seniūnijos pavadinimas,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 ,,,,,gyv_rej_kodas,integer,,,,2,open,,Gyvenamosios vietovės rejestro kodas,
 ,,,,,gyv_pavad_v,string,,,,2,open,,Gyvenamosios vietovės pavadinimas,
 ,,,,,gat_kodas,integer,,,,2,open,,Gatvės kodas,
@@ -301,7 +299,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,BuferineApsaugosZona,,,id,,,4,,,Buferinės apsaugos zonos,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,"nro",,,,Valstybinis rezervatas,
+,,,,,,enum,,,"nr0",,,,Valstybinis rezervatas,
 ,,,,,,,,,"nd1",,,,Valstybinis draustinis,
 ,,,,,,,,,"nd2",,,,Savivaldybės draustinis,
 ,,,,,,,,,"nk1",,,,Valstybės saugomi gamtos paveldo objektas,
@@ -398,14 +396,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,FunkcinioPrioritetoZona,,,id,,,4,,,Funkcinio prioriteto zonos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,,enum,,,"np1",,,,,
-,,,,,,,,,"np2",,,,,
-,,,,,,,,,"np4",,,,,
-,,,,,,,,,"np5",,,,,
+,,,,,,enum,,,"np1",,,,Nacionalinis parkas,
+,,,,,,,,,"np2",,,,Regioninis parkai,
+,,,,,,,,,"np4",,,,Biosferos rezervatas,
+,,,,,,,,,"np5",,,,Biosferos poligonas,
 ,,,,,pavadinimas,string,,,,4,open,,Zonos pavadinimas,
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,"nro",,,,Valstybinis rezervatas,
+,,,,,,enum,,,"nr0",,,,Valstybinis rezervatas,
 ,,,,,,,,,"nd1",,,,Valstybinis draustinis,
 ,,,,,,,,,"nd2",,,,Savivaldybės draustinis,
 ,,,,,,,,,"nk1",,,,Valstybės saugomi gamtos paveldo objektas,
