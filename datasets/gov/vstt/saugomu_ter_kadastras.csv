@@ -1,5 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vstt/teritorijos,,,,,,,,,,,,Saugomų teritorijų valstybės kadastro duomenys,Saugomų teritorijų valstybės kadastro duomenys
+,,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://github.com/atviriduomenys/spinta/issues/,,
