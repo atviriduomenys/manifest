@@ -301,7 +301,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,BuferineApsaugosZona,,,id,,,4,,,Buferinės apsaugos zonos,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,nr0,,,,Valstybinis rezervatas,
+,,,,,,enum,,,"nr0",,,,Valstybinis rezervatas,
 ,,,,,,,,,"nd",,,,Valstybinis draustinis,
 ,,,,,,,,,"nd",,,,Savivaldybės draustinis,
 ,,,,,,,,,"nk",,,,Valstybės saugomi gamtos paveldo objektas,
