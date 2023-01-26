@@ -66,7 +66,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos poligono funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,"""geometry(3346)""",,,,3,open,,Ploto geometrija,
+,,,,,geometrija,"geometry(3346)",,,,3,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosRezervatas,,,id,,,4,,,Biosferos rezervatai,
