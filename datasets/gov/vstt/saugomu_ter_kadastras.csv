@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -44,7 +44,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -85,7 +85,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,4,,,,Sklypai,
 ,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
-,,,,,spec_reglam,string,,,,4,open,,įregistravimo į kadastrą data (metai, mėnuo, diena),Specialieji / individualieji veiklos reglamentai
+,,,,,spec_reglam,string,,,,4,open,,įregistravimo į kadastrą data,Specialieji / individualieji veiklos reglamentai
 ,,,,,reg_data,date,,,,4,open,,išregistravimo iš kadastro data,
 ,,,,,isreg_data,date,,,,4,open,,išregistravimo priežastis,
 ,,,,,isreg_priez,string,,,,4,open,,išregistravimo teisės aktas,
@@ -709,7 +709,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -780,7 +780,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -870,7 +870,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,isreg_ta,string,,,,4,open,,Išregistravimo,Teisės aktas
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -897,7 +897,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -945,7 +945,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -991,7 +991,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -1063,7 +1063,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Draustiniai,
 ,,,,,,,,,3,,,,Parkai,
 ,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,Biosferos Poligonai, Biosferos Rezervatai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
