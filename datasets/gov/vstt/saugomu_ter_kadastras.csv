@@ -301,7 +301,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,BuferineApsaugosZona,,,id,,,4,,,Buferinės apsaugos zonos,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,"nr0",,,,Valstybinis rezervatas,
+,,,,,,enum,,,"nro",,,,Valstybinis rezervatas,
 ,,,,,,,,,"nd1",,,,Valstybinis draustinis,
 ,,,,,,,,,"nd2",,,,Savivaldybės draustinis,
 ,,,,,,,,,"nk1",,,,Valstybės saugomi gamtos paveldo objektas,
@@ -398,14 +398,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,FunkcinioPrioritetoZona,,,id,,,4,,,Funkcinio prioriteto zonos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,,enum,,,np1,,,,,
+,,,,,,enum,,,"np1",,,,,
 ,,,,,,,,,"np2",,,,,
 ,,,,,,,,,"np4",,,,,
 ,,,,,,,,,"np5",,,,,
 ,,,,,pavadinimas,string,,,,4,open,,Zonos pavadinimas,
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,nr0,,,,Valstybinis rezervatas,
+,,,,,,enum,,,"nro",,,,Valstybinis rezervatas,
 ,,,,,,,,,"nd1",,,,Valstybinis draustinis,
 ,,,,,,,,,"nd2",,,,Savivaldybės draustinis,
 ,,,,,,,,,"nk1",,,,Valstybės saugomi gamtos paveldo objektas,
