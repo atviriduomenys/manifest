@@ -14,8 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastabos,string,,,,2,open,,Stebėtojo pastabos,
 ,,,,,anketos_busena,string,,,,2,open,,Anketos būsena iš klasifikatorius,
 ,,,,,anketos_statusas,string,,,,4,open,,Anketos statusas,Anketos (stebėjimo) statusas iš klasifikatorius
-,,,,,,enum,,,"Aktuali",,,,,
-,,,,,,,,,"Archyvinė",,,,,
+,,,,,,enum,,,"""Aktuali""",,,,,
+,,,,,,,,,"""Archyvinė""",,,,,
 ,,,,,biotopas,string,,,,4,open,,Biotopas,Stebėjimo biotopas (buveinė) ar kita informacija
 ,,,,,gyvunu_stebejimas,string,,,,4,open,,Veiklos požymis,Gyvūno veiklos požymiai iš klasifikatoriaus
 ,,,,,evoliucija,string,,,,4,open,,Vystymosi stadija,Gyvūno ar augalo vystymosi stadija iš klasifikatoriaus
