@@ -1,7 +1,7 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/migracija/teise_gyventi_lr,,,,,,,,,,,,,Duomenys apie trečiųjų šalių piliečius
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,id,,,3,open,,Duomenys apie trečiųjų šalių piliečių prašymus išduoti ar pakeisti leidimą laikinai gyventi Lietuvos Respublikoje,
+,,,,Prasymas,,,id,,,4,open,,Duomenys apie trečiųjų šalių piliečių prašymus išduoti ar pakeisti leidimą laikinai gyventi Lietuvos Respublikoje,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,pateikimas,date,D,,,4,open,,Prašymo pateikimo data,
 ,,,,,prasymo_registracija,date,D,,,4,open,,Prašymo registracijos data,
@@ -14,7 +14,7 @@
 ,,,,,skubus_prasymas,boolean,,,,4,open,,Prašymo nagrinėjimo tvarka,
 ,,,,,skyrius,string,,,,3,open,,Prašymo būsenos sukūrimo vieta,
 ,,,,,,,,,,,,,,
-,,,,Sprendimas,,,id,,,3,open,,Duomenys apie prieglobsčio gavėjus,
+,,,,Sprendimas,,,id,,,4,open,,Duomenys apie Migracijos departamento sprendimus trečiųjų šalių piliečiams išduoti arba pakeisti leidimą ar pažymėjimą laikinai gyventi Lietuvos Respublikoje,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sprendimo_registracija,date,D,,,4,open,,Sprendimo registracijos data,
 ,,,,,sprendimas,string,,,,4,open,,Migracijos departamento sprendimas prašytojui,
