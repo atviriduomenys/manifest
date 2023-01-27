@@ -128,7 +128,7 @@ datasets/gov/aaa/vandens_naudojimas.csv
 datasets/gov/vlk/veiklos_efektyvumo_rodikliai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/sukelejai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/atvejai.csv
-datasets/gov/vstt/saugomu_ter_kadastras.csv
-datasets/gov/vstt/saugojamos_rusys.csv
-datasets/gov/vstt/natura2000.csv
+datasets/gov/vstt/teritorijos/saugomu_ter_kadastras.csv
+datasets/gov/vstt/rusys/saugojamos_rusys.csv
+datasets/gov/vstt/natura2000/natura2000.csv
 datasets/gov/nma/buveines.csv
