@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vsst/rusys,,,,,,,,,,,,,"Saugojamos rūšys,Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
+,datasets/gov/vstt/rusys,,,,,,,,,,,,,"Saugojamos rūšys,Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Rusis,,,,id,,4,,,Saugojamos rūšys,"Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
