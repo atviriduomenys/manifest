@@ -17,7 +17,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Sprendimas,,,id,,,4,open,,Duomenys apie Migracijos departamento sprendimus trečiųjų šalių piliečiams išduoti arba pakeisti leidimą ar pažymėjimą laikinai gyventi Lietuvos Respublikoje,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sprendimo_registracija,date,D,,,4,open,,Sprendimo registracijos data,
-,,,,,sprendimas,string,,,,4,open,,Migracijos departamento sprendimas prašytojui,
+,,,,,sprendimas,string,,,,3,open,,Migracijos departamento sprendimas prašytojui,
+
 ,,,,,pilietybe,string,,,,3,open,,Sprendimą gavusio asmens pilietybė,
 ,,,,,amziaus_grupe,string,,,,3,open,,Sprendimą gavusio asmens amžiaus grupė,
 ,,,,,lytis,string,,,,4,,,Sprendimą gavusio asmens lytis,
