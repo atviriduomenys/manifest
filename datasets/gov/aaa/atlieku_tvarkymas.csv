@@ -5,8 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,metai,date,Y,,,4,open,,Metai,Ataskaitiniai metai
 ,,,,,atl_kodas,integer,,,,3,open,,Atliekos kodas,"Atliekų klasifikavimo ir atitinkamo kodo pasirinkimo tvarka išdėstyta Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999 m. liepos 14 d. įsakymu Nr. 217 ""Dėl atliekų tvarkymo taisyklių patvirtinimo"", 1 priede"
 ,,,,,pavojingumas,boolean,,,,4,open,,Pavojingumas,"* žymimos pavojingosios atliekos, pagal Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999 m. liepos 14 d. įsakymu Nr. 217 ""Dėl atliekų tvarkymo taisyklių patvirtinimo"", 1 priedą "
-,,,,,,,,,TRUE,,,,,
-,,,,,,,,,FALSE,,,,,
 ,,,,,atl_pavad,string,,,,3,open,,Atliekos pavadinimas,"pagal Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999 m. liepos 14 d. įsakymu Nr. 217 ""Dėl atliekų tvarkymo taisyklių patvirtinimo"", 1 priedą "
 ,,,,,stat_kodas,integer,,,,3,open,,Statistinis kodas,pagal Europos Parlamento ir Tarybos reglamentą (EB) Nr. 2150/2002
 ,,,,,stat_kodo_pavad,string,,,,3,open,,Statistinio kodo pavadinimas,pagal Europos Parlamento ir Tarybos reglamentą (EB) Nr. 2150/2003
