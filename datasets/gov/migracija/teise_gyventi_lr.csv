@@ -12,7 +12,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""M""",,open,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,skubus_prasymas,boolean,,,,4,open,,Prašymo nagrinėjimo tvarka,
-,,,,,skyrius,string,,,,3,open,,Prašymo būsenos sukūrimo vieta,
+,,,,,skyrius,string,,,,4,open,,Prašymo būsenos sukūrimo vieta,
+
 ,,,,,,,,,,,,,,
 ,,,,Sprendimas,,,id,,,4,open,,Duomenys apie Migracijos departamento sprendimus trečiųjų šalių piliečiams išduoti arba pakeisti leidimą ar pažymėjimą laikinai gyventi Lietuvos Respublikoje,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
