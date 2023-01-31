@@ -2,7 +2,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/aaa/atlieku_tvarkymas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,AtliekuSusidarymasTvarkymas,,,,,,,,,Atliekų susidarymo ir tvarkymo duomenys,
-,,,,,eil_nr,string,,,,4,open,,Eilės nr. ,
 ,,,,,metai,date,Y,,,4,open,,Metai,Ataskaitiniai metai
 ,,,,,atl_kodas,integer,,,,3,open,,Atliekos kodas,"Atliekų klasifikavimo ir atitinkamo kodo pasirinkimo tvarka išdėstyta Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999 m. liepos 14 d. įsakymu Nr. 217 ""Dėl atliekų tvarkymo taisyklių patvirtinimo"", 1 priede"
 ,,,,,pavojingumas,boolean,,,,4,open,,Pavojingumas,"* žymimos pavojingosios atliekos, pagal Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999 m. liepos 14 d. įsakymu Nr. 217 ""Dėl atliekų tvarkymo taisyklių patvirtinimo"", 1 priedą "
