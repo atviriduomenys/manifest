@@ -9,4 +9,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,suma,number,,,,2,open,,Kompensacijos suma,Eurais
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,komunaline_paslauga,string,,,,3,open,,Kompensacijos paslaugos reikšmės pavadinimas,
-,,,,,savivaldybe,string,,,,3,open,,Savivaldybės pavadinimas,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
