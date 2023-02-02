@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/nma/natura2000_2015,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Natura2000,,,,,,,,,"Lietuvos kaimo plėtros programos 2014-2020 priemonė ""Natura 2000 išmokos ir su Bendrąja vandens pagrindų direktyva susijusios išmokos"", pasėliai, 2015 m.",
+,,,,Natura2015,,,,,,,,,"Lietuvos kaimo plėtros programos 2014-2020 priemonė ""Natura 2000 išmokos ir su Bendrąja vandens pagrindų direktyva susijusios išmokos"", pasėliai, 2015 m.",
 ,,,,,pareiskejo_tipas,string,,,,4,open,,Pareiškėjo tipas,
 ,,,,,,enum,,,"""Fizinis""",,,,Fizinis asmuo,
 ,,,,,,,,,"""Juridinis""",,,,Juridinis asmuo,
