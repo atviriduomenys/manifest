@@ -19,12 +19,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
 ,,,,,statuso_ta,string,,,,4,open,,Aktas,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
 ,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
-,,,,,,enum,,,1,,,,Rezervatai,
-,,,,,,,,,2,,,,Draustiniai,
-,,,,,,,,,3,,,,Parkai,
-,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
-,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry,,,,3,open,,Ploto geometrija,
@@ -55,6 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
@@ -98,6 +93,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
@@ -119,10 +115,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,,,,,,,,,,
 ,,,,,porus,integer,,,,4,open,,Botaninių gamtos paveldo objektų porūšiai,
-,,,,,,enum,,,2,,,,Augalų bendrijos,
+,,,,,,enum,,,1,,,,Saugomų augalų ir grybų rūšių augavietės,
+,,,,,,,,,2,,,,Augalų bendrijos,
+,,,,,,,,,3,,,,Dendrologiniai rinkiniai,
+,,,,,,,,,4,,,,Parkai ir skverai,
 ,,,,,,,,,5,,,,Medžiai ir krūmai,
+,,,,,,,,,6,,,,Medžių grupės,
 ,,,,,objektu_rusys,integer,,,,4,open,,Botaninių gamtos objektų rūšys,Botaninių gamtos paveldo objektų medžių ir krūmų porūšio objektų rūšys kai porus lygu 5 (Medžiai ir krūmai) 
 ,,,,,,enum,,,1,,,,Ąžuolai,
 ,,,,,,,,,2,,,,Pušys,
@@ -239,6 +238,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,19,,,,Bukai,
 ,,,,,,,,,20,,,,Klevai,
 ,,,,,,,,,21,,,,Gluosniai,
+,,,,,,,,,22,,,,Riešutmedžiai,
+,,,,,,,,,23,,,,Ievos,
+,,,,,,,,,24,,,,Beržai,
+,,,,,,,,,25,,,,Šermukšniai,
+,,,,,,,,,26,,,,Kėniai,
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,skelbejas,string,,,,2,open,,Paskelbusi institucija,Objektą saugomu paskelbė (paskelbusi – institucija)
@@ -334,6 +338,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybinis,
+,,,,,,,,,2,,,,Savivaldybės,
 ,,,,,,,,,3,,,,Konservacinio prioriteto funkcinė zona – rezervatas,
 ,,,,,draust_pobud,integer,,,,2,open,,Draustinio pobūdis,Draustinio pobūdis – gamtinis kultūrinis  kompleksinis (subtype)
 ,,,,,draust_rus,integer,,,,2,open,,Draustinio rūšis,Draustinio rūšis (geologinis geomorfologinis t.t.)
@@ -373,6 +378,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
 ,,,,,,enum,,,0,,,,Nėra duomenų,
@@ -396,18 +402,20 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,FunkcinioPrioritetoZona,,,id,,,4,,,Funkcinio prioriteto zonos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,,enum,,,"""np1""",,,,Nacionalinis parkas,
-,,,,,,,,,"""np2""",,,,Regioninis parkai,
-,,,,,,,,,"""np4""",,,,Biosferos rezervatas,
-,,,,,,,,,"""np5""",,,,Biosferos poligonas,
+,,,,,,enum,,,"""nz12""",,,,Ekologinės apsaugos prioriteto,
+,,,,,,,,,"""nz6""",,,,Rekreacinio prioriteto zona,
+,,,,,,,,,"""nz7""",,,,Ūkinio prioriteto zona,
+,,,,,,,,,"""nz8""",,,,Miškų ūkio prioriteto zona,
+,,,,,,,,,"""nz9""",,,,Žemės ūkio prioriteto zona,
+,,,,,,,,,"""nz10""",,,,Vandens ūkio prioriteto zona,
+,,,,,,,,,"""nz11""",,,,Kitos paskirties prioriteto zona,
+,,,,,,,,,"""nz13""",,,,Gyvenamosios paskirties prioriteto zona,
+,,,,,,,,,"""nz15""",,,,Ekosistemų atkūrimo prioriteto zona,
 ,,,,,pavadinimas,string,,,,4,open,,Zonos pavadinimas,
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,st_gkodas,string,,,,4,open,,Teritorijos kodas,Saugomos teritorijos kuriai priklauso buferinės apsaugos zona tipas – geokodas (visų saugomų teritorijos tipų pagal InGIS standartą klasifikatorius)
-,,,,,,enum,,,"""nr0""",,,,Valstybinis rezervatas,
-,,,,,,,,,"""nd1""",,,,Valstybinis draustinis,
-,,,,,,,,,"""nd2""",,,,Savivaldybės draustinis,
-,,,,,,,,,"""nk1""",,,,Valstybės saugomi gamtos paveldo objektas,
-,,,,,,,,,"""nk2""",,,,Savivaldybės saugomi gamtos paveldo objektas,
+,,,,,,enum,,,"""np4""",,,,Biosferos rezervatas,
+,,,,,,,,,"""np5""",,,,Biosferos poligonas,
 ,,,,,,,,,"""np1""",,,,Nacionalinis parkas,
 ,,,,,,,,,"""np2""",,,,Regioninis parkas,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
@@ -446,7 +454,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GeologinisGpoPlotas,,,id,,,4,,,Geologiniai GPO Plot,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,objektu_rusys,integer,,,,4,open,,Geologinių objektų rūšys,
 ,,,,,,enum,,,1,,,,Rieduliai,
@@ -514,7 +524,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GeologinisGpoTaskas,,,id,,,4,,,Geologiniai GPO Taškai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,objektu_rusys,integer,,,,4,open,,Geologinių objektų rūšys,
 ,,,,,,enum,,,1,,,,Rieduliai,
@@ -583,7 +595,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GeomorfologinisGpoPlotas,,,id,,,4,,,Geomorfologiniai GPO Plotai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,objektu_rusys,integer,,,,4,open,,Geomorfologinių objektų rūšys,
 ,,,,,,enum,,,1,,,,Ozai,
@@ -659,7 +673,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,HidrogeologinisGpoPlotas,,,id,,,4,,,Hidrogeologiniai GPO Plotai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,objektu_rusys,integer,,,,2,open,,Hidrogeologinių objektų rūšys,"Šaltiniai, versmės"
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
@@ -728,7 +744,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,HidrografinisGpoPlotas,,,id,,,4,,,Hidrografiniai GPO Plotai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,objektu_rusys,integer,,,,4,open,,Hidrografinių objektų rūšys,
 ,,,,,,enum,,,1,,,,Ežerai,
@@ -828,6 +846,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
 ,,,,,,enum,,,0,,,,Nėra duomenų,
@@ -878,7 +897,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Rezervatas,,,id,,,4,,,Rezervatai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Rezervato pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nr0""",,,,Valstybinis,
+,,,,,,,,,"""nr1""",,,,Rezervatinė apyrubė,
+,,,,,,,,,"""nz4""",,,,Konservacinio funkcinio prioriteto zona,
 ,,,,,rezervat_pobud,integer,,,,2,open,,Rezervato pobūdis,
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybinis,
@@ -906,6 +928,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
 ,,,,,,enum,,,0,,,,Nėra duomenų,
@@ -954,6 +977,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
 ,,,,,,enum,,,0,,,,Nėra duomenų,
@@ -1000,6 +1024,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Buveinių apsaugos,
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
 ,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,istekl_bukle,string,,,,2,open,,Duomenys apie atsinaujinančių išteklių būklę,
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
@@ -1015,7 +1040,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,ZoologinisGpoPlotas,,,id,,,4,,,Zoologiniai GPO Plotai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Gamtos paveldo objekto pavadinimas,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,,enum,,,"""nk1""",,,,Valstybinis,
+,,,,,,,,,"""nk2""",,,,Savivaldybės,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,porus,integer,,,,4,open,,Zoologinių objektų porūšiai,
 ,,,,,,enum,,,1,,,,Saugomų gyvūnų rūšių radavietės,
