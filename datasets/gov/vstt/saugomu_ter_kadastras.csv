@@ -18,10 +18,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilgis,number,m,,,4,open,,Ilgis,
 ,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
 ,,,,,statuso_ta,string,,,,4,open,,Aktas,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
-,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
-,,,,,geometrija,geometry,,,,3,open,,Ploto geometrija,
+,,,,,geometrija,geometry(3346),,,,3,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
@@ -81,8 +81,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,įregistravimo į kadastrą data,Specialieji / individualieji veiklos reglamentai
-,,,,,reg_data,date,,,,4,open,,išregistravimo iš kadastro data,
-,,,,,isreg_data,date,,,,4,open,,išregistravimo priežastis,
+,,,,,reg_data,date,D,,,4,open,,išregistravimo iš kadastro data,
+,,,,,isreg_data,date,D,,,4,open,,išregistravimo priežastis,
 ,,,,,isreg_priez,string,,,,4,open,,išregistravimo teisės aktas,
 ,,,,,isreg_ta,string,,,,4,open,,išregistravimo teisės aktas,
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
@@ -192,7 +192,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,registruota,date,D,,,4,open,,įregistravimo į kadastrą data,
-,,,,,isregistruota,string,,,,2,open,,išregistravimo iš kadastro data,
+,,,,,isregistruota,date,D,,,4,open,,išregistravimo iš kadastro data,
 ,,,,,isreg_priez,string,,,,4,open,,išregistravimo priežastis,
 ,,,,,isreg_ta,string,,,,4,open,,išregistravimo teisės aktas,
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
