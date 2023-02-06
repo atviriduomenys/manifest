@@ -16,4 +16,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,patvirtinti_hektarai,number,ha,,,4,open,,Patvirtinti hektarai pagal programą,
 ,,,,,paselio_rusis,string,,,,3,open,,Pasėlio rūšis,
 ,,,,,deklaruotas_plotas,number,ha,,,4,open,,Deklaruotas plotas pagal pasėlį,
-,,,,,pareiskejas,number,,,,4,open,,Pareiškėjas,
+,,,,,pareiskejas,string,,,,4,open,,Pareiškėjas,
