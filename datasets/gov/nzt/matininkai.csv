@@ -26,6 +26,7 @@
 ,,,,,,,,,"""ŽK""",,,,žemės konsolidacijos projektų rengėjo,
 ,,,,,,,,,"""ŽR""",,,,žemės reformos žemėtvarkos projektų rengėjo,
 ,,,,,,,,,"""VP""",,,,žemės paėmimo visuomenės poreikiams projektų rengėjo,
+,,,,,,,,,"""KI""",,,,suteikiantis teisę rengti karinės infrastruktūros projektus,
 ,,,,,ispetas,date,D,,,4,open,,Įspėjimo data,"Įspėjimo apie tai, kad nepašalinus pažeidimų pažymėjimo galiojimas bus sustabdytas, data"
 ,,,,,ispejimo_terminas,date,D,,,4,open,,Įspėjimo terminas,"Terminas, iki kada įspėjus turi būti pašalinti pažeidimai"
 ,,,,,pazeid_pasalinti,date,D,,,4,open,,Pažeidimų pašalinimo data,
