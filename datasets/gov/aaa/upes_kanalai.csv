@@ -25,4 +25,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eiliskumas,integer,,,,3,open,,"Upės įtekėjimo eiliškumas","Upės, įtekančios į Baltijos jūrą ar Kuršių marias, atžvilgiu."
 ,,,,,ilgis,number,km,,,4,open,,"Upės ilgis","Geografinis Lietuvos teritorijoje"
 ,,,,,debitas,number,m^3/s,,,4,open,,"Vidutinis daugiametis vandens debitas upės žiotyse",
-,,,,,shape,"geometry(multilinestring, 3346)",,,,3,open,,Geometrinis primityvas,
+,,,,,shape,geometry(3346),,,,4,open,,Geometrinis primityvas,
