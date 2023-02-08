@@ -883,12 +883,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steigimas,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_ta,string,,,,4,open,,Teises aktas,Paukščių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
 ,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
-,,,,,,enum,,,1,,,,Rezervatai,
-,,,,,,,,,2,,,,Draustiniai,
-,,,,,,,,,3,,,,Parkai,
-,,,,,,,,,4,,,,Sklypai,
-,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
-,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,isreg_ta,string,,,,4,open,,Išregistravimo,Teisės aktas
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
