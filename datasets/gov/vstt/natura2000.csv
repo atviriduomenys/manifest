@@ -26,6 +26,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
 ,,,,,bukle,string,,,,3,open,,Vertybės būklė,
-,,,,,tikslas,string,,,,2,open,,Vertybės išsaugojimo tikslas,
+,,,,,tikslas,string,,,,3,open,,Vertybės išsaugojimo tikslas,
 ,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
 ,,,,,statusas,string,,,,2,open,,Objekto teisinis statusas,
