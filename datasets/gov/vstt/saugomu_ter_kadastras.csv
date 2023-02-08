@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
-,,,,,geometrija,geometry(3346),,,,3,open,,Ploto geometrija,
+,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
@@ -42,7 +42,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
@@ -50,7 +50,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,4,,,,Paukščių apsaugos,
 ,,,,,,,,,5,,,,Helcom,
 ,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
-,,,,,tarpt_svarba_apras,string,,,,3,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
+,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
 ,,,,,duomen_monitor,string,,,,2,open,,Monitoringas,Aplinkos stebėsenos (monitoringo) duomenys
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
@@ -61,7 +61,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos poligono funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,3,open,,Ploto geometrija,
+,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosRezervatas,,,id,,,4,,,Biosferos rezervatai,
@@ -106,7 +106,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos rezervato funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,3,open,,Ploto geometrija,
+,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,,,,,,,,,,
@@ -371,7 +371,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
@@ -448,7 +448,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,geometrija,geometry(3346),,,,3,open,,Ploto geometrija,
+,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisGpoPlotas,,,id,,,4,,,Geologiniai GPO Plot,
@@ -839,7 +839,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
@@ -921,7 +921,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
@@ -970,7 +970,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
@@ -1017,7 +1017,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Gamtos paveldo objektai,
 ,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
 ,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
-,,,,,tarpt_svarba_status,integer,,,,4,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
 ,,,,,,enum,,,0,,,,Nėra duomenų,
 ,,,,,,,,,1,,,,Unesco,
 ,,,,,,,,,2,,,,Ramsar,
