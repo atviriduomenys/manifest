@@ -7,10 +7,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,medziaga,string,,,,4,open,,Pakuotės medžiagos pavadinimas,"Pakuočių ir pakuočių atliekų tvarkymo taisyklės, patvirtintos Lietuvos Respublikos aplinkos ministro 2002-06-27 įsakymu Nr. 348, Mokesčio už aplinkos teršimą deklaracijų FR0521, FR0522, FR0523 ir FR0524 formų ir jų pildymo taisyklės, patvirtintos Valstybinės mokesčių inspekcijos prie Lietuvos Respublikos finansų ministerijos viršininko ir Lietuvos Respublikos aplinko ministro 2008 m. gruodžio 8 d. įsakymu Nr. VA-61/D1-658"
 ,,,,,,enum,,,"""Stiklinė""",,,,Stiklinė pakuotė,
 ,,,,,,,,,"""Plastikinė""",,,,Plastikinė pakuotė,
-,,,,,,,,,"""Popierinė ir kartoninė""",,,,Popierinė ir kartoninė pakuotė,
+,,,,,,,,,"""Popierinė-kartoninė""",,,,Popierinė ir kartoninė pakuotė,
 ,,,,,,,,,"""Metalinės (iš viso)""",,,,Metalinės pakuotės (iš viso),
 ,,,,,,,,,"""juodųjų metalų""",,,,Juodųjų metalų pakuotė,"Duomenys apskaičiuoti vertinimo būdu, pagal atliekų tvarkytojų teikiamų ataskaitų duomenis (Atliekų tvarkymo ir susidarymo apskaitos ir ataskaitų teikimo taisyklės). Nuo 2021 m. pagal Gamintojų ir importuotojų, tiekiančių šalies rinkai supakuotus gaminius, metinių ataskaitų duomenis."
-,,,,,,,,,"""aliuminio""",,,,Aliuminio pakuotė,"Duomenys apskaičiuoti vertinimo būdu, pagal atliekų tvarkytojų teikiamų ataskaitų duomenis (Atliekų tvarkymo ir susidarymo apskaitos ir ataskaitų teikimo taisyklės). Nuo 2021 m. pagal Gamintojų ir importuotojų, tiekiančių šalies rinkai supakuotus gaminius, metinių ataskaitų duomenis."
+,,,,,,,,,"""aliuminė""",,,,Aliuminio pakuotė,"Duomenys apskaičiuoti vertinimo būdu, pagal atliekų tvarkytojų teikiamų ataskaitų duomenis (Atliekų tvarkymo ir susidarymo apskaitos ir ataskaitų teikimo taisyklės). Nuo 2021 m. pagal Gamintojų ir importuotojų, tiekiančių šalies rinkai supakuotus gaminius, metinių ataskaitų duomenis."
 ,,,,,,,,,"""Medinė""",,,,Medinė pakuotė,
 ,,,,,,,,,"""Kombinuota (iš viso)""",,,,Kombinuota pakuotė (iš viso),
 ,,,,,,,,,"""kombinuota popierinė""",,,,kombinuota popierinė pakuotė,
