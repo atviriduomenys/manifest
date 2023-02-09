@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,galiojimas,string,,,,2,open,,Atestato galiojimo laiko ribos (jei taikoma),
 ,,,,,,,,,,,,,,
 ,,,,Korekcija,,,nr,,,4,,,Atestavimo veiksmų istoriniai įrašai,
-,,,,,nr,ref,datasets/gov/ssva/atestatai/Atestatas,,,4,open,,Kvalifikacijos atestato numeris,
+,,,,,nr,ref,Atestatas,,,4,open,,Kvalifikacijos atestato numeris,
 ,,,,,veiksmas,integer,,,,4,open,,Atestavimo etapas ar poveikio priemonė,
 ,,,,,,enum,,,1,,,,Išduotas neriboto galiojimo atestatas,
 ,,,,,,,,,2,,,,išduotas riboto galiojimo atestatas,
