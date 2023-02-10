@@ -28,4 +28,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bukle,string,,,,3,open,,Vertybės būklė,
 ,,,,,tikslas,string,,,,3,open,,Vertybės išsaugojimo tikslas,
 ,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
-,,,,,statusas,string,,,,2,open,,Objekto teisinis statusas,
+,,,,,statusas,string,,,,3,open,,Objekto teisinis statusas,
