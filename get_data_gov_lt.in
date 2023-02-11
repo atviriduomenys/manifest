@@ -135,6 +135,12 @@ datasets/gov/aaa/atlieku_tvarkymas.csv
 datasets/gov/sadm/kompensacijos.csv
 datasets/gov/migracija/teise_gyventi_lr.csv
 datasets/gov/nma/agro_paseliai_2015.csv
+datasets/gov/nma/agro_paseliai_2016.csv
+datasets/gov/nma/agro_paseliai_2017.csv
+datasets/gov/nma/agro_paseliai_2018.csv
+datasets/gov/nma/agro_paseliai_2019.csv
+datasets/gov/nma/agro_paseliai_2020.csv
+datasets/gov/nma/agro_paseliai_2021.csv
 datasets/gov/nma/mpuv_paseliai_2015.csv
 datasets/gov/nma/natura2000_paseliai_2015.csv
 datasets/gov/migracija/lt_pilietybe.csv
