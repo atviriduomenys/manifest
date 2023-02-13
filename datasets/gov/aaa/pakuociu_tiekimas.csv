@@ -17,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""kombinuota kita""",,,,kombinuota kita,
 ,,,,,,,,,"""Kita""",,,,Kita,
 ,,,,,,,,,"""Visos medžiagos""",,,,Visos medžiagos (bendras kiekis),
-,,,,,kiekis,number,t,,,4,open,,"Patiekta vidaus rinkai","Duomenys parengti pagal Gamintojų ir importuotojų, tiekiančių šalies rinkai supakuotus gaminius, metinių ataskaitų duomenis ir Mokesčio už aplinkos teršimą pakuočių atliekomis aktualių deklaracijų duomenis."
+,,,,,kiekis,integer,t,,,4,open,,"Patiekta vidaus rinkai","Duomenys parengti pagal Gamintojų ir importuotojų, tiekiančių šalies rinkai supakuotus gaminius, metinių ataskaitų duomenis ir Mokesčio už aplinkos teršimą pakuočių atliekomis aktualių deklaracijų duomenis."
