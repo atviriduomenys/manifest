@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,MetinisVeiklosPlanas,,,,,,4,,,Valstybės kontrolės metinio veiklos plano duomenys,"Valstybės kontrolės metinio veiklos plano, kuriame pateikiama informacija apie planuojamus, atliekamus auditus ir vertinimus, duomenys "
 ,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,"Produkto (audito, vertinimo, išvados, ataskaitos, projekcijos) identifikacijos numeris"
 ,,,,,plano_metai,integer,,,,2,open,,Metai,
+,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,veiklos_rusis,string,,,,4,open,,Veiklos rūšis,"Kokio pobūdžio produktas suplanuotas: veiklos auditas, finansinis auditas, atitikties auditas, Europos Sąjungos investicijų auditas, išvada  atliekant biudžeto politikos kontrolės institucijos funkcijas, vertinimas"
 ,,,,,,enum,,,"""Veiklos auditai""",,,,Veiklos auditai,"Veiklos auditai – kai vertinama audituojamo subjekto veikla ekonomiškumo, efektyvumo ir rezultatyvumo požiūriu. "
 ,,,,,,,,,"""Finansiniai auditai""",,,,Finansiniai auditai,Finansiniai auditai – kai vertinami audituojamo subjekto metinių (konsoliduotųjų) finansinių ir biudžeto vykdymo ataskaitų rinkinių duomenis ir pareiškiama nepriklausoma auditoriaus nuomonė. 
