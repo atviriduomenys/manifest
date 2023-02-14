@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilgis,number,km,,,4,open,,"Ežero, tvenkinio ilgis",
 ,,,,,plotis,number,km,,,4,open,,"Ežero, tvenkinio vidutinis plotis",
 ,,,,,linijos_ilgis,number,km,,,4,open,,Kranto linijos ilgis geografinis,
-,,,,,uppabas_uid,string,,,,4,open,,"Upės pabaseinio, kuriame yra Kadastro objektas, unikalus identifikatorius",
+,,,,,ubr_kodas,string,,,,4,open,,"Upės pabaseinio arba baseino, kuriame yra vandens objektas, kodas",
 ,,,,,vyrupes_uid,string,,,,4,open,,Tiesioginės upės unikalus identifikatorius,
 ,,,,,kiti_duomenys,string,,,,2,open,,Kiti duomenys,
 ,,,,,shape,geometry(3346),,,,4,open,,Geometrinis primityvas,
