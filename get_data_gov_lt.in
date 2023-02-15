@@ -157,6 +157,7 @@ datasets/gov/nma/mpuv_paseliai_2019.csv
 datasets/gov/nma/mpuv_paseliai_2020.csv
 datasets/gov/nma/mpuv_paseliai_2021.csv
 datasets/gov/nma/natura2000_paseliai_2015.csv
+datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/nma/natura2000_paseliai_2016.csv
 datasets/gov/nma/natura2000_paseliai_2017.csv
 datasets/gov/nma/natura2000_paseliai_2018.csv
@@ -164,3 +165,4 @@ datasets/gov/nma/natura2000_paseliai_2019.csv
 datasets/gov/nma/natura2000_paseliai_2020.csv
 datasets/gov/nma/natura2000_paseliai_2021.csv
 datasets/gov/migracija/lt_pilietybe.csv
+
