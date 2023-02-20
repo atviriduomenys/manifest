@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,bool,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Taip""",,,,Taip,
 ,,,,,,,,,,,,,,
-,,,,Istaiga,,,,,,4,,,"Gydymo įstaigų, vaistinių ir kitų įmonių sąrašas","Informacija apie gydymo įstaigas, vaistines ir kitas įmones."
+,,,,Istaiga,,,kodas,,,4,,,"Gydymo įstaigų, vaistinių ir kitų įmonių sąrašas","Informacija apie gydymo įstaigas, vaistines ir kitas įmones."
 ,,,,,kodas,integer,,,,4,open,,"Įstaigos (ASPĮ, vaistinės ir kt.) ID","Įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID), pagal kurį įstaiga identifikuojama informacinėje sistemoje Sveidra. Šis ID suteikiamas kiekvienai įstaigos veiklos vietai (filialui) skirtingas"
 ,,,,,jar,integer,,,,2,open,,Įstaigos JAR,"Įstaigos (ASPĮ, vaistinės ir kt.) Juridinių asmenų registre nurodytas juridinio asmens kodas"
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""JuridinisAsmuo"")",4,,,,

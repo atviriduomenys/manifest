@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/sadm/kompensacijos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Komunalinis,,,id,,,4,open,,Duomenys apie kompensacijas,"Duomenys apie būsto šildymo išlaidų, išlaidų geriamam ir (arba) karštam vandeniui kompensacijas praėjusiais metais"
+,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
+,,,,,skaiciavimas,date,D,,,4,open,,Kompensacijos skaičiavimo data,
+,,,,,kompensavimas,date,D,,,4,open,,Kompensavimo data,
+,,,,,suma,number,,,,2,open,,Kompensacijos suma,Eurais
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,komunaline_paslauga,string,,,,3,open,,Kompensacijos paslaugos reikšmės pavadinimas,
+,,,,,sav_kodas,string,,,,2,open,,"Savivaldybės, kur buvo išmokėta kompensacija, kodas",
+,,,,,,comment,type,,"create(property: ""sav_kodas"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
+,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,spinta:216,,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
