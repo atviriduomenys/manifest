@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rsc/registruota_veikla,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,RegistruotaVeikla,,,,,,2,,,Registruota veikla,
-,,,,,leidimo_nr,integer,,,,4,open,,Registruotos veiklos numeris,
+,,,,,leidimo_nr,string,,,,4,open,,Registruotos veiklos numeris,
 ,,,,,isduota,date,D,,,4,open,,Registruotos veiklos išdavimo data,
 ,,,,,busena,string,,,,2,open,,Registruotos veiklos būsena,
 ,,,,,,enum,,,"""Neregistruota""",,,,Neregistruota,
