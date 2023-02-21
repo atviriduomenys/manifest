@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rsc/patikrinimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Patikrinimai,,,,,,2,,,Patikrinimai,
-,,,,,akto_data,datetime,,,,4,open,,Patikrinimo akto data,
+,,,,,akto_data,date,D,,,4,open,,Patikrinimo akto data,
 ,,,,,skyriaus_id,string,,,,2,open,,Patikrinimą atlikusio RSC skyriaus identifikatorius,
 ,,,,,,enum,,,"""33""",,,,Vilnius,
 ,,,,,,,,,"""34""",,,,Kaunas,Aktyvus iki 2019-12-30
@@ -49,7 +49,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,asmens_pavad,string,,,,4,open,,Juridinio asmens pavadinimas,
 ,,,,,adresas,string,,,,4,open,,Pilnas adresas,
 ,,,,,uzs_adr,string,,,,4,open,,Adresas užsienio šalyse,
-,,,,,miesto_pozymis,integer,,,,4,open,,Požymis ar miestas,
-,,,,,miestas,string,,,,4,open,,Miesto/kaimo pavadinimas,
+,,,,,miesto_pozymis,boolean,,,,4,open,,Požymis ar miestas,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,salis,string,,,,4,open,,Valstybės pavadinimas,
