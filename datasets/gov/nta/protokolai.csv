@@ -16,7 +16,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Skubos tvarka""",,,,Skubos tvarka,
 ,,,,,nagrinejimo_priezastis,string,,Privalo_Nagrinėti_Priežastis,,3,open,,Nagrinėjimo priežastis,
 ,,,,,id,string,,Protokolo_ID,,4,open,,Protokolo ID,
-,,,,,url,string,url,Protokolo_Pilnas_Išrašas,,4,open,,Protokolo URL,
+,,,,,url,string,,Protokolo_Pilnas_Išrašas,,3,open,,Protokolo URL,
 ,,,,,paskirtas_panaikintas_teisejas,string,,Paskirtas_Panaikintas_Teisėjas,,3,public,,Paskirtas ar panaikintas teisėjas,
 ,,,,,procesinis_numeris,string,,Procesinis_Numeris,,3,open,,Procesinis numeris,
 ,,,,,gauta,date,D,Gauta,,4,open,,Gavimo data,
