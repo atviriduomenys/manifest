@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas,string,,,,4,open,,Buveinių ekosistemos grupė,
 ,,,,,geometrija,"geometry(Polygon,3346)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
-,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
+,,,,,plotas,number,ha,,,2,open,,Plotas,Plotas hektarais
 ,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
 ,,,,,statusas,string,,,,4,open,,Objekto teisinis statusas,
 ,,,,,,,,,,,,,,
@@ -19,13 +19,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,bast,string,,,,4,open,,Teritorija,Buveinių apsaugai svarbios teritorijos pavadinimas
 ,,,,,bast_kodas,ref,datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija[bast_kodas],,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
-,,,,,rusis,string,,,,4,open,,Rūšis,Rūšies lotyniškas pavadinimas
+,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
 ,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
-,,,,,tipas,string,,,,4,open,,Buveinių ekosistemos grupė,
-,,,,,geometrija,"geometry(Polygon,3346)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
+,,,,,tipas,string,,,,3,open,,Buveinių ekosistemos grupė,
+,,,,,geometrija,"geometry(Multipolygon,3346)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
-,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
+,,,,,plotas,number,ha,,,2,open,,Plotas,Plotas hektarais
 ,,,,,bukle,string,,,,3,open,,Vertybės būklė,
 ,,,,,tikslas,string,,,,3,open,,Vertybės išsaugojimo tikslas,
-,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
+,,,,,sluoksnis,string,,,,3,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
 ,,,,,statusas,string,,,,3,open,,Objekto teisinis statusas,
