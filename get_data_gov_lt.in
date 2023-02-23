@@ -68,6 +68,7 @@ datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
 datasets/gov/vlk/tlk10am.csv
 datasets/gov/vlk/drg.csv
 datasets/gov/vlk/achi.csv
+datasets/gov/vlk/stacionarines_slaugos_lovu_poreikis.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
