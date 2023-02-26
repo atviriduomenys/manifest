@@ -8,5 +8,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nr,string,,,,4,open,,Žemės sklypo ir (ar) pastato numeris gatvėje arba gyvenamojoje vietovėje,
 ,,,,,korpuso_nr,string,,,,4,open,,Korpuso numeris ,
 ,,,,,pasto_kodas,string,,,,4,open,,Pašto kodas,
-,,,,,nuo,date,D,,,4,open,,Atributų rinkinio pradžios galiojimo data,
 ,,,,,aob_nuo,date,D,,,4,open,,Objekto įregistravimo data,
