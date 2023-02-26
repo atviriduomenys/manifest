@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rc/ar/galiojanciu_objektu_kiekiai,,,,,,,,,,,,Adresų registro galiojančių objektų kiekiai mėnesio pradžiai,
+,datasets/gov/rc/ar/galobjektusk,,,,,,,,,,,,Adresų registro galiojančių objektų kiekiai mėnesio pradžiai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,ObjektuSkaicius,,,"sav_kodas, metai, menuo",,,3,,,Adresų registro galiojančių objektų kiekiai mėnesio pradžiai,
