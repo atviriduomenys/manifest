@@ -42,9 +42,6 @@ datasets/gov/rc/lis/lis_institucijos.csv
 datasets/gov/rc/lis/lis_licencijos.csv
 datasets/gov/rc/lis/lis_rusys_tipai.csv
 datasets/gov/rc/lis/lis_veiklos.csv
-datasets/gov/rc/lis/lis_pazymejimai.csv
-datasets/gov/rc/lis/lis_leidimai.csv
-datasets/gov/rc/lis/lis_kiti_dokumentai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
