@@ -23,6 +23,10 @@ datasets/gov/rc/ar/graistgyvenamojivietove.csv
 datasets/gov/rc/ar/gragatve.csv
 datasets/gov/rc/ar/graistgatve.csv
 datasets/gov/rc/ar/adresotaskas.csv
+datasets/gov/rc/ar/galiojanciu_objektu_kiekiai.csv
+datasets/gov/rc/ar/iregistruotu_objektu_skaicius.csv
+datasets/gov/rc/ar/isregistruotu_objektu_skaicius.csv
+datasets/gov/rc/ar/pakeistu_objektu_skaicius.csv
 datasets/gov/rc/jar/atributai.csv
 datasets/gov/rc/jar/buveines.csv
 datasets/gov/rc/jar/dokumentai.csv
