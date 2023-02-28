@@ -1,5 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmi/loterijos,,,,,,,,,,,,Loterijų verslo loterijų ir lošimų mokesčio deklaracijos (forma FR0583) duomenys,"Deklaraciją pildo juridiniai asmenys, organizuojantys loterijas pagal Loterijų įstatymą. Daugiau informacijos apie mokestį galite rasti Lietuvos Respublikos loterijų ir lošimų mokesčio įstatyme"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Didzioji,,,,,,3,,,Didžiųjų verslo loterijų ir lošimų mokesčio deklaracijos duomenys,"Loterija, kurios bilietai platinami visoje Lietuvos Respublikos teritorijoje ir nominalioji numatomų išplatinti bilietų vertė neribojama."
 ,,,,,ketvirtis,integer,3mo,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
