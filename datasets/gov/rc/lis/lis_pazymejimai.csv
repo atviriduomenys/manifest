@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lic_isdavimo_data,date,D,,,4,open,,Išdavimo data,
 ,,,,,lic_galioja_nuo,date,D,,,4,open,,Galiojimo data nuo,
 ,,,,,lic_galioja_iki,date,D,,,4,open,,Galiojimo data iki,
-,,,,,isd_inst,string,datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licenciją išduodanti institucija,
+,,,,,isd_inst,ref,datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licenciją išduodanti institucija,
 ,,,,,isd_inst_kodas,ref,datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Institucijos kodas,
 ,,,,,gavejo_pavadinimas,string,,,,3,open,,Gavėjo pavadinimas (fizinio asmens atveju tik įrašas „fizinis asmuo“),
 ,,,,,gavejo_kodas,string,,,,3,open,,Gavėjo kodas (fizinio asmens atveju tik įrašas „fizinis asmuo“),
