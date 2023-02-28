@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,LosimoTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų lošimo tipai,
 ,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
 ,,,,,losimo_tipas,string,,,,4,open,,Lošimo tipas,
-,,,,,,enum,,,1,,open,,Bingo,
+,,,,,,enum,,,1,,,,Bingo,
 ,,,,,,,,,2,,,,Totalizatorius,
 ,,,,,,,,,3,,,,Lažybos,
 ,,,,,,,,,4,,,,Nuotoliniai lošimai,
