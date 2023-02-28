@@ -5,9 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Suma,,,,,,4,,,"Sumos, už kurias gydymo įstaigos suteikė ambulatorinių paslaugų","Informacija apie sumas, už kurias gydymo įstaigos suteikė ambulatorinių paslaugų (pagal gydymo įstaigų įvestus į IS „Sveidra“ duomenis)"
 ,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kuri teikė paslaugas, ID"
 ,,,,,pacientu_grupe,integer,,,,4,open,,Pacientų grupė,
-,,,,,,enum,,,1,,,,,
-,,,,,,,,,2,,,,,
-,,,,,,,,,4,,,,,
+,,,,,,enum,,,1,,,,PSD,
+,,,,,,,,,2,,,,EE arba CH,
+,,,,,,,,,4,,,,OVS,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",2,open,spinta:213,,
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,
