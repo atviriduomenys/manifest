@@ -33,7 +33,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,LosimoTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų lošimo tipai,
 ,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-,,,,,losimo_tipas,string,,,,4,open,,Lošimo tipas,
+,,,,,losimo_tipas,integer,,,,4,open,,Lošimo tipas,
 ,,,,,,enum,,,1,,,,Bingo,
 ,,,,,,,,,2,,,,Totalizatorius,
 ,,,,,,,,,3,,,,Lažybos,
@@ -47,7 +47,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IrenginioTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų įrenginio tipai,"Nuo 2022-07-01 lentelė mokesčio B dalis nepildoma, visi duomenis yra A dalyje. "
 ,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-,,,,,irenginio_tipas,string,,,,4,open,,Įrenginio tipas,
+,,,,,irenginio_tipas,integer,,,,4,open,,Įrenginio tipas,
 ,,,,,,enum,,,1,,,,A katerijos lošimų automatai,
 ,,,,,,,,,2,,,,B kategorijos lošimų automatai,
 ,,,,,,,,,3,,,,Ruletė,
