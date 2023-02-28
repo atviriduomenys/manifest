@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/loterijos,,,,,,,,,,,,Loterijų verslo loterijų ir lošimų mokesčio deklaracijos (forma FR0583) duomenys,"Deklaraciją pildo juridiniai asmenys, organizuojantys loterijas pagal Loterijų įstatymą. Daugiau informacijos apie mokestį galite rasti Lietuvos Respublikos loterijų ir lošimų mokesčio įstatyme"
+,,,,,,,,,,,,,,
+,,,,Didziosios,,,,,,3,,,Didžiųjų verslo loterijų ir lošimų mokesčio deklaracijos duomenys,"Loterija, kurios bilietai platinami visoje Lietuvos Respublikos teritorijoje ir nominalioji numatomų išplatinti bilietų vertė neribojama."
+,,,,,ketvirtis,integer,3mo,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
+,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,mokescio_suma,number,,,,2,open,,Mokesčio suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
+,,,,,,,,,,,,,,
+,,,,Mazosios,,,,,,3,,,Mažųjų verslo loterijų ir lošimų mokesčio deklaracijos duomenys,"Loterija, kurios organizatorius turi savivaldybės, kurios teritorijoje organizuojama loterija, vykdomosios institucijos licenciją, išduotą vadovaujantis šio Įstatymo reikalavimais, kai loterijos bilietai platinami ir loterija organizuojama sporto varžybų, kultūros arba kito viešo renginio metu ir laimėjimai išduodami iki renginio pabaigos, ir kurios numatomų išplatinti bilietų nominali vertė neviršija 100 000 litų."
+,,,,,ketvirtis,integer,3mo,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
+,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,mokescio_suma_b_visa,number,,,,2,open,,Mokesčio suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
