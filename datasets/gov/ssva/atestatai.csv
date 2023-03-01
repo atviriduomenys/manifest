@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Atestatas,,,nr,,,4,,,PENS Ekspertų Atestatai,
 ,,,,,nr,integer,,,,4,open,,Kvalifikacijos atestato numeris,
-,,,,,gavejas,string,,,,4,open,,Ekspertas,
+,,,,,gavejas,string,,,,4,public,,Ekspertas,
 ,,,,,isdavimas,date,D,,,4,open,,Pirmojo atestato išdavimo data,
 ,,,,,atnaujinimas,date,D,,,4,open,,Naujausiojo atestato išdavimo data,
 ,,,,,statusas,integer,,,,4,open,,Atestato statusas,
