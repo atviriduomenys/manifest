@@ -8,6 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,metai,integer,,,,2,open,,Metai,Finansinio laikotarpio metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",2,open,spinta:213,,
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,Finansinio laikotarpio mėnuo
+,,,,,,comment,type,,"update(type: ""date"", ref: ""M"")",2,open,spinta:213,,
 ,,,,,pacientu_grupe,integer,,,,4,open,,Pacientų grupė,
 ,,,,,,enum,,,1,,,,PSD,
 ,,,,,,,,,2,,,,EE arba CH,
