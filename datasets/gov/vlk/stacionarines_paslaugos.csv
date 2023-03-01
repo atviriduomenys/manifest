@@ -4,13 +4,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Suma,,,,,,,,,"Sumos, už kurias gydymo įstaigos suteikė stacionarinių paslaugų (ilgalaikio, transplantacijos ir reabilitacinio gydymo)","Informacija apie sumas, už kurias gydymo įstaigos suteikė paslaugų stacionarinėmis sąlygomis (pagal gydymo įstaigų įvestus į IS „Sveidra“ duomenis)"
 ,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kuri teikė paslaugas, ID"
-,,,,,pacientu_grupe,integer,,,,4,open,,Pacientų grupė,
-,,,,,,enum,,,1,,,,PSD,
-,,,,,,,,,2,,,,EE arba CH,
-,,,,,,,,,4,,,,OVS,
+,,,,,pacientu_grupe,string,,,,4,open,,Pacientų grupė,
+,,,,,,enum,,,'LR',,,,,
+,,,,,,,,,'EEE arba CH',,,,,
+,,,,,,,,,'OVS',,,,,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"",ref: ""Y"")",2,open,spinta:213,,
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,
+,,,,,,comment,type,,"update(type: ""date"",ref: ""M"")",2,open,spinta:213,,
 ,,,,,pas_kodas,ref,/datasets/gov/vlk/paslaugos/Paslauga[kodas],,,4,open,,Paslaugos kodas,Paslaugos kodas pagal Klasifikatorių
 ,,,,,balai,number,U,,,4,open,,Suma balais,
 ,,,,,kontrastas_balais,number,U,,,4,open,,Suma balais už kontrastą,
