@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,TrRusis,,,tes_rusis_id,,,4,,,Testamentų registro testamentų rūšių klasifikatorius,
 ,,,,,tes_rusis_id,integer,,,,4,open,,Testamento rūšies identifikatorius,
 ,,,,,tes_rusis_pav,string,,,,3,open,,Testamento rūšies pavadinimas,
-,,,,,formavimo_data,date ,D,,,4,open,,Duomenų formavimo data,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,,,,,,,,,,
 ,,,,TrZyma,,,zyma_tipas,,,4,,,Testamentų registro testamentų žymų klasifikatorius,
 ,,,,,zyma_tipas,integer,,,,4,open,,Žymos tipo kodas,
