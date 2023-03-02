@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/eriavedes_ozkavedes,,,,,,,,,,,,,
+,datasets/gov/zuikvc/eriavedes_ozkavedes,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,eo,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
