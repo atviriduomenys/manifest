@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/bandos_gyvuliai,,,,,,,,,,,,,
+,datasets/gov/zuikvc/bandos_gyvuliai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,bg,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
