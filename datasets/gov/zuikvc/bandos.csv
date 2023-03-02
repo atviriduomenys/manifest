@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/bandos,,,,,,,,,,,,,
+,datasets/gov/zuikvc/bandos,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,ba,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
