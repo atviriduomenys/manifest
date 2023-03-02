@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/skerdimai_imonese,,,,,,,,,,,,,
+,datasets/gov/zuikvc/skerdimai_imonese,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,si,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
