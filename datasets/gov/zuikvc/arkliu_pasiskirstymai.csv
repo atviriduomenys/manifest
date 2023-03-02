@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/arkliu_pasiskirstymai,,,,,,,,,,,,,
+,datasets/gov/zuikvc/arkliu_pasiskirstymai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,ap,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
