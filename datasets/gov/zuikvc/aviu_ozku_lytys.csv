@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/aviu_ozku_lytys,,,,,,,,,,,,,
+,datasets/gov/zuikvc/aviu_ozku_lytys,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,aol,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
