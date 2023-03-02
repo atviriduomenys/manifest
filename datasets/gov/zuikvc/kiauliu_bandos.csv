@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,kb,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,spinta:210,,
 ,,,,,,,,,,,,,,
-,,,,KiauliuBandos,,,savivaldybe,,,2,,,Kiaulių bandų ir kiaulių skaičius pagal ūkio dydį,
+,,,,KiauliuBanda,,,savivaldybe,,,2,,,Kiaulių bandų ir kiaulių skaičius pagal ūkio dydį,
 ,,,,,savivaldybe,string,,Gyvūno bandos savivaldybės pavadinimas,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,open,spinta:216,,
