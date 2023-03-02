@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/pieniniu_karviu_ukiai,,,,,,,,,,,,,
+,datasets/gov/zuikvc/pieniniu_karviu_ukiai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,pku,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
