@@ -1,8 +1,8 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/sadm/parama_mokiniams,,,,,,,,,,,,,Socialinės Apsaugos ir Darbo Ministerijos duomenys apie mokiniams suteiktą socialinę paramą savivaldybėse (nemokamas maitinimas ir parama mokinio reikmenims įsigyti). Duomenys atnaujinami kas ketvirtį.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,ParamaMokiniui,,,id,,,4,open,,Duomenys apie paramą mokiniams,
+,,,,Aprupinimas,,,id,,,4,open,,Duomenys apie paramą mokiniams,
 ,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,savivaldybe,string,,,,2,open,,"Savivaldybė, kurioje suteikta parama",
 ,,,,,paslauga,string,,,,3,open,,Suteiktos socialinės paslaugos tipas,
@@ -10,4 +10,3 @@
 ,,,,,menuo,date,D,,,4,open,,Suteiktos paslaugos menuo,
 ,,,,,suma,number,,,,2,open,,Suteiktos paramos suma,Eurais
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-
