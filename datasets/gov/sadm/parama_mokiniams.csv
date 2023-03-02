@@ -9,4 +9,5 @@
 ,,,,,parama,string,,,,3,open,,Suteiktos paramos kategorija,
 ,,,,,menuo,date,D,,,4,open,,Suteiktos paslaugos menuo,
 ,,,,,suma,number,,,,2,open,,Suteiktos paramos suma,Eurais
-,,,,,,comment,type,,"update(type: ""money""",4,,,,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+
