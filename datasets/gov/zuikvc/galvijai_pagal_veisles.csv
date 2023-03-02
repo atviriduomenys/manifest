@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/galvijai_pagal_veisles,,,,,,,,,,,,,
+,datasets/gov/zuikvc/galvijai_pagal_veisles,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,gpv,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
