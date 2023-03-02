@@ -45,6 +45,11 @@ datasets/gov/rc/lis/lis_veiklos.csv
 datasets/gov/rc/lis/lis_pazymejimai.csv
 datasets/gov/rc/lis/lis_leidimai.csv
 datasets/gov/rc/lis/lis_kiti_dokumentai.csv
+datasets/gov/rc/tr/atsisakyti_palikimai.csv
+datasets/gov/rc/tr/priimti_testamentai.csv
+datasets/gov/rc/tr/testamentai.csv
+datasets/gov/rc/tr/testamento_zymos.csv
+datasets/gov/rc/tr/tr_klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
