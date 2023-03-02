@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,gs,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
 ,,,,,,,,,,,,,,
-,,,,GalvijuSkerdimai,,,savivaldybe,,,2,,,Galvijų skerdimai,
+,,,,GalvijuSkerdimas,,,savivaldybe,,,2,,,Galvijų skerdimai,
 ,,,,,savivaldybe,string,,Gyvūno bandos savivaldybės pavadinimas,,2,open,,Gyvūno bandos savivaldybės pavadinimas,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,,,
 ,,,,,,comment,property,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,open,,,
