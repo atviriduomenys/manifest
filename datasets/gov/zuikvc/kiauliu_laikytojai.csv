@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/zuikvc/kiauliu_laikytojai,,,,,,,,,,,,,
+,datasets/gov/zuikvc/kiauliu_laikytojai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,kl,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
