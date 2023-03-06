@@ -58,7 +58,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,IrenginioTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų įrenginio tipai,"Nuo 2022-07-01 deklaracijos B dalis nepildoma, visi duomenys yra deklaracijos A dalyje."
-,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
 
 ,,,,,irenginio_tipas,integer,,,,4,open,,Įrenginio tipas,
