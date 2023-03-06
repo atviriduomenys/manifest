@@ -5,7 +5,7 @@
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,MatininkoPazymejimas,,,nr,,,4,,,"Matininkai, geodezininkai ir žemėtvarkos planavimo dokumentų rengėjai",
-,,,,,vardas_pavarde,string,,,,2,open,,"Matininko vardas, pavardė",Pateikta tik galiojantiems pažymėjimams
+,,,,,vardas_pavarde,string,,,,2,public,,"Matininko vardas, pavardė",Pateikta tik galiojantiems pažymėjimams
 ,,,,,isduotas,date,D,,,4,open,,Kvalifikacijos pažymėjimo išdavimo data,
 ,,,,,nr,string,,,,4,open,,Kvalifikacijos pažymėjimo numeris,
 ,,,,,pagrindas,string,,,,2,open,,Pažymėjimo išdavimo pagrindas,
