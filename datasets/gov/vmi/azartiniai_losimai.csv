@@ -14,7 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,ADalis,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų A dalies duomenys,"Iki 2022-06-30 deklaracijos A dalis naudota azartiniams lošimams, bet be lošimų įrenginių."
-,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+
 ,,,,,ketvirtis,integer,3mo,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
 ,,,,,mokescio_suma,number,,,,2,open,,Mokesčio A dalies suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
