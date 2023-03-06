@@ -55,7 +55,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Ruletė,
 ,,,,,,,,,4,,,,Kortų stalai,
 ,,,,,,,,,5,,,,Kauliukų stalai,
-,,,,,pirmas,integer,U,,,4,open,,"Įrenginių skaičius sausio, balandžio, liepos, spalio mėnesiais",Pirmo ketvirčio įrenginių skaičius
-,,,,,antras,integer,U,,,4,open,,"Įrenginių skaičius vasario, gegužės, rugpjūčio, lapkričio mėnesiais",Antro ketvirčio įrenginių skaičius
-,,,,,trecias,integer,U,,,4,open,,"Įrenginių skaičius kovo, birželio, rugsėjo, gruodžio mėnesiais",Trečio ketvirčio įrenginių skaičius
+,,,,,pirmas,integer,U,,,4,open,,"Įrenginių skaičius sausio, balandžio, liepos, spalio mėnesiais",Ketvirčio pirmo mėnesio įrenginių skaičius
+,,,,,antras,integer,U,,,4,open,,"Įrenginių skaičius vasario, gegužės, rugpjūčio, lapkričio mėnesiais",Ketvirčio antro mėnesio įrenginių skaičius
+,,,,,trecias,integer,U,,,4,open,,"Įrenginių skaičius kovo, birželio, rugsėjo, gruodžio mėnesiais",Ketvirčio trečio mėnesio įrenginių skaičius
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
