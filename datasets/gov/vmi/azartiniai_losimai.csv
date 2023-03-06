@@ -30,7 +30,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pirma,number,,,,2,open,,Mokesčio B dalies ketvirčio pirmo mėnesio suma,
 
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
-,,,,,antra,number,,,,2,open,,Mokesčio B dalies ketvirčio antro mėnesio suma suma,
+,,,,,antra,number,,,,2,open,,Mokesčio B dalies ketvirčio antro mėnesio suma,
+
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,trecia,number,,,,2,open,,Mokesčio B dalies ketvirčio trečio mėnesio suma suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
