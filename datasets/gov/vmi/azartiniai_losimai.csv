@@ -41,7 +41,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,LosimoTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų lošimo tipai,
-,,,,,metai,integer,yr,,,4,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
 
 ,,,,,tipas,integer,,,,4,open,,Lošimo tipas,
