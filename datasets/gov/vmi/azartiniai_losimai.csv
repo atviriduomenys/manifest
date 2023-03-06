@@ -6,35 +6,26 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Bendrieji,,,,,,3,,,Bendrieji  azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų duomenys,
 ,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
-
 ,,,,,mokescio_suma,number,,,,2,open,,Mokesčio suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,ADalis,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų A dalies duomenys,"Iki 2022-06-30 deklaracijos A dalis naudota azartiniams lošimams, bet be lošimų įrenginių."
 ,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
-
 ,,,,,mokescio_suma,number,,,,2,open,,Mokesčio A dalies suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,BDalis,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų B dalies duomenys,"Nuo 2022-07-01  deklaracijos B dalis nepildoma, visi duomenys yra deklaracijos A dalyje. Iki 2022-06-30 deklaracijos B dalis naudota azartinių lošimų įrenginiams."
 ,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
-
 ,,,,,pirma,number,,,,2,open,,Mokesčio B dalies ketvirčio pirmo mėnesio suma,
-
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,antra,number,,,,2,open,,Mokesčio B dalies ketvirčio antro mėnesio suma,
-
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,trecia,number,,,,2,open,,Mokesčio B dalies ketvirčio trečio mėnesio suma,
-
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,bendra,number,,,,2,open,,Mokesčio B dalies bendra ketvirčių suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
@@ -42,9 +33,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,LosimoTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų lošimo tipai,
 ,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
-
 ,,,,,tipas,integer,,,,4,open,,Lošimo tipas,
 ,,,,,,enum,,,1,,,,Bingo,
 ,,,,,,,,,2,,,,Totalizatorius,
@@ -59,9 +48,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IrenginioTipas,,,,,,3,,,Azartinių lošimų verslo loterijų ir lošimų mokesčio deklaracijų įrenginio tipai,"Nuo 2022-07-01 deklaracijos B dalis nepildoma, visi duomenys yra deklaracijos A dalyje."
 ,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
-
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
-
 ,,,,,irenginio_tipas,integer,,,,4,open,,Įrenginio tipas,
 ,,,,,,enum,,,1,,,,A kategorijos lošimų automatai,
 ,,,,,,,,,2,,,,B kategorijos lošimų automatai,
