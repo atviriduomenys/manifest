@@ -27,7 +27,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
 
-,,,,,pirma,number,,,,2,open,,Mokesčio B dalies ketvirčio pirmo mėnesio suma suma,
+,,,,,pirma,number,,,,2,open,,Mokesčio B dalies ketvirčio pirmo mėnesio suma,
+
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,antra,number,,,,2,open,,Mokesčio B dalies ketvirčio antro mėnesio suma suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
