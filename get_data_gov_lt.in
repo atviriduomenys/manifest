@@ -199,4 +199,5 @@ datasets/gov/nma/natura2000_paseliai_2021.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/migracija/deportacijos.csv
 datasets/gov/sadm/parama_mokiniams.csv
+datasets/gov/vmi/loterijos.csv
 datasets/gov/vmi/azartiniai_losimai.csv
