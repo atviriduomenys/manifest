@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/vidutines_trukmes,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Trukme,,,,,,,,,"Vidutinė hospitalizuotų pacientų terapijos, chirurgijos ir psichiatrijos paslaugų grupių gydymo trukmė įstaigoje","Informacija apie vidutinę hospitalizuotų pacientų terapijos, chirurgijos ir psichiatrijos paslaugų grupių gydymo trukmę įstaigoje"
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
+,,,,,istg_id,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kuri suteikė paslaugas, ID"
+,,,,,grupe,string,,,,3,open,,Paslaugos grupė,
+,,,,,vid_trukme,number,U,,,4,open,,Vidutinė trukmė dienomis,
+,,,,,lovadieniai,number,U,,,4,open,,Lovadienių skaičius,
+,,,,,atvejai,number,U,,,4,open,,Atvejų (etapų) skaičius,
