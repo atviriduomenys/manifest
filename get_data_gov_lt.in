@@ -106,6 +106,10 @@ datasets/gov/vlk/aktyvus_gydymas.csv
 datasets/gov/vlk/ambulatorines_paslaugos.csv
 datasets/gov/vlk/stacionarines_paslaugos.csv
 datasets/gov/vlk/veiklos_efektyvumo_rodikliai.csv
+datasets/gov/vlk/drg_atvejai.csv
+datasets/gov/vlk/iplaukos.csv
+datasets/gov/vlk/vidutines_trukmes.csv
+datasets/gov/vlk/vykdymas.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -198,6 +202,12 @@ datasets/gov/nma/natura2000_paseliai_2018.csv
 datasets/gov/nma/natura2000_paseliai_2019.csv
 datasets/gov/nma/natura2000_paseliai_2020.csv
 datasets/gov/nma/natura2000_paseliai_2021.csv
+datasets/gov/nma/misko_veisimas.csv
+datasets/gov/nma/ne_zup_misko_sudetis.csv
+datasets/gov/nma/nv_bendra_informacija.csv
+datasets/gov/nma/nv_rusys.csv
+datasets/gov/nma/pareiskeju_priemones.csv
+datasets/gov/nma/zup_misko_sudetis.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/migracija/deportacijos.csv
 datasets/gov/sadm/parama_mokiniams.csv
