@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rc/ntr/ntr_kiti_klasifikatoriai,,,,,,,,,,,,Kiti NTR klasifikatoriai,
 ,,,,NtrIdTipas,,,iden_tipas,,,4,,,NTR identifikatorių tipai,
 ,,,,,iden_tipas,integer,,,,4,open,,Identifikatoriaus tipas,
-,,,,,iden_pav,string ,,,,3,open,,Pavadinimas,
+,,,,,iden_pav,string,,,,3,open,,Pavadinimas,
 ,,,,,iden_koregavimo_data,datetime,S,,,4,open,,Įrašo koregavimo data,
 ,,,,,iden_pav_en,string,,,,3,open,,Pavadinimas angliškai,
 ,,,,,,,,,,,,,,
