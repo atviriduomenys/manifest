@@ -29,7 +29,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,NtrSandorioTipas,,,sant_tipas,,,4,,,NTR sandorių tipai,
 ,,,,,sant_tipas,integer,,,,4,open,,Sandorio tipas,
 ,,,,,sant_pav,string,,,,3,open,,Pavadinimas,
-,,,,,sant_pav_i,string ,,,,3,open,,Pavadinimas (ilgas),
+,,,,,sant_pav_i,string,,,,3,open,,Pavadinimas (ilgas),
 ,,,,,sant_koregavimo_data,datetime,S,,,4,open,,Įrašo koregavimo data,
 ,,,,,,,,,,,,,,
 ,,,,NtrKainosTipas,,,sant_tipas,,,4,,,NTR leistini sandorių kainų tipai,
