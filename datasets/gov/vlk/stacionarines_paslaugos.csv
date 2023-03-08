@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/stacionarines_paslaugos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Suma,,,,,,,,,"Sumos, už kurias gydymo įstaigos suteikė stacionarinių paslaugų (ilgalaikio, transplantacijos ir reabilitacinio gydymo)","Informacija apie sumas, už kurias gydymo įstaigos suteikė paslaugų stacionarinėmis sąlygomis (pagal gydymo įstaigų įvestus į IS „Sveidra“ duomenis)"
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kuri teikė paslaugas, ID"
+,,,,,pacientu_grupe,string,,,,4,open,,Pacientų grupė,
+,,,,,,enum,,,'LR',,,,,
+,,,,,,,,,'EEE arba CH',,,,,
+,,,,,,,,,'OVS',,,,,
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"",ref: ""Y"")",2,open,spinta:213,,
+,,,,,menuo,integer,,,,2,open,,Mėnuo,
+,,,,,,comment,type,,"update(type: ""date"",ref: ""M"")",2,open,spinta:213,,
+,,,,,pas_kodas,ref,/datasets/gov/vlk/paslaugos/Paslauga[kodas],,,4,open,,Paslaugos kodas,Paslaugos kodas pagal Klasifikatorių
+,,,,,balai,number,U,,,4,open,,Suma balais,
+,,,,,kontrastas_balais,number,U,,,4,open,,Suma balais už kontrastą,
+,,,,,eurai,number,,,,2,open,,Suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,kontrastas_eurais,number,,,,2,open,,Suma eurais už kontrastą,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
