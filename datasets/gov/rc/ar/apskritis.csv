@@ -1,9 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/apskritis,,,,,,,,,,,,Adresų registras,
-,,apskritis,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla=adr_apskritys.csv,,,,,Adresų registro duomenų bazė,
-,,,,Apskritis,,,adm_kodas,,,,,,Adresų registro apskričių tekstinių duomenų rinkinys ,Apskričių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - apskritis apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,adm_kodas,integer,,ADM_KODAS,,3,open,,Apskrities identifikavimo kodas,
-,,,,,tipas,string,,TIPAS,,3,open,,Administracinio vieneto tipas,
-,,,,,pavadinimas,string,,VARDAS_K,,3,open,,Apskrities pavadinimas,
-,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
-,,,,,adm_nuo,date,,ADM_NUO,,3,open,,Objekto įregistravimo data,
+,,,,Apskritis,,,adm_kodas,,,4,,,Adresų registro apskričių tekstinių duomenų rinkinys ,Apskričių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - apskritis apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,adm_kodas,integer,,,,4,open,,Apskrities identifikavimo kodas,
+,,,,,tipas,string,,,,3,open,,Administracinio vieneto tipas,
+,,,,,santrumpa,string,,,,3,open,,Administracinio vieneto tipo santrumpa,
+,,,,,pavadinimas,string,,,,3,open,,Apskrities pavadinimas,
+,,,,,adm_nuo,date,D,,,4,open,,Objekto įregistravimo data,
