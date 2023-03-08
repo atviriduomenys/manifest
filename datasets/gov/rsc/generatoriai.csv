@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,galiojimas,string,,,,2,open,,Vežimo leidimų galiojimo statusas,
 ,,,,,,enum,,,"""eksploatuojama""",,,,Generatorius ekspoatuojamas,
 ,,,,,,,,,"""likviduota""",,,,Generatorius likviduotas,
-,,,,,model_pav,string,,,,3,open,,Generatoriaus modelio pavadinimas,
+,,,,,model_pav,string,,,,4,open,,Generatoriaus modelio pavadinimas,
 ,,,,,montav_busena,string,,,,2,open,,Generatoriaus sumontavimo būsena,
 ,,,,,,enum,,,"""Sumontuota""",,,,Sumontuota,
 ,,,,,,,,,"""Išmontuota""",,,,Išmontuota,
