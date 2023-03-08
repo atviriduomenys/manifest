@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,NtrNaudojimoBudas,,,naub_budas,,,4,,,NTR naudojimo būdai,
 ,,,,,naub_budas,integer,,,,4,open,,Naudojimo būdo kodas,
 ,,,,,naub_pav,string,,,,3,open,,Pavadinimas,
-,,,,,naub_pav_i,string ,,,,3,open,,Pavadinimas (ilgas),
+,,,,,naub_pav_i,string,,,,3,open,,Pavadinimas (ilgas),
 ,,,,,naub_koregavimo_data,date,S,,,4,open,,Įrašo koregavimo data,
 ,,,,,naub_vert_grupe,integer,,,,3,open,,Vertinimo grupė (neklasifikuota),
 ,,,,,naub_pav_en,string,,,,3,open,,Pavadinimas angliškai,
