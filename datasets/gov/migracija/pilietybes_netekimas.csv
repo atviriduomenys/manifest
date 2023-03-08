@@ -19,4 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"""update(property: """"poreiksme[]"""", type: """"array"""", source: """"Poreiksme"""")""",4,,spinta:161,,
 ,,,,,pilietybe,string,,,,2,open,,Sprendimą gavusio asmens pilietybė,
 ,,,,,,comment,property,,"""update(property: """"pilietybe[]"""", type: """"array"""", source: """"Pilietybe"""")""",4,,spinta:161,,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,amziaus_grupe,string,,,,3,open,,Sprendimą gavusio asmens amžiaus grupė,
