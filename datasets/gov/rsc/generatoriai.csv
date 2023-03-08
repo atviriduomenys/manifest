@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rsc/generatoriai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Generatorius,,,,,,2,,,Jonizuojančiosios spinduliuotės generatorių pasiskirstymas,
+,,,,GeneratoriuPasiskirstymas,,,,,,2,,,Jonizuojančiosios spinduliuotės generatorių pasiskirstymas,
 ,,,,,pagaminta,date,D,,,4,open,,Generatoriaus pagaminimo data,
 ,,,,,galiojimas,string,,,,2,open,,Vežimo leidimų galiojimo statusas,
 ,,,,,,enum,,,"""eksploatuojama""",,,,Generatorius ekspoatuojamas,
@@ -17,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Naudojamas""",,,,Naudojamas,
 ,,,,,veiklos_pav,string,,,,4,open,,Veiklos pavadinimas,Pateikiami tik medicinoje naudojami generatoriai
 ,,,,,tipas,string,,,,3,open,,Generatoriaus tipo pavadinimas,
-,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
