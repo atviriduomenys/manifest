@@ -39,4 +39,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""83""",,,,Kita,
 ,,,,,,,,,"""84""",,,,Mišri,
 ,,,,,,,,,"""85""",,,,Nežinoma,
-,,,,,srities_id,string,,,,2,open,,Asmens padalinio veiklos srities pavadinimas,
+,,,,,sritis,string,,,,2,open,,Asmens padalinio veiklos srities pavadinimas,
