@@ -12,6 +12,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iki,date,D,,,4,open,,Išmokų mokėjimo pabaigos data,
 ,,,,,mokejimas,date,D,,,4,open,,Išmokos skaičiavimo mėnuo,
 ,,,,,priskaiciuota,number,,,,2,open,,Priskaičiuota išmokų suma,
-,,,,,,comment,type,,"update(type: ""money""",4,,,,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,
 ,,,,,ismoketa,number,,,,2,open,,Išmokėta išmokų suma,
 ,,,,,,comment,type,,"update(type: ""money""",4,,,,
