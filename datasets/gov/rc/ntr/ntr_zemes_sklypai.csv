@@ -10,8 +10,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,Seniunija,string,,,,2,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
 ,,,,,,comment,type,,"create(property: ""seniunija"", type: ""ref"", ref: ""/datasets/gov/rc/ar/seniunija/Seniunija"")",2,open,,,
 ,,,,,,comment,type,,"update(property: ""seniunija.pavadinimas"", type: """")",2,,Spinta:216,,
-,,,,,pask_tipas,integer,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
-,,,,,naub_budas,integer,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
+,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
+,,,,,naub_budas,ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
 ,,,,,sklypo_pl,integer,ha,,,4,open,,Žemės sklypo plotas,Žemės sklypo plotas
 ,,,,,naudmenu_pl,integer,ha,,,4,open,,Naudmenų plotas,Bendras žemės sklype esančių žemės ūkio naudmenų žemės plotas
 ,,,,,ariamas_pl,integer,ha,,,4,open,,Ariamos žemės plotas,Žemės sklype esančios ariamos žemės naudmenos žemės plotas
