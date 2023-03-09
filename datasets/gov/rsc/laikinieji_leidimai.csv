@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paslauga,string,,,,3,open,,Laikinojo leidimo paslaugos pavadinimas,
 ,,,,,turetojo_kodas,string,,,,1,open,,Laikinojo leidimo turėtojo juridinis kodas,
 ,,,,,turetojas,string,,,,1,open,,Turėtojo pavadinimas,
-,,,,,turetojo_uzs_adr,string,,,,4,open,,Adresas užsienio šalyse,
+,,,,,turetojo_uzs_adr,string,,,,1,open,,Adresas užsienio šalyse,
 ,,,,,turetojo_salis,string,,,,4,open,,Valstybės pavadinimas,
 ,,,,,turetojo_koord,string,,,,4,open,,Juridinio asmens koordinatės,
 ,,,,,gavejo_kodas,string,,,,4,open,,Laikinojo leidimo gavėjo juridinis kodas,
