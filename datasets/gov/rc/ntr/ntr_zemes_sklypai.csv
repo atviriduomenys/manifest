@@ -12,20 +12,20 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""seniunija.pavadinimas"", type: """")",2,,Spinta:216,,
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
 ,,,,,naub_budas,ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
-,,,,,sklypo_pl,integer,ha,,,4,open,,Žemės sklypo plotas,Žemės sklypo plotas
-,,,,,naudmenu_pl,integer,ha,,,4,open,,Naudmenų plotas,Bendras žemės sklype esančių žemės ūkio naudmenų žemės plotas
-,,,,,ariamas_pl,integer,ha,,,4,open,,Ariamos žemės plotas,Žemės sklype esančios ariamos žemės naudmenos žemės plotas
-,,,,,sodu_pl,integer,ha,,,4,open,,Sodu plotas,Žemės sklype esančios sodų naudmenos žemės plotas
-,,,,,pievu_pl,integer,ha,,,4,open,,Pievų plotas,Žemės sklype esančios pievų naudmenos žemės  plotas
-,,,,,misko_pl,integer,ha,,,4,open,,Miško plotas,Žemės sklype esančios miško naudmenos žemės plotas
-,,,,,keliu_pl,integer,ha,,,4,open,,Kelių plotas,Žemės sklype esančios kelių naudmenos žemės plotas
-,,,,,uzstatytas_pl,integer,ha,,,4,open,,Užstatyta teritorija,Žemės sklype esančios užstatytos žemės plotas
-,,,,,vandens_pl,integer,ha,,,4,open,,Vandens telkinių plotas,Žemės sklype esančios vandens telkinių naudmenos žemės plotas
-,,,,,kitos_z_pl,integer,ha,,,4,open,,Kitos žemės plotas,Žemės sklype esančios kitos žemės naudmenos žemės plotas
-,,,,,zeldiniu_pl,integer,ha,,,4,open,,Želdinių plotas,Žemės sklype esančios želdinių naudmenos žemės plotas
-,,,,,pelkiu_pl,integer,ha,,,4,open,,Pelkių plotas,Žemės sklype esančios pelkių naudmenos žemės plotas
-,,,,,pazeistos_z_pl,integer,ha,,,4,open,,Pažeistos žemės plotas,Žemės sklype esančios pažeistos žemės naudmenos žemės plotas
-,,,,,nenaudojamos_z_pl,integer,ha,,,4,open,,Nenaudojamos žemės plotas,Žemės sklype esančios nenaudojamos žemės naudmenos žemės plotas
-,,,,,nusausintos_z_pl,integer,ha,,,4,open,,Nusausintos žemės plotas,Žemės sklype esančios nusausintos žemės plotas
-,,,,,drekinamos_z_pl,integer,ha,,,4,open,,Drėkinamos žemės plotas,Žemės sklype esančios drėkinamos žemės plotas
+,,,,,sklypo_pl,number,,,,3,open,,Žemės sklypo plotas,Žemės sklypo plotas
+,,,,,naudmenu_pl,number,,,,3,open,,Naudmenų plotas,Bendras žemės sklype esančių žemės ūkio naudmenų žemės plotas
+,,,,,ariamas_pl,number,,,,3,open,,Ariamos žemės plotas,Žemės sklype esančios ariamos žemės naudmenos žemės plotas
+,,,,,sodu_pl,number,,,,3,open,,Sodu plotas,Žemės sklype esančios sodų naudmenos žemės plotas
+,,,,,pievu_pl,number,,,,3,open,,Pievų plotas,Žemės sklype esančios pievų naudmenos žemės  plotas
+,,,,,misko_pl,number,,,,3,open,,Miško plotas,Žemės sklype esančios miško naudmenos žemės plotas
+,,,,,keliu_pl,number,,,,3,open,,Kelių plotas,Žemės sklype esančios kelių naudmenos žemės plotas
+,,,,,uzstatytas_pl,number,,,,3,open,,Užstatyta teritorija,Žemės sklype esančios užstatytos žemės plotas
+,,,,,vandens_pl,number,,,,3,open,,Vandens telkinių plotas,Žemės sklype esančios vandens telkinių naudmenos žemės plotas
+,,,,,kitos_z_pl,number,,,,3,open,,Kitos žemės plotas,Žemės sklype esančios kitos žemės naudmenos žemės plotas
+,,,,,zeldiniu_pl,number,,,,3,open,,Želdinių plotas,Žemės sklype esančios želdinių naudmenos žemės plotas
+,,,,,pelkiu_pl,number,,,,3,open,,Pelkių plotas,Žemės sklype esančios pelkių naudmenos žemės plotas
+,,,,,pazeistos_z_pl,number,,,,3,open,,Pažeistos žemės plotas,Žemės sklype esančios pažeistos žemės naudmenos žemės plotas
+,,,,,nenaudojamos_z_pl,number,,,,3,open,,Nenaudojamos žemės plotas,Žemės sklype esančios nenaudojamos žemės naudmenos žemės plotas
+,,,,,nusausintos_z_pl,number,,,,3,open,,Nusausintos žemės plotas,Žemės sklype esančios nusausintos žemės plotas
+,,,,,drekinamos_z_pl,number,,,,3,open,,Drėkinamos žemės plotas,Žemės sklype esančios drėkinamos žemės plotas
 ,,,,,nasumo_balas,integer,,,,3,open,,Naudmenų našumo balas,Žemės sklypo žemės naudmenų našumo balas
