@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/graapskritis,,,,,,,,,,,,Adresų registras,
-,,graapskritis,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_apskritys.json,,,,,Adresų registro duomenų bazė,
-,,,,GraApskritis,,,aps_kodas,,,,,,Adresų registro apskričių erdvinių duomenys,Apskričių erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - apskritis apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,aps_kodas,integer,,APS_KODAS,,3,open,,Apskrities kodas Registre (nekeičiamas apskrities egzistavimo laiką),
-,,,,,pavadinimas,string,,APS_PAV,,3,open,,Apskrities pavadinimas ,
-,,,,,aps_plotas,number,,APS_PLOTAS,,3,open,,Apskrities grafinis plotas (ha),
-,,,,,aps_r,date,,APS_R,,3,open,,Apskrities įrašymo į Adresų registrą data,
+,,,,GraApskritis,,,aps_kodas,,,4,,,Adresų registro apskričių erdvinių duomenys,Apskričių erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - apskritis apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,aps_kodas,integer,,,,4,open,,Apskrities kodas Registre (nekeičiamas apskrities egzistavimo laiką),
+,,,,,pavadinimas,string,,,,3,open,,Apskrities pavadinimas ,
+,,,,,aps_plotas,number,ha,,,4,open,,Apskrities grafinis plotas (ha),
+,,,,,aps_r,date,D,,,4,open,,Apskrities įrašymo į Adresų registrą data,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,apskritys,"geometry(polygon,3346)",m,,,4,open,,Apskričių ribos,
