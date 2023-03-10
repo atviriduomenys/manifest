@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sprendimo_registracija,date,D,,,4,open,,Sprendimo registracijos data,
 ,,,,,sprendimas,string,,,,3,open,,Migracijos departamento sprendimas,
-,,,,,sprendimo_pagrindas,string,,,,3,open,,Sprendimo pagrindas,
+,,,,,sprendimo_pagrindas,string,,,,2,open,,Sprendimo pagrindas,
 ,,,,,,comment,property,,"""update(property: """"sprendimo_pagrindas[]"""", type: """"array"""", source: """"Sprendimo_pagrindas"""")""",4,,spinta:161,,
 ,,,,,poreiksme,string,,,,3,open,,Sprendimo poreikšmė,
 ,,,,,,comment,property,,"""update(property: """"poreiksme[]"""", type: """"array"""", source: """"Poreiksme"""")""",4,,spinta:161,,
