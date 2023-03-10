@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/nvi/vezio_registras,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,VezysRegistras,,,,,,4,,,Lietuvos Vėžio Registras ,
+,,,,VezysRegistras,,,pranesimoid,,,4,,,Lietuvos Vėžio Registras ,
 ,,,,,pranesimoid,integer,,,,4,open,,Pranešimo ID,
 ,,,,,pacientoid,integer,,,,4,open,,Paciento ID,
 ,,,,,metai,integer,,,,2,open,,Diagnozės nustatymo metai,
