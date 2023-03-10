@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""M""",,,,Moteris,
 ,,,,,amz_gr,string,,,,3,open,,Amžiaus grupė,
 ,,,,,lok_grupe,string,,,,3,open,,Lokalizacijų grupė,
-,,,,,lok_tlk10,ref,/datasets/gov/vlk/tlk10am,,,4,open,,Lokalizacijų grupės TLK-10 kodai,
+,,,,,lok_tlk10,ref,/datasets/gov/vlk/tlk10am[tlk10amcode],,,4,open,,Lokalizacijų grupės TLK-10 kodai,
 ,,,,,ct,string,,,,3,open,,Klinikinė klasifikacija – cTNM T dalis,T – pirminis navikas
 ,,,,,cn,string,,,,3,open,,Klinikinė klasifikacija – cTNM N dalis,N – regioniniai limfmazgiai
 ,,,,,cm,string,,,,3,open,,Klininkinė klasifikacija – cTNM M dalis,M – tolimosios metastazės
