@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Veikla,,,,,,2,,,Registruota veikla su jonizuojančios spinduliuotės šaltiniais,
 ,,,,,leidimo_nr,string,,,,4,open,,Registruotos veiklos numeris,
 ,,,,,isduota,date,D,,,4,open,,Registruotos veiklos išdavimo data,
-,,,,,busena,string,,,,2,open,,Registruotos veiklos būsena,
+,,,,,busena,string,,,,4,open,,Registruotos veiklos būsena,
 ,,,,,,enum,,,"""Neregistruota""",,,,Neregistruota,
 ,,,,,,,,,"""Registruota""",,,,Registruota,
 ,,,,,,,,,"""Panaikintas registravimas""",,,,Panaikintas registravimas,
