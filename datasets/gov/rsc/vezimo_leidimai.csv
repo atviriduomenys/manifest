@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rsc/vezimo_leidimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,VezimoLeidimas,,,,,,2,,,Vežimo leidimai,
-,,,,,leidimo_nr,string,,,,4,open,,Vežimo leidimo numeris,
+,,,,,leid_nr,string,,,,4,open,,Vežimo leidimo numeris,
 ,,,,,isduota,date,D,,,4,open,,Vežimo leidimo išdavimo data,
 ,,,,,galioja_iki,date,D,,,4,open,,Vežimo leidimo galiojimo data,
 ,,,,,galiojimas,string,,,,2,open,,Vežimo leidimų galiojimo statusas,
