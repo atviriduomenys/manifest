@@ -48,7 +48,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:205",,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"manifest:1290",,
 ,,,,,org_pav,string,,,,1,open,,Juridinio asmens pavadinimas,
-,,,,,adresas,string,,,,4,open,,Pilnas adresas,
+,,,,,adresas,string,,,,2,open,,Pilnas adresas,
 ,,,,,miesto_pozymis,boolean,,,,4,open,,Požymis ar miestas,
 ,,,,,miestas,string,,,,4,open,,Miesto/kaimo pavadinimas,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
