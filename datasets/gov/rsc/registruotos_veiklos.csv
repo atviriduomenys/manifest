@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,org_pav,string,,,,1,open,,Juridinio asmens  pavadinimas,
 ,,,,,adresas,string,,,,2,open,,Pilnas adresas,
 ,,,,,miesto_pozymis,boolean,,,,4,open,,Miesto požymis,
-,,,,,miestas,string,,,,4,open,,Miesto/kaimo pavadinimas,
+,,,,,miestas,string,,,,2,open,,Miesto/kaimo pavadinimas,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,salis,string,,,,4,open,,Valstybės pavadinimas,
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Juridinio asmens koordinatės,
