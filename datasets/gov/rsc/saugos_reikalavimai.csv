@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rsc/patikrinimai,,,,,,,,,,,,,
+,datasets/gov/rsc/saugos_reikalavimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Patikrinimas,,,,,,2,,,Saugos reikalavimų vykdymo patikrinimai,
 ,,,,,akto_data,date,D,,,4,open,,Patikrinimo akto data,
