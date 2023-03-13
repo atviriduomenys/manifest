@@ -16,4 +16,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,miestas,string,,,,4,open,,Miesto/kaimo pavadinimas,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,salis,string,,,,4,open,,Valstybės pavadinimas,
-,,,,,koord,"geometry(point, 3346)",,,,4,open,,Juridinio asmens koordinatės,
+,,,,,koord,"geometry(point, 3346)",,,,3,open,,Juridinio asmens koordinatės,
