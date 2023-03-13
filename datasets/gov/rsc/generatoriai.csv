@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Pasiskirstymas,,,,,,2,,,Jonizuojančiosios spinduliuotės generatorių pasiskirstymas,
 ,,,,,pagaminta,date,D,,,4,open,,Generatoriaus pagaminimo data,
 ,,,,,statusas,string,,,,2,open,,Generatoriaus statusas,
-,,,,,,enum,,,"""eksploatuojamas""",,,,Generatorius ekspoatuojamas,
+,,,,,,enum,,,"""eksploatuojamas""",,,,Generatorius eksploatuojamas,
 ,,,,,,,,,"""utilizuotas""",,,,Generatorius utilizuotas,
 ,,,,,model_pav,string,,,,4,open,,Generatoriaus modelio pavadinimas,
 ,,,,,montav_busena,string,,,,2,open,,Generatoriaus sumontavimo būsena,
