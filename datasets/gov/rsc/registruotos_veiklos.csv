@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Panaikintas registravimas""",,,,Panaikintas registravimas,
 ,,,,,ja_kodas,string,,,,2,open,,Juridinio asmens kodas,
 ,,,,,,comment,type,,"create(property: ""ja_kodas"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,,,,
-,,,,,org_pav,string,,,,4,open,,Juridinio asmens  pavadinimas,
+,,,,,org_pav,string,,,,1,open,,Juridinio asmens  pavadinimas,
 ,,,,,adresas,string,,,,2,open,,Pilnas adresas,
 ,,,,,miesto_pozymis,boolean,,,,4,open,,Miesto požymis,
 ,,,,,miestas,string,,,,4,open,,Miesto/kaimo pavadinimas,
