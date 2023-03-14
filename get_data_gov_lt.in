@@ -193,7 +193,6 @@ datasets/gov/vstt/saugomu_ter_kadastras.csv
 datasets/gov/vstt/natura2000.csv
 datasets/gov/aaa/vandens_naudojimas.csv
 datasets/gov/rsc/vezimo_leidimai.csv
-datasets/gov/vlk/veiklos_efektyvumo_rodikliai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/sukelejai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/atvejai.csv
 datasets/gov/nma/buveines.csv
