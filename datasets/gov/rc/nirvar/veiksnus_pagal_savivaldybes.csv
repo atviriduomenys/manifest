@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/nirvar/veiksnus_pagal_savivaldybes,,,,,,,,,,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal savivaldybes,
+,,,,,,,,,,,,,,
+,,,,RibotaiVeiksnusSavivaldybe,,,sav_kodas,,,4,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal savivaldybes,
+,,,,,sav_pavadinimas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės  pavadinimas iš Adresų registro ,
+,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės kodas iš Adresų registro,
+,,,,,ribotai_veiksniu_asm_skaicius,string,,,,3,open,,Ribotai veiksnių asmenų skaičius,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

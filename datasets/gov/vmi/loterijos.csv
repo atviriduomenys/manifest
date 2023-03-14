@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/loterijos,,,,,,,,,,,,Loterijų verslo loterijų ir lošimų mokesčio deklaracijų (forma FR0583) duomenys,"Deklaraciją pildo juridiniai asmenys, organizuojantys loterijas pagal LR Loterijų įstatymą. Daugiau informacijos apie mokestį galite rasti Lietuvos Respublikos loterijų ir lošimų mokesčio įstatyme"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Didzioji,,,,,,3,,,Didžiųjų verslo loterijų ir lošimų mokesčio deklaracijų duomenys,"Loterija, kurios bilietai platinami visoje Lietuvos Respublikos teritorijoje ir nominalioji numatomų išplatinti bilietų vertė neribojama."
+,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
+,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,mokescio_suma,number,,,,2,open,,Mokesčio suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
+,,,,,,,,,,,,,,
+,,,,Mazoji,,,,,,3,,,Mažųjų verslo loterijų ir lošimų mokesčio deklaracijų duomenys,"Iki 2020-04-30: loterija, kurios organizatorius turi savivaldybės, kurios teritorijoje organizuojama loterija, vykdomosios institucijos licenciją, išduotą vadovaujantis šio Įstatymo reikalavimais, kai loterijos bilietai platinami ir loterija organizuojama sporto varžybų, kultūros arba kito viešo renginio metu ir laimėjimai išduodami iki renginio pabaigos, ir kurios numatomų išplatinti bilietų nominali vertė neviršija 30 000 eurų.
+Nuo 2020-05-01: loterija, kurios bilietai platinami sporto varžybose, kultūros arba kituose viešuose renginiuose, nominalioji numatomų išplatinti bilietų vertė neviršija 30 000 eurų, o piniginiai laimėjimai išmokami, daiktiniai laimėjimai išduodami ar neatlyginama paslauga suteikiama iš karto arba ne vėliau kaip iki renginio pabaigos."
+,,,,,ketvirtis,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, ketvirtis",
+,,,,,metai,integer,,,,2,open,,"Mokestinio laikotarpio, už kurį teikiama deklaracija, metai",
+,,,,,mokescio_suma_b_visa,number,,,,2,open,,Mokesčio suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,moketoju_sk,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
