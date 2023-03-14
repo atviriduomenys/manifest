@@ -38,6 +38,11 @@ datasets/gov/rc/jar/isregistruoti.csv
 datasets/gov/rc/jar/kiti_atributai.csv
 datasets/gov/rc/jar/ne_juridiniai_asmenys.csv
 datasets/gov/rc/jar/valdymo_organai.csv
+datasets/gov/rc/jar/iregistruoti_paramos_gavejai.csv
+datasets/gov/rc/jar/isregistruoti_paramos_gavejai.csv
+datasets/gov/rc/jar/iregistruotos_nvo.csv
+datasets/gov/rc/jar/isregistruotos_nvo.csv
+datasets/gov/rc/jar/ja_kapitalas.csv
 datasets/gov/rc/lis/lis_institucijos.csv
 datasets/gov/rc/lis/lis_licencijos.csv
 datasets/gov/rc/lis/lis_rusys_tipai.csv
