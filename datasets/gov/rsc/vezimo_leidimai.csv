@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:205",,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"manifest:1290",,
 ,,,,,gavejas,string,,,,1,open,,Radioaktyviųjų medžiagų gavėjo pavadinimas,
-,,,,,gavejo_koord,"geometry(point, 3346)",,,,4,open,,,
+,,,,,gavejo_koord,"geometry(point, 3346)",,,,3,open,,,
 ,,,,,krovinio_rus_id,string,,,,4,open,,Krovinio rūšies identifikatorius,
 ,,,,,,enum,,,"""1""",,,,Radioaktyviosios medžiagos,
 ,,,,,,,,,"""2""",,,,Radioaktyviosios atliekos,
