@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/ja_kapitalas,,,,,,,,,,,,Juridinių asmenų įstatinio kapitalo duomenys,"Duomenys apie Lietuvos Respublikos juridinių asmenų registre įregistruotų juridinių asmenų įstatinį kapitalą (kodas, pavadinimas, juridinio asmens forma, įregistravimo data, reikšmė, valiuta). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti. "
+,,,,,,,,,,,,,,
+,,,,JuridinisAsmuoKapitalas,,,ja_kodas,,,4,,,,
+,,,,,ja_kodas,integer,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas juridinių asmenų registre,
+,,,,,ja_pavadinimas,string ,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens pavadinimas juridinių asmenų registre,
+,,,,,form_kodas,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos kodas,
+,,,,,form_pavadinimas,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos pavadinimas,
+,,,,,data_nuo,date,D,,,4,open,,Įstatinio kapitalo įregistravimo data,
+,,,,,reiksme,number,,,,3,open,,Įstatinio kapitalo dydis skaičiais,
+,,,,,valiuta,string,,,,3,open,,Valiutos kodas ,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
