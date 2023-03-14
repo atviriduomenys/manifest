@@ -4,5 +4,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenama arba negyvenama patalpa, identifikavimo kodas",
 ,,,,,pat_kodas,integer,,,,4,open,,Patalpos identifikavimo kodas LR AR,
 ,,,,,aob_kodas,ref,/datasets/gov/rc/ar/pastatas/Pastatas,,,4,open,,"Pastato, kuriam priklauso patalpa, identifikavimo kodas",
-,,,,,patalpos_nr,integer,,,,4,open,,Patalpos numeris pastate ar korpuse (adreso komponentė),
+,,,,,patalpos_nr,string,,,,4,open,,Patalpos numeris pastate ar korpuse (adreso komponentė),
 ,,,,,pat_nuo,date,D,,,4,open,,Objekto įregistravimo data,
