@@ -77,6 +77,7 @@ datasets/gov/rc/nirvar/veiksnus_pagal_amziu_lyti.csv
 datasets/gov/rc/nirvar/veiksnus_pagal_apskritis.csv
 datasets/gov/rc/nirvar/veiksnus_pagal_neveiksnumo_sritis.csv
 datasets/gov/rc/nirvar/veiksnus_pagal_savivaldybes.csv
+datasets/gov/rc/vsr/klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
