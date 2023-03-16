@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/pakobjektusk,,,,,,,,,,,,Pakeistų Adresų registro objektų skaičius per mėnesį,
-,,,,PakObjektuSk,,,"savivaldybe, metai, menuo",,,3,,,Pakeistų Adresų registro objektų skaičius per mėnesį,
+,,,,PakeistuObjektuSkaicius,,,"savivaldybe, metai, menuo",,,3,,,Pakeistų Adresų registro objektų skaičius per mėnesį,
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Apskrities kodas,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės kodas,
 ,,,,,metai,number,,,,2,open,,Metai ,
