@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/vsr/klasifikatoriai,,,,,,,,,,,,Vedybų sutarčių registro (VSR) klasifikatoriai,
+,,,,,,,,,,,,,,
+,,,,Statusas,,,status,,,4,,,Sutarčių statuso klasifikatorius,
+,,,,,status,string,,,,4,open,,Dokumento statusas,
+,,,,,stat_pav,string,,,,3,open,,Dokumento statuso pavadinimas,
+,,,,,,,,,,,,,,
+,,,,Porusis,,,sut_porusis,,,4,,,Sutarčių porūšių klasifikatorius,
+,,,,,sut_porusis,string,,,,4,open,,Sutarties porūšio kodas,
+,,,,,sut_porusis_pav,string,,,,3,open,,Sutarties porūšio pavadinimas,
