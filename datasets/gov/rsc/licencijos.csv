@@ -25,3 +25,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,miesto_pozymis,boolean,,,,4,open,,Požymis ar miestas,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,salis,string,,,,4,open,,Valstybės pavadinimas,
+,,,,,koord,"geometry(point, 3346)",,,,3,open,,Licenciją gaunančio juridinio asmens koordinatės,
