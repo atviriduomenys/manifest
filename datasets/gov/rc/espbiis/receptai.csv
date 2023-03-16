@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,recepto_metai,integer,,,,2,open,,Recepto išrašymo metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,recepto_ketv,integer,,,,3,open,,Recepto išrašymo ketvirtis,
-,,,,,diagnoze,ref,/datasets/gov/vlk/tlk10am,,,4,open,,"Diagnozės (pagal TLK-10-AM** klasifikatorių), pagal kurią išrašytas receptas, kodas",
+,,,,,diagnoze,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,4,open,,"Diagnozės (pagal TLK-10-AM** klasifikatorių), pagal kurią išrašytas receptas, kodas",
 ,,,,,vaisto_tipas,string,,,,4,open,,"Skirto vaisto* tipas (vaistas, medicinos pagalbos priemonė (MPP), vardinis vaistas, ekstemporalus vaistas, kitos priemonės)",
 ,,,,,,enum,,,"""Vaistas""",,,,Vaistas,
 ,,,,,,,,,"""Medicininos pagalbos priemonė""",,,,Medicinos pagalbos priemonė,
