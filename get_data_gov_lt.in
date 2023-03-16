@@ -237,6 +237,7 @@ datasets/gov/nma/pareiskeju_priemones.csv
 datasets/gov/nma/zup_misko_sudetis.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/rsc/licencijos.csv
+datasets/gov/rsc/saugos_reikalavimai.csv
 datasets/gov/rsc/apsvitos_dozes.csv
 datasets/gov/rsc/generatoriai.csv
 datasets/gov/migracija/deportacijos.csv
