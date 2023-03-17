@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vadovu_atestatai,,,,,,,,,,,,Statinio statybos techninės veiklos pagrindinių sričių vadovų kvalifikacijos atestatų ir teisės pripažinimo dokumentų registras,
+,datasets/gov/ssva/vadovu_atestatai,,,,,,,,,,,,Statinio statybos techninės veiklos pagrindinių sričių vadovų kvalifikacijos atestatų ir teisės pripažinimo dokumentų registras,
 ,,,,,,,,,,,,,,
 ,,,,Atestatas,,,nr,,,4,,,Statinio statybos techninės veiklos pagrindinių sričių vadovų kvalifikacijos atestatų ir teisės pripažinimo dokumentų registras,
 ,,,,,id,string,,,,4,open,,Teisės ID,
