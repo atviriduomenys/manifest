@@ -2,11 +2,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rsc/apsvitos_dozes,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Doze,,,,,,2,,,Apšvitą patiriančių darbuotojų gautų apšvitos dozių pasiskirstymas,
+,,,,,id,string,,,,4,open,,Darbuotojo identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,bendra_doze,number,mSv,,,4,open,,Bendra darbuotojo apšvitos dozė,
-,,,,,akiu_doze,number,mSv,,,4,open,,Darbuotojo akių apšvitos dozė,
-,,,,,galuniu_doze,number,mSv,,,4,open,,Darbuotojo galūnių apšvitos dozė,
+,,,,,akiu_doze,number,mSv,,,4,open,,Darbuotojo akių apšvitos dozė,Null reikšmės - gauta akių apšvitos dozė nebuvo matuota
+,,,,,galuniu_doze,number,mSv,,,4,open,,Darbuotojo galūnių apšvitos dozė,Null reikšmės - gauta galūnių apšvitos dozė nebuvo matuota
 ,,,,,pareigu_gr,string,,,,2,open,,Pareigų grupės kodas,
 ,,,,,,enum,,,"""Gydytojai""",,,,Gydytojai,
 ,,,,,,,,,"""Slaugytojai""",,,,Slaugytojai,

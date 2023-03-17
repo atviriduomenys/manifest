@@ -6,6 +6,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipo_santrumpa,string,,,,3,open,,Gyvenamosios vietovės tipo trumpinys,
 ,,,,,pavadinimas_k,string,,,,3,open,,Gyvenamosios vietovės pavadinimas (kilmininko linksnyje),
 ,,,,,pavadinimas,string,,,,3,open,,Gyvenamosios vietovės pavadinimas (vardininko linksnyje),
-,,,,,sen_kodas,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,"Seniūnijos, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,"Seniūnijos, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
 ,,,,,gyv_nuo,date,D,,,4,open,,Objekto įregistravimo data,
