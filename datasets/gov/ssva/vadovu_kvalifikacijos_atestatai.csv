@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,registruota,date,D,,,4,open,,Pirmoji teisės dokumento išdavimo data,
 ,,,,,gavejas,string,,,,4,public,,Vardas Pavardė,Atestato savininkas
 ,,,,,pareigos,string,,,,3,open,,Suteikta arba pripažinta teisė - pareigos,
-,,,,,statusas,string,,,,3,open,,Suteikta arba pripažinta teisė - statinių grupės, darbo sritys ir kt.,
+,,,,,statusas,string,,,,3,open,,"Suteikta arba pripažinta teisė - statinių grupės, darbo sritys ir kt.",
 ,,,,,tipas,string,,,,4,open,,Teisės dokumento tipas,
 ,,,,,,enum,,,"""KA""",,,,Kvalifikacijos atestatas,
 ,,,,,,,,,"""TPD""",,,,Teisės pripažinimo dokumentas,
