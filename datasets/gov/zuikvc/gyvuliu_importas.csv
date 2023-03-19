@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasasets/gov/zuikvc/gyvuliu_importas,,,,,,,,,,,,,
+,,gi,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
+,,,,,,param,dist,/datasets/gov/ivpk/adp/catalog/DatasetDistribution,select(url),,,,,
+,,,,,,,,,,,,,,
+,,,,GyvuliuImportas,,,valstybe,,,2,,,Gyvulių importas,
+,,,,,valstybe,string,,Valstybės pavadinimas,,2,open,,Valstybės pavadinimas,
+,,,,,buliai,integer,U,Bulių skaičius,,4,open,,Importuotų bulių skaičius,
+,,,,,telycios,integer,U,Telyčių skaičius,,4,open,,Importuotų telyčių skaičius,
+,,,,,karves,integer,U,Karvių skaičius,,4,open,,Importuotų karvių skaičius,
+,,,,,avys,integer,U,Avių skaičius,,4,open,,Importuotų avių skaičius,
+,,,,,arkliai,integer,U,Arklių skaičius,,4,open,,Importuotų arklių skaičius,
