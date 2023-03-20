@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rsc/laikinieji_leidimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,LaikinasLeidimas,,,,,,2,,,Laikinieji leidimai vykdyti veiklą su jonizuojančiosios spinduliuotės šaltiniais,
+,,,,Leidimas,,,,,,2,,,Laikinieji leidimai vykdyti veiklą su jonizuojančiosios spinduliuotės šaltiniais,
 ,,,,,leid_nr,string,,,,4,open,,Laikinojo leidimo numeris,
 ,,,,,isduota,date,D,,,4,open,,Laikinojo leidimo išdavimo data,
 ,,,,,galioja_iki,date,D,,,4,open,,Laikinojo leidimo galiojimo pabaigos data,
@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,turetojo_kodas,string,,,,1,open,,Laikinojo leidimo turėtojo juridinis kodas,
 ,,,,,turetojas,string,,,,1,open,,Turėtojo pavadinimas,
 ,,,,,turetojo_uzs_adr,string,,,,1,open,,Adresas užsienio šalyse,
-,,,,,turetojo_salis,string,,,,3,open,,Valstybės pavadinimas,
+,,,,,turetojo_salis,string,,,,4,open,,Valstybės pavadinimas,
 ,,,,,turetojo_koord,"geometry(point, 4326)",,,,3,open,,Juridinio asmens koordinatės užsienio šalyse,
 ,,,,,gavejo_kodas,string,,,,2,open,,Laikinojo leidimo gavėjo juridinis kodas,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:205",,
