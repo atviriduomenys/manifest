@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,,,,,,,,,,
 ,,,,OffsiteWasteTransfer,,,,,,4,,,Atliekų perdavimas už objekto ribų,
-,,,,,id,number,,,,4,open,,Perduodamų atliekų Id,Perduodamų atliekų identifikacinis numeris (Eil. Nr.)
+,,,,,id,string,,,,4,open,,Perduodamų atliekų Id,Perduodamų atliekų identifikacinis numeris (Eil. Nr.)
 ,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
 ,,,,,wasteclassification,string,,,,4,open,,Atliekų klasifikacija,Atliekų klasifikacija
 ,,,,,wastetreatment,string,,,,4,open,,Atliekų naudojimas,Atliekų pašalinimas/perdirbimas
@@ -44,27 +44,27 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,,,,,,,,,,
 ,,,,PollutantRelease,,,,,,4,,,Išleidžiamų teršalų duomenys,
-,,,,,id,number,,,,4,open,,Išleidžiamų teršalų Id,Išleidžiamų teršalų identifikacinis numeris (Eil. Nr.)
-,,,,,localid,number,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,id,string,,,,4,open,,Išleidžiamų teršalų Id,Išleidžiamų teršalų identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
 ,,,,,pollutant,string,,,,4,open,,Teršalas,"Teršalo kodas, pateiktas aktyvia nuoroda pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/EPRTRPollutantCodeValue/view"
 ,,,,,mediumcode,string,,,,4,open,,Terpės kodas,Terpė (oras/vanduo) į kurią išleidžiamas teršalas
 ,,,,,quantity,number,kg,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, kilogramais per ataskaitinius metus"
-,,,,,methodcode,number,,,,4,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota/numatyta reikšmė)
+,,,,,methodcode,string,,,,4,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota/numatyta reikšmė)
 ,,,,,methodclassification,string,,,,4,open,,Metodo klasifikacija,Metodo klasifikacija
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,,,,,,,,,,
 ,,,,ProductionFacilityReport,,,,,,4,,,,
-,,,,,localid,number,,,,4,open,,Gamybos įrengimų kompleksų duomenys,
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų kompleksų duomenys,
 ,,,,,namespace,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
-,,,,,reportid,number,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
+,,,,,reportid,integer,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,,,,,,,,,,
 ,,,,ProductionInstallationPartReport,,,,,,4,,,Gamybos įrengimų duomenys,
 ,,,,,localid,string,,,,4,open,,Gamybos įrengimo Id,Gamybos įrengimo identifikacinis numeris
 ,,,,,namespace,string,,,,4,open,,Duomenis teikianti šalis,Nuoroda į duomenis teikiančią šalį
 ,,,,,category,string,,,,4,open,,Kurą deginančio įrenginio kategorija,Kurą deginančio įrenginio kategorija
-,,,,,operatinghours,number,,,,4,open,,Darbo valandos,Darbo valandų per metus skaičius
+,,,,,operatinghours,integer,,,,4,open,,Darbo valandos,Darbo valandų per metus skaičius
 ,,,,,withinrefinery,boolean,,,,4,open,,Naftos perdirbimo gamykla,Kurą deginančio įrenginio priklausymas naftos perdirbimo gamyklai
 ,,,,,productionproportion,number,,,,4,open,,Šilumos gamybos dalis tiekiama centralizuotam šildymui,Šilumos gamybos dalis tiekiama centralizuotam šildymui
-,,,,,reportid,number,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
+,,,,,reportid,integer,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
