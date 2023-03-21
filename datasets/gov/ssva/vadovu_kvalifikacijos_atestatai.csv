@@ -32,4 +32,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,8,,,,Atšaukimas,
 ,,,,,isdavimas,date,D,,,4,open,,Poveikio priemonės taikymo pradžia,
 ,,,,,galiojimas,date,D,,,4,open,,Poveikio priemonės taikymo pabaiga,
-,,,,,aprasas,array,,,,3,open,,Poveikio priemonės aprašymas,
+,,,,,aprasas[],array,,,,3,open,,Poveikio priemonės aprašymas,
