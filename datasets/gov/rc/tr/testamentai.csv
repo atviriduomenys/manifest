@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Testamentas,,,id,,,4,,,,
 ,,,,,id,integer,,,,4,open,,Registro objekto identifikavimo kodas šiame duomenų rinkinyje,
 ,,,,,pavadinimas,string,,,,3,open,,Registro objekto pavadinimas,
-,,,,,testamento_rusis,string,,,,4,open,,Testamento rūšis,
+,,,,,testamento_rusis,ref,/datasets/gov/rc/tr/tr_klasifikatoriai/TrRusis,,,4,open,,Testamento rūšis,
 ,,,,,sudaryta_uzs,integer,,,,4,open,,Ar sudarytas užsienyje,
 ,,,,,,enum,,,1,,,,Testamentas sudarytas užsienyje,
 ,,,,,,,,,0,,,,Testamentas sudarytas Lietuvoje,
