@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isdavimas,date,D,,,4,open,,Teisės dokumento išdavimo data,
 ,,,,,galiojimas,date,D,,,4,open,,Teisės dokumento galiojimo pabaiga,
 ,,,,,registracija,date,D,,,4,open,,Pirmoji teisės dokumento išdavimo data,
-,,,,,tekstas,string,,,,4,open,,Teisės dokumento tekstas,
+,,,,,dokumentas,string,,,,4,open,,Teisės dokumento tekstas,
 ,,,,,rangovo_pav,string,,,,4,open,,Rangovo pavadinimas,
 ,,,,,rangovo_kod,integer,,,,4,open,,Rangovo juridinio asmens kodas,
 ,,,,,rangovo_adr,string,,,,4,open,,Rangovo adresas,
