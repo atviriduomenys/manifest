@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Priemone,,,nr,,,4,,,Poveikio priemonės,
 ,,,,,id,string,,,,4,open,,Poveikio priemonės ID,
 ,,,,,nr,ref,Atestatas,,,4,open,,Teisės dokumento numeris,
-,,,,,spr_nr,string,,,,4,open,,Sprendimo dėl poveikio taikymo numeris,
+,,,,,spr_nr,integer,,,,4,open,,Sprendimo dėl poveikio taikymo numeris,
 ,,,,,data,date,D,,,4,open,,Sprendimo dėl poveikio taikymo data,
 ,,,,,tipas,integer,,,,4,open,,Poveikio priemonės tipas,
 ,,,,,,enum,,,1,,,,Panaikintas,
