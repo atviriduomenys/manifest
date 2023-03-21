@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Turtas,,,dok_id,,,4,,,Vedybų sutarčių registro (VSR) duomenys - pranešimai apie turto padalijimo faktą,
 ,,,,,dok_id,integer,,,,4,open,,Dokumento identifikavimo kodas šiame rinkinyje,
-,,,,,statusas,ref,datasets/gov/rc/vsr/klasifikatoriai/Statusas,,,4,open,,Dokumento statusas iš VSR sutarčių statuso klasifikatoriaus,
+,,,,,statusas,ref,/datasets/gov/rc/vsr/klasifikatoriai/Statusas,,,4,open,,Dokumento statusas iš VSR sutarčių statuso klasifikatoriaus,
 ,,,,,reg_metai,integer,,,,2,open,,Dokumento įregistravimo data (metai),
 ,,,,,reg_ketvirtis,integer,,,,2,open,,Dokumento įregistravimo data (ketvirtis),
 ,,,,,teikejas,string,,,,3,open,,Duomenų teikėjas,
