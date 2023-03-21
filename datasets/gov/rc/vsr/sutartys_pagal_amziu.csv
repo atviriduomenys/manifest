@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Amzius,,,dok_id,,,4,,,Vedybų sutarčių registro (VSR) duomenys apie vedybų sutartis pagal pasirašančių šalių amžių,
 ,,,,,dok_id,integer,,,,4,open,,Dokumento identifikavimo kodas šiame rinkinyje,
-,,,,,porusis,ref,datasets/gov/rc/vsr/klasifikatoriai/Porusis,,,4,open,,Sutarties porūšis iš VRS sutarčių porūšių klasifikatoriaus ,
+,,,,,porusis,ref,/datasets/gov/rc/vsr/klasifikatoriai/Porusis,,,4,open,,Sutarties porūšis iš VRS sutarčių porūšių klasifikatoriaus ,
 ,,,,,lytis,string,,,,4,open,,Asmens lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
