@@ -35,12 +35,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,quantity,number,t,,,4,open,,Visos atliekos,"Visų atliekų kiekis, tonomis per ataskaitinius metus"
 ,,,,,methodcode,string,,,,4,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota reikšmė)
 ,,,,,methodclassification,string,,,,4,open,,Metodo klasifikacija,Metodo klasifikacija
-,,,,,nameofreceiver,string,,,,,open,,Gavėjo pavadinimas,Atliekų gavėjo pavadinimas
-,,,,,receiver_streetname,string,,,,,private,,Gavėjo adresas,Gatvės pavadinimas
-,,,,,receiver_buildingnumber,string,,,,,private,,Gavėjo adresas,Namo numeris
-,,,,,receiver_city,string,,,,,private,,Gavėjo adresas,Miestas
-,,,,,receiver_postalcode,string,,,,,private,,Gavėjo adresas,Pašto kodas
-,,,,,receiver_countryCode,string,,,,,private,,Gavėjo šalies kodas,Pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/CountryCodeValue/view
+,,,,,nameofreceiver,string,,,,,open,4,Gavėjo pavadinimas,Atliekų gavėjo pavadinimas
+,,,,,countrycode,string,,,,,open,4,Gavėjo šalies kodas,Pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/CountryCodeValue/view
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,,,,,,,,,,
 ,,,,PollutantRelease,,,,,,4,,,Išleidžiamų teršalų duomenys,
