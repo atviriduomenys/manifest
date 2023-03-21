@@ -237,6 +237,7 @@ datasets/gov/nma/nv_rusys.csv
 datasets/gov/nma/pareiskeju_priemones.csv
 datasets/gov/nma/zup_misko_sudetis.csv
 datasets/gov/migracija/lt_pilietybe.csv
+datasets/gov/rsc/laikinieji_leidimai.csv
 datasets/gov/rsc/licencijos.csv
 datasets/gov/rsc/registruotos_veiklos.csv
 datasets/gov/rsc/saugos_reikalavimai.csv
