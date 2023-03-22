@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vatzum/grudu_sandeliai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sandelis,,,licencijos_nr,,,4,open,,Pateikiama informacija (adresas,
+,,,,,licencijos_nr,string,,,,2,open,,Eilės numeris,
+,,,,,licencijos_data,date,D,,,4,open,,Licencijos data,
+,,,,,grudu_rusis_ir_kiekis,string,,,,1,open,,Sprendimo registracijos data,
+,,,,,ukio_subjekto_pav,string,,,,3,open,,Ūkio subjekto pavadinimas,
+,,,,,adresas,string,,,,1,open,,Ūkio subjekto adresas,
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Grūdų sandėlio koordinatės (LKS),
