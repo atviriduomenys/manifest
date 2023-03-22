@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
 ,,,,,pollutant,string,,,,2,open,,Teršalas,Teršalo kodas pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/EPRTRPollutantCodeValue/view
 ,,,,,quantity,number,kg,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, esantis nuotekose prieš jų valymą"
-,,,,,methodcode,string,,,,4,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota reikšmė)
+,,,,,methodcode,string,,,,2,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota reikšmė)
 ,,,,,methodclassification,string,,,,4,open,,Metodo klasifikacija,"Metodo klasifikacija, pateikta aktyvia nuoroda: https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/MethodClassificationValue/view"
 ,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
