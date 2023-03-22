@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Sandelis,,,licencijos_nr,,,4,open,,Pateikiama informacija (adresas,
 ,,,,,licencijos_nr,string,,,,2,open,,Eilės numeris,
-,,,,,licencijos_data,date,D,,,3,open,,Licencijos data,
+,,,,,licencijos_data,date,D,,,4,open,,Licencijos data,
 ,,,,,grudu_rusis_ir_kiekis,string,,,,1,open,,Sprendimo registracijos data,
 ,,,,,ukio_subjekto_pav,string,,,,3,open,,Ūkio subjekto pavadinimas,
 ,,,,,adresas,string,,,,1,open,,Ūkio subjekto adresas,
