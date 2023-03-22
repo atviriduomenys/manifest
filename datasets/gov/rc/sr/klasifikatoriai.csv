@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/sr/klasifikatoriai,,,,,,,,,,,,Reorganizuoto Sutarčių registro (SR) archyviniai duomenys,
+,,,,,,,,,,,,,,
+,,,,SutartiesTipas,,,kodas,,,4,,,Sutarčių registro sutarčių tipų archyvinis klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Sutarties tipo identifikatorius,
+,,,,,aprasymas,string,,,,3,open,,Sutarties tipo aprašymas,
+,,,,,,,,,,,,,,
+,,,,TurtoTipas,,,kodas,,,4,,,Sutarčių registro daiktų rūšių archyvinis klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Turto tipo identifikatorius ,
+,,,,,aprasymas,string,,,,3,open,,Turto tipo aprašymas,
