@@ -62,7 +62,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mediumcode,string,,,,3,open,,Terpės kodas,Terpė (oras/vanduo) į kurią išleidžiamas teršalas
 ,,,,,quantity,number,kg,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, kilogramais per ataskaitinius metus"
 ,,,,,methodcode,string,,,,2,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota/numatyta reikšmė)
-,,,,,methodclassification,string,,,,4,open,,Metodo klasifikacija,Metodo klasifikacija
+,,,,,methodclassification,string,,,,2,open,,Metodo klasifikacija,Metodo klasifikacija
 ,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,,,,,,,,,,
