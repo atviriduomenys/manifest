@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Tinklas,,,id,,,4,open,,Pateikiama informacija (eksploatavimo vietos adresas,
 ,,,,,id,string,,,,4,open,,Eilės numeris,
-,,,,,ukio_subjekto_pav,string,,,,2,open,,Ūkio subjekto pavadinimas,
+,,,,,ukio_subjektas,string,,,,2,open,,Ūkio subjekto pavadinimas,
 ,,,,,eksploatavimo_vieta,string,,,,1,open,,Prietaiso eksploatavimo vieta,
 ,,,,,modelis,string,,,,3,open,,Prietaiso modelis,
 ,,,,,prietaiso_nr,string,,,,3,open,,Prietaiso numeris,
