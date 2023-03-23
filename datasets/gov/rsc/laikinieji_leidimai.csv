@@ -22,4 +22,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"manifest:1290",,
 ,,,,,gavejas,string,,,,1,open,,Gavėjo pavadinimas,
 ,,,,,gavejo_salis,string,,,,4,open,,Valstybės pavadinimas,
-,,,,,gavėjo_koord,"geometry(point, 3346)",,,,3,open,,Leidimą gaunančio juridinio asmens koordinatės,
+,,,,,gavejo_koord,"geometry(point, 3346)",,,,3,open,,Leidimą gaunančio juridinio asmens koordinatės,
