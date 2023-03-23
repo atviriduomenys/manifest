@@ -78,6 +78,18 @@ datasets/gov/rc/nirvar/veiksnus_pagal_apskritis.csv
 datasets/gov/rc/nirvar/veiksnus_pagal_neveiksnumo_sritis.csv
 datasets/gov/rc/nirvar/veiksnus_pagal_savivaldybes.csv
 datasets/gov/rc/vsr/klasifikatoriai.csv
+datasets/gov/rc/vsr/sutarciu_pabaigos.csv
+datasets/gov/rc/vsr/sutartys.csv
+datasets/gov/rc/vsr/sutartys_pagal_amziu.csv
+datasets/gov/rc/vsr/turto_padalijimas.csv
+datasets/gov/rc/jadis/dalyviai.csv
+datasets/gov/rc/jadis/dalyviu_sarasas.csv
+datasets/gov/rc/jadis/salys_teisines_formos.csv
+datasets/gov/rc/jadis/teisines_formos.csv
+datasets/gov/rc/jadis/uzsienio_asmenys.csv
+datasets/gov/rc/jadis/valstybes_dalyviai.csv
+datasets/gov/rc/sr/klasifikatoriai.csv
+datasets/gov/rc/sr/sutartys.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
@@ -238,6 +250,7 @@ datasets/gov/nma/nv_rusys.csv
 datasets/gov/nma/pareiskeju_priemones.csv
 datasets/gov/nma/zup_misko_sudetis.csv
 datasets/gov/migracija/lt_pilietybe.csv
+datasets/gov/aaa/isleid_perd_tersalai.csv
 datasets/gov/rsc/laikinieji_leidimai.csv
 datasets/gov/rsc/licencijos.csv
 datasets/gov/rsc/registruotos_veiklos.csv
@@ -253,3 +266,5 @@ datasets/gov/migracija/pilietybes_netekimas.csv
 datasets/gov/nvi/biobankas.csv
 datasets/gov/nvi/vezio_registras.csv
 datasets/gov/vatzum/grudu_sandeliai.csv
+datasets/gov/vatzum/grudu_analizatoriai.csv
+
