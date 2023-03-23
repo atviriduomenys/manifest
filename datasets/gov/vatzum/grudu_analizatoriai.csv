@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Eilės numeris,
 ,,,,,ukio_subjektas,string,,,,2,open,,Ūkio subjekto pavadinimas,
 ,,,,,eksploatavimo_vieta,string,,,,1,open,,Prietaiso eksploatavimo vieta,
-,,,,,modelis,string,,,,3,open,,Prietaiso modelis,
+,,,,,modelis,string,,,,4,open,,Prietaiso modelis,
 ,,,,,prietaiso_nr,string,,,,3,open,,Prietaiso numeris,
 ,,,,,skyrius,string,,,,3,open,,Regioninis skyrius,
 ,,,,,koord,"geometry(point, 3346)	",,,,4,open,,Eksploatavimo vietos koordinatės (LKS),
