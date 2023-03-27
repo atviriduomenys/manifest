@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/ssva/teritoriju_planavimo_vadovu_registras,,,,,,,,,,,,Teritorijų planavimo vadovų atestatų registras,
 ,,,,,,,,,,,,,,
 ,,,,Atestatas,,,nr,,,4,,,Teritorijų planavimo vadovų atestatai,
-,,,,,id,integer,,,,4,open,,Identifikatorius,
+,,,,,id,string,,,,4,open,,Identifikatorius,
 ,,,,,nr,integer,,,,4,open,,Atestato numeris,
 ,,,,,atnaujinimas,date,D,,,4,open,,Atestato atnaujinimo data,
 ,,,,,galiojimas,date,D,,,4,open,,Atestato galiojimo pabaiga,
