@@ -265,6 +265,8 @@ datasets/gov/sadm/ismokos_vaikams.csv
 datasets/gov/migracija/pilietybes_netekimas.csv
 datasets/gov/nvi/biobankas.csv
 datasets/gov/nvi/vezio_registras.csv
+datasets/gov/ssva/atestatai.csv
+datasets/gov/ssva/vadovu_kvalifikacijos_atestatai.csv
+datasets/gov/ssva/atestatai_teses_pripazinimo_dok.csv
 datasets/gov/vatzum/grudu_sandeliai.csv
 datasets/gov/vatzum/grudu_analizatoriai.csv
-
