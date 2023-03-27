@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isdavimas,date,D,,,4,open,,Pirmojo atestato išdavimo data,
 ,,,,,gavejas,string,,,,4,public,,Teritorijų planavimo vadovas,
 ,,,,,planavimo_dok,string,,,,3,open,,Kompleksinio teritorijų planavimo dokumentų rūšys,
-,,,,,spec_planavimo_dok,string,,,,4,open,,Specialiojo teritorijų planavimo dokumentų rūšys,
+,,,,,spec_planavimo_dok,string,,,,3,open,,Specialiojo teritorijų planavimo dokumentų rūšys,
 ,,,,,vertinimas,date,D,,,4,open,,Kvalifikacijos įvertinimo data,
 ,,,,,,,,,,,,,,
 ,,,,Priemone,,,nr,,,4,open,,,
