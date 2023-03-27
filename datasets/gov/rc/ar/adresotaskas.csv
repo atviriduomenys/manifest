@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aob_r,date,D,,,4,open,,Adreso taško įvedimo į Adresų registrą data ,
 ,,,,,aob_rk,date,D,,,4,open,,Adreso taško pakeitimo registre data,
 ,,,,,aob_atr_ko,date,D,,,4,open,,Adreso taško geometrinių charakteristikų pakeitimo data,
-,,,,,pasto_koda,string,,PASTO_KODA,,4,open,,Pašto kodas,
+,,,,,pasto_koda,string,,,,4,open,,Pašto kodas,
 ,,,,,n_koord,number,m,,,4,open,,Adreso taško platuma WGS-84 koordinačių sistemoje,
 ,,,,,e_koord,number,m,,,4,open,,Adreso taško ilguma WGS-84 koordinačių sistemoje,
 ,,,,,wgs,"geometry(point, 4326)",,,"point(n_koord, e_koord)",,,,,
