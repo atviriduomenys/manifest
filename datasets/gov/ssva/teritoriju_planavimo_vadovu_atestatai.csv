@@ -20,4 +20,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Sustabdytas""",,,,,
 ,,,,,isdavimas,date,D,,,4,open,,Poveikio priemonės taikymo pradžia,
 ,,,,,galiojimas,date,D,,,4,open,,Poveikio priemonės taikymo pabaiga,
-,,,,,aprasymas,string,,,,2,open,,Poveikio priemonės aprašymas,
+,,,,,aprasymas,string,,,,4,open,,Poveikio priemonės aprašymas,
