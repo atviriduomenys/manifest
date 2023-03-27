@@ -90,6 +90,15 @@ datasets/gov/rc/jadis/uzsienio_asmenys.csv
 datasets/gov/rc/jadis/valstybes_dalyviai.csv
 datasets/gov/rc/sr/klasifikatoriai.csv
 datasets/gov/rc/sr/sutartys.csv
+datasets/gov/rc/gr/amziu_lytis_pilietybe.csv
+datasets/gov/rc/gr/berniuku_vardai.csv
+datasets/gov/rc/gr/cba_rusys.csv
+datasets/gov/rc/gr/cm_istaigos.csv
+datasets/gov/rc/gr/mergaiciu_vardai.csv
+datasets/gov/rc/gr/moteru_vardai.csv
+datasets/gov/rc/gr/seimines_padetys.csv
+datasets/gov/rc/gr/tautybes.csv
+datasets/gov/rc/gr/vyru_vardai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
@@ -267,4 +276,6 @@ datasets/gov/nvi/biobankas.csv
 datasets/gov/nvi/vezio_registras.csv
 datasets/gov/vat/grudu_sandeliai.csv
 datasets/gov/vat/grudu_analizatoriai.csv
-
+datasets/gov/ssva/atestatai.csv
+datasets/gov/ssva/vadovu_kvalifikacijos_atestatai.csv
+datasets/gov/ssva/atestatai_teses_pripazinimo_dok.csv
