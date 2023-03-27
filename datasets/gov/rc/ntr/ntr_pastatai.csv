@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,2,open,,Savivaldybė,Savivaldybės pavadinimas
 ,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,2,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
 ,,,,,statinio_kategorija,string,,,,3,open,,Statinio kategorija,"Statinio rūšis pagal LR statybos įstatymą. Nuo statinio kategorijos priklauso koks projektas turi būti parengtas, kokie reikalavimai keliami projekto vadovui ir kitiems statybos techninės veiklos pagrindinių sričių (STVPS) vadovams ir statybą leidžiančio dokumento (SLD) privalomumas."
-,,,,,obje_tipas,string,,,,4,open,,Objekto tipas,Pastato tipas
+,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,open,,Objekto tipas,Pastato tipas
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas ,Pastato paskirtis
 ,,,,,atr_uzstatytas_plotas,number,,,,3,open,,Atributas užstatytas plotas,Pastatu užstatytas žemės plotas
 ,,,,,bendras_plotas,number,,,,3,open,,Bendras plotas,Pastato bendrasis plotas
