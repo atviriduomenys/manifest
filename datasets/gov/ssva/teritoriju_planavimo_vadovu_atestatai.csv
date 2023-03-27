@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vertinimas,date,D,,,4,open,,Kvalifikacijos įvertinimo data,
 ,,,,,,,,,,,,,,
 ,,,,Priemone,,,nr,,,4,open,,,
-,,,,,id,integer,,,,4,open,,Identifikatorius,
+,,,,,id,string,,,,4,open,,Identifikatorius,
 ,,,,,nr,ref,Atestatas,,,4,open,,Atestato numeris,
 ,,,,,tipas,string,,,,4,open,,Poveikio priemonės tipas,
 ,,,,,,enum,,,"""Panaikintas""",,,,,
