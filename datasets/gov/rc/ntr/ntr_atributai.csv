@@ -32,7 +32,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atrt_koregavimo_data,datetime,S,,,4,open,,Įrašo koregavimo data,
 ,,,,,,,,,,,,,,
 ,,,,NtrLeistinasAtributas,,,"obje_tipas, atri_kodas",,,4,,,NTR leistinų atributų klasifikatorius,
-,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjetoTipas,,,4,open,,Turto objekto tipas,
+,,,,,obje_tipas,string,,,,4,open,,Turto objekto tipas,
 ,,,,,atri_kodas,ref,NtrAtributas,,,4,open,,Atributo kodas,
 ,,,,,atrp_poz,ref,NtrAtributoPozymis,,,4,open,,Atributo pozymis,
 ,,,,,latr_eilnr,integer,,,,4,open,,Eilės numeris,
