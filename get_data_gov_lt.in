@@ -99,6 +99,12 @@ datasets/gov/rc/gr/moteru_vardai.csv
 datasets/gov/rc/gr/seimines_padetys.csv
 datasets/gov/rc/gr/tautybes.csv
 datasets/gov/rc/gr/vyru_vardai.csv
+datasets/gov/rc/hr/ikeisti_nt_objektai.csv
+datasets/gov/rc/hr/ikeisti_objektai.csv
+datasets/gov/rc/hr/kreditoriai.csv
+datasets/gov/rc/hr/sandoriai.csv
+datasets/gov/rc/hr/skolininkai.csv
+datasets/gov/rc/hr/tipu_klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
 datasets/gov/lsd/svietimas.csv
