@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rrt/amateurs,,,,,,,,,,,,,
 ,,amateurcallSign,,,,csv,,https://opendata.rrt.lt/sms/AMATEUR_CALLSIGNS.csv,"tabular(sep: "";"")",,,,,
-,,,,AmateurCallsigns,,,id,,,,,,,
+,,,,AmateurCallsigns,,,id,,,4,,,,
 ,,,,,id,integer,,ID,,4,private,,Identifikatorius,
 ,,,,,code,string,,LICENCE_TYPE,,3,open,,Leidimo pavadinimas,
 ,,,,,licence_no,string,,NUMBER,,4,open,,Leidimo numeris,
