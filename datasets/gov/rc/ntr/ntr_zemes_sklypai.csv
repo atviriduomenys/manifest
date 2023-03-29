@@ -2,14 +2,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rc/ntr/ntr_zemes_sklypai,,,,,,,,,,,,Nekilnojamojo turto registre įregistruotų žemės sklypų duomenys pagal savivaldybes,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,NtrZemesSklypas,,,dirbtinis_id,,,4,,,,
-,,,,,dirbtinis_id,integer,,,,4,open,,Objekto identifikatorius,Dirbtinis nekinojamojo turto objekto identifikatorius
-,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,Savivaldybės pavadinimas
-,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",2,open,,,
-,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
-,,,,,Seniunija,string,,,,2,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
-,,,,,,comment,type,,"create(property: ""seniunija"", type: ""ref"", ref: ""/datasets/gov/rc/ar/seniunija/Seniunija"")",2,open,,,
-,,,,,,comment,type,,"update(property: ""seniunija.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,NtrZemesSklypas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Objekto identifikatorius,Dirbtinis nekinojamojo turto objekto identifikatorius
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,2,open,,Savivaldybė,Savivaldybės pavadinimas
+,,,,,Seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,2,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
 ,,,,,naub_budas,ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
 ,,,,,sklypo_pl,number,,,,3,open,,Žemės sklypo plotas,Žemės sklypo plotas
