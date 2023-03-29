@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rrt/aircrafts,,,,,,,,,,,,,
 ,,aircrafts,,,,csv,,https://opendata.rrt.lt/sms/AIRCRAFTS.csv,"tabular(sep: "";"")",,,,,
 ,,,,Aircraft,,,id,,,4,,,,
-,,,,,id,integer,,ID,,4,private,,,
+,,,,,id,integer,,ID,,4,open,,,
 ,,,,,registration_no,string,,REGISTRATION_NO,,4,open,,Orlaivio nacionalinis ir registracijos ženklai,
 ,,,,,serial_no,string,,SERIAL_NO,,4,open,,Orlaivio serijos numeris,
 ,,,,,aircraft_model,string,,AIRCRAFT_MODEL,,4,open,,Orlaivio modelis,
