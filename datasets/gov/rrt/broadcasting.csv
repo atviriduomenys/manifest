@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rrt/broadcasting,,,,,,,,,,,,,
 ,,broadcasting,,,,csv,,https://opendata.rrt.lt/sms/BC.csv,"tabular(sep: "";"")",,,,,
 ,,,,Broadcasting,,,id,,,4,,,,
-,,,,,id,integer,,ID,,4,private,,,
+,,,,,id,integer,,ID,,4,open,,,
 ,,,,,frequency_mhz,integer,,FREQUENCY_MHZ,,4,open,,Centrinis siųstuvo dažnis,
 ,,,,,bandwidth_mhz,number,,BANDWIDTH_MHZ,,4,open,,Kanalo plotis,
 ,,,,,channel,integer,,CHANNEL,,3,open,,Kanalo numeris,
