@@ -1,8 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rrt/keliaimiestai,,,,,,,,,,,,,
 ,,keliaimiestai,,,,csv,,https://opendata.rrt.lt/static/Matavimai-2G-3G-4G-2019-2020.csv,"tabular.sep("","")",,,,,
-,,,,KeliasMiestas,,,id,,,4,,,,
-,,,,,id,integer,,ID,,4,private,,,
+,,,,KeliasMiestas,,,,,,4,,,,
 ,,,,,data_ir_laikas,datetime,S,data ir laikas,,4,open,,Data ir laikas,
 ,,,,,platuma,number,,platuma,,3,open,,"Koordinatė, platuma",
 ,,,,,ilguma,number,,ilguma,,3,open,,"Koordinatė, ilguma",
