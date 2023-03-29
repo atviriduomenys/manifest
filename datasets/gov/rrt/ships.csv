@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rrt/ships,,,,,,,,,,,,,
 ,,ships,,,,csv,,https://opendata.rrt.lt/sms/SHIPS.csv,"tabular(sep: "";"")",,,,,
 ,,,,Ship,,,id,,,4,,,,
-,,,,,id,integer,,ID,,4,private,,,
+,,,,,id,integer,,ID,,4,open,,,
 ,,,,,ship_name,string,,SHIP_NAME,,3,open,,Laivo pavadinimas arba registro numeris,
 ,,,,,callsign,string,,CALLSIGN,,4,open,,Šaukinys,
 ,,,,,mmsi,integer,,MMSI,,4,open,,MMSI numeris,
