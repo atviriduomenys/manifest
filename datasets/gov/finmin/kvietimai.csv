@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Call,,,call_id,,,4,,,Kvietimas / patvirtintas sąrašas,
 ,,,,,call_id,string,,,,4,open,,Kvietimo / patvirtinto sąrašo identifikatorius,
 ,,,,,measure,ref,Measure,,,4,open,,Priemonės identifikatorius,
-,,,,,joint_measure_id,ref,Measure[joint_measure_id],,,4,open,,Jungtinės priemonės identifikatorius,
+,,,,,joint_measure,ref,Measure[joint_measure_id],,,4,open,,Jungtinės priemonės identifikatorius,
 ,,,,,long_number,string,,,,3,open,,Pilnas numeris,
 ,,,,,short_number,string,,,,3,open,,Trumpasis numeris,
 ,,,,,name,string,,,,3,open,,Pavadinimas,
