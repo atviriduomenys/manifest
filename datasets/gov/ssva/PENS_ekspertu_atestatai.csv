@@ -54,7 +54,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""VB""",,,,Viešbučių paskirties pastatai,
 ,,,,,,,,,"""PS""",,,,Paslaugų paskirties pastatai,
 ,,,,,,,,,"""TR""",,,,Transporto paskirties pastatai,
-,,,,,,,,,"""P"""L,,,,Poilsio paskirties pastatai,
+,,,,,,,,,"""PL""",,,,Poilsio paskirties pastatai,
 ,,,,,,,,,"""SC""",,,,Specialiosios paskirties pastatai,
 ,,,,,grupe,string,,,,4,open,,Pastatų grupė,
 ,,,,,,enum,,,"""VIES""",,,,Viešoji,
