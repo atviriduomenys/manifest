@@ -1,0 +1,61 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vrk/kandidatai,,,,,,,,,,,,,
+,,resource2,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Kandidatai,,,,,,
+,,,,Kandidatas,,,kandidato_id,,,2,,,,
+,,,,,rinkimu_id,integer,,,,2,open,,Rinkimų identifikatorius,
+,,,,,rinkimu_pavad,string,,,,2,open,,Rinkimų pavadinimas,
+,,,,,rink_apyg_id,integer,,,,2,open,,Rinkimų apygardos identifikatorius,
+,,,,,apyg_id,integer,,,,2,open,,Apygardos identifikatorius,
+,,,,,apyg_nr,integer,,,,2,open,,Apygardos numeris,
+,,,,,apyg_pavad,string,,,,2,open,,Apygardos pavadinimas,
+,,,,,p_kamp_dal_id,integer,,,,2,open,,Politinės kampanijos dalyvio identifikatorius,Politinės kampanijos dalyvio ID
+,,,,,p_kamp_dal_pavad,string,,,,2,open,,Politinės kampanijos dalyvis,Politinės kampanijos dalyvio pavadinimas
+,,,,,dal_tipas,string,,,,2,open,,Politinės kampanijos dalyvio tipas,Politinės kampanijos dalyvio tipas (Politinė partija / Politinės partijos keltas kandidatų sąrašas / Visuomeninis rinkimų komitetas/ Išsikėlęs kandidatas)
+,,,,,,enum,,,"""Fizinis asmuo""",,,,Fizinis asmuo,
+,,,,,,,,,"""Kandidatas ar kandidatų sąrašas, kai yra juos iškėlusios partijos teikimas""",,,,"Kandidatas ar kandidatų sąrašas, kai yra juos iškėlusios partijos teikimas",
+,,,,,,,,,"""Kandidatas ar kandidatų sąrašas, kai nėra juos iškėlusios partijos teikimo""",,,,"Kandidatas ar kandidatų sąrašas, kai nėra juos iškėlusios partijos teikimo",
+,,,,,,,,,"""Politinė partija""",,,,Politinė partija,
+,,,,,,,,,"""Politinės partijos iškeltas kandidatas""",,,,Politinės partijos iškeltas kandidatas,
+,,,,,,,,,"""Pretendentas""",,,,Pretendentas,
+,,,,,,,,,"""Referendumo iniciatoriai""",,,,Referendumo iniciatoriai,
+,,,,,,,,,"""Rinkimų organizacija""",,,,Rinkimų organizacija,
+,,,,,,,,,"""Save iškėlęs kandidatas""",,,,Save iškėlęs kandidatas,
+,,,,,dal_reg_busena,string,,,,2,open,,Politinės kampanijos dalyvio registravimo būsena,Dalyvio registravimo būsena (Registruotas / Praradęs statusą)
+,,,,,,enum,,,"""Atstovaujamasis""",,,,Atstovaujamasis,
+,,,,,,,,,"""Praradęs PKD statusą""",,,,Praradęs PKD statusą,
+,,,,,,,,,"""Registruotas""",,,,Registruotas,
+,,,,,,,,,"""Savarankiškas""",,,,Savarankiškas,
+,,,,,ja_kodas,string,,,,2,open,,Politinės kampanijos dalyvio juridinio asmens kodas Juridinių asmenų registre,
+,,,,,kandidato_id,integer,,,,4,open,,Kandidato identifikatorius,
+,,,,,rink_kandidato_id,integer,,,,4,open,,Kandidato identifikatorius rinkimuose,
+,,,,,vardas,string,,,,3,open,,Kandidato vardas,
+,,,,,pavarde,string,,,,3,open,,Kandidato pavardė,
+,,,,,lytis,string,,,,4,open,,Kandidato lytis,Kandidato lytis (V/M)
+,,,,,,enum,,,"""V""",,,,Vyras,
+,,,,,,,,,"""M""",,,,Moteris,
+,,,,,amziaus_grupe,string,,,,4,open,,Kandidato amžiaus grupė (rinkimų dieną),"Kandidato amžiaus grupė rinkimų dieną intervalais (nuo - iki), kas 5 metai
+Amžiaus grupės: 18-24; 25-29; 30-34; 35-39; ....; 75-79; 80 +;"
+,,,,,,enum,,,"""18-24""",,,,Amžiaus grupė nuo 18 iki 24 metų,
+,,,,,,,,,"""25-29""",,,,Amžiaus grupė nuo 25 iki 29 metų,
+,,,,,,,,,"""30-34""",,,,Amžiaus grupė nuo 30 iki 34 metų,
+,,,,,,,,,"""35-39""",,,,Amžiaus grupė nuo 35 iki 39 metų,
+,,,,,,,,,"""40-44""",,,,Amžiaus grupė nuo 40 iki 44 metų,
+,,,,,,,,,"""45-49""",,,,Amžiaus grupė nuo 45 iki 49 metų,
+,,,,,,,,,"""50-54""",,,,Amžiaus grupė nuo 50 iki 54 metų,
+,,,,,,,,,"""55-59""",,,,Amžiaus grupė nuo 55 iki 59 metų,
+,,,,,,,,,"""60-64""",,,,Amžiaus grupė nuo 60 iki 64 metų,
+,,,,,,,,,"""65-69""",,,,Amžiaus grupė nuo 65 iki 69 metų,
+,,,,,,,,,"""70-74""",,,,Amžiaus grupė nuo 70 iki 74 metų,
+,,,,,,,,,"""75-79""",,,,Amžiaus grupė nuo 75 iki 79 metų,
+,,,,,,,,,"""80+""",,,,Amžiaus grupė nuo 80 metų,
+,,,,,v_org_id,integer,,,,2,open,,Kandidatą vienmandatėje apygardoje iškėlusios organizacijos identifikatorius,
+,,,,,v_org_pavad,string,,,,2,open,,Kandidatą vienmandatėje apygardoje iškėlusios organizacijos pavadinimas,
+,,,,,v_org_ja_kodas,string,,,,2,open,,Kandidatą vienmandatėje apygardoje iškėlusios organizacijos juridinio asmens kodas Juridinių asmenų registre,
+,,,,,v_ar_pats,string,,,,2,open,,Požymis ar kandidatas vienmandatėje apygardoje išsikėlė pats,Požymis ar kandidatas vienmandatėje apygardoje išsikėlė pats (T)
+,,,,,d_org_id,integer,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusios organizacijos identifikatorius,
+,,,,,d_org_pavad,string,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusios organizacijos pavadinimas,
+,,,,,d_org_ja_kodas,string,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusios organizacijos juridinio asmens kodas Juridinių asmenų registre,
+,,,,,saraso_id,integer,,,,2,open,,"Kandidatų sąrašo (rinkimų organizacijos), keliamo daugiamandatėje apygardoje identifikatorius",
+,,,,,saraso_nr,integer,,,,2,open,,Kandidatų sąrašo numeris,"Kandidatų sąrašo, keliamo daugiamandatėje apygardoje, numeris"
+,,,,,saraso_pavad,string,,,,2,open,,Kandidatų sąrašo pavadinimas,"Kandidatų sąrašo, keliamo daugiamandatėje apygardoje, pavadinimas"
+,,,,,saraso_ja_kodas,string,,,,2,open,,Kandidatų sąrašo juridinio asmens kodas Juridinių asmenų registre,
