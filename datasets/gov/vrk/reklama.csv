@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Panaikintas""",,,,Panaikintas/Praradęs statusą,
 ,,,,,virs_ja_kodas,string,,,,2,open,,Viešosios informacijos rengėjo/ skleidėjo (VIRS) juridinio asmens kodas Juridinių asmenų registre,susiejimui su RC duomenimis
 ,,,,,virs_pavad,string,,,,2,open,,Viešosios informacijos rengėjo/ skleidėjo (VIRS) pavadinimas,
-,,,,,virs_tipo_kodas,string,,,,2,open,,VIRS tipo kodas,Kodų intervalas 1-8
+,,,,,virs_tipo_kodas,integer,,,,2,open,,VIRS tipo kodas,Kodų intervalas 1-8
 ,,,,,,enum,,,1,,,,Spauda,
 ,,,,,,,,,2,,,,Radijas,
 ,,,,,,,,,3,,,,Televizija,
