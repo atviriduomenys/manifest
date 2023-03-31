@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Skolininkas,,,st_nr,,,2,,,"Duomenys apie įkeitimo ir hipotekos sandorių skolininkus (skolininko tipą, amžių, formą sandorių rūšis, sudarymo vietas, vertes, terminus)",
 ,,,,,st_nr,integer,,,,2,open,,Hipotekos / įkeitimo dirbtinis identifikatorius šiame duomenų rinkinyje,
 ,,,,,amnt_grupe,string,,,,4,open,,Skolininko asmens tipo grupė,
-,,,,,,,,,"""FA""",,,,Fizinis asmuo,
+,,,,,,enum,,,"""FA""",,,,Fizinis asmuo,
 ,,,,,,,,,"""JA""",,,,Juridinis asmuo,
 ,,,,,,,,,"""UFA""",,,,Užsienio fizinis asmuo,
 ,,,,,,,,,"""UJA""",,,,Užsienio juridinis asmuo,
