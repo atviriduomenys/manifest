@@ -12,5 +12,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,,,
 ,,,,,adresas,string,,,,1,open,,Atestuotos laboratorijos adresas,
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/ar/adresotaskas/AdresoTaskas""",,,,,
-,,,,,pastabos,text,,,,2,open,,Pastabos,
+,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Laboratorijos vietos koordinatės (LKS),
