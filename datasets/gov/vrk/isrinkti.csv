@@ -1,0 +1,63 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vrk/isrinkti,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,resource8,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Isrinkti,,,,,,
+,,,,Isrinktas,,,"kandidato_id, rink_kandidato_id",,,2,,,,
+,,,,,isrinktu_id,integer,,,,2,open,,Unikalus ID,
+,,,,,rinkimu_rusis,string,,,,2,open,,Rinkimų rūšis,"EP, SEI, SAV, PRE"
+,,,,,,enum,,,"""EP""",,,,Rinkimai į Europos parlamentą,
+,,,,,,,,,"""SEI""",,,,Seimo rinkimai,
+,,,,,,,,,"""SAV""",,,,Savivaldybių tarybų rinkimai,
+,,,,,,,,,"""PRE""",,,,Prezidento rinkimai,
+,,,,,kadencijos_nr,integer,,,,4,open,,Kadencijos eilės numeris,"Kadencijos, kurios metu asmuo ėjo pareigas (buvo išrinktas rinkimuose arba užėmė laisvą vietą po rinkimų), eilės numeris"
+,,,,,rinkimu_id,integer,,,,2,open,,Rinkimų identifikatorius,"Rinkimų, kuriuose asmuo kandidatavo ir dėl kurių eina arba ėjo pareigas, ID"
+,,,,,rinkimu_pavad,string,,,,2,open,,Rinkimų pavadinimas,"Rinkimų, kuriuose asmuo kandidatavo ir dėl kurių eina arba ėjo pareigas, pavadinimas"
+,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės identifikavimo kodas,"sav_kodas sutampa su Adresų registro atvertuose rinkiniuose esančiu ""Savivaldybės identifikavimo kodas"""
+,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gpv/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,open,spinta:216,,
+,,,,,sav_nr,integer,,,,2,open,,Savivaldybės numeris,"Savivaldybės, kurioje kandidatas buvo išrinktas, numeris. (Aktualu savivaldybių tarybų narių (merų) rinkimams) - rinkimų apygardos numeris savivaldos rinkimuose"
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_nr"", type: """")",4,open,spinta:216,,
+,,,,,sav_pavadinimas,string,,,,2,open,,Savivaldybės pavadinimas,"Savivaldybės, kurioje kandidatas buvo išrinktas, pavadinimas. (Aktualu savivaldybių tarybų narių (merų) rinkimams"
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_pavadinimas"", type: """")",4,open,spinta:216,,
+,,,,,kandidato_id,integer,,,,2,open,,Kandidato identifikatorius,
+,,,,,rink_kandidato_id,integer,,,,2,open,,Kandidato identifikatorius rinkimuose,
+,,,,,vardas,string,,,,2,open,,Kandidato vardas,
+,,,,,pavarde,string,,,,2,open,,Kandidato pavardė,
+,,,,,isrinkimo_budas,string,,,,4,open,,"Apygardos, kurioje kandidatas buvo išrinktas arba užėmė laisvą vietą, tipas","Apygardos, kurioje kandidatas buvo išrinktas arba užėmė laisvą vietą, tipas:
+1 - išrinktas vienmandatėje apygardoje pirmajame ture;
+2 - išrinktas vienmandatėje apygardoje antrajame ture;
+D - išrinktas daugiamandatėje apygardoje arba užėmė laisvą vietą."
+,,,,,,enum,,,"""1""",,,,Išrinktas vienmandatėje apygardoje pirmajame ture,
+,,,,,,,,,"""2""",,,,Išrinktas vienmandatėje apygardoje antrajame ture,
+,,,,,,,,,"""D""",,,,Išrinktas daugiamandatėje apygardoje arba užėmė laisvą vietą,
+,,,,,kandidata_iskele,string,,,,2,open,,Kandidatą vienmandatėje apygardoje iškėlusios (-ių) organizacijos (-ų) pavadinimas (-ai) ir/ar kandidatas išsikėlė pats,*atskiriama kabliataškiais
+,,,,,apyg_id,integer,,,,2,open,,Apygardos identifikatorius,
+,,,,,rink_apyg_id,integer,,,,2,open,,Rinkimų apygardos identifikatorius,
+,,,,,apyg_nr,integer,,,,2,open,,Apygardos numeris,Vienmandatės rinkimų apygardos Nr.
+,,,,,apyg_pavad,string,,,,2,open,,Apygardos pavadinimas,Vienmandatės rinkimų apygardos pavadinimas
+,,,,,saraso_id,integer,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo identifikatorius,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo ID
+,,,,,saraso_nr,integer,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo numeris,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo numeris
+,,,,,saraso_pavad,string,,,,2,open,,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo pavadinimas,Kandidatą daugiamandatėje apygardoje iškėlusio sąrašo pavadinimas
+,,,,,kand_porink_nr,integer,,,,2,open,,Kandidato eilės numeris kandidatų sąraše po rinkimų,Porinkiminis Nr. sąraše (daugiamandatėje apygardoje)
+,,,,,ar_isrinktas,string,,,,4,open,,"Požymis, nurodantis ar kandidatas buvo išrinktas rinkimų dieną (T/N)","Požymis, nurodantis ar kandidatas buvo išrinktas rinkimų dieną (T/N)"
+,,,,,,enum,,,"""T""",,,,Taip - išrinktas rinkimų dieną;,
+,,,,,,,,,"""N""",,,,"Ne - užėmė laisvą mandatą, atsiradusį kadencijos metu",
+,,,,,data_nuo,date,D,,,2,open,,Įgaliojimų pradžios data,"Data, nuo kurios kandidatas eina/ėjo pareigas"
+,,,,,data_iki,date,D,,,2,open,,Įgaliojimų pabaigos data,"Data, iki kurios kandidatas ėjo pareigas"
+,,,,,nutrauk_priezast_kodas,string,,,,2,open,,Įgaliojimų nutraukimo priežasties kodas,
+,,,,,nutrauk_priezast_pavad,string,,,,2,open,,Įgaliojimų nutraukimo priežasties pavadinimas,
+,,,,,pareigybes_kodas,integer,,,,4,open,,Asmens pareigybės kodas,
+,,,,,,enum,,,510,,,,510 Respublikos Prezidentas,
+,,,,,,,,,502,,,,"502 Europos Parlamento nariai, išrinkti nuo Lietuvos Respublikos",
+,,,,,,,,,506,,,,506 Lietuvos Respublikos Seimo nariai,
+,,,,,,,,,511,,,,511 Savivaldybių tarybų nariai,
+,,,,,pareigybes_pavad,string,,,,4,open,,Asmens pareigybės pavadinimas,"510 Respublikos Prezidentas
+502 Europos Parlamento nariai, išrinkti nuo Lietuvos Respublikos
+506 Lietuvos Respublikos Seimo nariai
+511 Savivaldybių tarybų nariai"
+,,,,,,enum,,,"""Respublikos Prezidentas""",,,,Respublikos Prezidentas,
+,,,,,,,,,"""Europos Parlamento nariai, išrinkti nuo Lietuvos Respublikos""",,,,"Europos Parlamento nariai, išrinkti nuo Lietuvos Respublikos",
+,,,,,,,,,"""Lietuvos Respublikos Seimo nariai""",,,,Lietuvos Respublikos Seimo nariai,
+,,,,,,,,,"""Savivaldybių tarybų nariai""",,,,Savivaldybių tarybų nariai,
+,,,,,ja_pavadinimas,string,,,,2,open,,"Juridinio asmens, kuriame einamos pareigos, pavadinimas",
