@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,tiekejas,string,,,,2,open,,"Tiekėjo vardas, pavardė / pavadinimas",
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")	",4,open,"spinta:205, manifest:1290",,
-,,,,,dokumentas,string,,,,4,open,,,
+,,,,,dokumentas,string,,,,4,open,,Dokumento pavadinimas,
 ,,,,,data,string,,,,2,open,,Dokumento data ir Nr.,
 ,,,,,rusis,string,,,,4,open,,Augalo rūšis,
 ,,,,,veisle,string,,,,4,open,,Veislė,
