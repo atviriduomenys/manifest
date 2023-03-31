@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dokumento_statusas,ref,/datasets/gov/rc/taar/klasifikatoriai/DokumentoStatusas,,,4,open,,Turto arešto akto statusas iš TAAR dokumentų statusų klasifikatoriaus,
 ,,,,,ai_tipas,ref,/datasets/gov/rc/taar/klasifikatoriai/AI,,,4,open,,Areštuojančios institucijos tipas iš TAAR areštuojančių institucijų klasifikatoriaus,
 ,,,,,kreditoriausid,integer,,,,4,open,,Juridinio asmens dirbtinis identifikavimo kodas šiame rinkinyje,
-,,,,,jar_teisine_forma,ref,datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš JAR teisinių formų klasifikatoriaus,
+,,,,,jar_teisine_forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš JAR teisinių formų klasifikatoriaus,
 ,,,,,ar_uzsienietis,integer,,,,4,open,,"Požymis, ar Juridinis asmuo įregistruotas Juridinių asmenų registre ( 1 – Taip; 0 – Ne)",
 ,,,,,,enum,,,1,,,,Taip,
 ,,,,,,,,,0,,,,Ne,
