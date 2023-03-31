@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vatzum/kokybes_laboratorijos,,,,,,,,,,,,,
+,datasets/gov/vatzum/grudu_kokybe,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Tinklas,,,eil_nr,,,4,open,,Pateikiama informacija (adresas,
+,,,,Laboratorija,,,eil_nr,,,4,open,,Pateikiama informacija (adresas,
 ,,,,,eil_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,pazymejimo_data,date,D,,,4,open,,Atestavimo pažymėjimo data,
 ,,,,,pazymejimo_nr,string,,,,2,open,,Atestavimo pažymėjimo Nr.,
