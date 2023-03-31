@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinis asmuo juridinių asmenų registre,
 ,,,,,ja_reg_data,date,D,,,4,open,,Juridinio asmens įregistravimo juridinių asmenų registre data,
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos kodas iš jar teisinių formų klasifikatoriaus,
-,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusai,,,4,open,,Juridinio asmens teisinio statuso kodas iš jar teisinių statusų klasifikatoriaus,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinio statuso kodas iš jar teisinių statusų klasifikatoriaus,
 ,,,,,nepateikta_iki,integer,,,,2,open,,"Metai, už kuriuos juridinis asmuo nepateikė finansinės atskaitomybės dokumentų",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
