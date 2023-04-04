@@ -10,6 +10,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dokumentas,string,,,,3,open,,Dokumento pavadinimas,
 ,,,,,data,string,,,,2,open,,Dokumento data ir Nr.,
 ,,,,,rusis,string,,,,3,open,,Augalo rūšis,
-,,,,,veisle,string,,,,4,open,,Veislė,
+,,,,,veisle,string,,,,3,open,,Veislė,
 ,,,,,panaikinimas,date,D,,,4,open,,Panaikinimo data,
 ,,,,,pastaba,string,,,,2,open,,Pastabos (vietoj jo išduoto dokumento data ir Nr.),
