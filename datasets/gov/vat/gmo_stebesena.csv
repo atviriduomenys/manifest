@@ -9,5 +9,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,string,,,,2,open,,"Savivaldybė, kurioje paimtas mėginys",
 ,,,,,rusis,string,,,,3,open,,Pasėlių kultūra,
 ,,,,,kilmes_salis,string,,,,3,open,,Kilmės šalis,
-,,,,,padalinys,string,,,,3,open,,Mėginį paėmęs teritorinis padalinys,
+,,,,,padalinys,string,,,,4,open,,Mėginį paėmęs teritorinis padalinys,
 ,,,,,registracija,date,D,,,4,open,,Mėginio paėmimo data,
