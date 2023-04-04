@@ -10,10 +10,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""metai"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,pasalpa,string,,,,2,open,,Pašalpos tipas,
 ,,,,,,comment,property,,"""update(property: """"pasalpa[]"""", type: """"array"""", source: """"Pasalpa"""")""",4,,spinta:161,,
-,,,,,amziaus_grupe,string,,,,4,open,,Gavėjo asmens amžiaus grupė,
-,,,,,lytis,string,,,,4,open,,Gavėjo asmens lytis,
-,,,,,bedarbe,boolean,,,,4,open,,Bedarbė šeima,Požymis ar šeimoje yra bedarbių
-,,,,,darb_aktyvumas,string,,,,4,open,,Gavėjo darbo aktyvumo identifikatorius,
-,,,,,soc_rizika,boolean,,,,4,open,,"Požymis ar šeimoje yra asmenų, priklausančių soc. rizikos įskaitai",
+,,,,,amziaus_grupe,string,,,,3,open,,Gavėjo asmens amžiaus grupė,
+,,,,,lytis,string,,,,3,open,,Gavėjo asmens lytis,
+,,,,,bedarbe,boolean,,,,3,open,,Bedarbė šeima,Požymis ar šeimoje yra bedarbių
+,,,,,darb_aktyvumas,string,,,,3,open,,Gavėjo darbo aktyvumo identifikatorius,
+,,,,,soc_rizika,boolean,,,,3,open,,"Požymis ar šeimoje yra asmenų, priklausančių soc. rizikos įskaitai",
 ,,,,,iskait_priezastis,string,,,,3,open,,Šeimos įtraukimo į soc. riziką priežastis,
 ,,,,,busto_bukle,string,,,,3,open,,Busto turėjimo aplinkybių identifikatorius,
