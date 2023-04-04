@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,string,,,,3,open,,Juridinio asmens kodas,
 ,,,,,,comment,type,,"create(property: ""imone"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,,,,
 ,,,,,,comment,property,,,4,spinta:216,,,
-,,,,,kontaktai,string,,,,2,open,,Kontaktinė informacija,
+,,,,,kontaktai,string,,,,1,open,,Kontaktinė informacija,
 ,,,,,paskelbimas_is,string,,,,1,open,,"Įsakymo data, numeris/ paskelbimo Licencijų informacinėje sistemoje data",
 ,,,,,produktai,string,,,,2,open,,Pluoštinių kanapių produktai,
 ,,,,,paskirtis,string,,,,2,open,,Produktų paskirtis,
