@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Sertifikatas,,,id,,,4,,,Pastatų energinio naudingumo sertifikatai,Pastatų energinio naudingumo sertifikatai
 ,,,,,id,integer,,,,4,open,,Pastatų paskirties ID,
 ,,,,,nr,string,,,,4,open,,Sertifikato numeris,
-,,,,,versija,integer,,,,2,open,,Sertifikato pateikimo versija,
+,,,,,versija,integer,,,,3,open,,Sertifikato pateikimo versija,
 ,,,,,pozymis,integer,,,,4,open,,Tipinio buto sertifikato požymis,
 ,,,,,,enum,,,0,,,,Pastato (pastato dalies) sertifikatas,
 ,,,,,,,,,1,,,,Tipinis buto sertifikatas,
