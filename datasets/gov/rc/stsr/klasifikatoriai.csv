@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/stsr/klasifikatoriai,,,,,,,,,,,,STSR klasifikatoriai (STSR daiktų rūšių klasifikatorius),
+,,,,,,,,,,,,,,
+,,,,TurtoTipas,,,kodas,,,4,,,STSR daiktų rūšių klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Turto tipo identifikatorius ,
+,,,,,rusis,string,,,,3,open,,Turto tipo aprašymas,
