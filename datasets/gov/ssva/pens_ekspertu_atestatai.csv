@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atestatas,integer,,,,4,open,,Eksperto atestato Nr.,
 ,,,,,gavejas,string,,,,4,public,,Eksperto vardas,
 ,,,,,co2,number,,,,3,open,,CO2 kiekis,
-,,,,,finansavimas,integer,,,,4,open,,Finansavimo požymis,"Pastato projektavimas ir (ar) statyba ir (ar) modernizavimas finansuojama Lietuvos Respublikos ir (ar) Europos Sąjungos biudžeto lėšomis: taip / taip dalinai / ne (informacija į registrą įtraukiama nuo 2022-08-01)"
+,,,,,finansavimas,string,,,,4,open,,Finansavimo požymis,"Pastato projektavimas ir (ar) statyba ir (ar) modernizavimas finansuojama Lietuvos Respublikos ir (ar) Europos Sąjungos biudžeto lėšomis: taip / taip dalinai / ne (informacija į registrą įtraukiama nuo 2022-08-01)"
 ,,,,,,enum,,,0,,,,Ne,
 ,,,,,,,,,1,,,,Dalinai,
 ,,,,,,,,,2,,,,Taip,
