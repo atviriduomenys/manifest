@@ -71,4 +71,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,selekcininkas,string,,,,1,open,,Selekcininkas,
 ,,,,,igaliotasis_atstovas,string,,,,2,open,,Įgaliotasis atstovas,
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")	",4,,"spinta:205, manifest:1290",,
-,,,,,galiojimas,string,,,,1,open,,Galiojimo laikas,
+,,,,,galiojimas,string,,,,2,open,,Galiojimo laikas,
