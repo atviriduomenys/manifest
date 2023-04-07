@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,metai,integer,,,,2,open,,Įrašymo metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,palaikytojo_nr,string,,,,4,open,,Veislės palaikytojo Nr.,
-,,,,,palaikytojas,string,,,,2,open,,Palaikytojo pavadinimas,
+,,,,,palaikytojas,string,,,,1,open,,Palaikytojo pavadinimas,
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")	",4,,"spinta:205, manifest:1290",,
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
 ,,,,,buveine,string,,,,1,open,,Palaikytojo adresas,
