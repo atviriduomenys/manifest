@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Veisle,,,id,,,4,open,,"Pateikiama informacija apie į Nacionalinį sąrašą įrašytas veisles, išbrauktas veisles, veislių palaikytojų ir selekcininkų įgaliotųjų atstovų sąrašus.",
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,grupe,string,,,,4,open,,Augalų grupė,
-,,,,,,,,,"""ŽEMĖS ŪKIO AUGALAI""",,,,,
+,,,,,,enum,,,"""ŽEMĖS ŪKIO AUGALAI""",,,,,
 ,,,,,,,,,"""DARŽOVĖS""",,,,,
 ,,,,,,,,,"""Sodo augalai""",,,,,
 ,,,,,,,,,"""Dekoratyviniai augalai""",,,,,
