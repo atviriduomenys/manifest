@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Gavejas,,,id,,,4,open,,Duomenys apie socialinės pašalpos gavėjus,
 ,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,seimos_tipas,string,,,,3,open,,Šeimos tipo identifikatorius,
-,,,,,sei_nariai,integer,,,,4,open,,"Asmenų, priklausančių šeimai, skaičius",
+,,,,,sei_nariai,integer,U,,,4,open,,"Asmenų, priklausančių šeimai, skaičius",
 ,,,,,metai,integer,,,,2,open,,Prašymo teikimo metai,
 ,,,,,,comment,type,,"update(type: ""metai"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,pasalpa,string,,,,2,open,,Pašalpos tipas,
