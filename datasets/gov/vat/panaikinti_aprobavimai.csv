@@ -12,5 +12,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rusis,string,,,,3,open,Augalo rūšis,,
 ,,,,,veisle,string,,,,4,open,Augalo veislė,,
 ,,,,,panaikinimas,date,D,,,4,open,Panaikinimo data,,
-,,,,,pastabos,,,,,2,open,"Pastabos (vietoj panaikinto, išduoto dokumento data ir Nr.)",,
+,,,,,pastabos,string,,,,2,open,"Pastabos (vietoj panaikinto, išduoto dokumento data ir Nr.)",,
 ,,,,,koord,"geometry(point, 3346)",m,,,4,open,Tiekėjo vietos koordinatės (LKS),,
