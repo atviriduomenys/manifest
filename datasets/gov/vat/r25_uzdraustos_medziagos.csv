@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,dokumentas,string,,,,4,open,,Dokumento pavadinimas,
 ,,,,,data,string,,,,1,open,,Dokumento data ir Nr.,
-,,,,,rusis,string,,,,4,open,,Augalo rūšis/ sėklos mišinio pavadinimas,
+,,,,,rusis,string,,,,3,open,,Augalo rūšis/ sėklos mišinio pavadinimas,
 ,,,,,veisle,string,,,,4,open,,Veislė,
 ,,,,,siuntos_nr,string,,,,1,open,,Siuntos numeris,
 ,,,,,pastaba,string,,,,2,open,,Pastaba,
