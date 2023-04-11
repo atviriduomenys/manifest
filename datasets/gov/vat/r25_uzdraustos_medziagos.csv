@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Siunta,,,eiles_nr,,,4,open,,"Pateikiami duomenys apie dokumento pavadinimą, datą, Nr., augalo rūšį / sėklos mišinio pavadinimą, veislę, siuntos Nr., panaikinimo / paskelbimo datą",
 ,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
-,,,,,dokumentas,string,,,,4,open,,Dokumento pavadinimas,
+,,,,,dokumentas,string,,,,3,open,,Dokumento tipas,
 ,,,,,data,string,,,,1,open,,Dokumento data ir Nr.,
 ,,,,,rusis,string,,,,3,open,,Augalo rūšis/ sėklos mišinio pavadinimas,
 ,,,,,veisle,string,,,,4,open,,Veislė,
