@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,siunta,string,,,,1,open,,Siuntos numeris,
 ,,,,,apimtis,string,,,,2,open,,Siuntos svoris (kg) / vnt. pasėlio plotas (ha),
 ,,,,,data,date,D,,,4,open,,Mėginio ėmimo data,
-,,,,,isvada,string,,,,2,open,,Tyrimų rezultatų išvada,
+,,,,,isvada,string,,,,4,open,,Tyrimų rezultatų išvada,
 ,,,,,kultura,string,,,,4,open,,Kultūra,
 ,,,,,,enum,,,"""Žieminiai rapsai""",,,,,
 ,,,,,,,,,"""Sėklinės bulvės""",,,,,
