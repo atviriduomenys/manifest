@@ -10,3 +10,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veikla,string,,,,2,open,,Veiklos sritis (-ys) ,
 ,,,,,augalu_grupe,string,,,,2,open,,Augalų grupė (-ės) ,
 ,,,,,pazymejimas,string,,,,2,open,,Pažymėjimo Nr.,
+,,,,,isakymas,string,,,,1,open,,Įsakymo data ir Nr.,
