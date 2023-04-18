@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,isdavimas,date,D,,,4,open,,Išdavimo data,
 ,,,,,zyme,string,,,,3,open,,Būsenos žymė,
-,,,,,gavejas,string,,,,2,open,,Leidimo gavėjas,
+,,,,,gavejas,string,,,,1,open,,Leidimo gavėjas,
 ,,,,,kodas,string,,,,2,open,,Gavėjo įmonės kodas,
 ,,,,,,comment,type,,"create(property: ""imone"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,,,,
 ,,,,,,comment,property,,"update(property: ""imone.ja_kodas"", type: """")",4,spinta:216,,,
