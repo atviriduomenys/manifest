@@ -7,6 +7,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eil_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,tiekejas,string,,,,1,open,,"Tiekėjo vardas, pavardė / pavadinimas",
 ,,,,,veikla,string,,,,1,open,,Veiklos sritis (-ys) ,
-,,,,,augalu_grupe,string,,,,1,open,,Augalų grupė (-ės) ,
+,,,,,augalu_grupe,string,,,,2,open,,Augalų grupė (-ės) ,
 ,,,,,pazymejimas,string,,,,2,open,,Pažymėjimo Nr.,
 ,,,,,isakymas,string,,,,1,open,,Įsakymo data ir Nr.,
