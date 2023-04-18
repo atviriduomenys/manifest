@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ssva/registras,,,,,,,,,,,,Teritorijų planavimo vadovų atestatų registras,
+,datasets/gov/ssva/tpv_atestatai,,,,,,,,,,,,Duomenys apie teritorijų planavimo vadovų atestatus (fiziniai asmenys),
 ,,,,,,,,,,,,,,
 ,,,,Atestatas,,,nr,,,4,,,Teritorijų planavimo vadovų atestatai,
 ,,,,,id,string,,,,4,open,,Identifikatorius,
