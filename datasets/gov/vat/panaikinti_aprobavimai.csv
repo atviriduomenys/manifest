@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/panaikinti_aprobavimai,,,,,,,,,,,,,"Pateikiami duomenys apie tiekėją, dokumento pavadinimą, dokumento Nr. ir datą, augalo rūšį, veislę, dokumento panaikinimo datą, naujai išduoto dokumento datą ir Nr."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Aktas,,,eiles_nr,,,4,open,,,
+,,,,,eiles_nr,string,,,,4,open,Eilės numeris,,
+,,,,,tiekejas,string,,,,2,open,Tiekėjas,,
+,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,"spinta:205, manifest:1290",,
+,,,,,dokumentas,string,,,,3,open,Dokumento tipas,,
+,,,,,data,date,D,,,4,open,Dokumento data,,
+,,,,,rusis,string,,,,3,open,Augalo rūšis,,
+,,,,,veisle,string,,,,4,open,Augalo veislė,,
+,,,,,panaikinimas,date,D,,,4,open,Panaikinimo data,,
+,,,,,pastabos,string,,,,2,open,"Pastabos (vietoj panaikinto, išduoto dokumento data ir Nr.)",,
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,Tiekėjo vietos koordinatės (LKS),,

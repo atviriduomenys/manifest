@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/seklu_mainai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Siunta,,,id,,,4,open,,"Pateikiama informacija apie ŪS pavadinimą, mėginio eilės Nr., veislę, kategoriją / klasę, siuntos Nr., siuntos svorį (kg) / vnt., pasėlio plotą, ha, mėginio ėmimo datą, tyrimų rezultatų išvadą.",
+,,,,,id,string,,,,4,open,,Eilės numeris,
+,,,,,rusis,string,,,,3,open,,Asmens nurodyta augalo rūšis,
+,,,,,veisle,string,,,,3,open,,Asmens nurodyta augalo veislė ,
+,,,,,kiekis,number,g,,,4,open,,"Sėklos kiekis, g",
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""metai"", ref: ""Y"")",4,,spinta:213,,
