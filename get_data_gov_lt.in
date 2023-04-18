@@ -333,5 +333,6 @@ datasets/gov/ssva/atestatai_teses_pripazinimo_dok.csv
 datasets/gov/ssva/pens_ekspertu_atestatai.csv
 datasets/gov/ssva/teritoriju_planavimo_vadovu_atestatai.csv
 datasets/gov/finmin/kvietimai.csv
+datasets/gov/sadm/charakteristikos.csv
 datasets/gov/vat/r32_gmo_nustatymas.csv
 datasets/gov/vat/r2_fitosanitarinis_registras.csv
