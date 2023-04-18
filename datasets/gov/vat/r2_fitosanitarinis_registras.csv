@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Subjektas,,,id,,,4,open,,"Pateikiama informacija apie ūkio subjektus, įregistruotus Fitosanitariniame registe (ūkio subjekto atpažinties kodas; pavadinimas; veiklos vykdymo adresas; veiklos ir produkcijos rūšis)",
-,,,,,id,,,,,4,open,,Įrašo identifikatorius,
+,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,subjektas,string,,,,2,open,,Subjekto pavadinimas,
 ,,,,,juridinis,boolean,,,,4,open,,Ūkio subjekto tipas,
 ,,,,,tel_nr,string,,,,1,open,,Telefono numeris,
