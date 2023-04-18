@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/panaikinimai,,,,,,,,,,,,,"Informacija apie panaikintus sertifikatus, kurie skelbiami negaliojančiais"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sertifikatas,,,eiles_nr,,,4,open,,"Pateikiami duomenys apie tiekėją, dokumento pavadinimą, dokumento Nr. ir datą, augalo rūšį, veislę, dokumento panaikinimo datą, naujai išduoto dokumento datą ir Nr.",
+,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
+,,,,,tiekejas,string,,,,2,open,,"Tiekėjo vardas, pavardė / pavadinimas",
+,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")	",4,open,"spinta:205, manifest:1290",,
+,,,,,dokumentas,string,,,,3,open,,Dokumento pavadinimas,
+,,,,,data,string,,,,2,open,,Dokumento data ir Nr.,
+,,,,,rusis,string,,,,3,open,,Augalo rūšis,
+,,,,,veisle,string,,,,3,open,,Veislė,
+,,,,,panaikinimas,date,D,,,4,open,,Panaikinimo data,
+,,,,,pastaba,string,,,,2,open,,Pastabos (vietoj jo išduoto dokumento data ir Nr.),
