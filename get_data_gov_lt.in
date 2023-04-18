@@ -321,6 +321,7 @@ datasets/gov/migracija/deportacijos.csv
 datasets/gov/sadm/parama_mokiniams.csv
 datasets/gov/vmi/loterijos.csv
 datasets/gov/vmi/azartiniai_losimai.csv
+datasets/gov/vat/gmo_stebesena.csv
 datasets/gov/sadm/ismokos_vaikams.csv
 datasets/gov/migracija/pilietybes_netekimas.csv
 datasets/gov/nvi/biobankas.csv
@@ -331,4 +332,14 @@ datasets/gov/ssva/atestatai.csv
 datasets/gov/ssva/vadovu_kvalifikacijos_atestatai.csv
 datasets/gov/ssva/atestatai_teses_pripazinimo_dok.csv
 datasets/gov/vat/r13_kokybes_laboratorijos.csv
+datasets/gov/vat/r25_uzdraustos_medziagos.csv
 datasets/gov/finmin/kvietimai.csv
+datasets/gov/vat/seklu_emejai.csv
+datasets/gov/vat/r26_seklu_mainai.csv
+datasets/gov/vat/seklu_laboratorijos.csv
+datasets/gov/vat/panaikinti_aprobavimai.csv
+datasets/gov/ssva/pens_ekspertu_atestatai.csv
+datasets/gov/ssva/teritoriju_planavimo_vadovu_atestatai.csv
+datasets/gov/sadm/charakteristikos.csv
+datasets/gov/vat/r32_gmo_nustatymas.csv
+datasets/gov/vat/r2_fitosanitarinis_registras.csv
