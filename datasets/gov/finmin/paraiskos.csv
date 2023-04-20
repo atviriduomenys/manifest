@@ -44,7 +44,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,progress,string,,,,4,open,,Darnus vystymasis,
 ,,,,,gender_equality,string,,,,4,open,,Moterų ir vyrų lygybė ir (arba) nediskriminavimas,
 ,,,,,insert_date,datetime,L,,,4,open,,Paraiškos įregistravimo data,
-,,,,,other_municipality,string,,,,3,open,,"Kita(-os) savivaldybė(-ės), kuriai(-ioms) tenka dalis projekto lėšų","Savivaldybės atskirtos kableliais, arba nurodyta ""Visos savivaldybės"""
+,,,,,other_municipality,string,,,,2,open,,"Kita(-os) savivaldybė(-ės), kuriai(-ioms) tenka dalis projekto lėšų","Savivaldybės atskirtos kableliais, arba nurodyta ""Visos savivaldybės"""
+,,,,,,comment,property,,"""update(property: """"other_municipality[]"""", type: """"array"""", source: """"Other_municipality"""")""",4,,spinta:356,,
 ,,,,,,,,,,,,,,
 ,,,,AppPartner,,,app_partner_id,,,4,,,Paraiškos partneriai,
 ,,,,,app_partner_id,string,,,,4,open,,Paraiškos partnerio identifikatorius,
