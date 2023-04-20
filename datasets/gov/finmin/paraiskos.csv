@@ -35,8 +35,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,applicant_code,string,,,,2,open,,Pareiškėjo JAR kodas,Užsienio pareiškėjams nurodyti analogiški kodai. Fiziniams asmenims vertės pašalintos
 ,,,,,subject_legal_form,string,,,,3,open,,Subjekto teisinė forma,
 ,,,,,description,string,,,,4,open,,Projekto santrauka,
-,,,,,county,string,,,,3,open,,"Apskritis, kuriai tenka didžioji dalis projekto lėšų",
-,,,,,municipality,string,,,,3,open,,"Savivaldybė, kuriai tenka didžioji dalis projekto lėšų",
+,,,,,county,string,,,,2,open,,"Apskritis, kuriai tenka didžioji dalis projekto lėšų",
+,,,,,municipality,string,,,,2,open,,"Savivaldybė, kuriai tenka didžioji dalis projekto lėšų",
 ,,,,,in_another_eu,string,,,,3,open,,Projektas ar jo dalis įgyvendinami kitoje ES valstybėje narėje (ne Lietuvos Respublikoje),
 ,,,,,outside_eu,string,,,,3,open,,Projektas ar jo dalis įgyvendinami už ES teritorijos ribų,
 ,,,,,duration,integer,mo,,,4,open,,Projekto įgyvendinimo trukmė (mėnesiais),
