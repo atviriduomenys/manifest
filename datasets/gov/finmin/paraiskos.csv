@@ -63,7 +63,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,part,string,,,,1,open,,Pirkimo dalis,
 ,,,,,value,number,,,,2,open,,Pirkimo dalies vertė,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,info,string,,,,4,open,,Informacija apie pirkimą,
+,,,,,info,string,,,,1,open,,Informacija apie pirkimą,
 ,,,,,,,,,,,,,,
 ,,,,AppIndicator,,,app_indicator_id,,,4,,,Paraiškos produkto ir rezultato stebėsenos rodikliai,
 ,,,,,app_indicator_id,string,,,,4,open,,Paraiškos rodiklio identifikatorius,
