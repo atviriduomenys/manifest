@@ -6,9 +6,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apskritis,string,,,,4,open,,Apskritis,
 ,,,,,savivaldybė,string,,,,4,open,,Savivaldybė,
 ,,,,,mm_skaicius,number,,,,4,open,,Mokesčių mokėtojų skaičius,
-,,,,,suma_akc,currency,EUR,,,4,open,,Akcizo suma,Sprendimo dėl  akcizo mokesčio suma (įskaitant delspinigius ir baudas)
-,,,,,suma_pln,currency,EUR,,,4,open,,Pelno mokesčio suma,Sprendimo dėl pelno mokesčio suma (įskaitant delspinigius ir baudas)
-,,,,,suma_pvm,currency,EUR,,,4,open,,Pridėtinės vertės mokesčio suma,Sprendimo dėl pridėtinės vertės mokesčio suma (įskaitant delspinigius ir baudas)
-,,,,,suma_gpm,currency,EUR,,,4,open,,Gyventojų pajamų mokesčio suma,Sprendimo dėl gyventojų pajamų mokesčio suma (įskaitant delspinigius ir baudas)
-,,,,,suma_kiti,currency,EUR,,,4,open,,Kitų mokesčių suma,Sprendimo dėl kitų mokesčių suma (įskaitant delspinigius ir baudas)
-,,,,,suma_viso,currency,EUR,,,4,open,,Sprendimo suma,Sprendimo suma iš viso (įskaitant delspinigius ir baudas)
+,,,,,suma_akc,number,,,,4,open,,Akcizo suma,Sprendimo dėl  akcizo mokesčio suma (įskaitant delspinigius ir baudas)
+,,,,,suma_pln,number,,,,4,open,,Pelno mokesčio suma,Sprendimo dėl pelno mokesčio suma (įskaitant delspinigius ir baudas)
+,,,,,suma_pvm,number,,,,4,open,,Pridėtinės vertės mokesčio suma,Sprendimo dėl pridėtinės vertės mokesčio suma (įskaitant delspinigius ir baudas)
+,,,,,suma_gpm,number,,,,4,open,,Gyventojų pajamų mokesčio suma,Sprendimo dėl gyventojų pajamų mokesčio suma (įskaitant delspinigius ir baudas)
+,,,,,suma_kiti,number,,,,4,open,,Kitų mokesčių suma,Sprendimo dėl kitų mokesčių suma (įskaitant delspinigius ir baudas)
+,,,,,suma_viso,number,,,,4,open,,Sprendimo suma,Sprendimo suma iš viso (įskaitant delspinigius ir baudas)
