@@ -11,5 +11,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,plotas,number,ha,,,4,open,Bendras plotas,,
 ,,,,,lauku_irasai,number,U,,,4,open,Laukų įrašų kiekis,,
 ,,,,,tyrimai,number,U,,,4,open,Atliktų tyrimų skaičius,,
-,,,,,thc_suma,integer,,,,4,open,Suma Thc,,
+,,,,,thc_suma,integer,,,,0,open,Suma Thc,,
 ,,,,,virsija_thc,number,U,,,4,open,"Mėginių skaičius, viršijantis Thc",,
