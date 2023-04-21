@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Pašariniai augalai""",,,,,
 ,,,,,,,,,"""Aliejiniai ir pluoštiniai augalai""",,,,,
 ,,,,,,,,,"""Sėjamieji grikiai""",,,,,
-,,,,,rusis,string,,,,4,open,,Augalo rūšies pavadinimas,
+,,,,,rusis,string,,,,3,open,,Augalo rūšies pavadinimas,
 ,,,,,veisle,string,,,,4,open,,Augalo veislės pavadinimas,
 ,,,,,kategorija,string,,,,2,open,,Kategorijos kodas,
 ,,,,,kiekis,number,U,,,4,open,,Sėklos kiekis,
