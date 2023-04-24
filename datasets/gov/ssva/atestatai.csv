@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ssva/atestatai,,,,,,,,,,,,Pastatų energinio naudingumo sertifikavimo ekspertų atestatų registras,
+,datasets/gov/ssva/pense_atestatai,,,,,,,,,,,,Duomenys apie pastatų energinio naudingumo sertifikavimo ekspertų kvalifikacijos atestatus (fiziniai asmenys),
 ,,,,,,,,,,,,,,
 ,,,,Atestatas,,,nr,,,4,,,PENS Ekspertų Atestatai,
 ,,,,,nr,integer,,,,4,open,,Kvalifikacijos atestato numeris,
