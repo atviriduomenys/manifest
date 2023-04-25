@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bylos_tipas,string,,,,3,open,,Bylos tipas,
 ,,,,,realizuota,date,D,,,4,open,,Realizavimo veiksmo data,
 ,,,,,realiz_budas,string,,,,3,open,,Realizavimo veiksmo tipas,
-,,,,,realizuotojas,string,,,,3,open,,Realizuotojo pavadinimas,
+,,,,,realizuotojas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,2,open,,Realizuotojo pavadinimas,
 ,,,,,mato_vnt,string,,,,3,open,,Mato vienetas,
 ,,,,,realiz_turto_verte,number,,,,2,open,,Realizuoto turto vertė,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
