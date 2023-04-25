@@ -10,8 +10,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,priimta,integer,,,,2,open,,"Metai, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
 ,,,,,,comment,type,,"update(type: """date""", ref: """Q""")",4,,,,
 ,,,,,priimta_ketvirtis,integer,,,,2,open,,"Ketvirtis, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
-,,,,,teritorijos_kodas,ref,datasets/gov/vgtpt/teisis/klasifikatoriai/teritorijos,,,4,open,,Pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
-,,,,,bylos_rusies_kodas,ref,datasets/gov/vgtpt/teisis/klasifikatoriai/bylu_rusys,,,4,open,,"Bylos, kurioje reikalinga antrinė teisinė pagalba",Rūšies kodas iš TEISIS bylų rūšių klasifikatoriaus
+,,,,,teritorijos_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/teritorijos,,,4,open,,Pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
+,,,,,bylos_rusies_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/bylu_rusys,,,4,open,,"Bylos, kurioje reikalinga antrinė teisinė pagalba",Rūšies kodas iš TEISIS bylų rūšių klasifikatoriaus
 ,,,,,kompensuojama,string,,,,4,open,,Valstybės kompensuojamos teisinės pagalbos procentinė išraiška,
 ,,,,,,enum,,,"""100""",,,,Kompensuojama 100 proc. teisinės pagalbos išlaidų,
 ,,,,,,,,,"""50""",,,,Kompensuojama 50 proc. teisinės pagalbos išlaidų,
