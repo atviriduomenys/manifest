@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vpt_grupe,string,,,,3,open,,VPT grupė,
 ,,,,,vpt_kategorija,string,,,,3,open,,VPT kategorija,
 ,,,,,bylos_tipas,string,,,,3,open,,Bylos tipas,
-,,,,,realiz_data,date,D,,,4,open,,Realizavimo veiksmo data,
+,,,,,realizuota,date,D,,,4,open,,Realizavimo veiksmo data,
 ,,,,,realiz_budas,string,,,,3,open,,Realizavimo veiksmo tipas,
 ,,,,,realizuotojas,string,,,,3,open,,Realizuotojo pavadinimas,
 ,,,,,mato_vnt,string,,,,3,open,,Mato vienetas,
