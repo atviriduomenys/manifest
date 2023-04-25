@@ -44,7 +44,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Verte,,,id,,,4,open,,Pateikiama informacija apie atlikto ūkinio vertingumo tyrimo duomenis.,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,rusis,string,,,,3,open,,Augalo rūšis,
+,,,,,rusis,string,,,,2,open,,Augalo rūšis,
 ,,,,,stotis,string,,,,4,open,,Augalų veislių tyrimo skyriaus pavadinimas,
 ,,,,,,enum,,,"""Kauno augalų veislių tyrimo skyrius""",,,,,
 ,,,,,,,,,"""Pasvalio augalų veislių tyrimo skyrius""",,,,,
