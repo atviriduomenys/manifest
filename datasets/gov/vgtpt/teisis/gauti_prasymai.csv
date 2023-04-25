@@ -5,10 +5,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GautasPrasymas,,,nr,,,4,,,Gautų prašymų suteikti antrinę teisinę pagalbą duomenys,
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,gauta,integer,,,,2,open,,"Metai, kada gautas prašymas suteikti antrinę teisinę pagalbą",
-,,,,,,comment,type,,"update(type: """date""", ref: """Q""")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
 ,,,,,gauta_ketvirtis,integer,,,,2,open,,"Ketvirtis, kada gautas prašymas suteikti antrinę teisinę pagalbą",
 ,,,,,priimta,integer,,,,2,open,,"Metai, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
-,,,,,,comment,type,,"update(type: """date""", ref: """Q""")",4,,,,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
 ,,,,,priimta_ketvirtis,integer,,,,2,open,,"Ketvirtis, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
 ,,,,,teritorijos_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/teritorijos,,,4,open,,Pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
 ,,,,,bylos_rusies_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/bylu_rusys,,,4,open,,"Bylos, kurioje reikalinga antrinė teisinė pagalba",Rūšies kodas iš TEISIS bylų rūšių klasifikatoriaus
