@@ -6,5 +6,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Sekla,,,id,,,4,open,,"Pateikiama informacija apie sertifikuotos bulvių sėklos veislę, kategoriją / klasę, kiekį, kg",
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,veisle,string,,,,4,open,,Augalo veislės pavadinimas,
-,,,,,kategorija,string,,,,2,open,,Kategorijos kodas,
+,,,,,kategorija,string,,,,3,open,,Kategorijos kodas,
 ,,,,,kiekis,number,U,,,4,open,,Sėklos kiekis,
