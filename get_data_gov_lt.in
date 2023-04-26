@@ -349,6 +349,7 @@ datasets/gov/vmi/turto_realizavimas.csv
 datasets/gov/sadm/charakteristikos.csv
 datasets/gov/vat/r32_gmo_nustatymas.csv
 datasets/gov/vat/r2_fitosanitarinis_registras.csv
+datasets/gov/vat/r20_sert_sekl.csv
 datasets/gov/vat/r31_pluostines_kanapes.csv
 datasets/gov/finmin/paraiskos.csv
 datasets/gov/vgtpt/teisis/gauti_prasymai.csv
