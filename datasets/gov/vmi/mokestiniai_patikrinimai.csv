@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Sprendimas,,,,,,,,,Mokestinių patikrinimų metu juridiniams asmenims priskaičiuotos sumos,
-,,,,,evrk2,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
+,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
 ,,,,,metai,integer,yr,,,4,open,,Patikrinimo metai,
 ,,,,,mm_skaicius,number,,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,suma_akc,number,,,,2,open,,Akcizo suma,Sprendimo dėl  akcizo mokesčio suma (įskaitant delspinigius ir baudas)
