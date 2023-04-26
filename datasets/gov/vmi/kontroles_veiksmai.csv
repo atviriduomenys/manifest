@@ -9,4 +9,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,string,,,,4,open,,savivaldybė,
 ,,,,,mm_skaicius,integer,,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,metai,integer,yr,,,4,open,,Metai,
-
