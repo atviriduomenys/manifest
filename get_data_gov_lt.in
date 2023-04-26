@@ -344,7 +344,6 @@ datasets/gov/vat/seklu_laboratorijos.csv
 datasets/gov/vat/panaikinti_aprobavimai.csv
 datasets/gov/ssva/pens_ekspertu_atestatai.csv
 datasets/gov/ssva/teritoriju_planavimo_vadovu_atestatai.csv
-datasets/gov/finmin/kvietimai.csv
 datasets/gov/vmi/turto_realizavimas.csv
 datasets/gov/sadm/charakteristikos.csv
 datasets/gov/vat/r32_gmo_nustatymas.csv
