@@ -52,7 +52,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Utenos augalų veislių tyrimo skyrius""",,,,,
 ,,,,,,,,,"""Rumokų bandymų stotis""",,,,,
 ,,,,,,,,,"""Kaišiadorių augalų veislių tyrimo skyrius""",,,,,
-,,,,,veisle,string,,,,2,open,,Veislės pavadinimas. Skliaustuose pateikiamas selekcinis veislės žymuo,
+,,,,,veisle,string,,,,2,open,,Veislės pavadinimas,Skliaustuose pateikiamas selekcinis veislės žymuo,
 ,,,,,rodiklis_en,string,,,,4,open,,Tyrimo rodiklio pavadinimas anglų kalba,
 ,,,,,rodiklis_lt,string,,,,4,open,,Tyrimo rodiklio pavadinimas,
 ,,,,,palaikytojo_nr,ref,Veisle,,,4,open,,"Indentifikacinis numeris, nurodantis veislės palaikytoją informacinėje sistemoje.",
