@@ -1,1 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/kontroles_veiksmai,,,,,,,,,,,,Atlikti kontrolės veiksmai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Veiksmas,,,,,,,,,Atlikti kontrolės veiksmai,
+,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
+,,,,,savivaldybe,string,,,,4,open,,savivaldybė,
+,,,,,mm_skaicius,integer,,,,4,open,,Mokesčių mokėtojų skaičius,
+,,,,,metai,integer,yr,,,4,open,,Metai,
 
