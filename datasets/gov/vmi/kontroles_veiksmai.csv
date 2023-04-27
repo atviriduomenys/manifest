@@ -6,6 +6,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Veiksmas,,,,,,,,,Atlikti kontrolės veiksmai,
 ,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
-,,,,,savivaldybe,integer,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,savivaldybė,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,savivaldybė,
 ,,,,,mm_skaicius,integer,,,,4,open,,Mokesčių mokėtojų skaičius,
 ,,,,,metai,integer,yr,,,4,open,,Metai,
