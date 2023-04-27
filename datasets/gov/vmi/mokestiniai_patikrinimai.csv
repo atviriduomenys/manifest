@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Sprendimas,,,,,,,,,Mokestinių patikrinimų metu juridiniams asmenims priskaičiuotos sumos,
+,,,,Sprendimas,,,,,,2,,,Mokestinių patikrinimų metu juridiniams asmenims priskaičiuotos sumos,
 ,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,4,open,,Ekonominės veiklos rūšies kodas,
 ,,,,,metai,integer,,,,2,open,,Patikrinimo metai,
 ,,,,,mm_skaicius,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
