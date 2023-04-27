@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/sert_bulv,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sekla,,,id,,,4,open,,"Pateikiama informacija apie sertifikuotos bulvių sėklos veislę, kategoriją / klasę, kiekį, kg",
+,,,,,id,string,,,,4,open,,Identifikacinis numeris,
+,,,,,veisle,string,,,,4,open,,Augalo veislės pavadinimas,
+,,,,,kategorija,string,,,,3,open,,Kategorijos kodas,
+,,,,,kiekis,number,U,,,4,open,,Sėklos kiekis,
