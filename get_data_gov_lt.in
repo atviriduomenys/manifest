@@ -346,3 +346,5 @@ datasets/gov/sadm/charakteristikos.csv
 datasets/gov/vat/r32_gmo_nustatymas.csv
 datasets/gov/vat/r2_fitosanitarinis_registras.csv
 datasets/gov/finmin/paraiskos.csv
+datasets/gov/vmi/mokestiniai_patikrinimai.csv
+datasets/gov/vmi/kontroles_veiksmai.csv
