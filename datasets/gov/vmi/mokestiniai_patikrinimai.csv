@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
 ,,,,,metai,integer,,,,2,open,,Patikrinimo metai,
 ,,,,,mm_skaicius,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
-,,,,,suma_akc,number,,,,2,open,,Akcizo suma,Sprendimo dėl  akcizo mokesčio suma (įskaitant delspinigius ir baudas)
+,,,,,suma_akc,number,,,,2,open,,Akcizo suma,Sprendimo dėl  akcizo mokesčio suma,Įskaitant delspinigius ir baudas
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,suma_pln,number,,,,2,open,,Pelno mokesčio suma,Sprendimo dėl pelno mokesčio suma (įskaitant delspinigius ir baudas)
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
