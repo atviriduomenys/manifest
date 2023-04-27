@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/aprobuotos_bulves,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Paselis,,,id,,,4,open,,"Pateikiama informacija apie sėkinių bulvių aprobuotus pasėlius (veislę, aprobuotą plotą, ha, pripažintą kategoriją, išbrokuotą plotą, ha, iš viso aprobuotą plotą (su išbrokuotais), ha)",
+,,,,,id,string,,,,4,open,,Aprobavimo eilės numeris,
+,,,,,veisle,string,,,,4,open,,Augalo veislė ,
+,,,,,kategorija,string,,,,3,open,,Kategorijos kodas,
+,,,,,aprobuotas_plotas,number,ha,,,4,open,,"Aprobuotas plotas, ha",
+,,,,,isbrokuotas_plotas,number,ha,,,4,open,,"Išbrokuotas plotas, ha",
