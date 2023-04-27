@@ -8,4 +8,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis,,,4,open,,Ekonominės veiklos rūšies kodas,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[kodas],,,4,open,,savivaldybė,
 ,,,,,mm_skaicius,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
-,,,,,metai,integer,yr,,,4,open,,Metai,
+,,,,,metai,integer,,,,2,open,,Metai,
