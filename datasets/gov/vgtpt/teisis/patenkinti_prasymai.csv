@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vgtpt/teisis/patenkinti_prasymai,,,,,,,,,,,,Prašymų suteikti antrinę teisinę pagalbą patenkinimo duomenys,"Valstybės garantuojamos teisinės pagalbos tarnybos duomenų, kaupiamų Teisinės pagalbos paslaugų informacinėje sistemoje (TEISIS),duomenys apie gautų prašymų suteikti antrinę teisinę pagalbą patenkinimą. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 1 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0. Atvėrimo data —2023-04-03."
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PatenkintasPrasymas,,,nr,,,4,,,Prašymų suteikti antrinę teisinę pagalbą patenkinimo duomenys,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,gauta_metai,integer,,,,2,open,,"Metai, kada gautas prašymas suteikti antrinę teisinę pagalbą",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
+,,,,,gauta_ketvirtis,integer,,,,2,open,,"Ketvirtis, kada gautas prašymas suteikti antrinę teisinę pagalbą",
+,,,,,priimta_metai,integer,,,,4,open,,"Metai, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
+,,,,,priimta_ketvirtis,integer,,,,2,open,,"Ketvirtis, kada priimtas sprendimas suteikti antrinę teisinę pagalbą",
+,,,,,teritorijos_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/Teritorija,,,4,,,Antrinę teisinę pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
+,,,,,gauti_prasymai,integer,U,,,4,open,,Teritoriniame padalinyje gautų prašymų suteikti antrinę teisinę pagalbą skaičius,
+,,,,,patenkinti_prasymai,integer,U,,,4,open,,Teritoriniame padalinyje patenkintų prašymų suteikti antrinę teisinę pagalbą skaičius,
+,,,,,patenkinti_prasymai_dalis,integer,%,,,4,open,,Patenkintų prašymų suteikti antrinę teisinę pagalbą skaičius procentais,
+,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
