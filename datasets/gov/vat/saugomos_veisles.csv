@@ -68,7 +68,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eil_nr,string,,,,4,open,,Eil Nr,
 ,,,,,paraiskos_nr,string,,,,4,open,,Paraiškos Nr,
 ,,,,,rusis,ref,Veisle,,,2,open,,Augalo rūšis,
-,,,,,veisle,string,Veisle,,,4,open,,Veislės pavadinimas,
+,,,,,veisle,ref,Veisle,,,4,open,,Veislės pavadinimas,
 ,,,,,selekcininkas,string,,,,1,open,,Selekcininkas,
 ,,,,,igaliotasis_atstovas,string,,,,2,open,,Įgaliotasis atstovas,
 ,,,,,,comment,type,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")	",4,,"spinta:205, manifest:1290",,
