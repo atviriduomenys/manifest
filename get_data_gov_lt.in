@@ -356,7 +356,6 @@ datasets/gov/vat/r20_sert_sekl.csv
 datasets/gov/vat/r31_pluostines_kanapes.csv
 datasets/gov/finmin/paraiskos.csv
 datasets/gov/vmi/mokestiniai_patikrinimai.csv
-datasets/gov/vmi/kontroles_veiksmai.csv
 datasets/gov/vgtpt/teisis/gauti_prasymai.csv
 datasets/gov/vgtpt/teisis/klasifikatoriai.csv
 datasets/gov/vgtpt/teisis/patenkinti_prasymai.csv
