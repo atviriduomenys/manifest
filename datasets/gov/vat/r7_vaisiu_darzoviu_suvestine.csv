@@ -25,4 +25,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""kita""",,,,,
 ,,,,,,,,,"""pakavimo_trukumai""",,,,,
 ,,,,,sunaikinta,number,t,,,4,open,,Taikytos priemonės produkcijos kiekiui tonomis: sunaikinta,
-,,,,,viso,number,t,,,4,open,,Bendras kiekis tonomis.,
+,,,,,viso,number,t,,,4,open,,Bendras kiekis tonomis,
