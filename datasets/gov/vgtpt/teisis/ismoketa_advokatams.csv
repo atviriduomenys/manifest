@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
-,datasets/gov/rc/vgtpt/teisis/ismoketa_advokatams,,,,,,,,,,,,Teiktos valstybės garantuojamos antrinės teisinės pagalbos trukmė ir vertė,"Valstybės garantuojamos teisinės pagalbos tarnybos duomenų, kaupiamų Teisinės pagalbos paslaugų informacinėje sistemoje (TEISIS),duomenys apie teiktos valstybės garantuojamos antrinės teisinės pagalbos trukmę ir vertę. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 1 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0. Atvėrimo data —2023-04-03.",
+,datasets/gov/vgtpt/teisis/ismoketa_advokatams,,,,,,,,,,,,Teiktos valstybės garantuojamos antrinės teisinės pagalbos trukmė ir vertė,"Valstybės garantuojamos teisinės pagalbos tarnybos duomenų, kaupiamų Teisinės pagalbos paslaugų informacinėje sistemoje (TEISIS),duomenys apie teiktos valstybės garantuojamos antrinės teisinės pagalbos trukmę ir vertę. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 1 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0. Atvėrimo data —2023-04-03.",
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,SumaAdvokatui,,,nr,,,4,,,Teiktos valstybės garantuojamos antrinės teisinės pagalbos trukmė ir vertė,,
