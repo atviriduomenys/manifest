@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Palaikytojas,,,nr,,,,,,,
 ,,,,,nr,string,,,,4,open,,"Indentifikacinis numeris, nurodantis veislės palaikytoją informacinėje sistemoje.",
-,,,,,pavadinimas,string,,,,,,,Palaikytojo pavadinimas,
+,,,,,pavadinimas,string,,,,1,open,,Palaikytojo pavadinimas,
 ,,,,,,,,,,,,,,
 ,,,,Veisle,,,id,,,4,open,,"Pateikiama informacija apie į Nacionalinį sąrašą įrašytas veisles, išbrauktas veisles, veislių palaikytojų ir selekcininkų įgaliotųjų atstovų sąrašus.",
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
