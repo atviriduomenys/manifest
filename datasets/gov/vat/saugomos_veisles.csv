@@ -58,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,veisle,ref,SaugVeisle,,,2,open,,Veislės pavadinimas,Skliaustuose pateikiamas selekcinis veislės žymuo
 ,,,,,rodiklis_en,string,,,,4,open,,Tyrimo rodiklio pavadinimas anglų kalba,
 ,,,,,rodiklis_lt,string,,,,4,open,,Tyrimo rodiklio pavadinimas,
-,,,,,palaikytojas,ref,Palaikytojas,,,4,open,,Veislės palaikytojas,
+,,,,,palaikytojas,ref,Palaikytojas,,,4,open,,Veislės palaikytojo Nr.,
 ,,,,,metai,integer,,,,2,open,,Derliaus metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,reiksme,number,,,,4,open,,Tyrimo rodiklio reikšmė,
