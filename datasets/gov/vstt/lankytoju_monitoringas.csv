@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Monitoringas,,,,,,,,,Saugomų teritorijų lankytojų duomenys,
+,,,,Monitoringas,,,vieta,,,2,,,Saugomų teritorijų lankytojų duomenys,
 ,,,,,vieta,string,,,,4,open,,Lankoma vieta,
 ,,,,,lankytojai,integer,U,,,3,open,,Lankytoju kiekis,
 ,,,,,metai,integer,,,,2,open,,Metai,
