@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Monitoringas,,,vieta,,,2,,,Saugomų teritorijų lankytojų duomenys,
 ,,,,,vieta,string,,,,4,open,,Lankoma vieta,
-,,,,,lankytojai,integer,U,,,3,open,,Lankytoju kiekis,
+,,,,,lankytojai,integer,U,,,4,open,,Lankytoju kiekis,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref:""Y"")",4,open,spinta:213,,
 ,,,,,geometrija,"geometry(polygon,3346)",,,,4,open,,Lankomos vietos geometrija,
