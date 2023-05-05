@@ -214,6 +214,7 @@ datasets/gov/vlk/prisirase_prevencines.csv
 datasets/gov/vlk/cavp_mpp.csv
 datasets/gov/vlk/straipsniai.csv
 datasets/gov/vlk/faktines_lovos.csv
+datasets/gov/vlk/kochleariniai_implantai.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -364,5 +365,6 @@ datasets/gov/vgtpt/teisis/ismoketa_mediatoriams.csv
 datasets/gov/vgtpt/teisis/ismoketa_advokatams.csv
 datasets/gov/vgtpt/teisis/gynejo_parinkimai.csv
 datasets/gov/vat/r27_aprob_sekl_pasel.csv
+datasets/gov/vat/r28_ekolog_pasel.csv
 datasets/gov/vat/r7_vaisiu_darzoviu_suvestine.csv
 datasets/gov/vat/r29_bulv_aprob.csv
