@@ -269,6 +269,7 @@ datasets/gov/migracija/prieglobscio_suteikimas.csv
 datasets/gov/vstt/saugojamos_rusys.csv
 datasets/gov/vstt/saugomu_ter_kadastras.csv
 datasets/gov/vstt/natura2000.csv
+datasets/gov/vstt/lankytoju_monitoringas.csv
 datasets/gov/aaa/vandens_naudojimas.csv
 datasets/gov/rsc/vezimo_leidimai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/sukelejai.csv
