@@ -6,6 +6,7 @@ datasets/gov/vpt/sutartys.csv
 datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
 datasets/gov/vmi/individuali_veikla.csv
+datasets/gov/rc/ar/adresai.csv
 datasets/gov/rc/ar/savivaldybe.csv
 datasets/gov/rc/ar/apskritis.csv
 datasets/gov/rc/ar/gatve.csv
