@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/apmoketos_saskaitos_es,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,ApmoketaSaskaita,,,,,,4,,,Apmokėtos sąskaitos už LR apdraustųjų privalomuoju sveikatos draudimu gydymą Europos Sąjungos šalyje,"Informacija apie PSDF išlaidas už LR apdraustiesiems PSD kitose Europos Sąjungos, Europos ekonominės erdvės valstybėse narėse, Šveicarijos Konfederacijoje ir Jungtinėje Karalystėje (toliau – ES šalys) suteiktas asmens sveikatos priežiūros paslaugas, įgyvendinant Europos Parlamento ir Tarybos Reglamento (EB) Nr. 883/2004 ir Reglamento (EB) Nr. 987/2009 nuostatas"
+,,,,,metai,integer,,,,2,open,,Metai,"Kalendoriniai metai, kuriais buvo apmokėtos sąskaitos"
+,,,,,,comment,type,,"update(type: ""date, ref: ""Y"")""",4,open,spinta:213,,
+,,,,,salis,string,,,,3,open,,Šalies pavadinimas,"Šalies, kurioje, vadovaujantis socialinės apsaugos sistemas koordinuojančių reglamentų (EB) Nr. 883/2004 ir (EB) Nr. 987/2009 nuostatomis, Lietuvos Respublikos apdraustiesiems privalomuoju sveikatos draudimu (toliau – LR apdraustieji) buvo suteiktos medicinos paslaugos, t. y. Europos Sąjungos, Europos ekonominės erdvės valstybės narės, Šveicarijos Konfederacijos arba Jungtinės Karalystės (toliau – ES šalys), pavadinimas"
+,,,,,tipas,string,,,,3,open,,Sąskaitos tipas,"Apdraustojo teisę į išmokas natūra (t. y. asmens sveikatos priežiūros paslaugas) patvirtinantis dokumentas, kurio pagrindu sąskaita pateikta apmokėti"
+,,,,,saskaitu_sk,number,U,,,4,open,,Sąskaitų skaičius,"PSDF biudžeto lėšomis apmokėtų atitinkamos ES šalies susižinojimo tarnybos pateiktų sąskaitų už LR apdraustiesiems toje ES šalyje suteiktas medicinos paslaugas, skaičius vienetais"
+,,,,,suma,number,U,,,2,open,,Suma,"PSDF biudžeto lėšų suma, pervesta ES šalies susižinojimo tarnybai už LR apdraustiesiems atitinkamoje ES šalyje suteiktas medicinos paslaugas "
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
