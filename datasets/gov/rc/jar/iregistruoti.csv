@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ja_kodas,integer,,,,4,open,,Juridinio asmens kodas,
 ,,,,,ja_pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
 ,,,,,pilnas_adresas,string,,,,1,open,,Registracijos adresas,
-,,,,,adresas,ref,/datasets/gov/rc/ar/adresas/Adresas,,,4,open,,Adresas,
+,,,,,adresas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,Adresas,
 ,,,,,reg_data,date,D,,,4,open,,Įregistravimo data,
 ,,,,,isreg_data,date,D,,,4,open,,Išregistravimo data,
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Formos pavadinimas,
