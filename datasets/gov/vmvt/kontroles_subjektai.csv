@@ -10,7 +10,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,obj_kontaktai,string,,,,0,open,,Veterinarinės kontrolės objekto kontaktiniai duomenys,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
 ,,,,,obj_vmvt,string,,,,2,open,,VMVT teritorinė,"VMVT departamentas ar skyrius, kuris kontroliuoja veterinės kontrolės objektą"
 ,,,,,obj_veikla_kodas,ref,VeiklosKlasifikatorius,,,4,open,,VMVT veiklos kodas,
-,,,,,obj_rizikos_grupe,string,,,,2,open,,Pastabos,"Pastabos apie veterinarinės kontrolės objekto veiklą, rizikos grupes"
 ,,,,,,,,,,,,,,
 ,,,,VeiklosKlasifikatorius,,,obj_veikla_kodas,,,4,,,VMVT veiklos klasifikatorius,
 ,,,,,obj_veikla_kodas,integer,,,,4,open,,VMVT veiklos kodas,
