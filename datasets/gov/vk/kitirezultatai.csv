@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/kiti_rezultatai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,KitiVeiklosRezultatai,,,,,,4,,,Valstybės kontrolės vertinimų rezultatai,Valstybės kontrolės vertinimų (ne auditų) rezultatai
+,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,Vertinimo (ne audito) identifikacijos numeris
+,,,,,vertinimo_pavadinimas,string,,,,3,open,,Produkto pavadinimas,Vertinimo (ne audito) pavadinimas
+,,,,,registravimo_data,date,D,,,4,open,,Registracijos data,Dokumento registracijos dokumentų valdymo posistemyje data
+,,,,,failo_url,url,,,,4,open,,Nuoroda į produkto dokumentą,Vertinimo (ne audito) dokumentas

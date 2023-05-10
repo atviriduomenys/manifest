@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/chemijos_naudotojai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,ChemNaudotojai,,,,,,2,,,Asmenys,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
+,,,,,jar_kodas,string,,,,2,open,,Įmonės kodas,
+,,,,,,comment,type,,"create(property: ""imone"", type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,,,,
+,,,,,,comment,property,,"update(property: ""imone.ja_kodas"", type: """")",4,,spinta:216,,
+,,,,,metai,integer,,,,2,open,,Dokumento (ataskaitos) atsiskaitymo metai,"Nuo 2017 m."
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

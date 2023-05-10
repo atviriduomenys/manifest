@@ -145,7 +145,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Ne  ,
 ,,,,,,,,,3,,,,"Aš aklas (-a), visai nematau  ",
 ,,,,,pl2,integer,,,,,open,,Jei PL1 = 1: Ar prastai matote net nešiodamas (-a) akinius ar kontaktinius lęšius? / Jei PL1 = 2: Ar prastai matote (ar turite regėjimo sutrikimų)? ,
-,,,,,,enum,,,1,`,,,"Ne, matau gerai  ",
+,,,,,,enum,,,1,,,,"Ne, matau gerai  ",
 ,,,,,,,,,2,,,,Šiek tiek prastai ,
 ,,,,,,,,,3,,,,Labai prastai ,
 ,,,,,,,,,-2,,,,Netaikoma,
@@ -372,9 +372,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Ne,
 ,,,,,,,,,-1,,,,"Nėra (nežino, atsisako nurodyti)",
 ,,,,,pa1,string,,,,,open,,Kada paskutinį kartą skiepijotės nuo gripo?,
-,,,,,,enum,,,0,,,,"Seniai (daugiau nei prieš metus) / Niekada  
+,,,,,,enum,,,"""0""",,,,"Seniai (daugiau nei prieš metus) / Niekada  
 ",
-,,,,,,,,,-1,,,,"Nėra (nežino, atsisako nurodyti)",
+,,,,,,,,,"""-1""",,,,"Nėra (nežino, atsisako nurodyti)",
 ,,,,,pa2,integer,,,,,open,,a) Kraujospūdį,
 ,,,,,,enum,,,1,,,,Per pastaruosius 12 mėn. ,
 ,,,,,,,,,2,,,,Nuo 1 m. iki 5 m.,

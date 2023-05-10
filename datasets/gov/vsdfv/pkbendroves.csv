@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vsdfv/pkbendroves,,,,,,,,,,,,,
+,,sodrapkbendroves,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_bendroves.zip,"extract(""zip"")[""pk_bendroves.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,PkBendrove,,,bendr_pav,,,,,,,
+,,,,,bendr_pav,string,,BEND_PAVAD,,3,open,,Pensijų kaupimo bendrovės pavadinimas,
+,,,,,pensiju_fondas,string,,FONDAS,,3,open,,Pensijų fondas,
