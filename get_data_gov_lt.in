@@ -371,3 +371,4 @@ datasets/gov/vat/r27_aprob_sekl_pasel.csv
 datasets/gov/vat/r28_ekolog_pasel.csv
 datasets/gov/vat/r7_vaisiu_darzoviu_suvestine.csv
 datasets/gov/vat/r29_bulv_aprob.csv
+dataset/gov/finmin/kontrolesveiksmai.csv
