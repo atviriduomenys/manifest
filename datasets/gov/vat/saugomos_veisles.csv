@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,galioja_iki,integer,,,,2,open,,"Metai, iki kurių gruodžio 31 d. galioja įrašymas",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-,,,,,atstovas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,4,open,,Atstovo pavadinimas,
+,,,,,atstovas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Atstovo pavadinimas,
 ,,,,,atstovo_adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,4,open,,Atstovo adresas,
 ,,,,,metai,integer,,,,2,open,,Įrašymo metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
