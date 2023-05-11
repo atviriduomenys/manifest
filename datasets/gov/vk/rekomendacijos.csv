@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vk/rekomendacijos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Rekomendacija,,,,,,4,,,Valstybinio audito rekomendacijų įgyvendinimas,Valstybės kontrolės atliktų valstybinių auditų rekomendacijų įgyvendinimo rezultatai
-,,,,,rekomendacijos_id,integer,,,,3,open,,Rekomendacijos ID,Rekomendacijos kodas
+,,,,,rekomendacijosid,integer,,,,3,open,,Rekomendacijos ID,Rekomendacijos kodas
 ,,,,,audit_cardid,integer,,,,3,open,,Audito ID,Audito kodas
 ,,,,,turinys,string,,,,3,open,,Turinys,Rekomendacijos turinys
 ,,,,,sritis,string,,,,3,open,,Sritis,"Srities, kurioje atliktas auditas, pavadinimas"
@@ -16,14 +16,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pateikimo_forma,string,,,,3,open,,Pateikimo forma,Rekomendacijos pateikimo forma 
 ,,,,,,,,,,,,,,
 ,,,,RekomendacijosPriemone,,,,,,4,,,Valstybinio audito rekomendacijų įgyvendinimas,Valstybės kontrolės atliktų valstybinių auditų rekomendacijų įgyvendinimo rezultatai
-,,,,,priemones_id,integer,,,,3,open,,Priemonės ID,Priemonės kodas
-,,,,,rekomendacijos_id,ref,Rekomendacija,,,4,open,,Rekomendacijos ID,Rekomendacijos kodas
+,,,,,priemonesid,integer,,,,3,open,,Priemonės ID,Priemonės kodas
+,,,,,rekomendacija,ref,Rekomendacija,,,4,open,,Rekomendacijos ID,Rekomendacijos kodas
 ,,,,,priemone,string,,,,3,open,,Priemonės turinys,Priemonės turinys
+,,,,,rezultatas,string,,,,3,open,,Priemonės rezultatas,Priemonės rezultatas
 ,,,,,igyvendinimo_bukle,string,,,,3,open,,įgyvendinimo būklė,Priemonės įgyvendinimo būklė
 ,,,,,igyvendinimo_data,date,D,,,4,open,,įgyvendinimo data,Priemonės įgyvendinimo data 
 ,,,,,laiko_bukle,string,,,,3,open,,Laiko būklė,Priemonės įgyvendinimo laiko būklė
 ,,,,,,,,,,,,,,
 ,,,,RekomendacijosPriemonesSubjektas,,,,,,4,,,Valstybinio audito rekomendacijų įgyvendinimas,Valstybės kontrolės atliktų valstybinių auditų rekomendacijų įgyvendinimo rezultatai
-,,,,,priemones_id,ref,RekomendacijosPriemone,,,3,open,,Priemonės ID,Priemonės kodas
+,,,,,rekomendacijos_priemone,ref,RekomendacijosPriemone,,,4,open,,Priemonės ID,Priemonės kodas
 ,,,,,subjekto_pavadinimas,string,,,,3,open,,Subjekto pavadinimas,"Subjekto, kuris įgyvendina priemonę, pavadinimas"
 ,,,,,subjekto_kodas,string,,,,3,open,,Subjekto kodas,"Subjekto, kuris įgyvendina priemonę, kodas"

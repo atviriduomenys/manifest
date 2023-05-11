@@ -1,11 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/seniunija,,,,,,,,,,,,Adresų registras,
-,,seniunija,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla=adr_seniunijos.csv ,,,,,Adresų registro duomenų bazė,
-,,,,Seniunija,,,sen_kodas,,,,,,Adresų registro seniūnijų tekstinių duomenų rinkinys ,Seniūnijų tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - seniūnijas apibūdinantys duomenys).  Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,sen_kodas,integer,,SEN_KODAS,,3,open,,Seniūnijos  identifikavimo kodas,
-,,,,,tipas,string,,TIPAS,,3,open,,Administracinio vieneto tipas,
-,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Administracinio vieneto tipo trumpinys,
-,,,,,pavadinimas,string,,VARDAS_K,,4,open,,Seniūnijos pavadinimas,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,SAV_KODAS,,3,open,,"Savivaldybės, kurioje yra seniūnija, identifikavimo kodas",
-,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
-,,,,,sen_nuo,date,,SEN_NUO,,3,open,,Objekto įregistravimo data,
+,,,,Seniunija,,,sen_kodas,,,4,,,Adresų registro seniūnijų tekstinių duomenų rinkinys ,Seniūnijų tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - seniūnijas apibūdinantys duomenys).  Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,sen_kodas,integer,,,,4,open,,Seniūnijos  identifikavimo kodas,
+,,,,,tipas,string,,,,3,open,,Administracinio vieneto tipas,
+,,,,,tipo_santrumpa,string,,,,3,open,,Administracinio vieneto tipo trumpinys,
+,,,,,pavadinimas,string,,,,3,open,,Seniūnijos pavadinimas,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje yra seniūnija, identifikavimo kodas",
+,,,,,sen_nuo,date,D,,,4,open,,Objekto įregistravimo data,

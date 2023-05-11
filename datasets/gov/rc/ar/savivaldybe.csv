@@ -1,11 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/savivaldybe,,,,,,,,,,,,Adresų registras,
-,,savivaldybe,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla=adr_savivaldybes.csv ,,,,,Adresų registro duomenų bazė,
-,,,,Savivaldybe,,,sav_kodas,,,,,,Adresų registro savivaldybių tekstinių duomenų rinkinys ,Savivaldybių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - savivaldybes apibūdinantys duomenys).  Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,sav_kodas,integer,,SAV_KODAS,,3,open,,Savivaldybės identifikavimo kodas,
-,,,,,tipas,string,,TIPAS,,3,open,,Administracinio vieneto tipas,
-,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Administracinio vieneto tipo trumpinys,
-,,,,,pavadinimas,string,,VARDAS_K,,3,open,,Savivaldybės pavadinimas,
-,,,,,adm_kodas,ref,/datasets/gov/rc/ar/apskritis/Apskritis,ADM_KODAS,,4,open,,"Apskrities, kurioje yra savivaldybė, identifikavimo kodas",
-,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
-,,,,,sav_nuo,date,,SAV_NUO,,3,open,,Objekto įregistravimo data,
+,,,,Savivaldybe,,,sav_kodas,,,4,,,Adresų registro savivaldybių tekstinių duomenų rinkinys ,Savivaldybių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - savivaldybes apibūdinantys duomenys).  Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,sav_kodas,integer,,,,4,open,,Savivaldybės identifikavimo kodas,
+,,,,,tipas,string,,,,3,open,,Administracinio vieneto tipas,
+,,,,,tipo_santrumpa,string,,,,3,open,,Administracinio vieneto tipo trumpinys,
+,,,,,pavadinimas,string,,,,3,open,,Savivaldybės pavadinimas,
+,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,"Apskrities, kurioje yra savivaldybė, identifikavimo kodas",
+,,,,,sav_nuo,date,D,,,4,open,,Objekto įregistravimo data,

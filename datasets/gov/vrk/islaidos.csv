@@ -1,0 +1,57 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vrk/islaidos,,,,,,,,,,,,,
+,,resource10,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Islaidos,,,,,,
+,,,,PolitinesKampanijosIslaidos,,,islaidu_id,,,4,,,,
+,,,,,islaidu_id,integer,,,,4,open,,Unikalus identifikatorius,
+,,,,,rinkimu_id,integer,,,,2,open,,Rinkimų identifikatorius,
+,,,,,rinkimu_pavad,string,,,,2,open,,Rinkimų pavadinimas,
+,,,,,rink_apyg_id,integer,,,,2,open,,Rinkimų apygardos identifikatorius,
+,,,,,apyg_id,integer,,,,2,open,,Apygardos identifikatorius,
+,,,,,apyg_nr,integer,,,,2,open,,Apygardos numeris,
+,,,,,apyg_pavad,string,,,,2,open,,Apygardos pavadinimas,
+,,,,,p_kamp_rusis,string,,,,2,open,,Politinės kampanijos rūšis,Nurodoma politinė kampanijos rūšis (Seimo rinkimai / Savivaldybių tarybų rinkimai / Respublikos Prezidento rinkimai / rinkimai į Europos Parlamentą / Referendumas)
+,,,,,,enum,,,"""REF""",,,,Referendumas,
+,,,,,,,,,"""SAV""",,,,Savivaldybių tarybų rinkimai,
+,,,,,,,,,"""SEI""",,,,Seimo rinkimai,
+,,,,,p_kamp_id,integer,,,,2,open,,Politinės kampanijos identifikatorius,
+,,,,,p_kamp_pavad,string,,,,2,open,,Politinės kampanijos pavadinimas,
+,,,,,p_kamp_dal_id,integer,,,,2,open,,Politinės kampanijos dalyvio identifikatorius,
+,,,,,p_kamp_dal_pavad,string,,,,2,open,,Politinės kampanijos dalyvis,Politinės kampanijos dalyvio pavadinimas - pilnas pavadinimas
+,,,,,pasl_teikejo_tipas,string,,,,2,open,,Paslaugų teikėjo tipas (FA/JA),Paslaugų teikėjo tipas (Fizinis asmuo/ Juridinis asmuo) arba (FA/JA)
+,,,,,,enum,,,"""J""",,,,Juridinis asmuo,
+,,,,,,,,,"""F""",,,,Fizinis asmuo,
+,,,,,suma,number,,,,3,open,,Išlaidų suma,
+,,,,,pasl_teikejo_ja_kodas,string,,,,2,open,,Paslaugų teikėjo kodas,"Nurodomas juridinio asmens kodas, jeigu dal_fiz_jur nurodytas juridinis asmuo"
+,,,,,pasl_teikejo_fa_hash_kodas,string,,,,2,open,,Paslaugų teikėjo kodas,Fizinių asmenų atveju sugeneruojamas HASH kodas.
+,,,,,pasl_teikejas,string,,,,2,open,,"Paslaugų teikėjo pavadinimas arba pavardė, jei fizinis asmuo",Nurodomas pavadinimas / pavardė (jei fizinis asmuo).
+,,,,,pasl_teikejo_vardas,string,,,,2,open,,"Paslaugų teikėjo vardas, jei fizinis asmuo",Paslaugų teikėjo vardas
+,,,,,islaidu_paskirties_kodas,string,,,,4,open,,Išlaidų paskirties kodas,"Išlaidų paskirties kodas (RT, RR, RS, RI, RIN, RK. S, ORG, KEL, NPK, IA, AUD, G, LB, PLL, BMA, TP, N, NK, TI, KI, K, RU)"
+,,,,,islaidu_paskirtis,string,,,,3,open,,Išlaidų paskirties aprašymas (pavadinimas),
+,,,,,dok_data,date,D,,,4,open,,Išlaidų dokumento data,Išlaidas pagrindžiančio dokumento data
+,,,,,dok_nr,string,,,,4,open,,"Išlaidų dokumento serija, numeris",Išlaidas pagrindžiančio dokumento numeris
+,,,,,apmok_is_p_kamp,number,,,,3,open,,"Suma, apmokėta iš politinės kampanijos sąskaitos",
+,,,,,apmok_ne_is_p_kamp,number,,,,3,open,,"Suma, apmokėta ne iš politinės kampanijos sąskaitos",
+,,,,,skola,number,,,,2,open,,Skolos įsipareigojimų suma,
+,,,,,padengta_skola,number,,,,2,open,,Padengta skolos įsipareigojimų suma po ataskaitos pateikimo,
+,,,,,padengimo_data,date,D,,,2,open,,Skolų įsipareigojimų (dalies jų) įvykdymo data,Rodoma paskutinė skolų įsipareigojimų padengimo data
+,,,,,dal_tipo_kodas,string,,,,2,open,,Politinės kampanijos dalyvio tipo kodas,"Politinės kampanijos dalyvio tipo kodas (KS, FA, RO)"
+,,,,,,enum,,,"""K""",,,,Kandidatas,
+,,,,,,,,,"""KS""",,,,Kandidatų sąrašas,
+,,,,,,,,,"""P""",,,,Pretendentas,
+,,,,,,,,,"""PP""",,,,Politinė partija,
+,,,,,,,,,"""RI""",,,,Referendumo iniciatorius,
+,,,,,,,,,"""V""",,,,Politinis komitetas,
+,,,,,dal_tipas,string,,,,2,open,,Politinės kampanijos dalyvio registravimo būsena,Politinės kampanijos dalyvio tipas (Politinė partija / Politinės partijos keltas kandidatų sąrašas / Visuomeninis rinkimų komitetas/ Išsikėlęs kandidatas)
+,,,,,,enum,,,"""Kandidatas""",,,,Kandidatas,
+,,,,,,,,,"""Kandidatų sąrašas""",,,,Kandidatų sąrašas,
+,,,,,,,,,"""Pretendentas""",,,,Pretendentas,
+,,,,,,,,,"""Politinė partija""",,,,Politinė partija,
+,,,,,,,,,"""Referendumo iniciatorius""",,,,Referendumo iniciatorius,
+,,,,,,,,,"""Politinis komitetas""",,,,Politinis komitetas,
+,,,,,vardas,string,,,,2,open,,Kandidato vardas,
+,,,,,pavarde_saraso_pavad,string,,,,2,open,,Kandidato pavardė/Kandidatų sąrašo pavadinimas,
+,,,,,dal_reg_busena,string,,,,2,open,,Politinės kampanijos dalyvio registravimo būsena,Dalyvio registravimo būsena (Registruotas / Praradęs statusą)
+,,,,,,enum,,,"""Registruotas""",,,,Registruotas,
+,,,,,,,,,"""Panaikintas""",,,,Panaikintas/Praradęs statusą,
+,,,,,vrk_sprendimo_nr,string,,,,4,open,,"VRK sprendimo, kuriuo papildytas žiniaraštis, numeris","VRK sprendimo, kuriuo papildytas politinės kampanijos dalyvio finansavimo apskaitos žiniaraštis, numeris"
+,,,,,vrk_sprendimo_data,date,D,,,4,open,,"VRK sprendimo, kuriuo papildytas žiniaraštis, data","VRK sprendimo, kuriuo papildytas politinės kampanijos dalyvio finansavimo apskaitos žiniaraštis, data"
