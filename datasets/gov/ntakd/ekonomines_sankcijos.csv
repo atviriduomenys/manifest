@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,EkonomineSankcija,,,eil_nr,,,4,,,Ekonominės sankcijos,
 ,,,,,eil_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,imones_pavadinimas,string,,,,1,open,,Įmonės pavadinimas,
-,,,,,imones_kodas,string,/datasets/gov/lsd/cl/ja_asmenys/JuridinisAsmuo[kodas],,,4,open,,Įmonės kodas,
+,,,,,imones_kodas,ref,/datasets/gov/lsd/cl/ja_asmenys/JuridinisAsmuo[kodas],,,4,open,,Įmonės kodas,
 ,,,,,nutarimo_nr,string,,,,2,open,,Nutarimo numeris,
 ,,,,,nutarimo_priemimo_data,date,D,,,4,open,,Nutarimo priėmimo data,
 ,,,,,pazeistas_aki_tki,string,,,,4,open,,Pažeistas AKĮ ar TKĮ straipsnis,
