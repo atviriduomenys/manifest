@@ -217,6 +217,7 @@ datasets/gov/vlk/straipsniai.csv
 datasets/gov/vlk/faktines_lovos.csv
 datasets/gov/vlk/kochleariniai_implantai.csv
 datasets/gov/vlk/apmoketos_saskaitos_es.csv
+datasets/gov/vlk/israsytos_saskaitos_es.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
