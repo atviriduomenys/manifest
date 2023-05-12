@@ -14,7 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_kodas_regist,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,3,open,"person:residency
 
 ","Savivaldybės kodas, kur registruotas miręs asmuo",
-,,,,,m_am_mt,integer,yr,,,,,"pii:other
+,,,,,m_am_mt,integer,yr,,,4,open,"pii:age
+
 ",Mirusiojo amžius metais,
 ,,,,,m_am_mn,integer,mo,,,,,"pii:other
 ",Mirusiojo amžius mėnesiais,
