@@ -7,7 +7,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,NuolatinisGyventojas,,,m_id,,,4,,,Nuolatinių Lietuvos Respublikos gyventojų mirties atvejai ir jų priežastys,
 ,,,,,m_id,string,,,,4,open,"pii:id
 ",Asmens sugalvotas identifikatorius,
-,,,,,m_lytis,integer,,,,3,open,pii:sex,Lytis,
+,,,,,m_lytis,integer,,,,4,open,pii:sex,Lytis,
+
 ,,,,,,enum,,,1,,,,Vyras,
 ,,,,,,,,,2,,,,Moteris,
 ,,,,,sav_kodas_regist,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,"person:residency
