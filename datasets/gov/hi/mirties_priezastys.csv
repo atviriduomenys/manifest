@@ -32,7 +32,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'K',,,,Kita,
 ,,,,,,,,,'Z',,,,Nežinoma,
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,"person:placeOfDeath
-",Mirties vietos savivaldybė,
+",Mirties vietos savivaldybės kodas,
+
 ,,,,,tipo_santr,string,,,,3,open,"person:placeOfDeath
 ",Mirties vietos gyvenvietės tipas,
 ,,,,,,enum,,,'m.',,,,Miestas,
