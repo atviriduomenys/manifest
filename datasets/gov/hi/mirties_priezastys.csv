@@ -11,7 +11,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,,enum,,,1,,,,Vyras,
 ,,,,,,,,,2,,,,Moteris,
-,,,,,sav_kodas_regist,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,"person:residency
+,,,,,sav_kodas_regist,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,3,open,"person:residency
+
 ","Savivaldybės kodas, kur registruotas miręs asmuo",
 ,,,,,m_am_mt,integer,yr,,,,,"pii:other
 ",Mirusiojo amžius metais,
