@@ -162,7 +162,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,pernešiotas,
 ,,,,,m_nj_mase,number,g,,,4,open,,0-28 parų naujagimio masė gramais,
 ,,,,,m_gv_zyma,string,,,,3,open,"person:placeOfBirth
-",Gimimo vietos žyma (negyvagimiui ar naujagimiui mirusiam per 0–6 paras),
+",Gimimo vietos žyma,Negyvagimiui ar naujagimiui mirusiam per 0–6 paras
+
 ,,,,,,enum,,,'L',,,,Ligoninė,
 ,,,,,,,,,'N',,,,Namai,
 ,,,,,,,,,'K',,,,Kita,
