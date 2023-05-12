@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'k.',,,,Kaimas,
 ,,,,,,,,,'mstl.',,,,Miestelis,
 ,,,,,,,,,'vs.',,,,Viensėdis,
-,,,,,,,,,'glž. st.',,,,Geležinkelio stotis,
+,,,,,,,,,'glž. st.',,,,"Geležinkelio stotis",
 ,,,,,m_mv_v,string,,,,4,open,"person:countryOfDeath",Mirties vieta,Valstybės kodas, mirusiems užsienyje
 ,,,,,gnmpd,integer,,,,4,open,"Gydytojo nuomone, mirties rūšis ",
 ,,,,,,enum,,,1,,,,liga,
