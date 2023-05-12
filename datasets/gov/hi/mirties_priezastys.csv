@@ -24,7 +24,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ",Mirusiojo amžius dienomis,"Dienos pašalintos mirusiems asmenims, kurie yra vyresni nei metai"
 ,,,,,m_m_dt,string,,,,2,open,pii:date,Mirties data (mėnesiais),
-,,,,,mirt_vieta_zyma,string,,,,3,open,"person:placeOfDeath
+,,,,,mirt_vieta_zyma,string,,,,4,open,"person:placeOfDeath
+
 ",Mirties vietos žyma,
 ,,,,,,enum,,,'L',,,,Ligoninė,
 ,,,,,,,,,'N',,,,Namai,
