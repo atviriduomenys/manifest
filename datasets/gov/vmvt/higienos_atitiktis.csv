@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vmvt/higienos_atitiktys,,,,,,,,,,,,Viešojo maitinimo įmonių atitikties higienos reikalavimams vertinimo duomenys,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Subjektas,,,sv_kodas,,,4,,,Viešojo maitinimo įmonių atitikties higienos reikalavimams vertinimas,
+,,,,Subjektas,,,,,,3,,,Viešojo maitinimo įmonių atitikties higienos reikalavimams vertinimas,
 ,,,,,kodas,string,,,,0,open,,Juridinio asmens kodas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
 ,,,,,mt_pavadinimas,string,,,,1,open,,Maisto tvarkymo subjekto pavadinimas,
 ,,,,,pavadinimas,string,,,,0,open,,Juridinio asmens pavadinimas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
