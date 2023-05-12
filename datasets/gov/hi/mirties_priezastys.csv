@@ -63,7 +63,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pmprs_pk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,"Trauma, apsinuodijimas ir kiti išorinių priežasčių padariniai (išorinėms mirties priežastims)",
 ,,,,,pmprs_iv,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,"Nelaimingo atsitikimo, savižudybės, žmogžudystės vietos kodas (išorinėms mirties priežastims) ",
 ,,,,,pmprs_v,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Veikla (išorinėms mirties priežastims),
-,,,,,mmli_apl,integer,,,,3,open,,Medicininį mirties liudijimą išrašė,
+,,,,,mmli_apl,integer,,,,4,open,,Medicininį mirties liudijimą išrašė,
+
 ,,,,,,enum,,,1,,,,"gydęs gydytojas, apžiūrėjęs mirusįjį ir konstatavęs mirtį",
 ,,,,,,,,,2,,,,kitas gydytojas apžiūrėjęs mirusįjį ir konstatavęs mirtį,
 ,,,,,,,,,3,,,,"gydęs gydytojas, remdamasis medicinine dokumentacija ir mirusįjį apžiūrėjusiojo  kito gydytojo išvada",
