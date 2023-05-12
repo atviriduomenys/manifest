@@ -72,7 +72,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,teismo medicinos ekspertas remdamasis išorine mirusiojo apžiūra,
 ,,,,,,,,,7,,,,kitomis aplinkybėmis,
 ,,,,,,,,,8,,,,nepažymėta,
-,,,,,m_ngm_isn,integer,,,,3,open,,0-28 parų naujagimio išnešiotumas,
+,,,,,m_ngm_isn,integer,,,,4,open,,0-28 parų naujagimio išnešiotumas,
+
 ,,,,,,enum,,,0,,,,nepažymėta,
 ,,,,,,,,,1,,,,išnešiotas,
 ,,,,,,,,,2,,,,neišnešiotas,
