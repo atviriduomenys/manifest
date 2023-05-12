@@ -31,7 +31,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'N',,,,Namai,
 ,,,,,,,,,'K',,,,Kita,
 ,,,,,,,,,'Z',,,,Nežinoma,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,"person:placeOfDeath
+,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,3,open,"person:placeOfDeath
+
 ",Mirties vietos savivaldybės kodas,
 
 ,,,,,tipo_santr,string,,,,3,open,"person:placeOfDeath
