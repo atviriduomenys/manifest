@@ -170,7 +170,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'Z',,,,Nežinoma,
 ,,,,,m_nj_gest_am,integer,wk,,,4,open,,Nėštumo trukmė,"Savaitėmis, negyvagimiui ar naujagimiui mirusiam per 0–6 paras"
 
-,,,,,m_njm_gimdymas,integer,,,,4,open,,Kelintas gimdymas (negyvagimiui ar naujagimiui mirusiam per 0–6 paras) ,
+,,,,,m_njm_gimdymas,integer,U,,,4,open,,Kelintas gimdymas,Negyvagimiui ar naujagimiui mirusiam per 0–6 paras
+
 ,,,,,m_nj_eile,integer,,,,4,open,,Naujagimio (negyvagimio) gimimo eiliškumo žyma (negyvagimiui ar naujagimiui mirusiam per 0–6 paras),
 ,,,,,m_nj_ugis,number,cm,,,4,open,"pii:other
 ",Ūgis (negyvagimiui ar naujagimiui mirusiam per 0–6 paras),
