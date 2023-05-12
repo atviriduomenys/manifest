@@ -67,7 +67,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_nj_eile,integer,,,,4,open,,Naujagimio (negyvagimio) gimimo eiliškumo žyma (negyvagimiui ar naujagimiui mirusiam per 0–6 paras),
 ,,,,,m_nj_ugis,number,cm,,,4,open,"pii:other",Ūgis (negyvagimiui ar naujagimiui mirusiam per 0–6 paras),
 ,,,,,mt,integer,,,,2,open,,Statistiniai mirties metai,
-,,,,,e106_operac,integer,,,,3,open,,Ar per paskutines 28 d. iki mirties buvo atlikta operacija?,
+,,,,,e106_operac,integer,,,,2,open,,Ar per paskutines 28 d. iki mirties buvo atlikta operacija?,
 ,,,,,,enum,,,1,,,,Taip,
 ,,,,,,,,,2,,,,Ne,
 ,,,,,,,,,,,,,,
