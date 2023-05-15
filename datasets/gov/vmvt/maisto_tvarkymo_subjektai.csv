@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,produktas,string,,,,1,open,,Produktas,
 ,,,,,pk_1,ref,AsortimentoKlasifikatorius,,,4,open,,Asortimento kodas pagal VMVT FIS sąrašą,
 ,,,,,pk_2,ref,AsortimentoKlasifikatorius,,,4,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
-,,,,,pk_3,string,AsortimentoKlasifikatorius,,,4,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
+,,,,,pk_3,ref,AsortimentoKlasifikatorius,,,4,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
 ,,,,,mt_adresas,string,,,,0,open,,Maisto tvarkymo objekto adresas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
 ,,,,,paz_isdave,string,,,,2,open,,Pažymėjimą išdavė,
 ,,,,,isdavimas,date,D,,,4,open,,Pažymėjimo išdavimo data,
