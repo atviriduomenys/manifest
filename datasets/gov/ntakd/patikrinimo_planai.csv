@@ -9,6 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ukio_subj_adresas,string,,,,2,open,,Ūkio subjekto adresas,
 ,,,,,licencija,string,,,,2,open,,Licencijos numeris ,
 ,,,,,veikla,string,,,,3,open,,Ūkinės veiklos rūšis,
-,,,,,adresas,string,,,,2,open,,Numatomo tikrinti sandėlio ar prekybos vietos adresas,
+,,,,,sandelio_prek_adresas,string,,,,2,open,,Numatomo tikrinti sandėlio ar prekybos vietos adresas,
 ,,,,,patikr_terminas,string,,,,2,open,,Patikrinimo terminas ketvirčiais,
 ,,,,,pastabos,string,,,,2,open,,Pastabos,
