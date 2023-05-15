@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Planinis,,,eil_nr,,,4,,,Metiniai planinių patikrinimų planai,
 ,,,,,eil_nr,integer,,,,4,open,,Eilės numeris,
-,,,,,ukio_subj_pav,string,datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Ūkio subjekto pavadinimas,
+,,,,,ukio_subj_pav,string,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Ūkio subjekto pavadinimas,
 ,,,,,ukio_subj_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_kodas],,,3,open,,Ūkio subjekto kodas,
 ,,,,,ukio_subj_adresas,string,,,,2,open,,Ūkio subjekto adresas,
 ,,,,,licencija,string,,,,2,open,,Licencijos numeris ,
