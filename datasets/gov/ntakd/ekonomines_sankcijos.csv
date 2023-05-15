@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Sankcija,,,eil_nr,,,4,,,Ekonominės sankcijos,
 ,,,,,eil_nr,string,,,,4,open,,Eilės numeris,
 ,,,,,pavadinimas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Įmonės pavadinimas,
-,,,,,kodas,ref,/datasets/gov/lsd/cl/ja_asmenys/JuridinisAsmuo[kodas],,,3,open,,Įmonės kodas,
+,,,,,kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[kodas],,,3,open,,Įmonės kodas,
 ,,,,,nutarimas,string,,,,2,open,,Nutarimo numeris,
 ,,,,,nutarimo_priemimas,date,D,,,4,open,,Nutarimo priėmimo data,
 ,,,,,pazeistas_aki_tki,string,,,,4,open,,Pažeistas AKĮ ar TKĮ straipsnis,
