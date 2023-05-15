@@ -217,6 +217,7 @@ datasets/gov/vlk/straipsniai.csv
 datasets/gov/vlk/faktines_lovos.csv
 datasets/gov/vlk/kochleariniai_implantai.csv
 datasets/gov/vlk/apmoketos_saskaitos_es.csv
+datasets/gov/vlk/israsytos_saskaitos_es.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -276,12 +277,12 @@ datasets/gov/aaa/vandens_naudojimas.csv
 datasets/gov/rsc/vezimo_leidimai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/sukelejai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/atvejai.csv
-datasets/gov/nma/buveines.csv
 datasets/gov/aaa/atlieku_tvarkymas.csv
 datasets/gov/sadm/kompensacijos.csv
 datasets/gov/migracija/teise_gyventi_lr.csv
 datasets/gov/nzt/matininkai.csv
 datasets/gov/aaa/pakuociu_tiekimas.csv
+datasets/gov/nma/buveines.csv
 datasets/gov/nma/agro_paseliai_2015.csv
 datasets/gov/nma/agro_paseliai_2016.csv
 datasets/gov/nma/agro_paseliai_2017.csv
@@ -304,7 +305,6 @@ datasets/gov/nma/mpuv_paseliai_2019.csv
 datasets/gov/nma/mpuv_paseliai_2020.csv
 datasets/gov/nma/mpuv_paseliai_2021.csv
 datasets/gov/nma/natura2000_paseliai_2015.csv
-datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/nma/natura2000_paseliai_2016.csv
 datasets/gov/nma/natura2000_paseliai_2017.csv
 datasets/gov/nma/natura2000_paseliai_2018.csv
@@ -317,6 +317,11 @@ datasets/gov/nma/nv_bendra_informacija.csv
 datasets/gov/nma/nv_rusys.csv
 datasets/gov/nma/pareiskeju_priemones.csv
 datasets/gov/nma/zup_misko_sudetis.csv
+datasets/gov/nma/covid_poveikis_akvakulturai.csv
+datasets/gov/nma/nac_covid_mokejimai.csv
+datasets/gov/nma/isimtine_parama.csv
+datasets/gov/nma/zvejyba_covid.csv
+datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/aaa/isleid_perd_tersalai.csv
 datasets/gov/rsc/laikinieji_leidimai.csv
@@ -371,4 +376,5 @@ datasets/gov/vat/r27_aprob_sekl_pasel.csv
 datasets/gov/vat/r28_ekolog_pasel.csv
 datasets/gov/vat/r7_vaisiu_darzoviu_suvestine.csv
 datasets/gov/vat/r29_bulv_aprob.csv
+datasets/gov/hi/mirties_priezastys.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
