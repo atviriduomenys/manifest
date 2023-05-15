@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmvt/maisto_tvarkymo_subjektai,,,,,,,,,,,,Duomenys apie maisto tvarkymo subjektus,
 ,,,,,,,,,,,,,,
-,,,,MaistoTvarkymoSubjektas,,,,,,3,,,Maisto tvarkymo subjektai,
-,,,,,sv_kodas,number,,,,0,open,,Juridinio asmens kodas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
-,,,,,sv_pavadinimas,string,,,,0,open,,Juridinio asmens pavadinimas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,Subjektas,,,,,,3,,,Maisto tvarkymo subjektai,
+,,,,,jar_kodas,number,,,,0,open,,Juridinio asmens kodas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,pavadinimas,string,,,,0,open,,Juridinio asmens pavadinimas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
 ,,,,,veikla,string,,,,4,open,,Pagrindinė veikla ,
 ,,,,,evrk_1,integer,,,,2,open,,Veikla pagal Ekonominės veiklos rūšių klasifikatorių ,
 ,,,,,evrk_2,integer,,,,2,open,,Papildoma veikla pagal Ekonominės veiklos rūšių klasifikatorių ,
@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pk_3,string,,,,2,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
 ,,,,,mt_adresas,string,,,,0,open,,Maisto tvarkymo objekto adresas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
 ,,,,,paz_isdave,string,,,,2,open,,Pažymėjimą išdavė,
-,,,,,paz_data,date,D,,,4,open,,Pažymėjimo išdavimo data,
+,,,,,isdavimas,date,D,,,4,open,,Pažymėjimo išdavimo data,
 ,,,,,paz_nr,string,,,,3,open,,Maisto tvarkymo pažymėjimo numeris,
 ,,,,,riz_grupe,string,,,,3,open,,Rizikos grupė,Aprašymas apie rizikos grupes: https://vmvt.lt/maisto-sauga/kontrole/ukio-subjektu-registrai/subjektai-pagal-rizikos-grupes
 ,,,,,,,,,,,,,,
