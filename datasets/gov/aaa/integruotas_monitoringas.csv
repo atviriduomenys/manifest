@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,trz_neapibr,number,,,,3,open,,"Parametras, apibrėžiantis tyrimo rezultato tikslumą",
 ,,,,,trz_rez_skaitinis,number,,,,3,open,,Skaitinis tyrimo rezultatas,
 ,,,,,,,,,,,,,,
-,,,,ParametrasVienetas,,,,,,2,,,Parametrai, vienetai,
+,,,,ParametrasVienetas,,,,,,2,,,"Parametrai, vienetai",
 ,,,,,ptm_kodas,string,,,,2,open,,Parametro kodas (gali būti sutrumpintas parametro pavadinimas),
 ,,,,,ptm_pavad,string,,,,2,open,,Parametro pavadinimas,
 ,,,,,mvn_kodas,string,,,,2,open,,Matavimo vieneto kodas,
