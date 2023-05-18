@@ -347,6 +347,7 @@ datasets/gov/ssva/atestatai_teses_pripazinimo_dok.csv
 datasets/gov/vat/r22_pluost_kanap.csv
 datasets/gov/vat/r24_panaikinti_sertifikatai.csv
 datasets/gov/finmin/kvietimai.csv
+datasets/gov/vat/saugomos_veisles.csv
 datasets/gov/vat/r10_prekyba_aap.csv
 datasets/gov/vat/r23_atestuota_dm.csv
 datasets/gov/vat/r13_kokybes_laboratorijos.csv
@@ -378,3 +379,8 @@ datasets/gov/vat/r7_vaisiu_darzoviu_suvestine.csv
 datasets/gov/vat/r29_bulv_aprob.csv
 datasets/gov/hi/mirties_priezastys.csv
 datasets/gov/aaa/integruotas_monitoringas.csv
+datasets/gov/vmvt/higienos_atitiktis.csv
+datasets/gov/vmvt/kontroles_subjektai.csv
+datasets/gov/ntakd/patikrinimo_planai.csv
+datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
+datasets/gov/ntakd/ekonomines_sankcijos.csv
