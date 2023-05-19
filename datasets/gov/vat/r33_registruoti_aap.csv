@@ -44,7 +44,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Atsargiai""",,,,,
 ,,,,,,,,,"""Pavojinga""",,,,,
 ,,,,,,,,,"""Be signalinio žodžio""",,,,,
-,,,,,papildomas_sakinys,,,,,2,open,,Klasifikavimas ir etiketė - Papildomas sakinys,
+,,,,,papildomas_sakinys,string,,,,2,open,,Klasifikavimas ir etiketė - Papildomas sakinys,
 ,,,,,tipas,string,,,,4,open,,Numatomi naudojimai (GAP) - Tipas,
 ,,,,,,enum,,,,,,,,
 ,,,,,,,,,"""CHEMINE_MEDZIAGA""",,,,,
