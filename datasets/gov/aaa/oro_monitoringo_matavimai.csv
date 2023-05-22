@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Aerozolinis filtras (stiklo pluošto)""",,,,Aerozolinis filtras (stiklo pluošto),
 ,,,,,,,,,,,,,,
 ,,,,ParametrasVienetas,,,,,,2,,,"Parametrai, vienetai",
-,,,,,ptm_kodas,string,,,,2,open,,Parametro kodas (gali būti sutrumpintas parametro pavadinimas),
+,,,,,ptm_kodas,string,,,,2,open,,Parametro kodas,Gali būti sutrumpintas parametro pavadinimas
 ,,,,,ptm_pavad,string,,,,2,open,,Parametro pavadinimas,
 ,,,,,mvn_kodas,string,,,,2,open,,Matavimo vieneto kodas,
 ,,,,,mvn_pavad,string,,,,2,open,,Matavimo vieneto pavadinimas,
