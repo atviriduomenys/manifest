@@ -64,5 +64,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rusis,string,,,,2,open,,Augalo rūšis,
 ,,,,,veisle,string,,,,2,open,,Veislės pavadinimas,
 ,,,,,selekcininkas,string,,,,1,open,,Selekcininkas,
-,,,,,igaliotasis_atstovas,string,,,,2,open,,Įgaliotasis atstovas,
+,,,,,igaliotasis_atstovas,string,,,,1,open,,Įgaliotasis atstovas,
 ,,,,,galiojimas,string,,,,1,open,,Galiojimo laikas,
