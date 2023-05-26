@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/lis/lis_kiti_dokumentai,,,,,,,,,,,,Valstybės institucijų ūkio subjektams išduoti kiti LICENCIJAVIMO DOKUMENTAI,
 ,,,,LisKitasDokumentas,,,id,,,4,,,Licencijų informacinės sistemos duomenys apie valstybės institucijų ūkio subjektams išduotus kitus licencijavimo dokumentus,
-,,,,,id,integer,,,,4,open,,Identifikavimo kodas,
+,,,,,id,bigint,,,,4,open,,Identifikavimo kodas,
 ,,,,,numeris,string,,,,4,open,,Registracijos numeris,
 ,,,,,isdavimo_data,date,D,,,4,open,,Išdavimo data,
 ,,,,,galioja_nuo,date,D,,,4,open,,Galiojimo data nuo,
