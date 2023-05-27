@@ -66,7 +66,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,ConIndicator,,,con_indicator_id,,,4,,,Sutarties produkto ir rezultato stebėsenos rodikliai,
 ,,,,,con_indicator_id,string,,,,4,,,Sutarties rodiklio identifikatorius,
 ,,,,,project,ref,Contract,,,4,,,Projekto identifikatorius,
-,,,,,measure_indicator,ref,datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
+,,,,,measure_indicator,ref,/datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
 ,,,,,value,number,,,,4,,,Rodiklio siektina reikšmė,Rodiklio aprašymo lentelėje nurodytais vienetais
 ,,,,,,,,,,,,,,
 ,,,,ConFinSource,,,con_fin_source_id,,,4,,,Sutarties projekto tinkamų finansuoti išlaidų finansavimo šaltiniai,
@@ -204,7 +204,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,payment,ref,Payment,,,4,,,Mokėjimo prašymo identifikatorius,
 ,,,,,number,string,,,,4,,,Paraiškos AV numeris,
 ,,,,,assigned,date,D,,,4,,,Paraiškos AV data,
-,,,,,measure,ref,datasets/gov/finmin/kvietimai/Measure,,,4,,,Priemonės identifikatorius,
+,,,,,measure,ref,/datasets/gov/finmin/kvietimai/Measure,,,4,,,Priemonės identifikatorius,
 ,,,,,paid_amount,number,,,,2,,,Paraiškos AV išmokama suma,"Sumai konfidencialumo tikslais pridėta triukšmo, sudarančio iki 33 % sumos. Triukšmo koeficientas vienodas visiems to paties projekto duomenims"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,advance_amount,number,,,,2,,,Paraiškos AV įvertinta avanso,"Sumai konfidencialumo tikslais pridėta triukšmo, sudarančio iki 33 % sumos. Triukšmo koeficientas vienodas visiems to paties projekto duomenims"
@@ -227,7 +227,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,PayIndicator,,,pay_indicator_id,,,4,,,Projekto mokėjimo prašymo dalies Nr. 1 produkto ir rezultato stebėsenos rodikliai,
 ,,,,,pay_indicator_id,string,,,,4,,,Projekto mokėjimo prašymo dalies stebėsenos rodiklio identifikatorius,
 ,,,,,payment,ref,Payment,,,4,,,Mokėjimo prašymo identifikatorius,
-,,,,,measure_indicator,ref,datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
+,,,,,measure_indicator,ref,/datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
 ,,,,,name,string,,,,4,,,Rodiklio pavadinimas,
 ,,,,,code,string,,,,4,,,Rodiklio kodas,
 ,,,,,type,string,,,,3,,,Rodiklio tipas,
@@ -364,7 +364,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,PlanIndicator,,,plan_indicator_id,,,4,,,"Projekto mokėjimo prašymo teikimo grafiko planuojamo mokėjimo prašymo stebėsenos rodikliai, įtraukti į veiklos peržiūros planą",
 ,,,,,plan_indicator_id,string,,,,4,,,Planuojamo mokėjimo prašymo stebėsenos rodiklio identifikatorius,
 ,,,,,plan_payment,ref,PlanPayment,,,4,,,Planuojamo mokėjimo prašymo identifikatorius,
-,,,,,measure_indicator,ref,datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
+,,,,,measure_indicator,ref,/datasets/gov/finmin/kvietimai/MeasureIndicator,,,4,,,Priemonės stebėsenos rodiklio identifikatorius,
 ,,,,,name,string,,,,4,,,Rodiklio pavadinimas,
 ,,,,,code,string,,,,4,,,Rodiklio kodas,
 ,,,,,type,string,,,,3,,,Rodiklio tipas,
