@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Contract,,,project,,,4,,,Projekto sutartis,
-,,,,,project,ref,/datasets/gov/finmin/kvietimai/Project,,,4,,,Projekto identifikatorius,
+,,,,,project,ref,/datasets/gov/finmin/paraiskos/Project,,,4,,,Projekto identifikatorius,
 ,,,,,name,string,,,,4,,,Projekto pavadinimas sutartyje,
 ,,,,,tripartite,boolean,,,,4,,,Trišalė sutartis,
 ,,,,,state_aid,boolean,,,,4,,,Teikiama valstybės pagalba,
