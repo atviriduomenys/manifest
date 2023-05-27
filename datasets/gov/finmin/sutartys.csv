@@ -1,4 +1,4 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/finmin/sutartys,,,,,,,,,,,,2014-2020 m. ES fondų projektų įgyvendinimo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://atviriduomenys.readthedocs.io/,,
