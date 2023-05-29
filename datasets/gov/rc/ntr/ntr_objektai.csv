@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,obje_pav_naud_en,string,,,,3,open,,"Pavadinimas (trumpas) angliškai, kilmininko linksnis",
 ,,,,,obje_pav_vard_en,string,,,,3,open,,"Pavadinimas (trumpas) angliškai, naudininko linksnis",
 ,,,,,,,,,,,,,,
-,,,,NtrLeisinasObjektoTipas,,,"regt_tipas, obje_tipas",,,3,,,Nurodytam registro tipui leistinų objektų tipų sąrašas - klasifikatorius,
+,,,,NtrLeisinasObjektoTipas,,,"regt_tipas, obje_tipas, loti_priklauso",,,3,,,Nurodytam registro tipui leistinų objektų tipų sąrašas - klasifikatorius,
 ,,,,,regt_tipas,integer,,,,3,open,,Registro tipas,
 ,,,,,obje_tipas,ref,NtrObjektoTipas,,,4,open,,Turto objekto tipas,
 ,,,,,loti_priklauso,integer,,,,3,open,,Priklauso objekto tipui,
