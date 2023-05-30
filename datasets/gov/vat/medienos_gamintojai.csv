@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""T""",,,,,"MPM taisytojai, atnaujintojai/ WPM repairers, remanufacturers"
 ,,,,,busena,,,,,,,,Licencijos būsena,
 ,,,,,,enum,,,"""Galioja""",,,,,Galioja - Valid
-,,,,,,,,,"""Sustabdyta",,,,,Sustabdyta - suspended
+,,,,,,,,,"""Sustabdyta""",,,,,Sustabdyta - suspended
 ,,,,,adresas,,,,,,,,Veiklos adresas,
 ,,,,,el_pastas,,,,,,,,Elektroninis paštas kontaktinei informacijai,
 ,,,,,telefonas,,,,,,,,Telefono numeris kontaktinei informacijai,
