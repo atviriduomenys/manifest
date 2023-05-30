@@ -15,5 +15,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eil_nr,string,,,,4,open,,Eil. Nr.,
 ,,,,,isdavimas,date,D,,,4,open,,Pažymėjimo išdavimo data,
 ,,,,,pazymejimo_nr,string,,,,2,open,,Pažymėjimo numeris,
-,,,,,adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,4,open,,Sandėlio / terminalo adresas,
+,,,,,adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,3,open,,Sandėlio / terminalo adresas,
 ,,,,,ukio_subjektas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,4,open,,Ūkio subjektas,
