@@ -10,10 +10,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""A""",,,,,Apdorotojas/treatment
 ,,,,,,,,,"""G""",,,,,MPM gamintojas/WPM producer
 ,,,,,,,,,"""T""",,,,,"MPM taisytojai, atnaujintojai/ WPM repairers, remanufacturers"
-,,,,,busena,,,,,,,,Licencijos būsena,
+,,,,,busena,string,,,,4,open,,Licencijos būsena,
 ,,,,,,enum,,,"""Galioja""",,,,,Galioja - Valid
 ,,,,,,,,,"""Sustabdyta""",,,,,Sustabdyta - suspended
-,,,,,adresas,,,,,,,,Veiklos adresas,
-,,,,,el_pastas,,,,,,,,Elektroninis paštas kontaktinei informacijai,
-,,,,,telefonas,,,,,,,,Telefono numeris kontaktinei informacijai,
-,,,,,regionas,,,,,,,,Veiklos regionas,
+,,,,,adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,3,open,,Veiklos adresas,
+,,,,,el_pastas,string,,,,2,open,,Elektroninis paštas kontaktinei informacijai,
+,,,,,telefonas,string,,,,2,open,,Telefono numeris kontaktinei informacijai,
+,,,,,regionas,string,,,,4,open,,Veiklos regionas,
