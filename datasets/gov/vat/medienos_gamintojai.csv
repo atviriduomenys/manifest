@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/medienos_gamintojai,,,,,,,,,,,,"Pateikiama informacija apie ūkio subjektus, kuriems suteikta teisė medinę pakavimo medžiagą ir (arba) medieną, skirtos jai gaminti, ženklinti Tarptautinio fitosanitarijos priemonių standarto Nr. 15 nustatytu ženklu (ūkio subjekto pavadinimas; veiklos vykdymo adresas; kontaktinė informacija)",
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Muitine,,,id,,,4,open,,"Medinės pakavimo medžiagos ir (arba) medienos, skirtos jai gaminti, gamintoju sąrašas",
+,,,,,id,string,,,,4,open,,Identifikacinis numeris,
+,,,,,imone,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,4,open,,Įmonės pavadinimas,
+,,,,,veikla,string,,,,4,open,,Vykdoma veikla,
+,,,,,,enum,,,"""A""",,,,,Apdorotojas/treatment
+,,,,,,,,,"""G""",,,,,MPM gamintojas/WPM producer
+,,,,,,,,,"""T""",,,,,"MPM taisytojai, atnaujintojai/ WPM repairers, remanufacturers"
+,,,,,busena,,,,,,,,Licencijos būsena,
+,,,,,,enum,,,"""Galioja""",,,,,Galioja - Valid
+,,,,,,,,,"""Sustabdyta",,,,,Sustabdyta - suspended
+,,,,,adresas,,,,,,,,Veiklos adresas,
+,,,,,el_pastas,,,,,,,,Elektroninis paštas kontaktinei informacijai,
+,,,,,telefonas,,,,,,,,Telefono numeris kontaktinei informacijai,
+,,,,,regionas,,,,,,,,Veiklos regionas,
