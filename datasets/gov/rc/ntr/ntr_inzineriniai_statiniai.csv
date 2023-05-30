@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,NtrInzinerinisStatinys,,,id,,,4,,,,
 ,,,,,id,integer,,,,4,open,,Identifikatorius,Inžinerinio statinio identifikatorius šiame duomenų rinkinyje
-,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,2,open,,Savivaldybė,"Savivaldybės, kurioje yra inžinerinis statinys, pavadinimas"
-,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,2,open,,Seniūnija,"Savivaldybėje esančios seniūnijos, kurioje yra inžinerinis statinys, pavadinimas"
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,"Savivaldybės, kurioje yra inžinerinis statinys, pavadinimas"
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,"Savivaldybėje esančios seniūnijos, kurioje yra inžinerinis statinys, pavadinimas"
 ,,,,,statinio_kategorija,integer,,,,3,open,,Statinio kategorija,"Statinio rūšis pagal LR statybos įstatymą. Nuo statinio kategorijos priklauso koks projektas turi būti parengtas, kokie reikalavimai keliami projekto vadovui ir kitiems statybos techninės veiklos pagrindinių sričių (STVPS) vadovams ir statybą leidžiančio dokumento (SLD) privalomumas."
 ,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,open,,Objekto tipas,Inžinerinio statinio tipas
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas ,Inžinerinio statinio paskirtis
