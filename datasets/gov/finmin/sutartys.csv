@@ -352,7 +352,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,state_decided,date,D,,,4,,,Mokėjimo prašymo grafiko būsenos sprendimo data,
 ,,,,,,,,,,,,,,
 ,,,,PlanPayment,,,plan_payment_id,,,4,,,Projekto mokėjimo prašymo teikimo grafiko planuojamas mokėjimo prašymas,
-,,,,,plan_payment_id,integer,,,,4,,,Planuojamo mokėjimo prašymo identifikatorius,
+,,,,,plan_payment_id,string,,,,4,,,Planuojamo mokėjimo prašymo identifikatorius,
 ,,,,,pay_schedule,ref,PaySchedule,,,4,,,Mokėjimo grafiko identifikatorius,
 ,,,,,created,date,D,,,4,,,Planuojamo mokėjimo prašymo teikimo data,
 ,,,,,amount,number,,,,2,,,Planuojamo mokėjimo prašymo suma,
