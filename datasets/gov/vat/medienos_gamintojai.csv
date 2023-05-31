@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Subjektas,,,id,,,4,open,,"Medinės pakavimo medžiagos ir (arba) medienos, skirtos jai gaminti, gamintoju sąrašas",
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
-,,,,,imone,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,4,open,,Įmonės pavadinimas,
+,,,,,imone,string,,,,2,open,,Įmonės pavadinimas,
 ,,,,,veikla,string,,,,4,open,,Vykdoma veikla,
 ,,,,,,enum,,,"""A""",,,,,Apdorotojas/treatment
 ,,,,,,,,,"""G""",,,,,MPM gamintojas/WPM producer
@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,busena,string,,,,4,open,,Licencijos būsena,
 ,,,,,,enum,,,"""Galioja""",,,,,Galioja - Valid
 ,,,,,,,,,"""Sustabdyta""",,,,,Sustabdyta - suspended
-,,,,,adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,3,open,,Veiklos adresas,
+,,,,,adresas,string,,,,2,open,,Veiklos adresas,
 ,,,,,el_pastas,string,,,,2,open,,Elektroninis paštas kontaktinei informacijai,
 ,,,,,telefonas,string,,,,2,open,,Telefono numeris kontaktinei informacijai,
 ,,,,,regionas,string,,,,4,open,,Veiklos regionas,
