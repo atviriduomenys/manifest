@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/vsr/sutartys_pagal_amziu,,,,,,,,,,,,Vedybų sutarčių registro (VSR) duomenys apie vedybų sutartis pagal pasirašančių šalių amžių,
+,,,,,,,,,,,,,,
+,,,,Amzius,,,dok_id,,,4,,,Vedybų sutarčių registro (VSR) duomenys apie vedybų sutartis pagal pasirašančių šalių amžių,
+,,,,,dok_id,integer,,,,4,open,,Dokumento identifikavimo kodas šiame rinkinyje,
+,,,,,porusis,ref,/datasets/gov/rc/vsr/klasifikatoriai/Porusis,,,4,open,,Sutarties porūšis iš VRS sutarčių porūšių klasifikatoriaus ,
+,,,,,lytis,string,,,,4,open,,Asmens lytis,
+,,,,,,enum,,,"""V""",,,,Vyras,
+,,,,,,,,,"""M""",,,,Moteris,
+,,,,,amzius,integer,,,,3,open,,Asmens amžius (sutarties sudarymo metu),
+,,,,,reg_metai,integer,,,,2,open,,Dokumento įregistravimo data (metai),
+,,,,,reg_ketvirtis,integer,,,,2,open,,Dokumento įregistravimo data (ketvirtis),
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

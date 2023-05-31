@@ -1,8 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/patalpa,,,,,,,,,,,,Adresų registras,
-,,,,Patalpa,,,pat_kodas,,,4,,,Adresų registro gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinantys tekstiniai duomenys ,Gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinančių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinantys tekstiniai duomenys (duomenų rinkinių grupė (60 vnt.)). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenama arba negyvenama patalpa, identifikavimo kodas",
-,,,,,pat_kodas,integer,,,,4,open,,Patalpos identifikavimo kodas LR AR,
-,,,,,aob_kodas,ref,/datasets/gov/rc/ar/pastatas/Pastatas,,,4,open,,"Pastato, kuriam priklauso patalpa, identifikavimo kodas",
-,,,,,patalpos_nr,integer,,,,4,open,,Patalpos numeris pastate ar korpuse (adreso komponentė),
+,,,,Patalpa,,,aob_kodas,,,4,,,Adresų registro gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinantys tekstiniai duomenys ,Gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinančių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gyvenamųjų ir negyvenamųjų patalpų adresus apibūdinantys tekstiniai duomenys (duomenų rinkinių grupė (60 vnt.)). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,aob_kodas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,Patalpos identifikavimo kodas,
+,,,,,pastatas,ref,/datasets/gov/rc/ar/pastatas/Pastatas,,,4,open,,"Pastato, kuriam priklauso patalpa, identifikavimo kodas",
+,,,,,patalpos_nr,string,,,,4,open,,Patalpos numeris pastate ar korpuse (adreso komponentė),
 ,,,,,pat_nuo,date,D,,,4,open,,Objekto įregistravimo data,

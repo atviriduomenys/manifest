@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vgtpt/teisis/ismoketa_mediatoriams,,,,,,,,,,,,Teiktų mediacijos paslaugų trukmė ir vertė,"Valstybės garantuojamos teisinės pagalbos tarnybos duomenų, kaupiamų Teisinės pagalbos paslaugų informacinėje sistemoje (TEISIS),duomenys apie teiktų mediacijos paslaugų trukmę ir vertę. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 1 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0. Atvėrimo data —2023-04-03."
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,SumaMediatoriui,,,nr,,,4,,,Teiktų mediacijos paslaugų trukmė ir vertė,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,sprendimo_metai,integer,,,,2,open,,Sprendimo išmokėti užmokestį metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
+,,,,,sprendimo_ketvirtis,integer,,,,2,open,,Sprendimo išmokėti užmokestį ketvirtis,
+,,,,,teritorijos_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/Teritorija,,,4,open,,Antrinę teisinę pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
+,,,,,mediacijos_rusis,integer,,,,4,open,,"Požymis, nurodantis mediacijos rūšį",
+,,,,,,enum,,,0,,,,Taikoma teisminė mediacija,
+,,,,,,,,,1,,,,Taikoma valstybės užtikrinama neteisminė mediacija,
+,,,,,,,,,2,,,,Taikoma privalomoji mediacija,
+,,,,,priskaiciuota_suma,number,,,,2,open,,Sprendime nurodytas mediatoriui išmokėti skirtas užmokestis,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,,
+,,,,,trukme,integer,min,,,4,open,,Mediatoriaus sugaišto laiko trukmė,
+,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
