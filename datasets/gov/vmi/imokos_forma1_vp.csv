@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,NepriemokosSuma,,,,,,4,,,Mokesčių ir kitų įmokų į biudžetus apyskaitos (forma 1-VP) VMI duomenys,
 ,,,,,id,string,,,,4,open,,Unikalus įrašo ID,
-,,,,,imokos_pavadinimas,string,,,,3,open,,1-VP formos eilutės pavadinimas,
+,,,,,imokos_pavadinimas,string,,,,1,open,,1-VP formos eilutės pavadinimas,
 ,,,,,eil_nr,integer,,,,4,open,,1-VP pagrindinės formos stulpelis Eil. Nr.,
 ,,,,,mm_apskritis,string,,,,3,open,,"Apskrities kodas, kurioje yra registruotas mokesčių mokėtojas",
 ,,,,,mm_savivaldybe,string,,,,3,open,,"Savivaldybės kodas, kurioje registruotas mokesčių mokėtojas",
