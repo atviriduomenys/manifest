@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Subjektas,,,id,,,4,open,,"Medinės pakavimo medžiagos ir (arba) medienos, skirtos jai gaminti, gamintoju sąrašas",
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,imone,string,,,,2,open,,Įmonės pavadinimas,
-,,,,,veikla,string,,,,4,open,,Vykdoma veikla,
+,,,,,veikla,string,,,,2,open,,Vykdoma veikla,
 ,,,,,,enum,,,"""A""",,,,Apdorotojas/treatment,
 ,,,,,,,,,"""G""",,,,MPM gamintojas/WPM producer,
 ,,,,,,,,,"""T""",,,,"MPM taisytojai, atnaujintojai/ WPM repairers, remanufacturers",
