@@ -17,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adresas,string,,,,2,open,,Veiklos adresas,
 ,,,,,el_pastas,string,,,,2,open,,Elektroninis paštas kontaktinei informacijai,
 ,,,,,telefonas,string,,,,2,open,,Telefono numeris kontaktinei informacijai,
-,,,,,regionas,string,,,,4,open,,Veiklos regionas,
+,,,,,regionas,string,,,,2,open,,Veiklos regionas,
