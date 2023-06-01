@@ -334,6 +334,7 @@ datasets/gov/migracija/deportacijos.csv
 datasets/gov/sadm/parama_mokiniams.csv
 datasets/gov/vmi/loterijos.csv
 datasets/gov/vmi/azartiniai_losimai.csv
+datasets/gov/vat/fitosanitarijos_kontrole.csv
 datasets/gov/vat/gmo_stebesena.csv
 datasets/gov/sadm/ismokos_vaikams.csv
 datasets/gov/migracija/pilietybes_netekimas.csv
@@ -387,4 +388,5 @@ datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
 datasets/gov/aaa/oro_monitoringo_matavimai.csv
 datasets/gov/vat/medienos_gamintojai.csv
+datasets/gov/vat/fitosanitarijos_postai.csv
 datasets/gov/vat/tikrinimo_vietos.csv
