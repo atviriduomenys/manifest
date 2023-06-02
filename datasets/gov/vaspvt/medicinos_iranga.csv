@@ -221,7 +221,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,6,,,,Dalyvaujantis Reorganizavime,
 ,,,,,savivaldybė,string,,,,3,open,,Savivaldybė,
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
-,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis,,,3,open,,Apskritis,
+,,,,,apskritis,string,,,,3,open,,Apskritis,
 ,,,,,,comment,type,,"create(property: ""apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Apskritis"")",4,open,manifest:1263,,
 ,,,,,priemonės_nr,string,,,,4,open,,Priemonės Nr.,
 ,,,,,priemonės_rūšis,string,,,,4,open,,Priemonės Rūšis,
