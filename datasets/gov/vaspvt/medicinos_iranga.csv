@@ -115,7 +115,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,darbo_val_ketv,integer,,,,4,open,,St-Mp Naudojimo (Darbo) Valandų Skaičius Per I Mėnesį,
 ,,,,,proc_kiekis_ketv,integer,,,,4,open,,St-Mp Atliekamų Procedūrų/Tyrimų Skaičius Per I Mėnesį,
 ,,,,,kaina_su_priedais,number,,,,,open,,Priemonės Įsigijimo Kaina Su Priedais,
-,,,,,kaina_be_priedu,number,,,,,open,,"Priemonės Įsigijimo Kaina Be Priedų,
+,,,,,kaina_be_priedu,number,,,,,open,,Priemonės Įsigijimo Kaina Be Priedų,
 ,,,,,paskutinės_techninės_būklės_tikrinimas,date,D,,,4,open,,Paskutinės Techninės Būklės Tikrinimo Data,
 ,,,,,planuojamos_techninės_būklės_tikrinimas,date,D,,,4,open,,Planuojamos Techninės Būklės Tikrinimo Data,
 ,,,,,pastabos,string,,,,4,,,Pastabos,
