@@ -2,7 +2,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vaspvt/irenginiai,,,,,,,,,,,,"Sveikatos priežiūros technologijų, susijusių su medicinos prietaisais, vertinimo ir valdymo duomenys",
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,Sveikatos priežiūros techninė įranga,
 ,,,,MedicininisIrenginys,,,id,,,4,open,,Brangių medicinos priemonių sąrašas,
 ,,,,,id,integer,,,,4,open,,kodas ,
 ,,,,,filialas,,,,,,,,,
