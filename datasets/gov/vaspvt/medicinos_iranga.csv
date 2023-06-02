@@ -160,7 +160,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,1,,,,Automatinis,
 ,,,,,,,,,2,,,,Be Injektoriaus,
 ,,,,,,,,,3,,,,Su Injektoriumi,
-,,,,,,,,,4,,,,Dviejų Židinių,Dviejų Židinių,Besisukančio Anodo Rentgeno Vamzdis,Sukonstruotas Optimaliam Aušinimui, Taikoma Daugiapjūvio Ir Skenavimo Atvejais
+,,,,,,,,,4,,,,Dviejų Židinių,Dviejų Židinių,"Besisukančio Anodo Rentgeno Vamzdis,Sukonstruotas Optimaliam Aušinimui, Taikoma Daugiapjūvio Ir Skenavimo Atvejais"
 ,,,,,,,,,5,,,,Neautomatinis,
 ,,,,,linijinis_greitintuvas,integer,eV,,,4,open,,Linijinis greitintuvas Kinetinė Energija (Elektronvoltai),
 ,,,,,mr_tomografo_tipas,string,,,,2,open,,Magnetinio rezonanso tomografo tipas,
@@ -287,7 +287,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,1,,,,Automatinis,
 ,,,,,,,,,2,,,,Be Injektoriaus,
 ,,,,,,,,,3,,,,Kita: Su Injektoriumi,
-,,,,,,,,,4,,,,Kita: Dviejų Židinių,Besisukančio Anodo Rentgeno Vamzdis,Sukonstruotas Optimaliam Aušinimui, Taikoma Daugiapjūvio Ir Skenavimo Atvejais,
+,,,,,,,,,4,,,,Kita: Dviejų Židinių,"Besisukančio Anodo Rentgeno Vamzdis,Sukonstruotas Optimaliam Aušinimui, Taikoma Daugiapjūvio Ir Skenavimo Atvejais"
 ,,,,,,,,,5,,,,Neautomatinis,
 ,,,,,linijinis_greitintuvas,string,,,,4,open,,Techninė Charakteristika (Lg): Kinetinė Energija (Elektronvoltai),
 ,,,,,mr_tomografo_tipas,string,,,,2,open,,Techninė Charakteristika (Mrt): Tipas(1),
