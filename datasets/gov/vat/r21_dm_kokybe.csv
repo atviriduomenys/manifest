@@ -13,5 +13,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sodinukas,number,U,,,4,open,,Iš viso sodinukų,
 ,,,,,sodinukas_elitine,number,U,,,4,open,,Sodinukų elitinės medžiagos kiekis,
 ,,,,,sodinukas_sertifikuota,number,U,,,4,open,,Sodinukų sertifikuotos medžiagos kiekis,
-,,,,,iki,date,D,,,4,open,,Galiojimo pradžia,
-,,,,,nuo,date,D,,,4,open,,Galiojimo pabaiga,
+,,,,,nuo,date,D,,,4,open,,Galiojimo pradžia,
+,,,,,iki,date,D,,,4,open,,Galiojimo pabaiga,
