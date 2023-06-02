@@ -57,7 +57,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,istaiga,string,,,,4,open,,Įstaigos Pavadinimas,
 ,,,,,apskritis,string,datasets/gov/rc/ar/apskritis,,,3,open,,Apskritis,
 ,,,,,savivaldybė,string,datasets/gov/rc/ar/savivaldybe,,,3,open,,Savivaldybė,
-,,,,,filialas,string,,,,4,open,,Filialas,
 ,,,,,rusis,integer,,,,,open,,Ataskaitos Rūšis,
 ,,,,,,enum,,,1,,,,Darbo su medicinos priemonėmis ataskaita,
 ,,,,,,,,,2,,,,Medicinos priemonių naudojimo išlaidų ataskaita,
