@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,NtrZemesSklypas,,,id,,,4,,,,
 ,,,,,id,integer,,,,4,open,,Objekto identifikatorius,Dirbtinis nekinojamojo turto objekto identifikatorius
-,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,2,open,,Savivaldybė,Savivaldybės pavadinimas
-,,,,,Seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,2,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,Savivaldybės pavadinimas
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
 ,,,,,naub_budas,ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
 ,,,,,sklypo_pl,number,,,,3,open,,Žemės sklypo plotas,Žemės sklypo plotas
