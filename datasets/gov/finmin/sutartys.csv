@@ -150,7 +150,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,executor_given,date,D,,,4,,,Vykdytojo nurodyta mokėjimo prašymo data,
 ,,,,,revised,date,D,,,4,,,Mokėjimo prašymo patikslinimo data,
 ,,,,,type,string,,,,3,,,Mokėjimo prašymo tipas,
-,,,,,advance_insurance,string,,,,3,,,Taikomas avanso draudimas,
+,,,,,advance_insurance,boolean,,,,4,,,Taikomas avanso draudimas,
+
 ,,,,,is_paid,boolean,,,,4,,,Apmokėtas mokėjimo prašymas,
 ,,,,,report_from,date,D,,,4,,,Mokėjimo prašymo ataskaitinio laikotarpio pradžia,
 ,,,,,report_till,date,D,,,4,,,Mokėjimo prašymo ataskaitinio laikotarpio pabaiga,
@@ -359,7 +360,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,advance_amount,number,,,,2,,,Planuojamo mokėjimo prašymo avanso užskaitos suma,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,type,string,,,,3,,,Planuojamo mokėjimo prašymo tipas,
+,,,,,type,string,,,,2,,,Planuojamo mokėjimo prašymo tipas,
+
 ,,,,,,,,,,,,,,
 ,,,,PlanIndicator,,,plan_indicator_id,,,4,,,"Projekto mokėjimo prašymo teikimo grafiko planuojamo mokėjimo prašymo stebėsenos rodikliai, įtraukti į veiklos peržiūros planą",
 ,,,,,plan_indicator_id,string,,,,4,,,Planuojamo mokėjimo prašymo stebėsenos rodiklio identifikatorius,
@@ -396,7 +398,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,link,boolean,,,,4,,,Pirkimo sąsaja su kitu projektu,
 ,,,,,object,string,,,,4,,,Pirkimo objektas,Retos vertės konfidencialumo tikslais nerodomos.
 ,,,,,object_type,string,,,,3,,,Pirkimo objekto rūšis,
-,,,,,method,string,,,,4,,,Pirkimo būdas,
+,,,,,method,string,,,,3,,,Pirkimo būdas,
+
 ,,,,,contract_plan_value,number,,,,2,,,"Planuojamos pirkimo sutarties vertė, be PVM","Sumai konfidencialumo tikslais pridėta triukšmo, sudarančio iki 33 % sumos. Triukšmo koeficientas vienodas visiems to paties projekto duomenims"
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,contract_plan_fin_value,number,,,,2,,,"Planuojamos pirkimo sutarties vertė, finansuojama projekto lėšomis","Sumai konfidencialumo tikslais pridėta triukšmo, sudarančio iki 33 % sumos. Triukšmo koeficientas vienodas visiems to paties projekto duomenims"
@@ -508,7 +511,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,declare_by,date,D,,,4,,,Deklaruotinumo data,
 ,,,,,declared,date,D,,,4,,,Deklaravimo data,
 ,,,,,submitted,date,D,,,4,,,Sąskaitų EK teikimo data,
-,,,,,base,string,,,,4,,,IKV dalies pagrindas,
+,,,,,base,string,,,,3,,,IKV dalies pagrindas,
+
 ,,,,,repayment,ref,Repayment,,,4,,,Grąžintinų lėšų identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,FinishReport,,,report_id,,,,,,Ataskaitos po finansavimo pabaigos,
