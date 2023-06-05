@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,grupes_pavadinimas,string,,,,4,open,,Lovos profilio grupės pavadinimas,
 ,,,,VeiklosRodiklis,,,,,,3,,,Lovos veiklos rodikliai,
 ,,,,,metai,integer,yr,,,2,open,,Duomenų vedimo metai,
-,,,,,sav_kodas,ref,"Savivaldybe[""sav_kodas""]",,,4,open,,Savivaldybės kodas,
+,,,,,sav_kodas,ref,"Savivaldybe[sav_kodas]",,,4,open,,Savivaldybės kodas,
 ,,,,,istg_id,ref,Istaiga,,,4,open,,Įstaigos ID,
 ,,,,,tev_ist_id,ref,Istaiga,,,4,open,,Tėvinės įstaigos ID,
 ,,,,,prof_kod,string,,,,4,open,,Lovos profilis,
