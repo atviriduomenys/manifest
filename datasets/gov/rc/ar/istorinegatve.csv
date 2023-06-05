@@ -1,12 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/istorinegatve,,,,,,,,,,,,Adresų registras,
-,,istorinegatve,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla=adr_istorines_gatves.csv,,,,,Adresų registro duomenų bazė,
-,,,,IstorineGatve,,,gat_kodas,,,,,,Adresų registro istorinių gatvių tekstinių duomenų rinkinys,Istorinių gatvių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (istorines (panaikintas) apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,gat_kodas,integer,,GAT_KODAS,,3,open,,Gatvės identifikavimo kodas,
-,,,,,tipas,string,,TIPAS,,3,open,,Gatvės tipas,
-,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Gatvės tipo trumpinys,
-,,,,,pavadinimas,string,,VARDAS_K,,3,open,,Gatvės pavadinimas (kilmininko linksnyje),
-,,,,,gyv_kodas,ref,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,GYV_KODAS,,4,open,,"Gyvenamosios vietovės, kurioje yra gatvė, identifikavimo kodas",
-,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
-,,,,,gat_nuo,date,,GAT_NUO,,3,open,,Objekto įregistravimo data,
+,,,,IstorineGatve,,,gat_kodas,,,4,,,Adresų registro istorinių gatvių tekstinių duomenų rinkinys,Istorinių gatvių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (istorines (panaikintas) apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,gat_kodas,integer,,,,4,open,,Gatvės identifikavimo kodas,
+,,,,,tipas,string,,,,3,open,,Gatvės tipas,
+,,,,,tipo_santrumpa,string,,,,3,open,,Gatvės tipo trumpinys,
+,,,,,pavadinimas,string,,,,3,open,,Gatvės pavadinimas (kilmininko linksnyje),
+,,,,,gyv_kodas,integer,,,,2,open,,"Gyvenamosios vietovės, kurioje yra gatvė, kodas",
+,,,,,gyv_pavadinimas,string,,,,2,open,,"Gyvenamosios vietovės, kurioje yra gatvė, pavadinimas",
+,,,,,nuo,date,D,,,4,open,,Atributų rinkinio pradžios galiojimo data,
+,,,,,gat_nuo,date,D,,,4,open,,Objekto įregistravimo data,
 ,,,,,,,,,,,,,,

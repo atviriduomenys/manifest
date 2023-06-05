@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/stacionarines_sutartys,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Paslauga,,,,,,4,,,,
+,,,,,pagrindines_kodas,ref,/datasets/gov/vlk/istaigos/Istaiga[pagrindines_kodas],,,4,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos, kuri sudarė sutartį ID "
+,,,,,paslauga,string,,,,4,open,,Paslaugos dėl kurios sudaryta sutartis pavadinimas,Paslaugos dėl kurios sudaryta sutartis pavadinimas
+,,,,,nuo,date,D,,,4,open,,Galioja nuo,Sutartis galioja nuo
+,,,,,iki,date,D,,,4,open,,Galioja iki,Sutartis galioja iki
