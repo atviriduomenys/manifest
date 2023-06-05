@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/paramos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Deklaracija,,,,eiles_nr,,4,,,Prašymai pervesti pajamų mokesčio dalį duomenys,"Prašymų pervesti pajamų mokesčio dalį vienetams, turintiems teisę gauti paramą, ir (arba) politinėms partijoms duomenys"
+,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
+,,,,,remejo_kodas,string,,,,2,open,,Rėmėjo kodas,
+,,,,,metai,integer,,,,2,open,,Mokestinis laikotarpis,
+,,,,,gavejo_kodas,string,,,,2,open,,Gavėjo kodas,
+,,,,,gavejo_pavadinimas,string,,,,2,open,,Gavėjo pavadinimas,
+,,,,,gavejo_sav_kodas,string,,,,2,open,,Gavėjo savivaldybės kodas,
+,,,,,gavejo_savivaldybe,string,,,,2,open,,Gavėjo savivaldybė,
+,,,,,gavejo_tipas,string,,,,2,open,,Gavėjo tipas,
+,,,,,gavejo_imones_rusis,string,,,,2,open,,Gavėjo įmonės rūšis,
+,,,,,mokescio_dalis_proc,number,%,,,2,open,,Mokesčio dalis,Procentais
+,,,,,suma,number,,,,2,open,,Apskaičiuota paramos suma,Eurais
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
