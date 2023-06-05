@@ -1,15 +1,21 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/nedarbo_ismokos,,,,,,,,,,,,,
-,,sodranedarboismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nedarbo_ismokos.zip,"self.extract(""zip"")[""nedarbo_ismokos.csv""]",,,,,
-,,,,NedarboIsmokos,,,"metu_menuo, lytis, amzius",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,mėnuo,Mėnuo
-,,,,,uz_pilna_men,string,,UZ_PILNA_MEN,,3,open,,ar išmoka uš pilną mėnesį?,Išmoka mokama už visas mėnesio dienas arba nevisas
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodranedarboismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nedarbo_ismokos.zip,"extract(""zip"")[""nedarbo_ismokos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,NedarboIsmoka,,,"metu_menuo",,,2,,,,
+,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Mėnuo,
+,,,,,uz_pilna_men,string,,UZ_PILNA_MEN,,4,open,,Ar išmoka uš pilną mėnesį?,Išmoka mokama už visas mėnesio dienas arba nevisas
 ,,,,,,enum,,,"""Už nepilną mėnesį""",,,,Darbo išmokos už nepilną mėnesį,
 ,,,,,,,,,"""Už pilną mėnesį""",,,,Darbo išmokos už pilną mėnesį,
-,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
-,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
-,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
-,,,,,ismokos_dydis_eur,number,,ISMOKOS_DYDIS_EUR,,3,open,,"išmokos dydis, Eur","Išmokos dydis, Eur"
-,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
-,,,,,mok_trukme_sum,number,,MOK_TRUKME_SUM,,3,open,,"mokėjimo trukmė, mėn.","Mokėjimo trukmė, mėn."
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],SAVIVALDYBE,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,lytis,string,,LYTIS,,4,open,,Lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
+,,,,,ismokos_dydis_eur,number,,ISMOKOS_DYDIS_EUR,,2,open,,"Išmokos dydis, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,gaveju_sk,number,,GAVEJU_SK,,4,open,,Gavėjų skaičius,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,mok_trukme_sum,number,,MOK_TRUKME_SUM,,3,open,,"Mokėjimo trukmė, mėn.",
