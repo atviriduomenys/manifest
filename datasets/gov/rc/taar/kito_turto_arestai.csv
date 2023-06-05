@@ -10,4 +10,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iregistravimo_menuo,integer,,,,2,open,,Turto arešto akto įregistravimo mėnuo,
 ,,,,,isregistravimo_metai,integer,,,,2,open,,Turto arešto akto išregistravimo metai,
 ,,,,,isregistravimo_menuo,integer,,,,2,open,,Turto arešto akto išregistravimo mėnuo,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
