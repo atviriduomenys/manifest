@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/atestuota_dm,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Subjektas,,,eil_nr,,,4,open,,"Pateikiama informacija apie dauginamąją medžiagą tiekiančius ūkio subjektus (vardas, pavardė/ pavadinimas, tiekiamos augalų grupės, veiklos rūšys, dauginamosios medžiagos pažymėjimo numeris, įsakymo data)",
+,,,,,eil_nr,string,,,,4,open,,Eilės numeris,
+,,,,,tiekejas,string,,,,1,open,,"Tiekėjo vardas, pavardė / pavadinimas",
+,,,,,veikla,string,,,,1,open,,Veiklos sritis (-ys) ,
+,,,,,augalu_grupe,string,,,,2,open,,Augalų grupė (-ės) ,
+,,,,,pazymejimas,string,,,,2,open,,Pažymėjimo Nr.,
+,,,,,isakymas,string,,,,1,open,,Įsakymo data ir Nr.,

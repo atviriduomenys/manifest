@@ -1,21 +1,22 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-1,datasets/gov/rrt/broadcasting,,,,,,,,,,,,,
-3,,broadcasting,,,,csv,,https://opendata.rrt.lt/sms/BC.csv,"tabular(sep: "";"")",,,,,
-4,,,,Broadcasting,,,id,,,,,,,
-5,,,,,id,integer,,ID,,4,private,,,
-6,,,,,frequency_mhz,integer,,FREQUENCY_MHZ,,4,open,,,Centrinis siųstuvo dažnis
-7,,,,,bandwidth_mhz,number,,BANDWIDTH_MHZ,,4,open,,,Kanalo plotis
-7,,,,,channel,integer,,CHANNEL,,3,open,,,Kanalo numeris
-8,,,,,antenna_height,integer,m,ANTENNA_HEIGHT,,4,open,,,Antenos aukštis virš žemės lygio
-9,,,,,licence_no,string,,LICENCE_NO,,3,open,,,Leidimo numeris
-10,,,,,longitude,number,,LONGITUDE,,3,open,,,Ilguma
-11,,,,,latitude,number,,LATITUDE,,3,open,,,Platuma
-12,,,,,erp_max_dbw,number,,ERP_MAX_DBW,,4,open,,,Maksimali spinduliavimo galia ERP
-13,,,,,valid_from,date,,VALID_FROM,,3,open,,,Leidimo galiojimo pradžia
-14,,,,,valid_to,date,,VALID_TO,,3,open,,,Leidimo galiojimo pabaiga
-15,,,,,system_type,string,,SYSTEM_TYPE,,3,open,,,Transliavimo sistemos tipas
-16,,,,,,enum,,,"""DAB""",,,,DAB,Skaitmeninio radijo siųstuvas
-17,,,,,,,,,"""DVB""",,,,DVB,Skaitmeninės televizijos siųstuvas
-18,,,,,,,,,"""RADIO""",,,,RADIO,Analoginio radijo siųstuvas
-19,,,,,lic_type,string,,LIC_TYPE,,,open,,,Leidimo tipas
-20,,,,,owner_name,string,,OWNER_NAME,,,open,,,Leidimo turėtojo pavadinimas
+,datasets/gov/rrt/broadcasting,,,,,,,,,,,,,
+,,broadcasting,,,,csv,,https://opendata.rrt.lt/sms/BC.csv,"tabular(sep: "";"")",,,,,
+,,,,Broadcasting,,,id,,,4,,,,
+,,,,,id,integer,,ID,,4,open,,,
+,,,,,frequency_mhz,integer,,FREQUENCY_MHZ,,4,open,,Centrinis siųstuvo dažnis,
+,,,,,bandwidth_mhz,number,,BANDWIDTH_MHZ,,4,open,,Kanalo plotis,
+,,,,,channel,integer,,CHANNEL,,3,open,,Kanalo numeris,
+,,,,,antenna_height,integer,m,ANTENNA_HEIGHT,,4,open,,Antenos aukštis virš žemės lygio,
+,,,,,licence_no,string,,LICENCE_NO,,4,open,,Leidimo numeris,
+,,,,,longitude,number,,LONGITUDE,,3,open,,Ilguma,
+,,,,,latitude,number,,LATITUDE,,3,open,,Platuma,
+,,,,,coordinates_wgs,geometry(point),,,"point(latitude, longitude)",,,,,
+,,,,,erp_max_dbw,number,,ERP_MAX_DBW,,4,open,,Maksimali spinduliavimo galia ERP,
+,,,,,valid_from,date,D,VALID_FROM,,4,open,,Leidimo galiojimo pradžia,
+,,,,,valid_to,date,D,VALID_TO,,4,open,,Leidimo galiojimo pabaiga,
+,,,,,system_type,string,,SYSTEM_TYPE,,4,open,,Transliavimo sistemos tipas,
+,,,,,,enum,,,"""DAB""",,,,DAB,Skaitmeninio radijo siųstuvas
+,,,,,,,,,"""DVB""",,,,DVB,Skaitmeninės televizijos siųstuvas
+,,,,,,,,,"""RADIO""",,,,RADIO,Analoginio radijo siųstuvas
+,,,,,lic_type,string,,LIC_TYPE,,3,open,,Leidimo tipas,
+,,,,,owner_name,string,,OWNER_NAME,,3,open,,Leidimo turėtojo pavadinimas,

@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/kanapiu_paseliai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Meginys,,,id,,,4,open,,,"Informacija apie pluoštinių kanapių pasėlių plotus pagal veisles, paimtus pluoštinių kanapių mėginius ir nustatytus THC kiekius pluoštinių kanapių veislėse"
+,,,,,id,string,,,,4,open,Identifikacinis numeris,,
+,,,,,registracija,integer,,,,2,open,Registracijos metai,,
+,,,,,,comment,type,,"update(type: ""registracija"", ref: ""Y"")",4,,spinta:213,,
+,,,,,veisle,string,,,,4,open,Kanapių veislė,,
+,,,,,plotas,number,ha,,,4,open,Bendras plotas,,
+,,,,,lauku_irasai,number,U,,,4,open,Laukų įrašų kiekis,,
+,,,,,tyrimai,number,U,,,4,open,Atliktų tyrimų skaičius,,
+,,,,,thc_suma,integer,,,,0,open,Suma Thc,,
+,,,,,virsija_thc,number,U,,,4,open,"Mėginių skaičius, viršijantis Thc",,

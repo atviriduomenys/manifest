@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/fba,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,FinansinesBuklesAtaskaita,,,,,,4,,,Finansinės būklės ataskaita,Valstybės kontrolės finansinės būklės ataskaitos duomenys
+,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,grupe_i_pavadinimas,string,,,,3,open,,Straipsnio I grupės pavadinimas,Straipsnio I grupės pavadinimas
+,,,,,grupe_ii_kodas,string,,,,3,open,,Straipsnio II grupės kodas,Straipsnio II grupės kodas
+,,,,,grupe_ii_pavadinimas,string,,,,3,open,,Straipsnio II grupės pavadinimas,Straipsnio II grupės pavadinimas
+,,,,,grupe_iii_kodas,string,,,,3,open,,Straipsnio III grupės kodas,Straipsnio III grupės kodas
+,,,,,grupe_iii_pavadinimas,string,,,,3,open,,Straipsnio III grupės pavadinimas,Straipsnio III grupės pavadinimas
+,,,,,grupe_iv_kodas,string,,,,3,open,,Straipsnio IV grupės kodas,Straipsnio IV grupės kodas
+,,,,,grupe_iv_pavadinimas,string,,,,3,open,,Straipsnio IV grupės pavadinimas,Straipsnio IV grupės pavadinimas
+,,,,,grupe_v_kodas,string,,,,3,open,,Straipsnio V grupės kodas,Straipsnio V grupės kodas
+,,,,,grupe_v_pavadinimas,string,,,,3,open,,Straipsnio V grupės pavadinimas,Straipsnio V grupės pavadinimas
+,,,,,paskutine_ataskaitinio_laikotarpio_diena,number,,,,2,open,,Paskutinė ataskaitinio laikotarpio diena,"Paskutinė ataskaitinio laikotarpio diena, suma Eur"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,paskutine_praejusio_ataskaitinio_laikotarpio_diena,number,,,,2,open,,Paskutinė praėjusio ataskaitinio laikotarpio diena,"Paskutinė praėjusio ataskaitinio laikotarpio diena, suma Eur"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

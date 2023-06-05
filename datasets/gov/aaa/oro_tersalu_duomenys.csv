@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/oro_tersalu_duomenys,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,IAtmosferaIsmetamiTersalai,,,,,,4,,,Į atmosferą išmestų teršalų kiekis,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
+,,,,,metai,integer,,,,2,open,,"Metai, kuriais įvertintas išmetamų teršalų kiekis",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,tersalai,string,,,,2,open,,Oro teršalai,Į atmosferą išmetamų teršalų pavadinimai
+,,,,,nfr_kodas,string,,,,4,open,,Teršalų išmetimo šaltinis,"Kodiniai teršalų išmetimo šaltinių pavadinimai. NFR kodai ir metodologija, pagal kurią atliekami skaičiavimai yra nurodyti EMEP/EEA Emission inventory guidebook."
+,,,,,kiekis,number,,,,4,open,,Į atmosferą išmestų teršalų kiekis,
+,,,,,matavimo_vnt,string,,,,4,open,,Matavimo vienetai,
+,,,,,,,,,,,,,,
+,,,,UkioSektoriai,,,,,,4,,,Ūkio sektoriai,
+,,,,,nfr_kodas,ref,IAtmosferaIsmetamiTersalai,,,4,open,,Teršalų išmetimo šaltinis,"Kodiniai teršalų išmetimo šaltinių pavadinimai. NFR kodai ir metodologija, pagal kurią atliekami skaičiavimai yra nurodyti EMEP/EEA Emission inventory guidebook."
+,,,,,ukio_sektorius,string,,,,4,open,,Ūkio sektorius,Išmetimo šaltinio kodų paaiškinimas.
