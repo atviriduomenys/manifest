@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/hi/vaistu_suvartojimas,,,,,,,,,,,,Antimikrobinių vaistinių preparatų suvartojimo Lietuvoje duomenys,
 ,,,,,,,,,,,,,,
 ,,,,Antimikrobinis,,,,,,3,,,Antimikrobinių vaistinių preparatų suvartojimas,
-,,,,,metai,integer,Y,,,2,open,,Antimikrobinių vaistinių preparatų suvartojimo statistikos vedimo metai,
+,,,,,metai,integer,yr,,,2,open,,Antimikrobinių vaistinių preparatų suvartojimo statistikos vedimo metai,
 ,,,,,istaiga,ref,/datasets/gov/vaspvt/licencijos/Istaiga[ja_kodas],,,4,open,,Sveikatos priežiūros įstaigos JAR kodas,
 ,,,,,ligonine,string,,,,2,open,,Ligoninės pavadinimas,
 ,,,,,tipas,string,,,,4,open,,Ligoninės tipas,"Ligoninių tipai: bendrojo pobūdžio ligoninė, palaikomojo gydymo ir slaugos ligoninė, specializuota ligoninė"
