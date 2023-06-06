@@ -1,6 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vaspvt/irenginiai,,,,,,,,,,,,"Sveikatos priežiūros technologijų, susijusių su medicinos prietaisais, vertinimo ir valdymo duomenys",
-,,,,,,,,,,,,,,
+,datasets/gov/vaspvt/priemones,,,,,,,,,,,,"Sveikatos priežiūros technologijų, susijusių su medicinos prietaisais, vertinimo ir valdymo duomenys",
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,MedicinosPriemone,,,id,,,4,open,,Brangių medicinos priemonių sąrašas,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
