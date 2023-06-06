@@ -4,7 +4,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Operacija,,,,,,4,,,Centralizuotai perkamų endoprotezų panaudojimas,Informacija apie PSDF biudžeto lėšomis atliktų centralizuotai perkamų sąnarių endoprotezavimo operacijų skaičių
 ,,,,,istg_id,ref,Istaiga,,,4,open,,Nuoroda į Istaiga,Gydymo įstaigos unikalus numeris
 ,,,,,lokalizacijos_id,ref,Lokalizacija,,,4,open,,Nuoroda į Lokalizacija,Endoprotezo lokalizacijos unikalus numeris
-,,,,,operacijos_tipo_id,number,,,,4,open,,Nuoroda į Tipas,Operacijos tipo unikalus numeris
 ,,,,,prasymo_id,ref,Prasymas,,,4,open,,Nuoroda į Prasymas,Prašymo unikalus numeris
 ,,,,,data,date,M,,,4,open,,Operacijos data,Operacijos atlikimo data mėnesio tikslumu
 ,,,,,,,,,,,,,,
