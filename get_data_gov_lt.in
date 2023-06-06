@@ -218,6 +218,7 @@ datasets/gov/vlk/faktines_lovos.csv
 datasets/gov/vlk/kochleariniai_implantai.csv
 datasets/gov/vlk/apmoketos_saskaitos_es.csv
 datasets/gov/vlk/israsytos_saskaitos_es.csv
+datasets/gov/vlk/cp_endoprotezai.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -268,6 +269,8 @@ datasets/gov/aaa/upiu_bukles_duomenys.csv
 datasets/gov/mita/paraiskos.csv
 datasets/gov/lsd/turizmas/atvyksta.csv
 datasets/gov/miskai/leidimai.csv
+datasets/gov/miskai/pvp.csv
+datasets/gov/miskai/vmp.csv
 datasets/gov/migracija/prieglobscio_suteikimas.csv
 datasets/gov/vstt/saugojamos_rusys.csv
 datasets/gov/vstt/saugomu_ter_kadastras.csv
@@ -388,10 +391,16 @@ datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
 datasets/gov/vmi/ja_nepriemokos.csv
 datasets/gov/aaa/oro_monitoringo_matavimai.csv
+datasets/gov/finmin/sutartys.csv
 datasets/gov/vat/medienos_gamintojai.csv
 datasets/gov/vat/fitosanitarijos_postai.csv
 datasets/gov/vat/tikrinimo_vietos.csv
 datasets/gov/vat/r21_dm_kokybe.csv
 datasets/gov/vat/r18_sodo_dm.csv
 datasets/gov/vmi/imokos_forma1_vp.csv
+datasets/gov/hi/gyvensena/suaugusiu.csv
+datasets/gov/hi/gyvensena/vaiku.csv
+datasets/gov/hi/specialistai.csv
+datasets/gov/hi/vaistu_suvartojimas/antimikrobinis.csv
+datasets/gov/hi/lovos.csv
 datasets/gov/hi/profesines.csv
