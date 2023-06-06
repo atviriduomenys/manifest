@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/miskai/vmp,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PVPBukle,,,,,,4,,,PVP būklė,"Reikalinga požymiui, ar PVP autorius per pastaruosius 1 ar 3 metus buvo parengęs patvirtintų projektų"
+,,,,,pav,string,,,,3,open,,Būklės pavadinimas,"Požymis, ar PVP autorius per pastaruosius 1 ar 3 metus buvo parengęs patvirtintų projektų"
+,,,,,,,,,,,,,,
+,,,,PrivacValduProjektas,,,,,,4,,,Privačių valdų projektas,"Informacija apie projektą, kurį parengė PVP autorius"
+,,,,,nr,integer,,,,3,open,,Projekto numeris,
+,,,,,data,number,,,,3,open,,Projekto data,
+,,,,,invent_atlikta,number,,,,3,open,,Inventorizacijos metai,
+,,,,,autorius,ref,PVPAutorius,,,4,open,,Projekto autorius,
+,,,,,gal_nuo,number,,,,3,open,,Projekto galiojimo pradžia,
+,,,,,gal_iki,number,,,,3,open,,Projekto galiojimo pabaiga,
+,,,,,inventorizavo,string,,,,3,open,,Inventorizavo,
+,,,,,,,,,,,,,,
+,,,,PVPAutorius,,,,,,4,,,PVP autorius,Informacija apie privačių miškų vidinės miškotvarkos projektų autorius
+,,,,,aut_vard,string,,,,3,open,,Privačių miškų vidinės miškotvarkos projektų autoriaus vardas pavardė,
+,,,,,telefonas,string,,,,3,open,,Privačių miškų vidinės miškotvarkos projektų autoriaus telefono nr.,
+,,,,,,,,,,,,,,
+,,,,PVPBuklesKaita,,,,,,4,,,PVP būklės kaita,"Iš šios lentelės skaičiuojama, ar PVP autoriai buvo parengę projektų per pastaruosius 1 ir 3 metus"
+,,,,,bukle,ref,PVPBukle,,,4,open,,Būklė,
+,,,,,bukles_data,datetime,,,,4,open,,Patvirtinto projekto data,"Požymis, ar PVP autorius per pastaruosius 1 ir 3 metus buvo parengęs PVP projektų"
+,,,,,pvp,ref,PrivacValduProjektas,,,4,open,,Privatus vidinės miškotvarkos projektas,

@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/vsr/sutarciu_pabaigos,,,,,,,,,,,,Vedybų sutarčių registro (VSR) duomenys - pranešimai apie vedybų sutarčių pabaigą,
+,,,,,,,,,,,,,,
+,,,,VsrPabaiga,,,dok_id,,,4,,,Vedybų sutarčių registro (VSR) duomenys - pranešimai apie vedybų sutarčių pabaigą,
+,,,,,dok_id,integer,,,,4,open,,Dokumento identifikavimo kodas šiame rinkinyje,
+,,,,,porusis,ref,/datasets/gov/rc/vsr/klasifikatoriai/Porusis,,,4,open,,Sutarties porūšis iš VRS sutarčių porūšių klasifikatoriaus ,
+,,,,,statusas,ref,/datasets/gov/rc/vsr/klasifikatoriai/Statusas,,,4,open,,Sutarties statusas iš VRS sutarčių statusų klasifikatoriaus,
+,,,,,reg_metai,integer,,,,2,open,,Dokumento įregistravimo data (metai),
+,,,,,reg_ketvirtis,integer,,,,2,open,,Dokumento įregistravimo data (ketvirtis),
+,,,,,teikejas,string,,,,3,open,,Duomenų teikėjas,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

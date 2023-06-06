@@ -1,0 +1,37 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vrk/nariai,,,,,,,,,,,,,
+,,resource12,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Nariai,,,,,,
+,,,,Narys,,,nariai_id,,,4,,,,
+,,,,,nariai_id,integer,,,,4,open,,Unikalus identifikatorius,
+,,,,,org_tipas,string,,,,2,open,,Organizacijos tipas (Politinė partija, Politinis komitetas)
+,,,,,,enum,,,"""Partija""",,,,Partija,
+,,,,,,,,,"""Politinis komitetas (SAV)""",,,,Politinis komitetas (SAV),
+,,,,,org_ja_kodas,integer,,,,2,open,,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
+,,,,,org_pavadinimas,string,,,,2,open,,Politinės organizacijos pavadinimas,Pateikiami visi registruoti ir priimti/nepriimti nario mokesčio mokėjimai visose politinėse organizacijose. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
+,,,,,ataskaitiniai_metai,integer,,,,2,open,,Nario mokesčio mokėjimo metai,
+,,,,,moketojas,string,,,,4,open,,"Politinės organizacijos narys, sumokėjęs mokestį","Naudojamas HASH kodas duomenų rinkiniui, t. y. vienodas HASH kodas (ar ID) sugeneruojamas konkrečiam asmeniui ir jis yra vienodas duomenų rinkinyje"
+,,,,,mok_data,date,D,,,4,open,,Mokėjimo data,Formatas (mmmm-mm-dd)
+,,,,,mok_suma,number,,,,3,open,,Įmokos dydis,Sumokėto partijos nario mokesčio dydis (EUR)
+,,,,,mok_busena,string,,,,4,open,,Nario mokesčio priėmimo būsena,Nario mokesčių priėmimo būsena (Priimti mokesčiai / Nepriimti mokesčiai)
+,,,,,,enum,,,"""P""",,,,Priimti mokesčiai,
+,,,,,,,,,"""A""",,,,Nepriimti mokesčiai,
+,,,,,mok_budas,string,,,,4,open,,Nario mokesčio mokėjimo būdas,Nario mokesčių mokėjimo būdas (Pavedimu / Grynaisiais)
+,,,,,,enum,,,"""P""",,,,Pavedimu,
+,,,,,,,,,"""G""",,,,Grynaisiais,
+,,,,,lytis,string,,,,4,open,,Politinės organizacijos nario lytis,
+,,,,,,enum,,,"""V""",,,,Vyras,
+,,,,,,,,,"""M""",,,,Moteris,
+,,,,,amziaus_grupe,string,,,,4,open,,Politinės organizacijos nario amžiaus grupė (nario mokesčio mokėjimo dieną),"Rodomas politinės organizacijos nario amžiaus grupė intervalais (nuo - iki), kas 5 metai. Amžiaus grupė nustatoma nario mokesčio mokėjimo dieną."
+,,,,,,enum,,,"""18-24""",,,,Amžiaus grupė nuo 18 iki 24 metų,
+,,,,,,,,,"""25-29""",,,,Amžiaus grupė nuo 25 iki 29 metų,
+,,,,,,,,,"""30-34""",,,,Amžiaus grupė nuo 30 iki 34 metų,
+,,,,,,,,,"""35-39""",,,,Amžiaus grupė nuo 35 iki 39 metų,
+,,,,,,,,,"""40-44""",,,,Amžiaus grupė nuo 40 iki 44 metų,
+,,,,,,,,,"""45-49""",,,,Amžiaus grupė nuo 45 iki 49 metų,
+,,,,,,,,,"""50-54""",,,,Amžiaus grupė nuo 50 iki 54 metų,
+,,,,,,,,,"""55-59""",,,,Amžiaus grupė nuo 55 iki 59 metų,
+,,,,,,,,,"""60-64""",,,,Amžiaus grupė nuo 60 iki 64 metų,
+,,,,,,,,,"""65-69""",,,,Amžiaus grupė nuo 65 iki 69 metų,
+,,,,,,,,,"""70-74""",,,,Amžiaus grupė nuo 70 iki 74 metų,
+,,,,,,,,,"""75-79""",,,,Amžiaus grupė nuo 75 iki 79 metų,
+,,,,,,,,,"""80+""",,,,Amžiaus grupė nuo 80 metų,

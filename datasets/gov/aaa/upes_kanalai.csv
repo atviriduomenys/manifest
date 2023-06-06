@@ -1,0 +1,29 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/upes_kanalai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,UpeKanalas,,,,,,2,,,Upės ir kanalai,"Pagal Upių, ežerų ir tvenkinių kadastro nuostatus, patvirtintų Lietuvos Respublikos Vyriausybės 2000-09-19 nutarimu Nr. 1114, kadastre kaupiama informacija apie upes, kurių ilgis ne mažesnis kaip 3 kilometrai arba baseino plotas ne mažesnis kaip 5 kv. kilometrai ir (ar) valstybinės reikšmės vidaus vandens telkiniams priskirtas upes ar kanalus, ir (ar) upes ar kanalus, kuriuose vykdomas valstybinis aplinkos monitoringas."
+,,,,,id,string,,,,4,open,,"Upės unikalus identifikatorius",
+,,,,,pavadinimas,string,,,,4,open,,"Upės, kanalo pavadinimas",
+,,,,,kadastroid,string,,,,4,open,,Objekto kadastro identifikavimo kodas,
+,,,,,registruota,date,D,,,4,open,,Kadastro objekto registravimo data,"Metai, mėnuo, diena, laikas"
+,,,,,redaguota,date,D,,,4,open,,Kadastro objekto redagavimo data,"Metai, mėnuo, diena, laikas"
+,,,,,kategorija,integer,,,,4,open,,Vandens objekto kategorijos pavadinimo kodas,"Įsakymu Nr. D1-752 patvirtintas PAVIRŠINIŲ VANDENS TELKINIŲ KATEGORIJŲ KLASIFIKATORIUS https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.361485"
+,,,,,,enum,,,1,,,,Upė,
+,,,,,,,,,2,,,,Kanalas,
+,,,,,,,,,3,,,,Natūralus ežeras,
+,,,,,,,,,4,,,,Užtvenktas ežeras,
+,,,,,,,,,5,,,,Tvenkinys,
+,,,,,,,,,6,,,,Dirbtinis nepratekamas paviršinio vandens telkinys,
+,,,,,,,,,7,,,,Tarpinis vandens telkinys,
+,,,,,,,,,8,,,,Pakrantės vandens telkinys,
+,,,,,,,,,9,,,,Teritorinis vandens telkinys,
+,,,,,ubr_kodas,string,,,,4,open,,"Upės pabaseinio arba baseino, kuriame yra vandens objektas, kodas",
+,,,,,vyrupes_uid,string,,,,4,open,,"Vyresniosios upės, į kurią įteka upės, unikalus identifikatorius",
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Žiočių centro koordinatės,LKS 94 koordinačių sistemoje
+,,,,,krantas,integer,,,,4,open,,Įtekėjimo į vyresniąją upę krantas,
+,,,,,,enum,,,0,,,,kairys,
+,,,,,,,,,1,,,,dešinys,
+,,,,,eiliskumas,integer,,,,3,open,,"Upės įtekėjimo eiliškumas","Upės, įtekančios į Baltijos jūrą ar Kuršių marias, atžvilgiu."
+,,,,,ilgis,number,km,,,4,open,,"Upės ilgis","Geografinis Lietuvos teritorijoje"
+,,,,,debitas,number,m^3/s,,,4,open,,"Vidutinis daugiametis vandens debitas upės žiotyse",
+,,,,,shape,geometry(3346),,,,4,open,,Geometrinis primityvas,

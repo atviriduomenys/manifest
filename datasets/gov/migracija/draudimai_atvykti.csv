@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/migracija/draudimai_atvykti,,,,,,,,,,,,,"Duomenys apie asmenis, kuriems uždrausta atvykti į Lietuvos Respubliką"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Draudimas,,,id,,,4,open,,"Duomenys apie užsieniečius, kuriems buvo uždrausta atvykti į Lietuvos Respubliką, kuriems buvo atsisakyta išduoti vizą ar ji buvo panaikinta, ar atšaukta Šengeno viza arba kuriems buvo atsisakyta išduoti leidimą gyventi ar jis buvo panaikintas, užsieniečius, kurie buvo neįleisti į Lietuvos Respubliką, įpareigoti išvykti iš Lietuvos Respublikos, grąžinti į užsienio valstybę, perduoti užsienio valstybei pagal Lietuvos Respublikos sudarytą tarptautinę sutartį dėl neteisėtai esančių asmenų grąžinimo (readmisijos) arba bandė neteisėtai išvykti iš Lietuvos Respublikos ar išvyko iš jos, arba užsieniečius, kurie neturi teisės gyventi Lietuvos Respublikoje ir nevykdo įsipareigojimų muitinei ar nesumokėjo Lietuvos Respublikos įstatymų nustatyta tvarka skirtos (skirtų) baudos (baudų).",
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,sprendimo_registracija,date,D,,,4,open,,Sprendimo registracijos data,
+,,,,,sprendimas,string,,,,3,open,,Migracijos departamento sprendimas,
+,,,,,sprendimo_pagrindas,string,,,,2,open,,Migracijos departamento pagrindas uždrausti atvykti į Lietuvos Respubliką,
+,,,,,,comment,property,,"""update(property: """"sprendimo_pagrindas[]"""", type: """"array"""", source: """"Sprendimo_pagrindas"""")""",4,,spinta:161,,
+,,,,,poreiksme,string,,,,2,open,,Sprendimo poreikšmė,
+,,,,,,comment,property,,"""update(property: """"poreiksme[]"""", type: """"array"""", source: """"Poreiksme"""")""",4,,spinta:161,,
+,,,,,pilietybe,string,,,,2,open,,Sprendimą gavusio asmens pilietybė,
+,,,,,,comment,property,,"""update(property: """"pilietybe[]"""", type: """"array"""", source: """"Pilietybe"""")""",4,,spinta:161,,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
+,,,,,amziaus_grupe,string,,,,3,open,,Sprendimą gavusio asmens amžiaus grupė,

@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/taar/neidentifikuoto_turto_arestai,,,,,,,,,,,,TAAR pirminiai duomenys (raw data) apie areštuotą neidentifikuotą turtą,"Turto arešto aktų registro nuasmeninti duomenys (RAW DATA) apie areštuojamą neidentifikuotą turtą, turto tipą ir potipį, turto arešto aktų jų statusus, įregistravimo / išregistravimo datas."
+,,,,,,,,,,,,,,
+,,,,NeidentifikuotasTurtas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Turto arešto akto dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,neidientifikuotoid,integer,,,,4,open,,Neidentifikuoto turto dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,turto_tipas,ref,/datasets/gov/rc/taar/klasifikatoriai/TurtoTipas,,,4,open,,Turto tipas iš TAAR turto tipų klasifikatoriaus,
+,,,,,dokumento_statusas,ref,/datasets/gov/rc/taar/klasifikatoriai/DokumentoStatusas,,,4,open,,Turto arešto akto statusas iš TAAR dokumentų statusų klasifikatoriaus,
+,,,,,iregistravimo_metai,integer,,,,2,open,,Turto arešto akto įregistravimo metai,
+,,,,,iregistravimo_menuo,integer,,,,2,open,,Turto arešto akto įregistravimo mėnuo,
+,,,,,isregistravimo_metai,integer,,,,2,open,,Turto arešto akto išregistravimo metai,
+,,,,,isregistravimo_menuo,integer,,,,2,open,,Turto arešto akto išregistravimo mėnuo,
