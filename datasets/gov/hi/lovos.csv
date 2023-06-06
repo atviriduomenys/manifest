@@ -8,8 +8,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ist_pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
 ,,,,Savivaldybe,,,kod,,,4,,,Savivaldybės,
 ,,,,,kod,string,,,,3,open,,Savivaldybės kodas,
-,,,,,sav_pavadinimas,string,,,,4,open,,Savivaldybės pavadinimas,
-,,,,,sav_kodas,string,,,,4,open,,RC savivaldybės kodas,
+,,,,,sav_pavadinimas,string,,,,2,open,,Savivaldybės pavadinimas,
+,,,,,sav_kodas,string,,,,2,open,,RC savivaldybės kodas,
 ,,,,LovosProfilis,,,prof_kod,,,4,,,Lovų profiliai,
 ,,,,,prof_kod,string,,,,4,open,,Lovos profillo kodas,
 ,,,,,grupes_kodas,string,,,,4,open,,Lovos profilio grupės kodas,
@@ -28,9 +28,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,hosp_vaik,integer,U,,,4,open,,Iš hospitalizuotų 0-17 m. vaikai,"0-17 m. vaikų, paguldytų į stacionarinio gydymo įstaigą (skyrių), skaičius"
 ,,,,,isr,integer,U,,,4,open,,Išrašyta ir perkelta ligonių,"Pacientai, išvykę iš stacionaro į namus arba perkelti į kitą gydymo įstaigą"
 ,,,,,mire,integer,U,,,4,open,,Mirę ligoniai,
-,,,,,lovadieniai,integer,U,,,4,open,,Lovadieniai,"Kalendorinių dienų skaičius nuo paciento atvykimo į ligoninę iki jo išrašymo. Atvykimo ir išrašymo diena skaičiuojama kaip viena. Jei ligonis atvyko ir išsirašė tą pačią dieną, skaičiuojamas 1 lovadienis"
-,,,,,funk,number,U,,,4,open,,"Lovos funkcionavimas (užimtumas), dienomis","Parodo, kiek dienų per metus stacionaro lova buvo užimta, dienomis"
+,,,,,lovadieniai,integer,d,,,4,open,,Lovadieniai,"Kalendorinių dienų skaičius nuo paciento atvykimo į ligoninę iki jo išrašymo. Atvykimo ir išrašymo diena skaičiuojama kaip viena. Jei ligonis atvyko ir išsirašė tą pačią dieną, skaičiuojamas 1 lovadienis"
+,,,,,funk,number,d,,,4,open,,"Lovos funkcionavimas (užimtumas), dienomis","Parodo, kiek dienų per metus stacionaro lova buvo užimta, dienomis"
 ,,,,,funk_proc,number,%,,,4,open,,"Lovos funkcionavimas (užimtumas), procentais","Parodo, kokią dalį (procentais) dienų per metus stacionaro lova buvo užimta"
-,,,,,vgl,number,U,,,4,open,,Vidutinis gulėjimo laikas,Vidutinė vieno gulėjimo stacionare trukmė
+,,,,,vgl,number,d,,,4,open,,Vidutinis gulėjimo laikas,Vidutinė vieno gulėjimo stacionare trukmė
 ,,,,,apyv,number,U,,,4,open,,Lovos apyvarta,"Parodo, kiek vidutiniškai vienoje stacionaro lovoje gulėjo ligonių per metus"
 ,,,,,letal,number,%,,,4,open,,Letališkumas,Mirusių stacionaro ligonių dalis (proc.)
