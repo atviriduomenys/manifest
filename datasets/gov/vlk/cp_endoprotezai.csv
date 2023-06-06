@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data,date,M,,,4,open,,Operacijos data,Operacijos atlikimo data mėnesio tikslumu
 ,,,,,,,,,,,,,,
 ,,,,Istaiga,,,,,,4,,,Įstaigų sąrašas,"Gydymo įstaigų, kuriose atliktos endoprotezavimo operacijos, klasifikatorius"
-,,,,,istg_id,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kurioje atlikta operacija, ID"
+,,,,,istg_id,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, kurioje atlikta operacija, ID"
 ,,,,,,,,,,,,,,
 ,,,,Tipas,,,,,,4,,,Operacijų tipų klasifikatorius,Operacijų tipų klasifikatorius
 ,,,,,kodas,string,,,,4,open,,Operacijos tipo kodas,
