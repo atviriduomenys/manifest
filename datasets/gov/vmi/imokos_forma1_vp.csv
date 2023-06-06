@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,NepriemokosSuma,,,,,,4,,,Mokesčių ir kitų įmokų į biudžetus apyskaitos (forma 1-VP) VMI duomenys,
+,,,,IplaukuSuma,,,,,,4,,,Mokesčių ir kitų įmokų į biudžetus apyskaitos (forma 1-VP) VMI duomenys,
 ,,,,,id,string,,,,4,open,,Unikalus įrašo ID,
 ,,,,,imokos_pavadinimas,string,,,,1,open,,1-VP formos eilutės pavadinimas,
 ,,,,,eil_nr,integer,,,,4,open,,1-VP pagrindinės formos stulpelis Eil. Nr.,
