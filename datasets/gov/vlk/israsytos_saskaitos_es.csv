@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/israsytos_saskaitos_es,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,IsrasytaSaskaita,,,,,,4,,,Išrašytos sąskaitos ES šalims už tų šalių apdraustųjų sveikatos draudimu gydymą Lietuvoje,"Informacija apie PSDF išlaidas kitų Europos Sąjungos, Europos ekonominės erdvės valstybių narių, Šveicarijos Konfederacijos ir Jungtinės Karalystės apdraustiesiems Lietuvos gydymo įstaigose suteiktoms asmens sveikatos priežiūros paslaugoms bei vaistinėse išduotiems kompensuojamiesiems vaistams ir MPP apmokėti"
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date, ref: ""Y"")",4,open,spinta:213,,
+,,,,,salies_kodas,string,,,,4,open,,Šalies kodas,ES šalies kodas pagal ISO 3166-1 A2
+,,,,,israsyta,number,,,,2,open,,Išrašyta suma,Atitinkamos ES šalies susižinojimo tarnybai už tos ES šalies apdraustiesiems Lietuvoje suteiktas medicinos paslaugas išsiųstose sąskaitose nurodyta mokėtina suma eurais
+,,,,,,comment,type,,"update(type: ""money, ref: ""EUR"")""",4,open,spinta:40,,
+,,,,,apmoketa,number,,,,2,open,,Apmokėta suma,Atitinkamos ES šalies susižinojimo tarnybos už tos ES šalies apdraustiesiems Lietuvoje suteiktas medicinos paslaugas apmokėta suma eurais
+,,,,,,comment,type,,"update(type: ""money, ref: ""EUR"")""",4,open,spinta:40,,

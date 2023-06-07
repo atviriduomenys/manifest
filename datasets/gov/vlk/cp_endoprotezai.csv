@@ -1,0 +1,30 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/cp_endoprotezai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Operacija,,,,,,4,,,Centralizuotai perkamų endoprotezų panaudojimas,Informacija apie PSDF biudžeto lėšomis atliktų centralizuotai perkamų sąnarių endoprotezavimo operacijų skaičių
+,,,,,istg_id,ref,Istaiga,,,4,open,,Nuoroda į Istaiga,Gydymo įstaigos unikalus numeris
+,,,,,lokalizacijos_id,ref,Lokalizacija,,,4,open,,Nuoroda į Lokalizacija,Endoprotezo lokalizacijos unikalus numeris
+,,,,,prasymo_id,ref,Prasymas,,,4,open,,Nuoroda į Prasymas,Prašymo unikalus numeris
+,,,,,data,date,M,,,4,open,,Operacijos data,Operacijos atlikimo data mėnesio tikslumu
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,,,,4,,,Įstaigų sąrašas,"Gydymo įstaigų, kuriose atliktos endoprotezavimo operacijos, klasifikatorius"
+,,,,,istg_id,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, kurioje atlikta operacija, ID"
+,,,,,,,,,,,,,,
+,,,,Tipas,,,,,,4,,,Operacijų tipų klasifikatorius,Operacijų tipų klasifikatorius
+,,,,,kodas,string,,,,4,open,,Operacijos tipo kodas,
+,,,,,aprasymas,string,,,,4,open,,Operacijos tipo aprašymas,
+,,,,,pavadinimas,string,,,,4,open,,Operacijos tipo pavadinimas,
+,,,,,,,,,,,,,,
+,,,,Lokalizacija,,,,,,4,,,Protezų lokalizacijų klasifikatorius,Protezų lokalizacijų klasifikatorius
+,,,,,kodas,string,,,,4,open,,Protezo lokalizacijos kodas,
+,,,,,aprasymas,string,,,,4,open,,Protezo lokalizacijos aprašymas,
+,,,,,pavadinimas,string,,,,4,open,,Protezo lokalizacijos pavadinimas,"Endoprotezo lokalizacija: klubo, kelio ir kt."
+,,,,,,,,,,,,,,
+,,,,ProtezoTipas,,,,,,4,,,Protezų tipų pagal patologiją klasifikatorius,Protezų tipų pagal patologiją klasifikatorius
+,,,,,kodas,string,,,,4,open,,Protezo tipo kodas,
+,,,,,aprasymas,string,,,,4,open,,Protezo tipo aprašymas,
+,,,,,pavadinimas,string,,,,4,open,,Protezo tipo pavadinimas,"Endoprotezo tipas: standartinis, specialusis, individualus"
+,,,,,,,,,,,,,,
+,,,,Prasymas,,,,,,4,,,Endoprotezavimo prašymų lentelė,Endoprotezavimo prašymų lentelė
+,,,,,operacijos_tipo_id,ref,Tipas,,,4,open,,Nuoroda į Tipas,Operacijos tipo unikalus numeris
+,,,,,protezo_tipo_id,ref,ProtezoTipas,,,4,open,,Nuoroda į ProtezoTipas,Endoprotezo tipo unikalus numeris

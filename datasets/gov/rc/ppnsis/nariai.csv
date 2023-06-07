@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ppnsis/nariai,,,,,,,,,,,,"Politinių organizacijų narių duomenys apie lytį, amžių, pilietybę, geografinę padėtį ir narystę",
+,,,,Narys,,,"nr, politine_organizacija",,,3,,,PPNSIS duomenys apie politinių organizacijų narius,"Politinių partijų narių sąrašų informacinės sistemos duomenys apie Lietuvos Respublikos veikiančių politinių organizcijų narius - jų lytį, amžių, pilietybę, geografinę padėtį ir narystę partijoje"
+,,,,,nr,integer,,,,3,open,,Politinės organizacijos nario eil. numeris šiame duomenų rinkinyje,
+,,,,,nar_lytis,string,,,,4,open,,Politinės organizacijos nario lytis,
+,,,,,,enum,,,"""V""",,,,Vyras,
+,,,,,,,,,"""M""",,,,Moteris,
+,,,,,nar_amzius,string,,,,3,open,,Politinės organizacijos nario amžiaus grupė ,
+,,,,,nario_pilietybe,string,,,,3,open,,Politinės organizacijos nario pilietybė,
+,,,,,adreso_salis,string,,,,3,open,,"Šalies, kurioje deklaruota partijos nario gyvenamoji vieta,  kodas iš Gyventojų registro",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje deklaruota partijos nario gyvenamoji vieta, iš Gyventojų registro",
+,,,,,saraso_data,date,D,,,4,open,,Politinės organizacijos sąrašo pateikimo data,
+,,,,,politine_organizacija,ref,/datasets/gov/rc/ppnsis/politines_organizacijos/PolitineOrganizacija,,,4,open,,"Politinės organizacijos, kaip juridinio asmens,  pavadinimas iš Juridinių asmenų registro",
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

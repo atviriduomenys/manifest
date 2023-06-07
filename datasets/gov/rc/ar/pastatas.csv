@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/pastatas,,,,,,,,,,,,Adresų registras,
 ,,,,Pastatas,,,aob_kodas,,,4,,,Adresų registro žemės sklypams ir pastatams suteiktų adresų tekstiniai duomenys,Žemės sklypams ir pastatams suteiktų adresų tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (žemės sklypams ar pastatams suteiktus adresus apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra statinys arba žemės sklypas, identifikavimo kodas",
-,,,,,aob_kodas,integer,,,,4,open,,"Adreso (namo, korpuso) identifikavimo išorinis kodas LR AR ",
-,,,,,gyv_kodas,ref,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,,,4,open,,"Gyvenamosios vietovės, kuriai priklauso adresas, identifikavimo kodas",
-,,,,,gat_kodas,ref,/datasets/gov/rc/ar/gatve/Gatve,,,4,open,,"Gatvės, kuriai priklauso adresas, identifikavimo kodas",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra statinys arba žemės sklypas, identifikavimo kodas",
+,,,,,aob_kodas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,Statinio arba žemės sklypo identifikavimo kodas,
+,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,,,4,open,,"Gyvenamosios vietovės, kuriai priklauso adresas, identifikavimo kodas",
+,,,,,gatve,ref,/datasets/gov/rc/ar/gatve/Gatve,,,4,open,,"Gatvės, kuriai priklauso adresas, identifikavimo kodas",
 ,,,,,nr,string,,,,4,open,,Žemės sklypo ir (ar) pastato numeris gatvėje arba gyvenamojoje vietovėje,
 ,,,,,korpuso_nr,string,,,,4,open,,Korpuso numeris ,
 ,,,,,pasto_kodas,string,,,,4,open,,Pašto kodas,

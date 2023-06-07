@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmvt/maisto_tvarkymo_subjektai,,,,,,,,,,,,Duomenys apie maisto tvarkymo subjektus,
+,,,,,,,,,,,,,,
+,,,,Subjektas,,,,,,3,,,Maisto tvarkymo subjektai,
+,,,,,jar_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,0,open,,Juridinio asmens kodas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,pavadinimas,string,,,,0,open,,Juridinio asmens pavadinimas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,veikla,string,,,,3,open,,Pagrindinė veikla,
+,,,,,evrk_1,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,3,open,,Veikla pagal Ekonominės veiklos rūšių klasifikatorių,
+,,,,,evrk_2,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,3,open,,Papildoma veikla pagal Ekonominės veiklos rūšių klasifikatorių,
+,,,,,evrk_3,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,1,open,,Papildoma veikla pagal Ekonominės veiklos rūšių klasifikatorių,
+,,,,,produktas,string,,,,1,open,,Produktas,
+,,,,,pk_1,ref,AsortimentoKlasifikatorius,,,4,open,,Asortimento kodas pagal VMVT FIS sąrašą,
+,,,,,pk_2,ref,AsortimentoKlasifikatorius,,,4,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
+,,,,,pk_3,ref,AsortimentoKlasifikatorius,,,4,open,,Papildomo asortimento kodas pagal VMVT FIS sąrašą,
+,,,,,mt_adresas,string,,,,0,open,,Maisto tvarkymo objekto adresas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,paz_isdave,string,,,,2,open,,Pažymėjimą išdavė,
+,,,,,isdavimas,date,D,,,4,open,,Pažymėjimo išdavimo data,
+,,,,,paz_nr,string,,,,1,open,,Maisto tvarkymo pažymėjimo numeris,
+,,,,,riz_grupe,string,,,,3,open,,Rizikos grupė,Aprašymas apie rizikos grupes: https://vmvt.lt/maisto-sauga/kontrole/ukio-subjektu-registrai/subjektai-pagal-rizikos-grupes
+,,,,,,,,,,,,,,
+,,,,AsortimentoKlasifikatorius,,,kodas,,,4,,,Produkto asortimento klasifikatorius pagal VMVT FIS,
+,,,,,kodas,string,,,,4,open,,Asortimento kodas,
+,,,,,pavadinimas,string,,,,4,open,,Asortimento pavadinimas pagal VMVT FIS sąrašą,

@@ -1,0 +1,39 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vrk/rezultatai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,resource5,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Rezultatai,,,,,,
+,,,,BalsavimoRezultatai,,,kandidato_id,,,2,,,,
+,,,,,protokolo_id,integer,,,,2,open,,Protokolo identifikatorius,
+,,,,,rink_turo_id,integer,,,,2,open,,Rinkimų turo identifikatorius,
+,,,,,rink_turo_pavad,string,,,,2,open,,Rinkimų turo pavadinimas,
+,,,,,apyg_id,integer,,,,2,open,,Apygardos identifikatorius,
+,,,,,apyg_nr,integer,,,,2,open,,Apygardos numeris,
+,,,,,apyg_pavad,string,,,,2,open,,Apygardos pavadinimas,
+,,,,,rink_turo_apyl_id,integer,,,,2,open,,Rinkimų turo apylinkės identifikatorius,
+,,,,,apyl_id,integer,,,,2,open,,Apylinkės identifikatorius,
+,,,,,apyl_unik_nr,integer,,,,2,open,,Unikalus apylinkės numeris,
+,,,,,apyl_nr,integer,,,,2,open,,Apylinkės numeris,
+,,,,,apyl_pavad,string,,,,2,open,,Apylinkės pavadinimas,
+,,,,,rinkeju_skaicius,integer,U,,,4,open,,Galutinis rinkėjų skaičius balsų skaičiavimo protokole,"Rinkėjų skaičius, nurodytas patvirtintame apylinkės balsų skaičiavimo protokole, t. y. pasibaigus balsavimui rinkimų dieną."
+,,,,,viso_dalyvavo,integer,U,,,4,open,,Rinkimuose dalyvavusių rinkėjų skaičius,
+,,,,,balsad_galioj,integer,U,,,4,open,,Galiojančių biuletenių skaičius balsadėžėje,
+,,,,,balsad_negal,integer,U,,,4,open,,Negaliojančių biuletenių skaičius balsadėžėje,
+,,,,,pastu_galioj,integer,U,,,4,open,,Galiojančių biuletenių skaičius paštu,
+,,,,,pastu_negal,integer,U,,,4,open,,Negaliojančių biuletenių skaičius paštu,
+,,,,,kandidato_id,integer,,,,2,open,,Kandidato identifikatorius,
+,,,,,rink_kandidato_id,integer,,,,2,open,,Kandidato identifikatorius rinkimuose,
+,,,,,vardas,string,,,,2,open,,Kandidato vardas,
+,,,,,pavarde,string,,,,2,open,,Kandidato pavardė,
+,,,,,kandidata_iskele,string,,,,2,open,,Kandidatą vienmandatėje apygardoje iškėlusios (-ių) organizacijos (-ų) pavadinimas (-ai) ir/ar kandidatas išsikėlė pats.,*atskiriama kabliataškiais
+,,,,,saraso_id,integer,,,,2,open,,"Kandidatų sąrašo (rinkimų organizacijos), keliamo daugiamandatėje apygardoje identifikatorius",
+,,,,,saraso_nr,integer,,,,2,open,,Kandidatų sąrašo numeris,"Kandidatų sąrašo, keliamo daugiamandatėje apygardoje numeris"
+,,,,,saraso_pavad,string,,,,2,open,,Kandidatų sąrašo pavadinimas,"Kandidatų sąrašo, keliamo daugiamandatėje apygardoje, pavadinimas"
+,,,,,balsu_balsad,integer,U,,,4,open,,Balsų skaičius balsadėžėje,Kandidato/Kandidatų sąrašo gautų balsų skaičius balsadėžėje
+,,,,,balsu_pastu,integer,U,,,4,open,,"Balsų, paduotų balsavimo vokais, skaičius",Kandidato/Kandidatų sąrašo gautų balsų skaičius balsavimo vokais (paštu)
+,,,,,balsu_viso,integer,U,,,4,open,,Balsų skaičius iš viso,Kandidato/Kandidatų sąrašo gautų balsų skaičius rinkimų apylinkėje iš viso
+,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės identifikavimo kodas,
+,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gpv/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,open,spinta:216,,
+,,,,,sav_pavadinimas,string,,,,2,open,,Savivaldybės pavadinimas,
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_pavadinimas"", type: """")",4,open,spinta:216,,

@@ -5,7 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,obj_tipas,integer,,,,4,open,,Registro objekto tipas,
 ,,,,,obj_pavadinimas,string,,,,3,open,,Registro objekto pavadinimas,
 ,,,,,zyma_id,integer,,,,4,open,,Žymos identifikavimo kodas šiame duomenų rinkinyje,
-,,,,,zyma_tipas,ref,/datasets/gov/rc/tr/tr_klasifikatoriai/TrZyma,,,4,open,,Žymos tipo kodas,
-,,,,,zyma_pavadinimas,ref,/datasets/gov/rc/tr/tr_klasifikatoriai/TrZyma,,,4,open,,Žymos tipo pavadinimas,
+,,,,,zyma_tipas,ref,/datasets/gov/rc/tr/tr_klasifikatoriai/TrZyma,,,4,open,,Žymos tipas,
 ,,,,,zyma_data,string,,,,3,open,,Žymos įregistravimo laikotarpis (metai-ketvirtis),
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
