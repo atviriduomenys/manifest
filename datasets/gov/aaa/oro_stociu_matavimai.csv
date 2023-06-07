@@ -20,6 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Teršalo idenfikacinis numeris,(sutampa su code_quantity)
 ,,,,,,,,,,,,,,
 ,,,,Averages,,,id,,,4,,,Valandiniai oro kokybės matavimai,
+,,,,,id,string,,,,4,open,,Matavimo identifikacinis numeris,
 ,,,,,stat_num,ref,/datasets/gov/aaa/oro_stociu_matavimai/Station[stat_num],,,4,open,,Matavimo stoties identifikacinis numeris,
 ,,,,,ldatetime,datetime,,,,4,open,,Matavimo pabaigos laikas,
 ,,,,,code_combi,string,,,,4,open,,Tarpinės lentos kodas,Juo prie matavimo prijungiamas teršalo arba meteorologinio parametro pavadinimas ir matavimo vienetas
