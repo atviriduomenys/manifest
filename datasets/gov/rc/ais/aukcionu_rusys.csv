@@ -6,4 +6,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aukciono_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/AukcionoTipas,,,4,open,,Varžytynių / aukcionų tipo kodas iš AIS varžytynių ir aukcionų tipų klasifikatoriaus,
 ,,,,,kiek_paskelbta,string,,,,3,open,,"Bendras paskelbtų varžytinių, aukcionų kiekis",
 ,,,,,kiek_ivyko,string,,,,3,open,,"Bendras įvykusių varžytinių, aukcionų kiekis",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
