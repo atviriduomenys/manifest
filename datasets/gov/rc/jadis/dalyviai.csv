@@ -9,4 +9,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lr_juridiniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių Lietuvos Respublikoje įregistruotų juridinių asmenų skaičius,
 ,,,,,uzsienio_fiziniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio fizinių asmenų skaičius,
 ,,,,,uzsienio_juridiniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio juridinių asmenų skaičius,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
