@@ -5,4 +5,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nr,integer,,,,4,open,,Eilės numeris,
 ,,,,,ant_indeksas,string,,,,4,open,,Antstolio indeksas,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje dirba antstolis, kodas iš Adresų registro",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
