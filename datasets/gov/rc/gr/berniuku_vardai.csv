@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,viso_vardas,integer,U,,,4,open,,Skaičius vardo (iš viso nurodytu laikotarpiu) įrašyto į Gyventojų registrą (bendravardžių kiekis),
 ,,,,,gimimo_metai,integer,,,,2,open,,Gyventojo gimimo datos metai,
 ,,,,,gimimo_ketvirtis,string,,,,2,open,,Gyventojo gimimo datos ketvirtis,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
