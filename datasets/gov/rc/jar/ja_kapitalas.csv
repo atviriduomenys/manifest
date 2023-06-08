@@ -6,5 +6,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos pavadinimas,
 ,,,,,data_nuo,date,D,,,4,open,,Įstatinio kapitalo įregistravimo data,
 ,,,,,reiksme,number,,,,3,open,,Įstatinio kapitalo dydis skaičiais,
-,,,,,valiuta,string,,,,3,open,,Valiutos kodas ,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,,valiuta,string,,,,3,open,,Valiutos kodas,
