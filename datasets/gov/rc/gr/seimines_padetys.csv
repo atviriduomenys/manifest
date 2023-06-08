@@ -14,4 +14,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dek_metai,integer,,,,2,open,,Gyventojo gyvenamosios vietos deklaravimo metai,
 ,,,,,dek_ketvirtis,string,,,,2,open,,Gyventojo gyvenamosios vietos deklaravimo metų ketvirtis,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybė, kurioje deklaruota gyventojo gyvenamoji vieta, iš Adresų registro",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
