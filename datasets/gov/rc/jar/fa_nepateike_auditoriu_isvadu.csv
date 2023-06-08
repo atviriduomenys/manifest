@@ -9,4 +9,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,juridinio asmens teisinio statuso kodas,
 ,,,,,audit_nepateikta_uz_metus,integer,,,,2,open,,"metai, už kuriuos metus juridinis asmuo nepateikė auditoriaus išvados",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-,,,,,formavimo_data,date,D,,,4,open,,duomenų formavimo data,
