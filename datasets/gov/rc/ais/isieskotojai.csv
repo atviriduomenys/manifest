@@ -19,4 +19,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Nenustatytas""",,,,Kai skolininko tipas kaip asmens tipas nenurodytas,
 ,,,,,bylu_kiekis,string,,,,3,open,,"Vykdomų bylų kiekis (sugrupuotas pagal išieškojimą inicijavusio asmens tipą ir jo savivaldybę, išieškojimo dalyką ir asmens, iš kurio vykdomas išieškojimas, tipą)",
 ,,,,,skolu_suma,integer,,,,3,open,,"Vykdomų bylų bendra skolų suma (sugrupuota pagal išieškojimą inicijavusio asmens tipą ir jo savivaldybę, išieškojimo dalyką ir asmens, iš kurio vykdomas išieškojimas, tipą)",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
