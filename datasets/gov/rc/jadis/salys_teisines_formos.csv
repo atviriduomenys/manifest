@@ -9,4 +9,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš Juridinių asmenų registro,
 ,,,,,uzs_fiz_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio fizinių asmenų skaičius,
 ,,,,,uzs_ja_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio juridinių asmenų skaičius,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
