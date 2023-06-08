@@ -173,6 +173,7 @@ datasets/gov/mita/horizon.csv
 datasets/gov/lhmt/hidrologija.csv	
 datasets/gov/lhmt/klimatologija.csv
 datasets/gov/vaspvt/licencijos.csv
+datasets/gov/vaspvt/medicinos_iranga.csv
 datasets/gov/vmi/pvm_deklaracijos.csv
 datasets/gov/avnt/tyciniai_bankrotai.csv
 datasets/gov/ivpk/adk.csv
