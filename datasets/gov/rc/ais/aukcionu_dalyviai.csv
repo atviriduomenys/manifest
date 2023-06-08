@@ -8,4 +8,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aktyvus_fa,string,,,,3,open,,"Bendras aktyviai dalyvavusių (didinusių pardavimo kainą) fizinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
 ,,,,,registravosi_ja,string,,,,3,open,,"Bendras užsiregistravusių juridinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
 ,,,,,aktyvus_ja,string,,,,3,open,,"Bendras aktyviai dalyvavusių (didinusių pardavimo kainą) juridinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
