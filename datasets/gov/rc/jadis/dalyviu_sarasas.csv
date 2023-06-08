@@ -10,4 +10,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,0,,,,Nepateikė,
 ,,,,,,,,,1,,,,Pateikė,
 ,,,,,saraso_data,date,D,,,4,open,,Juridinio asmens JAD sąrašo pateikimo data ,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
