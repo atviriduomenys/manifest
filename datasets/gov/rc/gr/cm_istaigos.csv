@@ -8,4 +8,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,3,open,,Įstaigos pavadinimas,
 ,,,,,data_nuo,date,D,,,4,open,,Įstaigos galiojimo data nuo,
 ,,,,,data_iki,date,D,,,4,open,,Įstaigos galiojimo data iki,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
