@@ -156,7 +156,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gama_kameros_tipas,string,,,,4,open,,Techninė Charakteristika (Gk): Tipas,
 ,,,,,,enum,,,"""1""",,,,Kompiuterinis tomografas (SPECT),Vieno fotono emisijos tomografijos sistema
 ,,,,,,,,,"""2""",,,,Kompiuterinis tomografas (SPECT/CT),Vieno fotono emisijos tomografijos sistema su kompiuterinės tomografijos moduliu
-,,,,,gk_detektoriu_sk,string,U,,,4,open,,Detektorių Skaičius,
+,,,,,gk_detektoriu_sk,integer,U,,,4,open,,Detektorių Skaičius,
 ,,,,,kompiuterinio_tomografo_tipas,string,,,,4,open,,Techninė Charakteristika (Kt): Tipas,
 ,,,,,,enum,,,"""Stacionarus""",,,,Stacionarus,
 ,,,,,,,,,"""Mobilus""",,,,Mobilus,
