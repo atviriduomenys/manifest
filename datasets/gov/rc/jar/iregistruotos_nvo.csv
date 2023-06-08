@@ -5,4 +5,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens pavadinimas Juridinių asmenų registre,
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinės formos pavadinimas,
 ,,,,,nvc_nuo,date,D,,,4,open,,Žymos „Nevyriausybinė organizacija“ įregistravimo juridiniam asmeniui data,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

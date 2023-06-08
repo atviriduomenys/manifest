@@ -17,4 +17,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mok_sumos_ir_isipareigojimai,integer,,,,3,open,,finansinės atskaitomybės rodiklio (mokėtinų sumų ir įsipareigojimų) reikšmė eurais,
 ,,,,,ilgalaikis_turtas,integer,,,,3,open,,finansinės atskaitomybės ataskaitos rodiklio (ilgalaikio turto) reikšmė eurais,
 ,,,,,trumpalaikis_turtas,integer,,,,3,open,,finansinės atskaitomybės ataskaitos rodiklio (trumpalaikio turto) reikšmė eurais,
-,,,,,formavimo_data,date,D,,,4,open,,duomenų formavimo data,
