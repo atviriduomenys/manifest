@@ -161,7 +161,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Stacionarus""",,,,Stacionarus,
 ,,,,,,,,,"""Mobilus""",,,,Mobilus,
 ,,,,,,,,,"""Tūrinis""",,,,Tūrinis,
-,,,,,kt_sluoksniu_skaicius,string,U,,,4,open,,Techninė Charakteristika (Kt): Sluoksnių Skaičius,
+,,,,,kt_sluoksniu_skaicius,integer,U,,,4,open,,Techninė Charakteristika (Kt): Sluoksnių Skaičius,
 ,,,,,kt_injektoriaus_tipas,integer,,,,4,open,,Techninė Charakteristika (Kt): Injektoriaus Tipas,
 ,,,,,,enum,,,1,,,,Automatinis,
 ,,,,,,,,,2,,,,Be Injektoriaus,
