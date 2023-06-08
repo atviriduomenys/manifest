@@ -297,7 +297,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Kita: Su Injektoriumi,
 ,,,,,,,,,4,,,,Kita: Dviejų Židinių,"Besisukančio Anodo Rentgeno Vamzdis,Sukonstruotas Optimaliam Aušinimui, Taikoma Daugiapjūvio Ir Skenavimo Atvejais"
 ,,,,,,,,,5,,,,Neautomatinis,
-,,,,,linijinis_greitintuvas,string,,,,4,open,,Techninė Charakteristika (Lg): Kinetinė Energija (Elektronvoltai),
+,,,,,linijinis_greitintuvas,integer,eV,,,4,open,,Linijinis greitintuvas Kinetinė Energija (Elektronvoltai),
 ,,,,,mr_tomografo_tipas,string,,,,2,open,,Techninė Charakteristika (Mrt): Tipas(1),
 ,,,,,mrt_lauko_stiprumas,number,,,,2,open,,Techninė Charakteristika (Mrt): Magnetinio Lauko Stiprumas,
 ,,,,,mrt_injektoriaus_tipas,string,,,,4,open,,Techninė Charakteristika (Mrt): Injektoriaus Tipas,
