@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dokumento_potipis,ref,/datasets/gov/rc/jar/dokumentu_tipai_potipiai/DokumentoPotipis,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento potipio pavadinimas,
 ,,,,,dok_data,date,D,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento data,
 ,,,,,dok_reg_data,date,D,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento įregistravimo juridinių asmenų registre data,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
