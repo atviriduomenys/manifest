@@ -10,4 +10,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kas_patvirtino,string,,,,3,open,,Įgaliojimą patvirtinusio asmens tipas,
 ,,,,,igaliojimo_tipas,string,,,,3,open,,Įgaliojimo tipo pavadinimas,
 ,,,,,igaliojimu_kiekis,string,,,,3,open,,Įgaliojimų kiekis per ketvirtį,
-,,,,,formavimo_data,date,D,,,4,open,,Rinkinio suformavimo data,
