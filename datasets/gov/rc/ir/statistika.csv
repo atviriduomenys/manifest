@@ -16,4 +16,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,igaliotojas_perse_kiekis,string,,,,3,open,,Įgaliotojų juridinių asmenų pats iš savęs (lot. Per se) kiekis ,
 ,,,,,igaliotasis_fa_kiekis,integer,,,,3,open,,Įgaliotų fizinių asmenų kiekis,
 ,,,,,igaliotasis_ja_kiekis,integer,,,,3,open,,Įgaliotų juridinių asmenų kiekis,
-,,,,,formavimo_data,date,D,,,4,open,,Rinkinio suformavimo data,
