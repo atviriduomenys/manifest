@@ -15,4 +15,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pelnas_pries_apmokestinima,integer,,,,3,open,,Finansinės atskaitomybės ataskaitos rodiklio (pelno prieš apmokestinimą) reikšmė eurais,
 ,,,,,grynasis_pelnas,integer,,,,3,open,,Finansinės atskaitomybės ataskaitos rodiklio (grynojo pelno) reikšmė eurais,
 ,,,,,pardavimo_pajamos,integer,,,,3,open,,Finansinės atskaitomybės ataskaitos rodiklio (pardavimo pajamų) reikšmė eurais,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
