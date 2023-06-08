@@ -18,4 +18,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kiti_valdymo_organai,integer,,,,4,open,,Kiti juridinio asmens valdymo organai,
 ,,,,,,enum,,,1,,,,Kiti juridinio asmens valdymo organai yra,
 ,,,,,,,,,0,,,,Kitų juridinio asmens valdymo organų nėra,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
