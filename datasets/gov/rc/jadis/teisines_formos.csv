@@ -8,4 +8,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ja_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių juridinių asmenų skaičius,
 ,,,,,uzs_fiz_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio fizinių asmenų skaičius,
 ,,,,,uzs_ja_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio juridinių asmenų skaičius,
-,,,,,fromavimo_data,date,D,,,4,open,,Duomenų formavimo data,
