@@ -11,4 +11,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,turto_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/TurtoTipas,,,4,open,,Turto tipo kodas iš AIS parduodamo turto tipų klasifikatoriaus,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje yra nekilnojamas turtas, kodas iš Adresų registro",
 ,,,,,turto_vienetu_kiekis,string,,,,3,open,,Bendras varžytinėse / aukcionuose parduoto turto vienetų kiekis,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
