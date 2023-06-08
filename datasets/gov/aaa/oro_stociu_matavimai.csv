@@ -22,9 +22,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Averages,,,id,,,4,,,Valandiniai oro kokybės matavimai,
 ,,,,,id,string,,,,4,open,,Matavimo identifikacinis numeris,
 ,,,,,stat_num,ref,/datasets/gov/aaa/oro_stociu_matavimai/Station[stat_num],,,4,open,,Matavimo stoties identifikacinis numeris,
-,,,,,ldatetime,datetime,,,,4,open,,Matavimo pabaigos laikas,
+,,,,,ldatetime,datetime,S,,,4,open,,Matavimo pabaigos laikas,
 ,,,,,code_combi,string,,,,4,open,,Tarpinės lentos kodas,Juo prie matavimo prijungiamas teršalo arba meteorologinio parametro pavadinimas ir matavimo vienetas
-,,,,,lvalue,integer,,,,4,open,,Išmatuota vertė arba teršalo koncentracija,
+,,,,,lvalue,number,,,,4,open,,Išmatuota vertė arba teršalo koncentracija,
 ,,,,,atribut,integer,,,,4,open,,Atlikto matavimo verifikacija,Verifikaciją (atlikto matavimo kokybės patvirtinimą) atlieka AAA specialistai
 ,,,,,,,,,,,,,,
 ,,,,QuantityUnits,,,code_combi,,,4,,,Tarpinė lenta,
