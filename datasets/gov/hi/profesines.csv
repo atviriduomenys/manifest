@@ -1,0 +1,52 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/hi/profesines,,,,,,,,,,,,Lietuvos Respublikos profesinių ligų valstybės registro duomenys,
+,,,,,,,,,,,,,,
+,,,,Issilavinimas,,,atvejis_id,,,4,,,Profesinių ligų atvejai pagal išsilavinimą,
+,,,,,atvejis_id,string,,,,4,open,,Profesinės ligos atvejo identifikatorius,Lietuvos Respublikos profesinių ligų valstybės registro objekto įregistravimo data
+,,,,,pagr_tlk_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Pagrindinės profesinės ligos kodas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,pagr_tlk_pav,ref,/datasets/gov/vlk/tlk10am/Tlk10am[name],,,4,open,,Pagrindinės profesinės ligos pavadinimas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,lyties_kodas,string,,,,4,open,,Paciento lytis,
+,,,,,,enum,,,'1',,,,Vyras,
+,,,,,,,,,'2',,,,Moteris,
+,,,,,lpk,string,,,,4,open,,Paciento profesija,Pagal Lietuvos profesijų klasifikatorių
+,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,4,open,,EVRK kodas,"Ekonominės veiklos rūšies klasifikatoriaus kodas. Nurodo, kuriame sektoriuje pacientas dirba"
+,,,,,year,integer,yr,,,2,open,,Metai,Profesinės ligos užregistravimo metai
+,,,,,quarter,integer,3mo,,,2,open,,Ketvirtis,Profesinės ligos užregistravimo ketvirtis
+,,,,,,,,,,,,,,
+,,,,DarboStazas,,,atvejis_id,,,4,,,Profesinių ligų atvejai pagal darbo stažą,
+,,,,,atvejis_id,string,,,,4,open,,Profesinės ligos atvejo identifikatorius,
+,,,,,pagr_tlk_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Pagrindinės profesinės ligos kodas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,pagr_tlk_pav,ref,/datasets/gov/vlk/tlk10am/Tlk10am[name],,,4,open,,Pagrindinės profesinės ligos pavadinimas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,lpk,string,,,,4,open,,Paciento profesija,Pagal Lietuvos profesijų klasifikatorių
+,,,,,evrk,string,,,,4,open,,EVRK kodas,"Ekonominės veiklos rūšies klasifikatoriaus kodas. Nurodo, kuriame sektoriuje pacientas dirba"
+,,,,,stazas,string,,,,4,open,,Darbo stažo grupės,Metais
+,,,,,,enum,,,'50+',,,,50+,
+,,,,,,,,,'45-49',,,,45-49,
+,,,,,,,,,'40-44',,,,40-44,
+,,,,,,,,,'35-39',,,,35-39,
+,,,,,,,,,'30-34',,,,30-34,
+,,,,,,,,,'25-29',,,,25-29,
+,,,,,,,,,'20-24',,,,20-24,
+,,,,,,,,,'15-19',,,,15-19,
+,,,,,,,,,'10-14',,,,10-14,
+,,,,,,,,,'5-9',,,,5-9,
+,,,,,,,,,'0-4',,,,0-4,
+,,,,,year,integer,yr,,,2,open,,Metai,Profesinės ligos užregistravimo metai
+,,,,,quarter,integer,3mo,,,2,open,,Ketvirtis,Profesinės ligos užregistravimo ketvirtis
+,,,,,,,,,,,,,,
+,,,,Asmuo,,,m_id,,,4,,,Profesinių ligų įvykių pagrindiniai duomenys ,
+,,,,,m_id,string,,,,4,open,,Paciento ID,
+,,,,,pagr_tlk_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Pagrindinės profesinės ligos kodas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,pagr_tlk_pav,ref,/datasets/gov/vlk/tlk10am/Tlk10am[name],,,4,open,,Pagrindinės profesinės ligos pavadinimas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,papild_tlk_kodas,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Papildomas profesinės ligos kodas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,papild_tlk_pav,ref,/datasets/gov/vlk/tlk10am/Tlk10am[name],,,4,open,,Papildomas profesinės ligos pavadinimas,Ligos nurodomos pagal TLK-10-AM sisteminį ligų sąrašą
+,,,,,ligos_eiga,string,,,,4,open,,Ligos eiga,
+,,,,,itarta_pav,string,,,,4,open,,Profesinės ligos įtarimo pavadinimas,
+,,,,,itarta_kodas,string,,,,4,open,,Profesinės ligos įtarimo kodas,
+,,,,,priezasties_kodas,string,,,,4,open,,Profesinės ligos priežasties kodas,
+,,,,,priezasties_pav,string,,,,4,open,,Profesinės ligos priežasties pavadinimas,
+,,,,,lyties_kodas,string,,,,4,open,,Paciento lyties kodas,
+,,,,,lyties_pavadinimas,string,,,,4,open,,Paciento lyties pavadinimas,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,Užregistruota profesinė liga
+,,,,,year,integer,yr,,,2,open,,Metai,Profesinės ligos užregistravimo metai
+,,,,,quarter,integer,3mo,,,2,open,,Ketvirtis,Profesinės ligos užregistravimo ketvirtis

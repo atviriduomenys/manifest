@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rc/taar/klasifikatoriai,,,,,,,,,,,,TAAR klasifikatoriai,"Turto arešto aktų registro klasifikatoriai (duomenų rinkinių grupė, viso 4 vnt.): TAAR turto tipų klasifikatorius; TAAR tipų potipių klasifikatorius; TAAR dokumentų statusų klasifikatorius; TAAR areštuojančių institucijų klasifikatorius. ",,,
 ,,,,,,,,,,,,,,,,,
 ,,,,TurtoTipas,,,kodas,,,4,,,Turto arešto aktų registro turto tipų klasifikatorius,,,,
-,,,,,kodas,integer,,,,4,open,,Turto tipo kodas iš TAAR turto tipų klasifikatoriaus,,,,
+,,,,,kodas,string,,,,4,open,,Turto tipo kodas iš TAAR turto tipų klasifikatoriaus,,,,
 ,,,,,pavadinimas,string,,,,3,open,,Turto tipo pavadinimas iš TAAR turto tipų klasifikatoriaus,,,,
 ,,,,,,,,,,,,,,,,,
 ,,,,TurtoPotipis,,,kodas,,,4,,,,,,,
