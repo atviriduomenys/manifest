@@ -13,4 +13,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isieskojimo_dalykas,ref,/datasets/gov/rc/ais/busenu_dalyku_klasifikatorius/Dalykas,,,4,open,,Išieškojimo dalyko kodas iš AIS išieškojimo dalykų klasifikatoriaus,
 ,,,,,bylu_kiekis,string,,,,3,open,,"Vykdomų bylų kiekis (sugrupuotas savivaldybę, asmens tipą (Fizinis asmuo - kai fizinis asmuo; Juridinis asmuo pats iš savęs (lot. Per se); LR juridinis asmuo; Užsienio juridinis asmuo - kai juridinis asmuo; Nenustatytas - kai asmens tipas nenurodytas) ir išieškojimo dalyką)",
 ,,,,,skolu_suma,integer,,,,3,open,,"Vykdomų bylų bendra skolų suma (sugrupuota savivaldybę, asmens tipą ir išieškojimo dalyką)",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
