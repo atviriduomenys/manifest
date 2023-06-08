@@ -8,4 +8,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sal_pav,string,,,,3,open,,Šalies pavadinimas,
 ,,,,,uzs_fiz_dalyviai,integer,U,,,4,open,,Juridiniuose asmenyse dalyvaujančių  skirtingų užsienio fizinių asmenų skaičius,
 ,,,,,uzs_ja_dalyviai,integer,U,,,4,open,,Juridiniuose asmenyse dalyvaujančių  skirtingų užsienio juridinių asmenų skaičius,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
