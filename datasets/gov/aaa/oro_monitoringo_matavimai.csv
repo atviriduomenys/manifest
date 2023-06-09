@@ -9,6 +9,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tsd_tyrimo_tipas,string,,,,3,open,,Tyrimo sudedamosios tipas,CHE - Cheminiai tyrimai
 ,,,,,trz_neapibr,number,,,,3,open,,"Parametras, apibrėžiantis tyrimo rezultato tikslumą",
 ,,,,,trz_rez_skaitinis,number,,,,3,open,,Skaitinis tyrimo rezultatas,
+,,,,,mvn_kodas,string,,,,3,open,,Matavimo vieneto kodas,
+,,,,,mvn_pavad,string,,,,3,open,,Matavimo vieneto pavadinimas,
 ,,,,,ptm_kodas,string,,,,2,open,,Parametro kodas,Gali būti sutrumpintas parametro pavadinimas
 ,,,,,ptm_pavad,string,,,,2,open,,Parametro pavadinimas,"Matavimo vienetai švinui - µg/m3 (mikrogramai), kitiems – ng/m3 (nanogramai)"
 ,,,,,mtd_standartas,string,,,,2,open,,"Standartas, reglamentuojantis tyrimo atlikimą.",
