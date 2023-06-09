@@ -24,4 +24,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Užsienio juridinis iš JAR""",,,,Užsienio juridinis iš JAR,
 ,,,,,dav_sal_kodas,integer,,,,2,open,,Sutarties davėjo valstybės kodas,
 ,,,,,dav_sal_pavadinimas,string,,,,2,open,,Sutarties davėjo valstybės pavadinimas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
