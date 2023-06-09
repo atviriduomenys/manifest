@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reg_metai,integer,,,,2,open,,Registravimo metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,neveiksniu_asm_skaicius,string,,,,3,open,,Neveiksnių asmenų skaičius,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
