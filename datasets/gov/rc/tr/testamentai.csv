@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,1,,,,Užsienietis,
 ,,,,,,,,,0,,,,Lietuvos Respublikos pilietis,
 ,,,,,testatorius_amzius,string,,,,3,open,,Testatoriaus amžiaus grupė,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
