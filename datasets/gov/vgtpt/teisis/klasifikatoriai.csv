@@ -7,16 +7,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,teritorijos_kodas,string,,,,4,open,,Pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas,
 ,,,,,teritorijos_pavadinimas,string,,,,3,open,,Pagalbą gaunančio asmens gyvenamosios vietos teritorijos pavadinimas, Iš Adresų registro
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės kodas , Iš Adresų registro
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,,,,,,,,,,
 ,,,,ParinkimoPagrindas,,,nr,,,4,,,Teisinės pagalbos paslaugų informacinės sistemos pagalbos teikimo pagrindų klasifikatorius,
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,pagrindo_kodas,string,,,,4,open,,Pagalbos teikimo pagrindų kodas,
 ,,,,,pagrindo_pavadinimas,string,,,,4,open,,Pagalbos teikimo pagrindų pavadinimas ,Baudžiamojo proceso kodekso straipsnis
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,,,,,,,,,,
 ,,,,BylosRusis,,,nr,,,4,,,Teisinės pagalbos paslaugų informacinės sistemos bylų rūšių klasifikatorius,
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,bylos_rusies_kodas,integer,,,,4,open,,"Bylos, kurioje reikalinga teisinė pagalba, rūšies kodas",
 ,,,,,bylos_rusies_pavadinimas,string,,,,4,open,,"Bylos, kurioje reikalinga teisinė pagalba, rūšies pavadinimas",
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
