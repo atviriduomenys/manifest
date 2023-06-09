@@ -22,4 +22,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sprendimu_skaicius,integer,U,,,4,open,,Priimtų sprendimų suteikti antrinę teisinę pagalbą skaičius,
 ,,,,,nesuteikta_pagalba,integer,U,,,4,open,,Sprendimų atsisakyti suteikti antrinę teisinę pagalbą skaičius,
 ,,,,,neisnagrineti_prasymai,integer,U,,,4,open,,"Prašymų suteikti antrinę teisinę pagalbą, kurie palikti nenagrinėti arba laukiama atsakymo, skaičius",
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
