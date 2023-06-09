@@ -1,5 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nma/nelaimes_investicijos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,AtkurimoInvesticija,,,,,,4,,,"Lietuvos kaimo plėtros programos 2014 - 2020 metų priemonė ""Gaivalinių nelaimių ir katastrofinių įvykių paveikto žemės ūkio gamybos potencialo atkūrimas ir atitinkamos prevencinės veiklos vykdymas""",
 ,,,,,priemone,string,,,,4,open,,Priemonių grupės pavadinimas,
