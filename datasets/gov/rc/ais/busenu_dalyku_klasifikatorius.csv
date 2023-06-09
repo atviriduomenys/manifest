@@ -4,7 +4,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Busena,,,kodas,,,4,,,AIS bylų būsenų klasifikatorius,
 ,,,,,kodas,integer,,,,4,open,,Bylos būsenos kodas,
 ,,,,,pavadinimas,string,,,,3,open,,Bylos būsenos pavadinimas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,,,,,,,,,,
 ,,,,Dalykas,,,kodas,,,4,,,AIS išieškojimo dalykų klasifikatorius,
 ,,,,,kodas,integer,,,,4,open,,Išieškojimo dalyko kodas,
