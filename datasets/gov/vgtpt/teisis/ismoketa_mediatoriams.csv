@@ -15,4 +15,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,priskaiciuota_suma,number,,,,2,open,,Sprendime nurodytas mediatoriui išmokėti skirtas užmokestis,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,,,
 ,,,,,trukme,integer,min,,,4,open,,Mediatoriaus sugaišto laiko trukmė,
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
