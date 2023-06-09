@@ -324,6 +324,15 @@ datasets/gov/nma/covid_poveikis_akvakulturai.csv
 datasets/gov/nma/nac_covid_mokejimai.csv
 datasets/gov/nma/isimtine_parama.csv
 datasets/gov/nma/zvejyba_covid.csv
+datasets/gov/nma/jaunieji_ukininkai_info.csv
+datasets/gov/nma/jaunieji_ukininkai_investicijos.csv
+datasets/gov/nma/kp_veiklos_pradziai_investicijos.csv
+datasets/gov/nma/kp_verslo_pradziai_info.csv
+datasets/gov/nma/nelaimes_investicijos.csv
+datasets/gov/nma/smulkieji_ukininkai_investicijos.csv
+datasets/gov/nma/smulkieji_ukininkai_info.csv
+datasets/gov/nma/vietos_projektai_investicijos.csv
+datasets/gov/nma/vilku_zala_investicijos.csv
 datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/aaa/isleid_perd_tersalai.csv
