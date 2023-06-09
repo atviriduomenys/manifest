@@ -11,4 +11,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gavejo_kodas,string,,,,3,open,,Gavėjo kodas (fizinio asmens atveju tik įrašas „fizinis asmuo“),
 ,,,,,lic_tipas,ref,/datasets/gov/rc/lis/lis_rusys_tipai/LisTipas,,,4,open,,Tipo kodas,
 ,,,,,lic_rusis,ref,/datasets/gov/rc/lis/lis_rusys_tipai/LisRusis,,,4,open,,Rūšies kodas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų atrinkimo data,
