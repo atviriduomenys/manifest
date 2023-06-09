@@ -35,7 +35,6 @@ datasets/gov/rc/jar/dokumentu_tipai_potipiai.csv
 datasets/gov/rc/jar/faktu_tipai_potipiai.csv
 datasets/gov/rc/jar/formos_statusai.csv
 datasets/gov/rc/jar/iregistruoti.csv
-datasets/gov/rc/jar/isregistruoti.csv
 datasets/gov/rc/jar/kiti_atributai.csv
 datasets/gov/rc/jar/ne_juridiniai_asmenys.csv
 datasets/gov/rc/jar/valdymo_organai.csv
