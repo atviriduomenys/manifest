@@ -1,0 +1,33 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/oro_stociu_matavimai,,,,,,,,,,,,Lietuvos valstybinio oro monitoringo automatinių stočių matavimo duomenys,
+,,,,,,,,,,,,,,
+,,,,Station,,,stat_num,,,4,,,Oro kokybės matavimo stotys,
+,,,,,stat_num,string,,,,4,open,,Matavimo stoties identifikacinis numeris,
+,,,,,latitude,number,,,,3,open,,Geografinė platuma (WGS),
+,,,,,longitude,number,,,,3,open,,Geografinė ilguma (WGS),
+,,,,,,,,,,,,,,
+,,,,Units,,,code_unit,,,4,,,Matavimo vienetai,
+,,,,,code_unit,string,,,,4,open,,Matavimo vieneto identifikacinis numeris,
+,,,,,unitname,string,,,,4,open,,Matavimo vieneto pavadinimas,
+,,,,,id,string,,,,4,open,,Matavimo vieneto identifikacinis numeris,(sutampa su code_unit)
+,,,,,,,,,,,,,,
+,,,,Quantity,,,code_quantity,,,4,,,Teršalai,
+,,,,,code_quantity,string,,,,4,open,,Teršalo idenfikacinis numeris,
+,,,,,shortname,string,,,,4,open,,Teršalo pavadinimo santrumpa,
+,,,,,longname,string,,,,4,open,,Teršalo pavadinimas,
+,,,,,attrib,string,,,,4,open,,Teršalo tipas,
+,,,,,code_unit,ref,/datasets/gov/aaa/oro_stociu_matavimai/Units[code_unit],,,4,open,,Matavimo vieneto identifikacinis numeris,
+,,,,,id,string,,,,4,open,,Teršalo idenfikacinis numeris,(sutampa su code_quantity)
+,,,,,,,,,,,,,,
+,,,,Averages,,,id,,,4,,,Valandiniai oro kokybės matavimai,
+,,,,,id,string,,,,4,open,,Matavimo identifikacinis numeris,
+,,,,,stat_num,ref,/datasets/gov/aaa/oro_stociu_matavimai/Station[stat_num],,,4,open,,Matavimo stoties identifikacinis numeris,
+,,,,,ldatetime,datetime,S,,,4,open,,Matavimo pabaigos laikas,
+,,,,,code_combi,string,,,,4,open,,Tarpinės lentos kodas,Juo prie matavimo prijungiamas teršalo arba meteorologinio parametro pavadinimas ir matavimo vienetas
+,,,,,lvalue,number,,,,4,open,,Išmatuota vertė arba teršalo koncentracija,
+,,,,,atribut,integer,,,,4,open,,Atlikto matavimo verifikacija,Verifikaciją (atlikto matavimo kokybės patvirtinimą) atlieka AAA specialistai
+,,,,,,,,,,,,,,
+,,,,QuantityUnits,,,code_combi,,,4,,,Tarpinė lenta,
+,,,,,code_combi,string,,,,4,open,,Unikalus teršalo arba meteorologinio rodiklio ir jo matavimo vieneto numeris,
+,,,,,code_quantity,ref,/datasets/gov/aaa/oro_stociu_matavimai/Quantity[code_quantity],,,4,open,,Unikalus teršalo arba meteorologinio rodiklio numeris,
+,,,,,code_unit,ref,/datasets/gov/aaa/oro_stociu_matavimai/Units[code_unit],,,4,open,,Unikalus matavimo vieneto numeris,

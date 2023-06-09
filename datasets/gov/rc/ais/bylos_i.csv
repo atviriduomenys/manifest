@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/bylos_i,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie antstolių vykdomas bylas – I,"AIS duomenys apie antstolių vykdomas bylas – I (pagal skolininko gyvenamą teritoriją, išieškojimo dalyką, bylų skaičių, išieškotina sumą). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie antstolių vykdomas bylas. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,,,,,,,,,
+,,,,VykdomaByla,,,nr,,,4,,,Antstolių informacinės sistemos (AIS) duomenys apie antstolių vykdomas bylas – I,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje deklaruota skolininko (fizinio asmens) gyvenamoji vieta arba registruota skolininko (juridinio asmens) buveinė, kodas iš Adresų registro (kai gyvenamoji vieta arba buveinė nenurodyta - -1)",
+,,,,,isieskojimo_dalykas,ref,/datasets/gov/rc/ais/busenu_dalyku_klasifikatorius/Dalykas,,,4,open,,Išieškojimo dalyko kodas iš AIS išieškojimo dalykų klasifikatoriaus,
+,,,,,bylu_kiekis,string,,,,3,open,,Antstolių vykdomų bylų kiekis (sugrupuota pagal savivaldybę ir išieškojimo dalyką),
+,,,,,skolu_suma,integer,,,,3,open,,Antstolių vykdomų bylų bendra išieškojimo  suma (sugrupuota pagal savivaldybę ir išieškojimo dalyką),

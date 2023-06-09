@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/aprobuoti_sekliniai_paseliai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Augalas,,,id,,,4,open,,"Pateikiama informacija apie žemės ūkio augalų (išskyrus bulves) aprobuotus sėklinius pasėlius (augalų rūšių grupę, augalo rūšis, veislę, aprobuotą plotą ha, pripažintą kategoriją, išbrokuotą plotą ha, iš viso aprobuotą plotą (su išbrokuotais), ha",
+,,,,,id,string,,,,4,open,,Aprobavimo eilės numeris,
+,,,,,rusis,string,,,,2,open,,Augalo rūšis,
+,,,,,veisle,string,,,,2,open,,Augalo veislė ,
+,,,,,,comment,type,,"update(base: ""/datasets/gov/vat/saugomos_veisles/Veisles"", type: ""ref"", ref: ""/datasets/gov/vat/saugomos_veisles/Veisles"")",4,open,"spinta:205, manifest:1290",,
+,,,,,kategorija,string,,,,4,open,,Kategorijos kodas,
+,,,,,aprobuotas_plotas,number,ha,,,4,open,,Aprobuotas plotas,
+,,,,,isbrokuotas_plotas,number,ha,,,4,open,,Išbrokuotas plotas,

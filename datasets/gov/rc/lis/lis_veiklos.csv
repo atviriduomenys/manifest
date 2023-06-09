@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/lis/lis_veiklos,,,,,,,,,,,,Licencijų informacinės sistemos licencijuojamų veiklų klasifikatorius,
-,,,,LisVeikla,,,veiklos_kodas,,,4,,,Licencijuojamų veiklų klasifikatorius,
-,,,,,veiklos_kodas,integer,,,,4,open,,Licencijuojamos veiklos kodas,
-,,,,,veiklos_pavadinimas,string,,,,3,open,,Licencijuojamos veiklospavadinimas,
+,,,,LisVeikla,,,kodas,,,4,,,Licencijuojamų veiklų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Licencijuojamos veiklos kodas,
+,,,,,pavadinimas,string,,,,3,open,,Licencijuojamos veiklospavadinimas,

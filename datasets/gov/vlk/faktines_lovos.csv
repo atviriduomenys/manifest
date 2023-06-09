@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/faktines_lovos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Lova,,,,,,4,,,"Faktinis PSDF biudžeto lėšomis finansuojamų paliatyvios pagalbos, slaugos ir palaikomojo gydymo lovų skaičius",Informacija apie faktinį PSDF biudžeto lėšomis finansuojamų lovų skaičių pagal savivaldybes
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date, ref: ""Y"")""",4,open,spinta:213,,
+,,,,,savivaldybe,string,,,,3,open,,Savivaldybė,
+,,,,,jar,string,,,,2,open,,Įstaiga iš juridinių asmenų registro,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,,,
+,,,,,tipas,string,,,,3,open,,Lovos tipas,
+,,,,,lovu_sk,number,U,,,4,open,,Finansuojamų lovų skaičius,

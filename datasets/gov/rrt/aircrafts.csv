@@ -1,15 +1,15 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-1,datasets/gov/rrt/aircrafts,,,,,,,,,,,,,
-3,,aircrafts,,,,csv,,https://opendata.rrt.lt/sms/AIRCRAFTS.csv,"tabular(sep: "";"")",,,,,
-4,,,,Aircrafts,,,id,,,,,,,
-5,,,,,id,integer,,ID,,4,private,,,
-6,,,,,registration_no,string,,REGISTRATION_NO,,3,open,,,Orlaivio nacionalinis ir registracijos ženklai
-7,,,,,serial_no,string,,SERIAL_NO,,3,open,,,Orlaivio serijos numeris
-7,,,,,aircraft_model,string,,AIRCRAFT_MODEL,,3,open,,,Orlaivio modelis
-8,,,,,licence_no,string,,LICENCE_NO,,3,open,,,Leidimo numeris
-9,,,,,valid_from,date,,VALID_FROM,,3,open,,,Leidimo galiojimo pradžia
-10,,,,,valid_to,date,,VALID_TO,,3,open,,,Leidimo galiojimo pabaiga
-11,,,,,equipment_name,string,,EQUIPMENT_NAME,,3,open,,,Įrangos pavadinimas
-12,,,,,power,number,W,POWER,,4,open,,,Įrangos siųstuvo galia
-13,,,,,emission_class,string,,EMISSION_CLASS,,3,open,,,Spinduliavimo klasė
-14,,,,,frequency_band,string,,FREQUENCY_BAND,,3,open,,,Dažnis arba dažnių juosta
+,datasets/gov/rrt/aircrafts,,,,,,,,,,,,,
+,,aircrafts,,,,csv,,https://opendata.rrt.lt/sms/AIRCRAFTS.csv,"tabular(sep: "";"")",,,,,
+,,,,Aircraft,,,id,,,4,,,,
+,,,,,id,integer,,ID,,4,open,,,
+,,,,,registration_no,string,,REGISTRATION_NO,,4,open,,Orlaivio nacionalinis ir registracijos ženklai,
+,,,,,serial_no,string,,SERIAL_NO,,4,open,,Orlaivio serijos numeris,
+,,,,,aircraft_model,string,,AIRCRAFT_MODEL,,4,open,,Orlaivio modelis,
+,,,,,licence_no,string,,LICENCE_NO,,4,open,,Leidimo numeris,
+,,,,,valid_from,date,D,VALID_FROM,,4,open,,Leidimo galiojimo pradžia,
+,,,,,valid_to,date,D,VALID_TO,,4,open,,Leidimo galiojimo pabaiga,
+,,,,,equipment_name,string,,EQUIPMENT_NAME,,3,open,,Įrangos pavadinimas,
+,,,,,power,number,W,POWER,,4,open,,Įrangos siųstuvo galia,
+,,,,,emission_class,string,,EMISSION_CLASS,,3,open,,Spinduliavimo klasė,
+,,,,,frequency_band,string,,FREQUENCY_BAND,,3,open,,Dažnis arba dažnių juosta,

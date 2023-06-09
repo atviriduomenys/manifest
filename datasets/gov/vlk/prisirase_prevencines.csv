@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/prisirase_prevencines,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Prisirases,,,,,,4,,,"Asmenų, galinčių dalyvauti prevencinėse programose, skaičius ","Informacija apie asmenų, galinčių dalyvauti prevencinėje programoje, skaičius"
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,,,
+,,,,,menuo,integer,,,,2,open,,Mėnuo,
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, prie kurios prisirašę asmenys, ID"
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,,enum,,,"""Moteris""",,,,,
+,,,,,,,,,"""Vyras""",,,,,
+,,,,,draustumas,integer,,,,3,open,,Draustumas,"Požymis, parodantis, ar asmenys buvo apdrausti PSD nurodytu laikotarpiu"
+,,,,,programa,string,,,,4,open,,Prevencinė programa,Nurodomas prevencinės programos pavadinimas ir amžiaus grupė
+,,,,,,enum,,,"""Širdies ir kraujagyslių ligų prevencinė programa, moterys, 50-64 m.""",,,,,
+,,,,,,,,,"""Širdies ir kraujagyslių ligų prevencinė programa, vyrai, 50-54 m.""",,,,,
+,,,,,,,,,"""Gimdos kaklelio vežio prevencinė programa, moterys, 35-59 m.""",,,,,
+,,,,,,,,,"""Gimdos kaklelio vežio prevencinė programa, moterys, 25-34 m.""",,,,,
+,,,,,,,,,"""Krūties vėžio prevencinė programa, moterys, 50-69 m.""",,,,,
+,,,,,,,,,"""Storosios žarnos vėžio prevencinė programa, moterys, 50-74 m.""",,,,,
+,,,,,,,,,"""Storosios žarnos vėžio prevencinė programa, vyrai, 50-74 m.""",,,,,
+,,,,,,,,,"""Prostatos (priešinės liaukos) vėžio prevencinė programa, vyrai, 50-69 m.""",,,,,
+,,,,,skaicius,number,U,,,4,open,,Prisirašiusių asmenų skaičius,

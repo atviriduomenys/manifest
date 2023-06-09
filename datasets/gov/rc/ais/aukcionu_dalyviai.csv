@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/aukcionu_dalyviai,,,,,,,,,,,,Aukcionų ir elektroninių varžytynių dalyvių duomenys iš AIS,"Aukcionų ir elektroninių varžytynių dalyvių duomenys iš AIS (pagal elektroninių varžytynių / aukcionų rūšį registruota dalyvių, aktyvių dalyvių). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie aukcionus ir elektronines varžytynes. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,,,,,,,,,
+,,,,AukcionoDalyvis,,,nr,,,4,,,Aukcionų ir elektroninių varžytynių dalyvių duomenys iš AIS,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,aukciono_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/AukcionoTipas,,,4,open,,Varžytynių / aukcionų tipo kodas iš AIS varžytynių ir aukcionų tipų klasifikatoriaus,
+,,,,,registravosi_fa,string,,,,3,open,,"Bendras užsiregistravusių fizinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
+,,,,,aktyvus_fa,string,,,,3,open,,"Bendras aktyviai dalyvavusių (didinusių pardavimo kainą) fizinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
+,,,,,registravosi_ja,string,,,,3,open,,"Bendras užsiregistravusių juridinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",
+,,,,,aktyvus_ja,string,,,,3,open,,"Bendras aktyviai dalyvavusių (didinusių pardavimo kainą) juridinių asmenų kiekis sugrupuotas varžytinių, aukcionų tipą",

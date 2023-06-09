@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jadis/uzsienio_asmenys,,,,,,,,,,,,Juridinių asmenų dalyvių duomenys apie užsienio fizinius ir juridinius asmenis,Juridinių asmenų dalyvių informacinės sistemos (JADIS) duomenys apie užsienio fizinius ir juridinius asmenis.
+,,,,,,prefix,locn,,,,,http://www.w3.org/ns/locn#,,
+,,,,,,,,,,,,,,
+,,,,UzsienioAsmuo,,,"laikotarpis, salies_kodas",,,4,,,Juridinių asmenų dalyvių duomenys apie užsienio fizinius ir juridinius asmenis,
+,,,,,laikotarpis,date,D,,,4,open,,"Data, kuriai skaičiuojamas dalyvių skaičius (nuo 2015 m. sausio 1 d., periodiškumas - 1 metai)",
+,,,,,salies_kodas,string,,,,5,open,locn:adminUnitL1,Šalies kodas,
+,,,,,sal_pav,string,,,,3,open,,Šalies pavadinimas,
+,,,,,uzs_fiz_dalyviai,integer,U,,,4,open,,Juridiniuose asmenyse dalyvaujančių  skirtingų užsienio fizinių asmenų skaičius,
+,,,,,uzs_ja_dalyviai,integer,U,,,4,open,,Juridiniuose asmenyse dalyvaujančių  skirtingų užsienio juridinių asmenų skaičius,

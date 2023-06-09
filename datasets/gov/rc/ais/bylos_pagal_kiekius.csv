@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/bylos_pagal_kiekius,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie vykdomąsias bylas pagal jų kiekį,"AIS esančių vykdomųjų bylų duomenys pagal bylų kiekį (bylų kiekis pagal metus (bylos užvedimo datą), pagal skolininkų tipą (fizinis, juridinis), pagal skolininko teritoriją, išieškotiną sumą). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie antstolių vykdomas bylas. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,BylaKiekis,,,nr,,,4,,,Antstolių informacinės sistemos (AIS) duomenys apie vykdomąsias bylas pagal jų kiekį,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,metai,integer,,,,2,open,,"Metai, kuriais pradėta išieškojimo byla",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje deklaruota skolininko (fizinio asmens) gyvenamoji vieta arba registruota skolininko (juridinio asmens) buveinė, kodas iš Adresų registro (kai gyvenamoji vieta arba buveinė nenurodyta - -1)",
+,,,,,tipas,string,,,,4,open,,"Asmens, iš kurio vykdomas išieškojimas, tipas (Fizinis asmuo - kai fizinis asmuo; Juridinis asmuo pats iš savęs (lot. Per se); LR juridinis asmuo; Užsienio juridinis asmuo - kai juridinis asmuo; Nenustatytas - kai asmens tipas nenurodytas)",
+,,,,,,enum,,,"""Fizinis asmuo""",,,,kai skolininko tipas fizinis asmuo,
+,,,,,,,,,"""Juridinis asmuo""",,,,kai skolininko tipas juridinis asmuo pats iš savęs (lot. Per se),
+,,,,,,,,,"""LR juridinis asmuo""",,,,kai skolininko tipas Lietuvos Respublikoje įregistruotas juridinis asmuo,
+,,,,,,,,,"""Užsienio juridinis asmuo""",,,,kai skolininko tipas užsienio valstybėje įregistruotas juridinis asmuo,
+,,,,,,,,,"""Nenustatytas""",,,,kai skolininko tipas kaip asmens tipas nenurodytas,
+,,,,,bylu_kiekis,string,,,,3,open,,"Vykdomų bylų kiekis (sugrupuotas pagal metus, savivaldybę ir asmens tipą)",
+,,,,,skolu_suma,integer,,,,3,open,,"Vykdomų bylų bendra skolų suma (sugrupuota pagal metus, savivaldybę ir asmens tipą)",

@@ -5,6 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sen_kodas,integer,,,,4,open,,Seniūnijos kodas Registre (nekeičiamas savivaldybės egzistavimo laiką),
 ,,,,,sen_plotas,number,ha,,,4,open,,Seniūnijos grafinis plotas (ha),
 ,,,,,sen_r,date,D,,,4,open,,Seniūnijos įrašymo į Adresų registrą data,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"LR AR savivaldybės į kurią patenka seniūnijos teritorija, išorinis kodas",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"LR AR savivaldybės į kurią patenka seniūnijos teritorija, išorinis kodas",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,seniunijos,"geometry(polygon,3346)",m,,,4,open,,Seniūnijų ribos,

@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/busenu_dalyku_klasifikatorius,,,,,,,,,,,,AIS išieškojimo dalykų ir bylų būsenų klasifikatoriai,"AIS išieškojimo dalykų ir bylų būsenų klasifikatoriai (duomenų rinkinių grupė, viso 2vnt.) (AIS išieškojimo kategorijų klasifikatorius; AIS bylų būsenų klasifikatorius). Antstolių informacinės sistemos (AIS) klasifikatoriai. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 12 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,,,,,,,,,
+,,,,Busena,,,kodas,,,4,,,AIS bylų būsenų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Bylos būsenos kodas,
+,,,,,pavadinimas,string,,,,3,open,,Bylos būsenos pavadinimas,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,,,,,,,,,,,
+,,,,Dalykas,,,kodas,,,4,,,AIS išieškojimo dalykų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Išieškojimo dalyko kodas,
+,,,,,pavadinimas,string,,,,3,open,,Išieškojimo dalyko pavadinimas,

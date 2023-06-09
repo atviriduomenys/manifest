@@ -1,16 +1,16 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rrt/amateurs,,,,,,,,,,,,,
-,,amateurcallsigns,,,,csv,,https://opendata.rrt.lt/sms/AMATEUR_CALLSIGNS.csv,"tabular(sep: "";"")",,,,,
-,,,,AmateurCallsigns,,,id,,,,,,,
-,,,,,id,integer,,ID,,4,private,,,
-,,,,,code,string,,LICENCE_TYPE,,3,open,,,Leidimo pavadinimas
-,,,,,licence_no,string,,NUMBER,,3,open,,,Leidimo numeris
-,,,,,call_sign,string,,CALL_SIGN,,3,open,,,Šaukinys
-,,,,,cert_class,string,,CERTIFCLASS,,3,open,,,CERT klasė
+,,amateurcallSign,,,,csv,,https://opendata.rrt.lt/sms/AMATEUR_CALLSIGNS.csv,"tabular(sep: "";"")",,,,,
+,,,,AmateurCallsigns,,,id,,,4,,,,
+,,,,,id,integer,,ID,,4,open,,Identifikatorius,
+,,,,,code,string,,LICENCE_TYPE,,3,open,,Leidimo pavadinimas,
+,,,,,licence_no,string,,NUMBER,,4,open,,Leidimo numeris,
+,,,,,call_sign,string,,CALL_SIGN,,3,open,,Šaukinys,
+,,,,,cert_class,string,,CERTIFCLASS,,4,open,,CERT klasė,
 ,,,,,,enum,,,"""A""",,,,A,
 ,,,,,,,,,"""B""",,,,B,
 ,,,,,,,,,null,,,,,
-,,,,,type,string,,TYPE,,3,open,,,Leidimo tipas (klubui arba asmeniui)
+,,,,,type,string,,TYPE,,4,open,,Leidimo tipas (klubui arba asmeniui),
 ,,,,,,enum,,,"""Klubinis""",,,,Klubinis,
 ,,,,,,,,,"""Individualus""",,,,Individualus,
-,,,,,expire_date,date,1D,EXPIRE_DATE,,4,open,,,Leidimo galiojimo pabaiga
+,,,,,expire_date,date,D,EXPIRE_DATE,,4,open,,Leidimo galiojimo pabaiga,

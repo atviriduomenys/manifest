@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,RekomendacijosPriemone,,,,,,4,,,Valstybinio audito rekomendacijų įgyvendinimas,Valstybės kontrolės atliktų valstybinių auditų rekomendacijų įgyvendinimo rezultatai
 ,,,,,priemonesid,integer,,,,3,open,,Priemonės ID,Priemonės kodas
-,,,,,rekomendacijosid,ref,Rekomendacija,,,4,open,,Rekomendacijos ID,Rekomendacijos kodas
+,,,,,rekomendacija,ref,Rekomendacija,,,4,open,,Rekomendacijos ID,Rekomendacijos kodas
 ,,,,,priemone,string,,,,3,open,,Priemonės turinys,Priemonės turinys
 ,,,,,rezultatas,string,,,,3,open,,Priemonės rezultatas,Priemonės rezultatas
 ,,,,,igyvendinimo_bukle,string,,,,3,open,,įgyvendinimo būklė,Priemonės įgyvendinimo būklė
@@ -25,6 +25,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,laiko_bukle,string,,,,3,open,,Laiko būklė,Priemonės įgyvendinimo laiko būklė
 ,,,,,,,,,,,,,,
 ,,,,RekomendacijosPriemonesSubjektas,,,,,,4,,,Valstybinio audito rekomendacijų įgyvendinimas,Valstybės kontrolės atliktų valstybinių auditų rekomendacijų įgyvendinimo rezultatai
-,,,,,priemonesid,ref,RekomendacijosPriemone,,,3,open,,Priemonės ID,Priemonės kodas
+,,,,,rekomendacijos_priemone,ref,RekomendacijosPriemone,,,4,open,,Priemonės ID,Priemonės kodas
 ,,,,,subjekto_pavadinimas,string,,,,3,open,,Subjekto pavadinimas,"Subjekto, kuris įgyvendina priemonę, pavadinimas"
 ,,,,,subjekto_kodas,string,,,,3,open,,Subjekto kodas,"Subjekto, kuris įgyvendina priemonę, kodas"

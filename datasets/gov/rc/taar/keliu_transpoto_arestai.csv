@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/taar/keliu_transpoto_arestai,,,,,,,,,,,,TAAR pirminiai duomenys (raw data) apie areštuotas kelių transporto priemones,"Turto arešto aktų registro nuasmeninti duomenys (RAW DATA) apie areštuojamas kelių transporto priemones, turto tipą ir potipį, turto arešto aktų jų statusus, įregistravimo / išregistravimo datas. "
+,,,,,,,,,,,,,,
+,,,,KeliuTranspotoArestas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Turto arešto akto dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,ktpid,integer,,,,4,open,,Kelių transporto priemonės dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,turto_tipas,ref,/datasets/gov/rc/taar/klasifikatoriai/TurtoTipas,,,4,open,,Turto tipas iš TAAR turto tipų klasifikatoriaus,
+,,,,,dokumento_statusas,ref,/datasets/gov/rc/taar/klasifikatoriai/DokumentoStatusas,,,4,open,,Turto arešto akto statusas iš TAAR dokumentų statusų klasifikatoriaus,
+,,,,,iregistravimo_metai,integer,,,,2,open,,Turto arešto akto įregistravimo metai,
+,,,,,iregistravimo_menuo,integer,,,,2,open,,Turto arešto akto įregistravimo mėnuo,
+,,,,,isregistravimo_metai,integer,,,,2,open,,Turto arešto akto išregistravimo metai,
+,,,,,isregistravimo_menuo,integer,,,,2,open,,Turto arešto akto išregistravimo mėnuo,
