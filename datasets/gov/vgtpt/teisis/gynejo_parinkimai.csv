@@ -10,4 +10,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,teritorijos_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/Teritorija,,,4,open,,Antrinę teisinę pagalbą gaunančio asmens gyvenamosios vietos teritorijos kodas, Iš TEISIS teritorijos klasifikatoriaus
 ,,,,,parinkimo_pagrindo_kodas,ref,/datasets/gov/vgtpt/teisis/klasifikatoriai/ParinkimoPagrindas,,,4,open,,Gynėjo parinkimų duomenys baudžiamosiose bylose,"Kai gynėjo dalyvavimas pripažintas būtinu, teisinis pagrindas —Baudžiamojo proceso kodekso straipsnio kodas iš TEISIS pagalbos teikimo pagrindų klasifikatoriaus"
 ,,,,,parinkimu_skaicius,integer,U,,,4,open,,Gynėjo parinkimų pagal gautus prašymus skaičius,
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
