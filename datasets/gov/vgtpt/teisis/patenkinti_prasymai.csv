@@ -14,4 +14,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gauti_prasymai,integer,U,,,4,open,,Teritoriniame padalinyje gautų prašymų suteikti antrinę teisinę pagalbą skaičius,
 ,,,,,patenkinti_prasymai,integer,U,,,4,open,,Teritoriniame padalinyje patenkintų prašymų suteikti antrinę teisinę pagalbą skaičius,
 ,,,,,patenkinti_prasymai_dalis,integer,%,,,4,open,,Patenkintų prašymų suteikti antrinę teisinę pagalbą skaičius procentais,
-,,,,,suformuota,date,D,,,4,open,,Duomenų formavimo data,
