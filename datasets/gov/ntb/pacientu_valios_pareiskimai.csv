@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/ntb/pacientu_valios_pareiskimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,ValiosPareiskimas,,,id,,,4,,,,
+,,,,ValiosPareiskimas,,,,,,4,,,,
 ,,,,,tipas,string,,,,4,open,,Paciento valios pareiškimo tipas,
 ,,,,,,enum,,consent,"""sutikimas""",,,,Sutikimas transplantacijai po mirties,
 ,,,,,,,,refusal,"""nesutikimas""",,,,Nesutikimas transplantacijai po mirties,
