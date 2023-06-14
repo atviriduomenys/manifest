@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/fa_dokumentu_nepateike,,,,,,,,,,,,Finansinės atskaitomybės dokumentų nepateikusios įmonės,"Duomenys apie Lietuvos Respublikos juridinių asmenų registre įregistruotus juridinius asmenis, nevykdančius prievolės teikti registro tvarkytojui finansinės atskaitomybės dokumentus (kodas, pavadinimas, juridinio asmens forma, įregistravimo data, reikšmė,"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Nepateikes,,,juridinis_asmuo,,,4,open,,Juridinių asmenų registre įregistruoti juridiniai asmenys,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinis asmuo juridinių asmenų registre,
+,,,,,ja_reg_data,date,D,,,4,open,,Juridinio asmens įregistravimo juridinių asmenų registre data,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos kodas iš jar teisinių formų klasifikatoriaus,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinio statuso kodas iš jar teisinių statusų klasifikatoriaus,
+,,,,,nepateikta_iki,integer,,,,2,open,,"Metai, už kuriuos juridinis asmuo nepateikė finansinės atskaitomybės dokumentų",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

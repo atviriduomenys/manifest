@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/parduotas_turtas,,,,,,,,,,,,Aukcionuose ir elektroninėse varžytynėse parduoto turto duomenys iš AIS,"Aukcionuose ir elektroninėse varžytynėse parduoto turto duomenys iš AIS (pagal rūšį parduoto turto vertė, pagal rūšį parduoto nekilnojamojo turto vertė, parduoto nekilnojamojo turto vieta (savivaldybė). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie aukcionus ir elektronines varžytynes. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,ParduotasTurtas,,,nr,,,4,,,Aukcionuose ir elektroninėse varžytynėse parduoto turto duomenys iš AIS,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,ivykdymo_metai,integer,,,,2,open,,Varžytynių / aukcionų įvykdymo metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ivykdymo_ketvirtis,integer,,,,3,open,,Varžytynių / aukcionų įvykdymo ketvirtis,
+,,,,,turto_potipis,ref,/datasets/gov/rc/ais/klasifikatoriai/TurtoPotipis,,,4,open,,Turto potipio kodas iš AIS parduodamo turto potipių klasifikatoriaus,
+,,,,,turto_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/TurtoTipas,,,4,open,,Turto tipo kodas iš AIS parduodamo turto tipų klasifikatoriaus,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje yra nekilnojamas turtas, kodas iš Adresų registro",
+,,,,,turto_vienetu_kiekis,string,,,,3,open,,Bendras varžytinėse / aukcionuose parduoto turto vienetų kiekis,

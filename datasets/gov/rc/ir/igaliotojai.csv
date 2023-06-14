@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ir/igaliotojai,,,,,,,,,,,,Įgaliojimų registro (ĮR) įgaliotojų duomenys,
+,,,,,,,,,,,,,,
+,,,,Igaliotojas,,,nr,,,4,,,Įgaliotojų duomenys,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,tipas,string,,,,3,open,,Įgaliojančio asmens tipas (Fizinis asmuo - kai fizinis asmuo; Juridinis asmuo pats iš savęs (lot. Per se); LR juridinis asmuo; Užsienio juridinis asmuo - kai juridinis asmuo),
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje deklaruota įgaliojančio (fizinio asmens) gyvenamoji vieta arba registruota įgaliojančio (juridinio asmens) buveinė, kodas iš Adresų registro (kai gyvenamoji vieta arba buveinė nenurodyta - -1)",
+,,,,,amziaus_grupe,string,,,,3,open,,"Įgaliojančio asmens amžiaus grupė įgaliojimo sudarymo metu (0-24 - kai amžius nuo 0 iki 24 metų, 25-34 - kai amžius nuo 25 iki 34 metų, 35-44 - kai amžius nuo 35 iki 44 metų, 45-54 - kai amžius nuo 45 iki 54 metų, 55-64 - kai amžius nuo 55 iki 64 metų, 65-84 - kai amžius nuo 65 iki 84 metų, 85+ - kai amžius nuo 85 metų, Nenustatyta - kai amžius nenurodytas). ",
+,,,,,asmenu_kiekis,integer,,,,3,open,,"Įgaliojančių asmenų kiekis (sugrupuota pagal tipą, savivaldybę ir amžiaus grupę)",

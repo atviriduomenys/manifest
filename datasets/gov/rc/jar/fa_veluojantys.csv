@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/fa_veluojantys,,,,,,,,,,,,Jurdiniai asmenys vėluojantys pateikti finansinės atskaitomybės dokumentus už praėjusius finansinius metus,Duomenys apie finansinės atskaitomybės dokumentus už praėjusius finansinius metus daugiau nei 60 d. vėluojančius pateikti juridinius asmenis
+,,,,,,,,,,,,,,
+,,,,VeluojantisPateikti,,,juridinis_asmuo,,,4,open,,Juridinių asmenų registre įregistruoto juridinio asmens kodas,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinis asmuo juridinių asmenų registre,
+,,,,,ja_reg_data,date,D,,,4,open,,Juridinio asmens įregistravimo juridinių asmenų registre data,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos kodas,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinio statuso kodas,
+,,,,,veluojantis_iki,date,D,,,4,open,,"Metai, už kuriuos juridinio asmens pateikta paskutinė finansinė ataskaita",

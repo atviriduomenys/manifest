@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ar/adresai,,,,,,,,,,,,Adresų registras,
+,,,,Adresas,,,aob_kodas,,,4,,,Adresų registro žemės sklypams ir pastatams suteiktų adresų tekstiniai duomenys,Žemės sklypams ir pastatams suteiktų adresų tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (žemės sklypams ar pastatams suteiktus adresus apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,tipas,integer,,,,4,open,,"Adreso tipas (1 -žemės sklypas, pastatas, 2 - patalpa)",
+,,,,,aob_kodas,integer,,,,4,open,,"Adreso (sklypo, statinio, patalpos) identifikavimo kodas",
+,,,,,aob_data_nuo,date,D,,,4,open,,Objekto įregistravimo data,
+,,,,,aob_data_iki,date,D,,,4,open,,Objekto išregistravimo data,

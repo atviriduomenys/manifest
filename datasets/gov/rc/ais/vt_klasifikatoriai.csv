@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/vt_klasifikatoriai,,,,,,,,,,,,AIS antstolių ir jų veiklos teritorijų klasifikatorius,AIS antstolių ir jų veiklos teritorijų klasifikatorius. Antstolių informacinės sistemos (AIS) klasifikatoriai. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 12 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0
+,,,,,,,,,,,,,,
+,,,,VTKlasifikatorius,,,nr,,,4,,,AIS antstolių ir jų veiklos teritorijų klasifikatorius,
+,,,,,nr,integer,,,,4,open,,Eilės numeris,
+,,,,,ant_indeksas,string,,,,4,open,,Antstolio indeksas,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje dirba antstolis, kodas iš Adresų registro",

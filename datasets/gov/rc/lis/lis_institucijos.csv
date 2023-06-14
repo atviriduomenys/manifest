@@ -1,6 +1,4 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/lis/lis_institucijos,,,,,,,,,,,,Licencijų informacinės sistemos licencijas išduodančių institucijų klasifikatorius,
-,,,,LisInstitucija,,,isd_inst_kodas,,,4,,,Licencijas išduodančių institucijų klasifikatorius,
-,,,,,isd_inst,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licencijas išduodanti institucija,
-,,,,,isd_inst_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licencijas išduodančios institucijos kodas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,LisInstitucija,,,juridinis_asmuo,,,4,,,Licencijas išduodančių institucijų klasifikatorius,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licencijas išduodančios institucijos kodas,

@@ -1,8 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/jar/ne_juridiniai_asmenys,,,,,,,,,,,,"Juridinių asmenų registro ne juridinių asmenų (valstybės, savivaldybių, valstybės ir savivaldybių atstovaujamųjų ir vykdomųjų institucijų, kurios neregistruojamos juridinių asmenų registre) klasifikatorius","Lietuvos Respublikos juridinių asmenų registro ne juridinių asmenų (valstybės, savivaldybių, valstybės ir savivaldybių atstovaujamųjų ir vykdomųjų institucijų, kurios neregistruojamos JAR) klasifikatorius "
 ,,,,,,,,,,,,,,
-,,,,NeJuridinisAsmuo,,,nja_kodas,,,4,,,"Juridinių asmenų registro ne juridinių asmenų (valstybės, savivaldybių, valstybės ir savivaldybių atstovaujamųjų ir vykdomųjų institucijų, kurios neregistruojamos juridinių asmenų registre) klasifikatorius",
-,,,,,nja_grupes_kodas,integer,,,,3,open,,Ne juridinio asmens grupės kodas,
-,,,,,nja_kodas,string,,,,4,open,,Ne juridinio asmens kodas,
-,,,,,nja_pavadinimas,string,,,,3,open,,Ne juridinio asmens pavadinimas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,NeJuridinisAsmuo,,,kodas,,,4,,,"Juridinių asmenų registro ne juridinių asmenų (valstybės, savivaldybių, valstybės ir savivaldybių atstovaujamųjų ir vykdomųjų institucijų, kurios neregistruojamos juridinių asmenų registre) klasifikatorius",
+,,,,,grupes_kodas,integer,,,,3,open,,Ne juridinio asmens grupės kodas,
+,,,,,kodas,string,,,,4,open,,Ne juridinio asmens kodas,
+,,,,,pavadinimas,string,,,,3,open,,Ne juridinio asmens pavadinimas,

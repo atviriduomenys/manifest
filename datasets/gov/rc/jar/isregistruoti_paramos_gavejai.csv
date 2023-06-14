@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/isregistruoti_paramos_gavejai,,,,,,,,,,,,Juridinių asmenų registre įregistruoti paramos gavėjai (pagal  išregistruotą statusą „PARAMOS GAVĖJAI“),"Duomenys apie Lietuvos Respublikos juridinių asmenų registre įregistruotus juridinius asmenis, turinčius išregistruotą žymą „PARAMOS GAVĖJAI“ (kodas, pavadinimas, žymos įregistravimo data). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti."
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,IsregistruotasParamosGavejas,,,juridinis_asmuo,,,4,,,Juridinių asmenų registre įregistruoti paramos gavėjai,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens pavadinimas Juridinių asmenų registre,
+,,,,,Paramos_gav_nuo,date,D,,,4,open,,Paramos gavėjo statuso įregistravimo data,
+,,,,,Paramos_gav_iki,date,D,,,4,open,,Paramos gavėjo statuso išregistravimo data,

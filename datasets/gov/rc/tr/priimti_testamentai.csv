@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,poz_ar_iped_ja,integer,,,,4,open,,Požymis ar įpėdinis Juridinis asmuo,
 ,,,,,,enum,,,1,,,,Juridinis asmuo,
 ,,,,,,,,,0,,,,Fizinis asmuo,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

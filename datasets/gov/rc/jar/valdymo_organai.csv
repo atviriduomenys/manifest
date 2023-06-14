@@ -1,9 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/jar/valdymo_organai,,,,,,,,,,,,"Juridinių asmenų registre įregistruotų juridinių asmenų valdymo organai, jų formos (raw data)","Duomenys, apibūdinantys Lietuvos Respublikos juridinių asmenų registre įregistruotų juridinių asmenų valdymo organus ir jų formas (juridinius asmenis apibūdinantys duomenys (kodas, valdymo organai). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti. "
 ,,,,,,,,,,,,,,
-,,,,ValdymoOrganas,,,ja_kodas,,,4,,,Juridinių asmenų valdymo organai,
-,,,,,ja_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas iš juridinių asmenų registro,
-,,,,,ja_pavadinimas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,,,,Juridinio asmens pavadinimas iš juridinių asmenų registro,
+,,,,ValdymoOrganas,,,juridinis_asmuo,,,4,,,Juridinių asmenų valdymo organai,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,,,Juridinio asmens pavadinimas iš juridinių asmenų registro,
 ,,,,,vadovas,integer,,,,4,open,,Juridinio asmens vienasmenis valdymo organas – vadovas,
 ,,,,,,enum,,,1,,,,Vadovas yra,
 ,,,,,,,,,0,,,,Vadovo nėra,
@@ -19,4 +18,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kiti_valdymo_organai,integer,,,,4,open,,Kiti juridinio asmens valdymo organai,
 ,,,,,,enum,,,1,,,,Kiti juridinio asmens valdymo organai yra,
 ,,,,,,,,,0,,,,Kitų juridinio asmens valdymo organų nėra,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

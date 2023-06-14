@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jadis/dalyviai,,,,,,,,,,,,Juridinių asmenų dalyvių duomenys iš JADIS,"Juridinių asmenų dalyvių informacinės sistemos (JADIS) duomenys apie juridinių asmenų dalyvius, t. y. juridinių asmenų sudėtį iš fizinių ir juridinių asmenų"
+,,,,,,,,,,,,,,
+,,,,Dalyvis,,,juridinis_asmuo,,,4,,,Juridinių asmenų dalyvių duomenys iš JADIS,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmuo iš Juridinių asmenų registro,
+,,,,,form_kodas,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš Juridinių asmenų registro,
+,,,,,stat_statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinis statusas iš Juridinių asmenų registro,
+,,,,,lr_fiziniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių Lietuvos Respublikos piliečių skaičius,
+,,,,,lr_juridiniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių Lietuvos Respublikoje įregistruotų juridinių asmenų skaičius,
+,,,,,uzsienio_fiziniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio fizinių asmenų skaičius,
+,,,,,uzsienio_juridiniai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio juridinių asmenų skaičius,

@@ -1,9 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/jar/buveines,,,,,,,,,,,,Juridinių asmenų registre įregistruotų juridinių asmenų buveinių (adresų) duomenys (raw data),"Įregistruotų juridinių asmenų buveinių (adresų) duomenų rinkinys iš Lietuvos Respublikos juridinių asmenų registro (juridinius asmenis apibūdinantys duomenys (kodas, pavadinimas, adreso identifikatorius iš Adresų registro, adresas). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti. "
 ,,,,,,,,,,,,,,
-,,,,Buveine,,,ja_kodas,,,4,,,,
-,,,,,ja_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas iš juridinių asmenų registro,
-,,,,,adresas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens adresas (buveinė) iš juridinių asmenų registro,
-,,,,,aob_kodas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,4,open,,Adreso kodas iš adresų registro,
+,,,,Buveine,,,juridinis_asmuo,,,4,,,,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas iš juridinių asmenų registro,
+,,,,,adresas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,Adreso kodas (išorinis LR AR),
 ,,,,,adresas_nuo,date,D,,,4,open,,Juridinio asmens adreso įrašymo į juridinių asmenų registro įrašą data,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/iregistruotos_nvo,,,,,,,,,,,,Juridinių asmenų registre įregistruotos nevyriausybinės organizacijos (pagal žymą „NEVYRIAUSYBINĖS ORGANIZACIJOS“),"Duomenys apie Lietuvos Respublikos juridinių asmenų registre įregistruotus juridinius asmenis, turinčius žymą „NEVYRIAUSYBINĖ ORGANIZACIJA“ (kodas, pavadinimas, žymos įregistravimo data). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti."
+,,,,,,,,,,,,,,
+,,,,IregistruotaNVO,,,juridinis_asmuo,,,4,,,Juridinių asmenų registre įregistruotos NVO,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens pavadinimas Juridinių asmenų registre,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinės formos pavadinimas,
+,,,,,nvc_nuo,date,D,,,4,open,,Žymos „Nevyriausybinė organizacija“ įregistravimo juridiniam asmeniui data,

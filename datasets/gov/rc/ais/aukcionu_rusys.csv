@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/aukcionu_rusys,,,,,,,,,,,,Antstolių informacinėje sistemoje (AIS) esančių aukcionų ir elektroninių varžytynių rūšių duomenys,AIS esančių aukcionų ir elektroninių varžytynių rūšių duomenys (paskelbta ir įvyko). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie aukcionus ir elektronines varžytynes. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0
+,,,,,,,,,,,,,,
+,,,,AukcionoRusis,,,nr,,,4,,,Antstolių informacinėje sistemoje (AIS) esančių aukcionų ir elektroninių varžytynių rūšių duomenys,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,aukciono_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/AukcionoTipas,,,4,open,,Varžytynių / aukcionų tipo kodas iš AIS varžytynių ir aukcionų tipų klasifikatoriaus,
+,,,,,kiek_paskelbta,string,,,,3,open,,"Bendras paskelbtų varžytinių, aukcionų kiekis",
+,,,,,kiek_ivyko,string,,,,3,open,,"Bendras įvykusių varžytinių, aukcionų kiekis",

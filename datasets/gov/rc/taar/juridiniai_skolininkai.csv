@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/taar/juridiniai_skolininkai,,,,,,,,,,,,TAAR pirminiai duomenys (raw data) apie skolininkus (skolininkai juridiniai asmenys),"Turto arešto aktų registro nuasmeninti duomenys (RAW DATA) apie skolininkus, kai skolininkai juridiniai asmenys, jų teisinę formą ir kilmės šalį, turto arešto aktų jų statusus, įregistravimo / išregistravimo datas, areštuojančių institucijų."
+,,,,,,,,,,,,,,
+,,,,JuridinisSkolininkas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Turto arešto akto dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,dokumento_statusas,ref,/datasets/gov/rc/taar/klasifikatoriai/DokumentoStatusas,,,4,open,,Turto arešto akto statusas iš TAAR dokumentų statusų klasifikatoriaus,
+,,,,,ai_tipas,ref,/datasets/gov/rc/taar/klasifikatoriai/AI,,,4,open,,Areštuojančios institucijos tipas iš TAAR areštuojančių institucijų klasifikatoriaus,
+,,,,,skolininkoid,integer,,,,4,open,,Juridinio asmens dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,jar_teisine_forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš JAR teisinių formų klasifikatoriaus,
+,,,,,ar_uzsienietis,integer,,,,4,open,,"Požymis, ar Juridinis asmuo įregistruotas Juridinių asmenų registre",
+,,,,,,enum,,,1,,,,Taip,
+,,,,,,,,,0,,,,Ne,
+,,,,,taa_iregistravimo_metai,integer,,,,2,open,,Turto arešto akto įregistravimo metai,
+,,,,,taa_iregistravimo_menuo,integer,,,,2,open,,Turto arešto akto įregistravimo mėnuo,
+,,,,,taa_isregistravimo_metai,integer,,,,2,open,,Turto arešto akto išregistravimo metai,
+,,,,,taa_isregistravimo_menuo,integer,,,,2,open,,Turto arešto akto išregistravimo mėnuo,

@@ -5,6 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,3,open,,Gyvenamosios vietovės vardas su sutrumpintu tipu,
 ,,,,,plotas,number,ha,,,4,open,,Gyvenamosios vietovės grafinis plotas (ha),
 ,,,,,gyv_r,date,D,,,4,open,,Gyvenamosios vietovės įrašymo į Adresų registrą data,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/graseniunija/GraSeniunija,,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/graseniunija/GraSeniunija,,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,gyv_vietoves,"geometry(polygon,3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,
