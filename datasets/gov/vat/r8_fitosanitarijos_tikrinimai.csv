@@ -1,1 +1,16 @@
-
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/fitosanitarijos_tikrinimai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Patikrinimas,,,id,,,4,open,,"Pateikiama informacija apie atliktus fitosanitarinius tikrinimus (tikrinimą atlikęs teritorinis padalinys; tikrinimo data; žyma, kad tikrinami ne LR ūkio subjektai; metodinė sritis; tikrinimo sritis; tikrinimo pobūdis; rizikingumo kategorija; tikrinimo rūšis; pildyti veiklos priežiūros klausimynai; ūkio subjektams nustatyti veiklos neatitikimai (pastabos, mažareikšmiai ir kt. neatitikimai); tikrinamas objektas; žyma apie ūkio subjekto informavimą dėl numatomo patikrinimo; žyma, ar paimtas mėginys; įtariami kenksmingi organizmai; rasti kenksmingi organizmai; registruotas kenkėjo židinys; žyma, kad tikrinta turgavietėje; žyma, kad tikrinta su kita institucija)",
+,,,,,id,string,,,,4,open,,Identifikacinis stulpelis,
+,,,,,tikrinimo_pradzia,date,D,,,4,open,,Tikrinimo pradžios data,
+,,,,,tikrinimo_pabaiga,date,D,,,4,open,,Tikrinimo pabaigos data,
+,,,,,pobudis,string,,,,4,open,,Tikrinimo pobūdis,
+,,,,,rusis,string,,,,4,open,,Tikrinimo rūšis,
+,,,,,,enum,,,"""neplaninis""",,,,,
+,,,,,,,,,"""planinis""",,,,,
+,,,,,,,,,"""planinis+neplaninis""",,,,,
+,,,,,paimtas_meginys,boolean,,,,4,open,,Paimtas mėginys,
+,,,,,tikrinamas_objektas,string,,,,4,open,,Tikrinamo objekto rūšis,
