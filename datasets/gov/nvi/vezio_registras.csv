@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/nvi/vezio_registras,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,VezysRegistras,,,,,,4,,,Lietuvos Vėžio Registras ,
+,,,,VezysRegistras,,,,,,3,,,Lietuvos Vėžio Registras ,
 ,,,,,amz_gr,string,,,,4,open,,Amžiaus grupė,
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Paciento apskritis,
 ,,,,,cm,string,,,,4,open,,Klininkinė klasifikacija – cTNM M dalis,M – tolimosios metastazės
