@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""neporinis""",,,,Neporinis organas,
 ,,,,,,,,,"""porinis organas, bet nžn.""",,,,Porinis organas,
 ,,,,,lok_grupe,string,,,,4,open,,Lokalizacijų grupė,
-,,,,,lok_tlk10,ref,/datasets/gov/vlk/tlk10am,,,4,open,,Lokalizacijų grupės TLK-10 kodai,
+,,,,,lok_tlk10,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,4,open,,Lokalizacijų grupės TLK-10 kodai,
 ,,,,,lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
