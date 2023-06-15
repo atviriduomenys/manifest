@@ -176,6 +176,7 @@ datasets/gov/vaspvt/medicinos_iranga.csv
 datasets/gov/vmi/pvm_deklaracijos.csv
 datasets/gov/avnt/tyciniai_bankrotai.csv
 datasets/gov/ivpk/adk.csv
+datasets/gov/ivpk/viisp.csv
 datasets/gov/sumin/vintra.csv
 datasets/gov/avnt/imoniu_restrukturizavimas.csv
 datasets/gov/avnt/imoniu_bankrotas.csv
