@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/gr/vyru_vardai,,,,,,,,,,,,"Populiariausi vyrų vardai Lietuvoje nuo 1900 metų, TOP 50",
+,,,,,,,,,,,,,,
+,,,,VyroVardas,,,nr,,,4,,,"Populiariausi vyrų vardai Lietuvoje nuo 1900 metų, TOP 50",
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,vardas,string,,,,3,open,,Vyro vardas,
+,,,,,viso_vardas,integer,U,,,4,open,,"Vyrų, gimusių nuo 1900 m. ir kuriems suteiktas toks vardas, skaičius",

@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/fa_nepateike_auditoriu_isvadu,,,,,,,,,,,,"Juridiniai asmenys, nepateikę auditoriaus išvados, kai pagal įstatymus turi būti atliktas ataskaitų auditas","Duomenys apie nepateikusius auditoriaus išvados, kai pagal įstatymus turi būti atliktas metinių finansinių ataskaitų (metinių konsoliduotųjų finansinių ataskaitų) auditas, juridinius asmenis "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,NepateikesAuditoriausIsvados,,,juridinis_asmuo,,,4,open,,Juridinių asmenų registre įregistruoto juridinio asmens kodas,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinis asmuo juridinių asmenų registre,
+,,,,,ja_reg_data,date,D,,,4,open,,juridinio asmens įregistravimo Juridinių asmenų registre data,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,juridinio asmens formos kodas,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,juridinio asmens teisinio statuso kodas,
+,,,,,audit_nepateikta_uz_metus,integer,,,,2,open,,"metai, už kuriuos metus juridinis asmuo nepateikė auditoriaus išvados",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

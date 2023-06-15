@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ppnsis/nariu_skaicius,,,,,,,,,,,,Duomenys apie politinių organizacijų narių skaičių,
+,,,,NariuSkaicius,,,politine_organizacija,,,4,,,PPNSIS duomenys apie politinių organizacijų narių skaičių,Politinių partijų narių sąrašų informacinės sistemos duomenys apie Lietuvos Respublikos veikiančių politinių organizacijų narių skaičių
+,,,,,politine_organizacija,ref,/datasets/gov/rc/ppnsis/politines_organizacijos/PolitineOrganizacija,,,4,open,,"Politinės organizacijos,  kaip juridinio asmens, kodas iš Juridinių asmenų registro",
+,,,,,saraso_data,date,D,,,4,open,,Politinės organizacijos sąrašo pateikimo data,
+,,,,,nariu_skaicius,integer,U,,,4,open,,Politinės organizacijos narių skaičius,

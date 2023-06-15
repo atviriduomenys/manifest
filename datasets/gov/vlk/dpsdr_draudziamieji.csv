@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/dpsdr_draudziamieji,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Draudziamasis,,,,,,4,,,Draudžiamųjų skaičius pagal įregistravimo į DPSDR pagrindą,Informacija apie PSD draudžiamų asmenų skaičių pagal DPSDR įregistravimo pagrindus
+,,,,,data,date,M,,,4,open,,Laikotarpis,Laikotarpis mėnesio tikslumu
+,,,,,asm_lytis,string,,,,4,open,,Paciento lytis,
+,,,,,,enum,,,"""Vyras""",,,,,
+,,,,,,,,,"""Moteris""",,,,,
+,,,,,,,,,"""Nenurodyta""",,,,,
+,,,,,pagrindas,ref,Pagrindas,,,4,open,,Nuoroda į Pagrindas,Įregistravimo pagrindo unikalus numeris
+,,,,,skaicius,number,U,,,4,open,,Draudžiamųjų skaičius,Draudžiamųjų skaičius (paskutinės mėnesio dienos duomenimis) 
+,,,,,,,,,,,,,,
+,,,,Pagrindas,,,,,,4,,,Įregistravimo pagrindų sąrašas,Įregistravimo pagrindų sąrašas
+,,,,,kodas,string,,,,4,open,,Įregistravimo pagrindo kodas,
+,,,,,pavadinimas,string,,,,4,open,,Įregistravimo pagrindo pavadinimas,

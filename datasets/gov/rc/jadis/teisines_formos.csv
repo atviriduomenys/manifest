@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jadis/teisines_formos,,,,,,,,,,,,Juridinių asmenų dalyvių duomenys pagal juridinio asmens teisinę formą,Juridinių asmenų dalyvių informacinės sistemos (JADIS) duomenys apie juridinių asmenų dalyvius pagal juridinio asmens teisinę formą
+,,,,,,,,,,,,,,
+,,,,TeisineForma,,,"laikotarpis, forma",,,4,,,Juridinių asmenų dalyvių duomenys pagal juridinio asmens teisinę formą,
+,,,,,laikotarpis,date,D,,,4,open,,"Data, kuriai skaičiuojamas dalyvių skaičius (nuo 2015 m. sausio 1 d., periodiškumas - 1 metai) ",
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš Juridinių asmenų registro,
+,,,,,fiz_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių fizinių asmenų skaičius,
+,,,,,ja_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių juridinių asmenų skaičius,
+,,,,,uzs_fiz_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio fizinių asmenų skaičius,
+,,,,,uzs_ja_dalyviai,integer,U,,,4,open,,Juridiniame asmenyje dalyvaujančių užsienio juridinių asmenų skaičius,

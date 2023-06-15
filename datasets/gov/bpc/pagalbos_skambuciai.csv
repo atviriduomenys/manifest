@@ -53,7 +53,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ivykiu_skaicius,integer,,,,4,open,,"įvykių, apie kuriuos gauti pranešimai, skaičius šioje agregacijos grupėje",
 ,,,,,,,,,,,,,,
 ,,,,IvykiuLaikas,,,,,,4,,,BPC įvykių laikas,"Bendrojo pagalbos centro (BPC) pagalbos telefonu registruotų įvykių, apie kuriuos gauti pranešimai pagalbos telefonu 112, paros meto statistika. Tai yra agreguota lentelė, kuri į vieną eilutę sujungia unikalią šių požymių kombinaciją: įvykio tipas, mėnuo, savaitės diena, valanda, minutės grupė (10 min. tikslumu). Lentelė nėra agraguota pagal metus (t.y., visų metų duomenys yra kartu). Lentelė yra skirta įvykių paros meto tendencijoms stebėti, atsižvelgiant į šventines dienas ir sezoniškumą. Dėl konfidencialumo nepateikiama tiksli įvykio data ar geografinė komponentė. Praneštų įvykių skaičiai nebūtinai turi sutapti su Administracinių nusižengimų registro duomenimis (pranešimai gali būti melagingi arba nepasiekti administracinių nusižengimų bylos stadijos)."
-,,,,,ivykio_tipo_kodas,ref,IvykiuKlasifikatorius,,,3,open,,Įvykio tipo kodas,Šio požymio kodų prasmės yra pagalbinėje lentelėje BPC įvykių klasifikatorius
+,,,,,ivykio_tipo_kodas,ref,IvykiuKlasifikatorius,,,4,open,,Įvykio tipo kodas,Šio požymio kodų prasmės yra pagalbinėje lentelėje BPC įvykių klasifikatorius
 ,,,,,menuo,integer,,,,2,open,,"Mėnuo, kuomet įvyko įvykiai",
 ,,,,,,enum,,,1,,,,Sausis,
 ,,,,,,,,,2,,,,Vasaris,

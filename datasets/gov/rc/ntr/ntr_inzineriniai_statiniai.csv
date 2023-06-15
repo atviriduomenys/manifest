@@ -1,0 +1,62 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ntr/ntr_inzineriniai_statiniai,,,,,,,,,,,,Nekilnojamojo turto registre įregistruotų inžinerinių statinių duomenys pagal savivaldybes,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,NtrInzinerinisStatinys,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Identifikatorius,Inžinerinio statinio identifikatorius šiame duomenų rinkinyje
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,"Savivaldybės, kurioje yra inžinerinis statinys, pavadinimas"
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,"Savivaldybėje esančios seniūnijos, kurioje yra inžinerinis statinys, pavadinimas"
+,,,,,statinio_kategorija,integer,,,,3,open,,Statinio kategorija,"Statinio rūšis pagal LR statybos įstatymą. Nuo statinio kategorijos priklauso koks projektas turi būti parengtas, kokie reikalavimai keliami projekto vadovui ir kitiems statybos techninės veiklos pagrindinių sričių (STVPS) vadovams ir statybą leidžiančio dokumento (SLD) privalomumas."
+,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,open,,Objekto tipas,Inžinerinio statinio tipas
+,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas ,Inžinerinio statinio paskirtis
+,,,,,stat_pradzios_metai,integer,,,,3,open,,Statybos pradžios metai,Inžinerinio statinio statybos pradžios metai
+,,,,,stat_pabaigos_metai,integer,,,,3,open,,Statybos pabaigos metai,Inžinerinio statinio statybos užbaigimo metai
+,,,,,rekonstr_pradzios_metai,integer,,,,3,open,,Rekonstrukcijos pradžios metai,Inžinerinio statinio rekonstrukcijos pradžios metai
+,,,,,rekonstr_pabaigos_metai,integer,,,,3,open,,Rekonstrukcijos pabaigos metai,Inžinerinio statinio rekonstrukcijos pabaigos metai
+,,,,,kap_remonto_pradzios_metai,integer,,,,3,open,,Kapitalinio remonto pradžios metai,Inžinerinio statinio kapitalinio remonto pradžios metai
+,,,,,kap_remonto_pabaigos_metai,integer,,,,3,open,,Kapitalinio remonto pabaigos metai,Inžinerinio statinio kapitalinio remonto pabaigos metai
+,,,,,baigtumo_proc,integer,,,,3,open,,Baigtumas,Inžinerinio statinio statybos užbaigtumo procentas
+,,,,,plotas,number,,,,3,open,,Plotas,Inžinerinio statinio plotas
+,,,,,turis,number,,,,3,open,,Tūris,Inžinerinio statinio tūris
+,,,,,ilgis,number,,,,3,open,,Ilgis,Inžinerinio statinio ilgis
+,,,,,aukstis,number,,,,3,open,,Aukštis,Inžinerinio statinio aukštis
+,,,,,plotis,number,,,,3,open,,Plotis,Inžinerinio statinio plotis
+,,,,,medziaga,integer,,,,3,open,,Medžiaga,"Medžiaga, iš kurios pastatytas inžinerinis statinys"
+,,,,,gylis,integer,,,,3,open,,Gylis,"Gylis, kuriame yra pastatytas inžinerinis statinys"
+,,,,,kiekis,number,,,,3,open,,Kiekis,Inžinerinio statinio dalių kiekis
+,,,,,danga,integer,,,,3,open,,Danga,Inžinerinio statinio danga
+,,,,,diametras,integer,,,,3,open,,Diametras,Inžinerinio statinio diametras
+,,,,,skerspjuvis,integer,,,,3,open,,Skerspjūvis,Inžinerinio statinio skerspjūvis
+,,,,,stadiono_tipas,integer,,,,2,open,,Stadiono tipas,Inžinerinio statinio-stadiono tipas
+,,,,,stadiono_rusis,integer,,,,2,open,,Stadiono rūšis,Inžinerinio statinio-stadiono rūšis
+,,,,,sedimu_vietu_sk,integer,U,,,4,open,,Sėdimų vietų skaičius,Inžinerinio statinio-stadiono sėdimų vietų skaičius
+,,,,,stovimu_vietu_sk,integer,U,,,4,open,,Stovimu vietų skaičius,Inžinerinio statinio-stadiono stovimų vietų skaičius
+,,,,,sporto_aiksteles_rusis,integer,,,,2,open,,Sporto aikštelės rūšis,Inžinerinio statinio-sporto aikštelės rūšis
+,,,,,sporto_trasos_rusis,integer,,,,2,open,,Sporto trasos rūšis,Inžinerinio statinio-sporto trasos rūšis
+,,,,,prieplaukos_rusis,integer,,,,2,open,,Prieplaukos rūšis,Inžinerinio statinio-prieplaukos rūšis
+,,,,,hidrotechninio_statinio_rusis,integer,,,,2,open,,Hidrotechninio statinio rūšis,Hidrotechninio statinio rūšis
+,,,,,kelio_reiksme,integer,,,,2,open,,Kelio reikšmė,Inžinerinio statinio-kelio reikšmė
+,,,,,kelio_kategorija,integer,,,,2,open,,Kelio kategorija,Inžinerinio statinio-kelio kategorija
+,,,,,gelezinkelio_reiksme,integer,,,,2,open,,Geležinkelio reikšmė,Inžinerinio statinio-geležinkelio reikšmė
+,,,,,kelio_kliutis,integer,,,,2,open,,Kelio kliūtis,Inžinerinio statinio-kelio kliūtis
+,,,,,gylis_grimzle,integer,,,,2,open,,Gylis (grimzlė),Inžinerinio statinio gylis (grimzlė)
+,,,,,gabaritas,integer,,,,2,open,,Gabaritas,Inžinerinio statinio gabaritas
+,,,,,oro_uosto_kategorija,integer,,,,2,open,,Oro uosto kategorija,Inžinerinio statinio-oro uosto kategorija 
+,,,,,oro_uosto_dangos_kodas,integer,,,,2,open,,Oro uosto dangos kodas,Inžinerinio statinio-oro uosto dangos kodas
+,,,,,orlaivio_tako_rusis,integer,,,,2,open,,Orlaivių tako rūšis,Inžinerinio statinio-orlaivių tako rūšis
+,,,,,vandens_uosto_rusis,integer,,,,2,open,,Vandens uosto rūšis,Inžinerinio statinio-vandens uosto rūšis
+,,,,,sulinio_tipas,integer,,,,2,open,,Šulinio tipas,Šulinio tipas
+,,,,,dujotiekio_linijos_reiksme,integer,,,,2,open,,Dujotiekio linijos reikšmė,Dujotiekio linijos reikšmė
+,,,,,vandentiekio_linijos_reiksme,integer,,,,2,open,,Vandentiekio linijos reikšmė,Vandentiekio linijos reikšmė
+,,,,,sil_tiekimo_linijos_reiksme,integer,,,,2,open,,Šilumos tiekimo linijos reikšmė,Šilumos tiekimo linijos reikšmė
+,,,,,nuoteku_linijos_reiksme,integer,,,,2,open,,Nuotekų linijos reikšmė,Nuotekų linijos reikšmė
+,,,,,nuoteku_linijos_rusis,integer,,,,2,open,,Nuotekų linijos rūšis,Nuotekų linijos rūšis
+,,,,,nuoteku_linijos_budas,integer,,,,2,open,,Nuotekų linijos būdas,Nuotekų linijos tiesimo būdas
+,,,,,nuoteku_irenginio_reiksme,integer,,,,2,open,,Nuotekų įrenginio reikšmė,Nuotekų įrenginio reikšmė
+,,,,,elektros_linijos_reiksme,integer,,,,2,open,,Elektros linijos reikšmė,Elektros linijos reikšmė
+,,,,,itampa,integer,,,,2,open,,Įtampa,Elektros linijos įtampa
+,,,,,elektros_linijos_pobudis,integer,,,,2,open,,Elektros linijos pobūdis,Elektros linijos pobūdis
+,,,,,kanalo_reiksme,integer,,,,2,open,,Kanalo reikšmė,Kanalo reikšmė
+,,,,,vamzdziu_kiekis_kanale,integer,,,,2,open,,Vamzdžių kiekis kanale,Vamzdžių kiekis kanale
+,,,,,naftotiekio_linijos_reiksme,integer,,,,2,open,,Naftotiekio linijos reikšmė,Naftotiekio linijos reikšmė
+,,,,,irenginiu_parko_rusis,integer,,,,2,open,,Įrenginių parko rūšis,Įrenginių parko rūšis

@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/taar/turto_aresto_aktai,,,,,,,,,,,,TAAR pirminiai duomenys (raw data) apie turto arešto aktus,"Turto arešto aktų registro nuasmeninti duomenys (RAW DATA) apie turto arešto aktus, jų statusus, įregistravimo / išregistravimo datas, areštuojančią instituciją, turto arešto mastą (rėžius), jeigu nustatomas."
+,,,,,,,,,,,,,,
+,,,,TurtoArestoAktas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Turto arešto akto dirbtinis identifikavimo kodas šiame rinkinyje,
+,,,,,dokumento_statusas,ref,/datasets/gov/rc/taar/klasifikatoriai/DokumentoStatusas,,,4,open,,Turto arešto akto statusas iš TAAR dokumentų statusų klasifikatoriaus,
+,,,,,ai_tipas,ref,/datasets/gov/rc/taar/klasifikatoriai/AI,,,4,open,,Areštuojančios institucijos tipas iš TAAR areštuojančių institucijų klasifikatoriaus,
+,,,,,mastas_rez,string,,,,3,open,,"Turto arešto mastas (rėžiai), jeigu nustatomas",
+,,,,,taa_iregistravimo_metai,integer,,,,2,open,,Turto arešto akto įregistravimo metai,
+,,,,,taa_iregistravimo_menuo,integer,,,,2,open,,Turto arešto akto įregistravimo mėnuo,
+,,,,,taa_isregistravimo_metai,integer,,,,2,open,,Turto arešto akto išregistravimo metai,
+,,,,,taa_isregistravimo_menuo,integer,,,,2,open,,Turto arešto akto išegistravimo mėnuo,
