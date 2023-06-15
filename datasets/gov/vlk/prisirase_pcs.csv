@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/prisirase_psc,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Prisirases,,,,,,4,,,Prisirašiusių prie psichikos sveikatos centro asmenų skaičius,Informacija apie prisirašiusių prie psichikos sveikatos centrų asmenų skaičių (paskutinei mėnesio dienai)
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, prie kurios prisirašę asmenys, ID"
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,,enum,,,"""Moteris""",,,,,
+,,,,,,,,,"""Vyras""",,,,,
+,,,,,draustumas,integer,,,,3,open,,Draustumas,"Požymis, parodantis, ar asmenys buvo apdrausti PSD nurodytu laikotarpiu"
+,,,,,tlk,string,,,,4,open,,Teritorinė ligonių kasa,
+,,,,,,enum,,,"""Vilniaus TLK""",,,,,
+,,,,,,,,,"""Kauno TLK""",,,,,
+,,,,,,,,,"""Klaipėdos TLK""",,,,,
+,,,,,,,,,"""Šiaulių TLK""",,,,,
+,,,,,,,,,"""Panevėžio TLK""",,,,,
+,,,,,amziaus_grupe,string,,,,4,open,,Amžiaus grupė,
+,,,,,skaicius,number,U,,,4,open,,Asmenų skaičius,Prisirašiusių prie pirminės psichikos centro asmenų skaičius (paskutinei mėnesio dienai)
