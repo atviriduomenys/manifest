@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nma/ti_informacija_2021,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,TIInformacija2021,,,,,,,,,Tiesioginės ir kompensacinės išmokos už deklaruotos plotus ir (arba) gyvulius. Bendra informacija. 2021 m.,
+,,,,TIInformacija2021,,,,,,3,,,Tiesioginės ir kompensacinės išmokos už deklaruotos plotus ir (arba) gyvulius. Bendra informacija. 2021 m.,
 ,,,,,pareiskejo_tipas,string,,,,4,open,,Pareiškėjo tipas,
 ,,,,,,enum,,,"""Fizinis""",,,,Fizinis asmuo,
 ,,,,,,,,,"""Juridinis""",,,,Juridinis asmuo,
