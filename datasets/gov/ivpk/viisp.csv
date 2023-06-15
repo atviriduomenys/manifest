@@ -9,8 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,short_description_lt,string,,,short.description.value,4,open,,Trumpas paslaugos aprašas,
 ,,,,,short_name,string,,,,4,open,,Trumpas pavadinimas,
 ,,,,,is_paid_service,boolean,,,,4,open,,Ar mokama paslauga,
-,,,,,,enum,,,True,,,,Taip,mokama
-,,,,,,,,,False,,,,Ne,nemokama
 ,,,,,contacts_lt,string,,,contacts.value,4,open,,Kontaktai,
 ,,,,,price_lt,string,,,price.value,4,open,,Paslaugos apraše nurodyta kaina,
 ,,,,,,,,,,,,,,
