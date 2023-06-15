@@ -1,0 +1,27 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ivpk/viisp,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,ServiceDescription,,,id,,,4,,,Išoriniai ir vidiniai paslaugų aprašai,"Paslaugų aprašai. Trumpi, ilgi pavadinimai. Mokama/nemokama paslauga ir pan. Informacija kuri matoma paslaugos apraše. "
+,,,,,id,integer,,,,4,open,,Unikalus paslaugos aprašo ID,
+,,,,,unique_id,string,,,,4,open,,Unikalus paslaugos ID. (PID),
+,,,,,description_lt,string,,,discription.value,4,open,,Paslaugos aprašas,
+,,,,,name_lt,string,,,name.value,4,open,,Paslaugos pavadinimas,
+,,,,,short_description_lt,string,,,short.description.value,4,open,,Trumpas paslaugos aprašas,
+,,,,,short_name,string,,,,4,open,,Trumpas pavadinimas,
+,,,,,is_paid_service,boolean,,,,4,open,,Ar mokama paslauga,
+,,,,,,enum,,,True,,,,Taip,mokama
+,,,,,,,,,False,,,,Ne,nemokama
+,,,,,contacts_lt,string,,,contacts.value,4,open,,Kontaktai,
+,,,,,price_lt,string,,,price.value,4,open,,Paslaugos apraše nurodyta kaina,
+,,,,,,,,,,,,,,
+,,,,AuditLogin,,,id,,,4,,,Prisijungimų sekimas,"Kiekvieno prisijungimo metu sukuriamas įrašas, atsekti koks naudotojas prisijungė, su kokia priemone."
+,,,,,id,integer,,,,4,open,,Unikalus prisijungimo ID,
+,,,,,login_date,datetime,S,,,4,open,,Prisijungimo data,
+,,,,,auth_provider,string,,,,4,open,,Prisijungimo būdas,Su kokiu prisijungimo būdu prisijungta
+,,,,,country_code,string,,,,4,open,,Šalies kodas,"Valstybės iš kurios prisijungė kodas. Pvz. LT, IT, LV"
+,,,,,country_name,string,,,,4,open,,Šalies pavadinimas,Valstybės pavadinimas iš kurios prisijungė
+,,,,,,,,,,,,,,
+,,,,AuditOrder,,,id,,,4,,,Užsakymų lenta,"Kiekvieno užsakymu metu yra sukuriamas įrašas. Jeigu paslauga išorinė, sukuriamas įrašas ir prie service_id lieka null. Jeigu paslauga vidinė, užsakymo metu sukuriamas įrašas ir prie service_id nurodomas vidinės paslaugos ID"
+,,,,,id,integer,,,,4,open,,Unikalus užsakymo ID,
+,,,,,order_date,datetime,S,,,4,open,,Užsakymo data,
+,,,,,service_description,ref,ServiceDescription,,,4,open,,Paslaugos aprašymas,
