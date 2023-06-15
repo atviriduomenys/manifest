@@ -10,6 +10,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
 ,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybė ,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
 ,,,,,programa,string,,,,3,open,,Programa,
 ,,,,,deklaruoti_hektarai,number,ha,,,4,open,,Deklaruoti hektarai pagal programą,
 ,,,,,patvirtinti_hektarai,number,ha,,,4,open,,Patvirtinti hektarai pagal programą,
