@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/santara/skl,,,,,,,,,,,,Širdies ir kraujagyslių ligomis sergančių pacientų apsilankymų statistiniai duomenys,
-,,csv,,,,,,https://data.gov.lt/dataset/1893/download/14051/SKL_duomenys.csv,"tabular(sep: "";"")",,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1893/download/14051/SKL_duomenys.csv,"tabular(sep: "";"")",,,,,
 ,,,,SKLiga,,,,,,3,,,,
 ,,,,,amzius,string,,AMZIUS_KAT,,3,open,,Amžius,
 ,,,,,lytis,string,,LYTIS,,4,open,,Lytis,
