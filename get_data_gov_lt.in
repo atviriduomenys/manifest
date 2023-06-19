@@ -274,6 +274,7 @@ datasets/gov/mita/paraiskos.csv
 datasets/gov/lsd/turizmas/atvyksta.csv
 datasets/gov/miskai/leidimai.csv
 datasets/gov/miskai/pvp.csv
+datasets/gov/miskai/sanitarine.csv
 datasets/gov/miskai/vmp.csv
 datasets/gov/migracija/prieglobscio_suteikimas.csv
 datasets/gov/vstt/saugojamos_rusys.csv
