@@ -1,0 +1,64 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/miskai/sanitarine,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PreparatoGrupe,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,3,open,,Preparato grupės pavadinimas,
+,,,,,kodas,string,,,,3,open,,Preparato grupės kodas,
+,,,,,,,,,,,,,,
+,,,,KenkejoGrupe,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,3,open,,Kenkėjo grupės pavadinimas,
+,,,,,kodas,string,,,,3,open,,Kenkėjo grupės kodas,
+,,,,,vieta,ref,Vieta,,,4,open,,Vieta (medelynas ar miškas),
+,,,,,,,,,,,,,,
+,,,,PriemonesTipas,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,3,open,,Priemonės tipo pavadinimas,
+,,,,,vieta,ref,Vieta,,,4,open,,Vieta (medelynas ar miškas),
+,,,,,,,,,,,,,,
+,,,,Savininkas,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,4,open,,Miško savininkas (privatus ar valstybė),
+,,,,,,,,,,,,,,
+,,,,Tipas,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,3,open,,Pildymo tipo pavadinimas,Židinių registravimas/Profilaktinių priemonių registravimas
+,,,,,,,,,,,,,,
+,,,,Vieta,,,,,,4,,,,
+,,,,,pavadinimas,string,,,,3,open,,Vietos pavadinimas (Medelynas ar miškas),
+,,,,,,,,,,,,,,
+,,,,Preparatas,,,,,,4,,,,
+,,,,,grupe,ref,PreparatoGrupe,,,4,open,,Susijusi preparato grupė,
+,,,,,pavadinimas,string,,,,3,open,,Preparato pavadinimas,
+,,,,,kodas,string,,,,3,open,,Preparato kodas,
+,,,,,,,,,,,,,,
+,,,,KenkejoPogrupis,,,,,,4,,,,
+,,,,,grupe,ref,KenkejoGrupe,,,4,open,,Susijusi kenkėjo grupė,
+,,,,,pavadinimas,string,,,,3,open,,Kenkėjo pogrupio pavadinimas,
+,,,,,kodas,string,,,,3,open,,Kenkėjo pogrupio kodas,
+,,,,,,,,,,,,,,
+,,,,Priemone,,,,,,4,,,,
+,,,,,tipas,ref,PriemonesTipas,,,4,open,,Susijęs priemonės tipas,
+,,,,,pavadinimas,string,,,,3,open,,Priemonės pavadinimas,
+,,,,,kodas,string,,,,3,open,,Priemonės kodas,
+,,,,,vienetai,string,,,,3,open,,Matavimo vienetai,
+,,,,,,,,,,,,,,
+,,,,Kenkejas,,,,,,4,,,,
+,,,,,pogrupis,ref,KenkejoPogrupis,,,4,open,,Susijęs kenkėjo pogrupis,
+,,,,,pavadinimas,string,,,,3,open,,Kenkėjo pavadinimas,
+,,,,,kodas,string,,,,3,open,,Kenkėjo kodas,
+,,,,,,,,,,,,,,
+,,,,SanitarineApzvalga,,,,,,4,,,,
+,,,,,vyk_data,datetime,T,,,4,open,,Įrašo sukūrimo data ir laikas,
+,,,,,vieta,ref,Vieta,,,4,open,,Naudotojo pasirinkta vieta (medelynas arba miškas),
+,,,,,tipas,ref,Tipas,,,4,open,,Pasirinktas pildymo tipas (židinių registravimas arba profilaktinių priemonių registravimas),
+,,,,,plotas,number,ha,,,4,open,,,Suminis sklypų plotas
+,,,,,kenkejas,ref,Kenkejas,,,4,open,,,Kenkėjas
+,,,,,pazeidimo_kiekis_proc,number,%,,,4,open,,,Pažeidimo kiekis procentais
+,,,,,pazeidimo_kiekis,number,,,,3,open,,,Pažeidimo kiekis
+,,,,,pazeidimo_laipsnis,number,%,,,4,open,,,Pažeidimo laipsnis
+,,,,,priemones,ref,Priemone,,,4,open,,,Naudota priemonė
+,,,,,priemones_kiekis,number,,,,3,open,,,Priemonės kiekis
+,,,,,priemones_plotas,number,ha,,,4,open,,,"Plotas, kuriame panaudota priemonė"
+,,,,,preparatas,ref,Preparatas,,,4,open,,,Preparatas
+,,,,,sunaudotas_preparatas,number,,,,3,open,,,Kiek preparato sunaudota
+,,,,,savininkas,ref,Savininkas,,,4,open,,,Miško savininkas/naudotojas 
+,,,,,atnaujinta,datetime,T,,,4,open,,,Atnaujinimo data
+,,,,,kadastrinis_nr,string,,,,3,open,,,Kadastro numeris
+,,,,,vietove_pav,string,,,,2,open,,,Regioninis padalinys / girininkija / kvartalas / sklypo nr. ir jo dalis (jei yra)
