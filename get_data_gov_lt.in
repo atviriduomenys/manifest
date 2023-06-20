@@ -223,6 +223,7 @@ datasets/gov/vlk/israsytos_saskaitos_es.csv
 datasets/gov/vlk/cp_endoprotezai.csv
 datasets/gov/vlk/prisirase_pcs.csv
 datasets/gov/vlk/dpsdr_draudziamieji.csv
+datasets/gov/vlk/intervencijos.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -276,6 +277,7 @@ datasets/gov/miskai/leidimai.csv
 datasets/gov/miskai/pvp.csv
 datasets/gov/miskai/sanitarine.csv
 datasets/gov/miskai/vmp.csv
+datasets/gov/miskai/sekline.csv
 datasets/gov/migracija/prieglobscio_suteikimas.csv
 datasets/gov/vstt/saugojamos_rusys.csv
 datasets/gov/vstt/saugomu_ter_kadastras.csv
