@@ -12,5 +12,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""tel_nr[]"", type: ""array"", source: ""Tel_nr"")",1,,spinta:161,,
 ,,,,,email,string,,,,2,open,,Ūkio subjekto kontaktinis el. paštas,
 ,,,,,,comment,property,,"update(property: ""email[]"", type: ""array"", source: ""Email"")",4,,spinta:161,,
-,,,,,adresas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,3,open,,Ūkio subjekto adresas,
+,,,,,adresas,string,,,,2,open,,Ūkio subjekto adresas,
 ,,,,,trasa,string,,,,1,open,,Trąšos ir/arba dirvožemio gerinimo priemonės pavadinimas,
