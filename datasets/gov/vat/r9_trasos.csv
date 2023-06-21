@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Produktas,,,id,,,4,open,,"Pateikiama informacija apie produkto tipą, pavadinimą, galiojimo datą (ūkio subjekto pavadinimas, kontaktinė informacija)",
 ,,,,,id,string,,,,4,open,,Identifikacinis stulpelis,
-,,,,,kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Ūkio subjekto JAR kodas,
+,,,,,kodas,string,,,,2,open,,Ūkio subjekto JAR kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Ūkio subjekto pavadinimas,
 ,,,,,pateikimas,date,D,,,4,open,,Pateikimo data,
 ,,,,,tel_nr,string,,,,1,open,,Ūkio subjektas telefono numeris,
