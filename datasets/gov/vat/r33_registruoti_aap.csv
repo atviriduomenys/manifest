@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Produktas,,,id,,,4,open,,"Pateikiama informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus (pavadinimas, registracijos Nr., registracijos galiojimo data, veikliosios medžiagos,klasifikavimas, ženklinimas, naudojimo reglamentas, patvirtinta etiketė, direktoriaus įsakymas, kuriuo registruota/keista registracija augalų apsaugos produktas)",
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,produktas,string,,,,4,open,,Bendroji informacija - AAP pavadinimas,
-,,,,,savininkas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Bendroji informacija - AAP registracijos savininkas,Nuoroda į Ūkio subjektą (savininką)
+,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija.Nuoroda į Ūkio subjektą (savininką)
 ,,,,,atstovas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Bendroji informacija - AAP registracijos savininko atstovas,Nuoroda į Ūkio subjektą (atstovą)
 ,,,,,registracijos_nr,date,D,,,4,open,,Registracijos duomenys - Registravimo Nr. Lietuvoje,
 ,,,,,registracijos_data_nuo,date,D,,,4,open,,Registracijos duomenys - AAP registracijos data,
