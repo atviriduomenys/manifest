@@ -3,66 +3,69 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Produktas,,,id,,,4,open,,"Pateikiama informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus (pavadinimas, registracijos Nr., registracijos galiojimo data, veikliosios medžiagos,klasifikavimas, ženklinimas, naudojimo reglamentas, patvirtinta etiketė, direktoriaus įsakymas, kuriuo registruota/keista registracija augalų apsaugos produktas)",
+,,,,Produktas,,,id,,,4,open,,Pateikiama informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus (pavadinimas,
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
-,,,,,produktas,string,,,,4,open,,Bendroji informacija - AAP pavadinimas,
-,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija.Nuoroda į Ūkio subjektą (savininką)
-,,,,,atstovas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_pavadinimas],,,2,open,,Bendroji informacija - AAP registracijos savininko atstovas,Nuoroda į Ūkio subjektą (atstovą)
-,,,,,registracijos_nr,date,D,,,4,open,,Registracijos duomenys - Registravimo Nr. Lietuvoje,
-,,,,,registracijos_data_nuo,date,D,,,4,open,,Registracijos duomenys - AAP registracijos data,
-,,,,,registracijos_data_iki,date,D,,,4,open,,Registracijos duomenys - AAP registracijos pabaigos data,
-,,,,,pasibaigus_registracijai_naudoti_iki,date,D,,,4,open,,Registracijos duomenys  - Pasibaigus registracijai naudoti iki,
-,,,,,pasibaigus_registracijai_prekiauti_iki,date,D,,,4,open,,Registracijos duomenys  - Pasibaigus registracijai prekiauti iki,
-,,,,,veiklioji_medziaga_aprasymas,string,,,,2,open,,Veiklioji medžiaga - Cheminė medžiaga / Mikroorganizmas,Cheminės medžiagos / Mikroorganizmo suformuotas aprašymas
-,,,,,veiklioji_medziaga,string,,,,4,open,,Veiklioji medžiaga - Cheminė medžiaga / Mikroorganizmas,
-,,,,,veikimo_grupe,string,,,,2,open,,Bendroji informacija - Veikimo grupė,Veikimo grupių suformuotas aprašymas
-,,,,,kodas,string,,,,1,open,,Bendroji informacija - AAP kodas,
-,,,,,aap_tipas,string,,,,4,open,,Bendroji informacija - AAP tipas,
+,,,,,produktas,string,,,,4,open,,AAP pavadinimas,Bendroji informacija 
+,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
+,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
+,,,,,registracijos_nr,date,D,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
+,,,,,regstracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
+,,,,,registracijos_pradzia,date,D,,,4,open,,AAP registracijos data,Registracijos duomenys 
+,,,,,registracijos_pabaiga,date,D,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
+,,,,,naudoti_iki,date,D,,,4,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
+,,,,,prekiauti_iki,date,D,,,4,open,,Pasibaigus registracijai prekiauti iki,Registracijos duomenys  
+,,,,,medziagos_aprasymas,string,,,,2,open,,Cheminė medžiaga / Mikroorganizmas,Cheminės medžiagos / Mikroorganizmo suformuotas aprašymas
+,,,,,veiklioji_medziaga,string,,,,4,open,,Cheminė medžiaga / Mikroorganizmas,
+,,,,,,enum,,,"""Cheminė medžiaga""",,,,,
+,,,,,,,,,"""Mikroorganizmas""",,,,,
+,,,,,veikimo_grupe,string,,,,3,open,,Veikimo grupė,Veikimo grupių suformuotas aprašymas
+,,,,,aap_tipas,string,,,,4,open,,Augalų apsaugos produkto tipas,
 ,,,,,,enum,,,"""CHEMINIS""",,,,,
 ,,,,,,,,,"""MIKROBIOLOGINIS""",,,,,
-,,,,,pritaikymas,string,,,,2,open,,Numatomi naudojimai (GAP) - Lietuviškas augalo pavadinimas,
-,,,,,kenksmingas_organizmas,string,,,,2,open,,Numatomi naudojimai (GAP) - Lietuviški kenksmingųjų organizmų pavadinimai,
-,,,,,numatomas_naudojimas,string,,,,4,open,,Numatomi naudojimai (GAP) - Naudotojas,
+,,,,,augalas,string,,,,3,open,,Lietuviškas augalo pavadinimas,Numatomi naudojimai (GAP) 
+,,,,,kenksmingas_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai,Numatomi naudojimai (GAP) 
+,,,,,numatomas_naudojimas,string,,,,4,open,,Naudotojas,Numatomi naudojimai (GAP) 
 ,,,,,,enum,,,"""PROFESIONALIAJAM_NAUDOJIMUI""",,,,,
 ,,,,,,,,,"""NEPROFESIONALIAJAM_NAUDOJIMUI""",,,,,
-,,,,,naudojimo_budas,string,,,,2,open,,Numatomi naudojimai (GAP) - Naudojimo būdas,Naudojimo būdų suformuotas aprašymas
-,,,,,naudojimo_plotas,string,,,,4,open,,Numatomi naudojimai (GAP) - Maži / dideli plotai,
+,,,,,naudojimo_budas,string,,,,2,open,,Naudojimo būdas,Naudojimo būdų suformuotas aprašymas
+,,,,,naudojimo_plotas,string,,,,4,open,,Maži / dideli plotai,Numatomi naudojimai (GAP)
 ,,,,,,enum,,,"""DIDELIAIS_PLOTAIS""",,,,,
 ,,,,,,,,,"""MAZAIS_PLOTAIS""",,,,,
-,,,,,produkto_forma,string,,,,3,open,,Bendroji informacija - Produkto forma,
-,,,,,platintojas,string,,,,2,open,,Bendroji informacija - Platinojas,
-,,,,,pakuote,string,,,,2,open,,Bendroji informacija - Produkto pakuotės,
-,,,,,pastaba,string,,,,2,open,,Bendroji informacija - Pastabos ,
-,,,,,medz_mikro_cas,string,,,,2,open,,Veiklioji medžiaga - Medžiagos CAS Nr. / Mikroorganizmo Nr.,
-,,,,,veikl_medz_kiekis,string,,,,2,open,,Veiklioji medžiaga - Veikliosios medžiagos kiekis,
-,,,,,veikl_medz_mat_vnt,string,,,,4,open,,Veiklioji medžiaga - Matavimo vienetai,
-,,,,,klasifikavimas,string,,,,2,open,,Klasifikavimas ir etiketė - Klasifikavimas,
-,,,,,pavojaus_fraze,string,,,,2,open,,Klasifikavimas ir etiketė - Pavojaus frazė,
-,,,,,ghs_piktograma,string,,,,2,open,,Klasifikavimas ir etiketė - GHS piktograma,
-,,,,,atsargumo_fraze,string,,,,2,open,,Klasifikavimas ir etiketė - Atsargumo frazės,
-,,,,,signalinis_zodis,string,,,,4,open,,Klasifikavimas ir etiketė - Signalinis žodis,
+,,,,,produkto_forma,string,,,,3,open,,Produkto forma,Bendroji informacija 
+,,,,,platintojas,string,,,,1,open,,Platinojas,Bendroji informacija 
+,,,,,pakuote,string,,,,1,open,,Produkto pakuotės,Bendroji informacija 
+,,,,,pastaba,string,,,,2,open,,Pastabos ,Bendroji informacija 
+,,,,,medz_cas_nr,string,,,,4,open,,Medžiagos CAS Nr. / Mikroorganizmo Nr.,Veiklioji medžiaga 
+,,,,,veikl_medz_kiekis,string,,,,2,open,,Veikliosios medžiagos kiekis,Veiklioji medžiaga 
+,,,,,matavimo_vienetai,string,,,,2,open,,Veikliosios medžiagos matavimo vienetai,Veiklioji medžiaga 
+,,,,,klasifikavimas,string,,,,2,open,,Klasifikavimas ir etiketė ,
+,,,,,pavojaus_fraze,string,,,,2,open,,Pavojaus frazė,Klasifikavimas ir etiketė 
+,,,,,ghs_piktograma,string,,,,2,open,,GHS piktograma,Klasifikavimas ir etiketė 
+,,,,,atsargumo_fraze,string,,,,2,open,,Atsargumo frazės,Klasifikavimas ir etiketė 
+,,,,,signalinis_zodis,string,,,,4,open,,Signalinis žodis,Klasifikavimas ir etiketė 
 ,,,,,,enum,,,"""Atsargiai""",,,,,
 ,,,,,,,,,"""Pavojinga""",,,,,
 ,,,,,,,,,"""Be signalinio žodžio""",,,,,
-,,,,,papildomas_sakinys,string,,,,2,open,,Klasifikavimas ir etiketė - Papildomas sakinys,
-,,,,,tipas,string,,,,4,open,,Numatomi naudojimai (GAP) - Tipas,
+,,,,,papildomas_sakinys,string,,,,2,open,,Papildomas sakinys,Klasifikavimas ir etiketė 
+,,,,,tipas,string,,,,4,open,,Tipas,Numatomi naudojimai (GAP) 
 ,,,,,,enum,,,,,,,,
 ,,,,,,,,,"""CHEMINE_MEDZIAGA""",,,,,
 ,,,,,,,,,"""MIKOORGANIZMAS""",,,,,
 ,,,,,,,,,"""PREPARATAS_SEKLU_APDOROJIMUI""",,,,,
-,,,,,naudojimo_tipas,string,,,,3,open,,Numatomi naudojimai (GAP) - Naudojimo tipas,
-,,,,,naudojimo_laikas,string,,,,2,open,,Numatomi naudojimai (GAP) - Naudojimo laikas,
-,,,,,augalo_eppo,string,,,,2,open,,Numatomi naudojimai (GAP) - Lotyniškas augalo pavadinimas ir EPPO kodas,
-,,,,,lt_pavadinimas,string,,,,2,open,,Numatomi naudojimai (GAP) - Lietuviškas augalo pavadinimas (papildomas),
-,,,,,kenks_org_eppo,string,,,,2,open,,Numatomi naudojimai (GAP) - Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,
-,,,,,kenks_organizmas,string,,,,2,open,,Numatomi naudojimai (GAP) - Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),
-,,,,,naudojimu_sk,string,,,,2,open,,Numatomi naudojimai (GAP) - Didžiausias naudojimų skaičius,
-,,,,,maziausias_intervalas,string,,,,2,open,,Numatomi naudojimai (GAP) - Mažiausias intervalas tarp naudojimų (dienomis),
-,,,,,naudojimo_norma,string,,,,2,open,,Numatomi naudojimai (GAP) - Naudojimo norma,
-,,,,,normos_vnt,string,,,,2,open,,Numatomi naudojimai (GAP) - Naudojimo normos vnt.,
-,,,,,vandens_kiekis,string,,,,2,open,,Numatomi naudojimai (GAP) - Vandens kiekis l/ha,
-,,,,,islaukos_periodas,string,,,,2,open,,Numatomi naudojimai (GAP) - Karencijos laikotarpis dienomis,
-,,,,,naudojimo_pastaba,string,,,,2,open,,Numatomi naudojimai (GAP) - Pastabos,
-,,,,,naudojimo_apribojimas,string,,,,2,open,,Numatomi naudojimai (GAP) - Naudojimo apribojimai,
-,,,,,reglamento_keitimas,date,D,,,4,open,,Registracijos duomenys - AAP reglamento keitimo data,
-,,,,,isakymo_registravimas,date,D,,,4,open,,Registracijos duomenys - VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,
+,,,,,naudojimo_tipas,string,,,,3,open,,Naudojimo tipas,Numatomi naudojimai (GAP) 
+,,,,,naudojimo_laikas,string,,,,2,open,,Naudojimo laikas,Numatomi naudojimai (GAP) 
+,,,,,augalo_eppo,string,,,,2,open,,Lotyniškas augalo pavadinimas ir EPPO kodas,Numatomi naudojimai (GAP) 
+,,,,,augalas_pap,string,,,,2,open,,Lietuviškas augalo pavadinimas (papildomas),Numatomi naudojimai (GAP) 
+,,,,,kenksm_org_eppo,string,,,,2,open,,Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,Numatomi naudojimai (GAP) 
+,,,,,kenksm_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),Numatomi naudojimai (GAP) 
+,,,,,naudojimu_sk,string,,,,2,open,,Didžiausias naudojimų skaičius,Numatomi naudojimai (GAP) 
+,,,,,naudojimu_intervalas,string,,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
+,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
+,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
+,,,,,vandens_kiekis,string,,,,2,open,,Vandens kiekis l/ha,Numatomi naudojimai (GAP) 
+,,,,,karencijos_laikotarpis,string,,,,2,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
+,,,,,naudojimo_pastaba,string,,,,2,open,,Pastabos,Numatomi naudojimai (GAP) 
+,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
+,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
+,,,,,isakymo_registravimas,date,D,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
+,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys 
