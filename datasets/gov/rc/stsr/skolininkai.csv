@@ -3,6 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Skolininkas,,,st_nr,,,2,,,"Duomenys apie įkeitimo ir hipotekos sandorių skolininkus (skolininko tipą, amžių, formą sandorių rūšis, sudarymo vietas, vertes, terminus)",
+,,,,,skolininko_id,integer,,,,2,open,,Skolininko dirbtinis identifikatorius šiame duomenų rinkinyje,
 ,,,,,st_nr,integer,,,,2,open,,Hipotekos / įkeitimo dirbtinis identifikatorius šiame duomenų rinkinyje,
 ,,,,,amnt_grupe,string,,,,4,open,,Skolininko asmens tipo grupė,
 ,,,,,,enum,,,"""FA""",,,,Fizinis asmuo,
@@ -47,4 +48,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,imones,integer,,,,4,open,,Ar žmonės hipoteka  (1 - taip; 0 - ne),
 ,,,,,,enum,,,0,,,,Ne,
 ,,,,,,,,,1,,,,Taip,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

@@ -5,4 +5,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,string,,,,4,open,,Gyventojų registro civilinės būklės akto įrašo rūšies kodas,
 ,,,,,aprasymas,string,,,,3,open,,Gyventojų registro civilinės būklės akto įrašo rūšies aprašymas,
 ,,,,,kodo_kodas,string,,,,4,open,,Gyventojų registro civilinės būklės akto įrašo rūšies kodo kodas,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

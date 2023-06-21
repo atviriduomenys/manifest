@@ -7,8 +7,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastato_id,integer,,,,4,open,,Pastato identifikatorius,"Pastato, kuriam priklauso patalpos, identifikatorius šiame duomenų rinkinyje"
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,"Savivaldybės, kurioje yra patalpos / butas, pavadinimas"
 ,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,"Savivaldybėje esančios seniūnijos, kurioje yra patalpos / butas, pavadinimas"
-,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,,,Objekto tipas,Objekto (patalpų / buto) tipas
-,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,,,Paskirties tipas ,Objekto (patalpų / buto) paskirtis
+,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,open,,Objekto tipas,Objekto (patalpų / buto) tipas
+,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas ,Objekto (patalpų / buto) paskirtis
 ,,,,,stat_pradzios_metai,integer,,,,3,open,,Statybos pradžios metai,Objekto (patalpų / buto) statybos pradžios metai
 ,,,,,stat_pabaigos_metai,integer,,,,3,open,,Statybos pabaigos metai,Objekto (patalpų / buto) statybos užbaigimo metai
 ,,,,,rekonstr_pradzios_metai,integer,,,,3,open,,Rekonstrukcijos pradžios metai,Objekto (patalpų / buto) rekonstrukcijos pradžios metai

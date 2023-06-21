@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vien_kodas,ref,/datasets/gov/rc/ntr/ntr_kiti_klasifikatoriai/NtrMatavimoVnt,,,4,open,,Matavimo vieneto kodas,
 ,,,,,atri_koef,number,,,,4,open,,Koeficientas,
 ,,,,,atri_poz,ref,NtrAtributoPozymis,,,4,open,,Formatavimo požymis,
-,,,,,atri_formatas,integer,,,,3,open,,Įvedimo formatas,
+,,,,,atri_formatas,string,,,,3,open,,Įvedimo formatas,
 ,,,,,atri_koregavimo_data,datetime,S,,,4,open,,Įrašo koregavimo data,
 ,,,,,atri_pav_en,string,,,,3,open,,Pavadinimas angliškai,
 ,,,,,atri_pav_i_en,string,,,,3,open,,Pavadinimas (ilgas) angliškai,

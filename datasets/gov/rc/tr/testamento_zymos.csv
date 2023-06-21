@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,zyma_id,integer,,,,4,open,,Žymos identifikavimo kodas šiame duomenų rinkinyje,
 ,,,,,zyma_tipas,ref,/datasets/gov/rc/tr/tr_klasifikatoriai/TrZyma,,,4,open,,Žymos tipas,
 ,,,,,zyma_data,string,,,,3,open,,Žymos įregistravimo laikotarpis (metai-ketvirtis),
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/intervencijos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Etapas,,,,,,4,,,Stacionarinio gydymo etapai,"Informacija apie stacionarinio gydymo etapus, kurių metu atliktos medicininės intervencijos"
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,"Įstaigos, kuri suteikė paslaugas, ID"
+,,,,,d_chir,string,,,,4,open,,Dienos chirurgija,"„T“ žymima, jei suteikta paslauga atitinka dienos chirurgijos teikimo reikalavimus, kitu atveju žymima „N“"
+,,,,,,enum,,,"""Ne""",,,,,
+,,,,,,,,,"""Taip""",,,,,
+,,,,,etapo_tipas,string,,,,4,open,,Etapo tipas,Etapo tipas (gydymo rūšis)
+,,,,,,enum,,,"""Aktyvus gydymas""",,,,,
+,,,,,,,,,"""Reabilitacija""",,,,,
+,,,,,,,,,"""Ilgalaikis gydymas""",,,,,
+,,,,,,,,,"""Transplantacija""",,,,,
+,,,,,data,date,M,,,4,open,,Laikotarpis,"Laikotarpis, kurį baigėsi gydymo etapas (mėnesio tikslumu)"
+,,,,,,,,,,,,,,
+,,,,Intervencija,,,,,,4,,,"Medicininės intervencijos, atliktos taikant stacionarinį gydymą ar teikiant dienos chirurgijos paslaugas",
+,,,,,ref_sp_episode_id,ref,Etapas,,,4,open,,Nuoroda į Etapas,Etapo unikalus numeris
+,,,,,ref_sp_intervention_id,ref,/datasets/gov/vlk/achi/Intervencija,,,4,open,,ACHI kodas,Procedūros (ACHI) kodas pagal Australijos medicininių intervencijų klasifikaciją
+,,,,,pagr_intervencija,integer,,,,4,open,,Pagrindinė intervencija,"Nurodoma ar intervencija etape pažymėta, kaip pagrindinė"

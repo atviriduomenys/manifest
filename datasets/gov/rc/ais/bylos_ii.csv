@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Nenustatyta""",,,,Kai skolininko amžiaus grupės amžius nenurodytas ,
 ,,,,,bylu_kiekis,integer,,,,3,open,,Vykdomų bylų kiekis (sugrupuota pagal skolininko tipą ir skolininko amžiaus grupę),
 ,,,,,skolu_suma,integer,,,,3,open,,Vykdomų bylų bendra skolų suma (sugrupuota pagal asmens tipą ir asmens amžiaus grupę),
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

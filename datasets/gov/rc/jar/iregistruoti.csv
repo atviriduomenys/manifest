@@ -12,4 +12,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Formos pavadinimas,
 ,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Statuso pavadinimas,
 ,,,,,stat_data,date,D,,,4,open,,Statuso įgijimo data,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų publikavimo data,

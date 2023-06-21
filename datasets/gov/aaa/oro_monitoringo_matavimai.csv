@@ -1,0 +1,22 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/oro_monitoringo_matavimai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Tyrimas,,,,,,2,,,Tyrimai,
+,,,,,tad_laikotarpis_nuo,date,D,,,4,open,,Tyrimo laikotarpis nuo,
+,,,,,tad_laikotarpis_iki,date,D,,,4,open,,Tyrimo laikotarpis iki,
+,,,,,tad_tiriamas_objektas,string,,,,3,open,,Tiriamas objektas,
+,,,,,tad_gis_taskas,"geometry(point, 3346)",,,,3,open,,Tyrimo vieta,
+,,,,,tsd_tyrimo_tipas,string,,,,3,open,,Tyrimo sudedamosios tipas,CHE - Cheminiai tyrimai
+,,,,,trz_neapibr,number,,,,3,open,,"Parametras, apibrėžiantis tyrimo rezultato tikslumą",
+,,,,,trz_rez_skaitinis,number,,,,3,open,,Skaitinis tyrimo rezultatas,
+,,,,,mvn_kodas,string,,,,3,open,,Matavimo vieneto kodas,
+,,,,,mvn_pavad,string,,,,3,open,,Matavimo vieneto pavadinimas,
+,,,,,ptm_kodas,string,,,,2,open,,Parametro kodas,Gali būti sutrumpintas parametro pavadinimas
+,,,,,ptm_pavad,string,,,,2,open,,Parametro pavadinimas,"Matavimo vienetai švinui - µg/m3 (mikrogramai), kitiems – ng/m3 (nanogramai)"
+,,,,,mtd_standartas,string,,,,2,open,,"Standartas, reglamentuojantis tyrimo atlikimą.",
+,,,,,mtd_metodo_principas,string,,,,2,open,,"Principo, kuriuo pagrįstas metodas, įvardinimas",
+,,,,,vkl_pavad,string,,,,3,open,,Veiklos pavadinimas,
+,,,,,ttr_pavad,string,,,,4,open,,Tyrimų terpės pavadinimas,
+,,,,,,enum,,,"""Aplinkos oras""",,,,Aplinkos oras,
+,,,,,,,,,"""Išorinė spinduliuotė""",,,,Išorinė spinduliuotė,
+,,,,,,,,,"""Aerozolinis filtras (stiklo pluošto)""",,,,Aerozolinis filtras (stiklo pluošto),
