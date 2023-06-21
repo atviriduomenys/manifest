@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Unikalus įrašo ID,
 ,,,,,sukurta,date,D,,,4,open,,Įrašo sukūrimo data,
 ,,,,,atnaujinta,date,D,,,4,open,,Įrašo atnaujinimo data,
-,,,,,ja_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_kodas],,,3,open,,Juridinio asmens (toliau – JA) kodas,
+,,,,,ja_kodas,string,,,,2,open,,Juridinio asmens (toliau – JA) kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,JA pavadinimas,
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[sav_kodas],,,3,open,,"Savivaldybės, kurioje registruotas JA, kodas",
 ,,,,,nepriemoka,number,,,,2,open,,JA mokestinės nepriemokos suma iš viso,
