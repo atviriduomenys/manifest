@@ -411,6 +411,7 @@ datasets/gov/vmvt/kontroles_subjektai.csv
 datasets/gov/ntakd/patikrinimo_planai.csv
 datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
+datasets/gov/vat/r33_registruoti_aap.csv
 datasets/gov/vmi/ja_nepriemokos.csv
 datasets/gov/aaa/oro_monitoringo_matavimai.csv
 datasets/gov/finmin/sutartys.csv
@@ -433,3 +434,5 @@ datasets/gov/vat/r8_fitosanitarijos_tikrinimai.csv
 datasets/gov/ntb/pacientu_valios_pareiskimai.csv
 datasets/gov/vat/r9_trasos.csv
 datasets/gov/aad/ukio_subjektu_patikrinimai.csv
+datasets/gov/vat/r11_agrochemijos_patikrinimai.csv
+datasets/gov/ird/administraciniai_nusizengimai.csv
