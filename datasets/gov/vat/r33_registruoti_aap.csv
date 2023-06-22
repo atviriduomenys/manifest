@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
 ,,,,,registracijos_nr,date,D,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
-,,,,,regstracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
+,,,,,registracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
 ,,,,,registracijos_pradzia,date,D,,,4,open,,AAP registracijos data,Registracijos duomenys 
 ,,,,,registracijos_pabaiga,date,D,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
 ,,,,,naudoti_iki,date,D,,,4,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
