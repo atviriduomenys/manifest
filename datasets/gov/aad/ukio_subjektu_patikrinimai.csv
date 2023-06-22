@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,valdyba_dep,string,,,,4,open,,"Valdyba, departamentas",
 ,,,,,padalinys,string,,,,4,open,,Padalinys,
 ,,,,,akto_tipas,string,,,,3,open,,Akto dokumento tipas,
-,,,,,dok_registruotas,string,D,,,4,open,,Dokumento registravimo data,
+,,,,,dok_registruotas,date,D,,,4,open,,Dokumento registravimo data,
 ,,,,,planinis,boolean,,,,4,open,,Ar patikrinimas planinis,
 ,,,,,objekto_tipas,string,,,,4,open,,Objekto tipas,
 ,,,,,,enum,,,"""Ūkio subjektas""",,,,,
