@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ird/administraciniai_nusizengimai,,,,,,,,,,,,Statistiniai duomenys apie Administracinių nusižengimų kodekso nustatyta tvarka užfiksuotus administracinius nusižengimus,
+,,,,,,,,,,,,,,
+,,,,Administracinis,,,,,,3,,,Administracinių nusižengimų detali mėnesinė statistika,"Administracinių nusižengimų registro (ANR) mėnesiniai statistiniai duomenys apie registruotus administracinius nusižengimus. Nusižengimų skaičiai pateikiami Administracinių nusižengimų kodekso (ANK) straipsnio bei registracijos mėnesio detalumu. Vieno nusižengimo sudėtyje gali būti keli ANK straipnsniai, todėl stulpelio „count“ negalima sumuoti. Prasminga yra skaičiuoti „count“/“total“ santykį."
+,,,,,month,date,M,,,4,open,,Mėnuo,"Ataskaitinis kalendorinis mėnuo, kurio metu buvo užregistruoti administraciniai nusižengimai"
+,,,,,count ,integer,U,,,4,open,,Konkrečių nusižengimų,"Kiek unikalių, konkretų ANK straipsnį savo sudėtyje turinčių nusižengimų buvo užregistruota per ataskaitinį mėnesį"
+,,,,,total ,integer,U,,,4,open,,Nusižengimų iš viso,Kiek unikalių nusižengimų iš viso buvo užregistruota per ataskaitinį mėnesį
+,,,,,skyrius ,string,,,,4,open,,ANK skyrius,Administracinių nusižengimų kodekso skyrius
+,,,,,straipsnis ,string,,,,4,open,,ANK straipsnis,Administracinių nusižengimų kodekso straipsnis
+,,,,,skyrius_akr,string,,,,2,open,,ANK skyriaus akronimas,Sutrumpintas ANK skyriaus pavadinimas
+,,,,,straipsnis_akr,string,,,,2,open,,ANK straipsnio akronimas,Sutrumpintas ANK straipsnio pavadinimas
