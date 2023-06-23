@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,produktas,string,,,,4,open,,AAP pavadinimas,Bendroji informacija 
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
-,,,,,registracijos_nr,date,D,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
+,,,,,registracijos_nr,string,,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
 ,,,,,registracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
 ,,,,,registracijos_pradzia,date,D,,,4,open,,AAP registracijos data,Registracijos duomenys 
 ,,,,,registracijos_pabaiga,date,D,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
@@ -68,4 +68,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
 ,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
 ,,,,,isakymo_registravimas,date,D,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
-,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys 
+,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys
