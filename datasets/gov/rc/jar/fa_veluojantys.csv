@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens formos kodas,
 ,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinio statuso kodas,
 ,,,,,veluojantis_iki,date,D,,,4,open,,"Metai, už kuriuos juridinio asmens pateikta paskutinė finansinė ataskaita",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

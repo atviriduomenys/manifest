@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ssva/vadovu_atestatai,,,,,,,,,,,,Statinio statybos techninės veiklos pagrindinių sričių vadovų kvalifikacijos atestatų ir teisės pripažinimo dokumentų registras,
+,datasets/gov/ssva/vadovu_atestatai,,,,,,,,,,,,Duomenys apie statinio statybos techninės veiklos pagrindinių sričių vadovų kvalifikacijos atestatus ir teisės pripažinimo dokumentus (fiziniai asmenys),
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,

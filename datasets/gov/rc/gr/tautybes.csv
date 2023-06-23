@@ -2,7 +2,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rc/gr/tautybes,,,,,,,,,,,,Gyventojų registro tautybių klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Tautybe,,,nr,,,4,,,Gyventojų registro tautybių klasifikatorius,
-,,,,,nr,string,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,mot_tautybe,string,,,,3,open,,Tautybės pavadinimas (mot.),
 ,,,,,vyr_tautybe,string,,,,3,open,,Tautybės pavadinimas (vyr.),
-,,,,,formatavimo_data,date,D,,,4,open,,Duomenų formavimo data,

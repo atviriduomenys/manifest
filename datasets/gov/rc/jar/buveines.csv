@@ -3,6 +3,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Buveine,,,juridinis_asmuo,,,4,,,,
 ,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas iš juridinių asmenų registro,
-,,,,,adreso_taskas,ref,/datasets/gov/rc/ar/adresotaskas/AdresoTaskas,,,4,open,,Adreso kodas iš adresų registro,
+,,,,,adresas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,Adreso kodas (išorinis LR AR),
 ,,,,,adresas_nuo,date,D,,,4,open,,Juridinio asmens adreso įrašymo į juridinių asmenų registro įrašą data,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

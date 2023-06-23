@@ -5,4 +5,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,vardas,string,,,,3,open,,Moters vardas,
 ,,,,,viso_vardas,integer,U,,,4,open,,"Moterų, gimusių nuo 1900 m. ir kurioms suteiktas toks vardas, skaičius",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

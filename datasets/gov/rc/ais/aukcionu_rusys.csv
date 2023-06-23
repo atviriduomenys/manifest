@@ -4,6 +4,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,AukcionoRusis,,,nr,,,4,,,Antstolių informacinėje sistemoje (AIS) esančių aukcionų ir elektroninių varžytynių rūšių duomenys,
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
 ,,,,,aukciono_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/AukcionoTipas,,,4,open,,Varžytynių / aukcionų tipo kodas iš AIS varžytynių ir aukcionų tipų klasifikatoriaus,
-,,,,,kiek_paskelbta,integer,,,,3,open,,"Bendras paskelbtų varžytinių, aukcionų kiekis",
-,,,,,kiek_ivyko,integer,,,,3,open,,"Bendras įvykusių varžytinių, aukcionų kiekis",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,,kiek_paskelbta,string,,,,3,open,,"Bendras paskelbtų varžytinių, aukcionų kiekis",
+,,,,,kiek_ivyko,string,,,,3,open,,"Bendras įvykusių varžytinių, aukcionų kiekis",

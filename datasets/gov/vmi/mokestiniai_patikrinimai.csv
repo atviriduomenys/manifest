@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/sprendimai,,,,,,,,,,,,Mokestinių patikrinimų metu juridiniams asmenims priskaičiuotos sumos,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Sprendimas,,,,,,2,,,Mokestinių patikrinimų metu juridiniams asmenims priskaičiuotos sumos,
+,,,,,evrk,ref,/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis[kodas],,,4,open,,Ekonominės veiklos rūšies kodas,
+,,,,,metai,integer,,,,2,open,,Patikrinimo metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
+,,,,,mm_skaicius,integer,U,,,4,open,,Mokesčių mokėtojų skaičius,
+,,,,,suma_akc,number,,,,2,open,,Akcizo suma,"Sprendimo dėl akcizo mokesčio suma,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,suma_pln,number,,,,2,open,,Pelno mokesčio suma,"Sprendimo dėl pelno mokesčio suma,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,suma_pvm,number,,,,2,open,,Pridėtinės vertės mokesčio suma,"Sprendimo dėl pridėtinės vertės mokesčio suma,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,suma_gpm,number,,,,2,open,,Gyventojų pajamų mokesčio suma,"Sprendimo dėl gyventojų pajamų mokesčio suma,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,suma_kiti,number,,,,2,open,,Kitų mokesčių suma,"Sprendimo dėl kitų mokesčių suma,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
+,,,,,suma_viso,number,,,,2,open,,Sprendimo suma,"Sprendimo suma iš viso,įskaitant delspinigius ir baudas"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,

@@ -1,10 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/gr/berniuku_vardai,,,,,,,,,,,,"Populiariausi berniukų vardai Lietuvoje, TOP 20 (berniuko vardas, gimimo metai, bendravardžių kiekis)",
 ,,,,,,,,,,,,,,
-,,,,BerniukoVardas,,,nr,,,4,,,"Populiariausi berniukų vardai Lietuvoje, TOP 20 (berniuko vardas, gimimo metai, bendravardžių kiekis)",
+,,,,BerniukoVardas,,,"gimimo_metai, gimimo_ketvirtis, nr",,,4,,,"Populiariausi berniukų vardai Lietuvoje, TOP 20 (berniuko vardas, gimimo metai, bendravardžių kiekis)",
 ,,,,,nr,integer,,,,4,open,,"Vardo eilės numeris šiame rinkinyje (pagal populiarumą, 1 - populiariausias);",
 ,,,,,vardas,string,,,,3,open,,Berniuko vardas,
 ,,,,,viso_vardas,integer,U,,,4,open,,Skaičius vardo (iš viso nurodytu laikotarpiu) įrašyto į Gyventojų registrą (bendravardžių kiekis),
 ,,,,,gimimo_metai,integer,,,,2,open,,Gyventojo gimimo datos metai,
 ,,,,,gimimo_ketvirtis,string,,,,2,open,,Gyventojo gimimo datos ketvirtis,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

@@ -9,5 +9,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paskelbimo_ketvirtis,integer,,,,3,open,,Varžytynių / aukcionų paskelbimo ketvirtis,
 ,,,,,turto_potipis,ref,/datasets/gov/rc/ais/klasifikatoriai/TurtoPotipis,,,4,open,,Turto potipio kodas iš AIS parduodamo turto potipių klasifikatoriaus,
 ,,,,,turto_tipas,ref,/datasets/gov/rc/ais/klasifikatoriai/TurtoTipas,,,4,open,,Turto tipo kodas iš AIS parduodamo turto tipų klasifikatoriaus,
-,,,,,turto_vienetu_kiekis,integer,,,,3,open,,Bendras varžytinėse / aukcionuose parduodamo turto vienetų kiekis,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
+,,,,,turto_vienetu_kiekis,string,,,,3,open,,Bendras varžytinėse / aukcionuose parduodamo turto vienetų kiekis,

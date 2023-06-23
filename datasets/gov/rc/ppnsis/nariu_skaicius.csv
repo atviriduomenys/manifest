@@ -4,4 +4,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,politine_organizacija,ref,/datasets/gov/rc/ppnsis/politines_organizacijos/PolitineOrganizacija,,,4,open,,"Politinės organizacijos,  kaip juridinio asmens, kodas iš Juridinių asmenų registro",
 ,,,,,saraso_data,date,D,,,4,open,,Politinės organizacijos sąrašo pateikimo data,
 ,,,,,nariu_skaicius,integer,U,,,4,open,,Politinės organizacijos narių skaičius,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ssva/atestatu_pripazinimai,,,,,,,,,,,,"Statinio statybos ir ekspertizės rangovų atestatų, statinio statybos, ekspertizės rangovų ir projektuotojų teisės pripažinimo dokumentų registras",
+,datasets/gov/ssva/rangovu_atestatai,,,,,,,,,,,,"Duomenys apie statinio statybos ir ekspertizės rangovų atestatus, apie statinio statybos, ekspertizės rangovų ir projektuotojų teisės pripažinimo dokumentus (juridiniai asmenys)",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,

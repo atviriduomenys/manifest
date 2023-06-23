@@ -7,4 +7,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isieskojimo_dalykas,ref,/datasets/gov/rc/ais/busenu_dalyku_klasifikatorius/Dalykas,,,4,open,,Išieškojimo dalyko kodas iš AIS išieškojimo dalykų klasifikatoriaus,
 ,,,,,bylu_kiekis,string,,,,3,open,,Antstolių vykdomų bylų kiekis (sugrupuota pagal savivaldybę ir išieškojimo dalyką),
 ,,,,,skolu_suma,integer,,,,3,open,,Antstolių vykdomų bylų bendra išieškojimo  suma (sugrupuota pagal savivaldybę ir išieškojimo dalyką),
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

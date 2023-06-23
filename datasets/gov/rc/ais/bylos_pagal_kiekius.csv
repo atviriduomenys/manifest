@@ -15,4 +15,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Nenustatytas""",,,,kai skolininko tipas kaip asmens tipas nenurodytas,
 ,,,,,bylu_kiekis,string,,,,3,open,,"Vykdomų bylų kiekis (sugrupuotas pagal metus, savivaldybę ir asmens tipą)",
 ,,,,,skolu_suma,integer,,,,3,open,,"Vykdomų bylų bendra skolų suma (sugrupuota pagal metus, savivaldybę ir asmens tipą)",
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,

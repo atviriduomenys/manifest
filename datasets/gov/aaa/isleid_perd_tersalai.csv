@@ -66,9 +66,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,,,,,,,,,,
-,,,,ProductionFacilityReport,,,,,,4,,,,
-,,,,,localid,string,,,,4,open,,Gamybos įrengimų kompleksų duomenys,
-,,,,,namespace,string,,,,2,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,ProductionFacilityReport,,,,,,4,,,Gamybos įrengimų kompleksų duomenys,
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,namespace,string,,,,2,open,,Duomenis teikianti šalis,LT.CAED – Lithuanian Competent Authority for Environmental Data
 ,,,,,reportid,integer,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
 ,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

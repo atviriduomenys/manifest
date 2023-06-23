@@ -1,0 +1,36 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/hi/lovos,,,,,,,,,,,,"Stacionaro lovų skaičius ir jų veiklos rodikliai
+","Pagal asmens sveikatos priežiūros įstaigą, lovų specialybės grupes, savivaldybes"
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,istg_id,,,4,,,Įstaigos,
+,,,,,istg_id,string,,,,4,open,,Įstaigos ID,
+,,,,,ist_kodas,ref,/datasets/gov/vaspvt/licencijos/Istaiga[ja_kodas],,,3,open,,Įstaigos JAR kodas,
+,,,,,ist_pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
+,,,,Savivaldybe,,,kod,,,4,,,Savivaldybės,
+,,,,,kod,string,,,,3,open,,Savivaldybės kodas,
+,,,,,sav_pavadinimas,string,,,,2,open,,Savivaldybės pavadinimas,
+,,,,,sav_kodas,string,,,,2,open,,RC savivaldybės kodas,
+,,,,LovosProfilis,,,prof_kod,,,4,,,Lovų profiliai,
+,,,,,prof_kod,string,,,,4,open,,Lovos profillo kodas,
+,,,,,grupes_kodas,string,,,,4,open,,Lovos profilio grupės kodas,
+,,,,,prof_pavadinimas,string,,,,4,open,,Lovos profilio pavadinimas,
+,,,,,grupes_pavadinimas,string,,,,4,open,,Lovos profilio grupės pavadinimas,
+,,,,VeiklosRodiklis,,,,,,3,,,Lovos veiklos rodikliai,
+,,,,,metai,integer,yr,,,2,open,,Duomenų vedimo metai,
+,,,,,sav_kodas,ref,"Savivaldybe[sav_kodas]",,,4,open,,Savivaldybės kodas,
+,,,,,istg_id,ref,Istaiga,,,4,open,,Įstaigos ID,
+,,,,,tev_ist_id,ref,Istaiga,,,4,open,,Tėvinės įstaigos ID,
+,,,,,prof_kod,string,,,,4,open,,Lovos profilis,
+,,,,,grupes_kodas,string,,,,4,open,,Lovų profilių grupė,
+,,,,,lov,integer,U,,,4,open,,Lovų skaičius metų gale,Stacionaro lovų skaičius metų pabaigoje
+,,,,,vid_lov,number,U,,,4,open,,Vidutinis metinis lovų skaičius,Nustatomas vidutinę mėnesinę lovų skaičiaus sumą dalijant iš 12 arba metų kiekvienos dienos lovų skaičiaus sumą dalinant iš metų dienų skaičiaus (365 arba 366). Šis rodiklis parodo stacionaro lovų vidutinį skaičių per kalendorinius metus
+,,,,,hosp,integer,U,,,4,open,,Hospitalizuotų ligonių skaičius,"Pacientų, paguldytų į stacionarinio gydymo įstaigą (skyrių,)skaičius"
+,,,,,hosp_vaik,integer,U,,,4,open,,Iš hospitalizuotų 0-17 m. vaikai,"0-17 m. vaikų, paguldytų į stacionarinio gydymo įstaigą (skyrių), skaičius"
+,,,,,isr,integer,U,,,4,open,,Išrašyta ir perkelta ligonių,"Pacientai, išvykę iš stacionaro į namus arba perkelti į kitą gydymo įstaigą"
+,,,,,mire,integer,U,,,4,open,,Mirę ligoniai,
+,,,,,lovadieniai,integer,d,,,4,open,,Lovadieniai,"Kalendorinių dienų skaičius nuo paciento atvykimo į ligoninę iki jo išrašymo. Atvykimo ir išrašymo diena skaičiuojama kaip viena. Jei ligonis atvyko ir išsirašė tą pačią dieną, skaičiuojamas 1 lovadienis"
+,,,,,funk,number,d,,,4,open,,"Lovos funkcionavimas (užimtumas), dienomis","Parodo, kiek dienų per metus stacionaro lova buvo užimta, dienomis"
+,,,,,funk_proc,number,%,,,4,open,,"Lovos funkcionavimas (užimtumas), procentais","Parodo, kokią dalį (procentais) dienų per metus stacionaro lova buvo užimta"
+,,,,,vgl,number,d,,,4,open,,Vidutinis gulėjimo laikas,Vidutinė vieno gulėjimo stacionare trukmė
+,,,,,apyv,number,U,,,4,open,,Lovos apyvarta,"Parodo, kiek vidutiniškai vienoje stacionaro lovoje gulėjo ligonių per metus"
+,,,,,letal,number,%,,,4,open,,Letališkumas,Mirusių stacionaro ligonių dalis (proc.)
