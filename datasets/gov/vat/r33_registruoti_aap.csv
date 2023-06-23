@@ -59,7 +59,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kenksm_org_eppo,string,,,,2,open,,Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,Numatomi naudojimai (GAP) 
 ,,,,,kenksm_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),Numatomi naudojimai (GAP) 
 ,,,,,naudojimu_sk,string,,,,2,open,,Didžiausias naudojimų skaičius,Numatomi naudojimai (GAP) 
-,,,,,naudojimu_intervalas,string,,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
+,,,,,naudojimu_intervalas,number,d,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
 ,,,,,vandens_kiekis,string,,,,2,open,,Vandens kiekis l/ha,Numatomi naudojimai (GAP) 
@@ -68,4 +68,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
 ,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
 ,,,,,isakymo_registravimas,date,D,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
-,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys
+,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys 
