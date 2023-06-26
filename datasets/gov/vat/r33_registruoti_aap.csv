@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,produktas,string,,,,4,open,,AAP pavadinimas,Bendroji informacija 
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
-,,,,,registracijos_nr,date,D,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
+,,,,,registracijos_nr,string,,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
 ,,,,,registracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
 ,,,,,registracijos_pradzia,date,D,,,4,open,,AAP registracijos data,Registracijos duomenys 
 ,,,,,registracijos_pabaiga,date,D,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
@@ -59,7 +59,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kenksm_org_eppo,string,,,,2,open,,Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,Numatomi naudojimai (GAP) 
 ,,,,,kenksm_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),Numatomi naudojimai (GAP) 
 ,,,,,naudojimu_sk,string,,,,2,open,,Didžiausias naudojimų skaičius,Numatomi naudojimai (GAP) 
-,,,,,naudojimu_intervalas,string,,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
+,,,,,naudojimu_intervalas,number,d,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
 ,,,,,vandens_kiekis,string,,,,2,open,,Vandens kiekis l/ha,Numatomi naudojimai (GAP) 
