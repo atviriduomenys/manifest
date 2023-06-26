@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,shipyard_location,string,,,,4,open,,Laivo statybos vieta,
 ,,,,,ship_constructed,integer,,,,2,open,,Laivo pastatymo metai,
 ,,,,,,comment,type,"update(type: ""date"", ref: ""Y"")",,4,,spinta:213,,
-,,,,,created,datetime,T ,,,4,open,,Įrašo sukūrimo data,
+,,,,,created,datetime,T,,,4,open,,Įrašo sukūrimo data,
 ,,,,,ship_freeboard,number,m,,,4,open,,Minimalus borto aukštis virš vandens,
 ,,,,,ship_height,number,m,,,4,open,,Laivo gabaritinis aukštis,
 ,,,,,ship_hull_material,string,,,,3,open,,Laivo korpuso medžiaga,
