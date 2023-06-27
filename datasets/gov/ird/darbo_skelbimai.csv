@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ird/darbo_skelbimai,,,,,,,,,,,,"Viešojo sektoriaus aktualūs darbo skelbimai, konkursai, atrankos","Valstybės tarnybos portale viešinami konkursai bei atrankos į valstybės ir savivaldybių institucijų bei įstaigų laisvas darbo pozicijas. Trys darbo skelbimų kategorijos: 1) Konkursų į karjeros valstybės tarnautojų pareigas skelbimai; 2) Atrankų į pakaitinių valstybės tarnautojų pareigas skelbimai; 3) Konkursų į darbuotojų, dirbančių pagal darbo sutartį, pareigas skelbimai. Pateikiami tik galiojantys (aktualūs) skelbimai. Lentelė atnaujinama kas dieną. Atlyginimo apskaičiavime naudojamas 2023 m. pareiginės algos bazinis dydis (nuo 2024 m. keisis skaičiavimo metodika). Detalesnę skelbimų informaciją galima surasti https://portalas.vtd.lt/, ieškant pagal skelbimo numerį. Duomenų šaltinis - VATIS ir VATARAS. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt. "
+,,,,,,,,,,,,,,
+,,,,Skelbimas,,,id,,,4,,,"Aktualūs darbo skelbimai viešajame sektoriuje
+",
+,,,,,id,string,,,,4,open,,Unikalus skelbimo identifikatorius,Techninėms duomenų analizės reikmėms
+,,,,,pradzia,date,D,,,4,open,,Skelbimo galiojimo pradžia,
+,,,,,pabaiga,date,D,,,4,open,,Skelbimo galiojimo pabaiga,
+,,,,,tipas,string,,,,4,open,,Darbo pozicijos tipas,
+,,,,,,enum,,,''valstybės tarnautojas'',,,,Skelbimas į valstybės tarnybą,
+,,,,,,,,,''pagal darbo sutartį'',,,,Skelbimas pagal darbo sutartį,
+,,,,,,,,,''pakaitinis valstybės tarnautojas'',,,,Skelbimas į pakaitinę valstybės tarnybą,
+,,,,,pareigos ,string,,,,4,open,,Pareigų aprašymas,
+,,,,,koeficientas,number,U,,,4,open,,Numatytas pareiginės algos koeficientas,Tik valstybės tarnautojams ir pakaitiniams valstybės tarnautojams
+,,,,,bruto,money,EUR,,,4,open,,Apskaičiuotas atlyginimas prieš mokesčius,
+,,,,,miestas,string,,,,4,open,,"Miestas, kuriame yra darbo vieta",
+,,,,,istaiga,string,,,,2,open,,Skelbimą inicijavusios įstaigos pavadinimas,
+,,,,,jar_kodas,ref,"""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,4,open,,Skelbimą inicijavusios įstaigos juridinių asmenų registro kodas,
+,,,,,teisine_forma,string,,,,4,open,,Skelbimą inicijavusios įstaigos teisinė forma,
+,,,,,organizatorius ,string,,,,2,open,,Organizuojančios įstaigos pavadinimas,
+,,,,,info_email ,string,,,,4,open,,El. pašto adresas pasiteiravimui dėl skelbimo,
+,,,,,numeris,string,,,,4,open,,Unikalus skelbimo numeris,"Komunikacijai, paieškai"
+,,,,,adresas,url,,,,4,open,,Išsamaus skelbimo turinio URL adresas,
