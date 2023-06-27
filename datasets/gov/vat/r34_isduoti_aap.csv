@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pakuote,string,,,,1,open,,Produkto pakuotės,Bendroji informacija 
 ,,,,,pastaba,string,,,,2,open,,Pastabos ,Bendroji informacija 
 ,,,,,medz_cas_nr,string,,,,4,open,,Medžiagos CAS Nr. / Mikroorganizmo Nr.,Veiklioji medžiaga 
-,,,,,veikl_medz_kiekis,number,,,,2,open,,Veikliosios medžiagos kiekis,Veiklioji medžiaga 
+,,,,,veikl_medz_kiekis,number,,,,4,open,,Veikliosios medžiagos kiekis,Veiklioji medžiaga 
 ,,,,,matavimo_vienetai,string,,,,2,open,,Veikliosios medžiagos matavimo vienetai,Veiklioji medžiaga 
 ,,,,,klasifikavimas,string,,,,2,open,,Klasifikavimas ir etiketė ,
 ,,,,,pavojaus_fraze,string,,,,2,open,,Pavojaus frazė,Klasifikavimas ir etiketė 
@@ -51,10 +51,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Be signalinio žodžio""",,,,,
 ,,,,,papildomas_sakinys,string,,,,2,open,,Papildomas sakinys,Klasifikavimas ir etiketė 
 ,,,,,tipas,string,,,,4,open,,Tipas,Numatomi naudojimai (GAP) 
-,,,,,,enum,,,,,,,,
-,,,,,,,,,"""CHEMINE_MEDZIAGA""",,,,,
-,,,,,,,,,"""MIKOORGANIZMAS""",,,,,
-,,,,,,,,,"""PREPARATAS_SEKLU_APDOROJIMUI""",,,,,
+,,,,,,enum,,,"""Cheminis""",,,,,
+,,,,,,,,,"""Mikrobiologinis""",,,,,
 ,,,,,naudojimo_tipas,string,,,,3,open,,Naudojimo tipas,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_laikas,string,,,,2,open,,Naudojimo laikas,Numatomi naudojimai (GAP) 
 ,,,,,augalo_eppo,string,,,,2,open,,Lotyniškas augalo pavadinimas ir EPPO kodas,Numatomi naudojimai (GAP) 
@@ -62,10 +60,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kenksm_org_eppo,string,,,,2,open,,Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,Numatomi naudojimai (GAP) 
 ,,,,,kenksm_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),Numatomi naudojimai (GAP) 
 ,,,,,naudojimu_sk,number,U,,,4,open,,Didžiausias naudojimų skaičius,Numatomi naudojimai (GAP) 
-,,,,,naudojimu_intervalas,number,d,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
+,,,,,naudojimu_intervalas,number,d,,,4,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
-,,,,,vandens_kiekis,number,l/ha,,,4,open,,Vandens kiekis,Numatomi naudojimai (GAP) 
+,,,,,vandens_kiekis,string,,,,3,open,,Vandens kiekis l/ha,Numatomi naudojimai (GAP) 
 ,,,,,karencijos_laikotarpis,number,d,,,4,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_pastaba,string,,,,2,open,,Pastabos,Numatomi naudojimai (GAP) 
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
