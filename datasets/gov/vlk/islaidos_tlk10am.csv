@@ -1,0 +1,52 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/islaidos_tlk10am,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Ambulatorija,,,,,,4,,,PSDF biudžeto išlaidos ambulatorinėms asmens sveikatos priežiūros paslaugoms pagal TLK-10-AM kodus,Informacija apie PSDF biudžeto išlaidas ambulatorinėms asmens sveikatos priežiūros paslaugoms pagal TLK-10-AM kodus
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,eurai,number,,,,2,open,,Suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,balai,number,U,,,4,open,,Suma balais,
+,,,,,,,,,,,,,,
+,,,,AmbulatorijaKontrastas,,,,,,4,,,PSDF biudžeto išlaidos už ambulatorinėmis sąlygomis teikiamų brangiųjų tyrimų ir procedūrų kontrastus pagal TLK-10-AM kodus,Informacija apie PSDF biudžeto išlaidas už ambulatorinėmis sąlygomis teikiamų brangiųjų tyrimų ir procedūrų kontrastus pagal TLK-10-AM kodus
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,eurai,number,,,,2,open,,Suma eurais už kontrastą,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,balai,number,U,,,4,open,,Suma balais už kontrastą,
+,,,,,,,,,,,,,,
+,,,,StacionarinePaslauga,,,,,,4,,,"PSDF biudžeto išlaidos stacionarinėms (reabilitacijos, slaugos, transplantacijos) sveikatos priežiūros paslaugoms pagal TLK-10-AM kodus","Informacija apie PSDF biudžeto išlaidas stacionarinėms (reabilitacijos, slaugos, transplantacijos) sveikatos priežiūros paslaugoms pagal TLK-10-AM kodus"
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,eurai,number,,,,2,open,,Suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,balai,number,U,,,4,open,,Suma balais,
+,,,,,,,,,,,,,,
+,,,,Aktyvus,,,,,,4,,,PSDF biudžeto išlaidos stacionarinėms aktyviojo gydymo ir dienos chirurgijos paslaugoms pagal TLK-10-AM kodus,Informacija apie PSDF biudžeto išlaidas stacionarinėms aktyviojo gydymo ir dienos chirurgijos paslaugoms pagal TLK-10-AM kodus
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,eurai,number,,,,2,open,,Suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,balai,number,U,,,4,open,,Suma balais,
+,,,,,,,,,,,,,,
+,,,,SpapIntervencija,,,,,,4,,,PSDF biudžeto išlaidos stacionarinėmis sąlygomis teikiamiems brangiesiems tyrimams ir procedūroms,Informacija apie PSDF biudžeto išlaidas stacionarinėmis sąlygomis teikiamus brangiuosius tyrimus ir procedūras pagal TLK-10-AM kodus
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,stageinterventionsamountineur,number,,,,4,open,,Suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,stageinterventionsamountinscoreeur,number,U,,,4,open,,Suma balais,
+,,,,,stageinterventionsexplamountineur,number,,,,2,open,,Suma eurais už kontrastą,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,stageinterventionsexplamountinscoreeur,number,U,,,4,open,,Suma balais už kontrastą,
+,,,,,,,,,,,,,,
+,,,,Kvap,,,,,,4,,,PSDF biudžeto išlaidos vaistams ir MPP pagal TLK-10-AM kodus,Informacija apie PSDF biudžeto išlaidas vaistams ir MPP pagal TLK-10-AM kodus
+,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,tlk10am,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,islaidos,number,,,,2,open,,PSDF biudžeto išlaidos eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,priemokos,number,,,,2,open,,Priemokų suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
+,,,,,padeng_priemoka,number,,,,2,open,,Padengiama priemokų suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,,spinta:40,
