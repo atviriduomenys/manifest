@@ -8,14 +8,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nr,integer,,,,3,open,,Projekto numeris,
 ,,,,,data,number,,,,3,open,,Projekto data,
 ,,,,,invent_atlikta,number,,,,3,open,,Inventorizacijos metai,
-,,,,,autorius,ref,PVPAutorius,,,4,open,,Projekto autorius,
+,,,,,autorius,ref,PVPAutorius,,,4,public,,Projekto autorius,
 ,,,,,gal_nuo,number,,,,3,open,,Projekto galiojimo pradžia,
 ,,,,,gal_iki,number,,,,3,open,,Projekto galiojimo pabaiga,
-,,,,,inventorizavo,string,,,,3,open,,Inventorizavo,
+,,,,,inventorizavo,string,,,,3,public,,Inventorizavo,
 ,,,,,,,,,,,,,,
 ,,,,PVPAutorius,,,,,,4,,,PVP autorius,Informacija apie privačių miškų vidinės miškotvarkos projektų autorius
-,,,,,aut_vard,string,,,,3,open,,Privačių miškų vidinės miškotvarkos projektų autoriaus vardas pavardė,
-,,,,,telefonas,string,,,,3,open,,Privačių miškų vidinės miškotvarkos projektų autoriaus telefono nr.,
+,,,,,aut_vard,string,,,,3,public,,Privačių miškų vidinės miškotvarkos projektų autoriaus vardas pavardė,
+,,,,,telefonas,string,,,,3,public,,Privačių miškų vidinės miškotvarkos projektų autoriaus telefono nr.,
 ,,,,,,,,,,,,,,
 ,,,,PVPBuklesKaita,,,,,,4,,,PVP būklės kaita,"Iš šios lentelės skaičiuojama, ar PVP autoriai buvo parengę projektų per pastaruosius 1 ir 3 metus"
 ,,,,,bukle,ref,PVPBukle,,,4,open,,Būklė,
