@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Virš 20 cigarečių per dieną,
 ,,,,,,,,,4,,,,Nerūko,
 ,,,,,,,,,5,,,,Neberūko,
-,,,,,rukymas,integer,,RUKYMO_STAZAS,,4,open,,Rūkymo stažas,
+,,,,,rukymo_stazas,integer,,RUKYMO_STAZAS,,4,open,,Rūkymo stažas,
 ,,,,,,enum,,,1,,,,iki 1 metų,
 ,,,,,,,,,2,,,,1 - 10 metų,
 ,,,,,,,,,3,,,,11 - 20 metų,
