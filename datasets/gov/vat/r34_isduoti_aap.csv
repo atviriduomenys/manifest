@@ -6,6 +6,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Leidimas,,,id,,,4,open,,"Pateikiama informacija apie išduotus leidimus prekiauti augalų apsaugos produktais, tapačiais Lietuvos respublikoje registruotiems augalų apsaugos produktams (pavadinimas, leidimo Nr., leidimo galiojimo data, veikliosios medžiagos,klasifikavimas, ženklinimas, naudojimo reglamentas, patvirtinta etiketė) Pateikiama informacija apie išduotus leidimus tiekti rinkai augalų apsaugos produktus išimties tvarka 120 d. (pavadinimas, leidimo Nr., leidimo pradžios ir pabaigos datos, veikliosios medžiagos,klasifikavimas, ženklinimas, naudojimo reglamentas, patvirtinta etiketė)",
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,produktas,string,,,,4,open,,AAP pavadinimas,Bendroji informacija 
+,,,,,busena,string,,,,4,open,,,
+,,,,,,enum,,,"""REGISTRUOTAS_120_D""",,,,,
+,,,,,,,,,"""TAPATUS""",,,,,
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
 ,,,,,registracijos_nr,string,,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
@@ -68,4 +71,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
 ,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
 ,,,,,isakymo_registravimas,date,D,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
-,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys 
+,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys
