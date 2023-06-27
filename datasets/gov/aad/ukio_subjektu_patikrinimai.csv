@@ -17,7 +17,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Fizinis asmuo""",,,,,
 ,,,,,,,,,"""Teritorija""",,,,,
 ,,,,,,,,,"""Kita""",,,,,
-,,,,,dalyvav_pareigunu,integer,,,,4,open,,Patikrinimą atlikusių ar dalyvavusių pareigūnų skaičius,
+,,,,,dalyvav_pareigunu,integer,U,,,4,open,,Patikrinimą atlikusių ar dalyvavusių pareigūnų skaičius,
+
 ,,,,,rusis,string,,,,4,open,,Patikrinimo rūšis,
 ,,,,,,enum,,,"""Išplėstinis""",,,,,
 ,,,,,,,,,"""Teminis""",,,,,
@@ -25,8 +26,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tikrinta_veikla,string,,,,3,open,,Tikrinta ūkinė veikla,
 ,,,,,tiksli_tikrinta_veikla,string,,,,2,open,,Patikslinta tikrinta ūkinė veikla,
 ,,,,,objekto_tipk_priedas,string,,,,4,open,,"Objektas turi TIPK I priedą, TL (TIPK II)",
-,,,,,objekto_kiti_aplinkosaug_leidimai,string,,,,4,open,,Objektas turi kitus aplinkosauginius leidimus,Neprivaloma pildyti
-,,,,,pazeidimai_pagal_ank,string,,,,4,open,,Pažeidimų straipsniai pagal ANK,
+,,,,,objekto_kiti_aplinkosaug_leidimai,string,,,,1,open,,Objektas turi kitus aplinkosauginius leidimus,Neprivaloma pildyti
+
+,,,,,pazeidimai_pagal_ank,string,,,,2,open,,Pažeidimų straipsniai pagal ANK,
+
 ,,,,,skirta_adm_bauda,number,,,,2,open,,Skirta suma (administracinė bauda),Neprivaloma pildyti
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,aplinkosauginio_pazeidimo_grupe,string,,,,3,open,,Aplinkosauginio pažeidimo grupė,Neprivaloma pildyti
@@ -38,7 +41,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,skirta_jur_bauda,number,,,,2,open,,Skirta suma (juridinė bauda),Neprivaloma pildyti
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,paskaiciuotos_zalos_tipas,string,,,,3,open,,Paskaičiuotos žalos tipas,Neprivaloma pildyti
-,,,,,paimti_daiktai,string,,,,4,open,,Paimti daiktai,
+,,,,,paimti_daiktai,string,,,,1,open,,Paimti daiktai,
+
 ,,,,,suteikta_konsultacija,boolean,,,,4,open,,Patikrinimo metu suteikta konsultacija,
 ,,,,,atvr,boolean,,,,4,open,,Atliekų tvarkytojų valstybės registras,
 ,,,,,entp,boolean,,,,4,open,,Eksploatuoti netinkamos transporto priemonės,
