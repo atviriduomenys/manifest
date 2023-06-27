@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/ird/pareigybes,,,,,,,,,,,,"Nestatutinių valstybės tarnautojų pareigybių statistika","Aktuali nestatutinių valstybės tarnautojų pareigybių statistika pagal Valstybės ir savivaldybių institucijas bei įstaigas. Pareigybių statistika skaičiuojama kaip įsteigtų pareigybių suma (sumuojant etatus, nes pareigybė gali sudaryti ir ne pilną etatą). Pareigybės - tai įstaigos turimos ar suplanuotos, bet nebūtinai užpildytos įvairių tipų darbo pozicijos; įsteigtų pareigybių skaičius gali skirtis nuo užimtų pareigybių skaičiaus ar tarnautojų skaičiaus. Nestatutiniai valstybės tarnautojai - tai, pvz., įstaigų vadovai, patarėjai, padėjėjai, specialistai; dažniausiai tai nėra visi įstaigoje dirbantys darbuotojai. Duomenų šaltinis - VATIS ir VATARAS. Rodomos tik šiuo metu egzistuojančios įstaigos, turinčios bent vieną tokio tipo pareigybę. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,,,,,,
-,,,,Pareigybe,,,jar_kodas ,,,4,,,"Nestatutinių valstybės tarnautojų pareigybių statistika",
+,,,,Pareigybe,,,jar_kodas,,,4,,,"Nestatutinių valstybės tarnautojų pareigybių statistika",
 ,,,,,jar_kodas,ref,"/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo",,,4,open,,Institucijos ar įstaigos Juridinių asmenų registro (JAR) kodas,
 ,,,,,pk_1,number,,,,2,open,,"Įsteigtų etatų suma pareigybių kategorijoje 1: ""Politinio (asmeninio) pasitikėjimo""",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
