@@ -9,6 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,akronimas,string,,,,4,open,,Įstaigos sutrumpintas pavadinimas,
 ,,,,,istaigu_grupe,string,,,,3,open,,"Įstaigų grupė, kuriai priklauso šį įstaiga",
 ,,,,,adresas,string,,,,2,open,,Įstaigos adresas,
-,,,,,url,url,,,,4,open,,Įstaigos interneto svetainės adresas,
+,,,,,web,url,,,,4,open,,Įstaigos interneto svetainės adresas,
 ,,,,,el_pastas,string,,,,4,open,,Įstaigos elektroninio pašto adresas,
 ,,,,,isteigta,date,D,,,2,open,,Įstaigos įsteigimo data,
