@@ -4,10 +4,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Pazeidejas,,,id,,,4,,,KET pažeidėjai,
 ,,,,,id,string,,,,4,open,,"Administracinio nusižengimo unikalus identifikatorius, skirtas jungimui su kitom lentelėm, taip pat konkretaus nusižengimo sudėties (straipsnių) radimui keliose eilutėse",
 ,,,,,uzregistruota,date,M,,,4,open,,Administracinio nusižengimo registravimo registre data,
-,,,,,amzius,integer,,,,4,open,,Pažeidėjo amžius,Nusižengimo registravimo metu. Gali būti nežinoma
+,,,,,amzius,integer,yr,,,4,open,,Pažeidėjo amžius,Nusižengimo registravimo metu. Gali būti nežinoma
 ,,,,,lytis,string,,,,3,open,,Pažeidėjo lytis,Gali būti nežinoma
 ,,,,,pilietybe,string,,,,4,open,,Pažeidėjo pilietybė,"Gali būti nežinoma, dviguba ir pan."
 ,,,,,straipsnis,string,,,,4,open,,Pagrindinis ANK straipsnis,
 ,,,,,dalis,string,,,,4,open,,Pagrindinio ANK straipsnio dalis,
-,,,,,paaiskinimas1,string,,,,2,open,,ANK straipsnio pavadinimas,
-,,,,,paaiskinimas2,string,,,,2,open,,ANK straipsnio dalies pavadinimas,
+,,,,,paaiskinimas1,string,,,,4,open,,ANK straipsnio pavadinimas,
+,,,,,paaiskinimas2,string,,,,4,open,,ANK straipsnio dalies pavadinimas,
