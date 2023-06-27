@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ird/ket_pazeidimai,,,,,,,,,,,,Kelių eismo taisyklių pažeidimai ir pažeidėjai,"Administracinių nusižengimų registro (ANR) duomenų neagreguota lentelė (mikroduomenys), kurioje įtraukti tik tie nusižengimai, kurių sudėtį nustatantys Administracinių nusižengimų kodekso (ANK) straipsniai yra susiję su Kelių eismo taisyklių (KET) pažeidimais (straipsniai 414-433, 439-441, 463). Viena eilutė yra vieno administracinio nusižengimo vieno straipsnio viena dalis, tad vienas nusižengimas gali kartotis daugelyje eilučių. Kievienam nusižengimui yra priskirtas pažeidėjas (tačiau būna nemažai atvejų, kuomet pažeidėjo duomenų nėra). Pažeidėjo duomenys nėra laikytini griežtai patikimais. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
+,,,,,,,,,,,,,,
+,,,,Pazeidejas,,,id,,,4,,,KET pažeidėjai,
+,,,,,id,string,,,,4,open,,"Administracinio nusižengimo unikalus identifikatorius, skirtas jungimui su kitom lentelėm, taip pat konkretaus nusižengimo sudėties (straipsnių) radimui keliose eilutėse",
+,,,,,uzregistruota,date,M,,,4,open,,Administracinio nusižengimo registravimo registre data,
+,,,,,amzius,integer,yr,,,4,open,,Pažeidėjo amžius,Nusižengimo registravimo metu. Gali būti nežinoma
+,,,,,lytis,string,,,,3,open,,Pažeidėjo lytis,Gali būti nežinoma
+,,,,,pilietybe,string,,,,4,open,,Pažeidėjo pilietybė,"Gali būti nežinoma, dviguba ir pan."
+,,,,,straipsnis,string,,,,4,open,,Pagrindinis ANK straipsnis,
+,,,,,dalis,string,,,,4,open,,Pagrindinio ANK straipsnio dalis,
+,,,,,paaiskinimas1,string,,,,4,open,,ANK straipsnio pavadinimas,
+,,,,,paaiskinimas2,string,,,,4,open,,ANK straipsnio dalies pavadinimas,
