@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pakuote,string,,,,1,open,,Produkto pakuotės,Bendroji informacija 
 ,,,,,pastaba,string,,,,2,open,,Pastabos ,Bendroji informacija 
 ,,,,,medz_cas_nr,string,,,,4,open,,Medžiagos CAS Nr. / Mikroorganizmo Nr.,Veiklioji medžiaga 
-,,,,,veikl_medz_kiekis,string,,,,2,open,,Veikliosios medžiagos kiekis,Veiklioji medžiaga 
+,,,,,veikl_medz_kiekis,number,,,,2,open,,Veikliosios medžiagos kiekis,Veiklioji medžiaga 
 ,,,,,matavimo_vienetai,string,,,,2,open,,Veikliosios medžiagos matavimo vienetai,Veiklioji medžiaga 
 ,,,,,klasifikavimas,string,,,,2,open,,Klasifikavimas ir etiketė ,
 ,,,,,pavojaus_fraze,string,,,,2,open,,Pavojaus frazė,Klasifikavimas ir etiketė 
