@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Pareigybe,,,jar_kodas ,,,4,,,"Nestatutinių valstybės tarnautojų pareigybių statistika",
 ,,,,,jar_kodas ,ref,"/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo",,,4,open,,Institucijos ar įstaigos Juridinių asmenų registro (JAR) kodas,
-,,,,,pk_1,number,,,2,open,,"Įsteigtų etatų suma pareigybių kategorijoje 1: ""Politinio (asmeninio) pasitikėjimo""",
+,,,,,pk_1,number,,,,2,open,,"Įsteigtų etatų suma pareigybių kategorijoje 1: ""Politinio (asmeninio) pasitikėjimo""",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,pk_2,number,EUR,,,2,open,,"Įsteigtų etatų suma pareigybių kategorijoje 2: ""Karjeros valstybės tarnautojas""",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
