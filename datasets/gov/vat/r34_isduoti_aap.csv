@@ -66,7 +66,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
 ,,,,,vandens_kiekis,number,l/ha,,,4,open,,Vandens kiekis,Numatomi naudojimai (GAP) 
-,,,,,karencijos_laikotarpis,string,,,,2,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
+,,,,,karencijos_laikotarpis,number,d,,,4,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_pastaba,string,,,,2,open,,Pastabos,Numatomi naudojimai (GAP) 
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
 ,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
