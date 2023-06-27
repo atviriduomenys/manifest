@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ird/valstybines_istaigos,,,,,,,,,,,,"Valstybės ir savivaldybių institucijos bei įstaigos, jų pavaldumas","Aktualus ir išsamus valstybės ir savivaldybių institucijų bei įstaigų sąrašas, šių įstaigų pavaldumas viena kitai. Duomenų šaltinis - VATIS ir VATARAS. Pateikiamos tik šiuo metu egzistuojančios įstaigos. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt
+"
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,id,,,4,,,"Valstybės ir savivaldybių institucijos bei įstaigos, jų pavaldumas",
+,,,,,id,string,,,,4,open,,Unikalus įstaigos identifikatorius,
+,,,,,pavaldumas_id,string,,,,4,open,,"Įstaigos, kuriai pavaldi šį įstaiga, identifikatorius",
+,,,,,jar_kodas,ref,"""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,4,open,,Įstaigos Juridinių asmenų registro (JAR) kodas,
+,,,,,pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
+,,,,,akronimas,string,,,,4,open,,Įstaigos sutrumpintas pavadinimas,
+,,,,,istaigu_grupe,string,,,,4,open,,"Įstaigų grupė, kuriai priklauso šį įstaiga",
+,,,,,adresas,string,,,,4,open,,Įstaigos adresas,
+,,,,,url,url,,,,4,open,,Įstaigos interneto svetainės adresas,
+,,,,,el_pastas,string,,,,4,open,,Įstaigos elektroninio pašto adresas,
+,,,,,isteigta,date,D,,,4,open,,Įstaigos įsteigimo data,
