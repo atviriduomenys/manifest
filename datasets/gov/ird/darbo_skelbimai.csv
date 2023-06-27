@@ -16,7 +16,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,miestas,string,,,,4,open,,"Miestas, kuriame yra darbo vieta",
 ,,,,,istaiga,string,,,,2,open,,Skelbimą inicijavusios įstaigos pavadinimas,
-,,,,,jar_kodas,ref,"""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,4,open,,Skelbimą inicijavusios įstaigos juridinių asmenų registro kodas,
+,,,,,jar_kodas,ref,"/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo",,,4,open,,Skelbimą inicijavusios įstaigos juridinių asmenų registro kodas,
 ,,,,,teisine_forma,string,,,,4,open,,Skelbimą inicijavusios įstaigos teisinė forma,
 ,,,,,organizatorius ,string,,,,2,open,,Organizuojančios įstaigos pavadinimas,
 ,,,,,info_email ,string,,,,4,open,,El. pašto adresas pasiteiravimui dėl skelbimo,
