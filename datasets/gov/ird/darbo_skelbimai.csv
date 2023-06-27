@@ -12,7 +12,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,''pakaitinis valstybės tarnautojas'',,,,Skelbimas į pakaitinę valstybės tarnybą,
 ,,,,,pareigos ,string,,,,4,open,,Pareigų aprašymas,
 ,,,,,koeficientas,number,U,,,4,open,,Numatytas pareiginės algos koeficientas,Tik valstybės tarnautojams ir pakaitiniams valstybės tarnautojams
-,,,,,bruto,money,EUR,,,4,open,,Apskaičiuotas atlyginimas prieš mokesčius,
+,,,,,bruto,number,,,,2,open,,Apskaičiuotas atlyginimas prieš mokesčius,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,miestas,string,,,,4,open,,"Miestas, kuriame yra darbo vieta",
 ,,,,,istaiga,string,,,,2,open,,Skelbimą inicijavusios įstaigos pavadinimas,
 ,,,,,jar_kodas,ref,"""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,4,open,,Skelbimą inicijavusios įstaigos juridinių asmenų registro kodas,
