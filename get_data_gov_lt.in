@@ -224,6 +224,7 @@ datasets/gov/vlk/cp_endoprotezai.csv
 datasets/gov/vlk/prisirase_pcs.csv
 datasets/gov/vlk/dpsdr_draudziamieji.csv
 datasets/gov/vlk/intervencijos.csv
+datasets/gov/vlk/islaidos_tlk10am.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
@@ -435,6 +436,10 @@ datasets/gov/ntb/pacientu_valios_pareiskimai.csv
 datasets/gov/vat/r9_trasos.csv
 datasets/gov/vat/r11_agrochemijos_patikrinimai.csv
 datasets/gov/ird/administraciniai_nusizengimai.csv
+datasets/gov/vat/r34_isduoti_aap.csv
 datasets/gov/ltsa/vidaus_vandenu_laivai.csv
 datasets/gov/ltsa/juru_laivai.csv
+datasets/gov/ird/administraciniu_bylu_nusižengimai.csv
+datasets/gov/ird/valstybines_istaigos.csv
+datasets/gov/ird/ket_pazeidimai.csv
 datasets/gov/ird/pareigybes.csv
