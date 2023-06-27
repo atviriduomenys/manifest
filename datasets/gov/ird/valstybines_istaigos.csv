@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Istaiga,,,id,,,4,,,"Valstybės ir savivaldybių institucijos bei įstaigos, jų pavaldumas",
 ,,,,,id,string,,,,4,open,,Unikalus įstaigos identifikatorius,
 ,,,,,pavaldumas_id,string,,,,4,open,,"Įstaigos, kuriai pavaldi šį įstaiga, identifikatorius",
-,,,,,jar_kodas,ref,"""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo""",,,4,open,,Įstaigos Juridinių asmenų registro (JAR) kodas,
+,,,,,jar_kodas,ref,"/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo",,,4,open,,Įstaigos Juridinių asmenų registro (JAR) kodas,
 ,,,,,pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
 ,,,,,akronimas,string,,,,4,open,,Įstaigos sutrumpintas pavadinimas,
 ,,,,,istaigu_grupe,string,,,,4,open,,"Įstaigų grupė, kuriai priklauso šį įstaiga",
