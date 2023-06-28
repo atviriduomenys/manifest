@@ -14,8 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,NuotekuValymas,,,,,,2,,,"Nuotekų valymo įrenginio nuotekų valymo būdai (įskaitant papildomą valymą), nurodyti metinėje nuotekų ataskaitoje, su nuotekų valymo įrenginio paskirtimi",
 ,,,,,aob_id,string,,,,4,open,,Ataskaitinio objekto id,
-,,,,,usb_aob_id,string,,,,4,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
-,,,,,aob_aob_id_prikl,string,,,,4,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
+,,,,,usb_aob_id,string,,,,2,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
+,,,,,aob_aob_id_prikl,string,,,,2,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
 ,,,,,aob_pavad,string,,,,3,open,,Ataskaitinio objekto pavadinimas,
 ,,,,,nvb_kodas,string,,,,4,open,,Nuotekų valymo būdo kodas,
 ,,,,,,enum,,,"""MECHN""",,,,Mechaninis,
@@ -60,8 +60,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IsleistuvasTarsa,,,,,,2,,,Metinę nuotekų ataskaitą teikiančio subjekto duomenys dėl išleidžiamų nuotekų (įskaitant kiekius pagal išleistuvą),
 ,,,,,aob_id,string,,,,4,open,,Ataskaitinio objekto id,
-,,,,,usb_aob_id,string,,,,4,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
-,,,,,aob_aob_id_prikl,string,,,,4,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
+,,,,,usb_aob_id,string,,,,2,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
+,,,,,aob_aob_id_prikl,string,,,,2,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
 ,,,,,aob_tipas,string,,,,4,open,,Ataskaitinio objekto tipas,
 ,,,,,,enum,,,"""USB""",,,,Ūkio subjektas,
 ,,,,,,,,,"""UVO""",,,,Ūkinės veiklos objektas,
@@ -145,8 +145,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IsleistuvasPriimtuvas,,,,,,2,,,"Išleistuvai į gamt. aplinką, į nuotakyną ir kt. įrenginiai pagal aob_uvo.aob_rusis su priimtuvo (įskaitant vandens telkinius) informacija",
 ,,,,,aob_id,string,,,,4,open,,Ataskaitinio objekto id,
-,,,,,usb_aob_id,string,,,,4,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
-,,,,,aob_aob_id_prikl,string,,,,4,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
+,,,,,usb_aob_id,string,,,,2,open,,Ūkio subjekto id,"Siejasi su lentele UkioSubjektas, stulpeliu usb_aob_id"
+,,,,,aob_aob_id_prikl,string,,,,2,open,,Priklausomumo objektui id,"Siejasi su lentele UkioSubjektas, stulpeliu aob_aob_id_prikl"
 ,,,,,aob_tipas,string,,,,4,open,,Ataskaitinio objekto tipas,
 ,,,,,,enum,,,"""USB""",,,,Ūkio subjektas,
 ,,,,,,,,,"""UVO""",,,,Ūkinės veiklos objektas,
