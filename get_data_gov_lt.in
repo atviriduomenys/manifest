@@ -226,6 +226,7 @@ datasets/gov/vlk/dpsdr_draudziamieji.csv
 datasets/gov/vlk/intervencijos.csv
 datasets/gov/vlk/islaidos_tlk10am.csv
 datasets/gov/vlk/otp_sumos.csv
+datasets/gov/vlk/nmp_sumos.csv
 datasets/gov/aaa/juros_mariu_bukle.csv
 datasets/gov/aaa/oro_tarsa.csv
 datasets/gov/aaa/chemines_medziagos.csv
