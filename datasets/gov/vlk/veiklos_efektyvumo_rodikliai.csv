@@ -5,6 +5,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,VeiklosEfektyvumoRodiklis,,,,,,4,,,ASPĮ veiklos kokybės ir efektyvumo vertinimo rodiklių suvestinė,"Informacija apie gydymo įstaigų, teikiančių stacionarines asmens sveikatos priežiūros paslaugas, veiklos kokybės ir efektyvumo vertinimo rodiklių duomenis"
 ,,,,,metai,integer,,,,2,open,,Metai,Data metų tikslumu
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-,,,,,rodiklis,integer,,,,4,open,,Rodiklis,Rodiklio pavadinimas
+,,,,,rodiklis,string,,,,4,open,,Rodiklis,Rodiklio pavadinimas
 ,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, kuri teikė paslaugas, ID"
 ,,,,,reiksme,number,,,,4,open,,Reikšmė,"Rodiklio reikšmė procentais"
