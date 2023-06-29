@@ -443,6 +443,10 @@ datasets/gov/ird/administraciniai_nusizengimai.csv
 datasets/gov/vat/r34_isduoti_aap.csv
 datasets/gov/ltsa/vidaus_vandenu_laivai.csv
 datasets/gov/ltsa/juru_laivai.csv
+datasets/gov/ltsa/gelezinkeliu_eismo_ivykiai.csv
+datasets/gov/ltsa/gelezinkeliu_specialistai.csv
+datasets/gov/ltsa/keliu_licencijos.csv
+datasets/gov/ltsa/keliu_specialistai.csv
 datasets/gov/ird/administraciniu_bylu_nusižengimai.csv
 datasets/gov/ird/valstybines_istaigos.csv
 datasets/gov/ird/ket_pazeidimai.csv
