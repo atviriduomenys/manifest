@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/miskai/monitoringas,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
+,,monitoringas,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
 ,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
 ,,,,,,,,,,,,,,
 ,,,,Rodiklis,,,,,,3,,,Miškų sveikumo monitoringo duomenys,
