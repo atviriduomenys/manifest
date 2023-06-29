@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ltsa/gelezinkeliu_eismo_ivykiai,,,,,,,,,,,,Ištirti geležinkelio eismo įvykiai,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,RailwayIncident,,,incident_id,,,2,,,Ištirti geležinkelio eismo įvykiai,
+,,,,,incident_id,number,,,,4,open,,Įvykio ID,
+,,,,,incident,datetime,T,,,4,open,,Įvykio laikas,
+,,,,,infrastructure_manager,string,,,,2,open,,Infrastruktūros valdytojas,
+,,,,,line_station_a,string,,,,2,open,,Tarpstočio stotis A,Įvykio vieta - tarpstotis
+,,,,,line_station_b,string,,,,2,open,,Tarpstočio stotis B,Įvykio vieta - tarpstotis
+,,,,,casualties,string,,,,3,open,,Pasėkmės žmogaus sveikatai,
+,,,,,station,string,,,,2,open,,Stotis,Įvykio vieta - stotis
+,,,,,type,string,,,,2,open,,Įvykio tipas,
+,,,,,railway_untertaking,string,,,,2,open,,Vežėjas,
