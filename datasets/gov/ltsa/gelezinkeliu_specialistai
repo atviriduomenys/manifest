@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ltsa/gelezinkeliu_specialistai,,,,,,,,,,,,Geležinkelio specialistų pažymėjimai,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,RailwaySpecialist,,,document_number,,,2,,,Geležinkelio specialistų pažymėjimai,
+,,,,,valid_to,datetime,D,,,4,open,,Teisė suteikta iki,
+,,,,,born,integer,,,,2,open,,Gimimo metai,metai YY formatu
+,,,,,valid_from,datetime,T,,,4,open,,Teisė galioja nuo,
+,,,,,document_number,string,,,,2,open,,Dokumento numeris,
+,,,,,type,string,,,,3,open,,Tipas,
