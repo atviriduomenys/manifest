@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,VidausVandenuLaivas,,,ship_id,,,4,,,Vidaus vandenų laivai,
 ,,,,,ship_call_sign,string,,,,4,open,,Laivo šaukiniai,
-,,,,,own_le,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,3,open,,Savininkas JA,Savininko juridinio asmens kodas
+,,,,,own_le,string,,,,2,open,,Savininkas JA,Savininko juridinio asmens kodas
 ,,,,,shipyard_location,string,,,,4,open,,Laivo statybos vieta,
 ,,,,,ship_constructed,integer,,,,2,open,,Laivo pastatymo metai,
 ,,,,,,comment,type,"update(type: ""date"", ref: ""Y"")",,4,,spinta:213,,
