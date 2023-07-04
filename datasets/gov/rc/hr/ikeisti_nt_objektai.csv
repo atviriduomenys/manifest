@@ -17,4 +17,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,objektu_verte_rez,string,,,,2,open,,"Bendras įkeičiamų daiktų įkainojimas (rėžiai, NULL - nėra duomenų)",
 ,,,,,pri_terminas_metai,integer,,,,2,open,,"Prievolės įvykdymo terminas (metai, NULL - nėra duomenų)",
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
