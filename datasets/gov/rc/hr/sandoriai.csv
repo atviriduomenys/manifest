@@ -39,4 +39,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,imones,integer,,,,4,open,,Ar įmonės hipoteka  (1 - taip; 0 - ne),
 ,,,,,,enum,,,0,,,,Ne,
 ,,,,,,,,,1,,,,Taip,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
