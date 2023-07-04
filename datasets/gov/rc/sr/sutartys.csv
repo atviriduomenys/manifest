@@ -31,4 +31,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""gavejas.valstybe"", type: """")",4,open,Spinta:216,,
 ,,,,,gav_valstybes_kodas,string,,,,2,open,,Gavėjo valstybės kodas,
 ,,,,,,comment,property,,"update(property: ""gavejas.valstybes_kodas"", type: """")",4,open,Spinta:216,,
-,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
