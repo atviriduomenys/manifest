@@ -10,9 +10,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,Finansinio laikotarpio mėnuo
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""M"")",2,open,spinta:213,,
 ,,,,,pacientu_grupe,string,,,,4,open,,Pacientų grupė,
-,,,,,,enum,,,'LR',,,,,
-,,,,,,,,,'EEE arba CH',,,,,
-,,,,,,,,,'OVS',,,,,
+,,,,,,enum,,,"LR",,,,,
+,,,,,,,,,"EEE arba CH",,,,,
+,,,,,,,,,"OVS",,,,,
 ,,,,,drg_kodas,string,,,,4,open,,DRG kodas,Giminingų diagnozių grupės kodas
 ,,,,,balai,number,U,,,4,open,,DRG kaina balais,
 ,,,,,eurai,number,,,,2,open,,DRG kaina eurais,
