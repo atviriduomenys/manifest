@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,RoadLicence,,,id,,,2,,,Kelių transporto veiklos licencijos,
 ,,,,,valid,string,,,,2,open,,Galiojimo būklė,
 ,,,,,valid_to,string,,,,2,open,,Galioja iki,
-,,,,,id,string,,,,2,open,Licencijos ID,
+,,,,,id,string,,,,2,open,,Licencijos ID,
 ,,,,,valid_from,string,,,,2,open,,Galioja nuo,
 ,,,,,lio_kli_id,string,,,,2,open,,,
 ,,,,,number,string,,,,2,open,,Licencijos numeris,
