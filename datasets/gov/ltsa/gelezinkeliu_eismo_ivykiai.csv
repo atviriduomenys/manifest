@@ -3,8 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,RailwayIncident,,,incident_id,,,2,,,Ištirti geležinkelio eismo įvykiai,
-,,,,,incident_id,number,,,,4,open,,Įvykio ID,
-,,,,,incident,datetime,T,,,4,open,,Įvykio laikas,
+,,,,,incident_id,string,,,,2,open,,Įvykio ID,
+,,,,,incident,string,,,,2,open,,Įvykio laikas,
 ,,,,,infrastructure_manager,string,,,,2,open,,Infrastruktūros valdytojas,
 ,,,,,line_station_a,string,,,,2,open,,Tarpstočio stotis A,Įvykio vieta - tarpstotis
 ,,,,,line_station_b,string,,,,2,open,,Tarpstočio stotis B,Įvykio vieta - tarpstotis
