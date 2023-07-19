@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ship_call_sign,string,,,,4,open,,Laivo šaukiniai,
 ,,,,,ship_dw,number,t,,,4,open,,Laivo dedveito tonažas,
 ,,,,,ship_gross_tg,number,m^3,,,4,open,,Laivo bendroji talpa,
-,,,,,ship_id,string,,,,4,open,,Laivo ID,
+,,,,,ship_id,integer,,,,4,open,,Laivo ID,
 ,,,,,ship_imo,integer,,,,4,open,,Laivo IMO kodas,International Marytime Organization identifikacinis kodas
 ,,,,,ship_length,number,m,,,4,open,,Laivo gabaritinis ilgis,
 ,,,,,ship_max_drght,number,m,,,4,open,,Laivo grimzlė,
