@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ctryid,string,,,,4,open,,Valstybės kodas,
 ,,,,,db_high,integer,dB,,,4,open,,Triukšmo viršutinė reikšmė,
 ,,,,,db_low,integer,dB,,,4,open,,Triukšmo žemutinė reikšmė,
-,,,,,geom,geometry(polygon,3346),,,,3,open,,Teritorija,
+,,,,,geom,"geometry(polygon, 3346)",,,,3,open,,Teritorija,
 ,,,,,gid,integer,,,,4,open,,ID,
 ,,,,,group,string,,,,3,open,,Grupė,
 ,,,,,period,string,,,,3,open,,Paros laikas,
