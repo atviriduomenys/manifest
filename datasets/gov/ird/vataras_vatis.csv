@@ -22,7 +22,7 @@
 ,,,,,"adresas","url",,,,4,"open",,"Išsamaus skelbimo turinio URL adresas","Laikinai pateikiamas tik bendrasis Valstybės portalo adresas"
 ,,,,,"atnaujinimas","date","D",,,4,"open",,"Lentelės atnaujinimo data, atsižvelgiant ir į pradinių duomenų atsinaujinimą","Paruošiamas imant naujausio įrašo originaliuose duomenyse datą"
 ,,,,,,,,,,,,,,
-,,,,"PareigybesStatistika",,,,,,3,,,"Nestatutinių valstybės tarnautojų pareigybių statistika","Aktuali nestatutinių valstybės tarnautojų pareigybių statistika pagal Valstybės ir savivaldybių institucijas bei įstaigas. Pareigybių statistika skaičiuojama kaip įsteigtų pareigybių suma (sumuojant etatus, nes pareigybė gali sudaryti ir ne pilną etatą). Pareigybės - tai įstaigos turimos ar suplanuotos, bet nebūtinai užpildytos įvairių tipų darbo pozicijos; įsteigtų pareigybių skaičius gali skirtis nuo užimtų pareigybių skaičiaus ar šiuo metu aktyviai dirbančių asmenų skaičiaus. Nestatutiniai valstybės tarnautojai - tai, pvz., įstaigų vadovai, patarėjai, padėjėjai, specialistai; dažniausiai tai nėra visi įstaigoje dirbantys darbuotojai. Duomenų šaltinis - VATIS ir VATARAS. Rodomos tik šiuo metu egzistuojančios įstaigos, turinčios bent vieną tokio tipo pareigybę. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
+,,,,"PareigybesStatistika",,,"jar_kodas",,,3,,,"Nestatutinių valstybės tarnautojų pareigybių statistika","Aktuali nestatutinių valstybės tarnautojų pareigybių statistika pagal Valstybės ir savivaldybių institucijas bei įstaigas. Pareigybių statistika skaičiuojama kaip įsteigtų pareigybių suma (sumuojant etatus, nes pareigybė gali sudaryti ir ne pilną etatą). Pareigybės - tai įstaigos turimos ar suplanuotos, bet nebūtinai užpildytos įvairių tipų darbo pozicijos; įsteigtų pareigybių skaičius gali skirtis nuo užimtų pareigybių skaičiaus ar šiuo metu aktyviai dirbančių asmenų skaičiaus. Nestatutiniai valstybės tarnautojai - tai, pvz., įstaigų vadovai, patarėjai, padėjėjai, specialistai; dažniausiai tai nėra visi įstaigoje dirbantys darbuotojai. Duomenų šaltinis - VATIS ir VATARAS. Rodomos tik šiuo metu egzistuojančios įstaigos, turinčios bent vieną tokio tipo pareigybę. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
 ,,,,,"jar_kodas","string",,,,2,"open",,"Institucijos ar įstaigos Juridinių asmenų registro (JAR) kodas",
 ,,,,,"pk_1","number","U",,,2,"open",,"Įsteigtų etatų suma pareigybių kategorijoje 1: ""Politinio (asmeninio) pasitikėjimo""",
 ,,,,,"pk_2","number","U",,,2,"open",,"Įsteigtų etatų suma pareigybių kategorijoje 2: ""Karjeros valstybės tarnautojas""",
@@ -33,7 +33,7 @@
 ,,,,"ValstybineIstaiga",,,"id",,,4,,,"Valstybės ir savivaldybių institucijos bei įstaigos, jų pavaldumas","Aktualus ir išsamus valstybės ir savivaldybių institucijų bei įstaigų sąrašas, šių įstaigų pavaldumas viena kitai. Duomenų šaltinis - VATIS ir VATARAS. Pateikiamos tik šiuo metu egzistuojančios įstaigos. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt"
 ,,,,,"id","string",,,,2,"open",,"Unikalus įstaigos identifikatorius",
 ,,,,,"pavaldumas_id","string",,,,2,"open",,"Įstaigos, kuriai pavaldi šį įstaiga, identifikatorius",
-,,,,,"jar_kodas","string",,,,3,"open",,"Įstaigos Juridinių asmenų registro (JAR) kodas",
+,,,,,"jar_kodas","string",,,,2,"open",,"Įstaigos Juridinių asmenų registro (JAR) kodas",
 ,,,,,"pavadinimas","string",,,,2,"open",,"Įstaigos pavadinimas",
 ,,,,,"akronimas","string",,,,4,"open",,"Įstaigos sutrumpintas pavadinimas",
 ,,,,,"istaigu_grupe","string",,,,3,"open",,"Įstaigų grupė, kuriai priklauso šį įstaiga",
