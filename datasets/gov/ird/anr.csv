@@ -1,0 +1,36 @@
+"id","dataset","resource","base","model","property","type","ref","source","prepare","level","access","uri","title","description"
+,"datasets/gov/ird",,,,,,,,,,,,"Informatikos ir ryšių departamentas","Informatikos ir ryšių departamentas prie LR Vidaus reikalų ministerijos"
+,"datasets/gov/ird/anr",,,,,,,,,,,,"Administracinių nusižengimų registras","Registro objektai: LR administracinių nusižengimų kodekso nustatyta tvarka užfiksuoti administraciniai nusižengimai; LR įstatymų ir ES teisės aktų nustatyta tvarka užfiksuoti ūkio subjektų padaryti teisės pažeidimai, už kuriuos priežiūros institucijos skiria poveikio priemones. Registro valdytojas - LR Vidaus reikalų ministerija; tvarkytojas - Informatikos ir ryšių departamentas."
+,,,,"Bauda",,,"id",,,4,,,"Administracinių nusižengimų bylose paskirtos baudos","Administracinių nusižengimų registro (ANR) duomenų neagreguota lentelė (mikroduomenys),  kurioje viena eilutė yra vienas administracinis nusižengimas  už kurį yra paskirta bauda (administracinės nuobaudos rūšis). Šiuo metu yra įtraukiami tik tokie nusižengimai ,  kurių sudėtyje yra tik vienas Administracinių nusižengimų kodekso (ANK) straipsnis ir tik viena piniginė bauda. Paskirtos baudos nebūtinai yra apmokėtos. Taip pat dalis į imtį patenkančių nusižengimų yra tie,  dėl kurių priimti nutarimai gali būti apskųsti,  nutraukti ar perkvalifikuoti (ši informacija nepateikiama). Dėmesio: tai nėra oficialioji statistika,  naudojama eksperimentinė duomenų paruošimo metodika (pvz.,  neatsižvelgiama į galimus tolimesnius nusižengimo statuso pasikeitimus). Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
+,,,,,"id","string",,,,4,"open",,"Administracinio nusižengimo unikalus identifikatorius","Skirtas jungimui su kitom lentelėm"
+,,,,,"registruota","date","D",,,4,"open",,"Administracinio nusižengimo registravimo data",
+,,,,,"paskirta","date","D",,,4,"open",,"Baudos paskyrimo data",
+,,,,,"suma","number",,,,2,"open",,"Paskirtos baudos (už pagrindinį nusižengimo sudėties ANK straipsnį) dydis eurais",
+,,,,,,"comment","type",,"update(type: ""money"", ref: ""EUR"")",4,"open","spinta:40",,
+,,,,,"skaicius","integer","U",,,4,"open",,"Į nusižengimo sudėtį įeinančių unikalių ANK straipsnių (ir jų dalių) skaičius",
+,,,,,"straipsnis","string",,,,4,"open",,"Pagrindinis ANK straipsnis",
+,,,,,"dalis","string",,,,4,"open",,"Pagrindinio ANK straipsnio dalis",
+,,,,,"str_pav","string",,,,4,"open",,"ANK straipsnio pavadinimas",
+,,,,,"part_pav","string",,,,4,"open",,"ANK straipsnio dalies pavadinimas",
+,,,,,,,,,,,,,,
+,,,,"KetPazeidejas",,,"anr_id",,,4,,,"Kelių eismo taisyklių pažeidimai ir pažeidėjai","Administracinių nusižengimų registro (ANR) duomenų neagreguota lentelė (mikroduomenys),  kurioje įtraukti tik tie nusižengimai  kurių sudėtį nustatantys Administracinių nusižengimų kodekso (ANK) straipsniai yra susiję su Kelių eismo taisyklių (KET) pažeidimais (straipsniai 414-433,  439-441,  463). Viena eilutė yra vieno administracinio nusižengimo vieno straipsnio viena dalis,  tad vienas nusižengimas gali kartotis daugelyje eilučių. Kievienam nusižengimui yra priskirtas pažeidėjas (tačiau būna nemažai atvejų,  kuomet pažeidėjo duomenų nėra). Pažeidėjo duomenys nėra laikytini griežtai patikimais. Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt"
+,,,,,"anr_id","string",,,,4,"open",,"Administracinio nusižengimo unikalus identifikatorius","Skirtas jungimui su kitom lentelėm  taip pat konkretaus nusižengimo sudėties (straipsnių) radimui keliose eilutėse Administracinio nusižengimo unikalus identifikatorius,  skirtas jungimui su kitom lentelėm,  taip pat konkretaus nusižengimo sudėties (straipsnių) radimui keliose eilutėse"
+,,,,,"anr_uzregistruota","date","M",,,4,"open",,"Administracinio nusižengimo registravimo registre data",
+,,,,,"amzius","integer","yr",,,4,"open",,"Pažeidėjo amžius","Asmens amžius nusižengimo registravimo metu. Gali būti nežinomas."
+,,,,,"lytis","string",,,,3,"open",,"Pažeidėjo lytis","Gali būti nežinoma"
+,,,,,"pilietybe","string",,,,4,"open",,"Pažeidėjo pilietybė","Gali būti nežinoma,  gali būti dviguba ir pan."
+,,,,,"ank_straipsnis","string",,,,4,"open",,"Pagrindinis ANK straipsnis",
+,,,,,"ank_dalis","string",,,,4,"open",,"Pagrindinio ANK straipsnio dalis",
+,,,,,"ank_straipsnis_pav","string",,,,4,"open",,"Pagrindinio ANK straipsnio pavadinimas",
+,,,,,"ank_dalis_pav","string",,,,4,"open",,"Pagrindinio ANK straipsnio dalies pavadinimas",
+,,,,,,,,,,,,,,
+,,,,"Nusizengimas",,,,,,3,,,"Administracinių nusižengimų detali mėnesinė statistika","Administracinių nusižengimų registro (ANR) mėnesiniai statistiniai duomenys apie Administracinių nusižengimų kodekso nustatyta tvarka užfiksuotus administracinius nusižengimus. Nusižengimų skaičiai pateikiami Administracinių nusižengimų kodekso (ANK) straipsnio bei registracijos mėnesio detalumu. Vieno nusižengimo sudėtyje gali būti keli ANK straipnsniai,  todėl stulpelio „count“ negalima sumuoti. Prasminga yra skaičiuoti „count“/“total“ santykį."
+,,,,,"month","date","M",,,4,"open",,"Mėnuo","Ataskaitinis kalendorinis mėnuo, kurio metu buvo užregistruoti administraciniai nusižengimai"
+,,,,,"count","integer","U",,,4,"open",,"Konkrečių nusižengimų","Kiek unikalių,  konkretų ANK straipsnį savo sudėtyje turinčių nusižengimų buvo užregistruota per ataskaitinį mėnesį"
+,,,,,"total","integer","U",,,4,"open",,"Iš viso bet kokios rūšies ANK nusižengimų tą mėnesį","Kiek bet kokios rūšies ANK nusižengimų iš viso buvo užregistruota per ataskaitinį mėnesį"
+,,,,,"ank_skyrius","string",,,,4,"open",,"ANK skyrius","Administracinių nusižengimų kodekso skyrius (priskirtas automatiškai  ne iš registro  galimai nepatikimas)"
+,,,,,"ank_straipsnis","string",,,,4,"open",,"ANK straipsnis","Administracinių nusižengimų kodekso straipsnis"
+,,,,,"ank_straipsnio_dalis","string",,,,4,"open",,"ANK straipsnio dalis","Administracinių nusižengimų kodekso straipsnio dalis"
+,,,,,"ank_skyrius_pav","string",,,,2,"open",,"ANK skyriaus pavadinimas","Administracinių nusižengimų kodekso skyriaus pavadinimas"
+,,,,,"ank_straipsnis_pav","string",,,,2,"open",,"ANK straipsnio pavadinimas","Administracinių nusižengimų kodekso straipsnio pavadinimas"
+,,,,,"ank_straipsnio_dalis_pav","string",,,,2,"open",,"ANK straipsnio dalies pavadinimas","Administracinių nusižengimų kodekso straipsnio dalies pavadinimas"
