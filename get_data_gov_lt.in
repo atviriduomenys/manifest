@@ -439,7 +439,6 @@ datasets/gov/ntb/pacientu_valios_pareiskimai.csv
 datasets/gov/vat/r9_trasos.csv
 datasets/gov/aad/ukio_subjektu_patikrinimai.csv
 datasets/gov/vat/r11_agrochemijos_patikrinimai.csv
-datasets/gov/ird/administraciniai_nusizengimai.csv
 datasets/gov/vat/r34_isduoti_aap.csv
 datasets/gov/ltsa/vidaus_vandenu_laivai.csv
 datasets/gov/ltsa/juru_laivai.csv
@@ -448,10 +447,5 @@ datasets/gov/ltsa/gelezinkeliu_specialistai.csv
 datasets/gov/ltsa/keliu_licencijos.csv
 datasets/gov/ltsa/keliu_specialistai.csv
 datasets/gov/ltsa/gelezinkeliu_triuksmas.csv
-datasets/gov/ird/administraciniu_bylu_nusižengimai.csv
-datasets/gov/ird/valstybines_istaigos.csv
-datasets/gov/ird/ket_pazeidimai.csv
-datasets/gov/ird/pareigybes.csv
-datasets/gov/ird/darbo_skelbimai.csv
 datasets/gov/ird/anr.csv
 datasets/gov/ird/vataras_vatis.csv
