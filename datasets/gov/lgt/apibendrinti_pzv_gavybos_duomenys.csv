@@ -1,0 +1,8 @@
+,datasets/gov/lgt/apibendrinti_pzv_gavybos_duomenys,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PozeminioVandensGavybaKiekis,,,,,,,,,Apibendrinti požeminio vandens gavybos duomenys,
+,,,,,pavadinimas,string,,,,2,open,,Požeminio vandens pavadinimas,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
+,,,,,metai,integer,,,,4,open,,Metai,
+,,,,,isgauta_m3,integer,,,,4,open,,Išgautas kiekis kubiniais metrais,
+,,,,,isgauta_m3_per_para,integer,,,,4,open,,Išgauta kubinių metrų per parą,

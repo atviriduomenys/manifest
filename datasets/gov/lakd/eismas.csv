@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/lakd/eismas,,,,,,,,,,,,,
+,datasets/gov/lakd/eismas,,,,,,,,,,,,,
 ,,,,,,prefix,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,aadttraffic,,,,geojson,,https://gissrv.eismoinfo.lt/server/rest/services/LAKIS/Kelio_parametrai/MapServer/8/query?outFields=*&where=1%3D1&f=geojson,,,,,,
 ,,,,,,,,,,,,,,

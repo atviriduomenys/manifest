@@ -1,0 +1,6 @@
+,,csv,,,,csv,,https://data.gov.lt/dataset/1951/download/10660/Kitos%20veiklos%20pajamos%20ir%20s%C4%85naudos.xlsx,,,,,,
+,,,,VeiklosSanauda,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,straipsnio_pav,string  ,,Straipsnio pavadinimas,,3,open,,Straipsnio pavadinimas,
+,,,,,ataskaitinis_l ,number,,Ataskaitinis laikotarpis,,3,open,,Ataskaitinis laikotarpis,
+,,,,,praejes_atask_l,number,,Praėjęs ataskaitinis laikotarpis ,,3,open,,Praėjęs ataskaitinis laikotarpis,

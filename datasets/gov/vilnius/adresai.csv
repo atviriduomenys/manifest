@@ -1,0 +1,13 @@
+;;adresai;;;;csv;;https://open.vilnius.lt/dataset/vilnius-addresses;;;;;;
+;;;;Adresai;;;addresses;;;;;;;Vilniaus miesto gatvių duomenų rinkinys iš Vilniaus savivaldybės adresų registro. Duomenų geografinė imtis - Vilniaus miestas.
+;;;;;gatId;integer;;GAT_ID;;3;open;;street ID;
+;;;;;street;string;;STREET;;3;open;;street name;
+;;;;;houseNo;string;;HOUSE_NO;;3;open;;house number;
+;;;;;eldership;string;;ELDERSHIP;;3;open;;eldership name;
+;;;;;place;string;;PLACE;;3;open;;city;
+;;;;;longitude;number;;LONGITUDE;;3;open;;longitude, geographic coordinate that specifies the east–west position of an address;
+;;;;;latitude;number;;LATITUDE;;3;open;;latitude, geographic coordinate that specifies the north–south position of an address;
+;;;;;fullAddress;string;;FULL_ADDRESS;;3;open;;full address - street name together with the house name.;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;

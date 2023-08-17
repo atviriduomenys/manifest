@@ -1,0 +1,6 @@
+,,csv,,,,csv,,https://data.gov.lt/dataset/1844/download/10451/Savivaldyb%C4%97s%20tarnybini%C5%B3%20lengv%C5%B3j%C5%B3%20automobili%C5%B3%20s%C4%85ra%C5%A1as.csv,,,,,,
+,,,,LengvasisAutomobilis,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,automobilio_marke,string  ,,Automobilio markė,,3,open,,Automobilio markė,
+,,,,,valstybinis_nr,string  ,,Valstybinis numeris,,3,open,,Valstybinis numeris,
+,,,,,spalva,string  ,,Spalva,,3,open,,Spalva,

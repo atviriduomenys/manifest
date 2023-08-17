@@ -1,0 +1,6 @@
+,,csv,,,,csv,,https://data.gov.lt/dataset/1949/download/10656/Veiklos-rezultat%C5%B3-ataskaita%202021-09-30.csv,,,,,,
+,,,,VeiklosAtaskaita,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,straipsniai,string  ,,Straipsniai,,3,open,,Straipsniai,
+,,,,,ataskaitinis_l ,number,,Ataskaitinis laikotarpis,,3,open,,Ataskaitinis laikotarpis,
+,,,,,praejes_atask_l,number,,Praėjęs ataskaitinis laikotarpis ,,3,open,,Praėjęs ataskaitinis laikotarpis,

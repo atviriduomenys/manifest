@@ -1,0 +1,8 @@
+,,csv,,,,csv,,https://data.gov.lt/dataset/1743/download/{}.csv,,,,,,
+,,,,PagalbaInvestuotojams,,,id,10872/Pagalba_investuotojams,,,,,Valstybės pagalba užsienio investuotojams,
+,,,,,id,integer,,ID,,3,open,,Id,
+,,,,,metai,date,Y,METAI,,3,open,,Metai,"Metai, kuomet suteikta valstybės pagalba."
+,,,,,sektorius,text,,SEKTORIUS,,3,open,,Sektorius,"Sektorius, kuriame investuojama."
+,,,,,darbo_vietos,integer,,DARBO VIETOS,,3,open,,Darbo vietos,Užsienio investuotojo kuriamų naujų darbo vietų skaičius Lietuvoje.
+,,,,,investicijos,currency,EUR,INVESTICIJU DYDIS,,3,open,,Investicijų dydis,Užsienio investuotojo investuojamos sumos dydis.
+,,,,,valstybes_pagalba,currency,EUR,VALSTYBES PAGALBA,,3,open,,Valstybės pagalba,"Suma, kurią suteikia Lietuvos valstybė užsienio investuotojui."

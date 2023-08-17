@@ -1,0 +1,6 @@
+,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ';'),,,,,
+,,,,FinansinesBuklesAtaskaita,,,nr,,,,,,,
+,,,,,nr,string,,Nr,,4,open,,Nr,
+,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
+,,,,,dabartinis_ataskaitinis_laikotarpis,number,,Dabartinis ataskaitinis laikotarpis,,3,open,,Dabartinis ataskaitinis laikotarpis,
+,,,,,praejes_ataskaitinis_laikotarpis,number,,Praėjęs ataskaitinis laikotarpis,,3,open,,Praėjęs ataskaitinis laikotarpis,

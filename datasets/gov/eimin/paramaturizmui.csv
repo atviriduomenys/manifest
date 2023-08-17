@@ -1,0 +1,9 @@
+,,csv,,,,csv,,https://data.gov.lt/dataset/1855/download/{}.csv,,,,,,
+,,,,ParamaTurizmui,,,id,10781/Turizmo_duomenys,,,,,Valstybės pagalba turizmo sektoriaus atstovams,
+,,,,,id,integer,,ID,,3,open,,Id,
+,,,,,pavadinimas,string,,Pavadinimas,,3,open,,Paramą gaunantis asmuo,"Juridinio asmens pavadinimas arba fizinis asmuo, kuris gauna paramą."
+,,,,,kodas,string,,Kodas,,3,open,,Juridinio asmens kodas arba fizinis asmuo,FA rodo fizinį asmenį.
+,,,,,suma,currency,EUR,Skirta suma,,3,open,,Paramos suma,Skirtos paramos suma eurais.
+,,,,,priemone,text,,Priemonė,,3,open,,Priemonės pavadinimas,"Priemonės, pagal kurią skiriama parama, pavadinimas."
+,,,,,prad_data,date,,Pradžios data,,3,open,,Pradžios data,Paraiškų priėmimo pradžios data.
+,,,,,pab_data,date,,Pabaigos data,,3,open,,Pabaigos data,Paraiškų priėmimo pabaigos data.

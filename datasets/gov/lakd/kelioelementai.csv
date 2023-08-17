@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/lakd/kelioelementai,,,,,,,,,,,,,
+,datasets/gov/lakd/kelioelementai,,,,,,,,,,,,,
 ,,roadelement,,,,geojson,,https://gis.ktvis.lt/arcgis/rest/services/PUB/PUB_KELIO_ELEMENTAI/MapServer/5/query?outFields=*&where=1%3D1&f=geojson,,,,,,
 ,,,,RoadStop,,,id,,,,,,Aikštelės,
 ,,,,,id,integer,,id,,4,open,,,
