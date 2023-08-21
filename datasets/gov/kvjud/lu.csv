@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kvjud/lu,,,,,,,,,,,,,
 ,,LaivaiUoste,,,,xml,,https://www.portofklaipeda.lt/modules/LaivaiUoste/log/posted_data.xml,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,LaivasUoste,,,,/LaivaiUoste/LaivasUoste,,,,,,
