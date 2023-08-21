@@ -1,7 +1,9 @@
-;;csv;;;;csv;;https://data.gov.lt/dataset/1531/download/9515/qr_subs.csv;;;;;;
-;;;;CovidParama;;;JAR_PARAISKA;;;;;;Subsidijos nukentjusiems nuo COVID-19;Juridiniai ir fiziniai asmenys, kuriems buvo skirta subsidija pagal priemones: Subsidijos nuo COVID-19 nukentjusioms monms, Subsidijos nuo COVID-19 labiausiai nukentjusioms monms, Subsidijos nuo COVID-19 nukentjusiems individuali veikl vykdantiems asmenims, Turgaviets mokesio kompensacija
-;;;;;JAR_PARAISKA;string;;Pareikjo juridinio asmens kodas;;3;open;;Pareikjo juridinio asmens kodas;Arba paraikos numeris, jeigu paramos gavjas fizinis asmuo
-;;;;;PARAMOS_SUMA;currency;;Konkreiam pareikjui apskaiiuota galimos subsidijos suma, Eur;;3;open;;Konkreiam pareikjui apskaiiuota galimos subsidijos suma, Eur;
-;;;;;SPRENDIMO_DATA;date;;Sprendimo skirti finansavim data;;3;open;;Sprendimo skirti finansavim data;
-;;;;;JAR_EVRK;text;;MM EV;;3;open;;MM EV;Pareikjo vykdomos veiklos EVRK kodas, jeigu paramos gavjas yra juridinis asmuo
-;;;;;PRIEMONE;text;;Priemons poymis;;3;open;;Priemons poymis;Paramos priemons pavadinimas
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/covidparama,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1531/download/9515/qr_subs.csv,,,,,,
+,,,,CovidParama,,,JAR_PARAISKA,,,3,,,Subsidijos nukentėjusiems nuo COVID-19,"Juridiniai ir fiziniai asmenys, kuriems buvo skirta subsidija pagal priemones: Subsidijos nuo COVID-19 nukentėjusioms įmonėms, Subsidijos nuo COVID-19 labiausiai nukentėjusioms įmonėms, Subsidijos nuo COVID-19 nukentėjusiems individualių veiklų vykdantiems asmenims, Turgavietės mokesčio kompensacija"
+,,,,,JAR_PARAISKA,string,,Pareiškėjo juridinio asmens kodas,,3,open,,Pareiškėjo juridinio asmens kodas,"Arba parai?kos numeris, jeigu paramos gav?jas fizinis asmuo"
+,,,,,PARAMOS_SUMA,currency,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",,3,open,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",
+,,,,,SPRENDIMO_DATA,date,D,Sprendimo skirti finansavimą data,,4,open,,Sprendimo skirti finansavimų data,
+,,,,,JAR_EVRK,integer,,MM EV,,4,open,,MM EV,"Pareiškėjo vykdomos veiklos EVRK kodas, jeigu paramos gavėjas yra juridinis asmuo"
+,,,,,PRIEMONE,text,,Priemonės požymis,,4,open,,Priemonės požymis,Paramos priemonės pavadinimas
