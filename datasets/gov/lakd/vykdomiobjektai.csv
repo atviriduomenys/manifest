@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/lakd/vykdomiobjektai,,,,,,,,,,,,,
+,datasets/gov/lakd/vykdomiobjektai,,,,,,,,,,,,,
 ,,,,,,prefix,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,roadobject,,,,geojson,,https://gissrv.eismoinfo.lt/server/rest/services/PORTAL/PlanuojamiVP/MapServer/4/query?outFields=*&where=1%3D1&f=geojson,,,,,,
