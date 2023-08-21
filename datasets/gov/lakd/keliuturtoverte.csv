@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasasets/gov/lakd/keliuturtoverte,,,,,,,,,,,,,
+,datasets/gov/lakd/keliuturtoverte,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,verte,,,,csv,,https://data.gov.lt/dataset/1253/download/10622/keliu_likutine_verte.csv,,,,,,
