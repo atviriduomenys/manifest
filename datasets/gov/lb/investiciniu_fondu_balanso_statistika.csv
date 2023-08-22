@@ -1,8 +1,10 @@
-;;investiciniu fondu balanso statistika;;;;csv;;https://www.lb.lt/lt/m_statistika/t-investiciniu-fondu-balanso-statistika/?export=csv;;;;;;
-;;;;;code;string;;https://www.lb.lt/lt/m_statistika/getschema/?ref=IFS;;;open;;kodas;
-;;;;;en_long_title;text;;;;;open;;angliškas ilgas pavadinimas;
-;;;;;lt_long_title;text;;;;;open;;lietuviškas ilgas pavadinimas;
-;;;;;date;date;;;;;open;;data;
-;;;;;value;integer;;;;;open;;reikšmė;
-;;;;;power;integer;;;;;open;;"Matavimo vienetų daugiklis
-";
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/LB/if_balanso_statistika,,,,,,,,,,,,Investicinio fondo balanso statistika,
+,,ifbs,,,,csv,,https://www.lb.lt/lt/m_statistika/t-investiciniu-fondu-balanso-statistika/?export=csv,,,,,,
+,,,,BalansoStatistika,,,code,,,4,,,,
+,,,,,code,string,,,,4,open,,kodas,
+,,,,,en_long_title,text,,,,4,open,,angliškas ilgas pavadinimas,
+,,,,,lt_long_title,text,,,,4,open,,lietuviškas ilgas pavadinimas,
+,,,,,date,date,M,,,4,open,,data,
+,,,,,value,number,,,,4,open,,reikšmė,
+,,,,,power,integer,,,,4,open,,Matavimo vienetų daugiklis,
