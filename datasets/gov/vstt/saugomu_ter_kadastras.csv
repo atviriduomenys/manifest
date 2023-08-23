@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
@@ -61,7 +61,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos poligono funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosRezervatas,,,id,,,4,,,Biosferos rezervatai,
@@ -106,7 +106,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie biosferos rezervato funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,,,,,,,,,,
@@ -204,7 +204,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,kor,date,D,,,4,open,,Objekto redagavimo data,
 ,,,,,,,,,,,,,,
@@ -329,7 +329,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Draustinis,,,id,,,4,,,Draustiniai,
@@ -396,7 +396,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,ta_nust_st_dalis,string,,,,4,open,,Teises aktas,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,FunkcinioPrioritetoZona,,,id,,,4,,,Funkcinio prioriteto zonos,
@@ -448,7 +448,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,reiksme,integer,,,,2,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisGpoPlotas,,,id,,,4,,,Geologiniai GPO Plot,
@@ -518,7 +518,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisGpoTaskas,,,id,,,4,,,Geologiniai GPO Taškai,
@@ -589,7 +589,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,GeomorfologinisGpoPlotas,,,id,,,4,,,Geomorfologiniai GPO Plotai,
@@ -667,7 +667,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,HidrogeologinisGpoPlotas,,,id,,,4,,,Hidrogeologiniai GPO Plotai,
@@ -738,7 +738,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vandenskietumas,number,,,,3,open,,Vandens kietumas,
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,vandens_tipas,string,,,,2,open,,Vandens tipas,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,HidrografinisGpoPlotas,,,id,,,4,,,Hidrografiniai GPO Plotai,
@@ -809,7 +809,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,aprasymas,string,,,,2,open,,Aprašymas,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Parkas,,,id,,,4,,,Parkai,
@@ -865,7 +865,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,funkc_prior_zon,string,,,,4,open,,Prioriteto zona,Duomenys apie funkcinio prioriteto zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,PauksciuApsaugaiSvarbiTeritorija,,,id,,,4,,,Paukščių apsaugai svarbios teritorijos,
@@ -885,7 +885,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,isreg_ta,string,,,,4,open,,Išregistravimo,Teisės aktas
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Rezervatas,,,id,,,4,,,Rezervatai,
@@ -939,7 +939,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,ta_nust_st_dalis,string,,,,4,open,,Teises aktas,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,RezervatineApyrube,,,id,,,4,,,Rezervatinės apyrubės,
@@ -981,7 +981,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Sklypas,,,id,,,4,,,Atkuriamieji sklypai ir genetiniai sklypai,
@@ -1028,7 +1028,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,ZoologinisGpoPlotas,,,id,,,4,,,Zoologiniai GPO Plotai,
@@ -1095,5 +1095,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,obj_status,integer,,,,2,open,,Objekto būsena,
 ,,,,,aprasymas,string,,,,2,open,,Aprašymas,
-,,,,,geometrija,geometry(3346),,,,4,open,,Ploto geometrija,
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
