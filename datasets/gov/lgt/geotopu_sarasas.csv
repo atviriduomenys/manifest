@@ -1,9 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/geotopu_sarasas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,GeotopuSarasas,,,eil_nr,,,4,open,,Geotopų sąrašas (katalogas) ,Geotopų sąrašas (katalogas)
 ,,,,,eil_nr,integer,,,,4,open,,Įrašo eilės numeris,
 ,,,,,tipas,string,,,,3,open,,Geotopo tipas,
-,,,,,taskas,geometry(point,3346),m,,,4,open,,Taškas,
+,,,,,taskas,"geometry(point,3346)",m,,,4,open,,Taškas,
 ,,,,,vardas,string,,,,4,open,,Geotopo vardas,
 ,,,,,sinonimai,string,,,,4,open,,Geotopo vardo sinonimas,
 ,,,,,adresas,string,,,,2,open,,Geotopo adresas,
