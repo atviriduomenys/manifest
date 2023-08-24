@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/LB/if_balanso_statistika,,,,,,,,,,,,Investicinio fondo balanso statistika,
+,datasets/gov/lb/if_balanso_statistika,,,,,,,,,,,,Investicinio fondo balanso statistika,
 ,,ifbs,,,,csv,,https://www.lb.lt/lt/m_statistika/t-investiciniu-fondu-balanso-statistika/?export=csv,,,,,,
 ,,,,BalansoStatistika,,,code,,,4,,,,
 ,,,,,code,string,,,,4,open,,kodas,
