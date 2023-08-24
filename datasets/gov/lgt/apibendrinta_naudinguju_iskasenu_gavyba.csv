@@ -8,5 +8,5 @@
 ,,,,,rusis,string,,,,4,open,,Išteklių rušis,
 ,,,,,mato_vnt,string,,,,2,open,,Mato vienetas,
 ,,,,,metai,integer,,,,2,open,,Gavybos metai,
-,,,,,,comment,type,,update(type:”date”, ref:”Y”,4,,spinta:213,,
+,,,,,,comment,type,,update(type:”date”, ref:”Y”),4,,spinta:213,,
 ,,,,,kiekis,integer,,,,2,open,,Išgautas kiekis,
