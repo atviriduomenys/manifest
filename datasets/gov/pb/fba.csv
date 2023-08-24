@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/fba,,,,,,,,,,,,,
+,datasets/gov/pb/fba,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/1663/download/9591/vpb-finansines-bukles-ataskaita-2020.csv,tabular(sep: ';'),,,,,
 ,,,,FinansinesBuklesAtaskaita,,,eil_nr,,,4,,,,
