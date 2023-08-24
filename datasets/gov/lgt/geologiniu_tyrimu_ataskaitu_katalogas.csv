@@ -1,4 +1,5 @@
-,datasets/gov/lgt/geologiniu_tyrimu_ataskaitu_katalogas,,,,,,,,,,,,,
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lgt/geologiniu_tyrimu_ataskaitu_katalogas,,,,,,,,,,,,Geologinių tyrimų ataskaitų katalogas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisTyrimas,,,fondo_nr,,,4,,,Geologinių tyrimų ataskaitų katalogas,
@@ -8,7 +9,7 @@
 ,,,,,,comment,property,,"update(property: ""rubrika[]"", type: ""string"", source: ""Rubrika"")",4,,,,
 ,,,,,autoriai,string,,,,2,open,,Autoriai,
 ,,,,,,comment,property,,"update(property: ""autorius[]"", type: ""string"", source: ""Autorius"")",4,,,,
-,,,,,antraste,string,,,,2,open,,Antrastė,
+,,,,,antraste,string,,,,2,open,,Antraštė,
 ,,,,,parengimo_metai,integer,,,,2,open,,Parengimo metai,
 ,,,,,apribota_iki,date,D,,,4,open,,Apribota iki,
 ,,,,,aprasas,string,,,,2,open,,Aprašas,
