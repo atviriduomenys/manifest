@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/LB/is_statistika,,,,,,,,,,,,,
+,datasets/gov/lb/is_statistika,,,,,,,,,,,,,
 ,,iss,,,,csv,,https://www.lb.lt/lt/m_statistika/t-isores-sektoriaus-statistika/?export=csv,,,,,,
 ,,,,Statistika,,,,,,4,,,,
 ,,,,,code,string,,,,4,open,,kodas,
