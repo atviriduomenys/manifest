@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vra,,,,,,,,,,,,,
+,datasets/gov/pb/vra,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,veiklosrezultatai,,,,csv,,https://data.gov.lt/dataset/1664/download/9592/vpb-veiklos-rezultatu-ataskaita-2020.csv,tabular(sep: ';'),,,,,
 ,,,,VeiklosRezultatuAtaskaita,,,eil_nr,,,4,,,,
