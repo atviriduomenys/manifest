@@ -4,7 +4,7 @@
 ,,,,,iraso_data,date,D,,,4,open,,Įrašo data,,
 ,,,,,ivykio_data,date,D,,,4,open,,Įvykio data,,
 ,,,,,tipas,string,,,,3,open,,Tipas,,
-,,,,,koord,geometry (POINT,3346),m,,,4,open,,Taškas,,
+,,,,,koord,"geometry (POINT,3346)",m,,,4,open,,Taškas,,
 ,,,,,pavadinimas,string,,,,2,open,,Geologinio reiškinio pavadinimas,,
 ,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,,spinta:204,,,
 ,,,,,adresas,string,,,,2,open,,Adresas,,
