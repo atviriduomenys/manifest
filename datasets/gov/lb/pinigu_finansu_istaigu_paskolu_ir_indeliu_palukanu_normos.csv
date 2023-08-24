@@ -1,8 +1,10 @@
-;;pinigu finansu istaigu paskolu ir indeliu palukanu normos;;;;csv;;https://www.lb.lt/lt/m_statistika/t-pinigu-finansu-istaigu-paskolu-ir-indeliu-palukanu-normos-1/?export=sdmx;;;;;;
-;;;;;code;string;;https://www.lb.lt/lt/m_statistika/getschema/?ref=PNS;;;open;;kodas;
-;;;;;en_long_title;text;;;;;open;;angliškas ilgas pavadinimas;
-;;;;;lt_long_title;text;;;;;open;;lietuviškas ilgas pavadinimas;
-;;;;;date;date;;;;;open;;data;
-;;;;;value;integer;;;;;open;;reikšmė;
-;;;;;power;integer;;;;;open;;"Matavimo vienetų daugiklis
-";
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lb/pn_statistika,,,,,,,,,,,,Pinigų finansų įstaigų paskolų ir indėlių palūkanų normų statistika ,
+,,pns,,,,csv,,https://www.lb.lt/lt/m_statistika/t-pinigu-finansu-istaigu-paskolu-ir-indeliu-palukanu-normos-1/?export=sdmx,,,,,,
+,,,,PalukanuNorma,,,"code, date, value",,,4,,,,
+,,,,,code,string,,,,4,open,,Kodas,
+,,,,,en_long_title,string,,,,4,open,,Angliškas ilgas pavadinimas,
+,,,,,lt_long_title,string,,,,4,open,,Lietuviškas ilgas pavadinimas,
+,,,,,date,date,M,,,4,open,,Data,
+,,,,,value,number,,,,4,open,,Reikšmė,
+,,,,,power,integer,,,,4,open,,"Matavimo vienetų daugiklis
