@@ -1,8 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/leidimas_naudoti_naudingasiais_iskasenas_duomenys,,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,
 ,,,,,,,,,,,,,,,
-,,,,LeidimasNaudotiIskasenas,,,id,,,4,open,,Leidimų naudoti naudingųjų iškasenų (išskyrus angliavandenilius), požeminio vandens išteklius ir žemės gelmių ertmes, duomenys,,
+,,,,LeidimasNaudotiIskasenas,,,id,,,4,open,,"Leidimų naudoti naudingųjų iškasenų (išskyrus angliavandenilius), požeminio vandens išteklius ir žemės gelmių ertmes, duomenys",
 ,,,,,id,integer,,,,4,open,,Įrašo numeris,,
 ,,,,,nr,string,,,,4,open,,Leidimo numeris,,
 ,,,,,data_nuo,date,D,,,4,open,,Leidimo išdavimo data,,
