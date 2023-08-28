@@ -1,3 +1,4 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/demografija/med_mirties_liudijimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,MedMirtiesLiudijimas,,,,,,4,open,,Mirčių skaičiai pagal elektroninius medicininius mirties liudijimus,
