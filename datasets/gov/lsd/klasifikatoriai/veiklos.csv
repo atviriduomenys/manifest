@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
+,datasets/gov/lsd/klasifikatoriai/veiklos,,,,,prefix,,,,,,http://www.w3.org/2004/02/skos/core#,Statistikos departamento klasifikatoriai,Ekonominės veiklos rūšies klasifikatorius,
 ,,,,,,,,,,,,,,,
 ,,,,Lygmuo,,,,,,,,,,,
 ,,,,,pavadinimas_lt,string,,,,3,open,,Pavadinimas,,
