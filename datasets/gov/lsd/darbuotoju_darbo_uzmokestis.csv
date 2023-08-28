@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,key_e,integer,,,,3,open,,Darbuotojo kodas ,
 ,,,,,evrk,string,,,,4,open,,"Ekonominės veiklos rūšies kodas (EVRK 2 red., sekcijos) ",
 ,,,,,apsk_kodas,string,,,,3,open,,Apskrities kodas,
-,,,,,,enum,,1',,,,,Alytaus apskritis,
+,,,,,,enum,,'1',,,,,Alytaus apskritis,
 ,,,,,,,,'2',,,,,Kauno apskritis,
 ,,,,,,,,'3',,,,,Klaipėdos apskritis,
 ,,,,,,,,'4',,,,,Marijampolės apskritis,
