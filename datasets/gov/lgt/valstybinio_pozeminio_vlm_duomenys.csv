@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,postas,string,,,,4,open,,Stebimojo posto pavadinimas,
 ,,,,,posto_id,integer,,,,4,open,,Stebimojo posto numeris,
 ,,,,,tasko_id,integer,,,,4,open,,Taško numeris,
-,,,,,koord,geometry(point,3346),m,,,4,open,,Koordinatės,
+,,,,,koord,"geometry(point,3346)",m,,,4,open,,Koordinatės,
 ,,,,,gr_nr,integer,,,,4,open,,Gręžinio numeris,
 ,,,,,abs_aukstis,number,m,,,4,open,,Taško absoliutinis aukštis,
 ,,,,,data,date,D,,,4,open,,Matavimo data,
