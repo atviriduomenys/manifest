@@ -1,10 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/valstybinio_pvm_hidrochemijos_duomenys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,PVMHidrochemija,,,,,,4,open,,Valstybinio požeminio vandens monitoringo požeminio vandens hidrochemijos duomenys,
 ,,,,,posto_nr,integer,,,,4,open,,Stebimojo posto numeris,
 ,,,,,posto_pavadinimas,string,,,,4,open,,Stebimojo posto pavadinimas ,
 ,,,,,grezinio_nr,string,,,,4,open,,Gręžinio numeris,
-,,,,,koord,geometry(point, 3346),m,,,4,open,,Koordinatės,Koordinatės
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Koordinatės,Koordinatės
 ,,,,,abs_aukstis,number,m,,,4,open,,Taško absoliutinis aukštis,
 ,,,,,gylis_nuo,number,m,,,4,open,,Bandinio  paėmimo intervalo  gylis nuo,
 ,,,,,gylis_iki,number,m,,,4,open,,Bandinio paėmimo intervalo  gylis iki,
