@@ -1,3 +1,4 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title
 ,datasets/gov/lgt/zemes_gelmiu_istekliu_rusys,,,,,,,,,,,,
 ,,,,,,,,,,,,,
 ,,,,ZemesGelmiuIstekliuRusis,,,kodas,,,4,,,Žemės gelmių išteklių rūšys (klasifikatorius)
