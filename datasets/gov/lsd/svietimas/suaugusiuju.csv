@@ -1,3 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,,,,,,enum,sex,,1,,,,Vyras,
+,,,,,,,,,2,,,,Moteris,
+,,,,,,,,,,,,,,
+,datasets/gov/lsd/svietimas/suaugusiuju,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,SuaugusiujuSvietimas2005,,,,,,,,,Suaugusiųjų švietimo statistinis tyrimas 2005 m.,2005 metais atliktas suaugusiųjų švietimo statistinio tyrimas
 ,,,,,indyvidualno,integer,,,,,open,,Asmens ID,
