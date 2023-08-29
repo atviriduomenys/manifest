@@ -1,3 +1,4 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/sdg,,,,,,,,,,,,,
 ,,,,KaimoGyventojas2kmNuoKelio,,,grid_id,,,4,,,"Kaimo gyventojų, gyvenančių 2 km spinduliu nuo visus metus funkcionuojančio kelio, dalis, 1 km stačiakampėse gardelėse","Jungtinių Tautų 70-ojoje sesijoje 2015 m. rugsėjo 25 d. priimta Generalinės Asamblėjos rezoliucija „Keiskime mūsų pasaulį: Darnaus vystymosi darbotvarkė iki 2030 metų“. Vienas iš darnaus vystymosi rodiklių, parengtas detaliu, 1 km gardelių, lygmeniu: 9.1.1. Kaimo gyventojų, gyvenančių 2 km spinduliu nuo visus metus funkcionuojančio kelio, dalis."
 ,,,,,grid_id,ref,"/datasets/gov/lsd/grid/Grid1KmSq",,,4,open,,Stačiakampės gardelės unikalus kodas,"Susideda iš gardelės dydžio (pvz., 1x1km) ir X ir Y koordinačių pirmųjų penkių skaičių (pvz., 1x1kmX30000Y60000)"
