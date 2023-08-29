@@ -9,5 +9,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Lytis,
 ,,,,,,enum,,,"""mot""",,,,Moteris,
 ,,,,,,,,,"""vyr""",,,,Vyras,
-,,,,,priezastis,ref,,,datasets/gov/vlk/tlk10am/Tlk10am,5,open,,Mirties priežasties klasifikatorius,
+,,,,,priezastis,ref,,,/datasets/gov/vlk/tlk10am/Tlk10am,5,open,,Mirties priežasties klasifikatorius,
 ,,,,,asmenu_sk,integer,,,,2,open,,Mirusių asmenų skaičius,
