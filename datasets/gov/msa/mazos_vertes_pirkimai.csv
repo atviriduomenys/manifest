@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/mazos_vertes_pirkimai,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1904/download/10518/Ma%C5%BEos%20vert%C4%97s%20pirkimai.csv,,,,,,
 ,,,,MazosVertesPirkimas,,,id,,,4,,,,
 ,,,,,id,integer,,ID,,4,open,,ID,
