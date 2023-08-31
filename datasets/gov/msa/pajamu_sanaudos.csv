@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/veiklu_sanaudos,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1952/download/10661/Finansin%C4%97s-ir-investicin%C4%97s-veiklos-pajamos-ir-s%C4%85naudos.csv,,,,,,
 ,,,,PajamosSanauda,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
