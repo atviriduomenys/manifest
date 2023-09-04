@@ -1,7 +1,0 @@
-,,atvirasodra,,,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"extract(self, zip)",param,data,,,,,
-,,,,SODRA01,,draudejai.csv,"data[self].sep("";"")",csv,,,,,,
-,,,,,metai,metai,,integer,,3,open,,metai,
-,,,,,ketvirtis,ketvirtis,,integer,,3,open,,ketvirtis,
-,,,,,draudeju_grupe,draudeju_grupe,,string,,3,open,,draudėjų grupė,
-,,,,,draudeju_tipas,draudeju_tipas,,string,,3,open,,draudėjų tipas,
-,,,,,draudeju_sk,draudeju_sk,,integer,,3,open,,draudėjų skaičius,
