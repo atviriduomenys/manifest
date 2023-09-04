@@ -1,6 +1,5 @@
 ,datasets/gov/rc/ar/erdvvietpasikeitimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,erdvvietpasikeitimai,,,,csv,,,,,,,Adresų registro duomenų bazė,
 ,,,,ErdvVietPasikeitimai,,,,,,,,,Gyvenamųjų vietovių erdvinių duomenų pasikeitimų sąrašas per mėnesį,
 ,,,,,sav_kodas,integer,,SAV_KODAS,,3,open,,"Savivaldybės, kuriai priklauso gyvenamoji vietovė, identifikacinis kodas",
 ,,,,,sen_kodas,integer,,SEN_KODAS,,3,open,,"Seniūnijos, kuriai priklauso gyvenamoji vietovė, identifikacinis kodas",
