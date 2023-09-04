@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/pinigu_ataskaitos,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1950/download/10658/Pinig%C5%B3-sraut%C5%B3-ataskaita%202021-09-30.csv,,,,,,
 ,,,,PiniguAtaskaita,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
