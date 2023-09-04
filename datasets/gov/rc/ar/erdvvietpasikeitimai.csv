@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-datasets/gov/rc/ar/erdvvietpasikeitimai,,,,,,,,,,,,,
+,datasets/gov/rc/ar/erdvvietpasikeitimai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,ErdvVietPasikeitimai,,,,,,,,,Gyvenamųjų vietovių erdvinių duomenų pasikeitimų sąrašas per mėnesį,
 ,,,,,sav_kodas,integer,,SAV_KODAS,,3,open,,"Savivaldybės, kuriai priklauso gyvenamoji vietovė, identifikacinis kodas",
