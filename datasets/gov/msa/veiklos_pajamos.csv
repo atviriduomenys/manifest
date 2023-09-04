@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/veiklos_pajamos,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1953/download/10663/Pagrindin%C4%97s-veiklos-kitos-pajamos.csv,,,,,,
 ,,,,VeiklosPajamos,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
