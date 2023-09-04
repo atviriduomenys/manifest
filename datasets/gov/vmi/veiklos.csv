@@ -1,3 +1,4 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmi/veiklos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,IndividualiVeikla,,,eiles_nr,,,4,open,,Duomenys apie asmenis vykdančius individualias veiklas,
@@ -8,7 +9,7 @@
 ,,,,,veiklos_tipas,integer,,,,4,open,,Veiklos tipas,
 ,,,,,,enum,,,201,,,,Notarai,
 ,,,,,,,,,202,,,,Advokatai,
-,,,,,,,,,205,,,,Nenuolatiniai  Lietuvos gyventojai, vykdantys individualią veiklą Lietuvoje per nuolatinę bazę,
+,,,,,,,,,205,,,,"Nenuolatiniai  Lietuvos gyventojai, vykdantys individualią veiklą Lietuvoje per nuolatinę bazę",
 ,,,,,,,,,213,,,,Advokatų padėjėjai,
 ,,,,,,,,,215,,,,Gyventojai, vykdantys individualią veiklą,
 ,,,,,,,,,217,,,,Antstoliai,
