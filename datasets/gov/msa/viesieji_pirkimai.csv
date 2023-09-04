@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/viesieji_pirkimai,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1925/download/10600/Vie%C5%A1ieji-pirkimai-per-CPO.csv,,,,,,
 ,,,,ViesasisPirkimas,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
