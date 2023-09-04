@@ -1,8 +1,0 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/fba,,,,,,,,,,,,,
-,,finansinebukle,,,,csv,,https://data.gov.lt/dataset/2264/download/13415/vpb-finansines-bukles-ataskaita-2022.csv(sep: ';'),,,,,
-,,,,FinansinesBuklesAtaskaita,,,nr,,,,,,,
-,,,,,nr,string,,Nr,,4,open,,Nr,
-,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
-,,,,,dabartinis_ataskaitinis_laikotarpis,number,,Dabartinis ataskaitinis laikotarpis,,3,open,,Dabartinis ataskaitinis laikotarpis,
-,,,,,praejes_ataskaitinis_laikotarpis,number,,Praėjęs ataskaitinis laikotarpis,,3,open,,Praėjęs ataskaitinis laikotarpis,
