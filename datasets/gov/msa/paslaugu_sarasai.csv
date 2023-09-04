@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/paslaugu_sarasai,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1924/download/10837/Teikiam%C5%B3%20administracini%C5%B3%20paslaug%C5%B3%20s%C4%85ra%C5%A1as.csv,,,,,,
 ,,,,PaslaugosSarasas,,,nr,,,4,,,,
 ,,,,,nr,integer,,Nr.,,4,open,,Eilės numeris,
