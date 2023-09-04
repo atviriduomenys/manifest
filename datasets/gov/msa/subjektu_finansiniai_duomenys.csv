@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/subjektu_finansiniai_duomenys,,,,,,,,,,,,,
 ,,csv,,,,csv,,"https://data.gov.lt/dataset/1954/download/10664/Kontroliuojam%C5%B3%20ir%20asocijuot%C5%B3%20subjekt%C5%B3%20finansiniai%20duomenys,%202021%20m..csv",,,,,,
 ,,,,SubjektoFinansai,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
