@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mirties_metai,integer,,,,4,open,,Faktinės asmens mirties datos metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,mirties_menuo,string,,,,4,open,,Faktinės asmens mirties datos mėnuo (du skaitmenys),
-,,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus mirties dieną grupė, dešimties metų rėžiais,
+,,,,,amziaus_grupe,string,,,,4,open,,"Asmens amžiaus mirties dieną grupė, dešimties metų rėžiais",
 ,,,,,lytis,string,,,,4,open,,Lytis,
 ,,,,,,enum,,,"""mot""",,,,Moteris,
 ,,,,,,,,,"""vyr""",,,,Vyras,
