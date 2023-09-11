@@ -4,5 +4,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Ataskaita,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
 ,,,,,straipsniai,string  ,,Straipsniai,,3,open,,Straipsniai,
-,,,,,praejusio_ataskaitinio_laik_d,number,,Paskutinė ataskaitinio laikotarpio diena,,3,open,,Paskutinė ataskaitinio laikotarpio diena,
 ,,,,,praejusio_ataskaitinio_laik_d,number,,Paskutinė praėjusio ataskaitinio laikotarpio diena,,3,open,,Paskutinė praėjusio ataskaitinio laikotarpio diena,
