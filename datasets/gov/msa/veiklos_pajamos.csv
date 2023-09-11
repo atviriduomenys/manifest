@@ -7,5 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ataskaitinis_l,number,,Ataskaitinis laikotarpis,,3,open,,Ataskaitinis laikotarpis,
 ,,,,,proc,number,,Procentai,,3,open,,Procentai,
 ,,,,,praejes_atask_l,number,,Praėjęs ataskaitinis laikotarpis,,3,open,,Praėjęs ataskaitinis laikotarpis,
-,,,,,proc,number,,Procentai,,3,open,,Procentai,
 ,,,,,pokytis,number,,Pokytis,,3,open,,Pokytis (3-4),
