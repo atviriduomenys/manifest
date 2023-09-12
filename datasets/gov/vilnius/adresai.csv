@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vilnius/adresai,,,,,,,,,,,,,
 ,,adresai,,,,csv,,https://open.vilnius.lt/dataset/vilnius-addresses,,,,,,
-,,,,Adresai,,,addresses,,,,,,,Vilniaus miesto gatvių duomenų rinkinys iš Vilniaus savivaldybės adresų registro. Duomenų geografinė imtis - Vilniaus miestas.
+,,,,Adresai,,,gatId,,,,,,,Vilniaus miesto gatvių duomenų rinkinys iš Vilniaus savivaldybės adresų registro. Duomenų geografinė imtis - Vilniaus miestas.
 ,,,,,gatId,integer,,GAT_ID,,3,open,,Gatvės ID ,
 ,,,,,street,string,,STREET,,3,open,,gatvės pavadinimas,
 ,,,,,houseNo,string,,HOUSE_NO,,3,open,,namo numeris,
