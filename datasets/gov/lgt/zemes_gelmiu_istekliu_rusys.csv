@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lgt/zemes_gelmiu_istekliu_rusys,,,,,,,,,,,,
 ,,,,,,,,,,,,,
-,,,,ZemesGelmiuIstekliuRusis,,,kodas,,,4,,,Žemės gelmių išteklių rūšys (klasifikatorius)
-,,,,,kodas,integer,,,,4,open,,Kodas
-,,,,,pavadinimas,string,,,,3,open,,Pavadinimas 
-,,,,,pavadinimas_en,string,,,,3,open,,Pavadinimas angliškai
-,,,,,galiojimas,date,D,,,4,open,,Galioja iki
+,,,,ZemesGelmiuIstekliuRusis,,,kodas,,,4,,,Žemės gelmių išteklių rūšys (klasifikatorius),
+,,,,,kodas,integer,,,,4,open,,Kodas,
+,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,
+,,,,,pavadinimas_en,string,,,,3,open,,Pavadinimas angliškai,
+,,,,,galiojimas,date,D,,,4,open,,Galioja iki,
