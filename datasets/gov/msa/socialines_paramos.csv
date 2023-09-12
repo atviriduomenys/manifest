@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/msa/pinigu_ataskaitos,,,,,,,,,,,,,
+,datasets/gov/msa/socialines_paramos,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1918/download/10595/Suteikta%20pinigin%C4%97%20socialin%C4%97%20parama%20I%20ketv.csv,,,,,,
 ,,,,SocialineParama,,,eil_nr,,,4,,,,
 ,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
