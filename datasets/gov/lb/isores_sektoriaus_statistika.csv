@@ -7,4 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lt_long_title,string,,,,4,open,,lietuviškas ilgas pavadinimas,
 ,,,,,date,date,Q,,,4,open,,data,
 ,,,,,value,integer,,,,4,open,,reikšmė,
-,,,,,power,integer,,,,4,open,,"Matavimo vienetų daugiklis,
+,,,,,power,integer,,,,4,open,,Matavimo vienetų daugiklis,
