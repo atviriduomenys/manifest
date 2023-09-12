@@ -6,4 +6,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paramos_suma,number,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",,3,open,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",
 ,,,,,sprendimo_data,date,D,Sprendimo skirti finansavimą data,,4,open,,Sprendimo skirti finansavimų data,
 ,,,,,jar_evrk,integer,,MM EV,,4,open,,MM EV,"Pareiškėjo vykdomos veiklos EVRK kodas, jeigu paramos gavėjas yra juridinis asmuo"
-,,,,,priemone,text,,Priemonės požymis,,4,open,,Priemonės požymis,Paramos priemonės pavadinimas
+,,,,,priemone,string,,Priemonės požymis,,4,open,,Priemonės požymis,Paramos priemonės pavadinimas
