@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/msa/biudzetu_pajamos,,,,,,,,,,,,,
 ,,csv,,,,csv,,https://data.gov.lt/dataset/1304/download/10445/Marijampol%C4%97s%20savivaldyb%C4%97s%202022%20met%C5%B3%20biud%C5%BEetas.csv,,,,,,
-,,,,Biudzetas,,,eil_nr,,,4,,,,
+,,,,Biudzetas,,,nr,,,4,,,,
 ,,,,,nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
 ,,,,,pajamu_pav,string  ,,Pajamų pavadinimas,,3,open,,Pajamų pavadinimas,
 ,,,,,suma,number,,Suma,,3,open,,Suma,
