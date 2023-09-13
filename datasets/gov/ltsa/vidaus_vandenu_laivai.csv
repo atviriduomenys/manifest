@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/ltsa/vidaus_vandenu_laivai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,VidausVandenuLaivas,,,ship_id,,,4,,,Vidaus vandenų laivai,
+,,,,VidausVandenuLaivas,,,"ship_id,own_le",,,4,,,Vidaus vandenų laivai,
 ,,,,,ship_call_sign,string,,,,4,open,,Laivo šaukiniai,
 ,,,,,own_le,string,,,,2,open,,Savininkas JA,Savininko juridinio asmens kodas
 ,,,,,shipyard_location,string,,,,4,open,,Laivo statybos vieta,
