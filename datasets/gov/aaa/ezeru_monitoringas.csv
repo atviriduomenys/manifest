@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,EzeruValstybinioMonitoringoDuomenys,,,,,,2,,,Aprašymas ežerų monitoringo duomenų,"Tyrimų apimtys, vykdytojai, tiriami parametrai patvirtinti Lietuvos Respublikos Vyriausybės 2018 m. spalio 3 d. nutarime Nr. 996 „Dėl Valstybinės aplinkos monitoringo 2018–2023 metų programos patvirtinimo“. Kasmet Aplinkos ministro įsakymu tvirtinami Valstybinės aplinkos monitoringo 2018-2023 metų programos uždavinių įgyvendinimo planai (https://aaa.lrv.lt/lt/veiklos-sritys/aplinkos-monitoringas/valstybine-aplinkos-monitoringo-programa). Kai kuriais atvejais tyrimai gali būti neatlikti dėl klimatinių sąlygų arba įrangos gedimų."
 ,,,,,regionas,string,,,,2,open,,Regionas,"Regionai: Alytaus, Kauno, Klaipėdos, Marijampolės, Panevėžio, Šiaulių, Utenos, Vilniaus"
 ,,,,,,comment,type,,"create(property: ""apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/apskritis/Apskritis"")",4,open,manifest:1263,,
-,,,,,telkinio_pav,ref,/datasets/gov/giscentras/grpk/HidrografijaLinija,,,4,open,,Vandens telkinio pavadinimas,
+,,,,,telkinio_pav,string,,,,2,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,,,4,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pav,string,,,,4,open,,Monitoringo vietos pavadinimas,
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Monitoringo vietos korrdinatės (LKS),
