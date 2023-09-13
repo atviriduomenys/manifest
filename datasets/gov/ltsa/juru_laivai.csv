@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/ltsa/juru_laivai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,JuruLaivas,,,record_id,,,4,open,,Jūrų laivai,
+,,,,JuruLaivas,,,"reg_perm_id,reg_perm_no,own_np_sys_id,reg_temp_from",,,4,open,,Jūrų laivai,
 ,,,,,record_id,string,,,,4,open,,Įrašo ID,
 ,,,,,own_le,string,,,,2,open,,Savininkas JA,Savininko juridinio asmens kodas
 ,,,,,adm_le,string,,,,2,open,,Valdytojas JA,Valdytojo juridinio asmens kodas
