@@ -1,3 +1,5 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ivpk/adp/catalog,,,,,,,,,,,,,
 ,,,,,,prefix,dc,,,,,http://purl.org/dc/elements/1.1/,,
 ,,,,,,,dcat,,,,,http://www.w3.org/ns/dcat#,,
 ,,,,,,,dct,,,,,http://purl.org/dc/terms/,,
