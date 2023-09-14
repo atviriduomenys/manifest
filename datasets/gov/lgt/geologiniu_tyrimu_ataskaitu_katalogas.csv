@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lgt/geologiniu_tyrimu_ataskaitu_katalogas,,,,,,,,,,,,Geologinių tyrimų ataskaitų katalogas,
+,datasets/gov/lgt/geologiniu_tyrimu_ataskaitu_katalogas,,,,,,,,,,,,Geologinių tyrimų ataskaitų kataloga,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,GeologinisTyrimas,,,fondo_nr,,,4,,,Geologinių tyrimų ataskaitų katalogas,
