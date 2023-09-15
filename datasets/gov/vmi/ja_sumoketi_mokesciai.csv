@@ -10,6 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Mokesčių mokėtojo apskritis,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Mokesčių mokėtojo savivaldybė,
 ,,,,,data,date,D,,,4,open,,Data,
-,,,,,suma,money,EUR,,,4,open,,Sumokėta suma,
+,,,,,suma,number,,,,2,open,,Sumokėta suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,sukurta,date,D,,,4,open,,Įrašo skūrimo data,
 ,,,,,atnaujinta,date,D,,,4,open,,Įrašo atnaujinimo data,
