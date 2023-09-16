@@ -2,7 +2,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vmi/ja_mokesciai,,,,,,,,,,,,Juridinių asmenų sumokėti mokesčiai,Juridinių asmenų sumokėti mokesčiai
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,Juridinių asmenų sumokėti mokesčiai,
 ,,,,Moketojas,,,id,,,4,open,,,
 ,,,,,id,string,,,,4,open,,Mokėtojo ID VMI sistemoje,
 ,,,,,mm_kodas,ref,/datasets/gov/vmi/mm_registras/MokesciuMoketojas,,,4,open,,Mokesčių mokėtojo kodas,
