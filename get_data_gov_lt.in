@@ -417,6 +417,7 @@ datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
 datasets/gov/vat/r33_registruoti_aap.csv
 datasets/gov/vmi/ja_nepriemokos.csv
+datasets/gov/vmi/ja_sumoketi_mokesciai.csv
 datasets/gov/aaa/oro_monitoringo_matavimai.csv
 datasets/gov/finmin/sutartys.csv
 datasets/gov/vat/medienos_gamintojai.csv
