@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/aaa/upiu_monitoringo_duomenys,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,UpiuValstybinioMonitoringoDuomenys,,,,,,2,,,Aprašymas upių duomenų,"Tyrimų apimtys, vykdytojai, tiriami parametrai patvirtinti Lietuvos Respublikos Vyriausybės 2018 m. spalio 3 d. nutarime Nr. 996 „Dėl Valstybinės aplinkos monitoringo 2018–2023 metų programos patvirtinimo“. Kasmet Aplinkos ministro įsakymu tvirtinami Valstybinės aplinkos monitoringo 2018-2023 metų programos uždavinių įgyvendinimo planai (https://aaa.lrv.lt/lt/veiklos-sritys/aplinkos-monitoringas/valstybine-aplinkos-monitoringo-programa). Kai kuriais atvejais tyrimai gali būti neatlikti dėl klimatinių sąlygų arba įrangos gedimų."
-,,,,,telkinio_pav,ref,/datasets/gov/giscentras/grpk/HidrografijaLinija,,,4,open,,Vandens telkinio pavadinimas,
+,,,,,telkinio_pav,string,,,,2,open,,Vandens telkinio pavadinimas,
 ,,,,,m_vietos_kodas,string,,,,4,open,,Monitoringo vietos kodas,
 ,,,,,m_vietos_pav,string,,,,4,open,,Monitoringo vietos pavadinimas,
 ,,,,,koord,"geometry(point, 3346)",,,,3,open,,Monitoringo vietos koordinatės (LKS),
