@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/ssva/pen_sertifikatai,,,,,,,,,,,,Duomenys apie pastatų energinio naudingumo sertifikatus,
 ,,,,,,,,,,,,,,
-,,,,Sertifikatas,,,,,,,,,Pastatų energinio naudingumo sertifikatai,Pastatų energinio naudingumo sertifikatai
+,,,,Sertifikatas,,,,,,2,,,Pastatų energinio naudingumo sertifikatai,Pastatų energinio naudingumo sertifikatai
 ,,,,,paskirtis,ref,Paskirtis,,,4,open,,Pastatų paskirtis,
 ,,,,,nr,string,,,,4,open,,Sertifikato numeris,
 ,,,,,versija,integer,,,,3,open,,Sertifikato pateikimo versija,
