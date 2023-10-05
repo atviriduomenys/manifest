@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/ssva/pen_sertifikatai,,,,,,,,,,,,Duomenys apie pastatų energinio naudingumo sertifikatus,
 ,,,,,,,,,,,,,,
 ,,,,Sertifikatas,,,id,,,4,,,Pastatų energinio naudingumo sertifikatai,Pastatų energinio naudingumo sertifikatai
-,,,,,id,integer,,,,4,open,,Pastatų paskirties ID,
+,,,,,paskirtis,ref,Paskirtis,,,4,open,,Pastatų paskirtis,
 ,,,,,nr,string,,,,4,open,,Sertifikato numeris,
 ,,,,,versija,integer,,,,3,open,,Sertifikato pateikimo versija,
 ,,,,,pozymis,integer,,,,4,open,,Tipinio buto sertifikato požymis,
@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,koord,"geometry(point,4326)",,,,3,open,,Pastato koordinatės,
 ,,,,,,,,,,,,,,
 ,,,,Paskirtis,,,id,,,4,,,Pastatų paskirtys,Pagal STR 2.01.09:2005 ir STR 2.01.02:2016
-,,,,,id,ref,Sertifikatas,,,4,open,,Pastatų paskirties ID,
+,,,,,id,integer,,,,4,open,,Pastatų paskirties ID,
 ,,,,,paskirtis,string,,,,4,open,,Pastatų paskirties sutrumpinimas,
 ,,,,,,enum,,,"""GV""",,,,Gyvenamosios paskirties vieno ir dviejų butų pastatai (namai),
 ,,,,,,,,,"""KG""",,,,Kiti gyvenamieji pastatai (namai),
