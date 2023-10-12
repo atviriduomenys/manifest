@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/essc/humanitarine_pagalba,,,,,,,,,,,,Humanitarinės pagalbos teikimas trečiosioms šalims,
+,,,,,,,,,,,,,,
+,,,,Parama,,,,,,4,,,Humanitarinės pagalbos teikimas trečiosioms šalims,
+,,,,,id,integer,,,,4,open,,Donuotos priemonės identifikatorius,
+,,,,,paramos_gavejas,string,,,,4,open,,Paskirtos paramos gavėjas,
+,,,,,paramos_teikejas,string,,,,4,open,,Paskirtos paramos teikėjas,
+,,,,,data,date,D,,,4,open,,Paramos teikimo data,
+,,,,,paramos_rusis,string,,,,4,open,,Paramos rūšis,
+,,,,,donuojamu_priemoniu_aprasymas,string,,,,3,open,,Apibūdinamos donuojamos priemonės,
+,,,,,verte_eur,number,,,,2,open,,Donuojamų priemonių vertė eurais,
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,
