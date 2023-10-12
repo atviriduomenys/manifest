@@ -8,4 +8,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data,date,D,,,4,open,,Paramos teikimo data,
 ,,,,,paramos_rusis,string,,,,4,open,,Paramos rūšis,
 ,,,,,donuojamu_priemoniu_aprasymas,string,,,,3,open,,Apibūdinamos donuojamos priemonės,
-,,,,,verte_eur,money,EUR,,,4,open,,Donuojamų priemonių vertė eurais,
+,,,,,verte_eur,number,,,,2,open,,Donuojamų priemonių vertė eurais,
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,
