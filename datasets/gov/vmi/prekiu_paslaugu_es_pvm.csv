@@ -1,0 +1,27 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/prekiu_paslaugu_es_pvm,,,,,,,,,,,,Prekių tiekimo ir paslaugų teikimo kitų ES šalių PVM mokėtojams vertės,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,VtsFr0564Mainai,,,,,,2,,,FR0564_DUOMENYS,
+,,,,,metai,integer,,,,2,open,,Ataskaitinio laikotarpio metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ketvirtis,integer,,,,2,open,,Ataskaitinio laikotarpio ketvirtis,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Q"")",4,,,,
+,,,,,menuo,integer,,,,2,open,,Ataskaitinio laikotarpio mėnuo,
+,,,,,evrk_sekcija,string,,,,2,open,,"Deklaracijoje nurodyta pagrindinė vykdomos veiklos rūšis pagal Ekonominės veiklos rūšių klasifikatorių, patvirtintą Statistikos departamento generalinio direktoriaus 2007 m. spalio 31 d. įsakymu Nr.DĮ-226 (Žin., 2007, Nr.119-4877, toliau - EVRK) ","Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju taip pat nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis"
+,,,,,evrk_skyrius,string,,,,2,open,,"Pagrindinė vykdomos veiklos rūšis pagal EVRK. Imama iš klasifikatoriaus, jei pavyko identifikuoti pagal deklaracijoje įrašytą kodą","Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju taip pat nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis"
+,,,,,apskrities_kodas,string,,,,2,open,,Deklaracijai priskirtos apskrities kodas,"Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju taip pat nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis"
+,,,,,,comment,type,,"create(property: ""apskritis"", type: ""ref"", ref: ""/datasets/gov/rc/ar/apskritis/Apskritis"")",4,open,manifest:1263,,
+,,,,,,comment,type,,"update(property: ""apskritis.adm_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
+,,,,,apskritis,string,,,,2,open,,Deklaracijai priskirtos apskrities pavadinimas,"Užsiimančių ta pačia veikla mokesčių mokėtojų dominavimo atveju taip pat nėra nustatyta EVRK sekcija, EVRK skyrius ir apskritis"
+,,,,,,comment,type,,"update(property: ""apskritis.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
+,,,,,mm_skaicius,integer,,,,3,open,,Mokesčių mokėtojų skaičius,
+,,,,,valstybes_kodas,string,,,,3,open,,"ES valstybės narės, kurioje PVM mokėtoju registruotas pirkėjas arba PVM mokėtoju registruotas disponuojamas prekes verslo tikslais pervežantis Lietuvos PVM mokėtojas",
+,,,,,prekiu_verte,number,,,,2,open,,Patiektų prekių apmokestinamoji vertė ,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,trikampe_prekyba,number,,,,2,open,,Trikampės prekybos prekių vertė,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,paslaugu_verte,number,,,,2,open,,Paslaugų vertė,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

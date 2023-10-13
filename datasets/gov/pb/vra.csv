@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/pb/vra,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,veiklosrezultatai,,,,csv,,https://data.gov.lt/dataset/1664/download/9592/vpb-veiklos-rezultatu-ataskaita-2020.csv,tabular(sep: ';'),,,,,
+,,,,VeiklosRezultatuAtaskaita,,,eil_nr,,,4,,,,
+,,,,,eil_nr,string,,Nr,,4,open,,Eilės numeris,
+,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
+,,,,,dabartinis_ataskaitinis_laikotarpis,number,,Dabartinis ataskaitinis laikotarpis,,2,open,,Dabartinis ataskaitinis laikotarpis(pajamos),
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,praejes_ataskaitinis_laikotarpis,number,,Praėjęs ataskaitinis laikotarpis,,2,open,,Praėjęs ataskaitinis laikotarpis(pajamos),
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

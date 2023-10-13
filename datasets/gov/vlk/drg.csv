@@ -1,28 +1,48 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vlk/drg,,,,,,,,,,,,,
-,,adk,,,,csv,,https://data.gov.lt/dataset/1384/download/,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,drg,,,"kodas,versija",9426/drg.csv,,,,,DRG sąrašas,"Informacija apie giminingų diagnozių grupes. Kiekvieną ADRG sudaro DRGs, kurios skiriasi pagal sunaudojamus išteklius. DRGs – tai detaliausias klasifikavimo lygmuo. ADRG dažniausiai skirstoma į DRGs pagal gydymo atvejo klinikinio sudėtingumo lygmenis"
-,,,,,kodas,string,,drg_kodas,,4,open,,DRG kodas,Giminingų diagnozių grupės kodas
-,,,,,pavadinimas_en,string,,drg_pavadinimas_en,,4,open,,DRG pavadinimas (EN),Giminingų diagnozių grupės pavadinimas anglų kalba
-,,,,,pavadinimas_lt,string,,drg_pavadinimas_lt,,4,open,,DRG pavadinimas (LT),Giminingų diagnozių grupės pavadinimas lietuvių kalba.
-,,,,,adrg_kodas,string,,adrg_kodas,,4,open,,ADRG kodas,Gretimų giminingų diagnozių grupės kodas
-,,,,,adrg_pavadinimas,string,,adrg_pavadinimas,,4,open,,ADRG pavadinimas,Gretimų giminingų diagnozių grupės pavadinimas
-,,,,,profilis,string,,profilis,,4,open,,Profilis (pobūdis),"Giminingų diagnozių grupės pobūdis: chirurginis, terapinis, kita"
-,,,,,pkd_kodas,string,,pkd_kodas,,4,open,,PDK kodas,Pagrindinės diagnostinės kategorijos (PDK) kodas
-,,,,,pkd_pavadinimas,string,,pkd_pavadinimas,,4,open,,PDK pavadinimas,Pagrindinės diagnostinės kategorijos (PDK) pavadinimas.
-,,,,,versija,string,,versija,,4,open,,Versija,AR-DRG klasifikacijos versija
-,,,,,versija_galioja_nuo,date,,versija_galioja_nuo,,4,open,,Versija galioja nuo,AR-DRG klasifikacijos versijos galiojimo pradžios data
-,,,,,versija_galioja_iki,date,,versija_galioja_iki,,4,open,,Versija galioja iki,AR-DRG klasifikacijos versijos galiojimo pabaigos data
-,,,,,drg_vienos_dienos_koef,integer,,drg_vienos_dienos_koef,,4,open,,Dienos DRG koeficientai,"Giminingų diagnozių grupių dienos gydymo kainos koeficientas. Dienos gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas atvyksta į asmens sveikatos priežiūros įstaigą ir išvyksta iš jos tą pačią dieną. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos II paslaugų grupei priskiriamos paslaugos"
-,,,,,drg_vienos_paros_koef,integer,,drg_vienos_paros_koef,,4,open,,Vienos paros DRG koeficientai,"Giminingų diagnozių grupių paros gydymo kainos koeficientas. Paros gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas vieną dieną atvyksta į asmens sveikatos priežiūros įstaigą, o kitą dieną – išvyksta. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos III paslaugų grupei priskiriamos paslaugos"
-,,,,,drg_lovadienio_koef_min,integer,,drg_lovadienio_koef_min,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė trumpesnė nei minimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė trumpesnė nei minimali"
-,,,,,drg_vidutinio_atvejo_koef,integer,,drg_vidutinio_atvejo_koef,,4,open,,Vidutinės trukmės atvejo DRG koeficientai,"Gydymo atvejo (gydymo etapo) koeficientas - tai koeficientas, taikomas gydymo atvejo kainai nustatyti, kai gydymo trukmė ilgesnė arba lygi minimaliai ir trumpesnė arba lygi maksimaliai. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos IV–VI paslaugų grupėms priskiriamos paslaugos"
-,,,,,drg_lovadienio_koef_max,integer,,drg_lovadienio_koef_max,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė ilgesnė nei maksimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė ilgesnė nei minimali"
-,,,,,drg_koeficientai_galioja_nuo,date,,drg_koeficientai_galioja_nuo,,4,open,,DRG koeficientai galioja nuo,Giminingų diagnozių grupių kainos koeficiento galiojimo pradžios data
-,,,,,drg_koeficientai_galija_iki,date,,drg_koeficientai_galija_iki,,4,open,,DRG koeficientai galioja iki,Giminingų diagnozių grupių kainos koeficiento galiojimo pabaigos data
-,,,,,drg_trukme_min,integer,,drg_trukme_min,,4,open,,Minimali DRG trukmė,Minimali gydymo trukmė (lovadieniai)
-,,,,,drg_trukme_vid,integer,,drg_trukme_vid,,4,open,,Vidutinė DRG trukmė,Vidutinė gydymo trukmė (lovadieniai)
-,,,,,drg_trukme_max,integer,,drg_trukme_max,,4,open,,Maksimali DRG trukmė,Maksimali gydymo trukmė (lovadieniai)
-,,,,,drg_trukme_nuo,date,,drg_trukme_nuo,,4,open,,DRG trukmė (nuo),Normatyvinės gydymo trukmės galiojimo pradžios data
-,,,,,drg_trukme_iki,date,,drg_trukme_iki,,4,open,,DRG trukmė (iki),Normatyvinės gydymo trukmės galiojimo pabaigos data
+,,,,Grupe,,,,,,4,,,DRG grupių sąrašas,"Informacija apie giminingų diagnozių grupes. Kiekvieną ADRG sudaro DRGs, kurios skiriasi pagal sunaudojamus išteklius. DRGs – tai detaliausias klasifikavimo lygmuo. ADRG dažniausiai skirstoma į DRGs pagal gydymo atvejo klinikinio sudėtingumo lygmenis."
+,,,,,kodas,string,,,,4,open,,DRG kodas,Giminingų diagnozių grupės kodas
+,,,,,pavadinimas,string,,,,4,open,,DRG pavadinimas (LT),Giminingų diagnozių grupės pavadinimas lietuvių kalba.
+,,,,,adrg_kodas,string,,,,2,open,,ADRG kodas,Gretimų giminingų diagnozių grupės kodas
+,,,,,,comment,property,,"create(property: ""adrg"", type: ""ref"", ref: ""Adrg"")",4,,,,
+,,,,,,comment,property,,"update(property: ""adrg.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,adrg_pavadinimas,string,,,,2,open,,ADRG pavadinimas,Gretimų giminingų diagnozių grupės pavadinimas
+,,,,,,comment,property,,"update(property: ""adrg.pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,profilis,string,,,,4,open,,Profilis,Giminingų diagnozių grupės profilis
+,,,,,,enum,,,'Chirurginis',,,,Chirurginis,
+,,,,,,,,,'Kitas',,,,Kitas,
+,,,,,,,,,'Terapinis',,,,Terapinis,
+,,,,,pdk_id,integer,,,,2,open,,,
+,,,,,,comment,property,,"create(property: ""pdk"", type: ""ref"", ref: ""Pdk"")",4,,,,
+,,,,,,comment,property,,"update(property: ""pdk.id"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,pdk_kodas,string,,,,2,open,,PDK kodas,Pagrindinės diagnostinės kategorijos (PDK) kodas
+,,,,,,comment,property,,"update(property: ""pdk.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,pdk_pavadinimas,string,,,,2,open,,PDK pavadinimas,Pagrindinės diagnostinės kategorijos (PDK) pavadinimas.
+,,,,,,comment,property,,"update(property: ""pdk.pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,versija,ref,Versija,,,4,open,,Nuoroda į DRG versijas,
+,,,,,,,,,,,,,,
+,,,,Koeficientai,,,,,,4,,,DRG koeficientai,Giminingų diagnozių grupių paros/dienos gydymo kainų koeficientai
+,,,,,grupe,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
+,,,,,nuo,date,D,,,4,open,,DRG koeficientai galioja nuo,Giminingų diagnozių grupių kainos koeficiento galiojimo pradžios data
+,,,,,vienos_dienos,number,,,,4,open,,Dienos DRG koeficientai,"Giminingų diagnozių grupių dienos gydymo kainos koeficientas. Dienos gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas atvyksta į asmens sveikatos priežiūros įstaigą ir išvyksta iš jos tą pačią dieną. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos II paslaugų grupei priskiriamos paslaugos"
+,,,,,iki,date,D,,,4,open,,DRG koeficientai galioja iki,Giminingų diagnozių grupių kainos koeficiento galiojimo pabaigos data
+,,,,,vienos_paros,number,,,,4,open,,Vienos paros DRG koeficientai,"Giminingų diagnozių grupių paros gydymo kainos koeficientas. Paros gydymo kainos koeficientas – tai gydymo atvejo kainos koeficientas, taikomas tada, kai pacientas vieną dieną atvyksta į asmens sveikatos priežiūros įstaigą, o kitą dieną – išvyksta. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos III paslaugų grupei priskiriamos paslaugos"
+,,,,,lovadienio_min,number,,,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė trumpesnė nei minimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė trumpesnė nei minimali"
+,,,,,vidutinio_atvejo,number,,,,4,open,,Vidutinės trukmės atvejo DRG koeficientai,"Gydymo atvejo (gydymo etapo) koeficientas - tai koeficientas, taikomas gydymo atvejo kainai nustatyti, kai gydymo trukmė ilgesnė arba lygi minimaliai ir trumpesnė arba lygi maksimaliai. Taip pat šis koeficientas taikomas visais gydymo atvejais, kai teikiamos dienos chirurgijos IV–VI paslaugų grupėms priskiriamos paslaugos"
+,,,,,lovadienio_max,number,,,,4,open,,"Vieno lovadienio DRG koeficientas, kai gydymo trukmė ilgesnė nei maksimali","Lovadienio kainos koeficientas – tai koeficientas, taikomas lovadienio kainai nustatyti, kai gydymo trukmė ilgesnė nei minimali"
+,,,,,,,,,,,,,,
+,,,,Trukmes,,,,,,4,,,DRG trukmės,Giminingų diagnozių grupių gydymo trukmės
+,,,,,grupe,ref,Grupe,,,4,open,,Nuoroda į DRG grupes,
+,,,,,minimali,integer,,,,4,open,,Minimali DRG trukmė,Minimali gydymo trukmė (lovadieniai)
+,,,,,vidutine,integer,,,,4,open,,Vidutinė DRG trukmė,Vidutinė gydymo trukmė (lovadieniai)
+,,,,,maksimali,integer,,,,4,open,,Maksimali DRG trukmė,Maksimali gydymo trukmė (lovadieniai)
+,,,,,nuo,date,D,,,4,open,,DRG trukmė (nuo),Normatyvinės gydymo trukmės galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,DRG trukmė (iki),Normatyvinės gydymo trukmės galiojimo pabaigos data
+,,,,,,,,,,,,,,
+,,,,Versija,,,,,,4,,,DRG versijos,AR-DRG klasifikacijos versija
+,,,,,versija,string,,,,4,open,,Versija,AR-DRG klasifikacijos versija
+,,,,,nuo,date,D,,,4,open,,Versija galioja nuo,AR-DRG klasifikacijos versijos galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,Versija galioja iki,AR-DRG klasifikacijos versijos galiojimo pabaigos data

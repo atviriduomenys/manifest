@@ -1,27 +1,27 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rrt/keliaimiestai,,,,,,,,,,,,,
 ,,keliaimiestai,,,,csv,,https://opendata.rrt.lt/static/Matavimai-2G-3G-4G-2019-2020.csv,"tabular.sep("","")",,,,,
-,,,,KeliaiMiestai,,,id,,,,,,,
-,,,,,id,integer,,ID,,4,private,,,
-,,,,,data_ir_laikas,datetime,,data ir laikas,,3,open,,,data ir laikas
-,,,,,platuma,number,,platuma,,3,open,,,"kooordinatė, ilguma"
-,,,,,ilguma,number,,ilguma,,3,open,,,"koordinatė, platuma"
-,,,,,operatorius,integer,,operatorius,,3,open,,,ryšio operatorius
-,,,,,cell_id,string,,celės id,,3,open,,,celės numeris
-,,,,,rysio_tinklas,string,,ryšio tinklas,,3,open,,,ryšio technologija
-,,,,,level,integer,,level,,3,open,,,radijo ryšio parametras
-,,,,,lterssi,integer,,lterssi,,3,open,,,radijo ryšio parametras
-,,,,,qual,integer,,qual,,3,open,,,radijo ryšio parametras
-,,,,,snr,integer,,snr,,3,open,,,radijo ryšio parametras
-,,,,,cqi,integer,,cqi,,3,open,,,radijo ryšio parametras
-,,,,,DL_sparta,integer,,DL sparta kbit/s,,3,open,,,"Duomenų perdavimo sparta, gavimas"
-,,,,,UL_sparta,integer,,UL sparta kbit/s,,3,open,,,"Duomenų perdavimo sparta, siuntimas"
-,,,,,pingavg,integer,,pingavg,,3,open,,,"delsa, vidutinė vertė"
-,,,,,pingmin,integer,,pingmin,,3,open,,,"delsa, minimali vertė"
-,,,,,pingmax,integer,,pingmax,,3,open,,,"delsa, maksimali vertė"
-,,,,,pingstdev,integer,,pingstdev,,3,open,,,"delsa, standartinis nuokrypis"
-,,,,,pingloss,integer,,pingloss,,3,open,,,"delsa, prarastų verčių dalis"
-,,,,,test_type,string,,test type,,3,open,,,bandymo pavadinimas
+,,,,KeliasMiestas,,,,,,4,,,,
+,,,,,data_ir_laikas,datetime,S,data ir laikas,,4,open,,Data ir laikas,
+,,,,,platuma,number,,platuma,,3,open,,"Koordinatė, platuma",
+,,,,,ilguma,number,,ilguma,,3,open,,"Koordinatė, ilguma",
+,,,,,koordinates_wgs,geometry(point),,,"point(platuma,ilguma)",,,,,
+,,,,,operatorius,integer,,operatorius,,4,open,,Ryšio operatorius,
+,,,,,cell_id,string,,celės id,,4,open,,Celės numeris,
+,,,,,rysio_tinklas,string,,ryšio tinklas,,4,open,,Ryšio technologija,
+,,,,,level,integer,,level,,3,open,,Radijo ryšio parametras,
+,,,,,lterssi,integer,,lterssi,,3,open,,Radijo ryšio parametras,
+,,,,,qual,integer,,qual,,3,open,,Radijo ryšio parametras,
+,,,,,snr,integer,,snr,,3,open,,Radijo ryšio parametras,
+,,,,,cqi,integer,,cqi,,3,open,,Radijo ryšio parametras,
+,,,,,DL_sparta,integer,,DL sparta kbit/s,,4,open,,"Duomenų perdavimo sparta, gavimas",
+,,,,,UL_sparta,integer,,UL sparta kbit/s,,4,open,,"Duomenų perdavimo sparta, siuntimas",
+,,,,,pingavg,integer,,pingavg,,3,open,,"Delsa, vidutinė vertė",
+,,,,,pingmin,integer,,pingmin,,3,open,,"Delsa, minimali vertė",
+,,,,,pingmax,integer,,pingmax,,3,open,,"Delsa, maksimali vertė",
+,,,,,pingstdev,integer,,pingstdev,,3,open,,"Delsa, standartinis nuokrypis",
+,,,,,pingloss,integer,,pingloss,,3,open,,"Delsa, prarastų verčių dalis",
+,,,,,test_type,string,,test type,,4,open,,Bandymo pavadinimas,
 ,,,,,,enum,,,"""DL TEST""",,,,Atsisiuntimo (download) testas,
 ,,,,,,,,,"""UL TEST""",,,,Išsiuntimo (upload) testas,
 ,,,,,,,,,"""PING TEST""",,,,Ping testas,

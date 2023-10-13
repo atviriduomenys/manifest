@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lgt/potencialus_tarsos_zidiniai,,,,,,,,,,,,Potencialūs taršos židiniai,
+,,,,,,,,,,,,,,
+,,,,TarsosZidinys,,,objecto_nr,,,4,,,Potencialūs taršos židiniai,
+,,,,,objecto_nr,integer,,,,4,open,,Objekto numeris,
+,,,,,ptz_adresas,string,,,,1,open,,Adresas,
+,,,,,ptz_anketos_nr,string,,,,4,open,,Anketos numeris,
+,,,,,ptz_anketos_data,date,D,,,4,open,,Vertinimo data,
+,,,,,ptz_objekto_bukle,string,,,,3,open,,Objekto būklė,
+,,,,,ptz_objekto_tipas,string,,,,3,open,,Objekto tipas,
+,,,,,ptz_pavojingumas_aplinkai,string,,,,3,open,,Pavojingumo aplinkai įvertinimas,
+,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Koordinatės,

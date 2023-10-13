@@ -1,14 +1,14 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/graistgatve,,,,,,,,,,,,Adresų registras,
-,,graistgatve,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_ist_gatves.json,,,,,Adresų registro duomenų bazė,
-,,,,GraIstGatve,,,gat_kodas,,,,,,Adresų registro gatvių ašinių linijų erdviniai duomenys,"Gatvių ašinių linijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gatvių ašinių linijas apibūdinantys duomenys).
+,,,,GraIstGatve,,,gat_kodas,,,4,,,Adresų registro gatvių ašinių linijų erdviniai duomenys,"Gatvių ašinių linijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gatvių ašinių linijas apibūdinantys duomenys).
 Duomenų geografinė imtis — visa šalies teritorija."
-,,,,,gat_kodas,integer,,IST_GTV_KODAS,,3,open,,Istorinės (panaikintos) gatvės kodas Registre ,
-,,,,,pavadinimas,string,,IST_GTV_PAV_PI,,3,open,,Sutrumpintas istorinės (panaikintos) gatvės vardas su tipu (nuolat palaikomas),
-,,,,,nuo,date,,NUO,,3,open,,Istorinės (panaikintos) gatvės atributų rinkinio pradžios galiojimo data,
-,,,,,iki,date,,IST_GTV_ATR_KO,,3,open,,Istorinės (panaikintos) gatvės atributų rinkinio galiojimo pabaigos data ,
-,,,,,gat_r,date,,IST_GTV_R,,3,open,,Istorinės (panaikintos) gatvės ašinės linijos įvedimo į Adresų registrą data,
-,,,,,gat_iki,date,,IST_GTV_IKI,,3,open,,Istorinės (panaikintos) gatvės ašinės linijos išregistravimo iš registro data ,
-,,,,,gat_ilgis,number,m,IST_GAT_ILGIS,,4,open,,Istorinės (panaikintos) gatvės ilgis metrais,
-,,,,,gyv_kodas,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,GYV_KODAS,,4,open,,Gyvenamosios vietovės kodas Registre,
+,,,,,gat_kodas,integer,,,,4,open,,Istorinės (panaikintos) gatvės kodas Registre ,
+,,,,,pavadinimas,string,,,,3,open,,Sutrumpintas istorinės (panaikintos) gatvės vardas su tipu (nuolat palaikomas),
+,,,,,nuo,date,D,,,4,open,,Istorinės (panaikintos) gatvės atributų rinkinio pradžios galiojimo data,
+,,,,,iki,date,D,,,4,open,,Istorinės (panaikintos) gatvės atributų rinkinio galiojimo pabaigos data ,
+,,,,,gat_r,date,D,,,4,open,,Istorinės (panaikintos) gatvės ašinės linijos įvedimo į Adresų registrą data,
+,,,,,gat_iki,date,D,,,4,open,,Istorinės (panaikintos) gatvės ašinės linijos išregistravimo iš registro data ,
+,,,,,gat_ilgis,number,m,,,4,open,,Istorinės (panaikintos) gatvės ilgis metrais,
+,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,,,4,open,,Gyvenamosios vietovės kodas Registre,
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,ist_gatves,"geometry(linestring,3346)",m,,,4,open,,"Istorinės (panaikintos) gatvės ašinė linija su pradžia, pabaiga ir posūkio taškais",

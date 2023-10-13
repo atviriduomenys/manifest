@@ -1,0 +1,22 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/migracija/prieglobscio_suteikimas,,,,,,,,,,,,,"Duomenys apie prieglobsčio prašytojus, prieglobstį gavusius užsieniečius, pateiktus prašymus suteikti prieglobstį ir priimtus sprendimus, duomenys apie užsieniečius, dėl kurių buvo išsiųsti ar gauti paklausimai (ir/ar atsakymai) dėl jų perėmimo savo žinion ar atsiėmimo pagal Dublino III reglamentą, duomenys apie užsieniečių perdavimą pagal Dublino III reglamentą."
+,,,,,,,,,,,,,,
+,,,,Prasytojas,,,id,,,3,open,,Duomenys apie prieglobsčio prašytojus,
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,registracija,date,D,,,4,open,,Prašymo prieglobsčiui gauti registracijos data,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
+,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
+,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
+,,,,,,,,,,,,,,
+,,,,Gavejas,,,id,,,3,open,,Duomenys apie prieglobsčio gavėjus,
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,registracija,string,,,,2,open,,Prašymo prieglobsčiui gauti registracijos data,
+,,,,,lytis,string,,,,4,open,,Lytis byloje,
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
+,,,,,,,,,"""Šeima""",,,,Šeima,"Kai kurie prieglobsčio prašymai tenkinami ne asmeniui, o visai šeimai. Dėl to tokie jungtiniai prašymai šeimoms žymimi atskirai."
+,,,,,amziaus_grupe,string,,,,3,open,,"Asmens amžiaus grupė pagal gimimo datą, nurodytą byloje",
+,,,,,pilietybe,string,,,,3,open,,Asmens pilietybė,
+,,,,,sprendimas,date,D,,,4,,,Sprendimo suteikti prieglobstį registravimo data,

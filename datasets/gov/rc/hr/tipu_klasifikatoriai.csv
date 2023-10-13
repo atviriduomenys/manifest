@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/hr/tipu_klasifikatoriai,,,,,,,,,,,,Likviduoto Lietuvos Respublikos HR archyviniai klasifikatoriai,
+,,,,,,,,,,,,,,
+,,,,TurtoTipas,,,kodas,,,4,,,Hr turto tipų archyvinis klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Turto tipo identifikatorius,
+,,,,,rusis,string,,,,3,open,,Turto rūšis,
+,,,,,,,,,,,,,,
+,,,,SandorioTipas,,,kodas,,,4,,,Hr sandorių tipų archyvinis klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Sandorio tipo kodas,
+,,,,,tipas,string,,,,3,open,,Sandorio tipas,

@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/gr/amzius_lytis_pilietybe,,,,,,,,,,,,"Gyventojų registro duomenys apie Lietuvos gyventojų amžių, pilietybę ir lytį pagal savivaldybes",
+,,,,,,,,,,,,,,
+,,,,AmziusLytisPilietybe,,,nr,,,4,,,"Gyventojų registro duomenys apie Lietuvos gyventojų amžių, pilietybę ir lytį pagal savivaldybes",
+,,,,,nr,integer,,,,4,open,,Gyventojo eilės numeris šiame duomenų rinkinyje,
+,,,,,lytis,string,,,,4,open,,Gyventojo lytis,
+,,,,,,enum,,,"""V""",,,,Vyras,
+,,,,,,,,,"""M""",,,,Moteris,
+,,,,,amzius,string,,,,3,open,,Gyventojo amžius / amžiaus grupė,
+,,,,,pilietybe,string,,,,3,open,,Gyventojo turima pilietybė arba pilietybių grupė ,
+,,,,,dek_metai,integer,,,,2,open,,Gyventojo gyvenamosios vietos deklaravimo metai,
+,,,,,dek_ketvirtis,string,,,,2,open,,Gyventojo gyvenamosios vietos deklaravimo metų ketvirtis,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybė, kurioje deklaruota gyventojo gyvenamoji vieta iš Adresų registro",

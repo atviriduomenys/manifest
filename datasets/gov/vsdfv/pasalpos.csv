@@ -1,15 +1,20 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pasalpos,,,,,,,,,,,,,
-,,sodrapasalpos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pasalpos.zip,"self.extract(""zip"")[""pasalpos.csv""]",,,,,
-,,,,Pasalpos,,,"pasalpos_rusis, pasalpos_porusis",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,mėnuo,Mėnuo
-,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,išmokos rūšis,Išmokos rūšis
-,,,,,pasalpos_porusis,string,,PASALPOS_PORUSIS,,3,open,,išmokos porūšis,Išmokos porūšis
-,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
-,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
-,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
-,,,,,atveju_sk,number,,ATVEJU_SK,,3,open,,atvejų skaičius,Atvejų skaičius
-,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
-,,,,,apmok_dienu_sk,number,,APMOK_DIENU_SK,,3,open,,apmokėtų dienų skaičius,Apmokėtų dienų skaičius
-,,,,,pasalpu_sk,number,,PASALPU_SK,,3,open,,išmokų skaičius,Išmokų skaičius
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,,open,,"priskaičiuota išmokų suma, Eur","Priskaičiuota išmokų suma, Eur"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodrapasalpos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pasalpos.zip,"self.extract(""zip"")[""pasalpos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Pasalpa,,,"pasalpos_rusis, pasalpos_porusis",,,3,,,,
+,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Mėnuo,
+,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,Išmokos rūšis,
+,,,,,pasalpos_porusis,string,,PASALPOS_PORUSIS,,3,open,,Išmokos porūšis,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],SAVIVALDYBE,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,lytis,string,,LYTIS,,4,open,,Lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
+,,,,,atveju_sk,integer,,ATVEJU_SK,,4,open,,Atvejų skaičius,
+,,,,,gaveju_sk,integer,,GAVEJU_SK,,4,open,,Gavėjų skaičius,
+,,,,,apmok_dienu_sk,integer,,APMOK_DIENU_SK,,4,open,,Apmokėtų dienų skaičius,
+,,,,,pasalpu_sk,integer,,PASALPU_SK,,4,open,,Išmokų skaičius,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota išmokų suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/gr/moteru_vardai,,,,,,,,,,,,"Populiariausi moterų vardai Lietuvoje nuo 1900 metų, TOP 50",
+,,,,,,,,,,,,,,
+,,,,MotersVardas,,,nr,,,4,,,"Populiariausi moterų vardai Lietuvoje nuo 1900 metų, TOP 50",
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,vardas,string,,,,3,open,,Moters vardas,
+,,,,,viso_vardas,integer,U,,,4,open,,"Moterų, gimusių nuo 1900 m. ir kurioms suteiktas toks vardas, skaičius",

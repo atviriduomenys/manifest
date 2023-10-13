@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/lis/lis_leidimai,,,,,,,,,,,,Valstybės institucijų ūkio subjektams išduoti LEIDIMAI,
+,,,,LisLeidimas,,,id,,,4,,,Licencijų informacinės sistemos duomenys apie valstybės institucijų ūkio subjektams išduotus leidimus,
+,,,,,id,integer,,,,4,open,,Identifikavimo kodas,
+,,,,,numeris,string,,,,4,open,,Registracijos numeris,
+,,,,,isdavimo_data,date,D,,,4,open,,Išdavimo data,
+,,,,,galioja_nuo,date,D,,,4,open,,Galiojimo data nuo,
+,,,,,galioja_iki,date,D,,,4,open,,Galiojimo data iki,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Licenciją išduodanti institucija,
+,,,,,gavejo_pavadinimas,string,,,,3,open,,Gavėjo pavadinimas (fizinio asmens atveju tik įrašas „fizinis asmuo“),
+,,,,,gavejo_kodas,string,,,,3,open,,Gavėjo kodas (fizinio asmens atveju tik įrašas „fizinis asmuo“),
+,,,,,lic_tipas,ref,/datasets/gov/rc/lis/lis_rusys_tipai/LisTipas,,,4,open,,Tipo kodas,
+,,,,,lic_rusis,ref,/datasets/gov/rc/lis/lis_rusys_tipai/LisRusis,,,4,open,,Rūšies kodas,

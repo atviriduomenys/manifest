@@ -1,0 +1,25 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/prisirase,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PrisirasesPaasp,,,,,,4,,,Prisirašiusių prie PAASP asmenų skaičius,Informacija apie prisirašiusių prie pirminės ambulatorinės asmens sveikatos priežiūros paslaugas teikiančių įstaigų asmenų skaičių
+,,,,,metai,integer,,,,2,open,,Metai,Ataskaitinio laikotarpio metai
+,,,,,menuo,integer,,,,2,open,,Mėnuo,Ataskaitinio laikotarpio mėnuo
+,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, prie kurios prisirašę asmenys, ID"
+,,,,,apylinke,string,,,,4,open,,Apylinkė,"Specialistas, prie kurio asmuo prirašytas (šeimos gydytojas, pediatras, terapeutas)"
+,,,,,,enum,,,"""Šeimos gydytojo""",,,,,
+,,,,,,,,,"""Terapeuto""",,,,,
+,,,,,,,,,"""Pediatro""",,,,,
+,,,,,draustumas,integer,,,,3,open,,Draustumas,"Požymis, parodantis, ar asmenys buvo apdrausti PSD nurodytu laikotarpiu"
+,,,,,tlk,string,,,,,open,,Teritorinė ligonių kasa,
+,,,,,,enum,,,"""Vilniaus TLK""",,,,,
+,,,,,,,,,"""Kauno TLK""",,,,,
+,,,,,,,,,"""Klaipėdos TLK""",,,,,
+,,,,,,,,,"""Šiaulių TLK""",,,,,
+,,,,,,,,,"""Panevėžio TLK""",,,,,
+,,,,,savivaldybe,integer,,,,2,open,,Savivaldybės kodas,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas]"")",2,,,,
+,,,,,,comment,property,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,amziaus_grupe,string,,,,3,open,,Amžiaus grupė,

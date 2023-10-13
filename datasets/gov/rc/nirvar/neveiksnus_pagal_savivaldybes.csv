@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/nirvar/neveiksnus_pagal_savivaldybes,,,,,,,,,,,,NIRVAR statistika apie teismo tvarka neveiksniais pripažintus asmenis pagal savivaldybes,
+,,,,,,,,,,,,,,
+,,,,NeveiksnusSavivaldybe,,,savivaldybe,,,4,,,NIRVAR statistika apie teismo tvarka neveiksniais pripažintus asmenis pagal savivaldybes,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės  pavadinimas iš Adresų registro ,
+,,,,,neveiksniu_asm_skaicius,string,,,,3,open,,Neveiksnių asmenų skaičius,

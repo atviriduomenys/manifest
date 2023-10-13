@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/varezultatai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,ValstybinioAuditoRezultatai,,,,,,4,,,Valstybinio audito rezultatai ,"Valstybės kontrolės finansinių, atitikties ir veiklos auditų ataskaitų, išvadų duomenys"
+,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,Audito identifikacijos numeris
+,,,,,audito_pavadinimas,string,,,,3,open,,Produkto pavadinimas,Audito pavadinimas
+,,,,,audito_tipas,string,,,,4,open,,Audito tipas,"Audito tipas: finansinis, veiklos, atitikties auditas"
+,,,,,,enum,,,"""Veiklos auditai""",,,,Veiklos auditai,"Veiklos auditai – kai vertinama audituojamo subjekto veikla ekonomiškumo, efektyvumo ir rezultatyvumo požiūriu. "
+,,,,,,,,,"""Finasiniai auditai""",,,,Finasiniai auditai,Finansiniai auditai – kai vertinami audituojamo subjekto metinių (konsoliduotųjų) finansinių ir biudžeto vykdymo ataskaitų rinkinių duomenis ir pareiškiama nepriklausoma auditoriaus nuomonė. 
+,,,,,,,,,"""Atitikties auditai""",,,,Atitikties auditai,Atitikties auditai – kai vertinama audituojamo subjekto veiklos atitiktis teisės aktų ir (ar) kitiems reikalavimams ir gali būti pareiškiama nepriklausoma auditoriaus nuomonė. 
+,,,,,srities_pavadinimas,string,,,,3,open,,Srities pavadinimas,"Srities, kurioje suplanuotas auditas, pavadinimas"
+,,,,,registravimo_data,date,D,,,4,open,,Registracijos data,Dokumento registracijos dokumentų valdymo posistemyje data
+,,,,,failo_url,url,,,,4,open,,Nuoroda į produkto dokumentą,Audito ataskaitos dokumentas

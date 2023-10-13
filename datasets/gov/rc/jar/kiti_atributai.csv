@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/kiti_atributai,,,,,,,,,,,,Kiti juridinių asmenų registro atributų klasifikatoriai,"Lietuvos Respublikos juridinių asmenų registro išregistravimo priežasčių ir naudojamų pareigų klasifikatoriai (duomenų rinkinių grupė, viso 2 vnt.) "
+,,,,,,,,,,,,,,
+,,,,IsregistravimoPriezastis,,,kodas,,,4,,,Juridinių asmenų registro išregistravimo priežasčių klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Juridinio asmens išregistravimo priežasties kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinio asmens išregistravimo priežasties pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinio asmens išregistravimo priežasties pavadinimas anglų kalba,
+,,,,,,,,,,,,,,
+,,,,Pareigos,,,kodas,,,4,,,Juridinių asmenų registro pareigų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Juridinių asmenų registre naudojamų pareigų kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinių asmenų registre naudojamų pareigų pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinių asmenų registre naudojamų pareigų pavadinimas anglų kalba,

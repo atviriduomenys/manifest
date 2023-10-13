@@ -8,8 +8,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,id,string,,,,4,open,,Eilutės numeris,
 ,,,,,moketojo_tipas,integer,,,,4,open,,"Požymis, ar fizinio asmens, ar juridinio asmens deklaracija",
-,,,,,,enum,,1,"""fizinis asmuo""",,,,Fizinis asmuo,
-,,,,,,,,2,"""juridinis asmuo""",,,,Juridinis asmuo,
+,,,,,,enum,,,1,,,,Fizinis asmuo,
+,,,,,,,,,2,,,,Juridinis asmuo,
 ,,,,,metai,integer,,,,2,open,,Deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai,NTM deklaracijoje nurodyto mokestinio laikotarpio arba jo pradžios metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,apskaiciuota_suma,number,,,,2,open,,Apskaičiuota mokesčio suma (KIT711S priedo visų lapų S15 laukelių suma),"Apskaičiuota mokesčio suma (bendra mokesčio suma už visose savivaldybėse turimą NT dar neįvertinus gautų lengvatų), t. y. NTM deklaracijos KIT711S priedo visų lapų S15 laukelių suma"
@@ -84,8 +84,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eilutes_nr_ffdata,integer,,,,2,open,,Mėnuo. Sutampa su deklaracijos XML paketo eilutės Nr. (eilutės numeris lape pagal FFData numeraciją),"Mėnuo, kurį keitėsi (padidėjo ar sumažėjo) apmokestinamo NT mokestinės vertės"
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,nt_tipas,integer,,,,4,open,,Apmokestinamo nekilnojamojo turto priklausomybė: nuosavas ar perimtas,"Apmokestinamo NT priklausomybė: nuosavas ar perimtas, kai deklaruojamas NT vertės kitimas mėnesiais"
-,,,,,,enum,,1,"""nuosavas""",,,,Nuosavas,
-,,,,,,,,2,"""perimtas""",,,,Perimtas,
+,,,,,,enum,,,1,,,,Nuosavas,
+,,,,,,,,,2,,,,Perimtas,
 ,,,,,men_sk,integer,,,,2,open,,"S7: Mėnesių skaičius, kuriais mokestis skaičiuojamas nuo pasikeitusios vertės","Mėnesių skaičius, kuriais mokestis skaičiuojamas nuo pasikeitusios vertės"
 ,,,,,nt_vertes_pokytis,number,,,,2,open,,S5: S4 laukelyje nurodyto apmokestinamo turto vertės padidėjimas / sumažėjimas (sumažėjimas įrašomas su minuso ženklu),Nurodyto apmokestinamo turto vertės padidėjimas / sumažėjimas (sumažėjimas įrašomas su minuso ženklu)
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

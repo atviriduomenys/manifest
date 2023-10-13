@@ -1,15 +1,20 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/nelaimingi_atsitikimai,,,,,,,,,,,,,
-,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"self.extract(""zip"")[""nad_pl.csv""]",,,,,
-,,,,NelaimingiAtsitikimai,,,"pasalpos_rusis, pasalpos_priezastis",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,metų mėnuo,Metų mėnuo
-,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,pašalpos rūšis,Pašalpos rūšis
-,,,,,pasalpos_priezastis,string,,PASALPOS_PRIEZASTIS,,3,open,,pašalpos priežastis,Pašalpos priežastis
-,,,,,net_darb_lygis,string,,NET_DARB_LYGIS,,3,open,,netekto darbingumo lygis,Netekto darbingumo lygis
-,,,,,net_darb_tipas,string,,NET_DARB_TIPAS,,3,open,,netekto darbingumo tipas,Netekto darbingumo tipas
-,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
-,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
-,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
-,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota suma, Eur","Priskaičiuota suma, Eur"
-,,,,,ismoku_sk,number,,ISMOKU_SK,,3,open,,išmokų skaičius,Išmokų skaičius
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"extract(""zip"")[""nad_pl.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,NelaimingasAtsitikimas,,,"pasalpos_rusis, pasalpos_priezastis",,,3,,,,
+,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo,
+,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,Pašalpos rūšis,
+,,,,,pasalpos_priezastis,string,,PASALPOS_PRIEZASTIS,,3,open,,Pašalpos priežastis,
+,,,,,net_darb_lygis,string,,NET_DARB_LYGIS,,3,open,,Netekto darbingumo lygis,
+,,,,,net_darb_tipas,string,,NET_DARB_TIPAS,,3,open,,Netekto darbingumo tipas,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],SAVIVALDYBE,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,lytis,string,,LYTIS,,4,open,,Lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
+,,,,,gaveju_sk,number,,GAVEJU_SK,,4,open,,Gavėjų skaičius,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,ismoku_sk,number,,ISMOKU_SK,,4,open,,Išmokų skaičius,

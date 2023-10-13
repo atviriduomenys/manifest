@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/bva,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,BiudzetoVykdymoAtaskaita,,,,,,4,,,Biudžeto vykdymo ataskaita,Valstybės kontrolės biudžeto išlaidų sąmatos vykdymo  duomenys
+,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ataskaitinis_ketvirtis,integer,,,,3,open,,Ketvirtis,Ketvirtis 
+,,,,,iekk_i_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos I kodas,Išlaidų ekonominės klasifikacijos I kodas
+,,,,,iekk_i_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos I kodo pavadinimas,Išlaidų ekonominės klasifikacijos I kodo pavadinimas
+,,,,,iekk_ii_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos II kodas,Išlaidų ekonominės klasifikacijos II kodas
+,,,,,iekk_ii_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos II kodo pavadinimas,Išlaidų ekonominės klasifikacijos II kodo pavadinimas
+,,,,,iekk_iii_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos III kodas,Išlaidų ekonominės klasifikacijos III kodas
+,,,,,iekk_iii_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos III kodo pavadinimas,Išlaidų ekonominės klasifikacijos III kodo pavadinimas
+,,,,,iekk_iv_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos IV kodas,Išlaidų ekonominės klasifikacijos IV kodas
+,,,,,iekk_iv_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos IV kodo pavadinimas,Išlaidų ekonominės klasifikacijos IV kodo pavadinimas
+,,,,,iekk_v_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos V kodas,Išlaidų ekonominės klasifikacijos V kodas
+,,,,,iekk_v_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos V kodo pavadinimas,Išlaidų ekonominės klasifikacijos V kodo pavadinimas
+,,,,,iekk_vi_kodas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos VI kodas,Išlaidų ekonominės klasifikacijos VI kodas
+,,,,,iekk_vi_pavadinimas,string,,,,3,open,,Išlaidų ekonominės klasifikacijos VI kodo pavadinimas,Išlaidų ekonominės klasifikacijos VI kodo pavadinimas
+,,,,,asignavimu_planas_metams,number,,,,2,open,,Asignavimų planas metams,Asignavimų planas metams
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,
+,,,,,asignavimu_planas_ataskaitiniam_laikotarpiui,number,,,,2,open,,Asignavimų planas ataskaitiniam laikotarpiui,"Asignavimų planas ataskaitiniam laikotarpiui, suma Eur"
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,
+,,,,,gauti_asignavimai_kartu_su_iskaitytu_prajusiu_metu_lesu_likuciu,number,,,,2,open,,Gauti asignavimai kartu su įskaitytu praėjusių metų lėšų likučiu,"Gauti asignavimai kartu su įskaitytu praėjusių metų lėšų likučiu, suma Eur"
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,
+,,,,,panaudoti_asignavimai,number,,,,2,open,,Panaudoti asignavimai,"Panaudoti asignavimai, suma Eur"
+,,,,,,comment,"type, ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,

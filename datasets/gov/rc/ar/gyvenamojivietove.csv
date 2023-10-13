@@ -1,12 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/gyvenamojivietove,,,,,,,,,,,,Adresų registras,
-,,gyvenamojivietove,,,,csv,,https://www.registrucentras.lt/aduomenys/?byla=adr_gyvenamosios_vietoves.csv,,,,,Adresų registro duomenų bazė,
-,,,,GyvenamojiVietove,,,gyv_kodas,,,,,,Adresų registro gyvenamųjų vietovių tekstinių duomenų rinkinys ,Gyvenamųjų vietovių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - gyvenamąsias vietoves apibūdinantys duomenys).
-,,,,,gyv_kodas,integer,,GYV_KODAS,,3,open,,Gyvenamosios vietovės identifikavimo kodas,
-,,,,,tipas,string,,TIPAS,,3,open,,"Gyvenamosios vietovės tipas (miestas, miestelis, kaimas, viensėdis ir pan.)",
-,,,,,tipo_santrumpa,string,,TIPO_SANTRUMPA,,3,open,,Gyvenamosios vietovės tipo trumpinys,
-,,,,,pavadinimas,string,,VARDAS,,3,open,,Gyvenamosios vietovės pavadinimas (vardininko linksnyje),
-,,,,,sen_kodas,ref,/datasets/gov/rc/ar/seniunija/Seniunija,SEN_KODAS,,4,open,,"Seniūnijos, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,SAV_KODAS,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
-,,,,,nuo,date,,NUO,,3,open,,Atributų rinkinio pradžios galiojimo data,
-,,,,,gyv_nuo,date,,GYV_NUO,,3,open,,Objekto įregistravimo data,
+,,,,GyvenamojiVietove,,,gyv_kodas,,,4,,,Adresų registro gyvenamųjų vietovių tekstinių duomenų rinkinys ,Gyvenamųjų vietovių tekstinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - gyvenamąsias vietoves apibūdinantys duomenys).
+,,,,,gyv_kodas,integer,,,,4,open,,Gyvenamosios vietovės identifikavimo kodas,
+,,,,,tipas,string,,,,3,open,,"Gyvenamosios vietovės tipas (miestas, miestelis, kaimas, viensėdis ir pan.)",
+,,,,,tipo_santrumpa,string,,,,3,open,,Gyvenamosios vietovės tipo trumpinys,
+,,,,,pavadinimas_k,string,,,,3,open,,Gyvenamosios vietovės pavadinimas (kilmininko linksnyje),
+,,,,,pavadinimas,string,,,,3,open,,Gyvenamosios vietovės pavadinimas (vardininko linksnyje),
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,"Seniūnijos, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra gyvenamoji vietovė, identifikavimo kodas",
+,,,,,gyv_nuo,date,D,,,4,open,,Objekto įregistravimo data,

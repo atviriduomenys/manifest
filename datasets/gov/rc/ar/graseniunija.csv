@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/graseniunija,,,,,,,,,,,,Adresų registras,
-,,graseniunija,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_seniunijos.json,,,,,Adresų registro duomenų bazė,
-,,,,GraSeniunija,,,sen_kodas,,,,,,Adresų registro seniūnijų erdviniai duomenys  ,Seniūnijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - seniūnijas apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,pavadinimas,string,,SEN_PAV,,3,open,,Seniūnijos pavadinimas ,
-,,,,,sen_kodas,integer,,SEN_KODAS,,3,open,,Seniūnijos kodas Registre (nekeičiamas savivaldybės egzistavimo laiką),
-,,,,,sen_plotas,number,,SEN_PLOTAS,,3,open,,Seniūnijos grafinis plotas (ha),
-,,,,,sen_r,date,,SEN_R,,3,open,,Seniūnijos įrašymo į Adresų registrą data,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,SAV_KODAS,,4,open,,"LR AR savivaldybės į kurią patenka seniūnijos teritorija, išorinis kodas",
+,,,,GraSeniunija,,,sen_kodas,,,4,,,Adresų registro seniūnijų erdviniai duomenys  ,Seniūnijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus - seniūnijas apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,pavadinimas,string,,,,3,open,,Seniūnijos pavadinimas ,
+,,,,,sen_kodas,integer,,,,4,open,,Seniūnijos kodas Registre (nekeičiamas savivaldybės egzistavimo laiką),
+,,,,,sen_plotas,number,ha,,,4,open,,Seniūnijos grafinis plotas (ha),
+,,,,,sen_r,date,D,,,4,open,,Seniūnijos įrašymo į Adresų registrą data,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"LR AR savivaldybės į kurią patenka seniūnijos teritorija, išorinis kodas",
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,seniunijos,"geometry(polygon,3346)",m,,,4,open,,Seniūnijų ribos,

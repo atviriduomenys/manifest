@@ -1,0 +1,48 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmi/oss_deklaracijos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,OssDeklaracija,,,,eiles_nr,,4,,,OSS Deklaracijoas,"One Stop Shop (OSS) - tai sistema, kuri palengvina mokestinių PVM prievolių vykdymą ūkio subjektams, parduodantiems neapmokestinamiesiems asmenims tam tikras prekes ar paslaugas, už kurias PVM turėtų būti sumokėtas kitoje valstybėje narėje tais atvejais, kai veikla apima daugiau nei vienos ES valstybės narės teritoriją. Ūkio subjektai, besinaudojantys sistema, registruojasi, deklaruoja ir moka PVM vienoje valstybėje narėje, neatsižvelgdami į tai, kad paslaugas teikia ir (ar) prekes tiekia keliose ES valstybėse narėse."
+,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
+,,,,,dalyvio_id,integer,,,,4,open,,OSS dalyvio identifikatorius,
+,,,,,pvm_nr_id,string,,,,4,open,,Mokesčių mokėtojo ID OSS sistemoje,
+,,,,,pvm_kodo_valstybe,string,,,,2,open,,"Valstybė,suteikusi PVM mokėtojo kodą",
+,,,,,moketojo_kodo_valstybe,string,,,,2,open,,"Valstybė, suteikusi mokesčių mokėtojo kodą",
+,,,,,veiklos_salis,string,,,,2,open,,Verslo vietos šalis,
+,,,,,registracijos_schema,string,,,,4,open,,Schemos požymis ,
+,,,,,,enum,,,"""ES""",,,,ES prievolė,"ES schema skirta prievolių, susijusių su Europos Sąjungos vidaus nuotoline prekyba prekėmis, prekių tiekimo valstybėje narėje naudojant elektronines sąsajas, kuriomis sudaromos sąlygos tiekti prekes, ir paslaugų, kurias teikia Europos Sąjungoje, tačiau ne vartojimo valstybėje narėje įsisteigę apmokestinamieji asmenys, įvykdymui."
+,,,,,,,,,"""Importo""",,,,ES supaprastinta PVM prievolė,"Importo schema naudojama, siekiant supaprastintai įvykdyti PVM prievoles, susijusias su nuotoline prekybai iš trečiųjų teritorijų ar trečiųjų valstybių importuojamomis prekėmis. Ši schema dar gali būti vadinama IOSS."
+,,,,,,,,,"""non-ES""",,,,Veikla trečiųjų valstybių importui,"Ne ES schema skirta Europos Sąjungoje neįsikūrusiems asmenims, kurie teikia paslaugas neapmokestinamiesiems asmenims, kai tokių paslaugų suteikimo vieta yra atitinkama Europos Sąjungos valstybė narė."
+,,,,,reg_statusas,string,,,,4,open,,Registracijos statuso požymio pavadinimas,
+,,,,,,enum,,,"""Received""",,,,Priimta,
+,,,,,,,,,"""Approved""",,,,Patvirtinta,
+,,,,,,,,,"""Rejected""",,,,Atmesta,
+,,,,,,,,,"""Cancelled""",,,,Ištrinta,
+,,,,,,,,,"""Processing""",,,,Apdorojama,
+,,,,,veiklos,string,,,,4,open,,Veikla,
+,,,,,,enum,,,"""T""",,,,T - telekomunikacijos,"T - telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamos paslaugos"
+,,,,,,,,,"""K""",,,,K - kitos paslaugos,"K - kitos paslaugos nei telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamos paslaugos, kai tokių kitų paslaugų teikimui taikomos PVM įstatymo XII skyriaus Šeštojo skirsnio nuostatos"
+,,,,,,,,,"""P""",,,,P - ES nuotolinė prekyba,"P - ES vidaus nuotolinė prekyba prekėmis"
+,,,,,,,,,"""TP""",,,,T ir P deklaruotos veiklos,
+,,,,,,,,,"""KP""",,,,K ir P deklaruotos veiklos,
+,,,,,,,,,"""TKP""",,,,"T, K, P deklaruotos veiklos",
+,,,,,patvirtinimo_pasirinkimas,integer,,,,4,open,,Registracijos metu pasirinktas patvirtinimo požymis dėl vertės viršijimo,
+,,,,,,enum,,,1,,,,"Paslaugos, prekės virsija 10000","Telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamų paslaugų ir / ar ES vidaus nuotolinės prekybos prekių tiekimo vertė (neįskaitant PVM) viršijo 10 000 eurų"
+,,,,,,,,,2,,,,"Paslaugos, prekės nevirsija 10000","Telekomunikacijų, radijo ir televizijos transliavimo ar elektroniniu būdu teikiamų paslaugų ir / ar ES vidaus nuotolinės prekybos prekių tiekimo vertė (neįskaitant PVM) neviršijo 10 000 eurų, tačiau noriu pasinaudoti PVM įstatymo 13² straipsnio 2 dalyje nustatyta galimybe"
+,,,,,tiekimo_pozymis,string,,,,4,open,,Tiekimo požymis,
+,,,,,,enum,,,"""GOODS""",,,,"GOODS – Prekės",
+,,,,,,,,,"""SERVICES""",,,,"SERVICES – Paslaugos",
+,,,,,dek_statusas,integer,,,,4,open,,Deklaracijos statusas ,
+,,,,,,enum,,,6,,,,Teisinga,
+,,,,,,,,,7,,,,Priimta su klaidomis,
+,,,,,pateikimo_data,datetime,D,,,4,open,,"Duomenų įrašymo į lentelę data (sysdate)",
+,,,,,metai,integer,,,,2,open,,Mokestinio laikotarpio metai ,
+,,,,,ketvirtis,integer,,,,2,open,,Mokestinio laikotarpio ketvirtis,
+,,,,,menuo,integer,,,,2,open,,Mokestinio laikotarpio mėnuo,
+,,,,,dek_salis,string,,,,2,open,,Vartojimo valstybė narė,
+,,,,,apmokestinta_verte,number,,,,2,open,,Apmokestinamoji vertė,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,pvm_suma,number,,,,2,open,,PVM suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/sutartines_sumos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Suma,,,,,,,,,Asmens sveikatos priežiūros įstaigų pasirašytos sutartinės sumos dėl asmens sveikatos priežiūros paslaugų,Informacija apie asmens sveikatos priežiūros įstaigų ir teritorinių ligonių kasų pasirašytas sutartines sumas dėl asmens sveikatos priežiūros paslaugų teikimo ir jų apmokėjimo Privalomojo sveikatos draudimo fondo biudžeto lėšomis
+,,,,,metai,integer,,,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
+,,,,,istg_jar,integer,,,,2,open,,Įstaigos JA kodas,
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"")",4,open,spinta:208,,
+,,,,,istg_id,ref,/datasets/gov/vlk/istaigos/Istaiga,,,4,open,,Įstaigos ID,
+,,,,,sut_suma,number,,,,2,open,,ASPĮ numatyta sutartinė suma,"ASPĮ numatyta sutartinė suma Privalomojo sveikatos draudimo fondo biudžeto lėšomis apmokamoms paslaugoms, įskaitant preliminarias sutartines sumas, (01, 03, 05  išlaidų straipsniai)"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40 ,,

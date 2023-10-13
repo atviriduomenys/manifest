@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/gr/cba_rusys,,,,,,,,,,,,Gyventojų registro civilinės būklės aktų įrašų rūšių klasifikatorius,
+,,,,,,,,,,,,,,
+,,,,CBARusis,,,"kodas, kodo_kodas",,,4,,,Gyventojų registro civilinės būklės aktų įrašų rūšių klasifikatorius,
+,,,,,kodas,string,,,,4,open,,Gyventojų registro civilinės būklės akto įrašo rūšies kodas,
+,,,,,aprasymas,string,,,,3,open,,Gyventojų registro civilinės būklės akto įrašo rūšies aprašymas,
+,,,,,kodo_kodas,string,,,,4,open,,Gyventojų registro civilinės būklės akto įrašo rūšies kodo kodas,

@@ -1,20 +1,25 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pensijos,,,,,,,,,,,,,
-,,sodrapensijos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pensijos.zip,"self.extract(""zip"")[""pensijos.csv""]",,,,,
-,,,,Pensijos,,,"pensijos_rusis, pensijos_porusis",,,,,,,
-,,,,,metu_menuo,date,1M,METU_MENUO,,2,open,,metų mėnuo,Metų mėnuo
-,,,,,pensijos_rusis,string,,PENSIJOS_RUSIS,,3,open,,pensijos rūšis,Pensijos rūšis
-,,,,,pensijos_porusis,string,,PENSIJOS_PORUSIS,,3,open,,pensijos porūšis,Pensijos porūšis
-,,,,,net_darb_grupe,string,,NET_DARB_GRUPE,,3,open,,netekto darbingumo grupė,Netekto darbingumo grupė
-,,,,,biudzetas,string,,BIUDZETAS,,3,open,,biudžetas,Valstybinio socialinio draudimo biudžetas
-,,,,,lytis,string,,LYTIS,,3,open,,lytis,Lytis
-,,,,,ar_dirba,string,,AR_DIRBA,,3,open,,ar dirba?,Ar dirba mėnesio pabaigoje?
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodrapensijos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pensijos.zip,"extract(""zip"")[""pensijos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Pensija,,,"metu_menuo",,,,,,,
+,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo,
+,,,,,pensijos_rusis,string,,PENSIJOS_RUSIS,,3,open,,Pensijos rūšis,
+,,,,,pensijos_porusis,string,,PENSIJOS_PORUSIS,,3,open,,Pensijos porūšis,
+,,,,,net_darb_grupe,string,,NET_DARB_GRUPE,,3,open,,Netekto darbingumo grupė,
+,,,,,biudzetas,string,,BIUDZETAS,,3,open,,Valstybinio socialinio draudimo biudžetas,
+,,,,,lytis,string,,LYTIS,,3,open,,Lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,ar_dirba,string,,AR_DIRBA,,4,open,,Ar dirba mėnesio pabaigoje?,
 ,,,,,,enum,,,"""Dirba""",,,,Dirba,
 ,,,,,,,,,"""Nedirba""",,,,Nedirba,
-,,,,,ar_turi_staza,string,,AR_TURI_STAZA,,3,open,,ar turi stažą?,Ar turi stažą?
+,,,,,ar_turi_staza,string,,AR_TURI_STAZA,,4,open,,Ar turi stažą?,
 ,,,,,,enum,,,"""Turi""",,,,Turi stažo,
 ,,,,,,,,,"""Neturi""",,,,Neturi stažo,
-,,,,,amzius,string,,AMZIUS,,3,open,,amžius,Amžius
-,,,,,savivaldybe,string,,SAVIVALDYBE,,3,open,,savivaldybė,Savivaldybė
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota suma, Eur","priskaičiuota suma, Eur"
-,,,,,gaveju_sk,number,,GAVEJU_SK,,3,open,,gavėjų skaičius,Gavėjų skaičius
+,,,,,amzius,string,,AMZIUS,,3,open,,Amžius,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],SAVIVALDYBE,,2,open,,Savivaldybė,
+,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,gaveju_sk,number,,GAVEJU_SK,,4,open,,Gavėjų skaičius,

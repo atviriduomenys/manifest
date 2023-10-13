@@ -1,19 +1,36 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vlk/paslaugos,,,,,,,,,,,,,
-,,adk,,,,csv,,https://data.gov.lt/dataset/1385/download/,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,paslaugos,,,kodas,9428/paslaugos.csv,,,,,Paslaugų sąrašas,"Asmens sveikatos priežiūros paslaugų klasifikatorius, patvirtintas Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos direktoriaus 2005 m. birželio 30 d. įsakymu Nr. 1K-81 „Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo“"
-,,,,,id,string,,id,,4,open,,Paslaugos ID,Paslaugos ID
-,,,,,kodas,string,,pas_kodas,,4,open,,Paslaugos kodas,"Paslaugos kodas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
-,,,,,pas_pavadinimas,string,,pas_pavadinimas,,4,open,,Paslaugos pavadinimas,"Paslaugos pavadinimas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"". Kai kurių paslaugų pavadinimai yra nepilni, kadangi IS Sveidra pavadinimo lauke simbolių skaičius yra ribotas"
-,,,,,paslaugos_tipas,string,,paslaugos_tipas,,4,open,,Paslaugos tipo kodas,"Paslaugos tipas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
-,,,,,teikimo_salygos,string,,teikimo_salygos,,4,open,,Paslaugos teikimo sąlygos,"Paslaugų teikimo sąlygos: ambulatorinės, stacionarinės bei dienos stacionaro sąlygos"
-,,,,,,enum,,,"""A""",,,,Ambulatorinės,
-,,,,,,,,,"""S""",,,,Stacionarinės,
-,,,,,,,,,"""D""",,,,Dienos stacionaro,
-,,,,,lygis,string,,lygis,,4,open,,Paslaugos lygio kodas,Paslaugos lygio kodas
-,,,,,amzius,string,,amzius,,4,open,,Paciento amžiaus grupė,"Paciento, kuriam gali būti teikiama paslauga, amžiaus grupė"
-,,,,,,enum,,,"""S""",,,,Suaugęs,
-,,,,,,,,,"""V""",,,,Vaikas,
-,,,,,pasl_pradzia,date,,pasl_pradzia,,4,open,,Paslauga teikiama nuo,Paslaugos galiojimo pradžios data
-,,,,,pasl_pabaiga,date,,pasl_pabaiga,,4,open,,Paslauga teikiama iki,Paslaugos galiojimo pabaigos data
+,,,,Paslauga,,,,,,4,,,Asmens sveikatos priežiūros paslaugų sąrašas,"Asmens sveikatos priežiūros paslaugų klasifikatorius, patvirtintas Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos direktoriaus 2005 m. birželio 30 d. įsakymu Nr. 1K-81 „Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo“"
+,,,,,amzius,string,,,,4,open,,Paciento amžiaus grupė,"Paciento, kuriam gali būti teikiama paslauga, amžiaus grupė"
+,,,,,,enum,,,"""Vaikas""",,,,Vaikas,
+,,,,,,,,,"""Suaugęs""",,,,Suaugęs,
+,,,,,kodas,string,,,,4,open,,Paslaugos kodas,"Paslaugos kodas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
+,,,,,pavadinimas,string,,,,4,open,,Paslaugos pavadinimas,"Paslaugos pavadinimas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"". Kai kurių paslaugų pavadinimai yra nepilni, kadangi IS Sveidra pavadinimo lauke simbolių skaičius yra ribotas"
+,,,,,teikimo_salygos,string,,,,4,open,,Paslaugos teikimo sąlygos,"Paslaugų teikimo sąlygos: ambulatorinės, stacionarinės bei dienos stacionaro sąlygos"
+,,,,,,enum,,,"""Ambulatorinės""",,,,Ambulatorinės,
+,,,,,,,,,"""Dienos""",,,,Dienos,
+,,,,,,,,,"""Stacionarinės""",,,,Stacionarinės,
+,,,,,,,,,"""Ambulatorinės/stacionarinės""",,,,Ambulatorinės/stacionarinės,
+,,,,,paslaugos_tipo_kodas,integer,,,,2,open,,Paslaugos tipo kodas,"Paslaugos tipas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
+,,,,,,comment,property,,"create(property: ""tipas"", type: ""ref"", ref: ""Tipas"")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""tipas.kodas"", type: """")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,paslaugos_tipo_pavadinimas,string,,,,2,open,,Paslaugos tipo pavadinimas,"Paslaugos tipas pagal VLK direktoriaus 2005 m. birželio 30 d. įsakymą Nr. 1K-81 ""Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo"""
+,,,,,,comment,property,,"update(property: ""tipas.pavadinimas"", type: """")",4,,"Spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,lygis,string,,,,4,open,,Paslaugos lygio kodas,Paslaugos lygio kodas
+,,,,,,enum,,,"""I lygis""",,,,Pirmas lygis,
+,,,,,,,,,"""II lygis""",,,,Antras lygis,
+,,,,,,,,,"""III lygis""",,,,Trečias lygis,
+,,,,,nuo,date,D,,,4,open,,Paslauga teikiama nuo,Paslaugos galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,Paslauga teikiama iki,Paslaugos galiojimo pabaigos data
+,,,,,,,,,,,,,,
+,,,,Balas,,,,,,4,,,Bazinių kainų balais sąrašas,Asmens sveikatos priežiūros paslaugų bazinių balų sąrašas
+,,,,,paslauga,ref,Paslauga,,,4,open,,Nuoroda į paslaugas,
+,,,,,lovadieniui,number,,,,4,open,,Balai lovadieniui,
+,,,,,atvejui,number,,,,4,open,,Balai atvejui,
+,,,,,nuo,date,D,,,4,open,,Galioja nuo,
+,,,,,iki,date,D,,,4,open,,Galioja iki,
+,,,,,verte,number,,,,4,open,,Bazinio balo vertė,
+,,,,,trukme,integer,U,,,4,open,,Vidutinė paslaugos trukmė,

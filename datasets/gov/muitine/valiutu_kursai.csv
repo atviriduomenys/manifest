@@ -1,21 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/muitine/valiutu_kursai,,,,,,,,,,,,,
+,,,,,,prefix,ns,,,,,http://rep.xmlstandards.eu/icdts/LT/schemas/ReferenceData.xsd,,
 ,,92LT,,,,xml,,https://www.lrmuitine.lt/mport/other_files/AtviriDuom_klasifikatoriai/92LT.xml,,,,,,
-,,,,Metadata,,,id,/ReferenceData,,,,,,
-,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
-,,,,,item_type,string,,@itemType,,3,open,,Rinkinio tipas,
-,,,,,item_code_type,string,,@itemCodeType,,3,open,,Įrašo kodo tipas,
-,,,,,last_change,date,10D,@lastChange,,3,open,,Paskutinio keitimo data,
-,,,,,xmlns_ns,string,,@xmlns:ns,,3,open,,XML schemos aprašo nuoroda,
-,,,,NameAndDescription,,,id,/ReferenceData/NameAndDescription,,,,,,
-,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
-,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
-,,,,,language_code,string,,@languageCode,,3,open,,Kalbos kodas,2 simbolių šalies kodas
-,,,,,name,string,,@name,,3,open,,Sąrašo pavadinimas,
-,,,,ExchangeRate,,,id,/ReferenceData/ExchangeRate,,,,,,
-,,,,,id,string,,@id,,4,open,,Rinkinio identifikacinis numeris,
-,,,,,metadata,ref,Metadata,../@id,,4,open,,Nuoroda į tėvinį elementą,
-,,,,,currency,ref,/datasets/gov/muitine/valiutu_sarasas/CurrencyCode,@currency,,4,open,,Valiutos kodas,3 ženklų valiutos kodas
+,,,,ExchangeRate,,,"currency, valid_from",/ns:ReferenceData/ns:ExchangeRate,,4,,,,
+,,,,,currency,ref,/datasets/gov/muitine/valiutu_sarasas/Currency,@currency,,4,open,,Valiutos kodas,3 ženklų valiutos kodas
 ,,,,,rate_eur,number,,@rateEUR,,4,open,,Valiutos kursas,
 ,,,,,valid_from,date,10D,@validFrom,,4,open,,Galiojimo pradžios data,
 ,,,,,valid_to,date,10D,@validTo,,4,open,,Galiojimo pabaigos data,

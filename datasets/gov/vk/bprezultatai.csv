@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/bprezultatai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,BPVertinimoRezultatai,,,,,,4,,,Biudžeto politikos stebėsenos vertinimų rezultatai,Valstybės kontrolės biudžeto politikos stebėsenos vertinimų rezultatai
+,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,"Vertinimo, išvados, ataskaitos, projekcijos identifikacijos numeris"
+,,,,,vertinimo_pavadinimas,string,,,,3,open,,Produkto pavadinimas,"Vertinimo, išvados, ataskaitos, projekcijos pavadinimas"
+,,,,,registravimo_data,date,D,,,4,open,,Registracijos data,Dokumento registracijos dokumentų valdymo posistemyje data
+,,,,,fail_url,url,,,,4,open,,Nuoroda į produkto dokumentą,"Vertinimo, išvados, ataskaitos, projekcijos dokumentas"

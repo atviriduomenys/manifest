@@ -1,15 +1,35 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vlk/vlk_istg,,,,,,,,,,,,,
-,,adk,,,,csv,,https://data.gov.lt/dataset/1386/download/9664/vds_istaigos.csv,,,,,,
+,datasets/gov/vlk/istaigos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,vlk_istg,,,"istg_id,istg_tipas",,,,,,Įstaigų sąrašas,"Gydymo įstaigų, vaistinių ir kitų įmonių klasifikatorius. IS METAS informacija"
-,,,,,istg_id,string,,istg_id,,4,open,,"Įstaigos (ASPĮ, vaistinės ir kt.) ID","Įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID), pagal kurį įstaiga identifikuojama informacinėje sistemoje Sveidra. Šis ID suteikiamas kiekvienai įstaigos veiklos vietai (filialui) skirtingas"
-,,,,,istg_jar_kodas,string,,istg_jar_kodas,,4,open,,Įstaigos JAR,"Įstaigos (ASPĮ, vaistinės ir kt.) Juridinių asmenų registre nurodytas juridinio asmens kodas"
-,,,,,istg_pavadinimas,string,,istg_pavadinimas,,4,open,,Įstaigos pavadinimas,"Įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
-,,,,,istg_sav,string,,istg_sav,,4,open,,Įstaigos savivaldybė,"Įstaigos (ASPĮ, vaistinės ir kt.) savivaldybe"
-,,,,,istg_tlk,string,,istg_tlk,,4,open,,Įstaigos TLK,"Įstaigos (ASPĮ, vaistinės ir kt.) teritorinės ligonių kasos, kuriai įstaiga priklauso, pavadinimas"
-,,,,,pagr_istg_id,string,,pagr_istg_id,,4,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID). Šis ID suteikiamas įstaigos veiklos vietai, kurioje registruota įstaigos buveinė"
-,,,,,pagr_istg_pavadinimas,string,,pagr_istg_pavadinimas,,4,open,,Įstaigos (pagrindinės) pavadinimas,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
-,,,,,istg_tipas,string,,istg_tipas,,4,open,,"Įstaigos tipas (vaistinė, ligoninė ir kt.)","Įstaigos tipas (vaistinė, ligoninė ir kt.)"
-,,,,,istg_data_nuo,date,,istg_data_nuo,,4,open,,Įstaigos galiojimo pradžios data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pradžios data"
-,,,,,istg_data_iki,date,,istg_data_iki,,4,open,,Įstaigos galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pabaigos data"
+,,,,,,enum,bool,,"""Ne""",,,,Ne,
+,,,,,,,,,"""Taip""",,,,Taip,
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,kodas,,,4,,,"Gydymo įstaigų, vaistinių ir kitų įmonių sąrašas","Informacija apie gydymo įstaigas, vaistines ir kitas įmones."
+,,,,,kodas,integer,,,,4,open,,"Įstaigos (ASPĮ, vaistinės ir kt.) ID","Įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID), pagal kurį įstaiga identifikuojama informacinėje sistemoje Sveidra. Šis ID suteikiamas kiekvienai įstaigos veiklos vietai (filialui) skirtingas"
+,,,,,jar,integer,,,,2,open,,Įstaigos JAR,"Įstaigos (ASPĮ, vaistinės ir kt.) Juridinių asmenų registre nurodytas juridinio asmens kodas"
+,,,,,,comment,type,,"update(type: ""ref"", ref: ""JuridinisAsmuo"")",4,,,,
+,,,,,,comment,property,,"update(property: ""jar.ja_kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,pavadinimas,string,,,,2,open,,Įstaigos pavadinimas,"Įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
+,,,,,,comment,property,,"update(property: ""jar.ja_pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,pagrindines_kodas,integer,,,,2,open,,Įstaigos (pagrindinės) ID,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) unikalus identifikavimo kodas (ID). Šis ID suteikiamas įstaigos veiklos vietai, kurioje registruota įstaigos buveinė"
+,,,,,,comment,type,,"create(property: ""pagrindine"", type: ""ref"", ref: ""Pagrindine"")",4,,,,
+,,,,,,comment,property,,"update(property: ""pagrindine.kodas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,pagrindines_pavadinimas,string,,,,2,open,,Įstaigos (pagrindinės) pavadinimas,"Pagrindinės įstaigos (ASPĮ, vaistinės ir kt.) pavadinimas"
+,,,,,,comment,property,,"update(property: ""pagrindine.pavadinimas"", type: """")",4,,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,optika,string,bool,,,4,open,,Požymis ar įstaiga yra optika,
+,,,,,nenurodyta,string,bool,,,4,open,,Požymis ar įstaigos tipas yra nenurodytas,
+,,,,,gydymo,string,bool,,,4,open,,Požymis ar įstaiga yra gydymo įstaiga,
+,,,,,farmacijos,string,bool,,,4,open,,Požymis ar įstaiga yra vaistinė,
+,,,,,ortopedijos_gamybos,string,bool,,,4,open,,Požymis ar įstaiga yra ortopedijos gamybos įstaiga,
+,,,,,odontologines_prieziuros,string,bool,,,4,open,,Požymis ar įstaiga yra odontologinės priežiūros įstaiga,
+,,,,,skyrius,string,bool,,,4,open,,Požymis ar įstaiga yra licencijuojamos įstaigos skyrius,
+,,,,,sav_kodas,string,,,,2,open,,Nuoroda į savivaldybių klasifikatorių,
+,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
+,,,,,,comment,property,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,open,Spinta:216,,
+,,,,,tlk,string,,,,4,open,,Teritorinė ligonių kasa (TLK),TLK pavadinimas
+,,,,,sutarties_pradzia,date,D,,,4,open,,Sutarties galiojimo pradžios data,"Įstaigos (ASPĮ, vaistinės ir kt.) sutarties galiojimo pradžios data"
+,,,,,sutarties_pabaiga,date,D,,,4,open,,Sutarties galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) sutarties galiojimo pabaigos data"
+,,,,,nuo,date,D,,,4,open,,Galiojimo pradžios data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pradžios data"
+,,,,,iki,date,D,,,4,open,,Galiojimo pabaigos data,"Įstaigos (ASPĮ, vaistinės ir kt.) galiojimo pabaigos data"

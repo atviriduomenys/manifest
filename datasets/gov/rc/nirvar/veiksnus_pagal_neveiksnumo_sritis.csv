@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/nirvar/veiksnus_pagal_neveiksnumo_sritis,,,,,,,,,,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal neveiksnumo sritis,
+,,,,,,,,,,,,,,
+,,,,RibotaiVeiksnusNeveiksnumoSritis,,,srities_pavadinimas,,,3,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal neveiksnumo sritis,
+,,,,,srities_pavadinimas,string,,,,3,open,,Riboto veiksnumo srities pavadinimas,
+,,,,,ribotai_veiksniu_asm_skaicius,string,,,,3,open,,Ribotai veiksnių asmenų skaičius,

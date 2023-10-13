@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/dokumentu_tipai_potipiai,,,,,,,,,,,,Juridinių asmenų registro dokumentų klasifikatoriai,"Lietuvos Respublikos juridinių asmenų registro dokumentų tipų ir dokumentų potipių klasifikatoriai (duomenų rinkinių grupė, viso 2 vnt.) (JAR dokumentų tipų klasifikatorius; JAR dokumentų potipių klasifikatorius)"
+,,,,,,,,,,,,,,
+,,,,DokumentoTipas,,,kodas,,,4,,,Juridinių asmenų registro dokumentų tipų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Juridinių asmenų registro dokumento tipo kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinių asmenų registro dokumento tipo pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinių asmenų registro dokumento tipo pavadinimas anglų kalba,
+,,,,,,,,,,,,,,
+,,,,DokumentoPotipis,,,kodas,,,4,,,Juridinių asmenų registro dokumentų potipių klasifikatorius,
+,,,,,dokumento_tipas,ref,DokumentoTipas,,,4,open,,Juridinių asmenų registro dokumento tipo kodas,
+,,,,,kodas,integer,,,,4,open,,Juridinių asmenų registro dokumento potipio kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinių asmenų registro dokumento potipio pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinių asmenų registro dokumento potipio pavadinimas anglų kalba,

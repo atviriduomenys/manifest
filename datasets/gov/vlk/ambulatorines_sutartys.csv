@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/ambulatorines_sutartys,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Paslauga,,,,,,4,,,Ambulatorinių asmens sveikatos priežiūros paslaugų sutartyse sąrašas,Informacija apie asmens sveikatos priežiūros įstaigų Privalomojo sveikatos draudimo fondo lėšomis teikiamas ambulatorines paslaugas
+,,,,,sutartis,ref,Sutartis,,,4,open,,Nuoroda į Sutartis,
+,,,,,paslauga,ref,/datasets/gov/vlk/paslaugos/Paslauga,,,4,open,,"Nuoroda į paslaugą, dėl kurios sudaryta sutartis","Paslaugos, dėl kurios sudaryta sutartis, kodas"
+,,,,,nuo,date,D,,,4,open,,Paslaugos galiojimo sutartyje pradžia,Paslaugos galiojimo sutartyje pradžios data
+,,,,,iki,date,D,,,4,open,,Paslaugos galiojimo sutartyje pabaiga,Paslaugos galiojimo sutartyje pabaigos data
+,,,,,anuliavimo_data,date,D,,,4,open,,Paslaugos galiojimo sutartyje anuliavimo data,Paslaugos galiojimo sutartyje anuliavimo data
+,,,,,,,,,,,,,,
+,,,,Sutartis,,,,,,4,,,Ambulatorinių asmens sveikatos priežiūros paslaugų sutarčių sąrašas,Informacija apie asmens sveikatos priežiūros įstaigų Privalomojo sveikatos draudimo fondo lėšomis sudarytas ambulatorines paslaugų sutartis
+,,,,,kodas,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, kuri sudarė sutartį, ID"
+,,,,,nuo,date,D,,,4,open,,Sutarties galiojimo pradžia,Sutarties galiojimo pradžios data
+,,,,,iki,date,D,,,4,open,,Sutarties galiojimo pabaiga,Sutarties galiojimo pabaigos data

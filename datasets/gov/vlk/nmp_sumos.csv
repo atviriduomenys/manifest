@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/nmp_sumos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Sumos,,,,,,4,,,Sumokėtos sumos už medicinos priemonių (prietaisų) nuomą,
+,,,,,straipsnis,string,,,,3,open,,PSDF biudžeto straipsnis,
+,,,,,kreditorius,string,,,,3,open,,Įstaigos pavadinimas,
+,,,,,data_ad,date,,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
+,,,,,suma,number,,,,2,open,,Suma eurais,Kompensuojama suma eurais
+,,,,,,comment,type,,"update(type: ""money, ref: ""EUR"")""",4,open,,spinta:40,

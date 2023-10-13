@@ -1,11 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmi/gyventoju_islaidos,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,GyventojuIslaidos,,,,,,,,,"Duomenys apie mokėtojo deklaruotas išlaidas, kuriomis pagal GPMĮ 21 str. gali būti mažinamos apmokestinamosios pajamos",
-,,,,,metai,integer,,,,3,open,,Mokestinio laikotarpio metai,
-,,,,,sav_kodas,string,,,,3,open,,Sistemos subjekto savivaldybes kodas,
-,,,,,sav_pavadinimas,string,,,,3,open,,Sistemos subjekto savivaldybes pavadinimas,
-,,,,,mm_kodas,string,,,,3,open,,Mokesčių mokėtojo identifikacinis numeris,
-,,,,,ir_kodas,string,,,,3,open,,Išlaidų rūšies kodas,
-,,,,,pavadinimas,string,,,,3,open,,Išlaidų pavadinimas,
-,,,,,suma,number,,,,3,open,,Išlaidų suma,Išlaidų suma esanti virš 600000 eurų yra fiksuojama 600000 verte
+,,,,GyventojuIslaidos,,,,,,3,,,"Duomenys apie mokėtojo deklaruotas išlaidas, kuriomis pagal GPMĮ 21 str. gali būti mažinamos apmokestinamosios pajamos",
+,,,,,metai,integer,,,,2,open,,Mokestinio laikotarpio metai,
+,,,,,sav_kodas,string,,,,2,open,,Sistemos subjekto savivaldybes kodas,
+,,,,,sav_pavadinimas,string,,,,2,open,,Sistemos subjekto savivaldybes pavadinimas,
+,,,,,mm_kodas,string,,,,4,open,,Mokesčių mokėtojo identifikacinis numeris,
+,,,,,ir_kodas,string,,,,2,open,,Išlaidų rūšies kodas,
+,,,,,pavadinimas,string,,,,2,open,,Išlaidų pavadinimas,
+,,,,,suma,number,,,,2,open,,Išlaidų suma,Išlaidų suma esanti virš 600000 eurų yra fiksuojama 600000 verte

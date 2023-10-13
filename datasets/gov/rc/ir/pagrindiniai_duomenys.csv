@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ir/pagrindiniai_duomenys,,,,,,,,,,,,Įgaliojimų registro (ĮR) pagrindiniai duomenys​,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,PagrindiniaiDuomenys,,,nr,,,4,,,Įgaliojimų registro pagrindiniai duomenys,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,metai,integer,,,,2,open,,"Metai, kuriais užregistruotas įgaliojimas",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ketvirtis,integer,,,,3,open,,"Ketvirtis, kurį užregistruotas įgaliojimas",
+,,,,,kas_patvirtino,string,,,,3,open,,Įgaliojimą patvirtinusio asmens tipas,
+,,,,,igaliojimo_tipas,string,,,,3,open,,Įgaliojimo tipo pavadinimas,
+,,,,,igaliojimu_kiekis,string,,,,3,open,,Įgaliojimų kiekis per ketvirtį,
