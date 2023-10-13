@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,BendrasNtMokestis,,,,,,2,,,NT mokesčio mokėtojo ir NT bendri duomenys,Nekilnojamojo turto (toliau - NT) mokesčio mokėtojo ir NT bendri duomenys
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,4,open,,Eilutės numeris,
+,,,,,id,string,,,,4,open,,Eilutės numeris,
 ,,,,,moketojo_tipas,integer,,,,4,open,,"Požymis, ar fizinio asmens, ar juridinio asmens deklaracija",
 ,,,,,,enum,,,1,,,,Fizinis asmuo,
 ,,,,,,,,,2,,,,Juridinis asmuo,
@@ -33,14 +33,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,AvansinisNtMokestis,,,,,,2,,,Avansinio NT mokesčio duomenys,
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,4,open,,Eilutės numeris,
+,,,,,id,string,,,,4,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,tarifas,number,%,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
-,,,,,avansinio_ntm_metai,integer,,,,4,open,,Avansinio NTM metai,
+,,,,,avansinio_ntm_metai,integer,,,,2,open,,Avansinio NTM metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,pozymis_nt_verte,string,,,,2,open,,Požymis nurodantis NT vertę  nurodytais metais ar mėnesį,"Požymis, nurodantis ar NT vertė deklaruota už visus metus, ar NT vertė deklaruota pamėnesiui  "
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
@@ -56,7 +56,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,SavivaldybeNtMokestis,,,,,,3,,,NT mokesčio duomenys pagal savivaldybes,
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,,comment,ref,,"update(model: ""SavivaldybesNtMokestis"")",,,,,
-,,,,,id,integer,,,,4,open,,Eilutės numeris,
+,,,,,id,string,,,,4,open,,Eilutės numeris,
 ,,,,,sav_kodas,integer,,,,2,open,,Savivaldybės kodas,"Savivaldybės kodas (t. y. savivaldybės kodas, kuriame yra deklaruojamas avansinis NTM)"
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,,manifest:1263,,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,,"spinta:216, manifest:1263",,
