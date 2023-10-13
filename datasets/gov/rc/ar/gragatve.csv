@@ -1,11 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/gragatve,,,,,,,,,,,,Adresų registras,
-,,gragatve,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_gatves.json,,,,,Adresų registro duomenų bazė,
-,,,,GraGatve,,,gat_kodas,adr_gra_gatves,,,,,Adresų registro gatvių ašinių linijų erdviniai duomenys,"Gatvių ašinių linijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gatvių ašinių linijas apibūdinantys duomenys).
+,,,,GraGatve,,,gat_kodas,,,4,,,Adresų registro gatvių ašinių linijų erdviniai duomenys,"Gatvių ašinių linijų erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (gatvių ašinių linijas apibūdinantys duomenys).
 Duomenų geografinė imtis — visa šalies teritorija."
-,,,,,gat_kodas,integer,,GAT_KODAS,,3,open,,Gatvės kodas Registre ,
-,,,,,pavadinimas,string,,GAT_PAV,,3,open,,Sutrumpintas gatvės vardas su tipu (nuolat palaikomas),
-,,,,,gat_r,date,,GAT_R,,3,open,,Gatvės ašinės linijos įvedimo į Adresų registrą data,
-,,,,,gat_ilgis,number,m,GAT_ILGIS,,4,open,,Gatvės ilgis metrais,
-,,,,,gyv_kodas,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,GYV_KODAS,,4,open,,"Gyvenamosios vietovės, į kurią patenka gatvė, išorinis kodas ",
+,,,,,gat_kodas,integer,,,,4,open,,Gatvės kodas Registre ,
+,,,,,pavadinimas,string,,,,3,open,,Sutrumpintas gatvės vardas su tipu (nuolat palaikomas),
+,,,,,gat_r,date,D,,,4,open,,Gatvės ašinės linijos įvedimo į Adresų registrą data,
+,,,,,gat_ilgis,number,m,,,4,open,,Gatvės ilgis metrais,
+,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,,,4,open,,"Gyvenamosios vietovės, į kurią patenka gatvė, išorinis kodas ",
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,gatves,"geometry(linestring,3346)",m,,,4,open,,"Gatvės ašinė linija su pradžia, pabaiga ir posūkio taškai",

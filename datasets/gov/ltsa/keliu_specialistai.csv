@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ltsa/keliu_specialistai,,,,,,,,,,,,Kelių specialistų sąrašas,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,RoadSpecialist,,,id,,,4,,,Kelių specialistų sąrašas,
+,,,,,valid,string,,,,2,open,,Galiojimo būklė,
+,,,,,type,string,,,,3,open,,Tipas,
+,,,,,valid_to,datetime,D,,,4,open,,Galioja iki,
+,,,,,id,integer,,,,4,open,,Pažymėjimo ID,
+,,,,,valid_from,datetime,D,,,4,open,,Galioja iki,
+,,,,,number,string,,,,4,open,,Pažymėjimo numeris,

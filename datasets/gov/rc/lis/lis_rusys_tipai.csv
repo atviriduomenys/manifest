@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/lis/lis_rusys_tipai,,,,,,,,,,,,Licencijų informacinė sistemos tipų ir rūšių klasifikatoriai ,
+,,,,LisRusis,,,kodas,,,4,,,Licencijų rūšių klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Licencijos rūšies kodas,
+,,,,,pavadinimas,string,,,,3,open,,Licencijos rūšies pavadinimas,
+,,,,,,,,,,,,,,
+,,,,LisTipas,,,kodas,,,4,,,Licencijų tipų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Licencijos tipo kodas,
+,,,,,pavadinimas,string,,,,3,open,,Licencijos tipo pavadinimas,

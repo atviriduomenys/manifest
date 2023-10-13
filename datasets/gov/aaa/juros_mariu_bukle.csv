@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/juros_mariu_bukle,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,KursiuMariuBaltijosJurosBukle,,,,,,2,,,Kuršių marių ir Baltijos jūros būklė,
+,,,,,objekto_pav,string,,Objekto pavadinimas,,3,open,,"Objekto, kuriam priklauso vandens telkiniai, pavadinimas","Objektai, kuriems priskiriami vandens telkiniai: Kuršių marios; Baltijos jūra"
+,,,,,telkinio_pav,string,,Vandens telkinio pavadinimas,,3,open,,"Vandens telkinio, kuriame vertinama būklė, pavadinimas",
+,,,,,metai,integer,,Metai,,2,open,,"Metai, kuriais vertinama telkinio būklė",
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,eko_bukle,string,,Ekologinė būklė/potencialas,,3,open,,Vandens telkinio fizikinių-cheminių ir biologinių kokybės elementų vertinimo rezultatas,"Ekologinė būklė/potencialas vertinama remiantis Lietuvos Respublikos aplinkos ministro įsakymu 2021 m. lapkričio 4 d. Nr. D1-645 ""Dėl paviršinių vandens telkinių būklės nustatymo metodikos patvirtinimo"" ir Lietuvos Respublikos aplinkos ministro įsakymu 2020 m lapkričio 9 d. Nr. D1-675 ""Dėl Baltijos jūros rajono geros aplinkos būklės savybių nustatymo rekalavimų patvirtinimo""."
+,,,,,chem_bukle,string,,Cheminė būklė,,3,open,,"Vandens telkinio pavojingų, prioritetinių pavojingų ir kitų teršalų vertinimo rezultatas","Cheminė būklė vertinama remiantis Lietuvos Respulikos aplinkos ministro įsakymu 2020 m lapkričio 9 d. Nr. D1-675 ""Dėl Baltijos jūros rajono geros aplinkos būklės savybių nustatymo rekalavimų patvirtinimo"" ir Lietuvos Respublikos aplinkos ministro įsakymas 2022 m. balandžio 22 d. Nr. D1-109 ""Dėl nuotekų tvarkymo reglamento patvirtinimo""."
+,,,,,rodikliai,string,,Aplinkos būklę lėmę rodikliai,,2,open,,"Rodikliai, kurie viršijo didžiausią leidžiamą koncentraciją arba aplinkos kokybės standartą",

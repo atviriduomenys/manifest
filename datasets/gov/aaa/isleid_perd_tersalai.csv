@@ -1,0 +1,90 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/isleid_perd_tersalai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,EmissionsToAir,,,,,,4,,,Emisijos į orą,Didelių kurą deginančių įrenginių duomenys
+,,,,,id,string,,,,4,open,,Emisijų į orą Id,Emisijų į orą identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimo Id,Gamybos įrengimo identifikacinis numeris
+,,,,,pollutant,string,,,,2,open,,Teršalas,Teršalo kodas pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/EPRTRPollutantCodeValue/view
+,,,,,quantity,number,t,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, tonomis per ataskaitinius metus"
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,EnergyInput,,,,,,4,,,Energijos sąnaudos,
+,,,,,id,string,,,,4,open,,Energijos sąnaudų Id,Energijos sąnaudų identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimo Id,Gamybos įrengimo identifikacinis numeris
+,,,,,fuelinput,string,,,,4,open,,Kuro rūšis,Naudojamo kuro rūšis pagal Direktyvą Nr. 2010/75/EU
+,,,,,,enum,,,"""Biomass""",,,,Biomasė,
+,,,,,,,,,"""Coal""",,,,Anglis,
+,,,,,,,,,"""Lignite""",,,,Lignitas,
+,,,,,,,,,"""LiquidFuels""",,,,Skystas kuras,
+,,,,,,,,,"""NaturalGas""",,,,Gamtinės dujos,
+,,,,,,,,,"""OtherGases""",,,,Kitas dujinis kuras,
+,,,,,,,,,"""OtherSolidFuels""",,,,Kitas kietas kuras,
+,,,,,,,,,"""Peat""",,,,Durpės,
+,,,,,othersolidfuel,string,,,,2,open,,Kito kieto kūro rūšis,"Kito kieto kuro rūšis (išskyrus - anglis, lignitas, biomasė ar durpės)"
+,,,,,othergaseousfuel,string,,,,2,open,,Kito dujinio kuro rūšis,Kito dujinio kuro rūšis (išskyrus - gamtinės dujos)
+,,,,,furtherdetails,string,,,,2,open,,Papildoma informacija,Papildoma informacija - nespecifikuotas kuras
+,,,,,energyinput,number,TJ,,,4,open,,Visas energijos kiekis,"Energijos kiekis, teradžiauliais per ataskaitinius metus"
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,OffSitePollutantTransfer,,,,,,4,,,Teršalų perdavimas už objekto ribų,
+,,,,,id,string,,,,4,open,,Perduodamų teršalų Id,Perduodamų teršalų identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,pollutant,string,,,,2,open,,Teršalas,Teršalo kodas pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/EPRTRPollutantCodeValue/view
+,,,,,quantity,number,kg,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, esantis nuotekose prieš jų valymą"
+,,,,,methodcode,string,,,,2,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota reikšmė)
+,,,,,methodclassification,string,,,,2,open,,Metodo klasifikacija,"Metodo klasifikacija, pateikta aktyvia nuoroda: https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/MethodClassificationValue/view"
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,OffsiteWasteTransfer,,,,,,4,,,Atliekų perdavimas už objekto ribų,
+,,,,,id,string,,,,4,open,,Perduodamų atliekų Id,Perduodamų atliekų identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,wasteclassification,string,,,,4,open,,Atliekų klasifikacija,Atliekų klasifikacija
+,,,,,,enum,,,"""HW""",,,,Pavojingosios atliekos,
+,,,,,,,,,"""NONHW""",,,,Nepavojingosios atliekos,
+,,,,,wastetreatment,string,,,,4,open,,Atliekų naudojimas,Atliekų pašalinimas/perdirbimas
+,,,,,,enum,,,"""D""",,,,Šalinimas,
+,,,,,,,,,"""R""",,,,Perdirbimas,
+,,,,,quantity,number,t,,,4,open,,Visos atliekos,"Visų atliekų kiekis, tonomis per ataskaitinius metus"
+,,,,,methodcode,string,,,,2,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota reikšmė)
+,,,,,methodclassification,string,,,,2,open,,Metodo klasifikacija,Metodo klasifikacija
+,,,,,nameofreceiver,string,,,,1,open,,Gavėjo pavadinimas,Atliekų gavėjo pavadinimas
+,,,,,countrycode,string,,,,4,open,,Gavėjo šalies kodas,Pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/CountryCodeValue/view
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,PollutantRelease,,,,,,4,,,Išleidžiamų teršalų duomenys,
+,,,,,id,string,,,,4,open,,Išleidžiamų teršalų Id,Išleidžiamų teršalų identifikacinis numeris (Eil. Nr.)
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,pollutant,string,,,,2,open,,Teršalas,"Teršalo kodas, pateiktas aktyvia nuoroda pagal https://dd.eionet.europa.eu/vocabulary/EPRTRandLCP/EPRTRPollutantCodeValue/view"
+,,,,,mediumcode,string,,,,3,open,,Terpės kodas,Terpė (oras/vanduo) į kurią išleidžiamas teršalas
+,,,,,quantity,number,kg,,,4,open,,Visas teršalo kiekis,"Teršalo kiekis, kilogramais per ataskaitinius metus"
+,,,,,methodcode,string,,,,2,open,,Metodo kodas,Metodo kodas (apskaičiuota/išmatuota/numatyta reikšmė)
+,,,,,methodclassification,string,,,,2,open,,Metodo klasifikacija,Metodo klasifikacija
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,ProductionFacilityReport,,,,,,4,,,Gamybos įrengimų kompleksų duomenys,
+,,,,,localid,string,,,,4,open,,Gamybos įrengimų komplekso Id,Gamybos įrengimų komplekso identifikacinis numeris
+,,,,,namespace,string,,,,2,open,,Duomenis teikianti šalis,LT.CAED – Lithuanian Competent Authority for Environmental Data
+,,,,,reportid,integer,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,,,,,,,,,,
+,,,,ProductionInstallationPartReport,,,,,,4,,,Gamybos įrengimų duomenys,
+,,,,,localid,string,,,,4,open,,Gamybos įrengimo Id,Gamybos įrengimo identifikacinis numeris
+,,,,,namespace,string,,,,2,open,,Duomenis teikianti šalis,LT.CAED – Lithuanian Competent Authority for Environmental Data
+,,,,,category,string,,,,4,open,,Kurą deginančio įrenginio kategorija,Kurą deginančio įrenginio kategorija
+,,,,,,enum,,,"""Boiler""",,,,Boileris,
+,,,,,,,,,"""DieselEngine""",,,,Dyzelinis variklis,
+,,,,,,,,,"""GasEngine""",,,,Dujinis variklis,
+,,,,,,,,,"""GasTurbine""",,,,Dujinė turbina,
+,,,,,,,,,"""Other""",,,,Kita,
+,,,,,operatinghours,integer,h,,,4,open,,Darbo valandos,Darbo valandų per metus skaičius
+,,,,,withinrefinery,boolean,,,,4,open,,Naftos perdirbimo gamykla,Kurą deginančio įrenginio priklausymas naftos perdirbimo gamyklai
+,,,,,productionproportion,number,,,,3,open,,Šilumos gamybos dalis tiekiama centralizuotam šildymui,Šilumos gamybos dalis tiekiama centralizuotam šildymui
+,,,,,reportid,integer,,,,4,open,,Ataskaitos Id,Ataskaitos identifikacinis numeris
+,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

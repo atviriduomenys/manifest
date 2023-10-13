@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/tr/tr_klasifikatoriai,,,,,,,,,,,,Testamentų registro (TR) klasifikatoriai,
+,,,,TrRusis,,,id,,,4,,,Testamentų registro testamentų rūšių klasifikatorius,
+,,,,,id,integer,,,,4,open,,Testamento rūšies identifikatorius,
+,,,,,pavadinimas,string,,,,3,open,,Testamento rūšies pavadinimas,
+,,,,,,,,,,,,,,
+,,,,TrZyma,,,tipas,,,4,,,Testamentų registro testamentų žymų klasifikatorius,
+,,,,,tipas,integer,,,,4,open,,Žymos tipo kodas,
+,,,,,pavadinimas,string,,,,3,open,,Žymos tipo pavadinimas,

@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/mvp,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,MetinisVeiklosPlanas,,,,,,4,,,Valstybės kontrolės metinio veiklos plano duomenys,"Valstybės kontrolės metinio veiklos plano, kuriame pateikiama informacija apie planuojamus, atliekamus auditus ir vertinimus, duomenys "
+,,,,,audit_cardid,integer,,,,3,open,,Produkto ID,"Produkto (audito, vertinimo, išvados, ataskaitos, projekcijos) identifikacijos numeris"
+,,,,,plano_metai,integer,,,,2,open,,Metai,
+,,,,,,comment,"type, ref",,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,veiklos_rusis,string,,,,4,open,,Veiklos rūšis,"Kokio pobūdžio produktas suplanuotas: veiklos auditas, finansinis auditas, atitikties auditas, Europos Sąjungos investicijų auditas, išvada  atliekant biudžeto politikos kontrolės institucijos funkcijas, vertinimas"
+,,,,,,enum,,,"""Veiklos auditai""",,,,Veiklos auditai,"Veiklos auditai – kai vertinama audituojamo subjekto veikla ekonomiškumo, efektyvumo ir rezultatyvumo požiūriu. "
+,,,,,,,,,"""Finansiniai auditai""",,,,Finansiniai auditai,Finansiniai auditai – kai vertinami audituojamo subjekto metinių (konsoliduotųjų) finansinių ir biudžeto vykdymo ataskaitų rinkinių duomenis ir pareiškiama nepriklausoma auditoriaus nuomonė. 
+,,,,,,,,,"""Atitikties auditai""",,,,Atitikties auditai,Atitikties auditai – kai vertinama audituojamo subjekto veiklos atitiktis teisės aktų ir (ar) kitiems reikalavimams ir gali būti pareiškiama nepriklausoma auditoriaus nuomonė. 
+,,,,,,,,,"""Auditai atliekant Europos Sąjungos fondų investicijų audito institucijos funkcijas""",,,,Auditai atliekant Europos Sąjungos fondų investicijų audito institucijos funkcijas,Europos Sąjungos investicijų auditai – kai vertinama 2014–2020 m. ES fondų investicijų veiksmų programai įgyvendinti sukurta valdymo ir kontrolės sistema ir Europos Komisijos deklaruojamų lėšų tinkamumas. 
+,,,,,,,,,"""Išvados atliekant biudžeto politikos kontrolės institucijos funkcijas""",,,,Išvados atliekant biudžeto politikos kontrolės institucijos funkcijas,"Išvados (ataskaitos, vertinimai) dėl makroekonominių prognozių, fiskalinės drausmės taisyklių laikymosi, struktūrinio postūmio užduoties nustatymo pagrįstumo, metinių biudžeto projektų, kt. "
+,,,,,,,,,"""Vertinimai""",,,,Vertinimai,"Vertinimai – tai AAI vykdoma veikla, kai susisteminama ir apibendrinama tam tikroje viešojo sektoriaus srityje atliktų valstybinių auditų informacija ir atskleidžiama viešojo sektoriaus srities esama būklė. "
+,,,,,srities_pavadinimas,string,,,,3,open,,Srities pavadinimas,"Srities, kurioje suplanuota atlikti auditą, vertinimą, teikti išvadą, pavadinimas"
+,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,"Suplanuoto audito, vertinimo, išvados pavadinimas"
+,,,,,aprasymas,string,,,,3,open,,Aprašymas,"Suplanuoto audito, vertinimo, išvados detalesnis aprašymas"
+,,,,,busena,string,,,,3,open,,Būsena,"Audito, vertinimo, išvados vykdymo būsenos statusas"

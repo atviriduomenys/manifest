@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/zuikvc/aapis,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,seja,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
+,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
+,,,,,,,,,,,,,,
+,,,,Purskimas,,,numeris,,,4,,,"Augalų apsaugos produktais purškiamų plotų ir augalų sėklų, apdorotų augalų apsaugos produktais, duomenys",
+,,,,,busena,string,,būsena,,4,open,,Purškimo ar sėjos būsena,
+,,,,,,enum,,,"""P""",,,,Planuojamas,
+,,,,,,,,,"""R""",,,,Registruotas,
+,,,,,,,,,"""A""",,,,Atšauktas,
+,,,,,numeris,integer,,numeris,,4,open,,Purškimo ar sėjos numeris,
+,,,,,lauko_plotas,number,ha,lauko_plotas_ha,,4,open,,Purškimo ar sėjos lauko plotas hektarais;,
+,,,,,panaudoto_aap_pavadinimas1,string,,panaudoto_aap_pavadinimas1,,3,open,,Panaudoto augalų apsaugos produkto pavadinimas,
+,,,,,panaudoto_aap_pavadinimas2,string,,panaudoto_aap_pavadinimas2,,3,open,,Panaudoto augalų apsaugos produkto pavadinimas,
+,,,,,panaudoto_aap_pavadinimas3,string,,panaudoto_aap_pavadinimas3,,3,open,,Panaudoto augalų apsaugos produkto pavadinimas,
+,,,,,pradzia,datetime,T,pradzia,,4,open,,Purškimo ar sėjos pradžios data ir laikas,
+,,,,,pabaiga,datetime,T,pabaiga,,4,open,,Purškimo ar sėjos pabaigos data ir laikas,
+,,,,,iregistruotas,datetime,S,iregistruotas,,4,open,,Purškimo įregistravimo data ir laikas. ,"Pildomas tik tiems purškimams ar sėjoms, kurių būsena yra registruota"
+,,,,,centro_koordinates,"geometry(point,3346)",,centro_koordinatės,,3,open,,Purškiamo ar sėjamo ploto erdviniai duomenys,"Centro x,y koordinatės WKT formatu"

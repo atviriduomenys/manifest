@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/ja_skolininkai,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie skolininkus juridinius asmenis,"AIS duomenys apie skolininkus juridinius asmenis (pagal savivaldybes, išieškojimo dalyką, išieškotiną sumą, vykdomųjų bylų skaičių). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie skolininkus. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,,,,,,,,,
+,,,,JASkolininkas,,,nr,,,4,,,Antstolių informacinės sistemos (AIS) duomenys apie skolininkus juridinius asmenis,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje deklaruota skolininko (fizinio asmens) gyvenamoji vieta, kodas iš Adresų registro (kai gyvenamoji vieta nenurodyta - -1)",
+,,,,,tipas,string,,,,4,open,,"Asmens, iš kurio vykdomas išieškojimas, tipas (Fizinis asmuo - kai fizinis asmuo; Juridinis asmuo pats iš savęs (lot. Per se); LR juridinis asmuo; Užsienio juridinis asmuo - kai juridinis asmuo; Nenustatytas - kai asmens tipas nenurodytas)",
+,,,,,,enum,,,"""Fizinis asmuo""",,,,Kai skolininko tipas fizinis asmuo,
+,,,,,,,,,"""Juridinis asmuo""",,,,Kai skolininko tipas juridinis asmuo pats iš savęs (lot. Per se),
+,,,,,,,,,"""LR juridinis asmuo""",,,,Kai skolininko tipas lietuvos respublikoje įregistruotas juridinis asmuo,
+,,,,,,,,,"""Užsienio juridinis asmuo""",,,,Kai skolininko tipas užsienio valstybėje įregistruotas juridinis asmuo,
+,,,,,,,,,"""Nenustatytas""",,,,Kai skolininko tipas kaip asmens tipas nenurodytas,
+,,,,,isieskojimo_dalykas,ref,/datasets/gov/rc/ais/busenu_dalyku_klasifikatorius/Dalykas,,,4,open,,Išieškojimo dalyko kodas iš AIS išieškojimo dalykų klasifikatoriaus,
+,,,,,bylu_kiekis,string,,,,3,open,,"Vykdomų bylų kiekis (sugrupuotas savivaldybę, asmens tipą (Fizinis asmuo - kai fizinis asmuo; Juridinis asmuo pats iš savęs (lot. Per se); LR juridinis asmuo; Užsienio juridinis asmuo - kai juridinis asmuo; Nenustatytas - kai asmens tipas nenurodytas) ir išieškojimo dalyką)",
+,,,,,skolu_suma,integer,,,,3,open,,"Vykdomų bylų bendra skolų suma (sugrupuota savivaldybę, asmens tipą ir išieškojimo dalyką)",

@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ais/isieskojimai,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie išieškojimus,"AIS duomenys apie išieškojimus (pagal išieškojimo dalyką, pradinę išieškotiną skolą). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie skolų išieškotojus. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,,,,,,,,,,,,,,
+,,,,Isieskojimas,,,nr,,,4,,,Antstolių informacinės sistemos (AIS) duomenys apie išieškojimus,
+,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,
+,,,,,isieskojimo_dalykas,ref,/datasets/gov/rc/ais/busenu_dalyku_klasifikatorius/Dalykas,,,4,open,,Išieškojimo dalyko kodas iš AIS išieškojimo dalykų klasifikatoriaus,
+,,,,,bylu_kiekis,string,,,,3,open,,Vykdomų bylų kiekis (sugrupuota pagal išieškojimo dalyką),
+,,,,,pradine_isieskojimo_suma,integer,,,,3,open,,Vykdomų bylų bendra pradinė išieškojimo suma (sugrupuota pagal išieškojimo dalyką),

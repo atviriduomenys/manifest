@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/nirvar/veiksnus_pagal_apskritis,,,,,,,,,,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal apskritis ir registracijos metus,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,RibotaiVeiksnusApskritis,,,"apskritis, reg_met",,,3,,,NIRVAR statistika apie teismo tvarka ribotai veiksniais pripažintus asmenis pagal apskritis ir registracijos metus,
+,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Apskrities pavadinimas iš Adresų registro ,
+,,,,,reg_met,integer,,,,2,open,,Registravimo metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ribotai_veiksniu_asm_skaicius,string,,,,3,open,,Ribotai veiksnių asmenų skaičius,

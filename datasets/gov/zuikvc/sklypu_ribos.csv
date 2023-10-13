@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/zuikvc/sklypu_ribos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,ribos,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
+,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,Spinta:210,,
+,,,,,,,,,,,,,,
+,,,,SklypoRiba,,,,,,3,,,KŽS ribų pasikeitimų duomeys,Išankstinių kontrolinių žemės sklypų (KŽS) ribų pasikeitimų duomeys
+,,,,,aprasymas,string,,Aprasymas,,3,open,,KŽS ribų pasikeitimų aprašymas,
+,,,,,ivestas,datetime,S,Ivestas,,4,open,,KŽS ribų pasikeitimų aprašymo data ir laikas,
+,,,,,koordinates,"geometry(point,3346)",,Koordinates,,3,open,,KŽS ribų pasikeitimų orientacinė vieta WKT formatu,

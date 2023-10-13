@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/alga,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,VidutinePareigineAlga,,,,,,4,,,Valstybės kontrolės darbuotojų vidutinė pareiginė alga,Valstybės kontrolės darbuotojų vidutinė pareiginė alga pagal pareigybių grupes 
+,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ataskaitinis_ketvirtis,integer,,,,3,open,,Ketvirtis,Ketvirtis
+,,,,,grupes_pavadinimas,string,,,,3,open,,Grupės pavadinimas,Darbuotojų pareigybių grupės pavadinimas
+,,,,,skaicius,integer,U,,,4,open,,Skaičius,"Darbuotojų skaičius, kuris patenka į pareigybių grupę"
+,,,,,vidutine_alga,number,,,,2,open,,Vidutinė alga,Darbuotojų vidutinė pareiginė alga tam tikroje pareigybių grupėje
+,,,,,,comment,"type,ref",,"update(type: ""money"", ref: ""EUR"")",4,,spinta: 40,,

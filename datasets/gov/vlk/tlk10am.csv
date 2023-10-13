@@ -1,19 +1,21 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,,,,,,enum,bool,N,false,,,,,
-,,,,,,,,T,true,,,,,
-,,,,,,,,,,,,,,
 ,datasets/gov/vlk/tlk10am,,,,,,,,,,,,,
-,,adk,,,,csv,,https://data.gov.lt/dataset/1259/download/,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Tlk10am,,,code,9423/tlk_10_am_data.csv,,,,,Ligų sąrašas (TLK-10-AM),"Ligų klasifikacija. TLK-10-AM – Tarptautinė statistinė ligų ir sveikatos sutrikimų klasifikacija, dešimtasis pataisytas ir papildytas leidimas, Australijos modifikacija (TLK-10-AM) – Sisteminis ligų sąrašas"
-,,,,,code,string,,DiagnosisCode,,4,open,,,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
-,,,,,name,string,,DiagnosisName,,4,open,,,"Diagnozės pavadinimas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
-,,,,,has_asterisk,boolean,bool,DiagnosisHasAsterisk,,4,open,,,Žvaigždutės simbolis  žymi požymio (pasireiškimo) kodą 
-,,,,,has_circled_times,boolean,bool,DiagnosisHasCircledTimes,,4,open,,,"Apskritimo simbolis nurodo, kad ligos diagnozės kodą sukūrė australai"
-,,,,,has_dagger,boolean,bool,DiagnosisHasDagger,,4,open,,,Kryželio simbolis žymi etiologijos (sukeliančios priežasties) kodą
-,,,,,section_code,string,,DiagnosisSectionCode,,4,open,,,Diagnozės kodų poskyrio grupės
-,,,,,section_name,string,,DiagnosisSectionName,,4,open,,,Diagnozės kodų poskyrio pavadinimas  
-,,,,,chapter_code,string,,DiagnosisChapterCode,,4,open,,,Skyriui priklausanti kodų grupė
-,,,,,chapter_name,string,,DiagnosisChapterName,,4,open,,,Skyriaus pavadinimas
-,,,,,valid_from,date,,DiagnosisValidFrom,,4,open,,,Diagnozės kodo galiojimo pradžios data
-,,,,,valid_to,date,,DiagnosisValidTo,,4,open,,,Diagnozės kodo galiojimo pabaigos data
+,,,,Tlk10am,,,,,,4,,,Ligų sąrašas (TLK-10-AM),"Ligų klasifikacija. TLK-10-AM – Tarptautinė statistinė ligų ir sveikatos sutrikimų klasifikacija, dešimtasis pataisytas ir papildytas leidimas, Australijos modifikacija (TLK-10-AM) – Sisteminis ligų sąrašas"
+,,,,,code,string,,,,4,open,,,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,tlk10amcode,string,,,,4,open,,,"Diagnozės kodas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,name,string,,,,4,open,,,"Diagnozės pavadinimas pagal tarptautinę statistinę ligų ir sveikatos sutrikimų klasifikaciją, dešimtąjį leidimą, Australijos modifikaciją (TLK-10-AM)"
+,,,,,section_code,string,,,,2,open,,,Diagnozės kodų poskyrio grupės
+,,,,,,comment,property,,"create(property: ""section"", type: ""ref"", ref: ""Section"")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""section.code"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,section_name,string,,,,2,open,,,Diagnozės kodų poskyrio pavadinimas  
+,,,,,,comment,property,,"update(property: ""section.name"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,chapter_code,string,,,,2,open,,,Skyriui priklausanti kodų grupė
+,,,,,,comment,property,,"create(property: ""chapter"", type: ""ref"", ref: ""Chapter"")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,,comment,property,,"update(property: ""chapter.code"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,chapter_name,string,,,,2,open,,,Skyriaus pavadinimas
+,,,,,,comment,property,,"update(property: ""chapter.name"", type: """")",4,open,"spinta:216,vadovas:dsa/ref.html#denormalizuoti-duomenys",,
+,,,,,valid_from,date,,,,4,open,,,Diagnozės kodo galiojimo pradžios data
+,,,,,valid_to,date,,,,4,open,,,Diagnozės kodo galiojimo pabaigos data

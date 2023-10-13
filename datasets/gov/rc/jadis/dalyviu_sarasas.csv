@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jadis/dalyviu_sarasas,,,,,,,,,,,,Juridinių asmenų dalyvių sąrašų duomenys,Juridinių asmenų dalyvių informacinsė sistemos (JADIS) duomenys apie juridinių asmenų dalyvių sąrašus.
+,,,,,,,,,,,,,,
+,,,,DalyviuSarasas,,,juridinis_asmuo,,,4,,,Juridinių asmenų dalyvių sąrašų duomenys,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmuo iš Juridinių asmenų registro,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš Juridinių asmenų registro,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinio statusas iš Juridinių asmenų registro,
+,,,,,ja_reg_data,date,D,,,4,open,,Juridinio asmens įregistravimo į Juridinių asmenų registrą data ,
+,,,,,pateikimo_poz,integer,,,,4,open,,Juridinio asmens JAD sąrašo pateikimo požymis,
+,,,,,,enum,,,0,,,,Nepateikė,
+,,,,,,,,,1,,,,Pateikė,
+,,,,,saraso_data,date,D,,,4,open,,Juridinio asmens JAD sąrašo pateikimo data ,

@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jadis/valstybes_dalyviai,,,,,,,,,,,,Valstybės ir (ar) savivaldybių juridinių asmenų dalyvių duomenys,"Juridinių asmenų dalyvių informacinės sistemos (JADIS) duomenys apie juridinius asmenis, kuriuose dalyvauja valstybė ir (ar) savivaldybės"
+,,,,,,,,,,,,,,
+,,,,ValstybesDalyvis,,,juridinis_asmuo,,,4,,,Valstybės ir (ar) savivaldybių juridinių asmenų dalyvių duomenys,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmuo iš Juridinių asmenų registro,
+,,,,,forma,ref,/datasets/gov/rc/jar/formos_statusai/Forma,,,4,open,,Juridinio asmens teisinė forma iš Juridinių asmenų registro,
+,,,,,statusas,ref,/datasets/gov/rc/jar/formos_statusai/Statusas,,,4,open,,Juridinio asmens teisinis statusas iš Juridinių asmenų registro,
+,,,,,ja_reg_data,date,D,,,4,open,,Juridinio asmens įregistravimo į Juridinių asmenų registrą data ,
+,,,,,ne_juridinis_asmuo,ref,/datasets/gov/rc/jar/ne_juridiniai_asmenys/NeJuridinisAsmuo,,,4,open,,Juridinio asmens dalyvis ne juridinis asmuo iš Juridinių asmenų registro,
+,,,,,dal_dalys,number,,,,3,open,,Juridiniame asmenyje dalyvaujančių dalyvių dalys juridiniame asmenyje procentais,

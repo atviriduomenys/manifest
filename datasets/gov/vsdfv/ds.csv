@@ -1,19 +1,22 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/ds,,,,,,,,,,,,,
-,,sodradraudejai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"self.extract(""zip"")[""draudejai.csv""]",,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodradraudejai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"extract(""zip"")[""draudejai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Draudejai,,,"draudeju_grupe, draudeju_tipas",,,3,,,,
+,,,,,metai,integer,,METAI,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ketvirtis,integer,,KETVIRTIS,,3,open,,Ketvirtis,
+,,,,,draudeju_grupe,string,,DRAUDEJU_GRUPE,,3,open,,Draudėjų grupė,
+,,,,,draudeju_tipas,string,,DRAUDEJU_TIPAS,,3,open,,Draudėjų tipas,
+,,,,,draudeju_sk,integer,,DRAUDEJU_SK,,4,open,,Draudėjų skaičius,"Draudėjų – visų juridinių asmenų bei jų filialų ir atstovybių, taip pat fizinių asmenų, kurie įstatymų nustatyta tvarka privalo mokėti valstybinio socialinio draudimo įmokas, skaičius per ataskaitinių metų ketvirčius."
 ,,,,,,,,,,,,,,
-,,,,Draudejai,,,"draudeju_grupe, draudeju_tipas",,,,,,,
-,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
-,,,,,ketvirtis,date,3M,KETVIRTIS,,2,open,,ketvirtis,Ketvirtis
-,,,,,draudeju_grupe,string,,DRAUDEJU_GRUPE,,3,open,,draudėjų grupė,Draudėjų grupė
-,,,,,draudeju_tipas,string,,DRAUDEJU_TIPAS,,3,open,,draudėjų tipas,Draudėjų tipas
-,,,,,draudeju_sk,number,,DRAUDEJU_SK,,3,open,,draudėjų skaičius,"Draudėjų – visų juridinių asmenų bei jų filialų ir atstovybių, taip pat fizinių asmenų, kurie įstatymų nustatyta tvarka privalo mokėti valstybinio socialinio draudimo įmokas, skaičius per ataskaitinių metų ketvirčius."
-,,,,,,,,,,,,,,
-,,sodraskolininkai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/skolininkai.zip,"self.extract(""zip"")[""skolininkai.csv""]",,,,,
-,,,,Skolininkai,,,"draudeju_grupe, draudeju_tipas",,,,,,,
-,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
-,,,,,ketvirtis,date,3M,KETVIRTIS,,2,open,,ketvirtis,Ketvirtis
-,,,,,draudeju_tipas,ref,Draudejai,DRAUDEJU_GRUPE,,4,open,,draudėjų tipas,Draudėjų tipas
-,,,,,draudeju_grupe,ref,Draudejai,DRAUDEJU_TIPAS,,4,open,,draudėjų grupė,Draudėjų grupė
-,,,,,draudeju_sk,number,,DRAUDEJU_SK,,3,open,,skolingų draudėjų skaičius,"Draudėjų, laiku į Valstybinio socialinio draudimo fondo biudžetą (toliau – Fondo biudžetas) nesumokėjusių priskaičiuotų socialinio draudimo įmokų, palūkanų, baudų ir delspinigių, skaičius (ataskaitinio laikotarpio pabaigoje)."
-,,,,,skola_eur,number,,SKOLA_EUR,,4,open,,"draudėjų skola, Eur","Draudėjams priskaičiuotų, tačiau laiku į Fondo biudžetą nesumokėtų socialinio draudimo įmokų, palūkanų, baudų ir delspinigių suma (ataskaitinio laikotarpio pabaigoje)."
+,,sodraskolininkai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/skolininkai.zip,"extract(""zip"")[""skolininkai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Skolininkai,,,"draudeju_grupe, draudeju_tipas",,,4,,,,
+,,,,,metai,integer,,METAI,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ketvirtis,integer,,KETVIRTIS,,3,open,,Ketvirtis,
+,,,,,draudeju_tipas,ref,Draudejai,,"draudeju_grupe, draudeju_tipas",4,open,,Draudėjų tipas,
+,,,,,draudeju_grupe,ref,Draudejai,,"draudeju_grupe, draudeju_tipas",4,open,,Draudėjų grupė,
+,,,,,draudeju_sk,integer,,DRAUDEJU_SK,,4,open,,Skolingų draudėjų skaičius,"Draudėjų, laiku į Valstybinio socialinio draudimo fondo biudžetą (toliau – Fondo biudžetas) nesumokėjusių priskaičiuotų socialinio draudimo įmokų, palūkanų, baudų ir delspinigių, skaičius (ataskaitinio laikotarpio pabaigoje)."
+,,,,,skola_eur,number,,SKOLA_EUR,,2,open,,"Draudėjų skola, Eur","Draudėjams priskaičiuotų, tačiau laiku į Fondo biudžetą nesumokėtų socialinio draudimo įmokų, palūkanų, baudų ir delspinigių suma (ataskaitinio laikotarpio pabaigoje)."
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

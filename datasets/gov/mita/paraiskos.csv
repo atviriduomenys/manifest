@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/mita/paraiskos,,,,,,,,,,,,"Mokslo, inovacijų ir technologijų agentūros administruojamose mokslinių tyrimų ir eksperimentinės plėtros (MTEP) finansavimo priemonėse finansuotų projektų duomenys.",
+,,,,,,,,,,,,,,
+,,,,Paraiska,,,,,,,,,Mokslinių tyrimų ir eksperimentinės plėtros (MTEP) finansavimo priemonėse finansuotų projektų duomenys,
+,,,,,kodas,string,,,,4,open,,Paraiškos kodas,Teiktos paraiškos finansavimui gauti kodas
+,,,,,pavadinimas,string,,,,4,open,,Paraiškos pavadinimas,Teiktos paraiškos pavadinimas
+,,,,,mokslo_sritis,string,,,,2,open,,Mokslo sritis,Atitinka Mokslo ir meno sričių klasifikatorių (patvirtinta LR Vyriausybės 2018 m. gruodžio 19 d. nutarimu Nr. 1317)
+,,,,,mokslo_kryptis,string,,,,2,open,,Mokslo kryptis,"Atitinka Mokslo ir meno krypčių klasifikatorių (patvirtinta LR švietimo, mokslo ir sporto ministro 2019 m. vasario 6 d. įsakymu
+Nr. V-93 (2019 m. vasario 20 d. įsakymo Nr. V-156 redakcija)"
+,,,,,organizacija,string,,,,2,open,,Organizacija,Paraiškos teikėjas
+,,,,,finansavimas,number,,,,2,open,,Skirtas finansavimas,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,kvietimo_pavadinimas,string,,,,3,open,,Kvietimo pavadinimas,

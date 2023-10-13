@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/zuikvc/gyvunu_bandos_skaiciai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,gbs,,,,csv,,{dist.dowload_url},tabular(sep: ';'),,,,,
+,,,,,,comment,type,,"create(type: ""param"", ref: ""dist"", source: ""/datasets/gov/ivpk/adp/catalog/DatasetDistribution"")",4,open,spinta:210,,
+,,,,,,,,,,,,,,
+,,,,GyvunuBandosSkaicius,,,rusis,,,2,,,Ūkiniai gyvūnai bandomis ir skaičiais,
+,,,,,rusis,string,,Ūkinių gyvūnų rūšis,,2,open,,Ūkinių gyvūnų rūšis,
+,,,,,laikytoju_sk,integer,U,Laikytojų skaičius,,4,open,,Laikytojų skaičius,
+,,,,,gyv_bandu_sk,integer,U, Gyvūnų bandų skaičius,,4,open,,Bandų skaičius,
+,,,,,gyv_kiekis,integer,U, Gyvūnų kiekis,,4,open,,Ūkinių gyvūnų skaičius,

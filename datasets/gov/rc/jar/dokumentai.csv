@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/dokumentai,,,,,,,,,,,,"Juridinių asmenų registre įregistruotų juridinių asmenų steigimo dokumentų, pateiktų registro tvarkytojui, duomenys (raw data)","Duomenys apie Lietuvos Respublikos juridinių asmenų registre įregistruotų juridinių asmenų registro tvarkytojui pateiktus dokumentus (kodas, pavadinimas, dokumentų rūšis, dokumentų data, įregistravimo data). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti. "
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,juridinis_asmuo,,,4,,,Juridinių asmenų registre įregistruotų juridinių asmenų steigimo dokumentai,
+,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas iš juridinių asmenų registro,
+,,,,,dokumento_tipas,ref,/datasets/gov/rc/jar/dokumentu_tipai_potipiai/DokumentoTipas,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento tipas iš jar dokumentų tipų klasifikatoriaus,
+,,,,,dokumento_potipis,ref,/datasets/gov/rc/jar/dokumentu_tipai_potipiai/DokumentoPotipis,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento potipio pavadinimas,
+,,,,,dok_data,date,D,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento data,
+,,,,,dok_reg_data,date,D,,,4,open,,Juridinių asmenų registrui juridinio asmens pateikto dokumento įregistravimo juridinių asmenų registre data,

@@ -1,11 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rc/ar/graistgyvenamojivietove,,,,,,,,,,,,Adresų registras,
-,,graistgyvenamojivietove,,,,json,,https://www.registrucentras.lt/aduomenys/?byla=adr_gra_ist_gyvenamosios_vietoves.json,,,,,Adresų registro duomenų bazė,
-,,,,GraIstGyvenamojiVietove,,,gyv_kodas,,,,,,Adresų registro gyvenamųjų vietovių erdviniai duomenys,Gyvenamųjų vietovių erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus – gyvenamąsias vietoves apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
-,,,,,gyv_kodas,integer,,IST_GYV_KODAS,,3,open,,Gyvenamosios vietovės kodas Registre (nekeičiamas gyvenamosios vietovės egzistavimo laiką),
-,,,,,pavadinimas,string,,IST_GYV_PAV,,3,open,,Gyvenamosios vietovės vardas su sutrumpintu tipu,
-,,,,,plotas,number,,PLOTAS,,3,open,,Gyvenamosios vietovės grafinis plotas (ha),
-,,,,,gyv_r,date,,IST_GYV_R,,3,open,,Gyvenamosios vietovės įrašymo į Adresų registrą data,
-,,,,,gyv_p,date,,IST_GYV_P,,3,open,,Istorinės gyvenamosios vietovės pakeitimo data,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,SAV_KODAS,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
+,,,,GraIstGyvenamojiVietove,,,gyv_kodas,,,4,,,Adresų registro gyvenamųjų vietovių erdviniai duomenys,Gyvenamųjų vietovių erdvinių duomenų rinkinys iš Lietuvos Respublikos adresų registro (Lietuvos Respublikos administracinius vienetus – gyvenamąsias vietoves apibūdinantys duomenys). Duomenų geografinė imtis — visa šalies teritorija.
+,,,,,gyv_kodas,integer,,,,4,open,,Gyvenamosios vietovės kodas Registre (nekeičiamas gyvenamosios vietovės egzistavimo laiką),
+,,,,,pavadinimas,string,,,,3,open,,Gyvenamosios vietovės vardas su sutrumpintu tipu,
+,,,,,plotas,number,ha,,,4,open,,Gyvenamosios vietovės grafinis plotas (ha),
+,,,,,gyv_r,date,D,,,4,open,,Gyvenamosios vietovės įrašymo į Adresų registrą data,
+,,,,,gyv_p,date,D,,,4,open,,Istorinės gyvenamosios vietovės pakeitimo data,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
+,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
 ,,,,,ist_gyv_vietoves,"geometry(polygon,3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,

@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlk/stacionarines_slaugos_lovu_poreikis,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,Poreikis,,,,,,4,,,Stacionarinės slaugos lovų poreikis,Informacija apie metinį stacionarinių slaugos lovų poreikį pagal savivaldybes
+,,,,,metai,integer,,,,2,open,,Laikotarpis (metai),Ataskaitinio laikotarpio metai
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,teritorija,string,,,,3,open,,Teritorija,"Teritorija, kurioje vertinamas lovų poreikis"
+,,,,,poreikis_1000,number,U,,,4,open,,"Lovų poreikis 1000 savivaldybės statistinių gyventojų, atsižvelgiant į jų amžių, kai vidutinis šalies normatyvas 3 lovos / 1000 gyv.",
+,,,,,fakt_skaicius_1000,number,U,,,4,open,,Faktinis finansuojamų lovų skaičius 1000 savivaldybės statistinių gyventojų (ataskaitinių metų pradžios duomenys),
+,,,,,poreikis,number,U,,,4,open,,Lovų poreikis,
+,,,,,fakt_skaicius,number,U,,,4,open,,Faktinis lovų skaičius,Faktinis finansuojamų lovų skaičius (ataskaitiniais metais)

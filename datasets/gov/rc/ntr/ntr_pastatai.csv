@@ -1,0 +1,48 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ntr/ntr_pastatai,,,,,,,,,,,,Nekilnojamojo turto registre įregistruotų pastatų duomenys pagal savivaldybes,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,NtrPastatas,,,id,,,4,,,,
+,,,,,id,integer,,,,4,open,,Objekto identifikatorius,Dirbtinis nekinojamojo turto objekto identifikatorius
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,Savivaldybės pavadinimas
+,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
+,,,,,statinio_kategorija,string,,,,3,open,,Statinio kategorija,"Statinio rūšis pagal LR statybos įstatymą. Nuo statinio kategorijos priklauso koks projektas turi būti parengtas, kokie reikalavimai keliami projekto vadovui ir kitiems statybos techninės veiklos pagrindinių sričių (STVPS) vadovams ir statybą leidžiančio dokumento (SLD) privalomumas."
+,,,,,obje_tipas,ref,/datasets/gov/rc/ntr/ntr_objektai/NtrObjektoTipas,,,4,open,,Objekto tipas,Pastato tipas
+,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas ,Pastato paskirtis
+,,,,,atr_uzstatytas_plotas,number,,,,3,open,,Atributas užstatytas plotas,Pastatu užstatytas žemės plotas
+,,,,,bendras_plotas,number,,,,3,open,,Bendras plotas,Pastato bendrasis plotas
+,,,,,naudingas_plotas,number,,,,3,open,,Naudingas plotas,"Gyvenamosios paskirties patalpų naudingasis plotas - visų kambarių (gyvenamojo ploto), verslo patalpų (verslo ploto) ir apšiltintų pagalbinių patalpų (pagalbinio naudingojo ploto) plotų suma"
+,,,,,gyv_plotas,number,,,,3,open,,Gyvenamasis plotas,"Gyvenamosios paskirties patalpų, suformuotų kaip atskiri Kadastro objektai (buto gyvenamuosiuose ir negyvenamuosiuose pastatuose; vieno buto namo; atskiro kambario su bendrojo naudojimo patalpomis), plotas skaičiuojamas kaip gyventi skirtų uždarų ar pusiau uždarų patalpų plotų suma"
+,,,,,verslo_plotas,number,,,,3,open,,Verslo plotas,"Verslo plotas - gyvenamojoje patalpoje verslui skirtų patalpų, kuriose užsiimama kuria nors darbine ar kita veikla, aptarnaujami klientai, plotas"
+,,,,,pagalb_nenaud_plotas,number,,,,3,open,,Pagalbinis nenaudingas plotas,"Pagalbinis nenaudingas plotas - neapšiltintų pagalbinių patalpų (uždarų lodžijų, įstiklintų balkonų, uždarų verandų, oranžerėjų, atriumų, žiemos sodų, priemenių, sandėlių, kitų neapšiltintų  patalpų) plotai įskaičiuojami į gyvenamosios patalpos pagalbinį nenaudingąjį plotą"
+,,,,,pagalb_naud_plotas,number,,,,3,open,,Pagalbinis naudingas plotas,"Pagalbinis naudingas plotas - pagalbinio ploto dalis, esanti apšiltintomis atitvaromis apribotoje pastato erdvėje, įskaičiuojama į pagalbinį naudingąjį gyvenamosios patalpos plotą"
+,,,,,rusiu_plotas,number,,,,3,open,,Rūsių plotas,"Pastato rūsių, pusrūsių ir kitų įgilintų patalpų plotas"
+,,,,,garazu_plotas,number,,,,3,open,,Garažų plotas,Garažų patalpų plotas pastate
+,,,,,patalpu_kaip_atsir_nt_skaicius,integer,U,,,4,open,,"Patalpų, kaip atskiro nekilnojamojo turto  skaičius","Patalpų, suformuotų kaip atskiri nekilnojamojo turto  objektai, skaičius "
+,,,,,gyv_pask_patalpu_sk,integer,U,,,4,open,,Gyvenamosios paskirties patalpų skaičius,Gyvenamosios paskirties patalpų pastate skaičius
+,,,,,pastato_energ_naud_klase,integer,,,,2,open,,Pastato energetinio naudingumo klasė,Pagal teisės aktų reikalavimus pastatui nustatyta Pastato energetinio naudingumo klasė
+,,,,,aukstu_skaicius,integer,U,,,4,open,,Aukštų skaičius,"Pastato aukštų skaičius - pagal antžeminių aukštų kiekį, neskaitant požeminių aukštų, pastogės patalpų, antstatų. Jeigu prie esamo pastato pristatytame priestate yra didesnis antžeminių aukštų skaičius (neskaitant rūsių, pusrūsių (cokolinių aukštų), pastogės patalpų ir antstatų) negu pagrindiniame pastate, viso pastato aukštų skaičius nustatomas pagal priestato aukštų skaičių"
+,,,,,stat_pradzios_metai,integer,,,,3,open,,Statybos pradžios metai,Pastato statybos užbaigimo metai
+,,,,,stat_pabaigos_metai,integer,,,,3,open,,Statybos pabaigos metai,Pastato statybos užbaigimo metai
+,,,,,modern_pradzios_metai,integer,,,,3,open,,Modernizavimo pradžios metai,Pastato renovacijos pradžios metai
+,,,,,modern_pabaigos_metai,integer,,,,3,open,,Modernizavimo pabaigos metai,Pastato renovacijos pabaigos metai
+,,,,,sildymas,integer,,,,2,open,,Šildymas,Pastato šildymo sistema
+,,,,,vandentiekis,integer,,,,2,open,,Vandentiekis,Pastato vandentiekio sistema
+,,,,,nuoteku_salinimas,integer,,,,2,open,,Nuotakų šalinimas,Nuotakų šalinimo sistema pastate
+,,,,,dujos,integer,,,,2,open,,Dujos,Pastato aprūpinimas dujomis
+,,,,,karstas_vanduo,integer,,,,2,open,,Karštas vanduo,Pastato aprūpinimas karštu vandeniu
+,,,,,elektra,integer,,,,2,open,,Elektra,Elektros instaliacija pastate
+,,,,,virykle,integer,,,,2,open,,Viryklė,Viryklių skaičius pastate
+,,,,,vonios_kambarys,integer,,,,2,open,,Vonios kambarys,Vonios kambarių skaičius pastate
+,,,,,vedin_kondicionav,integer,,,,2,open,,Vėdinimas-kondicionavimas,Pastato vėdinimo kondicionavimo sistema
+,,,,,pamatai,integer,,,,2,open,,Pamatai ,Pamatų rūšis ir medžiaga
+,,,,,sienos,integer,,,,2,open,,Sienos ,Sienų medžiaga
+,,,,,stogo_konstrukcija,integer,,,,2,open,,Stogo konstrukcija,Stogo konstrukcija
+,,,,,stogo_danga,integer,,,,2,open,,Stogo danga,Stogo dangos medžiaga
+,,,,,perdanga,integer,,,,2,open,,Perdanga,Perdangos medžiaga
+,,,,,isores_apdaila,integer,,,,2,open,,Išorės apdaila,Išorės apdailos medžiaga
+,,,,,vidaus_apdaila,integer,,,,2,open,,Vidaus apdaila,Vidaus apdailos medžiaga
+,,,,,pertvaros,integer,,,,2,open,,Pertvaros ,Pertvarų medžiaga
+,,,,,grindys,integer,,,,2,open,,Grindys ,Grindų medžiaga
+,,,,,langai,integer,,,,2,open,,Langai ,Langų medžiaga
+,,,,,durys,integer,,,,2,open,,Durys ,Durų medžiaga

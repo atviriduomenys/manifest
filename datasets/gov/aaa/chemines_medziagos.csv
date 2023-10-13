@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aaa/chemines_medziagos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,ChemMedziagos,,,,,,2,,,Cheminės medžiagos / mišiniai,
+,,,,,eil_nr,string,,,,4,open,,Eilės nr.,
+,,,,,cas_nr,string,,,,4,open,,Medžiagos CAS numeris,Cheminių medžiagų santrumpų tarnybos suteiktas registracijos numeris
+,,,,,pubchem,url,,,,4,open,,Cheminės medžiagos informacija PubChem,PubChem duomenų bazės paieškos rezultatai pagal CAS nr.
+,,,,,nist,url,,,,4,open,,Cheminės medžiagos informacija NIST,NIST duomenų bazės paieškos rezultatai pagal CAS nr.
+,,,,,eb_nr,string,,,,4,open,,Medžiagos EB numeris,"EINECS, ELINCS arba NLP numeris, oficialus cheminės medžiagos numeris Europos Sąjungoje (pagal 2008 m. gruodžio 16 d. Europos Parlamento ir Tarybos reglamento (EB) Nr. 1272/2008 dėl cheminių medžiagų ir mišinių klasifikavimo, ženklinimo ir pakavimo, iš dalies keičiančio ir panaikinančio direktyvas 67/548/EEB bei 1999/45/EB ir iš dalies keičiančio Reglamentą (EB) Nr. 1907/2006) VI priedą). EB aprašas: https://echa.europa.eu/lt/information-on-chemicals/ec-inventory"
+,,,,,pavadinimas,string,,,,2,open,,Cheminės medžiagos pavadinimas,
+,,,,,kiekis,number,t,,,4,open,,Kiekis tonomis,
+,,,,,veiksmas,string,,,,4,open,,Veiksmas,
+,,,,,,enum,,,"""EK""",,,,Eksportuota,
+,,,,,,,,,"""SU""",,,,Sunaudota,
+,,,,,,,,,"""IS""",,,,Išplatinta (parduota),
+,,,,,,,,,"""PA""",,,,Pagaminta,
+,,,,,,,,,"""IM""",,,,Importuota,
+,,,,,pav_frazes,string,,,,2,open,,Pavojingumo frazės,Pavojingumo frazės su paaiškinimais: https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/LT/Safety/HP_LT.htm
+,,,,,metai,integer,,,,2,open,,Dokumento (ataskaitos) atsiskaitymo metai,"Nuo 2017 m."
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

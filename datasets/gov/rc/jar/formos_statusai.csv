@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/formos_statusai,,,,,,,,,,,,Juridinių asmenų registro teisinių formų ir statusų klasifikatoriai,"Lietuvos Respublikos juridinių asmenų registro teisinių formų ir teisinių statusų klasifikatoriai (duomenų rinkinių grupė, viso 2vnt.) (JAR teisinių formų klasifikatorius; JAR teisinių statusų klasifikatorius)."
+,,,,,,,,,,,,,,
+,,,,Forma,,,kodas,,,4,,,"
+Juridinių asmenų registro teisinių formų klasifikatorius",
+,,,,,kodas,integer,,,,4,open,,Juridinio asmens formos kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinio asmens formos pavadinimas,
+,,,,,pav_ilgas,string,,,,3,open,,Juridinio asmens formos ilgasis pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinio asmens formos pavadinimas anglų kalba,
+,,,,,tipas,string,,,,4,open,,Juridinio asmens formos tipas,
+,,,,,,enum,,,"""privatus""",,,,Privatus,
+,,,,,,,,,"""viešasis""",,,,Viešasis,
+,,,,,type,string,,,,4,open,,Juridinio asmens formos tipas anglų kalba,
+,,,,,,enum,,,"""private""",,,,Private,
+,,,,,,,,,"""public""",,,,Public,
+,,,,,,,,,,,,,,
+,,,,Statusas,,,kodas,,,4,,,Juridinių asmenų registro teisinių statusų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Juridinio asmens statuso kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinio asmens statuso pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinio asmens statuso pavadinimas anglų kalba,

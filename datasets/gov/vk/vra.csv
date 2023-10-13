@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vk/vra,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,,,,,,,,
+,,,,VeiklosRezultatuAtaskaita,,,,,,4,,,Veiklos rezultatų ataskaita,Valstybės kontrolės veiklos rezultatų ataskaitos duomenys
+,,,,,ataskaitiniai_metai,integer,,,,2,open,,Metai,Metai
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,grupe_i_kodas,string,,,,3,open,,Straipsnio I grupės kodas,Straipsnio I grupės kodas
+,,,,,grupe_i_pavadinimas,string,,,,3,open,,Straipsnio I grupės pavadinimas,Straipsnio I grupės pavadinimas
+,,,,,grupe_ii_kodas,string,,,,3,open,,Straipsnio II grupės kodas,Straipsnio II grupės kodas
+,,,,,grupe_ii_pavadinimas,string,,,,3,open,,Straipsnio II grupės pavadinimas,Straipsnio II grupės pavadinimas
+,,,,,grupe_iii_kodas,string,,,,3,open,,Straipsnio III grupės kodas,Straipsnio III grupės kodas
+,,,,,grupe_iii_pavadinimas,string,,,,3,open,,Straipsnio III grupės pavadinimas,Straipsnio III grupės pavadinimas
+,,,,,eur_ataskaskaitinio_laikotarpio,number,,,,2,open,,Ataskaitinis laikotarpis,"Ataskaitinis laikotarpis, suma Eur"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,eur_praejusio_ataskaitinio_laikotarpio,number,,,,2,open,,Praėjęs ataskaitinis laikotarpis,"Praėjęs ataskaitinis laikotarpis, suma Eur"
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

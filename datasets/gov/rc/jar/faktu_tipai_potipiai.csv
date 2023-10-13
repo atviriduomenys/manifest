@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/jar/faktu_tipai_potipiai,,,,,,,,,,,,Juridinių asmenų registro faktų tipų ir potipių klasifikatoriai,"Lietuvos Respublikos juridinių asmenų registro faktų tipų ir faktų potipių klasifikatoriai (duomenų rinkinių grupė, viso 2 vnt.) (JAR faktų tipų klasifikatorius; JAR faktų potipių klasifikatorius)."
+,,,,,,,,,,,,,,
+,,,,FaktoTipas,,,kodas,,,,,,Juridinių asmenų registro faktų tipų klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,Juridinių asmenų registro fakto tipo kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinių asmenų registro fakto tipo pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinių asmenų registro fakto tipo pavadinimas anglų kalba,
+,,,,,,,,,,,,,,
+,,,,FaktoPotipis,,,kodas,,,,,,Juridinių asmenų registro faktų potipių klasifikatorius,
+,,,,,fakto_tipas,ref,FaktoTipas,,,4,open,,Juridinių asmenų registro fakto tipo kodas,
+,,,,,kodas,integer,,,,4,open,,Juridinių asmenų registro fakto potipio kodas,
+,,,,,pavadinimas,string,,,,3,open,,Juridinių asmenų registro fakto potipio pavadinimas,
+,,,,,name,string,,,,3,open,,Juridinių asmenų registro fakto potipio pavadinimas anglų kalba,

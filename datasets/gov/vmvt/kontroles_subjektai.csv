@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmvt/kontroles_subjektai,,,,,,,,,,,,Valstybinės veterinarinės kontrolės subjektų duomenys,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Subjektas,,,vet_pat_nr,,,4,,,Valstybinės veterinarinės kontrolės subjektai,
+,,,,,vet_pat_nr,string,,,,4,open,,Veterinarinio patvirtinimo numeris,
+,,,,,patvirtinimas,date,D,,,4,open,,Veterinarinio patvirtinimo data,
+,,,,,pavadinimas,string,,,,0,open,,Veterinarinės kontrolės objekto ar subjekto pavadinimas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,adresas,string,,,,0,open,,Veterinarinės kontrolės objekto adresas,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,kontaktai,string,,,,0,open,,Veterinarinės kontrolės objekto kontaktiniai duomenys,"Šiuo metu požymis tuščias, nes tvarkoma VMVT maisto informacinė sistema"
+,,,,,vmvt,string,,,,2,open,,VMVT teritorinė,"VMVT departamentas ar skyrius, kuris kontroliuoja veterinės kontrolės objektą"
+,,,,,veikla_kodas,ref,VeiklosKlasifikatorius,,,4,open,,VMVT veiklos kodas,
+,,,,,,,,,,,,,,
+,,,,VeiklosKlasifikatorius,,,kodas,,,4,,,VMVT veiklos klasifikatorius,
+,,,,,kodas,integer,,,,4,open,,VMVT veiklos kodas,
+,,,,,kategorija,string,,,,4,open,,VMVT veiklos kategorija,
+,,,,,pavadinimas,string,,,,4,open,,VMVT veiklos pavadinimas,

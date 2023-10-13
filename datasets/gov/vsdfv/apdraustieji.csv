@@ -1,16 +1,23 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/apdraustieji,,,,,,,,,,,,,
-,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"self.extract(""zip"")[""apdraustieji_ketv.csv""]",,,,,
-,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,,,,,
-,,,,,metai,date,Y,METAI,,2,open,,metai,Metai
-,,,,,ketvirtis,date,3M,KETVIRTIS,,2,open,,ketvirtis,Ketvirtis
-,,,,,apdr_kateg_grupe,string,,APDR_KATEG_GRUPE,,3,open,,apdraustųjų kategorijos grupė,Apdraustųjų kategorijos grupė
-,,,,,apdr_kateg_rusis,string,,APDR_KATEG_RUSIS,,3,open,,apdraustųjų kategorijos rūšis,Apdraustųjų kategorijos rūšis
-,,,,,apdr_kateg_porusis,string,,APDR_KATEG_PORUSIS,,3,open,,apdraustųjų kategorijos porūšis,Apdraustųjų kategorijos porūšis
-,,,,,apdr_kateg_tipas,string,,APDR_KATEG_TIPAS,,3,open,,apdraustųjų kategorijos tipas,Apdraustųjų kategorijos tipas
-,,,,,draudejo_grupe,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_GRUPE,,4,open,,draudėjo grupė,Draudėjo grupė
-,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai,DRAUDEJO_TIPAS,,4,open,,draudėjo tipas,Draudėjo tipas
-,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,3,open,,"priskaičiuota VSD ir PSD įmokų suma, Eur","Priskaičiuota VSD ir PSD įmokų suma, Eur"
-,,,,,sumoketa_eur,number,,SUMOKETA_EUR,,3,open,,"sumokėta VSD ir PSD įmokų suma, Eur","Sumokėta VSD ir PSD įmokų suma, Eur"
-,,,,,vid_a_darbo_apmok_suma_eur,number,,VID_A_DARBO_APMOK_SUMA_EUR,,3,open,,"vidutinė darbo apmokėjimo suma, Eur","Vidutinė darbo apmokėjimo suma, Eur"
-,,,,,vid_b_apdraustuju_sk,number,,VID_B_APDRAUSTUJU_SK,,3,open,,vidutinis apdraustųjų skaičius,Apdraustieji – fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_ketv.zip,"extract(""zip"")[""apdraustieji_ketv.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,,,Apdraustieji,,,"apdr_kateg_grupe, apdr_kateg_rusis",,,3,,,,
+,,,,,metai,integer,,METAI,,2,open,,Metai,
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
+,,,,,ketvirtis,integer,,KETVIRTIS,,3,open,,Ketvirtis,
+,,,,,apdr_kateg_grupe,string,,APDR_KATEG_GRUPE,,3,open,,Apdraustųjų kategorijos grupė,
+,,,,,apdr_kateg_rusis,string,,APDR_KATEG_RUSIS,,3,open,,Apdraustųjų kategorijos rūšis,
+,,,,,apdr_kateg_porusis,string,,APDR_KATEG_PORUSIS,,3,open,,Apdraustųjų kategorijos porūšis,
+,,,,,apdr_kateg_tipas,string,,APDR_KATEG_TIPAS,,3,open,,Apdraustųjų kategorijos tipas,
+,,,,,draudejo_grupe,ref,/datasets/gov/vsdfv/ds/Draudejai[draudeju_grupe],DRAUDEJO_GRUPE,,4,open,,Draudėjo grupė,
+,,,,,,comment,type,,"update(property: ""draudejo_grupe.draudeju_grupe"", type: """")",4,,Spinta:216,,
+,,,,,draudejo_tipas,ref,/datasets/gov/vsdfv/ds/Draudejai[draudeju_tipas],DRAUDEJO_TIPAS,,4,open,,Draudėjo tipas,
+,,,,,,comment,type,,"update(property: ""draudejo_tipas.draudeju_tipas"", type: """")",4,,Spinta:216,,
+,,,,,prisk_suma_eur,number,,PRISK_SUMA_EUR,,2,open,,"Priskaičiuota VSD ir PSD įmokų suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,sumoketa_eur,number,,SUMOKETA_EUR,,2,open,,"Sumokėta VSD ir PSD įmokų suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,vid_a_darbo_apmok_suma_eur,number,,VID_A_DARBO_APMOK_SUMA_EUR,,2,open,,"Vidutinė darbo apmokėjimo suma, Eur",
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,vid_b_apdraustuju_sk,number,,VID_B_APDRAUSTUJU_SK,,4,open,,"Vidutinis apdraustųjų skaičius","Apdraustieji – fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai"

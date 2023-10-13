@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vat/uzdraustos_medziagos,,,,,,,,,,,,,Informacija apie uždraustas tiekti rinkai dauginamosios medžiagos siuntas 
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Siunta,,,eiles_nr,,,4,open,,"Pateikiami duomenys apie dokumento pavadinimą, datą, Nr., augalo rūšį / sėklos mišinio pavadinimą, veislę, siuntos Nr., panaikinimo / paskelbimo datą",
+,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
+,,,,,dokumentas,string,,,,3,open,,Dokumento tipas,
+,,,,,data,string,,,,1,open,,Dokumento data ir Nr.,
+,,,,,rusis,string,,,,3,open,,Augalo rūšis/ sėklos mišinio pavadinimas,
+,,,,,veisle,string,,,,4,open,,Veislė,
+,,,,,siuntos_nr,string,,,,1,open,,Siuntos numeris,
+,,,,,pastaba,string,,,,2,open,,Pastaba,
+,,,,,paskelbimas,date,D,,,4,open,,Panaikinimo paskelbimo data,
