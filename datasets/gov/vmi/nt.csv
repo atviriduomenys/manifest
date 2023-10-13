@@ -40,7 +40,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_pav,string,,,,2,open,,Savivaldybės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",4,,"spinta:216, manifest:1263",,
 ,,,,,tarifas,number,%,,,4,open,,Savivaldybės nustatytas mokesčio tarifas procentais,
-,,,,,avansinio_ntm_metai,integer,,,,4,open,,Avansinio NTM metai,
+,,,,,avansinio_ntm_metai,integer,,,,2,open,,Avansinio NTM metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,pozymis_nt_verte,string,,,,2,open,,Požymis nurodantis NT vertę  nurodytais metais ar mėnesį,"Požymis, nurodantis ar NT vertė deklaruota už visus metus, ar NT vertė deklaruota pamėnesiui  "
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
