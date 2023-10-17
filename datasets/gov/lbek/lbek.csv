@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lbek/leidimai,,,,,,,,,,,,Lietuvos bioetikos komiteto duomenys,
+,datasets/gov/lbek/leidimai,,,,,,,,,,,,Lietuvos bioetikos komitetas,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Leidimas,,,,,,4,,,Lietuvos bioetikos komisijos duomenys,
+,,,,Leidimas,,,,,,4,,,Lietuvos bioetikos komiteto duomenys,
 ,,,,,tyrimo_pavadinimas,string,,,,4,open,,Lietuvoje atliekamų biomedicininių tyrimų pavadinimai,
 ,,,,,protokolo_nr,string,,,,4,open,,Tyrimo protokolo numeris,
 ,,,,,leidimo_nr,string,,,,4,open,,Tyrimo leidimo numeris,
