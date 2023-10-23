@@ -353,10 +353,10 @@ datasets/gov/nma/ti_paseliai_2021.csv
 datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/aaa/isleid_perd_tersalai.csv
-datasets/gov/rsc/laikinieji_leidimai.csv
-datasets/gov/rsc/licencijos.csv
-datasets/gov/rsc/registruotos_veiklos.csv
-datasets/gov/rsc/saugos_reikalavimai.csv
+datasets/gov//laikinieji_leidimai.csv
+datasets/gov//licencijos.csv
+datasets/gov//registruotos_veiklos.csv
+datasets/gov//saugos_reikalavimai.csv
 datasets/gov/rsc/apsvitos_dozes.csv
 datasets/gov/rsc/generatoriai.csv
 datasets/gov/migracija/deportacijos.csv
@@ -454,3 +454,4 @@ datasets/gov/ird/nusikalstamumas.csv
 datasets/gov/vtpsi/infostatyba.csv
 datasets/gov/lbek/lbek.csv
 datasets/gov/essc/humanitarine_pagalba.csv
+datasets/gov/rsc/apsvitos_dozes_metams.csv
