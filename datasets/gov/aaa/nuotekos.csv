@@ -150,7 +150,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aob_tipas,string,,,,4,open,,Ataskaitinio objekto tipas,
 ,,,,,,enum,,,"""USB""",,,,Ūkio subjektas,
 ,,,,,,,,,"""UVO""",,,,Ūkinės veiklos objektas,
-,,,,,aob_pavad,string,,,,3,open,,Ataskaitinio objekto pavadinimas,
+,,,,,aob_pavad,string,,,,1,open,,Ataskaitinio objekto pavadinimas,
 ,,,,,aob_kodas,string,,,,3,open,,Ataskaitinio objekto kodas,
 ,,,,,aob_kategorija,string,,,,4,open,,Ataskaitinio objekto kategorija,
 ,,,,,,enum,,,"""M""",,,,Maudykla,
