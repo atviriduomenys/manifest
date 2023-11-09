@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,usb_aob_kodas,string,,,,3,open,,Ūkio subjekto (USB) kodas,
 ,,,,,usb_ja_kodas,string,,,,2,open,,Ūkio subjekto juridinio asmens kodas,
 ,,,,,aob_gis_taskas,"geometry(point, 3346)",,,,3,open,,Ūkio subjekto (USB) koordinatės,
-,,,,,adr_sav_pavad,string,,,,4,open,,Ūkio subjekto (USB) adreso savivaldybės pavadinimas,
+,,,,,adr_sav_pavad,string,,,,2,open,,Ūkio subjekto (USB) adreso savivaldybės pavadinimas,
 ,,,,,aob_aob_id_prikl,string,,,,4,open,,Priklausomumo objektui id,
 ,,,,,uvo_aob_pavad,string,,,,3,open,,Ūkinės veiklos objekto (UVO) pavadinimas,
 ,,,,,uvo_aob_kodas,string,,,,3,open,,Ūkinės veiklos objekto (UVO) kodas,
