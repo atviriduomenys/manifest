@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/ataskaitos,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1947/download/10654/Finansin%C4%97s%20b%C5%ABkl%C4%97s%20ataskaita%202021-09-30.csv,,,,,,
+,,,,Ataskaita,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,straipsniai,string,,Straipsniai,,3,open,,Straipsniai,
+,,,,,praejusio_ataskaitinio_laik_d,number,,Paskutinė praėjusio ataskaitinio laikotarpio diena,,3,open,,Paskutinė praėjusio ataskaitinio laikotarpio diena,
