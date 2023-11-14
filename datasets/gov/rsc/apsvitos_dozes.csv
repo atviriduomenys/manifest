@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rsc/apsvitos_doze,,,,,,,,,,,,,
+,datasets/gov/rsc/apsvitos_dozes,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Doze,,,,,,2,,,Apšvitą patiriančių darbuotojų gautos metinės apšvitos dozės,
 ,,,,,matavimo_metai,integer,,,,2,open,,Apšvitos dozės matavimo metai,
