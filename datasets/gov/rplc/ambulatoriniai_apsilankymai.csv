@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Apsilankymas,,,vda_id,,,4,open,,Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus filialo ambulatorinių skyrių (dienos stacionaras priskiriamas prie amb. sk.) pacientų apsilankymų duomenys nuo 2016m. Duomenys apima pacientų demografinę (gimimo metų ir amžiaus grupės,
+,,,,Apsilankymas,,,vda_id,,,4,,,Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus filialo ambulatorinių skyrių (dienos stacionaras priskiriamas prie amb. sk.) pacientų apsilankymų duomenys nuo 2016m. Duomenys apima pacientų demografinę (gimimo metų ir amžiaus grupės,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,pacientas,string,,,,4,open,,Paciento žyma,
 ,,,,,vizito_data,date,D,,,4,open,,Paciento vizito data. Jeigu nenurodyta mėnesio ir dienos tikslumu,
