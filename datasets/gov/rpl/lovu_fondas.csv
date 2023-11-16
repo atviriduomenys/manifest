@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/rpl,,,,,,,,,,,,Rokiškio psichiatrijos ligoninė,
 ,datasets/gov/rpl/lovu_fondas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,LovuFondas,,,,,,,,,VšĮ Rokiškio psichiatrijos ligoninės pacientų ir lovų fondo skaičiaus dinamika,
+,,,,LovuFondas,,,,,,,4,,VšĮ Rokiškio psichiatrijos ligoninės pacientų ir lovų fondo skaičiaus dinamika,
 ,,,,,data,date,D,,,4,open,,Formos pildymo data,
 ,,,,,skyr_pav,string,,,,3,open,,Skyriaus pavadinimas,
 ,,,,,fakt_lovos,integer,,,,3,open,,"Faktinis naudojamų lovų skaičius, įskaitant remontuojamas lovas",
