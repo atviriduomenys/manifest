@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Narkotinės abstinencijos gydymo skyrius""",,,,,
 ,,,,,,,,,"""Stacionarinės psichosocialininės reabilitacijos skyrius (Motyvacinės terapijos)""",,,,,
 ,,,,,,,,,"""Vaikų ir jaunimo reabilitacijos skyrius""",,,,,
-,,,,,ataskaitiniai_metai,date,,,,4,open,,"Metai, už kuriuos pateikta ataskaita.",
+,,,,,ataskaitiniai_metai,date,D,,,4,open,,"Metai, už kuriuos pateikta ataskaita.",
 ,,,,,pacientas,string,,,,4,open,,Paciento žyma,
 ,,,,,lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,,enum,,,"""vyras""",,,,,
