@@ -1,0 +1,43 @@
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/vat/ambulatorija;;;;;;;;;;;;;
+;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
+;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
+;;;;;;;;;;;;;;
+;;;;Apsilankymas;;;vda_id;;;4;open;;Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus filialo ambulatorinių skyrių (dienos stacionaras priskiriamas prie amb. sk.) pacientų apsilankymų duomenys nuo 2016m. Duomenys apima pacientų demografinę (gimimo metų ir amžiaus grupės;
+;;;;;vda_id;string;;;;4;open;;Valstybės Duomenų Agentūros įrašo identifikatorius;
+;;;;;pacientas;string;;;;4;open;;Paciento žyma;
+;;;;;vizito_data;date;D;;;4;open;;Paciento vizito data. Jeigu nenurodyta mėnesio ir dienos tikslumu;
+;;;;;lytis;string;;;;4;open;;Paciento lytis;
+;;;;;;enum;;;"""vyras""";;;;;
+;;;;;;;;;"""moteris""";;;;;
+;;;;;gimimo_metai_gr;string;;;;4;open;;Paciento gimimo metų grupė.;
+;;;;;amzius_gr;string;;;;4;open;;Paciento amžiaus grupė.;
+;;;;;gyvenamoji_vieta;string;;;;4;open;;Paciento gyvenamoji vieta;Duomenys pildomi nuo 2021m. 
+;;;;;;enum;;;"""Vilniaus apskritis""";;;;;Pacientas kilęs iš Vilniaus
+;;;;;;;;;"""Kauno apskritis""";;;;;Pacientas kilęs iš kitų Lietuvos teritorijų
+;;;;;;;;;"""Klaipėdos apskritis""";;;;;
+;;;;;;;;;"""Šiaulių apskritis""";;;;;
+;;;;;;;;;"""Panevėžio apskritis""";;;;;
+;;;;;;;;;"""Alytaus apskritis""";;;;;
+;;;;;;;;;"""Marijampolės apskritis""";;;;;
+;;;;;;;;;"""Tauragės apskritis""";;;;;
+;;;;;;;;;"""Telšių apskritis""";;;;;
+;;;;;;;;;"""Utenos apskritis""";;;;;
+;;;;;;;;;"""Užsienis""";;;;;
+;;;;;issilavinimas;string;;;;4;open;;Paciento išsilavinimas;
+;;;;;uzimtumas;string;;;;4;open;;Paciento užimtumo statusas;
+;;;;;sveikatos_draudimas;boolean;;;;4;open;;Nuoroda;
+;;;;;vizitas;string;;;;4;open;;Paciento vizito tipas;
+;;;;;;enum;;;"""pirminis""";;;;;
+;;;;;;;;;"""pakartotinis""";;;;;
+;;;;;vartojimo_stazas;number;;;;4;open;;Paciento vartojimo stažas. Jeigu reikšmė 100.0 - duomenų nepateikė. Atsakoma vizito metu.;
+;;;;;epizodai;integer;U;;;4;open;;Ambulatorinio gydymo epizodo atvejis yra ligonio lankymasis ambulatoriniame skyriuje pas gydytoją dėl konkrečios priežasties;
+;;;;;apsilankymai;integer;U;;;4;open;;Žymimas skaičius;
+;;;;;vartojimo_budas;string;;;;4;open;;Jei pacientas vartoja narkotikus;
+;;;;;;enum;;;"""leidžiasi""";;;;;
+;;;;;;;;;"""rūko""";;;;;
+;;;;;;;;;"""geria per burną""";;;;;
+;;;;;;;;;"""rūko ir leidžiasi""";;;;;
+;;;;;;;;;"""geria per burną ir leidžiasi""";;;;;
+;;;;;;;;;"""uosto""";;;;;
+;;;;;diagnoze;string;;;;4;open;;Sutrikimai, klasifikuojami pagal TLK sisteminį ligų sąrašą.;
