@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Vaisto_isdavimas,,,dirbt_recepto_id,,,4,,,ESPBI IS e. recepto posistemės duomenys apie skiriamus vaistus,ESPBI IS e. recepto posistemės duomenys apie skiriamus vaistus*. *  - vaistas - šiame duomenų rinkinyje naudojamas kaip bendrinis pavadinimas visiems su receptu skiriamiems medicininiams produktams (vaistinis preparatas; medicinos pagalbos priemonė (MPP); vardinis vaistas; ekstemporalus vaistas***; kitos priemonės); ** - TLK-10-AM - tarptautinis ligos kodas; kodų sistema; apimanti ligas ir įvairius simptomus; patologines būkles; skundus; socialines aplinkybes; išorines sužeidimų ir ligų priežastis; sudaroma Pasaulinės sveikatos organizacijos (PSO); *** - Ekstemporalus vaistas - (ekstemporalus vaistinis preparatas) - vaistinėje pavieniam pacientui pagal gydytojo receptą ir (arba) sveikatos priežiūros įstaigos užsakymą pagamintas vaistinis preparatas ar pagal vaistinio preparato aprašą pagamintas vaistinis preparatas; **** - ATC kodas ar indeksas - anatominis terapinis cheminis indeksas; suteikiamas vaistams ir medicinos priemonėms; pagal kuriuos jie klasifikuojami; patvirtintas Pasaulio sveikatos organizacijos
-,,,,,dirbt_recepto_id,ref,Receptas,,,4,open,,Dirbtinis išrašyto recepto identifikatorius,
+,,,,,dirbt_recepto_id,ref,/datasets/gov/rc/espbiis/receptai/Receptas,,,4,open,,Dirbtinis išrašyto recepto identifikatorius,
 ,,,,,dirbt_isdavimo_id,string,,,,4,open,,Dirbtinis vaisto išdavimo identifikatorius,
 ,,,,,isdavimo_metai,integer,,,,2,open,,Vaisto išdavimo metai,
 ,,,,,,comment,type,,"update(type: ""date""; ref: ""Y"")",4,,spinta:213,,
