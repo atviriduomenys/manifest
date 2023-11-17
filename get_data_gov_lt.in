@@ -75,6 +75,7 @@ datasets/gov/rc/ppnsis/nariai.csv
 datasets/gov/rc/ppnsis/nariu_skaicius.csv
 datasets/gov/rc/ppnsis/politines_organizacijos.csv
 datasets/gov/rc/espbiis/receptai.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_amziu_lyti.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_apskritis.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_neveiksnumo_sritis.csv
