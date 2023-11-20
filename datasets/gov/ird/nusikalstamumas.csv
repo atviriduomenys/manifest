@@ -1,69 +1,67 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/ird/nusikalstamumas,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,IndicatorsDimension,,,id,,,3,,,IndicatorsDimension,"Lentelė, kurioje saugomas sąrašas identifikuotų dimensijų ir jų pavadinimai, kodai ir aprašymai"
+,,,,IndicatorsDimension,,,id,,,4,,,IndicatorsDimension,"Lentelė, kurioje saugomas sąrašas identifikuotų dimensijų ir jų pavadinimai, kodai ir aprašymai"
 ,,,,,code,string,,,,2,open,,Dimensijos kodas,"Dimensijos kodas - NV tipas, savivaldybė, straipsnis..."
 ,,,,,id,integer,,,,4,open,,Dimensijos identifikatorius,Dimensijos identifikatorius - kodas
 ,,,,,options,string,,,,2,open,,Galimybės,"Aprašymo ilgis LEFT(`options`, 256)"
 ,,,,,position,integer,,,,4,open,,Pozicija ataskaitoje,Pozicija ataskaitoje
 ,,,,,,,,,,,,,,
-,,,,IndicatorsDimensionsI18N,,,id,,,3,,,IndicatorsDimensionsI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
+,,,,IndicatorsDimensionsI18N,,,id,,,4,,,IndicatorsDimensionsI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
 ,,,,,id,integer,,,,4,open,,Dimensijos identifikatorius,Dimensijos identifikatorius - kodas
-,,,,,lang,string,,,,2,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
-,,,,,target,ref,IndicatorsDimension,,,2,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimension  lentelės
-,,,,,title,string,,,,2,open,,Dimensijos aprašymas,Dimensijos aprašymas
+,,,,,lang,string,,,,3,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
+,,,,,target,ref,IndicatorsDimension,,,4,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimension  lentelės
+,,,,,title,string,,,,4,open,,Dimensijos aprašymas,Dimensijos aprašymas
 ,,,,,,,,,,,,,,
-,,,,IndicatorsDimensionsValue,,,id,,,3,,,IndicatorsDimensionsValue,"Lentelė, kurioje saugomas sąrašas identifikuotų dimensijų  reikšmės"
+,,,,IndicatorsDimensionsValue,,,id,,,4,,,IndicatorsDimensionsValue,"Lentelė, kurioje saugomas sąrašas identifikuotų dimensijų  reikšmės"
 ,,,,,code,string,,,,2,open,,Dimensijos kodas,"Dimensijos kodas - NV tipas, savivaldybė, straipsnis..."
-,,,,,dimension,ref,IndicatorsDimension,,,2,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimension  lentelės
+,,,,,dimension,ref,IndicatorsDimension,,,4,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimension  lentelės
 ,,,,,id,integer,,,,4,open,,Dimensijos identifikatorius,Dimensijos identifikatorius - kodas
-,,,,,parent,ref,IndicatorsDimensionsValue,,,2,open,,Nuoroda į tėvinį kodą,Kodas priklauso  ID  (dimensijos identifikatorius - kodas)
+,,,,,parent,ref,IndicatorsDimensionsValue,,,4,open,,Nuoroda į tėvinį kodą,Kodas priklauso  ID  (dimensijos identifikatorius - kodas)
 ,,,,,position,integer,,,,4,open,,Pozicija ataskaitoje,Pozicija ataskaitoje
 ,,,,,,,,,,,,,,
-,,,,IndicatorsDimensionsValuesI18N,,,id,,,3,,,IndicatorsDimensionsValuesI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
+,,,,IndicatorsDimensionsValuesI18N,,,id,,,4,,,IndicatorsDimensionsValuesI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
 ,,,,,id,integer,,,,4,open,,Dimensijos kodas,Dimensijos kodas
-,,,,,lang,string,,,,2,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
+,,,,,lang,string,,,,3,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
 ,,,,,subtitle,string,,,,4,open,,Antraštė,Nusikalstamos veikos tyrimo stadija (užregistruota/ištirta)
-,,,,,target,ref,IndicatorsDimensionsValue,,,2,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimensionsValue  lentelės
-,,,,,title,string,,,,2,open,,Dimensijos pavadinimas,Rinkinio pavadinimas
+,,,,,target,ref,IndicatorsDimensionsValue,,,4,open,,Dimensijos kodas,Dimensijos ID iš  IndicatorsDimensionsValue  lentelės
+,,,,,title,string,,,,4,open,,Dimensijos pavadinimas,Rinkinio pavadinimas
 ,,,,,,,,,,,,,,
-,,,,IndicatorsItem,,,id,,,3,,,IndicatorsItem,"Lentelė, kurioje apibrėžiami statistinių reikšmių rodikliai"
+,,,,IndicatorsItem,,,id,,,4,,,IndicatorsItem,"Lentelė, kurioje apibrėžiami statistinių reikšmių rodikliai"
 ,,,,,code,string,,,,2,open,,Dimensijos kodas,"Nusikalstamos veikos padarytos LR pagal LR BK, tyrimo stadijas "
 ,,,,,id,integer,,,,4,open,,Dimensijos kodas,"Kodas priskirtas pagal nusikalstamos veikos padarytos LR pagal LR BK, tyrimo stadiją"
 ,,,,,position,integer,,,,4,open,,Pozicija,Ataskaitos pozicija
 ,,,,,,,,,,,,,,
-,,,,IndicatorsItemsI18N,,,id,,,3,,,IndicatorsItemsI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
+,,,,IndicatorsItemsI18N,,,id,,,4,,,IndicatorsItemsI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
 ,,,,,id,integer,,,,4,open,,Dimensijos kodas,Dimensijos kodas
-,,,,,lang,string,,,,2,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
+,,,,,lang,string,,,,3,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
 ,,,,,target,ref,IndicatorsItem,,,4,open,,Kodas,Dimensijos ID iš  Indicatorsitem  lentelės
-,,,,,title,string,,,,2,open,,Pavadinimas,"Nusikalstamos veikos padarytos LR pagal LR BK, tyrimo stadijas "
+,,,,,title,string,,,,4,open,,Pavadinimas,"Nusikalstamos veikos padarytos LR pagal LR BK, tyrimo stadijas "
 ,,,,,,,,,,,,,,
-,,,,IndicatorsKeyFamilie,,,id,,,3,,,IndicatorsKeyFamilie,"Lentelė, kurioje saugomi rodikliai ir juos sudarančios dimensijos"
+,,,,IndicatorsKeyFamilie,,,id,,,4,,,IndicatorsKeyFamilie,"Lentelė, kurioje saugomi rodikliai ir juos sudarančios dimensijos"
 ,,,,,code,string,,,,2,open,,Kodas,Nusikalstamos veikos ar asmenys
 ,,,,,dimensions,string,,,,2,open,,Dimensijos kodas,Kodų sąrašas priskirtas nusikalstamoms veikoms ar asmenims
 ,,,,,id,integer,,,,4,open,,Identifikacijos kodas,Identifikacijos kodas
-,,,,,main_dimension,ref,IndicatorsDimension,,,2,open,,Kodas,Nusikalstama veika ar asmuo
+,,,,,main_dimension,ref,IndicatorsDimension,,,4,open,,Kodas,Nusikalstama veika ar asmuo
 ,,,,,,,,,,,,,,
-,,,,IndicatorsKeyFamiliesI18N,,,id,,,3,,,IndicatorsKeyFamiliesI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
+,,,,IndicatorsKeyFamiliesI18N,,,id,,,4,,,IndicatorsKeyFamiliesI18N,"Lentelė, kurioje yra saugomas dimensijų aprašymas"
 ,,,,,id,integer,,,,4,open,,Identifikacijos kodas,Identifikacijos kodas
-,,,,,lang,string,,,,2,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
-,,,,,target,ref,IndicatorsKeyFamilie,,,2,open,,Kodas,Nusikalstama veika ar asmuo
+,,,,,lang,string,,,,3,open,,Kalba,Duomenų rinkinio kalba (LT/EN)
+,,,,,target,ref,IndicatorsKeyFamilie,,,4,open,,Kodas,Nusikalstama veika ar asmuo
 ,,,,,title,string,,,,3,open,,Rinkinio pavadinimas,Duomenų rinkinys apie nusikalstamas veikas Lietuvoje/ Duomenų rinkinys pagal įtariamus / kaltinamus ir nukentėjusius asmenis
 ,,,,,,,,,,,,,,
-,,,,IndicatorsMapping,,,id,,,3,,,IndicatorsMapping,"Lentelė, kurioje yra saugomi duomenys apie ataskaitas"
-,,,,,date_from,string,,,,2,open,,Data nuo,Ataskaitos galiojimo data nuo
-,,,,,date_to,string,,,,2,open,,Data iki,Ataskaitos galiojimo data iki
+,,,,IndicatorsMapping,,,id,,,4,,,IndicatorsMapping,"Lentelė, kurioje yra saugomi duomenys apie ataskaitas"
+,,,,,date_from,string,M,,,4,open,,Data nuo,Ataskaitos galiojimo data nuo
+,,,,,date_to,string,M,,,4,open,,Data iki,Ataskaitos galiojimo data iki
 ,,,,,form_code,string,,,,4,open,,Ataskaitos kodas,Iš kokios ataskaitos pateikiami duomenys
 ,,,,,id,integer,,,,4,open,,Identifikatorius,Ataskaitai priskirtas kodas
 ,,,,,,,,,,,,,,
-,,,,IndicatorsMetadata,,,id,,,3,,,IndicatorsMetadata,"Lentelė, kurioje yra saugomos rodiklių metaduomenys"
+,,,,IndicatorsMetadata,,,id,,,4,,,IndicatorsMetadata,"Lentelė, kurioje yra saugomos rodiklių metaduomenys"
 ,,,,,id,integer,,,,4,open,,Identifikacijos kodas,Identifikacijos kodas
 ,,,,,item,ref,IndicatorsItem,,,4,open,,Kodas,Dimensijos ID iš  Indicatorsitem  lentelės
 ,,,,,key,string,,,,2,open,,Dimensijos raktas,Dimensijų kodiniai pavadinimai
 ,,,,,value,string,,,,2,open,,Dimensijos reikšmė,Pasirinktos dimensijos reikšmė
 ,,,,,,,,,,,,,,
-,,,,IndicatorsOb,,,"item, dt",,,3,,,IndicatorsOb,"Lentelė, kurioje yra saugomos rodiklių reikšmės"
-,,,,,dt,string,,,,2,open,,Data,"Laikotarpis, kurį apima duomenų rinkinys, pvz.: 2020-07 - 2020 metų spalio mėn."
+,,,,IndicatorsOb,,,"item, dt",,,4,,,IndicatorsOb,"Lentelė, kurioje yra saugomos rodiklių reikšmės"
+,,,,,dt,date,M,,,4,open,,Data,"Laikotarpis, kurį apima duomenų rinkinys, pvz.: 2020-07 - 2020 metų spalio mėn."
 ,,,,,item,ref,IndicatorsItem,,,4,open,,Kodas,Dimensijos ID iš  Indicatorsitem  lentelės
