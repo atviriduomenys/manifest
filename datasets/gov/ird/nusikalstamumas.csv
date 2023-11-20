@@ -51,8 +51,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,title,string,,,,3,open,,Rinkinio pavadinimas,Duomenų rinkinys apie nusikalstamas veikas Lietuvoje/ Duomenų rinkinys pagal įtariamus / kaltinamus ir nukentėjusius asmenis
 ,,,,,,,,,,,,,,
 ,,,,IndicatorsMapping,,,id,,,4,,,IndicatorsMapping,"Lentelė, kurioje yra saugomi duomenys apie ataskaitas"
-,,,,,date_from,string,M,,,4,open,,Data nuo,Ataskaitos galiojimo data nuo
-,,,,,date_to,string,M,,,4,open,,Data iki,Ataskaitos galiojimo data iki
+,,,,,date_from,date,M,,,4,open,,Data nuo,Ataskaitos galiojimo data nuo
+,,,,,date_to,date,M,,,4,open,,Data iki,Ataskaitos galiojimo data iki
 ,,,,,form_code,string,,,,4,open,,Ataskaitos kodas,Iš kokios ataskaitos pateikiami duomenys
 ,,,,,id,integer,,,,4,open,,Identifikatorius,Ataskaitai priskirtas kodas
 ,,,,,,,,,,,,,,
