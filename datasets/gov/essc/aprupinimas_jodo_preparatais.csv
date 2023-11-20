@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Aprupinimas,,,,,,4,,,Gyventojų aprūpinimas stabiliojo jodo preparatais pagal savivaldybes,
 ,,,,,id,string,,,,4,open,,Identifikatorius,
 ,,,,,savivaldybe,string,,,,3,open,,Savivaldybė,
-,,,,,metai,integer,Y,,,4,open,,Metai,
+,,,,,metai,date,Y,,,4,open,,Metai,
 ,,,,,suaugusiuju_sk_bal,integer,,,,3,open,,Suaugusiųjų gyventojų skaičius savivaldybėje balandį,
 ,,,,,vaiku_sk_bal,integer,,,,3,open,,Vaikų iki 12 m. skaičius savivaldybėje balandį,
 ,,,,,isduota_tableciu_2020,integer,,,,3,open,,2020 metais išduotų kalio jodido tablečių skaičius Lietuvos savivaldybėms,
