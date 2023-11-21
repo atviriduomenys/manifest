@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vat/studentu_registras,,,,,,,,,,,,,
+,datasets/gov/rplc/studentu_registras,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Sutartis,,,vda_id,,,4,open,,"Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus, Kauno, Klaipėdos, Šiaulių ir Panevėžio filialų studentų, atlikusių praktiką, rezidentūrą, tyrimą ar užsiėmusių kita veikla, sutarčių registrų duomenys.",
+,,,,Sutartis,,,vda_id,,,4,,,"Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus, Kauno, Klaipėdos, Šiaulių ir Panevėžio filialų studentų, atlikusių praktiką, rezidentūrą, tyrimą ar užsiėmusių kita veikla, sutarčių registrų duomenys.",
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,mokymo_istaiga,string,,,,4,open,,Asmens mokymo įstaiga,"Jei asmuo atlieka praktiką kaip savanoris, įraše žymima ""Savanoris"""
 ,,,,,praktikos_pradzia,date,D,,,4,open,,Praktikos pradžios data,
