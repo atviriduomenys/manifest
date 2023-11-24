@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nagrinejimo_trukme,integer,,Nagrinėjimo_Trukmė,,3,open,,Nagrinėjimo trukmė,
 ,,,,,kreiptasi_ett,boolean,,Kreiptasi_Į_ETT,,3,open,,Kreiptąsi į ETT (Europos Sąjungos teisingumo teismą),
 ,,,,,kreiptasi_kt,boolean,,Kreiptasi_Į_Konstitucinį_Teismą,,3,open,,Kreiptąsi į Konstitucinį teismą,
-,,,,,naudotos_ES_teises_normos,boolean,,Naudotos_ES_Teisės_Normos,,3,open,,Naudotos ES teisės normos,
+,,,,,naudotos_es_teises_normos,boolean,,Naudotos_ES_Teisės_Normos,,3,open,,Naudotos ES teisės normos,
 ,,,,,europos_aresto_orderis,boolean,,Europos_Arešto_Orderis,,3,open,,Europos arešto orderis,
 ,,,,,kategorijos_kodas,string,,Kategorijos_Kodas,,4,open,,Bylos kategorijos kodas,
 ,,,,,kategorija,string,,Kategorija,,3,open,,Bylos kategorija,

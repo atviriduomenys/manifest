@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,st_ireg_ketv,string,,,,2,open,,Hipotekos / įkeitimo įregistravimo data (metai - ketvirtis),
 ,,,,,st_isreg_ketv,string,,,,2,open,,Hipotekos / įkeitimo išregistravimo data (metai - ketvirtis),
 ,,,,,iraso_priezastis,string,,,,2,open,,Hipotekos / įkeitimo paskutinio įregistruoto įrašo tipas Sutarčių ir teisių suvaržymų registre,
-,,,,,sudarymo vieta,string,,,,3,open,,Hipotekos / įkeitimo sudarymo vieta (sav.; apskr.),
+,,,,,sudarymo_vieta,string,,,,3,open,,Hipotekos / įkeitimo sudarymo vieta (sav.; apskr.),
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Hipotekos / įkeitimo sudarymo vietos savivaldybės kodas iš Adresų registro (tik didmiesčių savivaldybės),
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Hipotekos / įkeitimo sudarymo vietos apskrities kodas iš Adresų registro,
 ,,,,,pri_dydis_rez,string,,,,3,open,,Prievolės rėžių dydžiai,
