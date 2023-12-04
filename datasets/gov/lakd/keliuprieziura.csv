@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lakd/keliuprieziura,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
-,,prieziura,,,,csv,,https://data.gov.lt/dataset/1252/download/10630/viet_keliu_skirtos_lesos_2022m.csv,"tabular(sep: "";"")",,,,,
+,,prieziura,,,,html,,https://lakd.lt/finansavimas,,,,,,
 ,,,,PrieziurosSamata,,,paskirtis,,,2,,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],Savivaldybė,,2,open,,Savivaldybė,
 ,,,,,paskirtis,string,,Paskirtis,,3,open,,Finansavimo lėšų paskirtis,
