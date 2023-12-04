@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,roadprojects,,,,geojson,,https://gissrv.eismoinfo.lt/server/rest/services/PORTAL/PlanuojamiVP/MapServer/5/query?outFields=*&where=1%3D1&f=geojson,,,,,,
+,,roadprojects,,,,geojson,,https://gis.ktvis.lt/arcgis/rest/services/LAKD/Apmokestinti_keliai/MapServer/0/query?outFields=*&where=1%3D1&f=geojson,,,,,,
 ,,,,RoadProject,,,id,,,4,,,Kelio projektas,
 ,,,,,id,integer,,id,,4,open,,,
 ,,,,,geometry,"geometry(multilinestring,4326)",m,geometry,,4,open,,Geometrija,
