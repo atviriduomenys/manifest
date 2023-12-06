@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/ndnt/spec_poreikiai,,,,,,,,,,,,Asmenų specialiųjų poreikių duomenys,
 ,,,,,,,,,,,,,,
 ,,aspd,,,,csv,,https://data.gov.lt/dataset/1820/download/14178/Asmen%C5%B3_speciali%C5%B3j%C5%B3_poreiki%C5%B3_duomenys.csv,,,,,,
-,,,,SpecPoreikis,,,"gimimo metai, tlk10am",,,3,,,Asmenų specialieji poreikiai,
+,,,,SpecPoreikis,,,"gimimo_metai, tlk10am",,,3,,,Asmenų specialieji poreikiai,
 ,,,,,spec_poreikiai,string,,Spec. poreikiai,,4,open,,Spec. poreikiai,
 ,,,,,reg_data,date,D,Registracijos data,,4,open,,Registracijos data,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,Savivaldybė,,3,open,,Savivaldybė,
