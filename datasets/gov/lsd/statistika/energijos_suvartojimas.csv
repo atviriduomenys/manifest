@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/energijos_suvartojimas,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Rodiklis,,,vda_id,,,4,,,Energijos suvartojimas,"Fizinių energijos srautų sąskaitų (FESS) rengimo tikslas – parengti tikslią ir palyginamą statistinę informaciją apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinius energijos srautus, patenkančius į nacionalinį ūkį, cirkuliuojančius ūkyje ir patenkančius į kitus ūkius arba į aplinką. Tyrimas aprėpia visas ekonominės veiklos rūšis pagal EVRK 2 red. Statistinio stebėjimo vienetas - ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma - šalies venetai rezidentai ir nerezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis_id,integer,,,,4,open,,Ataskaitinio laikotarpio id,
+,,,,,laikotarpis,integer,,,,4,open,,Ataskaitinis laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų id,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,rodikliai_id,string,,,,4,open,,Rodiklių id,
+,,,,,rodikliai,string,,,,4,open,,Rodikliai,
+,,,,,verte,number,,,,4,open,,Rodiklio vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinio duomenų atnaujinimo data,
