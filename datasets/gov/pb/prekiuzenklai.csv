@@ -44,5 +44,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,publication_date,date,D,PublicationDate,,4,open,,Publication date,
 ,,,,Applicant,,,person_type,/Trademark/ApplicantDetails/Applicant,,3,open,,Applicant,
 ,,,,,person_type,string,,PersonType,,3,open,,Person type,
-,,,,ns2:FormattedNameAddress,,,ns2:organization_name,/Trademark/ApplicantDetails/Applicant/AddressBook/ns2:FormattedNameAddress,,3,open,,Name address,
-,,,,,ns2:organization_name,string,,ns2:OrganizationName,,3,open,,Organization name,
+,,,,FormattedNameAddress,,,organization_name,/Trademark/ApplicantDetails/Applicant/AddressBook/ns2:FormattedNameAddress,,3,open,,Name address,
+,,,,,organization_name,string,,ns2:OrganizationName,,3,open,,Organization name,

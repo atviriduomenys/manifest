@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,roadvignette,,,,csv,,,,,,,,
-,,,,vignette,,,"vinjetes_rusis, vinjetes_serija",,,4,,vadovas:dsa/dimensijos.html#model.ref,Kelių naudotojų mokesčio pardavimų statistika,
+,,,,Vignette,,,"vinjetes_rusis, vinjetes_serija",,,4,,vadovas:dsa/dimensijos.html#model.ref,Kelių naudotojų mokesčio pardavimų statistika,
 ,,,,,kilmes_salis,string,,tp_salis,,2,open,,Transporto priemonės registracijos šalis,
 ,,,,,,comment,type,,"create(property: ""tp"", type: ""ref"", ref: ""/datasets/gov/regitra/tp/TransportoPriemone[kilmes_salis]"")",4,,,,
 ,,,,,,comment,property,,"update(property: ""tp.kilmes_salis"", type: """")",4,,spinta:216,,
