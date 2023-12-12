@@ -25,6 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pranesimo_menuo,date,M,,,4,open,,Pranešimo mėnuo,
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,sukelejo_rusis,string,,,,2,open,,Sukelėjo rūšis,
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,GyvenamojiVieta,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
 ,,,,,gyvenamoji_vieta,string,,,,4,open,,Gyvenamosios vietos tipas,"Požymis nurodantis, ar pacientas gyvena kaime ar mieste"
@@ -66,6 +67,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'sunki',,,,sunki,
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,SocialineGrupe,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
 ,,,,,socialine_grupe,string,,,,4,open,,Socialinė grupė,
@@ -113,6 +115,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,salytis_su_gyvunu,boolean,,,,4,open,,Sąlytis su gyvūnu,"Požymis nurodantis, ar buvo paciento sąlytis su gyvūnu. Svarbu tiriant, ar užsikrėsta nuo gyvūno."
 ,,,,,diagnozuota_per,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,Tyrimas,,,,,,3,,,Užkrečiamųjų ligų tyrimai,
 ,,,,,patvirtinta,date,M,,,4,open,,Diagnozės data,
@@ -121,3 +124,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,laboratoriniai_tyrimai,string,,,,2,open,,Laboratoriniai tyrimai,
 ,,,,,laboratoriniu_tyrimu_metodai,string,,,,2,open,,Laboratorinių tyrimų metodai,
 ,,,,,apibr_atitinka_standartini,boolean,,,,4,open,,Standartinis,Požymis ar laboratorinio tyrimo metodas yra standartinis
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,

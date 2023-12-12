@@ -66,3 +66,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,antibiotics_mjautrus,string,,,,2,open,,Mažai jautrūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra mažai jautrus"
 ,,,,,antibiotics_atsparus,string,,,,2,open,,Atsparūs antibiotikai,"Antibiotiko tarptautinis nepatentuojamas pavadinimas, kuriam sukelėjas yra atsparus"
 ,,,,,eminio_paemimas,date,M,,,4,open,,Mėginio paėmimo data,
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
