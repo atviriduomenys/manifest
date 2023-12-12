@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/miskai/mdm,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Tiekejas,,,,,,,,,,
+,,,,,eil_nr,integer,,,,4,open,,Eilės nr.,
+,,,,,tiekejas,string,,,,3,open,,MDM tiekėjas,Miško dauginamosios medžiagos tiekėjas
+,,,,,buveine,string,,,,3,open,,"Buveinė, gyvenamosios vietos adresas",
+,,,,,tel,string,,,,2,open,,Telefono nr.,
+,,,,,mob_tel,string,,,,3,open,,Mobilaus telefono nr.,
+,,,,,faksas,string,,,,3,open,,Faksas,
+,,,,,el_pastas,string,,,,2,open,,El. paštas,
+,,,,,papildoma_informacija,string,,,,2,open,,Papildoma informacija,Pvz. kur siųsti korespondenciją
+,,,,,,,,,,,,,,
+,,,,VeiklosSritis,,,,,,,,,,
+,,,,,kodas,string,,,,3,open,,Veiklos srities sutrumpinimas,
+,,,,,pavadinimas,string,,,,3,open,,Veiklos srities pavadinimas,
+,,,,,,,,,,,,,,
+,,,,MDMSritis,,,,,,,,,,
+,,,,,mdm,ref,Tiekejas,,,4,open,,MDM tiekėjas,
+,,,,,vs,ref,VeiklosSritis,,,4,open,,Veiklos sritis,
