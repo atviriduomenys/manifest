@@ -4,6 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,S3R484_M3010510,,,vda_id,,,4,,,Suminis gimstamumo rodiklis,Pateikta statistinė informacija apie suminį gimstamumo rodiklį
+,,,,,vda_id,string,,,,4,open,,"Valstybės Duomenų Agentūros įrašo identifikatorius	",
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
 ,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija identifikacinis numeris,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
