@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R484_M3010510,,,vda_id,,,4,,,Suminis gimstamumo rodiklis,"Pateikta statistinė informacija apie suminį gimstamumo rodiklį. Suminis gimstamumo rodiklis – tikimybinis rodiklis, parodantis, kiek gyvų vaikų per visą savo gyvenimo vaisingą laikotarpį (15–49 metų) pagimdytų moteris, jeigu gimstamumas kiekvienoje amžiaus grupėje išliktų nepakitęs. Statistinė (tiriamoji) visuma yra prognozuojamas gyventojų, gyvų gimusiųjų, mirusiųjų arba tarptautinių migrantų skaičius."
+,,,,S3R484_M3010510,,,vda_id,,,4,,,Suminis gimstamumo rodiklis,"Pateikta statistinė informacija apie suminį gimstamumo rodiklį. Suminis gimstamumo rodiklis – tikimybinis rodiklis, parodantis, kiek gyvų vaikų per visą savo gyvenimo vaisingą laikotarpį (15–49 metų) pagimdytų moteris, jeigu gimstamumas kiekvienoje amžiaus grupėje išliktų nepakitęs. Statistinė (tiriamoji) visuma yra prognozuojamas gyventojų, gyvų gimusiųjų, mirusiųjų arba tarptautinių migrantų skaičius.(https://osp.stat.gov.lt/documents/10180/5118910/Gyventoj%C5%B3+skai%C4%8Diaus+prognoz%C4%97s+%5BLT%5D+6401.html)"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
 ,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija identifikacinis numeris,
