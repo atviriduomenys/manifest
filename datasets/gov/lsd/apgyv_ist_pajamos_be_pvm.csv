@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+datasets/gov/lsd/statistika/apgyv_ist_pajamos_be_pvm,,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R861_M4090208_4,,,,,,4,,,Pajamos uþ suteiktas apgyvendinimo paslaugas (be PVM),"Kas ketvirtinës apgyvendinimo paslaugø tiekëjø pajamos (be pvm) pagal apgyvendinimo tipus Apibrëþtis (-ys) Apgyvendinimo ástaiga – vietos veiklos rûðies vienetas, teikiantis mokamas trumpalaikio apgyvendinimo paslaugas turistui. Pajamos uþ apgyvendinimo paslaugas – apgyvendinimo ástaigos pajamos, uþdirbtos per ataskaitiná laikotarpá uþ suteiktas apgyvendinimo paslaugas turistams. Áskaitomos pajamos uþ maitinimo, gydymo, reabilitacijos ir kitas turistams suteiktas paslaugas, jeigu jos áskaitytos á apgyvendinimo paslaugos kainà. Statistinë tiriamoji visuma Juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinës ekonominës veiklos rûðies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – vieðbuèiø ir panaðiø laikinø buveiniø veikla, 55.2 – poilsiautojø ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsiniø transporto priemoniø, priekabø aikðteliø ir stovyklavieèiø veikla (toliau – EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3). Fiziniai asmenys, dirbantys pagal verslo liudijimà (010, 043 kodai pagal „Verslo liudijimø klasifikatoriø“) ar (ir) individualios veiklos paþymà ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3) paslaugas turistams. Laiko aprëptis Nuo 2012 m."
+,,,,,vda_id ,string,,,,4,open,, Valstybës Duomenø Agentûros áraðo identifikatorius,
+,,,,,apgyvendinimo_tipas ,string,,,,4,open,, Apgyvendinimo tipas,
+,,,,,apgyvendinimo_tipas_id ,string,,,,4,open,, Apgyvendinimo tipas identifikacinis numeris,
+,,,,,laikotarpis ,date,D,,,4,open,, Laikotarpis,
+,,,,,laikotarpis_id ,string,,,,4,open,, Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai ,string,,,,4,open,, Matavimo vienetai,
+,,,,,matavimo_vienetai_id ,string,,,,4,open,, Matavimo vienetai identifikacinis numeris,
+,,,,,verte ,number,,,,4,open,, skaitinë vertë,
+,,,,,atnaujinta ,date,D,,,4,open,, paskutinis atnaujinimas,
