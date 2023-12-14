@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/valdzios_sektoriaus_pajamos_islaidos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S7R268_M2040217,,,vda_id,,,4,,,Valdžios sektoriaus pajamos ir išlaidos,"Pateikta statistinė informacija apie valdžios sektoriaus pajamas ir išlaidas. Valdžios sektoriaus pajamos vertinamos pagal sandorius: mokesčiai D.2+D.5+D.91, socialinės įmokos D.61, prekių ir paslaugų pardavimas P.1+P.12+P.131, kitos einamosios pajamos D.4+D.7, kitos kapitalo pajamos D.92+D.99. (https://osp.stat.gov.lt/documents/10180/5118910/Vald%C5%BEios+sektoriaus+pajamos+ir+i%C5%A1laidos+%5BLT%5D+125640000.html)
+
+Valdžios sektoriaus išlaidos vertinamos pagal sandorius: tarpinis vartojimas P.2, atlygis darbuotojams D.1, palūkanos D.41, socialinės išmokos, išskyrus socialinius pervedimus natūra D.62, socialiniai pervedimai natūra per rinkos gamintojus D.632, subsidijos D.3, kitos einamosios išlaidos D.29 + (D.4 – D.41) + D.5 + D.7, kapitalo išlaidos P.5 + NP + D.92 + D.99."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,institucinis_sektorius,string,,,,4,open,,Institucinis sektorius,
+,,,,,institucinis_sektorius_id,string,,,,4,open,,Institucinis sektorius identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,sandoris,string,,,,4,open,,Sandoris,
+,,,,,sandoris_id,string,,,,4,open,,Sandoris identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
