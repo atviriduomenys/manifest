@@ -1,5 +1,5 @@
 ﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/nsk_apgyvendinimo_istaigose,,,,,,,,,,,,Numerių skaičius apgyvendinimo įstaigose,
+,datasets/gov/lsd/statistika/nsk_apgyvendinimo_istaigose,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
