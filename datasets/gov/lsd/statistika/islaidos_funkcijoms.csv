@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/islaidos_funkcijoms,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R956_M3140806,,,vda_id,,,4,,,Sveikatos priežiūros finansavimo programų išlaidos funkcijoms,"Pateikta statistinė informacija apie sveikatos priežiūros išlaidas programų funkcijoms. Tyrimo statistinio stebėjimo vienetas institucinis vienetas, renkantis lėšas sveikatos priežiūros finansavimo programoms. Informacija kaupiama nuo 2007 metų ir apima visus šalies ekonominės teritorijos sveikatos priežiūros paslaugų ir prekių teikėjus. Tyrimo apibrėžtis - asmenų ir visuomenės grupių sveikatos priežiūros poreikiams patenkinti skirtos sveikatos priežiūros paslaugų ir (arba) prekių grupės (gydymas, reabilitacija, slauga ir pan.). 
+Tyrime naudojama sveikatos priežiūros funkcijų klasifikacija (ICHA-HC)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,sveikatos_prieziuros_finansavimo_programos,string,,,,4,open,,Sveikatos priežiūros finansavimo programos,
+,,,,,sveikatos_prieziuros_finansavimo_programos_id,string,,,,4,open,,Sveikatos priežiūros finansavimo programos identifikacinis numeris,
+,,,,,sveikatos_prieziuros_funkcijos,string,,,,4,open,,Sveikatos priežiūros funkcijos,
+,,,,,sveikatos_prieziuros_funkcijos_id,string,,,,4,open,,Sveikatos priežiūros funkcijos identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
