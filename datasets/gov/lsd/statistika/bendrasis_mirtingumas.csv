@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/bendrasis_mirtingumas,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R694_M3010601_2,,,vda_id,,,4,,,Bendrasis mirtingumo rodiklis,"Pateikta statistinė informacija apie mirusių Lietuvos Respublikos nuolatinių gyventojų skaičių pagal gyvenamąją vietovę, administracinę teritoriją, lytį ir laikotarpį. Tyrimas apima mirusius Lietuvos Respublikos nuolatinius gyventojus. Statistinio stebėjimo vienetas – miręs asmuo. Laiko aprėptis - nuo 1950 m.
+Tyrime naudojami klasifikatoriai:
+Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius)
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version)
+Teritorinių statistinių vienetų klasifikatorius (NUTS)(https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)"
+,,,,,vda_id,string,,,,4,open,,"Valstybės Duomenų Agentūros įrašo identifikatorius	",
+,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
+,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinės teritorijos  id,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio id,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų id,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
