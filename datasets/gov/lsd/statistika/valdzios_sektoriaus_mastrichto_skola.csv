@@ -15,4 +15,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,skolos_rodikliai_id,string,,,,4,open,,Skolos rodikliai identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
-
