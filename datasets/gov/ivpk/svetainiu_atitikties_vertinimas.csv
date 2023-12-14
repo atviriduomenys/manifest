@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuoroda,string,,,,1,open,,Nuoroda į svetainę,
 ,,,,,sritis,ref,Sritis,,,1,open,,Svetainės sritis,
 ,,,,Kategorija,,,,Pagrindinis,,,,,,
-,,,,,pavadinimas,,,,,1,open,,Kategorijos pavadinimas,
+,,,,,pavadinimas,string,,,,1,open,,Kategorijos pavadinimas,
 ,,,,,kategorija,ref,Kategorija,,,1,open,,,
 ,,,,Kriterijus,,,,Pagrindinis,,,,,,
 ,,,,,pavadinimas,string,,,,1,open,,Kriterijaus pavadinimas,
