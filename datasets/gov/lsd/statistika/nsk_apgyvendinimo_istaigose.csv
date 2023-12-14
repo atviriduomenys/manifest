@@ -1,0 +1,42 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/nsk_apgyvendinimo_istaigose,,,,,,,,,,,,Numeriø skaièius apgyvendinimo ástaigose,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R865_M4090203_5,,,vda_id,,,4,,,"Numeriø skaièius apgyvendinimo ástaigose (pagal apgyvendinimo tipà ir administracinæ teritorijà, ketvirtiniai)","Pateikta statistinë informacija apie numeriø skaièiø apgyvendinimo ástaigose pagal apgyvendinimo tipà, administracinæ teritorijà, laikotarpá (ketvirtá). Statistinio stebëjimo vienetas - apgyvendinimo ástaiga (vietos veiklos rûðies vienetas). Naudojami klasifikatoriai: 1) Ekonominës veiklos rûðiø klasifikatorius (EVRK 2 red.); 2) Lietuvos Respublikos administraciniø vienetø ir gyvenamøjø vietoviø klasifikatorius (LR AVGVK 2018); 3) Verslo liudijimø klasifikatorius. Tiriamàjà visumà (populiacijà) sudaro: 1) juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinës ekonominës veiklos rûðies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – vieðbuèiø ir panaðiø laikinø buveiniø veikla, 55.2 – poilsiautojø ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsiniø transporto priemoniø, priekabø aikðteliø ir stovyklavieèiø veikla (toliau – EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3); 2) fiziniai asmenys, dirbantys pagal verslo liudijimà (010, 043 kodai pagal „Verslo liudijimø klasifikatoriø“) ar (ir) individualios veiklos paþymà ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3) paslaugas turistams. Statistinë informacija rengiama ðalies, regionø, apskrièiø ir savivaldybiø lygmeniu. Laiko aprëptis - nuo 2012 m."
+,,,,,vda_id,string,,,,4,open,,Valstybës Duomenø Agentûros áraðo identifikatorius,
+,,,,,administracine_teritorija,string,,,,4,open,,Administracinë teritorija,
+,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinë teritorija identifikacinis numeris,
+,,,,,apgyvendinimo_tipas,string,,,,4,open,,Apgyvendinimo tipas,
+,,,,,apgyvendinimo_tipas_id,string,,,,4,open,,Apgyvendinimo tipas identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,skaitinë vertë,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,, S8R865_M4090305_3,,,vda_id,,,4,,,"Numeriø skaièius apgyvendinimo ástaigose (pagal apgyvendinimo tipà ir administracinæ teritorijà, metiniai)","Pateikta statistinë informacija apie numeriø skaièiø apgyvendinimo ástaigose pagal apgyvendinimo tipà, administracinæ teritorijà, laikotarpá (metus). Statistinio stebëjimo vienetas - apgyvendinimo ástaiga (vietos veiklos rûðies vienetas). Naudojami klasifikatoriai: 1) Ekonominës veiklos rûðiø klasifikatorius (EVRK 2 red.); 2) Lietuvos Respublikos administraciniø vienetø ir gyvenamøjø vietoviø klasifikatorius (LR AVGVK 2018); 3) Verslo liudijimø klasifikatorius. Tiriamàjà visumà (populiacijà) sudaro: 1) juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinës ekonominës veiklos rûðies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – vieðbuèiø ir panaðiø laikinø buveiniø veikla, 55.2 – poilsiautojø ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsiniø transporto priemoniø, priekabø aikðteliø ir stovyklavieèiø veikla (toliau – EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3); 2) fiziniai asmenys, dirbantys pagal verslo liudijimà (010, 043 kodai pagal „Verslo liudijimø klasifikatoriø“) ar (ir) individualios veiklos paþymà ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupës 55.1, 55.2, 55.3) paslaugas turistams. Statistinë informacija rengiama ðalies, regionø, apskrièiø ir savivaldybiø lygmeniu. Laiko aprëptis - nuo 2012 m."
+,,,,,vda_id,string,,,,4,open,,Valstybës Duomenø Agentûros áraðo identifikatorius,
+,,,,,administracine_teritorija,string,,,,4,open,,Administracinë teritorija,
+,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinë teritorija identifikacinis numeris,
+,,,,,apgyvendinimo_tipas,string,,,,4,open,,Apgyvendinimo tipas,
+,,,,,apgyvendinimo_tipas_id,string,,,,4,open,,Apgyvendinimo tipas identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,skaitinë vertë,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,S8R865_M4090308_6,,,vda_id,,,4,,,"Numeriø skaièius apgyvendinimo ástaigose (pagal vieðbuèio kategorijà, metiniai)","Pateikta statistinë informacija apie numeriø skaièiø apgyvendinimo ástaigose pagal vieðbuèio kategorijà, laikotarpá (metus). Statistinio stebëjimo vienetas - apgyvendinimo ástaiga (vietos veiklos rûðies vienetas). Tiriamàjà visumà (populiacijà) sudaro: juridiniai asmenys, teikiantys klasifikuojamàsias* apgyvendinimo paslaugas, nepriklausomai nuo pagrindinës ekonominës veiklos rûðies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – vieðbuèiø ir panaðiø laikinø buveiniø veikla, 55.3 – poilsiniø transporto priemoniø, priekabø aikðteliø ir stovyklavieèiø veikla (toliau – EVRK 2 red. I sekcija, grupës 55.1, 55.3). Statistinë informacija rengiama ðalies lygmeniu. Laiko aprëptis - nuo 2012 m.
+
+*Pagal Turizmo ástatymo 31 straipsná apgyvendinimo paslaugos skirstomos á: 
+1) klasifikuojamàsias apgyvendinimo paslaugas: motelio paslaugas, kempingo paslaugas, sveèiø namø paslaugas, vieðbuèio paslaugas; 2) neklasifikuojamàsias apgyvendinimo paslaugas: jaunimo nakvynës namø (angl. hostel) paslaugas, kaimo turizmo paslaugas, poilsio namø paslaugas, privataus apgyvendinimo paslaugas, sanatorijos apgyvendinimo paslaugas, turistinio laivo apgyvendinimo paslaugas, turistinës stovyklos paslaugas. Klasifikuojamàsias apgyvendinimo paslaugas gali teikti apgyvendinimo paslaugø teikëjas, turintis ðio ástatymo 33 straipsnyje nustatyta tvarka iðduotà galiojantá apgyvendinimo paslaugø klasifikavimo paþymëjimà. Minimalus klasifikuojamøjø apgyvendinimo paslaugø klasifikuojamo objekto (toliau – klasifikuojamas objektas) kambariø ar aikðteliø skaièius – ne maþiau kaip 5 kambariai ar aikðtelës. Klasifikuojamosios apgyvendinimo paslaugos klasifikuojamos pagal ekonomikos ir inovacijø ministro patvirtintus atitinkamø apgyvendinimo paslaugø klasifikavimo reikalavimus. Pagal teikiamø paslaugø kokybæ ir ávairovæ klasifikuojamøjø apgyvendinimo paslaugø kokybës lygis þenklinamas þvaigþdutëmis, kuriø didesnis skaièius reiðkia aukðtesná kokybës lygá. Aukðèiausias klasifikuojamøjø apgyvendinimo paslaugø kokybës lygis þymimas penkiomis þvaigþdutëmis. Vieðbuèio paslaugø kokybës lygis papildomai gali bûti þenklinamas pliuso þenklu."
+,,,,,vda_id,string,,,,4,open,,Valstybës Duomenø Agentûros áraðo identifikatorius,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,skaitinë vertë,
+,,,,,viesbucio_kategorija,string,,,,4,open,,Vieðbuèio kategorija,
+,,,,,viesbucio_kategorija_id,string,,,,4,open,,Vieðbuèio kategorija identifikacinis numeris,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
