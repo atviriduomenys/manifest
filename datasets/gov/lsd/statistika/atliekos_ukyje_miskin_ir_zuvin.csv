@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistikaatliekos_ukyje_miskin_ir_zuvin,,,,,,,,,,,,,
+,datasets/gov/lsd/statistikaatliekos_ukyje_miskin_ir_zuvin,,,,,,,,,,,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -22,6 +22,6 @@ Laiko aprėptis: nuo 2006m., kas du metus."
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
-,,,,,matavimo_vienetai_id,string,,,,4,open,,Metavimo vienetų kodas,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,verte,number,,,,4,open,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
