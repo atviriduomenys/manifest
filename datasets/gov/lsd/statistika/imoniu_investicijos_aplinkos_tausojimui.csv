@@ -1,0 +1,31 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/imoniu_investicijos_aplinkos_tausojimui,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R022_M8010502_2,,,,,,4,,,Įmonių investicijos aplinkos tausojimui,"Duomenų rinkinys apie įmonių išlaidas aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos ir investicijų krypties dimensijas.
+
+Naudojami klasifikatoriai: 
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
+Aplinkos apsaugos veiklos ir išlaidų klasifikatorius (CEPA 2000).
+
+Statistinio stebėjimo vienetas: įmonė
+
+Statistinė tiriamoji visuma: Tyrimo populiaciją sudaro visos per ataskaitinį laikotarpį veikusios akcinės ir uždaros akcinės bendrovės, valstybės ir savivaldybės įmonės, užsienio įmonių filialai, žemės ūkio ir kooperatinės bendrovės, turinčios 5 ir daugiau darbuotojų. Tyrimas apima kasybos ir karjerų eksploatavimo, apdirbamosios gamybos, elektros, dujų, garo tiekimo ir oro kondicionavimo, vandens tiekimo, nuotekų valymo, atliekų tvarkymo ir regeneravimo, statybos, transporto ir saugojimo veiklos rūšis pagal EVRK 2 red.
+
+Geografinė aprėptis: statistinė informacija rengiama šalies lygmeniu.
+
+Laiko aprėptis: nuo 2008m., metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,aplinkos_apsaugos_veikla_id,string,,,,4,open,,Aplinkos asaugos veiklos kodas,
+,,,,,aplinkos_apsaugos_veikla,string,,,,4,open,,Aplinkos apsaugos veikla,
+,,,,,ekonomines_veiklos_rusis_evrk_2_red_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
+,,,,,ekonomines_veiklos_rusis_evrk_2_red,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,investiciju_kryptis_id,string,,,,4,open,,Investicijų krypties kodas,
+,,,,,investiciju_kryptis,string,,,,4,open,,Investicijų kryptis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,laikotarpis,string,,,,4,open,,Laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,verte,number,,,,4,open,,"Įmonių investicijos aplinkos tausojimui, tūkst. EUR",
+,,,,,atnaujinta,string,,,,4,open,,Paskutinis atnaujinimas,
