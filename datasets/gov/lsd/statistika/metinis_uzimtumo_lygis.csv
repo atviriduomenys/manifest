@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/metinis_uzimtumo_lygis,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R537_M3030905_2,,,vda_id,,,4,,,Metinis: Užimtumo lygis (pagal tikslines amžiaus grupes ir lytį),"Pateikta statistinė informacija apie gyventojų užimtumą pagal amžiaus grupes, lytį ir gyvenamą vietovę. Informacija pateikiama kas ketvirtį nuo 1998 metų. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. 
+Tyrimo apibrėžtis - užimti gyventojai, asmenys, dirbantys bet kokį darbą, gaunantys už jį atlygį pinigais ar natūra arba turintys iš jo pajamų ar pelno. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amziaus_grupes,string,,,,4,open,,Amžius (5 m. amžiaus grupės),
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
