@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_vartojimas,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_vartojimas,,,,,,,,,,,,Aplinkos apsaugos paslaugų vartojimas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -23,8 +23,8 @@ Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2010m., metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,aplinkos_apsaugos_paslaugu_vartojimo_rusis,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšis,
-,,,,,aplinkos_apsaugos_paslaugu_vartojimo_rusis_id,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšies kodas,
+,,,,,aap_vartojimo_rusis,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšis,
+,,,,,aap_vartojimo_rusis_id,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšies kodas,
 ,,,,,aplinkosaugos_veiklos_rusis,string,,,,4,open,,Aplinkosaugos veiklos rūšis,
 ,,,,,aplinkosaugos_veiklos_rusis_id,string,,,,4,open,,Aplinkosaugos veiklos rūšies kodas,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
