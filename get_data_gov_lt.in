@@ -39,6 +39,7 @@ datasets/gov/rc/jar/iregistruoti.csv
 datasets/gov/rc/jar/kiti_atributai.csv
 datasets/gov/rc/jar/ne_juridiniai_asmenys.csv
 datasets/gov/rc/jar/valdymo_organai.csv
+datasets/gov/lsd/statistika/nsk_apgyvendinimo_istaigose.csv
 datasets/gov/rc/jar/iregistruoti_paramos_gavejai.csv
 datasets/gov/rc/jar/isregistruoti_paramos_gavejai.csv
 datasets/gov/rc/jar/iregistruotos_nvo.csv
@@ -465,4 +466,8 @@ datasets/gov/lsd/statistika/ismetamuju_tersalu_rodikliai.csv
 datasets/gov/lsd/statistika/svki_mok_tarifai.csv
 datasets/gov/lsd/statistika/bendrasis_mirtingumas.csv
 datasets/gov/lsd/statistika/islaidos_funkcijoms.csv
+datasets/gov/lsd/statistika/kudikiu_mirtingumas.csv
 datasets/gov/lsd/statistika/metinis_nedarbo_lygis.csv
+datasets/gov/lsd/statistika/suminis_gimstamumo_rodiklis.csv
+datasets/gov/lsd/statistika/valdzios_sektoriaus_mastrichto_skola.csv
+datasets/gov/sakiai/gaunami_dokumentai.csv
