@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/valdzios_sektoriaus_mastrichto_skola,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S7R267_M2040215,,,vda_id,,,4,,,Valdžios sektoriaus skola (Mastrichto skola) ,"Valdžios sektoriaus skola yra vienas iš Mastrichto sutarties konvergencijos kriterijų, skirtų ekonominės padėties valstybėse narėse stebėsenai. Valdžios sektoriaus skola apibrėžiama kaip šalies valdžios sektoriaus (S.13) bendra negrąžinta skola nominaliąja verte ataskaitinio laikotarpio pabaigoje, išskyrus tuos įsipareigojimus, kuriuos atitinkantis finansinis turtas priklauso šalies valdžios sektoriui (S.13). Valdžios sektoriaus skolą sudaro šių kategorijų įsipareigojimai: valiuta ir indėliai (AF.2); skolos vertybiniai popieriai (AF.3) ir paskolos (AF.4), kaip nustatyta ESS 2010. Ketvirtinė valdžios sektoriaus skola pateikiama pagal subsektorius: centrinės valdžios (S.1311), vietos valdžios (S.1313) ir socialinės apsaugos fondai (S.1314). (https://osp.stat.gov.lt/documents/10180/5118910/Vald%C5%BEios+sektoriaus+skola+%28Mastrichto+skola%29+%5BLT%5D+125440000.html)"
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,institucinis_sektorius,string,,,,4,open,,Institucinis sektorius,
+,,,,,institucinis_sektorius_id,string,,,,4,open,,Institucinis sektorius identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,skolos_rodikliai,string,,,,4,open,,Skolos rodikliai,
+,,,,,skolos_rodikliai_id,string,,,,4,open,,Skolos rodikliai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
