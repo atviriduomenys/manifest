@@ -42,5 +42,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,viesbucio_kategorija,string,,,,4,open,,Viešbučio kategorija,
 ,,,,,viesbucio_kategorija_id,string,,,,4,open,,Viešbučio kategorija identifikacinis numeris,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
