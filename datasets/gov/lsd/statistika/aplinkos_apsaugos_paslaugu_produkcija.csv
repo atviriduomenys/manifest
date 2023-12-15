@@ -1,9 +1,9 @@
-id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
-;datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_produkcija;;;;;;;;;;;;;
-;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
-;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
-;;;;;;;;;;;;;;
-;;;;S1R115_M8010804;;;;;;4;;;Aplinkos apsaugos paslaugų produkcija;"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir aplinkos apsaugos paslaugų produkcijos rūšies dimensijas.
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_produkcija,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R115_M8010804,,,,,,4,,,Aplinkos apsaugos paslaugų produkcija,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir aplinkos apsaugos paslaugų produkcijos rūšies dimensijas.
 
 Naudojami klasifikatoriai: Aplinkos apsaugos veiklos ir išlaidų klasifikatorius  (CEPA 2000).
 
@@ -22,14 +22,14 @@ Tiriami šalies ūkio subjektai, vykdantys kasybos ir karjerų eksploatavimo (se
 Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2010m., metinis."
-;;;;;vda_id;string;;;;4;open;;Valstybės Duomenų Agentūros įrašo identifikatorius;
-;;;;;aplinkos_apsaugos_paslaugu_produkcijos_rusis;string;;;;4;open;;Aplinkos apsaugos paslaugų produkcijos rūšis;
-;;;;;aplinkos_apsaugos_paslaugu_produkcijos_rusis_id;string;;;;4;open;;Aplinkos apsaugos paslaugų produkcijos rūšies kodas;
-;;;;;aplinkosaugos_veiklos_rusis;string;;;;4;open;;Aplinkosaugos veiklos rūšis;
-;;;;;aplinkosaugos_veiklos_rusis_id;string;;;;4;open;;Aplinkosaugos veiklos rūšies kodas;
-;;;;;laikotarpis;date;;;;4;open;;Laikotarpis;
-;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpio kodas;
-;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
-;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetų kodas;
-;;;;;verte;number;;;;4;open;;Aplinkos apsaugos paslaugų produkcija, mln. EUR;
-;;;;;atnaujinta;date;;;;4;open;;Paskutinis atnaujinimas;
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,aplinkos_apsaugos_paslaugu_produkcijos_rusis,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšis,
+,,,,,aplinkos_apsaugos_paslaugu_produkcijos_rusis_id,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšies kodas,
+,,,,,aplinkosaugos_veiklos_rusis,string,,,,4,open,,Aplinkosaugos veiklos rūšis,
+,,,,,aplinkosaugos_veiklos_rusis_id,string,,,,4,open,,Aplinkosaugos veiklos rūšies kodas,
+,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,verte,number,,,,4,open,,"Aplinkos apsaugos paslaugų produkcija, mln. EUR",
+,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
