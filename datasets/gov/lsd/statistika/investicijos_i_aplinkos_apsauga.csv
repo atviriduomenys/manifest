@@ -27,7 +27,7 @@ Laiko aprėptis: nuo 2010m., metinis."
 ,,,,,aplinkosaugos_veiklos_rusis_id,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšies kodas,
 ,,,,,investiciju_i_aplinkos_apsauga_rusis,string,,,,4,open,,Aplinkosaugos veiklos rūšis,
 ,,,,,investiciju_i_aplinkos_apsauga_rusis_id,string,,,,4,open,,Aplinkosaugos veiklos rūšies kodas,
-,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
