@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/atlieku_susidarymas_ir_tvarkymas,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/atlieku_susidarymas_ir_tvarkymas,,,,,,,,,,,,Atliekų susidarymas ir tvarkymas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -28,5 +28,5 @@ Laiko aprėptis: nuo 2016m., metinis."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
-,,,,,verte,number,,,,4,open,,"Atliekų susidarymas ir tvarkymas, tonos",
+,,,,,verte,number,t,,,4,open,,"Atliekų susidarymas ir tvarkymas, tonos",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
