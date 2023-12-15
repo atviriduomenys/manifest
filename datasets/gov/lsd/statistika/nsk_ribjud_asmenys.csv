@@ -13,7 +13,3 @@
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,verte,integer,,,,4,open,,skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
