@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/investicijos_i_aplinkos_apsauga,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/investicijos_i_aplinkos_apsauga,,,,,,,,,,,,Investicijos į aplinkos apsaugą,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
