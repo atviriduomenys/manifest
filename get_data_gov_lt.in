@@ -496,6 +496,7 @@ datasets/gov/lsd/statistika/bpk_rinkos_kaina.csv
 datasets/gov/lsd/statistika//bpk_palyginamosiomis_tr.csv
 datasets/gov/lsd/statistika/imoniu_islaidos_aplinkos_tausojimui.csv
 datasets/gov/lsd/statistika/uzimtumas_ess2010.csv
+datasets/gov/lsd/statistika/pagaminta_gaminiu.csv
 datasets/gov/lsd/statistika/atlieku_susidarymas_ir_tvarkymas.csv
 datasets/gov/lsd/statistika/apgyv_ist_pajamos_be_pvm.csv
 datasets/gov/ivpk/registrai.csv
