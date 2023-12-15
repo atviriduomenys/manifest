@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/imoniu_einamosios_islaidos_aplinkos_tausojimui,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/imoniu_einamosios_islaidos_aplinkos_tausojimui,,,,,,,,,,,,Įmonių einamosios išlaidos aplinkai tausoti,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -24,8 +24,8 @@ Laiko aprėptis: nuo 2008m., metinis."
 ,,,,,islaidu_rusis_id,string,,,,4,open,,Išlaidų rūšies kodas,
 ,,,,,islaidu_rusis,string,,,,4,open,,Išlaidų rūšis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
-,,,,,laikotarpis,string,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,verte,number,,,,4,open,,Įmonių einamosios išlaidos aplinkos tausojimui, tūkst. EUR
-,,,,,atnaujinta,string,,,,4,open,,Paskutinis atnaujinimas,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
