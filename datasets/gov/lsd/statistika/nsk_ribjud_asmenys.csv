@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/nsk_ribjud_asmenys,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/nsk_ribjud_asmenys,,,,,,,,,,,,,Numerių, kuriais gali naudotis riboto judumo asmenys, skaičius,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
