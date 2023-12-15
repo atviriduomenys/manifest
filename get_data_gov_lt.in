@@ -481,6 +481,7 @@ datasets/gov/lsd/statistika/medianinis_gyvent_amzius.csv
 datasets/gov/sakiai/gaunami_dokumentai.csv
 datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_produkcija.csv
 datasets/gov/lsd/statistika/bvp_vienam_gyventojui.csv
+datasets/gov/lsd/statistika/aplinkos_apsaugos_paslaugu_vartojimas.csv
 datasets/gov/lsd/statistika/imoniu_investicijos_aplinkos_tausojimui.csv
 datasets/gov/lsd/statistika/vsk_apgyvendinimo_istaigose.csv
 datasets/gov/lsd/statistika/investicijos_i_aplinkos_apsauga.csv
