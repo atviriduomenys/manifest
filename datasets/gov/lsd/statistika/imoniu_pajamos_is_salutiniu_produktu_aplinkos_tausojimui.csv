@@ -1,0 +1,29 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/imoniu_pajamos_is_salutiniu_produktu_aplinkos_tausojimui,,,,,,,,,,,,Įmonių pajamos iš šalutinių produktų aplinkos tausojimui,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R024_M8010502_3,,,,,,4,,,Įmonių pajamos iš šalutinių produktų aplinkos tausojimui,"Duomenų rinkinys apie įmonių išlaidas aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos  dimensijas.
+
+Naudojami klasifikatoriai: 
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
+Aplinkos apsaugos veiklos ir išlaidų klasifikatorius (CEPA 2000).
+
+Statistinio stebėjimo vienetas: įmonė
+
+Statistinė tiriamoji visuma: Tyrimo populiaciją sudaro visos per ataskaitinį laikotarpį veikusios akcinės ir uždaros akcinės bendrovės, valstybės ir savivaldybės įmonės, užsienio įmonių filialai, žemės ūkio ir kooperatinės bendrovės, turinčios 5 ir daugiau darbuotojų. Tyrimas apima kasybos ir karjerų eksploatavimo, apdirbamosios gamybos, elektros, dujų, garo tiekimo ir oro kondicionavimo, vandens tiekimo, nuotekų valymo, atliekų tvarkymo ir regeneravimo, statybos, transporto ir saugojimo veiklos rūšis pagal EVRK 2 red.
+
+Geografinė aprėptis: statistinė informacija rengiama šalies lygmeniu.
+
+Laiko aprėptis: nuo 2008m., metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,aplinkos_apsaugos_veikla_id,string,,,,4,open,,Aplinkos apsaugos veiklos kodas,
+,,,,,aplinkos_apsaugos_veikla,string,,,,4,open,,Aplinkos apsaugos veikla,
+,,,,,evrk_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
+,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,verte,number,,,,4,open,,"Įmonių einamosios išlaidos aplinkos tausojimui, tūkst. EUR",
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
