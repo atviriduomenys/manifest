@@ -15,6 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
 ,,,, S8R865_M4090305_3,,,vda_id,,,4,,,"Numerių skaičius apgyvendinimo įstaigose (pagal apgyvendinimo tipą ir administracinę teritoriją, metiniai)","Pateikta statistinė informacija apie numerių skaičių apgyvendinimo įstaigose pagal apgyvendinimo tipą, administracinę teritoriją, laikotarpį (metus). Statistinio stebėjimo vienetas - apgyvendinimo įstaiga (vietos veiklos rūšies vienetas). Naudojami klasifikatoriai: 1) Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.); 2) Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018); 3) Verslo liudijimų klasifikatorius. Tiriamąją visumą (populiaciją) sudaro: 1) juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinės ekonominės veiklos rūšies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – viešbučių ir panašių laikinų buveinių veikla, 55.2 – poilsiautojų ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsinių transporto priemonių, priekabų aikštelių ir stovyklaviečių veikla (toliau – EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3); 2) fiziniai asmenys, dirbantys pagal verslo liudijimą (010, 043 kodai pagal „Verslo liudijimų klasifikatorių“) ar (ir) individualios veiklos pažymą ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3) paslaugas turistams. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis - nuo 2012 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
@@ -27,6 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
 ,,,,S8R865_M4090308_6,,,vda_id,,,4,,,"Numerių skaičius apgyvendinimo įstaigose (pagal viešbučio kategoriją, metiniai)","Pateikta statistinė informacija apie numerių skaičių apgyvendinimo įstaigose pagal viešbučio kategoriją, laikotarpį (metus). Statistinio stebėjimo vienetas - apgyvendinimo įstaiga (vietos veiklos rūšies vienetas). Tiriamąją visumą (populiaciją) sudaro: juridiniai asmenys, teikiantys klasifikuojamąsias* apgyvendinimo paslaugas, nepriklausomai nuo pagrindinės ekonominės veiklos rūšies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – viešbučių ir panašių laikinų buveinių veikla, 55.3 – poilsinių transporto priemonių, priekabų aikštelių ir stovyklaviečių veikla (toliau – EVRK 2 red. I sekcija, grupės 55.1, 55.3). Statistinė informacija rengiama šalies lygmeniu. Laiko aprėptis - nuo 2012 m.
 
 *Pagal Turizmo įstatymo 31 straipsnį apgyvendinimo paslaugos skirstomos į: 
