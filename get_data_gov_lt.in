@@ -469,3 +469,5 @@ datasets/gov/lsd/statistika/metinis_nedarbo_lygis.csv
 datasets/gov/lsd/statistika/suminis_gimstamumo_rodiklis.csv
 datasets/gov/lsd/statistika/valdzios_sektoriaus_mastrichto_skola.csv
 datasets/gov/lsd/statistika/medianinis_gyvent_amzius.csv
+datasets/gov/sakiai/gaunami_dokumentai.csv
+datasets/gov/lsd/statistika/bvp_vienam_gyventojui.csv
