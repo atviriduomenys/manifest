@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/imoniu_pajamos_is_salutiniu_produktu_aplinkos_tausojimui,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/imoniu_pajamos_is_salutiniu_produktu_aplinkos_tausojimui,,,,,,,,,,,,Įmonių pajamos iš šalutinių produktų aplinkos tausojimui,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -17,10 +17,10 @@ Geografinė aprėptis: statistinė informacija rengiama šalies lygmeniu.
 
 Laiko aprėptis: nuo 2008m., metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,aplinkos_apsaugos_veikla_id,string,,,,4,open,,Aplinkos asaugos veiklos kodas,
+,,,,,aplinkos_apsaugos_veikla_id,string,,,,4,open,,Aplinkos apsaugos veiklos kodas,
 ,,,,,aplinkos_apsaugos_veikla,string,,,,4,open,,Aplinkos apsaugos veikla,
-,,,,,ekonomines_veiklos_rusis_evrk_2_red_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
-,,,,,ekonomines_veiklos_rusis_evrk_2_red,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,evrk_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
+,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
