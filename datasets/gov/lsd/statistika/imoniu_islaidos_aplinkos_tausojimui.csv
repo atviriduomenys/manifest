@@ -27,5 +27,5 @@ Laiko aprėptis: nuo 2008m., metinis."
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
-,,,,,verte,number,,,,4,open,,Įmonių einamosios išlaidos aplinkos tausojimui, tūkst. EUR
+,,,,,verte,number,,,,4,open,,"Įmonių einamosios išlaidos aplinkos tausojimui, tūkst. EUR"
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
