@@ -473,6 +473,7 @@ datasets/gov/lsd/statistika/metinis_nedarbo_lygis.csv
 datasets/gov/lsd/statistika/bendros_islaidos.csv
 datasets/gov/lsd/statistika/islaidos_tiekejams.csv
 datasets/gov/lsd/statistika/suminis_gimstamumo_rodiklis.csv
+datasets/gov/lsd/statistika/bendrasis_gimstamumo_rodiklis.csv
 datasets/gov/lsd/statistika/bvp_rinkos_kaina.csv
 datasets/gov/lsd/statistika/valdzios_sektoriaus_mastrichto_skola.csv
 datasets/gov/lsd/statistika/valdzios_pajamos_islaidos.csv
