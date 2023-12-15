@@ -492,9 +492,7 @@ datasets/gov/lsd/statistika/investicijos_i_aplinkos_apsauga.csv
 datasets/gov/lsd/statistika/pervesta_aplinkos.csv
 datasets/gov/lsd/statistika/nsk_ribjud_asmenys.csv
 datasets/gov/lsd/statistika/bpk_rinkos_tr.csv
-datasets/gov/lsd/statistika/bpv_palyginamosiomis.csv
 datasets/gov/lsd/statistika/bpk_rinkos_kaina.csv
-datasets/gov/lsd/statistika/bpv_rinkos_kaina.csv
 datasets/gov/lsd/statistika//bpk_palyginamosiomis_tr.csv
 datasets/gov/lsd/statistika/imoniu_islaidos_aplinkos_tausojimui.csv
 datasets/gov/lsd/statistika/uzimtumas_ess2010.csv
