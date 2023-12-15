@@ -1,0 +1,32 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/atlieku_susidarymas_ir_tvarkymas,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R117_M9070332,,,,,,4,,,Atliekų susidarymas ir tvarkymas,"Duomenų rinkinys apie kiek per ataskaitinius metus Lietuvoje susidarė ir buvo surinkta atliekų bei kiek ir kokiomis atliekų tvarkymo veiklomis atliekos buvo sutvarkytos Lietuvoje ar išvežtos (eksportuotos) tvarkyti į kitas valstybes. Pateikta per atliekų rūšies ir atliekų tvarkymo būdų dimensijas. 
+
+Naudojami klasifikatoriai: 
+Atliekų kodų sąrašas – oficialiai skelbiamas Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999-07-14 įsakymu Nr. 217 „Dėl Atliekų tvarkymo taisyklių patvirtinimo“ (toliau – Atliekų tvarkymo taisyklės), 1 priede;
+
+Atliekų statistinis klasifikatorius – oficialiai skelbiamas Europos Parlamento ir Tarybos Reglamento (EB) Nr. 2150/2002 dėl atliekų statistikos III priede;
+
+Atliekų tvarkymo veiklų sąrašas – oficialiai skelbiamas Atliekų tvarkymo taisyklių 2 priede.
+
+Statistinio stebėjimo vienetas: ūkio subjektas, vykdantis atliekų susidarymo ir (ar) tvarkymo apskaitą.
+
+Statistinė tiriamoji visuma: Lietuvos Respublikos teritorijoje veiklą vykdantys ūkio subjektai (atliekų darytojai ir atliekų tvarkytojai), kurie teisės aktų nustatyta tvarka privalo vykdyti atliekų susidarymo ir (ar) tvarkymo apskaitą.
+
+Geografinė aprėptis: visa šalies teritorija
+
+Laiko aprėptis: nuo 2016m., metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,atliekos,string,,,,4,open,,Atliekos,
+,,,,,atliekos_id,string,,,,4,open,,Atliekų kodas,
+,,,,,atlieku_tvarkymo_budai,string,,,,4,open,,Atliekų tvarkymo būdai,
+,,,,,atlieku_tvarkymo_budai_id,string,,,,4,open,,Atliekų tvarkymo būdų kodas,
+,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,verte,number,,,,4,open,,"Atliekų susidarymas ir tvarkymas, tonos",
+,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
