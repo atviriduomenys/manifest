@@ -31,5 +31,5 @@ Laiko aprėptis: nuo 2010m., metinis."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
-,,,,,verte,double,,,,4,open,,"Investicijos į aplinkos apsaugą, mln. EUR",
+,,,,,verte,number,,,,4,open,,"Investicijos į aplinkos apsaugą, mln. EUR",
 ,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
