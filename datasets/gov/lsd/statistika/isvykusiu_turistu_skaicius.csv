@@ -17,12 +17,12 @@ Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2005m., ketvirtiniai ir metiniai."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
-,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R709_M4091101_1,,,,,,4,,,"Išvykusių turistų skaičius (ketvirtiniai, metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
 
@@ -38,9 +38,9 @@ Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2005m., ketvirtiniai ir metiniai."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
-,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
