@@ -480,5 +480,6 @@ datasets/gov/lsd/statistika/medianinis_gyvent_amzius.csv
 datasets/gov/sakiai/gaunami_dokumentai.csv
 datasets/gov/lsd/statistika/vsk_apgyvendinimo_istaigose.csv
 datasets/gov/lsd/statistika/bvp_vienam_gyventojui.csv
+datasets/gov/lsd/statistika/bpk_rinkos_kaina.csv
 datasets/gov/lsd/statistika/bpv_rinkos_kaina.csv
 datasets/gov/lsd/statistika/bpv_palyginamosiomis.csv
