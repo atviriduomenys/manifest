@@ -32,4 +32,4 @@ Laiko aprėptis: nuo 2010m., metinis."
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,verte,number,,,,4,open,,"Investicijos į aplinkos apsaugą, mln. EUR",
-,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
