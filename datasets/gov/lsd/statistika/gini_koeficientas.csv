@@ -3,11 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0283_M3080313,,,vda_id,,,4,,,Ekvivalentinių disponuojamųjų pajamų Gini koeficientas,"Pateikta statistinė informacija apie Lietuvos Respublikos negyvų gimusių kūdikių skaičių pagal gyvenamąją vietovę, lytį, laikotarpį ir išnešiojimo amžių. Tyrimas apima Lietuvos Respublikoje negyvus gimusius kūdikius, kurių motinos yra nuolatinės Lietuvos Respublikos gyventojos. Statistinio stebėjimo vienetas - negyvas gimęs kūdikis. Laiko aprėptis – nuo 2000 m.
-Tyrime naudojami klasifikatoriai:
-Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius)
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version)
-Teritorinių statistinių vienetų klasifikatorius (NUTS)(https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)"
+,,,,S3R0283_M3080313,,,vda_id,,,4,,,Ekvivalentinių disponuojamųjų pajamų Gini koeficientas,"Pateikta statistinė informacija apie namų ūkių disponuojamų pajamų Gini koeficientus.
+Tyrimo apibrėžtis tai disponuojamosios namų ūkio pajamos – bendrosios namų ūkio pajamos atskaičius pajamų mokestį, nuolatinius turto mokesčius, darbuotojų, savarankiškai dirbančių asmenų ir bedarbių (jei taikoma) privalomojo socialinio draudimo įmokas ir reguliarius pervedimus kitiems namų ūkiams. Statistinio stebėjimo vienetas - privatus namų ūkis. Laiko aprėptis – nuo 2008 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio id,
