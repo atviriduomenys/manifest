@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/bendros_islaidos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R955_M3140805,,,vda_id,,,4,,,Išlaidos sveikatos priežiūros funkcijoms ir teikėjams,"Pateikta statistinė informacija apie sveikatos priežiūros išlaidas funkcijoms ir teikėjams. Tyrimo statistinio stebėjimo vienetas tai įmonė, teikianti galutinio vartojimo sveikatos priežiūros prekes ir (arba) paslaugas. Informacija kaupiama nuo 2007 metų ir apima visus šalies ekonominės teritorijos sveikatos priežiūros paslaugų ir prekių teikėjus. Geografinė aprėptis - visa ekonominė šalies teritorija.
+Tyrime naudojama sveikatos priežiūros funkcijų ICHA-HC ir sveikatos priežiūros paslaugų teikėjų klasifikacijos ICHA-HP."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio id,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų id,
+,,,,,funkcijos,string,,,,4,open,,Sveikatos priežiūros funkcijos,
+,,,,,funkcijos_id,string,,,,4,open,,Sveikatos priežiūros funkcijų id,
+,,,,,teikejai,string,,,,4,open,,Sveikatos priežiūros teikėjai,
+,,,,,teikejai_id,string,,,,4,open,,Sveikatos priežiūros teikėjų id,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,

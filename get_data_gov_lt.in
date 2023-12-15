@@ -470,6 +470,7 @@ datasets/gov/lsd/statistika/gini_koeficientas.csv
 datasets/gov/lsd/statistika/metinis_uzimtumo_lygis.csv
 datasets/gov/lsd/statistika/kudikiu_mirtingumas.csv
 datasets/gov/lsd/statistika/metinis_nedarbo_lygis.csv
+datasets/gov/lsd/statistika/bendros_islaidos.csv
 datasets/gov/lsd/statistika/islaidos_tiekejams.csv
 datasets/gov/lsd/statistika/suminis_gimstamumo_rodiklis.csv
 datasets/gov/lsd/statistika/bvp_rinkos_kaina.csv
