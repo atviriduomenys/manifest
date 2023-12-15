@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/bpk_rinkos_tr,,,,,,,,,,,,"Bendrojo pagrindinio kapitalo formavimas pagal turto ir ekonominės veiklos rūšis (EVRK 2 red., 21), to meto kainomis  (metinis)",
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S7R255_M2110267,,,vda_id,,,4,,,"Bendrojo pagrindinio kapitalo formavimas pagal turto ir ekonominės veiklos rūšis (EVRK 2 red., 21), to meto kainomis  (metinis)","Pateikiama statistinė informacija - bendrojo pagrindinio kapitalo formavimas, to meto kainomis, pagal turto rūšį, ekonominės veiklos rūšį (metinis). Bendrojo pagrindinio kapitalo formavimas apima per tam tikrą laikotarpį gamintojų rezidentų įsigytą ilgalaikį turtą, atėmus pardavimus / perleidimus ir pridėjus tam tikrus nesukurto turto vertės padidėjimus dėl gamintojo arba institucinių vienetų gamybinės veiklos. Ilgalaikis turtas yra sukurtas turtas, daugiau nei vienus metus naudojamas gamybai. Naudojamas Ekonominės veiklos rūšių klasifikatorius (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=version). Statistinę (tiriamąją) visumą sudaro visi statistiniai stebėjimo vienetai rezidentai. Geografinė aprėptis - šalies ekonominė teritorija.  Laiko aprėptis nuo 1995 m."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,ekonomines_veiklos_rusis,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 21)",
+,,,,,ekonomines_veiklos_rusis_id,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 21) identifikacinis numeris",
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,turto_rusis,string,,,,4,open,,Turto rūšis,
+,,,,,turto_rusis_id,string,,,,4,open,,Turto rūšis identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Rodiklio vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinio duomenų atnaujinimo data,
