@@ -1,0 +1,29 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/isvykusiu_turistu_skaicius_keliones_tiksla_ir_lyti,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R709_M4091002,,,,,,4,,,Išvykusių turistų skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per lyties ir kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio..
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., ketvirtiniai ir metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslo kodas,
+,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,lytis_id,string,,,,4,open,,Lyties kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
+,,,,,atnaujinta,date,,,,4,open,,Paskutinis atnaujinimas,
