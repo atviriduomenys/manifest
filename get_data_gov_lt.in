@@ -500,4 +500,5 @@ datasets/gov/lsd/statistika/parduota_gaminiu.csv
 datasets/gov/lsd/statistika/pagaminta_gaminiu.csv
 datasets/gov/lsd/statistika/atlieku_susidarymas_ir_tvarkymas.csv
 datasets/gov/lsd/statistika/apgyv_ist_pajamos_be_pvm.csv
+datasets/gov/lsd/statistika/apgyv_ist.csv
 datasets/gov/ivpk/registrai.csv
