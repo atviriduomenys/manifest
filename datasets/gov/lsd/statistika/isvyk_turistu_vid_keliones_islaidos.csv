@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/isvykusiu_turistu_vidutines_vienos_keliones_islaidos,,,,,,,,,,,,,
+,datasets/gov/lsd/statistika/isvyk_turistu_vid_keliones_islaidos,,,,,,,,,,,,Išvykusių turistų vidutinės vienos kelionės išlaidos,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R711_M4091001_2,,,,,,4,,,"Išvykusių turistų vidutinės vienos kelionės išlaidos (ketvirtiniai, metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas.
+,,,,S8R711_M4091001_2,,,,,,4,,,"Išvykusių turistų vidutinės vienos kelionės išlaidos (ketvirtiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas.
 
 Naudojami klasifikatoriai: 
 
@@ -24,7 +24,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų vidutinės vienos kelionės išlaidos, EUR",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R711_M4091101_2,,,,,,4,,,"Išvykusių turistų vidutinės vienos kelionės išlaidos (ketvirtiniai, metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas.
+,,,,S8R711_M4091101_2,,,,,,4,,,"Išvykusių turistų vidutinės vienos kelionės išlaidos (metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas.
 
 Naudojami klasifikatoriai: 
 
