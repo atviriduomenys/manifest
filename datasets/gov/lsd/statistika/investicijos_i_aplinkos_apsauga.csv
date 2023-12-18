@@ -1,0 +1,35 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/investicijos_i_aplinkos_apsauga,,,,,,,,,,,,Investicijos į aplinkos apsaugą,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R135_M8010808,,,,,,4,,,Investicijos į aplinkos apsaugą,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir investicijų į aplinkos apsaugą rūšies dimensijas.
+
+Naudojami klasifikatoriai: Aplinkos apsaugos veiklos ir išlaidų klasifikatorius  (CEPA 2000).
+
+Statistinio stebėjimo vienetas: ūkio subjektai, įskaitant namų ūkius.
+
+Statistinė tiriamoji visuma: namų ūkiai, nefinansinės bendrovės, valdžios sektorius, likusio pasaulio sektorius: 
+
+– valdžios sektorius ir nefinansinės bendrovės kaip aplinkos apsaugos paslaugas teikiantys instituciniai sektoriai;
+
+– namų ūkiai, valdžios sektorius ir nefinansinės bendrovės kaip aplinkos apsaugos paslaugų vartotojai;
+
+– likusio pasaulio sektorius kaip aplinkos apsaugai skirtų pervedimų gavėjas arba mokėtojas.
+
+Tiriami šalies ūkio subjektai, vykdantys kasybos ir karjerų eksploatavimo (sekcija B), apdirbamosios gamybos (sekcija C), elektros, dujų, garo tiekimo ir oro kondicionavimo (sekcija D), vandens tiekimo, nuotekų valymo, atliekų tvarkymo ir regeneravimo (sekcija E), statybos (sekcija F), transporto ir saugojimo (sekcija H) veiklos rūšis pagal EVRK 2 red. Kitų ekonominės veiklos rūšių (išskyrus valdžios sektorių) pagal EVRK 2 red. aplinkos apsaugos išlaidos nėra vertinamos.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2010m., metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,aplinkosaugos_veiklos_rusis,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšis,
+,,,,,aplinkosaugos_veiklos_rusis_id,string,,,,4,open,,Aplinkos apsaugos paslaugų produkcijos rūšies kodas,
+,,,,,investiciju_i_aplinkos_apsauga_rusis,string,,,,4,open,,Aplinkosaugos veiklos rūšis,
+,,,,,investiciju_i_aplinkos_apsauga_rusis_id,string,,,,4,open,,Aplinkosaugos veiklos rūšies kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,verte,number,,,,4,open,,"Investicijos į aplinkos apsaugą, mln. EUR",
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
