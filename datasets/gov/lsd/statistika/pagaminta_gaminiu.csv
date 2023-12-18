@@ -1,0 +1,33 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/pagaminta_gaminiu,,,,,,,,,,,,Pagaminta gaminių natūriniais vienetais,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R330_M4050405_2,,,,,,4,,,Pagaminta gaminių natūriniais vienetais,"Duomenų rinkinys apie pramoninių gaminių gamybą ir pardavimą natūrine ir vertine išraiška. Pateikta per apskrities, dalies, gaminių rūšies dimensijas. 
+
+Naudojami klasifikatoriai: 
+
+Produktų, gaminių ir paslaugų klasifikatoriaus (PGPK 2022 II dalis (PRODCOM)) versijos patvirtinimas (2022 m. sausio 26 d. Nr. DĮ - 32);
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Statistinio stebėjimo vienetas: įmonė.
+
+Statistinė tiriamoji visuma: visos veikiančios įmonės, kurių pagrindinė ekonominė veikla yra pramoninė veikla (EVRK 2 red. B ir C sekcijos, E sekcijos 38 skyrius) ir nepramoninės įmonės, vykdančios pramoninę veiklą.
+
+Geografinė aprėptis: Statistinė informacija rengiama šalies, Sostinės regiono ir Vidurio ir vakarų Lietuvos regiono, apskričių lygmeniu.
+
+Laiko aprėptis: nuo 2005m., metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,apskritys,string,,,,4,open,,Apskritys,
+,,,,,apskritys_id,string,,,,4,open,,Apskritys,
+,,,,,dalis,string,,,,4,open,,Dalis,
+,,,,,dalis_id,string,,,,4,open,,Dalis,
+,,,,,gaminiu_sarasas,string,,,,4,open,,Gaminių sąrašas,
+,,,,,gaminiu_sarasas_id,string,,,,4,open,,Gaminių sąrašas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Pagaminta gaminių natūriniais vienetais,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
