@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,viesbucio_kategorija_id,string,,,,4,open,,Viešbučio kategorija identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
-,,,,S8R864_M4090106_3,,,vda_id,,,4,,,Nakvynių skaičius apgyvendinimo įstaigose (pagal apgyvendinimo tipą, šalį ir geografinę vietovę ir administracinę teritoriją, menesiniai),Duomenų rinkinys apie apgyvendinimo paslaugų tiekėjų skaičių pagal apgyvendinimo tipus, numerių ir vietų skaičių, jų užimtumą, apgyvendintų turistų ir jų nakvynių skaičių pagal atvykusių turistų gyvenamąją šalį. Pateikta pagal apgyvendinimo tipą, šalį ir geografinę vietovę ir administracinę teritoriją dimensiją.
+,,,,S8R864_M4090106_3,,,vda_id,,,4,,,Nakvynių skaičius apgyvendinimo įstaigose (pagal apgyvendinimo tipą, šalį ir geografinę vietovę ir administracinę teritoriją, menesiniai),Duomenų rinkinys apie apgyvendinimo paslaugų tiekėjų skaičių pagal apgyvendinimo tipus, numerių ir vietų skaičių, jų užimtumą, apgyvendintų turistų ir jų nakvynių skaičių pagal atvykusių turistų gyvenamąją šalį. Pateikta pagal apgyvendinimo tipo, šalį ir geografinę vietovę ir administracinę teritoriją dimensiją.
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
