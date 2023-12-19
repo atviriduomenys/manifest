@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S8R293_M4090701,,,vda_id,,,4,,,"Išvykusių Lietuvos gyventojų ir atvykusių užsieniečių kelionių skaičius (pagal turistų tipą)","Duomenų rinkinys apie lietuvos nuolatinių gyventojų (toliau – gyventojai) keliaujančių į užsienį skaičių jų kelionių nakvynių skaičių ir tikslus naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės dimensiją."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis, 
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
