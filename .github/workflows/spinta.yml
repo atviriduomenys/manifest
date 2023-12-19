@@ -26,9 +26,9 @@ jobs:
         pip install spinta
     - name: Check manifest files
       run: |
-        find datasets -iname "*.csv" | xargs spinta check
+        find datasets -iname "*.csv" | xargs spinta check --check-names
     - name: Check get_data_gov_lt.in file
       run: |
         cat get_data_gov_lt.in | xargs spinta copy -o manifest.csv
-        spinta check manifest.csv
+        spinta check --check-names manifest.csv
         rm manifest.csv
