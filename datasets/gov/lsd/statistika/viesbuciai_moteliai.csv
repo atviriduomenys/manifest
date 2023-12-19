@@ -1,0 +1,146 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/viesbuciai_moteliai,,,,,,,,,,,,Turistų skaičius apgyvendinimo įstaigose,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R866_M4090306_1,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, metiniai)","Pateikiami metiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal administracinę teritoriją ir apgyvendinimo tipus.
+Naudojami klasifikatoriai
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
+Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
+
+Apibrėžtis (-ys)	
+Apgyvendinimo įstaiga – vietos veiklos rūšies vienetas, teikiantis mokamas trumpalaikio apgyvendinimo paslaugas turistui.
+
+Turistas – fizinis asmuo, keliaujantis į vietovę, esančią už jo įprastinės aplinkos ribų, apsistojantis joje bent vienai nakvynei, 
+bet ne ilgiau kaip 12 mėn., ir neturintis tikslo joje mokytis ar dirbti apmokamo darbo.
+
+Nakvynė – kiekviena naktis, kurią turistas faktiškai praleidžia (miega ar būna) ar būna įregistruotas 
+(jo fizinis buvimas nebūtinas) apgyvendinimo įstaigoje.
+
+Numeris (kambarys) – apgyvendinimui skirtame pastate specialiai įrengta patalpa ar patalpų grupė,  apgyvendinimo paslaugų teikėjo siūloma asmenims nuomotis kaip nedaloma visuma.
+
+Numerių (kambarių) užimtumas – užimtų numerių (kambarių) ir apgyvendinimui paruoštų numerių (kambarių) skaičiaus santykis, išreikštas procentais.
+
+Vietų skaičius – lovų skaičius, kuris nustatomas numeriuose (kambariuose) ar atskirose patalpose pagal asmenų skaičių, kuriems gali būti suteikta nakvynė (dvigulė lova yra dvi vietos). 
+
+Vietų užimtumas – nakvynių skaičiaus ir apgyvendinimui paruoštų vietų skaičiaus santykis, išreikštas procentais.
+
+Statistinio stebėjimo vienetas	
+Apgyvendinimo įstaiga (vietos veiklos rūšies vienetas). 
+
+Tiriamąją visumą (populiaciją) sudaro: 
+juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinės ekonominės veiklos rūšies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – viešbučių ir panašių laikinų buveinių veikla, 55.2 – poilsiautojų ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsinių transporto priemonių, priekabų aikštelių ir stovyklaviečių veikla (toliau – EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3).
+fiziniai asmenys, dirbantys pagal verslo liudijimą (010, 043 kodai pagal „Verslo liudijimų klasifikatorių“) ar (ir) individualios veiklos pažymą ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3) paslaugas turistams.
+
+Geografinė aprėptis	
+Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu
+
+Laiko aprėptis	
+Nuo 2012 m. "
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
+,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija: identifikacinis numeris,
+,,,,,apgyvendinimo_istaiga,string,,,,4,open,,Apgyvendinimo įstaigos tipas,
+,,,,,apgyvendinimo_istaiga_id,string,,,,4,open,,Apgyvendinimo įstaigos tipas: identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,uzimtumas,string,,,,4,open,,Užimtumas,
+,,,,,uzimtumas_id,string,,,,4,open,,Užimtumas: identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R866_M4090205_1,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, ketvirtiniai)","Pateikiami ketvirtiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą.
+Naudojami klasifikatoriai:
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
+Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
+
+Apibrėžtis (-ys)	
+Apgyvendinimo įstaiga – vietos veiklos rūšies vienetas, teikiantis mokamas trumpalaikio apgyvendinimo paslaugas turistui.
+
+Turistas – fizinis asmuo, keliaujantis į vietovę, esančią už jo įprastinės aplinkos ribų, apsistojantis joje bent vienai nakvynei, 
+bet ne ilgiau kaip 12 mėn., ir neturintis tikslo joje mokytis ar dirbti apmokamo darbo.
+
+Nakvynė – kiekviena naktis, kurią turistas faktiškai praleidžia (miega ar būna) ar būna įregistruotas 
+(jo fizinis buvimas nebūtinas) apgyvendinimo įstaigoje.
+
+Numeris (kambarys) – apgyvendinimui skirtame pastate specialiai įrengta patalpa ar patalpų grupė,  apgyvendinimo paslaugų teikėjo siūloma asmenims nuomotis kaip nedaloma visuma.
+
+Numerių (kambarių) užimtumas – užimtų numerių (kambarių) ir apgyvendinimui paruoštų numerių (kambarių) skaičiaus santykis, išreikštas procentais.
+
+Vietų skaičius – lovų skaičius, kuris nustatomas numeriuose (kambariuose) ar atskirose patalpose pagal asmenų skaičių, kuriems gali būti suteikta nakvynė (dvigulė lova yra dvi vietos). 
+
+Vietų užimtumas – nakvynių skaičiaus ir apgyvendinimui paruoštų vietų skaičiaus santykis, išreikštas procentais.
+
+Statistinio stebėjimo vienetas	
+Apgyvendinimo įstaiga (vietos veiklos rūšies vienetas). 
+
+Tiriamąją visumą (populiaciją) sudaro: 
+juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinės ekonominės veiklos rūšies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – viešbučių ir panašių laikinų buveinių veikla, 55.2 – poilsiautojų ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsinių transporto priemonių, priekabų aikštelių ir stovyklaviečių veikla (toliau – EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3).
+fiziniai asmenys, dirbantys pagal verslo liudijimą (010, 043 kodai pagal „Verslo liudijimų klasifikatorių“) ar (ir) individualios veiklos pažymą ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3) paslaugas turistams.
+
+Geografinė aprėptis	
+Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu
+
+Laiko aprėptis	
+Nuo 2012 m. "
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
+,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija: identifikacinis numeris,
+,,,,,apgyvendinimo_istaiga,string,,,,4,open,,Apgyvendinimo įstaigos tipas,
+,,,,,apgyvendinimo_istaiga_id,string,,,,4,open,,Apgyvendinimo įstaigos tipas: identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
+,,,,,uzimtumas,string,,,,4,open,,Užimtumas,
+,,,,,uzimtumas_id,string,,,,4,open,,Užimtumas: identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R866_M4090104_3,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą ir užimtumą, mėnesiniai)","Pateikiami mėnesiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą ir užimtumą.
+Naudojami klasifikatoriai:
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
+Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
+
+Apibrėžtis (-ys)	
+Apgyvendinimo įstaiga – vietos veiklos rūšies vienetas, teikiantis mokamas trumpalaikio apgyvendinimo paslaugas turistui.
+
+Turistas – fizinis asmuo, keliaujantis į vietovę, esančią už jo įprastinės aplinkos ribų, apsistojantis joje bent vienai nakvynei, 
+bet ne ilgiau kaip 12 mėn., ir neturintis tikslo joje mokytis ar dirbti apmokamo darbo.
+
+Nakvynė – kiekviena naktis, kurią turistas faktiškai praleidžia (miega ar būna) ar būna įregistruotas 
+(jo fizinis buvimas nebūtinas) apgyvendinimo įstaigoje.
+
+Numeris (kambarys) – apgyvendinimui skirtame pastate specialiai įrengta patalpa ar patalpų grupė,  apgyvendinimo paslaugų teikėjo siūloma asmenims nuomotis kaip nedaloma visuma.
+
+Numerių (kambarių) užimtumas – užimtų numerių (kambarių) ir apgyvendinimui paruoštų numerių (kambarių) skaičiaus santykis, išreikštas procentais.
+
+Vietų skaičius – lovų skaičius, kuris nustatomas numeriuose (kambariuose) ar atskirose patalpose pagal asmenų skaičių, kuriems gali būti suteikta nakvynė (dvigulė lova yra dvi vietos). 
+
+Vietų užimtumas – nakvynių skaičiaus ir apgyvendinimui paruoštų vietų skaičiaus santykis, išreikštas procentais.
+
+Statistinio stebėjimo vienetas	
+Apgyvendinimo įstaiga (vietos veiklos rūšies vienetas). 
+
+Tiriamąją visumą (populiaciją) sudaro: 
+juridiniai asmenys, teikiantys apgyvendinimo paslaugas, nepriklausomai nuo pagrindinės ekonominės veiklos rūšies pagal tokias EVRK 2 red. I sekcijos grupes: 55.1 – viešbučių ir panašių laikinų buveinių veikla, 55.2 – poilsiautojų ir kita trumpalaikio apgyvendinimo veikla, 55.3 – poilsinių transporto priemonių, priekabų aikštelių ir stovyklaviečių veikla (toliau – EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3).
+fiziniai asmenys, dirbantys pagal verslo liudijimą (010, 043 kodai pagal „Verslo liudijimų klasifikatorių“) ar (ir) individualios veiklos pažymą ir teikiantys apgyvendinimo veiklos (EVRK 2 red. I sekcija, grupės 55.1, 55.2, 55.3) paslaugas turistams.
+
+Geografinė aprėptis	
+Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu
+
+Laiko aprėptis	
+Nuo 2012 m. "
+,,,,,vda_id,string,,,,,,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,apgyvendinimo_istaiga,string,,,,,,,Apgyvendinimo įstaigos tipas,
+,,,,,apgyvendinimo_istaiga_id,string,,,,,,,Apgyvendinimo įstaigos tipas: identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,,,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,,,,Laikotarpis: identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,,,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,,,,Matavimo vienetai: identifikacinis numeris,
+,,,,,uzimtumas,string,,,,,,,Užimtumas,
+,,,,,uzimtumas_id,string,,,,,,,Užimtumas: identifikacinis numeris,
+,,,,,verte,number,,,,,,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,,,,Paskutinis atnaujinimas,
