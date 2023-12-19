@@ -135,7 +135,7 @@ Laiko aprėptis
 Nuo 2012 m. "
 ,,,,,vda_id,string,,,,,,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,apgyvendinimo_istaiga,string,,,,,,,Apgyvendinimo įstaigos tipas,
-,,,,,apgyvendinimo_istaiga,string,,,,,,,Apgyvendinimo įstaigos tipas: identifikacinis numeris,
+,,,,,apgyvendinimo_istaiga_id,string,,,,,,,Apgyvendinimo įstaigos tipas: identifikacinis numeris,
 ,,,,,laikotarpis,date,Q,,,,,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,,,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,,,,Matavimo vienetai,
