@@ -154,6 +154,7 @@ datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
+datasets/gov/lsd/statistika/atlygis_darbuotojams_metinis.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/svietimo_istaigos.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
