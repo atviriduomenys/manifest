@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R904_M4091007_2,,,vda_id,,,4,,,Išvykusių vienadienių lankytojų išlaidos,"""Duomenų rinkinys apie lietuvos nuolatinių gyventojų (toliau – gyventojai) keliaujančių į užsienį skaičių jų kelionių nakvynių skaičių ir tikslus naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės dimensiją."""
+,,,,S8R904_M4091007_2,,,vda_id,,,4,,,Išvykusių vienadienių lankytojų išlaidos,Duomenų rinkinys apie lietuvos nuolatinių gyventojų (toliau – gyventojai) keliaujančių į užsienį skaičių jų kelionių nakvynių skaičių ir tikslus naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės dimensiją.
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis, 
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
