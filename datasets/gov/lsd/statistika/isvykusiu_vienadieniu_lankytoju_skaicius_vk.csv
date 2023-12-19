@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S8R903_M4091007_1,,,vda_id,,,4,,,Išvykusių vienadienių lankytojų skaičius (pagal valstybę ketvirtiniai),Duomenų rinkinys apie lietuvos nuolatinių gyventojų (toliau – gyventojai) keliaujančių į užsienį skaičių jų kelionių nakvynių skaičių ir tikslus naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės dimensiją.
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis, 
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis, 
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
