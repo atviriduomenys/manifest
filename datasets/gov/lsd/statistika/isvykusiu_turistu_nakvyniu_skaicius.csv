@@ -1,0 +1,211 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/isvykusiu_turistu_nakvyniu_skaicius ,,,,,,,,,,,,Išvykusių turistų nakvynių skaičius,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091006,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai, ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės dimensiją.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., ketvirtiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,valstybe,string,,,,4,open,,Valstybė,
+,,,,,valstybe_id,string,,,,4,open,,Valstybė identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091102,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per lyties, kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,lytis_id,string,,,,4,open,,Lytis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091103,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir amžių),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per amžiaus, kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius,string,,,,4,open,,Amžius,
+,,,,,amzius_id,string,,,,4,open,,Amžius identifikacinis numeris,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091104,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal apgyvendinimo įstaigos tipą ir kelionės tikslą),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per apgyvendinimo įstaigos, kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,apgyvendinimo_istaigos_tipas,string,,,,4,open,,Apgyvendinimo įstaigos tipas,
+,,,,,apgyvendinimo_istaigos_tipas_id,string,,,,4,open,,Apgyvendinimo įstaigos tipas identifikacinis numeris,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091105,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės, kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,valstybe,string,,,,4,open,,Valstybė,
+,,,,,valstybe_id,string,,,,4,open,,Valstybė identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091001_1,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., ketvirtiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091101_1,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., metiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S8R708_M4091003_1,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir apgyvendinimo trukmę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+Pateikta per apgyvendinimo trukmę kelionės tikslo dimensijas.
+
+Naudojami klasifikatoriai: 
+
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+
+Pasaulio šalių ir teritorijų klasifikatorius.
+
+Statistinio stebėjimo vienetas: vyresni nei 15 metų amžiaus gyventojai, grįžtantys iš užsienio.
+
+Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtančių iš užsienio, kelionės. Neįskaitomos asmenų kelionės, kurių tikslas lankomoje teritorijoje yra apmokamas darbas.
+
+Geografinė aprėptis: visa šalies ekonominė teritorija.
+
+Laiko aprėptis: nuo 2005m., ketvirtiniai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,apgyvendinimo_trukme,string,,,,4,open,,Apgyvendinimo trukmė,
+,,,,,apgyvendinimo_trukme_id,string,,,,4,open,,Apgyvendinimo trukmė identifikacinis numeris,
+,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
+,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
