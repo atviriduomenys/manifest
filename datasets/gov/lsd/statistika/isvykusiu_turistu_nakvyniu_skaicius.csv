@@ -25,8 +25,8 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,valstybe,string,,,,4,open,,Valstybė,
 ,,,,,valstybe_id,string,,,,4,open,,Valstybė identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R708_M4091102,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per lyties, kelionės tikslo dimensijas.
 
@@ -52,8 +52,8 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,lytis_id,string,,,,4,open,,Lytis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R708_M4091103,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir amžių),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per amžiaus, kelionės tikslo dimensijas.
 
@@ -79,8 +79,8 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R708_M4091104,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal apgyvendinimo įstaigos tipą ir kelionės tikslą),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per apgyvendinimo įstaigos, kelionės tikslo dimensijas.
 
@@ -179,8 +179,8 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R708_M4091003_1,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir apgyvendinimo trukmę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
 Pateikta per apgyvendinimo trukmę kelionės tikslo dimensijas.
@@ -207,5 +207,5 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
