@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/bvp_indeksai
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/
+
+,,,,S7R201_M2110101_3,,,vda_id,,,4.00,,,BVP indeksai,"“Statistinės informacijos aprašymas: bendrasis vidaus produktas (BVP) – vienas iš pagrindinių nacionalinių sąskaitų sistemos (NSS) rodiklių, apibūdinančių šalies ekonomikos išsivystymo lygį. BVP, jo kitimo tempas ir bendrosios nacionalinės pajamos (BNP) plačiai naudojami tarptautiniams palyginimams ir ekonominei analizei atlikti. Klasifikatorių nėra. Statistinio stebėjimo vienetas: nacionalinės sąskaitos, apimančios ekonomiką, kaip visumą, kurią sudaro skirtingi instituciniai vienetai. Statistinę (tiriamąją) visumą sudaro visi statistiniai stebėjimo vienetai rezidentai. Lietuvos nacionalinės sąskaitos yra išsamios, t. y., visi statistiniai vienetai rezidentai yra apimami tiesiogiai duomenų šaltinių (tyrimų, administracinių duomenų) pagrindu arba per išsamumo korekcijas. Geografinė aprėptis: šalies ekonominė teritorija. Laiko aprėptis: nuo 1995 m. I ketvirčio. Matavimo vienetas (-ai): indeksai – proc. Ataskaitinis laikotarpis: kalendorinis ketvirtis"
+,,,,,vda_id,string,,,,4.00,open,,Valstybės Duomenų Agentūros įrašo identifikatorius
+,,,,,islyginimas,string,,,,4.00,open,,Išlyginimas
+,,,,,islyginimas_id,string,,,,4.00,open,,Išlyginimas: identifikacinis numeris
+,,,,,laikotarpis,date,D,,,4.00,open,,Laikotarpis
+,,,,,laikotarpis_id,string,,,,4.00,open,,Laikotarpis: identifikacinis numeris
+,,,,,lyginimas,string,,,,4.00,open,,Lyginimas
+,,,,,lyginimas_id,string,,,,4.00,open,,Lyginimas: identifikacinis numeris
+,,,,,matavimo_vienetai,number,,,,4.00,open,,Matavimo vienetai
+,,,,,matavimo_vienetai_id,string,,,,4.00,open,,Matavimo vienetai: identifikacinis numeris
+,,,,,verte,number,%,,,4.00,open,,Skaitinė vertė
+,,,,,atnaujinta,date,D,,,4.00,open,,Paskutinis atnaujinimas
