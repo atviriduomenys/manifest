@@ -97,7 +97,7 @@ Statistinė tiriamoji visuma: tiriamąją visumą sudaro gyventojų, grįžtanč
 Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2005m., metiniai."
-,,,,,vda_id,,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,apgyvendinimo_istaigos_tipas,string,,,,4,open,,Apgyvendinimo įstaigos tipas,
 ,,,,,apgyvendinimo_istaigos_tipas_id,string,,,,4,open,,Apgyvendinimo įstaigos tipas identifikacinis numeris,
 ,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
