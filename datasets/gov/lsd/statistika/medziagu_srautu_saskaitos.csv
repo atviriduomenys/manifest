@@ -1,0 +1,27 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/medziagu_srautu_saskaitos,,,,,,,,,,,,Medžiagų srautų sąskaitos,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R051_M8010601,,,vda_id,,,4,,,Medžiagų srautų sąskaitos,"Medžiagų srautų sąskaitos pagal žaliavų ir medžiagų rūšis.
+Šalies ūkio medžiagų srautų sąskaitų (ŠŪ-MSS) sudarymo tikslas yra parengti su kitomis Europos Sąjungos (ES) valstybėmis narėmis palyginamus rodiklius. ŠŪ-MSS tiesiogiai prisideda prie ES politikos prioritetų, susijusių su Žaliojo augimo strategija ir efektyvaus išteklių naudojimo iniciatyva, ir, pagal suderintą su JT nacionalinių sąskaitų sistemą (NSS) ir jos Europos versiją (ESS), teikia informaciją apie medžiagų srautus. ŠŪMSS tinka integruotos aplinkos ir ekonomikos sąveikos analizei ir modeliavimui.
+Medžiagų vidaus vartojimas (MVV) parodo vienetų rezidentų bendrą suvartojamų medžiagų kiekį.
+Vidaus medžiagų gavyba (VMG) – metinis kietųjų, skystųjų ir dujinių medžiagų (išskyrus vandenį) vienetų rezidentų gautų iš gamtinės aplinkos ir skirtų naudoti ekonominėje veikloje, kiekis.
+Prekių ir paslaugų eksportas (PPE) – prekių ir paslaugų sandoriai (pardavimas, mainai, dovanojimas), kai rezidentai perleidžia ekonominės nuosavybės teises nerezidentams.
+Prekių ir paslaugų importas (PPI) – prekių ir paslaugų sandoriai (pardavimas, mainai, dovanojimas), kai nerezidentai perleidžia ekonominės nuosavybės teises rezidentams.
+Tiesioginės medžiagų sąnaudos (TMS) – visos gamybai ir paslaugoms sunaudojamos medžiagos, įskaitant medžiagas, sunaudotas importuojamiems gaminiams.
+Naudojami klasifikatoriai:
+ŠŪ-MSS Medžiagų tipų klasifikatorius, pateikiamas 2011 m. liepos 6 d. Europos Parlamento ir Tarybos reglamento (ES) Nr. 691/2011 dėl Europos aplinkos ekonominių sąskaitų III priede.
+Geografinė aprėptis: Visa šalies ekonominė teritorija
+Laiko aprėptis: Nuo 2008 m."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,medziagos_srautas_id,string,,,,4,open,,Medžiagos srauto kodas,
+,,,,,medziagos_srautas,string,,,,4,open,,Medžiagų  srautas,
+,,,,,zaliavu_ir_medziagu_rusis_id,string,,,,4,open,,Žaliavų ir medžiagų rūšies kodas,
+,,,,,zaliavu_ir_medziagu_rusis,string,,,,4,open,,Žaliavų ir medžiagų rūšis,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
