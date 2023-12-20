@@ -23,12 +23,12 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,apgyvendinimo_trukme_id,string,,,,4,open,,Apgyvendinimo trukmė identifikacinis numeris,
 ,,,,,keliones_tikslas,string,,,,4,open,,Kelionės tikslas,
 ,,,,,keliones_tikslas_id,string,,,,4,open,,Kelionės tikslas identifikacinis numeris,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R706_M4091101_3,,,vda_id,,,4,,,Išvykusių turistų išlaidos metiniai),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas.
 
@@ -46,12 +46,12 @@ Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,skaitinė vertė,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,skaitinė vertė,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R706_M4091106,,,vda_id,,,4,,,Išvykusių turistų išlaidos,"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
 
@@ -71,12 +71,12 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,islaidu_rusis,string,,,,4,open,,Išlaidų rūšis,
 ,,,,,islaidu_rusis_id,string,,,,4,open,,Išlaidų rūšis identifikacinis numeris,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R706_M4091001_3,,,vda_id,,,4,,,Išvykusių turistų išlaidos (pagal valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, kelionių tikslus ir kelionių išlaidas. Pateikta per tikslo valstybės dimensijas.
 
@@ -94,11 +94,11 @@ Geografinė aprėptis: visa šalies ekonominė teritorija.
 
 Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Q,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,valstybe,string,,,,4,open,,Valstybė,
 ,,,,,valstybe_id,string,,,,4,open,,Valstybė identifikacinis numeris,
-,,,,,verte,number,,,,4,open,,skaitinė vertė,
-,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
