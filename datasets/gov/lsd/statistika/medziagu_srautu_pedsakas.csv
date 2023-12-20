@@ -1,0 +1,17 @@
+﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/medziagu_srautu_pedsakas,,,,,,,,,,,,Medžiagų srautų pėdsakas (žaliavų ekvivalentais),
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R136_M8010610,,,vda_id,,,4,,,Medžiagų srautų pėdsakas (žaliavų ekvivalentais),"Duomenų rinkinys tiesiogiai prisideda prie ES politikos prioritetų, susijusių su Žaliojo augimo strategija ir efektyvaus išteklių naudojimo iniciatyva, ir, pagal suderintą su JT nacionalinių sąskaitų sistemą (NSS) ir jos Europos versiją (ESS), teikia informaciją apie medžiagų srautus. Geografinė aprėptis: visa šalies ekonominė teritorija. Laiko aprėptis: nuo 2008."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,medziagos_rusis_id,string,,,,4,open,,Medžiagos rūšies kodas,
+,,,,,medziagos_rusis,string,,,,4,open,,Medžiagos rūšis,
+,,,,,srautas_id,string,,,,4,open,,Srautas kodas,
+,,,,,srautas,string,,,,4,open,,Srautas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
