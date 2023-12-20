@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R864_M4090304_3,,,vda_id,,,4,,,"""Nakvynių skaičius apgyvendinimo įstaigose (pagal apgyvendinimo tipą, šalį ir geografinę vietovę ir administracinę teritoriją, metiniai)""","""Duomenų rinkinys apie apgyvendinimo paslaugų tiekėjų skaičių pagal apgyvendinimo tipus numerių ir vietų skaičių jų užimtumą apgyvendintų turistų ir jų nakvynių skaičių pagal atvykusių turistų gyvenamąją šalį. Pateikta pagal apgyvendinimo tipo šalie ir geografinės vietovės ir administracinės teritorijos dimensijas."""
+,,,,S8R864_M4090304_3,,,vda_id,,,4,,,"Nakvynių skaičius apgyvendinimo įstaigose (pagal apgyvendinimo tipą, šalį ir geografinę vietovę ir administracinę teritoriją, metiniai)","""Duomenų rinkinys apie apgyvendinimo paslaugų tiekėjų skaičių pagal apgyvendinimo tipus numerių ir vietų skaičių jų užimtumą apgyvendintų turistų ir jų nakvynių skaičių pagal atvykusių turistų gyvenamąją šalį. Pateikta pagal apgyvendinimo tipo šalie ir geografinės vietovės ir administracinės teritorijos dimensijas."""
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija, 
 ,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija identifikacinis numeris,
