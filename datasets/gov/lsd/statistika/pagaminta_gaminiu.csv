@@ -19,9 +19,8 @@ Geografinė aprėptis: Statistinė informacija rengiama šalies, Sostinės regio
 
 Laiko aprėptis: nuo 2005m., metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,teritorija,string,,,,4,open,,Teritorija,
-,,,,,teritorija_id,string,,,,4,open,,Teritorijos kodas,
-,,,,,teritorijos_tipas,string,,,,4,open,,Teritorijos tipas,
+,,,,,apskritys,string,,,,4,open,,Apskritys,
+,,,,,apskritys_id,string,,,,4,open,,Apskritys kodas,
 ,,,,,dalis,string,,,,4,open,,Dalis,
 ,,,,,dalis_id,string,,,,4,open,,Dalis,
 ,,,,,gaminiu_sarasas,string,,,,4,open,,Gaminių sąrašas,
