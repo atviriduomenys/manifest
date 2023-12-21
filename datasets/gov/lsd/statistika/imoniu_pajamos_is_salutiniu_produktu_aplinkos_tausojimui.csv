@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R024_M8010502_3,,,,,,4,,,Įmonių pajamos iš šalutinių produktų aplinkos tausojimui,"Duomenų rinkinys apie įmonių išlaidas aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos  dimensijas.
+,,,,S1R024_M8010502_3,,,,,,4,,,Įmonių pajamos iš šalutinių produktų aplinkos tausojimui,"Duomenų rinkinys apie įmonių pajamos iš šalutinių produktų aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos  dimensijas.
 
 Naudojami klasifikatoriai: 
 Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
