@@ -154,6 +154,7 @@ datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
+datasets/gov/lsd/statistika/bvp_grandininiu_susiejimu.csv
 datasets/gov/lsd/statistika/bvp_indeksai.csv
 datasets/gov/lsd/statistika/namu_ukiu_saskaitos.csv
 datasets/gov/lsd/statistika/salies_nefinansines_saskaitos.csv
