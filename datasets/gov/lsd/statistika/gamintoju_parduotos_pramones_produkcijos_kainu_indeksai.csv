@@ -1,0 +1,30 @@
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/lsd/statistika/gamintoju_parduotos_pramones_produkcijos_kainu_indeksai;;;;;;;;;;;;;
+;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
+;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
+;;;;;;;;;;;;;;
+;;;;S7R259_M2020327;;;vda_id;;;4;;;Gamintojø parduotos pramonës produkcijos kainø indeksai (2015 m. – 100);"Rinkinyje pateikiami duomenys apie Lietuvos gamintojø parduotos pramonës produkcijos bendrà kainø pokytá per mënesio laikotarpá. Rinkinys reikalingas ávairiems rodikliams palyginamosiomis kainomis skaièiuoti, ekonomikos raidai analizuoti, Lietuvos gamintojø parduotos pramonës produkcijos kainø pokyèiams vertinti. Pateikta per Ekonominës veiklos rûðies (EVRK 2 red.) ir rinkos dimensijas. Naudojami klasifikatoriai: 1) Produktø, gaminiø ir paslaugø klasifikatorius (PGPK 2019); 2) Ekonominës veiklos rûðiø klasifikatorius (EVRK 2 red.); 3) Pasaulio ðaliø ir teritorijø klasifikatorius. Statistinio stebëjimo vienetas: Ámonë. Statistinë tiriamoji visuma: Atrenkamos ávairiø nuosavybës formø ámonës, kurios vykdo pramoninæ veiklà. Tai ámonës gamintojos, kuriø parduotos Lietuvos ir ne Lietuvos rinkoje pramonës produkcijos apimtis sudaro didelæ atitinkamos gaminiø kategorijos (10 þenklø lygiu pagal PGPK 2019) parduotos produkcijos dalá. Geografinë aprëptis: Visa ðalies ekonominë teritorija. Laiko aprëptis: Nuo 1998 m. sausio mën. Periodiðkumas – mënesinis."
+;;;;;vda_id;string;;;;4;open;;Valstybës Duomenø Agentûros áraðo identifikatorius;
+;;;;;ekonomines_veiklos_rusis_evrk_2_red;string;;;;4;open;;Ekonominës veiklos rûðis (EVRK 2 red.);
+;;;;;ekonomines_veiklos_rusis_evrk_2_red_id;string;;;;4;open;;Ekonominës veiklos rûðis (EVRK 2 red.): identifikacinis numeris;
+;;;;;laikotarpis;date;D;;;4;open;;Laikotarpis;
+;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpis: identifikacinis numeris;
+;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
+;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetai: identifikacinis numeris;
+;;;;;rinka;string;;;;4;open;;Rinka;
+;;;;;rinka_id;string;;;;4;open;;Rinka: identifikacinis numeris;
+;;;;;verte;number;;;;4;open;;Skaitinë vertë;
+;;;;;atnaujinta;date;D;;;4;open;;Paskutinis atnaujinimas;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
