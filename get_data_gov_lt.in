@@ -534,3 +534,7 @@ datasets/gov/lsd/statistika/medziagu_srautu_saskaitos.csv
 datasets/gov/lsd/statistika/medziagu_srautu_pedsakas.csv
 datasets/gov/lsd/statistika/medziagu_vidaus_vartojimas.csv
 datasets/gov/lsd/statistika/aplinkosauga_produkcija.csv
+datasets/gov/lsd/statistika/aplinkosauga_eksportas.csv
+datasets/gov/lsd/statistika/aplinkosauga_bvp.csv
+datasets/gov/lsd/statistika/aplinkosauga_uzimtumas.csv
+datasets/gov/lsd/statistika/aplinkosauga_bvp.csv
