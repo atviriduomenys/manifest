@@ -15,13 +15,13 @@ Naudojami klasifikatoriai:
 Geografinė aprėptis: Visa šalies ekonominė teritorija
 Laiko aprėptis: Nuo 2008 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
-,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
-,,,,,medziagos_srautas_id,string,,,,4,open,,Medžiagos srauto kodas,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,medziagos_srautas,string,,,,4,open,,Medžiagų  srautas,
-,,,,,zaliavu_ir_medziagu_rusis_id,string,,,,4,open,,Žaliavų ir medžiagų rūšies kodas,
+,,,,,medziagos_srautas_id,string,,,,4,open,,Medžiagos srauto kodas,
 ,,,,,zaliavu_ir_medziagu_rusis,string,,,,4,open,,Žaliavų ir medžiagų rūšis,
+,,,,,zaliavu_ir_medziagu_rusis_id,string,,,,4,open,,Žaliavų ir medžiagų rūšies kodas,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
