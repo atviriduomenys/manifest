@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S3R629_M3010217,,,vda_id,,,4,,,Medianinis gyventojų amžius metų pradžioje,"Pateikta statistinė informacija apie medianinį gyventojų amžių metų pradžioje. Medianinis gyventojų amžius – tokia gyventojų amžiaus reikšmė, kuri atitinka variacinės eilutės vidurinę reikšmę, t. y. dalija gyventojus į dvi vienodas dalis taip, kad pusė jų yra jaunesni nei medianinio amžiaus, kita pusė – vyresni. (https://osp.stat.gov.lt/documents/10180/5118910/Gyventoj%C5%B3+skai%C4%8Diaus+prognoz%C4%97s+%5BLT%5D+6401.html)"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
-,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinės teritorijos kodas,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,lytis,string,,,,4,open,,Lytis,
