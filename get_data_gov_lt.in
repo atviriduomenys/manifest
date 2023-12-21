@@ -159,7 +159,7 @@ datasets/gov/lsd/statistika/namu_ukiu_saskaitos.csv
 datasets/gov/lsd/statistika/salies_nefinansines_saskaitos.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/statistika/bvp_palyginamosiomis_kainomis.csv
-datasets/gov/lsd/statistika/bvp_islaidomis_metinis.csv
+datasets/gov/lsd/statistika/bvp_islaidu_metodu.csv
 datasets/gov/lsd/svietimo_istaigos.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
 datasets/gov/lsd/namu_ukio_biudzetas.csv
