@@ -158,6 +158,7 @@ datasets/gov/lsd/statistika/bvp_indeksai.csv
 datasets/gov/lsd/statistika/namu_ukiu_saskaitos.csv
 datasets/gov/lsd/statistika/salies_nefinansines_saskaitos.csv
 datasets/gov/lsd/svietimas.csv
+datasets/gov/lsd/statistika/bvp_palyginamosiomis_kainomis.csv
 datasets/gov/lsd/statistika/bvp_islaidomis_metinis.csv
 datasets/gov/lsd/svietimo_istaigos.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
@@ -170,6 +171,7 @@ datasets/gov/lsd/covid19.csv
 datasets/gov/lsd/cl/sektoriai.csv
 datasets/gov/lsd/cl/evrk.csv
 datasets/gov/lsd/cl/ja_asmenys.csv
+datasets/gov/lsd/statistika/pajamos_vienam_gyventojui.csv
 datasets/gov/kaunas/daugiabuciai.csv
 datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
@@ -526,3 +528,6 @@ datasets/gov/lsd/statistika/isvykusiu_turistu_kelioniu_skaicius.csv
 datasets/gov/lsd/statistika/isvykusiu_turistu_islaidos.csv
 datasets/gov/lsd/statistika/isvykusiu_turistu_nakvyniu_skaicius.csv
 datasets/gov/lsd/statistika/aplinka_mokesciai.csv
+datasets/gov/lsd/statistika/medziagu_srautu_saskaitos.csv
+datasets/gov/lsd/statistika/medziagu_srautu_pedsakas.csv
+datasets/gov/lsd/statistika/medziagu_vidaus_vartojimas.csv
