@@ -1,30 +1,30 @@
-id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
-;datasets/gov/lsd/statistika/energijos_srautai;;;;;;;;;;;;;
-;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
-;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
-;;;;;;;;;;;;;;
-;;;;S1R112_M8020321_1;;;vda_id;;;4;;;Energijos srautai (pagal vartojimo kategorijas);Rinkinyje pateikiami duomenys apie gamtiniø energijos iğtekliø, energetikos produktø, energetiniø liekanø gavybà, gamybà, suvartojimà ir sunaudojimà. Pateikta per rodikliø ir ekonominës veiklos rûğies dimensijas. Naudojami klasifikatoriai: 1) Ekonominës veiklos rûğiø klasifikatorius (EVRK 2 red.). Statistinio stebëjimo vienetas: Ûkio subjektas, áskaitant namø ûká. Statistinë tiriamoji visuma: ğalies vienetai rezidentai ir ne rezidentai, kurie gali bûti ir juridiniai vienetai, ir fiziniai asmenys. Geografinë aprëptis: Statistiniai rodikliai yra skaièiuojami ekonominës teritorijos mastu, ávertinant ğalies vienetø rezidentø kuro ir energijos sunaudojimà uşsienyje ir vienetø nerezidentø kuro ir energijos sunaudojimà Lietuvos teritorijoje. Laiko aprëptis: Nuo 2014 m. Periodiğkumas – metinis.
-;;;;;vda_id;string;;;;4;open;;Valstybës Duomenø Agentûros árağo identifikatorius;
-;;;;;ekonomines_veiklos_rusis_evrk_2_red;string;;;;4;open;;Ekonominës veiklos rûğis (EVRK 2 red.);
-;;;;;ekonomines_veiklos_rusis_evrk_2_red_id;string;;;;4;open;;Ekonominës veiklos rûğies (EVRK 2 red.) kodas;
-;;;;;laikotarpis;date;;;;4;open;;Laikotarpis;
-;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpio kodas;
-;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
-;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetø kodas;
-;;;;;rodikliai;string;;;;4;open;;Rodikliai;
-;;;;;rodikliai_id;string;;;;4;open;;Rodiklio kodas;
-;;;;;verte;number;;;;4;open;;Skaitinë vertë;
-;;;;;atnaujinta;string;D;;;4;open;;Paskutinis atnaujinimas;
-;;;;;;;;;;;;;;
-;;;;S1R112_M8020321_2;;;vda_id;;;4;;;Energijos srautai (pagal vartojimo kategorijas);Rinkinyje pateikiami duomenys apie gamtiniø energijos iğtekliø, energetikos produktø, energetiniø liekanø gavybà, gamybà, suvartojimà ir sunaudojimà. Pateikta per rodikliø ir vartojimo kategorijø dimensijas. Statistinio stebëjimo vienetas: Ûkio subjektas, áskaitant namø ûká. Statistinë tiriamoji visuma: ğalies vienetai rezidentai ir ne rezidentai, kurie gali bûti ir juridiniai vienetai, ir fiziniai asmenys. Geografinë aprëptis: Statistiniai rodikliai yra skaièiuojami ekonominës teritorijos mastu, ávertinant ğalies vienetø rezidentø kuro ir energijos sunaudojimà uşsienyje ir vienetø nerezidentø kuro ir energijos sunaudojimà Lietuvos teritorijoje. Laiko aprëptis: Nuo 2014 m. Periodiğkumas – metinis.
-;;;;;vda_id;string;;;;4;open;;Valstybës Duomenø Agentûros árağo identifikatorius;
-;;;;;laikotarpis;date;D;;;4;open;;Laikotarpis;
-;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpis: identifikacinis numeris;
-;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
-;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetai: identifikacinis numeris;
-;;;;;rodikliai;string;;;;4;open;;Rodikliai: identifikacinis numeris;
-;;;;;rodikliai_id;string;;;;4;open;;Rodikliai;
-;;;;;verte;number;;;;4;open;;Skaitinë vertë;
-;;;;;vartojimo_kategorijos;string;;;;4;open;;Vartojimo kategorijos;
-;;;;;vartojimo_kategorijos_id;string;;;;4;open;;Vartojimo kategorijos: identifikacinis numeris;
-;;;;;atnaujinta;date;D;;;4;open;;Paskutinis atnaujinimas;
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/energijos_srautai,,,,,,,,,,,,Energijos srautai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R112_M8020321_1,,,vda_id,,,4,,,Energijos srautai (pagal vartojimo kategorijas),"Rinkinyje pateikiami duomenys apie gamtiniÃ¸ energijos iÃ°tekliÃ¸, energetikos produktÃ¸, energetiniÃ¸ liekanÃ¸ gavybÃ , gamybÃ , suvartojimÃ  ir sunaudojimÃ . Pateikta per rodikliÃ¸ ir ekonominÃ«s veiklos rÃ»Ã°ies dimensijas. Naudojami klasifikatoriai: 1) EkonominÃ«s veiklos rÃ»Ã°iÃ¸ klasifikatorius (EVRK 2 red.). Statistinio stebÃ«jimo vienetas: Ã›kio subjektas, Ã¡skaitant namÃ¸ Ã»kÃ¡. StatistinÃ« tiriamoji visuma: Ã°alies vienetai rezidentai ir ne rezidentai, kurie gali bÃ»ti ir juridiniai vienetai, ir fiziniai asmenys. GeografinÃ« aprÃ«ptis: Statistiniai rodikliai yra skaiÃ¨iuojami ekonominÃ«s teritorijos mastu, Ã¡vertinant Ã°alies vienetÃ¸ rezidentÃ¸ kuro ir energijos sunaudojimÃ  uÃ¾sienyje ir vienetÃ¸ nerezidentÃ¸ kuro ir energijos sunaudojimÃ  Lietuvos teritorijoje. Laiko aprÃ«ptis: Nuo 2014 m. PeriodiÃ°kumas â€“ metinis."
+,,,,,vda_id,string,,,,4,open,,ValstybÃ«s DuomenÃ¸ AgentÃ»ros Ã¡raÃ°o identifikatorius,
+,,,,,ekonomines_veiklos_rusis_evrk_2_red,string,,,,4,open,,EkonominÃ«s veiklos rÃ»Ã°is (EVRK 2 red.),
+,,,,,ekonomines_veiklos_rusis_evrk_2_red_id,string,,,,4,open,,EkonominÃ«s veiklos rÃ»Ã°ies (EVRK 2 red.) kodas,
+,,,,,laikotarpis,date,,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetÃ¸ kodas,
+,,,,,rodikliai,string,,,,4,open,,Rodikliai,
+,,,,,rodikliai_id,string,,,,4,open,,Rodiklio kodas,
+,,,,,verte,number,,,,4,open,,SkaitinÃ« vertÃ«,
+,,,,,atnaujinta,string,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S1R112_M8020321_2,,,vda_id,,,4,,,Energijos srautai (pagal vartojimo kategorijas),Rinkinyje pateikiami duomenys apie gamtiniÃ¸ energijos iÃ°tekliÃ¸, energetikos produktÃ¸, energetiniÃ¸ liekanÃ¸ gavybÃ , gamybÃ , suvartojimÃ  ir sunaudojimÃ . Pateikta per rodikliÃ¸ ir vartojimo kategorijÃ¸ dimensijas. Statistinio stebÃ«jimo vienetas: Ã›kio subjektas, Ã¡skaitant namÃ¸ Ã»kÃ¡. StatistinÃ« tiriamoji visuma: Ã°alies vienetai rezidentai ir ne rezidentai, kurie gali bÃ»ti ir juridiniai vienetai, ir fiziniai asmenys. GeografinÃ« aprÃ«ptis: Statistiniai rodikliai yra skaiÃ¨iuojami ekonominÃ«s teritorijos mastu, Ã¡vertinant Ã°alies vienetÃ¸ rezidentÃ¸ kuro ir energijos sunaudojimÃ  uÃ¾sienyje ir vienetÃ¸ nerezidentÃ¸ kuro ir energijos sunaudojimÃ  Lietuvos teritorijoje. Laiko aprÃ«ptis: Nuo 2014 m. PeriodiÃ°kumas â€“ metinis.
+,,,,,vda_id,string,,,,4,open,,ValstybÃ«s DuomenÃ¸ AgentÃ»ros Ã¡raÃ°o identifikatorius,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
+,,,,,rodikliai,string,,,,4,open,,Rodikliai: identifikacinis numeris,
+,,,,,rodikliai_id,string,,,,4,open,,Rodikliai,
+,,,,,verte,number,,,,4,open,,SkaitinÃ« vertÃ«,
+,,,,,vartojimo_kategorijos,string,,,,4,open,,Vartojimo kategorijos,
+,,,,,vartojimo_kategorijos_id,string,,,,4,open,,Vartojimo kategorijos: identifikacinis numeris,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
