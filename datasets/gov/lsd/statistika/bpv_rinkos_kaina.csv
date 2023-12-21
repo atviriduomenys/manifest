@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S7R188_M2110257_1,,,vda_id,,,4,,,"Bendroji pridėtinė vertė pagal ekonominės veiklos rūšis (EVRK 2 red., 10) ir apskritis, to meto kainomis (metinis)","Pateikiama statistinė informacija - bendroji pridėtinė vertė (BPV) , to meto kainomis, pagal ekonominės veiklos rūšį, apskritis (metinis). Naudojamas Ekonominės veiklos rūšių klasifikatorius (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=version). Statistinę (tiriamąją) visumą sudaro visi statistiniai stebėjimo vienetai rezidentai. Geografinė aprėptis - šalies ekonominė teritorija.  Laiko aprėptis nuo 2000 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,apskritys,string,,,,4,open,,Apskritys,
-,,,,,apskritys_id,string,,,,4,open,,Apskritys identifikacinis numeris,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,ekonomines_veiklos_rusis,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 10)",
 ,,,,,ekonomines_veiklos_rusis_id,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 10) identifikacinis numeris",
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,

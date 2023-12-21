@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S7R183_M2110256_1,,,vda_id,,,4,,,"Bendrasis vidaus produktas pagal apskritis, to meto kainomis (metinis)",Pateikiama statistinė informacija - bendrasis vidaus produktas to meto kainomis pagal apskritis (metinis). Statistinę (tiriamąją) visumą sudaro visi statistiniai stebėjimo vienetai rezidentai. Geografinė aprėptis - šalies ekonominė teritorija.  Laiko aprėptis nuo 2000 m. 
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,apskritys,string,,,,4,open,,Apskritys,
-,,,,,apskritys_id,string,,,,4,open,,Apskritys identifikacinis numeris,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,

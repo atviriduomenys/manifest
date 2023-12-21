@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S7R219_M2110258,,,vda_id,,,4,,,Užimtumas pagal ESS 2010 (metinis),"Pateikiama statistinė informacija -užimtumas pagal pagal ekonominės veiklos rūšį, apskritis, užimtųjų klasifikaciją(metinis). Užimtumo sąvokai priskiriami visi asmenys, vykdantys nacionalinių sąskaitų gamybos sričiai priskiriamą gamybinę veiklą .Naudojamas Ekonominės veiklos rūšių klasifikatorius (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=version), teritorinių statistinių vienetų klasifikatorius (NUTS). Statistinę (tiriamąją) visumą sudaro visi šalies ekonominėje teritorijoje dirbantys asmenys – samdomieji darbuotojai arba savarankiškai dirbantys asmenys (rezidentai ir nerezidentai), įskaitant šauktinius ir atskaitant šalies gyventojus – samdomuosius darbuotojus, dirbančius laikiną darbą kitose šalyse. Geografinė aprėptis - šalies ekonominė teritorija.  Laiko aprėptis nuo 2000 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,apskritys,string,,,,4,open,,Apskritys,
-,,,,,apskritys_id,string,,,,4,open,,Apskritys identifikacinis numeris,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,ekonomines_veiklos_rusis,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 10)",
 ,,,,,ekonomines_veiklos_rusis_id,string,,,,4,open,,"Ekonominės veiklos rūšis (EVRK 2 red., 10) identifikacinis numeris",
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,

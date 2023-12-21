@@ -9,8 +9,9 @@ Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/
 Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version)
 Teritorinių statistinių vienetų klasifikatorius (NUTS)(https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)"
 ,,,,,vda_id,string,,,,4,open,,"Valstybės Duomenų Agentūros įrašo identifikatorius	",
-,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
-,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinės teritorijos id,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio id,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
