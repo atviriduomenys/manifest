@@ -154,8 +154,12 @@ datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
+datasets/gov/lsd/statistika/bvp_indeksai.csv
+datasets/gov/lsd/statistika/namu_ukiu_saskaitos.csv
+datasets/gov/lsd/statistika/salies_nefinansines_saskaitos.csv
 datasets/gov/lsd/svietimas.csv
 datasets/gov/lsd/statistika/bvp_palyginamosiomis_kainomis.csv
+datasets/gov/lsd/statistika/bvp_islaidomis_metinis.csv
 datasets/gov/lsd/svietimo_istaigos.csv
 datasets/gov/lsd/darbo_uzmokestis.csv
 datasets/gov/lsd/namu_ukio_biudzetas.csv
@@ -513,4 +517,12 @@ datasets/gov/lsd/statistika/apgyv_ist.csv
 datasets/gov/ivpk/registrai.csv
 datasets/gov/lsd/statistika/svki.csv
 datasets/gov/lsd/statistika/namu_ukiu_tersalai.csv
+datasets/gov/lsd/statistika/isvykusiu_vienadieniu_lankytoju_sk.csv
 datasets/gov/lsd/statistika/tersalu_ismetimas.csv
+datasets/gov/lsd/statistika/isvykusiu_vienadieniu_lankytoju_skaicius_vk.csv
+datasets/gov/lsd/statistika/isvykusiu_atvykusiu_kelioniu_skaicius.csv
+datasets/gov/lsd/statistika/nakvyniu_skaicius.csv
+datasets/gov/lsd/statistika/isvykusiu_vienadieniu_lankytoju_islaidos.csv
+datasets/gov/lsd/statistika/isvykusiu_turistu_kelioniu_skaicius.csv
+datasets/gov/lsd/statistika/isvykusiu_turistu_islaidos.csv
+datasets/gov/lsd/statistika/isvykusiu_turistu_nakvyniu_skaicius.csv

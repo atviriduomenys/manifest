@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/sakiai/gaunami_dokumentai,,,,,,,,,,open,,Šakių rajono savivaldybės gaunami dokumentai,"Visi nuo 2018 m. tik Šakių rajono savivaldybės administracijos raštinės registruoti gauti dokumentai - asmenų skundai, prašymai paslaugoms gauti, raštai iš LR ministerijų/departamentų ir kita."
+,datasets/gov/sakiai/gaunami_dokumentai,,,,,,,,,,open,,Šakių rajono savivaldybės gaunami dokumentai,"Visi nuo 2018 m. tik Šakių rajono savivaldybės administracijos raštinės registruoti gauti dokumentai - asmenų skundai, prašymai paslaugoms gauti, raštai iš LR ministerijų/departamentų ir kita."
 ,,,,,,,,,,,,,,
 ,,,,Registras,,,rz_id,,,,,,,
 ,,,,,rz_id,integer,,,,4,,,,
