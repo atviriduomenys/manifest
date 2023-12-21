@@ -1,30 +1,30 @@
-﻿id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
-;datasets/gov/lsd/statistika/energijos_srautu_panaudojimas;;;;;;;;;;;;;
-;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
-;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
-;;;;;;;;;;;;;;
-;;;;S1R111_M8020320_1;;;vda_id;;;4;;;Energijos srautų panaudojimas (pagal energijos produktus ir ekonominės veiklos rūšį);Rinkinyje pateikiami duomenys apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinį energijos srautų panaudojimą. Pateikta per Ekonominės veiklos rūšies (EVRK 2 red.) ir energijos produktų dimensijas. Naudojami klasifikatoriai: 1) Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.). Statistinio stebėjimo vienetas: Ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma: šalies vienetai rezidentai ir ne rezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys. Geografinė aprėptis: Statistiniai rodikliai yra skaičiuojami ekonominės teritorijos mastu, įvertinant šalies vienetų rezidentų kuro ir energijos sunaudojimą užsienyje ir vienetų nerezidentų kuro ir energijos sunaudojimą Lietuvos teritorijoje. Laiko aprėptis: Nuo 2014 m. Periodiškumas – metinis.
-;;;;;vda_id;string;;;;4;open;;Valstybės Duomenų Agentūros įrašo identifikatorius;
-;;;;;ekonomines_veiklos_rusis_evrk_2_red;string;;;;4;open;;Ekonominės veiklos rūšis (EVRK 2 red.);
-;;;;;ekonomines_veiklos_rusis_evrk_2_red_id;string;;;;4;open;;Ekonominės veiklos rūšies (EVRK 2 red.) kodas;
-;;;;;energijos_produktai;string;;;;4;open;;Energijos produktai;
-;;;;;energijos_produktai_id;string;;;;4;open;;Energijos produktų kodas;
-;;;;;laikotarpis;date;D;;;4;open;;Laikotarpis;
-;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpio kodas;
-;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
-;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetų kodas;
-;;;;;verte;double;;;;4;open;;Skaitinė vertė;
-;;;;;atnaujinta;string;D;;;4;open;;Paskutinis atnaujinimas;
-;;;;;;;;;;;;;;
-;;;;S1R111_M8020320_2;;;vda_id;;;4;;;Energijos srautų panaudojimas (pagal vartojimo kategorijas ir energijos produktus);Rinkinyje pateikiami duomenys apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinį energijos srautų panaudojimą. Pateikta per vartojimo kategorijų ir energijos produktų dimensijas. Statistinio stebėjimo vienetas: Ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma: šalies vienetai rezidentai ir ne rezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys. Geografinė aprėptis: Statistiniai rodikliai yra skaičiuojami ekonominės teritorijos mastu, įvertinant šalies vienetų rezidentų kuro ir energijos sunaudojimą užsienyje ir vienetų nerezidentų kuro ir energijos sunaudojimą Lietuvos teritorijoje. Laiko aprėptis: Nuo 2014 m. Periodiškumas – metinis.
-;;;;;vda_id;string;;;;4;open;;Valstybės Duomenų Agentūros įrašo identifikatorius;
-;;;;;energijos_produktai;string;;;;4;open;;Energijos produktai;
-;;;;;energijos_produktai_id;string;;;;4;open;;Energijos produktai: identifikacinis numeris;
-;;;;;laikotarpis;date;D;;;4;open;;Laikotarpis;
-;;;;;laikotarpis_id;string;;;;4;open;;Laikotarpis: identifikacinis numeris;
-;;;;;matavimo_vienetai;string;;;;4;open;;Matavimo vienetai;
-;;;;;matavimo_vienetai_id;string;;;;4;open;;Matavimo vienetai: identifikacinis numeris;
-;;;;;verte;double;;;;4;open;;Skaitinė vertė;
-;;;;;vartojimo_kategorijos;string;;;;4;open;;Vartojimo kategorijos;
-;;;;;vartojimo_kategorijos_id;string;;;;4;open;;Vartojimo kategorijos: identifikacinis numeris;
-;;;;;atnaujinta;date;D;;;4;open;;Paskutinis atnaujinimas;
+﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/energijos_srautu_panaudojimas,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R111_M8020320_1,,,vda_id,,,4,,,Energijos srautų panaudojimas (pagal energijos produktus ir ekonominės veiklos rūšį),"Rinkinyje pateikiami duomenys apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinį energijos srautų panaudojimą. Pateikta per Ekonominės veiklos rūšies (EVRK 2 red.) ir energijos produktų dimensijas. Naudojami klasifikatoriai: 1) Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.). Statistinio stebėjimo vienetas: Ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma: šalies vienetai rezidentai ir ne rezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys. Geografinė aprėptis: Statistiniai rodikliai yra skaičiuojami ekonominės teritorijos mastu, įvertinant šalies vienetų rezidentų kuro ir energijos sunaudojimą užsienyje ir vienetų nerezidentų kuro ir energijos sunaudojimą Lietuvos teritorijoje. Laiko aprėptis: Nuo 2014 m. Periodiškumas – metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,ekonomines_veiklos_rusis_evrk_2_red,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,ekonomines_veiklos_rusis_evrk_2_red_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
+,,,,,energijos_produktai,string,,,,4,open,,Energijos produktai,
+,,,,,energijos_produktai_id,string,,,,4,open,,Energijos produktų kodas,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,verte,double,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,string,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,,,,,,,,,,
+,,,,S1R111_M8020320_2,,,vda_id,,,4,,,Energijos srautų panaudojimas (pagal vartojimo kategorijas ir energijos produktus),"Rinkinyje pateikiami duomenys apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinį energijos srautų panaudojimą. Pateikta per vartojimo kategorijų ir energijos produktų dimensijas. Statistinio stebėjimo vienetas: Ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma: šalies vienetai rezidentai ir ne rezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys. Geografinė aprėptis: Statistiniai rodikliai yra skaičiuojami ekonominės teritorijos mastu, įvertinant šalies vienetų rezidentų kuro ir energijos sunaudojimą užsienyje ir vienetų nerezidentų kuro ir energijos sunaudojimą Lietuvos teritorijoje. Laiko aprėptis: Nuo 2014 m. Periodiškumas – metinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,energijos_produktai,string,,,,4,open,,Energijos produktai,
+,,,,,energijos_produktai_id,string,,,,4,open,,Energijos produktai: identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
+,,,,,verte,double,,,,4,open,,Skaitinė vertė,
+,,,,,vartojimo_kategorijos,string,,,,4,open,,Vartojimo kategorijos,
+,,,,,vartojimo_kategorijos_id,string,,,,4,open,,Vartojimo kategorijos: identifikacinis numeris,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
