@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S3R484_M3010510,,,vda_id,,,4,,,Suminis gimstamumo rodiklis,"Pateikta statistinė informacija apie suminį gimstamumo rodiklį. Suminis gimstamumo rodiklis – tikimybinis rodiklis, parodantis, kiek gyvų vaikų per visą savo gyvenimo vaisingą laikotarpį (15–49 metų) pagimdytų moteris, jeigu gimstamumas kiekvienoje amžiaus grupėje išliktų nepakitęs. Statistinė (tiriamoji) visuma yra prognozuojamas gyventojų, gyvų gimusiųjų, mirusiųjų arba tarptautinių migrantų skaičius."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
-,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija identifikacinis numeris,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifiktorius,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
