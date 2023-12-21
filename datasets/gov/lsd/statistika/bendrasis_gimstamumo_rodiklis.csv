@@ -5,8 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S3R692_M3010501_2,,,vda_id,,,4,,,Bendrasis gimstamumo rodiklis,"Pateikiama statistinė informacija apie bendrąjį gimstamumo rodiklį. Bendrasis gimstamumo rodiklis – per metus gyvų gimusių kūdikių ir vidutinio metinio gyventojų skaičiaus santykis, skaičiuojamas 1 tūkst. gyventojų. (https://osp.stat.gov.lt/documents/10180/5118910/Gimstamumas+%5BLT%5D+484.html)"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
-,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija identifikacinis numeris,
+,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
