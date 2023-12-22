@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistikaatliekos_ukyje_miskin_ir_zuvin,,,,,,,,,,,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje",
+,datasets/gov/lsd/statistika/atliekos_ukyje_miskin_ir_zuvin,,,,,,,,,,,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
