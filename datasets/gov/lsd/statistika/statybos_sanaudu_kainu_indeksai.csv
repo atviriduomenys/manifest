@@ -11,5 +11,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
 ,,,,,statiniu_klasifikatorius_cc,string,,,,4,open,,Statinių pagal tipą klasifikatorius (CC),
 ,,,,,statiniu_klasifikatorius_cc_id,string,,,,4,open,,Statinių pagal tipą klasifikatorius (CC): identifikacinis numeris,
-,,,,,verte,string,,,,4,open,,Skaitinė vertė,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
