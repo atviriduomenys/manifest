@@ -1,15 +1,15 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/didmenines_prekybos_imoniu_apyvartos_be_pvm_indeksai_palyginamosiomis_kainomis,,,,,,,,,,,,,
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/didmen_prekyb_imoniu_apyvartos_indeksai,,,,,,,,,,,,Didmeninės prekybos įmonių apyvartos (be PVM) indeksai palyginamosiomis kainomis (2015 m. – 100),
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R842_M4070103_9,,,vda_id,,,4,,,"Didmeninės prekybos įmonių apyvartos (be PVM) indeksai palyginamosiomis kainomis (2015 m. – 100),Rinkinyje pateikiami duomenys apie  trumpalaikius didmeninės prekybos įmonių, išskyrus prekybą variklinėmis transporto priemonėmis ir motociklais, apyvartos (be PVM) pokyčius. Pateikta per Ekonominės veiklos rūšies (EVRK 2 red.), išlyginimo ir lyginimo dimensijas. Naudojamas ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.). Statistinio stebėjimo vienetas: Įmonė. Statistinė tiriamoji visuma: Visų rūšių ir dydžių veikiančios įmonės, kurių pagrindinė ekonominė veikla įvardyta EVRK 2 red. G sekcijos 46 skyriuje. Geografinė aprėptis: Visa šalies ekonominė teritorija. Laiko aprėptis: Nuo 2010 m. sausio mėn. Periodiškumas – mėnesinis."
+,,,,S8R842_M4070103_9,,,vda_id,,,4,,,Didmeninės prekybos įmonių apyvartos (be PVM) indeksai palyginamosiomis kainomis (2015 m. – 100),"Rinkinyje pateikiami duomenys apie  trumpalaikius didmeninės prekybos įmonių, išskyrus prekybą variklinėmis transporto priemonėmis ir motociklais, apyvartos (be PVM) pokyčius. Pateikta per Ekonominės veiklos rūšies (EVRK 2 red.), išlyginimo ir lyginimo dimensijas. Naudojamas ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.). Statistinio stebėjimo vienetas: Įmonė. Statistinė tiriamoji visuma: Visų rūšių ir dydžių veikiančios įmonės, kurių pagrindinė ekonominė veikla įvardyta EVRK 2 red. G sekcijos 46 skyriuje. Geografinė aprėptis: Visa šalies ekonominė teritorija. Laiko aprėptis: Nuo 2010 m. sausio mėn. Periodiškumas – mėnesinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,ekonomines_veiklos_rusis_evrk_2_red,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
-,,,,,ekonomines_veiklos_rusis_evrk_2_red_id,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.): identifikacinis numeris,
+,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,evrk_id,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.): identifikacinis numeris,
 ,,,,,islyginimas,string,,,,4,open,,Išlyginimas,
 ,,,,,islyginimas_id,string,,,,4,open,,Išlyginimas: identifikacinis numeris,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,M,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,lyginimas,string,,,,4,open,,Lyginimas,
 ,,,,,lyginimas_id,string,,,,4,open,,Lyginimas: identifikacinis numeris,
