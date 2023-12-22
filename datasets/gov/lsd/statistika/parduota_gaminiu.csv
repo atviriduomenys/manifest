@@ -21,7 +21,7 @@ Laiko aprėptis: nuo 2005m., metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,teritorija,string,,,,4,open,,Teritorija,
 ,,,,,teritorija_id,string,,,,4,open,,Teritorijos kodas,
-,,,,,teritorijos_tipas,string,,,,4,open,,Apskrities kodas,
+,,,,,teritorija_tipas,string,,,,4,open,,Teritorijos tipas,
 ,,,,,dalis,string,,,,4,open,,Dalis,
 ,,,,,dalis_id,string,,,,4,open,,Dalies kodas,
 ,,,,,gaminiu_sarasas,string,,,,4,open,,Gaminių sąrašas,
