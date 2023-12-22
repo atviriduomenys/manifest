@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
-,,,,,atnaujinta,string,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S1R111_M8020320_2,,,vda_id,,,4,,,Energijos srautų panaudojimas (pagal vartojimo kategorijas ir energijos produktus),"Rinkinyje pateikiami duomenys apie gamtinių energijos išteklių, energetikos produktų, energetinių liekanų fizinį energijos srautų panaudojimą. Pateikta per vartojimo kategorijų ir energijos produktų dimensijas. Statistinio stebėjimo vienetas: Ūkio subjektas, įskaitant namų ūkį. Statistinė tiriamoji visuma: šalies vienetai rezidentai ir ne rezidentai, kurie gali būti ir juridiniai vienetai, ir fiziniai asmenys. Geografinė aprėptis: Statistiniai rodikliai yra skaičiuojami ekonominės teritorijos mastu, įvertinant šalies vienetų rezidentų kuro ir energijos sunaudojimą užsienyje ir vienetų nerezidentų kuro ir energijos sunaudojimą Lietuvos teritorijoje. Laiko aprėptis: Nuo 2014 m. Periodiškumas – metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
