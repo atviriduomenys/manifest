@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/pramones_produk_kainu_indeksai,,,,,,,,,,,,Gamintojų parduotos pramonės produkcijos kainų indeksai (2015 m. – 100),
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S7R259_M2020327,,,vda_id,,,4,,,Gamintojų parduotos pramonės produkcijos kainų indeksai (2015 m. – 100),"Rinkinyje pateikiami duomenys apie Lietuvos gamintojų parduotos pramonės produkcijos bendrą kainų pokytį per mėnesio laikotarpį. Rinkinys reikalingas įvairiems rodikliams palyginamosiomis kainomis skaičiuoti, ekonomikos raidai analizuoti, Lietuvos gamintojų parduotos pramonės produkcijos kainų pokyčiams vertinti. Pateikta per Ekonominės veiklos rūšies (EVRK 2 red.) ir rinkos dimensijas. Naudojami klasifikatoriai: 1) Produktų, gaminių ir paslaugų klasifikatorius (PGPK 2019), 2) Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.), 3) Pasaulio šalių ir teritorijų klasifikatorius. Statistinio stebėjimo vienetas: įmonė. Statistinė tiriamoji visuma: Atrenkamos įvairių nuosavybės formų įmonės, kurios vykdo pramoninæ veiklą. Tai įmonės gamintojos, kurių parduotos Lietuvos ir ne Lietuvos rinkoje pramonės produkcijos apimtis sudaro didelæ atitinkamos gaminių kategorijos (10 ženklų lygiu pagal PGPK 2019) parduotos produkcijos dalį. Geografinė aprėptis: Visa šalies ekonominė teritorija. Laiko aprėptis: Nuo 1998 m. sausio mėn. Periodiškumas – mėnesinis."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,evrk_id,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.): identifikacinis numeris,
+,,,,,laikotarpis,date,M,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
+,,,,,rinka,string,,,,4,open,,Rinka,
+,,,,,rinka_id,string,,,,4,open,,Rinka: identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
