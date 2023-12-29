@@ -50,7 +50,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
-,,,,,skaitinė vertė,number,,,,4,open,,Skaitinė vertė,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S8R706_M4091106,,,vda_id,,,4,,,Išvykusių turistų išlaidos,"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
