@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vat/registruoti_aap,,,,,,,,,,,,,
+,datasets/gov/vat/registruoti_aap,,,,,,,,,,,,Informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Produktas,,,id,,,4,open,,Pateikiama informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus (pavadinimas,
+,,,,Produktas,,,id,,,4,open,,Pateikiama informacija apie Lietuvos Respublikoje registruotus augalų apsaugos produktus,
 ,,,,,id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,produktas,string,,,,4,open,,AAP pavadinimas,Bendroji informacija 
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
