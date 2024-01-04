@@ -9,11 +9,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
 ,,,,,registracijos_nr,string,,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
-,,,,,registracijos_atnaujinimas,string,,,,4,open,,Registracijos atnaujinimo data,
-,,,,,registracijos_pradzia,string,,,,4,open,,AAP registracijos data,Registracijos duomenys 
-,,,,,registracijos_pabaiga,string,,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
-,,,,,naudoti_iki,string,,,,4,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
-,,,,,prekiauti_iki,string,,,,4,open,,Pasibaigus registracijai prekiauti iki,Registracijos duomenys  
+,,,,,registracijos_atnaujinimas,string,,,,2,open,,Registracijos atnaujinimo data,
+,,,,,registracijos_pradzia,string,,,,2,open,,AAP registracijos data,Registracijos duomenys 
+,,,,,registracijos_pabaiga,string,,,,2,open,,AAP registracijos pabaigos data,Registracijos duomenys 
+,,,,,naudoti_iki,string,,,,2,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
+,,,,,prekiauti_iki,string,,,,2,open,,Pasibaigus registracijai prekiauti iki,Registracijos duomenys  
 ,,,,,medziagos_aprasymas,string,,,,2,open,,Cheminė medžiaga / Mikroorganizmas,Cheminės medžiagos / Mikroorganizmo suformuotas aprašymas
 ,,,,,veiklioji_medziaga,string,,,,4,open,,Cheminė medžiaga / Mikroorganizmas,
 ,,,,,,enum,,,"""Cheminė medžiaga""",,,,,
@@ -66,6 +66,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,karencijos_laikotarpis,string,,,,2,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_pastaba,string,,,,2,open,,Pastabos,Numatomi naudojimai (GAP) 
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
-,,,,,reglamento_keitimas,string,,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
-,,,,,isakymo_registravimas,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
+,,,,,reglamento_keitimas,string,,,,2,open,,AAP reglamento keitimo data,Registracijos duomenys 
+,,,,,isakymo_registravimas,string,,,,2,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
 ,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys
