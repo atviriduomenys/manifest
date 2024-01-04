@@ -9,11 +9,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savininkas,string,,,,1,open,,AAP registracijos savininkas,Bendroji informacija 
 ,,,,,atstovas,string,,,,1,open,,AAP registracijos savininko atstovas,Bendroji informacija 
 ,,,,,registracijos_nr,string,,,,4,open,,Registravimo Nr. Lietuvoje,Registracijos duomenys 
-,,,,,registracijos_atnaujinimas,date,D,,,4,open,,Registracijos atnaujinimo data,
-,,,,,registracijos_pradzia,date,D,,,4,open,,AAP registracijos data,Registracijos duomenys 
-,,,,,registracijos_pabaiga,date,D,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
-,,,,,naudoti_iki,date,D,,,4,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
-,,,,,prekiauti_iki,date,D,,,4,open,,Pasibaigus registracijai prekiauti iki,Registracijos duomenys  
+,,,,,registracijos_atnaujinimas,string,,,,4,open,,Registracijos atnaujinimo data,
+,,,,,registracijos_pradzia,string,,,,4,open,,AAP registracijos data,Registracijos duomenys 
+,,,,,registracijos_pabaiga,string,,,,4,open,,AAP registracijos pabaigos data,Registracijos duomenys 
+,,,,,naudoti_iki,string,,,,4,open,,Pasibaigus registracijai naudoti iki,Registracijos duomenys  
+,,,,,prekiauti_iki,string,,,,4,open,,Pasibaigus registracijai prekiauti iki,Registracijos duomenys  
 ,,,,,medziagos_aprasymas,string,,,,2,open,,Cheminė medžiaga / Mikroorganizmas,Cheminės medžiagos / Mikroorganizmo suformuotas aprašymas
 ,,,,,veiklioji_medziaga,string,,,,4,open,,Cheminė medžiaga / Mikroorganizmas,
 ,,,,,,enum,,,"""Cheminė medžiaga""",,,,,
@@ -59,13 +59,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kenksm_org_eppo,string,,,,2,open,,Lotyniški kenksmingų organizmų pavadinimai ir EPPO kodai,Numatomi naudojimai (GAP) 
 ,,,,,kenksm_organizmas,string,,,,2,open,,Lietuviški kenksmingųjų organizmų pavadinimai (papildomas),Numatomi naudojimai (GAP) 
 ,,,,,naudojimu_sk,string,,,,2,open,,Didžiausias naudojimų skaičius,Numatomi naudojimai (GAP) 
-,,,,,naudojimu_intervalas,number,d,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
+,,,,,naudojimu_intervalas,string,,,,2,open,,Mažiausias intervalas tarp naudojimų (dienomis),Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_norma,string,,,,2,open,,Naudojimo norma,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_normos_vnt,string,,,,2,open,,Naudojimo normos vnt.,Numatomi naudojimai (GAP) 
 ,,,,,vandens_kiekis,string,,,,2,open,,Vandens kiekis l/ha,Numatomi naudojimai (GAP) 
 ,,,,,karencijos_laikotarpis,string,,,,2,open,,Karencijos laikotarpis dienomis,Numatomi naudojimai (GAP) 
 ,,,,,naudojimo_pastaba,string,,,,2,open,,Pastabos,Numatomi naudojimai (GAP) 
 ,,,,,apribojimas,string,,,,2,open,,Naudojimo apribojimai,Numatomi naudojimai (GAP) 
-,,,,,reglamento_keitimas,date,D,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
-,,,,,isakymo_registravimas,date,D,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
-,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys 
+,,,,,reglamento_keitimas,string,,,,4,open,,AAP reglamento keitimo data,Registracijos duomenys 
+,,,,,isakymo_registravimas,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo data,Registracijos duomenys 
+,,,,,isakymo_nr,string,,,,4,open,,VATŽŪM direktoriaus įsakymo dėl AAP registravimo registracijos numeris,Registracijos duomenys
