@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/s1_nefinansines_saskaitos,,,,,,,,,,,,Visos ekonomikos nefinansinės sąskaitos ,
+,datasets/gov/lsd/statistika/s1_nefinansines_saskaitos,,,,,,,,,,,,S1 Visos ekonomikos nefinansinės sąskaitos,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
