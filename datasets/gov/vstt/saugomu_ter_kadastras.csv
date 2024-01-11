@@ -10,19 +10,34 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,bast_kodas,string,,,,4,open,,Vietovės identifikatorius,
 ,,,,,gkodas,string,,,,4,open,,InGIS geokodas,Saugomos teritorijos tipas
-,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
+,,,,,vieta,string,,,,4,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,registruota,date,D,,,4,open,,Įregistravimo data,Įregistravimo į kadastrą data
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
 ,,,,,pavadinimas,string,,,,4,open,,Buveinės,Buveinių  apsaugai svarbios  teritorijos pavadinimas
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Juridinis
 ,,,,,ilgis,number,m,,,4,open,,Ilgis,
-,,,,,statusas_bast,integer,,,,2,open,,Apsaugos statusas,
+,,,,,statusas_bast,integer,,,,4,open,,Apsaugos statusas,
+,,,,,,enum,,,1,,,,"Vietovės, atitinkančios, BAST kriterijus, patvirtintos D1-210 ministro įsakymu",
+,,,,,,,,,2,,,,"Buveinių apsaugai svarbios teritorijos, patvirtintos LRV",
+,,,,,,,,,3,,,,"Buveinių apsaugai svarbios teritorijos, patvirtintos D1-317 ministro įsakymu",
 ,,,,,statuso_ta,string,,,,4,open,,Aktas,Buveinių apsaugai svarbios vietovės įsteigimo pagrindas (juridinis aktas)
 ,,,,,bendr_reglam,string,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
 ,,,,,steigiama,date,D,,,4,open,,Statuso suteikimo data,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
-,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
+,,,,,id_vart,integer,,,,4,open,,Abonento klasifikatorius,
+,,,,,,enum,,,101,,,,Aukštaitijos NP ir Labanoro RP direkcija,
+,,,,,,,,,102,,,,Aukštaitijos saugomų teritorijų direkcija,
+,,,,,,,,,103,,,,Dzūkijos – Suvalkijos saugomų teritorijų direkcija,
+,,,,,,,,,104,,,,Dzūkijos NP ir Čepkelių VGR direkcija,
+,,,,,,,,,105,,,,Kernavės VKRz direkcija,
+,,,,,,,,,106,,,,Kuršių nerijos NP direkcija,
+,,,,,,,,,107,,,,Mažosios Lietuvos saugomų teritorijų direkcija,
+,,,,,,,,,108,,,,Trakų INP direkcija,
+,,,,,,,,,109,,,,Pavinių ir Verkių RP direkcija,
+,,,,,,,,,110,,,,Žemaitijos NP direkcija,
+,,,,,,,,,111,,,,Žemaitijos saugomų teritorijų direkcija,
+,,,,,,,,,112,,,,Vilniaus pilių VKRz direkcija,
 ,,,,,,,,,,,,,,
 ,,,,BiosferosPoligonas,,,id,,,4,,,Biosferos poligonai,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
