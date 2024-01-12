@@ -1340,7 +1340,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""np5""",,,,Biosferos poligonas,
 ,,,,,,,,,"""nz4""",,,,Konservacinio funkcinio prioriteto zona - rezervatas,
 ,,,,,,,,,"""nz5""",,,,Konservacinio funkcinio prioreteto zona - draustinis,
-,,,,,tipas,integer,,,,2,open,,Sklypo tipas,
+,,,,,tipas,integer,,,,4,open,,Sklypo tipas,
 ,,,,,,enum,,,1,,,,Aukuriamasis,
 ,,,,,,,,,2,,,,Genetinis,
 ,,,,,skl_rus,integer,,,,4,open,,Sklypo rūšis,Atkuriamojo arba genetinio sklypo rūšis
