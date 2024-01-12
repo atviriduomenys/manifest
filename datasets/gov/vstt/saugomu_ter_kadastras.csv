@@ -1184,7 +1184,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isreg_ta,string,,,,4,open,,Išregistravimo,Teisės aktas
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
 ,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
-,,,,,id_vart,integer,,,,2,open,,Abonento klasifikatorius,
+,,,,,id_vart,integer,,,,4,open,,Abonento klasifikatorius,
 ,,,,,,enum,,,101,,,,Aukštaitijos NP ir Labanoro RP direkcija,
 ,,,,,,,,,102,,,,Aukštaitijos saugomų teritorijų direkcija,
 ,,,,,,,,,103,,,,Dzūkijos – Suvalkijos saugomų teritorijų direkcija,
