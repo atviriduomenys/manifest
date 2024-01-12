@@ -1205,7 +1205,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""nr0""",,,,Valstybinis,
 ,,,,,,,,,"""nr1""",,,,Rezervatinė apyrubė,
 ,,,,,,,,,"""nz4""",,,,Konservacinio funkcinio prioriteto zona,
-,,,,,rezervat_pobud,integer,,,,2,open,,Rezervato pobūdis,
+,,,,,rezervat_pobud,integer,,,,4,open,,Rezervato pobūdis,
 ,,,,,,enum,,,1,,,,Gamtinis,
 ,,,,,,,,,2,,,,Kultūrinis,
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
