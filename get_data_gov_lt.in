@@ -77,6 +77,13 @@ datasets/gov/rc/ppnsis/nariu_skaicius.csv
 datasets/gov/rc/ppnsis/politines_organizacijos.csv
 datasets/gov/rc/espbiis/receptai.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai.csv
+datasets/gov/rc/espbiis/receptai_2017.csv
+datasets/gov/rc/espbiis/receptai_2018.csv
+datasets/gov/rc/espbiis/receptai_2019.csv
+datasets/gov/rc/espbiis/receptai_2020.csv
+datasets/gov/rc/espbiis/receptai_2021.csv
+datasets/gov/rc/espbiis/receptai_2022.csv
+datasets/gov/rc/espbiis/receptai_2023.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_amziu_lyti.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_apskritis.csv
 datasets/gov/rc/nirvar/neveiksnus_pagal_neveiksnumo_sritis.csv
