@@ -3,6 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Statinys,,,,,,,,,"Valstybės teritorijų planavimo ir statybos inspekcija prie aplinkos ministerijos duomenys",
+,,,,,id,string,,,,4,open,,Iraso identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Projekto identifikatorius,
 ,,,,,statinio_id,string,,,,4,open,,Statinio identifikatorius,
 ,,,,,projekto_pavadinimas,string,,,,2,open,,Projekto pavadinimas,
