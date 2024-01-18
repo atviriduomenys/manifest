@@ -529,7 +529,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,800,,,,Genetinis,
 ,,,,,,,,,900,,,,Telmologinis,
 ,,,,,,,,,1000,,,,Talasologinis,
-,,,,,draust_porus,integer,,,,2,open,,Draustinio porūšis,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
 ,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
@@ -1169,7 +1168,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,PauksciuApsaugaiSvarbiTeritorija,,,id,,,4,,,Paukščių apsaugai svarbios teritorijos,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,bast_kodas,string,,,,4,open,,Vietovės identifikatorius,
-,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
 ,,,,,registruota,date,D,,,4,open,,Įregistravimo data,Įregistravimo į kadastrą data
 ,,,,,isregistruota,date,D,,,4,open,,Išregistravimo iš kadastro data,
