@@ -986,8 +986,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
-,,,,,mineralizacija,number,mg/l,,,3,open,,Mineralizacija,
-,,,,,vandenskietumas,number,mg/l,,,3,open,,Vandens kietumas,
+,,,,,mineralizacija,number,mg/l,,,4,open,,Mineralizacija,
+,,,,,vandenskietumas,number,mg/l,,,4,open,,Vandens kietumas,
 ,,,,,obj_status,integer,,,,4,open,,Objekto būsena,
 ,,,,,,enum,,,1,,,,Aktualūs,
 ,,,,,,,,,2,,,,Sunykę,
