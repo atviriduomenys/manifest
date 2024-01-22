@@ -930,7 +930,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybės saugomas,
 ,,,,,,,,,2,,,,Savivaldybės saugomas,
-,,,,,objektu_rusys,integer,,,,2,open,,Hidrogeologinių objektų rūšys,"Šaltiniai, versmės"
+,,,,,objektu_rusys,integer,,,,4,open,,Hidrogeologinių objektų rūšys,
+,,,,,,enum,,,1,,,,"Šaltiniai, versmės",
 ,,,,,kult_paveld_kodas,integer,,,,2,open,,Kodas,Jeigu gamtos paveldo objektas kartu turi ir kultūros paveldo objekto statusą nurodomas šio objekto kodas iš Nekilnojamųjų kultūros vertybių registro
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
@@ -1251,6 +1252,62 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,ta_nust_st_dalis,string,,,,4,open,,Teises aktas,Teisės aktas nustatęs kad rezervatas tapo kompleksinės saugomos teritorijos dalimi
+,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
+,,,,,id_vart,integer,,,,4,open,,Abonento klasifikatorius,
+,,,,,,enum,,,101,,,,Aukštaitijos NP ir Labanoro RP direkcija,
+,,,,,,,,,102,,,,Aukštaitijos saugomų teritorijų direkcija,
+,,,,,,,,,103,,,,Dzūkijos – Suvalkijos saugomų teritorijų direkcija,
+,,,,,,,,,104,,,,Dzūkijos NP ir Čepkelių VGR direkcija,
+,,,,,,,,,105,,,,Kernavės VKRz direkcija,
+,,,,,,,,,106,,,,Kuršių nerijos NP direkcija,
+,,,,,,,,,107,,,,Mažosios Lietuvos saugomų teritorijų direkcija,
+,,,,,,,,,108,,,,Trakų INP direkcija,
+,,,,,,,,,109,,,,Pavinių ir Verkių RP direkcija,
+,,,,,,,,,110,,,,Žemaitijos NP direkcija,
+,,,,,,,,,111,,,,Žemaitijos saugomų teritorijų direkcija,
+,,,,,,,,,112,,,,Vilniaus pilių VKRz direkcija,
+,,,,,,,,,,,,,,
+,,,,RezervatineApyrube,,,id,,,4,,,Rezervatinės apyrubės,
+,,,,,id,string,,,,4,open,,Identifikavimo kodas,
+,,,,,pavadinimas,string,,,,4,open,,Pavadinimas,
+,,,,,gkodas,string,,,,2,open,,InGIS geokodas,Saugomos teritorijos tipas
+,,,,,rezervat_pobud,integer,,,,2,open,,Rezervato pobūdis angliškai,
+,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
+,,,,,,enum,,,1,,,,Valstybės saugomas,
+,,,,,,,,,2,,,,Savivaldybės saugomas,
+,,,,,centras,"geometry(point,3346)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
+,,,,,plotas,number,ha,,,4,open,,Plotas,
+,,,,,steigejas,string,,,,2,open,,Steigėjas – institucija,
+,,,,,steigimas,date,D,,,4,open,,Steigimo data,
+,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
+,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
+,,,,,vieta,string,,,,2,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
+,,,,,bendr_reglam,integer,,,,4,open,,Reglamentas,Bendrieji veiklos reglamentai nuoroda į teisės aktą
+,,,,,,enum,,,1,,,,Rezervatai,
+,,,,,,,,,2,,,,Draustiniai,
+,,,,,,,,,3,,,,Parkai,
+,,,,,,,,,4,,,,Sklypai,
+,,,,,,,,,5,,,,"Biosferos Poligonai, Biosferos Rezervatai",
+,,,,,,,,,6,,,,Gamtos paveldo objektai,
+,,,,,spec_reglam,string,,,,4,open,,Reglamentai,Specialieji / individualieji veiklos reglamentai
+,,,,,saltiniai,string,,,,2,open,,Duomenų  šaltiniai,Nurodomi moksliniai tyrimai ir publikacijos
+,,,,,tarpt_svarba_status,integer,,,,2,open,,Teritorijos statusas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos  (įskaitant Europos Bendrijų svarbos) teritorijos statusas
+,,,,,,enum,,,0,,,,Nėra duomenų,
+,,,,,,,,,1,,,,Unesco,
+,,,,,,,,,2,,,,Ramsar,
+,,,,,,,,,3,,,,Buveinių apsaugos,
+,,,,,,,,,4,,,,Paukščių apsaugos,
+,,,,,,,,,5,,,,Helcom,
+,,,,,,,,,6,,,,Paukščių ir buveinių apsaugos,
+,,,,,tarpt_svarba_apras,string,,,,2,open,,Aprašas,Saugomai teritorijai arba jos daliai suteiktas tarptautinės svarbos (įskaitant Europos Bendrijų svarbos) teritorijos statuso aprašymas
+,,,,,gamtiniai_kompleksai,integer,,,,4,open,,Gamtiniai kompleksai,Duomenys apie saugomus gamtinius kompleksus ir jų būklę
+,,,,,,enum,,,0,,,,Nėra duomenų,
+,,,,,,,,,1,,,,Gera,
+,,,,,,,,,2,,,,Patenkinama,
+,,,,,,,,,3,,,,Bloga,
+,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
+,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
+,,,,,pastabos,string,,,,4,open,,Pastabos,
 ,,,,,geometrija,geometry(4326),,,,4,open,,Ploto geometrija,
 ,,,,,id_vart,integer,,,,4,open,,Abonento klasifikatorius,
 ,,,,,,enum,,,101,,,,Aukštaitijos NP ir Labanoro RP direkcija,
