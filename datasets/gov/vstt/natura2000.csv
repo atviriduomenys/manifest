@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
 ,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
 ,,,,,tipas,string,,,,3,open,,Buveinių ekosistemos grupė,
-,,,,,geometrija,"geometry(Multipolygon,3346)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
+,,,,,geometrija,"geometry(4326)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
 ,,,,,sluoksnis,string,,,,3,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
 ,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
 ,,,,,tipas,string,,,,3,open,,Buveinių ekosistemos grupė,
-,,,,,geometrija,"geometry(Multipolygon,3346)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
+,,,,,geometrija,"geometry(4326)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
 ,,,,,bukle,string,,,,3,open,,Vertybės būklė,
