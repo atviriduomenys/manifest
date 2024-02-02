@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/siauliai/parama,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,ParamaSmulkiamVerslui,,,,,,4,open,,Parama smulkiajam ir vidutiniam verslui,
+,,,,,id,integer,,,,4,open,,ID,
+,,,,,metai,string,,,,3,open,,Metai,
+,,,,,paramos_priemone,string,,,,4,open,,Paramos priemonė,
+,,,,,pareiskejas,string,,,,2,open,,Pareiškėjas,
+,,,,,skirta_parama,number,,,,4,open,,Skirta suma,
