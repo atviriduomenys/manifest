@@ -555,3 +555,5 @@ datasets/gov/lsd/statistika/statybos_sanaudu_kainu_indeksai.csv
 datasets/gov/lsd/statistika/energijos_srautu_istekliai.csv
 datasets/gov/lsd/statistika/viesbuciai_moteliai.csv
 datasets/gov/lsd/statistika/s1_nefinansines_saskaitos.csv
+datasets/gov/siauliai/pirkimai.csv
+datasets/gov/siauliai/parama.csv
