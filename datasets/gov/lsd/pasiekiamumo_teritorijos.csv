@@ -1,6 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/svietimas/pasiekiamumo_teritorijos,,,,,,,,,,,,Švietimo institucijų pasiekiamumo pėsčiomis ir automobiliu teritorijos,
-,,,,,,,,,,,,,,
+,datasets/gov/aaa/chemijos_naudotojai/pasiekiamumo_teritorijos,,,,,,,,,,,,Švietimo institucijų pasiekiamumo pėsčiomis ir automobiliu teritorijos,
 ,,,,,,,,,,,,,,
 ,,,,BuiTeritorijos15min,,,,,,4,,,Švietimo institucijų 15 minučių pasiekiamumo pėsčiomis ir automobiliu teritorijos.,"Duomenų aprėptį sudaro švietimo institucijos, kuriose, tikslinių metų rugsėjo 1 dienos duomenimis, yra ugdomi mokiniai pagal bendrojo ugdymo programas. Priskiriant mokinį prie teritorijos Laikoma, kad jo gyvenamoji vieta sutampa su Gyventojų registre deklaruota gyvenamąja vieta tikslinių metų rugsėjo 1 dieną. Tais atvejais, kai šią datą asmuo nebuvo deklaravęs gyvenamosios vietos, mokinio gyvenamąja vieta buvo laikoma paskutinė ankstesnė deklaruota jo gyvenamoji vieta.
 Sudarant 15 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko valandas ir savaitės dienas. Duomenų rinkinys atnaujinamas du kartus per metus (spalio ir sausio mėnesį)."
@@ -45,4 +44,3 @@ Sudarant 30 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko val
 ,,,,,,,,,"""automobiliu""",,,,,
 ,,,,,naujinimo_data,date,D,,,4,open,,Duomenų naujinimo data,
 ,,,,,geometrija,"geometry(polygon, 3346)",m,,,4,open,,Objekto geometrija WKT formatu (LKS94),
-
