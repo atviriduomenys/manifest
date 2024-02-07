@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sluoksnis,string,,,,3,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
 ,,,,,statusas,string,,,,3,open,,Objekto teisinis statusas,
 ,,,,,,,,,,,,,,
-,,,,ApsaugosTikslas,,,id,,,4,,,Natura 2000 teritorijų apsaugos tikslų duomenys,
+,,,,ApsaugosTikslas,,,,,,4,,,Natura 2000 teritorijų apsaugos tikslų duomenys,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija,,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
 ,,,,,kodas.pavadinimas,string,,,,2,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
