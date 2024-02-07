@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/svietimas/pasiekiamumo_teritorijos,,,,,,,,,,,,Švietimo institucijų pasiekiamumo pėsčiomis ir automobiliu teritorijos,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 ,,,,BuiTeritorijos15min,,,,,,4,,,Švietimo institucijų 15 minučių pasiekiamumo pėsčiomis ir automobiliu teritorijos.,"Duomenų aprėptį sudaro švietimo institucijos, kuriose, tikslinių metų rugsėjo 1 dienos duomenimis, yra ugdomi mokiniai pagal bendrojo ugdymo programas. Priskiriant mokinį prie teritorijos Laikoma, kad jo gyvenamoji vieta sutampa su Gyventojų registre deklaruota gyvenamąja vieta tikslinių metų rugsėjo 1 dieną. Tais atvejais, kai šią datą asmuo nebuvo deklaravęs gyvenamosios vietos, mokinio gyvenamąja vieta buvo laikoma paskutinė ankstesnė deklaruota jo gyvenamoji vieta.
 Sudarant 15 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko valandas ir savaitės dienas. Duomenų rinkinys atnaujinamas du kartus per metus (spalio ir sausio mėnesį)."
 ,,,,,laikas_min,integer,,,,2,open,,"Maksimalus laikas minutėmis, per kurį įmanoma pasiekti švietimo instituciją",
@@ -22,8 +21,7 @@ Sudarant 15 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko val
 ,,,,,,enum,,,"""pėsčiomis""",,,,,
 ,,,,,,,,,"""automobiliu""",,,,,
 ,,,,,naujinimo_data,date,D,,,4,open,,Duomenų naujinimo data,
-,,,,,geometrija,geometry,,,,2,open,,Objekto geometrija WKT formatu (LKS94),
-,,,,,,comment,type,,"update(type: ""geometry(polygon, 3346)"")",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+,,,,,geometrija,"geometry(polygon, 3346)",m,,,4,open,,Objekto geometrija WKT formatu (LKS94),
 ,,,,,,,,,,,,,,
 ,,,,BuiTeritorijos30min,,,,,,4,,,Švietimo institucijų 30 minučių pasiekiamumo pėsčiomis ir automobiliu teritorijos.,"Duomenų aprėptį sudaro švietimo institucijos, kuriose, tikslinių metų rugsėjo 1 dienos duomenimis, yra ugdomi mokiniai pagal bendrojo ugdymo programas. Priskiriant mokinį prie teritorijos Laikoma, kad jo gyvenamoji vieta sutampa su Gyventojų registre deklaruota gyvenamąja vieta tikslinių metų rugsėjo 1 dieną. Tais atvejais, kai šią datą asmuo nebuvo deklaravęs gyvenamosios vietos, mokinio gyvenamąja vieta buvo laikoma paskutinė ankstesnė deklaruota jo gyvenamoji vieta.
 Sudarant 30 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko valandas ir savaitės dienas. Duomenų rinkinys atnaujinamas du kartus per metus (spalio ir sausio mėnesį)."
@@ -45,5 +43,4 @@ Sudarant 30 min pasiekiamumo automobiliu teritorijas, neatsižvelgta į piko val
 ,,,,,,enum,,,"""pėsčiomis""",,,,,
 ,,,,,,,,,"""automobiliu""",,,,,
 ,,,,,naujinimo_data,date,D,,,4,open,,Duomenų naujinimo data,
-,,,,,geometrija,geometry,,,,2,open,,Objekto geometrija WKT formatu (LKS94),
-,,,,,,comment,type,,"update(type: ""geometry(polygon, 3346)"")",3,open,vadovas:dsa/duomenu-tipai.html#erdviniai-duomenys,,
+,,,,,geometrija,"geometry(polygon, 3346)",m,,,4,open,,Objekto geometrija WKT formatu (LKS94),
