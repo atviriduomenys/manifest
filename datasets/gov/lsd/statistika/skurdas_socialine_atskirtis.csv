@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/asmenys_gyvenantys_skurdo_rizikoje_ar_socialineje_atskirtyje,,,,,,,,,,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje",
+,datasets/gov/lsd/statistika/skurdas_socialine_atskirtis,,,,,,,,,,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
