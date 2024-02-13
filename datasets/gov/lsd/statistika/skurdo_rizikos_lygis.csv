@@ -7,7 +7,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
-,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
