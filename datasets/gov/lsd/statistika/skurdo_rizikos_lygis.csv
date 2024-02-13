@@ -8,7 +8,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
-
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
@@ -20,7 +19,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,S3R453_M3080361,,,vda_id,,,4,,,Skurdo rizikos lygis (pagal pajamų kvintilines grupes),"Metinė visų Lietuvos privačių namų ūkių ir nuolatinių Lietuvos gyventojų statistinė informacija apie asmenų, kurių ekvivalentinės piniginės disponuojamosios pajamos mažesnės už skurdo rizikos ribą, dalį, jų pasiskirstymą pagal pajamų kvintilines grupes nuo 2021 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
-
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
@@ -36,7 +34,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gimimo_salis,string,,,,4,open,,Gimimo šalis,
 ,,,,,gimimo_salis_id,string,,,,4,open,,Gimimo šalis: identifikacinis numeris,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
-
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
