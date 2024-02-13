@@ -16,9 +16,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,S3R724_M3080364,,,vda_id,,,4,,,18 metų ir vyresnių asmenų skurdo rizikos lygis (pagal išsilavinimo lygį),"Rinkinyje pateikiami duomenys apie 18 metų ir vyresnių asmenų skurdo rizikos lygį pagal išsilavinimą. Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys. Pateikta per išsilavinimo lygio ir laikotarpio dimensijas. Naudojamų klasifikatorių nėra. Statistinio stebėjimo vienetas: Privatus namų ūkis ir 16 metų ir vyresnis asmuo – privataus namų ūkio narys. Statistinė tiriamoji visuma:  visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai. Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami. Geografinė aprėptis: nuo 2021m. Periodiškumas – metinis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,issilavinimo_lygis,date,,,,4,open,,Išsilavinimo lygis,
+,,,,,issilavinimo_lygis,string,,,,4,open,,Išsilavinimo lygis,
 ,,,,,issilavinimo_lygis_id,string,,,,4,open,,Išsilavinimo lygis: identifikacinis numeris,
-,,,,,laikotarpis,string,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
