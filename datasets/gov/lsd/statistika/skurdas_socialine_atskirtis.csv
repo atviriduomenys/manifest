@@ -1,20 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/skurdas_socialine_atskirtis,,,,,,,,,,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje",
+,datasets/gov/lsd/statistika/skurdas_socialine_atskirtis,,,,,,,,,,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir lyties, pajamų kvintilines grupių, amžiaus ir pilietybės, amžiaus ir gimimo šalies, išsilavinimo, aktyvumo statuso dimensijas nuo 2021 metų. "
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080246_1,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir lytį)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys.
-Pateikta per amžiaus ir lyties dimensijas.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080246_1,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir lytį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir lyties dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
@@ -25,18 +14,7 @@ kiti rodikliai – nuo 2005 m."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080365,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal pajamų kvintilines grupes)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys.
-Pateikta per pajamų kvintilines grupių dimensijas.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080365,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal pajamų kvintilines grupes)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per pajamų kvintilines grupes dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
@@ -47,17 +25,7 @@ kiti rodikliai – nuo 2005 m."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080366,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir pilietybę)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys. Pateikta per amžiaus ir pilietybės dimensijas.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080366,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir pilietybę)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir pilietybės dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
@@ -70,22 +38,12 @@ kiti rodikliai – nuo 2005 m."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080367,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir gimimo šalį)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys. Pateikta per amžiaus ir gimimo šalies dimensijas.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080367,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir gimimo šalį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir gimimo šalies dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
 ,,,,,gimimo_salis,string,,,,4,open,,Gimimo šalis,
-,,,,,Gimimo šalis: identifikacinis numeris,string,,,,4,open,,Gimimo šalis: identifikacinis numeris,
+,,,,,gimimo_salis_id,string,,,,4,open,,Gimimo šalis: identifikacinis numeris,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
@@ -93,17 +51,7 @@ kiti rodikliai – nuo 2005 m."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080368,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal išsilavinimo lygį)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys. Pateikta per išsilavinimo dimensiją.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080368,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal išsilavinimo lygį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per išsilavinimo lygį dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,issilavinimo_lygis,string,,,,4,open,,Išsilavinimo lygis,
 ,,,,,issilavinimo_lygis_id,string,,,,4,open,,Išsilavinimo lygis: identifikacinis numeris,
@@ -114,17 +62,7 @@ kiti rodikliai – nuo 2005 m."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080370,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal aktyvumo statusą)","Skurdo rodiklių skaičiavimo tikslas – parengti nacionalinius absoliutaus skurdo rodiklius bei palyginamus su kitomis Europos Sąjungos šalimis skurdo rizikos ir socialinės atskirties rodiklius, stebėti jų pokyčius, nustatyti dažniausiai į absoliutų skurdą, skurdo riziką ir socialinę atskirtį patenkančias gyventojų grupes. Skurdo rodikliams rengti naudojami pajamų ir gyvenimo sąlygų statistinio tyrimo duomenys. Pateikta per aktyvumo statuso dimensiją.
-Naudojami klasifikatoriai:
-Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
-Teritorinių statistinių vienetų klasifikatorius (NUTS).
-Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ir vyresnis asmuo – privatus namų ūkio narys.
-Statistinė tiriamoji visuma: Tiriamoji visuma – visi Lietuvos privatūs namų ūkiai ir nuolatiniai Lietuvos gyventojai.
-Asmenys, gyvenantys instituciniuose namų ūkiuose (globos namuose, šeimynose, įkalinimo įstaigose, vienuolynuose), nėra tiriami.
-Geografinė aprėptis: Statistinė informacija rengiama šalies ir regionų lygmeniu, rodiklis „Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis“ – ir apskričių lygmeniu.
-Laiko aprėptis: Absoliutaus skurdo rodikliai – nuo 2016 m.
-Asmenų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje, dalis taikant dabartinę apibrėžtį, didelio materialinio ir socialinio nepritekliaus lygis – nuo 2021 m.,
-kiti rodikliai – nuo 2005 m."
+,,,,S3R0004_M3080370,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal aktyvumo statusą)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per aktyvumo statuso dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,aktyvumo_statusas,string,,,,4,open,,Aktyvumo statusas,
 ,,,,,aktyvumo_statusas_id,string,,,,4,open,,Aktyvumo statusas: identifikacinis numeris,
