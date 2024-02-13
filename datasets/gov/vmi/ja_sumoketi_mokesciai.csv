@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Moketojas,,,id,,,4,open,,Mokesčių mokėtojas,
 ,,,,,id,string,,,,4,open,,Mokėtojo ID VMI sistemoje,
-,,,,,mm_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens kodas,
+,,,,,mm_kodas,ref,/datasets/gov/vmi/mm_registras/MokesciuMoketojas,,,4,open,,Juridinio asmens kodas,
 ,,,,,pavadinimas,string,,,,2,open,,Mokėtojo pavadinimas,
 ,,,,,tipas,string,,,,3,open,,Mokėtojo tipas,
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/apskritis/Apskritis,,,4,open,,Juridinio asmens apskritis,
