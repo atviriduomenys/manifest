@@ -557,5 +557,6 @@ datasets/gov/lsd/statistika/viesbuciai_moteliai.csv
 datasets/gov/lsd/statistika/s1_nefinansines_saskaitos.csv
 datasets/gov/siauliai/pirkimai.csv
 datasets/gov/siauliai/parama.csv
+datasets/gov/lsd/statistika/skurdas_socialine_atskirtis.csv
 datasets/gov/lsd/statistika/mazo_darbo_intensyvumo_asmenys.csv
 datasets/gov/lsd/statistika/islaikomo_amziaus_gyventojai.csv
