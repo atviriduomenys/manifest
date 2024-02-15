@@ -78,6 +78,12 @@ datasets/gov/rc/ppnsis/politines_organizacijos.csv
 datasets/gov/rc/espbiis/receptai.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2017.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2018.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2019.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2020.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2021.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2022.csv
+datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2023.csv
 datasets/gov/rc/espbiis/receptai_2017.csv
 datasets/gov/rc/espbiis/receptai_2018.csv
 datasets/gov/rc/espbiis/receptai_2019.csv
