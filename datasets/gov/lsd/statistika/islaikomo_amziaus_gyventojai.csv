@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0477_M3010220_1,,,vda_id,,,4,,,Išlaikomo amžiaus pagyvenusių žmonių koeficientas metų pradžioje,"Išlaikomo amžiaus pagyvenusių (65 metų ir vyresnio amžiaus) nuolatinių Lietuvos Respublikos gyventojų skaičiaus, tenkančio šimtui 15–64 metų amžiaus gyventojų, pasiskirstymas Lietuvos Respublikos teritorijos administraciniuose vienetuose."
+,,,,S3R0477M30102201,,,vda_id,,,4,,,Išlaikomo amžiaus pagyvenusių žmonių koeficientas metų pradžioje,"Išlaikomo amžiaus pagyvenusių (65 metų ir vyresnio amžiaus) nuolatinių Lietuvos Respublikos gyventojų skaičiaus, tenkančio šimtui 15–64 metų amžiaus gyventojų, pasiskirstymas Lietuvos Respublikos teritorijos administraciniuose vienetuose."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
 ,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifiktorius,
