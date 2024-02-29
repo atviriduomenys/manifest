@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0450_M3080220_6,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, lytį, nepriteklių)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+,,,,S3R0450M30802206,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, lytį, nepriteklių)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
 Tyrime naudojamas klasifikatorius:
 Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
@@ -17,7 +17,7 @@ Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0450_M3080371,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal išsilavinimo lygį ir nepriteklių),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+,,,,S3R0450M3080371,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal išsilavinimo lygį ir nepriteklių),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
 Tyrime naudojamas klasifikatorius:
 Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
@@ -31,7 +31,7 @@ Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0450_M3080372,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklių, gimimo šalį)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+,,,,S3R0450M3080372,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklių, gimimo šalį)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
 Tyrime naudojamas klasifikatorius:
 Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
@@ -47,7 +47,7 @@ Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0450_M3080373,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklį, pilietybę)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+,,,,S3R0450M3080373,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklį, pilietybę)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
 Tyrime naudojamas klasifikatorius:
 Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
@@ -63,7 +63,7 @@ Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,pilietybe_id,string,,,,4,open,,Pilietybė ID,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0450_M3080374,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal nepriteklių ir aktyvumo statusą),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+,,,,S3R0450M3080374,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal nepriteklių ir aktyvumo statusą),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
 Tyrime naudojamas klasifikatorius:
 Teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,

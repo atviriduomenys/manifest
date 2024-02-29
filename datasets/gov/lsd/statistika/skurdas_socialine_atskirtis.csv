@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080246_1,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir lytį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir lyties dimensijas nuo 2021 metų. "
+,,,,S3R0004M30802461,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir lytį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir lyties dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080365,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal pajamų kvintilines grupes)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per pajamų kvintilines grupes dimensiją nuo 2021 metų. "
+,,,,S3R0004M3080365,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal pajamų kvintilines grupes)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per pajamų kvintilines grupes dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
 ,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080366,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir pilietybę)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir pilietybės dimensijas nuo 2021 metų. "
+,,,,S3R0004M3080366,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir pilietybę)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir pilietybės dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
@@ -38,7 +38,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080367,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir gimimo šalį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir gimimo šalies dimensijas nuo 2021 metų. "
+,,,,S3R0004M3080367,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal amžių ir gimimo šalį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per amžiaus ir gimimo šalies dimensijas nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
@@ -51,7 +51,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080368,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal išsilavinimo lygį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per išsilavinimo lygį dimensiją nuo 2021 metų. "
+,,,,S3R0004M3080368,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal išsilavinimo lygį)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per išsilavinimo lygį dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,issilavinimo_lygis,string,,,,4,open,,Išsilavinimo lygis,
 ,,,,,issilavinimo_lygis_id,string,,,,4,open,,Išsilavinimo lygis: identifikacinis numeris,
@@ -62,7 +62,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R0004_M3080370,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal aktyvumo statusą)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per aktyvumo statuso dimensiją nuo 2021 metų. "
+,,,,S3R0004M3080370,,,vda_id,,,4,,,"Asmenys, gyvenantys skurdo rizikoje ar socialinėje atskirtyje (pagal aktyvumo statusą)","Metinis nuolatinių Lietuvos gyventojų, gyvenančių skurdo rizikoje ar socialinėje atskirtyje dalis per aktyvumo statuso dimensiją nuo 2021 metų. "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,aktyvumo_statusas,string,,,,4,open,,Aktyvumo statusas,
 ,,,,,aktyvumo_statusas_id,string,,,,4,open,,Aktyvumo statusas: identifikacinis numeris,
