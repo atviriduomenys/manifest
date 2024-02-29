@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
 ,,,,,regionai,string,,,,4,open,,Regionai,
 ,,,,,regionai_id,string,,,,4,open,,Regionai: identifikacinis numeris,
-,,,,,verte,numeric,,,,4,open,,Skaitinė vertė,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
 ,,,,S3R822M3080363,,,vda_id,,,4,,,Pajamų pasiskirstymo koeficientas S80/S20 (pagal amžių ir lytį),"Metinė visų Lietuvos privačių namų ūkių ir nuolatinių Lietuvos gyventojų statistinė informacija apie asmenų, kurių ekvivalentinės piniginės disponuojamosios pajamos yra penktojoje kvintilinėje grupėje, ir asmenų, kurių ekvivalentinės piniginės disponuojamosios pajamos yra pirmojoje kvintilinėje grupėje, santykį pagal amžių ir lytį nuo 2021 m."
@@ -24,5 +24,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis_id,string,,,,4,open,,Lytis: identifikacinis numeris,
 ,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai: identifikacinis numeris,
-,,,,,verte,numeric,%,,,4,open,,Skaitinė vertė,
+,,,,,verte,number,%,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
