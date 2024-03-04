@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/statistika/pajamu_koeficientas_S80S20,,,,,,,,,,,,Pajamų pasiskirstymo koeficientas S80/S20,
+,datasets/gov/lsd/statistika/pajamu_koeficientas_s80s20,,,,,,,,,,,,Pajamų pasiskirstymo koeficientas S80/S20,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
