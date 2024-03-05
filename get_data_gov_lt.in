@@ -75,8 +75,6 @@ datasets/gov/rc/ntr/ntr_zemes_sklypai.csv
 datasets/gov/rc/ppnsis/nariai.csv
 datasets/gov/rc/ppnsis/nariu_skaicius.csv
 datasets/gov/rc/ppnsis/politines_organizacijos.csv
-datasets/gov/rc/espbiis/receptai.csv
-datasets/gov/rc/espbiis/vaistu_isdavimai.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2017.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2018.csv
 datasets/gov/rc/espbiis/vaistu_isdavimai_rec_2019.csv
