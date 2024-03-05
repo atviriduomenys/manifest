@@ -401,7 +401,6 @@ datasets/gov/vat/r24_panaikinti_sertifikatai.csv
 datasets/gov/finmin/kvietimai.csv
 datasets/gov/vat/saugomos_veisles.csv
 datasets/gov/vat/r10_prekyba_aap.csv
-datasets/gov/vat/r23_atestuota_dm.csv
 datasets/gov/vat/r13_kokybes_laboratorijos.csv
 datasets/gov/vat/r25_uzdraustos_medziagos.csv
 datasets/gov/vat/seklu_emejai.csv
