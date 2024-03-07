@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rc/ntr/butu_pirkimo_sandoriai,,,,,,,,,,,,Gyvenamosios (butų) paskirties objektų pirkimų sandoriai,
+,datasets/gov/rc/ntr/ntr_butu_pirkimo_sandoriai,,,,,,,,,,,,Gyvenamosios (butų) paskirties objektų pirkimų sandoriai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
