@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sandorio_tipas,ref,/datasets/gov/rc/ntr/ntr_kiti_klasifikatoriai/NtrSandorioTipas[sant_pav],,,3,open,,Sandorio tipas,
 ,,,,,kainos_tipas,string,,,,4,open,,Sandorio kainos tipas,
 ,,,,,,enum,,,,,,,,
-,,,,,,,,,"Pirkimas",,,,,
+,,,,,,,,,"""Pirkimas""",,,,,
 ,,,,,,,,,"Pirkimas iš savivaldybės",,,,,
 ,,,,,,,,,"Pirkimas iš valstybės",,,,,
 ,,,,,,,,,"Pirkimas išsimoketinai",,,,,
