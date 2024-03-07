@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk/sipis,,,,,,,,,,,,Seimo interneto portalo informacinė sistema (SIPIS),
+,datasets/gov/lrsk/sipis/kadencijos_sesijos,,,,,,,,,,,,Lietuvos Respublikos Seimo kadencijų ir sesijų klasifikatorius,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sesija,,,vda_id,,,4,,,Lietuvos Respublikos Seimo sesijų tvarkaraštis,"Lietuvos Respublikos Seimo sesijų tvarkaraštis. Pateikiama eilinių ir neeilinių sesijų pradžia ir pabaiga bei kadencijos, kuriai priklauso sesija, id."
+,,,,,id,string,,,,4,open,,Sesijos identifikacinis numeris,
+,,,,,sesija,string,,,,4,open,,Sesijos pavadinimas,
+,,,,,sutrump_pav,string,,,,4,open,,Sutrumpintas sesijos pavadinimas,
+,,,,,nuo,date,D,,,4,open,,Sesijos pradžios data,
+,,,,,iki,date,D,,,4,open,,Sesijos pabaigos data,
+,,,,,ses_pozm,string,,,,4,open,,"Sesijos požymis (1 - eilinė, 2 - neeilinė)",
+,,,,,,,enum,,"""eilinė""",,,,,
+,,,,,,,,,"""neeilinė""",,,,,
+,,,,,kadencija,string,,,,4,open,,Kadencijos numeris,
+,,,,,,,,,,,,,,
+,,,,Kadencija,,,id,,,4,,,Lietuvos Respublikos Seimo kadencijų tvarkaraštis,Lietuvos Respublikos Seimo kadencijų tvarkaraštis su kadencijų pradžios ir pabaigos datomis.
+,,,,,id,string,,,,4,open,,Kadencijos id numeris,
+,,,,,nuo,date,D,,,4,open,,kadencijos pradžios data,
+,,,,,iki,date,D,,,4,open,,kadencijos pabaigos data,
