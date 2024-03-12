@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,GyliaiDruskininkaiNevezisVilnius,,,fid,,,4,,,Gylių duomenys,"Šiame sluoksnyje pateikiami gylių duomenis Nemune Druskininkuose, Neryje Vilniuje ir Nevėžyje."
 ,,,,,fid,string,,,,4,,,Identifikavimo kodas,
 ,,,,,atkarpa,string,,,,3,,,Upės ruožo atkarpos pavadinimas,
-,,,,,atstumas,string,km,,,4,,,Atstumas,
+,,,,,atstumas,number,km,,,4,,,Atstumas,
 ,,,,,gylis_cm,number,cm,,,4,,,Gylis centimetrais,
 ,,,,,data,datetime,L,,,4,,,Data,
 ,,,,,skales_tip,string,,,,4,,,Sutartinio ženklo klasifikatoriaus kodas,
