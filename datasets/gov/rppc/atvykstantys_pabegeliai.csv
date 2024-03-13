@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ",,,vda_id,,,4,,,Į Pabėgelių priėmimo centrą atvykstantys asmenys.,
 ,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,asmuo,string,,,,4,open,,"Pabėgelis, asmuo atvykęs į pabėgelių priėmimo centrą. Asmuo gali papartotinai atvykti(asmuo gali kartotis)",
-,,,,,gimimo_metai,date,D,,,4,open,,Gimimo metai sistemoje,
+,,,,,gimimo_metai,date,Y,,,4,open,,Gimimo metai sistemoje,
 ,,,,,lytis,string,,,,4,open,,Pabėgelio lytis sistemoje,
 ,,,,,programos_tipas,string,,,,4,open,,PPC programos tipas (institucijos vidinis klasifikatorius),
 ,,,,,seimos_galva,string,,,,4,open,,"Požymis, ar tai ""šeimos galva"" - teikiantis prašymus integracijai",
