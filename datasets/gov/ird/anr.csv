@@ -50,8 +50,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""3 d.""",,,,45 str. 3 dalis,
 ,,,,,,,,,"""4 d.""",,,,45 str. 4 dalis,
 ,,,,,savivaldybe,string,,,,2,open,,Nusižengimo padarymo vietos savivaldybės pavadinimas,
-,,,,,vietos_objektas_lygis_1,string,,,,4,open,,Nusižengimo padarymo vietos objektas (aukštesnis lygis),
+,,,,,vietos_objektas_lygis_1_lt,string,,,,4,open,,Nusižengimo padarymo vietos objektas (aukštesnis lygis),
 ,,,,,,comment,type,,"update(property: ""vietos_objektas_lygis_1@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,vietos_objektas_lygis_2,string,,,,4,open,,Nusižengimo padarymo vietos objektas (žemesnis lygis),
+,,,,,vietos_objektas_lygis_2_lt,string,,,,4,open,,Nusižengimo padarymo vietos objektas (žemesnis lygis),
 ,,,,,,comment,type,,"update(property: ""vietos_objektas_lygis_2@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,koordinate,"geometry(point,3346)",m,,,4,open,,"Nusižengimo padarymo vietos koordinatė (LKS sistemoje), pritaikius triukšminimo metodą","Triukšminimo metodas taikomas dėl konfidencialumo ir asmens duomenų apsaugos: įvykio koordinatės yra paslenkamos atsitiktine kryptimi taikant normalųjį triukšmo skirstinį su standartiniu nuokrypiu nuo 100 iki 1000 metrų, priklausomai nuo gyventojų tankio: mažesnis gyventojų tankis – didesnis nuokrypis."
