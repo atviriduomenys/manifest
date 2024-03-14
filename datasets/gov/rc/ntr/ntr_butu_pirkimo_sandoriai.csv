@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Sandoriai,,,sandorio_id,,,4,,,Gyvenamosios (butų) paskirties objektų pirkimų sandoriai,VĮ Registrų centro Nekilnojamojo turto registro (NTR) gyvenamosios (butų) paskirties objektų pirkimo sandoriai nuo 1998 m.  Geografinė aprėptis: informacija pateikta Lietuvos savivaldybių ir stačiakampių (1 km) bei šešiakampių (1 km) gardelių lygmeniu. Geografinė informacija (gardelės) gauta prijungus duomenis iš VĮ Registrų centro Adresų registro. Duomenų atnaujinimas - savaitinis.
+,,,,Sandoriai,,,sandorio_id,,,4,,,Gyvenamosios (butų) paskirties objektų pirkimų sandoriai,"VĮ Registrų centro Nekilnojamojo turto registro (NTR) gyvenamosios (butų) paskirties objektų pirkimo sandoriai nuo 1998 m.  Geografinė aprėptis: informacija pateikta Lietuvos savivaldybių ir stačiakampių (1 km) bei šešiakampių (1 km) gardelių lygmeniu. Geografinė informacija (gardelės) gauta prijungus duomenis iš VĮ Registrų centro Adresų registro. Duomenų atnaujinimas - savaitinis."
 ,,,,,sandorio_id,string,,,,4,open,,Sandorio identifikatorius,
 ,,,,,objekto_id,string,,,,4,open,,Objekto identifikatorius,
 ,,,,,sandorio_data,date,D,,,4,open,,Sandorio data,
