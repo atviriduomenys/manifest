@@ -115,7 +115,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,fid,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,konstr,string,,,,4,open,,Bunos konstrukcijos tipas,
 ,,,,,,enum,,,"""Akmeninė""",,,,Akmeninė,
-,,,,,,,,,"""Akmeninė Smelinė-Žvyrinė""",,,,"Akmeninė
+,,,,,,,,,"""Smelinė-Žvyrinė""",,,,"Akmeninė
 Smelinė-Žvyrinė",
 ,,,,,,,,,"""Gruntinė""",,,,Gruntinė,
 ,,,,,,,,,"""Smėlio-žvyro""",,,,Smėlio-žvyro,
