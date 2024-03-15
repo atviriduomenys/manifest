@@ -93,16 +93,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,shape_length,number,m,,,4,open,,Objekto ilgis,
 ,,,,,geometry,geometry(3857),,,,4,open,,Geometrijos tipas,
 ,,,,,,,,,,,,,,
-,,,,ObjektasEdit,,,objectid,,,4,,,Objektų informacija,Šiame sluoksnyje pateikiama objektų informacija. Objektai išdėstyti Nemune bei Minijoje.
-,,,,,objectid,string,,,,4,open,,Atributinės lentelės objekto numeris,
-,,,,,kodas,string,,,,3,open,,Kodas,
-,,,,,papildomainfo_lt,string,,,,4,open,,Papildoma informacija,
-,,,,,,comment,type,,"update(property: ""papildomainfo_lt@lt"", type: ""text"")	",4,open,spinta:204,,
-,,,,,statusas,string,,,,3,open,,Statusas,
-,,,,,created_date,date,L,,,4,open,,Sukūrimo data,
-,,,,,last_edited_date,date,L,,,4,open,,Paskutinė koregavimo data,
-,,,,,geometry,geometry(3857),,,,4,open,,Geometrijos tipas,
-,,,,,,,,,,,,,,
 ,,,,PasienioRuozas,,,fid,,,4,,,Pasienio ruožo leidimų duomenys,Šiame sluoksnyje pateikiami pasienio ruožo leidimų duomenys Kuršių mariose Lietuva – Rusija pasienyje.
 ,,,,,fid,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,pav,string,,,,4,open,,Pavadinimas,
