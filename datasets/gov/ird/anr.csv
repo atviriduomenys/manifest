@@ -1,6 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/ird,,,,,ns,,,,,,,Informatikos ir ryšių departamentas,Informatikos ir ryšių departamentas prie LR Vidaus reikalų ministerijos
 ,datasets/gov/ird/anr,,,,,,,,,,,,Administracinių nusižengimų registras,"Registro objektai: LR administracinių nusižengimų kodekso nustatyta tvarka užfiksuoti administraciniai nusižengimai; LR įstatymų ir ES teisės aktų nustatyta tvarka užfiksuoti ūkio subjektų padaryti teisės pažeidimai, už kuriuos priežiūros institucijos skiria poveikio priemones. Registro valdytojas - LR Vidaus reikalų ministerija; tvarkytojas - Informatikos ir ryšių departamentas."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
 ,,,,Bauda,,,anr_id,,,4,,,Administracinių nusižengimų bylose paskirtos baudos,"Administracinių nusižengimų registro (ANR) duomenų neagreguota lentelė (mikroduomenys),  kurioje viena eilutė yra vienas administracinis nusižengimas  už kurį yra paskirta bauda (administracinės nuobaudos rūšis). Šiuo metu yra įtraukiami tik tokie nusižengimai ,  kurių sudėtyje yra tik vienas Administracinių nusižengimų kodekso (ANK) straipsnis ir tik viena piniginė bauda. Paskirtos baudos nebūtinai yra apmokėtos. Taip pat dalis į imtį patenkančių nusižengimų yra tie,  dėl kurių priimti nutarimai gali būti apskųsti,  nutraukti ar perkvalifikuoti (ši informacija nepateikiama). Dėmesio: tai nėra oficialioji statistika,  naudojama eksperimentinė duomenų paruošimo metodika (pvz.,  neatsižvelgiama į galimus tolimesnius nusižengimo statuso pasikeitimus). Dėl techninių klausimų kreiptis į atverimas@stat.gov.lt."
 ,,,,,anr_id,string,,,,4,open,,Administracinio nusižengimo unikalus identifikatorius,Skirtas jungimui su kitom lentelėm
 ,,,,,anr_uzregistruota,date,D,,,4,open,,Administracinio nusižengimo registravimo data,
@@ -32,3 +35,23 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ank_straipsnis,string,,,,4,open,,ANK straipsnis,Administracinių nusižengimų kodekso straipsnis
 ,,,,,ank_skyrius_pav,string,,,,2,open,,ANK skyriaus pavadinimas,Administracinių nusižengimų kodekso skyriaus pavadinimas
 ,,,,,ank_straipsnis_pav,string,,,,2,open,,ANK straipsnio pavadinimas,Administracinių nusižengimų kodekso straipsnio pavadinimas
+,,,,,,,,,,,,,,
+,,,,Str45Pazeidimas,,,vda_id,,,4,,,ANK 45 str. pažeidimai ir pažeidėjai,"Administracinių nusižengimų registro (ANR) bylos, kuriose minimas Administracinių nusižengimų kodekso (ANK) 45 straipsnis (""Visuomenės sveikatos srities Europos Sąjungos reglamentų ar sprendimų, higienos norminių aktų ar kitų visuomenės sveikatos srities teisės aktų, Lietuvos Respublikos žmonių užkrečiamųjų ligų profilaktikos ir kontrolės įstatymo pažeidimas""). Pateikiama neagreguota lentelė (mikroduomenys). Viena eilutė yra vieno administracinio nusižengimo vieno straipsnio vienos dalies vienas pažeidėjas. Detalizuojama demografinė informacija apie pažeidėją bei pažeidimo vietos aplinkybes. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Unikalus įrašo (eilutės) identifikatorius,"Techninė paskirtis, analitikai nenaudingas"
+,,,,,anr_id,string,,,,4,open,,Šifruotas unikalus individualaus pažeidimo identifikatorius (iš ANR),
+,,,,,asmens_kodas,string,,,,4,open,,Šifruotas asmens kodas,
+,,,,,anr_uzregistruota,date,D,,,4,open,,Administracinio nusižengimo registravimo registre data,
+,,,,,amzius,integer,,,,4,open,,Pažeidėjo amžius nusižengimo registravimo registre datą,
+,,,,,lytis,string,,,,4,open,,Pažeidėjo lytis (gali būti nežinoma),
+,,,,,ank_straipsnis,string,,,,4,open,,Administracinių nusižengimų kodekso straipsnis,
+,,,,,ank_straipsnio_dalis,string,,,,4,open,,Administracinių nusižengimų kodekso straipsnio dalis,
+,,,,,,enum,,,"""1 d.""",,,,45 str. 1 dalis,
+,,,,,,,,,"""2 d.""",,,,45 str. 2 dalis,
+,,,,,,,,,"""3 d.""",,,,45 str. 3 dalis,
+,,,,,,,,,"""4 d.""",,,,45 str. 4 dalis,
+,,,,,savivaldybe,string,,,,2,open,,Nusižengimo padarymo vietos savivaldybės pavadinimas,
+,,,,,vietos_objektas_lygis_1_lt,string,,,,4,open,,Nusižengimo padarymo vietos objektas (aukštesnis lygis),
+,,,,,,comment,type,,"update(property: ""vietos_objektas_lygis_1_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,vietos_objektas_lygis_2_lt,string,,,,4,open,,Nusižengimo padarymo vietos objektas (žemesnis lygis),
+,,,,,,comment,type,,"update(property: ""vietos_objektas_lygis_2_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,koordinate,"geometry(point,3346)",m,,,4,open,,"Nusižengimo padarymo vietos koordinatė (LKS sistemoje), pritaikius triukšminimo metodą","Triukšminimo metodas taikomas dėl konfidencialumo ir asmens duomenų apsaugos: įvykio koordinatės yra paslenkamos atsitiktine kryptimi taikant normalųjį triukšmo skirstinį su standartiniu nuokrypiu nuo 100 iki 1000 metrų, priklausomai nuo gyventojų tankio: mažesnis gyventojų tankis – didesnis nuokrypis."
