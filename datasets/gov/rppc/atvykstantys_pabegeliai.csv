@@ -3,8 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,"AtvykstantysPabegeliai
-",,,vda_id,,,4,,,Į Pabėgelių priėmimo centrą atvykstantys asmenys.,
+,,,,AtvykstantysPabegeliai,,,vda_id,,,4,,,Į Pabėgelių priėmimo centrą atvykstantys asmenys.,
 ,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,asmuo,string,,,,4,open,,"Pabėgelis, asmuo atvykęs į pabėgelių priėmimo centrą. Asmuo gali papartotinai atvykti(asmuo gali kartotis)",
 ,,,,,gimimo_metai,date,Y,,,4,open,,Gimimo metai sistemoje,
