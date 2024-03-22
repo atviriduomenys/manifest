@@ -1,12 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rppc/atvykstantys_pabegeliai,,,,,,,,,,,,Į Pabėgelių priėmimo centrą atvykstantys asmenys.,Į Pabėgelių priėmimo centrą atvykstančių asmenų išsami informacija.
+,datasets/gov/rppc/atvykstantys_pabegeliai,,,,,,,,,,,,Į Pabėgėlių priėmimo centrą atvykstantys asmenys.,Į Pabėgėlių priėmimo centrą atvykstančių asmenų išsami informacija.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,"AtvykstantysPabegeliai
-",,,vda_id,,,4,,,Į Pabėgelių priėmimo centrą atvykstantys asmenys.,
+,,,,AtvykstantysPabegeliai,,,vda_id,,,4,,,Į Pabėgėlių priėmimo centrą atvykstantys asmenys.,
 ,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
-,,,,,asmuo,string,,,,4,open,,"Pabėgelis, asmuo atvykęs į pabėgelių priėmimo centrą. Asmuo gali papartotinai atvykti(asmuo gali kartotis)",
+,,,,,asmuo,string,,,,4,open,,"Pabėgelis, asmuo atvykęs į pabėgėlių priėmimo centrą. Asmuo gali pakartotinai atvykti(asmuo gali kartotis)",
 ,,,,,gimimo_metai,date,Y,,,4,open,,Gimimo metai sistemoje,
 ,,,,,lytis,string,,,,4,open,,Pabėgelio lytis sistemoje,
 ,,,,,programos_tipas,string,,,,4,open,,PPC programos tipas (institucijos vidinis klasifikatorius),
