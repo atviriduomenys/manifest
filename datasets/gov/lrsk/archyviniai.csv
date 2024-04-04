@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Sesija,,,vda_id,,,4,,,Seimo Kanceliarijos įvairialypės informacijos archyvų duomenys,"Rinkinyje pateikiami duomenys apie Seimo Kanceliarijos archyvuose saugomus vaizdo, teksto ar garso artefaktus nuo XVI amžiaus iki šių dienų. Nurodoma artefakto vieta, kategorija, aprašymas, kalba, tema, pradžios ir pabaigos datos (jei taikoma) ir nuoroda, jei artefakto turinys prieinamas internete."
+,,,,Artefaktas,,,vda_id,,,4,,,Seimo Kanceliarijos įvairialypės informacijos archyvų duomenys,"Rinkinyje pateikiami duomenys apie Seimo Kanceliarijos archyvuose saugomus vaizdo, teksto ar garso artefaktus nuo XVI amžiaus iki šių dienų. Nurodoma artefakto vieta, kategorija, aprašymas, kalba, tema, pradžios ir pabaigos datos (jei taikoma) ir nuoroda, jei artefakto turinys prieinamas internete."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,pavadinimas,string,,,,4,open,,Pilnas objekto pavadinimas.,
 ,,,,,aprasymas,string,,,,4,open,,"Objekto dalies aprašymas, pvz., kas ir kada kalbėjo posėdyje.",
