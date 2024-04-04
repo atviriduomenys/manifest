@@ -1,6 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lrsk/sipis,,,,,,,,,,,,Seimo interneto portalo informacinė sistema (SIPIS),
-,datasets/gov/lrsk/sipis/kadencijos_sesijos,,,,,,,,,,,,Lietuvos Respublikos Seimo kadencijų ir sesijų klasifikatorius,
+,datasets/gov/lrsk/kadencijos_sesijos,,,,,,,,,,,,Lietuvos Respublikos Seimo kadencijų ir sesijų klasifikatorius,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
