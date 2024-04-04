@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Sesija,,,vda_id,,,4,,,Seimo Kanceliarijos įvairialypės informacijos archyvų duomenys,"Rinkinyje pateikiami duomenys apie Seimo Kanceliarijos archyvuose saugomus vaizdo, teksto ar garso artefaktus nuo XVI amžiaus iki šių dienų. Nurodoma artefakto vieta, kategorija, aprašymas, kalba, tema, pradžios ir pabaigos datos (jei taikoma) ir nuoroda, jei artefakto turinys prieinamas internete."
-,,,,,vda_id,,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,pavadinimas,string,,,,4,open,,Pilnas objekto pavadinimas.,
 ,,,,,aprasymas,string,,,,4,open,,"Objekto dalies aprašymas, pvz., kas ir kada kalbėjo posėdyje.",
 ,,,,,nuo_lt,string,,,,2,open,,"Su objektu susijusio įvykio data, o ne saugojimo, įkėlimo ar pan. Gali būti pasirenkama iš kalendorius. Pilna reikšmė - data ir laikas, sekundžių tikslumu. Galima nurodyti ir nepilną datą (pavyzdžiui, tik metus).",
