@@ -1,0 +1,80 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk,,,,,,,,,,,,Lietuvos Respublikos Seimo Kanceliarija,
+,datasets/gov/lrsk/teises_aktai,,,,,,,,,,,,Teisės aktų registro duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,vda_id,,,4,,,Teisės aktų registro duomenys,"Rinkinyje pateikiami duomenys apie teisės aktų registro objektus, juos parengusius ir priėmusius subjektus, identifikacinius kodus, objektų rūšis, pavadinimus ir jų chronologijas (teisės akto priėmimo data, registravimo Registre data, paskelbimo data, įsigaliojimo data, pakeitimo ar papildymo data, pripažinimo netekusiu galios data, galiojimo sustabdymo data, galiojimo terminas). Registro objektai yra šie teisės aktai:
+1) Lietuvos Respublikos Konstitucija;
+2) konstituciniai įstatymai;
+3) kiti įstatymai;
+4) Lietuvos Respublikos Seimo statutas;
+5) Lietuvos Respublikos Seimo (toliau – Seimas) nutarimai;
+6) kiti Seimo priimti teisės aktai;
+7) Lietuvos Respublikos tarptautinės sutartys;
+8) Respublikos Prezidento dekretai ir potvarkiai;
+9) Lietuvos Respublikos Vyriausybės (toliau – Vyriausybė) nutarimai, sprendimai ir rezoliucijos;
+10) Lietuvos Respublikos Konstitucinio Teismo (toliau – Konstitucinis Teismas) reglamentas;
+11) ministrų, Vyriausybės įstaigų, kitų valstybės institucijų ir įstaigų vadovų bei kolegialių institucijų norminiai teisės aktai;
+12) Ministro Pirmininko potvarkiai;
+13) Seimo Pirmininko potvarkiai;
+14) Seimo valdybos sprendimai;
+15) Lietuvos banko norminiai teisės aktai;
+16) savivaldybių institucijų norminiai teisės aktai, taip pat savivaldybių merų priimami teisės aktai, kuriuos skelbti Registre privaloma pagal teisės aktų reikalavimus;
+17) įgaliotų atlikti viešąjį administravimą asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti norminiai teisės aktai. Kitų asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti teisės aktai Registro objektais yra tik tais atvejais, kai šiuos teisės aktus skelbti Registre privaloma pagal teisės aktų reikalavimus;
+18) ministrų, Vyriausybės įstaigų, kitų valstybės ir savivaldybių institucijų ir įstaigų vadovų ir kolegialių institucijų, taip pat Lietuvos banko valdybos ar valdybos pirmininko, teisės aktų nustatyta tvarka įgaliotų atlikti viešąjį administravimą asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti teisės taikymo aktai, kuriuos skelbti Registre privaloma pagal teisės aktų reikalavimus;
+19) Konstitucinio Teismo nutarimai ir sprendimai dėl Konstitucinio Teismo nutarimo išaiškinimo, taip pat Konstitucinio Teismo pirmininko pranešimai dėl ginčijamo akto galiojimo sustabdymo ir dėl sustabdyto akto galiojimo atnaujinimo;
+20) Lietuvos Aukščiausiojo Teismo ir Lietuvos vyriausiojo administracinio teismo sprendimai, nutartys, nutarimai, taip pat įsiteisėję administracinių teismų sprendimai dėl norminių administracinių aktų teisėtumo."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,dokumento pavadinimas,
+,,,,,nuoroda,string,,,,4,open,,"URL nuoroda į teisės aktą. Galioja tik tuo atveju, kai teisės aktas yra paskelbtas ar registruotas teisės aktų registre.",
+,,,,,alt_pavadinimas,string,,,,4,open,,alternatyvus dokumento pavadinimas,
+,,,,,dok_busena,string,,,,4,open,,dokumento būsena,
+,,,,,,enum,,,"""registruotas TA registre""",,,,,
+,,,,,,,,,"""nepriimtas""",,,,,
+,,,,,,,,,"""paskelbtas""",,,,,
+,,,,,,,,,"""sunaikintas (loginis trynimas)""",,,,,
+,,,,,,,,,"""atsiimtas""",,,,,
+,,,,,,,,,"""parengtas""",,,,,
+,,,,,,,,,"""sudarytas""",,,,,
+,,,,,,,,,"""įsegtas""",,,,,
+,,,,,,,,,"""priimtas registruoti""",,,,,
+,,,,,,,,,"""išsegtas (dokumentas modifikuojamas)""",,,,,
+,,,,,dok_grupe,string,,,,4,open,,dokumento grupė (TAR; klasifikatoriaus reikšmės identifikatorius),
+,,,,,,enum,,,"""valstybės institucijų ir įstaigų teisės aktai""",,,,,
+,,,,,,,,,"""savivaldybių teisės aktai""",,,,,
+,,,,,,,,,"""teismų dokumentai""",,,,,
+,,,,,,,,,"""tarptautiniai dokumentai""",,,,,
+,,,,,,,,,"""kiti""",,,,,
+,,,,,pobudis,string,,,,4,open,,dokumento pobūdis,
+,,,,,,enum,,,"""norminis""",,,,,
+,,,,,,,,,"""teisės taikymo""",,,,,
+,,,,,galioj_busena,string,,,,,,,teisės akto galiojimo būsena (TAR; klasifikatoriaus reikšmės identifikatorius),
+,,,,,,enum,,,"""galioja""",,,,,
+,,,,,,,,,"""negalioja""",,,,,
+,,,,,,,,,"""neįsigaliojęs""",,,,,
+,,,,,,,,,"""neviešas""",,,,,
+,,,,,,,,,"""sustabdytas""",,,,,
+,,,,,parengusi_inst,string,,,,4,open,,dokumentą parengusių institucijų pavadinimai (rūšiavimui),
+,,,,,priemusi_inst,string,,,,4,open,,dokumentą priėmusių (priimančių) institucijų pavadinimai (rūšiavimui),
+,,,,,tar_kodas,string,,,,4,open,,TA registro (TAR) kodas,
+,,,,,atv_dok_nr,string,,,,2,open,,atvaizduojamas dokumento numeris,
+,,,,,registracija,date,D,,,4,open,,registracijos data (TA registracijos data ),
+,,,,,isigal_sal,string,,,,2,open,,teisės akto įsigaliojimo sąlygos,
+,,,,,termino_sal,string,,,,2,open,,teisės akto termino datos sąlygos,
+,,,,,es_teises_aktas,integer,,,,4,open,,nuorodų į ES teisės aktus skaičius,
+,,,,,priimtas,date,D,,,4,open,,teisės akto priėmimo data,
+,,,,,prisijungta,date,D,,,4,open,,teisės akto prijungimo data,
+,,,,,pakeista,string,,,,2,open,,teisės akto pakeitimo data,
+,,,,,,comment,property,,"""update(property: """"pakeista[]"""", type: """"array"""", source: """"Pakeista"""")""",4,,spinta:161,,
+,,,,,ratifikuota,date,D,,,4,open,,teisės akto ratifikavimo data,
+,,,,,patvirtinta,date,D,,,4,open,,teisės akto patvirtinimo data,
+,,,,,paskelbta_tar,date,D,,,4,open,,registravimo teisės aktų registre data,
+,,,,,isigalioja,date,D,,,4,open,,teisės akto įsigaliojimo data,
+,,,,,isigalioja_po_salygu,date,D,,,4,open,,įsigaliojimo po sąlygų įvykdymo data,
+,,,,,negalioja,date,D,,,4,open,,teisės akto termino data,
+,,,,,negalioja_po_salygu,date,D,,,4,open,,teisės akto termino po sąlygų įvykdymo data,
+,,,,,pask_atitaisymas,date,D,,,4,open,,teisės akto paskutinio atitaisymo data,
+,,,,,paviesinimas,date,D,,,4,open,,"teisės akto, kito dokumento paviešinimo data",
+,,,,,ar_nacionalinis,boolean,,,,4,open,,"požymis, ar dokumentas nacionalinis (True –nacionalinis,  False – savivaldybių)",
+,,,,,ar_verslo_reg,boolean,,,,4,open,,"verslo sąlygų reguliavimo  požymis (True – taip,  False – ne)",
