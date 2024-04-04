@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuoroda,string,,,,4,open,,Nuoroda į objekto vietą LRS portale.,
 ,,,,,kalba,string,,,,2,open,,Nurodoma objekto kalba (-os).,
 ,,,,,,comment,property,,"""update(property: """"kalba[]"""", type: """"array"""", source: """"Kalba"""")""",4,,spinta:161,,
-,,,,,tema,,,,,,,,"Klasifikatorius, naudojamas nurodyti objekto temas. 
+,,,,,tema,string,,,,,,,"Klasifikatorius, naudojamas nurodyti objekto temas. 
 ","Temų hierarchija, pvz., 
 - Lietuvos Respublikos Seimas 2008-2012
 - -- Seimo vadovybė
