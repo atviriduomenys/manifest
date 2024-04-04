@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk/sipis/interneto_tekstai,,,,,,,,,,,,Lietuvos Respublikos Seimo interneto svetainėje paskelbtų tekstų duomenys,"Rinkinyje pateikiami duomenys apie Seimo internetiniame puslapyje paskelbtus tekstus nuo 1999m. Lietuvių, anglų, vokiečių, prancūzų ar rusų kalbomis."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Straipsnis,,,vda_id,,,4,,,Lietuvos Respublikos Seimo interneto svetainėje paskelbtų tekstų duomenys,Lietuvos Respublikos Seimo interneto svetainėje paskelbtų tekstų duomenys
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo unikalus identifikatorius,
+,,,,,tekst_pav,string,,,,2,open,,teksto pavadinimas internetiniame puslapyje,
+,,,,,,comment,type,,"update(property: ""aprasymas@lt"", type: ""text"")",4,open,,,
+,,,,,tekstas,string,,,,2,open,,publikuoto teksto turinys,
+,,,,,,comment,type,,"update(property: ""aprasymas@lt"", type: ""text"")",4,open,,,
+,,,,,kalba,string,,,,4,open,,renginio kalba,
+,,,,,paskelbimas,date,D,,,4,open,,teksto paskelbimo data,
+,,,,,koregavimas,date,D,,,4,open,,paskutinė teksto redagavimo data,
+,,,,,tekst_url,string,,,,4,open,,nuoroda į tekstą Lietuvos Respublikos Seimo portale,
