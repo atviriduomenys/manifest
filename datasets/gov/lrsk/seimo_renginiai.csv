@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk/seimo_renginiai,,,,,,,,,,,,Duomenys apie Seime vykusius renginius,"Rinkinyje pateikiami duomenys apie Seime organizuotus renginius nuo 2015m. Pateikiama informacija: renginio pavadinimas, kalba, pradžios ir pabaigos laikas, renginio vieta ir vietų skaičius"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Ivykis,,,vda_id,,,4,,,Duomenys apie Seime vykusius renginius,"Rinkinyje pateikiami duomenys apie Seime organizuotus renginius nuo 2015m. Pateikiama informacija: renginio pavadinimas, kalba, pradžios ir pabaigos laikas, renginio vieta ir vietų skaičius."
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo unikalus identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Renginio pavadinimas,
+,,,,,kalba,string,,,,4,open,,Renginio kalba,
+,,,,,pradzia,date,D,,,4,open,,Renginio pradžios data,
+,,,,,pabaiga,date,D,,,4,open,,Renginio pabaigos data,
+,,,,,vieta,string,,,,4,open,,Renginio vieta,
