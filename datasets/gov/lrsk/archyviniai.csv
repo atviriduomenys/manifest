@@ -28,10 +28,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kalba,string,,,,2,open,,Nurodoma objekto kalba (-os).,
 ,,,,,,comment,property,,"""update(property: """"kalba[]"""", type: """"array"""", source: """"Kalba"""")""",4,,spinta:161,,
 ,,,,,tema,string,,,,,,,"Klasifikatorius, naudojamas nurodyti objekto temas. 
-","Temų hierarchija, pvz., 
-- Lietuvos Respublikos Seimas 2008-2012
-- -- Seimo vadovybė
-- -- Seimo posėdžiai
-- -- --- 1 eilinė sesija...
-
-Pastaba: Dalis objektų temų bus sudaromos ir patvirtinamos oficialiai (pvz., Fotodokumentų, saugomų seimo archyve, sisteminimo klasifikatorius, tvirtinamas Seimo kanclerio), tačiau dalį temų bus leidžiama įvesti laisvai (pvz., Parlamentarizmo istorijos ir įamžinimo skyriaus darbuotojams)."
+","Temų hierarchija. Pastaba: Dalis objektų temų bus sudaromos ir patvirtinamos oficialiai (pvz., Fotodokumentų, saugomų seimo archyve, sisteminimo klasifikatorius, tvirtinamas Seimo kanclerio), tačiau dalį temų bus leidžiama įvesti laisvai (pvz., Parlamentarizmo istorijos ir įamžinimo skyriaus darbuotojams)."
