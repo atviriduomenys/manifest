@@ -1,0 +1,37 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk/archyviniai,,,,,,,,,,,,Seimo Kanceliarijos įvairialypės informacijos archyvų duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sesija,,,vda_id,,,4,,,Seimo Kanceliarijos įvairialypės informacijos archyvų duomenys,"Rinkinyje pateikiami duomenys apie Seimo Kanceliarijos archyvuose saugomus vaizdo, teksto ar garso artefaktus nuo XVI amžiaus iki šių dienų. Nurodoma artefakto vieta, kategorija, aprašymas, kalba, tema, pradžios ir pabaigos datos (jei taikoma) ir nuoroda, jei artefakto turinys prieinamas internete."
+,,,,,vda_id,,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Pilnas objekto pavadinimas.,
+,,,,,aprasymas,string,,,,4,open,,"Objekto dalies aprašymas, pvz., kas ir kada kalbėjo posėdyje.",
+,,,,,nuo_lt,string,,,,2,open,,"Su objektu susijusio įvykio data, o ne saugojimo, įkėlimo ar pan. Gali būti pasirenkama iš kalendorius. Pilna reikšmė - data ir laikas, sekundžių tikslumu. Galima nurodyti ir nepilną datą (pavyzdžiui, tik metus).",
+,,,,,,comment,type,,"update(property: ""nuo_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,iki_lt,string,,,,2,open,,"Su objektu susijusio įvykio data, o ne saugojimo, įkėlimo ar pan. Gali būti pasirenkama iš kalendorius. Pilna reikšmė - data ir laikas, sekundžių tikslumu. Galima nurodyti ir nepilną datą (pavyzdžiui, tik metus).",
+,,,,,,comment,type,,"update(property: ""iki_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,vieta,string,,,,2,open,,Nurodoma objekto vieta.,
+,,,,,kategorija,string,,,,4,open,,Pilnas objekto kategorijos pavadinimas.,
+,,,,,,,enum,,"""Vaizdas""",,,,,
+,,,,,,,,,"""Tekstas""",,,,,
+,,,,,,,,,"""Garso įrašas""",,,,,
+,,,,,,,,,"""Vaizdo įrašas""",,,,,
+,,,,,tipas,string,,,,4,open,,Patikslintas kategorijos pavadinimas.,
+,,,,,,,enum,,"""Skaitmenintas popierinis dokumentas""",,,,,
+,,,,,,,,,"""Vaizdo įrašas""",,,,,
+,,,,,,,,,"""Garso įrašas""",,,,,
+,,,,,,,,,"""Fotodokumentas""",,,,,
+,,,,,potipis,string,,,,4,open,,Objekto potipis.,
+,,,,,nuoroda_pav,string,,,,4,open,,Nuorodos pavadinimas.,
+,,,,,nuoroda,string,,,,4,open,,Nuoroda į objekto vietą LRS portale.,
+,,,,,kalba,string,,,,2,open,,Nurodoma objekto kalba (-os).,
+,,,,,,comment,property,,"""update(property: """"kalba[]"""", type: """"array"""", source: """"Kalba"""")""",4,,spinta:161,,
+,,,,,tema,,,,,,,,"Klasifikatorius, naudojamas nurodyti objekto temas. 
+","Temų hierarchija, pvz., 
+- Lietuvos Respublikos Seimas 2008-2012
+- -- Seimo vadovybė
+- -- Seimo posėdžiai
+- -- --- 1 eilinė sesija...
+
+Pastaba: Dalis objektų temų bus sudaromos ir patvirtinamos oficialiai (pvz., Fotodokumentų, saugomų seimo archyve, sisteminimo klasifikatorius, tvirtinamas Seimo kanclerio), tačiau dalį temų bus leidžiama įvesti laisvai (pvz., Parlamentarizmo istorijos ir įamžinimo skyriaus darbuotojams)."
