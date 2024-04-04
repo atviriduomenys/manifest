@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lrsk/sipis/youtube,,,,,,,,,,,,Lietuvos Respublikos Seimo YouTube transliacijų duomenys,
+,datasets/gov/lrsk/youtube,,,,,,,,,,,,Lietuvos Respublikos Seimo YouTube transliacijų duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -8,5 +8,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Youtube įrašo pavadinimas,
 ,,,,,aprasymas,string,,,,2,open,,Youtube įrašo aprašymas,
 ,,,,,,comment,type,,"update(property: ""aprasymas@lt"", type: ""text"")",4,open,,,
-,,,,,pradzia,timestamp,L,,,4,open,,Youtube įrašo pradžia,
-,,,,,pabaiga,timestamp,L,,,4,open,,Youtube įrašo pabaiga,
+,,,,,pradzia,datetime,L,,,4,open,,Youtube įrašo pradžia,
+,,,,,pabaiga,datetime,L,,,4,open,,Youtube įrašo pabaiga,
