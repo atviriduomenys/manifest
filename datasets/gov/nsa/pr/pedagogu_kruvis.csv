@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,DarboKruvis,,,iraso_id,,,4,,,Pedagogų darbo krūvis,"Lentelėje pateikti Nacionalinės Švietimo agentūros (NŠA) pedagogų (bendrojo, ikimokyklinio ugdymo mokyklų, profesinio mokymo įstaigų, neformaliojo vaikų švietimo mokyklų ir formalųjį švietimą papildančio ugdymo mokyklų, mokslo ir studijų institucijų pedagoginių darbuotojų ir/arba tyrėjų) pareigybių ir darbo krūvio duomenys iš pedagogų registro (PR). Duomenys kaupiami nuo 2010 m. Siekiant užtikrinti asmens duomenų apsaugą duomenys buvo triukšminti."
+,,,,DarboKruvis,,,iraso_id,,,4,,,Pedagogų darbo krūvis,"Lentelėje pateikti Nacionalinės Švietimo agentūros (NŠA) pedagogų (bendrojo, ikimokyklinio ugdymo mokyklų, profesinio mokymo įstaigų, neformaliojo vaikų švietimo mokyklų ir formalųjį švietimą papildančio ugdymo mokyklų, mokslo ir studijų institucijų pedagoginių darbuotojų ir/arba tyrėjų) pareigybių ir darbo krūvio duomenys iš pedagogų registro (PR). Duomenys kaupiami nuo 2010 m. Siekiant užtikrinti asmens duomenų apsaugą duomenys buvo triukšminti.  "
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,asmens_kodas,string,,,,4,open,,Pedagogo asmens kodas,
 ,,,,,gimimo_metai,date,D,,,4,open,,Pedagogo gimimo metai,
@@ -11,10 +11,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,inst_id,string,,,,4,open,,Institucijos identifikatorius,
 ,,,,,institucija_grupes,string,,,,4,open,,Institucijos grupė (-ės),
 ,,,,,,comment,property,,"update(property: ""institucija_grupes[]"", type: ""array"", source: ""Institucija_grupes"")",4,,spinta:161,,
-,,,,,institucija_tipai,date,D,,,4,open,,Institucijos tipas (-ai),
+,,,,,institucija_tipai,string,,,,4,open,,Institucijos tipas (-ai),
 ,,,,,,comment,property,,"update(property: ""institucija_tipai[]"", type: ""array"", source: ""Institucija_tipai"")",4,,spinta:161,,
 ,,,,,pareigybe_pav,string,,,,4,open,,Pedagogo pareigybės pavadinimas,
-,,,,,pagrindine_pareigybe,boolean,,,,4,open,,"Požymis, ar pareigybė yra pagrindinė (1 - pagrindinė, 0 - ne pagrindinė)",
+,,,,,pagrindine_pareigybe,boolean,,,,4,open,,"Požymis, ar pareigybė yra pagrindinė",
+,,,,,,enum,,1,"""pagrindinė""",,,,Pagrindinė,
+,,,,,,,,0,"""ne pagrindinė""",,,,Ne pagrindinė,
 ,,,,,etat_kruvis,number,,,,4,open,,Darbo krūvis (etato dydis),
 ,,,,,galioja_nuo,date,D,,,4,open,,Pareigybės galiojimo pradžios data,
 ,,,,,galioja_iki,date,D,,,4,open,,Pareigybės galiojimo pabaigos data,
