@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,studento_stud_id,string,,,,4,open,,Studento studijų identifikatorius,
 ,,,,,st_id,string,,,,4,open,,Studento identifikatorius,
-,,,,,studento_gimmetai,date,D,,,4,open,,Studento gimimo metai,
+,,,,,studento_gimmetai,date,Y,,,4,open,,Studento gimimo metai,
 ,,,,,studento_lytis,string,,,,4,open,,Studento lytis,
 ,,,,,etapas,string,,,,4,open,,Studijų etapas (nutraukimas / pertraukimas),
 ,,,,,nutr_pert_priezastis,string,,,,4,open,,Studijų nutraukimo / pertraukimo priežastis,
