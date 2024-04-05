@@ -15,8 +15,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""institucija_tipai[]"", type: ""array"", source: ""Institucija_tipai"")",4,,spinta:161,,
 ,,,,,pareigybe_pav,string,,,,4,open,,Pedagogo pareigybės pavadinimas,
 ,,,,,pagrindine_pareigybe,boolean,,,,4,open,,"Požymis, ar pareigybė yra pagrindinė",
-,,,,,,enum,,1,"""pagrindinė""",,,,Pagrindinė,
-,,,,,,,,0,"""ne pagrindinė""",,,,Ne pagrindinė,
 ,,,,,etat_kruvis,number,,,,4,open,,Darbo krūvis (etato dydis),
 ,,,,,galioja_nuo,date,D,,,4,open,,Pareigybės galiojimo pradžios data,
 ,,,,,galioja_iki,date,D,,,4,open,,Pareigybės galiojimo pabaigos data,
