@@ -59,8 +59,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""nz4""",,,,Konservacinio funkcinio prioriteto zona - rezervatas,
 ,,,,,,,,,"""nz5""",,,,Konservacinio funkcinio prioreteto zona - draustinis,
 ,,,,,plotas,number,ha,,,4,open,,Plotas, 
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -90,8 +90,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybės saugomas,
 ,,,,,,,,,2,,,,Savivaldybės saugomas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
@@ -132,8 +132,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""nz4""",,,,Konservacinio funkcinio prioriteto zona - rezervatas,
 ,,,,,,,,,"""nz5""",,,,Konservacinio funkcinio prioreteto zona - draustinis,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -169,8 +169,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybės saugomas,
 ,,,,,,,,,2,,,,Savivaldybės saugomas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
@@ -305,8 +305,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
 ,,,,,vieta_lt,string,,,,4,open,,Vieta,Aprašomoji informacija (savivaldybė seniūnija jei miškas – papildomai miškų urėdija girininkija miško kvartalas ir sklypas)
@@ -434,8 +434,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -493,12 +493,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Vizualinės apsaugos pozonis,
 ,,,,,,,,,3,,,,Bendrosios ekologinės apsaugos pazonis,
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
@@ -562,8 +562,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,900,,,,Telmologinis,
 ,,,,,,,,,1000,,,,Talasologinis,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -596,8 +596,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""duomen_monitor_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
@@ -666,12 +666,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,604,,,,Muziejų paskirties prioriteto zona,
 ,,,,,,,,,605,,,,Kitos,
 ,,,,,centras,"geometry(point,4326)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -761,8 +761,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -854,8 +854,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -954,8 +954,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teises aktas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -1046,8 +1046,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -1144,8 +1144,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -1185,8 +1185,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,1,,,,istorinis,
 ,,,,,centras,"geometry(point,4326)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -1224,8 +1224,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybės saugomas,
 ,,,,,,,,,2,,,,Savivaldybės saugomas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,tvarkymo_zona,string,,,,4,open,,Zona,Duomenys apie kraštovaizdžio tvarkymo zonas
@@ -1296,8 +1296,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,3,,,,Konservacinio prioriteto funkcinė zona – rezervatas,
 ,,,,,centras,"geometry(point,4326)",m,,,4,open,,Centro koordinatė,Svorio centro koordinatės LKS’94 koordinačių sistemoje
 ,,,,,plotas,number,ha,,,4,open,,Plotas,
-,,,,,steigejas_lt,string,,,,4,open,,Steigėjas – institucija,
-,,,,,,comment,,,"update(""steigejas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas – institucija,
+,,,,,,comment,,,"update(""steigejas_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,steigimas,date,D,,,4,open,,Steigimo data,
 ,,,,,steig_ta,string,,,,4,open,,Įsteigimo teisės aktas,
 ,,,,,steig_tikslas,string,,,,4,open,,Steigimo tikslas,Aprašomoji informacija
@@ -1332,8 +1332,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""duomen_monitor_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,st_id,string,,,,4,open,,Identifikatorius,Jei gamtos paveldo objektas yra saugomoje teritorijoje pildomas saugomos teritorijos kurioje yra gamtos paveldo objektas identifikatorius
@@ -1415,8 +1415,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reiksme,integer,,,,4,open,,Objekto reikšmė,Gamtos paveldo objekto reikšmė: valstybės saugomi savivaldybės saugomi
 ,,,,,,enum,,,1,,,,Valstybės saugomas,
 ,,,,,,,,,2,,,,Savivaldybės saugomas,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja saugomos teritorijos riba reglamentai arba šis teisės aktas yra šiuo metu galiojantis saugomos teritorijos teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
@@ -1502,8 +1502,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(""saltiniai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,buf_zona_apras,string,,,,4,open,,Buferinė zona,Duomenys apie valstybinio parko buferinę apsaugos zoną
 ,,,,,pastabos,string,,,,4,open,,Pastabos,
-,,,,,steigejas_galiojantis_lt,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
-,,,,,,comment,,,"update(""steigejas_galiojantis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,steigejas_galiojantis_lt.ja_pavadinimas,string,,,,4,open,,Steigėjas,Institucija kurios potvarkiu šiuo metu galioja saugoma teritorija arba jos riba
+,,,,,,comment,,,"update(""steigejas_galiojantis_lt.ja_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,galiojantis,date,D,,,4,open,,Steigimo data,Šiuo metu galiojančio saugomos teritorijos steigimo teisės akto data
 ,,,,,steig_ta_galiojantis,string,,,,4,open,,Teisinis statusas,Teisės aktas pagal kurį šiuo metu galioja gamtos paveldo objekto riba (vieta) reglamentai arba šis teisės aktas yra šiuo metu galiojantis gamtos paveldo objekto teisinis pagrindas
 ,,,,,planavimo_dok,string,,,,4,open,,Planavimo dokumentas,Duomenys apie parengtus planavimo dokumentus
