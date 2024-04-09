@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutrump_pav,string,,,,4,open,,Sutrumpintas sesijos pavadinimas,
 ,,,,,nuo,date,D,,,4,open,,Sesijos pradžios data,
 ,,,,,iki,date,D,,,4,open,,Sesijos pabaigos data,
-,,,,,ses_pozm,string,,,,4,open,,"Sesijos požymis (1 - eilinė, 2 - neeilinė)",
+,,,,,ses_pozm,string,,,,4,open,,"Sesijos požymis: eilinė arba neeilinė",
 ,,,,,,enum,,,"""eilinė""",,,,,
 ,,,,,,,,,"""neeilinė""",,,,,
 ,,,,,kadencija,string,,,,4,open,,Kadencijos numeris,
