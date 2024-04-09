@@ -573,6 +573,7 @@ datasets/gov/lsd/statistika/pajamu_koeficientas_s80s20.csv
 datasets/gov/vvkd/e_zemelapiai.csv
 datasets/gov/rppc/atvykstantys_pabegeliai.csv
 datasets/gov/lrsk/archyviniai.csv
+datasets/gov/lrsk/seimo_renginiai.csv
 datasets/gov/lrsk/youtube.csv
 datasets/gov/nsa/pr/pedagogu_kruvis.csv
 datasets/gov/nsa/sr/studiju_pertraukimas.csv
