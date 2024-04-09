@@ -483,6 +483,7 @@ datasets/gov/rpl/lovu_fondas.csv
 datasets/gov/rplc/stacionaro_apsilankymai.csv
 datasets/gov/rplc/ambulatoriniai_apsilankymai.csv
 datasets/gov/rplc/studentu_registras.csv
+datasets/gov/lrsk/kadencijos_sesijos.csv
 datasets/gov/lsd/statistika/energijos_suvartojimas.csv
 datasets/gov/lsd/statistika/ismetamuju_tersalu_rodikliai.csv
 datasets/gov/lsd/statistika/svki_mok_tarifai.csv
@@ -573,6 +574,8 @@ datasets/gov/lsd/statistika/pajamu_koeficientas_s80s20.csv
 datasets/gov/vvkd/e_zemelapiai.csv
 datasets/gov/rppc/atvykstantys_pabegeliai.csv
 datasets/gov/lrsk/teises_aktai.csv
+datasets/gov/lrsk/pasiulyti_ta.csv
+datasets/gov/lrsk/tekstai.csv
 datasets/gov/lrsk/archyviniai.csv
 datasets/gov/lrsk/seimo_renginiai.csv
 datasets/gov/lrsk/youtube.csv
