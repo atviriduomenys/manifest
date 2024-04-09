@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Sesija,,,vda_id,,,4,,,Lietuvos Respublikos Seimo sesijų tvarkaraštis,"Lietuvos Respublikos Seimo sesijų tvarkaraštis. Pateikiama eilinių ir neeilinių sesijų pradžia ir pabaiga bei kadencijos, kuriai priklauso sesija, id."
+,,,,Sesija,,,id,,,4,,,Lietuvos Respublikos Seimo sesijų tvarkaraštis,"Lietuvos Respublikos Seimo sesijų tvarkaraštis. Pateikiama eilinių ir neeilinių sesijų pradžia ir pabaiga bei kadencijos, kuriai priklauso sesija, id."
 ,,,,,id,string,,,,4,open,,Sesijos identifikacinis numeris,
 ,,,,,sesija,string,,,,4,open,,Sesijos pavadinimas,
 ,,,,,sutrump_pav,string,,,,4,open,,Sutrumpintas sesijos pavadinimas,
