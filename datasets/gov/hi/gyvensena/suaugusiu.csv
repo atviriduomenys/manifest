@@ -421,7 +421,7 @@ naudojotės)",
 ,,,,,,enum,,,'1',,,,taip,
 ,,,,,,,,,'2',,,,ne,
 ,,,,,,,,,'9',,,,neatsakyta į klausimą,
-,,,,,info_VS_prieziuros_paslaugos,string,,,,4,open,,"Iš kur Jūs dažniausiai sužinote apie Jūsų savivaldybėje visuomenės sveikatos priežiūros įstaigų
+,,,,,info_vs_prieziuros_paslaugos,string,,,,4,open,,"Iš kur Jūs dažniausiai sužinote apie Jūsų savivaldybėje visuomenės sveikatos priežiūros įstaigų
 teikiamas visuomenės sveikatos priežiūros paslaugas? Galimi keli atsakymo variantai",
 ,,,,,,enum,,,'1',,,,"iš televizijos, radijo, skaičiau spaudoje, internete",
 ,,,,,,,,,'2',,,,"iš draugų, artimųjų",

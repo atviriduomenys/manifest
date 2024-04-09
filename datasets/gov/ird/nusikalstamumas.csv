@@ -63,5 +63,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,value,string,,,,2,open,,Dimensijos reikšmė,Pasirinktos dimensijos reikšmė
 ,,,,,,,,,,,,,,
 ,,,,IndicatorsOb,,,"item, dt",,,4,,,IndicatorsOb,"Lentelė, kurioje yra saugomos rodiklių reikšmės"
-,,,,,dt,date,M,,,4,open,,Data,"Laikotarpis, kurį apima duomenų rinkinys, pvz.: 2020-07 - 2020 metų spalio mėn."
+,,,,,dt,string,,,,2,open,,Data,"Laikotarpis, kurį apima duomenų rinkinys, pvz.: 2020-07 - 2020 metų spalio mėn."
 ,,,,,item,ref,IndicatorsItem,,,4,open,,Kodas,Dimensijos ID iš  Indicatorsitem  lentelės

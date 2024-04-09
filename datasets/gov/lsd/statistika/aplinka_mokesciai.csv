@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/aplinka_mokesciai,,,,,,,,,,,,Su aplinka susiję mokesčiai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R069_M8011003,,,vda_id,,,4,,,Su aplinka susiję mokesčiai,"Su aplinka susiję mokesčiai pagal EVRK kodus. Su aplinka susijęs mokestis – mokestis, kurio mokesčio bazė yra tam tikro įrodyto specifinio neigiamą poveikį aplinkai turinčio reiškinio fizinis vienetas (ar fizinio vieneto pakaitinis rodiklis) ir kuris pagal Europos sąskaitų sistemą (ESS) yra priskiriamas mokesčiams. Su aplinka susiję mokesčiai priskiriami šioms ESS 2010 kategorijoms: - gamybos ir importo mokesčiai (D.2); - einamieji pajamų, turto mokesčiai ir kt. (D.5); - kapitalo mokesčiai (D.91). Naudojami klasifikatoriai: Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.); Geografinė aprėptis: Visa šalies ekonominė teritorija. Laiko aprėptis: Nuo 2008 m."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
+,,,,,evrk_id,string,,,,4,open,,Ekonominės veiklos rūšies (EVRK 2 red.) kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,mokestis,string,,,,4,open,,Mokestis,
+,,,,,mokestis_id,string,,,,4,open,,Mokesčio kodas,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,

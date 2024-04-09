@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Parama,,,metai,,,2,,,,
 ,,,,,metai,integer,,Metai,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
-,,,,,savanoriškos_imokos,number,,Savanoriškoms įmokoms į daugiašalius fondus ,,2,open,,Savanoriškoms įmokoms į daugiašalius fondus ,
+,,,,,savanoriskos_imokos,number,,Savanoriškoms įmokoms į daugiašalius fondus ,,2,open,,Savanoriškoms įmokoms į daugiašalius fondus ,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,projektai,number,,Projektams,,2,open,,Projektams,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,

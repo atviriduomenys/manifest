@@ -1,0 +1,79 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/nepriteklius,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R0450M30802206,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, lytį, nepriteklių)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+Tyrime naudojamas klasifikatorius:
+Teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,lytis_id,string,,,,4,open,,Lytis ID,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,nepritekliai,string,,,,4,open,,Nepritekliai,
+,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0450M3080371,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal išsilavinimo lygį ir nepriteklių),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+Tyrime naudojamas klasifikatorius:
+Teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,issilavinimo_lygis,string,,,,4,open,,Išsilavinimo lygis,
+,,,,,issilavinimo_lygis_id,string,,,,4,open,,Išsilavinimo lygio kodas,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,nepritekliai,string,,,,4,open,,Nepritekliai,
+,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0450M3080372,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklių, gimimo šalį)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+Tyrime naudojamas klasifikatorius:
+Teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius,string,,,,4,open,,Amžius,
+,,,,,amzius_id,string,,,,4,open,,Amžius ID,
+,,,,,gimimo_salis,string,,,,4,open,,Gimimo šalis,
+,,,,,gimimo_salis_id,string,,,,4,open,,Gimimo šalis ID,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,nepritekliai,string,,,,4,open,,Nepritekliai,
+,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0450M3080373,,,vda_id,,,4,,,"Materialinis ir socialinis nepriteklius (pagal amžių, nepriteklį, pilietybę)","Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+Tyrime naudojamas klasifikatorius:
+Teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius,string,,,,4,open,,Amžius,
+,,,,,amzius_id,string,,,,4,open,,Amžius ID,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,nepritekliai,string,,,,4,open,,Nepritekliai,
+,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
+,,,,,pilietybe,string,,,,4,open,,Pilietybė,
+,,,,,pilietybe_id,string,,,,4,open,,Pilietybė ID,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0450M3080374,,,vda_id,,,4,,,Materialinis ir socialinis nepriteklius (pagal nepriteklių ir aktyvumo statusą),"Šiame rinkinyje pateikta statistinė informacija apie namų ūkių gyvenimo sąlygas. Rengiama statistinė informacija apie namų ūkio būsto sąlygas, būsto išlaikymo išlaidas ir jų naštą, namų ūkio fizinę ir socialinę aplinką, turimus įsiskolinimus, ekonominius sunkumus, su kuriais susiduria namų ūkis ar asmuo, ir galimybę tenkinti kai kuriuos poreikius. Statistinio stebėjimo vienetas: privatus namų ūkis ir 16 metų ar vyresnis asmuo – privataus namų ūkio narys. Laiko aprėptis - nuo 2021 m., metinis.
+Tyrime naudojamas klasifikatorius:
+Teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,aktyvumo_statusas,string,,,,4,open,,Aktyvumo statusas,
+,,,,,aktyvumo_statusas_id,string,,,,4,open,,Aktyvumo statusas ID,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,nepritekliai,string,,,,4,open,,Nepritekliai,
+,,,,,nepritekliai_id,string,,,,4,open,,Nepritekliai ID,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,

@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nma/pareiskeju_priemones,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,PareiskėjoPriemone,,,,,,3,,,Pareiškėjų dalyvavimas NMA priemonėse,
+,,,,PareiskejoPriemone,,,,,,3,,,Pareiškėjų dalyvavimas NMA priemonėse,
 ,,,,,pareiskejo_kodas,string,,,,3,open,,Pareiškėjo kodas,
 ,,,,,pareiskejo_tipas,string,,,,4,open,,Pareiškėjo tipas,
 ,,,,,,enum,,,"""Fizinis""",,,,Fizinis asmuo,

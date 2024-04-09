@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/namu_ukiu_tersalai,,,,,,,,,,,,"Namų ūkių teršalų kiekis, išmestas į atmosferą",
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R058_M8010705,,,vda_id,,,4,,,"Namų ūkių teršalų kiekis, išmestas į atmosferą","Namų ūkių teršalų kiekis, išmestas į atmosferą. Į orą išmetami teršalai – iš nacionalinio ūkio (gamybos ar vartojimo procesų) į atmosferą (kuri yra aplinkos dalis) patenkantis fizinis dujinių ar kietųjų dalelių medžiagų srautas. Naudojami klasifikatoriai: Remiantis Europos Parlamento ir Tarybos Reglamentu (ES) Nr. 691/2011 dėl Europos aplinkos ekonominių sąskaitų, rengiami statistiniai duomenys apie šiuos į orą išmetamus teršalus: anglies dioksidą (CO2), išskyrus išsiskiriantį iš biomasės; anglies dioksidą iš biomasės (biomasės CO2); azoto oksidą (N2O); metaną (CH4); perfluorangliavandenilius (PFCs); hidrofluorangliavandenilius (HFCs); sieros heksafluoridą (SF6); azoto oksidus (NOx); nemetano lakiuosius organinius junginius (NMVOCs); anglies monoksidą (CO); kietąsias daleles < 10 mikronų (PM10); kietąsias daleles < 2,5 mikronų (PM2,5); sieros dioksidą (SO2); amoniaką (NH3). Geografinė aprėptis: Visa šalies teritorija. Laiko aprėptis: Nuo 2008 m."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,namu_ukiu_veiklos,string,,,,4,open,,Namų ūkių veiklos,
+,,,,,namu_ukiu_veiklos_id,string,,,,4,open,,Namų ūkių veiklų kodas,
+,,,,,tersalai,string,,,,4,open,,Teršalai,
+,,,,,tersalai_id,string,,,,4,open,,Teršalų kodas,
+,,,,,verte,number,,,,4,open,,"Namų ūkių teršalų kiekis, išmestas į atmosferą",
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,

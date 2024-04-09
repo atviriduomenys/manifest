@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov//pb/bva,,,,,,,,,,,,,
+,datasets/gov/pb/bva,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,biudzetas,,,,csv,,https://data.gov.lt/dataset/1665/download/9593/vpb-biudzeto-vykdymo-ataskaita-2020-Q2.csv,tabular(sep: ';'),,,,,
 ,,,,BiudzetoVykdymoAtaskaita,,,kodas,,,4,,,,

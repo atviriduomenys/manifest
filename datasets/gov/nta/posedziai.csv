@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_uzdaras_posedis,string,,Ar_Uždaras_Posėdis,,4,open,,Uždaras/Neuždaras posėdis,
 ,,,,,,enum,,,"""ne""",,,,Neuždaras,
 ,,,,,,,,,"""taip""",,,,Uždaras,
-,,,,,Instancija,string,,Instancija,,4,open,,Instancija,
+,,,,,instancija,string,,Instancija,,4,open,,Instancija,
 ,,,,,,enum,,,"""I-a instancija""",,,,I-a instancija,
 ,,,,,,,,,"""Apeliacinė instancija""",,,,Apeliacinė instancija,
 ,,,,,,,,,"""Kasacinė instancija""",,,,Kasacinė instancija,

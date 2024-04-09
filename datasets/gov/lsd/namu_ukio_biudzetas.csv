@@ -867,7 +867,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,4,,,,"Moksleivis, studentas ",
 ,,,,,,,,,5,,,,"Namų šeimininkas, ekonomiškai neaktyvus asmuo",
 ,,,,,,,,,6,,,,Neįgalus asmuo,
-,,,,,filter__,integer,,,,,open,,,
+,,,,,filter_,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,Household2012,,,,,,,,,Namų ūkio duomenys 2012m.,"Namų ūkio dydis, svoris įverčių skaičiavimui, vertinimo sritys (gyvenamoji vietovė, namų ūkio tipas, namų ūkio galvos socialinė-ekonominė grupė, amžius, išsilavinimas ir kt.)"
 ,,,,,hh_ident,integer,,,,,open,,Namų ūkio ID,

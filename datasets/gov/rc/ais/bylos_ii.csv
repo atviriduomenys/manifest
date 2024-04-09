@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rc/ais/bylos_II,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie antstolių vykdomas bylas – II,"AIS duomenys apie antstolių vykdomas bylas – II (pagal skolininkų fizinių ir juridinių asmenų skaičių, amžių, išieškotiną sumą). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie antstolių vykdomas bylas. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
+,datasets/gov/rc/ais/bylos_ii,,,,,,,,,,,,Antstolių informacinės sistemos (AIS) duomenys apie antstolių vykdomas bylas – II,"AIS duomenys apie antstolių vykdomas bylas – II (pagal skolininkų fizinių ir juridinių asmenų skaičių, amžių, išieškotiną sumą). Antstolių informacinės sistemos (AIS) pirminiai duomenys (RAW DATA) apie antstolių vykdomas bylas. Duomenų geografinė imtis — visa šalies teritorija. Brandos lygis — III. Atnaujinimo dažnumas — kas 3 mėn. Duomenų formatas — CSV. Licencija — CC BY 4.0"
 ,,,,,,,,,,,,,,
 ,,,,VykdomaByla,,,nr,,,4,,,Antstolių informacinės sistemos (AIS) duomenys apie antstolių vykdomas bylas – II,
 ,,,,,nr,integer,,,,4,open,,Eilės numeris šiame duomenų rinkinyje,

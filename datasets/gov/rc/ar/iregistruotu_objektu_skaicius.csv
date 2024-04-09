@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,patalpos_n,integer,,,,4,open,,Naujai įregistruotų patalpų sk.,
 ,,,,,adresai_n,integer,U,,,4,open,,Naujai įregistruotų adresų taškų sk. ,
 ,,,,,gatves_n,integer,U,,,4,open,,Naujai įregistruotų gatvių sk.,
-,,,,,gyv_vietovės_n,integer,U,,,4,open,,Naujai įregistruotų gyvenamųjų vietovių sk.,
+,,,,,gyv_vietoves_n,integer,U,,,4,open,,Naujai įregistruotų gyvenamųjų vietovių sk.,
 ,,,,,seniunijos_n,integer,U,,,4,open,,Naujai įregistruotų seniūnijų sk.,
 ,,,,,pavadinimai_n,integer,U,,,4,open,,Naujai įregistruotų pavadinimų sk.,
 ,,,,,viso,integer,U,,,4,open,,"Naujai įregistruotų objektų sk., iš viso",

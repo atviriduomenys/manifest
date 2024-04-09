@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,patalpos_k,integer,U,,,4,open,,Pakeistų patalpų sk.,
 ,,,,,adresai_k,integer,U,,,4,open,,Pakeistų adresų taškų sk. ,
 ,,,,,gatves_k,integer,U,,,4,open,,Pakeistų gatvių sk.,
-,,,,,gyv_vietovės_k,integer,U,,,4,open,,Pakeistų gyvenamųjų vietovių sk.,
+,,,,,gyv_vietoves_k,integer,U,,,4,open,,Pakeistų gyvenamųjų vietovių sk.,
 ,,,,,seniunijos_k,integer,U,,,4,open,,Pakeistų seniūnijų sk.,
 ,,,,,pavadinimai_k,integer,U,,,4,open,,Pakeistų pavadinimų sk.,
 ,,,,,viso,integer,U,,,4,open,,"Pakeistų objektų sk., iš viso",

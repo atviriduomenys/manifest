@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/ismetamuju_tersalu_rodikliai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S1R021_M8010706,,,vda_id,,,4,,,Išmetamųjų teršalų jungiamieji rodikliai,"Į orą išmetamų teršalų sąskaitose nurodomi duomenys apie šalies vienetų rezidentų, kaip jie yra apibrėžti Europos nacionalinių ir regioninių sąskaitų sistemoje (ESS), išmetamų likutinių dujinių ir kietųjų dalelių medžiagų srautus."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpio kodas,
+,,,,,laikotarpis,date,Y,,,4,open,,Laikotarpis,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetų kodas,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,rodikliai_id,string,,,,4,open,,Rodiklių kodas,
+,,,,,rodikliai,string,,,,4,open,,Rodikliai,
+,,,,,tersalai_id,string,,,,4,open,,Teršalų kodas,
+,,,,,tersalai,string,,,,4,open,,Teršalai,
+,,,,,verte,number,,,,4,open,,Išmetamųjų teršalų jungiamieji rodikliai,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,

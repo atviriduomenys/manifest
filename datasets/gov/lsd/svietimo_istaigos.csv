@@ -24,4 +24,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyv_kodas,integer,,,,2,open,,"Gyvenvietės"","" kurioje yra institucija kodas",
 ,,,,,gyv_pav,string,,,,2,open,,"Gyvenvietės"","" kurioje yra institucija pavadinimas",
 ,,,,,gyvenamoji_vietove,string,,,,3,open,,"Gyvenvietės"","" kurioje yra institucija tipas",
-,,,,,koord,"geometry(point,4326)",m,,,4,open,,"Švietimo institucijos koordinatės",
+,,,,,koord,"geometry(point,3346)",m,,,4,open,,"Švietimo institucijos koordinatės",

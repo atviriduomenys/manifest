@@ -3,4 +3,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,IregistruotasParamosGavejas,,,juridinis_asmuo,,,4,,,Juridinių asmenų registre įregistruoti paramos gavėjai,
 ,,,,,juridinis_asmuo,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,,4,open,,Juridinio asmens pavadinimas Juridinių asmenų registre,
-,,,,,Paramos_gav_nuo,date,D,,,4,open,,Paramos gavėjo statuso įregistravimo data,
+,,,,,paramos_gav_nuo,date,D,,,4,open,,Paramos gavėjo statuso įregistravimo data,

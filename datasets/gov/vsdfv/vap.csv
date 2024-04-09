@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Moteris""",,,,Moteris,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],savivaldybe,,2,open,,Savivaldybė,
 ,,,,,,comment,type,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
-,,,,,menesio_pajamos ,number,,mėnesio pajamos ,,3,open,,"Apdraustojo mėnesio pajamos, Eur ","Asmenų, dirbusių pilnų mėn. pajamos, nuo kurių buvo priskaičiuotos valstybinio socialinio draudimo įmokos per ataskaitinį laikotarpį."
+,,,,,menesio_pajamos,number,,mėnesio pajamos ,,3,open,,"Apdraustojo mėnesio pajamos, Eur ","Asmenų, dirbusių pilnų mėn. pajamos, nuo kurių buvo priskaičiuotos valstybinio socialinio draudimo įmokos per ataskaitinį laikotarpį."
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,sodraprofesija,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_2_4.csv,,,,,,

@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrsk/youtube,,,,,,,,,,,,Lietuvos Respublikos Seimo YouTube transliacijų duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Transliacija,,,vda_id,,,4,,,Lietuvos Respublikos Seimo YouTube transliacijų duomenys,"Rinkinyje pateikiami duomenys apie Seime vykdytas YouTube transliacijas iš komitetų posėdžių, konferencijų, spaudos konferencijų, kongresų, diskusijų ir pan. Taip pat pateikiama informacija apie transliacijos pradžios ir pabaigos  laiko žymas."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Youtube įrašo pavadinimas,
+,,,,,aprasymas,string,,,,2,open,,Youtube įrašo aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas@lt"", type: ""text"")",4,open,,,
+,,,,,pradzia,datetime,L,,,4,open,,Youtube įrašo pradžia,
+,,,,,pabaiga,datetime,L,,,4,open,,Youtube įrašo pabaiga,
