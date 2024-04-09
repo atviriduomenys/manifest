@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""tekst_pav_lt@lt"", type: ""text"")",4,open,,,
 ,,,,,tekstas_lt,string,,,,2,open,,Publikuoto teksto turinys,
 ,,,,,,comment,type,,"update(property: ""tekstas_lt@lt"", type: ""text"")",4,open,,,
-,,,,,kalba,string,,,,4,open,,Renginio kalba,
+,,,,,kalba,string,,,,4,open,,Teksto kalba,
 ,,,,,paskelbimas,date,D,,,4,open,,Teksto paskelbimo data,
 ,,,,,koregavimas,date,D,,,4,open,,Paskutinė teksto redagavimo data,
 ,,,,,tekst_url,string,,,,4,open,,Nuoroda į tekstą Lietuvos Respublikos Seimo portale,
