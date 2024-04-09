@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lrsk/seimo_renginiai,,,,,,,,,,,,Duomenys apie Seime vykusius renginius,"Rinkinyje pateikiami duomenys apie Seime organizuotus renginius nuo 2015m. Pateikiama informacija: renginio pavadinimas, kalba, pradžios ir pabaigos laikas, renginio vieta ir vietų skaičius"
+,datasets/gov/lrsk/seimo_renginiai,,,,,,,,,,,,Duomenys apie Seime vykusius renginius,"Rinkinyje pateikiami duomenys apie Seime organizuotus renginius nuo 2015m. Pateikiama informacija: renginio pavadinimas, kalba, pradžios ir pabaigos laikas ir renginio vieta."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
