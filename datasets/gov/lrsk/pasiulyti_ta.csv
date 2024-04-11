@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_nacionalinis,boolean,,,,4,open,,"Požymis, ar dokumentas nacionalinis (""True"" –nacionalinis, ""False"" – savivaldybių)",
 ,,,,,ar_verslo_reg,boolean,,,,4,open,,"Verslo sąlygų reguliavimo požymis (""True"" – taip, ""False"" – ne)",
 ,,,,,ar_pagr_isv,boolean,,,,4,open,,"Pagrindinės išvados požymis (""True"" – istorinis, ""False"" – ne)",
-,,,,,atv_dok_nr,boolean,,,,4,open,,Numeris atvaizdavimui sąrašuose (registracijos numeris),
+,,,,,atv_dok_nr,string,,,,4,open,,Numeris atvaizdavimui sąrašuose (registracijos numeris),
 ,,,,,atvaizdavimas,date,D,,,4,open,,Atvaizduojama dokumento data,
 ,,,,,paviesinimas,date,D,,,4,open,,"Teisės akto, kito dokumento paviešinimo data",
 ,,,,,es_teises_aktas,integer,,,,4,open,,Nuorodų į ES teisės aktus skaičius,
