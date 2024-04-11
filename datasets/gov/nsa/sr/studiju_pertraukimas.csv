@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pertraukimas,,,iraso_id,,,4,,,Studentų studijų pertraukimai ir nutraukimai,Lentelėje pateikti Nacionalinės švietimo agentūros (NŠA) studentų studijų pertraukimų / nutraukimų duomenys iš studentų registro (SR). Persidengiantys pertraukimai (pvz.: studentas pertraukė studijas 2021-09-04 - 2022-01-30 ir tuomet vėl 2022-01-31 - 2022-09-01) yra sutraukti į vieną laikotarpį. Duomenų laiko aprėptis - nuo 1993 m. 
+,,,,Pertraukimas,,,iraso_id,,,4,,,Studentų studijų pertraukimai ir nutraukimai,Lentelėje pateikti Nacionalinės švietimo agentūros (NŠA) studentų studijų pertraukimų / nutraukimų duomenys iš studentų registro (SR). Persidengiantys pertraukimai (pvz.: studentas pertraukė studijas 2021-09-04 - 2022-01-30 ir tuomet vėl 2022-01-31 - 2022-09-01) yra sutraukti į vieną laikotarpį. Duomenys kaupiami nuo 2010 m. 
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,studento_stud_id,string,,,,4,open,,Studento studijų identifikatorius,
 ,,,,,st_id,string,,,,4,open,,Studento identifikatorius,
