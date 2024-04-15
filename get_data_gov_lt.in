@@ -487,6 +487,7 @@ datasets/gov/rplc/ambulatoriniai_apsilankymai.csv
 datasets/gov/rplc/studentu_registras.csv
 datasets/gov/jra/paraiskos.csv
 datasets/gov/lrsk/kadencijos_sesijos.csv
+datasets/gov/jra/kvalifikacija.csv
 datasets/gov/lsd/statistika/energijos_suvartojimas.csv
 datasets/gov/lsd/statistika/ismetamuju_tersalu_rodikliai.csv
 datasets/gov/lsd/statistika/svki_mok_tarifai.csv
