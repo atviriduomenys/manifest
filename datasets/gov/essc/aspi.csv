@@ -13,5 +13,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,panaudotos_priemones_kiekis,integer,,,,4,open,,Panaudotas priemonės kiekis,
 ,,,,,panaudojimo_tikslas,string,,,,4,open,,Priemonės paskirtis,
 ,,,,,atstatytas_priemones_kiekis,integer,,,,4,open,,Atkurtas priemonės kiekis,
-,,,,,priemones_planuojama_atstatymo_data,date,D,,,4,open,,Kada planuojama atkurti pradinį priemonės kiekį,
+,,,,,planuojama_atstatymo_data,date,D,,,4,open,,Kada planuojama atkurti pradinį priemonės kiekį,
 ,,,,,turimas_priemones_kiekis,integer,,,,4,open,,Aktualiu metu turimas priemonės kiekis,
