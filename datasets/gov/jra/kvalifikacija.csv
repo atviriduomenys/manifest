@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,darbuotojas,string,,,,4,open,,Darbuotojo šifruotas identifikatoirus,
 ,,,,,kursai_lt,string,,,,1,open,,Darbuotojo išsirinkti kursai,
-,,,,,,comment,type,,"update(property: ""kursai@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,,comment,type,,"update(property: ""kursai_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,etatas,string,,,,1,open,,Darbuotojo etatas,
 ,,,,,issilavinimas,string,,,,1,open,,Darbuotojo išsilavinimas,
 ,,,,,darboviete,string,,,,2,open,,Darbuotojo darbo vieta,
