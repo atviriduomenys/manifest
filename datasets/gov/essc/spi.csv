@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,istaigos_pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
 ,,,,,istaigos_adresas,string,,,,3,open,,Įstaigos adresas,
 ,,,,,el_pastas,string,,,,3,open,,Cenzūruotas įstaigos el. Pašto adresas,
-,,,,,apskritis,string,,,,4,open,,Įstaigos apskritis,
+,,,,,apskritis,string,,,,2,open,,Įstaigos apskritis,
 ,,,,,pavaldumas,string,,,,4,open,,Kam įstaiga yra pavaldi,
 ,,,,,istaigos_vertinimo_data,date,D,,,4,open,,Įstaigos vertinimo data,
 ,,,,,vertinimo_tipas,string,,,,4,open,,Vertinimo tipas,
