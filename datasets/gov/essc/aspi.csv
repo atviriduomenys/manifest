@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/essc/aspi,,,,,,,,,,,,ASPĮ aprūpinimas AAP,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,aspi,,,vda_id,,,4,,,ASPĮ aprūpinimas AAP,"Ekstremalių sveikatai situacijų centras (ESSC) kaupia sveikatos priežiūros įstaigų aprūpinimo asmens apsaugos priemonėmis bei jų sunaudojimo ir atstatymo duomenis, gaunamus iš Sveikatos apsaugos ministerijos. Duomenys kaupiami nuo 2023 m. ir atnaujinami balandžio bei spalio mėnesiais. Duomenys apima datą, nuo kada aktualūs turimi duomenys, įstaigos ir priemonės pavadinimus, priemonės paskirtį, išduotą, panaudotą, turimą ir atstatytą priemonės kiekius bei atstatymo datą.  "
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,duomenu_aktualumo_data,date,M,,,4,open,,Nuo kada aktualūs turimi duomenys,
+,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
+,,,,,priemones_pavadinimas,string,,,,4,open,,Priemonės pavadinimas,
+,,,,,isduotas_kiekis,integer,,,,4,open,,Išduotas priemonės kiekis,
+,,,,,panaudotas_kiekis,integer,,,,4,open,,Panaudotas priemonės kiekis,
+,,,,,panaudojimo_tikslas,string,,,,4,open,,Priemonės paskirtis,
+,,,,,atstatytas_kiekis,integer,,,,4,open,,Atkurtas priemonės kiekis,
+,,,,,planuojama_atstatymo_data,date,D,,,4,open,,Kada planuojama atkurti pradinį priemonės kiekį,
+,,,,,turimas_kiekis,integer,,,,4,open,,Aktualiu metu turimas priemonės kiekis,
