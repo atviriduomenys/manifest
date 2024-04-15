@@ -19,7 +19,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrimo_studijos_aprasymas,string,,,,4,open,,Tyrimo studijos aprašymas,
 ,,,,,tyrimo_serijos_aprasymas,string,,,,4,open,,Tyrimo serijos aprašymas,
 ,,,,,atvaizdo_uuid,string,,,,4,open,,Atvaizdo unikalus identifikatorius,
-,,,,,apsvita_uas,integer,"μ″",,,4,open,,Apšvita mikro arksekundėmis,
+,,,,,apsvita_uas,integer,""μ″"",,,4,open,,Apšvita mikro arksekundėmis,
 ,,,,,spinduliuote_dgy_cm2,number,dGy/cm^2,,,4,open,,Spinduliuotė decigrėjais kvadratiniame centimetre,
 ,,,,,paskyres_gydytojas,string,,,,4,open,,Tyrimą paskyręs gydytojas,
 ,,,,,atlikes_technikas,string,,,,4,open,,Tyrimą atlikęs technikas,
