@@ -5,8 +5,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,kvalifikacija,,,vda_id,,,4,,,JRA jaunimo darbuotojų kvalifikacija,"Jaunimo reikalų agentūros Jaunimo darbuotojų sistema kaupia duomenis apie JRA dirbančius darbuotojus. Teikiami duomenis kaupiami nuo 2018 m., numatyta atnaujinti kasdien. Duomenyse kaupiama darbuotojo šifruotas kodas, išsirinkti kursai, tuometiniai etatas, išsilavinimas ir darbovietė."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,darbuotojas,string,,,,4,open,,Darbuotojo šifruotas identifikatoirus,
 ,,,,,kursai,string,,,,1,open,,Darbuotojo išsirinkti kursai,
+,,,,,vietos_objektas_lygis_lt,string,,,,4,open,,Nusižengimo padarymo vietos objektas (aukštesnis lygis),
+,,,,,,comment,type,,"update(property: ""vietos_objektas_lygis_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,etatas,string,,,,1,open,,Darbuotojo etatas,
 ,,,,,issilavinimas,string,,,,1,open,,Darbuotojo išsilavinimas,
 ,,,,,darboviete,string,,,,2,open,,Darbuotojo darbo vieta,
