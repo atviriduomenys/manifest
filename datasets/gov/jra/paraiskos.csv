@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/jra/paraiskos,,,,,,,,,,,,Savanorių paraiškų statistika pagal priimančias organizacijas,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,paraisku_statistika,,,vda_id,,,4,,,Savanorių paraiškų statistika pagal priimančias organizacijas,"Jaunimo reikalų agentūros Jaunimo savanoriškos tarnybos sistema kaupia duomenis apie jaunimo savanorystę priimančiose organizacijose. Institucija teikia duomenis, kaupiamus nuo 2018 m., juos atnaujinti numatyta kasdien. Duomenyse kaupiama priimančios organizacijos pavadinimas ir adresas, savanorystės paraiškos teikimo metai, priimtų, atmestų įprastų paraiškų skaičiai bei jų suma, paraiškų tapti kuratoriumi bei mentoriumi skaičiai."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,organizacijos_pavadinimas,string,,,,3,open,,"Organizacijos pavadinimas, kuriai teikta paraiška",
+,,,,,organizacijos_addresas,string,,,,2,open,,"Organizacijos adresas, kuriai teikta paraiška",
+,,,,,metai,date,Y,,,4,open,,"Metai, kada teikta paraiška",
+,,,,,iprastu_paraisku_sk,integer,U,,,4,open,,Įprastų paraiškų savanoriauti organizacijoje skaičius,
+,,,,,priimta_iprastu_paraisku_sk,integer,U,,,4,open,,Priimtų įprastų paraiškų savanoriauti organizacijoje skaičius,
+,,,,,atmesta_iprastu_paraisku_sk,integer,U,,,4,open,,Atmestų įprastų paraiškų savanoriauti organizacijoje skaičius,
+,,,,,kuratoriu_paraisku_sk,integer,U,,,4,open,,Paraiškų savanoriauti kuratoriais organizacijoje skaičius,
+,,,,,mentoriu_paraisku_sk,integer,U,,,4,open,,Paraiškų savanoriauti mentoriais organizacijoje skaičius,
