@@ -1,4 +1,4 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lnb/knygomatai,,,,,,,,,,,,Knygomatai,
 ,,,,,,,,,,,,,,
 ,,,,Knygomatas,,,vda_id,,,4,,,Knygomatai,Martyno Mažvydo bibliotekos  LIBIS IS  administruojami knygomatai.
