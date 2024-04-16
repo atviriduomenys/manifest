@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lnb/bibliografiniai_irasai,,,,,,,,,,,,Bibliografiniai įrašai,
 ,,,,,,,,,,,,,,
-,,,,Sarasas,,,id,,,4,,,Bibliografiniai įrašai,Martyno Mažvydo bibliotekos LIBIS IS bibliografinių įrašų sąrašas
+,,,,Irasas,,,id,,,4,,,Bibliografiniai įrašai,Martyno Mažvydo bibliotekos LIBIS IS bibliografinių įrašų sąrašas
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,iraso_kodas,string,,,,4,open,,Įrašo kodas,
 ,,,,,iraso_pavadinimas,string,,,,4,open,,Pavadinimas sąrašui,
