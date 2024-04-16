@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lnb/knygomatai,,,,,,,,,,,,Knygomatai,
+,,,,,,,,,,,,,,
+,,,,Knygomatas,,,vda_id,,,4,,,Knygomatai,Martyno Mažvydo bibliotekos  LIBIS IS  administruojami knygomatai.
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,knygomato_adresas,string,,,,4,open,,Knygomato adresas,
+,,,,,isdavimo_salygos,string,,,,4,open,,Knygomato išdavimo sąlygos,
+,,,,,pavadinimas,string,,,,4,open,,Knygomato pavadinimas,
+,,,,,knygomatas_aktyvus,boolean,,,,4,open,,Požymis ar aktyvus,
+,,,,,x_koord,integer,,,,4,open,,X koordinatės,
+,,,,,y_koord,integer,,,,4,open,,Y koordinatės,
+,,,,,patikimumas,integer,%,,,4,open,,Adreso/koordinačių patikimumas procentais,
+,,,,,aptikta_koordinaciu,integer,,,,4,open,,Kiek aptikta koordinačių su tokiu patikimumu,
