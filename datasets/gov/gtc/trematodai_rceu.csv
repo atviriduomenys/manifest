@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/gtc/trematodai_rceu,,,,,,,,,,,,Informacija apie Centrinės ir Rytų Europos trematodus,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Trematodas,,,iraso_id,,,4,,,Informacija apie Centrinės ir Rytų Europos trematodus,Informacija apie P.B. Šivickio Gamtos Tyrimų Centro mokslinių darbuotojų ištirtus ir aprašytus stuburinius parazitus (trematodus) išplitusius Rytų ir Centrinėje  Europoje.
+,,,,,iraso_id,string,,,,4,open,,Įrašo id,
+,,,,,name,string,,,,4,open,,Trematodo pavadinimas,
+,,,,,class,string,,,,4,open,,Trematodo klasė,
+,,,,,genus,string,,,,4,open,,Trematodo rūšis ar tipas,
+,,,,,host,string,,,,4,open,,Trematodo šeimininkas,
+,,,,,host_type,string,,,,4,open,,Trematodo šeimininko tipas,
+,,,,,photo,url,,,,4,open,,Nuoroda į trematodo nuotrauką,
