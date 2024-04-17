@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/gtc/hemosporidiniai_parazitai,,,,,,,,,,,,Informacija apie paukščių hemosporidinius parazitus,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,HemosporidinisParazitas,,,iraso_id,,,4,,,Informacija apie paukščių hemosporidinius parazitus,Informacija apie P.B. Šivickio Gamtos Tyrimų Centro mokslinių darbuotojų ištirtus ir aprašytus paukščių hemosporidinius parazitus išplitusius po visą pasaulį.
+,,,,,iraso_id,string,,,,4,open,,Įrašo id,
+,,,,,parazito_rusis,string,,,,4,open,,Hemosporidinio paukščio parazito rūšis,
+,,,,,malavi_kodas,string,,,,4,open,,Parazito genetinės linijos aprašymas MalAvi duomenų bazėj,
+,,,,,nuoroda_i_aprasyma,url,,,,4,open,,Nuoroda į parazito aprašymą,
