@@ -1,4 +1,4 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vulzk/lab_tyrimai,,,,,,,,,,,,Laboratorijos tyrimų užsakymai ir atsakymai,
 ,,,,,,,,,,,,,,
 ,,,,Atsakymas,,,vda_id,,,4,,,Laboratorijos tyrimų užsakymai ir atsakymai,
