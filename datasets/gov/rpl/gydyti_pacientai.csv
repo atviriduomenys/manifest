@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paguldyta,date,M,,,4,open,,Paciento guldymo data mėnesio tikslumu,
 ,,,,,israsyta,date,M,,,4,open,,Paciento išrašymo data mėnesio tikslumu,
 ,,,,,lovadieniai,integer,,,,4,open,,Lovadienių skaičius,
-,,,,,tlk10,integer,,,,4,open,,Diagnozė,
+,,,,,tlk10,string,,,,4,open,,Diagnozė,
 ,,,,,lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,gim_m_gr,string,,,,4,open,,"Paciento gimimo metų grupė, kas 5 m.",
 ,,,,,gim_m,date,Y,,,4,open,,"Paciento gimimo metai (pagal gimimo metų grupę, priskirti pirmi grupėje nurodyti metai, kas 5 m.)",
