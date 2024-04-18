@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/eso/,,,,,,,,,,,,Juridinių asmenų dujų suvartojimas,
+,datasets/gov/eso/jur_asm_duju_suvartojimas,,,,,,,,,,,,Juridinių asmenų dujų suvartojimas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,jur_asm_duju_suvartojimas,,,iraso_id,,,4,,,Juridinių asmenų dujų suvartojimo duomenys,"Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) juridinių asmenų dujų suvartojimo duomenys. Adresai pateikiami 10 kilometrų dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Gardelės, kuriose yra 5 arba mažiau vartotojų nerodomos. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."
+,,,,JurAsmDujuSuvartojimas,,,iraso_id,,,4,,,Juridinių asmenų dujų suvartojimo duomenys,"Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) juridinių asmenų dujų suvartojimo duomenys. Adresai pateikiami 10 kilometrų dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Gardelės, kuriose yra 5 arba mažiau vartotojų nerodomos. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,vartotojo_kodas,string,,,,4,open,,Dujų vartotojo kodas,
 ,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
