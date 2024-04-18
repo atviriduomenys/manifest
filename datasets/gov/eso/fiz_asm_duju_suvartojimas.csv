@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vartotojo_kodas,string,,,,4,open,,Vartotojo kodas,
 ,,,,,lytis,string,,,,4,open,,Lytis,
 ,,,,,gimimo_metai,date,Y,,,4,open,,Gimimo metai,
-,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
 ,,,,,grid_id,ref,"/datasets/gov/lsd/grid/Grid1KmSq",,,4,open,,Objekto stačiakampė 1km gardelė,
 ,,,,,obj_nr,string,,,,4,open,,Objekto numeris,
 ,,,,,objekto_tipas,string,,,,4,open,,Objekto tipas,
