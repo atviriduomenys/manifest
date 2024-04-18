@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/eso/,,,,,,,,,,,,Fizinių asmenų dujų suvartojimas,
+,datasets/gov/eso/fiz_asm_duju_suvartojimas,,,,,,,,,,,,Fizinių asmenų dujų suvartojimas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,fiz_asm_duju_suvartojimas,,,iraso_id,,,4,,,Fizinių asmenų dujų suvartojimo duomenys,"Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) fizinių asmenų dujų suvartojimo duomenys. Adresai pateikiami 1 kilometro dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Gardelės, kuriose yra 5 arba mažiau vartotojų nerodomos. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."
+,,,,FizAsmDujuSuvartojimas,,,iraso_id,,,4,,,Fizinių asmenų dujų suvartojimo duomenys,"Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) fizinių asmenų dujų suvartojimo duomenys. Adresai pateikiami 1 kilometro dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Gardelės, kuriose yra 5 arba mažiau vartotojų nerodomos. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,vartotojo_kodas,string,,,,4,open,,Vartotojo kodas,
 ,,,,,lytis,string,,,,4,open,,Lytis,
