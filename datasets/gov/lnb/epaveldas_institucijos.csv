@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Institutas""",,,,Institutas,
 ,,,,,url,url,,,,4,open,,Nuoroda į institucijos svetainę,
 ,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
-,,,,,adresas,string,,,,3,open,,Institucijos adresas,
+,,,,,adresas,string,,,,4,open,,Institucijos adresas,
 ,,,,,koord,geometry(3346),m,,,4,open,,Institucijos koordinatės,
 ,,,,,sukurta,date,D,,,4,open,,Įrašo apie instituciją sūkurimo data,
 ,,,,,atnaujinta,date,D,,,4,open,,"Data, kada paskutinį kartą atnaujinta informacija",
