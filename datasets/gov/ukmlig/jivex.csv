@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,radiologiniai_tyrimai_jivex,,,vda_id,,,4,,,Pacientams atlikti radiologiniai tyrimai,"Ukmergės ligoninės JIVEX sistema kaupia žmonėms atliekamų radiologinių tyrimų duomenis nuo 2018 m., atnaujinamus kasdien. Duomenys apima šifruotus pacientų vidinius sistemos identifikatorius, lytį, gimimo metus. Į duomenis taip pat patenka tyrimų užsakymai, vadinami studijomis: jų identifikatoriai, datos. Patenkantys tyrimų serijų duomenys yra identifikatoriai, datos, paciento kūno padėtis tyrimo metu, tirta kūno dalis, tyrimo serijos modalumas, nusakantis tyrimo pobūdį bei tyrimo serijos protokolas. "
+,,,,JivexRadiologija,,,vda_id,,,4,,,Pacientams atlikti radiologiniai tyrimai,"Ukmergės ligoninės JIVEX sistema kaupia žmonėms atliekamų radiologinių tyrimų duomenis nuo 2018 m., atnaujinamus kasdien. Duomenys apima šifruotus pacientų vidinius sistemos identifikatorius, lytį, gimimo metus. Į duomenis taip pat patenka tyrimų užsakymai, vadinami studijomis: jų identifikatoriai, datos. Patenkantys tyrimų serijų duomenys yra identifikatoriai, datos, paciento kūno padėtis tyrimo metu, tirta kūno dalis, tyrimo serijos modalumas, nusakantis tyrimo pobūdį bei tyrimo serijos protokolas. "
 ,,,,,vda_id,string,,,,4,open,Valstybės duomenų agentūros unikalus identifikatorius,,
 ,,,,,paciento_id,string,,,,4,open,Paciento identifikatorius JIVEX sistemoje,,
 ,,,,,paciento_lytis,string,,,,4,open,Paciento lytis,,
