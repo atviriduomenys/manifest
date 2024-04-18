@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vartotojo_kodas,string,,,,4,open,,Dujų vartotojo kodas,
 ,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
 ,,,,,evrk_2_red,string,,,,4,open,,Ekonominės veiklos rūšies klasifikatorius 2 red.,
-,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
+,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
 ,,,,,vrt_adreso_gardele,ref,"/datasets/gov/lsd/grid/Grid10KmSq",,,4,open,,Vartotojo adreso 10km gardelė,
 ,,,,,rgob_adreso_gardele,ref,"/datasets/gov/lsd/grid/Grid10KmSq",,,4,open,,Registruoto objekto 10km gardelė,
 ,,,,,rgob_numeris,string,,,,4,open,,Registruoto objekto numeris,
