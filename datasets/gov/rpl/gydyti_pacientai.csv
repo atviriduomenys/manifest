@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lnb/gydyti_pacientai,,,,,,,,,,,,VšĮ Rokiškio psichiatrijos ligoninėje gydytų pacientų duomenys,
+,datasets/gov/rpl/gydyti_pacientai,,,,,,,,,,,,VšĮ Rokiškio psichiatrijos ligoninėje gydytų pacientų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Pacientai,,,vda_id,,,4,,,Všį Rokiškio psichiatrijos ligoninėje gydytų pacientų duomenys,"Paciento gyvenamosios vietos regionas (miesto ar rajono pavadinimas), atsiuntusi įstaiga, diagnozė, amžius, lytis, gydymosi laikotarpis, gydymo rezultatas"
+,,,,Pacientai,,,vda_id,,,4,,,VšĮ Rokiškio psichiatrijos ligoninėje gydytų pacientų duomenys,"Paciento gyvenamosios vietos regionas (miesto ar rajono pavadinimas), atsiuntusi įstaiga, diagnozė, amžius, lytis, gydymosi laikotarpis, gydymo rezultatas"
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,pavarde_vardas,string,,,,4,open,,"Paciento pavardė, vardas",Šifruotas identifikatorius
 ,,,,,ak,string,,,,4,open,,Asmens kodas,Šifruotas identifikatorius
