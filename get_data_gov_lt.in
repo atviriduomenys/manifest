@@ -590,6 +590,8 @@ datasets/gov/vulzk/meddream.csv
 datasets/gov/lnb/bibliografiniai_irasai.csv
 datasets/gov/lnb/bibliotekos.csv
 datasets/gov/lnb/knygomatai.csv
+datasets/gov/lnb/epaveldas_institucijos.csv
 datasets/gov/gtc/trematodai_rceu.csv
 datasets/gov/gtc/hemosporidiniai_parazitai.csv
 datasets/gov/rpl/gydyti_pacientai.csv
+
