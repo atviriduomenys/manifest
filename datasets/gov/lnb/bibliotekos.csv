@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_edukacine,boolean,,,,4,open,,Edukacinės institucijos požymis,
 ,,,,,ar_biblioteka,boolean,,,,4,open,,Bibliotekos požymis,
 ,,,,,ar_leidejas,boolean,,,,4,open,,Leidėjo požymis,
-,,,,,ar_skaitytojas,boolean,,,,4,open,,"Skaitytojo statuso požymis (tiesiog default Organizacijos požymis, nes sistema reikalauja bent vieno)",
+,,,,,ar_skaitytojas,boolean,,,,4,open,,Skaitytojo statuso požymis,
 ,,,,,ar_duom_teikejas,boolean,,,,4,open,,Duomenų teikėjo požymis,
 ,,,,,ar_tba,boolean,,,,4,open,,Tarpbibliotekinio abonemento požymis,
 ,,,,,uzsak_atsiemimo_d,integer,,,,4,open,,"Dienų skaičius, per kurias galima atsiimti užsakymą",
