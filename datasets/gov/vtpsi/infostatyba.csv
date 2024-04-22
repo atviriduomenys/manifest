@@ -28,3 +28,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dok_irasas,string,,,,2,open,,Dokumento irasas,
 ,,,,,taskas_lks,geometry(3346),,,,4,open,,Koordinate LKS94 formatu,
 ,,,,,taskas_wgs,geometry(4326),,,,4,open,,Koordinate WGS84 formatu,
+,,,,,uuid,string,,,,2,open,,Dokumento identifikatorius,
