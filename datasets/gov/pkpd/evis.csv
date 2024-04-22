@@ -26,5 +26,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tp_rusis,string,,,,4,open,,Transporto priemonės rūšis,
 ,,,,,tp_kategorija,string,,,,4,open,,Transporto priemonės kategorija,
 ,,,,,ar_tp_registruota_lr,string,,,,4,open,,Ar transporto priemonė registruota Lietuvos Respublikoje,
-,,,,,tp_savininko_kodas,string,,,,4,open,,Transporto priemonės savininko fizinio arba juridinio asmens kodas,
+,,,,,tp_sav_kodas,string,,,,4,open,,Transporto priemonės savininko fizinio arba juridinio asmens kodas,
 ,,,,,tp_sav_jur_asm_pav,string,,,,4,open,,Transporto priemonės juridinio asmens kaip savininko pavadinimas,
