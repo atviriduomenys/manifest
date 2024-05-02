@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,TerminuBankas,,,vda_id,,,4,,,VLKK terminų banko terminų duomenys,"Valstybinės lietuvių kalbos komisijos Lietuvos Respublikos terminų banke kaupiami įvairių sričių terminai lietuvių bei kitomis Europos kalbomis, kaip vokiečių, prancūzų, lenkų. Duomenys kaupiami nuo 2005 m. ir atnaujinami kas mėnesį. Apimami duomenys yra patys terminai, jų sritys, kalba, statusas: teiktinas, neteiktinas arba aprobuotas, įvedimo data bei organizacija, pateikusi patį terminą. Tarp tokių organizacijų patenka VLKK, Užsienio reikalų ministerija, Policijos departamentas.  "
+,,,,TerminuBankas,,,termino_id,,,4,,,VLKK terminų banko terminų duomenys,"Valstybinės lietuvių kalbos komisijos Lietuvos Respublikos terminų banke kaupiami įvairių sričių terminai lietuvių bei kitomis Europos kalbomis, kaip vokiečių, prancūzų, lenkų. Duomenys kaupiami nuo 2005 m. ir atnaujinami kas mėnesį. Apimami duomenys yra patys terminai, jų sritys, kalba, statusas: teiktinas, neteiktinas arba aprobuotas, įvedimo data bei organizacija, pateikusi patį terminą. Tarp tokių organizacijų patenka VLKK, Užsienio reikalų ministerija, Policijos departamentas.  "
 ,,,,,termino_id,string,,,,4,open,,Identifikatorius,
 ,,,,,terminas,string,,,,4,open,,Terminas,
 ,,,,,sritis,string,,,,4,open,,Termino sritis,
