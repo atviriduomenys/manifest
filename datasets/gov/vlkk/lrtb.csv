@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,terminas,string,,,,4,open,,Terminas,
 ,,,,,sritis,string,,,,4,open,,Termino sritis,
 ,,,,,kalba,string,,,,4,open,,Termino kalba,
-,,,,,statusas,string,enum,,,4,open,,"Termino statusas, anot VLKK",
+,,,,,statusas,enum,,,,4,open,,"Termino statusas, anot VLKK",
 ,,,,,,,,Teiktinas,,,,,Teiktinas terminas,
 ,,,,,,,,Neteiktinas,,,,,Neteiktinas terminas,
 ,,,,,,,,Aprobuotas,,,,,Aprobuotas terminas,
