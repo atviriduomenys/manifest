@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vietoves_registratoriaus_id,string,,,,4,open,,Vietovės registratoriaus identifikatorius,
 ,,,,,laikas,datetime,T,,,4,open,,Stebėjimo laikas,
 ,,,,,temperatura_8cm_gylyje_dirvozemyje,number,°C,,,4,open,,Temperatūra 8 cm gylyje dirvožemyje,
-,,,,,temperatura_dirvozemio pavirsiuje,number,°C,,,4,open,,Temperatūra dirvožemio paviršiuje,
+,,,,,temperatura_dirvozemio_pavirsiuje,number,°C,,,4,open,,Temperatūra dirvožemio paviršiuje,
 ,,,,,temperatura_15cm_virs_dirvozemio,number,°C,,,4,open,,Temperatūra 15 cm virš dirvožemio,
 ,,,,,dirvozemio_dregme,integer,,,,3,open,,Neapdorotas dirvožemio drėgmės matas,
 ,,,,,platuma,number,°,,,4,open,,Tiksli registratoriaus buvimo  vietos platuma dešimtainiais laipsniais,
