@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
 ,,,,,ligos_kodas_tlk_10_am,string,,,,4,open,,Paciento diagnozės TLK-10-AM kodas,
 ,,,,,ligos_pavadinimas,string,,,,4,open,,Paciento diagnozės pavadinimas,
-,,,,,,comment,type,,update(property: "ligos_pavadinimas@lt", type: "text"),4,open,spinta:204,,
+,,,,,,comment,type,,"update(property: ""ligos_pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,ligos_pradzios_data,datetime,T,,,4,open,,Paciento diagnozės suteikimo pradžia,
 ,,,,,operacijos_pradzios_laikas,datetime,T,,,4,open,,Pacientui vykdytos operacijos pradžios data ir laikas minutės tikslumu,
 ,,,,,operacijos_pabaigos_laikas,datetime,T,,,4,open,,Pacientui vykdytos operacijos pabaigos data ir laikas minutės tikslumu,
