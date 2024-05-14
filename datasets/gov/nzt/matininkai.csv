@@ -6,15 +6,29 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,MatininkoPazymejimas,,,nr,,,4,,,"Matininkai, geodezininkai ir žemėtvarkos planavimo dokumentų rengėjai",
 ,,,,,vardas_pavarde,string,,,,2,public,,"Matininko vardas, pavardė",Pateikta tik galiojantiems pažymėjimams
+,,,,,,comment,type,,"update(property: ""vardas_pavarde"", type: ""text"")	",4,open,spinta:204,,
+,,,,,darbo_el_pastas,string,,,,2,public,,Matininko darbo el. paštas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
+,,,,,,comment,type,,"update(property: ""darbo_el_pastas"", type: ""text"")	",4,open,spinta:204,,
+,,,,,biuro_adresas,string,,,,2,public,,Matininko biuro adresas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
+,,,,,,comment,type,,"update(property: ""biuro_adresas"", type: ""text"")	",4,open,spinta:204,,
+,,,,,darbo_telefonas,string,,,,2,open,,Matininko dabo telefonas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
+,,,,,,comment,property,,"update(property: ""darbo_telefonas[]"", type: ""array"", source: ""darbo_telefonas"")",4,,spinta:161,,
+,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas],,,4,open,,Savivaldybė kurioje dirba specialistas,
 ,,,,,isduotas,date,D,,,4,open,,Kvalifikacijos pažymėjimo išdavimo data,
 ,,,,,nr,string,,,,4,open,,Kvalifikacijos pažymėjimo numeris,
 ,,,,,pagrindas,string,,,,2,open,,Pažymėjimo išdavimo pagrindas,
+,,,,,,comment,type,,"update(property: ""pagrindas"", type: ""text"")	",4,open,spinta:204,,
 ,,,,,sustabdytas,date,D,,,4,open,,Pažymėjimo sustabdymo data,
 ,,,,,sust_pagrindas,string,,,,2,open,,Pažymėjimo sustabdymo pagrindas,
+,,,,,,comment,type,,"update(property: ""sust_pagrindas"", type: ""text"")	",4,open,spinta:204,,
 ,,,,,sust_panaikintas,date,D,,,4,open,,Pažymėjimo sustabdymo panaikinimo data,
 ,,,,,sust_panaik_pagrindas,string,,,,2,open,,Pažymėjimo sustabdymo panaikinimo pagrindas,
+,,,,,,comment,type,,"update(property: ""sust_panaik_pagrindas"", type: ""text"")	",4,open,spinta:204,,
 ,,,,,panaikintas,date,D,,,4,open,,Pažymėjimo galiojimo panaikinimo data,
 ,,,,,panaik_pagrindas,string,,,,2,open,,Pažymėjimo galiojimo panaikinimo pagrindas,
+,,,,,,comment,type,,"update(property: ""panaik_pagrindas"", type: ""text"")	",4,open,spinta:204,,
+,,,,,bendr_kursu_pab,date,D,,,4,open,,Pastinkinių bendrosios dalies kvalifikacijos tobulinimo kursų data,
+,,,,,tiksl_kursu_pab,date,D,,,4,open,,Pastinkinių tikslinės dalies kvalifikacijos tobulinimo kursų data,
 ,,,,,galioja,boolean,,,,4,open,,Šiuo metu pažymėjimas galioja,
 ,,,,,tipas,string,,,,4,open,,Pažymėjimo tipas,
 ,,,,,,enum,,,"""M""",,,,Matininko,
@@ -27,6 +41,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""ŽR""",,,,žemės reformos žemėtvarkos projektų rengėjo,
 ,,,,,,,,,"""VP""",,,,žemės paėmimo visuomenės poreikiams projektų rengėjo,
 ,,,,,,,,,"""KI""",,,,suteikiantis teisę rengti karinės infrastruktūros projektus,
+,,,,,tipo_pavadinimas,string,,,,3,open,,Pažymėjimo tipo paaiškinimas,
+,,,,,,comment,type,,"update(property: ""tipo_pavadinimas"", type: ""text"")	",4,open,spinta:204,,
 ,,,,,ispetas,date,D,,,4,open,,Įspėjimo data,"Įspėjimo apie tai, kad nepašalinus pažeidimų pažymėjimo galiojimas bus sustabdytas, data"
 ,,,,,ispejimo_terminas,date,D,,,4,open,,Įspėjimo terminas,"Terminas, iki kada įspėjus turi būti pašalinti pažeidimai"
 ,,,,,pazeid_pasalinti,date,D,,,4,open,,Pažeidimų pašalinimo data,
