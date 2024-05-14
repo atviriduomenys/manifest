@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,kvalifikacija,,,vda_id,,,4,,,JRA jaunimo darbuotojų kvalifikacija,"Jaunimo reikalų agentūros Jaunimo darbuotojų sistema kaupia duomenis apie JRA dirbančius darbuotojus. Teikiami duomenis kaupiami nuo 2018 m., numatyta atnaujinti kasdien. Duomenyse kaupiama darbuotojo šifruotas kodas, išsirinkti kursai, tuometiniai etatas, išsilavinimas ir darbovietė."
+,,,,Kvalifikacija,,,vda_id,,,4,,,JRA jaunimo darbuotojų kvalifikacija,"Jaunimo reikalų agentūros Jaunimo darbuotojų sistema kaupia duomenis apie JRA dirbančius darbuotojus. Teikiami duomenis kaupiami nuo 2018 m., numatyta atnaujinti kasdien. Duomenyse kaupiama darbuotojo šifruotas kodas, išsirinkti kursai, tuometiniai etatas, išsilavinimas ir darbovietė."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,darbuotojas,string,,,,4,open,,Darbuotojo šifruotas identifikatoirus,
 ,,,,,kursai_lt,string,,,,1,open,,Darbuotojo išsirinkti kursai,

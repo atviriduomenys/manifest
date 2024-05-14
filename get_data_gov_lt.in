@@ -1,4 +1,6 @@
 datasets/gov/lkd/laikomi_asmenys.csv
+datasets/gov/lkd/arestai.csv
+datasets/gov/lkd/laisves_atemimas.csv
 datasets/gov/lst/standards.csv
 datasets/gov/lst/terms.csv
 datasets/gov/vpt/new.csv
@@ -588,8 +590,19 @@ datasets/gov/nsa/pr/pedagogu_kruvis.csv
 datasets/gov/nsa/sr/studiju_pertraukimas.csv
 datasets/gov/lsd/butu_pirkimai_gardelese.csv
 datasets/gov/vulzk/meddream.csv
+datasets/gov/vulzk/medis.csv
 datasets/gov/lnb/bibliografiniai_irasai.csv
 datasets/gov/lnb/bibliotekos.csv
 datasets/gov/lnb/knygomatai.csv
+datasets/gov/lnb/epaveldas_institucijos.csv
 datasets/gov/gtc/trematodai_rceu.csv
 datasets/gov/gtc/hemosporidiniai_parazitai.csv
+datasets/gov/rpl/gydyti_pacientai.csv
+datasets/gov/pkpd/evis.csv
+datasets/gov/vulzk/lab_tyrimai.csv
+datasets/gov/ukmlig/jivex.csv
+datasets/gov/eso/jur_asm_duju_suvartojimas.csv
+datasets/gov/eso/fiz_asm_duju_suvartojimas.csv
+datasets/gov/gtc/dirvozemio_temperatura.csv
+datasets/gov/vlkk/lrtb.csv
+datasets/gov/lnb/kulturos_pasas.csv

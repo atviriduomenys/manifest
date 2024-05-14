@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,spi,,,vda_id,,,4,,,ASPĮ ekstremalių situacijų valdymo planų vertinimas,"Ekstremalių sveikatai situacijų centras (ESSC) kaupia sveikatos priežiūros įstaigų ekstremalių situacijų valdymo planų vertinimus, gautus iš Sveikatos apsaugos ministerijos. Duomenys kaupiami nuo 2012 m. ir atnaujinami balandžio ir spalio mėnesiais. Duomenys apima įstaigos pavadinimą, geografinį ir cenzūruotą el. pašto adresus, apskritį, kam yra pavaldi. Iš vertinimų yra duomenų apie jo datą, tipą ir artimiausio vertinimo metus.  "
+,,,,SPI,,,vda_id,,,4,,,ASPĮ ekstremalių situacijų valdymo planų vertinimas,"Ekstremalių sveikatai situacijų centras (ESSC) kaupia sveikatos priežiūros įstaigų ekstremalių situacijų valdymo planų vertinimus, gautus iš Sveikatos apsaugos ministerijos. Duomenys kaupiami nuo 2012 m. ir atnaujinami balandžio ir spalio mėnesiais. Duomenys apima įstaigos pavadinimą, geografinį ir cenzūruotą el. pašto adresus, apskritį, kam yra pavaldi. Iš vertinimų yra duomenų apie jo datą, tipą ir artimiausio vertinimo metus.  "
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,istaigos_pavadinimas,string,,,,4,open,,Įstaigos pavadinimas,
 ,,,,,istaigos_adresas,string,,,,3,open,,Įstaigos adresas,

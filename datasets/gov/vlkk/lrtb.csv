@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vlkk/lrtb,,,,,,,,,,,,VLKK terminų banko terminų duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,TerminuBankas,,,termino_id,,,4,,,VLKK terminų banko terminų duomenys,"Valstybinės lietuvių kalbos komisijos Lietuvos Respublikos terminų banke kaupiami įvairių sričių terminai lietuvių bei kitomis Europos kalbomis, kaip vokiečių, prancūzų, lenkų. Duomenys kaupiami nuo 2005 m. ir atnaujinami kas mėnesį. Apimami duomenys yra patys terminai, jų sritys, kalba, statusas: teiktinas, neteiktinas arba aprobuotas, įvedimo data bei organizacija, pateikusi patį terminą. Tarp tokių organizacijų patenka VLKK, Užsienio reikalų ministerija, Policijos departamentas.  "
+,,,,,termino_id,string,,,,4,open,,Identifikatorius,
+,,,,,terminas,string,,,,4,open,,Terminas,
+,,,,,sritis,string,,,,4,open,,Termino sritis,
+,,,,,kalba,string,,,,4,open,,Termino kalba,
+,,,,,statusas,string,,,,4,open,,"Termino statusas, anot VLKK",
+,,,,,,enum,,,,,,,,
+,,,,,,,,Teiktinas,,,,,Teiktinas terminas,
+,,,,,,,,Neteiktinas,,,,,Neteiktinas terminas,
+,,,,,,,,Aprobuotas,,,,,Aprobuotas terminas,
+,,,,,pateikusi_org,string,,,,4,open,,Terminą pateikusi organizacija,
+,,,,,ivedimo_data,datetime,S,,,4,open,,Termino įvedimo data ir laikas sekundžių tikslumu,
