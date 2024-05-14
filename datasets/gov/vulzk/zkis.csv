@@ -3,8 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,"Vilniaus universiteto ligoninės Žalgirio klinikos ŽKIS sistema kaupia pacientų odontologinių sutrikimų gydymo operacijomis duomenis. Duomenų laikotarpis yra nuo 2015 m. iki 2024 m. Duomenų rinkinys apima vykdytos operacijos protokolo identifikatorių, šifruotą paciento asmens kodą, gimimo metus, ligos TLK-10-AM kodą bei žodinį pavadinimą, operacijos pradžios, pabaigos laikus, taikytos anestezės rūšies, rizikos kodus bei jos pradžios ir pabaigos laikus. Papildomai, saugomi paciento draudiko pavadinimas, JAR kodas ir draudimo rūšis, numatyta būti imama iš Sveidros.  "
-,,,,Operacija,,,operacijos_id,,,4,,,Pacientų gydymo operacijomis duomenys,
+,,,,,,,,,,,,,,
+,,,,Operacija,,,operacijos_id,,,4,,,Pacientų gydymo operacijomis duomenys,"Vilniaus universiteto ligoninės Žalgirio klinikos ŽKIS sistema kaupia pacientų odontologinių sutrikimų gydymo operacijomis duomenis. Duomenų laikotarpis yra nuo 2015 m. iki 2024 m. Duomenų rinkinys apima vykdytos operacijos protokolo identifikatorių, šifruotą paciento asmens kodą, gimimo metus, ligos TLK-10-AM kodą bei žodinį pavadinimą, operacijos pradžios, pabaigos laikus, taikytos anestezės rūšies, rizikos kodus bei jos pradžios ir pabaigos laikus. Papildomai, saugomi paciento draudiko pavadinimas, JAR kodas ir draudimo rūšis, numatyta būti imama iš Sveidros."
 ,,,,,operacijos_id,string,,,,4,open,,Identifikatorius,
 ,,,,,paciento_asmens_kodas,string,,,,4,open,,Šifruotas paciento asmens kodas,
 ,,,,,paciento_lytis,string,,,,4,open,,Paciento lytis,
@@ -14,6 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
 ,,,,,ligos_kodas_tlk_10_am,string,,,,4,open,,Paciento diagnozės TLK-10-AM kodas,
 ,,,,,ligos_pavadinimas,string,,,,4,open,,Paciento diagnozės pavadinimas,
+,,,,,,comment,type,,update(property: "ligos_pavadinimas@lt", type: "text"),4,open,spinta:204,,
 ,,,,,ligos_pradzios_data,datetime,T,,,4,open,,Paciento diagnozės suteikimo pradžia,
 ,,,,,operacijos_pradzios_laikas,datetime,T,,,4,open,,Pacientui vykdytos operacijos pradžios data ir laikas minutės tikslumu,
 ,,,,,operacijos_pabaigos_laikas,datetime,T,,,4,open,,Pacientui vykdytos operacijos pabaigos data ir laikas minutės tikslumu,
@@ -21,6 +22,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,anestezes_rizikos_kodas,string,,,,4,open,,Pacientui vykdytos anestezės rizikos kodas,
 ,,,,,anestezes_pradzios_laikas,datetime,T,,,4,open,,Pacientui vykdytos anestezės pradžios data ir laikas minutės tikslumu,
 ,,,,,anestezes_pabaigos_laikas,datetime,T,,,4,open,,Pacientui vykdytos anestezės pabaigos data ir laikas minutės tikslumu,
-,,,,,pacieno_draudiko_pav,string,,,,4,open,,Pacientą apdraudžiusios įstaigos pavadinimas,
+,,,,,paciento_draudiko_pav,string,,,,4,open,,Pacientą apdraudžiusios įstaigos pavadinimas,
 ,,,,,paciento_draudiko_jar_kodas,string,,,,4,open,,Pacientą apdraudžiusios įstaigos juridinio asmens kodas,
 ,,,,,draudimo_rusis,string,,,,4,open,,Paciento draudimo rūšis,
