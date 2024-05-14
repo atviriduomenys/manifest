@@ -1,7 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vulzk/lab_tyrimai,,,,,,,,,,,,Laboratorijos tyrimų užsakymai ir atsakymai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Atsakymas,,,vda_id,,,4,,,Laboratorijos tyrimų užsakymai ir atsakymai,
+,,,,Atsakymas,,,vda_id,,,4,,,Laboratorijos tyrimų užsakymai ir atsakymai,"Duomenys apie VULŽK (VšĮ Vilniaus universiteto ligoninės Žalgirio klinikų) laboratorijoje atliktus tyrimus. Informacija apie pacientą - gimimo metai, lytis, tyrimo atlikimo data. Pateikti tyrimų atsakymai, matavimo vienetai, norma, skyriai, iš kurių pateikti užsakymai, mėginio paėmimo bei priėmimo data ir laikas.
+Pateikiami duomenys nuo 2006 m."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_id,string,,,,4,open,,Paciento identifikatorius,
 ,,,,,gimimo_m,date,M,,,4,open,,Paciento gimimo metai,
