@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/on,,,,,,,,,,,,Oro Navigacija,AB Oro Navigacija,
+,datasets/gov/on,,,,,,,,,,,,Oro Navigacija,AB Oro Navigacija
 ,datasets/gov/on/zonos,,,,,,,,,,,,Oro erdvės apribojimų duomenys,"Rinkinyje pateikiami duomenys apie oro erdvės Lietuvoje apribojimus nuo 2024m. kovo mėn. Nurodoma tiksli apribojimų pradžia ir pabaiga, specialiosios oro erdvės pavadinimas bei oro erdvės žemutinė ir viršutinė ribos."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
