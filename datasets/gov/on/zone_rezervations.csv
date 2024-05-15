@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Apribojimas,,,vda_id,,,4,,,Oro erdvės apribojimų duomenys,"Rinkinyje pateikiami duomenys apie oro erdvės Lietuvoje apribojimus nuo 2024m. kovo mėn. Nurodoma tiksli apribojimų pradžia ir pabaiga, specialiosios oro erdvės pavadinimas bei oro erdvės žemutinė ir viršutinė ribos."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
 ,,,,,create_date,datetime,S,,,4,open,,Sukūrimo data,
-,,,,,rezervation_date,date,D,,,4,open,,Erdv s apribojimo data,
+,,,,,rezervation_date,date,D,,,4,open,,Erdvės apribojimo data,
 ,,,,,est_from,time,T,,,4,open,,Galiojimas nuo (laikas),
 ,,,,,from_d0,time,T,,,4,open,,Realus oro erdvės panaudojimo pradžios laikas,
 ,,,,,est_till,time,T,,,4,open,,Galiojimas iki,
