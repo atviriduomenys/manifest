@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,nepasirinkta,"""Nepasirinkta""",,,,Nepasirinkta,
 ,,,,,,,,teiktinas,"""Teiktinas""",,,,Teiktinas,
 ,,,,,,,,vengtinas,"""Vengtinas""",,,,Vengtinas,
-,,,,,,,,neteiktinas,"""Neteiktinas""",4,open,,Neteiktinas,
+,,,,,,,,neteiktinas,"""Neteiktinas""",,,,Neteiktinas,
 ,,,,,ar_sventojo_vardas,boolean,,,,4,open,,Ar vardas yra šventojo vardas,
 ,,,,,sukurimo_data,datetime,S ,,,4,open,,Vardo įvedimo sistemoje data ir laikas sekundės tikslumu,
 ,,,,,atnaujinimo_data,datetime,S ,,,4,open,,Vardo paskutinio atnaujinimo data ir laikas sekundės tikslumu,
