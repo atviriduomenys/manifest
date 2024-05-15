@@ -15,7 +15,7 @@ maudyklos stebėjimo vietos koordinates, mėginio ėmimo datą, parametrų: žar
 ,,,,,end_date,date,D,,,4,open,,Stebėsenos pabaiga,
 ,,,,,bathing_water_id,string,,,,4,open,,Maudyklos identifikavimo kodas,
 ,,,,,name,string,,,,4,open,,Maudyklos pavadinimas,
-,,,,,geometry,"""geometry(point,3346)""",m,,,4,open,,Maudyklos stebėjimo vietos koordinatės,
+,,,,,geometry,"geometry(point,3346)",m,,,4,open,,Maudyklos stebėjimo vietos koordinatės,
 ,,,,,sample_status,string,,,,4,open,,Mėginio statusas,"shortTermPollutionSample – mėginys, rodantis trumpalaikę taršą (E.coli nustatyta daugiau nei 1000 ksv/100 ml), t.y. viršijantis pagal senąją direktyvą 76/160/EEB nustatytas gairines vertes"
 ,,,,,,enum,,,"""preSeasonSample""",,,,Prieš maudymosi sezoną paimtas mėginys,
 ,,,,,,,,,"""missingSample""",,,,Prieš maudymosi sezoną nebuvo paimtas mėginys arba praleistas mėginys,
