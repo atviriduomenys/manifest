@@ -590,6 +590,7 @@ datasets/gov/nsa/sr/studiju_pertraukimas.csv
 datasets/gov/lsd/butu_pirkimai_gardelese.csv
 datasets/gov/vulzk/meddream.csv
 datasets/gov/vulzk/medis.csv
+datasets/gov/vulzk/zkis.csv
 datasets/gov/lnb/bibliografiniai_irasai.csv
 datasets/gov/lnb/bibliotekos.csv
 datasets/gov/lnb/knygomatai.csv
@@ -607,3 +608,5 @@ datasets/gov/vlkk/lrtb.csv
 datasets/gov/lnb/kulturos_pasas.csv
 datasets/gov/on/zone_rezervations.csv
 datasets/gov/on/flight_data.csv
+datasets/gov/on/notam.csv
+datasets/gov/hi/maudyklos.csv
