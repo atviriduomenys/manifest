@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lnb/egzemplioriai,,,,,,,,,,,,LIBIS egzempliorių sąrasas,
+,datasets/gov/lnb/egzemplioriai,,,,,,,,,,,,LIBIS egzempliorių sąrašas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Sarasas,,,id,,,4,,,LIBIS egzempliorių sąrasas,Bibliotekų turimų egzempliorių sąrašas
+,,,,Sarasas,,,id,,,4,,,LIBIS egzempliorių sąrašas,Bibliotekų turimų egzempliorių sąrašas
 ,,,,,id,string,,,,4,open,,Egzemplioriaus unikalus identifikatorius,
 ,,,,,bibliografinio_iraso_id,string,,,,2,open,,Bibliografinio įrašo unikalus identifikatorius. Referuoja į bibliografinius įrašus,
 ,,,,,savininko_padalinio_id,string,,,,2,open,,Egzemplioriaus savininko unikalus identifikatorius. Referuoja į bibliotekos padalinio unikalų identifikatorių,
