@@ -27,12 +27,12 @@ maudyklos stebėjimo vietos koordinates, mėginio ėmimo datą, parametrų: žar
 ,,,,,,enum,,,"""limitOfDetectionValue""",,,,Žemiau aptikimo ribo,
 ,,,,,,,,,"""confirmedValue""",,,,Mėginio reikšmė patvirtinta,
 ,,,,,,,,,"""missingValue""",,,,Mėginys nepaimtas,
-,,,,,escherichia_coli_value,number,ksv/100 ml,,,4,open,,Žarniniai enterokokai (ksv/100 ml),
+,,,,,escherichia_coli_value,number,,,,3,open,,Žarniniai enterokokai (ksv/100 ml),
 ,,,,,intestinal_enterococci_status,string,,,,4,open,,Žarninių lazdelių statusas,
 ,,,,,,enum,,,"""limitOfDetectionValue""",,,,Žemiau aptikimo ribo,
 ,,,,,,,,,"""confirmedValue""",,,,Mėginio reikšmė patvirtinta,
 ,,,,,,,,,"""missingValue""",,,,Mėginys nepaimtas,
-,,,,,intestinal_enterococci_value,number,ksv/100 ml,,,4,open,,Žarninės lazdelės (ksv/100 ml),
+,,,,,intestinal_enterococci_value,number,,,,3,open,,Žarninės lazdelės (ksv/100 ml),
 ,,,,,link,url,,,,4,open,,Nuoroda į maudyklų charakteristikas pdf formatu,Pateikiamos nuorodos į HI svetainę
 ,,,,,quality_class,string,,,,4,open,,Kokybės klasė,"Maudyklos kokybė nevertinama kuomet nėra pilnas duomenų rinkinys (mažiausiai 16 mėginių, 4 stebėsenos sezonai)"
 ,,,,,,enum,,,"""0""",,,,Nevertinta,
