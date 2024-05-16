@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
 ,,,,,registracija,date,D,,,4,open,,Skundo registracijos VVTAT data ,
 ,,,,,issprendimas,date,D,,,4,open,,Skundo išsprendimo data,
-,,,,,jar_kodas,string,,,,4,open,,Įmonės JAR kodas,
+,,,,,jar_kodas,string,,,,4,open,,Įmonės juridinio asmens kodas,
 ,,,,,imone,string,,,,2,open,,Įmonės pavadinimas,
 ,,,,,skundo_priezastis,string,,,,4,open,,Skundo teikimo priežastis,
 ,,,,,,comment,property,,"""update(property: """"skundo_priezastis[]"""", type: """"array"""", source: """"Skundo_priezastis"""")""",4,,spinta:161,,
