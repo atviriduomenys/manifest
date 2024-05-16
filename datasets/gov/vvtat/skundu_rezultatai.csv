@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvtat/skundu_rezultatai,,,,,,,,,,,,VVTAT ištirtų skundų rezultatai,"Rinkinyje pateikiami duomenys apie VVTAT ištirtus skundus: jų registracijos ir tyrimo pabaigos datas, skunduose minimas įmones ir tyrimo rezultatus."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Skundas,,,vda_id,,,4,,,VVTAT ištirtų skundų rezultatai,"Rinkinyje pateikiami duomenys apie VVTAT ištirtus skundus: jų registracijos ir tyrimo pabaigos datas, skunduose minimas įmones ir tyrimo rezultatus."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
+,,,,,registracija,date,D,,,4,open,,Skundo registracijos VVTAT data ,
+,,,,,issprendimas,date,D,,,4,open,,Skundo išsprendimo data,
+,,,,,jar_kodas,string,,,,4,open,,Įmonės juridinio asmens kodas,
+,,,,,imone,string,,,,2,open,,Įmonės pavadinimas,
+,,,,,skundo_priezastis,string,,,,4,open,,Skundo teikimo priežastis,
+,,,,,,comment,property,,"""update(property: """"skundo_priezastis[]"""", type: """"array"""", source: """"Skundo_priezastis"""")""",4,,spinta:161,,
+,,,,,ar_pagristas,boolean,,,,4,open,,"Žyma, ar skundas yra pagrįstas",
+,,,,,nenustatymo_priezastis,string,,,,4,open,,"Priežastis, dėl kurios VVTAT nenustatė skundo",
+,,,,,nepagristumo_priezastis,string,,,,4,open,,"Priežastis, dėl kurios VVTAT skundo nelaiko pagrįstu",
+,,,,,,comment,property,,"""update(property: """"nepagristumo_priezastis[]"""", type: """"array"""", source: """"Nepagristumo_priezastis"""")""",4,,spinta:161,,
+,,,,,rezultatas,string,,,,4,open,,Ištirto skundo rezultatas,
+,,,,,,comment,property,,"""update(property: """"rezultatas[]"""", type: """"array"""", source: """"Rezultatas"""")""",4,,spinta:161,,
