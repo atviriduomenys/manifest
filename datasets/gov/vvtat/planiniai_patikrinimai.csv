@@ -1,0 +1,34 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvtat,,,,,,,,,,,,Valstybinė vartotojų teisių apsaugos tarnyba,
+,datasets/gov/vvtat/planiniai_patikrinimai,,,,,,,,,,,,Nemaisto produktų planinių tikrinimų duomenys,"Pateikiama informacija apie Valstybinės vartotojų teisių apsaugos tarnybos (VVTAT) vykdytus gamintojų, įgaliotųjų atstovų, importuotojų, platintojų ir paslaugos teikėjų planinius ne maisto gaminių ir paslaugų tikrinimus. Šių tikrinimų tikslas - padidinti vartotojų ekonominę gerovę ne maisto produktų srityje, apsaugoti gyventojų sveikatą ir ūkinės veiklos laisvę vartotojams, teikiamą ne maisto gaminių ir paslaugų srityje bei teisės aktų reikalavimų užtikrinimą šiose srityse. Patikrinimus atlieka VVTAT valstybės tarnautojai ar darbuotojai, dirbantys pagal darbo sutartis.  Duomenys apima laikotarpį nuo 2004m. iki šių dienų. Ekonominės veiklos vykdytojų veiklos patikrinimai gali būti planiniai ir neplaniniai. Planiniai patikrinimai atliekami vadovaujantis VVTAT direktoriaus įsakymu patvirtintomis Tarnybos rinkos priežiūros planų rengimo ir jų vykdymo kontrolės taisyklėmis. Šių patikrinimų metu Tarnybos darbuotojai stebi ekonominės veiklos vykdytojų veiką, ją analizuoja ir vertina, konsultuoja ir teikia metodinę pagalbą, siekiant nustatyti ir pašalinti trūkumus ne maisto produktų saugos bei ženklinimo srityse.
+Rinkinyje nurodomos tikrinimo pradžios, pabaigos ir tikrinimo akto surašymo datos, tikrinamo objekto tipas, objekto JAR kodas ir pavadinimas, patikrinimą inicijavusios institucijos pavadinimas, tikrinime dalyvavusių darbuotojų iš įmonės pusės skaičius bei patikrintų produktų skaičius."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Patikrinimas,,,vda_id,,,4,,,Nemaisto produktų planinių tikrinimų duomenys,"Pateikiama informacija apie Valstybinės vartotojų teisių apsaugos tarnybos (VVTAT) vykdytus gamintojų, įgaliotųjų atstovų, importuotojų, platintojų ir paslaugos teikėjų planinius ne maisto gaminių ir paslaugų tikrinimus. Šių tikrinimų tikslas - padidinti vartotojų ekonominę gerovę ne maisto produktų srityje, apsaugoti gyventojų sveikatą ir ūkinės veiklos laisvę vartotojams, teikiamą ne maisto gaminių ir paslaugų srityje bei teisės aktų reikalavimų užtikrinimą šiose srityse. Patikrinimus atlieka VVTAT valstybės tarnautojai ar darbuotojai, dirbantys pagal darbo sutartis.  Duomenys apima laikotarpį nuo 2004m. iki šių dienų. Ekonominės veiklos vykdytojų veiklos patikrinimai gali būti planiniai ir neplaniniai. Planiniai patikrinimai atliekami vadovaujantis VVTAT direktoriaus įsakymu patvirtintomis Tarnybos rinkos priežiūros planų rengimo ir jų vykdymo kontrolės taisyklėmis. Šių patikrinimų metu Tarnybos darbuotojai stebi ekonominės veiklos vykdytojų veiką, ją analizuoja ir vertina, konsultuoja ir teikia metodinę pagalbą, siekiant nustatyti ir pašalinti trūkumus ne maisto produktų saugos bei ženklinimo srityse.
+Rinkinyje nurodomos tikrinimo pradžios, pabaigos ir tikrinimo akto surašymo datos, tikrinamo objekto tipas, objekto JAR kodas ir pavadinimas, patikrinimą inicijavusios institucijos pavadinimas, tikrinime dalyvavusių darbuotojų iš įmonės pusės skaičius bei patikrintų produktų skaičius."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
+,,,,,patikrinimo_id,ref,Produktas[patikrinimo_id],,,4,open,,Patikrinimo identifikacinis numeris,
+,,,,,objekto_tikrinimo_id,string,,,,4,open,,Objekto tikrinimo identifikacinis numeris,
+,,,,,patikrinimo_pradzia,date,D,,,4,open,,Patikrinimo pradžios laikas,
+,,,,,patikrinimo_pabaiga,date,D,,,4,open,,Patikrinimo pabaigos laikas,
+,,,,,akto_data,date,D,,,4,open,,Patikrinimo akto data,
+,,,,,objekto_tipas,string,,,,4,open,,Tikrinamo objekto tipas,
+,,,,,jar_kodas,string,,,,4,open,,Įmonės juridinio asmens kodas,
+,,,,,imone_lt,string,,,,1,open,,Tikrinamos įmonės pavadinimas,
+,,,,,,comment,type,,"update(property: ""imone_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,pat_inic_institucija,string,,,,4,open,,Institucijos pavadinimas,
+,,,,,vyk_inspektorius,string,,,,2,open,,Patikrinimą vykdęs inspektorius (pseudonimizuota informacija),
+,,,,,,comment,property,,"""update(property: """"vyk_inspektorius[]"""", type: """"array"""", source: """"Vyk_inspektorius"""")""",4,,spinta:161,,
+,,,,,patikrinta_produktu,integer,U,,,4,open,,Tikrinimo metu patikrintų produktų skaičius,
+,,,,,dalyvavo_darbuotoju,integer,U,,,4,open,,Tikrinime dalyvavusių įmonės darbuotojų skaičius,
+,,,,,,,,,,,,,,
+,,,,Produktas,,,vda_id,,,4,,,VVTAT tikrintų produktų duomenys,"Pateikiami Valstybinės vartotojų teisių apsaugos tarnybos (VVTAT) ne maisto produktų tikrinimų metu tikrinti produktai. Informacija pateikiama nuo 2004m. iki šių dienų ir nurodo tikrintą produktą, jo kilmės šalį ir vertintojo išvadą."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
+,,,,,patikrinimo_id,string,,,,4,open,,Patikrinimo identifikacinis numeris,
+,,,,,produktas_lt,string,,,,1,open,,Tikrinamas produktas,
+,,,,,,comment,type,,"update(property: ""produktas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,kilmes_salis,string,,,,4,open,,Tikrinamo produkto kilmės šalis,
+,,,,,isvada,string,,,,4,open,,Patikrinimo išvada,
+,,,,,,comment,property,,"""update(property: """"isvada[]"""", type: """"array"""", source: """"Isvada"""")""",4,,spinta:161,,
