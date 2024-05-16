@@ -26,7 +26,7 @@ Rinkinyje nurodomos tikrinimo pradžios, pabaigos ir tikrinimo akto surašymo da
 ,,,,,,,,,,,,,,
 ,,,,Produktas,,,vda_id,,,4,,,VVTAT tikrintų produktų duomenys,"Pateikiami Valstybinės vartotojų teisių apsaugos tarnybos (VVTAT) ne maisto produktų tikrinimų metu tikrinti produktai. Informacija pateikiama nuo 2004m. iki šių dienų ir nurodo tikrintą produktą, jo kilmės šalį ir vertintojo išvadą."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
-,,,,,patikrinimo_id,string,,,,4,open,,Patikrinimo id numeris,
+,,,,,patikrinimo_id,string,,,,4,open,,Patikrinimo identifikacinis numeris,
 ,,,,,produktas_lt,string,,,,1,open,,Tikrinamas produktas,
 ,,,,,,comment,type,,"update(property: ""produktas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,kilmes_salis,string,,,,4,open,,Tikrinamo produkto kilmės šalis,
