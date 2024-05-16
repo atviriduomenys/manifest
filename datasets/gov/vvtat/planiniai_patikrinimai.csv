@@ -19,7 +19,7 @@ Rinkinyje nurodomos tikrinimo pradžios, pabaigos ir tikrinimo akto surašymo da
 ,,,,,imone_lt,string,,,,1,open,,Tikrinamos įmonės pavadinimas,
 ,,,,,,comment,type,,"update(property: ""imone_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,pat_inic_institucija,string,,,,4,open,,Institucijos pavadinimas,
-,,,,,vyk_inspektorius,string,,,,2,open,,Patikrinimą vykdęs inspektorius (anonimizuota informacija),
+,,,,,vyk_inspektorius,string,,,,2,open,,Patikrinimą vykdęs inspektorius (pseudonimizuota informacija),
 ,,,,,,comment,property,,"""update(property: """"vyk_inspektorius[]"""", type: """"array"""", source: """"Vyk_inspektorius"""")""",4,,spinta:161,,
 ,,,,,patikrinta_produktu,integer,U,,,4,open,,Tikrinimo metu patikrintų produktų skaičius,
 ,,,,,dalyvavo_darbuotoju,integer,U,,,4,open,,Tikrinime dalyvavusių įmonės darbuotojų skaičius,
