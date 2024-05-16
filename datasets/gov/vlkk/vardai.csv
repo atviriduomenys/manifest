@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Vardas,,,id,,,4,open,,Vardų lingvistiniai duomenys,"Valstybinė lietuvių kalbos komisijos (VLKK) Lietuvos Respublikos piliečių vardų sąvadas, kaip duomenų rinkinio šaltinis, yra sukurtas Gyventojų registro 2006 m. pilietybę turėjusių asmenų vardų duomenimis ir toliau yra pildomas naujagimių vardais. Rinkinyje duomenys kaupiami nuo 2010 m. ir yra atnaujinami kas 3 mėnesius. Duomenys apima pilną vardą, sudarančių vardų skaičių (komponentiškumą), vardo lytį, normiškumą, ar tai yra šventojo vardas, vardo įvedimo datą, vėliausias atnaujinimo vei paieškos datas, paieškų skaičių ir iki po 5 vardų kilmės grupes, pogrupius ir poskyrius.    "
+,,,,Vardas,,,id,,,4,open,,Vardų lingvistiniai duomenys,"Valstybinė lietuvių kalbos komisijos (VLKK) Lietuvos Respublikos piliečių vardų sąvadas, kaip duomenų rinkinio šaltinis, yra sukurtas Gyventojų registro 2006 m. pilietybę turėjusių asmenų vardų duomenimis ir toliau yra pildomas naujagimių vardais. Rinkinyje duomenys kaupiami nuo 2010 m. ir yra atnaujinami kas 3 mėnesius. Duomenys apima pilną vardą, sudarančių vardų skaičių (komponentiškumą), vardo lytį, normiškumą, ar tai yra šventojo vardas, vardo įvedimo datą, vėliausias atnaujinimo bei paieškos datas, paieškų skaičių ir iki po 5 vardų kilmės grupes, pogrupius ir poskyrius.    "
 ,,,,,id,string,,,,4,open,,Identifikatorius,
 ,,,,,pilnas_vardas,string,,,,4,open,,Pilnas vardas su sudėtiniais vardais,
 ,,,,,vardu_sk,integer,U,,,4,open,,Sudėtinių vardų skaičius,
