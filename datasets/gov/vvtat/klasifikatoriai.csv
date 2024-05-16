@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kodas,string,,,,4,open,,Skundo nenustatymo priežasties identifikacinis numeris,
 ,,,,,pavadinimas_lt,string,,,,4,open,,Skundo nenustatymo priežastis,
 ,,,,,galioja_nuo,date,D,,,4,open,,Klasifikatoriaus galiojimo pradžia,
-,,,,,galioja_iki,date,,,,4,open,,Klasifikatoriaus galiojimo pabaiga,
+,,,,,galioja_iki,date,D,,,4,open,,Klasifikatoriaus galiojimo pabaiga,
 ,,,,,,,,,,,,,,
 ,,,,Nepagrista,,,vda_id,,,4,,,VVTAT nepagrįstų skundų priežasčių klasifikatorius,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
