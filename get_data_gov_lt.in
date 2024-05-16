@@ -595,6 +595,7 @@ datasets/gov/lnb/bibliografiniai_irasai.csv
 datasets/gov/lnb/bibliotekos.csv
 datasets/gov/lnb/knygomatai.csv
 datasets/gov/lnb/epaveldas_institucijos.csv
+datasets/gov/lnb/egzemplioriai.csv
 datasets/gov/gtc/trematodai_rceu.csv
 datasets/gov/gtc/hemosporidiniai_parazitai.csv
 datasets/gov/rpl/gydyti_pacientai.csv
@@ -606,9 +607,11 @@ datasets/gov/eso/fiz_asm_duju_suvartojimas.csv
 datasets/gov/gtc/dirvozemio_temperatura.csv
 datasets/gov/vlkk/lrtb.csv
 datasets/gov/lnb/kulturos_pasas.csv
-datasets/gov/Marijampoles_sav/leidimas_kirsti.csv
-datasets/gov/on/notam.csv
+datasets/gov/marijampoles_sav/leidimas_kirsti.csv
 datasets/gov/on/zone_rezervations.csv
 datasets/gov/on/flight_data.csv
+datasets/gov/on/notam.csv
 datasets/gov/hi/maudyklos.csv
 datasets/gov/vvtat/skundu_rezultatai.csv
+datasets/gov/vvtat/planiniai_patikrinimai.csv
+datasets/gov/vvtat/klasifikatoriai.csv
