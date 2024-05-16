@@ -49,7 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Nusiskundimas,,,kodas,,,4,,,VVTAT vartotojų nusiskundimo pobūdžių klasifikatorius,
 ,,,,,kodas,string,,,,4,open,,Pobūdžio kodas,
-,,,,,pavadinimas,string,,,,4,open,,Nusikundimo pobūdis,
+,,,,,pavadinimas,string,,,,4,open,,Nusiskundimo pobūdis,
 ,,,,,galioja_nuo,date,D,,,4,open,,Klasifikatoriaus galiojimo pradžia,
 ,,,,,galioja_iki,date,D,,,4,open,,Klasifikatoriaus galiojimo pabaiga,
 ,,,,,,,,,,,,,,
