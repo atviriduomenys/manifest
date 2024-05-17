@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vulzk/medis,,,,,,,,,,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,
+,datasets/gov/vulzk/registracija,,,,,,,,,,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
