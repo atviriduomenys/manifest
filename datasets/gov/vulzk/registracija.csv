@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vulzk/medis,,,,,,,,,,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,
+,datasets/gov/vulzk/registracija,,,,,,,,,,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,"Vilniaus universiteto ligoninės Žalgirio klinikos MED.I.S sistema kaupia pacientų asmeninius duomenis, kaip registracija vizitams pas gydytoją. Duomenys kaupiami nuo 1999 m. iki šiandienos. Kaupiami registracijos duomenys yra identifikatorius, data, kuriai registruotasi, įrašo sukūrimo bei keitimo datos. Patenkantys paciento duomenys yra jo šifruotas identifikatorius, lytis ir gimimo metai. Apimami gydytojo duomenys yra jo identifikatorius ir specialybė.   "
-,,,,Registracija,,,registracijos_id,,,4,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,
+,,,,,,,,,,,,,,
+,,,,Registracija,,,registracijos_id,,,4,,,Pacientų registracijos paslaugoms Žalgirio klinikoje,"Vilniaus universiteto ligoninės Žalgirio klinikos sveikatos priežiūros sistema kaupia pacientų asmeninius duomenis, kaip registracija vizitams pas gydytoją. Duomenys kaupiami nuo 2010 m. iki 2020 m. Duomenų rinkinys sudarytas iš registracijos identifikatoriaus, datos, kuriai registruotasi, įrašo sukūrimo bei keitimo datų, paciento duomenų: šifruoto identifikatoriaus, lyties, gimimo metų bei gydytojo duomenų: identifikatoriaus ir specialybės."
 ,,,,,registracijos_id,string,,,,4,open,,Identifikatorius,
 ,,,,,gydymo_registracijos_data,datetime,T,,,4,open,,"Data ir laikas minutės tikslumu, kuriam registruotasi pas gydytoją",
 ,,,,,registracijos_iraso_sukurimo_data,datetime,T,,,4,open,,Registracijos pas gydytoją įrašo sukūrimo data ir laikas minutės tikslumu,
