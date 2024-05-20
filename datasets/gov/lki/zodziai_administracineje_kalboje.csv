@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lki/zodziai_administracineje_kalboje,,,,,,,,,,,,Lietuvių administracinėje kalboje vartojami žodžiai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,AdminZodis,,,id,,,4,,,Lietuvių administracinėje kalboje vartojami žodžiai,"Lentelėje pateikta dalis lietuvių administracinėje kalboje aptinkamų žodžių su jų vartosenos paaiškinimais iš Lietuvių kalbos instituto (LKI) Administracinės kalbos aktualijų duomenų bazės. Pirmą kartą duomenys surinkti 2018 m. Kiti šių duomenų atnaujinimai galimi ateityje, Lietuvių kalbos institutui vykdant papildomus duomenų surinkimo projektus. "
+,,,,,id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,zodis,string,,,,4,open,,Žodis,
+,,,,,paaiskinimas_lt,string,,,,4,open,,Žodžio vartosenos paaiškinimas,
+,,,,,,comment,type,,"update(property: ""paaiskinimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
