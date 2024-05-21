@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kompensacijos_dydis,number,,,,3,open,,Kompensacijos dydis,Želdinių atkuriamosios vertės kompensacijos dydis
 ,,,,,valiuta,string,,,,4,open,,Valiuta,
 ,,,,,prasancio_asmens_kodas,string,,,,4,open,,Prašančio asmens kodas,
-,,,,,_ask_validus,string,,,,4,open,,Asmens kodo validacija,
+,,,,,ask_validus,string,,,,4,open,,Asmens kodo validacija,
 ,,,,,parasancio_jar_kodas,string,,,,4,open,,Prašančios įstaigos juridinio asmens kodas,
-,,,,,_jar_validus,boolean,,,,4,open,,Juridinio asmens kodo validacija,
+,,,,,jar_validus,boolean,,,,4,open,,Juridinio asmens kodo validacija,
 ,,,,,specialistas,string,,,,4,open,,Specialistas,Darbuotojas išdavęs/suformavęs leidimą kirsti/genėti
