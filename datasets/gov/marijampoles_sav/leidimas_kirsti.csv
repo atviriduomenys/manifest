@@ -6,12 +6,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,leidimasKirsti,,,vda_id,,,4,,,"Marijampolės savivaldybės išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
 ,,,,,vda_id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,prasymo_data,date,D,,,4,public,,Prašymo pateikimo data,Leidimo prašymo pateikimo data
+,,,,,prasymo_data,date,D,,,4,open,,Prašymo pateikimo data,Leidimo prašymo pateikimo data
 ,,,,,leidimo_id,string,,,,4,open,,Leidimo numeris,
-,,,,,leidimo_išdavimo_data,date,D,,,4,public,,Leidimo išdavimo data,
-,,,,,leidimas_galioja_iki,date,D,,,4,public,,Leidimas galioja iki,
+,,,,,leidimo_išdavimo_data,date,D,,,4,open,,Leidimo išdavimo data,
+,,,,,leidimas_galioja_iki,date,D,,,4,open,,Leidimas galioja iki,
 ,,,,,seniunijos_pavadinimas,string,,,,4,open,,Seniūnijos pavadinimas,
-,,,,,gatves_pavadinimas,string,,,,4,public,,Gatvės pavadinimas,
+,,,,,gatves_pavadinimas,string,,,,4,open,,Gatvės pavadinimas,
 ,,,,,adresas_tarp_namu,string,,,,2,open,,Adresas tarp namų,
 ,,,,,saugotinu_zeld_rusis,string,,,,2,open,,Saugotinų želdinių rūšis,
 ,,,,,,comment,type,,"update(property: ""saugotinu_zeld_rusis"", type: ""text"")	",4,open,spinta:204,,
