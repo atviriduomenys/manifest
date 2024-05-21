@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/on/registras,,,,,,,,,,,,Civilinių orlaivių registro duomenys,"Rinkinyje pateikiami duomenys registruotus ir jau išregistruotus civilnius orlaivius Lietuvos Respublikoje. Duomenys apima laikotarpį nuo 1991m. iki šių dienų. Nurodoma orlaivio kategorija, rūšis, tipas, keleivių skaičius, maksimali pakilimo masė, oro sraigto tipas, orlaivio bazė ir jos adresas. Papildomai taip pat nurodyti orlaivio savininko ir naudotojo tipai."
+,datasets/gov/tka/registras,,,,,,,,,,,,Civilinių orlaivių registro duomenys,"Rinkinyje pateikiami duomenys registruotus ir jau išregistruotus civilnius orlaivius Lietuvos Respublikoje. Duomenys apima laikotarpį nuo 1991m. iki šių dienų. Nurodoma orlaivio kategorija, rūšis, tipas, keleivių skaičius, maksimali pakilimo masė, oro sraigto tipas, orlaivio bazė ir jos adresas. Papildomai taip pat nurodyti orlaivio savininko ir naudotojo tipai."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
