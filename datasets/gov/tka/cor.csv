@@ -29,7 +29,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tsppp_galiojimas,date,D,,,4,open,Tinkamumo skristi pažymėjimo patikros pasirašymo data,,
 ,,,,,baze,string,,,,4,open,Numatoma orlaivio bazavimosi vieta,,
 ,,,,,bazes_adresas,string,,,,4,open,Bazės adresas,,
-,,,,,geometrija,"geometry(point, 3346)",,,,4,open,Bazės adreso koordinatės (LKS),,
+,,,,,geometrija,"geometry(point, 3346)",m,,,4,open,Bazės adreso koordinatės (LKS),,
 ,,,,,keleiviu_sk,integer,U,,,4,open,Orlaivio keleivių skaičius,,
 ,,,,,mkm,integer,kg,,,4,open,Sertifikuota maksimali pakilimo masė (kg),,
 ,,,,,oro_sraigtas_lt,string,,,,2,open,Informacija apie oro sraigtą,,
