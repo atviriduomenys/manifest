@@ -32,5 +32,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,geometrija,"geometry(point, 3346)",m,,,4,open,Bazės adreso koordinatės (LKS),,
 ,,,,,keleiviu_sk,integer,U,,,4,open,Orlaivio keleivių skaičius,,
 ,,,,,mkm,integer,kg,,,4,open,Sertifikuota maksimali pakilimo masė (kg),,
-,,,,,oro_sraigtas_lt,string,,,,2,open,Informacija apie oro sraigtą,,
-,,,,,,comment,type,,"update(property: ""oro_sraigtas_lt@lt"", type: ""text"")",4,open,,,
+,,,,,oro_sraigtas,string,,,,4,open,Informacija apie oro sraigtą,,
