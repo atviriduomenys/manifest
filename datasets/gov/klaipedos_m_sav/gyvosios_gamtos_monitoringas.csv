@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/klaipedos_m_sav,,,,,,,,,,,,Klaipėdos miesto savivaldybė,
-,datasets/gov/klaipedos_m_sav/gyvosiosGamtosMonitoringas,,,,,,,,,,,,Klaipėdos miesto savivaldybės gyvosios aplinkos monitoringo duomenys,
+,datasets/gov/klaipedos_m_sav,,,,,ns,,,,,,,Klaipėdos miesto savivaldybė,
+,datasets/gov/klaipedos_m_sav/gyvosios_gamtos_monitoringas,,,,,,,,,,,,Klaipėdos miesto savivaldybės gyvosios aplinkos monitoringo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,gyvosiosGamtosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės gyvosios aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės gyvosios gamtos monitoringo duomenys.
+,,,,GyvosiosGamtosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės gyvosios aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės gyvosios gamtos monitoringo duomenys.
 Šiame rinkinyje pateikiami tokie duomenys:
 •	paviršinio vandens monitoringas
 •	gyvosios gamtos (paukščių) monitoringas
