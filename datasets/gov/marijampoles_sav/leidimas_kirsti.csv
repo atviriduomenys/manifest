@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/marijampoles_sav,,,,,,,,,,,,Marijampolės savivaldybė,
-,datasets/gov/marijampoles_sav/leidimasKirsti,,,,,,,,,,,,"Išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
+,datasets/gov/marijampoles_sav/zeldiniu_tvarkymas,,,,,,,,,,,,"Išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,leidimasKirsti,,,vda_id,,,4,,,"Marijampolės savivaldybės išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
+,,,,LeidimasKirsti,,,vda_id,,,4,,,"Marijampolės savivaldybės išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
 ,,,,,vda_id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,prasymo_data,date,D,,,4,open,,Prašymo pateikimo data,Leidimo prašymo pateikimo data
 ,,,,,leidimo_id,string,,,,4,open,,Leidimo numeris,
