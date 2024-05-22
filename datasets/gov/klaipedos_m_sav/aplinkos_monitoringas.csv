@@ -1,7 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/klaipedos_m_sav,,,,,,,,,,,,Klaipėdos miesto savivaldybė,
 ,datasets/gov/klaipedos_m_sav/gamtos_monitoringas,,,,,,,,,,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,
-,datasets/gov/klaipedos_m_sav/aplinkos_stebesena,,,,,,,,,,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
