@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/klaipedos_m_sav,,,,,,,,,,,,Klaipėdos miesto savivaldybė,
-,datasets/gov/klaipedos_m_sav/aplinkosMonitoringas,,,,,,,,,,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,
+,datasets/gov/klaipedos_m_sav/aplinkos_stebesena,,,,,,,,,,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,aplinkosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys.
+,,,,AplinkosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys.
 Šiame rinkinyje pateikiami tokie duomenys:
 •	aplinkos triukšmo monitoringas
 •	aplinkos oro monitoringas
