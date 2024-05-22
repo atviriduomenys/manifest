@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,AplinkosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys.
+,,,,AplinkosStebesena,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės aplinkos monitoringo duomenys.
 Šiame rinkinyje pateikiami tokie duomenys:
 •	aplinkos triukšmo monitoringas
 •	aplinkos oro monitoringas
@@ -178,56 +178,3 @@ Duomenys pateikiami nuo 2005 metų."
 ,,,,,amoniako_konc,number,,,,4,open,,Amoniako koncentracija aplinkoje (aplinkos ore).,Amoniako koncentracija aplinkoje (aplinkos ore).
 ,,,,,amoniako_konc_min,number,,,,4,open,,Mažiausia amoniako koncentracija aplinkoje (aplinkos ore).,Mažiausia amoniako koncentracija aplinkoje (aplinkos ore).
 ,,,,,amoniako_konc_max,number,,,,4,open,,Didžiausia amoniako koncentracija aplinkoje (aplinkos ore).,Didžiausia amoniako koncentracija aplinkoje (aplinkos ore).
-,,,,GyvosiosGamtosMonitoringas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės gyvosios aplinkos monitoringo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės gyvosios gamtos monitoringo duomenys.
-Šiame rinkinyje pateikiami tokie duomenys:
-•	paviršinio vandens monitoringas
-•	gyvosios gamtos (paukščių) monitoringas
-•	gyvosios gamtos (šikšnosparnių) monitoringas
-•	gyvosios gamtos (augalijos) monitoringas
-•	gyvosios gamtos (varliagyvių) monitoringas
-•	gyvosios gamtos (žuvų) monitoringas
-Duomenys pateikiami nuo 2005 metų."
-,,,,,vda_id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,stebejimo_id,string,,,,4,open,,Monitoringo duomenų eilės numeris.,
-,,,,,monitoringo_pradzia,date,D,,,4,open,,Monitoringo duomenys. Tyrimų pradžios data.,
-,,,,,monitoringo_pabaiga,date,D,,,4,open,,Monitoringo duomenys. Tyrimų pabaigos data.,
-,,,,,monitoringo_tasko_id,string,,,,4,open,,Monitoringo duomenys. Monitoringo taško eilės numeris.,
-,,,,,monitoringo_tasko_tipas,string,,,,4,open,,Monitoringo taško tipas,
-,,,,,,enum,,,"""ggms""",,,,Gyvosios gamtos (šikšnosparnių) monitoringas,
-,,,,,,,,,"""ggmp""",,,,Gyvosios gamtos (paukščių) monitoringas,
-,,,,,,,,,"""ggmv""",,,,Gyvosios gamtos (varliagyvių) monitoringas,
-,,,,,,,,,"""ggmz""",,,,Gyvosios gamtos (žuvų) monitoringas,
-,,,,,,,,,"""ggma""",,,,Gyvosios gamtos (augalijos) monitoringas,
-,,,,,,,,,"""pvm""",,,,Paviršinio vandens monitoringas,
-,,,,,monitoringo_tasko_reiksme_lt,string,,,,3,open,,Monitoringo taško reikšmė,
-,,,,,,comment,type,,"update(property: ""monitoringo_tasko_reiksme_lt@lt"", type: ""text"")	",4,open,spinta:204,,
-,,,,,tasko_lokacija,string,,,,2,open,,Monitoringo taško adresas,
-,,,,,X_koord_LKS,integer,,,,4,open,,Monitoringo taško LKS-94 koordinačių platuma.,
-,,,,,Y_koord_LKS,integer,,,,4,open,,Monitoringo taško LKS-94 koordinačių ilguma.,
-,,,,,ilguma_WGS,number,,,,4,open,,Monitoringo taško WGS-84 koordinačių platuma.,
-,,,,,platuma_WGS,number,,,,4,open,,Monitoringo taško WGS-84 koordinačių ilguma.,
-,,,,,rusies_pav_lt,string,,,,4,open,,Rūšies lietuviškas pavadinimas.,
-,,,,,,comment,type,,"update(property: ""rusies_pav_lt"", type: ""text"")	",4,open,spinta:204,,
-,,,,,rusies_pav_la,string,,,,,open,,Rūšies lotyniškas pavadinimas.,
-,,,,,,comment,type,,"update(property: ""rusies_pav_lo"", type: ""text"")	",4,open,spinta:204,,
-,,,,,rusies_pav_en,string,,,,,open,,Rūšies angliškas pavadinimas.,
-,,,,,,comment,type,,"update(property: ""rusies_pav_en"", type: ""text"")	",4,open,spinta:204,,
-,,,,,rusies_grupe,string,,,,4,open,,Rūšies grupė.,
-,,,,,,enum,,,"""fpl""",,,,Fitoplanktonas,
-,,,,,,,,,"""zpl""",,,,Zooplanktonas,
-,,,,,,,,,"""pau""",,,,Paukščiai,
-,,,,,,,,,"""sik""",,,,Šikšnosparniai,
-,,,,,,,,,"""aum""",,,,Augalija (makrofitai),
-,,,,,,,,,"""var""",,,,Varliagyviai,
-,,,,,,,,,"""zuv""",,,,Žuvis,
-,,,,,rusies_grupes_reiksme,string,,,,3,open,,Rūšies grupės reikšmė,
-,,,,,reiksme,string,,,,2,open,,Rūšių monitoringas. Reikšmė.,
-,,,,,parametras,string,,,,4,open,,Rūšių monitoringas. Parametras.,
-,,,,,,enum,,,"""count""",,,,"Rūšies gausumo reikšmė, vnt.",
-,,,,,,,,,"""pad""",,,,"Rūšies gausumo reikšmė (vandens telkiniuose), balais",
-,,,,,parametro_reiksme_lt,string,,,,3,open,,Parametro reikšmė,
-,,,,,,comment,type,,"update(property: ""parametro_reiksme_lt@lt"", type: ""text"")	",4,open,spinta:204,,
-,,,,,fitoplanktono_kiekis,number,,,,4,open,,Fitoplanktono kiekis aplinkoje.,
-,,,,,fitoplanktono_biomasė,number,,,,4,open,,Fitoplanktono biomasė aplinkoje.,
-,,,,,zoobentoso_tankumas,number,,,,4,open,,Zoobentoso tankumas aplinkoje.,
-,,,,,zoobentoso_biomasė,number,,,,4,open,,Zoobentoso biomasė aplinkoje.,
