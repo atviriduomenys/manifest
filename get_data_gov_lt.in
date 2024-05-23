@@ -618,12 +618,6 @@ datasets/gov/vvtat/planiniai_patikrinimai.csv
 datasets/gov/vvtat/klasifikatoriai.csv
 datasets/gov/lki/zodziai_administracineje_kalboje.csv
 datasets/gov/tka/cor.csv
-datasets/gov/klaipeda/aplinkos_monitoringas.csv
-datasets/gov/marijampole/zeldiniu_tvarkymas.csv
 datasets/gov/klaipedos_m_sav/gyvosios_gamtos_monitoringas.csv
-datasets/gov/klaipeda/aplinkos_monitoringas.csv
-datasets/gov/klaipeda/gyvosios_gamtos_monitoringas.csv
-datasets/gov/marijampole/zeldiniu_tvarkymas.csv
 datasets/gov/klaipedos_m_sav/aplinkos_monitoringas.csv
-datasets/gov/klaipeda/aplinkos_monitoringas.csv
 datasets/gov/marijampoles_sav/zeldiniu_tvarkymas.csv
