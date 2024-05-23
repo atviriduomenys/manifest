@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/klaipedos_r_sav,,,,,ns,,,,,,,Klaipėdos rajono savivaldybė,
-,datasets/gov/klaipedos_r_sav/apklausu_rezultatai,,,,,,,,,,,,Klaipėdos rajono apklausų sistemos rezultatai,"Informacija apie Klaipėdos rajono gyventojų apklausų sistemoje apklausa.klaipedos-r.lt  vykdomų apklausų, seniūnaičių rinkimų bei vykdomo projekto ""Tavo idėja"" rezultatus nuo 2022 m. "
+,datasets/gov/klaipedos_r_sav/apklausu_sistema,,,,,,,,,,,,Klaipėdos rajono apklausų sistemos rezultatai,"Informacija apie Klaipėdos rajono gyventojų apklausų sistemoje apklausa.klaipedos-r.lt  vykdomų apklausų, seniūnaičių rinkimų bei vykdomo projekto ""Tavo idėja"" rezultatus nuo 2022 m. "
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
