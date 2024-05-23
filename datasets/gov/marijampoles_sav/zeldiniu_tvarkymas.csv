@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/marijampole,,,,,ns,,,,,,,Marijampolės savivaldybė,
-,datasets/gov/marijampole/zeldiniu_tvarkymas,,,,,,,,,,,,"Išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
+,datasets/gov/marijampoles_sav/zeldiniu_tvarkymas,,,,,,,,,,,,"Išduoti leidimai kirsti, genėti ar pertvarkyti saugotinus želdinius","Pateikiama informacija apie Marijampolės savivaldybės išduotus leidimus kirsti, genėti ar pertvarkyti želdinius. Informacija pateikiama nuo 2008 metų."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
