@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,prasymo_data,date,D,,,4,open,,Prašymo pateikimo data,Leidimo prašymo pateikimo data
 ,,,,,leidimo_id,string,,,,4,open,,Leidimo numeris,
-,,,,,leidimo_išdavimo_data,date,D,,,4,open,,Leidimo išdavimo data,
+,,,,,leidimo_isdavimo_data,date,D,,,4,open,,Leidimo išdavimo data,
 ,,,,,leidimas_galioja_iki,date,D,,,4,open,,Leidimas galioja iki,
 ,,,,,seniunijos_pavadinimas,string,,,,4,open,,Seniūnijos pavadinimas,
 ,,,,,gatves_pavadinimas,string,,,,4,open,,Gatvės pavadinimas,
