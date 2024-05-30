@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Licencija,,,vda_id,,,4,,,Lošimo bendrovių licencijos,
+,,,,Licencija,,,vda_id,,,4,,,Lošimo bendrovių licencijos,"Lošimų bendrovėms išduotų licencijų sąrašas.  Licencijų, priskirtų šiems tipams, informacija yra teisinga: Lažybas, Stalo lošimus ir A kategorijos automatais, Lošimus B kategorijos automatais."
 ,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,licencijos_id,string,,,,4,open,,Licencijos identifikatorius,
 ,,,,,licencijos_numeris,string,,,,4,open,,Licencijos numeris,
