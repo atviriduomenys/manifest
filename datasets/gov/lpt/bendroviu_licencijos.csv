@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licencijos_numeris,string,,,,4,open,,Licencijos numeris,
 ,,,,,licencijos_tipas,string,,,,4,open,,Licencijos tipas,"Licencijų, priskirtų šiems tipams, informacija yra teisinga: Lažybas, Stalo lošimus ir A kategorijos automatais, Lošimus B kategorijos automatais"
 ,,,,,organizacijos_pavadinimas,string,,,,4,open,,Lošimų bendrovės pavadinimas,
-,,,,,organizacijos_kodas,string,,,,2,open,,Lošimų bendrovės JAR kodas,
+,,,,,organizacijos_kodas,string,,,,2,open,,Lošimų bendrovės juridinio asmens kodas,
 ,,,,,organizacijos_adresas,string,,,,2,open,,Lošimų bendrovės registracijos adresas,
 ,,,,,licencijos_isdavimo_data,date,D,,,4,open,,Licencijos išdavimo data,
 ,,,,,licencijos_isdavimo_pagrindas,string,,,,4,open,,Licencijos išdavimo pagrindas,
