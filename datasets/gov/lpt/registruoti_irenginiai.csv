@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lpt/registruoti_irenginiai,,,,,,,,,,,,Lošimo bendrovių įregistruoti įrenginiai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Irenginys,,,irenginio_registracijos_id,,,4,,,Lošimo bendrovių įregistruoti įrenginiai,Lošimo bendrovių įregistruotų įrenginių ir jų istorijos sąrašas
+,,,,,irenginio_registracijos_id,string,,,,4,open,,Įrenginio registracijos unikalus identifikatorius,
+,,,,,leidimo_id,string,,,,4,open,,Leidimo unikalus identifikatorius,
+,,,,,leidimo_dokumento_id,string,,,,4,open,,Leidimo dokumento unikalus identifikatorius,
+,,,,,irenginio_id,string,,,,4,open,,Įrenginio identifikatorius,
+,,,,,irenginio_registracijos_numeris,string,,,,4,open,,Registracijos numeris,
+,,,,,irenginio_pavadinimas,string,,,,4,open,,"Įrenginio pavadinimas, pateiktas lošimų bendrovės",
+,,,,,,comment,type,,"update(property: ""irenginio_pavadinimas@en"", type: ""text"")",4,open,spinta:204,,
+,,,,,irenginio_tipo_id,string,,,,4,open,,Įrenginio tipo unikalus identifikatorius,
+,,,,,galioja_nuo,date,D,,,4,open,,Registracija galioja nuo,
+,,,,,galioja_iki,date,D,,,4,open,,Registracija galioja iki,
