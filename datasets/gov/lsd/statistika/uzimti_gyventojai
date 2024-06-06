@@ -1,0 +1,76 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/statistika/uzimti_gyventojai,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,S3R0139_M3031018_1,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, lytį.
+Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
+Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
+Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
+Tyrime naudojami klasifikatoriai:
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
+Lietuvos profesijų klasifikatorius (LPK 2012);
+Lietuvos švietimo klasifikatorius (LŠK 2014);
+Lietuvos standartizuotas švietimo klasifikatorius švietimo programoms pagal lygius klasifikuoti (LSŠPK 2014);
+Tarptautinis užimtumo statuso klasifikatorius (ISCE-93) (tik anglų kalba);
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+Bendras teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius_3_grupes,string,,,,4,open,,Amžius (3 grupės),
+,,,,,amzius_3_grupes_id,string,,,,4,open,,Amžius (3 grupės): identifikacinis numeris,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,lytis_id,string,,,,4,open,,Lytis ID,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0139_M3031018_2,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių, išsilavinimą ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, išsilavinimą ir lytį.
+Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
+Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
+Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
+Tyrime naudojami klasifikatoriai:
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
+Lietuvos profesijų klasifikatorius (LPK 2012);
+Lietuvos švietimo klasifikatorius (LŠK 2014);
+Lietuvos standartizuotas švietimo klasifikatorius švietimo programoms pagal lygius klasifikuoti (LSŠPK 2014);
+Tarptautinis užimtumo statuso klasifikatorius (ISCE-93) (tik anglų kalba);
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+Bendras teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius_20_64,string,,,,4,open,,Amžius (20–64),
+,,,,,amzius_20_64_id,string,,,,4,open,,Amžius (20–64): identifikacinis numeris,
+,,,,,issilavinimas,string,,,,4,open,,Išsilavinimas,
+,,,,,issilavinimas_id,string,,,,4,open,,Išsilavinimas ID,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,lytis_id,string,,,,4,open,,Lytis ID,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
+,,,,S3R0139_M3031018_3,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir išsilavinimą)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių ir išsilavinimą.
+Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
+Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
+Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
+Tyrime naudojami klasifikatoriai:
+Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);
+Lietuvos profesijų klasifikatorius (LPK 2012);
+Lietuvos švietimo klasifikatorius (LŠK 2014);
+Lietuvos standartizuotas švietimo klasifikatorius švietimo programoms pagal lygius klasifikuoti (LSŠPK 2014);
+Tarptautinis užimtumo statuso klasifikatorius (ISCE-93) (tik anglų kalba);
+Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018);
+Bendras teritorinių statistinių vienetų klasifikatorius (NUTS)."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,amzius_3_grupes,string,,,,4,open,,Amžius (3 grupės),
+,,,,,amzius_3_grupes_id,string,,,,4,open,,Amžius (3 grupės): identifikacinis numeris,
+,,,,,issilavinimas,string,,,,4,open,,Išsilavinimas,
+,,,,,issilavinimas_id,string,,,,4,open,,Išsilavinimas ID,
+,,,,,laikotarpis,date,D,,,4,open,,Laikotarpis,
+,,,,,laikotarpis_id,string,,,,4,open,,Laikotarpis identifikacinis numeris,
+,,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
+,,,,,verte,number,,,,4,open,,Skaitinė vertė,
+,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
