@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nsa/mr/mokiniai_einamiesiems_mokslo_metams,,,,,,,,,,,,Mokiniai einamiesiems mokslo metams,
+,datasets/gov/nsa/mr/mokiniai_einamiesiems_mokslometams,,,,,,,,,,,,Mokiniai einamiesiems mokslo metams,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
