@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R0139_M3031018_1,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, lytį.
+,,,,S3R0139M30310181,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, lytį.
 Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
 Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
 Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
@@ -26,7 +26,7 @@ Bendras teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0139_M3031018_2,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių, išsilavinimą ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, išsilavinimą ir lytį.
+,,,,S3R0139M30310182,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių, išsilavinimą ir lytį)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių, išsilavinimą ir lytį.
 Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
 Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
 Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
@@ -51,7 +51,7 @@ Bendras teritorinių statistinių vienetų klasifikatorius (NUTS)."
 ,,,,,matavimo_vienetai_id,string,,,,4,open,,Matavimo vienetai identifikacinis numeris,
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
-,,,,S3R0139_M3031018_3,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir išsilavinimą)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių ir išsilavinimą.
+,,,,S3R0139M30310183,,,vda_id,,,4,,,"Užimti gyventojai, dirbantys ne visą darbo laiką (pagal amžių ir išsilavinimą)","Šiame rinkinyje pateikta statistinė informacija apie gyventojų užimtumą ir nedarbą bei užimtų gyventojų, bedarbių ir ekonomiškai neaktyvių gyventojų skaičių, jų pasiskirstymą pagal amžių ir išsilavinimą.
 Bedarbis – nedirbantis 15–74 metų amžiaus asmuo, kuris pastarąsias keturias savaites aktyviai ieško darbo ir gali pradėti dirbti per dvi savaites.
 Užimti gyventojai – asmenys, dirbantys bet kokį darbą, gaunantys už jį darbo užmokestį pinigais ar natūra arba turintys pajamų ar pelno.. Tyrime užimtais gyventojais laikomi 15–89 metų gyventojai, tiriamąją savaitę ne trumpiau kaip valandą dirbę bet kokį darbą, už kurį gavo darbo užmokestį pinigais ar atlygį natūra ar iš kurio turėjo pelno ar pajamų, taip pat gyventojai, kurie turėjo darbą, bet tiriamąją savaitę laikinai nedirbo.
 Statistinio stebėjimo vienetas - privatus namų ūkis bei jo narys. Tiriamoji visuma – visi nuolatiniai Lietuvos gyventojai. Statistinė informacija rengiama šalies, regionų, apskričių ir savivaldybių lygmeniu. Laiko aprėptis nuo 2021 metų.
