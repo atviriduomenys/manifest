@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R167_M3010202,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, administracinę teritoriją)","Duomenys pagal pagal amžių, lytį, administracinę teritoriją pateikiami nuo 1996 m."
+,,,,S3R167M3010202,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, administracinę teritoriją)","Duomenys pagal pagal amžių, lytį, administracinę teritoriją pateikiami nuo 1996 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinė teritorija,
 ,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinė teritorija: identifikacinis numeris,
@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,integer,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R167_M3010205,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, gyvenamąją vietovę)","Duomenys pagal pagal amžių, lytį, gyvenamąją vietovę pateikiami nuo 1959 m."
+,,,,S3R167M3010205,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, gyvenamąją vietovę)","Duomenys pagal pagal amžių, lytį, gyvenamąją vietovę pateikiami nuo 1959 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Amžius,
 ,,,,,amzius_id,string,,,,4,open,,Amžius: identifikacinis numeris,
@@ -33,7 +33,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,verte,integer,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S3R167_M3010224,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, santuokinę padėtį)","Duomenys pagal amžių, lytį, santuokinę padėtį pateikiami nuo 2001 m."
+,,,,S3R167M3010224,,,vda_id,,,4,,,"Nuolatinių gyventojų skaičius metų pradžioje (pagal amžių, lytį, santuokinę padėtį)","Duomenys pagal amžių, lytį, santuokinę padėtį pateikiami nuo 2001 m."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,amzius_5_m_amziaus_grupes,string,,,,4,open,,Amžius (5 m. amžiaus grupės),
 ,,,,,amzius_5_m_amziaus_grupes_id,string,,,,4,open,,Amžius (5 m. amžiaus grupės): identifikacinis numeris,
