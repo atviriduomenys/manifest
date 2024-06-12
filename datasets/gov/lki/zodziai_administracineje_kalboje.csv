@@ -8,5 +8,7 @@ Pirmą kartą duomenys surinkti 2014 m. Kiti šių duomenų atnaujinimai galimi 
 "
 ,,,,,id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,zodis,string,,,,4,open,,Žodis ar kitas kalbos reiškinys,
-,,,,,paaiskinimas_lt,string,,,,4,open,,Žodžio ar kito kalbos reiškinio vartosenos paaiškinimas,
+,,,,,paaiskinimas_lt,string,,,,4,open,,Žodžio ar kito kalbos reiškinio vartosenos paaiškinimas (pateiktas grynojo teksto formatu),
 ,,,,,,comment,type,,"update(property: ""paaiskinimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,paaiskinimas_html_lt,string,,,,4,open,,Žodžio ar kito kalbos reiškinio vartosenos paaiškinimas (pateiktas html formatu),
+,,,,,,comment,type,,"update(property: ""paaiskinimas_html_lt@lt"", type: ""text"")",4,open,spinta:204,,
