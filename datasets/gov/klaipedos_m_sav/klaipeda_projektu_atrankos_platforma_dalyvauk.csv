@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/klaipedos_m_sav/klaipeda_projektu_atrankos_platforma_dalyvauk,,,,,,,,,,,,,
+,datasets/gov/klaipedos_m_sav/atrankos_platforma_dalyvauk,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,KlaipedaDalyvaukApsilankymai,,,id,,,4,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" puslapio apsilankymai.","IS sukurta siekiant bendarbiauti ir bendrauti tarp miesto savivaldybės ir Klaipėdos miesto piliečiu. Klaipėdos miesto gyventojai naudojantis šia IS teikia idėjas ir iniciatyvas dėl viešos infrastruktūros gerinimo Klaipėdos mieste. Taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas. Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/. Miesto savivaldybė turi galimybę IS pagalba sisteminti, valdyti ir analizuoti siūlomų iniciatyvų duomenis."
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
@@ -7,19 +7,22 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ip_adresas,string,,,,4,open,,IP adresas,
 ,,,,,narsykle_en,string,,,,4,open,,Naršyklė,
 ,,,,,,comment,type,,"update(property: ""narsykle_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,operacine_sistema,string,,,,4,open,,Operacinė sistema,
+,,,,,operacine_sistema_en,string,,,,4,open,,Operacinė sistema,
 ,,,,,,comment,type,,"update(property: ""operacine_sistema_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,irenginio_tipas_en,string,,,,4,open,,Įrenginio tipas,
 ,,,,,,comment,type,,"update(property: ""irenginio_tipas_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,pradeta,datetime,L,,,4,open,,Puslapio apsilankymo laikas,
 ,,,,,tiketinas_salies_kodas_en,string,,,,4,open,,Tikėtinas šalies kodas,"Pagal IP adresą nustatyta šalis, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę. Tikslumas yra ribotas."
+,,,,,,comment,type,,"update(property: ""tiketinas_salies_kodas_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,tiketina_savivaldybe_en,string,,,,4,open,,Tikėtina savivaldybė,"Pagal IP adresą nustatyta savivaldybė, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę.  Tikslumas yra ribotas."
+,,,,,,comment,type,,"update(property: ""tiketina_savivaldybe_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,tiketinas_miestas_en,string,,,,4,open,,Tikėtinas miestas,"Pagal IP adresą nustatytas miestas, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę.  Tikslumas yra ribotas."
+,,,,,,comment,type,,"update(property: ""tiketinas_miestas_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Dalyvaujamieji biudžetai,,,,,,,,,,
+,,,,DalyvaujamiejiBiudzetai,,,,,,,,,,
 ,,,,,id,string,,,,4,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" dalyvaujamųjų biudžetų pasiūlymų duomenys.",
-,,,,,sukurta,timestamp,,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
+,,,,,sukurta,datetime,L,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
 ,,,,,biudzetas_lt,string,,,,4,open,,Dalyvaujamasis biudžetas,
 ,,,,,,comment,type,,"update(property: ""biudzetas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,organizacija_lt,string,,,,4,open,,Organizacija,Pasiūlymą pateikusi organizacija
