@@ -20,8 +20,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""tiketinas_miestas_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,DalyvaujamiejiBiudzetai,,,,,,,,,,
-,,,,,id,string,,,,4,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" dalyvaujamųjų biudžetų pasiūlymų duomenys.",
+,,,,DalyvaujamiejiBiudzetai,,,id,,,,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" dalyvaujamųjų biudžetų pasiūlymų duomenys.",
+,,,,,id,string,,,,4,,,Identifikavimo kodas,
 ,,,,,sukurta,datetime,L,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
 ,,,,,biudzetas_lt,string,,,,4,open,,Dalyvaujamasis biudžetas,
 ,,,,,,comment,type,,"update(property: ""biudzetas_lt@lt"", type: ""text"")",4,open,spinta:204,,
