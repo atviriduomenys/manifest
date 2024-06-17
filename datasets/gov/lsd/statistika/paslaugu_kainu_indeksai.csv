@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S7R290M20209101,,vda_id,,,,4,,,Ūkio subjektams suteiktų paslaugų kainų indeksai,"Paslaugų kainų indekso (PKI) skaičiavimo tikslas – nustatyti ūkio subjektams suteiktų paslaugų bendrąjį kainų pokytį per tam tikrą laikotarpį. PKI reikalingi skaičiuojant makroekonominius rodiklius palyginamosiomis kainomis, analizuojant infliacinius procesus paslaugų sektoriuje, rengiant prognozes.
+,,,,S7R290M20209101,,,vda_id,,,4,,,Ūkio subjektams suteiktų paslaugų kainų indeksai,"Paslaugų kainų indekso (PKI) skaičiavimo tikslas – nustatyti ūkio subjektams suteiktų paslaugų bendrąjį kainų pokytį per tam tikrą laikotarpį. PKI reikalingi skaičiuojant makroekonominius rodiklius palyginamosiomis kainomis, analizuojant infliacinius procesus paslaugų sektoriuje, rengiant prognozes.
 Geografinė aprėptis - Visa šalies ekonominė teritorija. Ataskaitinis laikotarpis - Ketvirtis."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,evrk_2,string,,,,4,open,,Ekonominės veiklos rūšis (EVRK 2 red.),
