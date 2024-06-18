@@ -1,0 +1,25 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/aktualiu_adresu_gardeles,,,,,,,,,,,,Aktualių adresų gardelės,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,AdresoGardele,,,iraso_id,,,4,,,Aktualių adresų gardelės,Grafinio adresų registro aktualių (galiojančių) adresų geoerdviniai duomenys (taškai) su skirtingų dydžių gardelių identifikatoriais.
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,aob_kodas,ref,,,,4,open,,"Adreso (sklypo, statinio, patalpos) identifikavimo kodas",/datasets/gov/rc/ar/adresai/Adresas
+,,,,,x_koord,number,,,,4,open,,Adreso objekto x koordinatė (LKS94),
+,,,,,y_koord,number,,,,4,open,,Adreso objekto y koordinatė (LKS94),
+,,,,,geometrija,"geometry(point, 4326)",m,,"latitude, longitude",4,open,,Adreso taško koordinatės (WGS84),WGS-84
+,,,,,sq_100m_grid_id,string,,,,4,open,,Stačiakampės 100 m gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid100mSq
+,,,,,sq_250m_grid_id,string,,,,4,open,,Stačiakampės 250 m gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid250mSq
+,,,,,sq_500m_grid_id,string,,,,4,open,,Stačiakampės 500 m gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid500mSq
+,,,,,sq_1km_grid_id,string,,,,4,open,,Stačiakampės 1 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid1KmSq
+,,,,,sq_2_5km_grid_id,string,,,,4,open,,"Stačiakampės 2,5 km gardelės unikalus identifikatorius (LKS-94)",/datasets/gov/lsd/grid/Grid2500mSq
+,,,,,sq_5km_grid_id,string,,,,4,open,,Stačiakampės 5 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid5KmSq
+,,,,,sq_10km_grid_id,string,,,,4,open,,Stačiakampės 10 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid10KmSq
+,,,,,hx_1km_grid_id,string,,,,4,open,,Šešiakampės 1 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid1KmHx
+,,,,,hx_2km_grid_id,string,,,,4,open,,Šešiakampės 2 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid2KmHq
+,,,,,hx_5km_grid_id,string,,,,4,open,,Šešiakampės 5 km gardelės unikalus identifikatorius (LKS-94),/datasets/gov/lsd/grid/Grid5KmHx
+,,,,,sen_kodas,string,,,,4,open,,"Seniūnijos, kurios teritorijoje yra objektas, identifikavimo kodas",/datasets/gov/rc/ar/seniunija/Seniunija
+,,,,,sen_pav,string,,,,4,open,,"Seniūnijos, kurios teritorijoje yra objektas, pavadinimas",/datasets/gov/rc/ar/seniunija/Seniunija
+,,,,,sav_kodas,string,,,,4,open,,"Savivaldybės, kurios teritorijoje yra objektas, identifikavimo kodas",/datasets/gov/rc/ar/savivaldybe/Savivaldybe
+,,,,,sav_pav,string,,,,4,open,,"Savivaldybės, kurios teritorijoje yra objektas, pavadinimas",/datasets/gov/rc/ar/savivaldybe/Savivaldybe
