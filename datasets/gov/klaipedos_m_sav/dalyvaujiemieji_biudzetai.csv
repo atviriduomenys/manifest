@@ -1,6 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/klaipedos_m_sav/dalyvaujiemieji_biudzetai,,,,,,,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,
-,,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Biudzetas,,,id,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas.
 
