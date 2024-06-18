@@ -1,5 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/klaipedos_m_sav/dalyvauk_apsilankymai,,,,,,,,,,,,Gyventojų investicinių projektų atrankos platformos „Dalyvauk“ puslapio apsilankymai.,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Apsilankymas,,,id,,,4,,,Gyventojų investicinių projektų atrankos platformos „Dalyvauk“ puslapio apsilankymai.,"Klaipėdos miesto savivaldybės platformos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste. Taip pat dalyvauja balsavime, renkant patraukliausias iniciatyvas.
 
