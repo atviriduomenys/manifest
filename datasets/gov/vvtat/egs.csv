@@ -19,5 +19,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vartotojo_salis,string,,,,4,open,,Vartotojo kilmės šalis,
 ,,,,,apskritis,string,,,,4,open,,Vartotojo gyvenamosios vietos apskritis,
 ,,,,,vieta,string,,,,4,open,,Prekės/paslaugos įsigijimo vieta,
-,,,,,jar_kodas,string,,,,4,open,,Prekės/paslaugos pardavėjo juridinio asmens kodas,
-,,,,,teikejas,string,,,,,open,,Prekės/paslaugos pardavėjas,
+,,,,,jar_kodas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo[ja_kodas],,,4,open,,Prekės/paslaugos pardavėjo juridinio asmens kodas,
+,,,,,teikejas,string,,,,1,open,,Prekės/paslaugos pardavėjas,
