@@ -20,6 +20,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,hx_2km_grid_id,string,,,,4,open,,Šešiakampės 2 km gardelės unikalus identifikatorius (LKS-94),
 ,,,,,hx_5km_grid_id,string,,,,4,open,,Šešiakampės 5 km gardelės unikalus identifikatorius (LKS-94),
 ,,,,,sen_kodas,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,"Seniūnijos, kurios teritorijoje yra objektas, identifikavimo kodas",
-,,,,,sen_pav,ref,,,,4,open,,"Seniūnijos, kurios teritorijoje yra objektas, pavadinimas",
+,,,,,sen_pav,string,,,,4,open,,"Seniūnijos, kurios teritorijoje yra objektas, pavadinimas",
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurios teritorijoje yra objektas, identifikavimo kodas",
-,,,,,sav_pav,ref,,,,4,open,,"Savivaldybės, kurios teritorijoje yra objektas, pavadinimas",
+,,,,,sav_pav,string,,,,4,open,,"Savivaldybės, kurios teritorijoje yra objektas, pavadinimas",
