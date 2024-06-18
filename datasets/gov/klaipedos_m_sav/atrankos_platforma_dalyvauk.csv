@@ -1,27 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/klaipedos_m_sav/atrankos_platforma_dalyvauk,,,,,,,,,,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" duomenys",
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,datasets/gov/klaipedos_m_sav/dalyvaujiemieji_biudzetai,,,,,,,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,
 ,,,,,,,,,,,,,,
-,,,,Apsilankymas,,,id,,,4,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" puslapio apsilankymai.","IS sukurta siekiant bendradarbiauti ir bendrauti tarp miesto savivaldybės ir Klaipėdos miesto piliečių. Klaipėdos miesto gyventojai naudojantis šia IS teikia idėjas ir iniciatyvas dėl viešos infrastruktūros gerinimo Klaipėdos mieste. Taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas. Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/. Miesto savivaldybė turi galimybę IS pagalba sisteminti, valdyti ir analizuoti siūlomų iniciatyvų duomenis."
-,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,lankytojo_id,string,,,,4,open,,Lankytojo identifikatorius,
-,,,,,ip_adresas,string,,,,4,open,,IP adresas,
-,,,,,narsykle_en,string,,,,4,open,,Naršyklė,
-,,,,,,comment,type,,"update(property: ""narsykle_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,operacine_sistema_en,string,,,,4,open,,Operacinė sistema,
-,,,,,,comment,type,,"update(property: ""operacine_sistema_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,irenginio_tipas_en,string,,,,4,open,,Įrenginio tipas,
-,,,,,,comment,type,,"update(property: ""irenginio_tipas_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,pradeta,datetime,L,,,4,open,,Puslapio apsilankymo laikas,
-,,,,,tiketinas_salies_kodas_en,string,,,,4,open,,Tikėtinas šalies kodas,"Pagal IP adresą nustatyta šalis, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę. Tikslumas yra ribotas."
-,,,,,,comment,type,,"update(property: ""tiketinas_salies_kodas_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,tiketina_savivaldybe_en,string,,,,4,open,,Tikėtina savivaldybė,"Pagal IP adresą nustatyta savivaldybė, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę.  Tikslumas yra ribotas."
-,,,,,,comment,type,,"update(property: ""tiketina_savivaldybe_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,tiketinas_miestas_en,string,,,,4,open,,Tikėtinas miestas,"Pagal IP adresą nustatytas miestas, naudojant trečiosios šalies IP adresų lokacijų duomenų bazę.  Tikslumas yra ribotas."
-,,,,,,comment,type,,"update(property: ""tiketinas_miestas_en@en"", type: ""text"")",4,open,spinta:204,,
 ,,,,,,,,,,,,,,
-,,,,Biudzetas,,,id,,,,,,"Gyventojų investicinių projektų atrankos platformos ""Dalyvauk"" dalyvaujamųjų biudžetų pasiūlymų duomenys.",
+,,,,Biudzetas,,,id,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas.
+
+Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą.
+
+Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/."
 ,,,,,id,string,,,,4,,,Identifikavimo kodas,
 ,,,,,sukurta,datetime,L,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
 ,,,,,biudzetas_lt,string,,,,4,open,,Dalyvaujamasis biudžetas,
