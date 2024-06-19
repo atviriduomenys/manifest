@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,V,"""V""",,,,,Vyras,
 ,,,,,,,M,"""M""",,,,,Moteris,
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
-,,,,,tyrimo_data,date,D,,,4,open,,Tyrimo data metų tikslumu,
+,,,,,tyrimo_data,date,D,,,4,open,,Tyrimo data dienos tikslumu,
 ,,,,,tyrimo_rezultato_interpretacija,string,,,,1,open,,Tyrimo rezultatų semantiniai vertinimai ir skaitiniai rezultatai,
 ,,,,,tyrimo_skaitinis_rezultatas,number,,,,4,open,,Tyrimo skaitinis rezultatas,
 ,,,,,tyrimo_metodo_pavadinimas,string,,,,4,open,,Tyrimo metodo pavadinimas,
