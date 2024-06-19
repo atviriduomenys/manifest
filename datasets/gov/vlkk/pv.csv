@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,objekto_id,string,,,,4,open,,Objekto identifikatorius apjungti pavadinimus skirtingomis kalbomis,
 ,,,,,objekto_pavadinimas,string,,,,4,open,,Objekto pavadinimas originalo arba lietuvių kalba,
 ,,,,,objekto_pavadinimas_be_kirciu,string,,,,4,open,,Lietuviškas objekto pavadinimas be kirčio ženklų,
-,,,,,sulietuvinta,bool,,,,4,open,,Ar pavadinimas sulietuvintas,
+,,,,,sulietuvinta,boolean,,,,4,open,,Ar pavadinimas sulietuvintas,
 ,,,,,objekto_rusis,string,,,,4,open,,Objekto rūšis,
 ,,,,,objekto_salis,string,,,,4,open,,"Šalis, kuriai priklauso objektas",
 ,,,,,lokalizacija,string,,,,1,open,,Objekto vietovės duomenys,
