@@ -630,5 +630,9 @@ datasets/gov/lsd/statistika/nuolatiniai_gyventojai.csv
 datasets/gov/lsd/statistika/uzimti_gyventojai.csv
 datasets/gov/nsa/mr/mokiniai_einamiesiems_mokslo_metams.csv
 datasets/gov/lpt/registro_objektas.csv
-datasets/gov/klaipedos_m_sav/atrankos_platforma_dalyvauk.csv
 datasets/gov/rokiskio_r_lig/openlims.csv
+datasets/gov/klaipedos_m_sav/dalyvaujiemieji_biudzetai.csv
+datasets/gov/klaipedos_m_sav/dalyvauk_apsilankymai.csv
+datasets/gov/lsd/statistika/paslaugu_kainu_indeksai.csv
+datasets/gov/vvtat/egs.csv
+datasets/gov/lsd/aktualiu_adresu_gardeles.csv
