@@ -1,0 +1,36 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/klaipedos_m_sav/dalyvaujiemieji_biudzetai,,,,,,,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Biudzetas,,,id,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas.
+
+Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą.
+
+Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/."
+,,,,,id,string,,,,4,,,Identifikavimo kodas,
+,,,,,sukurta,datetime,L,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
+,,,,,biudzetas_lt,string,,,,4,open,,Dalyvaujamasis biudžetas,
+,,,,,,comment,type,,"update(property: ""biudzetas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,organizacija_lt,string,,,,4,open,,Organizacija,Pasiūlymą pateikusi organizacija
+,,,,,,comment,type,,"update(property: ""organizacija_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,autoriaus_id,string,,,,4,open,,Autoriaus identifikatorius,
+,,,,,ideja_lt,string,,,,4,open,,Idėja,Siūloma idėja
+,,,,,,comment,type,,"update(property: ""ideja_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,vieta_lt,string,,,,4,open,,Vieta,Pasiūlymo vieta
+,,,,,,comment,type,,"update(property: ""vieta_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,aprasymas_lt,string,,,,4,open,,Aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,rezultatai_lt,string,,,,4,open,,Rezultatas,Numatomas pasiūlymo rezultatas
+,,,,,,comment,type,,"update(property: ""rezultatai_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,komentaru_skaicius,number,,,,4,open,,Komentarų skaičius,
+,,,,,fiziniai_balsai,number,,,,4,open,,Fiziniai balsai,
+,,,,,balsai,number,,,,4,open,,Balsai,
+,,,,,vertinimas_baigtas,boolean,,,,4,open,,Vertinimas baigas,
+,,,,,ivykdomumas_lt,string,,,,4,open,,Įvykdomumas,Įvykdomumo įvertinimas
+,,,,,,comment,type,,"update(property: ""ivykdomumas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,neivykdomumo_priezastis_lt,string,,,,4,open,,Neįvykdomumo priežastis,
+,,,,,,comment,type,,"update(property: ""neivykdomumo_priezastis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,atrinkta,boolean,,,,4,open,,Atrinkta,
+,,,,,laimejo,boolean,,,,4,open,,Laimėjo,
+,,,,,paskutinis_atnaujinimas,datetime,L,,,4,open,,Paskutinis atnaujinimas,
