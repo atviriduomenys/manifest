@@ -607,6 +607,7 @@ datasets/gov/eso/jur_asm_duju_suvartojimas.csv
 datasets/gov/eso/fiz_asm_duju_suvartojimas.csv
 datasets/gov/gtc/dirvozemio_temperatura.csv
 datasets/gov/vlkk/lrtb.csv
+datasets/gov/vlkk/pv.csv
 datasets/gov/vlkk/vardai.csv
 datasets/gov/lnb/kulturos_pasas.csv
 datasets/gov/on/zone_rezervations.csv
