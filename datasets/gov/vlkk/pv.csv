@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sulietuvinta,boolean,,,,4,open,,Ar pavadinimas sulietuvintas,
 ,,,,,objekto_rusis,string,,,,4,open,,Objekto rūšis,
 ,,,,,objekto_salis,string,,,,4,open,,"Šalis, kuriai priklauso objektas",
-,,,,,lokalizacija,string,,,,1,open,,Objekto vietovės duomenys,
+,,,,,objekto_lokalizacija,string,,,,1,open,,Objekto vietovės duomenys,
 ,,,,,objekto_zemynas,string,,,,4,open,,Objekto žemynas,
 ,,,,,paiesku_sk,integer,U,,,4,open,,Kiek kartų buvo ieškota šio objekto VLKK pasvetainėje,
 ,,,,,anksciausia_paieskos_data,datetime,S,,,4,open,,Anksčiausia objekto paieškos data,
