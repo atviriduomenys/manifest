@@ -7,8 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Irasas,,,vda_id,,,4,,,Civilinių orlaivių registro duomenys,"Rinkinyje pateikiami duomenys registruotus ir jau išregistruotus civilnius orlaivius Lietuvos Respublikoje. Duomenys apima laikotarpį nuo 1991m. iki šių dienų. Nurodoma orlaivio kategorija, rūšis, tipas, keleivių skaičius, maksimali pakilimo masė, oro sraigto tipas, orlaivio bazė ir jos adresas. Papildomai taip pat nurodyti orlaivio savininko ir naudotojo tipai."
 ,,,,,vda_id,string,,,,4,open,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,,
 ,,,,,duomenu_sviezumas,date,D,,,4,open,Duomenų atnaujinimo data,,
-,,,,,nac_zenklas,string,,,,4,open,Orlaivio nacionalinis ženklas,,
-,,,,,reg_zenklas,string,,,,4,open,"Orlaivio registracijos ženklas, kurį sudaro 3 didžiosios lotyniškos raidės",,
+,,,,,registracijos_nr,string,,,,4,open,Orlaivio registracijos numeris, susidedantis iš orlaivio nacionalinio ženklo (LY) ir registracijos ženklo, kurį sudaro 3 didžiosios lotyniškos raidės,,
 ,,,,,statusas,string,,,,4,open,Orlaivio registravimo būsena,,
 ,,,,,,enum,,,"""Registravimas panaikintas""",,,,,
 ,,,,,,,,,"""Registruotas""",,,,,
