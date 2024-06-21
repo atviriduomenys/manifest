@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Biudzetas,,,id,,,,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas.
+,,,,Biudzetas,,,id,,,4,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas.
 
 Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą.
 
