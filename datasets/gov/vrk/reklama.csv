@@ -86,7 +86,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Kitos išlaidos""",,,,Kitos išlaidos,
 ,,,,,,,,,"""Ne politinės kampanijos laikotarpiu turėtos išlaidos, jeigu įsigyti daiktai ir kitas turtas yra skirti politinei kampanijai ar jeigu paslaugos yra gautos politinės kampanijos laikotarpiu""",,,,"Ne politinės kampanijos laikotarpiu turėtos išlaidos, jeigu įsigyti daiktai ir kitas turtas yra skirti politinei kampanijai ar jeigu paslaugos yra gautos politinės kampanijos laikotarpiu",
 ,,,,,,,,,"""Išorinė politinė reklama""",,,,Išorinė politinė reklama,
-,,,,,,,,,"""Politinė reklama internete"" ",,,,Politinė reklama internete ,
 ,,,,,,,,,"""Kitomis priemonėmis skleidžiama politinė reklama""",,,,Kitomis priemonėmis skleidžiama politinė reklama,
 ,,,,,,,,,"""Politinė reklama internete""",,,,Politinė reklama radijuje,
 ,,,,,,,,,"""Politinė reklama spaudoje""",,,,Politinė reklama spaudoje,
