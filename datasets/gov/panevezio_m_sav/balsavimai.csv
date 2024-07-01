@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Balsavimas,,,vda_id,,,4,,,Panevėžio miesto tarybos narių asmeniniai balsavimų rezultatai,Lentelėje pateikiami Panevėžio miesto tarybos narių asmeniniai balsavimai dėl Tarybos posėdžiuose teikiamų klausimų. Lentelės objektas - Tarybos nario balsavimo duomenys individualiam klausimui. Duomenys apima laikotarpį nuo 2023m. balandžio iki šių dienų.
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
 ,,,,,sesijos_id,ref,Sesija[sesijos_id],,,4,open,,Balsavimo sesijos identifikacinis numeris,
-,,,,,balsavimo_laikas,timestamp,L,,,4,open,,Balsavimo laiko žyma,
+,,,,,balsavimo_laikas,datetime,L,,,4,open,,Balsavimo laiko žyma,
 ,,,,,delegato_id,string,,,,4,open,,Delegato identifikacinis numeris,
 ,,,,,vardas_pavarde,string,,,,4,open,,Tarybos nario vardas ir pavardė,
 ,,,,,ar_dalyvavo,boolean,,,,4,open,,"Požymis, ar Tarybos narys dalyvavo balsavime",
@@ -22,7 +22,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"""update(property: """"klausimas[]"""", type: """"array"""", source: """"Klausimas"""")""",4,,spinta:161,,
 ,,,,,aprasymas_lt,string,,,,,,,Aprašymas,
 ,,,,,,comment,property,,"""update(property: """"aprasymas[]"""", type: """"array"""", source: """"Aprasymas"""")""",4,,spinta:161,,
-,,,,,laikas,timestamp,L,,,4,open,,Balsavimo laiko žyma,
+,,,,,laikas,datetime,L,,,4,open,,Balsavimo laiko žyma,
 ,,,,,tarybos_sk,number,U,,,4,open,,Tarybos narių skaičius,
 ,,,,,viso_dalyvavo,number,U,,,4,open,,Iš viso dalyvavusių tarybos narių posėdyje skaičius,
 ,,,,,viso_uz,number,U,,,4,open,,Viso balsavusių už skaičius,
