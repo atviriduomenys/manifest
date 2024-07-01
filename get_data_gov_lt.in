@@ -601,6 +601,7 @@ datasets/gov/gtc/trematodai_rceu.csv
 datasets/gov/gtc/hemosporidiniai_parazitai.csv
 datasets/gov/rpl/gydyti_pacientai.csv
 datasets/gov/pkpd/evis.csv
+datasets/gov/transeksta/ctadb.csv
 datasets/gov/vulzk/lab_tyrimai.csv
 datasets/gov/ukmlig/jivex.csv
 datasets/gov/eso/jur_asm_duju_suvartojimas.csv
