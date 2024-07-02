@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/panevezio_m_sav,,,,,,,,,,,,Panevėžio miesto savivaldybė,
+,datasets/gov/panevezio_m_sav/taryba,,,,,,,,,,,,Panevėžio miesto tarybos narių sąrašas,Rinkinyje pateikiamas buvusių ir esamų Panevėžio miesto tarybos narių sąrašas. Duomenys apima laikotarpį nuo 2007m. iki šių dienų.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Narys,,,delegato_id,,,4,,,Rinkinyje pateikiamas buvusių ir esamų Panevėžio miesto tarybos narių sąrašas. Duomenys apima laikotarpį nuo 2007m. iki šių dienų.,
+,,,,,delegato_id,string,,,,4,open,,Tarybos nario identifikacinis numeris,
+,,,,,vardas_pavarde,string,,,,4,open,,Tarybos nario vardas ir pavardė,
+,,,,,pareigos,string,,,,4,open,,Tarybos nario pareigos,
+,,,,,ar_aktyvus,boolean,,,,4,open,,"Požymis, ar Tarybos narys eina pareigas einamosios kadencijos metu",
+,,,,,duomenu_sviezumas,date,D,,,4,open,,Duomenų atnaujinimo data,
