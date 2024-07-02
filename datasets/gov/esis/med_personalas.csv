@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/esis/med_personalas,,,,,,,,,,,,Medicinos personalas,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Darbuotojas,,,vda_id,,,4,,,Medicinos personalas,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigose (ASPĮ), naudojančiose ESIS, dirbančio personalo tarnybinius duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra kasdien naujinami. Duomenų rinkinys apima ASPĮ JAR kodą, pavadinimą ir savivaldybę, darbuotojui priskirtą padalinį, jo pseudonimizuotą asmens kodą, einamas pareigas ir ataskaitinę datą, nurodančią esamo duomenų įrašo aktualumą.   "
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,aspi_jar_kodas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos JAR kodas,
+,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
+,,,,,aspi_savaivaldybe,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos savivaldybė,
+,,,,,aspi_padalinys,string,,,,4,open,,Darbuotojui priskirtas padalinys,
+,,,,,asmens_kodas,string,,,,4,open,,Darbuotojo pseudonomizuotas asmens kodas,
+,,,,,pareigos,string,,,,4,open,,Darbuotojo einamos pareigos,
+,,,,,ataskaitine_data,datetime,S,,,4,open,,"Data, nuo kada aktualūs duomenys esamame įraše",
