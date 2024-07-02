@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,skundas_pastu,date,D,,,4,open,,"Skundo, siųsto paštu, gavimo data",
 ,,,,,registracija,date,D,,,4,open,,Skundo registracijos data,
 ,,,,,institucija,string,,,,4,open,,Skundą nagrinėjusi institucija,
-,,,,,isigyta_internetu,string,,,,4,open,,"Požymis, ar prekė/paslauga buvo įsigyta internetu",
+,,,,,isigyta_internetu,boolean,,,,4,open,,"Požymis, ar prekė/paslauga buvo įsigyta internetu",
 ,,,,,atsiskaitymas,string,,,,4,open,,Atsiskaitymo už įsigytą prekę ar paslaugą būdas,
 ,,,,,vartotojo_salis,string,,,,4,open,,Vartotojo kilmės šalis,
 ,,,,,apskritis,string,,,,4,open,,Vartotojo gyvenamosios vietos apskritis,
