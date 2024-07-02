@@ -9,6 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
 ,,,,,aspi_savaivaldybe,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos savivaldybė,
 ,,,,,aspi_padalinys,string,,,,4,open,,Darbuotojui priskirtas padalinys,
-,,,,,asmens_kodas,string,,,,4,open,,Darbuotojo užmaišytas asmens kodas,
+,,,,,asmens_kodas,string,,,,4,open,,Darbuotojo pseudonomizuotas asmens kodas,
 ,,,,,pareigos,string,,,,4,open,,Darbuotojo einamos pareigos,
 ,,,,,ataskaitine_data,datetime,S,,,4,open,,"Data, nuo kada aktualūs duomenys esamame įraše",
