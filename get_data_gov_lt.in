@@ -480,6 +480,8 @@ datasets/gov/ird/vataras_vatis.csv
 datasets/gov/ird/nusikalstamumas.csv
 datasets/gov/vtpsi/infostatyba.csv
 datasets/gov/lbek/lbek.csv
+datasets/gov/esis/lovu_skaiciai.csv
+datasets/gov/esis/med_personalas.csv
 datasets/gov/essc/humanitarine_pagalba.csv
 datasets/gov/essc/aprupinimas_jodo_preparatais.csv
 datasets/gov/essc/aspi.csv
@@ -601,6 +603,7 @@ datasets/gov/gtc/trematodai_rceu.csv
 datasets/gov/gtc/hemosporidiniai_parazitai.csv
 datasets/gov/rpl/gydyti_pacientai.csv
 datasets/gov/pkpd/evis.csv
+datasets/gov/transeksta/ctadb.csv
 datasets/gov/vulzk/lab_tyrimai.csv
 datasets/gov/ukmlig/jivex.csv
 datasets/gov/eso/jur_asm_duju_suvartojimas.csv
@@ -638,3 +641,5 @@ datasets/gov/klaipedos_m_sav/dalyvauk_apsilankymai.csv
 datasets/gov/lsd/statistika/paslaugu_kainu_indeksai.csv
 datasets/gov/vvtat/egs.csv
 datasets/gov/lsd/aktualiu_adresu_gardeles.csv
+datasets/gov/panevezio_m_sav/tarybos_nariai.csv
+datasets/gov/panevezio_m_sav/balsavimai.csv
