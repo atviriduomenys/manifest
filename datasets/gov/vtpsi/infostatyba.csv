@@ -33,8 +33,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uuid,string,,,,2,open,,Dokumento identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Adresas,,,,,,,,,"Statinių adresai",
-,,,,,projekto_id,string,,,,4,open,,Projekto identifikatorius,
-,,,,,statinio_id,string,,,,4,open,,Statinio identifikatorius,
+,,,,,projekto_id,string,,,,4,open,,Projekto identifikatorius,Siejasi su duomenų rinkiniu - https://get.data.gov.lt/datasets/gov/vtpsi/infostatyba/Statinys
+,,,,,statinio_id,string,,,,4,open,,Statinio identifikatorius,Siejasi su duomenų rinkiniu - https://get.data.gov.lt/datasets/gov/vtpsi/infostatyba/Statinys
 ,,,,,sav_kodas,string,,,,2,open,,Savivaldybės kodas,Siejasi su Savivaldybių duomenų rinkiniu - https://get.data.gov.lt/datasets/gov/rc/ar/savivaldybe/Savivaldybe
 ,,,,,sen_kodas,string,,,,2,open,,Seniūnijos kodas,Siejasi su Seniūnijų duomenų rinkiniu - https://get.data.gov.lt/datasets/gov/rc/ar/seniunija/Seniunija
 ,,,,,gyv_kodas,string,,,,2,open,,Gyvenamosios vietovės kodas,Siejasi su Gyvenamosios vietovės duomenų rinkiniu - https://get.data.gov.lt/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove
