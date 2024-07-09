@@ -31,3 +31,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,taskas_lks,geometry(3346),,,,4,open,,Koordinate LKS94 formatu,
 ,,,,,taskas_wgs,geometry(4326),,,,4,open,,Koordinate WGS84 formatu,
 ,,,,,uuid,string,,,,2,open,,Dokumento identifikatorius,
+,,,,,,,,,,,,,,
+,,,,Adresas,,,,,,,,,"Statinių adresai",
+,,,,,projekto_id,string,,,,4,open,,Projekto identifikatorius,
+,,,,,statinio_id,string,,,,4,open,,Statinio identifikatorius,
+,,,,,sav_kodas,string,,,,2,open,,Savivaldybės kodas,Siejasi su Savivaldybių duomenų rinkiniu https://get.data.gov.lt/datasets/gov/rc/ar/savivaldybe/Savivaldybe
+,,,,,sen_kodas,string,,,,2,open,,Seniūnijos kodas,Siejasi su Seniūnijų duomenų rinkiniu https://get.data.gov.lt/datasets/gov/rc/ar/seniunija/Seniunija
+,,,,,gyv_kodas,string,,,,2,open,,Miesto kodas,Siejasi su Gyvenamosios vietovės duomenų rinkiniu https://get.data.gov.lt/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove
+,,,,,gat_kodas,string,,,,2,open,,Gatvės kodas,Siejasi su Gatvių duomenų rinkiniu https://get.data.gov.lt/datasets/gov/rc/ar/gatve/Gatve
+,,,,,pastatas,string,,,,2,open,,Pastato numeris,
+,,,,,korpusas,string,,,,2,open,,Korpusas,
+,,,,,pasto_kodas,string,,,,2,open,,Pašto kodas,
+,,,,,adresas,string,,,,2,open,,Adresas,
