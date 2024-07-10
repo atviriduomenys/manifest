@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine,,,,,ns,,,,,,,Muitinės departamentas prie LR FM,
+,datasets/gov/muitine/muitines_prievolininku_registras,,,,,,,,,,,,Muitinės prievolininkų registras,Ekonominės veiklos vykdytojai ir kiti asmenys įtraukti į muitinės prievolininkų registrą
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,MuitinesPrievolininkas,,,muitines_prievolininko_identifikatorius,,,4,,,Ekonominės veiklos vykdytojai įtraukti į MPR,
+,,,,,muitines_prievolininko_id,string,,,,4,open,,Šifruotas įrašo ID,
+,,,,,salies_suteikusios_unikalu_evv_id_kodas,string,,,,4,open,,"Šalies, kuri suteikė unikalų ekonominės veiklos vykdytojo identifikatorių, kodas",
+,,,,,evv_id_nacionaliniame_domene,string,,,,4,open,,Šifruotas unikalus ekonominės veiklos vykdytojo identifikatorius nacionaliniame domene,
+,,,,,evv_asmens_tipas,string,,,,4,open,,Ekonominės veiklos vykdytojo asmens tipas,
+,,,,,evv_pavadinimas,string,,,,4,open,,"Šifruotas ekonominės veiklos vykdytojo pavadinimas (vardas, pavardė)",
+,,,,,evv_iregistravimo_mpr_data,date,D,,,4,open,,Ekonominės veiklos vykdytojo įregistravimo MPR data,
+,,,,,evv_isregistravimo_is_mpr_data,date,D,,,4,open,,Ekonominės veiklos vykdytojo išregistravimo iš MPR data,
+,,,,,buveines_ar_gyvenamosios_vietos_salies_kodas,string,,,,4,open,,Buveinės/gyvenamosios vietos adresas (šalies kodas),
+,,,,,buveines_ar_gyvenamosios_vietos_miesto_kodas,string,,,,4,open,,Šifruotas buveinės/gyvenamosios vietos adresas (miestas),
