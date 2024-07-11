@@ -39,7 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ziedavimo_vietove,string,,,,4,open,,"Žiedavimo vietovė: rajonas, savivaldybė arba kita",
 ,,,,,p_ziedavimo_centro_salis,string,,,,4,open,,Paukščio arba šikšnorsparnio žiedavimo centro šalis,
 ,,,,,p_ziedavimo_centras,string,,,,4,open,,Paukščio arba šikšnorsparnio žiedavimo centras,
-,,,,,kas_ziedavo,,,,,4,open,,Žieduotojo kodas,
+,,,,,kas_ziedavo,string,,,,4,open,,Žieduotojo kodas,
 ,,,,,,,,,,,,,,
 ,,,,PaukscioBiometrija,,,iraso_id,,,4,,,Paukščių ir šikšnosparnių biometriniai duomenys (išmatuoti žieduojant),Lentelėje pateikti Kauno Tado Ivanausko zoologijos muziejaus Lietuvoje atliktų paukščių ir šikšnorsparnių žiedavimų biometriniai duomenys iš Paukščių žiedavimo ir aptikimo duomenų bazės. Duomenų atnaujinimas vykdomas kartą per metus. 
 ,,,,,iraso_id,string,,,,4,open,,"Duomenų eilutės įrašo identifikatorius	",
