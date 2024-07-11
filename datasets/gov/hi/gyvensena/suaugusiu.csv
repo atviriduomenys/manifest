@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/hi/gyvensena,,,,,ns,,,,,,,Suaugusiųjų ir vaikų gyvensenos duomenys,
 ,datasets/gov/hi/gyvensena/suaugusiu,,,,,,,,,,,,Suaugusiųjų gyvensenos duomenys,
 ,,,,,,,,,,,,,,
-,,,,Gyvensena2018,,,,,,,,,Suaugusiųjų gyvensenos 2018 metų duomenys,Klausimynas skelbiamas intenete: https://www.hi.lt/uploads/Visuomenes_sveikatos_technologiju_centras/Suaugusiu_gyvensenos_klausimynas_20180313_1.pdf
+,,,,Gyvensena2018,,,,,,,,,Suaugusiųjų gyvensenos tyrimo 2018 metų duomenys,Klausimynas skelbiamas intenete: https://www.hi.lt/uploads/Visuomenes_sveikatos_technologiju_centras/Suaugusiu_gyvensenos_klausimynas_20180313_1.pdf
 ,,,,,resp_kodas,string,,,,4,open,,Respondento kodas,
 ,,,,,darzoves,string,,,,4,open,,Kaip dažnai valgote daržovių?,
 ,,,,,,enum,,,'1',,,,vieną ar daugiau kartų per dieną,
@@ -584,7 +584,7 @@ teikiamas visuomenės sveikatos priežiūros paslaugas? Galimi keli atsakymo var
 ,,,,,,,,,'5',,,,nežinau,
 ,,,,,,,,,'9',,,,neatsakyta į klausimą,
 ,,,,,,,,,,,,,,
-,,,,Gyvensena2022,,,,,,,,,Suaugusiųjų gyvensenos 2022 metų duomenys,Klausimynas skelbiamas intenete: https://www.hi.lt/uploads/Visuomenes_sveikatos_technologiju_centras/Suaugusiu_gyventoju_gyvensenos_stebesenos_tyrimo_klausimynas.pdf
+,,,,Gyvensena2022,,,,,,,,,Suaugusiųjų gyvensenos tyrimo 2022 metų duomenys,Klausimynas skelbiamas intenete: https://www.hi.lt/uploads/Visuomenes_sveikatos_technologiju_centras/Suaugusiu_gyventoju_gyvensenos_stebesenos_tyrimo_klausimynas.pdf
 ,,,,,resp_kodas,string,,,,4,open,,Respondento kodas,
 ,,,,,vaisiai,string,,,,4,open,,1. Kaip dažnai vartojate šiuos maisto produktus? Vaisius (neskaitant sulčių),
 ,,,,,,enum,,,'1',,,,Niekada,
@@ -754,7 +754,7 @@ iš kelių dalių, ne trumpesnių nei 10 min., pvz., 10+10+10 min., 15+15 min., 
 ,,,,,,enum,,,'1',,,,Taip,
 ,,,,,,,,,'2',,,,Ne,
 ,,,,,,,,,'9',,,,Neatsakyta į klausimą,
-,,,,,sveikiau_maintintis,string,,,,4,open,,"19. Ar per paskutinius 12 mėnesių esate bandęs (-džiusi) pakeisti gyvenseną? Sveikiau maitintis","(Gyvensena – tai mitybos, fizinio aktyvumo, alkoholio bei tabako vartojimo ir kiti įpročiai)."
+,,,,,sveikiau_maitintis,string,,,,4,open,,"19. Ar per paskutinius 12 mėnesių esate bandęs (-džiusi) pakeisti gyvenseną? Sveikiau maitintis","(Gyvensena – tai mitybos, fizinio aktyvumo, alkoholio bei tabako vartojimo ir kiti įpročiai)."
 ,,,,,,enum,,,'1',,,,"Taip, bandžiau ir pakeičiau",
 ,,,,,,,,,'2',,,,"Taip, bandžiau, bet nepakeičiau",
 ,,,,,,,,,'3',,,,"Nebandžiau keisti",
