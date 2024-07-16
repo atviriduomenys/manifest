@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,kasimuLokacijos,,,vda_id,,,4,,,Kauno miesto savivaldybėje vykdomų kasimo darbų lokacijos,Šiame rinkinyje pateikiamos Kauno miesto savivaldybės kasimo darbų lokacijos. Lokacijos pateikiamos WGS ir LKS koordinačių sistemose. Rinkinys jungiasi su „Kasimai“ rinkinu per „prasymo_id“ raktą (kasimai.id = kasimuLokacijos.prasymo_id). 
+,,,,kasimoLokacija,,,vda_id,,,4,,,Kauno miesto savivaldybėje vykdomų kasimo darbų lokacijos,Šiame rinkinyje pateikiamos Kauno miesto savivaldybės kasimo darbų lokacijos. Lokacijos pateikiamos WGS ir LKS koordinačių sistemose. Rinkinys jungiasi su „Kasimai“ rinkinu per „prasymo_id“ raktą (kasimai.id = kasimuLokacijos.prasymo_id). 
 ,,,,,vda_id,string,,,,4,,Identifikacinis numeris,,
 ,,,,,leidimo_id,string,,,,4,,Leidimo identifikacinis numeris,,
 ,,,,,leidimo_nr,string,,,,4,,Leidimo numeris,,
