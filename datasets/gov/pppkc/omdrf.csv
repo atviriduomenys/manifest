@@ -9,6 +9,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vardo_pavardes_simboliai,string,,,,4,open,,"Dalyvio vardas ir pavardė, pseudonimizuoti pavertus raides spec. simboliu",
 ,,,,,el_pastas,string,,,,4,open,,"Dalyvio el. pašto adresas, pseudonimizuotas maišos algoritmu",
 ,,,,,el_pasto_domenas,string,,,,4,open,,Dalyvio nurodyto el. pašto adreso teikėjas,
-,,,,,organizacija,string,,,,4,open,,"Organizacija, kuriai priklauso dalyvis",
+,,,,,organizacija,string,,,,3,open,,"Organizacija, kuriai priklauso dalyvis",
 ,,,,,organizacijos_rusis,string,,,,4,open,,Dalyvio organizacijos sritis,
 ,,,,,mokymu_tema,string,,,,4,open,,"Tema mokymų, kuriems užsiregistruota",
