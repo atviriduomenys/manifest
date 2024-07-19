@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nsa/mokyklu_kitos_patalpos,,,,,,,,,,,,"Bendrojo ugdymo institucijų kitų patalpų (pvz.: valgyklų, sporto salių, bibliotekų) duomenys",
+,datasets/gov/nsa/svis/mokyklu_kitos_patalpos,,,,,,,,,,,,"Bendrojo ugdymo institucijų kitų patalpų (pvz.: valgyklų, sporto salių, bibliotekų) duomenys",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
