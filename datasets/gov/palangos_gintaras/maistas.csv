@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,data,date,D,,,4,open,,Data,
 ,,,,,valgytoju_gr_id,string,,,,4,open,,Valgytojų grupės identifikacinis numeris,
 ,,,,,valgytoju_gr_pav,string,,,,4,open,,Valgytojų grupės pavadinimas,
-,,,,,mait_laikas,string,,,,3,open,,Matinimo laikas,
+,,,,,mait_laikas,string,,,,3,open,,Maitinimo laikas,
 ,,,,,patiekalas,string,,,,4,open,,Patiekalas,
 ,,,,,kodas,string,,,,4,open,,Patiekalo kodas,
 ,,,,,simbolis,string,,,,3,open,,Simbolis,
