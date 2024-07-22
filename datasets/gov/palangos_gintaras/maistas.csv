@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,PatiektiPatiekalai,,vda_id,,,4,,,,"Vaikų reabilitacijos sanatorijos ""Palangos gintaras"" patiektų patiekalų sąrašas","Šiame rinkinyje pateikiamas vaikų reabilitacijos sanatorijos ""Palangos gintaras"" patiektų patiekalų sąrašas. Duomenys pateikiami už 2016-2023 metus. Pateiki duomenys nebebus atnaujinami."
+,,,,PatiektiPatiekalai,,,vda_id,,4,,,,"Vaikų reabilitacijos sanatorijos ""Palangos gintaras"" patiektų patiekalų sąrašas","Šiame rinkinyje pateikiamas vaikų reabilitacijos sanatorijos ""Palangos gintaras"" patiektų patiekalų sąrašas. Duomenys pateikiami už 2016-2023 metus. Pateiki duomenys nebebus atnaujinami."
 ,,,,,vda_id,string,,,4,open,,,Identifikacinis numeris,
 ,,,,,meniu_id,string,,,4,open,,,Meniu identifikacinis numeris,
 ,,,,,data,date,D,,4,open,,,Data,
