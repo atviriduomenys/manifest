@@ -4,14 +4,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Ligonis,,,vda_id,,,4,,,Pacientų sąrašas,Vaikų reabilitacijos sanatorijos „Palngangos gintaras“ pacientų sąrašas. Duomenys pateikiami už 2016-2023 metus
+,,,,Ligonis,,,vda_id,,,4,,,Pacientų sąrašas,Vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientų sąrašas. Duomenys pateikiami už 2016-2023 metus
 ,,,,,vda_id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,paciento_id,string,,,,,open,,Paciento identifikacinis numeris,
 ,,,,,gimimo_metai,date,Y,,,,open,,Paciento gimimo metai,
 ,,,,,lytis,string,,,,,open,,Paciento lytis,
 ,,,,,neigalumo_tipas,string,,,,,open,,Paciento neįgalumno tipas,
 ,,,,,,,,,,,,,,
-,,,,PacientoRegistracija,,,vda_id,,,4,,,Pacientų registracijų sąrašas,Vaikų reabilitacijos sanatorijos „Palngangos gintaras“ pacientų registracijų sąrašas. Duomenys pateikiami nuo 2010 metų ir iki dabar.
+,,,,PacientoRegistracija,,,vda_id,,,4,,,Pacientų registracijų sąrašas,Vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientų registracijų sąrašas. Duomenys pateikiami nuo 2010 metų ir iki dabar.
 ,,,,,vda_id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,registracijos_nr,string,,,,4,open,,Paciento registracijos identifikacinis numeris,
 ,,,,,paciento_id,ref,/datasets/gov/palangos_gintaras/pacientai/Ligonis[paciento_id],,,4,open,,Paciento identifikacinis numeris,
@@ -49,6 +49,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lovos_kaina,number,,,,4,open,,Lovos kaina,
 ,,,,,lovu_sk,integer,U,,,4,open,,Lovų skaičius,
 ,,,,,suma,number,,,,4,open,,Suma,
-,,,,,skausmas_atvykus,string,,,,4,open,,Skaumo lygis atvykus,
+,,,,,skausmas_atvykus,string,,,,4,open,,Skausmo lygis atvykus,
 ,,,,,skausmas_isvykstant,string,,,,4,open,,Skausmo lygis išvykstant,
 ,,,,,skaus_iraso_reg_data,date,S,,,4,open,,Skausmo lygio registravimo data,
