@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,tp_id,string,,,,4,open,,Transporto priemonės identifikatorius,
 ,,,,,tp_valst_nr,string,,,,4,open,,Transporto priemonės valstybinis numeris,
-,,,,,tp_valst_nr_zymejimas,string,,,,4,open,,Transporto priemonės valstybinio numerio raidžių, skaitmenų ir kitų simbolių žymėjimai,
+,,,,,tp_valst_nr_zymejimas,string,,,,4,open,,"Transporto priemonės valstybinio numerio raidžių, skaitmenų ir kitų simbolių žymėjimai",
 ,,,,,tp_vin_nr,string,,,,4,open,,Transporto priemonės VIN numeris,
 ,,,,,tp_marke,string,,,,4,open,,Transporto priemonės markė,
 ,,,,,tp_modelis,string,,,,4,open;;Transporto priemonės modelis,
