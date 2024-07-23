@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rpl/laboratorijos,,,,,,,,,,,,Sveikatos priežiūros įstaigų laboratorijos rezultatų duomenys (Rokiškio psichiatrijos ligoninė),
 ,,,,,,,,,,,,,,
-,,,,Rezultatai,,,vda_id,,,4,,,Sveikatos priežiūros įstaigų laboratorijos rezultatų duomenys (Rokiškio psichiatrijos ligoninė),
+,,,,Rezultatas,,,vda_id,,,4,,,Sveikatos priežiūros įstaigų laboratorijos rezultatų duomenys (Rokiškio psichiatrijos ligoninė),
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,tyr_id,string,,,,4,open,,Tyrimo identifikatorius,
 ,,,,,paciento_id,string,,,,4,open,,Paciento identifikatorius,
