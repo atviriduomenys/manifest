@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,SuteiktaPaslauga,,,vda_prime_key,,,4,,,Informacija apie suteiktas prekes ir paslaugas,Informacija apie Viešosios įstaigos „Palangos Gintaras“ vaikų reabilitacijos sanatorijos pacientams suteiktas prekes  ir paslaugas nuo 2023 metų.
+,,,,SuteiktaPaslauga,,,vda_prime_key,,,4,,,Informacija apie suteiktas prekes ir paslaugas,Informacija apie Viešosios įstaigos Palangos vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientams suteiktas prekes  ir paslaugas nuo 2023 metų.
 ,,,,,vda_prime_key,string,,,,4,open,,VDA sukurtas šifruotas sąskaitos eilutės unikalus numeris,
 ,,,,,paciento_id,string,,,,4,open,,Iš užšifruotų paciento asmens duomenų sugeneruotas paciento identifikatorius,
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
