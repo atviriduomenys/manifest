@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,LovuProfilis,,,vda_id,,,4,,,Asmens sveikatos priežiūros įstaigų lovų skaičiai,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigų (ASPĮ), naudojančų ESIS, turimų lovų duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra kasdien naujinami. Duomenų rinkinys apima ASPĮ JAR kodą, pavadinimą ir savivaldybę, lovos profilio pavadinimą, bendrą visų atitinkamo profilio lovų skaičių ir laikinai nepildomą skaičių lovų, užimtų esamą dieną.   "
+,,,,LovuProfilis,,,vda_id,,,4,,,Asmens sveikatos priežiūros įstaigų lovų skaičiai,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigų (ASPĮ), naudojančių ESIS, turimų lovų duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra atnaujinami kasdien. Duomenų rinkinį sudaro: ASPĮ JAR kodas, pavadinimas ir savivaldybė, lovos profilio pavadinimas, bendras visų atitinkamo profilio lovų skaičius ir laikinai nepildomas, einamąją dieną užimtų lovų skaičius."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,aspi_jar_kodas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos JAR kodas,
 ,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
