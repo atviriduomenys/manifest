@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rrt/,,,,,,,,,,,,Leidimai naudoti laivų stotis,
+,datasets/gov/rrt/leid_laivu_stotys,,,,,,,,,,,,Leidimai naudoti laivų stotis,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,LeidLaivuStotys,,,iraso_id,,,4,,,Leidimai naudoti laivų stotis,"""Lentelėje pateikiami Lietuvos Respublikos ryšių reguliavimo tarnybos išduoti leidimai naudoti laivų radijo ryšio įrenginių stotis. Pateikiami tik šiuo metu galiojantys leidimai. Jie yra išduodami 5 metų laikotarpiui. Duomenys atnaujinami kasdien."""
+,,,,LaivuStotysLeidimas,,,iraso_id,,,4,,,Leidimai naudoti laivų stotis,"""Lentelėje pateikiami Lietuvos Respublikos ryšių reguliavimo tarnybos išduoti leidimai naudoti laivų radijo ryšio įrenginių stotis. Pateikiami tik šiuo metu galiojantys leidimai. Jie yra išduodami 5 metų laikotarpiui. Duomenys atnaujinami kasdien."""
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,laivo_pavadinimas,string,,,,4,open,,Laivo pavadinimas arba registro numeris,
 ,,,,,laivo_saukinys,string,,,,4,open,,Šaukinys,
