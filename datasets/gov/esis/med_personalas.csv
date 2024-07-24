@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Darbuotojas,,,vda_id,,,4,,,Medicinos personalas,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigose (ASPĮ), naudojančiose ESIS, dirbančio personalo tarnybinius duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra kasdien naujinami. Duomenų rinkinys apima ASPĮ JAR kodą, pavadinimą ir savivaldybę, darbuotojui priskirtą padalinį, jo pseudonimizuotą asmens kodą, einamas pareigas ir ataskaitinę datą, nurodančią esamo duomenų įrašo aktualumą.   "
+,,,,Darbuotojas,,,vda_id,,,4,,,Medicinos personalas,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigose (ASPĮ), naudojančiose ESIS, dirbančio personalo tarnybinius duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra atnaujinami kasdien. Duomenų rinkinį sudaro: ASPĮ JAR kodas, pavadinimas ir savivaldybė, darbuotojo pseudonimizuotas asmens kodas, darbuotojui priskirtas padalinys, einamos pareigos ir ataskaitinė data, nurodanti esamo duomenų įrašo aktualumą."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,aspi_jar_kodas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos JAR kodas,
 ,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
