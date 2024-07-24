@@ -1,11 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rrt/leid_orlaiviu_stotys,,,,,,,,,,,,Leidimai naudoti orlaivių stotis,
-
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,OrlaiviuStotysLeidimas,,,iraso_id,,,4,,,Leidimai naudoti orlaivių stotis,"""Lentelėje pateikiami Lietuvos Respublikos ryšių reguliavimo tarnybos išduotus leidimus naudoti orlaivių radijo ryšio įrenginių stotis. Pateikiami tik šiuo metu galiojantys leidimai. Jie yra išduodami 5 metų laikotarpiui. Duomenys atnaujinami kasdien."""
-
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,registracijos_nr,string,,,,4,open,,Orlaivio nacionalinis ir registracijos ženklai,
 ,,,,,serijos_nr,string,,,,4,open,,Orlaivio serijos numeris,
