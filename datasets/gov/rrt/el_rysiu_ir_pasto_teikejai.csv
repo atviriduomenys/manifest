@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,ElRysiaiPastasTeikejas,,,vda_prime_key,,,4,,,Elektroninių ryšių bei pašto paslaugų teikėjai ir jų pateiktų periodinių ataskaitų statistika,"""Lentelėje pateikiama Lietuvos Respublikos ryšių reguliavimo tarnybai pateiktų pašto paslaugų ir elektroninių ryšių ataskaitų statistika. Duomenys pateikiami nuo 2021 metų. Metai ir ketvirtis nurodo periodą, už kurį pateikta ataskaita, bet ne ataskaitos pateikimo laiką. Vienam ketvirčiui yra pateikiama viena ataskaita. Jei įmonė tuo pačiu metu teikia ir pašto, ir elektroninių ryšių paslaugas ji gali pateikti dvi skirtingas ataskaitas tam pačiam ketvirčiui. Duomenys atnaujinami kas 3 mėnesius."""
 ,,,,,vda_prime_key,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
-,,,,,metai,integer,,,,4,open,,"""Metai, už kuriuos pateikta ataskaita""",
+,,,,,metai,integer,,,,2,open,,"""Metai, už kuriuos pateikta ataskaita""",
 ,,,,,ketvirtis,string,,,,4,open,,"""Ketvirtis, už kurį pateikta ataskaita""",
 ,,,,,,enum,,,"""I""",,,,Pirmas ketvirtis,
 ,,,,,,,,,"""II""",,,,Antras ketvirtis,
