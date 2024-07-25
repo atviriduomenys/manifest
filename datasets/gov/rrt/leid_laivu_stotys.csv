@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rrt/leid_laivu_stotys,,,,,,,,,,,,Leidimai naudoti laivų stotis,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,LaivuStotysLeidimas,,,iraso_id,,,4,,,Leidimai naudoti laivų stotis,"""Lentelėje pateikiami Lietuvos Respublikos ryšių reguliavimo tarnybos išduoti leidimai naudoti laivų radijo ryšio įrenginių stotis. Pateikiami tik šiuo metu galiojantys leidimai. Jie yra išduodami 5 metų laikotarpiui. Duomenys atnaujinami kasdien."""
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,laivo_pavadinimas,string,,,,4,open,,Laivo pavadinimas arba registro numeris,
+,,,,,laivo_saukinys,string,,,,4,open,,Šaukinys,
+,,,,,laivo_mmsi,string,,,,4,open,,MMSI numeris,
+,,,,,laivo_sel_nr,string,,,,4,open,,Atrankiojo kvietimo numeris,
+,,,,,licenzijos_nr,string,,,,4,open,,Leidimo numeris,
+,,,,,licenzija_nuo,date,D,,,4,open,,Leidimo galiojimo pradžia,
+,,,,,licenzija_iki,date,D,,,4,open,,Leidimo galiojimo pabaiga,
+,,,,,irangos_pavadinimas,string,,,,4,open,,Įrangos pavadinimas,
+,,,,,irangos_galia_w,number,W,,,4,open,,"""Įrangos siųstuvo galia, W (Vatais)""",
+,,,,,spinduliavimo_klase,string,,,,4,open,,Spinduliavimo klasė,
+,,,,,suteikti_dazniai,string,,,,4,open,,Dažnis arba dažnių juosta,
