@@ -778,7 +778,7 @@ iš kelių dalių, ne trumpesnių nei 10 min., pvz., 10+10+10 min., 15+15 min., 
 ,,,,,,enum,,,'1',,,,Vyras,
 ,,,,,,,,,'2',,,,Moteris,
 ,,,,,,,,,'9',,,,Neatsakyta į klausimą,
-,,,,,amzius,string,,,,4,open,,"21. Amžius", "-9 - neatsakyta į klausimą. Atsakymai, kuriuose amžius yra mažesnis nei 18 m. arba įvestos neįmanomos vertės, turėtų būti vertinami atsargiai, nes yra nepatikimi."
+,,,,,amzius,string,,,,4,open,,"21. Amžius","-9 - neatsakyta į klausimą. Atsakymai, kuriuose amžius yra mažesnis nei 18 m. arba įvestos neįmanomos vertės, turėtų būti vertinami atsargiai, nes yra nepatikimi."
 ,,,,,gyvenamoji_vietove,string,,,,4,open,,"22. Gyvenamoji vietovė",
 ,,,,,,enum,,,'1',,,,Miestas,
 ,,,,,,,,,'2',,,,Kaimas,
