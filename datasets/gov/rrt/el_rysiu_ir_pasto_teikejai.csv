@@ -17,6 +17,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,imones_pavadinimas,string,,,,4,open,,Įmonės pavadinimas,
 ,,,,,jar_kodas,string,,,,4,open,,Juridinių asmenų registro kodas,
 ,,,,,el_pastas,string,,,,4,open,,Elektroninio pašto adresas,
-,,,,,internetine_svetaine,string,,,,4,open,,Internetinė svetainė,
+,,,,,internetine_svetaine,url,,,,4,open,,Internetinė svetainė,
 ,,,,,pirma_ataskaita_pateikta,date,D,,,4,open,,Pirmos ataskaitos pateikimo data,
 ,,,,,paskutine_ataskaita_pateikta,date,D,,,4,open,,Paskutinės ataskaitos pateikimo data,
