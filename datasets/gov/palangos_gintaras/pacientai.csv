@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paciento_id,ref,/datasets/gov/palangos_gintaras/pacientai/Ligonis[paciento_id],,,4,open,,Paciento identifikacinis numeris,
 ,,,,,atvykimo_data,date,D,,,4,open,,Paciento atvykimo data,
 ,,,,,isvykimo_data,date,D,,,4,open,,Paciento išvykimo data,
-,,,,,atvykimo_registracijos_data,date,S,,,4,open,,Paciento atvykimo registracijos data,
+,,,,,atvykimo_registracijos_data,datetime,S,,,4,open,,Paciento atvykimo registracijos data,
 ,,,,,tlk_kodas,string,,,,4,open,,Teritorinės ligonių kasos kodas,
 ,,,,,tlk_pav,string,,,,4,open,,Teritorinės ligonių kasos pavadinimas,
 ,,,,,lovadieniu_skaicius,integer,,,,4,open,,Lovadienių skaičius,
