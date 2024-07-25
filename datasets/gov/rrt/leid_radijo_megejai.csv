@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,RadijoMegejaiLeidimas,,,licenzijos_nr,,,4,,,Radijo mėgėjams išduoti leidimai,"""Lentelėje pateikiami Lietuvos Respublikos ryšių reguliavimo tarnybos išduoti leidimai radijo mėgėjams užsiimti radijo mėgėjų veikla ir leidimai naudoti radijo šaukinius. Pateikiami tik šiuo metu galiojantys leidimai. Jie yra išduodami 10 metų laikotarpiui, išskyrus laikinus leidimus radijo mėgėjų veiklai ir leidimus naudoti proginį radijo šaukinį. Išduodant papildomą leidimą naudoti radijo šaukinį, terminas negali būti ilgesnis, nei nurodytas leidime užsiimti radijo mėgėjų veikla. Duomenys atnaujinami kasdien."""
 ,,,,,licenzijos_nr,string,,,,4,open,,Leidimo numeris,
-,,,,,licenzijos_tipas,string,,licenzijos_tipas,,4,open,,Leidimo tipas,
+,,,,,licenzijos_tipas,string,,,,4,open,,Leidimo tipas,
 ,,,,,,enum,,,"""A klasės leidimas užsiimti radijo mėgėjų veikla""",,,,A klasės leidimas užsiimti radijo mėgėjų veikla,
 ,,,,,,,,,"""B klasės leidimas užsiimti radijo mėgėjų veikla""",,,,B klasės leidimas užsiimti radijo mėgėjų veikla,
 ,,,,,,,,,"""Leidimas naudoti radijo šaukinį""",,,,Leidimas naudoti radijo šaukinį,
