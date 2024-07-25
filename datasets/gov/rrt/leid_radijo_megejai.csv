@@ -14,5 +14,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimo_klase,string,,,,4,open,,CERT klasė,
 ,,,,,leidimo_tipas,string,,leidimo_tipas,,4,open,,Leidimo tipas (klubui arba asmeniui),
 ,,,,,,enum,,,"""Individualus""",,,,Individualus leidimas,
-,,,,,,enum,,,"""Klubinis""",,,,Klubinis leidimas,
+,,,,,,,,,"""Klubinis""",,,,Klubinis leidimas,
 ,,,,,leid_galiojimo_pabaiga,date,D,,,4,open,,Leidimo galiojimo pabaiga,
