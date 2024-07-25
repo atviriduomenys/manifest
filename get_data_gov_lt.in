@@ -656,4 +656,5 @@ datasets/gov/palangos_gintaras/maistas.csv
 datasets/gov/palangos_gintaras/pacientai.csv
 datasets/gov/palangos_gintaras/suteiktos_paslaugos.csv
 datasets/gov/rpl/laboratorijos.csv
+datasets/gov/rrt/leid_laivu_stotys.csv
 datasets/gov/rrt/leid_orlaiviu_stotys.csv
