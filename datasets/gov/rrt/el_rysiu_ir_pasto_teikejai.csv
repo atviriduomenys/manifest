@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rrt/,,,,,,,,,,,,Elektroninių ryšių bei pašto paslaugų teikėjai ir jų pateiktų periodinių ataskaitų statistika,
+,datasets/gov/rrt/el_rysiu_ir_pasto_teikejai,,,,,,,,,,,,Elektroninių ryšių bei pašto paslaugų teikėjai ir jų pateiktų periodinių ataskaitų statistika,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
