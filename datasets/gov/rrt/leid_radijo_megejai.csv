@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Leidimas naudoti proginį radijo šaukinį""",,,,Leidimas naudoti proginį radijo šaukinį,
 ,,,,,saukinys,string,,,,4,open,,Šaukinys,
 ,,,,,leidimo_klase,string,,,,4,open,,CERT klasė,
-,,,,,leidimo_tipas,string,,leidimo_tipas,,4,open,,Leidimo tipas (klubui arba asmeniui),
+,,,,,leidimo_tipas,string,,,,4,open,,Leidimo tipas (klubui arba asmeniui),
 ,,,,,,enum,,,"""Individualus""",,,,Individualus leidimas,
 ,,,,,,,,,"""Klubinis""",,,,Klubinis leidimas,
 ,,,,,leid_galiojimo_pabaiga,date,D,,,4,open,,Leidimo galiojimo pabaiga,
