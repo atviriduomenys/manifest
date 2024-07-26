@@ -51,4 +51,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,suma,number,,,,4,open,,Suma,
 ,,,,,skausmas_atvykus,string,,,,4,open,,Skausmo lygis atvykus,
 ,,,,,skausmas_isvykstant,string,,,,4,open,,Skausmo lygis išvykstant,
-,,,,,skaus_iraso_reg_data,date,S,,,4,open,,Skausmo lygio registravimo data,
+,,,,,skaus_iraso_reg_data,datetime,S,,,4,open,,Skausmo lygio registravimo data,
