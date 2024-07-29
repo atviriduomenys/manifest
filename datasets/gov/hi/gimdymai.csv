@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Gimimas,,,vda_id,,,4,,,Duomenys apie gimdymus Lietuvoje.,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros unikalus įrašo identifikatorius,
 ,,,,,gimdymo_data,datetime,L,,,4,open,,Gimdymo laiko žyma,
-,,,,,rajonas,string,,,,4,open,,Nėsčiosios (Motinos) gyvenamosios vietos rajonas,
+,,,,,rajonas,string,,,,4,open,,Nėščiosios (Motinos) gyvenamosios vietos rajonas,
 ,,,,,gimdymo_vieta,string,,,,4,open,,Gimdymo vieta,
 ,,,,,,enum,,,"""Stacionare""",,,,,
 ,,,,,,,,,"""Namuose""",,,,,
