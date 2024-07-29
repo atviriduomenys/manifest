@@ -6,10 +6,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Ligonis,,,vda_id,,,4,,,Pacientų sąrašas,Vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientų sąrašas. Duomenys pateikiami už 2016-2023 metus
 ,,,,,vda_id,string,,,,4,open,,Identifikacinis numeris,
-,,,,,paciento_id,string,,,,,open,,Paciento identifikacinis numeris,
-,,,,,gimimo_metai,date,Y,,,,open,,Paciento gimimo metai,
-,,,,,lytis,string,,,,,open,,Paciento lytis,
-,,,,,neigalumo_tipas,string,,,,,open,,Paciento neįgalumno tipas,
+,,,,,paciento_id,string,,,,4,open,,Paciento identifikacinis numeris,
+,,,,,gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
+,,,,,lytis,string,,,,4,open,,Paciento lytis,
+,,,,,neigalumo_tipas,string,,,,4,open,,Paciento neįgalumno tipas,
 ,,,,,,,,,,,,,,
 ,,,,PacientoRegistracija,,,vda_id,,,4,,,Pacientų registracijų sąrašas,Vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientų registracijų sąrašas. Duomenys pateikiami nuo 2010 metų ir iki dabar.
 ,,,,,vda_id,string,,,,4,open,,Identifikacinis numeris,
