@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/hi,,,,,,,,,,,,Higienos institutas,
+,datasets/gov/hi/gimdymai,,,,,,,,,,,,Duomenys apie gimdymus Lietuvoje.,"Duomenų rinkinyje pateikiama informacija apie gimdymus Lietuvoje 2021m. Rinkinio objektas - vienavaisis arba daugiavaisis gimdymas. Pateikiama informacija apie gimdymo datą, gimdyvės kilmės rajoną, gimdymo vietą, bendrą vaisių skaičių gimdymo metu bei gimdyvės RhD antigeną."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Gimimas,,,vda_id,,,4,,,Duomenys apie gimdymus Lietuvoje.,
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros unikalus įrašo identifikatorius,
+,,,,,gimdymo_data,datetime,L,,,4,open,,Gimdymo laiko žyma,
+,,,,,rajonas,string,,,,4,open,,Nėsčiosios (Motinos) gyvenamosios vietos rajonas,
+,,,,,gimdymo_vieta,string,,,,4,open,,Gimdymo vieta,
+,,,,,,enum,,,"""Stacionare""",,,,,
+,,,,,,,,,"""Namuose""",,,,,
+,,,,,,,,,"""GMP""",,,,,
+,,,,,,,,,"""Kitur""",,,,,
+,,,,,viso_vaisiu,number,U,,,4,open,,Vaisių skaičius gimdyme iš viso,
+,,,,,ar_mot_rhd_teig,boolean,,,,4,open,,"Požymis, ar nėščiosios (motinos) RhD antigenas buvo teigiamas",
