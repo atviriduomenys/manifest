@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,diena,date,D,,,4,open,,Maitinimo data,
 ,,,,,porciju_kiekis,integer,,,,4,open,,Porcijų kiekis,
 ,,,,,valgymas,string,,,,4,open,,Valgymo pavadinimas,
-,,,,,,enum,,,Pusryčiai,,,,Pusryčiai,
+,,,,,,enum,,,"Pusryčiai",,,,Pusryčiai,
 ,,,,,,,,,"Priešpiečiai",,,,Priešpiečiai,
 ,,,,,,,,,"Pietūs",,,,Pietūs,
 ,,,,,,,,,"Pavakariai",,,,Pavakariai,
