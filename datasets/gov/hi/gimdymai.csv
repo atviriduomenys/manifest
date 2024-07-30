@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/hi,,,,,,,,,,,,Higienos institutas,
-,datasets/gov/hi/gimdymai,,,,,,,,,,,,Duomenys apie gimdymus Lietuvoje.,"Duomenų rinkinyje pateikiama informacija apie gimdymus Lietuvoje 2021m. Rinkinio objektas - vienavaisis arba daugiavaisis gimdymas. Pateikiama informacija apie gimdymo datą, gimdyvės kilmės rajoną, gimdymo vietą, bendrą vaisių skaičių gimdymo metu bei gimdyvės RhD antigeną."
+,datasets/gov/hi/gimdymai,,,,,,,,,,,,Duomenys apie gimdymus Lietuvoje.,"Duomenų rinkinyje pateikiama informacija apie gimdymus Lietuvoje nuo 2021m. Rinkinio objektas - vienavaisis arba daugiavaisis gimdymas. Duomenys surinkti iš statistinių formų Nėščiosios ir negyvagimio kortelė Nr.2016-10-07_Nr_V-1149_forma+010-2-1a ir Nėščiosios ir negyvagimio kortelė Nr.2016-10-07_Nr_V-1149_forma+010-1-1a. Pateikiama informacija apie gimdymo datą, gimdyvės kilmės rajoną, gimdymo vietą, bendrą vaisių skaičių gimdymo metu bei gimdyvės RhD antigeną. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
