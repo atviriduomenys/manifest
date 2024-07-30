@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/rtl/maitinimo_paraiskos,,,,,,,,,,,,Regioninės Telšių ligoninės maitinimo paraiškos,
 ,,,,,,,,,,,,,,
-,,,,Maitinimas,,,vda_id,,,4,,,Regioninės Telšių ligoninės maitinimo paraiškos,
+,,,,Maitinimas,,,vda_id,,,4,,,Regioninės Telšių ligoninės maitinimo paraiškos,"Šiame rinkinyje pateikiamas regioninės Telšių ligoninės maitinimo paraiškos: dienos patiekalų sąrašas, dietos, dienos maistinė vertė, valgančiųjų kiekis. Duomenys pateikiami nuo 2019 metų pabaigos iki dabar."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,diena,date,D,,,4,open,,Maitinimo data,
 ,,,,,porciju_kiekis,integer,,,,4,open,,Porcijų kiekis,
