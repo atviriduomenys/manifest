@@ -1,13 +1,14 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eso,,,,,,,,,,,,Energijos skirstymo operatorius,
 ,datasets/gov/eso/jur_asm_elektros_suvartojimas,,,,,,,,,,,,Juridinių asmenų elektros energijos suvartojimo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,JurAsmElektraSuvartojimas,,,iraso_id,,,4,,,Juridinių asmenų elektros energijos suvartojimo duomenys,"""Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) juridinių asmenų elektros suvartojimo duomenys. Adresai pateikiami 10 kilometrų dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Elektros suvartojimo duomenys pateikiami mėnesio tikslumu. Realus suvartotas elektros kiekis gali skirtis nuo pateikiamų duomenų, tokiu atveju, kai vartotojas neteisingai deklaruoja suvartotą elektros kiekį arba turi įsirengęs saulės elektrinę. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."""
+,,,,JurAsmElektraSuvartojimas,,,iraso_id,,,4,,,Juridinių asmenų elektros energijos suvartojimo duomenys,"Lentelėje pateikti Energijos skirstymo operatoriaus (ESO) juridinių asmenų elektros suvartojimo duomenys. Adresai pateikiami 10 kilometrų dydžio stačiakampėmis gardelėmis Lietuvos koordinačių sistemoje (LKS-94). Elektros suvartojimo duomenys pateikiami mėnesio tikslumu. Realus suvartotas elektros kiekis gali skirtis nuo pateikiamų duomenų, tokiu atveju, kai vartotojas neteisingai deklaruoja suvartotą elektros kiekį arba turi įsirengęs saulės elektrinę. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,kliento_id,string,,,,4,open,,Kliento identifikatorius,
 ,,,,,objekto_id,string,,,,4,open,,Objekto identifikatorius,
-,,,,,objekto_savivaldybe,string,,,,4,open,,"""Savivaldybė, kurioje yra objektas""",
+,,,,,objekto_savivaldybe,string,,,,4,open,,"Savivaldybė, kurioje yra objektas",
 ,,,,,obj_adreso_gardele,ref,/datasets/gov/lsd/grid/Grid10KmSq,,,4,open,,Objekto adreso stačiakampė 10km gardelė,
 ,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
 ,,,,,evrk_2_red,date,,,,4,open,,Ekonominės veiklos rūšies klasifikatorius 2 red.,
@@ -24,8 +25,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,el_pasto_adresas,string,,,,4,open,,Elektroninio pašto adresas,
 ,,,,,telefono_nr,string,,,,4,open,,Telefono numeris,
 ,,,,,obj_itampos_lygis,string,,,,4,open,,Objekto įtampos lygis,
-,,,,,obj_itampa_kv,number,kV,,,4,open,,"""Objekto įtampa, kilovoltais""",
-,,,,,leistina_galia_kw,number,kW,,,4,open,,"""Leistina galia, kilovatvalandėmis""",
+,,,,,obj_itampa_kv,number,kV,,,4,open,,"Objekto įtampa, kilovoltais",
+,,,,,leistina_galia_kw,number,kW,,,4,open,,"Leistina galia, kilovatvalandėmis",
 ,,,,,leistina_gen_galia_kw,number,kW,,,4,open,,Leistina generuoti galia,
 ,,,,,instal_gen_galia_kw,number,kW,,,4,open,,Instaliuota generuoti galia,
 ,,,,,objekto_gamintojo_tipas,string,,,,4,open,,Objekto gamintojo tipas,
