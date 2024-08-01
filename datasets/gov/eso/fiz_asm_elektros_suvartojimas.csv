@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,telefono_nr,string,,,,4,open,,Telefono numeris,
 ,,,,,obj_itampos_lygis,string,,,,4,open,,Objekto įtampos lygis,
 ,,,,,obj_itampa_kv,number,kV,,,4,open,,"Objekto įtampa, kilovoltais",
-,,,,,leistina_galia_kw,number,kW,,,4,open,,"""Leistina galia, kilovatvalandėmis""",
+,,,,,leistina_galia_kw,number,kW,,,4,open,,"Leistina galia, kilovatvalandėmis",
 ,,,,,leistina_generuoti_galia,number,kW,,,4,open,,Leistina generuoti galia,
 ,,,,,instaliuota_generuoti_galia,number,kW,,,4,open,,Instaliuota generuoti galia,
 ,,,,,objekto_gamintojo_tipas,string,,,,4,open,,Objekto gamintojo tipas,
