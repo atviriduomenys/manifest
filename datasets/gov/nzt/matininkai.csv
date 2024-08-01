@@ -5,11 +5,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,MatininkoPazymejimas,,,nr,,,4,,,"Matininkai, geodezininkai ir žemėtvarkos planavimo dokumentų rengėjai",
-,,,,,vardas_pavarde,string,,,,2,public,,"Matininko vardas, pavardė",Pateikta tik galiojantiems pažymėjimams
+,,,,,vardas_pavarde,string,,,,2,open,,"Matininko vardas, pavardė",Pateikta tik galiojantiems pažymėjimams
 ,,,,,,comment,type,,"update(property: ""vardas_pavarde"", type: ""text"")	",4,open,spinta:204,,
-,,,,,darbo_el_pastas,string,,,,2,public,,Matininko darbo el. paštas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
+,,,,,darbo_el_pastas,string,,,,2,open,,Matininko darbo el. paštas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
 ,,,,,,comment,type,,"update(property: ""darbo_el_pastas"", type: ""text"")	",4,open,spinta:204,,
-,,,,,biuro_adresas,string,,,,2,public,,Matininko biuro adresas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
+,,,,,biuro_adresas,string,,,,2,open,,Matininko biuro adresas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
 ,,,,,,comment,type,,"update(property: ""biuro_adresas"", type: ""text"")	",4,open,spinta:204,,
 ,,,,,darbo_telefonas,string,,,,2,open,,Matininko dabo telefonas,"Pateikta tik galiojantiems pažymėjimams, negaliojantiems vertė cenzūruojama"
 ,,,,,,comment,property,,"update(property: ""darbo_telefonas[]"", type: ""array"", source: ""darbo_telefonas"")",4,,spinta:161,,
