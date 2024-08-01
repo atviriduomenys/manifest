@@ -1,5 +1,4 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/eso,,,,,,,,,,,,Energijos skirstymo operatorius,
 ,datasets/gov/eso/jur_asm_elektros_suvartojimas,,,,,,,,,,,,Juridinių asmenų elektros energijos suvartojimo duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
