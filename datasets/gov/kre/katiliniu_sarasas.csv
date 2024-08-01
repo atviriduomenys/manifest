@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kre,,,,,,,,,,,,Klaipėdos rajono energija,
+,datasets/gov/kre/katiliniu_sarasas,,,,,,,,,,,,Klaipėdos rajono energijos katilinių sąrašas,"Katilinių sąrašo registras skirtas kaupti duomenis apie Klaipėdos rajone esančias ir UAB 'Klaipėdos rajono energija' prižiūrimas katilines."
+,,,,,,,,,,,,,,
+,,,,Sarasas,,,eiles_nr,,,4,,,Klaipėdos rajono energijos katilinių sąrašas,"Katilinių sąrašo registras skirtas kaupti duomenis apie Klaipėdos rajone esančias ir UAB 'Klaipėdos rajono energija' prižiūrimas katilines."
+,,,,,eiles_nr,string,,,,4,open,,Eilės numeris,
+,,,,,istaigos_pavadinimas,string,,,,3,open,,"Savivaldybei priklausančios įstaigos, kurios teritorijoje yra katilinė, pavadinimas",
+,,,,,katilines_adresas,string,,,,3,open,,"Tikslus objekto, kuriame yra katilinė, adresas",
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė,
+,,,,,aptarnaujama_nuo,date,Y,,,4,open,,Įstaiga aptarnaujama nuo,
+,,,,,aptarnaujama_iki,date,Y,,,4,open,,Įstaiga aptarnaujama iki,
