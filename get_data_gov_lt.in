@@ -107,7 +107,7 @@ datasets/gov/rc/vsr/sutarciu_pabaigos.csv
 datasets/gov/rc/vsr/sutartys.csv
 datasets/gov/rc/vsr/sutartys_pagal_amziu.csv
 datasets/gov/rc/vsr/turto_padalijimas.csv
-datasets/gov/rc/jadis/ja_akc_dal_nar_paj.csv
+datasets/gov/lsd/rc/ja_akc_dal_nar_paj.csv
 datasets/gov/rc/jadis/dalyviai.csv
 datasets/gov/rc/jadis/dalyviu_sarasas.csv
 datasets/gov/rc/jadis/salys_teisines_formos.csv
