@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rc/jadis/ja_akc_dal_nar_paj,,,,,,,,,,,,"Juridinių asmenų akcininkų, dalininkų, narių ir pajininkų skaičiai pagal tipą",
+,datasets/gov/lsd/rc/ja_akc_dal_nar_paj,,,,,,,,,,,,"Juridinių asmenų akcininkų, dalininkų, narių ir pajininkų skaičiai pagal tipą",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
