@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimas_galioja_iki,date,D,,,4,open,,Leidimo galiojimo pradžia,
 ,,,,,centrinis_siustuvo_daznis_mhz,number,mHz,,,4,open,,Leidimo galiojimo pabaiga,
 ,,,,,kanalo_plotis_mhz,number,mHz,,,4,open,,"Centrinis siųstuvo dažnis, Mhz",
-,,,,,kanalo_nr,string,,,,4,open,,"""Kanalo plotis, Mhz""",
+,,,,,kanalo_nr,string,,,,4,open,,"Kanalo plotis, Mhz",
 ,,,,,antenos_aukstis_m,number,m,,,4,open,,"Antenos aukštis virš žemės lygio, m",
 ,,,,,ilguma_wgs,number,,,,4,open,,Antenos ilgumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,platuma_wgs,number,,,,4,open,,Antenos platumos koordinatė WGS84 koordinačių sistemoje,
