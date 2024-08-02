@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikatorius,
 ,,,,,vaiko_ak,string,,,,4,open,,Vaiko asmens kodas,
 ,,,,,vaiko_ak_validacija,string,,,,4,open,,Vaiko asmens kodo validacija,
-,,,,,vaiko_gim_metai_ak,date,Y,,,4,open,,Vaiko gimimo metai (gauti iš amens kodo),
+,,,,,vaiko_gim_metai_ak,date,Y,,,4,open,,Vaiko gimimo metai (gauti iš asmens kodo),
 ,,,,,vaiko_lytis_ak,string,,,,4,open,,Vaiko lytis (gauta iš asmens kodo),
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
