@@ -170,6 +170,7 @@ datasets/gov/rc/ais/parduotas_turtas.csv
 datasets/gov/rc/ais/unikalus_isieskotojai.csv
 datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
+datasets/gov/regitra/ktpr.csv
 datasets/gov/pppkc/omdrf.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
