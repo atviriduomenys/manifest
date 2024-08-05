@@ -107,7 +107,7 @@ datasets/gov/rc/vsr/sutarciu_pabaigos.csv
 datasets/gov/rc/vsr/sutartys.csv
 datasets/gov/rc/vsr/sutartys_pagal_amziu.csv
 datasets/gov/rc/vsr/turto_padalijimas.csv
-datasets/gov/rc/jadis/ja_akc_dal_nar_paj.csv
+datasets/gov/lsd/rc/ja_akc_dal_nar_paj.csv
 datasets/gov/rc/jadis/dalyviai.csv
 datasets/gov/rc/jadis/dalyviu_sarasas.csv
 datasets/gov/rc/jadis/salys_teisines_formos.csv
@@ -170,6 +170,7 @@ datasets/gov/rc/ais/parduotas_turtas.csv
 datasets/gov/rc/ais/unikalus_isieskotojai.csv
 datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
+datasets/gov/regitra/ktpr.csv
 datasets/gov/pppkc/omdrf.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
@@ -648,6 +649,7 @@ datasets/gov/panevezio_m_sav/balsavimai.csv
 datasets/gov/muitine/muitines_prievolininkai.csv
 datasets/gov/ktizm/pauksciai_ir_siksnosparniai.csv
 datasets/gov/kauno_m_sav/kasimai.csv
+datasets/gov/kauno_m_sav/eps.csv
 datasets/gov/uzt/ldv.csv
 datasets/gov/lki/publicistikos_tekstynas.csv
 datasets/gov/nsa/svis/mokyklu_kitos_patalpos.csv
@@ -670,3 +672,4 @@ datasets/gov/kre/katiliniu_sarasas.csv
 datasets/gov/eso/jur_asm_elektros_suvartojimas.csv
 datasets/gov/eso/fiz_asm_elektros_suvartojimas.csv
 datasets/gov/zoo/gyvunai.csv
+datasets/gov/kauno_m_sav/priemimo_i_mokyklas_prasymai.csv
