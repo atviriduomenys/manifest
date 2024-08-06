@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lnb,,,,,,,,,,,,Lietuvos nacionalinė Martyno Mažvydo biblioteka,
+,datasets/gov/lnb/archyviniai_biblioteku_rodikliai,,,,,,,,,,,,Archyviniai bibliotekų statistikos rodikliai,"Rinkinyje pateikiami pagrindiniai šalies bibliotekų veiklos rezultatai ir rodikliai nuo 2007 iki 2023 metų pagal savivaldybę, rajoną, biblioteką."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,BibliotekosRodiklis,,,vda_id,,,4,,,Archyviniai bibliotekų statistikos rodikliai,"Rinkinyje pateikiami pagrindiniai šalies bibliotekų veiklos rezultatai ir rodikliai nuo 2007 iki 2023 metų pagal savivaldybę, rajoną, biblioteką."
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,metai,integer,,,,4,open,,Rodiklio statistikos metai,
+,,,,,biblioteka,string,,,,4,open,,Bibliotekos pavadinimas,
+,,,,,savivaldybe,string,,,,2,open,,Teritorijos pavadinimas,
+,,,,,apskritis,string,,,,2,open,,Apskrities pavadinimas,
+,,,,,rodiklio_grupe,string,,,,4,open,,"Rodiklio grupė, jungianti kelis rodiklius",
+,,,,,rodiklio_kodas,string,,,,4,open,,Rodiklio sutrumpintas kodas,
+,,,,,rodiklio_aprasymas,string,,,,4,open,,Rodiklio aprašymas,
+,,,,,reiksme,integer,,,,4,open,,Rodiklio reikšmė,
