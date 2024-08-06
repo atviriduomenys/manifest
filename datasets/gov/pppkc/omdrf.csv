@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Dalyvis,,,vda_id,,,4,,,Pinigų plovimo prevencijos apmokymų dalyvių duomenys,"Pinigų plovimo prevencijos kompetencijų centro (PPPKC) prižiūrima Organizuojamų mokymų dalyvių registracijos forma (OMDRF) kaupia į įstaigos vykdymus mokymus užsiregistravusiųjų dalyvių duomenis. Duomenys šiuo metu kaupiami nuo 2022 m.ir numatyti būti atnaujinami kasdien. Duomenų rinkinys apima dalyvio pseudonimizuotus vardą, pavardę tiek maišos algoritmu, tiek jų raides pavertus žvaigždutėmis, pseudonimizuotą el. pašto adresą, atvirą el. pašto teikėją, organizacijos pavadinimą bei rūšį ir mokymų temą. "
+,,,,Dalyvis,,,vda_id,,,4,,,Pinigų plovimo prevencijos apmokymų dalyvių duomenys,"Pinigų plovimo prevencijos kompetencijų centro (PPPKC) administruojamoje Organizuojamų mokymų dalyvių registracijos formoje (OMDRF) kaupiami į įstaigos vykdomus mokymus užsiregistravusiųjų dalyvių duomenys. Duomenys kaupiami nuo 2022 m. ir yra atnaujinami kas 3 mėnesius. Duomenų rinkinį sudaro dalyvio pseudonimizuotas, tiek maišos algoritmu, tiek raides pavertus žvaigždutėmis, vardas ir pavardė, pseudonimizuotas el. pašto adresas, atviras el. pašto teikėjas, organizacijos pavadinimas, rūšis ir mokymų tema.  "
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,vardas_pavarde,string,,,,4,open,,"Dalyvio vardas ir pavardė, pseudonimizuoti maišos algoritmu",
 ,,,,,vardo_pavardes_simboliai,string,,,,4,open,,"Dalyvio vardas ir pavardė, pseudonimizuoti pavertus raides spec. simboliu",
