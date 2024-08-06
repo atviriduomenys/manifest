@@ -1,4 +1,4 @@
-﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lrpk/valstybes_apdovanojimai,,,,,,,,,,,,Valstybės apdovanojimai,"Valstybės apdovanojimas – aukščiausio valstybės pareigūno ar kito turinčio teisę apdovanoti pareigūno skiriamas ordinas, medalis ir kitoks pasižymėjimo ženklas, skiriamas valstybei nusipelniusiam asmeniui."
 ,,,,,,,,,,,,,,
 ,,,,Apdovanojimas,,,id,,,4,,,Valstybės apdovanojimai,"Valstybės apdovanojimas – aukščiausio valstybės pareigūno ar kito turinčio teisę apdovanoti pareigūno skiriamas ordinas, medalis ir kitoks pasižymėjimo ženklas, skiriamas valstybei nusipelniusiam asmeniui."
