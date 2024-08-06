@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lrpk/valstybes_apdovanojimai,,,,,,,,,,,,Valstybės apdovanojimai,"Valstybės apdovanojimas – aukščiausio valstybės pareigūno ar kito turinčio teisę apdovanoti pareigūno skiriamas ordinas, medalis ir kitoks pasižymėjimo ženklas, skiriamas valstybei nusipelniusiam asmeniui."
+,,,,,,,,,,,,,,
+,,,,Apdovanojimas,,,id,,,4,,,Valstybės apdovanojimai,"Valstybės apdovanojimas – aukščiausio valstybės pareigūno ar kito turinčio teisę apdovanoti pareigūno skiriamas ordinas, medalis ir kitoks pasižymėjimo ženklas, skiriamas valstybei nusipelniusiam asmeniui."
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,asmuo,string,,,,4,open,,"Apdovanojimo gavėjo vardas, pavardė",
+,,,,,pilietybe,string,,,,4,open,,Apdovanotojo pilietybė,
+,,,,,apdovanojimas,string,,,,4,open,,Apdovanojimo pavadinimas,
+,,,,,laipsnis,string,,,,4,open,,Apdovanojimo laipsnis,
+,,,,,dekreto_numeris,string,,,,4,open,,Dekreto numeris,
+,,,,,dekreto_data,date,D,,,4,open,,Dekreto data,
+,,,,,apdovanojimo_numeris,string,,,,4,open,,Apdovanojimo numeris,
+,,,,,po_mirties,boolean,,,,4,open,,"Požymis, ar apdovanojimas gautas po mirties",
+,,,,,aktyvus,boolean,,,,4,open,,"Požymis, ar apdovanojimas galiojantis",
+,,,,,pastabos,string,,,,4,open,,"Pastabos, jei apdovanojimas atimtas: atėmimo dekreto numeris ir data",
+,,,,,prezidentas,string,,,,4,open,,Prezidentas dekreto datai,
