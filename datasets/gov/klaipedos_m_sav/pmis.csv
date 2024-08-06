@@ -29,7 +29,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,priimti_prasymai,integer,,,,4,open,,Priimtų prašymų skaičius,
 ,,,,,atmesti_prasymai,integer,,,,4,open,,Atmestų prašymų skaičius,
 ,,,,,nepriimti_prasymai,integer,,,,4,open,,Nepriimtų prašymų skaičius,
-,,,,,skaiciai_laikotarpiui,integer,,,,4,open,,"Laikotarpis, kuriam pateikti skaičiai",
+,,,,,skaiciai_laikotarpiui,string,,,,4,open,,"Laikotarpis, kuriam pateikti skaičiai",
 ,,,,,,enum,,,,,,,,
 ,,,,,,,,,"""po_priemimo""",,,,Skaičiai po priėmimo,
 ,,,,,,,,,"""prieš_priemimą""",,,,Skaičiai prieš priėmimą,
