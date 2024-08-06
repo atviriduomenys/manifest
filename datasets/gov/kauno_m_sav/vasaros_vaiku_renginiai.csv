@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vaika_registravo_ask,string,,,,4,open,,Užkoduotas vaiką registravusio asmens kodas,
 ,,,,,,,,,,,,,,
 ,,,,Renginys,,,renginio_id,,,4,,,Renginių sąrašas,Šiame rinkinyje pateiktas Kauno miesto savivaldybės vaikų vasaros renginių sąrašas.
-,,,,,renginio_id,ref,/datasets/gov/kauno_m_sav/renginiai/vasaros_vaiku_renginiai/Dalyvis[renginio_id],,,,open,,Renginio identifikatorius,
+,,,,,renginio_id,ref,/datasets/gov/kauno_m_sav/vasaros_vaiku_renginiai/Dalyvis[renginio_id],,,,open,,Renginio identifikatorius,
 ,,,,,renginio_pav,string,,,,4,open,,Užsiėmimo pavadinimas,
 ,,,,,renginio_aprasymas_lt,string,,,,2,open,,Užsiėmimo aprašymas,
 ,,,,,,comment,type,,"update(property: ""renginio_aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
