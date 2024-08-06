@@ -1,9 +1,9 @@
 ﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/klaipedos_m_sav/pmis,,,,,,,,,,,,Prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika,
+,datasets/gov/klaipedos_m_sav/pmis,,,,,,,,,,,,"Prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,PriemimuStatistika,,,vda_id,,,4,,,Prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika,Lentelėje yra pateikta prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika nuo 2019 metų iš informacinės registravimosi į Klaipėdos miesto savivaldybės mokyklas sistemos (PM IS). Duomenys atnaujinami kas 6 mėnesius. Duomenų rinkinys apima priėmimo identifikatorių, mokyklos identifikatorių, pavadinimą, tipą ir adresą. Į prototipą taip pat patenka klasės numeris, identifikatorius, paskirtis bei statistikos etapas ir įrašo sukūrimo data su laiku. Statistiniai duomenys pagal laikotarpį yra suskaičiuoti iš šių reiškinių: laisvos vietos, pateikti prašymai, tikrinami prašymai, priimti prašymai, atmesti prašymai bei nepriimti prašymai. 
+,,,,PriemimuStatistika,,,vda_id,,,4,,,"Prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika,Lentelėje yra pateikta prašymų, priimti į Klaipėdos miesto savivaldybės mokyklas, statistika nuo 2019 metų iš informacinės registravimosi į Klaipėdos miesto savivaldybės mokyklas sistemos (PM IS). Duomenys atnaujinami kas 6 mėnesius. Duomenų rinkinys apima priėmimo identifikatorių, mokyklos identifikatorių, pavadinimą, tipą ir adresą. Į prototipą taip pat patenka klasės numeris, identifikatorius, paskirtis bei statistikos etapas ir įrašo sukūrimo data su laiku. Statistiniai duomenys pagal laikotarpį yra suskaičiuoti iš šių reiškinių: laisvos vietos, pateikti prašymai, tikrinami prašymai, priimti prašymai, atmesti prašymai bei nepriimti prašymai."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,priemimo_id,string,,,,4,open,,Priėmimo identifikatorius,
 ,,,,,mokyklos_id,string,,,,4,open,,Mokyklos identifikatorius,
@@ -29,7 +29,7 @@
 ,,,,,priimti_prasymai,integer,,,,4,open,,Priimtų prašymų skaičius,
 ,,,,,atmesti_prasymai,integer,,,,4,open,,Atmestų prašymų skaičius,
 ,,,,,nepriimti_prasymai,integer,,,,4,open,,Nepriimtų prašymų skaičius,
-,,,,,skaiciai_laikotarpiui,integer,,,,4,open,,Laikotarpis, kuriam pateikti skaičiai,
+,,,,,skaiciai_laikotarpiui,integer,,,,4,open,,"Laikotarpis, kuriam pateikti skaičiai",
 ,,,,,,enum,,,,,,,,
 ,,,,,,,,,"""po_priemimo""",,,,Skaičiai po priėmimo,
 ,,,,,,,,,"""prieš_priemimą""",,,,Skaičiai prieš priėmimą,
