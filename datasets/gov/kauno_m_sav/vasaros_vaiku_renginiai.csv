@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Dalyvis,,,vda_prime_key,,,4,,,Dalyvių sąrašas,Šiame rinkinyje pateiktas Kauno miesto savivaldybės vaikų vasaros renginių dalyvių sąrašas.
-,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,Dalyvis,,,vda_primary_key,,,4,,,Dalyvių sąrašas,Šiame rinkinyje pateiktas Kauno miesto savivaldybės vaikų vasaros renginių dalyvių sąrašas.
+,,,,,vda_primary_key,string,,,,4,open,,Identifikatorius,
 ,,,,,renginio_id,string,,,,4,open,,Renginio identifikatorius,
 ,,,,,renginio_pav,string,,,,4,open,,Užsiėmimo pavadinimas,
 ,,,,,vaiko_ask,string,,,,4,open,,Užkoduotas vaiko asmens kodas,
