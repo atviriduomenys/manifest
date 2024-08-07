@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Gyvunas,,,vda_id,,,4,,,Kauno zoologijos sodo gyvūnų kolekcijos sąrašas,"Rinkinyje pateikiami duomenys apie Kauno zoologijos sode laikomus gyvūnus einamiesiems metams. Rinkinio objektas - individas arba gyvūnų grupė. Nurodoma informacija apie gyvūną (gyvūnų grupę): lotyniškas ir angliškas pavadinimas, lytis, gimimo data, aplinkybės ir vieta, esamas savininkas, aptvaras, kuriame gyvūnas laikomas bei taksonominė gyvūno klasifikacija."
+,,,,Gyvunas,,,vda_id,,,4,,,Lietuvos zoologijos sodo gyvūnų kolekcijos sąrašas,"Rinkinyje pateikiami duomenys apie Lietuvos zoologijos sode laikomus gyvūnus einamiesiems metams. Rinkinio objektas - individas arba gyvūnų grupė. Nurodoma informacija apie gyvūną (gyvūnų grupę): lotyniškas ir angliškas pavadinimas, lytis, gimimo data, aplinkybės ir vieta, esamas savininkas, aptvaras, kuriame gyvūnas laikomas bei taksonominė gyvūno klasifikacija."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros unikalus įrašo identifikatorius,
 ,,,,,gyv_tipas,string,,,,4,open,,"Įrašo apie gyvūną tipas. Tai yra, ar aprašomas individualus gyvūnas ar tos pačios rūšies gyvūnų grupė.",
 ,,,,,,enum,,,"""Individas""",,,,,
@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""pavadinimas_lot@la"", type: ""text"")",4,open,spinta:204,,
 ,,,,,pavadinimas_en,string,,,,4,open,,Angliškas gyvūno pavadinimas,
 ,,,,,,comment,type,,"update(property: ""pavadinimas_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,lytis,string,,,,4,open,,"Gyvūno lytis. Jeigu įrašas apie gyvūnų grupę, tuomet stulpelyje nurodytas lyčių skaičius pagal schemą: vyriška.moteriška.neapibrėžta.",
+,,,,,lytis,string,,,,4,open,,"Gyvūno lytis. Jeigu įrašas apie gyvūnų grupę, tuomet stulpelyje nurodytas lyčių skaičius pagal schemą: patinas.patelė.nenustatyta.",
 ,,,,,,enum,,,"""Patelė""",,,,,
 ,,,,,,,,,"""Patinas""",,,,,
 ,,,,,,,,,"""Nenustatyta""",,,,,
@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Gimimas gamtoje""",,,,,
 ,,,,,gim_vieta,string,,,,4,open,,Gimimo vieta,
 ,,,,,savininkas,string,,,,4,open,,Paskutinis savininkas,
-,,,,,aptvaras,string,,,,4,open,,"Aptvaras, kuriame laikomas gyvūnas Kauno zoologijos sode.",
+,,,,,aptvaras,string,,,,4,open,,"Aptvaras, kuriame laikomas gyvūnas Lietuvos zoologijos sode.",
 ,,,,,laikymas,string,,,,4,open,,"Požymis, ar gyvūnas laikomas lankytojams matomuose aptvaruose, ar karantine. Karantine gyvūnai gali būti laikomi ligų prevencijai, aklimatizacijai arba dėl kitų priežasčių siekiant izoliuoti gyvūną.",
 ,,,,,,enum,,,"""Viešai prieinamas""",,,,,
 ,,,,,,,,,"""Laikomas karantine""",,,,,
