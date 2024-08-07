@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""pavadinimas_lot@la"", type: ""text"")",4,open,spinta:204,,
 ,,,,,pavadinimas_en,string,,,,4,open,,Angliškas gyvūno pavadinimas,
 ,,,,,,comment,type,,"update(property: ""pavadinimas_en@en"", type: ""text"")",4,open,spinta:204,,
-,,,,,lytis,string,,,,4,open,,"Gyvūno lytis. Jeigu įrašas apie gyvūnų grupę, tuomet stulpelyje nurodytas lyčių skaičius pagal schemą: patinas.patelė.neapibrėžta.",
+,,,,,lytis,string,,,,4,open,,"Gyvūno lytis. Jeigu įrašas apie gyvūnų grupę, tuomet stulpelyje nurodytas lyčių skaičius pagal schemą: patinas.patelė.nenustatyta.",
 ,,,,,,enum,,,"""Patelė""",,,,,
 ,,,,,,,,,"""Patinas""",,,,,
 ,,,,,,,,,"""Nenustatyta""",,,,,
