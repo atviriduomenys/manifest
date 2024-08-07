@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Gyvunas,,,vda_id,,,4,,,Kauno zoologijos sodo gyvūnų kolekcijos sąrašas,"Rinkinyje pateikiami duomenys apie Kauno zoologijos sode laikomus gyvūnus einamiesiems metams. Rinkinio objektas - individas arba gyvūnų grupė. Nurodoma informacija apie gyvūną (gyvūnų grupę): lotyniškas ir angliškas pavadinimas, lytis, gimimo data, aplinkybės ir vieta, esamas savininkas, aptvaras, kuriame gyvūnas laikomas bei taksonominė gyvūno klasifikacija."
+,,,,Gyvunas,,,vda_id,,,4,,,Lietuvos zoologijos sodo gyvūnų kolekcijos sąrašas,"Rinkinyje pateikiami duomenys apie Lietuvos zoologijos sode laikomus gyvūnus einamiesiems metams. Rinkinio objektas - individas arba gyvūnų grupė. Nurodoma informacija apie gyvūną (gyvūnų grupę): lotyniškas ir angliškas pavadinimas, lytis, gimimo data, aplinkybės ir vieta, esamas savininkas, aptvaras, kuriame gyvūnas laikomas bei taksonominė gyvūno klasifikacija."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros unikalus įrašo identifikatorius,
 ,,,,,gyv_tipas,string,,,,4,open,,"Įrašo apie gyvūną tipas. Tai yra, ar aprašomas individualus gyvūnas ar tos pačios rūšies gyvūnų grupė.",
 ,,,,,,enum,,,"""Individas""",,,,,
