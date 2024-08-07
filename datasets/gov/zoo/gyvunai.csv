@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Gimimas gamtoje""",,,,,
 ,,,,,gim_vieta,string,,,,4,open,,Gimimo vieta,
 ,,,,,savininkas,string,,,,4,open,,Paskutinis savininkas,
-,,,,,aptvaras,string,,,,4,open,,"Aptvaras, kuriame laikomas gyvūnas Kauno zoologijos sode.",
+,,,,,aptvaras,string,,,,4,open,,"Aptvaras, kuriame laikomas gyvūnas Lietuvos zoologijos sode.",
 ,,,,,laikymas,string,,,,4,open,,"Požymis, ar gyvūnas laikomas lankytojams matomuose aptvaruose, ar karantine. Karantine gyvūnai gali būti laikomi ligų prevencijai, aklimatizacijai arba dėl kitų priežasčių siekiant izoliuoti gyvūną.",
 ,,,,,,enum,,,"""Viešai prieinamas""",,,,,
 ,,,,,,,,,"""Laikomas karantine""",,,,,
