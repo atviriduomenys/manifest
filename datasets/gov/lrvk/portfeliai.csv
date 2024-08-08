@@ -13,7 +13,7 @@ Pasiteiravimui kreiptis į Valstybės duomenų valdysenos komandą: atverimas@st
 ,,,,,tipas,string,,,,4,open,,Projekto tipas,
 ,,,,,portfelis,string,,,,4,open,,"Portfelis, prie kurio priskirtas projektas",
 ,,,,,statusas,string,,,,4,open,,Projekto statusas paskutinio duomenų atnaujinimo metu,
-,,,,,,,enum,,"""vykdymas ir stebėsena""",,,,,
+,,,,,,enum,,,"""vykdymas ir stebėsena""",,,,,
 ,,,,,,,,,"""pabaigta""",,,,,
 ,,,,,,,,,"""naudos vertinimas""",,,,,
 ,,,,,,,,,"""užbaigimas""",,,,,
