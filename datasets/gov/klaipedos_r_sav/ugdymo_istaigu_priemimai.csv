@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/klaipedos_r_sav/ugdymo_istaigu_priemimai,,,,,,,,,,,,Priėmimai į Klaipėdos rajono ikimokyklinio ir mokyklinio ugdymo įstaigas,Informacija apie vaikų priėmimo į Klaipėdos rajono savivaldybės ikimokyklinio ir mokyklinio ugdymo įstaigas pateiktus prašymus 
+,datasets/gov/klaipedosr/ugdymo_istaigu_priemimai,,,,,,,,,,,,Priėmimai į Klaipėdos rajono ikimokyklinio ir mokyklinio ugdymo įstaigas,Informacija apie vaikų priėmimo į Klaipėdos rajono savivaldybės ikimokyklinio ir mokyklinio ugdymo įstaigas pateiktus prašymus 
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
