@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Imone,,,jar_kodas,,,4,,,Kauno m. sav. Elektronine paslaugų sistema besinaudojančios įmonės,"Kauno miesto savivaldybės valdoma Elektroninių paslaugų sistema (EPS) saugo Kauno m. sav. administracijos teikiamų elektroninių paslaugų duomenis. Duomenų rinkinio aprėptis laike yra nuo 2017 m., atnaujinimas vykdomas kasdien. Duomenų rinkyje saugoma EPS besinaudojančių įmonių duomenys: JAR kodas, pavadinimas, buveinės adresas ir teisinė forma. "
+,,,,Imone,,,jar_kodas,,,4,,,Kauno m. sav. Elektronine paslaugų sistema besinaudojančios įmonės,"Kauno miesto savivaldybės valdoma Elektroninių paslaugų sistema (EPS) saugo Kauno m. sav. administracijos teikiamų elektroninių paslaugų duomenis. Duomenys renkami nuo 2017 m., ir yra atnaujinami kasdien. Duomenų rinkyje saugomi EPS besinaudojančių įmonių duomenys: JAR kodas, pavadinimas, buveinės adresas ir teisinė forma."
 ,,,,,jar_kodas,string,,,,4,open,,Įmonės juridinių asmenų registro kodas,
 ,,,,,ja_pavadinimas,string,,,,4,open,,Įmonės pavadinimas,
 ,,,,,ja_adresas,string,,,,4,open,,Įmonės buveinės adresas,
