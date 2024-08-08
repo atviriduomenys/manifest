@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,darzelio_pavadinimas,string,,,,4,open,,Darželio pavadinimas,
 ,,,,,darzelio_adresas,string,,,,4,open,,Darželio adresas,
 ,,,,,pageidaujama_grupe_lt,string,,,,4,open,,Paraiškoje nurodyta pageidaujama grupė,
-,,,,,,comment,type,,"update(property: ""pageidaujama_grupe@lt"", type: ""text"")",4,open,,,
+,,,,,,comment,type,,"update(property: ""pageidaujama_grupe@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,grupes_amziaus_intervalas,string,,,,4,open,,Paraiškoje nurodomas grupės amžiaus intervalas,
 ,,,,,amziaus_pradzia_menesiais,string,,,,4,open,,Grupės lankymo pradžios amžius mėnesiais,
 ,,,,,prasoma_priimti_nuo,date,D,,,4,open,,Paraiškoje nurodyta priėmimo data,
