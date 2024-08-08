@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,negyvenamu_sk,number,U,,,4,open,,Negyvenamų butų skaičius,
 ,,,,,aukstu_sk,number,U,,,4,open,,Aukštų skaičius daugiabutyje,
 ,,,,,namo_plotas,number,m²,,,4,open,,Namo plotas,
-,,,,,zemes_plotas,double,m²,,,4,open,,Daugiabučiui priklausantis žemės plotas,
+,,,,,zemes_plotas,number,m²,,,4,open,,Daugiabučiui priklausantis žemės plotas,
 ,,,,,statybos_metai,date,Y,,,4,open,,Pastato statybos metai,
 ,,,,,valdymo_forma,string,,,,4,open,,Valdymo formos identifikatorius,
 ,,,,,,enum,,,"""Administratorius""",,,,,
