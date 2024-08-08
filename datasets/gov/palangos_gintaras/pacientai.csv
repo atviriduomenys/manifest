@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,PacientoRegistracija,,,vda_id,,,4,,,Pacientų registracijų sąrašas,Vaikų reabilitacijos sanatorijos „Palangos gintaras“ pacientų registracijų sąrašas. Duomenys pateikiami nuo 2010 metų ir iki dabar.
 ,,,,,vda_id,string,,,,4,open,,Identifikacinis numeris,
 ,,,,,registracijos_nr,string,,,,4,open,,Paciento registracijos identifikacinis numeris,
-,,,,,paciento_id,ref,/datasets/gov/palangos_gintaras/pacientai/Ligonis[paciento_id],,,4,open,,Paciento identifikacinis numeris,
+,,,,,paciento_id,string,,,,4,open,,Paciento identifikacinis numeris,
 ,,,,,atvykimo_data,date,D,,,4,open,,Paciento atvykimo data,
 ,,,,,isvykimo_data,date,D,,,4,open,,Paciento išvykimo data,
 ,,,,,atvykimo_registracijos_data,datetime,S,,,4,open,,Paciento atvykimo registracijos data,
