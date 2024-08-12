@@ -15,4 +15,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paskelbimas_is,string,,,,1,open,,"Įsakymo data, numeris/ paskelbimo Licencijų informacinėje sistemoje data",
 ,,,,,produktai,string,,,,2,open,,Pluoštinių kanapių produktai,
 ,,,,,paskirtis,string,,,,2,open,,Produktų paskirtis,
-,,,,,koord,"geometry(point, 3346)",m,,,4,open,,Ūkio subjekto vietos koordinatės (LKS),
+,,,,,koord,"geometry(3346)",m,,,4,open,,Ūkio subjekto vietos koordinatės (LKS),
