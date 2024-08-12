@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/miesto_renginiai,,,,,,,,,,,,Kauno miesto savivaldybės organizuojami renginiai,Kauno miesto savivaldybės išduoti leidimai organizuoti renginį ar pramoginę paslaugą Kauno miesto viešoje vietoje. Rinkinyje pateikti duomenys nuo 2020 metų liepos mėnesio.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Renginys,,,id,,,4,,,Kauno miesto savivaldybės organizuojami renginiai,Kauno miesto savivaldybės išduoti leidimai organizuoti renginį ar pramoginę paslaugą Kauno miesto viešoje vietoje. Rinkinyje pateikti duomenys nuo 2020 metų liepos mėnesio.
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,ivykio_pavadinimas,string,,,,2,open,,Renginio ar įvykio pavadinimas,
+,,,,,aprasymas_lt,string,,,,2,open,,Renginio ar įvykio aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,nuo,datetime,T,,,4,open,,Renginio ar įvykio data,
+,,,,,iki,datetime,T,,,4,open,,Renginio ar įvykio pabaigos data,
+,,,,,vieta,string,,,,2,open,,Renginio ar įvykio vieta,
+,,,,,organizatorius,string,,,,4,open,,Renginio ar įvykio organizatorius,
+,,,,,pobudis,string,,,,4,open,,Renginio ar įvykio pobūdis,
+,,,,,,enum,,,"""Renginys""",,,,Renginys,
+,,,,,,,,,"""Vizitas""",,,,Vizitas,
+,,,,,,,,,"""Savivaldybės renginys""",,,,Savivaldybės renginys,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,renginio_leidimas,string,,,,4,open,,Renginio leidimo duomenys,
