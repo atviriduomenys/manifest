@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,ValstybinisNumeris,,,vda_id,,,4,,,Tranporto priemonių valstybiniai numeriai pagal markę ir modelį,"Valstybės įmonės „Regitra“ Kelių transporto priemonių registras kaupia motorinės transporto priemonių (toliau MTP) ir jų priekabų, išskyrus MTP, nurodytas Saugaus eismo automobilių keliais įstatymo 27 straipsnio 7 dalyje. Rinkinio prototipo duomenys kaupiami nuo 2005 m. ir yra atnaujinami kasdien. Duomenys apima valstybinių numerių žymėjimus raides pakeitus į „X“, o skaitmenis - į „0“, markę ir modelį. "
+,,,,ValstybinisNumeris,,,vda_id,,,4,,,Tranporto priemonių valstybiniai numeriai pagal markę ir modelį,"VĮ „Regitra“ Kelių transporto priemonių registre kaupiami motorinių transporto priemonių, išskyrus nurodytų Lietuvos Respublikos saugaus eismo automobilių keliais įstatymo 27 straipsnio 7 dalyje, ir jų priekabų duomenys. Rinkinio prototipo duomenys kaupiami nuo 2005 m. ir yra atnaujinami kasdien. Duomenų rinkinį sudaro automobilio markė, modelis ir valstybinių numerių žymėjimas, raides pakeitus į „X“, o skaitmenis – „0“."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,valst_nr_zym,string,,,,4,open,,Valstybinio numerio žymėjimas nurodant raidžių ir skaitmenų pozicijas,
 ,,,,,marke,string,,,,4,open,,Transporto priemonės markė,
