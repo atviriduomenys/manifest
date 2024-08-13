@@ -681,5 +681,6 @@ datasets/gov/kauno_m_sav/vasaros_vaiku_renginiai.csv
 datasets/gov/lrvk/portfeliai.csv
 datasets/gov/kauno_m_sav/daugiabuciai.csv
 datasets/gov/kauno_m_sav/miesto_renginiai.csv
+datasets/gov/vgn/viesieji_pirkimai.csv
 datasets/gov/vgn/asmens_bylos.csv
 datasets/gov/skuodo_r_sav/paslaugu_prasymai.csv
