@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vgn,,,,,,,,,,,,Varėnos globos namai,
+,datasets/gov/vgn/asmens_bylos,,,,,,,,,,,,Varėnos globos namų 2023 metų gyventojų bylų registras,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,ByluRegistras,,,bylos_nr,,,4,,,Varėnos globos namų 2023 metų gyventojų bylų registras,Varėnos globos namų gyventojų asmens bylų registracija
+,,,,,bylos_nr,string,,,,4,open,,Globos namų gyventojo asmens bylos numeris,
+,,,,,asmuo,string,,,,4,open,,Globos namų gyventojo vardas ir pavardė,
+,,,,,byla_pradeta,date,D,,,4,open,,"Data, nuo kada asmuo pradėjo gyventi globos namuose",
+,,,,,byla_pabaigta,date,D,,,4,open,,"Data, iki kada asmuo gyveno globos namuose",
+,,,,,pastabos,string,,,,2,open,,"Pažymima priežastis, dėl kurios asmuo nebegyvena (mirė ar išsikraustė į kitus namus, pasiėmė artimieji, liga)",
