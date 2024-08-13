@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,PriemimoPrasymas,,,iraso_id,,,4,,,Vaikų priėmimo į  Kauno miesto bendrojo ugdymo įstaigas prašymai,Lentelėje pateikti duomenys apie Kauno miesto savivaldybės vaikų priėmimo į bendrojo ugdymo įstaigas prašymus. Duomenys paimti iš Kauno miesto savivaldybės Prašymų priimti į bendrojo ugdymo mokyklas pateikimo informacinės sistemos. Duomenys atnaujinami kas mėnesį.
+,,,,Prasymas,,,iraso_id,,,4,,,Vaikų priėmimo į  Kauno miesto bendrojo ugdymo įstaigas prašymai,Lentelėje pateikti duomenys apie Kauno miesto savivaldybės vaikų priėmimo į bendrojo ugdymo įstaigas prašymus. Duomenys paimti iš Kauno miesto savivaldybės Prašymų priimti į bendrojo ugdymo mokyklas pateikimo informacinės sistemos. Duomenys atnaujinami kas mėnesį.
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikatorius,
 ,,,,,vaiko_ak,string,,,,4,open,,Vaiko asmens kodas,
