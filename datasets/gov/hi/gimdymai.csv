@@ -13,5 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Namuose""",,,,,
 ,,,,,,,,,"""GMP""",,,,,
 ,,,,,,,,,"""Kitur""",,,,,
-,,,,,viso_vaisiu,number,U,,,4,open,,Vaisių skaičius gimdyme iš viso,
-,,,,,ar_mot_rhd_teig,boolean,,,,4,open,,"Požymis, ar nėščiosios (motinos) RhD antigenas buvo teigiamas",
+,,,,,viso_vaisiu,integer,U,,,4,open,,Vaisių skaičius gimdyme iš viso,
+,,,,,mot_rhd,string,,,,4,open,,"Nėščiosios (motinos) RhD antigenas",
+,,,,,,enum,,,"""+""",,,,,Teigiamas
+,,,,,,,,,"""-""",,,,,Neigiamas
