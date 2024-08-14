@@ -15,5 +15,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Kitur""",,,,,
 ,,,,,viso_vaisiu,integer,U,,,4,open,,Vaisių skaičius gimdyme iš viso,
 ,,,,,mot_rhd,string,,,,4,open,,"Nėščiosios (motinos) RhD antigenas",
-,,,,,,enum,,,"""+""",,,,Teigiamas,
-,,,,,,,,,"""-""",,,,Neigiamas,
+,,,,,,enum,,,+,,,,,Teigiamas
+,,,,,,,,,-,,,,,Neigiamas
