@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,vaiko_id,,,4,,,Priėmimai į Kauno miesto ikimokyklinio ugdymo įstaigas,Informacija apie vaikų priėmimo į Kauno miesto savivaldybės ikimokyklinio ugdymo įstaigas pateiktus prašymus 
+,,,,Prasymas,,,busenos_id,,,4,,,Priėmimai į Kauno miesto ikimokyklinio ugdymo įstaigas,Informacija apie vaikų priėmimo į Kauno miesto savivaldybės ikimokyklinio ugdymo įstaigas pateiktus prašymus 
 ,,,,,vaiko_id,string,,,,4,open,,Vaiko identifikatorius,
 ,,,,,asmens_kodas,string,,,,4,open,,Šifruotas asmens kodas,
 ,,,,,gimimo_metai,date,Y,,,4,open,,Vaiko gimimo metai gauti iš asmens kodo,
