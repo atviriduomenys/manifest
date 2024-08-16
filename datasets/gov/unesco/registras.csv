@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/unesco,,,,,,,,,,,,Lietuvos nacionalinės UNESCO komisijos sekretoriatas,
+,datasets/gov/unesco/registras,,,,,,,,,,,,"Lietuvos nacionalinis registras ""Pasaulio atmintis""","Rinkinyje pateikiami į Lietuvos nacionalinį registrą ""Pasaulio atmintis"" įrašyti dokumentai ir jų kolekcijos nuo 2006m. iki šių dienų. Rinkinio objektas - registro įrašas. Nurodomas dokumento ar kolekcijos eilės numeris, pavadinimas, saugojimo vieta, saugojimo vietos internetinis puslapis (jei egzistuoja). Taip pat pažymima, ar dokumentas yra regioninės ar nacionalinės reikšmės. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Irasas,,,vda_id,,,4,,,"Lietuvos nacionalinis registras ""Pasaulio atmintis""","Rinkinyje pateikiami į Lietuvos nacionalinį registrą ""Pasaulio atmintis"" įrašyti dokumentai ir jų kolekcijos nuo 2006m. iki šių dienų. Rinkinio objektas - registro įrašas. Nurodomas dokumento ar kolekcijos eilės numeris, pavadinimas, saugojimo vieta, saugojimo vietos internetinis puslapis (jei egzistuoja). Taip pat pažymima, ar dokumentas yra regioninės ar nacionalinės reikšmės. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,eil_nr,integer,,,,4,open,,Dokumento eilės numeris pagal įrašymo ankstumą,
+,,,,,dokumentas_lt,string,,,,4,open,,Dokumento arba kolekcijos pavadinimas,
+,,,,,,comment,type,,"update(property: ""dokumentas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,reiksme,string,,,,4,open,,Dokumento reikšmė,
+,,,,,vieta_lt,string,,,,4,open,,Dokumento saugojimo vieta,
+,,,,,,comment,type,,"update(property: ""vieta_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,nuoroda,string,,,,4,open,,Saugojimo vietos internetinis puslapis,
