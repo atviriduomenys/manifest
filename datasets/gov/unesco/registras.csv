@@ -10,6 +10,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dokumentas_lt,string,,,,4,open,,Dokumento arba kolekcijos pavadinimas,
 ,,,,,,comment,type,,"update(property: ""dokumentas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,reiksme,string,,,,4,open,,Dokumento reikšmė,
+,,,,,,enum,,,"""Regioninė""",,,,,
+,,,,,,,,,"""Nacionalinė""",,,,,
 ,,,,,vieta_lt,string,,,,4,open,,Dokumento saugojimo vieta,
 ,,,,,,comment,type,,"update(property: ""vieta_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,nuoroda,string,,,,4,open,,Saugojimo vietos internetinis puslapis,
