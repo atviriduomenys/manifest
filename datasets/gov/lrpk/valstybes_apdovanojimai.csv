@@ -11,6 +11,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dekreto_data,date,D,,,4,open,,Dekreto data,
 ,,,,,apdovanojimo_numeris,string,,,,4,open,,Apdovanojimo numeris,
 ,,,,,po_mirties,boolean,,,,4,open,,"Požymis, ar apdovanojimas gautas po mirties",
-,,,,,aktyvus,boolean,,,,4,open,,"Požymis, ar apdovanojimas galiojantis",
 ,,,,,pastabos,string,,,,4,open,,"Pastabos, jei apdovanojimas atimtas: atėmimo dekreto numeris ir data",
 ,,,,,prezidentas,string,,,,4,open,,Prezidentas dekreto datai,
