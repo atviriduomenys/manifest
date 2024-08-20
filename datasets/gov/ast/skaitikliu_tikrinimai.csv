@@ -1,0 +1,22 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ast,,,,,ns,,,,,,,,
+,datasets/gov/ast/skaitikliu_tikrinimai,,,,,,,,,,,,Karšto vandens skaitiklių tikrinimo registras,Teisinei metrologijai priskirtų matavimo priemonių (karšto vandens skaitiklių) tikrinimo registras
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Tikrinimas,,,vda_id,,,4,,,Karšto vandens skaitiklių tikrinimo registras,Teisinei metrologijai priskirtų matavimo priemonių (karšto vandens skaitiklių) tikrinimo registras
+,,,,,vda_id,string,,,,4,open,,Sugeneruotas tikrinimo numeris,
+,,,,,skaitiklio_tipas,string,,,,4,open,,Karšto vandens skaitiklio tipas,
+,,,,,buto_adresas_lt,string,,,,4,open,,"Objekto adresas, kuriame bus vykdoma  skaitiklio patikra",
+,,,,,,comment,type,,"update(property: ""buto_adresas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,skaitiklio_nr,string,,,,4,open,,Šifruotas tikrinamo skaitiklio numeris,
+,,,,,ar_patikrinta,string,,,,4,open,,Požymis ar skaitiklis patikrintas,
+,,,,,,enum,,"""taip""",,,,,,
+,,,,,,,,"""ne""",,,,,,
+,,,,,metrologijos_centras,string,,,,4,open,,"Lietuvos Metrologijos inspekcijos padalinys, kuriam priklauso objektas",
+,,,,,skaitiklio_patikros_data,date,D,,,4,open,,Skaitiklio tikrinimo data,
+,,,,,skaitiklio_patikros_metai,integer,yr,,,4,open,,Skaitiklio tikrinimo metai,
+,,,,,teisinis_pagrindas,string,,,,4,open,,Tikrinimo teisinis pagrindas,
+,,,,,sekancios_patikros_data,date,D,,,4,open,,Numatoma sekančio skaitiklio patikrinimo data,
+,,,,,sekancios_patikros_metai,integer,yr,,,4,open,,Numatoma sekančio skaitiklio patikrinimo metai,
+
