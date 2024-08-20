@@ -1,5 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vrk/rinkejo_puslapis,,,,,,,,,,,,Rinkėjo puslapio naudotojo paveikslas,Vyriausioji rinkimų komisija
+,datasets/gov/vrk/,,,,,,,,,,,,Vyriausioji rinkimų komisija,
+,datasets/gov/vrk/rinkejo_puslapis,,,,,,,,,,,,Rinkėjo puslapio naudotojo paveikslas,"Duomenų rinkinys sudarytas iš Vyriausiosios rinkimų komisijos informacinės sistemos (VRKIS) kaupiamų prisijungimo prie VRK tvarkomo projekto „Rinkėjo puslapis“ seansų duomenų ir pasaulinio masto IP adresų pagal geografinę vietovę rinkinio. VRKIS duomenys saugomi nuo 2011 m. ir yra atnaujinami kasdien, o iki 2024 m. buvęs aktualus IP adresų rinkinys nebėra atnaujinamas. Duomenų rinkinį sudaro prisijungimo seanso identifikatorius, pseudonimizuotas rinkėjo asmens kodas, gimimo metai, lytis, pagal IP adresą nustatytos tikėtinos prisijungimo valstybė ir vietovė, prisijungimo ir atsijungimo laikai bei atsijungimo priežastis."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
