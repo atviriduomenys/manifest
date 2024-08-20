@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ast,,,,,ns,,,,,,,,
+,datasets/gov/ast,,,,,ns,,,,,,,Alytaus šilumos tinklai,
 ,datasets/gov/ast/skaitikliu_tikrinimai,,,,,,,,,,,,Karšto vandens skaitiklių tikrinimo registras,Teisinei metrologijai priskirtų matavimo priemonių (karšto vandens skaitiklių) tikrinimo registras
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
