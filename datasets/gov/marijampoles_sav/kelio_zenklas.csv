@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/marijampoles_sav,,,,,ns,,,,,,,Marijampolės savivaldybė,
+,datasets/gov/marijampoles_sav,,,,,,,,,,,,Marijampolės savivaldybė,
 ,datasets/gov/marijampoles_sav/keliai,,,,,,,,,,,,,Šiame rinkinyje pateikti Marijampolės savivaldybės kelio ženklai bei jų lokacijos.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
