@@ -19,4 +19,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,teisinis_pagrindas,string,,,,4,open,,Tikrinimo teisinis pagrindas,
 ,,,,,sekancios_patikros_data,date,D,,,4,open,,Numatoma sekančio skaitiklio patikrinimo data,
 ,,,,,sekancios_patikros_metai,integer,yr,,,4,open,,Numatoma sekančio skaitiklio patikrinimo metai,
-
