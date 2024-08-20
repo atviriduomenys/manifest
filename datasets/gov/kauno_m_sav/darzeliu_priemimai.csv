@@ -4,6 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Prasymas,,,busenos_id,,,4,,,Priėmimai į Kauno miesto ikimokyklinio ugdymo įstaigas,Informacija apie vaikų priėmimo į Kauno miesto savivaldybės ikimokyklinio ugdymo įstaigas pateiktus prašymus 
+,,,,,busenos_id,string,,,,4,open,,Būsenos identifikatorius,
 ,,,,,vaiko_id,string,,,,4,open,,Vaiko identifikatorius,
 ,,,,,asmens_kodas,string,,,,4,open,,Šifruotas asmens kodas,
 ,,,,,gimimo_metai,date,Y,,,4,open,,Vaiko gimimo metai gauti iš asmens kodo,
@@ -13,7 +14,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikatorius,
 ,,,,,pirma_priemimo_data,date,D,,,4,open,,Numatoma pirma priėmimo data pagal prašymą,
 ,,,,,busenos_laikas,datetime,,,,4,open,,Būsenos laikas,
-,,,,,busenos_id,string,,,,4,open,,Būsenos identifikatorius,
 ,,,,,busena,string,,,,4,open,,Būsena,
 ,,,,,,enum,,,"""pateko""",,,,,
 ,,,,,,,,,"""pasirašė sutartį su kita įstaiga""",,,,,
