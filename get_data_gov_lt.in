@@ -595,7 +595,7 @@ datasets/gov/lrsk/youtube.csv
 datasets/gov/nsa/pr/pedagogu_kruvis.csv
 datasets/gov/nsa/sr/studiju_pertraukimas.csv
 datasets/gov/lsd/butu_pirkimai_gardelese.csv
-datasets/gov/vulzk/meddream.csv
+datasets/gov/radiologiniai_vaizdai/radiologiniai_vaizdai.csv
 datasets/gov/vulzk/registracija.csv
 datasets/gov/vulzk/zkis.csv
 datasets/gov/lnb/bibliografiniai_irasai.csv
@@ -691,3 +691,4 @@ datasets/gov/unesco/registras.csv
 datasets/gov/marijampoles_sav/kelio_zenklas.csv
 datasets/gov/ast/skaitikliu_tikrinimai.csv
 datasets/gov/lab_tyrimai/kauno_miesto_poliklinika.csv
+datasets/gov/lab_tyrimai/dainu_pspc.csv
