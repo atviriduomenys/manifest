@@ -81,13 +81,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paciento_diagnozes_tlk_10_am_kodas,string,,,,4,open,,Paciento pagrindinės diagnozės TLK-10-AM kodas,
 ,,,,,paciento_diagnoze,string,,,,4,open,,Paciento pagrindinės diagnozės pavadinimas,
 ,,,,,,,,,,,,,,
-,,,,DainuPSPC,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,"Šiame rinkinyje pateikti VšĮ Dainų pirminės sveikatos priežiūros centro duomenys apie pacientų laboratorinius tyrimus. Rinkinyje viena eilutė nurodo vieno asmens vieną konkretų tyrimą. 
-Duomenų laikotarpis nuo 2021 metų ir iki dabar. 
+,,,,DainuPSPC,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,"VšĮ Dainų pirminės sveikatos priežiūros centro POLIS sistema kaupia pacientams atliktų laboratorinių tyrimų duomenis. Duomenys kaupiami nuo 2021 m. ir yra atnaujinami iki šiol. Duomenų rinkinio kaupiami duomenys apima paciento šifruotą identifikatorių, lytį, gimimo metus, tyrimo užsakymo datą dienos tikslumu, tyrimo pavadinimą, tyrimo rezultatus bei nurodytas apatines ir viršutines normas.
+Rinkinyje viena eilutė nurodo vieno asmens vieną konkretų tyrimą. 
 PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,vda_primary_key,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
 ,,,,,uzsakymo_data,date,D,,,4,open,,Užsakymo data,
 ,,,,,asm_ak,string,,,,4,open,,Asmens kodas,Paciento asmens kodas (duomenys hash'inti)
-,,,,,vda_ak_asm_ak_validacija,string,,,,4,open,,Asmens kodo validacija,
+,,,,,vda_ak_asm_validacija,string,,,,4,open,,Asmens kodo validacija,
 ,,,,,asm_lytis,integer,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
 ,,,,,vda_lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,Lytis paimta iš asmens kodo
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
@@ -102,8 +102,8 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,rez_normos_apatine,string,,,,4,open,,Rezultato apatinė norma,
 ,,,,,rez_normos_virsutine,string,,,,4,open,,Rezultato viršutinė norma,
 ,,,,,,,,,,,,,,
-,,,,KaunoMiestoPoliklinika,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,"Šiame rinkinyje pateikti VšĮ Kauno miesto poliklinikos (KMP) duomenys apie pacientų laboratorinius tyrimus. Rinkinyje viena eilutė nurodo vieno asmens vieną konkretų tyrimą. 
-Duomenų laikotarpis nuo 2020 metų ir iki dabar. 
+,,,,KaunoMiestoPoliklinika,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,"VšĮ Kauno miesto poliklinikos (KMP) POLIS sistema kaupia pacientams atliktų laboratorinių tyrimų duomenis. Duomenys kaupiami nuo 2020 m. ir yra atnaujinami iki šiol. Duomenų rinkinio kaupiami duomenys apima paciento šifruotą identifikatorių, lytį, gimimo metus, tyrimo užsakymo datą dienos tikslumu, tyrimo pavadinimą, tyrimo rezultatus bei nurodytas apatines ir viršutines normas.
+Rinkinyje viena eilutė nurodo vieno asmens vieną konkretų tyrimą. 
 PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,vda_primary_key,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
 ,,,,,uzsakymo_data,date,D,,,4,open,,Užsakymo data,
