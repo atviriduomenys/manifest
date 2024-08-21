@@ -4,16 +4,18 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,KaunoMiestoPoliklinika,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,Šiame rinkinyje pateikti VšĮ Kauno miesto poliklinikos (KMP) duomenys apie pacientų laboratorinius tyrimus.
-,,,,,vda_primary_key,string,,,,4,open,,Identifikatorius,
+,,,,KaunoMiestoPoliklinika,,,vda_primary_key,,,4,,,Laboratoriniai tyrimai,"Šiame rinkinyje pateikti VšĮ Kauno miesto poliklinikos (KMP) duomenys apie pacientų laboratorinius tyrimus. Rinkinyje viena eilutė nurodo vieno asmens vieną konkretų tyrimą. 
+Duomenų laikotarpis nuo 2020 metų ir iki dabar. 
+PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,,,,,vda_primary_key,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
 ,,,,,uzsakymo_data,date,D,,,4,open,,Užsakymo data,
-,,,,,asm_ak,string,,,,4,open,,Asmens kodas,
+,,,,,asm_ak,string,,,,4,open,,Asmens kodas,Paciento asmens kodas (duomenys hash'inti)
 ,,,,,vda_ak_asm_ak_validacija,string,,,,4,open,,Asmens kodo validacija,
-,,,,,asm_lytis,integer,,,,4,open,,Asmens lytis,
-,,,,,vda_lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
+,,,,,asm_lytis,integer,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
+,,,,,vda_lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,Lytis paimta iš asmens kodo
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
-,,,,,vda_gimimo_metai,date,D,,,4,open,,Asmens gimimo metai,"Gimimo metai ""druskinti"" +-1 metai"
+,,,,,vda_gimimo_metai,date,D,,,4,open,,Asmens gimimo metai,Gimimo metai paimti iš asmens gimimo datos
 ,,,,,tyr_pavadinimas,string,,,,4,open,,Tyrimo pavadinimas,
 ,,,,,rez_tyr_kodas,string,,,,4,open,,Tyrimų rezultato kodas,
 ,,,,,rez_tyr_pav,string,,,,4,open,,Tyrimo rezultato pavadinimas,
