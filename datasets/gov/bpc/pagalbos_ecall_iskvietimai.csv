@@ -19,6 +19,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iv_vieta,string,,,,4,open,,Įvykio vieta,
 ,,,,,iv_savivaldybe,string,,,,4,open,,Įvykio savivaldybė,
 ,,,,,iv_gatve,string,,,,4,open,,Įvykio gatvė,
-,,,,,X_koord_lks,integer,,,,4,open,,Įvykio X koordinatė (pagal LKS-94 sistemą),
-,,,,,Y_koord_lks,integer,,,,4,open,,Įvykio Y koordinatė (pagal LKS-94 sistemą),
+,,,,,x_koord_lks,integer,,,,4,open,,Įvykio X koordinatė (pagal LKS-94 sistemą),
+,,,,,y_koord_lks,integer,,,,4,open,,Įvykio Y koordinatė (pagal LKS-94 sistemą),
 ,,,,,koord_patikimos,boolean,,,,4,open,,"Požymis, ar koordinatės patikimos",
