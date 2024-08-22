@@ -88,7 +88,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,uzsakymo_data,date,D,,,4,open,,Užsakymo data,
 ,,,,,asm_ak,string,,,,4,open,,Asmens kodas,Paciento asmens kodas (duomenys hash'inti)
 ,,,,,vda_ak_asm_validacija,string,,,,4,open,,Asmens kodo validacija,
-,,,,,asm_lytis,integer,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
+,,,,,asm_lytis,string,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
 ,,,,,vda_lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,Lytis paimta iš asmens kodo
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
@@ -109,7 +109,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,uzsakymo_data,date,D,,,4,open,,Užsakymo data,
 ,,,,,asm_ak,string,,,,4,open,,Asmens kodas,Paciento asmens kodas (duomenys hash'inti)
 ,,,,,vda_ak_asm_validacija,string,,,,4,open,,Asmens kodo validacija,
-,,,,,asm_lytis,integer,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
+,,,,,asm_lytis,string,,,,4,open,,Asmens lytis,Duomenys ateina iš tiekėjo duomenų bazės
 ,,,,,vda_lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,Lytis paimta iš asmens kodo
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
