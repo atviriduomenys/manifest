@@ -1,0 +1,47 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/go_vilnius,,,,,,,,,,,,VšĮ GO Vilnius,
+,datasets/gov/go_vilnius/turizmas,,,,,,,,,,,,Statistika apie Vilniaus turizmo informacijos centruose apsilankiusius turistus,"""Rinkinyje pateikiama statistika apie Vilniaus turizmo informacijos centruose apsilankiusius turistus padieniui nuo 2015 iki 2023m. Rinkinio objektas - suagreguoti mėnesiniai duomenys pagal centre apsilankiusių turistų valstybę ir/ar regioną bei konsultacijos suteikimo būdą (telefonu arba el. paštu). 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,TurizmoCentroInfo,,,vda_id,,,4,,,Statistika apie Vilniaus turizmo informacijos centruose apsilankiusius turistus,
+,,,,,vda_id,string,,,,4,open,,VDA ID,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius
+,,,,,metai,integer,,,,4,open,,Ataskaitiniai metai,
+,,,,,menuo,string,,,,4,open,,Ataskaitiniai mėnesiai,
+,,,,,kodas,string,,,,4,open,,Šalies kodas,
+,,,,,salis,string,,,,4,open,,Ataskaitinė šalis,Ataskaitinė šalis arba regionas
+,,,,,d_1,number,U,,,4,open,,Pirma diena,Pirmos kalendorinės dienos duomenys
+,,,,,d_2,number,U,,,4,open,,Antra diena ,Antros kalendorinės dienos duomenys
+,,,,,d_3,number,U,,,4,open,,Trečia diena ,Trečios kalendorinės dienos duomenys
+,,,,,d_4,number,U,,,4,open,,Ketvirta diena ,Ketvirtos kalendorinės dienos duomenys
+,,,,,d_5,number,U,,,4,open,,Penkta diena ,Penktos kalendorinės dienos duomenys
+,,,,,d_6,number,U,,,4,open,,Šešta diena ,Šeštos kalendorinės dienos duomenys
+,,,,,d_7,number,U,,,4,open,,Septinta diena ,Septintos kalendorinės dienos duomenys
+,,,,,d_8,number,U,,,4,open,,Aštunta diena ,Aštuntos kalendorinės dienos duomenys
+,,,,,d_9,number,U,,,4,open,,Devinta diena ,Devintos kalendorinės dienos duomenys
+,,,,,d_10,number,U,,,4,open,,Dešimta diena ,Dešimtos kalendorinės dienos duomenys
+,,,,,d_11,number,U,,,4,open,,Vienuolikta diena ,Vienuoliktos kalendorinės dienos duomenys
+,,,,,d_12,number,U,,,4,open,,Dvylikta diena ,Dvyliktos kalendorinės dienos duomenys
+,,,,,d_13,number,U,,,4,open,,Trylikta diena ,Tryliktos kalendorinės dienos duomenys
+,,,,,d_14,number,U,,,4,open,,Keturiolikta diena ,Keturioliktos kalendorinės dienos duomenys
+,,,,,d_15,number,U,,,4,open,,Penkiolikta diena ,Penktioliktos kalendorinės dienos duomenys
+,,,,,d_16,number,U,,,4,open,,Šešiolikta diena ,Šešioliktos kalendorinės dienos duomenys
+,,,,,d_17,number,U,,,4,open,,Septyniolikta diena ,Septynioliktos kalendorinės dienos duomenys
+,,,,,d_18,number,U,,,4,open,,Aštuoniolikta diena ,Aštuonioliktos kalendorinės dienos duomenys
+,,,,,d_19,number,U,,,4,open,,Devyniolikta diena ,Devynioliktos kalendorinės dienos duomenys
+,,,,,d_20,number,U,,,4,open,,Dvidešimta diena ,Dvidešimtos kalendorinės dienos duomenys
+,,,,,d_21,number,U,,,4,open,,Dvidešimt pirma diena ,Dvidešimt pirmos kalendorinės dienos duomenys
+,,,,,d_22,number,U,,,4,open,,Dvidešimt antra diena ,Dvidešimt antros kalendorinės dienos duomenys
+,,,,,d_23,number,U,,,4,open,,Dvidešimt trečia diena ,Dvidešimt trečios kalendorinės dienos duomenys
+,,,,,d_24,number,U,,,4,open,,Dvidešimt ketvirta diena ,Dvidešimt ketvirtos kalendorinės dienos duomenys
+,,,,,d_25,number,U,,,4,open,,Dvidešimt penkta diena ,Dvidešimt penktos kalendorinės dienos duomenys
+,,,,,d_26,number,U,,,4,open,,Dvidešimt šešta diena ,Dvidešimt šeštos kalendorinės dienos duomenys
+,,,,,d_27,number,U,,,4,open,,Dvidešimt septinta diena ,Dvidešimt septintos kalendorinės dienos duomenys
+,,,,,d_28,number,U,,,4,open,,Dvidešimt aštunta diena ,Dvidešimt aštuntos kalendorinės dienos duomenys
+,,,,,d_29,number,U,,,4,open,,Dvidešimt devinta diena ,Dvidešimt devintos kalendorinės dienos duomenys
+,,,,,d_30,number,U,,,4,open,,Trisdešimta diena,Trisdešimtos kalendorinės dienos duomenys
+,,,,,d_31,number,U,,,4,open,,Tridešimt  pirma diena,Trisdešimt pirmos kalendorinės dienos duomenys
+,,,,,is_viso,number,U,,,4,open,,Viso lankytojų,Bendras lankytojų skaičius per visas kalendorines dienas
+,,,,,duomenu_atnaujinimas,date,1D,,,4,open,,Duomenų atnaujinimo data,
