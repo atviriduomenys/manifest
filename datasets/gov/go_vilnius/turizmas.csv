@@ -8,7 +8,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,,,,,,
 ,,,,TurizmoCentroInfo,,,vda_id,,,4,,,Statistika apie Vilniaus turizmo informacijos centruose apsilankiusius turistus,
 ,,,,,vda_id,string,,,,4,open,,VDA ID,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius
-,,,,,metai,integer,Y,,,4,open,,Ataskaitiniai metai,
+,,,,,metai,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,menuo,string,,,,4,open,,Ataskaitiniai mėnesiai,
 ,,,,,kodas,string,,,,4,open,,Šalies kodas,
 ,,,,,salis,string,,,,4,open,,Ataskaitinė šalis,Ataskaitinė šalis arba regionas
