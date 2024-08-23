@@ -153,3 +153,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
 ,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
 ,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
+,,,,,zino_bratislava,boolean,,,,4,open,,Žinios apie Bratislavą,Ar respondentas girdėjęs apie Bratislavą?
+,,,,,zino_krokuva,boolean,,,,4,open,,Žinios apie Krokuvą,Ar respondentas girdėjęs apie Krokuvą?
+,,,,,zino_helsinki,boolean,,,,4,open,,Žinios apie Helsinkį,Ar respondentas girdėjęs apie Helsinkį?
+,,,,,zino_ryga,boolean,,,,4,open,,Žinios apie Rygą,Ar respondentas girdėjęs apie Rygą?
+,,,,,zino_liublijana,boolean,,,,4,open,,Žinios apie Liublijaną,Ar respondentas girdėjęs apie Liublijaną?
+,,,,,zino_vilniu,boolean,,,,4,open,,Žinios apie Vilnių,Ar respondentas girdėjęs apie Vilnių?
+,,,,,zino_varsuva,boolean,,,,4,open,,Žinios apie Varšuvą,Ar respondentas girdėjęs apie Varšuvą?
+,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
+,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
