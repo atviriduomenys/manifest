@@ -152,7 +152,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""2-3 kartus per metus""",,,,2-3 kartus per metus,
 ,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
 ,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
-,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
 ,,,,,zino_bratislava,boolean,,,,4,open,,Žinios apie Bratislavą,Ar respondentas girdėjęs apie Bratislavą?
 ,,,,,zino_krokuva,boolean,,,,4,open,,Žinios apie Krokuvą,Ar respondentas girdėjęs apie Krokuvą?
 ,,,,,zino_helsinki,boolean,,,,4,open,,Žinios apie Helsinkį,Ar respondentas girdėjęs apie Helsinkį?
