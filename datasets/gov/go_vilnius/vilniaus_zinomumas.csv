@@ -1,5 +1,4 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/go_vilnius,,,,,,,,,,,,VšĮ GO Vilnius,
 ,datasets/gov/go_vilnius/vilniaus_zinomumas,,,,,,,,,,,,Vilniaus žinomumo tyrimų apklausų duomenų rinkinys,"""Rinkinys iš ""GO Vilnius"" rengtos apklausos 2023 m. apie Vilniaus žinomumą. Apklausos atliktos skirtingose rinkose (Vokietijoje, Latvijoje, Lenkijoje, Didžiojoje Britanijoje). Vieną lentelės eilutę sudaro informacija apie respondentą ir jo atsakymai į pateiktus apklausos klausimus. Paskutinis stulpelis įvertine kiekvieno korespondento statistinį svorį apklausoje.  Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
