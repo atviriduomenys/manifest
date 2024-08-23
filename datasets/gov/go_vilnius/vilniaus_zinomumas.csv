@@ -1,0 +1,156 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/go_vilnius,,,,,,,,,,,,VšĮ GO Vilnius,
+,datasets/gov/go_vilnius/vilniaus_zinomumas,,,,,,,,,,,,Vilniaus žinomumo tyrimų apklausų duomenų rinkinys,"""Rinkinys iš ""GO Vilnius"" rengtos apklausos 2023 m. apie Vilniaus žinomumą. Apklausos atliktos skirtingose rinkose (Vokietijoje, Latvijoje, Lenkijoje, Didžiojoje Britanijoje). Vieną lentelės eilutę sudaro informacija apie respondentą ir jo atsakymai į pateiktus apklausos klausimus. Paskutinis stulpelis įvertine kiekvieno korespondento statistinį svorį apklausoje.  Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,VokietijosRinka,,,dalyv_id,,,4,,,Vilniaus žinomumo apklausų rezultatai Vokietijos rinkoje,
+,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris.
+,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
+,,,,,rinka,string,,,,4,open,,Apklausos rinka,"""Šalis, kurioje atliekama apklausa"""
+,,,,,,enum,,,"""Vokietija""",,,,Vokietija,
+,,,,,lytis,string,,,,4,open,,Respondento lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,integer,,,,4,open,,Respondento amžius,
+,,,,,kilmes_salis,string,,,,4,open,,Respondento kilmė,"""Respondento kilmės šalis - vieta, kurioje gimė"""
+,,,,,,enum,,,"""Vietinis""",,,,Vietinis,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,gyvenamoji_vt,string,,,,4,open,,Respondento gyvenamoji vieta,Dabartinė respondento gyvenamoji vieta: miestas
+,,,,,gyv_vt_regionas,string,,,,4,open,,Respondento gyvenamasis regionas,
+,,,,,gyv_vt_pop,string,,,,4,open,,Respondento gyvenamosios vietos populiacija,
+,,,,,issilavinimas,string,,,,4,open,,Respondento išsilavinimas,
+,,,,,,enum,,,"""Žemesnis nei aukštasis""",,,,Žemesnis nei aukštasis,
+,,,,,,,,,"""Aukštasis""",,,,Aukštasis,
+,,,,,ekonom_padetis,string,,,,4,open,,Ekonominė respondento padėtis,
+,,,,,,enum,,,"""Turintys santaupų""",,,,Turintys santaupų,
+,,,,,,,,,"""Pasiturintys""",,,,Pasiturintys,
+,,,,,,,,,"""Skaičiuoja""",,,,Skaičiuoja,
+,,,,,,,,,"""Skolinasi""",,,,Skolinasi,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,kelioniu_dazn,string,,,,4,open,,Respondento kelionių dažnis,Nurodo kaip dažnai respondentas keliauja į užsienį
+,,,,,,enum,,,"""Rečiau nei kartą per metus""",,,,Rečiau nei kartą per metus,
+,,,,,,,,,"""Kartą per metus""",,,,Kartą per metus,
+,,,,,,,,,"""2-3 kartus per metus""",,,,2-3 kartus per metus,
+,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
+,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
+,,,,,zino_bratislava,boolean,,,,4,open,,Žinios apie Bratislavą,Ar respondentas girdėjęs apie Bratislavą?
+,,,,,zino_krokuva,boolean,,,,4,open,,Žinios apie Krokuvą,Ar respondentas girdėjęs apie Krokuvą?
+,,,,,zino_ryga,boolean,,,,4,open,,Žinios apie Rygą,Ar respondentas girdėjęs apie Rygą?
+,,,,,zino_helsinki,boolean,,,,4,open,,Žinios apie Helsinkį,Ar respondentas girdėjęs apie Helsinkį?
+,,,,,zino_liublijana,boolean,,,,4,open,,Žinios apie Liublijaną,Ar respondentas girdėjęs apie Liublijaną?
+,,,,,zino_vilniu,boolean,,,,4,open,,Žinios apie Vilnių,Ar respondentas girdėjęs apie Vilnių?
+,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
+,,,,,zino_varsuva,boolean,,,,4,open,,Žinios apie Varšuvą,Ar respondentas girdėjęs apie Varšuvą?
+,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
+,,,,,,,,,,,,,,
+,,,,LatvijosRinka,,,dalyv_id,,,4,,,Vilniaus žinomumo apklausų rezultatai Latvijos rinkoje,
+,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris
+,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
+,,,,,rinka,string,,,,4,open,,Apklausos rinka,"Šalis, kurioje atliekama apklausa"""
+,,,,,,enum,,,"""Latvia""",,,,Latvija,
+,,,,,lytis,string,,,,4,open,,Respondento lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,integer,,,,4,open,,Respondento amžius,
+,,,,,kilmes_salis,string,,,,4,open,,Respondento kilmė,"""Respondento kilmės šalis - vieta, kurioje gimė"""
+,,,,,,enum,,,"""Vietinis""",,,,Vietinis,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,gyvenamoji_vt,string,,,,4,open,,Respondento gyvenamoji vieta,Dabartinė respondento gyvenamoji vieta: miestas
+,,,,,gyv_vt_pop,string,,,,4,open,,Respondento gyvenamosios vietos populiacija,
+,,,,,,enum,,,"""Mažiau nei 5 tūkst. gyventojų""",,,,Mažiau nei 5 tūkst. gyventojų,
+,,,,,,,,,"""5 tūkst. - 99 tūkst. gyventojų"" ",,,,5 tūkst. - 99 tūkst. gyventojų,
+,,,,,,,,,"""100 tūkst. - 299 tūkst. gyventojų""",,,,100 tūkst. - 299 tūkst. gyventojų,
+,,,,,,,,,"""500 tūkst. - 999 tūkst. gyventojų""",,,,500 tūkst. - 999 tūkst. gyventojų,
+,,,,,issilavinimas,string,,,,4,open,,Respondento išsilavinimas,
+,,,,,,enum,,,"""Žemesnis nei aukštasis""",,,,Žemesnis nei aukštasis,
+,,,,,,,,,"""Aukštasis""",,,,Aukštasis,
+,,,,,ekonom_padetis,string,,,,4,open,,Ekonominė respondento padėtis,
+,,,,,,enum,,,"""Turintys santaupų""",,,,Turintys santaupų,
+,,,,,,,,,"""Pasiturintys""",,,,Pasiturintys,
+,,,,,,,,,"""Skaičiuoja""",,,,Skaičiuoja,
+,,,,,,,,,"""Skolinasi""",,,,Skolinasi,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,kelioniu_dazn,string,,,,4,open,,Respondento kelionių dažnis,Nurodo kaip dažnai respondentas keliauja į užsienį
+,,,,,,enum,,,"""Rečiau nei kartą per metus""",,,,Rečiau nei kartą per metus,
+,,,,,,,,,"""Kartą per metus""",,,,Kartą per metus,
+,,,,,,,,,"""2-3 kartus per metus""",,,,2-3 kartus per metus,
+,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
+,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
+,,,,,zino_bratislava,boolean,,,,4,open,,Žinios apie Bratislavą,Ar respondentas girdėjęs apie Bratislavą?
+,,,,,zino_krokuva,boolean,,,,4,open,,Žinios apie Krokuvą,Ar respondentas girdėjęs apie Krokuvą?
+,,,,,zino_helsinki,boolean,,,,4,open,,Žinios apie Helsinkį,Ar respondentas girdėjęs apie Helsinkį?
+,,,,,zino_liublijana,boolean,,,,4,open,,Žinios apie Liublijaną,Ar respondentas girdėjęs apie Liublijaną?
+,,,,,zino_vilniu,boolean,,,,4,open,,Žinios apie Vilnių,Ar respondentas girdėjęs apie Vilnių?
+,,,,,zino_varsuva,boolean,,,,4,open,,Žinios apie Varšuvą,Ar respondentas girdėjęs apie Varšuvą?
+,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
+,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
+,,,,,,,,,,,,,,
+,,,,LenkijosRinka,,,dalyv_id,,,4,,,Vilniaus žinomumo apklausų rezultatai Lenkijos rinkoje,
+,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris
+,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
+,,,,,rinka,string,,,,4,open,,Apklausos rinka,"""Šalis, kurioje atliekama apklausa"""
+,,,,,,enum,,,"""Lenkija""",,,,Lenkija,
+,,,,,lytis,string,,,,4,open,,Respondento lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,integer,,,,4,open,,Respondento amžius,
+,,,,,kilmes_salis,string,,,,4,open,,Respondento kilmė,"""Respondento kilmės šalis - vieta, kurioje gimė"""
+,,,,,,enum,,,"""Vietinis""",,,,Vietinis,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,gyvenamoji_vt,string,,,,4,open,,Respondento gyvenamoji vieta,Dabartinė respondento gyvenamoji vieta: miestas
+,,,,,gyv_vt_regionas,string,,,,4,open,,Respondento gyvenamasis regionas,
+,,,,,gyv_vt_pop,string,,,,4,open,,Respondento gyvenamosios vietos populiacija,
+,,,,,issilavinimas,string,,,,4,open,,Respondento išsilavinimas,
+,,,,,,enum,,,"""Žemesnis nei aukštasis""",,,,Žemesnis nei aukštasis,
+,,,,,,,,,"""Aukštasis""",,,,Aukštasis,
+,,,,,ekonom_padetis,string,,,,4,open,,Ekonominė respondento padėtis,
+,,,,,,enum,,,"""Turintys santaupų""",,,,Turintys santaupų,
+,,,,,,,,,"""Pasiturintys""",,,,Pasiturintys,
+,,,,,,,,,"""Skaičiuoja""",,,,Skaičiuoja,
+,,,,,,,,,"""Skolinasi""",,,,Skolinasi,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,kelioniu_dazn,string,,,,4,open,,Respondento kelionių dažnis,Nurodo kaip dažnai respondentas keliauja į užsienį
+,,,,,,enum,,,"""Rečiau nei kartą per metus""",,,,Rečiau nei kartą per metus,
+,,,,,,,,,"""Kartą per metus""",,,,Kartą per metus,
+,,,,,,,,,"""2-3 kartus per metus""",,,,2-3 kartus per metus,
+,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
+,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
+,,,,,zino_bratislava,boolean,,,,4,open,,Žinios apie Bratislavą,Ar respondentas girdėjęs apie Bratislavą?
+,,,,,zino_ryga,boolean,,,,4,open,,Žinios apie Rygą,Ar respondentas girdėjęs apie Rygą?
+,,,,,zino_helsinki,boolean,,,,4,open,,Žinios apie Helsinkį,Ar respondentas girdėjęs apie Helsinkį?
+,,,,,zino_liublijana,boolean,,,,4,open,,Žinios apie Liublijaną,Ar respondentas girdėjęs apie Liublijaną?
+,,,,,zino_vilniu,boolean,,,,4,open,,Žinios apie Vilnių,Ar respondentas girdėjęs apie Vilnių?
+,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
+,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
+,,,,,,,,,,,,,,
+,,,,DidzBritRinka,,,dalyv_id,,,,,,Vilniaus žinomumo apklausų rezultataiDidžiosiso Britanijos rinkoje,
+,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris.
+,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
+,,,,,rinka,string,,,,4,open,,Apklausos rinka,"""Šalis, kurioje atliekama apklausa"""
+,,,,,,enum,,,"""Didžioji Britanija""",,,,Didžioji Britanija,
+,,,,,lytis,string,,,,4,open,,Respondento lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,amzius,integer,,,,4,open,,Respondento amžius,
+,,,,,kilmes_salis,string,,,,4,open,,Respondento kilmė,"""Respondento kilmės šalis - vieta, kurioje gimė."""
+,,,,,,enum,,,"""Vietinis""",,,,Vietinis,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,gyvenamoji_vt,string,,,,4,open,,Respondento gyvenamoji vieta,Dabartinė respondento gyvenamoji vieta: miestas
+,,,,,gyv_vt_pop,string,,,,4,open,,Respondento gyvenamosios vietos populiacija,
+,,,,,issilavinimas,string,,,,4,open,,Respondento išsilavinimas,
+,,,,,,enum,,,"""Žemesnis nei aukštasis""",,,,Žemesnis nei aukštasis,
+,,,,,,,,,"""Aukštasis""",,,,Aukštasis,
+,,,,,ekonom_padetis,string,,,,4,open,,Ekonominė respondento padėtis,
+,,,,,,enum,,,"""Turintys santaupų""",,,,Turintys santaupų,
+,,,,,,,,,"""Pasiturintys""",,,,Pasiturintys,
+,,,,,,,,,"""Skaičiuoja""",,,,Skaičiuoja,
+,,,,,,,,,"""Skolinasi""",,,,Skolinasi,
+,,,,,,,,,"""Kita""",,,,Kita,
+,,,,,kelioniu_dazn,string,,,,4,open,,Respondento kelionių dažnis,Nurodo kaip dažnai respondentas keliauja į užsienį
+,,,,,,enum,,,"""Rečiau nei kartą per metus""",,,,Rečiau nei kartą per metus,
+,,,,,,,,,"""Kartą per metus""",,,,Kartą per metus,
+,,,,,,,,,"""2-3 kartus per metus""",,,,2-3 kartus per metus,
+,,,,,,,,,"""4-5 kartus per metus""",,,,4-5 kartus per metus,
+,,,,,,,,,"""Daugiau nei 5 kartus per metus""",,,,Daugiau nei 5 kartus per metus,
+,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
