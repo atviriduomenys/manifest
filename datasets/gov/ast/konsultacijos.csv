@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ast/registras,,,,,,,,,,,,"Alytaus šilumos tinklų iškvietimų, nusiskundimų ir konsultacijų registras","Duomenų rininyje pateikiami nuo 2024 m. kaupiami Alytaus šilumos tinklų klientų nusiskundimų, konsultacijų ir iškvietimų žurnalo duomenys. Rinkinio objektas – įmonės kliento kreipimasis į Alytaus šilumos tinklus. Rinkinyje nurodoma iškvietimo informacija – gatvė, namo numeris ir iškvietimo priežastis. Taip pat pateikiama pagal iškvietimą vykdytų darbų informacija: darbus atlikusio asmens identifikatorius (sudarytas užšifravus atsakingo darbuotojo vardą ir pavardę), darbų trukmė valandos ir minučių tikslumu, pabaigos žyma, identifikuota gedimo priežastis ir bendra darbų trukmė nuo iškvietimo momento iki darbų užbaigimo. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Iskvietimas,,,vda_id,,,4,,,"Alytaus šilumos tinklų iškvietimų, nusiskundimų ir konsultacijų registras","Duomenų rininyje pateikiami nuo 2024 m. kaupiami Alytaus šilumos tinklų klientų nusiskundimų, konsultacijų ir iškvietimų žurnalo duomenys. Rinkinio objektas – įmonės kliento kreipimasis į Alytaus šilumos tinklus. Rinkinyje nurodoma iškvietimo informacija – gatvė, namo numeris ir iškvietimo priežastis. Taip pat pateikiama pagal iškvietimą vykdytų darbų informacija: darbus atlikusio asmens identifikatorius (sudarytas užšifravus atsakingo darbuotojo vardą ir pavardę), darbų trukmė valandos ir minučių tikslumu, pabaigos žyma, identifikuota gedimo priežastis ir bendra darbų trukmė nuo iškvietimo momento iki darbų užbaigimo. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,registracija,datetime,S,,,4,open,,Registracijos laiko žyma,
+,,,,,gatve,string,,,,3,open,,Objekto gatvė,
+,,,,,namo_nr,string,,,,3,open,,Objekto namo numeris,
+,,,,,iskvietimo_priezastis,string,,,,4,open,,Iškvietimo priežastis,
+,,,,,,enum,,,"""K.V.skaitiklio plombavimas""",,,,,
+,,,,,,,,,"""Sugedęs KV skaitiklis""",,,,,
+,,,,,,,,,"""KITA""",,,,,
+,,,,,,,,,"""K.V.skaitiklio keitimas (montavimas)""",,,,,
+,,,,,,,,,"""Nutekėjimai KV sistemoje""",,,,,
+,,,,,darbus_atliko,string,,,,4,open,,Darbus atlikęs asmuo. ,"Stulpelis sudarytas, užšifravus darbuotojo vardą ir pavardę."
+,,,,,darbu_trukme_h,integer,h,,,4,open,,Darbų trukmė valandų tikslumu,
+,,,,,darbu_trukme_min,integer,min,,,4,open,,Darbų trukmė minučių tikslumu,
+,,,,,darbu_pabaiga,datetime,S,,,4,open,,Darbų pabaigos laiko žyma,
+,,,,,bendra_trukme_h,integer,h,,,4,open,,"Bendra darbų tvarkymo trukmė valandomis, nurodanti skirtumą tarp darbų pabaigos ir pranešimo registracijos laiko žymų.",
+,,,,,gedimo_priezastis,string,,,,4,open,,"Gedimo priežastis, identifikuojama darbus atlikusio darbuotojo",
