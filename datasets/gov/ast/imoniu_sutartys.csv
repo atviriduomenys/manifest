@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,AstSutartis,,,iraso_id,,,4,,,Alytaus šilumos tinklų sutarčių su įmonėmis duomenys,"Lentelėje pateikti Alytaus šilumos tinklų sutarčių su įmonėmis duomenys iš Įmonių sutarčių registro. Duomenų turinys: įmonių JAR kodai, adresai, pavadinimai, tarp įmonių ir Alytaus šilumos tinklų sudarytų sutarčių pradžios datos. Svarbu paminėti, kad duomenyse nurodomas vienas juridinis asmuo (viena įmonė) gali turėti kelis skirtingus adresus, dėl to tas pats juridinis asmuo gali turėti ir kelis skirtingus kliento kodus. 
+,,,,AstSutartis,,,iraso_id,,,4,,,Alytaus šilumos tinklų sutarčių su įmonėmis duomenys,"Lentelėje pateikti Alytaus šilumos tinklų sutarčių su įmonėmis duomenys iš Įmonių sutarčių registro. Duomenų turinys: įmonių JAR kodai, adresai, pavadinimai, tarp įmonių ir Alytaus šilumos tinklų sudarytų sutarčių pradžios datos. Svarbu paminėti, kad lentelėje nurodomas vienas juridinis asmuo (viena įmonė) gali turėti kelis skirtingus adresus, dėl to tas pats juridinis asmuo gali turėti ir kelis skirtingus kliento kodus. 
 Kaupiamų duomenų aprėptis laike – nuo 1993 m., atnaujinant kas metus. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,kliento_kodas,string,,,,4,open,,Kliento kodas,
