@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lki/lietuviu_kalbos_patarimai,,,,,,,,,,,,Lietuvių kalbos vartosenos patarimai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,KlausimasAtsakymas,,,iraso_id,,,4,,,Lietuvių kalbos instituto Kalbos konsultacijų kompiuterinis bankas. Klausimai ir atsakymai.,Lentelėje pateikti klausimai ir atsakymai iš Lietuvių kalbos instituto kurto Kalbos konsultacijų kompiuterinio banko (https://kkb.lki.lt/). Duomenys rinkti nuo 1997 iki 2005 metų. Šiuo metu bankas nebepildomas ir nuo 2005 metų perduotas VLKK.
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,klausimo_id,string,,,,4,open,,Klausimo identifikacinis numeris,
+,,,,,klausimas,string,,,,4,open,,Klausimas,
+,,,,,atsakymas,string,,,,4,open,,Atsakymas,
+,,,,,klausimo_esminis_zodis,string,,,,4,open,,Klausimo esminis žodis,
+,,,,,rysys,string,,,,4,open,,Esminio klausimo žodžio ryšys su taikoma taisykle,
+,,,,,taisykle,string,,,,4,open,,Taikoma taisyklė,
+,,,,,paaiskinimas,string,,,,4,open,,Paaiškinimas,
+,,,,,,,,,,,,,,
+,,,,ZodisRysys,,,iraso_id,,,4,,,Lietuvių kalbos instituto Kalbos konsultacijų kompiuterinis bankas. Esminių žodžių ryšiai su kitais žodžiais.,Lentelėje pateikti Lietuvių kalbos instituto Kalbos konsultacijų kompiuterinio banko (https://kkb.lki.lt/) esminių žodžių ryšiai su kitais žodžiais. Duomenys rinkti nuo 1997 iki 2005 metų. Šiuo metu bankas nebepildomas ir 2005 metų perduotas VLKK.
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,klausimo_id,string,,,,4,open,,Klausimo identifikacinis numeris,
+,,,,,klausimo_esminis_zodis,string,,,,4,open,,Klausimo esminis žodis,
+,,,,,rysys,string,,,,4,open,,Esminio klausimo žodžio ryšys su kitu (-ais) žodžiu (-iais),
+,,,,,susije_zodziai,string,,,,4,open,,Su raktiniu klausimo žodžiu susijęs (-ę) žodis (-iai),
