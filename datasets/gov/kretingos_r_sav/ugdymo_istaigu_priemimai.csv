@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kretingos_r_sav,,,,,,,,,,,,Kretingos rajono savivaldybė,
+,datasets/gov/kretingos_r_sav/ugdymo_istaigu_priemimai,,,,,,,,,,,,Centralizuoto vaikų priėmimo į ikimokyklinio ir priešmokyklinio ugdymo grupes prašymai,Kretingos rajono savivaldybės centralizuoto vaikų priėmimo į ikimokyklinio ir priešmokyklinio ugdymo grupes prašymai. Duomenys sistemoje nuo 2013 m.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Prasymas,,,prasymo_id,,,4,,,Centralizuoto vaikų priėmimo į ikimokyklinio ir priešmokyklinio ugdymo grupes prašymai,Kretingos rajono savivaldybės centralizuoto vaikų priėmimo į ikimokyklinio ir priešmokyklinio ugdymo grupes prašymai. Duomenys sistemoje nuo 2013 m.
+,,,,,prasymo_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,prasymo_data,date,D,,,4,open,,Prašymo data,
+,,,,,norima_lankyti_nuo,integer,,,,4,open,,Pageidaujama ugdymo įstaigos lankymo pradžios data,
+,,,,,asmuo,string,,,,4,open,,Asmens kodas,
+,,,,,asm_kodas_tinkamas,string,,,,4,open,,Ar asmens kodas validus,
+,,,,,gimimo_metai_ak,date,Y,,,4,open,,Asmens gimimo metai iš asmens kodo,
+,,,,,lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
+,,,,,tevas,string,,,,4,open,,"Globėjo, registruojančio asmenį, vardas, pavardė",
+,,,,,darzelis,string,,,,4,open,,Įstaigos pavadinimas,
+,,,,,grupes_pavadinimas,string,,,,4,open,,Ugdymo įstaigos grupės pavadinimas,
+,,,,,busena,string,,,,4,open,,Būsena,
