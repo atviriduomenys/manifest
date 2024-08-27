@@ -1,0 +1,26 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/seniunaiciai,,,,,,,,,,,,Kauno miesto savivaldybės seniūnaičių rinkimų rezultatai,"Duomenų rinkinyje pateikiami Kauno miesto savivaldybės nuo 2023 m. organizuotų seniūnaičių rinkimų 56 seniūnaitijose rezultatai. Seniūnaičių rinkimai vyksta kas ketverius metus ir yra organizuojami Kauno miesto savivaldybės seniūnaičių rinkimų komisijos pagal administracijos direktoriaus parengtą tvarkos aprašą (https://www.e-tar.lt/portal/lt/legalAct/08e28540a29211ebb9bbd96a0c51af2c/asr). Seniūnaitis – tai bendruomenės atstovas, dirbantis visuomeniniais pagrindais. Kandidatus į seniūnaičius kelia seniūnaitijos gyventojai ir veikiančios bendruomeninės organizacijos. Savo balsą rinkimuose gali išreikšti pilnamečiai seniūnaitijos gyventojai, turintys teisę rinkti Savivaldybės tarybą, balsuodami seniūnijos patalpose arba internetu per tris rinkimų dienas. Dėl šios priežasties rinkimų rezultatai atvaizduojami pagal rinkimų dieną ir kandidatą. Rinkinyje taip pat pateikiama su kandidatu susijusi informacija: kandidatavimo data, kas iškėlė kandidatą ir kandidato identifikatorius, gaunamas užšifravus vardą ir pavardę.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Kandidatas,,,vda_id,,,4,,,Kauno miesto savivaldybės seniūnaičių rinkimų rezultatai,"Duomenų rinkinyje pateikiami Kauno miesto savivaldybės nuo 2023 m. organizuotų seniūnaičių rinkimų 56 seniūnaitijose rezultatai. Seniūnaičių rinkimai vyksta kas ketverius metus ir yra organizuojami Kauno miesto savivaldybės seniūnaičių rinkimų komisijos pagal administracijos direktoriaus parengtą tvarkos aprašą (https://www.e-tar.lt/portal/lt/legalAct/08e28540a29211ebb9bbd96a0c51af2c/asr). Seniūnaitis – tai bendruomenės atstovas, dirbantis visuomeniniais pagrindais. Kandidatus į seniūnaičius kelia seniūnaitijos gyventojai ir veikiančios bendruomeninės organizacijos. Savo balsą rinkimuose gali išreikšti pilnamečiai seniūnaitijos gyventojai, turintys teisę rinkti Savivaldybės tarybą, balsuodami seniūnijos patalpose arba internetu per tris rinkimų dienas. Dėl šios priežasties rinkimų rezultatai atvaizduojami pagal rinkimų dieną ir kandidatą. Rinkinyje taip pat pateikiama su kandidatu susijusi informacija: kandidatavimo data, kas iškėlė kandidatą ir kandidato identifikatorius, gaunamas užšifravus vardą ir pavardę.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros unikalus įrašo identifikatorius,
+,,,,,rinkimu_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,seniunaitija,string,,,,4,open,,Seniūnaitijos pavadinimas,
+,,,,,kandidatavimo_data,date,D,,,4,open,,Kandidatavimo data,
+,,,,,kandidatas,string,,,,4,open,,"Kandidato identifikatorius, sudarytas užšifravus kandidato vardą ir pavardę.",
+,,,,,iskele_lt,string,,,,1,open,,"Sąlygos, kuriomis kandidatas buvo pasiūlytas į seniūnaičius",
+,,,,,,comment,type,,"update(property: ""iskele_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,ar_isrinko,boolean,,,,4,open,,"Požymis, ar kandidatas buvo išrinktas į seniūnaičius rinkimų metu",
+,,,,,viso_balsu,integer,,,,4,open,,Bendras kandidato surinktų balsų skaičius,
+,,,,,balsai_internetu_1,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų internetu pirmą balsavimo dieną,
+,,,,,balsai_seniunijoje_1,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų seniūnijoje pirmą balsavimo dieną,
+,,,,,balsai_internetu_2,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų internetu antrą balsavimo dieną,
+,,,,,balsai_seniunijoje_2,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų seniūnijoje antrą balsavimo dieną,
+,,,,,balsai_internetu_3,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų internetu trečią balsavimo dieną,
+,,,,,balsai_seniunijoje_3,integer,,,,4,open,,Kandidatas į seniūnaitį gavo balsų seniūnijoje trečią balsavimo dieną,
