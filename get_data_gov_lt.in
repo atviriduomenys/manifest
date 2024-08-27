@@ -697,4 +697,5 @@ datasets/gov/go_vilnius/turizmas.csv
 datasets/gov/go_vilnius/vilniaus_zinomumas.csv
 datasets/gov/ast/konsultacijos.csv
 datasets/gov/kauno_m_sav/rinkimai.csv
+datasets/gov/lki/lietuviu_kalbos_patarimai.csv
 datasets/gov/kretingos_r_sav/ugdymo_istaigu_priemimai.csv
