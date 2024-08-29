@@ -13,7 +13,7 @@ PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,metai,date,D,,,4,open,,Metai,
 ,,,,,periodas,string,,,,4,open,,"Periodas (mėn, ketv, metinis dienos vidurkis)",
 ,,,,,rodiklis,string,,,,4,open,,Rodiklis,
-,,,,,,enum,,,"""išgautas vanduo""",,,,atitinikamą mėnesį išgautas vanduo,
+,,,,,,enum,,,"""išgautas vanduo""",,,,atitinkamą mėnesį išgautas vanduo,
 ,,,,,,,,,"""įmonėms tiekiamas vanduo""",,,,įmonėms tiekiamas vanduo,
 ,,,,,,,,,"""gyventojams tiekiamas vanduo""",,,,gyventojams tiekiamas vanduo,
 ,,,,,,,,,"""filtrų plovimo vanduo""",,,,vanduo skirtas filtrų technologiniam praplovimui,
