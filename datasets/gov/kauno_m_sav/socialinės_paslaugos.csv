@@ -10,7 +10,7 @@ PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
 ,,,,,pradzia,date,D,,,4,open,,Pradžia,
 ,,,,,pabaiga,date,D,,,4,open,,Pabaiga,
-,,,,,asmens_pseudo_id,string,,,,4,open,,Asmens pseudo identifikatorius,"Pseudo id sudarytas iš asmens vardo, pavardės ir gimimo datos. Veliau viskas užsištuota"
+,,,,,asmens_pseudo_id,string,,,,4,open,,Asmens pseudo identifikatorius,"Pseudo id sudarytas iš asmens vardo, pavardės ir gimimo datos. Vėliau viskas užšifruota"
 ,,,,,vardas_pavarde,string,,,,4,open,,Vardas pavardė,Užšifruotas asmens vardas ir pavardė
 ,,,,,gimimo_metai,date,D,,,4,open,,Gimimo metai,
 ,,,,,gavejo_kategorija,string,,,,4,open,,Paslaugų gavėjo kategorija,
