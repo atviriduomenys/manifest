@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/socialinės_paslaugos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Paslauga,,,vda_prime_key,,,4,,,Kauno miesto savivaldybės suteiktos socialinės paslaugos,"Šiame rinkinyje pateikiamos Kauno miesto savivaldybės Socialinių paslaugų informacinėje sistemoje fiksuojamos suteiktos paslaugos. Viena eilutė atitinka vieną suteiktą paslaugą atitinkamam asmeniui.
+Duomenys pateikiami nuo 2000m. ir iki dabar. Duomenų apimtis, Kauno miesto savivaldybės gabentojai.
+PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,pradzia,date,D,,,4,open,,Pradžia,
+,,,,,pabaiga,date,D,,,4,open,,Pabaiga,
+,,,,,asmens_pseudo_id,string,,,,4,open,,Asmens pseudo identifikatorius,"Pseudo id sudarytas iš asmens vardo, pavardės ir gimimo datos. Veliau viskas užsištuota"
+,,,,,vardas_pavarde,string,,,,4,open,,Vardas pavardė,Užšifruotas asmens vardas ir pavardė
+,,,,,gimimo_metai,date,D,,,4,open,,Gimimo metai,
+,,,,,gavejo_kategorija,string,,,,4,open,,Paslaugų gavėjo kategorija,
+,,,,,paslauga,string,,,,4,open,,Paslauga,
+,,,,,paslaugos_teikejas,string,,,,4,open,,Paslaugos tiekėjas,
+,,,,,pasl_sav_lesos,number,,,,4,open,,Paslauga savivaldybės lėšomis,
+,,,,,pasl_vals_lesos,number,,,,4,open,,Paslauga valstybės lėšomis,
