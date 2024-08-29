@@ -16,5 +16,5 @@ PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,gavejo_kategorija,string,,,,4,open,,Paslaugų gavėjo kategorija,
 ,,,,,paslauga,string,,,,4,open,,Paslauga,
 ,,,,,paslaugos_teikejas,string,,,,4,open,,Paslaugos tiekėjas,
-,,,,,pasl_sav_lesos,number,,,,4,open,,Paslauga savivaldybės lėšomis,
-,,,,,pasl_vals_lesos,number,,,,4,open,,Paslauga valstybės lėšomis,
+,,,,,pasl_sav_lesos,number,,,,4,open,,Paslaugos kaina, finansuota savivaldybės lėšomis,
+,,,,,pasl_vals_lesos,number,,,,4,open,,Paslaugos kaina, finansuota valstybės lėšomis,
