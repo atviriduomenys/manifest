@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/finmin/afis,,,,,,,,,,,,Valstybės pajamų ir išlaidų duomenys,
+,datasets/gov/finmin/afis,,,,,,,,,,,,Valstybės pajamų ir išlaidų duomenys,"Lietuvos Respublikos finansų ministerijos Atvirų finansų informacinėje sistemoje (AFIS) nuo 2015 m. kaupiami, kas 3 mėnesius atnaujinami ir atvėrimui numatyti automatiškai apdorojami viešųjų finansų duomenys. Sudaryti du duomenų rinkiniai tiek valstybinėms pajamoms, tiek išlaidoms."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
