@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kapines/registras/velioniai,,,,,,,,,,,,"Duomenys apie velionis, palaidotus savivaldybių kapinėse","Rinkinyje pateikiami suskaitmenintose Lietuvos savivaldybėms priklausančiose kapinėse palaidotų velionių duomenys. Nurodomos velionio charakteristikos (vardas, pavardė, lytis, gimimo, mirties ir palaidojimo datos) ir su jo kapaviete susiję duomenys (ryšys su kitais kapavietėje palaidotais asmenimis, kapą prižiūrinčiu asmeniu, kapo gylis, vieta bendrame kapinių plane)"
+,datasets/gov/kapines/registras/velioniai,,,,,,,,,,,,"Duomenys apie velionis, palaidotus savivaldybių kapinėse","Rinkinyje pateikiami suskaitmenintose Lietuvos savivaldybėms priklausančiose kapinėse palaidotų velionių duomenys. Nurodomos velionio charakteristikos (vardas, pavardė, lytis, gimimo, mirties ir palaidojimo datos) ir su jo kapaviete susiję duomenys (ryšys su kitais kapavietėje palaidotais asmenimis, kapą prižiūrinčiu asmeniu, kapo gylis, vieta bendrame kapinių plane). PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
