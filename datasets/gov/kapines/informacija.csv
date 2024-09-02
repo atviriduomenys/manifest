@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Teritorija,,,vda_id,,,4,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama bendro pobūdžio informacija, atvaizduojama cemety.lt portale, apie savivaldybių kapines Lietuvoje: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas - vienerios kapinės. PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,kapines,string,,,,4,open,,Kapinių pavadinimas,
-,,,,,adresas_lt,string,,,,2,open,,Fizinis kapinių adresas/Kapines administruojančios įstaigos adresas,
+,,,,,adresas_lt,string,,,,1,open,,Fizinis kapinių adresas/Kapines administruojančios įstaigos adresas,
 ,,,,,,comment,type,,"update(property: ""adresas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,regionas,string,,,,4,open,,Regionas,
 ,,,,,miestas,string,,,,4,open,,Miestas,
@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,informacija_internete,boolean,,,,4,open,,"Požymis, ar duomenys apie kapines viešinamos internete",
 ,,,,,ar_kulturinis,boolean,,,,4,open,,"Požymis, ar kapinės yra kultūrinis paminklas",
 ,,,,,velioniu_sk,integer,U,,,4,open,,Velionių skaičius kapinėse duomenų atnaujinimo datai,
-,,,,,aprasymas,string,,,,2,open,,Kapinių aprašymas. Taip pat gali būti nurodoma papildoma kontaktinė informacija.,
+,,,,,aprasymas_lt,string,,,,1,open,,Kapinių aprašymas. Taip pat gali būti nurodoma papildoma kontaktinė informacija.,
 ,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,ar_skaitmenizuotos,boolean,,,,4,open,,"Požymis, ar kapinės yra skaitmenizuotos",
 ,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Kapinių vietos WGS koordinatės,
