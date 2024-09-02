@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kapines,,,,,,,,,,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama bendro pobūdžio informacija, atvaizduojama cemety.lt portale, apie savivaldybių kapines Lietuvoje: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas - vienerios kapinės. PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,datasets/gov/kapines,,,,,,,,,,,,Savivaldybių kapinių duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Kapas,,,vda_id,,,4,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama bendro pobūdžio informacija, atvaizduojama cemety.lt portale, apie savivaldybių kapines Lietuvoje: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas - vienerios kapinės. PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,,,,Teritorija,,,vda_id,,,4,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama bendro pobūdžio informacija, atvaizduojama cemety.lt portale, apie savivaldybių kapines Lietuvoje: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas - vienerios kapinės. PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,kapines,string,,,,4,open,,Kapinių pavadinimas,
 ,,,,,adresas_lt,string,,,,2,open,,Fizinis kapinių adresas/Kapines administruojančios įstaigos adresas,
