@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,SiauliuMiestas,,,vda_id,,,4,,,Šiaulių miesto savivaldybės kapėse palaidotų velionių duomenys,
+,,,,SiauliuMiestas,,,vda_id,,,4,,,Šiaulių miesto savivaldybės kapinėse palaidotų velionių duomenys,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,kapo_id,ref,/datasets/gov/kapines/registras/kapavietes/SiauliuMiestas[kapo_id],,,4,open,,Kapavietės identifikatorius,
 ,,,,,ar_neatpazintas,boolean,,,,4,open,,Neatpažinto velionio požymis,
