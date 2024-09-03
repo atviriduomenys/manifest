@@ -32,4 +32,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,traumuota_zmoniu,integer,,,,4,open,,Traumuota žmonių,
 ,,,,,sunaikinta_statiniu,integer,,,,4,open,,Sunaikinta statinių,
 ,,,,,ivykio_svarba,integer,,,,4,open,,Ivykio svarba,
-
