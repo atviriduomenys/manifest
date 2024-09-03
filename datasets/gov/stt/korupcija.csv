@@ -1,0 +1,36 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/stt,,,,,,,,,,,,Specialiųjų tyrimų tarnyba,
+,datasets/gov/stt/korupcija,,,,,,,,,,,,Gauti pranešimai apie korupciją,"Gauti pranešimai apie korupciją,""Duomenų rinkinyje pateikiami Specialiųjų tyrimų tarnybai pateikti pranešimai apie korupcinio pobūdžio nusikalstamas veikas nuo 2024m. Rinkinio objektas - gautas pranešimas, pateiktas vienu iš galimų būdų: el. paštu, paštu, per e. pristatymo sistemą,  mobiliąja programėle, STT tinklalapyje ar atvykus į STT padalinį. Rinkinyje nurodoma informacija apie pranešimą (gavimo data, pateikimo būdas, priskiriama sritis ir sektorius), jį teikusį pranešėją (kategorija, tipas, požymis, ar pranešimas susijęs su pranešėjo darboviete) bei nagrinėjimą (nagrinėjimo tvarka, rezultatai ir galutinis sprendimas).
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Pranesimas,,,vda_id,,,4,,,Gauti pranešimai apie korupciją,"Gauti pranešimai apie korupciją,""Duomenų rinkinyje pateikiami Specialiųjų tyrimų tarnybai pateikti pranešimai apie korupcinio pobūdžio nusikalstamas veikas nuo 2024m. Rinkinio objektas - gautas pranešimas, pateiktas vienu iš galimų būdų: el. paštu, paštu, per e. pristatymo sistemą,  mobiliąja programėle, STT tinklalapyje ar atvykus į STT padalinį. Rinkinyje nurodoma informacija apie pranešimą (gavimo data, pateikimo būdas, priskiriama sritis ir sektorius), jį teikusį pranešėją (kategorija, tipas, požymis, ar pranešimas susijęs su pranešėjo darboviete) bei nagrinėjimą (nagrinėjimo tvarka, rezultatai ir galutinis sprendimas).
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,gavimas,date,D,,,4,open,,Pranešimo gavimo data,
+,,,,,gavimo_budas,string,,,,4,open,,Pranešimo gavimo būdas,
+,,,,,sritis,string,,,,4,open,,Pranešimo sritis,
+,,,,,sektorius,string,,,,4,open,,Pranešimo sektorius,
+,,,,,ar_vykdomas_istatymas,boolean,,,,4,open,,Lietuvos Respublikos korupcijos prevencijos įstatymo 9 str. „Pranešimas apie korupcinio pobūdžio nusikalstamas veikas“ vykdymas,
+,,,,,pranesejo_kategorija,string,,,,4,open,,Pranešėjo kategorija,
+,,,,,,enum,,,"""Valstybės sektoriuje dirbantis (veikiantis)asmuo""",,,,,
+,,,,,,,,,"""Mišriame sektoriuje dirbantis (veikiantis) asmuo)""",,,,,
+,,,,,ar_darboviete,boolean,,,,4,open,,"Požymis, ar pranešimas yra apie darbovietę",
+,,,,,pranesejo_tipas,string,,,,4,open,,Pranešėjo tipas (fizinis asmuo (grupė)/ juridinis asmuo),
+,,,,,,enum,,,"""Fizinis asmuo (grupė)""",,,,,
+,,,,,,,,,"""Juridinis asmuo""",,,,,
+,,,,,nagrinejimo_tvarka,string,,,,4,open,,Pranešimo nagrinėjimo tvarka,
+,,,,,,enum,,,"""Baudžiamojo proceso kodeksas""",,,,,
+,,,,,,,,,"""Pranešimų nagrinėjimo skyriaus tvarka""",,,,,
+,,,,,nagrinejimo_rezultatai,string,,,,4,open,,Pranešimo nagrinėjimo rezultatai,
+,,,,,,enum,,,"""Pažeidimų nenustatyta""",,,,,
+,,,,,,,,,"""Nustatyti tarnybinio (darbo drausmės) nusižengimo požymiai""",,,,,
+,,,,,,,,,"""Kita""",,,,,
+,,,,,,,,,"""Nustatyti nusikalstamos veikos požymiai""",,,,,
+,,,,,,,,,"""Nustatytos korupcinio pobūdžio rizikos""",,,,,
+,,,,,sprendimas,string,,,,4,open,,"Sprendimas, priimtas išnagrinėjus pranešimą vadovaujantis 2018-05-21 LRSTT direktoriaus aktualios redakcijos įsakymu Nr. 2-86 arba išnagrinėjus pranešimą baudžiamojo proceso kodekso tvarka",Žiūrėti stulpelį nagrinejimo_tvarka
+,,,,,,enum,,,"""Atsisakyti pradėti ikiteisminį tyrimą""",,,,,
+,,,,,,,,,"""Baigti procedūras""",,,,,
+,,,,,,,,,"""Pradėti ikiteisminį tyrimą""",,,,,
+,,,,,,,,,"""Priimti sprendimą pagal baudžiamojo proceso kodeksą""",,,,,
