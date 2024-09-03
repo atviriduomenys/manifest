@@ -705,3 +705,6 @@ datasets/gov/ast/imoniu_sutartys.csv
 datasets/gov/simno_komun/pakeltas_vanduo.csv
 datasets/gov/kauno_m_sav/socialinės_paslaugos.csv
 datasets/gov/kapines/informacija.csv
+datasets/gov/stt/korupcija.csv
+datasets/gov/kauno_m_sav/socialines_paslaugos.csv
+datasets/gov/simno_komun/tersalai_pries_valyma.csv
