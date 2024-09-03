@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/simno_komun/nuotekos,,,,,,,,,,,,Nuotekų debitas,"Alytaus rajono savivaldybės įmonės „Simno komunalininkas“ vedamoje nuotekų debitų apskaitoje fiksuojamas kiekviename valymo įrenginyje išvalytų buitinių nuotekų kiekis, skaičiuojamas kubiniais metrais per dieną. Duomenys nuo 2023 metų."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,NuotekuDebitas,,,vda_prime_key,,,4,,,Nuotekų debitas,"Alytaus rajono savivaldybės įmonės „Simno komunalininkas“ vedamoje nuotekų debitų apskaitoje fiksuojamas kiekviename valymo įrenginyje išvalytų buitinių nuotekų kiekis, skaičiuojamas kubiniais metrais per dieną. Duomenys nuo 2023 metų."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,irenginys,string,,,,4,open,,Įrenginys,
+,,,,,data,date,D,,,4,open,,Laikotarpis,
+,,,,,debitas_m3,number,m^3/d,,,4,open,,Atitekėjusių (ištekėjusių) nuotekų kiekis per dieną,
