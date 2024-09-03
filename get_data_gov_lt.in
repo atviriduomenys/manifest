@@ -299,6 +299,7 @@ datasets/gov/vk/rekomendacijos.csv
 datasets/gov/vk/varezultatai.csv
 datasets/gov/vk/vra.csv
 datasets/gov/vk/esirezultatai.csv
+datasets/gov/linesa/ondb.csv
 datasets/gov/lsd/sdg/sdg.csv
 datasets/gov/lsd/darbuotoju_darbo_uzmokestis/darbuotoju_darbo_uzmokestis.csv
 datasets/gov/lsd/misku_bukle.csv
@@ -704,3 +705,5 @@ datasets/gov/ast/imoniu_sutartys.csv
 datasets/gov/simno_komun/pakeltas_vanduo.csv
 datasets/gov/kauno_m_sav/socialinės_paslaugos.csv
 datasets/gov/stt/korupcija.csv
+datasets/gov/kauno_m_sav/socialines_paslaugos.csv
+datasets/gov/simno_komun/tersalai_pries_valyma.csv
