@@ -22,4 +22,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,anijonines_pam,number,mg/l,,,4,open,,"Anijoninės PAM, mg/l",
 ,,,,,viso_per_metus_kg,number,kg,,,4,open,,"Viso per metus, kg",
 ,,,,,viso_per_metus_t,number,t,,,4,open,,"Viso per metus, t",
-
