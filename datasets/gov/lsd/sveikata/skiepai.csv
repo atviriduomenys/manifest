@@ -1,5 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/sveikata/skiepai,,,,,,,,,,,,,
+,datasets/gov/lsd/sveikata/skiepai,,,,,,,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
+
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
