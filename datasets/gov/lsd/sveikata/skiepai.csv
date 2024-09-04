@@ -1,12 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/sveikata/skiepai,,,,,,,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
-
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,SkiepytiGripo,,,vda_id,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
-,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,SkiepytiGripo,,,vda_prime_key,,,,,,"Asmenys, paskiepyti šaltojo sezono ligų (gripo) skiepais, pagal ligą (gripas), įstaigą lytį ir amžiaus grupę","Kol kas pateikti tik gripo duomenys"
+,,,,,vda_prime_key,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
 ,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas"""
@@ -22,14 +21,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,age_gr,string,,,,4,open,,Skiepyto žmogaus apytikslė amžiaus grupė,Konfidencialumo tikslais pridėta triukšmo (<2 m.) ir sugrupuota
 ,,,,,n,integer,,,,4,open,,Asmenų skaičius,"Skaičius nurodyto amžiaus ir lyties asmenų, paskiepytų toje įstaigoje nurodytu laikotarpiu, nuo nurodytos ligos. Skaičiuojami unikalūs asmenys įstaigos ir laikotarpio lygiu, taigi asmuo gali būti įtrauktas į šią lentelę kelis kartus, jei skiepijosi skirtingose įstaigose, o taip pat viso sezono skaičius gali būti mažesnis nei visų mėnesių skaičių suma"
 ,,,,,,,,,,,,,,
-,,,,SkiepytiPadieniui,,,vda_id,,,,,,Pasiskiepiję asmenys pagal dieną ir ligą,
-,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,SkiepytiPadieniui,,,vda_prime_key,,,,,,Pasiskiepiję asmenys pagal dieną ir ligą,
+,,,,,vda_prime_key,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,date,date,D,,,4,open,,Diena,kurią skiepyta
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
 ,,,,,n_asm,integer,,,,4,open,,"Skaičius asmenų, paskiepytų nuo tos ligos tą dieną",
 ,,,,,,,,,,,,,,
-,,,,SkiepytiVakcina,,,vda_id,,,,,,"Pasiskiepiję asmenys pagal laikotarpį, ligą, vakciną ir įstaigą",
-,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,SkiepytiVakcina,,,vda_prime_key,,,,,,"Pasiskiepiję asmenys pagal laikotarpį, ligą, vakciną ir įstaigą",
+,,,,,vda_prime_key,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas"""
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
