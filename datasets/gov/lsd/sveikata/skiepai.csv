@@ -5,11 +5,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,SkiepytiGripo,,,vda_id,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
-
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
-
 ,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas"""
 ,,,,,osp_sav_pav,string,,,,4,open,,"Savivaldybė, kurioje registruota skiepijanti įstaiga","Nurodyta ""pan-LT"" įstaigoms, kurios turi filialų įvairiose šalies vietose"
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,
@@ -28,19 +26,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,date,date,D,,,4,open,,Diena,kurią skiepyta
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
 ,,,,,n_asm,integer,,,,4,open,,"Skaičius asmenų, paskiepytų nuo tos ligos tą dieną",
-
 ,,,,,,,,,,,,,,
 ,,,,SkiepytiVakcina,,,vda_id,,,,,,"Pasiskiepiję asmenys pagal laikotarpį, ligą, vakciną ir įstaigą",
-
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas"""
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
-
 ,,,,,sukelejas,string,,,,2,open,,Ligos sukėlėjas,
 ,,,,,n_asm_ligoje,integer,,,,4,open,,Asmenų skaičius pagal ligą,"Unikalių asmenų skaičius, paskiepytų nuo šios ligos per nurodytą laikotarpį. Gali būti mažesnis viso sezono laikotarpyje, negu suma pamėnesiui, jei žmogus skiepijasi kelis kartus per sezoną"
 ,,,,,medication_name,string,,,,2,open,,"Vakcinos, kuria skiepijama, pavadinimas",
-
 ,,,,,n_asm_vaiste,integer,,,,4,open,,Asmenų skaičius pagal ligą ir vakciną,"Suma gali būti didesnė nei skaičius pagal ligą, jei asmuo gavo kelias skirtingas vakcinas"
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,
 ,,,,,n_asm_istaigoje,integer,,,,4,open,,"Asmenų skaičius pagal ligą, vakciną ir įstaigą",
