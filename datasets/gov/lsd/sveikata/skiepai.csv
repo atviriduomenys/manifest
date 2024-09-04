@@ -38,4 +38,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,n_asm_vaiste,integer,,,,4,open,,Asmenų skaičius pagal ligą ir vakciną,"Suma gali būti didesnė nei skaičius pagal ligą, jei asmuo gavo kelias skirtingas vakcinas"
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,
 ,,,,,n_asm_istaigoje,integer,,,,4,open,,"Asmenų skaičius pagal ligą, vakciną ir įstaigą",
-
