@@ -30,7 +30,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,n_asm,integer,,,,4,open,,"Skaičius asmenų, paskiepytų nuo tos ligos tą dieną",
 
 ,,,,,,,,,,,,,,
-,,,,SkiepytiVakcina,,,vda_id,,,,,,Pasiskiepiję asmenys pagal laikotarpį,"ligą, vakciną ir įstaigą"
+,,,,SkiepytiVakcina,,,vda_id,,,,,,"Pasiskiepiję asmenys pagal laikotarpį, ligą, vakciną ir įstaigą",
+
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas"""
