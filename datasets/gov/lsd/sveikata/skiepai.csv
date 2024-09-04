@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/sveikata/skiepai,,,,,,,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
+,datasets/gov/lsd/sveikata/skiepai,,,,,,,,,,,,"Asmenys, paskiepyti įvairių ligų skiepais",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,SkiepytiGripo,,,vda_prime_key,,,,,,"Asmenys, paskiepyti šaltojo sezono ligų (gripo) skiepais, pagal ligą (gripas), įstaigą lytį ir amžiaus grupę","Kol kas pateikti tik gripo duomenys"
+,,,,SkiepytiGripo,,,vda_prime_key,,,,,,"Asmenys, paskiepyti šaltojo sezono ligų (gripo) skiepais, pagal ligą (gripas), įstaigą lytį ir amžiaus grupę",Kol kas pateikti tik gripo duomenys
 ,,,,,vda_prime_key,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
