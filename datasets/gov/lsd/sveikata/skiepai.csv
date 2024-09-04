@@ -8,7 +8,7 @@
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,,,,,,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d.",,,,,
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",,,,,
-,,,,,laikotarpis,string,,,,2,open,,"Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas""",,,,,
+,,,,,laikotarpis,string,,,,2,open,,Laikotarpis,"Mėnuo, kai buvo paskiepyta, arba ""Visas sezonas""",,,,,
 ,,,,,osp_sav_pav,string,,,,4,open,,"Savivaldybė, kurioje registruota skiepijanti įstaiga","Nurodyta ""pan-LT"" įstaigoms, kurios turi filialų įvairiose šalies vietose",,,,
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,,,,,,
 ,,,,,jar_kodas,string,,,,4,open,,Skiepijančios įstaigos JAR kodas,,,,,,
