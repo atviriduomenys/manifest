@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,
 ,,,,,jar_kodas,string,,,,4,open,,Skiepijančios įstaigos JAR kodas,
 ,,,,,ist_type,string,,,,4,open,,Skiepijančios įstaigos tipas,
-,,,,,,,,,"""vieša""",,,,Vieša,
+,,,,,,enum,,,"""vieša""",,,,Vieša,
 ,,,,,,,,,"""privati""",,,,Privati,
 ,,,,,lytis,string,,,,4,open,,Skiepyto žmogaus lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
