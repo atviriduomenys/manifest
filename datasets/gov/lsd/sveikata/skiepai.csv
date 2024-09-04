@@ -38,7 +38,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 ,,,,,sukelejas,string,,,,2,open,,Ligos sukėlėjas,
 ,,,,,n_asm_ligoje,integer,,,,4,open,,Asmenų skaičius pagal ligą,"Unikalių asmenų skaičius, paskiepytų nuo šios ligos per nurodytą laikotarpį. Gali būti mažesnis viso sezono laikotarpyje, negu suma pamėnesiui, jei žmogus skiepijasi kelis kartus per sezoną"
-,,,,,medication_name,string,,,,2,open,,Vakcinos,"kuria skiepijama, pavadinimas"
+,,,,,medication_name,string,,,,2,open,,"Vakcinos, kuria skiepijama, pavadinimas",
+
 ,,,,,n_asm_vaiste,integer,,,,4,open,,Asmenų skaičius pagal ligą ir vakciną,"Suma gali būti didesnė nei skaičius pagal ligą, jei asmuo gavo kelias skirtingas vakcinas"
 ,,,,,espbi_ist_pav,string,,,,3,open,,Skiepijančios įstaigos pavadinimas,
 ,,,,,n_asm_istaigoje,integer,,,,4,open,,Asmenų skaičius pagal ligą,vakciną ir įstaigą
