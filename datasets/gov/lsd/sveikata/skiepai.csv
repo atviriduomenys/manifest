@@ -4,7 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,SkiepytiGripo,,,vda_id,,,,,,Asmenys,"paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę"
+,,,,SkiepytiGripo,,,vda_id,,,,,,"Asmenys, paskiepyti šaltojo sezono skiepais, pagal ligą, įstaigą, lytį ir amžiaus grupę",
+
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,sezonas,integer,,,,4,open,,Sezono pradžios metai,"Sezonas prasideda nuo rugsėjo mėn. Pvz., ""2023"" sezonas apima periodą nuo 2023 rugsėjo 1 d. iki 2024 rugpjūčio 31 d."
 ,,,,,liga,string,,,,2,open,,Liga,nuo kurios skiepijama
