@@ -23,7 +23,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,SkiepytiPadieniui,,,vda_prime_key,,,,,,Pasiskiepiję asmenys pagal dieną ir ligą,
 ,,,,,vda_prime_key,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,date,date,D,,,4,open,,Diena,kurią skiepyta
+,,,,,date,date,D,,,4,open,,"Diena, kurią skiepyta",
+
 ,,,,,liga,string,,,,2,open,,"Liga, nuo kurios skiepijama",
 ,,,,,n_asm,integer,,,,4,open,,"Skaičius asmenų, paskiepytų nuo tos ligos tą dieną",
 ,,,,,,,,,,,,,,
