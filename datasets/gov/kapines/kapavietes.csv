@@ -1,6 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kapines/registras,,,,,,,,,,,,Savivaldybių kapinių registro duomenys,
-,datasets/gov/kapines/registras/kapavietes,,,,,,,,,,,,Duomenys apie kapavietes savivaldybių kapinėse,"Rinkinyje pateikiami suskaitmenintų Lietuvos savivaldybėms priklausančių kapinių kapaviečių duomenys. Aprašomos kapaviečių charakteristikos: ilgis, plotis, dydis, palaidotų velionių skaičius, kapavietės WGS koordinatės bei papildomo pobūdžio informacija. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,datasets/gov/kapines/registras,,,,,,,,,,,,Savivaldybių kapinių registro duomenys,"Rinkinyje pateikiami suskaitmenintų Lietuvos savivaldybėms priklausančių kapinių kapaviečių ir jose palaidotų velionių duomenys. Nurodomos kapaviečių charakteristikos: ilgis, plotis, dydis, palaidotų velionių skaičius, kapavietės WGS koordinatės, papildomo pobūdžio informacija. Taip pat pateikiamos palaidoto velionio charakteristikos: vardas, pavardė, lytis, gimimo, mirties ir palaidojimo datos, ir su jo kapaviete susiję duomenys (ryšys su kitais kapavietėje palaidotais asmenimis, kapą prižiūrinčiu asmeniu, kapo gylis, vieta bendrame kapinių plane). 
+ 
+Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,datasets/gov/kapines/registras/kapavietes,,,,,,,,,,,,Duomenys apie kapavietes savivaldybių kapinėse,"Pateikiami suskaitmenintų Lietuvos savivaldybėms priklausančių kapinių kapaviečių duomenys. Aprašomos kapaviečių charakteristikos: ilgis, plotis, dydis, palaidotų velionių skaičius, kapavietės WGS koordinatės bei papildomo pobūdžio informacija. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -15,9 +17,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
-,,,,,gylis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
+,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Kapavietės vietos taško WGS koordinatės,
+,,,,,geometrija,"geometry(3346)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
