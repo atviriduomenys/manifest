@@ -30,5 +30,5 @@ PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,,,,,"""karštas vanduo""",,,,karštas vanduo,
 ,,,,,,,,,"""karštas vanduo/šildymas""",,,,karštas vanduo/šildymas,
 ,,,,,pastabos_lt,string,,,,2,,,"parašoma žodiais, atjungtas/ pajungtas šildymas arba pajungtas šildymas ir karštas vanduo",
-,,,,,,comment,type,,"update(property: ""pastabos_lt@lt"", type: ""text"")	",,,spinta:204,,
+,,,,,,comment,type,,"update(property: ""pastabos_lt@lt"", type: ""text"")	",4,,spinta:204,,
 ,,,,,kontrolierius,string,,,,4,,,darbus atlikęs asmuo,
