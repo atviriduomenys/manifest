@@ -32,7 +32,6 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,ar_skaitmenizuotos,boolean,,,,4,open,,"Požymis, ar kapinės yra skaitmenizuotos",
 ,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Kapinių vietos WGS koordinatės,
-,,,,,ar_auto_atpazinimas,boolean,,,,4,open,,"Požymis, ar leidžia atlikti automatinį atpažinimo procesą",
 ,,,,,ar_nepriziurimi_viesinami,boolean,,,,4,open,,"Požymis, ar neprižiūrimos kapavietės yra viešinamos.",
 ,,,,,ar_urnos_zemelapyje,boolean,,,,4,open,,"Požymis, ar urnos atvaizduojamos viešame žemėlapyje",
 ,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Paskutinė duomenų atnaujinimo data,
