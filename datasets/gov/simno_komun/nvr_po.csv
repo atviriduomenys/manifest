@@ -3,9 +3,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TersaluKiekis,,,vda_prime_key,,,4,,,Nuotekų kiekiai pagal rodiklius po valymo,"Alytaus rajono savivaldybės įmonės „Simno komunalininkas“ Nuotekų valymo registre (NVR) kaupiamos užterštumo rodiklių reikšmės po valymo. Duomenų rinkinys laikinai apima tik 2023 m., nors yra numatyta įtraukti duomenis nuo 2018 m. ir atnaujinti kas 6 mėnesius. Duomenų rinkinys apima valymo įrenginio pavadinimą, užterštumo rodiklių pavadinimus, pirmųjų pusmečių dienų datas, kada matuotas užterštumas, bei rodiklių reiškmes. Duomenų rinkinys yra ilgo formato, todėl vieno valymo įrenginio duomenys išdėstyti vertikaliai. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,,,,TersaluKiekis,,,vda_prime_key,,,4,,,Nuotekų kiekiai pagal rodiklius po valymo,"Alytaus rajono savivaldybės įmonės „Simno komunalininkas“ Nuotekų valymo registre (NVR) kaupiamos užterštumo rodiklių reikšmės po valymo. Duomenų rinkinys laikinai apima tik 2023 m., nors yra numatyta įtraukti duomenis nuo 2018 m. ir atnaujinti kas 6 mėnesius. Duomenų rinkinys apima valymo įrenginio pavadinimą, užterštumo rodiklių pavadinimus, pirmųjų pusmečių dienų datas, kada matuotas užterštumas, bei rodiklių reikšmes. Duomenų rinkinys yra ilgo formato, todėl vieno valymo įrenginio duomenys išdėstyti vertikaliai. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,irenginys,string,,,,4,open,,Valymo įrenginys,
 ,,,,,rodiklis,string,,,,4,open,,Matuojamas rodiklis,
-,,,,,data,date,D,,,4,open,,Pusmečio pirmodi diena,
+,,,,,data,date,D,,,4,open,,Pusmečio pirmoji diena,
 ,,,,,reiksme,number,,,,4,open,,Rodiklio užfiksuota reikšmė,
