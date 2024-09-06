@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mirties_data,date,D,,,4,open,,Velionio mirties data,
 ,,,,,laidojimo_data,date,D,,,4,open,,Velionio laidojimo data,
 ,,,,,liudijimo_isdavimas,date,D,,,4,open,,Velionio mirties liudijimo išdavimo data,
-,,,,,isdavimo_vieta,date,D,,,4,open,,Velionio mirties liudijimo išdavimo vieta,
+,,,,,isdavimo_vieta,string,,,,4,open,,Velionio mirties liudijimo išdavimo vieta,
 ,,,,,kapo_gylis_m,integer,m,,,4,open,,Velionio kapo gylis,
 ,,,,,rysys_su_palaidotu,string,,,,4,open,,Velionio ryšys su kitu kapavietėje palaidotu asmeniu,
 ,,,,,kapa_priziuri,string,,,,4,open,,Kapą prižiūrinčio asmens ryšys su velioniu,
