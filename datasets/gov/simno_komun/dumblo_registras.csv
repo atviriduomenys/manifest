@@ -10,4 +10,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,"""Daugai""",,,,,,
 ,,,,,,,,"""Simnas""",,,,,,
 ,,,,,rodikliai,string,,,,4,open,,Rodiklių pavadinimai,
-,,,,,reiksmes,decimal,,,,4,open,,Rodiklių reikšmės,
+,,,,,reiksmes,number,,,,4,open,,Rodiklių reikšmės,
