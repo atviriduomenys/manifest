@@ -16,4 +16,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,y_koord_lks,number,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
 ,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
-,,,,,geometrija,string,,,,4,open,,Geometrija,
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
