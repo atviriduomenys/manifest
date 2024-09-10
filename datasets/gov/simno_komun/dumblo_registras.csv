@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/simno_komun/dumblo_registras,,,,,,,,,,,,Dumblo susidarymas valymo įrenginiuose ,"SĮ ""Simno komunalininkas"" fiksuojamas dumblo susidarymas valymo įrenginiuose "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Rodiklis,,,vda_prime_key,,,4,,,Dumblo susidarymas valymo įrenginiuose ,"SĮ ""Simno komunalininkas"" fiksuojamas dumblo susidarymas valymo įrenginiuose "
+,,,,,vda_prime_key,string,,,,4,open,,VDA sukurtas šifruotas eilutės unikalus numeris,
+,,,,,atskaitos_menuo,date,,,,4,open,,Atskaitos mėnuo,
+,,,,,vietove,string,,,,4,open,,Valymo įrenginių vietovė,
+,,,,,,enum,,"""Daugai""",,,,,,
+,,,,,,,,"""Simnas""",,,,,,
+,,,,,rodikliai,string,,,,4,open,,Rodiklių pavadinimai,
+,,,,,reiksmes,decimal,,,,4,open,,Rodiklių reikšmės,
