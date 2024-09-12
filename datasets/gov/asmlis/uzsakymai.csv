@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Uzsakymas,,,uzsakymo_id,,,4,,,Atliekų tvarkymo užsakymų duomenys,"Marijampolės apskrities atliekų tvarkymo centro naudojama Atliekų surinkimo, monitoringo ir logistikos informacinė sistema (ASMLIS) skirta atliekų tvarkymo organizavimui ir atsiskaitymui už komunalinių atliekų surinkimo ir išvežimo paslaugas. Duomenys kaupiami nuo 2017 m. ir yra atnaujinami kasdien. Duomenų rinkinį sudaro: pateikto paslaugos užsakymo identifikatorius, adresas, data, užsakytos paslaugos veiksmas, atliekų kodas, rūšis ir nurodytos vietovės apibūdinimas."
+,,,,Uzsakymas,,,uzsakymo_id,,,4,,,Atliekų tvarkymo užsakymų duomenys,"UAB „TECHNOLOGINIŲ PASLAUGŲ SPRENDIMAI“ sukurta Atliekų surinkimo, monitoringo ir logistikos informacinė sistema (ASMLIS) naudojama atliekų tvarkymo organizavimui ir atsiskaitymui už komunalinių atliekų surinkimo ir išvežimo paslaugas. Priklausomai nuo naudojančios įstaigos duomenų aprėptis gali skirtis, tačiau duomenys numatyti būti atnaujinami kasdien. Duomenų rinkinį sudaro: pateikto paslaugos užsakymo identifikatorius, adresas, data, užsakytos paslaugos veiksmas, atliekų kodas, rūšis ir nurodytos vietovės apibūdinimas. Vienas įrašas atitinka vieną pateiktą užsakymą. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,uzsakymo_id,string,,,,4,open,,Identifikatorius,
 ,,,,,uzsakymo_adresas,string,,,,4,open,,Užsakymo vykdymo vietos adresas,
 ,,,,,uzsakytas_veiksmas,string,,,,3,open,,Užsakytos paslaugos veiksmas,
