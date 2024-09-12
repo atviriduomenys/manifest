@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/llti/,,,,,,,,,,,,Lietuvių literatūros ir tautosakos institutas ,
-,datasets/gov/llti/tautosakos_vaizdo_garso_irasu_duomenys,,,,,,,,,,,,Tautosakos vaizdo ir garso įrašų duomenys,
+,datasets/gov/llti,,,,,ns,,,,,,,Lietuvių literatūros ir tautosakos institutas,
+,datasets/gov/llti/tautosakos_vaizdo_garso_irasai,,,,,,,,,,,,Tautosakos vaizdo ir garso įrašų duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TautosakosVaizdoGarsoIrasasDuomenys,,,vda_prime_key,,,4,,,Tautosakos vaizdo ir garso įrašų duomenys,"Duomenų rinkinyje pateikiama informacija apie 1905–2007 m. Lietuvos tautosakos archyvinius garso įrašus ir fotografijas. Rinkinyje pateikiamos ir nuorodos į įrašus, pateiktus Lietuvos literatūros ir tautosakos instituto svetainėje. Viena duomenų rinkinio eilutė nurodo įrašą ir informaciją apie pateikėją. Kai įrašo pateikėjų yra daugiau nei vienas, informacija apie įrašą pateikiama per kelias eilutes. Adresuose pateikiamos šios santrumpos: r. – rajonas, k. – kaimas, mstl. – miestelis, mst. – miestas, apyl. – apylinkė, apskr. – apskritis, gub. – gubernija. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,VaizdoGarsoIrasas,,,vda_prime_key,,,4,,,Tautosakos vaizdo ir garso įrašų duomenys,"Duomenų rinkinyje pateikiama informacija apie 1905–2007 m. Lietuvos tautosakos archyvinius garso įrašus ir fotografijas. Rinkinyje pateikiamos ir nuorodos į įrašus, pateiktus Lietuvos literatūros ir tautosakos instituto svetainėje. Viena duomenų rinkinio eilutė nurodo įrašą ir informaciją apie pateikėją. Kai įrašo pateikėjų yra daugiau nei vienas, informacija apie įrašą pateikiama per kelias eilutes. Adresuose pateikiamos šios santrumpos: r. – rajonas, k. – kaimas, mstl. – miestelis, mst. – miestas, apyl. – apylinkė, apskr. – apskritis, gub. – gubernija. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,iraso_id,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,laikmenos_nr,string,,,,4,open,,Laikmenos numeris,
