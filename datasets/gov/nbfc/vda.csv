@@ -5,8 +5,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,InstitucijosDarbuotojas,,,tabelio_nr,,,4,,,Valstybės duomenų agentūros darbuotojai,"Institucijų darbuotojų informacija pagal gimimo metus, lytį, darbo pradžią, pabaigą, skyrių, instituciją. Gimimo metai apvalinami iki dešimties. Priimti ir atleisti iki 2022-01-01 dienos į rinkinį nepatenka. Priimti prieš 2022-01-01, ir atleisti po 2022-01-01 arba dirbantys iki dabar - yra rinkinyje."
-,,,,,tabelio_nr,string,,,,4,open,,Šifruotas Darbuotojo unikalus tabelio numeris,
-,,,,,asmens_kodas,string,,,,4,open,,Šifruotas asmens kodas,
+,,,,,tabelio_nr,string,,,,4,open,,Darbuotojo unikalus tabelio numeris šifruotas šiam rinkiniui (su kitais rinkiniais nesijungia),
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas unikaliai šifruotas šiam rinkiniui (su kitais rinkiniais nesijungia),
 ,,,,,ak_validacija,string,,,,4,open,,Ar asmens kodas validus,
 ,,,,,lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
 ,,,,,gim_desimtm_ak,date,Y,,,4,open,,Asmens gimimo metai iš asmens kodo,
