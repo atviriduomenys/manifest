@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/nbfc,,,,,ns,,,,,,,Nacionalinis bendrųjų funkcijų centras,
+,datasets/gov/nbfc/vda,,,,,,,,,,,,Valstybės duomenų agentūros darbuotojai,"Institucijų darbuotojų informaciją pagal gimimo metus, lytį, darbo pradžią, pabaigą, skyrių, instituciją. Gimimo metai apvalinami iki dešimties. Priimti ir atleisti iki 2022-01-01 dienosį rinkinį nepatenka. Priimti prieš 2022-01-01, ir atleisti po 2022-01-01 arba dirbantys iki dabar - yra rinkinyje."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,InstitucijosDarbuotojas,,,tabelio_nr,,,4,,,Valstybės duomenų agentūros darbuotojai,"Institucijų darbuotojų informaciją pagal gimimo metus, lytį, darbo pradžią, pabaigą, skyrių, instituciją. Gimimo metai apvalinami iki dešimties. Priimti ir atleisti iki 2022-01-01 dienosį rinkinį nepatenka. Priimti prieš 2022-01-01, ir atleisti po 2022-01-01 arba dirbantys iki dabar - yra rinkinyje."
+,,,,,tabelio_nr,string,,,,4,open,,Darbuotojo unikalus tabelio numeris,
+,,,,,asmens_kodas,string,,,,4,open,,Šifruotas asmens kodas,
+,,,,,ak_validacija,string,,,,4,open,,Ar asmens kodas validus,
+,,,,,lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
+,,,,,gim_desimtm_ak,date,Y,,,4,open,,Asmens gimimo metai iš asmens kodo,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,gim_desimtm,date,Y,,,4,open,,Gimimo metai,
+,,,,,darbo_pradzia,date,D,,,4,open,,Darbo pradžos data,
+,,,,,darbo_pabaiga,date,D,,,4,open,,Darbo pabaigos data,
+,,,,,skyrius,string,,,,4,open,,Pareigybės Pavadinimas,
+,,,,,institucija,string,,,,4,open,,Institucijos pavadinimas,
+,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
