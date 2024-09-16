@@ -14,6 +14,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gim_desimtm,date,Y,,,4,open,,Gimimo metai,
 ,,,,,darbo_pradzia,date,D,,,4,open,,Darbo pradžos data,
 ,,,,,darbo_pabaiga,date,D,,,4,open,,Darbo pabaigos data,
-,,,,,skyrius,string,,,,4,open,,Pareigybės Pavadinimas,
+,,,,,skyrius,string,,,,4,open,,Skyriaus Pavadinimas,
 ,,,,,institucija,string,,,,4,open,,Institucijos pavadinimas,
 ,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
