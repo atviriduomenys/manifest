@@ -1,5 +1,4 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vrk,,,,,,,,,,,,Vyriausioji rinkimų komisija,
 ,datasets/gov/vrk/rinkeju_demografiniai_duomenys,,,,,,,,,,,,Rinkėjų demografiniai duomenys,"Vyriausiosios rinkimų komisijos Rinkėjų sąrašų tvarkymo posistemė kaupia rinkėjų balsavimo žymėjimus. Duomenys kaupiami nuo 2011-12-29 ir yra atnaujinami. Duomenų rinkinys sudarytas iš 4 atskirų lentelių apie rinkėjus, rinkėjų žymėjimus, rinkimų apygardas ir vykdomus rinkimus. Lentelėse yra įtraukti išorinių raktų stulpeliai suteikti galimybę apjungti jose esančius duomenis. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
