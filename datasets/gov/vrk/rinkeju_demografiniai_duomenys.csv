@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rinkejo_gim_m,date,Y,,,4,open,,Rinkėjo gimimo metai,
 ,,,,,,,,,,,,,,
 ,,,,Zymejimas,,,vda_prime_key,,,4,,,Rinkėjų žymėjimai,"Rinkėjų balsų žymėjimų lentelė. Vienas įrašas atitinka vieno rinkėjo konkrečiais rinkimais (ne)balsavimo žymėjimą. Lentelė sudaryta iš pseudonimizuoto rinkėjo asmens kodo, vykdomų rinkimų turo ir apygardos, kurioje nubalsuota, identifikatorių.  "
-,,,,,vda_prime_key,,,,,4,open,,Unikalus identifikatorius,
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,rinkejo_asm_k,string,,,,4,open,,Rinkėjo pseudonimizuotas asmens kodas,
 ,,,,,rinkimu_turo_id,string,,,,4,open,,Vykdomų rinkimų turo identifikatorius,
 ,,,,,faktines_apygardos_id,string,,,,4,open,,"Apygardos, kurioje nubalsuota, identifikatorius",
