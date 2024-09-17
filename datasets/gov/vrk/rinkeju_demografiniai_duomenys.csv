@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Rinkejas,,,rinkejo_asm_k,,,4,,,Rinkėjai,"Balso teisę turinčių rinkėjų lentelė. Vienas įrašas atitinka vieną rinkėją. Lentelė sudaryta iš rinkėjo pseudonimizuoto asmens kodo, lyties ir gimimo metų. ~12% rinkėjų gimimo metai yra užtriukšminti siekiant užtikrinti konfidencialumą."
+,,,,Rinkejas,,,rinkejo_asm_k,,,4,,,Rinkėjai,"Balso teisę turinčių rinkėjų lentelė. Vienas įrašas atitinka vieną rinkėją. Lentelė sudaryta iš rinkėjo pseudonimizuoto asmens kodo, lyties ir gimimo metų. ~12% rinkėjų gimimo metų įrašų yra modifikuoti pridedant atsitiktines vertes - triukšmą, siekiant užtikrinti konfidencialumą."
 ,,,,,rinkejo_asm_k,string,,,,4,open,,Rinkėjo pseudonimizuotas asmens kodas,
 ,,,,,rinkejo_lytis,string,,,,4,open,,Rinkėjo lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
