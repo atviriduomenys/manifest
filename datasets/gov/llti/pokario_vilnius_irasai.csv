@@ -3,8 +3,8 @@
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Irasas,,,vda_prime_id,,,4,,,"Projekto ""Pokario Vilnius"" naujakurių  pasakojimų garso ir vaizdo įrašai ","Pagal projektą ""Pokario Vilnius"" atliktų interviu su pokario Vilniaus naujakuriais autobiografinių pasakojimų garso ir vaizdo įrašai."
-,,,,,vda_prime_id,string,,,,,,,VDA sukurtas šifruotas eilutės unikalus numeris,
+,,,,Irasas,,,vda_prime_key,,,4,,,"Projekto ""Pokario Vilnius"" naujakurių  pasakojimų garso ir vaizdo įrašai ","Pagal projektą ""Pokario Vilnius"" atliktų interviu su pokario Vilniaus naujakuriais autobiografinių pasakojimų garso ir vaizdo įrašai."
+,,,,,vda_prime_key,string,,,,,,,VDA sukurtas šifruotas eilutės unikalus numeris,
 ,,,,,iraso_tipas,string,,,,4,open,,Įrašo tipas,
 ,,,,,,enum,,"""Garso įrašai""",,,,,,
 ,,,,,,,,"""Vaizdo įrašai""",,,,,,
