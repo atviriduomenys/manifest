@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,NeklinojamoTurtoISArch,,,obj_id,,,4,,,Kauno miesto nekilnojamo turto objektai,"Kauno miesto ""Nekilnojamojo ilgalaikio turto informacinė sistema"" skirta turto valdymui, naudojimui ir disponavimui administruoti. Archyviniai duomenys ir naujinami nebus."
+,,,,NTObjektas,,,obj_id,,,4,,,Kauno miesto nekilnojamo turto objektai,"Kauno miesto ""Nekilnojamojo ilgalaikio turto informacinė sistema"" skirta turto valdymui, naudojimui ir disponavimui administruoti. Archyviniai duomenys ir naujinami nebus."
 ,,,,,obj_id,string,,,,4,open,,Identifikatorius,
 ,,,,,objekto_pavadinimas,string,,,,4,open,,Objekto pavadinimas,
 ,,,,,seniunija,string,,,,4,open,,Seniūnija,
