@@ -1,0 +1,14 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/llti/pokario_vilnius_irasai,,,,,,,,,,,,"Projekto ""Pokario Vilnius"" naujakurių  pasakojimų garso ir vaizdo įrašai ","Pagal projektą ""Pokario Vilnius"" atliktų interviu su pokario Vilniaus naujakuriais autobiografinių pasakojimų garso ir vaizdo įrašai."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Irasas,,,vda_prime_key,,,4,,,"Projekto ""Pokario Vilnius"" naujakurių  pasakojimų garso ir vaizdo įrašai ","Pagal projektą ""Pokario Vilnius"" atliktų interviu su pokario Vilniaus naujakuriais autobiografinių pasakojimų garso ir vaizdo įrašai."
+,,,,,vda_prime_key,string,,,,,,,VDA sukurtas šifruotas eilutės unikalus numeris,
+,,,,,iraso_tipas,string,,,,4,open,,Įrašo tipas,
+,,,,,,enum,,"""Garso įrašai""",,,,,,
+,,,,,,,,"""Vaizdo įrašai""",,,,,,
+,,,,,ikelimo_data,date,D,,,4,open,,Įrašo įkėlimo arba atnaujinimo data,
+,,,,,nuoroda_i_irasa,string,,,,4,open,,Nuoroda į įrašą,
+,,,,,iraso_aprasas_lt,string,,,,4,open,,Trumpas įrašo aprašymas,
+,,,,,,comment,type,,"update(property: ""iraso_aprasas_lt@lt"", type: ""text"")",4,open,spinta:204,,
