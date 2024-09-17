@@ -686,6 +686,9 @@ datasets/gov/kauno_m_sav/daugiabuciai.csv
 datasets/gov/kauno_m_sav/miesto_renginiai.csv
 datasets/gov/vgn/viesieji_pirkimai.csv
 datasets/gov/vrk/rinkejo_puslapio_vartotojas.csv
+datasets/gov/vrk/balsu_skaiciavimo_isvykos.csv
+datasets/gov/vrk/rinkeju_demografiniai_duomenys.csv
+datasets/gov/vrk/mokejimai_komisiju_nariams.csv
 datasets/gov/vgn/asmens_bylos.csv
 datasets/gov/skuodo_r_sav/paslaugu_prasymai.csv
 datasets/gov/kauno_m_sav/darzeliu_priemimai.csv
@@ -720,5 +723,7 @@ datasets/gov/llti/tautosakos_vaizdo_garso_irasu_duomenys.csv
 datasets/gov/nbfc/vda.csv
 datasets/gov/muitine/vienkartiniu_garantiju_duomenys.csv
 datasets/gov/ndnt/autokorteliu_isdavimai.csv
+datasets/gov/llti/pokario_vilnius_irasai.csv
+datasets/gov/tppc/technines_pagalbos_priemones.csv
 datasets/gov/llti/pokario_vilnius_irasai.csv
 datasets/gov/kauno_m_sav/ilgalaikis_nt_arch.csv
