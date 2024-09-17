@@ -22,3 +22,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,arhyvinis,string,,,,4,open,,Archyvinio objekto identifikatorius,,
 ,,,,,arch_data,date,D,,,4,open,,Objekto perkėlimo į archyvą data,,
 ,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Duomenų atnaujinimo data (vda),,
+
