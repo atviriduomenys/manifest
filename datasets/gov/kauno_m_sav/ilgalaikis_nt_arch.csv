@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,unikalusis_nr,string,,,,4,open,,Objekto unikalus numeris,
 ,,,,,inventorinis_nr,string,,,,4,open,,Inventorinis numeris,
 ,,,,,valdoma_dalis,string,,,,4,open,,Valdomos dalies duomenys,
-,,,,,valdomas_plotas,double,,,,4,open,,Valdomo ploto duomenys,
+,,,,,valdomas_plotas,number,,,,4,open,,Valdomo ploto duomenys,
 ,,,,,kategorija,string,,,,4,open,,Objekto kategorija,
 ,,,,,savivinkas,string,,,,4,open,,Objekto savininkas,
 ,,,,,turto_paskirtis,string,,,,4,open,,Nekilnojamojo turto paskirtis,
