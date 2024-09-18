@@ -8,4 +8,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyv_p,date,D,,,4,open,,Istorinės gyvenamosios vietovės pakeitimo data,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,ist_gyv_vietoves,"geometry(polygon,3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,
+,,,,,ist_gyv_vietoves,"geometry(geometry,3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,
