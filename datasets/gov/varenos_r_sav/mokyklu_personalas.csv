@@ -11,9 +11,9 @@ Duomenys pateikiami asmenų kurie įsidarbino nuo 1959 metų.
 PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,vda_prime_key,string,,,,4,open,,Identifikacinos numeris,
 ,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,Pateikiamas užšifruotas asmens kodas
-,,,,,ak_validacija,string,,,,4,open,,Asmens kodo validacija,Pateikiama ar asmnes kodas tinkamas ar ne (vertinant pagal asmens kodo sudarymo taisykles)
+,,,,,ak_validacija,string,,,,4,open,,Asmens kodo validacija,Pateikiama ar asmens kodas tinkamas ar ne (vertinant pagal asmens kodo sudarymo taisykles)
 ,,,,,lytis_ak,string,,,,4,open,,Asmens lytis,
-,,,,,gimimo_desimtmetis,date,Y,,,4,open,,Gimimo dešimtetis,Asmenu gimimo dešimtmečio pirma diena
+,,,,,gimimo_desimtmetis,date,Y,,,4,open,,Gimimo dešimtmetis,Asmenu gimimo dešimtmečio pirma diena
 ,,,,,pareigybe,string,,,,4,open,,Pareigybė,
 ,,,,,dirba_nuo,date,D,,,4,open,,Asmuo dirba nuo,
 ,,,,,dirba_iki,date,D,,,4,open,,Asmuo dirba iki,
