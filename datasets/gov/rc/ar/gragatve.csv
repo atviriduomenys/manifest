@@ -8,4 +8,4 @@ Duomenų geografinė imtis — visa šalies teritorija."
 ,,,,,gat_ilgis,number,m,,,4,open,,Gatvės ilgis metrais,
 ,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,,,4,open,,"Gyvenamosios vietovės, į kurią patenka gatvė, išorinis kodas ",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,gatves,"geometry(geoemtry, 3346)",m,,,4,open,,"Gatvės ašinė linija su pradžia, pabaiga ir posūkio taškai",
+,,,,,gatves,"geometry(geometry, 3346)",m,,,4,open,,"Gatvės ašinė linija su pradžia, pabaiga ir posūkio taškai",
