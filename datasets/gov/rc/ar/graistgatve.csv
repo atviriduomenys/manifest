@@ -11,4 +11,4 @@ Duomenų geografinė imtis — visa šalies teritorija."
 ,,,,,gat_ilgis,number,m,,,4,open,,Istorinės (panaikintos) gatvės ilgis metrais,
 ,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove,,,4,open,,Gyvenamosios vietovės kodas Registre,
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,ist_gatves,"geometry(linestring,3346)",m,,,4,open,,"Istorinės (panaikintos) gatvės ašinė linija su pradžia, pabaiga ir posūkio taškais",
+,,,,,ist_gatves,"geometry(geometry,3346)",m,,,4,open,,"Istorinės (panaikintos) gatvės ašinė linija su pradžia, pabaiga ir posūkio taškais",
