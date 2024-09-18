@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/varenos_r_sav,,,,,,,,,,,,Varėnos rajono savivaldybė,
+,datasets/gov/varenos_r_sav/mokyklos,,,,,,,,,,,,Varėnos rajono savivaldybės mokyklų informacija,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,MokyklosPersonalas,,,vda_prime_key,,,4,,,Varėnos rajono savivaldybės mokyklų personalas,"Rinkinyje pateikiamas Varėnos rajono savivaldybės mokyklos personalo sąrašas. Pateikiama tokia informacija kaip asmens lytis, užšifruotas asmens kodas, asmens amžius dešimtmečiais, pareigos, darbo laikotarpis ir ugdymo įstaiga.
+Viena eilutė atitinka vieno asmens darbo laikotarpį tam tikrose pareigose, tam tikroje įstaigoje.
+Duomenys pateikiami asmenų kurie įsidarbino nuo 1959 metų.
+PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,,,,,vda_prime_key,string,,,,4,open,,Identifikacinos numeris,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,Pateikiamas užšifruotas asmens kodas
+,,,,,ak_validacija,string,,,,4,open,,Asmens kodo validacija,Pateikiama ar asmens kodas tinkamas ar ne (vertinant pagal asmens kodo sudarymo taisykles)
+,,,,,lytis_ak,string,,,,4,open,,Asmens lytis,
+,,,,,gimimo_desimtmetis,date,Y,,,4,open,,Gimimo dešimtmetis,Asmenu gimimo dešimtmečio pirma diena
+,,,,,pareigybe,string,,,,4,open,,Pareigybė,
+,,,,,dirba_nuo,date,D,,,4,open,,Asmuo dirba nuo,
+,,,,,dirba_iki,date,D,,,4,open,,Asmuo dirba iki,
+,,,,,istaigos_id,string,,,,4,open,,Įstaigos identifikacijos numeris,
+,,,,,institucija,string,,,,4,open,,Įstaigos pavadinimas,
