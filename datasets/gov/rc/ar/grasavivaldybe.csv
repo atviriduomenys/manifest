@@ -7,4 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_r,date,D,,,4,open,,Savivaldybės įrašymo į Adresų registrą data,
 ,,,,,apskritis,ref,/datasets/gov/rc/ar/graapskritis/GraApskritis,,,4,open,,"LR AR apskrities, į kurią patenka savivaldybės teritorija, išorinis kodas",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,savivaldybes,"geometry(geometry,3346)",m,,,4,open,,Savivaldybių ribos,
+,,,,,savivaldybes,"geometry(3346)",m,,,4,open,,Savivaldybių ribos,
