@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/regitra/tpsais,,,,,,,,,,,,Transporto priemonių sandorių duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sandoris,,,dok_id,,,4,,,Transporto priemonių sandorių duomenys,"AB „Regitra“ Transporto priemonių savininkų apskaitos informacinė sistema kaupia transporto priemonių (toliau TP) savininkų bei jų vykdytų sandorių duomenis. Duomenys kaupiami nuo 2021-05-01 ir yra atnaujinami. Duomenų rinkinys sudarytas iš pseudonimizuotų dokumento identifikatoriaus bei išorinio rakto į sisteminę veiklą, iš dokumento rūšies, nurodančios santorio pobūdį, dokumento išdavimo datos, sandorio šalies, sumos, valiutos, atsiskaitymo būdo bei įrašo modifikavimo laiko. Vienas įrašas rinkinyje atitinka vieną sandorio dokumentą. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,dok_id,string,,,,4,open,,Pseudonimizuotas sandorio dokumento identifikatorius,
+,,,,,veiklos_id,string,,,,4,open,,Pseudonimizuotas išorinis raktas į sisteminę veiklą,
+,,,,,dok_rusis,string,,,,4,open,,Sandorio dokumento rūšis,
+,,,,,isd_data,datetime,D,,,4,open,,Dokumento išdavimo data,
+,,,,,salis,string,,,,4,open,,Sandorio šalis,
+,,,,,suma,number,,,,4,open,,Sandorio suma,
+,,,,,valiuta,string,,,,4,open,,Sandorio valiuta,
+,,,,,mokejimo_budas,string,,,,4,open,,Atsiskaitymo būdas sandoryje,
+,,,,,iraso_mod_data,datetime,S,,,4,open,,Įrašo modifikavimo data,

@@ -172,6 +172,7 @@ datasets/gov/rc/ais/unikalus_isieskotojai.csv
 datasets/gov/rc/ais/unikalus_skolininkai.csv
 datasets/gov/rc/ais/vt_klasifikatoriai.csv
 datasets/gov/regitra/ktpr.csv
+datasets/gov/regitra/tpsais.csv
 datasets/gov/pppkc/omdrf.csv
 datasets/gov/lgt/geologija_zemes_istekliai.csv
 datasets/gov/lsd/sveikata.csv
@@ -729,3 +730,5 @@ datasets/gov/kauno_m_sav/ilgalaikis_nt_arch.csv
 datasets/gov/vert/neprikl_ee_tiek_planai.csv
 datasets/gov/varenos_r_sav/mokyklu_personalas.csv
 datasets/gov/vdtat/dokumentu_paraiskos_komisijai.csv
+datasets/gov/hi/traumos_apsinuodijimai.csv
+
