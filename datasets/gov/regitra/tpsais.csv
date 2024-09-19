@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dok_id,string,,,,4,open,,Pseudonimizuotas sandorio dokumento identifikatorius,
 ,,,,,veiklos_id,string,,,,4,open,,Pseudonimizuotas išorinis raktas į sisteminę veiklą,
 ,,,,,dok_rusis,string,,,,4,open,,Sandorio dokumento rūšis,
-,,,,,isd_data,dateime,D,,,4,open,,Dokumento išdavimo data,
+,,,,,isd_data,datetime,D,,,4,open,,Dokumento išdavimo data,
 ,,,,,salis,string,,,,4,open,,Sandorio šalis,
 ,,,,,suma,number,,,,4,open,,Sandorio suma,
 ,,,,,valiuta,string,,,,4,open,,Sandorio valiuta,
