@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TraumosAtvejis,,,vda_prime_key,,,4,,,"Stacionaro ir ambulatoriniai ligoniai, gydyti nuo traumų ir apsinuodijimų",
+,,,,TraumosAtvejis,,,vda_id,,,4,,,"Stacionaro ir ambulatoriniai ligoniai, gydyti nuo traumų ir apsinuodijimų",
 ,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,atvejo_id,string,,,,4,open,,Unikalus gydymo atvejo identifikatorius,
 ,,,,,gydymas,string,,,,4,open,,"Nurodo, ar tai buvo ambulatorinė ar stacionarinė trauma",
