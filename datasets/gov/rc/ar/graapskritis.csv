@@ -6,4 +6,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aps_plotas,number,ha,,,4,open,,Apskrities grafinis plotas (ha),
 ,,,,,aps_r,date,D,,,4,open,,Apskrities įrašymo į Adresų registrą data,
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,apskritys,"geometry(geometry,3346)",m,,,4,open,,Apskričių ribos,
+,,,,,apskritys,"geometry(3346)",m,,,4,open,,Apskričių ribos,

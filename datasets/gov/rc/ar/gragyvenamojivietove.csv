@@ -7,4 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyv_r,date,D,,,4,open,,Gyvenamosios vietovės įrašymo į Adresų registrą data,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/grasavivaldybe/GraSavivaldybe,,,4,open,,"Savivaldybės į kurią patenka gyvenamosios vietovės teritorija, išorinis kodas",
 ,,,,,formavimo_data,date,D,,,4,open,,Duomenų formavimo data,
-,,,,,gyv_vietoves,"geometry(geometry, 3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,
+,,,,,gyv_vietoves,"geometry(3346)",m,,,4,open,,Gyvenamųjų vietovių ribos,
