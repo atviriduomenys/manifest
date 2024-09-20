@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pažymėjimas,,,vda_id,,,4,,,Nuo okupacijų nukentėjusių asmenų pažymėjimai,"""Lietuvos gyventojų genocido ir rezistencijos tyrimo centro išduoti pažymėjimai asmenims, nukentėjusiems nuo 1939-1990 okupacijų. Rinkinyje pateikiama nukentėjusiojo statusas, pažymėjimo numeris, išdavimo įsakymo data ir numeris. Teisiniai straipsniai, jo dalys, punktai ir papunkčiai. Duomenys nuo 1998m iki dabar."""
+,,,,Pazymejimas,,,vda_id,,,4,,,Nuo okupacijų nukentėjusių asmenų pažymėjimai,"""Lietuvos gyventojų genocido ir rezistencijos tyrimo centro išduoti pažymėjimai asmenims, nukentėjusiems nuo 1939-1990 okupacijų. Rinkinyje pateikiama nukentėjusiojo statusas, pažymėjimo numeris, išdavimo įsakymo data ir numeris. Teisiniai straipsniai, jo dalys, punktai ir papunkčiai. Duomenys nuo 1998m iki dabar."""
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sertifikato_id,string,,,,4,open,,Pažymėjimo identifikatorius,
 ,,,,,statuso_id,string,,,,4,open,,Statuso identifikatorius,
