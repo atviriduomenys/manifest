@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lggrtc,,,,,,,,,,,,Lietuvos gyventojų genocido ir rezistencijos tyrimo centras,
-,datasets/gov/lggrtc/nuo_okupaciju_nukentejusiu_asmenu_pazymejimai,,,,,,,,,,,,Lietuvos gyventojų genocido ir rezistencijos tyrimo centro išduoti pažymėjimai,
+,datasets/gov/lggrtc/nuo_okupacijų_nukentėjusių_asmenų_pažymėjimai,,,,,,,,,,,,Lietuvos gyventojų genocido ir rezistencijos tyrimo centro išduoti pažymėjimai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
