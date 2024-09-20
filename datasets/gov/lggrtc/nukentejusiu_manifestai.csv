@@ -20,6 +20,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,straipsnio_dalis,string,,,,4,open,,,
 ,,,,,punktas,string,,,,4,open,,,
 ,,,,,papunktis,string,,,,4,open,,,
-,,,,,isakymo_data,date,D,,,4,open,,,
+,,,,,isakymo_data,date,M,,,4,open,,,
 ,,,,,isdavimo_isakymas,string,,,,4,open,,,
-,,,,,pazymejimo_pametimo_data,date,D,,,4,open,,,
+,,,,,pazymejimo_pametimo_data,date,M,,,4,open,,,
