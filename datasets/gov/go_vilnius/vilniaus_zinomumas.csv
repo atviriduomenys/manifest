@@ -11,6 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Respondento lytis,
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,,,,,"""Kita""",,,,Kita,
 ,,,,,amzius,integer,,,,4,open,,Respondento amžius,
 ,,,,,kilmes_salis,string,,,,4,open,,Respondento kilmė,"""Respondento kilmės šalis - vieta, kurioje gimė"""
 ,,,,,,enum,,,"""Vietinis""",,,,Vietinis,
@@ -18,6 +19,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyvenamoji_vt,string,,,,4,open,,Respondento gyvenamoji vieta,Dabartinė respondento gyvenamoji vieta: miestas
 ,,,,,gyv_vt_regionas,string,,,,4,open,,Respondento gyvenamasis regionas,
 ,,,,,gyv_vt_pop,string,,,,4,open,,Respondento gyvenamosios vietos populiacija,
+,,,,,,enum,,,"""1 mln. ar daugiau gyventojų""",,,,1 mln. ar daugiau gyventojų,
+,,,,,,,,,"""5 tūkst. – 99 tūkst. gyventojų""",,,,5 tūkst. – 99 tūkst. gyventojų,
+,,,,,,,,,"""100 tūkst. – 499 tūkst. gyventojų""",,,,100 tūkst. – 499 tūkst. gyventojų,
+,,,,,,,,,"""Mažiau nei 5 tūkst. gyventojų""",,,,Mažiau nei 5 tūkst. gyventojų,
+,,,,,,,,,"""500 tūkst. – 999 tūkst. gyventojų""",,,,500 tūkst. – 999 tūkst. Gyventojų,
 ,,,,,issilavinimas,string,,,,4,open,,Respondento išsilavinimas,
 ,,,,,,enum,,,"""Žemesnis nei aukštasis""",,,,Žemesnis nei aukštasis,
 ,,,,,,,,,"""Aukštasis""",,,,Aukštasis,
@@ -47,7 +53,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris
 ,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
 ,,,,,rinka,string,,,,4,open,,Apklausos rinka,"Šalis, kurioje atliekama apklausa"""
-,,,,,,enum,,,"""Latvia""",,,,Latvija,
+,,,,,,enum,,,"""Latvija""",,,,Latvija,
 ,,,,,lytis,string,,,,4,open,,Respondento lytis,
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
@@ -123,7 +129,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
 ,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
 ,,,,,,,,,,,,,,
-,,,,DidzBritRinka,,,dalyv_id,,,,,,Vilniaus žinomumo apklausų rezultataiDidžiosiso Britanijos rinkoje,
+,,,,DidzBritRinka,,,dalyv_id,,,,,,Vilniaus žinomumo apklausų rezultatai Didžiosios Britanijos rinkoje,
 ,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris.
 ,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
 ,,,,,rinka,string,,,,4,open,,Apklausos rinka,"""Šalis, kurioje atliekama apklausa"""
