@@ -129,7 +129,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,zino_talina,boolean,,,,4,open,,Žinios apie Taliną,Ar respondentas girdėjęs apie Taliną?
 ,,,,,stat_svoris,number,,,,4,open,,Statistinis svoris,Respondento statistinis svoris apklausoje (techninis įvertis)
 ,,,,,,,,,,,,,,
-,,,,DidzBritRinka,,,dalyv_id,,,,,,Vilniaus žinomumo apklausų rezultataiDidžiosiso Britanijos rinkoje,
+,,,,DidzBritRinka,,,dalyv_id,,,,,,Vilniaus žinomumo apklausų rezultatai Didžiosios Britanijos rinkoje,
 ,,,,,dalyv_id,string,,,,4,open,,Dalyvio ID,Atsakymo identifikatorius. Apklausos dalyvio - respondento - ID numeris.
 ,,,,,data,date,1D,,,4,open,,Apklausos data,Apklausos pildymo data
 ,,,,,rinka,string,,,,4,open,,Apklausos rinka,"""Šalis, kurioje atliekama apklausa"""
