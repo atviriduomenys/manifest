@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vai/pastabos_savivaldybiu_taryboms,,,,,,,,,,,,Vyriausybės atstovų pastabos savivaldybių taryboms,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Pastaba,,,iraso_id,,,4,,,Vyriausybės atstovų pastabos savivaldybių taryboms,Lentelėje pateikiamos Vyriausybės atstovų teikiamos pastabos savivaldybių taryboms dėl sprendimų projektų atitikties centrinės valdžios teisės aktams. Informacija apie pastabas pateikiama nuo 2024 metų atnaujinant kas ketvirtį. Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt.
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,pastabos_pateikimo_data,datetime,S,,,4,open,,Pastabos pateikimo data,
+,,,,,vai_biuras,string,,,,4,open,,Vyriausybės atstovų įstaigos biuras,
+,,,,,savivaldybe,string,,,,4,open,,"Savivaldybė, kuriai teikta pastaba",
+,,,,,teises_srities_tema,string,,,,4,open,,Teisės srities tema,
+,,,,,sprendimo_projektas,string,,,,4,open,,"Sprendimo projektas (data, numeris, pavadinimas), dėl kurio teikiamos pastabos",
+,,,,,pastaba,string,,,,4,open,,Teiktos pastabos turinys,
+,,,,,savivaldybes_tarybos_veiksmai,string,,,,4,open,,Savivaldybės tarybos veiksmai,
+,,,,,vyriausybes_atstovo_veiksmai,string,,,,4,open,,"Vyriausybės atstovo planuojami veiksmai, kai į teiktas pastabas neatsižvelgta",
+,,,,,vyriausybes_atstovas,string,,,,4,open,,Vyriausybės atstovas,
+,,,,,dokumento_pav,string,,,,4,open,,Duomenų failo pavadinimas,
