@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,VietovesVertybe,,,id,,,4,,,Natura 2000 teritorijų vietovių sąrašo duomenys,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija,,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
+,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija[bast_kodas],,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
 ,,,,,kodas.pavadinimas,string,,,,2,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
 ,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
 ,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,ApsaugosTikslas,,,,,,2,,,Natura 2000 teritorijų apsaugos tikslų duomenys,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija,,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
+,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija[bast_kodas],,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
 ,,,,,kodas.pavadinimas,string,,,,2,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
 ,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
 ,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
