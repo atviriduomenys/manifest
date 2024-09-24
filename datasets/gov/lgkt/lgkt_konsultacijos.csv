@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lgkt,,,,,,,,,,,,Lygių galimybių kontrolierių tarnyba,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Konsultacija,,,vda_id,,,4,,,Lygių galimybių kontrolierių tarnybos konsultacijos telefonu ar gyvai,"""Lygių galimybių tarnybos gyvų ir konsultacijų telefonu registras. Gyvų ir konsultacijų telefonu registras dėl lygių galimybių pažeidimų."""
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,data,date,D,,,4,open,,Konsultacijos data,
+,,,,,datos_pozymis,string,,,,4,open,,"Tiksli - data nurodyta šaltinyje; Nustatyta - šaltinio metų pirma diena, kai šaltinyje nekorektiška data, arba ji nenurodyta",
+,,,,,tipas,string,,,,4,open,,Konsultuoto asmens lytis,
+,,,,,sritis,string,,,,4,open,,Lygių galimybių įstatyme nurodyta viena iš penkių sričių,
+,,,,,pagrindas,string,,,,4,open,,Lygių galimybių įstatymo numatytas vienas iš keturiolikos pagrindų,
+,,,,,pastabos,string,,,,4,open,,Konsultavimo priežastis,
+,,,,,konsultacijos_budas,string,,,,4,open,,Konsultacijos būdas,
+,,,,,savivaldybe,string,,,,4,open,,"Savivaldybė, kurioje asmuo gyvena arba įvyko pažeidimo veiksmas. Pildoma nuo 2023 metų",
+,,,,,saltinis,integer,,,,4,open,,Duomenų šaltinio metai,
