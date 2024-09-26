@@ -7,6 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_kodas,string,,,,3,open,,Savivaldybės kodas,
 ,,,,,sav_pavadinimas,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kodas_gpmi,string,,,,4,open,,GPM klasifikatorius,
+,,,,,lytis,string,,,,4,open,,Asmens lytis,
 ,,,,,,enum,,,'B',,,,Darbo pajamos ir socialinės išmokos,
 ,,,,,,,,,'C',,,,Individualios veiklos pajamos,
 ,,,,,,,,,'D',,,,Turto pajamos,
