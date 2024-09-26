@@ -1,0 +1,16 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lgkt/liniuotes,,,,,,,,,,,,Liniuočių taikymo duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Liniuote,,,vda_prime_key,,,4,,,Liniuočių taikymo duomenys,"Lygių galimybių kontrolieriaus tarnybos organizuojamas liniuočių registras kaupia Lyčių lygybės ir Lygių galimybių liniuočių (atitinkamai, LLL ir LGL) taikymo duomenis atitinkamose organizacijose. Duomenys kaupiami nuo 2018 m. ir yra atnaujinami. Duomenų rinkinys apima liniuotės registracijos numerį, tipą, organizaciją, kurioje ji taikyta, prašymų gavimo, anketų pildymo pabaigos bei liniuotės registravimo datas. Nuo 2022 m. kovo prašymų gavimo datos nebepildomos. Vienas duomenų rinkinio įrašas atitinka vieną organizaciją ir laikotarpį, kada buvo gautas prašymas, baigta pildyti anketa ir užregistruota liniuotė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,registracijos_nr,string,,,,4,open,,Liniuotės registracijos numeris,
+,,,,,liniuotes_tipas,string,,,,4,open,,Liniuotės tipas,
+,,,,,,enum,,,,,,,,
+,,,,,,,,,"""Lyčių lygybės liniuotė""",,,,Lyčių lygybės liniuotė,
+,,,,,,,,,"""Lygių galimybių liniuotė""",,,,Lygių galimybių liniuotė,
+,,,,,institucija,string,,,,4,open,,"Organizacija, kurioje pritaikyta liniuotė",
+,,,,,prasymo_gavimo_data,date,D,,,4,open,,Prašymo gavimo data,
+,,,,,anketu_pildymo_pabaigos_data,date,D,,,4,open,,Anketų pildymo pabaigos data,
+,,,,,liniuotes_registravimo_data,date,D,,,4,open,,Liniuotės registravimo data,
