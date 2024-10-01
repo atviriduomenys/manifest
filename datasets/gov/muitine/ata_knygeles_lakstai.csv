@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,laksto_id,string,,,,4,open,,ATA knygelės lakšto identifikatorius,
 ,,,,,laksto_tipas,string,,,,4,open,,ATA knygelės lakšto tipas,
 ,,,,,,enum,,,"""IMPORTAS""",,,,,
-,,,,,,,,,"""REEKSPORTAS",,,,,
+,,,,,,,,,"""REEKSPORTAS""",,,,,
 ,,,,,,,,,"""EKSPORTAS""",,,,,
 ,,,,,,,,,"""REIMPORTAS""",,,,,
 ,,,,,,,,,"""TRANZITAS""",,,,,
