@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,obj_galioja_nuo,date,D,,,4,open,,Objektas galioja nuo,
 ,,,,,obj_galioja_iki,date,D,,,4,open,,Objektas galioja iki,
 ,,,,,sildymo_tipas,string,,,,4,open,,Šildymo tipas,
-,,,,,naudingas_plotas_m2,number,m^2 ,,,4,open,,Naudingasis plotas kvadratiniais metrais,
+,,,,,naudingas_plotas_m2,number,m^2,,,4,open,,Naudingasis plotas kvadratiniais metrais,
 ,,,,,registruotu_asm_skaicius,integer,,,,4,open,,Registruotų asmenų skaičius,
 ,,,,,energetine_klase,string,,,,4,open,,Energetinė klasė,
 ,,,,,duomenis_pateike,string,,,,4,open,,Duomenų pateikėjas (inžinierius/klientas),
