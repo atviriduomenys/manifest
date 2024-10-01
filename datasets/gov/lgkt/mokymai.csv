@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,iraso_id,,,4,,,Mokymų ir konsultacijų apie lygias galimybes duomenys,"Lentelėje pateikti Lygių galimybių kontrolieriaus tarnybos (LGKT) vedamų mokymų ir teikiamų konsultacijų įvairioms Lietuvoje veikiančioms institucijoms duomenys. Šioje lentelėje - nuo duomenų rinkimo pradžios, 2018 metų, iki 2024 metų sukaupta informacija. Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,Mokymas,,,iraso_id,,,4,,,Mokymų ir konsultacijų apie lygias galimybes duomenys,"Lentelėje pateikti Lygių galimybių kontrolieriaus tarnybos (LGKT) vedamų mokymų ir teikiamų konsultacijų įvairioms Lietuvoje veikiančioms institucijoms duomenys. Šioje lentelėje - nuo duomenų rinkimo pradžios, 2018 metų, iki 2024 metų sukaupta informacija. Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,data,date,D,,,4,open,,Mokymų ar konsultacijos data,
 ,,,,,tema,string,,,,4,open,,Mokymų ar konsultacijos tema,
