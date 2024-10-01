@@ -15,7 +15,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -38,7 +38,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -61,7 +61,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -84,7 +84,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -107,7 +107,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -130,7 +130,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -153,7 +153,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -176,7 +176,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -199,7 +199,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -222,7 +222,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -245,7 +245,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -268,7 +268,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -291,7 +291,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -314,7 +314,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -337,7 +337,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -360,7 +360,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
@@ -383,7 +383,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,kapines,string,,,,4,open,,Kapavietės kapinių pavadinimas,
 ,,,,,palaidotu_sk,integer,U,,,4,open,,Kapavietėje palaidotų velionių skaičius,
 ,,,,,maks_velioniu_sk,integer,U,,,4,open,,Maksimalus leidžiamas kapavietėje laidoti velionių skaičius,
-,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba siena
+,,,,,tipas,string,,,,4,open,,Kapavietės tipas,Gali būti kapavietė arba kolumbariumas
 ,,,,,,enum,,,"""kapavietė""",,,,,
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
