@@ -33,7 +33,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,FizAsmElektraSuvartojimas,,,iraso_id,,,4,,,Fizinių asmenų elektros energijos suvartojimas,"Lentelėse pateikti Energijos skirstymo operatoriaus (ESO) fizinių asmenų elektros suvartojimo duomenys. Elektros suvartojimo duomenys pateikiami mėnesio tikslumu. Realus suvartotas elektros kiekis gali skirtis nuo pateikiamų duomenų, tokiu atveju, kai vartotojas neteisingai deklaruoja suvartotą elektros kiekį arba turi įsirengęs saulės elektrinę. Duomenų laiko aprėptis - nuo 2019 m. sausio 1d. Lentelė su kita rinkinio lentele jungiasi per vda_asm_info_id stulpelį."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
-,,,,,vda_asm_info_id,string,/datasets/gov/eso/fiz_asm_elektr_suvartojimas/FizAsmInformacija[vda_asm_info_id],,,4,open,,Asmens informacijos įrašo identifikatorius,
+,,,,,vda_asm_info_id,ref,/datasets/gov/eso/fiz_asm_elektr_suvartojimas/FizAsmInformacija[vda_asm_info_id],,,4,open,,Asmens informacijos įrašo identifikatorius,
 ,,,,,apskaitos_men,date,M,,,4,open,,Apskaitos mėnesis,
 ,,,,,atgauta_kwh,number,,,,4,open,,Atgautas kilovatvalandžių skaičius,
 ,,,,,suvartota_kwh,number,,,,4,open,,Suvartotas kilovatvalandžių skaičius,
