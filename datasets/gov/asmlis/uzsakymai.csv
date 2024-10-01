@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,koord_patik_proc,number,,,,4,open,,Koordinačių patikimumas procentais,
-,,,,,adreso_tipas,string,,,,4,open,,Adreso tipas,"Adresas (aktualus) - reiškai, kad koordinatė atitinka adresą"
+,,,,,adreso_tipas,string,,,,4,open,,Adreso tipas,"Adresas (aktualus) - reiškia, kad koordinatė atitinka adresą"
 ,,,,,uzsakytas_veiksmas,string,,,,3,open,,Užsakytos paslaugos veiksmas,
 ,,,,,,enum,,,,,,,,
 ,,,,,,,,Pakeisti,"""Pakeisti""",,,,Pakeisti nurodytą objektą,
