@@ -20,7 +20,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -43,7 +43,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -66,7 +66,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -89,7 +89,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -112,7 +112,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -135,7 +135,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -158,7 +158,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -181,7 +181,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -204,7 +204,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -227,7 +227,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -250,7 +250,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -273,7 +273,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -296,7 +296,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -319,7 +319,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -342,7 +342,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -365,7 +365,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
@@ -388,7 +388,7 @@ Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomen�
 ,,,,,,,,,"""kolumbariumas""",,,,Kolumbariumo niša,
 ,,,,,ilgis_m,number,m,,,4,open,,"Kapavietės ilgis, nurodytas metrais.","Kai kapavietės tipas kolumbariumas, stulpelis įgija reikšmę ""1""."
 ,,,,,plotis_m,number,m,,,4,open,,"Kapavietės plotis, nurodytas metrais",
-,,,,,geometrija,"geometry(3857)",,,,4,open,,Kapavietės vietos taško LKS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,ar_nestandartinis_dydis,boolean,,,,4,open,,"Požymis, ar kapavietė yra nestandartinio dydžio",
 ,,,,,ar_kulturos_paveldas,boolean,,,,4,open,,"Požymis, ar kapavietė yra kultūros paveldo objektas",
 ,,,,,paveldo_kodas,string,,,,4,open,,"Jei kapavietė yra kultūros paveldo objektas, nurodomas paveldo kodas.",
