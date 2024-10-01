@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,SiauliuMiestas,,,vda_id,,,4,,,Šiaulių miesto savivaldybės kapinėse palaidotų velionių duomenys,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kapo_id,ref,/datasets/gov/kapines/registras/kapavietes/SiauliuMiestas[kapo_id],,,4,open,,Kapavietės identifikatorius,
 ,,,,,ar_neatpazintas,boolean,,,,4,open,,Neatpažinto velionio požymis,
 ,,,,,ar_perlaidotas,boolean,,,,4,open,,"Požymis, ar velionis buvo perlaidotas",
@@ -29,4 +30,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eile,string,,,,4,open,,"Velionio kapavietės eilė kapinėse, jei ji egzistuoja (ypač naudojama tvarkingo išplanavimo ir naujose kapinėse). Jeigu kapinėse nebuvo naudojamos eilės, tuomet žymima 000.",
 ,,,,,kapaviete,string,,,,4,open,,Velionio kapavietės numeris kapinėse,
 ,,,,,vieta_kape,integer,,,,4,open,,"Velionio palaidojimo vieta kapavietėje. Pavyzdžiui, 3 vietų kapavietėje per vidurį laidojamam velioniui būtų žymima 2.",
-,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Velionio kapavietės vietos taško WGS koordinatės,
+,,,,,geometrija,"geometry(3857)",,,,4,open,,"Velionio kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
