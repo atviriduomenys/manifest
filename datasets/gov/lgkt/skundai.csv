@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Skundas,,,id,,,4,,,Lygių galimybių pažeidimų skundai," Rinkinyje pateikiami  asmenų gauti skundai dėl lygių galimybių pažeidimo: registracijos, uždarymo datos, teisinis pagrindas, sritis, uždarymo priežastis, respondentas ir su juo susikusi informacija, taip pat subjektas. Rinkinyje duomenys nuo 2003 metų iki dabar. "
+,,,,Skundas,,,id,,,4,,,Lygių galimybių pažeidimų skundai," Rinkinyje pateikiami  asmenų gauti skundai dėl lygių galimybių pažeidimo: registracijos, uždarymo datos, teisinis pagrindas, sritis, uždarymo priežastis, respondentas ir su juo susijusi informacija, taip pat subjektas. Rinkinyje duomenys nuo 2003 metų iki dabar. "
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,registarcijos_data,date,D,,,4,open,,Registracijos data,
 ,,,,,uzdarymo_data,date,D,,,4,open,,Skundo pabaigos data,
@@ -35,7 +35,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,respondento_miestas,string,,,,2,open,,Respondento miestas,
 ,,,,,respondento_savivaldybe,string,,,,2,open,,Respondento savivaldybė,
 ,,,,,subjektas,string,,,,4,open,,"Subjektas - Vardas pavardė, arba juridinio asmens pavadinimas",
-,,,,,subjekto_kodas,string,,,,4,open,,"Subjekto: asmens, arba juridinionio asmens kodas",
+,,,,,subjekto_kodas,string,,,,4,open,,"Subjekto: asmens, arba juridinio asmens kodas",
 ,,,,,subjekto_tipas,string,,,,4,open,,"Subjekto tipas: F -moteris, M -vyras, J -juridinis;",
 ,,,,,,enum,,,"""F""",,,,Moteris,
 ,,,,,,,,,"""M""",,,,Vyras,
