@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin,,,,,ns,,,,,,,Lietuvos Respublikos ekonomikos ir inovacijų ministerija,
+,datasets/gov/eimin/prof_patirt_prilyginimas,,,,,,,,,,,,Užsienio piliečių profesinės patirties prilyginimo aukštojo mokslo kvalifikacijai statistiniai duomenys,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,ProfesijPatirtPrilyginimas,,,vda_prime_key,,,4,,,Užsienio piliečių profesinės patirties prilyginimo aukštojo mokslo kvalifikacijai statistiniai duomenys,"Statistinis duomenų rinkinys apie dokumentus profesinės patirties prilyginimui aukštojo mokslo kvalifikacijai, išduodamus trečiosios valstybės piliečiams, siekiantiems dirbti Lietuvoje aukštos profesinės kvalifikacijos reikalaujantį darbą pagal nereglamentuojamą profesiją. Viena eilutė rinkinyje atitinka vieną prašymą. Duomenis sudaro valstybė, iš kurios atvyksta užsienietis, profesija, pagal kurią ketinama įdarbinti užsienietį, sprendimas (teigiamas/neigiamas) bei prašymo gavimo ir sprendimo priėmimo datos. Duomenys (pagal prašymo gavimo datą) nuo 2017 metų birželio 19 dienos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Duomenų eilutės įrašo identifikacinis kodas,
+,,,,,id,string,,,,4,open,,prašymo identifikatorius,
+,,,,,profesija,string,,,,4,open,,Profesija,
+,,,,,pilietybes_salis,string,,,,4,open,,Pilietybės šalis,
+,,,,,prasymo_gavimo_data,date,D,,,4,open,,Prašymo gavimo data,
+,,,,,sprendimo_priemimo_data,date,D,,,4,open,,Sprendimo priėmimo data,
+,,,,,sprendimas,string,,,,4,open,,Sprendimas,
+,,,,,,enum,,,"""Atmesta""",,,,Profesija neprilyginta aukštojo mokslo kvalifikacijai,
+,,,,,,,,,"""Prilyginta""",,,,Profesija prilyginta aukštojo mokslo kvalifikacijai,
+,,,,,,,,,"""Nagrinėjimas nutrauktas""",,,,Profesijos prilyginimo aukštojo mokslo kvalifikacijai nagrinėjimas buvo nutrauktas,
+,,,,,kodas_pagal_lpk,string,,,,4,open,,Profesijos kodas pagal Lietuvos profesijų klasifikatorių,
