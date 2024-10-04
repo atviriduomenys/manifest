@@ -12,7 +12,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""D""",,,,Turto pajamos,
 ,,,,,,,,,"""E""",,,,Palūkanos,
 ,,,,,,,,,"""F""",,,,Kitos pajamos,
-,,,,,lytis,enum,,,"""M""",4,open,,Moteris,
+,,,,,lytis,string,,,,4,open,,Žmogaus lytis,
+,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,kodas,string,,,,2,open,,Pajamų kilmės kodas,
 ,,,,,suma,number,,,,3,open,,Suma,"Pritaikyti konfidencialumo metodai: Viršaus perkodavimas (sąlyginių išskirčių vidurkinimas), lokalus reikšmių slėpimas ir atsitiktinis apvalinimas. Jei išskirtis viena - tą išskirtį slepiame į null reikšmę"
