@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ntakd/deklaracijos,,,,,,,,,,,,Narkotinių prekursorių deklaracijų duomenys,
+,datasets/gov/ntakd/deklaracijos,,,,,,,,,,,,Kontroliuojamų medžiagų deklaracijų duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Deklaracija,,,vda_prime_key,,,4,,,Narkotinių prekursorių deklaracijų duomenys,"Narkotikų, tabako ir alkoholio kontrolės departamento (NTAKD) naudojama Pirmtakų teisėtos apyvartos kontrolės informacinė sistema (PTAKIS) kaupia juridinių bei fizinių asmenų narkotinių pirmtakų (prekursorių) deklaracijas. Duomenys kaupiami nuo 2021-04-01 ir atnaujinami iki šiol. Duomenų rinkinys sudarytas iš pseudonimizuoto deklaravusio fizinio arba juridinio asmens (deklaranto) kodo, deklaranto asmens rūšies, ataskaitos formos, deklaruotos medžiagos pavadinimo, paskirties ir kiekių deklaracijos periodo pradžioje ir pabaigoje, deklaracijos periodo metų ir deklaracijos numerio tais metais. Vienas įrašas atitinka vieną deklaranto, medžiagos, deklaracijos metų ir periodo numerio kombinaciją. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,Deklaracija,,,vda_prime_key,,,4,,,Kontroliuojamų medžiagų deklaracijų duomenys,"Narkotikų, tabako ir alkoholio kontrolės departamento (NTAKD) naudojama Pirmtakų teisėtos apyvartos kontrolės informacinė sistema (PTAKIS) kaupia juridinių bei fizinių asmenų narkotinių pirmtakų (prekursorių) deklaracijas. Duomenys kaupiami nuo 2021-04-01 ir atnaujinami iki šiol. Duomenų rinkinys sudarytas iš pseudonimizuoto deklaravusio fizinio arba juridinio asmens (deklaranto) kodo, deklaranto asmens rūšies, ataskaitos formos, deklaruotos medžiagos pavadinimo, paskirties ir kiekių deklaracijos periodo pradžioje ir pabaigoje, deklaracijos periodo metų ir deklaracijos numerio tais metais. Vienas įrašas atitinka vieną deklaranto, medžiagos, deklaracijos metų ir periodo numerio kombinaciją. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,deklaranto_kodas,string,,,,4,open,,Deklaraciją pateikusio asmens pseudonimizuotas kodas,
 ,,,,,deklaranto_asmens_rusis,string,,,,4,open,,Deklaraciją pateikusio asmens rūšis,
