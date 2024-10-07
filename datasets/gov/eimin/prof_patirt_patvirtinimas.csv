@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/eimin/prof_patirt_patvirtinimas,,,,,,,,,,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirities patvirtinimą.
+,datasets/gov/eimin/prof_patirt_patvirtinimas,,,,,,,,,,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirties patvirtinimą.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Patvirtinimas,,,id,,,4,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirities patvirtinimą. 
+,,,,Patvirtinimas,,,id,,,4,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirties patvirtinimą. 
 ,,,,,id,string,,,,4,open,,Sugeneruotas tikrinimo numeris,
 ,,,,,dokumento_numeris,string,,,,4,open,,Dokumento numeris,
 ,,,,,gavimo_data,date,D,,,4,open,,Prašymo išduoti dokumentą gavimo data,
