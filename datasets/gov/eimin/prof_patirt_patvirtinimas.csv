@@ -1,0 +1,22 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/prof_patirt_patvirtinimas,,,,,,,,,,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirties patvirtinimą.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Patvirtinimas,,,id,,,4,,,Profesinės patirties patvirtinimas,Informacija apie piliečių išvykstančių dirbti kitose ES valstybėse profesinės patirties patvirtinimą. 
+,,,,,id,string,,,,4,open,,Sugeneruotas tikrinimo numeris,
+,,,,,dokumento_numeris,string,,,,4,open,,Dokumento numeris,
+,,,,,gavimo_data,date,D,,,4,open,,Prašymo išduoti dokumentą gavimo data,
+,,,,,isdavimo_data,date,D,,,4,open,,Dokumento išdavimo data,
+,,,,,salis,string,,,,4,open,,Šalis į kurią išvykstama dirbti,
+,,,,,sarasas,string,,,,4,open,,Dokumentų sąrašo numeris,
+,,,,,grupe,string,,,,,,,Profesinės veiklos grupės numeris pagal direktyvą 2005/36/EB,
+,,,,,grupes_pavadinimas,string,,,,,,,Profesinės veiklos grupės pavadinimas,
+,,,,,pogrupis,string,,,,4,open,,Profesinės veiklos pogrupio numeris  pagal direktyvą 2005/36/EB,
+,,,,,pogrupio_pavadinimas,string,,,,4,open,,Profesinės veiklos pogrupio pavadinimas,
+,,,,,lytis,string,,,,4,open,,Piliečio lytis,
+,,,,,,enum,,"""Vyras""",,,,,,
+,,,,,,,,"""Moteris""",,,,,,
+,,,,,gimimo_metai,date,Y,,,4,open,,Piliečio gimimo metai,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
