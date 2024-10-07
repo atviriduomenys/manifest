@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vrk/rinkeju_demografiniai_duomenys,,,,,,,,,,,,Rinkėjų demografiniai duomenys,"Vyriausiosios rinkimų komisijos Rinkėjų sąrašų tvarkymo posistemė kaupia rinkėjų balsavimo žymėjimus. Duomenys kaupiami nuo 2011-12-29 ir yra atnaujinami. Duomenų rinkinys sudarytas iš 4 atskirų lentelių apie rinkėjus, rinkėjų žymėjimus, rinkimų apygardas ir vykdomus rinkimus. Lentelėse yra įtraukti išorinių raktų stulpeliai suteikti galimybę apjungti jose esančius duomenis. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,datasets/gov/vrk/rinkeju_demografiniai_duomenys,,,,,,,,,,,,Rinkėjų demografiniai duomenys,"Vyriausiosios rinkimų komisijos Rinkėjų sąrašų tvarkymo posistemėje kaupiami rinkėjų balsavimo žymėjimai. Duomenys kaupiami nuo 2011-12-29 ir yra atnaujinami iki šiol. Duomenų rinkinys sudarytas iš 4 atskirų lentelių apie rinkėjus, rinkėjų žymėjimus, rinkimų apygardas ir vykdomus rinkimus. Lentelėse yra įtraukti išorinių raktų stulpeliai, leidžiantys apjungti jose esančius duomenis. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Rinkejas,,,rinkejo_asm_k,,,4,,,Rinkėjai,"Balso teisę turinčių rinkėjų lentelė. Vienas įrašas atitinka vieną rinkėją. Lentelė sudaryta iš rinkėjo pseudonimizuoto asmens kodo, lyties ir gimimo metų. ~12% rinkėjų gimimo metų įrašų yra modifikuoti pridedant atsitiktines vertes - triukšmą, siekiant užtikrinti konfidencialumą."
+,,,,Rinkejas,,,rinkejo_asm_k,,,4,,,Rinkėjai,"Balso teisę turinčių rinkėjų lentelė. Vienas įrašas atitinka vieną rinkėją. Lentelė sudaryta iš rinkėjo pseudonimizuoto asmens kodo, lyties ir gimimo metų. Apie 12% rinkėjų gimimo metų įrašų yra modifikuoti pridedant atsitiktines vertes – triukšmą, siekiant užtikrinti konfidencialumą."
 ,,,,,rinkejo_asm_k,string,,,,4,open,,Rinkėjo pseudonimizuotas asmens kodas,
 ,,,,,rinkejo_lytis,string,,,,4,open,,Rinkėjo lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,rinkejo_gim_m,date,Y,,,4,open,,Rinkėjo gimimo metai,
 ,,,,,,,,,,,,,,
-,,,,Zymejimas,,,vda_prime_key,,,4,,,Rinkėjų žymėjimai,"Rinkėjų balsų žymėjimų lentelė. Vienas įrašas atitinka vieno rinkėjo konkrečiais rinkimais (ne)balsavimo žymėjimą. Lentelė sudaryta iš pseudonimizuoto rinkėjo asmens kodo, vykdomų rinkimų turo ir apygardos, kurioje nubalsuota, identifikatorių.  "
+,,,,Zymejimas,,,vda_prime_key,,,4,,,Rinkėjų žymėjimai,"Rinkėjų balsų žymėjimų lentelė. Vienas įrašas atitinka vieno rinkėjo (ne)balsavimo žymėjimą konkrečiuose rinkimuose. Lentelė sudaryta iš pseudonimizuoto rinkėjo asmens kodo, vykdomų rinkimų turo ir balsavimo apygardos dentifikatorių."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,rinkejo_asm_k,string,,,,4,open,,Rinkėjo pseudonimizuotas asmens kodas,
 ,,,,,rinkimu_turo_id,string,,,,4,open,,Vykdomų rinkimų turo identifikatorius,
@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apygardos_id,string,,,,4,open,,Apygardos identifikatorius,
 ,,,,,apygardos_pav,string,,,,4,open,,Apygardos pavadinimas,
 ,,,,,,,,,,,,,,
-,,,,RinkimuTuras,,,vda_prime_key,,,4,,,Rinkimų turai,"Vykdomų rinkimų lentelė. Vienas įrašas atitinka vykdomų rinkimų ir jų turų kombinaciją. Lentelė sudaryta iš vykdomų rinkimų identifikatoriaus ir pavadinimo, vykdomų rinkimų turo identifikatoriaus, numerio, dienos ir, ar turas yra einamasis."
+,,,,RinkimuTuras,,,vda_prime_key,,,4,,,Rinkimų turai,"Vykdomų rinkimų lentelė. Vienas įrašas atitinka vykdomų rinkimų ir jų turų kombinaciją. Lentelė sudaryta iš vykdomų rinkimų identifikatoriaus ir pavadinimo, rinkimų turo identifikatoriaus, numerio, dienos ir požymio, ar turas yra einamasis."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,rinkimu_id,string,,,,4,open,,Vykdomų rinkimų identifikatorius,
 ,,,,,rinkimu_pav,string,,,,4,open,,Vykdomų rinkimų pavadinimas,
