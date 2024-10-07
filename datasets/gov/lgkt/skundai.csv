@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Skundas,,,id,,,4,,,Lygių galimybių pažeidimų skundai," Rinkinyje pateikiami  asmenų gauti skundai dėl lygių galimybių pažeidimo: registracijos, uždarymo datos, teisinis pagrindas, sritis, uždarymo priežastis, respondentas ir su juo susijusi informacija, taip pat subjektas. Rinkinyje duomenys nuo 2003 metų iki dabar. "
+,,,,Skundas,,,id,,,4,,,Lygių galimybių pažeidimų skundai," Rinkinyje pateikiami  asmenų gauti skundai dėl lygių galimybių pažeidimo: registracijos, uždarymo datos, teisinis pagrindas, sritis, uždarymo priežastis, respondentas ir su juo susijusi informacija, taip pat subjektas. Rinkinyje duomenys nuo 2015 metų gruodžio iki dabar. "
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,registarcijos_data,date,D,,,4,open,,Registracijos data,
 ,,,,,uzdarymo_data,date,D,,,4,open,,Skundo pabaigos data,
