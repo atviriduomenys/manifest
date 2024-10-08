@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,GyventojuPajamos,,,,,,,,,Duomenys apie mokėtojo deklaruotas pajamas,
 ,,,,,eil_num,integer,,,,4,open,,Pajamų kilmės kodo eilės numeris,
-,,,,,metai,integer,Y,,,4,open,,Metai,
+,,,,,metai,integer,"""Y""",,,4,open,,Metai,
 ,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybės kodas,
 ,,,,,sav_pavadinimas,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kodas_gpmi,string,,,,4,open,,GPM klasifikatorius,
