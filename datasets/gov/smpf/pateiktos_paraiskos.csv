@@ -35,7 +35,7 @@ Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.g
 ,,,,,istaiga,string,,,,4,open,,Lektoriaus įstaiga,
 ,,,,,destomas_dalykas,string,,,,4,open,,lektoriaus dėstomas dalykas/modulis,
 ,,,,,programos_aprasymas,string,,,,2,open,,Programos aprašymas,
-,,,,,valstybinis_prog_kodas,string,,,,4,open,,Programops valstybinos kodas,
+,,,,,valstybinis_prog_kodas,string,,,,4,open,,Programos valstybinis kodas,
 ,,,,,,comment,property,,"update(property: ""valstybinis_prog_kodas[]"", type: ""array"", source: ""valstybinis_prog_kodas"")",4,,spinta:161,,
 ,,,,,veiklos_aprasymas,string,,,,2,open,,Veiklos aprašymas,
 ,,,,,veiklos_trukme,integer,,,,4,open,,Veiklos trukmė,
