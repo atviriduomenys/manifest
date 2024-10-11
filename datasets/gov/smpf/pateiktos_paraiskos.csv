@@ -1,12 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/smpf,,,,,ns,,,,,,,VšĮ Švietimo mainų paramos fondas (SMPF),
-,datasets/gov/smpf/pateiktos_paraiskos,,,,,,,,,,,,Švietimo mainų paramos fondo paraiškos ir lektorių programos,
+,datasets/gov/smpf/pateiktos_paraiskos,,,,,,,,,,,,Švietimo mainų paramos fondo paraiškos ir lektorių programos,"Rinkinyje pateikiami VšĮ Švietimo mainų paramos fondo nuo 2023 m. kaupiami ir saugomi pateiktų paraiškų ir lektorių programų duomenys. Duomenų rinkinį sudaro dvi lentelės, sujungtos „paraiskos_nr“ stulpeliu. Vieną duomenų rinkinio lentelę sudaro į Lietuvoje organizuojamus renginius pateiktų paraiškų duomenys, o kitoje lentelėje pateikiamos Lietuvos dėstytojų / lektorių renginiams siūlomos programos. Viena duomenų rinkinio eilutė atitinka vieną paraišką arba vieną dėstytojo programą.
+Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Paraiska,,,vda_prime_key,,,4,,,Švietimo mainų paramos fondo paraiškos ir lektorių programos,"Rinkinyje pateikiami VšĮ Švietimo mainų paramos fondo nuo 2023 m. kaupiami ir saugomi pateiktų paraiškų ir lektorių programų duomenys. Duomenų rinkinį sudaro dvi lentelės, sujungtos „paraiskos_nr“ stulpeliu. Vieną duomenų rinkinio lentelę sudaro į Lietuvoje organizuojamus renginius pateiktų paraiškų duomenys, o kitoje lentelėje pateikiamos Lietuvos dėstytojų / lektorių renginiams siūlomos programos. Viena duomenų rinkinio eilutė atitinka vieną paraišką arba vieną dėstytojo programą.
-Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,Paraiska,,,vda_prime_key,,,4,,,Švietimo mainų paramos fondo paraiškos,Rinkinyje pateikiami VšĮ Švietimo mainų paramos fondo nuo 2023 m. kaupiami ir saugomi pateiktų paraiškų duomenys. Rinkinio lentelę sudaro į Lietuvoje organizuojamus renginius pateiktų paraiškų duomenys. Viena eilutė atitinka vieną paraišką.
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paraiskos_nr,ref,datasets/gov/smpf/pateiktos_paraiskos/LektoriausPrograma[paraiskos_nr],,,4,open,,Paraiškos numeris,
 ,,,,,prasymas_pateiktas,date,D,,,4,open,,Prašymo pateikimo data,
@@ -26,7 +26,7 @@ Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.g
 ,,,,,renginio_pabaiga,date,D,,,4,open,,Renginio pabaigosdata,
 ,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Paskutinio duomenų atnaujinimo data,
 ,,,,,,,,,,,,,,
-,,,,LektoriausPrograma,,,vda_prime_key,,,4,open,,,
+,,,,LektoriausPrograma,,,vda_prime_key,,,4,open,,Švietimo mainų paramos fondo lektorių siūlomos programos,Rinkinyje pateikiami VšĮ Švietimo mainų paramos fondo nuo 2023 m. kaupiami ir saugom lektorių siūlomų programų duomenys. Lentelę sudaro į Lietuvoje organizuojamus renginius Lietuvos dėstytojų / lektorių siūlomos programos. Viena duomenų rinkinio eilutė atitinka vieną dėstytojo programą.
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paraiskos_nr,string,,,,4,open,,Paraiškos numeris,
 ,,,,,vardas_pavarde,string,,,,4,open,,Lektoriaus vardas pavardė,
