@@ -448,7 +448,8 @@ datasets/gov/aaa/integruotas_monitoringas.csv
 datasets/gov/vmvt/higienos_atitiktis.csv
 datasets/gov/vmvt/kontroles_subjektai.csv
 datasets/gov/ntakd/patikrinimo_planai.csv
-datasets/gov/ntakd/deklaracijos.csv
+datasets/gov/ntakd/prekursoriai.csv
+datasets/gov/ntakd/alkoholis_tabakas.csv
 datasets/gov/vmvt/maisto_tvarkymo_subjektai.csv
 datasets/gov/ntakd/ekonomines_sankcijos.csv
 datasets/gov/vat/r33_registruoti_aap.csv
