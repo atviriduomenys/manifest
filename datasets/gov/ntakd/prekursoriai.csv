@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ntakd/deklaracijos,,,,,,,,,,,,Kontroliuojamų medžiagų deklaracijų duomenys,
+,datasets/gov/ntakd/ptakis,,,,,,,,,,,,Kontroliuojamų medžiagų deklaracijų duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
