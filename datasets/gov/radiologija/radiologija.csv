@@ -72,5 +72,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,SR,"""SR dokumentas""",,,,SR dokumentas,
 ,,,,,tyrimo_serijos_aprasymas,string,,,,4,open,,Tyrimo serijos aprašymas,
 ,,,,,atvaizdo_uuid,string,,,,4,open,,Atvaizdo unikalus identifikatorius,
-,,,,,apsiva_as,number,″,,,4,open,,Apšvita arksekundėmis,
+,,,,,apsvita,number,″,,,4,open,,Apšvita arksekundėmis,
 ,,,,,fotometrine_interpretacija,string,,,,4,open,,Fotometrinė interpretacija,
