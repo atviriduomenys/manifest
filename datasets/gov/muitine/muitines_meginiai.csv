@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Rezervacija,,,prekiu_klasifikavimo_akto_id,,,4,,,Informacija apie muitinės mėginių klasifikavimo aktus,informacija apie muitinio įforminimo metu paimtus prekių pavyzdžius  ir pagal juos suformuotus prekių klasifikavimo aktus
+,,,,Aktas,,,prekiu_klasifikavimo_akto_id,,,4,,,Informacija apie muitinės mėginių klasifikavimo aktus,informacija apie muitinio įforminimo metu paimtus prekių pavyzdžius  ir pagal juos suformuotus prekių klasifikavimo aktus
 ,,,,,prekiu_klasifikavimo_akto_id,string,,,,4,open,,Prekių klasifikavimo akto identifikatorius,
 ,,,,,prekiu_klasifikavimo_akto_numeris,string,,,,4,open,,Prekių klasifikavimo akto numeris,
 ,,,,,prekiu_klasifikavimo_akto_data,date,D,,,4,open,,Prekių klasifikavimo akto data,
