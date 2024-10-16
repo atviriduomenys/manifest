@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,signatura,string,,,,3,open,,Signatūros pavadinimas,
 ,,,,,kolekcija,string,,,,4,open,,Kolekcijos pavadinimas,
 ,,,,,saugotojas,string,,,,4,open,,Įrašo saugojimo vieta,
-,,,,,rusys,string,,,,4,open,,Kolekcijos įrašo rušis(-ys),
+,,,,,rusys,string,,,,4,open,,Kolekcijos įrašo rūšis(-ys),
 ,,,,,,comment,property,,"""update(property: """"rusys[]"""", type: """"array"""", source: """"Rusys"""")""",4,,spinta:161,,
 ,,,,,klasifikacija,string,,,,4,open,,Kolekcijos įrašo klasifikacija(-os),
 ,,,,,,comment,property,,"""update(property: """"klasifikacija[]"""", type: """"array"""", source: """"Klasifikacija"""")""",4,,spinta:161,,
