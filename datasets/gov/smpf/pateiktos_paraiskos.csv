@@ -8,7 +8,7 @@ Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.g
 ,,,,,,,,,,,,,,
 ,,,,Paraiska,,,vda_prime_key,,,4,,,Švietimo mainų paramos fondo paraiškos,Rinkinyje pateikiami VšĮ Švietimo mainų paramos fondo nuo 2023 m. kaupiami ir saugomi pateiktų paraiškų duomenys. Rinkinio lentelę sudaro į Lietuvoje organizuojamus renginius pateiktų paraiškų duomenys. Viena eilutė atitinka vieną paraišką.
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,paraiskos_nr,ref,/datasets/gov/smpf/pateiktos_paraiskos/LektoriausPrograma[paraiskos_nr],,,4,open,,Paraiškos numeris,
+,,,,,paraiskos_nr,string,,,,4,open,,Paraiškos numeris,
 ,,,,,prasymas_pateiktas,date,D,,,4,open,,Prašymo pateikimo data,
 ,,,,,prasymas_patvirtintas,date,D,,,4,open,,Prašymo patvirtinimo data,
 ,,,,,prasymo_statusas,string,,,,4,open,,Prašymo statusas,
