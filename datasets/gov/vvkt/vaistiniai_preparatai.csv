@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vvkt/vaistiniai_preparatai,,,,,,,,,,,,Valstybinės vaistų kontrolės registruotų vaistinių preparatų duomenų rinkinys,"""Rinkinyje pateikiami duomenys apie vaistinius preparatus sukauptus VVKT (Valstybinės vaistų kontrolės tarnybos). Rinkinyje nurodomos vaistinių preparatų charakteristikos: preparato pavadinimas, preparate esanti veiklioji medžiaga, stiprumas, vaistinio preparato farmacinė forma ir vartojimo būdai, kokiai grupei ir pogrupiui priskiriamas vaistinis preparatas, vaistinio preparato recepto poreikis, stebėjimo ir kontrolės būsenos, pirmos registracijos, bei paskutinio perregistravimo data, dabartinė preparato stadija, taip pat preparatą registruojančios įmonės pavadinimas ir šalis. Rinkinyje taip pat yra informacijos apie vaistinių preparatų pakuotes: pakuotės tiekimo būsena, pakuotės tipas, pakuotės aprašymas. Rinkinys sudarytas iš dviejų lentelių:
+,datasets/gov/vvkt/vaistiniai_preparatai,,,,,,,,,,,,Valstybinės vaistų kontrolės registruotų vaistinių preparatų duomenų rinkinys,"""Rinkinyje pateikiami duomenys apie vaistinius preparatus sukauptus VVKT (Valstybės vaistų kontrolės tarnybos). Rinkinyje nurodomos vaistinių preparatų charakteristikos: preparato pavadinimas, preparate esanti veiklioji medžiaga, stiprumas, vaistinio preparato farmacinė forma ir vartojimo būdai, kokiai grupei ir pogrupiui priskiriamas vaistinis preparatas, vaistinio preparato recepto poreikis, stebėjimo ir kontrolės būsenos, pirmos registracijos, bei paskutinio perregistravimo data, dabartinė preparato stadija, taip pat preparatą registruojančios įmonės pavadinimas ir šalis. Rinkinyje taip pat yra informacijos apie vaistinių preparatų pakuotes: pakuotės tiekimo būsena, pakuotės tipas, pakuotės aprašymas. Rinkinys sudarytas iš dviejų lentelių:
 * Vaistinis preparatas (Informacija apie vaistinį preparatą ir jo pakuotes) - viena eilutė yra informacija apie vaistinį preparatą ir jo pakuotę. Eilutei unikalumą suteikia vid ir pakid stulpelių pora.
 * Vaistinio preparato stadijos (Informacija apie vaistinio preparato stadijų pokyčius laike) - vieną eilutę sudaro vaistinis preparatas ir informacija apie stadijos pasikeitimą. Eilutei unikalumą suteikia vid, stadija ir stadija_sukurta stulpelių kombinacija.
 Abi lenteles galima sujungti per vid stulpelius.
@@ -7,7 +7,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
 ,,,,,,,,,,,,,,
-,,,,PreparataiPakuotes,,,vda_id,,,4,,,Valstybinės vaistų kontrolės tarnybos duomenys apie vaistinius preparatus ir jų pakuotes,
+,,,,PreparatasPakuote,,,vda_id,,,4,,,Valstybinės vaistų kontrolės tarnybos duomenys apie vaistinius preparatus ir jų pakuotes,
 ,,,,,vda_id,string,,,,4,open,,VDA ID,Valstybės Duomenų Agentūros įrašo identifikatorius.
 ,,,,,vid,string,,,,4,open,,Vaisto ID,"""Unikalus vaistinio preparato identifikatorius, automatiškai generuojamas sistemos."""
 ,,,,,pak_id,string,,,,4,open,,Pakuotės ID,"""Unikalus vaistinio preparato pakuotės identifikatorius, automatiškai generuojamas sistemos, kiekvienai naujai vaistinio preparato pakuotei didinamas vienetu."""
@@ -15,11 +15,13 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,npak7_id,string,,,,4,open,,Septynių skaitmenų pakuotės ID,"""Unikalus nacionalinis septynženklis vaistinio preparato pakuotės identifikatorius, automatiškai generuojamas sistemos: prie npak_id pridedamas skaičius 1000000."""
 ,,,,,atc_kodas,string,,,,4,open,,ATC kodas,Veikliosios medžiagos anatominės-terapinės-cheminės klasifikacijos kodas.
 ,,,,,preparato_pav,text,,,,2,open,,Vaistinio preparato pavadinimas,"""Vaistinio preparato sugalvotas pavadinimas, vietoje formalaus ilgo pavadinimo."""
-,,,,,veiklioji_medz@lt,text,,,,4,open,,Veiklioji medžiaga,"""Vaistinio preparato veikliosios medžiagos pavadinimas. Jei vaistinį preparatą sudaro keli komponentai, tai skirtingų komponentų veikliosios medžiagos atskiriamos ""+"" simboliu."""
-,,,,,veikl_angl_pavad@en,text,,,,4,open,,Angliškas pavadinimas,Veikliosios medžiagos angliškas pavadinimas.
+,,,,,veiklioji_medz_lt,string,,,,4,open,,Veiklioji medžiaga,"""Vaistinio preparato veikliosios medžiagos pavadinimas. Jei vaistinį preparatą sudaro keli komponentai, tai skirtingų komponentų veikliosios medžiagos atskiriamos ""+"" simboliu."""
+,,,,,,comment,type,,"update(property: ""veiklioji_medz_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,veikl_angl_pavad,string,,,,4,open,,Angliškas pavadinimas,Veikliosios medžiagos angliškas pavadinimas.
 ,,,,,stiprumas,string,,,,2,open,,Stiprumas,"""Veikliosios medžiagos kiekis vienoje dozėje. Jei vaistinį preparatą sudaro keli komponentai, tai skirtingų komponentų veikliųjų medžiagų stiprumai atskiriami""+"" simboliu."""
-,,,,,farmacine_forma@lt,text,,,,4,open,,Farmacinė forma,"""Vaistinio preparato farmacinė forma. Kuomet vaistinis preparatas turi kelias veikliąsias medžiagas, jų formos gali būti atskirtos ""+"". Tuo atveju, kai farmacinės formos sutampa forma rašoma 1 kartą."""
-,,,,,vartojimo_budas@lt,text,,,,4,open,,Vartojimo būdas,Vaistinio preparato vartojimo būdas.
+,,,,,farmacine_forma_lt,string,,,,4,open,,Farmacinė forma,"""Vaistinio preparato farmacinė forma. Kuomet vaistinis preparatas turi kelias veikliąsias medžiagas, jų formos gali būti atskirtos ""+"". Tuo atveju, kai farmacinės formos sutampa forma rašoma 1 kartą."""
+,,,,,,comment,type,,"update(property: ""farmacine_forma_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,vartojimo_budas,string,,,,4,open,,Vartojimo būdas,Vaistinio preparato vartojimo būdas.
 ,,,,,vaist_prep_grupe,string,,,,4,open,,Vaistinio preparato grupe,Vaistinio preparato grupės pavadinimas.
 ,,,,,,enum,,,"""Vaistinis preparatas""",,,,Vaistinis preparatas,
 ,,,,,vaist_prep_pogrupis,string,,,,4,open,,Vaistinio preparato pogrupis,Vaistinio preparato pogrupio pavadinimas.
@@ -43,21 +45,21 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,,,,,"""Nepradėtas tiekti""",,,,Nepradėtas tiekti,
 ,,,,,pak_reg_nr,string,,,,4,open,,Pakuotės registracijos numeris,"""Vaistinio preparato pakuotės registracijos eilės numeris, unikalus vienos vaistinio preparato pakuotės ribose."""
 ,,,,,pakuotes_tipas,string,,,,4,open,,Pakuotės tipas,Vaistinio preparato talpyklės tipas.
-,,,,,pak_aprasymas,text,,,,2,open,,Pakuotės aprašymas,Vaistinio preparato pakuotės aprašymas.
+,,,,,pak_aprasymas,string,,,,2,open,,Pakuotės aprašymas,Vaistinio preparato pakuotės aprašymas.
 ,,,,,pak_recepto_poreikis,string,,,,4,open,,Pakuotės recepto poreikis,"""Šio lauko reikšmė dažniausiai sutampa su ""recepto_poreikis"" lauko reikšme, tačiau būna atvėjų, kai šių laukų reikšmės skiriasi, pvz, 10 ir 20 pakuotės yra nereceptinės, o 50 receptinė. Vaistiniam preparatui tokiu atveju priskirtas požymis ""Nereceptinis/Receptinis""."""
 ,,,,,,enum,,,"""Receptinis""",,,,Receptinis,
 ,,,,,,,,,"""Nereceptinis""",,,,Nereceptinis,
 ,,,,,,,,,"""Nenurodytas""",,,,Nenurodytas,
-,,,,,registruotojas,text,,,,2,open,,Registruotojas,"""Juridinio asmens, kuris registruoja vaistinį preparatą, pavadinimas."""
+,,,,,registruotojas,string,,,,2,open,,Registruotojas,"""Juridinio asmens, kuris registruoja vaistinį preparatą, pavadinimas."""
 ,,,,,registruotojo_vals,string,,,,4,open,,Registruotojo valstybė,"""Valstybės pavadinimas, kurioje yra registruotas juridinis asmuo."""
 ,,,,,paraiskos_tipas,string,,,,4,open,,Paraiškos tipas,"""Paraiškos tipas, nusakantis pagai kokį Direktyvos 2001/83/EB straipsnį paraiška teikiama, pavyzdžiui, ""pagai 8(3) straipsnį"", ""pagal 10 (1) straipsnį"" ir pan."""
 ,,,,,vid_atnaujintas,datetime,1L,,,4,open,,VID atnaujintas,Laiko žyma kada paskutinį kartą buvo atnaujinta informacija apie vaistinį preparatą VVKT informacinėje sistemoje.
 ,,,,,pakid_atnaujintas,datetime,1L,,,4,open,,Pakuotės ID atnaujintas,Laiko žyma kada paskutinį kartą buvo atnaujinta informacija apie vaistinio preparato pakuotę VVKT informacinėje sistemoje.
 ,,,,,,,,,,,,,,
-,,,,PreparataiStadijos,,,vda_id,,,4,,,Valstybinės vaistų kontrolės tarnybos duomenys apie vaistinių preparatų stadijos pokyčius laike,
+,,,,PreparatasStadija,,,vda_id,,,4,,,Valstybinės vaistų kontrolės tarnybos duomenys apie vaistinių preparatų stadijos pokyčius laike,
 ,,,,,vda_id,string,,,,4,open,,VDA ID,Valstybės Duomenų Agentūros įrašo identifikatorius.
 ,,,,,vid,string,,,,4,open,,Vaisto ID,"""Unikalus vaistinio preparato identifikatorius, automatiškai generuojamas sistemos."""
-,,,,,preparato_pav,text,,,,2,open,,Vaistinio preparato pavadinimas,"""Vaistinio preparato sugalvotas pavadinimas, vietoje formalaus ilgo pavadinimo."""
+,,,,,preparato_pav,string,,,,2,open,,Vaistinio preparato pavadinimas,"""Vaistinio preparato sugalvotas pavadinimas, vietoje formalaus ilgo pavadinimo."""
 ,,,,,stadija,string,,,,4,open,,Stadija,Dabartinė vaistinio preparato stadija.
 ,,,,,,enum,,,"""Registruotas""",,,,Registruotas,
 ,,,,,,,,,"""Išregistruotas""",,,,Išregistruotas,
