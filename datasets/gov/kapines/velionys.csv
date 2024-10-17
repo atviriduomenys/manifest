@@ -119,7 +119,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vieta_kape,integer,,,,4,open,,"Velionio palaidojimo vieta kapavietėje. Pavyzdžiui, 3 vietų kapavietėje per vidurį laidojamam velioniui būtų žymima 2.",
 ,,,,,geometrija,"geometry(3857)",,,,4,open,,"Velionio kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.",
 ,,,,,,,,,,,,,,
-,,,,UtenosMiestas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės kapinėse palaidotų velionių duomenys,
+,,,,KlaipedosMiestas,,,vda_id,,,4,,,Klaipėdos miesto savivaldybės kapinėse palaidotų velionių duomenys,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,kapo_id,ref,/datasets/gov/kapines/registras/kapavietes/KlaipedosMiestas[kapo_id],,,4,open,,Kapavietės identifikatorius,
