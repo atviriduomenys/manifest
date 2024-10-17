@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lhmt/fenologija,,,,,,,,,,,,Lietuvos hidrometeorologijos tarnybos registruoti žydinčių augalų fenologiniai tarpsniai Lietuvoje,"""Duomenų lentelė apie Lietuvos hidrometeorologijos tarnybos (LHMT) registruotus fenologinius žydinčių augalų tarpsnius. Vienas įrašas (eilutė) yra vieno augalo fenologinė tarpsnio fazė užregistruota konkrečią dieną. Eilutėje yra - augalo pavadinimas, fenloginė tarpsnio fazė, stebėjimo data, stotis - kurioje atliktas stebėjimas - pavadinimas ir stoties WGS-84 koordinačių lokacija, duomenų įkėlimo į LHMT informacinę sistemą data. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,AugaluFenologija,,,vda_pk,,,4,,,LHMT duomenys apie Lietuvoje žydinčių augalų fenologinius tarpsnius,
+,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės duomenų agentūros unikalus identifikacinis įrašo numeris (pirminis raktas).
+,,,,,augalas,string,,,,4,open,,Augalo pavadinimas,
+,,,,,faze,string,,,,4,open,,Fenologinio tarpsnio fazė,Augalo fenologinio tarpsnio fazė.
+,,,,,stebeta,date,1D,,,4,open,,Stebėjimo data,"""Data, kada buvo augalo fenologinė tarpsnio fazė pastebėta"""
+,,,,,stotis,string,,,,4,open,,Stebėjimo stotis,"""Stoties, kurioje atliekamas stebėjimas, pavadinimas. AMS - automatinė meteorologijos stotis, MS - meteorologijos stotis."""
+,,,,,geometrija,geometry(4326),,,,4,open,,WGS-84 koordinatės taškas,"""Stoties, kurioje atliekamas stebėjimas, WGS-84 taško koordinatė."""
+,,,,,duomenys_ikelti,date,1D,,,4,open,,Duomenys įkelti,Kada duomenys buvo užregistruoti LHMT informacinėje sistemoje.
