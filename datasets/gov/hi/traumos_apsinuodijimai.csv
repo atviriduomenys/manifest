@@ -10,7 +10,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės Duomenų Agentūros įrašo identifikatorius (pirminis raktas).
 ,,,,,paciento_id,string,,,,4,open,,Paciento ID,Paciento identifikacinis numeris iš vidinės informacinės sistemos. 
 ,,,,,atvejo_id,string,,,,4,open,,Atvejo ID,Gydymo lapo (klinikinio atvejo) identifikacinis numeris.
-,,,,,gyd_lap_pradzia,date,M,,,4,open,,Gydymo lapo pradžia,Gydymo lapo (klinikinio atvejo) identifikacinis numeris.
+,,,,,gyd_lap_pradzia,date,M,,,4,open,,Gydymo lapo pradžia,"Data, mėnesio tikslumu, kada gydymo lapas buvo užregistruotas."
 ,,,,,lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
