@@ -58,6 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,parengusi_inst,string,,,,4,open,,Dokumentą parengusių institucijų pavadinimai (rūšiavimui),
 ,,,,,priemusi_inst,string,,,,4,open,,Dokumentą priėmusių (priimančių) institucijų pavadinimai (rūšiavimui),
 ,,,,,tar_kodas,string,,,,4,open,,TA registro (TAR) kodas,
+,,,,,rusis,string,,,,4,open,,Rūšis (Teisės akto rūšis), 
 ,,,,,atv_dok_nr,string,,,,2,open,,Atvaizduojamas dokumento numeris,
 ,,,,,registracija,date,D,,,4,open,,Registracijos data (TA registracijos data ),
 ,,,,,isigal_sal_lt,string,,,,2,open,,Teisės akto įsigaliojimo sąlygos,
