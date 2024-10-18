@@ -1,20 +1,51 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/hi/traumos_apsinuodijimai,,,,,,,,,,,,"Stacionaro ir ambulatoriniai ligoniai, gydyti nuo traumų ir apsinuodijimų",
+,datasets/gov/hi/traumos_apsinuodijimai,,,,,,,,,,,,Stacionaro ir ambulatoriniai ligoniai, gydyti nuo traumų ir apsinuodijimų,"""Duomenys iš Higienos Instituto apie pacientus, kurie kreipėsi į gydymo įstaigas dėl traumų ir apsinuodijimų, ir kuriems buvo priskirtas stacionarus arba ambulatorinis gydymo tipas. Duomenų rinkinys yra sudarytas iš dviejų lentelių:
+* Pacientas - vieną eilutę sudaro informacija apie paciento traumą/apsinuodijimą. Eilutėje pateikiama informacija apie pacientą - lytis, gimimo metai, savivaldybė, kurioje registruotas paciento gyvenamasis adresas, ir gyvenvietės tipas. Taip pat pateikiama pagrindinė su trauma susijusi informacija - gydymo lapo pradžios data, gydymo tipas (jei gydymas ""Stacionarinis"", nurodomas ir stacionaro tipas), bei traumą/apsinuodijimą apibūdinantys TLK-10-AM kodai nurodantys traumos - pavadinimą, aplinkybes, veiklą (įvykstant traumai) ir įvykio vietą. 
+* Ligonine - vieną eilutę sudaro traumos/apsinuodjimo atvejis ir gydymo įstaiga, į kurią buvo kreiptąsi. Eilutėje yra informacija apie gydymo įstaigą - pavadinimas ir juridinio asmens kodas (JAR). Informacija apie traumą/apsinuodijimą - gydymo lapo pradžios ir pabaigos laiko žymos, traumos TLK-10-AM kodas, gydymo tipas (jei gydymas ""Stacionarinis"", nurodomas ir stacionaro tipas).
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TraumosAtvejis,,,vda_id,,,4,,,"Stacionaro ir ambulatoriniai ligoniai, gydyti nuo traumų ir apsinuodijimų",
-,,,,,vda_id,string,,,,4,open,,Unikalus įrašo identifikatorius,
-,,,,,atvejo_id,string,,,,4,open,,Unikalus gydymo atvejo identifikatorius,
-,,,,,gydymas,string,,,,4,open,,"Nurodo, ar tai buvo ambulatorinė ar stacionarinė trauma",
-,,,,,lytis,string,,,,4,open,,Lytis,
-,,,,,amzius,string,,,,4,open,,Amžius,
-,,,,,savivaldybe,string,,,,2,open,,Savivaldybė,
-,,,,,gyvenviete,string,,,,4,open,,Gyvenamoji vietovė (miestas/kaimas),
-,,,,,klinikine_trauma,string,,,,4,open,,"Traumų ir apsinuodijimų kodas pagal TLK-10-AM (S00-T98), nusakantys klinikinę traumą (sužalojimai, apsinuodijimai ir tam tikri išorinių poveikių padariniai).",
-,,,,,aplinkybe,string,,,,4,open,,"Traumų ir apsinuodijimų kodas pagal TLK-10-AM kodus (V00-Y89), nusakantis traumos pobūdį/ketinimą.",
-,,,,,veikla,string,,,,4,open,,"Traumos ir apsinuodijimo veiklos kodas pagal TLK-10-AM (U50-U73).",
-,,,,,vieta,string,,,,4,open,,"Traumos ir apsinuodijimo vietos kodas pagal TLK-10-AM (Y92).",
-,,,,,gyd_pradzia,date,D,,,4,open,,Gydymo lapo pradžios data,
-,,,,,gyd_pabaiga,date,D,,,4,open,,Gydymo lapo pabaigos data,
-,,,,,etapo_tipas,string,,,,4,open,,Gydymo tipas,
+,,,,Pacientas,,,vda_pk,,,4,,,Pacientų traumos/apsinuodijimai ir jų aplinkybės,"Vieną eilutę sudaro informacija apie paciento traumą/apsinuodijimą. Eilutėje pateikiama informacija apie pacientą - lytis, gimimo metai, savivaldybė, kurioje registruotas paciento gyvenamasis adresas, ir gyvenvietės tipas. Taip pat pateikiama pagrindinė su trauma susijusi informacija - gydymo lapo pradžios data, gydymo tipas (jei gydymas ""Stacionarinis"", nurodomas ir stacionaro tipas), bei traumą/apsinuodijimą apibūdinantys TLK-10-AM kodai nurodantys traumos - pavadinimą, aplinkybes, veiklą (įvykstant traumai) ir įvykio vietą. "
+,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės Duomenų Agentūros įrašo identifikatorius (pirminis raktas).
+,,,,,paciento_id,string,,,,4,open,,Paciento ID,Paciento identifikacinis numeris iš vidinės informacinės sistemos. 
+,,,,,atvejo_id,string,,,,4,open,,Atvejo ID,Gydymo lapo (klinikinio atvejo) identifikacinis numeris.
+,,,,,gyd_lap_pradzia,date,M,,,4,open,,Gydymo lapo pradžia,Gydymo lapo (klinikinio atvejo) identifikacinis numeris.
+,,,,,lytis,string,,,,4,open,,Paciento lytis,
+,,,,,,enum,,,"""Vyras""",,,,Vyras,
+,,,,,,,,,"""Moteris""",,,,Moteris,
+,,,,,,,,,"""Nežinoma""",,,,Nežinoma,
+,,,,,vda_gim_metai,date,Y,,,4,open,,Paciento gimimo metai,"""Paciento gimimo metai, metų tikslumu. Apskaičiuoti atimant paciento amžių, apsilankymo gydymo įstaigoje metu, iš gydymo lapo užregistravimo laiko žymos. Paciento, kuris lankėsi kelis kartus gydymo įstaigoje, skaičiuojama jo gimimo metų mediana iš visų apsilankymų. Papildomai, atsitiktinai pridėtas gimimo metų triukšminimas 20 % gimimo datų atsitiktine tvarka. Prie gimimo metų yra pridedami arba atimami vieneri metai."""
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,"""Savivaldybės pavadinimas, kurioje pacientas registravęs savo gyvenamąją vietą."""
+,,,,,gyvenviete,string,,,,4,open,,Gyvenvietė,"""Paciento gyvenvietės tipas - ""Kaimas"", ""Miestas"", ""Nežinoma""."""
+,,,,,,enum,,,"""Miestas""",,,,Miestas,
+,,,,,,,,,"""Kaimas""",,,,Kaimas,
+,,,,,,,,,"""Nežinoma""",,,,Nežinoma,
+,,,,,gydymas,string,,,,4,open,,Gydymo tipas,"""Kokio tipo gydymas taikomas pacientui - ""Ambulatorinis"" ar ""Stacionarinis""."""
+,,,,,,enum,,,"""Ambulatorinis""",,,,Ambulatorinis,
+,,,,,,,,,"""Stacionarinis""",,,,Stacionarinis,
+,,,,,stacionaro_tipas,string,,,,4,open,,Stacionaro tipas,"""Stacionarinio gydymo paslaugos tipas (A-aktyvus, I-ilgalaikis, R-reabilitacinis, T-transplantacinis)."""
+,,,,,,enum,,,"""A""",,,,Aktyvus,"""Paslaugos, teikiamos pacientams dėl ūmios ligos, lėtinės ligos paūmėjimo ar sužalojimo. Teikiant šias paslaugas reikalingas ištyrimas ir (ar) aktyvus medikamentinis, ir (ar) chirurginis gydymas, kuris negali būti taikomas ambulatorinėmis sąlygomis."""
+,,,,,,,,,"""I""",,,,Ilgalaikis,"""Paslaugos, teikiamos lėtinėmis ligomis sergantiems pacientams, kai reikalingas ilgai (dažniausiai ilgiau nei mėnesį) trunkantis gydymas ir (ar) slauga. Šioms paslaugoms priskiriamos slaugos ir palaikomojo gydymo, tuberkuliozės, specialiosios psichiatrijos, psichikos ligų ilgalaikio gydymo paslaugos ir pan."""
+,,,,,,,,,"""R""",,,,Reabilitacinis,"""Reabilitacijos priemonių (fizioterapijos, kineziterapijos, ergoterapijos, ortopedinių ir techninės pagalbos priemonių, psichologinės pagalbos, gydymo vaistais, pacientų ir jų artimųjų mokymo, gydymo dieta ir kt.) taikymas siekiant kuo daugiau sugrąžinti sutrikusias funkcijas arba, esant negrįžtamiems pakitimams, jas kompensuoti, arba palaikyti pasiektą funkcinio pajėgumo lygį. Susirgimai ir būklės, kada reabilitacijos paslaugos gali būti teikiamos stacionare, yra patvirtintos Sveikatos apsaugos ministro įsakymu."""
+,,,,,,,,,"""T""",,,,Transplantacinis,"""Paslaugos, kurias teikiant iš vieno asmens paimti audiniai, ląstelės ir (ar) organai persodinami kitam arba tam pačiam asmeniui gydymo tikslu. Yra atliekamos inkstų, širdies, kepenų, plaučių, širdies ir plaučių komplekso, kasos ir inksto komplekso, ragenos, kaulų čiulpų transplantacijos."""
+,,,,,tlk_trauma,string,,,,4,open,,Traumos kodas,"""Traumų ir apsinuodijimų kodas pagal TLK-10-AM (S00-T98), nusakantis klinikinę traumą (sužalojimai, apsinuodijimai ir tam tikri išorinių poveikių padariniai)."""
+,,,,,tlk_aplinkybe,string,,,,4,open,,Traumos aplinkybės kodas,"""Traumų ir apsinuodijimų kodas pagal TLK-10-AM kodus (V00-Y89), nusakantis traumos pobūdį/ketinimą."""
+,,,,,tlk_veikla,string,,,,4,open,,Traumos veiklos kodas,Traumos ir apsinuodijimo veiklos kodas pagal TLK-10-AM (U50-U73).
+,,,,,tlk_vieta,string,,,,4,open,,Traumos vietovės kodas,Traumos ir apsinuodijimo vietos kodas pagal TLK-10-AM (Y92).
+,,,,,,,,,,,,,,
+,,,,Ligonine,,,vda_pk,,,4,,,Gydymo įstaigų duomenys apie traumas/apsinuodijimus,"""Vieną eilutę sudaro traumos/apsinuodjimo atvejis ir gydymo įstaiga, į kurią buvo kreiptąsi. Eilutėje yra informacija apie gydymo įstaigą - pavadinimas ir juridinio asmens kodas (JAR). Informacija apie traumą/apsinuodijimą - gydymo lapo pradžios ir pabaigos laiko žymos, traumos TLK-10-AM kodas, gydymo tipas (jei gydymas ""Stacionarinis"", nurodomas ir stacionaro tipas)."""
+,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės Duomenų Agentūros įrašo identifikatorius (pirminis raktas).
+,,,,,istaiga,string,,,,4,open,,Įstaiga,Gydymo įstaigos pavadinimas.
+,,,,,kodas,string,,,,4,open,,Įstaigos kodas,Gydymo įstaigos JAR kodas.
+,,,,,gyd_lap_pradzia,datetime,M,,,4,open,,Gydymo lapo pradžia,Laiko žyma nurodanti gydymo lapo pradžią.
+,,,,,gyd_lap_pabaiga,datetime,M,,,4,open,,Gydymo lapo pabaiga,Laiko žyma nurodanti gydymo lapo pabaigą.
+,,,,,tlk_trauma,string,,,,4,open,,Traumos kodas,"""Traumų ir apsinuodijimų kodas pagal TLK-10-AM (S00-T98), nusakantis klinikinę traumą (sužalojimai, apsinuodijimai ir tam tikri išorinių poveikių padariniai)."""
+,,,,,gydymas,string,,,,4,open,,Gydymo tipas,"""Kokio tipo gydymas taikomas pacientui - ""Ambulatorinis"" ar ""Stacionarinis""."""
+,,,,,,enum,,,"""Ambulatorinis""",,,,Ambulatorinis,
+,,,,,,,,,"""Stacionarinis""",,,,Stacionarinis,
+,,,,,stacionaro_tipas,string,,,,4,open,,Stacionaro tipas,"""Stacionarinio gydymo paslaugos tipas (A-aktyvus, I-ilgalaikis, R-reabilitacinis, T-transplantacinis)."""
+,,,,,,enum,,,"""A""",,,,Aktyvus,"""Paslaugos, teikiamos pacientams dėl ūmios ligos, lėtinės ligos paūmėjimo ar sužalojimo. Teikiant šias paslaugas reikalingas ištyrimas ir (ar) aktyvus medikamentinis, ir (ar) chirurginis gydymas, kuris negali būti taikomas ambulatorinėmis sąlygomis."""
+,,,,,,,,,"""I""",,,,Ilgalaikis,"""Paslaugos, teikiamos lėtinėmis ligomis sergantiems pacientams, kai reikalingas ilgai (dažniausiai ilgiau nei mėnesį) trunkantis gydymas ir (ar) slauga. Šioms paslaugoms priskiriamos slaugos ir palaikomojo gydymo, tuberkuliozės, specialiosios psichiatrijos, psichikos ligų ilgalaikio gydymo paslaugos ir pan."""
+,,,,,,,,,"""R""",,,,Reabilitacinis,"""Reabilitacijos priemonių (fizioterapijos, kineziterapijos, ergoterapijos, ortopedinių ir techninės pagalbos priemonių, psichologinės pagalbos, gydymo vaistais, pacientų ir jų artimųjų mokymo, gydymo dieta ir kt.) taikymas siekiant kuo daugiau sugrąžinti sutrikusias funkcijas arba, esant negrįžtamiems pakitimams, jas kompensuoti, arba palaikyti pasiektą funkcinio pajėgumo lygį. Susirgimai ir būklės, kada reabilitacijos paslaugos gali būti teikiamos stacionare, yra patvirtintos Sveikatos apsaugos ministro įsakymu."""
+,,,,,,,,,"""T""",,,,Transplantacinis,"""Paslaugos, kurias teikiant iš vieno asmens paimti audiniai, ląstelės ir (ar) organai persodinami kitam arba tam pačiam asmeniui gydymo tikslu. Yra atliekamos inkstų, širdies, kepenų, plaučių, širdies ir plaučių komplekso, kasos ir inksto komplekso, ragenos, kaulų čiulpų transplantacijos."""
