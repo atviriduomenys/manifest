@@ -38,8 +38,8 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės Duomenų Agentūros įrašo identifikatorius (pirminis raktas).
 ,,,,,istaiga,string,,,,4,open,,Įstaiga,Gydymo įstaigos pavadinimas.
 ,,,,,kodas,string,,,,4,open,,Įstaigos kodas,Gydymo įstaigos JAR kodas.
-,,,,,gyd_lap_pradzia,datetime,M,,,4,open,,Gydymo lapo pradžia,Laiko žyma nurodanti gydymo lapo pradžią.
-,,,,,gyd_lap_pabaiga,datetime,M,,,4,open,,Gydymo lapo pabaiga,Laiko žyma nurodanti gydymo lapo pabaigą.
+,,,,,gyd_lap_pradzia,datetime,T,,,4,open,,Gydymo lapo pradžia,Laiko žyma nurodanti gydymo lapo pradžią.
+,,,,,gyd_lap_pabaiga,datetime,T,,,4,open,,Gydymo lapo pabaiga,Laiko žyma nurodanti gydymo lapo pabaigą.
 ,,,,,tlk_trauma,string,,,,4,open,,Traumos kodas,"""Traumų ir apsinuodijimų kodas pagal TLK-10-AM (S00-T98), nusakantis klinikinę traumą (sužalojimai, apsinuodijimai ir tam tikri išorinių poveikių padariniai)."""
 ,,,,,gydymas,string,,,,4,open,,Gydymo tipas,"""Kokio tipo gydymas taikomas pacientui - ""Ambulatorinis"" ar ""Stacionarinis""."""
 ,,,,,,enum,,,"""Ambulatorinis""",,,,Ambulatorinis,
