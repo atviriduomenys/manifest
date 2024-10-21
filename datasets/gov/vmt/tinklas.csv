@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmt,,,,,,,,,,,,Valstybinė Miškų Tarnyba,
+,datasets/gov/vmt/tinklas,,,,,,,,,,,,Barelių tinklas Lietuvoje,"Rinkinyje pateikiami Valstybinės Miškų Tarnybos (VMT) duomenys apie barelių tinklą Lietuvoje nuo 1998m. iki šių dienų. Barelis - tai miško apskaitos vienetas, į kurį patenka apytiksliai 16 km2, arba 400 ha, teritorijos plotas. Vykdant miškų inventorizaciją, barelyje nustatomi svarbiausi medynų našumo rodikliai. Šie duomenys leidžia įvertinti Lietuvos miškų būklę ir jų kaitos rodiklius šalies, administracinių vienetų ar jų junginių (apskritys, rajonai) lygmeniu. Lietuvos Respublikos teritorijoje yra išskirta 16 349 nuolatinių stebėjimo barelių, kurie kas penkis metus atnaujinami. VMT kasmet vykdo stebėjimus penktadalyje barelių. Rinkinio duomenys apima visą Lietuvos miško žemę, nepaisant nuosavybės formos. Rinkinio objektas - vienas barelis. Lentelėje nurodoma jo matavimo data, penkerių metų ciklas, būsena ir konfidencialumo tikslais ""triukšmintos"" barelių centrų koordinatės. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Pranesimas,,,vda_id,,,4,,,Barelių tinklas Lietuvoje,"Rinkinyje pateikiami Valstybinės Miškų Tarnybos (VMT) duomenys apie barelių tinklą Lietuvoje nuo 1998m. iki šių dienų. Barelis - tai miško apskaitos vienetas, į kurį patenka apytiksliai 16 km2, arba 400 ha, teritorijos plotas. Vykdant miškų inventorizaciją, barelyje nustatomi svarbiausi medynų našumo rodikliai. Šie duomenys leidžia įvertinti Lietuvos miškų būklę ir jų kaitos rodiklius šalies, administracinių vienetų ar jų junginių (apskritys, rajonai) lygmeniu. Lietuvos Respublikos teritorijoje yra išskirta 16 349 nuolatinių stebėjimo barelių, kurie kas penkis metus atnaujinami. VMT kasmet vykdo stebėjimus penktadalyje barelių. Rinkinio duomenys apima visą Lietuvos miško žemę, nepaisant nuosavybės formos. Rinkinio objektas - vienas barelis. Lentelėje nurodoma jo matavimo data, penkerių metų ciklas, būsena ir konfidencialumo tikslais ""triukšmintos"" barelių centrų koordinatės. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,barelio_id,string,,,,4,open,,Barelio identifikacinis numeris,
+,,,,,senas_id,string,,,,4,open,,Ankstesnis barelio identifikacinis numeris.,
+,,,,,matavimo_data,date,D,,,4,open,,Barelio matavimo data,
+,,,,,ciklas,string,,,,4,open,,Penkerių metų matavimų ciklas,
+,,,,,,enum,,,"""1998-2002""",,,,,
+,,,,,,,,,"""2003-2007""",,,,,
+,,,,,,,,,"""2008-2012""",,,,,
+,,,,,,,,,"""2013-2017""",,,,,
+,,,,,busena,string,,,,4,open,,Barelio būsena,
+,,,,,,,,,"""matuotas""",,,,,
+,,,,,,,,,"""nebaigtas""",,,,,
+,,,,,geometrija,"geometry(point, 3346)",,,,4,open,,"Barelių centrų taškų LKS94 koordinatės. Dėl konfidencialumo pateiktos koordinatės yra ""triukšmintos"" ir neatspindi tikslių barelių centrų taškų.",
