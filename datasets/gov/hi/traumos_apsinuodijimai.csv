@@ -15,7 +15,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt""
 ,,,,,,enum,,,"""Vyras""",,,,Vyras,
 ,,,,,,,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Nežinoma""",,,,Nežinoma,
-,,,,,vda_gim_metai,date,Y,,,4,open,,Paciento gimimo metai,"""Paciento gimimo metai, metų tikslumu. Apskaičiuoti atimant paciento amžių, apsilankymo gydymo įstaigoje metu, iš gydymo lapo užregistravimo laiko žymos. Paciento, kuris lankėsi kelis kartus gydymo įstaigoje, skaičiuojama jo gimimo metų mediana iš visų apsilankymų. Papildomai, atsitiktinai pridėtas gimimo metų triukšminimas 20 % gimimo datų atsitiktine tvarka. Prie gimimo metų yra pridedami arba atimami vieneri metai."""
+,,,,,vda_gim_metai,date,Y,,,4,open,,Paciento gimimo metai,"""Paciento gimimo metai, metų tikslumu. Apskaičiuoti atimant paciento amžių, apsilankymo gydymo įstaigoje metu, iš gydymo lapo užregistravimo laiko žymos. Paciento, kuris lankėsi kelis kartus gydymo įstaigoje, skaičiuojama jo gimimo metų mediana iš visų apsilankymų. Apie 20% pacientų gimimo metų įrašų yra modifikuoti pridedant atsitiktines vertes – triukšmą."""
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,"""Savivaldybės pavadinimas, kurioje pacientas registravęs savo gyvenamąją vietą."""
 ,,,,,gyvenviete,string,,,,4,open,,Gyvenvietė,"""Paciento gyvenvietės tipas - ""Kaimas"", ""Miestas"", ""Nežinoma""."""
 ,,,,,,enum,,,"""Miestas""",,,,Miestas,
