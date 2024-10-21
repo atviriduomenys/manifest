@@ -14,6 +14,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""2008-2012""",,,,,
 ,,,,,,,,,"""2013-2017""",,,,,
 ,,,,,busena,string,,,,4,open,,Barelio būsena,
-,,,,,,,,,"""matuotas""",,,,,
+,,,,,,enum,,,"""matuotas""",,,,,
 ,,,,,,,,,"""nebaigtas""",,,,,
 ,,,,,geometrija,"geometry(point, 3346)",,,,4,open,,"Barelių centrų taškų LKS94 koordinatės. Dėl konfidencialumo pateiktos koordinatės yra ""triukšmintos"" ir neatspindi tikslių barelių centrų taškų.",
