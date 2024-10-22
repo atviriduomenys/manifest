@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/garantai,,,,,,,,,,,,Informacija apie muitinės garantus,Informacija apie muitinės garanto statusą turinčias  banko įstaigas ar draudimo bendroves
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Garantas,,,vda_prime_key,,,4,,,Informacija apie muitinės garantus,Informacija apie muitinės garanto statusą turinčias  banko įstaigas ar draudimo bendroves
+,,,,,vda_prime_key,string,,,,4,open,,Garanto identifikatorius,
+,,,,,garanto_pavadinimas,string,,,,4,open,,Garanto pavadinimas,
+,,,,,garanto_identifikacinis_numeris,string,,,,4,open,,Garanto identifikacinis numeris (GIN),
+,,,,,garanto_identifikatorius_mpr,string,,,,4,open,,Garanto identifikatorius muitinės prievolininkų registre (MPR),
+,,,,,garanto_statusas,string,,,,4,open,,Garanto statusas,
+,,,,,garanto_statuso_suteikimo_data,date,D,,,4,open,,Garanto statuso suteikimo data,
+,,,,,garanto_adresas,string,,,,4,open,,Garanto adresas,
+,,,,,garanto_miestas,string,,,,4,open,,Garanto miestas,
+,,,,,garanto_pasto_kodas,string,,,,4,open,,Garanto pašto kodas,
+,,,,,garanto_el_pasto_adresas,string,,,,4,open,,Garanto ar jo kontaktinio asmens elektroninio pašto adresas,
+,,,,,lakstu_formos_garantija,boolean,,,,4,open,,"Požymis, ar garantas išduoda lakštų formos garantiją",
+,,,,,perimancio_garanto_gin,string,,,,4,open,,"Garanto, kuris perima įsipareigojimus, identifikacinis numeris (GIN)",
+,,,,,perimancio_garanto_pavadinimas,string,,,,4,open,,"Garanto, kuris perima įsipareigojimus, pavadinimas",
