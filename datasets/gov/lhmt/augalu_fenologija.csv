@@ -5,10 +5,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,AugaluFenologija,,,vda_pk,,,4,,,LHMT duomenys apie Lietuvoje žydinčių augalų fenologinius tarpsnius,
 ,,,,,vda_pk,string,,,,4,open,,VDA PK,Valstybės duomenų agentūros unikalus identifikacinis įrašo numeris (pirminis raktas).
+,,,,,augalas_id,string,,,,4,open,,Augalo ID,Augalo identifikacinis numeris LHMT informacinėje sistemoje.
 ,,,,,augalas,string,,,,4,open,,Augalo pavadinimas,
+,,,,,faze_id,string,,,,4,open,,Fazės ID,Kartu su fazės stadijos identifikaciniu kodu naudojami konkrečiai fazei įvardinti.
+,,,,,fazes_stad_id,string,,,,4,open,,Fazės stadijos ID,Kartu su fazės identifikaciniu kodu naudojami konkrečiai fazei įvardinti.
 ,,,,,faze,string,,,,4,open,,Fenologinio tarpsnio fazė,Augalo fenologinio tarpsnio fazė.
-,,,,,faze_kodas,string,,,,4,open,,Fazės kodas,Kartu su fazės stadijos kodu naudojami konkrečiai fazei įvardinti.
-,,,,,fazes_stad_kodas,string,,,,4,open,,Fazės stadijos kodas,Kartu su fazės kodu naudojami konkrečiai fazei įvardinti.
 ,,,,,stebeta,date,1D,,,4,open,,Stebėjimo data,"""Data, kada buvo augalo fenologinė tarpsnio fazė pastebėta"""
 ,,,,,stotis,string,,,,4,open,,Stebėjimo stotis,"""Stoties, kurioje atliekamas stebėjimas, pavadinimas. AMS - automatinė meteorologijos stotis, MS - meteorologijos stotis."""
 ,,,,,geometrija,geometry(4326),,,,4,open,,WGS-84 koordinatės taškas,"""Stoties, kurioje atliekamas stebėjimas, WGS-84 taško koordinatė."""
