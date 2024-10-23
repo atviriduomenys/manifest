@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Priėmimas,,,id,,,4,,,Priėmimai į bendrojo ugdymo įstaigas Marijampolės savivaldybėje,
+,,,,Priemimas,,,id,,,4,,,Priėmimai į bendrojo ugdymo įstaigas Marijampolės savivaldybėje,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,prasymo_data,date,D,,,4,open,,Prašymo data,
 ,,,,,mokslo_metu_pradzia,date,D,,,4,open,,Mokslų metų pradžia,
