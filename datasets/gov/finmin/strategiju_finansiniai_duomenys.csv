@@ -1,14 +1,15 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/finmin/strategiju_finansiniai_duomenys,,,,,,,,,,,,Valstybės strategijų finansiniai duomenys,
+,datasets/gov/finmin/strategiju_finansiniai_duomenys,,,,,,,,,,,,Valstybės strategijų elementų finansiniai duomenys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,FinStrategija,,,iraso_id,,,4,,,Valstybės strategijų finansiniai duomenys,"Lentelėje pateikti patvirtintų valstybės strateginių dokumentų, kurie turi finansinius rodiklius, duomenys iš Lietuvos Respublikos finansų ministerijos Strateginio valdymo informacinės sistemos (SVIS). Informacija pateikiama nuo duomenų rinkimo pradžios (2023 metų) atnaujinant kas ketvirtį. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,FinStrategija,,,iraso_id,,,4,,,Valstybės strategijų elementų finansiniai duomenys,"Lentelėje pateikti valstybės strategijų objektų elementų, kurie turi priskirtas pinigines vertes (pvz., lėšų projekcijas), finansiniai duomenys iš Lietuvos Respublikos finansų ministerijos Strateginio valdymo informacinės sistemos (SVIS). Informacija pateikiama nuo duomenų rinkimo pradžios (2023 metų) atnaujinant kas ketvirtį. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,dok_kodas,string,,,,4,open,,Dokumento kodas,
 ,,,,,dok_pav,string,,,,4,open,,Dokumento pavadinimas,
 ,,,,,dok_versija,string,,,,4,open,,Dokumento versijos numeris,
 ,,,,,ar_paskutine_versija,boolean,,,,4,open,,"Požymis, nusakantis, ar dokumento versija yra paskutinė: ""true"" - paskutinė, ""false"" - priešingu atveju.",
+,,,,,dok_tipas,string,,,,4,open,,Dokumento tipas,
 ,,,,,dokumentas_galioja_nuo,date,D,,,4,open,,Dokumento galiojimo pradžios data (kai dirbama ne pagal darbo sekas).,
 ,,,,,dokumentas_galioja_iki,date,D,,,4,open,,Dokumento planuojama parengimo data (kai dirbama ne pagal darbo sekas).,
 ,,,,,strat_obj_kodas,string,,,,4,open,,Strategijos objekto (elemento) identifikatorius,
