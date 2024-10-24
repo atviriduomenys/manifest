@@ -3,7 +3,7 @@
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,GaliojantisProjektas,,,id,,,4,,,Galiojantys projektai (VTPSI),VTPSI galiojantys statybos projektai
+,,,,GaliojantisProjektas,,,id,,,4,,,Galiojantys projektai (VTPSI),VTPSI galiojantys statybos projektai,
 ,,,,,id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Projekto ID,
 ,,,,,statinio_id,string,,,,4,open,,Statinio ID,
