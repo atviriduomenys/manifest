@@ -782,4 +782,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eile,string,,,,4,open,,"Velionio kapavietės eilė kapinėse, jei ji egzistuoja (ypač naudojama tvarkingo išplanavimo ir naujose kapinėse). Jeigu kapinėse nebuvo naudojamos eilės, tuomet žymima 000.",
 ,,,,,kapaviete,string,,,,4,open,,Velionio kapavietės numeris kapinėse,
 ,,,,,vieta_kape,integer,,,,4,open,,"Velionio palaidojimo vieta kapavietėje. Pavyzdžiui, 3 vietų kapavietėje per vidurį laidojamam velioniui būtų žymima 2.",
-,,,,,geometrija,geometry(3857),,,,4,open,,Velionio kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.,
+,,,,,geometrija,geometry(3346),,,,4,open,,Velionio kapavietės vietos taško koordinatės pagal WGS84 / Pseudo-Mercator koordinačių sistemą.,
