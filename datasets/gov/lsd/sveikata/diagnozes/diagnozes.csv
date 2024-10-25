@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
 ,,,,,atveju_kiekis,integer,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, skaičius pagal savivaldybę, metus ir lytį""",
-,,,,,amziaus_vidurkis,double,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
+,,,,,amziaus_vidurkis,number,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
 ,,,,,,,,,,,,,,
 ,,,,EspbiDiagnozes003,,,vda_id,,,4,,,Diagnozių dažniai pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažniai pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
@@ -24,7 +24,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
 ,,,,,atveju_kiekis,integer,,,,4,open,,"""Nustatytų diagnozių kiekis pagal savivaldybę, metus ir lytį""",
-,,,,,amziaus_vidurkis,double,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Nustatomas pagal vizito pradžios laiką. Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
+,,,,,amziaus_vidurkis,number,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Nustatomas pagal vizito pradžios laiką. Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
 ,,,,,,,,,,,,,,
 ,,,,Persalimai,,,vda_id,,,4,,,Kvėpavimo takų infekcijų dažniai dienos tikslumu,"""Kvėpavimo takų infekcijų diagnozių dinamika: TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažniai pagal apsilankymo dieną, lytį ir paciento gyvenamosios vietos savivaldybę. Pateikti tik kodai, susiję su kvėpavimo takų infekcijomis (tam tikri J ir U blokai). Nurodytas skaičius unikalių asmenų, kuriems ataskaitinę dieną ""E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas nurodytos diagnozių grupės TLK kodas, ir skaičius asmenų, kuriems ši diagnozė ""nauja"" (t.y. nebuvo įrašyta per 30 praėjusių dienų)."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
