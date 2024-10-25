@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,EspbiDiagnozes025,,,vda_id,,,,,,,
-,,,,,vda_id,,,,,,,,Diagnozių dažniai pagal E025 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažniai pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK ""kodas, ir šių asmenų amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,EspbiDiagnozes025,,,vda_id,,,4,,,Diagnozių dažniai pagal E025 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažniai pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK ""kodas, ir šių asmenų amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK-10-AM kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
 ,,,,,diagnozes_metai,integer,,,,4,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
@@ -15,8 +15,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atveju_kiekis,integer,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, skaičius pagal savivaldybę, metus ir lytį""",
 ,,,,,amziaus_vidurkis,double,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
 ,,,,,,,,,,,,,,
-,,,,EspbiDiagnozes003,,,vda_id,,,,,,,
-,,,,,vda_id,,,,,,,,Diagnozių dažniai pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažniai pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,EspbiDiagnozes003,,,vda_id,,,4,,,Diagnozių dažniai pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažniai pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
 ,,,,,diagnozes_metai,integer,,,,4,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Nustatomi pagal vizito pradžios laiką. Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
@@ -26,8 +26,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atveju_kiekis,integer,,,,4,open,,"""Nustatytų diagnozių kiekis pagal savivaldybę, metus ir lytį""",
 ,,,,,amziaus_vidurkis,double,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Nustatomas pagal vizito pradžios laiką. Konfidencialumo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis nepateikiamas"""
 ,,,,,,,,,,,,,,
-,,,,Persalimai,,,vda_id,,,,,,,
-,,,,,vda_id,,,,,,,,Kvėpavimo takų infekcijų dažniai dienos tikslumu,"""Kvėpavimo takų infekcijų diagnozių dinamika: TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažniai pagal apsilankymo dieną, lytį ir paciento gyvenamosios vietos savivaldybę. Pateikti tik kodai, susiję su kvėpavimo takų infekcijomis (tam tikri J ir U blokai). Nurodytas skaičius unikalių asmenų, kuriems ataskaitinę dieną ""E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas nurodytos diagnozių grupės TLK kodas, ir skaičius asmenų, kuriems ši diagnozė ""nauja"" (t.y. nebuvo įrašyta per 30 praėjusių dienų)."
+,,,,Persalimai,,,vda_id,,,4,,,Kvėpavimo takų infekcijų dažniai dienos tikslumu,"""Kvėpavimo takų infekcijų diagnozių dinamika: TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažniai pagal apsilankymo dieną, lytį ir paciento gyvenamosios vietos savivaldybę. Pateikti tik kodai, susiję su kvėpavimo takų infekcijomis (tam tikri J ir U blokai). Nurodytas skaičius unikalių asmenų, kuriems ataskaitinę dieną ""E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas nurodytos diagnozių grupės TLK kodas, ir skaičius asmenų, kuriems ši diagnozė ""nauja"" (t.y. nebuvo įrašyta per 30 praėjusių dienų)."
+,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,data,date,D,,,4,open,,Diagnozės data,
 ,,,,,savivaldybe,string,,,,4,open,,"""Savivaldybė, kurioje asmuo deklaravęs gyvenamąją vietą kai nustatyta diagnozė""","""Apie 20 tūkst. atvejų, kurių savivaldybė nenurodyta, sudaro užsienyje nuolat gyvenantys arba išvykę"""
 ,,,,,diagnoze,string,,,,4,open,,Diagnozių grupė,
