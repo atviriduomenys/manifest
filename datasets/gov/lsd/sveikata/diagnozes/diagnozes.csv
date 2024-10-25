@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Asmenų grupės lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
-,,,,,atveju_kiekis,integer,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, skaičius pagal savivaldybę, metus ir lytį""",
+,,,,,atveju_kiekis,integer,U,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, skaičius pagal savivaldybę, metus ir lytį""",
 ,,,,,amziaus_vidurkis,number,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Konfidencialumo užtikrinimo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis paslėptas"""
 ,,,,,,,,,,,,,,
 ,,,,EspbiDiagnoze003,,,vda_id,,,4,,,Diagnozių dažnis pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažnis pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis,string,,,,4,open,,Asmenų grupės lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
-,,,,,atveju_kiekis,integer,,,,4,open,,"""Nustatytų diagnozių kiekis pagal savivaldybę, metus ir lytį""",
+,,,,,atveju_kiekis,integer,U,,,4,open,,"""Nustatytų diagnozių kiekis pagal savivaldybę, metus ir lytį""",
 ,,,,,amziaus_vidurkis,number,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Nustatomas pagal vizito pradžios laiką. Konfidencialumo užtikrinimo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis paslėptas"""
 ,,,,,,,,,,,,,,
 ,,,,Persalimas,,,vda_id,,,4,,,Kvėpavimo takų infekcijų dažnis dienos tikslumu,"""Kvėpavimo takų infekcijų diagnozių dinamika: TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažnis pagal apsilankymo dieną, lytį ir paciento gyvenamosios vietos savivaldybę. Pateikti tik kodai, susiję su kvėpavimo takų infekcijomis (tam tikri J ir U blokai). Nurodytas skaičius unikalių asmenų, kuriems ataskaitinę dieną ""E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas nurodytos diagnozių grupės TLK kodas, ir skaičius asmenų, kuriems ši diagnozė ""nauja"" (t.y. nebuvo įrašyta per 30 praėjusių dienų)."
@@ -35,5 +35,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""COVID-19""",,,,"""TLK kodai - U07.1, U07.2""",
 ,,,,,,,,,"""Gripas ir pneumonija""",,,,"""TLK kodai - J09, J10, J11, J12, J13, J14, J14, J15, J16, J17, J18""",
 ,,,,,,,,,"""Bronchitas ir kitos infekcijos""",,,,"""TLK kodai - J20, J21, J22""",
-,,,,,bendras_diagnoziu_kiekis,integer,,,,4,open,,"""Unikalių asmenų skaičius, kuriems nustatyta diagnozė""","""Jeigu asmeniui tą pačią dieną kelis kartus nustatoma ta pati diagnozė, nėra skaičiuojamas kaip atskiras atvejis"""
-,,,,,naujai_nustatytos_diagnozes,integer,,,,4,open,,"""Unikalių asmenų skaičius, kuriems nustatyta diagnozė pirmą kartą per praėjusias 30 d.""","""Kiekvieną dieną skaičiuojama suma asmenų, kuriems nebuvo tos diagnozės per praėjusias 30 dienų"""
+,,,,,bendras_diagnoziu_kiekis,integer,U,,,4,open,,"""Unikalių asmenų skaičius, kuriems nustatyta diagnozė""","""Jeigu asmeniui tą pačią dieną kelis kartus nustatoma ta pati diagnozė, nėra skaičiuojamas kaip atskiras atvejis"""
+,,,,,naujai_nustatytos_diagnozes,integer,U,,,4,open,,"""Unikalių asmenų skaičius, kuriems nustatyta diagnozė pirmą kartą per praėjusias 30 d.""","""Kiekvieną dieną skaičiuojama suma asmenų, kuriems nebuvo tos diagnozės per praėjusias 30 dienų"""
