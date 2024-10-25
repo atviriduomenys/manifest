@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,EspbiDiagnozes025,,,vda_id,,,4,,,Diagnozių dažnis pagal E025 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažnis pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK ""kodas, ir šių asmenų amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,EspbiDiagnoze025,,,vda_id,,,4,,,Diagnozių dažnis pagal E025 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E025 dokumente (“Ambulatorinio apsilankymo aprašymas”), dažnis pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E025 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK ""kodas, ir šių asmenų amžiaus vidurkis apsilankymų SPĮ metu."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK-10-AM kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atveju_kiekis,integer,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, skaičius pagal savivaldybę, metus ir lytį""",
 ,,,,,amziaus_vidurkis,number,,,,4,open,,"""Asmenų, kuriems nustatyta diagnozė, amžiaus vidurkis""","""Konfidencialumo užtikrinimo tikslais, kai nustatytas tik vienas atvejis, amžiaus vidurkis paslėptas"""
 ,,,,,,,,,,,,,,
-,,,,EspbiDiagnozes003,,,vda_id,,,4,,,Diagnozių dažnis pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažnis pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
+,,,,EspbiDiagnoze003,,,vda_id,,,4,,,Diagnozių dažnis pagal E003 formos duomenis,"""Diagnozių TLK-10-AM kodų, nurodytų ESPBI IS E003 dokumente (“Stacionaro epikrizė”), dažnis pagal apsilankymo metus, lytį ir savivaldybę sveikatos priežiūros įstaigos (SPĮ), kurioje nustatyta diagnozė. Nurodytas skaičius unikalių asmenų, kuriems per ataskaitinius metus E003 dokumente diagnozės laukelyje buvo bent kartą įrašytas konkretus TLK kodas, ir šių asmenų ""amžiaus vidurkis apsilankymų SPĮ metu."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
