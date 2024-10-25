@@ -8,7 +8,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK-10-AM kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
-,,,,,diagnozes_metai,integer,,,,3,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
+,,,,,diagnozes_metai,integer,,,,2,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,lytis,string,,,,4,open,,Asmenų grupės lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
@@ -19,7 +20,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,diagnozes_kodas,string,,,,4,open,,Diagnozės TLK kodas,
 ,,,,,savivaldybes_pavadinimas,string,,,,4,open,,"""Įstaigos, kurioje nustatyta diagnozė, savivaldybės pavadinimas""",
-,,,,,diagnozes_metai,integer,,,,3,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Nustatomi pagal vizito pradžios laiką. Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
+,,,,,diagnozes_metai,integer,,,,2,open,,"""Metai, kada diagnozė buvo bent kartą nustatyta""","""Nustatomi pagal vizito pradžios laiką. Jeigu asmeniui tais metais diagnozė nustatyta kelis kartus, skaičiuojamas, kaip vienas atvejis"""
+,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,lytis,string,,,,4,open,,Asmenų grupės lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
