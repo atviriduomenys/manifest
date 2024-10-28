@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Nežinoma""",,,,"Nei LR juridinis, nei LR fizinis asmuo",
 ,,,,,gaminys,string,,,,4,open,,Ataskaitoje nurodytas gaminys,
 ,,,,,gaminio_kn_kodas,string,,,,4,open,,Ataskaitoje nurodyto gaminio KN kodas,
-,,,,,licencija,string,,,,4,open,,Gaminiui priskirta licencija,
+,,,,,licencija_leidimas,string,,,,4,open,,Gaminiui priskirta licencija arba leidimas,
 ,,,,,pagamintas_ar_pirktas_kiekis,number,,,,4,open,,"Skaičius, kiek buvo pagaminta arba nupirkta gaminio",
 ,,,,,parduotas_ar_panaudotas_kiekis,number,,,,4,open,,"Skaičius, kiek buvo parduota arba panaudota gaminio",
 ,,,,,mato_vienetas,string,,,,4,open,,Gaminio matavimo vienetas,
