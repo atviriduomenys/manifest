@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Sudetis,,,vda_prime_key,,,4,,,Valstybės valdomų įmonių sąrašas,"Valstybės valdomų įmonių sąraše yra pateikiamas - įmonės pavadinimas,įmonės kodas, nario vardas ir pavardė, pareigos, pozicija. Duomenys vienkartiniai."
+,,,,Sudetis,,,vda_id,,,4,,,Valstybės valdomų įmonių sąrašas,"Valstybės valdomų įmonių sąraše yra pateikiamas - įmonės pavadinimas,įmonės kodas, nario vardas ir pavardė, pareigos, pozicija. Duomenys vienkartiniai."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,tipas,string,,,,4,open,,"Vienas iš: vadovybė, valdyba, stebėtojų taryba",
 ,,,,,,enum,,,,,,,,
