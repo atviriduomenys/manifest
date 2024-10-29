@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/transporto_srautai,,,,,,,,,,,,Transporto priemonių judėjimo pro muitinės postus srautas,Duomenys apie pro muitinės postus kameromis užfiksuotus judančius transporto priemonių ir konteinerių srautus
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Srautas,,,vda_prime_key,,,4,,,Transporto priemonių judėjimo pro muitinės postus srautas,Duomenys apie pro muitinės postus kameromis užfiksuotus judančius transporto priemonių ir konteinerių srautus
+,,,,,vda_prime_key,string,,,,4,open,,VDA sukurtas unikalus identifikatorius,
+,,,,,ataskaitine_para,date,D,,,4,open,,Ataskaitinė para,
+,,,,,judejimo_kryptis,string,,,,4,open,,Transporto priemonės ar konteinerio judėjimo kryptis,
+,,,,,,enum,,"""in""",,,,,,
+,,,,,,,,"""out""",,,,,,
+,,,,,kameros_pavadinimas,string,,,,4,open,,Kameros pavadinimas,
+,,,,,kameros_aprasymas,string,,,,4,open,,Kameros aprašymas,
+,,,,,kameros_tipas,string,,,,4,open,,Kameros tipas,
+,,,,,,enum,,"""stacionarus""",,,,,,
+,,,,,,,,"""mobilus""",,,,,,
+,,,,,muitines_kodas,string,,,,4,open,,Muitinės posto kodas,
+,,,,,tp_srautas,long,,,,4,open,,Transporto priemonių srautas,
+,,,,,muitines_posto_platumos_koordinate,double,,,,4,open,,Muitinės posto platumos koordinatė,
+,,,,,muitines_posto_ilgumos_koordinate,double,,,,4,open,,Muitinės posto ilgumos koordinatė,
