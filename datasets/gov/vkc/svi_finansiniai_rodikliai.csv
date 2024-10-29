@@ -42,5 +42,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,finrod1_proc,number,%,,,4,open,,"Nuosavas kapitalas/ Visas turtas, procentais (%)",
 ,,,,,finrod2,number,,,,4,open,,Grynoji finansinė skola/ EBITDA,
 ,,,,,pinigu_rodiklis_proc,number,%,,,4,open,,"Pinigų rodiklis (procentais, %): pinigų vidurkis/ turto vidurkis. Imami vidurkiai, nes balansas – 1 dienos atvaizdavimas, būtų iškreiptas vaizdas",
-,,,,,pirkeju_skolu_apyvartumas,number,,,,4,open,,"Pirkėjų skolų apyvartumas: pardavimų pajamos/ debitorių vidurkis, dienomis",
-,,,,,tiekeju_skolu_apyvartumas,number,,,,4,open,,"Tiekėjų skolų apyvartumas: savikaina/ tiekėjų skolų vidurkis, dienomis",
+,,,,,pirkeju_skolu_apyvartumas,number,d,,,4,open,,"Pirkėjų skolų apyvartumas: pardavimų pajamos/ debitorių vidurkis, dienomis",
+,,,,,tiekeju_skolu_apyvartumas,number,d,,,4,open,,"Tiekėjų skolų apyvartumas: savikaina/ tiekėjų skolų vidurkis, dienomis",
