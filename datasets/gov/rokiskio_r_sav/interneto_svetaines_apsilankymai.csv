@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rokiskio_r_sav/interneto_svetaines_apsilankymai,,,,,,,,,,,,Interneto svetainės „rokiskis.lt“ puslapių skilčių apsilankymai,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Apsilankymas,,,iraso_id,,,4,,,Interneto svetainės „rokiskis.lt“ puslapių skilčių apsilankymai,Lentelėje pateikta informacija apie  interneto svetainės „rokiskis.lt“ puslapių skilčių apsilankymus iš Rokiškio rajono savivaldybės interneto turinio valdymo sistemos (ITVS). Duomenų laiko aprėptis - nuo 2020 metų. Informacija lentelėje papildoma kas mėnesį. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
+,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
+,,,,,puslapio_id,string,,,,4,open,,Puslapio (skilties) identifikatorius,
+,,,,,uri,string,,,,4,open,,Puslapio (skilties) nuoroda,
+,,,,,tipas,string,,,,4,open,,Puslapio (skilties) tipas,
+,,,,,data,date,D,,,4,open,,Data,
+,,,,,apsilankymu_skaicius,integer,U,,,4,open,,Apsilankymų skaičius,
