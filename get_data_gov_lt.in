@@ -6,6 +6,7 @@ datasets/gov/lst/terms.csv
 datasets/gov/vpt/new.csv
 datasets/gov/vpt/old.csv
 datasets/gov/vpt/sutartys.csv
+datasets/gov/vpt/cvpp.csv
 datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
 datasets/gov/vmi/individuali_veikla.csv
