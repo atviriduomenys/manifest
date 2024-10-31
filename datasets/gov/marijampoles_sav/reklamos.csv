@@ -1,0 +1,33 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/marijampoles_sav/reklamos,,,,,,,,,,,,Marijampolės savivaldybės reklamų įrengimai ir leidimai,"Rinkinyje pateikiami Marijampolės savivaldybės ARCGIS reklamų aplikacijoje nuo 2013 metų kaupiami ir saugomi reklamos įrenginių, stendų, iškabų geoerdviniai duomenys bei leidimai. Duomenų rinkinį sudaro dvi lentelės, kuriuose yra pateikiama: įmonė, reklamos statusas, adresas, koordinates, tipas, zona, leidimo numeris bei leidimo galiojimo terminai. Lentelės jungiasi per „irenginio_id“ raktą.
+Viena eilutė atitinka vieną reklamos objektą arba viena leidimą.
+Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,Irenginys,,,vda_prime_key,,,4,,,Marijampolės savivaldybės reklamų įrengimai,"Rinkinyje pateikiami Marijampolės savivaldybės ARCGIS reklamų aplikacijoje nuo 2013 metų kaupiami ir saugomi reklamos įrenginių, stendų, iškabų geoerdviniai duomenysi. Duomenų rinkinį sudaro: įmonė, reklamos statusas, adresas, koordinates, tipas, zona.
+Viena eilutė atitinka vieną reklamos objektą.
+Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,irenginio_id,string,,,,4,open,,Įrenginio identifikatorius,
+,,,,,imone,string,,,,4,open,,Įmonė,
+,,,,,galiojimo_statusas,string,,,,4,open,,Galiojimo statusas,
+,,,,,galiojimo_statuso_data,date,D,,,4,open,,Galiojimo statuso data,
+,,,,,reklamos_adresas,string,,,,4,open,,Reklamos adresas,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,4,open,,Geometrija,
+,,,,,reklamos_tipas,string,,,,4,open,,Reklamos tipas,
+,,,,,reklamos_zona,string,,,,4,open,,Reklamos zona,
+,,,,,,,,,,,,,,
+,,,,Leidimas,,,vda_prime_key,,,4,,,Marijampolės savivaldybės reklamų leidimai,"Rinkinyje pateikiami Marijampolės savivaldybės ARCGIS reklamų aplikacijoje nuo 2013 metų kaupiami ir saugomi lauko reklamų leidimai. Duomenų rinkinį sudaro: leidimo numeris bei leidimo galiojimo terminai. 
+Viena eilutė atitinka  viena leidimą.
+Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,irenginio_id,string,,,,4,open,,Įrenginio identifikatorius,
+,,,,,leidimo_nr,string,,,,4,open,,Ledimo numeris,
+,,,,,galioja_nuo,date,D,,,4,open,,Leidimo galiojimo pradžia,
+,,,,,galioja_iki,date,D,,,4,open,,Leidimo galiojimo pabaiga,
