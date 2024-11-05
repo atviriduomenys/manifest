@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/marijampoles_sav/cs_objektai,,,,,,,,,,,,Marijampolės savivaldybėje šiuo metu veikiantys civilinės saugos objektai,Marijampolės mieste bei rajone šiuo metu veikiančios priedangos ir kolektyvinės apsaugos statiniai
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Objektas,,,vda_eil_nr,,,4,,,Marijampolės savivaldybėje šiuo metu veikiantys civilinės saugos objektai,Marijampolės mieste bei rajone šiuo metu veikiančios priedangos ir kolektyvinės apsaugos statiniai
+,,,,,vda_eil_nr,string,,,,4,open,,Objekto identifikatorius,
+,,,,,tipas,string,,,,4,open,,Objekto tipas,
+,,,,,,enum,,,"""Priedanga""",,,,,
+,,,,,,,,,"""Kolektyvinės apsaugos statinys""",,,,,
+,,,,,seniunija,string,,,,4,open,,Objekto seniūnija,
+,,,,,adresas,string,,,,4,open,,Objekto adresas,
+,,,,,objekto_pavadinimas,string,,,,4,open,,Objekto pavadinimas,
+,,,,,su_negalia,string,,,,4,open,,Ar žmonės su negalia gali naudotis,
+,,,,,,enum,,,"""Taip""",,,,,
+,,,,,,,,,"""Ne""",,,,,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS koordinačių sistemoje,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS koordinačių sistemoje,
+\
