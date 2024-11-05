@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,namo_numeris,string,,,,4,open,,"""Namo numeris""",
 ,,,,,priedangos_pavadinimas,string,,,,4,open,,"""Statinio patalpos inžinerinio įrenginio ar kito objekto kuriame įrengta priedanga pavadinimas""",
 ,,,,,priedangos_valdytojas,string,,,,4,open,,"""Statinio patalpos inžinerinio įrenginio ar kito objekto kuriame įrengta priedanga valdytojas""",
-,,,,,priedangos_plotas_kv_m,double,,,,4,open,,"""Priedangos plotas kvadratiniais metrais""",
+,,,,,priedangos_plotas_kv_m,Double,,,,4,open,,"""Priedangos plotas kvadratiniais metrais""",
 ,,,,,vietų_skaičius,integer,,,,4,open,,"""Priedangoje talpinamų gyventojų skaičius""",
 ,,,,,pritaikymas_turintiems_negalią,integer,,,,4,open,,"""Ar priedanga pritaikyta asmenims turintiems negalią. null - Ne, 1 - Taip""",
 ,,,,,priedanga_pazenklinta_taip1,integer,,,,4,open,,"""Ar priedanga pažeklinta. null - Ne, 1 - Taip""",
