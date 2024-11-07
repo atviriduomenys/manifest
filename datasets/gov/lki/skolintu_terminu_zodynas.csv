@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lki/skolintu_terminu_zodynas,,,,,,,,,,,,Skolintų terminų ir jų atitikmenų žodynas,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,SkolintuZodynas,,,termino_kodas,,,4,,,Skolintų terminų ir jų atitikmenų žodynas,"Lentelėje pateikiamas Lietuvių kalbos instituto (LKI) sudarytas aiškinamasis skolintų terminų ir jų atitikmenų žodynas (http://sta.lki.lt/). Žodynas parengtas remiantis 1956–2010 m. išleistais įvairių sričių aiškinamaisiais bei verčiamaisiais terminų žodynais. Lentelę sudaro skolinti terminai, jų apibrėžtys, kirčiuoti terminai,   sinonimai ir kitų kalbų atitikmenys.. Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,termino_kodas,string,,,,4,open,,Unikalus termino kodas,
+,,,,,terminas,string,,,,4,open,,Skolintas terminas,
+,,,,,kirciuotas_terminas,string,,,,4,open,,Kirčiuotas terminas,
+,,,,,termino_sinonimai,string,,,,4,open,,Atitikmenys,
+,,,,,vertimai,string,,,,4,open,,Kitų kalbų atitikmenys iš visų šaltinių,
+,,,,,straipsnis_lt,string,,,,4,open,,"Straipsnis, kuriame pateikti terminai, jų apibrėžtys, sinonimai ir atitikmenys kitomis kalbomis su nurodytais šaltiniais (pateiktas grynojo teksto formatu)",
+,,,,,,comment,type,,"update(property: ""straipsnis_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,straipsnis_html_lt,string,,,,4,open,,"Straipsnis, kuriame pateikti terminai, jų apibrėžtys, sinonimai, atitikmenys kitomis kalbomis su nurodytais šaltiniais (pateiktas html formatu)",
+,,,,,,comment,type,,"update(property: ""straipsnis_html_lt@lt"", type: ""text"")",4,open,spinta:204,,
