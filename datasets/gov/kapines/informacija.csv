@@ -1,11 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kapines,,,,,,,,,,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama Lietuvos savivaldybių kapinių bendro pobūdžio informacija, atvaizduojama kapinių skaitmeninimo ir duomenų valdymo sistemoje „CEMETY“: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas – įrašas apie vienerias kapines. 
- 
+,datasets/gov/kapines,,,,,,,,,,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama Lietuvos savivaldybių kapinių bendro pobūdžio informacija, atvaizduojama kapinių skaitmeninimo ir duomenų valdymo sistemose „CEMETY“ ir „LIKSGIS“: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas – įrašas apie vienerias kapines. 
 Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Teritorija,,,vda_id,,,4,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama Lietuvos savivaldybių kapinių bendro pobūdžio informacija, atvaizduojama kapinių skaitmeninimo ir duomenų valdymo sistemoje „CEMETY“: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas – įrašas apie vienerias kapines. 
+,,,,Teritorija,,,vda_id,,,4,,,Savivaldybių kapinių duomenys,"Rinkinyje pateikiama Lietuvos savivaldybių kapinių bendro pobūdžio informacija, atvaizduojama kapinių skaitmeninimo ir duomenų valdymo sistemose „CEMETY“ ir „LIKSGIS“: kapinių pavadinimas, adresas, savivaldybė, kontaktiniai duomenys ir kt. Rinkinio objektas – įrašas apie vienerias kapines. 
 Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,kapines,string,,,,4,open,,Kapinių pavadinimas,
