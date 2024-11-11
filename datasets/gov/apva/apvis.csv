@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,istaigos_kodas,string,,,,4,open,,Kvietimo priemonės įstaigos kodas,
 ,,,,,numatytas_finansavimas,number,,,,4,open,,Kvietimo projektui numatytas finansavimas,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",,,spinta:40,,
-,,,,,kompensacine_ismoka,number,,,,4,open,,Kvietmo projekto kompensacinė išmoka,
+,,,,,kompensacine_ismoka,number,,,,4,open,,Kvietimo projekto kompensacinė išmoka,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",,,spinta:40,,
 ,,,,,paraiskos_priimamos_nuo,datetime,M,,,4,open,,Kvietimo projektui paraiškų priėmimo pradžia,
 ,,,,,paraiskos_priimamos_iki,datetime,M,,,4,open,,Kvietimo projektui paraiškų priėmimo pabaiga,
