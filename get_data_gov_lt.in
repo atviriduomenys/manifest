@@ -229,6 +229,7 @@ datasets/gov/vmi/akcizai.csv
 datasets/gov/vmi/parama.csv
 datasets/gov/vmi/kontroles_veiksmai.csv
 datasets/gov/aaa/tersalu_inventorizacijos_duomenys.csv
+datasets/gov/apva/apvis.csv
 datasets/gov/vlk/tlk10am.csv
 datasets/gov/vlk/drg.csv
 datasets/gov/vlk/achi.csv
