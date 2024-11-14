@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Elementas,,,vda_id,,,4,,,"Lentelėje pateikti valstybės strategijų, programų elementų hierarchijos duomenys iš Lietuvos Respublikos finansų ministerijos Stebėsenos informacinė sistema (SIS). ",
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,doc_id,ref,Dokumentas,,4,open,,"Dokumento kodas, atvaizduojamas ataskaitose.",
+,,,,,doc_id,ref,Dokumentas,,,4,open,,"Dokumento kodas, atvaizduojamas ataskaitose.",
 ,,,,,obj_id,string,,,,4,open,,Žemesnio lygmens objektas (objektas-vaikas). Nuoroda į OBJECTS.OBJ_ID.,
 ,,,,,tevinis_obj_id,string,,,,4,open,,Aukštesnio lygmens objektas (objektas-tėvas). NULL pirmame hierarchijos objektų lygyje. Nuoroda į OBJECTS.OBJ_ID.,
 ,,,,,obj_code,string,,,,4,open,,"Objekto kodas, identifikuojantis įrašą.",
