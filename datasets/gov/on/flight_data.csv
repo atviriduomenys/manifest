@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,Skrydis,,,vda_id,,,4,,,Oro Navigacijos skrydžių statistikos duomenys,"Rinkinyje pateikiami Lietuvos oro erdvėje vykusių skrydžių duomenys iš Oro Navigacijos skrydžių statistikos duomenų bazės. Nurodoma su skrydžiais susijusi informacija: skrydžio data, orlaivio tipas, skrydį operavęs oro vežėjas, išvykimo ir atvykimo laikai bei išvykimo ir atvykimo oro uostai. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
-,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agenūros įrašo unikalus identifikatorius,
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
 ,,,,,date,date,D,,,4,open,,Skrydžio data,
 ,,,,,acft_type,string,,,,4,open,,Orlaivio tipas,
 ,,,,,airline_abbr,string,,,,4,open,,Oro vežėjas (ICAO kodas),
