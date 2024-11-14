@@ -1,0 +1,46 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/aad/,,,,,ns,,,,,,,Aplinkos apsaugos departamentas prie Aplinkos ministerijos,
+,datasets/gov/aad/nuoteku_irenginiai,,,,,,,,,,,,Nuotekų valymo įrenginiai bei jų kokacijos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Pateikiamos dvi lentelės kuriuos jungiasi per „aglomeracijos_id“  stulpelį. Vienoje lentelėje pateikiami visi užregistruoti nuotekų įrenginiai, o kitoje preliminarios nuotekų tvarkymo sistemų aglomeracijų ribos. Registruojant nuotekų įrenginį (jei vartotojas nurodė), pateikiama tokia informacija kaip įrenginio tipas, gamintojas, modelis, koordinatės ir t.t. Įrenginių lentelėje viena eilutė atitinka vieną įrenginį, aglomeracijų lentelėje – vieną aglomeraciją. Duomenų aprėptis – visa Lietuva.
+Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Irenginys,,,irenginio_id,,,4,,,Nuotekų valymo įrenginiai bei jų lokacijos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Šioje lentelėje pateikiami visi užregistruoti nuotekų įrenginiai. Registruojant nuotekų įrenginį (jei vartotojas nurodė), pateikiama tokia informacija kaip įrenginio tipas, gamintojas, modelis, koordinatės ir t.t. Įrenginių lentelėje viena eilutė atitinka vieną įrenginį. Duomenų aprėptis – visa Lietuva.
+Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,irenginio_id,string,,,,4,open,,Įrenginio unikalus identifikatorius,
+,,,,,tipas,string,,,,4,open,,Tipas,
+,,,,,,enum,,,"""Nuotekų rezervuaras""",,,,Nuotekų rezervuaras,
+,,,,,,,,,"""Biologinis nuotekų valymo įrenginys""",,,,Biologinis nuotekų valymo įrenginys,
+,,,,,,,,,"""Kilnojamas nuotekų rezervuaras""",,,,Kilnojamas nuotekų rezervuaras,
+,,,,,,,,,"""Septikas""",,,,Septikas,
+,,,,,busena,string,,,,4,open,,Įrenginio būsena,
+,,,,,,enum,,,"""Preliminarus""",,,,Preliminarus,
+,,,,,,,,,"""Uždarytas""",,,,Uždarytas,
+,,,,,,,,,"""Patvirtintas""",,,,Patvirtintas,
+,,,,,savivaldybes_kodas,string,,,,4,open,,Savivaldybės kodas,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
+,,,,,gamintojas,string,,,,4,open,,Nuotekų įrenginio gamintojas,
+,,,,,modelis,string,,,,4,open,,Nuotekų įrenginio modelis,
+,,,,,talpa,string,,,,4,open,,Nuotekų įrenginio talpa,
+,,,,,atstumas_nuo_kelio,number,m,,,4,open,,Atstumas nuo nuotekų įrenginio iki kelio,
+,,,,,pastatymo_data,date,D,,,4,open,,Pastatymo data,
+,,,,,isregistravimo_data,date,D,,,4,open,,Išregistravimo data,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,4,open,,Geometrija (lokacija),
+,,,,,aglomeracijos_id,string,,,,4,open,,Aglomeracijos identifikatorius,
+,,,,,,,,,,,,,,
+,,,,Aglomeracija,,,vda_prime_key,,,4,,,Preliminarios nuotekų tvarkymo sistemų aglomeracijų ribos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Šioje lentelėje pateikiamos preliminarios nuotekų tvarkymo sistemų aglomeracijų ribos. Lentelėje galima rasti ne tik aglomeracijų ribas, bet ir jos dydi, gyventojų skaičių, gyventojų tankumą. Aglomeracijų lentelėje viena eilutė atitinka vieną preliminarią aglomeraciją. Duomenų aprėptis – visa Lietuva.
+Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,aglomeracijos_id,string,,,,4,open,,Aglomeracijos Identifikatorius,
+,,,,,teritorijos_pavadinimas,string,,,,4,open,,Teritorijos pavadinimas,
+,,,,,gyventoju_sk,integer,,,,4,open,,Gyventojų skaičius,
+,,,,,gyventoju_tankumas,integer,,,,4,open,,Gyventojų tankumas,
+,,,,,plotas,number,km^2,,,4,open,,Aglomeracijos plotas,
+,,,,,geometrija,"geometry(multipolygon, 3346)",,,,4,open,,Geometrija (teritorija),
+,,,,,informacijos_aktualumas,string,,,,4,open,,Informacijos aktualumas,
