@@ -199,7 +199,6 @@ datasets/gov/lsd/cl/evrk.csv
 datasets/gov/lsd/cl/ja_asmenys.csv
 datasets/gov/lsd/statistika/pajamos_vienam_gyventojui.csv
 datasets/gov/kaunas/daugiabuciai.csv
-datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
 datasets/gov/kaunas/kasimai.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
@@ -775,5 +774,7 @@ datasets/gov/marijampoles_sav/reklamos.csv
 datasets/gov/pagd/priesgaisrines_apsaugos_ir_gelbejimo_departamento_priedangos.csv
 datasets/gov/marijampoles_sav/cs_objektai.csv
 datasets/gov/lki/skolintu_terminu_zodynas.csv
+datasets/gov/kaunas/pagalve.csv
+datasets/gov/tmd/tm_kulturos_projektai.csv
 datasets/gov/tmd/tm_kulturos_projektai.csv
 datasets/gov/vpt/ataskaitos.csv
