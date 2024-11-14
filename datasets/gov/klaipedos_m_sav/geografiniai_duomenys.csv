@@ -1,0 +1,56 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/klaipedos_m_sav/geografiniai_duomenys,,,,,,,,,,,,Klaipėdos miesto savivaldybės objektų geografiniai duomenys,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Pateikiamos lentelės apie šiuos objektus:
+•	Prekybos vietos
+•	Seniūnaitijos
+•	Sporto vietos
+•	Žaidimų aikštelės
+Pateikiami patys objektai bei jų koordinatės aktualūs šiai dienai. Kiekvienos lentelės viena eilutė atitinką vieną objektą Klaipėdos miesto savivaldybėje.
+Duomenų teikėjas: Klaipėdos miesto savivaldybė
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,PrekybosVieta,,,object_id,,,4,,,Klaipėdos miesto savivaldybėje esančios prekybos vietos,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Šioje lentelėje pateikiamos Klaipėdos miesto savivaldybėje esančios prekybos vietos bei jų koordinatės. Duomenys pateikiami aktualūs šiai dienai.
+Duomenų teikėjas: Klaipėdos miesto savivaldybė
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,object_id,string,,,,4,open,,Identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Prekybos vietos pavadinimas,
+,,,,,vietos_nr,string,,,,4,open,,Prekybos vietos numeris,
+,,,,,adresas,string,,,,4,open,,Prekybos vietos adresas,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,3,open,,Geometrija (lokacija),
+,,,,,,,,,,,,,,
+,,,,Seniunaitija,,,object_id,,,4,,,Klaipėdos miesto savivaldybės seniūnaitijos,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Šioje lentelėje pateikiamos Klaipėdos miesto savivaldybėje esančios seniūnaitojos bei jų teritorijų koordinatės. Duomenys pateikiami aktualūs šiai dienai.
+Duomenų teikėjas: Klaipėdos miesto savivaldybė
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,object_id,string,,,,4,open,,Identifikatorius,
+,,,,,nr,string,,,,4,open,,Eilės numeris,
+,,,,,pavadinimas,string,,,,4,open,,Seniūnaitijos pavadinimas,
+,,,,,apygarda,string,,,,4,open,,Agygarda kuriai priklauso seniūnaitija,
+,,,,,geometrija,"geometry(polygon, 3346)",,,,3,open,,Geometrija (teritorija),
+,,,,,,,,,,,,,,
+,,,,SportoVieta,,,vda_prime_key,,,4,,,Klaipėdos miesto savivaldybėje esančios sporto vietos,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Šioje lentelėje pateikiamos Klaipėdos miesto savivaldybėje esančios sporto vietos bei jų koordinatės. Duomenys pateikiami aktualūs šiai dienai.
+Duomenų teikėjas: Klaipėdos miesto savivaldybė
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,adresas,string,,,,4,open,,Adresas,
+,,,,,pavadinimas,string,,,,4,open,,Sporto vietos pavadinimas,
+,,,,,tipas,string,,,,4,open,,Sporto vietos tipas,
+,,,,,naudojimas,string,,,,4,open,,Kam skirta sporto vieta,
+,,,,,pastabos,string,,,,2,open,,Pastabos (kontaktai),
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,3,open,,Geometrija (lokacija),
+,,,,,,,,,,,,,,
+,,,,ZaidimuAikstele,,,object_id,,,4,,,Klaipėdos miesto savivaldybėje esančios žaidimų aikštelės,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Šioje lentelėje pateikiamos Klaipėdos miesto savivaldybėje esančios žaidimų aikštelės bei jų koordinatės. Duomenys pateikiami aktualūs šiai dienai.
+Duomenų teikėjas: Klaipėdos miesto savivaldybė
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,object_id,string,,,,4,open,,Identifikatorius,
+,,,,,adresas,string,,,,4,open,,Adresas,
+,,,,,irengta,string,,,,4,open,,Ar įrengta,
+,,,,,pastabos,string,,,,3,open,,Pastabos (įrengimo data),
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,3,open,,Geometrija (lokacija),
