@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,versija,number,,,,4,open,,Paskutinės uždarytos dokumento versijos numeris.,
 ,,,,,proceso_etapas,string,,,,4,open,,,
 ,,,,,periodas_nuo,date,D,,,4,open,,Dokumento galiojimo laikotarpio pavadinimas.,
-,,,,,periodas_iki,date,D,,,4,open,,Požymis, nusakantis, ar ataskaitinio laikotarpio pavadinimas yra įvestas GNS: 1 – įvestas, 0 – priešingu atveju.,
+,,,,,periodas_iki,date,D,,,4,open,,"Požymis, nusakantis, ar ataskaitinio laikotarpio pavadinimas yra įvestas GNS: 1 – įvestas, 0 – priešingu atveju.",
 ,,,,,institucijos_kodas,number,,,,4,open,,Unikalus institucijos kodas (pirminio šaltinio kodas).,
 ,,,,,institucija,string,,,,4,open,,Institucijos pavadinimas.,
 ,,,,,,,,,,,,,,
