@@ -7,7 +7,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Irenginys,,,irenginio_id,,,4,,,Nuotekų valymo įrenginiai bei jų kokacijos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Šioje lentelėje pateikiami visi užregistruoti nuotekų įrenginiai. Registruojant nuotekų įrenginį (jei vartotojas nurodė), pateikiama tokia informacija kaip įrenginio tipas, gamintojas, modelis, koordinatės ir t.t. Įrenginių lentelėje viena eilutė atitinka vieną įrenginį. Duomenų aprėptis – visa Lietuva.
+,,,,Irenginys,,,irenginio_id,,,4,,,Nuotekų valymo įrenginiai bei jų lokacijos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Šioje lentelėje pateikiami visi užregistruoti nuotekų įrenginiai. Registruojant nuotekų įrenginį (jei vartotojas nurodė), pateikiama tokia informacija kaip įrenginio tipas, gamintojas, modelis, koordinatės ir t.t. Įrenginių lentelėje viena eilutė atitinka vieną įrenginį. Duomenų aprėptis – visa Lietuva.
 Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,irenginio_id,string,,,,4,open,,Įrenginio unikalus identifikatorius,
@@ -37,10 +37,10 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,aglomeracijos_id,string,,,,4,open,,Aglomeracijos identifikartorius,
+,,,,,aglomeracijos_id,string,,,,4,open,,Aglomeracijos Identifikatorius,
 ,,,,,teritorijos_pavadinimas,string,,,,4,open,,Teritorijos pavadinimas,
 ,,,,,gyventoju_sk,integer,,,,4,open,,Gyventojų skaičius,
 ,,,,,gyventoju_tankumas,integer,,,,4,open,,Gyventojų tankumas,
-,,,,,plotas,number,,,,4,open,,Aglomeracijos plotas,
+,,,,,plotas,number,km^2,,,4,open,,Aglomeracijos plotas,
 ,,,,,geometrija,"geometry(multipolygon, 3346)",,,,4,open,,Geometrija (teritorija),
 ,,,,,informacijos_aktualumas,string,,,,4,open,,Informacijos aktualumas,
