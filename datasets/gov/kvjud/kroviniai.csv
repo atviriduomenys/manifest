@@ -1,0 +1,29 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kvjud/kroviniai,,,,,,,,,,,,Krovininių laivų operacijos Klaipėdos valstybiniame jūrų uoste,"Duomenų rinkinyje pateikiami Klaipėdos valstybinio jūrų uosto direkcijos duomenys apie krovininių laivų operacijas Klaipėdos jūrų uoste. Rinkinio objektas - atvykimo arba išvykimo operacija. Duomenys pateikiami nuo 2002m. iki šių dienų. Nurodoma operacijos rūšis, laivo savininko atstovas, su laivo atvykimu/išvykimu (išvykimo ir atvykimo uostas, faktiniai išvykimo laikai) bei su laivu (pavadinimas, tipas, vėliava, IMO numeris, dedveitas ir bendroji talpa) susijusi informacija.
+Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Operacija,,,vda_id,,,4,,,Krovininių laivų operacijos Klaipėdos valstybinio jūrų uoste,
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agenūros įrašo unikalus identifikatorius,
+,,,,,operacijos_id,string,,,,4,open,,Operacijos identifikatorius,
+,,,,,op_tipas,string,,,,4,open,,Operacijos tipas,
+,,,,,,enum,,,"""ATV""",,,,Atvykimas,
+,,,,,,,,,"""ISV""",,,,Išvykimas,
+,,,,,op_rusis,string,,,,4,open,,Operacijos rūšis,
+,,,,,data,datetime,S,,,4,open,,Operacijos data,
+,,,,,agentas,string,,,,4,open,,Laivo savininko atstovas uoste,
+,,,,,imo_kodas,string,,,,4,open,,Laivo IMO numeris,
+,,,,,laivas,string,,,,4,open,,Laivo pavadinimas,
+,,,,,dedveitas_t,number,t,,,4,open,,"Laivo dedveitas, išreikštas tonomis. ","Dedveitas - tai dydis, nurodantis, kokios masės krovinį laivas gali saugiai gabenti."
+,,,,,bendroji_talpa,number,,,,4,open,,Laivo bendroji talpa,
+,,,,,laivo_tipas,string,,,,4,open,,Laivo tipas,
+,,,,,veliava,string,,,,4,open,,Laivo registravimo valstybė,
+,,,,,atvykimo_reg_nr,string,,,,4,open,,Atvykimo registracijos numeris,
+,,,,,atvykimo_uostas,string,,,,4,open,,Laivo atvykimo uostas,
+,,,,,faktinis_atvykimas,datetime,S,,,4,open,,Laivo faktinis atvykimo laikas,
+,,,,,isvykimo_loc,string,,,,4,open,,Laivo išvykimo uosto LOC kodas,LOC kodas - tai penkiaženklis raidinis kodas
+,,,,,isvykimo_mca,string,,,,4,open,,Laivo išvykimo uosto MCA kodas,MCA - tai keturženklis jūrų pakrančių zonos kodas.
+,,,,,isvykimo_uostas,string,,,,4,open,,Laivo išvykimo uostas,
+,,,,,faktinis_isvykimas,datetime,S,,,4,open,,Laivo faktinis išvykimo laikas,
