@@ -25,7 +25,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,gamintojas,string,,,,4,open,,Nuotekų įrenginio gamintojas,
 ,,,,,modelis,string,,,,4,open,,Nuotekų įrenginio modelis,
 ,,,,,talpa,string,,,,4,open,,Nuotekų įrenginio talpa,
-,,,,,atstumas_nuo_kelio,number,,,,4,open,,Atstumas nuo nuotekų įrenginio iki kelio,
+,,,,,atstumas_nuo_kelio,number,m,,,4,open,,Atstumas nuo nuotekų įrenginio iki kelio,
 ,,,,,pastatymo_data,date,D,,,4,open,,Pastatymo data,
 ,,,,,isregistravimo_data,date,D,,,4,open,,Išregistravimo data,
 ,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
