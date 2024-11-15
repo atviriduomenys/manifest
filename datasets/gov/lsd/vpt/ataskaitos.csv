@@ -1,4 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/vpt,,,,,,,,,,,,Viešųjų pirkimų tarnyba,
 ,datasets/gov/lsd/vpt/ataskaitos,,,,,,,,,,,,Viešųjų pirkimų ataskaitų duomenys,"Rinkinyje pateikiami Viešųjų pirkimų tarnybos Pirkimo procedūrų (ATN1) ir Papildomos viešojo pirkimo ir pirkimo procedūrų (ATN2) ataskaitų duomenys nuo 2017m. iki šių dienų. Rinkinio objektas - paskelbta ataskaita. Pateikiama detali informacija apie ataskaitą, viešajame pirkime dalyvavusią perkančiąją arba įgaliotąją organizacijas, pirkimo objektą bei vykdytą pirkimą. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
