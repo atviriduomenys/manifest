@@ -776,8 +776,8 @@ datasets/gov/marijampoles_sav/cs_objektai.csv
 datasets/gov/lki/skolintu_terminu_zodynas.csv
 datasets/gov/kauno_m_sav/pagalve.csv
 datasets/gov/tmd/tm_kulturos_projektai.csv
-datasets/gov/vpt/ataskaitos.csv
 datasets/gov/pd/policijos_licencijuojamos_veiklos.csv
+datasets/gov/lsd/vpt/ataskaitos.csv
 datasets/gov/kvjud/atvykstanciu_isvykstanciu_laivu_registras.csv
 datasets/gov/aad/nuoteku_irenginiai.csv
 datasets/gov/klaipedos_m_sav/geografiniai_duomenys.csv
