@@ -188,6 +188,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,paciento_lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,,enum,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""M""",,,,Moteris,
+,,,,,,,,,"""N""",,,,Nežinoma,
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
 ,,,,,tyrimo_grupe,string,,,,4,open,,Tyrimo grupė,
 ,,,,,,enum,,,"""Biochemija""",,,,Biochemija,
