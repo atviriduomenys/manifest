@@ -42,5 +42,5 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,gyventoju_sk,integer,,,,4,open,,Gyventojų skaičius,
 ,,,,,gyventoju_tankumas,integer,,,,4,open,,Gyventojų tankumas,
 ,,,,,plotas,number,km^2,,,4,open,,Aglomeracijos plotas,
-,,,,,geometrija,"geometry(multipolygon, 3346)",,,,4,open,,Geometrija (teritorija),
+,,,,,geometrija,geometry(3346),,,,4,open,,Geometrija (teritorija),
 ,,,,,informacijos_aktualumas,string,,,,4,open,,Informacijos aktualumas,
