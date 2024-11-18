@@ -32,7 +32,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_maitina,boolean,,,,4,open,,"Požymis, ar darbuotojui suteikiamas maitinimas",
 ,,,,,rizikos_lt,string,,,,1,open,,Darbdavio įvardintos darbo rizikos,
 ,,,,,,comment,type,,"update(property: ""rizikos_lt@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,jar_kodas,ref,,,,4,open,,Darbdavio juridinio asmens kodas,
+,,,,,jar_kodas,string,,,,4,open,,Darbdavio juridinio asmens kodas,
 ,,,,,darbdavys,string,,,,1,open,,"Darbdavio įmonės pavadinimas, imamas iš veikiančių ūkio subjektų registro pagal įmonės JAR kodą. Rinkinyje vaizduojamas tik vėliausias įmonės pavadinimas.",
 ,,,,,teisinio_statuso_kodas,string,,,,4,open,,Įmonės teisinio statuso kodas,
 ,,,,,teisinio_statuso_pav,string,,,,4,open,,Įmonės teisinis statusas,
