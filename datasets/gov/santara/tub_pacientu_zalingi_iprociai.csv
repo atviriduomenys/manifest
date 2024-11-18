@@ -1,0 +1,63 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/santara/tub_pacientu_zalingi_iprociai,,,,,,,,,,,,"""Pacientų, kuriems diagnozuota tuberkuliozė, žalingi įpročiai.""","""Lentelėje pateikti Tuberkuliozės valstybės informacinės sistemos (TVIS) duomenys apie tuberkuliozės liga diagnozuotus pacientus, jų žalingus įpročius, diagnozes ir mirtis. Duomenų valdytojas - Nacionalinio visuomenės sveikatos centro prie Sveikatos apsaugos ministerijos (NVSC). Duomenų tvarkytojas - Vilniaus universiteto ligoninė Santaros klinikos (VULSK). Viena duomenų rinkinio eilutė atspindi vieną pacientą kuriam buvo diagnozuota tuberkuliozės liga. Duomenys apima visos Lietuvos tuberkuliozės liga sirgusius bei sergančius asmenis ir informacinėje sistemoje yra kaupiami nuo 2013 m. Atkreipiame dėmesį, kad paciento identifikacinis kodas nebūtinai reiškia unikalų paciento įrašą - vienas pacientas gali turėti kelis identifikacinius kodus, dėl gyvenamosios vietos pasikeitimo, dėl šios priežasties unikalius pacientų įrašus rekomenduojama nustatyti pagal paciento vardo, pavardės, gimimo datos, asmens kodo ir asmens kodo validacijos stulpelius. Taip pat pažymime kad paciento diagnozė gali kisti, paciento gydymo metu ar atliekant papildomus tyrimus. Be to, Pasaulio sveikatos organizacijos (PSO) tuberkuliozės duomenų kaupimo rekomendacijos keitėsi 1996, 1998, 2000, 2014 metais ir galėjo paveikti duomenų surinkimo metodikas bei surinktų duomenų kokybę.Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. Dėl duomenų naudojimo moksliniams darbams, rekomenduojame pasitarti su Santaros klinikų gydytoja, mokslininke Edita Davidavičiene - edita.davidaviciene@santa.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TubPacientuZalingiIprociai,,,paciento_id,,,4,,,"""Pacientų, kuriems diagnozuota tuberkuliozė, žalingi įpročiai.""",
+,,,,,paciento_id,string,,,,4,open,,Unikalus kodas identifikuojantis pacientą,
+,,,,,paciento_vardas,string,,,,4,open,,Paciento vardas,Paciento vardo hash reikšmė
+,,,,,paciento_pavarde,string,,,,4,open,,Paciento pavardė,Paciento pavardės hash reikšmė
+,,,,,paciento_gim_data,string,,,,4,open,,Paciento gimimo data,Paciento gimimo datos hash reikšmė
+,,,,,paciento_asmens_kodas,string,,,,4,open,,Paciento asmens kodas,"Paciento asmens kodo ""hash"" reikšmė"
+,,,,,vda_ak_validacija,string,,,,4,open,,Paciento asmens kodo trūkumai,
+,,,,,,enum,,,"""Tinkamas""",,,,,
+,,,,,,,,,"""Netinkamas ilgis""",,,,,
+,,,,,,,,,"""Netinkamas kontrolinis skaitmuo""",,,,,
+,,,,,,,,,"""Netinkama gimimo data""",,,,,
+,,,,,vda_paciento_gim_metai_ak,date,Y,,,4,open,,Asmens kode nurodyti paciento gimimo metai,
+,,,,,paciento_gim_metai,date,Y,,,4,open,,Šaltinyje nurodyti Paciento gimimo metai,
+,,,,,vda_paciento_lytis_ak,string,,,,4,open,,,
+,,,,,,enum,,,"""Vyras""",,,,,
+,,,,,,,,,"""Moteris""",,,,,
+,,,,,paciento_lytis,string,,,,4,open,,Asmens kode nurodyta paciento lytis,
+,,,,,,enum,,,"""V""",,,,,
+,,,,,,,,,"""M""",,,,,
+,,,,,rukymas_id,string,,,,4,open,,Rūkymo reikšmės identifikatorius šaltinyje,"""Šaltinyje nurodyti duomenys apie paciento suvartojamą tabako kiekį. Reikšmės: Iki 10 cigarečių per dieną - 1,11-20 cigarečių per dieną - 2,Virš 20 cigarečių per dieną - 3,Nerūko - 4,Eksrūkorius - 5."""
+,,,,,,enum,,,"""0""",,,,,
+,,,,,,,,,"""1""",,,,Iki 10 cigarečių per dieną,
+,,,,,,,,,"""2""",,,,11-20 cigarečių per dieną,
+,,,,,,,,,"""3""",,,,Virš 20 cigarečių per dieną,
+,,,,,,,,,"""4""",,,,Nerūko,
+,,,,,,,,,"""5""",,,,Eksrūkorius,
+,,,,,rukymas_reiksme,string,,,,4,open,,Rūkymo reikšmė,"""Šaltinyje nurodyti duomenys apie paciento suvartojamą tabako kiekį. Reikšmės: Iki 10 cigarečių per dieną - 1,11-20 cigarečių per dieną - 2,Virš 20 cigarečių per dieną - 3,Nerūko - 4,Eksrūkorius - 5."""
+,,,,,,enum,,,"""Iki 10 cigarečių per dieną""",,,,id reikšmė šaltinyje: 1,
+,,,,,,,,,"""11-20 cigarečių per dieną""",,,,id reikšmė šaltinyje: 2,
+,,,,,,,,,"""Virš 20 cigarečių per dieną""",,,,id reikšmė šaltinyje: 3,
+,,,,,,,,,"""Nerūko""",,,,id reikšmė šaltinyje: 4,
+,,,,,,,,,"""Eksrūkorius""",,,,id reikšmė šaltinyje: 5,
+,,,,,rukymo_stazas_id,string,,,,4,open,,Rūkymo stažo reikšmės identifikatorius šaltinyje,"""Tuberkulioze sergančio ligonio rūkymo stažas (pagal tai,kiek metų ligonis rūko). Reikšmės: Rūko iki 1 metų- 1,Rūko 1 - 10 metų -2,Rūko 11 - 20 metų – 3,Rūko virš 20 metų – 4."""
+,,,,,,enum,,,"""0""",,,,,
+,,,,,,,,,"""1""",,,,iki 1 metų,
+,,,,,,,,,"""2""",,,,1 - 10 metų,
+,,,,,,,,,"""3""",,,,11 - 20 metų,
+,,,,,,,,,"""4""",,,,Virš 20 metų,
+,,,,,rukymo_stazas_reiksme,string,,,,4,open,,Rūkymo stažo reikšmė,"""Tuberkulioze sergančio ligonio rūkymo stažas (pagal tai,kiek metų ligonis rūko). Reikšmės: Rūko iki 1 metų- 1,Rūko 1 - 10 metų -2,Rūko 11 - 20 metų – 3,Rūko virš 20 metų – 4."""
+,,,,,,enum,,,"""iki 1 metų""",,,,id reikšmė šaltinyje: 1,
+,,,,,,,,,"""1 - 10 metų""",,,,id reikšmė šaltinyje: 2,
+,,,,,,,,,"""11 - 20 metų""",,,,id reikšmė šaltinyje: 3,
+,,,,,,,,,"""Virš 20 metų""",,,,id reikšmė šaltinyje: 4,
+,,,,,alkoholis_id,string,,,,4,open,,Alkoholio reikšmės identifikatorius šaltinyje,"""Šaltinyje nurodyti duomenys apie žalingą įprotį - alkoholio vartojimą. Reikšmės: nevartoja - 1,vartoja retai - 2,girtauja - 3,alkoholikas - 4."""
+,,,,,,enum,,,"""0""",,,,,
+,,,,,,,,,"""1""",,,,Nevartoja,
+,,,,,,,,,"""2""",,,,Vartoja retai,
+,,,,,,,,,"""3""",,,,Girtauja,
+,,,,,,,,,"""4""",,,,Alkoholikas,
+,,,,,alkoholis_reiksme,string,,,,4,open,,Alkoholio vartojimo reikšmė,"""Šaltinyje nurodyti duomenys apie žalingą įprotį - alkoholio vartojimą. Reikšmės: nevartoja - 1,vartoja retai - 2,girtauja - 3,alkoholikas - 4."""
+,,,,,,enum,,,"""Nevartoja""",,,,id reikšmė šaltinyje: 1,
+,,,,,,,,,"""Vartoja retai""",,,,id reikšmė šaltinyje: 2,
+,,,,,,,,,"""Girtauja""",,,,id reikšmė šaltinyje: 3,
+,,,,,,,,,"""Alkoholikas""",,,,id reikšmė šaltinyje: 4,
+,,,,,vda_ligos_kodai,string,,,,4,open,,Pacientu diagnozuotos ligos,Visų pacientui diagnozuotų ligų kodų (TLK-10) reikšmės atskirtos kabliataškiais
+,,,,,ligos_kodas,string,,,,4,open,,Naujausios pacientui diagnozuotos ligos kodas,Ligos kodas pagal TLK-10 ligų klasifikatoriu
+,,,,,ar_mire_nuo_tub,boolean,,,,4,open,,Paciento mirties nuo tuberkuliozės reikšmė (true/false),
+,,,,,mirties_nuo_tub_d,date,D,,,4,open,,Paciento mirties nuo tuberkuliozės data,
