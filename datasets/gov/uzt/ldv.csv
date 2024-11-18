@@ -44,6 +44,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reik_kompetencijos_lt,string,,,,1,open,,Kandidatui reikalaujamos kompetencijos,
 ,,,,,,comment,type,,"update(property: ""reik_kompetencijos_lt@lt"", type: ""text"")",4,open,,,
 ,,,,,reik_gebejimai,string,,,,4,open,,Kandidatui reikalingi gebėjimai,
+,,,,,,comment,property,,"""update(property: """"reik_gebejimai[]"""", type: """"array"""", source: """"Reik_gebejimai"""")""",4,,spinta:161,,
 ,,,,,reik_issilavinimo_kodas,string,,,,4,open,,Kandidatui reikalingo išsilavinimo kodas,
 ,,,,,reik_issilavinimo_pav,string,,,,4,open,,Kandidatui reikalingas išsilavinimas,
 ,,,,,reik_mok_progr_kodas,string,,,,4,open,,"Mokymos programos, kurią kandidatas turi būti baigęs, kodas",
