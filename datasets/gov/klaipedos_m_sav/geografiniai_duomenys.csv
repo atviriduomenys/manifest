@@ -29,7 +29,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,nr,string,,,,4,open,,Eilės numeris,
 ,,,,,pavadinimas,string,,,,4,open,,Seniūnaitijos pavadinimas,
 ,,,,,apygarda,string,,,,4,open,,Agygarda kuriai priklauso seniūnaitija,
-,,,,,geometrija,"geometry(polygon, 3346)",,,,3,open,,Geometrija (teritorija),
+,,,,,geometrija,"geometry(3346)",,,,3,open,,Geometrija (teritorija),
 ,,,,,,,,,,,,,,
 ,,,,SportoVieta,,,vda_prime_key,,,4,,,Klaipėdos miesto savivaldybėje esančios sporto vietos,"Klaipėdos miesto savivaldybės ARGIS informacinėje sistemoje kaupiami geografiniai miesto duomenys. Šioje lentelėje pateikiamos Klaipėdos miesto savivaldybėje esančios sporto vietos bei jų koordinatės. Duomenys pateikiami aktualūs šiai dienai.
 Duomenų teikėjas: Klaipėdos miesto savivaldybė
