@@ -784,4 +784,5 @@ datasets/gov/klaipedos_m_sav/geografiniai_duomenys.csv
 datasets/gov/kvjud/kroviniai.csv
 datasets/gov/santara/tub_pacientu_zalingi_iprociai.csv
 datasets/gov/zum/zuvininkystes_tarnyba/sugautu_zuvu_kiekiai.csv
-datasets/gov/tb/lr_nt_objektas.csv
+datasets/gov/pagd/statinio_patikrinimas/statinio_patikrinimas.csv
+
