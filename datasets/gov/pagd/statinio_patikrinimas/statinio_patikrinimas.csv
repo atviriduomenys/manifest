@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pranesimo_data,date,D,,,4,open,,Pranešimo data,
 ,,,,,patikrinimo_pradzia,date,D,,,4,open,,Patikrinimo pradžia,
 ,,,,,patikrinimo_pabaiga,date,D,,,4,open,,Patikrinimo pabaiga,
-,,,,,pakartotinis,string,,,,4,open,,Požymis, ar tai pakartotinis patikrinimas,
+,,,,,pakartotinis,string,,,,4,open,,"""Požymis, ar tai pakartotinis patikrinimas""",
 ,,,,,statinio_paskirtis,string,,,,4,open,,"""Statinio paskirtis(-ys), Kadangi statiniai gali turėti kelias paskirtis(teritorijoje daugiau nei viena statinys - paskirčių sąrašas)""",
 ,,,,,objekto_grupe,string,,,,4,open,,Objekto grupė,
 ,,,,,pgt_padalinys,string,,,,4,open,,PGT padalinys,
