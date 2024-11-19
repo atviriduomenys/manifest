@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/pagd/statinio_patikrinimas,,,,,,,,,,,,Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.,Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
+,datasets/gov/pagd/statinio_patikrinimas,,,,,,,,,,,,"""Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.""",Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Patikrinimas,,,id,,,4,,,Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.,Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
+,,,,Patikrinimas,,,id,,,4,,,"""Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.""",Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
 ,,,,,id,string,,,,4,open,,Unikalus idientifikatorius,
 ,,,,,pranesimo_nr,string,,,,4,open,,Pranešimo numeris,
 ,,,,,pranesimo_data,date,D,,,4,open,,Pranešimo data,
