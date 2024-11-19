@@ -239,7 +239,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,,,,,"""Šlapimas""",,,,Šlapimas,
 ,,,,,,,,,"""Plazma""",,,,Plazma,
 ,,,,,tyrimo_analite,string,,,,4,open,,Tyrimo analitės pavadinimas,
-,,,,,"analites_loinc_kodas,",string,,,,4,open,,Tyrimo analitės LOINC kodas,
+,,,,,analites_loinc_kodas,string,,,,4,open,,Tyrimo analitės LOINC kodas,
 ,,,,,analites_rezultatas,number,,,,4,open,,Tyrimo analitės rezultatas,
 ,,,,,analites_norma_nuo,number,,,,4,open,,Tyrimo analitės rezultato minimali norma,
 ,,,,,analites_norma_iki,number,,,,4,open,,Tyrimo analitės rezultato maksimali norma,
