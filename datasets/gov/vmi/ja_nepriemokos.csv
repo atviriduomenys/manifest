@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atnaujinta,date,D,,,4,open,,Įrašo atnaujinimo data,
 ,,,,,ja_kodas,string,,,,2,open,,Juridinio asmens (toliau – JA) kodas,
 ,,,,,ja_pavadinimas,string,,,,2,open,,JA pavadinimas,
-,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe[sav_kodas],,,3,open,,"Savivaldybės, kurioje registruotas JA, kodas",
+,,,,,sav_kodas,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,3,open,,"Savivaldybės, kurioje registruotas JA, kodas",
 ,,,,,nepriemoka,number,,,,2,open,,JA mokestinės nepriemokos suma iš viso,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,pradelsta_nepriemoka,number,,,,2,open,,JA pradelsta mokestinės nepriemokos suma,

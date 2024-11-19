@@ -6,7 +6,7 @@ datasets/gov/lst/terms.csv
 datasets/gov/vpt/new.csv
 datasets/gov/vpt/old.csv
 datasets/gov/vpt/sutartys.csv
-datasets/gov/vpt/cvpp.csv
+datasets/gov/lsd/vpt/cvpp.csv
 datasets/gov/vmi/gpm.csv
 datasets/gov/vmi/gyventoju_islaidos.csv
 datasets/gov/vmi/individuali_veikla.csv
@@ -199,7 +199,6 @@ datasets/gov/lsd/cl/evrk.csv
 datasets/gov/lsd/cl/ja_asmenys.csv
 datasets/gov/lsd/statistika/pajamos_vienam_gyventojui.csv
 datasets/gov/kaunas/daugiabuciai.csv
-datasets/gov/kaunas/pagalve.csv
 datasets/gov/kaunas/oras.csv
 datasets/gov/kaunas/kasimai.csv
 datasets/gov/vmi/gyventoju_pajamos.csv
@@ -775,5 +774,14 @@ datasets/gov/marijampoles_sav/reklamos.csv
 datasets/gov/pagd/priesgaisrines_apsaugos_ir_gelbejimo_departamento_priedangos.csv
 datasets/gov/marijampoles_sav/cs_objektai.csv
 datasets/gov/lki/skolintu_terminu_zodynas.csv
+datasets/gov/kauno_m_sav/pagalve.csv
 datasets/gov/tmd/tm_kulturos_projektai.csv
 datasets/gov/finmin/sis/finmin_sis.csv
+datasets/gov/pd/policijos_licencijuojamos_veiklos.csv
+datasets/gov/lsd/vpt/ataskaitos.csv
+datasets/gov/kvjud/atvykstanciu_isvykstanciu_laivu_registras.csv
+datasets/gov/aad/nuoteku_irenginiai.csv
+datasets/gov/klaipedos_m_sav/geografiniai_duomenys.csv
+datasets/gov/kvjud/kroviniai.csv
+datasets/gov/santara/tub_pacientu_zalingi_iprociai.csv
+datasets/gov/zum/zuvininkystes_tarnyba/sugautu_zuvu_kiekiai.csv

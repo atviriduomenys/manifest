@@ -1,0 +1,21 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/pagalve,,,,,,,,,,,,Kauno miesto pagalvės mokesčio deklaracijų duomenys,"Rinkinyje pateikiami Kauno miesto savivaldybės vietinių rinkliavų už naudojimąsi Kauno miesto savivaldybės viešąja turizmo ir poilsio infrastruktūra deklaracijų duomenys. Deklaracijas teikia fiziniai ir juridiniai asmenys, teikiantys apgyvendinimo paslaugas Kauno mieste. Rinkinio objektas - vieno apgyvendinimo objekto deklaracija. Duomenys teikiami nuo 2017m. iki šių dienų. Nurodomas deklaraciją teikusio asmens tipas (fizinis ar juridinis), jo veikla pagal ekonominės veiklos rūšies klasifikatorių (EVRK), deklaracijos pradžios ir pabaigos datos, mokėtina suma bei duomenys apie suteiktas nakvynes. Pažymėtina, jog rinkliavos neskaičiuojamos vaikams iki 18 metų ir ugdymo įstaigoms, kai patalpos nuomojamos mokymosi tikslais. Nuo pagalvės mokesčio taip pat atleidžiami asmenys su negalia, kuriems nustatytas 0-40 proc. darbingumo lygis, taip pat asmenys, kuriems teikiamos medicininės reabilitacijos paslaugos iš privalomojo sveikatos draudimo fondo lėšų. Šių asmenų nakvynės taip pat įtrauktos į rinkinį. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Gauta,,,vda_id,,,4,,,Deklaracijų duomenys,"Rinkinyje pateikiami Kauno miesto savivaldybės vietinių rinkliavų už naudojimąsi Kauno miesto savivaldybės viešąja turizmo ir poilsio infrastruktūra deklaracijų duomenys. Deklaracijas teikia fiziniai ir juridiniai asmenys, teikiantys apgyvendinimo paslaugas Kauno mieste. Rinkinio objektas - vieno apgyvendinimo objekto deklaracija. Duomenys teikiami nuo 2017m. iki šių dienų. Nurodomas deklaraciją teikusio asmens tipas (fizinis ar juridinis), jo veikla pagal ekonominės veiklos rūšies klasifikatorių (EVRK), deklaracijos pradžios ir pabaigos datos, mokėtina suma bei duomenys apie suteiktas nakvynes. Pažymėtina, jog rinkliavos neskaičiuojamos vaikams iki 18 metų ir ugdymo įstaigoms, kai patalpos nuomojamos mokymosi tikslais. Nuo pagalvės mokesčio taip pat atleidžiami asmenys su negalia, kuriems nustatytas 0-40 proc. darbingumo lygis, taip pat asmenys, kuriems teikiamos medicininės reabilitacijos paslaugos iš privalomojo sveikatos draudimo fondo lėšų. Šių asmenų nakvynės taip pat įtrauktos į rinkinį. Turint klausimų apie duomenų rinkinį, prašome kreiptis į Valstybės duomenų valdysenos atvėrimo komandą elektroniniu paštu atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,tipas,string,,,,4,open,,Deklaraciją pateikusio asmens tipas,
+,,,,,,enum,,,"""juridinis""",,,,,
+,,,,,,,,,"""fizinis""",,,,,
+,,,,,evrk_kodas,string,,,,4,open,,Deklaraciją pateikusio asmens ekonominės veiklos rūšies (EVRK) kodas(-i) pagal EVRK klasifikatorių,
+,,,,,,comment,property,,"""update(property: """"evrk_kodas[]"""", type: """"array"""", source: """"Evrk_kodas"""")""",4,,spinta:161,,
+,,,,,evrk,string,,,,4,open,,Deklaraciją pateikusio asmens ekonominės veiklos rūšies (EVRK) pavadinimas(-i) pagal EVRK klasifikatorių,
+,,,,,,comment,property,,"""update(property: """"evrk[]"""", type: """"array"""", source: """"Evrk"""")""",4,,spinta:161,,
+,,,,,periodo_pradzia,date,D,,,4,open,,Deklaracijos laikotarpio pradžia,
+,,,,,periodo_pabaiga,date,D,,,4,open,,Deklaracijos laikotarpio pabaiga,
+,,,,,naktys_be_isimciu,integer,U,,,,,,"Suteiktų nakvynių skaičius asmenims, kuriems lengvatos netaikomos",
+,,,,,naktys_isimtys,integer,U,,,,,,"Suteiktų nakvynių skaičius asmenims, kuriems taikomos lengvatos",
+,,,,,is_viso_naktu,integer,U,,,,,,Per mokestinį laikotarpį suteiktų nakvynių skaičius,
+,,,,,mok_suma_eur,number,,,,2,,,Mokėtina mokesčių suma eurais,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
