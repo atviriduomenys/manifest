@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/tb,,,,,ns,,,,,,,Turto Bankas,
-,datasets/gov/tb/lr_nt_objektas,,,,,,,,,,,,Lietuvos Respublikos nuosavybes teise valdomas turtas,
+,datasets/gov/tb/lr_nt_objektas,,,,,,,,,,,,Lietuvos Respublikos nuosavybės teise valdomas turtas,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
