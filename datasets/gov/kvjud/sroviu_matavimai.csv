@@ -1,0 +1,31 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kvjud/sroviu_matavimai,,,,,,,,,,,,Klaipėdos valstybinio jūrų uosto vandens srovių matavimo duomenys,"AB Klaipėdos valstybinio jūrų uosto direkcijos geografinėje informacinėje sistemoje PortGIS kaupiami geografiniai jūrų uosto duomenys. Rinkinyje pateikiami nuo 2016 m. gegužės mėnesio kaupiami vertikaliu arba horizontaliu davikliu atliekamų vandens srovių matavimų duomenys. Šių matavimų metu nustatomas srovių greitis ir kryptis. Vienas įrašas atitinka vienu daviklių atliktą matavimą.
+Duomenų teikėjas – AB Klaipėdos valstybinio jūrų uosto direkcija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Srove,,,vda_prime_key,,,4,,,Klaipėdos valstybinio jūrų uosto vandens srovių matavimo duomenys,"AB Klaipėdos valstybinio jūrų uosto direkcijos geografinėje informacinėje sistemoje PortGIS kaupiami geografiniai jūrų uosto duomenys. Rinkinyje pateikiami nuo 2016 m. gegužės mėnesio kaupiami vertikaliu arba horizontaliu davikliu atliekamų vandens srovių matavimų duomenys. Šių matavimų metu nustatomas srovių greitis ir kryptis. Vienas įrašas atitinka vienu daviklių atliktą matavimą.
+Duomenų teikėjas – AB Klaipėdos valstybinio jūrų uosto direkcija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,daviklio_id,string,,,,4,open,,Daviklio identifikacinis numeris,
+,,,,,matavimo_paketo_nr,string,,,,4,open,,Paketo numeris,
+,,,,,matavimo_laikas,date,S,,,4,open,,Laikas,
+,,,,,dav_gylis,number,cm,,,4,open,,Daviklio gylis,
+,,,,,dav_kryptis,number,,,,4,open,,Davilkio kryptis,"Daviklių magnetinio kompaso rodmenys, naudojama kalibravimui, matuojama laipsniais, tik skaičių formatas be kablelio."
+,,,,,sroves_kampas,number,,,,4,open,,Srovės kampas,Išvestinis dydis iš duomenų bazės duomenų
+,,,,,sroves_greitis,number,,,,4,open,,Srovės greitis,Išvestinis dydis iš duomenų bazės duomenų
+,,,,,,,,,,,,,,
+,,,,Daviklis,,,vda_id,,,4,,,Klaipėdos valstybinio jūrų uosto vandens srovių daviklių duomenys,"AB Klaipėdos valstybinio jūrų uosto direkcijos geografinėje informacinėje sistemoje PortGIS kaupiami geografiniai jūrų uosto duomenys. Rinkinyje pateikiami nuo 2016 m. gegužės veikaintys vertikalaus ir horizontaliojo daviklių duomenys.Vienas įrašas atitinka vieną daviklį.
+Duomenų teikėjas – AB Klaipėdos valstybinio jūrų uosto direkcija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,daviklio_id,string,,,,4,open,,Daviklio identifikacinis numeris,
+,,,,,dav_pavadinimas,string,,,,4,open,,Daviklio pavadinimas,
+,,,,,,enum,,,"""Horizontalus daviklis""",,,,Horizontalus daviklis,
+,,,,,,,,,"""Vertikalus daviklis""",,,,Vertikalus daviklis,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 3346)",,,,3,open,,Geometrija (lokacija),
