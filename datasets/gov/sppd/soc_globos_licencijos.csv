@@ -21,4 +21,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,licencijos_sustabdymo_data,date,D,,,4,open,,Licencijos sustabdymo data,
 ,,,,,licencijos_sustabdyta_iki,date,D,,,4,open,,Licencija sustabdyta iki,
 ,,,,,licencijos_panaikinimo_data,date,D,,,4,open,,Licencijos panaikinimo data,
-,,,,,geometrija,string,geometry(3346),,,4,open,,Apjungtos koordinatės,
+,,,,,geometrija,geometry(3346),,,,4,open,,Apjungtos koordinatės,
