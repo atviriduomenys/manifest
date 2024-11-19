@@ -14,7 +14,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,matavimo_paketo_nr,string,,,,4,open,,Paketo numeris,
 ,,,,,matavimo_laikas,date,S,,,4,open,,Laikas,
 ,,,,,dav_gylis,number,cm,,,4,open,,Daviklio gylis,
-,,,,,dav_kryptis,number,,,,4,open,,Davilkio kryptis,"Daviklių magnetinio kompaso rodmenys, naudojama kalibravimui, matuojama laipsniais, tik skaičių formatas be kablelio."
+,,,,,dav_kryptis,number,,,,4,open,,Daviklio kryptis,"Daviklių magnetinio kompaso rodmenys, naudojama kalibravimui, matuojama laipsniais, tik skaičių formatas be kablelio."
 ,,,,,sroves_kampas,number,,,,4,open,,Srovės kampas,Išvestinis dydis iš duomenų bazės duomenų
 ,,,,,sroves_greitis,number,,,,4,open,,Srovės greitis,Išvestinis dydis iš duomenų bazės duomenų
 ,,,,,,,,,,,,,,
