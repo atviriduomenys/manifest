@@ -783,6 +783,7 @@ datasets/gov/kvjud/atvykstanciu_isvykstanciu_laivu_registras.csv
 datasets/gov/aad/nuoteku_irenginiai.csv
 datasets/gov/klaipedos_m_sav/geografiniai_duomenys.csv
 datasets/gov/kvjud/kroviniai.csv
+datasets/gov/ztzum/sugautu_zuvu_kiekiai.csv
 datasets/gov/santara/tub_pacientu_zalingi_iprociai.csv
 datasets/gov/zum/zuvininkystes_tarnyba/sugautu_zuvu_kiekiai.csv
 datasets/gov/pagd/statinio_patikrinimas/statinio_patikrinimas.csv
