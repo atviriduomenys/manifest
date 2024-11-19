@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Objektas,,,obj_id,,,4,,,Lietuvos Respublikos nuosavybės teise valdomas turtas,"""Turto banke registruotas Lietuvos Respublikos nuosavybės teise valdomas turtas"""
 ,,,,,obj_id,string,,,,4,open,,Unikalus objekto identifikatorius,
-,,,,,kodas,date,D,,,4,open,,Objekto kodas,
+,,,,,kodas,string,,,,4,open,,Objekto kodas,
 ,,,,,tipas,string,,,,4,open,,"""Objekto tipas: Pastatas, Inžinerija, Patalpa""",
 ,,,,,,enum,,,"""Pastatas""",,,,Pastatas,
 ,,,,,,,,,"""Inžinerija""",,,,Inžinerija,
