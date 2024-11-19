@@ -20,4 +20,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyvenviete,string,,,,4,open,,Gyvenvietė,
 ,,,,,x_koord_lks,integer,,,,4,open,,x koordinatės LKS sistemoje,
 ,,,,,y_koord_lks,integer,,,,4,open,,y koordinatės LKS sistemoje,
-,,,,,geometrija,string,geometry(3346),,,4,open,,Apjungtos koordinatės,
+,,,,,geometrija,geometry(3346),,,,4,open,,Apjungtos koordinatės,
