@@ -3,12 +3,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TubPacientuZalingiIprociai,,,paciento_id,,,4,,,"""Pacientų, kuriems diagnozuota tuberkuliozė, žalingi įpročiai.""",
+,,,,TubPacientoZalingasIprotis,,,paciento_id,,,4,,,"""Pacientų, kuriems diagnozuota tuberkuliozė, žalingi įpročiai.""",
 ,,,,,paciento_id,string,,,,4,open,,Unikalus kodas identifikuojantis pacientą,
-,,,,,paciento_vardas,string,,,,4,open,,Paciento vardas,Paciento vardo hash reikšmė
-,,,,,paciento_pavarde,string,,,,4,open,,Paciento pavardė,Paciento pavardės hash reikšmė
-,,,,,paciento_gim_data,string,,,,4,open,,Paciento gimimo data,Paciento gimimo datos hash reikšmė
-,,,,,paciento_asmens_kodas,string,,,,4,open,,Paciento asmens kodas,"Paciento asmens kodo ""hash"" reikšmė"
+,,,,,paciento_vardas,string,,,,4,open,,Paciento vardas,Paciento pseudoniminta vardo reikšmė
+,,,,,paciento_pavarde,string,,,,4,open,,Paciento pavardė,Paciento pseudoniminta pavardės reikšmė
+,,,,,paciento_gim_data,string,,,,4,open,,Paciento gimimo data,Paciento pseudoniminta gimimo datos reikšmė
+,,,,,paciento_asmens_kodas,string,,,,4,open,,Paciento asmens kodas,Paciento pseudoniminta asmens kodo reikšmė
 ,,,,,vda_ak_validacija,string,,,,4,open,,Paciento asmens kodo trūkumai,
 ,,,,,,enum,,,"""Tinkamas""",,,,,
 ,,,,,,,,,"""Netinkamas ilgis""",,,,,
@@ -57,7 +57,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Vartoja retai""",,,,id reikšmė šaltinyje: 2,
 ,,,,,,,,,"""Girtauja""",,,,id reikšmė šaltinyje: 3,
 ,,,,,,,,,"""Alkoholikas""",,,,id reikšmė šaltinyje: 4,
-,,,,,vda_ligos_kodai,string,,,,4,open,,Pacientu diagnozuotos ligos,Visų pacientui diagnozuotų ligų kodų (TLK-10) reikšmės atskirtos kabliataškiais
-,,,,,ligos_kodas,string,,,,4,open,,Naujausios pacientui diagnozuotos ligos kodas,Ligos kodas pagal TLK-10 ligų klasifikatoriu
+,,,,,vda_ligos_kodai,string,,,,4,open,,Pacientui diagnozuotos ligos,Visų pacientui diagnozuotų ligų kodų (TLK-10) reikšmės atskirtos kabliataškiais
+,,,,,ligos_kodas,string,,,,4,open,,Naujausios pacientui diagnozuotos ligos kodas,Ligos kodas pagal TLK-10 ligų klasifikatorių
 ,,,,,ar_mire_nuo_tub,boolean,,,,4,open,,Paciento mirties nuo tuberkuliozės reikšmė (true/false),
 ,,,,,mirties_nuo_tub_d,date,D,,,4,open,,Paciento mirties nuo tuberkuliozės data,
