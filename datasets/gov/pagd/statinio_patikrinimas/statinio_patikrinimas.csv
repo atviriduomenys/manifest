@@ -1,23 +1,23 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/pagd/statinio_patikrinimas,,,,,,,,,,,,"""Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.""",Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-,,,,,,,,,,,,,,
-,,,,Patikrinimas,,,id,,,4,,,"""Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.""",Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės.
-,,,,,id,string,,,,4,open,,Unikalus idientifikatorius,
-,,,,,pranesimo_nr,string,,,,4,open,,Pranešimo numeris,
-,,,,,pranesimo_data,date,D,,,4,open,,Pranešimo data,
-,,,,,patikrinimo_pradzia,date,D,,,4,open,,Patikrinimo pradžia,
-,,,,,patikrinimo_pabaiga,date,D,,,4,open,,Patikrinimo pabaiga,
-,,,,,pakartotinis,string,,,,4,open,,Požymis, ar tai pakartotinis patikrinimas,
-,,,,,statinio_paskirtis,string,,,,4,open,,"""Statinio paskirtis(-ys), Kadangi statiniai gali turėti kelias paskirtis(teritorijoje daugiau nei viena statinys - paskirčių sąrašas)""",
-,,,,,objekto_grupe,string,,,,4,open,,Objekto grupė,
-,,,,,pgt_padalinys,string,,,,4,open,,PGT padalinys,
-,,,,,uzbaigimo_akto_pasirasymo_data,date,D,,,4,open,,"""Užbaigimo akto pasirašymo data (jei užpildyta, tiksli statinio užbaigimo data info statyboje)""",
-,,,,,apskritis,string,,,,4,open,,Apskritis,
-,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
-,,,,,seniunija,string,,,,4,open,,Seniūnija,
-,,,,,gyvenviete,string,,,,4,open,,Gyvenvietė,
-,,,,,x_koord_lks,integer,,,,4,open,,x koordinatės LKS sistemoje,
-,,,,,y_koord_lks,integer,,,,4,open,,y koordinatės LKS sistemoje,
-,,,,,geometrija,string,geometry(3346),,,4,open,,Apjungtos koordinatės,
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/pagd/statinio_patikrinimas;;;;;;;;;;;;Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.;"""Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės."""
+;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
+;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
+;;;;;;;;;;;;;;
+;;;;Patikrinimas;;;id;;;4;;;Priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimai.;"""Duomenų rikinyje pateikiami nuo 2012 metų kaupiami priešgaisrinės apsaugos ir gelbėjimo departamento statinių patikrinimų visoje Lietuvos teritorijoje duomenys. Rinkinį sudaro: pranešimo numeris ir data, patikrinimo pradžia ir pabaiga, statinio paskirtis, objekto grupė, apskritis, seniūnija, gyvenvietė bei koordinatės."""
+;;;;;id;string;;;;4;open;;Unikalus idientifikatorius;
+;;;;;pranesimo_nr;string;;;;4;open;;Pranešimo numeris;
+;;;;;pranesimo_data;date;D;;;4;open;;Pranešimo data;
+;;;;;patikrinimo_pradzia;date;D;;;4;open;;Patikrinimo pradžia;
+;;;;;patikrinimo_pabaiga;date;D;;;4;open;;Patikrinimo pabaiga;
+;;;;;pakartotinis;string;;;;4;open;;Požymis, ar tai pakartotinis patikrinimas;
+;;;;;statinio_paskirtis;string;;;;4;open;;"""Statinio paskirtis(-ys), Kadangi statiniai gali turėti kelias paskirtis(teritorijoje daugiau nei viena statinys - paskirčių sąrašas)""";
+;;;;;objekto_grupe;string;;;;4;open;;Objekto grupė;
+;;;;;pgt_padalinys;string;;;;4;open;;PGT padalinys;
+;;;;;uzbaigimo_akto_pasirasymo_data;date;D;;;4;open;;"""Užbaigimo akto pasirašymo data (jei užpildyta, tiksli statinio užbaigimo data info statyboje)""";
+;;;;;apskritis;string;;;;4;open;;Apskritis;
+;;;;;savivaldybe;string;;;;4;open;;Savivaldybė;
+;;;;;seniunija;string;;;;4;open;;Seniūnija;
+;;;;;gyvenviete;string;;;;4;open;;Gyvenvietė;
+;;;;;x_koord_lks;integer;;;;4;open;;x koordinatės LKS sistemoje;
+;;;;;y_koord_lks;integer;;;;4;open;;y koordinatės LKS sistemoje;
+;;;;;geometrija;string;geometry(3346);;;4;open;;Apjungtos koordinatės;
