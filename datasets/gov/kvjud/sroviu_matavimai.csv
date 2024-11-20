@@ -12,7 +12,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,daviklio_id,string,,,,4,open,,Daviklio identifikacinis numeris,
 ,,,,,matavimo_paketo_nr,string,,,,4,open,,Paketo numeris,
-,,,,,matavimo_laikas,date,S,,,4,open,,Laikas,
+,,,,,matavimo_laikas,datetime,S,,,4,open,,Laikas,
 ,,,,,dav_gylis,number,cm,,,4,open,,Daviklio gylis,
 ,,,,,dav_kryptis,number,,,,4,open,,Daviklio kryptis,"Daviklių magnetinio kompaso rodmenys, naudojama kalibravimui, matuojama laipsniais, tik skaičių formatas be kablelio."
 ,,,,,sroves_kampas,number,,,,4,open,,Srovės kampas,Išvestinis dydis iš duomenų bazės duomenų
