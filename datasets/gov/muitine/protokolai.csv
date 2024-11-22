@@ -1,0 +1,15 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/protokolai,,,,,,,,,,,,Muitinės sulaikytų prekių protokolų duomenys,"Rinkinyje pateikiami Muitinės departamento prekių sulaikymo protokolų duomenys. Muitinei sulaikius prekes surašomas Prekių sulaikymo protokolas. Tai yra pirminės būsenos dokumentas, kurio duomenys vaizduojami atveriamame rinkinyje. Nustačius Lietuvos Respublikos administracinių teisės pažeidimų arba pareiškus įtarimus dėl baudžiamojo kodekso pažeidimų, atitinkamai gali būti pildomas administracinio teisės pažeidimo protokolas arba pradedamas ikiteisminis tyrimas. Kitu atveju, įsigaliojus sprendimui dėl sulaikytų prekių išdavimo arba prekių grąžinimo savininkams ar kitiems asmenims yra pildomas nutarimas prekes grąžinti. Pažymėtina, jog šie duomenys negali būti naudojami oficialiajai statistikai skaičiuoti. Rinkinyje skelbiami nuo 2008 m. iki šių dienų kaupiami duomenys, surašyti Lietuvos Respublikos kelio, geležinkelio, krovinių, pašto, oro ar mobiliųjų grupių postuose. Duomenų teikėjas – Muitinės departamentas prie Lietuvos Respublikos finansų ministerijos. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Protokolas,,,vda_id,,,4,,,Muitinės sulaikytų prekių protokolų duomenys,"Rinkinyje pateikiami Muitinės departamento prekių sulaikymo protokolų duomenys. Muitinei sulaikius prekes surašomas Prekių sulaikymo protokolas. Tai yra pirminės būsenos dokumentas, kurio duomenys vaizduojami atveriamame rinkinyje. Nustačius Lietuvos Respublikos administracinių teisės pažeidimų arba pareiškus įtarimus dėl baudžiamojo kodekso pažeidimų, atitinkamai gali būti pildomas administracinio teisės pažeidimo protokolas arba pradedamas ikiteisminis tyrimas. Kitu atveju, įsigaliojus sprendimui dėl sulaikytų prekių išdavimo arba prekių grąžinimo savininkams ar kitiems asmenims yra pildomas nutarimas prekes grąžinti. Pažymėtina, jog šie duomenys negali būti naudojami oficialiajai statistikai skaičiuoti. Rinkinyje skelbiami nuo 2008 m. iki šių dienų kaupiami duomenys, surašyti Lietuvos Respublikos kelio, geležinkelio, krovinių, pašto, oro ar mobiliųjų grupių postuose. Duomenų teikėjas – Muitinės departamentas prie Lietuvos Respublikos finansų ministerijos. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agenūros įrašo unikalus identifikatorius,
+,,,,,protokolo_id,string,,,,4,open,,Protokolo identifikatorius,
+,,,,,protokolo_data,date,D,,,4,open,,Protokolo surašymo data,
+,,,,,pasienio_ruozas,string,,,,4,open,,"Pasienio ruožas, kuriame prekės buvo sulaikytos",
+,,,,,surasymo_vieta_lt,string,,,,2,open,,Prekių sulaikymo protokolo surašyma vieta,
+,,,,,,comment,type,,"update(property: ""surasymo_vieta_lt@lt"", type: ""text"")",4,open,spinta:204,,
