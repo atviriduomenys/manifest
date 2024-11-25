@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,TmProjektas,,,iraso_id,,,4,,,Įgyvendintų tautinių mažumų kultūros projektų duomenys,Lentelėje - įgyvendintų tautinių mažumų kultūros projektų duomenys iš Tautinių mažumų departamento prie Lietuvos Respublikos Vyriausybės Elektroninės paraiškų ir ataskaitų valdymo sistemos (EPAVS). Pateikiami duomenys nuo jų rinkimo sistemoje pradžios (2020 m.) atnaujinant kas metus. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
+,,,,TmProjektas,,,iraso_id,,,4,,,Įgyvendintų tautinių mažumų kultūros projektų duomenys,Lentelėje - įgyvendintų tautinių mažumų kultūros projektų duomenys iš Tautinių mažumų departamento prie Lietuvos Respublikos Vyriausybės Elektroninės paraiškų ir ataskaitų valdymo sistemos (EPAVS). Pateikiami duomenys nuo jų rinkimo sistemoje pradžios (2020 m.) atnaujinant kas pusęm metų. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,projekto_pateikimo_data,date,D,,,4,open,,Projekto pateikimo data,
 ,,,,,projekto_reg_nr,string,,,,4,open,,Projekto registracijos numeris,
@@ -19,9 +19,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,suplanuotos_dep_islaidos,number,,,,4,open,,"Planuojamos projekto išlaidos (EUR), kurias finansuotų Tautinių mažumų departamentas",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,suplanuotos_rem_islaidos,number,,,,4,,,"Planuojamos projekto išlaidos (EUR), kurias finansuotų projekto remėjai",
+,,,,,suplanuotos_rem_islaidos,number,,,,4,open,,"Planuojamos projekto išlaidos (EUR), kurias finansuotų projekto remėjai",
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,ataskaitos_dep_islaidos,number,,,,4,,,Tautinių mažumų departamento skirtas finansavimas (EUR) iš projekto įgyvendinimo ataskaitos,
+,,,,,ataskaitos_dep_islaidos,number,,,,4,open,,Tautinių mažumų departamento skirtas finansavimas (EUR) iš projekto įgyvendinimo ataskaitos,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
-,,,,,ataskaitos_busena,string,,,,4,,,Projekto įgyvendinimo ataskaitos būsena,
-,,,,,ataskaitos_data,date,D,,,4,,,Projekto įgyvendinimo ataskaitos data,
+,,,,,ataskaitos_busena,string,,,,4,open,,Projekto įgyvendinimo ataskaitos būsena,
+,,,,,ataskaitos_data,date,D,,,4,open,,Projekto įgyvendinimo ataskaitos data,
