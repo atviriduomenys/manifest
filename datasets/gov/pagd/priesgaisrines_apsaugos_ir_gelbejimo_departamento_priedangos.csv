@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,seniunija,string,,,,4,open,,"""Seniūnijos pavadinimas""",
 ,,,,,gyvenviete,string,,,,4,open,,"""Gyvenvietės pavadinimas""",
 ,,,,,pavadinimas,string,,,,4,open,,"""Statinio, patalpos, inžinerinio įrenginio ar kito objekto, kuriame įrengta priedanga, pavadinimas""",
-,,,,,valdytojas,string,,,,,4,open,,"""Statinio, patalpos, inžinerinio įrenginio ar kito objekto, kuriame įrengta priedanga, valdytojas""",
+,,,,,valdytojas,string,,,,4,open,,"""Statinio, patalpos, inžinerinio įrenginio ar kito objekto, kuriame įrengta priedanga, valdytojas""",
 ,,,,,patalpu_apsvietimas,boolean,,,,4,open,,"""Ar patalpose yra apšvietimas? (TAIP-1)""",
 ,,,,,patalpu_sanitariniai_mazgai,boolean,,,,4,open,,"""Ar patalpose yra veikiantys sanitariniai mazgai? (TAIP-1)""",
 ,,,,,patalpu_ventiliacija,boolean,,,,4,open,,"""Ar patalpose yra ventiliacija? (TAIP-1)""",
