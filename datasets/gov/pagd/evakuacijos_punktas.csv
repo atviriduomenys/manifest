@@ -27,6 +27,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,taskas_wgs,geometry(4326),,,,4,open,,"""Kordinate wgs 84 formatu""",
 ,,,,,wgs_lon_ilguma,number,,,,4,open,,"""WGS koordinatė (ilguma) paskaičiuota iš normuotų LKS koordinačių""",
 ,,,,,wgs_lat_platuma,number,,,,4,open,,"""WGS koordinatė (platuma) paskaičiuota iš normuotų LKS koordinačių""",
-,,,,,lks_x,long,,,,4,open,,"""Sunormuota LKS x koordinatė (7 skaitmenys)""",
-,,,,,lks_y,long,,,,4,open,,"""Sunormuota LKS y koordinatė (6 skaitmenys)""",
+,,,,,lks_x,integer,,,,4,open,,"""Sunormuota LKS x koordinatė (7 skaitmenys)""",
+,,,,,lks_y,integer,,,,4,open,,"""Sunormuota LKS y koordinatė (6 skaitmenys)""",
 ,,,,,evakuacijos_punkto_nuotrauka,integer,,,,4,open,,,
