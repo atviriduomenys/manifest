@@ -49,7 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pobudis,string,,,,4,open,,Dokumento pobūdis,
 ,,,,,,enum,,,"""norminis""",,,,,
 ,,,,,,,,,"""teisės taikymo""",,,,,
-,,,,,galioj_busena,string,,,,,,,Teisės akto galiojimo būsena (TAR; klasifikatoriaus reikšmės identifikatorius),
+,,,,,galioj_busena,string,,,,4,open,,Teisės akto galiojimo būsena (TAR; klasifikatoriaus reikšmės identifikatorius),
 ,,,,,,enum,,,"""galioja""",,,,,
 ,,,,,,,,,"""negalioja""",,,,,
 ,,,,,,,,,"""neįsigaliojęs""",,,,,
