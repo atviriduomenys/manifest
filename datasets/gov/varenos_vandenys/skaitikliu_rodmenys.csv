@@ -18,4 +18,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,salt_karst,boolean,,,,4,open,,"Požymis, ar vanduo šaltas (""true"" - taip, ""false"" - ne)",
 ,,,,,dekl_men,date,M,,,4,open,,Vandens suvartojimo deklaravimo mėnuo,
 ,,,,,apsk_men,date,M,,,4,open,,Vandens suvartojimo apskaitos mėnuo,
-,,,,,kor_data_laikas,datetime,,,,4,open,,Įrašo koregavimo data ir laikas,
+,,,,,kor_data_laikas,datetime,S,,,4,open,,Įrašo koregavimo data ir laikas,
