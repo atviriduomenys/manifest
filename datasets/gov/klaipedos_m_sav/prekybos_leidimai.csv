@@ -1,5 +1,5 @@
 ﻿id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/klaipedos_m_sav/prekybos_leidimai,,,,,,,,,,,,Klaipėdos miesto savivaldybės prekybos leidimai.,Informacija apie Klaipėdos miesto savivaldybės išduotus leidimus prekiauti ir teikti paslaugas viešose vietose. 
+,datasets/gov/klaipedos_m_sav/prekybos_leidimai,,,,,,,,,,,,Klaipėdos miesto savivaldybės prekybos leidimai.,Informacija apie Klaipėdos miesto savivaldybės išduotus leidimus prekiauti ir teikti paslaugas viešose vietose. 
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
