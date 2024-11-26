@@ -24,7 +24,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lks_koordinate_y,integer,,,,4,open,,"""Sunormuota LKS y koordinatė (6 skaitmenys)""",
 ,,,,,wgs_koordinates_ilguma,number,,,,4,open,,"""WGS koordinatė (ilguma) paskaičiuota iš normuotų LKS koordinačių""",
 ,,,,,wgs_koordinates_platuma,number,,,,4,open,,"""WGS koordinatė (platuma) paskaičiuota iš normuotų LKS koordinačių""",
-,,,,,atnaujinimo_data,date,,,,4,open,,"""Informacijos atnaujinimo data""",
+,,,,,atnaujinimo_data,date,D,,,4,open,,"""Informacijos atnaujinimo data, (metai (Y) menuo(M) diena(D)) """,
 ,,,,,gyventoju_skaicius,integer,,,,4,open,,"""Priedangoje talpinamų gyventojų skaičius""",
 ,,,,,plotas,number,,,,4,open,,"""Priedangos plotas kv. m""",
 ,,,,,sutampa_su_kas,boolean,,,,4,open,,"""Priedanga sutampa su kolektyvinės apsaugos statiniu (TAIP-1)""",
