@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,wgs_koordinates_ilguma,number,,,,4,open,,"""WGS koordinatė (ilguma) paskaičiuota iš normuotų LKS koordinačių""",
 ,,,,,wgs_koordinates_platuma,number,,,,4,open,,"""WGS koordinatė (platuma) paskaičiuota iš normuotų LKS koordinačių""",
 ,,,,,atnaujinimo_data,date,,,,4,open,,"""Informacijos atnaujinimo data""",
-,,,,,gyventoju_skaicius,long,,,,4,open,,"""Priedangoje talpinamų gyventojų skaičius""",
+,,,,,gyventoju_skaicius,integer,,,,4,open,,"""Priedangoje talpinamų gyventojų skaičius""",
 ,,,,,plotas,number,,,,4,open,,"""Priedangos plotas kv. m""",
 ,,,,,sutampa_su_kas,boolean,,,,4,open,,"""Priedanga sutampa su kolektyvinės apsaugos statiniu (TAIP-1)""",
 ,,,,,pritaikyta_asmenims_su_negalia,boolean,,,,4,open,,"""Ar priedanga pritaikyta asmenims su negalia? (TAIP-1)""",
