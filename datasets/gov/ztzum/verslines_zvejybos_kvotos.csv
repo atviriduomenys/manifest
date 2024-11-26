@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/ztzum,,,,,ns,,,,,,,Žuvininkystės tarnyba prie LR žemės ūkio ministerijos,
+,datasets/gov/ztzum/verslines_zvejybos_kvotos,,,,,,,,,,,,Verslinės žvejybos kvotos,Informacija apie išduotas verslinės žvejybos kvotas  Baltijos jūroje ir Atlanto vandenyne.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Kvota,,,kvotos_id,,,4,,,Verslinės žvejybos kvotos,Informacija apie išduotas verslinės žvejybos kvotas  Baltijos jūroje ir Atlanto vandenyne.
+,,,,,kvotos_id,string,,,,4,open,,Skirtos kvotos id,
+,,,,,rusis,string,,,,4,open,,Žuvies rūšis kuriai skirta kvota,
+,,,,,einamosios_kvotos_dydis,number,,,,4,open,,Ukio subjektui skirtos kvotos dydis,
+,,,,,kvotos_dydis_lietuvai,number,,,,4,open,,Pradinis Lietuvai skirtos kvotos dydis ,
+,,,,,mato_vienetai,string,,,,4,open,,Dydžių mato vienetai,
+,,,,,,enum,,,"""Tona""",,,,,
+,,,,,,,,,"""Vienetas""",,,,,
+,,,,,,,,,"""Kilogramas""",,,,,
+,,,,,kvotos_lietuvai_id,string,,,,4,open,,Kvotos skirtos Lietuvai identifikatorius,
+,,,,,kvotos_metai,string,,,,4,open,,"Metai, kuriems skirta kvota",
+,,,,,kvotos_regiono_pavadinimas,string,,,,4,open,,Kvotos regiono pavadinimas,
+,,,,,,enum,,,"""Baltijos""",,,,,
+,,,,,,,,,"""Tolimųjų jūrų""",,,,,
+,,,,,kvotos_pavadinimas,string,,,,4,open,,Kvotos pavadinimas,
+,,,,,juridinio_asmens_kodas,string,,,,4,open,,Juridinio asmens kodas,
+,,,,,juridinio_asmens_pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
