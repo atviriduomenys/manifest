@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,kas,,,vda_id,,,4,,,,"""Kolektyvinės apsaugos statiniai yra skirti laikinam gyventojų prieglobsčiui saugantis nuo žalingo aplinkos poveikio bei evakuotų gyventojų apsaugai ekstremaliųjų situacijų ar karo metu."""
+,,,,KAS,,,vda_id,,,4,,,,"""Kolektyvinės apsaugos statiniai yra skirti laikinam gyventojų prieglobsčiui saugantis nuo žalingo aplinkos poveikio bei evakuotų gyventojų apsaugai ekstremaliųjų situacijų ar karo metu."""
 ,,,,,vda_id,string,,,,4,open,,"""valstybės duomenų agentūros įrašų identifikatorius""",
 ,,,,,kas_nuotrauka,integer,,,,4,open,,"""Kolektyvinės apsaugos statinio nuotrauka (tuščia)""",
 ,,,,,seniunija,string,,,,4,open,,"""Seniūnijos pavadinimas""",
