@@ -795,4 +795,5 @@ datasets/gov/nsa/nemis/mokiniu_praleistos_pamokos.csv
 datasets/gov/muitine/protokolai.csv
 datasets/gov/varenos_vandenys/skaitikliu_rodmenys.csv
 datasets/gov/pagd/kas.csv
+datasets/gov/pagd/evakuacijos_punktas.csv
 datasets/gov/klaipedos_m_sav/prekybos_leidimai.csv
