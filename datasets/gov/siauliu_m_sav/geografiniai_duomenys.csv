@@ -1,0 +1,35 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/siauliu_m_sav/,,,,,ns,,,,,,,Šiaulių miesto savivaldybė,
+,datasets/gov/siauliu_m_sav/geografiniai_duomenys,,,,,,,,,,,,Šiaulių miesto savivaldybės geografiniai duomenys,"Geografinėje informacinėje sistemoje ArcGis kaupiami geografiniai Šiaulių miesto savivaldybės duomenys. Rinkinyje pateikiami šiuo metu aktualūs seniūnaitijų ribų bei sporto vietų duomenys. Tarp sporto vietų duomenų pateikiami ir atsakingų asmenų kontaktai, kurių pagalba galima rezervuoti aikštę, salę ir kt.
+Duomenų teikėjas – Šiaulių miesto savivaldybės administracija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,SportoVieta,,,vda_prime_key,,,4,,,Šiaulių miesto savivaldybės sporto vietos,"Geografinėje informacinėje sistemoje ArcGis kaupiami geografiniai Šiaulių miesto savivaldybės duomenys. Rinkinyje pateikiami šiuo metu aktualios sporto vietų duomenys. Tarp sporto vietų duomenų pateikiami ir atsakingų asmenų kontaktai, kurių pagalba galima rezervuoti aikštę, salę ir kt.
+Duomenų teikėjas – Šiaulių miesto savivaldybės administracija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Pavadinimas,
+,,,,,tipas,string,,,,4,open,,Tipas,
+,,,,,adresas,string,,,,4,open,,Adresas,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje (apatiniame dešiniame 200 m x 200 m gardelės kampe,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje (apatiniame dešiniame 200 m x 200 m gardelės kampe,
+,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,epastas,string,,,,4,open,,El. paštas,
+,,,,,kontaktai,string,,,,2,open,,Kontaktai,
+,,,,,svetaine,string,,,,4,open,,Svetainės adresas,
+,,,,,kalendorius,string,,,,4,open,,Kalendorius,
+,,,,,geometrija,"geometry(point, 3346)",,,,3,open,,Geometrija,
+,,,,,,,,,,,,,,
+,,,,Seniunaitijos,,,vda_prime_key,,,4,,,Šiaulių miesto savivaldybės seniūnaitijos,"Geografinėje informacinėje sistemoje ArcGis kaupiami geografiniai Šiaulių miesto savivaldybės duomenys. Rinkinyje pateikiami šiuo metu aktualūs seniūnaitijų ribų duomenys.
+Duomenų teikėjas – Šiaulių miesto savivaldybės administracija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
+,,,,,nr,string,,,,4,open,,Numeris,
+,,,,,pavadinimas,string,,,,4,open,,Pavadinimas,
+,,,,,informacija,string,,,,4,open,,Informacija,
+,,,,,geometrija,geometry(3346),,,,4,open,,Geometrija,
