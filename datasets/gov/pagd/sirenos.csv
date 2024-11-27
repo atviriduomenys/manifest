@@ -20,4 +20,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savininkas,string,,,,4,open,,,
 ,,,,,pavadinimas,string,,,,4,open,,,
 ,,,,,atnaujinimo_data,date,D,,,4,open,,,
-,,,,,gyventoju_skaicius,long,,,,4,open,,,
+,,,,,gyventoju_skaicius,integer,,,,4,open,,,
