@@ -8,6 +8,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,uzsakymo_id,string,,,,4,open,,Užsakymo identifikatorius,
 ,,,,,uzsakymo_adresas,string,,,,4,open,,Užsakymo vykdymo vietos adresas,
+,,,,,sav_kodas,string,,,,4,open,,Savivaldybės kodas,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
 ,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
 ,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
