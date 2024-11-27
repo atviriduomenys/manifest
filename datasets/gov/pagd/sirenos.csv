@@ -1,0 +1,23 @@
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/pagd/sirenos;;;;;;;;;;;;pagd sirenos;Sirenų informacija
+;;;;;;prefix;spinta;;;;;https://github.com/atviriduomenys/spinta/issues/;;
+;;;;;;;manifest;;;;;https://github.com/atviriduomenys/manifest/issues/;;
+;;;;;;;;;;;;;;
+;;;;Sirena;;;vda_id;;;4;;;;Sirenų informacija
+;;;;;vda_id;string;;;;4;open;;"""valstybės duomenų agentūros įrašų identifikatorius""";
+;;;;;apskritis;string;;;;4;open;;"""Apskrities pavadinimas""";
+;;;;;savivaldybe;string;;;;4;open;;"""Savivaldybės pavadinimas""";
+;;;;;seniunija;string;;;;4;open;;"""Seniūnijos pavadinimas""";
+;;;;;gyvenviete;string;;;;4;open;;"""Gyvenvietės pavadinimas""";
+;;;;;taskas_lks;geometry(point 3346);;;;4;open;;"""Kordinate lks 94 formatu""";
+;;;;;taskas_wgs;geometry(point 4326);;;;4;open;;"""Kordinate wgs 84 formatu""";
+;;;;;lks_x;integer;;;;4;open;;"""Sunormuota LKS x koordinatė (7 skaitmenys)""";
+;;;;;lks_y;integer;;;;4;open;;"""Sunormuota LKS y koordinatė (6 skaitmenys)""";
+;;;;;wgs_lon_ilguma;number;;;;4;open;;"""WGS koordinatė (ilguma) paskaičiuota iš normuotų LKS koordinačių""";
+;;;;;wgs_lat_platuma;number;;;;4;open;;"""WGS koordinatė (platuma) paskaičiuota iš normuotų LKS koordinačių""";
+;;;;;sirenos_sumontavimo_adresas;string;;;;4;open;;"""Sirenos sumontavimo adresas""";
+;;;;;garso_spindulys;number;;;;4;open;;;
+;;;;;savininkas;string;;;;4;open;;;
+;;;;;pavadinimas;string;;;;4;open;;;
+;;;;;atnaujinimo_data;date;D;;;4;open;;;
+;;;;;gyventoju_skaicius;long;;;;4;open;;;
