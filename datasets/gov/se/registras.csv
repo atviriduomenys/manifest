@@ -24,5 +24,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastato_tipas,string,,,,4,open,,"Pastato tipas, gautas iš Registrų Centro",
 ,,,,,pastato_paskirtis,string,,,,4,open,,"Pastato paskirtis, gautas iš Registrų Centro",
 ,,,,,x_koord_lks,number,,,,4,open,,"X koordinatės LKS sistemoje. Dėl konfidencialumo užtikrinimo pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą.",
-,,,,,y_koord_lks,number,,,,4,open,,"Y koordinatės LKS sistemoje. Dėl konfidencialumo užtikrinimo pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą."
+,,,,,y_koord_lks,number,,,,4,open,,"Y koordinatės LKS sistemoje. Dėl konfidencialumo užtikrinimo pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą.",
 ,,,,,geometrija,geometry(3346),,,,4,open,,Geometrija,
