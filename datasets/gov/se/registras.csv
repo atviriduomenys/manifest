@@ -15,11 +15,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paslaugos_pavadinimas,string,,,,4,open,,Paslaugos pavadinimas,
 ,,,,,paslaugos_kategorija,string,,,,4,open,,Paslaugos kategorija,
 ,,,,,,,,,,,,,,
-,,,,Patalpa,,,patalpos_id,,,,,,,
+,,,,Patalpa,,,patalpos_id,,,4,,,Patalpos,"Patalpos ir pastato, kuriame yra patalpa informacija, kur teikiamos Šiaulių energijos paslaugos. Rinkinyje pateikiama patalpos plotas, pastato statybos metai, aukštų skaičius, pastato tipas, jo paskirtis.  Dėl konfidencialumo užtikrinimo pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes – triukšmą."
 ,,,,,patalpos_id,string,,,,4,open,,Unikalus patalpos identifikatorius,
 ,,,,,pastato_id,string,,,,4,open,,Unikalus pastato identitfikatorius,
 ,,,,,patalpos_plotas,number,,,,4,open,,Patalpos plotas,
-,,,,,statybos_metai,date,Y,,,4,open,,"Statybos metai, gauti iš Registrø Centro",
+,,,,,statybos_metai,date,Y,,,4,open,,"Statybos metai, gauti iš Registrų Centro",
 ,,,,,pastato_aukstu_skaicius,number,,,,4,open,,"Pastato aukštų skaičius, gautas iš Registrų Centro",
 ,,,,,pastato_tipas,string,,,,4,open,,"Pastato tipas, gautas iš Registrų Centro",
 ,,,,,pastato_paskirtis,string,,,,4,open,,"Pastato paskirtis, gautas iš Registrų Centro",
