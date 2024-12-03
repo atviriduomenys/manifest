@@ -1,16 +1,18 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vstt,,,,,,,,,,,,Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos,
-,datasets/gov/vstt/vilku_medziokles,,,,,,,,,,,,Sumedžioti vilkai Lietuvoje,"Rinkinyje pateikiami išsamūs duomenys apie sumedžiotus vilkus Lietuvos Respublikos teritorijoje nuo 2018m. iki šių dienų. Rinkinio objektas - vienas sumedžiotas vilkas. Nurodomas medžioklės laikas, vieta, būdas, duomenys apie vilką (amžius, lytis, sveikatos būklė) ir gaują (jauniklių ir suaugusių vilkų skaičius). Atskirai pateikiama ir sumedžiotų vilkų statistika, kur duomenys pateikiami savivaldybės ir datos tikslumu. Duomenų teikėjas: Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,datasets/gov/vstt/vilku_medziokles,,,,,,,,,,,,Sumedžioti vilkai Lietuvoje,"Rinkinyje pateikiami išsamūs nuo 2018 m. iki dabar kaupiami vilkų medžioklės Lietuvos Respublikos teritorijoje duomenys. Rinkinio objektas – vienas sumedžiotas vilkas. Rinkinyje nurodomas medžioklės laikas, vieta, būdas, duomenys apie vilką (amžius, lytis, sveikatos būklė) ir gaują (jauniklių ir suaugusių vilkų skaičius). Atskirai pateikiama ir sumedžiotų vilkų statistika savivaldybės ir datos tikslumu.
+Duomenų teikėjas – Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,SavivaldybeDiena,,,vda_id,,,4,,,Statistika apie sumedžiotus vilkus Lietuvos savivaldybėse,"Pateikiami sumedžiotų vilkų statistika, kur duomenys nurodomi savivaldybės ir datos tikslumu. Duomenų teikėjas: Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,SavivaldybeDiena,,,vda_id,,,4,,,Statistika apie sumedžiotus vilkus Lietuvos savivaldybėse,"Pateikiama sumedžiotų vilkų statistika savivaldybės ir datos tikslumu. Duomenų teikėjas: Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,data,date,D,,,4,open,,Medžioklės data,
 ,,,,,sumedziota_vnt,integer,U,,,4,open,,Bendras sumedžiotų vilkų skaičius,
 ,,,,,,,,,,,,,,
-,,,,Vilkas,,,vda_id,,,4,,,Duomenys apie sumedžiotus vilkus,"Rinkinyje pateikiami išsamūs duomenys apie sumedžiotus vilkus Lietuvos Respublikos teritorijoje nuo 2018m. iki šių dienų. Rinkinio objektas - vienas sumedžiotas vilkas. Nurodomas medžioklės laikas, vieta, būdas, duomenys apie vilką (amžius, lytis, sveikatos būklė) ir gaują (jauniklių ir suaugusių vilkų skaičius). Duomenų teikėjas: Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,Vilkas,,,vda_id,,,4,,,Duomenys apie sumedžiotus vilkus,"Rinkinyje pateikiami išsamūs nuo 2018 m. iki dabar kaupiami vilkų medžioklės Lietuvos Respublikos teritorijoje duomenys. Rinkinio objektas - vienas sumedžiotas vilkas. Nurodomas medžioklės laikas, vieta, būdas, duomenys apie vilką (amžius, lytis, sveikatos būklė) ir gaują (jauniklių ir suaugusių vilkų skaičius). Duomenų teikėjas: Valstybinė saugomų teritorijų tarnyba prie Aplinkos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,iraso_data,datetime,L,,,4,open,,Įrašo sukūrimo data,
 ,,,,,medziokles_laikas,datetime,L,,,4,open,,Vilko sumedžiojimo laiko žyma,
