@@ -32,4 +32,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,viso_gaujoje_vnt,integer,U,,,4,open,,Bendras vilkų skaičius gaujoje,
 ,,,,,suaugusiu_gaujoje_vnt,integer,U,,,4,open,,Bendras suaugusių vilkų skaičius gaujoje,
 ,,,,,jaunikliu_gaujoje_vnt,integer,U,,,4,open,,Bendras jauniklių skaičius gaujoje,
-,,,,,geometrija,"geometry(point, 4326)	",,,,4,open,,Sumedžioto vilko taško koordinatė.,
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Sumedžioto vilko taško koordinatė.,
