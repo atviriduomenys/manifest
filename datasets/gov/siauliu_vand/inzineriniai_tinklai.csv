@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/siauliu_vand/_tinklai,,,,,,ns,,,,,,,
-,datasets/gov/siauliu_vand/inzineriniai_tinklai,,,,,,,,,,,,Šulinių dangčių ir lietaus grotelių lokacijos,"UAB „Šiaulių vandenys“ GIS informacinės sistemos lentelėje pateikiamos vandentiekio, fekalinių nuotekų ir lietaus nuotekų dangčių bei lietaus grotelių buvimo vietos. Siekiant užtikrinti konfidencialumą, pateiktų koordinačių įrašai yra modifikuoti naudojant atsitiktinio triukšmo parametrą (standartinį nuokrypį) – 50 metrų. Naudojant šį parametrą, šulinys paslenkamas vidutiniškai per 62 metrus atsitiktine kryptimi.
+,datasets/gov/siauliu_vand/inzineriniai_tinklai,,,,,,,,,,,,Šulinių dangčių ir lietaus grotelių lokacijos,"UAB „Šiaulių vandenys“ GIS informacinės sistemos lentelėje pateikiamos vandentiekio, fekalinių nuotekų ir lietaus nuotekų dangčių bei lietaus grotelių buvimo vietos. Siekiant užtikrinti konfidencialumą, pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį su 50 metrų standartinio nuokrypio parametru. Naudojant šį parametrą, šulinys paslenkamas vidutiniškai per 62 metrus atsitiktine kryptimi.
 Duomenų aprėptis – Šiaulių miesto savivaldybė.
 Duomenų teikėjas – UAB „Šiaulių vandenys“.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
@@ -8,7 +8,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Dangciai,,,vda_prime_key,,,4,,,Šulinių dangčių ir lietaus grotelių lokacijos,"UAB „Šiaulių vandenys“ GIS informacinės sistemos lentelėje pateikiamos vandentiekio, fekalinių nuotekų ir lietaus nuotekų dangčių bei lietaus grotelių buvimo vietos. Siekiant užtikrinti konfidencialumą, pateiktų koordinačių įrašai yra modifikuoti naudojant atsitiktinio triukšmo parametrą (standartinį nuokrypį) – 50 metrų. Naudojant šį parametrą, šulinys paslenkamas vidutiniškai per 62 metrus atsitiktine kryptimi.
+,,,,Dangtis,,,vda_prime_key,,,4,,,Šulinių dangčių ir lietaus grotelių lokacijos,"UAB „Šiaulių vandenys“ GIS informacinės sistemos lentelėje pateikiamos vandentiekio, fekalinių nuotekų ir lietaus nuotekų dangčių bei lietaus grotelių buvimo vietos. Siekiant užtikrinti konfidencialumą, pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį su 50 metrų standartinio nuokrypio parametru. Naudojant šį parametrą, šulinys paslenkamas vidutiniškai per 62 metrus atsitiktine kryptimi.
 Duomenų aprėptis – Šiaulių miesto savivaldybė.
 Duomenų teikėjas – UAB „Šiaulių vandenys“.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
