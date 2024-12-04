@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Zeldinys,,,objekto_id,,,4,,,Anykščių miesto želdiniai ,Informacija apie Anykščių miesto želdinius
-,,,,,objekto_id,string,,,,4,open,,Prekybos leidimo išduoto tam tikram laikotarpiui identifikatorius,
+,,,,,objekto_id,string,,,,4,open,,Želdinio identifikatorius,
 ,,,,,zona,string,,,,4,open,,Zona nurodanti ar želdinys yra gatvės ar miesto teritorijoje,
 ,,,,,,enum,,,"""miesto""",,,,Miesto zona,
 ,,,,,,,,,"""gatves""",,,,Gatvės zona,
@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,zeldinio_vieta,"geometry(point, 3346)",m,,,4,open,,Želdinio vieta nurodyta LKS koordinačių sistemoje,
 ,,,,,,,,,,,,,,
 ,,,,Zeldynas,,,objekto_id,,,4,,,Anykščių miesto želdynai,Informacija apie Anykščių miesto želdynus
-,,,,,objekto_id,string,,,,4,open,,Želdyno idientifikatorius,
+,,,,,objekto_id,string,,,,4,open,,Želdyno identifikatorius,
 ,,,,,zona,string,,,,4,open,,Zona nurodanti ar želdynas yra gatvės ar miesto teritorijoje,
 ,,,,,,enum,,,"""miesto""",,,,Miesto zona,
 ,,,,,,,,,"""gatves""",,,,Gatvės zona,
