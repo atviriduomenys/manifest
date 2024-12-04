@@ -359,7 +359,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,,,,,"""Angliavandeniai""",,,,Angliavandeniai,
 ,,,,,,,,,"""Punktatai, nosis""",,,,"Punktatai, nosis",
 ,,,,,,,,,"""Koprologija""",,,,Koprologija,
-,,,,,tyrimo_data,string,D,,,4,open,,Tyrimo data dienos tikslumu,
+,,,,,tyrimo_data,date,D,,,4,open,,Tyrimo data dienos tikslumu,
 ,,,,,tyrimo_meginio_tipas,string,,,,4,open,,Tyrimo mėginio tipas,
 ,,,,,,enum,,,"""Kraujas""",,,,Kraujas,
 ,,,,,,,,,"""Serumas""",,,,Serumas,
