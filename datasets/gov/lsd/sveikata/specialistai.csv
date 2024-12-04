@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,licreg_specialistai_pameciui,,,vda_id,,,,,,Sveikatos priežiūros specialistų skaičius pamečiui,"Sveikatos priežiūros specialistų licencijų skaičius pagal specialisto kvalifikaciją ir licencijos galiojimo metus pagal VASPVT LICREG duomenis. Nurodytas skaičius unikalių licencijų galiojusių ataskaitiniais metais, tačiau nebūtinai visus metus. Specialistų amžius apskaičiuotas ataskaitiniams metams."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
 ,,,,,kvalifikacijos_pavadinimas,string,,,,4,open,,Sveikatos priežiūros specialisto kvalifikacija,
-,,,,,specialistu_skaicius,long,,,,4,open,,"Galiojančių sveikatos priežiūros specialistų licencijų skaičius pagal kvalifikaciją ir metus","Skaičiuojama galiojančių unikalių licencijų suma, kurios galiojo bent dalį metų, nebūtinai visus metus."
+,,,,,specialistu_skaicius,integer,,,,4,open,,"Galiojančių sveikatos priežiūros specialistų licencijų skaičius pagal kvalifikaciją ir metus","Skaičiuojama galiojančių unikalių licencijų suma, kurios galiojo bent dalį metų, nebūtinai visus metus."
 ,,,,,amziaus_vidurkis,integer,,,,4,open,,"Sveikatos priežiūros specialistų amžiaus vidurkis","Konfidencialumo tikslais, amžiaus vidurkis nepateikiamas, kai suskaičiuojamas tik vienas specialistas"
 ,,,,,metai,integer,,,,2,open,,"Metai, už kuriuos skaičiuojamas galiojančių licencijų kiekis",
 ,,,,,,comment,type,,"update(type: ""date"", ref:""Y"")",4,,spinta:213,,
