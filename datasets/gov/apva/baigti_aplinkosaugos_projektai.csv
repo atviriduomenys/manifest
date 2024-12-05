@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_kodas,string,,,,4,open,,"Savivaldybės, kurioje įgyvendinamas projektas, kodas",
 ,,,,,,comment,type,,"create(property: ""savivaldybe"", type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe"")",4,open,,,
 ,,,,,,comment,property,,"update(property: ""savivaldybe.sav_kodas"", type: """")",4,open,Spinta:216,,
-,,,,,prj_gis_lks,string,,,,4,open,,Projekto įgyvendinimo koordinatės (LKS-94),
