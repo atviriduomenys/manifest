@@ -11,8 +11,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ka_atsakymas,string,,,,4,open,,Paciento pasirinkto atsakymo tekstas,
 ,,,,,pa_fo_pavadinimas,string,,,,4,open,,Gydymo įstaigos pavadinimas,
 ,,,,,pav_lpk_2012,string,,,,4,open,,Sveikatos priežiūros specialisto kvalifikacija,
-,,,,,pa_vizito_data,datetime,S,,,4,open,,Paciento išrašymo data,
-,,,,,pa_uzpildymo_data,datetime,S,,,4,open,,Anketos užpildymo data,
+,,,,,pa_vizito_data,datetime,S,,,4,open,,Paciento išrašymo data UTC laiku,
+,,,,,pa_uzpildymo_data,datetime,S,,,4,open,,Anketos užpildymo data UTC laiku,
 ,,,,,,,,,,,,,,
 ,,,,AmbulatorijosPacientuApklausa,,,vda_id,,,,,,Ambulatorijos pacientų anoniminės apklausos,"Anketų, pateiktų pacientams po gautų ambulatorinių paslaugų, skirtų įvertinti gautų sveikatos paslaugų kokybę, duomenys su atsakymais."
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
@@ -22,5 +22,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,istaiga,string,,,,4,open,,Gydymo įstaigos pavadinimas,
 ,,,,,kvalifikacija,string,,,,4,open,,Sveikatos priežiūros specialisto kvalifikacija,
 ,,,,,paslauga,string,,,,4,open,,Paslaugos pavadinimas,
-,,,,,vizito_data,datetime,S,,,4,open,,Paciento vizito data,
-,,,,,uzpildymo_data,datetime,S,,,4,open,,Anketos užpildymo data,
+,,,,,vizito_data,datetime,S,,,4,open,,Paciento vizito data UTC laiku,
+,,,,,uzpildymo_data,datetime,S,,,4,open,,Anketos užpildymo data UTC laiku,
