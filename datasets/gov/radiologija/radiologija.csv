@@ -127,7 +127,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrimo_serijos_uuid,string,,,,4,open,,Tyrimo serijos identifikatorius,
 ,,,,,tirta_kuno_dalis,string,,,,4,open,,Tirta paciento kūno dalis,
 ,,,,,tyrimo_serijos_modalumas,string,,,,4,open,,Tyrimo serijos modalumas,
-,,,,,,,,,"""DX""",,,,Skaitmeninė radiografija,
+,,,,,,enum,,,"""DX""",,,,Skaitmeninė radiografija,
 ,,,,,,,,,"""PX""",,,,Panoraminis rentgenas,
 ,,,,,tyrimo_serijos_aprasymas,string,,,,4,open,,Tyrimo serijos aprašymas,
 ,,,,,atvaizdo_uuid,string,,,,4,open,,Atvaizdo unikalus identifikatorius,
