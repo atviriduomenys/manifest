@@ -1,0 +1,27 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vert/isduoti,,,,,,,,,,,,Išduoti pažymėjimai energetikos darbuotojams,"Energetikos darbuotojų atestavimo kontrolė yra viena iš Valstybinės energetikos reguliavimo tarybos (VERT) funkcijų. Lietuvos Respublikos energetikos įstatymas numato, jog energetikos objektus, įrenginius įrengiantys ir eksploatuojantys darbuotojai privalo būti atitinkamos kvalifikacijos ir pasirengę įgyvendinti reikiamus uždavinius. Teisės aktų nustatyta tvarka atestuoti energetikos darbuotojai užtikrina saugų, efektyvų ir kokybišką energetikos įrenginių įrengimą ir/ar eksploatavimą. Tai leidžia užtikrinti darnų energetikos sektoriaus veikimą. Šiame rinkinyje pateikiami Energetikos darbuotojų atestavimo informacinės sistemos (EDAIS) duomenys nuo 2024m. iki dabar apie išduotus pažymėjimus energetikos darbuotojams Lietuvoje. Nurodoma informacija apie išduotą pažymėjimą (suteiktą įgaliojimą, veiklos sritį ir sektorių, galiojimo laikotarpį) ir sertifikavimo įstaigos vykdytą atestavimą (įstaigos pavadinimas, egzamino data ir vieta). 
+Duomenų teikėjas - Valstybinė energetikos reguliavimo taryba. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Pazymejimas,,,pazymejimo_id,,,4,,,Išduoti pažymėjimai energetikos darbuotojams,"Energetikos darbuotojų atestavimo kontrolė yra viena iš Valstybinės energetikos reguliavimo tarybos (VERT) funkcijų. Lietuvos Respublikos energetikos įstatymas numato, jog energetikos objektus, įrenginius įrengiantys ir eksploatuojantys darbuotojai privalo būti atitinkamos kvalifikacijos ir pasirengę įgyvendinti reikiamus uždavinius. Teisės aktų nustatyta tvarka atestuoti energetikos darbuotojai užtikrina saugų, efektyvų ir kokybišką energetikos įrenginių įrengimą ir/ar eksploatavimą. Tai leidžia užtikrinti darnų energetikos sektoriaus veikimą. Šiame rinkinyje pateikiami Energetikos darbuotojų atestavimo informacinės sistemos (EDAIS) duomenys nuo 2024m. iki dabar apie išduotus pažymėjimus energetikos darbuotojams Lietuvoje. Nurodoma informacija apie išduotą pažymėjimą (suteiktą įgaliojimą, veiklos sritį ir sektorių, galiojimo laikotarpį) ir sertifikavimo įstaigos vykdytą atestavimą (įstaigos pavadinimas, egzamino data ir vieta). 
+Duomenų teikėjas - Valstybinė energetikos reguliavimo taryba. 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"
+,,,,,pazymejimo_id,string,,,,4,open,,Išduoto pažymėjimo identifikatorius,
+,,,,,asmuo,string,,,,4,open,,"Energetikos darbuotojo, kuriam buvo išduotas pažymėjimas, identifikatorius",
+,,,,,igaliojimas,string,,,,4,open,,Suteikto įgaliojimo pavadinimas,
+,,,,,sritis,string,,,,4,open,,Veiklos sritis,
+,,,,,sektorius,string,,,,4,open,,Veiklos sektoriaus pavadinimas,
+,,,,,,enum,,,"""elektra""",,,,,
+,,,,,,,,,"""dujos""",,,,,
+,,,,,,,,,"""šiluma""",,,,,
+,,,,,,,,,"""nafta""",,,,,
+,,,,,galiojimo_pradzia,date,D,,,4,open,,Pažymėjimo galiojimo pradžios data,
+,,,,,galiojimo_pabaiga,date,D,,,4,open,,Pažymėjimo galiojimo pabaigos data,
+,,,,,egzamino_id,string,,,,4,open,,Egzamino identifikacinis numeris,
+,,,,,egzamino_data,date,D,,,4,open,,Egzamino vykdymo data,
+,,,,,egzamino_miestas,string,,,,4,open,,"Miestas, kuriame buvo laikytas egzaminas",
+,,,,,atest_istaiga,string,,,,4,open,,Atestavimą vykdžiusi įstaiga,
+,,,,,istaigos_jar,string,,,,4,open,,Atestavimo įstaigos JAR kodas,
