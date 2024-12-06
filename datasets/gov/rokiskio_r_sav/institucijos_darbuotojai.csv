@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rokiskio_r_sav/institucijos_darbuotojai,,,,,,,,,,,,Rokiškio savivaldybės darbuotojai,Rokiškio savivaldybės darbuotojai
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,InstitucijosDarbuotojas,,,tabelio_nr,,,4,,,Rokiškio savivaldybės darbuotojai,
+,,,,,tabelio_nr,string,,,,4,open,,Darbuotojo unikalus tabelio numeris ,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas unikaliai šfruotas šiam rinkiniui (su kitais rinkiniais nesijungia),
+,,,,,ak_validacija,string,,,,4,open,,Ar asmens kodas validus,
+,,,,,lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
+,,,,,gim_desimtm_ak,date,Y,,,4,open,,Asmens gimimo metai iš asmens kodo,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,gim_desimtm,date,Y,,,4,open,,Gimimo metai,
+,,,,,darbo_pradzia,date,D,,,4,open,,Darbo pradžios data,
+,,,,,darbo_pabaiga,date,D,,,4,open,,Darbo pabaigos data,
+,,,,,skyrius,string,,,,4,open,,Skyriaus pavadinimas,
+,,,,,institucija,string,,,,4,open,,Institucijos pavadinimas,
+,,,,,imones_kodas,string,,,,4,open,,Įmonės kodas,
