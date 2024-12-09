@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/anyksciu_r_sav,,,,,ns,,,,,,,Anykščių rajono savivaldybė,
-,/datasets/gov/anyksciu_r_sav/zeldiniai,,,,,,,,,,,,Anykščių miesto želdiniai ir želdynai,Informacija apie Anykščių miesto želdinius ir želdynus 
+,datasets/gov/anyksciu_r_sav,,,,,ns,,,,,,,Anykščių rajono savivaldybė,
+,datasets/gov/anyksciu_r_sav/zeldiniai,,,,,,,,,,,,Anykščių miesto želdiniai ir želdynai,Informacija apie Anykščių miesto želdinius ir želdynus 
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
