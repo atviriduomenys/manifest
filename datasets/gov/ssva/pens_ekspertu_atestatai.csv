@@ -34,7 +34,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,2,,,,Taip,
 ,,,,,,,,,-1,,,,Neaišku,
 ,,,,,pastaba,string,,,,3,open,,Registro pastaba,
-,,,,,koord,"geometry(point,4326)",,,,3,open,,Pastato koordinatės,
+,,,,,koord,"geometry(point,3346)",,,,3,open,,Pastato koordinatės,
 ,,,,,,,,,,,,,,
 ,,,,Paskirtis,,,id,,,4,,,Pastatų paskirtys,Pagal STR 2.01.09:2005 ir STR 2.01.02:2016
 ,,,,,id,integer,,,,4,open,,Pastatų paskirties ID,
