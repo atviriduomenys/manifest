@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,darbo_id,string,,,,4,open,,Darbo identifikatorius,
 ,,,,,darbo_pav_pilnas,string,,,,4,open,,Pilnas darbo pavadinimas,
-,,,,,darbp_pav,string,,,,4,open,,Darbo pavadinimas,
+,,,,,darbo_pav,string,,,,4,open,,Darbo pavadinimas,
 ,,,,,autoriu_institucijos,string,,,,4,open,,"Institucijos, kuriose dirba darbo autoriai",
 ,,,,,autoriu_instituciju_tipai,string,,,,4,open,,"Institucijų, kuriose dirba darbo autoriai, tipai",
 ,,,,,autoriniu_lanku_skaic,number,,,,4,open,,Darbo autorinių lankų skaičius,
