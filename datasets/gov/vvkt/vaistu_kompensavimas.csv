@@ -1,0 +1,26 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvkt,,,,,ns,,,,,,,Valstybinė vaistų kontrolės tarnyba,
+,datasets/gov/vvkt/vaistu_kompensavimas,,,,,,,,,,,,Sveikatos technologijų vertinimas (STV). Paraiškų įrašyti vaistinį preparatą į kompensavimo sąrašus duomenys ir vertinimo eigos stebėsena,"Duomenų rinkinį sudaro Valstybinei vaistų kontrolės tarnybai prie Lietuvos Respublikos sveikatos apsaugos ministerijos pateiktų sveikatos technologijų vertinimo paraiškų įrašyti vaistinį preparatą į kompensavimo sąrašus duomenys. Rinkinyje pateikiama tokių paraiškų eiga – nurodomos aktualios datos, pareiškėjai, vaistiniai preparatai, indikacijos ir pan. Duomenų rinkinio viena eilutė atitinka vieną paraišką.
+Su rekomendacijomis ir detalesne informacija galima susipažinti čia: https://vvkt.lrv.lt/lt/sveikatos-technologiju-vertinimas/vaistiniu-preparatu-medicinos-pagalbos-priemoniu-ir-ligu-vertinimai/.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Paraiska,,,vda_prime_key,,,4,,,Sveikatos technologijų vertinimas (STV). Paraiškų įrašyti vaistinį preparatą į kompensavimo sąrašus duomenys ir vertinimo eigos stebėsena,"Duomenų rinkinį sudaro Valstybinei vaistų kontrolės tarnybai prie Lietuvos Respublikos sveikatos apsaugos ministerijos pateiktų sveikatos technologijų vertinimo paraiškų įrašyti vaistinį preparatą į kompensavimo sąrašus duomenys. Rinkinyje pateikiama tokių paraiškų eiga – nurodomos aktualios datos, pareiškėjai, vaistiniai preparatai, indikacijos ir pan. Duomenų rinkinio viena eilutė atitinka vieną paraišką.
+Su rekomendacijomis ir detalesne informacija galima susipažinti čia: https://vvkt.lrv.lt/lt/sveikatos-technologiju-vertinimas/vaistiniu-preparatu-medicinos-pagalbos-priemoniu-ir-ligu-vertinimai/.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,paraiskos_numeris,string,,,,4,open,,Paraiškos numeris,
+,,,,,pareiskejas,string,,,,4,open,,Pareiškėjo pavadinimas,
+,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
+,,,,,paraiskos_bukle,string,,,,4,open,,Bendra paraiškos būklė,
+,,,,,vaistinis_preparatas,string,,,,4,open,,Vaistinio preparato pavadinimas (firminis pavadinimas ir farmacinė forma),
+,,,,,bendrinis_preparato_pav,string,,,,4,open,,Bendrinis vaistinio preparato pavadinimas,
+,,,,,ligu_kodas_tlk,string,,,,4,open,,"Ligų kodai pagal TLK-AM-10 (Tarptautinė statistinė ligų ir sveikatos sutrikimų klasifikacija, dešimtasis pataisytas ir papildytas leidimas, Australijos modifikacija)",
+,,,,,indikacija,string,,,,2,open,,Vaistinio preparato terapinės indikacijos,
+,,,,,palyg_vaist_prep,string,,,,2,open,,"Palyginamasis vaistinis preparatas, kuris naudojamas kaip pagrindas siūlomo kompensuoti vaistinio preparato lyginimui",
+,,,,,klausimu_issiuntimo_data,date,D,,,4,open,,Klausimų išsiuntimo data,
+,,,,,atsakymu_gavimo_data,date,D,,,4,open,,Atsakymų gavimo data,
+,,,,,vertinimo_pabaigos_data,date,D,,,4,open,,Išvadų pateikimo; užduoties įvykdymo data,
+,,,,,rekomendaciju_nepateikimo_priezastis,string,,,,2,open,,Rekomendacijų nepateikimo priežastis,
