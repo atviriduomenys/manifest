@@ -445,7 +445,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,,,,,"""Priėmimas""",,,,Priėmimas,
 ,,,,,tyrimo_data,date,D,,,4,open,,Tyrimo data dienos tikslumu,
 ,,,,,tyrimo_meginio_tipas,string,,,,4,open,,Tyrimo mėginio tipas,
-,,,,,,,,,"""Kraujas""",,,,Kraujas,
+,,,,,,enum,,,"""Kraujas""",,,,Kraujas,
 ,,,,,,,,,"""Serumas""",,,,Serumas,
 ,,,,,,,,,"""Šlapimas""",,,,Šlapimas,
 ,,,,,,,,,"""Plazma""",,,,Plazma,
