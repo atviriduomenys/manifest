@@ -1,0 +1,79 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/cpva,,,,,ns,,,,,,,VšĮ Centrinė projektų valdymo agentūra,
+,datasets/gov/cpva/paramu_duomenys,,,,,,,,,,,,VšĮ Centrinės projektų valdymo agentūros teikiamų paramų sutartys ir finansavimas,"Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Rinkinyje pateikiamos 3 lentelės, kuriose galima rasti tokią informaciją:
+pateiktos paraiškos bei pasirašytos finansuoti sutartys (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą);
+projekto įgyvendinimui prašomos finansuoti, finansuotos bei grąžintos sumos (viena eilutė atitinka vienos paraiškos prašomą finansuoti sumą. Esant grąžinamų pinigu faktui, tuo pačiu nurodoma pati grąžintina suma bei priežasties tipas);
+pažeidimų tyrimų informacija įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).
+Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,FinansuojamaSuma,,,vda_prime_key,,,4,,,"Projekto įgyvendinimui prašomos finansuoti, finansuotos bei grąžintos sumos","Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Lentelėje galima rasti tokią informaciją:
+pateiktos paraiškos bei pasirašytos finansuoti sutartys (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).
+Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikacinis numeris,
+,,,,,paraiskos_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
+,,,,,prasoma_suma,number,,,,4,open,,Prašoma finansuoti suma,
+,,,,,finansuojama_suma,number,,,,4,open,,Finansuojama suma,
+,,,,,sumoketa_suma,number,,,,4,open,,Sumokėta finansuojama suma,
+,,,,,grazinama_suma,number,,,,4,open,,Grąžinama suma,
+,,,,,grazinimo_priezastis,string,,,,4,open,,Grąžinimo priežasties tipas,
+,,,,,,enum,,,"""Nesusijusios su pažeidimu""",,,,Nesusijusios su pažeidimu,
+,,,,,,,,,"""Susijusios su pažeidimu""",,,,Susijusios su pažeidimu,
+,,,,,,,,,,,,,,
+,,,,PazeidimoTyrimas,,,pazeidimo_tyr_id,,,4,,,Pažeidimų tyrimų informacija įtariant pažeidimą,"Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Lentelėje galima rasti tokią informaciją:
+pažeidimų tyrimų informacija įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).
+Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,pazeidimo_tyr_id,string,,,,4,open,,Pažeidimo tyrimo identifikacinis numeris,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
+,,,,,pazeidimo_tikrinimo_data,date,D,,,4,open,,Pažeidimo tikrinimo data,
+,,,,,pazeidimo_statuso_data,date,D,,,4,open,,Pažeidimo statuso data,
+,,,,,pazeidimo_tyr_statusas,string,,,,4,open,,Pažeidimo tyrimo stausas,
+,,,,,,enum,,,"""Baigtas""",,,,Baigtas,
+,,,,,,,,,"""Patvirtintas""",,,,Patvirtintas,
+,,,,,,,,,"""Anuliuotas""",,,,Anuliuotas,
+,,,,,,,,,"""Papildymas""",,,,Papildymas,
+,,,,,,,,,"""Pradėtas tyrimas""",,,,Pradėtas tyrimas,
+,,,,,,,,,"""Atnaujintas tyrimas""",,,,Atnaujintas tyrimas,
+,,,,,,,,,"""Užregistruotas""",,,,Užregistruotas,
+,,,,,pazeidimo_rusis,string,,,,4,open,,Pažeidimo rūšis,
+,,,,,,enum,,,"""IRQ 2 - Pažeidimas""",,,,Pažeidimas,
+,,,,,,,,,"""IRQ 0 - Pažeidimas nenustatytas""",,,,Pažeidimas nenustatytas,
+,,,,,,,,,"""IRQ 3 - Įtarimas sukčiavimu""",,,,Įtarimas sukčiavimu,
+,,,,,,,,,,,,,,
+,,,,Sutartis,,,vda_prime_key,,,4,,,Pateiktos paraiškos bei pasirašytos finansuoti sutartys,"Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Lentelėje galima rasti tokią informaciją:
+pateiktos paraiškos bei pasirašytos finansuoti sutartys (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).
+Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_prime_key,string,,,,4,open,,identifikacinis numeris,
+,,,,,istaigos_jar_kodas,string,,,,4,open,,Įstaigos JAR kodas,
+,,,,,application_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
+,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,sutarties_pavadinimas,string,,,,2,open,,Sutarties pavadinimas,
+,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
+,,,,,sutarties_isigaliojimo_data,date,,,,4,open,,Sutarties įsigaliojimo data,
+,,,,,sutarties_pabaigos_data,date,,,,4,open,,Sutarties pabaigos data,
+,,,,,projekto_veiklu_pradzia,date,D,,,4,open,,Projekto veiklų pradžios data,
+,,,,,projekto_veiklu_pabaiga,date,D,,,4,open,,Projekto veiklų pabaigos data,
+,,,,,turi_partneriu,boolean,,,,4,open,,Ar turi partnerių?,
+,,,,,sutarties_busena,string,,,,4,open,,Sutarties būsena,
+,,,,,,enum,,,"""Įgyvendinama sutartis""",,,,Įgyvendinama sutartis,
+,,,,,,,,,"""Baigtas""",,,,Baigtas,
+,,,,,,,,,"""Įgyvendinama""",,,,Įgyvendinama,
+,,,,,,,,,"""Nutraukta sutartis""",,,,Nutraukta sutartis,
+,,,,,,,,,"""Atsisakė pasirašyti""",,,,Atsisakė pasirašyti,
+,,,,,,,,,"""Baigta""",,,,Baigta,
+,,,,,sutarties_busenos_data,date,D,,,4,open,,Sutarties būsenos data,
+,,,,,priemones_id,string,,,,4,open,,Finansavimo priemonės identifikacinis numeris,
+,,,,,priemones_kodas,string,,,,4,open,,Finansavimo priemonės kodas,
+,,,,,priemones_pavadinimas,string,,,,4,open,,Finansavimo priemonės pavadinimas,
+,,,,,atsakinga_institucija,string,,,,4,open,,Atsakinga instituciją už finansavimo priemonę,
+,,,,,regionas,string,,,,4,open,,Regionas kam skirta finansavimo priemonės parama,
