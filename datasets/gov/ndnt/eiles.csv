@@ -14,6 +14,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,registravimo_nr,string,,,,4,open,,Sprendimo registravimo numeris,
 ,,,,,savivaldybe,string,,,,4,open,,"Savivaldybės, kuri siunčia asmenį į globos namus, pavadinimas",
 ,,,,,siuntimo_men,date,M,,,4,open,,Siuntimo į globos namus metai ir mėnesis,
-,,,,,siuntimo_nr,number,,,,4,open,,Siuntimo į globos namus numeris,
+,,,,,siuntimo_nr,string,,,,4,open,,Siuntimo į globos namus numeris,
 ,,,,,apgyvendinimo_men,date,M,,,4,open,,Asmens apgyvendinimo globos namuose metai ir mėnesis,
 ,,,,,apgyvendinimo_institucija,string,,,,4,open,,Globos namų pavadinimas,
