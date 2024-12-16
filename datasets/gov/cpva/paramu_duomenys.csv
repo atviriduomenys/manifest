@@ -10,13 +10,13 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Finansas,,,vda_prime_key,,,4,,,"Projekto įgyvendinimui prašomos finansuoti, finansuotos bei grąžintos sumos","Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Lentelėje galima rasti tokią informaciją:
+,,,,FinansuojamaSuma,,,vda_prime_key,,,4,,,"Projekto įgyvendinimui prašomos finansuoti, finansuotos bei grąžintos sumos","Duomenys pateikiami iš Informacinės projektų administravimo sistemos (IPAS) skirtos kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2014–2020 m. struktūrinių fondų programos projektų įgyvendinimu. Lentelėje galima rasti tokią informaciją:
 pateiktos paraiškos bei pasirašytos finansuoti sutartys (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
-,,,,,vda_prime_key,string,,,,4,open,,Identifikacinos numeris,
-,,,,,paraiskos_id,string,,,,4,open,,Paraiškos identifikacinos numeris,
-,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinos numeris,
+,,,,,vda_prime_key,string,,,,4,open,,Identifikacinis numeris,
+,,,,,paraiskos_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,prasoma_suma,number,,,,4,open,,Prašoma finansuoti suma,
 ,,,,,finansuojama_suma,number,,,,4,open,,Finansuojama suma,
@@ -30,8 +30,8 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 pažeidimų tyrimų informacija įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
-,,,,,pazeidimo_tyr_id,string,,,,4,open,,Pažeidimo tyrimo identifikacinos numeris,
-,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinos numeris,
+,,,,,pazeidimo_tyr_id,string,,,,4,open,,Pažeidimo tyrimo identifikacinis numeris,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,pazeidimo_tikrinimo_data,date,D,,,4,open,,Pažeidimo tikrinimo data,
 ,,,,,pazeidimo_statuso_data,date,D,,,4,open,,Pažeidimo statuso data,
@@ -52,16 +52,16 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 pateiktos paraiškos bei pasirašytos finansuoti sutartys (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet sistemos duomenys retais atvejais vis dar atnaujinami. Tokiu atveju, duomenų atnaujinimas numatomas kas 6 mėn.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
-,,,,,vda_prime_key,string,,,,4,open,,Identifikacinos numeris,
+,,,,,vda_prime_key,string,,,,4,open,,identifikacinis numeris,
 ,,,,,istaigos_jar_kodas,string,,,,4,open,,Įstaigos JAR kodas,
-,,,,,application_id,string,,,,4,open,,Paraiškos identifikacinos numeris,
+,,,,,application_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
 ,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
 ,,,,,paraiskos_statusas,string,,,,4,open,,Paraiškos stausas,
 ,,,,,,enum,,,"""Taip""",,,,Taip,
 ,,,,,,,,,"""Ne""",,,,Ne,
 ,,,,,,,,,"""Nevertinta""",,,,Nevertinta,
 ,,,,,paraiskos_statuso_data,date,D,,,4,open,,Paraiškos statuso data,
-,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinos numeris,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
 ,,,,,sutarties_pavadinimas,string,,,,2,open,,Sutarties pavadinimas,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,sutarties_pradzia,date,D,,,4,open,,Sutarties pradžios data,
@@ -75,7 +75,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,"""Atsisakė pasirašyti""",,,,Atsisakė pasirašyti,
 ,,,,,,,,,"""Baigta""",,,,Baigta,
 ,,,,,sutarties_busenos_data,date,D,,,4,open,,Sutarties būsenos data,
-,,,,,priemones_id,string,,,,4,open,,Finansavimo priemonės identifikacijos numeris,
+,,,,,priemones_id,string,,,,4,open,,Finansavimo priemonės identifikacinis numeris,
 ,,,,,priemones_kodas,string,,,,4,open,,Finansavimo priemonės kodas,
 ,,,,,priemones_pavadinimas,string,,,,4,open,,Finansavimo priemonės pavadinimas,
 ,,,,,atsakinga_institucija,string,,,,4,open,,Atsakinga instituciją už finansavimo priemonę,
