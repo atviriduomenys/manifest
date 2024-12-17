@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,iraso_id,,,4,,,"Asmenų, turinčių negalią, apgyvendinimo globos namuose eilių duomenys","Lentelėje pateikti asmenų, turinčių negalią, apgyvendinimo globos namuose 2022 ir 2023 metų eilių duomenys. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie LR socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,ApgyvendinimoEile,,,iraso_id,,,4,,,"Asmenų, turinčių negalią, apgyvendinimo globos namuose eilių duomenys","Lentelėje pateikti asmenų, turinčių negalią, apgyvendinimo globos namuose 2022 ir 2023 metų eilių duomenys. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie LR socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,eiles_nr,integer,,,,4,open,,Eilės numeris asmens apgyvendinimui globos namuose,
 ,,,,,vardas_pavarde,string,,,,4,open,,Asmens vardas ir pavardė,
@@ -14,6 +14,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,registravimo_nr,string,,,,4,open,,Sprendimo registravimo numeris,
 ,,,,,savivaldybe,string,,,,4,open,,"Savivaldybės, kuri siunčia asmenį į globos namus, pavadinimas",
 ,,,,,siuntimo_men,date,M,,,4,open,,Siuntimo į globos namus metai ir mėnesis,
-,,,,,siuntimo_nr,string,,,,4,open,,Siuntimo į globos namus numeris,
+,,,,,siuntimo_nr,number,,,,4,open,,Siuntimo į globos namus numeris,
 ,,,,,apgyvendinimo_men,date,M,,,4,open,,Asmens apgyvendinimo globos namuose metai ir mėnesis,
 ,,,,,apgyvendinimo_institucija,string,,,,4,open,,Globos namų pavadinimas,
