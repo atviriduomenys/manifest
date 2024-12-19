@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Projektas,,,vda_id,,,4,open,,,
+,,,,Projektas,,,vda_id,,,4,,,Organizacijų bei socialinių projektų duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Unikalus projekto identifikatorius,Projektui priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje.
 ,,,,,priemones_id,ref,Priemone[priemones_id],,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"""Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"""
 ,,,,,pareiskejo_tinklalapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
 ,,,,,pareiskejo_adresas,string,,,,4,open,,Fizinis adresas,Pareiškėjo nurodytas organizacijos adresas
-,,,,,pareiskejo_pasto_kodas,string,,,,4,open,,Pasto kodas,Nurodyto adreso pašto kodas
+,,,,,pareiskejo_pasto_kodas,string,,,,4,open,,Pašto kodas,Nurodyto adreso pašto kodas
 ,,,,,vda_geo_pasto_kodas,string,,,,4,open,,Koordinačių pašto kodas,Pašto kodas išimtas iš nurodytų koordinačių
 ,,,,,vda_geo_gatve,string,,,,4,open,,Koordinačių gatvės pavadinimas,Gatvės pavadinimas išimta iš nurodytų koordinačių
 ,,,,,vda_geo_savivaldybe,string,,,,4,open,,Koordinačių savivaldybė,Savivaldybė išimta iš nurodytų koordinačių
@@ -51,7 +51,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,isleista_suma,number,,,,4,open,,Išleista suma,Viso projekto eigos metu išleista suma
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
-,,,,Priemone,,,vda_id,,,,,,,
+,,,,Priemone,,,vda_id,,,4,,,Priemonių skirtų projektams įgyvendinti duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,priemones_id,string,,,,4,open,,Unikalus priemonės identifikatorius,Priemonei priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje
 ,,,,,priemones_kodas,string,,,,4,open,,Priemonės kodas,Priemonės kodas kuris įeina į projekto kodo sudarymą
@@ -65,7 +65,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vykdymo_nuo_data,date,D,,,4,open,,Projektų su šia priemonė vykdymo pradžios data,
 ,,,,,vykdymo_iki_data,date,D,,,4,open,,Projektų su šia priemonė vykdymo pabaigos data,
 ,,,,,,,,,,,,,,
-,,,,ProjektoIslaida,,,vda_id,,,,,,,
+,,,,ProjektoPirkimas,,,vda_id,,,4,,,Projekto išlaidų duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,pirkimo_id,string,,,,4,open,,Unikalus pirkimo identifikatorius,Projekto išlaidai priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje
 ,,,,,projekto_id,ref,Projektas[projekto_id],,,4,open,,Projekto identifikatorius kurio lėšomis darytas pirkimas,Išorinis raktas į projektų lentelę
