@@ -1,15 +1,15 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ndnt/eiles,,,,,,,,,,,,"Asmenų, turinčių negalią, apgyvendinimo globos namuose eilių duomenys",
+,datasets/gov/ndnt/eiles,,,,,,,,,,,,"Asmenų apgyvendinimo globos namuose eilių duomenys",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,ApgyvendinimoEile,,,iraso_id,,,4,,,"Asmenų, turinčių negalią, apgyvendinimo globos namuose eilių duomenys","Lentelėje pateikti asmenų, turinčių negalią, apgyvendinimo globos namuose 2022 ir 2023 metų eilių duomenys. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie LR socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,ApgyvendinimoEile,,,iraso_id,,,4,,,"Asmenų apgyvendinimo globos namuose eilių duomenys","Lentelėje pateikti asmenų apgyvendinimo globos namuose 2022 ir 2023 metų eilių duomenys. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie LR socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,iraso_id,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,eiles_nr,integer,,,,4,open,,Eilės numeris asmens apgyvendinimui globos namuose,
 ,,,,,vardas_pavarde,string,,,,4,open,,Asmens vardas ir pavardė,
 ,,,,,gimimo_metai,date,Y,,,4,open,,Asmens gimimo metai,
-,,,,,sprendimo_data,date,D,,,4,open,,"Sprendimo dėl asmens, turinčio negalią, apgyvendinimo globos namuose priėmimo data",
-,,,,,sprendimo_nr,string,,,,4,open,,"Sprendimo dėl asmens, turinčio negalią, apgyvendinimo globos namuose numeris",
+,,,,,sprendimo_data,date,D,,,4,open,,"Sprendimo dėl asmens apgyvendinimo globos namuose priėmimo data",
+,,,,,sprendimo_nr,string,,,,4,open,,"Sprendimo dėl asmens apgyvendinimo globos namuose numeris",
 ,,,,,registravimo_data,date,D,,,4,open,,Sprendimo registravimo data,
 ,,,,,registravimo_nr,string,,,,4,open,,Sprendimo registravimo numeris,
 ,,,,,savivaldybe,string,,,,4,open,,"Savivaldybės, kuri siunčia asmenį į globos namus, pavadinimas",
