@@ -1,10 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vpb/pr,,,,,,,,,,,,Lietuvoje įsigalioję Europos patentai,"Lietuvos Respublikos patentų registre nuo 2002 m. kaupiami ir iki šiol atnaujinami nacionalinių bei Lietuvoje įsigaliojusių Europos patentų duomenys. Duomenų rinkinyje nuo 1994 m. kaupiami ir iki šiol atnaujinami Lietuvoje įsigaliojusių Europos patentų duomenys. Bendras rinkinys sudarytas iš trijų lentelių: „Patentų bylos“, „Patentams priskirti asmenys“ ir „Patentų klasifikacijos“. Duomenų teikėjas – Lietuvos Respublikos valstybinis patentų biuras. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,datasets/gov/vpb/pr,,,,,,,,,,,,Lietuvoje įsigalioję Europos patentai,"Lietuvos Respublikos patentų registre nuo 2002 m. kaupiami ir iki šiol atnaujinami nacionalinių bei Lietuvoje įsigaliojusių Europos patentų duomenys. Duomenų rinkinyje nuo 1994 m. kaupiami ir iki šiol atnaujinami Lietuvoje įsigaliojusių Europos patentų duomenys. Bendras rinkinys sudarytas iš trijų lentelių: „Lietuvoje įsigaliojusių Europos patentų bylos“, „Lietuvoje įsigaliojusiems Europos patentams priskirti asmenys“ ir „Lietuvoje įsigaliojusių Europos patentų klasifikacija“. Duomenų teikėjas – Lietuvos Respublikos valstybinis patentų biuras. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Byla,,,patento_numeris,,,4,,,Patentų bylos,"Lentelė „Patentų bylos“. Lentelę sudaro: patento ir paraiškos numeriai, išradimo pavadinimas lietuvių ir anglų kalbomis, paraiškos padavimo, paskelbimo, patento išdavimo paskelbimo ir patento galiojimo pabaigos data. Vienas įrašas atitinka vieną patento bylą (unikalią patento numerio reikšmę)."
+,,,,Byla,,,patento_numeris,,,4,,,Lietuvoje įsigaliojusių Europos patentų bylos,"Lentelė „Lietuvoje įsigaliojusių Europos patentų bylos“. Lentelę sudaro: patento ir paraiškos numeriai, išradimo pavadinimas lietuvių ir anglų kalbomis, paraiškos padavimo, paskelbimo, patento išdavimo paskelbimo ir patento galiojimo pabaigos data. Vienas įrašas atitinka vieną patento bylą (unikalią patento numerio reikšmę)."
 ,,,,,patento_numeris,string,,,,4,open,,Patento numeris,
 ,,,,,paraiskos_numeris,string,,,,4,open,,Patento paraiškos numeris,
 ,,,,,isradimo_pav,string,,,,4,open,,Išradimo lietuviškas pavadinimas,
@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,patento_isdavimo_paskelbimo_data,date,D,,,4,open,,Paskelbimo apie patento išdavimą data,
 ,,,,,patento_galiojimo_pabaigos_data,date,D,,,4,open,,Iki kada galioja patentas,
 ,,,,,,,,,,,,,,
-,,,,Asmuo,,,vda_prime_key,,,,,,Patentams priskirti asmenys,"Lentelė „Patentams priskirti asmenys“. Lentelę sudaro: juridinio asmens pavadinimas arba fizinio asmens vardas ir pavardė, patento ir paraiškos numeris, asmens vaidmuo ir eilės numeris patente. Svarbu atkreipti dėmesį, kad patentas, turintis asmenų, atliekančių skirtingus vaidmenis, juose turi po vieną pirmą asmenį, pvz., pirmą pareiškėją bei pirmą išradėją. Vienas įrašas atitinka vieną unikalią patento numerio, asmens vaidmens ir asmens eilės numerio patente kombinaciją."
+,,,,Asmuo,,,vda_prime_key,,,,,,Lietuvoje įsigaliojusiems Europos patentams priskirti asmenys,"Lentelė „Lietuvoje įsigaliojusiems Europos patentams priskirti asmenys“. Lentelę sudaro: juridinio asmens pavadinimas arba fizinio asmens vardas ir pavardė, patento ir paraiškos numeris, asmens vaidmuo ir eilės numeris patente. Svarbu atkreipti dėmesį, kad patentas, turintis asmenų, atliekančių skirtingus vaidmenis, juose turi po vieną pirmą asmenį, pvz., pirmą pareiškėją bei pirmą išradėją. Vienas įrašas atitinka vieną unikalią patento numerio, asmens vaidmens ir asmens eilės numerio patente kombinaciją."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,asmuo,string,,,,4,open,,Patentui priskirtas asmuo,
 ,,,,,patento_numeris,string,,,,4,open,,Patento numeris,
@@ -24,7 +24,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Savininkas""",,,,Savininkas,
 ,,,,,asm_eiles_pat_nr,integer,,,,4,open,,Asmens eilės numeris patente pagal vaidmenį,
 ,,,,,,,,,,,,,,
-,,,,Klasifikacija,,,vda_prime_key,,,,,,Patentų klasifikacijos,"Lentelė „Patentų klasifikacijos“. Lentelę sudaro: patento ir paraiškos numeris, IPC klasifikacija ir jos versija mėnesio tikslumu. Vienas įrašas atitinka vieną unikalią patento numerio, IPC klasifikacijos ir jos versijos kombinaciją."
+,,,,Klasifikacija,,,vda_prime_key,,,,,,Lietuvoje įsigaliojusių Europos patentų klasifikacija,"Lentelė „Lietuvoje įsigaliojusių Europos patentų klasifikacija“. Lentelę sudaro: patento ir paraiškos numeris, IPC klasifikacija ir jos versija mėnesio tikslumu. Vienas įrašas atitinka vieną unikalią patento numerio, IPC klasifikacijos ir jos versijos kombinaciją."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,patento_numeris,string,,,,4,open,,Patento numeris,
 ,,,,,paraiskos_numeris,string,,,,4,open,,Patento paraiškos numeris,
