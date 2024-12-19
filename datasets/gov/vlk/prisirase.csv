@@ -23,3 +23,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/savivaldybe/Savivaldybe[pavadinimas]"")",2,,,,
 ,,,,,,comment,property,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
 ,,,,,amziaus_grupe,string,,,,3,open,,Amžiaus grupė,
+,,,,,amziaus,integer,,,,3,open,,Amžiaus metais,
