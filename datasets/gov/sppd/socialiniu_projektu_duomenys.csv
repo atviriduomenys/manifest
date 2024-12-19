@@ -1,5 +1,5 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/sppd/socialiniu_projektu_duomenys,,,,,,,,,,,,Socialinių projektu duomenys,"""Lentelėse pateikti Socialinių priežiūros paslaugų departamento projektų, priemonių projektams įgyvendinti bei projektų išlaidų duomenys. Projektų duomenys pateikiami nuo momento, kai paraiškos tampa aktualios tikrinimo procesui. Projektų išlaidų duomenys yra klasifikuojami pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių. Rinkinys sudarytas Valstybės duomenų agentūros. Projektų lentelės viena eilutė atitinka vieną paraišką, teiktą institucijos priemonės lėšoms gauti, priemonių lentelės – tam tikrą priemonę, skirtą projektui įgyvendinti, o projektų išlaidų lentelės – pinigų išleidimo faktą, susijusį su projektu. Atkreipiame dėmesį, kad duomenų eilutės yra nuolatos pildomos, o informacija jose yra tikslinama. Taip pat pažymime, kad įstaiga išlaidų duomenis suveda kas ketvirtį, todėl paskutinio mokėjimo data gali neatitikti realios paskutinio mokėjimo datos. Duomenys apima visoje Lietuvoje išsidėsčiusias organizacijas. Duomenų laiko aprėptis – nuo 2019 m. sausio 1d. Duomenų teikėjas – Socialinių priežiūros paslaugų departamentas prie Socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+d,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/sppd/Socialiniu_projektu_duomenys,,,,,,,,,,,,Socialinių projektu duomenys,"""Lentelėse pateikti Socialinių priežiūros paslaugų departamento projektų, priemonių projektams įgyvendinti bei projektų išlaidų duomenys. Projektų duomenys pateikiami nuo momento, kai paraiškos tampa aktualios tikrinimo procesui. Projektų išlaidų duomenys yra klasifikuojami pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių. Rinkinys sudarytas Valstybės duomenų agentūros. Projektų lentelės viena eilutė atitinka vieną paraišką, teiktą institucijos priemonės lėšoms gauti, priemonių lentelės – tam tikrą priemonę, skirtą projektui įgyvendinti, o projektų išlaidų lentelės – pinigų išleidimo faktą, susijusį su projektu. Atkreipiame dėmesį, kad duomenų eilutės yra nuolatos pildomos, o informacija jose yra tikslinama. Taip pat pažymime, kad įstaiga išlaidų duomenis suveda kas ketvirtį, todėl paskutinio mokėjimo data gali neatitikti realios paskutinio mokėjimo datos. Duomenys apima visoje Lietuvoje išsidėsčiusias organizacijas. Duomenų laiko aprėptis – nuo 2019 m. sausio 1d. Duomenų teikėjas – Socialinių priežiūros paslaugų departamentas prie Socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -46,8 +46,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,"""Nutrauktas""",,,,,,Nutrauktas,Projekto vykdymas yra nutrauktas
 ,,,,,,,"""Pabaigtas""",,,,,,Pabaigtas,Projekto vykdymas yra pabaigtas
 ,,,,,,,"""Archyvas""",,,,,,Archyvas,
-,,,,,gauta_suma,money,EUR,,,4,open,,Gauta suma,Gauta suma projektui įgyvendinti
-,,,,,isleista_suma,money,EUR,,,4,open,,Išleista suma,Viso projekto eigos metu išleista suma
+,,,,,gauta_suma,number,,,,4,open,,Gauta suma,Gauta suma projektui įgyvendinti
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,isleista_suma,number,,,,4,open,,Išleista suma,Viso projekto eigos metu išleista suma
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,,,,,,,,,,
 ,,,,Priemone,,,vda_id,,,,,,,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
@@ -56,7 +58,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,4,open,,Priemonės pavadinimas,
 ,,,,,aprasymas,string,,,,4,open,,Priemonės aprašymas,Keli sakiniai apie priemonę
 ,,,,,tikslas,string,,,,4,open,,Priemonės tikslas,Priemone siekiamas įgyvendinti uždavinys
-,,,,,paskirtas_biudzetas,money,EUR,,,4,open,,Priemonės paskirtas biudžetas,Paskirtas biudžetas kuris išskirstomas kiekvienam projektui
+,,,,,paskirtas_biudzetas,number,,,,4,open,,Priemonės paskirtas biudžetas,Paskirtas biudžetas kuris išskirstomas kiekvienam projektui
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,paraiskos_teikimo_nuo_data,date,D,,,4,open,,Paraiškų teikimo pradžios data,
 ,,,,,paraiskos_teikimo_iki_data,date,D,,,4,open,,Paraiškų teikimo pabaigos data,
 ,,,,,vykdymo_nuo_data,date,D,,,4,open,,Projektų su šia priemonė vykdymo pradžios data,
@@ -69,5 +72,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pirkimo_aprasymas,string,,,,4,open,,Pirkimo trumpas aprašymas,Pirkimo aprašymas pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių
 ,,,,,atsiskaitymo_data,date,D,,,4,open,,Atsiskaitymo data už pirkinį,
 ,,,,,ketvirtis,string,,,,4,open,,Atsiskaitymo ketvirtis,
-,,,,,sumoketa_suma,money,EUR,,,4,open,,Sumokėta suma atsiskaitymo metu,
+,,,,,sumoketa_suma,number,,,,4,open,,Sumokėta suma atsiskaitymo metu,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,iraso_sukurimo_momentas,datetime,S,,,4,open,,Įrašo sukūrimo momentas,Įrašo sukūrimo momentas duomenų bazėje
