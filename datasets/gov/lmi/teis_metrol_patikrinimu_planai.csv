@@ -22,5 +22,5 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,ekonomines_veiklos_rusis_pagal_evrk_2_red,string,,,,4,open,,Tikrinamos įmonės ekonominės veiklos rūšies pavadinimas pagal EVRK 2 redakciją,
 ,,,,,ukio_subjekto_adresas_jar,string,,,,4,open,,Ūkio subjekto/įmonės adresas juridinių asmenų registre,
 ,,,,,veiklaviete,string,,,,4,open,,Įmonės veiklos vietos adresas,
-,,,,,pastabos,string,,,,4,open,,Profesijos kodas pagal Lietuvos profesijų klasifikatorių,
+,,,,,pastabos,string,,,,4,open,,Pastabos,
 ,,,,,plano_pataisymo_nr,integer,,,,2,open,,Plano pataisymo numeris (jei yra),
