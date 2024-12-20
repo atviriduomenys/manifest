@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/sppd/socialiniu_projektu_duomenys,,,,,,,,,,,,Socialinių projektu duomenys,"""Lentelėse pateikti Socialinių priežiūros paslaugų departamento projektų, priemonių projektams įgyvendinti bei projektų išlaidų duomenys. Projektų duomenys pateikiami nuo momento, kai paraiškos tampa aktualios tikrinimo procesui. Projektų išlaidų duomenys yra klasifikuojami pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių. Rinkinys sudarytas Valstybės duomenų agentūros. Projektų lentelės viena eilutė atitinka vieną paraišką, teiktą institucijos priemonės lėšoms gauti, priemonių lentelės – tam tikrą priemonę, skirtą projektui įgyvendinti, o projektų išlaidų lentelės – pinigų išleidimo faktą, susijusį su projektu. Atkreipiame dėmesį, kad duomenų eilutės yra nuolatos pildomos, o informacija jose yra tikslinama. Taip pat pažymime, kad įstaiga išlaidų duomenis suveda kas ketvirtį, todėl paskutinio mokėjimo data gali neatitikti realios paskutinio mokėjimo datos. Duomenys apima visoje Lietuvoje išsidėsčiusias organizacijas. Duomenų laiko aprėptis – nuo 2019 m. sausio 1d. Duomenų teikėjas – Socialinių priežiūros paslaugų departamentas prie Socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,datasets/gov/sppd/socialiniu_projektu_duomenys,,,,,,,,,,,,Socialinių projektu duomenys,"Lentelėse pateikti Socialinių priežiūros paslaugų departamento projektų, priemonių projektams įgyvendinti bei projektų išlaidų duomenys. Projektų duomenys pateikiami nuo momento, kai paraiškos tampa aktualios tikrinimo procesui. Projektų išlaidų duomenys yra klasifikuojami pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių. Rinkinys sudarytas Valstybės duomenų agentūros. Projektų lentelės viena eilutė atitinka vieną paraišką, teiktą institucijos priemonės lėšoms gauti, priemonių lentelės – tam tikrą priemonę, skirtą projektui įgyvendinti, o projektų išlaidų lentelės – pinigų išleidimo faktą, susijusį su projektu. Atkreipiame dėmesį, kad duomenų eilutės yra nuolatos pildomos, o informacija jose yra tikslinama. Taip pat pažymime, kad įstaiga išlaidų duomenis suveda kas ketvirtį, todėl paskutinio mokėjimo data gali neatitikti realios paskutinio mokėjimo datos. Duomenys apima visoje Lietuvoje išsidėsčiusias organizacijas. Duomenų laiko aprėptis – nuo 2019 m. sausio 1d. Duomenų teikėjas – Socialinių priežiūros paslaugų departamentas prie Socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,projekto_id,string,,,,4,open,,Unikalus projekto identifikatorius,Projektui priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje.
 ,,,,,priemones_id,ref,Priemone[priemones_id],,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
 ,,,,,vda_projekto_kodas,string,,,,4,open,,Projekto kodas,Projekto kodas sudarytas iš priemonės trumpinio bei skaičiaus atitinkančio projektų eilės tvarką
-,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"""Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"""
+,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"
 ,,,,,pareiskejo_tinklalapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
 ,,,,,pareiskejo_adresas,string,,,,4,open,,Fizinis adresas,Pareiškėjo nurodytas organizacijos adresas
 ,,,,,pareiskejo_pasto_kodas,string,,,,4,open,,Pašto kodas,Nurodyto adreso pašto kodas
@@ -17,7 +17,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_geo_savivaldybe,string,,,,4,open,,Koordinačių savivaldybė,Savivaldybė išimta iš nurodytų koordinačių
 ,,,,,vda_geo_miestas,string,,,,4,open,,Koordinačių miestas,Miestas išimtas iš nurodytų koordinačių
 ,,,,,vda_geo_lokacijos_tipas,string,,,,4,open,,Koordinačių lokacijos tipas,Nurodo kokia yra koordinačių taško reikšmė
-,,,,,geometrija,geometry(4326),,,,4,open,,Koordinačių taškas,"""Organizacijos nurodyto adreso taško žemėlapyje, pagal WGS84 koordinačių formatą, WKT reikšmės representaciją"""
+,,,,,geometrija,geometry(4326),,,,4,open,,Koordinačių taškas,"Organizacijos nurodyto adreso taško žemėlapyje, pagal WGS84 koordinačių formatą, WKT reikšmės representaciją"
 ,,,,,vda_geo_balai,number,,,,4,open,,Koordinačių teisingumo įvertinimas,Nurodyta reikšmė žymi koordinačių teisingumo procentą
 ,,,,,pareiskejo_veiklos_teritorija,string,,,,4,open,,Pareiškėjo veiklos teritorija,Reikšmė nurodo vietą kurioje vykdo veiklą pareiškėjo organizacija
 ,,,,,pareiskejo_jar,string,,,,4,open,,Juridinio asmens kodas,Organizacijos kodas pateiktas kodas kuris atitinka juridinio asmens kodą
@@ -35,7 +35,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,"""Vertinimas""",,,,,,Vertinimas,Projekto anketa yra užpildyta ir duomenys yra vertinami
 ,,,,,,,"""Paraiškos dokumentų tikslinimas""",,,,,,Paraiškos dokumentų tikslinimas,
 ,,,,,,,"""Paraiškos tikslinimas ekspertams""",,,,,,Paraiškos tikslinimas ekspertams,
-,,,,,,,"""Laukiantis rezerve""",,,,,,Laukiantis rezerve,"""Projekto anketa neperduota vykdymui, tačiau nėra atmesta"""
+,,,,,,,"""Laukiantis rezerve""",,,,,,Laukiantis rezerve,"Projekto anketa neperduota vykdymui, tačiau nėra atmesta"
 ,,,,,,,"""Sąmatos pildymas""",,,,,,Sąmatos pildymas,Būsimų projekto išlaidų pildymas
 ,,,,,,,"""Sutarties ruošimas""",,,,,,Sutarties ruošimas,Projekto sutarties ruošimas
 ,,,,,,,"""Sąmatos tikslinimas""",,,,,,Sąmatos tikslinimas,Būsimų projekto išlaidų tikslinimas
@@ -75,3 +75,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sumoketa_suma,number,,,,4,open,,Sumokėta suma atsiskaitymo metu,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,iraso_sukurimo_momentas,datetime,S,,,4,open,,Įrašo sukūrimo momentas,Įrašo sukūrimo momentas duomenų bazėje
+
