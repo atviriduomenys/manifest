@@ -75,4 +75,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sumoketa_suma,number,,,,4,open,,Sumokėta suma atsiskaitymo metu,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,iraso_sukurimo_momentas,datetime,S,,,4,open,,Įrašo sukūrimo momentas,Įrašo sukūrimo momentas duomenų bazėje
-
