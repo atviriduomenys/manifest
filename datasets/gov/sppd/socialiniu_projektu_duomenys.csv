@@ -22,30 +22,30 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pareiskejo_veiklos_teritorija,string,,,,4,open,,Pareiškėjo veiklos teritorija,Reikšmė nurodo vietą kurioje vykdo veiklą pareiškėjo organizacija
 ,,,,,pareiskejo_jar,string,,,,4,open,,Juridinio asmens kodas,Organizacijos kodas pateiktas kodas kuris atitinka juridinio asmens kodą
 ,,,,,vda_jar_validacija,string,,,,4,open,,Juridinio asmens kodo tipas,Reikšmė nurodo ar juridinio asmens kodas yra 7 skaitmenų ar 9 skaitmenų
-,,,,,,enum,"""9 sktm. JAR""",,,,,,Juridinio asmens kodas (9 skaitmenų),
-,,,,,,,"""7 sktm. JAR""",,,,,,Juridinio asmens kodas (7 skaitmenų),
+,,,,,,enum,,,"""9 sktm. JAR""",,,,Juridinio asmens kodas (9 skaitmenų),
+,,,,,,,,,"""7 sktm. JAR""",,,,Juridinio asmens kodas (7 skaitmenų),
 ,,,,,pareiskos_teikimo_data,date,D,,,4,open,,Paraiškos teikimo data,Data kada buvo sukurtas įrašas SOPAS sistemoje
 ,,,,,vykdymo_pradzios_data,date,D,,,4,open,,Projekto pradžios data,Data kada buvo/bus pradėtas vykdyti projektas
 ,,,,,vykdymo_pabaigos_data,date,D,,,4,open,,Projekto pabaigos data,Data kada yra numatoma projekto pabaiga
 ,,,,,projekto_tikslas,string,,,,4,open,,Projekto tikslas,Projekto metu siekiamas įgyvendinti uždavinys
 ,,,,,projekto_aprasymas,string,,,,4,open,,Projekto aprašymas,Trumpas projekto aprašymas pateiktas projektui vykdyti pretenduojančios organizacijos
 ,,,,,projekto_busena,string,,,,4,open,,Projekto būsena,
-,,,,,,enum,"""Tikrinimas""",,,,,,Tikrinimas,Projekto paraiška pateikta tikrinimui
-,,,,,,,"""Nefinansuojamas """,,,,,,Nefinansuojamas,Projektas nebus finansuojamas dėl įvairių priežasčių
-,,,,,,,"""Vertinimas""",,,,,,Vertinimas,Projekto anketa yra užpildyta ir duomenys yra vertinami
-,,,,,,,"""Paraiškos dokumentų tikslinimas""",,,,,,Paraiškos dokumentų tikslinimas,
-,,,,,,,"""Paraiškos tikslinimas ekspertams""",,,,,,Paraiškos tikslinimas ekspertams,
-,,,,,,,"""Laukiantis rezerve""",,,,,,Laukiantis rezerve,"Projekto anketa neperduota vykdymui, tačiau nėra atmesta"
-,,,,,,,"""Sąmatos pildymas""",,,,,,Sąmatos pildymas,Būsimų projekto išlaidų pildymas
-,,,,,,,"""Sutarties ruošimas""",,,,,,Sutarties ruošimas,Projekto sutarties ruošimas
-,,,,,,,"""Sąmatos tikslinimas""",,,,,,Sąmatos tikslinimas,Būsimų projekto išlaidų tikslinimas
-,,,,,,,"""Pasirašymas""",,,,,,Pasirašymas,Projekto sutarties pasirašymas
-,,,,,,,"""Vykdymas""",,,,,,Vykdymas,Projekto vykdymas
-,,,,,,,"""Tvirtinimas""",,,,,,Tvirtinimas,Projekto pabaigimo būsenos tvirtinimas
-,,,,,,,"""Sustabdytas""",,,,,,Sustabdytas,Projekto vykdymas yra sustabdytas
-,,,,,,,"""Nutrauktas""",,,,,,Nutrauktas,Projekto vykdymas yra nutrauktas
-,,,,,,,"""Pabaigtas""",,,,,,Pabaigtas,Projekto vykdymas yra pabaigtas
-,,,,,,,"""Archyvas""",,,,,,Archyvas,
+,,,,,,enum,,,"""Tikrinimas""",,,,Tikrinimas,Projekto paraiška pateikta tikrinimui
+,,,,,,,,,"""Nefinansuojamas """,,,,Nefinansuojamas,Projektas nebus finansuojamas dėl įvairių priežasčių
+,,,,,,,,,"""Vertinimas""",,,,Vertinimas,Projekto anketa yra užpildyta ir duomenys yra vertinami
+,,,,,,,,,"""Paraiškos dokumentų tikslinimas""",,,,Paraiškos dokumentų tikslinimas,
+,,,,,,,,,"""Paraiškos tikslinimas ekspertams""",,,,Paraiškos tikslinimas ekspertams,
+,,,,,,,,,"""Laukiantis rezerve""",,,,Laukiantis rezerve,"Projekto anketa neperduota vykdymui, tačiau nėra atmesta"
+,,,,,,,,,"""Sąmatos pildymas""",,,,Sąmatos pildymas,Būsimų projekto išlaidų pildymas
+,,,,,,,,,"""Sutarties ruošimas""",,,,Sutarties ruošimas,Projekto sutarties ruošimas
+,,,,,,,,,"""Sąmatos tikslinimas""",,,,Sąmatos tikslinimas,Būsimų projekto išlaidų tikslinimas
+,,,,,,,,,"""Pasirašymas""",,,,Pasirašymas,Projekto sutarties pasirašymas
+,,,,,,,,,"""Vykdymas""",,,,Vykdymas,Projekto vykdymas
+,,,,,,,,,"""Tvirtinimas""",,,,Tvirtinimas,Projekto pabaigimo būsenos tvirtinimas
+,,,,,,,,,"""Sustabdytas""",,,,Sustabdytas,Projekto vykdymas yra sustabdytas
+,,,,,,,,,"""Nutrauktas""",,,,Nutrauktas,Projekto vykdymas yra nutrauktas
+,,,,,,,,,"""Pabaigtas""",,,,Pabaigtas,Projekto vykdymas yra pabaigtas
+,,,,,,,,,"""Archyvas""",,,,Archyvas,
 ,,,,,gauta_suma,number,,,,4,open,,Gauta suma,Gauta suma projektui įgyvendinti
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,isleista_suma,number,,,,4,open,,Išleista suma,Viso projekto eigos metu išleista suma
