@@ -38,7 +38,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,planuojamas_leidimo_galiojimas_iki,date,D,,,4,open,,Leidimo planuojama galiojimo pabaiga,
 ,,,,,darbai_baigti,boolean,,,,4,open,,Identifikatorius ar darbai pagal leidimą baigti,
 ,,,,,leidimo_tipas,string,,,,4,open,,Leidimo tipas,
-,,,,,,enum,,,"""KasinejimoDarbai.VykdytiZemesDarbus",,,,Licencija išduota vykdyti žemės darbams,
+,,,,,,enum,,,"""KasinejimoDarbai.VykdytiZemesDarbus""",,,,Licencija išduota vykdyti žemės darbams,
 ,,,,,,,,,"""KasinejimoDarbai.AtitvertiDaliViesojoNaudojimoTeritorijos""",,,,Licencija išduota atitverti dalį viešojo naudojimo teritorijos,
 ,,,,,leidimo_numeris,string,,,,4,open,,Leidimo numeris,
 ,,,,,juridinio_asmens_kodas,string,,,,4,open,,"Juridinio asmens, kuriam išduota leidimas, kodas",
