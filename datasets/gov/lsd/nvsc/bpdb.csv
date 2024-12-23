@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/vpt/nvsc,,,,,,,,,,,,Biocidinių produktų duomenys,"Nacionalinio visuomenės sveikatos centro naudojamoje Biocidinių produktų duomenų bazėje (toliau – BPDB) nuo 1999 m. balandžio 12 d. kaupiami duomenys apie biocidinius produktus ir jiems išduotus biocidinių produktų autorizacijos liudijimus. Rinkinys sudarytas iš lentelių „Produktai“, „Produktų veikliosios medžiagos“ ir „Produktų liudijimai“. Svarbu atkreipti dėmesį, kad tai nėra oficialūs statistiniai duomenys, todėl gali būti netikslumų. Duomenų teikėjas – Nacionalinis visuomenės sveikatos centras. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Produktas,,,produkto_id,,,,,,Produktai,"Lentelė „Produktai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, pavadinimas, gamintojas, autorizacijos liudijimo sąlygos ir pastabos. Produktų pastabos aktualios tik produktams su galiojančiais autorizacijos liudijimais. Vienas įrašas atitinka vieną produktą."
+,,,,,produkto_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,produkto_pav,string,,,,2,open,,Pavadinimas,
+,,,,,produkto_gamintojas,string,,,,2,open,,Gamintojas,
+,,,,,autorizacijos_liudijimo_salygos,string,,,,2,open,,"Sąlygos, pagal kurias suteiktas autorizacijos liudijimas produktui",
+,,,,,pastaba,string,,,,2,open,,"Pastabos, aktualios tik produktams su galiojančiais autorizacijos liudijimais",
+,,,,,,,,,,,,,,
+,,,,VeikliojiMedziaga,,,vda_prime_key,,,,,,,
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,"Lentelė „Produktų veikliosios medžiagos“. Lentelę sudaro: negrįžtamai šifruoti produkto ir medžiagos identifikatoriai, medžiagos CAS numeris, pavadinimas ir koncentracija. Vienas įrašas atitinka vieną produkto ir vienos veikliosios medžiagos kombinaciją. Kadangi viename produkte gali būti kelios veikliosios medžiagos, to paties produkto įrašas kartojasi tiek kartų, kiek jame yra veikliųjų medžiagų, ir kiekvienas to paties produkto įrašas atitinka to paties produkto ir skirtingos veikliosios medžiagos kombinaciją. Pvz., jeigu produkte yra 3 veikliosios medžiagos, to paties produkto įrašas kartotis atitinkamai 3 kartus."
+,,,,,produkto_id,string,,,,4,open,,Išorinis raktas į produktą,
+,,,,,medziagos_id,string,,,,4,open,,Išorinis raktas į veikliąją medžiagą,
+,,,,,medziagos_cas_nr,string,,,,4,open,,Veikliosios medžiagos CAS numeris,
+,,,,,medziagos_pav,string,,,,3,open,,Veikliosios medžiagos pavadinimas,
+,,,,,medziagos_konc,number,%,,,4,open,,Veikliosios medžiagos koncentracija produkte,
+,,,,,,,,,,,,,,
+,,,,Liudijimas,,,vda_prime_key,,,,,,Produktų liudijimai,"Lentelė „Produktų liudijimai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, liudijimo numeris, liudijimą gavęs asmuo (liudijimo turėtojas) ir liudijimo išdavimo bei galiojimo pabaigos data. Vienas įrašas atitinka vieną produkto ir liudijimo kombinaciją."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,produkto_id,string,,,,4,open,,Išorinis raktas į produktą,
+,,,,,liudijimo_nr,string,,,,4,open,,Liudijimo numeris,
+,,,,,liudijima_gaves_asm,string,,,,2,open,,Liudijimo turėtojas,
+,,,,,liudijimo_isdavimo_data,date,D,,,4,open,,Išdavimo data,
+,,,,,liudijimas_galioja_iki,date,D,,,4,open,,Galiojimo pabaigos data,
