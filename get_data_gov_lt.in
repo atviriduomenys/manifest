@@ -324,6 +324,7 @@ datasets/gov/vstt/natura2000.csv
 datasets/gov/vstt/lankytoju_monitoringas.csv
 datasets/gov/aaa/vandens_naudojimas.csv
 datasets/gov/rsc/vezimo_leidimai.csv
+datasets/gov/lsd/nvsc/bpdb.csv
 datasets/gov/nvsc/uzkreciamos_ligos/sukelejai.csv
 datasets/gov/nvsc/uzkreciamos_ligos/atvejai.csv
 datasets/gov/aaa/atlieku_tvarkymas.csv
