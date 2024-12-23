@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/siauliu_m_sav/leidimu_administravimas,,,,,,,,,,,,Šiaulių miesto savivaldybės išduoti leidimai,Informacija apie Šiaulių miesto savivaldybės išduotus leidimus fiziniams ir juridinimas asmenims
+,datasets/gov/siauliu_m_sav/leidimu_administravimas,,,,,,,,,,,,Šiaulių miesto savivaldybės išduoti leidimai,Informacija apie Šiaulių miesto savivaldybės išduotus leidimus fiziniams ir juridiniams asmenims
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,ZemesDarbai,,,leidimo_id,,,4,,,Šiaulių miesto savivaldybės išduoti leidimai žemės darbams,Informacija apie Šiaulių miesto savivaldybės išduotus leidimus žemės darbams
 ,,,,,leidimo_id,string,,,,4,open,,Leidimo identifikatorius,
 ,,,,,adresas,string,,,,4,open,,Adresas,
-,,,,,priezastis_zemes_darbams,string,,,,4,open,,"Priežastis, kodėl buvo pradėti žemės darbai",
+,,,,,priezastis_zemes_darbams_lt,string,,,,4,open,,"Priežastis, kodėl buvo pradėti žemės darbai",
 ,,,,,,comment,type,,"update(property: ""priezastis_zemes_darbams_lt@lt"", type: ""text"")",,,spinta:204,,
 ,,,,,ilguma,number,,,,4,open,,Ilguma,
 ,,,,,platuma,number,,,,4,open,,Platuma,
@@ -54,7 +54,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Fizinis asmuo""",,,,Fizinis asmuo Lietuvos pilietis,
 ,,,,,,,,,"""Kita""",,,,Nenustatytas asmuo,
 ,,,,,,,,,,,,,,
-,,,,PrekybosTaskai,,,leidimo_id,,,4,,,Šiaulių miesto savivaldybės išduoti leidimai kioskams ir pavilionams,Informacija apie Šiaulių miesto savivaldybės išduotus leidimus kioskams ir pavilionams
+,,,,PrekybosTaskas,,,leidimo_id,,,4,,,Šiaulių miesto savivaldybės išduoti leidimai kioskams ir paviljonams,Informacija apie Šiaulių miesto savivaldybės išduotus leidimus kioskams ir paviljonams
 ,,,,,leidimo_id,string,,,,4,open,,Leidimo identifikatorius,
 ,,,,,veiklos_tipas,string,,,,4,open,,Veiklos tipas,
 ,,,,,,enum,,,"""PrekybaNeMaistoProduktais""",,,,Prekyba ne maisto produktais,
@@ -63,7 +63,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimas_galioja_nuo,date,D,,,4,open,,Leidimo galiojimo pradžia,
 ,,,,,leidimas_galioja_iki,date,D,,,4,open,,Leidimo galiojimo pabaiga,
 ,,,,,leidimo_tipas,string,,,,4,open,,Leidimo tipas,
-,,,,,,enum,,,"""KioskaiPavilijonai.Pavilijonai""",,,,Pavilijonai,
+,,,,,,enum,,,"""KioskaiPavilijonai.Pavilijonai""",,,,Paviljonai,
 ,,,,,,,,,"""KioskaiPavilijonai.Kioskai""",,,,Kioskai,
 ,,,,,,,,,"""KioskaiPavilijonai.LaukoKavinė""",,,,Lauko kavinė,
 ,,,,,leidimo_numeris,string,,,,4,open,,Leidimo numeris,
