@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+datasets/gov/karatc,,,,,,,,,,,,,VšĮ Kauno regiono atliekų tvarkymo centras,
+datasets/gov/karatc/krec,,,,,,,,,,,,,VšĮ Kauno regiono atliekų tvarkymo centro sutartys,"""Rinkinys apima VšĮ Kauno regiono atliekų tvarkymo centro įvairių sutarčių registrus (duomenys nuo 2021- 2023 metų – vienkartiniai duomenys"""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Sutartis,,,vda_id,,,4,,,VšĮ Kauno regiono atliekų tvarkymo centro sutarčių duomenys,"""Rinkinys apima VšĮ Kauno regiono atliekų tvarkymo centro įvairių sutarčių registrus (duomenys nuo 2021- 2023 metų – vienkartiniai duomenys, nebus naujinami): Atliekų priėmimo į Kauno MBA ir Zabieliškio MAR sutarčių registre kaupiami duomenys apie sudarytas sutartis, Atliekų priėmimo į Lapių ir Zabieliškio regioninius sąvartynus trišalių sutarčių registre kaupiami duomenys apie sudarytas trišales sutartis, Atliekų priėmimo į Zabieliškio ir Lapių regioninį sąvartyną sutarčių registre saugomi duomenys apie sudarytas sutartis, Asbesto turinčių statybinių atliekų priėmimo į Zabieliškio ir Lapių regioninį sąvartyną sutarčių registre kaupiami duomenys apie sudarytas sutartis, Atliekų priėmimo į žaliųjų atliekų kompostavimo aikšteles sutarčių su juridiniais asmenimis registre kaupiami duomenys apie sudarytas sutartis. VšĮ Kauno regiono atliekų tvarkymo centro sutarčių su kitomis šalimis registro duomenys - Ūkinės sutartys Rinkinyje pateikiama sutarties metai, sutarčių kiekis ir duomenų šaltinis - registro pavadinimas"""
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,metai,date,Y,,,4,open,,Sutarčių metai,
+,,,,,duomenu_saltinis,string,,,,4,open,,Duomenų šaltinis - sutarčių registras,
+,,,,,sutarciu_sk,number,,,,4,open,,Sutarčių skaičius,
