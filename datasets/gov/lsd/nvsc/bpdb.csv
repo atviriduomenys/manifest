@@ -4,22 +4,22 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Produktas,,,produkto_id,,,,,,Produktai,"Lentelė „Produktai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, pavadinimas, gamintojas, autorizacijos liudijimo sąlygos ir pastabos. Produktų pastabos aktualios tik produktams su galiojančiais autorizacijos liudijimais. Vienas įrašas atitinka vieną produktą."
+,,,,Produktas,,,produkto_id,,,4,,,Produktai,"Lentelė „Produktai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, pavadinimas, gamintojas, autorizacijos liudijimo sąlygos ir pastabos. Produktų pastabos aktualios tik produktams su galiojančiais autorizacijos liudijimais. Vienas įrašas atitinka vieną produktą."
 ,,,,,produkto_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,produkto_pav,string,,,,2,open,,Pavadinimas,
 ,,,,,produkto_gamintojas,string,,,,2,open,,Gamintojas,
 ,,,,,autorizacijos_liudijimo_salygos,string,,,,2,open,,"Sąlygos, pagal kurias suteiktas autorizacijos liudijimas produktui",
 ,,,,,pastaba,string,,,,2,open,,"Pastabos, aktualios tik produktams su galiojančiais autorizacijos liudijimais",
 ,,,,,,,,,,,,,,
-,,,,VeikliojiMedziaga,,,vda_prime_key,,,,,,,
-,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,"Lentelė „Produktų veikliosios medžiagos“. Lentelę sudaro: negrįžtamai šifruoti produkto ir medžiagos identifikatoriai, medžiagos CAS numeris, pavadinimas ir koncentracija. Vienas įrašas atitinka vieną produkto ir vienos veikliosios medžiagos kombinaciją. Kadangi viename produkte gali būti kelios veikliosios medžiagos, to paties produkto įrašas kartojasi tiek kartų, kiek jame yra veikliųjų medžiagų, ir kiekvienas to paties produkto įrašas atitinka to paties produkto ir skirtingos veikliosios medžiagos kombinaciją. Pvz., jeigu produkte yra 3 veikliosios medžiagos, to paties produkto įrašas kartotis atitinkamai 3 kartus."
+,,,,VeikliojiMedziaga,,,vda_prime_key,,,4,,,Produktų veikliosios medžiagos,"Lentelė „Produktų veikliosios medžiagos“. Lentelę sudaro: negrįžtamai šifruoti produkto ir medžiagos identifikatoriai, medžiagos CAS numeris, pavadinimas ir koncentracija. Vienas įrašas atitinka vieną produkto ir vienos veikliosios medžiagos kombinaciją. Kadangi viename produkte gali būti kelios veikliosios medžiagos, to paties produkto įrašas kartojasi tiek kartų, kiek jame yra veikliųjų medžiagų, ir kiekvienas to paties produkto įrašas atitinka to paties produkto ir skirtingos veikliosios medžiagos kombinaciją. Pvz., jeigu produkte yra 3 veikliosios medžiagos, to paties produkto įrašas kartotis atitinkamai 3 kartus."
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,produkto_id,string,,,,4,open,,Išorinis raktas į produktą,
 ,,,,,medziagos_id,string,,,,4,open,,Išorinis raktas į veikliąją medžiagą,
 ,,,,,medziagos_cas_nr,string,,,,4,open,,Veikliosios medžiagos CAS numeris,
 ,,,,,medziagos_pav,string,,,,3,open,,Veikliosios medžiagos pavadinimas,
 ,,,,,medziagos_konc,number,%,,,4,open,,Veikliosios medžiagos koncentracija produkte,
 ,,,,,,,,,,,,,,
-,,,,Liudijimas,,,vda_prime_key,,,,,,Produktų liudijimai,"Lentelė „Produktų liudijimai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, liudijimo numeris, liudijimą gavęs asmuo (liudijimo turėtojas) ir liudijimo išdavimo bei galiojimo pabaigos data. Vienas įrašas atitinka vieną produkto ir liudijimo kombinaciją."
+,,,,Liudijimas,,,vda_prime_key,,,4,,,Produktų liudijimai,"Lentelė „Produktų liudijimai“. Lentelę sudaro: negrįžtamai šifruotas produkto identifikatorius, liudijimo numeris, liudijimą gavęs asmuo (liudijimo turėtojas) ir liudijimo išdavimo bei galiojimo pabaigos data. Vienas įrašas atitinka vieną produkto ir liudijimo kombinaciją."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,produkto_id,string,,,,4,open,,Išorinis raktas į produktą,
 ,,,,,liudijimo_nr,string,,,,4,open,,Liudijimo numeris,
