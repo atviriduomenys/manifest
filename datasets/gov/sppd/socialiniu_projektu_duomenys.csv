@@ -9,7 +9,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,priemones_id,ref,Priemone[priemones_id],,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
 ,,,,,vda_projekto_kodas,string,,,,4,open,,Projekto kodas,Projekto kodas sudarytas iš priemonės trumpinio bei skaičiaus atitinkančio projektų eilės tvarką
 ,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"
-,,,,,pareiskejo_tinklalapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
+,,,,,pareiskejo_tinklapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
 ,,,,,pareiskejo_adresas,string,,,,4,open,,Fizinis adresas,Pareiškėjo nurodytas organizacijos adresas
 ,,,,,pareiskejo_pasto_kodas,string,,,,4,open,,Pašto kodas,Nurodyto adreso pašto kodas
 ,,,,,vda_geo_pasto_kodas,string,,,,4,open,,Koordinačių pašto kodas,Pašto kodas išimtas iš nurodytų koordinačių
@@ -50,6 +50,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,isleista_suma,number,,,,4,open,,Išleista suma,Viso projekto eigos metu išleista suma
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,paskutinio_mokejimo_data,date,D,,,4,open,,Paskutinio mokėjimo data,Data kuomet buvo atliktas paskutinis mokėjimas
 ,,,,,,,,,,,,,,
 ,,,,Priemone,,,vda_id,,,4,,,Priemonių skirtų projektams įgyvendinti duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
