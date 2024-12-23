@@ -13,6 +13,6 @@ datasets/gov/karatc/krec,,,,,,,,,,,,,VšĮ Kauno regiono atliekų tvarkymo centr
 • VšĮ Kauno regiono atliekų tvarkymo centro sutarčių su kitomis šalimis registro duomenys - Ūkinės sutartys
 Rinkinyje pateikiama sutarties metai, sutarčių kiekis ir duomenų šaltinis - registro pavadinimas"""
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,metai,date,Y,,,4,open,,Starčių metai,
+,,,,,metai,date,Y,,,4,open,,Sutarčių metai,
 ,,,,,duomenu_saltinis,string,,,,4,open,,Duomenų šaltinis - sutarčių registras,
 ,,,,,sutarciu_sk,number,,,,4,open,,Sutarčių skaičius,
