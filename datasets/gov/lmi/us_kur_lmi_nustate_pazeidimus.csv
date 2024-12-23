@@ -3,11 +3,17 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,UkioSubjNustatytPazeidimas,,,patikrinimo_akto_kodas,,,4,,,"Ūkio subjektai, kuriuose nustatyti Lietuvos metrologijos inspekcijos reikalavimų pažeidimai ","Duomenų rinkinyje pateikiama informacija apie ūkio subjektus, juridinius ir fizinius (įskaitant ūkininkus) asmenis, kurių vykdomoje veikloje naudojamų matavimo priemonių arba fasuotų prekių patikrinimo metu Lietuvos metrologijos inspekcija nustatė pažeidimus. Fizinių asmenų duomenys yra užšifruoti. Jeigu įmonės kodas yra negaliojantis, įmonės kodo ir pavadinimo stulpeliai yra šifruojami. Taip pat, jeigu pažeidimą įvykdžiusios įmonės kodas nurodytas klaidingai, įmonės pavadinimo ir kodo stulpeliai gali būti užšifruoti. Ekonominės veiklos rūšių klasifikatoriaus (EVRK) kodai pateikti pagal EVRK 2 redakciją. Viena duomenų rinkinio eilutė atitinka vieną pažeidimą. "
-,,,,,patikrinimo_akto_kodas,string,,,,4,open,,"Patikrinimo akto kodas, unikalus eilutės įrašo identifikatorius",Geografinė aprėptis – visa Lietuva. 
-,,,,,patikrinimo_data,date,D,,,4,open,,"Data, kada buvo atliktas patikrinimas",Duomenų aprėptis – nuo 2020 metų sausio 1 d. 
-,,,,,kas_buvo_tikrinama,string,,,,4,open,,Kas buvo tikrinama (matavimo priemonės ar fasuotos prekės),Duomenų teikėjas – Lietuvos metrologijos inspekcija. 
-,,,,,,enum,,,"""Matavimo priemonės""",,,,Buvo tikrintos matavimo priemonės,Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
+,,,,UkioSubjNustatytPazeidimas,,,patikrinimo_akto_kodas,,,4,,,"Ūkio subjektai, kuriuose nustatyti Lietuvos metrologijos inspekcijos reikalavimų pažeidimai ","Duomenų rinkinyje pateikiama informacija apie ūkio subjektus, juridinius ir fizinius (įskaitant ūkininkus) asmenis, kurių vykdomoje veikloje naudojamų matavimo priemonių arba fasuotų prekių patikrinimo metu Lietuvos metrologijos inspekcija nustatė pažeidimus. Fizinių asmenų duomenys yra užšifruoti. Jeigu įmonės kodas yra negaliojantis, įmonės kodo ir pavadinimo stulpeliai yra šifruojami. Taip pat, jeigu pažeidimą įvykdžiusios įmonės kodas nurodytas klaidingai, įmonės pavadinimo ir kodo stulpeliai gali būti užšifruoti. Ekonominės veiklos rūšių klasifikatoriaus (EVRK) kodai pateikti pagal EVRK 2 redakciją. Viena duomenų rinkinio eilutė atitinka vieną pažeidimą. 
+
+Geografinė aprėptis – visa Lietuva. 
+Duomenų aprėptis – nuo 2020 metų sausio 1 d. 
+Duomenų teikėjas – Lietuvos metrologijos inspekcija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
+,,,,,patikrinimo_akto_kodas,string,,,,4,open,,"Patikrinimo akto kodas, unikalus eilutės įrašo identifikatorius", 
+,,,,,patikrinimo_data,date,D,,,4,open,,"Data, kada buvo atliktas patikrinimas",
+,,,,,kas_buvo_tikrinama,string,,,,4,open,,Kas buvo tikrinama (matavimo priemonės ar fasuotos prekės),
+,,,,,,enum,,,"""Matavimo priemonės""",,,,Buvo tikrintos matavimo priemonės,
 ,,,,,,,,,"""Fasuotos prekės""",,,,Buvo tikrintos fasuotos prekės,
 ,,,,,patikrinta_mp_ukio_subj_uzsakymu,integer,U,,,4,open,,"Matavimo priemonių skaičius, kurioms buvo atlikta privalomoji metrologinė patikra, užsakyta ūkio subjekto/įmonės, gavus Lietuvos metrologijos inspekcijos pranešimą apie artėjantį patikrinimą",
 ,,,,,patikrinta_mp_patikros_metu,integer,U,,,4,open,,Patikros metu patikrintų matavimo priemonių skaičius,
