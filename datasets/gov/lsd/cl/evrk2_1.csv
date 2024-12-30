@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,,,,,,,,,,,,,,
+,datasets/gov/vda/cl/evrk,,,,,,,,,,,,Ekonominės veiklos klasifikatorius versija 2.1,Ekonominės veiklos klasifikatorius versija 2.1
+,,,,,,prefix,skos,,,,,http://www.w3.org/2004/02/skos/core#,,
+,,,,,,,,,,,,,,
+,,,,EkonominesVeiklosRusis,,,,,,,,,Ekonominės veikos rūšis (EVRK2.1),
+,,,,,kodas,string,,,,4,open,,EVRK kodas,
+,,,,,pavadinimas_lt,string,,,,2,open,,Pavadinimas lietuviškai,
+,,,,,pavadinimas_en,string,,,,2,open,,Pavadinimas angliškai,
+,,,,,pastabos_lt,string,,,,2,open,,Aiškinamosios pastabos lietuviškai,
+,,,,,pastabos_en,string,,,,2,open,,Aiškinamosios pastabos angliškai,
