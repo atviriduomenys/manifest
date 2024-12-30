@@ -32,7 +32,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ilguma,number,,,,4,open,,Ilguma,
 ,,,,,platuma,number,,,,4,open,,Platuma,
 ,,,,,iskastos_zemes_kiekis,number,,,,4,open,,Iškastos žemės kiekis,
-,,,,,pasalintos_zemes_kiekis,string,,,,4,open,,Pašalintos žemės kiekis,
+,,,,,pasalintos_zemes_kiekis_lt,string,,,,4,open,,Pašalintos žemės kiekis,
 ,,,,,,comment,type,,"update(property: ""pasalintos_zemes_kiekis_lt@lt"", type: ""text"")",,,spinta:204,,
 ,,,,,leidimas_galioja_nuo,date,D,,,4,open,,Leidimo galiojimo pradžia,
 ,,,,,planuojamas_leidimo_galiojimas_iki,date,D,,,4,open,,Leidimo planuojama galiojimo pabaiga,
