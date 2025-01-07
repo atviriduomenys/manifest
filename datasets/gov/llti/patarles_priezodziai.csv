@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/llti/patarles_priezodziai,,,,,,,,,,,,Patarlių ir priežodžių elektroninis sąvadas,"Rinkinyje pateikiami duomenys iš Lietuvių literatūros ir tautosakos instituto Patarlių ir priežodžių elektroninio sąvado (eLPP). Jo pagrindas – Lietuvių literatūros ir tautosakos instituto sisteminės Patarlių ir priežodžių kartotekos duomenys. Kiekvienos patarlės ar priežodžio variantai sutelkiami į tipus, vienijamus panašių motyvų. Daugiau informacijos rasite <https://elpp.archyvas.llti.lt/lt/savadas>."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,Tipas,,,tipo_id,,,4,,,Patarlės ir priežodžiai,"Lietuvių patarlių ir priežodžių tipų sąrašas. Tipas – tai populiariausias ar reprezentatyviausias, į svarbiausius rinkinius įtrauktas lietuviškos patarlės arba priežodžio variantas. Tipų antraštės (pavadinimai) pateikiamos su atraminiais žodžiais, interpretacija, vertimu į anglų, vokiečių bei rusų kalbas, variantų skaičiumi, sąsajomis su kitais tipais ir nuoroda į atitinkamo tipo puslapį Lietuvių literatūros ir tautosakos instituto patarlių ir priežodžių elektroniniame sąvade <https://elpp.archyvas.llti.lt/lt>. Ta pati tipų antraštė gali pasikartoti tarp kelių susijusių tipų ir paprastai tuomet turi skirtingus variantų (kurie šioje lentelėje nepateikiami) atraminius žodžius. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,tipo_id,string,,,,4,open,,Tipo identifikatorius,
+,,,,,tipo_antraste,string,,,,4,open,,Tipo antraštė,
+,,,,,frml_atraminis_zodis,string,,,,4,open,,Formalusis atraminis žodis,
+,,,,,smnt_atraminis_zodis,string,,,,4,open,,Semantinis atraminis žodis,
+,,,,,interpretacija,string,,,,4,open,,Interpretacija lietuvių kalba,
+,,,,,interpretacija_en,string,,,,4,open,,Interpretacija anglų kalba,
+,,,,,vertimas_en,string,,,,4,open,,Vertimas į anglų kalbą,
+,,,,,vertimas_de,string,,,,4,open,,Vertimas į vokiečių kalbą,
+,,,,,vertimas_ru,string,,,,4,open,,Vertimas į rusų kalbą,
+,,,,,pastabos,string,,,,4,open,,Pastabos,
+,,,,,variantu_skaicius_orig,integer,,,,4,open,,Variantų originalus skaičius,
+,,,,,variantu_skaicius,integer,,,,4,open,,Variantų atnaujintas skaičius,
+,,,,,tipo_id_nuoroda,ref,Tipas[tipo_id],,,4,open,,Išsamesnį aprašą turinčio panašaus tipo identifikatorius,
+,,,,,susijusiu_tipu_id,string,,,,4,open,,Susijusių tipų identifikatoriai,
+,,,,,savado_url,string,url,,,4,open,,Žiniatinklio puslapis „Patarlių ir priežodžių elektroniniame sąvade“,
