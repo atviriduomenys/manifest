@@ -17,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,variantu_skaicius,integer,,,,4,open,,Variantų atnaujintas skaičius,
 ,,,,,tipo_id_nuoroda,ref,Tipas[tipo_id],,,4,open,,Išsamesnį aprašą turinčio panašaus tipo identifikatorius,
 ,,,,,susijusiu_tipu_id,string,,,,4,open,,Susijusių tipų identifikatoriai,
-,,,,,savado_url,string,url,,,4,open,,Žiniatinklio puslapis „Patarlių ir priežodžių elektroniniame sąvade“,
+,,,,,savado_url,url,,,,4,open,,Žiniatinklio puslapis „Patarlių ir priežodžių elektroniniame sąvade“,
