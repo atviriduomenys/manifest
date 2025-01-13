@@ -386,6 +386,7 @@ datasets/gov/nma/ti_informacija_2020.csv
 datasets/gov/nma/ti_informacija_2021.csv
 datasets/gov/nma/ti_paseliai_2020.csv
 datasets/gov/nma/ti_paseliai_2021.csv
+datasets/gov/nma/konsultavimo_paslaugos.csv
 datasets/gov/migracija/draudimai_atvykti.csv
 datasets/gov/migracija/lt_pilietybe.csv
 datasets/gov/aaa/isleid_perd_tersalai.csv
@@ -822,3 +823,5 @@ datasets/gov/sppd/socialiniu_projektu_duomenys.csv
 datasets/gov/siauliu_m_sav/leidimu_administravimas.csv
 datasets/gov/karatc/krec/sutartys.csv
 datasets/gov/lmi/us_kur_lmi_nustate_pazeidimus.csv
+datasets/gov/lsd/cl/evrk2_1.csv
+datasets/gov/llti/patarles_priezodziai.csv
