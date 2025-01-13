@@ -471,7 +471,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,,,,,"""Bendraklinikiniai""",,,,Bendraklinikiniai,
 ,,,,,,,,,"""Biochemija""",,,,Biochemija,
 ,,,,,tyrimo_data,date,D,,,4,open,,Tyrimo data dienos tikslumu,
-,,,,,tyrimo_meginio_tipas,string,,,,,,,Tyrimo mėginio tipas,
+,,,,,tyrimo_meginio_tipas,string,,,,4,open,,Tyrimo mėginio tipas,
 ,,,,,,enum,,,"""Kraujas""",,,,Kraujas,
 ,,,,,,,,,"""Šlapimas""",,,,Šlapimas,
 ,,,,,,,,,"""Serumas""",,,,Serumas,
