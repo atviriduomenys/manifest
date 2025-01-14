@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/asmlis,,,,,ns,,,,,,,MOKESTA ir ASMLIS sistemos,Savivaldybių MOKESTA ir ASMLIS sistemų duomenys
+,datasets/gov/asmlis/marsrutai,,,,,,,,,,,,Šiukšliavežių maršrutai,"Duomenų rinkinyje pateikiami šiukšliavežių maršrutų duomenys: šifruotas automobilio valstybinis numeris, automobilio markė, laikas ir koordinatės, nurodančios vietą, kurioje tuo metu buvo automobilis. "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,SalcininkuSiukliaveziuMarsrutai,,,vda_prime_key,,,4,,,Šalčininkų rajono šiukliavežių maršrutai,"Šalčininkų rajono savivaldybės administracijos informacinėje sistemoje MOKESTA kaupiami atliekų tvarkymo rinkliavų duomenys ir kitus duomenis. Duomenų rinkinyje pateikiami šiukšliavežių maršrutų duomenys:šifruotas automobilio valstybinis numeris, automobilio markė, laikas ir koordinatės, nurodančios vietą, kurioje tuo metu buvo automobilis. 
+
+Duomenų teikėjas – Šalčininkų rajono savivaldybės administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,marsrutas,string,,,,4,open,,Maršrutas,
+,,,,,automobilio_nr,string,,,,4,open,,Automobilio numeris (šifruotas),
+,,,,,marke,string,,,,4,open,,Automobilio markė,
+,,,,,data,datetime,S,,,4,open,,Data,
+,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,x_koord_lks,integer,,,,4,open,,X koordinatė LKS94 koordinačių sistemoje,
+,,,,,y_koord_lks,integer,,,,4,open,,Y koordinatė LKS94 koordinačių sistemoje,
+,,,,,tikslumas,number,,,,4,open,,TIklsumas,
+,,,,,koodinates_saltinis,string,,,,4,open,,"Koordinatės šaltinis (gps - navigaciją, foreign - išoriniai, kiti šaltiniai)",
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
