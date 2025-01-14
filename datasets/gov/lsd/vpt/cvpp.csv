@@ -7,7 +7,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Sutartis,,,dok_id,,,,,,Viešųjų pirkimų sutartys,"Viešųjų pirkimų sutarčių lentelė. Lentelė sudaryta iš dokumento bei vidinio sistemos identifikatorių, sutarties sekos, CPV kodo, sutarties tipo, registracijos numerio, sutarties numerio, pirkimo numerio, statuso, sutarties objekto rūšies, jo pavadinimo, sutarties vertės, sutarties faktinio įvykdymo datos ir vertės, dokumento sudarymo, registracijos, įvedimo ir išsiuntimo datų, sutarties formos tipo, sutarties turinio, registruoto subjekto bei sisteminio vartotojo identifikatorių bei požymių, ar sutartis importuota ir, ar tinka išsiuntimui. Vienas įrašas atitinka vieną sutarties dokumentą."
 ,,,,,dok_id,string,,,,4,open,,Pagrindinis identifikatorius,
 ,,,,,internal_id,string,,,,3,open,,Vidinis identifikatorius,
-,,,,,sequence,string,,,,3,open,,Seka,
 ,,,,,cpv_codes,string,,,,3,open,,Sutarties CPV kodas,
 ,,,,,dok_sut_tipas,boolean,,,,3,open,,Sutarties tipas,
 ,,,,,dok_reg_nr,integer,,,,3,open,,Sutarties registracijos numeris,
