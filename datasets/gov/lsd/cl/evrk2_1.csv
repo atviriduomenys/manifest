@@ -9,3 +9,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas_en,string,,,,2,open,,Pavadinimas angliškai,
 ,,,,,pastabos_lt,string,,,,2,open,,Aiškinamosios pastabos lietuviškai,
 ,,,,,pastabos_en,string,,,,2,open,,Aiškinamosios pastabos angliškai,
+,,,,,lygmens_pavadinimas,string,,,,2,open,,Aiškinamasis lygmens aprašas,
+,,,,,lygmuo,integer,,,,2,open,,Lygmens kodas,
