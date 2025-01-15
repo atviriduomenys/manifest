@@ -72,4 +72,4 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,asm_gyv_sav,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,asm_gyv_vieta,string,,,,4,open,,Asmens gyvenamoji vieta,
 ,,,,,asm_gyv_tipas,string,,,,4,open,,Gyvenvietės tipas,
-,,,,,prasymo_metai,integer,Y,,,4,open,,Prašymo teikimo metai,
+,,,,,prasymo_metai,integer,,,,4,open,,Prašymo teikimo metai,
