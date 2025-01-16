@@ -43,7 +43,7 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,savivaldybes_kodas,string,,,,4,open,,"Savivaldybės, į kurios profesinę mokyklą asmuo pateikė priėmimo prašymą, kodas",
 ,,,,,savivaldybe,string,,,,4,open,,Klasifikuojamai vertei atitinkančios 2 hierarchijos lygmens vertės tekstinė reikšmė (lietuvių kalba),
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,prasymo_id,,,4,,,Priėmimo prašymų į profesines mokyklas duomenys,"Lentelėje pateikiami priėmimo į profesinio mokymo įstaigas duomenys. Lentelės eilutės objektas – asmens priėmimo prašymas (prasymo_id). Nurodomas asmens identifikacinis numeris, programos pasirinkimo laiko žyma, priėmimo etapas ir etapo prašymų pateikimo termino data, asmens prašymo prioriteto numeris, programos identifikacinis numeris, mokymo programos finansavimo pobūdis; požymis, ar asmuo gavo pakvietimą į pasirinktą mokymo programą, bei mokymo sutarties pasirašymo ir sutarties nutraukimo data, jei nutraukimas įvyko iki mokslų pradžios."
+,,,,Prasymas,,,prasymo_id,,,4,,,Priėmimo prašymų į profesines mokyklas duomenys,"Lentelėje pateikiami priėmimo į profesinio mokymo įstaigas duomenys. Lentelės eilutės objektas – asmens priėmimo prašymas (prasymo_id). Nurodomas asmenį identifikuojantis numeris, programos pasirinkimo prioritetas ir laiko žyma, duomenys apie priėmimo etapą ir finansavimo pobūdį. Pateikiami požymiai, ar asmuo atitiko reikalavimus dalyvauti priėmimo konkurse, ar gavo pakvietimą į pasirinktą mokymo programą (kartu su pakvietimo data) ir ar pasirašė sutartį su mokymo įstaiga."
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikacinis numeris,
 ,,,,,asmens_id,string,,,,4,open,,Asmens identifikacinis numeris,
 ,,,,,pasirinkimo_data,datetime,S,,,4,open,,Mokymo programos pasirinkimo data,
