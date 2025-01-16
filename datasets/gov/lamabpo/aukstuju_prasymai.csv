@@ -9,7 +9,7 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,,,,,,,,,,,,
 ,,,,Programa,,,programos_id,,,4,,,Aukštojo mokslo programų duomenys,"Pateikiami aukštojo mokslo programų duomenys Lietuvos aukštojo mokslo įstaigose. Lentelės objektas – aukštojo mokslo įstaigos vykdoma mokymo programa pagal priėmimo metus. Nurodoma informacija apie mokymo programą: mokymo įstaiga, programos valstybinis kodas ir pavadinimas, mokymo programos vykdymo apskritis ir savivaldybė.",,
 ,,,,,programos_id,string,,,,4,open,,Programos identifikacinis numeris,,,
-,,,,,programos_metai,date,Y,,,4,open,,Programos identifikacinis numeris,,,
+,,,,,programos_metai,date,Y,,,4,open,,Laikotarpis, kuriam aktualūs duomenys apie mokymo programą,,,
 ,,,,,programos_valst_kodas,string,,,,4,open,,Mokymo programos kodas,,,
 ,,,,,programos_pavadinimas,string,,,,4,open,,Mokymo programos pavadinimas,,,
 ,,,,,istaigos_jar,string,,,,4,open,,Mokymo įstaigos JAR kodas,,,
