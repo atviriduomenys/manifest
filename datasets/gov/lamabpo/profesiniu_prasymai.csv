@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lamabpo,,,,,,,,,,,,Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimui organizuoti (LAMA BPO),
-,datasets/gov/lamabpo/profesines_mokyklos,,,,,,,,,,,,Priėmimo į profesinio mokymo įstaigas prašymų duomenys,"Rinkinyje pateikiama informacija apie 2024m. pateiktus priėmimo prašymus į profesinio mokymo įstaigas Lietuvoje. Rinkinį sudaro trys komponentai: 
-1.	Profesinio mokymo programų duomenys
-2.	Priėmimo prašymų duomenys
-3.	Priėmimo prašymus teikusių asmenų duomenys
+,datasets/gov/lamabpo/profesines_mokyklos,,,,,,,,,,,,Priėmimo į profesinio mokymo įstaigas prašymų duomenys,"Rinkinyje pateikiama informacija apie nuo 2024 m. pateiktus priėmimo prašymus į aukštojo mokslo įstaigas (akademijas, kolegijas, universitetus) Lietuvoje. Rinkinį sudaro trys komponentai: 
+1.	Aukštojo mokslo programų duomenys,
+2.	Priėmimo prašymų duomenys,
+3.	Priėmimo prašymus teikusių asmenų duomenys.
 Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimui organizuoti (LAMA BPO). Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
