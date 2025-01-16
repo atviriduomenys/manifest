@@ -938,7 +938,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Marijampole,,,vda_id,,,4,,,Marijampolės savivaldybės kapinėse palaidotų velionių duomenys,
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
-,,,,,kapo_id,strin,,,,4,open,,Kapavietės identifikatorius,
+,,,,,kapo_id,string,,,,4,open,,Kapavietės identifikatorius,
 ,,,,,ar_neatpazintas,boolean,,,,0,open,,Neatpažinto velionio požymis,
 ,,,,,ar_perlaidotas,boolean,,,,4,open,,"Požymis, ar velionis buvo perlaidotas",
 ,,,,,ar_urnoje,boolean,,,,4,open,,"Požymis, ar velionis palaidotas urnoje",
