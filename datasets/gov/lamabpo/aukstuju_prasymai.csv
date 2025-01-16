@@ -49,7 +49,7 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,Profilis,,,asmens_id,,,4,,,Priėmimo prašymus į aukštojo mokslo įstaigas teikusių asmenų profilai,"Lentelėje pateikiami sociodemografiniai duomenys apie asmenis, teikusius priėmimo prašymus į aukštojo mokslo įstaigas. Lentelės eilutės objektas – individualus asmuo, teikęs prašymą per priėmimo metus. Pažymėtina, jog priėmimo prašymus gali teikti ne tik Lietuvos Respublikos piliečiai, bet ir užsieniečiai. Nurodomi asmens gimimo metai, lytis bei požymis, ar asmuo galimai yra užsienietis. Prie lentelės taip pat prijungti duomenys iš gyventojų registro ir Nacionalinės švietimo agentūros, nurodantys asmens gyvenamąją vietą prašymo teikimo metu (savivaldybė, gyvenvietė ir gyvenvietės tipas. Gyvenvietė paslėpiama, jei joje gyvenančių asmenų, teikusių priėmimo prašymus, skaičius neviršija 10) ir instituciją, kurioje įgijo brandos atestatą. Atkreiptinas dėmesys, jog vyresnio amžiaus asmenų išsilavinimo duomenys gali būti neskaitmenizuoti, todėl išsilavinimo duomenys gali būti netikslūs.",,
 ,,,,,asmens_id,string,,,,4,open,,Asmens identifikacinis numeris,,,
 ,,,,,ar_galimai_uzsienietis,boolean,,,,4,open,,"Požymis, ar asmuo galimai yra užsienietis. Jeigu asmens priėmimo prašyme nepateiktas asmens kodas, tuomet daroma išvada, jog yra užsienietis. Tačiau šis požymis neapima užsieniečių asmenų, turinčių lietuvišką asmens kodą.",,,
-,,,,,gimimo_metai,date,D,,,4,open,,Asmens gimimo metai,,,
+,,,,,gimimo_metai,date,Y,,,4,open,,Asmens gimimo metai,,,
 ,,,,,lytis,string,,,,4,open,,Asmens lytis,,,
 ,,,,,,enum,,,"""vyras""",,,,,,,
 ,,,,,,,,,"""moteris""",,,,,,,
