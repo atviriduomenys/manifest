@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,,
-,datasets/gov/lamabpo/profesines_mokyklos,,,,,,,,,,,,Priėmimo į aukštojo mokslo įstaigas prašymų duomenys,"Rinkinyje pateikiama informacija apie nuo 2024 m. pateiktus priėmimo prašymus į aukštojo mokslo įstaigas (akademijas, kolegijas, universitetus) Lietuvoje. Rinkinį sudaro trys komponentai: 
+,datasets/gov/lamabpo/aukstosios_mokyklos,,,,,,,,,,,,Priėmimo į aukštojo mokslo įstaigas prašymų duomenys,"Rinkinyje pateikiama informacija apie nuo 2024 m. pateiktus priėmimo prašymus į aukštojo mokslo įstaigas (akademijas, kolegijas, universitetus) Lietuvoje. Rinkinį sudaro trys komponentai: 
 1.	Aukštojo mokslo programų duomenys,
 2.	Priėmimo prašymų duomenys,
 3.	Priėmimo prašymus teikusių asmenų duomenys.
