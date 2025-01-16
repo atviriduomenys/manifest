@@ -8,7 +8,7 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Programa,,,programos_id,,,4,,,Profesinio mokymo programų duomenys,"Pateikiami profesinio mokymo programų Lietuvos  duomenys profesinio mokymo įstaigose. Lentelės objektas – profesinio mokymo įstaigos vykdomos mokymo programos modulis vieno priėmimo etapo metu per vienerių metų laikotarpį. Nurodomi priėmimo etapo duomenys (metai, etapas) bei duomenys apie mokymo programą (mokymo įstaiga, filialas, programos pavadinimas, modulis, mokymo programos vykdymo apskritis ir savivaldybė, bei suteikiama kvalifikacija, baigus mokymo programą."
+,,,,Programa,,,programos_id,,,4,,,Profesinio mokymo programų duomenys,"Pateikiami profesinio mokymo programų duomenys Lietuvos profesinio mokymo įstaigose. Lentelės objektas – profesinio mokymo įstaigos vykdomos mokymo programos modulis vieno priėmimo etapo metu per vienerių metų laikotarpį. Nurodomi priėmimo etapo duomenys (metai ir etapas) ir duomenys apie mokymo programą (mokymo įstaiga, filialas, programos pavadinimas, modulis, mokymo programos vykdymo apskritis,savivaldybė ir suteikiama kvalifikacija, baigus mokymo programą)."
 ,,,,,programos_id,string,,,,4,open,,Programos identifikacinis numeris,
 ,,,,,programos_metai,date,Y,,,4,open,,"Laikotarpis, kuriam aktualūs duomenys apie mokymo programą",
 ,,,,,etapas,string,,,,4,open,,Prašymo teikimo etapas,
