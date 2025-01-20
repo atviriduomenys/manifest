@@ -18,4 +18,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,valgantis_padalinys,string,,,,4,open,,Valgančio padalinio pavadinimas,
 ,,,,,patiekalas,string,,,,4,open,,Atsargos pavadinimas,
 ,,,,,patiekalo_savikaina,number,,,,4,open,,Atsargos savikaina,
+,,,,,dietos_pavadinimas,string,,,,2,open,,Dietos pavadinimas,
 
