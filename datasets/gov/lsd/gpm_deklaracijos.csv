@@ -1,5 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lsd/gpm_deklaracijos,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Deklaracija,,,id,,,4,,,Gyventojų pajamų mokesčio deklaracijos,Gyventojų pajamų mokesčio deklaracijos
 ,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
@@ -8,6 +11,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paj_insert_date,date,D,,,4,open,,Įrašo data,
 ,,,,,paj_update_date,date,D,,,4,open,,Atnaujinta įrašo data,
 ,,,,,metai,integer,,,,3,open,,Mokestinio laikotarpio metai,
+,,,,,pajamu_suma,number,,,,2,open,,Gautos pajamos,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,isskaiciuotas_gpm,number,,,,2,open,,Išskaičiuotas gyventojų pajamų mokestis,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,paj_valst_paj,number,,,,3,open,,Valstybė kurioje gautos pajamos,
 ,,,,,pajamu_rusies_kodas,integer,,,,3,open,,Pajamų rūšies kodas,
 ,,,,,pajamu_rusis_aprasas,string,,,,3,open,,Pajamų rūšies kodo aprašas,
