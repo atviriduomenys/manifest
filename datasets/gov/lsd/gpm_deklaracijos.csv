@@ -28,4 +28,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pajamu_pobudis_pavadinimas,string,,,,3,open,,Pajamu pobūdis paaiškinimas,
 ,,,,,verslo_ld_kodas,string,,,,3,open,,Verslo liūdijomo kodas,
 ,,,,,verslo_ld_rusiu_pav,string,,,,3,open,,Verslo liūdijomo rūšies pavadinimas,
-
