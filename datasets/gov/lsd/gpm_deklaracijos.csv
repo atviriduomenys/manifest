@@ -15,6 +15,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,isskaiciuotas_gpm,number,,,,2,open,,Išskaičiuotas gyventojų pajamų mokestis,
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,paj_suma_pap,number,,,,2,open,,Su pajamomis tiesiogiai susijusi išlaidų suma,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,paj_gpm_kito,number,,,,2,open,,Pajamu gpm pakito,
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,paj_valst_paj,number,,,,3,open,,Valstybė kurioje gautos pajamos,
 ,,,,,pajamu_rusies_kodas,integer,,,,3,open,,Pajamų rūšies kodas,
 ,,,,,pajamu_rusis_aprasas,string,,,,3,open,,Pajamų rūšies kodo aprašas,
@@ -24,5 +28,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pajamu_pobudis_pavadinimas,string,,,,3,open,,Pajamu pobūdis paaiškinimas,
 ,,,,,verslo_ld_kodas,string,,,,3,open,,Verslo liūdijomo kodas,
 ,,,,,verslo_ld_rusiu_pav,string,,,,3,open,,Verslo liūdijomo rūšies pavadinimas,
-,,,,,paj_suma_pap,number,,,,3,open,,Su pajamomis tiesiogiai susijusi išlaidų suma ,
-,,,,,paj_gpm_kito,number,,,,3,open,,Pajamu gpm pakito,
+
