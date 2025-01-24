@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/telsiu_r_sav,,,,,ns,,,,,,,
+,datasets/gov/telsiu_r_sav,,,,,ns,,,,,,,,
 ,datasets/gov/telsiu_r_sav/priemimas,,,,,,,,,,,,Priėmimai į bendrojo ugdymo įstaigas Telšių r. savivaldybėje,"""Duomenų rinkinyje pateikiami moksleivių priėmimo į bendrojo ugdymo įstaigų klases Telšių savivaldybėje duomenys."""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
