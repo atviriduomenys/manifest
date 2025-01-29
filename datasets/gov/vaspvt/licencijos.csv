@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,asmuo_visuomene,integer,,,,2,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
 ,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
 ,,,,,,,,,,,,,,
-,,,,LicencijosVeiksmas,,,,,,3,,,Atlikti veiksmai su licencija,
+,,,,LicencijosVeiksmas,,,id,,,3,,,Atlikti veiksmai su licencija,
 ,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,id,integer,,,,4,open,,Atlikto veiksmo identifikatorius,
 ,,,,,veiksmas,integer,,,,2,open,,Atlikto veiksmo pavadiniams,
