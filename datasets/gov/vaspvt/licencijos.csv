@@ -110,7 +110,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,labor_tyrimo_id,string,,,,2,open,,Laboratorinio tyrimo identifikatorius,,
 ,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,,
 ,,,,,paslauga,string,,,,4,open,,Paslaugos identikatorius,,
-,,,,,eminys,integr,,,,4,open,,Ėminio identifikatorius,,
+,,,,,eminys,integer,,,,4,open,,Ėminio identifikatorius,,
 ,,,,,analite,integer,,,,4,open,,Analitės identifikatorius,,
 ,,,,,tyrimas,integer,,,,4,open,,Tyrimo identifikatorius,,
 ,,,,,,,,,,,,,,,
