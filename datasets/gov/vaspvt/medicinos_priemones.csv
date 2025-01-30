@@ -16,4 +16,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pradetas_naudoti,date,1Y,,,4,open,,Pradėjimo naudoti data,Medicinos priemonės naudojimo pradžios data
 ,,,,,naudojimas_nutrauktas,date,1D,,,4,open,,Naudojimas nutrauktas,"""Data, kada medicinos priemonės naudojimas buvo galutinai nutrauktas"""
 ,,,,,nutraukimo_priezastis_lt,string,,,,4,open,,Nutraukimo priežastis,"""Priežastis, kodėl medicinos priemonė nebenaudojama"""
-,,,,,,comment,type,,"update(property: ""nutraukimo_priezastis@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,,comment,type,,"update(property: ""nutraukimo_priezastis_lt"", type: ""text"")",4,open,spinta:204,,
