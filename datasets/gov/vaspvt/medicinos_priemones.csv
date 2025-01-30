@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,/datasets/gov/vaspvt/medicinos_priemones,,,,,,,,,,,,Sveikatos priežiūros įstaigų įsigytos medicininės priemonės,"""Duomenų rinkinyje pateikiami įrašai apie sveikatos priežiūros įstaigų įsigytas medicinines priemones. Viena eilutė atitinka vieną įsigytą priemonę. Įrašai apie įsigytas medicinines priemones pradėti fiksuoti apytiksliai nuo 1970 m. Rinkinį sudaro: priemonės pavadinimas, modelis, CE (pranc. Conformité Européene) žyma, CE numeris, priemonės savininko JAR kodas ir pavadinimas, priemonės pagaminimo, įsigyjimo, naudojimo pradžios ir nutraukimo datos bei nutraukimo priežastis. Duomenų teikėjas: Valstybinė akreditavimo sveikatos priežiūros veiklai tarnyba prie Sveikatos apsaugos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,MedicininePriemone,,,pri_id,,,4,,,Sveikatos priežiūros įstaigų įsigytos medicininės priemonės,
+,,,,,pri_id,string,,,,4,open,,Prietaiso ID,Medicinos priemonės unikalus identifikacinis numeris
+,,,,,pavadinimas,string,,,,4,open,,Pavadinimas,Bendrinis medicinos priemonės pavadinimas
+,,,,,modelis,string,,,,4,open,,Modelis,Medicinos priemonės modelis
+,,,,,ce_zyma,boolean,,,,4,open,,CE žyma,"""Indikatorius, ar medicinos prietaisas turi  CE ženklinimą (Conformite Europeene), reiškiantį atitiktį ES saugos reikalavimams"""
+,,,,,ce_nr,string,,,,4,open,,CE numeris,Notifikuotosios įstaigos identifikacinis numeris
+,,,,,savininko_kodas,string,,,,4,open,,Savininko kodas,"""Sveikatos priežiūros įstaigos, kuriai priklauso priemonė, JAR kodas"""
+,,,,,savininko_pav,string,,,,4,open,,Savininko pavadinimas,"""Sveikatos priežiūros įstaigos, kuriai priklauso priemonė, pavadinimas"""
+,,,,,pagaminta,date,Y,,,4,open,,Pagaminimo data,Medicinos priemonės pagaminimo data
+,,,,,isigyta,date,Y,,,4,open,,Įsigijimo data,Medicinos priemonės įsigijimo data
+,,,,,pradetas_naudoti,date,Y,,,4,open,,Pradėjimo naudoti data,Medicinos priemonės naudojimo pradžios data
+,,,,,naudojimas_nutrauktas,date,D,,,4,open,,Naudojimas nutrauktas,"""Data, kada medicinos priemonės naudojimas buvo galutinai nutrauktas"""
+,,,,,nutraukimo_priezastis_lt,string,,,,4,open,,Nutraukimo priežastis,"""Priežastis, kodėl medicinos priemonė nebenaudojama"""
+,,,,,,comment,type,,"update(property: ""nutraukimo_priezastis_lt"", type: ""text"")",4,open,spinta:204,,
