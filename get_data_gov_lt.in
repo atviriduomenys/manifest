@@ -826,3 +826,8 @@ datasets/gov/lmi/us_kur_lmi_nustate_pazeidimus.csv
 datasets/gov/lsd/cl/evrk2_1.csv
 datasets/gov/llti/patarles_priezodziai.csv
 datasets/gov/asmlis/marsrutai.csv
+datasets/gov/lsd/gpm_deklaracijos.csv
+datasets/gov/lamabpo/profesiniu_prasymai.csv
+datasets/gov/lamabpo/aukstuju_prasymai.csv
+datasets/gov/ignalig_progra/maitinimo_paraiskos.csv
+datasets/gov/telsiu_r_sav/priemimai.csv
