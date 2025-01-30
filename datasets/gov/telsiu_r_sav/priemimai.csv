@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,prasymo_data,date,D,,,4,open,,Prašymo data,
 ,,,,,mokslo_metu_pradzia,date,D,,,4,open,,Mokslų metų pradžia,
-,,,,,vaiko_id_code,string,,,,4,open,,Asmens kodas,
+,,,,,vaiko_ak,string,,,,4,open,,Asmens kodas,
 ,,,,,asm_kodas_tinkamas,string,,,,4,open,,Ar asmens kodas tinkamas,
 ,,,,,lytis_ak,string,,,,4,open,,Lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
