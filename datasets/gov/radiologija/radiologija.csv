@@ -295,8 +295,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tyrimo_serijos_aprasymas,string,,,,4,open,,Tyrimo serijos aprašymas,
 ,,,,,atvaizdo_uuid,string,,,,4,open,,Atvaizdo pseudonimizuotas unikalus identifikatorius,
 ,,,,,fotometrine_interpretacija,string,,,,4,open,,Fotometrinė interpretacija,
-,,,,,,enum,,,MONOCHROME2,,,,Monochromas 2,
-,,,,,,,,,RGB,,,,"Raudona, žalia, mėlyna",
+,,,,,,enum,,,"""MONOCHROME2""",,,,Monochromas 2,
+,,,,,,,,,"""RGB""",,,,"Raudona, žalia, mėlyna",
 ,,,,,,,,,,,,,,
 ,,,,UtenosLigonine,,,vda_prime_key,,,,,,Utenos ligoninės pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „JiveX“ kaupiami Utenos ligoninės pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 1998 metų, kurie yra atnaujinami. Vienas įrašas atitinka vieną tyrimo seriją (visų tyrimo serijų identifikatoriai unikalūs). Duomenų rinkinį sudaro: paciento pseudonimizuotas identifikatorius, lytis, gimimo metai, tyrimo studijos identifikatorius, data, tyrimo serijos identifikatorius, data, paciento kūno padėtis, tirta kūno dalis, tyrimo serijos modalumas ir protokolas. Pacientų gimimo metai paimti iš validžių asmens kodų. Jeigu asmens kodai nevalidūs - iš gimimo datos stulpelio. Duomenų teikėjas – VšĮ Utenos ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
