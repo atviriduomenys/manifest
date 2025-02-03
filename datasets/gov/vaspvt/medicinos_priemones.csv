@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vaspvt/medicinos_priemones,,,,,,,,,,,,Sveikatos priežiūros įstaigų įsigytos medicininės priemonės,"""Duomenų rinkinyje pateikiami įrašai apie sveikatos priežiūros įstaigų įsigytas medicinines priemones. Viena eilutė atitinka vieną įsigytą priemonę. Įrašai apie įsigytas medicinines priemones pradėti fiksuoti apytiksliai nuo 2010 m. Rinkinį sudaro: priemonės pavadinimas, modelis, CE (pranc. Conformité Européene) žyma, CE numeris, priemonės savininko JAR kodas ir pavadinimas, priemonės pagaminimo, įsigyjimo, naudojimo pradžios ir nutraukimo datos bei nutraukimo priežastis. Duomenų teikėjas: Valstybinė akreditavimo sveikatos priežiūros veiklai tarnyba prie Sveikatos apsaugos ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
-,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,MedicininePriemone,,,pri_id,,,4,,,Sveikatos priežiūros įstaigų įsigytos medicininės priemonės,
 ,,,,,pri_id,string,,,,4,open,,Prietaiso ID,Medicinos priemonės unikalus identifikacinis numeris
