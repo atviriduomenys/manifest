@@ -1,204 +1,132 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vaspvt/licencijos,,,,,,,,,,,,Valstybinės akreditavimo sveikatos priežiūros veiklos tarnyba,Valstybinės akreditavimo sveikatos priežiūrai veiklos tarnybos duomenys
-,,,,,,,,,,,,,,
-,,,,Isakymas,,,id,,,4,,,Įsakymai,
-,,,,,id,string,,,,4,open,,Įsakymo įdentifikacinis numeris,
-,,,,,patvirtinimo_data,datetime,,,,3,open,,Įsakymo patvirtinimo data,
-,,,,,isakymo_nr,string,,,,4,open,,Įsakymo numeris,
-,,,,,,,,,,,,,,
-,,,,Istaiga,,,spi_id,,,2,,,Sveikatos priežiūros įstaigos,
-,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
-,,,,,spi_id,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
-,,,,,,comment,type,,"update(type: """")",4,open,"spinta:205, manifest:1290",,
-,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
-,,,,,,comment,type,,"update(property: ""ja_pavadinimas@lt"", type: """")",4,open,"spinta:204, spinta:205, manifest:1290",,
-,,,,,teisine_forma,string,,,,4,open,,Juridinio asmens teisinė forma,
-,,,,,adresas,integer,,,,2,open,,Juridinio asmens buveinės adresas,
-,,,,,,comment,type,,"update(type: """", ref: """")",4,open,"spinta:205, manifest:1280, manifest:1290",,
-,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
-,,,,,licencijos_isdavimo_data,datetime,,,,3,open,,Licencijos išdavimo data,
-,,,,,asmuo_visuomene,integer,,,,2,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,,,,,,,,,,
-,,,,LicencijosVeiksmas,,,id,,,3,,,Atlikti veiksmai su licencija,
-,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,4,open,,Atlikto veiksmo identifikatorius,
-,,,,,veiksmas,integer,,,,2,open,,Atlikto veiksmo pavadiniams,
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,isakymas,string,,,,4,open,,Įsakymo identifikatorius,
-,,,,,licencijos_id,integer,,,,2,open,,Licencijos identifikatorius,
-,,,,,,comment,type,,"update(property: ""licencija"", type: ""ref"", ref: ""Licencija"")",4,open,"manifest:1476,vadovas:dsa/ref.html",,
-,,,,,data,datetime,,,,2,open,,Atlikto veiksmo data,
-,,,,,,comment,property,,"update(property: ""atlikta"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,,,,,,,,,,
-,,,,Licencija,,,licencijos_id,,,4,,,Licencijos,
-,,,,,licencijos_id,integer,,,,4,open,,Licencijos identifikatorius,
-,,,,,istaiga,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
-,,,,,sudarymo_data,datetime,,,,2,open,,Licencijos išdavimo data,
-,,,,,,comment,property,,"update(property: ""isduota"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,panaikinimo_data,datetime,,,,3,open,,Licencijos panaikinimo data,
-,,,,,,comment,property,,"update(property: ""panaikinta"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
-,,,,,,comment,property,,"update(property: ""istaiga.ja_kodas"", type: """")",4,open,"spinta:216,manifest:1290",,
-,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
-,,,,,,comment,property,,"update(property: ""istaiga.ja_pavadinimas@lt"", type: """")",4,open,"spinta:204,spinta:216,manifest:1290",,
-,,,,,ja_buveines_adresas,string,,,,1,open,,Juridinio asmens buveinės adresas,
-,,,,,,comment,property,,"update(property: ""istaiga.adresas"", type: """")",4,open,"spinta:216,manifest:1290,vadovas:dsa/ref.html#susiejimas-neimanomas",,
-,,,,,isakymo_data,datetime,,,,2,open,,Įsakymo data,
-,,,,,,comment,property,,"update(property: ""isakyta"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,busena,integer,,,,4,open,,Licencijos būsena,
-,,,,,,enum,,,0,,,,Sustabdyta,
-,,,,,,,,,1,,,,Išduota,
-,,,,,,,,,2,,,,Panaikinta,
-,,,,,isakymas,integer,,,,4,open,,Įsakymas,
-,,,,,asmuo_ar_visuomene,integer,,,,4,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
-,,,,,,enum,,,0,,,,Nepasirinkta,
-,,,,,,,,,1,,,,Asmuo,
-,,,,,,,,,2,,,,Visuomenė,
-,,,,,,,,,,,,,,
-,,,,Filialas,,,filialo_id,,,4,,,Sveikatos priežiūros įstaigų filialai,
-,,,,,filialo_id,string,,,,2,open,,Filialo identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,istaiga,string,,,,4,open,,Sveikatos priežiūros įstaiga,
-,,,,,juridinio_asmens_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
-,,,,,,comment,property,,"update(property: ""istaiga.ja_kodas"", type: """")",4,open,"spinta:216,manifest:1290",,
-,,,,,filialo_pavadinimas,string,,,,2,open,,Filialo pavadinimas,
-,,,,,,comment,property,,"update(property: ""pavadinimas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,adresas,integer,,,,1,open,,Buveinės adresas,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/patalpa/Patalpa"")",4,open,vadovas:dsa/ref.html#susiejimas-neimanomas,,
-,,,,,veiklos_adresas,string,,,,1,open,,Veiklos adresas,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/patalpa/Patalpa"")",4,open,vadovas:dsa/ref.html#susiejimas-neimanomas,,
-,,,,,,,,,,,,,,
-,,,,IstaigosVeiklosAdresas,,,spi_veiklos_adreso_id,,,4,,,Sveikatos priežiūros įstaigų veiklos adresai,
-,,,,,spi_veiklos_adreso_id,string,,,,2,open,,Sveikatos priežiūros įstaigos veiklos adreso identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,adreso_id,integer,,,,1,open,,Adreso identifikatorius,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/patalpa/Patalpa"")",4,open,vadovas:dsa/ref.html#susiejimas-neimanomas,,
-,,,,,adresas,string,,,,1,open,,Adresas,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/rc/ar/patalpa/Patalpa"")",4,open,vadovas:dsa/ref.html#susiejimas-neimanomas,,
-,,,,,istaiga,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
-,,,,,filialas,string,,,,4,open,,Sveikatos priežiūros įstaigos filialas,
-,,,,,,,,,,,,,,
-,,,,IstaigosPaslauga,,,istaigos_paslaugos_id,,,4,,,Sveikatos priežiūros įstaigų paslaugos,
-,,,,,istaigos_paslaugos_id,string,,,,2,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,nustatymas,integer,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos nustatymo identifikatorius,
-,,,,,licenzija,string,,,,4,open,,Licencija,
-,,,,,istaiga,string,,,,4,open,,Sveikatos priežiūros įstaiga,
-,,,,,filialo_id,integer,,,,2,open,,Filialo identifikatorius,
-,,,,,,comment,property,,"update(property: ""filialas"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,,comment,type,,"update(type: ""ref"", ref: ""Istaiga"")",4,open,"manifest:1476,vadovas:dsa/ref.html",,
-,,,,,veiklos_adresas,string,,,,4,open,,Veiklos adreso identifikatorius,
-,,,,,patikslinta,boolean,,,,3,open,,Patikslinimo būsena,
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,,,,,,,,,,
-,,,,IstaigosPaslauguOrganas,,,id,,,3,,,Sveikatos priežiūros įstaigų paslaugų organai,
-,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,4,open,,Identifikatorius,
-,,,,,paslauga,string,,,,4,open,,Paslauga,
-,,,,,,,,,,,,,,
-,,,,IstaigosPaslauguProfilis,,,id,,,4,,,Sveikatos priežiūros įstaigų paslaugų profiliai,
-,,,,,id,integer,,,,4,open,,Identifikatorius,
-,,,,,paslauga,string,,,,4,open,,Paslauga,
-,,,,,profilis,string,,,,4,open,,Paslaugos profilio identifikatorius,
-,,,,,,,,,,,,,,
-,,,,LaboratorinisTyrimas,,,labor_tyrimo_id,,,3,,,Laboratoriniai tyrimai,
-,,,,,,comment,ref,,"update(ref: ""labor_tyrimo_id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,labor_tyrimo_id,string,,,,2,open,,Laboratorinio tyrimo identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,paslauga,string,,,,4,open,,Paslaugos identikatorius,
-,,,,,eminys,integer,,,,4,open,,Ėminio identifikatorius,
-,,,,,analite,integer,,,,4,open,,Analitės identifikatorius,
-,,,,,tyrimas,integer,,,,4,open,,Tyrimo identifikatorius,
-,,,,,,,,,,,,,,
-,,,,VeiklosAdresoPaslauga,,,veiklos_adreso_paslaugos_id,,,3,,,Veiklos adresų paslaugos,
-,,,,,,comment,ref,,"update(ref: ""veiklos_adreso_paslaugos_id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,veiklos_adreso_paslaugos_id,string,,,,2,open,,Veiklos adreso paslaugos identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,paslauga,integer,,,,4,open,,Paslaugos identifikatorius,
-,,,,,paslaugos_lygis,integer,,,,4,open,,Paslaugos lygio identifikatorius,
-,,,,,paslaugos_budo_id,integer,,,,2,open,,Paslaugos būdo identifikatorius,
-,,,,,,comment,property,,"update(property: ""paslaugu_lygis"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,paslaugos_grupe,integer,,,,4,open,,Paslaugos grupės identifikatorius,
-,,,,,,,,,,,,,,
-,,,,IstaigosPaslaugosProfilioEtapas,,,id,,,3,,,Sveikatos priežiūros įstaigų paslaugų profilių etapai,
-,,,,,,comment,ref,,"update(ref: ""id"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
-,,,,,id,integer,,,,4,open,,Identifikatorius,
-,,,,,profilis,string,,,,4,open,,Paslaugos profilio identifikatorius,
-,,,,,etapas,string,,,,4,open,,Etapo identifikatorius,
-,,,,,paslauga,string,,,,4,open,,Paslaugos identifikatorius,
-,,,,,,,,,,,,,,
-,,,,TeisineForma,,,teisines_formos_id,,,1,,,,
-,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/TeisineForma"", ref: ""pavadinimas@lt"")",4,open,"spinta:204, spinta:205, manifest:1290",,
-,,,,,teisines_formos_id,integer,,,,2,open,,Teisinės formos identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Teisinė forma,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: """")",4,open,"spinta:204, spinta:205, manifest:1290",,
-,,,,,,,,,,,,,,
-,,,,PaslauguNustatymas,,,paslaugos_nustatymo_id,,,3,,,,
-,,,,,paslaugos_nustatymo_id,integer,,,,2,open,,Paslaugos nustatymo identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,paslaugos_budas,integer,,,,2,open,,Paslaugos būdo identifikatorius,
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,paslaugos_id,integer,,,,2,open,,Paslaugos identifikatorius,
-,,,,,,comment,type,,"update(property: ""paslauga"", type: ""ref"", ref: ""IstaigosPaslauga"")",4,open,vadovas:dsa/ref.html,,
-,,,,,paslaugos_grupes_id,integer,,,,2,open,,Paslaugos grupės identifikatorius,
-,,,,,,comment,type,,"update(property: ""paslaugu_grupe"", type: ""ref"", ref: ""PaslauguGrupe"")",4,open,vadovas:dsa/ref.html,,
-,,,,,paslaugos_lygio_id,integer,,,,2,open,,Paslaugos lygio identifikatorius,
-,,,,,,comment,type,,"update(property: ""paslaugu_lygis"", type: ""ref"", ref: ""PaslauguLygis"")",4,open,vadovas:dsa/ref.html,,
-,,,,,paslaugos_tipo_id,integer,,,,2,open,,Paslaugos tipo identifikatorius,
-,,,,,,comment,ref,,"update(ref: ""enum"")",4,open,vadovas:dsa/dimensijos.html#klasifikatoriai,,
-,,,,,,,,,,,,,,
-,,,,PaslauguProfilis,,,id,,,4,,,,
-,,,,,id,integer,,,,4,open,,Paslaugos profilio identifikatorius,
-,,,,,pavadinimas,string,,,,2,open,,Paslaugos profilio pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,paslaugos_id,integer,,,,2,open,,Paslaugos identifikatorius,
-,,,,,,comment,type,,"update(property: ""paslauga"", type: ""ref"", ref: ""IstaigosPaslauga"")",4,open,vadovas:dsa/ref.html,,
-,,,,,,,,,,,,,,
-,,,,Eminys,,,eminio_id,,,4,,,,
-,,,,,eminio_id,integer,,,,2,open,,Ėminio identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Ėminio pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,Analite,,,analites_id,,,4,,,,
-,,,,,analites_id,integer,,,,2,open,,Analitės identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Analitės pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,Tyrimas,,,tyrimo_id,,,4,,,,
-,,,,,tyrimo_id,integer,,,,2,open,,Tyrimo identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,3,open,,Tyrimo pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,Paslauga,,,paslaugos_id,,,4,,,,
-,,,,,paslaugos_id,integer,,,,2,open,,Paslaugos identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Paslaugos pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,PaslauguLygis,,,paslaugu_lygio_id,,,4,,,,
-,,,,,paslaugu_lygio_id,integer,,,,2,open,,Paslaugos lygio identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Paslaugos lygio pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,PaslauguGrupe,,,paslaugu_grupes_id,,,4,,,,
-,,,,,paslaugu_grupes_id,integer,,,,2,open,,Paslaugų grupės identifikatorius,
-,,,,,,comment,property,,"update(property: ""id"")",4,open,vadovas:dsa/kodiniai-pavadinimai.html,,
-,,,,,pavadinimas,string,,,,2,open,,Paslaugų grupės pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,,,,,,,,,,
-,,,,PaslauguProfiliuEtapas,,,id,,,4,,,,
-,,,,,id,integer,,,,3,open,,Paslaugos profilio etapo identifikatorius,
-,,,,,pavadinimas,string,,,,3,open,,Paslaugos profilio etapo pavadinimas,
-,,,,,,comment,type,,"update(property: ""pavadinimas@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,profilio_id,integer,,,,2,open,,Paslaugos profilio identifikatorius,
-,,,,,,comment,type,,"update(property: ""profilis"", type: ""ref"", ref: ""PaslauguProfilis"")",4,open,vadovas:dsa/ref.html,,
+id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
+;datasets/gov/vaspvt/licencijos;;;;;;;;;;;;Valstybinės akreditavimo sveikatos priežiūros veiklos tarnyba;Valstybinės akreditavimo sveikatos priežiūrai veiklos tarnybos duomenys
+;;;;;;;;;;;;;;
+;;;;Licencijos;;;licencijos_id;;;4;;;Licencijos;
+;;;;;isakymo_nr;string;;;;4;open;;Įsakymo numeris;
+;;;;;patvirtinimo_data;date;;;;4;open;;Įsakymo patvirtinimo data;
+;;;;;veiksmas;integer;;;;4;open;;Atlikto veiksmo pavadiniams;
+;;;;;;enum;;;1;;;;Išduota;
+;;;;;;;;;2;;;;Sustabdyta;
+;;;;;;;;;3;;;;Atstatyta po sustabdymo;
+;;;;;;;;;4;;;;Panaikinta;
+;;;;;;;;;5;;;;Apmokėta;
+;;;;;;;;;6;;;;Paslaugai priskirtas specialistas;
+;;;;;;;;;7;;;;Apmokėjimo panaikinimas;
+;;;;;;;;;8;;;;Patikslinta;
+;;;;;atlikta;date;;;;4;open;;Atlikto veiksmo data;
+;;;;;istaiga;integer;;;;4;open;;Sveikatos priežiūros įstaigos identifikatorius;
+;;;;;licencijos_nr;string;;;;4;open;;Licencijos numeris;
+;;;;;isduota;date;;;;4;open;;Licencijos išdavimo data;
+;;;;;panaikinta;date;;;;4;open;;Licencijos panaikinimo data;
+;;;;;ja_kodas;ref;;;;4;open;;Sveikatos priežiūros įstaigos juridinio asmens kodas;
+;;;;;ja_pavadinimas;string;;;;4;open;;Sveikatos priežiūros įstaigos pavadinimas;
+;;;;;ja_buveines_adresas;string;;;;4;open;;Juridinio asmens buveinės adresas;
+;;;;;isakyta;date;;;;4;open;;Įsakymo data;
+;;;;;busena;integer;;;;4;open;;Licencijos būsena;
+;;;;;;enum;;;0;;;;(nėra reikšmės);
+;;;;;;;;;1;;;;Suformuota;
+;;;;;;;;;2;;;;Sustabdyta;
+;;;;;;;;;3;;;;Išduota;
+;;;;;;;;;4;;;;Panaikinta;
+;;;;;;;;;5;;;;Patikslinta;
+;;;;;;;;;6;;;;Apmokėta;
+;;;;;;;;;7;;;;Archyvuota;
+;;;;;licencijos_tipas;integer;;;;4;open;;Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija;
+;;;;;;enum;;;0;;;;(Nėra reikšmės);
+;;;;;;;;;1;;;;Person (Asmuo);
+;;;;;;;;;2;;;;Society (Visuomenė);
+;;;;;;;;;;;;;;
+;;;;Istaigos;;;;;;4;;;Istaigos;
+;;;;;spi_veiklos_adreso_id;string;;;;4;open;;Sveikatos priežiūros įstaigos veiklos adreso identifikatorius;
+;;;;;ist_veiklos_adresas;string;;;;4;open;;Adresas;
+;;;;;filialas;string;;;;4;open;;Sveikatos priežiūros įstaigos filialas;
+;;;;;spi_id;integer;;;;4;open;;Sveikatos priežiūros įstaigos identifikatorius;
+;;;;;ja_kodas;ref;;;;4;open;;Sveikatos priežiūros įstaigos juridinio asmens kodas;
+;;;;;ja_pavadinimas;string;;;;4;open;;Sveikatos priežiūros įstaigos pavadinimas;
+;;;;;teisine_forma;string;;;;4;open;;Juridinio asmens teisinė forma;
+;;;;;adresas;integer;;;;4;open;;Juridinio asmens buveinės adresas;
+;;;;;licencijos_nr;string;;;;4;open;;Licencijos numeris;
+;;;;;licencijos_isdavimo_data;date;;;;4;open;;Licencijos išdavimo data;
+;;;;;istaigos_tipas;integer;;;;4;open;;Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija;
+;;;;;;enum;;;0;;;;(Nėra reikšmės);
+;;;;;;;;;1;;;;Asmens sveikatos (ASPĮ);
+;;;;;;;;;2;;;;Visuomenės sveikatos (VSPĮ);
+;;;;;;;;;3;;;;Asmens ir Visuomenės (ASPĮ ir VSPĮ);
+;;;;;pavadinimas;string;;;;4;open;;Teisinė forma;
+;;;;;filialo_pavadinimas;string;;;;4;open;;Filialo pavadinimas;
+;;;;;filialo_adresas;integer;;;;4;open;;Buveinės adresas;
+;;;;;veiklos_adresas;string;;;;4;open;;Veiklos adresas;
+;;;;;;;;;;;;;;
+;;;;IstaigosPaslaugos;;;;;;4;open;;Istaigos paslaugos;
+;;;;;istaigos_paslaugos_id;string;;;;4;open;;Sveikatos priežiūros įstaigos paslaugos identifikatorius;
+;;;;;licencija;string;;;;4;open;;Licencija;
+;;;;;istaiga;string;;;;4;open;;Sveikatos priežiūros įstaiga;
+;;;;;patikslinta;boolean;;;;4;open;;Patikslinimo būsena;
+;;;;;paslaugos_budas;integer;;;;4;open;;Paslaugos būdo identifikatorius;
+;;;;;;enum;;;0;;;;(Nėra reikšmės);
+;;;;;;;;;1;;;;Ambulatorinė;
+;;;;;;;;;2;;;;Stacionari;
+;;;;;;;;;3;;;;Bendroji;
+;;;;;paslaugos_grupes_id;integer;;;;4;open;;Paslaugos grupės identifikatorius;
+;;;;;;enum;;;1;;;;Medicinos paslaugos;
+;;;;;;;;;2;;;;Odontologinės priežiūros (pagalbos) paslaugos;
+;;;;;;;;;3;;;;Burnos priežiūros paslaugos;
+;;;;;;;;;4;;;;Akušerijos paslaugos;
+;;;;;;;;;5;;;;Slaugos paslaugos;
+;;;;;;;;;6;;;;Kitos paslaugos;
+;;;;;;;;;7;;;;Patologija;
+;;;;;;;;;8;;;;Audinių bankas;
+;;;;;;;;;9;;;;Antrinė;
+;;;;;;;;;10;;;;LAASPP;
+;;;;;;;;;11;;;;LSASPP;
+;;;;;;;;;12;;;;Pirminė;
+;;;;;;;;;13;;;;Tretinė;
+;;;;;;;;;14;;;;Bendrosios paslaugos;
+;;;;;paslaugos_lygio_id;integer;;;;4;open;;Paslaugos lygio identifikatorius;
+;;;;;;enum;;;0;;;;neįvardintas;
+;;;;;;;;;1;;;;pirminis lygis (I);
+;;;;;;;;;2;;;;antrinis lygis (II);
+;;;;;;;;;3;;;;tretinis lygis (III);
+;;;;;paslaugos_tipo_id;integer;;;;4;open;;Paslaugos tipo identifikatorius;
+;;;;;;enum;;;1;;;;AP;
+;;;;;;;;;2;;;;BP;
+;;;;;;;;;3;;;;KTP;
+;;;;;;;;;4;;;;SP;
+;;;;;id;string;;;;4;open;;Identifikatorius;
+;;;;;paslauga;string;;;;4;open;;Paslauga;
+;;;;;etap_id;integer;;;;4;open;;Identifikatorius;
+;;;;;istaigos_paslaugos_profilio_id;string;;;;4;open;;Paslaugos profilio identifikatorius;
+;;;;;etapo_id;string;;;;4;open;;Etapo identifikatorius;
+;;;;;pavadinimas;string;;;;4;open;;Paslaugos profilio etapo pavadinimas;
+;;;;;profilio_id;integer;;;;4;open;;Paslaugos profilio identifikatorius;
+;;;;;;;;;;;;;;
+;;;;IstaigosPaslauguProfiliai;;;;;;4;open;;Istaigos paslaugu profiliai;
+;;;;;id;integer;;;;4;open;;Identifikatorius;
+;;;;;paslauga;string;;;;4;open;;Paslauga;
+;;;;;profilio_id;string;;;;4;open;;Paslaugos profilio identifikatorius;
+;;;;;pavadinimas;string;;;;4;open;;Paslaugos profilio pavadinimas;
+;;;;;;;;;;;;;;
+;;;;LaboratorinisTyrimas;;;;;;4;open;;Laboratoriniai tyrimai;
+;;;;;eminio_id;integer;;;;4;open;;Ėminio identifikatorius;
+;;;;;tyrimo_id;integer;;;;4;open;;Tyrimo identifikatorius;
+;;;;;analites_id;integer;;;;4;open;;Analitės identifikatorius;
+;;;;;labor_tyrimo_id;string;;;;4;open;;Laboratorinio tyrimo identifikatorius;
+;;;;;analites_pavadinimas;string;;;;4;open;;Analitės pavadinimas;
+;;;;;tyrimas_pavadinimas;string;;;;4;open;;Tyrimo pavadinimas;
+;;;;;eminiai_pavadinimas;string;;;;4;open;;Ėminio pavadinimas;
+;;;;;;;;;;;;;;
+;;;;VeiklosAdresoPaslauga;;;;;;4;open;;Veiklos adresų paslaugos;
+;;;;;veiklos_adreso_paslaugos_id;string;;;;4;open;;Veiklos adreso paslaugos identifikatorius;
+;;;;;paslaugos_lygio_id;integer;;;;4;open;;Paslaugos lygio identifikatorius;
+;;;;;;enum;;;0;;;;neįvardintas;
+;;;;;;;;;1;;;;pirminis lygis (I);
+;;;;;;;;;2;;;;antrinis lygis (II);
+;;;;;;;;;3;;;;tretinis lygis (III);
+;;;;;paslaugos_budo_id;integer;;;;4;open;;Paslaugos būdo identifikatorius;
+;;;;;;enum;;;0;;;;(Nėra reikšmės);
+;;;;;;;;;1;;;;Ambulatorinė;
+;;;;;;;;;2;;;;Stacionari;
+;;;;;;;;;3;;;;Bendroji;
+;;;;;grupes_pavadinimas;string;;;;4;open;;Paslaugų grupės pavadinimas;
+;;;;;lygiai_pavadinimas;string;;;;4;open;;Paslaugos lygio pavadinimas;
+;;;;;paslaugos_pavadinimas;string;;;;4;open;;Paslaugos pavadinimas;
