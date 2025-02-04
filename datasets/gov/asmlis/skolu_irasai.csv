@@ -3,6 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 ,,,,Telsiuv_irasas,,,vda_prime_key,,,4,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus lentelės raktas,
 ,,,,,skolos_iraso_id,string,,,,4,open,,Skolos įrašo indetifikatorius,
@@ -29,4 +30,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,
 ,,,,,geometrija,string,,,,4,open,,Paslaugos teikimo vietos koordinatės wgs,
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
-
