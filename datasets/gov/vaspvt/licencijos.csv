@@ -1,132 +1,132 @@
-id;dataset;resource;base;model;property;type;ref;source;prepare;level;access;uri;title;description
-;datasets/gov/vaspvt/licencijos;;;;;;;;;;;;Valstybinės akreditavimo sveikatos priežiūros veiklos tarnyba;Valstybinės akreditavimo sveikatos priežiūrai veiklos tarnybos duomenys
-;;;;;;;;;;;;;;
-;;;;Licencijos;;;licencijos_id;;;4;;;Licencijos;
-;;;;;isakymo_nr;string;;;;4;open;;Įsakymo numeris;
-;;;;;patvirtinimo_data;date;;;;4;open;;Įsakymo patvirtinimo data;
-;;;;;veiksmas;integer;;;;4;open;;Atlikto veiksmo pavadiniams;
-;;;;;;enum;;;1;;;;Išduota;
-;;;;;;;;;2;;;;Sustabdyta;
-;;;;;;;;;3;;;;Atstatyta po sustabdymo;
-;;;;;;;;;4;;;;Panaikinta;
-;;;;;;;;;5;;;;Apmokėta;
-;;;;;;;;;6;;;;Paslaugai priskirtas specialistas;
-;;;;;;;;;7;;;;Apmokėjimo panaikinimas;
-;;;;;;;;;8;;;;Patikslinta;
-;;;;;atlikta;date;;;;4;open;;Atlikto veiksmo data;
-;;;;;istaiga;integer;;;;4;open;;Sveikatos priežiūros įstaigos identifikatorius;
-;;;;;licencijos_nr;string;;;;4;open;;Licencijos numeris;
-;;;;;isduota;date;;;;4;open;;Licencijos išdavimo data;
-;;;;;panaikinta;date;;;;4;open;;Licencijos panaikinimo data;
-;;;;;ja_kodas;ref;;;;4;open;;Sveikatos priežiūros įstaigos juridinio asmens kodas;
-;;;;;ja_pavadinimas;string;;;;4;open;;Sveikatos priežiūros įstaigos pavadinimas;
-;;;;;ja_buveines_adresas;string;;;;4;open;;Juridinio asmens buveinės adresas;
-;;;;;isakyta;date;;;;4;open;;Įsakymo data;
-;;;;;busena;integer;;;;4;open;;Licencijos būsena;
-;;;;;;enum;;;0;;;;(nėra reikšmės);
-;;;;;;;;;1;;;;Suformuota;
-;;;;;;;;;2;;;;Sustabdyta;
-;;;;;;;;;3;;;;Išduota;
-;;;;;;;;;4;;;;Panaikinta;
-;;;;;;;;;5;;;;Patikslinta;
-;;;;;;;;;6;;;;Apmokėta;
-;;;;;;;;;7;;;;Archyvuota;
-;;;;;licencijos_tipas;integer;;;;4;open;;Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija;
-;;;;;;enum;;;0;;;;(Nėra reikšmės);
-;;;;;;;;;1;;;;Person (Asmuo);
-;;;;;;;;;2;;;;Society (Visuomenė);
-;;;;;;;;;;;;;;
-;;;;Istaigos;;;;;;4;;;Istaigos;
-;;;;;spi_veiklos_adreso_id;string;;;;4;open;;Sveikatos priežiūros įstaigos veiklos adreso identifikatorius;
-;;;;;ist_veiklos_adresas;string;;;;4;open;;Adresas;
-;;;;;filialas;string;;;;4;open;;Sveikatos priežiūros įstaigos filialas;
-;;;;;spi_id;integer;;;;4;open;;Sveikatos priežiūros įstaigos identifikatorius;
-;;;;;ja_kodas;ref;;;;4;open;;Sveikatos priežiūros įstaigos juridinio asmens kodas;
-;;;;;ja_pavadinimas;string;;;;4;open;;Sveikatos priežiūros įstaigos pavadinimas;
-;;;;;teisine_forma;string;;;;4;open;;Juridinio asmens teisinė forma;
-;;;;;adresas;integer;;;;4;open;;Juridinio asmens buveinės adresas;
-;;;;;licencijos_nr;string;;;;4;open;;Licencijos numeris;
-;;;;;licencijos_isdavimo_data;date;;;;4;open;;Licencijos išdavimo data;
-;;;;;istaigos_tipas;integer;;;;4;open;;Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija;
-;;;;;;enum;;;0;;;;(Nėra reikšmės);
-;;;;;;;;;1;;;;Asmens sveikatos (ASPĮ);
-;;;;;;;;;2;;;;Visuomenės sveikatos (VSPĮ);
-;;;;;;;;;3;;;;Asmens ir Visuomenės (ASPĮ ir VSPĮ);
-;;;;;pavadinimas;string;;;;4;open;;Teisinė forma;
-;;;;;filialo_pavadinimas;string;;;;4;open;;Filialo pavadinimas;
-;;;;;filialo_adresas;integer;;;;4;open;;Buveinės adresas;
-;;;;;veiklos_adresas;string;;;;4;open;;Veiklos adresas;
-;;;;;;;;;;;;;;
-;;;;IstaigosPaslaugos;;;;;;4;open;;Istaigos paslaugos;
-;;;;;istaigos_paslaugos_id;string;;;;4;open;;Sveikatos priežiūros įstaigos paslaugos identifikatorius;
-;;;;;licencija;string;;;;4;open;;Licencija;
-;;;;;istaiga;string;;;;4;open;;Sveikatos priežiūros įstaiga;
-;;;;;patikslinta;boolean;;;;4;open;;Patikslinimo būsena;
-;;;;;paslaugos_budas;integer;;;;4;open;;Paslaugos būdo identifikatorius;
-;;;;;;enum;;;0;;;;(Nėra reikšmės);
-;;;;;;;;;1;;;;Ambulatorinė;
-;;;;;;;;;2;;;;Stacionari;
-;;;;;;;;;3;;;;Bendroji;
-;;;;;paslaugos_grupes_id;integer;;;;4;open;;Paslaugos grupės identifikatorius;
-;;;;;;enum;;;1;;;;Medicinos paslaugos;
-;;;;;;;;;2;;;;Odontologinės priežiūros (pagalbos) paslaugos;
-;;;;;;;;;3;;;;Burnos priežiūros paslaugos;
-;;;;;;;;;4;;;;Akušerijos paslaugos;
-;;;;;;;;;5;;;;Slaugos paslaugos;
-;;;;;;;;;6;;;;Kitos paslaugos;
-;;;;;;;;;7;;;;Patologija;
-;;;;;;;;;8;;;;Audinių bankas;
-;;;;;;;;;9;;;;Antrinė;
-;;;;;;;;;10;;;;LAASPP;
-;;;;;;;;;11;;;;LSASPP;
-;;;;;;;;;12;;;;Pirminė;
-;;;;;;;;;13;;;;Tretinė;
-;;;;;;;;;14;;;;Bendrosios paslaugos;
-;;;;;paslaugos_lygio_id;integer;;;;4;open;;Paslaugos lygio identifikatorius;
-;;;;;;enum;;;0;;;;neįvardintas;
-;;;;;;;;;1;;;;pirminis lygis (I);
-;;;;;;;;;2;;;;antrinis lygis (II);
-;;;;;;;;;3;;;;tretinis lygis (III);
-;;;;;paslaugos_tipo_id;integer;;;;4;open;;Paslaugos tipo identifikatorius;
-;;;;;;enum;;;1;;;;AP;
-;;;;;;;;;2;;;;BP;
-;;;;;;;;;3;;;;KTP;
-;;;;;;;;;4;;;;SP;
-;;;;;id;string;;;;4;open;;Identifikatorius;
-;;;;;paslauga;string;;;;4;open;;Paslauga;
-;;;;;etap_id;integer;;;;4;open;;Identifikatorius;
-;;;;;istaigos_paslaugos_profilio_id;string;;;;4;open;;Paslaugos profilio identifikatorius;
-;;;;;etapo_id;string;;;;4;open;;Etapo identifikatorius;
-;;;;;pavadinimas;string;;;;4;open;;Paslaugos profilio etapo pavadinimas;
-;;;;;profilio_id;integer;;;;4;open;;Paslaugos profilio identifikatorius;
-;;;;;;;;;;;;;;
-;;;;IstaigosPaslauguProfiliai;;;;;;4;open;;Istaigos paslaugu profiliai;
-;;;;;id;integer;;;;4;open;;Identifikatorius;
-;;;;;paslauga;string;;;;4;open;;Paslauga;
-;;;;;profilio_id;string;;;;4;open;;Paslaugos profilio identifikatorius;
-;;;;;pavadinimas;string;;;;4;open;;Paslaugos profilio pavadinimas;
-;;;;;;;;;;;;;;
-;;;;LaboratorinisTyrimas;;;;;;4;open;;Laboratoriniai tyrimai;
-;;;;;eminio_id;integer;;;;4;open;;Ėminio identifikatorius;
-;;;;;tyrimo_id;integer;;;;4;open;;Tyrimo identifikatorius;
-;;;;;analites_id;integer;;;;4;open;;Analitės identifikatorius;
-;;;;;labor_tyrimo_id;string;;;;4;open;;Laboratorinio tyrimo identifikatorius;
-;;;;;analites_pavadinimas;string;;;;4;open;;Analitės pavadinimas;
-;;;;;tyrimas_pavadinimas;string;;;;4;open;;Tyrimo pavadinimas;
-;;;;;eminiai_pavadinimas;string;;;;4;open;;Ėminio pavadinimas;
-;;;;;;;;;;;;;;
-;;;;VeiklosAdresoPaslauga;;;;;;4;open;;Veiklos adresų paslaugos;
-;;;;;veiklos_adreso_paslaugos_id;string;;;;4;open;;Veiklos adreso paslaugos identifikatorius;
-;;;;;paslaugos_lygio_id;integer;;;;4;open;;Paslaugos lygio identifikatorius;
-;;;;;;enum;;;0;;;;neįvardintas;
-;;;;;;;;;1;;;;pirminis lygis (I);
-;;;;;;;;;2;;;;antrinis lygis (II);
-;;;;;;;;;3;;;;tretinis lygis (III);
-;;;;;paslaugos_budo_id;integer;;;;4;open;;Paslaugos būdo identifikatorius;
-;;;;;;enum;;;0;;;;(Nėra reikšmės);
-;;;;;;;;;1;;;;Ambulatorinė;
-;;;;;;;;;2;;;;Stacionari;
-;;;;;;;;;3;;;;Bendroji;
-;;;;;grupes_pavadinimas;string;;;;4;open;;Paslaugų grupės pavadinimas;
-;;;;;lygiai_pavadinimas;string;;;;4;open;;Paslaugos lygio pavadinimas;
-;;;;;paslaugos_pavadinimas;string;;;;4;open;;Paslaugos pavadinimas;
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vaspvt/licencijos,,,,,,,,,,,,Valstybinės akreditavimo sveikatos priežiūros veiklos tarnyba,Valstybinės akreditavimo sveikatos priežiūrai veiklos tarnybos duomenys
+,,,,,,,,,,,,,,
+,,,,Licencija,,,licencijos_id,,,4,,,Licencijos,
+,,,,,isakymo_nr,string,,,,4,open,,Įsakymo numeris,
+,,,,,patvirtinimo_data,date,,,,4,open,,Įsakymo patvirtinimo data,
+,,,,,veiksmas,integer,,,,4,open,,Atlikto veiksmo pavadiniams,
+,,,,,,enum,,,1,,,,Išduota,
+,,,,,,,,,2,,,,Sustabdyta,
+,,,,,,,,,3,,,,Atstatyta po sustabdymo,
+,,,,,,,,,4,,,,Panaikinta,
+,,,,,,,,,5,,,,Apmokėta,
+,,,,,,,,,6,,,,Paslaugai priskirtas specialistas,
+,,,,,,,,,7,,,,Apmokėjimo panaikinimas,
+,,,,,,,,,8,,,,Patikslinta,
+,,,,,atlikta,date,,,,4,open,,Atlikto veiksmo data,
+,,,,,istaiga,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,licencijos_nr,string,,,,4,open,,Licencijos numeris,
+,,,,,isduota,date,,,,4,open,,Licencijos išdavimo data,
+,,,,,panaikinta,date,,,,4,open,,Licencijos panaikinimo data,
+,,,,,ja_kodas,ref,,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,4,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
+,,,,,isakyta,date,,,,4,open,,Įsakymo data,
+,,,,,busena,integer,,,,4,open,,Licencijos būsena,
+,,,,,,enum,,,0,,,,(nėra reikšmės),
+,,,,,,,,,1,,,,Suformuota,
+,,,,,,,,,2,,,,Sustabdyta,
+,,,,,,,,,3,,,,Išduota,
+,,,,,,,,,4,,,,Panaikinta,
+,,,,,,,,,5,,,,Patikslinta,
+,,,,,,,,,6,,,,Apmokėta,
+,,,,,,,,,7,,,,Archyvuota,
+,,,,,licencijos_tipas,integer,,,,4,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
+,,,,,,enum,,,0,,,,(Nėra reikšmės),
+,,,,,,,,,1,,,,Person (Asmuo),
+,,,,,,,,,2,,,,Society (Visuomenė),
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,spi_id,,,4,,,Istaigos,
+,,,,,spi_veiklos_adreso_id,string,,,,4,open,,Sveikatos priežiūros įstaigos veiklos adreso identifikatorius,
+,,,,,ist_veiklos_adresas,string,,,,4,open,,Adresas,
+,,,,,filialas,string,,,,4,open,,Sveikatos priežiūros įstaigos filialas,
+,,,,,spi_id,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,ja_kodas,ref,,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,,4,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
+,,,,,ja_pavadinimas,string,,,,4,open,,Sveikatos priežiūros įstaigos pavadinimas,
+,,,,,teisine_forma,string,,,,4,open,,Juridinio asmens teisinė forma,
+,,,,,adresas,integer,,,,4,open,,Juridinio asmens buveinės adresas,
+,,,,,licencijos_nr,ref,,/datasets/gov/vaspvt/licencijos/Licencija,,4,open,,Licencijos numeris,
+,,,,,licencijos_isdavimo_data,date,,,,4,open,,Licencijos išdavimo data,
+,,,,,istaigos_tipas,integer,,,,4,open,,"Žyma, ar tai asmens, ar visuomenės sveikatos priežiūros įstaigos licencija",
+,,,,,,enum,,,0,,,,(Nėra reikšmės),
+,,,,,,,,,1,,,,Asmens sveikatos (ASPĮ),
+,,,,,,,,,2,,,,Visuomenės sveikatos (VSPĮ),
+,,,,,,,,,3,,,,Asmens ir Visuomenės (ASPĮ ir VSPĮ),
+,,,,,pavadinimas,string,,,,4,open,,Teisinė forma,
+,,,,,filialo_pavadinimas,string,,,,4,open,,Filialo pavadinimas,
+,,,,,filialo_adresas,integer,,,,4,open,,Buveinės adresas,
+,,,,,veiklos_adresas,string,,,,4,open,,Veiklos adresas,
+,,,,,,,,,,,,,,
+,,,,IstaigosPaslauga,,,,,,4,open,,Istaigos paslaugos,
+,,,,,istaigos_paslaugos_id,string,,,,4,open,,Sveikatos priežiūros įstaigos paslaugos identifikatorius,
+,,,,,licencijos_id,ref,,/datasets/gov/vaspvt/licencijos/Licencija,,4,open,,Licencija,
+,,,,,istaiga,ref,,/datasets/gov/vaspvt/licencijos/Istaiga,,4,open,,Sveikatos priežiūros įstaiga,
+,,,,,patikslinta,boolean,,,,4,open,,Patikslinimo būsena,
+,,,,,paslaugos_budas,integer,,,,4,open,,Paslaugos būdo identifikatorius,
+,,,,,,enum,,,0,,,,(Nėra reikšmės),
+,,,,,,,,,1,,,,Ambulatorinė,
+,,,,,,,,,2,,,,Stacionari,
+,,,,,,,,,3,,,,Bendroji,
+,,,,,paslaugos_grupes_id,integer,,,,4,open,,Paslaugos grupės identifikatorius,
+,,,,,,enum,,,1,,,,Medicinos paslaugos,
+,,,,,,,,,2,,,,Odontologinės priežiūros (pagalbos) paslaugos,
+,,,,,,,,,3,,,,Burnos priežiūros paslaugos,
+,,,,,,,,,4,,,,Akušerijos paslaugos,
+,,,,,,,,,5,,,,Slaugos paslaugos,
+,,,,,,,,,6,,,,Kitos paslaugos,
+,,,,,,,,,7,,,,Patologija,
+,,,,,,,,,8,,,,Audinių bankas,
+,,,,,,,,,9,,,,Antrinė,
+,,,,,,,,,10,,,,LAASPP,
+,,,,,,,,,11,,,,LSASPP,
+,,,,,,,,,12,,,,Pirminė,
+,,,,,,,,,13,,,,Tretinė,
+,,,,,,,,,14,,,,Bendrosios paslaugos,
+,,,,,paslaugos_lygio_id,integer,,,,4,open,,Paslaugos lygio identifikatorius,
+,,,,,,enum,,,0,,,,neįvardintas,
+,,,,,,,,,1,,,,pirminis lygis (I),
+,,,,,,,,,2,,,,antrinis lygis (II),
+,,,,,,,,,3,,,,tretinis lygis (III),
+,,,,,paslaugos_tipo_id,integer,,,,4,open,,Paslaugos tipo identifikatorius,
+,,,,,,enum,,,1,,,,AP,
+,,,,,,,,,2,,,,BP,
+,,,,,,,,,3,,,,KTP,
+,,,,,,,,,4,,,,SP,
+,,,,,id,string,,,,4,open,,Identifikatorius,
+,,,,,paslauga,string,,,,4,open,,Paslauga,
+,,,,,etap_id,integer,,,,4,open,,Identifikatorius,
+,,,,,istaigos_paslaugos_profilio_id,string,,,,4,open,,Paslaugos profilio identifikatorius,
+,,,,,etapo_id,string,,,,4,open,,Etapo identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Paslaugos profilio etapo pavadinimas,
+,,,,,profilio_id,integer,,,,4,open,,Paslaugos profilio identifikatorius,
+,,,,,paslaugos_id,integer,,,,4,open,,Paslaugos identifikatorius,
+,,,,,,,,,,,,,,
+,,,,IstaigosPaslauguProfilis,,,,,,4,open,,Istaigos paslaugu profiliai,
+,,,,,id,integer,,,,4,open,,Identifikatorius,
+,,,,,paslauga,string,,,,4,open,,Paslauga,
+,,,,,profilio_id,string,,,,4,open,,Paslaugos profilio identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Paslaugos profilio pavadinimas,
+,,,,,paslaugos_id,ref,,/datasets/gov/vaspvt/licencijos/IstaigosPaslauga,,4,open,,Paslaugos identifikatorius,
+,,,,,,,,,,,,,,
+,,,,LaboratorinisTyrimas,,,,,,4,open,,Laboratoriniai tyrimai,
+,,,,,eminio_id,integer,,,,4,open,,Ėminio identifikatorius,
+,,,,,tyrimo_id,integer,,,,4,open,,Tyrimo identifikatorius,
+,,,,,analites_id,integer,,,,4,open,,Analitės identifikatorius,
+,,,,,labor_tyrimo_id,string,,,,4,open,,Laboratorinio tyrimo identifikatorius,
+,,,,,analites_pavadinimas,string,,,,4,open,,Analitės pavadinimas,
+,,,,,tyrimas_pavadinimas,string,,,,4,open,,Tyrimo pavadinimas,
+,,,,,eminiai_pavadinimas,string,,,,4,open,,Ėminio pavadinimas,
+,,,,,,,,,,,,,,
+,,,,VeiklosAdresoPaslauga,,,,,,4,open,,Veiklos adresų paslaugos,
+,,,,,veiklos_adreso_paslaugos_id,string,,,,4,open,,Veiklos adreso paslaugos identifikatorius,
+,,,,,paslaugos_lygio_id,integer,,,,4,open,,Paslaugos lygio identifikatorius,
+,,,,,,enum,,,0,,,,neįvardintas,
+,,,,,,,,,1,,,,pirminis lygis (I),
+,,,,,,,,,2,,,,antrinis lygis (II),
+,,,,,,,,,3,,,,tretinis lygis (III),
+,,,,,paslaugos_budo_id,integer,,,,4,open,,Paslaugos būdo identifikatorius,
+,,,,,,enum,,,0,,,,(Nėra reikšmės),
+,,,,,,,,,1,,,,Ambulatorinė,
+,,,,,,,,,2,,,,Stacionari,
+,,,,,,,,,3,,,,Bendroji,
+,,,,,grupes_pavadinimas,string,,,,4,open,,Paslaugų grupės pavadinimas,
+,,,,,lygiai_pavadinimas,string,,,,4,open,,Paslaugos lygio pavadinimas,
+,,,,,paslaugos_pavadinimas,string,,,,4,open,,Paslaugos pavadinimas,
