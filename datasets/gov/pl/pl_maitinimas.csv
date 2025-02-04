@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/pl/maitinimo_paraiskos,,,,,,,,,,,,Prienų ligoninės maitinimo paraiškos,
+,,,,,,,,,,,,,,
+,,,,Maitinimas,,,vda_id,,,4,,,Prienų ligoninės maitinimo paraiškos,"Šiame rinkinyje pateikiamas Prienų ligoninės maitinimo paraiškos: dienos patiekalų sąrašas, dietos, dienos maistinė vertė, valgančiųjų kiekis. Duomenys pateikiami nuo 2019 metų pabaigos iki dabar."
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
+,,,,,diena,date,D,,,4,open,,Maitinimo data,
+,,,,,porciju_kiekis,integer,,,,4,open,,Porcijų kiekis,
+,,,,,valgymas,string,,,,4,open,,Valgymo pavadinimas,
+,,,,,,enum,,,"""Pusryčiai""",,,,Pusryčiai,
+,,,,,,,,,"""Priešpiečiai""",,,,Priešpiečiai,
+,,,,,,,,,"""Pietūs""",,,,Pietūs,
+,,,,,,,,,"""Pavakariai""",,,,Pavakariai,
+,,,,,,,,,"""Vakarienė""",,,,Vakarienė,
+,,,,,,,,,"""Nakčiai""",,,,Naktipiečiai,
+,,,,,norma,number,,,,2,open,,Norma,Įsakymu nustatyta ligonių visos dienos maitinimo piniginė norma.
+,,,,,valgantis_padalinys,string,,,,4,open,,Valgančio padalinio pavadinimas,
+,,,,,patiekalas,string,,,,4,open,,Atsargos pavadinimas,
+,,,,,patiekalo_grupe,string,,,,4,open,,Grupės pavadinimas,
+,,,,,patiekalo_savikaina,number,,,,4,open,,Atsargos savikaina,
+,,,,,dietos_pavadinimas,string,,,,2,open,,Dietos pavadinimas,
