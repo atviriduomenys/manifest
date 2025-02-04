@@ -32,4 +32,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_kirsti,string,,,,4,open,,Dokumento numeris leidžiantis kirtimą,
 ,,,,,ar_zeldinti,string,,,,4,open,,Identifikatorius nurodantis ar reikalingas papildomas želdinimas,
 ,,,,,zeldyno_koordinates,"geometry(polygon,3346)",m,,,3,open,,Želdyno ribos nurodytos  koordinatėmis LKS koordinačių sistemoje,
-,,,,,padalinto_zeldyno_koordinates,"geometry(multipolygon,3346)",,,,3,open,,"Želdyno ribos nurodytos  koordinatėmis LKS koordinačių sistemoje, kai Želdynas padalintas i kelias dalis",
+,,,,,padalinto_zeldyno_koordinates,"geometry(multipolygon,3346)",,,,3,open,,"Želdyno ribos nurodytos  koordinatėmis LKS koordinačių sistemoje, kai Želdynas padalintas į kelias dalis",
