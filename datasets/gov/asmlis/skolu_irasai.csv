@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Telsiuv_irasas,,,vda_prime_key,,,4,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
+,,,,TelsiuvIrasas,,,vda_prime_key,,,4,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus lentelės raktas,
 ,,,,,skolos_iraso_id,string,,,,4,open,,Skolos įrašo indetifikatorius,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikatorius,
