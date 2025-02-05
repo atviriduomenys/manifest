@@ -3,7 +3,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 ,,,,Telsiuv_irasas,,,vda_prime_key,,,4,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus lentelės raktas,
 ,,,,,skolos_iraso_id,string,,,,4,open,,Skolos įrašo indetifikatorius,
@@ -26,7 +25,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis_asmk,string,,,,4,open,,Skolininko lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Vyras""",,,,Vyras,
-,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,
-,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,
-,,,,,geometrija,string,,,,4,open,,Paslaugos teikimo vietos koordinatės wgs,
+,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį
+,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį
+,,,,,geometrija,string,,,,4,open,,Paslaugos teikimo vietos koordinatės,Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
+,,,,,,,,,,,,,,
