@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/asmlis/skolu_irasai,,,,,,,,,,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
+,datasets/gov/asmlis/skolu_irasai,,,,,,,,,,,,Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Asmilis” ir „Mokesta”  aptarnaujančios savivaldybes ir joms pavaldžias įstaigas vartotojų skolų įrašai.,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
