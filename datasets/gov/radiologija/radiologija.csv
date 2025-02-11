@@ -370,4 +370,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,fotometrine_interpretacija,string,,,,4,open,,Tyrimo atvaizdo fotometrinė interpretacija,
 ,,,,,,enum,,,"""MONOCHROME1""",,,,Monochromas 1,
 ,,,,,,,,,"""MONOCHROME2""",,,,Monochromas 2,
-,,,,,,,,,"""RGB""",,,,Raudona, žalia, mėlyna,
+,,,,,,,,,"""RGB""",,,,"Raudona, žalia, mėlyna",
