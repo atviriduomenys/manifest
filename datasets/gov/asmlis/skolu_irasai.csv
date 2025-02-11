@@ -52,9 +52,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis_asmk,string,,,,4,open,,Skolininko lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Vyras""",,,,Vyras,
-,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,
-,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,
-,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,
+,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
 ,,,,,,,,,,,,,,
 ,,,,KretingosSTIrasas,,,vda_prime_key,,,4,,,"Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Mokesta”  UAB ""Kretingos šilumos tinklai"" vartotojų skolų įrašai.",
@@ -79,9 +79,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis_asmk,string,,,,4,open,,Skolininko lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Vyras""",,,,Vyras,
-,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,
-,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,
-,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,
+,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
 ,,,,,,,,,,,,,,
 ,,,,SakiuSilumaIrasas,,,vda_prime_key,,,4,,,"Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Mokesta”  UAB ""Šakių šiluma"" vartotojų skolų įrašai.",
@@ -106,7 +106,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lytis_asmk,string,,,,4,open,,Skolininko lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Vyras""",,,,Vyras,
-,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,
-,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,
-,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,
+,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
