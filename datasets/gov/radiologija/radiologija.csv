@@ -393,7 +393,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tirta_kuno_dalis,string,,,,4,open,,Tyrimo serijos metu tirta paciento kūno dalis,
 ,,,,,paciento_lateralumas,string,,,,4,open,,Paciento lateralumas tyrimo serijos metu,
 ,,,,,tyrimo_serijos_modalumas,string,,,,4,open,,Tyrimo serijos modalumas,
-,,,,,,,,,"""CR""",,CT CR DX OT PR IO,,Apskaičiuota radiografija,
+,,,,,,,,,"""CR""",,,,Apskaičiuota radiografija,
 ,,,,,,,,,"""OT""",,,,Kita,
 ,,,,,,,,,"""PR""",,,,Prezentacijos būsena,
 ,,,,,,,,,"""IO""",,,,Intraoralinė radiografija,
