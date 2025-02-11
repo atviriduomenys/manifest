@@ -41,7 +41,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
 ,,,,,sutarties_pavadinimas,string,,,,2,open,,Sutarties pavadinimas,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
-,,,,,finansuojama_suma,number,,,,4,open,,Sutarties finasuoujama suma,
+,,,,,finansuojama_suma,number,,,,4,open,,Sutarties finansuojama suma,
 ,,,,,ismoketa_suma,number,,,,4,open,,Išmokėta suma,
 ,,,,,sutarties_isigaliojimo_data,date,D,,,4,open,,Sutarties įsigaliojimo data,
 ,,,,,sutarties_pabaigos_data,date,D,,,4,open,,Sutarties pabaigos data,
