@@ -22,3 +22,4 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,ItakosDeklaracija,,,vda_id,,,4,,,"Asmenų, patyrusių lobistinę įtaką, pateiktų deklaracijų skaičius",Pateikiama mėnesinė patirtos lobistinės įtakos deklaracijų statistika.
 ,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
 ,,,,,data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,paskelbta,integer,,,,4,open,,Paskelbtų daklaracijų skaičius per mėnesį,
