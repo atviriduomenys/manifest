@@ -1,0 +1,25 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vtek,,,,,,,,,,,,Vyriausioji tarnybinės etikos komisija,
+,datasets/gov/vtek/ataskaita,,,,,,,,,,,,Lobistinės veiklos statistiniai duomenys,"Rinkinyje pateikiami Vyriausiosios tarnybinės etikos komisijos (VTEK) Lobistinės veiklos duomenų tvarkymo informacinės sistemos agreguoti duomenys apie registruotus lobistus, lobistų pateiktas skaidrumo deklaracijas ir asmenų, patyrusių lobistinę įtaką, pateiktas deklaracijas pamėnesiui. Duomenys pateikiami nuo 2021 m. Pažymėtina, jog lobistais laikomi fiziniai arba juridiniai asmenys, vykdantys lobistinę veiklą. Kaip numatyta Lietuvos Respublikos lobistinės veiklos įstatyme, prisistatydami asmeniui, kuriam siekiama daryti įtaką, lobistai privalo pateikti VTEK išduotą lobisto pažymėjimą, nurodyti lobistinės veiklos užsakovą, naudos gavėją, diskutuojamą teisės akto projektą ir per septynias dienas pateikti skaidrių teisėkūros procesų deklaraciją. Asmenys, kuriems lobistine veikla siekiama daryti įtaką, taip pat privalo per septynias dienas deklaruoti patirtą įtaką dėl kiekvieno teisės akto projekto.
+Duomenų teikėjas – Vyriausioji tarnybinės etikos komisija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Lobistas,,,vda_id,,,4,,,Lobistų skaičius pagal asmens tipą,Pateikiamos aktyviai veikiančių fizinių ir juridinių asmenų suvestinės.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,viso_fiziniu,integer,,,,4,open,,Bendras aktyvių fizinių lobistų skaičius įskaičiuojant ir ankstesnių mėnesių duomenis,
+,,,,,viso_juridiniu,integer,,,,4,open,,Bendras aktyvių juridinių asmenų lobistų skaičius įskaičiuojant ir ankstesnių mėnesių duomenis,
+,,,,,viso_lobistu,integer,,,,4,open,,Bendras aktyvių fizinių ir juridinių lobistų skaičius,
+,,,,,,,,,,,,,,
+,,,,SkaidrumoDeklaracija,,,vda_id,,,4,,,Pateiktų lobistų skaidrumo deklaracijų skaičius,Pateikiama per mėnesį registruotų lobistų skaidrumo deklaracijų statistika.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,paskelbta,integer,,,,4,open,,Paskelbtų daklaracijų skaičius per mėnesį,
+,,,,,viso_paskelbta,integer,,,,4,open,,Bendras paskelbtų deklaracijų skaičius nuo stebėjimų pradžios,
+,,,,,,,,,,,,,,
+,,,,ItakosDeklaracija,,,vda_id,,,4,,,"Asmenų, patyrusių lobistinę įtaką, pateiktų deklaracijų skaičius",Pateikiama mėnesinė patirtos lobistinės įtakos deklaracijų statistika.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,paskelbta,integer,,,,4,open,,Paskelbtų daklaracijų skaičius per mėnesį,
