@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sgr/gyventojai_gyvenvietese,,,,,,,,,,,,gyventojų skaičius gyvenvietėse,"""Gyventojų skaičius gyvenvietėse"""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,GyventojuSkaiciusGyvenvietese,,,gr_gyv_id,,,4,,,,"""Gyventojų skaičius gyvenvietėse ir gyvenviečių koordinates. Dėl techninių klausimų ar klaidų kreiptis į atverimas@stat.gov.lt"""
+,,,,,gr_gyv_id,string,,,,4,open,,"""Gyvenvietės identifikacinis kodas""",
+,,,,,gyv_pav,string,,,,4,open,,"""Gyvenvietės pavadinimas""",
+,,,,,gyventoju_sk,number,,,,4,open,,"""Gyventojų skaičius""",
+,,,,,taskas_wgs,geometry(4326),,,,4,open,,"""Koordinate wgs 84 formatu""",
