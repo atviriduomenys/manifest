@@ -1,0 +1,10 @@
+id	dataset	resource	base	model	property	type	ref	source	prepare	level	access	uri	title	description
+	datasets/gov/lsd/sgr/gyventojai_gyvenvietese												gyventojø skaièius gyvenvietëse	"""Gyventojø skaièius gyvenvietëse """
+						prefix	spinta					https://github.com/atviriduomenys/spinta/issues/		
+							manifest					https://github.com/atviriduomenys/manifest/issues/		
+														
+				GyventojaiGyvenvietese			gr_gyv_id			4				"""Gyventojø skaièius  gyvenvietese ir gyvenvieciu koordinates"""
+					gr_gyv_id	string				4	open		"""Gyvenvietes identifikacinis kodas"""	
+					gyv_pav	string				4	open		"""Gyvenvietes pavadinimas"""	
+					gyventoju_sk	number				4	open		"""Gyventojø skaièius"""	
+					taskas_wgs	geometry(4326)				4	open		"""Koordinate wgs 84 formatu"""	
