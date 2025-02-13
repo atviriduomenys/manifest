@@ -1,0 +1,23 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kvjud/meteo_duomenys,,,,,,,,,,,,Klaipėdos uosto šiaurinio molo meteo informacija,"AB Klaipėdos valstybinio jūrų uosto direkcijos geografinėje informacinėje sistemoje PortGIS kaupiami uoste esančių meteorologinių stotelių matavimo duomenys. Rinkinyje pateikiami nuo 2024 m. gruodžio mėnesio kaupiami šiaurinio molo meteorologiniai duomenys. Šių matavimų metu matuojamas slėgis, rasos taškas, santykinė drėgmė, temperatūra, vėjo kryptis bei greitis. Vienas įrašas atitinka vieną matavimą.
+Matavimo stotelės koordinatės: 55.73057 21.07975.
+Duomenų teikėjas – AB Klaipėdos valstybinio jūrų uosto direkcija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Matavimas,,,matavimo_laikas,,,4,,,Klaipėdos uosto šiaurinio molo meteo informacija,"AB Klaipėdos valstybinio jūrų uosto direkcijos geografinėje informacinėje sistemoje PortGIS kaupiami uoste esančių meteorologinių stotelių matavimo duomenys. Rinkinyje pateikiami nuo 2024 m. gruodžio mėnesio kaupiami šiaurinio molo meteorologiniai duomenys. Šių matavimų metu matuojamas slėgis, rasos taškas, santykinė drėgmė, temperatūra, vėjo kryptis bei greitis. Vienas įrašas atitinka vieną matavimą.
+Matavimo stotelės koordinatės: 55.73057 21.07975.
+Duomenų teikėjas – AB Klaipėdos valstybinio jūrų uosto direkcija.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,matavimo_laikas,datetime,S,,,4,open,,Meteo sąlygų matavimo laikas,
+,,,,,bp_a_hpa,number,hPa,,,4,open,,Slėgis (hPa),
+,,,,,dew_p_c,number,°C,,,4,open,,Rasos taškas (C),
+,,,,,rel_hum_a_p,number,%,,,4,open,,Santykinė drėgmė (%),
+,,,,,temp_a_c,number,°C,,,4,open,,Temperatūra (C),
+,,,,,vsb_m,number,m,,,4,open,,Matomumas (m),
+,,,,,wind_dir_deg,number,°,,,4,open,,Vėjo kryptis (°),
+,,,,,wind_speed_a_mps,number,m/s,,,4,open,,Vėjo greitis (vidutinis) (m/s),
+,,,,,wind_speed_g_mps,number,m/s,,,4,open,,Vėjo greitis (maksimalus/gūsiai) (m/s),
+,,,,,wind_speed_min_mps,number,m/s,,,4,open,,Vėjo greitis (minimalus) (m/s),
