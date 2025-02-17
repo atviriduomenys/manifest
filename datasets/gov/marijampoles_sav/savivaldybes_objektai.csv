@@ -10,7 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,objekto_aprasymas,string,,,,4,open,,Objekto aprašymas,
 ,,,,,,enum,,,"""Žemės sklypas""",,,,,
 ,,,,,,,,,"""Žemės sklypo dalis""",,,,,
-,,,,,plotas_ha,double,,,,4,open,,Plotas hektarais,
+,,,,,plotas_ha,number,,,,4,open,,Plotas hektarais,
 ,,,,,sutarties_numeris,string,,,,4,open,,Sutarties numeris,
 ,,,,,sutarties_pasirasymo_data,date,D,,,4,open,,Sutarties pasirašymo data,
 ,,,,,sutarties_galiojimo_pabaiga,date,D,,,4,open,,Sutarties galiojimo pabaigos data,
