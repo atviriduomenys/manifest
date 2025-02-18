@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Netinkamas pirmas skaitmuo""",,,,Netinkamas pirmas skaitmuo,
 ,,,,,,,,,"""Netinkama gimimo data""",,,,Netinkama gimimo data,
 ,,,,,pazymejimas_galioja_nuo,date,D,,,4,open,,Išduotas vairuotojo pažymėjimas galioja nuo,
-,,,,,galiojimo_busena,string,,,,4,open,,Varuotojo pažymėjimo galiojimo busena,
+,,,,,galiojimo_busena,string,,,,4,open,,Vairuotojo pažymėjimo galiojimo busena,
 ,,,,,,enum,,,"""Galioja""",,,,Vairuotojo pažymėjimas galioja,
 ,,,,,kraujo_grupe_abo,string,,,,4,open,,Asmens kraujo grupė,
 ,,,,,,enum,,,"""I( O )""",,,,Pirma grupė,
