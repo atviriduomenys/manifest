@@ -1,13 +1,13 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/pagd/pranesimai,,,,,,,,,,,,Žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ,Informacija apie trumpasias žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ir jų zonas 
+,datasets/gov/pagd/pranesimai,,,,,,,,,,,,Žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ,Informacija apie trumpąsias žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ir jų zonas 
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pranesimas,,,issiustu_pranesimu_id,,,4,,,Žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ,Informacija apie trumpasias žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ir jų zonas 
+,,,,Pranesimas,,,issiustu_pranesimu_id,,,4,,,Žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ,Informacija apie trumpąsias žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ir jų zonas 
 ,,,,,issiustu_pranesimu_id,string,,,,4,open,,Išsisųstų pranešimų identifikatorius,
-,,,,,ivykio_data,datetime,,,,4,open,,Įvykio data,
-,,,,,siunciamu_pranesimu_pradzia,datetime,,,,4,open,,Siunčiamų pranešimų pradžios laikas,
-,,,,,siunciamu_pranesimu_pabaiga,datetime,,,,4,open,,Siunčiamų pranešimų pabaigos laikas,
+,,,,,ivykio_data,datetime,1S,,,4,open,,Įvykio data,
+,,,,,siunciamu_pranesimu_pradzia,datetime,1S,,,4,open,,Siunčiamų pranešimų pradžios laikas,
+,,,,,siunciamu_pranesimu_pabaiga,datetime,1S,,,4,open,,Siunčiamų pranešimų pabaigos laikas,
 ,,,,,pranesimo_tekstas_lt,string,,,,4,open,,Siunčiamo pranešimo tekstas lietuvių kalba,
 ,,,,,,comment,type,,"update(property: ""pranesimo_tekstas_lt@lt"", type: ""text"")",,,spinta:204,,
 ,,,,,ivykio_vietoves_aprasymas_lt,string,,,,4,open,,Įvykio vietovės aprašymas,
