@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,mokslo_sritis,string,,,,4,open,,Mokslo (meno) sritis,
 ,,,,,wos_straipsnio_id,string,,,,4,open,,"WOS (""Web of Science"") darbo (straipsnio) identifikatorius",
 ,,,,,top_straipsnio_id,string,,,,4,open,,Top darbo (straipsnio) identifikatorius,
-,,,,,straipsnis_top_metai,date,Y,,,4,open,,"Metai, kai darbas (straipnis) buvo vertinamas kaip top darbas",
+,,,,,straipsnis_top_metai,date,Y,,,4,open,,"Metai, kai darbas (straipsnis) buvo vertinamas kaip top darbas",
 ,,,,,straipsnio_pavadinimas,string,,,,4,open,,Darbo (straipsnio) pavadinimas,
 ,,,,,straipsnio_autoriai,string,,,,4,open,,Darbo (straipsnio) autoriai,
 ,,,,,autoriu_sk,integer,U,,,4,open,,Darbo (straipsnio) autorių skaičius,
