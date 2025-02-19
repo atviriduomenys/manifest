@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,ZemesSklypas,,,vda_prime_key,,,4,,,Sutartys dėl žemės sklypų,Informacija apie  Marijampolės savivaldybės sudarytas sutartis dėl žemės sklypų  
-,,,,,vda_prime_key,string,,,,,,,VDA eilutes identifikatorius,
+,,,,,vda_prime_key,string,,,,4,open,,VDA eilutes identifikatorius,
 ,,,,,objekto_id,string,,,,4,open,,Objekto identifikatorius,
 ,,,,,ntr_kodas,string,,,,4,open,,Nekilnojamo turto registro kodas,
 ,,,,,objekto_aprasymas,string,,,,4,open,,Objekto aprašymas,
