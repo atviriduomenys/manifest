@@ -16,4 +16,4 @@
 ,,,,,kitas_statusas,string,,,,4,open,,Papildomas vietovardžio statusas,
 ,,,,,kiti_variantai,string,,,,4,open,,Kiti vietovardžio variantai,
 ,,,,,papildoma_informacija,string,,,,4,open,,Papildoma informacija apie vietovardį,
-,,,,,nuorodos_kodai,string,,,,4,open,,Nuorodos į susijusius arba panašius vietovardžius,
+,,,,,susije_vietovardziai,string,,,,4,open,,Nuorodos į susijusius arba panašius vietovardžius,
