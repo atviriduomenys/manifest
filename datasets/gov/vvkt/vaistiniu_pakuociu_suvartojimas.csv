@@ -7,7 +7,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,ParduotaPakuote,,,vda_prime_key,,,,,,Vaistinių preparatų pakuočių pardavimai,
 ,,,,,vda_prime_key,string,,,,,,,VDA identifikatorius,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
 ,,,,,pakid,string,,,,,,,Pakuotės identifikatorius,Unikalus pakuotės identifikavimo kodas
-,,,,,data,date,,,,,,,Data,"""Data, nurodanti pardavimų skaičių už konkretų mėnesį"""
+,,,,,data,date,M,,,,,,Data,"""Data, nurodanti pardavimų skaičių už konkretų mėnesį"""
 ,,,,,atc_kodas,string,,,,,,,ATC kodas,"""ATC (Anatomical Therapeutic Chemical) kodas – tarptautinė vaistų klasifikacijos sistema, kuri priskiria vaistus pagal jų terapinę ir cheminę klasifikaciją"""
 ,,,,,bendrinis_pavadinimas,string,,,,,,,Bendrinis pavadinimas,"""Vaisto ar produkto bendrinis pavadinimas, kuris nėra prekės ženklas, bet apibūdina aktyvųjį ingredientą ar komponentus"""
 ,,,,,farmacine_forma,string,,,,,,,Farmacinė forma,Vaisto ar produkto fizinė forma
