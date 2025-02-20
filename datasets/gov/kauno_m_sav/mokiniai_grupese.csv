@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Mokinys,,,id,,,4,,,"""Rinkinyje pateikiama Kauno m. savivaldybės neformalaus ugdymo grupių užimtumo informacija nuo 2021 m. rugsėjo mėn.""",
+,,,,Mokinys,,,id,,,4,,,Neformalaus ugdymo grupių mokiniai,"""Rinkinyje pateikiama Kauno m. savivaldybės neformalaus ugdymo grupių užimtumo informacija nuo 2021 m. rugsėjo mėn."""
 ,,,,,id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,mokinio_id,string,,,,4,open,,Unikalus mokinio id,
 ,,,,,grupes_id,string,,,,4,open,,Unikalus grupės id,
