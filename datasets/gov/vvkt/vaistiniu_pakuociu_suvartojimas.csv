@@ -20,7 +20,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,komponento_kiekis,integer,,,,,,,Komponento kiekis,"""Komponento kiekis vaisto ar produkto pakuotėje"""
 ,,,,,ddd_skaicius,integer,,,,,,,Skaitinė DDD vertė,"""Numanoma vidutinė paros dozė vaistui. DDD - Defined daily dose"""
 ,,,,,ddd_vertimo_i_g_koef,integer,,,,,,,DDD koeficientas,"""Koeficientas, naudojamas DDD konvertavimui į gramus"""
-,,,,,pardavimai,string,,,,,,,Vaistų pardavimo tipai,
+,,,,,pardavimai,string,,,,,,, Vaistinio preparato pakuotės pardavimo vietos tipas,
 ,,,,,,enum,,"""ASPĮ""",,,,,ASPĮ,
 ,,,,,,,,"""Vaistinėms""",,,,,Vaistinėms,
 ,,,,,,,,"""Pavieniams pacientams""",,,,,Pavieniams pacientams,
