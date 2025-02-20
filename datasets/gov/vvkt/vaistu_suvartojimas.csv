@@ -21,7 +21,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,ddd_skaicius,integer,,,,4,open,,Skaitinė DDD vertė,"""Numanoma vidutinė paros dozė vaistui. DDD - Defined daily dose"""
 ,,,,,ddd_vertimo_i_g_koef,integer,,,,4,open,,DDD koeficientas,"""Koeficientas, naudojamas DDD konvertavimui į gramus"""
 ,,,,,pardavimai,string,,,,4,open,,Vaistinio preparato pakuotės pardavimo vietos tipas,
-,,,,,,enum,,"""ASPĮ""",,,,,ASPĮ,
+,,,,,,enum,,"""ASPĮ""",,,,,Asmens sveikatos priežiūros įstaigos,
 ,,,,,,,,"""Vaistinėms""",,,,,Vaistinėms,
 ,,,,,,,,"""Pavieniams pacientams""",,,,,Pavieniams pacientams,
 ,,,,,,,,"""Mažmenai""",,,,,Mažmenai,
