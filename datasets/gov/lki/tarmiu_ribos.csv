@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lki/tarmiu_ribos,,,,,,,,,,,,Tarmių ribos,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TarmesRiba,,,tarmes_riba_id,,,4,,,Tarmių ribos,"Rinkinyje pateikiamos lietuviškų tarmių ribų geometrijos (https://maps.lki.lt/). Rinkinį sudaro tarmės pavadinimas, jos trumpinys ir tarmės ribų geometrija, pateikta dvejetainiu, LKS, WGS84 geometrijos formatais. Duomenis teikia Lietuvių kalbos institutas (LKI). Šis duomenų rinkinys šiuo metu pateikiamas tik informaciniais tikslais ir negali būti naudojamas moksliniams tyrimams. Jame gali būti preliminarių ar pasenusių duomenų. Atnaujinimas planuojamas 2026 m. balandį, apie kurį bus pranešta kartu su naujausia versija. Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,tarmes_riba_id,string,,,,4,open,,Tarmės ribų identifikatorius,
+,,,,,tarme_trump,string,,,,4,open,,Tarmės pavadinimo trumpinys,
+,,,,,tarme_pav,string,,,,4,open,,Tarmės pavadinimas,
+,,,,,geometrija,string,,,,4,open,,Tarmės ribų geometrija (pateikta dvejetainiu geometrijos formatu šešioliktainiu kodavimu),
+,,,,,vda_geometrija,"geometry(multipolygon,3346)",,,,4,open,,"Tarmės ribų geometrija (WGS84, platuma ir ilguma)",
