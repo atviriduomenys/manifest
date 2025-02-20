@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvkt/vaistu_suvartojimas,,,,,,,,,,,,Vaistinių preparatų pakuočių pardavimai,"""Duomenų rinkinyje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie mėnesinius vaistinių preparatų pakuočių pardavimus vaistinėse, asmens sveikatos priežiūros įstaigose, mažmenoje ir pavieniams asmenims. Kiekviena eilutė nurodo, kiek konkrečios vaistų pakuotės vienetų buvo parduota atitinkamą mėnesį. Taip pat nurodoma papildoma informacija apie pakuotę: ATC kodas, bendrinis vaisto pavadinimas, stiprumas, farmacinė forma, pakuotės aprašymas, pakuotės pirminis ir antrinis dydis, komponeneto kiekis, nustatytos paros dozės vertė (DDD) bei vaisto komponento ir DDD kiekio vertimo į gramus koeficientas. Paskutiniai du stulpeliai nurodo vaistinio preparato pakuotės pardavimo vietos tipą ir pardavimų skaičių vienetais.""
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,ParduotaPakuote,,,vda_prime_key,,,4,,,Vaistinių preparatų pakuočių pardavimai,
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
+,,,,,pakid,string,,,,4,open,,Pakuotės identifikatorius,Unikalus pakuotės identifikavimo kodas
+,,,,,data,date,M,,,4,open,,Data,"""Data, nurodanti pardavimų skaičių už konkretų mėnesį"""
+,,,,,atc_kodas,string,,,,4,open,,ATC kodas,"""ATC (Anatomical Therapeutic Chemical) kodas – tarptautinė vaistų klasifikacijos sistema, kuri priskiria vaistus pagal jų terapinę ir cheminę klasifikaciją"""
+,,,,,bendrinis_pavadinimas,string,,,,4,open,,Bendrinis pavadinimas,"""Vaisto ar produkto bendrinis pavadinimas, kuris nėra prekės ženklas, bet apibūdina aktyvųjį ingredientą ar komponentus"""
+,,,,,farmacine_forma,string,,,,4,open,,Farmacinė forma,Vaisto ar produkto fizinė forma
+,,,,,pakuote,string,,,,4,open,,Pakuotės aprašymas,
+,,,,,pakuotes_pirminis_dydis,integer,,,,4,open,,Pirminis pakuotės dydis,"""Pirminis pakuotės dydis, nurodantis vaistinio preparato dozės skaitinę talpą"""
+,,,,,pakuotes_antrinis_dydis,integer,,,,4,open,,Antrinis pakuotės dydis,"""Antrinis pakuotės dydis, nurodantis dozių skaičių pakuotėje"""
+,,,,,stiprumas,string,,,,4,open,,Vaisto stiprumas,
+,,,,,stiprumas_skaicius,integer,,,,4,open,,Stiprumo skaitinė vertė,
+,,,,,vertimo_i_g_koef,integer,,,,4,open,,Vaisto stiprumo koeficientas,"""Koeficientas, naudojamas konvertuoti vaisto kiekį į gramus"""
+,,,,,komponento_kiekis,integer,,,,4,open,,Komponento kiekis,"""Komponento kiekis vaisto ar produkto pakuotėje"""
+,,,,,ddd_skaicius,integer,,,,4,open,,Skaitinė DDD vertė,"""Numanoma vidutinė paros dozė vaistui. DDD - Defined daily dose"""
+,,,,,ddd_vertimo_i_g_koef,integer,,,,4,open,,DDD koeficientas,"""Koeficientas, naudojamas DDD konvertavimui į gramus"""
+,,,,,pardavimai,string,,,,4,open,,Vaistinio preparato pakuotės pardavimo vietos tipas,
+,,,,,,enum,,"""ASPĮ""",,,,,Asmens sveikatos priežiūros įstaigai,
+,,,,,,,,"""Vaistinėms""",,,,,Vaistinėms,
+,,,,,,,,"""Pavieniams pacientams""",,,,,Pavieniams pacientams,
+,,,,,,,,"""Mažmenai""",,,,,Mažmenai,
+,,,,,parduota_vnt,integer,,,,4,open,,Parduoti vienetai,Parduotas vaistinių preparatų skaičius
