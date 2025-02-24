@@ -21,3 +21,17 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,tikslumas,number,,,,4,open,,TIklsumas,
 ,,,,,koodinates_saltinis,string,,,,4,open,,"Koordinatės šaltinis (gps - navigaciją, foreign - išoriniai, kiti šaltiniai)",
 ,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
+,,,,,,,,,,,,,,
+,,,,KedainiuSiuksliavezioMarsrutas,,,vda_prime_key,,,4,,,Kėdainių rajono šiukšliavežių maršrutai,"Kėdainių rajono savivaldybės administracijos informacinėje sistemoje MOKESTA kaupiami atliekų tvarkymo rinkliavų duomenys ir kitus duomenis. Duomenų rinkinyje pateikiami šiukšliavežių maršrutų duomenys:šifruotas automobilio valstybinis numeris, automobilio markė, laikas ir koordinatės, nurodančios vietą, kurioje tuo metu buvo automobilis. 
+
+Duomenų teikėjas – Kėdainių rajono savivaldybės administracija. "
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,marsrutas,string,,,,4,open,,Maršrutas,
+,,,,,automobilio_nr,string,,,,4,open,,Automobilio numeris (šifruotas),
+,,,,,marke,string,,,,4,open,,Automobilio markė,
+,,,,,data,datetime,S,,,4,open,,Data,
+,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,tikslumas,number,,,,4,open,,TIklsumas,
+,,,,,koodinates_saltinis,string,,,,4,open,,"Koordinatės šaltinis (gps - navigaciją, foreign - išoriniai, kiti šaltiniai)",
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
