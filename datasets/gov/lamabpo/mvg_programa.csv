@@ -1,0 +1,50 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lamabpo/mvg_programa,,,,,,,,,,,,Projekto „Mokykis visą gyvenimą!“ dalyvių ir kursų duomenys,"""Rinkinyje pateikiama informacija apie projekto „Mokykis visą gyvenimą!“ (MVG) dalyvius ir vykdomas kursų programas. Rinkinį sudaro dvi lentelės – „MVG dalyvių duomenys“ ir „MVG kursų duomenys“.
+Duomenų teikėjas – Lietuvos aukštųjų mokyklų asociacija bendram priėmimui organizuoti (LAMA BPO). Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,KursoDalyvis,,,vda_prime_key,,,4,,,MVG dalyvių duomenys,"""Lentelėje pateikiami MVG programoje dalyvaujančių ar praeityje dalyvavusių dalyvių duomenys. Vienoje eilutėje pateikiama informacija apie vieną mokinį, priskirtą atitinkamai MVG kursų grupei. Eilutės duomenys apima: unikalų eilutės identifikatorių, mokinio identifikacinį numerį, grupės identifikacinį numerį, gimimo metus, lytį, gyvenamąją apskritį, datą, kada mokinys užsiregitravo į mokymus, bei požymį, nurodantį, ar mokinys įgijo kurso baigimo pažymėjimą ir kursų kainos dalis, kurias finansavo pats mokinys ir valstybė. Kiekvienas mokinys priskiriamas kursų grupei pagal grupės identifikacinį kodą."""
+,,,,,vda_prime_key,string,,,,4,open,,Eilutės identifikacinis numeris,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
+,,,,,mokinio_id,string,,,,4,open,,Mokinio identifikacinis numeris,"Programos ""Mokykis visą gyvenimą"" mokinio identifikacinis numeris"
+,,,,,grupes_id_numeris,string,,,,4,open,,Kursų grupės identifikacinis numeris,Kursų grupės identifikacinis numeris
+,,,,,gimimo_metai,date,Y,,,4,open,,Mokinio gimimo metai,Gimimo metai gauti iš mokinio asmens kodo ir suapvalinti iki metų
+,,,,,lytis,string,,,,4,open,,Mokinio lytis,Lytis gauta iš mokinio asmens kodo
+,,,,,,enum,,"""V""",,,,,Vyras,
+,,,,,,,,"""M""",,,,,Moteris,
+,,,,,vietove,string,,,,4,open,,Mokinio gyvenamoji vietovė,
+,,,,,registracijos_data,date,D,,,4,open,,Registracijos data,"""Data, kada mokinys užsiregistravo į kursus"""
+,,,,,pazymejimas,boolean,,,,4,open,,Pažymėjimo statusas,"""Požymis, nurodantis ar mokinys įgijo programos pažymėjimą"""
+,,,,,finansavimas_valst,integer,,,,4,open,,Valstybės finansavimas,Valstybės finansuojama suma eurais už kursus
+,,,,,finansavimas_mok,integer,,,,4,open,,Mokinio finansavimas,Mokinio finansuojama suma eurais už kursus
+,,,,,,,,,,,,,,
+,,,,KursoGrupe,,,kursu_grupes_id,,,4,,,MVG kursų duomenys,"""Lentelėje pateikiami projekte „Mokykis visą gyvenimą!“ (MVG) vykdomus kursus. Kiekviena eilutė atitinka vieną kursų grupę. Eilutėje pateikiama informacija apima: kursų grupės identifikacinį numerį, dabartinį bei maksimalų grupės dydį, kursų pradžios ir pabaigos datas, mokymosi būdą, kalbą, tiekėjo JAR kodą su jo validacijos požymiu ir, priklausomai nuo mokymosi būdo, kursų teikėjo arba vykdomų kursų, vietos adresą. Taip pat nurodytos WGS koordinatės, žyminčios adresą. Be to, pateikiama kursų švietimo sritis, posritis, paskirtis, profesijos tipas ir požymiai, nurodantys, ar kursai yra aukštos pridėtinės vertės programos dalis, skaitmeninė programa ar pritaikyti mokiniams, turintiems klausos, regėjimo, intelekto ar judėjimo sutrikimų."""
+,,,,,kursu_grupes_id,string,,,,4,open,,Kursų grupės identifikacinis numeris,
+,,,,,dabartinis_grupes_dydis,integer,,,,4,open,,Dabartinis grupės dydis,
+,,,,,maks_grupes_dydis,integer,,,,4,open,,Maksimalus grupės dydis,
+,,,,,pradzios_data,date,D,,,4,open,,Kurso pradžios data,
+,,,,,pabaigos_data,date,D,,,4,open,,Kurso pabaigos data,
+,,,,,mokymosi_budas,string,,,,4,open,,Kurso mokymosi būdas,
+,,,,,,enum,,"""Nuotolinis sinchroninis""",,,,,Nuotolinis sinchroninis,
+,,,,,,,,"""Kontaktinis""",,,,,Kontaktinis,
+,,,,,kalba,string,,,,4,open,,Kalba,"""Kalba, kuria vykdomi kursai"""
+,,,,,mokymo_teikejas,string,,,,4,open,,Mokymų tiekėjas,Kursų tiekėjo juridinio asmens kodas (JAR)
+,,,,,validus_jar,string,,,,4,open,,JAR kodo validacija,"""Stulpelis, kuriame nustatoma ar JAR kodas yra validus. Validumas nustatomas tik lietuviškom įstaigom"""
+,,,,,,enum,,"""Tinkamas""",,,,,Tinkamas,
+,,,,,,,,"""Netinkamas ilgis""",,,,,Netinkamas ilgis,
+,,,,,,,,"""Netinkamas kontrolinis skaitmuo""",,,,,Netinkamas kontrolinis skaitmuo,
+,,,,,,,,"""Yra ne skaitmenų""",,,,,Yra ne skaitmenų,
+,,,,,,,,"""Tuščia reikšmė""",,,,,Tuščia reikšmė,
+,,,,,mokymosi_adresas,string,,,,4,open,,Mokymosi adresas,"""Adresas, kuriame vykdomi kursai, esant kontaktiniam mokymosi būdui, arba kursų tiekėjo adresas, esant nuotoliniam mokymosi būdui"""
+,,,,,geometrija_wgs,geometry(4326),,,,4,open,,WGS geometrinis taškas,"""Stulpelis, kuris nurodo mokymosi adreso WGS koordinates """
+,,,,,geo_tikslumas,number,,,,4,open,,Geometrijos tikslumas,"""Stulpelis, kuris nurodo koordinačių tikslumą procentinėje skalėje. Esant tikslumui daugiau nei 90 %, laikoma, kad koordinatės yra tikslios"""
+,,,,,svietimo_sritis,string,,,,4,open,,Švietimo sritis,"""Švietimo sritis, kuriai priklauso kurso programa"""
+,,,,,svietimo_posritis,string,,,,4,open,,Švietimo posritis,"""Švietimo posritis, kuriai priklauso kursų programa"""
+,,,,,aukstos_vertes_prog,boolean,,,,4,open,,Aukštos pridėtinės vertės programa,"""Požymis, nurodantis, ar kursai yra priskirti prie aukštą pridėtinę vertę kuriančių programų"""
+,,,,,paskirtis,string,,,,4,open,,Kursų programos paskirtis,
+,,,,,profesijos_tipas,string,,,,4,open,,Kursų profesijos tipas,
+,,,,,skaitmenine_programa,boolean,,,,4,open,,Skatimėninė programa,"""Požymis, nurodantis, ar kursai priskiriami prie skaitmeninės programos"""
+,,,,,klausos_sutrikimai,boolean,,,,4,open,,Klausos sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti klausos sutrikimų turintiems mokiniams"""
+,,,,,intelekto_sutrikimai,boolean,,,,4,open,,Intelekto sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti intelekto sutrikimų turintiems mokiniams"""
+,,,,,judejimo_sutrikimai,boolean,,,,4,open,,Judėjimo sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti judėjimo sutrikimų turintiems mokiniams"""
+,,,,,regos_sutrikimai,boolean,,,,4,open,,Regos sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti regos sutrikimų turintiems mokiniams"""
