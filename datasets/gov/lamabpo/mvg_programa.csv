@@ -4,7 +4,7 @@ Duomenų teikėjas – Lietuvos aukštųjų mokyklų asociacija bendram priėmim
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
 ,,,,,,,,,,,,,,
-,,,,KursoDalyvis,,,vda_prime_key,,,4,,,MVG dalyvių duomenys,"""Lentelėje pateikiami MVG programoje dalyvaujančių ar praeityje dalyvavusių dalyvių duomenys. Vienoje eilutėje pateikiama informacija apie vieną mokinį, priskirtą atitinkamai MVG kursų grupei. Eilutės duomenys apima: unikalų eilutės identifikatorių, mokinio identifikacinį numerį, grupės identifikacinį numerį, gimimo metus, lytį, gyvenamąją apskritį, datą, kada mokinys užsiregitravo į mokymus, bei požymį, nurodantį, ar mokinys įgijo kurso baigimo pažymėjimą ir kursų kainos dalis, kurias finansavo pats mokinys ir valstybė. Kiekvienas mokinys priskiriamas kursų grupei pagal grupės identifikacinį kodą."""
+,,,,KursoDalyvis,,,vda_prime_key,,,4,,,MVG dalyvių duomenys,"""Lentelėje pateikiami MVG programoje dalyvaujančių ar praeityje dalyvavusių dalyvių duomenys. Vienoje eilutėje pateikiama informacija apie vieną mokinį, priskirtą atitinkamai MVG kursų grupei. Eilutės duomenys apima: unikalų eilutės identifikatorių, mokinio identifikacinį numerį, grupės identifikacinį numerį, gimimo metus, lytį, gyvenamąją apskritį, datą, kada mokinys užsiregistravo į mokymus, bei požymį, nurodantį, ar mokinys įgijo kurso baigimo pažymėjimą ir kursų kainos dalis, kurias finansavo pats mokinys ir valstybė. Kiekvienas mokinys priskiriamas kursų grupei pagal grupės identifikacinį kodą."""
 ,,,,,vda_prime_key,string,,,,4,open,,Eilutės identifikacinis numeris,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
 ,,,,,mokinio_id,string,,,,4,open,,Mokinio identifikacinis numeris,"Programos ""Mokykis visą gyvenimą"" mokinio identifikacinis numeris"
 ,,,,,grupes_id_numeris,string,,,,4,open,,Kursų grupės identifikacinis numeris,Kursų grupės identifikacinis numeris
@@ -43,7 +43,7 @@ Duomenų teikėjas – Lietuvos aukštųjų mokyklų asociacija bendram priėmim
 ,,,,,aukstos_vertes_prog,boolean,,,,4,open,,Aukštos pridėtinės vertės programa,"""Požymis, nurodantis, ar kursai yra priskirti prie aukštą pridėtinę vertę kuriančių programų"""
 ,,,,,paskirtis,string,,,,4,open,,Kursų programos paskirtis,
 ,,,,,profesijos_tipas,string,,,,4,open,,Kursų profesijos tipas,
-,,,,,skaitmenine_programa,boolean,,,,4,open,,Skatimėninė programa,"""Požymis, nurodantis, ar kursai priskiriami prie skaitmeninės programos"""
+,,,,,skaitmenine_programa,boolean,,,,4,open,,Skaitmeninė programa,"""Požymis, nurodantis, ar kursai priskiriami prie skaitmeninės programos"""
 ,,,,,klausos_sutrikimai,boolean,,,,4,open,,Klausos sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti klausos sutrikimų turintiems mokiniams"""
 ,,,,,intelekto_sutrikimai,boolean,,,,4,open,,Intelekto sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti intelekto sutrikimų turintiems mokiniams"""
 ,,,,,judejimo_sutrikimai,boolean,,,,4,open,,Judėjimo sutrikimai,"""Požymis, nurodantis, ar kursai pritaikyti judėjimo sutrikimų turintiems mokiniams"""
