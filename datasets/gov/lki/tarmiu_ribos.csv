@@ -7,5 +7,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tarmes_riba_id,string,,,,4,open,,Tarmės ribų identifikatorius,
 ,,,,,tarme_trump,string,,,,4,open,,Tarmės pavadinimo trumpinys,
 ,,,,,tarme_pav,string,,,,4,open,,Tarmės pavadinimas,
-,,,,,geometrija,string,,,,4,open,,Tarmės ribų geometrija (pateikta dvejetainiu geometrijos formatu šešioliktainiu kodavimu),
-,,,,,vda_geometrija,"geometry(multipolygon,3346)",,,,4,open,,"Tarmės ribų geometrija (WGS84, platuma ir ilguma)",
+,,,,,vda_geometrija,string,,,,4,open,,Tarmės ribų geometrija (pateikta dvejetainiu geometrijos formatu šešioliktainiu kodavimu),
+,,,,,vda_geometrija_wgs,"geometry(multipolygon, 4326)",,,,4,open,,"Tarmės ribų geometrija (WGS84, platuma ir ilguma)",
