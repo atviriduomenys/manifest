@@ -131,5 +131,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,apibr_atitinka_standartini,boolean,,,,4,open,,Standartinis,Požymis ar laboratorinio tyrimo metodas yra standartinis
 ,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
-
-
