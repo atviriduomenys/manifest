@@ -70,7 +70,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'sunki',,,,sunki,
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
-,,,,,atvejai,integer,,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,SocialineGrupe,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
@@ -119,7 +119,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,salytis_su_gyvunu,boolean,,,,4,open,,Sąlytis su gyvūnu,"Požymis nurodantis, ar buvo paciento sąlytis su gyvūnu. Svarbu tiriant, ar užsikrėsta nuo gyvūno."
 ,,,,,diagnozuota_per,integer,D,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
-,,,,,atvejai,integer,,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,Tyrimas,,,,,,3,,,Užkrečiamųjų ligų tyrimai,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
@@ -129,4 +129,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,laboratoriniai_tyrimai,string,,,,2,open,,Laboratoriniai tyrimai,
 ,,,,,laboratoriniu_tyrimu_metodai,string,,,,2,open,,Laboratorinių tyrimų metodai,
 ,,,,,apibr_atitinka_standartini,boolean,,,,4,open,,Standartinis,Požymis ar laboratorinio tyrimo metodas yra standartinis
-,,,,,atvejai,integer,,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
+
+
