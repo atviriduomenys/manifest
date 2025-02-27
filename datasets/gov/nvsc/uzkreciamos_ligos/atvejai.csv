@@ -2,6 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/nvsc/uzkreciamos_ligos/atvejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų duomenys,
 ,,,,,,,,,,,,,,
 ,,,,Bendrieji,,,,,,3,,,Užkrečiamųjų ligų atvejai bendrieji,
+,,,,,vda_id,,,,,,,,Unikalus identifikatorius,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
 ,,,,,registravimo_vieta,string,,,,2,open,,NVSC skyrius,
 ,,,,,miestas,string,,,,2,open,,Savivaldybe,"Savivaldybes, kurioje yra registruotas pacientas, pavadinimas"
@@ -15,19 +16,20 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'besimptomis viruso nešiojimas',,,,besimptomis viruso nešiojimas,
 ,,,,,,,,,'besimptomis ligos nešiojimas',,,,besimptomis ligos nešiojimas,
 ,,,,,,,,,'kita',,,,kita,
-,,,,,is_salies,string,,,,3,open,,Užsienio valstybė,kurioje paskutinį kartą buvo pacientas
+,,,,,is_salies,string,,,,3,open,,"""Užsienio valstybė, kurioje paskutinį kartą buvo pacientas""",
 ,,,,,ligos_klinikine_eiga,string,,,,4,open,,Ligos klinikinė eiga,
 ,,,,,,enum,,,'vidutinė',,,,vidutinė,
 ,,,,,,,,,'lengva',,,,lengva,
 ,,,,,,,,,'sunki',,,,sunki,
-,,,,,atvyk,integer,d,,,4,open,,Dienų skaičius nuo atvykimo iš užsienio valstybės,
-,,,,,kreip_diag,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
-,,,,,pranesimo_menuo,date,M,,,4,open,,Pranešimo mėnuo,
-,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
+,,,,,atvyk,integer,D,,,4,open,,Dienų skaičius nuo atvykimo iš užsienio valstybės,
+,,,,,kreip_diag,integer,D,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
+,,,,,susirgimo_pranesimo_arba_mirties_data,date,D,,,4,open,,Pranešimo data,
 ,,,,,sukelejo_rusis,string,,,,2,open,,Sukelėjo rūšis,
-,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
+,,,,,susirgimo_atveju_skaicius,integer,,,,4,open,,Susirgimo atvejų skaičius,
+,,,,,mirties_atveju_skaicius,integer,,,,4,open,,Mirties atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,GyvenamojiVieta,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,gyvenamoji_vieta,string,,,,4,open,,Gyvenamosios vietos tipas,"Požymis nurodantis, ar pacientas gyvena kaime ar mieste"
 ,,,,,,enum,,,'kaimas',,,,kaimas,
 ,,,,,,,,,'miestas',,,,miestas,
@@ -50,6 +52,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""80-89""",,,,,
 ,,,,,,,,,"""90+""",,,,,
 ,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Galutinės diagnozės kodas,
+,,,,,,,,,,,,,,
 ,,,,,galutine_diagnoze,string,,,,4,open,,Galutinė diagnozė,
 ,,,,,salytis_su_gyvunu,boolean,,,,4,open,,Sąlytis su gyvūnu,"Požymis nurodantis, ar buvo paciento sąlytis su gyvūnu. Svarbu tiriant, ar užsikrėsta nuo gyvūno."
 ,,,,,susirgimo_menuo,date,M,,,4,open,,Susirgimuo mėnuo,
@@ -67,9 +70,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'sunki',,,,sunki,
 ,,,,,mirtis,boolean,,,,4,open,,Mirtis,"Požymis, ar pacientas mirė"
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
-,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,SocialineGrupe,,,,,,3,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,socialine_grupe,string,,,,4,open,,Socialinė grupė,
 ,,,,,,enum,,,'ikimokyklinukas',,,,ikimokyklinukas,
 ,,,,,,,,,'moksleivis',,,,moksleivis,
@@ -113,15 +117,17 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'sunki',,,,sunki,
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
 ,,,,,salytis_su_gyvunu,boolean,,,,4,open,,Sąlytis su gyvūnu,"Požymis nurodantis, ar buvo paciento sąlytis su gyvūnu. Svarbu tiriant, ar užsikrėsta nuo gyvūno."
-,,,,,diagnozuota_per,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
+,,,,,diagnozuota_per,integer,D,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
-,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
 ,,,,Tyrimas,,,,,,3,,,Užkrečiamųjų ligų tyrimai,
+,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,patvirtinta,date,M,,,4,open,,Diagnozės data,
 ,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Galutinės diagnozės kodas,
 ,,,,,galutine_diagnoze,string,,,,4,open,,Galutinė diagnozė,
 ,,,,,laboratoriniai_tyrimai,string,,,,2,open,,Laboratoriniai tyrimai,
 ,,,,,laboratoriniu_tyrimu_metodai,string,,,,2,open,,Laboratorinių tyrimų metodai,
 ,,,,,apibr_atitinka_standartini,boolean,,,,4,open,,Standartinis,Požymis ar laboratorinio tyrimo metodas yra standartinis
-,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
+,,,,,atvejai,integer,U,,,,4,open,,Atvejų skaičius,
+
