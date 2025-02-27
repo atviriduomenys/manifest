@@ -8,9 +8,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
 ,,,,,prasymo_tipas,string,,,,4,open,,Paraiškos prašymo tipas,
-,,,,,,enum,,,"""Įsigyti miškų ūkio paskirties žemę""",4,open,,,
-,,,,,,,,,"""Įsigyti žemės ūkio paskirties žemę""",4,open,,,
-,,,,,atstovavimas,string,,,,4,open,,Paraiškos naudos gavėjo atstovavimo statusas,
+,,,,,,enum,,,"""Įsigyti miškų ūkio paskirties žemę""",,,,,
+,,,,,,,,,"""Įsigyti žemės ūkio paskirties žemę""",,,,,
+,,,,,atstovavimas,string,,,,4,open,,Paraiškos žemės ploto gavėjo atstovavimo statusas,
 ,,,,,teikejo_vardas,string,,,,4,open,,Paraiškos teikėjo pilnas vardas,
 ,,,,,gavejo_asmens_kodas,string,,,,4,open,,Žemės gavėjo asmens kodas,
 ,,,,,savivaldybe,string,,,,4,open,,Sklypo savivaldybė,
@@ -25,7 +25,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sprendimas,string,,,,4,open,,Paraiškos būsena,
 ,,,,,,enum,,,"""Suformuoti sutikimą""",,,,,
 ,,,,,,,,,"""Atmesti prašymą""",,,,,
-,,,,,paslaugos_suma,money,EUR,,,4,open,,Paraiškos teikimo mokestis,Valstybės rinkliava kurios dydis yra nustatytas nutarimu Nr. 1458 'Dėl Konkrečių valstybės rinkliavos dydžių ir šios rinkliavos mokėjimo ir grąžinimo taisyklių patvirtinimo'
+,,,,,paslaugos_suma,number,,,,4,open,,Paraiškos teikimo mokestis,Valstybės rinkliava kurios dydis yra nustatytas nutarimu Nr. 1458 'Dėl Konkrečių valstybės rinkliavos dydžių ir šios rinkliavos mokėjimo ir grąžinimo taisyklių patvirtinimo'
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,Valstybės rinkliava kurios dydis yra nustatytas nutarimu Nr. 1458 'Dėl Konkrečių valstybės rinkliavos dydžių ir šios rinkliavos mokėjimo ir grąžinimo taisyklių patvirtinimo'
 ,,,,,operacijos_data,date,D,,,4,open,,Paraiškos teikimo mokesčio mokėjimo data,
 ,,,,,sutartiniai_gyvuliai,number,,,,4,open,,Sutartinių gyvulių (SG) skaičius,Skaičiuojamas pagal žemės ūkio ministro įsakymo Nr. 3D-246 priedą 'Dėl ūkinių gyvūnų perskaičiavimo į sutartinius gyvulius'
 ,,,,,bendras_prasytojo_valdomas_plotas,number,,,,4,open,,Bendras su susijusiais asmenimis prasytojo turimas žemės plotas hektarais,
