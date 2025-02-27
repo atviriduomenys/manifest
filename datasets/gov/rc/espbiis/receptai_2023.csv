@@ -51,3 +51,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""M""",,,,Moteris,
 ,,,,,pac_amziaus_gr,string,,,,3,open,,"Paciento, kuriam išrašytas receptas, amžiaus grupę (Iki 17 m., 18-44 m., 45-64 m., Nuo 65 m.)",
 ,,,,,pac_savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Paciento, kuriam išrašytas receptas, deklaruotos gyvenamosios vietos savivaldybė (aktuali duomenų rinkinio formavimo metu)",
+,,,,,recepto_data,string,,,,3,private,,,
