@@ -1,0 +1,6 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sektoriai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Sektorius,,,,,,,,,Sektorių ir subsektorius,
+,,,,,kodas,string,,,,3,open,,Kodas,
+,,,,,pavadinimas,string,,,,3,open,,Pavadinimas,

@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lb/db_balanso_statistika,,,,,,,,,,,,,Draudimo bendrovių balanso statistika
+,,dbbs,,,,csv,,https://www.lb.lt/lt/m_statistika/t-t-t-t-t-t-t-t-t-draudimo-bendroviu-balanso-statistika/?export=csv,,,,,,
+,,,,BalansoStatistika,,,"code, date, value",,,4,,,,
+,,,,,code,string,,,,4,open,,kodas,
+,,,,,en_long_title,string,,,,4,open,,angliškas ilgas pavadinimas,
+,,,,,lt_long_title,string,,,,4,open,,lietuviškas ilgas pavadinimas,
+,,,,,date,date,M,,,4,open,,data,
+,,,,,value,number,,,,4,open,,reikšmė,
+,,,,,power,integer,,,,4,open,,Matavimo vienetų daugiklis,
