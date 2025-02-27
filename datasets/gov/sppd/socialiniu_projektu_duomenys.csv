@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Unikalus projekto identifikatorius,Projektui priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje.
 ,,,,,priemones_id,ref,Priemone[priemones_id],,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
-,,,,,vda_projekto_kodas,string,,,,4,open,,Projekto kodas,Projekto kodas sudarytas iš priemonės trumpinio bei skaičiaus atitinkančio projektų eilės tvarką
+,,,,,projekto_kodas,string,,,,4,open,,Projekto kodas,Projekto kodas sudarytas iš priemonės trumpinio bei skaičiaus atitinkančio projektų eilės tvarką
 ,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"
 ,,,,,pareiskejo_tinklapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
 ,,,,,pareiskejo_adresas,string,,,,4,open,,Fizinis adresas,Pareiškėjo nurodytas organizacijos adresas
