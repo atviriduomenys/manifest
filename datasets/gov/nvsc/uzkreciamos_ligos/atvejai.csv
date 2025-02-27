@@ -21,8 +21,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,'vidutinė',,,,vidutinė,
 ,,,,,,,,,'lengva',,,,lengva,
 ,,,,,,,,,'sunki',,,,sunki,
-,,,,,atvyk,integer,D,,,4,open,,Dienų skaičius nuo atvykimo iš užsienio valstybės,
-,,,,,kreip_diag,integer,D,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
+,,,,,atvyk,integer,d,,,4,open,,Dienų skaičius nuo atvykimo iš užsienio valstybės,
+,,,,,kreip_diag,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,susirgimo_pranesimo_arba_mirties_data,date,D,,,4,open,,Pranešimo data,
 ,,,,,sukelejo_rusis,string,,,,2,open,,Sukelėjo rūšis,
 ,,,,,susirgimo_atveju_skaicius,integer,,,,4,open,,Susirgimo atvejų skaičius,
@@ -117,7 +117,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,'sunki',,,,sunki,
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
 ,,,,,salytis_su_gyvunu,boolean,,,,4,open,,Sąlytis su gyvūnu,"Požymis nurodantis, ar buvo paciento sąlytis su gyvūnu. Svarbu tiriant, ar užsikrėsta nuo gyvūno."
-,,,,,diagnozuota_per,integer,D,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
+,,,,,diagnozuota_per,integer,d,,,4,open,,Dienų skaičius praėjęs nuo kreipimosi iki diagnozės,
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
 ,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
