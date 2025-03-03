@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nvsc/uzkreciamos_ligos/atvejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Bendrieji,,,vda_id,,,3,,,Užkrečiamųjų ligų atvejai bendrieji,
+,,,,Bendrieji,,,vda_id,,,4,,,Užkrečiamųjų ligų atvejai bendrieji,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
 ,,,,,registravimo_vieta,string,,,,2,open,,NVSC skyrius,
@@ -28,7 +28,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,susirgimo_atveju_skaicius,integer,,,,4,open,,Susirgimo atvejų skaičius,
 ,,,,,mirties_atveju_skaicius,integer,U,,,4,open,,Mirties atvejų skaičius,
 ,,,,,,,,,,,,,,
-,,,,GyvenamojiVieta,,,vda_id,,,3,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
+,,,,GyvenamojiVieta,,,vda_id,,,4,,,Užkrečiamųjų ligų atvejai pagal gyvenamąją vietą,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,gyvenamoji_vieta,string,,,,4,open,,Gyvenamosios vietos tipas,"Požymis nurodantis, ar pacientas gyvena kaime ar mieste"
 ,,,,,,enum,,,'kaimas',,,,kaimas,
@@ -72,7 +72,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,lygos_atvejis_nustatytas,string,,,,2,open,,Nustatymas,"Požymis nurodantis, kada ligos atvejis nustatytas"
 ,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
-,,,,SocialineGrupe,,,vda_id,,,3,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
+,,,,SocialineGrupe,,,vda_id,,,4,,,Užkrečiamųjų ligų atvejai pagal socialines grupes,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,socialine_grupe,string,,,,4,open,,Socialinė grupė,
 ,,,,,,enum,,,'ikimokyklinukas',,,,ikimokyklinukas,
@@ -121,7 +121,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dirbta_pries,boolean,,,,4,open,,Darbas,"Požymis nurodytas, ar po susirgimo pacientas atvyko į darbą"
 ,,,,,atvejai,integer,U,,,4,open,,Atvejų skaičius,
 ,,,,,,,,,,,,,,
-,,,,Tyrimas,,,vda_id,,,3,,,Užkrečiamųjų ligų tyrimai,
+,,,,Tyrimas,,,vda_id,,,4,,,Užkrečiamųjų ligų tyrimai,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,patvirtinta,date,M,,,4,open,,Diagnozės data,
 ,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Galutinės diagnozės kodas,
