@@ -566,4 +566,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""RG""",,,,Radiografinis atvaizdavimas,
 ,,,,,,,,,"""RF""",,,,Radiofluoroskopija,
 ,,,,,,,,,"""OT""",,,,Kita,
-,,,,,tyrimo_serijos_protokolas,,,,,3,open,,Tyrimo serijos protokolas,
+,,,,,tyrimo_serijos_protokolas,string,,,,3,open,,Tyrimo serijos protokolas,
