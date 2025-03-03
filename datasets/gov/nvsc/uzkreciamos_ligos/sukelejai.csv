@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/nvsc/uzkreciamos_ligos/sukelejai,,,,,,,,,,,,Nacionalinio visuomenės sveikatos centro užkrečiamų ligų sukelėjų duomenys,
 ,,,,,,,,,,,,,,
-,,,,Sukelejas,,,,,,3,,,Užkrečiamųjų ligų sukelėjai,
+,,,,Sukelejas,,,vda_id,,,4,,,Užkrečiamųjų ligų sukelėjai,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,centras,string,,,,2,open,,NVSC departamenas,
 ,,,,,tlk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,4,open,,Diagnozės kodas,
