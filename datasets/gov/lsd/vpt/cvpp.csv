@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dok_id,string,,,,4,open,,Pagrindinis identifikatorius,
 ,,,,,internal_id,string,,,,3,open,,Vidinis identifikatorius,
 ,,,,,cpv_codes,string,,,,3,open,,Sutarties CPV kodas,
-,,,,,dok_sut_tipas,boolean,,,,3,open,,Sutarties tipas,
+,,,,,dok_sut_tipas,string,,,,3,open,,Sutarties tipas,
 ,,,,,dok_reg_nr,integer,,,,3,open,,Sutarties registracijos numeris,
 ,,,,,dok_sut_numeris,string,,,,3,open,,Sutarties numeris,
 ,,,,,dok_pirk_numeris,string,,,,3,open,,Pirkimo numeris,
