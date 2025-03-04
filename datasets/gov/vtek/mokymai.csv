@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vtek/mokymu_aprasymai,,,,,,,,,,,,Nuotolinių mokymų aprašymai,"Siekdama padėti deklaruojantiesiems geriau suprasti, kaip taikyti Viešųjų ir privačių interesų derinimo įstatymo nuostatas bei tinkamai deklaruoti interesus, Vyriausioji tarnybinės etikos komisija organizuoja nuotolinius mokymų kursus. Kursai skirti viešojo sektoriaus darbuotojams bei deklaracijas teikiantiems asmenims. Rinkinyje pateikiami nuotolinių mokymų duomenys. 
+
+Duomenų teikėjas – Vyriausioji tarnybinės etikos komisija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Tekstas,,,vda_id,,,4,,,Privačių interesų deklaracijų statistika pagal pateiktas deklaracijas ir deklaruojančius asmenis,Ataskaitoje nurodomi duomenys apie per ataskaitinį laikotarpį pateiktas deklaracijas ir jas teikusius asmenis. Ataskaitoje pateikiami nuo 2012 m. kaupiami duomenys pamėnesiui.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,mokymas,string,,,,4,open,,Mokymų kurso pavadinimas,
+,,,,,,enum,,,"""Privačių interesų deklaravimas""",,,,,
+,,,,,,,,,"""Lobistinė veikla""",,,,,
+,,,,,,,,,"""Interesų konflikto identifikavimas ir valdymas""",,,,,
+,,,,,,,,,"""Apribojimai pasibaigus tarnybai""",,,,,
+,,,,,atnaujinimo_data,date,D,,,4,open,,Paskutinė teksto atnaujinimo data,
+,,,,,aprasymas_lt,string,,,,2,open,,Mokymų aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,,,
