@@ -1,0 +1,33 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vtek/pinreg_ataskaitos,,,,,,,,,,,,Privačių interesų registro ataskaitos,"Rinkinyje pateikiamos Vyriausiosios tarnybinės etikos komisijos privačių interesų registro veiklos ataskaitos:
+
+1.	Vyriausiosios tarnybinės etikos komisijos (VTEK) priimtų sprendimų statistika. Tirdama pranešimus, skundus ir prašymus dėl deklaruojančių asmenų veiklos atitikimo Viešųjų ir privačių interesų derinimo įstatymui, VTEK nusprendžia pripažinti pažeidimą, pripažinti pažeidimo nebuvimą arba nutraukti tyrimą. Ataskaitoje pateikiami nuo 2006 m. kaupiami šių sprendimų duomenys. 
+2.	Privačių interesų deklaracijų statistika pagal pareigybės pobūdį. Į ataskaitą įtrauktos tik standartinio tipo pareigybės arba ekspertų ataskaitose nurodytų pareigybių pobūdis, kai asmuo teikia deklaraciją dėl einamųjų pareigų ir dėl dalyvavimo viešuosiuose pirkimuose bei turi deklaruoti pareigas. Be to, jei asmuo užima vienodo pobūdžio pareigybes keliose darbovietėse, į statistiką įtraukiamos tik unikalios pobūdžių reikšmės. Ataskaitoje pateikiami nuo 2020 m. kaupiami duomenys.
+3.	Privačių interesų deklaracijų statistika pagal pateiktas deklaracijas ir deklaruojančius asmenis. Ataskaitoje nurodomi duomenys apie per ataskaitinį laikotarpį pateiktas deklaracijas ir jas teikusius asmenis. Ataskaitoje pateikiami nuo 2012 m. kaupiami duomenys.
+Agreguoti duomenys pateikiami kiekvieno mėnesio paskutinę dieną. 
+
+Duomenų teikėjas – Vyriausioji tarnybinės etikos komisija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,AsmuoDeklaracija,,,vda_id,,,4,,,Privačių interesų deklaracijų statistika pagal pateiktas deklaracijas ir deklaruojančius asmenis,Ataskaitoje nurodomi duomenys apie per ataskaitinį laikotarpį pateiktas deklaracijas ir jas teikusius asmenis. Ataskaitoje pateikiami nuo 2012 m. kaupiami duomenys pamėnesiui.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,ataskaitos_data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,viso_asmenu,integer,,,,4,open,,"Bendras asmenų, pateikusių deklaracijas per ataskaitinį mėnesį, skaičius",
+,,,,,viso_deklaraciju,integer,,,,4,open,,Bendras aktyvių juridinių asmenų lobistų skaičius įskaičiuojant ir ankstesnių mėnesių duomenis,
+,,,,,,,,,,,,,,
+,,,,PareigybeDeklaracija,,,vda_id,,,4,,,Privačių interesų deklaracijų statistika pagal pareigybės pobūdį,"Į ataskaitą įtrauktos tik standartinio tipo pareigybės arba ekspertų ataskaitose nurodytų pareigybių pobūdis, kai asmuo teikia deklaraciją dėl einamųjų pareigų ir dėl dalyvavimo viešuosiuose pirkimuose bei turi deklaruoti pareigas. Be to, jei asmuo užima vienodo pobūdžio pareigybes keliose darbovietėse, į statistiką įtraukiamos tik unikalios pobūdžių reikšmės. Ataskaitoje pateikiami nuo 2020 m. kaupiami duomenys pamėnesiui."
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,ataskaitos_data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,pareigu_pobudis,string,,,,4,open,,Pareigų pobūdžio kategorija,
+,,,,,pateikta_deklaraciju,integer,,,,4,open,,Bendras paskelbtų deklaracijų skaičius per ataskaitinį laikotarpį,
+,,,,,,,,,,,,,,
+,,,,Sprendimas,,,vda_id,,,4,,,Vyriausiosios tarnybinės etikos komisijos (VTEK) priimtų sprendimų statistika,"Tirdama pranešimus, skundus ir prašymus dėl deklaruojančių asmenų veiklos atitikimo Viešųjų ir privačių interesų derinimo įstatymui, VTEK nusprendžia pripažinti pažeidimą, pripažinti pažeidimo nebuvimą arba nutraukti tyrimą. Ataskaitoje pateikiami nuo 2006 m. kaupiami šių sprendimų duomenys pamėnesiui."
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,ataskaitos_data,date,D,,,4,open,,Ataskaitinė data,
+,,,,,nutraukti_tyrima,integer,,,,4,open,,Bendras priimtų sprendimų nutraukti tyrimą skaičius,
+,,,,,pripazinti_nepazeidima,integer,,,,4,open,,Bendras priimtų sprendimų pripažinti pažeidimo nebuvimą skaičius,
+,,,,,pripazinti_pazeidima,integer,,,,4,open,,Bendras priimtų sprendimų pripažinti pažeidimą skaičius,
+,,,,,viso_sprendimu,integer,,,,4,open,,Bendras VTEK paskelbtų sprendimų skaičius per mėnesį,
