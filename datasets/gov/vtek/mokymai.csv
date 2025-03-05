@@ -7,7 +7,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Tekstas,,,vda_id,,,4,,,Privačių interesų deklaracijų statistika pagal pateiktas deklaracijas ir deklaruojančius asmenis,Ataskaitoje nurodomi duomenys apie per ataskaitinį laikotarpį pateiktas deklaracijas ir jas teikusius asmenis. Ataskaitoje pateikiami nuo 2012 m. kaupiami duomenys pamėnesiui.
+,,,,Tekstas,,,vda_id,,,4,,,Nuotolinių mokymų aprašymai,"Siekdama padėti deklaruojantiesiems geriau suprasti, kaip taikyti Viešųjų ir privačių interesų derinimo įstatymo nuostatas bei tinkamai deklaruoti interesus, Vyriausioji tarnybinės etikos komisija organizuoja nuotolinius mokymų kursus. Kursai skirti viešojo sektoriaus darbuotojams bei deklaracijas teikiantiems asmenims. Rinkinyje pateikiami nuotolinių mokymų duomenys."
 ,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
 ,,,,,mokymas,string,,,,4,open,,Mokymų kurso pavadinimas,
 ,,,,,,enum,,,"""Privačių interesų deklaravimas""",,,,,
