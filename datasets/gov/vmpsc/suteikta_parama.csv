@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Parama,,,id,,,4,,,,Vilniaus miesto socialinių paslaugų centro suteikta parama asmenims be gyvenamosios vietos
 ,,,,,id,string,,,,4,open,,Unikalus eilutės identifikatorius,
-,,,,,asmens_id,string,,,,4,open,,Asmenims be pastovios gyvenamosios vietos unikalus identifikatorius,
+,,,,,asmens_id,string,,,,4,open,,Asmens be pastovios gyvenamosios vietos unikalus identifikatorius,
 ,,,,,tinkamas_ak,string,,,,4,open,,"Požymis, ar asmens kodas validus",
 ,,,,,lytis_ak,string,,,,4,open,,Asmens lytis iš asmens kodo,
 ,,,,,,enum,,,"""Moteris""",,,,,
