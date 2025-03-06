@@ -14,7 +14,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,dok,string,,,,4,open,,Dokumentas,Pilnas dokumento numeris
 ,,,,,dok_tipas,string,,,,4,open,,Dokumento tipas,
 ,,,,,dok_tipo_pav,string,,,,4,open,,Dokumento tipo pavadinimas,
-,,,,,dok_apras,string,,,,4,open,,Dokumento aprašymas,Dokumento pavadinimas arba aprašymas
+,,,,,dok_apras,string,,,,2,open,,Dokumento aprašymas,Dokumento pavadinimas arba aprašymas
 ,,,,,dok_saltinis,string,,,,4,open,,Dokumento šaltinis,"""Dokumento šaltinis. Požymis TARIC reiškia, kad dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės. Požymis National reiškia, kad dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo"""
 ,,,,,,enum,,,"""Taric""",,,,Taric,Dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės
 ,,,,,,,,,"""National""",,,,National,Dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo
