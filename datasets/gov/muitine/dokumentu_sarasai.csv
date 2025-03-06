@@ -1,0 +1,22 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/dokumentu_sarasai,,,,,,,,,,,,Lietuvos muitinei pateikiamų dokumentų sąrašo duomenys,"""Lietuvos muitinei pateikiamų dokumentų sąrašas tvarkomas Lietuvos Respublikos integruoto tarifo (LITAR) sistemoje (https://litarweb.lrmuitine.lt/taric/web/certsearchform_LT).
+Sąraše pateikiama informacija apie Lietuvos muitinei pateikiamus dokumentus (dokumentų rūšis), kurių duomenys nurodomi muitinės deklaracijose. Vienoje eilutėje pateikiama tam tikru laikotarpiu galiojančio vieno dokumento informacija: dokumento identifikacinis numeris, pilnas dokumento numeris (dokumento tipas ir dokumento numeris), dokumento tipas, tipo pavadinimas, dokumento pavadinimas arba aprašymas, šaltinis (TARIC ar National), dokumento galiojimo pradžios ir pabaigos data. 
+Duomenų laikotarpis: nuo 2004 m. gegužės 1 d. Lietuvos Respublikoje galiojantys Europos Bendrijos integruoto tarifo (TARIC) duomenys apie dokumentus, papildyti nuo 2004 m. gegužės 1 d. galiojančiais nacionalinių dokumentų duomenimis. 
+
+Duomenų teikėjas – Muitinės departamentas prie Lietuvos Respublikos finansų ministerijos.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spint,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,dok_id,,,4,,,Lietuvos muitinei pateikiamų dokumentų sąrašo duomenys,
+,,,,,dok_id,string,,,,4,open,,Dokumento ID,Unikalaus dokumento identifikacinis numeris
+,,,,,dok,string,,,,4,open,,Dokumentas,Pilnas dokumento numeris
+,,,,,dok_tipas,string,,,,4,open,,Dokumento tipas,
+,,,,,dok_tipo_pav,string,,,,4,open,,Dokumento tipo pavadinimas,
+,,,,,dok_apras,string,,,,4,open,,Dokumento aprašymas,Dokumento pavadinimas arba aprašymas
+,,,,,dok_saltinis,string,,,,4,open,,Dokumento šaltinis,"""Dokumento šaltinis. Požymis TARIC reiškia, kad dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės. Požymis National reiškia, kad dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo"""
+,,,,,,enum,,,"""Taric""",,,,Taric,Dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės
+,,,,,,,,,"""National""",,,,National,Dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo
+,,,,,dok_galioja_nuo,date,D,,,4,open,,Dokumento galiojimo pradžia,
+,,,,,dok_galioja_iki,date,D,,,4,open,,Dokumento galiojimo pabaiga,
