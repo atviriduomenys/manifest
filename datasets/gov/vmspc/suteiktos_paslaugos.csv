@@ -1,5 +1,4 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vmspc,,,,,ns,,,,,,,BĮ Vilniaus miesto socialinių paslaugų centras,
 ,datasets/gov/vmspc/suteiktos_paslaugos,,,,,,,,,,,,Vilniaus miesto socialinių paslaugų centro suteiktos paslaugos,
 ,,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
