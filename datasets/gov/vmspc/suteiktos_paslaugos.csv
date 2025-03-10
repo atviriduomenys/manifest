@@ -1,11 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmspc,,,,,ns,,,,,,,BĮ Vilniaus miesto socialinių paslaugų centras,
-,datasets/gov/vmspc/suteiktos_paslaugos,,,,,,,,,,,,,
+,datasets/gov/vmspc/suteiktos_paslaugos,,,,,,,,,,,,Vilniaus miesto socialinių paslaugų centro suteiktos paslaugos,
 ,,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Paslauga,,,id,,,4,,,Vilniaus miesto socialinių paslaugų centro suteiktos paslaugos ,
+,,,,Paslauga,,,id,,,4,,,Vilniaus miesto socialinių paslaugų centro suteiktos paslaugos,
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,kvito_numeris,string,,,,4,open,,Numeris,
 ,,,,,apskaitos_laikotarpis,date,D,,,4,open,,Apskaitinis laikotarpis,
