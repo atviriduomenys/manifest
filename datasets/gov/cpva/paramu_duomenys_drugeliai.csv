@@ -15,6 +15,7 @@ Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, todėl du
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,pazeidimo_tyr_id,string,,,,4,open,,Pažeidimo tyrimo identifikacinis numeris,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,priemones_tipo_pavadinimas,string,,,,4,open,,Finansavimo priemonės pavadinimas,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,pazeidimo_tyr_pradzia,date,D,,,4,open,,Pažeidimo tyrimo data,
 ,,,,,pazeidimo_tyr_busenos_data,date,D,,,4,open,,Pažeidimo būsenos data,
