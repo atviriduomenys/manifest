@@ -29,7 +29,7 @@ Duomenų teikėjas – Kėdainių rajono savivaldybės administracija. "
 ,,,,,marsrutas,string,,,,4,open,,Maršrutas,
 ,,,,,automobilio_nr,string,,,,4,open,,Automobilio numeris (šifruotas),
 ,,,,,marke,string,,,,4,open,,Automobilio markė,
-,,,,,data,datetime,S,,,4,open,,Data,
+,,,,,data,datetime,L,,,4,open,,Data,
 ,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,tikslumas,number,,,,4,open,,TIklsumas,
