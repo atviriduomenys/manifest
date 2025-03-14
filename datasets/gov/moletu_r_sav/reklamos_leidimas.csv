@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/moletu_r_sav,,,,,ns,,,,,,,Molėtų rajono savivaldybė,
-,datasets/gov/moletu_r_sav/reklamos_leidimai,,,,,,,,,,,,Reklamos leidimų duomenų rinkinys,
+,datasets/gov/moletu_r_sav/reklamos_leidimas,,,,,,,,,,,,Reklamos leidimų duomenų rinkinys,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
