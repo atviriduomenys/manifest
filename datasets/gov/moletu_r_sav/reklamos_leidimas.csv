@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,ReklamosLeidimas,,,id,,,4,,,Rinkinyje pateikiami Molėtų savivaldybės geografinėje informacinėje sistemoje (GIS) nuo 2017 metų galiojantys reklamų leidimai. Duomenų rinkinį sudaro: įmonės ar fizinio asmens identifikatorius, įrenginio informacija ir koordinatės, tipas, leidimo numeris, leidimo galiojimo terminai ir išdavimo data.,
+,,,,ReklamosLeidimas,,,id,,,4,,,"Rinkinyje pateikiami Molėtų savivaldybės geografinėje informacinėje sistemoje (GIS) nuo 2017 metų galiojantys reklamų leidimai. Duomenų rinkinį sudaro: įmonės ar fizinio asmens identifikatorius, įrenginio informacija ir koordinatės, tipas, leidimo numeris, leidimo galiojimo terminai ir išdavimo data.",
 ,,,,,id,string,,id,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,leidimo_nr,string,,leidimo_nr,,4,open,,Leidimo numeris,
 ,,,,,isdavimo_data,date,,isdavimo_data,,4,open,,Išdavimo data,
