@@ -1,6 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/lt/vilnius/reklamos_leidimai,,,,,,,,,,,,Reklamos leidimų duomenų rinkinys,
-,,reklamos_leidimai,,,,json,,https://example.com/reklamos_leidimai.json,,,,,Reklamos leidimų duomenys
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
 ,,,,ReklamosLeidimas,,,id,,,4,,,
 ,,,,,id,string,,id,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,leidimo_nr,string,,leidimo_nr,,4,open,,Leidimo numeris,
