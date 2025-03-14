@@ -15,4 +15,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reklamos_plotas,number,,reklamos_plotas,,4,open,,Reklamos ploto dydis,
 ,,,,,reklamos_tipas,string,,reklamos_tipas,,4,open,,Reklamos tipas,
 ,,,,,reklamos_adresas,string,,reklamos_adresas,,4,open,,Reklamos adresas,
-,,,,,geometrija,geometry(point,3346),,geometrija,,4,open,,Geografinė vieta (LKS-94),
+,,,,,geometrija,"geometry(point,3346)",,,,4,open,,Geografinė vieta (LKS-94),
