@@ -601,7 +601,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
 ,,,,,,,,,"""K""",,,,Kita,
-,,,,,,,,,"""N""",,,,Nežinoma,
 ,,,,,vda_lytis,string,,,,4,open,,Paciento lytis iš validaus asmens kodo,
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
