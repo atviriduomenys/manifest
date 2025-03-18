@@ -854,7 +854,9 @@ datasets/gov/vmspc/suteiktos_paslaugos.csv
 datasets/gov/vtek/pinreg_ataskaitos.csv
 datasets/gov/vmspc/suteikta_parama.csv
 datasets/gov/moletu_r_sav/reklamos_leidimas.csv
+datasets/gov/kotis/gauta_parama.csv
 datasets/gov/muitine/dokumentu_sarasas.csv
 datasets/gov/pd/policijos_ieskomi_daiktai.csv
 datasets/gov/pd/policijos_ieskomi_laivai_ir_orlaiviai.csv
 datasets/gov/utenos_r_sav/reklamos_leidimai.csv
+datasets/gov/muitine/gyvunu_tikrinimai.csv
