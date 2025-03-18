@@ -1,0 +1,30 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvkt/pakuociu_pardavimai,,,,,,,,,,,,Vaistinių preparatų pakuočių pardavimai,"""Duomenų rinkinyje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie mėnesinius vaistinių preparatų pakuočių pardavimus vaistinėse, asmens sveikatos priežiūros įstaigose, mažmenoje ir pavieniams asmenims. Kiekviena eilutė nurodo, kiek konkrečios vaistų pakuotės vienetų buvo parduota atitinkamą mėnesį. 
+Taip pat nurodoma papildoma informacija apie pakuotę: bendrinis vaisto pavadinimas, stiprumas, farmacinė forma, pakuotės aprašymas, pakuotės pirminis ir antrinis dydis, bei jų matavimo vienetai, vaistinio preparato pakuotės pardavimo vietos tipas ir pardavimų skaičių vienetais. 
+
+Duomenų teikėjas: Valstybinė vaistų kontrolės tarnyba.
+Lentelėje pateikiami nuo 2017 m. kaupiami duomenys.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,ParduotaPakuote,,,vda_prime_key,,,4,,,Vaistinių preparatų pakuočių pardavimai,
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,"""Unikalus Valstybės duomenų agentūros sugeneruotas eilutės identifikatorius. Eilutės unikalumą sudaro pakid, data, pardavimai"""
+,,,,,pakid,string,,,,4,open,,Pakuotės identifikacinis numeris,
+,,,,,npakid,string,,,,4,open,,Nacionalinis vaistinio preparato pakuotės identifikatorius,
+,,,,,vid,string,,,,4,open,,Vaistinio preparato identifikacinis numeris,
+,,,,,data,date,M,,,4,open,,Pardavimų data,"""Data, nurodanti pardavimų ataskaitą už konkretų mėnesį"""
+,,,,,bendrinis_pavadinimas,string,,,,4,open,,Vaistinio preparato bendrinis pavadinimas,
+,,,,,farmacine_forma,string,,,,4,open,,Vaisto fizinė forma,
+,,,,,pakuote,string,,,,4,open,,Pakuotės aprašymas,
+,,,,,pakuotes_pirminis_dydis,string,,,,3,open,,Pakuotės pirminis dydis,"""Pirminis pakuotės dydis, nurodantis vaistinio preparato dozės skaitinę talpą"""
+,,,,,pakuotes_matav_vnt,string,,,,4,open,,Pakuotės pirminio dydžio matavimo vienetai,
+,,,,,pakuotes_antrinis_dydis,string,,,,3,open,,Pakuotės antrinis dydis,"""Antrinis pakuotės dydis, nurodantis dozių skaičių pakuotėje"""
+,,,,,stiprumas,string,,,,4,open,,Vaistinio preparato stiprumas,
+,,,,,pardavimai,string,,,,4,open,,Vaistų pardavimo tipai,
+,,,,,,enum,,"""Mažmenai""",,,,,,
+,,,,,,,,"""Vaistinėms""",,,,,,
+,,,,,,,,"""Pavieniams pacientams""",,,,,,
+,,,,,,,,"""ASPĮ""",,,,,Asmens sveikatos priežiūros įstaigoms,
+,,,,,parduota_vnt,integer,,,,4,open,,Parduotas vaistinių preparatų skaičius,
