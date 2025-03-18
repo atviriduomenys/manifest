@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/cpva/paramu_duomenys_dr,,,,,,,,,,,,VšĮ Centrinės projektų valdymo agentūros administruojamos ES fondų ir tarptautinių programų projektų sutartys,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pateiktas paraiškas ir pasirašytas finansuoti sutartis (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą); pažeidimų tyrimų informaciją įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).  
+,datasets/gov/cpva/paramu_duomenys_dr,,,,,,,,,,,,VšĮ Centrinės projektų valdymo agentūros administruojamos ES fondų ir tarptautinių programų projektų sutartys,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS, LŠBP, CPVAIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pateiktas paraiškas ir pasirašytas finansuoti sutartis (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą); pažeidimų tyrimų informaciją įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).  
 
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, todėl duomenys nebebus atnaujinami. 
 
@@ -8,13 +8,14 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,PazeidimoTyrimas,,,pazeidimo_tyr_id,,,4,,,Pažeidimų tyrimų informacija įtariant pažeidimą,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pažeidimų tyrimų informaciją įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).  
+,,,,PazeidimoTyrimas,,,pazeidimo_tyr_id,,,4,,,Pažeidimų tyrimų informacija įtariant pažeidimą,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS, LŠBP, CPVAIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pažeidimų tyrimų informaciją įtariant pažeidimą (viena eilutė atitinka vieną įtariamą pažeidimą ir statusą, nurodantį, ar pažeidimas nustatytas).  
 
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, todėl duomenys nebebus atnaujinami. 
 
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,pazeidimo_tyr_id,string,,,,4,open,,Pažeidimo tyrimo identifikacinis numeris,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,priemones_tipo_pavadinimas,string,,,,4,open,,Finansavimo priemonės pavadinimas,
 ,,,,,sutarties_nr,string,,,,4,open,,Sutarties numeris,
 ,,,,,pazeidimo_tyr_pradzia,date,D,,,4,open,,Pažeidimo tyrimo data,
 ,,,,,pazeidimo_tyr_busenos_data,date,D,,,4,open,,Pažeidimo būsenos data,
@@ -29,7 +30,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,,,,,"""Pažeidimas ir įtariama nusikalstama veikla""",,,,Pažeidimas ir įtariama nusikalstama veikla,
 ,,,,,,,,,"""Įtariama nusikalstama veikla""",,,,Įtariama nusikalstama veikla,
 ,,,,,,,,,,,,,,
-,,,,Sutartis,,,vda_prime_key,,,4,,,Pateiktos paraiškos bei pasirašytos finansuoti sutartys,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pateiktas paraiškas ir pasirašytas finansuoti sutartis (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).  
+,,,,Sutartis,,,vda_prime_key,,,4,,,Pateiktos paraiškos bei pasirašytos finansuoti sutartys,"Duomenys pateikiami iš Informacinių projektų administravimo sistemų (EEENORIS, SPIS, LŠBP, CPVAIS), skirtų kaupti, apdoroti ir saugoti statistinius ir finansinius duomenis, susijusius su VšĮ Centrinės projektų valdymo agentūros administruojamų Europos Sąjungos 2007–2017 m. fondų programų projektų įgyvendinimu. Rinkinyje pateikiamos dvi lentelės, kuriose galima rasti tokią informaciją: pateiktas paraiškas ir pasirašytas finansuoti sutartis (viena eilutė atitinka atitinkamą paraišką, pasirašytos sutarties statusų pasikeitimų eigą).  
 
 Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, todėl duomenys nebebus atnaujinami. 
 

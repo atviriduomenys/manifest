@@ -850,7 +850,9 @@ datasets/gov/lamabpo/mvg_programa.csv
 datasets/gov/asmlis/skaitikliu_parodymai.csv
 datasets/gov/nzt/paraiskos.csv
 datasets/gov/vtek/mokymai.csv
-datasets/gov/vmpsc/suteiktos_paslaugos.csv
+datasets/gov/vmspc/suteiktos_paslaugos.csv
 datasets/gov/vtek/pinreg_ataskaitos.csv
 datasets/gov/vmpsc/suteikta_parama.csv
 datasets/gov/muitine/dokumentu_sarasas.csv
+datasets/gov/vmspc/suteikta_parama.csv
+datasets/gov/moletu_r_sav/reklamos_leidimas.csv
