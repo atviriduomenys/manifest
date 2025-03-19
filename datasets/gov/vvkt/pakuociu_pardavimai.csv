@@ -1,9 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vvkt/pakuociu_pardavimai,,,,,,,,,,,,Vaistinių preparatų pakuočių pardavimai,"""Duomenų rinkinyje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie mėnesinius vaistinių preparatų pakuočių pardavimus vaistinėse, asmens sveikatos priežiūros įstaigose, mažmenoje ir pavieniams asmenims. Kiekviena eilutė nurodo, kiek konkrečios vaistų pakuotės vienetų buvo parduota atitinkamą mėnesį. 
-Taip pat nurodoma papildoma informacija apie pakuotę: bendrinis vaisto pavadinimas, stiprumas, farmacinė forma, pakuotės aprašymas, pakuotės pirminis ir antrinis dydis, bei jų matavimo vienetai, vaistinio preparato pakuotės pardavimo vietos tipas ir pardavimų skaičių vienetais. 
+,datasets/gov/vvkt/pakuociu_pardavimai,,,,,,,,,,,,Vaistinių preparatų pakuočių pardavimai,"""Duomenų rinkinyje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie mėnesinius vaistinių preparatų pakuočių pardavimus vaistinėse, asmens sveikatos priežiūros įstaigose, mažmenoje ir pavieniams asmenims. Lentelėje pateikiami nuo 2017 m. kaupiami duomenys. Kiekviena eilutė nurodo, kiek konkrečios vaistų pakuotės vienetų buvo parduota atitinkamą mėnesį. 
+Taip pat nurodoma papildoma informacija apie pakuotę: bendrinis vaisto pavadinimas, stiprumas, farmacinė forma, pakuotės aprašymas, pakuotės pirminis ir antrinis dydis bei jų matavimo vienetai, vaistinio preparato pakuotės pardavimo vietos tipas ir pardavimų skaičių vienetais.
 
-Duomenų teikėjas: Valstybinė vaistų kontrolės tarnyba.
-Lentelėje pateikiami nuo 2017 m. kaupiami duomenys.
+Duomenų teikėjas – Valstybinė vaistų kontrolės tarnyba.
 
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
