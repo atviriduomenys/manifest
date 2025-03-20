@@ -816,7 +816,10 @@ datasets/gov/lmt/darbu_vertinimas.csv
 datasets/gov/vvkt/vaistu_kompensavimas.csv
 datasets/gov/marijampoles_sav/savivaldybes_objektai.csv
 datasets/gov/ndnt/eiles.csv
-datasets/gov/vpb/pr.csv
+datasets/gov/vpb/es_pr.csv
+datasets/gov/vpb/lr_pr.csv
+datasets/gov/vpb/pzr.csv
+datasets/gov/vpb/dr.csv
 datasets/gov/cpva/paramu_duomenys.csv
 datasets/gov/nsa/silr/silr.csv
 datasets/gov/sppd/socialiniu_projektu_duomenys.csv
