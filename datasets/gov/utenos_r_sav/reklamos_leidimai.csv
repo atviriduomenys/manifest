@@ -17,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,reklamos_zona,string,,reklamos_zona,,4,open,,Reklamos zona,
 ,,,,,reklamos_plotas,number,,reklamos_plotas,,4,open,,Reklamos plotas,
 ,,,,,reklamos_adresas,string,,reklamos_adresas,,4,open,,Reklamos įrenginio adresas,
-,,,,,geometrija,"geometry(point,3346)",,,,,,,Geometrija LKS sistemoje,
+,,,,,geometrija,"geometry(point,3346)",,geometrija,,4,open,,Geometrija LKS sistemoje,
