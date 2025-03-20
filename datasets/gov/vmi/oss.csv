@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,OssDeklaracija,,,,eiles_nr,,4,,,OSS Deklaracijoas,"One Stop Shop (OSS) - tai sistema, kuri palengvina mokestinių PVM prievolių vykdymą ūkio subjektams, parduodantiems neapmokestinamiesiems asmenims tam tikras prekes ar paslaugas, už kurias PVM turėtų būti sumokėtas kitoje valstybėje narėje tais atvejais, kai veikla apima daugiau nei vienos ES valstybės narės teritoriją. Ūkio subjektai, besinaudojantys sistema, registruojasi, deklaruoja ir moka PVM vienoje valstybėje narėje, neatsižvelgdami į tai, kad paslaugas teikia ir (ar) prekes tiekia keliose ES valstybėse narėse."
-,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
+,,,,,eiles_nr,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,dalyvio_id,integer,,,,4,open,,OSS dalyvio identifikatorius,
 ,,,,,pvm_nr_id,string,,,,4,open,,Mokesčių mokėtojo ID OSS sistemoje,
 ,,,,,pvm_kodo_valstybe,string,,,,2,open,,"Valstybė,suteikusi PVM mokėtojo kodą",
