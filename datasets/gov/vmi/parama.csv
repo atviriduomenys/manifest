@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Deklaracija,,,,eiles_nr,,4,,,Prašymai pervesti pajamų mokesčio dalį duomenys,"Prašymų pervesti pajamų mokesčio dalį vienetams, turintiems teisę gauti paramą, ir (arba) politinėms partijoms duomenys"
-,,,,,eiles_nr,integer,,,,4,open,,Įrašo identifikatorius,
+,,,,,eiles_nr,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,remejo_kodas,string,,,,2,open,,Rėmėjo kodas,
 ,,,,,metai,integer,,,,2,open,,Mokestinis laikotarpis,
 ,,,,,gavejo_kodas,string,,,,2,open,,Gavėjo kodas,
