@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,InternetTechPastatas,,,vda_prime_key,,,,,,Interneto technologijos pastatuose,"""Rinkinyje pateikiami Lietuvos Respublikos Ryšių reguliavimo tarybai interneto ryšio operatorių pateikti duomenys apie interneto technologijas pastatuose.  Pastatų adresai pateikiami 1km dydžio stačiakampėmis gardelėmis. Viena eilutė yra viena interneto technologija pastate per vienerius metus. Duomenys pateikiami nuo 2023 metų ir atnaujinami kiekvienų metų balandžio mėn. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
-,,,,,vda_prime_key,string,,,4,open,,,Duomenų eilutės įrašo identifikatorius,
+,,,,,vda_prime_key,string,,,,4,open,,Duomenų eilutės įrašo identifikatorius,
 ,,,,,iraso_sukurimo_data,date,D,,,4,open,,"Metai, už kuriuos pateikti duomenys",
 ,,,,,pastato_id,string,,,,4,open,,Pastato identifikavimo kodas,
 ,,,,,interneto_technologija,string,,interneto_technologija,,4,open,,Pastate esanti interneto technologija,
