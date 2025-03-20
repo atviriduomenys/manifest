@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/utenos_r_sav,,,,,ns,,,,,,,Uteno rajono savivaldybė,
+,datasets/gov/utenos_r_sav,,,,,ns,,,,,,,Utenos rajono savivaldybė,
 ,datasets/gov/utenos_r_sav/reklamos_leidimai,,,,,,,,,,,,Reklamos leidimų duomenų rinkinys,Utenos rajono savivaldybės reklamų leidimai
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
