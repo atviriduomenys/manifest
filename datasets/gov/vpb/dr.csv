@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dabartines_busenos_data,date,D,,,4,open,,"Data, nuo kada galioja dizaino dabartinė būsena",
 ,,,,,paraiskos_data,date,D,,,4,open,,Dizaino paraiškos data,
 ,,,,,registracijos_data,date,D,,,4,open,,Dizaino registracijos data,
-,,,,,registracijos_paskelbimo_data,date,D,,,4,open,,Diazaino registracijos paskelbimo data,
+,,,,,registracijos_paskelbimo_data,date,D,,,4,open,,Dizaino registracijos paskelbimo data,
 ,,,,,galiojimo_pabaigos_data,date,D,,,4,open,,Dizaino galiojimo pabaigos data,
 ,,,,,,,,,,,,,,
 ,,,,Asmuo,,,,,,,,,Dizainams priskirti asmenys,"Lentelė „Dizainams priskirti asmenys“. Lentelę sudaro: dizaino ir paraiškos numeriai, priskirto juridinio asmens pavadinimas arba fizinio asmens vardas ir pavardė, asmens tipas, vaidmuo dizaine, pateiktas adresas ir šalis. Vienas įrašas atitinka vieną unikalią dizaino numerio, asmens ir jo vaidmens dizaine kombinaciją. Įstaigos prašymu, duomenys apie dizainerio vaidmenį turinčius asmenis buvo neįtraukti."
