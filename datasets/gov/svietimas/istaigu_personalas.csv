@@ -16,7 +16,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dirba_nuo,date,M,,,4,open,,Dirba nuo,
 ,,,,,dirba_iki,date,M,,,4,open,,Dirba iki,
 ,,,,,pareigos,string,,,,4,open,,Asmens pareigos,
-,,,,,etatu_skaicius,integer,,,,4,open,,Etato dydis,
+,,,,,etatu_skaicius,number,,,,4,open,,Etato dydis,
 ,,,,,projektas_mokykla,string,,,,4,open,,Projektinė ar ugdomoji veikla,
 ,,,,,institucija,string,,,,4,open,,Švietimo įstaigos pavadinimas,
 ,,,,,institucijos_kodas,string,,,,4,open,,Švietimo įstaigos JAR  kodas,
