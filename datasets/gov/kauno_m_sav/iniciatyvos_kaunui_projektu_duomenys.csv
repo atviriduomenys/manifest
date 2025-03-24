@@ -12,16 +12,16 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vykdymo_pradzia,date,D,,,4,open,,Projekto vykdymo pradžia,
 ,,,,,vykdymo_pabaiga,date,D,,,4,open,,Projekto vykdymo pabaiga,
 ,,,,,paraiskos_busena,string,,,,4,open,,Paraiškos būsena,Būsena nusakanti paraiškos dabartinį statusą
-,,,,,,enum,,,"Atmesta",,,,Paraiška atmesta,
-,,,,,,,,,"Finansuojama",,,,Paraiška finansuojama (galutinė suma),
-,,,,,,,,,"Nefinansuojama",,,,Paraiška nefinansuojama,
-,,,,,,,,,"Projektas vykdomas (sutartis sudaryta)",,,,Projektas vykdomas,
-,,,,,,,,,"Projektas įvykdytas",,,,Projektas įvykdytas,
-,,,,,,,,,"Projektas įvykdytas su lėšų grąžinimu",,,,Projektas įvykdytas su lėšų grąžinimu,
+,,,,,,enum,,,"""Atmesta""",,,,Paraiška atmesta,
+,,,,,,,,,"""Finansuojama""",,,,Paraiška finansuojama (galutinė suma),
+,,,,,,,,,"""Nefinansuojama""",,,,Paraiška nefinansuojama,
+,,,,,,,,,"""Projektas vykdomas (sutartis sudaryta)""",,,,Projektas vykdomas,
+,,,,,,,,,"""Projektas įvykdytas""",,,,Projektas įvykdytas,
+,,,,,,,,,"""Projektas įvykdytas su lėšų grąžinimu""",,,,Projektas įvykdytas su lėšų grąžinimu,
 ,,,,,sutarties_busena,string,,,,4,open,,Sutarties būsena,Būsena nusakanti Sutarties dabartinį statusą (Null => sutartis nesudaryta)
-,,,,,,enum,,,"Atsisakė sudaryti sutartį",,,,Pareiškėjas atsisakė sudaryti sutartį,
-,,,,,,,,,"Vykdoma",,,,Sutartis vykdoma,
-,,,,,,,,,"Įvykdyta",,,,Sutartis įvykdyta,
+,,,,,,enum,,,"""Atsisakė sudaryti sutartį""",,,,Pareiškėjas atsisakė sudaryti sutartį,
+,,,,,,,,,"""Vykdoma""",,,,Sutartis vykdoma,
+,,,,,,,,,"""Įvykdyta""",,,,Sutartis įvykdyta,
 ,,,,,prasoma_suma,number,,,,4,open,,Projektui įgyvendinti prašoma suma,Paskirtas biudžetas kurį nurodo pareiškėjas
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,galutine_suma,number,,,,4,open,,Projektui įgyvendinti skirta suma,Paskirtas biudžetas kuris bus skirtas projekto įgyvendinimui
