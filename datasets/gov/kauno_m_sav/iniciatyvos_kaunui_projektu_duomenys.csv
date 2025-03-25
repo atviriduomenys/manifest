@@ -1,0 +1,41 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/iniciatyvos_kaunui_projektu_duomenys,,,,,,,,,,,,Projektų pagal programą 'Iniciatyvos Kaunui' duomenys,"Lentelėse pateikti Kauno miesto savivaldybės programos 'Iniciatyvos Kaunui' projektų, konkursų bei projektų išlaidų duomenys. Projektų duomenys pateikiami nuo momento, kai paraiškos tampa aktualios tikrinimo procesui. Rinkinys sudarytas Valstybės duomenų agentūros. Projektų lentelės viena eilutė atitinka vieną paraišką, konkursų lentelės – tam tikrą konkursą, skirtą projekto finansavimui gauti, o projektų išlaidų lentelės – paraiškos sąmatą. Atkreipiame dėmesį, kad duomenų eilutės yra nuolatos pildomos, o informacija jose yra tikslinama. Duomenys apima Kaune išsidėsčiusias organizacijas. Duomenų laiko aprėptis – nuo 2024 m. gruodžio 1d. Duomenų teikėjas – Kauno miesto savivaldybė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Projektas,,,paraiskos_id,,,4,,,Organizacijų bei projektų duomenys,
+,,,,,paraiskos_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
+,,,,,konkurso_id,ref,Konkursas[konkurso_id],,,4,open,,Konkurso identifikatorius,Išorinis raktas į konkurso lentelę
+,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"
+,,,,,paraiskos_pav,string,,,,4,open,,Paraiškos pavadinimas,
+,,,,,paraiskos_teikimo_momentas,datetime,S,,,4,open,,Paraiškos teikimo momentas,Momentas kada buvo sukurtas įrašas sistemoje
+,,,,,vykdymo_pradzia,date,D,,,4,open,,Projekto vykdymo pradžia,
+,,,,,vykdymo_pabaiga,date,D,,,4,open,,Projekto vykdymo pabaiga,
+,,,,,paraiskos_busena,string,,,,4,open,,Paraiškos būsena,Būsena nusakanti paraiškos dabartinį statusą
+,,,,,,enum,,,"""Atmesta""",,,,Paraiška atmesta,
+,,,,,,,,,"""Finansuojama""",,,,Paraiška finansuojama (galutinė suma),
+,,,,,,,,,"""Nefinansuojama""",,,,Paraiška nefinansuojama,
+,,,,,,,,,"""Projektas vykdomas (sutartis sudaryta)""",,,,Projektas vykdomas,
+,,,,,,,,,"""Projektas įvykdytas""",,,,Projektas įvykdytas,
+,,,,,,,,,"""Projektas įvykdytas su lėšų grąžinimu""",,,,Projektas įvykdytas su lėšų grąžinimu,
+,,,,,sutarties_busena,string,,,,4,open,,Sutarties būsena,Būsena nusakanti Sutarties dabartinį statusą (Null => sutartis nesudaryta)
+,,,,,,enum,,,"""Atsisakė sudaryti sutartį""",,,,Pareiškėjas atsisakė sudaryti sutartį,
+,,,,,,,,,"""Vykdoma""",,,,Sutartis vykdoma,
+,,,,,,,,,"""Įvykdyta""",,,,Sutartis įvykdyta,
+,,,,,prasoma_suma,number,,,,4,open,,Projektui įgyvendinti prašoma suma,Paskirtas biudžetas kurį nurodo pareiškėjas
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,galutine_suma,number,,,,4,open,,Projektui įgyvendinti skirta suma,Paskirtas biudžetas kuris bus skirtas projekto įgyvendinimui
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
+,,,,,,,,,,,,,,
+,,,,Konkursas,,,konkurso_id,,,4,,,Konkursų skirtų projektams įgyvendinti duomenys,
+,,,,,konkurso_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
+,,,,,kodas,string,,,,4,open,,Konkurso kodas,Konkurso kodas randamas interneto svetainėje
+,,,,,nuoroda,string,,,,4,open,,Konkurso URL nuoroda,
+,,,,,pavadinimas,string,,,,4,open,,Konkurso pavadinimas,
+,,,,,veiklos,string,,,,4,open,,Konkurso veiklos,Konkurso veiklos kuriomis siekiamas įgyvendinti uždavinys
+,,,,,prioritetai,string,,,,4,open,,Konkurso prioritetai,Konkursui skirti prioritetai kuriuos turi įgyvendinti projektas
+,,,,,paskelbimo_data,date,D,,,4,open,,Paraiškų teikimo pradžios data,
+,,,,,paraiskos_pateikimo_terminas,date,D,,,4,open,,Paraiškų teikimo pabaigos data,
+,,,,,procentas_nuosavo_indelio,string,,,,4,open,,Procentinė dalis išlaidų kurias turi padengti pareiškėjas,
+,,,,,lesos_igyvendinimui,number,,,,4,open,,Konkurso paskirtas biudžetas,Paskirtas biudžetas kuris išskirstomas kiekvienam projektui
+,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
