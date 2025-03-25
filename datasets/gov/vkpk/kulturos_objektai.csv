@@ -1,9 +1,9 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
-datasets/gov/architekturos_paveldas,,,,,,,,,,,,"Lietuvai reikšmingas kultūros paveldas, esantis užsienyje,Duomenų rinkinyje pateikiamas kultūros paveldo objekto pavadinimas, aprašymas, kategorijos, laikotarpis, metai, miestas, šalis, WGS koordinatės, autoriai, susiję asmenys ir interneto svetainės adresas (URL). Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.",
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/architekturos_paveldas,,,,,,,,,,,,"Lietuvai reikšmingas kultūros paveldas, esantis užsienyje",
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,architekturos_paveldas,,,id,,,4,,,"Aprasymas"
+,,,,kulturos_objektai,,,id,,,4,,,"Duomenų rinkinyje pateikiamas kultūros paveldo objekto pavadinimas, aprašymas, kategorijos, laikotarpis, metai, miestas, šalis, WGS koordinatės, autoriai, susiję asmenys ir interneto svetainės adresas (URL)."
 ,,,,,,,id,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,pavadinimas,string,,pavadinimas,,4,open,,Paveldo objekto pavadinimas,
 ,,,,,aprasymas,string,,aprasymas,,4,open,,Išsamus objekto aprašymas,
