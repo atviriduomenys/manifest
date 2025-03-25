@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/architekturos_paveldas,,,,,,,,,,,,Lietuvai reikšmingas kultūros paveldas, esantis užsienyje,Duomenų rinkinyje pateikiamas kultūros paveldo objekto pavadinimas, aprašymas, kategorijos, laikotarpis, metai, miestas, šalis, WGS koordinatės, autoriai, susiję asmenys ir interneto svetainės adresas (URL). Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,, ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,, ,,,,,,,,,,,,,,
+,,,,architekturos_paveldas,,,id,,,4,,,"Aprasymas"
+,,,,,,,id,,,4,open,,Unikalus įrašo identifikatorius,
+,,,,,pavadinimas,string,,pavadinimas,,4,open,,Paveldo objekto pavadinimas,
+,,,,,aprasymas,string,,aprasymas,,4,open,,Išsamus objekto aprašymas,
+,,,,,kategorija,string,,kategorija,,4,open,,Objekto kategorija,
+,,,,,laikotarpis,string,,laikotarpis,,4,open,,Istorinis laikotarpis,
+,,,,,metai,string,,metai,,4,open,,Statybiniai metai,
+,,,,,miestas,string,,miestas,,4,open,,Miestas,
+,,,,,salis,string,,salis,,4,open,,Šalis,
+,,,,,lat_wgs,number,,lat_wgs,,4,open,,Geografinė platuma (WGS84),
+,,,,,lng_wgs,number,,lng_wgs,,4,open,,Geografinė ilguma (WGS84),
+,,,,,autoriai,string,,autoriai,,3,open,,Autorių informacija,
+,,,,,susijusios_asmenybes,string,,susijusios_asmenybes,,3,open,,Susijusių asmenybių informacija,
+,,,,,url,string,,url,,4,open,,Išorinis URL nuoroda,
