@@ -23,6 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyvuno_dokumentas,string,,,,4,open,,Gyvūno dokumentas,
 ,,,,,,enum,,,"""Gyvūno augintinio pasas""",,,,,
 ,,,,,,,,,"""Veterinarijos sertifikatas""",,,,,
+,,,,,gyvuno_dokumento_numeris,string,,,,4,open,,Gyvūno dokumento numeris,
 ,,,,,muitines_sprendimas,string,,,,4,open,,"Muitinės sprendimas, jei gyvūnas neatitinka pervežimo kriterijų",
 ,,,,,,enum,,,"""Grąžinti į trečią šalį""",,,,,
 ,,,,,,,,,"""Karantinuoti""",,,,,
