@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,kulturos_objektas,,,id,,,4,,,"Lietuvai reikšmingas kultūros paveldas, esantis užsienyje","Duomenų rinkinyje pateikiamas kultūros paveldo objekto pavadinimas, aprašymas, kategorijos, laikotarpis, metai, miestas, šalis, WGS koordinatės, autoriai, susiję asmenys ir interneto svetainės adresas (URL)."
+,,,,kulturos_objektai,,,id,,,4,,,"Lietuvai reikšmingas kultūros paveldas, esantis užsienyje","Duomenų rinkinyje pateikiamas kultūros paveldo objekto pavadinimas, aprašymas, kategorijos, laikotarpis, metai, miestas, šalis, WGS koordinatės, autoriai, susiję asmenys ir interneto svetainės adresas (URL)."
 ,,,,,id,string,,,,4,open,,Unikalus įrašo identifikatorius,
 ,,,,,pavadinimas,string,,pavadinimas,,4,open,,Paveldo objekto pavadinimas,
 ,,,,,aprasymas,string,,aprasymas,,4,open,,Išsamus objekto aprašymas,
