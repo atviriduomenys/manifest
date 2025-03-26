@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/apklausadelsvs,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1908/download/,,,,,,
+,,,,SmulkiojoVerslininkoSaskaita,,,id,10549/Apklausa_del_SVS.csv,,4,,,Apklausos dėl smulkiojo verslininko sąskaitos duomenys,
+,,,,,id,integer,,ID,,4,open,,Id,
+,,,,,data,date,S,Data,,4,open,,Atsakymo data ir laikas,
+,,,,,pirmas_kl,string,,1. Ar vykdydami savo veiklą norėtumėte naudotis šia smulkiojo verslininko sąskaita?,,3,open,,1. Ar vykdydami savo veiklą norėtumėte naudotis šia smulkiojo verslininko sąskaita?,"Atsakymo variantai: Taip, Ne, Nežinau, Kita."
+,,,,,antras_kl,string,,"2. Norėtumėte, kad mokėtini mokesčiai (GPM, PSD ir VSD) būtų:",,3,open,,"2. Norėtumėte, kad mokėtini mokesčiai (GPM, PSD ir VSD) būtų:","Atsakymo variantai: (1) Nuskaitomi automatiškai pajamų gavimo metu, nuo gautos pajamų sumos (2) Tik apskaičiuojami automatiškai, o juos apmokėti galėtumėte Jums patogiu metu (3) Kita."
+,,,,,trecias_kl,string,,"3. Ar pritartumėte pasiūlymui, kad elektroninio mokėjimo išrašas galėtų pakeisti sąskaitą faktūrą?",,3,open,,"3. Ar pritartumėte pasiūlymui, kad elektroninio mokėjimo išrašas galėtų pakeisti sąskaitą faktūrą?","Atsakymo variantai: Taip, Ne, Nežinau, Kita."
+,,,,,ketvirtas_kl,string,,4. Kokioje srityje vykdote savarankiškai dirbančio asmens ekonominę (-es) veiklą (-as) (galimi keli pasirinkimo variantai)?,,3,open,,4. Kokioje srityje vykdote savarankiškai dirbančio asmens ekonominę (-es) veiklą (-as)?,"Atsakymo variantai: Žemės ūkis, Gamyba, Statyba, Prekyba, Transporto paslaugos, Remonto paslaugos, NT paslaugos, Švietimo paslaugos, Socialinės ir sveikatos paslaugos, Teisinės paslaugos, IT paslaugos, Meninė veikla, Kita."
