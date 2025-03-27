@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pranešimas,,,,,4,open,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pazeidimus, pazeidimo rūšį, pavojų, pazeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
+,,,,Pranešimas,,,pranesimo_id,,,4,,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pazeidimus, pazeidimo rūšį, pavojų, pazeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Unikalus pranešimo identifikatorius",
 ,,,,,pranesimo_data,date,,pranesimo_data,,4,open,,"Pranešimo data",
 ,,,,,nustatytas_pazeidimas,string,,nustatytas_pazeidimas,,4,open,,"Nustatytas pazeidimas",
@@ -15,7 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,rizikos_tipas,string,,rizikos_tipas,,4,open,,"Rizikos tipas",
 ,,,,,rizikos_taikymo_ribos,string,,rizikos_taikymo_ribos,,4,open,,"Rizikos taikymo ribos",
 ,,,,,,,,,,,,,,
-,,,,Siunta,,,,,4,open,,"Siuntų duomenys","Pateikiami siuntų duomenys: kilmės šalis, produkto grupė, produkto pavadinimas, partijos numeris, tinkamumo terminas ir tinkamumo tipas."
+,,,,Siunta,,,siuntos_id,,,4,,,"Siuntų duomenys","Pateikiami siuntų duomenys: kilmės šalis, produkto grupė, produkto pavadinimas, partijos numeris, tinkamumo terminas ir tinkamumo tipas."
 ,,,,,siuntos_id,string,,siuntos_id,,4,open,,"Unikalus siuntos identifikatorius",
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Pranešimo identifikatorius",
 ,,,,,kilmes_salis,string,,kilmes_salis,,4,open,,"Kilmės šalis",
@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tinkamumo_terminas,date,,tinkamumo_terminas,,4,open,,"Tinkamumo terminas",
 ,,,,,tinkamumo_tipas,string,,tinkamumo_tipas,,4,open,,"Tinkamumo tipas",
 ,,,,,,,,,,,,,,
-,,,,Subjektas,,,,,4,open,,"Subjekatų duomenys","Pateikiama informacija apie ukio subjektus: subjekto pavadinimas, tipas ir šalis."
+,,,,Subjektas,,,id,,,4,,,"Subjekatų duomenys","Pateikiama informacija apie ukio subjektus: subjekto pavadinimas, tipas ir šalis."
 ,,,,,id,string,,id,,4,open,,"Unikalus subjekto identifikatorius",
 ,,,,,siuntos_id,string,,siuntos_id,,4,open,,"Siuntos identifikatorius",
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Pranešimo identifikatorius",
