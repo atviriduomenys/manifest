@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vmvt/pranesimai,,,,,,,,,,,,Pranešimai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
 ,,,,Pranešimas,,,,,4,open,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pazeidimus, pazeidimo rūšį, pavojų, pazeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Unikalus pranešimo identifikatorius",
 ,,,,,pranesimo_data,date,,pranesimo_data,,4,open,,"Pranešimo data",
