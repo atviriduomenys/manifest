@@ -3,13 +3,13 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pranešimas,,,pranesimo_id,,pazeidimo_rusis!='Klastotė',4,,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pazeidimus, pazeidimo rūšį, pavojų, pazeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
+,,,,Pranešimas,,,pranesimo_id,,pazeidimo_rusis!='Klastotė',4,,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pažeidimus, pažeidimo rūšį, pavojų, pažeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Unikalus pranešimo identifikatorius",
 ,,,,,pranesimo_data,date,,pranesimo_data,,4,open,,"Pranešimo data",
-,,,,,nustatytas_pazeidimas,string,,nustatytas_pazeidimas,,4,open,,"Nustatytas pazeidimas",
-,,,,,pazeidimo_rusis,string,,pazeidimo_rusis,,4,open,,"Pazeidimo rūšis",
+,,,,,nustatytas_pazeidimas,string,,nustatytas_pazeidimas,,4,open,,"Nustatytas pažeidimas",
+,,,,,pazeidimo_rusis,string,,pazeidimo_rusis,,4,open,,"Pažeidimo rūšis",
 ,,,,,pavojus,string,,pavojus,,4,open,,"Pavojus",
-,,,,,pazeidimo_tipas,string,,pazeidimo_tipas,,4,open,,"Pazeidimo tipas",
+,,,,,pazeidimo_tipas,string,,pazeidimo_tipas,,4,open,,"Pažeidimo tipas",
 ,,,,,aptikimo_tipas,string,,aptikimo_tipas,,4,open,,"Aptikimo tipas",
 ,,,,,isplatinimo_ribos,string,,isplatinimo_ribos,,4,open,,"Išplatinimo ribos",
 ,,,,,,enum,,,"""Išplatinta rinkoje""",,,,Išplatinta rinkoje,
@@ -29,10 +29,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tinkamumo_terminas,date,,tinkamumo_terminas,,4,open,,"Tinkamumo terminas",
 ,,,,,tinkamumo_tipas,string,,tinkamumo_tipas,,4,open,,"Tinkamumo tipas",
 ,,,,,,,,,,,,,,
-,,,,Subjektas,,,id,,,4,,,"Subjekatų duomenys","Pateikiama informacija apie ukio subjektus: subjekto pavadinimas, tipas ir šalis."
+,,,,Subjektas,,,id,,,4,,,"Subjektų duomenys","Pateikiama informacija apie ukio subjektus: subjekto pavadinimas, tipas ir šalis."
 ,,,,,id,string,,id,,4,open,,"Unikalus subjekto identifikatorius",
 ,,,,,siuntos_id,string,,siuntos_id,,4,open,,"Siuntos identifikatorius",
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Pranešimo identifikatorius",
-,,,,,ukio_subjektas,string,,ukio_subjektas,,4,open,,"Ukio subjekto pavadinimas",
+,,,,,ukio_subjektas,string,,ukio_subjektas,,4,open,,"ūkio subjekto pavadinimas",
 ,,,,,subjekto_tipas,string,,subjekto_tipas,,4,open,,"Subjekto tipas",
-,,,,,ukio_subjekto_salis,string,,ukio_subjekto_salis,,4,open,,"Ukio subjekto šalis",
+,,,,,ukio_subjekto_salis,string,,ukio_subjekto_salis,,4,open,,"ūkio subjekto šalis",
