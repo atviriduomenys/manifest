@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pazeidimo_tipas,string,,pazeidimo_tipas,,4,open,,"Pazeidimo tipas",
 ,,,,,aptikimo_tipas,string,,aptikimo_tipas,,4,open,,"Aptikimo tipas",
 ,,,,,isplatinimo_ribos,string,,isplatinimo_ribos,,4,open,,"Išplatinimo ribos",
-,,,,,,enum,,,"""Išplatinta rinkoje""",,,,Išplatinta rinkoje",
+,,,,,,enum,,,"""Išplatinta rinkoje""",,,,Išplatinta rinkoje,
 ,,,,,,,,,"""Nėra informacijos apie išplatinimą""",,,,Nėra informacijos apie išplatinimą,
 ,,,,,,,,,"""Pasibaigęs tinkamumo vartoti laikas""",,,,Pasibaigęs tinkamumo vartoti laikas,
 ,,,,,,,,,"""Suvartota""",,,,Suvartota,
