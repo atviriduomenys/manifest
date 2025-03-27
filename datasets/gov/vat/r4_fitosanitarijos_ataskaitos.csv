@@ -4,6 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Sertifikatas,,,id,,,4,open,,"Pateikiama informacija apie išduotus fitosanitarijos sertifikatus per tam tikrą laikotarpį (išdavimo data; sertifikato numeris; būsena; fitosanitarinio sertifikato tipas; šalis gavėja; transporto priemonė; produkcijos KPN kodas, produkcija; produkcijos kiekio matavimo vnt.; produkcijos kiekis; produkcijos kilmės šalis; krovinio rizikos grupė)",
+,,,,,vda_id,string,,,,4,open,,"""valstybės duomenų agentūros įrašų identifikatorius""",
 ,,,,,id,string,,,,4,open,,Įrašo identifikatorius,
 ,,,,,padalinys,string,,,,4,open,,Patikrinimą atlikęs teritorinis padalinys,
 ,,,,,,enum,,,"""Klaipėdos regioninis skyrius""",,,,,
