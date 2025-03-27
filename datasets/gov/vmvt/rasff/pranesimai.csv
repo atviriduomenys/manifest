@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pranešimas,,,pranesimo_id,,pazeidimo_rusis!='Klastotė',4,,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pažeidimus, pažeidimo rūšį, pavojų, pažeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
+,,,,Pranešimas,,,pranesimo_id,,,4,,,"Pranešimų duomenys","Pateikiami pranešimai apie nustatytus pažeidimus, pažeidimo rūšį, pavojų, pažeidimo tipą, aptikimo tipą, išplatinimo ribas, rizikos tipą ir rizikos taikymo ribas."
 ,,,,,pranesimo_id,string,,pranesimo_id,,4,open,,"Unikalus pranešimo identifikatorius",
 ,,,,,pranesimo_data,date,,pranesimo_data,,4,open,,"Pranešimo data",
 ,,,,,nustatytas_pazeidimas,string,,nustatytas_pazeidimas,,4,open,,"Nustatytas pažeidimas",
