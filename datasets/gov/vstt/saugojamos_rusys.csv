@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vstt/rusys,,,,,,,,,,,,,"Saugojamos rūšys,Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Rusis,,,,id,,4,,,Saugojamos rūšys,"Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
+,,,,Rusis,,,,vda_id,,4,,,Saugojamos rūšys,"Saugojamų augalų, gyvūnų, grybų rūšių duomenys"
 ,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašų identifikatorius,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,stebejimas,date,D,,,4,open,,Stebėjimo data,
