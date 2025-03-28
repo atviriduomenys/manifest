@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,PrisirasesPaasp,,,,,,4,,,Prisirašiusių prie PAASP asmenų skaičius,Informacija apie prisirašiusių prie pirminės ambulatorinės asmens sveikatos priežiūros paslaugas teikiančių įstaigų asmenų skaičių
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,Ataskaitinio laikotarpio metai
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,Ataskaitinio laikotarpio mėnuo
 ,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, prie kurios prisirašę asmenys, ID"
@@ -24,3 +25,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,property,,"update(property: ""savivaldybe.pavadinimas"", type: """")",2,,Spinta:216,,
 ,,,,,amziaus_grupe,string,,,,3,open,,Amžiaus grupė,
 ,,,,,amzius,integer,,,,3,open,,Amžius metais,
+,,,,,asmenys,number,U,,,4,open,,Prisirašiusių asmenų skaičius,
