@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/sam,,,,,ns,,,,,,,Lietuvos Respublikos sveikatos apsaugos ministerija,
+,datasets/gov/sam/vaistai,,,,,,,,,,,,Paraiškų dėl vaistinių preparatų ar medicinos pagalbos priemonių įrašymo į kompensavimo sąrašus svarstymo duomenys,"Lietuvos Respublikos sveikatos apsaugos ministerija (LR SAM) renka ir skelbia duomenis apie svarstomas paraiškas dėl vaistinių preparatų ir medicinos pagalbos priemonių (MPP) įtraukimo į kompensuojamųjų sąrašus. Šie duomenys suteikia galimybę stebėti sveikatos technologijų vertinimo (STV) procesą ir priimamus sprendimus dėl kompensavimo. 
+STV paraiškų duomenis teikia Valstybinė vaistų kontrolės tarnyba (VVKT). MPP duomenys gaunami iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos (VASPVT) duomenų bazių. 
+Šio rinkinio duomenis galima praturtinti jungiant su VVKT atvertu rinkiniu (duomenys jungiami per stulpelį „paraiskos_numeris“): https://data.gov.lt/datasets/2897/."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Paraiska,,,vda_prime_key,,,4,,,Paraiškų dėl vaistinių preparatų ar medicinos pagalbos priemonių įrašymo į kompensavimo sąrašus svarstymo duomenys,"Lietuvos Respublikos sveikatos apsaugos ministerija (LR SAM) renka ir skelbia duomenis apie svarstomas paraiškas dėl vaistinių preparatų ir medicinos pagalbos priemonių (MPP) įtraukimo į kompensuojamųjų sąrašus. Šie duomenys suteikia galimybę stebėti sveikatos technologijų vertinimo (STV) procesą ir priimamus sprendimus dėl kompensavimo. 
+STV paraiškų duomenis teikia Valstybinė vaistų kontrolės tarnyba (VVKT). MPP duomenys gaunami iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos (VASPVT) duomenų bazių. 
+Šio rinkinio duomenis galima praturtinti jungiant su VVKT atvertu rinkiniu (duomenys jungiami per stulpelį „paraiskos_numeris“): https://data.gov.lt/datasets/2897/."
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,paraiskos_numeris,string,,,,4,open,,Sveikatos technologijų vertinimo (STV) paraiškų įrašyti vaistinį preparatą į kompensavimo sąrašus numeris,
+,,,,,bendrinis_preparato_pav,string,,,,4,open,,Bendrinis vaistinio preparato ar medicinos pagalbos priemonės (MPP) pavadinimas,
+,,,,,prekinis_preparato_pav,string,,,,4,open,,Prekinis vaistinio preparato ar medicinos pagalbos priemonės (MPP) pavadinimas,
+,,,,,pareiskejas,string,,,,4,open,,Pareiškėjo pavadinimas,
+,,,,,paraiskos_gavimo_data,date,D,,,4,open,,Paraiškos gavimo data,
+,,,,,tlk_kodas,string,,,,4,open,,"Ligų kodai pagal TLK-AM-10 (Tarptautinė statistinė ligų ir sveikatos sutrikimų klasifikacija, dešimtasis pataisytas ir papildytas leidimas, Australijos modifikacija)",
+,,,,,rekomendacijos_data,date,D,,,4,open,,Rekomendacijos gavimo data iš Valstybinės vaistų kontrolės tarnybos (VVKT) ar Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos (VASPVT),
+,,,,,posedzio_data,date,D,,,4,open,,Komisijos posėdžio data(-os) dėl vaistinių preparatų ar medicinos pagalbos priemonių (MPP) įrašymo į kompensavimo sąrašus,
+,,,,,spredimo_data,date,D,,,4,open,,Komisijos sprendimo priėmimo data dėl vaistinių preparatų ar medicinos pagalbos priemonių (MPP) įrašymo į kompensavimo sąrašus,
+,,,,,sprendimas,string,,,,4,open,,Priimtas komisijos sprendimas,
+,,,,,isakymo_data,date,D,,,4,open,,Įsakymo data,
+,,,,,isakymo_numeris,string,,,,4,open,,Įsakymo numeris,
