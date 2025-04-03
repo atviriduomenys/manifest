@@ -1,13 +1,15 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vlk/straipsniai,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Straipsnis,,,,,,4,,,PSDF biudžeto straipsnių sąrašas,"PSDF biudžeto straipsnių, pagal kuriuos apmokamos asmens sveikatos priežiūros paslaugos, sąrašas"
+,,,,Straipsnis,,,ad_id,,,4,,,PSDF biudžeto straipsnių sąrašas,"PSDF biudžeto straipsnių, pagal kuriuos apmokamos asmens sveikatos priežiūros paslaugos, sąrašas"
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,kodas,string,,,,4,open,,Straipsnio kodas,PSDF biudžeto straipsnio kodas pagal Klasifikatorių
 ,,,,,pavadinimas,string,,,,4,open,,Straipsnio pavadinimas,PSDF biudžeto straipsnio pavadinimas pagal Klasifikatorių
 ,,,,,nuo,date,D,,,4,open,,Strapsnis galioja nuo,"PSDF biudžeto straipsnio galiojimo pradžios data. Prie kai kurių PSDF biudžeto straipsnių ši data gali būti nenurodyta, nes IS „Sveidra“ ši data neįvesta"
 ,,,,,iki,date,D,,,4,open,,Straipsnis galioja iki,"PSDF biudžeto straipsnio galiojimo pabaigos data. Prie kai kurių PSDF biudžeto straipsnių ši data gali būti nenurodyta, nes IS „Sveidra“ ši data neįvesta"
 ,,,,,,,,,,,,,,
-,,,,Paslauga,,,,,,4,,,"Asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašas","Informacija apie asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašą"
+,,,,Paslauga,,,ad_id,,,4,,,"Asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašas","Informacija apie asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašą"
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,nuo,date,D,,,4,open,,Paslauga galioja nuo,Paslaugos priskyrimo atitinkamam PSDF biudžeto straipsniui pradžios data
 ,,,,,iki,date,D,,,4,open,,Paslauga galioja iki,Paslaugos priskyrimo atitinkamam PSDF biudžeto išlaidų straipsniui pabaigos data
 ,,,,,kodas,ref,/datasets/gov/vlk/paslaugos/Paslauga[kodas],,,4,open,,Paslaugos kodas,
