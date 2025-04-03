@@ -38,10 +38,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,8,,,,nelaimintas atsitikimas darbe,
 ,,,,,,,,,9,,,,negali būti nustatyta dėl pomirtinių pakitimų,
 ,,,,,,,,,10,,,,staigi netikėta,
-,,,,,pmprs,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,3,open,"pii:other",Pagrindinė mirties priežastis,Mirties atvejų ir jų priežasčių valstybės registre pagal Pasaulio sveikatos organizacijos taisykles išrinkta oficialiojoje statistikoje naudojama pagrindinė mirties priežastis
-,,,,,pmprs_pk,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,3,open,,"Trauma, apsinuodijimas ir kiti išorinių priežasčių padariniai (išorinėms mirties priežastims)",
-,,,,,pmprs_iv,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,3,open,,"Nelaimingo atsitikimo, savižudybės, žmogžudystės vietos kodas (išorinėms mirties priežastims) ",
-,,,,,pmprs_v,ref,/datasets/gov/vlk/tlk10am/Tlk10am[code],,,3,open,,Veikla (išorinėms mirties priežastims),
+,,,,,pmprs,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,3,open,"pii:other",Pagrindinė mirties priežastis,Mirties atvejų ir jų priežasčių valstybės registre pagal Pasaulio sveikatos organizacijos taisykles išrinkta oficialiojoje statistikoje naudojama pagrindinė mirties priežastis
+,,,,,pmprs_pk,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,3,open,,"Trauma, apsinuodijimas ir kiti išorinių priežasčių padariniai (išorinėms mirties priežastims)",
+,,,,,pmprs_iv,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,3,open,,"Nelaimingo atsitikimo, savižudybės, žmogžudystės vietos kodas (išorinėms mirties priežastims) ",
+,,,,,pmprs_v,ref,/datasets/gov/vlk/tlk10am/Tlk10am,,,3,open,,Veikla (išorinėms mirties priežastims),
 ,,,,,mmli_apl,integer,,,,4,open,,Medicininį mirties liudijimą išrašė,
 ,,,,,,enum,,,1,,,,"gydęs gydytojas, apžiūrėjęs mirusįjį ir konstatavęs mirtį",
 ,,,,,,,,,2,,,,kitas gydytojas apžiūrėjęs mirusįjį ir konstatavęs mirtį,
