@@ -1,0 +1,48 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kvjud/lu,,,,,,,,,,,,,
+,,LaivaiUoste,,,,xml,,https://www.portofklaipeda.lt/modules/LaivaiUoste/log/posted_data.xml,,,,,,
+,,,,,,,,,,,,,,
+,,,,LaivasUoste,,,,/LaivaiUoste/LaivasUoste,,,,,,
+,,,,,busena,string,,@Busena,,2,open,,,Būsena
+,,,,,,enum,,I,"""I""",,,,Išvykęs,
+,,,,,,,,P,"""P""",,,,Peršvarduojamas,
+,,,,,,,,A,"""A""",,,,Atvyksta,
+,,,,,,,,X,"""X""",,,,Atvykimas vėluoja,
+,,,,,,,,S,"""S""",,,,Stovi,
+,,,,,busenau,string,,@BusenaU,,2,open,,,
+,,,,,laivas,string,,@Laivas,,2,open,,,Laivas
+,,,,,laivasu,string,,@LaivasU,,2,open,,,
+,,,,,imo_nr,string,,@IMONr,,2,open,,,IMO numeris
+,,,,,imo_nru,string,,@IMONrU,,2,open,,,
+,,,,,veliava,string,,@Veliava,,2,open,,,Vėliava
+,,,,,veliavau,string,,@VeliavaU,,2,open,,,
+,,,,,atv_plan_data,string,,@AtvPlanData,,2,open,,,Planuojama atvykimo data
+,,,,,atv_plan_datau,string,,@AtvPlanDataU,,2,open,,,
+,,,,,atv_fakt_data,string,,@AtvFaktData,,2,open,,,Faktinė atvykimo data
+,,,,,atv_fakt_datau,string,,@AtvFaktDataU,,2,open,,,
+,,,,,atv_uzsakovas,string,,@AtvUzsakovas,,2,open,,,Agentas
+,,,,,atv_uzsakovasu,string,,@AtvUzsakovasU,,2,open,,,
+,,,,,atv_stv_pavad,string,,@AtvStvPavad,,2,open,,,Atvykimo krantinė
+,,,,,atv_stv_pavadu,string,,@AtvStvPavadU,,2,open,,,
+,,,,,atv_stv_tipas,string,,@AtvStvTipas,,2,open,,,Stovėjimo vietos tipas
+,,,,,atv_stv_tipasu,string,,@AtvStvTipasU,,2,open,,,
+,,,,,atv_stv_kompanija,string,,@AtvStvKompanija,,2,open,,,Atvykimo uosto kompanija
+,,,,,atv_stv_kompanijau,string,,@AtvStvKompanijaU,,2,open,,,
+,,,,,uzsakovas,string,,@Uzsakovas,,2,open,,,Agentas
+,,,,,uzsakovasu,string,,@UzsakovasU,,2,open,,,
+,,,,,stv_pavad,string,,@StvPavad,,2,open,,,Krantinė
+,,,,,stv_pavadu,string,,@StvPavadU,,2,open,,,
+,,,,,stv_tipas,string,,@StvTipas,,2,open,,,Stovėjimo vietos tipas
+,,,,,stv_tipasu,string,,@StvTipasU,,2,open,,,
+,,,,,stv_kompanija,string,,@StvKompanija,,2,open,,,Stovėjio uosto kompanija
+,,,,,stv_kompanijau,string,,@StvKompanijaU,,2,open,,,
+,,,,,psv_stv_pavad,string,,@PsvStvPavad,,2,open,,,
+,,,,,psv_stv_pavadu,string,,@PsvStvPavadU,,2,open,,,
+,,,,,psv_stv_tipas,string,,@PsvStvTipas,,2,open,,,
+,,,,,psv_stv_tipasu,string,,@PsvStvTipasU,,2,open,,,
+,,,,,isv_plan_data,string,,@IsvPlanData,,2,open,,,Planuojama išvykimo data
+,,,,,isv_plan_datau,string,,@IsvPlanDataU,,2,open,,,
+,,,,,isv_fakt_data,string,,@IsvFaktData,,2,open,,,Faktinė išvykimo data
+,,,,,isv_fakt_datau,string,,@IsvFaktDataU,,2,open,,,
+,,,,,isv_uzsakovas,string,,@IsvUzsakovas,,2,open,,,Agentas
+,,,,,isv_uzsakovasu,string,,@IsvUzsakovasU,,2,open,,,

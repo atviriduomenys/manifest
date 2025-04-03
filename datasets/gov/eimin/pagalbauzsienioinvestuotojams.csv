@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/pagalba_uzsienio_investuotojams,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1743/download/,,,,,,
+,,,,PagalbaInvestuotojas,,,id,10872/Pagalba_investuotojams.csv,,4,,,Valstybės pagalba užsienio investuotojams,
+,,,,,id,integer,,ID,,4,open,,Id,
+,,,,,metai,date,Y,METAI,,4,open,,Metai,"Metai, kuomet suteikta valstybės pagalba."
+,,,,,sektorius,string,,SEKTORIUS,,3,open,,Sektorius,"Sektorius, kuriame investuojama."
+,,,,,darbo_vietos,integer,,DARBO VIETOS,,3,open,,Darbo vietos,Užsienio investuotojo kuriamų naujų darbo vietų skaičius Lietuvoje.
+,,,,,investicijos,number,,INVESTICIJU DYDIS,,4,open,,Investicijų dydis,Užsienio investuotojo investuojamos sumos dydis.
+,,,,,valstybes_pagalba,number,,VALSTYBES PAGALBA,,4,open,,Valstybės pagalba,"Suma, kurią suteikia Lietuvos valstybė užsienio investuotojui."

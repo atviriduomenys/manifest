@@ -1,0 +1,13 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/subjektu_finansiniai_duomenys,,,,,,,,,,,,,
+,,csv,,,,csv,,"https://data.gov.lt/dataset/1954/download/10664/Kontroliuojam%C5%B3%20ir%20asocijuot%C5%B3%20subjekt%C5%B3%20finansiniai%20duomenys,%202021%20m..csv",,,,,,
+,,,,SubjektoFinansai,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,tipas_pav,string  ,,Subjekto tipas ir pavadinimas,,2,open,,Subjekto tipas ir pavadinimas,
+,,,,,adresas,string  ,,Buveinės adresas,,2,open,,Buveinės adresas,
+,,,,,akciju_d,number,,Valdomų akcijų (dalininko įnašų) dalis (procentais),,3,open,,Valdomų akcijų (dalininko įnašų) dalis (procentais),
+,,,,,investiciju_verte,number,,Investicijos dydis nominaliąja verte (EUR),,3,open,,Investicijos dydis nominaliąja verte (EUR),
+,,,,,balansine_verte,number,,Dotacijų balansinė vertė,,3,open,,Dotacijų balansinė vertė,
+,,,,,ataskaitinio_rezul,number,,"Grynasis ataskaitinio laikotarpio rezultatas, iš viso (EUR)",,3,open,,"Grynasis ataskaitinio laikotarpio rezultatas, iš viso (EUR)",
+,,,,,kapitalo_turtas,number,,"Nuosavas kapitalas arba grynasis turtas, iš viso (EUR)",,3,open,,"Nuosavas kapitalas arba grynasis turtas, iš viso (EUR)",
+,,,,,veikla,string  ,,Pagrindinė veikla,,3,open,,Pagrindinė veikla,
