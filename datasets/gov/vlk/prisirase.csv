@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,PrisirasesPaasp,,,,,,4,,,Prisirašiusių prie PAASP asmenų skaičius,Informacija apie prisirašiusių prie pirminės ambulatorinės asmens sveikatos priežiūros paslaugas teikiančių įstaigų asmenų skaičių
+,,,,PrisirasesPaasp,,,ad_id,,,4,,,Prisirašiusių prie PAASP asmenų skaičius,Informacija apie prisirašiusių prie pirminės ambulatorinės asmens sveikatos priežiūros paslaugas teikiančių įstaigų asmenų skaičių
 ,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,Ataskaitinio laikotarpio metai
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,Ataskaitinio laikotarpio mėnuo
