@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lsd/darbuotoju_darbo_uzmokestis,,,,,ns,,,,,,,Darbuotojų duomenys pagal spalio mėn. darbo užmokesčio dydį,
+,datasets/gov/lsd/darbuotoju_darbo_uzmokestis,,,,,,,,,,,,Darbuotojų duomenys pagal spalio mėn. darbo užmokesčio dydį,
 ,,,,,,,,,,,,,,
 ,,,,Darbuotojas,,,,,,3,,,Darbuotojų duomenys pagal spalio mėn. darbo užmokesčio dydį,
 ,,,,,metai,integer,yr,,,4,open,,Ataskaitiniai metai,
