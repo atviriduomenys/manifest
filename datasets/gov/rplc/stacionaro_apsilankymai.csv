@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Kortele,,,vda_id,,,4,,,"Pateikiami Respublikinio Priklausomybės Ligų Centro Vilniaus filialo stacionaro skyriuose gydytų pacientų duomenys nuo 2016m. Duomenys apima pacientų demografinę (gyvenamoji vieta, gimimo metų ir amžiaus grupės, lytis, išsilavinimas, užimtumas, sveikatos draudimas) ir su gydymu susijusią (sutrikimas, taikytas gydymas, duomenys apie paciento būklę ir išrašymą) informaciją.",
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
-,,,,,skyrius,string,,,,,,,Vilniaus Filialo (VF) skyrius iš kurio pateikti duomenys: VF SPRS – Stacionarinės psichosocialininės reabilitacijos skyrius (Motyvacinės terapijos); VF AAGS – Alkoholinės abstinencijos gydymo skyrius; VF NAGS – Narkotinės abstinencijos gydymo skyrius; VF PGS – Psichosocialinio gydymo skyrius (Minesota); VF VJRS – Vaikų ir jaunimo reabilitacijos skyrius.,
+,,,,,skyrius,string,,,,4,open,,Vilniaus Filialo (VF) skyrius iš kurio pateikti duomenys: VF SPRS – Stacionarinės psichosocialininės reabilitacijos skyrius (Motyvacinės terapijos); VF AAGS – Alkoholinės abstinencijos gydymo skyrius; VF NAGS – Narkotinės abstinencijos gydymo skyrius; VF PGS – Psichosocialinio gydymo skyrius (Minesota); VF VJRS – Vaikų ir jaunimo reabilitacijos skyrius.,
 ,,,,,,enum,,,"""Alkoholinės abstinencijos gydymo skyrius""",,,,,
 ,,,,,,,,,"""Psichosocialinio gydymo skyrius (Minesota)""",,,,,
 ,,,,,,,,,"""Narkotinės abstinencijos gydymo skyrius""",,,,,
