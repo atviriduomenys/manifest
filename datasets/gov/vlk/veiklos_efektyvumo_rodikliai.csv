@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vlk/veiklos_efektyvumo_rodikliai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,VeiklosEfektyvumoRodiklis,,,,,,4,,,ASPĮ veiklos kokybės ir efektyvumo vertinimo rodiklių suvestinė,"Informacija apie gydymo įstaigų, teikiančių stacionarines asmens sveikatos priežiūros paslaugas, veiklos kokybės ir efektyvumo vertinimo rodiklių duomenis"
+,,,,VeiklosEfektyvumoRodiklis,,,ad_id,,,4,,,ASPĮ veiklos kokybės ir efektyvumo vertinimo rodiklių suvestinė,"Informacija apie gydymo įstaigų, teikiančių stacionarines asmens sveikatos priežiūros paslaugas, veiklos kokybės ir efektyvumo vertinimo rodiklių duomenis"
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,Data metų tikslumu
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,rodiklis,string,,,,4,open,,Rodiklis,Rodiklio pavadinimas
