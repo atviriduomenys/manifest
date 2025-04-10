@@ -1,0 +1,25 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/tvs,,,,,,,,,,,,Savivaldybių turto valdymo duomenų rinkinys,"""Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą bei nuomos sutartis. Duomenys apima nuomos sutarčių detales, tokias kaip unikalus sutarties identifikatorius, nuomininko duomenys (šifruoti fizinių asmenų atvejais), nuomos pradžios data, sutarties tipas, teisinis pagrindas, mėnesio įmokos suma bei galimi sutarties sustabdymai. Taip pat pateikiama informacija apie savivaldybėms priklausantį nekilnojamąjį turtą – nekilnojamojo turto registro kodai, paskirties kategorijos, statybos metai, turto plotas, adresai bei geografinė informacija su koordinatėmis. Duomenų rinkinys yra nuolat atnaujinamas. Duomenų laikotarpis nuo duomenų kaupimo pradžios iki dabar. Visi duomenys pateikiami atsižvelgiant į teisės aktų keliamus duomenų atvėrimo reikalavimus, todėl kai kurios reikšmės, tokios kaip asmenų identifikavimo duomenys, yra užšifruotos. Duomenų teikėjas: Savivaldybių administracija.
+ 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. """
+,datasets/gov/tvs/turtas,,,,,,,,,,,,Duomenys apie savyvaldybės turtą,"""Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą. Duomenyse nurodomas turto identifikatorius, NT registro kodas, objekto pavadinimas, statybos pabaigos metai, objekto paskirtis, plotas kvadratiniais metrais, bei geografinė vieta. Geografinė informacija pateikiama tiek geografinių koordinačių, tiek LKS-94 plokštuminių koordinačių formatais. Taip pat įtrauktas objekto adreso informacijos aktualumas bei geografinio koordinavimo patikimumo procentas. Duomenų teikėjas: Savivaldybių administracija.
+ 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.  
+ """
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TelsiuRajSav,,,id,,,4,,,,
+,,,,,id,string,,,,4,open,,Identifikatorius,
+,,,,,ntr_reg_kodas,string,,,,4,open,,NT registro kodas,
+,,,,,statybos_pabaigos_metai,date ,D,,,4,open,,Objekto statybos pabaigos metai,
+,,,,,plotas_kv_metrais,double,,,,4,open,,Objekto plotas kvadratiniais metrais,
+,,,,,ntr_paskirtis,string,,,,4,open,,Objekto paskirtis,
+,,,,,pavadinimas,string,,,,4,open,,Objekto pavadinimas,
+,,,,,ilguma_wgs,double,,,,4,open,,Geografinės koordinatės,
+,,,,,platuma_wgs,double,,,,4,open,,Geografinės koordinatės,
+,,,,,lks_x,double,,,,4,open,,Stačiakampės plokštuminės LKS-94 koordinatės,
+,,,,,lks_y,double,,,,4,open,,Stačiakampės plokštuminės LKS-94 koordinatės,
+,,,,,geometrija,string,,,,4,open,,Geografinės koordinatės,
+,,,,,tipas,string,,,,4,open,,Objekto adreso informacijos aktualumas,
+,,,,,patikimumas,double,,,,4,open,,Geografinių koordinačių patikimumas (procentais),
