@@ -3,7 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Suma,,,,,,4,,,PSDF biudžeto vykdymo ataskaitos duomenys,Informacija apie PSDF biudžeto vykdymą
+,,,,Suma,,,ad_id,,,4,,,PSDF biudžeto vykdymo ataskaitos duomenys,Informacija apie PSDF biudžeto vykdymą
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
 ,,,,,str_kodas,string,,,,3,open,,Išlaidų straipsnio kodas,
