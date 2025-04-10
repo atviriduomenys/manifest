@@ -1,0 +1,26 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/tvs,,,,,,,,,,,,Savivaldybių turto valdymo duomenų rinkinys ,"Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą bei nuomos sutartis. Duomenys apima nuomos sutarčių detales, tokias kaip unikalus sutarties identifikatorius, nuomininko duomenys (šifruoti fizinių asmenų atvejais), nuomos pradžios data, sutarties tipas, teisinis pagrindas, mėnesio įmokos suma bei galimi sutarties sustabdymai. Taip pat pateikiama informacija apie savivaldybėms priklausantį nekilnojamąjį turtą – nekilnojamojo turto registro kodai, paskirties kategorijos, statybos metai, turto plotas, adresai bei geografinė informacija su koordinatėmis. Duomenų rinkinys yra nuolat atnaujinamas. Duomenų laikotarpis nuo duomenų kaupimo pradžios iki dabar. Visi duomenys pateikiami atsižvelgiant į teisės aktų keliamus duomenų atvėrimo reikalavimus, todėl kai kurios reikšmės, tokios kaip asmenų identifikavimo duomenys, yra užšifruotos. Duomenų teikėjas: Savivaldybių administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.  "
+,datasets/gov/tvs/sutartys,,,,,,,,,,,,Duomenys apie savyvaldybės sudarytas sutartis,"Duomenų rinkinys pateikia informaciją apie savivaldybių sudarytas sutartis dėl nekilnojamojo turto nuomos, pardavimo ar naudojimo. Įtraukiama informacija apie sutarties tipą, sudarymo ir galiojimo datas, sutarties vertę, šalis, atsakingas institucijas bei kitus reikšmingus aspektus. Duomenys atnaujinami periodiškai, laikantis teisės aktų reikalavimų dėl duomenų atvėrimo. Duomenų teikėjas: Savivaldybių administracijos.
+"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TelsiuRajSav,,,id,,,4,,,,
+,,,,,id,string,,,,4,open,,Identifikatorius,
+,,,,,moketojo_kodas,string,,,,4,open,,Mokėtojo kodas,
+,,,,,ak_validacija,string,,,,4,open,,Asmens kodo validacija,
+,,,,,jar_kodo_validacija,string,,,,4,open,,JAR kodo validacija,
+,,,,,sutarties_salis_tipas,string,,,,4,open,,Mokėtojo tipas,
+,,,,,sutarties_tipas,string,,,,4,open,,Sutarties tipas,
+,,,,,vardas_pavarde,string,,,,4,open,,Asmens vardas ir pavardė,
+,,,,,lytis_asmk,string,,,,4,open,,Lytis iš asmens kodo,
+,,,,,gim_metai_asmk,date ,Y,,,4,open,,Gimimo metai iš asmens kodo,
+,,,,,mirties_data,date ,D,,,4,open,,Mirties data,
+,,,,,istaiga,string,,,,4,open,,Įstaigos pavadinimas,
+,,,,,bankroto_data,date ,D,,,4,open,,Įstaigos bankroto data,
+,,,,,menesio_imokos_suma,number,,,,4,open,,Mėnesio nuomos suma,
+,,,,,sutart_isigal_data,date ,D,,,4,open,,Sutarties įsigaliojimo data,
+,,,,,sutart_nutrauk_data,date ,D,,,4,open,,Sutarties nutraukimo data,
+,,,,,teisinis_pagrindas,string,,,,4,open,,Teisinis sutarties pagrindas,
