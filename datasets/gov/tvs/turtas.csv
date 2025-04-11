@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,TelsiuRajSav,,,id,,,4,,,,
 ,,,,,id,string,,,,4,open,,Identifikatorius,
 ,,,,,ntr_reg_kodas,string,,,,4,open,,NT registro kodas,
-,,,,,statybos_pabaigos_metai,intiger,,,,4,open,,Objekto statybos pabaigos metai,
+,,,,,statybos_pabaigos_metai,integer,,,,4,open,,Objekto statybos pabaigos metai,
 ,,,,,plotas_kv_metrais,number,,,,4,open,,Objekto plotas kvadratiniais metrais,
 ,,,,,ntr_paskirtis,string,,,,4,open,,Objekto paskirtis,
 ,,,,,pavadinimas,string,,,,4,open,,Objekto pavadinimas,
