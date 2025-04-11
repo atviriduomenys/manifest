@@ -1,6 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/tvs/sutartys,,,,,,,,,,,,Duomenys apie savyvaldybės sudarytas sutartis,"Duomenų rinkinys pateikia informaciją apie savivaldybių sudarytas sutartis dėl nekilnojamojo turto nuomos, pardavimo ar naudojimo. Įtraukiama informacija apie sutarties tipą, sudarymo ir galiojimo datas, sutarties vertę, šalis, atsakingas institucijas bei kitus reikšmingus aspektus. Duomenys atnaujinami periodiškai, laikantis teisės aktų reikalavimų dėl duomenų atvėrimo. Duomenų teikėjas: Savivaldybių administracijos.
-"
+,datasets/gov/tvs/sutartys,,,,,,,,,,,,Duomenys apie savyvaldybės sudarytas sutartis,"Duomenų rinkinys pateikia informaciją apie savivaldybių sudarytas sutartis dėl nekilnojamojo turto nuomos, pardavimo ar naudojimo. Įtraukiama informacija apie sutarties tipą, sudarymo ir galiojimo datas, sutarties vertę, šalis, atsakingas institucijas bei kitus reikšmingus aspektus. Duomenys atnaujinami periodiškai, laikantis teisės aktų reikalavimų dėl duomenų atvėrimo. Duomenų teikėjas: Savivaldybių administracijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
