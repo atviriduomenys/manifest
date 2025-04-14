@@ -51,4 +51,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,salies_pavadinimas,string,,,,4,open,,Šalies pavadinimas,
 ,,,,,salies_eil_nr,integer,,,,4,open,,Šalies eilės numeris atitinkamoje viešojo pirkimo sutartyje,
 ,,,,,ar_salis_tiekejas,boolean,,,,4,open,,Ar šalis yra tiekėjas atitinkamoje viešojo pirkimo sutartyje,
-,,,,,tiekejo_subjekto_patikslinimas,string,,,,1,open,,Tiekėjo subjekto patikslinimas,
