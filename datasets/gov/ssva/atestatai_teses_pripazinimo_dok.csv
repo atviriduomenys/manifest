@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Dokumentas,,,id,,,4,,,Atestatai ir teisės pripažinimo dokumentai,
-,,,,,id,integer,,,,4,open,,Teisės dokumento ID,
+,,,,,id,string,,,,4,open,,Teisės dokumento ID,
 ,,,,,nr,integer,,,,4,open,,Teisės dokumento numeris,
 ,,,,,isdavimas,date,D,,,4,open,,Teisės dokumento išdavimo data,
 ,,,,,galiojimas,date,D,,,4,open,,Teisės dokumento galiojimo pabaiga,
