@@ -68,7 +68,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Išregistruojama""",,,,,
 ,,,,,tvarkymo_vietos_adresas,string,,,,4,open,,"Tvarkymo vietos adresas, sugeneruotas VDA pagal GPAIS duomenis",
 ,,,,,tvarkymo_vietos_koordinates_lks,string,,,,4,open,,Tvarkymo vietos koordinatės lks sistemoje,
-,,,,,tvarkymo_vietos_tikslumas_balais,double,,,,4,open,,Tvarkymo vietos tikslumas balais,
+,,,,,tvarkymo_vietos_tikslumas_balais,number,,,,4,open,,Tvarkymo vietos tikslumas balais,
 ,,,,,,,,,,,,,,
 ,,,,Teise,,,teises_id,,,4,,,"Teises išrašyti gaminių, pakuočių atliekų sutvarkymą įrodančius dokumentus turintys atliekų tvarkytojai",Teisės išrašyti atliekų sutvarkymą įrodančius dokumentus
 ,,,,,teises_id,string,,,,4,open,,Įgytos teisės identifikatorius,
@@ -99,7 +99,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Išregistruojama""",,,,,
 ,,,,,tvarkymo_vietos_adresas,string,,,,4,open,,"Tvarkymo vietos adresas, sugeneruotas VDA pagal GPAIS duomenis",
 ,,,,,tvarkymo_vietos_koordinates_lks,string,,,,4,open,,Tvarkymo vietos koordinatės lks sistemoje,
-,,,,,tvarkymo_vietos_tikslumas_balais,double,,,,4,open,,Tvarkymo vietos tikslumas balais,
+,,,,,tvarkymo_vietos_tikslumas_balais,number,,,,4,open,,Tvarkymo vietos tikslumas balais,
 ,,,,,,,,,,,,,,
 ,,,,Sutartis,,,sutarties_id,,,4,,,Komunalinių atliekų tvarkymo sutartys,Informacija apie komunalinių atliekų tvarkymo sutartys
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikatorius,
