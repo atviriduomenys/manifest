@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dokumentas,string,,,,4,open,,Teisės dokumento tekstas,
 ,,,,,rangovo_pav,string,,,,2,open,,Rangovo pavadinimas,
 ,,,,,,comment,property,,"""update(property: """"rangovas@lt"""", type: """"text"""")""",4,,spinta:204,,
-,,,,,rangovo_kod,integer,,,,2,open,,Rangovo juridinio asmens kodas,
+,,,,,rangovo_kod,string,,,,2,open,,Rangovo juridinio asmens kodas,
 ,,,,,,comment,property,,"""update(type: """"ref"""", ref: """"/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"""")""",4,,spinta:208,,
 ,,,,,rangovo_adr,string,,,,2,open,,Rangovo adresas,
 ,,,,,tipas,string,,,,4,open,,Teisės dokumento tipas,
