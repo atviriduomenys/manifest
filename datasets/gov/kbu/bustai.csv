@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,bustai,,,vda_prime_key,,,4,,,"Klaipėdos miesto savivaldybės nuomojamų būstų registras","Rinkinys apie savivaldybės ir socialinio būsto nuomą Klaipėdos miesto savivaldybėje, kuriame pateikiama informacija apie būstų charakteristikas, nuomos sąlygas ir nuomininkus. Kiekvienos lentelės viena eilutė atitinką vieną sudarytą nuomos sutartį Klaipėdos miesto savivaldybėje. Duomenų teikėjas: VšĮ Klaipėdos butai. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,Bustai,,,vda_prime_key,,,4,,,"Klaipėdos miesto savivaldybės nuomojamų būstų registras","Rinkinys apie savivaldybės ir socialinio būsto nuomą Klaipėdos miesto savivaldybėje, kuriame pateikiama informacija apie būstų charakteristikas, nuomos sąlygas ir nuomininkus. Kiekvienos lentelės viena eilutė atitinką vieną sudarytą nuomos sutartį Klaipėdos miesto savivaldybėje. Duomenų teikėjas: VšĮ Klaipėdos butai. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
 ,,,,,ntr_kodas,string,,,,4,open,,NT registro kodas,
 ,,,,,busto_tipas,string,,,,4,open,,Būsto tipas,
