@@ -4,14 +4,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Bustai,,,vda_prime_key,,,4,,,"Klaipėdos miesto savivaldybės nuomojamų būstų registras","Rinkinys apie savivaldybės ir socialinio būsto nuomą Klaipėdos miesto savivaldybėje, kuriame pateikiama informacija apie būstų charakteristikas, nuomos sąlygas ir nuomininkus. Kiekvienos lentelės viena eilutė atitinką vieną sudarytą nuomos sutartį Klaipėdos miesto savivaldybėje. Duomenų teikėjas: VšĮ Klaipėdos butai. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,Bustas,,,vda_prime_key,,,4,,,"Klaipėdos miesto savivaldybės nuomojamų būstų registras","Rinkinys apie savivaldybės ir socialinio būsto nuomą Klaipėdos miesto savivaldybėje, kuriame pateikiama informacija apie būstų charakteristikas, nuomos sąlygas ir nuomininkus. Kiekvienos lentelės viena eilutė atitinką vieną sudarytą nuomos sutartį Klaipėdos miesto savivaldybėje. Duomenų teikėjas: VšĮ Klaipėdos butai. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
 ,,,,,ntr_kodas,string,,,,4,open,,NT registro kodas,
 ,,,,,busto_tipas,string,,,,4,open,,Būsto tipas,
 ,,,,,busto_busena,string,,,,4,open,,Būsto užimtumas,
-,,,,,busto_plotas,number,,,,4,open,,Busto plotas,
-,,,,,kambariu_skaicius,integer,,,,4,open,,Kambarių sakaičius,
-,,,,,men_nuomos_suma,number,,,,4,open,,Mėnsenio įmokos suma,
+,,,,,busto_plotas,number,,,,4,open,,Būsto plotas,
+,,,,,kambariu_skaicius,integer,,,,4,open,,Kambarių skaičius,
+,,,,,men_nuomos_suma,number,,,,4,open,,Mėnesio įmokos suma,
 ,,,,,sutarties_data,date,D,,,4,open,,Nuomos sutarties sudarymo data,
 ,,,,,nuoma_nuo,date,D,,,4,open,,Nuomos sutarties pradžios data,
 ,,,,,nuoma_iki,date,D,,,4,open,,Nuomos sutarties pabaigos data,
