@@ -57,7 +57,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atsaukimo_prasymas,boolean,,,,4,open,,Atšaukimo prašymas,
 ,,,,,atsaukimo_laikas,datetime,U,,,4,open,,Atšaukimo laikas,
 ,,,,,tiekejo_atsaukimo_prasymas,boolean,,,,4,open,,Atšaukimas iš tiekėjo pusės,
-,,,,,saskaitos_suma,integer,,,,4,open,,Sąskaitos suma, dalyvių skaičius * edukacijos įkainis,
+,,,,,saskaitos_suma,integer,,,,4,open,,"Sąskaitos suma, dalyvių skaičius * edukacijos įkainis",
 ,,,,,uzsakymo_institucija,string,,,,4,open,,Užsakymo institucija,
 ,,,,,uzsakymo_institucijos_kodas,string,,,,4,open,,Institucijos unikalus identofikatorius,
 ,,,,,uzsakymo_savivaldybe,string,,,,4,open,,Savivaldybė,
