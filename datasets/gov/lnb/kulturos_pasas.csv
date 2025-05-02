@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lnb/kulturos_pasas,,,,,,,,,,,,KEIS Kultūros paso edukacijos,
-,,,,,,prefix,spinta,,,,,https,//github.com/atviriduomenys/spinta/issues/,,
+,,,,,,prefix,spinta,,,,,https//github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https,//github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Edukacija,,id,,,,4,,,KEIS Kultūros paso edukacijos,"""Rinkinyje pateikiamos edukacinės programos, kurias gali(-ėjo) įsigyti mokiniai pagal kultūros paso programą. Kultūros pasas – priemonė, leidžianti moksleiviams valstybės lėšomis lankytis įvairiausiuose kultūros ir meno renginiuose, spektakliuose, koncertuose, parodose ir kitose pažintinėse bei edukacinėse kultūros veiklose. Priklausomai nuo amžiaus grupės, moksleiviai kultūros ir meno paslaugomis gali pasinaudoti dalyvaudami kartu su klase ar grupe, o nuo 16 metų paslaugomis gali pasinaudoti ir individualiai. Kultūrines edukacijas kultūros paveldo, etninės kultūros, architektūros, cirko, baleto, kino, lėlių teatro, dramos teatro, literatūros ir kt."""
