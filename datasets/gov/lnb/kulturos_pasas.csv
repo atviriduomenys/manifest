@@ -40,7 +40,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dalyvio_institucija,string,,,,4,open,,Institucija,
 ,,,,,dalyvio_savivaldybe,string,,,,4,open,,Savivaldybė,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
 ,,,,EdukacijosUzsakymoIvykis,,uzsakymo_id,,,,4,,,,
 ,,,,,uzsakymo_id,string,,,,4,open,,Užsakymo unikalus identitfikatorius,
 ,,,,,edukacijos_id,string,,,,4,open,,Edukacijos unikalus identifikatorius,
@@ -64,5 +63,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,uzsakymo_savivaldybe,string,,,,4,open,,Savivaldybė,
 ,,,,,uzsakancio_asmens_tipas,string,,,,4,open,,Užsakančio asmens tipas,
 ,,,,,mokytojo_id,string,,,,4,open,,Mokytojo ar koordinatoriaus unikalus identitfikatorius,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
