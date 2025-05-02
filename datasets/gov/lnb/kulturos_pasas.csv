@@ -29,7 +29,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pritaikyta_intelektualiniam_sutrikimui,boolean,,,,4,open,,Pritaikyta intelektualiniam sutrikimui,
 ,,,,,pritaikyta_regejimo_negaliai,boolean,,,,4,open,,Pritaikyta regėjimo negaliai,
 ,,,,,gali_uzsisakyti_savarankiskai,boolean,,,,4,open,,Gali užsisakyti savarankiškai,
-
 ,,,,,,,,,,,,,,
 ,,,,EdukacijosDalyvis,,vda_id,,,,4,,,,
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
