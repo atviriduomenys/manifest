@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Istaiga,,,spi_id,,,2,,,Sveikatos priežiūros įstaigos,
 ,,,,,,comment,base,,"update(base: ""/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo"", ref: ""ja_kodas"")",4,open,"spinta:205, manifest:1290",,
-,,,,,spi_id,integer,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
+,,,,,spi_id,string,,,,4,open,,Sveikatos priežiūros įstaigos identifikatorius,
 ,,,,,ja_kodas,string,,,,2,open,,Sveikatos priežiūros įstaigos juridinio asmens kodas,
 ,,,,,,comment,type,,"update(type: """")",4,open,"spinta:205, manifest:1290",,
 ,,,,,ja_pavadinimas,string,,,,2,open,,Sveikatos priežiūros įstaigos pavadinimas,
