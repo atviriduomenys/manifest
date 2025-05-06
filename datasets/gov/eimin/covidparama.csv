@@ -1,0 +1,9 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/covidparama,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1531/download/9515/qr_subs.csv,,,,,,
+,,,,CovidParama,,,jar_paraiska,,,3,,,Subsidijos nukentėjusiems nuo COVID-19,"Juridiniai ir fiziniai asmenys, kuriems buvo skirta subsidija pagal priemones: Subsidijos nuo COVID-19 nukentėjusioms įmonėms, Subsidijos nuo COVID-19 labiausiai nukentėjusioms įmonėms, Subsidijos nuo COVID-19 nukentėjusiems individualių veiklų vykdantiems asmenims, Turgavietės mokesčio kompensacija"
+,,,,,jar_paraiska,string,,Pareiškėjo juridinio asmens kodas,,3,open,,Pareiškėjo juridinio asmens kodas,"Arba paraiškos numeris, jeigu paramos gavėjas fizinis asmuo"
+,,,,,paramos_suma,number,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",,3,open,,"Konkrečiam pareiškėjui apskaičiuota galimos subsidijos suma, Eur",
+,,,,,sprendimo_data,date,D,Sprendimo skirti finansavimą data,,4,open,,Sprendimo skirti finansavimų data,
+,,,,,jar_evrk,integer,,MM EV,,4,open,,MM EV,"Pareiškėjo vykdomos veiklos EVRK kodas, jeigu paramos gavėjas yra juridinis asmuo"
+,,,,,priemone,string,,Priemonės požymis,,4,open,,Priemonės požymis,Paramos priemonės pavadinimas

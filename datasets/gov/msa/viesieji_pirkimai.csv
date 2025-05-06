@@ -1,0 +1,12 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/viesieji_pirkimai,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1925/download/10600/Vie%C5%A1ieji-pirkimai-per-CPO.csv,,,,,,
+,,,,ViesasisPirkimas,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,,sutarties_obj,string  ,,Sutarties objektas,,3,open,,Sutarties objektas,
+,,,,,perkancioji_org,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,Perkančioji organizacija,,2,open,,Perkančioji organizacija,
+,,,,,tiekejas,ref,/datasets/gov/rc/jar/iregistruoti/JuridinisAsmuo,Tiekėjas (-ai),,2,open,,Tiekėjas (-ai),
+,,,,,verte,number,,Vertė,,3,open,,Vertė,
+,,,,,Sudarymo_d,date,D,,,4,open,,Sudarymo data,
+,,,,,Galiojimo_d,date,D,,,4,open,,Galiojimo data,
+,,,,,Tipas,string  ,,,,3,open,,Tipas,

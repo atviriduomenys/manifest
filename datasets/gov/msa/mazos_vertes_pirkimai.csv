@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/mazos_vertes_pirkimai,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1904/download/10518/Ma%C5%BEos%20vert%C4%97s%20pirkimai.csv,,,,,,
+,,,,MazosVertesPirkimas,,,id,,,4,,,,
+,,,,,id,integer,,ID,,4,open,,ID,
+,,,,,objekto_rusis,string  ,,Pirkimo objekto rūšis,,2,open,,Pirkimo objekto rūšis,
+,,,,,bendra_verte,number,,Bendra sudarytų sutarčių vertė,,3,open,,Bendra sudarytų sutarčių vertė,
+,,,,,bendras_pirkimu_sk,number,,Bendras įvykdytų pirkimų skaičius,,3,open,,Bendras įvykdytų pirkimų skaičius,
+,,,,,zaliuju_pirkimu_verte,number,,Įvykdytų žaliųjų pirkimų sudarytų sutarčių vertė (Eur),,3,open,,Įvykdytų žaliųjų pirkimų sudarytų sutarčių vertė (Eur),
+,,,,,zaliuju_pirkimu_sk,number,,įvykdytų žaliųjų pirkimų skaičius,,4,open,,įvykdytų žaliųjų pirkimų skaičius,

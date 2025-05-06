@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/rc/ar/erdvtaskupasikeitimai,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,erdvtaskupasikeitimai,,,,csv,,,,,,,Adresų registro duomenų bazė,
+,,,,ErdvTaskuPasikeitimai,,,,,,,,,Adresų taškų erdvinių duomenų pasikeitimų sąrašas per mėnesį,
+,,,,,gyv_kodas,integer,,GYV_KODAS,,3,open,,"Gyvenamosios vietovės, kuriai priklauso adresas, identifikacinis kodas",
+,,,,,gat_kodas,integer,,GAT_KODAS,,3,open,,"Gatvės, kuriai priklauso adresas, identifikacinis kodas",
+,,,,,aob_kodas,integer,,AOB_KODAS,,3,open,,Adreso identifikacinis kodas,
+,,,,,aob_p_data,date,,AOB_P_DATA,,3,open,,Adreso pakeitimo data,
+,,,,,aob_p,number,,AOB_P,,3,open,,Naujai įregistruotų arba pakeistų adresų skaičius,

@@ -1,0 +1,8 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/msa/paslaugu_finansavimai,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1305/download/8721/Socialini%C5%B3-paslaug%C5%B3-finansavimo-planas.csv,,,,,,
+,,,,PaslaugosFinansavimas,,,eil_nr,,,4,,,,
+,,,,,eil_nr,integer,,Eil. Nr.,,4,open,,Eilės numeris,
+,,,,, paslaugu_finansavimo_s,string  ,,Socialinių paslaugų finansavimo šaltiniai,,3,open,,Socialinių paslaugų finansavimo šaltiniai,
+,,,,,faktines_isl,number,,Faktinės išlaidos (Eur 2019 m.),,3,open,,Faktinės išlaidos (Eur 2019 m.),
+,,,,,projektas,number,,Projektas (Eur 2020 m.),,3,open,,Projektas (Eur 2020 m.),

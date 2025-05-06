@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/cl/institucijos,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Institucija,,,,,,,,,Institucija,
+,,,,,kodas,string,,,,2,open,,Juridinio asmens registracijos kodas,
+,,,,,ekonomine_veiklos_rusis,string,,,,2,open,,Ekonominės veikos rūšis,
+,,,,,sektorius,string,,,,2,open,,Veiklos sektorius,
+,,,,,veikla_atnaujinta,datetime,,,,4,open,,Veiklos atnaujinimas,
+,,,,,veikla_isregistruota,datetime,,,,4,open,,Veiklos išregistravimas,
+,,,,,pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,

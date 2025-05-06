@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/eimin/parama_turizmui,,,,,,,,,,,,,
+,,csv,,,,csv,,https://data.gov.lt/dataset/1855/download/,,,,,,
+,,,,ParamaTurizmas,,,id,10781/Turizmo_duomenys.csv,,4,,,Valstybės pagalba turizmo sektoriaus atstovams,
+,,,,,id,integer,,ID,,4,open,,Id,
+,,,,,pavadinimas,string,,Pavadinimas,,4,open,,Paramą gaunantis asmuo,"Juridinio asmens pavadinimas arba fizinis asmuo, kuris gauna paramą."
+,,,,,kodas,string,,Kodas,,4,open,,Juridinio asmens kodas arba fizinis asmuo,FA rodo fizinį asmenį.
+,,,,,suma,number,,Skirta suma,,4,open,,Paramos suma,Skirtos paramos suma eurais.
+,,,,,priemone,string,,Priemonė,,4,open,,Priemonės pavadinimas,"Priemonės, pagal kurią skiriama parama, pavadinimas."
+,,,,,prad_data,date,D,Pradžios data,,4,open,,Pradžios data,Paraiškų priėmimo pradžios data.
+,,,,,pab_data,date,D,Pabaigos data,,4,open,,Pabaigos data,Paraiškų priėmimo pabaigos data.

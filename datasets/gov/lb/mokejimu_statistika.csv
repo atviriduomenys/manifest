@@ -1,0 +1,10 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lb/mokejimu_statistika,,,,,,,,,,,,Mokėjimų statistika,
+,,ms,,,,csv,,https://www.lb.lt/lt/m_statistika/t-t-t-t-mokejimu-statistika/?export=csv,,,,,,
+,,,,MokejimoStatistika,,,"code, date, value",,,4,,,,
+,,,,,code,string,,,,4,open,,Kodas,
+,,,,,en_long_title,string,,,,4,open,,Angliškas ilgas pavadinimas,
+,,,,,lt_long_title,string,,,,4,open,,Lietuviškas ilgas pavadinimas,
+,,,,,date,date,Q,,,4,open,,Data,
+,,,,,value,integer,,,,4,open,,Reikšmė,
+,,,,,power,integer,,,,4,open,,Matavimo vienetų daugiklis,
