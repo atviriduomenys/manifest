@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/cpva/ignalinos_programos/dokumentai,,,,,,,,,,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos projektų duomenys ,"Duomenų rinkinyje pateikiami duomenys, susiję su VšĮ Centrinės projektų valdymo agentūros administruojamų Ignalinos programos projektų įgyvendinimu. Duomenys pateikiami iš Projektų valdymo informacinės sistemos „Toltec“, skirtos rengti Ignalinos programos lėšomis finansuojamų viešųjų pirkimų dokumentus.
+Rinkinį sudaro 1 lentelė apie sistemos pagalba sukurtus dokumentus. Viena eilutė atitinka vieną sukurtą dokumentą. Rinkinyje galima rasti tokią informaciją kaip dokumentą kūrusi įstaiga, dokumento pavadinimas, dokumento tipas, aktualios su dokumentu susijusios datos ir pan.
+Duomenų atnaujinimas numatomas kas 3 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,document_id,,,4,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos  informacinės sistemos „Toltec“ duomenys ,"Duomenų rinkinyje pateikiami duomenys, susiję su VšĮ Centrinės projektų valdymo agentūros administruojamų Ignalinos programos projektų įgyvendinimu. Duomenys pateikiami iš Projektų valdymo informacinės sistemos „Toltec“, skirtos rengti Ignalinos programos lėšomis finansuojamų viešųjų pirkimų dokumentus.
+Rinkinį sudaro 1 lentelė apie sistemos pagalba sukurtus dokumentus. Viena eilutė atitinka vieną sukurtą dokumentą. Rinkinyje galima rasti tokią informaciją kaip dokumentą kūrusi įstaiga, dokumento pavadinimas, dokumento tipas, aktualios su dokumentu susijusios datos ir pan.
+Duomenų atnaujinimas numatomas kas 3 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,document_id,string,,,,4,open,,Dokumento identifikatorius,
+,,,,,istaiga,string,,,,4,open,,Įmonės pavadinimas,
+,,,,,dok_pav_lt,string,,,,4,open,,Pirkimo dokumento pavadinimas,
+,,,,,,comment,type,,"update(property: ""dok_pav_lt@lt"", type: ""text"")	",4,open,spinta:204,Pirkimo dokumento pavadinimas,
+,,,,,dok_tipas,string,,,,4,open,,Pirkimo dokumento tipas,
+,,,,,sukurimo_data,datetime,L,,,4,open,,Įrašo sukūrimo data,
+,,,,,sukures_vartotojas,string,,,,4,open,,Įrašą sukūrusio vartotojo identifikatorius,
+,,,,,patvirtinimo_data,datetime,L,,,4,open,,Pirkimo dokumento patvirtinimo data,
+,,,,,patvirtines_vartotojas,string,,,,4,open,,Dokumentą patvirtinusio asmens naudotojo vardas,
+,,,,,statusas,string,,,,4,open,,Statusas,
+,,,,,failu_skaicius,integer,,,,4,open,,Failų skaičius dokumente,
