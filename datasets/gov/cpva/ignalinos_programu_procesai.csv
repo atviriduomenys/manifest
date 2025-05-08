@@ -1,0 +1,36 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/cpva/ignalinos_programos/procesai,,,,,,,,,,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos projektų duomenys ,"Duomenų rinkinyje pateikiami duomenys, susiję su VšĮ Centrinės projektų valdymo agentūros administruojamų Ignalinos programos projektų įgyvendinimu. Duomenys pateikiami iš Projektų valdymo informacinės sistemos „Apecs“, skirtos automatizuotai valdyti Ignalinos programos procesus ir kontrolės sistemą. 
+Procesai suskirstyti į 3 kategorijas – procesus, subprocesus ir mikroprocesus, kurie ir pateikiami rinkinio atskirose 3-se lentelėse. „Procesas“ yra pati stambiausia procesų hierarchijos dalis. Jam priklauso subprocesai, o savo ruožtu, subprocesams priklauso mikroprocesai. Lentelės tarpusavyje jungiasi: mikroprocesai su subprocesais – mikroprocesai.priklauso_subprocesui = subprocesai.id;
+subrocesai su procesais – subprocesai.priklauso_procesui = procesai.id
+Duomenų atnaujinimas numatomas kas 3 mėn.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Procesas,,,id,,,4,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos informacinės sistemos „Apecs“ procesų sąrašas,
+,,,,,id,string,,,,4,open,,Proceso identifikatorius,
+,,,,,proceso_tipas,string,,,,4,open,,Proceso tipas,
+,,,,,procesas,string,,,,4,open,,Proceso pavadinimas,
+,,,,,proceso_sukurimo_data,datetime,L,,,4,open,,Proceso sukūrimo data,
+,,,,,proceso_kurejas,string,,,,4,open,,Proceso kūrėjo id,
+,,,,,statusas,string,,,,4,open,,Proceso statusas,
+,,,,,,,,,,,,,,
+,,,,Subprocesas,,,id,,,4,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos informacinės sistemos „Apecs“ subprocesų sąrašas,
+,,,,,id,string,,,,4,open,,Subproceso identifikatorius,
+,,,,,proceso_tipas,string,,,,4,open,,Subproceso tipas,
+,,,,,procesas,string,,,,4,open,,Subproceso pavadinimas,
+,,,,,proceso_sukurimo_data,datetime,L,,,4,open,,Subproceso sukūrimo data,
+,,,,,proceso_kurejas,string,,,,4,open,,Subproceso kūrėjo id,
+,,,,,statusas,string,,,,4,open,,Subproceso statusas,
+,,,,,,,,,,,,,,
+,,,,Mikroprocesas,,,id,,,4,,,VšĮ Centrinės projektų valdymo agentūros administruojamos Ignalinos programos informacinės sistemos „Apecs“ mikroprocesų sąrašas,
+,,,,,id,string,,,,4,open,,Mikroproceso identifikatorius,
+,,,,,priklauso_subprocesui,string,,,,4,open,,Priklauso subprocesui,
+,,,,,mikroproceso_tipas,string,,,,4,open,,Mikroproceso tipas,
+,,,,,mikroprocesas,string,,,,4,open,,Mikroproceso pavadinimas,
+,,,,,mikroproceso_kodas,string,,,,4,open,,Mikroproceso kodas,
+,,,,,mikroproceso_sukurimo_data,datetime,L,,,4,open,,Mikroproceso sukūrimo data,
+,,,,,atlikti_iki,datetime,L,,,4,open,,Mikroprocesą reikia atliki iki,
+,,,,,mikroproceso_kurejas,string,,,,4,open,,Mikroproceso kūrėjo id,
+,,,,,statusas,string,,,,4,open,,Mikroproceso statusas,
