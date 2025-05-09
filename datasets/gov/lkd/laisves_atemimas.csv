@@ -4,8 +4,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,LaisvesAtemimoStatistika,,,eil_nr,,,4,,,Nuteistųjų laisvės atėmimo bausme statistika,"Lietuvos kalėjimų departamentas (LKD) kaupia asmenų, nuteistų laisvės atėmimo bausme, statistinius duomenis nuo 2021 m., atnaujinamus kasmet, gaunamus iš kalinimo įstaigų. Rinkinys apima punkto numerį, naudojamą atskirti atitinkamus duomenis pagal konkrečius metus. Punkto numeriai gali būti pateikti tiksliau naudojant daugiau skaitmenų, atskirtų taškais. Tarp minėtų duomenų patenka nusikaltimai, išvykimo iš kalinimo įstaigos pobūdžiai, nuteistųjų amžiaus grupės. Rinkinyje minėti duomenys matuojami vienetais nuteistųjų asmenų arba metais, mėnesiais ir dienomis. Patogumo dėlei taip pat naudojami rinkinio eilučių numeriai.  "
-,,,,,eil_nr,string,,,,4,open,,Duomenų rinkinio eilutės numeris,
+,,,,LaisvesAtemimoStatistika,,,vda_id,,,4,,,Nuteistųjų laisvės atėmimo bausme statistika,"Lietuvos kalėjimų departamentas (LKD) kaupia asmenų, nuteistų laisvės atėmimo bausme, statistinius duomenis nuo 2021 m., atnaujinamus kasmet, gaunamus iš kalinimo įstaigų. Rinkinys apima punkto numerį, naudojamą atskirti atitinkamus duomenis pagal konkrečius metus. Punkto numeriai gali būti pateikti tiksliau naudojant daugiau skaitmenų, atskirtų taškais. Tarp minėtų duomenų patenka nusikaltimai, išvykimo iš kalinimo įstaigos pobūdžiai, nuteistųjų amžiaus grupės. Rinkinyje minėti duomenys matuojami vienetais nuteistųjų asmenų arba metais, mėnesiais ir dienomis. Patogumo dėlei taip pat naudojami rinkinio eilučių numeriai.  "
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros unikalus identifikatorius,
 ,,,,,punkto_nr,string,,,,4,open,,Atitinkamais metais matuojamo duomens teisinis identifikatorius,
 ,,,,,metai,date,Y,,,4,open,,Kada aktualūs šios eilutės skaičiai,
 ,,,,,duomenu_pavadinimas,string,,,,4,open,,Matuojamo duomens pavadinimas,
