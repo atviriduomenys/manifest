@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,psl_sk,long,,,,4,open,,Kopijos puslapių skaičius,
 ,,,,,atviras,boolean,,,,4,open,,Kopijos prieinamumo būsena. „TRUE“ – leidinys prienamas visiems,
 ,,,,,matomas,boolean,,,,4,open,,Kopijos matomumo būsena. „TRUE“ – pasiekiamas leidinys,
-,,,,,licencijos_pradzia,date,D,,,4,open,,Licencijos pradžia,
+,,,,,licencijos_pradzia,date,D,,,4,open,,licencijos pradžia,
 ,,,,,licencijos_pabaiga,date,D,,,4,open,,Licencijos pabaiga,
 ,,,,,licenciju_kiekis,long,,,,4,open,,Licencijų skaičius,
 ,,,,,leidinio_vertinimas,double,,,,4,open,,Leidinio vidutinis vertinimas,
