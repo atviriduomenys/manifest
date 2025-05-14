@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,AudiosensorinisIrasas,,,id,,,4,,,"Bibliografiniai įrašai,Elektroninių leidinių valdymo informacinės sistemos (ELVIS) bibliografinių įrašų sąrašas."
+,,,,AudiosensorinisIrasas,,,id,,,4,,,"Bibliografiniai įrašai,Elektroninių leidinių valdymo informacinės sistemos (ELVIS) bibliografinių įrašų sąrašas.",
 ,,,,,id,string,,,,4,open,,Unikalus ID,
 ,,,,,leidinio_id,string,,,,4,open,,Leidinio ID,
 ,,,,,isbn/issn/ismn_numeris,string,,,,4,open,,"ISBN, ISSN arba ISMN identifikacinis numeris",
