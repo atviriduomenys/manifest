@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,ReklamosLeidimas,,,id,,,4,,,"Rinkinyje pateikiamas Lietuvos Respublikos notarų sąrašas, užtikrinantis notariato veiklos skaidrumą, teisinį reguliavimą ir priežiūrą. Rinkinį sudaro istoriniai ir aktualūs duomenys apie notarus, jų paskyrimus, atleidimus, veiklą ir įgaliojimų sustabdymus. Vienoje duomenų rinkinio eilutėje pateikiama informacija apie notarą konkrečiame notarų biure. Duomenų teikėjas – Lietuvos Respublikos teisingumo ministerija.",
+,,,,ReklamosLeidimas,,,id,,,4,,,Notarų sąrašas,"Rinkinyje pateikiamas Lietuvos Respublikos notarų sąrašas, užtikrinantis notariato veiklos skaidrumą, teisinį reguliavimą ir priežiūrą. Rinkinį sudaro istoriniai ir aktualūs duomenys apie notarus, jų paskyrimus, atleidimus, veiklą ir įgaliojimų sustabdymus. Vienoje duomenų rinkinio eilutėje pateikiama informacija apie notarą konkrečiame notarų biure. Duomenų teikėjas – Lietuvos Respublikos teisingumo ministerija."
 ,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Notaro unikalus identifikatorius,
 ,,,,,vda_notaro_vardas_pavarde,string,,vda_notaro_vardas_pavarde,,4,open,,Notaro vardas ir pavardė,
 ,,,,,notaro_vardas,string,,notaro_vardas,,4,open,,Notaro vardas,
