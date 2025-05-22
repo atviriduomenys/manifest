@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/rc/jar/balanso_ataskaitos,,,,,,,,,,,,Juridinių asmenų pateikti finansinės atskaitomybės dokumentai – balanso ataskaitos,Juridinių asmenų registre tvarkomų juridinių asmenų finansinės atskaitomybės dokumentų duomenys iš balanso ataskaitų (apie juridinių asmenų nuosavą kapitalą; apie juridinių asmenų mokėtinas sumas ir kitus įsipareigojimus; apie juridinių asmenų trumpalaikį
+,datasets/gov/rc/jar/balanso_ataskaitos,,,,,,,,,,,,Juridinių asmenų pateikti finansinės atskaitomybės dokumentai – balanso ataskaitos,"Juridinių asmenų registre tvarkomų juridinių asmenų finansinės atskaitomybės dokumentų duomenys iš balanso ataskaitų (apie juridinių asmenų nuosavą kapitalą; apie juridinių asmenų mokėtinas sumas ir kitus įsipareigojimus; apie juridinių asmenų trumpalaikį turtą; apie juridinių asmenų ilgalaikį turtą) (RAW data). Individualių įmonių, komanditinių ūkinių bendrijų, tikrųjų ūkinių bendrijų pavadinimai nuasmeninti."
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,BalansoAtaskaita,,,juridinis_asmuo,,,4,open,,Juridinių asmenų pateikti finansinės atskaitomybės dokumentai – balanso ataskaitos,
@@ -10,9 +10,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,template_name,string,,,,2,open,,finansinės ataskaitos rūšies pavadinimas,
 ,,,,,standard_id,string,,,,2,open,,finansinės ataskaitos dokumentų rinkinio kodas,
 ,,,,,standard_name,string,,,,2,open,,finansinės ataskaitos dokumentų rinkinio tipas,
-,,,,,line_type_id,string,,,,2,open,,rodiklio kodas,,,
-,,,,,line_name,string,,,,2,open,,rodiklio pavadinimas,,,
-,,,,,reiksme,integer,,,,2,open,,rodiklio  reikšmė eurais,,,
+,,,,,line_type_id,string,,,,2,open,,rodiklio kodas,
+,,,,,line_name,string,,,,2,open,,rodiklio pavadinimas,
+,,,,,reiksme,integer,,,,2,open,,rodiklio  reikšmė eurais,
 ,,,,,laikotarpis_nuo,date,D,,,4,open,,finansinių metų pradžios data,
 ,,,,,laikotarpis_iki,date,D,,,4,open,,finansinių metų pabaigos data,
 ,,,,,reg_date,date,D,,,4,open,,finansinės atskaitomybės dokumentų įregistravimo JAR data,
