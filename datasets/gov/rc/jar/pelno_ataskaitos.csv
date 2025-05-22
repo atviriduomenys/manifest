@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,standard_name,string,,,,2,open,,Finansinės ataskaitos dokumentų rinkinio tipas,
 ,,,,,line_type_id,string,,,,2,open,,rodiklio kodas,
 ,,,,,line_name,string,,,,2,open,,rodiklio pavadinimas,
-,,,,,reiksme,integer,,,,2,open,,rodiklio  reikðmë eurais,
+,,,,,reiksme,integer,,,,2,open,,rodiklio  reikšmė eurais,
 ,,,,,laikotarpis_nuo,date,D,,,4,open,,Finansinių metų pradžios data,
 ,,,,,laikotarpis_iki,date,D,,,4,open,,Finansinių metų pabaigos data,
 ,,,,,reg_date,date,D,,,4,open,,Finansinės atskaitomybės dokumentų įregistravimo jar data,
