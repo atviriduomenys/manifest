@@ -8,4 +8,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyvenamoji_vietove,ref,/datasets/gov/rc/ar/gyvenamojivietove/GyvenamojiVietove,,,4,open,,"Gyvenamosios vietovės, kurioje yra gatvė, identifikavimo kodas",
 ,,,,,nuo,date,D,,,4,open,,Atributų rinkinio pradžios galiojimo data,
 ,,,,,gat_nuo,date,D,,,4,open,,Objekto įregistravimo data,
-,,,,,gat_iki,date,D,,,4,open,,Objekto įregistravimo data,
+,,,,,gat_iki,date,D,,,4,open,,Objekto išregistravimo data,
