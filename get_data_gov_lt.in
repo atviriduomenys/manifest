@@ -888,3 +888,5 @@ datasets/gov/lab/bibliografiniai_irasai.csv
 datasets/gov/panevezio_m_sav/ikimokyklinis_ugdymas.csv
 datasets/gov/lrtm/notaru_sarasas.csv
 datasets/gov/lsmu/lab_tyrimai.csv
+datasets/gov/lsmu/ligonines_lovos.csv
+datasets/gov/lsmu/med_personalas.csv
