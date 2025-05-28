@@ -808,6 +808,7 @@ datasets/gov/se/registras.csv
 datasets/gov/apva/baigti_aplinkosaugos_projektai.csv
 datasets/gov/siauliu_vand/inzineriniai_tinklai.csv
 datasets/gov/siauliu_vand/vvs.csv
+datasets/gov/rsl/labdatalims.csv
 datasets/gov/vstt/medziokles.csv
 datasets/gov/anyksciu_r_sav/zeldiniai.csv
 datasets/gov/lsd/sveikata/specialistai.csv
