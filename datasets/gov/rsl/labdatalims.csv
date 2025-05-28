@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/siaullig,,,,,,,,,,,,,
+,datasets/gov/rsl,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,recipiento_id,string,,,,4,open,,Šifruotas produkto recipiento identifikatorius,
 ,,,,,recipiento_asmens_kodas,string,,,,4,open,,Šifruotas produkto recipiento asmens kodas,
 ,,,,,recipiento_asmens_kodo_validacija,string,,,,4,open,,Produkto recipiento asmens kodo validacija,
-,,,,,,enum,,,"""""""Tinkamas""""""",,,,Tinkamas,
+,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,recipiento_lytis,string,,,,4,open,,Produkto recipiento lytis,
 ,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
