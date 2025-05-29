@@ -16,4 +16,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pri_dydis_rez,string,,,,3,open,,Prievolės rėžių dydžiai,
 ,,,,,objektu_verte_rez,string,,,,3,open,,Bendras įkeičiamų daiktų įkainojimas (rėžiai),
 ,,,,,pri_terminas_metai,date,Y,,,4,open,,Prievolės įvykdymo terminas (metai),
-,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
