@@ -1,0 +1,32 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav,,,,,,,,,,,,Vilniaus miesto savivaldybė,
+,datasets/gov/vilniaus_m_sav/rinkimai,,,,,,,,,,,,Vilniaus miesto savivaldybės seniūnaičių rinkimų rezultatai,"Rinkinyje pateikiami Vilniaus mieste savivaldybėje vykusių seniūnaičių rinkimų duomenys nuo 2019m. Vilniaus miesto teritorija yra padalinta į seniūnijas, o seniūnijos savo ruožtu yra skirstomos į mažesnius administracinius vienetus – seniūnaitijas. Seniūnaitis – tai visuomeniniais pagrindais dirbantis gyvenamosios vietovės ar bendruomenės išrinktas atstovas, vykdantis įstatymo nustatytas teises ir pareigas. Vilniaus miesto tarybos sprendimu seniūnaičiui skiriama 30 eurų mėnesio išmoka, skirta su seniūnaičio veikla susijusioms išlaidos apmokėti. Daugiau informacijos apie seniūnaičių teises ir pareigas: https://vilnius.lt/savivaldybe/seniunijos-ir-bendruomenes/seniunaiciai 
+Rinkinio objektas – rinkimuose dalyvavusio kandidato rezultatai. Duomenyse nurodyti duomenys apie seniūnaičių rinkimus (rinkimų data, balsavimo pradžios ir pabaigos datos, turas) ir kandidatus į seniūnaičius (seniūnija, seniūnaitija, kandidato (-ės) vardas ir pavardė, rinkiminės programos tikslai, surinktų balsų skaičius ir požymis, ar buvo išrinktas(-a)).
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Kandidatas,,,vda_id,,,4,,,Vilniaus miesto savivaldybės seniūnaičių rinkimų rezultatai,"Rinkinyje pateikiami Vilniaus mieste savivaldybėje vykusių seniūnaičių rinkimų duomenys nuo 2019m. Vilniaus miesto teritorija yra padalinta į seniūnijas, o seniūnijos savo ruožtu yra skirstomos į mažesnius administracinius vienetus – seniūnaitijas. Seniūnaitis – tai visuomeniniais pagrindais dirbantis gyvenamosios vietovės ar bendruomenės išrinktas atstovas, vykdantis įstatymo nustatytas teises ir pareigas. Vilniaus miesto tarybos sprendimu seniūnaičiui skiriama 30 eurų mėnesio išmoka, skirta su seniūnaičio veikla susijusioms išlaidos apmokėti. Daugiau informacijos apie seniūnaičių teises ir pareigas: https://vilnius.lt/savivaldybe/seniunijos-ir-bendruomenes/seniunaiciai 
+Rinkinio objektas – rinkimuose dalyvavusio kandidato rezultatai. Duomenyse nurodyti duomenys apie seniūnaičių rinkimus (rinkimų data, balsavimo pradžios ir pabaigos datos, turas) ir kandidatus į seniūnaičius (seniūnija, seniūnaitija, kandidato (-ės) vardas ir pavardė, rinkiminės programos tikslai, surinktų balsų skaičius ir požymis, ar buvo išrinktas(-a)).
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,rinkimai,string,,,,4,open,,Rinkimų pavadinimas,
+,,,,,,enum,,,"""Seniūnaičių rinkimai (2019 m.)""",,,,,
+,,,,,,,,,"""Seniūnaičių rinkimai (2023 m.)""",,,,,
+,,,,,,,,,"""Seniūnaičių rinkimai (2024 m.)""",,,,,
+,,,,,rinkimu_turas,string,,,,4,open,,Rinkimų turo numeris,
+,,,,,balsavimo_pradzia,date,D,,,4,open,,Balsavimo pradžios data,
+,,,,,balsavimo_pabaiga,date,D,,,4,open,,Balsavimo pabaigos data,
+,,,,,seniunija,string,,,,4,open,,Kandidato seniūnija,
+,,,,,seniunaitija,string,,,,4,open,,Kandidato seniūnaitija,
+,,,,,kandidatas,string,,,,4,open,,Kandidato vardas ir pavardė,
+,,,,,kandidato_rinkimai,integer,,,,4,open,,Kandidatavimų eilės skaičius,
+,,,,,tikslai,string,,,,4,open,,Kandidato rinkiminės programos tikslai,
+,,,,,viso_balsu,integer,,,,4,open,,Rinkimuose gautų balsų skaičius,
+,,,,,ar_isrinko,boolean,,,,4,open,,Požymis ar kandidatas buvo išrinktas į seniūnaičius,
