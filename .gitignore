@@ -14,3 +14,4 @@ docs/_build/
 /gsheet-*.json
 /gsheetstoken.pickle
 /manifest.csv
+.idea/
