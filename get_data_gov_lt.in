@@ -880,6 +880,7 @@ datasets/gov/aaa/atlieku_tvarkytoju_valstybes_registras.csv
 datasets/gov/kbu/bustai.csv
 datasets/gov/kalvarijos_sav/skaitikliu_rodmenys.csv
 datasets/gov/utenos_r_sav/infoera.csv
+datasets/gov/lsd/sveikata/psdn_paraiskos.csv
 datasets/gov/telsiu_vand/skaitikliu_rodmenys.csv
 datasets/gov/lvat/elektroninis_archyvas.csv
 datasets/gov/cpva/ignalinos_programu_projektai.csv
