@@ -10,6 +10,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Paslauga,,,ad_id,,,4,,,"Asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašas","Informacija apie asmens sveikatos priežiūros paslaugų, priskirtų PSDF biudžeto straipsniams, sąrašą"
 ,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
+,,,,,straipsnis,integer,,,,4,open,,Nuoroda į Straipsnis,
 ,,,,,nuo,date,D,,,4,open,,Paslauga galioja nuo,Paslaugos priskyrimo atitinkamam PSDF biudžeto straipsniui pradžios data
 ,,,,,iki,date,D,,,4,open,,Paslauga galioja iki,Paslaugos priskyrimo atitinkamam PSDF biudžeto išlaidų straipsniui pabaigos data
-,,,,,kodas,ref,/datasets/gov/vlk/paslaugos/Paslauga[kodas],,,4,open,,Paslaugos kodas,
+,,,,,kodas,ref,/datasets/gov/vlk/paslaugos/Paslauga[kodas],,,4,open,,Nuoroda į Paslauga[kodas],
