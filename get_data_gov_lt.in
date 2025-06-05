@@ -808,6 +808,7 @@ datasets/gov/se/registras.csv
 datasets/gov/apva/baigti_aplinkosaugos_projektai.csv
 datasets/gov/siauliu_vand/inzineriniai_tinklai.csv
 datasets/gov/siauliu_vand/vvs.csv
+datasets/gov/rsl/labdatalims.csv
 datasets/gov/vstt/medziokles.csv
 datasets/gov/anyksciu_r_sav/zeldiniai.csv
 datasets/gov/lsd/sveikata/specialistai.csv
@@ -880,3 +881,18 @@ datasets/gov/kbu/bustai.csv
 datasets/gov/kalvarijos_sav/skaitikliu_rodmenys.csv
 datasets/gov/utenos_r_sav/infoera.csv
 datasets/gov/lsd/sveikata/psdn_paraiskos.csv
+datasets/gov/telsiu_vand/skaitikliu_rodmenys.csv
+datasets/gov/lvat/elektroninis_archyvas.csv
+datasets/gov/cpva/ignalinos_programu_projektai.csv
+datasets/gov/cpva/ignalinos_programu_dokumentai.csv
+datasets/gov/cpva/ignalinos_programu_procesai.csv
+datasets/gov/lab/bibliografiniai_irasai.csv
+datasets/gov/panevezio_m_sav/ikimokyklinis_ugdymas.csv
+datasets/gov/lrtm/notaru_sarasas.csv
+datasets/gov/lsmu/lab_tyrimai.csv
+datasets/gov/lsmu/ligonines_lovos.csv
+datasets/gov/lsmu/med_personalas.csv
+datasets/gov/via_lietuva/keliu_projektai.csv
+datasets/gov/vilniaus_m_sav/seniunaiciai.csv
+datasets/gov/vilniaus_m_sav/paraiskos.csv
+datasets/gov/vilniaus_m_sav/balsavimai.csv

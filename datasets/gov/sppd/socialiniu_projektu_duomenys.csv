@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Projektas,,,vda_id,,,4,,,Organizacijų bei socialinių projektų duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Unikalus projekto identifikatorius,Projektui priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje.
-,,,,,priemones_id,ref,Priemone[priemones_id],,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
+,,,,,priemones_id,string,,,,4,open,,Priemonės identifikatorius,Išorinis raktas į priemonės lentelę
 ,,,,,projekto_kodas,string,,,,4,open,,Projekto kodas,Projekto kodas sudarytas iš priemonės trumpinio bei skaičiaus atitinkančio projektų eilės tvarką
 ,,,,,pareiskejas,string,,,,4,open,,Organizacijos pavadinimas,"Pareiškėjo įmonės, viešosios įstaigos, ar kitos organizacijos pavadinimas"
 ,,,,,pareiskejo_tinklapis,string,,,,4,open,,Tinklapio adresas,Pareiškėjo URL nuoroda į pareiškėjo internetinę svetainę
@@ -66,7 +66,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,ProjektoPirkimas,,,vda_id,,,4,,,Projekto išlaidų duomenys,
 ,,,,,vda_id,string,,,,4,open,,Unikalus eilutės identifikatorius,
 ,,,,,pirkimo_id,string,,,,4,open,,Unikalus pirkimo identifikatorius,Projekto išlaidai priskirta id reikšmė kuri unikaliai identifikuoja eilutę lentelėje
-,,,,,projekto_id,ref,Projektas[projekto_id],,,4,open,,Projekto identifikatorius kurio lėšomis darytas pirkimas,Išorinis raktas į projektų lentelę
+,,,,,projekto_id,string,,,,4,open,,Projekto identifikatorius kurio lėšomis darytas pirkimas,Išorinis raktas į projektų lentelę
 ,,,,,pirkimo_aprasymas,string,,,,4,open,,Pirkimo trumpas aprašymas,Pirkimo aprašymas pagal Lietuvos Respublikos valstybės ir savivaldybių biudžetų pajamų ir išlaidų klasifikatorių
 ,,,,,atsiskaitymo_data,date,D,,,4,open,,Atsiskaitymo data už pirkinį,
 ,,,,,ketvirtis,string,,,,4,open,,Atsiskaitymo ketvirtis,

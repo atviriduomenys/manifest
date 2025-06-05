@@ -1,0 +1,28 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/paraiskos,,,,,,,,,,,,Vilniaus miesto savivaldybės skelbiamų konkursų paraiškų duomenys,"Rinkinyje pateikiami duomenys apie Vilniaus miesto savivaldybės skelbiamus ir vykdomus konkursus jaunimo, bendruomenės, sporto, aplinkos, miesto plėtros, socialinės apsaugos, kultūros, sveikatingumo programose bei konkursams teiktas paraiškas."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Konkursas,,,konkurso_id,,,4,,,Vilniaus miesto savivaldybės administracijos konkursų skelbimai,"Pateikiami duomenys apie kiekvieną skelbtą konkursą, tikslus, aprašymą, programą, maksimalią finansavimo sumą, paraiškų teikimo pradžios ir pabaigos datas bei atsakingą savivaldybės skyrių."
+,,,,,konkurso_id,string,,,,4,open,,Konkurso identifikacinis numeris,
+,,,,,konkursas,string,,,,4,open,,Konkurso pavadinimas,
+,,,,,tikslas_lt,string,,,,2,open,,Konkurso tikslas,
+,,,,,,comment,type,,"update(property: ""tikslas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,aprasymas_lt,string,,,,2,open,,Konkurso aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,programa,string,,,,4,open,,Konkurso programos pavadinimas,
+,,,,,progr_aprasymas_lt,string,,,,2,open,,Konkurso programos aprašymas,
+,,,,,,comment,type,,"update(property: ""progr_aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,programos_kodas,string,,,,4,open,,Programos kodas,
+,,,,,finansavimas_lt,string,,,,2,open,,Maksimali prašoma suma vienam projektui,
+,,,,,,comment,type,,"update(property: ""finansavimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,pradzia,date,D,,,4,open,,Konkurso pradžios data,
+,,,,,pabaiga,datetime,S,,,4,open,,Konkurso pabaigos laikas,
+,,,,,skyrius,string,,,,4,open,,"Savivaldybės skyrius, kuruojantis konkurso vykdymą",
+,,,,,,,,,,,,,,
+,,,,Paraiska,,,teikejo_id,,,4,,,Vilniaus miesto savivaldybės skelbiamų konkursų paraiškų duomenys,"Aprašomos konkursams teiktos paraiškos, nurodant paraiškos statusą, programos kodą, teikimo datą ir galutinį paraiškos įvertį po vertinimo. Lentelės objektas – konkursui teikta paraiška."
+,,,,,teikejo_id,string,,,,4,open,,Paraiškos teikėjo identifikacinis numeris,
+,,,,,statusas,string,,,,4,open,,Paraiškos statusas,
+,,,,,programos_kodas,string,,,,4,open,,"Konkurso programos, kuriai teikta paraiška, kodas",
+,,,,,teikimas,date,D,,,4,open,,Paraiškos teikimo data,
+,,,,,ivertis,number,,,,4,open,,Paraiškos įvertis po vertinimo,

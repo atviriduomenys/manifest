@@ -7,4 +7,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pavadinimas,string,,,,3,open,,Seniūnijos pavadinimas,
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,"Savivaldybės, kurioje yra seniūnija, identifikavimo kodas",
 ,,,,,sen_nuo,date,D,,,4,open,,Objekto įregistravimo data,
-,,,,,sen_iki,date,D,,,4,open,,Objekto įregistravimo data,
+,,,,,sen_iki,date,D,,,4,open,,Objekto išregistravimo data,
