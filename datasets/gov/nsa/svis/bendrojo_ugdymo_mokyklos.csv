@@ -20,7 +20,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sav_pav,string,,,,4,open,,"Savivaldybės, kuriai priklauso gyvenamoji vietovė, pavadinimas",,,
 ,,,,,sen_kodas,ref,"/datasets/gov/rc/ar/seniunija/Seniunija	",,,4,open,,"Seniūnijos, kuriai priklauso gyvenamoji vietovė, identifikacinis kodas",,,
 ,,,,,sen_pav,string,,,,4,open,,"Seniūnijos, kuriai priklauso gyvenamoji vietovė, pavadinimas",,,
-,,,,,gyv_kodas,"ref	","/datasets/gov/rc/ar/gragyvenamojivietove/GraGyvenamojiVietove	",,,4,open,,Gyvenamosios vietovės identifikacinis kodas,,,
+,,,,,gyv_kodas,string,,,,4,open,,Gyvenamosios vietovės identifikacinis kodas,,,
 ,,,,,gyv_pav,string,,,,4,open,,Gyvenamosios vietovės vardas su sutrumpintu tipu,,,
 ,,,,,gat_pavadinimas,string,,,,4,open,,Institucijos adreso gatvė,,,
 ,,,,,adr_namas,string,,,,4,open,,Žemės sklypo ir (ar) pastato numeris gatvėje arba gyvenamojoje vietovėje,,,
