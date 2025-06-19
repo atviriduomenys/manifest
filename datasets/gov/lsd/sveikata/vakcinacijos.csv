@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lsd/sveikata/,,,,,,,,,,,,Vakcinacijos,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,
-,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,,,
 ,,,,,,,,,,,,,,
 ,,,,ZpvVakcinacija,,,vda_id,,,4,,,Paskiepytų ŽPV vakcinacija,Paskiepytų nuo žmogaus papilomos viruso (ŽPV) asmenų skaičius pagal įstaigas ir amžiaus grupes,,
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
