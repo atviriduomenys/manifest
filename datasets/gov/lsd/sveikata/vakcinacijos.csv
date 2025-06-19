@@ -29,7 +29,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,VaikuVakcinacija,,,vda_id,,,4,,,Prie įstaigos prisirašiusių nepilnamečių asmenų skaičius ir paskiepijimas nuo 2021 metų,"Prie pirminės ambulatorinės asmens sveikatos priežiūros įstaigų prisirašiusių ir bent kartą paskiepytų nepilnamečių skaičius nuo 2021 metų. Duomenys parengti naudojantis SVEIDRA bei ESPBI IS informacija.",
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,,
 ,,,,,metai,integer,,,,2,open,,"Metai, už kuriuos skaičiuojami prisirašę ir paskiepyti asmenys konkrečioje įstaigoje",,
-,,,,,,comment,type,,'update(type:"date" ref:"Y")',4,,spinta:123,,
+,,,,,,comment,type,,"update(type:""date"", ref:""Y"")",4,,spinta:123,,
 ,,,,,jar_kodas,string,,,,4,open,,Juridinio asmens kodas,,
 ,,,,,name,string,,,,4,open,,"Įstaigos pavadinimas",,
 ,,,,,savivaldybe,string,,,,4,open,,Įstaigos savivaldybės pavadinimas,,
