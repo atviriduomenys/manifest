@@ -2,7 +2,7 @@
 Column1,Column2,Column3,Column4,Column5,Column6,Column7,Column8,Column9,Column10,Column11,Column12,Column13,Column14,Column15,Column16
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
 ,datasets/gov/lsd/sveikata/,,,,,,,,,,,,Vakcinacijos,,
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,,,
 ,,,,,,,,,,,,,,
