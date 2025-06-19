@@ -3,7 +3,7 @@ Column1,Column2,Column3,Column4,Column5,Column6,Column7,Column8,Column9,Column10
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
 ,datasets/gov/lsd/sveikata/,,,,,,,,,,,,Vakcinacijos,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,
-,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,,,
 ,,,,,,,,,,,,,,
 ,,,,ZpvVakcinacija,,,vda_id,,,4,,,Paskiepytų ŽPV vakcinacija,Paskiepytų nuo žmogaus papilomos viruso (ŽPV) asmenų skaičius pagal įstaigas ir amžiaus grupes,,
