@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,ZpvVakcinacija,,,vda_id,,,4,,,Paskiepytų ŽPV vakcinacija,"Paskiepytų nuo žmogaus papilomos viruso (ŽPV) asmenų skaičius pagal įstaigas ir amžiaus grupes"
+,,,,ZpvVakcinacija,,,vda_id,,,4,,,Paskiepytų ŽPV vakcinacija,"Paskiepytų nuo žmogaus papilomos viruso (ŽPV) asmenų skaičius pagal įstaigas ir amžiaus grupes",
 ,,,,,vda_id,string,,,,4,open,,Unikalus kodas,,
 ,,,,,men_data,date,D,,,4,open,,"Vakcinacijos data, apvalinta mėnesio tikslumu",,
 ,,,,,lytis,string,,,,4,open,,"Asmenų grupės lytis",,
