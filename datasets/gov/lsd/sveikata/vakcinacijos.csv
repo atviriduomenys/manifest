@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Moteris""",,,,Moteris,
 ,,,,,,,,,"""Vyras""",,,,Vyras,
 ,,,,,amziaus_gr,string,,,,4,open,,"Amžiaus grupės: mažiau negu 10m., 11m., 12m., 13m., 14m.,  15-17 m., 18 m. ir daugiau.",
-,,,,,,enum,,,"""18+"""",,,,18 metų ir vyresni,,
+,,,,,,enum,,,"""18+""",,,,18 metų ir vyresni,,
 ,,,,,,,,,"""12""",,,,12 metų,,
 ,,,,,,,,,"""11""",,,,11 metų,,
 ,,,,,,,,,"""13""",,,,13 metų,,
