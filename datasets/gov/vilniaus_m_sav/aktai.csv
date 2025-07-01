@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/aktai,,,,,,,,,,,,Vilniaus miesto savivaldybės teisės aktų registras,"Rinkinyje skelbiami Vilniaus miesto savivaldybės mero, tarybos, administracijos ir seniūnų paskelbti teisės aktų objektai: įsakymai, sprendimai, potvarkiai, projektai ir įsakai. Duomenys apima laikotarpį nuo 1990 m. Rinkinio objektas – vienas dokumentas. Rinkinyje kaupiami istoriniai duomenys, todėl įtraukti ir nustoję galioti teisės aktai. Skelbiami šie teisės aktų požymiai: pavadinimas, paskelbimo data, potvarkio numeris, aktą paskelbęs savivaldybės subjektas ir akto statusas. Vartotojai taip pat gali analizuoti paskelbtų teisės aktų tarpusavio ryšius – kurie dokumentai susiję, keičia ar yra priedai kitiems teisės aktams (žr. modelį Jungimas).
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,dokumento_id,,,4,,,Vilniaus miesto savivaldybės teisės aktai,
+,,,,,dokumento_id,,,,,4,open,,Dokumento identifikacinis numeris,
+,,,,,paskelbimas,date,D,,,4,open,,Dokumento pasirašymo data,
+,,,,,potvarkio_nr,string,,,,4,open,,Dokumento registracijos numeris,
+,,,,,rusis,string,,,,4,open,,Dokumento rūšis,
+,,,,,url,string,,,,4,open,,Suformuota nuoroda į dokumentą,
+,,,,,pavadinimas_lt,string,,,,4,open,,Dokumento pavadinimas,
+,,,,,padalinys,string,,,,4,open,,"Savivaldybės padalinys, parengęs dokumentą",
+,,,,,statusas,string,,,,4,open,,Dokumento statusas,
+,,,,,,,,,,,,,,
+,,,,Jungimas,,,rysio_id,,,4,,,Vilniaus miesto savivaldybės teisės aktų tarpusavio sąryšiai,
+,,,,,rysio_id,string,,,,4,open,,Ryšio identifikacinis numeris,
+,,,,,rysio_pradzia,string,,,,4,open,,Ryšio pradžios dokumento identifikacinis numeris.,Referuoja į modelio Dokumentas pirminį raktą (dokumento_id)
+,,,,,rysio_pabaiga,string,,,,4,open,,Ryšio pabaigos dokumento identifikacinis numeris,Referuoja į modelio Dokumentas pirminį raktą (dokumento_id)
+,,,,,rysys,string,,,,4,open,,Ryšio tipas,
