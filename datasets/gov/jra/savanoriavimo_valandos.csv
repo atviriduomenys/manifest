@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,SavanoriavimoValandos,,id,,,,4,,,Savanoriavimo valandos,"Jaunimo reikalų agentūros jaunimo savanoriškos tarnybos savanorių savanoriautos valandos priimančiose organizacijose"
+,,,,SavanoriavimoValandos,,val_id,,,,4,,,Savanoriavimo valandos,"Jaunimo reikalų agentūros jaunimo savanoriškos tarnybos savanorių savanoriautos valandos priimančiose organizacijose"
 ,,,,,val_id,string,,,,4,open,,Savanorio savanoriavimo dienos valandos ID,
 ,,,,,ataskaitos_id,string,,,,4,open,,Savanoriavimo valandų registravimo ataskaitos ID,
 ,,,,,role,string,,,,4,open,,Naudotojo rolė,
