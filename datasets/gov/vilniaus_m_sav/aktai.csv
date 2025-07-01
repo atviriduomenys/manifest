@@ -8,7 +8,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Dokumentas,,,dokumento_id,,,4,,,Vilniaus miesto savivaldybės teisės aktai,
-,,,,,dokumento_id,,,,,4,open,,Dokumento identifikacinis numeris,
+,,,,,dokumento_id,string,,,,4,open,,Dokumento identifikacinis numeris,
 ,,,,,paskelbimas,date,D,,,4,open,,Dokumento pasirašymo data,
 ,,,,,potvarkio_nr,string,,,,4,open,,Dokumento registracijos numeris,
 ,,,,,rusis,string,,,,4,open,,Dokumento rūšis,
