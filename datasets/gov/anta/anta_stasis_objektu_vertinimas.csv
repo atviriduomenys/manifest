@@ -1,5 +1,10 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės: 1. „Objektai“ – duomenys apie vertinamus pastatus, 2. „Objektų vertinimai“ – objektų pritaikomumo negalią turintiems asmenis vertinimai. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie Lietuvos Respublikos socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. """
+,datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės:
+1. „Objektai“ – duomenys apie vertinamus pastatus,
+2. „Objektų vertinimai“ – objektų pritaikomumo negalią turintiems asmenis vertinimai.
+
+Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie Lietuvos Respublikos socialinės apsaugos ir darbo ministerijos.
+                                                                                                                                                    Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. """
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
 ,,,,,,,,,,,,,,
@@ -20,4 +25,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,objekto_id,string,,,,4,open,,Objekto ID,Objekto identifikacinis numeris
 ,,,,,negalios_tipas,string,,,,4,open,,Negalio tipas,Vertinamos negalios tipas
 ,,,,,kriterijus,string,,,,4,open,,Kriterijus,Kriterijaus tipas
-,,,,,rezultatas,integer,,,,4,open,,Rezultatas,Įvertis nuo 0 iki 100. 0 - visai nepritaikyta, 100 - pritaikyta
+,,,,,rezultatas,integer,,,,4,open,,Rezultatas,"""Įvertis nuo 0 iki 100. 0 - visai nepritaikyta, 100 - pritaikyta"""
