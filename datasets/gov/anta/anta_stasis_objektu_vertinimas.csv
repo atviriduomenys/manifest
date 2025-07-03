@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės:
+,datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės:
 1. „Objektai“ – duomenys apie vertinamus pastatus,
 2. „Objektų vertinimai“ – objektų pritaikomumo negalią turintiems asmenis vertinimai.
 
