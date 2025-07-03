@@ -1,10 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės:
-1. „Objektai“ – duomenys apie vertinamus pastatus,
-2. „Objektų vertinimai“ – objektų pritaikomumo negalią turintiems asmenis vertinimai.
-
-Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie Lietuvos Respublikos socialinės apsaugos ir darbo ministerijos.
-                                                                                                                                                    Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. """
+,datasets/gov/anta/stasis,,,,,,,,,,,,Objektų pritaikomumo negalią turintiems asmenims vertinimai,"""Rinkinyje pateikiami nuo 2022 metų gruodžio 1 dienos kaupiami duomenys iš Asmens su negalia teisių apsaugos agentūros statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Duomenų rinkinį sudaro dvi lentelės: 1. „Objektai“ – duomenys apie vertinamus pastatus, 2. „Objektų vertinimai“ – objektų pritaikomumo negalią turintiems asmenis vertinimai. Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie Lietuvos Respublikos socialinės apsaugos ir darbo ministerijos. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. """
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
 ,,,,,,,,,,,,,,
@@ -19,7 +14,7 @@ Duomenų teikėjas – Asmens su negalia teisių apsaugos agentūra prie Lietuvo
 ,,,,,gatve,string,,,,4,open,,Gatvė,"""Gatvės, kurioje objektas yra, pavadinimas"""
 ,,,,,geometrija,geometry(4326),,,,4,open,,Geometrija,Geolokacinis WGS-84 koordinačių taškas nurodantis objekto tikslią vietą
 ,,,,,aukstu_sk,string,,,,4,open,,Objekto aukštų skaičius,
-,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 ,,,,Vertinimas,,,vda_prime_key,,,4,,,Objektų vertinimai,"""Objektų pritaikomumo negaliai įverčiai iš Asmens su negalia teisių apsaugos agentūros, statinių prieinamumo neįgaliems stebėsenos ir kontrolės įrankio. Viena eilutė yra vieno unikalaus objekto įvertis atitinkamam negalios tipui pagal tam tikrą kriterijų. Eilutėje nurodomi unikalios eilutės ir objekto identifikaciniai numeriai, negalios tipas, vertinimo kriterijus ir rezultatas."""
 ,,,,,vda_prime_key,string,,,,4,open,,VDA unikalus ID,"""Unikalios eilutės identifikatorius sudarytas iš stulpelių - objekto_id, negalios_tipas, kriterijus"""
 ,,,,,objekto_id,string,,,,4,open,,Objekto ID,Objekto identifikacinis numeris
