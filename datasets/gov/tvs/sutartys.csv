@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutarties_salis_tipas,string,,,,4,open,,Sutarties šalies tipas,
 ,,,,,sutarties_tipas,string,,,,4,open,,Sutarties tipas,
 ,,,,,vardas_pavarde,string,,,,4,open,,Vardas pavardė,
-,,,,,asm_kodas,,,,4,open,,Asmens kodas,
+,,,,,asm_kodas,string,,,,4,open,,Asmens kodas,
 ,,,,,gim_metai_asmk,date ,Y,,,4,open,,Gimimo metai iš asmens kodo,
 ,,,,,lytis_asmk,string,,,,4,open,,Lytis iš asmens kodo,
 ,,,,,istaiga,string,,,,4,open,,Įstaigos pavadinimas,
