@@ -36,4 +36,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutart_isigal_data,date,D,,,4,open,,Sutarties įsigaliojimo data,
 ,,,,,sutart_nutrauk_data,date,D,,,4,open,,Sutarties nutraukimo data,
 ,,,,,teisinis_pagrindas,string,,,,4,open,,Teisinis sutarties pagrindas,
-
