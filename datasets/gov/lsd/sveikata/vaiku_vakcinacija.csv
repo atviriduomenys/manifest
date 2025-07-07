@@ -1,0 +1,18 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sveikata/vaiku_vakcinacija,,,,,,,,,,,,Prie įstaigos prisirašiusių nepilnamečių asmenų skaičius ir paskiepijimas nuo 2021 metų,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,VaikuVakcinacija,,,vda_id,,,4,,,Prie įstaigos prisirašiusių nepilnamečių asmenų skaičius ir paskiepijimas nuo 2021 metų,"""Prie pirminės ambulatorinės asmens sveikatos priežiūros įstaigų prisirašiusių ir bent kartą paskiepytų nepilnamečių skaičius nuo 2021 metų. Duomenys parengti naudojantis SVEIDRA bei ESPBI IS informacija."""
+,,,,,vda_id,string,,,,4,open,,Unikalus kodas,
+,,,,,metai,integer,,,,2,open,,"""Metai, už kuriuos skaičiuojami prisirašę ir paskiepyti asmenys konkrečioje įstaigoje""",
+,,,,,,comment,type,,"update(type:""date"", ref:""Y"")",4,,spinta:123,,
+,,,,,jar_kodas,string,,,,4,open,,Juridinio asmens kodas,
+,,,,,name,string,,,,4,open,,Įstaigos pavadinimas,
+,,,,,savivaldybe,string,,,,4,open,,Įstaigos savivaldybės pavadinimas,
+,,,,,gyvenviete,string,,,,4,open,,Įstaigos miestas/gyvenamoji vietovė,
+,,,,,adresas,string,,,,4,open,,Įstaigos veiklos adresas,
+,,,,,vidutiniskai_prisirasiusiuju,integer,,,,4,open,,"""Vidutinis tais metais įstaigoje prisirašiusių vaikų skaičius (bendrų prisirašymo dienų visiems įstaigoje prisirašiusiems nepilnamečiams, t.y. person-days, skaičius, padalintas iš metų trukmės)""",
+,,,,,prisirase_bent1d,integer,,,,4,open,,Prie įstaigos prisirašiusių bent vieną dieną tais metais nepilnamečių skaičius,
+,,,,,paskiepyta_vaiku,integer,,,,4,open,,"""Įstaigoje paskiepytų unikalių nepilnamečių skaičius tais metais, neatsižvelgiant į jų prisirašymo vietą""",
