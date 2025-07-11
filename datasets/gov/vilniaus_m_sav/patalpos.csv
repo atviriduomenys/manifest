@@ -47,7 +47,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,kaina_reitingas,integer,,,,4,open,,"Sutartyje nurodyta patalpų kaina neatvaizduojama, tačiau ji išreitinguojama pagal visų rinkinyje nurodytų sutarčių sumas.",
 ,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Sutarties duomenų atnaujinimo data,
 ,,,,,,,,,,,,,,
-,,,,Saskaita,,,,,,,,,Vilniaus miesto savivaldybės sąskaitos patalpų nuomininkams už suteiktas paslaugas,
+,,,,Saskaita,,,saskaitos_id,,,4,,,Vilniaus miesto savivaldybės sąskaitos patalpų nuomininkams už suteiktas paslaugas,
 ,,,,,saskaitos_id,string,,,,4,open,,Sąskaitos identifikacinis numeris,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,
 ,,,,,saskaitos_nr,string,,,,4,open,,Sąskaitos numeris,
