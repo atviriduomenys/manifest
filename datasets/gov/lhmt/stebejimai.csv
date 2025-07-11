@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lhmt,,,,,ns,,,,,,,Lietuvos hidrometeorologijos tarnyba (LHMT),
-,datasets/gov/lhmt/meteorologiniai_stebejimai,,,,,,,,,,,,Rinkinyje pateikiami Lietuvos meteorologijos stočių meteorologinių stebėjimų duomenys.,
+,datasets/gov/lhmt/stebejimai,,,,,,,,,,,,Rinkinyje pateikiami Lietuvos meteorologijos stočių meteorologinių stebėjimų duomenys.,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,

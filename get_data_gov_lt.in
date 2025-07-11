@@ -907,7 +907,7 @@ datasets/gov/vilniaus_m_sav/patalpos.csv
 datasets/gov/vilniaus_m_sav/aktai.csv
 datasets/gov/jra/savanoriavimo_valandos.csv
 datasets/gov/anta/anta_stasis_objektu_vertinimas.csv
-datasets/gov/lhmt/meteorologiniai_stebejimai.csv
+datasets/gov/lhmt/stebejimai.csv
 datasets/gov/lsd/sveikata/vaiku_vakcinacija.csv
 datasets/gov/lsd/sveikata/zpv_skiepai.csv
 datasets/gov/lsd/nma/zem_uk_paraiskos.csv
