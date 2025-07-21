@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,ref,,"update(ref: ""?"")",4,open,vadovas:dsa/dimensijos.html#model.ref,,
 ,,,,,year,integer,,,,2,open,,Ataskaitiniai metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,spinta:213,,
-,,,,,evrk,string,,,,2,open,,"Ekonominės veiklos rūšies kodas (EVRK 2 red., sekcijos)" ,
+,,,,,evrk,string,,,,2,open,,"Ekonominės veiklos rūšies kodas (EVRK 2 red., sekcijos)",
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""/datasets/gov/lsd/cl/evrk/EkonominesVeiklosRusis"")",4,open,vadovas:dsa/ref.html,,
 ,,,,,key_e,integer,,,,2,open,,Darbuotojo kodas,
 ,,,,,,comment,type,,"update(type: ""ref"", ref: ""?"")",4,open,vadovas:dsa/ref.html,,
