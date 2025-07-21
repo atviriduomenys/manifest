@@ -3,15 +3,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 
 Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
 
-Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Pazeidimas,,,pazeidimo_id,,,4,,,"Rinkinyje skelbiami Vilniaus mieste fiksuoti parkavimo bei kiti kelių eismo taisyklių pažeidimai iš Administracinių nusižengimų administracinio modulio. Viena eilutė yra vienas nusižengimas. Duomenys skelbiami nuo 2018 m. Pateikiama informacija apie nusižengimą atlikusio asmens automobilį (valstybinio numerio žymėjimas, registracijos valstybė, elektromobilio ar automobilio nutempimo požymiai) ir pažeidimą (laikas, vietos koordinatės bei duomenys apie pažeistą teisės aktą). 
+,,,,Pazeidimas,,,pazeidimo_id,,,4,,,Parkavimo ir kelių eismo taisyklių pažeidimai Vilniaus mieste,"Rinkinyje skelbiami Vilniaus mieste fiksuoti parkavimo bei kiti kelių eismo taisyklių pažeidimai iš Administracinių nusižengimų administracinio modulio. Viena eilutė yra vienas nusižengimas. Duomenys skelbiami nuo 2018 m. Pateikiama informacija apie nusižengimą atlikusio asmens automobilį (valstybinio numerio žymėjimas, registracijos valstybė, elektromobilio ar automobilio nutempimo požymiai) ir pažeidimą (laikas, vietos koordinatės bei duomenys apie pažeistą teisės aktą). 
 
 Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
 
-Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,pazeidimo_id,string,,,,4,open,,Pažeidimo identifikacinis numeris,
 ,,,,,laikas,datetime,S,,,4,open,,Pažeidimo užfiksavimo laiko žyma,
 ,,,,,ar_elektromobilis,boolean,,,,4,open,,"Požymis, ar automobilis yra varomas elektriniu varikliu",
