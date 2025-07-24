@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/ssva/nesuformuota_zeme,,,,,,,,,,,,Sklypais nesuformuoti žemės plotai,"Duomenis apie sklypais nesuformuotus žemės plotus bei su jais susijusius prašymus, pateiktus žemės informacinėje sistemoje."
+,datasets/gov/ssva/nesuformuota_zeme,,,,,,,,,,,,Nesuformuoti žemės plotai,"Duomenis apie sklypais nesuformuotus žemės plotus bei su jais susijusius prašymus, pateiktus žemės informacinėje sistemoje."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -14,8 +14,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,plotas_m2,number,,,,4,open,,Nesuformuotas plotas kvadratiniais metrais,
 ,,,,,geometrija_adp,"geometry(point, 3346)",,,,4,open,,Nesuformuoto ploto taškinė geometrija WKT (Well-Known Text) formatu,
 ,,,,,geom_wkt,string,,,,4,open,,Nesuformuoto ploto geometrija WKT (Well-Known Text) formatu (LKS94),
-,,,,,geojson_wgs,string,,,,4,open,,Sklypo geometrija GeoJSON formatu (koordinatės WGS84 sistemoje),
-,,,,,geojson_lks,string,,,,4,open,,Sklypo geometrija GeoJSON formatu (koordinatės LKS94 sistemoje),
+,,,,,geojson_wgs,string,,,,4,open,,Nesuformuoto ploto geometrija GeoJSON formatu (koordinatės WGS84 sistemoje),
+,,,,,geojson_lks,string,,,,4,open,,Nesuformuoto ploto geometrija GeoJSON formatu (koordinatės LKS94 sistemoje),
 ,,,,,paskutinio_atnaujinimo_data,datetime,D,,,4,open,,Duomenų atnaujinimo data,
 ,,,,,,,,,,,,,,
 ,,,,Prasymas,,,vda_prime_key,,,4,,,,
@@ -29,6 +29,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,plotas_m2,number,,,,4,open,,Nesuformuotas plotas kvadratiniais metrais,
 ,,,,,geometrija_adp,"geometry(point, 3346)",,,,4,open,,Nesuformuoto ploto taškinė geometrija WKT (Well-Known Text) formatu,
 ,,,,,geom_wkt,string,,,,4,open,,Nesuformuoto ploto geometrija WKT (Well-Known Text) formatu (LKS94),
-,,,,,geojson_wgs,string,,,,4,open,,Sklypo geometrija GeoJSON formatu (koordinatės WGS84 sistemoje),
-,,,,,geojson_lks,string,,,,4,open,,Sklypo geometrija GeoJSON formatu (koordinatės LKS94 sistemoje),
+,,,,,geojson_wgs,string,,,,4,open,,Nesuformuoto ploto geometrija GeoJSON formatu (koordinatės WGS84 sistemoje),
+,,,,,geojson_lks,string,,,,4,open,,Nesuformuoto ploto geometrija GeoJSON formatu (koordinatės LKS94 sistemoje),
 ,,,,,paskutinio_atnaujinimo_data,datetime,D,,,4,open,,Duomenų atnaujinimo data,
