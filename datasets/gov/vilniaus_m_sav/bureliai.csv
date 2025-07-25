@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/bureliai,,,,,,,,,,,,Neformaliojo ugdymo veiklos Vilniaus mieste,"Rinkinyje skelbiami duomenys apie Vilniaus mieste vykdytas ir vykdomas neformaliojo ugdymo veiklas nuo 2017 m. iki dabar. Viena rinkinio lentelės eilutė– yra viena neformaliojo švietimo veikla. Pateikiama informacija apie veiklą organizuojančią įstaigą, užsiėmimų dažnį, veiklos pradžios ir paskutinio įvykusio užsiėmimo datas, mėnesinį mokestį, maksimalų dalyvių skaičių ir amžiaus grupes, kurioms skirtos veiklos. 
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Veikla,,,veiklos_id,,,4,,,Neformaliojo ugdymo veiklos Vilniaus mieste,"Rinkinyje skelbiami duomenys apie Vilniaus mieste vykdytas ir vykdomas neformaliojo ugdymo veiklas nuo 2017 m. iki dabar. Viena rinkinio lentelės eilutė– yra viena neformaliojo švietimo veikla. Pateikiama informacija apie veiklą organizuojančią įstaigą, užsiėmimų dažnį, veiklos pradžios ir paskutinio įvykusio užsiėmimo datas, mėnesinį mokestį, maksimalų dalyvių skaičių ir amžiaus grupes, kurioms skirtos veiklos."
+,,,,,veiklos_id,string,,,,4,open,,Veiklos identifikatorius,
+,,,,,institucija,string,,,,4,open,,Veiklą organizuojančios institucijos pavadinimas,
+,,,,,informacija_lt,string,,,,2,open,,Papildoma informacija,
+,,,,,,comment,type,,"update(property: ""informacija_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,veiklos_pav_lt,,,,,2,open,,Veiklos pavadinimas,
+,,,,,,comment,type,,"update(property: ""veiklos_pav_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,ar_vyksta,boolean,,,,4,open,,"Požymis, ar neformaliojo ugdymo veikla vykdoma duomenų atnaujinimo momentu",
+,,,,,veiklos_pradzia,date,D,,,4,open,,Veiklos pradžia,
+,,,,,paskutinis_uzsiemimas,date,D,,,4,open,,Paskutinio ligšiol vykusio užsiėmimo data.,
+,,,,,amzius,string,,,,4,open,,"Amžiaus grupė, kuriai skirta neformaliojo ugdymo veikla",
+,,,,,daznis,string,,,,4,open,,"Savaitės dienos, kuriomis vyksta užsiėmimai",
+,,,,,maks_lankytoju,integer,U,,,4,open,,Maksimalus užsiėmimo lankytojų skaičius,
+,,,,,men_mokestis_eur,number,Eur,,,4,open,,Mėnesinis mokestis eurais,
+,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Duomenų apie veiklą atnaujinimo data,
