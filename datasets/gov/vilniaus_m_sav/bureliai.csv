@@ -12,7 +12,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,institucija,string,,,,4,open,,Veiklą organizuojančios institucijos pavadinimas,
 ,,,,,informacija_lt,string,,,,2,open,,Papildoma informacija,
 ,,,,,,comment,type,,"update(property: ""informacija_lt@lt"", type: ""text"")",4,open,spinta:204,,
-,,,,,veiklos_pav_lt,,,,,2,open,,Veiklos pavadinimas,
+,,,,,veiklos_pav_lt,string,,,,2,open,,Veiklos pavadinimas,
 ,,,,,,comment,type,,"update(property: ""veiklos_pav_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,ar_vyksta,boolean,,,,4,open,,"Požymis, ar neformaliojo ugdymo veikla vykdoma duomenų atnaujinimo momentu",
 ,,,,,veiklos_pradzia,date,D,,,4,open,,Veiklos pradžia,
