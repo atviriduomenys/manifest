@@ -1,10 +1,11 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmt,,,,,,,,,,,,Valstybinė Miškų Tarnyba,
-,datasets/gov/vmt/inventorizacija,,,,,,,,,,,,Nacionalinės miškų inventorizacijos matavimų duomenys,"Rinkinyje pateikiami Valstybinės Miškų Tarnybos (VMT) miškų inventorizacijos duomenys Lietuvoje nuo 1998m. iki šių dienų. Miškų inventorizacijų sistema Lietuvoje - tai ilgamečių tyrimų rezultatas, prasidėjęs nuo bandomųjų darbų dar XX. 7 dešimtmečio pabaigoje. Barelis - tai miško apskaitos vienetas, į kurį patenka 500m2, arba 400ha, teritorijos plotas. 4 barelių grupė sudaro traktą, kuriam tenka 16km2 teritorijos plotas. Vykdant miškų inventorizaciją, barelyje nustatomi svarbiausi medynų našumo rodikliai. Šie duomenys leidžia įvertinti Lietuvos miškų būklę ir jų kaitos rodiklius šalies, administracinių vienetų ar jų junginių (apskritys, rajonai) lygmeniu. Lietuvos Respublikos teritorijoje yra išskirta 16 349 nuolatinių stebėjimo barelių, kurie kas penkis metus atnaujinami. VMT kasmet vykdo stebėjimus penktadalyje barelių. Rinkinio duomenys apima visą Lietuvos miško žemę, nepaisant nuosavybės formos. Daugiau informacijos apie miškų inventorizaciją - https://amvmt.lrv.lt/lt/veiklos-sritys/nacionaline-misku-inventorizacija/.
-
-Duomenų teikėjas: Valstybinė miškų tarnyba
-
-Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,datasets/gov/vmt/inventorizacija,,,,,,,,,,,,Nacionalinės miškų inventorizacijos matavimų duomenys,"Rinkinyje pateikiami Valstybinės miškų tarnybos vykdomos Lietuvos nacionalinės miškų inventorizacijos (NMI) duomenys nuo 1998 m. iki dabar. Nacionalinė miškų inventorizacija Miškų įstatyme apibrėžiama kaip valstybinė miškų inventorizacija atrankos metodu (https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.417889?jfwid=zzkff5ewj). Inventorizacija suteikia galimybę stebėti miškų būklę ir jų kaitos rodiklius šalies ir administracinių vienetų ar jų junginių (apskričių, rajonų grupių) lygmeniu. Ši visų Lietuvos miškų inventorizacija vykdoma pagal statistiniais metodais pagrįstą atrankos schemą, naudojant apskaitos barelių tinklą. Ši inventorizacija leidžia sekti miškų būklę ir jų kaitos rodiklius šalies ir administracinių vienetų ar jų junginių (apskričių, rajonų grupių) lygmenyje. Lietuvos Respublikos teritorijoje yra išskirti 16 349 nuolatiniai apskaitos bareliai, kurie kas penkerius metus permatuojami. Barelis – miško apskaitos vienetas, apimantis 500 m², arba 400 ha miško plotą. 
+Daugiau informacijos apie miškų inventorizaciją – https://amvmt.lrv.lt/lt/veiklos-sritys/nacionaline-misku-inventorizacija/. 
+ 
+Duomenų teikėjas – Valstybinė miškų tarnyba. 
+ 
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
