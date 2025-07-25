@@ -18,7 +18,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. 
 ,,,,,produktas,string,,,,4,open,,Deklaruoto produkto pavadinimas,
 ,,,,,kiekis,number,,,,4,open,,Sunaudoto produkto kiekis,
 ,,,,,matavimo_vnt,string,,,,4,open,,Produkto kiekio matavimo vienetai,
-,,,,,,,enum,,"""kg""",,,,Kilogramai,
+,,,,,,enum,,,"""kg""",,,,Kilogramai,
 ,,,,,,,,,"""vnt""",,,,Vienetai,
 ,,,,,,,,,,,,,,
 ,,,,Valgis,,,vda_id,,,4,,,Vilniaus miesto ikimokyklinio ir priešmokyklinio švietimo įstaigų maitinimo ataskaitos,"Pateikiami duomenys apie suteiktas maitinimo paslaugas švietimo įstaigoje pagal maitinimo kategoriją ataskaitine data. Nurodoma ataskaitinė diena, ugdymo įstaiga, maitinimo tipas ir maitinimą gavusių asmenų skaičius. "
