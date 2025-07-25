@@ -1,0 +1,29 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/maitinimas,,,,,,,,,,,,Maitinimo duomenys Vilniaus miesto ikimokyklinio ir priešmokyklinio švietimo įstaigose,"Rinkinyje skelbiamos dviejų tipų ataskaitos – apie Vilniaus miesto ikimokyklinio ir priešmokyklinio švietimo įstaigose vykdytus maitinimus ir apie maitinimui sunaudotus maisto produktus. Duomenys teikiami nuo 2014 m. rugsėjo mėnesio iki dabar. 
+
+Pirmoje ataskaitoje pateikiami duomenys apie suteiktas maitinimo paslaugas švietimo įstaigoje pagal maitinimo kategoriją ataskaitine data. Nurodoma ataskaitinė diena, ugdymo įstaiga, maitinimo tipas ir maitinimą gavusių asmenų skaičius. 
+
+Antroje ataskaitoje skelbiama informacija apie maisto gamybai sunaudotus maisto produktus. Šiuos duomenis įstaigos skelbia nereguliariu dažniu, todėl viena eilutė identifikuoja situaciją apie sunaudotus maisto produktus nuo paskutinės pateiktos ataskaitos. Nurodoma ataskaitą teikusi švietimo įstaiga, deklaruotas produktas ir sunaudotas kiekis maisto gamyboje. 
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Produktas,,,vda_id,,,4,,,Sunaudoti maisto produktai Vilniaus miesto ikimokyklinio ir priešmokyklinio švietimo įstaigose,"Skelbiama informacija apie maisto gamybai sunaudotus maisto produktus. Šiuos duomenis įstaigos skelbia nereguliariu dažniu, todėl viena eilutė identifikuoja situaciją apie sunaudotus maisto produktus nuo paskutinės pateiktos ataskaitos. Nurodoma ataskaitą teikusi švietimo įstaiga, deklaruotas produktas ir sunaudotas kiekis maisto gamyboje."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,ataskaitine_data,date,D,,,4,open,,"Ataskaitinė data, kuriai deklaruoti duomenys",
+,,,,,istaiga,string,,,,4,open,,Ugdymo įstaigos pavadinimas,
+,,,,,produktas,string,,,,4,open,,Deklaruoto produkto pavadinimas,
+,,,,,kiekis,number,,,,4,open,,Sunaudoto produkto kiekis,
+,,,,,matavimo_vnt,string,,,,4,open,,Produkto kiekio matavimo vienetai,
+,,,,,,,enum,,"""kg""",,,,Kilogramai,
+,,,,,,,,,"""vnt""",,,,Vienetai,
+,,,,,,,,,,,,,,
+,,,,Valgis,,,vda_id,,,4,,,Vilniaus miesto ikimokyklinio ir priešmokyklinio švietimo įstaigų maitinimo ataskaitos,"Pateikiami duomenys apie suteiktas maitinimo paslaugas švietimo įstaigoje pagal maitinimo kategoriją ataskaitine data. Nurodoma ataskaitinė diena, ugdymo įstaiga, maitinimo tipas ir maitinimą gavusių asmenų skaičius. "
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,ataskaitine_data,date,D,,,4,open,,"Ataskaitinė data, kuriai deklaruoti duomenys",
+,,,,,istaiga,string,,,,4,open,,Ugdymo įstaigos pavadinimas,
+,,,,,maitinimo_kategorija,string,,,,4,open,,Maitinimo kategorija,
+,,,,,viso_asmenu,integer,U,,,4,open,,Maitinimą gavusių asmenų skaičius,
