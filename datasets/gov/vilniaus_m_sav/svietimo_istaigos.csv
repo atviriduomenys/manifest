@@ -1,9 +1,13 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vilniaus_m_sav/svietimas,,,,,,,,,,,,Vilniaus mieste veikiančios švietimo įstaigos,
+,datasets/gov/vilniaus_m_sav/svietimas,,,,,,,,,,,,Vilniaus mieste veikiančios švietimo įstaigos,"Rinkinyje skelbiamos Vilniaus mieste rinkinio atnaujinimo metu veikiančios švietimo įstaigos: lopšeliai-darželiai, pradinės mokyklos, progimnazijos, gimnazijos, jaunimo ir suaugusiųjų mokymo centrai. Pateikiami įstaigų vietos (seniūnija, adresas, koordinatės) bei kontaktiniai (darbo laikas, telefono numeris, elektroninis paštas, nuoroda į įstaigos internetinį puslapį) duomenys. 
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Istaiga,,,vda_id,,,4,,,Vilniaus mieste veikiančios švietimo įstaigos,
+,,,,Istaiga,,,vda_id,,,4,,,Vilniaus mieste veikiančios švietimo įstaigos,"Rinkinyje skelbiamos Vilniaus mieste rinkinio atnaujinimo metu veikiančios švietimo įstaigos: lopšeliai-darželiai, pradinės mokyklos, progimnazijos, gimnazijos, jaunimo ir suaugusiųjų mokymo centrai. Pateikiami įstaigų vietos (seniūnija, adresas, koordinatės) bei kontaktiniai (darbo laikas, telefono numeris, elektroninis paštas, nuoroda į įstaigos internetinį puslapį) duomenys."
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,seniunija,string,,,,4,open,,Seniūnijos pavadinimas,
 ,,,,,istaiga,string,,,,4,open,,Švietimo įstaigos pavadinimas,
