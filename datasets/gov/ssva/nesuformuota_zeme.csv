@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Nesuformuotas_plotas,,,vda_prime_key,,,4,,,"Duomenų rinkinys apima informaciją apie valstybės valdomus, bet dar nesuformuotus žemės plotus. Kiekvienam sklypui pateikiamas unikalus identifikatorius, jį administruojanti institucija (dažniausiai Nacionalinė žemės tarnyba), buvimo vietos koordinatės (taškinė ir poligoninė geometrija), nesuformuotos žemės perimetras bei plotas. Duomenys taip pat apima savivaldybės ir gyvenvietės kodus, o geografinė informacija pateikta keliuose koordinacinių sistemų formatuose (LKS94, WGS84, GeoJSON, WKT).",
+,,,,NesuformuotasPlotas,,,vda_prime_key,,,4,,,"Duomenų rinkinys apima informaciją apie valstybės valdomus, bet dar nesuformuotus žemės plotus. Kiekvienam sklypui pateikiamas unikalus identifikatorius, jį administruojanti institucija (dažniausiai Nacionalinė žemės tarnyba), buvimo vietos koordinatės (taškinė ir poligoninė geometrija), nesuformuotos žemės perimetras bei plotas. Duomenys taip pat apima savivaldybės ir gyvenvietės kodus, o geografinė informacija pateikta keliuose koordinacinių sistemų formatuose (LKS94, WGS84, GeoJSON, WKT).",
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus nesuformuotos žemės identifikatorius,
 ,,,,,patiketinis,string,,,,4,open,,"Patikėtinio tipas: N - NŽT, S - savivaldybė",
 ,,,,,pavadinimas,string,,,,4,open,,Patikėtinio pavadinimas,
