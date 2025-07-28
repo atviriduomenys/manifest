@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,geojson_lks,string,,,,4,open,,Nesuformuoto ploto geometrija GeoJSON formatu (koordinatės LKS94 sistemoje),
 ,,,,,paskutinio_atnaujinimo_data,datetime,D,,,4,open,,Duomenų atnaujinimo data,
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,vda_prime_key,,,4,,,"Nekilnojamojo turto (nesuformuotų plotų) prašymų duomenys", "Duomenų rinkinys apima informaciją apie fizinių ar juridinių asmenų prašymus, susijusius su nesuformuotais žemės plotais. Kiekvienas įrašas žymi konkretų prašymą su unikaliu identifikatoriumi, paslaugos tipu, nagrinėjimo etapu ir būsena. Taip pat pateikiama ploto geometrija – perimetras, plotas bei įvairūs erdviniai formatai (WKT, GeoJSON LKS/WGS).",
+,,,,Prasymas,,,vda_prime_key,,,4,,,"Nekilnojamojo turto (nesuformuotų plotų) prašymų duomenys","Duomenų rinkinys apima informaciją apie fizinių ar juridinių asmenų prašymus, susijusius su nesuformuotais žemės plotais. Kiekvienas įrašas žymi konkretų prašymą su unikaliu identifikatoriumi, paslaugos tipu, nagrinėjimo etapu ir būsena. Taip pat pateikiama ploto geometrija – perimetras, plotas bei įvairūs erdviniai formatai (WKT, GeoJSON LKS/WGS).",
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikatorius,
 ,,,,,nt_registro_kodas,string,,,,4,open,,"Nekilnojamo turto kadastro objektas, su kuriuo susijęs prašymas",
