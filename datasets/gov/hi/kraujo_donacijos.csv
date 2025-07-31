@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/hi/kraujo_donacijos,,,,,,,,,,,,Kraujo donacijos,"""Rinkinyje pateikiami duomenys apie atliktas kraujo donacijas, kurie kaupiami Higienos instituto kraujo donorų registre. Duomenų rinkinį sudaro trys lentelės:
-   1. Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys (atnaujinama kiekvieną dieną)
-   2. Sėkmingi kraujo donacijos vizitai (atnaujinama kiekvieną dieną)
-   3. Nesėkmingi kraujo donacijos vizitai (atnaujinama kiekvienų metų kovo 1 dieną)
-   4. Mėnesinė kraujo donavimo vizitų statistika (atnaujinama kiekvieno mėnesio 15 dieną)
+   1. Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys (atnaujinama kiekvieną dieną);
+   2. Sėkmingi kraujo donacijos vizitai (atnaujinama kiekvieną dieną);
+   3. Nesėkmingi kraujo donacijos vizitai (atnaujinama kiekvienų metų kovo 1 dieną);
+   4. Mėnesinė kraujo donavimo vizitų statistika (atnaujinama kiekvieno mėnesio 15 dieną).
 
 Duomenų teikėjas – Higienos institutas.
 Duomenys kaupiami nuo 2012 m. balandžio 1 d.
