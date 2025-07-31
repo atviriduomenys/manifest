@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/hi/kraujo_donacijos,,,,,,,,,,,,Kraujo donacijos,"""Rinkinyje pateikiami duomenys apie atliktas kraujo donacijas, kurie kaupiami Higienos instituto kraujo donorų registre. Duomenų rinkinį sudaro trys lentelės:
-   1. Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys,
-   2. Sėkmingi kraujo donacijos vizitai,
-   3. Nesėkmingi kraujo donacijos vizitai,
-   4. Mėnesinė kraujo donavimo vizitų statistika.
+   1. Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys (atnaujinama kiekvieną dieną)
+   2. Sėkmingi kraujo donacijos vizitai (atnaujinama kiekvieną dieną)
+   3. Nesėkmingi kraujo donacijos vizitai (atnaujinama kiekvienų metų kovo 1 dieną)
+   4. Mėnesinė kraujo donavimo vizitų statistika (atnaujinama kiekvieno mėnesio 15 dieną)
 
 Duomenų teikėjas – Higienos institutas.
 Duomenys kaupiami nuo 2012 m. balandžio 1 d.
@@ -12,72 +12,72 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,KraujoDonoras,,,,donoro_id,,,4,,,"""Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys""","""Lentelėje pateikiami duomenys apie asmenis, kurie pageidauja duoti kraujo arba kraujo komponentų, surinkti Higienos instituto Kraujo donorų registro informacinėje sistemoje. Viena eilutė yra vienas asmuo su jam priskirtu donoro identifikaciniu numeriu (pasitaiko atvejų, kai žmogus turi kelis donoro identifikacinius numerius, todėl vieno donoro identifikacinio numerio negalime prilyginti vienam unikaliam asmeniui). Eilutėje nurodomas šifruotas donoro identifikacinis numeris, asmens kodas, asmens kodo validacijos įvertis, donuojančio asmens gimimo metai, lytis, pirmoji valstybė ir savivaldybė (jeigu Lietuvoje), kurioje asmuo registravo savo gyvenamąją vietą, kraujo grupė, eritrocitų antigenai Rh ir Kell bei asmens mirties metai. Paskutiniuose dviejuose stulpeliai nurodoma, kada įrašas buvo sukurtas ir atnaujintas duomenų bazėje. Asmenys, kurių asmens kodas nenurodytas, yra užsienio šalių gyventojai."""
-,,,,donoro_id,string,,,,,4,open,,Kraujo donoro identifikacinis numeris,
-,,,,asmens_id,string,,,,,4,open,,Asmens identifikacininis numeris,
-,,,,ak_validacija,string,,,,,4,open,,Asmens kodo validacija,Valstybės duomenų agentūros sugeneruotas stulpelis validuojantis asmens kodą
-,,,,gim_metai,date,Y,,,,4,open,,Gimimo metai,"""Asmens gimimo metai. Kuomet asmens kodas yra validus metai yra išraukiami iš asmens kodo, kitu atveju paliekami sistemoje įvesti gimimo metai"""
-,,,,lytis,string,,,,,4,open,,Lytis,"""Asmens lytis. Kuomet asmens kodas yra validus lytis yra ištraukiama iš asmens kodo, kitu atveju paliekama sistemoje įvesta lytis"""
-,,,,,enum,,,,"""M""",,,,Moteris,
+,,,,KraujoDonoras,,,donoro_id,,,4,,,"""Asmenų, pageidaujančių duoti kraujo arba kraujo komponentus, duomenys""","""Lentelėje pateikiami duomenys apie asmenis, kurie pageidauja duoti kraujo arba kraujo komponentų, surinkti Higienos instituto Kraujo donorų registro informacinėje sistemoje. Viena eilutė yra vienas asmuo su jam priskirtu donoro identifikaciniu numeriu (pasitaiko atvejų, kai žmogus turi kelis donoro identifikacinius numerius, todėl vieno donoro identifikacinio numerio negalime prilyginti vienam unikaliam asmeniui). Eilutėje nurodomas šifruotas donoro identifikacinis numeris, asmens kodas, asmens kodo validacijos įvertis, donuojančio asmens gimimo metai, lytis, pirmoji valstybė ir savivaldybė (jeigu Lietuvoje), kurioje asmuo registravo savo gyvenamąją vietą, kraujo grupė, eritrocitų antigenai Rh ir Kell bei asmens mirties metai. Paskutiniuose dviejuose stulpeliai nurodoma, kada įrašas buvo sukurtas ir atnaujintas duomenų bazėje. Asmenys, kurių asmens kodas nenurodytas, yra užsienio šalių gyventojai."""
+,,,,,donoro_id,string,,,,4,open,,Kraujo donoro identifikacinis numeris,
+,,,,,asmens_id,string,,,,4,open,,Asmens identifikacininis numeris,
+,,,,,ak_validacija,string,,,,4,open,,Asmens kodo validacija,Valstybės duomenų agentūros sugeneruotas stulpelis validuojantis asmens kodą
+,,,,,gim_metai,date,Y,,,4,open,,Gimimo metai,"""Asmens gimimo metai. Kuomet asmens kodas yra validus metai yra išraukiami iš asmens kodo, kitu atveju paliekami sistemoje įvesti gimimo metai"""
+,,,,,lytis,string,,,,4,open,,Lytis,"""Asmens lytis. Kuomet asmens kodas yra validus lytis yra ištraukiama iš asmens kodo, kitu atveju paliekama sistemoje įvesta lytis"""
+,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
-,,,,pirm_gyv_vlst,string,,,,,4,open,,Pirma gyvenamoji valstybė,"""Valstybė, kurioje asmuo oficialiai įregistravo savo gyvenamąją vietą pirmąjį kartą"""
-,,,,pirm_gyv_sav,string,,,,,4,open,,Pirma gyvenamoji savivaldybė,"""Savivaldybė, kurioje asmuo oficialiai įregistravo savo gyvenamąją vietą pirmąjį kartą"""
-,,,,kraujo_grupe,string,,,,,4,open,,Asmens kraujo grupė,
-,,,,rezus_faktorius,string,,,,,4,open,,Rezus faktorius,"""Požymis, nurodantis ar rezus (Rh) antigenas aptinkamas ant raudonųjų kraujo kūnelių (eritrocitų) paviršiaus"""
-,,,,,enum,,,,"""Rh D teigiamas""",,,,Rh D teigiamas,
+,,,,,pirm_gyv_vlst,string,,,,4,open,,Pirma gyvenamoji valstybė,"""Valstybė, kurioje asmuo oficialiai įregistravo savo gyvenamąją vietą pirmąjį kartą"""
+,,,,,pirm_gyv_sav,string,,,,4,open,,Pirma gyvenamoji savivaldybė,"""Savivaldybė, kurioje asmuo oficialiai įregistravo savo gyvenamąją vietą pirmąjį kartą"""
+,,,,,kraujo_grupe,string,,,,4,open,,Asmens kraujo grupė,
+,,,,,rezus_faktorius,string,,,,4,open,,Rezus faktorius,"""Požymis, nurodantis ar rezus (Rh) antigenas aptinkamas ant raudonųjų kraujo kūnelių (eritrocitų) paviršiaus"""
+,,,,,,enum,,,"""Rh D teigiamas""",,,,Rh D teigiamas,
 ,,,,,,,,,"""Rh D neigiamas""",,,,Rh D neigiamas,
 ,,,,,,,,,"""Nėra duomenų""",,,,Nėra duomenų,
-,,,,kell_antigen,string,,,,,4,open,,Kell antigenas,"""Požymis, nurodantis ar kell antigenas yra aptinkamas ant raudonųjų kraujo kūnelių (eritrocitų) paviršiaus"""
-,,,,,enum,,,,"""Kell-""",,,,Kell-,
+,,,,,kell_antigen,string,,,,4,open,,Kell antigenas,"""Požymis, nurodantis ar kell antigenas yra aptinkamas ant raudonųjų kraujo kūnelių (eritrocitų) paviršiaus"""
+,,,,,,enum,,,"""Kell-""",,,,Kell-,
 ,,,,,,,,,"""Kell+""",,,,Kell+,
 ,,,,,,,,,"""Nėra duomenų""",,,,Nėra duomenų,
-,,,,mirties_data,date,Y,,,,4,open,,Asmens mirties data,
-,,,,irasas_sukurtas,datetime,S,,,,4,open,,Įrašo sukūrimo data ir laikas duomenų bazėje,
-,,,,irasas_atnaujintas,datetime,S,,,,4,open,,Įrašo atnaujinimo data ir laikas duomenų bazėje,
+,,,,,mirties_data,date,Y,,,4,open,,Asmens mirties data,
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašo sukūrimo data ir laikas duomenų bazėje,
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašo atnaujinimo data ir laikas duomenų bazėje,
 ,,,,,,,,,,,,,,
-,,,SekmingaDonoryste,,,,vizito_id,,,,,,Sėkmingi kraujo donacijos vizitai,"""Lentelėje pateikiami sėkmingų kraujo donacijos vizitų duomenys iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vienas unikalus ir sėkmingas kraujo donacijos vizitas. Kraujo donacijos vizitas laikomas sėkmingu, kai kraują donuojantis asmuo sėkmingai praeina medicininę atranką, o jo donuotame kraujyje nėra aptinkama patogenų (t. y. testai, kurie atliekami po kraujo donacijos ir identifikuojantys infekcinių ligų žymenis, yra neigiami). Eilutėje nurodomas unikalaus vizito identifikacinis numeris, donoro identifikacinis numeris, vizito data, donacijos tipas ir hemoglobino kiekis donoro kraujyje vizito metu, požymiai, nurodantys ar kraujas yra duodamas pirmą kartą, ar kraujas sudarytas iš kelių komponentų, ar donorystė yra atlygintina, ar donacija atliekama mobiliajame punkte, taip pat nurodomas vizitą administruojantis kraujo donorystės centras ir savivaldybė, kurioje atliekama donacija. Paskutiniuose dviejuose stulpeliuose nurodomi įrašo sukūrimo ir atnaujinimo data bei laikas duomenų bazėje."""
-,,,,vizito_id,string,,,,,4,open,,Vizito ID,Apsilankymo duoti kraujo identifikacinis numeris
-,,,,donoro_id,string,,,,,4,open,,Donoro ID,Donoro (kraujo davėjo) identifikacinis numeris
-,,,,vizito_data,date,D,,,,4,open,,Vizito data,Apsilankymo duoti kraujo data
-,,,,donancijos_tipas,string,,,,,4,open,,Kraujo davimo tipas,
-,,,,pirmas_kartas,boolean,,,,,4,open,,Pirmas kartas,"""Požymis, nurodantis, ar krauajs yra duodamas pirmą kartą"""
-,,,,is_keliu_komp,boolean,,,,,4,open,,Iš kelių komponentų,"""Požymis, nurodantis, ar kraujo donorą sudaro keletas kraujo komponentų"""
-,,,,donorystes_centras,string,,,,,4,open,,Donorystės centras,Kraujo donorystės centras administruojantis vizitą
-,,,,savivaldybe,string,,,,,4,open,,Savivaldybė,"""Savivaldybė, kurioje buvo duotas kraujas"""
-,,,,mobilusis_punktas,boolean,,,,,4,open,,Mobilusis punktas,"""Požymis, nurodantis ar kraujo buvo duota mobiliajame punkte"""
-,,,,atlyginta_donoryste,boolean,,,,,4,open,,Atlyginta donorystė,"""Požymis, nurodantis ar kraujas buvo duodamas už piniginį atlygį"""
-,,,,hemoglobino_kiekis,integer,,g/l,,,4,open,,Hemoglobino kiekis,"""Asmens hemoglobino kiekis kurajo donorystės vizito metu, matuojama g/L"""
-,,,,irasas_sukurtas,datetime,S,,,,4,open,,Įrašo sukūrimo data ir laikas duomenų bazėje,
-,,,,irasas_atnaujintas,datetime,S,,,,4,open,,Įrašo atnaujinimo data ir laikas duomenų bazėje,
+,,,,SekmingaDonoryste,,,vizito_id,,,,,,Sėkmingi kraujo donacijos vizitai,"""Lentelėje pateikiami sėkmingų kraujo donacijos vizitų duomenys iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vienas unikalus ir sėkmingas kraujo donacijos vizitas. Kraujo donacijos vizitas laikomas sėkmingu, kai kraują donuojantis asmuo sėkmingai praeina medicininę atranką, o jo donuotame kraujyje nėra aptinkama patogenų (t. y. testai, kurie atliekami po kraujo donacijos ir identifikuojantys infekcinių ligų žymenis, yra neigiami). Eilutėje nurodomas unikalaus vizito identifikacinis numeris, donoro identifikacinis numeris, vizito data, donacijos tipas ir hemoglobino kiekis donoro kraujyje vizito metu, požymiai, nurodantys ar kraujas yra duodamas pirmą kartą, ar kraujas sudarytas iš kelių komponentų, ar donorystė yra atlygintina, ar donacija atliekama mobiliajame punkte, taip pat nurodomas vizitą administruojantis kraujo donorystės centras ir savivaldybė, kurioje atliekama donacija. Paskutiniuose dviejuose stulpeliuose nurodomi įrašo sukūrimo ir atnaujinimo data bei laikas duomenų bazėje."""
+,,,,,vizito_id,string,,,,4,open,,Vizito ID,Apsilankymo duoti kraujo identifikacinis numeris
+,,,,,donoro_id,string,,,,4,open,,Donoro ID,Donoro (kraujo davėjo) identifikacinis numeris
+,,,,,vizito_data,date,D,,,4,open,,Vizito data,Apsilankymo duoti kraujo data
+,,,,,donancijos_tipas,string,,,,4,open,,Kraujo davimo tipas,
+,,,,,pirmas_kartas,boolean,,,,4,open,,Pirmas kartas,"""Požymis, nurodantis, ar krauajs yra duodamas pirmą kartą"""
+,,,,,is_keliu_komp,boolean,,,,4,open,,Iš kelių komponentų,"""Požymis, nurodantis, ar kraujo donorą sudaro keletas kraujo komponentų"""
+,,,,,donorystes_centras,string,,,,4,open,,Donorystės centras,Kraujo donorystės centras administruojantis vizitą
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,"""Savivaldybė, kurioje buvo duotas kraujas"""
+,,,,,mobilusis_punktas,boolean,,,,4,open,,Mobilusis punktas,"""Požymis, nurodantis ar kraujo buvo duota mobiliajame punkte"""
+,,,,,atlyginta_donoryste,boolean,,,,4,open,,Atlyginta donorystė,"""Požymis, nurodantis ar kraujas buvo duodamas už piniginį atlygį"""
+,,,,,hemoglobino_kiekis,integer,g/l,,,4,open,,Hemoglobino kiekis,"""Asmens hemoglobino kiekis kurajo donorystės vizito metu, matuojama g/L"""
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašo sukūrimo data ir laikas duomenų bazėje,
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašo atnaujinimo data ir laikas duomenų bazėje,
 ,,,,,,,,,,,,,,
-,,,NesekmingaDonoryste,,,,vizito_id,,,,,,Nesėkmingi kraujo donacijos vizitai,"""Nesėkmingų kraujo donacijos vizitų duomenys iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vienas unikalus ir nesėkmingas kraujo donavimo vizitas. Vizitas laikomas nesėkmingu, kai kraują donuojančiam asmeniui nepavyksta praeiti medicininės atrankos (pvz., dėl mažo hemoglobino kiekio kraujyje), procedūra nutraukiama arba kai donuotame kraujyje aptinkama patogenų. Eilutėje nurodomas vizito identifikacinis numeris, vizito metai, donuojančio asmens gimimo metai, lytis, gydytojo sprendimas leisti donuoti kraują, donacijos statusas, įvairių testų metu kraujyje nustatyti patogenai, kraujo grupė, hemoglobino kiekis vizito metu, bei nesėkmingos kraujo donacijos sustabdymo kriterijus."""
-,,,,vizito_id,string,,,,,4,open,,Vizito ID,Apsilankymo duoti kraujo identifikacinis numeris
-,,,,vizito_metai,date,Y,,,,4,open,,Vizito metai,Apsilankymo duoti kraujo metai
-,,,,gim_metai,date,Y,,,,4,open,,Gimimo metai,Donoro gimimo metai. 40 % asmenų gimimo metai yra padidinti arba sumažinti vieneriais metais
-,,,,lytis,string,,,,,4,open,,Donoro lytis,
-,,,,,enum,,,,"""M""",,,,Moteris,
+,,,,NesekmingaDonoryste,,,vizito_id,,,,,,Nesėkmingi kraujo donacijos vizitai,"""Nesėkmingų kraujo donacijos vizitų duomenys iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vienas unikalus ir nesėkmingas kraujo donavimo vizitas. Vizitas laikomas nesėkmingu, kai kraują donuojančiam asmeniui nepavyksta praeiti medicininės atrankos (pvz., dėl mažo hemoglobino kiekio kraujyje), procedūra nutraukiama arba kai donuotame kraujyje aptinkama patogenų. Eilutėje nurodomas vizito identifikacinis numeris, vizito metai, donuojančio asmens gimimo metai, lytis, gydytojo sprendimas leisti donuoti kraują, donacijos statusas, įvairių testų metu kraujyje nustatyti patogenai, kraujo grupė, hemoglobino kiekis vizito metu, bei nesėkmingos kraujo donacijos sustabdymo kriterijus."""
+,,,,,vizito_id,string,,,,4,open,,Vizito ID,Apsilankymo duoti kraujo identifikacinis numeris
+,,,,,vizito_metai,date,Y,,,4,open,,Vizito metai,Apsilankymo duoti kraujo metai
+,,,,,gim_metai,date,Y,,,4,open,,Gimimo metai,Donoro gimimo metai. 40 % asmenų gimimo metai yra padidinti arba sumažinti vieneriais metais
+,,,,,lytis,string,,,,4,open,,Donoro lytis,
+,,,,,,enum,,,"""M""",,,,Moteris,
 ,,,,,,,,,"""V""",,,,Vyras,
-,,,,sprendimo_tipas,string,,,,,4,open,,Sprendimo tipas,Gydytojo sprendimas leisti donuoti kraują
-,,,,,enum,,,,"""Laikinai atidėta""",,,,Laikinai atidėta,
+,,,,,sprendimo_tipas,string,,,,4,open,,Sprendimo tipas,Gydytojo sprendimas leisti donuoti kraują
+,,,,,,enum,,,"""Laikinai atidėta""",,,,Laikinai atidėta,
 ,,,,,,,,,"""Leista""",,,,Leista,
 ,,,,,,,,,"""Uždrausta visam laikui""",,,,Uždrausta visam laikui,
-,,,,donacijos_statusas,string,,,,,4,open,,Kraujo donavimo statusas,
-,,,,,enum,,,,"""Atranka nesėkminga""",,,,Atranka nesėkminga,"""Apsilankymo būsena priskiriama, kai KDĮ perduoda gydytojo sprendimą, priimtą atrankos metu, uždrausti arba laikinai sustabdyti donaciją/donorystę"""
+,,,,,donacijos_statusas,string,,,,4,open,,Kraujo donavimo statusas,
+,,,,,,enum,,,"""Atranka nesėkminga""",,,,Atranka nesėkminga,"""Apsilankymo būsena priskiriama, kai KDĮ perduoda gydytojo sprendimą, priimtą atrankos metu, uždrausti arba laikinai sustabdyti donaciją/donorystę"""
 ,,,,,,,,,"""Donacija nesėkminga""",,,,Donacija nesėkminga,"""Apsilankymo būsena priskiriama, kai po atrankinių/patvirtinamųjų kraujo tyrimų rezultatų gavimo yra gydytojo sprendimas uždrausti arba laikinai sustabdyti donorystę. Esant šiai būsenai skaitoma, kad donoras davė kraujo ar jo komponentų – donacija atlikta"""
 ,,,,,,,,,"""Donacija nutraukta""",,,,Donacija nutraukta,"""Apsilankymo būsena priskiriama, kai, KDĮ perdavus donacijos numerį ir registre jai automatiškai suteikus donacijos identifikavimo kodą, donacija dėl tam tikrų priežasčių nebuvo atlikta. Esant šiai būsenai skaitoma, kad donacija neatlikta, t.y. donoras nedavė kraujo ar jo komponentų"""
-,,,,kraujo_grupe,string,,,,,4,open,,Donoro kraujo grupė,
-,,,,hemoglobino_kiekis,integer,,g/l,,,4,open,,Hemoglobino kiekis,"""Donoro hemoglobino kiekis kurajo donorystės vizito metu, matuojama g/L"""
-,,,,nustatyti_patogenai,string,,,,,4,open,,Nustatyti patogenai,Patogenai nustatyti kraujyje atrankinio arba patvirtinamojo kraujo tyrimo metu
-,,,,sustabdymo_krit,string,,,,,4,open,,Sustabdymo kriterijus,"""Kriterijus, nurodantis priežastį dėl ko kraujo donorystė buvo nesėkminga"""
+,,,,,kraujo_grupe,string,,,,4,open,,Donoro kraujo grupė,
+,,,,,hemoglobino_kiekis,integer,g/l,,,4,open,,Hemoglobino kiekis,"""Donoro hemoglobino kiekis kurajo donorystės vizito metu, matuojama g/L"""
+,,,,,nustatyti_patogenai,string,,,,4,open,,Nustatyti patogenai,Patogenai nustatyti kraujyje atrankinio arba patvirtinamojo kraujo tyrimo metu
+,,,,,sustabdymo_krit,string,,,,4,open,,Sustabdymo kriterijus,"""Kriterijus, nurodantis priežastį dėl ko kraujo donorystė buvo nesėkminga"""
 ,,,,,,,,,,,,,,
-,,,MenesioAtaskaita,,,,vda_prime_key,,,,,,Mėnesinė kraujo donavimo vizitų statistika,"""Mėnesinė kraujo donavimo vizitų statistika iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vizitų skaičius atitinkamam donacijos statusui ir datai. Eilutėje nurodomas unikalios eilutės identifikacinis numeris, datos stulpelis, sudarytas iš metų ir mėnesio, donacijos statusas, tipas ir šiems rodikliams paskaičiuotas įvykusių vizitų skaičius."""
-,,,,vda_prime_key,string,,,,,4,open,,VDA pirminis raktas,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius sudarytas iš stulpelių data, donacijos_statusas, donacijos_tipas"""
-,,,,data,date,M,,,,4,open,,Data,"""Metai ir mėnesis, kuriam skaičiuojamas vizitų skaičius"""
-,,,,donacijos_statusas,string,,,,,4,open,,Donacijos statusas,
-,,,,,enum,,,,"""Donacija sėkminga""",,,,Donacija sėkminga,"""Apsilankymo būsena priskiriama, kai po atrankinių/patvirtinamųjų kraujo tyrimų rezultatų gavimo yra gydytojo sprendimas leisti donorystę. Esant šiai būsenai skaitoma, kad donoras davė kraujo ar jo komponentų – donacija atlikta"""
+,,,,MenesioAtaskaita,,,vda_prime_key,,,,,,Mėnesinė kraujo donavimo vizitų statistika,"""Mėnesinė kraujo donavimo vizitų statistika iš Higienos instituto Kraujo donorų registro informacinės sistemos. Viena eilutė yra vizitų skaičius atitinkamam donacijos statusui ir datai. Eilutėje nurodomas unikalios eilutės identifikacinis numeris, datos stulpelis, sudarytas iš metų ir mėnesio, donacijos statusas, tipas ir šiems rodikliams paskaičiuotas įvykusių vizitų skaičius."""
+,,,,,vda_prime_key,string,,,,4,open,,VDA pirminis raktas,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius sudarytas iš stulpelių data, donacijos_statusas, donacijos_tipas"""
+,,,,,data,date,M,,,4,open,,Data,"""Metai ir mėnesis, kuriam skaičiuojamas vizitų skaičius"""
+,,,,,donacijos_statusas,string,,,,4,open,,Donacijos statusas,
+,,,,,,enum,,,"""Donacija sėkminga""",,,,Donacija sėkminga,"""Apsilankymo būsena priskiriama, kai po atrankinių/patvirtinamųjų kraujo tyrimų rezultatų gavimo yra gydytojo sprendimas leisti donorystę. Esant šiai būsenai skaitoma, kad donoras davė kraujo ar jo komponentų – donacija atlikta"""
 ,,,,,,,,,"""Donacija nutraukta""",,,,Donacija nutraukta,"""Apsilankymo būsena priskiriama, kai, KDĮ perdavus donacijos numerį ir registre jai automatiškai suteikus donacijos identifikavimo kodą, donacija dėl tam tikrų priežasčių nebuvo atlikta. Esant šiai būsenai skaitoma, kad donacija neatlikta, t.y. donoras nedavė kraujo ar jo komponentų"""
 ,,,,,,,,,"""Donacija nesėkminga""",,,,Donacija nesėkminga,"""Apsilankymo būsena priskiriama, kai po atrankinių/patvirtinamųjų kraujo tyrimų rezultatų gavimo yra gydytojo sprendimas uždrausti arba laikinai sustabdyti donorystę. Esant šiai būsenai skaitoma, kad donoras davė kraujo ar jo komponentų – donacija atlikta"""
 ,,,,,,,,,"""Atranka nesėkminga""",,,,Atranka nesėkminga,"""Apsilankymo būsena priskiriama, kai KDĮ perduoda gydytojo sprendimą, priimtą atrankos metu, uždrausti arba laikinai sustabdyti donaciją/donorystę"""
 ,,,,,,,,,"""Donacija pradėta""",,,,Donacija pradėta,"""Apsilankymo būsena priskiriama, kai KDĮ perduoda registrui savo suteiktą KDĮ donacijos numerį, o registras jai automatiškai suteikia donacijos identifikavimo kodą. Esant šiai būsenai skaitoma, kad donacija atlikta, tačiau ji gali būti nutraukta. Ši būsena rodoma tol, kol registrui neperduotas KDĮ gydytojo sprendimas dėl tolesnės donorystės, kuris priimamas po atrankinių/patvirtinamųjų kraujo tyrimų rezultatų gavimo"""
-,,,,donacijos_tipas,string,,,,,4,open,,Kraujo donavimo tipas,
-,,,,vizitu_skaicius,integer,,,,,4,open,,Vizitų skaičius,"""Įvykusių vizitų skaičius atitinkamam donacijos statusui ir nurodytam metų mėnesiui"""
+,,,,,donacijos_tipas,string,,,,4,open,,Kraujo donavimo tipas,
+,,,,,vizitu_skaicius,integer,,,,4,open,,Vizitų skaičius,"""Įvykusių vizitų skaičius atitinkamam donacijos statusui ir nurodytam metų mėnesiui"""
