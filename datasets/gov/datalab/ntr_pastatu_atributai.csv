@@ -46,6 +46,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,combined_silumines_sanaudos_vienam_kv_m_round,double,,,,4,open,,Šilumos sąnaudos,
 ,,,,,co2_round,double,,,,4,open,,Apvalintos CO₂ emisijos,
 ,,,,,combined_co2_vienam_kv_m_round,double,,,,4,open,,Kombinuotos apvalintos CO₂ emisijos,
-,,,,,atnaujinimo_laikas,datetime,S,,,open,,Duomenų atnaujinimo data,
+,,,,,atnaujinimo_laikas,datetime,S,,,4,open,,Duomenų atnaujinimo data,
 ,,,,,salis,string,,,,4,open,,Šalis,
 ,,,,,geo_new,string,,,,4,open,,Geografinė koordinatė,
