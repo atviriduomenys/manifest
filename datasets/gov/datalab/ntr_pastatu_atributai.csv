@@ -142,4 +142,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,atnaujinimo_laikas,datetime,S,,,4,open,,Duomenų atnaujinimo data,
 ,,,,,salis,string,,,,4,open,,Šalis,
 ,,,,,geo_new,string,,,,4,open,,Geografinė koordinatė,
-
