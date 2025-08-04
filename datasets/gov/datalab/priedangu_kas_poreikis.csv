@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,PriedanguKasPoreikis,,,obj_id,,,4,,,Priedangų KAS poreikis,
+,,,,PriedanguKasPoreikis,,,administracine_teritorija_id,,,4,,,Priedangų KAS poreikis,
 ,,,,,administracine_teritorija_id,string,,,,4,open,,Administracinės teritorijos unikalus identifikatorius,
 ,,,,,administracine_teritorija,string,,,,4,open,,Administracinės teritorijos pavadinimas,
 ,,,,,kaimas_population,integer,,,,4,open,,Gyventojų skaičius kaimo vietovėse,
