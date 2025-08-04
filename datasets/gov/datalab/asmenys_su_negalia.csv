@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,AsmuoSuNegalia,,,obj_id,,,4,,,Pastatų Asmuo su negalia,
+,,,,AsmuoSuNegalia,,,obj_id,,,4,,,Asmuo su negalia,
 ,,,,,obj_id,string,,,,4,open,,Objekto ID,
 ,,,,,sav_pav,string,,,,4,open,,Savivaldybė,
 ,,,,,sen_pav,string,,,,4,open,,Seniūnija,
