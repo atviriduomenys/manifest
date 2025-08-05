@@ -23,3 +23,4 @@
 ,,,,,sav_pav_sur,string,,,,4,open,,"Savivaldybės pavadinimas, į kurią patenka gardelės centras pagal surašymo duomenis",
 ,,,,,sav_kodas_gr,string,,,,4,open,,"Savivaldybės kodas, į kurią patenka gardelės centras pagal deklaruotą adresą",
 ,,,,,sav_pav_gr,string,,,,4,open,,"Savivaldybės pavadinimas, į kurią patenka gardelės centras pagal deklaruotą adresą",
+
