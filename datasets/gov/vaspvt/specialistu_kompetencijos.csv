@@ -1,0 +1,96 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vaspvt/specialistu_kompetencijos,,,,,,,,,,,,Sveikatos priežiūros specialistų kompetencijų duomenys,"""Rinkinyje pateikiami Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos (VASPVT) sveikatos priežiūros specialistų kompetencijų platformos duomenys apie sveikatos priežiūros specialistų įgytas kompetencijas. Duomenys kaupiami nuo 2025 m. sausio mėn.
+Duomenų rinkinį sudaro 5 lentelės:
+1. Sveikatos priežiūros specialistai;
+2. Sveikatos priežiūros specialistų licencijos;
+3. Sveikatos priežiūros specialistų diplomai;
+4. Sveikatos priežiūros specialistų sertifikatai pagal programą; 
+5. Sveikatos priežiūros specialistų papildomai įgyti sertifikatai.
+
+Duomenų teikėjas – Valstybinės akreditavimo sveikatos priežiūros veiklai tarnyba.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,SveikatosSpecialistas,,,specialist_id,,,4,,,Sveikatos priežiūros specialistai,"""Asmens duomenys iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos sveikatos priežiūros specialistų kompetencijų platformos. Viena lentelės eilutė atitinka vieną unikalų sveikatos priežiūros specialistą. Eilutėje nurodoma informacija apie specialisto lytį, gimimo ir mirties metus."""
+,,,,,specialist_id,string,,,,4,open,,Specialisto ID,Sveikatos priežiūros specialisto vidinis identifikacinis numeris
+,,,,,lytis_ak,string,,,,4,open,,Lytis,"""Valstybės duomenų agentūros sugeneruotas specialisto lyties stulpelis, kuris gautas iš asmens kodo"""
+,,,,,,enum,,,"""M""",,,,Moteris,
+,,,,,,,,,"""V""",,,,Vyras,
+,,,,,gimimo_metai_ak,date,Y,,,4,open,,Gimimo metai,"""Valstybės duomenų agentūros sugeneruotas specialisto gimimo metų stulpelis, kuris gautas iš asmens kodo"""
+,,,,,mirties_metai,date,Y,,,4,open,,Mirties metai,Sveikatos priežiūros specialisto mirties metai
+,,,,,,,,,,,,,,
+,,,,Licencija,,,vda_prime_key,,,4,,,Sveikatos priežiūros specialistų licencijos,"""Sveikatos priežiūros specialistų licencijų duomenys iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos sveikatos priežiūros specialistų kompetencijų platformos. Viena lentelės eilutė atitinka vieną sveikatos priežiūros specialisto licenciją, galiojančią tam tikru laikotarpiu. Eilutėje nurodomas specialisto identifikacinis numeris, licencijos pavadinimas ir šifruotas numeris, išdavimo metai, licencijos būsena, licencijos sustabdymo ir panaikinimo metai, taip pat keli techniniai stulpeliai, nurodantys, kada įrašas duomenų bezėje buvo sukurtas ir atnaujintas."""
+,,,,,vda_prime_key,string,,,,4,open,,VDA unikalus raktas,"""Unikalios eilutės identifikatorius sudarytas iš stulpelių - specialisto_id, numeris, busena ir irasas_sukurtas"""
+,,,,,specialisto_id,string,,,,4,open,,Specialisto ID,"""Specialisto, kuriam priklauso licencija, identifikacinis numeris"""
+,,,,,licencija,string,,,,4,open,,Licencijos pavadinimas,
+,,,,,numeris,string,,,,4,open,,Licencijos numeris,
+,,,,,isdavimo_metai,date,Y,,,4,open,,Licencijos išdavimo metai,
+,,,,,busena,string,,,,4,open,,Licencijos galiojimo būsena,
+,,,,,,enum,,,"""VALID""",,,,Galiojanti licencija,
+,,,,,,,,,"""CANCELED""",,,,Panaikinta licencija,
+,,,,,,,,,"""SUSPENDED""",,,,Sustabdyta licencija,
+,,,,,sustabdymo_metai,date,Y,,,4,open,,Licencijos sustabdymo metai,
+,,,,,panaikinimo_metai,date,Y,,,4,open,,Licencijos panaikinimo metai,
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašas sukurtas,"""Įrašo, duomenų bazėje, sukūrimo data ir laikas"""
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašas atnaujintas,"""Įrašo, duomenų bazėje, atnaujinimo data ir laikas"""
+,,,,,,,,,,,,,,
+,,,,Diplomas,,,diplomo_id,,,4,,,Sveikatos priežiūros specialistų diplomai,"""Sveikatos priežiūros specialistų diplomų duomenys iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos sveikatos priežiūros specialistų kompetencijų platformos. Viena lentelės eilutė atitinka vieną sveikatos priežiūros specialisto įgytą mokslinio išsilavinimo pažymėjimą (diplomą). Eilutėje nurodomas sveikatos priežiūros specialisto identifikacinis numeris, diplomo tipas, švietimo programos pavadinimas ir valstybinis mokymosi programos kodas, kvalifikacijos pavadinimas ir kodas pagal Nacionalinę švietimo agentūrą, diplomą išdavusios institucijos pavadinimas, JAR kodas, kodo validacijos įvertis ir diplomo išdavimo metai. Paskutiniai du stulpeliai nurodo įrašo sukūrimo ir atnaujinimo datą ir laiką duomenų bazėje."""
+,,,,,diplomo_id,string,,,,4,open,,Diplomo ID,Unikalios eilutės identifikatorius nurodantis unikalų diplomą
+,,,,,specialisto_id,string,,,,4,open,,Specialisto ID,"""Specialisto, kuriam priklauso išsilavinimo dokumentas, identifikacinis numeris"""
+,,,,,diplomo_tipas,string,,,,4,open,,Išsilavinimo dokumento tipas,
+,,,,,svietimo_prog,string,,,,4,open,,Švietimo programos pavadinimas,
+,,,,,svietimo_prog_kodas,string,,,,4,open,,Valstybinis mokymosi programos kodas,
+,,,,,kval,string,,,,4,open,,Kvalifikacija,Įgytos kvalifikacijos pavadinimas pagal Nacionalinę švietimo agentūrą
+,,,,,kval_kodas,string,,,,4,open,,Kvalifikacijos kodas,Valstybinis įgytos kvalifikacijos kodas pagal Nacionalinę švietimo agentūrą
+,,,,,institucija,string,,,,4,open,,Institucija,Išsilavinimo dokumentą išdavusios institucijos pavadinimas
+,,,,,institucijos_kodas,string,,,,4,open,,Institucijos kodas,Išsilavinimo dokumentą išdavusios institucijos JAR kodas
+,,,,,jar_validacija,string,,,,4,open,,JAR kodo validacija,"""Valstybės duomenų agentūros sugeneruotas stulpelis validuojantis institucijos JAR kodus"""
+,,,,,isdavimo_metai,date,Y,,,4,open,,Išsilavinimo dokumento išdavimo metai,
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašas sukurtas,"""Įrašo, duomenų bazėje, sukūrimo data ir laikas"""
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašas atnaujintas,"""Įrašo, duomenų bazėje, atnaujinimo data ir laikas"""
+,,,,,,,,,,,,,,
+,,,,PrograminisSertifikatas,,,sertifikato_id,,,4,,,Sveikatos priežiūros specialistų sertifikatai pagal programą,"""Sveikatos priežiūros specialistų įgyti sertifikatai pagal programą duomenys iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos, sveikatos priežiūros specialistų kompetencijų platformos. Tai yra pažymėjimai/sertifikatai, išduoti pagal programas, kurios buvo užregistruotos ir patvirtintos Kompetencijų platformoje. Tuomet pagal patvirtintas programas organizatoriai kuria renginius, kuriems pasibaigus organizatorius užregistruoja renginio dalyvius, ir po šio fakto, dalyviai gauna elektroninius pažymėjimus, kurie yra paremti programos duomenimis. Viena lentelės eilutė atitinka vieną įgytą sveikatos priežiūros specialisto sertifikatą. Eilutėje nurodomas sveikatos priežiūros specialisto identifikacinis numeris, sertifikato įgijimo data, sertifikato/renginio pavadinimas, aprašymas ir tikslas, sertifikato forma ir žinių vertinimo tipas, mokymų tipas, mokymų organizatoriaus pavadinimas, JAR kodas, JAR kodo validavimo įvertis, adresas ir geolokacija, mokymų pradžios ir pabaigos datos, trukmė akademinėmis valandomis, sertifikato aktyvumo statusas. Paskutiniai du stulpeliai nurodo, kada įrašas buvo sukurtas ir atnaujintas duomenų bazėje."""
+,,,,,sertifikato_id,string,,,,4,open,,Sertifikato ID,"""Unikalios eilutės identifikatorius, nurodantis unikalų sveikatos priežiūros specialisto įgytą sertifikatą"""
+,,,,,specialisto_id,string,,,,4,open,,Specialisto ID,"""Specialisto, kuriam priklauso sertifikatas, identifikacinis numeris"""
+,,,,,sertifikavimo_data,date,D,,,4,open,,Sertifikato įgijimo data,"""Data, kada specialistas sertifikatą įgijo"""
+,,,,,pavadinimas,string,,,,4,open,,Sertifikato/Renginio pavadinimas,
+,,,,,aprasymas,string,,,,4,open,,Sertifikato/Renginio aprašymas,
+,,,,,tikslas,string,,,,4,open,,Sertifikato/Renginio tikslas,
+,,,,,forma,string,,,,4,open,,Sertifikato programos forma,
+,,,,,vertinimas,string,,,,4,open,,Sertifikato įgijimo vertinimo tipas,
+,,,,,mokymu_tipas,string,,,,4,open,,Mokymų tipas,
+,,,,,organizatorius,string,,,,4,open,,Organizatorius,"""Organizacijos, rengiančios mokymus, pavadinimas"""
+,,,,,org_ident_kodas,string,,,,4,open,,Organizatoriaus kodas,"""Organizacijos, rengiančios mokymus, JAR kodas"""
+,,,,,jar_validacija,string,,,,4,open,,JAR kodo validacija,"""Valstybės duomenų agentūros sugeneruotas stulpelis validuojantis institucijos JAR kodus"""
+,,,,,adresas,string,,,,4,open,,Organizacijos adresas,"""Organizacijos, rengiančios mokymus, adresas"""
+,,,,,geometrija,geometry(4326),,,,4,open,,Organizacijos geolokacija,"""Organizacijos, rengiančios mokymus, geolokacija. WGS-84 koordinatės taškas"""
+,,,,,pradzios_data,date,D,,,4,open,,Mokymų pradžios data,
+,,,,,pabaigos_data,date,D,,,4,open,,Mokymų pabaigos data,
+,,,,,trukme,number,,,,4,open,,Mokymų trukmė akademinėmis valandomis,
+,,,,,sert_statusas,string,,,,4,open,,Sertifikato statusas,
+,,,,,,enum,,,"""ACTIVE""",,,,Patvirtintas sertifikatas,
+,,,,,,,,,"""CANCELED""",,,,Atšauktas sertifikatas,
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašas sukurtas,"""Įrašo, duomenų bazėje, sukūrimo data ir laikas"""
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašas atnaujintas,"""Įrašo, duomenų bazėje, atnaujinimo data ir laikas"""
+,,,,,,,,,,,,,,
+,,,,KitasSertifikatas,,,sertifikato_id,,,4,,,Sveikatos priežiūros specialistų papildomai įgyti sertifikatai,"""Sveikatos priežiūros specialistų papildomai įgytų sertifikatų duomenys iš Valstybinės akreditavimo sveikatos priežiūros veiklai tarnybos sveikatos priežiūros specialistų kompetencijų platformos. Tai yra tobulinimosi pažymėjimai, kuriuos į Kompetencijų platformą rankiniu būdu įkelia patys specialistai. Šie pažymėjimai reikalauja patvirtinimo proceso, kad būtų galima užtikrinti, jog pateikti duomenys yra teisingi ir pažymėjimas gali būti naudojamas tobulinimosi valandų gavimui. Viena lentelės eilutė atitinka vieną įgytą sveikatos priežiūros specialisto sertifikatą. Eilutėje nurodomas sveikatos priežiūros specialisto identifikacinis numeris, sertifikato įgyjimo data, sertifikato/renginio pavadinimas, forma, tipas, mokymų organizatoriaus pavadinimas, šalis, mokymų pradžios ir pabaigos data, trukmė akademinėmis valandomis ir esamas sertifikato statusas. Paskutiniai du stulpeliai nurodo įrašo sukūrimo ir atnaujinimo datą duomenų bazėje. """
+,,,,,sertifikato_id,string,,,,4,open,,Sertifikato ID,"""Unikalios eilutės identifikatorius, nurodantis unikalų sveikatos priežiūros specialisto įgytą sertifikatą"""
+,,,,,specialisto_id,string,,,,4,open,,Specialisto ID,"""Specialisto, kuriam priklauso sertifikatas, identifikacinis numeris"""
+,,,,,sertifikavimo_data,date,D,,,4,open,,Sertifikato gavimo data,"""Data, kada specialistas sertifikatą įgijo"""
+,,,,,pavadinimas,string,,,,4,open,,Sertifikato pavadinimas (renginio tema),
+,,,,,forma,string,,,,4,open,,Sertifikato/Renginio programos forma,
+,,,,,tipas,string,,,,4,open,,Sertifikato tipas,
+,,,,,organizatorius,string,,,,4,open,,Organizatorius,"""Organizacijos, rengiančios mokymus, pavadinimas"""
+,,,,,salis,string,,,,4,open,,Šalis/Valstybė,"""Šalis/Valstybė, kurioje vyko mokymai"""
+,,,,,pradzios_data,date,D,,,4,open,,Mokymų pradžios data,
+,,,,,pabaigos_data,date,D,,,4,open,,Mokymų pabaigos data,
+,,,,,trukme,number,,,,4,open,,Mokymų trukmė akademinėmis valandomis,
+,,,,,sert_statusas,string,,,,4,open,,Sertifikato statusas,
+,,,,,,enum,,,"""NOT_EVALUATED""",,,,Neįvertintas sertifikatas,
+,,,,,,,,,"""ACTIVE""",,,,Patvirtintas sertifikatas,
+,,,,,,,,,"""REJECTED""",,,,Atmestas sertifikatas,
+,,,,,,,,,"""NOT_RELEVANT_FOR_LICENSING""",,,,Neaktualus sertifikatas,
+,,,,,irasas_sukurtas,datetime,S,,,4,open,,Įrašas sukurtas,"""Įrašo, duomenų bazėje, sukūrimo data ir laikas"""
+,,,,,irasas_atnaujintas,datetime,S,,,4,open,,Įrašas atnaujintas,"""Įrašo, duomenų bazėje, atnaujinimo data ir laikas"""
