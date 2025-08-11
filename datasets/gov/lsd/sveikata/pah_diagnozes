@@ -1,0 +1,49 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sveikata/pah_diagnozes,,,,,,,,,,,,"""Pacientų, sergančių plaučių arterine hipertenzija, gydymo duomenys""","""Rinkinyje pateikiami asmenų, kuriems įrašyta plaučių arterinės hipertenzijos (PAH) diagnozė (I27.0, I27.2, I27.8 TLK-10-AM kodai), duomenys. 
+
+Rinkinį sudaro trys lentelės:  
+
+1) Asmenys, kuriems buvo įrašyta PAH diagnozė (I27.0, I27.2, I27.8 TLK-10-AM kodai) VLK SVEIDRA ambulatorinio gydymo statistinėje kortelėje (F025/a) kaip pagrindinė diagnozė, arba stacionare gydomo asmens statistinė kortelėje (F066/a) kaip pagrindinė, lydinti arba skyriaus diagnozė. Pateikiama jų gimimo data (metų tikslumu), kiekvieno PAH diagnozės kodo pirmo įrašymo data, mirties data (mėnesio tikslumu) bei pagrindinė mirties priežastis,  
+
+2) PAH specifiniam gydymui skiriamų vaistų (ambrisentanas, bozentanas, iloprostas, sildenafilis, treprostinilis, macitentanas, seleksipagas) pirmo ir paskutinio galiojančio recepto išrašymo datos (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas,  
+
+3) Visi galiojantys receptai, išrašyti nurodant PAH diagnozę (I27.0, I27.2, I27.8 TLK-10-AM) ir nesaistomi konfidencialumo apribojimų. Pateikiama recepto išrašymo data (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas, požymis, ar vaistas išduotas, savivaldybė, kurioje veikiančioje įstaigoje išduotas vaistas (nustatoma pagal įstaigos filialą, kuriame dirba išdavęs specialistas tuo metu). 
+
+ 
+
+Duomenų šaltiniai: SVEIDRA – Privalomojo sveikatos draudimo informacinė sistema, ambulatorinių paslaugų apskaitos posistemė (APAP), stacionarinių paslaugų apskaitos posistemė (SPAP), ESPBI IS – Elektroninės sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinė sistema, E. recepto posistemė, Mirties atvejų ir jų priežasčių valstybės registras."""
+,,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,PAHDiagnoze,,,vda_prime_key,,,,,,"""Asmenys, kuriems diagnozuota PAH""","""Asmenys, kuriems buvo įrašyta PAH diagnozė (I27.0, I27.2, I27.8 TLK-10-AM kodai) VLK SVEIDRA ambulatorinio gydymo statistinėje kortelėje (F025/a) kaip pagrindinė diagnozė, arba stacionare gydomo asmens statistinė kortelėje (F066/a) kaip pagrindinė, lydinti arba skyriaus diagnozė. Pateikiama jų gimimo data (metų tikslumu), kiekvieno PAH diagnozės kodo pirmo įrašymo data, mirties data (mėnesio tikslumu) bei pagrindinė mirties priežastis"""
+,,,,,vda_prime_key,string,,,,,,,Unikalios eilutės identifikatorius,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,,enum,,,"""Moteris""",,,,Moteris,
+,,,,,,,,,"""Vyras""",,,,Vyras,
+,,,,,gimimo_data,date,Y,,,4,open,,Gimimo data (metų tikslumu),
+,,,,,i27_0_pirma_diag,date,D,,,4,open,,Pirmos I27.0 diagnozės data,
+,,,,,i27_2_pirma_diag,date,D,,,4,open,,Pirmos I27.2 diagnozės data,
+,,,,,i27_8_pirma_diag,date,D,,,4,open,,Pirmos I27.8 diagnozės data,
+,,,,,mirties_data,date,M,,,4,open,,Mirties data (mėnesio tikslumu),
+,,,,,pagr_mirties_priez,string,,,,4,open,,Pagrindinė mirties priežastis,
+,,,,,,,,,,,,,,
+,,,,PAHSpecReceptas,,,vda_prime_key,,,,,,PAH specifiniam gydymui skiriamų vaistų receptai,"""PAH specifiniam gydymui skiriamų vaistų (ambrisentanas, bozentanas, iloprostas, sildenafilis, treprostinilis, macitentanas, seleksipagas) pirmo ir paskutinio galiojančio recepto išrašymo datos (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas"""
+,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,,vaisto_atc_kodas,string,,,,4,open,,Vaisto ATC kodas,
+,,,,,vaisto_atc_pav,string,,,,4,open,,Vaisto ATC pavadinimas,
+,,,,,first_prescription,date,D,,,4,open,,Pirmo recepto išrašymo data,"""Pirmo recepto išrašymo data, su triukšmu iki 5 d."""
+,,,,,last_prescription,date,D,,,4,open,,Paskutinio recepto išrašymo data,"""Paskutinio recepto išrašymo data, su triukšmu iki 5 d."""
+,,,,,,,,,,,,,,
+,,,,PAHVisiReceptai,,,vda_prime_key,,,,,,"""Visi galiojantys receptai, išrašyti nurodant PAH diagnozę""","""Visi galiojantys receptai, išrašyti nurodant PAH diagnozę (I27.0, I27.2, I27.8 TLK-10-AM) ir nesaistomi konfidencialumo apribojimų. Pateikiama recepto išrašymo data (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas, požymis, ar vaistas išduotas, savivaldybė, kurioje veikiančioje įstaigoje išduotas vaistas (nustatoma pagal įstaigos filialą, kuriame dirba išdavęs specialistas tuo metu)."""
+,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,,diagnoz_kodas,string,,,,4,open,,Diagnozės TLK-10-AM kodas,
+,,,,,diagnoz_pav,string,,,,4,open,,Diagnozės pavadinimas,
+,,,,,israsymo_data,date,D,,,4,open,,Recepto išrašymo data,"""Recepto išrašymo data, su triukšmu iki 5 d."""
+,,,,,vaisto_atc_kodas,string,,,,4,open,,Vaisto ATC kodas,
+,,,,,vaisto_bendr_pav,string,,,,4,open,,Vaisto bendrinis pavadinimas,
+,,,,,ar_isduotas,boolean,,,,4,open,,Ar vaistas išduotas,"""Požymis, ar vaistas buvo išduotas"""
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
