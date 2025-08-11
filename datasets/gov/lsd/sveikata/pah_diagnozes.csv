@@ -28,7 +28,7 @@ Duomenų šaltiniai: SVEIDRA – Privalomojo sveikatos draudimo informacinė sis
 ,,,,,mirties_data,date,M,,,4,open,,Mirties data (mėnesio tikslumu),
 ,,,,,pagr_mirties_priez,string,,,,4,open,,Pagrindinė mirties priežastis,
 ,,,,,,,,,,,,,,
-,,,,PAHSpecReceptas,,,vda_prime_key,,,4,,,PAH specifiniam gydymui skiriamų vaistų receptai,"""PAH specifiniam gydymui skiriamų vaistų (ambrisentanas, bozentanas, iloprostas, sildenafilis, treprostinilis, macitentanas, seleksipagas) pirmo ir paskutinio galiojančio recepto išrašymo datos (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas"""
+,,,,PAHSpecReceptas,,,vda_prime_key,,,4,,,PAH specifiniam gydymui skiriamų vaistų receptai,"""PAH specifiniam gydymui skiriamų vaistų (ambrisentanas, bozentanas, iloprostas, sildenafilis, treprostinilis, macitentanas, seleksipagas) pirmo ir paskutinio galiojančio recepto išrašymo datos (su triukšmu iki 5 dienų), vaisto ATC kodas, bendrinis pavadinimas."""
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
 ,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
 ,,,,,vaisto_atc_kodas,string,,,,4,open,,Vaisto ATC kodas,
