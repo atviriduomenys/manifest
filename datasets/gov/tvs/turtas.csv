@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/tvs,,,,,,,,,,,,Savivaldybių turto valdymo duomenų rinkinys,"Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą bei nuomos sutartis."
+,datasets/gov/tvs,,,,,,,,,,,,Savivaldybių turto valdymo duomenų rinkinys,Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą bei nuomos sutartis.
 ,datasets/gov/tvs/turtas,,,,,,,,,,,,Duomenys apie savyvaldybės turtą,"Rinkinys pateikia informaciją apie savivaldybių valdomą nekilnojamąjį turtą. Duomenyse nurodomas turto identifikatorius, NT registro kodas, objekto pavadinimas, statybos pabaigos metai, objekto paskirtis, plotas kvadratiniais metrais, bei geografinė vieta. Geografinė informacija pateikiama tiek geografinių koordinačių, tiek LKS-94 plokštuminių koordinačių formatais. Taip pat įtrauktas objekto adreso informacijos aktualumas bei geografinio koordinavimo patikimumo procentas. Duomenų teikėjas: Savivaldybių administracija. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
@@ -33,3 +33,19 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,geometrija,string,,,,4,open,,Geografinės koordinatės,
 ,,,,,tipas,string,,,,4,open,,Objekto adreso informacijos aktualumas,
 ,,,,,patikimumas,number,,,,4,open,,Geografinių koordinačių patikimumas (procentais),
+,,,,,,,,,,,,,,
+,,,,MarijampolesRajSav,,,id,,,4,,,,
+,,,,,id,string,,,,4,open,,Identifikatorius,
+,,,,,ntr_reg_kodas,string,,,,4,open,,NT registro kodas,
+,,,,,statybos_pabaigos_metai,date,,,,4,open,,Objekto statybos pabaigos metai,
+,,,,,plotas_kv_metrais,number,,,,4,open,,Objekto plotas kvadratiniais metrais,
+,,,,,ntr_paskirtis,string,,,,4,open,,Objekto paskirtis,
+,,,,,pavadinimas,string,,,,4,open,,Objekto pavadinimas,
+,,,,,ilguma_wgs,number,,,,4,open,,Geografinės koordinatės,
+,,,,,platuma_wgs,number,,,,4,open,,Geografinės koordinatės,
+,,,,,lks_x,number,,,,4,open,,Stačiakampės plokštuminės LKS-94 koordinatės,
+,,,,,lks_y,number,,,,4,open,,Stačiakampės plokštuminės LKS-94 koordinatės,
+,,,,,geometrija,string,,,,4,open,,Geografinės koordinatės,
+,,,,,tipas,string,,,,4,open,,Objekto adreso informacijos aktualumas,
+,,,,,koordinaciu_patikimumas,number,,,,4,open,,Geografinių koordinačių patikimumas (procentais),
+,,,,,,,,,,,,,,
