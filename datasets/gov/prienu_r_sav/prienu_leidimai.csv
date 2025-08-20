@@ -30,7 +30,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimo_pabaigos_data,date,D,,,4,open,,Leidimo galiojimo pabaigos data,,,
 ,,,,,leidimo_pradzios_data,date,D,,,4,open,,Leidimo galiojimo pradžios data,,,
 ,,,,,pardavimo_tipas,string,,,,4,open,,Pardavimo tipas,,,
-
-
-
-
