@@ -1,4 +1,4 @@
-id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,Column1,_1
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,Column1
 ,datasets/gov/prienu_r_sav,,,,,,,,,,,,"Prienų raj. savivaldybės išorinės reklamos, prekybos ir paslaugų teikimo viešosiose vietose leidimų išdavimo sistema","Prienų raj. sav. Išorinės reklamos, prekybos ir paslaugų teikimo viešosiose vietose leidimų išdavimo sistemos duomenų rinkinį sudaro 1 lentelė – Prienų raj. savivaldybės nuo 2025 m. kovo mėn. pabaigos renkami prekybai, reklamai arba paslaugų teikimui pateiktų paraiškų duomenys ir būsenos.",,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,,
@@ -29,5 +29,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimo_pabaigos_data,date,D,,,4,open,,Leidimo galiojimo pabaigos data,,,
 ,,,,,leidimo_pradzios_data,date,D,,,4,open,,Leidimo galiojimo pradžios data,,,
 ,,,,,pardavimo_tipas,string,,,,4,open,,Pardavimo tipas,,,
+
 
 
