@@ -36,9 +36,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gyven_plotas,number,,,,4,open,,Renovuojamo patalpos gyvenamasis plotas,
 ,,,,,akto_suma,number,,,,4,open,,Akto suma,
 ,,,,,kredito_suma,number,,,,4,open,,Kredito suma,
-,,,,,atidetos_palukanos,number,,,,4,open,,Atidėtos palūkanis,
+,,,,,atidetos_palukanos,number,,,,4,open,,Atidėtos palūkanos,
 ,,,,,,,,,,,,,,
 ,,,,Darbas,,,darbo_tipo_kodas,,,4,,,Renovacijos darbų klasifikatorius,Viena renovacijos darbų klasifikatoriaus eilutė atitinka vieno renovacijos darbo pavadinimą
 ,,,,,darbo_tipo_kodas,string,,,,4,open,,Renovacijos darbo tipo kodas,
-,,,,,darbo_pavadinimas,string,,,,4,open,,Renovacijos darbo pavadinimas pavadinimas,
-,,,,,paskut_redagav_data,datetime,L,,,4,open,,Renovacijos paskut redagav data,
+,,,,,darbo_pavadinimas,string,,,,4,open,,Renovacijos darbo pavadinimas,
+,,,,,paskut_redagav_data,datetime,L,,,4,open,,Renovacijos darbų paskutinio redagavimo data,
+
