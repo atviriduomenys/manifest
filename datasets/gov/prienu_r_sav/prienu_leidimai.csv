@@ -14,7 +14,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kasimo_darbu_tipas,string,,,,4,open,,Kasimo darbų tipas,
 ,,,,,renginys,string,,,,4,open,,Renginio pavadinimas,
 ,,,,,renginio_pradzia,date,D,,,4,open,,Renginio pradžios data,
-,,,,,paraiskos_pateikimo_data,time,,,,4,open,,Paraiškos sukūrimo data,
+,,,,,paraiskos_pateikimo_data,datetime,L,,,4,open,,Paraiškos sukūrimo data,
 ,,,,,reikalingu_vietu_sk,integer,,,,4,open,,Vietų skaičius,
 ,,,,,renginio_pabaiga,date,D,,,4,open,,Data iki,
 ,,,,,renginio_aprasymas,string,,,,4,open,,Aprašymas,
