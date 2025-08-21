@@ -42,4 +42,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,darbo_tipo_kodas,string,,,,4,open,,Renovacijos darbo tipo kodas,
 ,,,,,darbo_pavadinimas,string,,,,4,open,,Renovacijos darbo pavadinimas,
 ,,,,,paskut_redagav_data,datetime,L,,,4,open,,Renovacijos darbų paskutinio redagavimo data,
-
