@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,SveikatingumoUgdymas,,,vda_prime_key,,,4,,,"Sveikatos, lytiškumo ugdymo ir rengimo šeimai bendrosios programos bei kenksmingų ir psichiką veikiančių medžiagų prevencijos programos vykdymas švietimo įstaigose",Viena eilutė atitinka programos įvykdymą švietimo įstaigoje atitinkamais mokslo metais.
-,,,,,vda_prime_key,string,,,,4,open,,,
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus pirminis raktas,
 ,,,,,mokslo_metai,string,,,,4,open,,Mokslo metai,
 ,,,,,padalinio_grupe,string,,,,4,open,,Padalinio grupė,
 ,,,,,padalinio_priklausomybe,string,,,,4,open,,Padalinio priklausomybė,
@@ -39,3 +39,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vykdziusiu_sp_specialistu,string,,,,4,open,,Programą vykdžiusių švietimo pagalbos specialistų skaičius,
 ,,,,,dalyvavusiu_mokiniu,string,,,,4,open,,Programoje dalyvavusių mokinių skaičius,
 ,,,,,priezastys,string,,,,4,open,,Ar šią prevencinę programą mokykloje paskatino įsidiegti pastebėtos situacijos ar iššūkiai įgyvendinant Gyvenimo įgūdžių bendrąją programą (0 - Ne 1 - Taip,
+
