@@ -48,4 +48,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vykdziusiu_sp_specialistu,integer,,,,4,open,,Programą vykdžiusių švietimo pagalbos specialistų skaičius,
 ,,,,,dalyvavusiu_mokiniu,integer,,,,4,open,,Programoje dalyvavusių mokinių skaičius,
 ,,,,,priezastys,boolean,,,,4,open,,Ar šią prevencinę programą mokykloje paskatino įsidiegti pastebėtos situacijos ar iššūkiai įgyvendinant Gyvenimo įgūdžių bendrųjų programų,
-
