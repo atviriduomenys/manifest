@@ -24,7 +24,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybės pavadinimas,
 ,,,,,gamintojas,string,,,,4,open,,Nuotekų įrenginio gamintojas,
 ,,,,,modelis,string,,,,4,open,,Nuotekų įrenginio modelis,
-,,,,,talpa,string,m^3,,,4,open,,Nuotekų įrenginio talpa,
+,,,,,talpa,string,,,,4,open,,Nuotekų įrenginio talpa kubiniais metrais,
 ,,,,,atstumas_nuo_kelio,number,m,,,4,open,,Atstumas nuo nuotekų įrenginio iki kelio,
 ,,,,,pastatymo_data,date,D,,,4,open,,Pastatymo data,
 ,,,,,isregistravimo_data,date,D,,,4,open,,Išregistravimo data,
