@@ -1,0 +1,49 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/atlieku_tvarkymas,,,,,,,,,,,,Vilniaus atliekų sistemos administratoriaus atliekų konteinerių aptarnavimai,"Rinkinys sudarytas iš SĮ „Vilniaus atliekų sistemos administratorius“(VASA) atliekų tvarkymo informacinės sistemos „ASMLIS“. Rinkinį sudaro dvi lentelės, kuriose pateikiama detali informacija apie atliekų surinkimo infrastruktūrą, planuojamus išvežimus ir istorinius surinkimo duomenis.
+Išvežimų tvarkaraščių lentelėje pateikiama informacija apie atliekų surinkimo taškus ir jų aptarnavimo tvarkaraščius. Viena eilutė atitinka artimiausią konteinerio išvežimo informaciją: konteinerio identifikacinius duomenis, jo charakteristikas, aptarnavimo informaciją ir geografinius duomenis.
+Konteinerių išvežimų lentelėje pateikiamas faktinių atliekų surinkimo operacijų žurnalas. Viena eilutė atitinka vieną konteinerio aptarnavimo operaciją. Lentelėje galima rasti konteinerių informaciją, surinktų atliekų kiekius, operacijų detales, geografines operacijų vietas.
+Lenteles tarpusavyje galima jungti per „inventorinis_nr“ raktą.
+Duomenys pateikiami nuo 2023 m. sausio mėnesio pradžios.
+Duomenų teikėjas – SĮ „Vilniaus atliekų sistemos administratorius“.
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,KonteinerioIsvezimas,,,pickup_history_id,,,4,,Faktinių atliekų surinkimo operacijų žurnalas,,
+,,,,,pickup_history_id,string,,,,4,open,,Konteinerių išvežimai,Atliekų surinkimo archyvinis identifikatorius
+,,,,,dumpster_id,string,,,,4,open,,Konteinerio identifikatorius,
+,,,,,inventorinis_nr,string,,,,4,open,,Inventoriaus numeris,
+,,,,,konteinerio_turis,number,,,,4,open,,Tūris,
+,,,,,papildomas_turis,number,,,,4,open,,Papildomas tūris,
+,,,,,apskaiciuotas_svoris,number,,,,4,open,,Apskaičiuotos atliekos,
+,,,,,vieksmo_data,datetime,,,,4,open,,Veiksmo data,
+,,,,,veiksmas,string,,,,4,open,,Veiksmas,
+,,,,,,enum,,,"""Ištuštinti""",,,,Ištuštinti,
+,,,,,,,,,"""Pastatyti""",,,,Pastatyti,
+,,,,,,,,,"""Nuimti""",,,,Nuimti,
+,,,,,,,,,"""Informacinis užsakymas""",,,,Informacinis užsakymas,
+,,,,,,,,,"""Pakeisti""",,,,Pakeisti,
+,,,,,aptarnavimas,string,,,,4,open,,Aptarnavimo tipas,
+,,,,,,enum,,,"""Aptarnautas""",,,,Aptarnautas,
+,,,,,,,,,"""Neaptarnautas""",,,,Neaptarnautas,
+,,,,,komentaras,string,,,,4,open,,Komentaras,
+,,,,,tvarkytojas,string,,,,4,open,,Atliekų tvarkytojo pavadinimas,
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
+,,,,,,,,,,,,,,
+,,,,IsvezimoTvarkarastis,,,waste_object_id,,,4,,,Konteinerių išvežimo tvarkaraštis,Informacija apie atliekų surinkimo taškus ir jų aptarnavimo tvarkaraščius.
+,,,,,waste_object_id,string,,,,4,open,,Atliekų kilmės identifikatorius,
+,,,,,dumpster_id,string,,,,4,open,,Konteinerio identifikatorius,
+,,,,,inventorinis_nr,string,,,,4,open,,Inventoriaus numeris,
+,,,,,irengimo_tipas,string,,,,4,open,,Irenginio tipas,
+,,,,,,enum,,,"""Antžeminis stumdomas""",,,,Antžeminis stumdomas,
+,,,,,,,,,"""Pusiau požeminis""",,,,Pusiau požeminis,
+,,,,,,,,,"""Antžeminis stacionarus""",,,,Antžeminis stacionarus,
+,,,,,,,,,"""Požeminis""",,,,Požeminis,
+,,,,,aptarnavimo_pavadinimas,string,,,,2,open,,Aptarnavimo pavadinimas,
+,,,,,aptarnavimo_daznumas,string,,,,2,open,,Aptarnavimo data,
+,,,,,priklauso,string,,,,4,open,,Kam priklauso konteineris,
+,,,,,aptarnaujamas_adresas,string,,,,3,open,,Aptarnaujamas adresas,
+,,,,,kitas_aptarnavimas,date,,,,4,open,,Kada artikiausias kitas aptarnavimas,
+,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
