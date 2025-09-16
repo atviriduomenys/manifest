@@ -983,7 +983,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,tyrimo_analites_id,string,,,,4,open,,Tyrimo analitės identifikatorius,
 ,,,,,tyrimo_analites_pav,string,,,,4,open,,Tyrimo analitės pavadinimas,
 ,,,,,tyrimo_analites_rez_orig,string,,,,1,open,,Tyrimo analitės rezultatų originalus stulpelis,
-,,,,,tyrimo_analites_tekst_rez_parsed,string,,,,4,open,,Tyrimo analitės išskirti semantiniai vertinimai,
+,,,,,tyrimo_analites_tekst_rez_parsed,string,,,,3,open,,Tyrimo analitės išskirti semantiniai vertinimai,
 ,,,,,tyrimo_analites_skait_rez_parsed,number,,,,4,open,,Tyrimo analitės išskirti skaitiniai rezultatai,
 ,,,,,tyrimo_analites_norma_nuo,number,,,,4,open,,Tyrimo analitės rezultato mažiausia normali reikšmė,
 ,,,,,tyrimo_analites_norma_iki,number,,,,4,open,,Tyrimo analitės rezultato didžiausia normali reikšmė,
