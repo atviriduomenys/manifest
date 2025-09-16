@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vsf,,,,,ns,,,,,,,Valstybinis studijų fondas,
+,datasets/gov/vsf/lesu_paskirstymas_studiju_programu_kainos_kompensavimui,,,,,,,,,,,,Lėšų paskirstymas studijų programų kainos kompensavimui,Informacija apie lėsų paskirstymą studijų programų kainos kompensavimui
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,LesuPaskirstymas,,,id,,,4,,,Lėšų paskirstymas studijų programų kainos kompensavimui,"Duomenų rinkinyje pateikiama informacija apie lėšų paskirstymą, skirtą studijų programų kainų kompensavimui. Rinkinyje nurodyti lėšų paskirstymai nuo 2011 metų iki naujausių prieinamų metų. Rinkinio lentelės viena eilutė atitinka vieną studijų programą ir jai paskirtą lėšų sumą kainos kompensavimui. Rinkinį sudaro kompensavimo periodo pavadinimai, mokymosi įstaigos, studijų krypties ir programos pavadinimai, į programą įstojusių ir baigusių asmenų skaičius, asmenų, kuriems kompensuojama už studijas sumokėta suma, studijų kaina ir kompensuojama studijų kaina.
+ 
+Duomenų teikėjas – Valstybinis studijų fondas.
+Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.gov.lt."
+,,,,,id,string,,id,,4,open,,Unikalus lėšų paskirstymo eilutės identifikatorius,
+,,,,,laikotarpis_pavadinimas,string,,laikotarpis_pavadinimas,,4,open,,Lėšų paskirstymo laikotarpio pavadinimas,
+,,,,,paskirstymas_pav_trump,string,,paskirstymas_pav_trump,,4,open,,Lėšų paskirstymo laikotarpio pavadinimo trumpinys,
+,,,,,inst_pavadinimas,string,,inst_pavadinimas,,4,open,,Mokymosi įstaigos pavadinimas,
+,,,,,stud_kryptis,string,,stud_kryptis,,4,open,,Studiju kryptis,
+,,,,,programa_pavadinimas,string,,programa_pavadinimas,,4,open,,Studijų programos pavadinimas,
+,,,,,baige,integer,,baige,,4,open,,Programą baigusių asmenų skaičius valstybės finansuojamoje vietoje,
+,,,,,baige_vnf,integer,,baige_vnf,,4,open,,Programą baigusių asmenų skaičius valstybės nefinansuojamoje vietoje,
+,,,,,istojo,integer,,istojo,,4,open,,Į studijų programą įstojusių asmenų skaičius,
+,,,,,istojimo_metai,integer,,istojimo_metai,,4,open,,Įstojimo į studijų programą metai,
+,,,,,kompensuojamas_asmenu_skaicius,number,,kompensuojamas_asmenu_skaicius,,4,open,,Studijų programoje kompensuojamas asmenų skaičius,
+,,,,,studiju_kaina,number,,studiju_kaina,,4,open,,Studijų programos kaina,
+,,,,,kompensuojama_kaina,number,,kompensuojama_kaina,,4,open,,Kompensuojama studijų programos kaina,
+,,,,,valiuta,string,,valiuta,,4,open,,Studijų programos ir kompensuojamos kainos valiuta,
