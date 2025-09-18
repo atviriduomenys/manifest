@@ -60,4 +60,4 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,jar_validacija,string,,,,4,open,,Valstybės duomenų agentūros sugeneruotas juridinio asmens validavimo stulpelis,
 ,,,,,savivaldybe,string,,,,4,open,,"""Savivaldybė, kurioje yra gydymo įstaiga""",
 ,,,,,adresas,string,,,,4,open,,Gydymo įstaigos adresas,
-,,,,,geometrija,string,,,,4,open,,Gydymo įstaigos koordinatės,Gydymo įstaigos WKT tipo WGS-84 koordinatės taškas
+,,,,,geometrija,geometry(4326),,,,4,open,,Gydymo įstaigos koordinatės,Gydymo įstaigos WKT tipo WGS-84 koordinatės taškas
