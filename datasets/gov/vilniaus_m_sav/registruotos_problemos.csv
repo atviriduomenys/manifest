@@ -27,7 +27,8 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt
 ,,,,,ilguma_wgs,number,,,,4,open,,Problemos vietos lgumos koordinatė wgs,
 ,,,,,platuma_wgs,number,,,,4,open,,Problemos vietos platumos koordinatė wgs,
 ,,,,,geometrija_wgs,"geometry(point, 4326)",,,,4,open,,Problemos vietos taško koordinatės wgs,
-,,,,,ilguma_lks,integer,,,,4,open,,Problemos vietos lgumos koordinatė lks,
+,,,,,ilguma_lks,integer,,,,4,open,,Problemos vietos ilgumos koordinatė lks,
 ,,,,,platuma_lks,integer,,,,4,open,,Problemos vietos platumos koordinatė lks,
 ,,,,,geometrija_lks,"geometry(point, 3346)",,,,4,open,,Problemos vietos taško koordinatės lks,
 ,,,,,,,,,,,,,,
+
