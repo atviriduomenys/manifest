@@ -59,7 +59,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,kada_sukurtas_uzsakymas,datetime,,,,4,open,,Užsakymo užduoties sukūrimo laikas,
 ,,,,,kada_paimami_daiktai,datetime,,,,4,open,,Daiktų paėmimo data,
 ,,,,,busena,string,,,,4,open,,Užsakymo užduoties būsena,
-,,,,,,enum,,,"Užregistruota",,,,Užregistruota,
+,,,,,,enum,,,"""Užregistruota""",,,,Užregistruota,
 ,,,,,,,,,"""Tikslinama""",,,,Tikslinama,
 ,,,,,,,,,"""Perduota vykdymui""",,,,Perduota vykdymui,
 ,,,,,,,,,"""Atlikta DGA paslauga""",,,,Atlikta,
