@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vilniaus_m_sav/atlieku_tvarkymas,,,,,,,,,,,,Vilniaus atliekų sistemos administratoriaus atliekų konteinerių aptarnavimai,"Rinkinys sudarytas iš SĮ „Vilniaus atliekų sistemos administratorius“(VASA) atliekų tvarkymo informacinės sistemos „ASMLIS“. Rinkinį sudaro dvi lentelės, kuriose pateikiama detali informacija apie atliekų surinkimo infrastruktūrą, planuojamus išvežimus ir istorinius surinkimo duomenis.
+,datasets/gov/vilniaus_m_sav/atlieku_tvarkymas,,,,,,,,,,,,Vilniaus atliekų sistemos administratoriaus atliekų konteinerių aptarnavimai,"Rinkinys sudarytas iš SĮ „Vilniaus atliekų sistemos administratorius“ (VASA) atliekų tvarkymo informacinių sistemų „ASMLIS“ ir „SAVITARNA“ duomenų. Rinkinį sudaro lentelės, kuriose pateikiama išsami informacija apie atliekų surinkimo infrastruktūrą, planuojamus išvežimus ir istorinius surinkimo duomenis.
 Išvežimų tvarkaraščių lentelėje pateikiama informacija apie atliekų surinkimo taškus ir jų aptarnavimo tvarkaraščius. Viena eilutė atitinka artimiausią konteinerio išvežimo informaciją: konteinerio identifikacinius duomenis, jo charakteristikas, aptarnavimo informaciją ir geografinius duomenis.
 Konteinerių išvežimų lentelėje pateikiamas faktinių atliekų surinkimo operacijų žurnalas. Viena eilutė atitinka vieną konteinerio aptarnavimo operaciją. Lentelėje galima rasti konteinerių informaciją, surinktų atliekų kiekius, operacijų detales, geografines operacijų vietas.
-Lenteles tarpusavyje galima jungti per „inventorinis_nr“ raktą.
-Duomenys pateikiami nuo 2023 m. sausio mėnesio pradžios.
+Išvežimų tvarkaraščių ir konteinerių išvežimų lentelių duomenys pateikiami nuo 2023 m. sausio mėnesio pradžios. Šias dvi lenteles tarpusavyje galima jungti per „inventorinis_nr“ raktą.
+Didelių gabaritų atliekų lentelėje pateikiami individualių atliekų paėmimų užsakymai nuo 2023 m. spalio mėnesio pabaigos. Vienas užsakymas gali apimti kelias skirtingas daiktų grupes, todėl jie išdėstyti atskirose lentelės eilutėse.
 Duomenų teikėjas – SĮ „Vilniaus atliekų sistemos administratorius“.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
@@ -16,7 +16,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,konteinerio_turis,number,,,,4,open,,Tūris,
 ,,,,,papildomas_turis,number,,,,4,open,,Papildomas tūris,
 ,,,,,apskaiciuotas_svoris,number,,,,4,open,,Apskaičiuotos atliekos,
-,,,,,vieksmo_data,datetime,,,,4,open,,Veiksmo data,
+,,,,,veiksmo_data,datetime,,,,4,open,,Veiksmo data,
 ,,,,,veiksmas,string,,,,4,open,,Veiksmas,
 ,,,,,,enum,,,"""Ištuštinti""",,,,Ištuštinti,
 ,,,,,,,,,"""Pastatyti""",,,,Pastatyti,
@@ -34,7 +34,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,waste_object_id,string,,,,4,open,,Atliekų kilmės identifikatorius,
 ,,,,,dumpster_id,string,,,,4,open,,Konteinerio identifikatorius,
 ,,,,,inventorinis_nr,string,,,,4,open,,Inventoriaus numeris,
-,,,,,irengimo_tipas,string,,,,4,open,,Irenginio tipas,
+,,,,,irengimo_tipas,string,,,,4,open,,Įrenginio tipas,
 ,,,,,,enum,,,"""Antžeminis stumdomas""",,,,Antžeminis stumdomas,
 ,,,,,,,,,"""Pusiau požeminis""",,,,Pusiau požeminis,
 ,,,,,,,,,"""Antžeminis stacionarus""",,,,Antžeminis stacionarus,
@@ -43,7 +43,26 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,aptarnavimo_daznumas,string,,,,2,open,,Aptarnavimo data,
 ,,,,,priklauso,string,,,,4,open,,Kam priklauso konteineris,
 ,,,,,aptarnaujamas_adresas,string,,,,3,open,,Aptarnaujamas adresas,
-,,,,,kitas_aptarnavimas,date,,,,4,open,,Kada artikiausias kitas aptarnavimas,
+,,,,,kitas_aptarnavimas,date,,,,4,open,,Kada artimiausias kitas aptarnavimas,
 ,,,,,ilguma_wgs,number,,,,4,open,,Ilgumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,platuma_wgs,number,,,,4,open,,Platumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Geometrija,
+,,,,DideliųGabaritųAtlieka,,,vda_id,,,,,,Didelių gabaritų atliekos,"Rinkinio lentelėje pateikiami SĮ „Vilniaus atliekų sistemos administratoriaus“ (VASA) gaunami užsakymai išvežti didelių gabaritų atliekas Vilniaus miesto savivaldybės teritorijoje. Vienas užsakymas gali apimti kelias skirtingas daiktų grupes, todėl jie išdėstyti atskirose lentelės eilutėse. Nurodyta išvežimo paslaugos kaina kartais gali nesutapti su nemokamos ar mokamos paslaugos tipu, nes klientui užsisakius papildomą mokamą paslaugą, klientas moka tiesiai vežėjui, informacija gali pasikeisti paslaugos teikimo metu., pvz., kai atvykusiam paimti daiktų vežėjui klientas atiduoda daugiau daiktų ar kitos rūšies daiktų nei buvo iš anksto užsakyta. Klientai gali patys teikti užsakymus s savitarnoje <https://savitarna.vasa.lt/>, arba užsakymo informaciją gali užpildyti VASA darbuotojai. Iš adreso išgautos koordinatės, bet klaidingai aptiktomis laikytinos su patikimumo balu 86 ir mažesniu. Koordinatės susiskirstytos pagal H3 gardelių (angl. H3 grid) sistemą septintojo lygio smulkumu, plačiau apie H3 gardeles ir „H3 index“ žr. <https://h3geo.org/> svetainėje."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo unikalus identifikatorius,
+,,,,,uzsakymo_id,string,,,,4,open,,Didelių gabaritų atliekų išvežimo užsakymo identifikatorius,
+,,,,,ismetamas_daiktas,string,,,,4,open,,Išmetamo daikto pavadinimas,
+,,,,,daiktu_sk,integer,,,,4,open,,Išmetamų daiktų skaičius,
+,,,,,paslaugos_kaina,number,,,,4,open,,Paslaugos kaina,
+,,,,,paslaugos_tipas,string,,,,4,open,,Paslaugos tipas,
+,,,,,,enum,,,"ATKS - DGA - Nemokama Individuali atliekų paėmimo paslauga",,,,Nemokama individuali atliekų paėmimo paslauga,
+,,,,,,,,,"ATKS - DGA - Mokama Individuali atliekų paėmimo paslauga",,,,Mokama individuali atliekų paėmimo paslauga,
+,,,,,kada_sukurtas_uzsakymas,datetime,,,,4,open,,Užsakymo užduoties sukūrimo laikas,
+,,,,,kada_paimami_daiktai,datetime,,,,4,open,,Daiktų paėmimo data,
+,,,,,busena,string,,,,4,open,,Užsakymo užduoties būsena,
+,,,,,,enum,,,"Užregistruota",,,,Užregistruota,
+,,,,,,,,,"Tikslinama",,,,Tikslinama,
+,,,,,,,,,"Perduota vykdymui",,,,Perduota vykdymui,
+,,,,,,,,,"Atlikta DGA paslauga",,,,Atlikta,
+,,,,,,,,,"Atšaukta DGA paslauga",,,,Atšaukta,
+,,,,,vda_koordinaciu_patikimumas,number,,,,4,open,,Valstybės Duomenų Agentūros pagal adresą nustatytų koordinačių patikimumas (patikimi > 86),
+,,,,,adreso_h3_l7,string,,,,4,open,,Valstybės Duomenų Agentūros iš adreso nustatytų koordinačių „H3 index“ gardelė (septinto lygio),
