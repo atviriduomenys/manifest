@@ -31,5 +31,4 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt
 ,,,,,ilguma_lks,integer,,,,4,open,,Problemos vietos lgumos koordinatė lks,
 ,,,,,platuma_lks,integer,,,,4,open,,Problemos vietos platumos koordinatė lks,
 ,,,,,geometrija_lks,"geometry(point, 3346)",,,,4,open,,Problemos vietos taško koordinatės lks,
-
 ,,,,,,,,,,,,,,
