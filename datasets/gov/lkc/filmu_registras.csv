@@ -33,7 +33,6 @@ Dėl techninių klausimų ar galimų klaidų galima kreiptis į atverimas@stat.g
 ,,,,,nfofms_vieta,string,,nfofms_vieta,,4,open,,Nacionalinio filmo originalios filmo medžiagos saugojimo vieta,
 ,,,,,rodytojas,string,,rodytojas,,4,open,,Filmo rodytojas,
 ,,,,,platintojas,string,,platintojas,,4,open,,Filmo platintojas,
-,,,,,pateikejas,string,,pateikejas,,4,open,,Paraiškos teikėjas,
 ,,,,,fipu_data,datetime,D,fipu_data,,4,open,,Filmo įregistravimo data,
 ,,,,,negalioja,integer,,negalioja,,4,open,,"Filmas pripažintas negaliojančiu (1 – taip, 0 – Ne)",
 ,,,,,negalioja_data,datetime,D,negalioja_data,,4,open,,Registracijos pripažinimo negaliojančia data,
