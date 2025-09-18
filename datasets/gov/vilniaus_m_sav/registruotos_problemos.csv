@@ -1,13 +1,13 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/vilniaus_m_sav/registruotos_problemos,,,,,,,,,,,,"Platformoje „Tvarkau miestą“ vartotojų užregistruotos problemos Vilniaus miesto savivaldybėje","Viena platformos „Tvarkau miestą“ duomenų rinkinio eilutė atitinka vieną vartotojo pranešimą apie problemą Vilniaus miesto savivaldybėje. Rinkinį sudaro: problemos tipas, statusas ir statuso atnaujinimo data, už problemos sprendimą atsakingas padalinys, problemos registravimo ir išsprendimo datos, transporto priemonės valstybinis numeris ir numerio struktūra (jei problema susijusi su transporto priemone), problemos vietos adresas ir koordinatės.
-Vilniaus miesto savivaldybę apimantys duomenys renkami nuo 2012 metų ir bus atnaujinami kas mėnesį."
+,datasets/gov/vilniaus_m_sav/registruotos_problemos,,,,,,,,,,,,Platformoje „Tvarkau miestą“ vartotojų užregistruotos problemos Vilniaus miesto savivaldybėje ,"Viena platformos „Tvarkau miestą“ duomenų rinkinio eilutė atitinka vieną vartotojo pranešimą apie problemą Vilniaus miesto savivaldybėje. Rinkinį sudaro: problemos tipas, statusas ir statuso atnaujinimo data, už problemos sprendimą atsakingas padalinys, problemos registravimo ir išsprendimo datos, transporto priemonės valstybinis numeris ir numerio struktūra (jei problema susijusi su transporto priemone), problemos vietos adresas ir koordinatės.
+Vilniaus miesto savivaldybę apimantys duomenys renkami nuo 2012 metų ir bus atnaujinami kas mėnesį.
 Duomenų teikėjas  – Vilniaus miesto savivaldybės administracija.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Problema,,,pranesimo_id,,,4,,,"Platformoje „Tvarkau miestą“ vartotojų užregistruotos problemos Vilniaus miesto savivaldybėje","Viena platformos „Tvarkau miestą“ duomenų rinkinio eilutė atitinka vieną vartotojo pranešimą apie problemą Vilniaus miesto savivaldybėje. Rinkinį sudaro: problemos tipas, statusas ir statuso atnaujinimo data, už problemos sprendimą atsakingas padalinys, problemos registravimo ir išsprendimo datos, transporto priemonės valstybinis numeris ir numerio struktūra (jei problema susijusi su transporto priemone), problemos vietos adresas ir koordinatės.
-Vilniaus miesto savivaldybę apimantys duomenys renkami nuo 2012 metų ir bus atnaujinami kas mėnesį."
+,,,,Problema,,,pranesimo_id,,,4,,,Platformoje „Tvarkau miestą“ vartotojų užregistruotos problemos Vilniaus miesto savivaldybėje ,"Viena platformos „Tvarkau miestą“ duomenų rinkinio eilutė atitinka vieną vartotojo pranešimą apie problemą Vilniaus miesto savivaldybėje. Rinkinį sudaro: problemos tipas, statusas ir statuso atnaujinimo data, už problemos sprendimą atsakingas padalinys, problemos registravimo ir išsprendimo datos, transporto priemonės valstybinis numeris ir numerio struktūra (jei problema susijusi su transporto priemone), problemos vietos adresas ir koordinatės.
+Vilniaus miesto savivaldybę apimantys duomenys renkami nuo 2012 metų ir bus atnaujinami kas mėnesį.
 Duomenų teikėjas  – Vilniaus miesto savivaldybės administracija.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,pranesimo_id,string,,,,4,open,,Unikalus pirminis raktas,
