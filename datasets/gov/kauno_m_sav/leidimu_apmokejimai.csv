@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/kauno_m_sav/leidimu_apmokejimai,,,,,,,,,,,,Apmokėjimai už Kauno miesto savivaldybės išduodamus leidimus,"Apmokėjimai už Kauno miesto savivaldybės išduodamus leidimus reklamai, alkoholio ir tabako prekybai"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,MetinisApmokejimas,,,vda_prime_key,,,4,,,Apmokėjimai už Kauno miesto savivaldybės išduodamus leidimus,"Apmokėjimai už Kauno miesto savivaldybės išduodamus leidimus reklamai, alkoholio ir tabako prekybai"
+,,,,,vda_prime_key,string,,,,4,open,,Įrašo identifikatorius,
+,,,,,mokestiniai_metai,integer,,,,4,open,,Mokestiniai metai,
+,,,,,juridinio_asmens_kodas,string,,,,4,open,,Juridinio asmens kodas,
+,,,,,juridinio_asmens_pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
+,,,,,fizinio_asmens_kodas,string,,,,4,open,,Fizinio asmens kodas,
+,,,,,fizinio_asmens_vardas_pavarde,string,,,,4,open,,Fizinio asmens vardas ir pavardė,
+,,,,,imoku_gavejas,string,,,,4,open,,Įmokų gavėjas,
+,,,,,,enum,,,"""Kauno miesto savivaldybė""",,,,,
+,,,,,imoku_gavejo_kodas,string,,,,4,open,,Įmokų gavėjo kodas,
+,,,,,,enum,,,"""188764867""",,,,,
+,,,,,licencijos_tipas,string,,,,4,open,,Licencijos tipas,
+,,,,,sumoketa_imoku_suma,number,,,,4,open,,Sumokėtų įmokų suma už mokestinius metus eurais,
+,,,,,sumoketas_imoku_skaicius,integer,,,,4,open,,Mokamų įmokų skaičius mokestiniais metais,
+,,,,,irasu_skaicius_mokestiniais_metais,integer,,,,4,open,,Įrašų skaičius mokestiniais metais,
