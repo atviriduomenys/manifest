@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą.
 
 Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/."
-,,,,,projekto_id,string,,,,4,open,,,Identifikavimo kodas
+,,,,,projekto_id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,projekto_ikelimo_data,datetime,S,,,4,open,,,Sukūrimo data
 ,,,,,biudzetas,string,,,,4,open,,,Dalyvaujamasis biudžetas
 ,,,,,organizacija,string,,,,4,open,,,Pasiūlymą pateikusi organizacija
