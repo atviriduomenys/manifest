@@ -23,10 +23,9 @@ Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėj
 ,,,,,ar_atrinkta,boolean,,,,4,open,,Ar projektas atrinktas balsavimui,
 ,,,,,ivykdomumas,string,,,,4,open,,Įvykdomumo vertinimas,
 ,,,,,neivykdomumo_priezastis,string,,,,4,open,,Priežastys kodėl projektas neįgyvendinamas,
-,,,,,komentaru_skaicius,integer,,,,4,open,,Bendras gautų komentarų skaičius,
-,,,,,fiziniai_balsai,integer,,,,4,open,,Gyvai atiduotų balsų skaičius,
-,,,,,balsai,integer,,,,4,open,,Bendras balsų skaičius,
+,,,,,komentaru_skaicius,number,,,,4,open,,Bendras gautų komentarų skaičius,
+,,,,,fiziniai_balsai,number,,,,4,open,,Gyvai atiduotų balsų skaičius,
+,,,,,balsai,number,,,,4,open,,Bendras balsų skaičius,
 ,,,,,vertinimas_baigtas,boolean,,,,4,open,,Ar pasiūlymo vertinimas užbaigtas,
 ,,,,,ar_laimejo,boolean,,,,4,open,,Ar projektas laimėjo balsavimą,
 ,,,,,paskutinio_atnaujinimo_data,datetime,S,,,4,open,,Datos ir laiko žyma kada įrašas paskutinį kartą atnaujintas,
-
