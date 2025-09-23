@@ -65,4 +65,4 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,"""Atlikta DGA paslauga""",,,,Atlikta,
 ,,,,,,,,,"""Atšaukta DGA paslauga""",,,,Atšaukta,
 ,,,,,vda_koordinaciu_patikimumas,number,,,,4,open,,Valstybės Duomenų Agentūros pagal adresą nustatytų koordinačių patikimumas (patikimi > 86),
-,,,,,adreso_h3_l7,string,,,,4,open,,Valstybės Duomenų Agentūros iš adreso nustatytų koordinačių „H3 index“ gardelė (septinto lygio),
+,,,,,vda_adreso_h3_l7,string,,,,4,open,,Valstybės Duomenų Agentūros iš adreso nustatytų koordinačių „H3 index“ gardelė (septinto lygio),
