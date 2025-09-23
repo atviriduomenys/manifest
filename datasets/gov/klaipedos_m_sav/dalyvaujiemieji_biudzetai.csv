@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Biudzetas,,,id,,,4,,,Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.,"Klaipėdos miesto savivaldybės IS „Dalyvauk“ duomenys apie gyventojų teiktas idėjas dėl viešosios infrastruktūros gerinimo, jų aprašus, vertinimo ir balsavimo rezultatus. Lentelė atnaujinama kasmet."
+,,,,Biudzetas,,,id,,,4,,,"Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.","Klaipėdos miesto savivaldybės IS „Dalyvauk“ duomenys apie gyventojų teiktas idėjas dėl viešosios infrastruktūros gerinimo, jų aprašus, vertinimo ir balsavimo rezultatus. Lentelė atnaujinama kasmet."
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,Unikalus įrašo identifikatorius,
 ,,,,,sukurta,timestamp,,,,4,open,,Sukūrimo data,Pasiūlymo paskelbimo data ir laikas,
 ,,,,,biudzetas,string,,,,4,open,,Dalyvaujamasis biudžetas,Dalyvaujamojo biudžeto metai,
