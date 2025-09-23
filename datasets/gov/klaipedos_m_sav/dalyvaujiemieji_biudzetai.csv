@@ -8,24 +8,24 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą.
 
 Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/."
-,,,,,projekto_id,string,,,,4,open,,Identifikavimo kodas,
-,,,,,projekto_ikelimo_data,datetime,S,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data
-,,,,,biudzetas,string,,,,4,open,,Dalyvaujamasis biudžetas,
-,,,,,organizacija,string,,,,4,open,,Pasiūlymą pateikusi organizacija,
-,,,,,autoriaus_vardas_pavarde,string,,,,4,open,,Autoriaus vardas ir pavardė,Pasiūlymą pateikusi organizacija
-,,,,,autoriaus_gimimo_metai,datetime,Y,,,4,open,,Autoriaus gimimo metai,
-,,,,,projekto_pavadinimas,string,,,,4,open,,Projekto pavadinimas,
-,,,,,projekto_aprasymas,string,,,,4,open,,Projekto aprašymas,Siūloma idėja
-,,,,,projekto_rezultatai,string,,,,4,open,,Tikėtini projekto įgyvendinimo rezultatai,
-,,,,,projekto_samata,number,,,,4,open,,Numatoma projekto įgyvendinimo kaina,Pasiūlymo vieta
-,,,,,samatos_paaiskinimas,string,,,,4,open,,Sąmatos pagrindimas,
-,,,,,vieta,string,,,,4,open,,Vietovė kur numatomas įgyvendinimas,
-,,,,,ar_atrinkta,boolean,,,,4,open,,Ar projektas atrinktas balsavimui,
-,,,,,ivykdomumas,string,,,,4,open,,Įvykdomumo vertinimas,Numatomas pasiūlymo rezultatas
-,,,,,neivykdomumo_priezastis,string,,,,4,open,,Priežastys kodėl projektas neįgyvendinamas,
-,,,,,komentaru_skaicius,number,,,,4,open,,Bendras gautų komentarų skaičius,
-,,,,,fiziniai_balsai,number,,,,4,open,,Gyvai atiduotų balsų skaičius,
-,,,,,balsai,number,,,,4,open,,Bendras balsų skaičius,
-,,,,,vertinimas_baigtas,boolean,,,,4,open,,Ar pasiūlymo vertinimas užbaigtas,
-,,,,,ar_laimejo,boolean,,,,4,open,,Ar projektas laimėjo balsavimą,Įvykdomumo įvertinimas
-,,,,,paskutinio_atnaujinimo_data,datetime,S,,,4,open,,Datos ir laiko žyma kada įrašas paskutinį kartą atnaujintas,
+,,,,,projekto_id,string,,,,4,open,,,Identifikavimo kodas
+,,,,,projekto_ikelimo_data,datetime,S,,,4,open,,,Sukūrimo data
+,,,,,biudzetas,string,,,,4,open,,,Dalyvaujamasis biudžetas
+,,,,,organizacija,string,,,,4,open,,,Pasiūlymą pateikusi organizacija
+,,,,,autoriaus_vardas_pavarde,string,,,,4,open,,,Autoriaus vardas ir pavardė
+,,,,,autoriaus_gimimo_metai,datetime,Y,,,4,open,,,Autoriaus gimimo metai
+,,,,,projekto_pavadinimas,string,,,,4,open,,,Projekto pavadinimas
+,,,,,projekto_aprasymas,string,,,,4,open,,,Projekto aprašymas,Siūloma idėja
+,,,,,projekto_rezultatai,string,,,,4,open,,,Tikėtini projekto įgyvendinimo rezultatai
+,,,,,projekto_samata,number,,,,4,open,,,Numatoma projekto įgyvendinimo kaina
+,,,,,samatos_paaiskinimas,string,,,,4,open,,,Sąmatos pagrindimas
+,,,,,vieta,string,,,,4,open,,,Vietovė kur numatomas įgyvendinimas
+,,,,,ar_atrinkta,boolean,,,,4,open,,,Ar projektas atrinktas balsavimui
+,,,,,ivykdomumas,string,,,,4,open,,,Įvykdomumo vertinimas
+,,,,,neivykdomumo_priezastis,string,,,,4,open,,,Priežastys kodėl projektas neįgyvendinamas
+,,,,,komentaru_skaicius,number,,,,4,open,,,Bendras gautų komentarų skaičius
+,,,,,fiziniai_balsai,number,,,,4,open,,,Gyvai atiduotų balsų skaičius
+,,,,,balsai,number,,,,4,open,,,Bendras balsų skaičius
+,,,,,vertinimas_baigtas,boolean,,,,4,open,,,Ar pasiūlymo vertinimas užbaigtas
+,,,,,ar_laimejo,boolean,,,,4,open,,,Ar projektas laimėjo balsavimą
+,,,,,paskutinio_atnaujinimo_data,datetime,S,,,4,open,,,Datos ir laiko žyma kada įrašas paskutinį kartą atnaujintas
