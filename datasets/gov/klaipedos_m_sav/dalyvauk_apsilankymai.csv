@@ -15,7 +15,7 @@ Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėj
 ,,,,,narsykle,string,,,,4,open,,Naršyklė,
 ,,,,,operacine_sistema,string,,,,4,open,,Operacinė sistema,
 ,,,,,irenginio_tipas,string,,,,4,open,,Įrenginio tipas,
-,,,,,pradeta,timestamp,,,,4,open,,Sesija pradėta,
+,,,,,pradeta,datetime,,,,4,open,,Sesija pradėta,
 ,,,,,salies_kodas,string,,,,4,open,,Šalies kodas,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
 ,,,,,miestas,string,,,,4,open,,Miestas,
