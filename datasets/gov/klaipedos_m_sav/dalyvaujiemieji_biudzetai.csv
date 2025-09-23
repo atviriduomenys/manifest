@@ -4,27 +4,27 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Biudzetas,,,id,,,4,,,,"Gyventojų investicinių projektų atrankos informacinės sistemos „Dalyvauk“ dalyvaujamųjų biudžetų pasiūlymų duomenys.","Klaipėdos miesto savivaldybės informacinės sistemos „Dalyvauk“ duomenys, kurioje gyventojai teikia idėjas ir iniciatyvas dėl viešosios infrastruktūros gerinimo Klaipėdos mieste, taip pat dalyvauja balsavime renkant patraukliausias iniciatyvas. Lentelė sudaryta VDA ir yra atnaujinama kasmet. Šioje lentelėje pateikiami, tokie duomenys kaip pasiūlymo data ir laikas, dalyvaujamasis biudžetas, kurio metu idėja buvo pasiūlyta, siūlančioji organizacija (jei pasiūlyta ne fizinio asmens), pateikiamos idėjos, jų aprašymai, numatomi rezultatai, balsavimo rezultatai, įvykdomumo vertinimo rezultatai, duomenys apie tai, ar idėja buvo atrinkta balsavimui ir ar laimėjo balsavimą. Susipažinti su gyventojų pateiktomis iniciatyvomis galima interneto svetainėje https://dalyvauk.klaipeda.lt/."
-,,,,,id,string,,,,4,open,,Identifikatorius,
-,,,,,sukurta,timestamp,,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data ir laikas,
-,,,,,biudzetas,string,,,,4,open,,Dalyvaujamasis biudžetas,Dalyvaujamojo biudžeto leidimas ar metai,
-,,,,,organizacija,string,,,,4,open,,Organizacija,Pasiūlymą pateikusi organizacija,
-,,,,,autoriaus_id,string,,,,4,open,,Autoriaus ID,Idėjos autoriaus identifikatorius,
-,,,,,autoriaus_vardas_pavarde,string,,,,4,open,,Autoriaus vardas ir pavardė,Asmens pateikusio idėją vardas ir pavardė,
-,,,,,autoriaus_gimimo_metai,date,,,,4,open,,Gimimo metai,Autoriaus gimimo metai,
-,,,,,projekto_id,string,,,,4,open,,Projekto ID,Projekto identifikatorius sistemoje,
-,,,,,projekto_ikelimo_data,timestamp,,,,4,open,,Projekto įkėlimo data,Datos ir laiko žyma kada įtrauktas projektas,
-,,,,,projekto_pavadinimas,string,,,,4,open,,Projekto pavadinimas,Siūlomos idėjos pavadinimas,
-,,,,,projekto_aprasymas,string,,,,4,open,,Projekto aprašymas,Trumpas pasiūlymo aprašymas,
-,,,,,projekto_rezultatai,string,,,,4,open,,Projekto rezultatai,Tikėtini projekto įgyvendinimo rezultatai,
-,,,,,projekto_samata,double,,,,4,open,,Projekto sąmata,Numatoma projekto įgyvendinimo kaina,
-,,,,,samatos_paaiskinimas,string,,,,4,open,,Sąmatos paaiškinimas,Sąmatos pagrindimas ar detalizacija,
-,,,,,vieta,string,,,,4,open,,Vieta,Vietovė ar objektas kur numatomas įgyvendinimas,
-,,,,,ar_atrinkta,boolean,,,,4,open,,Atrinkta,Ar projektas atrinktas balsavimui,
-,,,,,ivykdomumas,string,,,,4,open,,Įvykdomumas,Įvykdomumo vertinimas,
-,,,,,neivykdomumo_priezastis,string,,,,4,open,,Neįvykdomumo priežastis,Priežastys kodėl projektas neįgyvendinamas,
-,,,,,komentaru_skaicius,long,,,,4,open,,Komentarų skaičius,Bendras gautų komentarų skaičius,
-,,,,,fiziniai_balsai,long,,,,4,open,,Fiziniai balsai,Gyvai atiduotų balsų skaičius,
-,,,,,balsai,long,,,,4,open,,Balsai,Bendras balsų skaičius,
-,,,,,vertinimas_baigtas,boolean,,,,4,open,,Vertinimas baigtas,Ar pasiūlymo vertinimas užbaigtas,
-,,,,,ar_laimejo,boolean,,,,4,open,,Laimėjo,Ar projektas laimėjo balsavimą,
-,,,,,paskutinis_atnaujinimas,timestamp,,,,4,open,,Paskutinis atnaujinimas,Datos ir laiko žyma kada įrašas paskutinį kartą atnaujintas,
+,,,,,id,string,,,,4,open,,Identifikatorius
+,,,,,sukurta,timestamp,,,,4,open,,Sukūrimo data,Pasiūlymo sukūrimo data ir laikas
+,,,,,biudzetas,string,,,,4,open,,Dalyvaujamasis biudžetas,Dalyvaujamojo biudžeto leidimas ar metai
+,,,,,organizacija,string,,,,4,open,,Organizacija,Pasiūlymą pateikusi organizacija
+,,,,,autoriaus_id,string,,,,4,open,,Autoriaus ID,Idėjos autoriaus identifikatorius
+,,,,,autoriaus_vardas_pavarde,string,,,,4,open,,Autoriaus vardas ir pavardė,Asmens pateikusio idėją vardas ir pavardė
+,,,,,autoriaus_gimimo_metai,date,,,,4,open,,Gimimo metai,Autoriaus gimimo metai
+,,,,,projekto_id,string,,,,4,open,,Projekto ID,Projekto identifikatorius sistemoje
+,,,,,projekto_ikelimo_data,timestamp,,,,4,open,,Projekto įkėlimo data,Datos ir laiko žyma kada įtrauktas projektas
+,,,,,projekto_pavadinimas,string,,,,4,open,,Projekto pavadinimas,Siūlomos idėjos pavadinimas
+,,,,,projekto_aprasymas,string,,,,4,open,,Projekto aprašymas,Trumpas pasiūlymo aprašymas
+,,,,,projekto_rezultatai,string,,,,4,open,,Projekto rezultatai,Tikėtini projekto įgyvendinimo rezultatai
+,,,,,projekto_samata,double,,,,4,open,,Projekto sąmata,Numatoma projekto įgyvendinimo kaina
+,,,,,samatos_paaiskinimas,string,,,,4,open,,Sąmatos paaiškinimas,Sąmatos pagrindimas ar detalizacija
+,,,,,vieta,string,,,,4,open,,Vieta,Vietovė ar objektas kur numatomas įgyvendinimas
+,,,,,ar_atrinkta,boolean,,,,4,open,,Atrinkta,Ar projektas atrinktas balsavimui
+,,,,,ivykdomumas,string,,,,4,open,,Įvykdomumas,Įvykdomumo vertinimas
+,,,,,neivykdomumo_priezastis,string,,,,4,open,,Neįvykdomumo priežastis,Priežastys kodėl projektas neįgyvendinamas
+,,,,,komentaru_skaicius,long,,,,4,open,,Komentarų skaičius,Bendras gautų komentarų skaičius
+,,,,,fiziniai_balsai,long,,,,4,open,,Fiziniai balsai,Gyvai atiduotų balsų skaičius
+,,,,,balsai,long,,,,4,open,,Balsai,Bendras balsų skaičius
+,,,,,vertinimas_baigtas,boolean,,,,4,open,,Vertinimas baigtas,Ar pasiūlymo vertinimas užbaigtas
+,,,,,ar_laimejo,boolean,,,,4,open,,Laimėjo,Ar projektas laimėjo balsavimą
+,,,,,paskutinis_atnaujinimas,timestamp,,,,4,open,,Paskutinis atnaujinimas,Datos ir laiko žyma kada įrašas paskutinį kartą atnaujintas
