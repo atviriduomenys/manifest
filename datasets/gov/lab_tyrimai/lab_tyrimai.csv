@@ -814,14 +814,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,RespublikineSiauliuLigonine,,,vda_prime_key,,,4,,,Respublikinės Šiaulių ligoninės pacientams atlikti laboratoriniai tyrimai,"Duomenų rinkinyje pateikiami nuo 2020 metų informacinėje sistemoje „PanelLIMS“ kaupiami ir iki šiol atnaujinami Respublikinės Šiaulių ligoninės atliktų laboratorinių tyrimų duomenys. Vienas įrašas atitinka vieną užsakymo kodo, tyrimo analitės ir jos reikšmių normų rėžio kombinaciją. Duomenų rinkinį sudaro: užsakymo kodas ir data, paciento identifikatorius, asmens kodas, gimimo metai ir lytis iš atitinkamų stulpelių ir galiojančių asmens kodų, tyrimo grupė, pogrupis, analitės kodas, pavadinimas, tekstinis bei skaitinis rezultatai, analitės matavimo vienetas, normos rėžiai, tyrimo analitės rezultato data ir laikas. Tekstinių rezultatų reikšmės gali būti klaidingos, nes yra išgaunamos iš stulpelio, saugančio tiek tekstines, tiek skaitines reikšmes. Duomenų teikėjas – VšĮ Respublikinės Šiaulių ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,uzsakymo_kodas,string,,,,4,open,,Tyrimo užsakymo kodas,
-,,,,,uzsakymo_data,datetime,S,,,4,open,,Tyrimo užsakymo data,
 ,,,,,paciento_id,string,,,,4,open,,Paciento šifruotas identifikatorius,
-,,,,,paciento_asmens_kodas,string,,,,4,open,,Paciento šifruotas asmens kodas,
-,,,,,paciento_asmens_kodo_validacija,string,,,,4,open,,Paciento asmens kodo validacija,
-,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
-,,,,,,,,,"""Netinkamas ilgis""",,,,Netinkamas ilgis,
-,,,,,,,,,"""Netinkama gimimo data""",,,,Netinkama gimimo data,
-,,,,,,,,,"""Netinkamas kontrolinis skaitmuo""",,,,Netinkamas kontrolinis skaitmuo,
 ,,,,,paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai,
 ,,,,,vda_paciento_gimimo_metai,date,Y,,,4,open,,Paciento gimimo metai iš asmens kodo,
 ,,,,,paciento_lytis,string,,,,4,open,,Paciento lytis,
@@ -839,7 +832,7 @@ PASITERIAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat
 ,,,,,matavimo_vienetai,string,,,,4,open,,Analitės matavimo vienetas,
 ,,,,,norma_nuo,string,,,,4,open,,Analitės apatinė norma,
 ,,,,,norma_iki,string,,,,4,open,,Analitės viršutinė norma,
-,,,,,rezultato_data,datetime,S,,,4,open,,Analitės rezultato data su laiku,
+,,,,,rezultato_data,date,D,,,4,open,,Analitės rezultato data su laiku,
 ,,,,,,,,,,,,,,
 ,,,,BirzuPoliklinika,,,vda_prime_key,,,4,,,Biržų rajono savivaldybės poliklinikos pacientams atlikti laboratoriniai tyrimai,"Biržų raj. sav. poliklinikos sistemoje „OpenLIMS“ kaupiami įstaigos pacientams atliktų laboratorinių tyrimų duomenys. Rinkinyje pateikiami nuo 2018 metų vasario mėnesio duomenys, atnaujinami iki šiol. Duomenų rinkinį sudaro: įstaigos pavadinimas, paciento šifruotas identifikatorius, lytis, gimimo metai, tyrimų grupė, tyrimo data, tyrimo mėginio / ėminio tipas, tyrimo analitės pavadinimas, analitės LOINC kodas, analitės rezultatas bei normalių rezultato reikšmių rėžiai (suapvalinti 5 skaitmenų tikslumu), rezultato matavimo vienetai, paciento pagrindinės diagnozės TLK-10-AM kodas ir pavadinimas. Vienas įrašas atitinka vieną tyrimo-analitės kombinaciją. OpenLIMS sistemoje yra saugomi analičių, tačiau ne jų sudaromų tyrimų pavadinimai. Duomenų teikėjas – VšĮ Biržų rajono savivaldybės poliklinika. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt"
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
