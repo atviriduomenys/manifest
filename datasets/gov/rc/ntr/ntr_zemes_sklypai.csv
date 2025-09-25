@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,ref,/datasets/gov/rc/ar/savivaldybe/Savivaldybe,,,4,open,,Savivaldybė,Savivaldybės pavadinimas
 ,,,,,seniunija,ref,/datasets/gov/rc/ar/seniunija/Seniunija,,,4,open,,Seniūnija,Savivaldybėje esančios seniūnijos pavadinimas
 ,,,,,pask_tipas,ref,/datasets/gov/rc/ntr/ntr_paskirtys/NtrPaskirtiesTipas,,,4,open,,Paskirties tipas,Pagrindinė žemės sklypo naudojimo paskirtis 
-,,,,,naub_budas,ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
+,,,,,naub_budas[],ref,/datasets/gov/rc/ntr/ntr_naudojimo_budai/NtrNaudojimoBudas,,,4,open,,Naudojimo būdas,Žemės naudojimo būdas
 ,,,,,sklypo_pl,number,,,,3,open,,Žemės sklypo plotas,Žemės sklypo plotas
 ,,,,,naudmenu_pl,number,,,,3,open,,Naudmenų plotas,Bendras žemės sklype esančių žemės ūkio naudmenų žemės plotas
 ,,,,,ariamas_pl,number,,,,3,open,,Ariamos žemės plotas,Žemės sklype esančios ariamos žemės naudmenos žemės plotas
