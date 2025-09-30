@@ -1,0 +1,132 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/id_vilnius/vilniaus_dnr,,,,,,,,,,,,Vilniaus miesto istoriniai duomenys - Vilniaus DNR,"""Duomenų rinkinys apie Vilniaus istorinius objektus – žemėlapius, nuotraukas, gatves, skulptūras, atminimo lentas, asmenybes ir jų tarpusavio ryšius. Duomenys yra naudojami bendrovės „ID Vilnius“ portale „Vilniaus DNR“ (https://zemelapiai.vplanas.lt/vilniausdnr/lt). Duomenų rinkinį sudaro devynios lentelės:
+1. Mieste įamžintos asmenybės;
+2. Gatvės pavadintos asmenybių vardais;
+3. Vilniuje įamžintų asmenybių tarpusavio ryšiai;
+4. Skulptūros ir atminimo lentos;
+5. Vilniaus gatvės ir istoriniai jų pavadinimai;
+6. Vilniaus miesto žemėlapiai;
+7. Vilniaus miesto žemėlapių nuorodos į istorines gatves;
+8. Vilniaus miesto istoriniai įvykiai;
+9. Vilniaus miesto nuotraukos.
+
+Duomenų teikėjas – „ID Vilnius“
+Duomenys kaupiami nuo 2021 sausio 1 d.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Asmenybe,,,asmenybes_id,,,4,,,Mieste įamžintos asmenybės,"""Duomenys iš „ID Vilnius“ apie asmenybes, kurioms Vilniaus mieste įrengtos atminimo lentos, skulptūros, paminklai ar jų vardais pavadintos gatvės. Viena lentelės eilutė atitinka informaciją apie vieną asmenybę. Eilutėje esančią informaciją sudaro: asmenybės vardas ir pavardė, slapyvardis(-džiai), pagrindinė šnekamoji kalba, gimimo ir mirties datos ir vietos, požymis, nurodantis, ar asmenybei pastatyta atminimo lenta, atminimo lentos lokacija, prieinamumas, asmenybės profesija, kūryba, ryšys su Vilniumi, apdovanojimai, nuotrauka bei jos aprašymas ir šaltinis, iš kurio gauta informacija apie asmenybę. Paskutiniuose keturiuose stulpeliuose pateikiamas asmenybės vardas ir pavardė kitomis kalbomis."""
+,,,,,asmenybes_id,string,,,,4,open,,Sisteminis asmenybės identifikacinis numeris (pirminis raktas),
+,,,,,var_pavar,string,,,,4,open,,Asmenybės vardas ir pavardė lietuvių kalba,
+,,,,,slapyvardis,string,,,,4,open,,Asmenybės slapyvardis(-džiai),
+,,,,,pagr_kalba,string,,,,4,open,,Asmenybės pagrindinė šnekamoji kalba,
+,,,,,gimimo_data_text,string,,,,3,open,,Gimimo arba krikšto data tekstiniu formatu,
+,,,,,gimimo_data_form,date,D,,,4,open,,Suformatuota gimimo arba krikšto data datos tipo formatu iš tekstinio gimimo datos laukelio,
+,,,,,gimimo_vieta,string,,,,4,open,,Asmenybės gimimo vieta,
+,,,,,mirties_data_text,string,,,,3,open,,Mirties data tekstiniu formatu,
+,,,,,mirties_data_form,date,D,,,4,open,,Mirties data datos tipo formatu gauta iš tekstinio mirties datos stulpelio,
+,,,,,mirties_vieta,string,,,,4,open,,Miestas arba šalis, kurioje asmenybė mirė,
+,,,,,kapines,string,,,,4,open,,Kapinės, kurios palaidota asmenybė,
+,,,,,palaid_vieta,string,,,,4,open,,Palaidojimo vieta žemėlapyje,
+,,,,,ar_yra_lenta,boolean,,,,4,open,,Požymis, nurodantis ar asmenybei turi atminimo lentą,
+,,,,,lentos_prieinamumas,string,,,,4,open,,Atminimo lentos prieinamumas,
+,,,,,lentos_adresas,string,,,,4,open,,Atminimo lentos adresas,
+,,,,,profesija,string,,,,4,open,,Asmens profesija,
+,,,,,kuryba,string,,,,4,open,,Asmens kūryba,"""Asmens kūryba arba veikla, kuri įamžino asmenybę"""
+,,,,,rys_su_vln,string,,,,4,open,,Asmenybės ryšys su Vilniumi,
+,,,,,apdovanojimai,string,,,,4,open,,Asmenybės apdovanojimai,"""Apdovanojimai, kuriuos gavo asmenybė"""
+,,,,,nuotrauka,string,,,,4,open,,Asmenybės nuotrauka,
+,,,,,nuotraukos_aprasymas,string,,,,4,open,,Nuotraukos aprašymas,
+,,,,,saltinis,string,,,,4,open,,Faktų apie asmenybę šaltinis,
+,,,,,var_pavar_kt_kalba,string,,,,4,open,,Vardas ir pavardė kita kalba,
+,,,,,var_pavar_ang,string,,,,4,open,,Vardas ir pavardė anglų kalba,
+,,,,,var_pavar_len,string,,,,4,open,,Vardas ir pavardė lenkų kalba,
+,,,,,var_pavar_ru,string,,,,4,open,,Vardas ir pavardė rusų kalba,
+,,,,,,,,,,,,,,
+,,,,AsmenybėsGatvė,,,vda_prime_key,,,4,,,Gatvės pavadintos asmenybių vardais,"""Duomenys iš „ID Vilnius“ apie gatves, kurioms suteikti asmenybių vardų pavadinimai. Viena lentelės eilutė atitinka vieną gatvę su jai priskirta asmenybe. Eilutės informaciją sudaro unikalios eilutės ir asmenybės identifikaciniai numeriai, gatvės pavadinimas ir geometrinis gatvės liniją atvaizduojantis stulpelis."""
+,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
+,,,,,asmenybes_id,string,,,,4,open,,Asmens susijusio su gatve identifikacinis numeris,
+,,,,,pav,string,,,,4,open,,Gatvės pavadinimas,
+,,,,,geometrija,geometry(4326),,,,4,open,,Gatvės koordinatės WGS-84 koordinačių sistemoje,
+,,,,,,,,,,,,,,
+,,,,AsmenybėsRyšys,,,rysio_id,,,4,,,Vilniuje įamžintų asmenybių tarpusavio ryšiai,"""Duomenys iš „ID Vilnius“ apie Vilniuje įamžintų asmenybių tarpusavio ryšius. Vienoje lentelės eilutėje nurodomas vienas ryšys tarp dviejų Vilniuje įamžintų asmenybių. Eilutės informaciją sudaro ryšio, asmenybės ir susijusios asmenybės identifikaciniai numeriai iri ryšio tipas. Jei nėra nurodytas susijusios asmenybės identifikacinis numeris, tuomet paskutiniame stulpelyje įrašomas susijusios asmenybės vardas ir pavardė."""
+,,,,,rysio_id,string,,,,4,open,,Asmenybių ryšio identifikacinis numeris (pirminis raktas),
+,,,,,asmenybes_id,string,,,,4,open,,Asmenybės identifikacinis numeris,
+,,,,,susijusios_asmenybes_id,string,,,,4,open,,Susijusios asmenybės identifikacinis numeris,
+,,,,,rysio_tipas,string,,,,4,open,,Asmenybių ryšio tipas,
+,,,,,susijes_asmuo_text,string,,,,4,open,,Susijusi asmenybė,"""Susijusios asmenybės vardas ir pavardė, kuomet nėra susijusios asmenybės identifikacinio numerio"""
+,,,,,,,,,,,,,,
+,,,,AtminimoObjektas,,,objekto_id,,,4,open,,Skulptūros ir atminimo lentos,"""Duomenys iš „ID Vilnius“ apie Vilniaus mieste esančias atminimo lentas, skulptūras, kitus meninius ar mažosios architektūros objektus bei programos „Kuriu Vilnių“ metu įgyvendintus meno projektus. Viena lentelės eilutė yra vienas unikalus objektas. Eilutės informaciją sudaro objekto identifikacinis numeris, pavadinimas,  ant objekto esantis tekstas, objekto aprašymas, seniūnija, adresas ir geolokacija, kur objektas yra pastatytas, objekto įrengimo data,  užsakovas, autorius, architektas, skulptorius, informacija apie objekto konstrukciją. Paskutiniai du stulpeliai nurodo, ar objektas yra pašalintas ir kada pašalintas."""
+,,,,,objekto_id,string,,,,4,open,,Skulptūros arba atminimo objekto identifikacinis numeris (pirminis raktas),
+,,,,,pavadinimas,string,,,,4,open,,Skulptūros arba atminimo objekto pavadinimas,
+,,,,,tekstas,string,,,,4,open,,Tekstas esantis ant skulptūros arba atminimo objekto,
+,,,,,aprasymas,string,,,,4,open,,Skulptūros arba atminimo objekto aprašymas,
+,,,,,seniunija,string,,,,4,open,,Seniūnija,"""Seniūnijos pavadinimas, kuriame stovi skulptūra arba atminimo objektas"""
+,,,,,lokacija,string,,,,4,open,,Skulptūros arba atminimo objekto adresas,
+,,,,,geometrija,geometry(4326),,,,4,open,,Geometrija,Skulptūros arba atminimo objekto koordinatės WGS-84 koordinačių sistemoje
+,,,,,irengtas,date,D,,,4,open,,Skulptūros arba atminimo objekto įrengimo data,
+,,,,,uzsakovas,string,,,,3,open,,Skulptūros arba atminimo objekto užsakovas,
+,,,,,autorius,string,,,,4,open,,Skulptūros arba atminimo objekto sumanymo autorius,
+,,,,,architektas,string,,,,4,open,,Skulptūros arba atminimo objekto architektas,
+,,,,,skulptorius,string,,,,4,open,,Skulptūros arba atminimo objekto skulptorius,
+,,,,,konstrukc,string,,,,3,open,,Konstrukcija iš kurios sudaryta skulptūra arba atminimo objektas,
+,,,,,obj_pasal,boolean,,,,4,open,,Objektas pašalintas,"""Požymis, nurodantis, ar skulptūra arba atminimo objektas yra pašalintas"""
+,,,,,obj_pasal_data,date,Y,,,4,open,,Skulptūros arba atminimo objekto pašalinimo data,
+,,,,,,,,,,,,,,
+,,,,Gatvė,,,vda_prime_key,,,4,,,Vilniaus gatvės ir istoriniai jų pavadinimai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto gatves ir kai kurių gatvių istorinius pavadinimus. Viena lentelės eilutė yra dabartinė gatvė ir jos istorinis pavadinimas. Jei gatvė neturi informacijos apie istorinį pavadinimą, tuomet nurodomas tik dabartinis gatvės pavadinimas su jos koordinatėmis. Eilutės informaciją sudaro dabartinės gatvės identifikacinis numeris, klasė, poklasis, pavadinimas, pavadinimo reikšmė ir gatvės koordinačių linija, taip pat istorinės gatvės identifikacinis numeris, pavadinimas, žemėlapio, kuriame gatvė nustatyta,sudarymo metai ir istorinės gatvės lokacija koordinačių sistemoje."""
+,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius (pirminis raktas) sudarytas iš stulpelių dabartine_gatve_id ir istorine_gatve_id"""
+,,,,,dabartine_gatve_id,string,,,,4,open,,Dabar egzistuojančios gatvės identifikacinis numeris,
+,,,,,klase,string,,,,4,open,,Dabar egzistuojančios gatvės klasė,
+,,,,,poklasis,string,,,,4,open,,Dabar egzistuojančios gatvės poklasis,
+,,,,,dabartine_gatve,string,,,,4,open,,Dabartinės gatvės pavadinimas,
+,,,,,gatves_paaiskinimas,string,,,,4,open,,Dabartinės gatvės pavadinimo paaiškinimas,
+,,,,,dabartine_geometrija,geometry(4326),,,,4,open,,Dabartinės gatvės linijinės koordinatės WGS-84 formatu,
+,,,,,istorine_gatve_id,string,,,,4,open,,Istorinės gatvės identifikacinis numeris,
+,,,,,istorine_gatve,string,,,,4,open,,Istorinės gatvės pavadinimas,
+,,,,,zemelapio_metai,date,Y,,,4,open,,Žemėlapio metai,"""Žemėlapio sudarymo metai, kuriame yra istorinė gatvė"""
+,,,,,istorine_geometrija,geometry(4326),,,,4,open,,Istorinės gatvės koordinatės WGS-84 formatu,
+,,,,,,,,,,,,,,
+,,,,Žemėlapis,,,zemelapio_id,,,4,,,Vilniaus miesto žemėlapiai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto planus, žemėlapius, ortografines nuotraukas ir kitą kartografinę medžiagą. Viena lentelės eilutė yra vienas žemėlapis (kartografinis objektas). Eilutės informaciją sudaro žemėlapio identifikacinis numeris, pavadinimas, autorius, sudarymo data, aprašymas, grupė, tipas, mastelis, šaltinis, šaltinio, žemėlapio ir legendos nuorodos."""
+,,,,,zemelapio_id,sstring,,,,4,open,,Žemėlapio identifikacinis numeris (pirminis raktas),
+,,,,,pavadinimas,string,,,,4,open,,Žemėlapio pavadinimas,
+,,,,,autorius,string,,,,4,open,,Žemėlapio sudarytojas,
+,,,,,sudarymo_data_txt,string,,,,3,open,,Žemėlapio sudarymo metai (amžius) tekstiniu formatu,
+,,,,,sudarymo_data,date,Y,,,4,open,,Žemėlapio sudarymo data,
+,,,,,aprasymas,string,,,,4,open,,Žemėlapio aprašymas,
+,,,,,grupe,string,,,,4,open,,Žemėlapio grupė,
+,,,,,tipas,string,,,,4,open,,Žemėlapio tipas,
+,,,,,mastelis,string,,,,4,open,,Žemėlapio mastelis,
+,,,,,saltinis,string,,,,3,open,,Žemėlapio šaltinio pavadinimas,
+,,,,,saltinio_nuoroda,string,,,,4,open,,Nuoroda į žemėlapio šaltinį,
+,,,,,zemelapio_nuoroda,string,,,,4,open,,Nuorodą į žemėlapį,
+,,,,,legendos_nuoroda,string,,,,4,open,,Nuoroda į žemėlapio legendą,
+,,,,,,,,,,,,,,
+,,,,ŽemėlapioRyšys,,,vda_prime_key,,,4,,,Vilniaus miesto žemėlapių nuorodos į istorines gatves,"""Duomenys iš „ID Vilnius“ apie žemėlapių ir istorinių gatvių ryšius. Viena lentelės eilutė nurodo vieną ryšį tarp žemėlapio (istorinio šaltinio) ir istorinės gatvės, referuojančios į tą žemėlapį. Eilutės informaciją sudaro žemėlapio ir istorinės gatvės identifikaciniai numeriai."""
+,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius (pirminis raktas) sudarytas iš stulpelių zemelapio_id ir istorine_gatve_id"""
+,,,,,zemelapio_id,string,,,,4,open,,Žemėlapio identifikacinis numeris,
+,,,,,istorine_gatve_id,string,,,,4,open,,Istorinės gatvės identifikacinis numeris,
+,,,,,,,,,,,,,,
+,,,,IstorinisĮvykis,,,ivykio_id,,,4,,,Vilniaus miesto istoriniai įvykiai,"""Duomenys iš „ID Vilnius“ apie svarbiausius Vilniaus miesto istorinius įvykius. Viena lentelės eilutė yra vienas unikalus įvykis. Eilutės informaciją sudaro įvykio identifikacinis numeris, įvykio pavadinimas, istorinis įvykių juostos laikotarpis, data, vieta, nuotrauka ir jos aprašymas."""
+,,,,,ivykio_id,string,,,,4,open,,Įvykio identifikacinis numeris (pirminis raktas),
+,,,,,ivykis,string,,,,4,open,,Įvykio pavadinimas,
+,,,,,vilniaus_laikotarpis,string,,,,4,open,,Vilniaus istorinis laikotarpis,"""Vilniaus istorinių įvykių juostos laikotarpis, kuriam priklauso įvykis"""
+,,,,,data,date,D,,,4,open,,Įvykio data,
+,,,,,vieta,string,,,,4,open,,Įvykio vieta,
+,,,,,nuotrauka,string,,,,4,open,,Nuotrauka susijusi su įvykiu,
+,,,,,nuotraukos_aprasymas,string,,,,4,open,,Nuotraukos aprašymas,
+,,,,,,,,,,,,,,
+,,,,Nuotrauka,,,nuotraukos_id,,,4,,,Vilniaus miesto nuotraukos,"""Duomenys iš „ID Vilnius“ apie istorines Vilniaus miesto fotografijas ir atvirutes. Viena eilutė yra viena unikali nuotrauka ar atvirutė. Eilutės informaciją sudaro nuotraukos identifikacinis numeris, pavadinimas, tipas, autorius, nuotraukos aprašymas, laikotarpis, šaltinis, šaltinio nuoroda, nuotraukos nuoroda ir preliminari nuotraukos atlikimo vieta koordinačių sistemoje."""
+,,,,,nuotraukos_id,string,,,,4,open,,Nuotraukos identifikacinis numeris (pirminis raktas),
+,,,,,pavadinimas,string,,,,4,open,,Nufotografuto objekto pavadinimas,
+,,,,,tipas,string,,,,4,open,,Nufotografuoto objekto tipas,
+,,,,,autorius,string,,,,4,open,,Nuotraukos autorius,
+,,,,,aprasymas,string,,,,4,open,,Nuotraukos aprašymas,
+,,,,,laikotarpis,string,,,,4,open,,Laikotarpis,"""Laikotarpis, kada buvo atlikta nuotrauka"""
+,,,,,laikotarpio_pradzia,date,Y,,,4,open,,Laikotarpio pradžia,"""Laiko intervalo pradžia, kada nuotrauka galėjo būti atlikta"""
+,,,,,laikotarpio_pabaiga,date,Y,,,4,open,,Laikotarpio pabaiga,"""Laiko intervalo pabaiga, kada nuotrauka galėjo būti atlikta"""
+,,,,,saltinis,string,,,,4,open,,Nuotraukos šaltinio pavadinimas,
+,,,,,saltinio_nuoroda,string,,,,4,open,,Nuoroda į šaltinį,
+,,,,,nuotraukos_nuoroda,string,,,,4,open,,Nuoroda į nuotrauką,
+,,,,,geometrija,geometry(4326),,,,4,open,,Geometrija,"""WGS-84 koordinatės taškas, kuriame galėjo būti atlikta nuotrauka"""
