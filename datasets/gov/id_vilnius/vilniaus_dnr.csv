@@ -89,7 +89,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,istorine_geometrija,geometry(4326),,,,4,open,,Istorinės gatvės koordinatės WGS-84 formatu,
 ,,,,,,,,,,,,,,
 ,,,,Žemėlapis,,,zemelapio_id,,,4,,,Vilniaus miesto žemėlapiai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto planus, žemėlapius, ortografines nuotraukas ir kitą kartografinę medžiagą. Viena lentelės eilutė yra vienas žemėlapis (kartografinis objektas). Eilutės informaciją sudaro žemėlapio identifikacinis numeris, pavadinimas, autorius, sudarymo data, aprašymas, grupė, tipas, mastelis, šaltinis, šaltinio, žemėlapio ir legendos nuorodos."""
-,,,,,zemelapio_id,sstring,,,,4,open,,Žemėlapio identifikacinis numeris (pirminis raktas),
+,,,,,zemelapio_id,string,,,,4,open,,Žemėlapio identifikacinis numeris (pirminis raktas),
 ,,,,,pavadinimas,string,,,,4,open,,Žemėlapio pavadinimas,
 ,,,,,autorius,string,,,,4,open,,Žemėlapio sudarytojas,
 ,,,,,sudarymo_data_txt,string,,,,3,open,,Žemėlapio sudarymo metai (amžius) tekstiniu formatu,
