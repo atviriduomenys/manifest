@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Leidimas,,,vda_prime_key,,,4,,,Leidimai,"Duomenys apie suteiktą teisę atlikti tam tikrą veiklą ar naudotis lengvata. Čia matoma, kam išduota, koks tipas, kokia būsena ir nuo kada iki kada galioja."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
-,,,,,leid_aun,string,string,,,,4,open,,Leidimo registracijos numeris (AUN),
+,,,,,leid_aun,string,,,,4,open,,Leidimo registracijos numeris (AUN),
 ,,,,,leid_asm_ident_nr,string,,,,4,open,,Leidimo turėtojo kodas,
 ,,,,,leid_asm_tipas,string,,,,4,open,,Leidimo turėtojo kodo rūšis,
 ,,,,,leid_isdav_ist_kod,string,,,,4,open,,Leidimą išdavusios muitinės įstaigos kodas,
