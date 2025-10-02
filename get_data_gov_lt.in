@@ -934,3 +934,4 @@ datasets/gov/nvspl/sars_cov_sekoskaitos.csv
 datasets/gov/vilniaus_m_sav/registruotos_problemos.csv
 datasets/gov/kauno_m_sav/leidimu_apmokejimai.csv
 datasets/gov/id_vilnius/vilniaus_dnr.csv
+datasets/gov/muitine/leidimu_duomenys.csv
