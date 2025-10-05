@@ -10,7 +10,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipas,string,,,,4,open,,Konsultuoto asmens lytis,
 ,,,,,sritis,string,,,,4,open,,Lygių galimybių įstatyme nurodyta viena iš penkių sričių,
 ,,,,,pagrindas,string,,,,4,open,,Lygių galimybių įstatymo numatytas vienas iš keturiolikos pagrindų,
-,,,,,pastabos,string,,,,4,open,,Konsultavimo priežastis,
 ,,,,,konsultacijos_budas,string,,,,4,open,,Konsultacijos būdas,
 ,,,,,savivaldybe,string,,,,4,open,,"Savivaldybė, kurioje asmuo gyvena arba įvyko pažeidimo veiksmas. Pildoma nuo 2023 metų",
 ,,,,,saltinis,integer,,,,4,open,,Duomenų šaltinio metai,
