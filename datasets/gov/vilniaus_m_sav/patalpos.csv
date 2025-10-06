@@ -45,7 +45,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,naudotoju_sk,integer,U,,,4,open,,Veikloje dalyvaujančių asmenų skaičius,
 ,,,,,antroji_salis,string,,,,4,open,,Sutarties antrosios šalies pavadinimas,
 ,,,,,jar_kodas,string,,,,4,open,,Antrosios šalies juridinio asmens kodas,
-,,,,,jar_validacija,boolean,,,,4,open,,Juridinio asmens kodo validacijos požymis,
+,,,,,jar_validacija,string,,,,4,open,,Juridinio asmens kodo validacijos požymis,
 ,,,,,nuomos_valandu_sk,number,h,,,4,open,,Sutartyje nurodytas patalpų nuomos valandų skaičius,
 ,,,,,nutraukimas,date,D,,,4,open,,"Jei sutartis buvo nutraukta, nurodoma nutraukimo data",
 ,,,,,kaina_reitingas,integer,,,,4,open,,"Sutartyje nurodyta patalpų kaina neatvaizduojama, tačiau ji išreitinguojama pagal visų rinkinyje nurodytų sutarčių sumas.",
