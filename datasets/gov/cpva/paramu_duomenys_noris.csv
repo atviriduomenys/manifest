@@ -25,7 +25,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,,,,,,
 ,,,,Sutartis,,,,,,4,,,"Pateiktos paraiškos bei pasirašytos finansuoti sutartys	","Ši lentelė aprašo projektus, įgyvendinamus pagal 2014–2021 m. Europos ekonominės erdvės ir Norvegijos finansinius mechanizmus, kuriuos administruoja Centrinė projektų valdymo agentūra. Joje pateikiama informacija apie kiekvieną projektą – pareiškėją, projekto kodą, pavadinimą, prašomą ir patvirtintą finansavimą, sutarties datas, projekto veiklų laikotarpį, būseną bei atsakingas institucijas. Duomenys leidžia analizuoti projektų finansavimą, įgyvendinimo eigą ir geografinį pasiskirstymą savivaldybių bei institucijų lygmeniu."
 ,,,,,project_id,string,,,,4,open,,Sutarties identifikatorius,
-,,,,,pareiskejo_ja_kodas,string,,,,4,open,,Pareikškėjo JAR kodas,
+,,,,,pareiskejo_ja_kodas,string,,,,4,open,,Pareiškėjo JAR kodas,
 ,,,,,istaigos_reg_savivaldybe,string,,,,4,open,,Pareikškėjo registracijos savivaldybė,
 ,,,,,pateikimo_data,datetime,L,,,4,open,,Pateikimo data,
 ,,,,,projekto_pavadinimas_lt,string,,,,2,open,,Projekto pavadinimas,
@@ -46,4 +46,4 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,atsakingos_institucijos_santrumpa,string,,,,4,open,,Atsakingos institucijos santrumpa,
 ,,,,,atsakingos_institucijos_jar,string,,,,4,open,,Atsakingos institucijos JAR kodas,
 ,,,,,apskritis,string,,,,4,open,,Atsakingos institucijos apskritis,
-,,,,,savivaldybe,string,,,,4,open,,Savivladybė kuriai tenka didžioji dalis paramos,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė kuriai tenka didžioji dalis paramos,
