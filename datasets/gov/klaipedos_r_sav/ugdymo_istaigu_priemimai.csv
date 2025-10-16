@@ -49,7 +49,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,teikejo_stovyklos_pavadinimas,string,,,,4,open,,Stovyklos organizatoriaus ir stovyklos pavadinimas,
 ,,,,,stovyklos_adresas,string,,,,4,open,,Stovyklos adresas,
 ,,,,,stovyklos_koord,"geometry(point, 3346)",,,,4,open,,Stovyklos koordinatės,
-,,,,,stovyklos_tipas,string,,,,4,open,,Stovyklos tipas,Stacionari stovykla arba dieninė
+,,,,,stovyklos_tipas,string,,,,4,open,,Stovyklos tipas,
 ,,,,,registracijos_pradzia,date,D,,,4,open,,Registracijos į stovyklą pradžios data,
 ,,,,,registracijos_pabaiga,date,D,,,4,open,,Registracijos į stovyklą pabaigos data,
 ,,,,,amziaus_grupe,string,,,,4,open,,Stovyklos amžiaus grupė,
