@@ -10,7 +10,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,Projektas,,,vda_id,,,4,,,Lietuvos Respublikos Vyriausybės strateginio projektų portfelio valdymo duomenys,"Lentelės objektas - vienas vykdomas ar baigtas vykdyti projektas. Per lauką ""projekto_id"" jungiasi su kitomis rinkinio lentelėmis."
-,,,,,vda_id,string,,,,4,open,,ValstybÄ—s DuomenÅ³ AgentÅ«ros unikalus ÄÆraÅo identifikatorius,
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros unikalus įrašo identifikatorius,
 ,,,,,projekto_id,string,,,,4,open,,Projekto identifikacinis numeris,
 ,,,,,strat_portfelis,string,,,,4,open,,Vyriausybės kadencijos klasifikatorius,
 ,,,,,projekto_pavadinimas,string,,,,4,open,,Projekto pavadinimas,
@@ -20,7 +20,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,projekto_aprasymas,string,,,,4,open,,Projekto aprašymas,
 ,,,,,pradzia,date,D,,,4,open,,Projekto pradÅ¾ios data,
 ,,,,,pabaiga,date,D,,,4,open,,Projekto pabaigos data,
-,,,,,biudzetas_eur,number,,,,2,open,,Projekto biudÅ¾etas eurais,
+,,,,,biudzetas_eur,number,,,,2,open,,Projekto biudžetas eurais,
 ,,,,,,comment,,,"update(type: ""money"", ref: ""EUR"")",4,open,spinta:40,,
 ,,,,,proj_tikslas,string,,,,4,open,,Projekto tikslai,
 ,,,,,strat_tikslas,string,,,,4,open,,Strateginiai projekto tikslai,
