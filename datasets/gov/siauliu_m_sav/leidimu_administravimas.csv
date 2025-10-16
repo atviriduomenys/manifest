@@ -127,4 +127,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sumoketu_imoku_suma,number,,,,4,open,,Sumokėtų įmokų suma už mokestinius metus eurais,
 ,,,,,sumoketu_imoku_skaicius,integer,,,,4,open,,Mokamų įmokų skaičius mokestiniais metais,
 ,,,,,sumoketu_imoku_irasai,integer,,,,4,open,,Įrašų skaičius mokestiniais metais,
-
