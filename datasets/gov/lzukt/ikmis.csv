@@ -34,6 +34,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,augalo_pavadinimas,string,,,,4,open,,Stebėto augalo pavadinimas,
 ,,,,,ligos_kenkejo_pavadinimas,string,,,,4,open,,Aptiktos ligos ar kenkėjo pavadinimas,
 ,,,,,ligos_kenkejo_pavadinimas_lot,string,,,,4,open,,Aptiktos ligos ar kenkėjo pavadinimas lotyniškai,
-,,,,,zalingumo_ivertis,intiger,,,,4,open,,Žalingumo įvertis,
+,,,,,zalingumo_ivertis,integer,,,,4,open,,Žalingumo įvertis,
 ,,,,,pazeidimo_lygis,string,,,,4,open,,Augalų pažeidimo lygis,
 ,,,,,savivaldybe,string,,,,4,open,,"Savivaldybė, kuriuoje atlikti stebėjimai",
