@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Ivertis,,,vda_id,,,4,open,,Augalų kenksmingų organizmų plitimo žalingumo įverčiai,"Integruotos augalų apsaugos informavimo, konsultavimo ir mokymų informacinė sistemos augalų kenksmingų organizmų plitimo žalingumo įverčiai"
 ,,,,,vda_id,string,,,,4,open,,Unikalus stebėjimo identifikatorius,
-,,,,,stebejimo_data,date,,,,4,open,,Stebėjimo data,
+,,,,,stebejimo_data,date,D,,,4,open,,Stebėjimo data,
 ,,,,,augalo_pavadinimas,string,,,,4,open,,Stebėto augalo pavadinimas,
 ,,,,,ligos_kenkejo_pavadinimas,string,,,,4,open,,Aptiktos ligos ar kenkėjo pavadinimas,
 ,,,,,ligos_kenkejo_pavadinimas_lot,string,,,,4,open,,Aptiktos ligos ar kenkėjo pavadinimas lotyniškai,
