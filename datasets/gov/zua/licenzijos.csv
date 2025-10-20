@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Licencija,,,paraiskos_identifikatorius,,,4,open,,Paraiškų ir licencijų duomenys,"Rinkinyje pateikiama informacija apie paraiškas gauti licencijas, teikiamas Žemės ūkio agentūrai. Duomenys apima paraiškų identifikatorius, pateikimo ir patvirtinimo datas, produktų aprašymus ir kiekius, eksporto tipus, garantijos sumas, įmonių pavadinimus ir adresus bei geografines koordinates (LKS-94)."
+,,,,Licenzija,,,paraiskos_identifikatorius,,,4,open,,Paraiškų ir licencijų duomenys,"Rinkinyje pateikiama informacija apie paraiškas gauti licencijas, teikiamas Žemės ūkio agentūrai. Duomenys apima paraiškų identifikatorius, pateikimo ir patvirtinimo datas, produktų aprašymus ir kiekius, eksporto tipus, garantijos sumas, įmonių pavadinimus ir adresus bei geografines koordinates (LKS-94)."
 ,,,,,paraiskos_identifikatorius,string,,,,4,open,,Unikalus paraiškos identifikatorius,
 ,,,,,pateikimo_data,datetime,L,,,4,open,,Paraiškos pateikimo data,
 ,,,,,patvirtinimo_data,datetime,L,,,4,open,,Paraiškos patvirtinimo data,
