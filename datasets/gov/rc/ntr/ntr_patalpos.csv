@@ -20,10 +20,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuoteku_salinimas,integer,,,,2,open,,Nuotakų šalinimas,Nuotakų šalinimo sistema objekte (patalpose / bute) 
 ,,,,,dujos,integer,,,,2,open,,Dujos,Objekto (patalpų / buto) aprūpinimas dujomis
 ,,,,,karstas_vanduo,integer,,,,2,open,,Karštas vanduo,Objekto (patalpų / buto) aprūpinimas karštu vandeniu
-,,,,,elektra,string,,,,2,open,,Elektra,Objekto (patalpų / buto) aprūpinimas elektros instaliacija 
 ,,,,,virykle,integer,,,,2,open,,Viryklė,Viryklės objekte (patalpose / bute) buvimo požymis ir tipas
 ,,,,,vonios_kambarys,integer,,,,2,open,,Vonios kambarys,Vonios kambario objekte (patalpose / bute) buvimo požymis
-,,,,,vedin_kondicionav,integer,,,,2,open,,Vėdinimas-kondicionavimas,Objekto (patalpų / buto) aprūpinimas vėdinimo kondicionavimo sistema
 ,,,,,kambariu_sk,integer,U,,,4,open,,Kambarių skaičius,Objekto (patalpų / buto) kambarių skaičius
 ,,,,,aukstas,integer,,,,4,open,,Aukštas,"Aukštas, kuriame yra objektas (patalpos / butas)"
 ,,,,,baigtumo_proc,integer,,,,3,open,,Baigtumo procentas,Objekto (patalpų / buto) statybos baigtumas procentais

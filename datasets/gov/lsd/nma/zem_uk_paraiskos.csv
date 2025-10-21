@@ -1,0 +1,33 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/nma,,,,,,,,,,,,Nacionalinė mokėjimų agentūra,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Deklaracija,,,paraiskos_id,,,4,,,Pasėlių heterogeniškumo vertinimų duomenys,"Rinkinyje skelbiami Automatinės laukų nuolatinio stebėjimo sistemos (ALNSIS) pasėlių heterogeniškumo (netolygumo) vertinimų duomenys. Algoritmas naudoja pikselinę klasifikaciją ir mašininio mokymo metodus, pagrįstus Sentinel-1 ir Sentinel-2 palydovų duomenimis, siekiant identifikuoti skirtingus augalų tipus, augimo fazes ir netolygumus pasėlių laukuose. Analizė padeda nustatyti pasėlių sudėtį bei galimas problemas, tokias kaip piktžolės ar nevienodas augimas.
+Algoritmo pagalba galima nustatyti, kokia yra reali augalų sudėtis deklaruotame pasėlyje – apskaičiuojamas skirtingų augalų tipų procentinis pasiskirstymas lauko viduje. Taip pat galima įvertinti, kokią dalį ploto faktiškai užima deklaruotas pasėlis, palyginti su kitais augalais ar žemės dangos elementais.
+Pateikiami duomenys apie pareiškėją, deklaruojamą lauką (žemės ūkio valdos atpažinties kodas, plotas, savivaldybė ir seniūnija) ir algoritmo būdu nustatytus pasėlių plotus, išreikštus procentais nuo viso ploto.
+
+Duomenų teikėjas: Nacionalinė mokėjimo agentūra prie Žemės ūkio ministerijos..
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,paraiskos_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
+,,,,,nma_id,string,,,,4,open,,Nacionalinės mokėjimų agentūros paraiškos numeris,
+,,,,,pareiskejas,string,,,,4,open,,Paraišką teikęs asmuo.,Gali būti fizinis arba juridinis asmuo.
+,,,,,valdos_numeris,string,,,,4,open,,"Žemės ūkio valdos atpažinties kodas, suteikiamas Lietuvos Respublikos žemės ūkio ir kaimo verslo registre",
+,,,,,plotas_ha,number,ha,,,4,open,,Deklaruojamo lauko plotas hektarais.,
+,,,,,savivaldybe,string,,,,4,open,,Deklaruojamo lauko savivaldybė,
+,,,,,seniunija,string,,,,4,open,,Deklaruojamo lauko seniūnija,
+,,,,,deklaruotas_pas,string,,,,4,open,,Deklaruoto pasėlio pavadinimas,
+,,,,,kvv_proc,number,%,,,4,open,,Vasarinių kviečių procentas,
+,,,,,avi_proc,number,%,,,4,open,,Avižų procentras,
+,,,,,gri_proc,number,%,,,4,open,,Grikių procentas,
+,,,,,krz_proc,number,%,,,4,open,,Žieminių kvietrugių procentas,
+,,,,,kvz_proc,number,%,,,4,open,,Žieminių kviečių procentas,
+,,,,,miz_proc,number,%,,,4,open,,Žieminius miežių procentas,
+,,,,,rav_proc,number,%,,,4,open,,Vasarinių rapsų procentas,
+,,,,,raz_proc,number,%,,,4,open,,Žieminių rapsų procentas,
+,,,,,ruz_proc,number,%,,,4,open,,Žieminių rugių procentas,
+,,,,,pup_proc,number,%,,,4,open,,Pupų procentas,
+,,,,,zir_proc,number,%,,,4,open,,Žirnių procentas,
+,,,,,dgp_proc,number,%,,,4,open,,"Daugiametės ganyklos arba pievos, daugiametės žolės (eraičinai, miglės, motiejukai, svidrės, smilgos, pašiaušėliai, avižuolės, šunažolės, visgės, erainčinsvidrės, dryžučiai, dirsuolės ir kt.) procentas",
+,,,,,kita_proc,number,%,,,4,open,,Kitų pasėlių procentas,

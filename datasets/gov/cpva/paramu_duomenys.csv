@@ -54,6 +54,7 @@ Projektai, kurie buvo vykdomi naudojantis šia sistema jau pasibaigę, bet siste
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,identifikacinis numeris,
 ,,,,,istaigos_jar_kodas,string,,,,4,open,,Įstaigos JAR kodas,
+,,,,,istaigos_reg_savivaldybe,string,,,,4,open,,Įstaigos registracijos savivaldybė,
 ,,,,,application_id,string,,,,4,open,,Paraiškos identifikacinis numeris,
 ,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikacinis numeris,

@@ -3,7 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Prisirases,,,,,,4,,,"Asmenų, galinčių dalyvauti prevencinėse programose, skaičius ","Informacija apie asmenų, galinčių dalyvauti prevencinėje programoje, skaičius"
+,,,,Prisirases,,,ad_id,,,4,,,"Asmenų, galinčių dalyvauti prevencinėse programose, skaičius ","Informacija apie asmenų, galinčių dalyvauti prevencinėje programoje, skaičius"
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,open,,,
 ,,,,,menuo,integer,,,,2,open,,Mėnuo,

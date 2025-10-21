@@ -1,0 +1,85 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/via_lietuva/eismo_ribojimai,,,,,,,,,,,,"""Eismo ribojimai valstybinės reikšmės keliuose""","""Duomenų rinkinyje pateikiami Valstybinės reikšmės kelių eismo informacinės sistemos duomenys apie valstybinių kelių eismo ribojimus dėl renginių, remonto darbų ar kelyje atsiradusių kliūčių. Duomenų rinkinį sudaro keturios lentelės:
+   1. „Kelių remonto darbai“ – informacija apie kelio remonto darbus valstybinės reikšmės keliuose;
+   2. „Kliūtys kelyje“ – informacija apie kliūtis kelyje valstybinės reikšmės keliuose;
+   3. „Eismo ribojimai dėl renginių“ – eismo ribojimai dėl renginių valstybinės reikšmės keliuose;
+   4. „Valstybinių kelių atkarpos“ – valstybinių kelių atkarpų identifikatoriai su atitinkamų atkarpų pavadinimais ir ilgiais, kurie skirti jungti su rinkinyje esančiomis lentelėmis.
+
+Duomenų teikėjas – AB „Via Lietuva“.
+Duomenys kaupiami nuo 2011 m. sausio 1 d.
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.   
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Remontas,,,darbo_id,,,4,,,Kelių remonto darbai,"""Duomenys apie kelių remonto darbus valstybinės reikšmės keliuose. Vienoje lentelės eilutėje nurodoma vieno kelių priežiūros remonto informacija. Lentelę sudaro: darbų ir kelio atkarpos identifikaciniai numeriai, eismo kryptis, pradžios ir pabaigos kilometras kelio atkarpoje, kelio atkarpos pradžios ir pabaigos koordinatės ir jų validacijos stulpelis, nurodantis, ar koordinatės yra Lietuvos Respublikos ribose, geometrijos stulpelis, nurodantis, linijines kelio koordinates, kelio priežiūros darbų pradžios ir pabaigos data ir laikas, požymis, nurodantis, ar eismas yra leidžiamas, bei poveikis eismui. Aprašymo stulpelyje detaliau aprašomi atliekami darbai."""
+,,,,,darbo_id,string,,,,4,open,,Kelių priežiūros darbo identifikacinis numeris,
+,,,,,kelio_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
+,,,,,eismo_kryptis,string,,,,4,open,,Eismo kryptis kelio atkarpoje,
+,,,,,,enum,,,"""AB""",,,,Abi,
+,,,,,,,,,"""PR""",,,,Pirmyn,
+,,,,,,,,,"""AT""",,,,Atgal,
+,,,,,km_nuo,number,,,,4,open,,Atkarpos kilometras nuo,Kelio priežiūros darbų kelio atkarpos pradžios kilometras
+,,,,,km_iki,number,,,,4,open,,Atkarpos kilometras iki,Kelio priežiūros darbų kelio atkarpos pabaigos kilometras
+,,,,,nuo_koord_lks,geometry(3346),,,,4,open,,Atkarpos koordinatė nuo,LKS-94 WKT formato koordinatės taškas nurodantis kelio priežiūros darbų pradžios lokaciją
+,,,,,iki_koord_lks,geometry(3346),,,,4,open,,Atkarpos koordinatė iki,LKS-94 WKT formato koordinatės taškas nurodantis kelio priežiūros darbų pabaigos lokaciją
+,,,,,geometrija,geometry(3346),,,,4,open,,Atkarpos linijinės koordinatės,LKS-94 WKT formato linijinės koordinatės nurodančios kelio priežiūros darbų atkarpos lokaciją
+,,,,,koord_validacija,boolean,,,,4,open,,Koordinačių validavimo stulpelis,Valstybės duomenų agentūros sugeneruotas koordinatės validavimo stulpelis nurodantis ar koordinačių pradžios ir pabaigos taškai yra Lietuvos Respublikos ribose
+,,,,,data_nuo,datetime,H,,,4,open,,Data ir laikas nuo kada vykdomi kelio priežiūros darbai,
+,,,,,data_iki,datetime,H,,,4,open,,Data ir laikas iki kada vykdomi kelio priežiūros darbai,
+,,,,,eismas_leidziamas,boolean,,,,4,open,,"""Požymis ,nurodantis, ar eismas yra leidžiamas""",
+,,,,,poveikis_eismui,string,,,,4,open,,Kelio priežiūros darbų poveikis eismui,
+,,,,,,enum,,,"""Labai svarbus""",,,,Labai svarbus,
+,,,,,,,,,"""Svarbus""",,,,Svarbus,
+,,,,,,,,,"""Vidutiniškai svarbus""",,,,Vidutiniškai svarbus,
+,,,,,,,,,"""Mažai svarbus""",,,,Mažai svarbus,
+,,,,,aprasymas,string,,,,4,open,,Kelio priežiūros darbų aprašymas,
+,,,,,,,,,,,,,,
+,,,,Kliūtis,,,kliuties_id,,,4,,,Kliūtys kelyje,"""Duomenys apie kliūtis valstybinės reikšmės keliuose. Vienoje lentelės eilutėje nurodoma viena kliūtis kelio atkarpoje. Lentelę sudaro: kliūties ir kelio atkarpos identifikaciniai numeriai, kelio atkarpos kilometras, eismo kryptis kelio atkarpoje, koordinatės taškas ir validacijos stulpelis, nurodantis, ar koordinatės taškas yra Lietuvos Respublikos ribose, kliūties pastebėjimo / užregistravimo ir kliūties pašalinimo datos ir laikai, poveikis eismui ir kelio kliūties aprašymas."""
+,,,,,kliuties_id,string,,,,4,open,,Kliūties kelyje identifikacinis numeris,
+,,,,,kelio_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
+,,,,,kelio_km,number,,,,4,open,,Kelio atkarpos kilometras kuriame yra kelio kliūtis,
+,,,,,eismo_kryptis,string,,,,4,open,,Eismo kryptis kelio atkarpoje,
+,,,,,,enum,,,"""AB""",,,,Abi,
+,,,,,,,,,"""PR""",,,,Pirmyn,
+,,,,,,,,,"""AT""",,,,Atgal,
+,,,,,geometrija,geometry(3346),,,,4,open,,Kliūties koordinatė,LKS-94 WKT formato koordinatės taškas kuriame yra kliūtis
+,,,,,geometrijos_validacija,boolean,,,,4,open,,Koordinačių validacija,Valstybės duomenų agentūros sugeneruotas koordinatės validavimo stulpelis nurodantis ar koordinatės taškas yra Lietuvos Respublikos ribose
+,,,,,uzregistruota_data_laikas,datetime,H,,,4,open,,Kliūties data ir laikas,Data ir laikas kada kliūtis kelyje buvo užregistruota
+,,,,,pasalinta_data_laikas,datetime,H,,,4,open,,Data ir laikas kada kliūtis buvo pašalinta,
+,,,,,poveikis_eismui,string,,,,4,open,,Kliūties poveikis eismui,
+,,,,,,enum,,,"""Labai svarbus""",,,,Labai svarbus,
+,,,,,,,,,"""Svarbus""",,,,Svarbus,
+,,,,,,,,,"""Vidutiniškai svarbus""",,,,Vidutiniškai svarbus,
+,,,,,,,,,"""Mažai svarbus""",,,,Mažai svarbus,
+,,,,,aprasymas,string,,,,4,open,,Kelio kliūties aprašymas,
+,,,,,,,,,,,,,,
+,,,,Renginys,,,ribojimo_id,,,4,,,Eismo ribojimai dėl renginių,"""Duomenys apie eismo ribojimus dėl renginių valstybinės reikšmės keliuose. Viena lentelės eilutė atitinka vieną renginį, dėl kurio vykdomi eismo ribojimai tam tikru laiku, tam tikroje kelio atkarpoje. Lentelę sudaro: eismo ribojimo ir kelio atkarpos identifikaciniai numeriai, eismo kryptis, geometrijos stulpelis, nurodantis tašką, kuriame eismas ribojamas, validacijos stulpelis, nurodantis, ar koordinatės yra Lietuvos Respublikos ribose, ribojimo pradžios ir pabaigos data ir laikas, poveikis eismui, renginio, dėl kurio eismas yra ribojamas, aprašymas."""
+,,,,,ribojimo_id,string,,,,4,open,,Ribojimo dėl renginio identifikacinis numeris,
+,,,,,kelio_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
+,,,,,kelio_km,number,,,,4,open,,Kelio atkarpos kilometras,
+,,,,,eismo_kryptis,string,,,,4,open,,Eismo kryptis kelio atkarpoje,
+,,,,,,enum,,,"""AB""",,,,Abi,
+,,,,,,,,,"""PR""",,,,Pirmyn,
+,,,,,,,,,"""AT""",,,,Atgal,
+,,,,,geometrija,geometry(3346),,,,4,open,,Ribojimo koordinatės taškas,"""LKS-94 WKT formato koordinatės taškas, kuriame ribojamas eismas dėl renginio"""
+,,,,,geometrijos_validacija,boolean,,,,4,open,,Koordinatės taško validacija,Valstybės duomenų agentūros sugeneruotas koordinatės validavimo stulpelis nurodantis ar koordinatės taškas yra Lietuvos Respublikos ribose
+,,,,,data_laikas_nuo,datetime,T,,,4,open,,Eismo ribojimo dėl renginio pradžios data ir laikas,
+,,,,,data_laikas_iki,datetime,T,,,4,open,,Eismo ribojimo dėl renginio pabaigos data ir laikas,
+,,,,,poveikis_eismui,string,,,,4,open,,Eismo ribojimo dėl renginio poeveikis eismui,
+,,,,,,enum,,,"""Labai svarbus""",,,,,
+,,,,,,,,,"""Svarbus""",,,,,
+,,,,,,,,,"""Vidutiniškai svarbus""",,,,,
+,,,,,,,,,"""Mažai svarbus""",,,,,
+,,,,,aprasymas,string,,,,4,open,,Renginio aprašymas,
+,,,,,,,,,,,,,,
+,,,,KelioAtkarpa,,,kelio_id,,,4,,,Valstybinių kelių atkarpos,"""Duomenys apie valstybinių kelių atkarpas. Viena lentelės eilutė atitinka vieną kelio atkarpos identifikatorių su jo ilgio parametrais. Lentelę sudaro: unikalus kelio identifikacinis numeris, kelio numeris ir pavadinimas, kelio atkarpos pradžios ir pabaigos kilometras. Du paskutiniai techniniai stulpeliai nurodo įrašo sukūrimo ir atnaujinimo datas duomenų bazėje."""
+,,,,,kelio_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
+,,,,,numeris,string,,,,4,open,,Kelio atkarpos numeris,
+,,,,,pavadinimas,string,,,,3,open,,Kelio atkarpos pavadinimas,
+,,,,,km_nuo,number,,,,4,open,,Kelio atkarpos pradžios kilometras,
+,,,,,km_iki,number,,,,4,open,,Kelio atkarpos pabaigos kilometras,
+,,,,,irasas_sukurtas,datetime,U,,,4,open,,Įrašo sukūrimo duomenų bazėje data ir laikas,
+,,,,,irasas_atnaujintas,datetime,U,,,4,open,,Įrašo atnaujinimo duomenų bazėje data ir laikas,

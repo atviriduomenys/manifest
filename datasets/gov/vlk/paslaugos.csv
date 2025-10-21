@@ -3,7 +3,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Paslauga,,,,,,4,,,Asmens sveikatos priežiūros paslaugų sąrašas,"Asmens sveikatos priežiūros paslaugų klasifikatorius, patvirtintas Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos direktoriaus 2005 m. birželio 30 d. įsakymu Nr. 1K-81 „Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo“"
+,,,,Paslauga,,,ad_id,,,4,,,Asmens sveikatos priežiūros paslaugų sąrašas,"Asmens sveikatos priežiūros paslaugų klasifikatorius, patvirtintas Valstybinės ligonių kasos prie Sveikatos apsaugos ministerijos direktoriaus 2005 m. birželio 30 d. įsakymu Nr. 1K-81 „Dėl asmens sveikatos priežiūros paslaugų ir sveikatos programose numatytų paslaugų, už kurias mokama iš Privalomojo sveikatos draudimo fondo biudžeto, klasifikatoriaus patvirtinimo“"
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,amzius,string,,,,4,open,,Paciento amžiaus grupė,"Paciento, kuriam gali būti teikiama paslauga, amžiaus grupė"
 ,,,,,,enum,,,"""Vaikas""",,,,Vaikas,
 ,,,,,,,,,"""Suaugęs""",,,,Suaugęs,
@@ -26,7 +27,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,nuo,date,D,,,4,open,,Paslauga teikiama nuo,Paslaugos galiojimo pradžios data
 ,,,,,iki,date,D,,,4,open,,Paslauga teikiama iki,Paslaugos galiojimo pabaigos data
 ,,,,,,,,,,,,,,
-,,,,Balas,,,,,,4,,,Bazinių kainų balais sąrašas,Asmens sveikatos priežiūros paslaugų bazinių balų sąrašas
+,,,,Balas,,,ad_id,,,4,,,Bazinių kainų balais sąrašas,Asmens sveikatos priežiūros paslaugų bazinių balų sąrašas
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paslauga,ref,Paslauga,,,4,open,,Nuoroda į paslaugas,
 ,,,,,lovadieniui,number,,,,4,open,,Balai lovadieniui,
 ,,,,,atvejui,number,,,,4,open,,Balai atvejui,

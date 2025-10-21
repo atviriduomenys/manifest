@@ -3,11 +3,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Atsakymas,,,vda_id,,,4,,,Laboratorijos tyrimų užsakymai ir atsakymai,"Duomenys apie VULŽK (VšĮ Vilniaus universiteto ligoninės Žalgirio klinikų) laboratorijoje atliktus tyrimus. Informacija apie pacientą - gimimo metai, lytis, tyrimo atlikimo data. Pateikti tyrimų atsakymai, matavimo vienetai, norma, skyriai, iš kurių pateikti užsakymai, mėginio paėmimo bei priėmimo data ir laikas.
+,,,,Atsakymas,,,vda_id,,,4,,,Laboratorijos tyrimų užsakymai ir atsakymai,"Duomenys apie VULŽK (VšĮ Vilniaus universiteto ligoninės Žalgirio klinikų) laboratorijoje atliktus tyrimus. Informacija apie pacientą - gimimo metai, lytis, tyrimo atlikimo data. Pateikti tyrimų atsakymai, matavimo vienetai, norma, skyriai, iš kurių pateikti užsakymai.
 Pateikiami duomenys nuo 2006 m."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_id,string,,,,4,open,,Paciento identifikatorius,
-,,,,,gimimo_m,date,M,,,4,open,,Paciento gimimo metai,
+,,,,,gimimo_m,date,Y,,,4,open,,Paciento gimimo metai,
 ,,,,,lytis,string,,,,4,open,,Paciento lytis,
 ,,,,,tyr_id,string,,,,4,open,,Tyrimo identifikatorius,
 ,,,,,tyr_data,date,D,,,4,open,,Tyrimo atlikimo data,
@@ -22,5 +22,3 @@ Pateikiami duomenys nuo 2006 m."
 ,,,,,,comment,type,,"update(property: ""norma_pastabos@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,skyrius,string,,,,4,open,,"Skyrius, iš kurio pateiktas užsakymas",
 ,,,,,gyd,string,,,,4,open,,"Gydytojo, kuris užsakė tyrimą, identifikatorius",
-,,,,,paemimo_laikas,datetime,T,,,4,open,,Ėminio paėmimo data ir laikas,
-,,,,,priemimo_laikas,datetime,T,,,4,open,,Ėminio priėmimo data ir laikas,

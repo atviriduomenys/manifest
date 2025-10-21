@@ -1,10 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lrsk,,,,,,,,,,,,Lietuvos Respublikos Seimo Kanceliarija,
-,datasets/gov/lrsk/teises_aktai,,,,,,,,,,,,Teisės aktų registro duomenys,
-,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-,,,,,,,,,,,,,,
-,,,,Dokumentas,,,vda_id,,,4,,,Teisės aktų registro duomenys,"Rinkinyje pateikiami duomenys apie teisės aktų registro objektus, juos parengusius ir priėmusius subjektus, identifikacinius kodus, objektų rūšis, pavadinimus ir jų chronologijas (teisės akto priėmimo data, registravimo Registre data, paskelbimo data, įsigaliojimo data, pakeitimo ar papildymo data, pripažinimo netekusiu galios data, galiojimo sustabdymo data, galiojimo terminas). Registro objektai yra šie teisės aktai:
+,datasets/gov/lrsk/teises_aktai,,,,,,,,,,,,Teisės aktų registro duomenys,"Rinkinyje pateikiami teisės aktų registro duomenys. Rinkinys susideda iš dviejų modelių: dokumentų ir jų suvestinių. Pateikiami duomenys apie teisės aktų objektus, juos parengusius ir priėmusius subjektus, identifikacinius kodus, objektų rūšis, pavadinimus ir jų chronologijas (teisės akto priėmimo data, registravimo Registre data, paskelbimo data, įsigaliojimo data, pakeitimo ar papildymo data, pripažinimo netekusiu galios data, galiojimo sustabdymo data, galiojimo terminas). Registro objektai yra šie teisės aktai:
 1) Lietuvos Respublikos Konstitucija;
 2) konstituciniai įstatymai;
 3) kiti įstatymai;
@@ -24,11 +20,24 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 17) įgaliotų atlikti viešąjį administravimą asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti norminiai teisės aktai. Kitų asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti teisės aktai Registro objektais yra tik tais atvejais, kai šiuos teisės aktus skelbti Registre privaloma pagal teisės aktų reikalavimus;
 18) ministrų, Vyriausybės įstaigų, kitų valstybės ir savivaldybių institucijų ir įstaigų vadovų ir kolegialių institucijų, taip pat Lietuvos banko valdybos ar valdybos pirmininko, teisės aktų nustatyta tvarka įgaliotų atlikti viešąjį administravimą asociacijų, valstybės ar savivaldybės įmonių, viešųjų įstaigų, kurių savininkė ar dalininkė yra valstybė ar savivaldybė, valdymo organų priimti teisės taikymo aktai, kuriuos skelbti Registre privaloma pagal teisės aktų reikalavimus;
 19) Konstitucinio Teismo nutarimai ir sprendimai dėl Konstitucinio Teismo nutarimo išaiškinimo, taip pat Konstitucinio Teismo pirmininko pranešimai dėl ginčijamo akto galiojimo sustabdymo ir dėl sustabdyto akto galiojimo atnaujinimo;
-20) Lietuvos Aukščiausiojo Teismo ir Lietuvos vyriausiojo administracinio teismo sprendimai, nutartys, nutarimai, taip pat įsiteisėję administracinių teismų sprendimai dėl norminių administracinių aktų teisėtumo."
+20) Lietuvos Aukščiausiojo Teismo ir Lietuvos vyriausiojo administracinio teismo sprendimai, nutartys, nutarimai, taip pat įsiteisėję administracinių teismų sprendimai dėl norminių administracinių aktų teisėtumo.
+
+Duomenų teikėjas: Lietuvos Respublikos Seimo kanceliarija.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.
+
+2025-06-13: pridėti teisės aktų suvestinių duomenys. Suvestinių tekstus šiuo metu galima pasiekti pagal pateiktą nuorodą. Ateityje numatoma paskelbti ir suvestinių tekstus."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,vda_id,,,4,,,TeisÄ—s aktÅ³ registro duomenys,"Pateikiami duomenys apie teisės aktų objektus, juos parengusius ir priėmusius subjektus, identifikacinius kodus, objektų rūšis, pavadinimus ir jų chronologijas (teisės akto priėmimo data, registravimo Registre data, paskelbimo data, įsigaliojimo data, pakeitimo ar papildymo data, pripažinimo netekusiu galios data, galiojimo sustabdymo data, galiojimo terminas)."
 ,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,dokumento_id,string,,,,4,open,,Dokumento unikalus identifikatorius,
 ,,,,,pavadinimas,string,,,,4,open,,Dokumento pavadinimas,
 ,,,,,nuoroda,string,,,,4,open,,"URL nuoroda į teisės aktą. Galioja tik tuo atveju, kai teisės aktas yra paskelbtas ar registruotas teisės aktų registre.",
 ,,,,,alt_pavadinimas,string,,,,4,open,,Alternatyvus dokumento pavadinimas,
+,,,,,tekstas_lt,string,,,,2,open,,Teisės akto naujausios suvestinės tekstas,
+,,,,,,comment,type,,"update(property: ""tekstas_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,dok_busena,string,,,,4,open,,Dokumento būsena,
 ,,,,,,enum,,,"""registruotas TA registre""",,,,,
 ,,,,,,,,,"""nepriimtas""",,,,,
@@ -80,3 +89,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paviesinimas,date,D,,,4,open,,"Teisės akto, kito dokumento paviešinimo data",
 ,,,,,ar_nacionalinis,boolean,,,,4,open,,"Požymis, ar dokumentas nacionalinis (True –nacionalinis,  False – savivaldybių)",
 ,,,,,ar_verslo_reg,boolean,,,,4,open,,"Verslo sąlygų reguliavimo  požymis (True – taip,  False – ne)",
+,,,,,,,,,,,,,,
+,,,,Suvestine,,,vda_id,,,4,,,Teisės aktų suvestinių duomenys,Pateikiami duomenys apie teisės aktų suvestines.
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,dokumento_id,string,,,,4,open,,Dokumento unikalus identifikatorius,
+,,,,,suvestines_id,string,,,,4,open,,Suvestinės redakcijos pagal pakeitimą identifikatorius,
+,,,,,nuoroda,string,,,,4,open,,Nuoroda į dokumento suvestinę,
+,,,,,tekstas_lt,string,,,,2,open,,Dokumento suvestinės tekstas,
+,,,,,,comment,type,,"update(property: ""tekstas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,galioja_nuo,datetime,S,,,4,open,,Suvestinės redakcijos įsigaliojimo data,
+,,,,,galioja_iki,datetime,S,,,4,open,,Suvestinės redakcijos galiojimo terminas,
+,,,,,suv_duom_atnaujinimas,datetime,S,,,4,open,,,
