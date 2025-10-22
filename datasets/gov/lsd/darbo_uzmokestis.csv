@@ -205,7 +205,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""G2""",,,,"Vidurinis (Povidurinis profesinis, Specialusis vidurinis, Aukštesnysis)",
 ,,,,,,,,,"""G3""",,,,Aukštasis (bakalauro studijos),
 ,,,,,,,,,"""G4""",,,,Aukštasis (magistro studijos ir doktorantūra),
-,,,,,stazas,integer,,,,4,open,,Darbo stažas įmonėje (metais),
+,,,,,stazas,string,,,,4,open,,Darbo stažas įmonėje (metais),
 ,,,,,,enum,,,"""FT""",,,,Visas darbo laikas,
 ,,,,,,,,,"""PT""",,,,Ne visas darbo laikas,
 ,,,,,darbo_laiko_dalis,number,,,,4,open,,"Darbuotojo nustatyto darbo laiko dalis, palyginti su visą darbo dieną dirbančio darbuotojo nustatytomis darbo valandomis, procentais",
