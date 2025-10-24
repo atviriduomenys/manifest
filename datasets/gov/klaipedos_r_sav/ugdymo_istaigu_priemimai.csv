@@ -43,7 +43,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,registracijos_data,datetime,S,,,4,open,,Registracijos į stovyklą data,
 ,,,,,vaiko_asmens_kodas,string,,,,4,open,,Šifruotas registruoto vaiko asmens kodas,
 ,,,,,vaiko_lytis,string,,,,4,open,,Vaiko lytis nustatyta iš asmens kodo,
-,,,,,vaiko_gimimo_metai,integer,,,,4,open,,Vaiko gimimo metais nustatyti iš asmens kodo,
+,,,,,vaiko_gimimo_metai,date,Y,,,4,open,,Vaiko gimimo metais nustatyti iš asmens kodo,
 ,,,,,stovyklos_kategorija,string,,,,4,open,,Stovyklos sezono pavadinimas,
 ,,,,,teikejo_stovyklos_id,string,,,,4,open,,Stovyklos organizatoriaus identifikatorius,
 ,,,,,teikejo_stovyklos_pavadinimas,string,,,,4,open,,Stovyklos organizatoriaus ir stovyklos pavadinimas,
