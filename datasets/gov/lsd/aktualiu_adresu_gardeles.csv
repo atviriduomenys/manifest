@@ -8,7 +8,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,aob_kodas,ref,/datasets/gov/rc/ar/adresai/Adresas,,,4,open,,"Adreso (sklypo, statinio, patalpos) identifikavimo kodas",
 ,,,,,x_koord,number,,,,4,open,,Adreso objekto x koordinatė (LKS94),
 ,,,,,y_koord,number,,,,4,open,,Adreso objekto y koordinatė (LKS94),
-,,,,,geometrija,"geometry(point, 4326)",m,,"latitude, longitude",4,open,,Adreso taško koordinatės (WGS84),WGS-84
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Adreso taško koordinatės (WGS84),WGS-84
 ,,,,,sq_100m_grid_id,string,,,,4,open,,Stačiakampės 100 m gardelės unikalus identifikatorius (LKS-94),
 ,,,,,sq_250m_grid_id,string,,,,4,open,,Stačiakampės 250 m gardelės unikalus identifikatorius (LKS-94),
 ,,,,,sq_500m_grid_id,string,,,,4,open,,Stačiakampės 500 m gardelės unikalus identifikatorius (LKS-94),
