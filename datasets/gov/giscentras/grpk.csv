@@ -153,7 +153,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""info@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,shape_length,number,m,,,4,open,,Objekto perimetro ilgis,
 ,,,,,shape_area,number,m²,,,4,open,,Objekto plotas,
-,,,,,shape,"geometry(multipolygon, 3346)",,,,3,open,,Objekto geometrijos tipas,
+,,,,,shape,"string",,,,2,open,,Objekto geometrijos tipas,
 ,,,,,,,,,,,,,,
 ,,,,PlotasRiba,,,top_id,,,4,,,Sluoksnyje saugoma informacija apie žemės naudmenų ir vandens telkinių dengiamų teritorijų ribas,
 ,,,,,top_id,string,,,,4,open,,Objekto identifikavimo kodas (reikšmė yra privaloma),
