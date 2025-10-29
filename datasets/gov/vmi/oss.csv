@@ -37,7 +37,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,dek_statusas,integer,,,,4,open,,Deklaracijos statusas ,
 ,,,,,,enum,,,6,,,,Teisinga,
 ,,,,,,,,,7,,,,Priimta su klaidomis,
-,,,,,pateikimo_data,datetime,D,,,4,open,,"Duomenų įrašymo į lentelę data (sysdate)",
+,,,,,pateikimo_data,date,D,,,4,open,,"Duomenų įrašymo į lentelę data (sysdate)",
 ,,,,,metai,integer,,,,2,open,,Mokestinio laikotarpio metai ,
 ,,,,,ketvirtis,integer,,,,2,open,,Mokestinio laikotarpio ketvirtis,
 ,,,,,menuo,integer,,,,2,open,,Mokestinio laikotarpio mėnuo,
