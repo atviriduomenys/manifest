@@ -15,6 +15,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Vardinis vaistas""",,,,Vardinis vaistas,
 ,,,,,,,,,"""Ekstemporalus vaistas""",,,,Ekstemporalus vaistas,
 ,,,,,,,,,"""Kitos priemonės""",,,,Kitos priemonės,
+,,,,,,,,,"""Neatveriama""",,,,Neatveriama,
 ,,,,,vaisto_bendr_pav,string,,,,3,open,,Skiriamo vaisto* (vardinio vaisto bendrinis pavadinimas ekstemporaliam vaistui gaminti naudojamos pagrindinės veikliosios medžiagos pavadinimas) bendrinis pavadinimas,
 ,,,,,vaisto_prek_pav,string,,,,3,open,,Skiriamo vaisto* ( vardinio vaisto MPP) prekinis pavadinimas,
 ,,,,,atc_kodas,string,,,,4,open,,Skiriamo vaisto* ATC**** kodas,
