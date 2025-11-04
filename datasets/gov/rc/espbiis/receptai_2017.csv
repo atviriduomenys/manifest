@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,,,"update(type: ""ref"", ref: ""/datasets/gov/vlk/tlk10amTlk10am[code]"")",4,open,spinta:289,,
 ,,,,,vaisto_tipas,string,,,,4,open,,"Skirto vaisto* tipas (vaistas, medicinos pagalbos priemonė (MPP), vardinis vaistas, ekstemporalus vaistas, kitos priemonės)",
 ,,,,,,enum,,,"""Vaistas""",,,,Vaistas,
-,,,,,,,,,"""Medicininos pagalbos priemonės""",,,,Medicinos pagalbos priemonė,
+,,,,,,,,,"""Medicininos pagalbos priemonės""",,,,Medicinos pagalbos priemonės,
 ,,,,,,,,,"""Vardinis vaistas""",,,,Vardinis vaistas,
 ,,,,,,,,,"""Ekstemporalus vaistas""",,,,Ekstemporalus vaistas,
 ,,,,,,,,,"""Kitos priemonės""",,,,Kitos priemonės,
