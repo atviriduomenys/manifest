@@ -20,4 +20,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Tolimųjų jūrų""",,,,,
 ,,,,,kvotos_pavadinimas,string,,,,4,open,,Kvotos pavadinimas,
 ,,,,,juridinio_asmens_kodas,string,,,,4,open,,Juridinio asmens kodas,
-,,,,,juridinio_asmens_pavadinimas,string,,,,4,open,,Juridinio asmens pavadinimas,
