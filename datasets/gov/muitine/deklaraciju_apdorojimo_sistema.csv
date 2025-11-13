@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,eksportuotojo_ar_importuotojo_salis,string,,,,4,open,,Eksportuotojo ar importuotojo adreso šalies kodas,
 ,,,,,deklaracijos_iforminimo_metai,integer,,,,4,open,,Deklaracijos įforminimo metai,
 ,,,,,duomenu_rinkinio_tipas,string,,,,4,open,,Duomenų rinkinio (deklaracijos) tipas,
-,,,,,deklaracijos_rusis,string,,,,4,open,,Gimimo metai iš asmens kodo,
+,,,,,deklaracijos_rusis,string,,,,4,open,,Deklaracijos rūšis,
 ,,,,,,enum,,,"""Importo (IM)""",,,,Importo deklaracija,
 ,,,,,,,,,"""Eksporto (EX)""",,,,Eksporto deklaracija,
 ,,,,,,,,,"""Specialiųjų priemonių (CO)""",,,,Specailiųjų priemonių,
@@ -40,3 +40,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_pip_kodas_galioja,boolean,,,,4,open,,Ar procedūros kodas rinkinio atnaujinimo metu galioja,
 ,,,,,pip_kodo_galiojimo_pradzia,date ,D,,,4,open,,Procedūros kodo galiojimo pradžia,
 ,,,,,pip_kodo_galiojimo_pabaiga,date ,D,,,4,open,,Procedūros kodo galiojimo pabaiga,
+
