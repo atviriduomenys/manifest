@@ -166,6 +166,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
 ,,,,,svoris,number,,,,2,open,,"Darbuotojo lyginamasis svoris",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
+,,,,,,,,,,,,,,
 ,,,,DarboUzmokestis2022,,,,,,4,,,Darbo užmokesčio struktūros statistinis tyrimas 2022 m.,2018 metais atliktas darbo užmokesčio struktūros statistinis tyrimas
 ,,,,,year,integer,,,,4,open,,Ataskaitiniai metai,
 ,,,,,evrk,string,,,,4,open,,Ekonominės veiklos rūšies kodas ,
