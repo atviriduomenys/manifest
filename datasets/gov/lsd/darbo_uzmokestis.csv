@@ -133,7 +133,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""G4""",,,,"Aukštasis (magistro studijos ir doktorantūra)",
 ,,,,,stazas,integer,,,,2,open,,"Darbo stažas įmonėje (metais)",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
-,,,,,darbos_laikas,string,,,,2,open,,"Nustatytas darbo laikas",
+,,,,,darbo_laikas,string,,,,2,open,,"Nustatytas darbo laikas",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
 ,,,,,,enum,,,"""FT""",,,,"Visas darbo laikas",
 ,,,,,,,,,"""PT""",,,,"Ne visas darbo laikas",
