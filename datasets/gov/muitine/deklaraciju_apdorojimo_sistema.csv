@@ -21,7 +21,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,prasoma_iforminti_procedura,string,,,,4,open,,Prašoma įforminti procedūra,
 ,,,,,suderintos_sistemos_subpozicijos_kodas,string,,,,4,open,,Suderintos sistemos subpozicijos kodas,
 ,,,,,kombinuotosios_nomenklaturos_kodas,string,,,,4,open,,Kombinuotos nomenklatūros kodas,
-,,,,,TARIC_kodas,string,,,,4,open,,TARIC kodas,
+,,,,,taric_kodas,string,,,,4,open,,TARIC kodas,
 ,,,,,mase_bruto,number,,,,4,open,,Deklaruojamos prekės bruto masė kilogramais,
 ,,,,,mase_neto,number,,,,4,open,,Deklaruojamos prekės neto masė kilogramais,
 ,,,,,papildomi_mato_vienetai,string,,,,4,open,,Papildomi mato vienetai,
@@ -40,3 +40,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_pip_kodas_galioja,boolean,,,,4,open,,Ar procedūros kodas rinkinio atnaujinimo metu galioja,
 ,,,,,pip_kodo_galiojimo_pradzia,date ,D,,,4,open,,Procedūros kodo galiojimo pradžia,
 ,,,,,pip_kodo_galiojimo_pabaiga,date ,D,,,4,open,,Procedūros kodo galiojimo pabaiga,
+
