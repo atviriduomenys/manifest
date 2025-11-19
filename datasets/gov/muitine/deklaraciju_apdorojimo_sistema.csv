@@ -40,4 +40,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_pip_kodas_galioja,boolean,,,,4,open,,Ar procedūros kodas rinkinio atnaujinimo metu galioja,
 ,,,,,pip_kodo_galiojimo_pradzia,date ,D,,,4,open,,Procedūros kodo galiojimo pradžia,
 ,,,,,pip_kodo_galiojimo_pabaiga,date ,D,,,4,open,,Procedūros kodo galiojimo pabaiga,
-
