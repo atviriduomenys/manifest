@@ -27,7 +27,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,geometrija_wgs,"geometry(point, 4326)",,,,4,open,,Darbo vietos koordinatė,
 ,,,,,kaina_be_tarif,number,,,,4,open,,Bendra kaina už darbus be tarifo,
 ,,,,,kaina_su_tarif,number,,,,4,open,,Bendra kaina už darbus su tarifu,
-,,,,,tarifas,number,,,,4,open,,Taikomas tariffas,
+,,,,,tarifas,number,,,,4,open,,Taikomas tarifas,
 ,,,,,pareiskejas,string,,,,4,open,,Prašymą gauti leidimą atlikti darbą pateikęs fizinis/juridinis asmuo,
 ,,,,,uzsakovas,string,,,,4,open,,Darbo u_sakovas,
 ,,,,,rangovas,string,,,,4,open,,Darbo rangovas,
