@@ -58,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikatorius,
 ,,,,,tipas,string,,,,4,open,,Sutarties šalies tipas,
 ,,,,,,enum,,,"""Tiekėjas""",,,,Sutarties tiekėjas,
-,,,,,,,,,""Pirkėjas""",,,,Sutarties pirkėjas,
+,,,,,,,,,"""Pirkėjas""",,,,Sutarties pirkėjas,
 ,,,,,validus_asmens_kodas,string,,,,4,open,,Sutarties šalies validus šifruotas fizinio asmens kodas,
 ,,,,,validus_jar_kodas,string,,,,4,open,,Sutarties šalies validus juridinio asmens kodas,
 ,,,,,kitas_kodas,string,,,,4,open,,Kitas sutarties šalies kodas (ne validus fizinio ar juridinio asmens kodas),
@@ -66,3 +66,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ne_pvm_moketojas,boolean,,,,4,open,,Požymis ar sutarties šalis PVM mokėtojas,
 ,,,,,veiklos_vieta,string,,,,4,open,,Sutarties šalies veiklos vieta,
 ,,,,,data,datetime,S,,,4,open,,Sutarties šalies atnaujinimo data,
+
