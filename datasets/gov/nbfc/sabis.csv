@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Saskaita,,id,,,,4,,,Sąskaitos,Viešojo sektoriaus sąskaitų informacija
+,,,,Saskaita,,id,,,,4,,,Sąskaitos,Viešojo sektoriaus sąskaitų duomenys
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sf_id,string,,,,4,open,,Unikalus sąskaitos identifikatorius,
 ,,,,,israsymo_data,date,D,,,4,open,,Sąskaitos išrašymo data,
@@ -66,4 +66,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ne_pvm_moketojas,boolean,,,,4,open,,Požymis ar sutarties šalis PVM mokėtojas,
 ,,,,,veiklos_vieta,string,,,,4,open,,Sutarties šalies veiklos vieta,
 ,,,,,data,datetime,S,,,4,open,,Sutarties šalies atnaujinimo data,
+
 
