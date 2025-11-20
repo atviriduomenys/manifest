@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,leidimo_tipas,string,,,,4,open,,,
 ,,,,,,enum,,,"""Aptvėrimams ir Kasinėjimams""",,,,Aptv_rimams ir Kasin_jimams,
 ,,,,,,,,,"""Kasinėjimams""",,,,Kasinėjimams,
-,,,,,,,,,"""Aptv_rimams""",,,,Aptvėrimams,
+,,,,,,,,,"""Aptvėrimams""",,,,Aptvėrimams,
 ,,,,,,,,,"""Kita""",,,,Kita,
 ,,,,,darbas,string,,,,4,open,,Atlikas/planuojamas darbas,
 ,,,,,darbo_atlik_pradz_data,date,D,,,4,open,,Darbo atlikimo pradžios data,
