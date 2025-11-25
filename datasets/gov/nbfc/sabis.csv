@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nbfc/sabis,,,,,,,,,,,,Viešųjų pirkimų sąskaitų administravimo bendroji informacinė sistema,
+,datasets/gov/nbfc/sabis,,,,,,,,,,,,Viešojo sektoriaus sąskaitų administravimo bendroji informacinė sistema,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Saskaitos,,id,,,,4,,,Sąskaitos,Viešųjų pirkimų sąskaitų informacija
+,,,,Saskaitos,,id,,,,4,,,Sąskaitos,Viešojo sektoriaus sąskaitų duomenys
 ,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,sf_id,string,,,,4,open,,Unikalus sąskaitos identifikatorius,
 ,,,,,israsymo_data,date,D,,,4,open,,Sąskaitos išrašymo data,
@@ -23,7 +23,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sf_busena,string,,,,4,open,,Sąskaitos būsena,
 ,,,,,sf_buseno_data,datetime,S,,,4,open,,Sąskaitos būsenos data,
 ,,,,,,,,,,,,,,
-,,,,SaskaituSalys,,id,,,,4,,,Sąskaitų šalys,Viešųjų pirkimų sąskaitų šalys
+,,,,SaskaituSalys,,id,,,,4,,,Sąskaitų šalys,Viešojo sektoriaus sąskaitų šalys
 ,,,,,id,string,,,,4,open,,Unikalus sąskaitos šalies identifikatorius,
 ,,,,,sf_id,string,,,,4,open,,Sąskaitos identifikatorius,
 ,,,,,tipas,string,,,,4,open,,Sąskaitos šalies tipas,
