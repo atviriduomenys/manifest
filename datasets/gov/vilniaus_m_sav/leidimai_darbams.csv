@@ -29,5 +29,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,kaina_su_tarif,number,,,,4,open,,Bendra kaina už darbus su tarifu,
 ,,,,,tarifas,number,,,,4,open,,Taikomas tarifas,
 ,,,,,pareiskejas,string,,,,4,open,,Prašymą gauti leidimą atlikti darbą pateikęs fizinis/juridinis asmuo,
-,,,,,uzsakovas,string,,,,4,open,,Darbo u_sakovas,
+,,,,,uzsakovas,string,,,,4,open,,Darbo užsakovas,
 ,,,,,rangovas,string,,,,4,open,,Darbo rangovas,
