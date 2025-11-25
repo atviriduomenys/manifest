@@ -1,0 +1,41 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/via_lietuva/keliu_projektai,,,,,,,,,,,,Duomenys apie valstybinės reikšmės kelių projektus,"""Duomenų rinkinyje pateikiami AB „Via Lietuva“ duomenys apie užsakomus valstybinės reikšmės kelių projektavimo, tiesimo, statybos, rekonstravimo, taisymo (remonto) ir priežiūros darbų projektus, finansuojamus iš Lietuvos Respublikos kelių priežiūros ir plėtros programos bei Europos Sąjungos paramos lėšų. Duomenų rinkinį sudaro dvi lentelės:
+1. „Kelių projektų darbai“ – informacija apie kelių atkarpose vykdomus darbus,
+2. „Kelio darbų atkarpos“ – informacija apie kelio atkarpas.
+
+Duomenų teikėjas – AB „Via Lietuva“.
+Duomenys kaupiami nuo 2004 m.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt.
+
+"""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,KelioDarbuProjektas,,,vda_prime_key,,,4,,,„Kelių projektų darbai“,"""Duomenys apie valstybinės reikšmės keliuose vykstančius kelio darbų projektus. Vienoje eilutėje pateikiami vieno kelio projekto darbų sutarties eigos duomenys: kelio atkarpos, kurioje vyksta darbai, identifikacinis numeris, objekto pavadinimas, objekte vykdomų darbų pradžios ir pabaigos data, sutarties pavadinimas, identifikacinis numeris ir sutartyje nurodytas darbų pabaigos terminas, rangovo identifikacinis numeris, savivaldybė (-s), kurioje (-se) atliekami darbai, požymiai, nusakantys ar tai yra pagrindinis objektas, žvyrkelis ar tiltas. Paskutinis stulpelis nurodo kada eilutės informacija buvo atnaujinta paskutinį kartą."""
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
+,,,,,atkarpos_id,string,,,,4,open,,Kelio atkarpos identifikatorius,Kelio darbų atkarpos identifikacinis numeris
+,,,,,obj_pav,string,,,,4,open,,Objekto pavadinimas,Objekto darbų pavadinimas
+,,,,,obj_darbai_nuo,date,D,,,4,open,,Darbų pradžia,Kelio objekto atliekamų darbų pradžios data
+,,,,,obj_darbai_iki,date,D,,,4,open,,Darbų pabaiga,Kelio objekto atliekamų darbų pabaigos data
+,,,,,sutartis_id,string,,,,4,open,,Sutarties identifikacinis numeris,
+,,,,,sutarties_pav,string,,,,4,open,,Sutarties pavadinimas,
+,,,,,sutart_darbai_nuo,date,D,,,4,open,,Sutarties darbų pradžia,Pagal sutartį atliekamų darbų pradžios data
+,,,,,sutart_darbai_iki,date,D,,,4,open,,Sutarties darbų pabaiga,Pagal sutartį atliekamų darbų pabaigos data
+,,,,,rangovas_id,string,,,,4,open,,Rangovo identifikacinis numeris,
+,,,,,obj_savivaldybes,string,,,,4,open,,Objekto savivaldybė,"""Savivaldybės, kuriose atliekami kelio objekto darbai"""
+,,,,,obj_ivykd,boolean,,,,4,open,,Objektas įvykdytas,"""Požymis, nurodantis, ar darbai objekte yra įvykdyti"""
+,,,,,sutartis_ivykd,boolean,,,,4,open,,Sutartis įvykdyta,"""Požymis, nurodantis, ar darbai pagal sutartį yra įvykdyti"""
+,,,,,garantijos_pabaiga,date,D,,,4,open,,Garantijos pabaiga,Data iki kurios yra suteikiama darbų garantija objektui
+,,,,,garantija_men,integer,mo,,,4,open,,Garantijos laikotarpis,"""Darbų garantijos mėnesių skaičius, nurodantis kiek laiko garantija suteikiama darbams po jų užbaigimo"""
+,,,,,pagrindinis_obj,boolean,,,,4,open,,Pagrindinio objekto požymis,"""Požymis, nurodantis, ar tai su pagrindiniu objektu susiję darbai"""
+,,,,,zvyrkelis,boolean,,,,4,open,,Žvyrkelio požymis,"""Požymis, nurodantis, ar tai yra žvyrinė kelio danga"""
+,,,,,tiltas,boolean,,,,4,open,,Tilto požymis,"""Požymis, nurodantis, ar objektas yra tiltas"""
+,,,,,irasas_atnaujintas,datetime,U,,,4,open,,Įrašas atnaujintas,"""Laiko žyma, nurodanti eilutės įrašo atnaujinimo laiką"""
+,,,,,,,,,,,,,,
+,,,,KelioAtkarpa,,,atkarpos_id,,,4,,,„Kelio darbų atkarpos“,"""Duomenys apie kelių atkarpas, kuriose vykdomi kelių darbų projektai. Viena eilutė atitinka vieną unikalią kelio atkarpą, kurioje atliekami arba buvo atliekami kelio darbai. Eilutėje pateikiamą informaciją sudaro: kelio atkarpos unikalus identifikacinis numeris, kelio pavadinimas, visas kelio ilgis, atkarpos pradžios kilometro taškas, ties kuriuo darbai prasideda, ir atkarpos kilometro pabaigos taškas, ties kuriuo darbai baigiasi. Kelio atkarpos koordinačių duomenys bus pridėti ateityje. """
+,,,,,atkarpos_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
+,,,,,kelio_pavadinimas,string,,,,4,open,,Kelio pavadinimas,
+,,,,,kelio_ilgis_km,number,km,,,4,open,,Viso kelio ilgis kilometrais,
+,,,,,atkarpa_nuo_km,number,km,,,4,open,,Kelio atkarpos pradžios kilometras,
+,,,,,atkarpa_iki_km,number,km,,,4,open,,Kelio atkarpos pabaigos kilometras,

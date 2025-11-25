@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vlk/prisirase_psc,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Prisirases,,,,,,4,,,Prisirašiusių prie psichikos sveikatos centro asmenų skaičius,Informacija apie prisirašiusių prie psichikos sveikatos centrų asmenų skaičių (paskutinei mėnesio dienai)
+,,,,Prisirases,,,ad_id,,,4,,,Prisirašiusių prie psichikos sveikatos centro asmenų skaičius,Informacija apie prisirašiusių prie psichikos sveikatos centrų asmenų skaičių (paskutinei mėnesio dienai)
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,data,date,M,,,4,open,,Data,Ataskaitinio laikotarpio data mėnesio tikslumu
 ,,,,,istaiga,ref,/datasets/gov/vlk/istaigos/Istaiga[kodas],,,4,open,,Įstaigos ID,"Įstaigos, prie kurios prisirašę asmenys, ID"
 ,,,,,lytis,string,,,,4,open,,Lytis,
@@ -16,4 +17,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Šiaulių TLK""",,,,,
 ,,,,,,,,,"""Panevėžio TLK""",,,,,
 ,,,,,amziaus_grupe,string,,,,4,open,,Amžiaus grupė,
-,,,,,skaicius,number,U,,,4,open,,Asmenų skaičius,Prisirašiusių prie pirminės psichikos centro asmenų skaičius (paskutinei mėnesio dienai)
+,,,,,asmenys,number,U,,,4,open,,Asmenų skaičius,Prisirašiusių prie pirminės psichikos centro asmenų skaičius (paskutinei mėnesio dienai)

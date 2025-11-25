@@ -1,0 +1,17 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/klaipedos_m_sav/turisto_rinkliava,,,,,,,,,,,,Turisto rinkliavos deklaravimo duomenų rinkinys,Informacija apie pateiktas turisto rinkliavos deklaracijas
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TuristoRinkliava,,,vda_prime_key,,,4,,,Turisto rinkliavos deklaravimo duomenys,"Rinkinyje pateikiami Klaipėdos miesto savivaldybės vietinės rinkliavos už suteiktą nakvynę (vadinamąjį turisto rinkliavos mokestį) deklaracijų duomenys. Vietinė rinkliava Klaipėdoje yra 1 euras už vienam asmeniui suteiktą nakvynę. Deklaracijas teikia fiziniai ir juridiniai asmenys, teikiantys apgyvendinimo paslaugas Klaipėdos mieste – nepriklausomai nuo to, ar veikla vykdoma pagal verslo liudijimą, individualios veiklos pažymą ar kitą apgyvendinimo paslaugų teikimo formą. Rinkinio objektas – viena turisto rinkliavos deklaracija, pateikta konkretaus apgyvendinimo paslaugų teikėjo už atitinkamus atskaitinius metus ir mėnesį ar ketvirtį. Rinkinyje pateikiami duomenys nurodo deklaraciją pateikusio subjekto tipą (fizinis ar juridinis asmuo), jo veiklą pagal Ekonominės veiklos rūšių klasifikatorių (EVRK 2.1), bei deklaracijos pateikimo laikotarpį. Šiame rinkinyje pateikiami duomenys neapima konkrečių nakvynių skaičiaus ar mokėtinų rinkliavos sumų, o atspindi faktą, jog deklaracija už tam tikrą laikotarpį buvo pateikta.
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt"
+,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Įrašo unikalus identifikatorius,
+,,,,,kodas,string,,kodas,,4,open,,Juridinio arba šifruotas fizinio asmens identifikatorius,
+,,,,,asmens_tipas,string,,asmens_tipas,,4,open,,Reikšmė nurodanti asmens tipą - fizinis arba juridinis asmuo,
+,,,,,pavadinimas,string,,pavadinimas,,4,open,,Juridinis pavadinimas arba fizinio asmens vardas ir pavardė,
+,,,,,evrk_kodas,string,,evrk_kodas,,4,open,,Ekonominės veiklos rūšies kodas pagal EVRK 2.1 redakciją.,
+,,,,,evrk_aprasymas,string,,evrk_aprasymas,,4,open,,Ekonominės veiklos aprašymas pagal EVRK 2.1 kodą.,
+,,,,,metai,integer,,metai,,4,open,,Deklaracijos pateikimo metai,
+,,,,,menuo,integer,,menuo,,4,open,,"Reikšmė nurodo kalendorinį mėnesį (1–12), jei deklaruojama kas mėnesį, arba ketvirtį (1–4), jei deklaruojama kas ketvirtį.",

@@ -7,7 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,aspi_jar_kodas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos JAR kodas,
 ,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
-,,,,,aspi_savaivaldybe,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos savivaldybė,
+,,,,,aspi_savivaldybe,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos savivaldybė,
 ,,,,,aspi_padalinys,string,,,,4,open,,Darbuotojui priskirtas padalinys,
 ,,,,,asmens_kodas,string,,,,4,open,,Darbuotojo pseudonomizuotas asmens kodas,
 ,,,,,pareigos,string,,,,4,open,,Darbuotojo einamos pareigos,

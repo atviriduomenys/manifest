@@ -1,0 +1,34 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vvkt/vaistu_parametrai,,,,,,,,,,,,Vaistinių preparatų vartojimo ir sudėties parametrai,"""Duomenų rinkinyje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie vaistinių preparatų vartojimo ir sudėties parametrus. Duomenų rinkinį sudaro dvi lentelės:
+1. Vaistinių preparatų vartojimo parametrai,
+2. Vaistinių preparatų sudėties parametrai,
+
+Duomenų teikėjas - Valstybinė vaistų kontrolės tarnyba.
+Rinkinyje pateikiami nuo 2017 m. kaupiami duomenys.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,VaistoDoze,,,vda_prime_key,,,4,,,Vaistinių preparatų vartojimo parametrai,"""Lentelėje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie vaistinių preparatų vartojimo parametrus. Kiekviena eilutė nurodo vaistinio preparato vidutinę paros dozę pagal vartojimo būdą ir ATC kodą. Vieną eilutę sudaro: vaistinio preparato identifikacinis numeris, ATC kodas, vaistinio preparato vartojimo būdas, DDD (angl. Defined daily dose, vidutinė paros dozė) įvertis, DDD įverčio matavimo vienetai ir papildomas stulpelis su DDD įverčio pastabomis. """
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,"""Unikalus Valstybės duomenų agentūros sugeneruotas eilutės identifikatorius. Eilutės unikalumą sudaro vid, atc_kodas, vartojimo_budas, ddd_pastabos"""
+,,,,,vid,string,,,,4,open,,Vaistinio preparato identifikacinis numeris,
+,,,,,atc_kodas,string,,,,4,open,,ATC kodas,"""ATC (Anatomical Therapeutic Chemical) kodas – tarptautinė vaistų klasifikacijos sistema, kuri priskiria vaistus pagal jų terapinę ir cheminę klasifikaciją"""
+,,,,,vartojimo_budas,string,,,,4,open,,Vartojimo būdas,Vaistinio preparato vartojimo būdas
+,,,,,ddd,number,,,,4,open,,Vidutinė paros dozė,Numanoma vidutinė paros dozė vaistui. DDD – Defined daily dose
+,,,,,ddd_matav_vnt,string,,,,4,open,,Vidutinės paros dozės matavimo vienetai,
+,,,,,ddd_pastabos,string,,,,2,open,,DDD pastabos,Papildoma informacija apie vidutinės paros dozės įvertį
+,,,,,,,,,,,,,,
+,,,,VaistoSudetis,,,vda_prime_key,,,4,,,Vaistinių preparatų sudėties parametrai,"""Lentelėje pateikiami Valstybinės vaistų kontrolės tarnybos (VVKT) duomenys apie vaistinių preparatų sudėties parametrus. Kiekviena eilutė nurodo vaistinio preparato komponento ingrediento stiprumo parametrą. Vieną eilutę sudaro: vaistinio preparato identifikacinis numeris, komponento eilės numeris, komponento farmacinė forma, komponento kiekis ir jo matavimo vienetai, komponento ingrediento eilės numeris, stiprumas ir stiprumo matavimo vienetai, bei pačio ingrediento pavadinimas. Paskutiniai du stulpeliai nurodo ar komponente esanti ingredientinė medžiaga yra veikliosios medžiagos ar pagalbinės medžiagos tipo. """
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,"""Unikalus Valstybės duomenų agentūros sugeneruotas eilutės identifikatorius. Eilutės unikalumą sudaro vid, medz_pav, komponento_eil_nr, ingrediento_eil_nr"""
+,,,,,vid,string,,,,4,open,,Vaistinio preparato identifikacinis numeris,
+,,,,,komponento_eil_nr,integer,,,,4,open,,Komponento eilės numeris,"""Komponento eilės numeris produkto pakuotėje"""
+,,,,,farmacine_forma,string,,,,4,open,,Komponento farmacinė forma,
+,,,,,komp_kiekis,number,,,,4,open,,Komponento kiekis produkto pakuotėje,
+,,,,,kompo_matav_vnt,string,,,,4,open,,Komponento matavimo vienetai,
+,,,,,ingrediento_eil_nr,integer,,,,4,open,,Komponente esančio ingrediento eilės numeris,
+,,,,,stiprumas_skaicius,number,,,,4,open,,Ingrediento stiprumo skaitinė vertė,
+,,,,,stiprumas_matav_vnt,string,,,,4,open,,Ingrediento stiprumo matavimo vienetai,
+,,,,,medz_pav,string,,,,4,open,,Ingrediento pavadinimas,
+,,,,,medz_veklioji,boolean,,,,4,open,,Veiklioji medžiaga,"""Požymis, nurodantis, ar ingrediento medžiaga yra veiklioji"""
+,,,,,medz_pagalb,boolean,,,,4,open,,Pagalbinė medžiaga,"""Požymis, nurodantis, ar ingrediento medžiaga yra pagalbinė"""

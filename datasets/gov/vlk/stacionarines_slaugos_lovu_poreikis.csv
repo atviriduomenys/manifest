@@ -2,7 +2,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/vlk/stacionarines_slaugos_lovu_poreikis,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Poreikis,,,,,,4,,,Stacionarinės slaugos lovų poreikis,Informacija apie metinį stacionarinių slaugos lovų poreikį pagal savivaldybes
+,,,,Poreikis,,,ad_id,,,4,,,Stacionarinės slaugos lovų poreikis,Informacija apie metinį stacionarinių slaugos lovų poreikį pagal savivaldybes
+,,,,,ad_id,integer,,,,4,open,,Unikalus identifikatorius,
 ,,,,,metai,integer,,,,2,open,,Laikotarpis (metai),Ataskaitinio laikotarpio metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
 ,,,,,teritorija,string,,,,3,open,,Teritorija,"Teritorija, kurioje vertinamas lovų poreikis"

@@ -272,3 +272,30 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
 ,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
 ,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,
+,,,,,,,,,,,,,,
+,,,,RaseiniuSTIrasas,,,vda_prime_key,,,4,,,"Aptarnavimo ir atsiskaitymo už suteiktas paslaugas administravimo sistemos „Mokesta”  UAB ""Raseinių šilumos tinklai"" vartotojų skolų įrašai.",
+,,,,,vda_prime_key,string,,,,4,open,,Unikalus lentelės raktas,
+,,,,,skolos_iraso_id,string,,,,4,open,,Skolos įrašo indetifikatorius,
+,,,,,sutarties_id,string,,,,4,open,,Sutarties identifikatorius,
+,,,,,skolos_suma,number,,,,4,open,,Skolos suma,
+,,,,,ar_delsp_neskaic,boolean,,,,4,open,,Požymis ar neskaičiuojami delspinigiai,
+,,,,,skol_iras_data,date,D,,,4,open,,Skolos įrašo data,
+,,,,,bankroto_data,date,D,,,4,open,,Bankroto data,
+,,,,,moketojo_kodas,string,,,,4,open,,Mokėtojo kodas,
+,,,,,moketojo_tipas,string,,,,4,open,,Mokėtojo tipas,
+,,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,,jar_kodas,string,,,,4,open,,Juridinio asmens kodas,
+,,,,,kitas_kodas,string,,,,4,open,,Kodas nepraėjęs asmens kodo ir juridinio asmens kodo validacijų,
+,,,,,ar_pvm_moketojas,boolean,,,,4,open,,Požymis ar PVM mokėtojas,
+,,,,,sutart_isigal_data,date,D,,,4,open,,Sutarties sudarymo data,
+,,,,,sutart_nutrauk_data,date,D,,,4,open,,Sutarties nutraukimo data,
+,,,,,gimimo_metai,date,Y,,,4,open,,Skolininko gimimo metai,
+,,,,,gim_metai_asmk,date,Y,,,4,open,,Skolininko gimimo metai iš asmens kodo,
+,,,,,mirties_metai,date,Y,,,4,open,,Skolininko mirties metai,
+,,,,,lytis_asmk,string,,,,4,open,,Skolininko lytis iš asmens kodo,
+,,,,,,enum,,,"""Moteris""",,,,Moteris,
+,,,,,,,,,"""Vyras""",,,,Vyras,
+,,,,,ilguma_wgs,number,,,,4,open,,Paslaugos teikimo vietos platumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,platuma_wgs,number,,,,4,open,,Paslaugos teikimo vietos ilgumos koordinatė wgs,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,geometrija,"geometry(point, 4326)",,,,4,open,,Paslaugos teikimo vietos koordinatės,"""Pateiktų koordinačių įrašai yra modifikuoti pridedant atsitiktines vertes - triukšmą, sugeneruotą pagal normalųjį skirstinį"""
+,,,,,tipas,string,,,,4,open,,Paslaugos teikimo vietos koordinačių tipas,

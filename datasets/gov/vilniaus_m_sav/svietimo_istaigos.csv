@@ -1,0 +1,24 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/svietimas,,,,,,,,,,,,Vilniaus mieste veikiančios švietimo įstaigos,"Rinkinyje skelbiamos Vilniaus mieste rinkinio atnaujinimo metu veikiančios švietimo įstaigos: lopšeliai-darželiai, pradinės mokyklos, progimnazijos, gimnazijos, jaunimo ir suaugusiųjų mokymo centrai. Pateikiami įstaigų vietos (seniūnija, adresas, koordinatės) bei kontaktiniai (darbo laikas, telefono numeris, elektroninis paštas, nuoroda į įstaigos internetinį puslapį) duomenys. 
+
+Duomenų teikėjas – Vilniaus miesto savivaldybės administracija. 
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Istaiga,,,vda_id,,,4,,,Vilniaus mieste veikiančios švietimo įstaigos,"Rinkinyje skelbiamos Vilniaus mieste rinkinio atnaujinimo metu veikiančios švietimo įstaigos: lopšeliai-darželiai, pradinės mokyklos, progimnazijos, gimnazijos, jaunimo ir suaugusiųjų mokymo centrai. Pateikiami įstaigų vietos (seniūnija, adresas, koordinatės) bei kontaktiniai (darbo laikas, telefono numeris, elektroninis paštas, nuoroda į įstaigos internetinį puslapį) duomenys."
+,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
+,,,,,seniunija,string,,,,4,open,,Seniūnijos pavadinimas,
+,,,,,istaiga,string,,,,4,open,,Švietimo įstaigos pavadinimas,
+,,,,,jar_kodas,string,,,,4,open,,Įstaigos juridinio asmens kodas,
+,,,,,jar_validacija,boolean,,,,4,open,,Juridinio asmens kodo validacija,
+,,,,,ar_veikia,boolean,,,,4,open,,"Požymis, ar įstaiga veikia rinkinio atnaujinimo metu",
+,,,,,adresas,string,,,,4,open,,Įstaigos adresas,
+,,,,,tel_nr,string,,,,2,open,,Įstaigos kontaktinis telefono numeris,
+,,,,,el_pastas,string,,,,4,open,,Įstaigo elektroninio pašto adresas,
+,,,,,url,string,,,,4,open,,Nuoroda į įstaigos internetinį puslapį,
+,,,,,darbo_laikas_lt,string,,,,2,open,,Įstaigos darbo laikas,
+,,,,,,comment,type,,"update(property: ""darbo_laikas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,geometrija_adp,geometry(3346),,,,4,open,,Įstaigos koordinatės (LKS) pagal pateiktą adresą,
+,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Įstaigos duomenų atnaujinimo data,

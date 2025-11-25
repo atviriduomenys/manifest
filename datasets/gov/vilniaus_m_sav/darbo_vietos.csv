@@ -1,0 +1,46 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vilniaus_m_sav/laisvos_darbo_vietos,,,,,,,,,,,,Vilniaus miesto savivaldybės darbo skelbimai,"Rinkinyje pateikiamos Vilniaus miesto savivaldybės administracijos skelbiamos laisvos darbo vietos savivaldybės ugdymo, gydymo bei kitose biudžetinėse įstaigose Vilniaus mieste. Duomenys apima laikotarpį nuo 2021m. iki dabar. Rinkinio objektas - vienos darbo vietos skelbimas. Pateikiami duomenys apie darbovietę (adresas, koordinatės, įstaigos tipas) ir siūlomą darbo vietą (pareigos, darbo vietos aprašymas, reikalavimai, atlyginimas, kontaktai pasiteiravimui).
+
+Duomenų teikėjas: Vilniaus miesto savivaldybės administracija
+
+Vilniaus miesto savivaldybės administracija
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Skelbimas,,,skelbimo_id,,,4,,,Vilniaus miesto savivaldybės darbo skelbimai,"Rinkinyje pateikiamos Vilniaus miesto savivaldybės administracijos skelbiamos laisvos darbo vietos savivaldybės ugdymo, gydymo bei kitose biudžetinėse įstaigose Vilniaus mieste. Duomenys apima laikotarpį nuo 2021m. iki dabar. Rinkinio objektas - vienos darbo vietos skelbimas. Pateikiami duomenys apie darbovietę (adresas, koordinatės, įstaigos tipas) ir siūlomą darbo vietą (pareigos, darbo vietos aprašymas, reikalavimai, atlyginimas, kontaktai pasiteiravimui).
+
+Duomenų teikėjas: Vilniaus miesto savivaldybės administracija
+
+Vilniaus miesto savivaldybės administracija
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,,skelbimo_id,string,,,,4,open,,Skelbimo identifikacinis numeris,
+,,,,,publikavimas,datetime,S,,,4,open,,Skelbimo publikavimo data,
+,,,,,galiojimo_pabaiga,date,D,,,4,open,,Skelbimo galiojimo pabaiga,
+,,,,,istaiga,string,,,,4,open,,Darbo vietos įstaiga,
+,,,,,istaigos_tipas,string,,,,4,open,,Įstaigos tipas,
+,,,,,,enum,,,"""Švietimo įstaigos""",,,,,
+,,,,,,,,,"""Kitos įstaigos""",,,,,
+,,,,,,,,,"""Vilniaus miesto savivaldybės administracija""",,,,,
+,,,,,,,,,"""Įstaigų vadovai""",,,,,
+,,,,,adresas,string,,,,4,open,,Darbo vietos adresas,
+,,,,,adp_geometrija,"geometry(point, 3346)",,,,4,open,,Adreso koordinatės,
+,,,,,pareigos_lt,string,,,,2,open,,Pareigų pavadinimas,
+,,,,,,comment,type,,"update(property: ""pareigos_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,pareigu_statusas,string,,,,4,open,,Pareigų tipas,
+,,,,,etatas_lt,string,,,,2,open,,Etato dydis,
+,,,,,,comment,type,,"update(property: ""etatas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,atlyginimas_lt,string,,,,2,open,,Siūlomas atlyginimas,
+,,,,,,comment,type,,"update(property: ""atlyginimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,skelbimas_lt,string,,,,2,open,,Skelbimo tekstas,
+,,,,,,comment,type,,"update(property: ""skelbimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,aprasymas_lt,string,,,,2,open,,Darbo vietos aprašymas,
+,,,,,,comment,type,,"update(property: ""aprasymas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,reikalavimas_lt,string,,,,2,open,,Reikalavimai kandidatui,
+,,,,,,comment,type,,"update(property: ""reikalavimas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,naudos_lt,string,,,,2,open,,Darbovietės siūlomos naudos,
+,,,,,,comment,type,,"update(property: ""naudos_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,kontaktas_lt,string,,,,2,open,,Darbo vietos kontaktinė informacija,
+,,,,,,comment,type,,"update(property: ""kontaktas_lt@lt"", type: ""text"")",4,open,spinta:204,,
+,,,,,skelbimo_url_lt,string,,,,2,open,,"Nuoroda į darbo skelbimą (veikia, kol skelbimo galiojimas nepasibaigęs)",
+,,,,,,comment,type,,"update(property: ""skelbimo_url_lt@lt"", type: ""text"")",4,open,spinta:204,,

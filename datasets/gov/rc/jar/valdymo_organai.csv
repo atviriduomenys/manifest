@@ -7,6 +7,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,1,,,,Vadovas yra,
 ,,,,,,,,,0,,,,Vadovo nėra,
 ,,,,,vad_org_nuo,date,D,,,4,open,,Juridinio asmens vienasmenio valdymo organo -  vadovo įregistravimo juridinių asmenų registre data,
+,,,,,vad_lytis,string,,,,4,open,,"Vadovo lytis: V - vyras, M - moteris, ND - nėra duomenų apie vadovo lytį",
 ,,,,,valdyba,integer,,,,4,open,,Juridinio asmens daugiaasmenis valdymo organas – valdyba,
 ,,,,,,enum,,,1,,,,Valdyba yra,
 ,,,,,,,,,0,,,,Valdybos nėra,

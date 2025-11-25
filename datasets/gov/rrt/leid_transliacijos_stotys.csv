@@ -24,3 +24,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,platuma_wgs,number,,,,4,open,,Antenos platumos koordinatė WGS84 koordinačių sistemoje,
 ,,,,,antenos_koordinate,"geometry(point, 4326)",,,,4,open,,Antenos koordinatė,
 ,,,,,maks_spind_galia_erp_dbw,number,,,,4,open,,Maksimali spinduliavimo galia ERP,
+,,,,,antenos_poliarizacija,string,,,,4,open,,Antenos poliarizacija,
+,,,,,,enum,,,"""H""",,,,Horizontali poliarizacija,
+,,,,,,enum,,,"""V""",,,,Vertikali poliarizacija,

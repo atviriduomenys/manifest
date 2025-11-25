@@ -1,0 +1,26 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/dokumentu_sarasas,,,,,,,,,,,,Lietuvos muitinei pateikiamų dokumentų sąrašo duomenys,"""Lietuvos muitinei pateikiamų dokumentų sąrašas tvarkomas Lietuvos Respublikos integruoto tarifo (LITAR) sistemoje (https://litarweb.lrmuitine.lt/taric/web/certsearchform_LT).
+Sąraše pateikiama informacija apie Lietuvos muitinei pateikiamus dokumentus (dokumentų rūšis), kurių duomenys nurodomi muitinės deklaracijose. Vienoje eilutėje pateikiama tam tikru laikotarpiu galiojančio vieno dokumento informacija: dokumento rūšis, rūšies galiojimo pradžios ir pabaigos data, rūšies pavadinimas, rūšies kodas (dokumento rūšis ir 3 simolių kodas), dokumento kodo galiojimo pradžios ir pabaigos data, kodo pavadinimas, bei dokumento pavadinimo įsigaliojimo data. Paskutiniame stulpelyje nurodomas dokumento šaltinis (Taric arba National).
+
+Duomenų laikotarpis: nuo 2004 m. gegužės 1 d. Lietuvos Respublikoje galiojantys Europos Bendrijos integruoto tarifo (TARIC) duomenys apie dokumentus, papildyti nuo 2004 m. gegužės 1 d. galiojančiais nacionalinių dokumentų duomenimis. 
+
+Duomenų teikėjas – Muitinės departamentas prie Lietuvos Respublikos finansų ministerijos.
+
+Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."""
+,,,,,,prefix,spint,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Dokumentas,,,vda_prime_key,,,4,,,Lietuvos muitinei pateikiamų dokumentų sąrašo duomenys,
+,,,,,vda_prime_key,string,,,,4,open,,VDA identifikatorius,"""Unikalus Valstybės duomenų agentūros eilutės identifikatorius. Eilutės unikalumą sudaro stulpeliai - rusies_kodas, dok_pav, pav_galioja_nuo"""
+,,,,,dok_rusis,string,,,,4,open,,Dokumento rūšis,
+,,,,,rusis_galioja_nuo,date,D,,,4,open,,Dokumento rūšies galiojimo pradžios data,
+,,,,,rusis_galioja_iki,date,D,,,4,open,,Dokumento rūšies galiojimo pabaigos data,
+,,,,,rusies_pav,string,,,,4,open,,Dokumento rūšies pavadinimas,
+,,,,,rusies_kodas,string,,,,4,open,,Dokumento rūšies kodas,
+,,,,,kod_galioja_nuo,date,D,,,4,open,,Dokumento rūšies kodas galiojimo pradžia,
+,,,,,kod_galioja_iki,date,D,,,4,open,,Dokumento rūšies kodo galiojimo pabaiga,
+,,,,,dok_kod_pav,string,,,,3,open,,Dokumento rūšies kodo pavadinimas,
+,,,,,kod_pav_galioja_nuo,date,D,,,4,open,,Dokumento rūšies kodo pavadinimo galiojimo pradžios data,
+,,,,,dok_saltinis,string,,,,4,open,,Dokumento šaltinis,"""Dokumento šaltinis. Požymis TARIC reiškia, kad dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės. Požymis National reiškia, kad dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo"""
+,,,,,,enum,,,"""Taric""",,,,Taric,Dokumento įrašas gautas iš Europos Sąjungos integruoto tarifo (TARIC) duomenų bazės
+,,,,,,,,,"""National""",,,,National,Dokumento įrašas yra iš dokumentų nacionalinių kodų sąrašo
