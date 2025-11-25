@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nbfc/sabis,,,,,,,,,,,,Viešųjų pirkimų sąskaitų administravimo bendroji informacinė sistema,
+,datasets/gov/nbfc/sabis,,,,,,,,,,,,Viešojo sektoriaus sąskaitų administravimo bendroji informacinė sistema,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -66,4 +66,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ne_pvm_moketojas,boolean,,,,4,open,,Požymis ar sutarties šalis PVM mokėtojas,
 ,,,,,veiklos_vieta,string,,,,4,open,,Suarties šalies veiklos vieta,
 ,,,,,data,datetime,S,,,4,open,,Sutarties šalies atnaujinimo data,
+
 
