@@ -75,7 +75,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""4""",,,,Panaikinta,
 ,,,,,filialas,string,,,,2,open,,Filialo Pavadinimas,
 ,,,,,data,date,D,,,4,open,,Ataskaitos Pateikimo Data,
-,,,,,ataskaitinis_laikotarpis_metai,integer,,,,2,open,,Ataskaitinis Laikotarpis(Metai),
+,,,,,ataskaitinis_laikotarpis_metai,string,,,,2,open,,Ataskaitinis Laikotarpis(Metai),
 ,,,,,ataskaitinis_laikotarpis_pusmetis,string,,,,4,open,,Ataskaitinis Laikotarpis(Pusmetis),
 ,,,,,,enum,,,"""I""",,,,Pirmasis Pusmetis,
 ,,,,,,,,,"""II""",,,,Antrasis Pusmetis,
