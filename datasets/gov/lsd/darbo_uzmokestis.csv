@@ -152,7 +152,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
 ,,,,,atostogu_dienos,integer,,,,2,open,,"Kasmetinių atostogų dienų skaičius (darbo dienomis)",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
-,,,,,dbu_metinis,integer,,,,2,open,,"Metinis bruto darbo užmokestis",
+,,,,,bdu_metinis,integer,,,,2,open,,"Metinis bruto darbo užmokestis",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
 ,,,,,premijos,integer,,,,2,open,,"Metinės nereguliarios premijos, priedai, priemokos ir vienkartinės piniginės išmokos",
 ,,,,,,comment,type,,"update(property: ""type: """")",4,open,spinta:205,,
