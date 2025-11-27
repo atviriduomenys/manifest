@@ -3,15 +3,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,resource12,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Nariai,,,,,,
 ,,,,Narys,,,nariai_id,,,4,,,,
 ,,,,,nariai_id,integer,,,,4,open,,Unikalus identifikatorius,
-,,,,,org_tipas,string,,,,2,open,,Organizacijos tipas (Politinė partija, Politinis komitetas)
+,,,,,org_tipas,string,,,,4,open,,Organizacijos tipas (Politinė partija, Politinis komitetas)
 ,,,,,,enum,,,"""Partija""",,,,Partija,
 ,,,,,,,,,"""Politinis komitetas (SAV)""",,,,Politinis komitetas (SAV),
-,,,,,org_ja_kodas,integer,,,,2,open,,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
-,,,,,org_pavadinimas,string,,,,2,open,,Politinės organizacijos pavadinimas,Pateikiami visi registruoti ir priimti/nepriimti nario mokesčio mokėjimai visose politinėse organizacijose. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
-,,,,,ataskaitiniai_metai,integer,,,,2,open,,Nario mokesčio mokėjimo metai,
+,,,,,org_ja_kodas,integer,,,,4,open,,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre,Politinės organizacijos juridinio asmens kodas Juridinių asmenų registre. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
+,,,,,org_pavadinimas,string,,,,4,open,,Politinės organizacijos pavadinimas,Pateikiami visi registruoti ir priimti/nepriimti nario mokesčio mokėjimai visose politinėse organizacijose. Sąsaja su RC atvertu duomenų rinkiniu: https://data.gov.lt/dataset/lietuvos-respublikos-politiniu-partiju-duomenys
+,,,,,ataskaitiniai_metai,integer,,,,4,open,,Nario mokesčio mokėjimo metai,
 ,,,,,moketojas,string,,,,4,open,,"Politinės organizacijos narys, sumokėjęs mokestį","Naudojamas HASH kodas duomenų rinkiniui, t. y. vienodas HASH kodas (ar ID) sugeneruojamas konkrečiam asmeniui ir jis yra vienodas duomenų rinkinyje"
 ,,,,,mok_data,date,D,,,4,open,,Mokėjimo data,Formatas (mmmm-mm-dd)
-,,,,,mok_suma,number,,,,3,open,,Įmokos dydis,Sumokėto partijos nario mokesčio dydis (EUR)
+,,,,,mok_suma,number,,,,4,open,,Įmokos dydis,Sumokėto partijos nario mokesčio dydis (EUR)
 ,,,,,mok_busena,string,,,,4,open,,Nario mokesčio priėmimo būsena,Nario mokesčių priėmimo būsena (Priimti mokesčiai / Nepriimti mokesčiai)
 ,,,,,,enum,,,"""P""",,,,Priimti mokesčiai,
 ,,,,,,,,,"""A""",,,,Nepriimti mokesčiai,
