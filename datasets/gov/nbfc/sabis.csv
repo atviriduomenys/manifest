@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nbfc/sabis,,,,,,,,,,,,Viešojo sektoriaus sąskaitų administravimo bendroji informacinė sistema,
+,datasets/gov/nbfc/viesojo_sektoriaus_saskaitos,,,,,,,,,,,,Viešojo sektoriaus sąskaitų administravimo bendroji informacinė sistema,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
@@ -32,9 +32,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""Pristatymo gavėjas""",,,,Sąskaitos naudos gavėjas,
 ,,,,,,,,,"""Mokėjimo gavėjas""",,,,Sąskaitos mokėjimo gavėjas,
 ,,,,,validus_asmens_kodas,string,,,,4,open,,Sutaties šalies validus šifruotas fizinio asmens kodas,
-,,,,,validus_jar_kodas,string,,,,3,open,,Sutaties šalies validus juridinio asmens kodas,
+,,,,,validus_jar_kodas,string,,,,4,open,,Sutaties šalies validus juridinio asmens kodas,
 ,,,,,kitas_kodas,string,,,,4,open,,Sutaties šalies šifruotas kitas kodas (ne validus fizinio ar juridinis asmens kodas),
-,,,,,kitas_kodas_paaiskinimas,string,,,,3,open,,šifruoto kito kodo paaiškinimas,
+,,,,,kitas_kodas_paaiskinimas,string,,,,4,open,,šifruoto kito kodo paaiškinimas,
 ,,,,,pavadinimas,string,,,,4,open,,Pirkėjo/Tiekėjo pavadinimas,
 ,,,,,ne_pvm_moketojas,boolean,,,,4,open,,Požymis nurodantis ar šalis yra mokesčių mokėtojas,
 ,,,,,veiklos_vieta,string,,,,4,open,,Sąskaitos šalies veiklos vieta,
