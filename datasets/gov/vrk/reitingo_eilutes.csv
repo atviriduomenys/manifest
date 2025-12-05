@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vrk/reitingo_eilutes,,,,,,,,,,,,,
 ,,resource7,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/ReitingoEilutes,,,,,,
-,,,,ReitingoEilute,,,"rink_turo_apyg_id, rink_turo_apyl_id",,,2,,,,
+,,,,ReitingoEilute,,,"rink_turo_apyg_id, rink_turo_apyl_id",,,4,,,,
 ,,,,,rink_turo_id,integer,,,,4,open,,Rinkimų turo identifikatorius,
 ,,,,,rink_turo_pavad,string,,,,4,open,,Rinkimų turo pavadinimas,
 ,,,,,rink_turo_apyg_id,integer,,,,4,open,,Rinkimų turo apygardos identifikatorius,
