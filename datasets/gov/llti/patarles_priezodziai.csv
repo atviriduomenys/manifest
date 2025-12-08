@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/llti/patarles_priezodziai,,,,,,,,,,,,Patarlių ir priežodžių elektroninis sąvadas,"Rinkinyje pateikiami duomenys iš Lietuvių literatūros ir tautosakos instituto Patarlių ir priežodžių elektroninio sąvado (eLPP). Jo pagrindas – Lietuvių literatūros ir tautosakos instituto sisteminės Patarlių ir priežodžių kartotekos duomenys. Kiekvienos patarlės ar priežodžio variantai sutelkiami į tipus, vienijamus panašių motyvų. Daugiau informacijos rasite <https://elpp.archyvas.llti.lt/lt/savadas>."
+,datasets/gov/llti/patarles_priezodziai,,,,,,,,,,,,Patarlių ir priežodžių elektroninis sąvadas,"Rinkinyje pateikiami duomenys iš Lietuvių literatūros ir tautosakos instituto Patarlių ir priežodžių elektroninio sąvado (eLPP). Jo pagrindas – Lietuvių literatūros ir tautosakos instituto sisteminės Patarlių ir priežodžių kartotekos duomenys. Kiekvienos patarlės ar priežodžio variantai sutelkiami į tipus, vienijamus panašių motyvų. Daugiau informacijos rasite <https://elpp.archyvas.llti.lt/lt/savadas>. Nuo 2025 m. gruodžio papildomai atveriami patarlių atitikmenys kitomis kalbomis ir šaltinių sąrašas. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
-,,,,Tipas,,,tipo_id,,,4,,,Patarlės ir priežodžiai,"Lietuvių patarlių ir priežodžių tipų sąrašas. Tipas – tai populiariausias ar reprezentatyviausias, į svarbiausius rinkinius įtrauktas lietuviškos patarlės arba priežodžio variantas. Tipų antraštės (pavadinimai) pateikiamos su atraminiais žodžiais, interpretacija, vertimu į anglų, vokiečių bei rusų kalbas, variantų skaičiumi, sąsajomis su kitais tipais ir nuoroda į atitinkamo tipo puslapį Lietuvių literatūros ir tautosakos instituto patarlių ir priežodžių elektroniniame sąvade <https://elpp.archyvas.llti.lt/lt>. Ta pati tipų antraštė gali pasikartoti tarp kelių susijusių tipų ir paprastai tuomet turi skirtingus variantų (kurie šioje lentelėje nepateikiami) atraminius žodžius. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
+,,,,Tipas,,,tipo_id,,,4,,,Patarlės ir priežodžiai,"Lietuvių patarlių ir priežodžių tipų sąrašas. Tipas – tai populiariausias ar reprezentatyviausias, į svarbiausius rinkinius įtrauktas lietuviškos patarlės arba priežodžio variantas. Tipų antraštės (pavadinimai) pateikiamos su atraminiais žodžiais, interpretacija, vertimu į anglų, vokiečių bei rusų kalbas, variantų skaičiumi, sąsajomis su kitais tipais ir nuoroda į atitinkamo tipo puslapį Lietuvių literatūros ir tautosakos instituto patarlių ir priežodžių elektroniniame sąvade <https://elpp.archyvas.llti.lt/lt>. Ta pati tipų antraštė gali pasikartoti tarp kelių susijusių tipų ir tuomet turės skirtingus variantų (kurie šioje lentelėje nepateikiami) atraminius žodžius."
 ,,,,,tipo_id,string,,,,4,open,,Tipo identifikatorius,
 ,,,,,tipo_antraste,string,,,,4,open,,Tipo antraštė,
 ,,,,,,comment,type,,"update(property: ""tipo_antraste@lt"", type: ""text"")",4,open,spinta:204,,
@@ -25,3 +25,18 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tipo_id_nuoroda,string,,,,4,open,,Išsamesnį aprašą turinčio panašaus tipo identifikatorius,
 ,,,,,susijusiu_tipu_id,string,,,,4,open,,Susijusių tipų identifikatoriai,
 ,,,,,savado_url,url,,,,4,open,,Žiniatinklio puslapis „Patarlių ir priežodžių elektroniniame sąvade“,
+,,,,,,,,,,,,,,
+,,,,Atitikmuo,,,iraso_id,,,4,,,Atitikmenys kitomis kalbomis pagal šaltinius,Prie populiarių tarptautinių tipų teikiami patarlių atitikmenys latvių
+,,,,,iraso_id,string,,,,4,open,,Atitikmens ir šaltinio derinio unikalus identifikatorius,
+,,,,,tipo_id,string,,,,4,open,,Tipo identifikatorius,
+,,,,,kalba,string,,,,4,open,,Užsienio kalbos santrumpa,
+,,,,,atitikmuo,string,,,,4,open,,Tipo atitikmuo užsienio kalba,
+,,,,,,comment,type,,"update(property: ""atitikmuo"", type: ""text"")",4,open,spinta:204,,
+,,,,,saltinio_id,string,,,,4,open,,Šaltinio identifikatorius,
+,,,,,saltinio_puslapis,string,,,,4,open,,"Šaltinio puslapis, kuriame minimas atitikmuo",
+,,,,,,,,,,,,,,
+,,,,Saltinis,,,saltinio_id,,,4,,,Šaltiniai,Literatūros šaltiniai su pilnomis bibliografinėmis nuorodomis ir jų santrumpomis.
+,,,,,saltinio_id,string,,,,4,open,,Šaltinio identifikatorius,
+,,,,,santrumpa,string,,,,4,open,,Šaltinio santrumpa,
+,,,,,bibliografine_nuoroda,string,,,,4,open,,Bibliografinė noroda,
+,,,,,,comment,type,,"update(property: ""bibliografine_nuoroda"", type: ""text"")",4,open,spinta:204,,
