@@ -26,7 +26,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,susijusiu_tipu_id,string,,,,4,open,,Susijusių tipų identifikatoriai,
 ,,,,,savado_url,url,,,,4,open,,Žiniatinklio puslapis „Patarlių ir priežodžių elektroniniame sąvade“,
 ,,,,,,,,,,,,,,
-,,,,Atitikmuo,,,iraso_id,,,4,,,Atitikmenys kitomis kalbomis pagal šaltinius,Prie populiarių tarptautinių tipų teikiami patarlių atitikmenys latvių
+,,,,Atitikmuo,,,iraso_id,,,4,,,Atitikmenys kitomis kalbomis pagal šaltinius,"Prie populiarių tarptautinių tipų teikiami patarlių atitikmenys latvių, lenkų, vokiečių, anglų, lotynų bei rusų kalbomis. Šie atitikmenys skiriasi nuo tipų lentelėje esančių patarlių vertimų į kitas kalbas, nes pastarieji vertimai yra tiesioginiai. Ši lentelė ir šaltinių lentelė susijungia per „saltinio_id“ stulpelį."
 ,,,,,iraso_id,string,,,,4,open,,Atitikmens ir šaltinio derinio unikalus identifikatorius,
 ,,,,,tipo_id,string,,,,4,open,,Tipo identifikatorius,
 ,,,,,kalba,string,,,,4,open,,Užsienio kalbos santrumpa,
