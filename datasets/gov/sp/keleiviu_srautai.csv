@@ -46,4 +46,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sedimu_vietu_sk,integer,,,,4,open,,Sėdimų vietų skaičius transporto priemonėje,
 ,,,,,vezejas,string,,,,4,open,,Vežėjas,
 ,,,,,tp_aktyvumas,boolean,,,,4,open,,Aktyvios transporto priemonės požymis,
-
