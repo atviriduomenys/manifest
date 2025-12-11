@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Kelione,,,reiso_id,,,4,,,,"Lentelėje pateikiama bendra informacija apie reisą – maršruto grafiko pavadinimas bei pradžia ir pabaiga"
+,,,,Kelione,,,reiso_id,,,4,,,,Lentelėje pateikiama bendra informacija apie reisą – maršruto grafiko pavadinimas bei pradžia ir pabaiga
 ,,,,,reiso_id,string,,,,4,open,,Reiso identifikatorius,
 ,,,,,data,date,D,,,4,open,,Kelionės data,
 ,,,,,keliones_pradzia,datetime,S,,,4,open,,Kelionės pradžia,
@@ -14,15 +14,17 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pamainos_pav,string,,,,4,open,,Pamainos pavadinimas,"Pavadinimo struktūra: Transporto rūšis (A - autobusas arba T - troleibusas) maršruto numeris - Tvarkaraščio grafiko numeris - Savaitės dienos tipas (1 – darbo diena, 6 – šeštadienis, 7 – sekmadienis) - Tvarkaraščio įsigaliojimo data – YYMMDD formatu"
 ,,,,,tvarkarascio_id,string,,,,4,open,,Maršruto tvarkaraščio identifikatorius,
 ,,,,,tvarkarascio_pav,string,,,,4,open,,Mašruto tvarkaraščio pavadinimas,
-,,,,,tvarkarascio_seka,integer,,,,4,open,,Maršruto dienos tvarkaraščio eilės numeris,
 ,,,,,stoteliu_sk,integer,,,,4,open,,Stotelių skaičius maršrute,
 ,,,,,tp_id,string,,,,4,open,,Transporto priemonės identifikatorius,
 ,,,,,,,,,,,,,,
 ,,,,Stotele,,,keliones_stoteles_id,,,4,,,,Lentelėje pateikiamas detalus keleivių skaičius kiekvienoje reiso stotelėje
 ,,,,,keliones_stoteles_id,string,,,,4,open,,Stotelės kelionėje identifikatorius,
 ,,,,,reiso_id,string,,,,4,open,,Reiso identifikatorius,
-,,,,,koord_id,string,,,,4,open,,Stotelės koordinatės identifikatorius,
 ,,,,,stoteles_seka,integer,,,,4,open,,Stotelės eilės numeris kelionėje,
+,,,,,stoteles_id,string,,,,4,open,,Stotelės identifikatorius,
+,,,,,pavadinimas,string,,,,4,open,,Stotelės pavadinimas,
+,,,,,koord_id,string,,,,4,open,,Stotelės koordinatės identifikatorius,
+,,,,,geometrija_wkt,"geometry(point, 3346)",,,,4,open,,Stotelės geometrija (lokacija) WKT formatu,
 ,,,,,atvykimo_laikas,datetime,S,,,4,open,,Atvykimo į stotelę laikas,
 ,,,,,atvykimo_velavimas_s,integer,,,,4,open,,Atvykimo į stotelę vėlavimo trukmė sekundėmis,
 ,,,,,isvykimo_laikas,datetime,S,,,4,open,,Išvykimo iš stotelės laikas,
@@ -37,13 +39,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,keleiviu_sk_perskaiciuotas,integer,,,,4,open,,"Perskaičiuotas (patikslintas), pagal DILAX integruotus algoritmus, keleivių kiekis",
 ,,,,,transporto_sustojimas,boolean,,,,4,open,,Stotelėje sustojusios transporto priemonės požymis,
 ,,,,,,,,,,,,,,
-,,,,Koordinate,,,koord_id,,,4,,,,Lentelėje pateikiamos stotelių koordinatės LKS-94 formatu
-,,,,,koord_id,string,,,,4,open,,Stotelės koordinatės identifikatorius,
-,,,,,stoteles_id,string,,,,4,open,,Stotelės identifikatorius,
-,,,,,pavadinimas,string,,,,4,open,,Stotelės pavadinimas,
-,,,,,geometrija_wkt,"geometry(point, 3346)",,,,4,open,,Stotelės geometrija (lokacija) WKT formatu,
-,,,,,,,,,,,,,,
-,,,,TransportoPriemone,,,tp_id,,,4,,,,Lentelėje pateikiame reiso metu naudotos keleivių vežimo priemonės
+,,,,TransportoPriemone,,,tp_id,,,4,,,,"Lentelėje pateikiamos, reiso metu naudotos, keleivių vežimo priemonės"
 ,,,,,tp_id,string,,,,4,open,,Transporto priemonės identifikatorius,
 ,,,,,tp_kodas,string,,,,4,open,,Transporto priemonės kodas,
 ,,,,,marke,string,,,,4,open,,Transporto priemonės markė,
