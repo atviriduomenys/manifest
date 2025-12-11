@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/nsa/nspr,,,,,,,,,,,,Neformaliojo vaikų švietimo programos,
+,datasets/gov/nsa/nspr/neformaliojo_vaiku_svietimo_programos,,,,,,,,,,,,Neformaliojo vaikų švietimo programos,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
