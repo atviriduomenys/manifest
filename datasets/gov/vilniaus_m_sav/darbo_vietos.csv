@@ -25,7 +25,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,,,,,"""Įstaigų vadovai""",,,,,
 ,,,,,adresas,string,,,,4,open,,Darbo vietos adresas,
 ,,,,,adp_geometrija,"geometry(point, 3346)",,,,4,open,,Adreso koordinatės,
-,,,,,pareigos_lt,string,,,,2,open,,Pareigų pavadinimas,
+,,,,,pareigos_lt,string,,,,4,open,,Pareigų pavadinimas,
 ,,,,,,comment,type,,"update(property: ""pareigos_lt@lt"", type: ""text"")",4,open,spinta:204,,
 ,,,,,pareigu_statusas,string,,,,4,open,,Pareigų tipas,
 ,,,,,etatas_lt,string,,,,4,open,,Etato dydis,
