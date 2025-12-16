@@ -1,0 +1,40 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,https://get.data.gov.lt/datasets/gov/cpva/paramu_duomenys_sf,,,,,,,,,,,,"VšĮ Centrinės projektų valdymo agentūros, vidaus saugumo fondo ir Sienų valdymo bei vizų finansinės paramos priemonių, įtrauktų į integruoto sienų valdymo fondą, bei vidaus saugumo fondo informacinių sistemų sutarčių duomenys","Duomenų rinkį sudaro VšĮ Centrinės projektų valdymo agentūros administruojamų projektų sutarčių duomenys, susiję su Vidaus saugumo fondu ir Integruoto sienų valdymo fondu. Rinkinyje pateikiama informacija apie projektą įgyvendinančią instituciją, nurodomas jos identifikatorius (JAR), sutarties numeris ir pavadinimas. Lentelėje fiksuojamos svarbiausios projekto datos – paraiškos pateikimo, veiklų pradžios ir pabaigos, sutarties įsigaliojimo bei projekto pabaigos datos. 
+Taip pat pateikiami finansiniai rodikliai: finansavimo procentas, prašoma suma, finansuojama suma ir faktiškai išmokėta suma bei paskutinio mokėjimo data. Duomenys leidžia įvertinti projektų finansavimo apimtį ir mokėjimų eigą. Lentelėje nurodomas partnerių skaičius, leidžiantis analizuoti projektų bendradarbiavimo mastą. Be to, pateikiamas nustatytų pažeidimų skaičius, kuris svarbus priežiūros ir rizikų vertinimui. Papildomi laukai – regionas ir priemonės pavadinimas – sudaro galimybę analizuoti projektų pasiskirstymą teritoriniu ir programiniu pjūviu. 
+
+Duomenų teikėjas – VšĮ Centrinė projektų valdymo agentūra. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. 
+
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. "
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Sutartis,,,sutarties_nr,,,4,,,"VšĮ Centrinės projektų valdymo agentūros, vidaus saugumo fondo ir Sienų valdymo bei vizų finansinės paramos priemonių, įtrauktų į integruoto sienų valdymo fondą, bei vidaus saugumo fondo informacinių sistemų sutarčių duomenys","Duomenų rinkį sudaro VšĮ Centrinės projektų valdymo agentūros administruojamų projektų sutarčių duomenys, susiję su Vidaus saugumo fondu ir Integruoto sienų valdymo fondu. Rinkinyje pateikiama informacija apie projektą įgyvendinančią instituciją, nurodomas jos identifikatorius (JAR), sutarties numeris ir pavadinimas. Lentelėje fiksuojamos svarbiausios projekto datos – paraiškos pateikimo, veiklų pradžios ir pabaigos, sutarties įsigaliojimo bei projekto pabaigos datos. 
+Taip pat pateikiami finansiniai rodikliai: finansavimo procentas, prašoma suma, finansuojama suma ir faktiškai išmokėta suma bei paskutinio mokėjimo data. Duomenys leidžia įvertinti projektų finansavimo apimtį ir mokėjimų eigą. Lentelėje nurodomas partnerių skaičius, leidžiantis analizuoti projektų bendradarbiavimo mastą. Be to, pateikiamas nustatytų pažeidimų skaičius, kuris svarbus priežiūros ir rizikų vertinimui. Papildomi laukai – regionas ir priemonės pavadinimas – sudaro galimybę analizuoti projektų pasiskirstymą teritoriniu ir programiniu pjūviu. 
+
+Duomenų teikėjas – VšĮ Centrinė projektų valdymo agentūra. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. 
+
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. "
+,,,,,institucijos_jar,string,,,,4,open,,Institucijos JAR kodas,
+,,,,,institucija,string,,,,4,open,,Institucijos pavadinimas,
+,,,,,sutarties_nr,string,,,,4,open,,Sutarties/projekto numeris,
+,,,,,sutarties_pavadinimas_lt,string,,,,2,open,,Sutarties/projekto pavadinimas,
+,,,,,,comment,type,,"update(property: ""sutarties_pavadinimas_lt@lt"", type: ""text"")",3,open,spinta:204,Sutarties/projekto pavadinimas,
+,,,,,paraiskos_pateikimo_data,date,D,,,4,open,,Paraiškos pateikimo data,
+,,,,,veiklu_pradzia,date,D,,,4,open,,Veiklų pradžios data,
+,,,,,veiklu_pabaiga,date,D,,,4,open,,Veiklų pabaigos data,
+,,,,,sutarties_isigaliojimo_data,date,D,,,4,open,,Sutarties/projekto įsigaliojimo data,
+,,,,,projekto_pabaiga,date,D,,,4,open,,Projekto/sutaries pabaigos data,
+,,,,,finansavimo_procentas,number,,,,4,open,,Finansavimo procentas,
+,,,,,prasoma_suma,number,,,,4,open,,Prašoma suma,
+,,,,,finansuojama_suma,number,,,,4,open,,Finansuojama suma,
+,,,,,ismoketa_suma,number,,,,4,open,,Išmokėta suma,
+,,,,,paskutinio_mok_data,date,D,,,4,open,,Paskutinio mokėjimo data,
+,,,,,partneriu_kiekis,integer,,,,4,open,,Partnerių kiekis,
+,,,,,pazeidimu_kiekis,integer,,,,4,open,,Pažeidimų kiekis,
+,,,,,regionas,string,,,,4,open,,Regionas kuriame vykdomas projektas,
+,,,,,priemones_pavadinimas,string,,,,4,open,,Finansavimo priemonės pavadinimas,
