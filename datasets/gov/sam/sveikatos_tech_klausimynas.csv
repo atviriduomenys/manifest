@@ -1,0 +1,20 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/sam/sveikatos_tech_klausimynas,,,,,,,,,,,,Sveikatos technologijų kompetencijų klausimyno duomenų rinkinys,Anoniminės apklausos duomenys
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,TechKlausimynas,,,vda_prime_key,,,4,,,Sveikatos technologijų kompetencijų klausimyno duomenys su atsakymais ,"Rinkinyje pateikiami anoniminės apklausos duomenys, gauti atsakius į sveikatos technologijų kompetencijų klausimyną. Apklausą parengė Health Tech Akseleratoriaus darbo grupė, siekianti sukurti sveikatos technologijų kompetencijų modelį ir pasiūlyti efektyviausius įgūdžių tobulinimo metodus. Klausimynas skirtas įvairių sveikatos priežiūros įstaigų darbuotojų skaitmeninių kompetencijų įsivertinimui, siekiant įvertinti pasirengimą naudotis sveikatos technologijomis.  
+
+Sveikatos technologijų kompetencijų klausimynas apima klausimus apie skaitmeninį raštingumą, sveikatos informacinę sistemą ir elektroninius įrašus, duomenų valdymą, privatumą ir kibernetinį saugumą, IT standartus, duomenų analizę ir dirbtinį intelektą, nuotolinę sveikatos priežiūrą, skaitmeninį raštingumą, skaitmeninių įrankių naudojimą, inovacijas ir verslumą sveikatos technologijose, lyderystę ir pokyčių valdymą, nuolatinį mokymąsi ir profesinį tobulėjimą. Galimi atsakymai – visiškai nesutinku, nesutinku, nei sutinku, nei nesutinku, sutinku arba visiškai sutinku. 
+
+Duomenų šaltinis – Sveikatos apsaugos ministerija. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt"
+,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Unikalus identifikatorius,
+,,,,,data,datetime,D,data,,4,open,,Apklausos atsakymo pateikimo data.,
+,,,,,sveikatos_istaiga,string,,sveikatos_istaiga,,4,open,,Respondento nurodyta sveikatos priežiūros įstaiga arba jos tipas.,
+,,,,,pareigos,string,,pareigos,,4,open,,Respondento pareigos sveikatos priežiūros įstaigoje.,
+,,,,,klausimo_sritis,string,,klausimo_sritis,,4,open,,"Teminė klausimo sritis, kuriai priskiriamas klausimas.",
+,,,,,klausimas,string,,klausimas,,4,open,,Pilnas apklausos klausimo tekstas.,
+,,,,,atsakymas,string,,atsakymas,,4,open,,Respondento pateiktas atsakymas į konkretų klausimą.,
