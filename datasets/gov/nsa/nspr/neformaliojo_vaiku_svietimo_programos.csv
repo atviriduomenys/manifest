@@ -18,7 +18,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,prg_isreg_priezast_en,string,,,,4,open,,Neformaliojo švietimo programos išregistravimo iš neformaliojo švietimo programų registro priežastis lietuvių kalba,
 ,,,,,,enum,According to the program developer's request,,,,,,"""According to the program developer's request""",
 ,,,,,,,Do not take place more than two years,,,,,,"""Do not take place more than two years""",
-,,,,,,,Do not take place more than two years,,,,,,"""Do not take place more than two years""",
 ,,,,,,,By Decision of the Register Manager,,,,,,"""By Decision of the Register Manager""",
 ,,,,,,,Connected to the other program,,,,,,"""Connected to the other program""",
 ,,,,,prg_paskirtis_lt,string,,,,4,open,,Neformaliojo švietimo programos paskirtis lietuvių kalba,
