@@ -5,6 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Programa,,,vda_prime_key,,,4,,,Neformaliojo vaikų švietimo programos,Viena eilutė atitinka vieną neformaliojo vaikų švietimo programą
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus lentelės raktas,
+,,,,,programos_id,string,,,,4,open,,Programos identifikatorius,
 ,,,,,prg_kodas,string,,,,4,open,,Neformaliojo švietimo programos kodas,
 ,,,,,prg_pavad_lt,string,,,,4,open,,Neformaliojo švietimo programos pavadinimas lietuvių kalba,
 ,,,,,prg_pavad_en,string,,,,4,open,,Neformaliojo švietimo programos pavadinimas anglų kalba,
