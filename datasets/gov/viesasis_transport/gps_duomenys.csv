@@ -137,4 +137,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,matavimo_data,date,D,,,4,open,,Matavimo data formatu YYYY-MM-DD,
 ,,,,,matavimo_laikas,time,,,,3,open,,Matavimo laikas formatu HH:mm:ss,
 ,,,,,masinos_tipas,string,,,,4,open,,Mašinos tipas,
-
