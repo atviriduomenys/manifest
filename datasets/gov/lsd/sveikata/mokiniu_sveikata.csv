@@ -1,0 +1,78 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sveikata/mokiniu_sveikata,,,,,,,,,,,,Kasmetinės vaikų sveikatos patikros duomenys,"Kaip numato įstatymai, pagal Lietuvos Respublikos bendrojo ugdymo programas darželiuose ir mokyklose besimokantys vaikai iki 18 metų kartą per metus turi pasitikrinti sveikatą. Vaikų sveikatos patikrinimai leidžia laiku nustatyti sveikatos sutrikimus, ragina keisti gyvenimo būdą ir atsižvelgti į mokinio sveikatos poreikius ugdymo procese. Sveikatos patikra susideda iš dviejų dalių: šeimos, vidaus ligų ar vaikų ligų gydytojas arba slaugytojas įvertina vaiko sveikatą, o gydytojas odontologas, gydytojas odontologas specialistas arba burnos higienistas įvertina dantų ir burnos higienos būklę.
+
+Rinkinyje pateikiami išsamūs Lietuvos bendrojo ugdymo darželių ir mokyklų mokinių sveikatos patikrinimo duomenys nuo 2019m. iki šių dienų. Atvėrime panaudoti duomenys iš ESPBĮ, SVEIDRA informacinių sistemų ir Gyventojų registro. Pažymima, jog rinkinio lentelių duomenys tarpusavyje nesijungia. Rinkinys susideda iš trijų lentelių:
+
+1. Mokinio sveikatos pažymėjimas: I. Sveikatos būklės įvertinimas. Pateikiami E027-1 formos pirmos dalies duomenys. Lentelės objektas - moksleivio sveikatos patikrinimas. Pateikiami duomenys apie tikrinimą atlikusią asmens sveikatos priežiūros įstaigą (ASPĮ), prie kurios prirašytas mokinys, nuasmeninti mokinio asmens ir jo sveikatos duomenys (ūgis, svoris) bei vertinimo išvada.
+
+2. Mokinio sveikatos pažymėjimas: II. Dantų ir žandikaulių būklės įvertinimas. Pateikiami E027-1 formos antros dalies duomenys. Lentelės objektas - moksleivio sveikatos patikrinimas. Pateikiami nuasmeninti mokinio asmens ir jo gyvenamosios vietos duomenys bei patikrinimo metu užfiksuota dantų ir žandikaulio duomenys (pieninių ir nuolatinių dantų būklė ir skaičius).
+
+3. Mokinių sveikatos patikrinimų metu įrašytos diagnozės. Lentelėje skelbiamos sveikatos tikrinimų metu užfiksuotos diagnozės su tarptautinės ligų klasifikacijos (TLK) kodais. Lentelės objektas - tikrinimo metu įrašyta diagnozė.
+
+Duomenų teikėjas: Registrų centras
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,Diagnoze,,,vda_id,,,4,,,Mokinių sveikatos patikrinimų metu nustatytos diagnozės. Lentelės objektas - mokinio sveikatos tikrinimo metu išrašyta diagnozė. ,
+,,,,,vda_id,string,,,,4,open,,Valstybės duomenų agentūros įrašo identifikatorius,
+,,,,,tikrinimo_id,string,,,,4,open,,Sveikatos tikrinimo vizito identifikatorius,Visos patikrinimo metu surašytos diagnozės susietos pagal tikrinimo_id stulpelį.
+,,,,,diagnoze,string,,,,4,open,,Diagnozės pavadinimas,
+,,,,,tlk_kodas,string,,,,4,open,,Tarptautinės ligų klasifikacijos (TLK) kodas,
+,,,,,duomenu_atnaujinimas,date,D,,,4,open,,Duomenų atnaujinimo data,
+,,,,,,,,,,,,,,
+,,,,SveikatosIvertinimas,,,tikrinimo_id,,,4,open,,Sveikatos būklės įvertinimas,E027-1 formos pirmos dalies duomenys
+,,,,,tikrinimo_id,string,,,,4,open,,Sveikatos tikrinimo vizito identifikatorius,
+,,,,,istaigos_espbi_id,string,,,,4,open,,"Asmens sveikatos priežiūros įstaigos (ASPĮ), kurioje buvo atliktas sveikatos tikrinimas, identifikatorius Elektroninėje sveikatos paslaugų ir bendradarbiavimo sistemoje (ESPBI)","Esant mažiau nei 10 mokinių, gimusių tais pačiais metais, ir tikrinimo metais atlikusių sveikatos tikrinimą, ASPĮ ESPBI identifikatorius nurodomas ""kita"". Pažymėtina, jog ASPĮ, kurioje buvo tikrinta mokinio sveikata, nebūtinai yra mokinio pirminės ambulatorinės asmens sveikatos priežiūros įstaiga (PAASPĮ)"
+,,,,,jar_kodas,string,,,,4,open,,"Asmens sveikatos priežiūros įstaigos (ASPĮ), kurioje buvo atliktas sveikatos tikrinimas, juridinio asmens kodas","Esant mažiau nei 10 mokinių, gimusių tais pačiais metais, ir tikrinimo metais atlikusių sveikatos tikrinimą, ASPĮ JAR nurodomas ""kita"". Pažymėtina, jog ASPĮ, kurioje buvo tikrinta mokinio sveikata, nebūtinai yra mokinio pirminės ambulatorinės asmens sveikatos priežiūros įstaiga (PAASPĮ)"
+,,,,,istaigos_pavadinimas,string,,,,4,open,,"Asmens sveikatos priežiūros įstaigos (ASPĮ), kurioje buvo atliktas sveikatos tikrinimas, pavadinimas","Esant mažiau nei 10 mokinių, gimusių tais pačiais metais, ir tikrinimo metais atlikusių sveikatos tikrinimą, ASPĮpavadinimas nurodomas ""kita"". Pažymėtina, jog ASPĮ, kurioje buvo tikrinta mokinio sveikata, nebūtinai yra mokinio pirminės ambulatorinės asmens sveikatos priežiūros įstaiga (PAASPĮ)"
+,,,,,istaigos_savivaldybe,string,,,,4,open,,"Asmens sveikatos priežiūros įstaigos (ASPĮ), kurioje buvo atliktas sveikatos tikrinimas, veiklos savivaldybė",
+,,,,,geometrija_adp,"geometry(point, 3346)",,,,4,open,,Asmens sveikatos priežiūros įstaigos (ASPĮ) koordinatės,
+,,,,,asmens_id,string,,,,4,open,,Mokinio asmens identifikatorius,
+,,,,,gimimo_metai,date,D,,,4,open,,Mokinio gimimo metai,
+,,,,,lytis,string,,,,4,open,,Mokinio lytis,
+,,,,,,enum,,,,"""V""",,,Vyras,
+,,,,,,,,,,"""M""",,,Moteris,
+,,,,,iraso_laikas,datetime,S,,,4,open,,"Įrašo įvedimo laiko žyma, suapvalinta iki artimiausios valandos",
+,,,,,duomenu_atnaujinimas,datetime,S,,,4,open,,"Įrašo duomenų atnaujinimo laiko žyma, suapvalinta iki artimiausios valandos",
+,,,,,ugis_cm,number,cm,,,4,open,,"Mokinio ūgis, pateiktas centimetrais",
+,,,,,svoris_kg,number,kg,,,4,open,,"Mokinio svoris, pateiktas kilogramais",
+,,,,,fiz_ugdymo_grupe,string,,,,4,open,,Sveikatos priežiūros specialisto nustatyta mokinio fizinio ugdymo grupė,
+,,,,,,enum,,,,"""Pagrindinė""",,,,
+,,,,,,,,,,"""Parengiamoji""",,,,
+,,,,,,,,,,"""Specialioji""",,,,
+,,,,,vertinimo_isvada,string,,,,4,open,,Sveikatos priežiūros specialisto vertinimo išvada,
+,,,,,,enum,,,,"""Mokinys gali dalyvauti ugdymo veikloje be apribojimų""",,,,
+,,,,,,,,,,"""Vaikas gali dalyvauti mokykloje vykdomoje ugdymo veikloje, įskaitant kūno kultūros ugdymą, be jokių apribojimų""",,,,
+,,,,,,,,,,"""Mokinys gali dalyvauti ugdymo veikloje laikydamasis rekomendacijų""",,,,
+,,,,,,,,,,"""Vaikas gali dalyvauti mokykloje vykdomoje ugdymo veikloje, laikydamasis šių rekomendacijų""",,,,
+,,,,,,,,,,,,,,
+,,,,DantuIvertinimas,,,tikrinimo_id,,,4,,,Dantų ir žandikaulių būklės įvertinimas,E027-1 formos antros dalies duomenys. 
+,,,,,tikrinimo_id,string,,,,4,open,,Dantų tikrinimo vizito identifikatorius,
+,,,,,asmens_id,string,,,,4,open,,Mokinio asmens identifikatorius,
+,,,,,gimimo_metai,date,D,,,4,open,,Mokinio gimimo metai,
+,,,,,lytis,string,,,,4,open,,Mokinio lytis,
+,,,,,,enum,,,,"""V""",,,Vyras,
+,,,,,,,,,,"""M""",,,Moteris,
+,,,,,mokinio_savivaldybe,string,,,,4,open,,Mokinio gyvenamoji savivaldybė pagal deklaraciją iš gyventojų registro,
+,,,,,mokinio_gyvenviete,string,,,,4,open,,Gyvenvietė pagal deklaraciją iš gyventojų registro,"Esant mažiau nei 10 mokinių, deklaravusių gyvenamąją vietą toje pačioje gyvenvietėje, gimusių tais pačiais metais, ir tais metais atlikusių sveikatos tikrinimą, gyvenvietė nurodoma ""kita"""
+,,,,,gyvenvietes_tipas,string,,,,4,open,,Gyvenvietės tipas,
+,,,,,,enum,,,,"""miestas""",,,,
+,,,,,,,,,,"""kaimas""",,,,
+,,,,,,,,,,"""miestelis""",,,,
+,,,,,,,,,,"""viensėdis""",,,,
+,,,,,,,,,,"""geležinkelio stotis""",,,,
+,,,,,iraso_laikas,date,S,,,4,open,,"Įrašo įvedimo laiko žyma, suapvalinta iki artimiausios valandos",
+,,,,,duomenu_atnaujinimas,date,S,,,4,open,,"Įrašo duomenų atnaujinimo laiko žyma, suapvalinta iki artimiausios valandos",
+,,,,,netaisyklingas_sakandis,string,,,,4,open,,Netaisyklingo sąkandžio požymis,
+,,,,,,enum,,,,"""Nėra""",,,,
+,,,,,,,,,,"""Pavienių dantų""",,,,
+,,,,,,,,,,"""Žandikaulių""",,,,
+,,,,,pieniniai_isgede,integer,,,,4,open,,Pieninių išgedusių dantų skaičius,
+,,,,,pieniniai_uzplombuoti,integer,,,,4,open,,Pieninių užplombuotų dantų skaičius,
+,,,,,pieniniai_prarasti,integer,,,,4,open,,Pieninių prarastų dantų skaičius,
+,,,,,nuolatiniai_isgede,integer,,,,4,open,,Nuolatinių išgedusių dantų skaičius,
+,,,,,nuolatiniai_uzplombuoti,integer,,,,4,open,,Nuolatininių užplombuotų dantų skaičius,
+,,,,,nuolatiniai_prarasti,integer,,,,4,open,,Nuolatininių prarastų dantų skaičius,
