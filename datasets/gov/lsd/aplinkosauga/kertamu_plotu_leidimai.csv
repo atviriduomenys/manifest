@@ -1,0 +1,44 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/aplinkosauga/kertamu_plotu_leidimai,,,,,,,,,,,,Kertamų miško plotų leidimai ir atstumai iki LR sienos,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,MiskoKirtimoLeidimas,,,vda_prime_key,,,4,,,Kertamų miško plotų atstumai iki Lietuvos Respublikos sienos,"""Lentelėje pateikiami duomenys apie miško kirtimų leidimus ir kertamų miško plotų atstumus iki Lietuvos Respublikos (LR) sienos. Viena lentelės eilutė atitinka vieną unikalų išduotą leidimą kirsti miško plotą. Lentelę sudaro: unikalios eilutės identifikatorius, kertamo miško ploto tipas, vyraujanti medžių rūšis, kirtimo rūšis, atkūrimo būdas, kertamo ploto dydis hektarais, mažiausias atstumas iki LR sienos, artimiausia kertamo ploto kaimyninės valstybės siena, leidimo kirsti mišką galiojimo pradžia ir pabaiga, valstybinės miškų urėdijos padalinio pavadinimas, girininkijos pavadinimas, kertamo miško ploto nuosavybės forma, kvartalas, sklypas, kadastrinis numeris ir kertamo miško ploto geometrija keliais formatais.
+Duomenys apie leidimus kirsti miškus gaunami iš Aplinkosaugos leidimų informacinės sistemos Leidimų kirsti mišką posistemio atvirų duomenų nuorodos: https://lkmp.alisas.lt/static/lkmp-data.geojson.zip. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. 
+
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt.
+"""
+,,,,,vda_prime_key,string,,,,4,open,,VDA unikalus identifikatorius,Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius
+,,,,,id,string,,,,4,open,,ALIS LKMP ID,"""Aplinkos ministerijos Aplinkosaugos leidimų informacinės sistemos (ALIS), Leidimų kirsti mišką posistemio (LKMP) sugeneruotas įrašo identifikacinis numeris"""
+,,,,,ploto_tipas,string,,,,4,open,,Kertamo miško ploto tipas,
+,,,,,,enum,,,"""biržė""",,,,Biržė,
+,,,,,,,,,"""sklypas""",,,,Sklypas,
+,,,,,vyraujantys_medziai,string,,,,4,open,,Vyraujančių medžių rūšies pavadinimas kertamame plote,
+,,,,,kirtimo_rusis,string,,,,4,open,,Kirtimo rūšis,
+,,,,,atkurimo_budas,string,,,,4,open,,Kertamo miško ploto atkūrimo būdas,
+,,,,,,enum,,,"""Miško žėlimas""",,,,Miško žėlimas,
+,,,,,,,,,"""Miško želdinimas""",,,,Miško želdinimas,
+,,,,,,,,,"""Neatkuriamas""",,,,Neatkuriamas,
+,,,,,,,,,"""Mišrus atkūrimo būdas (želdinimo ir žėlimo būdų derinys)""",,,,Mišrus atkūrimo būdas (želdinimo ir žėlimo būdų derinys),
+,,,,,kertamas_plotas_ha,number,,,,4,open,,Kertamo miško ploto dydis hektarais,
+,,,,,atstumas_iki_lr_sienos_km,number,,,,4,open,,Atstumas iki LR sienos,Mažiausias atstumas tarp kertamo miško ploto geometrijos ir Lietuvos Respublikos sienos
+,,,,,artmiausias_kaimynas,string,,,,4,open,,Artimiausias kaimynas,Artimiausia kertamo ploto kaimyninės valstybės siena
+,,,,,,enum,,,"""Latvijos Respublika""",,,,Latvijos Respublika,
+,,,,,,,,,"""Baltarusijos Respublika""",,,,Baltarusijos Respublika,
+,,,,,,,,,"""Rusijos Federacija""",,,,Rusijos Federacija,
+,,,,,,,,,"""Lenkijos Respublika""",,,,Lenkijos Respublika,
+,,,,,galioja_nuo,date,D,,,4,open,,Leidimo kirsti plotą galiojimo pradžios data,
+,,,,,galioja_iki,date,D,,,4,open,,Leidimo kirsti plotą galiojimo pabaigos data,
+,,,,,padalinys,string,,,,4,open,,Valstybinės miškų urėdijos padalinio pavadinimas,
+,,,,,girininkija,string,,,,4,open,,Girininkijos pavadinimas,
+,,,,,nuosavybes_forma,string,,,,4,open,,Kertamo miško ploto nuosavybės forma,
+,,,,,,enum,,,"""valstybinė""",,,,Valstybinė,
+,,,,,,,,,"""privati""",,,,Privati,
+,,,,,kvartalas,string,,,,4,open,,Kvartalo numeris(-iai),
+,,,,,sklypas,string,,,,4,open,,Sklypo numeris(-iai),
+,,,,,kadastrinis_nr,string,,,,4,open,,Kadastrinis numeris(-iai),
+,,,,,geometrija_wgs_wkt,geometry(4326),,,,4,open,,Kertamo ploto WGS-84 geometrijos koordinatės WKT formatu,
+,,,,,geometrija_wgs_geojson,string,,,,4,open,,Kertamo ploto WGS-84 geometrijos koordinatės GeoJSON formatu,
+,,,,,geometrija_lks_geojson,string,,,,4,open,,Kertamo ploto LKS-94 geometrijos koordinatės GeoJSON formatu,
