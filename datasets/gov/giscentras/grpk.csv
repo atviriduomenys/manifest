@@ -88,7 +88,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""E""",,,,elektrifikuotas,
 ,,,,,,,,,"""funik.""",,,,funikulierius,
 ,,,,,,,,,"""KT""",,,,kai netinka nė viena iš reikšmių,
-,,,,,lygmuo,integer,,,,4,open,,Geležinkelio lygis žemės paviršiaus atžvilgiu,
+,,,,,lygmuo,string,,,,4,open,,Geležinkelio lygis žemės paviršiaus atžvilgiu,
 ,,,,,,enum,,,1,,,,1-ame lygyje aukščiau žemės paviršiaus,
 ,,,,,,,,,0,,,,žemės paviršiuje,
 ,,,,,,,,,-1,,,,1-ame lygyje žemiau žemės paviršiaus (po žeme),
