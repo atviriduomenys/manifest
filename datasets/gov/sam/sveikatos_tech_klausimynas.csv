@@ -11,7 +11,8 @@ Duomenų šaltinis – Sveikatos apsaugos ministerija.
 
 Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
 Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt"
-,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Unikalus identifikatorius,
+,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Unikalus įrašo identifikatorius,
+,,,,,vda_respondento_id,string,,vda_respondento_id,,4,open,,Unikalus respondento identifikatorius,
 ,,,,,data,datetime,D,data,,4,open,,Apklausos atsakymo pateikimo data.,
 ,,,,,sveikatos_istaiga,string,,sveikatos_istaiga,,4,open,,Respondento nurodyta sveikatos priežiūros įstaiga arba jos tipas.,
 ,,,,,pareigos,string,,pareigos,,4,open,,Respondento pareigos sveikatos priežiūros įstaigoje.,
