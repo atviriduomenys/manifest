@@ -1,0 +1,26 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/muitine/muitines_sandeliu_statistika,,,,,,,,,,,,"Muitinės sandėlių, laikinojo saugojimo sandėlių bei garantų, pateikusių muitinei garantijas už šiuose sandėliuose saugomas prekes, statistika","Šiame rinkinyje pateikiama informacija apie Lietuvos Respublikos teritorijoje veikiančius muitinės sandėlius ir laikinojo saugojimo sandėlius, garantų ir sandėlių veiklai taikomų garantijų statistiką. Informacija gaunama iš Muitinės sandėlių ir terminalų veiklos apskaitos ir kontrolės informacinės sistemos (MSAS). Rinkinys apima:
+1)	Lietuvos Respublikos teritorijoje veikiančių muitinės sandėlių ir laikinojo saugojimo sandėlių ir muitinės sandėliams leistų įprastinių prekių tvarkymo operacijų sąrašus (duomenys nuo 2006 m., atnaujinami kas mėnesį);
+2)       garantų, pateikusių muitinei garantijas už prekes, saugomas muitinės sandėliuose ir laikinojo saugojimo sandėliuose, ir jų pateiktų garantijų apibendrintą statistiką, įskaitant sandėlių ir garantijų skaičių bei vidutinę garantijos vertę (duomenys nuo 2005 m., atnaujinami kas metus)."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,SandelioOperacija,,,vda_id,,,4,,,Muitinės sandėliuose prekėms atliekamų operacijų sąrašai,"Lentelėje pateikiami Lietuvos Respublikos teritorijoje veikiančių muitinės sandėlių ir laikinojo saugojimo sandėlių ir muitinės sandėliams leistų įprastinių prekių tvarkymo operacijų sąrašai iš LR Muitinės sandėlių ir terminalų veiklos apskaitos ir kontrolės informacinės sistemos (MSAS). Duomenų laiko aprėptis - nuo 2006 metų. Lentelė atnaujinama kas mėnesį. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. "
+,,,,,vda_id,string,,,,4,open,,Duomenų eilutės identifikatorius (sugeneruotas VDA),
+,,,,,opr_kodas,string,,,,4,open,,"Operacijos su prekėmis, kuri atliekama muitinės sandėlyje, kodas",
+,,,,,pavad,string,,,,4,open,,Operacijos pavadinimas,
+,,,,,mdata,datetime,S,,,4,open,,Informacijos apie operaciją paskutinio redagavimo data ir laikas,
+,,,,,sand_kodas,string,,,,4,open,,Muitinės sandėlio kodas,
+,,,,,s_mdata,datetime,S,,,4,open,,Informacijos apie muitinės sandėlį paskutinio redagavimo data ir laikas,
+,,,,,ar_yra_nemuit_sarase,boolean,,,,4,open,,"Požymis, ar operacija su prekėmis galima ir ne muitinės sandėlyje",
+,,,,,,,,,,,,,,
+,,,,GarantoStatistika,,,vda_id,,,4,,,Muitinės sandėliams suteiktų garantijų statistika,"Lentelėje pateikiama informacija apima garantų, pateikusių muitinei garantijas už prekes, saugomas muitinės sandėliuose ir laikinojo saugojimo sandėliuose, ir jų pateiktų garantijų apibendrintą statistiką, įskaitant sandėlių ir garantijų skaičių bei vidutinę garantijos vertę iš LR Muitinės sandėlių ir terminalų veiklos apskaitos ir kontrolės informacinės sistemos (MSAS). Duomenų laiko aprėptis - nuo 2005 metų. Lentelė atnaujinama kas metus. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. "
+,,,,,vda_id,string,,,,4,open,,Duomenų eilutės identifikatorius (sugeneruotas VDA),
+,,,,,garantija_nuo,string,,,,4,open,,Garantijų suteikimų laikotarpis,
+,,,,,garant_imone,string,,,,4,open,,Įmonės garanto kodas,
+,,,,,pavad,string,,,,4,open,,Įmonės garanto pavadinimas,
+,,,,,garant_sk,integer,,,,4,open,,Unikalių garantijų skaičius,
+,,,,,sand_sk,integer,,,,4,open,,Unikalių muitinės sandėlių skaičius,
+,,,,,avg_garant_verte,number,,,,4,open,,Vidutinė garantijos vertė (EUR),
