@@ -340,7 +340,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,KaisiadoriuSSC,,,vda_prime_key,,,,,,Kaišiadorių rajono savivaldybės sveikatos centro pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „CEDARA“ kaupiami Kaišiadorių raj. sav. sveikatos centro pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 2011 metų. Vienas įrašas atitinka vieną tyrimo atvaizdą (visų tyrimo atvaizdų identifikatoriai unikalūs). Duomenų rinkinį sudaro: šifruotas paciento asmens kodas, asmens kodo validumo požymis, šifruoti paciento ir tyrimo studijos identifikatoriai, paciento gimimo metai ir lytis tiek iš gimimo datos arba lyties stulpelių, tiek iš validaus asmens kodo, šifruotas tyrimo serijos identifikatorius, tirta paciento kūno dalis, paciento lateralumas tyrimo serijos metu, tyrimo serijos modalumas, protokolas, tyrimo atvaizdo šifruotas identifikatorius, paciento kūno padėtis tyrimo atvaizde ir fotometrinė interpretacija. Paciento gimimo metų reikšmės iš gimimo datos stulpelio iki 1800 m. laikomos analitiškai tolygiomis nesamoms reikšmėms. Duomenų teikėjas – VšĮ Kaišiadorių rajono savivaldybės sveikatos centras. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_asm_k,string,,,,4,open,,Pseudonimizuotas paciento asmens kodas,
-,,,,,paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
+,,,,,vda_paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
 ,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,,,,,"""Netinkamas""",,,,Netinkamas,
 ,,,,,paciento_id,string,,,,4,open,,Pseudonimizuotas paciento identifikatorius,
@@ -374,7 +374,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,JurbarkoLigonine,,,vda_prime_key,,,,,,Jurbarko ligoninės pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „CEDARA“ kaupiami Jurbarko ligoninės pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 1998 metų. Vienas įrašas atitinka vieną tyrimo atvaizdą (visų tyrimo atvaizdų identifikatoriai unikalūs). Duomenų rinkinį sudaro: šifruotas paciento asmens kodas, asmens kodo validumo požymis, šifruoti paciento ir tyrimo studijos identifikatoriai, paciento gimimo metai ir lytis tiek iš gimimo datos arba lyties stulpelių, tiek iš validaus asmens kodo, šifruotas tyrimo serijos identifikatorius, tirta paciento kūno dalis, paciento lateralumas tyrimo serijos metu, tyrimo serijos modalumas, protokolas, tyrimo atvaizdo šifruotas identifikatorius, paciento kūno padėtis tyrimo atvaizde ir fotometrinė interpretacija. Paciento gimimo metų reikšmės iš gimimo datos stulpelio iki 1800 m. laikomos analitiškai tolygiomis nesamoms reikšmėms. Duomenų teikėjas – VšĮ Jurbarko ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_asm_k,string,,,,4,open,,Pseudonimizuotas paciento asmens kodas,
-,,,,,paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
+,,,,,vda_paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
 ,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,,,,,"""Netinkamas""",,,,Netinkamas,
 ,,,,,paciento_id,string,,,,4,open,,Pseudonimizuotas paciento identifikatorius,
@@ -410,7 +410,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,PasvalioLigonine,,,vda_prime_key,,,,,,Pasvalio ligoninės pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „CEDARA“ kaupiami Pasvalio ligoninės pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 2020 metų. Vienas įrašas atitinka vieną tyrimo atvaizdą (visų tyrimo atvaizdų identifikatoriai unikalūs). Duomenų rinkinį sudaro: šifruotas paciento asmens kodas, asmens kodo validumo požymis, šifruoti paciento ir tyrimo studijos identifikatoriai, paciento gimimo metai ir lytis tiek iš gimimo datos arba lyties stulpelių, tiek iš validaus asmens kodo, šifruotas tyrimo serijos identifikatorius, tirta paciento kūno dalis, paciento lateralumas tyrimo serijos metu, tyrimo serijos modalumas, protokolas, tyrimo atvaizdo šifruotas identifikatorius, paciento kūno padėtis tyrimo atvaizde ir fotometrinė interpretacija. Paciento gimimo metų reikšmės iš gimimo datos stulpelio iki 1900 m. laikomos analitiškai tolygiomis nesamoms reikšmėms. Duomenų teikėjas – VšĮ Pasvalio ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_asm_k,string,,,,4,open,,Pseudonimizuotas paciento asmens kodas,
-,,,,,paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
+,,,,,vda_paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
 ,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,,,,,"""Netinkamas""",,,,Netinkamas,
 ,,,,,paciento_id,string,,,,4,open,,Pseudonimizuotas paciento identifikatorius,
@@ -553,7 +553,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,SakiuLigonine,,,vda_prime_key,,,,,,Šakių ligoninės pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „CEDARA“ kaupiami Šakių ligoninės pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 2011 metų. Vienas įrašas atitinka vieną tyrimo atvaizdą (visų tyrimo atvaizdų identifikatoriai unikalūs). Duomenų rinkinį sudaro: šifruotas paciento asmens kodas, asmens kodo validumo požymis, šifruoti paciento ir tyrimo studijos identifikatoriai, paciento gimimo metai ir lytis tiek iš gimimo datos arba lyties stulpelių, tiek iš validaus asmens kodo, šifruotas tyrimo serijos identifikatorius, tirta paciento kūno dalis, paciento lateralumas tyrimo serijos metu, tyrimo serijos modalumas, protokolas, tyrimo atvaizdo šifruotas identifikatorius, paciento kūno padėtis tyrimo atvaizde ir fotometrinė interpretacija. Paciento gimimo metų reikšmės iš gimimo datos stulpelio iki 1900 m. laikomos analitiškai tolygiomis nesamoms reikšmėms. Duomenų teikėjas – VšĮ Šakių ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_asm_k,string,,,,4,open,,Pseudonimizuotas paciento asmens kodas,
-,,,,,paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
+,,,,,vda_paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
 ,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,,,,,"""Netinkamas""",,,,Netinkamas,
 ,,,,,paciento_id,string,,,,4,open,,Pseudonimizuotas paciento identifikatorius,
@@ -646,7 +646,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,Cedara,,,vda_prime_key,,,,,,Kėdainių ligoninės „CEDARA“ sistemoje pacientams atliktų radiologinių tyrimų duomenys,"Informacinėje sistemoje „CEDARA“ kaupiami Kėdainių ligoninės pacientams atliktų radiologinių tyrimų duomenys. Duomenų rinkinyje pateikiami duomenys nuo 2016 metų. Vienas įrašas atitinka vieną tyrimo atvaizdą (visų tyrimo atvaizdų identifikatoriai unikalūs). Duomenų rinkinį sudaro: šifruotas paciento asmens kodas, asmens kodo validumo požymis, šifruoti paciento ir tyrimo studijos identifikatoriai, paciento gimimo metai ir lytis tiek iš gimimo datos arba lyties stulpelių, tiek iš validaus asmens kodo, šifruotas tyrimo serijos identifikatorius, tirta paciento kūno dalis, paciento lateralumas tyrimo serijos metu, tyrimo serijos modalumas, protokolas, tyrimo atvaizdo šifruotas identifikatorius, paciento kūno padėtis tyrimo atvaizde ir fotometrinė interpretacija. Paciento gimimo metų reikšmės iš gimimo datos stulpelio iki 1900 m. laikomos analitiškai tolygiomis nesamoms reikšmėms. Įstaiga radiologiniams tyrimams naudoja tiek „MedDream“, tiek „CEDARA“ sistemas. Duomenų teikėjas – VšĮ Kėdainių ligoninė. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,paciento_asm_k,string,,,,4,open,,Pseudonimizuotas paciento asmens kodas,
-,,,,,paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
+,,,,,vda_paciento_asm_k_val,string,,,,4,open,,Paciento asmens kodo validumas,
 ,,,,,,enum,,,"""Tinkamas""",,,,Tinkamas,
 ,,,,,,,,,"""Netinkamas""",,,,Netinkamas,
 ,,,,,paciento_id,string,,,,4,open,,Pseudonimizuotas paciento identifikatorius,
