@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,,,,
 ,,,,BilietuPardavimas,,,bilieto_id,,,,,,"VšĮ Žaliojo regiono elektroninių bilietų pardavimų duomenys","Lentelėje pateikti elektroninio bilieto sistemos duomenys apie elektroninių bilietų pardavimus nuo 2023 metų, teikiami VšĮ Žaliojo regiono apie Jurbarko, Šilalės, Tauragės rajonus ir Pagėgius. Informacija atnaujinama kas mėnesį. Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt. Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. ",,,
 ,,,,,bilieto_id,string,,,,4,open,,Kortelės bilieto pirminis raktas,,,,
-,,,,,bilietas,string,,,,4,open,,,,,,
+,,,,,bilietas,string,,,,4,open,,Bilieto tipas,,,,
 ,,,,,panaudotas,string,,,,4,open,,"Žyma, nurodanti, ar bilietas yra išnaudotas",,,,
 ,,,,,kaina,number,,,,4,open,,Bilieto kaina,,,,
 ,,,,,pilna_kaina,number,,,,4,open,,Bilieto pilna kaina,,,,
