@@ -46,7 +46,7 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,pakvietimo_data,date,D,,,4,open,,Pakvietimo į studijų programą gavimo data,
 ,,,,,ar_pasirase,boolean,,,,4,open,,"Požymis, ar pakviestasis pasirašė sutartį dėl mokymo ar studijų programos",
 ,,,,,,,,,,,,,,
-,,,,Profilis,,,asmens_id,,,4,,,Priėmimo prašymus į aukštojo mokslo įstaigas teikusių asmenų profiliai,"Lentelėje pateikiami demografiniai duomenys apie asmenis, teikusius priėmimo prašymus į aukštojo mokslo įstaigas. Lentelės eilutės objektas – individualus asmuo, teikęs prašymą per priėmimo metus. Pažymėtina, jog priėmimo prašymus gali teikti ne tik Lietuvos Respublikos piliečiai, bet ir užsieniečiai. Nurodomi asmens gimimo metai, lytis ir požymis, ar asmuo galimai yra užsienietis . Prie lentelės taip pat prijungti duomenys iš Lietuvos Respublikos gyventojų registro ir Nacionalinės švietimo agentūros, nurodantys asmens gyvenamąją vietą (savivaldybę, gyvenvietę ir gyvenvietės tipą. Gyvenvietė paslėpiama, jei joje gyvenančių asmenų, teikusių priėmimo prašymus, skaičius neviršija 10) prašymo teikimo metu ir instituciją, kurioje įgijo brandos atestatą. Svarbu atkreipti dėmesį, kad vyresnio amžiaus asmenų išsilavinimo duomenys gali būti neskaitmenizuoti, todėl išsilavinimo duomenys gali būti netikslūs."
+,,,,Profilis,,,asmens_id,,,4,,,Priėmimo prašymus į aukštojo mokslo įstaigas teikusių asmenų profiliai,"Lentelėje pateikiami demografiniai duomenys apie asmenis, teikusius priėmimo prašymus į aukštojo mokslo įstaigas. Lentelės eilutės objektas – individualus asmuo, teikęs prašymą per priėmimo metus. Pažymėtina, jog priėmimo prašymus gali teikti ne tik Lietuvos Respublikos piliečiai, bet ir užsieniečiai. Nurodomi asmens gimimo metai, lytis ir požymis, ar asmuo galimai yra užsienietis . Prie lentelės taip pat prijungti duomenys iš Lietuvos Respublikos gyventojų registro ir Nacionalinės švietimo agentūros, nurodantys asmens gyvenamąją vietą (savivaldybę ir gyvenvietės tipą) prašymo teikimo metu ir instituciją, kurioje įgijo brandos atestatą. Svarbu atkreipti dėmesį, kad vyresnio amžiaus asmenų išsilavinimo duomenys gali būti neskaitmenizuoti, todėl išsilavinimo duomenys gali būti netikslūs."
 ,,,,,asmens_id,string,,,,4,open,,Asmens identifikacinis numeris,
 ,,,,,ar_galimai_uzsienietis,boolean,,,,4,open,,"Požymis, ar asmuo galimai yra užsienietis. Jeigu asmens priėmimo prašyme nepateiktas asmens kodas, tuomet daroma išvada, jog yra užsienietis. Tačiau šis požymis neapima užsieniečių asmenų, turinčių lietuvišką asmens kodą.",
 ,,,,,gimimo_metai,date,Y,,,4,open,,Asmens gimimo metai,
@@ -58,6 +58,4 @@ Duomenų teikėjas: Lietuvos aukštųjų mokyklų asociacija bendrajam priėmimu
 ,,,,,issilavinimo_sav_kodas,string,,,,4,open,,Švietimo įstaigos savivaldybė,
 ,,,,,issilavinimo_sav,string,,,,4,open,,Švietimo įstaigos savivaldybės pavadinimas,
 ,,,,,asm_gyv_sav,string,,,,4,open,,Asmens gyvenamosios savivaldybės pavadinimas,
-,,,,,asm_gyv_vieta,string,,,,4,open,,Asmens gyvenamoji vieta,
 ,,,,,asm_gyv_tipas,string,,,,4,open,,Gyvenvietės tipas,
-,,,,,prasymo_metai,integer,,,,4,open,,Prašymo teikimo metai,
