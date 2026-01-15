@@ -41,6 +41,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,po,string,,,,4,open,,Perkančiosios organizacijos pavadinimas,"Perkančioji organizacija maitinimui organizuoti gali būti ne tik mokykla, bet ir savivaldybė."
 ,,,,,po_jar,string,,,,4,open,,Perkančiosios organizacijos juridinio asmens kodas,
 ,,,,,po_adresas,string,,,,4,open,,Perkančiosios organizacijos adresas,
+,,,,,po_geometrija,geometry(3346),,,,4,open,,Perkančiosios organizacijos vietos koordinatės (LKS),
 ,,,,,,,,,,,,,,
 ,,,,Kaina,,,vda_id,,,4,open,,Ugdymo įstaigų maitinimo sutartyse nurodytų patiekalų kainoraštis,"Pateikiami ugdymo įstaigų maitinimo sutarčių kainos ir kiti maitinimo požymiai, dirbtinio intelekto (DI) modelio pagalba surinktos iš sutarčių tekstų"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
