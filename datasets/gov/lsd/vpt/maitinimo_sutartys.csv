@@ -76,4 +76,3 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,maitinimo_laikas,string,,,,4,open,,"DI modelio identifikuotas patiekalo tiekimo laikas (pusryčiai, pietūs, vakarienė, kt.)",
 ,,,,,amzius,string,,,,4,open,,"DI modelio identifikuota mokinių amžiaus grupė, kuriai skirtas nurodytas patiekalas",
 ,,,,,kaina_eur,number,,,,4,open,,"DI modelio identifikuota patiekalo porcijos kaina, nurodyta eurais",
-,,,,,ar_di_nuskaite_kainas,boolean,,,,4,open,,"Požymis, nurodantis, ar dirbtinio intelekto modelis identifikavo patiekalo kainą",
