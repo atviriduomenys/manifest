@@ -37,7 +37,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,,,,,"""Mažai svarbus""",,,,Mažai svarbus,
 ,,,,,aprasymas,string,,,,4,open,,Kelio priežiūros darbų aprašymas,
 ,,,,,,,,,,,,,,
-,,,,Kliūtis,,,kliuties_id,,,4,,,Kliūtys kelyje,"""Duomenys apie kliūtis valstybinės reikšmės keliuose. Vienoje lentelės eilutėje nurodoma viena kliūtis kelio atkarpoje. Lentelę sudaro: kliūties ir kelio atkarpos identifikaciniai numeriai, kelio atkarpos kilometras, eismo kryptis kelio atkarpoje, koordinatės taškas ir validacijos stulpelis, nurodantis, ar koordinatės taškas yra Lietuvos Respublikos ribose, kliūties pastebėjimo / užregistravimo ir kliūties pašalinimo datos ir laikai, poveikis eismui ir kelio kliūties aprašymas."""
+,,,,Kliutis,,,kliuties_id,,,4,,,Kliūtys kelyje,"""Duomenys apie kliūtis valstybinės reikšmės keliuose. Vienoje lentelės eilutėje nurodoma viena kliūtis kelio atkarpoje. Lentelę sudaro: kliūties ir kelio atkarpos identifikaciniai numeriai, kelio atkarpos kilometras, eismo kryptis kelio atkarpoje, koordinatės taškas ir validacijos stulpelis, nurodantis, ar koordinatės taškas yra Lietuvos Respublikos ribose, kliūties pastebėjimo / užregistravimo ir kliūties pašalinimo datos ir laikai, poveikis eismui ir kelio kliūties aprašymas."""
 ,,,,,kliuties_id,string,,,,4,open,,Kliūties kelyje identifikacinis numeris,
 ,,,,,kelio_id,string,,,,4,open,,Kelio atkarpos identifikacinis numeris,
 ,,,,,kelio_km,number,,,,4,open,,Kelio atkarpos kilometras kuriame yra kelio kliūtis,
