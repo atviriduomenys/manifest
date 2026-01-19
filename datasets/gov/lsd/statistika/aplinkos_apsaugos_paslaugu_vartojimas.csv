@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R116_M8010805,,,,,,4,,,Aplinkos apsaugos paslaugų vartojimas,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir aplinkos apsaugos paslaugų vartojimo rūšies dimensijas.
+,,,,S1R116M8010805,,,,,,4,,,Aplinkos apsaugos paslaugų vartojimas,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir aplinkos apsaugos paslaugų vartojimo rūšies dimensijas.
 
 Naudojami klasifikatoriai: Aplinkos apsaugos veiklos ir išlaidų klasifikatorius  (CEPA 2000).
 
