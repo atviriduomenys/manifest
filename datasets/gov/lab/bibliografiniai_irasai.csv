@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,AudiosensorinisIrasas,,id,,,,4,,,Bibliografiniai įrašai,"Elektroninių leidinių valdymo informacinės sistemos (ELVIS) bibliografinių įrašų sąrašas."
 ,,,,,id,string,,,,4,open,,Unikalus ID,
 ,,,,,leidinio_id,string,,,,4,open,,Leidinio ID,
-,,,,,isbn/issn/ismn_numeris,string,,,,4,open,,"ISBN, ISSN arba ISMN identifikacinis numeris",
+,,,,,isbn_issn_ismn_numeris,string,,,,4,open,,"ISBN, ISSN arba ISMN identifikacinis numeris",
 ,,,,,leidejas,string,,,,4,open,,Leidinio leidėjas,
 ,,,,,leidejo_salis,string,,,,4,open,,Leidinio išleidimo šalis,
 ,,,,,isleidimo_metai,integer,,,,4,open,,Leidinio išleidimo metai,
