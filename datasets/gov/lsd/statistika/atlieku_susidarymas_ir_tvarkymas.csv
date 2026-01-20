@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R117_M9070332,,,,,,4,,,Atliekų susidarymas ir tvarkymas,"Duomenų rinkinys apie kiek per ataskaitinius metus Lietuvoje susidarė ir buvo surinkta atliekų bei kiek ir kokiomis atliekų tvarkymo veiklomis atliekos buvo sutvarkytos Lietuvoje ar išvežtos (eksportuotos) tvarkyti į kitas valstybes. Pateikta per atliekų rūšies ir atliekų tvarkymo būdų dimensijas. 
+,,,,S1R117M9070332,,,,,,4,,,Atliekų susidarymas ir tvarkymas,"Duomenų rinkinys apie kiek per ataskaitinius metus Lietuvoje susidarė ir buvo surinkta atliekų bei kiek ir kokiomis atliekų tvarkymo veiklomis atliekos buvo sutvarkytos Lietuvoje ar išvežtos (eksportuotos) tvarkyti į kitas valstybes. Pateikta per atliekų rūšies ir atliekų tvarkymo būdų dimensijas. 
 
 Naudojami klasifikatoriai: 
 Atliekų kodų sąrašas – oficialiai skelbiamas Atliekų tvarkymo taisyklių, patvirtintų Lietuvos Respublikos aplinkos ministro 1999-07-14 įsakymu Nr. 217 „Dėl Atliekų tvarkymo taisyklių patvirtinimo“ (toliau – Atliekų tvarkymo taisyklės), 1 priede;
