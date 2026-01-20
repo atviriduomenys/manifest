@@ -1,0 +1,44 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/nvspl/aplinkos_tyrimai,,,,,,,,,,,,Nacionalinės visuomenės sveikatos priežiūros laboratorijos aplinkos tyrimų duomenys,"Duomenų rinkinyje pateikiami duomenys, susiję su Nacionalinės visuomenės sveikatos priežiūros laboratorijos vykdomais aplinkos mikrobiologiniais, cheminiais ir parazitologiniais tyrimais. Duomenys teikiami iš Aplinkos mikrobiologinių, cheminių, parazitologinių tyrimų duomenų bazės „Laputė“, skirtos sveikatos apsaugos srities stebėsenai ir analizei.
+Rinkinyje pateikiama informacija apie tiriamus mėginius: jų identifikatorius, pavadinimus, paskirtį, mėginio kiekį bei taikomas laboratorines paslaugas. Lentelėje fiksuojami tyrimų rezultatai, įskaitant skaitines reikšmes, matavimo vienetus, rezultatų neapibrėžtumą ir taikomas normas, leidžiančias vertinti atitiktį sveikatos saugos reikalavimams. Taip pat pateikiama klasifikacinė informacija apie tyrimų rūšis, klases, grupes ir poskyrius, sudaranti prielaidas detalesnei duomenų analizei.
+Duomenys apima mėginių paėmimo, pristatymo, laikymo ir tyrimo atlikimo laikus bei sąlygas, leidžiančias atsekti visą tyrimo procesą. Papildomi laukai, tokie kaip mėginio pristatymo temperatūra ar tyrimo kaina, suteikia galimybę analizuoti laboratorinių procesų kokybę, kaštus ir organizavimą. Šis duomenų rinkinys sudaro pagrindą aplinkos sveikatos rizikų vertinimui, visuomenės sveikatos būklės stebėsenai ir duomenimis grįstų sprendimų priėmimui.
+Duomenų atnaujinimas numatomas kas 6 mėn.
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt"
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,AplinkosTyrimas,,,vda_prime_key,,,4,,,Nacionalinės visuomenės sveikatos priežiūros laboratorijos aplinkos tyrimų duomenys,"Duomenų rinkinyje pateikiami duomenys, susiję su Nacionalinės visuomenės sveikatos priežiūros laboratorijos vykdomais aplinkos mikrobiologiniais, cheminiais ir parazitologiniais tyrimais. Duomenys teikiami iš Aplinkos mikrobiologinių, cheminių, parazitologinių tyrimų duomenų bazės „Laputė“, skirtos sveikatos apsaugos srities stebėsenai ir analizei.
+Rinkinyje pateikiama informacija apie tiriamus mėginius: jų identifikatorius, pavadinimus, paskirtį, mėginio kiekį bei taikomas laboratorines paslaugas. Lentelėje fiksuojami tyrimų rezultatai, įskaitant skaitines reikšmes, matavimo vienetus, rezultatų neapibrėžtumą ir taikomas normas, leidžiančias vertinti atitiktį sveikatos saugos reikalavimams. Taip pat pateikiama klasifikacinė informacija apie tyrimų rūšis, klases, grupes ir poskyrius, sudaranti prielaidas detalesnei duomenų analizei.
+Duomenys apima mėginių paėmimo, pristatymo, laikymo ir tyrimo atlikimo laikus bei sąlygas, leidžiančias atsekti visą tyrimo procesą. Papildomi laukai, tokie kaip mėginio pristatymo temperatūra ar tyrimo kaina, suteikia galimybę analizuoti laboratorinių procesų kokybę, kaštus ir organizavimą. Šis duomenų rinkinys sudaro pagrindą aplinkos sveikatos rizikų vertinimui, visuomenės sveikatos būklės stebėsenai ir duomenimis grįstų sprendimų priėmimui.
+Duomenų atnaujinimas numatomas kas 6 mėn.
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt"
+,,,,,vda_prime_key,string,,,,4,open,,Priminis raktas,
+,,,,,meg_id,string,,,,4,open,,"Unikalus mėginio ID, sudarytas iš įvykio datos/mėginio paėmimo datos, pagrindinio mėginio numerio, mėginio numerio ir mėginio eilės numerio. VDA sukurtas stulpelis",
+,,,,,pavadinimas,string,,,,2,open,,Pavadinimas,
+,,,,,meginio_pavadinimas,string,,,,2,open,,Mėginio pavadinimas,
+,,,,,paskirtis,string,,,,2,open,,Paskirtis,
+,,,,,pasl_pav,string,,,,3,open,,Paslaugos pavadinimas,
+,,,,,t_rusis_p,string,,,,4,open,,"Tyrimo rūšies požymis – papildoma tyrimo klasifikacija ar specifikacija, pvz., tyrimo tikslas, metodas, specifinis kontekstas",
+,,,,,klase_p,string,,,,4,open,,"Papildomas klasės požymis – t. y. klasės tipas, požymis ar detalizacija",
+,,,,,gr_pav,string,,,,4,open,,Grupės pavadinimas,
+,,,,,posk_pav,string,,,,4,open,,Poskyrio pavadinimas,
+,,,,,meginio_kiekis,string,,,,4,open,,"Mėginio kiekis – skaitinė reikšmė, parodanti, kiek medžiagos buvo paimta ar sunaudota tyrimui",
+,,,,,rezultatas,string,,,,4,open,,Rezultatas,
+,,,,,rezultatas_num,number,,,,4,open,,Rezultato skaitinė reikšmė,
+,,,,,laipsnis_desimt,integer,,,,4,open,,Koncentracijos laipsnis,
+,,,,,mat_vnt,string,,,,4,open,,"Matavimo vienetas, naudojamas tyrimo rezultatams",
+,,,,,neapibrezta,string,,,,4,open,,"Mėginys yra neapibrėžtas, t. y. trūksta tam tikros informacijos arba mėginio būklė ar tipas nėra tiksliai nustatytas.",
+,,,,,neapibreztumas,integer,,,,4,open,,"Matavimo neapibrėžtis – rezultato galimos paklaidos dydis, išreikštas skaičiumi",
+,,,,,norma,string,,,,2,open,,"Norminė (leistina) reikšmė, su kuria lyginami tyrimo rezultatai",
+,,,,,kas_isaugo,string,,,,2,open,,"Kas išsivystė mėginyje – pvz., mikroorganizmas, kolonija, teršalas",
+,,,,,meg_pristatymo_temp,string,,,,2,open,,Faktinė mėginio temperatūra pristatymo momentu,
+,,,,,laikymo_salyg,string,,,,2,open,,"Atskirta kableliu - temperatūra, kurioje mėginys buvo paimtas, laikytas ar transportuotas; aplinkos sąlygos mėginio paėmimo arba laikymo metu - temperatūra, drėgmė, oro sąlygos, kiti veiksniai; būsenos požymis.",
+,,,,,meginys_paimtas_laikas,datetime,S,,,4,open,,Mėginio paėmimo data ir laikas,
+,,,,,meginys_pristatytas_laikas,datetime,S,,,4,open,,Mėginio pristatymo data ir laikas,
+,,,,,tpr_laikas,datetime,S,,,4,open,,Tyrimo pradžios data ir laikas,
+,,,,,tpb_laikas,datetime,S,,,4,open,,Tyrimo pabaigos data ir laikas,
+,,,,,rezultato_laikas,datetime,S,,,4,open,,Rezultato data ir laikas,
+,,,,,kaina_isakymu,number,,,,4,open,,"Kaina pagal įsakymą – suma, kuri nustatyta įsakymu ar valstybiniu dokumentu už tyrimą ar paslaugą",
+,,,,,laikotarpis,string,,,,4,open,,Laikotarpis,
