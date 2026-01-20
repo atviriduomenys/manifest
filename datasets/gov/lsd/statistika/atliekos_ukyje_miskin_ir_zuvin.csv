@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R092_M8012101,,,,,,4,,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje","Duomenų rinkinys apie atliekų susidarymą ir tvarkymą žemės ūkyje, miškininkystėje ir žuvininkystėje. Pateikta per atliekų rūšies ir atliekų tvarkymo būdų dimensijas.
+,,,,S1R092M8012101,,,,,,4,,,"Atliekų susidarymas ir tvarkymas žemės ūkyje, miškininkystėje ir žuvininkystėje","Duomenų rinkinys apie atliekų susidarymą ir tvarkymą žemės ūkyje, miškininkystėje ir žuvininkystėje. Pateikta per atliekų rūšies ir atliekų tvarkymo būdų dimensijas.
 
 Naudojami klasifikatoriai: Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.)
 
