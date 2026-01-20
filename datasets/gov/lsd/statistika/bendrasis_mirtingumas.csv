@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R694_M3010601_2,,,vda_id,,,4,,,Bendrasis mirtingumo rodiklis,"Pateikta statistinė informacija apie mirusių Lietuvos Respublikos nuolatinių gyventojų skaičių pagal gyvenamąją vietovę, administracinę teritoriją, lytį ir laikotarpį. Tyrimas apima mirusius Lietuvos Respublikos nuolatinius gyventojus. Statistinio stebėjimo vienetas – miręs asmuo. Laiko aprėptis - nuo 1950 m.
+,,,,S3R694M30106012,,,vda_id,,,4,,,Bendrasis mirtingumo rodiklis,"Pateikta statistinė informacija apie mirusių Lietuvos Respublikos nuolatinių gyventojų skaičių pagal gyvenamąją vietovę, administracinę teritoriją, lytį ir laikotarpį. Tyrimas apima mirusius Lietuvos Respublikos nuolatinius gyventojus. Statistinio stebėjimo vienetas – miręs asmuo. Laiko aprėptis - nuo 1950 m.
 Tyrime naudojami klasifikatoriai:
 Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius)
 Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version)
