@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R692_M3010501_2,,,vda_id,,,4,,,Bendrasis gimstamumo rodiklis,"Pateikiama statistinė informacija apie bendrąjį gimstamumo rodiklį. Bendrasis gimstamumo rodiklis – per metus gyvų gimusių kūdikių ir vidutinio metinio gyventojų skaičiaus santykis, skaičiuojamas 1 tūkst. gyventojų. (https://osp.stat.gov.lt/documents/10180/5118910/Gimstamumas+%5BLT%5D+484.html)"
+,,,,S3R692M30105012,,,vda_id,,,4,,,Bendrasis gimstamumo rodiklis,"Pateikiama statistinė informacija apie bendrąjį gimstamumo rodiklį. Bendrasis gimstamumo rodiklis – per metus gyvų gimusių kūdikių ir vidutinio metinio gyventojų skaičiaus santykis, skaičiuojamas 1 tūkst. gyventojų. (https://osp.stat.gov.lt/documents/10180/5118910/Gimstamumas+%5BLT%5D+484.html)"
 ,,,,,vda_id,string,,,,4,open,,Valstybės Duomenų Agentūros įrašo identifikatorius,
 ,,,,,teritorija,string,,,,4,open,,Teritorijos pavadinimas,
 ,,,,,teritorija_id,string,,,,4,open,,Teritorijos identifikacinis numeris,
