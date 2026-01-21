@@ -1,0 +1,83 @@
+dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+datasets/gov/lsd/sveikata/inkstu_biopsijos,,,,,,,,,,,,"""Pacientų, kuriems atlikta inkstų biopsija, duomenys""","""Rinkinyje pateikiami asmenų, kuriems nuo 2015 m. atlikta inkstų biopsija, duomenys. 
+
+Rinkinį sudaro:  
+
+ 
+
+Inkstų biopsijų duomenys. Asmenys, kuriems atlikta inkstų biopsija, gimimo data, lytis, biopsijos gavimo data, lėtinės inkstų ligos, 5 stadijos pirmo įrašo data, indikatoriai, ar pacientui nustatytos gretutinės ligos, inkstų ligų rizikos veiksniai – cukrinis diabetas ir arterinė hipertenzija, paciento mirties data ir pagrindinė mirties priežastis. Visos datos yra pateikiamos mėnesio tikslumu. 
+
+Pirmos dializės duomenys. Pacientų pirmos dializės data (mėnesio tikslumu), dializės tipas. Vienam asmeniui gali būti registruotos kelios pirmosios dializės datos, nes po atliktos inksto transplantacijos, transplantatui nustojus funkcionuoti, įrašoma nauja dializės pradžios data.  
+
+Inkstų transplantacijų duomenys. Pacientams atliktų inkstų transplantacijų (intervencijos ACHI kodas 36503-00) datos (mėnesio tikslumu).  
+
+Laboratorinių tyrimų duomenys. Pacientų inkstų funkciją apibūdinantys laboratoriniai tyrimai (kreatininas serume, glomerulų filtracijos greitis, albumino-kreatinino santykis šlapime), jų atlikimo data, tyrimo ir analitės pavadinimai, analitės rezultatai, apatiniai, viršutiniai normos rėžiai bei matavimo vienetai. 
+
+Elektroninių receptų duomenys. Pacientams išrašyti elektroniniai receptai, jų išrašymo data (mėnesio tikslumu), recepto skyrimo diagnozės kodas ir pavadinimas, vaisto ATC kodai, bendriniai pavadinimai ir stiprumas. Filtruoti tik su inkstų patologija susiję elektroniniai receptai pagal ATC kodus, t. y. renino angiotenzino sistemą veikiantys vaistai, beta adrenoblokatoriai, kalcio kanalų blokatoriai, diuretikai, ne geležies antianeminiai preparatai, geležies preparatai, imunosupresantai, sistemiškai veikiantys kortikosteroidai. 
+
+ 
+
+Duomenų šaltiniai: Valstybinis patologijos centras, Nacionalinis transplantacijų biuras (ŽALODRIS), Valstybinė ligonių kasa (SVEIDRA IS), Higienos instituto Mirties priežasčių registras, įvairių gydymo įstaigų informacinės sistemos bei Elektroninės sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinės sistemos (ESPBI IS) E. recepto posistemis. 
+
+Atnaujinimo periodiškumas: Vieną kartą per metus. 
+
+ 
+
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu sveikata@stat.gov.lt. "" "
+,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,
+,,,InkstoBiopsija,,,vda_prime_key,,,4,,,Inkstų biopsijų duomenys,"""Asmenys, kuriems atlikta inkstų biopsija, gimimo data, lytis, biopsijos gavimo data, lėtinės inkstų ligos, 5 stadijos pirmo įrašo data, indikatoriai, ar pacientui nustatytos gretutinės ligos, inkstų ligų rizikos veiksniai – cukrinis diabetas ir arterinė hipertenzija, paciento mirties data ir pagrindinė mirties priežastis. Visos datos yra pateikiamos mėnesio tikslumu."""
+,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius, kurį sudaro stulpeliai - asmens_kodas, biopsijos_data, biopsijos_kategorija, cukr_diabet, arter_hipert"""
+,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,gimimo_data,date,M,,,4,open,,Gimimo data (mėnesio tikslumu),
+,,,,lytis,string,,,,4,open,,Lytis,
+,,,,,enum,,,"""vyras""",,,,Vyras,
+,,,,,,,,"""moteris""",,,,Moteris,
+,,,,,,,,"""nežinoma""",,,,Nežinoma,
+,,,,biopsijos_data,date,M,,,4,open,,Biopsijos gavimo data (mėnesio tikslumu),
+,,,,biopsijos_kategorija,string,,,,4,open,,Inkstų biopsijos diagnostinė kategorija,
+,,,,pirma_inkst_lig_diag,date,M,,,4,open,,Pirma inkstų ligos diagnozė,"""Lėtinės inkstų ligos, 5 stadijos (N18.5 TLK-10-AM) kodo pirmo įrašymo data (mėnesio tikslumu)"""
+,,,,cukr_diabet,boolean,,,,4,open,,Cukrinis diabetas,"""Indikatorius, ar asmeniui yra kada nors įrašyta cukrinio diabeto diagnozė (E10-E14 TLK-10-AM)"""
+,,,,arter_hipert,boolean,,,,4,open,,Arterinė hipertenzija,"""Indikatorius, ar asmeniui yra kada nors įrašyta arterinės hipertenzijos diagnozė (I10-I15 TLK-10-AM)"""
+,,,,mirties_data,date,M,,,4,open,,Mirties data (mėnesio tikslumu),
+,,,,mirties_priez,string,,,,4,open,,Mirties priežastis,Mirties atvejų ir jų priežasčių valstybės registre pagal Pasaulio sveikatos organizacijos taisykles išrinkta oficialiojoje statistikoje naudojama pagrindinė mirties priežastis
+,,,,,,,,,,,,,
+,,,PirmaDialize,,,vda_prime_key,,,4,,,Pirmos dializės duomenys,"""Pacientų pirmos dializės data (mėnesio tikslumu), dializės tipas. Vienam asmeniui gali būti registruotos kelios pirmosios dializės datos, nes po atliktos inksto transplantacijos, transplantatui nustojus funkcionuoti, įrašoma nauja dializės pradžios data."""
+,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius sudarytas iš stulpelių - asmens_kodas, pirma_dialize, _dializes_tipas"""
+,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,dializes_eiles_nr,integer,,,,4,open,,Dializės eilės numeris,"""Rodiklis, nurodantis kelintą kartą asmeniui pradedama nauja dializės gydymų serija. Dializės eilės numeris 1 nurodo kada asmuo pirmą kartą gyvenime pradėjo dializės gydymų seriją. Sekantys eilės numeriai nurodo kada dializės gydymų serijos prasidėjo po atitinkamos inkstų transplantacijos. Pvz., Nr. 2 nurodo dializės gydymų seriją po pirmos transplantacijos, Nr. 3 nurodo dializės gydymų seriją po antros transplantacijos ir t.t."""
+,,,,pirma_dialize,date,M,,,4,open,,Pirma dializės gydymų serijos diena,
+,,,,dializes_tipas,string,,,,4,open,,Atliekamos dializės tipas,
+,,,,,enum,,,"""Hemodializė""",,,,Hemodializė,
+,,,,,,,,"""Peritoninė dializė""",,,,Peritoninė dializė,
+,,,,,,,,"""Numatoma""",,,,Numatoma,
+,,,,,,,,,,,,,
+,,,InkstoTransplantacija,,,vda_prime_key,,,4,,,Inkstų transplantacijų duomenys,Pacientams atliktų inkstų transplantacijų (intervencijos ACHI kodas 36503-00) datos (mėnesio tikslumu)
+,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius, kuri sudaro stulpeliai - asmens_kodas, transpl_data"""
+,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,transpl_eiles_nr,integer,,,,4,open,,Transplantacijos eilės numeris,"""Rodiklis, nurodantis, kelintą kartą atlikta transplantacija"""
+,,,,transpl_data,date,M,,,4,open,,Transplantacijos atlikimo data,
+,,,,,,,,,,,,,
+,,,LaboratorinisTyrimas,,,vda_prime_key,,,4,,,Laboratorinių tyrimų duomenys,"""Pacientų inkstų funkciją apibūdinantys laboratoriniai tyrimai (kreatininas serume, glomerulų filtracijos greitis, albumino-kreatinino santykis šlapime), jų atlikimo data, tyrimo ir analitės pavadinimai, analitės rezultatai, apatiniai, viršutiniai normos rėžiai bei matavimo vienetai."""
+,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius sudarytas iš stulpelių - asmens_kodas, tyrimo_data, tyr_pavadinimas, tyrimo_analite, analites_rezultatas"""
+,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,tyrimo_data,date,D,,,4,open,,Laboratorinio tyrimo atlikimo data,
+,,,,tyr_pavadinimas,string,,,,4,open,,Tyrimo pavadinimas,
+,,,,tyrimo_analite,string,,,,4,open,,Tyrimo analitė,
+,,,,analites_rezultatas,number,,,,4,open,,Analitės rezultatas,
+,,,,analites_norma_nuo,number,,,,4,open,,Apatiniai normos rėžiai,
+,,,,analites_norma_iki,number,,,,4,open,,Viršutiniai normos rėžiai,
+,,,,matavimo_vienetai,string,,,,4,open,,Matavimo vienetai,
+,,,,,,,,,,,,,
+,,,Receptas,,,vda_prime_key,,,4,,,Elektroninių receptų duomenys,"""Pacientams išrašyti elektroniniai receptai, jų išrašymo data (mėnesio tikslumu), recepto skyrimo diagnozės kodas ir pavadinimas, vaisto ATC kodai, bendriniai pavadinimai ir stiprumas. Filtruoti tik su inkstų patologija susiję elektroniniai receptai pagal ATC kodus, t. y. renino angiotenzino sistemą veikiantys vaistai, beta adrenoblokatoriai, kalcio kanalų blokatoriai, diuretikai, ne geležies antianeminiai preparatai, geležies preparatai, imunosupresantai, sistemiškai veikiantys kortikosteroidai."""
+,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
+,,,,asmens_kodas,string,,,,4,open,,Asmens kodas,
+,,,,israsymo_data,date,M,,,4,open,,Recepto išrašymo data (mėnesio tikslumu),
+,,,,diagnoz_kodas,string,,,,4,open,,Diagnozės kodas,"""Diagnozės, dėl kurios skririamas vaistas, TLK-10-AM kodas"""
+,,,,diagnoz_pav,string,,,,4,open,,Diagnozės pavadinimas,"""Diagnozės, dėl kurios skririamas vaistas, pavadinimas"""
+,,,,vaisto_atc_kodas,string,,,,4,open,,Vaisto ATC kodas,
+,,,,vaisto_bendr_pav,string,,,,4,open,,Bendrinis pavadinimas (veikliosios medžiagos),
+,,,,vaisto_stiprumas,string,,,,3,open,,Vaisto stiprumas,
