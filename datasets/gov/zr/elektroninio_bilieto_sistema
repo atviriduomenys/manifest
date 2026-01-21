@@ -37,3 +37,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,bilieto_pardavimo_vietove,string,,,,4,open,,Bilieto pardavimo vietovė,,,,
 ,,,,,bilieto_pardavimo_adresas,string,,,,4,open,,Bilieto pardavimo vietovės adresas,,,,
 ,,,,,bilieto_galiojimo_pabaiga,datetime,L,,,4,open,,Bilieto galiojimo pabaiga,,,,
+
