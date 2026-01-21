@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,,,
-,datasets/gov/zr,,,,,ns,,,,,,,,,,,
+,datasets/gov/zr,,,,,ns,,,,,,,"VšĮ Žaliojo Regiono sistemų duomenys",,,,
 ,datasets/gov/zr/elektroninio_bilieto_sistema,,,,,,,,,,,,"VšĮ Žaliojo Regiono elektroninių bilietų pardavimai",,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,,,
