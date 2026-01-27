@@ -25,7 +25,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,employees_care_coordinator,integer,,,,4,open,,"Globos koordinatoriai – globos centro specialistai, atestuoti asmenys, įgiję reikalavimuose nustatytą išsilavinimą",
 ,,,,,employees_other,integer,,,,4,open,,Kiti darbuotojai,
 ,,,,,accept_with_physical_disabilities,boolean,,,,4,open,,Gali priimti vaikus su fizine negalia,
-,,,,,accept_with_mental_disabilieties,boolean,,,,4,open,,"Gali priimti vaikus su proto ir (ar) psichine negalia",
+,,,,,accept_with_mental_disabilities,boolean,,,,4,open,,"Gali priimti vaikus su proto ir (ar) psichine negalia",
 ,,,,,accept_with_emotional_disorders,boolean,,,,4,open,,"Gali priimti vaikus, turinčius elgesio, emocijų sutrikimus",
 ,,,,,suitable_for_disabled,boolean,,,,4,open,,Patalpos pritaikytos turintiems fizinę negalią,
 ,,,,,negalios_pobudis_judejimo,boolean,,,,4,open,,Negalios pobūdis (judėjimo),
