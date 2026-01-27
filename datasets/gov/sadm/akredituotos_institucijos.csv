@@ -1,9 +1,9 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/sadm/akredituotos_institucijos,,,,,,,,,,,"""Akredituotos socialinės paslaugos.""",, 
+,datasets/gov/sadm/akredituotos_institucijos,,,,,,,,,,,"Akredituotos socialinės paslaugos.",, 
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,prasymo_id,,,4,,,Žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ,Informacija apie trumpąsias žinutės informuojančias gyventojus apie grėsmę keliančius  įvykius ir jų zonas 
+,,,,Prasymas,,,prasymo_id,,,4,,,"Prašymai istaigų, teikti akredituotas socialinias paslaugas", 
 ,,,,,prasymo_id,string,,,,4,open,,Įrašo ID,
 ,,,,,submission_date,datetime,D,,,4,open,,Pateikimo data,
 ,,,,,form_type,string,,,,4,open,,"1 - Prašymai teikti akredituotą socialinę priežiūrą (iki 2024-07-01) 2 - Prašymai teikti akredituotą socialinę priežiūra ir laikino atokvėpio paslaugas.",
@@ -16,14 +16,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,count_of_children,integer,,,,4,open,,Priimamų asmenų skaičius,
 ,,,,,employees_total,integer,,,,4,open,,Darbuotojų skaičius paslaugai teikti,
 ,,,,,full_time_employment,number,D,,,4,open,,Etatų skaičius paslaugai teikti,
-,,,,,employees_with_specified_education,integer,,,,4,open,,"""Socialiniai darbuotojai, įgiję įstatyme nurodytą išsilavinimą""",
-,,,,,employees_assistants_with_specified_education,integer,,,,4,open,,"""Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, įgiję reikalavimuose nustatytą išsilavinimą ar kvalifikaciją""",
-,,,,,employees_assistants_with_introduction_training,integer,,,,4,open,,"""Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, išklausę 40 a. val. įžanginius mokymus""",
-,,,,,employees_care_coordinator,integer,,,,4,open,,"""Globos koordinatoriai – globos centro specialistai, atestuoti asmenys, įgiję reikalavimuose nustatytą išsilavinimą""",
+,,,,,employees_with_specified_education,integer,,,,4,open,,"Socialiniai darbuotojai, įgiję įstatyme nurodytą išsilavinimą",
+,,,,,employees_assistants_with_specified_education,integer,,,,4,open,,"Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, įgiję reikalavimuose nustatytą išsilavinimą ar kvalifikaciją",
+,,,,,employees_assistants_with_introduction_training,integer,,,,4,open,,"Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, išklausę 40 a. val. įžanginius mokymus",
+,,,,,employees_care_coordinator,integer,,,,4,open,,"Globos koordinatoriai – globos centro specialistai, atestuoti asmenys, įgiję reikalavimuose nustatytą išsilavinimą",
 ,,,,,employees_other,integer,,,,4,open,,Kiti darbuotojai,
 ,,,,,accept_with_physical_disabilities,boolean,,,,4,open,,Gali priimti vaikus su fizine negalia,
-,,,,,accept_with_mental_disabilieties,boolean,,,,4,open,,"""Gali priimti vaikus su proto ir (ar) psichine negalia""",
-,,,,,accept_with_emotional_disorders,boolean,,,,4,open,,"""Gali priimti vaikus, turinčius elgesio, emocijų sutrikimus""",
+,,,,,accept_with_mental_disabilieties,boolean,,,,4,open,,"Gali priimti vaikus su proto ir (ar) psichine negalia",
+,,,,,accept_with_emotional_disorders,boolean,,,,4,open,,"Gali priimti vaikus, turinčius elgesio, emocijų sutrikimus",
 ,,,,,suitable_for_disabled,boolean,,,,4,open,,Patalpos pritaikytos turintiems fizinę negalią,
 ,,,,,negalios_pobudis_judejimo,boolean,,,,4,open,,Negalios pobūdis (judėjimo),
 ,,,,,negalios_pobudis_regos,boolean,,,,4,open,,Negalios pobūdis (regos),
@@ -50,7 +50,10 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,x_koord_lks_teikimo,integer,,,,4,open,,Teikimo X koordinatės LKS sistemoje,
 ,,,,,y_koord_lks_teikimo,integer,,,,4,open,,Teikimo Y koordinatės LKS sistemoje,
 ,,,,,geometrija_teikimo,"geometry(point, 3346)",,,,4,open,,Geometrija teikimo,
-
-
-
-
+,,,,,,,,,,,,,,
+,,,,Paslauga,,,paslaugos_id,,,4,,,"Akredituotų institucijų teikiamos paslaugos, jų grupės ir rūšys",
+,,,,,paslaugos_id,string,,,,4,open,,Įrašo ID,
+,,,,,prasymo_id,string,,,,4,open,,Prašymo ID,
+,,,,,paslaugu_tipas,string,,,,4,open,,Paslaugos tipas,
+,,,,,paslaugu_grupe,string,,,,4,open,,Paslaugų grupė,
+,,,,,paslaugu_rusis,string,,,,4,open,,Paslaugų rūšis,
