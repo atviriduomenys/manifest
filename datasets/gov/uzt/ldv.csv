@@ -51,7 +51,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,ar_apgyvendina,integer,,,,4,open,,"Požymis, ar darbuotojui suteikiamas apgyvendinimas",
 ,,,,,,enum,,,0,,,,Neapmoka,
 ,,,,,,,,,1,,,,Apgyvendina,
-,,,,,ar_maitina,boolean,,,,4,open,,"Požymis, ar darbuotojui suteikiamas maitinimas",
+,,,,,ar_maitina,integer,,,,4,open,,"Požymis, ar darbuotojui suteikiamas maitinimas",
 ,,,,,,enum,,,0,,,,Nemaitina,
 ,,,,,,,,,1,,,,Maitina,
 ,,,,,rizikos_lt,string,,,,1,open,,Darbdavio įvardintos darbo rizikos,
