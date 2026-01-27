@@ -16,7 +16,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,count_of_children,integer,,,,4,open,,Priimamų asmenų skaičius,
 ,,,,,employees_total,integer,,,,4,open,,Darbuotojų skaičius paslaugai teikti,
 ,,,,,full_time_employment,number,D,,,4,open,,Etatų skaičius paslaugai teikti,
-,,,,,employees_with_specified_education,integer,,,,4,open,,Socialiniai darbuotojai, įgiję įstatyme nurodytą išsilavinimą,
+,,,,,employees_with_specified_education,integer,,,,4,open,,"""Socialiniai darbuotojai, įgiję įstatyme nurodytą išsilavinimą""",
 ,,,,,employees_assistants_with_specified_education,integer,,,,4,open,,"""Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, įgiję reikalavimuose nustatytą išsilavinimą ar kvalifikaciją""",
 ,,,,,employees_assistants_with_introduction_training,integer,,,,4,open,,"""Socialinio darbuotojo padėjėjai, lankomosios priežiūros darbuotojai, išklausę 40 a. val. įžanginius mokymus""",
 ,,,,,employees_care_coordinator,integer,,,,4,open,,"""Globos koordinatoriai – globos centro specialistai, atestuoti asmenys, įgiję reikalavimuose nustatytą išsilavinimą""",
