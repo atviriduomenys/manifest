@@ -16,4 +16,5 @@ datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių t
 ,,,,mirties_metai,long,,,,4,open,,Metai mirties metu,,
 ,,,,gyv_tipas,string,,,,4,open,,Mirusiojo gyvenamosios vietovės tipas,,
 ,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus grupė mirties metu,,
-,,,,mirties_priezastis,string,,,,4,open,,Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją,
+,,,,mirties_priezastis,string,,,,4,open,,"""Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją""",,
+
