@@ -1,7 +1,7 @@
 dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių tyrimų rezultatai mirties atvejais,
 ,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,MirusiujuToksikologinisRezultatas,,,vda_id,,,4,,,Toksikologinių tyrimų rezultatai,"""Duomenys atspindi toksikologinių tyrimų rezultatus mirties atvejais, kai medžiagų buvo rasta. Toksikologinės medžiagos nebūtinai lėmė asmens mirtį."""
 ,,,,vda_id,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius"""
@@ -17,4 +17,5 @@ datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių t
 ,,,,gyv_tipas,string,,,,4,open,,Mirusiojo gyvenamosios vietovės tipas,
 ,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus grupė mirties metu,
 ,,,,mirties_priezastis,string,,,,4,open,,"""Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją""",
+
 
