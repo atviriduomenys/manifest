@@ -26,7 +26,6 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,posk_pav,string,,,,4,open,,Poskyrio pavadinimas,
 ,,,,,meginio_kiekis,string,,,,4,open,,"Mėginio kiekis – skaitinė reikšmė, parodanti, kiek medžiagos buvo paimta ar sunaudota tyrimui",
 ,,,,,rezultatas,string,,,,4,open,,Rezultatas,
-,,,,,rezultatas_num,number,,,,4,open,,Rezultato skaitinė reikšmė,
 ,,,,,laipsnis_desimt,integer,,,,4,open,,Koncentracijos laipsnis,
 ,,,,,mat_vnt,string,,,,4,open,,"Matavimo vienetas, naudojamas tyrimo rezultatams",
 ,,,,,neapibrezta,string,,,,4,open,,"Mėginys yra neapibrėžtas, t. y. trūksta tam tikros informacijos arba mėginio būklė ar tipas nėra tiksliai nustatytas.",
