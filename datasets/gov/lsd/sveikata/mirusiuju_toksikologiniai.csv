@@ -1,4 +1,4 @@
-dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,Column1
+dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description,
 datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių tyrimų rezultatai mirties atvejais,,
 ,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,,
 ,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,,
@@ -17,3 +17,4 @@ datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių t
 ,,,,gyv_tipas,string,,,,4,open,,Mirusiojo gyvenamosios vietovės tipas,,
 ,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus grupė mirties metu,,
 ,,,,mirties_priezastis,string,,,,4,open,,Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją,
+
