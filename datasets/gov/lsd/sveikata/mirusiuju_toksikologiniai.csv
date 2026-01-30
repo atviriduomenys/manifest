@@ -13,7 +13,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,gr_pavadinimas,string,,,,4,open,,Medžiagų grupės pavadinimas,
 ,,,,,tipo_pavadinimas,string,,,,4,open,,Medžiagų tipo pavadinimas,
 ,,,,,lytis,string,,,,4,open,,Mirusiojo lytis,
-,,,,,mirties_metai,long,,,,4,open,,Metai mirties metu,
+,,,,,mirties_metai,integer,,,,4,open,,Metai mirties metu,
 ,,,,,gyv_tipas,string,,,,4,open,,Mirusiojo gyvenamosios vietovės tipas,
 ,,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus grupė mirties metu,
 ,,,,,mirties_priezastis,string,,,,4,open,,"""Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją""",
+
