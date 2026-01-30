@@ -1,0 +1,19 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/lsd/sveikata/mirusiuju_toksikologiniai,,,,,,,,,,,,Toksikologinių tyrimų rezultatai mirties atvejais,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,MirusiujuToksikologinisRezultatas,,,vda_id,,,4,,,Toksikologinių tyrimų rezultatai,"""Duomenys atspindi toksikologinių tyrimų rezultatus mirties atvejais, kai medžiagų buvo rasta. Toksikologinės medžiagos nebūtinai lėmė asmens mirtį."""
+,,,,,vda_id,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius"""
+,,,,,mirties_id,string,,,,4,open,,Unikalus asmens mirties įrašo identifikatorius,
+,,,,,t_rez,string,,,,4,open,,"""Tyrimo rezultatas: 0 Nerasta, 1 Pėdsakai, 2 Rasta, 3 Koncentracija""",
+,,,,,m_konc,number,,,,4,open,,Rastos medžiagos koncentracija,
+,,,,,mk_vienetai,string,,,,4,open,,"""Koncentracijos vienetai: 1 Procentai, 2 Promilės, 3 mg/l""",
+,,,,,pavadinimas,string,,,,4,open,,Rastos medžiagos pavadinimas,
+,,,,,gr_pavadinimas,string,,,,4,open,,Medžiagų grupės pavadinimas,
+,,,,,tipo_pavadinimas,string,,,,4,open,,Medžiagų tipo pavadinimas,
+,,,,,lytis,string,,,,4,open,,Mirusiojo lytis,
+,,,,,mirties_metai,integer,,,,4,open,,Metai mirties metu,
+,,,,,gyv_tipas,string,,,,4,open,,Mirusiojo gyvenamosios vietovės tipas,
+,,,,,amziaus_grupe,string,,,,4,open,,Asmens amžiaus grupė mirties metu,
+,,,,,mirties_priezastis,string,,,,4,open,,"""Mirties priežasties grupė, suformuota pagal TLK-10 klasifikaciją""",
