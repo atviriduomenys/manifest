@@ -11,7 +11,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,projekto_metai,integer,,,,4,open,,Projekto metai,
 ,,,,,unikalus_numeris,string,,,,4,open,,Statinio unikalus numeris,
 ,,,,,statinio_paskirtis,string,,,,4,open,,Statinio paskirties unikalus identifikatorius,
-,,,,,statinio_pakeista_paskirtis,string,,,,2,open,,Statinio paskirties unikalus identifikatorius (būsima paskirtis),
+,,,,,statinio_pakeista_paskirtis,string,,,,4,open,,Statinio paskirties unikalus identifikatorius (būsima paskirtis),
 ,,,,,statinio_kategorija,string,,,,4,open,,Statinio kategorija,
 ,,,,,adresas,string,,,,4,open,,Statinio adresas,
 ,,,,,statybos_rusis,string,,,,4,open,,Statybos rusis,
