@@ -4,11 +4,11 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,RailwayIncident,,,incident_id,,,4,,,Ištirti geležinkelio eismo įvykiai,
 ,,,,,incident_id,integer,,,,4,open,,Įvykio ID,
-,,,,,incident,string,,,,2,open,,Įvykio laikas,
-,,,,,infrastructure_manager,string,,,,2,open,,Infrastruktūros valdytojas,
-,,,,,line_station_a,string,,,,2,open,,Tarpstočio stotis A,Įvykio vieta - tarpstotis
-,,,,,line_station_b,string,,,,2,open,,Tarpstočio stotis B,Įvykio vieta - tarpstotis
-,,,,,casualties,string,,,,3,open,,Pasėkmės žmogaus sveikatai,
-,,,,,station,string,,,,2,open,,Stotis,Įvykio vieta - stotis
-,,,,,type,string,,,,2,open,,Įvykio tipas,
-,,,,,railway_untertaking,string,,,,2,open,,Vežėjas,
+,,,,,incident,string,,,,4,open,,Įvykio laikas,
+,,,,,infrastructure_manager,string,,,,4,open,,Infrastruktūros valdytojas,
+,,,,,line_station_a,string,,,,4,open,,Tarpstočio stotis A,Įvykio vieta - tarpstotis
+,,,,,line_station_b,string,,,,4,open,,Tarpstočio stotis B,Įvykio vieta - tarpstotis
+,,,,,casualties,string,,,,4,open,,Pasėkmės žmogaus sveikatai,
+,,,,,station,string,,,,4,open,,Stotis,Įvykio vieta - stotis
+,,,,,type,string,,,,4,open,,Įvykio tipas,
+,,,,,railway_untertaking,string,,,,4,open,,Vežėjas,

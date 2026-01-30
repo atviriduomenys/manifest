@@ -5,27 +5,27 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,VietovesVertybe,,,id,,,4,,,Natura 2000 teritorijų vietovių sąrašo duomenys,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija[bast_kodas],,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
-,,,,,kodas.pavadinimas,string,,,,2,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
-,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
-,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
-,,,,,tipas,string,,,,3,open,,Buveinių ekosistemos grupė,
+,,,,,kodas.pavadinimas,string,,,,4,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
+,,,,,rusis,string,,,,4,open,,Rūšis,Rūšies lotyniškas pavadinimas
+,,,,,buveine,string,,,,4,open,,Buveinės pavadinimas,
+,,,,,tipas,string,,,,4,open,,Buveinių ekosistemos grupė,
 ,,,,,geometrija,"geometry(4326)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
-,,,,,sluoksnis,string,,,,3,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
-,,,,,statusas,string,,,,3,open,,Objekto teisinis statusas,
+,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
+,,,,,statusas,string,,,,4,open,,Objekto teisinis statusas,
 ,,,,,,,,,,,,,,
-,,,,ApsaugosTikslas,,,,,,2,,,Natura 2000 teritorijų apsaugos tikslų duomenys,
+,,,,ApsaugosTikslas,,,,,,4,,,Natura 2000 teritorijų apsaugos tikslų duomenys,
 ,,,,,id,string,,,,4,open,,Identifikavimo kodas,
 ,,,,,kodas,ref,/datasets/gov/vstt/teritorijos/BuveiniuApsaugaiSvarbiTeritorija[bast_kodas],,,4,open,,Buveinės kodas,Buveinių apsaugai svarbios teritorijos kodas
-,,,,,kodas.pavadinimas,string,,,,2,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
-,,,,,rusis,string,,,,3,open,,Rūšis,Rūšies lotyniškas pavadinimas
-,,,,,buveine,string,,,,2,open,,Buveinės pavadinimas,
-,,,,,tipas,string,,,,3,open,,Buveinių ekosistemos grupė,
+,,,,,kodas.pavadinimas,string,,,,4,open,,Pavadinimas,Buveinių apsaugai svarbios teritorijos pavadinimas
+,,,,,rusis,string,,,,4,open,,Rūšis,Rūšies lotyniškas pavadinimas
+,,,,,buveine,string,,,,4,open,,Buveinės pavadinimas,
+,,,,,tipas,string,,,,4,open,,Buveinių ekosistemos grupė,
 ,,,,,geometrija,"geometry(4326)",,,,4,open,,Geometrija,"Geometrijos tipas, koordinačių sistemos kodas"
 ,,,,,data,date,D,,,4,open,,Inventorizacijos data,
 ,,,,,plotas,number,ha,,,4,open,,Plotas,Plotas hektarais
-,,,,,bukle,string,,,,3,open,,Vertybės būklė,
-,,,,,tikslas,string,,,,3,open,,Vertybės išsaugojimo tikslas,
-,,,,,sluoksnis,string,,,,3,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
-,,,,,statusas,string,,,,3,open,,Objekto teisinis statusas,
+,,,,,bukle,string,,,,4,open,,Vertybės būklė,
+,,,,,tikslas,string,,,,4,open,,Vertybės išsaugojimo tikslas,
+,,,,,sluoksnis,string,,,,4,open,,Sluoksnis,"Geometrijos tipas, sluoksnis iš kurio suformuoti duomenys"
+,,,,,statusas,string,,,,4,open,,Objekto teisinis statusas,
