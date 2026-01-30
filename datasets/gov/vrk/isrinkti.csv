@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,,,,,,,,
 ,,resource8,,,,html,,https://atviriduomenys.vrk.lt/datasets/gov/vrk/Isrinkti,,,,,,
-,,,,Isrinktas,,,"kandidato_id, rink_kandidato_id",,,2,,,,
+,,,,Isrinktas,,,"kandidato_id, rink_kandidato_id",,,4,,,,
 ,,,,,isrinktu_id,integer,,,,4,open,,Unikalus ID,
 ,,,,,rinkimu_rusis,string,,,,4,open,,Rinkimų rūšis,"EP, SEI, SAV, PRE"
 ,,,,,,enum,,,"""EP""",,,,Rinkimai į Europos parlamentą,
