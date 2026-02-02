@@ -360,7 +360,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paciento_lateralumas,string,,,,4,open,,Paciento lateralumas tyrimo serijos metu,
 ,,,,,tyrimo_serijos_modalumas,string,,,,4,open,,Tyrimo serijos modalumas,
 ,,,,,,enum,,,"""CR""",,,,Kompiuterinė radiografija,
-,,,,,,,,,"""OT""",,,,SC,
+,,,,,,,,,"""OT""",,,,Kita,
 ,,,,,,,,,"""SR""",,,,SR dokumentas,
 ,,,,,,,,,"""PX""",,,,Panoraminis rentgenas,
 ,,,,,,,,,"""DX""",,,,Skaitmeninė radiografija,
