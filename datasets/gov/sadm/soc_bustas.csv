@@ -48,9 +48,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,naudojimo_budas,string,,,,4,open,,Būsto naudojimo būdo pavadinimas,
 ,,,,,busto_plotas_kv_m,number,m²,,,4,open,,"Būsto plotas, išreikštas kvadratiniais metrais",
 ,,,,,kambariu_sk,integer,,,,4,open,,Kambarių skaičius būste,
-,,,,,nuoma_eur_kvantilis_25,number,EUR,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus 25% kvantilis, išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
-,,,,,nuoma_eur_mediana,number,EUR,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus mediana (50% kvantilis), išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
-,,,,,nuomos_eur_kvantilis_75,number,EUR,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus 75% kvantilis, išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
+,,,,,nuoma_eur_kvantilis_25,number,,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus 25% kvantilis, išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
+,,,,,nuoma_eur_mediana,number,,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus mediana (50% kvantilis), išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
+,,,,,nuomos_eur_kvantilis_75,number,,,,4,open,,"Socialinio būsto nuomos kainų savivaldybėje pagal sutarties metus 75% kvantilis, išreikštas eurais","Kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs."
 ,,,,,asmuo_is_eiles,boolean,,,,4,open,,"Požymis, ar būste gyvena asmuo iš socialinio būsto eilės",
 ,,,,,sutarties_metai,integer,,,,4,open,,Sutarties dėl socialinio būsto nuomos pasirašymo metai,
 ,,,,,duomenu_atnaujinimas,datetime,S,,,4,open,,Duomenų atnaujinimo laikas,
