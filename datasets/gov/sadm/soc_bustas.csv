@@ -1,9 +1,44 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/sadm/socialinis_bustas,,,,,,,,,,,,Socialinio būsto duomenys,
+,datasets/gov/sadm/socialinis_bustas,,,,,,,,,,,,Socialinio būsto duomenys,"Rinkinyje pateikiami socialinio būsto Lietuvoje duomenys nuo 1990 metų. Rinkinys susideda iš 5 lentelių: 
+1. Socialinio būsto fondas
+
+Lentelėje pateikiama informacija apie būstus Lietuvoje, kurie tam tikru laikotarpiu praeityje atliko ar iki šiol atlieka socialinio būsto funkciją. Lentelės objektas – vienas būstas. Nurodomos būsto charakteristikos (plotas, kambarių skaičius, būsena duomenų atnaujinimo metu, pirmo ir paskutinio apgyvendinimo datos) bei vietovės duomenys (gyvenvietė, savivaldybė, koordinatės pagal LKS ir WGS koordinačių sistemas). Duomenys jungiami su lentele „Socialinio ir savivaldybės būsto nuomos duomenys“ pagal lauką „busto_id“. 
+
+2. Socialinio ir savivaldybės būsto nuomos duomenys 
+
+Lentelėje pateikiami socialinio ir savivaldybės būsto nuomos Lietuvos savivaldybėse istorijos duomenys nuo 20 a. pabaigos. Lentelės objektas – vieno socialinio arba savivaldybės būsto statusas (nuomojamas, laisvas, rezervuotas, parduotas ir kt.) tam tikru laikotarpiu. Lentelėje pateikiami būsto statuso duomenys (būsena, būsenos pradžia ir pabaiga, būsto charakteristikos, vietovė) ir nuomos informacija (sutarties dėl nuomos pasirašymo metai, būsto nuomos kainos savivaldybėje ataskaitiniais metais, 25 %, 50 % ir 75 % kvantiliai bei požymis, nurodantis, ar būste gyvena asmuo iš socialinio būsto eilės sąrašo; duomenų naudotojams primename, jog kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs). Duomenys jungiami su lentele „Socialinio būsto fondas“ pagal lauką „busto_id“. 
+
+3. Socialinio būsto gavėjų charakteristikos 
+
+Lentelėje pateikiamos socialinį būstą gaunančių asmenų ar šeimų bendrosios charakteristikos nuo 2000 metų. Įrašas lentelėje nurodo vieną asmenį ar šeimą, tais metais pasirašiusius socialinio būsto nuomos sutartį. Nurodomos būsto gavėjo charakteristikos (požymiai, ar yra bedarbių, ar asmuo patenka į socialinės rizikos įskaitą, įtraukimo į įskaitą priežastis, namų ūkį sudarančių asmenų skaičius ir šeimos tipas) ir gyvenamosios vietos duomenys savivaldybės arba apskrities lygmeniu. 
+
+4. Socialinio būsto prašymų duomenys 
+
+Lentelėje pateikiami prašymų gauti socialinį būstą arba būsto nuomos mokesčio dalies kompensaciją nuo 20 a. pabaigos duomenys: 
+
+- prašymo dėl paramos būstui išsinuomoti BP-3 forma (dėl įrašymo į asmenų ir šeimų, turinčių teisę į socialinio būsto nuomą, sąrašą), 
+
+- prašymo dėl paramos būstui išsinuomoti BP-5 forma (neįrašytiems į turinčių teisę sąrašus), 
+
+- prašymo dėl paramos būstui išsinuomoti BP-4 forma (būsto nuomos mokesčio dalies kompensacijai gauti).  
+
+Lentelės objektas – vienas prašymas. Pateikiami duomenys apie prašymą (pateikimo laikas, kaip nurodyta socialinio būsto įstatyme, prašymo būsena duomenų atnaujinimo metu, pagal įstatymą apibrėžta būsto grupė, į kurią pretenduoja prašymą pateikęs asmuo, bei prašymo pagerinti būstą priežastis) ir jį teikusį asmenį (gyvenamoji savivaldybė ir duomenys apie turimą būstą). Lentelė jungiasi su kita rinkinio lentele „Sprendimai suteikti socialinį būstą“ pagal lauką „prasymo_id“. 
+
+5. Sprendimai suteikti socialinį būstą 
+
+Lentelėje nurodomi sprendimai skirti socialinį būstą asmenims, pateikusiems prašymą, ir duomenys apie sprendimą – data ir sprendimą priėmusi savivaldybė. Jeigu asmuo arba šeima, kaip numatyta socialinio būsto įstatyme, netenka teisės į socialinį būstą, tuomet nurodoma sprendimo priėmimo išbraukti asmenį iš sąrašo data, priežastis ir išbraukimo data. Taip pat pateikiamas asmens, įrašyto į būsto laukiančiųjų sąrašą, eilės numeris duomenų atnaujinimo metu, nurodomas jo eilės numeris tuo metu, kai jam buvo paskirtas socialinis būstas, ir fiksuojama įsikraustymo į pirmąjį socialinį būstą data. Lentelės naudotojai, sujungę duomenis su prašymų lentele pagal lauką „prasymo_id“, gali apskaičiuoti skirtumą tarp prašymo teikimo, sprendimo priėmimo ir pirmo įsikraustymo į suteiktą socialinį būstą datų. 
+
+Nuoroda į socialinio būsto įstatymą: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/620cd9e0584311e49df480952cc07606/asr. 
+
+Duomenų teikėjas – Socialinės apsaugos ir darbo ministerija. 
+
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. 
+
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. "
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,Bustas,,,busto_id,,,4,,,Socialinio būsto fondas,
+,,,,Bustas,,,busto_id,,,4,,,Socialinio būsto fondas,"Lentelėje pateikiama informacija apie būstus Lietuvoje, kurie tam tikru laikotarpiu praeityje atliko ar iki šiol atlieka socialinio būsto funkciją. Lentelės objektas – vienas būstas. Nurodomos būsto charakteristikos (plotas, kambarių skaičius, būsena duomenų atnaujinimo metu, pirmo ir paskutinio apgyvendinimo datos) bei vietovės duomenys (gyvenvietė, savivaldybė, koordinatės pagal LKS ir WGS koordinačių sistemas). Duomenys jungiami su lentele „Socialinio ir savivaldybės būsto nuomos duomenys“ pagal lauką „busto_id“. "
 ,,,,,busto_id,string,,,,4,open,,Būsto identifikacinis numeris,
 ,,,,,busto_tipas,string,,,,4,open,,Būsto tipas,
 ,,,,,,enum,,,"""savivaldybė""",,,,,
@@ -23,7 +58,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,geometrijos_ivertis,integer,,,,4,open,,Būsto koordinačių tikslumo įvertis,
 ,,,,,duomenu_atnaujinimas,datetime,S,,,4,open,,Būsto būsenos atnaujinimo data,
 ,,,,,,,,,,,,,,
-,,,,Gavejas,,,statuso_id,,,4,,,Socialinio būsto gavėjų charakteristikos ,
+,,,,Gavejas,,,statuso_id,,,4,,,Socialinio būsto gavėjų charakteristikos ,"Lentelėje pateikiamos socialinį būstą gaunančių asmenų ar šeimų bendrosios charakteristikos nuo 2000 metų. Įrašas lentelėje nurodo vieną asmenį ar šeimą, tais metais pasirašiusius socialinio būsto nuomos sutartį. Nurodomos būsto gavėjo charakteristikos (požymiai, ar yra bedarbių, ar asmuo patenka į socialinės rizikos įskaitą, įtraukimo į įskaitą priežastis, namų ūkį sudarančių asmenų skaičius ir šeimos tipas) ir gyvenamosios vietos duomenys savivaldybės arba apskrities lygmeniu. "
 ,,,,,statuso_id,string,,,,4,open,,Statuso identifikacinis numeris,
 ,,,,,sutarties_metai,integer,,,,4,open,,Socialinio būsto sutarties pasirašymo metai,
 ,,,,,savivaldybe,string,,,,4,open,,"Šeimos ar asmens, gaunančio socialinį būstą, savivaldybę.",
@@ -35,7 +70,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,seim_nariai,integer,,,,4,open,,Socialinį būstą gaunančios šeimos narių skaičius,
 ,,,,,seim_duomenu_atnaujinimas,datetime,S,,,4,open,,Duomenų atnaujinimo laikas,
 ,,,,,,,,,,,,,,
-,,,,Statusas,,,ivykio_id,,,4,,,Socialinio ir savivaldybės būsto nuomos duomenys,
+,,,,Statusas,,,ivykio_id,,,4,,,Socialinio ir savivaldybės būsto nuomos duomenys,"Lentelėje pateikiami socialinio ir savivaldybės būsto nuomos Lietuvos savivaldybėse istorijos duomenys nuo 20 a. pabaigos. Lentelės objektas – vieno socialinio arba savivaldybės būsto statusas (nuomojamas, laisvas, rezervuotas, parduotas ir kt.) tam tikru laikotarpiu. Lentelėje pateikiami būsto statuso duomenys (būsena, būsenos pradžia ir pabaiga, būsto charakteristikos, vietovė) ir nuomos informacija (sutarties dėl nuomos pasirašymo metai, būsto nuomos kainos savivaldybėje ataskaitiniais metais, 25 %, 50 % ir 75 % kvantiliai bei požymis, nurodantis, ar būste gyvena asmuo iš socialinio būsto eilės sąrašo; duomenų naudotojams primename, jog kvantilis nurodo reikšmę, už kurią x dalis duomenų yra mažesni arba lygūs). Duomenys jungiami su lentele „Socialinio būsto fondas“ pagal lauką „busto_id“."
 ,,,,,ivykio_id,string,,,,4,open,,Būsto įvykio identifikacinis numeris,
 ,,,,,busto_id,string,,,,4,open,,Būsto identifikacinis numeris,
 ,,,,,data_nuo,date,D,,,4,open,,Statuso pradžios data,
@@ -55,7 +90,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sutarties_metai,integer,,,,4,open,,Sutarties dėl socialinio būsto nuomos pasirašymo metai,
 ,,,,,duomenu_atnaujinimas,datetime,S,,,4,open,,Duomenų atnaujinimo laikas,
 ,,,,,,,,,,,,,,
-,,,,Prasymas,,,prasymo_id,,,4,,,Socialinio būsto prašymų duomenys,
+,,,,Prasymas,,,prasymo_id,,,4,,,Socialinio būsto prašymų duomenys,"Lentelėje pateikiami prašymų gauti socialinį būstą arba būsto nuomos mokesčio dalies kompensaciją nuo 20 a. pabaigos duomenys: 
+
+prašymo dėl paramos būstui išsinuomoti BP-3 forma (dėl įrašymo į asmenų ir šeimų, turinčių teisę į socialinio būsto nuomą, sąrašą), 
+
+prašymo dėl paramos būstui išsinuomoti BP-5 forma (neįrašytiems į turinčių teisę sąrašus), 
+
+prašymo dėl paramos būstui išsinuomoti BP-4 forma (būsto nuomos mokesčio dalies kompensacijai gauti).  
+
+Lentelės objektas – vienas prašymas. Pateikiami duomenys apie prašymą (pateikimo laikas, kaip nurodyta socialinio būsto įstatyme, prašymo būsena duomenų atnaujinimo metu, pagal įstatymą apibrėžta būsto grupė, į kurią pretenduoja prašymą pateikęs asmuo, bei prašymo pagerinti būstą priežastis) ir jį teikusį asmenį (gyvenamoji savivaldybė ir duomenys apie turimą būstą). Lentelė jungiasi su kita rinkinio lentele „Sprendimai suteikti socialinį būstą“ pagal lauką „prasymo_id“. "
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikacinis numeris,
 ,,,,,prasymo_tipas,string,,,,4,open,,Teikto prašymo gauti socialinį būstą tipas,
 ,,,,,,enum,,,"""Parama būstui išsinuomoti (dėl įrašymo Asmenų ir šeimų, turinčių teisę į socialinio būsto nuomą, sąrašą)""",,,,,
@@ -89,7 +132,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""įgijo teisę į neįgaliųjų poreikiams pritaikytą socialinį būstą""",,,,,
 ,,,,,,,,,"""šeimoje yra sergančių lėtine liga sunkia forma, kurie turi turėti atskirus kambarius""",,,,,
 ,,,,,,,,,,,,,,
-,,,,Sprendimas,,,sprendimo_id,,,4,,,Sprendimai suteikti socialinį būstą,
+,,,,Sprendimas,,,sprendimo_id,,,4,,,Sprendimai suteikti socialinį būstą,"Lentelėje nurodomi sprendimai skirti socialinį būstą asmenims, pateikusiems prašymą, ir duomenys apie sprendimą – data ir sprendimą priėmusi savivaldybė. Jeigu asmuo arba šeima, kaip numatyta socialinio būsto įstatyme, netenka teisės į socialinį būstą, tuomet nurodoma sprendimo priėmimo išbraukti asmenį iš sąrašo data, priežastis ir išbraukimo data. Taip pat pateikiamas asmens, įrašyto į būsto laukiančiųjų sąrašą, eilės numeris duomenų atnaujinimo metu, nurodomas jo eilės numeris tuo metu, kai jam buvo paskirtas socialinis būstas, ir fiksuojama įsikraustymo į pirmąjį socialinį būstą data. Lentelės naudotojai, sujungę duomenis su prašymų lentele pagal lauką „prasymo_id“, gali apskaičiuoti skirtumą tarp prašymo teikimo, sprendimo priėmimo ir pirmo įsikraustymo į suteiktą socialinį būstą datų. "
 ,,,,,sprendimo_id,string,,,,4,open,,Sprendimo identifikacinis numeris,
 ,,,,,prasymo_id,string,,,,4,open,,Prašymo identifikacinis numeris,Jungiasi su prašymų lenta
 ,,,,,sprendimo_data,date,D,,,4,open,,Sprendimo priėmimo data,
