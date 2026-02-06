@@ -16,4 +16,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,is_viso_lovu_sk_dekl,integer,U,,,4,open,,Bendras deklaruojamas lovų skaičius,
 ,,,,,dekl_sk_eil_paemimo_data,integer,U,,,4,open,,Deklaruojamo lovų skaičiaus vėliausiai paimtos duomenų eilutės data ir laikas,
 ,,,,,dekl_sk_eil_atnaujinimo_data,integer,U,,,4,open,,Deklaruojamo lovų skaičiaus vėliausiai atnaujintų duomenų data ir laikas,
-,,,,,uzimtu_lovu_sk,integer,U,,,4,open,,Atitinkamo profilio užimtų lovų skaičius,
+,,,,,uzimtu_lovu_sk,integer,U,,,4,open,,Užimtų lovų skaičius,
