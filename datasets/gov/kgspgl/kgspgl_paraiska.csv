@@ -2,7 +2,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/kgspgl/maitinimo_paraiskos,,,,,,,,,,,,VšĮ K. Griniaus slaugos ir palaikomojo gydymo ligoninės pacientų maitinimo paraiškos,
 ,,,,,,,,,,,,,,
 ,,,,Maitinimo_paraiska,,,vda_id,,,4,,,VšĮ K. Griniaus slaugos ir palaikomojo gydymo ligoninės pacientų maitinimo paraiškos,"Šiame duomenų rinkinyje pateikiami VšĮ K. Griniaus slaugos ir palaikomojo gydymo ligoninės (Kauno miesto savivaldybė) pacientų maitinimo paraiškų duomenys, kaupiami apskaitos programoje „Progra – Apskaita.
-Rinkinys apima informaciją apie pacientams skirtą maitinimą pagal padalinius, dienas, valgymus, dietas, patiekalus, porcijų kiekius bei patiekalų savikainą. Pateikiami duomenys nuo 2022 metų kovo mėnesio.“
+Rinkinys apima informaciją apie pacientams skirtą maitinimą pagal padalinius, dienas, valgymus, dietas, patiekalus, porcijų kiekius bei patiekalų savikainą. Pateikiami duomenys nuo 2022 metų kovo mėnesio."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,diena,date,D,,,4,open,,Maitinimo data,
 ,,,,,porciju_kiekis,integer,,,,4,open,,Porcijų kiekis,
