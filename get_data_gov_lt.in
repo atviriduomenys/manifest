@@ -36,6 +36,7 @@ datasets/gov/rc/jar/atributai.csv
 datasets/gov/rc/jar/buveines.csv
 datasets/gov/rc/jar/dokumentai.csv
 datasets/gov/rc/jar/dokumentu_tipai_potipiai.csv
+datasets/gov/lsd/sveikata/lab_tyrimai.csv
 datasets/gov/asmlis/uzsakymai.csv
 datasets/gov/aaa/nuotekos.csv
 datasets/gov/rc/jar/faktu_tipai_potipiai.csv
