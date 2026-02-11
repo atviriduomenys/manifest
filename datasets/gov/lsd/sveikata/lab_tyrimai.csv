@@ -1,0 +1,11 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,/datasets/gov/lsd/sveikata/lab_tyrimai,,,,,,,,,,,,Laboratorinių tyrimų agreguoti skaičiai,"""Pacientams atliktų laboratorinių tyrimų agreguotas skaičius iš VDV IS integruotų ligoninių ir poliklinikų laboratorinių tyrimų rinkinių. Laboratorinių tyrimų agreguotas skaičius, koduojamų su LOINC ir be LOINC, pateiktas atskirai.  Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu sveikata@stat.gov.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
+,,,,,,,,,,,,,,
+,,,,LaboratorinisTyrimas,,,vda_id,,,4,,,Laboratorinių tyrimų agreguoti skaičiai,"""Pacientams atliktų laboratorinių tyrimų agreguotas skaičius iš VDV IS integruotų ligoninių ir poliklinikų laboratorinių tyrimų rinkinių. Laboratorinių tyrimų agreguotas skaičius, koduojamų su LOINC ir be LOINC, pateiktas atskirai."""
+,,,,,vda_id,string,,,,4,open,,Unikalios eilutės identifikatorius,
+,,,,,tyr_pav_analite,string,,,,4,open,,Tyrimo pavadinimas ir analitė (Tyrimas: analitė),
+,,,,,skaicius_be_loinc,integer,,,,4,open,,Tyrimų skaičius be LOINC kodo,
+,,,,,analites_loinc_kodas,string,,,,4,open,,LOINC kodas,
+,,,,,skaicius_loinc,integer,,,,4,open,,Tyrimų skaičius su LOINC kodu,
