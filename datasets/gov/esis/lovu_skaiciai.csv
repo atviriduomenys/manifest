@@ -1,13 +1,19 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/esis/lovu_skaiciai,,,,,,,,,,,,Asmens sveikatos priežiūros įstaigų lovų skaičiai,
+,datasets/gov/esis/lovu_skaiciai,,,,,,,,,,,,Aktualūs asmens sveikatos priežiūros įstaigų lovų skaičiai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,LovuProfilis,,,vda_id,,,4,,,Asmens sveikatos priežiūros įstaigų lovų skaičiai,"UAB „Varutis“ vystoma ir administruojama Elektroninė sveikatos istorijos sistema (ESIS) kaupia asmens sveikatos priežiūros įstaigų (ASPĮ), naudojančių ESIS, turimų lovų duomenis. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra atnaujinami kasdien. Duomenų rinkinį sudaro: ASPĮ JAR kodas, pavadinimas ir savivaldybė, lovos profilio pavadinimas, bendras visų atitinkamo profilio lovų skaičius ir laikinai nepildomas, einamąją dieną užimtų lovų skaičius."
+,,,,LovuProfilis,,,vda_id,,,4,,,Aktualūs asmens sveikatos priežiūros įstaigų lovų skaičiai,"UAB „Varutis“ vystomoje ir administruojamoje Elektroninė sveikatos istorijos sistemoje (ESIS) kaupiami asmens sveikatos priežiūros įstaigų (ASPĮ), naudojančių ESIS, turimų lovų duomenys. Priklausomai nuo ASPĮ, duomenų laiko aprėptis gali skirtis, tačiau duomenys yra atnaujinami kasdien. Duomenų rinkinį sudaro: ASPĮ JAR kodas, pavadinimas, padalinys, savivaldybė, lovos profilio pavadinimas, bendras statistinis (teorinis) lovų skaičius, šį skaičių sudarančių duomenų eilučių naujausi paėmimo iš duomenų bazės ir atnaujinimo laikai, bendras deklaruojamas lovų skaičius, šį skaičių sudarančių duomenų eilučių naujausi paėmimo iš duomenų bazės ir atnaujinimo laikai bei užimtų lovų stulpelis. Statistinis lovų skaičius įprastai yra įstaigos direktoriaus įsakyme nurodytas skaičius, o deklaruojamas lovų skaičius gaunamas sudedant pagal palatas išskirstytas lovas. Statistinis (teorinis) lovų skaičius ir deklaruojamas skaičius gali skirtis. Duomenų eilutės paėmimo iš duomenų bazės laikai visada lieka vienodi. Šis rinkinys skirtas vaizduoti esamą medicininių lovų padėtį. Užimtų lovų skaičiaus stulpelis yra paliktas tuščias dėl sudėtingų sąlygų siekiant jį tiksliai apskaičiuoti. Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."
 ,,,,,vda_id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,aspi_jar_kodas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos JAR kodas,
 ,,,,,aspi_pavadinimas,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos pavadinimas,
 ,,,,,aspi_savivaldybe,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos savivaldybė,
+,,,,,aspi_padalinys,string,,,,4,open,,Asmens sveikatos priežiūros įstaigos padalinys,
 ,,,,,lovos_profilis,string,,,,4,open,,Lovų profilio pavadinimas,
-,,,,,is_viso_lovu_sk,integer,U,,,4,open,,Bendras atitinkamo profilio lovų skaičius,
-,,,,,uzimtu_lovu_sk,integer,U,,,4,open,,Atitinkamo profilio užimtų lovų skaičius,
+,,,,,is_viso_lovu_sk_stat,integer,U,,,4,open,,Bendras statistinis (teorinis) lovų skaičius,
+,,,,,stat_sk_eil_paemimo_data,datetime,S,,,4,open,,Statistinio lovų skaičiaus vėliausiai paimtos duomenų eilutės data ir laikas,
+,,,,,stat_sk_atnaujinimo_data,datetime,S,,,4,open,,Statistinio lovų skaičiaus vėliausiai atnaujintų duomenų data ir laikas,
+,,,,,is_viso_lovu_sk_dekl,integer,U,,,4,open,,Bendras deklaruojamas lovų skaičius,
+,,,,,dekl_sk_eil_paemimo_data,datetime,S,,,4,open,,Deklaruojamo lovų skaičiaus vėliausiai paimtos duomenų eilutės data ir laikas,
+,,,,,dekl_sk_atnaujinimo_data,datetime,S,,,4,open,,Deklaruojamo lovų skaičiaus vėliausiai atnaujintų duomenų data ir laikas,
+,,,,,uzimtu_lovu_sk,integer,U,,,4,open,,Faktinis užimtų lovų skaičius,
