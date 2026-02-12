@@ -6,7 +6,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Panaudojimas,,,panaudojimo_id,,,4,,,Akmeniečio kortelės panaudojimai,Informacija apie Akmenės rajono savivaldybės išduotos Akmeniečio kortelės panaudojimus
 ,,,,,panaudojimo_id,string,,,,4,open,,Kortelės panaudojimo identifikatorius,
-,,,,,panaudojimo_laikas,timestamp,,,,4,open,,Kortelės panaudojimo laikas,
+,,,,,panaudojimo_laikas,datetime,,,,4,open,,Kortelės panaudojimo laikas,
 ,,,,,suteikta_nuolaida,number,,,,4,open,,Suteikta nuolaida paslaugai panaudojus kortelę,
 ,,,,,naudotojo_asmens_kodas,string,,,,4,open,,Kortelės naudotojo asmens kodas,
 ,,,,,vda_kortele_panaikinta,boolean,,,,4,open,,Požymis ar Akmeniečio kortelė panaikinta,
@@ -30,3 +30,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,enum,,,"""Nenustatytas asmuo""",,,,,
 ,,,,,,,,,"""Fizinis asmuo""",,,,,
 ,,,,,,,,,"""Juridinis asmuo""",,,,,
+
