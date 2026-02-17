@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/lsd/sveikata/lab_tyrimai,,,,,,,,,,,,Laboratorinių tyrimų agreguoti skaičiai,"""Pacientams atliktų laboratorinių tyrimų agreguotas skaičius iš VDV IS integruotų ligoninių ir poliklinikų laboratorinių tyrimų rinkinių. Laboratorinių tyrimų agreguotas skaičius, koduojamų su LOINC ir be LOINC, pateiktas atskirai.  Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu sveikata@stat.gov.lt."""
+,datasets/gov/lsd/sveikata/lab_tyrimai,,,,,,,,,,,,Laboratorinių tyrimų agreguoti skaičiai,"""Pacientams atliktų laboratorinių tyrimų agreguotas skaičius iš VDV IS integruotų ligoninių ir poliklinikų laboratorinių tyrimų rinkinių. Laboratorinių tyrimų agreguotas skaičius, koduojamų su LOINC ir be LOINC, pateiktas atskirai.  Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu sveikata@stat.gov.lt."""
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues,,
 ,,,,,,,,,,,,,,
