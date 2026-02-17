@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/marijampoles_autobusu_parkas,,,,,,,,,,,,Marijampolės autobusų parkas,
-,datasets/gov/marijampoles_autobusu_parkas/keleiviu_srautas,,,,,ns,,,,,,,Marijampolės viešojo transporto elektroninio bilieto sistema,
+,datasets/gov/marijampoles_autobusu_parkas,,,,,ns,,,,,,,Marijampolės autobusų parkas,
+,datasets/gov/marijampoles_autobusu_parkas/keleiviu_srautas,,,,,,,,,,,,Marijampolės viešojo transporto elektroninio bilieto sistema,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
