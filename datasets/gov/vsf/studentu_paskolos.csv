@@ -1,0 +1,31 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vsf/studentu_paskolos,,,,,,,,,,,,Studentų paskolų informacija,"Duomenų rinkinyje pateikiama informacija apie studentų studijas, mokymosi įstaigas ir suteiktas paskolas bei jų sąlygas ir grąžinimą."
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Paskola,,,vda_prime_key,,,4,,,Studentų paskolų informacija,"Duomenų rinkinyje pateikiami studentų paskolų paraiškų anketų ir išduotų paskolų duomenys, kuriuos teikia Valstybinis studijų fondas (https://vsf.lrv.lt/). Rinkinyje nurodytos paskolos, suteiktos 1998–2013 m. Kiekviena rinkinio eilutė atitinka vieną unikalią studentui suteiktą paskolą. Rinkinį sudaro anketos duomenys, kuriuose nurodoma studento mokymosi įstaiga ir pateikiama šifruota asmeninė informacija, bei suteiktų paskolų duomenys, kuriuose nurodoma paskolos suma, jos grąžinimo terminai ir nustatyti delspinigiai.
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."
+,,,,,vda_prime_key,string,,vda_prime_key,,4,open,,Unikalus indentifikatorius,
+,,,,,mokykla_pavadinimas,string,,mokykla_pavadinimas,,4,open,,Aukštosios mokyklos ar kitos mokymosi įstaigos oficialus pavadinimas.,
+,,,,,mokykla_trump_pavadinimas,string,,mokykla_trump_pavadinimas,,4,open,,Mokymosi įstaigos trumpinys arba santrumpa.,
+,,,,,fakultetas_pavadinimas,string,,fakultetas_pavadinimas,,4,open,,"Fakulteto, kuriame studijuoja asmuo, pavadinimas.",
+,,,,,vda_asmens_kodas,string,,vda_asmens_kodas,,4,open,,Anonimizuotas (užšifruotas) asmens identifikatorius,
+,,,,,vda_asm_k_validacija,string,,vda_asm_k_validacija,,4,open,,"Požymis, nurodantis ar asmens kodas atitinka validacijos taisykles.",
+,,,,,lytis,string,,lytis,,4,open,,Asmens lytis,
+,,,,,salis,string,,salis,,4,open,,Asmens gimtoji šalis,
+,,,,,miestas,string,,miestas,,4,open,,Asmens deklaruotos ar gyvenamosios vietos gyvenvietės pavadinimas.,
+,,,,,kursas,integer,,kursas,,4,open,,"Studijų kurso numeris (pvz., 1, 2, 3 ir pan.).",
+,,,,,studiju_forma,string,,studiju_forma,,4,open,,"Studijų forma (pvz., deininis, ištęstinis ir kt.)",
+,,,,,studiju_pakopa,string,,studiju_pakopa,,4,open,,Asmens studijų pakopos pavadinimas,
+,,,,,paskolos_rusis,string,,paskolos_rusis,,4,open,,"Suteiktos paskolos tipas (pvz., studijų, gyvenimo išlaidų ir pan.).",
+,,,,,sutarties_nr,string,,sutarties_nr,,4,open,,Anonimizuotas (užšifruotas) paskolos sutarties identifikacinis numeris.,
+,,,,,sutarties_data,date,D,sutarties_data,,4,open,,"Data, kada buvo pasirašyta paskolos sutartis.",
+,,,,,suma_eur,integer,,suma_eur,,4,open,,Sutartyje numatyta paskolos suma eurais.,
+,,,,,suma_lt,integer,,suma_lt,,4,open,,Sutartyje numatyta paskolos suma litais.,
+,,,,,pask_graz_pradzia,date,D,pask_graz_pradzia,,4,open,,"Data, nuo kurios pradedamas paskolos grąžinimas.",
+,,,,,pask_graz_pabaiga,date,D,pask_graz_pabaiga,,4,open,,Planuojama paskolos grąžinimo termino pabaigos data.,
+,,,,,palukanu_norma,integer,,palukanu_norma,,4,open,,Metinė paskolos palūkanų norma procentais.,
+,,,,,delspinigiu_norma,integer,,delspinigiu_norma,,4,open,,Taikoma delspinigių norma procentais už pradelstus mokėjimus.,
+,,,,,nurasyta_suma,integer,,nurasyta_suma,,4,open,,"Paskolos suma arba dalis, kuri buvo nurašyta.",
+,,,,,busena,string,,busena,,4,open,,Paskolos požymio reikšmės,
