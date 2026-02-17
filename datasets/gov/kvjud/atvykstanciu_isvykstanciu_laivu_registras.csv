@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/kvjud/,,,,,ns,,,,,,,AB Klaipėdos valstybinio jūrų uosto direkcija,
+,datasets/gov/kvjud,,,,,ns,,,,,,,AB Klaipėdos valstybinio jūrų uosto direkcija,
 ,datasets/gov/kvjud/atvykstanciu_isvykstanciu_laivu_registras,,,,,,,,,,,,Į Klaipėdos uostą atplaukiantys arba iš jo išplaukiantys tarptautiniai laivai.,Informacija apie registruojamus į Klaipėdos uostą  atplaukiančius arba iš jo išplaukiančius tarptautinius laivus.
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
