@@ -1,11 +1,12 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/marijampoles_autobusu_parkas,,,,,,,,,,,,Marijampolės autobusų parkas,
 ,datasets/gov/marijampoles_autobusu_parkas/keleiviu_srautas,,,,,ns,,,,,,,Marijampolės viešojo transporto elektroninio bilieto sistema,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,KeleiviuSrautas,,id,,,,4,,,Keleivių srautas,Marijampolės miesto viešojo transporto pirkti ir žymėti bilietai transporto priemonėje
 ,,,,,id,string,,,,4,open,,Unikaus identifikatorius,
-,,,,,data,time,,,,4,open,,Bilieto pirkimo/naudojimo data,
+,,,,,data,datetime,S,,,4,open,,Bilieto pirkimo/naudojimo data,
 ,,,,,bilieto_tipas,string,,,,4,open,,Bilieto naudojimo arba pirkimo tipas,
 ,,,,,,enum,,,"""USE_CARD_SERVICE""",,,,Mėnesinio bilieto naudojimas miesto viešajam transporte,
 ,,,,,,,,,"""USE_CARD_SERVICE_TRIANGLE""",,,,Mėnesinio bilieto naudojimas priemiesčio viešajam transporte,
