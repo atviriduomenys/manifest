@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,PastatoElementoRizika,,,"rizikos_vertinimo_id,",,,4,,,,
+,,,,PastatoElementoRizika,,,rizikos_vertinimo_id,,,4,,,,
 ,,,,,rizikos_vertinimo_id,string,,,,4,open,,Rizikos vertinimo įrašo unikalus identifikatorius,
 ,,,,,objekto_id,string,,,,4,open,,Pastato identifikatorius,
 ,,,,,statybos_metai,integer,,,,4,open,,Pastato statybos metai,
