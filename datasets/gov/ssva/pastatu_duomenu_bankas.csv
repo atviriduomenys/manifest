@@ -38,4 +38,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,adresas,string,,,,4,open,,Pastato adresas,
 ,,,,,savivaldybe,string,,,,4,open,,Savivaldybė,
 ,,,,,geometrija_adp,"geometry(point, 3346)",,,,4,open,,Pastato vietos koordinatės LKS-94 (EPSG:3346) sistemoje,
-,,,,,iraso_sukurimo_data,timestamp,,,,4,open,,Įrašo sukūrimo data,
+,,,,,iraso_sukurimo_data,timestamp,L,,,4,open,,Įrašo sukūrimo data,
