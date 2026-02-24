@@ -293,7 +293,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,type,string,,,,,open,,,
 ,,,,,paper_size,string,,,,,open,,,
 ,,,,,last_write_time,datetime,,,,,open,,,
-,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,RelatedStandard,,,"parent_standard, child_standard",,,,,,,"Standarto ryšys su kitais standartais (pakeičia, keitinys, pataisa)"
 ,,,,,parent_standard,ref,Standard,,,,open,,,
