@@ -1,97 +1,120 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lst/standards,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,TermApprovedBy,,,,,,,,,,Standarte nurodyto termino straipsnį aprobavęs subjektas
+,,,,TermApprovedBy,,,id,,,,,,,Standarte nurodyto termino straipsnį aprobavęs subjektas
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,TermSource,,,,,,,,,,Šaltinis iš kur paimtas terminas (iš terminų standarto arba iš standarto apibrėžimų skyriaus)
+,,,,TermSource,,,id,,,,,,,Šaltinis iš kur paimtas terminas (iš terminų standarto arba iš standarto apibrėžimų skyriaus)
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ActionType,,,,,,,,,,"Standarto rengimo eiga (etapai, kurie nurodo kokius veiksmus sistemoje turi atlikti departamento darbuotojas)"
+,,,,ActionType,,,id,,,,,,,"Standarto rengimo eiga (etapai, kurie nurodo kokius veiksmus sistemoje turi atlikti departamento darbuotojas)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,DegreeOfEquivalence,,,,,,,,,,"Nacionalinio standarto atitikties tarptautiniam standartui laipsnis (tapatus, modifikuotas, nelygiavertis, nacionalinis)"
+,,,,DegreeOfEquivalence,,,id,,,,,,,"Nacionalinio standarto atitikties tarptautiniam standartui laipsnis (tapatus, modifikuotas, nelygiavertis, nacionalinis)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,notation,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ForeignTcMembershipStatus,,,,,,,,,,LST TK dalyvavimas tarptautinių standartizacijos organizacijų veikloje tikrojo nario arba nario stebėtojo teisėmis
+,,,,ForeignTcMembershipStatus,,,id,,,,,,,LST TK dalyvavimas tarptautinių standartizacijos organizacijų veikloje tikrojo nario arba nario stebėtojo teisėmis
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ImplementationType,,,,,,,,,,"Tarptautinių ir Europos standartų perėmimo nacionaliniais standartais būdai (atgaminimo, vertimo, atgaminimo ir vertimo, patvirtinimo)"
+,,,,ImplementationType,,,id,,,,,,,"Tarptautinių ir Europos standartų perėmimo nacionaliniais standartais būdai (atgaminimo, vertimo, atgaminimo ir vertimo, patvirtinimo)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,LRLawStatementType,,,,,,,,,,"Europos Sąjungos direktyvą įgyvendinančio nacionalinio teisės akto tipas (įstatymas, nutarimas, įsakymas, taisyklės)"
+,,,,LRLawStatementType,,,id,,,,,,,"Europos Sąjungos direktyvą įgyvendinančio nacionalinio teisės akto tipas (įstatymas, nutarimas, įsakymas, taisyklės)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Language,,,,,,,,,,Kalbos ir jų kodai
+,,,,Language,,,id,,,,,,,Kalbos ir jų kodai
 ,,,,,code,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,OrganisationUnitStatus,,,,,,,,,,"Lietuvos standartizacijos departamento technikos komitetų veiklos būsena (aktyvus, sustabdytas, likviduotas)"
+,,,,OrganisationUnitStatus,,,id,,,,,,,"Lietuvos standartizacijos departamento technikos komitetų veiklos būsena (aktyvus, sustabdytas, likviduotas)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,OrganisationUnitType,,,,,,,,,,"Lietuvos standartizacijos departamento struktūriniai subjektai (vidinis skyrius, darbo grupė, technikos komitetas, laikinoji darbo grupė, terminologijos komisija)"
+,,,,OrganisationUnitType,,,id,,,,,,,"Lietuvos standartizacijos departamento struktūriniai subjektai (vidinis skyrius, darbo grupė, technikos komitetas, laikinoji darbo grupė, terminologijos komisija)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,level,integer,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectNotificationStatus,,,,,,,,,,"Nacionalinio standarto projekto notifikavimo CEN  arba CLC statusas (nauja darbo tema, projektas pateiktas viešai apklausai)"
+,,,,ProjectNotificationStatus,,,id,,,,,,,"Nacionalinio standarto projekto notifikavimo CEN  arba CLC statusas (nauja darbo tema, projektas pateiktas viešai apklausai)"
 ,,,,,code,integer,,,,,open,,,
 ,,,,,name_lt,string,,,,,open,,,
 ,,,,,name_en,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectStatus,,,,,,,,,,"Projekto rengimo būsena (aktyvus, atmestas, sujungtas, nepatvirtintas, pabaigtas, išverstas, išskaidytas)"
+,,,,ProjectStatus,,,id,,,,,,,"Projekto rengimo būsena (aktyvus, atmestas, sujungtas, nepatvirtintas, pabaigtas, išverstas, išskaidytas)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectType,,,,,,,,,,"Rengiamo projekto tipas (pagrindinis, keitinys, pataisa, aiškinamasis lapas, pagrindinis+keitinys, pagrindinis+keitinys+pataisa, pagrindinis+pataisa)"
+,,,,ProjectType,,,id,,,,,,,"Rengiamo projekto tipas (pagrindinis, keitinys, pataisa, aiškinamasis lapas, pagrindinis+keitinys, pagrindinis+keitinys+pataisa, pagrindinis+pataisa)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectRelationType,,,,,,,,,,Projekto ryšys su standartu
+,,,,ProjectRelationType,,,id,,,,,,,Projekto ryšys su standartu
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardDocumentType,,,,,,,,,,Standarto dokumento tipas (publikuotas dokumentas)
+,,,,StandardDocumentType,,,id,,,,,,,Standarto dokumento tipas (publikuotas dokumentas)
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardNotificationState,,,,,,,,,,"Nacionalinio standarto projekto notifikavimo CEN arba CLC būsena (keitinys, pataisa, peržiūra)"
+,,,,StandardNotificationState,,,id,,,,,,,"Nacionalinio standarto projekto notifikavimo CEN arba CLC būsena (keitinys, pataisa, peržiūra)"
 ,,,,,name_lt,string,,,,,open,,,
 ,,,,,name_en,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardRelationType,,,,,,,,,,"Standartų tarpusavio ryšiai (pakeičia, keičiantis)"
+,,,,StandardRelationType,,,id,,,,,,,"Standartų tarpusavio ryšiai (pakeičia, keičiantis)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,mirror_name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardStatus,,,,,,,,,,"Standarto leidybos būsenos (publikuotas, nepublikuotas, panaikintas)"
+,,,,StandardStatus,,,id,,,,,,,"Standarto leidybos būsenos (publikuotas, nepublikuotas, panaikintas)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,TextType,,,,,,,,,,Su standartu susijusios tekstinės informacijos tipai
+,,,,TextType,,,id,,,,,,,Su standartu susijusios tekstinės informacijos tipai
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,TypeOfPublication,,,,,,,,,,Standartų ir standartizacijos leidinių bei jų projektų nomenklatūra
+,,,,TypeOfPublication,,,id,,,,,,,Standartų ir standartizacijos leidinių bei jų projektų nomenklatūra
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Directive,,,,,,,,,,Europos Sąjungos direktyvos
+,,,,Directive,,,id,,,,,,,Europos Sąjungos direktyvos
 ,,,,,notation,string,,,,,open,,,
 ,,,,,name_en,string,,,,,open,,,
 ,,,,,name_lt,string,,,,,open,,,
 ,,,,,release_date,datetime,,,,,open,,,
 ,,,,,withdrawal_date,datetime,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ICS,,,,,,,,,,"Tarptautinė standartų klasifikacija (ICS), ją sudaro sritys, grupės ir pogrupiai"
+,,,,ICS,,,id,,,,,,,"Tarptautinė standartų klasifikacija (ICS), ją sudaro sritys, grupės ir pogrupiai"
 ,,,,,parent,integer,,,,,open,,,
 ,,,,,notation,string,,,,,open,,,
 ,,,,,description_lt,string,,,,,open,,,
 ,,,,,description_en,string,,,,,open,,,
 ,,,,,modification_date,datetime,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Organisation,,,,,,,,,,"Tarptautinės standartizacijos institucijos, Europos standartizacijos organizacijos ir nacionalinė standartizacijos institucija"
+,,,,Organisation,,,id,,,,,,,"Tarptautinės standartizacijos institucijos, Europos standartizacijos organizacijos ir nacionalinė standartizacijos institucija"
 ,,,,,acronym,string,,,,,open,,,
 ,,,,,name,string,,,,,open,,,
 ,,,,,modification_date,datetime,,,,,open,,,
 ,,,,,scope,string,,,,,open,,,
 ,,,,,postal_address,string,,,,,open,,,
 ,,,,,visiting_address,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Project,,,,,,,,,,"Nacionalinių, tarptautinių ir Europos standartų projektų duomenys"
+,,,,Project,,,id,,,,,,,"Nacionalinių, tarptautinių ir Europos standartų projektų duomenys"
 ,,,,,status,ref,ProjectStatus,,,,open,,,
 ,,,,,type,ref,ProjectType,,,,open,,,
 ,,,,,responsible_organisation_unit,ref,OrganisationUnit,,,,open,,,
@@ -114,8 +137,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,docs_delete_date,datetime,,,,,open,,,
 ,,,,,approval_protocol_nr,string,,,,,open,,,
 ,,,,,priority,boolean,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectStage,,,,,,,,,,Standarto projekto rengimo etapai
+,,,,ProjectStage,,,id,,,,,,,Standarto projekto rengimo etapai
 ,,,,,project,ref,Project,,,,open,,,
 ,,,,,stage,ref,Stage,,,,open,,,
 ,,,,,int_order,integer,,,,,open,,,
@@ -130,13 +154,15 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,review_date,datetime,,,,,open,,,
 ,,,,,procedure_sequence,integer,,,,,open,,,
 ,,,,,procedure_name,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ICSRemark,,,,,,,,,,"Tarptautinės standartų klasifikacijos (ICS) sričių, grupių ar pogrupių paaiškinimai"
+,,,,ICSRemark,,,id,,,,,,,"Tarptautinės standartų klasifikacijos (ICS) sričių, grupių ar pogrupių paaiškinimai"
 ,,,,,ics,ref,ICS,,,,open,,,
 ,,,,,remark,string,,,,,open,,,
 ,,,,,remark_en,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,LRLawStatement,,,,,,,,,,"Nacionalinių teisės aktų, kuriais į nacionalinę teisę perkelta Europos Sąjungos direktyva arba standartas turi nuokrypą arba standartas turi išskirtinę nuorodą, duomenys (pavadinimas, numeris, priėmimo data, įsigaliojimo data, panaikinimo data, Valstybės žinių numeris, Valstybės žinių data)"
+,,,,LRLawStatement,,,id,,,,,,,"Nacionalinių teisės aktų, kuriais į nacionalinę teisę perkelta Europos Sąjungos direktyva arba standartas turi nuokrypą arba standartas turi išskirtinę nuorodą, duomenys (pavadinimas, numeris, priėmimo data, įsigaliojimo data, panaikinimo data, Valstybės žinių numeris, Valstybės žinių data)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,type,ref,LRLawStatementType,,,,open,,,
 ,,,,,number,string,,,,,open,,,
@@ -149,14 +175,16 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,withdrawal_date,datetime,,,,,open,,,
 ,,,,,register_nr,string,,,,,open,,,
 ,,,,,register_date,datetime,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Stage,,,,,,,,,,"Standarto rengimo etapų duomenys (etapo kodas, pavadinimas, atlikimo terminas)"
+,,,,Stage,,,id,,,,,,,"Standarto rengimo etapų duomenys (etapo kodas, pavadinimas, atlikimo terminas)"
 ,,,,,code,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
 ,,,,,duration,integer,,,,,open,,,
 ,,,,,action_type,ref,ActionType,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ForeignTC,,,,,,,,,,Tarptautinių standartizacijos institucijų ir Europos standartizacijos organizacijų technikos komitetai ir jų darbo grupės
+,,,,ForeignTC,,,id,,,,,,,Tarptautinių standartizacijos institucijų ir Europos standartizacijos organizacijų technikos komitetai ir jų darbo grupės
 ,,,,,organisation,ref,Organisation,,,,open,,,
 ,,,,,status,ref,OrganisationUnitStatus,,,,open,,,
 ,,,,,name,string,,,,,open,,,
@@ -164,8 +192,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,secretary_name,string,,,,,open,,,
 ,,,,,description_lt,string,,,,,open,,,
 ,,,,,membership_status,ref,ForeignTcMembershipStatus,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,OrganisationUnit,,,,,,,,,,Lietuvos standartizacijos departamento technikos komitetai ir laikinosios darbo grupės
+,,,,OrganisationUnit,,,id,,,,,,,Lietuvos standartizacijos departamento technikos komitetai ir laikinosios darbo grupės
 ,,,,,organisation,ref,Organisation,,,,open,,,
 ,,,,,type,ref,OrganisationUnitType,,,,open,,,
 ,,,,,status,ref,OrganisationUnitStatus,,,,open,,,
@@ -176,13 +205,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,status_date,datetime,,,,,open,,,
 ,,,,,address,string,,,,,open,,,
 ,,,,,operational_risk,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelatedProject,,,,,,,,,,"Projekto ryšys su pagrindiniu standartu (keičiantis, keitinys, pataisa)"
+,,,,RelatedProject,,,"parent_project, child_project",,,,,,,"Projekto ryšys su pagrindiniu standartu (keičiantis, keitinys, pataisa)"
 ,,,,,parent_project,ref,Project,,,,open,,,
 ,,,,,child_project,ref,Project,,,,open,,,
 ,,,,,relation_type,ref,ProjectRelationType,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Document,,,,,,,,,,Duomenys apie išleistą standartą
+,,,,Document,,,id,,,,,,,Duomenys apie išleistą standartą
 ,,,,,stage,ref,Stage,,,,open,,,
 ,,,,,original_language,ref,Language,,,,open,,,
 ,,,,,language,ref,Language,,,,open,,,
@@ -192,22 +222,24 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,finished_date,datetime,,,,,open,,,
 ,,,,,number_of_pages,integer,,,,,open,,,
 ,,,,,free_number_of_pages,integer,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,OrganisationUnitRelation,,,,,,,,,,Lietuvos standartizacijos departamento technikos komitetų ryšiai su tarptautinių standartizacijos institucijų  ir Europos standartizacijos organizacijų technikos komitetais
+,,,,OrganisationUnitRelation,,,"organisation_unit, foreign_tc",,,,,,,Lietuvos standartizacijos departamento technikos komitetų ryšiai su tarptautinių standartizacijos institucijų  ir Europos standartizacijos organizacijų technikos komitetais
 ,,,,,organisation_unit,ref,OrganisationUnit,,,,open,,,
 ,,,,,foreign_tc,ref,ForeignTC,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,OrganisationUnitText,,,,,,,,,,"Lietuvos standartizacijos departamento technikos komitetų ir laikinųjų darbo grupių duomenys (pavadinimai, veiklos sritys, veiklos rizikos)"
+,,,,OrganisationUnitText,,,id,,,,,,,"Lietuvos standartizacijos departamento technikos komitetų ir laikinųjų darbo grupių duomenys (pavadinimai, veiklos sritys, veiklos rizikos)"
 ,,,,,text_type,ref,TextType,,,,open,,,
 ,,,,,language,ref,Language,,,,open,,,
 ,,,,,organisation_unit,ref,OrganisationUnit,,,,open,,,
 ,,,,,text,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,ProjectForeignTC,,,,,,,,,,Standarto projektą parengęs tarptautinės standartizacijos institucijos arba Europos standartizacijos organizacijos technikos komitetas
+,,,,ProjectForeignTC,,,"project, foreign_tc",,,,,,,Standarto projektą parengęs tarptautinės standartizacijos institucijos arba Europos standartizacijos organizacijos technikos komitetas
 ,,,,,project,ref,Project,,,,open,,,
 ,,,,,foreign_tc,ref,ForeignTC,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Standard,,,,,,,,,,"Duomenys apie Lietuvos standartus (standarto žymuo, išleidimo data, panaikinimo data, atitikties laipsnis ir kt. duomenys)"
+,,,,Standard,,,id,,,,,,,"Duomenys apie Lietuvos standartus (standarto žymuo, išleidimo data, panaikinimo data, atitikties laipsnis ir kt. duomenys)"
 ,,,,,status,ref,StandardStatus,,,,open,,,
 ,,,,,project,ref,Project,,,,open,,,
 ,,,,,type_of_publication,ref,TypeOfPublication,,,,open,,,
@@ -251,8 +283,9 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,coexistence_end_date,datetime,,,,,open,,,
 ,,,,,have_deviation,boolean,,,,,open,,,
 ,,,,,have_exceptional_reference,boolean,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,DocumentFile,,,,,,,,,,Duomenys apie standarto dokumentų tipus ir jų formatus
+,,,,DocumentFile,,,id,,,,,,,Duomenys apie standarto dokumentų tipus ir jų formatus
 ,,,,,id,integer,,,,,open,,,
 ,,,,,document,ref,Document,,,,open,,,
 ,,,,,name,string,,,,,open,,,
@@ -261,12 +294,12 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,paper_size,string,,,,,open,,,
 ,,,,,last_write_time,datetime,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelatedStandard,,,,,,,,,,"Standarto ryšys su kitais standartais (pakeičia, keitinys, pataisa)"
+,,,,RelatedStandard,,,"parent_standard, child_standard",,,,,,,"Standarto ryšys su kitais standartais (pakeičia, keitinys, pataisa)"
 ,,,,,parent_standard,ref,Standard,,,,open,,,
 ,,,,,child_standard,ref,Standard,,,,open,,,
 ,,,,,standard_relation_type,ref,StandardRelationType,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardDirective,,,,,,,,,,Standarto ryšys su Europos Sąjungos direktyvomis
+,,,,StandardDirective,,,"directive, standard",,,,,,,Standarto ryšys su Europos Sąjungos direktyvomis
 ,,,,,directive,ref,Directive,,,,open,,,
 ,,,,,standard,ref,Standard,,,,open,,,
 ,,,,,oficial_journal,string,,,,,open,,,
@@ -278,21 +311,22 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,oj_publication_date,datetime,,,,,open,,,
 ,,,,,coexistence_end_date,datetime,,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardDocument,,,,,,,,,,Duomenys apie standarto dokumentus ir jų tipus 
+,,,,StandardDocument,,,"standard, document",,,,,,,Duomenys apie standarto dokumentus ir jų tipus 
 ,,,,,standard,ref,Standard,,,,open,,,
 ,,,,,document,ref,Document,,,,open,,,
 ,,,,,document_type,ref,StandardDocumentType,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardICS,,,,,,,,,,"Standartui priskirtos tarptautinės standartų klasifikacijos sritys, grupės ir pogrupiai"
+,,,,StandardICS,,,"standard, ics",,,,,,,"Standartui priskirtos tarptautinės standartų klasifikacijos sritys, grupės ir pogrupiai"
 ,,,,,standard,ref,Standard,,,,open,,,
 ,,,,,ics,ref,ICS,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,StandardLRLawStatement,,,,,,,,,,Standartų nuorodinių žymenų ryšys su nacionaliniais teisės aktais
+,,,,StandardLRLawStatement,,,"standard, lr_law_statement",,,,,,,Standartų nuorodinių žymenų ryšys su nacionaliniais teisės aktais
 ,,,,,standard,ref,Standard,,,,open,,,
 ,,,,,lr_law_statement,ref,LRLawStatement,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Text,,,,,,,,,,"Su standartu susijusi tekstinė informacija (standarto pavadinimas (antraštė), aprašymas (abstract), taikymo sritis (scope) lietuvių ir anglų kalbomis, pastaba, kuri pateikia papildomą informaciją susijusią standartu)"
+,,,,Text,,,id,,,,,,,"Su standartu susijusi tekstinė informacija (standarto pavadinimas (antraštė), aprašymas (abstract), taikymo sritis (scope) lietuvių ir anglų kalbomis, pastaba, kuri pateikia papildomą informaciją susijusią standartu)"
 ,,,,,type,ref,TextType,,,,open,,,
 ,,,,,language,ref,Language,,,,open,,,
 ,,,,,standard,ref,Standard,,,,open,,,
 ,,,,,text,string,,,,,open,,,
+,,,,,id,integer,,,,,open,,,
