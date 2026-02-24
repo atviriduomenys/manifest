@@ -1,49 +1,55 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/lst/terms,,,,,,,,,,,,,
+,,sql,,,,sql,,mssql+pymssql://xxxxx,,,,,,
 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,Status,,,,,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
+,,,,Status,,,id,Terminu_statusai,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Language,,,,,,,,,,Kalbos ir jų dviraidžiai kodai
+,,,,Language,,,id,clLanguage,,,,,,Kalbos ir jų dviraidžiai kodai
 ,,,,,code,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
+,,,,,id,integer,,LanguageID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelationType,,,,,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
+,,,,RelationType,,,id,clTermRelationType,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,bidirectional,boolean,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Domain,,,,,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
+,,,,Domain,,,id,clTermSritys,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
 ,,,,,name,string,,,,,open,,,
 ,,,,,path,string,,,,,open,,,
+,,,,,id,integer,,TERM_SRITIS_ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelatedTerm,,,,,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
-,,,,,term,ref,Term,,,,open,,,
-,,,,,related_term,ref,Term,,,,open,,,
-,,,,,type,ref,RelationType,,,,open,,,
+,,,,RelatedTerm,,,"term, related_term",RelatedTerms,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
+,,,,,term,ref,Term,TermID,,,open,,,
+,,,,,related_term,ref,Term,RelatedTermID,,,open,,,
+,,,,,type,ref,RelationType,TypeID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Attachment,,,,,,,,,,"Grafiniai priedai (JPG formatu) – paveikslai, formulės"
-,,,,,name,string,,,,,open,,,
-,,,,,file,file,,,,,open,,,
-,,,,,term,ref,Term,,,,open,,,
+,,,,Attachment,,,id,TermAttachments,,,,,,"Grafiniai priedai (JPG formatu) – paveikslai, formulės"
+,,,,,name,string,,Name,,,open,,,
+,,,,,file,image,,,"file(name: file_name, content: file_data)",,open,,,
+,,,,,term,ref,Term,TermID,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,TermDomain,,,,,,,,,,Taikymo sritis (standartizacija ir metrologija)
-,,,,,term,ref,Term,,,,open,,,
-,,,,,domain,ref,Domain,,,,open,,,
+,,,,TermDomain,,,"term, domain",Terminu_Sritys,,,,,,Taikymo sritis (standartizacija ir metrologija)
+,,,,,term,ref,TermID,,,,open,,,
+,,,,,domain,ref,Domain,SritisID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Translation,,,,,,,,,,Termino atitikmenys kitomis kalbomis
-,,,,,translation,string,,,,,open,,,
-,,,,,language,ref,Language,,,,open,,,
-,,,,,term,ref,Term,,,,open,,,
+,,,,Translation,,,id,Translations,,,,,,Termino atitikmenys kitomis kalbomis
+,,,,,translation,string,,Terminas,,,open,,,
+,,,,,language,ref,Language,LanguageID,,,open,,,
+,,,,,term,ref,Term,TerminoID,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,Term,,,,,,,,,,"Termino straipsnis (tinkamumo kategorija, sukirčiuotas terminas, apibrėžtis, pastabos, simbolis, straipsnio nr. standarte, pagrindinis žodis)"
-,,,,,created,datetime,,,,,open,,,
-,,,,,updated,datetime,,,,,open,,,
-,,,,,status,ref,Status,,,,open,,,
-,,,,,term_acc,string,,,,,open,,,
-,,,,,abbreviation,string,,,,,open,,,
-,,,,,article_no,string,,,,,open,,,
-,,,,,symbol,string,,,,,open,,,
-,,,,,text,string,,,,,open,,,
-,,,,,note,string,,,,,open,,,
-,,,,,keyword,string,,,,,open,,,
+,,,,,created,datetime,,Sukurtas,,,open,,,
+,,,,,updated,datetime,,Taisytas,,,open,,,
+,,,,,status,ref,Status,Statusas,,,open,,,
+,,,,,abbreviation,string,,Santrumpa,,,open,,,
+,,,,,article_no,string,,StraipsnioNr,,,open,,,
+,,,,,symbol,string,,Simbolis,,,open,,,
+,,,,,text,string,,Tekstas,,,open,,,
+,,,,,note,string,,Pastabos,,,open,,,
+,,,,,keyword,string,,Keyword,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
