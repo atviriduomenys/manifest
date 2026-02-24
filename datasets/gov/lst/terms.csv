@@ -2,41 +2,47 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lst/terms,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,Status,,,,,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
+,,,,Status,,,id,,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
 ,,,,,name,string,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Language,,,,,,,,,,Kalbos ir jų dviraidžiai kodai
+,,,,Language,,,id,,,,,,,Kalbos ir jų dviraidžiai kodai
 ,,,,,code,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelationType,,,,,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
+,,,,RelationType,,,id,,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,bidirectional,boolean,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Domain,,,,,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
+,,,,Domain,,,id,,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
 ,,,,,name,string,,,,,open,,,
 ,,,,,path,string,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,RelatedTerm,,,,,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
+,,,,RelatedTerm,,,"term, related_term",,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
 ,,,,,term,ref,Term,,,,open,,,
 ,,,,,related_term,ref,Term,,,,open,,,
 ,,,,,type,ref,RelationType,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Attachment,,,,,,,,,,"Grafiniai priedai (JPG formatu) – paveikslai, formulės"
+,,,,Attachment,,,id,,,,,,,"Grafiniai priedai (JPG formatu) – paveikslai, formulės"
 ,,,,,name,string,,,,,open,,,
 ,,,,,file,file,,,,,open,,,
 ,,,,,term,ref,Term,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,TermDomain,,,,,,,,,,Taikymo sritis (standartizacija ir metrologija)
+,,,,TermDomain,,,"term, domain",,,,,,,Taikymo sritis (standartizacija ir metrologija)
 ,,,,,term,ref,Term,,,,open,,,
 ,,,,,domain,ref,Domain,,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Translation,,,,,,,,,,Termino atitikmenys kitomis kalbomis
+,,,,Translation,,,id,,,,,,,Termino atitikmenys kitomis kalbomis
 ,,,,,translation,string,,,,,open,,,
 ,,,,,language,ref,Language,,,,open,,,
 ,,,,,term,ref,Term,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
 ,,,,,,,,,,,,,,
-,,,,Term,,,,,,,,,,"Termino straipsnis (tinkamumo kategorija, sukirčiuotas terminas, apibrėžtis, pastabos, simbolis, straipsnio nr. standarte, pagrindinis žodis)"
+,,,,Term,,,id,,,,,,,"Termino straipsnis (tinkamumo kategorija, sukirčiuotas terminas, apibrėžtis, pastabos, simbolis, straipsnio nr. standarte, pagrindinis žodis)"
 ,,,,,created,datetime,,,,,open,,,
 ,,,,,updated,datetime,,,,,open,,,
 ,,,,,status,ref,Status,,,,open,,,
@@ -47,3 +53,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,text,string,,,,,open,,,
 ,,,,,note,string,,,,,open,,,
 ,,,,,keyword,string,,,,,open,,,
+,,,,,id,integer,,ID,,,open,,,
