@@ -4,22 +4,22 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,,,,,,
 ,,,,Status,,,id,,,,,,,"Tinkamumo kategorija (teiktinas, neteiktinas)"
 ,,,,,name,string,,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,Language,,,id,,,,,,,Kalbos ir jų dviraidžiai kodai
 ,,,,,code,string,,,,,open,,,
 ,,,,,description,string,,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,RelationType,,,id,,,,,,,"Sąsajos tipas (sinonimas; susijęs, pakeistas, neteiktinas, pasenęs)"
 ,,,,,name,string,,,,,open,,,
 ,,,,,bidirectional,boolean,,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,Domain,,,id,,,,,,,Sritis pagal Tarptautinę standartų klasifikaciją
 ,,,,,name,string,,,,,open,,,
 ,,,,,path,string,,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,RelatedTerm,,,"term, related_term",,,,,,,Su terminu susieti kiti terminai ir (arba) sinonimai
 ,,,,,term,ref,Term,,,,open,,,
@@ -30,7 +30,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,name,string,,,,,open,,,
 ,,,,,file,file,,,,,open,,,
 ,,,,,term,ref,Term,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,TermDomain,,,"term, domain",,,,,,,Taikymo sritis (standartizacija ir metrologija)
 ,,,,,term,ref,Term,,,,open,,,
@@ -40,7 +40,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,translation,string,,,,,open,,,
 ,,,,,language,ref,Language,,,,open,,,
 ,,,,,term,ref,Term,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
 ,,,,,,,,,,,,,,
 ,,,,Term,,,id,,,,,,,"Termino straipsnis (tinkamumo kategorija, sukirčiuotas terminas, apibrėžtis, pastabos, simbolis, straipsnio nr. standarte, pagrindinis žodis)"
 ,,,,,created,datetime,,,,,open,,,
@@ -53,4 +53,4 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,text,string,,,,,open,,,
 ,,,,,note,string,,,,,open,,,
 ,,,,,keyword,string,,,,,open,,,
-,,,,,id,integer,,ID,,,open,,,
+,,,,,id,integer,,,,,open,,,
