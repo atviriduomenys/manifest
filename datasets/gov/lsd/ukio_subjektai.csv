@@ -209,7 +209,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,m_n,integer,,,,4,open,,"Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: profesinė, mokslinė ir techninė veikla, administracinė ir aptarnavimo veikla",
 ,,,,,shape_area,number,,,,4,open,,"gardelės plotas",
 ,,,,,,,,,,,,,,
-,,,,UkioSub5Km2019,,,,ukio_sub_5km_2019,,2,,,Ūkio subjektų geoerdviniai duomenys 2019 m. 5x5km gardelėse.,
+,,,,UkioSub5Km2019,,,,ukio_sub_5km_2019,,4,,,Ūkio subjektų geoerdviniai duomenys 2019 m. 5x5km gardelėse.,
 ,,,,,fid,integer,,,,4,open,,"įdentifikacinis numeris",
 ,,,,,a,integer,,,,4,open,,"Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: žemės ūkis, miškininkystė ir žuvininkystė",
 ,,,,,g_h_i,integer,,,,4,open,,"Veikiančių ūkio subjektų skaičius, pagal ekonominės veiklos rūšis: didmeninė ir mažmeninė prekyba, transportas ir saugojimas, apgyvendinimo ir maitinimo paslaugų veikla",
