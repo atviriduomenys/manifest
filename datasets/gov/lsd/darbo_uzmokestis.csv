@@ -19,7 +19,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,im_dydzio_kodas,integer,,,,4,open,,"Įmonės, kuriai priklauso vietos vienetas, dydžio kodas",
 ,,,,,,comment,property,,"update(property: ""im_dydis.kodas"")",4,open,spinta:216,,
 ,,,,,,enum,,,0,,,," 1-49  darbuotojų",
-
 ,,,,,,,,,1,,,," 50-249  darbuotojų",
 ,,,,,,,,,2,,,,"250 ir daugiau  darbuotojų",
 ,,,,,im_dydis,string,,,,4,open,,"Įmonės, kuriai priklauso vietos vienetas, dydis",
