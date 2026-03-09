@@ -21,4 +21,3 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,iv_gatve,string,,,,4,open,,Įvykio gatvė,
 ,,,,,x_koord_lks,integer,,,,4,open,,Įvykio x koordinatė pagal LKS-94 koordinačių sistemą,
 ,,,,,y_koord_lks,integer,,,,4,open,,Įvykio y koordinatė pagal LKS-94 koordinačių sistemą,
-,,,,,koord_patikimos,boolean,,,,4,open,,"Požymis, ar koordinatės patikimos",
