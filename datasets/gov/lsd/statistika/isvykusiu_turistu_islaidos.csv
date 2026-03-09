@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R706_M4091003_2,,,vda_id,,,4,,,Išvykusių turistų išlaidos (pagal kelionės tikslą ir apgyvendinimo trukmė),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių tikslą ir apgyvendinimo trukmė. Pateikta per kelionės tikslo, apgyvendinimo trukmės dimensijas.
+,,,,S8R706M40910032,,,vda_id,,,4,,,Išvykusių turistų išlaidos (pagal kelionės tikslą ir apgyvendinimo trukmė),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių tikslą ir apgyvendinimo trukmė. Pateikta per kelionės tikslo, apgyvendinimo trukmės dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -30,7 +30,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R706_M4091101_3,,,vda_id,,,4,,,Išvykusių turistų išlaidos metiniai),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas.
+,,,,S8R706M40911013,,,vda_id,,,4,,,Išvykusių turistų išlaidos metiniai),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas.
 
 Naudojami klasifikatoriai: 
 
@@ -53,7 +53,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R706_M4091106,,,vda_id,,,4,,,Išvykusių turistų išlaidos,"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
+,,,,S8R706M4091106,,,vda_id,,,4,,,Išvykusių turistų išlaidos,"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -78,7 +78,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R706_M4091001_3,,,vda_id,,,4,,,Išvykusių turistų išlaidos (pagal valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, kelionių tikslus ir kelionių išlaidas. Pateikta per tikslo valstybės dimensijas.
+,,,,S8R706M40910013,,,vda_id,,,4,,,Išvykusių turistų išlaidos (pagal valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, kelionių tikslus ir kelionių išlaidas. Pateikta per tikslo valstybės dimensijas.
 
 Naudojami klasifikatoriai: 
 

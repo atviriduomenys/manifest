@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S3R696_M3010701_2,,,vda_id,,,4,,,Kūdikių mirtingumo rodiklis,"Pateikta statistinė informacija apie Lietuvos Respublikos negyvų gimusių kūdikių skaičių pagal gyvenamąją vietovę, lytį, laikotarpį ir išnešiojimo amžių. Tyrimas apima Lietuvos Respublikoje negyvus gimusius kūdikius, kurių motinos yra nuolatinės Lietuvos Respublikos gyventojos. Statistinio stebėjimo vienetas - negyvas gimęs kūdikis. Laiko aprėptis – nuo 2000 m.
+,,,,S3R696M30107012,,,vda_id,,,4,,,Kūdikių mirtingumo rodiklis,"Pateikta statistinė informacija apie Lietuvos Respublikos negyvų gimusių kūdikių skaičių pagal gyvenamąją vietovę, lytį, laikotarpį ir išnešiojimo amžių. Tyrimas apima Lietuvos Respublikoje negyvus gimusius kūdikius, kurių motinos yra nuolatinės Lietuvos Respublikos gyventojos. Statistinio stebėjimo vienetas - negyvas gimęs kūdikis. Laiko aprėptis – nuo 2000 m.
 Tyrime naudojami klasifikatoriai:
 Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius)
 Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version)

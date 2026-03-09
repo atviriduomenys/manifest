@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R052_M8010602,,,vda_id,,,4,,,Medžiagų vidaus vartojimas,"Medžiagų vidaus vartojimas (bendras, metinis).
+,,,,S1R052M8010602,,,vda_id,,,4,,,Medžiagų vidaus vartojimas,"Medžiagų vidaus vartojimas (bendras, metinis).
 Medžiagų vidaus vartojimas (MVV) parodo vienetų rezidentų bendrą suvartojamų medžiagų kiekį.
 Geografinė aprėptis: Visa šalies ekonominė teritorija
 Laiko aprėptis: Nuo 2008 m."
