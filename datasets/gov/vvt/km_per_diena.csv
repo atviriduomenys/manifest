@@ -5,7 +5,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,KmPerDiena,,id,,,,4,,,Per pamainą nuvažiuoti kilometrai,Vilniaus viešojo transporto vairuotojų per pamainą nuvažiuoti kilometrai
-,,,,,id,string,,,,4,open,,Unikaus identifikatorius,
+,,,,,id,string,,,,4,open,,Unikalus identifikatorius,
 ,,,,,vairuotojo_id,string,,,,4,open,,Vairuotojo identifikatorius,
 ,,,,,pamainos_numeris,string,,,,4,open,,Darbo grafiko identifikatorius,
 ,,,,,,enum,,,"""1D""",,,,"""1D"" - pirma pamaina",
