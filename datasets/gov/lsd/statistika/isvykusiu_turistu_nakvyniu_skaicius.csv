@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091006,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai, ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės dimensiją.
+,,,,S8R708M4091006,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai, ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės dimensiją.
 
 Naudojami klasifikatoriai: 
 
@@ -28,7 +28,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091102,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per lyties, kelionės tikslo dimensijas.
+,,,,S8R708M4091102,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per lyties, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -55,7 +55,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091103,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir amžių),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per amžiaus, kelionės tikslo dimensijas.
+,,,,S8R708M4091103,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir amžių),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per amžiaus, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -82,7 +82,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091104,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal apgyvendinimo įstaigos tipą ir kelionės tikslą),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per apgyvendinimo įstaigos, kelionės tikslo dimensijas.
+,,,,S8R708M4091104,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal apgyvendinimo įstaigos tipą ir kelionės tikslą),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per apgyvendinimo įstaigos, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -109,7 +109,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091105,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės, kelionės tikslo dimensijas.
+,,,,S8R708M4091105,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir valstybę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių. Pateikta per tikslo valstybės, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -136,7 +136,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091001_1,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+,,,,S8R708M40910011,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (ketvirtiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
 
 Naudojami klasifikatoriai: 
 
@@ -159,7 +159,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091101_1,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+,,,,S8R708M40911011,,,vda_id,,,4,,,"Išvykusių turistų nakvynių skaičius (metiniai)","Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
 
 Naudojami klasifikatoriai: 
 
@@ -182,7 +182,7 @@ Laiko aprėptis: nuo 2005m., metiniai."
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R708_M4091003_1,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir apgyvendinimo trukmę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
+,,,,S8R708M40910031,,,vda_id,,,4,,,Išvykusių turistų nakvynių skaičius (pagal kelionės tikslą ir apgyvendinimo trukmę),"Duomenų rinkinys apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį nakvynių skaičių.
 Pateikta per apgyvendinimo trukmę kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 

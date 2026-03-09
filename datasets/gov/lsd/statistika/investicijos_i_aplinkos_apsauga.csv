@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R135_M8010808,,,,,,4,,,Investicijos į aplinkos apsaugą,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir investicijų į aplinkos apsaugą rūšies dimensijas.
+,,,,S1R135M8010808,,,,,,4,,,Investicijos į aplinkos apsaugą,"Duomenų rinkinys apie aplinkos apsaugos išlaidų sąskaitose pateikiamus duomenis apie išlaidas aplinkos apsaugai, t.y. ekonominius išteklius, kuriuos šalies ūkio subjektai skiria aplinkos apsaugai. Pateikta per aplinkosaugos veiklos rūšies ir investicijų į aplinkos apsaugą rūšies dimensijas.
 
 Naudojami klasifikatoriai: Aplinkos apsaugos veiklos ir išlaidų klasifikatorius  (CEPA 2000).
 

@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R709_M4091001_1,,,,,,4,,,"Išvykusių turistų skaičius (ketvirtiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
+,,,,S8R709M40910011,,,,,,4,,,"Išvykusių turistų skaičius (ketvirtiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -24,7 +24,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai ir metiniai."
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R709_M4091101_1,,,,,,4,,,"Išvykusių turistų skaičius (metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
+,,,,S8R709M40911011,,,,,,4,,,"Išvykusių turistų skaičius (metiniai)","Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per tikslo valstybės, lyties, kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -45,7 +45,7 @@ Laiko aprėptis: nuo 2005m., ketvirtiniai ir metiniai."
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R709_M4091002,,,,,,4,,,Išvykusių turistų skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per lyties ir kelionės tikslo dimensijas.
+,,,,S8R709M4091002,,,,,,4,,,Išvykusių turistų skaičius (pagal kelionės tikslą ir lytį),"Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per lyties ir kelionės tikslo dimensijas.
 
 Naudojami klasifikatoriai: 
 
@@ -70,7 +70,7 @@ Laiko aprėptis: nuo 2005m."
 ,,,,,verte,number,,,,4,open,,"Išvykusių turistų skaičius, tūkst.",
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R709_M4091006,,,,,,4,,,Išvykusių turistų skaičius (pagal valstybę),"Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per valstybės dimensijas.
+,,,,S8R709M4091006,,,,,,4,,,Išvykusių turistų skaičius (pagal valstybę),"Duomenų rinkinys apie apie Lietuvos nuolatinių gyventojų (toliau – gyventojai), keliaujančių į užsienį, skaičių, jų kelionių, nakvynių skaičių ir tikslus, naudojamą pagrindinę transporto priemonės rūšį ir apgyvendinimo tipą kelionėje bei kelionių išlaidas. Pateikta per valstybės dimensijas.
 
 Naudojami klasifikatoriai: 
 

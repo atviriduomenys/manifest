@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R051_M8010601,,,vda_id,,,4,,,Medžiagų srautų sąskaitos,"Medžiagų srautų sąskaitos pagal žaliavų ir medžiagų rūšis.
+,,,,S1R051M8010601,,,vda_id,,,4,,,Medžiagų srautų sąskaitos,"Medžiagų srautų sąskaitos pagal žaliavų ir medžiagų rūšis.
 Šalies ūkio medžiagų srautų sąskaitų (ŠŪ-MSS) sudarymo tikslas yra parengti su kitomis Europos Sąjungos (ES) valstybėmis narėmis palyginamus rodiklius. ŠŪ-MSS tiesiogiai prisideda prie ES politikos prioritetų, susijusių su Žaliojo augimo strategija ir efektyvaus išteklių naudojimo iniciatyva, ir, pagal suderintą su JT nacionalinių sąskaitų sistemą (NSS) ir jos Europos versiją (ESS), teikia informaciją apie medžiagų srautus. ŠŪMSS tinka integruotos aplinkos ir ekonomikos sąveikos analizei ir modeliavimui.
 Medžiagų vidaus vartojimas (MVV) parodo vienetų rezidentų bendrą suvartojamų medžiagų kiekį.
 Vidaus medžiagų gavyba (VMG) – metinis kietųjų, skystųjų ir dujinių medžiagų (išskyrus vandenį) vienetų rezidentų gautų iš gamtinės aplinkos ir skirtų naudoti ekonominėje veikloje, kiekis.

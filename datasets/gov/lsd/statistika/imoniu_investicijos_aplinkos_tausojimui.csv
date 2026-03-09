@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S1R022_M8010502_2,,,,,,4,,,Įmonių investicijos aplinkos tausojimui,"Duomenų rinkinys apie įmonių išlaidas aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos ir investicijų krypties dimensijas.
+,,,,S1R022M80105022,,,,,,4,,,Įmonių investicijos aplinkos tausojimui,"Duomenų rinkinys apie įmonių išlaidas aplinkos tausojimui. Pateikta per ekonominės veiklos rūšies, aplinkos apsaugos veiklos ir investicijų krypties dimensijas.
 
 Naudojami klasifikatoriai: 
 Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.);

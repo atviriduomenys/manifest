@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,S8R866_M4090306_1,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, metiniai)","Pateikiami metiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal administracinę teritoriją ir apgyvendinimo tipus.
+,,,,S8R866M40903061,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, metiniai)","Pateikiami metiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal administracinę teritoriją ir apgyvendinimo tipus.
 Naudojami klasifikatoriai
 Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
 Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
@@ -52,7 +52,7 @@ Nuo 2012 m. "
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R866_M4090205_1,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, ketvirtiniai)","Pateikiami ketvirtiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą.
+,,,,S8R866M40902051,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą, ketvirtiniai)","Pateikiami ketvirtiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą, administracinę teritoriją ir užimtumą.
 Naudojami klasifikatoriai:
 Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
 Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
@@ -101,7 +101,7 @@ Nuo 2012 m. "
 ,,,,,verte,number,,,,4,open,,Skaitinė vertė,
 ,,,,,atnaujinta,date,D,,,4,open,,Paskutinis atnaujinimas,
 ,,,,,,,,,,,,,,
-,,,,S8R866_M4090104_3,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą ir užimtumą, mėnesiniai)","Pateikiami mėnesiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą ir užimtumą.
+,,,,S8R866M40901043,,,vda_id,,,4,,,"Viešbučių ir motelių numerių ir vietų užimtumas (pagal apgyvendinimo įstaigos tipą ir užimtumą, mėnesiniai)","Pateikiami mėnesiniai duomenys apie apgyvendinimo paslaugų tiekėjų užimtų vietų arba numerių skaičius pagal apgyvendinimo įstaigos tipą ir užimtumą.
 Naudojami klasifikatoriai:
 Ekonominės veiklos rūšių klasifikatorius (EVRK 2 red.) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=50&tab=versionosp.stat.gov.lt/605);
 Pasaulio šalių ir teritorijų klasifikatorius (https://osp.stat.gov.lt/lt/web/guest/pasaulio-saliu-ir-teritoriju-klasifikatorius); Lietuvos Respublikos administracinių vienetų ir gyvenamųjų vietovių klasifikatorius (LR AVGVK 2018) (https://osp.stat.gov.lt/klasifikatoriai?portletFormName=FPKL500&classifier-version=861&tab=version); Verslo liudijimų klasifikatorius (https://www.vmi.lt/evmi/koki%C4%85-veikl%C4%85-galima-vykdyti-%C4%AFsigijus-verslo-liudijim%C4%85-); Teritorinių statistinių vienetų klasifikatorius (NUTS) (https://osp.stat.gov.lt/lt/web/guest/teritoriniu-statistiniu-vienetu-klasifikatorius-nuts)
