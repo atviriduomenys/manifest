@@ -103,7 +103,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,zemelapio_nuoroda,string,,,,4,open,,Nuorodą į žemėlapį,
 ,,,,,legendos_nuoroda,string,,,,4,open,,Nuoroda į žemėlapio legendą,
 ,,,,,,,,,,,,,,
-,,,,ŽemelapisRysys,,,vda_prime_key,,,4,,,Vilniaus miesto žemėlapių nuorodos į istorines gatves,"""Duomenys iš „ID Vilnius“ apie žemėlapių ir istorinių gatvių ryšius. Viena lentelės eilutė nurodo vieną ryšį tarp žemėlapio (istorinio šaltinio) ir istorinės gatvės, referuojančios į tą žemėlapį. Eilutės informaciją sudaro žemėlapio ir istorinės gatvės identifikaciniai numeriai."""
+,,,,ZemelapisRysys,,,vda_prime_key,,,4,,,Vilniaus miesto žemėlapių nuorodos į istorines gatves,"""Duomenys iš „ID Vilnius“ apie žemėlapių ir istorinių gatvių ryšius. Viena lentelės eilutė nurodo vieną ryšį tarp žemėlapio (istorinio šaltinio) ir istorinės gatvės, referuojančios į tą žemėlapį. Eilutės informaciją sudaro žemėlapio ir istorinės gatvės identifikaciniai numeriai."""
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius (pirminis raktas) sudarytas iš stulpelių zemelapio_id ir istorine_gatve_id"""
 ,,,,,zemelapio_id,string,,,,4,open,,Žemėlapio identifikacinis numeris,
 ,,,,,istorine_gatve_id,string,,,,4,open,,Istorinės gatvės identifikacinis numeris,
