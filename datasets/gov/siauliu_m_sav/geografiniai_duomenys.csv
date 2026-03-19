@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/siauliu_m_sav/,,,,,ns,,,,,,,Šiaulių miesto savivaldybė,
+,datasets/gov/siauliu_m_sav,,,,,ns,,,,,,,Šiaulių miesto savivaldybė,
 ,datasets/gov/siauliu_m_sav/geografiniai_duomenys,,,,,,,,,,,,Šiaulių miesto savivaldybės geografiniai duomenys,"Geografinėje informacinėje sistemoje ArcGis kaupiami geografiniai Šiaulių miesto savivaldybės duomenys. Rinkinyje pateikiami šiuo metu aktualūs seniūnaitijų ribų bei sporto vietų duomenys. Tarp sporto vietų duomenų pateikiami ir atsakingų asmenų kontaktai, kurių pagalba galima rezervuoti aikštę, salę ir kt.
 Duomenų teikėjas – Šiaulių miesto savivaldybės administracija.
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
