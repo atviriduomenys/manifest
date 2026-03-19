@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/aad/,,,,,ns,,,,,,,Aplinkos apsaugos departamentas prie Aplinkos ministerijos,
+,datasets/gov/aad,,,,,ns,,,,,,,Aplinkos apsaugos departamentas prie Aplinkos ministerijos,
 ,datasets/gov/aad/nuoteku_irenginiai,,,,,,,,,,,,Nuotekų valymo įrenginiai bei jų kokacijos,"Duomenys pateikiami iš aplinkos apsaugos departamento nuotekų tvarkymo informacinės sistemos. Pateikiamos dvi lentelės kuriuos jungiasi per „aglomeracijos_id“  stulpelį. Vienoje lentelėje pateikiami visi užregistruoti nuotekų įrenginiai, o kitoje preliminarios nuotekų tvarkymo sistemų aglomeracijų ribos. Registruojant nuotekų įrenginį (jei vartotojas nurodė), pateikiama tokia informacija kaip įrenginio tipas, gamintojas, modelis, koordinatės ir t.t. Įrenginių lentelėje viena eilutė atitinka vieną įrenginį, aglomeracijų lentelėje – vieną aglomeraciją. Duomenų aprėptis – visa Lietuva.
 Duomenų teikėjas: Aplinkos apsaugos departamentas prie Aplinkos ministerijos
 Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
