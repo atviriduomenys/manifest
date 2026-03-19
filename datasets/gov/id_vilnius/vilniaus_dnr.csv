@@ -45,13 +45,13 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,var_pavar_len,string,,,,4,open,,Vardas ir pavardė lenkų kalba,
 ,,,,,var_pavar_ru,string,,,,4,open,,Vardas ir pavardė rusų kalba,
 ,,,,,,,,,,,,,,
-,,,,AsmenybėsGatvė,,,vda_prime_key,,,4,,,Gatvės pavadintos asmenybių vardais,"""Duomenys iš „ID Vilnius“ apie gatves, kurioms suteikti asmenybių vardų pavadinimai. Viena lentelės eilutė atitinka vieną gatvę su jai priskirta asmenybe. Eilutės informaciją sudaro unikalios eilutės ir asmenybės identifikaciniai numeriai, gatvės pavadinimas ir geometrinis gatvės liniją atvaizduojantis stulpelis."""
+,,,,AsmenybeGatve,,,vda_prime_key,,,4,,,Gatvės pavadintos asmenybių vardais,"""Duomenys iš „ID Vilnius“ apie gatves, kurioms suteikti asmenybių vardų pavadinimai. Viena lentelės eilutė atitinka vieną gatvę su jai priskirta asmenybe. Eilutės informaciją sudaro unikalios eilutės ir asmenybės identifikaciniai numeriai, gatvės pavadinimas ir geometrinis gatvės liniją atvaizduojantis stulpelis."""
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,
 ,,,,,asmenybes_id,string,,,,4,open,,Asmens susijusio su gatve identifikacinis numeris,
 ,,,,,pav,string,,,,4,open,,Gatvės pavadinimas,
 ,,,,,geometrija,geometry(4326),,,,4,open,,Gatvės koordinatės WGS-84 koordinačių sistemoje,
 ,,,,,,,,,,,,,,
-,,,,AsmenybėsRyšys,,,rysio_id,,,4,,,Vilniuje įamžintų asmenybių tarpusavio ryšiai,"""Duomenys iš „ID Vilnius“ apie Vilniuje įamžintų asmenybių tarpusavio ryšius. Vienoje lentelės eilutėje nurodomas vienas ryšys tarp dviejų Vilniuje įamžintų asmenybių. Eilutės informaciją sudaro ryšio, asmenybės ir susijusios asmenybės identifikaciniai numeriai iri ryšio tipas. Jei nėra nurodytas susijusios asmenybės identifikacinis numeris, tuomet paskutiniame stulpelyje įrašomas susijusios asmenybės vardas ir pavardė."""
+,,,,AsmenybeRysys,,,rysio_id,,,4,,,Vilniuje įamžintų asmenybių tarpusavio ryšiai,"""Duomenys iš „ID Vilnius“ apie Vilniuje įamžintų asmenybių tarpusavio ryšius. Vienoje lentelės eilutėje nurodomas vienas ryšys tarp dviejų Vilniuje įamžintų asmenybių. Eilutės informaciją sudaro ryšio, asmenybės ir susijusios asmenybės identifikaciniai numeriai iri ryšio tipas. Jei nėra nurodytas susijusios asmenybės identifikacinis numeris, tuomet paskutiniame stulpelyje įrašomas susijusios asmenybės vardas ir pavardė."""
 ,,,,,rysio_id,string,,,,4,open,,Asmenybių ryšio identifikacinis numeris (pirminis raktas),
 ,,,,,asmenybes_id,string,,,,4,open,,Asmenybės identifikacinis numeris,
 ,,,,,susijusios_asmenybes_id,string,,,,4,open,,Susijusios asmenybės identifikacinis numeris,
@@ -75,7 +75,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,obj_pasal,boolean,,,,4,open,,Objektas pašalintas,"""Požymis, nurodantis, ar skulptūra arba atminimo objektas yra pašalintas"""
 ,,,,,obj_pasal_data,date,Y,,,4,open,,Skulptūros arba atminimo objekto pašalinimo data,
 ,,,,,,,,,,,,,,
-,,,,Gatvė,,,vda_prime_key,,,4,,,Vilniaus gatvės ir istoriniai jų pavadinimai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto gatves ir kai kurių gatvių istorinius pavadinimus. Viena lentelės eilutė yra dabartinė gatvė ir jos istorinis pavadinimas. Jei gatvė neturi informacijos apie istorinį pavadinimą, tuomet nurodomas tik dabartinis gatvės pavadinimas su jos koordinatėmis. Eilutės informaciją sudaro dabartinės gatvės identifikacinis numeris, klasė, poklasis, pavadinimas, pavadinimo reikšmė ir gatvės koordinačių linija, taip pat istorinės gatvės identifikacinis numeris, pavadinimas, žemėlapio, kuriame gatvė nustatyta,sudarymo metai ir istorinės gatvės lokacija koordinačių sistemoje."""
+,,,,Gatve,,,vda_prime_key,,,4,,,Vilniaus gatvės ir istoriniai jų pavadinimai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto gatves ir kai kurių gatvių istorinius pavadinimus. Viena lentelės eilutė yra dabartinė gatvė ir jos istorinis pavadinimas. Jei gatvė neturi informacijos apie istorinį pavadinimą, tuomet nurodomas tik dabartinis gatvės pavadinimas su jos koordinatėmis. Eilutės informaciją sudaro dabartinės gatvės identifikacinis numeris, klasė, poklasis, pavadinimas, pavadinimo reikšmė ir gatvės koordinačių linija, taip pat istorinės gatvės identifikacinis numeris, pavadinimas, žemėlapio, kuriame gatvė nustatyta,sudarymo metai ir istorinės gatvės lokacija koordinačių sistemoje."""
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius (pirminis raktas) sudarytas iš stulpelių dabartine_gatve_id ir istorine_gatve_id"""
 ,,,,,dabartine_gatve_id,string,,,,4,open,,Dabar egzistuojančios gatvės identifikacinis numeris,
 ,,,,,klase,string,,,,4,open,,Dabar egzistuojančios gatvės klasė,
@@ -88,7 +88,7 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,zemelapio_metai,date,Y,,,4,open,,Žemėlapio metai,"""Žemėlapio sudarymo metai, kuriame yra istorinė gatvė"""
 ,,,,,istorine_geometrija,geometry(4326),,,,4,open,,Istorinės gatvės koordinatės WGS-84 formatu,
 ,,,,,,,,,,,,,,
-,,,,Žemėlapis,,,zemelapio_id,,,4,,,Vilniaus miesto žemėlapiai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto planus, žemėlapius, ortografines nuotraukas ir kitą kartografinę medžiagą. Viena lentelės eilutė yra vienas žemėlapis (kartografinis objektas). Eilutės informaciją sudaro žemėlapio identifikacinis numeris, pavadinimas, autorius, sudarymo data, aprašymas, grupė, tipas, mastelis, šaltinis, šaltinio, žemėlapio ir legendos nuorodos."""
+,,,,Zemelapis,,,zemelapio_id,,,4,,,Vilniaus miesto žemėlapiai,"""Duomenys iš „ID Vilnius“ apie Vilniaus miesto planus, žemėlapius, ortografines nuotraukas ir kitą kartografinę medžiagą. Viena lentelės eilutė yra vienas žemėlapis (kartografinis objektas). Eilutės informaciją sudaro žemėlapio identifikacinis numeris, pavadinimas, autorius, sudarymo data, aprašymas, grupė, tipas, mastelis, šaltinis, šaltinio, žemėlapio ir legendos nuorodos."""
 ,,,,,zemelapio_id,string,,,,4,open,,Žemėlapio identifikacinis numeris (pirminis raktas),
 ,,,,,pavadinimas,string,,,,4,open,,Žemėlapio pavadinimas,
 ,,,,,autorius,string,,,,4,open,,Žemėlapio sudarytojas,
@@ -103,12 +103,12 @@ Dėl techninių klausimų ar galimų klaidų kreiptis į atverimas@stat.gov.lt."
 ,,,,,zemelapio_nuoroda,string,,,,4,open,,Nuorodą į žemėlapį,
 ,,,,,legendos_nuoroda,string,,,,4,open,,Nuoroda į žemėlapio legendą,
 ,,,,,,,,,,,,,,
-,,,,ŽemėlapioRyšys,,,vda_prime_key,,,4,,,Vilniaus miesto žemėlapių nuorodos į istorines gatves,"""Duomenys iš „ID Vilnius“ apie žemėlapių ir istorinių gatvių ryšius. Viena lentelės eilutė nurodo vieną ryšį tarp žemėlapio (istorinio šaltinio) ir istorinės gatvės, referuojančios į tą žemėlapį. Eilutės informaciją sudaro žemėlapio ir istorinės gatvės identifikaciniai numeriai."""
+,,,,ŽemelapisRysys,,,vda_prime_key,,,4,,,Vilniaus miesto žemėlapių nuorodos į istorines gatves,"""Duomenys iš „ID Vilnius“ apie žemėlapių ir istorinių gatvių ryšius. Viena lentelės eilutė nurodo vieną ryšį tarp žemėlapio (istorinio šaltinio) ir istorinės gatvės, referuojančios į tą žemėlapį. Eilutės informaciją sudaro žemėlapio ir istorinės gatvės identifikaciniai numeriai."""
 ,,,,,vda_prime_key,string,,,,4,open,,Unikalios eilutės identifikatorius,"""Valstybės duomenų agentūros sugeneruotas unikalios eilutės identifikatorius (pirminis raktas) sudarytas iš stulpelių zemelapio_id ir istorine_gatve_id"""
 ,,,,,zemelapio_id,string,,,,4,open,,Žemėlapio identifikacinis numeris,
 ,,,,,istorine_gatve_id,string,,,,4,open,,Istorinės gatvės identifikacinis numeris,
 ,,,,,,,,,,,,,,
-,,,,IstorinisĮvykis,,,ivykio_id,,,4,,,Vilniaus miesto istoriniai įvykiai,"""Duomenys iš „ID Vilnius“ apie svarbiausius Vilniaus miesto istorinius įvykius. Viena lentelės eilutė yra vienas unikalus įvykis. Eilutės informaciją sudaro įvykio identifikacinis numeris, įvykio pavadinimas, istorinis įvykių juostos laikotarpis, data, vieta, nuotrauka ir jos aprašymas."""
+,,,,IstorinisIvykis,,,ivykio_id,,,4,,,Vilniaus miesto istoriniai įvykiai,"""Duomenys iš „ID Vilnius“ apie svarbiausius Vilniaus miesto istorinius įvykius. Viena lentelės eilutė yra vienas unikalus įvykis. Eilutės informaciją sudaro įvykio identifikacinis numeris, įvykio pavadinimas, istorinis įvykių juostos laikotarpis, data, vieta, nuotrauka ir jos aprašymas."""
 ,,,,,ivykio_id,string,,,,4,open,,Įvykio identifikacinis numeris (pirminis raktas),
 ,,,,,ivykis,string,,,,4,open,,Įvykio pavadinimas,
 ,,,,,vilniaus_laikotarpis,string,,,,4,open,,Vilniaus istorinis laikotarpis,"""Vilniaus istorinių įvykių juostos laikotarpis, kuriam priklauso įvykis"""
