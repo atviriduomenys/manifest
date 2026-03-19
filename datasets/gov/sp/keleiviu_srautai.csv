@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/sp/,,,,,ns,,,,,,,Vilniaus miesto SĮ „Susisiekimo paslaugos“,
+,datasets/gov/sp,,,,,ns,,,,,,,Vilniaus miesto SĮ „Susisiekimo paslaugos“,
 ,datasets/gov/sp/keleiviu_srautai,,,,,,,,,,,,Vilniaus miesto viešojo transporto maršrutų keleivių srautų duomenys,Vilniaus miesto viešojo transporto keleivių skaičiavimo sistemos DILAX duomenys
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
