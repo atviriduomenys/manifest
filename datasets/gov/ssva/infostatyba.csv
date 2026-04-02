@@ -22,7 +22,6 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,sklypo_reg_statusas,string,,,,4,open,,Sklypo registracijos statusas,
 ,,,,,dokumento_reg_nr,string,,,,4,open,,Projekto dokumento registracijos numeris,
 ,,,,,dokumento_reg_data,date,D,,,4,open,,Pastato dokumento registracijos data,
-,,,,,iraso_paaiskinimas,string,,,,4,open,,Projekto dokumento iraso paaiskinimas,
 ,,,,,iraso_data,date,D,,,4,open,,Dokumento iraso data,
 ,,,,,dok_statusas,string,,,,4,open,,Dokumento statusas,
 ,,,,,dok_tipo_kodas,string,,,,4,open,,Dokumento kodas,
