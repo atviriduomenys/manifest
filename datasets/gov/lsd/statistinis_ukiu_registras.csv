@@ -12,7 +12,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,M,Moteris,,,,Moteris,
 ,,,,,amzius,number,,,,4,open,,Ūkio valdytojo (ūkininkaujančio asmens) amžius,
 ,,,,,naudmenos,number,ha,,,4,open,,Ūkio deklaruotas žemės ūkio naudmenų plotas,
-,,,,,salyginiu_gyv_sk,double,,,,4,open,,"Ūkyje laikomų gyvūnų skaičius, išreikštas sutartiniais  vienetais",
+,,,,,salyginiu_gyv_sk,number,,,,4,open,,"Ūkyje laikomų gyvūnų skaičius, išreikštas sutartiniais  vienetais",
 ,,,,,standartine_produkcija,number,EUR,,,4,open,,Ūkio standartinės produkcijos dydis,
 ,,,,,bendras_uk_tipas,string,,,,4,open,,Ūkio bendrasis ūkininkavimo tipas,
 ,,,,,pagrindinis_uk_tipas,string,,,,4,open,,Ūkio pagrindinis ūkininkavimo tipas,
