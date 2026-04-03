@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,UkiuRegistras,,,u_id,,,4,,,"Statistinis ūkių registras","Statistinio ūkių registro atviri duomenys"
-,,,,,u_id,string,pk,,,4,open,,"Unikalus ūkio identifikacinis kodas",
+,,,,,u_id,string,,,,4,open,,"Unikalus ūkio identifikacinis kodas",
 ,,,,,metai,date,Y,,,4,open,,"Metai, už kuriuos atveriamas registras",
 ,,,,,lytis,string,,,,4,open,,"Ūkio valdytojo (ūkininkaujančio asmens) lytis",
 ,,,,,,enum,,V,Vyras,,,,Vyras,
