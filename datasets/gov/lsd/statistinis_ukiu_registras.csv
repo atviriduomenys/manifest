@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,naudmenos,number,ha,,,4,open,,Ūkio deklaruotas žemės ūkio naudmenų plotas,
 ,,,,,salyginiu_gyv_sk,number,,,,4,open,,"Ūkyje laikomų gyvūnų skaičius, išreikštas sutartiniais vienetais",
 ,,,,,standartine_produkcija,number,,,,4,open,,Ūkio standartinės produkcijos dydis,
-,,,,,,comment,type,,update(type: money, ref: EUR),4,open,spinta:40,,
+,,,,,,comment,type,,"update(type: money, ref: EUR)",4,open,spinta:40,,
 ,,,,,bendras_uk_tipas,string,,,,4,open,,Ūkio bendrasis ūkininkavimo tipas,
 ,,,,,pagrindinis_uk_tipas,string,,,,4,open,,Ūkio pagrindinis ūkininkavimo tipas,
 ,,,,,konkretus_uk_tipas,string,,,,4,open,,Ūkio ypatingasis ūkininkavimo specializacijos tipas,
