@@ -2,13 +2,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,datasets/gov/lsd/statistinis_ukiu_registras,,,,,,,,,,,,"Statistinis ūkių registras","Statistinio ūkių registro atviri duomenys"
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
 ,,,,UkiuRegistras,,,u_id,,,4,,,"Statistinis ūkių registras","Statistinio ūkių registro atviri duomenys"
 ,,,,,u_id,string,pk,,,4,open,,"Unikalus ūkio identifikacinis kodas",
 ,,,,,metai,date,Y,,,4,open,,"Metai, už kuriuos atveriamas registras",
 ,,,,,lytis,string,,,,4,open,,"Ūkio valdytojo (ūkininkaujančio asmens) lytis",
 ,,,,,,enum,,V,Vyras,,,,Vyras,
 ,,,,,,,,M,Moteris,,,,Moteris,
-,,,,,,,,N,Nežinoma,,,,"Lytis nežinoma",
+,,,,,,,,N,"Nežinoma",,,,"Lytis nežinoma",
 ,,,,,amzius,integer,,,,4,open,,"Ūkio valdytojo (ūkininkaujančio asmens) amžius",
 ,,,,,naudmenos,number,ha,,,4,open,,"Ūkio deklaruotas žemės ūkio naudmenų plotas",
 ,,,,,salyginiu_gyv_sk,number,,,,4,open,,"Ūkyje laikomų gyvūnų skaičius, išreikštas sutartiniais vienetais",
