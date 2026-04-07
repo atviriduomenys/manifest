@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/lki/2011_gyventoju_surasymas,,,,,,,,,,,,"Rinkinyje pateikiami 2011 m. gyventojų surašymo sociodemografiniai rodikliai, susieti su skirtingais erdviniais vienetais: 1 km ir 2 km gardelėmis, gyvenvietėmis, seniūnijomis bei LKA Thiesseno poligonais. Taip pat pateikiami LKA punktų erdviniai taškai ir jų atributai."
+,datasets/gov/lki/2011_gyventoju_surasymas,,,,,,,,,,,,,"Rinkinyje pateikiami 2011 m. gyventojų surašymo sociodemografiniai rodikliai, susieti su skirtingais erdviniais vienetais: 1 km ir 2 km gardelėmis, gyvenvietėmis, seniūnijomis bei LKA Thiesseno poligonais. Taip pat pateikiami LKA punktų erdviniai taškai ir jų atributai."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
