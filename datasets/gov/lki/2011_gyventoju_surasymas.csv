@@ -3,7 +3,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
-,,,,GRID_hexo_1km_2011_gyv_suras_F_parsed,,,feature_id,,,4,,,"1 km heksagoninių gardelių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami 1 km heksagoninių gardelių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
+,,,,GRIDHexo1km2011,,,feature_id,,,4,,,"1 km heksagoninių gardelių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami 1 km heksagoninių gardelių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
 ,,,,,feature_id,integer,,,,4,open,,"Erdvinio objekto identifikatorius",
 ,,,,,feature_type,string,,,,4,open,,"Erdvinio objekto tipas",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
@@ -46,7 +46,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tautybe_lt_proc,number,,,,4,open,,"Lietuvių tautybės gyventojų dalis procentais",
 ,,,,,tautybe_sl,integer,,,,4,open,,"Šaltinio kategorijos „sl“ tautybės grupės gyventojų skaičius",
 ,,,,,,,,,,,,,,
-,,,,GRID_hexo_2km_2011_gyv_suras_F_parsed,,,feature_id,,,4,,,"2 km heksagoninių gardelių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami 2 km heksagoninių gardelių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
+,,,,GRIDHexo2km2011,,,feature_id,,,4,,,"2 km heksagoninių gardelių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami 2 km heksagoninių gardelių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
 ,,,,,feature_id,integer,,,,4,open,,"Erdvinio objekto identifikatorius",
 ,,,,,feature_type,string,,,,4,open,,"Erdvinio objekto tipas",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
@@ -89,7 +89,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tautybe_lt_proc,number,,,,4,open,,"Lietuvių tautybės gyventojų dalis procentais",
 ,,,,,tautybe_sl,integer,,,,4,open,,"Šaltinio kategorijos „sl“ tautybės grupės gyventojų skaičius",
 ,,,,,,,,,,,,,,
-,,,,Gyvenvietes_2011_gyv_suras_F_parsed,,,feature_id,,,4,,,"Gyvenviečių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami gyvenviečių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
+,,,,Gyvenviete2011GyvSuras,,,feature_id,,,4,,,"Gyvenviečių 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami gyvenviečių erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
 ,,,,,feature_id,integer,,,,4,open,,"Erdvinio objekto identifikatorius",
 ,,,,,feature_type,string,,,,4,open,,"Erdvinio objekto tipas",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
@@ -137,7 +137,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tautybe_lt_proc,number,,,,4,open,,"Lietuvių tautybės gyventojų dalis procentais",
 ,,,,,tautybe_sl,integer,,,,4,open,,"Šaltinio kategorijos „sl“ tautybės grupės gyventojų skaičius",
 ,,,,,,,,,,,,,,
-,,,,LKA_punktai_parsed,,,feature_id,,,4,,,"LKA punktai","Lentelėje pateikiami LKA punktų erdviniai taškai ir jų atributai: gyvenvietės pavadinimas, statusas, LKA punkto numeracija, savivaldybė, seniūnija, tarmės identifikatorius ir pavadinimas bei koordinačių sistema."
+,,,,LKAPunktas,,,feature_id,,,4,,,"LKA punktai","Lentelėje pateikiami LKA punktų erdviniai taškai ir jų atributai: gyvenvietės pavadinimas, statusas, LKA punkto numeracija, savivaldybė, seniūnija, tarmės identifikatorius ir pavadinimas bei koordinačių sistema."
 ,,,,,feature_id,integer,,,,4,open,,"Objekto identifikatorius",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
 ,,,,,x,number,,,,4,open,,"X koordinatė",
@@ -156,7 +156,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tarmes_pav,string,,,,4,open,,"Tarmės pavadinimas",
 ,,,,,crs_name,string,,,,4,open,,"Koordinačių sistemos pavadinimas",
 ,,,,,,,,,,,,,,
-,,,,LKA_Thiesseno_poligonai_2011_gyv_suras_F_parsed,,,feature_id,,,4,,,"LKA Thiesseno poligonų 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami LKA Thiesseno poligonų erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
+,,,,LKAThiessenoPoligonas2011,,,feature_id,,,4,,,"LKA Thiesseno poligonų 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami LKA Thiesseno poligonų erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
 ,,,,,feature_id,integer,,,,4,open,,"Erdvinio objekto identifikatorius",
 ,,,,,feature_type,string,,,,4,open,,"Erdvinio objekto tipas",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
@@ -199,7 +199,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,tautybe_lt_proc,number,,,,4,open,,"Lietuvių tautybės gyventojų dalis procentais",
 ,,,,,tautybe_sl,integer,,,,4,open,,"Šaltinio kategorijos „sl“ tautybės grupės gyventojų skaičius",
 ,,,,,,,,,,,,,,
-,,,,Seniunijos_2011_gyv_suras_F_parsed,,,feature_id,,,4,,,"Seniūnijų 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami seniūnijų erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
+,,,,Seniunija2011GyvSuras,,,feature_id,,,4,,,"Seniūnijų 2011 m. gyventojų surašymo rodikliai","Lentelėje pateikiami seniūnijų erdviniai objektai ir su jais susieti 2011 m. gyventojų surašymo sociodemografiniai rodikliai."
 ,,,,,feature_id,integer,,,,4,open,,"Erdvinio objekto identifikatorius",
 ,,,,,feature_type,string,,,,4,open,,"Erdvinio objekto tipas",
 ,,,,,geometry_type,string,,,,4,open,,"Geometrijos tipas",
