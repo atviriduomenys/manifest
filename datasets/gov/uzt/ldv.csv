@@ -1,6 +1,6 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/uzt,,,,,,,,,,,,Užimtumo Tarnyba,
-,datasets/gov/uzt/ldv,,,,,,,,,,,,Užimtumo Tarnybos skelbiamos laisvos darbo vietos,"Pateikiami Užimtumo tarnybos duomenys apie laisvas darbo vietas Lietuvoje. nuo 1990m. iki šių dienų. Lentelės objektas - laisva darbo vieta. Pateikiami išsamūs duomenys apie laisvą darbo vietą, darbdavį ir kandidatui keliamus reikalavimus. Rinkinys apima ne tik juridinių, bet ir kitų teisinės veiklos formą turinčių subjektų (pvz. asmenys su verslo liudijimais) skelbiamas laisvas darbo vietas. Naudotojų patogumui išskiriamas požymis, ar darbo vieta yra laisva einamajai dienai."
+,datasets/gov/uzt/ldv,,,,,,,,,,,,Užimtumo Tarnybos skelbiamos laisvos darbo vietos,"Pateikiami Užimtumo tarnybos duomenys apie laisvas darbo vietas Lietuvoje. nuo 1990m. iki šių dienų. Lentelės objektas - laisva darbo vieta. Pateikiami išsamūs duomenys apie laisvą darbo vietą, darbdavį, darbo užmokestį, kandidatui keliamus reikalavimus ir tikslines gyventojų grupes, kurioms taikomas darbo skelbimas. Rinkinys apima ne tik juridinių, bet ir kitų teisinės veiklos formą turinčių subjektų (pvz. asmenys su verslo liudijimais) skelbiamas laisvas darbo vietas. Naudotojų patogumui išskiriamas požymis, ar darbo vieta yra laisva einamajai dienai."
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
