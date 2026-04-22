@@ -1,1 +1,27 @@
-
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmvt/okis_patikrinimai,,,,,,,,,,,,Valstybinės maisto ir veterinarijos tarnybos atlikti patikrinimai pas veterinarinės kontrolės subjektus,"""Duomenų rinkinyje pateikiami duomenys iš Valstybinės maisto ir veterinarinės tarnybos (VMVT) Oficialiosios kontrolės informacinės sistemos (OKIS) apie VMVT atliktus patikrinimus veterinarinės kontrolės subjektuose. Viena duomenų rinkinio eilutė atitinka vieną unikalų patikrinimą. Eilutėje nurodomi patikrinimo ir subjekto identifikaciniai numeriai, subjekto teisinė forma, savivaldybė, kurioje atliktas patikrinimas, patikrinimo data, požymiai, nurodantys, ar VMVT informavo apie patikrinimą prieš atvykstant, ar buvo nustatyti pažeidimai, ar po patikrinimo buvo skirta poveikio priemonė. Taip pat nurodomas paskutinio patikrinimo identifikacinis numeris, data ir laikas, kada įrašas buvo sukurtas arba atnaujintas OKIS duomenų bazėje. 
+Duomenys kaupiami nuo 2025-02-01. 
+Duomenų teikėjas – Valstybinė maisto ir veterinarijos tarnyba
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Subjektas,,,patikrinimo_id,,,4,,,Valstybinės maisto ir veterinarijos tarnybos atlikti patikrinimai pas veterinarinės kontrolės subjektus,"""Duomenų rinkinyje pateikiami duomenys iš Valstybinės maisto ir veterinarinės tarnybos (VMVT) Oficialiosios kontrolės informacinės sistemos (OKIS) apie VMVT atliktus patikrinimus veterinarinės kontrolės subjektuose. Viena duomenų rinkinio eilutė atitinka vieną unikalų patikrinimą. Eilutėje nurodomi patikrinimo ir subjekto identifikaciniai numeriai, subjekto teisinė forma, savivaldybė, kurioje atliktas patikrinimas, patikrinimo data, požymiai, nurodantys, ar VMVT informavo apie patikrinimą prieš atvykstant, ar buvo nustatyti pažeidimai, ar po patikrinimo buvo skirta poveikio priemonė. Taip pat nurodomas paskutinio patikrinimo identifikacinis numeris, data ir laikas, kada įrašas buvo sukurtas arba atnaujintas OKIS duomenų bazėje. 
+Duomenys kaupiami nuo 2025-02-01. 
+Duomenų teikėjas – Valstybinė maisto ir veterinarijos tarnyba
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."""
+,,,,,patikrinimo_id,string,,,,4,open,,Patikrinimo identifikacinis numeris,
+,,,,,subjekto_id,string,,,,4,open,,Subjekto identifikacinis numeris,
+,,,,,teisine_forma,string,,,,4,open,,Subjekto teisinė forma,
+,,,,,,enum,,,"""Juridinis asmuo""",,,,Juridinis asmuo,
+,,,,,,,,,"""Individualus asmuo""",,,,Individualus asmuo,
+,,,,,savivaldybe,string,,,,4,open,,Savivaldybė, kurioje buvo atliekamas patikrinimas,
+,,,,,patikrinimo_data,date,D,,,4,open,,Patikrinimo data,
+,,,,,apie_atvykima_pranesta,boolean,,,,4,open,,"""Požymis, nurodantis, ar VMVT informavo apie patikrinimą prieš atvykstant""",
+,,,,,ar_aptikta_pazeidimu,boolean,,,,4,open,,"""Požymis, nurodantis, ar buvo nustatyti pažeidimai""",
+,,,,,pritaikytos_sankcijos,boolean,,,,4,open,,"""Požymis, nurodantis, ar buvo pritaikyta poveikio priemonė (įspėjimas/bauda)""",
+,,,,,paskutinio_patikrinimo_id,string,,,,4,open,,Paskutinio patikrinimo identifikacinis numeris,
+,,,,,irasas_sukurtas,datetime,U,,,4,open,,Data ir laikas kada įrašas buvo sukurtas OKIS duomenų bazėje,
+,,,,,irasas_atnaujintas,datetime,U,,,4,open,,Data ir laikas kada įrašas buvo atnaujintas OKIS duomenų bazėje,
