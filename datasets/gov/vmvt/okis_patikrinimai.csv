@@ -17,7 +17,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,teisine_forma,string,,,,4,open,,Subjekto teisinė forma,
 ,,,,,,enum,,,"""Juridinis asmuo""",,,,Juridinis asmuo,
 ,,,,,,,,,"""Individualus asmuo""",,,,Individualus asmuo,
-,,,,,savivaldybe,string,,,,4,open,,Savivaldybė, kurioje buvo atliekamas patikrinimas,
+,,,,,savivaldybe,string,,,,4,open,,"""Savivaldybė, kurioje buvo atliekamas patikrinimas""",
 ,,,,,patikrinimo_data,date,D,,,4,open,,Patikrinimo data,
 ,,,,,apie_atvykima_pranesta,boolean,,,,4,open,,"""Požymis, nurodantis, ar VMVT informavo apie patikrinimą prieš atvykstant""",
 ,,,,,ar_aptikta_pazeidimu,boolean,,,,4,open,,"""Požymis, nurodantis, ar buvo nustatyti pažeidimai""",
