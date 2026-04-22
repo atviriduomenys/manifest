@@ -1,0 +1,43 @@
+id,datasets,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmvt/okis_subjektai,,,,,,,,,,,,Valstybinės veterinarinės kontrolės subjektų sąrašas,"""Duomenų rinkinyje pateikiami duomenys iš Valstybinės maisto ir veterinarijos tarnybos (VMVT) Oficialiosios kontrolės informacinės sistemos (OKIS) apie valstybinės veterinarinės kontrolės subjektus. Viena duomenų rinkinio eilutė atitinka vieną unikalų valstybinės veterinarinės kontrolės ūkio subjektą. Eilutėje nurodomas subjekto identifikacinis numeris, pavadinimas, teisinė forma (juridinis / fizinis), veiklos pradžios ir sustabdymo datos, JAR kodas ir jo validavimo stulpelis, subjekto veikla ir veiklos tipas, veterinarinio patvirtinimo numeris, VMVT padalinys, subjekto adresas ir geolokacija, telefono numeris ir elektroninis paštas. Paskutiniai du stulpeliai nurodo įrašo sukūrimo arba atnaujinimo OKIS duomenų bazėje datą.
+Duomenys kaupiami nuo 2025-02-01. 
+Duomenų teikėjas – Valstybinė maisto ir veterinarijos tarnyba.
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."""
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,Subjektas,,,subjekto_id,,,4,,,Valstybinės veterinarinės kontrolės subjektų sąrašas,"""Duomenų rinkinyje pateikiami duomenys iš Valstybinės maisto ir veterinarijos tarnybos (VMVT) Oficialiosios kontrolės informacinės sistemos (OKIS) apie valstybinės veterinarinės kontrolės subjektus. Viena duomenų rinkinio eilutė atitinka vieną unikalų valstybinės veterinarinės kontrolės ūkio subjektą. Eilutėje nurodomas subjekto identifikacinis numeris, pavadinimas, teisinė forma (juridinis / fizinis), veiklos pradžios ir sustabdymo datos, JAR kodas ir jo validavimo stulpelis, subjekto veikla ir veiklos tipas, veterinarinio patvirtinimo numeris, VMVT padalinys, subjekto adresas ir geolokacija, telefono numeris ir elektroninis paštas. Paskutiniai du stulpeliai nurodo įrašo sukūrimo arba atnaujinimo OKIS duomenų bazėje datą.
+Duomenys kaupiami nuo 2025-02-01. 
+Duomenų teikėjas – Valstybinė maisto ir veterinarijos tarnyba.
+Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt.
+Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt."""
+,,,,,subjekto_id,string,,,,4,open,,Subjekto identifikacinis numeris,
+,,,,,subjekto_pavadinimas,string,,,,4,open,,Subjekto pavadinimas,
+,,,,,teisine_forma,string,,,,4,open,,Subjekto teisinė forma,
+,,,,,,enum,,,"""Individualus asmuo""",,,,Individualus asmuo,
+,,,,,,,,,"""Juridinis asmuo""",,,,Juridinis asmuo,
+,,,,,busena,string,,,,4,open,,Subjekto veiklos būsena,
+,,,,,,enum,,,"""Aktyvus""",,,,Aktyvus,
+,,,,,,,,,"""Sustabdytas""",,,,Sustabdytas,
+,,,,,,,,,"""Panaikintas""",,,,Panaikintas,
+,,,,,,,,,"""Vertinamas""",,,,Vertinamas,
+,,,,,,,,,"""Laikinai patvirtintas""",,,,Laikinai patvirtintas,
+,,,,,veikla_vykdoma_nuo,string,,,,2,open,,Subjekto veiklos pradžios data,
+,,,,,veikla_nutraukta,string,,,,2,open,,Subjekto veiklos nutraukimo data,
+,,,,,sustabdyta_iki,datetime,U,,,4,open,,Subjekto veikla sustabdoma iki,
+,,,,,jar_kodas,string,,,,4,open,,Juridinio asmens kodas,
+,,,,,jar_validacija,string,,,,4,open,,"""Valstybės duomenų agentūros sugeneruotas stulpelis, kuris patikrina ar JAR kodas yra validus""",
+,,,,,veikla,string,,,,4,open,,Subjekto veikla,
+,,,,,veiklos_tipas,string,,,,4,open,,Subjekto veiklos tipas,
+,,,,,vet_patvirtinimo_nr,string,,,,4,open,,Ūkio subjektui suteiktas veterinarinio patvirtinimo / registracijos numeris,
+,,,,,vmvt_padalinys,string,,,,4,open,,Valstybinės maisto ir veterinarijos tarnybos padalinys, kuris piržiūri ūkio subjektą,
+,,,,,adresas,string,,,,4,open,,Subjekto adresas,
+,,,,,adreso_tipas,string,,,,4,open,,Adreso tipas,
+,,,,,ilguma_wgs,number,,,,4,open,,Adreso ilgumos koordinatė WGS-84 koordinačių sistemoje,
+,,,,,platuma_wgs,number,,,,4,open,,Adreso platumos koordinatė WGS-84 koordinačių sistemoje,
+,,,,,geometrija,geometry(4326),,,,4,open,,Taškinė WGS-84 koordinatė,
+,,,,,telefono_numeris,string,,,,4,open,,Subjekto telefono numeris,
+,,,,,el_pastas,string,,,,4,open,,Subjekto elektroninis paštas,
+,,,,,irasas_sukurtas,datetime,U,,,4,open,,Data ir laikas kada įrašas buvo atnaujintas OKIS duomenų bazėje,
+,,,,,irasas_atnaujintas,datetime,U,,,4,open,,Data ir laikas kada įrašas buvo atnaujintas OKIS duomenų bazėje,
