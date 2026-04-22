@@ -1,4 +1,4 @@
-id,datasets,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vmvt/okis_subjektai,,,,,,,,,,,,Valstybinės veterinarinės kontrolės subjektų sąrašas,"""Duomenų rinkinyje pateikiami duomenys iš Valstybinės maisto ir veterinarijos tarnybos (VMVT) Oficialiosios kontrolės informacinės sistemos (OKIS) apie valstybinės veterinarinės kontrolės subjektus. Viena duomenų rinkinio eilutė atitinka vieną unikalų valstybinės veterinarinės kontrolės ūkio subjektą. Eilutėje nurodomas subjekto identifikacinis numeris, pavadinimas, teisinė forma (juridinis / fizinis), veiklos pradžios ir sustabdymo datos, JAR kodas ir jo validavimo stulpelis, subjekto veikla ir veiklos tipas, veterinarinio patvirtinimo numeris, VMVT padalinys, subjekto adresas ir geolokacija, telefono numeris ir elektroninis paštas. Paskutiniai du stulpeliai nurodo įrašo sukūrimo arba atnaujinimo OKIS duomenų bazėje datą.
 Duomenys kaupiami nuo 2025-02-01. 
 Duomenų teikėjas – Valstybinė maisto ir veterinarijos tarnyba.
