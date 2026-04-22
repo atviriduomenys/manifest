@@ -31,7 +31,7 @@ Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviridu
 ,,,,,veikla,string,,,,4,open,,Subjekto veikla,
 ,,,,,veiklos_tipas,string,,,,4,open,,Subjekto veiklos tipas,
 ,,,,,vet_patvirtinimo_nr,string,,,,4,open,,Ūkio subjektui suteiktas veterinarinio patvirtinimo / registracijos numeris,
-,,,,,vmvt_padalinys,string,,,,4,open,,Valstybinės maisto ir veterinarijos tarnybos padalinys, kuris piržiūri ūkio subjektą,
+,,,,,vmvt_padalinys,string,,,,4,open,,"""Valstybinės maisto ir veterinarijos tarnybos padalinys, kuris piržiūri ūkio subjektą""",
 ,,,,,adresas,string,,,,4,open,,Subjekto adresas,
 ,,,,,adreso_tipas,string,,,,4,open,,Adreso tipas,
 ,,,,,ilguma_wgs,number,,,,4,open,,Adreso ilgumos koordinatė WGS-84 koordinačių sistemoje,
