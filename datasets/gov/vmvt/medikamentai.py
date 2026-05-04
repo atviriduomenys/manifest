@@ -1,8 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,/datasets/gov/vmvt/vaistai,,,,,,,,,,,,Duomenys apie veterinarinius vaistus bei jų išrašymus,
-,,,,,,,,,,,,,,
+,datasets/gov/vmvt/vaistai,,,,,,,,,,,,Duomenys apie veterinarinius vaistus bei jų išrašymus,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
 ,,,,Medikamentas,,,med_id,,,4,,,"Lietuvoje registruoti veterinariniai vaistai – jų sudėtis, paskirtis, gamintojas ir registracijos duomenys",
 ,,,,,med_id,string,,,,4,open,,Unikalus vaisto identifikatorius,
