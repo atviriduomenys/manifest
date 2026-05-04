@@ -4,7 +4,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
 ,,,,,,,,,,,,,,
-,,,,Medikamentas,,,med_id,,,4,,,"Lietuvoje registruoti veterinariniai vaistai – jų sudėtis, paskirtis, gamintojas ir registracijos duomenys",
+,,,,Medikamentas,,,med_id,,,4,,,"Lietuvoje registruoti veterinariniai vaistai","Šis duomenų rinkinys apima Lietuvoje registruotų veterinarinių vaistų informaciją: vaisto pavadinimą, veikliąsias medžiagas, paskirties gyvūnų rūšis, farmacinę formą ir indikacijas. Pateikiami registracijos duomenys – numeris, data, statusas ir registruotojas – bei informacija apie naudojimo būdą ir išlauką pagal gyvūnų rūšį. Taip pat nurodytos pakuočių charakteristikos: identifikatoriai, pavadinimai, kiekiai ir vienetų tipai. PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
 ,,,,,med_id,string,,,,4,open,,"Unikalus vaisto identifikatorius",
 ,,,,,atcvet_kodas,string,,,,4,open,,"ATCvet kodas, naudojamas veterinariniams vaistams klasifikuoti pagal jų terapinį poveikį",
 ,,,,,medikamento_pavadinimas,string,,,,4,open,,"Veterinarinio vaisto pavadinimas",
