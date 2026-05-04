@@ -749,7 +749,7 @@ datasets/gov/lgkt/lgkt_konsultacijos.csv
 datasets/gov/vai/pastabos_savivaldybiu_taryboms.csv
 datasets/gov/lgkt/mokymai.csv
 datasets/gov/muitine/ata_knygeles_lakstai.csv
-datasets/gov/vmvt/vaistai.csv
+datasets/gov/vmvt/receptai.csv
 datasets/gov/vmvt/zenklinti_gyvuliai.csv
 datasets/gov/lgkt/skundai.csv
 datasets/gov/eimin/prof_patirt_prilyginimas.csv
@@ -983,3 +983,4 @@ datasets/gov/lki/2011_gyventoju_surasymas.csv
 datasets/gov/vmvt/okis_patikrinimai.csv
 datasets/gov/vmvt/okis_subjektai.csv
 datasets/gov/marijampoles_sav/marijampoles_zeldiniai.csv
+datasets/gov/vmvt/medikamentai.csv
