@@ -1,0 +1,32 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/vmvt/vaistai,,,,,,,,,,,,Duomenys apie vaistus bei jų išrašymus,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,vadovas,,,,,https://atviriduomenys.readthedocs.io/,,
+,,,,,,,,,,,,,,
+,,,,IsrasytasReceptas,,,vda_prime_key,,,4,,,Veterinarinių klinikų išrašyti vaistų receptai,"Rinkinyje pateikiamas Valstybinė maisto ir veterinarijos tarnybos sistemos duomenys apie veterinarų išrašytus receptus gyvūnų vaistams įsigyti. Pateikiama tokia informacija kaip recepto numeris, vaistas, gyvūno rūšies identifikacinis numeris, lytis bei koks veterinaras ar įstaiga išrašė receptą.
+Viena eilutė atitinka vieno recepto vaistą.
+Duomenys pateikiami nuo 2022 metų.
+PASITEIRAVIMUI: Valstybės duomenų valdysenos atvėrimo komanda: atverimas@stat.gov.lt"
+,,,,,vda_prime_key,string,,,,4,open,,Identifikacinos numeris,
+,,,,,recepto_nr,string,,,,4,open,,Recepto numeris,Šifruotas recepto numeris
+,,,,,gyv_rusies_id,string,,,,4,open,,Gyvūno rūšies id,
+,,,,,gyv_rusis,string,,,,4,open,,Gyvūno rūšis,"Kai atsiras duomenys, stulpelis bus užpildytas"
+,,,,,gyv_lytis,string,,,,4,open,,Gyvūno lytis,
+,,,,,,enum,,,"""F""",,,,Moteris,
+,,,,,,,,,"""M""",,,,Vyras,
+,,,,,recepto_isdavimo_data,date,D,,,4,open,,Recepto išrašymo data,
+,,,,,recepto_ivykdymo_data,date,D,,,4,open,,Vaistų išdavimo data,
+,,,,,vaisto_id,string,,,,4,open,,Vaisto ID iš Veterinarinių vaistų registro,
+,,,,,vaisto_pav,string,,,,4,open,,Vaisto firminis pavadinimas,
+,,,,,vaisto_registruotojas,string,,,,4,open,,Vaisto registruotojas,
+,,,,,vaisto_forma,string,,,,4,open,,Vaisto forma,
+,,,,,vaisto_grupe,string,,,,4,open,,Vaisto grupė,
+,,,,,vaisto_kiekis_pak,string,,,,4,open,,Vaisto kiekis vienoje pakuotėje,
+,,,,,pakuotes_pav,string,,,,4,open,,Pirminės pakuotės pavadinimas,
+,,,,,pakuociu_sk,integer,,,,4,open,,Pirminių pakuočių skaičius (vienetais),
+,,,,,pastabos_lt,string,,,,3,open,,Pastabos,
+,,,,,,comment,type,,"update(property: ""pastabos_lt@lt"", type: ""text"")	",4,open,"spinta:204	",,
+,,,,,istaigos_jar_kodas,string,,,,4,open,,JAR kodas,Šifruotas įstaigos JAR kodas
+,,,,,jar_validacija,boolean,,,,4,open,,JAR kodo validacija,
+,,,,,veterinaro_sertifikato_nr,string,,,,4,open,,Sertifikato numeris,Šifruotas veterinaro sertifikato numeris
