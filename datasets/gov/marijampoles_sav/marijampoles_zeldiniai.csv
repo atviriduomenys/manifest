@@ -18,7 +18,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,pastaba,string,,,,4,open,,Pastabos apie inventorizuotą želdinį,
 ,,,,,bukle,string,,,,4,open,,Inventorizuoto želdinio būklė,
 ,,,,,salinimo_data,date,D,,,4,open,,Želdinio šalinimo data,
-,,,,,zeldinio_vieta,geometry,,,,4,open,,Želdinio koordinatės LKS-94 formatu,
+,,,,,zeldinio_vieta,"geometry(point, 3346)",,,,4,open,,Želdinio koordinatės LKS-94 formatu,
 ,,,,,ilguma_wgs,number,,,,4,open,,Želdinio ilgumos koordinatė,
 ,,,,,platuma_wgs,number,,,,4,open,,Želdinio platumos koordinatė,
 ,,,,,koregavimo_data,date,D,,,4,open,,Eilutės koregavimo data,
