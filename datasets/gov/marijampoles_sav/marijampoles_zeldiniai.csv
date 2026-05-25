@@ -1,5 +1,5 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
-,datasets/gov/marijampoles_sav/marijampoles_zeldiniai,,,,,ns,,,,,,,Marijampolės savivaldybės želdiniai,
+,datasets/gov/marijampoles_sav/marijampoles_zeldiniai,,,,,,,,,,,,Marijampolės savivaldybės želdiniai,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
