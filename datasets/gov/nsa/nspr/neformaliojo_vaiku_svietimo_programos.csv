@@ -13,7 +13,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,prg_isreg_data,date,D,,,4,open,,Neformaliojo švietimo programos išregistravimo iš neformaliojo švietimo programų registro data,
 ,,,,,prg_isreg_priezast_lt,string,,,,4,open,,Neformaliojo švietimo programos išregistravimo iš neformaliojo švietimo programų registro priežastis anglų kalba,
 ,,,,,,enum,,,"""Programos teikėjo prašymu""",,,,"""Programos teikėjo prašymu""",
-,,,,,,,,,""Nevykdant daugiau kaip dvejus metus""",,,,"""Nevykdant daugiau kaip dvejus metus""",
+,,,,,,,,,"""Nevykdant daugiau kaip dvejus metus""",,,,"""Nevykdant daugiau kaip dvejus metus""",
 ,,,,,,,,,"""Registro tvarkytojo sprendimu""",,,,"""Registro tvarkytojo sprendimu""",
 ,,,,,,,,,"""Prijungiant prie kitos programos""",,,,"""Prijungiant prie kitos programos""",
 ,,,,,prg_isreg_priezast_en,string,,,,4,open,,Neformaliojo švietimo programos išregistravimo iš neformaliojo švietimo programų registro priežastis lietuvių kalba,
