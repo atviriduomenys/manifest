@@ -36,7 +36,7 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,,"""LT asmens kodas""",,,,"""LT asmens kodas""",
 ,,,,,,,,,"""Kitas kodas""",,,,"""Kitas kodas""",
 ,,,,,,,,,"""Senas LT JAR kodas""",,,,"""Senas LT JAR kodas""",
-,,,,,,,Institucijos padalinio kodas,,,,,,Institucijos padalinio kodas,
+,,,,,,,,,"""Institucijos padalinio kodas""",,,,Institucijos padalinio kodas,
 ,,,,,prg_teikejo_kodo_strukt,string,,,,4,open,,Neformaliojo švietimo programos tiekėjo kodo struktūra,
 ,,,,,prg_teikejo_tipas,string,,,,4,open,,Neformaliojo švietimo programos tiekėjo tipas,
 ,,,,,prg_teikejo_adresas,string,,,,4,open,,Neformaliojo švietimo programos tiekėjo adresas,
