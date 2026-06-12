@@ -13,6 +13,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,savivaldybe,string,,,,4,open,,Įstaigos savivaldybės pavadinimas,
 ,,,,,gyvenviete,string,,,,4,open,,Įstaigos miestas/gyvenamoji vietovė,
 ,,,,,adresas,string,,,,4,open,,Įstaigos veiklos adresas,
+,,,,,aob_kodas,string,,,,4,open,,Įstaigos veiklos vieneto veiklos/registracijos adreso kodas,
+,,,,,sveidra_id,string,,,,4,open,,Įstaigos veiklos vieneto kodas SVEIDRA,
 ,,,,,vidutiniskai_prisirasiusiuju,integer,,,,4,open,,"""Vidutinis tais metais įstaigoje prisirašiusių vaikų skaičius (bendrų prisirašymo dienų visiems įstaigoje prisirašiusiems nepilnamečiams, t.y. person-days, skaičius, padalintas iš metų trukmės)""",
 ,,,,,prisirase_bent1d,integer,,,,4,open,,Prie įstaigos prisirašiusių bent vieną dieną tais metais nepilnamečių skaičius,
 ,,,,,paskiepyta_vaiku,integer,,,,4,open,,"""Įstaigoje paskiepytų unikalių nepilnamečių skaičius tais metais, neatsižvelgiant į jų prisirašymo vietą""",
