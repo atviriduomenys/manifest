@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/nelaimingi_atsitikimai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,"extract(""zip"")[""nad_pl.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodranelaimingiatsitikimai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/nad_pl.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""nad_pl.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,NelaimingasAtsitikimas,,,"pasalpos_rusis, pasalpos_priezastis",,,3,,,,
 ,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo,
 ,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,Pašalpos rūšis,
