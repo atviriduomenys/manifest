@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/ds,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodradraudejai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,"extract(""zip"")[""draudejai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodradraudejai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/draudejai.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""draudejai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,Draudejai,,,"draudeju_grupe, draudeju_tipas",,,3,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
@@ -10,7 +11,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,draudeju_tipas,string,,DRAUDEJU_TIPAS,,3,open,,Draudėjų tipas,
 ,,,,,draudeju_sk,integer,,DRAUDEJU_SK,,4,open,,Draudėjų skaičius,"Draudėjų – visų juridinių asmenų bei jų filialų ir atstovybių, taip pat fizinių asmenų, kurie įstatymų nustatyta tvarka privalo mokėti valstybinio socialinio draudimo įmokas, skaičius per ataskaitinių metų ketvirčius."
 ,,,,,,,,,,,,,,
-,,sodraskolininkai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/skolininkai.zip,"extract(""zip"")[""skolininkai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodraskolininkai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/skolininkai.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""skolininkai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,Skolininkai,,,"draudeju_grupe, draudeju_tipas",,,4,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pkdalyviai,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodrapkdalyviai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_dalyviai.zip,"extract(""zip"")[""pk_dalyviai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapkdalyviai,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_dalyviai.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""pk_dalyviai.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,PkDalyvis,,,"metai, menuo",,,2,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
@@ -12,7 +13,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,amzius,string,,AMZIUS,,3,open,,Amžiaus grupė,
 ,,,,,dalyviu_skaicius,integer,,DALYVIU_SKAICIUS,,4,open,,"Dalyvių skaičius, vnt.",Iš viso pensijų kaupimo dalyvių skaičius
 ,,,,,,,,,,,,,,
-,,sodrapkitraukimas,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_itraukimas.zip,"extract(""zip"")[""pk_itraukimas.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapkitraukimas,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_itraukimas.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""pk_itraukimas.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,PkItraukimas,,,metai,,,2,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Įtraukimo Metai,Dalyvavimo pensijų kaupime įtraukimo metai
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

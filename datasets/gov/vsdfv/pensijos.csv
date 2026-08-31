@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pensijos,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodrapensijos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pensijos.zip,"extract(""zip"")[""pensijos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapensijos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pensijos.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""pensijos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,Pensija,,,"metu_menuo",,,,,,,
 ,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo,
 ,,,,,pensijos_rusis,string,,PENSIJOS_RUSIS,,3,open,,Pensijos rūšis,

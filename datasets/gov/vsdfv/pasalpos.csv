@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pasalpos,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodrapasalpos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pasalpos.zip,"self.extract(""zip"")[""pasalpos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapasalpos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pasalpos.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'self.extract(""zip"")[""pasalpos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,Pasalpa,,,"pasalpos_rusis, pasalpos_porusis",,,3,,,,
 ,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Mėnuo,
 ,,,,,pasalpos_rusis,string,,PASALPOS_RUSIS,,3,open,,Išmokos rūšis,

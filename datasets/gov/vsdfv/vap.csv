@@ -1,6 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/vap,,,,,,,,,,,,,
-,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_det.zip,"self.extract(""zip"")[""apdraustieji_det.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodraapdraustieji,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustieji_det.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'self.extract(""zip"")[""apdraustieji_det.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,Apdraustasis,,,"metu_menuo, darbo_uzmok_eur",,,2,,,,
 ,,,,,agregavimas,string,,AGREGAVIMAS,,3,open,,Agregavimo lygmuo,
 ,,,,,metu_menuo,date,1M,METU_MENUO,"date(""%Y-%m mėn."")",2,open,,Metų mėnuo, 
@@ -19,7 +20,8 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,comment,type,,"update(type: ""money"", ref: ""EUR"")",4,,spinta:40,,
 ,,,,,apdr_asm_sk,integer,,APDR_ASM_SK,,4,open,,Apdraustųjų asmenų skaičius,Apdraustieji fiziniai asmenys kurie valstybinio socialinio draudimo įmokas moka patys arba už juos šias įmokas moka draudėjai
 ,,,,,,,,,,,,,,
-,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,"self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapajamuanalize,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/apdraustuju_pajamu_analize.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'self.extract(""zip"")[""apdraustuju_pajamu_analize.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,PajamuAnalize,,,"metai, menuo",,,2,,,,
 ,,,,,metai,integer,,metai,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,

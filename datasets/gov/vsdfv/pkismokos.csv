@@ -1,7 +1,8 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,datasets/gov/vsdfv/pkismokos,,,,,,,,,,,,,
 ,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
-,,sodrapkismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_ismokos.zip,"extract(""zip"")[""pk_ismokos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")",,,,,
+,,sodrapkismokos,,,,csv,,https://atvira.sodra.lt/downloads/lt-eur/pk_ismokos.zip,,,,,,
+,,,,,,comment,prepare,,"update(prepare: 'extract(""zip"")[""pk_ismokos.csv""].file(encoding: ""cp1257"").tabular(sep: "";"")')",,,spinta:1444,,
 ,,,,PkIsmoka,,,metai,,,2,,,,
 ,,,,,metai,integer,,METAI,,2,open,,Metai,
 ,,,,,,comment,type,,"update(type: ""date"", ref: ""Y"")",4,,spinta:213,,
