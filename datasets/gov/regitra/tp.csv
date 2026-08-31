@@ -1,7 +1,7 @@
 id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
 ,,,,,,prefix,locn,,,,,http://www.w3.org/ns/locn#,,
 ,datasets/gov/regitra/tp,,,,,,,,,,,,,
-,,csv,,,,csv,,https://www.regitra.lt/atvduom/Atviri_TP_parko_duomenys.zip,"self.extract(""zip"")[""Atviri_TP_parko_duomenys.csv""]",,,,,
+,,csv,,,,csv,,https://www.regitra.lt/atvduom/Atviri_TP_parko_duomenys.zip,,,,,,
 ,,,,TransportoPriemone,,,"keb_kodas, spec_kodas",,,,,,,
 ,,,,,marke,string,,MARKE,,3,open,,Gamybinë markë (gamintojo prekës pavadinimas),"Kai `vald_tipas=""Fizinis""` ir `marke+komercinis_pav+savivaldyb=1`, tomet vietoje ""Gamybinë markë"" yra nurodoma `Nuasmeninta`, atsiþvelgiant á asmens duomenø apsaugà."
 ,,,,,,lang,en,,,,,,Make (Trade name of the manufacturer),"When `vald_tipas=""Fizinis""` (Legal) and `marke+komercinis_pav+savivaldyeb=1`, then instead ""Make (trade name of the manufacturer)"" indicated `Nuasmeninta`, taking into account the protection of personal data."
