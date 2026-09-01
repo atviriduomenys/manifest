@@ -1,0 +1,31 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/hi/savizudybes,,,,,ns,,,,,,,,
+,datasets/gov/hi/savizudybes/statistika,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,prefix,spinta,,,,,https://github.com/atviriduomenys/spinta/issues/,,
+,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
+,,,,,,,,,,,,,,
+,,,,AtvejuStatistika,,,vda_id,,,4,,,Atvejų statistika,"Agreguota atvejų statistika pagal metus, gyvenamąją vietą ir demografinius bei socialinius pjūvius"
+,,,,,vda_id,string,,,,4,open,,VDA įrašo identifikatorius,Unikalus VDA suformuotas statistinio įrašo identifikatorius
+,,,,,metai,integer,,,,4,open,,Metai,"Kalendoriniai metai, kuriems priskiriama statistinė reikšmė"
+,,,,,pjuvis,string,,,,4,open,,Statistinis pjūvis,"Statistinis pjūvis, pagal kurį pateikiama reikšmė"
+,,,,,gyvenamoji_vieta,string,,,,4,open,,Gyvenamoji vieta,"Gyvenamoji vieta arba teritorija, kuriai priskiriama statistinė reikšmė"
+,,,,,atveju_skaicius,integer,,,,4,open,,Atvejų skaičius,Nurodytam laikotarpiui ir pjūviui apskaičiuotas atvejų skaičius
+,,,,,atveju_skaicius_100_tukst,number,,,,4,open,,Atvejų skaičius 100 tūkst. gyventojų,"Atvejų skaičius, tenkantis 100 tūkst. gyventojų"
+,,,,,lytis,string,,,,4,open,,Lytis,"Lytis, pagal kurią pateikiama statistinė reikšmė"
+,,,,,amziaus_grupe,string,,,,4,open,,Amžiaus grupė,"Amžiaus grupė, pagal kurią pateikiama statistinė reikšmė"
+,,,,,gyvenamosios_vietos_tipas,string,,,,4,open,,Gyvenamosios vietos tipas,"Gyvenamosios vietos tipo kategorija, pagal kurią pateikiama statistinė reikšmė"
+,,,,,seimine_padetis,string,,,,4,open,,Šeiminė padėtis,"Šeiminės padėties kategorija, pagal kurią pateikiama statistinė reikšmė"
+,,,,,socialine_padetis,string,,,,4,open,,Socialinė padėtis,"Socialinės padėties kategorija, pagal kurią pateikiama statistinė reikšmė"
+,,,,GresmiuStatistika,,,vda_id,,,4,,,Grėsmių statistika,"Agreguota atvejų statistika pagal metus, gyvenamąją vietą ir demografinius bei socialinius pjūvius"
+,,,,,vda_id,string,,,,4,open,,VDA įrašo identifikatorius,Unikalus VDA suformuotas statistinio įrašo identifikatorius
+,,,,,metai,integer,,,,4,open,,Metai,"Kalendoriniai metai, kuriems priskiriama statistinė reikšmė"
+,,,,,pjuvis,string,,,,4,open,,Statistinis pjūvis,"Statistinis pjūvis, pagal kurį pateikiama reikšmė"
+,,,,,gyvenamoji_vieta,string,,,,4,open,,Gyvenamoji vieta,"Gyvenamoji vieta arba teritorija, kuriai priskiriama statistinė reikšmė"
+,,,,,atveju_skaicius,integer,,,,4,open,,Grėsmių skaičius,Nurodytam laikotarpiui ir pjūviui apskaičiuotas atvejų skaičius
+,,,,,atveju_skaicius_100_tukst,number,,,,4,open,,Grėsmių skaičius 100 tūkst. gyventojų,"Atvejų skaičius, tenkantis 100 tūkst. gyventojų"
+,,,,,lytis,string,,,,4,open,,Lytis,"Lytis, pagal kurią pateikiama statistinė reikšmė"
+,,,,,amziaus_grupe,string,,,,4,open,,Amžiaus grupė,"Amžiaus grupė, pagal kurią pateikiama statistinė reikšmė"
+,,,,,gyvenamosios_vietos_tipas,string,,,,4,open,,Gyvenamosios vietos tipas,"Gyvenamosios vietos tipo kategorija, pagal kurią pateikiama statistinė reikšmė"
+,,,,,seimine_padetis,string,,,,4,open,,Šeiminė padėtis,"Šeiminės padėties kategorija, pagal kurią pateikiama statistinė reikšmė"
+,,,,,socialine_padetis,string,,,,4,open,,Socialinė padėtis,"Socialinės padėties kategorija, pagal kurią pateikiama statistinė reikšmė"
