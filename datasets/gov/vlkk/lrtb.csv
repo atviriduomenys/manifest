@@ -4,9 +4,14 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,manifest,,,,,https://github.com/atviriduomenys/manifest/issues/,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
-,,,,TerminuBankas,,,termino_id,,,4,,,VLKK terminų banko terminų duomenys,"Valstybinės lietuvių kalbos komisijos Lietuvos Respublikos terminų banke kaupiami įvairių sričių terminai lietuvių bei kitomis Europos kalbomis, kaip vokiečių, prancūzų, lenkų. Duomenys kaupiami nuo 2005 m. ir atnaujinami kas mėnesį. Apimami duomenys yra patys terminai, jų sritys, kalba, statusas: teiktinas, neteiktinas arba aprobuotas, įvedimo data bei organizacija, pateikusi patį terminą. Tarp tokių organizacijų patenka VLKK, Užsienio reikalų ministerija, Policijos departamentas.  "
-,,,,,termino_id,string,,,,4,open,,Identifikatorius,
+,,,,TerminuBankas,,,vda_prime_key,,,4,,,VLKK terminų banko terminų duomenys,"Valstybinės lietuvių kalbos komisijos Lietuvos Respublikos terminų banke kaupiami įvairių sričių terminai lietuvių bei kitomis Europos kalbomis, kaip vokiečių, prancūzų, lenkų. Duomenys kaupiami nuo 2005 m. ir atnaujinami kas mėnesį. Duomenų rinkinį sudaro: termino straipsnis, terminas, termino atributas: rūšis bei reikšmė, termino sritis, kalba, statusas: teiktinas, neteiktinas arba aprobuotas, įvedimo data bei organizacija, pateikusi patį terminą. Tarp tokių organizacijų patenka VLKK, Užsienio reikalų ministerija, Policijos departamentas. Unikalią kombinaciją sudaro terminas ir jo atributas. Termino straipsnis yra termino atitikmenų įvairiomis kalbomis visuma. Terminai gali neturėti atributų, kaip apibrėžtis. Atributų rūšių vertimai priklauso nuo termino kalbos. Duomenų teikėjas – Valstybinė lietuvių kalbos komisija. Su duomenimis susijusiais klausimais prašome kreiptis el. paštu atverimas@stat.gov.lt. Dėl techninių portalo veiklos sutrikimų prašome kreiptis el. paštu atviriduomenys@vssa.lt "
+,,,,,vda_prime_key,string,,,,4,open,,Identifikatorius,
+,,,,,term_straipsnio_id,string,,,,4,open,,Termino straipsnio identifikatorius,
+,,,,,termino_id,string,,,,4,open,,Termino identifikatorius,
 ,,,,,terminas,string,,,,4,open,,Terminas,
+,,,,,atributo_id,string,,,,4,open,,Atributo identifikatorius,
+,,,,,atributo_rusis,string,,,,4,open,,Atributo rūšis,
+,,,,,atributo_reiksme,string,,,,4,open,,Atributo reikšmė,
 ,,,,,sritis,string,,,,4,open,,Termino sritis,
 ,,,,,kalba,string,,,,4,open,,Termino kalba,
 ,,,,,statusas,string,,,,4,open,,"Termino statusas, anot VLKK",
@@ -14,5 +19,5 @@ id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri
 ,,,,,,,,Teiktinas,,,,,Teiktinas terminas,
 ,,,,,,,,Neteiktinas,,,,,Neteiktinas terminas,
 ,,,,,,,,Aprobuotas,,,,,Aprobuotas terminas,
-,,,,,pateikusi_org,string,,,,4,open,,Terminą pateikusi organizacija,
+,,,,,pateikusi_organizacija,string,,,,4,open,,Terminą pateikusi organizacija,
 ,,,,,ivedimo_data,datetime,S,,,4,open,,Termino įvedimo data ir laikas sekundžių tikslumu,
